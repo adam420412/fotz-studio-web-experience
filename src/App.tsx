@@ -1629,6 +1629,7 @@ const App = () => (
                 <Route path="/blog/jak-wybrac-agencje-seo" element={<BlogJakWybracAgencjeSEO />} />
                 <Route path="/blog/pozycjonowanie-lokalne-dla-firm" element={<BlogPozycjonowanieLokalnePoradnik />} />
                 <Route path="/blog/instagram-dla-firmy" element={<BlogInstagramDlaFirmy />} />
+                <Route path="/social-media/instagram" element={<Redirect301 to="/blog/instagram-dla-firmy" />} />
                 <Route path="/blog/content-marketing-dla-firm" element={<BlogContentMarketing />} />
                 <Route path="/blog/jak-stworzyc-strone-internetowa" element={<BlogJakStworzyc />} />
                 <Route path="/blog/strona-internetowa-dla-malej-firmy" element={<BlogStronaInternetowaOdZera />} />

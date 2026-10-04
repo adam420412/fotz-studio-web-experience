@@ -1,495 +1,112 @@
 import { Link } from "react-router-dom";
+import { ArrowRight, ArrowUpRight, Check, CalendarDays } from "lucide-react";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
-import { Button } from "@/components/ui/button";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { ContactSection } from "@/components/sections/ContactSection";
-import { ArrowLeft, Calendar, Clock, User, ChevronRight } from "lucide-react";
+import { BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 
-const faqItems = [
-  {
-    question: "Ile czasu powinno poświęcić zarządzanie Instagram firmowy?",
-    answer: "Najmniej 5-7 godzin tygodniowo na tworzenie treści, odpowiadanie na komentarze i wiadomości oraz analizę wyników. Dla marek B2B wystarczy 3-4 dni tygodniowo, dla e-commerce i usług - codziennie. Optymalnie 1-2 posty dziennie + kilka Stories."
-  },
-  {
-    question: "Jakie są najlepsze godziny publikowania na Instagramie?",
-    answer: "Dla biznesu B2B: wtorek-czwartek, 9:00-12:00 oraz 17:00-19:00. Dla B2C/e-commerce: czwartek-piątek, 11:00-13:00 oraz 19:00-21:00. Zawsze sprawdzaj statystyki swojego profilu - każda branża ma inne godziny szczytu."
-  },
-  {
-    question: "Jaki jest aktualnie algorytm Instagrama w 2025 roku?",
-    answer: "Instagram w 2025 priorytetyzuje: Reels (długość 30-60s), zaangażowanie (polubienia, komentarze, save), czas spędzony (im dłużej widz, tym lepiej), świeżość treści (nowe posty lepiej się pozycjonują), oraz relacje (konta, które śledzisz, dostają widoczność)."
-  },
-  {
-    question: "Czy powinienem kupować obserwatorów i zaangażowanie?",
-    answer: "Zdecydowanie nie. Kupowanie fake followerów szkodzi algorytmowi (niskie zaangażowanie) i może prowadzić do blokady konta. Instagram detektuje bot-activity. Lepiej zbudować mniejszą, ale rzeczywistą i zaangażowaną publiczność organicznie."
-  },
-  {
-    question: "Jakie są różnice między Reel 15-30s a Reels 60s+?",
-    answer: "Reel 15-30s: szybkie, swingujące trendy, idealny do viralności, ADS conversion. Reel 60s+: edukacyjne, storytelling, budowanie autorytetu, lepszy do lead generation. Algorytm premiuje oba, ale 60s+ lepiej konwertuje."
-  },
-  {
-    question: "Czy linki w bio są ważne dla biznesu?",
-    answer: "Tak, bardzo. Link w bio to jedyne miejsce, gdzie możesz kierować traffic poza Instagramem. Używaj narzędi takie jak Linktree aby umieścić tam wiele linków. Monitoruj klikiwalnośc linku w statystykach."
-  },
-  {
-    question: "Jak rozpocząć z reklamami na Instagramie?",
-    answer: "Zacznij od convertów: minimum 5-10 postów z dobrym zaangażowaniem. Postaw cel kampanii (lead, sprzedaż, widzialność). Budżet starter: 50-100 zł/dzień. Testuj reklamy Reels (ROAS 2-5x) zamiast statycznych postów."
-  },
-  {
-    question: "Czy Instagram Stories są ważne dla biznesu?",
-    answer: "Tak. Stories mają wyższy organiczny reach niż feed Posts (nie są algorytmizowane). Publikuj 3-5 Stories dziennie: updates, behind-the-scenes, customer testimonials, sale announcements. Używaj stickers (polls, quizzes) by zwiększyć zaangażowanie."
-  }
+const contents = [
+  ["cel", "Cel i odbiorcy"], ["profil", "Profil gotowy na wizytę"],
+  ["formaty", "Co publikować"], ["plan", "Przykładowy plan miesiąca"],
+  ["pomiar", "Jak oceniać wyniki"], ["reklamy", "Kiedy dodać reklamy"],
+  ["pytania", "Najczęstsze pytania"],
+];
+const formats = [
+  { name: "Zdjęcie lub grafika", use: "Pokaż produkt, realizację albo konkretną informację.", example: "Zdjęcie wykonanej usługi z opisem zakresu i sposobu zamówienia." },
+  { name: "Karuzela", use: "Wyjaśnij temat w kilku krokach lub porównaj warianty.", example: "Co przygotować przed sesją zdjęciową — lista z przykładami." },
+  { name: "Rolka", use: "Pokaż ruch, proces lub odpowiedź osoby z firmy.", example: "Krótka prezentacja produktu w użyciu, z napisami i jednym wnioskiem." },
+  { name: "Stories", use: "Pokaż bieżące działania i zaproś do rozmowy.", example: "Kulisy przygotowań, odpowiedź na pytanie lub przypomnienie o wydarzeniu." },
+];
+const weeks = [
+  { title: "Tydzień 1 · uporządkuj podstawy", text: "Wybierz jedną usługę, odbiorcę i cel. Uzupełnij profil, sprawdź kontakt oraz stronę docelową. Zapisz wyniki wyjściowe." },
+  { title: "Tydzień 2 · odpowiedz na pytania", text: "Zbierz pytania z rozmów z klientami. Przygotuj karuzelę wyjaśniającą jedno z nich oraz zdjęcie realizacji z opisem zakresu." },
+  { title: "Tydzień 3 · pokaż pracę", text: "Nagraj proces lub odpowiedź eksperta. Wybierz długość potrzebną do przekazania tematu. Dodaj napisy i sprawdź czytelność na telefonie." },
+  { title: "Tydzień 4 · sprawdź i wybierz", text: "Porównaj materiały według celu. Zapisz pytania od odbiorców, zapytania o ofertę i to, ile czasu zajęła produkcja. Ustal, co powtórzyć lub zmienić." },
+];
+const faqs = [
+  { question: "Jak często publikować na firmowym Instagramie?", answer: "Ustal rytm, który możesz utrzymać z dostępnymi materiałami i czasem na odpowiedzi. Nie ma jednej liczby postów odpowiedniej dla każdej firmy. Zacznij od wykonalnego planu i zmieniaj go na podstawie wyników oraz jakości publikacji." },
+  { question: "O której godzinie publikować?", answer: "Porównaj pory publikacji na własnym profilu, biorąc pod uwagę temat i format materiałów. Godzina, która sprawdziła się u innej firmy, nie musi działać u Twoich odbiorców. Pojedynczy dobry post nie wystarcza do ustalenia reguły." },
+  { question: "Czy muszę codziennie nagrywać rolki?", answer: "Nie. Materiał wideo powinien mieć zadanie: pokazać produkt, proces lub odpowiedzieć na pytanie. Część tematów wygodniej przedstawić zdjęciem albo karuzelą. Produkcję można zaplanować partiami, o ile treść pozostaje aktualna." },
+  { question: "Czy wyświetlenia i obserwatorzy oznaczają sprzedaż?", answer: "Nie. Pokazują kontakt z treścią i zainteresowanie profilem. Aby ocenić wynik biznesowy, sprawdź zapytania, rezerwacje lub zamówienia w danych firmy. Rozdziel wyniki płatne i organiczne oraz zapisuj, skąd klienci trafili do oferty." },
+  { question: "Czy kupowanie obserwatorów ma sens?", answer: "Liczba przypadkowych lub sztucznych kont nie pokazuje zainteresowania ofertą i utrudnia ocenę odbiorców. Buduj profil wokół osób, dla których usługa lub produkt ma znaczenie, oraz oceniaj jakość kontaktów." },
+  { question: "Kiedy zlecić prowadzenie profilu agencji?", answer: "Gdy brakuje czasu, regularnych materiałów lub kompetencji potrzebnych do realizacji planu. Możesz zlecić samą produkcję zdjęć i rolek albo także planowanie i publikację. Przed współpracą określ zakres, poprawki, moderację, dostęp do konta i sposób raportowania." },
 ];
 
-const contentFormats = [
-  { format: "Post statyczny", reach: "200-500 wyświetleń", production: "15-30 min", goal: "Budowanie autorytetu, wciągające kopie" },
-  { format: "Karuzela (5-10 zdjęć)", reach: "300-800 wyświetleń", production: "45-60 min", goal: "Edukacja, storytelling, porady krok po kroku" },
-  { format: "Reel (15-30s)", reach: "500-2000 wyświetleń", production: "30-60 min", goal: "Viralność, trend, szybkie wiadomości" },
-  { format: "Reel (60s+)", reach: "800-3000+ wyświetleń", production: "60-120 min", goal: "Edukacja, lead generation, konwersja" },
-  { format: "Stories (pojedyncze)", reach: "Tylko obserwatorzy", production: "5-10 min", goal: "News, daily updates, urgency" },
-  { format: "Live", reach: "2-5x wyżej niż post", production: "30-60 min live", goal: "Interakcja, Q&A, nowy audience" },
-  { format: "IGTV/Guide", reach: "200-500", production: "60-180 min", goal: "Deep content, SEO, archiwum" }
-];
-
-const BlogInstagramDlaFirmy = () => {
+export default function BlogInstagramDlaFirmy() {
   return (
-    <>
+    <Layout>
       <SEOHead
-        title="Instagram dla firmy - jak prowadzić profil firmowy? Poradnik 2025"
-        description="Jak efektywnie prowadzić Instagram dla biznesu? Strategie, algorytm, formaty contentu, działania płatne i organiczne. Praktyczny poradnik marketingu na Instagramie dla firm na 2025 rok."
-        ogType="article"
+        title="Instagram dla firmy — profil, treści i plan działania"
+        description="Jak prowadzić firmowy Instagram? Uporządkuj profil, wybierz treści i zaplanuj miesiąc pracy. Przykłady publikacji, pomiar zapytań oraz decyzja o reklamach."
         canonical="https://www.fotz-studio.pl/blog/instagram-dla-firmy"
-        keywords="Instagram dla firmy, prowadzenie Instagram, marketing na Instagramie, Instagram business, social media marketing"
-        schemaJson={[
-          {
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "Instagram dla firmy - jak prowadzić profil firmowy? Poradnik 2025",
-            "description": "Kompletny poradnik do zarządzania profilem firmowym na Instagramie - strategie, algorytm, content marketing, reklamy",
-            "image": "https://images.unsplash.com/photo-1611532736579-6b16e2b50449?q=80&w=2015",
-            "author": {
-              "@type": "Organization",
-              "name": "FOTZ"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "FOTZ",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://www.fotz-studio.pl/logo-fotz.jpg"
-              }
-            },
-            "datePublished": "2025-04-12",
-            "dateModified": "2025-04-12"
-          },
-          {
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://www.fotz-studio.pl" },
-              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.fotz-studio.pl/blog" },
-              { "@type": "ListItem", "position": 3, "name": "Instagram dla firmy" }
-            ]
-          },
-          {
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": faqItems.map(item => ({
-              "@type": "Question",
-              "name": item.question,
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": item.answer
-              }
-            }))
-          }
-        ]}
+        ogType="article"
+        schemaJson={{ "@context": "https://schema.org", "@type": "Article", headline: "Instagram dla firmy. Od profilu do planu.", description: "Praktyczny plan prowadzenia firmowego Instagrama: profil, treści, pomiar i reklamy.", author: { "@type": "Organization", name: "FOTZ Studio", url: "https://www.fotz-studio.pl/o-nas" }, publisher: { "@type": "Organization", name: "FOTZ Studio", logo: { "@type": "ImageObject", url: "https://www.fotz-studio.pl/logo-fotz.jpg" } }, datePublished: "2025-04-12", dateModified: "2026-10-04", mainEntityOfPage: "https://www.fotz-studio.pl/blog/instagram-dla-firmy", inLanguage: "pl-PL" }}
       />
-
-      <Layout>
-        {/* Breadcrumb */}
-        <section className="pt-32 pb-4 bg-background">
-          <div className="container mx-auto px-4">
-            <nav className="flex items-center gap-2 text-sm text-muted-foreground">
-              <Link to="/" className="hover:text-primary transition-colors">Strona główna</Link>
-              <ChevronRight className="h-4 w-4" />
-              <Link to="/blog" className="hover:text-primary transition-colors">Blog</Link>
-              <ChevronRight className="h-4 w-4" />
-              <span className="text-foreground">Instagram dla firmy</span>
-            </nav>
-          </div>
-        </section>
-
-        {/* Article Header */}
-        <article className="pb-20 bg-background">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <div className="mb-8">
-                <Link to="/blog" className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors mb-6">
-                  <ArrowLeft className="h-4 w-4" />
-                  Wróć do bloga
-                </Link>
-
-                <span className="inline-block text-sm font-medium text-yellow-400 uppercase tracking-wider mb-4">
-                  Social Media Marketing
-                </span>
-
-                <h1 className="text-3xl md:text-5xl font-heading font-bold mb-6">
-                  Instagram dla firmy - jak prowadzić profil firmowy? Poradnik 2025
-                </h1>
-
-                <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground mb-8">
-                  <span className="flex items-center gap-2">
-                    <User className="w-4 h-4" />
-                    Zespół FOTZ
-                  </span>
-                  <span className="flex items-center gap-2">
-                    <Calendar className="w-4 h-4" />
-                    12 kwietnia 2025
-                  </span>
-                  <span className="flex items-center gap-2">
-                    <Clock className="w-4 h-4" />
-                    22 min czytania
-                  </span>
-                </div>
-
-                <div className="aspect-video rounded-2xl overflow-hidden mb-8">
-                  <img loading="lazy"
-                    src="https://images.unsplash.com/photo-1611532736579-6b16e2b50449?q=80&w=2015"
-                    alt="Instagram dla firmy - strategie i algorytm"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-
-              {/* Article Content */}
-              <div className="prose prose-lg prose-invert max-w-none">
-                <p className="lead text-xl text-muted-foreground mb-8">
-                  Instagram zmienił się z aplikacji do dzielenia się zdjęciami w jeden z najpotężniejszych kanałów sprzedaży dla firm. W 2025 roku Instagram miał już 2 miliardy aktywnych użytkowników miesięcznie, a Reels osiągają zasięg porównywalny z TikTok. Jeśli chcesz zbudować obecność online, Instagram dla biznesu to nie opcja - to konieczność. W tym poradniku dowiesz się jak optymalizować profil firmowy, jakie strategie działają w 2025, jak algorytm premiuje treści, oraz kiedy inwestować w reklamy.
-                </p>
-
-                <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
-                  Dlaczego Instagram dla firmy jest niezbędny w 2025?
-                </h2>
-
-                <p className="text-muted-foreground mb-6">
-                  Instagram nie jest już tylko dla influencerów i lifestyle brandów. Dzisiaj:
-                </p>
-
-                <ul className="space-y-3 mb-6 text-muted-foreground">
-                  <li className="flex gap-3">
-                    <span className="text-yellow-400 font-bold">•</span>
-                    <span><strong>72% marketerów B2C</strong> używa Instagrama do lead generation i sprzedaży</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-yellow-400 font-bold">•</span>
-                    <span><strong>Reels mają 67% wyższy engagement</strong> niż tradycyjne posty (2025 data)</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-yellow-400 font-bold">•</span>
-                    <span><strong>Instagram Shopping</strong> pozwala sprzedawać bezpośrednio z posta - bez przekierowania</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-yellow-400 font-bold">•</span>
-                    <span><strong>DM konwersacje</strong> dają 100+ kontaktów dziennie dla firm B2B/B2C z dobym contentem</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-yellow-400 font-bold">•</span>
-                    <span><strong>Viral reach organiczny</strong> jest wciąż możliwy - jeden dobry Reel = tysiące wyświetleń</span>
-                  </li>
-                </ul>
-
-                <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
-                  Formaty treści na Instagramie - porównanie zasięgu
-                </h2>
-
-                <p className="text-muted-foreground mb-6">
-                  Nie każdy format działa tak samo. Poniżej porównanie zasięgu, czasu produkcji i celu każdego formatu:
-                </p>
-
-                <div className="overflow-x-auto mb-8">
-                  <table className="w-full text-sm text-muted-foreground border border-border/30 rounded-lg overflow-hidden">
-                    <thead className="bg-muted/30 border-b border-border/30">
-                      <tr>
-                        <th className="px-4 py-3 text-left font-semibold text-foreground">Format</th>
-                        <th className="px-4 py-3 text-left font-semibold text-foreground">Zasięg organiczny</th>
-                        <th className="px-4 py-3 text-left font-semibold text-foreground">Czas produkcji</th>
-                        <th className="px-4 py-3 text-left font-semibold text-foreground">Cel</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {contentFormats.map((row, idx) => (
-                        <tr key={idx} className={idx % 2 === 0 ? "bg-transparent" : "bg-muted/10"}>
-                          <td className="px-4 py-3 font-medium text-foreground">{row.format}</td>
-                          <td className="px-4 py-3">{row.reach}</td>
-                          <td className="px-4 py-3">{row.production}</td>
-                          <td className="px-4 py-3">{row.goal}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-
-                <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
-                  Profil firmowy - optymalizacja od A do Z
-                </h2>
-
-                <p className="text-muted-foreground mb-6">
-                  Twój profil to pierwsza rzecz, którą widzą potencjalni klienci. Musi być doskonały.
-                </p>
-
-                <h3 className="text-xl font-heading font-bold mt-8 mb-4">Bio - najważniejsze 150 znaków</h3>
-
-                <p className="text-muted-foreground mb-6">
-                  Bio na Instagramie powinno:
-                </p>
-
-                <ul className="space-y-2 mb-6 text-muted-foreground">
-                  <li>✓ Zawierać słowo kluczowe (np. "Social Media Marketing" zamiast "Marketing")</li>
-                  <li>✓ Wskazywać na problem, który rozwiązujesz</li>
-                  <li>✓ Zawierać call-to-action (CTA)</li>
-                  <li>✓ Być napisane dla potencjalnego klienta, nie dla samego siebie</li>
-                  <li>✓ Używać emoji do poprawy czytelności (max 3-4)</li>
-                  <li>✓ Zawierać link w bio do Linktree lub strony konwersji</li>
-                </ul>
-
-                <p className="text-muted-foreground mb-6 p-4 bg-muted/20 rounded-lg border border-yellow-400/20">
-                  <strong>Przykład dobrego bio:</strong> "Zwiększamy widoczność biznesu na Instagramie. Strategie, content, reklamy. Napisz 'PORADNIK' aby dostać darmowy audit"
-                </p>
-
-                <h3 className="text-xl font-heading font-bold mt-8 mb-4">Link w bio - konwersja</h3>
-
-                <p className="text-muted-foreground mb-6">
-                  Link w bio jest JEDYNYM miejscem poza Instagramem, gdzie możesz kierować traffic. Pamiętaj:
-                </p>
-
-                <ul className="space-y-2 mb-6 text-muted-foreground">
-                  <li>• Kieruj na landing page (nie na homepage strony)</li>
-                  <li>• Używaj Linktree/Later aby zmieścić wiele linków w jednym linku</li>
-                  <li>• Test A/B różne landing pages aby znaleźć najlepszą konwersję</li>
-                  <li>• Monitoruj click-through rate (CTR) w statystykach</li>
-                </ul>
-
-                <h3 className="text-xl font-heading font-bold mt-8 mb-4">Highlights - story na zawsze</h3>
-
-                <p className="text-muted-foreground mb-6">
-                  Highlights to Stories, które nie znikają. Zorganizuj je w kategorie:
-                </p>
-
-                <ul className="space-y-2 mb-6 text-muted-foreground">
-                  <li>• Usługi / Produkty (katalog)</li>
-                  <li>• Recenzje / Testimonials (social proof)</li>
-                  <li>• FAQ (czeste pytania klientów)</li>
-                  <li>• Promocje / Oferty (limited time deals)</li>
-                  <li>• Behind-the-Scenes (budowanie zaufania)</li>
-                </ul>
-
-                <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
-                  Algorytm Instagrama 2025 - co premiuje widoczność?
-                </h2>
-
-                <p className="text-muted-foreground mb-6">
-                  Instagram algorytm w 2025 jest bardziej zaawansowany niż kiedykolwiek. Oto co naprawdę ma znaczenie:
-                </p>
-
-                <h3 className="text-xl font-heading font-bold mt-8 mb-4">1. Typ treści - Reels dominują</h3>
-
-                <p className="text-muted-foreground mb-6">
-                  Meta (właściciel Instagrama) otwarcie powiedziała: Reels są priorytetem. Statyczne posty dostaną mniej zasięgu. Reel ma 10x wyższą szansę na wiralność niż tradycyjny post.
-                </p>
-
-                <h3 className="text-xl font-heading font-bold mt-8 mb-4">2. Engagement - szybkie polubienia i komentarze</h3>
-
-                <p className="text-muted-foreground mb-6">
-                  Algorytm sprawdza: ile polubień dostałeś w pierwszych 30 minut? Ilu komentarzy w pierwszej godzinie? Im szybciej zasięg, tym lepiej się pozycjonujesz. To dlatego warto publikować o stałych godzinach - kiedy Twoja publiczność jest online.
-                </p>
-
-                <h3 className="text-xl font-heading font-bold mt-8 mb-4">3. Czas spędzony - ile sekund widz patrzy?</h3>
-
-                <p className="text-muted-foreground mb-6">
-                  Instagram mierzy "watch time" - czy widz patrzy całą długość Reela? Czy przewija post w połowie? Reele 60s+ z wysokim watch time dostają 3x więcej zasięgu niż te przerwane w połowie.
-                </p>
-
-                <h3 className="text-xl font-heading font-bold mt-8 mb-4">4. Świeżość - nowsze = lepsze</h3>
-
-                <p className="text-muted-foreground mb-6">
-                  Post opublikowany dzisiaj dostanie lepszy algorytmiczny boost niż post z wczoraj. Consistency to klucz - publikuj regularnie, a nie sporadycznie.
-                </p>
-
-                <h3 className="text-xl font-heading font-bold mt-8 mb-4">5. Relacje - konta, które śledzisz</h3>
-
-                <p className="text-muted-foreground mb-6">
-                  Algorytm priorytetyzuje profile, które już śledzisz. Jeśli publiczność Cię śledzi, będą widzieć 80% Twoich postów. Jeśli nie - będą widzieć 3-5%.
-                </p>
-
-                <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
-                  Reklamy vs Organiczy reach - kiedy zainwestować?
-                </h2>
-
-                <p className="text-muted-foreground mb-6">
-                  Reklamy na Instagramie działają, ale nie dla każdego. Oto jak zdecydować:
-                </p>
-
-                <h3 className="text-xl font-heading font-bold mt-8 mb-4">Zaczyj z organicznym reach jeśli:</h3>
-
-                <ul className="space-y-2 mb-6 text-muted-foreground">
-                  <li>• Masz mniej niż 1000 followersów (najpierw zbuduj bazę)</li>
-                  <li>• Jesteś nową marką (najpierw zarabiaj zaufanie)</li>
-                  <li>• Masz bardzo ograniczony budżet (poniżej 500 zł/mies.)</li>
-                  <li>• Chcesz zbudować autentyczną publiczność</li>
-                </ul>
-
-                <h3 className="text-xl font-heading font-bold mt-8 mb-4">Inwestuj w reklamy jeśli:</h3>
-
-                <ul className="space-y-2 mb-6 text-muted-foreground">
-                  <li>• Masz 1000+ obserwatorów i dobry zaangażowanie</li>
-                  <li>• Testujesz nowy produkt/usługę (szybki feedback)</li>
-                  <li>• Masz konkretny cel (lead, sprzedaż, email list)</li>
-                  <li>• Budżet: minimum 100-200 zł/dzień aby widzieć skalowalne wyniki</li>
-                </ul>
-
-                <p className="text-muted-foreground mb-6 p-4 bg-muted/20 rounded-lg border border-yellow-400/20">
-                  <strong>Sztuczka:</strong> Publikuj post organicznie. Kiedy zyska 100+ polubień i dobrze się sprawdza - boost go za 50-100 zł. ROAS będzie 3-5x lepszy niż cold traffic.
-                </p>
-
-                <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
-                  Content calendar - jak planować posty?
-                </h2>
-
-                <p className="text-muted-foreground mb-6">
-                  Zamiast publikować chaotycznie, stwórz content calendar. Przykład tygodniowego planu:
-                </p>
-
-                <ul className="space-y-3 mb-6 text-muted-foreground">
-                  <li><strong>Poniedziałek:</strong> Reel edukacyjny (10-20% wzrost zasięgu w tygodniu)</li>
-                  <li><strong>Wtorek:</strong> Carousel (porady, porównania, storytelling)</li>
-                  <li><strong>Środa:</strong> Story (updates, behind-scenes, urgency)</li>
-                  <li><strong>Czwartek:</strong> Reel trending (viral hook, trendy audio)</li>
-                  <li><strong>Piątek:</strong> Post inspiracyjny + CTA (lead generation)</li>
-                  <li><strong>Sobota-Niedziela:</strong> Stories + engagement (odpowiadanie na DM)</li>
-                </ul>
-
-                <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
-                  Hashtagi - nadal ważne w 2025?
-                </h2>
-
-                <p className="text-muted-foreground mb-6">
-                  Tak, ale inaczej niż kiedyś. Instagram 2025:
-                </p>
-
-                <ul className="space-y-2 mb-6 text-muted-foreground">
-                  <li>• Używaj 8-15 relevantnych hashtagów (nie 30+)</li>
-                  <li>• Mix: 3 large (#marketingpolski - 1M+), 5 medium (#socialmediamarketing - 100k), 4 niche (#fotzagencja)</li>
-                  <li>• Umieszczaj hashtagi w komentarzu #1, a nie w caption (lepiej wyglądają)</li>
-                  <li>• Testuj hashtagi - monitoruj które przynoszą views</li>
-                  <li>• Unikaj dead hashtagów (bez nowych postów od miesiąca)</li>
-                </ul>
-
-                <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
-                  Bezpośrednie wiadomości - DM to new sales channel
-                </h2>
-
-                <p className="text-muted-foreground mb-6">
-                  DM na Instagramie to nie just: pytania klientów. To kanał sprzedaży. Firmy B2B/B2C mogą dostawać 10-100 kwalifikowalnych leadów dziennie poprzez DM jeśli:
-                </p>
-
-                <ul className="space-y-2 mb-6 text-muted-foreground">
-                  <li>✓ Masz jasny CTA "Napisz do mnie" w bio</li>
-                  <li>✓ Odpowiadasz w ciągu 1 godziny (szybka odpowiedź = 10x wyższy reply rate)</li>
-                  <li>✓ Automatyczne welcome message (DM automation, ale musi być naturalny)</li>
-                  <li>✓ Publikujesz treści, które generują pytania (how-to, tips)</li>
-                  <li>✓ Dodajesz call-to-action w Stories (swipe up alternative - "Napisz PORADNIK")</li>
-                </ul>
-
-                {/* FAQ Section */}
-                <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
-                  Najczęściej zadawane pytania
-                </h2>
-
-                <div className="space-y-4 mb-12">
-                  <Accordion type="single" collapsible>
-                    {faqItems.map((item, idx) => (
-                      <AccordionItem key={idx} value={`item-${idx}`} className="border border-border/50 rounded-lg px-6 data-[state=open]:bg-muted/30 transition-colors">
-                        <AccordionTrigger className="py-4 hover:no-underline">
-                          <span className="text-left font-semibold">{item.question}</span>
-                        </AccordionTrigger>
-                        <AccordionContent className="pb-4 text-muted-foreground">
-                          {item.answer}
-                        </AccordionContent>
-                      </AccordionItem>
-                    ))}
-                  </Accordion>
-                </div>
-
-                <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
-                  Podsumowanie - checklist do działania
-                </h2>
-
-                <p className="text-muted-foreground mb-6">
-                  Aby zacząć z Instagram dla biznesu, zrób to:
-                </p>
-
-                <ul className="space-y-3 mb-6 text-muted-foreground">
-                  <li>□ <strong>Optymalizacja profilu:</strong> Bio + link + highlights + avatar (30 min)</li>
-                  <li>□ <strong>Content audit:</strong> Sprawdź top 10 postów na Instagramie - czym się różnią (1 godzina)</li>
-                  <li>□ <strong>Content calendar:</strong> Plan 4 tygodnie postów (2 godziny przygotowania)</li>
-                  <li>□ <strong>Pierwsze posty:</strong> Zamiast planować idealnie, publikuj teraz i testuj (1 tydz)</li>
-                  <li>□ <strong>Monitoring:</strong> Codziennie sprawdzaj statystyki - która godzina, format, temat sprawdza się najlepiej</li>
-                  <li>□ <strong>Engagement:</strong> 15 minut dziennie na komentarze i DM-y (szybka odpowiedź = growth)</li>
-                  <li>□ <strong>Testy reklam:</strong> Po 10 dobrych postów - test 50 zł reklamę aby widzieć ROAS (2-3 tyg)</li>
-                </ul>
-
-              </div>
-
-              {/* CTA */}
-              <div
-                className="mt-12 p-8 md:p-12 rounded-2xl bg-gradient-to-r from-[#75143F]/20 to-[#0F3053]/20 border border-primary/20 text-center"
-              >
-                <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">
-                  Chcesz przyspieszić wzrost na Instagramie?
-                </h2>
-                <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                  Prowadzenie Instagram dla biznesu wymaga czasu i strategii. Jeśli chcesz szybszych wyników - nasza agencja specjalizuje się w social media marketing dla firm. Robimy strategie, tworzymy content, zarządzamy reklamami i generujemy leady.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button asChild size="lg" className="bg-gradient-to-r from-[#75143F] to-[#0F3053]">
-                    <Link to="/kontakt">Bezpłatna konsultacja</Link>
-                  </Button>
-                  <Button asChild variant="outline" size="lg">
-                    <Link to="/uslugi/social-media-marketing">Poznaj naszą usługę</Link>
-                  </Button>
-                </div>
-              </div>
-
-              {/* Related Links */}
-              <div
-                className="mt-8 p-8 bg-muted/30 rounded-2xl"
-              >
-                <h3 className="text-xl font-heading font-bold mb-4">Powiązane artykuły i usługi</h3>
-                <div className="grid sm:grid-cols-3 gap-4">
-                  <Link to="/blog/tiktok-dla-firmy" className="p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all">
-                    <h4 className="font-semibold mb-2">TikTok dla firmy</h4>
-                    <p className="text-sm text-muted-foreground">Poradnik na temat marketingu na TikTok</p>
-                  </Link>
-                  <Link to="/uslugi/social-media-marketing" className="p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all">
-                    <h4 className="font-semibold mb-2">Social Media Marketing</h4>
-                    <p className="text-sm text-muted-foreground">Zarządzanie mediami społecznościowymi</p>
-                  </Link>
-                  <Link to="/content-marketing/strategia" className="p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all">
-                    <h4 className="font-semibold mb-2">Content Marketing</h4>
-                    <p className="text-sm text-muted-foreground">Tworzenie zawartości dla biznesu</p>
-                  </Link>
-                </div>
-              </div>
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://www.fotz-studio.pl/" }, { name: "Blog", url: "https://www.fotz-studio.pl/blog" }, { name: "Instagram dla firmy", url: "https://www.fotz-studio.pl/blog/instagram-dla-firmy" }]} />
+      <FAQSchema items={faqs} />
+      <article>
+        <header className="container-wide px-6 md:px-12 pt-28 md:pt-36 pb-12 md:pb-16">
+          <nav aria-label="Ścieżka nawigacji" className="text-sm text-muted-foreground flex flex-wrap gap-2 mb-8"><Link to="/blog" className="underline underline-offset-4">Blog</Link><span aria-hidden="true">/</span><span aria-current="page">Instagram dla firmy</span></nav>
+          <div className="grid lg:grid-cols-[1.45fr_1fr] gap-10 lg:gap-16 items-end">
+            <div>
+              <p className="dv-eyebrow mb-5">Praktyczny poradnik · social media</p>
+              <h1 className="font-heading text-4xl md:text-6xl leading-[1.08] tracking-tight mb-6">Instagram dla firmy.<br /><span className="text-gradient">Od profilu do planu.</span></h1>
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">Zacznij od celu, czytelnej oferty i materiałów, które odpowiadają na pytania klientów. Poniżej znajdziesz plan pracy, przykłady treści oraz sposób oceny tego, co daje firmie prowadzenie profilu.</p>
+              <p className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-muted-foreground mt-6"><Link to="/o-nas" className="underline underline-offset-4">Zespół FOTZ Studio</Link><span>Publikacja: <time dateTime="2025-04-12">12.04.2025</time></span><span>Aktualizacja: <time dateTime="2026-10-04">4.10.2026</time></span></p>
             </div>
+            <aside className="rounded-2xl border border-border bg-card p-6 md:p-8">
+              <p className="text-sm text-muted-foreground mb-5">Zanim opublikujesz kolejny post</p>
+              <ol className="space-y-5">{["Do kogo mówisz?", "Co chcesz pokazać?", "Jaki ma być następny krok?"].map((question, i) => <li key={question} className="flex items-center gap-4"><span aria-hidden="true" className="shrink-0 whitespace-nowrap text-primary font-mono text-sm">0{i + 1}</span><span className="text-xl font-heading">{question}</span></li>)}</ol>
+              <a href="#plan" className="inline-flex items-center gap-2 underline underline-offset-4 mt-7 text-sm">Przejdź do planu miesiąca <ArrowRight aria-hidden="true" className="w-4 h-4" /></a>
+            </aside>
           </div>
-        </article>
-
-        {/* Contact Section */}
-        <ContactSection />
-      </Layout>
-    </>
+        </header>
+        <div className="container-wide px-6 md:px-12 pb-20 grid lg:grid-cols-[240px_minmax(0,1fr)] gap-10 lg:gap-16 items-start">
+          <nav aria-label="Spis treści" className="lg:sticky lg:top-28 border-y border-border py-6"><p className="font-medium mb-4">W tym poradniku</p><ol className="space-y-3 text-sm text-muted-foreground">{contents.map(([id, title]) => <li key={id}><a className="hover:text-foreground underline underline-offset-4" href={`#${id}`}>{title}</a></li>)}</ol><Link to="/social-media/obsluga" className="inline-flex items-center gap-2 text-sm font-medium mt-7">Zleć obsługę profilu <ArrowUpRight aria-hidden="true" className="w-4 h-4" /></Link></nav>
+          <div className="min-w-0 max-w-3xl space-y-12 md:space-y-16 text-base md:text-lg leading-relaxed text-muted-foreground">
+            <section id="cel" className="scroll-mt-28 space-y-5">
+              <h2 className="text-2xl md:text-3xl font-heading text-foreground">1. Wybierz cel i odbiorcę</h2>
+              <p>Firmowy Instagram może pomagać w prezentowaniu realizacji, wyjaśnianiu oferty, obsłudze pytań lub docieraniu do nowych odbiorców. Wybierz główne zadanie profilu na najbliższy okres. Dzięki temu łatwiej ocenisz, czy warto przeznaczać na niego czas i budżet.</p>
+              <p>Zapisz trzy rzeczy: komu pomagasz, w jakiej sytuacji ta osoba szuka Twojej oferty i czego potrzebuje przed kontaktem. Dla studia wnętrz może to być pokazanie procesu współpracy, dla restauracji — aktualnej oferty i sposobu rezerwacji. To przykłady planowania, a nie wyniki konkretnych kampanii.</p>
+              <p>Nie każda firma potrzebuje intensywnej obecności na Instagramie. Jeśli odbiorcy wybierają ofertę w innym miejscu, porównaj tę pracę z rozwojem strony, wyszukiwarki lub innych kanałów. Pomocny jest <Link to="/social-media/strategia" className="underline underline-offset-4">plan strategii social media</Link>.</p>
+            </section>
+            <section id="profil" className="scroll-mt-28 space-y-5">
+              <h2 className="text-2xl md:text-3xl font-heading text-foreground">2. Przygotuj profil na wizytę klienta</h2>
+              <p>Osoba odwiedzająca profil powinna szybko zrozumieć, co oferujesz, dla kogo pracujesz i jak się skontaktować. Sprawdź profil na telefonie także z perspektywy osoby, która nie zna Twojej firmy.</p>
+              <ul className="space-y-4">{["Nazwa i zdjęcie: rozpoznawalna marka, czytelna również w małym rozmiarze.", "Opis: usługa lub produkt, odbiorca i obszar działania, jeśli lokalizacja ma znaczenie.", "Kontakt: aktualne dane, działający link i jasna informacja, jak złożyć zapytanie.", "Treść: materiały pokazujące ofertę, sposób pracy oraz odpowiedzi na częste pytania.", "Strona docelowa: zgodna z obietnicą profilu, czytelna na telefonie i z prostym formularzem."].map(item => <li className="flex gap-3" key={item}><Check aria-hidden="true" className="w-5 h-5 text-primary shrink-0 mt-1" /><span>{item}</span></li>)}</ul>
+              <p>Ustal też, kto odpowiada za dostęp, publikację i wiadomości. Uprawnienia do współpracy przyznawaj przez narzędzia platformy; nie rozsyłaj wspólnego hasła. Zapisz osobę odpowiedzialną za akceptację materiałów i obsługę pytań wymagających wiedzy o produkcie.</p>
+            </section>
+            <section id="formaty" className="scroll-mt-28 space-y-5">
+              <h2 className="text-2xl md:text-3xl font-heading text-foreground">3. Dobierz format do tematu</h2>
+              <p>Temat i zadanie publikacji powinny decydować o formacie. Nie zakładaj z góry, że film zawsze sprzeda więcej niż zdjęcie. Porównuj materiały na własnym koncie, w podobnych warunkach i według tego samego celu.</p>
+              <div className="grid sm:grid-cols-2 gap-4">{formats.map(format => <div className="border border-border rounded-xl p-5 bg-card" key={format.name}><h3 className="text-lg font-medium text-foreground mb-3">{format.name}</h3><p className="text-base mb-4">{format.use}</p><p className="text-sm border-t border-border pt-4"><span className="text-foreground">Przykład: </span>{format.example}</p></div>)}</div>
+              <p>Buduj tematy wokół pytań klientów, prezentacji oferty, procesu pracy i prawdziwych realizacji. Przy materiałach klientów uzgodnij możliwość ich wykorzystania. Zadbaj o czytelne napisy w filmach, kontrast tekstu i opis tego, co odbiorca ogląda.</p>
+              <p>Stories również podlegają rankingowi. Meta opisuje osobne systemy dla różnych miejsc w aplikacji, w tym aktualności, rolek i Stories. Nie ma podstaw do obiecywania stałego zasięgu dla konkretnego formatu. <a href="https://about.fb.com/news/2023/06/how-ai-ranks-content-on-facebook-and-instagram/" className="underline underline-offset-4">Wyjaśnienie systemów rekomendacji Meta</a>.</p>
+            </section>
+            <section id="plan" className="scroll-mt-28 space-y-5">
+              <h2 className="text-2xl md:text-3xl font-heading text-foreground">4. Zaplanuj pierwszy miesiąc</h2>
+              <p>To przykładowy plan pracy dla firmy porządkującej komunikację. Dopasuj liczbę publikacji do zasobów. Nie jest to uniwersalny harmonogram ani obietnica efektów po czterech tygodniach.</p>
+              <ol className="space-y-4">{weeks.map(week => <li key={week.title} className="border-l-2 border-primary/50 pl-5"><h3 className="text-lg font-medium text-foreground mb-2">{week.title}</h3><p className="text-base">{week.text}</p></li>)}</ol>
+              <p>W kalendarzu zapisz: temat, format, potrzebne materiały, autora, termin akceptacji, termin publikacji oraz następny krok dla odbiorcy. Przykładowy wpis: „Jak wygląda pierwsza konsultacja — karuzela — trzy pytania od klientów — link do opisu konsultacji”.</p>
+              <p>Oddziel tworzenie od publikowania. Jedna sesja może dostarczyć materiałów do kilku tematów, ale nie musi oznaczać codziennych postów. Zarezerwuj czas także na poprawki i odpowiedzi.</p>
+            </section>
+            <section id="pomiar" className="scroll-mt-28 space-y-5">
+              <h2 className="text-2xl md:text-3xl font-heading text-foreground">5. Oceniaj treści i zapytania osobno</h2>
+              <p>Zapisz punkt wyjścia, okres pomiaru oraz cel. Oddziel publikacje organiczne od reklam: płatna dystrybucja zmienia warunki porównania. Nie uznawaj najlepszego pojedynczego posta za normę dla całego profilu.</p>
+              <dl className="space-y-5"><div><dt className="font-medium text-foreground">Odbiór treści</dt><dd>Wyświetlenia, dotarcie, reakcje i zapisania pomagają ocenić materiał. Zwracaj uwagę na definicję metryki w panelu: wyświetlenia nie muszą oznaczać unikalnych osób.</dd></div><div><dt className="font-medium text-foreground">Zainteresowanie ofertą</dt><dd>Sprawdzaj wejścia na stronę, wiadomości dotyczące usługi i wypełnione formularze. Samo kliknięcie w kontakt nie potwierdza otrzymania zapytania.</dd></div><div><dt className="font-medium text-foreground">Wynik w firmie</dt><dd>Porównaj zapytania z rezerwacjami lub zamówieniami. Zapisuj źródło kontaktu i jego jakość. Przychód potwierdzaj w danych sprzedaży, a nie liczbą polubień.</dd></div></dl>
+              <p>Przy małej liczbie kontaktów wnioski będą wstępne. W raporcie zapisz również ograniczenia pomiaru i to, czego nie udało się ustalić. Zobacz <Link to="/social-media/analityka" className="underline underline-offset-4">zakres analityki social media</Link>.</p>
+            </section>
+            <section id="reklamy" className="scroll-mt-28 space-y-5">
+              <h2 className="text-2xl md:text-3xl font-heading text-foreground">6. Dodaj reklamy, gdy masz co testować</h2>
+              <p>Przed uruchomieniem kampanii przygotuj ofertę, materiały, stronę docelową lub sposób kontaktu oraz pomiar zgodny z ustawieniami zgód. Określ, co ma być wynikiem testu i ile możesz na niego przeznaczyć. Budżet emisji oddziel od kosztu produkcji i obsługi.</p>
+              <p>Nie przyjmuj uniwersalnego progu obserwatorów, stawki za kliknięcie czy gwarantowanego zwrotu. Warunki kampanii zależą między innymi od celu, odbiorców, oferty, kreacji i konkurencji. Dobry odbiór posta organicznego może być przesłanką do testu, ale nie potwierdza skuteczności reklamy.</p>
+              <p>Jeśli celem jest kampania płatna, przejdź do <Link to="/performance-marketing/meta-ads" className="underline underline-offset-4">oferty Meta Ads</Link>. Jeśli potrzebujesz regularnych treści i publikacji, sprawdź <Link to="/social-media/obsluga" className="underline underline-offset-4">prowadzenie profilu firmowego</Link>.</p>
+            </section>
+            <section id="pytania" className="scroll-mt-28"><h2 className="text-2xl md:text-3xl font-heading text-foreground mb-5">Pytania o firmowy Instagram</h2>{faqs.map(faq => <details key={faq.question} className="border-b border-border py-5 text-base"><summary className="font-medium text-foreground cursor-pointer">{faq.question}</summary><p className="mt-4">{faq.answer}</p></details>)}</section>
+            <aside className="rounded-2xl border border-border bg-card p-6 md:p-8"><CalendarDays aria-hidden="true" className="text-primary w-7 h-7 mb-5" /><h2 className="text-2xl md:text-3xl font-heading text-foreground mb-4">Potrzebujesz planu albo materiałów?</h2><p className="mb-6">W FOTZ Studio możesz zlecić prowadzenie profilu lub samą produkcję zdjęć i rolek. Zakres, terminy i sposób akceptacji ustalamy przed rozpoczęciem.</p><Link to="/social-media/obsluga" className="dv-btn dv-btn-primary">Zobacz zakres obsługi <ArrowRight aria-hidden="true" className="w-4 h-4" /></Link></aside>
+            <section className="text-sm space-y-3 border-t border-border pt-6"><h2 className="font-medium text-foreground">Źródła i aktualizacja</h2><p>Aktualizacja: 4 października 2026. Plan miesiąca i przykłady są propozycjami redakcyjnymi FOTZ Studio do dopasowania do własnej firmy.</p><p>Informacje o rankingach: <a href="https://about.fb.com/news/2023/06/how-ai-ranks-content-on-facebook-and-instagram/" className="underline underline-offset-4">Meta — jak systemy dobierają treści</a>. Meta opisuje też <a href="https://about.fb.com/news/2024/10/best-practices-education-hub-creators-instagram/" className="underline underline-offset-4">sekcję wskazówek w panelu profesjonalnym</a>, zawierającą porady dostosowane do konta. Szczegóły funkcji sprawdzaj w swoim aktualnym panelu.</p></section>
+          </div>
+        </div>
+      </article>
+    </Layout>
   );
-};
-
-export default BlogInstagramDlaFirmy;
+}
