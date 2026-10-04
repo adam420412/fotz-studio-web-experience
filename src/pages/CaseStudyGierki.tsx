@@ -355,13 +355,15 @@ const CaseStudyGierki = () => {
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {galleryImages.map((image, index) => (
-              <motion.div
+              <motion.button
+                type="button"
+                aria-label={`Powiększ: ${image.alt}`}
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.05 }}
-                className="relative aspect-square rounded-xl overflow-hidden cursor-pointer group"
+                className="relative aspect-square rounded-xl overflow-hidden cursor-pointer group focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
                 onClick={() => openLightbox(index)}
               >
                 <img loading="lazy" 
@@ -370,7 +372,7 @@ const CaseStudyGierki = () => {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300" />
-              </motion.div>
+              </motion.button>
             ))}
           </div>
         </div>

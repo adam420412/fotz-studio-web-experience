@@ -188,8 +188,8 @@ export default function Kontakt() {
       <OrganizationSchema />
       <Layout>
       <SEOHead
-        title="Kontakt z Fotz Studio | Fotz Studio"
-        description="Kontakt z Fotz Studio — agencja marketingowa Poznań. Napisz, zadzwoń lub odwiedź nas. Bezpłatna konsultacja marketingowa i wycena usług SEO, stron www i kampanii reklamowych."
+        title="Kontakt — FOTZ Studio, agencja marketingowa w Poznaniu"
+        description="Opisz projekt, zadzwoń lub umów 15-minutową konsultację z FOTZ Studio. Strony, SEO, reklamy i produkcja treści. Biuro: Plac Wolności 16, Poznań."
         canonical="https://www.fotz-studio.pl/kontakt"
         keywords="kontakt agencja marketingowa, Fotz Studio kontakt, konsultacja marketingowa, Poznań"
       />
@@ -687,12 +687,12 @@ export default function Kontakt() {
               Nawiązanie współpracy z Fotz Studio jest proste: wyślij zapytanie przez formularz
               lub e-mail → umówimy bezpłatną konsultację (online lub w biurze) → przygotujemy
               ofertę dopasowaną do Twoich celów → podpiszemy umowę i zaczynamy działać.
-              Typowy czas od pierwszego kontaktu do startu projektu to 1-2 tygodnie.
+              Termin rozpoczęcia ustalamy po poznaniu zakresu i dostępności materiałów.
             </p>
             <p className="text-muted-foreground mb-6">
-              Pracujemy z firmami z całej Polski zdalnie — spotkania przez Zoom lub Google Meet,
-              komunikacja przez e-mail i Slack, dostęp do raportów online 24/7.
-              Jeśli jesteś z Poznania lub Wielkopolski, zapraszamy też do biura.
+              Pracujemy także zdalnie z firmami z całej Polski. Sposób kontaktu,
+              harmonogram i zakres raportowania ustalamy na początku współpracy.
+              Na spotkanie w biurze przy Placu Wolności 16 w Poznaniu umów się wcześniej.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
@@ -702,8 +702,8 @@ export default function Kontakt() {
               Fotz Studio realizuje projekty w zakresie: tworzenia stron internetowych
               i sklepów e-commerce, pozycjonowania SEO, kampanii Google Ads i Meta Ads,
               obsługi social media, content marketingu, produkcji wideo i identyfikacji
-              wizualnej. Wypełnij formularz kontaktowy, opisując swoje potrzeby —
-              przygotujemy wstępną ofertę w ciągu 48 godzin.
+              wizualnej. W formularzu podaj cel, potrzebne materiały i planowany termin.
+              Na tej podstawie ustalimy szczegóły potrzebne do przygotowania oferty.
             </p>
 
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
