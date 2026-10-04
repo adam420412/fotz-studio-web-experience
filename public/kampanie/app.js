@@ -1,14 +1,14 @@
 const offers = {
   www: {
     region: 'Strony internetowe / Polska',
-    headline: 'Dobra firma.<br><em>Dobra strona.</em>',
-    intro: 'Pokaż jakość swojej firmy, zanim padnie pierwsze „dzień dobry”. Projektujemy strony, które przedstawiają ofertę i prowadzą do kontaktu.',
-    cta: 'Porozmawiajmy o stronie',
-    foot: 'Strategia. Projekt. Wdrożenie.',
+    headline: 'Strona dla firmy.<br><em>1490 zł netto.</em>',
+    intro: 'Prosty One Page z ofertą Twojej firmy i wygodnym kontaktem. Pakiet WWW START na Twoich tekstach i zdjęciach.',
+    cta: 'Zapytaj o WWW START',
+    foot: 'Do 5 sekcji. Wersja mobilna. Formularz.',
     line: 'Tworzymy dla firm, które mają coś do pokazania.',
     tags: ['Strony firmowe', 'E-commerce', 'Przebudowy'],
     workHeading: 'Tak wygląda<br><span>nasza praca.</span>',
-    workIntro: 'Różne branże, różne potrzeby.<br>Każdy projekt z własnym charakterem.',
+    workIntro: 'Indywidualne projekty z naszego portfolio.<br>Realizacje poza zakresem pakietu START.',
     projects: [
       {name:'Enea Stadion', type:'Serwis internetowy', image:'enea.png', alt:'Projekt strony Enea Stadion prezentowany na laptopie', url:'https://www.fotz-studio.pl/realizacje/enea-stadion'},
       {name:'Klagem', type:'Strona firmowa / prezentacja oferty', image:'klagem.png', alt:'Projekt strony Klagem z pomarańczową identyfikacją na komputerze', url:'https://www.fotz-studio.pl/realizacje/klagem'},
@@ -18,26 +18,26 @@ const offers = {
     approachIntro:'Nie potrzebujesz gotowego briefu. Zaczniemy od rozmowy o Twojej ofercie, klientach i tym, co strona ma dla Ciebie robić.',
     steps:[
       ['Najpierw cel.','Ustalamy, do kogo mówisz, co oferujesz i jak klient ma zrobić następny krok.'],
-      ['Potem projekt.','Układ, treści i wygląd dopasowujemy do Twojej marki. Wiesz, co powstaje, zanim przejdziemy dalej.'],
+      ['Potem projekt.','W pakiecie START korzystamy z przygotowanego szablonu i Twoich materiałów. Dopasowujemy kolory, układ do 5 sekcji i dane firmy.'],
       ['Na końcu start.','Wdrażamy stronę i sprawdzamy widok mobilny, nawigację oraz formularze w ustalonym zakresie.']
     ],
     contactHeading:'Zróbmy<br><em>dobrą stronę.</em>',
-    contactIntro:'Nowa strona czy zmiana obecnej? Opowiedz nam o firmie. Wrócimy do Ciebie z pytaniami i ustalimy kolejny krok.',
-    choices:['Nowa strona','Przebudowa','Sklep internetowy'],
+    contactIntro:'Interesuje Cię WWW START za 1490 zł netto czy większy projekt? Opowiedz nam o firmie. Potwierdzimy zakres, termin i warunki współpracy.',
+    choices:['WWW START — 1490 zł netto','Przebudowa','Większy projekt'],
     messageLabel:'Kilka słów o projekcie *',
     placeholder:'Czym zajmuje się firma? Czego potrzebujesz?',
     faq:[
-      ['Ile kosztuje strona?','Cena zależy od podstron, funkcji, materiałów i integracji. Najpierw ustalimy zakres, a potem przedstawimy wycenę.'],
-      ['Czy muszę mieć gotowe teksty i zdjęcia?','Nie musisz mieć wszystkiego na początku. Wspólnie ustalimy, co możesz dostarczyć, a co przygotować w ramach projektu.'],
+      ['Co obejmuje 1490 zł netto?','WWW START to One Page do 5 sekcji na przygotowanym szablonie, wersja mobilna, formularz i jedna runda poprawek. Pracujemy na tekstach i zdjęciach klienta. Domena, hosting, przygotowanie treści, sklep i konfigurator są rozliczane osobno. Większe projekty wyceniamy indywidualnie.'],
+      ['Czy muszę mieć gotowe teksty i zdjęcia?','Pakiet WWW START wymaga materiałów od klienta. Jeśli potrzebujesz przygotowania tekstów lub zdjęć, ustalimy i wycenimy ten zakres osobno przed rozpoczęciem pracy.'],
       ['Czy możemy pracować zdalnie?','Tak. Projekty stron realizujemy dla firm z całej Polski. Etapy i sposób komunikacji ustalamy na początku współpracy.']
     ]
   },
   video: {
     region:'Filmy i rolki / Poznań i Wielkopolska',
-    headline:'Twoja firma.<br><em>Nasze kadry.</em>',
-    intro:'Produkty, miejsca i ludzie. Pokaż to, co wyróżnia Twoją firmę. Zajmiemy się pomysłem, nagraniami i montażem filmów oraz rolek.',
-    cta:'Porozmawiajmy o nagraniach',
-    foot:'Pomysł. Nagrania. Montaż.',
+    headline:'3 rolki dla firmy.<br><em>1490 zł netto.</em>',
+    intro:'Pokaż swoją pracę w krótkich materiałach. WIDEO START: pomysł, nagrania i montaż trzech pionowych rolek po 15–30 sekund.',
+    cta:'Zapytaj o WIDEO START',
+    foot:'Do 90 minut nagrań. Jedna lokalizacja w Poznaniu.',
     line:'Dobry materiał zaczyna się od dobrego pomysłu.',
     tags:['Filmy reklamowe','Rolki','Relacje'],
     workHeading:'Zobacz, jak<br><span>opowiadamy obrazem.</span>',
@@ -55,13 +55,13 @@ const offers = {
       ['Gotowy materiał.','Montujemy film i przygotowujemy uzgodnione formaty. Zakres poprawek określamy w ofercie.']
     ],
     contactHeading:'Pokażmy<br><em>Twoją firmę.</em>',
-    contactIntro:'Opowiedz, co chcesz nagrać i gdzie. Dobierzemy pomysł, zakres produkcji oraz formaty do Twoich kanałów publikacji.',
-    choices:['Rolki','Film reklamowy','Relacja z wydarzenia'],
+    contactIntro:'WIDEO START za 1490 zł netto czy większa produkcja? Napisz, co chcesz pokazać i gdzie. Potwierdzimy zakres oraz dostępność nagrań.',
+    choices:['WIDEO START — 3 rolki','Film reklamowy','Większa produkcja'],
     messageLabel:'Co chcesz nagrać i w jakiej miejscowości? *',
     placeholder:'Opisz firmę, cel materiału i miejsce nagrań.',
     faq:[
       ['Czy muszę występować w filmie?','Nie. Film możemy oprzeć na produkcie, miejscu, detalach i ujęciach pracy. Jeśli występujesz w materiale, wcześniej ustalimy plan nagrań.'],
-      ['Ile kosztują nagrania?','Cena zależy od lokalizacji, organizacji zdjęć, liczby materiałów i montażu. Zakres i wycenę otrzymasz przed rozpoczęciem współpracy.'],
+      ['Co obejmuje 1490 zł netto?','WIDEO START to 3 pionowe rolki po 15–30 sekund, do 90 minut nagrań w jednej lokalizacji w Poznaniu, plan, montaż, proste napisy, muzyka z prawami do uzgodnionego użycia i jedna runda poprawek. Pakiet nie obejmuje osobnej sesji zdjęciowej, drona, aktora, studia ani prowadzenia profilu. Dojazd poza Poznań wyceniamy osobno.'],
       ['Czy przygotujecie rolki i film z jednego nagrania?','Możemy zaplanować taką realizację. Liczbę materiałów, długości i formaty ustalamy przed nagraniami.']
     ]
   }

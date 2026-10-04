@@ -171,3 +171,11 @@ dialog p{margin:15px 0 0}
 .consent-actions{display:flex;gap:10px}.consent-actions button{flex:1;padding:13px 15px;background:#19191b;color:#fff;border:1px solid #19191b;border-radius:3px;font:inherit;font-size:13px;cursor:pointer}
 .consent-actions button:focus-visible,.cookies-settings:focus-visible{outline:3px solid #a61765;outline-offset:4px}
 @media(max-width:550px){.consent-banner{left:12px;right:12px;bottom:12px;padding:18px}.consent-actions{flex-direction:column}.studio-home .preview-detail{display:none}}
+
+/* Clear scope for the approved START offers. */
+.start-offer{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,70px);padding-top:52px;padding-bottom:52px;border-bottom:1px solid #343438}
+.start-offer h2{font-size:clamp(25px,3vw,40px);line-height:1.15;margin:14px 0 18px;letter-spacing:-.035em}
+.start-offer p{line-height:1.65}.start-scope{font-weight:600}.start-extras{font-size:14px;color:#b9b9c2;margin:14px 0 24px}
+@media(max-width:700px){.start-offer{grid-template-columns:1fr;gap:12px;padding-top:32px;padding-bottom:32px}.start-details .button{width:100%}}
+
+.portfolio-note{font-size:11px;line-height:1.5;color:var(--muted);margin:12px 0 0}
