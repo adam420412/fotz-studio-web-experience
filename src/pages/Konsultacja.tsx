@@ -210,15 +210,19 @@ export default function Konsultacja() {
               Wybierz termin w kalendarzu lub wyślij zgłoszenie. Dostępność spotkania wymaga potwierdzenia.
             </p>
           </FadeInView>
-          <div
-            className="calendly-inline-widget empty:hidden rounded-xl sm:rounded-2xl overflow-hidden border border-border bg-background"
-            data-url="https://calendly.com/fotz/konsultacja?hide_gdpr_banner=1"
-            style={{ minWidth: "320px", height: "720px" }}
-          />
-          <p className="mt-5 text-center text-sm text-muted-foreground">
-            Kalendarz się nie wyświetla lub żaden termin nie pasuje?{' '}
+          <p className="mb-6 text-center text-sm text-muted-foreground">
+            Możesz od razu opisać projekt i zaproponować termin.{' '}
             <a href="#formularz-konsultacji" className="underline underline-offset-4 text-foreground">Zgłoś konsultację w formularzu</a>.
           </p>
+          <details className="max-w-3xl mx-auto rounded-xl border border-border bg-background">
+            <summary className="cursor-pointer p-5 font-medium">Rozwiń kalendarz online</summary>
+            <p className="px-5 pb-5 text-sm text-muted-foreground">Jeśli kalendarz się nie załaduje, skorzystaj z formularza powyżej lub zadzwoń do nas.</p>
+            <div
+              className="calendly-inline-widget empty:hidden overflow-hidden"
+              data-url="https://calendly.com/fotz/konsultacja?hide_gdpr_banner=1"
+              style={{ minWidth: "280px", height: "720px" }}
+            />
+          </details>
         </div>
       </section>
 
