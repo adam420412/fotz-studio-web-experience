@@ -1,7 +1,6 @@
-import { motion, AnimatePresence } from "framer-motion";
+import * as Dialog from "@radix-ui/react-dialog";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
-import { useEffect, useCallback } from "react";
-import { cn } from "@/lib/utils";
+import { useRef } from "react";
 
 interface ImageLightboxProps {
   isOpen: boolean;
@@ -11,140 +10,43 @@ interface ImageLightboxProps {
   onNavigate: (index: number) => void;
 }
 
-export const ImageLightbox = ({
-  isOpen,
-  onClose,
-  images,
-  currentIndex,
-  onNavigate,
-}: ImageLightboxProps) => {
+export const ImageLightbox = ({ isOpen, onClose, images, currentIndex, onNavigate }: ImageLightboxProps) => {
+  const opener = useRef<HTMLElement | null>(null);
   const currentImage = images[currentIndex];
-
-  const goNext = useCallback(() => {
-    onNavigate((currentIndex + 1) % images.length);
-  }, [currentIndex, images.length, onNavigate]);
-
-  const goPrev = useCallback(() => {
-    onNavigate((currentIndex - 1 + images.length) % images.length);
-  }, [currentIndex, images.length, onNavigate]);
-
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (!isOpen) return;
-
-      switch (e.key) {
-        case "Escape":
-          onClose();
-          break;
-        case "ArrowRight":
-          goNext();
-          break;
-        case "ArrowLeft":
-          goPrev();
-          break;
-      }
-    };
-
-    window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [isOpen, goNext, goPrev, onClose]);
-
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, [isOpen]);
+  const navigate = (direction: number) => onNavigate((currentIndex + direction + images.length) % images.length);
+  const controlClass = "flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-white/30 bg-white/10 text-white hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white";
 
   return (
-    <AnimatePresence>
-      {isOpen && currentImage && (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          className="fixed inset-0 z-[100] bg-black/95 flex items-center justify-center"
-          onClick={onClose}
+    <Dialog.Root open={isOpen && Boolean(currentImage)} onOpenChange={(open) => { if (!open) onClose(); }}>
+      <Dialog.Portal>
+        <Dialog.Overlay className="fixed inset-0 z-[100] bg-black/95" />
+        <Dialog.Content
+          className="fixed inset-x-3 top-1/2 z-[101] mx-auto flex max-h-[calc(100dvh-24px)] max-w-6xl -translate-y-1/2 flex-col gap-3 rounded-xl bg-neutral-950 p-3 sm:p-5 text-white outline-none"
+          onOpenAutoFocus={() => { opener.current = document.activeElement instanceof HTMLElement ? document.activeElement : null; }}
+          onCloseAutoFocus={(event) => { event.preventDefault(); opener.current?.focus({ preventScroll: true }); }}
+          onKeyDown={(event) => {
+            if (event.key === "ArrowRight" || event.key === "ArrowLeft") {
+              event.preventDefault();
+              navigate(event.key === "ArrowRight" ? 1 : -1);
+            }
+          }}
         >
-          {/* Close button */}
-          <motion.button
-            className="absolute top-4 right-4 z-50 w-12 h-12 rounded-full bg-background/20 backdrop-blur-sm border border-border/30 flex items-center justify-center text-foreground hover:bg-background/40 transition-all"
-            onClick={onClose}
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <X className="w-6 h-6" />
-          </motion.button>
-
-          {/* Navigation - Previous */}
-          {images.length > 1 && (
-            <motion.button
-              className="absolute left-4 z-50 w-12 h-12 rounded-full bg-background/20 backdrop-blur-sm border border-border/30 flex items-center justify-center text-foreground hover:bg-background/40 transition-all"
-              onClick={(e) => {
-                e.stopPropagation();
-                goPrev();
-              }}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <ChevronLeft className="w-6 h-6" />
-            </motion.button>
-          )}
-
-          {/* Navigation - Next */}
-          {images.length > 1 && (
-            <motion.button
-              className="absolute right-4 z-50 w-12 h-12 rounded-full bg-background/20 backdrop-blur-sm border border-border/30 flex items-center justify-center text-foreground hover:bg-background/40 transition-all"
-              onClick={(e) => {
-                e.stopPropagation();
-                goNext();
-              }}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <ChevronRight className="w-6 h-6" />
-            </motion.button>
-          )}
-
-          {/* Image container */}
-          <motion.div
-            key={currentIndex}
-            initial={{ scale: 0.9, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            exit={{ scale: 0.9, opacity: 0 }}
-            transition={{ type: "spring", damping: 25, stiffness: 300 }}
-            className="relative max-w-[90vw] max-h-[85vh] flex flex-col items-center"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <img loading="lazy"
-              src={currentImage.src}
-              alt={currentImage.alt}
-              className="max-w-full max-h-[80vh] object-contain rounded-lg"
-            />
-
-            {/* Caption */}
-            <div className="mt-4 text-center">
-              <p className="text-foreground font-medium">{currentImage.alt}</p>
-              {currentImage.category && (
-                <p className="text-muted-foreground text-sm mt-1">{currentImage.category}</p>
-              )}
-              <p className="text-muted-foreground/60 text-xs mt-2">
-                {currentIndex + 1} / {images.length}
-              </p>
-            </div>
-          </motion.div>
-
-          {/* Keyboard hint */}
-          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 hidden md:flex items-center gap-4 text-foreground/50 text-sm">
-            <span>← → nawigacja</span>
-            <span>Esc - zamknij</span>
+          <div className="flex items-center justify-between gap-4">
+            <Dialog.Title className="text-sm font-medium">Galeria FOTZ Studio</Dialog.Title>
+            <Dialog.Close className={controlClass} aria-label="Zamknij galerię"><X className="h-5 w-5" aria-hidden="true" /></Dialog.Close>
           </div>
-        </motion.div>
-      )}
-    </AnimatePresence>
+          {currentImage && <img src={currentImage.src} alt={currentImage.alt} className="min-h-0 w-full flex-1 object-contain max-h-[calc(100dvh-230px)]" />}
+          <div className="flex items-center justify-between gap-3">
+            {images.length > 1 && <button type="button" className={controlClass} aria-label="Poprzednie zdjęcie" onClick={() => navigate(-1)}><ChevronLeft aria-hidden="true" className="h-5 w-5" /></button>}
+            <div className="min-w-0 flex-1 text-center" aria-live="polite" aria-atomic="true">
+              <p className="text-sm text-white">{currentImage?.alt}</p>
+              <Dialog.Description className="mt-1 text-xs text-white/70">{currentImage?.category ? `${currentImage.category} · ` : ""}Zdjęcie {currentIndex + 1} z {images.length}</Dialog.Description>
+            </div>
+            {images.length > 1 && <button type="button" className={controlClass} aria-label="Następne zdjęcie" onClick={() => navigate(1)}><ChevronRight aria-hidden="true" className="h-5 w-5" /></button>}
+          </div>
+          <p className="hidden sm:block text-center text-xs text-white/60">Strzałki ← → zmieniają zdjęcie. Esc zamyka galerię.</p>
+        </Dialog.Content>
+      </Dialog.Portal>
+    </Dialog.Root>
   );
 };

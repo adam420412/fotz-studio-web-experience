@@ -354,13 +354,15 @@ export default function FotografiaZDrona() {
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {galleryImages.map((item, index) => (
-              <motion.div
+              <motion.button
+                type="button"
+                aria-label={`Powiększ: ${item.alt}`}
                 key={index}
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="aspect-video rounded-xl overflow-hidden group relative cursor-pointer"
+                className="aspect-video rounded-xl overflow-hidden group relative cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
                 onClick={() => openImageLightbox(index)}
               >
                 <img loading="lazy"
@@ -374,7 +376,7 @@ export default function FotografiaZDrona() {
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3">
                   <span className="text-xs text-white/80 font-medium">{item.category}</span>
                 </div>
-              </motion.div>
+              </motion.button>
             ))}
           </div>
         </div>

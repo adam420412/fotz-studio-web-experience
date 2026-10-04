@@ -1,5 +1,16 @@
 # FOTZ Studio — naprawy i wiedza SEO/AEO, 4 października 2026
 
+## Kolejny pakiet: wybór usług i portfolio, 4 października
+
+- `/uslugi`: sześć obszarów z zakresem i bezpośrednimi linkami do ofert. Skróty według celu, trzy istniejące realizacje i osobne przejścia do konsultacji, formularza oraz briefu. Usunięto sprzeczne liczniki 200 projektów / 50 klientów / 5 lat i cztery nieadekwatne odtwarzacze pobierające media przy wejściu.
+- `/realizacje`: 21 kart uwzględnianych w liczniku, także Enea. Fabryka Virali i Friendly Gas znajdują się w stronach WWW, zgodnie z opisywaną realizacją. Usunięto zdanie o 600 projektach i pozostawione w treści symbole X%, Y%, Z%. Zachowano 19 adresów opisów projektów i dwa przykłady 3D; wizualizacje można powiększyć.
+- Portfolio ma skróty do projektów, sześciu filmów i 58 zdjęć/wizualizacji. Domyślnie pokazuje 12 miniatur galerii z możliwością rozwijania i filtrowania. Filtry mają stan dostępny dla czytnika ekranu i liczniki zgodne z widocznymi kartami.
+- Filmy w portfolio są tworzone i pobierane dopiero po aktywacji. Pięć nowych okładek to kadry z odpowiadających im lokalnych nagrań, a szósta wykorzystuje zatwierdzoną okładkę Enea. Film nazwany wcześniej Fun Sport pokazuje nieruchomość — podpis zmieniono na prezentację nieruchomości; ścieżkę pliku zachowano.
+- Wspólna galeria: nazwane przyciski, dialog z zatrzymaniem fokusu, strzałki, Escape i powrót do elementu otwierającego. Obsługa klawiaturą obejmuje miniatury w portfolio, Gierky i fotografii z drona. Biel kontrolek nie zależy od jasnego motywu strony.
+- Kontrola w przeglądarce: wszystkie pięć filtrów projektów (21/16/1/2/2), dziewięć kategorii zdjęć, rozwinięcie 12 do 24 miniatur, zmiana zdjęcia i przywracanie fokusu. Przy potwierdzonej szerokości 390 px brak przepełnienia. Przed uruchomieniem filmu 0 żądań MP4; po kliknięciu jedno żądanie wybranego filmu, poprawne odtwarzanie.
+
+Publikację tego pakietu potwierdza osobno wynik PR i odczyt domeny. Dowody robocze są w ignorowanym katalogu `qa-2026-10-01/portfolio-journey/`. Pakiet nie zmienia URL-i, danych Search Console, działania formularzy ani systemów reklamowych. Nie potwierdza skuteczności kampanii i liczb w pozostałych starszych opisach realizacji — te nadal wymagają redakcji na podstawie raportów źródłowych.
+
 ## Zakres zmian
 
 Ta aktualizacja opisuje kod przygotowany po audycie z 2 października. Publikację potwierdza osobno stan wdrożenia i odczyt produkcji; sam dokument ani build nie są takim dowodem.
