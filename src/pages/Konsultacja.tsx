@@ -43,7 +43,7 @@ const benefits = [
   {
     icon: CheckCircle,
     title: "Plan działań",
-    description: "Otrzymujesz konkretny, wykonalny plan działań dostosowany do Twojego biznesu",
+    description: "Ustalamy priorytet oraz zakres dalszego audytu, strategii lub realizacji",
   },
 ];
 
@@ -60,15 +60,15 @@ const steps = [
   },
   {
     number: "03",
-    title: "Otrzymaj plan",
-    description: "Po konsultacji wysyłamy Ci szczegółowy plan działań i rekomendacje.",
+    title: "Ustal kolejny krok",
+    description: "Ustalamy kolejny krok i informacje potrzebne do przygotowania zakresu prac.",
   },
 ];
 
 const faqs = [
   {
     question: "Kto prowadzi konsultację?",
-    answer: "Konsultację prowadzi Adam - twórca Fotz Studio z ponad 10-letnim doświadczeniem w marketingu. Będziesz pracować bezpośrednio z ekspertem, nie z asystentem.",
+    answer: "Rozmowę prowadzi osoba z zespołu FOTZ Studio. Przy potwierdzeniu terminu ustalamy temat i formę spotkania.",
   },
   {
     question: "Czy konsultacja to zobowiązanie do współpracy?",
@@ -80,14 +80,14 @@ const faqs = [
   },
   {
     question: "Na co mogę liczyć po konsultacji?",
-    answer: "Po konsultacji otrzymasz: notatki z rozmowy, analizę Twoich wyzwań, konkretne rekomendacje działań, szacunkowe koszty (jeśli będzie zainteresowanie), i propozycję dalszej współpracy.",
+    answer: "Pierwsza rozmowa pomaga określić cel i kolejny krok. Szczegółową analizę, pisemną strategię i realizację wyceniamy według osobno uzgodnionego zakresu.",
   },
 ];
 
 const trustSignals = [
-  { number: "10+", label: "Lat doświadczenia", icon: Award },
-  { number: "150+", label: "Zadowolonych klientów", icon: Users },
-  { number: "5/5", label: "Średnia ocena", icon: TrendingUp },
+  { number: "15 min", label: "Pierwsza rozmowa", icon: Award },
+  { number: "Cel", label: "Poznajemy projekt", icon: Users },
+  { number: "Zakres", label: "Ustalamy kolejny krok", icon: TrendingUp },
 ];
 
 export default function Konsultacja() {
@@ -256,7 +256,7 @@ export default function Konsultacja() {
               Jak to działa?
             </h2>
             <p className="text-muted-foreground text-base sm:text-lg max-w-2xl mx-auto">
-              Prosty proces w 3 krokach – od rezerwacji do otrzymania planu działań.
+              Prosty proces w 3 krokach – od zgłoszenia terminu do ustalenia kolejnego kroku.
             </p>
           </FadeInView>
 
