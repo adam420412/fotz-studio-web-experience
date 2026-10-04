@@ -38,3 +38,8 @@ test('prefers the authored CMS description over image captions and raw markdown 
   const article = { slug: 'kampanie', title: 'Kampanie reklamowe', excerpt: 'Kampanie ! Kobieta przy stole > TL;DR:', meta_description: 'Jak zaplanować kampanię reklamową dla firmy.' };
   assert.equal(getBlogMetadata(article).description, article.meta_description);
 });
+
+test('CMS links use the consolidated Poznan service URL while keeping query strings and other destinations', () => {
+  const html = '<a href="https://fotz.pl/social-media/poznan?from=blog#oferta">Oferta</a><a href="/social-media/poznan">Lokalnie</a><a href="https://example.com/social-media/poznan">Źródło</a><a href="/social-media/poznan-inny">Inna strona</a>';
+  assert.equal(prepareBlogHtml(html), '<a href="https://www.fotz-studio.pl/agencja-social-media/poznan?from=blog#oferta">Oferta</a><a href="/agencja-social-media/poznan">Lokalnie</a><a href="https://example.com/social-media/poznan">Źródło</a><a href="/social-media/poznan-inny">Inna strona</a>');
+});

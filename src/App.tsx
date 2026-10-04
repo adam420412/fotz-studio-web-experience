@@ -1665,6 +1665,7 @@ const App = () => (
                 {/* Topical Map: Agencja social media pillar + 20 cluster hubs */}
                 <Route path="/agencja-social-media" element={<AgencjaSocialMedia />} />
                 <Route path="/agencja-social-media/cennik" element={<AgencjaSocialMediaCennik />} />
+                <Route path="/agencja-social-media/poznan" element={<SocialMediaPoznan />} />
                 <Route path="/agencja-social-media/:clusterSlug" element={<SocialMediaClusterHub />} />
 
                 <Route path="/poradniki" element={<Poradniki />} />
@@ -2654,7 +2655,7 @@ const App = () => (
 
                 {/* Social media cluster */}
                 <Route path="/social-media/obsluga" element={<SocialMedia />} />
-                <Route path="/social-media/poznan" element={<SocialMediaPoznan />} />
+                <Route path="/social-media/poznan" element={<Redirect301 to="/agencja-social-media/poznan" />} />
                 <Route path="/social-media/warszawa" element={<SocialMediaWarszawa />} />
                 <Route path="/social-media/influencer" element={<BlogInfluencerMarketing />} />
                 <Route path="/social-media/reels-vs-tiktok" element={<BlogReelsVsTikTok />} />

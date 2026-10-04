@@ -19,7 +19,7 @@ const services = [
     icon: MessageCircle,
     title: "Social Media Poznań",
     description: "Dedykowane usługi social media dla firm z Poznania. Lokalna ekspertyza, znajomość rynku i sesje foto/video w naszym studiu.",
-    href: "/social-media/poznan",
+    href: "/agencja-social-media/poznan",
     features: ["Lokalna ekspertyza", "Studio foto/video", "Bezpośredni kontakt"],
   },
   {

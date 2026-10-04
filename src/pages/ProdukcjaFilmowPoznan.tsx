@@ -328,7 +328,7 @@ export default function ProdukcjaFilmowPoznan() {
                     Ważne jest, aby film był krótki, treściwy i angażował widzów poprzez storytelling.
                   </p>
                   <p className="text-muted-foreground">
-                    Wykorzystanie <Link to="/social-media/poznan" className="text-primary hover:underline">mediów społecznościowych</Link> do promocji filmów stało się nieodzownym elementem strategii marketingowych.
+                    Wykorzystanie <Link to="/agencja-social-media/poznan" className="text-primary hover:underline">mediów społecznościowych</Link> do promocji filmów stało się nieodzownym elementem strategii marketingowych.
                   </p>
                 </div>
               </FadeInView>
@@ -604,7 +604,7 @@ export default function ProdukcjaFilmowPoznan() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
               {[
                 { name: "Spoty reklamowe", href: "/uslugi/produkcja-video" },
-                { name: "Social Media", href: "/social-media/poznan" },
+                { name: "Social Media", href: "/agencja-social-media/poznan" },
                 { name: "Wizualizacje 3D", href: "/wizualizacje-3d" },
                 { name: "Fotografia", href: "/uslugi/fotografia" },
                 { name: "Strony internetowe", href: "/uslugi/strony-internetowe/poznan" },

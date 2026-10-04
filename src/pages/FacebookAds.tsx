@@ -123,7 +123,7 @@ const FacebookAds = () => {
     },
     {
       question: "Jakie są najczęstsze błędy przy tworzeniu reklam na Facebooku?",
-      answer: <>Najczęstsze błędy to nieprecyzyjne określenie grupy docelowej, nieodpowiedni wybór formatu reklamy, brak jasnego wezwania do działania, a także niedostosowanie treści i grafiki reklamy do preferencji odbiorców. Profesjonalna <Link to="/social-media/poznan" className="text-primary hover:underline">obsługa social media</Link> pomaga uniknąć tych błędów.</>
+      answer: <>Najczęstsze błędy to nieprecyzyjne określenie grupy docelowej, nieodpowiedni wybór formatu reklamy, brak jasnego wezwania do działania, a także niedostosowanie treści i grafiki reklamy do preferencji odbiorców. Profesjonalna <Link to="/agencja-social-media/poznan" className="text-primary hover:underline">obsługa social media</Link> pomaga uniknąć tych błędów.</>
     },
   ];
 
@@ -251,7 +251,7 @@ const FacebookAds = () => {
                 </p>
               </div>
               <div className="mt-6 flex flex-wrap gap-3">
-                <Link to="/social-media/poznan" className="text-blue-400 hover:text-blue-300 text-sm flex items-center gap-1">
+                <Link to="/agencja-social-media/poznan" className="text-blue-400 hover:text-blue-300 text-sm flex items-center gap-1">
                   <ArrowRight className="w-4 h-4" /> Social Media Marketing
                 </Link>
                 <Link to="/kompleksowa-obsluga-marketingowa" className="text-blue-400 hover:text-blue-300 text-sm flex items-center gap-1">
@@ -624,7 +624,7 @@ const FacebookAds = () => {
             {[
               { title: "Google Ads", description: "Reklamy w wyszukiwarce dla klientów z intencją zakupową", href: "/performance-marketing/google-ads", icon: Target },
               { title: "E-commerce & Sklepy", description: "Tworzymy skuteczne sklepy online", href: "/uslugi/strony-internetowe/ecommerce", icon: ShoppingCart },
-              { title: "Social Media", description: "Kompleksowa obsługa mediów społecznościowych", href: "/social-media/poznan", icon: Users },
+              { title: "Social Media", description: "Kompleksowa obsługa mediów społecznościowych", href: "/agencja-social-media/poznan", icon: Users },
               { title: "Strony internetowe", description: "Profesjonalne strony z wysoką konwersją", href: "/uslugi/strony-internetowe", icon: Monitor },
             ].map((service, index) => (
               <motion.div

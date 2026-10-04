@@ -73,7 +73,7 @@ export default function SocialMediaClusterHub() {
             <aside className="dv-panel p-6 md:p-8">
               <h2 className="font-geist text-2xl mb-5">Zaplanuj kolejny krok</h2>
               <ul className="space-y-4 text-sm leading-relaxed">
-                <li><Link className="underline underline-offset-4" to="/social-media/poznan">Prowadzenie Facebooka, Instagrama i LinkedIn</Link></li>
+                <li><Link className="underline underline-offset-4" to="/agencja-social-media/poznan">Prowadzenie Facebooka, Instagrama i LinkedIn</Link></li>
                 <li><Link className="underline underline-offset-4" to="/blog/agencja-social-media-poznan">Jak porównać agencje i przygotować brief</Link></li>
                 <li><Link className="underline underline-offset-4" to="/realizacje">Zobacz portfolio FOTZ Studio</Link></li>
                 <li><Link className="underline underline-offset-4" to="/generator-briefu">Przygotuj brief projektu</Link></li>

@@ -1,593 +1,106 @@
-import { SEOHead } from "@/components/seo/SEOHead";
-import { Layout } from "@/components/layout/Layout";
-import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { ArrowRight, Users, Target, TrendingUp, Camera, MessageSquare, BarChart3, Zap, Eye, Heart } from "lucide-react";
-import { motion } from "framer-motion";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
+import { ArrowRight, Camera, CalendarDays, ChartNoAxesCombined, MessageSquare, Target, Video } from "lucide-react";
+import { Layout } from "@/components/layout/Layout";
+import { SEOHead } from "@/components/seo/SEOHead";
+import { BreadcrumbSchema, FAQSchema, ServiceSchema } from "@/components/seo/StructuredData";
+import { PortfolioVideo } from "@/components/PortfolioVideo";
+import { useClusterArticles } from "@/hooks/useClusterArticles";
+import stadiumPhoto from "@/assets/enea/stadion-race-fajerwerki-web.webp";
 
 const services = [
-  {
-    icon: Users,
-    title: "Prowadzenie Facebooka",
-    href: "/social-media/facebook",
-    description: "Profesjonalne zarządzanie fanpage, tworzenie angażujących postów i budowanie społeczności."
-  },
-  {
-    icon: Camera,
-    title: "Instagram & Stories",
-    href: "/social-media/instagram",
-    description: "Tworzenie atrakcyjnych treści wizualnych, reels i stories dla Twojej marki."
-  },
-  {
-    icon: Target,
-    title: "Kampanie Meta Ads",
-    href: "/performance-marketing/meta-ads",
-    description: "Precyzyjnie targetowane kampanie reklamowe generujące leady i sprzedaż."
-  },
-  {
-    icon: MessageSquare,
-    title: "LinkedIn B2B",
-    href: "/social-media/linkedin",
-    description: "Budowanie profesjonalnego wizerunku i pozyskiwanie klientów biznesowych."
-  },
-  {
-    icon: BarChart3,
-    title: "Analityka i Raportowanie",
-    href: "/social-media/strategia",
-    description: "Monitoring wyników, analiza KPI i optymalizacja działań w czasie rzeczywistym."
-  },
-  {
-    icon: Zap,
-    title: "Content Marketing",
-    href: "/content-marketing/strategia",
-    description: "Strategiczne tworzenie treści, które angażują i konwertują odbiorców."
-  }
+  { icon: Target, title: "Strategia i plan tematów", text: "Odbiorcy, rola kanałów, język marki i tematy oparte na pytaniach klientów. Plan dopasowany do materiałów oraz czasu zespołu.", href: "/social-media/strategia" },
+  { icon: CalendarDays, title: "Prowadzenie profili", text: "Teksty, grafiki, harmonogram i publikacja na uzgodnionych kanałach. Liczbę materiałów, poprawki i moderację zapisujemy w zakresie.", href: "/social-media/obsluga" },
+  { icon: Camera, title: "Zdjęcia i treści", text: "Oferta, produkty, ludzie i kulisy pracy. Łączymy materiały firmy z zaplanowaną produkcją, żeby profil pokazywał jej charakter.", href: "/social-media/content" },
+  { icon: Video, title: "Rolki i filmy", text: "Pomysł, scenariusz, nagrania i montaż. Przed produkcją ustalamy formaty, napisy, wersje oraz miejsca wykorzystania filmu.", href: "/uslugi/produkcja-video" },
+  { icon: MessageSquare, title: "Kampanie Meta Ads", text: "Cel kampanii, kreacje, konfiguracja i ocena wyników. Obsługę reklam oraz budżet płacony platformie wyceniamy oddzielnie.", href: "/performance-marketing/meta-ads" },
+  { icon: ChartNoAxesCombined, title: "Pomiar i raportowanie", text: "Sprawdzamy publikacje, reakcje, wejścia i zapytania. Przy dostępie do danych sprzedaży oceniamy też jakość pozyskanych kontaktów.", href: "/social-media/analityka" },
 ];
-
-const caseStudies = [
-  {
-    title: "Enea Stadion",
-    description: "Zobacz opis współpracy przy komunikacji obiektu, materiałach video i mediach społecznościowych.",
-    icon: Target,
-    href: "/realizacje/enea-stadion",
-    cta: "Zobacz realizację",
-  },
-  {
-    title: "Produkcje video",
-    description: "Przejrzyj portfolio i sprawdź formę materiałów, które mogą wspierać komunikację Twojej firmy.",
-    icon: Camera,
-    href: "/realizacje",
-    cta: "Przejdź do portfolio",
-  },
-  {
-    title: "Jak porównać oferty?",
-    description: "Przygotuj brief i pytania o zakres, produkcję oraz raportowanie przed wyborem agencji.",
-    icon: Heart,
-    href: "/blog/agencja-social-media-poznan",
-    cta: "Przeczytaj poradnik",
-  },
+const faqs = [
+  { question: "Co obejmuje prowadzenie social media?", answer: "Zakres może obejmować strategię, plan tematów, teksty, grafiki, publikację i moderację. Zdjęcia, rolki, kampanie reklamowe oraz raportowanie rozpisujemy jako konkretne zadania. Przed startem ustalamy kanały, liczbę materiałów, poprawki i sposób akceptacji." },
+  { question: "Ile kosztuje obsługa social media w Poznaniu?", answer: "Cena zależy od liczby kanałów i publikacji, formatu treści, nagrań, moderacji oraz reklam. Do wyceny potrzebujemy linków do profili, celu, dostępnych materiałów i planowanego budżetu. Wynagrodzenie za obsługę, koszt produkcji i budżet reklamowy są osobnymi pozycjami." },
+  { question: "Czy nagrywacie materiały w firmie w Poznaniu?", answer: "Możemy zaplanować produkcję w siedzibie firmy lub wskazanej lokalizacji. Miejsce, termin, uczestników, listę ujęć i ewentualny dojazd uzgadniamy przed nagraniami. Nasza baza znajduje się w Poznaniu; brief i akceptacje można prowadzić zdalnie." },
+  { question: "Czy reklamy są w cenie prowadzenia profilu?", answer: "Publikacje organiczne i płatne kampanie to różne zadania. W ofercie określamy, czy obejmuje ona konfigurację i obsługę reklam. Budżet emisji płacony platformie wskazujemy oddzielnie od wynagrodzenia agencji." },
+  { question: "Czy mogę zamówić same rolki albo zdjęcia?", answer: "Tak, możemy wycenić samą produkcję materiałów. Ustalamy liczbę filmów lub zdjęć, formaty, zakres montażu, poprawki i sposób wykorzystania. Publikacja oraz prowadzenie profilu mogą pozostać po stronie Twojej firmy." },
+  { question: "Po czym poznam, czy działania przynoszą efekty?", answer: "Najpierw ustalamy cel i punkt wyjścia. Zasięg oraz reakcje pokazują odbiór treści, a wejścia, zapytania i rezerwacje pomagają ocenić zainteresowanie ofertą. Sprzedaż weryfikujemy w danych firmy. Termin uzyskania wyników zależy między innymi od oferty, budżetu, materiałów i obsługi kontaktów." },
 ];
-
-const faqItems = [
-  {
-    question: "Czym zajmuje się agencja social media Poznań i jak może pomóc mojemu biznesowi?",
-    answer: "Agencja social media Poznań specjalizuje się w prowadzeniu social mediów, tworzeniu strategii contentowej, kampanii reklamowych i optymalizacji performance. Dzięki współpracy z nami poprawisz swój wizerunek, zwiększysz zasięgi i zdobędziesz nowych klientów zarówno dla lokalu, jak i e-commerce."
-  },
-  {
-    question: "Jak wygląda realne case study prowadzenia Facebooka?",
-    answer: "Typowe case study pokazuje cele, zastosowane działania (treści, reklama, testy A/B), metryki performance (CTR, CPC, konwersje) i wyniki — np. wzrost zaangażowania, ruchu na stronie i sprzedaży. Case study ilustruje też, jak poprawiliśmy wizerunek marki i jak zdobędziesz nowych klientów dzięki kampanii."
-  },
-  {
-    question: "Jakie usługi związane z social media oferujecie w ramach performance marketingu?",
-    answer: "W zakresie performance oferujemy kampanie reklamowe na Facebooku, optymalizację konwersji, analitykę, remarketing oraz testy kreatywne. Wszystko po to, aby reklama była efektywna i przynosiła mierzalne rezultaty dla e-commerce oraz tradycyjnych biznesów."
-  },
-  {
-    question: "Czy możecie pomóc w budowaniu pozytywnego wizerunku marki?",
-    answer: "Tak — opracujemy strategię komunikacji, content plan, zarządzanie kryzysowe i działania reklamowe, które wspólnie zbudują spójny i pozytywny wizerunek. Dzięki monitorowaniu reakcji użytkowników oraz optymalizacji performance szybko zobaczysz efekty."
-  },
-  {
-    question: "Jakie korzyści przynosi współpraca z lokalną agencją z Poznania?",
-    answer: "Lokalna agencja lepiej rozumie rynek i kontekst Poznania, szybciej reaguje na potrzeby klienta i może zaoferować spersonalizowane strategie. Bliższa współpraca często przekłada się na lepsze wyniki performance i szybsze wdrożenia kampanii reklamowych."
-  },
-  {
-    question: "Jak wygląda proces tworzenia kampanii reklamowej na Facebooku?",
-    answer: "Proces obejmuje audyt profilu i konkurencji, ustalenie celów (np. sprzedaż, pozyskanie leadów), tworzenie kreacji i copy, ustawienie targetowania, uruchomienie reklam oraz ciągłą optymalizację. Na końcu przedstawiamy raport z wynikami i rekomendacje."
-  },
-  {
-    question: "Czy możecie pomóc małemu sklepowi e-commerce?",
-    answer: "Oczywiście — przygotujemy kampanie reklamowe dostosowane do budżetu, zoptymalizujemy sklep pod kątem konwersji, poprowadzimy działania w social mediach i remarketing, co zwiększy ruch i sprzedaż."
-  },
-  {
-    question: "Jak mierzyć sukces działań w social media?",
-    answer: "Sukces mierzy się za pomocą KPI takich jak zasięg, zaangażowanie, CTR, koszt na konwersję, ROAS oraz wzrost sprzedaży. Regularne raporty pokazują postępy i pozwalają optymalizować reklamę dla lepszych wyników."
-  },
-  {
-    question: "Jak wybrać najlepszą agencję social media dla mojej firmy?",
-    answer: "Sprawdź portfolio i case study agencji, poproś o referencje, zwróć uwagę na doświadczenie w Twojej branży, oceniaj podejście do performance i komunikacji oraz upewnij się, że agencja pomoże Ci z reklamą i budową spójnego wizerunku."
-  }
+const steps = [
+  { title: "Rozmowa i zakres", text: "Przeglądamy profile, ofertę i dotychczasowe materiały. Ustalamy odbiorców, cel, kanały oraz to, co zostaje po stronie Twojego zespołu." },
+  { title: "Plan i produkcja", text: "Przygotowujemy tematy, formaty i listę potrzebnych materiałów. Jeśli zakres obejmuje nagrania, uzgadniamy dzień produkcji i uczestników." },
+  { title: "Akceptacja i publikacja", text: "Materiały trafiają do wyznaczonej osoby w firmie. Zatwierdzone treści publikujemy według planu; dodatkowe zadania ustalamy osobno." },
+  { title: "Raport i kolejne decyzje", text: "Porównujemy wyniki z celem oraz punktem wyjścia. Wnioski przekładamy na następne tematy, formaty i testy reklamowe." },
 ];
 
 export default function SocialMediaPoznan() {
+  const { data: articles = [], isLoading, isError, refetch } = useClusterArticles("poznan");
   return (
-    <>
-      <OrganizationSchema />
-      <Layout>
-      <SEOHead
-        title="Social Media Poznań — Obsługa i Prowadzenie Social Media"
-        description="Obsługa social media Poznań — prowadzenie Facebooka, Instagrama, LinkedIn dla firm z Poznania. Content, kampanie reklamowe, analityka. Fotz Studio."
-        canonical="https://www.fotz-studio.pl/social-media/poznan"
-        keywords="agencja social media poznań, obsługa social media poznań, prowadzenie fanpage poznań, social media marketing poznań, facebook ads poznań"
-      />
-      <ServiceSchema
-        name="Agencja Social Media Poznań"
-        description="Profesjonalne prowadzenie Facebooka, Instagrama i LinkedIn. Kampanie Meta Ads, content marketing i budowanie wizerunku marki."
-        provider="Fotz Studio"
-        areaServed="Poznań"
-      />
-      <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
-          { name: "Social Media", url: "https://www.fotz-studio.pl/social-media/obsluga" },
-          { name: "Social Media Poznań", url: "https://www.fotz-studio.pl/social-media/poznan" }
-        ]}/>
-      <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
+    <Layout>
+      <SEOHead title="Agencja social media Poznań — prowadzenie profili i rolki" description="FOTZ Studio w Poznaniu: prowadzenie Facebooka i Instagrama, zdjęcia, rolki oraz kampanie Meta Ads. Zobacz realizacje, zakres współpracy i sposób wyceny." canonical="https://www.fotz-studio.pl/agencja-social-media/poznan" />
+      <ServiceSchema name="Obsługa social media w Poznaniu" description="Planowanie komunikacji, prowadzenie profili, produkcja zdjęć i video oraz kampanie reklamowe w uzgodnionym zakresie." areaServed="Poznań" />
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://www.fotz-studio.pl/" }, { name: "Agencja social media", url: "https://www.fotz-studio.pl/agencja-social-media" }, { name: "Poznań", url: "https://www.fotz-studio.pl/agencja-social-media/poznan" }]} />
+      <FAQSchema items={faqs} />
 
-      {/* Hero Section */}
-      <section className="pt-40 pb-20 section-padding bg-background">
-        <div className="container-wide">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="max-w-4xl"
-          >
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-4 sm:mb-6 leading-tight">
-              Agencja Social Media Poznań:{" "}
-              <span className="bg-gradient-to-r from-[#75143F] to-[#0F3053] bg-clip-text text-transparent">
-                Marketing i Prowadzenie Facebooka
-              </span>
-            </h1>
-            <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8 max-w-3xl">
-              W Fotz rozumiemy, jak istotny jest profesjonalny wizerunek w sieci. Specjalizujemy się w kompleksowej obsłudze firm w zakresie marketingu w social mediach, oferując usługi od tworzenia strategii po realizację kampanii reklamowych. Działamy w Poznaniu, wspierając lokalne firmy w budowaniu silnej obecności online.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-              <Button asChild size="lg" className="bg-gradient-to-r from-[#75143F] to-[#0F3053] hover:opacity-90 w-full sm:w-auto text-sm sm:text-base">
-                <Link to="/kontakt">
-                  Bezpłatna konsultacja <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
-                </Link>
-              </Button>
-              <Button asChild variant="outline" size="lg" className="w-full sm:w-auto text-sm sm:text-base">
-                <Link to="/realizacje">Zobacz realizacje</Link>
-              </Button>
+      <section className="container-wide px-6 md:px-12 pt-32 md:pt-40 pb-12 md:pb-20">
+        <div className="grid lg:grid-cols-[1.2fr_1fr] gap-10 lg:gap-16 items-center">
+          <div>
+            <p className="dv-eyebrow mb-5">FOTZ Studio · Poznań</p>
+            <h1 className="text-4xl md:text-6xl font-heading leading-[1.08] tracking-tight mb-6">Agencja social media<br /><span className="text-gradient">w Poznaniu.</span></h1>
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mb-7">Prowadzimy profile, robimy zdjęcia i nagrywamy rolki. Łączymy komunikację na Facebooku, Instagramie i LinkedIn z ofertą Twojej firmy oraz jasno ustalonym celem.</p>
+            <div className="flex flex-col sm:flex-row gap-3 items-start">
+              <Link to="/konsultacja" className="dv-btn dv-btn-primary">Umów rozmowę 15 min <ArrowRight aria-hidden="true" className="w-4 h-4" /></Link>
+              <a href="#realizacje-social-media" className="dv-btn dv-btn-secondary">Zobacz nasze materiały</a>
             </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* About Agency Section */}
-      <section className="py-20 section-padding bg-secondary/30">
-        <div className="container-wide">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="max-w-4xl mx-auto text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-              Nasza Agencja Social Media w Poznaniu
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              Fotz to <strong>agencja social media w Poznaniu, która łączy kreatywne pomysły z realnymi celami biznesowymi</strong>. 
-              Prowadzimy social media, koncentrując się na budowaniu zaangażowania i generowaniu leadów. 
-              Rozumiemy specyfikę różnych platform, od Facebooka po LinkedIn, i dostosowujemy strategie do potrzeb każdej branży.
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.1 }}
-              className="bg-card p-8 rounded-2xl border border-border"
-            >
-              <h3 className="text-xl font-heading font-semibold mb-4">Dlaczego warto wybrać naszą agencję</h3>
-              <p className="text-muted-foreground">
-                Wybierając naszą agencję, zyskujesz partnera, który rozumie Twój biznes. Nie oferujemy szablonowych rozwiązań. 
-                <strong> Nasze kampanie reklamowe są zawsze oparte na danych i analizach, co zapewnia maksymalną efektywność.</strong>
-              </p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2 }}
-              className="bg-card p-8 rounded-2xl border border-border"
-            >
-              <h3 className="text-xl font-heading font-semibold mb-4">Nasza misja i wizja</h3>
-              <p className="text-muted-foreground">
-                <strong>Naszą misją jest wspieranie firm w budowaniu silnego i autentycznego wizerunku marki w social mediach.</strong> 
-                Wierzymy, że skuteczne prowadzenie profili to klucz do sukcesu w dzisiejszym świecie cyfrowym.
-              </p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.3 }}
-              className="bg-card p-8 rounded-2xl border border-border"
-            >
-              <h3 className="text-xl font-heading font-semibold mb-4">Zakres usług marketingowych</h3>
-              <p className="text-muted-foreground">
-                Oferujemy kompleksowy zakres usług w obszarze obsługi social media. 
-                <strong> Tworzymy content, który angażuje grupy odbiorców i generuje leady.</strong> 
-                Korzystamy z narzędzi Meta Ads i Google Ads.
-              </p>
-            </motion.div>
           </div>
+          <figure className="overflow-hidden rounded-2xl border border-border bg-card">
+            <img src={stadiumPhoto} alt="Fajerwerki i race przy Enea Stadionie w Poznaniu" width="960" height="640" loading="eager" className="w-full aspect-[3/2] object-cover" />
+            <figcaption className="p-5 flex flex-wrap items-center justify-between gap-3 text-sm"><span>Enea Stadion · fotografia z wydarzenia</span><Link to="/realizacje/enea-stadion" className="underline underline-offset-4">Poznaj projekt</Link></figcaption>
+          </figure>
         </div>
+        <nav aria-label="Na tej stronie" className="flex flex-wrap gap-x-6 gap-y-3 mt-10 pt-6 border-t border-border text-sm">
+          <a href="#zakres-social-media" className="underline underline-offset-4">Zakres obsługi</a><a href="#proces-social-media" className="underline underline-offset-4">Jak pracujemy</a><a href="#wycena-social-media" className="underline underline-offset-4">Co wpływa na cenę</a><a href="#pytania-social-media" className="underline underline-offset-4">Pytania przed startem</a>
+        </nav>
       </section>
 
-      {/* Services Section */}
-      <section className="py-20 section-padding bg-background">
-        <div className="container-wide">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-              Usługi Social Media
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Kompleksowa obsługa social media dla firm z Poznania i okolic
-            </p>
-          </motion.div>
+      <section id="zakres-social-media" className="container-wide px-6 md:px-12 py-12 md:py-16 scroll-mt-28" aria-labelledby="zakres-heading">
+        <p className="dv-eyebrow mb-3">Zakres współpracy</p><h2 id="zakres-heading" className="text-3xl md:text-4xl font-heading mb-5">Czego potrzebują Twoje profile?</h2>
+        <p className="text-muted-foreground max-w-3xl mb-8 leading-relaxed">Możesz powierzyć nam regularną komunikację albo konkretną część pracy: plan, produkcję materiałów lub kampanię. Zakres dobieramy do tego, co firma ma już gotowe i czego potrzebuje.</p>
+        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-5">{services.map(service => <article key={service.href} className="border border-border bg-card rounded-2xl p-6 flex flex-col items-start"><service.icon aria-hidden="true" className="w-6 h-6 text-primary mb-5" /><h3 className="text-xl mb-3">{service.title}</h3><p className="text-muted-foreground leading-relaxed mb-5">{service.text}</p><Link to={service.href} className="underline underline-offset-4 text-sm mt-auto" aria-label={`Poznaj zakres: ${service.title}`}>Poznaj zakres</Link></article>)}</div>
+      </section>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <motion.div
-                key={service.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="bg-card p-8 rounded-2xl border border-border hover:border-primary/50 transition-all group"
-              >
-                <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#75143F] to-[#0F3053] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                  <service.icon className="w-7 h-7 text-white" />
-                </div>
-                <h3 className="text-xl font-heading font-semibold mb-3">{service.title}</h3>
-                <p className="text-muted-foreground">{service.description}</p>
-                <Link to={service.href} className="inline-flex items-center gap-2 mt-5 underline underline-offset-4" aria-label={`Sprawdź zakres: ${service.title}`}>Sprawdź zakres <ArrowRight aria-hidden="true" className="w-4 h-4" /></Link>
-              </motion.div>
-            ))}
+      <section id="realizacje-social-media" className="py-12 md:py-16 bg-muted/30 border-y border-border scroll-mt-28" aria-labelledby="realizacje-heading">
+        <div className="container-wide px-6 md:px-12">
+          <div className="flex flex-wrap items-end justify-between gap-5 mb-8"><div><p className="dv-eyebrow mb-3">Z naszej produkcji</p><h2 id="realizacje-heading" className="text-3xl md:text-4xl font-heading">Zobacz, jak opowiadamy obrazem.</h2></div><Link to="/realizacje" className="underline underline-offset-4">Całe portfolio</Link></div>
+          <div className="grid md:grid-cols-2 gap-6">
+            <PortfolioVideo src="/videos/fotz-reel-web.mp4" poster="/videos/enea-stadion-cover.webp" title="Enea Stadion — emocje z bliska" category="Film z wydarzenia" />
+            <PortfolioVideo src="/videos/autospa.mp4" poster="/videos/autospa-frame.webp" title="AutoSpa" category="Prezentacja firmy" />
           </div>
+          <p className="text-muted-foreground max-w-3xl mt-6 leading-relaxed">Film z wydarzenia i prezentacja firmy odpowiadają na różne potrzeby. Przed nagraniami ustalamy odbiorców, miejsce publikacji i działanie, do którego materiał ma zachęcać.</p>
         </div>
       </section>
 
-      {/* Video Showcase Section */}
-      <section className="py-20 section-padding bg-secondary/30">
-        <div className="container-wide">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-              Nasze Realizacje Video
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Zobacz przykłady naszych produkcji video dla klientów
-            </p>
-          </motion.div>
+      <section id="proces-social-media" className="container-wide px-6 md:px-12 py-12 md:py-16 scroll-mt-28" aria-labelledby="proces-heading">
+        <p className="dv-eyebrow mb-3">Od briefu do publikacji</p><h2 id="proces-heading" className="text-3xl md:text-4xl font-heading mb-8">Jasny podział pracy.</h2>
+        <ol className="grid md:grid-cols-2 lg:grid-cols-4 gap-7">{steps.map((step, index) => <li key={step.title} className="border-t border-border pt-5"><span aria-hidden="true" className="text-sm text-primary">0{index + 1}</span><h3 className="text-xl mt-3 mb-3">{step.title}</h3><p className="text-muted-foreground leading-relaxed">{step.text}</p></li>)}</ol>
+        <p className="mt-8 text-muted-foreground max-w-3xl leading-relaxed">Nasza baza jest w Poznaniu. Produkcję w Twojej firmie, dojazd i termin ustalamy w ofercie. Rozmowy, przekazywanie materiałów i akceptacje możemy prowadzić zdalnie.</p>
+      </section>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            {[
-              { src: "/videos/autospa.mp4", title: "AutoSpa", description: "Reklama video dla myjni samochodowej" },
-              { src: "/videos/sequence-01.mp4", title: "Produkcja video", description: "Profesjonalna produkcja reklamowa" },
-              { src: "/videos/skaland-osiedle.mp4", title: "Skaland Osiedle", description: "Prezentacja inwestycji deweloperskiej" },
-              { src: "/videos/eko-kamionki.mp4", title: "Eko Kamionki", description: "Relacja z eventu" },
-              { src: "/videos/fun-sport-stylish.mp4", title: "Biuro Nieruchomości", description: "Produkcja video dla biura nieruchomości" },
-              { src: "/videos/fotz-reel.mp4", title: "Enea Stadion", description: "Realizacja z meczu dla Enea Stadion Poznań" },
-            ].map((video, index) => (
-              <motion.div
-                key={video.src}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="bg-card rounded-2xl overflow-hidden border border-border hover:border-primary/50 transition-all"
-              >
-                <div className="relative aspect-video">
-                  <video
-                    src={video.src}
-                    className="w-full h-full object-cover"
-                    muted
-                    loop
-                    playsInline
-                    controls
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-heading font-semibold mb-2">{video.title}</h3>
-                  <p className="text-muted-foreground">{video.description}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <Button asChild size="lg" className="bg-gradient-to-r from-[#75143F] to-[#0F3053] hover:opacity-90">
-              <Link to="/realizacje">
-                Zobacz wszystkie realizacje <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-          </div>
+      <section id="wycena-social-media" className="container-wide px-6 md:px-12 py-12 md:py-16 scroll-mt-28" aria-labelledby="wycena-heading">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16">
+          <div><p className="dv-eyebrow mb-3">Wycena social media</p><h2 id="wycena-heading" className="text-3xl md:text-4xl font-heading mb-5">Porównuj zakres, nie samą liczbę postów.</h2><p className="text-muted-foreground leading-relaxed mb-6">Koszt zależy od kanałów, liczby materiałów, nagrań, montażu, moderacji i reklam. W ofercie oddzielamy obsługę profili, produkcję oraz budżet emisji. Dzięki temu wiesz, za co płacisz i które zadania wymagają dodatkowej wyceny.</p><Link to="/agencja-social-media/cennik" className="underline underline-offset-4">Sprawdź modele i składniki wyceny</Link></div>
+          <aside className="rounded-2xl border border-border bg-card p-6 md:p-8"><h3 className="text-2xl mb-5">Co przesłać do wyceny?</h3><ul className="list-disc pl-5 space-y-3 text-muted-foreground"><li>Linki do strony i obecnych profili.</li><li>Cel: np. zapytania o ofertę, rezerwacje lub komunikacja wydarzenia.</li><li>Dostępne zdjęcia, filmy i osoby, które mogą wystąpić w nagraniach.</li><li>Planowany termin, kanały i budżet na obsługę oraz reklamę.</li></ul><Link to="/kontakt" className="dv-btn dv-btn-primary mt-7">Opisz swoje potrzeby <ArrowRight aria-hidden="true" className="w-4 h-4" /></Link></aside>
         </div>
       </section>
 
-      {/* Case Studies Section */}
-      <section className="py-20 section-padding bg-background">
-        <div className="container-wide">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-              Realizacje i materiały do porównania
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Zobacz nasze prace i przygotuj pytania przed rozpoczęciem współpracy
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {caseStudies.map((study, index) => (
-              <motion.div
-                key={study.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="bg-card p-8 rounded-2xl border border-border"
-              >
-                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#75143F] to-[#0F3053] flex items-center justify-center mb-6">
-                  <study.icon className="w-6 h-6 text-white" />
-                </div>
-                <h3 className="text-xl font-heading font-semibold mb-3">{study.title}</h3>
-                <p className="text-muted-foreground">{study.description}</p>
-                <Link to={study.href} className="inline-flex items-center gap-2 mt-5 underline underline-offset-4">{study.cta}<ArrowRight aria-hidden="true" className="w-4 h-4" /></Link>
-              </motion.div>
-            ))}
-          </div>
-        </div>
+      <section id="pytania-social-media" className="container-wide px-6 md:px-12 py-12 md:py-16 scroll-mt-28" aria-labelledby="faq-heading">
+        <div className="max-w-3xl"><h2 id="faq-heading" className="text-3xl md:text-4xl font-heading mb-7">Pytania przed rozpoczęciem</h2>{faqs.map(faq => <details key={faq.question} className="border-b border-border py-5"><summary className="font-medium cursor-pointer pr-3">{faq.question}</summary><p className="text-muted-foreground leading-relaxed mt-4">{faq.answer}</p></details>)}</div>
       </section>
 
-      {/* Strategy Section */}
-      <section className="py-20 section-padding bg-background">
-        <div className="container-wide">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-              Strategie Marketingowe dla Twojego Biznesu
-            </h2>
-          </motion.div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="bg-card p-8 rounded-2xl border border-border"
-            >
-              <Eye className="w-10 h-10 text-primary mb-6" />
-              <h3 className="text-xl font-heading font-semibold mb-4">Analiza rynku i konkurencji</h3>
-              <p className="text-muted-foreground">
-                <strong>Kompleksowa strategia marketingowa zaczyna się od dogłębnej analizy rynku i konkurencji.</strong> 
-                Nasz zespół analizuje trendy, identyfikuje nisze i bada działania konkurentów, aby opracować unikalną strategię.
-              </p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.1 }}
-              className="bg-card p-8 rounded-2xl border border-border"
-            >
-              <Target className="w-10 h-10 text-primary mb-6" />
-              <h3 className="text-xl font-heading font-semibold mb-4">Spersonalizowane kampanie</h3>
-              <p className="text-muted-foreground">
-                <strong>Skupiamy się na tworzeniu contentu, który angażuje grupy odbiorców i generuje leady.</strong> 
-                Wykorzystujemy narzędzia Meta Ads i Google Ads, aby dotrzeć do odpowiednich grup docelowych.
-              </p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2 }}
-              className="bg-card p-8 rounded-2xl border border-border"
-            >
-              <TrendingUp className="w-10 h-10 text-primary mb-6" />
-              <h3 className="text-xl font-heading font-semibold mb-4">Optymalizacja konwersji</h3>
-              <p className="text-muted-foreground">
-                <strong>Nie tylko generujemy leady, ale również dbamy o ich optymalizację i konwersję.</strong> 
-                Analizujemy ścieżki konwersji i wdrażamy rozwiązania zwiększające efektywność sprzedaży.
-              </p>
-            </motion.div>
-          </div>
-        </div>
+      <section className="container-wide px-6 md:px-12 py-12 md:pb-20" aria-labelledby="poradniki-heading">
+        <h2 id="poradniki-heading" className="text-2xl md:text-3xl font-heading mb-6">Przygotuj się do współpracy</h2>
+        <div className="flex flex-col sm:flex-row gap-5 mb-7"><Link to="/blog/agencja-social-media-poznan" className="underline underline-offset-4">Jak porównać agencje social media</Link><Link to="/generator-briefu" className="underline underline-offset-4">Przygotuj brief projektu</Link></div>
+        {isLoading && <p role="status" className="text-muted-foreground">Ładuję dodatkowe poradniki…</p>}
+        {isError && <div role="alert"><p className="text-muted-foreground mb-3">Nie udało się wczytać dodatkowych poradników.</p><button type="button" onClick={() => void refetch()} className="underline underline-offset-4">Spróbuj ponownie</button></div>}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">{articles.map(article => <Link key={article.id} to={`/blog/${article.slug}`} className="border border-border rounded-xl p-5"><h3 className="font-medium">{article.title}</h3>{article.excerpt && <p className="text-sm text-muted-foreground line-clamp-3 mt-3">{article.excerpt}</p>}</Link>)}</div>
       </section>
-
-      {/* Approach Section */}
-      <section className="py-20 section-padding bg-secondary/30">
-        <div className="container-wide">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-              Nasze Podejście do Social Media w Poznaniu
-            </h2>
-          </motion.div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="bg-card p-8 rounded-2xl border border-border"
-            >
-              <h3 className="text-xl font-heading font-semibold mb-4">Budowanie marki w sieci</h3>
-              <p className="text-muted-foreground">
-                <strong>Nasze działania koncentrują się na tworzeniu wartościowego contentu, który angażuje grupy odbiorców i buduje trwałe relacje z klientami.</strong> 
-                Dbamy o to, by każdy element komunikacji wspierał wizerunek marki.
-              </p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.1 }}
-              className="bg-card p-8 rounded-2xl border border-border"
-            >
-              <h3 className="text-xl font-heading font-semibold mb-4">Monitoring i analiza wyników</h3>
-              <p className="text-muted-foreground">
-                <strong>Kluczowym elementem skutecznego prowadzenia kampanii jest ciągły monitoring i analiza wyników.</strong> 
-                Korzystamy z zaawansowanych narzędzi analitycznych Meta i Google Ads.
-              </p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2 }}
-              className="bg-card p-8 rounded-2xl border border-border"
-            >
-              <h3 className="text-xl font-heading font-semibold mb-4">Przyszłość marketingu</h3>
-              <p className="text-muted-foreground">
-                <strong>Przyszłość marketingu w social media to personalizacja, automatyzacja i wykorzystanie sztucznej inteligencji.</strong> 
-                Stale śledzimy najnowsze trendy i innowacje.
-              </p>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="py-20 section-padding bg-background">
-        <div className="container-wide">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-              Często Zadawane Pytania
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              Odpowiedzi na najczęstsze pytania o social media marketing
-            </p>
-          </motion.div>
-
-          <div className="max-w-3xl mx-auto">
-            <Accordion type="single" collapsible className="space-y-4">
-              {faqItems.map((item, index) => (
-                <AccordionItem
-                  key={index}
-                  value={`item-${index}`}
-                  className="bg-card border border-border rounded-xl px-6"
-                >
-                  <AccordionTrigger className="text-left font-heading font-medium py-6">
-                    {item.question}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground pb-6">
-                    {item.answer}
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-12 sm:py-16 md:py-20 section-padding bg-gradient-to-br from-[#75143F] to-[#0F3053]">
-        <div className="container-wide px-4 sm:px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center"
-          >
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold mb-4 sm:mb-6 text-white">
-              Skontaktuj się z Nami
-            </h2>
-            <p className="text-base sm:text-lg md:text-xl text-white/80 mb-6 sm:mb-8 max-w-2xl mx-auto px-2">
-              <strong>Oferujemy bezpłatną konsultację</strong>, podczas której przeanalizujemy Państwa obecną sytuację w social mediach 
-              i zaproponujemy spersonalizowaną strategię marketingową.
-            </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
-              <Button asChild size="lg" variant="secondary" className="bg-white text-foreground hover:bg-white/90 w-full sm:w-auto text-sm sm:text-base">
-                <Link to="/kontakt">
-                  Umów darmową konsultację <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
-                </Link>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10 w-full sm:w-auto text-sm sm:text-base">
-                <a href="tel:+48790814814">
-                  Zadzwoń: +48 790 814 814
-                </a>
-              </Button>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* SEO Article Section */}
-      <section className="py-20 bg-card">
-        <div className="container mx-auto px-4">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
-            <h2 className="text-3xl font-heading font-bold mb-6">Agencja social media Poznań — obsługa social mediów dla firm z Poznania</h2>
-            <p className="text-muted-foreground mb-4">Agencja social media Poznań — Fotz Studio prowadzi profile społecznościowe dla firm z Poznania i Wielkopolski. Obsługa social media obejmuje: tworzenie strategii, produkcję contentu (grafiki, wideo, teksty), zarządzanie profilami (Facebook, Instagram, LinkedIn, TikTok), prowadzenie kampanii reklamowych i analizę wyników.</p>
-            <p className="text-muted-foreground mb-6">Prowadzenie social media dla firm z Poznania to nasza codzienność od kilku lat. Znamy lokalny rynek, wiemy jakie treści angażują poznańskich odbiorców i jak docierać do potencjalnych klientów w Wielkopolsce. Agencja social media Poznań z portfolio dziesiątek lokalnych firm.</p>
-            <h2 className="text-3xl font-heading font-bold mb-6">Social media marketing Poznań — kampanie reklamowe i organiczny growth</h2>
-            <p className="text-muted-foreground">Social media marketing Poznań łączy organiczny content z płatnymi kampaniami Facebook Ads i Instagram Ads. Targetowanie reklam na Poznań i okolice, kreacje dopasowane do lokalnej specyfiki i systematyczne raportowanie efektów — to nasza agencja social media w Poznaniu. Skontaktuj się i sprawdź ofertę obsługi social media dla Twojej firmy.</p>
-          
-            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
-              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
-              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
-              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Performance marketing</Link>
-              <Link to="/agencja-marketingowa/poznan" className="text-primary hover:underline font-medium text-sm">→ Agencja marketingowa Poznań</Link>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
     </Layout>
-    </>
   );
 }

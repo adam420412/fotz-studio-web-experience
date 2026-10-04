@@ -30,6 +30,7 @@ export function getBlogMetadata(article) {
 /** The article view already emits one H1 and promotes CMS schema into Helmet. */
 export function prepareBlogHtml(html) {
   return normalizeSiteUrls(html)
+    .replace(/(\bhref=["'](?:https:\/\/www\.fotz-studio\.pl)?)\/social-media\/poznan(?=["'?#])/gi, '$1/agencja-social-media/poznan')
     .replace(/<script\b(?=[^>]*\btype=["']application\/ld\+json["'])[^>]*>[\s\S]*?<\/script\s*>/gi, '')
     .replace(/<h1(\s[^>]*)?>/gi, '<h2$1>')
     .replace(/<\/h1>/gi, '</h2>');

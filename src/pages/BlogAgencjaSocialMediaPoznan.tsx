@@ -73,7 +73,7 @@ export default function BlogAgencjaSocialMediaPoznan() {
         <FadeInView>
           <p className="lead text-lg text-gray-700">
             Wybór agencji zacznij od celu: regularnej komunikacji, produkcji materiałów, zapytań albo sprzedaży.
-            Jeśli szukasz wykonawcy, sprawdź <Link to="/social-media/poznan">zakres prowadzenia social media w Poznaniu</Link>.
+            Jeśli szukasz wykonawcy, sprawdź <Link to="/agencja-social-media/poznan">zakres prowadzenia social media w Poznaniu</Link>.
             Poniżej znajdziesz kryteria, które pomogą porównać oferty.
           </p>
           <h2>Po czym poznać dobrze przygotowaną ofertę?</h2>

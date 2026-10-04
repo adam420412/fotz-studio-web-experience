@@ -81,7 +81,7 @@ const serviceDatabase: Record<string, RelatedService> = {
   },
   "social-media": {
     title: "Social Media",
-    href: "/social-media/poznan",
+    href: "/agencja-social-media/poznan",
     description: "Prowadzenie profili",
     icon: Share2,
     color: "from-cyan-500/20 to-blue-500/20"

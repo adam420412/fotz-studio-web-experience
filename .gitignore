@@ -34,3 +34,5 @@ deno.lock
 
 # Server bundle used only while prerendering
 .ssr/
+
+/docs/seo/qa-2026-10-04-gsc/
