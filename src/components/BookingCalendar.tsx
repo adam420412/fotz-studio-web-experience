@@ -37,6 +37,7 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
   const [selectedDate, setSelectedDate] = useState<Date | null>(null);
   const [selectedTime, setSelectedTime] = useState<string | null>(null);
   const [step, setStep] = useState<"date" | "form" | "success">("date");
+  const [notificationWarning, setNotificationWarning] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [bookedSlots, setBookedSlots] = useState<BookedSlot[]>([]);
   const [isLoadingSlots, setIsLoadingSlots] = useState(true);
@@ -175,7 +176,8 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
 
       // Send email notification via edge function
       try {
-        await supabase.functions.invoke('notify-booking', {
+        const {error: notificationError} = await supabase.functions.invoke('notify-booking', {
+          signal: AbortSignal.timeout(15000),
           body: {
             client_name: formData.name,
             client_email: formData.email,
@@ -185,21 +187,23 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
             notes: formData.company ? `Firma: ${formData.company}. ${formData.message || ''}` : formData.message || null,
           },
         });
-      } catch (emailError) {
-        console.error("Email notification error:", emailError);
+        if (notificationError) setNotificationWarning(true);
+      } catch {
+        setNotificationWarning(true);
       }
 
-      // Send to CRM webhook (fire and forget)
+      // The booking is saved before notification attempts; do not ask for a duplicate booking.
       if (selectedDate && selectedTime) {
-        sendBookingToCRM({
+        const crm = await sendBookingToCRM({
           name: formData.name,
           email: formData.email,
           phone: formData.phone || undefined,
           booking_date: format(selectedDate, "yyyy-MM-dd"),
           booking_time: selectedTime,
           service_type: "konsultacja",
-          source: "fotz.pl/kontakt",
-        });
+          source: "fotz-studio.pl/kontakt",
+        }).catch(() => ({success:false}));
+        if (!crm?.success) setNotificationWarning(true);
       }
 
       setStep("success");
@@ -216,7 +220,8 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
         <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
           <CheckCircle className="w-10 h-10 text-primary" />
         </div>
-        <h3 className="text-2xl font-heading font-bold mb-3">
+        {notificationWarning && <p role="status" className="text-sm text-muted-foreground mb-4">Zgłoszenie terminu zostało zapisane, ale nie udało się potwierdzić wszystkich powiadomień. Nie wysyłaj go ponownie. W pilnej sprawie zadzwoń: +48 790 814 814.</p>}
+          <h3 className="text-2xl font-heading font-bold mb-3">
           Zgłoszenie konsultacji zapisane
         </h3>
         <p className="text-muted-foreground mb-2">

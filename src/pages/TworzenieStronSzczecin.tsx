@@ -80,7 +80,7 @@ export default function TworzenieStronSzczecin() {
   const packages = [
     {
       title: "Wizytówka",
-      price: "Od 499 zł",
+      price: "Wycena indywidualna",
       period: "jednorazowo",
       desc: "Idealna dla lokalnych firm i rzemieślników",
       features: [
@@ -94,7 +94,7 @@ export default function TworzenieStronSzczecin() {
     },
     {
       title: "Strona firmowa",
-      price: "1 499 – 3 999 zł",
+      price: "Wycena indywidualna",
       period: "jednorazowo",
       desc: "Pełna prezentacja Twojej firmy",
       features: [
@@ -110,7 +110,7 @@ export default function TworzenieStronSzczecin() {
     },
     {
       title: "Sklep online",
-      price: "2 999 – 9 999 zł",
+      price: "Wycena indywidualna",
       period: "jednorazowo",
       desc: "Pełna platforma e-commerce",
       features: [
@@ -162,7 +162,7 @@ export default function TworzenieStronSzczecin() {
     {
       question: "Ile kosztuje strona internetowa w Szczecinie?",
       answer:
-        "Prosta wizytówka cyfrowa: od 499 zł. Strona firmowa: 1 500–4 000 zł. Sklep internetowy: 3 000–10 000 zł. Wyceniamy indywidualnie — zapraszamy na bezpłatną konsultację.",
+        "Koszt ustalamy po poznaniu zakresu: liczby podstron, treści, integracji i sposobu zarządzania. W ofercie określamy cenę, etapy, poprawki i termin; utrzymanie oraz działania marketingowe omawiamy osobno.",
     },
     {
       question: "Jak długo trwa wykonanie strony?",
@@ -187,7 +187,7 @@ export default function TworzenieStronSzczecin() {
     {
       question: "Co po uruchomieniu strony?",
       answer:
-        "30 dni wsparcia w cenie. Dalej: pakiet basic (100 zł/mies.), standard (300 zł/mies.), premium (500 zł/mies. — pełna opieka techniczna).",
+        "Koszt ustalamy po poznaniu zakresu: liczby podstron, treści, integracji i sposobu zarządzania. W ofercie określamy cenę, etapy, poprawki i termin; utrzymanie oraz działania marketingowe omawiamy osobno.",
     },
   ];
 
@@ -202,7 +202,7 @@ export default function TworzenieStronSzczecin() {
     <>
       <SEOHead
         title="Tworzenie stron internetowych Szczecin | Profesjonalne strony WWW"
-        description="Tworzenie stron internetowych Szczecin — profesjonalne strony WWW dla firm. Od 499 zł netto. Wersje PL+DE. Bezpłatna wycena!"
+        description="Tworzenie stron internetowych Szczecin — profesjonalne strony WWW dla firm. Wycena indywidualna. Wersje PL+DE. Bezpłatna wycena!"
         canonical="https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych/szczecin"
         keywords="tworzenie stron internetowych szczecin, strony internetowe szczecin, tworzenie stron www szczecin, projektowanie stron internetowych szczecin, strony www szczecin, projektowanie i tworzenie stron internetowych szczecin, tworzenie stron szczecin, strona internetowa szczecin, agencja webdesign szczecin, sklep internetowy szczecin"
       />

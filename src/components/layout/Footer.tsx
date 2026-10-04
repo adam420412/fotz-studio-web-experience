@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import {
   MapPin,
@@ -9,16 +8,9 @@ import {
   Linkedin,
   Youtube,
   Building2,
-  Send,
-  Loader2,
-  CheckCircle,
 } from "lucide-react";
-import { Input } from "@/components/ui/input";
-import { z } from "zod";
-import { submitWeb3Form } from "@/lib/web3forms";
 import { Calendar } from "lucide-react";
 
-const emailSchema = z.string().trim().email("Nieprawidłowy email");
 
 const footerLinks = {
   uslugi: [
@@ -177,37 +169,6 @@ const columnLink =
   "block py-1.5 text-sm md:text-[15px] text-white/85 hover:text-[color:var(--dv-accent-pink)] transition-colors";
 
 export function Footer() {
-  const [email, setEmail] = useState("");
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const [error, setError] = useState("");
-
-  const handleNewsletterSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setError("");
-
-    const result = emailSchema.safeParse(email);
-    if (!result.success) {
-      setError(result.error.errors[0].message);
-      return;
-    }
-
-    setIsSubmitting(true);
-    try {
-      await submitWeb3Form({
-        subject: "Newsletter signup - Footer",
-        from_name: "Fotz Studio - Newsletter",
-        email: result.data,
-        message: "Zapis do newslettera z footera",
-      });
-      setIsSubmitted(true);
-    } catch {
-      setError("Błąd. Spróbuj ponownie.");
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
   return (
     <footer
       className="site-footer relative overflow-hidden mt-16 text-white"
@@ -243,69 +204,9 @@ export function Footer() {
           </Link>
         </div>
 
-        {/* Newsletter banner */}
-        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-12 mb-12 border-b border-white/10">
-          <div>
-            <h3
-              className="font-geist mb-2"
-              style={{
-                fontSize: "clamp(24px, 2.4vw, 32px)",
-                letterSpacing: "-0.03em",
-              }}
-            >
-              Zapisz się do newslettera
-            </h3>
-            <p className="dv-mono uppercase tracking-[0.14em] text-[11px] text-white/50">
-              Porady marketingowe · checklisty · nowości
-            </p>
-          </div>
-          {isSubmitted ? (
-            <div role="status" className="flex items-center gap-2 text-[color:var(--dv-accent-pink)]">
-              <CheckCircle className="w-5 h-5" strokeWidth={1.5} />
-              <span className="font-medium">Prośba o zapis wysłana.</span>
-            </div>
-          ) : (
-            <form
-              onSubmit={handleNewsletterSubmit}
-              className="flex flex-wrap gap-2 w-full md:w-auto max-w-md"
-            >
-              <div className="flex-1">
-                <Input
-                  aria-label="Adres e-mail do newslettera"
-                  autoComplete="email"
-                  required
-                  disabled={isSubmitting}
-                  aria-invalid={Boolean(error)}
-                  aria-describedby={error ? "footer-newsletter-error footer-newsletter-privacy" : "footer-newsletter-privacy"}
-                  type="email"
-                  placeholder="Twój email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="h-12 bg-white/5 border-white/15 text-white placeholder:text-white/40 focus-visible:ring-[color:var(--dv-accent-pink)]"
-                />
-                {error && (
-                  <p id="footer-newsletter-error" role="alert" className="text-xs text-red-300 mt-1">{error}</p>
-                )}
-              </div>
-              <button
-                type="submit"
-                className="dv-btn dv-btn-primary h-12"
-                disabled={isSubmitting}
-              >
-                {isSubmitting ? (
-                  <><Loader2 aria-hidden="true" className="w-4 h-4 animate-spin" strokeWidth={1.5} /><span className="sr-only">Wysyłanie prośby o zapis</span></>
-                ) : (
-                  <>
-                    <Send className="w-3.5 h-3.5" strokeWidth={1.5} />
-                    Zapisz
-                  </>
-                )}
-              </button>
-              <p id="footer-newsletter-privacy" className="basis-full text-xs text-white/60">
-                Zgłaszasz chęć otrzymywania newslettera. <Link to="/polityka-prywatnosci" className="underline underline-offset-2">Polityka prywatności</Link>.
-              </p>
-            </form>
-          )}
+        <div className="flex flex-col md:flex-row gap-5 justify-between pb-8 mb-8 border-b border-white/10">
+          <div><h3 className="text-2xl mb-2">Od pomysłu do konkretnego zakresu</h3><p className="text-white/60">Zbierz cele, materiały i potrzeby swojego projektu.</p></div>
+          <Link className="dv-btn dv-btn-secondary text-white" to="/generator-briefu">Przygotuj brief</Link>
         </div>
 
         {/* Giant brand title */}

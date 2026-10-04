@@ -40,7 +40,7 @@ export default function StronyInternetoweTorun() {
     <Layout>
       <SEOHead
         title="Strony internetowe Toruń | Projektowanie stron internetowych"
-        description="Profesjonalne projektowanie stron internetowych w Toruniu. Nowoczesne strony wizytówki, sklepy e-commerce i landing pages dla firm z Torunia i Kujaw. Strony SEO-friendly i responsywne od 499 zł."
+        description="Profesjonalne projektowanie stron internetowych w Toruniu. Nowoczesne strony wizytówki, sklepy e-commerce i landing pages dla firm z Torunia i Kujaw. Strony SEO-friendly i responsywne. Wycena indywidualna."
         canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/torun"
         keywords="strony internetowe toruń, tworzenie stron internetowych toruń, tworzenie stron www toruń, projektowanie stron internetowych toruń, strony www toruń, tworzenie stron toruń, strona internetowa toruń, agencja webdesign toruń, projektowanie stron www toruń, sklep internetowy toruń"
       />
@@ -62,7 +62,7 @@ export default function StronyInternetoweTorun() {
                 Strony internetowe Toruń
               </h1>
               <p className="text-xl mb-8 text-blue-100">
-                Tworzenie stron internetowych Toruń — profesjonalne strony www i sklepy internetowe dla firm z Torunia i Kujaw. Projektowanie stron www Toruń z nowoczesnym designem, SEO i responsywnym kodem. Strony internetowe Toruń od 499 zł.
+                Tworzenie stron internetowych Toruń — profesjonalne strony www i sklepy internetowe dla firm z Torunia i Kujaw. Projektowanie stron www Toruń z nowoczesnym designem, SEO i responsywnym kodem. Strony internetowe Toruń. Wycena indywidualna.
               </p>
               <div className="flex gap-4">
                 <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition">
@@ -312,7 +312,7 @@ export default function StronyInternetoweTorun() {
             <div className="bg-white rounded-lg shadow-lg p-8 border-t-4 border-blue-600">
               <h3 className="text-2xl font-bold mb-4">Strona Wizytówka</h3>
               <p className="text-4xl font-bold text-blue-600 mb-6">
-                od 1500 zł
+                Wycena indywidualna
               </p>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-center gap-2">
@@ -345,7 +345,7 @@ export default function StronyInternetoweTorun() {
               </div>
               <h3 className="text-2xl font-bold mb-4">Sklep E-commerce</h3>
               <p className="text-4xl font-bold mb-6">
-                od 5000 zł
+                Wycena indywidualna
               </p>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-center gap-2">
@@ -373,7 +373,7 @@ export default function StronyInternetoweTorun() {
             <div className="bg-white rounded-lg shadow-lg p-8 border-t-4 border-indigo-600">
               <h3 className="text-2xl font-bold mb-4">Portal Biznesowy</h3>
               <p className="text-4xl font-bold text-blue-600 mb-6">
-                od 10000 zł
+                Wycena indywidualna
               </p>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-center gap-2">

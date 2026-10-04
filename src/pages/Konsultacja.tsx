@@ -11,7 +11,6 @@ import { FadeInView, StaggerContainer, StaggerItem } from "@/components/FadeInVi
 import { cn } from "@/lib/utils";
 import { z } from "zod";
 import { Link } from "react-router-dom";
-import { sendLeadToCRM } from "@/hooks/useCRMWebhook";
 import { submitWeb3Form } from "@/lib/web3forms";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from "@/components/seo/StructuredData";
@@ -142,15 +141,6 @@ export default function Konsultacja() {
         phone: formData.phone || "Nie podano",
         company: formData.company || "Nie podano",
         message: formData.message || "Brak dodatkowych informacji",
-      });
-
-      sendLeadToCRM({
-        name: formData.name,
-        email: formData.email,
-        phone: formData.phone || undefined,
-        company: formData.company || undefined,
-        source: "fotz.pl/konsultacja",
-        notes: `Zapytanie o darmową konsultację.\n\n${formData.message || "Brak dodatkowych informacji"}`,
       });
 
       setIsSubmitted(true);

@@ -59,9 +59,9 @@ const StronyInternetoweBydgoszcz = () => {
   ];
 
   const pricing = [
-    { title: "Landing Page", desc: "Strona wizytówkowa prezentująca firmę", price: "od 2 000 zł", features: ["Do 5 podstron", "Responsywny design", "Podstawowe SEO", "Formularz kontaktowy", "Certyfikat SSL"] },
-    { title: "Strona Firmowa", desc: "Rozbudowana strona z dodatkowymi funkcjami", price: "od 5 000 zł", popular: true, features: ["Do 15 podstron", "Zaawansowane SEO", "Blog firmowy", "Integracja social media", "System CMS", "Wsparcie techniczne"] },
-    { title: "Sklep E-commerce", desc: "Platforma sprzedażowa z integracjami", price: "od 8 000 zł", features: ["Nieograniczona liczba produktów", "Panel administracyjny", "Integracje płatności", "Optymalizacja konwersji", "Narzędzia marketingowe"] },
+    { title: "Landing Page", desc: "Strona wizytówkowa prezentująca firmę", price: "Wycena indywidualna", features: ["Do 5 podstron", "Responsywny design", "Podstawowe SEO", "Formularz kontaktowy", "Certyfikat SSL"] },
+    { title: "Strona Firmowa", desc: "Rozbudowana strona z dodatkowymi funkcjami", price: "Wycena indywidualna", popular: true, features: ["Do 15 podstron", "Zaawansowane SEO", "Blog firmowy", "Integracja social media", "System CMS", "Wsparcie techniczne"] },
+    { title: "Sklep E-commerce", desc: "Platforma sprzedażowa z integracjami", price: "Wycena indywidualna", features: ["Nieograniczona liczba produktów", "Panel administracyjny", "Integracje płatności", "Optymalizacja konwersji", "Narzędzia marketingowe"] },
   ];
 
   const processSteps = [
@@ -106,7 +106,7 @@ const StronyInternetoweBydgoszcz = () => {
     },
     {
       question: "Ile kosztuje stworzenie strony dla małej firmy w Bydgoszczy?",
-      answer: "Koszt strony zależy od zakresu funkcji — prosty landing page będzie tańszy niż sklep internetowy z integracjami WooCommerce. Wycena uwzględnia domenę, hosting, projekt graficzny, optymalizację SEO oraz późniejsze wsparcie techniczne. Ceny zaczynają się od 2 000 zł netto."
+      answer: "Koszt ustalamy po poznaniu zakresu: liczby podstron, treści, integracji i sposobu zarządzania. W ofercie określamy cenę, etapy, poprawki i termin; utrzymanie oraz działania marketingowe omawiamy osobno."
     },
     {
       question: "Jak strony internetowe mogą przyciągnąć klientów?",

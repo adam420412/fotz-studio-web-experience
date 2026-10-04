@@ -5,9 +5,10 @@ import { componentTagger } from "lovable-tagger";
 import viteCompression from "vite-plugin-compression";
 
 // https://vitejs.dev/config/
-export default defineConfig(({ mode }) => ({
+export default defineConfig(({ mode, isSsrBuild }) => ({
   // Reduce build output verbosity
   logLevel: "warn",
+  publicDir: isSsrBuild ? false : "public",
   server: {
     host: "0.0.0.0",
     port: 5173,
@@ -16,13 +17,13 @@ export default defineConfig(({ mode }) => ({
     react(),
     mode === "development" && componentTagger(),
     // Gzip compression
-    viteCompression({
+    !isSsrBuild && viteCompression({
       algorithm: "gzip",
       ext: ".gz",
       threshold: 1024,
     }),
     // Brotli compression
-    viteCompression({
+    !isSsrBuild && viteCompression({
       algorithm: "brotliCompress",
       ext: ".br",
       threshold: 1024,
@@ -35,10 +36,11 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  ssr: { noExternal: ["react-helmet-async"] },
   build: {
     rollupOptions: {
       output: {
-        manualChunks: {
+        manualChunks: isSsrBuild ? undefined : {
           vendor: ["react", "react-dom"],
           router: ["react-router-dom"],
           motion: ["framer-motion"],

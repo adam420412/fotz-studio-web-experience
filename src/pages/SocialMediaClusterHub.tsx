@@ -76,7 +76,7 @@ export default function SocialMediaClusterHub() {
                 <li><Link className="underline underline-offset-4" to="/social-media/poznan">Prowadzenie Facebooka, Instagrama i LinkedIn</Link></li>
                 <li><Link className="underline underline-offset-4" to="/blog/agencja-social-media-poznan">Jak porównać agencje i przygotować brief</Link></li>
                 <li><Link className="underline underline-offset-4" to="/realizacje">Zobacz portfolio FOTZ Studio</Link></li>
-                <li><a className="underline underline-offset-4" href="/downloads/checklista-kampanii-fotz-studio.pdf" download>Checklista kampanii do pobrania (PDF)</a></li>
+                <li><Link className="underline underline-offset-4" to="/generator-briefu">Przygotuj brief projektu</Link></li>
               </ul>
               <Link to="/konsultacja" className="dv-btn dv-btn-primary mt-8">Umów rozmowę <ArrowRight aria-hidden="true" className="w-4 h-4" /></Link>
             </aside>

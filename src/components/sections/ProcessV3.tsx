@@ -2,30 +2,30 @@ const PHASES = [
   {
     num: "01",
     title: "Analiza i planowanie",
-    len: "1–2 tyg.",
+    len: "Brief",
     desc:
-      "Audyt strategii, analiza konkurencji, cele biznesowe. Audyt Twojej obecnej strategii marketingowej i analityki ruchu.",
+      "Ustalamy cel, odbiorców i punkt wyjścia. Zapisujemy zakres, harmonogram oraz sposób oceny efektów.",
   },
   {
     num: "02",
     title: "Wdrożenie kampanii",
-    len: "2–4 tyg.",
+    len: "Realizacja",
     desc:
-      "AI i automatyzacja, Google Ads, Social Media. Najnowsze narzędzia do optymalizacji kampanii i ROI.",
+      "Przygotowujemy uzgodnione treści, stronę lub kampanię. Przed publikacją sprawdzamy materiały i zbieramy uwagi.",
   },
   {
     num: "03",
     title: "Monitorowanie wyników",
-    len: "Stale",
+    len: "Ocena",
     desc:
-      "Raportowanie, optymalizacja, wzrost ROI. Regularne raporty i optymalizacje dla maksymalnego przychodu.",
+      "Porównujemy rezultaty z ustalonym celem. Oddzielamy zasięg i kliknięcia od zapytań oraz sprzedaży, aby wybrać kolejne działania.",
   },
 ];
 
 export function ProcessV3() {
   return (
     <section
-      className="py-24 md:py-32"
+      className="py-14 md:py-20"
       style={{ background: "hsl(var(--card))" }}
     >
       <div className="max-w-[1440px] mx-auto px-6 md:px-12">
@@ -48,7 +48,7 @@ export function ProcessV3() {
           {PHASES.map((p, i) => (
             <div
               key={p.num}
-              className="p-10"
+              className="p-6 md:p-10"
               style={{
                 borderRight:
                   i < PHASES.length - 1 ? "1px solid var(--dv-hair)" : "none",

@@ -87,8 +87,8 @@ export default function AgencjaMarketingowaPoznan() {
   const packages = [
     {
       name: "START",
-      price: "1 299",
-      period: "/miesiąc",
+      price: "Wycena indywidualna",
+      period: "",
       description: "Dla startupów i małych firm",
       features: [
         "1 kampania Google Ads",
@@ -101,8 +101,8 @@ export default function AgencjaMarketingowaPoznan() {
     },
     {
       name: "BIZNES",
-      price: "2 999",
-      period: "/miesiąc",
+      price: "Wycena indywidualna",
+      period: "",
       description: "Dla rozwijających się firm",
       features: [
         "2 kampanie Google Ads",
@@ -116,8 +116,8 @@ export default function AgencjaMarketingowaPoznan() {
     },
     {
       name: "PREMIUM",
-      price: "5 999",
-      period: "/miesiąc",
+      price: "Wycena indywidualna",
+      period: "",
       description: "Dla ambitnych przedsiębiorstw",
       features: [
         "Wszystkie kampanie Google Ads",
@@ -135,7 +135,7 @@ export default function AgencjaMarketingowaPoznan() {
     {
       question: "Ile czasu zajmuje pozycjonowanie strony w Poznaniu?",
       answer:
-        "Pierwsze wyniki SEO zazwyczaj widać po 2-3 miesiącach. Pełne rezultaty osiągamy w ciągu 6-12 miesięcy, w zależności od konkurencyjności branży i stanu Twojej strony.",
+        "Termin zależy od stanu strony, konkurencji i zakresu zmian. Zaczynamy od analizy Search Console i ustalenia priorytetów. W kolejnych raportach oddzielamy wykonane działania od zmian widoczności i zapytań.",
     },
     {
       question: "Czy muszę mieć stronę internetową, aby zacząć kampanię Google Ads?",
@@ -145,7 +145,7 @@ export default function AgencjaMarketingowaPoznan() {
     {
       question: "Jakie są koszty kampanii Google Ads dla firm z Poznania?",
       answer:
-        "Koszt zależy od Twojej branży, konkurencji i celów. Minimum budżetu to 500 PLN/miesiąc. Jednak polecamy 1000-2000 PLN, aby uzyskać znaczące wyniki.",
+        "Koszt obsługi wyceniamy po ustaleniu zakresu. Budżet reklamowy to osobna pozycja; dobieramy go do rynku, celu i planu testów, bez obietnicy wyniku za z góry ustaloną kwotę.",
     },
     {
       question: "Czy współpracujecie z małymi firmami?",
@@ -339,7 +339,7 @@ export default function AgencjaMarketingowaPoznan() {
                   <p className="text-gray-600 mb-6">{pkg.description}</p>
 
                   <div className="mb-8">
-                    <span className="text-4xl font-bold text-blue-600">{pkg.price}</span>
+                    <span className="text-2xl font-bold text-blue-600">{pkg.price}</span>
                     <span className="text-gray-600">{pkg.period}</span>
                   </div>
 

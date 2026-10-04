@@ -34,7 +34,18 @@ if (!fs.existsSync(INDEX_HTML)) {
   process.exit(1);
 }
 
-const template = fs.readFileSync(INDEX_HTML, 'utf-8');
+const clientHtml = fs.readFileSync(INDEX_HTML, 'utf-8');
+const templatePath = path.join(DIST, 'prerender-template.json');
+const template = clientHtml.includes('<!-- fotz-body:start -->')
+  ? JSON.parse(fs.readFileSync(templatePath, 'utf8')) : clientHtml;
+if (!template.includes('<div id="root"></div>')) throw new Error('Expected an empty client root or a marked prerendered body. Rebuild the client first.');
+fs.writeFileSync(templatePath, JSON.stringify(template));
+const jsonLdPattern = /<script\b[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/gi;
+const defaultSchemas = [...template.matchAll(jsonLdPattern)].map(match => JSON.parse(match[1]));
+process.env.NODE_ENV ||= 'production';
+const { renderPage } = await import('../.ssr/entry-server.js');
+const publicArticles = JSON.parse(fs.readFileSync(path.join(SRC, 'data/blog-content.json'), 'utf8')).articles;
+const bodyReport = { rendered: [], skipped: [], errors: [] };
 
 /**
  * Routes that must NOT be prerendered, because they are served by static
@@ -207,7 +218,29 @@ for (const route of routes) {
   }
   
   // Generate the HTML with injected meta
-  const html = injectMeta(template, meta);
+  let html = injectMeta(template, meta);
+  if (!meta.noIndex) {
+    try {
+      const rendered = await renderPage(path.relative(path.join(SRC, 'pages'), file), route.path, publicArticles);
+      let body = rendered.body;
+      if (!/<h1[\s>]/.test(body)) throw new Error('Missing page H1 in rendered content');
+      // Initial animation styles must never hide the static document before JS.
+      body = body.replace(/style="([^"]*)"/g, (tag, style) => /(?:^|;)opacity:0(?:;|$)/.test(style)
+        ? `style="${style.replace(/(?:^|;)opacity:0(?=;|$)/, ';opacity:1').replace(/(?:^|;)(?:transform|filter):[^;]*/g, '')}"` : tag);
+      html = html.replace(/<noscript id="seo-fallback">[\s\S]*?<\/noscript>\s*/, '');
+      const pageSchemas = [...rendered.scripts.matchAll(jsonLdPattern)].map(match => JSON.parse(match[1]));
+      const pageTypes = new Set(pageSchemas.map(schema => schema['@type']));
+      const schemas = [...defaultSchemas.filter(schema => !pageTypes.has(schema['@type'])), ...pageSchemas];
+      const schemaTags = [...new Set(schemas.map(schema => JSON.stringify(schema)))].map(json => `<script data-rh="true" type="application/ld+json">${json.replace(/</g, '\\u003c')}</script>`).join('\n');
+      html = html.replace(jsonLdPattern, '').replace('</head>', () => `<!-- fotz-schema:start -->${schemaTags}<!-- fotz-schema:end --></head>`);
+      html = html.replace('<div id="root"></div>', () => `<div id="root"><!-- fotz-body:start -->${body}<!-- fotz-body:end --></div>`);
+      bodyReport.rendered.push(route.path);
+    } catch (error) {
+      bodyReport.errors.push({path:route.path, message:error.message});
+      console.error(`   Body render failed: ${route.path}: ${error.message}`);
+      errors++;
+    }
+  } else bodyReport.skipped.push(route.path);
   
   // Create the output directory: dist/path/to/route/index.html
   const routePath = route.path === '/' ? '' : route.path;
@@ -300,4 +333,6 @@ fs.writeFileSync(
   JSON.stringify(manifest),
   'utf-8'
 );
+fs.writeFileSync(path.join(DIST, 'prerender-report.json'), JSON.stringify(bodyReport, null, 2));
+console.log(`   ${bodyReport.rendered.length} full page bodies; ${bodyReport.errors.length} body errors`);
 if (errors) process.exitCode = 1;

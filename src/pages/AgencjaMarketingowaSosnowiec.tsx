@@ -70,7 +70,7 @@ const AgencjaMarketingowaSosnowiec = () => {
     {
       title: "START",
       desc: "Dla małych firm i startupów",
-      price: "1 500 zł",
+      price: "Wycena indywidualna",
       period: "/miesiąc",
       features: [
         "Strategia marketingowa",
@@ -82,7 +82,7 @@ const AgencjaMarketingowaSosnowiec = () => {
     {
       title: "ROZWÓJ",
       desc: "Dla firm chcących skalować",
-      price: "3 500 zł",
+      price: "Wycena indywidualna",
       period: "/miesiąc",
       popular: true,
       features: [
@@ -97,7 +97,7 @@ const AgencjaMarketingowaSosnowiec = () => {
     {
       title: "PREMIUM",
       desc: "Dla ambitnych firm",
-      price: "7 000+",
+      price: "Wycena indywidualna",
       period: "/miesiąc",
       features: [
         "Kompleksowa obsługa marketingowa",

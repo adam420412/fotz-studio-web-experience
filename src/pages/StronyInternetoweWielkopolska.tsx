@@ -25,11 +25,11 @@ export default function StronyInternetoweWielkopolska() {
     },
     {
       question: "Jaki jest koszt strony internetowej dla firmy z Wielkopolski?",
-      answer: "Ceny zaczynają się od 499 zł dla strony wizytówki, a rozbudowane projekty dla dużych firm na Wielkopolsku to zazwyczaj 3000-8000 zł. Każdą wycenę dostosowujemy do rzeczywistych potrzeb i budżetu klienta. Zapraszamy na konsultację, by poznać dokładny koszt Twojego projektu."
+      answer: "Koszt ustalamy po poznaniu zakresu: liczby podstron, treści, integracji i sposobu zarządzania. W ofercie określamy cenę, etapy, poprawki i termin; utrzymanie oraz działania marketingowe omawiamy osobno."
     },
     {
       question: "Czy mogę spotkać się z ekipą fotz.pl osobiście w Poznaniu?",
-      answer: "Tak, możemy się spotykać w Poznaniu lub w Twojej lokalizacji na Wielkopolsku. Prowadzimy projektów na terenie całego regionu i chętnie dyskutujemy o Twoim biznesie osobiście. Umów się z nami przez formularz kontaktowy lub zadzwoń bezpośrednio."
+      answer: "Tak, możemy się spotykać w Poznaniu lub w Twojej lokalizacji na Wielkopolsku. Realizujemy projekty na terenie całego regionu i chętnie dyskutujemy o Twoim biznesie osobiście. Umów się z nami przez formularz kontaktowy lub zadzwoń bezpośrednio."
     },
     {
       question: "Ile czasu trwa realizacja strony dla firmy z Wielkopolski?",
@@ -98,7 +98,7 @@ export default function StronyInternetoweWielkopolska() {
     <>
       <SEOHead
         title="Strony internetowe Wielkopolska | Poznań | FOTZ Studio"
-        description="Profesjonalne strony internetowe dla firm z Wielkopolski i Poznania. Mamy siedzibę w Poznaniu, specjalizujemy się w SEO dla branż lokalnych. Wycena od 499 zł."
+        description="Profesjonalne strony internetowe dla firm z Wielkopolski i Poznania. Mamy siedzibę w Poznaniu, specjalizujemy się w SEO dla branż lokalnych. Wycena indywidualna."
         canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/wielkopolska"
         structuredData={{
           "@context": "https://schema.org",
@@ -148,7 +148,7 @@ export default function StronyInternetoweWielkopolska() {
             </h1>
             
             <p className="text-xl text-slate-300 mb-8 leading-relaxed">
-              Prowadzimy projektów dla firm z całej Wielkopolski. Nasz zespół pracuje w Poznaniu i doskonale zna specyfikę lokalnego biznesu. Strony internetowe od 499 zł z pełnym wsparciem SEO.
+              Realizujemy projekty dla firm z całej Wielkopolski. Nasz zespół pracuje w Poznaniu i doskonale zna specyfikę lokalnego biznesu. Projektujemy strony internetowe z indywidualną wyceną i zakresem SEO ustalonym w ofercie.
             </p>
 
             <div className="flex gap-4 flex-wrap">

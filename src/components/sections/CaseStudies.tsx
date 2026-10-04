@@ -12,12 +12,12 @@ const caseStudies = [
     title: "Enea Stadion Poznań",
     category: "Social Media & Events",
     description:
-      "Kompleksowa obsługa marketingowa największego kompleksu sportowego w Polsce. Strona www, Instagram, produkcja video.",
+      "Kompleksowa obsługa marketingowa Enea Stadionu w Poznaniu. Strona www, Instagram, produkcja video.",
     image: eneaStadionImg,
     video: true,
     stats: [
-      { label: "Zaangażowanie", value: "+340%" },
-      { label: "Wyświetlenia/mies.", value: "2M+" },
+      { label: "Zakres", value: "WWW" },
+      { label: "Materiały", value: "Video" },
     ],
     featured: true,
     hasCase: true,
@@ -35,10 +35,10 @@ const caseStudies = [
   },
   {
     id: "rppg",
-    title: "RPPG Group",
+    title: "RPPG",
     category: "Branding & Strategia",
     description:
-      "Kompleksowy rebranding i nowa identyfikacja wizualna dla Rady Polskich Przedsiębiorców Globalnych.",
+      "Strona i materiały wizualne dla Rady Polskich Przedsiębiorców Globalnych.",
     image: rppgImg,
     video: false,
     featured: false,
@@ -55,11 +55,11 @@ export function CaseStudies() {
       className="relative overflow-hidden"
       style={{ background: "var(--dv-ink)" }}
     >
-      <div className="max-w-[1440px] mx-auto px-6 md:px-12 py-24 md:py-32">
+      <div className="max-w-[1440px] mx-auto px-6 md:px-12 py-14 md:py-20">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 md:mb-16">
           <div>
-            <span className="dv-eyebrow mb-6 inline-block">Dowody skuteczności</span>
+            <span className="dv-eyebrow mb-6 inline-block">Wybrane projekty</span>
             <h2
               className="font-geist"
               style={{
@@ -69,9 +69,9 @@ export function CaseStudies() {
                 fontWeight: 400,
               }}
             >
-              Studia przypadków
+              Zobacz nasze
               <br />
-              <span className="dv-text-grad italic">i sukcesy klientów</span>
+              <span className="dv-text-grad italic">realizacje</span>
             </h2>
           </div>
           <Link to="/realizacje" className="dv-btn dv-btn-secondary group">
@@ -92,7 +92,7 @@ export function CaseStudies() {
             >
               <div className="grid lg:grid-cols-2">
                 {/* Image */}
-                <div className="relative aspect-video lg:aspect-auto lg:min-h-[480px] overflow-hidden">
+                <div className="relative aspect-video lg:aspect-auto lg:min-h-[360px] overflow-hidden">
                   <OptimizedImage
                     src={featuredCase.image}
                     alt={featuredCase.title}

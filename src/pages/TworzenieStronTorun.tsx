@@ -79,7 +79,7 @@ export default function TworzenieStronTorun() {
   const packages = [
     {
       title: "Wizytówka",
-      price: "Od 499 zł",
+      price: "Wycena indywidualna",
       period: "jednorazowo",
       desc: "Idealna dla lokalnych firm i rzemieślników",
       features: [
@@ -93,7 +93,7 @@ export default function TworzenieStronTorun() {
     },
     {
       title: "Strona firmowa",
-      price: "1 499 – 3 999 zł",
+      price: "Wycena indywidualna",
       period: "jednorazowo",
       desc: "Pełna prezentacja Twojej firmy",
       features: [
@@ -109,7 +109,7 @@ export default function TworzenieStronTorun() {
     },
     {
       title: "Sklep online",
-      price: "2 999 – 9 999 zł",
+      price: "Wycena indywidualna",
       period: "jednorazowo",
       desc: "Pełna platforma e-commerce",
       features: [
@@ -161,7 +161,7 @@ export default function TworzenieStronTorun() {
     {
       question: "Ile kosztuje strona internetowa w Toruniu?",
       answer:
-        "Prosta wizytówka cyfrowa: od 499 zł. Strona firmowa: 1 500–4 000 zł. Sklep internetowy: 3 000–10 000 zł. Wyceniamy indywidualnie, bez ukrytych opłat — zapraszamy na bezpłatną konsultację.",
+        "Koszt ustalamy po poznaniu zakresu: liczby podstron, treści, integracji i sposobu zarządzania. W ofercie określamy cenę, etapy, poprawki i termin; utrzymanie oraz działania marketingowe omawiamy osobno.",
     },
     {
       question: "Jak długo trwa stworzenie strony?",
@@ -186,7 +186,7 @@ export default function TworzenieStronTorun() {
     {
       question: "Co po uruchomieniu strony?",
       answer:
-        "30 dni wsparcia w cenie. Dalej: pakiet basic (100 zł/mies.), standard (300 zł/mies.), premium (500 zł/mies. — pełna opieka).",
+        "Koszt ustalamy po poznaniu zakresu: liczby podstron, treści, integracji i sposobu zarządzania. W ofercie określamy cenę, etapy, poprawki i termin; utrzymanie oraz działania marketingowe omawiamy osobno.",
     },
   ];
 
@@ -201,7 +201,7 @@ export default function TworzenieStronTorun() {
     <>
       <SEOHead
         title="Tworzenie stron internetowych Toruń | Profesjonalne strony WWW"
-        description="Tworzenie stron internetowych Toruń — profesjonalne strony WWW dla lokalnych firm. Od 499 zł netto. Szybko, z wynikami. Bezpłatna wycena!"
+        description="Tworzenie stron internetowych Toruń — profesjonalne strony WWW dla lokalnych firm. Wycena indywidualna. Szybko, z wynikami. Bezpłatna wycena!"
         canonical="https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych/torun"
         keywords="tworzenie stron internetowych toruń, strony internetowe toruń, tworzenie stron www toruń, projektowanie stron internetowych toruń, strony www toruń, tworzenie stron toruń, strona internetowa toruń, agencja webdesign toruń, projektowanie stron toruń, sklep internetowy toruń"
       />

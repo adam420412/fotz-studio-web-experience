@@ -10,92 +10,29 @@ export function HomeFAQ() {
 
   const faqs = [
     {
-      question: t(
-        "Czym zajmuje się agencja marketingowa i agencja reklamowa?",
-        "What does a marketing and advertising agency do?"
-      ),
-      answer: t(
-        "Agencja marketingowa to firma oferująca kompleksowe wsparcie w promocji produktów i usług — od strategii content marketingu, przez kampanie mediowe i performance, po obsługę social media. Agencja reklamowa i agencja interaktywna często współpracują z klientami, proponując indywidualne rozwiązania dostosowane do potrzeb, budując lejek pozyskiwania klientów i optymalizując konwersję w sklepie internetowym.",
-        "A marketing agency is a company offering comprehensive support in promoting products and services — from content marketing strategy, through media and performance campaigns, to social media management."
-      ),
-      link: { text: t("Sprawdź naszą ofertę kompleksowej obsługi marketingowej", "Check our comprehensive marketing services"), url: "/kompleksowa-obsluga-marketingowa" },
+      question: t("W czym może pomóc FOTZ Studio?", "How can FOTZ Studio help?"),
+      answer: t("Tworzymy strony internetowe, zdjęcia, filmy i materiały do social media. Przygotowujemy również działania SEO i kampanie reklamowe. Zakres dobieramy do celu projektu i zasobów firmy.", "We create websites, photography, video and social media content, and prepare SEO and advertising campaigns. We agree the scope around your goals and resources."),
+      link: { text: t("Poznaj usługi", "Explore our services"), url: "/uslugi" },
     },
     {
-      question: t(
-        "Jak agencja wykorzystuje AI i automatyzację w digital marketingu?",
-        "How does the agency use AI and automation in digital marketing?"
-      ),
-      answer: t(
-        "Wykorzystanie AI i automatyzacji pozwala agencjom zwiększać efektywność kampanii digital i performance — od automatycznego targetowania leadów po optymalizację reklam zgodnie z algorytmami Google i wytycznymi Google. Automatyzacja umożliwia skalowanie kampanii dla firm oraz szybsze analizowanie danych z Google Analytics.",
-        "Using AI and automation allows agencies to increase the effectiveness of digital and performance campaigns."
-      ),
-      link: { text: t("Oferujemy Google Ads i Facebook Ads", "We offer Google Ads and Facebook Ads"), url: "/kampanie-reklamowe" },
+      question: t("Ile kosztuje współpraca?", "How much does it cost?"),
+      answer: t("Wycenę przygotowujemy indywidualnie po poznaniu zakresu. Ustalamy listę materiałów lub funkcji, etapy, poprawki i termin. Budżet reklamowy omawiamy oddzielnie od kosztu obsługi.", "We quote individually after discussing the scope, deliverables, revisions and schedule. Advertising spend is separate from our service fee."),
+      link: { text: t("Co wpływa na wycenę", "What affects the quote"), url: "/cennik" },
     },
     {
-      question: t(
-        "Jakie kreacje reklamowe są najbardziej skuteczne?",
-        "What advertising creatives are most effective?"
-      ),
-      answer: t(
-        "Skuteczne kreacje reklamowe łączą atrakcyjny content marketing, jasne CTA oraz dopasowanie do grupy docelowej. Agencja interaktywna testuje różne formaty mediowe, content i warianty graficzne w kampaniach performance, aby maksymalizować wynik konwersji i minimalizować koszt pozyskania leadów.",
-        "Effective advertising creatives combine attractive content marketing, clear CTAs and targeting."
-      ),
-      link: { text: t("Nasze studio tworzy profesjonalne materiały wideo", "Our studio creates professional video materials"), url: "/uslugi/produkcja-video" },
+      question: t("Czy pracujecie tylko w Poznaniu?", "Do you only work in Poznań?"),
+      answer: t("Nasze biuro mieści się przy Placu Wolności 16 w Poznaniu. Strony, strategię i obsługę marketingową możemy realizować zdalnie. Miejsce nagrań i ewentualny dojazd ustalamy przed wyceną.", "Our office is at Plac Wolności 16 in Poznań. Website and marketing work can be delivered remotely. We agree filming locations and travel before quoting."),
+      link: { text: t("Dane kontaktowe", "Contact details"), url: "/kontakt" },
     },
     {
-      question: t(
-        "Jak zaplanować content marketing w strategii agencji reklamowej?",
-        "How to plan content marketing in an advertising agency strategy?"
-      ),
-      answer: t(
-        "Plan content marketingu powinien zawierać analizę słów kluczowych, harmonogram publikacji, integrację z kampaniami mediowymi i działania SEO poprawiające widoczność w wynikach wyszukiwania. Content musi być dopasowany do potrzeb odbiorców i wspierać cele sprzedażowe produktów i usług oraz generowanie leadów.",
-        "A content marketing plan should include keyword analysis, publication schedule, integration with media campaigns and SEO activities."
-      ),
-      link: { text: t("Poznaj naszą ofertę pozycjonowania stron", "Learn about our website positioning services"), url: "/seo/pozycjonowanie" },
+      question: t("Jak przygotować się do pierwszej rozmowy?", "How should I prepare for the first call?"),
+      answer: t("Przygotuj link do obecnej strony lub profilu, opisz odbiorców i cel. Pomogą też oczekiwany termin, orientacyjny budżet i przykłady materiałów. Konsultacja w kalendarzu trwa 15 minut.", "Bring your website or profile link, audience and goal. Your target date, approximate budget and references will also help. Calendar consultations take 15 minutes."),
+      link: { text: t("Umów konsultację", "Book a consultation"), url: "/konsultacja" },
     },
     {
-      question: t(
-        "Jak agencja zwiększa konwersję w sklepie internetowym?",
-        "How does the agency increase conversion in an online store?"
-      ),
-      answer: t(
-        "Agencja marketingowa optymalizuje stronę i sklep internetowy poprzez testy A/B, poprawę ścieżki zakupowej, optymalizację landing page'y oraz analizy w Google Analytics. Połączenie kampanii performance, remarketingu i treści dopasowanych do klientów zwiększa współczynnik konwersji i efektywność pozyskiwania klientów.",
-        "A marketing agency optimizes websites and online stores through A/B testing."
-      ),
-      link: { text: t("Tworzymy skuteczne sklepy e-commerce", "We create effective e-commerce stores"), url: "/uslugi/strony-internetowe/ecommerce" },
-    },
-    {
-      question: t(
-        "Jak mierzyć efekty działań digital i performance?",
-        "How to measure the effects of digital and performance activities?"
-      ),
-      answer: t(
-        "Efekty mierzy się za pomocą KPI takich jak liczba leadów, koszt za konwersję, ROI i wskaźniki z Google Analytics. Agencja digital ustala cele kampanii, monitoruje algorytmy Google i raportuje wyniki, proponując korekty strategii, by osiągać skuteczne strategie zarówno w Polsce i na świecie.",
-        "Effects are measured using KPIs such as number of leads, cost per conversion, ROI and Google Analytics metrics."
-      ),
-      link: { text: t("Dowiedz się więcej o pozycjonowaniu w Google Maps", "Learn more about Google Maps positioning"), url: "/seo/google-maps" },
-    },
-    {
-      question: t(
-        "Na czym polega kampania performance i dla kogo jest najlepsza?",
-        "What is a performance campaign and who is it best for?"
-      ),
-      answer: t(
-        "Kampania performance skupia się na mierzalnych wynikach — leadach, sprzedaży i konkretnych konwersjach. To rozwiązanie idealne dla firm sprzedających produkty i usługi, które oczekują szybkich rezultatów i ROI. Agencja reklamowa łączy działania w Google Ads, social media i kampanie mediowe, optymalizując budżet pod wydajność.",
-        "A performance campaign focuses on measurable results — leads, sales and specific conversions."
-      ),
-      link: { text: t("Sprawdź nasze rozwiązania dla e-commerce", "Check our solutions for e-commerce"), url: "/dla-kogo/ecommerce" },
-    },
-    {
-      question: t(
-        "Czy agencja interaktywna oferuje indywidualne rozwiązania i integracje?",
-        "Does an interactive agency offer custom solutions and integrations?"
-      ),
-      answer: t(
-        "Tak — agencje interaktywne proponują indywidualne rozwiązania, integrujące CRM, narzędzia do pozyskiwania klientów i automatyzację marketingu. Dzięki temu kampanie dla firm są lepiej skalowalne, a komunikacja z leadami bardziej spersonalizowana, zgodna z wytycznymi Google i zasadami ochrony danych.",
-        "Yes — interactive agencies offer custom solutions integrating CRM, customer acquisition tools and marketing automation."
-      ),
-      link: { text: t("Tworzymy profesjonalne strony internetowe", "We create professional websites"), url: "/uslugi/strony-internetowe" },
+      question: t("Gdzie zobaczę przykłady realizacji?", "Where can I see your work?"),
+      answer: t("W portfolio pokazujemy projekty stron, produkcje video i materiały dla marek. Podczas rozmowy możemy odnieść ich zakres do Twojego projektu. Efekty zależą od branży, oferty i warunków kampanii.", "Our portfolio includes websites, video and brand content. We can discuss the scope in relation to your project. Results depend on the industry, offer and campaign conditions."),
+      link: { text: t("Zobacz realizacje", "View our work"), url: "/realizacje" },
     },
   ];
 
@@ -111,7 +48,7 @@ export function HomeFAQ() {
         className="relative overflow-hidden"
         style={{ background: "var(--dv-ink)" }}
       >
-        <div className="max-w-[1440px] mx-auto px-6 md:px-12 py-24 md:py-32">
+        <div className="max-w-[1440px] mx-auto px-6 md:px-12 py-14 md:py-20">
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-12 lg:gap-20">
             {/* Left — heading */}
             <div>
@@ -155,6 +92,7 @@ function FAQItem({
     <div style={{ borderBottom: "1px solid var(--dv-hair)" }}>
       <button
         onClick={() => setOpen(!open)}
+        aria-expanded={open}
         className="w-full flex items-center justify-between gap-4 py-5 text-left cursor-pointer"
       >
         <span

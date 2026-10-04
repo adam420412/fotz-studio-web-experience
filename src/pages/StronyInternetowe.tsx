@@ -3,12 +3,12 @@ import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { 
-  Globe, 
-  Search, 
-  TrendingUp, 
-  ShoppingCart, 
-  Palette, 
+import {
+  Globe,
+  Search,
+  TrendingUp,
+  ShoppingCart,
+  Palette,
   Zap,
   Phone,
   CheckCircle2,
@@ -60,76 +60,76 @@ import grafImg from "@/assets/portfolio/graf-tapicerstwo.png";
 
 const StronyInternetowe = () => {
   const problems = [
-    { 
-      icon: AlertTriangle, 
-      title: "Brak widoczności w Google", 
-      desc: "Konkurencja zabiera Ci klientów, bo Twoja strona jest niewidoczna w wynikach wyszukiwania." 
+    {
+      icon: AlertTriangle,
+      title: "Brak widoczności w Google",
+      desc: "Konkurencja zabiera Ci klientów, bo Twoja strona jest niewidoczna w wynikach wyszukiwania."
     },
-    { 
-      icon: TrendingUp, 
-      title: "Niska konwersja", 
-      desc: "Strona nie sprzedaje – odwiedzający wychodzą po kilku sekundach bez kontaktu." 
+    {
+      icon: TrendingUp,
+      title: "Niska konwersja",
+      desc: "Strona nie sprzedaje – odwiedzający wychodzą po kilku sekundach bez kontaktu."
     },
-    { 
-      icon: Zap, 
-      title: "Wolne ładowanie", 
-      desc: "Każda sekunda opóźnienia to -7% konwersji. Google obniża pozycję wolnych stron." 
+    {
+      icon: Zap,
+      title: "Wolne ładowanie",
+      desc: "Każda sekunda opóźnienia to -7% konwersji. Google obniża pozycję wolnych stron."
     },
-    { 
-      icon: Globe, 
-      title: "Strona nie działa na mobile", 
-      desc: "70% ruchu to mobile. Nieresponsywna strona traci większość potencjalnych klientów." 
+    {
+      icon: Globe,
+      title: "Strona nie działa na mobile",
+      desc: "70% ruchu to mobile. Nieresponsywna strona traci większość potencjalnych klientów."
     },
   ];
 
   const whatWeDo = [
-    { 
-      icon: Palette, 
-      title: "Projektowanie UX/UI", 
-      desc: "Tworzymy strony, które nie tylko wyglądają profesjonalnie, ale przede wszystkim sprzedają. Każdy element jest zaprojektowany pod konwersję." 
+    {
+      icon: Palette,
+      title: "Projektowanie UX/UI",
+      desc: "Tworzymy strony, które nie tylko wyglądają profesjonalnie, ale przede wszystkim sprzedają. Każdy element jest zaprojektowany pod konwersję."
     },
-    { 
-      icon: Search, 
-      title: "SEO od podstaw", 
-      desc: "Optymalizacja techniczna, szybkość ładowania, struktura URL, schema markup – wszystko, by Google pokochał Twoją stronę." 
+    {
+      icon: Search,
+      title: "SEO od podstaw",
+      desc: "Optymalizacja techniczna, szybkość ładowania, struktura URL, schema markup – wszystko, by Google pokochał Twoją stronę."
     },
-    { 
-      icon: ShoppingCart, 
-      title: "E-commerce", 
-      desc: "Sklepy internetowe z płynnym procesem zakupowym. Integracje z płatnościami, kurierami i systemami magazynowymi." 
+    {
+      icon: ShoppingCart,
+      title: "E-commerce",
+      desc: "Sklepy internetowe z płynnym procesem zakupowym. Integracje z płatnościami, kurierami i systemami magazynowymi."
     },
-    { 
-      icon: Zap, 
-      title: "Szybkość i Core Web Vitals", 
-      desc: "Strony ładujące się w mniej niż 2 sekundy. Zielone wyniki w Google PageSpeed Insights." 
+    {
+      icon: Zap,
+      title: "Szybkość i Core Web Vitals",
+      desc: "Optymalizujemy obrazy i kod oraz sprawdzamy wydajność gotowej strony na urządzeniach mobilnych."
     },
   ];
 
   const results = [
-    { value: "78+", label: "Zrealizowanych stron", desc: "dla firm z całej Polski" },
-    { value: "94%", label: "Klientów poleca nas", desc: "opinie z Google i Clutch" },
-    { value: "<2s", label: "Czas ładowania stron", desc: "zielone wyniki PageSpeed" },
-    { value: "5 lat", label: "Doświadczenia", desc: "w branży web development" },
+    { value: "WWW", label: "Strony i sklepy", desc: "zakres dobrany do oferty" },
+    { value: "UX", label: "Projekt dla odbiorcy", desc: "czytelna treść i kontakt" },
+    { value: "Testy", label: "Kontrola wdrożenia", desc: "telefon i komputer" },
+    { value: "Plan", label: "Etapy współpracy", desc: "zakres i harmonogram" },
   ];
 
   const pricing = [
-    { 
-      title: "Strona wizytówkowa", 
-      desc: "Landing page lub prosta strona firmowa. Idealna na start.", 
-      price: "2 500 - 5 000 zł", 
-      features: ["Do 5 podstron", "Responsywny design", "Formularz kontaktowy", "Podstawowe SEO"] 
+    {
+      title: "Strona wizytówkowa",
+      desc: "Landing page lub prosta strona firmowa. Idealna na start.",
+      price: "Wycena indywidualna",
+      features: ["Do 5 podstron", "Responsywny design", "Formularz kontaktowy", "Podstawowe SEO"]
     },
-    { 
-      title: "Strona firmowa", 
-      desc: "Rozbudowana witryna z blogiem i zaawansowanymi funkcjami.", 
-      price: "6 000 - 15 000 zł", 
-      features: ["Do 15 podstron", "CMS WordPress/Webflow", "Blog", "Zaawansowane SEO", "Analityka"] 
+    {
+      title: "Strona firmowa",
+      desc: "Rozbudowana witryna z blogiem i zaawansowanymi funkcjami.",
+      price: "Wycena indywidualna",
+      features: ["Do 15 podstron", "CMS WordPress/Webflow", "Blog", "Zaawansowane SEO", "Analityka"]
     },
-    { 
-      title: "Sklep e-commerce", 
-      desc: "Kompletna platforma sprzedażowa z integracjami.", 
-      price: "12 000 - 50 000 zł", 
-      features: ["Nieograniczona liczba produktów", "Płatności online", "Integracje kurierskie", "Panel zarządzania", "Marketing automation"] 
+    {
+      title: "Sklep e-commerce",
+      desc: "Kompletna platforma sprzedażowa z integracjami.",
+      price: "Wycena indywidualna",
+      features: ["Nieograniczona liczba produktów", "Płatności online", "Integracje kurierskie", "Panel zarządzania", "Marketing automation"]
     },
   ];
 
@@ -148,7 +148,7 @@ const StronyInternetowe = () => {
     },
     {
       question: "Czy oferujecie hosting i domenę?",
-      answer: "Tak, możemy zapewnić hosting i pomóc z rejestracją domeny. Koszt hostingu to ok. 500-1500 zł rocznie w zależności od potrzeb wydajnościowych."
+      answer: "Koszt ustalamy po poznaniu zakresu: liczby podstron, treści, integracji i sposobu zarządzania. W ofercie określamy cenę, etapy, poprawki i termin; utrzymanie oraz działania marketingowe omawiamy osobno."
     },
     {
       question: "Jak wygląda wsparcie po uruchomieniu strony?",
@@ -168,7 +168,7 @@ const StronyInternetowe = () => {
     },
     {
       question: "Ile kosztuje jedna strona internetowa?",
-      answer: "Koszt strony internetowej zależy od jej rodzaju i funkcjonalności. Strona wizytówkowa to wydatek od 2 000 do 5 000 zł, strona firmowa 5 000–15 000 zł, a sklep e-commerce od 12 000 zł wzwyż. Każdą wycenę przygotowujemy indywidualnie — skontaktuj się z nami, by otrzymać bezpłatną wycenę dopasowaną do Twojego projektu."
+      answer: "Koszt ustalamy po poznaniu zakresu: liczby podstron, treści, integracji i sposobu zarządzania. W ofercie określamy cenę, etapy, poprawki i termin; utrzymanie oraz działania marketingowe omawiamy osobno."
     },
     {
       question: "Gdzie mogę założyć stronę internetową?",
@@ -336,21 +336,21 @@ const StronyInternetowe = () => {
         canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe"
         keywords="strony internetowe, tworzenie stron internetowych, projektowanie stron www, strony internetowe dla firm, nowoczesne strony internetowe, profesjonalne strony internetowe, wykonanie strony internetowej, responsywna strona www, wordpress, agencja stron internetowych, strona internetowa dla firmy, landing page, sklep internetowy"
       />
-      
-      <ServiceSchema 
+
+      <ServiceSchema
         name="Tworzenie Stron Internetowych"
         description="Profesjonalne projektowanie i tworzenie stron internetowych. Strony firmowe, sklepy e-commerce, landing page - responsywne i zoptymalizowane pod SEO."
         provider="Fotz Studio"
         areaServed="Polska"
       />
-      
+
       <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://www.fotz-studio.pl" },
           { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
           { name: "Strony Internetowe", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe" },
         ]}/>
-      
-      <FAQSchema 
+
+      <FAQSchema
         items={faqItems.map(item => ({ question: item.question, answer: item.answer }))}
       />
 
@@ -362,7 +362,7 @@ const StronyInternetowe = () => {
           { name: "Usługi", url: "/uslugi" },
           { name: "Strony Internetowe", url: "https://www.fotz-studio.pl" },
         ]}/>
-        
+
         {/* Hero Section */}
         <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-40 pb-20">
           <div className="absolute inset-0 bg-gradient-to-b from-primary/10 via-background to-background" />
@@ -370,7 +370,7 @@ const StronyInternetowe = () => {
             <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-primary/30 rounded-full blur-[150px]" />
             <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-secondary/20 rounded-full blur-[120px]" />
           </div>
-          
+
           <div className="container mx-auto px-4 relative z-10">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -378,7 +378,7 @@ const StronyInternetowe = () => {
               transition={{ duration: 0.8 }}
               className="text-center max-w-5xl mx-auto"
             >
-              <motion.span 
+              <motion.span
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.2 }}
@@ -387,13 +387,13 @@ const StronyInternetowe = () => {
                 <Sparkles className="w-4 h-4" />
                 Tworzenie stron WWW
               </motion.span>
-              
+
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-heading font-bold mb-6 sm:mb-8 leading-tight px-2 sm:px-0">
                 <TextReveal>
                   Strony internetowe, które <span className="text-gradient">naprawdę sprzedają</span>
                 </TextReveal>
               </h1>
-              
+
               <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground mb-8 sm:mb-10 max-w-3xl mx-auto leading-relaxed px-2 sm:px-0">
                 Projektujemy z myślą o ROI. <span className="text-foreground font-medium">Szybkie, responsywne strony www, zoptymalizowane pod SEO.</span> Wykonanie strony internetowej w React, Next.js lub WordPress — od wizytówki i landing page po rozbudowany sklep internetowy. Budujemy profesjonalne strony internetowe dla firm, które generują przychód.
               </p>
@@ -548,8 +548,8 @@ const StronyInternetowe = () => {
                   <Link to={study.link} className="group block h-full">
                     <div className="rounded-2xl bg-card border border-border/50 hover:border-primary/30 transition-all overflow-hidden h-full flex flex-col">
                       <div className="aspect-[16/10] overflow-hidden relative">
-                        <img loading="lazy" 
-                          src={study.image} 
+                        <img loading="lazy"
+                          src={study.image}
                           alt={study.title}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                         />
@@ -574,15 +574,15 @@ const StronyInternetowe = () => {
             <FadeInView>
               <h3 className="text-xl font-semibold text-center mb-8">Więcej realizacji</h3>
             </FadeInView>
-            
+
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
               {moreCaseStudies.map((study, index) => (
                 <FadeInView key={index} delay={index * 0.05}>
                   <Link to={study.link} className="group block">
                     <div className="rounded-xl bg-card border border-border/50 hover:border-primary/30 transition-all overflow-hidden">
                       <div className="aspect-square overflow-hidden">
-                        <img loading="lazy" 
-                          src={study.image} 
+                        <img loading="lazy"
+                          src={study.image}
                           alt={study.title}
                           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                         />
@@ -657,10 +657,10 @@ const StronyInternetowe = () => {
                     Rozumiemy Twoją branżę
                   </h2>
                   <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                    Każda branża ma swoją specyfikę. Wiemy, czego szukają Twoi klienci i jak zaprojektować stronę, która odpowiada na ich potrzeby. 
+                    Każda branża ma swoją specyfikę. Wiemy, czego szukają Twoi klienci i jak zaprojektować stronę, która odpowiada na ich potrzeby.
                     <strong className="text-foreground"> Od e-commerce po strony prawnicze</strong> – mamy doświadczenie w każdym sektorze.
                   </p>
-                  
+
                   <div className="space-y-4">
                     {[
                       "E-commerce i sklepy internetowe",
@@ -684,8 +684,8 @@ const StronyInternetowe = () => {
                     <Link key={index} to={study.link} className="group">
                       <div className="rounded-xl overflow-hidden border border-border/50 hover:border-primary/30 transition-all">
                         <div className="aspect-[3/4] overflow-hidden">
-                          <img loading="lazy" 
-                            src={study.image} 
+                          <img loading="lazy"
+                            src={study.image}
                             alt={study.title}
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                           />
@@ -797,7 +797,7 @@ const StronyInternetowe = () => {
                     )}
                     <h3 className="text-lg sm:text-xl font-semibold mb-1.5 sm:mb-2">{item.title}</h3>
                     <p className="text-sm sm:text-base text-muted-foreground mb-3 sm:mb-4">{item.desc}</p>
-                    <div className="text-2xl sm:text-3xl font-bold text-gradient mb-4 sm:mb-6">{item.price}</div>
+                    <div className="text-2xl sm:text-xl font-bold text-gradient mb-4 sm:mb-6">{item.price}</div>
                     <ul className="space-y-2 sm:space-y-3 mb-6 sm:mb-8 flex-grow">
                       {item.features.map((feature, i) => (
                         <li key={i} className="flex items-center gap-2">
@@ -833,9 +833,9 @@ const StronyInternetowe = () => {
             <div className="max-w-3xl mx-auto">
               <Accordion type="single" collapsible className="space-y-3 sm:space-y-4">
                 {faqItems.map((item, index) => (
-                  <AccordionItem 
-                    key={index} 
-                    value={`item-${index}`} 
+                  <AccordionItem
+                    key={index}
+                    value={`item-${index}`}
                     className="border border-border/50 rounded-lg sm:rounded-xl px-4 sm:px-6 bg-card/50"
                   >
                     <AccordionTrigger className="text-left hover:no-underline py-4 sm:py-5">
@@ -873,7 +873,7 @@ const StronyInternetowe = () => {
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
                 {cityLinks.map((city, index) => (
                   <FadeInView key={index} delay={index * 0.05}>
-                    <Link 
+                    <Link
                       to={city.href}
                       className="flex items-center justify-center gap-2 px-4 py-4 bg-primary/10 border border-primary/30 rounded-xl text-sm font-medium hover:bg-primary/20 transition-all group"
                     >
@@ -892,7 +892,7 @@ const StronyInternetowe = () => {
           <div className="absolute inset-0 opacity-20">
             <div className="absolute top-1/4 right-1/4 w-64 sm:w-96 h-64 sm:h-96 bg-primary/30 rounded-full blur-[100px] sm:blur-[150px]" />
           </div>
-          
+
           <div className="container mx-auto px-4 relative z-10">
             <FadeInView>
               <div className="max-w-4xl mx-auto text-center">
@@ -902,7 +902,7 @@ const StronyInternetowe = () => {
                 <p className="text-sm sm:text-base md:text-lg text-muted-foreground mb-8 sm:mb-10 max-w-2xl mx-auto px-4">
                   Porozmawiajmy o Twoim projekcie. Bezpłatna konsultacja, konkretna wycena, jasny plan działania.
                 </p>
-                
+
                 <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4 sm:px-0">
                   <Button asChild size="lg" className="group text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 w-full sm:w-auto">
                     <Link to="/kontakt">
@@ -949,7 +949,7 @@ const StronyInternetowe = () => {
                       <h3 className="text-xl font-heading font-bold">Projektowanie UX/UI</h3>
                     </div>
                     <p className="text-muted-foreground leading-relaxed mb-6">
-                      Tworzymy strony, które nie tylko dobrze wyglądają, ale przede wszystkim <strong className="text-foreground">konwertują</strong>. 
+                      Tworzymy strony, które nie tylko dobrze wyglądają, ale przede wszystkim <strong className="text-foreground">konwertują</strong>.
                       Każdy element – od układu przycisków po kolorystykę CTA – jest przemyślany pod kątem user experience.
                     </p>
                     <ul className="space-y-2 text-sm text-muted-foreground">
@@ -969,7 +969,7 @@ const StronyInternetowe = () => {
                       <h3 className="text-xl font-heading font-bold">SEO techniczne</h3>
                     </div>
                     <p className="text-muted-foreground leading-relaxed mb-6">
-                      Strona bez SEO jest jak sklep bez szyldu. Dbamy o <strong className="text-foreground">Core Web Vitals</strong>, 
+                      Strona bez SEO jest jak sklep bez szyldu. Dbamy o <strong className="text-foreground">Core Web Vitals</strong>,
                       strukturę URL, meta tagi i schema markup – wszystko, by Google pokochał Twoją witrynę.
                     </p>
                     <ul className="space-y-2 text-sm text-muted-foreground">
@@ -989,7 +989,7 @@ const StronyInternetowe = () => {
                       <h3 className="text-xl font-heading font-bold">Technologie</h3>
                     </div>
                     <p className="text-muted-foreground leading-relaxed mb-6">
-                      Dobieramy technologię do projektu – nie na odwrót. <strong className="text-foreground">WordPress</strong> dla prostych stron, 
+                      Dobieramy technologię do projektu – nie na odwrót. <strong className="text-foreground">WordPress</strong> dla prostych stron,
                       <strong className="text-foreground"> Webflow</strong> dla designerskich projektów, <strong className="text-foreground">React/Next.js</strong> dla zaawansowanych aplikacji.
                     </p>
                     <ul className="space-y-2 text-sm text-muted-foreground">
@@ -1009,13 +1009,13 @@ const StronyInternetowe = () => {
                       <h3 className="text-xl font-heading font-bold">Wsparcie po wdrożeniu</h3>
                     </div>
                     <p className="text-muted-foreground leading-relaxed mb-6">
-                      Strona to dopiero początek. Oferujemy <strong className="text-foreground">pakiety opieki</strong> – 
+                      Strona to dopiero początek. Oferujemy <strong className="text-foreground">pakiety opieki</strong> –
                       aktualizacje, backupy, monitoring i rozwój funkcjonalności. Jesteśmy z Tobą na dłużej.
                     </p>
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> 30 dni gwarancji w cenie</li>
                       <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Szkolenie z obsługi CMS</li>
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Pakiety wsparcia od 300 zł/mies.</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Wsparcie według uzgodnionego zakresu</li>
                     </ul>
                   </div>
                 </FadeInView>
@@ -1042,8 +1042,8 @@ const StronyInternetowe = () => {
                     Strona internetowa to dopiero początek. Uzupełnij ją o dodatkowe usługi, które zwiększą Twój sukces online.
                   </p>
                   <div className="grid md:grid-cols-3 gap-6">
-                    <Link 
-                      to="/uslugi/strony-internetowe/ecommerce" 
+                    <Link
+                      to="/uslugi/strony-internetowe/ecommerce"
                       className="group p-6 rounded-xl bg-background border border-border hover:border-primary/50 transition-all duration-300"
                     >
                       <ShoppingCart className="w-10 h-10 text-primary mb-4" />
@@ -1057,8 +1057,8 @@ const StronyInternetowe = () => {
                         Dowiedz się więcej <ArrowRight className="w-4 h-4" />
                       </span>
                     </Link>
-                    <Link 
-                      to="/seo/pozycjonowanie" 
+                    <Link
+                      to="/seo/pozycjonowanie"
                       className="group p-6 rounded-xl bg-background border border-border hover:border-primary/50 transition-all duration-300"
                     >
                       <Search className="w-10 h-10 text-primary mb-4" />
@@ -1072,8 +1072,8 @@ const StronyInternetowe = () => {
                         Dowiedz się więcej <ArrowRight className="w-4 h-4" />
                       </span>
                     </Link>
-                    <Link 
-                      to="/performance-marketing/google-ads" 
+                    <Link
+                      to="/performance-marketing/google-ads"
                       className="group p-6 rounded-xl bg-background border border-border hover:border-primary/50 transition-all duration-300"
                     >
                       <Target className="w-10 h-10 text-primary mb-4" />
@@ -1204,7 +1204,7 @@ const StronyInternetowe = () => {
                   Tworzenie stron internetowych — cennik i wycena budowy strony www
                 </h2>
                 <p className="text-muted-foreground leading-relaxed mb-8">
-                  Budowy strony internetowej koszt zależy od złożoności: strona wizytówkowa 2 500–5 000 zł, strona firmowa z blogiem 6 000–15 000 zł, sklep e-commerce 12 000–50 000 zł. Każdą wycenę tworzenia strony www poprzedzamy bezpłatną konsultacją. Cena stworzenia strony internetowej zawiera: projekt graficzny, kodowanie, responsywność, SEO techniczne, integrację z Google Analytics i szkolenie z obsługi CMS. Wykonanie strony internetowej w Fotz Studio — poradnik krok po kroku: (1) brief i określenie celu strony, (2) projekt graficzny i elementy graficzne, (3) kodowanie lub konfiguracja CMS, (4) optymalizacja strony pod SEO, (5) testy responsywności i wydajności, (6) publikacja i szkolenie z obsługi.
+                  Koszt budowy strony internetowej zależy od struktury, treści, funkcji oraz integracji. Przygotowujemy indywidualną ofertę po ustaleniu zakresu. Każdą wycenę tworzenia strony www poprzedzamy bezpłatną konsultacją. Cena stworzenia strony internetowej zawiera: projekt graficzny, kodowanie, responsywność, SEO techniczne, integrację z Google Analytics i szkolenie z obsługi CMS. Wykonanie strony internetowej w Fotz Studio — poradnik krok po kroku: (1) brief i określenie celu strony, (2) projekt graficzny i elementy graficzne, (3) kodowanie lub konfiguracja CMS, (4) optymalizacja strony pod SEO, (5) testy responsywności i wydajności, (6) publikacja i szkolenie z obsługi.
                 </p>
 
                 <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">

@@ -30,6 +30,7 @@ import {
 import { z } from "zod";
 import { Link } from "react-router-dom";
 import { submitWeb3Form } from "@/lib/web3forms";
+import { toast } from "sonner";
 
 // Types
 interface FormData {
@@ -236,20 +237,10 @@ export default function GeneratorBriefu() {
         message: briefContent,
       });
 
-      // Send to CRM webhook (fire and forget)
-      const { sendLeadToCRM } = await import("@/hooks/useCRMWebhook");
-      sendLeadToCRM({
-        name: formData.fullName,
-        email: formData.email,
-        phone: formData.phone || undefined,
-        company: formData.companyName,
-        source: "fotz.pl/generator-briefu",
-        notes: `Typ projektu: ${projectTypes.find(p => p.value === formData.projectType)?.label}\nBranża: ${formData.industry}\nBudżet: ${budgets.find(b => b.value === formData.budget)?.label}\nTermin: ${deadlines.find(d => d.value === formData.deadline)?.label}\nCele: ${formData.goals.join(", ")}\n\nOpis: ${formData.description}`,
-      });
-
       setIsSubmitted(true);
     } catch (error) {
       console.error("Error submitting brief:", error);
+      toast.error("Nie udało się potwierdzić wysłania briefu. Spróbuj ponownie lub zadzwoń: +48 790 814 814.");
     } finally {
       setIsSubmitting(false);
     }

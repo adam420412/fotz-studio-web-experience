@@ -1,193 +1,23 @@
 import { Link } from "react-router-dom";
-import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
-import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
-import { FadeInView } from "@/components/FadeInView";
-import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
-
-const faqItems = [
-  {
-    question: "Czy jest umowa na rok?",
-    answer: "Nie. Współpracujemy na umowach miesięcznych z miesięcznym okresem wypowiedzenia — bez zobowiązań rocznych.",
-  },
-  {
-    question: "Czy cennik zawiera budżet reklamowy?",
-    answer: "Nie. Abonament obejmuje pracę zespołu (strategię, produkcję, prowadzenie kampanii). Budżet reklamowy w Meta Ads i Google Ads klient pokrywa osobno, bezpośrednio do platform.",
-  },
-  {
-    question: "Ile trwa start współpracy?",
-    answer: "Pierwsze publikacje pojawiają się w 7–14 dni od podpisania umowy. W tym czasie robimy onboarding, ustalamy strategię i produkujemy pierwszą partię materiałów.",
-  },
-  {
-    question: "Czy robicie tylko social media?",
-    answer: "Nie. Fotz Studio to pełnoserwisowe studio kreatywne — poza social media zajmujemy się stronami internetowymi, produkcją video, fotografią i performance marketingiem.",
-  },
-];
-
+import { SEOHead } from "@/components/seo/SEOHead";
+import { ArticleSchema, FAQSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 const CANONICAL = "https://www.fotz-studio.pl/blog/agencja-social-media-cennik";
-
+const faqs = [
+ {question:'Czy abonament obejmuje budżet reklamowy?',answer:'Nie należy tego zakładać. W ofercie FOTZ Studio pracę zespołu i budżet emisji reklam rozpisujemy oddzielnie.'},
+ {question:'Czy można porównać oferty po liczbie postów?',answer:'Sama liczba postów nie wystarczy. Porównaj formaty, produkcję zdjęć i video, liczbę kanałów, publikację, moderację, reklamy oraz raportowanie.'},
+ {question:'Jakie warunki umowy sprawdzić?',answer:'Zakres, harmonogram, prawa do materiałów, liczbę poprawek, dostęp do kont, płatności, okres współpracy i zasady jej zakończenia. Ustalenia powinny znaleźć się w ofercie oraz umowie.'},
+];
 export default function BlogAgencjaSocialMediaCennik() {
-  return (
-    <Layout>
-      <SEOHead
-        title="Ile kosztuje agencja social media? Cennik 2026 bez owijania"
-        description="Konkretne widełki cen obsługi social media w Polsce w 2026: freelancer, mała i duża agencja. Nasz cennik podajemy wprost. Sprawdź, kiedy to się opłaca."
-        canonical={CANONICAL}
-        keywords="cennik agencji social media, ile kosztuje agencja social media, ceny social media 2026, obsługa social media cennik"
-      />
-      <ArticleSchema
-        title="Ile kosztuje agencja social media? Cennik 2026 bez owijania"
-        description="Realne widełki rynkowe obsługi social media w Polsce w 2026 oraz cennik Fotz Studio podany wprost — pakiety START, WZROST i PARTNER."
-        url={CANONICAL}
-        datePublished="2026-07-02"
-      />
-      <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
-          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
-          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
-          { name: "Cennik agencji social media 2026", url: CANONICAL },
-        ]}
-      />
-
-      <section className="bg-gradient-to-br from-slate-950 via-[#0F3053] to-[#75143F] text-white py-20 px-4">
-        <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { name: "Home", url: "/" },
-              { name: "Blog", url: "/blog" },
-              { name: "Cennik agencji social media 2026", url: "/blog/agencja-social-media-cennik" },
-            ]}
-          />
-          <div className="mt-8">
-            <span className="inline-block bg-[#75143F] text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
-              Social Media
-            </span>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Ile kosztuje agencja social media? Cennik 2026 bez owijania
-            </h1>
-            <p className="text-xl text-gray-300 mb-8 max-w-3xl">
-              Większość agencji każe dzwonić po wycenę. My uważamy, że cennik to pierwsza rzecz, jaką powinieneś zobaczyć — dlatego w tym wpisie znajdziesz realne widełki rynkowe i nasze stawki podane wprost.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <article className="max-w-3xl mx-auto px-4 py-16 prose prose-lg">
-        <FadeInView>
-          <p className="lead text-lg text-gray-700">
-            Większość agencji każe dzwonić po wycenę. My uważamy, że cennik to pierwsza rzecz, jaką powinieneś zobaczyć, dlatego w tym wpisie znajdziesz realne widełki rynkowe i nasze stawki podane wprost.
-          </p>
-
-          <h2>Ile kosztuje obsługa social media w Polsce</h2>
-          <ul>
-            <li><strong>Freelancer</strong> — 1 000–2 500 zł/mc (1 kanał, bez produkcji video).</li>
-            <li><strong>Mała agencja</strong> — 2 500–6 000 zł/mc (1–2 kanały, podstawowa grafika, raport).</li>
-            <li><strong>Duża agencja full service</strong> — 6 000–15 000+ zł/mc (strategia, produkcja, reklamy, dedykowany opiekun).</li>
-          </ul>
-          <p className="text-sm text-gray-600">Kwoty netto miesięcznie.</p>
-
-          <h2>Co najbardziej wpływa na cenę</h2>
-          <ul>
-            <li>liczba kanałów, na których marka jest aktywna,</li>
-            <li>ilość i jakość produkcji (statyczne grafiki vs profesjonalne rolki),</li>
-            <li>budżet i obsługa reklam Meta Ads / Google Ads,</li>
-            <li>raportowanie wyników i częstotliwość spotkań strategicznych,</li>
-            <li>dojazdy na nagrania i sesje w terenie.</li>
-          </ul>
-          <p>
-            Najwięcej kosztuje video — i jednocześnie to ono najmocniej pracuje na zasięgi. Nasze materiały generują <strong>ponad 3 mln wyświetleń miesięcznie</strong>.
-          </p>
-
-          <h2>Nasz cennik wprost</h2>
-          <div className="not-prose grid md:grid-cols-3 gap-4 my-8">
-            <div className="rounded-2xl border border-gray-200 p-6 bg-white">
-              <div className="text-sm text-gray-500 mb-1">Pakiet</div>
-              <div className="text-2xl font-bold text-gray-900 mb-2">START</div>
-              <div className="text-3xl font-bold text-[#75143F] mb-4">2 500 zł/mc</div>
-              <ul className="text-sm text-gray-700 space-y-1 list-disc pl-5">
-                <li>opieka nad stroną www</li>
-                <li>hosting</li>
-                <li>drobne zmiany</li>
-                <li>podstawowe SEO</li>
-                <li>miesięczny raport</li>
-              </ul>
-            </div>
-            <div className="rounded-2xl border-2 border-[#75143F] p-6 bg-white shadow-lg">
-              <div className="text-sm text-[#75143F] mb-1 font-semibold">Najczęściej wybierany</div>
-              <div className="text-2xl font-bold text-gray-900 mb-2">WZROST</div>
-              <div className="text-3xl font-bold text-[#75143F] mb-4">5 000 zł/mc</div>
-              <ul className="text-sm text-gray-700 space-y-1 list-disc pl-5">
-                <li>wszystko z pakietu START</li>
-                <li>1 kanał social media</li>
-                <li>prowadzenie kampanii Meta</li>
-                <li>raport wyników reklamowych</li>
-              </ul>
-            </div>
-            <div className="rounded-2xl border border-gray-200 p-6 bg-white">
-              <div className="text-sm text-gray-500 mb-1">Pakiet</div>
-              <div className="text-2xl font-bold text-gray-900 mb-2">PARTNER</div>
-              <div className="text-3xl font-bold text-[#75143F] mb-4">8 000–9 000 zł/mc</div>
-              <ul className="text-sm text-gray-700 space-y-1 list-disc pl-5">
-                <li>wszystko z pakietu WZROST</li>
-                <li>SEO on-going</li>
-                <li>4 rolki miesięcznie</li>
-                <li>strategia kwartalna</li>
-                <li>priorytet realizacji</li>
-              </ul>
-            </div>
-          </div>
-          <p className="text-sm text-gray-600">
-            Budżet reklamowy zawsze po stronie klienta, poza abonamentem.
-          </p>
-
-          <h2>Abonament czy projekt</h2>
-          <p>
-            Abonament wygrywa przy regularnej komunikacji — algorytmy nagradzają systematyczność. Projekt jednorazowy ma sens przy konkretnej kampanii albo evencie. Zobacz też wpis o <Link to="/kontakt" className="text-[#75143F] underline">darmowej pierwszej rolce</Link>, którą robimy zanim zaczniemy stałą współpracę.
-          </p>
-
-          <h2>Kiedy agencja się opłaca</h2>
-          <p>
-            Etatowy specjalista social media to koszt 6 000–9 000 zł brutto + narzędzia + sprzęt do video. Agencja na pakiecie <strong>WZROST</strong> kosztuje mniej niż połowę etatu i daje Ci cały zespół zamiast jednej osoby.
-          </p>
-          <p>
-            Prawdziwe pytanie brzmi jednak: <strong>ile kosztuje NIEROBIENIE social media</strong>, kiedy konkurencja zbiera klientów z TikToka i Instagrama?
-          </p>
-
-          <h2>FAQ</h2>
-          <div className="not-prose space-y-4 my-6">
-            {faqItems.map((f) => (
-              <div key={f.question} className="rounded-xl border border-gray-200 p-5 bg-white">
-                <h3 className="font-semibold text-gray-900 mb-2">{f.question}</h3>
-                <p className="text-gray-700 text-sm leading-relaxed">{f.answer}</p>
-              </div>
-            ))}
-          </div>
-
-          <div className="not-prose mt-12 rounded-2xl bg-gradient-to-r from-[#75143F] to-[#0F3053] p-8 md:p-10 text-white text-center">
-            <h3 className="text-2xl md:text-3xl font-bold mb-3">
-              Pierwszą rolkę robimy za darmo
-            </h3>
-            <p className="text-white/85 mb-6 max-w-xl mx-auto">
-              Zobacz, co potrafimy — zanim zapłacisz złotówkę.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <Link
-                to="/kontakt"
-                className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-white text-[#0E0E0E] font-semibold hover:bg-white/90 transition-colors"
-              >
-                Darmowa rolka
-              </Link>
-              <Link
-                to="/konsultacja"
-                className="inline-flex items-center justify-center px-6 py-3 rounded-full border border-white/40 text-white font-semibold hover:bg-white/10 transition-colors"
-              >
-                Umów konsultację 15 min
-              </Link>
-            </div>
-          </div>
-        </FadeInView>
-      </article>
-    </Layout>
-  );
+ return <Layout><SEOHead title="Ile kosztuje obsługa social media? Jak porównać wyceny" description="Sprawdź, co wpływa na koszt agencji social media: kanały, posty, rolki, nagrania, moderacja i reklamy. Lista pytań do porównania ofert." canonical={CANONICAL} ogType="article" />
+ <ArticleSchema title="Ile kosztuje obsługa social media? Jak porównać wyceny" description="Elementy wyceny obsługi social media i pytania do porównania ofert." url={CANONICAL} datePublished="2026-07-02" dateModified="2026-10-02" /><FAQSchema items={faqs} /><BreadcrumbSchema items={[{name:'Strona główna',url:'https://www.fotz-studio.pl'},{name:'Blog',url:'https://www.fotz-studio.pl/blog'},{name:'Koszt social media',url:CANONICAL}]} />
+ <article className="max-w-4xl mx-auto px-6 pt-32 pb-20"><p className="dv-eyebrow mb-4">Poradnik · aktualizacja 2 października 2026</p><h1 className="text-4xl md:text-5xl font-heading mb-6">Ile kosztuje obsługa social media?</h1><p className="text-xl text-muted-foreground mb-10">Cena zależy przede wszystkim od zakresu pracy. Aby porównać dwie oferty, zestaw te same kanały, formaty, liczbę materiałów i obowiązki zespołu. Sama stawka miesięczna nie mówi, co otrzymasz.</p>
+ <div className="space-y-10 leading-relaxed">
+ <section><h2 className="text-2xl font-heading mb-4">Co powinno znaleźć się w wycenie?</h2><p>Poproś o rozpisanie strategii, przygotowania treści, produkcji zdjęć i video, publikacji, moderacji oraz reklam. Ustal, kto dostarcza materiały i kto je akceptuje. Jedna rolka nagrana w siedzibie firmy wymaga innego nakładu pracy niż grafika oparta na gotowych zdjęciach.</p></section>
+ <section><h2 className="text-2xl font-heading mb-4">Jak porównać zakresy?</h2><div className="overflow-x-auto"><table className="w-full text-left text-sm"><thead><tr className="border-b border-border"><th className="p-3">Element</th><th className="p-3">Co ustalić</th></tr></thead><tbody>{[['Kanały','Które profile obejmuje obsługa i czy każdy dostaje osobne treści?'],['Materiały','Ile postów, rolek i Stories powstaje? Co oznacza jedna jednostka?'],['Produkcja','Czy cena obejmuje scenariusze, nagrania, dojazd i montaż?'],['Akceptacja','Ile rund poprawek uwzględniono i kto zatwierdza publikacje?'],['Moderacja','Jakie wiadomości i komentarze są obsługiwane, w jakim zakresie?'],['Reklama','Jaki jest koszt obsługi, a jaki budżet płacony platformie?'],['Raport','Jak oddzielane są zasięg, kliknięcia, zapytania i sprzedaż?']].map(([label,text])=><tr key={label} className="border-b border-border"><th scope="row" className="p-3 align-top">{label}</th><td className="p-3">{text}</td></tr>)}</tbody></table></div></section>
+ <section><h2 className="text-2xl font-heading mb-4">Co może być dodatkowym kosztem?</h2><p>Sprawdź licencje muzyczne i zdjęciowe, współpracę z twórcami, dodatkowe dni nagrań, podróże, wersje językowe oraz płatne narzędzia. Nie zakładaj, że określenie „pełna obsługa” obejmuje każdy z tych elementów. Zakres trzeba zapisać.</p></section>
+ <section><h2 className="text-2xl font-heading mb-4">Jak podejść do budżetu reklamowego?</h2><p>Oddziel wynagrodzenie za pracę od pieniędzy przeznaczonych na emisję. Budżet testowy powinien wynikać z celu, odbiorców, oferty i sposobu pomiaru. Nie ma jednej kwoty gwarantującej wynik każdej firmie. Zanim zwiększysz wydatki, sprawdź, czy formularze działają i czy zgłoszenia można przypisać do kampanii.</p></section>
+ <section><h2 className="text-2xl font-heading mb-4">Jak wyceniamy social media w FOTZ Studio?</h2><p>Zaczynamy od briefu: co sprzedajesz, do kogo chcesz dotrzeć, jakie profile prowadzisz i jakie materiały już masz. Następnie ustalamy zakres oraz harmonogram. Liczbę publikacji, nagrań, poprawek i warunki współpracy potwierdzamy w indywidualnej ofercie.</p><Link className="dv-btn dv-btn-primary mt-6" to="/agencja-social-media/cennik">Zobacz zakresy obsługi social media</Link></section>
+ <section><h2 className="text-2xl font-heading mb-4">Najczęstsze pytania</h2>{faqs.map(f=><div key={f.question} className="mb-6"><h3 className="text-lg font-medium mb-2">{f.question}</h3><p>{f.answer}</p></div>)}</section>
+ </div></article></Layout>;
 }

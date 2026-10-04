@@ -82,7 +82,7 @@ export default function TworzenieStronWroclaw() {
   const packages = [
     {
       title: "Wizytówka cyfrowa",
-      price: "Od 499 zł",
+      price: "Wycena indywidualna",
       period: "jednorazowo",
       desc: "Prosta strona dla freelancerów i małych biznesów",
       features: [
@@ -96,7 +96,7 @@ export default function TworzenieStronWroclaw() {
     },
     {
       title: "Strona firmowa",
-      price: "1 499 - 3 999 zł",
+      price: "Wycena indywidualna",
       period: "jednorazowo",
       desc: "Profesjonalna strona dla firmy średniej",
       features: [
@@ -112,7 +112,7 @@ export default function TworzenieStronWroclaw() {
     },
     {
       title: "Sklep e-commerce",
-      price: "2 999 - 9 999 zł",
+      price: "Wycena indywidualna",
       period: "jednorazowo",
       desc: "Pełna platforma sprzedażowa",
       features: [
@@ -164,7 +164,7 @@ export default function TworzenieStronWroclaw() {
   const faqItems = [
     {
       question: "Ile kosztuje strona dla tech startupu?",
-      answer: "Landing page MVP: 499-999 zł. Strona produktu: 1 500-4 000 zł. Platform (z backend): 5 000-15 000 zł+. Dla startup'ów często robimy flexible payment plans - rozumiemy że budżet jest ograniczony."
+      answer: "Koszt ustalamy po poznaniu zakresu: liczby podstron, treści, integracji i sposobu zarządzania. W ofercie określamy cenę, etapy, poprawki i termin; utrzymanie oraz działania marketingowe omawiamy osobno."
     },
     {
       question: "Czy pracujecie ze startup'ami bez budżetu?",
@@ -207,7 +207,7 @@ export default function TworzenieStronWroclaw() {
     <>
       <SEOHead
         title="Tworzenie stron internetowych Wrocław | Profesjonalne strony WWW"
-        description="Tworzymy profesjonalne strony internetowe we Wrocławiu. Szybkie, responsywne strony dla firm z Dolnego Śląska. Od 499 zł. Bezpłatna wycena!"
+        description="Tworzymy profesjonalne strony internetowe we Wrocławiu. Szybkie, responsywne strony dla firm z Dolnego Śląska. Wycena indywidualna. Bezpłatna wycena!"
         canonical="https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych/wroclaw"
         keywords="tworzenie stron internetowych wrocław, strony internetowe wrocław, tworzenie stron www wrocław, projektowanie stron internetowych wrocław, strony www wrocław, sklepy internetowe wrocław, projektowanie stron www wrocław, agencja webdesign wrocław, tworzenie stron wrocław, strona internetowa wrocław"
       />
@@ -238,7 +238,7 @@ export default function TworzenieStronWroclaw() {
               </h1>
               <p className="text-xl text-slate-300 mb-8 leading-relaxed">
                 Tworzenie stron internetowych Wrocław — profesjonalne strony www i sklepy internetowe dla firm z Wrocławia i Dolnego Śląska. Projektowanie stron internetowych Wrocław z nowoczesnym designem, optymalizacją SEO i full-stack wsparciem technicznym.
-                Strony www Wrocław — tworzenie stron www dla wrocławskich startup'ów, software house'ów, e-commerce i firm B2B. Od 499 zł netto, bezpłatna wycena.
+                Strony www Wrocław — tworzenie stron www dla wrocławskich startup'ów, software house'ów, e-commerce i firm B2B. Wycenę przygotowujemy po poznaniu zakresu projektu.
               </p>
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">

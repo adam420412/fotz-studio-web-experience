@@ -61,9 +61,9 @@ const StronyInternetoweGdynia = () => {
   ];
 
   const pricing = [
-    { title: "Landing Page", desc: "Strona wizytówkowa prezentująca firmę", price: "od 2 000 zł", features: ["Do 5 podstron", "Responsywny design", "Podstawowe SEO", "Formularz kontaktowy", "Certyfikat SSL"] },
-    { title: "Strona Firmowa", desc: "Rozbudowana strona z dodatkowymi funkcjami", price: "od 5 000 zł", popular: true, features: ["Do 15 podstron", "Zaawansowane SEO", "Blog firmowy", "Integracja social media", "System CMS", "Wsparcie techniczne"] },
-    { title: "Sklep E-commerce", desc: "Platforma sprzedażowa z integracjami", price: "od 8 000 zł", features: ["Nieograniczona liczba produktów", "Panel administracyjny", "Integracje płatności", "Optymalizacja konwersji", "Narzędzia marketingowe"] },
+    { title: "Landing Page", desc: "Strona wizytówkowa prezentująca firmę", price: "Wycena indywidualna", features: ["Do 5 podstron", "Responsywny design", "Podstawowe SEO", "Formularz kontaktowy", "Certyfikat SSL"] },
+    { title: "Strona Firmowa", desc: "Rozbudowana strona z dodatkowymi funkcjami", price: "Wycena indywidualna", popular: true, features: ["Do 15 podstron", "Zaawansowane SEO", "Blog firmowy", "Integracja social media", "System CMS", "Wsparcie techniczne"] },
+    { title: "Sklep E-commerce", desc: "Platforma sprzedażowa z integracjami", price: "Wycena indywidualna", features: ["Nieograniczona liczba produktów", "Panel administracyjny", "Integracje płatności", "Optymalizacja konwersji", "Narzędzia marketingowe"] },
   ];
 
   const processSteps = [
@@ -112,7 +112,7 @@ const StronyInternetoweGdynia = () => {
     },
     {
       question: "Ile kosztuje profesjonalna strona www w Gdyni?",
-      answer: "Ceny stron zależą od zakresu: prosta strona wizytówka kosztuje od 2 000 zł, rozbudowana strona firmowa od 5 000 zł, a sklep internetowy od 8 000 zł netto. Wycena uwzględnia projektowanie, tworzenie funkcjonalności oraz utrzymanie strony internetowej."
+      answer: "Koszt ustalamy po poznaniu zakresu: liczby podstron, treści, integracji i sposobu zarządzania. W ofercie określamy cenę, etapy, poprawki i termin; utrzymanie oraz działania marketingowe omawiamy osobno."
     },
     {
       question: "Czy tworzycie nowoczesne i responsywne strony internetowe?",
@@ -359,7 +359,7 @@ const StronyInternetoweGdynia = () => {
                   <h3>Ceny sklepów internetowych w Gdyni</h3>
                   <p>
                     Ceny sklepów internetowych mogą się różnić w zależności od zakresu prac i funkcjonalności.
-                    Koszt stworzenia sklepu e-commerce waha się od 8 000 zł do 120 000 zł netto.
+                    Koszt sklepu ustalamy według katalogu, funkcji, płatności i integracji.
                     Oferujemy transparentne ceny i indywidualne podejście do każdego klienta z Trójmiasta.
                   </p>
                 </div>

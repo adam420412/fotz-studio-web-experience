@@ -20,7 +20,7 @@ export default function TworzenieStronWWW() {
     <>
       <SEOHead
         title="Tworzenie stron WWW | Profesjonalne strony internetowe | FOTZ Studio"
-        description="Tworzymy profesjonalne strony WWW dla firm w całej Polsce. Szybkie, responsywne, zoptymalizowane pod SEO. Od 499 zł netto. Bezpłatna wycena!"
+        description="Tworzymy profesjonalne strony WWW dla firm w całej Polsce. Szybkie, responsywne, zoptymalizowane pod SEO. Wycena indywidualna. Bezpłatna wycena!"
         canonical="https://www.fotz-studio.pl/uslugi/tworzenie-stron-www"
         keywords="tworzenie stron www, tworzenie stron internetowych, strony www dla firm, tworzenie witryn internetowych, strona www cena"
       />
@@ -57,10 +57,10 @@ export default function TworzenieStronWWW() {
             {/* Stats Grid */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16">
               {[
-                { number: "500+", label: "Zrealizowanych projektów" },
-                { number: "10+", label: "Lat doświadczenia" },
-                { number: "97%", label: "Klientów nas poleca" },
-                { number: "Od 499 zł", label: "Cena startowa" },
+                { number: "WWW", label: "Strony i sklepy" },
+                { number: "UX", label: "Projekt dla odbiorcy" },
+                { number: "Testy", label: "Telefon i komputer" },
+                { number: "Brief", label: "Zakres i wycena" },
               ].map((stat, i) => (
                 <motion.div
                   key={i}
@@ -238,7 +238,7 @@ export default function TworzenieStronWWW() {
                 {[
                   {
                     name: "Wizytówka",
-                    price: "499 zł",
+                    price: "Wycena indywidualna",
                     features: [
                       "Do 5 podstron",
                       "Responsywny design",
@@ -250,7 +250,7 @@ export default function TworzenieStronWWW() {
                   },
                   {
                     name: "Strona firmowa",
-                    price: "1499-3999 zł",
+                    price: "Wycena indywidualna",
                     featured: true,
                     features: [
                       "Do 20 podstron",
@@ -265,7 +265,7 @@ export default function TworzenieStronWWW() {
                   },
                   {
                     name: "Sklep e-commerce",
-                    price: "2999-9999 zł",
+                    price: "Wycena indywidualna",
                     features: [
                       "Pełny katalog produktów",
                       "Integracja płatności",
@@ -295,7 +295,7 @@ export default function TworzenieStronWWW() {
                       </div>
                     )}
                     <h3 className="text-2xl font-bold text-gray-900 mb-2">{pkg.name}</h3>
-                    <div className="text-3xl font-bold text-blue-600 mb-6">{pkg.price}</div>
+                    <div className="text-xl font-bold text-blue-600 mb-6">{pkg.price}</div>
                     <ul className="space-y-3 mb-8">
                       {pkg.features.map((feature, j) => (
                         <li key={j} className="flex items-center gap-2">
@@ -367,7 +367,7 @@ export default function TworzenieStronWWW() {
                     Ile kosztuje strona internetowa?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-600">
-                    Cena zależy od zakresu. Wizytówka zaczynamy od 499 zł, strona firmowa od 1499 zł, a sklep od 2999 zł. Zawsze robimy bezpłatną wycenę po poznaniu Twoich wymagań.
+                    Cena zależy od zakresu: treści, liczby podstron, integracji i sposobu zarządzania. Przygotowujemy indywidualną ofertę po poznaniu Twoich wymagań.
                   </AccordionContent>
                 </AccordionItem>
 
@@ -412,7 +412,7 @@ export default function TworzenieStronWWW() {
                     Czy hosting i domena są w cenie?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-600">
-                    Hosting przez pierwszy rok jest w cenie. Domenę możesz kupić od nas lub przenieść swoją. Po roku hosting kosztuje ok. 120 zł rocznie.
+                    W ofercie określamy, czy wdrożenie obejmuje konfigurację hostingu i domeny oraz kto je opłaca. Utrzymanie jest kosztem cyklicznym zależnym od wybranego dostawcy i parametrów.
                   </AccordionContent>
                 </AccordionItem>
 
@@ -430,7 +430,7 @@ export default function TworzenieStronWWW() {
                     Czy będę musiał opłacać aktualizacje?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-600">
-                    Aktualizacje bezpieczeństwa i utrzymanie to dodatkowe koszty. Jednak są niewielkie (ok. 200-500 zł rocznie, w zależności od technologii i złożoności).
+                    Aktualizacje bezpieczeństwa i utrzymanie wyceniamy według technologii, funkcji oraz potrzebnego zakresu opieki.
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>

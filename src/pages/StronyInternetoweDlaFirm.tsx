@@ -20,7 +20,7 @@ export default function StronyInternetoweDlaFirm() {
     <>
       <SEOHead
         title="Strony internetowe dla firm | Profesjonalne strony WWW | FOTZ Studio"
-        description="Profesjonalne strony internetowe dla firm każdej branży. Responsywne, szybkie, zoptymalizowane. Od 499 zł netto. Sprawdź ofertę fotz.pl!"
+        description="Profesjonalne strony internetowe dla firm każdej branży. Responsywne, szybkie, zoptymalizowane. Wycena indywidualna. Sprawdź ofertę fotz.pl!"
         canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe-dla-firm"
         keywords="strony internetowe dla firm, strona internetowa dla firmy, tworzenie stron dla firm, profesjonalna strona www firma, strona firmowa, strona internetowa dla małej firmy"
       />
@@ -219,7 +219,7 @@ export default function StronyInternetoweDlaFirm() {
                 {[
                   {
                     name: "Wizytówka",
-                    price: "499 zł",
+                    price: "Wycena indywidualna",
                     features: [
                       "Do 5 podstron",
                       "Responsywny design",
@@ -231,7 +231,7 @@ export default function StronyInternetoweDlaFirm() {
                   },
                   {
                     name: "Strona firmowa",
-                    price: "1499-3999 zł",
+                    price: "Wycena indywidualna",
                     featured: true,
                     features: [
                       "Do 20 podstron",
@@ -246,7 +246,7 @@ export default function StronyInternetoweDlaFirm() {
                   },
                   {
                     name: "Sklep e-commerce",
-                    price: "2999-9999 zł",
+                    price: "Wycena indywidualna",
                     features: [
                       "Pełny katalog produktów",
                       "Integracja płatności",
@@ -276,7 +276,7 @@ export default function StronyInternetoweDlaFirm() {
                       </div>
                     )}
                     <h3 className="text-2xl font-bold text-gray-900 mb-2">{pkg.name}</h3>
-                    <div className="text-3xl font-bold text-green-600 mb-6">{pkg.price}</div>
+                    <div className="text-xl font-bold text-green-600 mb-6">{pkg.price}</div>
                     <ul className="space-y-3 mb-8">
                       {pkg.features.map((feature, j) => (
                         <li key={j} className="flex items-center gap-2">

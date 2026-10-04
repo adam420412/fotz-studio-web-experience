@@ -8,7 +8,7 @@ const require = createRequire(import.meta.url);
 
 // Exercise the real component's event handlers with hook state and external I/O
 // replaced in memory. These checks never connect to Supabase, email or the CRM.
-function harness({ availabilityError = false, insertError = false } = {}) {
+function harness({ availabilityError = false, insertError = false, notificationError = false, crmError = false } = {}) {
   const states = [], effects = [], dependencies = [];
   let cursor = 0;
   const calls = { insert: 0, notify: 0, crm: 0 };
@@ -43,12 +43,12 @@ function harness({ availabilityError = false, insertError = false } = {}) {
     '@/components/ui/input': { Input: 'input' },
     '@/components/ui/textarea': { Textarea: 'textarea' },
     '@/lib/utils': { cn: (...a) => a.filter(Boolean).join(' ') },
-    '@/integrations/supabase/client': { supabase: { from: () => query, functions: { invoke: async () => { calls.notify++; return { error: null }; } } } },
-    '@/hooks/useCRMWebhook': { sendBookingToCRM: () => { calls.crm++; } },
+    '@/integrations/supabase/client': { supabase: { from: () => query, functions: { invoke: async () => { calls.notify++; return { error: notificationError ? new Error("notify failed") : null }; } } } },
+    '@/hooks/useCRMWebhook': { sendBookingToCRM: async () => { calls.crm++; return {success: !crmError}; } },
   };
   const source = fs.readFileSync(new URL('../src/components/BookingCalendar.tsx', import.meta.url), 'utf8');
   const code = ts.transpileModule(source, { compilerOptions: { module: ts.ModuleKind.CommonJS, jsx: ts.JsxEmit.ReactJSX, esModuleInterop: true } }).outputText;
-  const context = { exports: {}, require: key => mocks[key] ?? require(key), console, Date };
+  const context = { exports: {}, require: key => mocks[key] ?? require(key), console, Date, AbortSignal };
   vm.runInNewContext(code, context);
   function render() { cursor = 0; return context.exports.BookingCalendar({}); }
   function all(tree, predicate, result = []) {
@@ -125,4 +125,14 @@ test('changing week clears the previously selected day', async () => {
   tree = h.render();
   assert.equal(h.all(tree, n => n.props?.['aria-pressed'] === true).length, 0);
   assert.doesNotMatch(h.text(tree), /Wybierz godzinę/);
+});
+
+
+test('saved booking survives notification and CRM failure without inviting a duplicate retry', async () => {
+ const h=harness({notificationError:true,crmError:true});
+ const tree=await h.submit();
+ assert.match(h.text(tree), /Zgłoszenie konsultacji zapisane/);
+ assert.match(h.text(tree), /Nie wysyłaj go ponownie/);
+ assert.doesNotMatch(h.text(tree), /Wystąpił błąd. Spróbuj ponownie/);
+ assert.deepEqual(h.calls,{insert:1,notify:1,crm:1});
 });

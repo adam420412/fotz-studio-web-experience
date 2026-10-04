@@ -84,7 +84,7 @@ export default function StronyInternetoweLubelskie() {
   const packages = [
     {
       title: "Wizytówka cyfrowa",
-      price: "Od 499 zł",
+      price: "Wycena indywidualna",
       period: "jednorazowo",
       desc: "Prosta strona dla freelancerów i małych biznesów",
       features: [
@@ -98,7 +98,7 @@ export default function StronyInternetoweLubelskie() {
     },
     {
       title: "Strona firmowa",
-      price: "2 500 - 5 000 zł",
+      price: "Wycena indywidualna",
       period: "jednorazowo",
       desc: "Profesjonalna strona dla firmy średniej",
       features: [
@@ -114,7 +114,7 @@ export default function StronyInternetoweLubelskie() {
     },
     {
       title: "Sklep e-commerce",
-      price: "5 000 - 15 000 zł",
+      price: "Wycena indywidualna",
       period: "jednorazowo",
       desc: "Pełna platforma sprzedażowa",
       features: [
@@ -172,7 +172,7 @@ export default function StronyInternetoweLubelskie() {
   const faqItems = [
     {
       question: "Ile kosztuje strona internetowa?",
-      answer: "Koszt zależy od skomplikowania. Wizytówka cyfrowa (3-5 stron): od 499 zł. Strona firmowa (10+ stron): 2 500-5 000 zł. Sklep online: 5 000-15 000 zł. Każdy projekt wyceniamy indywidualnie. Zapraszamy do bezpłatnej konsultacji."
+      answer: "Koszt ustalamy po poznaniu zakresu: liczby podstron, treści, integracji i sposobu zarządzania. W ofercie określamy cenę, etapy, poprawki i termin; utrzymanie oraz działania marketingowe omawiamy osobno."
     },
     {
       question: "Jak długo trwa stworzenie strony?",
@@ -188,11 +188,11 @@ export default function StronyInternetoweLubelskie() {
     },
     {
       question: "Jakie technologie używacie?",
-      answer: "WordPress (85% projektów), Webflow, React, Shopify. Dla firmy z Lublina najczęściej polecamy WordPress - łatwo się obsługuje, ekosystem wtyczek jest ogromny, cena hostingu od 50 zł/miesiąc."
+      answer: "Koszt ustalamy po poznaniu zakresu: liczby podstron, treści, integracji i sposobu zarządzania. W ofercie określamy cenę, etapy, poprawki i termin; utrzymanie oraz działania marketingowe omawiamy osobno."
     },
     {
       question: "Czy mogę mieć support po uruchomieniu?",
-      answer: "30 dni wsparcia wliczone w cenę. Po tym czasie oferujemy pakiety: podstawowy (50 zł/miesiąc - konsultacje), rozszerzony (200 zł/miesiąc - zmiany + backupy), premium (500 zł/miesiąc - pełna opieka)."
+      answer: "Koszt ustalamy po poznaniu zakresu: liczby podstron, treści, integracji i sposobu zarządzania. W ofercie określamy cenę, etapy, poprawki i termin; utrzymanie oraz działania marketingowe omawiamy osobno."
     },
     {
       question: "Czy otrzymam dostępy do strony?",
@@ -200,7 +200,7 @@ export default function StronyInternetoweLubelskie() {
     },
     {
       question: "Czy potrzebowałam mieć materiały przed uruchomieniem?",
-      answer: "Pomagamy zbierać materiały: tekst, zdjęcia, loga. Jeśli masz - świetnie. Jeśli nie - możemy pomóc w napisaniu tekstów (dodatkowo 500-1500 zł), zrobieniu zdjęć produktów lub znalezieniu gotowych illustracji."
+      answer: "Pomagamy zbierać materiały: tekst, zdjęcia, loga. Jeśli masz - świetnie. Jeśli nie - możemy pomóc w przygotowaniu tekstów w osobno wycenionym zakresie, zrobieniu zdjęć produktów lub znalezieniu gotowych illustracji."
     },
   ];
 
@@ -215,7 +215,7 @@ export default function StronyInternetoweLubelskie() {
     <>
       <SEOHead
         title="Tworzenie stron internetowych Lubelskie | Strony WWW Lublin"
-        description="Tworzenie stron internetowych w województwie lubelskim. Profesjonalne strony WWW dla firm z Lublina i regionu. Od 499 zł. Bezpłatna wycena!"
+        description="Tworzenie stron internetowych w województwie lubelskim. Profesjonalne strony WWW dla firm z Lublina i regionu. Wycena indywidualna. Bezpłatna wycena!"
         canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/lubelskie"
         keywords="strony internetowe lubelskie, tworzenie stron lubelskie, strony www lubelskie, projektowanie stron lublin"
       />

@@ -83,7 +83,7 @@ export default function TworzenieStronLodz() {
   const packages = [
     {
       title: "Wizytówka cyfrowa",
-      price: "Od 499 zł",
+      price: "Wycena indywidualna",
       period: "jednorazowo",
       desc: "Prosta strona dla freelancerów i małych biznesów",
       features: [
@@ -97,7 +97,7 @@ export default function TworzenieStronLodz() {
     },
     {
       title: "Strona firmowa",
-      price: "1 499 - 3 999 zł",
+      price: "Wycena indywidualna",
       period: "jednorazowo",
       desc: "Profesjonalna strona dla firmy średniej",
       features: [
@@ -113,7 +113,7 @@ export default function TworzenieStronLodz() {
     },
     {
       title: "Sklep e-commerce",
-      price: "2 999 - 9 999 zł",
+      price: "Wycena indywidualna",
       period: "jednorazowo",
       desc: "Pełna platforma sprzedażowa",
       features: [
@@ -165,7 +165,7 @@ export default function TworzenieStronLodz() {
   const faqItems = [
     {
       question: "Ile kosztuje strona internetowa w Łodzi?",
-      answer: "Wizytówka cyfrowa: od 499 zł. Strona firmowa: 1 500-4 000 zł. Sklep online: 3 000-10 000 zł. Łódź to miasto z rosnącym biznesem, ale niższe ceny niż Warszawa/Kraków. My pracujemy od najmniejszych do największych projektów — wyceniamy indywidualnie."
+      answer: "Koszt ustalamy po poznaniu zakresu: liczby podstron, treści, integracji i sposobu zarządzania. W ofercie określamy cenę, etapy, poprawki i termin; utrzymanie oraz działania marketingowe omawiamy osobno."
     },
     {
       question: "Ile czasu zajmuje stworzenie strony w Łodzi?",
@@ -208,7 +208,7 @@ export default function TworzenieStronLodz() {
     <>
       <SEOHead
         title="Tworzenie stron internetowych Łódź | Profesjonalne strony WWW"
-        description="Tworzymy profesjonalne strony internetowe w Łodzi. Nowoczesne strony dla firm z łódzkiego. Od 499 zł netto. Bezpłatna wycena!"
+        description="Tworzymy profesjonalne strony internetowe w Łodzi. Nowoczesne strony dla firm z łódzkiego. Wycena indywidualna. Bezpłatna wycena!"
         canonical="https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych/lodz"
         keywords="tworzenie stron internetowych łódź, strony internetowe łódź, tworzenie stron www łódź, strony www łódź, projektowanie stron internetowych łódź, tworzenie stron łódź, strona internetowa łódź, projektowanie stron łódź, agencja webdesign łódź, sklep internetowy łódź"
       />
@@ -239,7 +239,7 @@ export default function TworzenieStronLodz() {
               </h1>
               <p className="text-xl text-slate-300 mb-8 leading-relaxed">
                 Tworzenie stron internetowych Łódź — profesjonalne strony www i sklepy internetowe dla firm z Łodzi. Projektowanie stron internetowych Łódź z nowoczesnym designem, optymalizacją SEO i responsywnym kodem.
-                Strony www Łódź dla firm e-commerce, startup'ów i usług profesjonalnych. 680 tys. mieszkańców, rosnący hub tech — tworzenie stron www Łódź od 499 zł.
+                Strony www Łódź dla firm e-commerce, startup'ów i usług profesjonalnych. 680 tys. mieszkańców, rosnący hub tech — tworzenie stron www Łódź. Wycena indywidualna.
               </p>
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">

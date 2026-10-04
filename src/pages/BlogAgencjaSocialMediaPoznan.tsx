@@ -110,7 +110,7 @@ export default function BlogAgencjaSocialMediaPoznan() {
           <h2>Przygotuj się do pierwszej rozmowy</h2>
           <p>
             Wybierz przykłady treści, opisz odbiorców i wskaż jeden najważniejszy cel.
-            Przy planowaniu reklam możesz wykorzystać <a href="/downloads/checklista-kampanii-fotz-studio.pdf" download>bezpłatną checklistę kampanii (PDF)</a>.
+            Informacje o projekcie zbierzesz w <Link to="/generator-briefu">generatorze briefu</Link>.
           </p>
 
           <h2>FAQ</h2>

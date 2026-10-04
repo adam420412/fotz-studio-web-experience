@@ -82,7 +82,7 @@ export default function TworzenieStronWarszawa() {
   const packages = [
     {
       title: "Wizytówka cyfrowa",
-      price: "Od 499 zł",
+      price: "Wycena indywidualna",
       period: "jednorazowo",
       desc: "Prosta strona dla freelancerów i małych biznesów",
       features: [
@@ -96,7 +96,7 @@ export default function TworzenieStronWarszawa() {
     },
     {
       title: "Strona firmowa",
-      price: "1 499 - 3 999 zł",
+      price: "Wycena indywidualna",
       period: "jednorazowo",
       desc: "Profesjonalna strona dla firmy średniej",
       features: [
@@ -112,7 +112,7 @@ export default function TworzenieStronWarszawa() {
     },
     {
       title: "Sklep e-commerce",
-      price: "2 999 - 9 999 zł",
+      price: "Wycena indywidualna",
       period: "jednorazowo",
       desc: "Pełna platforma sprzedażowa",
       features: [
@@ -164,7 +164,7 @@ export default function TworzenieStronWarszawa() {
   const faqItems = [
     {
       question: "Ile kosztuje strona internetowa w Warszawie?",
-      answer: "Wizytówka cyfrowa: od 499 zł. Strona firmowa: 1 500-4 000 zł. Sklep online: 3 000-10 000 zł. Warszawskie firmy mają wyższe budżety, ale my pracujemy od najmniejszych do największych projektów. Wyceniamy indywidualnie - zapraszamy do bezpłatnej konsultacji."
+      answer: "Koszt ustalamy po poznaniu zakresu: liczby podstron, treści, integracji i sposobu zarządzania. W ofercie określamy cenę, etapy, poprawki i termin; utrzymanie oraz działania marketingowe omawiamy osobno."
     },
     {
       question: "Ile czasu zajmuje stworzenie strony?",
@@ -192,7 +192,7 @@ export default function TworzenieStronWarszawa() {
     },
     {
       question: "Czy mogę mieć support po uruchomieniu?",
-      answer: "30 dni wsparcia wliczone w cenę. Potem: pakiet basic (100 zł/miesiąc - konsultacje), standard (300 zł/miesiąc - zmiany + backupy), premium (500 zł/miesiąc - pełna opieka). Warszawskie firmy często biorą pakiet premium."
+      answer: "Koszt ustalamy po poznaniu zakresu: liczby podstron, treści, integracji i sposobu zarządzania. W ofercie określamy cenę, etapy, poprawki i termin; utrzymanie oraz działania marketingowe omawiamy osobno."
     },
   ];
 
@@ -207,7 +207,7 @@ export default function TworzenieStronWarszawa() {
     <>
       <SEOHead
         title="Tworzenie stron internetowych Warszawa | Profesjonalne strony WWW"
-        description="Tworzymy profesjonalne strony internetowe w Warszawie. Agencja z doświadczeniem, realizacje na czas. Od 499 zł netto. Bezpłatna wycena!"
+        description="Tworzymy profesjonalne strony internetowe w Warszawie. Agencja z doświadczeniem, realizacje na czas. Wycena indywidualna. Bezpłatna wycena!"
         canonical="https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych/warszawa"
         keywords="tworzenie stron internetowych warszawa, strony internetowe warszawa, tworzenie stron www warszawa, projektowanie stron internetowych warszawa, strony www warszawa, projektowanie stron www warszawa, tworzenie stron warszawa, strona internetowa warszawa, agencja webdesign warszawa, sklep internetowy warszawa"
       />
@@ -238,7 +238,7 @@ export default function TworzenieStronWarszawa() {
               </h1>
               <p className="text-xl text-slate-300 mb-8 leading-relaxed">
                 Tworzenie stron internetowych Warszawa — profesjonalne strony www i sklepy internetowe dla firm z Warszawy. Projektowanie stron internetowych Warszawa z nowoczesnym designem, optymalizacją SEO i responsywnym kodem.
-                Strony www Warszawa dla start-upów, korporacji i firm usługowych. 1,8 mln mieszkańców — tworzenie stron www Warszawa od 499 zł netto.
+                Strony www Warszawa dla start-upów, korporacji i firm usługowych. 1,8 mln mieszkańców — tworzenie stron www Warszawa. Wycena indywidualna.
               </p>
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">

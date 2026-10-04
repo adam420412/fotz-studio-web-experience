@@ -27,8 +27,8 @@ const challenges = [
 
 const results = [
   { metric: "Architektura", value: "Nowa", description: "Przejrzysta struktura strony" },
-  { metric: "Zaangażowanie", value: "+45%", description: "Wzrost uczestnictwa w wydarzeniach" },
-  { metric: "Zapytania", value: "+60%", description: "Więcej wniosków o członkostwo" },
+  { metric: "Prezentacja", value: "WWW", description: "Informacje o organizacji i jej działaniach" },
+  { metric: "Materiały", value: "Foto/video", description: "Treści wizualne do komunikacji organizacji" },
 ];
 
 const CaseStudyRPPG = () => {
@@ -38,7 +38,7 @@ const CaseStudyRPPG = () => {
         title="RPPG - Rada Polskich Przedsiębiorców Globalnych - Case Study"
         description="Case study RPPG Rada Polskich Przedsiębiorców Globalnych: strona internetowa dla organizacji biznesowej. Design i UX. Fotz Studio."
         canonical="https://www.fotz-studio.pl/realizacje/rppg"
-        keywords="case study gry, marketing dla gier realizacja"
+        keywords="RPPG, strona organizacji, Rada Polskich Przedsiębiorców Globalnych"
       />
       <BreadcrumbSchema items={[
         { name: "Strona główna", url: "https://www.fotz-studio.pl" },

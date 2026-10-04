@@ -105,7 +105,7 @@ export function LocalBusinessSchema({
   telephone = "+48790814814",
   email = "adam@fotz.pl",
   priceRange = "$$",
-  openingHours = ["Mo-Fr 09:00-17:00"],
+  openingHours = [],
 }: LocalBusinessSchemaProps) {
   const schema = {
     "@context": "https://schema.org",
@@ -137,11 +137,6 @@ export function LocalBusinessSchema({
       addressRegion: "Wielkopolskie",
       addressCountry: "PL",
     },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: 52.4084,
-      longitude: 16.9342,
-    },
     openingHoursSpecification: openingHours.map((hours) => {
       const spaceIdx = hours.lastIndexOf(" ");
       const days = hours.substring(0, spaceIdx);
@@ -162,13 +157,6 @@ export function LocalBusinessSchema({
       "https://www.linkedin.com/company/fotz-studio/",
       "https://www.youtube.com/@Studio-Fotz",
     ],
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: 5.0,
-      reviewCount: 47,
-      bestRating: 5,
-      worstRating: 1,
-    },
   };
 
   return (

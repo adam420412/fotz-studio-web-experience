@@ -3,10 +3,10 @@ import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { 
-  MessageSquare, 
-  TrendingUp, 
-  BarChart, 
+import {
+  MessageSquare,
+  TrendingUp,
+  BarChart,
   Target,
   Zap,
   Phone,
@@ -58,48 +58,48 @@ import stageplanImg from "@/assets/portfolio/stageplan.jpg";
 
 const SocialMedia = () => {
   const problems = [
-    { 
-      icon: Eye, 
-      title: "Brak zaangażowania", 
-      desc: "Posty nie zbierają polubień i komentarzy. Twoja społeczność jest nieaktywna, a zasięgi spadają." 
+    {
+      icon: Eye,
+      title: "Brak zaangażowania",
+      desc: "Posty nie zbierają polubień i komentarzy. Twoja społeczność jest nieaktywna, a zasięgi spadają."
     },
-    { 
-      icon: TrendingUp, 
-      title: "Konkurencja Cię wyprzedza", 
-      desc: "Inne firmy z branży mają silniejszą obecność w social mediach i przyciągają Twoich klientów." 
+    {
+      icon: TrendingUp,
+      title: "Konkurencja Cię wyprzedza",
+      desc: "Inne firmy z branży mają silniejszą obecność w social mediach i przyciągają Twoich klientów."
     },
-    { 
-      icon: Target, 
-      title: "Brak strategii", 
-      desc: "Publikujesz bez planu, losowo. Nie wiesz, co działa, a co jest stratą czasu i budżetu." 
+    {
+      icon: Target,
+      title: "Brak strategii",
+      desc: "Publikujesz bez planu, losowo. Nie wiesz, co działa, a co jest stratą czasu i budżetu."
     },
-    { 
-      icon: Calendar, 
-      title: "Brak czasu na social media", 
-      desc: "Prowadzisz firmę, nie masz czasu na codzienne publikacje, stories i odpowiadanie na komentarze." 
+    {
+      icon: Calendar,
+      title: "Brak czasu na social media",
+      desc: "Prowadzisz firmę, nie masz czasu na codzienne publikacje, stories i odpowiadanie na komentarze."
     },
   ];
 
   const whatWeDo = [
-    { 
-      icon: PenTool, 
-      title: "Strategia i planowanie", 
-      desc: "Tworzymy spersonalizowaną strategię dopasowaną do Twojej branży, celów i grupy docelowej. Definiujemy ton komunikacji i harmonogram." 
+    {
+      icon: PenTool,
+      title: "Strategia i planowanie",
+      desc: "Tworzymy spersonalizowaną strategię dopasowaną do Twojej branży, celów i grupy docelowej. Definiujemy ton komunikacji i harmonogram."
     },
-    { 
-      icon: Camera, 
-      title: "Tworzenie contentu", 
-      desc: "Projektujemy grafiki, nagrywamy video, piszemy angażujące copy. Profesjonalny content, który wyróżnia się w feedzie." 
+    {
+      icon: Camera,
+      title: "Tworzenie contentu",
+      desc: "Projektujemy grafiki, nagrywamy video, piszemy angażujące copy. Profesjonalny content, który wyróżnia się w feedzie."
     },
-    { 
-      icon: Megaphone, 
-      title: "Kampanie reklamowe", 
-      desc: "Facebook Ads, Instagram Ads, LinkedIn Ads. Precyzyjne targetowanie, optymalizacja budżetu, mierzalne wyniki." 
+    {
+      icon: Megaphone,
+      title: "Kampanie reklamowe",
+      desc: "Facebook Ads, Instagram Ads, LinkedIn Ads. Precyzyjne targetowanie, optymalizacja budżetu, mierzalne wyniki."
     },
-    { 
-      icon: LineChart, 
-      title: "Raportowanie i analiza", 
-      desc: "Miesięczne raporty z wynikami: zasięgi, zaangażowanie, konwersje. Dane, które pomagają podejmować decyzje." 
+    {
+      icon: LineChart,
+      title: "Raportowanie i analiza",
+      desc: "Miesięczne raporty z wynikami: zasięgi, zaangażowanie, konwersje. Dane, które pomagają podejmować decyzje."
     },
   ];
 
@@ -111,23 +111,23 @@ const SocialMedia = () => {
   ];
 
   const pricing = [
-    { 
-      title: "Pakiet Start", 
-      desc: "Dla firm rozpoczynających przygodę z social mediami.", 
-      price: "2 000 - 3 500 zł/mies.", 
-      features: ["1-2 platformy", "12 postów/mies.", "Grafiki i copy", "Moderacja komentarzy", "Raport miesięczny"] 
+    {
+      title: "Pakiet Start",
+      desc: "Dla firm rozpoczynających przygodę z social mediami.",
+      price: "Wycena indywidualna",
+      features: ["1-2 platformy", "12 postów/mies.", "Grafiki i copy", "Moderacja komentarzy", "Raport miesięczny"]
     },
-    { 
-      title: "Pakiet Biznes", 
-      desc: "Kompleksowa obsługa dla rozwijających się firm.", 
-      price: "3 500 - 6 000 zł/mies.", 
-      features: ["2-3 platformy", "20 postów/mies.", "Stories i Reels", "Kampanie reklamowe", "Dedykowany opiekun"] 
+    {
+      title: "Pakiet Biznes",
+      desc: "Kompleksowa obsługa dla rozwijających się firm.",
+      price: "Wycena indywidualna",
+      features: ["2-3 platformy", "20 postów/mies.", "Stories i Reels", "Kampanie reklamowe", "Dedykowany opiekun"]
     },
-    { 
-      title: "Pakiet Premium", 
-      desc: "Pełna obsługa z produkcją video i strategią influencer.", 
-      price: "6 000 - 15 000 zł/mies.", 
-      features: ["Wszystkie platformy", "Nieograniczone posty", "Produkcja video", "Influencer marketing", "Strategia 360°"] 
+    {
+      title: "Pakiet Premium",
+      desc: "Pełna obsługa z produkcją video i strategią influencer.",
+      price: "Wycena indywidualna",
+      features: ["Wszystkie platformy", "Nieograniczone posty", "Produkcja video", "Influencer marketing", "Strategia 360°"]
     },
   ];
 
@@ -158,7 +158,7 @@ const SocialMedia = () => {
     },
     {
       question: "Jak wygląda wycena usług agencji social media?",
-      answer: "Wycena zależy od zakresu usług: liczby platform, częstotliwości publikacji, czy prowadzonych kampanii reklamowych. Dla małych i średnich firm proponujemy pakiety od 2000 zł/mies."
+      answer: "Wycenę ustalamy indywidualnie według liczby platform, częstotliwości publikacji, produkcji materiałów i obsługi reklam. Budżet reklamowy rozliczamy osobno."
     },
     {
       question: "Kreatywny content czy sprzedażowy – co wybrać?",
@@ -276,21 +276,21 @@ const SocialMedia = () => {
         canonical="https://www.fotz-studio.pl/social-media/obsluga"
         keywords="obsługa social media, prowadzenie social media, prowadzenie fanpage, obsługa mediów społecznościowych, agencja social media, zarządzanie social media, prowadzenie facebooka, prowadzenie instagrama, community management, cennik social media, social media marketing, agencja reklamowa social media"
       />
-      
-      <ServiceSchema 
+
+      <ServiceSchema
         name="Agencja Social Media - Marketing w Mediach Społecznościowych"
         description="Profesjonalne prowadzenie social mediów: strategia, tworzenie contentu, kampanie reklamowe Facebook Ads i Instagram Ads."
         provider="Fotz Studio"
         areaServed="Polska"
       />
-      
+
       <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://www.fotz-studio.pl" },
           { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
           { name: "Social Media", url: "https://www.fotz-studio.pl/social-media/obsluga" },
         ]}/>
-      
-      <FAQSchema 
+
+      <FAQSchema
         items={faqItems.map(item => ({ question: item.question, answer: item.answer }))}
       />
 
@@ -305,7 +305,7 @@ const SocialMedia = () => {
             <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-primary/30 rounded-full blur-[150px]" />
             <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-secondary/20 rounded-full blur-[120px]" />
           </div>
-          
+
           <div className="container mx-auto px-4 relative z-10">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -313,7 +313,7 @@ const SocialMedia = () => {
               transition={{ duration: 0.8 }}
               className="text-center max-w-5xl mx-auto"
             >
-              <motion.span 
+              <motion.span
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.2 }}
@@ -322,13 +322,13 @@ const SocialMedia = () => {
                 <Sparkles className="w-4 h-4" />
                 Agencja Social Media
               </motion.span>
-              
+
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-heading font-bold mb-6 sm:mb-8 leading-tight px-2 sm:px-0">
                 <TextReveal>
                   Marketing w <span className="text-gradient">Social Mediach</span> z Agencją
                 </TextReveal>
               </h1>
-              
+
               <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground mb-8 sm:mb-10 max-w-3xl mx-auto leading-relaxed px-2 sm:px-0">
                 Obsługa social media — prowadzenie social media, prowadzenie fanpage i kampanie reklamowe dla firm. <span className="text-foreground font-medium">Agencja social media: strategia, kreatywny content, obsługa mediów społecznościowych.</span> Zarządzanie social media, które generuje realne wyniki.
               </p>
@@ -410,17 +410,17 @@ const SocialMedia = () => {
                     Co to jest <span className="text-gradient">agencja social media?</span>
                   </h2>
                   <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                    <strong className="text-foreground">Agencja social media to zespół specjalistów, którzy kompleksowo zajmują się marketingiem w social mediach dla firm.</strong> 
-                    Oferujemy usługi od opracowania strategii, przez prowadzenie profili, tworzenie angażujących treści, 
+                    <strong className="text-foreground">Agencja social media to zespół specjalistów, którzy kompleksowo zajmują się marketingiem w social mediach dla firm.</strong>
+                    Oferujemy usługi od opracowania strategii, przez prowadzenie profili, tworzenie angażujących treści,
                     aż po reklamę i analizę wyników.
                   </p>
                   <p className="text-muted-foreground leading-relaxed">
-                    Robimy social media z pasją, dostosowując działania do specyfiki Twojej marki i branży. 
+                    Robimy social media z pasją, dostosowując działania do specyfiki Twojej marki i branży.
                     Profesjonalizm i kreatywność to nasze atuty.
                   </p>
                 </div>
               </FadeInView>
-              
+
               <FadeInView delay={0.2}>
                 <div className="grid grid-cols-2 gap-4">
                   {platforms.map((platform, index) => (
@@ -531,8 +531,8 @@ const SocialMedia = () => {
                   <Link to={study.link} className="group block h-full">
                     <div className="rounded-2xl bg-card border border-border/50 hover:border-primary/30 transition-all overflow-hidden h-full flex flex-col">
                       <div className="aspect-[16/10] overflow-hidden relative">
-                        <img loading="lazy" 
-                          src={study.image} 
+                        <img loading="lazy"
+                          src={study.image}
                           alt={study.title}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                         />
@@ -557,15 +557,15 @@ const SocialMedia = () => {
             <FadeInView>
               <h3 className="text-xl font-semibold text-center mb-8">Więcej realizacji</h3>
             </FadeInView>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
               {moreCaseStudies.map((study, index) => (
                 <FadeInView key={index} delay={index * 0.1}>
                   <Link to={study.link} className="group block">
                     <div className="rounded-xl bg-card border border-border/50 hover:border-primary/30 transition-all overflow-hidden">
                       <div className="aspect-video overflow-hidden">
-                        <img loading="lazy" 
-                          src={study.image} 
+                        <img loading="lazy"
+                          src={study.image}
                           alt={study.title}
                           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                         />
@@ -762,8 +762,8 @@ const SocialMedia = () => {
             <div className="max-w-3xl mx-auto">
               <Accordion type="single" collapsible className="space-y-3 sm:space-y-4">
                 {faqItems.map((item, index) => (
-                  <AccordionItem 
-                    key={index} 
+                  <AccordionItem
+                    key={index}
                     value={`item-${index}`}
                     className="bg-background rounded-lg sm:rounded-xl border border-border/50 px-4 sm:px-6 data-[state=open]:border-primary/30"
                   >
@@ -849,7 +849,7 @@ const SocialMedia = () => {
                       <h3 className="text-base sm:text-lg md:text-xl font-heading font-bold">Strategia treści</h3>
                     </div>
                     <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-4 sm:mb-6">
-                      Skuteczne social media to nie random posting. To <strong className="text-foreground">spójna strategia</strong> – 
+                      Skuteczne social media to nie random posting. To <strong className="text-foreground">spójna strategia</strong> –
                       kalendarz publikacji, content pillars i dopasowanie do algorytmów każdej platformy.
                     </p>
                     <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm text-muted-foreground">
@@ -869,7 +869,7 @@ const SocialMedia = () => {
                       <h3 className="text-base sm:text-lg md:text-xl font-heading font-bold">Reklamy Meta Ads</h3>
                     </div>
                     <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-4 sm:mb-6">
-                      Facebook i Instagram Ads to potężne narzędzia targetowania. 
+                      Facebook i Instagram Ads to potężne narzędzia targetowania.
                       <strong className="text-foreground"> Lookalike audiences</strong>, retargeting, testy A/B – maksymalizujemy ROAS.
                     </p>
                     <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm text-muted-foreground">
@@ -889,7 +889,7 @@ const SocialMedia = () => {
                       <h3 className="text-base sm:text-lg md:text-xl font-heading font-bold">Content foto/video</h3>
                     </div>
                     <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-4 sm:mb-6">
-                      Reelsy, stories, karuzele – tworzymy <strong className="text-foreground">angażujący content</strong> 
+                      Reelsy, stories, karuzele – tworzymy <strong className="text-foreground">angażujący content</strong>
                       dopasowany do trendów. Własne studio, profesjonalny sprzęt, szybka realizacja.
                     </p>
                     <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm text-muted-foreground">
@@ -909,7 +909,7 @@ const SocialMedia = () => {
                       <h3 className="text-base sm:text-lg md:text-xl font-heading font-bold">Analityka i raportowanie</h3>
                     </div>
                     <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-4 sm:mb-6">
-                      Dane to podstawa decyzji. Śledzimy <strong className="text-foreground">KPI</strong>, 
+                      Dane to podstawa decyzji. Śledzimy <strong className="text-foreground">KPI</strong>,
                       analizujemy engagement rate, zasięgi i konwersje. Comiesięczne raporty z wnioskami.
                     </p>
                     <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm text-muted-foreground">
@@ -941,7 +941,7 @@ const SocialMedia = () => {
           <div className="absolute inset-0 opacity-20">
             <div className="absolute top-1/4 right-1/4 w-64 sm:w-96 h-64 sm:h-96 bg-primary/30 rounded-full blur-[100px] sm:blur-[150px]" />
           </div>
-          
+
           <div className="container mx-auto px-4 relative z-10">
             <FadeInView>
               <div className="max-w-4xl mx-auto text-center">
@@ -951,7 +951,7 @@ const SocialMedia = () => {
                 <p className="text-sm sm:text-base md:text-lg text-muted-foreground mb-8 sm:mb-10 max-w-2xl mx-auto px-4">
                   Porozmawiajmy o Twojej strategii. Bezpłatna konsultacja, konkretna wycena, jasny plan działania.
                 </p>
-                
+
                 <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4 sm:px-0">
                   <Button asChild size="lg" className="group text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 w-full sm:w-auto">
                     <Link to="/kontakt">
@@ -1019,7 +1019,7 @@ const SocialMedia = () => {
                   Social media cennik i cennik prowadzenia social media — przejrzyste ceny
                 </h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  Cennik prowadzenia social media w Fotz Studio: pakiet podstawowy (1–2 platformy, 12 postów) od 1 200 zł/mies., pakiet growth (3 platformy, 20 postów, Facebook Ads) od 2 500 zł/mies., pakiet pro (pełna obsługa, wideo, kampanie) od 4 500 zł/mies. Prowadzenie i obsługa social media w każdym pakiecie obejmuje: strategię, content plan, moderację i raportowanie. Ramach obsługi social media możemy też współpracować projektowo — jednorazowy audyt, sesja zdjęciowa lub produkcja wideo.
+                  Koszt prowadzenia social media ustalamy indywidualnie. W ofercie zapisujemy platformy, liczbę postów i filmów, moderację, raportowanie oraz zakres reklam. Możemy też przygotować pojedynczą sesję, produkcję video lub audyt. Budżet reklamowy jest oddzielny od wynagrodzenia za obsługę.
                 </p>
                 <h3 className="text-xl font-heading font-semibold mb-3">
                   Prowadzenie social media twojej firmy — zacznij współpracę

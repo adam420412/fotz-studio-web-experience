@@ -12,7 +12,6 @@ import { cn } from "@/lib/utils";
 import { z } from "zod";
 import { Link } from "react-router-dom";
 import { BookingCalendar } from "@/components/BookingCalendar";
-import { sendLeadToCRM } from "@/hooks/useCRMWebhook";
 import { submitWeb3Form } from "@/lib/web3forms";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { BreadcrumbSchema, LocalBusinessSchema, OrganizationSchema} from "@/components/seo/StructuredData";
@@ -45,19 +44,19 @@ const contactInfo = [
     icon: Phone,
     title: "Telefon",
     content: "+48 790 814 814",
-    subtitle: "Pon-Pt 9:00-17:00",
+    subtitle: "Ustalmy dogodny termin",
   },
   {
     icon: Mail,
     title: "Email",
     content: "adam@fotz.pl",
-    subtitle: "Odpowiadamy w 24h",
+    subtitle: "Opisz swój projekt",
   },
   {
     icon: Clock,
-    title: "Godziny",
-    content: "Pon-Pt 9:00-17:00",
-    subtitle: "Weekendy zamknięte",
+    title: "Spotkanie",
+    content: "Po ustaleniu terminu",
+    subtitle: "W biurze lub online",
   },
 ];
 
@@ -70,6 +69,7 @@ export default function Kontakt() {
     email: "",
     phone: "",
     company: "",
+    discovery: "",
     subject: "",
     message: "",
   });
@@ -116,18 +116,9 @@ export default function Kontakt() {
         email: formData.email,
         phone: formData.phone || "Nie podano",
         company: formData.company || "Nie podano",
+        discovery: formData.discovery,
         topic: formData.subject,
         message: formData.message,
-      });
-
-      // Send to CRM webhook (fire and forget)
-      sendLeadToCRM({
-        name: formData.name,
-        email: formData.email,
-        phone: formData.phone || undefined,
-        company: formData.company || undefined,
-        source: "website",
-        notes: `Formularz: Kontakt (fotz.pl/kontakt)\nTemat: ${formData.subject}\n\n${formData.message}`,
       });
 
       setIsSubmitted(true);
@@ -173,14 +164,6 @@ export default function Kontakt() {
         phone: reelData.phone || "Nie podano",
         company: reelData.company || "Nie podano",
         message: `Zapytanie o darmową rolkę.\nBranża: ${reelData.business_type}`,
-      });
-      sendLeadToCRM({
-        name: reelData.name,
-        email: reelData.email,
-        phone: reelData.phone || undefined,
-        company: reelData.company || undefined,
-        source: "website",
-        notes: `Formularz: Darmowa rolka (fotz.pl/kontakt)\nBranża: ${reelData.business_type}`,
       });
       setReelSubmitted(true);
       toast({
@@ -364,6 +347,11 @@ export default function Kontakt() {
                     {formErrors.subject && <p className="text-xs text-red-500 mt-1">{formErrors.subject}</p>}
                   </div>
 
+                  <div><label htmlFor="contact-discovery" className="block text-sm font-medium mb-2">Skąd o nas wiesz? <span className="text-muted-foreground">(opcjonalnie)</span></label>
+                    <select id="contact-discovery" value={formData.discovery} onChange={e=>setFormData({...formData,discovery:e.target.value})} className="w-full rounded-md border border-input bg-background p-3">
+                      <option value="">Wybierz, jeśli chcesz</option>{['Google','ChatGPT lub inny asystent AI','Social media','Polecenie','Inne źródło'].map(value=><option key={value} value={value}>{value}</option>)}
+                    </select>
+                  </div>
                   <div>
                     <label htmlFor="contact-message" className="block text-xs sm:text-sm font-medium mb-1.5 sm:mb-2">
                       Wiadomość *
