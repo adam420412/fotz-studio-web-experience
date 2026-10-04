@@ -11,7 +11,7 @@ const client = createClient(env.VITE_SUPABASE_URL, env.VITE_SUPABASE_PUBLISHABLE
 const articles = [];
 for (let offset = 0; ; offset += 500) {
   const { data, error } = await client.from('blog_articles')
-    .select('slug,title,excerpt,meta_description,hero_image_url,published_at,created_at,updated_at')
+    .select('slug,title,excerpt,meta_description,hero_image_url,published_at,created_at,updated_at,content_html,content_markdown,cluster_slug,keywords,json_ld,faq_json_ld')
     .eq('is_published', true).order('slug').range(offset, offset + 499);
   if (error) throw new Error(error.message);
   articles.push(...data);
@@ -23,5 +23,8 @@ for (const article of articles) {
   if (!article.title?.trim() || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(article.slug) || slugs.has(article.slug)) throw new Error(`Invalid or duplicate published slug: ${article.slug}`);
   slugs.add(article.slug);
 }
-fs.writeFileSync(path.join(root, 'src/data/blog-seo.json'), JSON.stringify({ syncedAt: new Date().toISOString(), articles }, null, 2) + '\n');
-console.log(`Saved SEO metadata for ${articles.length} published CMS articles; no private fields or content bodies.`);
+const syncedAt = new Date().toISOString();
+fs.writeFileSync(path.join(root, 'src/data/blog-content.json'), JSON.stringify({ syncedAt, articles }, null, 2) + '\n');
+const metadata = articles.map(({content_html, content_markdown, cluster_slug, keywords, json_ld, faq_json_ld, ...meta}) => meta);
+fs.writeFileSync(path.join(root, 'src/data/blog-seo.json'), JSON.stringify({ syncedAt, articles: metadata }, null, 2) + '\n');
+console.log(`Saved SEO metadata for ${articles.length} published CMS articles; public content snapshot for offline rendering; no private records.`);

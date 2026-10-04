@@ -8,33 +8,33 @@ export function Services() {
   const services = [
     {
       num: "01",
-      title: t("Kampanie reklamowe", "Advertising campaigns"),
+      title: t("Strony internetowe i SEO", "Websites and SEO"),
       description: t(
-        "Łączymy pomysł, kreację i emisję reklam. Dobieramy kanały do celu kampanii, przygotowujemy materiały i sprawdzamy, które działania przynoszą wartościowe zapytania.",
-        "As a marketing agency, we offer a comprehensive range of services, including creating and executing advertising campaigns tailored to your needs."
+        "Projektujemy strony firmowe, landing pages i sklepy. Porządkujemy treści, formularze i techniczne SEO, żeby użytkownik mógł łatwo znaleźć ofertę i wykonać kolejny krok.",
+        "We design company websites, landing pages and shops. We improve content, forms and technical SEO so visitors can find your offer and take the next step."
       ),
-      features: ["Meta Ads", "Google Ads", "Remarketing", t("Optymalizacja ROI", "ROI optimization")],
-      href: "/kampanie-reklamowe",
+      features: ["WWW", "E-commerce", "SEO", "UX"],
+      href: "/uslugi/strony-internetowe",
     },
     {
       num: "02",
       title: t("Social Media Marketing", "Social Media Marketing"),
       description: t(
         "Od strategii i planu publikacji po zdjęcia, rolki i reklamy. Tworzymy spójną komunikację marki na Facebooku, Instagramie i TikToku, z zakresem dopasowanym do Twojej firmy.",
-        "Effective social media presence is the key to building brand awareness and engaging customers."
+        "From strategy and publishing plans to photography, reels and ads: we create consistent communication for Facebook, Instagram and TikTok."
       ),
       features: ["Facebook Ads", "Instagram Ads", "TikTok Ads", "Content marketing"],
       href: "/agencja-social-media",
     },
     {
       num: "03",
-      title: t("Google Ads & Performance", "Google Ads & Performance"),
+      title: t("Video i fotografia", "Video and photography"),
       description: t(
-        "Docieraj do osób, które szukają Twoich produktów i usług. Przygotowujemy kampanie Google Ads, pomiar konwersji oraz plan testów, a decyzje o budżecie opieramy na wynikach.",
-        "Reach people searching for your products and services. We prepare Google Ads campaigns, conversion measurement and tests, and use results to inform budget decisions."
+        "Produkujemy filmy, zdjęcia i krótkie formaty do social media. Ustalamy scenariusz, nagrania, montaż i wersje materiałów dopasowane do miejsca publikacji.",
+        "We produce films, photography and short social formats. We agree the script, filming, editing and versions for each publishing channel."
       ),
-      features: ["Search Ads", "Display Ads", "YouTube Ads", "Performance Max"],
-      href: "/performance-marketing/google-ads",
+      features: ["Filmy", "Reels", "Fotografia", "Montaż"],
+      href: "/uslugi/produkcja-video",
     },
   ];
 
@@ -43,7 +43,7 @@ export function Services() {
       className="relative overflow-hidden"
       style={{ background: "hsl(var(--background))" }}
     >
-      <div className="max-w-[1440px] mx-auto px-6 md:px-12 py-24 md:py-32">
+      <div className="max-w-[1440px] mx-auto px-6 md:px-12 py-14 md:py-20">
         {/* Header */}
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-8 mb-16 lg:mb-20">
           <div>
@@ -62,7 +62,7 @@ export function Services() {
               {t("Nasze", "Our")}
               <br />
               <span className="dv-text-grad italic">
-                {t("usługi reklamowe", "advertising services")}
+                {t("obszary pracy", "areas of work")}
               </span>
             </h2>
           </div>

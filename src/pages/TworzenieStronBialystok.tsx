@@ -32,7 +32,7 @@ export default function TworzenieStronBialystok() {
     <>
       <SEOHead
         title="Tworzenie stron internetowych Białystok | Fotz Studio"
-        description="Tworzenie stron internetowych Białystok — profesjonalne strony dla firm z Podlasia. Od 499 zł netto. Bezpłatna wycena!"
+        description="Tworzenie stron internetowych Białystok — profesjonalne strony dla firm z Podlasia. Wycena indywidualna. Bezpłatna wycena!"
         canonical="https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych/bialystok"
         keywords="tworzenie stron internetowych białystok, strony internetowe białystok, tworzenie stron www białystok, projektowanie stron internetowych białystok, projektowanie stron www białystok, strony www białystok, tworzenie stron białystok, strona internetowa białystok, agencja webdesign białystok, sklep internetowy białystok"
       />
@@ -60,7 +60,7 @@ export default function TworzenieStronBialystok() {
               Tworzenie stron internetowych Białystok — profesjonalne strony www i sklepy internetowe dla firm z Podlasia. Projektowanie stron www Białystok z nowoczesnym designem i SEO.
             </p>
             <p className="text-lg text-gray-600 mb-8">
-              Od 499 zł netto za stronę. Kompleksowe wsparcie: design, SEO, hosting, wsparcie techniczne.
+              Wycena indywidualna za stronę. Kompleksowe wsparcie: design, SEO, hosting, wsparcie techniczne.
             </p>
 
             {/* Stats */}
@@ -163,19 +163,19 @@ export default function TworzenieStronBialystok() {
               {[
                 {
                   name: "Starter",
-                  price: "499 zł",
+                  price: "Wycena indywidualna",
                   features: ["Do 5 podstron", "Responsywny design", "CMS WordPress", "Basic SEO", "SSL certyfikat", "Hosting 1 rok"],
                   highlight: false,
                 },
                 {
                   name: "Professional",
-                  price: "999 zł",
+                  price: "Wycena indywidualna",
                   features: ["Do 10 podstron", "Custom design", "CMS + e-mail", "SEO optymalizacja", "Integracja narzędzi", "Blog", "2 lat hosting"],
                   highlight: true,
                 },
                 {
                   name: "Enterprise",
-                  price: "1999+ zł",
+                  price: "Wycena indywidualna",
                   features: ["Nieograniczone podstrony", "Custom CMS", "E-commerce", "Zaawansowane SEO", "Integracja API", "Wsparcie 12 mies", "Dedykowany account manager"],
                   highlight: false,
                 },
@@ -192,7 +192,7 @@ export default function TworzenieStronBialystok() {
                       </div>
                     )}
                     <h3 className="text-xl font-bold text-gray-900 mb-2">{pkg.name}</h3>
-                    <div className="text-3xl font-bold text-green-600 mb-6">{pkg.price}</div>
+                    <div className="text-xl font-bold text-green-600 mb-6">{pkg.price}</div>
                     <ul className="space-y-3">
                       {pkg.features.map((feature, fidx) => (
                         <li key={fidx} className="flex gap-3">
@@ -291,7 +291,7 @@ export default function TworzenieStronBialystok() {
               {[
                 {
                   q: "Ile kosztuje strona internetowa?",
-                  a: "Od 499 zł za stronę wizytówkę, do 1999+ zł za stronę z e-commerce. Cena zależy od złożoności, liczbą podstron, funkcjonalności.",
+                  a: "Cena zależy od liczby podstron, treści i funkcji. Zakres, koszt oraz harmonogram zapisujemy w indywidualnej ofercie.",
                 },
                 {
                   q: "Ile czasu trwa wdrożenie?",
@@ -311,7 +311,7 @@ export default function TworzenieStronBialystok() {
                 },
                 {
                   q: "Co jeśli chcę zmienić stronę po wdrożeniu?",
-                  a: "Możesz edytować sam (CMS) lub porosić nas o zmiany. Oferujemy wsparcie techniczne (od 99 zł/mies).",
+                  a: "Możesz edytować sam (CMS) lub poprosić nas o zmiany. Zakres i koszt wsparcia technicznego ustalamy w ofercie.",
                 },
               ].map((item, idx) => (
                 <AccordionItem key={idx} value={`item-${idx}`}>

@@ -30,9 +30,9 @@ const StronyInternetoweLodz = () => {
   ];
 
   const pricing = [
-    { title: "Landing Page", desc: "Strona wizytówkowa prezentująca firmę", price: "od 2 000 zł", features: ["Do 5 podstron", "Responsywny design", "Podstawowe SEO", "Formularz kontaktowy", "Certyfikat SSL"] },
-    { title: "Strona Firmowa", desc: "Rozbudowana strona z dodatkowymi funkcjami", price: "od 5 000 zł", popular: true, features: ["Do 15 podstron", "Zaawansowane SEO", "Blog firmowy", "Integracja social media", "System CMS", "Wsparcie techniczne"] },
-    { title: "Sklep E-commerce", desc: "Platforma sprzedażowa z integracjami", price: "od 8 000 zł", features: ["Nieograniczona liczba produktów", "Panel administracyjny", "Integracje płatności", "Optymalizacja konwersji", "Narzędzia marketingowe"] },
+    { title: "Landing Page", desc: "Strona wizytówkowa prezentująca firmę", price: "Wycena indywidualna", features: ["Do 5 podstron", "Responsywny design", "Podstawowe SEO", "Formularz kontaktowy", "Certyfikat SSL"] },
+    { title: "Strona Firmowa", desc: "Rozbudowana strona z dodatkowymi funkcjami", price: "Wycena indywidualna", popular: true, features: ["Do 15 podstron", "Zaawansowane SEO", "Blog firmowy", "Integracja social media", "System CMS", "Wsparcie techniczne"] },
+    { title: "Sklep E-commerce", desc: "Platforma sprzedażowa z integracjami", price: "Wycena indywidualna", features: ["Nieograniczona liczba produktów", "Panel administracyjny", "Integracje płatności", "Optymalizacja konwersji", "Narzędzia marketingowe"] },
   ];
 
   const processSteps = [
@@ -51,17 +51,17 @@ const StronyInternetoweLodz = () => {
   const faqItems = [
     { question: "Czym się różni tworzenie stron w Łodzi od innych miast?", answer: "Tworzenie stron w Łodzi uwzględnia lokalne potrzeby firm z regionu: optymalizację pod klientów z okolicy, integrację z mapami i kontaktami oraz projekt graficzny dopasowany do branży." },
     { question: "Jak stworzyć responsywną stronę internetową dla firmy?", answer: "Stworzyć stronę z responsywnym projektem oznacza zaprojektować wygląd, który działa na urządzeniach mobilnych i desktopach. Nowoczesne strony wymagają testów na różnych urządzeniach." },
-    { question: "Ile kosztuje wykonanie strony internetowej w Łodzi?", answer: "Koszt zależy od funkcjonalności, ilości podstron i złożoności projektu. Prosta wizytówka od 2000 zł, strona firmowa od 5000 zł, sklep od 8000 zł." },
+    { question: "Ile kosztuje wykonanie strony internetowej w Łodzi?", answer: "Koszt zależy od zakresu, treści i integracji. Prześlij brief, aby otrzymać indywidualną ofertę z harmonogramem i rozpisanymi kosztami." },
     { question: "Dlaczego warto wybrać lokalną firmę z Łodzi?", answer: "Współpraca z firmą z Łodzi daje korzyści: szybki kontakt, znajomość rynku lokalnego i łatwiejsze spotkania projektowe." },
     { question: "Czym różni się strona wizytówka od nowoczesnej strony internetowej?", answer: "Wizytówka to podstawowa strona z informacjami o firmie. Nowoczesne strony to rozbudowane witryny z integracjami, SEO i elementami interaktywnymi." },
     { question: "Jak tworzenie stron wpływa na zdobywanie klientów?", answer: "Profesjonalne tworzenie stron wpływa na widoczność w wyszukiwarkach, zaufanie klientów i konwersję. Dobre SEO i czytelny projekt pomagają przyciągnąć klientów." },
   ];
 
   const stats = [
-    { value: "200+", label: "Zrealizowanych projektów", icon: Layers },
-    { value: "98%", label: "Zadowolonych klientów", icon: Star },
+    { value: "WWW", label: "Strony i sklepy", icon: Layers },
+    { value: "UX", label: "Projekt dla odbiorcy", icon: Star },
     { value: "5 lat", label: "Doświadczenia", icon: Clock },
-    { value: "24/7", label: "Wsparcie techniczne", icon: Headphones },
+    { value: "Kontakt", label: "Uzgodniona opieka", icon: Headphones },
   ];
 
   const benefits = [

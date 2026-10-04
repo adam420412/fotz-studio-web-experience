@@ -38,7 +38,7 @@ export const CityIntroSection = ({ content, cityName }: CityIntroSectionProps) =
             className="order-2 lg:order-1"
           >
             <span className="inline-block px-3 sm:px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-xs sm:text-sm font-medium mb-4 sm:mb-6">
-              O nas w {cityName}
+              Dla firm — {cityName}
             </span>
 
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-6 md:mb-8">

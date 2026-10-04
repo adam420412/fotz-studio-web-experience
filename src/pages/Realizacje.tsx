@@ -134,7 +134,7 @@ const projects = [
     id: "enea-stadion",
     title: "Enea Stadion Poznań",
     category: "Strony www",
-    description: "Kompleksowa strona internetowa z systemem rezerwacji dla największego stadionu w Polsce. UX/UI, SEO i optymalizacja.",
+    description: "Strona internetowa prezentująca Enea Stadion w Poznaniu, przestrzenie obiektu i jego ofertę.",
     image: eneaStadionImg,
     featured: true,
     hasCase: true,

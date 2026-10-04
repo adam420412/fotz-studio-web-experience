@@ -68,20 +68,20 @@ const StronyInternetoweWarszawa = () => {
     { 
       title: "Landing Page", 
       desc: "Strona wizytówkowa prezentująca firmę", 
-      price: "od 2 000 zł",
+      price: "Wycena indywidualna",
       features: ["Do 5 podstron", "Responsywny design", "Podstawowe SEO", "Formularz kontaktowy", "Certyfikat SSL"]
     },
     { 
       title: "Strona Firmowa", 
       desc: "Rozbudowana strona z dodatkowymi funkcjami", 
-      price: "od 5 000 zł",
+      price: "Wycena indywidualna",
       popular: true,
       features: ["Do 15 podstron", "Zaawansowane SEO", "Blog firmowy", "Integracja social media", "System CMS", "Wsparcie techniczne"]
     },
     { 
       title: "Sklep E-commerce", 
       desc: "Platforma sprzedażowa z integracjami", 
-      price: "od 8 000 zł",
+      price: "Wycena indywidualna",
       features: ["Nieograniczona liczba produktów", "Panel administracyjny", "Integracje płatności", "Optymalizacja konwersji", "Narzędzia marketingowe"]
     },
   ];
@@ -128,7 +128,7 @@ const StronyInternetoweWarszawa = () => {
     },
     {
       question: "Ile kosztuje wykonanie strony internetowej w Warszawie?",
-      answer: "Ceny stron internetowych różnią się w zależności od kompleksowości projektu. Strona wizytówkowa zaczyna się od ok. 2000 zł, strona firmowa od 5000 zł, a sklep internetowy od 8000 zł netto."
+      answer: "Koszt zależy od zakresu, treści i integracji. Prześlij brief, aby otrzymać indywidualną ofertę z harmonogramem i rozpisanymi kosztami."
     },
     {
       question: "Czy oferujecie projektowanie stron www i sklepy internetowe?",
@@ -145,10 +145,10 @@ const StronyInternetoweWarszawa = () => {
   ];
 
   const stats = [
-    { value: "200+", label: "Zrealizowanych projektów", icon: Layers },
-    { value: "98%", label: "Zadowolonych klientów", icon: Star },
+    { value: "WWW", label: "Strony i sklepy", icon: Layers },
+    { value: "UX", label: "Projekt dla odbiorcy", icon: Star },
     { value: "5 lat", label: "Doświadczenia", icon: Clock },
-    { value: "24/7", label: "Wsparcie techniczne", icon: Headphones },
+    { value: "Kontakt", label: "Uzgodniona opieka", icon: Headphones },
   ];
 
   const benefits = [

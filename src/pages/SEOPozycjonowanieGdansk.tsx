@@ -9,16 +9,16 @@ import { FAQSchema, ServiceSchema, BreadcrumbSchema, LocalBusinessSchema, Organi
 import { ContactSection } from "@/components/sections/ContactSection";
 
 const features = [
-  { icon: Search, title: "Pozycjonowanie lokalne Gdańsk", desc: "Optymalizujemy stronę pod frazy lokalne: '[usługa] Gdańsk', '[branża] Gdańsk' i okolice. Twoja firma pojawia się dokładnie tam, gdzie szukają Twoi klienci." },
-  { icon: MapPin, title: "Google Maps i Google My Business", desc: "Optymalizujemy profil Google My Business, zbieramy opinie i dbamy o obecność w mapach. Firmy z optymalizowanym GMB mają 3x więcej kliknięć niż bez optymalizacji." },
-  { icon: TrendingUp, title: "Audyt SEO dla Gdańsk", desc: "Analizujemy konkurencję w Gdańsk, identyfikujemy frazy z największym potencjałem i tworzymy strategię, która pozwoli Ci dominować lokalny rynek." },
-  { icon: BarChart2, title: "Raportowanie i monitoring", desc: "Miesięczne raporty z pozycji w Google dla Gdańsk i okolic, ruchu organicznego i konwersji. Wiesz dokładnie, jakie efekty osiągamy." },
+  { icon: Search, title: "Pozycjonowanie lokalne Gdańsk", desc: "Optymalizujemy stronę pod frazy lokalne: '[usługa] Gdańsk', '[branża] Gdańsk' i okolice. Dobieramy tematy do rzeczywistych usług oraz zapytań klientów." },
+  { icon: MapPin, title: "Google Maps i Profil Firmy w Google", desc: "Optymalizujemy profil Profil Firmy w Google, zbieramy opinie i dbamy o obecność w mapach. Zakres obejmuje dane firmy, ofertę i sposób pozyskiwania autentycznych opinii." },
+  { icon: TrendingUp, title: "Audyt SEO dla Gdańska", desc: "Analizujemy konkurencję w Gdańsku, identyfikujemy frazy z największym potencjałem i tworzymy plan działań dopasowany do oferty i możliwości firmy." },
+  { icon: BarChart2, title: "Raportowanie i monitoring", desc: "Miesięczne raporty z pozycji w Google dla Gdańska i okolic, ruchu organicznego i konwersji. Wiesz dokładnie, jakie efekty osiągamy." },
 ];
 
 const faqItems = [
-  { question: "Ile kosztuje pozycjonowanie w Gdańsk?", answer: "Koszt pozycjonowania w Gdańsk zależy od branży, liczby docelowych fraz i konkurencyjności rynku. Ceny zaczynają się od 800-1200 zł/mies. dla mniejszych firm lokalnych, a dla bardziej konkurencyjnych fraz wynoszą 2000-5000 zł/mies. Oferujemy bezpłatną wycenę po audycie." },
-  { question: "Jak długo trwa pozycjonowanie w Gdańsk?", answer: "Pierwsze efekty (wzrost ruchu organicznego) widoczne są po 2-3 miesiącach. Stabilne wysokie pozycje dla głównych fraz osiągamy po 4-8 miesiącach. Pozycjonowanie lokalne w Gdańsk jest zazwyczaj szybsze niż ogólnopolskie." },
-  { question: "Czy pozycjonujecie tylko firmy z Gdańsk?", answer: "Nie — pracujemy zdalnie z firmami z całej Polski. Nasza siedziba jest w Poznaniu, ale z sukcesem pozycjonujemy firmy w Gdańsk, Warszawie, Krakowie i innych miastach. Znajomość lokalnego rynku i fraz nie wymaga fizycznej obecności." },
+  { question: "Ile kosztuje pozycjonowanie w Gdańsku?", answer: "Wycenę ustalamy po analizie witryny, rynku i zakresu prac. W ofercie rozpisujemy działania techniczne, treści, pomiar i koszty dodatkowe. Zestawienie ma pozwolić porównać ten sam zakres usług." },
+  { question: "Jak długo trwa pozycjonowanie w Gdańsku?", answer: "Termin zależy od stanu witryny, konkurencji i zakresu zmian. Najpierw sprawdzamy indeksowanie i błędy techniczne, następnie rozwijamy treści. Ocenę opieramy na danych Search Console oraz zapytaniach klientów; nie gwarantujemy pozycji ani terminu wejścia do TOP 10." },
+  { question: "Czy pozycjonujecie tylko firmy z Gdańska?", answer: "Nie — pracujemy zdalnie z firmami z całej Polski. Nasza siedziba jest w Poznaniu, ale z sukcesem pozycjonujemy firmy w Gdańsku, Warszawie, Krakowie i innych miastach. Znajomość lokalnego rynku i fraz nie wymaga fizycznej obecności." },
   { question: "Co wyróżnia rynek Gdańska i Trójmiasta w kontekście SEO?", answer: "Trójmiasto z 750 tys. mieszkańców to rozwinięty rynek z silną bazą turystyki, logistyki i branży morskiej. Oznacza to specyficzne frazy kluczowe, lokalną konkurencję i inne zwyczaje wyszukiwania — uwzględniamy to przy budowie strategii." },
 ];
 
@@ -33,7 +33,7 @@ const SEOPozycjonowanieGdansk = () => {
       />
       <ServiceSchema
         name="Pozycjonowanie Gdańsk"
-        description="Usługi SEO i pozycjonowania stron dla firm z Gdańsk. Zwiększamy widoczność w Google dla lokalnych fraz."
+        description="Usługi SEO i pozycjonowania stron dla firm z Gdańska. Zwiększamy widoczność w Google dla lokalnych fraz."
         provider="Fotz Studio"
         areaServed="Gdańsk"
       />
@@ -64,7 +64,7 @@ const SEOPozycjonowanieGdansk = () => {
                 Pozycjonowanie <span className="text-gradient">Gdańsk</span>: SEO dla Lokalnych Firm
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-                Zwiększamy widoczność firm z Gdańska i Trójmiasta w Google. Agencja SEO Gdańsk — pozycjonowanie stron i audyt SEO dla firm z Trójmiasta (Gdańsk, Gdynia, Sopot). Trójmiasto z 750 tys. mieszkańców to rozwinięty rynek z silną bazą turystyki, logistyki i branży morskiej. Skuteczne pozycjonowanie lokalne w Gdańsku — sprawdź nasze usługi SEO.
+                Zwiększamy widoczność firm z Gdańskaa i Trójmiasta w Google. Agencja SEO Gdańsk — pozycjonowanie stron i audyt SEO dla firm z Trójmiasta (Gdańsk, Gdynia, Sopot). Trójmiasto z 750 tys. mieszkańców to rozwinięty rynek z silną bazą turystyki, logistyki i branży morskiej. Skuteczne pozycjonowanie lokalne w Gdańskuu — sprawdź nasze usługi SEO.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild size="lg" className="group">
@@ -74,7 +74,7 @@ const SEOPozycjonowanieGdansk = () => {
                   </Link>
                 </Button>
                 <Button asChild size="lg" variant="outline">
-                  <Link to="/seo/audyt">Darmowy audyt</Link>
+                  <Link to="/seo/audyt">Zakres audytu</Link>
                 </Button>
               </div>
             </motion.div>
@@ -84,7 +84,7 @@ const SEOPozycjonowanieGdansk = () => {
         <section className="py-20 bg-muted/30">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-heading font-bold text-center mb-12">
-              SEO dla Firm z Gdańsk
+              SEO dla Firm z Gdańska
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
               {features.map((f) => (
@@ -101,7 +101,7 @@ const SEOPozycjonowanieGdansk = () => {
         <section className="py-20">
           <div className="container mx-auto px-4 max-w-3xl">
             <h2 className="text-3xl font-heading font-bold text-center mb-12">
-              Pytania o pozycjonowanie w Gdańsk
+              Pytania o pozycjonowanie w Gdańsku
             </h2>
             <Accordion type="single" collapsible className="space-y-4">
               {faqItems.map((item, i) => (
@@ -123,10 +123,10 @@ const SEOPozycjonowanieGdansk = () => {
         <div className="container mx-auto px-4">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
             <h2 className="text-3xl font-heading font-bold mb-6">Pozycjonowanie Gdańsk — agencja SEO dla firm z Trójmiasta</h2>
-            <p className="text-muted-foreground mb-4">Pozycjonowanie stron internetowych Gdańsk — Fotz Studio obsługuje firmy z Gdańska, Gdyni, Sopotu i całego Trójmiasta. Trójmiasto to dynamiczny rynek z silnym sektorem turystycznym, technologicznym i morskim. Lokalne SEO dla firm z Gdańska wymaga specjalistycznej wiedzy o regionalnej specyfice i konkurencji.</p>
+            <p className="text-muted-foreground mb-4">Pozycjonowanie stron internetowych Gdańsk — Fotz Studio obsługuje firmy z Gdańskaa, Gdyni, Sopotu i całego Trójmiasta. Trójmiasto to dynamiczny rynek z silnym sektorem turystycznym, technologicznym i morskim. Lokalne SEO dla firm z Gdańskaa wymaga specjalistycznej wiedzy o regionalnej specyfice i konkurencji.</p>
             <p className="text-muted-foreground mb-6">Agencja SEO Gdańsk — kompleksowe pozycjonowanie: audyt SEO strony, optymalizacja techniczna i treściowa, link building z portali trójmiejskich, pozycjonowanie Google Maps dla firm z Trójmiasta, content SEO pod lokalne frazy (Gdańsk, Gdynia, Sopot, Trójmiasto).</p>
             <h2 className="text-3xl font-heading font-bold mb-6">SEO Trójmiasto — dominuj w Google na Gdańsk, Gdynię i Sopot</h2>
-            <p className="text-muted-foreground">Pozycjonowanie Gdańsk i całego Trójmiasta — z Fotz Studio zbudujesz widoczność online, która generuje stały napływ klientów. Transparentne raportowanie wyników, regularne optymalizacje i indywidualne podejście do każdego klienta. Umów konsultację z naszą agencją SEO w Gdańsku.</p>
+            <p className="text-muted-foreground">Pozycjonowanie Gdańsk i całego Trójmiasta — z Fotz Studio zbudujesz widoczność online, która generuje stały napływ klientów. Transparentne raportowanie wyników, regularne optymalizacje i indywidualne podejście do każdego klienta. Umów konsultację z naszą agencją SEO w Gdańskuu.</p>
           
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
               <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>

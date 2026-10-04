@@ -31,3 +31,6 @@ deno.lock
 # Local browser QA evidence (regenerate with the SEO audit scripts).
 /docs/seo/qa-2026-10-01/
 /scripts/__pycache__/
+
+# Server bundle used only while prerendering
+.ssr/

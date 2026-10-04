@@ -11,7 +11,6 @@ import { FadeInView, StaggerContainer, StaggerItem } from "@/components/FadeInVi
 import { cn } from "@/lib/utils";
 import { z } from "zod";
 import { Link } from "react-router-dom";
-import { sendLeadToCRM } from "@/hooks/useCRMWebhook";
 import { submitWeb3Form } from "@/lib/web3forms";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from "@/components/seo/StructuredData";
@@ -44,7 +43,7 @@ const benefits = [
   {
     icon: CheckCircle,
     title: "Plan działań",
-    description: "Otrzymujesz konkretny, wykonalny plan działań dostosowany do Twojego biznesu",
+    description: "Ustalamy priorytet oraz zakres dalszego audytu, strategii lub realizacji",
   },
 ];
 
@@ -52,7 +51,7 @@ const steps = [
   {
     number: "01",
     title: "Umów konsultację",
-    description: "Wypełnij formularz i wybierz dogodny termin. Konsultacja trwa 30 minut.",
+    description: "Wypełnij formularz i wybierz dogodny termin. Konsultacja trwa 15 minut.",
   },
   {
     number: "02",
@@ -61,15 +60,15 @@ const steps = [
   },
   {
     number: "03",
-    title: "Otrzymaj plan",
-    description: "Po konsultacji wysyłamy Ci szczegółowy plan działań i rekomendacje.",
+    title: "Ustal kolejny krok",
+    description: "Ustalamy kolejny krok i informacje potrzebne do przygotowania zakresu prac.",
   },
 ];
 
 const faqs = [
   {
     question: "Kto prowadzi konsultację?",
-    answer: "Konsultację prowadzi Adam - twórca Fotz Studio z ponad 10-letnim doświadczeniem w marketingu. Będziesz pracować bezpośrednio z ekspertem, nie z asystentem.",
+    answer: "Rozmowę prowadzi osoba z zespołu FOTZ Studio. Przy potwierdzeniu terminu ustalamy temat i formę spotkania.",
   },
   {
     question: "Czy konsultacja to zobowiązanie do współpracy?",
@@ -77,18 +76,18 @@ const faqs = [
   },
   {
     question: "Ile czasu zajmuje konsultacja?",
-    answer: "Konsultacja trwa 30 minut. To wystarczający czas, aby zrozumieć Twoją sytuację, zadać pytania i zaproponować rekomendacje.",
+    answer: "Konsultacja trwa 15 minut. To wystarczający czas, aby zrozumieć Twoją sytuację, zadać pytania i zaproponować rekomendacje.",
   },
   {
     question: "Na co mogę liczyć po konsultacji?",
-    answer: "Po konsultacji otrzymasz: notatki z rozmowy, analizę Twoich wyzwań, konkretne rekomendacje działań, szacunkowe koszty (jeśli będzie zainteresowanie), i propozycję dalszej współpracy.",
+    answer: "Pierwsza rozmowa pomaga określić cel i kolejny krok. Szczegółową analizę, pisemną strategię i realizację wyceniamy według osobno uzgodnionego zakresu.",
   },
 ];
 
 const trustSignals = [
-  { number: "10+", label: "Lat doświadczenia", icon: Award },
-  { number: "150+", label: "Zadowolonych klientów", icon: Users },
-  { number: "5/5", label: "Średnia ocena", icon: TrendingUp },
+  { number: "15 min", label: "Pierwsza rozmowa", icon: Award },
+  { number: "Cel", label: "Poznajemy projekt", icon: Users },
+  { number: "Zakres", label: "Ustalamy kolejny krok", icon: TrendingUp },
 ];
 
 export default function Konsultacja() {
@@ -144,19 +143,10 @@ export default function Konsultacja() {
         message: formData.message || "Brak dodatkowych informacji",
       });
 
-      sendLeadToCRM({
-        name: formData.name,
-        email: formData.email,
-        phone: formData.phone || undefined,
-        company: formData.company || undefined,
-        source: "fotz.pl/konsultacja",
-        notes: `Zapytanie o darmową konsultację.\n\n${formData.message || "Brak dodatkowych informacji"}`,
-      });
-
       setIsSubmitted(true);
       toast({
         title: "Zapytanie wysłane!",
-        description: "Skontaktujemy się z Tobą w ciągu 24 godzin, aby umówić konsultację.",
+        description: "Skontaktujemy się z Tobą, aby potwierdzić termin konsultacji.",
       });
 
       // Reset form after 3 seconds
@@ -180,7 +170,7 @@ export default function Konsultacja() {
     <Layout>
       <SEOHead
         title="Bezpłatna Konsultacja Marketingowa | Fotz Studio"
-        description="Bezpłatna konsultacja marketingowa Fotz Studio — omów SEO, strategię online, kampanie Google Ads i social media z ekspertem. Umów się na 30-minutową rozmowę i otrzymaj konkretne rekomendacje bez zobowiązań."
+        description="Bezpłatna konsultacja marketingowa Fotz Studio — omów SEO, strategię online, kampanie Google Ads i social media z ekspertem. Umów się na 15-minutową rozmowę i otrzymaj konkretne rekomendacje bez zobowiązań."
         canonical="https://www.fotz-studio.pl/konsultacja"
         keywords="konsultacja marketingowa, darmowa konsultacja, marketing Poznań, strategia marketingowa"
       />
@@ -203,7 +193,7 @@ export default function Konsultacja() {
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground">
               Porozmawiajmy o Twojej strategii marketingowej. Otrzymasz konkretne rekomendacje
-              bez zobowiązań. 30 minut rozmowy, które mogą zmienić Twój biznes.
+              bez zobowiązań. 15 minut rozmowy, które mogą zmienić Twój biznes.
             </p>
           </FadeInView>
         </div>
@@ -266,7 +256,7 @@ export default function Konsultacja() {
               Jak to działa?
             </h2>
             <p className="text-muted-foreground text-base sm:text-lg max-w-2xl mx-auto">
-              Prosty proces w 3 krokach – od rezerwacji do otrzymania planu działań.
+              Prosty proces w 3 krokach – od zgłoszenia terminu do ustalenia kolejnego kroku.
             </p>
           </FadeInView>
 
@@ -319,7 +309,7 @@ export default function Konsultacja() {
                     Dziękujemy!
                   </h3>
                   <p className="text-sm sm:text-base text-muted-foreground">
-                    Skontaktujemy się z Tobą w ciągu 24 godzin, aby umówić konsultację.
+                    Skontaktujemy się z Tobą, aby potwierdzić termin konsultacji.
                   </p>
                 </div>
               ) : (
@@ -430,7 +420,7 @@ export default function Konsultacja() {
               {/* Key Info */}
               <div className="space-y-4">
                 {[
-                  { icon: Clock, title: "30 minut", desc: "Fokusowa rozmowa" },
+                  { icon: Clock, title: "15 minut", desc: "Fokusowa rozmowa" },
                   { icon: CheckCircle, title: "Bez zobowiązań", desc: "Bez nacisku na sprzedaż" },
                   { icon: Target, title: "Konkretne porady", desc: "Praktyczne rekomendacje" },
                 ].map((item) => (
@@ -550,16 +540,16 @@ export default function Konsultacja() {
               Bezpłatna konsultacja marketingowa — porozmawiaj z ekspertem Fotz Studio
             </h2>
             <p className="text-muted-foreground mb-4">
-              Bezpłatna konsultacja marketingowa z Fotz Studio to 30-60 minut
+              Bezpłatna konsultacja marketingowa z Fotz Studio to 15 minut
               rozmowy z ekspertem o Twoim biznesie i możliwościach marketingu online.
               Omawiamy aktualną sytuację w wyszukiwarce (audyt SEO), potencjał
               reklam Google i Meta, stan obecności w social media i możliwości
               poprawy strony internetowej. Konsultacja jest bezpłatna i bez zobowiązań.
             </p>
             <p className="text-muted-foreground mb-6">
-              Po konsultacji otrzymujesz skrócony raport z wnioskami i rekomendacjami
-              działań. To gotowy punkt wyjścia do planowania strategii marketingowej,
-              niezależnie od tego, czy zdecydujesz się na współpracę z nami.
+              Podczas pierwszej rozmowy ustalamy najważniejszy cel i informacje potrzebne
+              do dalszej pracy. Zakres szczegółowego audytu lub strategii, materiały
+              i koszt uzgadniamy oddzielnie.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
@@ -583,10 +573,9 @@ export default function Konsultacja() {
             </h2>
             <p className="text-muted-foreground">
               Skontaktuj się z nami przez formularz, telefon lub e-mail,
-              by umówić bezpłatną konsultację marketingową. W ciągu 24 godzin
-              oddzwonimy lub odpiszemy z propozycją terminu. Nie odkładaj marketingu
-              na jutro — każdy dzień bez skutecznych działań to utracone leady
-              i klienci dla konkurencji.
+              by zgłosić preferowany termin bezpłatnej konsultacji marketingowej.
+              Termin spotkania wymaga naszego potwierdzenia. W wiadomości opisz
+              krótko firmę i temat, od którego chcesz zacząć.
             </p>
           
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">

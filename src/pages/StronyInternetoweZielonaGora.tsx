@@ -29,9 +29,9 @@ const StronyInternetoweZielonaGora = () => {
   ];
 
   const pricing = [
-    { title: "Landing Page", desc: "Strona wizytówkowa", price: "od 2 000 zł", features: ["Do 5 podstron", "Responsywny design", "Podstawowe SEO", "Formularz kontaktowy", "Certyfikat SSL"] },
-    { title: "Strona Firmowa", desc: "Rozbudowana strona firmowa", price: "od 5 000 zł", popular: true, features: ["Do 15 podstron", "Zaawansowane SEO", "Blog firmowy", "Social media", "System CMS", "Wsparcie"] },
-    { title: "Sklep E-commerce", desc: "Platforma sprzedażowa", price: "od 8 000 zł", features: ["Nieograniczona liczba produktów", "Panel administracyjny", "Płatności online", "Optymalizacja", "Marketing"] },
+    { title: "Landing Page", desc: "Strona wizytówkowa", price: "Wycena indywidualna", features: ["Do 5 podstron", "Responsywny design", "Podstawowe SEO", "Formularz kontaktowy", "Certyfikat SSL"] },
+    { title: "Strona Firmowa", desc: "Rozbudowana strona firmowa", price: "Wycena indywidualna", popular: true, features: ["Do 15 podstron", "Zaawansowane SEO", "Blog firmowy", "Social media", "System CMS", "Wsparcie"] },
+    { title: "Sklep E-commerce", desc: "Platforma sprzedażowa", price: "Wycena indywidualna", features: ["Nieograniczona liczba produktów", "Panel administracyjny", "Płatności online", "Optymalizacja", "Marketing"] },
   ];
 
   const processSteps = [
@@ -42,13 +42,13 @@ const StronyInternetoweZielonaGora = () => {
   ];
 
   const caseStudies = [
-    { title: "Apartamenty Chorwacja", category: "Strona rezerwacyjna", result: "+180% rezerwacji", link: "/realizacje/apartamenty-chorwacja", image: apartamentyImg },
+    { title: "Apartamenty Chorwacja", category: "Strona rezerwacyjna", result: "Prezentacja oferty noclegowej", link: "/realizacje/apartamenty-chorwacja", image: apartamentyImg },
     { title: "Victory Cars", category: "Strona motoryzacyjna", result: "Design premium", link: "/realizacje/victory-cars", image: victoryCarsImg },
-    { title: "Cute Dumpling", category: "Strona gastronomiczna", result: "+250% ruchu", link: "/realizacje/cute-dumpling", image: cuteDumplingImg },
+    { title: "Cute as a Dumpling", category: "Sklep z dekoracjami", result: "E-commerce", link: "/realizacje/cute-dumpling", image: cuteDumplingImg },
   ];
 
   const faqItems = [
-    { question: "Ile kosztuje strona internetowa w Zielonej Górze?", answer: "Koszt zależy od zakresu. Wizytówka od 2000 zł, strona firmowa od 5000 zł, sklep od 8000 zł. Oferujemy bezpłatną wycenę." },
+    { question: "Ile kosztuje strona internetowa w Zielonej Górze?", answer: "Koszt zależy od zakresu, treści i integracji. Prześlij brief, aby otrzymać indywidualną ofertę z harmonogramem i rozpisanymi kosztami." },
     { question: "Jak długo trwa tworzenie strony?", answer: "Wizytówka 2-3 tygodnie, strona firmowa 4-6 tygodni, sklep 6-10 tygodni." },
     { question: "Czy oferujecie wsparcie po uruchomieniu?", answer: "Tak, zapewniamy wsparcie techniczne i pakiety serwisowe." },
     { question: "Czy strona będzie responsywna?", answer: "Wszystkie strony są w pełni responsywne, projektujemy mobile-first." },
@@ -56,10 +56,10 @@ const StronyInternetoweZielonaGora = () => {
   ];
 
   const stats = [
-    { value: "200+", label: "Zrealizowanych projektów", icon: Layers },
-    { value: "98%", label: "Zadowolonych klientów", icon: Star },
-    { value: "12 lat", label: "Doświadczenia", icon: Clock },
-    { value: "24/7", label: "Wsparcie techniczne", icon: Headphones },
+    { value: "WWW", label: "Strony i sklepy", icon: Layers },
+    { value: "UX", label: "Projekt dla odbiorcy", icon: Star },
+    { value: "Plan", label: "Ustalony harmonogram", icon: Clock },
+    { value: "Kontakt", label: "Uzgodniona opieka", icon: Headphones },
   ];
 
   const benefits = ["Znajomość rynku Lubuskiego", "Kompleksowa obsługa", "SEO w standardzie", "Design mobile-first", "Wsparcie po uruchomieniu", "Konkurencyjne ceny"];
@@ -79,7 +79,7 @@ const StronyInternetoweZielonaGora = () => {
     <>
       <SEOHead
         title="Strony Internetowe Zielona Góra | Fotz Studio"
-        description="Strony internetowe Zielona Góra — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Zielonej Góry i regionu lubuskiego. Strony od 499 zł."
+        description="Strony internetowe Zielona Góra — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Zielonej Góry i regionu lubuskiego. Strony z indywidualną wyceną."
         canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/zielona-gora"
         keywords="strony internetowe zielona góra, tworzenie stron zielona góra, strony www zielona góra, projektowanie stron zielona góra"
       />
@@ -98,7 +98,7 @@ const StronyInternetoweZielonaGora = () => {
             <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="text-center max-w-5xl mx-auto">
               <span className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-8"><Sparkles className="w-4 h-4" />Strony WWW Zielona Góra<Sparkles className="w-4 h-4" /></span>
               <h1 className="text-4xl md:text-5xl lg:text-7xl font-heading font-bold mb-8">Strony Internetowe{" "}<span className="text-gradient">Zielona Góra</span></h1>
-              <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto"><strong className="text-foreground">Strony internetowe Zielona Góra — tworzenie stron www i sklepy internetowe dla Lubuskiego.</strong>{" "}Projektowanie i tworzenie stron www Zielona Góra dla firm z regionu lubuskiego — strony internetowe od 499 zł, responsywne i zoptymalizowane SEO.</p>
+              <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto"><strong className="text-foreground">Strony internetowe Zielona Góra — tworzenie stron www i sklepy internetowe dla Lubuskiego.</strong>{" "}Projektowanie i tworzenie stron www Zielona Góra dla firm z regionu lubuskiego — strony internetowe z indywidualną wyceną, responsywne i zoptymalizowane SEO.</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
                 <Button asChild size="lg" className="px-8 py-6"><Link to="/kontakt">Bezpłatna wycena<ArrowRight className="ml-2 h-5 w-5" /></Link></Button>
                 <Button asChild variant="outline" size="lg" className="px-8 py-6"><a href="tel:+48790814814"><Phone className="mr-2 h-5 w-5" />+48 790 814 814</a></Button>

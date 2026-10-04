@@ -140,7 +140,7 @@ export function Navbar() {
             {/* CTA + Theme */}
             <div className="hidden xl:flex items-center gap-2">
               <ThemeToggle />
-              <Link to="/kontakt" className="dv-btn dv-btn-primary group">
+              <Link to="/konsultacja" className="dv-btn dv-btn-primary group">
                 Bezpłatna konsultacja
                 <ArrowUpRight
                   className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
@@ -224,7 +224,7 @@ export function Navbar() {
               ))}
 
               <Link
-                to="/kontakt"
+                to="/konsultacja"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="dv-btn dv-btn-primary mt-4 justify-center"
               >

@@ -12,7 +12,6 @@ import { cn } from "@/lib/utils";
 import { z } from "zod";
 import { Link } from "react-router-dom";
 import { BookingCalendar } from "@/components/BookingCalendar";
-import { sendLeadToCRM } from "@/hooks/useCRMWebhook";
 import { submitWeb3Form } from "@/lib/web3forms";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { BreadcrumbSchema, LocalBusinessSchema, OrganizationSchema} from "@/components/seo/StructuredData";
@@ -45,19 +44,19 @@ const contactInfo = [
     icon: Phone,
     title: "Telefon",
     content: "+48 790 814 814",
-    subtitle: "Pon-Pt 9:00-17:00",
+    subtitle: "Ustalmy dogodny termin",
   },
   {
     icon: Mail,
     title: "Email",
     content: "adam@fotz.pl",
-    subtitle: "Odpowiadamy w 24h",
+    subtitle: "Opisz swój projekt",
   },
   {
     icon: Clock,
-    title: "Godziny",
-    content: "Pon-Pt 9:00-17:00",
-    subtitle: "Weekendy zamknięte",
+    title: "Spotkanie",
+    content: "Po ustaleniu terminu",
+    subtitle: "W biurze lub online",
   },
 ];
 
@@ -70,6 +69,7 @@ export default function Kontakt() {
     email: "",
     phone: "",
     company: "",
+    discovery: "",
     subject: "",
     message: "",
   });
@@ -116,24 +116,15 @@ export default function Kontakt() {
         email: formData.email,
         phone: formData.phone || "Nie podano",
         company: formData.company || "Nie podano",
+        discovery: formData.discovery,
         topic: formData.subject,
         message: formData.message,
-      });
-
-      // Send to CRM webhook (fire and forget)
-      sendLeadToCRM({
-        name: formData.name,
-        email: formData.email,
-        phone: formData.phone || undefined,
-        company: formData.company || undefined,
-        source: "website",
-        notes: `Formularz: Kontakt (fotz.pl/kontakt)\nTemat: ${formData.subject}\n\n${formData.message}`,
       });
 
       setIsSubmitted(true);
       toast({
         title: "Wiadomość wysłana!",
-        description: "Odezwiemy się do Ciebie w ciągu 24 godzin.",
+        description: "Skontaktujemy się z Tobą w sprawie zapytania.",
       });
     } catch (error) {
       console.error("Error sending message:", error);
@@ -174,18 +165,10 @@ export default function Kontakt() {
         company: reelData.company || "Nie podano",
         message: `Zapytanie o darmową rolkę.\nBranża: ${reelData.business_type}`,
       });
-      sendLeadToCRM({
-        name: reelData.name,
-        email: reelData.email,
-        phone: reelData.phone || undefined,
-        company: reelData.company || undefined,
-        source: "website",
-        notes: `Formularz: Darmowa rolka (fotz.pl/kontakt)\nBranża: ${reelData.business_type}`,
-      });
       setReelSubmitted(true);
       toast({
         title: "Zgłoszenie wysłane!",
-        description: "Odezwiemy się w ciągu 24 godzin z propozycją rolki.",
+        description: "Skontaktujemy się, aby omówić zakres i dostępność nagrania.",
       });
     } catch (err) {
       console.error("Reel form error:", err);
@@ -227,7 +210,7 @@ export default function Kontakt() {
               <span className="text-gradient">Twoim projekcie</span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground">
-              Jesteśmy gotowi na nowe wyzwania. Napisz do nas lub odwiedź 
+              Jesteśmy gotowi na nowe wyzwania. Napisz do nas lub odwiedź
               nasze biuro w centrum Poznania.
             </p>
           </div>
@@ -364,6 +347,11 @@ export default function Kontakt() {
                     {formErrors.subject && <p className="text-xs text-red-500 mt-1">{formErrors.subject}</p>}
                   </div>
 
+                  <div><label htmlFor="contact-discovery" className="block text-sm font-medium mb-2">Skąd o nas wiesz? <span className="text-muted-foreground">(opcjonalnie)</span></label>
+                    <select id="contact-discovery" value={formData.discovery} onChange={e=>setFormData({...formData,discovery:e.target.value})} className="w-full rounded-md border border-input bg-background p-3">
+                      <option value="">Wybierz, jeśli chcesz</option>{['Google','ChatGPT lub inny asystent AI','Social media','Polecenie','Inne źródło'].map(value=><option key={value} value={value}>{value}</option>)}
+                    </select>
+                  </div>
                   <div>
                     <label htmlFor="contact-message" className="block text-xs sm:text-sm font-medium mb-1.5 sm:mb-2">
                       Wiadomość *
@@ -612,13 +600,13 @@ export default function Kontakt() {
                 Umów <span className="text-gradient">bezpłatną konsultację</span>
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
-                Wybierz dogodny termin na 30-minutową rozmowę. Przeanalizujemy 
+                Wybierz dogodny termin na 15-minutową rozmowę. Przeanalizujemy
                 Twoje potrzeby marketingowe i zaproponujemy rozwiązania.
               </p>
 
               <div className="space-y-4">
                 {[
-                  "30 minut rozmowy z ekspertem",
+                  "15 minut rozmowy z ekspertem",
                   "Analiza Twojej obecnej sytuacji",
                   "Konkretne rekomendacje działań",
                   "Bez zobowiązań",
@@ -650,11 +638,11 @@ export default function Kontakt() {
               Cennik usług
             </span>
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-              Sprawdź ceny i <span className="text-gradient">skonfiguruj ofertę</span>
+              Sprawdź ceny i <span className="text-gradient">zakres usług</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Skorzystaj z naszego interaktywnego konfiguratora cennika. 
-              Wybierz usługi i zobacz szacunkowy koszt w czasie rzeczywistym.
+              Sprawdź zakres pakietów START i elementy indywidualnej wyceny.
+              Budżet produkcji, obsługi i emisji reklam rozpisujemy osobno.
             </p>
             <Button variant="hero" size="xl" asChild>
               <Link to="/cennik" className="group">
@@ -681,7 +669,7 @@ export default function Kontakt() {
             <p className="text-muted-foreground mb-4">
               Fotz Studio to agencja marketingowa z Poznania. Jesteśmy dostępni przez
               formularz kontaktowy, e-mail, telefon i osobiście w biurze. Każde zapytanie
-              traktujemy priorytetowo — odpowiadamy w ciągu 24 godzin roboczych.
+              analizujemy indywidualnie; zakres i termin odpowiedzi zależą od sprawy.
               Niezależnie od etapu Twojego projektu — czy dopiero planujesz, czy potrzebujesz
               szybkiej pomocy — skontaktuj się z nami.
             </p>
@@ -717,7 +705,7 @@ export default function Kontakt() {
               wizualnej. Wypełnij formularz kontaktowy, opisując swoje potrzeby —
               przygotujemy wstępną ofertę w ciągu 48 godzin.
             </p>
-          
+
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
               <Link to="/realizacje" className="text-primary hover:underline font-medium text-sm">→ Realizacje</Link>
               <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>

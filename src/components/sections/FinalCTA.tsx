@@ -6,14 +6,14 @@ export function FinalCTA() {
   const { t } = useLanguage();
 
   const ctaText = t(
-    "Nie czekaj, aż konkurencja Cię wyprzedzi. Skontaktuj się z naszą agencją już dziś i umów się na bezpłatną konsultację. Porozmawiajmy o Twoich celach biznesowych i o tym, jak możemy Ci pomóc osiągnąć sukces.",
+    "Opowiedz, co chcesz osiągnąć. Omówimy obecne działania, potrzebne materiały i kolejny krok. Pierwsza konsultacja trwa 15 minut.",
     "Don't wait for the competition to get ahead of you. Contact our agency today and schedule a free consultation."
   );
 
   const features = [
     t("Szybka odpowiedź", "Fast response"),
     t("Bezpłatna konsultacja", "Free consultation"),
-    t("160+ opinii Google", "160+ Google reviews"),
+    t("Zakres dopasowany do projektu", "Scope tailored to your project"),
   ];
 
   return (
@@ -30,7 +30,7 @@ export function FinalCTA() {
         }}
       />
 
-      <div className="relative max-w-[1440px] mx-auto px-6 md:px-12 py-24 md:py-32">
+      <div className="relative max-w-[1440px] mx-auto px-6 md:px-12 py-14 md:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-[1.3fr_1fr] gap-12 lg:gap-20">
           <div>
             <span className="dv-eyebrow text-white/60 mb-6 inline-block">
@@ -58,7 +58,7 @@ export function FinalCTA() {
               {ctaText}
             </p>
             <div className="flex flex-wrap gap-3 mb-10">
-              <Link to="/kontakt" className="dv-btn dv-btn-primary group">
+              <Link to="/konsultacja" className="dv-btn dv-btn-primary group">
                 {t("Umów bezpłatną konsultację", "Book a free consultation")}
                 <ArrowUpRight
                   className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"

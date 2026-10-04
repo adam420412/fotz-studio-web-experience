@@ -47,7 +47,7 @@ export default function TworzenieStronInternetowych() {
   const heroStats = [
     { value: '500+', label: 'Projektów' },
     { value: '4.9/5', label: 'Opinie' },
-    { value: 'Od 499 zł', label: 'Cena' },
+    { value: 'Wycena indywidualna', label: 'Cena' },
     { value: '7-21 dni', label: 'Realizacja' },
   ];
 
@@ -56,28 +56,28 @@ export default function TworzenieStronInternetowych() {
       icon: Globe,
       title: 'Strony wizytówkowe',
       desc: 'Profesjonalne strony dla małych firm i freelancerów. Szybkie, responsywne, SEO-ready.',
-      price: 'od 499 zł',
+      price: 'Wycena indywidualna',
       features: ['1-3 podstrony', 'Responsywny design', 'Formularz kontaktowy', 'Domena + hosting']
     },
     {
       icon: FileText,
       title: 'Strony firmowe',
       desc: 'Wielostronicowe witryny z CMS, blogiem i zaawansowanymi funkcjami. Skalowalne rozwiązania.',
-      price: 'od 1999 zł',
+      price: 'Wycena indywidualna',
       features: ['5-15 podstron', 'CMS WordPress/Webflow', 'Blog i artykuły', 'Zaawansowane SEO', 'Integracje']
     },
     {
       icon: ShoppingCart,
       title: 'Sklepy internetowe',
       desc: 'E-commerce na WooCommerce, Shopify. Pełna integracja z płatnościami i kurierami.',
-      price: 'od 2999 zł',
+      price: 'Wycena indywidualna',
       features: ['Koszyk i checkout', 'Płatności online', 'Integracje kurierskie', 'Panel zarządzania', 'Marketing']
     },
     {
       icon: Target,
       title: 'Landing page',
       desc: 'Strony kampanijowe zoptymalizowane pod konwersję. Generują leady i sprzedaż.',
-      price: 'od 799 zł',
+      price: 'Wycena indywidualna',
       features: ['Jedna strona', 'Wysoki CRO', 'A/B testy', 'Pixel tracking', 'Formularze']
     },
     {
@@ -91,7 +91,7 @@ export default function TworzenieStronInternetowych() {
       icon: Sparkles,
       title: 'Redesign strony',
       desc: 'Modernizacja istniejących stron. Nowy design, szybkość, SEO. Bez strat w rankingu.',
-      price: 'od 999 zł',
+      price: 'Wycena indywidualna',
       features: ['Zachowanie SEO', 'Migration', 'Nowy design', 'Optymalizacja', 'Testy']
     },
   ];
@@ -168,25 +168,25 @@ export default function TworzenieStronInternetowych() {
   const pricingPackages = [
     {
       title: 'Wizytówka',
-      price: 'od 499 zł',
+      price: 'Wycena indywidualna',
       desc: 'Prosta strona dla małych firm',
       features: ['1-3 podstrony', 'Responsywny design', 'SEO', 'SSL', 'Hosting 1 rok']
     },
     {
       title: 'Firmowa',
-      price: 'od 1999 zł',
+      price: 'Wycena indywidualna',
       desc: 'Rozbudowana witryna z blogiem',
       features: ['5-15 podstron', 'CMS', 'Blog', 'Analytics', 'Zaawansowane SEO']
     },
     {
       title: 'Sklep',
-      price: 'od 2999 zł',
+      price: 'Wycena indywidualna',
       desc: 'E-commerce z pełną funkcjonalnością',
       features: ['Produkty', 'Płatności', 'Kurierzy', 'Panel', 'Promocje']
     },
     {
       title: 'Landing',
-      price: 'od 799 zł',
+      price: 'Wycena indywidualna',
       desc: 'Kampanijowa strona sprzedażowa',
       features: ['1 strona', 'Wysoki CRO', 'Formy', 'Pixel tracking', 'A/B testy']
     },
@@ -195,7 +195,7 @@ export default function TworzenieStronInternetowych() {
   const faqItems = [
     {
       question: 'Ile kosztuje tworzenie strony internetowej?',
-      answer: 'Koszt zależy od typu i złożoności. Strona wizytówkowa: 499-1500 zł. Strona firmowa: 1999-5000 zł. Sklep e-commerce: 2999-15000+ zł. Landing page: 799-2000 zł. Każdą wycenę przygotowujemy indywidualnie na podstawie Twoich potrzeb - zapraszamy na bezpłatną konsultację.'
+      answer: 'Koszt ustalamy po poznaniu zakresu: liczby podstron, treści, integracji i sposobu zarządzania. W ofercie określamy cenę, etapy, poprawki i termin; utrzymanie oraz działania marketingowe omawiamy osobno.'
     },
     {
       question: 'Jak długo trwa stworzenie strony internetowej?',
@@ -211,7 +211,7 @@ export default function TworzenieStronInternetowych() {
     },
     {
       question: 'Czy zapewniacie hosting i domenę?',
-      answer: 'Tak! Pomagamy z rejestracją domeny i zapewniamy hosting. Koszt hostingu to ok. 500-1500 zł rocznie w zależności od potrzeb. Domena: 35-60 zł rocznie. Możesz nas prosić o pomoc lub skorzystać z własnego dostawcy.'
+      answer: 'Koszt ustalamy po poznaniu zakresu: liczby podstron, treści, integracji i sposobu zarządzania. W ofercie określamy cenę, etapy, poprawki i termin; utrzymanie oraz działania marketingowe omawiamy osobno.'
     },
     {
       question: 'Czy mogę samodzielnie zarządzać treścią strony?',
@@ -284,7 +284,7 @@ Dla e-commerce to jeszcze prostsze: strona robi za Ciebie 24h sprzedaż. Jedna d
     <>
       <SEOHead
         title="Tworzenie stron internetowych | Profesjonalne strony WWW"
-        description="Tworzymy profesjonalne strony internetowe dla firm. Szybkie, responsywne, zoptymalizowane pod SEO. Od 499 zł. Bezpłatna wycena w 24h!"
+        description="Tworzymy profesjonalne strony internetowe dla firm. Szybkie, responsywne, zoptymalizowane pod SEO. Wycena indywidualna. Zapytaj o wycenę projektu."
         canonical="https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych"
         keywords="tworzenie stron internetowych, tworzenie stron www, projektowanie stron internetowych, strony internetowe dla firm, tworzenie stron cena"
       />
@@ -577,7 +577,7 @@ Dla e-commerce to jeszcze prostsze: strona robi za Ciebie 24h sprzedaż. Jedna d
                 <FadeInView key={index} delay={index * 0.1}>
                   <div className="p-6 rounded-2xl bg-card border border-border/50 hover:border-primary/30 transition-all h-full">
                     <h3 className="text-xl font-semibold mb-2">{pkg.title}</h3>
-                    <div className="text-3xl font-bold text-gradient mb-3">{pkg.price}</div>
+                    <div className="text-xl font-bold text-gradient mb-3">{pkg.price}</div>
                     <p className="text-sm text-muted-foreground mb-6">{pkg.desc}</p>
                     <ul className="space-y-2">
                       {pkg.features.map((feature, fidx) => (

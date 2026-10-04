@@ -27,21 +27,6 @@ export default function Podziekowanie() {
     // Scroll to top on page load
     window.scrollTo(0, 0);
     
-    // Google Analytics conversion tracking
-    if (typeof window.gtag === 'function') {
-      window.gtag('event', 'conversion', {
-        'send_to': 'AW-CONVERSION_ID/CONVERSION_LABEL', // Replace with your actual conversion ID
-        'event_category': 'form_submission',
-        'event_label': 'pricing_inquiry',
-        'value': 1
-      });
-      
-      // Also send as a standard GA4 event
-      window.gtag('event', 'generate_lead', {
-        'event_category': 'engagement',
-        'event_label': 'pricing_form_submitted'
-      });
-    }
   }, []);
 
   return (
@@ -50,7 +35,7 @@ export default function Podziekowanie() {
       <Layout>
       <SEOHead
         title="Dziękujemy za zapytanie | Fotz Studio"
-        description="Otrzymaliśmy Twoje zapytanie. Skontaktujemy się z Tobą w ciągu 24 godzin."
+        description="Informacje po wysłaniu zapytania do FOTZ Studio."
         canonical="https://www.fotz-studio.pl/podziekowanie"
         noIndex={true}
       />
@@ -82,8 +67,8 @@ export default function Podziekowanie() {
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground mb-8">
-              Otrzymaliśmy Twoje zgłoszenie i już nad nim pracujemy. 
-              Skontaktujemy się z Tobą w ciągu 24 godzin roboczych.
+              Jeśli formularz potwierdził zapis, zgłoszenie trafiło do obsługi.
+              W sprawach wymagających szybkiego kontaktu zadzwoń do nas.
             </p>
 
             {/* What happens next */}

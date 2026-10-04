@@ -30,9 +30,9 @@ const StronyInternetoweSzczecin = () => {
   ];
 
   const pricing = [
-    { title: "Landing Page", desc: "Strona wizytówkowa prezentująca firmę", price: "od 2 000 zł", features: ["Do 5 podstron", "Responsywny design", "Podstawowe SEO", "Formularz kontaktowy", "Certyfikat SSL"] },
-    { title: "Strona Firmowa", desc: "Rozbudowana strona z dodatkowymi funkcjami", price: "od 5 000 zł", popular: true, features: ["Do 15 podstron", "Zaawansowane SEO", "Blog firmowy", "Integracja social media", "System CMS", "Wsparcie techniczne"] },
-    { title: "Sklep E-commerce", desc: "Platforma sprzedażowa z integracjami", price: "od 8 000 zł", features: ["Nieograniczona liczba produktów", "Panel administracyjny", "Integracje płatności", "Optymalizacja konwersji", "Narzędzia marketingowe"] },
+    { title: "Landing Page", desc: "Strona wizytówkowa prezentująca firmę", price: "Wycena indywidualna", features: ["Do 5 podstron", "Responsywny design", "Podstawowe SEO", "Formularz kontaktowy", "Certyfikat SSL"] },
+    { title: "Strona Firmowa", desc: "Rozbudowana strona z dodatkowymi funkcjami", price: "Wycena indywidualna", popular: true, features: ["Do 15 podstron", "Zaawansowane SEO", "Blog firmowy", "Integracja social media", "System CMS", "Wsparcie techniczne"] },
+    { title: "Sklep E-commerce", desc: "Platforma sprzedażowa z integracjami", price: "Wycena indywidualna", features: ["Nieograniczona liczba produktów", "Panel administracyjny", "Integracje płatności", "Optymalizacja konwersji", "Narzędzia marketingowe"] },
   ];
 
   const processSteps = [
@@ -58,10 +58,10 @@ const StronyInternetoweSzczecin = () => {
   ];
 
   const stats = [
-    { value: "200+", label: "Zrealizowanych projektów", icon: Layers },
-    { value: "98%", label: "Zadowolonych klientów", icon: Star },
+    { value: "WWW", label: "Strony i sklepy", icon: Layers },
+    { value: "UX", label: "Projekt dla odbiorcy", icon: Star },
     { value: "5 lat", label: "Doświadczenia", icon: Clock },
-    { value: "24/7", label: "Wsparcie techniczne", icon: Headphones },
+    { value: "Kontakt", label: "Uzgodniona opieka", icon: Headphones },
   ];
 
   const benefits = [

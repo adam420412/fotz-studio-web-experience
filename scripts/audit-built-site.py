@@ -39,6 +39,15 @@ def inspect(html):
     if h.canonical and h.meta['og:url'] != h.canonical:issues.append('og:url differs from canonical')
     # Website URLs in schema and image tags must not reintroduce the old domain.
     if re.search(r'https?://(?:www\.)?fotz\.pl(?=[/\s\"\'<>?#]|$)', html):issues.append('old website URL in generated HTML')
+    if not noindex:
+        body = re.search(r'<!-- fotz-body:start -->([\s\S]*?)<!-- fotz-body:end -->', html)
+        if not body: issues.append('missing prerendered page body')
+        elif not re.search(r'<h1[\s>]', body[1]): issues.append('missing page H1')
+    for raw in re.findall(r'<script\b[^>]*type="application/ld\+json"[^>]*>([\s\S]*?)</script>', html):
+        try: json.loads(raw)
+        except ValueError: issues.append('invalid JSON-LD')
+    for asset in re.findall(r'<(?:img|script)\b[^>]*\bsrc="(/[^"?#]+)', html):
+        if not (DIST / unquote(asset.lstrip('/'))).is_file(): issues.append('missing local asset: '+asset)
     return {'title':h.titles,'description':h.meta['description'],'canonical':h.canonical,'noindex':noindex,'issues':issues}
 
 pages=[]

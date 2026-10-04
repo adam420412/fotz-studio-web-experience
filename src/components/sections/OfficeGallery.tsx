@@ -18,19 +18,21 @@ const officeImages = [
 
 interface OfficeGalleryProps {
   showCTA?: boolean;
+  compact?: boolean;
   title?: string;
   subtitle?: string;
 }
 
 export function OfficeGallery({
   showCTA = true,
+  compact = false,
 }: OfficeGalleryProps) {
   return (
     <section
       className="relative overflow-hidden"
       style={{ background: "hsl(var(--background))" }}
     >
-      <div className="max-w-[1440px] mx-auto px-6 md:px-12 py-24 md:py-32">
+      <div className="max-w-[1440px] mx-auto px-6 md:px-12 py-14 md:py-20">
         {/* Header */}
         <div className="text-center mb-12 md:mb-16">
           <span className="dv-eyebrow mb-6 inline-block">Plac Wolności 16, Poznań</span>
@@ -58,8 +60,8 @@ export function OfficeGallery({
         </div>
 
         {/* Gallery Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-4">
-          {officeImages.map((image, index) => (
+        <div className={`grid ${compact ? "grid-cols-3" : "grid-cols-2 lg:grid-cols-5"} gap-3 md:gap-4`}>
+          {(compact ? officeImages.slice(0, 3) : officeImages).map((image, index) => (
             <div
               key={index}
               className="group relative aspect-[3/4] overflow-hidden"
@@ -69,7 +71,7 @@ export function OfficeGallery({
                 src={image.src}
                 alt={image.alt}
                 className="w-full h-full"
-                sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
+                sizes={compact ? "33vw" : "(max-width: 1024px) 50vw, 20vw"}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-3 left-3">

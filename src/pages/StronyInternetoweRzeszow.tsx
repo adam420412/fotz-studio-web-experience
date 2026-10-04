@@ -38,25 +38,25 @@ export default function StronyInternetoweRzeszow() {
       icon: Monitor,
       title: "Strony wizytówka",
       desc: "Prezentacja Twojej firmy w internecie. Podstawowe informacje, galeria, formularz kontaktowy. Idealne dla małych firm i usług. Budują zaufanie klientów.",
-      price: "2 500 - 4 500 zł",
+      price: "Wycena indywidualna",
     },
     {
       icon: ShoppingCart,
       title: "Sklepy internetowe",
       desc: "Pełnofunkcyjne platformy e-commerce z integracją płatności, zarządzaniem magazynem, logistyką. Sprzedawaj 24/7 bez granic geograficznych.",
-      price: "8 000 - 25 000 zł",
+      price: "Wycena indywidualna",
     },
     {
       icon: Globe,
       title: "Portale i serwisy",
       desc: "Duże projekty z zaawansowaną funkcjonalnością. Systemy zarządzania treścią, profile użytkowników, forum, blog, multimedia. Dla ambitnych projektów.",
-      price: "25 000 - 100 000 zł+",
+      price: "Wycena indywidualna",
     },
     {
       icon: Code,
       title: "Aplikacje webowe",
       desc: "Zaawansowane narzędzia online. Systemy CRM, ERP, platformy SaaS. Przepisujemy procesy biznesowe do kodu dla maksymalnej efektywności.",
-      price: "50 000 - 300 000 zł+",
+      price: "Wycena indywidualna",
     },
   ];
 
@@ -152,7 +152,7 @@ export default function StronyInternetoweRzeszow() {
     {
       question: "Ile kosztuje strona internetowa?",
       answer:
-        "Wizytówka: 2500-4500 zł. Standard z WordPressem: 5000-9000 zł. E-commerce: 8000-25000 zł. Cena zależy od liczby podstron, funkcjonalności, zakresu SEO. Dajemy wycenę po rozmowie i analizie Twoich potrzeb. Nie ma ukrytych kosztów.",
+        "Koszt ustalamy po poznaniu zakresu: liczby podstron, treści, integracji i sposobu zarządzania. W ofercie określamy cenę, etapy, poprawki i termin; utrzymanie oraz działania marketingowe omawiamy osobno.",
     },
     {
       question: "Czy wybiercze WordPress czy gotowy builder?",

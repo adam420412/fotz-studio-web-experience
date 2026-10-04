@@ -25,6 +25,7 @@ export async function sendLeadToCRM(data: LeadData): Promise<{ success: boolean;
     const utms = getUTMs();
     const response = await fetch(CRM_WEBHOOK_URL, {
       method: "POST",
+      signal: AbortSignal.timeout(12000),
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         type: "lead",
@@ -45,13 +46,13 @@ export async function sendLeadToCRM(data: LeadData): Promise<{ success: boolean;
     });
 
     const result = await response.json();
-    
-    if (!response.ok) {
-      console.error("CRM webhook error:", result);
+
+    if (!response.ok || result.success === false || result.error || !(result.success === true || typeof result.lead_id === "string")) {
+      console.error("CRM webhook did not acknowledge the lead:", response.status);
       return { success: false, error: result.error };
     }
 
-    console.log("Lead sent to CRM:", result);
+
     return { success: true, lead_id: result.lead_id };
   } catch (error) {
     console.error("CRM webhook failed:", error);
@@ -63,6 +64,7 @@ export async function sendBookingToCRM(data: BookingData): Promise<{ success: bo
   try {
     const response = await fetch(CRM_WEBHOOK_URL, {
       method: "POST",
+      signal: AbortSignal.timeout(12000),
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         type: "booking",
@@ -73,19 +75,19 @@ export async function sendBookingToCRM(data: BookingData): Promise<{ success: bo
           booking_date: data.booking_date,
           booking_time: data.booking_time,
           service_type: data.service_type || "konsultacja",
-          source: data.source || "fotz.pl",
+          source: data.source || "fotz-studio.pl",
         },
       }),
     });
 
     const result = await response.json();
-    
-    if (!response.ok) {
-      console.error("CRM webhook error:", result);
+
+    if (!response.ok || result.success === false || result.error || !(result.success === true || typeof result.lead_id === "string")) {
+      console.error("CRM webhook did not acknowledge the booking:", response.status);
       return { success: false, error: result.error };
     }
 
-    console.log("Booking sent to CRM:", result);
+
     return { success: true, lead_id: result.lead_id };
   } catch (error) {
     console.error("CRM webhook failed:", error);

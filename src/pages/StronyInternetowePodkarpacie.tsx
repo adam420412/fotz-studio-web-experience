@@ -25,7 +25,7 @@ export default function StronyInternetowePodkarpacie() {
     },
     {
       question: "Ile kosztuje strona internetowa w Podkarpaciu?",
-      answer: "Ceny zaczynają się od 499 zł dla strony wizytówki i sięgają 5000-10000 zł dla bardziej zaawansowanych projektów e-commerce czy korporacyjnych. Każdą wycenę dostosowujemy do rzeczywistych potrzeb Twojej firmy. Zapraszamy na darmową konsultację."
+      answer: "Koszt ustalamy po poznaniu zakresu: liczby podstron, treści, integracji i sposobu zarządzania. W ofercie określamy cenę, etapy, poprawki i termin; utrzymanie oraz działania marketingowe omawiamy osobno."
     },
     {
       question: "Czym się wyróżniacie dla firm z Podkarpacia?",
@@ -45,7 +45,7 @@ export default function StronyInternetowePodkarpacie() {
     },
     {
       question: "Co się stanie po uruchomieniu strony?",
-      answer: "Po uruchomieniu oferujemy pakiety wsparcia od 100 zł/miesiąc za podstawowe utrzymanie, do 500 zł/miesiąc za pełną opiekę z cotygodniowymi raportami SEO. Wybierasz pakiet, który pasuje do Twoich potrzeb."
+      answer: "Po uruchomieniu możemy uzgodnić opiekę techniczną. Zakres, częstotliwość prac i koszt zapisujemy w indywidualnej ofercie."
     }
   ];
 
@@ -110,7 +110,7 @@ export default function StronyInternetowePodkarpacie() {
     <>
       <SEOHead
         title="Strony internetowe Podkarpacie | Rzeszów | FOTZ Studio"
-        description="Profesjonalne strony internetowe dla firm z Podkarpacia i Rzeszowa. Specjalizujemy się w firmach z Aviation Valley, startupach i sektorze logistyki. Strony od 499 zł, responsywne i zoptymalizowane pod SEO."
+        description="Profesjonalne strony internetowe dla firm z Podkarpacia i Rzeszowa. Specjalizujemy się w firmach z Aviation Valley, startupach i sektorze logistyki. Strony Wycena indywidualna, responsywne i zoptymalizowane pod SEO."
         canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/podkarpacie"
         structuredData={{
           "@context": "https://schema.org",
@@ -160,7 +160,7 @@ export default function StronyInternetowePodkarpacie() {
             </h1>
             
             <p className="text-xl text-slate-300 mb-8 leading-relaxed">
-              Podkarpacie to najszybciej rosnący region w Polsce. Czy Twoja firma rośnie razem z regionem? Nowoczesna strona internetowa to krok, który zrobimy za Ciebie. Już od 499 zł.
+              Podkarpacie to najszybciej rosnący region w Polsce. Czy Twoja firma rośnie razem z regionem? Nowoczesna strona internetowa to krok, który zrobimy za Ciebie. Zapytaj o indywidualną wycenę.
             </p>
 
             <div className="flex gap-4 flex-wrap">
@@ -317,7 +317,7 @@ export default function StronyInternetowePodkarpacie() {
           <div className="grid md:grid-cols-3 gap-8">
             <FadeInView delay={0}>
               <div className="bg-white p-8 rounded-lg border border-slate-200">
-                <div className="text-3xl font-bold text-primary mb-4">499 zł</div>
+                <div className="text-3xl font-bold text-primary mb-4">Wycena indywidualna</div>
                 <h3 className="text-xl font-semibold mb-4">Strona Wizytówka</h3>
                 <ul className="space-y-2 text-slate-600">
                   <li className="flex items-start gap-2">
@@ -341,7 +341,7 @@ export default function StronyInternetowePodkarpacie() {
                 <div className="absolute -top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
                   Popularne
                 </div>
-                <div className="text-3xl font-bold text-primary mb-4">1499 zł</div>
+                <div className="text-3xl font-bold text-primary mb-4">Wycena indywidualna</div>
                 <h3 className="text-xl font-semibold mb-4">Strona Firmowa</h3>
                 <ul className="space-y-2 text-slate-600">
                   <li className="flex items-start gap-2">
@@ -362,7 +362,7 @@ export default function StronyInternetowePodkarpacie() {
 
             <FadeInView delay={0.2}>
               <div className="bg-white p-8 rounded-lg border border-slate-200">
-                <div className="text-3xl font-bold text-primary mb-4">2999 zł</div>
+                <div className="text-3xl font-bold text-primary mb-4">Wycena indywidualna</div>
                 <h3 className="text-xl font-semibold mb-4">Sklep E-commerce</h3>
                 <ul className="space-y-2 text-slate-600">
                   <li className="flex items-start gap-2">

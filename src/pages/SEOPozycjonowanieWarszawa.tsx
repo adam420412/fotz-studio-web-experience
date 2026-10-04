@@ -9,17 +9,17 @@ import { FAQSchema, ServiceSchema, BreadcrumbSchema, LocalBusinessSchema, Organi
 import { ContactSection } from "@/components/sections/ContactSection";
 
 const features = [
-  { icon: Search, title: "Pozycjonowanie lokalne Warszawa", desc: "Optymalizujemy stronę pod frazy lokalne: '[usługa] Warszawa', '[branża] Warszawa' i okolice. Twoja firma pojawia się dokładnie tam, gdzie szukają Twoi klienci." },
-  { icon: MapPin, title: "Google Maps i Google My Business", desc: "Optymalizujemy profil Google My Business, zbieramy opinie i dbamy o obecność w mapach. Firmy z optymalizowanym GMB mają 3x więcej kliknięć niż bez optymalizacji." },
-  { icon: TrendingUp, title: "Audyt SEO dla Warszawa", desc: "Analizujemy konkurencję w Warszawa, identyfikujemy frazy z największym potencjałem i tworzymy strategię, która pozwoli Ci dominować lokalny rynek." },
-  { icon: BarChart2, title: "Raportowanie i monitoring", desc: "Miesięczne raporty z pozycji w Google dla Warszawa i okolic, ruchu organicznego i konwersji. Wiesz dokładnie, jakie efekty osiągamy." },
+  { icon: Search, title: "Pozycjonowanie lokalne Warszawa", desc: "Optymalizujemy stronę pod frazy lokalne: '[usługa] Warszawa', '[branża] Warszawa' i okolice. Dobieramy tematy do rzeczywistych usług oraz zapytań klientów." },
+  { icon: MapPin, title: "Google Maps i Profil Firmy w Google", desc: "Optymalizujemy profil Profil Firmy w Google, zbieramy opinie i dbamy o obecność w mapach. Zakres obejmuje dane firmy, ofertę i sposób pozyskiwania autentycznych opinii." },
+  { icon: TrendingUp, title: "Audyt SEO dla Warszawy", desc: "Analizujemy konkurencję w Warszawie, identyfikujemy frazy z największym potencjałem i tworzymy plan działań dopasowany do oferty i możliwości firmy." },
+  { icon: BarChart2, title: "Raportowanie i monitoring", desc: "Miesięczne raporty z pozycji w Google dla Warszawy i okolic, ruchu organicznego i konwersji. Wiesz dokładnie, jakie efekty osiągamy." },
 ];
 
 const faqItems = [
-  { question: "Ile kosztuje pozycjonowanie w Warszawa?", answer: "Koszt pozycjonowania w Warszawa zależy od branży, liczby docelowych fraz i konkurencyjności rynku. Ceny zaczynają się od 800-1200 zł/mies. dla mniejszych firm lokalnych, a dla bardziej konkurencyjnych fraz wynoszą 2000-5000 zł/mies. Oferujemy bezpłatną wycenę po audycie." },
-  { question: "Jak długo trwa pozycjonowanie w Warszawa?", answer: "Pierwsze efekty (wzrost ruchu organicznego) widoczne są po 2-3 miesiącach. Stabilne wysokie pozycje dla głównych fraz osiągamy po 4-8 miesiącach. Pozycjonowanie lokalne w Warszawa jest zazwyczaj szybsze niż ogólnopolskie." },
-  { question: "Czy pozycjonujecie tylko firmy z Warszawa?", answer: "Nie — pracujemy zdalnie z firmami z całej Polski. Nasza siedziba jest w Poznaniu, ale z sukcesem pozycjonujemy firmy w Warszawa, Warszawie, Krakowie i innych miastach. Znajomość lokalnego rynku i fraz nie wymaga fizycznej obecności." },
-  { question: "Co wyróżnia rynek stolicy Polski w kontekście SEO?", answer: "Z ponad 1,8 mln mieszkańców Warszawa to największy rynek w Polsce — i najbardziej konkurencyjny dla SEO. Oznacza to specyficzne frazy kluczowe, lokalną konkurencję i inne zwyczaje wyszukiwania — uwzględniamy to przy budowie strategii." },
+  { question: "Ile kosztuje pozycjonowanie w Warszawie?", answer: "Wycenę ustalamy po analizie witryny, rynku i zakresu prac. W ofercie rozpisujemy działania techniczne, treści, pomiar i koszty dodatkowe. Zestawienie ma pozwolić porównać ten sam zakres usług." },
+  { question: "Jak długo trwa pozycjonowanie w Warszawie?", answer: "Termin zależy od stanu witryny, konkurencji i zakresu zmian. Najpierw sprawdzamy indeksowanie i błędy techniczne, następnie rozwijamy treści. Ocenę opieramy na danych Search Console oraz zapytaniach klientów; nie gwarantujemy pozycji ani terminu wejścia do TOP 10." },
+  { question: "Czy pozycjonujecie tylko firmy z Warszawy?", answer: "Nie — pracujemy zdalnie z firmami z całej Polski. Nasza siedziba jest w Poznaniu, ale z sukcesem pozycjonujemy firmy w Warszawie, Warszawie, Krakowie i innych miastach. Znajomość lokalnego rynku i fraz nie wymaga fizycznej obecności." },
+  { question: "Co wyróżnia rynek stolicy Polski w kontekście SEO?", answer: "Z ponad 1,8 mln mieszkańców Warszawie to największy rynek w Polsce — i najbardziej konkurencyjny dla SEO. Oznacza to specyficzne frazy kluczowe, lokalną konkurencję i inne zwyczaje wyszukiwania — uwzględniamy to przy budowie strategii." },
 ];
 
 const SEOPozycjonowanieWarszawa = () => {
@@ -33,7 +33,7 @@ const SEOPozycjonowanieWarszawa = () => {
       />
       <ServiceSchema
         name="Pozycjonowanie Warszawa"
-        description="Usługi SEO i pozycjonowania stron dla firm z Warszawa. Zwiększamy widoczność w Google dla lokalnych fraz."
+        description="Usługi SEO i pozycjonowania stron dla firm z Warszawy. Zwiększamy widoczność w Google dla lokalnych fraz."
         provider="Fotz Studio"
         areaServed="Warszawa"
       />
@@ -64,7 +64,7 @@ const SEOPozycjonowanieWarszawa = () => {
                 Pozycjonowanie <span className="text-gradient">Warszawa</span>: SEO dla Lokalnych Firm
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-                Zwiększamy widoczność firm z Warszawy w Google. Agencja SEO Warszawa — pozycjonowanie stron i audyt SEO dla firm ze stolicy. Z ponad 1,8 mln mieszkańców Warszawa to największy rynek w Polsce — i najbardziej konkurencyjny dla SEO. Usługi SEO Warszawa — pozycjonowanie lokalne, GMB i link building.
+                Zwiększamy widoczność firm z Warszawy w Google. Agencja SEO Warszawa — pozycjonowanie stron i audyt SEO dla firm ze stolicy. Z ponad 1,8 mln mieszkańców Warszawie to największy rynek w Polsce — i najbardziej konkurencyjny dla SEO. Usługi SEO Warszawa — pozycjonowanie lokalne, GMB i link building.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild size="lg" className="group">
@@ -74,7 +74,7 @@ const SEOPozycjonowanieWarszawa = () => {
                   </Link>
                 </Button>
                 <Button asChild size="lg" variant="outline">
-                  <Link to="/seo/audyt">Darmowy audyt</Link>
+                  <Link to="/seo/audyt">Zakres audytu</Link>
                 </Button>
               </div>
             </motion.div>
@@ -84,7 +84,7 @@ const SEOPozycjonowanieWarszawa = () => {
         <section className="py-20 bg-muted/30">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-heading font-bold text-center mb-12">
-              SEO dla Firm z Warszawa
+              SEO dla Firm z Warszawy
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
               {features.map((f) => (
@@ -101,7 +101,7 @@ const SEOPozycjonowanieWarszawa = () => {
         <section className="py-20">
           <div className="container mx-auto px-4 max-w-3xl">
             <h2 className="text-3xl font-heading font-bold text-center mb-12">
-              Pytania o pozycjonowanie w Warszawa
+              Pytania o pozycjonowanie w Warszawie
             </h2>
             <Accordion type="single" collapsible className="space-y-4">
               {faqItems.map((item, i) => (

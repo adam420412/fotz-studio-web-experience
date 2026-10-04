@@ -191,7 +191,7 @@ export default function BlogSEOCoToJest() {
                 <TrendingUp className="w-5 h-5 text-blue-600 mb-2" />
                 <p className="text-blue-800 font-semibold mb-2">Chcesz pojawić się wyżej w Google?</p>
                 <p className="text-blue-700 text-sm mb-3">
-                  Prowadzimy pozycjonowanie stron od 499 zł/mies. Audyt bezpłatny.
+                  Zakres pozycjonowania i wycenę przygotowujemy po analizie strony oraz celów firmy.
                 </p>
                 <Link to="/seo/pozycjonowanie" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
                   Pozycjonowanie stron — oferta <ArrowRight className="w-4 h-4" />

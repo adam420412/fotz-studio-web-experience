@@ -69,20 +69,20 @@ const StronyInternetowePoznan = () => {
     { 
       title: "Landing Page", 
       desc: "Strona wizytówkowa prezentująca firmę", 
-      price: "od 2 000 zł",
+      price: "Wycena indywidualna",
       features: ["Do 5 podstron", "Responsywny design", "Podstawowe SEO", "Formularz kontaktowy", "Certyfikat SSL"]
     },
     { 
       title: "Strona Firmowa", 
       desc: "Rozbudowana strona z dodatkowymi funkcjami", 
-      price: "od 5 000 zł",
+      price: "Wycena indywidualna",
       popular: true,
       features: ["Do 15 podstron", "Zaawansowane SEO", "Blog firmowy", "Integracja social media", "System CMS", "Wsparcie techniczne"]
     },
     { 
       title: "Sklep E-commerce", 
       desc: "Platforma sprzedażowa z integracjami", 
-      price: "od 8 000 zł",
+      price: "Wycena indywidualna",
       features: ["Nieograniczona liczba produktów", "Panel administracyjny", "Integracje płatności", "Optymalizacja konwersji", "Narzędzia marketingowe"]
     },
   ];
@@ -133,7 +133,7 @@ const StronyInternetowePoznan = () => {
     },
     {
       question: "Ile kosztuje strona internetowa w Poznaniu?",
-      answer: "Cena uzależniona jest od zakresu prac, skomplikowania projektu oraz technologii. Strona wizytówkowa kosztuje od 2 000 zł, strona firmowa od 5 000 zł, a sklep internetowy od 8 000 zł netto. Strony z pakietem SEO mogą być droższe."
+      answer: "Koszt zależy od zakresu, treści i integracji. Prześlij brief, aby otrzymać indywidualną ofertę z harmonogramem i rozpisanymi kosztami."
     },
     {
       question: "Jakie systemy CMS wykorzystujecie?",
@@ -154,10 +154,10 @@ const StronyInternetowePoznan = () => {
   ];
 
   const stats = [
-    { value: "200+", label: "Zrealizowanych projektów", icon: Layers },
-    { value: "98%", label: "Zadowolonych klientów", icon: Star },
+    { value: "WWW", label: "Strony i sklepy", icon: Layers },
+    { value: "UX", label: "Projekt dla odbiorcy", icon: Star },
     { value: "5 lat", label: "Doświadczenia", icon: Clock },
-    { value: "24/7", label: "Wsparcie techniczne", icon: Headphones },
+    { value: "Kontakt", label: "Uzgodniona opieka", icon: Headphones },
   ];
 
   const benefits = [
@@ -599,7 +599,7 @@ const StronyInternetowePoznan = () => {
               Ile kosztuje strona internetowa w Poznaniu? Transparentne wyceny
             </h2>
             <p className="text-muted-foreground mb-4">
-              Ceny stron internetowych w Poznaniu wahają się od kilkuset złotych za strony na kreatorach (Wix, Squarespace) do kilkudziesięciu tysięcy za zaawansowane portale e-commerce. W Fotz Studio działamy w segmencie profesjonalnym: strona wizytówkowa od 2 000 zł, strona firmowa od 5 000 zł, sklep internetowy od 8 000 zł. Każda wycena jest bezpłatna i przygotowywana indywidualnie — bez ukrytych kosztów.
+              Ceny stron internetowych w Poznaniu wahają się od kilkuset złotych za strony na kreatorach (Wix, Squarespace) do kilkudziesięciu tysięcy za zaawansowane portale e-commerce. W FOTZ Studio koszt ustalamy według zakresu: struktury, treści, funkcji i integracji. Każda wycena jest bezpłatna i przygotowywana indywidualnie — bez ukrytych kosztów.
             </p>
             <p className="text-muted-foreground mb-4">
               Jeśli szukasz więcej informacji o kosztach i rodzajach stron internetowych, przejdź do naszej strony głównej usługi:{" "}

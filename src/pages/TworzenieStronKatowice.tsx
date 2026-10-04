@@ -28,7 +28,7 @@ export default function TworzenieStronKatowice() {
   const packages = [
     {
       title: "Wizytówka",
-      price: "od 499 zł",
+      price: "Wycena indywidualna",
       desc: "Strona wizytówkowa dla małych firm",
       features: [
         "Do 3 podstron",
@@ -40,7 +40,7 @@ export default function TworzenieStronKatowice() {
     },
     {
       title: "Strona Firmowa",
-      price: "1499-3999 zł",
+      price: "Wycena indywidualna",
       desc: "Rozbudowana strona z dodatkowymi funkcjami",
       popular: true,
       features: [
@@ -54,7 +54,7 @@ export default function TworzenieStronKatowice() {
     },
     {
       title: "Sklep e-commerce",
-      price: "2999-9999 zł",
+      price: "Wycena indywidualna",
       desc: "Platforma sprzedażowa z integracjami",
       features: [
         "Nieograniczona liczba produktów",
@@ -106,7 +106,7 @@ export default function TworzenieStronKatowice() {
   const faqItems = [
     {
       question: "Ile kosztuje strona internetowa w Katowicach?",
-      answer: "Ceny zaczynają się od 499 zł za wizytówkę, strony firmowe od 1499 zł, sklepy od 2999 zł. Dokładna wycena zależy od zakresu i funkcjonalności projektu. Oferujemy bezpłatną konsultację dla firm z całej metropolii GZM."
+      answer: "Koszt ustalamy po poznaniu zakresu: liczby podstron, treści, integracji i sposobu zarządzania. W ofercie określamy cenę, etapy, poprawki i termin; utrzymanie oraz działania marketingowe omawiamy osobno."
     },
     {
       question: "Jak długo trwa realizacja strony na Śląsku?",
@@ -134,7 +134,7 @@ export default function TworzenieStronKatowice() {
     <>
       <SEOHead
         title="Tworzenie stron internetowych Katowice | Profesjonalne strony WWW"
-        description="Tworzenie stron internetowych Katowice i Śląsk — profesjonalne strony dla firm. Od 499 zł netto. Bezpłatna wycena!"
+        description="Tworzenie stron internetowych Katowice i Śląsk — profesjonalne strony dla firm. Wycena indywidualna. Bezpłatna wycena!"
         canonical="https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych/katowice"
         keywords="tworzenie stron internetowych katowice, strony internetowe katowice, tworzenie stron www katowice, projektowanie stron internetowych katowice, strony www katowice, strony internetowe śląsk, tworzenie stron katowice, strona internetowa katowice, projektowanie stron katowice, sklep internetowy katowice"
       />
@@ -163,7 +163,7 @@ export default function TworzenieStronKatowice() {
               </motion.h1>
 
               <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.4 }} className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed">
-                <strong className="text-foreground">Tworzenie stron internetowych Katowice — strony www dla firm z Katowic i całego Śląska.</strong> Tworzymy profesjonalne strony internetowe Katowice i sklepy online dla metropolii GZM, które przyciągają klientów i generują biznes. Projektowanie stron www Katowice od 499 zł.
+                <strong className="text-foreground">Tworzenie stron internetowych Katowice — strony www dla firm z Katowic i całego Śląska.</strong> Tworzymy profesjonalne strony internetowe Katowice i sklepy online dla metropolii GZM, które przyciągają klientów i generują biznes. Projektowanie stron www Katowice. Wycena indywidualna.
               </motion.p>
 
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.5 }} className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -226,7 +226,7 @@ export default function TworzenieStronKatowice() {
               <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
                 <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">Cennik</span>
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-4">Pakiety stron internetowych</h2>
-                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">Od 499 zł netto. Transparentne ceny bez ukrytych kosztów</p>
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">Wycena indywidualna. Transparentne ceny bez ukrytych kosztów</p>
               </motion.div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                 {packages.map((pkg, index) => (
@@ -234,7 +234,7 @@ export default function TworzenieStronKatowice() {
                     {pkg.popular && <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 px-4 py-1 bg-primary text-primary-foreground text-sm font-semibold rounded-full">Najpopularniejszy</div>}
                     <h3 className="text-2xl font-bold mb-2">{pkg.title}</h3>
                     <p className="text-muted-foreground mb-4">{pkg.desc}</p>
-                    <div className="text-3xl font-bold mb-6">{pkg.price}</div>
+                    <div className="text-xl font-bold mb-6">{pkg.price}</div>
                     <ul className="space-y-3 mb-8">
                       {pkg.features.map((feature, i) => (
                         <li key={i} className="flex items-start gap-3">

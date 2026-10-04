@@ -1,226 +1,34 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowUpRight, Play } from "lucide-react";
-
-type LiveStatProps = {
-  label: string;
-  value: string;
-  sub: string;
-  accent?: boolean;
-};
-
-function LiveStat({ label, value, sub, accent }: LiveStatProps) {
-  return (
-    <div
-      className="flex-1 flex flex-col justify-between relative overflow-hidden px-6 py-7 md:px-8 md:py-8 border-b border-[color:var(--dv-hair)]"
-      style={{
-        background: accent ? "var(--dv-brand-grad)" : "transparent",
-        color: accent ? "#fff" : "hsl(var(--foreground))",
-      }}
-    >
-      <span className="dv-mono uppercase tracking-[0.14em] text-[11px] opacity-60">
-        {label}
-      </span>
-      <div className="mt-5">
-        <div
-          className="font-geist leading-none mb-3"
-          style={{
-            fontSize: "clamp(36px, 3.8vw, 60px)",
-            letterSpacing: "-0.05em",
-          }}
-        >
-          {value}
-        </div>
-        <div className="dv-mono uppercase tracking-[0.1em] text-xs opacity-60">
-          {sub}
-        </div>
-      </div>
-    </div>
-  );
-}
-
-type VideoStatProps = {
-  label: string;
-  caption: string;
-  sub: string;
-  src: string;
-  poster?: string;
-};
-
-function VideoStat({ label, caption, sub, src, poster }: VideoStatProps) {
-  return (
-    <div
-      className="flex-1 relative overflow-hidden border-b border-[color:var(--dv-hair)] min-h-[240px] sm:col-span-2 lg:col-span-1 lg:min-h-[210px]"
-      style={{ color: "#fff" }}
-    >
-      {/* Autoplay video */}
-      <video
-        className="absolute inset-0 w-full h-full object-cover"
-        src={src}
-        poster={poster}
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="metadata"
-        aria-hidden="true"
-      />
-
-      {/* Readability gradient */}
-      <div
-        aria-hidden
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          background:
-            "linear-gradient(180deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.15) 35%, rgba(0,0,0,0.55) 100%)",
-        }}
-      />
-
-      {/* Copy */}
-      <div className="relative h-full flex flex-col justify-between px-6 py-7 md:px-8 md:py-8">
-        <div className="flex items-center gap-2">
-          <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-white/15 backdrop-blur-sm">
-            <Play className="w-3 h-3" strokeWidth={2} fill="currentColor" />
-          </span>
-          <span className="dv-mono uppercase tracking-[0.14em] text-[11px] opacity-85">
-            {label}
-          </span>
-        </div>
-        <div className="mt-5">
-          <div
-            className="font-geist leading-[0.95] mb-3"
-            style={{
-              fontSize: "clamp(32px, 3.2vw, 52px)",
-              letterSpacing: "-0.03em",
-            }}
-          >
-            {caption}
-          </div>
-          <div className="dv-mono uppercase tracking-[0.1em] text-xs opacity-75">
-            {sub}
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
+import { business } from "@/data/business.mjs";
 
 export function HeroV3() {
+  const [playing, setPlaying] = useState(false);
   return (
-    <section
-      className="relative grid grid-cols-1 lg:grid-cols-[1.3fr_1fr] isolate pt-20"
-      style={{
-        minHeight: "min(900px, 100svh)",
-        background: "hsl(var(--background))",
-      }}
-    >
-      {/* Brand-gradient ambient glow — own clipping container so it doesn't
-          force the section to clip and cut off text/tiles */}
-      <div
-        aria-hidden
-        className="absolute inset-0 overflow-hidden pointer-events-none -z-10"
-      >
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "radial-gradient(ellipse 50% 60% at 10% 90%, rgba(120,20,60,0.22) 0%, transparent 60%), radial-gradient(ellipse 50% 60% at 90% 10%, rgba(20,40,80,0.28) 0%, transparent 60%)",
-          }}
-        />
-      </div>
-
-      {/* LEFT — editorial copy */}
-      <div className="relative flex flex-col justify-between min-w-0 px-6 py-10 md:px-12 md:py-12 lg:border-r border-[color:var(--dv-hair)]">
-        <div className="flex flex-wrap items-center justify-between gap-3 dv-mono uppercase tracking-[0.14em] text-[11px] md:text-xs text-[color:var(--dv-fg-muted)]">
-          <span>Fotz Studio · Plac Wolności 16 · Poznań</span>
-          <span>52.4082° N · 16.9335° E</span>
-        </div>
-
-        <div className="py-10 md:py-14">
-          <h1
-            className="font-geist"
-            style={{
-              fontSize: "clamp(46px, 7.2vw, 116px)",
-              letterSpacing: "-0.06em",
-              lineHeight: 0.95,
-              fontWeight: 400,
-              paddingBottom: "0.08em",
-            }}
-          >
-            Marketing{" "}
-            <span
-              className="dv-text-grad italic"
-              style={{ display: "inline-block", paddingRight: "0.08em" }}
-            >
-              z&nbsp;dowodami.
-            </span>
-          </h1>
-
-          <p
-            className="mt-7 md:mt-8 text-[color:var(--dv-fg-muted)]"
-            style={{
-              fontSize: "clamp(18px, 1.6vw, 22px)",
-              lineHeight: 1.4,
-              maxWidth: 560,
-            }}
-          >
-            Od strategii do zasięgu — własne studio, zespół na miejscu, zero
-            outsourcingu. Ostatnie 12 miesięcy:
-          </p>
-
-          <div className="flex flex-wrap gap-3 mt-8 md:mt-10">
-            <Link to="/kontakt" className="dv-btn dv-btn-primary">
-              Bezpłatna konsultacja
-              <ArrowUpRight className="w-4 h-4" strokeWidth={1.5} />
-            </Link>
-            <Link to="/realizacje" className="dv-btn dv-btn-secondary">
-              Zobacz realizacje
-            </Link>
+    <section className="pt-28 pb-12 md:pt-36 md:pb-20 relative overflow-hidden" style={{ background: "hsl(var(--background))" }}>
+      <div aria-hidden className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse at 85% 20%, rgba(120,20,60,.18), transparent 60%)" }} />
+      <div className="relative max-w-[1440px] mx-auto px-6 md:px-12 grid lg:grid-cols-[1.15fr_1fr] gap-10 lg:gap-16 items-center">
+        <div className="min-w-0">
+          <p className="dv-eyebrow mb-6">FOTZ Studio · Agencja marketingowa · Poznań</p>
+          <h1 className="font-geist text-[clamp(44px,6.5vw,96px)] leading-[1.02] tracking-[-.05em]">Twoja marka.<br /><span className="dv-text-grad italic">Od pomysłu<br className="hidden lg:block" /> do publikacji.</span></h1>
+          <p className="mt-6 text-lg text-muted-foreground max-w-xl leading-relaxed">Tworzymy strony internetowe, filmy i komunikację w social media. Łączymy je z reklamą i SEO, żeby odbiorca mógł poznać Twoją ofertę i łatwo się skontaktować.</p>
+          <div className="flex flex-wrap gap-3 mt-7">
+            <Link to={business.consultationPath} className="dv-btn dv-btn-primary">Konsultacja 15 min <ArrowUpRight className="w-4 h-4" /></Link>
+            <Link to="/realizacje" className="dv-btn dv-btn-secondary">Zobacz realizacje</Link>
           </div>
-
-          <div className="flex flex-wrap items-center gap-6 mt-10 dv-mono uppercase tracking-[0.14em] text-[11px] text-[color:var(--dv-fg-muted)]">
-            <span className="inline-flex items-center gap-2">
-              <span style={{ color: "rgb(230,130,170)" }}>★★★★★</span>
-              5.0 · 160+ Google
-            </span>
-            <span className="hidden md:inline-block w-px h-3.5 bg-[color:var(--dv-hair)]" />
-            <a href="tel:+48790814814" className="hover:text-foreground transition-colors">
-              +48 790 814 814
-            </a>
+          <p className="mt-6 text-sm text-muted-foreground">{business.address} · <a className="underline underline-offset-4" href={business.phoneHref}>{business.phone}</a></p>
+        </div>
+        <figure className="min-w-0 rounded-2xl overflow-hidden border border-border bg-card">
+          <div className="aspect-video relative bg-black">
+            {playing ? <video className="w-full h-full object-contain" src="/videos/fotz-reel-web.mp4" controls autoPlay playsInline aria-label="Showreel FOTZ Studio" /> :
+              <button type="button" onClick={() => setPlaying(true)} className="relative w-full h-full group focus-visible:outline focus-visible:outline-4 focus-visible:outline-primary" aria-label="Odtwórz showreel FOTZ Studio">
+                <img src="/videos/fotz-reel-poster.jpg" alt="Kadr z showreela FOTZ Studio" className="w-full h-full object-cover" width="960" height="540" />
+                <span className="absolute inset-0 bg-black/20 flex items-center justify-center"><span style={{background:'#fff',color:'#111'}} className="flex items-center justify-center rounded-full w-16 h-16 group-hover:scale-105 transition-transform"><Play className="w-6 h-6" fill="currentColor" /></span></span>
+              </button>}
           </div>
-        </div>
-
-        <div className="flex flex-wrap gap-10 dv-mono uppercase tracking-[0.14em] text-[11px] text-[color:var(--dv-fg-muted)]">
-          <span>(↓) Scroll</span>
-          <span>Plac Wolności 16</span>
-          <span>EST. 2012</span>
-        </div>
-      </div>
-
-      {/* RIGHT — live stats panel */}
-      <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:flex lg:flex-col">
-        <LiveStat
-          label="Wyświetlenia treści / mies."
-          value="1M+"
-          sub="Zasięg portfolio klientów"
-        />
-        <LiveStat
-          label="Opinii Google"
-          value="5.0 / 160+"
-          sub="Od 2014 · stale aktualizowane"
-          accent
-        />
-        <LiveStat
-          label="Lat doświadczenia"
-          value="12+"
-          sub="Studio marketingu wzrostu"
-        />
-        <VideoStat
-          label="Showreel · auto"
-          caption="Fotz Reel"
-          sub="Kulisy produkcji · 2024"
-          src="/videos/fotz-reel.mp4"
-          poster="/videos/fotz-reel-poster.jpg"
-        />
+          <figcaption className="px-5 py-4 flex flex-wrap justify-between gap-2 text-sm"><span>FOTZ Reel · nasze produkcje</span><Link to="/uslugi/produkcja-video" className="underline underline-offset-4">Poznaj ofertę video</Link></figcaption>
+        </figure>
       </div>
     </section>
   );

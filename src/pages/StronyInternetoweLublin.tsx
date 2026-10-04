@@ -61,9 +61,9 @@ const StronyInternetoweLublin = () => {
   ];
 
   const pricing = [
-    { title: "Landing Page", desc: "Strona wizytówkowa prezentująca firmę", price: "od 2 000 zł", features: ["Do 5 podstron", "Responsywny design", "Podstawowe SEO", "Formularz kontaktowy", "Certyfikat SSL"] },
-    { title: "Strona Firmowa", desc: "Rozbudowana strona z dodatkowymi funkcjami", price: "od 5 000 zł", popular: true, features: ["Do 15 podstron", "Zaawansowane SEO", "Blog firmowy", "Integracja social media", "System CMS", "Wsparcie techniczne"] },
-    { title: "Sklep E-commerce", desc: "Platforma sprzedażowa z integracjami", price: "od 8 000 zł", features: ["Nieograniczona liczba produktów", "Panel administracyjny", "Integracje płatności", "Optymalizacja konwersji", "Narzędzia marketingowe"] },
+    { title: "Landing Page", desc: "Strona wizytówkowa prezentująca firmę", price: "Wycena indywidualna", features: ["Do 5 podstron", "Responsywny design", "Podstawowe SEO", "Formularz kontaktowy", "Certyfikat SSL"] },
+    { title: "Strona Firmowa", desc: "Rozbudowana strona z dodatkowymi funkcjami", price: "Wycena indywidualna", popular: true, features: ["Do 15 podstron", "Zaawansowane SEO", "Blog firmowy", "Integracja social media", "System CMS", "Wsparcie techniczne"] },
+    { title: "Sklep E-commerce", desc: "Platforma sprzedażowa z integracjami", price: "Wycena indywidualna", features: ["Nieograniczona liczba produktów", "Panel administracyjny", "Integracje płatności", "Optymalizacja konwersji", "Narzędzia marketingowe"] },
   ];
 
   const processSteps = [
@@ -112,7 +112,7 @@ const StronyInternetoweLublin = () => {
     },
     {
       question: "Ile kosztuje profesjonalna strona www w Lublinie?",
-      answer: "Ceny stron zależą od zakresu: prosta strona wizytówka kosztuje od 2 000 zł, rozbudowana strona firmowa od 5 000 zł, a sklep internetowy od 8 000 zł netto. Wycena uwzględnia projektowanie, tworzenie funkcjonalności oraz utrzymanie strony internetowej."
+      answer: "Koszt ustalamy po poznaniu zakresu: liczby podstron, treści, integracji i sposobu zarządzania. W ofercie określamy cenę, etapy, poprawki i termin; utrzymanie oraz działania marketingowe omawiamy osobno."
     },
     {
       question: "Czy tworzycie nowoczesne i responsywne strony internetowe?",
@@ -144,21 +144,21 @@ const StronyInternetoweLublin = () => {
         canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/lublin"
         keywords="strony internetowe lublin, tworzenie stron www lublin, projektowanie stron lublin, sklepy internetowe lublin, strona www lublin, www lublin, wykonanie strony internetowej lublin, responsywna strona www lublin, wordpress lublin, nowoczesne strony www lublin"
       />
-      
-      <ServiceSchema 
+
+      <ServiceSchema
         name="Strony Internetowe Lublin - Tworzenie Stron WWW i Sklepów"
         description="Profesjonalne tworzenie stron internetowych dla firm z Lublina. Projektowanie responsywnych stron www, sklepów e-commerce i pozycjonowanie SEO."
         provider="FOTZ Studio"
         areaServed="Lublin"
       />
-      
+
       <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://www.fotz-studio.pl" },
           { name: "Strony Internetowe", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe" },
           { name: "Lublin", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe/lublin" },
         ]}/>
-      
-      <FAQSchema 
+
+      <FAQSchema
         items={faqItems.map(item => ({ question: item.question, answer: item.answer }))}
       />
 
@@ -173,7 +173,7 @@ const StronyInternetoweLublin = () => {
             <div className="absolute top-1/4 left-1/4 w-64 sm:w-96 h-64 sm:h-96 bg-primary/20 rounded-full blur-[120px]" />
             <div className="absolute bottom-1/4 right-1/4 w-64 sm:w-96 h-64 sm:h-96 bg-secondary/20 rounded-full blur-[120px]" />
           </div>
-          
+
           <div className="container mx-auto px-4 relative z-10">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -184,11 +184,11 @@ const StronyInternetoweLublin = () => {
               <span className="inline-block px-3 sm:px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-xs sm:text-sm font-medium mb-4 sm:mb-6">
                 Strony WWW Lublin
               </span>
-              
+
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-4 sm:mb-6">
                 Strona WWW <span className="text-gradient">Lublin</span>: Tworzenie Stron i Sklep Internetowy
               </h1>
-              
+
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
                 <strong>Posiadanie profesjonalnej strony www to podstawa sukcesu każdego biznesu.</strong> Niezależnie od tego,
                 czy prowadzisz małą firmę w Lublinie, czy dużą korporację, Twoja strona internetowa jest wizytówką Twojej działalności w sieci.
@@ -252,7 +252,7 @@ const StronyInternetoweLublin = () => {
                 </h2>
                 <div className="prose prose-invert max-w-none prose-sm sm:prose-base">
                   <p>
-                    Specjalizujemy się w projektowaniu stron internetowych w Lublinie, oferując kompleksowe usługi. 
+                    Specjalizujemy się w projektowaniu stron internetowych w Lublinie, oferując kompleksowe usługi.
                     Nasze działania obejmują:
                   </p>
                   <ul>
@@ -261,34 +261,34 @@ const StronyInternetoweLublin = () => {
                     <li><strong>Wdrożenie i optymalizację</strong>, aby strona działała sprawnie i efektywnie.</li>
                   </ul>
                   <p>
-                    Rozumiemy, że każda firma jest inna, dlatego do każdego projektu podchodzimy indywidualnie. 
-                    Nasz zespół doświadczonych projektantów i programistów dba o to, aby każda strona internetowa była 
+                    Rozumiemy, że każda firma jest inna, dlatego do każdego projektu podchodzimy indywidualnie.
+                    Nasz zespół doświadczonych projektantów i programistów dba o to, aby każda strona internetowa była
                     nie tylko estetyczna, ale także <strong>responsywna i dostosowana do wyświetlania na różnych urządzeniach</strong>.
                   </p>
-                  
+
                   <h3>Nowoczesne strony internetowe</h3>
                   <p>
-                    Stawiamy na nowoczesne strony internetowe, które łączą w sobie estetykę i funkcjonalność. 
-                    Indywidualne podejście do klienta pozwala nam tworzyć unikalne projekty graficzne stron www, 
-                    które odzwierciedlają charakter Twojej firmy i wyróżniają ją na tle konkurencji. 
-                    <strong>Nowoczesna strona internetowa to inwestycja w rozwój Twojego biznesu</strong>, 
-                    która przynosi wymierne korzyści w postaci zwiększonej liczby klientów i wyższej pozycji 
+                    Stawiamy na nowoczesne strony internetowe, które łączą w sobie estetykę i funkcjonalność.
+                    Indywidualne podejście do klienta pozwala nam tworzyć unikalne projekty graficzne stron www,
+                    które odzwierciedlają charakter Twojej firmy i wyróżniają ją na tle konkurencji.
+                    <strong>Nowoczesna strona internetowa to inwestycja w rozwój Twojego biznesu</strong>,
+                    która przynosi wymierne korzyści w postaci zwiększonej liczby klientów i wyższej pozycji
                     w wynikach wyszukiwania Google.
                   </p>
-                  
+
                   <h3>Responsywne strony www</h3>
                   <p>
-                    W dzisiejszych czasach <strong>responsywne strony www to absolutny standard</strong>. 
-                    Coraz więcej osób korzysta z urządzeń mobilnych do przeglądania internetu, dlatego ważne jest, 
-                    aby Twoja strona internetowa wyświetlała się poprawnie na smartfonach i tabletach. 
+                    W dzisiejszych czasach <strong>responsywne strony www to absolutny standard</strong>.
+                    Coraz więcej osób korzysta z urządzeń mobilnych do przeglądania internetu, dlatego ważne jest,
+                    aby Twoja strona internetowa wyświetlała się poprawnie na smartfonach i tabletach.
                     Projektujemy responsywne strony, które automatycznie dostosowują się do rozmiaru ekranu urządzenia.
                   </p>
-                  
+
                   <h3>Profesjonalne podejście do klienta</h3>
                   <p>
-                    Nasze profesjonalne tworzenie stron internetowych to gwarancja indywidualnego podejścia do klienta. 
-                    Zapewniamy stały kontakt i wsparcie na każdym etapie projektu, od koncepcji po wdrożenie i późniejszą optymalizację. 
-                    Rozumiemy, że <Link to="/seo/pozycjonowanie" className="text-primary hover:underline">pozycjonowanie stron</Link> jest 
+                    Nasze profesjonalne tworzenie stron internetowych to gwarancja indywidualnego podejścia do klienta.
+                    Zapewniamy stały kontakt i wsparcie na każdym etapie projektu, od koncepcji po wdrożenie i późniejszą optymalizację.
+                    Rozumiemy, że <Link to="/seo/pozycjonowanie" className="text-primary hover:underline">pozycjonowanie stron</Link> jest
                     kluczowe dla sukcesu w internecie, dlatego oferujemy kompleksowe usługi SEO.
                   </p>
                 </div>
@@ -307,7 +307,7 @@ const StronyInternetoweLublin = () => {
                   Kompleksowe usługi tworzenia stron w Lublinie
                 </h2>
                 <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto">
-                  Od projektu graficznego przez wdrożenie po <Link to="/seo/pozycjonowanie" className="text-primary hover:underline">pozycjonowanie stron</Link> - 
+                  Od projektu graficznego przez wdrożenie po <Link to="/seo/pozycjonowanie" className="text-primary hover:underline">pozycjonowanie stron</Link> -
                   wszystko w jednym miejscu.
                 </p>
               </div>
@@ -335,31 +335,31 @@ const StronyInternetoweLublin = () => {
                 <div className="prose prose-invert max-w-none">
                   <h2>Tworzenie sklepów internetowych</h2>
                   <p>
-                    Specjalizujemy się w <strong>tworzeniu sklepów internetowych</strong>, które są efektywne i dostosowane do potrzeb Twojej firmy. 
-                    Rozumiemy, jak ważny jest sklep internetowy dla rozwoju Twojego biznesu, dlatego oferujemy kompleksowe usługi, od projektu po wdrożenie. 
+                    Specjalizujemy się w <strong>tworzeniu sklepów internetowych</strong>, które są efektywne i dostosowane do potrzeb Twojej firmy.
+                    Rozumiemy, jak ważny jest sklep internetowy dla rozwoju Twojego biznesu, dlatego oferujemy kompleksowe usługi, od projektu po wdrożenie.
                     Nasze sklepy internetowe są responsywne, co oznacza, że działają bez zarzutu na wszystkich urządzeniach.
                   </p>
-                  
+
                   <h3>Jak założyć sklep internetowy?</h3>
                   <p>
-                    Założenie sklepu internetowego to proces, który wymaga starannego planowania i profesjonalnego wykonania. 
-                    Na początku określamy potrzeby Twojej firmy i specyfikę branży. Następnie projektujemy indywidualny projekt graficzny strony www. 
-                    Kolejnym krokiem jest wdrożenie sklepu ze wszystkimi niezbędnymi funkcjonalnościami. 
+                    Założenie sklepu internetowego to proces, który wymaga starannego planowania i profesjonalnego wykonania.
+                    Na początku określamy potrzeby Twojej firmy i specyfikę branży. Następnie projektujemy indywidualny projekt graficzny strony www.
+                    Kolejnym krokiem jest wdrożenie sklepu ze wszystkimi niezbędnymi funkcjonalnościami.
                     <strong>Profesjonalna strona internetowa to inwestycja, która przynosi wymierne korzyści.</strong>
                   </p>
-                  
+
                   <h3>Optymalizacja dla e-commerce</h3>
                   <p>
-                    <strong>Optymalizacja dla e-commerce to kluczowy element sukcesu sklepu internetowego.</strong> Obejmuje ona działania związane z SEO, 
-                    takie jak optymalizacja treści, słów kluczowych oraz linkowanie wewnętrzne i zewnętrzne. 
-                    Dbamy o to, aby Twoja strona internetowa była widoczna w wynikach wyszukiwania Google dla potencjalnych klientów 
+                    <strong>Optymalizacja dla e-commerce to kluczowy element sukcesu sklepu internetowego.</strong> Obejmuje ona działania związane z SEO,
+                    takie jak optymalizacja treści, słów kluczowych oraz linkowanie wewnętrzne i zewnętrzne.
+                    Dbamy o to, aby Twoja strona internetowa była widoczna w wynikach wyszukiwania Google dla potencjalnych klientów
                     szukających Twoich produktów lub usług w Lublinie.
                   </p>
-                  
+
                   <h3>Ceny sklepów internetowych w Lublinie</h3>
                   <p>
-                    Ceny sklepów internetowych w Lublinie mogą się różnić w zależności od zakresu prac i funkcjonalności. 
-                    Koszt stworzenia strony internetowej e-commerce waha się od 8 000 zł do 120 000 zł netto. 
+                    Ceny sklepów internetowych w Lublinie mogą się różnić w zależności od zakresu prac i funkcjonalności.
+                    Koszt sklepu ustalamy według katalogu, funkcji, płatności i integracji.
                     Oferujemy transparentne ceny i indywidualne podejście do każdego klienta.
                   </p>
                 </div>
@@ -407,30 +407,30 @@ const StronyInternetoweLublin = () => {
                 <div className="prose prose-invert max-w-none">
                   <h2>Pozycjonowanie stron internetowych</h2>
                   <p>
-                    Oferujemy usługi <Link to="/seo/pozycjonowanie" className="text-primary hover:underline">optymalizacji SEO</Link>, 
-                    aby poprawić widoczność strony w wyszukiwarkach internetowych, co jest kluczowe dla sukcesu Twojego biznesu online. 
-                    <strong>Pozycjonowanie stron internetowych to proces, który ma na celu poprawę widoczności Twojej strony w wynikach wyszukiwania Google.</strong> 
+                    Oferujemy usługi <Link to="/seo/pozycjonowanie" className="text-primary hover:underline">optymalizacji SEO</Link>,
+                    aby poprawić widoczność strony w wyszukiwarkach internetowych, co jest kluczowe dla sukcesu Twojego biznesu online.
+                    <strong>Pozycjonowanie stron internetowych to proces, który ma na celu poprawę widoczności Twojej strony w wynikach wyszukiwania Google.</strong>
                     Skuteczne pozycjonowanie stron www przekłada się na zwiększenie ruchu na stronie, co z kolei prowadzi do wzrostu liczby klientów i sprzedaży.
                   </p>
-                  
+
                   <h3>Audyt SEO Twojej strony</h3>
                   <p>
-                    <strong>Audyt SEO Twojej strony internetowej to pierwszy krok do poprawy jej widoczności w wynikach wyszukiwania Google.</strong> 
-                    Podczas audytu analizujemy strukturę strony, zawartość, słowa kluczowe, linki wewnętrzne i zewnętrzne oraz inne czynniki, 
+                    <strong>Audyt SEO Twojej strony internetowej to pierwszy krok do poprawy jej widoczności w wynikach wyszukiwania Google.</strong>
+                    Podczas audytu analizujemy strukturę strony, zawartość, słowa kluczowe, linki wewnętrzne i zewnętrzne oraz inne czynniki,
                     które wpływają na pozycjonowanie stron internetowych. Na podstawie audytu opracowujemy strategię optymalizacji.
                   </p>
-                  
+
                   <h3>Strategie pozycjonowania w Google</h3>
                   <p>
-                    Skuteczne strategie pozycjonowania w Google są niezbędne, aby Twoja strona internetowa osiągnęła wysokie pozycje w wynikach wyszukiwania. 
-                    Obejmują one zarówno optymalizację techniczną strony, jak i tworzenie wartościowych treści, które odpowiadają na zapytania użytkowników. 
+                    Skuteczne strategie pozycjonowania w Google są niezbędne, aby Twoja strona internetowa osiągnęła wysokie pozycje w wynikach wyszukiwania.
+                    Obejmują one zarówno optymalizację techniczną strony, jak i tworzenie wartościowych treści, które odpowiadają na zapytania użytkowników.
                     <strong>Pozycjonowanie stron www to proces długotrwały, który wymaga cierpliwości i systematyczności, ale przynosi wymierne korzyści dla Twojego biznesu w Lublinie.</strong>
                   </p>
-                  
+
                   <h3>Znaczenie SEO dla lokalnych firm</h3>
                   <p>
-                    <strong>SEO ma szczególne znaczenie dla lokalnych firm, które chcą dotrzeć do klientów w Lublinie i okolicach.</strong> 
-                    Optymalizacja Twojej strony www pod kątem lokalnych słów kluczowych, takich jak "strony internetowe Lublin" czy "sklep internetowy Lublin", 
+                    <strong>SEO ma szczególne znaczenie dla lokalnych firm, które chcą dotrzeć do klientów w Lublinie i okolicach.</strong>
+                    Optymalizacja Twojej strony www pod kątem lokalnych słów kluczowych, takich jak "strony internetowe Lublin" czy "sklep internetowy Lublin",
                     pozwala na dotarcie do osób, które szukają Twoich produktów lub usług w Twojej okolicy.
                   </p>
                 </div>
@@ -460,8 +460,8 @@ const StronyInternetoweLublin = () => {
                   <Link to={study.link} className="group block">
                     <div className="rounded-xl overflow-hidden bg-background border border-border/50 hover:border-primary/30 transition-all">
                       <div className="aspect-video overflow-hidden">
-                        <img loading="lazy" 
-                          src={study.image} 
+                        <img loading="lazy"
+                          src={study.image}
                           alt={study.title}
                           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                         />
@@ -489,7 +489,7 @@ const StronyInternetoweLublin = () => {
                   Witryny internetowe dla biznesu
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  FOTZ to <Link to="/agencja-marketingowa/poznan" className="text-primary hover:underline">firma tworząca strony internetowe</Link>, 
+                  FOTZ to <Link to="/agencja-marketingowa/poznan" className="text-primary hover:underline">firma tworząca strony internetowe</Link>,
                   oferująca kompleksowe usługi w zakresie projektowania, wdrażania i optymalizacji witryn.
                 </p>
               </div>
@@ -519,7 +519,7 @@ const StronyInternetoweLublin = () => {
                   Wycena projektu strony internetowej
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Nie stosujemy sztywnego cennika – każda wycena jest dopasowana do indywidualnych celów biznesowych klienta. 
+                  Nie stosujemy sztywnego cennika – każda wycena jest dopasowana do indywidualnych celów biznesowych klienta.
                   Sprawdź ile kosztuje <Link to="/blog/ile-kosztuje-strona-internetowa" className="text-primary hover:underline">profesjonalna strona internetowa</Link>.
                 </p>
               </div>
@@ -536,7 +536,7 @@ const StronyInternetoweLublin = () => {
                 </FadeInView>
               ))}
             </div>
-            
+
             <FadeInView delay={0.4}>
               <div className="text-center mt-12">
                 <Button asChild size="lg">
@@ -617,8 +617,8 @@ const StronyInternetoweLublin = () => {
               Każda strona internetowa, którą tworzymy dla lubelskich firm, zawiera podstawowe SEO w cenie: meta tagi title i description, schema LocalBusiness z danymi adresowymi Lublina i Lubelszczyzny, szybkość Core Web Vitals i poprawna architektura nagłówków H1–H3. Dzięki temu strona startuje z solidnym fundamentem i szybciej osiąga widoczność w Google.
             </p>
             <p className="text-muted-foreground mb-6">
-              Kompleksowa oferta 
-              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">tworzenia stron internetowych</Link> dostępna jest na naszej stronie głównej usługi. Jeśli potrzebujesz strony do kampanii reklamowej, sprawdź naszą ofertę 
+              Kompleksowa oferta
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">tworzenia stron internetowych</Link> dostępna jest na naszej stronie głównej usługi. Jeśli potrzebujesz strony do kampanii reklamowej, sprawdź naszą ofertę
               <Link to="/uslugi/landing-page" className="text-primary hover:underline">landing page dla Google Ads i Meta Ads</Link>.
             </p>
 

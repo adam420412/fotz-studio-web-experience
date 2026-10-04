@@ -82,7 +82,7 @@ export default function TworzenieStronKrakow() {
   const packages = [
     {
       title: "Wizytówka cyfrowa",
-      price: "Od 499 zł",
+      price: "Wycena indywidualna",
       period: "jednorazowo",
       desc: "Prosta strona dla freelancerów i małych biznesów",
       features: [
@@ -96,7 +96,7 @@ export default function TworzenieStronKrakow() {
     },
     {
       title: "Strona firmowa",
-      price: "1 499 - 3 999 zł",
+      price: "Wycena indywidualna",
       period: "jednorazowo",
       desc: "Profesjonalna strona dla firmy średniej",
       features: [
@@ -112,7 +112,7 @@ export default function TworzenieStronKrakow() {
     },
     {
       title: "Sklep e-commerce",
-      price: "2 999 - 9 999 zł",
+      price: "Wycena indywidualna",
       period: "jednorazowo",
       desc: "Pełna platforma sprzedażowa",
       features: [
@@ -164,7 +164,7 @@ export default function TworzenieStronKrakow() {
   const faqItems = [
     {
       question: "Ile kosztuje strona w Krakowie?",
-      answer: "Wizytówka: od 499 zł. Strona firmowa: 1 500-4 000 zł. Sklep: 3 000-10 000 zł. Kraków ma różne branże - turystyka, tech, handel, edukacja. Każdy projekt wyceniamy indywidualnie po rozmowie o Twoich potrzebach."
+      answer: "Koszt ustalamy po poznaniu zakresu: liczby podstron, treści, integracji i sposobu zarządzania. W ofercie określamy cenę, etapy, poprawki i termin; utrzymanie oraz działania marketingowe omawiamy osobno."
     },
     {
       question: "Ile czasu zajmuje projekt?",
@@ -207,7 +207,7 @@ export default function TworzenieStronKrakow() {
     <>
       <SEOHead
         title="Tworzenie stron internetowych Kraków | Profesjonalne strony WWW"
-        description="Tworzymy profesjonalne strony internetowe w Krakowie. Nowoczesne, responsywne strony dla firm. Od 499 zł. Bezpłatna wycena!"
+        description="Tworzymy profesjonalne strony internetowe w Krakowie. Nowoczesne, responsywne strony dla firm. Wycena indywidualna. Bezpłatna wycena!"
         canonical="https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych/krakow"
         keywords="tworzenie stron internetowych kraków, strony internetowe kraków, tworzenie stron www kraków, projektowanie stron internetowych kraków, strony www kraków, sklepy internetowe kraków, projektowanie stron www kraków, agencja webdesign kraków, tworzenie stron kraków, strona internetowa kraków"
       />
@@ -238,7 +238,7 @@ export default function TworzenieStronKrakow() {
               </h1>
               <p className="text-xl text-slate-300 mb-8 leading-relaxed">
                 Tworzenie stron internetowych Kraków — profesjonalne strony www i sklepy internetowe dla firm z Krakowa i Małopolski. Projektowanie stron internetowych Kraków z nowoczesnym designem, SEO i responsywnym kodem.
-                Strony www Kraków dla hoteli, restauracji, startupów i e-commerce. 800k mieszkańców, 12 mln turystów — tworzenie stron www Kraków od 499 zł.
+                Strony www Kraków dla hoteli, restauracji, startupów i e-commerce. 800k mieszkańców, 12 mln turystów — tworzenie stron www Kraków. Wycena indywidualna.
               </p>
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">

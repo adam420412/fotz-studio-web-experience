@@ -62,7 +62,7 @@ export default function StronyInternetoweKielce() {
             Strony Internetowe Kielce
           </h1>
           <p className="text-xl text-blue-100 mb-8">
-                        Strony internetowe Kielce — tworzenie stron www i sklepy internetowe dla firm ze Świętokrzyskiego. Tworzenie stron internetowych Kielce z nowoczesnym designem, SEO i responsywnym kodem. Projektowanie stron www Kielce od 499 zł netto.
+                        Strony internetowe Kielce — tworzenie stron www i sklepy internetowe dla firm ze Świętokrzyskiego. Tworzenie stron internetowych Kielce z nowoczesnym designem, SEO i responsywnym kodem. Projektowanie stron www Kielce. Wycena indywidualna.
           </p>
           <Button asChild size="lg" className="bg-blue-400 hover:bg-blue-500 text-blue-950">
             <Link to="/kontakt">
@@ -207,7 +207,7 @@ export default function StronyInternetoweKielce() {
             <div className="bg-white p-8 rounded-lg shadow border-t-4 border-blue-400">
               <h3 className="text-2xl font-bold mb-2">Wizytówka</h3>
               <p className="text-gray-600 mb-6">Idealna dla małych firm i specjalistów</p>
-              <div className="text-3xl font-bold text-blue-400 mb-6">3 000 zł</div>
+              <div className="text-3xl font-bold text-blue-400 mb-6">Wycena indywidualna</div>
               <ul className="space-y-3 text-gray-700 mb-8">
                 <li>5-7 stron</li>
                 <li>Responsywny design</li>
@@ -221,7 +221,7 @@ export default function StronyInternetoweKielce() {
               <div className="bg-blue-400 text-blue-950 inline-block px-3 py-1 rounded-full text-sm font-semibold mb-4">Popularny</div>
               <h3 className="text-2xl font-bold mb-2">Biznes</h3>
               <p className="text-gray-600 mb-6">Dla rozwijających się firm</p>
-              <div className="text-3xl font-bold text-blue-400 mb-6">7 000 zł</div>
+              <div className="text-3xl font-bold text-blue-400 mb-6">Wycena indywidualna</div>
               <ul className="space-y-3 text-gray-700 mb-8">
                 <li>10-15 stron</li>
                 <li>Zaawansowany design</li>
@@ -235,7 +235,7 @@ export default function StronyInternetoweKielce() {
             <div className="bg-white p-8 rounded-lg shadow border-t-4 border-blue-400">
               <h3 className="text-2xl font-bold mb-2">E-commerce</h3>
               <p className="text-gray-600 mb-6">Dla sklepów internetowych</p>
-              <div className="text-3xl font-bold text-blue-400 mb-6">15 000 zł</div>
+              <div className="text-3xl font-bold text-blue-400 mb-6">Wycena indywidualna</div>
               <ul className="space-y-3 text-gray-700 mb-8">
                 <li>Nieograniczone produkty</li>
                 <li>System płatności</li>
