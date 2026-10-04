@@ -53,7 +53,7 @@ export default function AgencjaMarketingowaPoznan() {
     {
       icon: Smartphone,
       title: "Media Społecznościowe",
-      href: "/social-media/poznan",
+      href: "/agencja-social-media/poznan",
       description:
         "Strategia i zarządzanie kampaniami na Facebook, Instagram i LinkedIn.",
       features: ["Tworzenie contentu", "Community management", "Analityka"],

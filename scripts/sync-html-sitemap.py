@@ -24,6 +24,7 @@ for group,label in groups:
   url=loc.text; route=urlparse(url).path or '/'
   if route in seen:continue
   seen.add(route);page=pages.get(unquote(route));title=page['title'][0] if page else 'Mapa strony'
+  title=title.replace('fotz.pl', 'FOTZ Studio').replace('Wrocławiaia', 'Wrocławia')
   title=re.sub(r'\s*(?:\||—|-)\s*(?:Fotz Studio|fotz\.pl)\s*$','',title,flags=re.I)
   if route=='/':title='Strona główna'
   rows.append(f'      <li><a href="{escape(route,quote=True)}">{escape(title)}</a><span class="path">{escape(unquote(route))}</span></li>')
@@ -34,7 +35,7 @@ body=f'''<body>
     <nav class="breadcrumb" aria-label="Ścieżka nawigacji"><a href="/">Strona główna</a> &rsaquo; Mapa strony</nav>
     <header>
       <h1>Mapa strony Fotz Studio</h1>
-      <p class="lead">{len(seen)} adresów kanonicznych: usługi marketingowe, lokalizacje, realizacje, artykuły i narzędzia.</p>
+      <p class="lead">Liczba adresów kanonicznych: {len(seen)}. usługi marketingowe, lokalizacje, realizacje, artykuły i narzędzia.</p>
       <nav aria-label="Sekcje mapy strony">{nav}</nav>
     </header>
 '''+ '\n'.join(sections)+'''

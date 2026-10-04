@@ -577,7 +577,7 @@ const KampanieReklamowePoznan = () => {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
             {[
-              { title: "Social Media Poznań", href: "/social-media/poznan", icon: Users },
+              { title: "Social Media Poznań", href: "/agencja-social-media/poznan", icon: Users },
               { title: "Strony internetowe Poznań", href: "/uslugi/strony-internetowe/poznan", icon: Layers },
               { title: "Pozycjonowanie Poznań", href: "/seo/pozycjonowanie-poznan", icon: Search },
               { title: "Produkcja filmów", href: "/uslugi/produkcja-filmow", icon: Youtube },

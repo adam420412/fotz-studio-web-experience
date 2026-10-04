@@ -20,7 +20,7 @@ export async function renderPage(file: string, url: string, articles: Array<Reco
   const route = file === 'BlogArticleDynamic.tsx' ? '/blog/:slug' : file === 'SocialMediaClusterHub.tsx' ? '/agencja-social-media/:clusterSlug' : url;
   client.setQueryData(['blog-articles'], articles);
   for (const article of articles) client.setQueryData(['blog-article', article.slug], article);
-  if (file === 'SocialMediaClusterHub.tsx') {
+  if (file === 'SocialMediaClusterHub.tsx' || file === 'SocialMediaPoznan.tsx') {
     const slug = url.split('/').pop();
     client.setQueryData(['cluster-articles', slug], articles.filter(article => article.cluster_slug === slug));
   }

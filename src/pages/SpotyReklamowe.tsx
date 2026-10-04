@@ -67,7 +67,7 @@ const faqItems = [
     answer: "Film produktowy oferuje możliwość przekazania kluczowych cech produktu lub usługi w sposób atrakcyjny i przystępny dla odbiorcy. Dobrze zrealizowane wideo może zwiększyć rozpoznawalność marki, osiągnąć zamierzone cele marketingowe, a także poprawić wizerunek danej firmy na stronach internetowych oraz w mediach społecznościowych.",
     links: [
       { text: "Strony internetowe", href: "/uslugi/strony-internetowe" },
-      { text: "Social Media", href: "/social-media/poznan" }
+      { text: "Social Media", href: "/agencja-social-media/poznan" }
     ]
   },
   {

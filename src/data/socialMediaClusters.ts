@@ -134,10 +134,10 @@ export const SOCIAL_MEDIA_CLUSTERS: SocialMediaCluster[] = [
     path: "/agencja-social-media/poznan",
     title: "Agencja social media Poznań",
     shortLabel: "Poznań",
-    description: "Naszych klientów obsługujemy z Poznania — to nasz dom i baza produkcyjna.",
+    description: "Prowadzenie profili, zdjęcia, rolki i kampanie Meta Ads dla firm z Poznania. Zobacz zakres i materiały z naszej produkcji.",
     metaTitle: "Agencja social media Poznań — Fotz Studio",
     metaDescription:
-      "Fotz Studio — premium agencja social media z Poznania. Strategia, content video, kampanie Meta i TikTok. Spotkajmy się.",
+      "FOTZ Studio w Poznaniu: prowadzenie profili, zdjęcia, rolki i kampanie Meta Ads. Poznaj realizacje, zakres współpracy oraz sposób wyceny.",
     kind: "city",
     intent: "local",
   },

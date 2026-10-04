@@ -399,7 +399,7 @@ export default function AgencjaKreaTywnaPoznan() {
               { label: "Agencja reklamowa Poznań", to: "/agencja-reklamowa-poznan" },
               { label: "Agencja marketingowa Poznań", to: "/agencja-marketingowa/poznan" },
               { label: "Identyfikacja wizualna", to: "/uslugi/identyfikacja-wizualna" },
-              { label: "Social media Poznań", to: "/social-media/poznan" },
+              { label: "Social media Poznań", to: "/agencja-social-media/poznan" },
               { label: "Produkcja filmów Poznań", to: "/uslugi/produkcja-filmow" },
               { label: "Strony internetowe Poznań", to: "/uslugi/strony-internetowe/poznan" },
             ].map((link) => (

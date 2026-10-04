@@ -152,7 +152,7 @@ const TikTokAds = () => {
       question: "Co to są Spark Ads i dlaczego są skuteczne?",
       answer: "Spark Ads to format pozwalający promować organiczne treści (Twoje lub influencerów) jako reklamy płatne. Zachowują wszystkie interakcje (lajki, komentarze) i wyglądają bardziej autentycznie. Często mają wyższy CTR i niższy koszt niż tradycyjne reklamy.",
       links: [
-        { text: "Social Media", href: "/social-media/poznan" }
+        { text: "Social Media", href: "/agencja-social-media/poznan" }
       ]
     },
   ];
