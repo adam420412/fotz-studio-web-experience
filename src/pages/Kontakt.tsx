@@ -124,7 +124,7 @@ export default function Kontakt() {
       setIsSubmitted(true);
       toast({
         title: "Wiadomość wysłana!",
-        description: "Odezwiemy się do Ciebie w ciągu 24 godzin.",
+        description: "Skontaktujemy się z Tobą w sprawie zapytania.",
       });
     } catch (error) {
       console.error("Error sending message:", error);
@@ -168,7 +168,7 @@ export default function Kontakt() {
       setReelSubmitted(true);
       toast({
         title: "Zgłoszenie wysłane!",
-        description: "Odezwiemy się w ciągu 24 godzin z propozycją rolki.",
+        description: "Skontaktujemy się, aby omówić zakres i dostępność nagrania.",
       });
     } catch (err) {
       console.error("Reel form error:", err);
@@ -210,7 +210,7 @@ export default function Kontakt() {
               <span className="text-gradient">Twoim projekcie</span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground">
-              Jesteśmy gotowi na nowe wyzwania. Napisz do nas lub odwiedź 
+              Jesteśmy gotowi na nowe wyzwania. Napisz do nas lub odwiedź
               nasze biuro w centrum Poznania.
             </p>
           </div>
@@ -600,13 +600,13 @@ export default function Kontakt() {
                 Umów <span className="text-gradient">bezpłatną konsultację</span>
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
-                Wybierz dogodny termin na 30-minutową rozmowę. Przeanalizujemy 
+                Wybierz dogodny termin na 15-minutową rozmowę. Przeanalizujemy
                 Twoje potrzeby marketingowe i zaproponujemy rozwiązania.
               </p>
 
               <div className="space-y-4">
                 {[
-                  "30 minut rozmowy z ekspertem",
+                  "15 minut rozmowy z ekspertem",
                   "Analiza Twojej obecnej sytuacji",
                   "Konkretne rekomendacje działań",
                   "Bez zobowiązań",
@@ -638,11 +638,11 @@ export default function Kontakt() {
               Cennik usług
             </span>
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-              Sprawdź ceny i <span className="text-gradient">skonfiguruj ofertę</span>
+              Sprawdź ceny i <span className="text-gradient">zakres usług</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Skorzystaj z naszego interaktywnego konfiguratora cennika. 
-              Wybierz usługi i zobacz szacunkowy koszt w czasie rzeczywistym.
+              Sprawdź zakres pakietów START i elementy indywidualnej wyceny.
+              Budżet produkcji, obsługi i emisji reklam rozpisujemy osobno.
             </p>
             <Button variant="hero" size="xl" asChild>
               <Link to="/cennik" className="group">
@@ -669,7 +669,7 @@ export default function Kontakt() {
             <p className="text-muted-foreground mb-4">
               Fotz Studio to agencja marketingowa z Poznania. Jesteśmy dostępni przez
               formularz kontaktowy, e-mail, telefon i osobiście w biurze. Każde zapytanie
-              traktujemy priorytetowo — odpowiadamy w ciągu 24 godzin roboczych.
+              analizujemy indywidualnie; zakres i termin odpowiedzi zależą od sprawy.
               Niezależnie od etapu Twojego projektu — czy dopiero planujesz, czy potrzebujesz
               szybkiej pomocy — skontaktuj się z nami.
             </p>
@@ -705,7 +705,7 @@ export default function Kontakt() {
               wizualnej. Wypełnij formularz kontaktowy, opisując swoje potrzeby —
               przygotujemy wstępną ofertę w ciągu 48 godzin.
             </p>
-          
+
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
               <Link to="/realizacje" className="text-primary hover:underline font-medium text-sm">→ Realizacje</Link>
               <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
