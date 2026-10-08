@@ -135,7 +135,7 @@ const footerLinks = {
     { name: "Toruń", href: "/uslugi/strony-internetowe/torun" },
     { name: "Rzeszów", href: "/uslugi/strony-internetowe/rzeszow" },
     { name: "Olsztyn", href: "/uslugi/strony-internetowe/olsztyn" },
-    { name: "Kielce", href: "/uslugi/strony-internetowe/kielce" },
+    { name: "Kielce", href: "/strony-internetowe/kielce" },
     { name: "Opole", href: "/uslugi/strony-internetowe/opole" },
     { name: "Radom", href: "/uslugi/strony-internetowe/radom" },
     { name: "Tarnów", href: "/uslugi/strony-internetowe/tarnow" },

@@ -143,7 +143,7 @@ export default function BlogXMLSitemapCoTo() {
                 <p className="text-blue-700 text-sm mb-3">
                   Audyt SEO — sprawdzamy sitemap, robots.txt, indeksowanie i wszystkie techniczne aspekty SEO.
                 </p>
-                <Link to="/uslugi/audyt-seo" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
+                <Link to="/seo/audyt" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
                   Audyt SEO — oferta <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>

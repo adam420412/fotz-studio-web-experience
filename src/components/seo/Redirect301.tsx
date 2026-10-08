@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate, useLocation, Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 
 interface Redirect301Props {
@@ -13,10 +13,12 @@ interface Redirect301Props {
  */
 export function Redirect301({ to }: Redirect301Props) {
   const navigate = useNavigate();
+  const { search, hash } = useLocation();
+  const destination = `${to}${search}${hash}`;
 
   useEffect(() => {
-    navigate(to, { replace: true });
-  }, [navigate, to]);
+    navigate(destination, { replace: true });
+  }, [navigate, destination]);
 
   return (
     <>
@@ -31,7 +33,7 @@ export function Redirect301({ to }: Redirect301Props) {
           <h1 className="text-2xl font-heading font-bold mb-4">Przekierowanie...</h1>
           <p className="text-muted-foreground mb-6">
             Ta strona została przeniesiona. Jeśli nie nastąpiło automatyczne przekierowanie,{" "}
-            <Link to={to} className="text-primary hover:underline">kliknij tutaj</Link>.
+            <Link to={destination} className="text-primary hover:underline">kliknij tutaj</Link>.
           </p>
           <nav className="flex gap-4 justify-center text-sm text-muted-foreground">
             <Link to="/" className="hover:text-foreground transition-colors">Strona główna</Link>

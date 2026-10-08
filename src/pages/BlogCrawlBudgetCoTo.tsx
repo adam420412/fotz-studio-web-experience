@@ -127,7 +127,7 @@ export default function BlogCrawlBudgetCoTo() {
                 <p className="text-blue-700 text-sm mb-3">
                   Audyt SEO techniczny — analizujemy crawl budget, indeksowanie i optymalizujemy strukturę URL.
                 </p>
-                <Link to="/uslugi/audyt-seo" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
+                <Link to="/seo/audyt" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
                   Audyt SEO techniczny — oferta <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>

@@ -516,30 +516,6 @@ const posts: BlogPost[] = [
     featured: false,
   },
   {
-    id: "jak-stworzyc-strone",
-    title: "Jak stworzyć stronę internetową, która sprzedaje?",
-    excerpt:
-      "Poznaj kluczowe elementy skutecznej strony www, które konwertują odwiedzających w klientów.",
-    category: "Strony internetowe",
-    author: "Tomasz Kowalski",
-    date: "15 gru 2024",
-    readTime: "8 min",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070",
-    featured: false,
-  },
-  {
-    id: "trendy-social-media-2025",
-    title: "Trendy Social Media na 2025 rok",
-    excerpt:
-      "Co przyniesie nowy rok w social mediach? Przegląd najważniejszych trendów.",
-    category: "Social Media",
-    author: "Anna Nowak",
-    date: "12 gru 2024",
-    readTime: "6 min",
-    image: "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?q=80&w=2074",
-    featured: false,
-  },
-  {
     id: "google-ads-poradnik",
     title: "Google Ads dla początkujących - kompletny poradnik",
     excerpt:

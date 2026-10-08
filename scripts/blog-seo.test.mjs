@@ -43,3 +43,15 @@ test('CMS links use the consolidated Poznan service URL while keeping query stri
   const html = '<a href="https://fotz.pl/social-media/poznan?from=blog#oferta">Oferta</a><a href="/social-media/poznan">Lokalnie</a><a href="https://example.com/social-media/poznan">Źródło</a><a href="/social-media/poznan-inny">Inna strona</a>';
   assert.equal(prepareBlogHtml(html), '<a href="https://www.fotz-studio.pl/agencja-social-media/poznan?from=blog#oferta">Oferta</a><a href="/agencja-social-media/poznan">Lokalnie</a><a href="https://example.com/social-media/poznan">Źródło</a><a href="/social-media/poznan-inny">Inna strona</a>');
 });
+
+test('CMS canonical aliases match hosting redirects and preserve parameters without touching other links', async () => {
+  const { readFile } = await import('node:fs/promises');
+  const config = JSON.parse(await readFile(new URL('../vercel.json', import.meta.url), 'utf8'));
+  const aliases = ['/blog/okr-co-to', '/blog/nps-co-to-jest', '/blog/reklama-programatyczna-co-to', '/blog/zero-trust-security-co-to-jest-jak-wdrozyz', '/blog/api-gateway-co-to-jest-jak-wybrac-kong-aws-apigee', '/uslugi/audyt-seo', '/uslugi/strony-internetowe/kielce'];
+  for (const from of aliases) {
+    const redirect = config.redirects.find(item => item.source === from);
+    assert.equal(redirect.permanent, true);
+    assert.equal(prepareBlogHtml(`<a href="${from}?source=guide#zakres">Czytaj</a>`), `<a href="${redirect.destination}?source=guide#zakres">Czytaj</a>`);
+    assert.equal(prepareBlogHtml(`<a href="https://example.com${from}">Źródło</a>`), `<a href="https://example.com${from}">Źródło</a>`);
+  }
+});

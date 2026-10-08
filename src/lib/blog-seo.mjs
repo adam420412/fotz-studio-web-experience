@@ -1,6 +1,25 @@
 /** Shared by the CMS article view and the static SEO build. */
 export const SITE_ORIGIN = 'https://www.fotz-studio.pl';
 
+const canonicalPaths = {
+  '/social-media/poznan': '/agencja-social-media/poznan',
+  '/blog/nps-co-to-jest': '/blog/nps-net-promoter-score-co-to-jest',
+  '/blog/reklama-programatyczna-co-to': '/blog/programmatic-advertising-co-to',
+  '/blog/zero-trust-security-co-to-jest-jak-wdrozyz': '/blog/zero-trust-security-co-to-jest-jak-wdrozyz-ztna-mfa',
+  '/blog/api-gateway-co-to-jest-jak-wybrac-kong-aws-apigee': '/blog/api-gateway-co-to-jest-kong-aws-traefik-kubernetes-ingress',
+  '/blog/okr-co-to': '/blog/okr-co-to-jest',
+  '/uslugi/audyt-seo': '/seo/audyt',
+  '/uslugi/strony-internetowe/kielce': '/strony-internetowe/kielce',
+};
+
+function canonicalLink(href) {
+  const relative = href.startsWith('/') && !href.startsWith('//');
+  if (!relative && !href.startsWith(`${SITE_ORIGIN}/`)) return href;
+  const url = new URL(href, SITE_ORIGIN);
+  const target = canonicalPaths[url.pathname];
+  return target ? `${relative ? '' : SITE_ORIGIN}${target}${url.search}${url.hash}` : href;
+}
+
 // Match website authorities only: keep mailboxes, social profiles and subdomains.
 export function normalizeSiteUrls(value) {
   return value.replace(/https?:\/\/(?:www\.)?(?:fotz\.pl|fotz-studio\.pl)(?=[/\s"'`<>?#]|$)/g, SITE_ORIGIN);
@@ -30,7 +49,7 @@ export function getBlogMetadata(article) {
 /** The article view already emits one H1 and promotes CMS schema into Helmet. */
 export function prepareBlogHtml(html) {
   return normalizeSiteUrls(html)
-    .replace(/(\bhref=["'](?:https:\/\/www\.fotz-studio\.pl)?)\/social-media\/poznan(?=["'?#])/gi, '$1/agencja-social-media/poznan')
+    .replace(/(\bhref=["'])([^"']+)(["'])/gi, (_, start, href, end) => `${start}${canonicalLink(href)}${end}`)
     .replace(/<script\b(?=[^>]*\btype=["']application\/ld\+json["'])[^>]*>[\s\S]*?<\/script\s*>/gi, '')
     .replace(/<h1(\s[^>]*)?>/gi, '<h2$1>')
     .replace(/<\/h1>/gi, '</h2>');

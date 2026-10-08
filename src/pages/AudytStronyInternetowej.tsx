@@ -205,7 +205,7 @@ export default function AudytStronyInternetowej() {
                     Zamów audyt strony <ArrowRight className="ml-2 w-5 h-5" />
                   </Link>
                 </Button>
-                <Link to="/uslugi/audyt-seo">
+                <Link to="/seo/audyt">
                   <Button size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-slate-900">
                     Audyt SEO
                   </Button>
@@ -338,7 +338,7 @@ export default function AudytStronyInternetowej() {
             <div className="max-w-5xl mx-auto px-4 md:px-6">
               <h2 className="text-2xl font-bold text-center mb-8">Powiązane usługi</h2>
               <div className="grid md:grid-cols-3 gap-4">
-                <Link to="/uslugi/audyt-seo" className="bg-slate-50 p-4 rounded-lg border border-slate-200 hover:border-blue-400 transition-colors">
+                <Link to="/seo/audyt" className="bg-slate-50 p-4 rounded-lg border border-slate-200 hover:border-blue-400 transition-colors">
                   <span className="font-medium text-slate-800">Audyt SEO</span>
                 </Link>
                 <Link to="/uslugi/optymalizacja-strony-internetowej" className="bg-slate-50 p-4 rounded-lg border border-slate-200 hover:border-blue-400 transition-colors">

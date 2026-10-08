@@ -99,7 +99,7 @@ export default function BlogVideoMarketingDlaFirm() {
         keywords="Video Marketing dla Firm – Jak Skutecznie Promować Firmę Wideo? [2026], Video Marketing dla Firm – Jak Skutecznie Promować Firmę Wideo? [2026] poradnik, Video Marketing dla Firm – Jak Skutecznie Promować Firmę Wideo? [2026] strategia, Video Marketing dla Firm – Jak Skutecznie Promować Firmę Wideo? [2026] jak zrobić, Video Marketing dla Firm – Jak Skutecznie Promować Firmę Wideo? [2026] marketing, Video Marketing dla Firm – Jak Skutecznie Promować Firmę Wideo? [2026] przykłady, Video Marketing dla Firm – Jak Skutecznie Promować Firmę Wideo? [2026] w Polsce"
       />
 
-      <BreadcrumbSchema items={breadcrumbSchema.itemListElement} />
+      <BreadcrumbSchema data={breadcrumbSchema} />
       <FAQSchema data={faqSchema} />
 
       <article className="py-12 lg:py-16">

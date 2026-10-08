@@ -375,7 +375,7 @@ export default function KampaniaGoogleAds() {
                 <Link to="/performance-marketing/google-ads" className="bg-white p-4 rounded-lg border border-slate-200 hover:border-blue-400 transition-colors">
                   <span className="font-medium text-slate-800">Google Ads — pełna oferta</span>
                 </Link>
-                <Link to="/uslugi/audyt-seo" className="bg-white p-4 rounded-lg border border-slate-200 hover:border-blue-400 transition-colors">
+                <Link to="/seo/audyt" className="bg-white p-4 rounded-lg border border-slate-200 hover:border-blue-400 transition-colors">
                   <span className="font-medium text-slate-800">Audyt SEO</span>
                 </Link>
                 <Link to="/uslugi/marketing-internetowy" className="bg-white p-4 rounded-lg border border-slate-200 hover:border-blue-400 transition-colors">
