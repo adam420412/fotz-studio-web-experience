@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Check } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
+import { SelectedWork } from "@/components/sections/SelectedWork";
 import { BreadcrumbSchema, FAQSchema, ServiceSchema } from "@/components/seo/StructuredData";
 
 interface EditorialSection {
@@ -17,6 +18,7 @@ interface ServiceEditorialProps {
   lead: string;
   path: string;
   area?: string;
+  workAfterScope?: boolean;
   summary: string[];
   scopeTitle: string;
   scope: EditorialSection[];
@@ -25,8 +27,8 @@ interface ServiceEditorialProps {
 }
 
 /** Shared presentation; each offer keeps its own scope, evidence and answers. */
-export function ServiceEditorial({ title, eyebrow, lead, path, area = "Polska", summary, scopeTitle, scope, sections, faqs }: ServiceEditorialProps) {
-  return <Layout>
+export function ServiceEditorial({ title, eyebrow, lead, path, area = "Polska", workAfterScope = false, summary, scopeTitle, scope, sections, faqs }: ServiceEditorialProps) {
+  return <Layout workPlacement={workAfterScope ? "manual" : "end"}>
     <BreadcrumbSchema items={[{ name: "Strona główna", url: "/" }, { name: "Usługi", url: "/uslugi" }, { name: title, url: path }]} />
     <ServiceSchema name={title} description={lead} areaServed={area} />
     <FAQSchema items={faqs} />
@@ -61,6 +63,8 @@ export function ServiceEditorial({ title, eyebrow, lead, path, area = "Polska", 
         </article>)}</div>
       </div>
     </section>
+
+    {workAfterScope && <SelectedWork />}
 
     <div className="container-wide px-6 md:px-12 py-12 md:py-16">
       {sections.map((item, index) => <section key={item.title} className="grid md:grid-cols-[1fr_1.4fr] gap-5 md:gap-12 py-8 border-b border-border first:pt-0">

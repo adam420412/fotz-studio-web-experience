@@ -1,10 +1,11 @@
-import { useState, useEffect, useRef } from "react";
+import { lazy, Suspense, useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ArrowUpRight, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { MegaMenu } from "./MegaMenu";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import logoFotz from "@/assets/logo-fotz.png";
+
+const MegaMenu = lazy(() => import("./MegaMenu").then(module => ({ default: module.MegaMenu })));
 
 const navLinksData = [
   { name: "Realizacje", href: "/realizacje" },
@@ -36,6 +37,7 @@ export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
+  const [loadMegaMenu, setLoadMegaMenu] = useState(false);
   const location = useLocation();
   const menuButton = useRef<HTMLButtonElement>(null);
   const servicesButton = useRef<HTMLButtonElement>(null);
@@ -104,7 +106,7 @@ export function Navbar() {
                 ref={servicesButton}
                 aria-expanded={isMegaMenuOpen}
                 aria-controls="services-menu"
-                onClick={() => setIsMegaMenuOpen(!isMegaMenuOpen)}
+                onClick={() => { setLoadMegaMenu(true); setIsMegaMenuOpen(!isMegaMenuOpen); }}
                 className={cn(
                   pillBase,
                   "flex items-center gap-1.5 outline-none",
@@ -237,10 +239,9 @@ export function Navbar() {
       )}
 
       {/* Mega Menu */}
-      <MegaMenu
-        isOpen={isMegaMenuOpen}
-        onClose={() => setIsMegaMenuOpen(false)}
-      />
+      {loadMegaMenu && <Suspense fallback={isMegaMenuOpen ? <div role="status" className="fixed top-20 inset-x-0 z-50 bg-background border-b border-border px-12 py-6">Ładowanie usług… <Link to="/uslugi" className="underline">Wszystkie usługi</Link></div> : null}>
+        <MegaMenu isOpen={isMegaMenuOpen} onClose={() => setIsMegaMenuOpen(false)} />
+      </Suspense>}
     </>
   );
 }

@@ -20,6 +20,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { extractMetadata, escapeHtml, readSource, literal } from './lib/seo-metadata.mjs';
 import { getBlogMetadata } from '../src/lib/blog-seo.mjs';
+import { addRoutePreloads, addHeroPreload } from './lib/route-preloads.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
@@ -35,6 +36,7 @@ if (!fs.existsSync(INDEX_HTML)) {
 }
 
 const clientHtml = fs.readFileSync(INDEX_HTML, 'utf-8');
+const assetManifest = JSON.parse(fs.readFileSync(path.join(DIST, '.vite/manifest.json'), 'utf8'));
 const templatePath = path.join(DIST, 'prerender-template.json');
 const template = clientHtml.includes('<!-- fotz-body:start -->')
   ? JSON.parse(fs.readFileSync(templatePath, 'utf8')) : clientHtml;
@@ -218,11 +220,12 @@ for (const route of routes) {
   }
   
   // Generate the HTML with injected meta
-  let html = injectMeta(template, meta);
+  let html = addRoutePreloads(injectMeta(template, meta), assetManifest, path.relative(ROOT, file).split(path.sep).join('/'));
   if (!meta.noIndex) {
     try {
       const rendered = await renderPage(path.relative(path.join(SRC, 'pages'), file), route.path, publicArticles);
       let body = rendered.body;
+      html = addHeroPreload(html, body);
       if (!/<h1[\s>]/.test(body)) throw new Error('Missing page H1 in rendered content');
       // Initial animation styles must never hide the static document before JS.
       body = body.replace(/style="([^"]*)"/g, (tag, style) => /(?:^|;)opacity:0(?:;|$)/.test(style)
