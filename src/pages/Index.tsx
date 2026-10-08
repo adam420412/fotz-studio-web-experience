@@ -7,9 +7,7 @@ import { SEOHead } from "@/components/seo/SEOHead";
 import { LocalBusinessSchema, OrganizationSchema } from "@/components/seo/StructuredData";
 
 // Lazy load sections below the fold for better LCP
-// VideoShowcase wyłączony — ten sam wideo (/videos/fotz-reel.mp4) gra już
-// w kafelku Hero, więc sekcja tylko dublowała zawartość.
-// const VideoShowcase = lazy(() => import("@/components/sections/VideoShowcase").then(m => ({ default: m.VideoShowcase })));
+const FeaturedFilms = lazy(() => import("@/components/sections/FeaturedFilms").then(m => ({ default: m.FeaturedFilms })));
 const Services = lazy(() => import("@/components/sections/Services").then(m => ({ default: m.Services })));
 const CaseStudies = lazy(() => import("@/components/sections/CaseStudies").then(m => ({ default: m.CaseStudies })));
 const OfficeGallery = lazy(() => import("@/components/sections/OfficeGallery").then(m => ({ default: m.OfficeGallery })));
@@ -37,6 +35,9 @@ const Index = () => {
       <Layout>
         <HeroV3 />
         <ClientMarqueeV3 />
+        <Suspense fallback={<SectionLoader />}>
+          <FeaturedFilms />
+        </Suspense>
         <Suspense fallback={<SectionLoader />}>
           <Services />
         </Suspense>

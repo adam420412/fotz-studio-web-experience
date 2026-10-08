@@ -18,7 +18,7 @@ const footerLinks = {
     { name: "Content Marketing", href: "/content-marketing/strategia" },
     { name: "Strony internetowe", href: "/uslugi/strony-internetowe" },
     { name: "E-commerce & Sklepy", href: "/uslugi/strony-internetowe/ecommerce" },
-    { name: "Social Media", href: "/social-media/obsluga" },
+    { name: "Prowadzenie social media", href: "/social-media/obsluga" },
     { name: "Pozycjonowanie SEO", href: "/seo/pozycjonowanie" },
     { name: "Identyfikacja wizualna", href: "/uslugi/branding" },
     { name: "Wizualizacje 3D", href: "/wizualizacje-3d" },

@@ -48,6 +48,14 @@ Inspekcja pojedynczego URL-a marketingu pokazała, że strona już znajduje się
 
 Pełny odczyt 1077 adresów po publikacji ujawnił 3 rozbieżności między aplikacją a hostingiem: `/social-media`, `/content-marketing` i `/blog/automatyzacja-marketingu`. Hosting przekierowywał do prawidłowych celów, ale aplikacja oraz prerender nadal obsługiwały stare strony. Uzupełnienie dopasowuje przekierowania SPA do istniejącego hostingu, normalizuje odnośniki z CMS i blokuje ponowne wygenerowanie niezależnej strony dla ścieżki przekierowania. Przejścia aplikacji z parametrami i kotwicą sprawdzono w przeglądarce. Żaden adres docelowy ani wpis mapy XML nie jest usuwany.
 
+## Filmy na głównej i odnośniki social media
+
+Na głównej, poniżej pierwszego ekranu i logotypów, dodano sekcję z wyróżnionym spotem **CUPRA × Enea Stadion** oraz trzema rolkami: dzień meczowy Lech–Legia, Julia Wieniawa w B17 i sanah na Enea Stadionie. Cupra i mecz korzystają z oryginalnych plików użytkownika, przystosowanych do przeglądarki; odtwarzacz pojawia się dopiero po kliknięciu. Karty koncertowe mają rzeczywiste okładki publikacji i prowadzą do zweryfikowanych postów na Instagramie, z jednoznacznym oznaczeniem zewnętrznego odnośnika.
+
+Ten sam wybór materiałów trafia do `/social-media/obsluga`, a rolki także do `/agencja-social-media`. Strona agencji zyskała bezpośrednie przejścia do prowadzenia profili, produkcji treści i kampanii Meta; przycisk „Zobacz nasze rolki” prowadzi do materiałów na tej samej stronie. Nazwę „Prowadzenie social media” ujednolicono w nawigacji i stopce. Docelowe profile Instagram, Facebook i kanał YouTube sprawdzono w dostępnych źródłach; nie zmieniano ustawień ani treści tych profili.
+
+Nowe okładki mają łącznie około 147 kB; filmy pobierane po kliknięciu ważą około 4,7 MiB i 7,8 MiB. Odtwarzanie obu plików potwierdzono w przeglądarce, wraz z zamykaniem okna, Escape i powrotem fokusu. Kontrola 390 px / ciemny oraz 320 px / jasny motyw nie wykazała poziomego przepełnienia. Finalny zestaw po usunięciu 3 zbędnych dokumentów aliasów obejmuje **1074 dokumenty i 1072 URL-e w mapach**. Pełny odczyt tych 1074 adresów produkcyjnych nie wykazał błędów HTTP ani rozbieżności metadanych przed publikacją uzupełnienia mediów; wynik odbioru nowych materiałów zapisuje osobny raport wydania.
+
 ## Pozostała praca i interpretacja
 
 Pełna kontrola techniczna obejmuje wszystkie generowane dokumenty. Redakcja akapitów i oględziny ekranów obejmują podany zakres, nie ręczny odbiór ponad tysiąca stron. Duża część bloga i starszych ofert nadal wymaga indywidualnej redakcji, szczególnie danych liczbowych, cen, przypisania prac oraz treści lokalnych. Nie wykonano masowego usuwania podstron, tworzenia nowych stron pod zapytania ani zmiany dat publikacji poradników.
