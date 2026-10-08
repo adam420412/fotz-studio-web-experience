@@ -89,6 +89,8 @@ known_paths=set(json.loads((ROOT/'known-routes.json').read_text())['staticRoutes
 link_issues=[]
 checked_links=0
 for page in pages:
+    if page['path'] in redirects:
+        page['issues'].append('hosting redirect also generates an independently served SPA page')
     canonical=page['canonical']
     if canonical and unquote(urlparse(canonical[0]).path).rstrip('/')!=page['path'].rstrip('/'):
         page['issues'].append('page served at a noncanonical path without a redirect')

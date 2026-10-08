@@ -1316,7 +1316,6 @@ const StronyInternetoweZabrze = lazy(() => import("./pages/StronyInternetoweZabr
 const BlogContentMarketingPoradnik = lazy(() => import("./pages/BlogContentMarketingPoradnik"));
 const StronyInternetoweWalbrzych = lazy(() => import("./pages/StronyInternetoweWalbrzych"));
 const BlogSEOTechniczne = lazy(() => import("./pages/BlogSEOTechniczne"));
-const BlogAutomatyzacjaMarketingu = lazy(() => import("./pages/BlogAutomatyzacjaMarketingu"));
 const PozycjonowanieGliwice = lazy(() => import("./pages/PozycjonowanieGliwice"));
 const BlogWizerunekFirmy = lazy(() => import("./pages/BlogWizerunekFirmy"));
 const AgencjaMarketingowaCzestochowa = lazy(() => import("./pages/AgencjaMarketingowaCzestochowa"));
@@ -1503,9 +1502,7 @@ const PMTargetowanie = lazy(() => import("./pages/PMTargetowanie"));
 const CMEbooki = lazy(() => import("./pages/CMEbooki"));
 const CMVideoContent = lazy(() => import("./pages/CMVideoContent"));
 const SEOCluster = lazy(() => import("./pages/clusters/SEOCluster"));
-const SocialMediaCluster = lazy(() => import("./pages/clusters/SocialMediaCluster"));
 const PerformanceMarketingCluster = lazy(() => import("./pages/clusters/PerformanceMarketingCluster"));
-const ContentMarketingCluster = lazy(() => import("./pages/clusters/ContentMarketingCluster"));
 const UslugiCluster = lazy(() => import("./pages/clusters/UslugiCluster"));
 
 // Lazy load non-critical global components
@@ -1656,9 +1653,9 @@ const App = () => (
 
                 {/* Cluster hubs */}
                 <Route path="/seo" element={<SEOCluster />} />
-                <Route path="/social-media" element={<SocialMediaCluster />} />
+                <Route path="/social-media" element={<Redirect301 to="/social-media/obsluga" />} />
                 <Route path="/performance-marketing" element={<PerformanceMarketingCluster />} />
-                <Route path="/content-marketing" element={<ContentMarketingCluster />} />
+                <Route path="/content-marketing" element={<Redirect301 to="/content-marketing/strategia" />} />
 
                 {/* Topical Map: Agencja social media pillar + 20 cluster hubs */}
                 <Route path="/agencja-social-media" element={<AgencjaSocialMedia />} />
@@ -2488,7 +2485,7 @@ const App = () => (
                 <Route path="/blog/content-marketing-poradnik" element={<BlogContentMarketingPoradnik />} />
                 <Route path="/strony-internetowe/walbrzych" element={<StronyInternetoweWalbrzych />} />
                 <Route path="/blog/seo-techniczne-poradnik" element={<BlogSEOTechniczne />} />
-                <Route path="/blog/automatyzacja-marketingu" element={<BlogAutomatyzacjaMarketingu />} />
+                <Route path="/blog/automatyzacja-marketingu" element={<Redirect301 to="/blog/marketing-automation" />} />
                 <Route path="/pozycjonowanie/gliwice" element={<PozycjonowanieGliwice />} />
                 <Route path="/blog/wizerunek-firmy-w-internecie" element={<BlogWizerunekFirmy />} />
                 <Route path="/agencja-marketingowa/czestochowa" element={<AgencjaMarketingowaCzestochowa />} />

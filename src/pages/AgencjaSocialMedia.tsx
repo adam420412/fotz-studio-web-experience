@@ -4,6 +4,7 @@ import { Layout } from "@/components/layout/Layout";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { BreadcrumbSchema, ServiceSchema } from "@/components/seo/StructuredData";
 import { SOCIAL_MEDIA_CLUSTERS, SM_PILLAR_PATH } from "@/data/socialMediaClusters";
+import { FeaturedFilms } from "@/components/sections/FeaturedFilms";
 
 const FAQ = [
   {
@@ -97,15 +98,26 @@ export default function AgencjaSocialMedia() {
                 Bezpłatna wycena
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
               </Link>
-              <Link to="/realizacje" className="dv-btn dv-btn-secondary">
-                Zobacz realizacje
-              </Link>
+              <a href="#filmy-i-rolki" className="dv-btn dv-btn-secondary">Zobacz nasze rolki</a>
             </div>
           </div>
         </section>
 
+        <section className="container-wide px-6 md:px-12 pb-14" aria-labelledby="social-uslugi">
+          <h2 id="social-uslugi" className="font-geist text-2xl md:text-3xl mb-6">Przejdź do konkretnej usługi</h2>
+          <div className="grid md:grid-cols-3 gap-4">
+            {[
+              { title: "Prowadzenie profili", text: "Plan, publikacje, moderacja i raportowanie.", href: "/social-media/obsluga" },
+              { title: "Zdjęcia, rolki i treści", text: "Produkcja materiałów na Twoje kanały.", href: "/social-media/content" },
+              { title: "Kampanie Meta Ads", text: "Reklamy na Facebooku i Instagramie.", href: "/performance-marketing/meta-ads" },
+            ].map(service => <Link key={service.href} to={service.href} className="group rounded-2xl border border-border p-6 transition-colors hover:border-primary"><h3 className="font-geist text-xl mb-2 flex items-center justify-between gap-3">{service.title}<ArrowRight aria-hidden="true" className="h-4 w-4 shrink-0" /></h3><p className="text-sm text-muted-foreground leading-relaxed">{service.text}</p></Link>)}
+          </div>
+        </section>
+
+        <FeaturedFilms reelsOnly />
+
         {/* CLUSTER GRID */}
-        <section className="container-wide px-6 md:px-12 pb-20 md:pb-28">
+        <section className="container-wide px-6 md:px-12 py-20 md:py-28">
           <div className="mb-12">
             <span className="dv-eyebrow-muted">Zaplanuj współpracę</span>
             <h2 className="font-geist text-3xl md:text-5xl tracking-tight mt-2">
