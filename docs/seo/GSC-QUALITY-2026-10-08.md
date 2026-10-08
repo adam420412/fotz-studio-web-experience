@@ -40,6 +40,14 @@ Ostrzeżenia breadcrumbs w GSC dotyczą Łodzi i Torunia oraz skanowań z wrześ
 
 Publikację, wynik CI, test 27 przypadków i pełny odczyt produkcji dokumentuje osobno odbiór wydania. Sam ten raport nie stanowi potwierdzenia wdrożenia.
 
+## Odbiór produkcji i uzupełnienie
+
+Zmiany z PR #26 zostały opublikowane 8 października. Oba wdrożenia Vercel zakończyły się sukcesem, a 27 kontroli nowych ofert, breadcrumbs i przekierowań przeszło na domenie produkcyjnej. Google przyjął prośby o ponowne indeksowanie `/seo/audyt` i `/uslugi/marketing-internetowy`.
+
+Inspekcja pojedynczego URL-a marketingu pokazała, że strona już znajduje się w Google, ma prawidłowy canonical, a ostatnie skanowanie odbyło się 6 października o 02:05:11. Raport zbiorczy nadal wymienia ją jako zeskanowaną bez indeksacji. Nie przypisujemy jej wcześniejszej obecności w indeksie temu wdrożeniu.
+
+Pełny odczyt 1077 adresów po publikacji ujawnił 3 rozbieżności między aplikacją a hostingiem: `/social-media`, `/content-marketing` i `/blog/automatyzacja-marketingu`. Hosting przekierowywał do prawidłowych celów, ale aplikacja oraz prerender nadal obsługiwały stare strony. Uzupełnienie dopasowuje przekierowania SPA do istniejącego hostingu, normalizuje odnośniki z CMS i blokuje ponowne wygenerowanie niezależnej strony dla ścieżki przekierowania. Przejścia aplikacji z parametrami i kotwicą sprawdzono w przeglądarce. Żaden adres docelowy ani wpis mapy XML nie jest usuwany.
+
 ## Pozostała praca i interpretacja
 
 Pełna kontrola techniczna obejmuje wszystkie generowane dokumenty. Redakcja akapitów i oględziny ekranów obejmują podany zakres, nie ręczny odbiór ponad tysiąca stron. Duża część bloga i starszych ofert nadal wymaga indywidualnej redakcji, szczególnie danych liczbowych, cen, przypisania prac oraz treści lokalnych. Nie wykonano masowego usuwania podstron, tworzenia nowych stron pod zapytania ani zmiany dat publikacji poradników.
