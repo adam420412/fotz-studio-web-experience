@@ -38,3 +38,5 @@ deno.lock
 /docs/seo/qa-2026-10-04-gsc/
 
 /docs/seo/qa-2026-10-08/
+/.lighthouseci/
+/reports/lighthouse/

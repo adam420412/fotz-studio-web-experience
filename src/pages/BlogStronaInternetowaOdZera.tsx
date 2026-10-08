@@ -1,3 +1,4 @@
+import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import React from 'react';
 import { Link } from 'react-router-dom';
@@ -126,7 +127,8 @@ export default function BlogStronaInternetowaOdZera() {
   ];
 
   return (
-    <>
+    <Layout>
+      <div className="pt-20">
       <SEOHead
         title="Strona internetowa dla małej firmy - poradnik 2025 | FOTZ Studio"
         description="Pełny poradnik jak zrobić stronę dla małej firmy. Co musi mieć strona? Ile kosztuje? WordPress vs Wix. 5 najczęstszych błędów. Praktyczne porady."
@@ -498,6 +500,7 @@ export default function BlogStronaInternetowaOdZera() {
 
       {/* Contact Section */}
       <ContactSection />
-    </>
+      </div>
+    </Layout>
   );
 }

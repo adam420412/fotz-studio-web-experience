@@ -11,7 +11,9 @@
     "preview": "vite preview",
     "typecheck": "tsc -p tsconfig.app.json --noEmit && tsc -p tsconfig.node.json --noEmit",
     "test": "node --test scripts/*.test.mjs",
-    "seo:check": "python3 scripts/audit-built-site.py && node scripts/audit-source-links.mjs"
+    "seo:check": "python3 scripts/audit-built-site.py && node scripts/audit-source-links.mjs && node scripts/audit-work-photos.mjs",
+    "seo:lighthouse": "lhci autorun",
+    "images:work": "node scripts/prepare-selected-work.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -79,6 +81,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.32.0",
+    "@lhci/cli": "0.15.1",
     "@tailwindcss/typography": "^0.5.16",
     "@types/node": "^22.16.5",
     "@types/react": "^18.3.23",

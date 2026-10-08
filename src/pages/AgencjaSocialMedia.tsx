@@ -5,6 +5,7 @@ import { SEOHead } from "@/components/seo/SEOHead";
 import { BreadcrumbSchema, ServiceSchema } from "@/components/seo/StructuredData";
 import { SOCIAL_MEDIA_CLUSTERS, SM_PILLAR_PATH } from "@/data/socialMediaClusters";
 import { FeaturedFilms } from "@/components/sections/FeaturedFilms";
+import { SelectedWork } from "@/components/sections/SelectedWork";
 
 const FAQ = [
   {
@@ -72,7 +73,7 @@ export default function AgencjaSocialMedia() {
         areaServed="Polska"
       />
 
-      <Layout>
+      <Layout workPlacement="manual">
         {/* HERO */}
         <section className="container-wide px-6 md:px-12 pt-40 pb-20 md:pb-28">
           <nav aria-label="Ścieżka nawigacji" className="text-sm text-muted-foreground mb-8">
@@ -115,6 +116,7 @@ export default function AgencjaSocialMedia() {
         </section>
 
         <FeaturedFilms reelsOnly />
+        <SelectedWork />
 
         {/* CLUSTER GRID */}
         <section className="container-wide px-6 md:px-12 py-20 md:py-28">
