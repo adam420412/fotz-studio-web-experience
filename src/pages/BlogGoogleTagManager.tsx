@@ -172,7 +172,7 @@ export default function BlogGoogleTagManager() {
                 <p className="text-blue-700 text-sm mb-3">
                   Skonfigurujemy Google Tag Manager, GA4 i śledzenie konwersji dla Twojej strony.
                 </p>
-                <Link to="/uslugi/audyt-seo" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
+                <Link to="/seo/audyt" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
                   Analityka i audyt SEO <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>

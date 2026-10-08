@@ -906,7 +906,6 @@ const BlogSaasMetricsCoTo = lazy(() => import("./pages/BlogSaasMetricsCoTo"));
 // Wave 87: Service Design, Churn Analysis, Programmatic Advertising
 const BlogServiceDesignCoTo = lazy(() => import("./pages/BlogServiceDesignCoTo"));
 const BlogChurnAnalysisCoTo = lazy(() => import("./pages/BlogChurnAnalysisCoTo"));
-const BlogProgrammaticAdvertisingCoTo = lazy(() => import("./pages/BlogProgrammaticAdvertisingCoTo"));
 
 // Wave 86: Usability Testing, Communication Strategy, Positioning Statement
 const BlogUsabilityTestingCoTo = lazy(() => import("./pages/BlogUsabilityTestingCoTo"));
@@ -994,7 +993,6 @@ const BlogLeanStartupCoTo = lazy(() => import("./pages/BlogLeanStartupCoTo"));
 const BlogKanbanCoTo = lazy(() => import("./pages/BlogKanbanCoTo"));
 
 // Wave 69: OKR, Product Marketing, Employer Branding
-const BlogOKRCoTo = lazy(() => import("./pages/BlogOkrCoTo"));
 const BlogProductMarketingCoTo = lazy(() => import("./pages/BlogProductMarketingCoTo"));
 const BlogEmployerBrandingCoTo = lazy(() => import("./pages/BlogEmployerBrandingCoTo"));
 
@@ -1180,7 +1178,6 @@ const BlogFreelancerCoToJest = lazy(() => import("./pages/BlogFreelancerCoToJest
 const BlogNIPCoToJest = lazy(() => import("./pages/BlogNIPCoToJest"));
 
 // Wave 29: NPS, Startup, SaaS, UX Design, MRR/ARR
-const BlogNPSCoToJest = lazy(() => import("./pages/BlogNpsCoToJest"));
 const BlogStartupCoToJest = lazy(() => import("./pages/BlogStartupCoToJest"));
 const BlogSaaSCoToJest = lazy(() => import("./pages/BlogSaaSCoToJest"));
 const BlogUXDesignCoTo = lazy(() => import("./pages/BlogUXDesignCoTo"));
@@ -1695,7 +1692,7 @@ const App = () => (
                 <Route path="/uslugi/strony-internetowe/radom" element={<StronyInternetoweRadom />} />
                 <Route path="/uslugi/strony-internetowe/opole" element={<StronyInternetoweOpole />} />
                 <Route path="/uslugi/strony-internetowe/olsztyn" element={<StronyInternetoweOlsztyn />} />
-                <Route path="/uslugi/strony-internetowe/kielce" element={<StronyInternetoweKielce />} />
+                <Route path="/uslugi/strony-internetowe/kielce" element={<Redirect301 to="/strony-internetowe/kielce" />} />
                 <Route path="/uslugi/strony-internetowe/konin" element={<StronyInternetoweKonin />} />
                 <Route path="/uslugi/strony-internetowe/tarnow" element={<StronyInternetoweTarnow />} />
                 <Route path="/uslugi/strony-internetowe/plock" element={<StronyInternetowePlock />} />
@@ -1753,7 +1750,7 @@ const App = () => (
                 <Route path="/agencja-seo-krakow" element={<AgencjaSEOKrakow />} />
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
-                <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                <Route path="/uslugi/audyt-seo" element={<Redirect301 to="/seo/audyt" />} />
                 {/* Wave 202 */}
                 <Route path="/blog/react-email-resend-nodemailer-szablony-email-jsx-typescript-2024" element={<BlogReactEmailResendCoTo />} />
                 <Route path="/blog/local-first-jazz-tools-powersync-electricsql-dexie-pglite-offline-2024" element={<BlogLocalFirstCoTo />} />
@@ -1997,7 +1994,7 @@ const App = () => (
                 {/* Wave 142 */}
                 <Route path="/blog/data-governance-co-to-jest-jak-wdrozyz-lad-danych" element={<BlogDataGovernanceCoTo />} />
                 <Route path="/blog/gdpr-rodo-co-to-jest-jak-wdrozyz-firmy-technologiczne" element={<BlogGdprCoTo />} />
-                <Route path="/blog/api-gateway-co-to-jest-jak-wybrac-kong-aws-apigee" element={<BlogApiGatewayCoTo />} />
+                <Route path="/blog/api-gateway-co-to-jest-jak-wybrac-kong-aws-apigee" element={<Redirect301 to="/blog/api-gateway-co-to-jest-kong-aws-traefik-kubernetes-ingress" />} />
                 {/* Wave 141 */}
                 <Route path="/blog/event-driven-architecture-co-to-jest-jak-wdrozyz" element={<BlogEventDrivenArchCoTo />} />
                 <Route path="/blog/cqrs-command-query-responsibility-segregation-co-to-jest" element={<BlogCqrsCoTo />} />
@@ -2013,7 +2010,7 @@ const App = () => (
                 {/* Wave 138 */}
                 <Route path="/blog/soc2-compliance-co-to-jest-jak-uzyskac-startup" element={<BlogSoc2CoTo />} />
                 <Route path="/blog/data-warehouse-co-to-jest-jak-wybrac" element={<BlogDataWarehouseCoTo />} />
-                <Route path="/blog/zero-trust-security-co-to-jest-jak-wdrozyz" element={<BlogZeroTrustCoTo />} />
+                <Route path="/blog/zero-trust-security-co-to-jest-jak-wdrozyz" element={<Redirect301 to="/blog/zero-trust-security-co-to-jest-jak-wdrozyz-ztna-mfa" />} />
                 {/* Wave 137 */}
                 <Route path="/blog/sprint-planning-co-to-jest-jak-przeprowadzic" element={<BlogSprintPlanningCoTo />} />
                 <Route path="/blog/partner-ecosystem-ekosystem-partnerski-saas" element={<BlogPartnerEcosystemCoTo />} />
@@ -2217,7 +2214,7 @@ const App = () => (
                 {/* Wave 87 */}
                 <Route path="/blog/service-design-co-to" element={<BlogServiceDesignCoTo />} />
                 <Route path="/blog/churn-analysis-co-to" element={<BlogChurnAnalysisCoTo />} />
-                <Route path="/blog/reklama-programatyczna-co-to" element={<BlogProgrammaticAdvertisingCoTo />} />
+                <Route path="/blog/reklama-programatyczna-co-to" element={<Redirect301 to="/blog/programmatic-advertising-co-to" />} />
                 {/* Wave 86 */}
                 <Route path="/blog/usability-testing-co-to" element={<BlogUsabilityTestingCoTo />} />
                 <Route path="/blog/strategia-komunikacji-co-to" element={<BlogCommunicationStrategyCoTo />} />
@@ -2287,7 +2284,7 @@ const App = () => (
                 <Route path="/blog/lean-startup-co-to" element={<BlogLeanStartupCoTo />} />
                 <Route path="/blog/kanban-co-to" element={<BlogKanbanCoTo />} />
                 {/* Wave 69 */}
-                <Route path="/blog/okr-co-to" element={<BlogOKRCoTo />} />
+                <Route path="/blog/okr-co-to" element={<Redirect301 to="/blog/okr-co-to-jest" />} />
                 <Route path="/blog/product-marketing-co-to" element={<BlogProductMarketingCoTo />} />
                 <Route path="/blog/employer-branding-co-to" element={<BlogEmployerBrandingCoTo />} />
                 {/* Wave 68 */}
@@ -2433,7 +2430,7 @@ const App = () => (
                 <Route path="/blog/freelancer-co-to-jest" element={<BlogFreelancerCoToJest />} />
                 <Route path="/blog/nip-co-to-jest" element={<BlogNIPCoToJest />} />
                 {/* Wave 29 */}
-                <Route path="/blog/nps-co-to-jest" element={<BlogNPSCoToJest />} />
+                <Route path="/blog/nps-co-to-jest" element={<Redirect301 to="/blog/nps-net-promoter-score-co-to-jest" />} />
                 <Route path="/blog/startup-co-to-jest" element={<BlogStartupCoToJest />} />
                 <Route path="/blog/saas-co-to-jest" element={<BlogSaaSCoToJest />} />
                 <Route path="/blog/ux-design-co-to" element={<BlogUXDesignCoTo />} />

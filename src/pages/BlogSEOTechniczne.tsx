@@ -402,7 +402,7 @@ export default function BlogSEOTechniczne() {
                   Nasza agencja fotz.pl specjalizuje się w audytach technicznych SEO. Przeanalizujemy Twoją stronę, zidentyfikujemy problemy i podamy konkretne rekomendacje. Zwiększ ruch organiczny już dzisiaj.
                 </p>
                 <Link
-                  to="/uslugi/audyt-seo"
+                  to="/seo/audyt"
                   className="inline-flex items-center gap-2 bg-yellow-400 text-gray-900 px-6 py-3 rounded-lg font-bold hover:bg-yellow-300 transition"
                 >
                   Zamów audyt SEO <ArrowRight className="w-5 h-5" />

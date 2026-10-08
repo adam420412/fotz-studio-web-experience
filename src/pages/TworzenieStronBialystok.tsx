@@ -241,16 +241,15 @@ export default function TworzenieStronBialystok() {
         {/* Nearby Cities */}
         <FadeInView>
           <section className="mb-16 bg-gray-50 p-8 rounded-xl">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">Obsługujemy też miasteczka w okolicy</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-8">Współpraca z firmami z regionu</h2>
             <div className="flex flex-wrap gap-3">
               {nearbyCity.map((city, idx) => (
                 <FadeInView key={idx} delay={idx * 0.05}>
-                  <Link
-                    to={`/uslugi/tworzenie-stron-internetowych/${city.toLowerCase()}`}
-                    className="px-4 py-2 bg-white border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-100 transition text-sm"
+                  <span
+                    className="px-4 py-2 bg-white border border-gray-300 rounded-lg text-gray-700 inline-block text-sm"
                   >
                     {city}
-                  </Link>
+                  </span>
                 </FadeInView>
               ))}
             </div>

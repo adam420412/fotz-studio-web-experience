@@ -212,7 +212,7 @@ export function ServiceSchema({
 }
 
 interface BreadcrumbSchemaProps {
-  items?: Array<{ name?: string; url?: string; label?: string; href?: string }>;
+  items?: Array<{ name?: string; url?: string; label?: string; href?: string; path?: string }>;
   data?: {
     itemListElement?: Array<{ position?: number; name?: string; item?: string }>;
   };
@@ -231,7 +231,7 @@ export function BreadcrumbSchema({ items = [], data }: BreadcrumbSchemaProps) {
       "@type": "ListItem",
       position: index + 1,
       name: item.name ?? item.label ?? "",
-      ...((item.url ?? item.href) ? { item: new URL((item.url ?? item.href)!, "https://www.fotz-studio.pl").href.replace(/\/$/, "") } : {}),
+      ...((item.url ?? item.href ?? item.path) ? { item: new URL((item.url ?? item.href ?? item.path)!, "https://www.fotz-studio.pl").href.replace(/\/$/, "") } : {}),
     })),
   };
 

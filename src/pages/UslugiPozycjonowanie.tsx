@@ -626,7 +626,7 @@ const UslugiPozycjonowanie = () => {
           {/* Internal links */}
           <div className="mt-10 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
             <Link
-              to="/uslugi/audyt-seo"
+              to="/seo/audyt"
               className="text-primary hover:underline font-medium text-sm"
             >
               → Audyt SEO — szczegóły

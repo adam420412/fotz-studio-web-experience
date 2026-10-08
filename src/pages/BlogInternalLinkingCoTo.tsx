@@ -145,7 +145,7 @@ export default function BlogInternalLinkingCoTo() {
                 <p className="text-blue-700 text-sm mb-3">
                   Audyt SEO i optymalizacja linków wewnętrznych — budujemy silosy treści i zwiększamy autorytet stron docelowych.
                 </p>
-                <Link to="/uslugi/audyt-seo" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
+                <Link to="/seo/audyt" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
                   Audyt SEO — oferta <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>

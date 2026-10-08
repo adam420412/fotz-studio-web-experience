@@ -4,6 +4,13 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "redirects": [
+    {"source": "/blog/nps-co-to-jest", "destination": "/blog/nps-net-promoter-score-co-to-jest", "permanent": true},
+    {"source": "/blog/reklama-programatyczna-co-to", "destination": "/blog/programmatic-advertising-co-to", "permanent": true},
+    {"source": "/blog/zero-trust-security-co-to-jest-jak-wdrozyz", "destination": "/blog/zero-trust-security-co-to-jest-jak-wdrozyz-ztna-mfa", "permanent": true},
+    {"source": "/blog/api-gateway-co-to-jest-jak-wybrac-kong-aws-apigee", "destination": "/blog/api-gateway-co-to-jest-kong-aws-traefik-kubernetes-ingress", "permanent": true},
+    {"source": "/blog/okr-co-to", "destination": "/blog/okr-co-to-jest", "permanent": true},
+    {"source": "/uslugi/audyt-seo", "destination": "/seo/audyt", "permanent": true},
+    {"source": "/uslugi/strony-internetowe/kielce", "destination": "/strony-internetowe/kielce", "permanent": true},
     { "source": "/social-media/poznan", "destination": "/agencja-social-media/poznan", "permanent": true },
     { "source": "/blog/content-marketing-dla-firmy", "destination": "/blog/content-marketing-poradnik", "permanent": true },
     { "source": "/project-type/social-media", "destination": "/realizacje", "permanent": true },

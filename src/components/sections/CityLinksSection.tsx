@@ -29,7 +29,7 @@ const cityLinks: CityLink[] = [
   { name: "Radom", href: "/uslugi/strony-internetowe/radom" },
   { name: "Opole", href: "/uslugi/strony-internetowe/opole" },
   { name: "Olsztyn", href: "/uslugi/strony-internetowe/olsztyn" },
-  { name: "Kielce", href: "/uslugi/strony-internetowe/kielce" },
+  { name: "Kielce", href: "/strony-internetowe/kielce" },
   { name: "Konin", href: "/uslugi/strony-internetowe/konin" },
   { name: "Tarnów", href: "/uslugi/strony-internetowe/tarnow" },
   { name: "Płock", href: "/uslugi/strony-internetowe/plock" },
