@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { ImageLightbox } from "@/components/ImageLightbox";
 import { useState } from "react";
-import gierkiImg from "@/assets/portfolio/gierki.png";
+import gierkiImg from "@/assets/portfolio/gierki-web.webp";
 import { BreadcrumbSchema, ArticleSchema } from "@/components/seo/StructuredData";
 
 // Gallery images

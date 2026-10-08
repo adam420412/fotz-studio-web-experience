@@ -72,7 +72,7 @@ const footerLinks = {
     { name: "Kontakt", href: "/kontakt" },
     { name: "Mapa strony", href: "/mapa-strony" },
     { name: "Zainstaluj aplikację", href: "/zainstaluj" },
-    { name: "Panel klienta", href: "https://panel.fotz.pl/login", external: true },
+    { name: "Obsługa klienta", href: "/kontakt" },
   ],
   narzedzia: [
     { name: "Quiz rekomendacyjny", href: "/quiz" },

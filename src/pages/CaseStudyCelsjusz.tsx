@@ -4,7 +4,7 @@ import { ArrowLeft, ArrowRight, Globe, Search, Shield, Smartphone, Sun, Users } 
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { SEOHead } from "@/components/seo/SEOHead";
-import celsjuszImg from "@/assets/portfolio/celsjusz.png";
+import celsjuszImg from "@/assets/portfolio/celsjusz-web.webp";
 import { BreadcrumbSchema, ArticleSchema } from "@/components/seo/StructuredData";
 
 const services = [

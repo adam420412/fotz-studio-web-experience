@@ -1,0 +1,11 @@
+# Check real outbound links; do not silently accept 403, 429 or timeouts.
+max_concurrency = 6
+host_concurrency = 2
+host_request_interval = "100ms"
+timeout = 20
+max_retries = 1
+include_mail = false
+no_progress = true
+format = "json"
+output = "reports/links/lychee.json"
+scheme = ["https", "http"]

@@ -8,7 +8,7 @@ import { useState } from "react";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { useCountUp } from "@/hooks/useCountUp";
 import { OtherIndustries } from "@/components/sections/OtherIndustries";
-import vertheImg from "@/assets/portfolio/verthe.png";
+import vertheImg from "@/assets/portfolio/verthe-web.webp";
 
 const services = [
   {

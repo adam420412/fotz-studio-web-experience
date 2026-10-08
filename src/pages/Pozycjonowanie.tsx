@@ -43,12 +43,12 @@ import { TextReveal } from "@/components/TextReveal";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { RelatedServices } from "@/components/sections/RelatedServices";
 
-import rppgImg from "@/assets/portfolio/rppg.png";
-import klagemlmg from "@/assets/portfolio/klagem.png";
-import fpsCegielskiImg from "@/assets/portfolio/fps-cegielski.png";
-import victoryCarsImg from "@/assets/portfolio/victory-cars.png";
-import cuteDumplingImg from "@/assets/portfolio/cute-dumpling-new.png";
-import friendlyGasImg from "@/assets/portfolio/friendly-gas-new.png";
+import rppgImg from "@/assets/portfolio/rppg-web.webp";
+import klagemlmg from "@/assets/portfolio/klagem-web.webp";
+import fpsCegielskiImg from "@/assets/portfolio/fps-cegielski-web.webp";
+import victoryCarsImg from "@/assets/portfolio/victory-cars-web.webp";
+import cuteDumplingImg from "@/assets/portfolio/cute-dumpling-new-web.webp";
+import friendlyGasImg from "@/assets/portfolio/friendly-gas-new-web.webp";
 
 const Pozycjonowanie = () => {
   const problems = [

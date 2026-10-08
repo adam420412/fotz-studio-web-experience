@@ -183,7 +183,7 @@ export default function BlogArticleDynamic() {
                 prose-blockquote:border-primary prose-blockquote:text-muted-foreground"
               dangerouslySetInnerHTML={{
                 // Replace any <h1> tags in CMS content with <h2> to avoid duplicate H1 on page
-                __html: prepareBlogHtml(article.content_html),
+                __html: prepareBlogHtml(article.content_html, article.slug),
               }}
             />
           )}

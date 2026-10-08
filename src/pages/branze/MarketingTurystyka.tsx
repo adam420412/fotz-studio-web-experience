@@ -9,7 +9,7 @@ import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "
 import { useCountUp } from "@/hooks/useCountUp";
 import { OtherIndustries } from "@/components/sections/OtherIndustries";
 import { GalleryImage } from "@/components/GalleryImage";
-import apartamentyImg from "@/assets/portfolio/apartamenty-chorwacja.jpg";
+import apartamentyImg from "@/assets/portfolio/apartamenty-chorwacja-web.webp";
 
 // Galeria turystyczna - eventy, doświadczenia, atrakcje
 import aerialViewImg from "@/assets/drone/event-aerial-view.jpg";

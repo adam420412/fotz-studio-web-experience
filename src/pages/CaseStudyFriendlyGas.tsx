@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { BreadcrumbSchema, ArticleSchema } from "@/components/seo/StructuredData";
-import friendlyGasImg from "@/assets/portfolio/friendly-gas.png";
+import friendlyGasImg from "@/assets/portfolio/friendly-gas-web.webp";
 
 const services = [
   { icon: Globe, label: "Strona internetowa" },

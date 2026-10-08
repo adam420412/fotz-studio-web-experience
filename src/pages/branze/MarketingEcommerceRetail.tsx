@@ -9,7 +9,7 @@ import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "
 import { useCountUp } from "@/hooks/useCountUp";
 import { OtherIndustries } from "@/components/sections/OtherIndustries";
 
-import friendlyGasImg from "@/assets/portfolio/friendly-gas-new.png";
+import friendlyGasImg from "@/assets/portfolio/friendly-gas-new-web.webp";
 
 const ModelViewer3D = lazy(() => import("@/components/ModelViewer3D").then(module => ({ default: module.ModelViewer3D })));
 

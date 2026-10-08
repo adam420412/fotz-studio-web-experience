@@ -220,6 +220,7 @@ export default function Kontakt() {
       {/* Contact Section */}
       <section ref={ref} className="section-padding bg-card">
         <div className="container-wide">
+          <h2 className="sr-only">Formularz i dane kontaktowe</h2>
           <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 md:gap-12">
             {/* Contact Form */}
             <div

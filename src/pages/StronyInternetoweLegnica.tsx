@@ -3,8 +3,8 @@ import { Layout } from "@/components/layout/Layout";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { QuoteOptions, websiteOptions } from "@/components/QuoteOptions";
-import cuteDumpling from "@/assets/portfolio/cute-dumpling-new.png";
-import victoryCars from "@/assets/portfolio/victory-cars.png";
+import cuteDumpling from "@/assets/portfolio/cute-dumpling-new-web.webp";
+import victoryCars from "@/assets/portfolio/victory-cars-web.webp";
 const faqs = [
  {question:'Ile kosztuje strona internetowa dla firmy z Legnicy?',answer:'Cenę ustalamy na podstawie liczby podstron, treści, funkcji i integracji. Prześlij krótki opis projektu, aby otrzymać ofertę z rozpisanym zakresem.'},
  {question:'Czy musimy spotkać się w Legnicy?',answer:'Projekt możemy prowadzić zdalnie. FOTZ Studio ma siedzibę w Poznaniu. Ustalamy sposób rozmów, przekazywania materiałów i akceptacji projektu.'},

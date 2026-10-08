@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { BreadcrumbSchema, ArticleSchema } from "@/components/seo/StructuredData";
-import sookarImg from "@/assets/portfolio/sookar.jpg";
+import sookarImg from "@/assets/portfolio/sookar-web.webp";
 
 const services = [
   { icon: Globe, label: "Strona internetowa" },

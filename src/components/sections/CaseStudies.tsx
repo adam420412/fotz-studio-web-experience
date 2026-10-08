@@ -3,8 +3,8 @@ import { ArrowRight, Play } from "lucide-react";
 import { OptimizedImage } from "@/components/OptimizedImage";
 
 import eneaStadionImg from "@/assets/portfolio/enea-stadion-web.webp";
-import fpsCegielskiImg from "@/assets/portfolio/fps-cegielski.png";
-import rppgImg from "@/assets/portfolio/rppg.png";
+import fpsCegielskiImg from "@/assets/portfolio/fps-cegielski-web.webp";
+import rppgImg from "@/assets/portfolio/rppg-web.webp";
 
 const caseStudies = [
   {

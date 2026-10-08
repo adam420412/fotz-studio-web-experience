@@ -4,7 +4,7 @@ import { ArrowLeft, ArrowRight, Globe, Search, Shield, Smartphone, Truck, Users 
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { SEOHead } from "@/components/seo/SEOHead";
-import lauvjahImg from "@/assets/portfolio/lauvjah.png";
+import lauvjahImg from "@/assets/portfolio/lauvjah-web.webp";
 import { BreadcrumbSchema, ArticleSchema } from "@/components/seo/StructuredData";
 
 const services = [

@@ -44,7 +44,9 @@ export function ClientMarqueeV3() {
               <img
                 src={client.logo}
                 alt={client.name}
-                className="max-h-10 w-auto object-contain"
+                width={140}
+                height={40}
+                className="h-10 w-[140px] object-contain"
                 style={{ maxWidth: 140 }}
                 loading="lazy"
                 decoding="async"

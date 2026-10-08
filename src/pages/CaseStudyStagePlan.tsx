@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { BreadcrumbSchema, ArticleSchema } from "@/components/seo/StructuredData";
-import stageplanImg from "@/assets/portfolio/stageplan.jpg";
+import stageplanImg from "@/assets/portfolio/stageplan-web.webp";
 
 const services = [
   { icon: Globe, label: "Strona internetowa" },

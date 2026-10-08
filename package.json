@@ -13,7 +13,10 @@
     "test": "node --test scripts/*.test.mjs",
     "seo:check": "python3 scripts/audit-built-site.py && node scripts/audit-source-links.mjs && node scripts/audit-work-photos.mjs",
     "seo:lighthouse": "lhci autorun",
-    "images:work": "node scripts/prepare-selected-work.mjs"
+    "images:work": "node scripts/prepare-selected-work.mjs",
+    "seo:unlighthouse": "unlighthouse-ci",
+    "seo:links:collect": "python3 scripts/collect-external-links.py",
+    "seo:links": "npm run seo:links:collect && lychee reports/links/external.txt"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -86,6 +89,7 @@
     "@types/node": "^22.16.5",
     "@types/react": "^18.3.23",
     "@types/react-dom": "^18.3.7",
+    "@unlighthouse/cli": "0.19.1",
     "@vitejs/plugin-react-swc": "^3.11.0",
     "autoprefixer": "^10.4.21",
     "eslint": "^9.32.0",

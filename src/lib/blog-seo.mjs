@@ -1,4 +1,7 @@
 /** Shared by the CMS article view and the static SEO build. */
+import { migratedBlogPaths, repairedSourceLinks } from './reviewed-blog-links.mjs';
+import { reviewedBlogCopy } from './reviewed-blog-copy.mjs';
+
 export const SITE_ORIGIN = 'https://www.fotz-studio.pl';
 
 const canonicalPaths = {
@@ -16,6 +19,11 @@ const canonicalPaths = {
 };
 
 function canonicalLink(href) {
+  if (repairedSourceLinks[href]) return repairedSourceLinks[href];
+  if (/^https?:\/\/blog\.fotz\.pl\//.test(href)) {
+    const old = new URL(href);
+    if (migratedBlogPaths.has(old.pathname.replace(/\/$/, ''))) return `${SITE_ORIGIN}${old.pathname.replace(/\/$/, '')}${old.search}${old.hash}`;
+  }
   const relative = href.startsWith('/') && !href.startsWith('//');
   if (!relative && !href.startsWith(`${SITE_ORIGIN}/`)) return href;
   const url = new URL(href, SITE_ORIGIN);
@@ -50,8 +58,11 @@ export function getBlogMetadata(article) {
 }
 
 /** The article view already emits one H1 and promotes CMS schema into Helmet. */
-export function prepareBlogHtml(html) {
+export function prepareBlogHtml(html, slug = '') {
+  for (const [before, after] of reviewedBlogCopy[slug] || []) html = html.replace(before, after);
   return normalizeSiteUrls(html)
+    // An automatic linkifier mistook the Polish abbreviation "m.in." for a domain.
+    .replace(/<a\b[^>]*href=["']https?:\/\/m\.in\/?["'][^>]*>(m\.in\.?)<\/a>/gi, '$1')
     .replace(/(\bhref=["'])([^"']+)(["'])/gi, (_, start, href, end) => `${start}${canonicalLink(href)}${end}`)
     .replace(/<script\b(?=[^>]*\btype=["']application\/ld\+json["'])[^>]*>[\s\S]*?<\/script\s*>/gi, '')
     .replace(/<h1(\s[^>]*)?>/gi, '<h2$1>')

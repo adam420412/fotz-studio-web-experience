@@ -4,7 +4,7 @@ import { ArrowLeft, ArrowRight, Globe, Search, Video, Shield, Smartphone, Heart 
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { SEOHead } from "@/components/seo/SEOHead";
-import przedszkoleImg from "@/assets/portfolio/przedszkole.png";
+import przedszkoleImg from "@/assets/portfolio/przedszkole-web.webp";
 import { BreadcrumbSchema, ArticleSchema } from "@/components/seo/StructuredData";
 
 const services = [

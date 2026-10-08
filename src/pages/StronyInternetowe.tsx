@@ -45,18 +45,18 @@ import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
 import { RelatedServices } from "@/components/sections/RelatedServices";
 
 // Import wszystkich realizacji
-import apartamentyImg from "@/assets/portfolio/apartamenty-chorwacja.jpg";
-import victoryCarsImg from "@/assets/portfolio/victory-cars.png";
-import cuteDumplingImg from "@/assets/portfolio/cute-dumpling-new.png";
+import apartamentyImg from "@/assets/portfolio/apartamenty-chorwacja-web.webp";
+import victoryCarsImg from "@/assets/portfolio/victory-cars-web.webp";
+import cuteDumplingImg from "@/assets/portfolio/cute-dumpling-new-web.webp";
 import eneaStadionImg from "@/assets/portfolio/enea-stadion-web.webp";
-import fpsCegielskiImg from "@/assets/portfolio/fps-cegielski.png";
-import przedszkoleImg from "@/assets/portfolio/przedszkole.png";
-import rppgImg from "@/assets/portfolio/rppg.png";
-import klagemlImg from "@/assets/portfolio/klagem.png";
-import friendlyGasImg from "@/assets/portfolio/friendly-gas-new.png";
-import mechanicaImg from "@/assets/portfolio/mechanica.png";
-import vertheImg from "@/assets/portfolio/verthe.png";
-import grafImg from "@/assets/portfolio/graf-tapicerstwo.png";
+import fpsCegielskiImg from "@/assets/portfolio/fps-cegielski-web.webp";
+import przedszkoleImg from "@/assets/portfolio/przedszkole-web.webp";
+import rppgImg from "@/assets/portfolio/rppg-web.webp";
+import klagemlImg from "@/assets/portfolio/klagem-web.webp";
+import friendlyGasImg from "@/assets/portfolio/friendly-gas-new-web.webp";
+import mechanicaImg from "@/assets/portfolio/mechanica-web.webp";
+import vertheImg from "@/assets/portfolio/verthe-web.webp";
+import grafImg from "@/assets/portfolio/graf-tapicerstwo-web.webp";
 
 const StronyInternetowe = () => {
   const problems = [
@@ -692,7 +692,7 @@ const StronyInternetowe = () => {
                         </div>
                         <div className="p-3 bg-card">
                           <span className="text-[10px] text-primary font-medium uppercase">{study.category}</span>
-                          <h4 className="text-sm font-semibold mt-1 group-hover:text-primary transition-colors">{study.title}</h4>
+                          <h3 className="text-sm font-semibold mt-1 group-hover:text-primary transition-colors">{study.title}</h3>
                         </div>
                       </div>
                     </Link>

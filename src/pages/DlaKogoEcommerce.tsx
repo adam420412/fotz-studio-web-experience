@@ -11,10 +11,10 @@ import { AnimatedCounter } from "@/components/AnimatedCounter";
 const ModelViewer3D = lazy(() => import("@/components/ModelViewer3D").then(module => ({ default: module.ModelViewer3D })));
 
 // Import case study images
-import vertheImage from "@/assets/portfolio/verthe.png";
-import klageImage from "@/assets/portfolio/klagem.png";
-import cuteDumplingImage from "@/assets/portfolio/cute-dumpling-new.png";
-import friendlyGasImage from "@/assets/portfolio/friendly-gas-new.png";
+import vertheImage from "@/assets/portfolio/verthe-web.webp";
+import klageImage from "@/assets/portfolio/klagem-web.webp";
+import cuteDumplingImage from "@/assets/portfolio/cute-dumpling-new-web.webp";
+import friendlyGasImage from "@/assets/portfolio/friendly-gas-new-web.webp";
 
 const caseStudies = [
   {

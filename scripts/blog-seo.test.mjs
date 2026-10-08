@@ -1,6 +1,40 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { getBlogMetadata, normalizeSchemaUrls, normalizeSiteUrls, prepareBlogHtml } from '../src/lib/blog-seo.mjs';
+import { migratedBlogPaths } from '../src/lib/reviewed-blog-links.mjs';
+import { reviewedBlogCopy } from '../src/lib/reviewed-blog-copy.mjs';
+
+test('reviewed CMS corrections apply in rendering without mutating the stored article', async () => {
+  const { readFile } = await import('node:fs/promises');
+  const { articles } = JSON.parse(await readFile(new URL('../src/data/blog-content.json', import.meta.url), 'utf8'));
+  for (const [slug, corrections] of Object.entries(reviewedBlogCopy)) {
+    const article = articles.find(item => item.slug === slug);
+    assert.ok(article, `No public article for correction: ${slug}`);
+    const original = article.content_html;
+    const rendered = prepareBlogHtml(original, slug);
+    for (const [before] of corrections) assert.ok(original.includes(before), `Source changed; re-review ${slug}`);
+    assert.notEqual(rendered, prepareBlogHtml(original), `Corrections not applied for ${slug}`);
+    assert.equal(article.content_html, original);
+  }
+  const article = articles.find(item => item.slug === 'jak-marketing-internetowy-pomaga-rozwijac-mala-firme');
+  assert.match(prepareBlogHtml(article.content_html, article.slug), /MŚP wytwarzają 46,6% polskiego PKB/);
+  assert.doesNotMatch(prepareBlogHtml(article.content_html, article.slug), /MŚP generują 74,1% PKB/);
+});
+
+test('migrates only verified old blog routes and preserves URL parameters', async () => {
+  const { readFile } = await import('node:fs/promises');
+  const { articles } = JSON.parse(await readFile(new URL('../src/data/blog-content.json', import.meta.url), 'utf8'));
+  for (const path of migratedBlogPaths) {
+    assert.ok(articles.some(article => `/blog/${article.slug}` === path), `Missing migrated article: ${path}`);
+    assert.equal(prepareBlogHtml(`<a href="https://blog.fotz.pl${path}?from=blog#sekcja">Czytaj</a>`), `<a href="https://www.fotz-studio.pl${path}?from=blog#sekcja">Czytaj</a>`);
+  }
+  const untouched = '<a href="https://blog.fotz.pl/blog/unknown">Inny</a><a href="https://blog.fotz.pl.example.com/blog/a">Źródło</a><a href="https://panel.fotz.pl/login">Panel</a>';
+  assert.equal(prepareBlogHtml(untouched), untouched);
+});
+
+test('unwraps the accidental Polish abbreviation link without removing its text or other links', () => {
+  assert.equal(prepareBlogHtml('<p>Błędy to <a href="http://m.in" target="_blank">m.in</a>. brak testów. <a href="https://example.com">Źródło</a></p>'), '<p>Błędy to m.in. brak testów. <a href="https://example.com">Źródło</a></p>');
+});
 
 test('normalizes website URLs without touching contacts, profiles, subdomains or similar hosts', () => {
   const input = 'https://fotz.pl/kontakt?x=1 https://www.fotz.pl/blog/a http://fotz-studio.pl/a https://www.fotz-studio.pl/a adam@fotz.pl https://instagram.com/fotz.pl https://panel.fotz.pl https://fotz.pl.example.com';
