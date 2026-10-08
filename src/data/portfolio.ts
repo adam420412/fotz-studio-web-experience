@@ -1,24 +1,24 @@
 import { Camera, Video, Building, Users, Sparkles, MapPin, Music, Utensils, Briefcase } from "lucide-react";
 
 // Import local portfolio images
-import rppgImg from "@/assets/portfolio/rppg.png";
-import fpsCegielskiImg from "@/assets/portfolio/fps-cegielski.png";
-import fabrykaViraliImg from "@/assets/portfolio/fabryka-virali.png";
-import friendlyGasImg from "@/assets/portfolio/friendly-gas-new.png";
-import cuteDumplingImg from "@/assets/portfolio/cute-dumpling-new.png";
-import apartamentyChorwacjaImg from "@/assets/portfolio/apartamenty-chorwacja.jpg";
-import klagemImg from "@/assets/portfolio/klagem.png";
-import mechanicaImg from "@/assets/portfolio/mechanica.png";
-import celsjuszImg from "@/assets/portfolio/celsjusz.png";
-import sookarImg from "@/assets/portfolio/sookar.jpg";
-import grafImg from "@/assets/portfolio/graf-tapicerstwo.png";
-import stageplanImg from "@/assets/portfolio/stageplan.jpg";
-import vertheImg from "@/assets/portfolio/verthe.png";
-import victoryCarsImg from "@/assets/portfolio/victory-cars.png";
-import gierkiImg from "@/assets/portfolio/gierki.png";
-import przedszkoleImg from "@/assets/portfolio/przedszkole.png";
+import rppgImg from "@/assets/portfolio/rppg-web.webp";
+import fpsCegielskiImg from "@/assets/portfolio/fps-cegielski-web.webp";
+import fabrykaViraliImg from "@/assets/portfolio/fabryka-virali-web.webp";
+import friendlyGasImg from "@/assets/portfolio/friendly-gas-new-web.webp";
+import cuteDumplingImg from "@/assets/portfolio/cute-dumpling-new-web.webp";
+import apartamentyChorwacjaImg from "@/assets/portfolio/apartamenty-chorwacja-web.webp";
+import klagemImg from "@/assets/portfolio/klagem-web.webp";
+import mechanicaImg from "@/assets/portfolio/mechanica-web.webp";
+import celsjuszImg from "@/assets/portfolio/celsjusz-web.webp";
+import sookarImg from "@/assets/portfolio/sookar-web.webp";
+import grafImg from "@/assets/portfolio/graf-tapicerstwo-web.webp";
+import stageplanImg from "@/assets/portfolio/stageplan-web.webp";
+import vertheImg from "@/assets/portfolio/verthe-web.webp";
+import victoryCarsImg from "@/assets/portfolio/victory-cars-web.webp";
+import gierkiImg from "@/assets/portfolio/gierki-web.webp";
+import przedszkoleImg from "@/assets/portfolio/przedszkole-web.webp";
 import eneaStadionImg from "@/assets/portfolio/enea-stadion-web.webp";
-import lauvjahImg from "@/assets/portfolio/lauvjah.png";
+import lauvjahImg from "@/assets/portfolio/lauvjah-web.webp";
 
 // Wizualizacje 3D
 import viz17 from "@/assets/wizualizacje/viz-17.webp";

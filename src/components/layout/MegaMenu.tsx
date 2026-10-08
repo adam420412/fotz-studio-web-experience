@@ -51,12 +51,12 @@ import {
 } from "lucide-react";
 
 // Import portfolio images for preview
-import brandingImg from "@/assets/portfolio/klagem.png";
-import websiteImg from "@/assets/portfolio/rppg.png";
+import brandingImg from "@/assets/portfolio/klagem-web.webp";
+import websiteImg from "@/assets/portfolio/rppg-web.webp";
 import videoImg from "@/assets/portfolio/enea-stadion-web.webp";
-import marketingImg from "@/assets/portfolio/fabryka-virali.png";
-import graphicImg from "@/assets/portfolio/verthe.png";
-import branzeImg from "@/assets/portfolio/fps-cegielski.png";
+import marketingImg from "@/assets/portfolio/fabryka-virali-web.webp";
+import graphicImg from "@/assets/portfolio/verthe-web.webp";
+import branzeImg from "@/assets/portfolio/fps-cegielski-web.webp";
 
 interface MenuItem {
   name: string;

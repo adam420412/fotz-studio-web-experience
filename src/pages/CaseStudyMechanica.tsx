@@ -4,7 +4,7 @@ import { ArrowLeft, ArrowRight, Globe, Search, Shield, Smartphone, Factory, User
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { SEOHead } from "@/components/seo/SEOHead";
-import mechanicaImg from "@/assets/portfolio/mechanica.png";
+import mechanicaImg from "@/assets/portfolio/mechanica-web.webp";
 import { BreadcrumbSchema, ArticleSchema } from "@/components/seo/StructuredData";
 
 const services = [

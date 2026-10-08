@@ -8,7 +8,7 @@ import { useState } from "react";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { useCountUp } from "@/hooks/useCountUp";
 import { OtherIndustries } from "@/components/sections/OtherIndustries";
-import klagemlImg from "@/assets/portfolio/klagem.png";
+import klagemlImg from "@/assets/portfolio/klagem-web.webp";
 
 const services = [
   {

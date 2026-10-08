@@ -9,10 +9,10 @@ import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "
 import { AnimatedCounter } from "@/components/AnimatedCounter";
 
 // Import case study images
-import rppgImage from "@/assets/portfolio/rppg.png";
-import grafImage from "@/assets/portfolio/graf-tapicerstwo.png";
-import mechanicaImage from "@/assets/portfolio/mechanica.png";
-import przedszkoleImage from "@/assets/portfolio/przedszkole.png";
+import rppgImage from "@/assets/portfolio/rppg-web.webp";
+import grafImage from "@/assets/portfolio/graf-tapicerstwo-web.webp";
+import mechanicaImage from "@/assets/portfolio/mechanica-web.webp";
+import przedszkoleImage from "@/assets/portfolio/przedszkole-web.webp";
 
 const caseStudies = [
   {

@@ -4,7 +4,7 @@ import { Layout } from "@/components/layout/Layout";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { BreadcrumbSchema, OrganizationSchema } from "@/components/seo/StructuredData";
 import { business } from "@/data/business.mjs";
-import fpsImage from "@/assets/portfolio/fps-cegielski.png";
+import fpsImage from "@/assets/portfolio/fps-cegielski-web.webp";
 
 const services = [
   {

@@ -25,7 +25,7 @@ export function SelectedWork() {
           const item = workImages[id];
           const variants = imageVariants[id as keyof typeof imageVariants];
           const fallback = variants[Math.min(1, variants.length - 1)];
-          return <Link key={id} to={item.href} className="block min-w-0 group rounded-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" aria-label={`${item.title} — ${item.href === '/realizacje' ? 'zobacz portfolio' : 'zobacz realizację'}`}>
+          return <Link key={id} to={item.href} className="block min-w-0 group rounded-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
             <figure>
               <div className="aspect-[4/3] overflow-hidden rounded-2xl border border-border bg-muted">
                 <img src={fallback.src} srcSet={variants.map(image => `${image.src} ${image.width}w`).join(', ')} sizes="(min-width: 1536px) 440px, (min-width: 1024px) 30vw, (min-width: 640px) 45vw, 90vw" width={fallback.width} height={fallback.height} alt={item.alt} loading="lazy" decoding="async" className="h-full w-full object-cover motion-safe:transition-transform motion-safe:duration-500 motion-safe:group-hover:scale-[1.025]" />

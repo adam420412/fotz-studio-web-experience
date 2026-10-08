@@ -13,10 +13,10 @@ import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "
 import { RelatedServices } from "@/components/sections/RelatedServices";
 
 // Import portfolio images
-import klageImage from "@/assets/portfolio/klagem.png";
-import vertheImage from "@/assets/portfolio/verthe.png";
-import friendlyGasImage from "@/assets/portfolio/friendly-gas-new.png";
-import cuteDumplingImage from "@/assets/portfolio/cute-dumpling-new.png";
+import klageImage from "@/assets/portfolio/klagem-web.webp";
+import vertheImage from "@/assets/portfolio/verthe-web.webp";
+import friendlyGasImage from "@/assets/portfolio/friendly-gas-new-web.webp";
+import cuteDumplingImage from "@/assets/portfolio/cute-dumpling-new-web.webp";
 
 const caseStudies = [
   {

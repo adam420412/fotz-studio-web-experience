@@ -15,9 +15,9 @@ import { CityIntroSection } from "@/components/sections/CityIntroSection";
 import { CityBenefitsSection } from "@/components/sections/CityBenefitsSection";
 import { CityLinksSection } from "@/components/sections/CityLinksSection";
 
-import apartamentyImg from "@/assets/portfolio/apartamenty-chorwacja.jpg";
-import victoryCarsImg from "@/assets/portfolio/victory-cars.png";
-import cuteDumplingImg from "@/assets/portfolio/cute-dumpling-new.png";
+import apartamentyImg from "@/assets/portfolio/apartamenty-chorwacja-web.webp";
+import victoryCarsImg from "@/assets/portfolio/victory-cars-web.webp";
+import cuteDumplingImg from "@/assets/portfolio/cute-dumpling-new-web.webp";
 
 const StronyInternetoweTarnow = () => {
   const services = [

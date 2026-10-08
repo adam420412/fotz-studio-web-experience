@@ -10,9 +10,9 @@ import { AnimatedCounter } from "@/components/AnimatedCounter";
 
 // Import case study images
 import eneaImage from "@/assets/portfolio/enea-stadion-web.webp";
-import fpsImage from "@/assets/portfolio/fps-cegielski.png";
-import fabrykaViraliImage from "@/assets/portfolio/fabryka-virali.png";
-import gierkiImage from "@/assets/portfolio/gierki.png";
+import fpsImage from "@/assets/portfolio/fps-cegielski-web.webp";
+import fabrykaViraliImage from "@/assets/portfolio/fabryka-virali-web.webp";
+import gierkiImage from "@/assets/portfolio/gierki-web.webp";
 
 const caseStudies = [
   {

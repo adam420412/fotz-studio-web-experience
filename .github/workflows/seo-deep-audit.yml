@@ -1,0 +1,64 @@
+name: Deep SEO audit
+on:
+  workflow_dispatch:
+    inputs:
+      site:
+        description: Public production or preview origin to measure
+        default: https://www.fotz-studio.pl
+        required: true
+        type: string
+permissions:
+  contents: read
+jobs:
+  unlighthouse:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22.22.0"
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - name: Audit 20 mobile page templates
+        run: npm run seo:unlighthouse
+        env:
+          FOTZ_AUDIT_SITE: ${{ inputs.site }}
+      - name: Keep complete reports even when budgets fail
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: unlighthouse-mobile
+          path: reports/unlighthouse/
+          retention-days: 14
+  external-links:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22.22.0"
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - run: npm ci --no-audit --no-fund
+      - run: npm run build
+      - run: npm run seo:links:collect
+      - name: Check outbound URLs from every built page
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: reports/links/external.txt
+          lycheeVersion: v0.24.2
+          format: json
+          output: reports/links/lychee.json
+          jobSummary: false
+          token: ""
+      - name: Keep results and source pages
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: outbound-links
+          path: reports/links/
+          retention-days: 14

@@ -382,7 +382,7 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
           return (
             <button
               key={day.toISOString()}
-              aria-label={format(day, "EEEE, d MMMM yyyy", { locale: pl })}
+              aria-label={`${format(day, "EEE d", { locale: pl })} — ${format(day, "EEEE, d MMMM yyyy", { locale: pl })}`}
               aria-pressed={Boolean(isSelected)}
               onClick={() => handleDateSelect(day)}
               disabled={isDisabled}

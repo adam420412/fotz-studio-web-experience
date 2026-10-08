@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 // Import portfolio images for visual content
-import apartamentyImg from "@/assets/portfolio/apartamenty-chorwacja.jpg";
-import victoryCarsImg from "@/assets/portfolio/victory-cars.png";
+import apartamentyImg from "@/assets/portfolio/apartamenty-chorwacja-web.webp";
+import victoryCarsImg from "@/assets/portfolio/victory-cars-web.webp";
 
 interface CityBenefitsSectionProps {
   benefits: string[];

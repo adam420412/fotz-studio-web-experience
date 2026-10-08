@@ -8,7 +8,7 @@ import { useState } from "react";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { useCountUp } from "@/hooks/useCountUp";
 import { OtherIndustries } from "@/components/sections/OtherIndustries";
-import fpsImg from "@/assets/portfolio/fps-cegielski.png";
+import fpsImg from "@/assets/portfolio/fps-cegielski-web.webp";
 
 const services = [
   {

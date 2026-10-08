@@ -25,42 +25,42 @@ const cities = [
 
 const faqItems = [
   {
-    question: "Ile kosztuje prosta strona internetowa dla firmy?",
-    answer: "Prosta strona firmowa (5-10 podstron) kosztuje od 2 000 do 8 000 PLN netto. Cena zależy od liczby podstron, funkcji (formularz, blog, rezerwacje) i stopnia personalizacji projektu graficznego."
+    "question": "Jakie są koszty stworzenia strony internetowej?",
+    "answer": "Koszt stworzenia strony internetowej zależy od wielu czynników. Proste strony wizytówki kosztują od kilkuset do kilku tysięcy złotych, podczas gdy rozbudowane strony internetowe mogą kosztować od kilku do kilkudziesięciu tysięcy złotych."
   },
   {
-    question: "Ile kosztuje sklep internetowy?",
-    answer: "Sklep internetowy na WooCommerce lub Shopify to wydatek od 5 000 do 25 000 PLN. Kluczowe czynniki cenotwórcze to liczba produktów, integracje płatności, automatyzacja zamówień i projekt UI/UX."
+    "question": "Jakie są koszty utrzymania strony internetowej?",
+    "answer": "Koszt utrzymania strony obejmuje opłaty za hosting, domenę oraz ewentualne aktualizacje i wsparcie techniczne. Średnie miesięczne koszty wynoszą od kilkudziesięciu do kilkuset złotych."
   },
   {
-    question: "Czy warto płacić za droższe tworzenie stron?",
-    answer: "Tak — tańsze strony często nie są zoptymalizowane pod SEO, mają wolne ładowanie i brak responsywności. Dobra strona to inwestycja, która zwraca się przez wiele lat poprzez pozyskiwanie klientów z Google."
+    "question": "Co wpływa na cenę wykonania strony internetowej?",
+    "answer": "Cena wykonania strony zależy od złożoności projektu, wybranych technologii, doświadczenia wykonawcy oraz dodatkowych usług jak pozycjonowanie czy optymalizacja."
   },
   {
-    question: "Ile kosztuje utrzymanie strony internetowej miesięcznie?",
-    answer: "Hosting i domena to koszt 50-200 PLN/miesiąc. Do tego dochodzi obsługa techniczna (aktualizacje, bezpieczeństwo) — 200-500 PLN/miesiąc. Całościowy koszt utrzymania to zwykle 300-800 PLN miesięcznie."
+    "question": "Jak długo trwa wykonanie strony internetowej?",
+    "answer": "Czas wykonania strony może się różnić. Proste strony mogą być gotowe w ciągu kilku dni, podczas gdy bardziej złożone projekty mogą wymagać kilku tygodni lub miesięcy."
   },
   {
-    question: "Jak długo trwa tworzenie strony internetowej?",
-    answer: "Prosta strona firmowa: 3-6 tygodni. Rozbudowany serwis z funkcjami niestandardowymi: 2-4 miesiące. Sklep internetowy: 4-8 tygodni. Czas zależy od szybkości dostarczonego contentu."
-  },
+    "question": "Jak wybrać wykonawcę strony internetowej?",
+    "answer": "Wybór wykonawcy powinien być przemyślany. Sprawdź portfolio, opinie klientów oraz zakres oferowanych usług. Dobry wykonawca przedstawi jasny cennik i terminy realizacji."
+  }
 ];
 
 const BlogKosztStrony = () => {
   return (
     <>
       <SEOHead
-        title="Ile Kosztuje Strona Internetowa w 2026? Cennik i Aktualne Koszty"
-        description="Ile kosztuje strona internetowa w 2026? Cennik stron www: landing page od 2 000 zł, strona firmowa od 5 000 zł, sklep e-commerce od 10 000 zł. Aktualne koszty, typy stron i czynniki wpływające na cenę."
+        title="Ile Kosztuje Strona Internetowa w 2026? Cennik i Czynniki Wyceny"
+        description="Ile kosztuje strona internetowa w 2026? Poznaj orientacyjne widełki cenowe, koszty utrzymania, typy stron i czynniki wpływające na indywidualną wycenę."
         ogType="article"
         canonical="https://www.fotz-studio.pl/blog/ile-kosztuje-strona-internetowa"
-        keywords="ile kosztuje strona internetowa, cennik stron internetowych, koszt strony www, cena strony internetowej 2025"
+        keywords="ile kosztuje strona internetowa, cennik stron internetowych, koszt strony www, cena strony internetowej 2026"
         schemaJson={[
           {
             "@context": "https://schema.org",
             "@type": "Article",
-            "headline": "Ile kosztuje strona internetowa w 2026? Cennik i aktualne koszty",
-            "description": "Kompleksowy przewodnik po kosztach tworzenia stron internetowych w 2025 roku",
+            "headline": "Ile kosztuje strona internetowa w 2026? Cennik i czynniki wyceny",
+            "description": "Kompleksowy przewodnik po kosztach tworzenia stron internetowych w 2026 roku",
             "author": {
               "@type": "Organization",
               "name": "FOTZ"
@@ -74,7 +74,7 @@ const BlogKosztStrony = () => {
               }
             },
             "datePublished": "2024-12-20",
-            "dateModified": "2026-04-11"
+            "dateModified": "2026-10-08"
           },
           {
             "@context": "https://schema.org",
@@ -82,37 +82,7 @@ const BlogKosztStrony = () => {
             "itemListElement": [
               { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://www.fotz-studio.pl" },
               { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.fotz-studio.pl/blog" },
-              { "@type": "ListItem", "position": 3, "name": "Ile kosztuje strona internetowa w 2025?" }
-            ]
-          },
-          {
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "Jakie są koszty stworzenia strony internetowej?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Koszt stworzenia strony internetowej zależy od wielu czynników, takich jak skomplikowanie projektu, wybrany wykonawca oraz dodatkowe funkcjonalności. Proste strony wizytówki kosztują od kilkuset do kilku tysięcy złotych, podczas gdy rozbudowane strony internetowe mogą kosztować od kilku do kilkudziesięciu tysięcy złotych."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Jakie są koszty utrzymania strony internetowej?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Koszt utrzymania strony internetowej obejmuje opłaty za hosting, domenę oraz ewentualne aktualizacje i wsparcie techniczne. Średnie miesięczne koszty mogą wynosić od kilkudziesięciu do kilkuset złotych w zależności od wybranych usług."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Ile kosztuje pozycjonowanie strony internetowej?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Koszt pozycjonowania zależy od konkurencyjności branży i zakresu działań SEO. Podstawowe pozycjonowanie może kosztować od kilkuset złotych miesięcznie, podczas gdy zaawansowane strategie SEO dla konkurencyjnych branż mogą wynosić kilka tysięcy złotych miesięcznie."
-                }
-              }
+              { "@type": "ListItem", "position": 3, "name": "Ile kosztuje strona internetowa w 2026?" }
             ]
           }
         ]}
@@ -123,11 +93,11 @@ const BlogKosztStrony = () => {
         {/* Breadcrumb */}
         <section className="pt-32 pb-4 bg-background">
           <div className="container mx-auto px-4">
-            <nav className="flex items-center gap-2 text-sm text-muted-foreground">
-              <Link to="/" className="hover:text-primary transition-colors">Strona główna</Link>
-              <ChevronRight className="h-4 w-4" />
-              <Link to="/blog" className="hover:text-primary transition-colors">Blog</Link>
-              <ChevronRight className="h-4 w-4" />
+            <nav aria-label="Ścieżka nawigacji" className="flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
+              <Link to="/" className="shrink-0 hover:text-primary transition-colors">Strona główna</Link>
+              <ChevronRight className="h-4 w-4 shrink-0" aria-hidden="true" />
+              <Link to="/blog" className="shrink-0 hover:text-primary transition-colors">Blog</Link>
+              <ChevronRight className="h-4 w-4 shrink-0" aria-hidden="true" />
               <span className="text-foreground">Ile kosztuje strona internetowa w 2026?</span>
             </nav>
           </div>
@@ -147,12 +117,12 @@ const BlogKosztStrony = () => {
                   Wróć do bloga
                 </Link>
                 
-                <span className="inline-block text-sm font-medium text-primary uppercase tracking-wider mb-4">
+                <p className="text-sm font-medium text-primary uppercase tracking-wider mb-4">
                   Strony internetowe
-                </span>
+                </p>
                 
                 <h1 className="text-3xl md:text-5xl font-heading font-bold mb-6">
-                  Ile kosztuje strona internetowa w 2026? Cennik i aktualne koszty
+                  Ile kosztuje strona internetowa w 2026? Cennik i czynniki wyceny
                 </h1>
                 
                 <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground mb-8">
@@ -171,9 +141,11 @@ const BlogKosztStrony = () => {
                 </div>
 
                 <div className="aspect-video rounded-2xl overflow-hidden mb-8">
-                  <img loading="lazy" 
-                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015" 
-                    alt="Ile kosztuje strona internetowa w 2025 - cennik" 
+                  <img loading="eager" fetchPriority="high" decoding="async"
+                    src="/work/fps-800.webp"
+                    srcSet="/work/fps-480.webp 480w, /work/fps-800.webp 800w, /work/fps-1200.webp 1200w"
+                    sizes="(min-width: 1024px) 896px, 95vw" width="1200" height="900"
+                    alt="Projekt strony FPS Poznań — realizacja FOTZ Studio"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -187,7 +159,7 @@ const BlogKosztStrony = () => {
                 className="prose prose-lg prose-invert max-w-none"
               >
                 <p className="lead text-xl text-muted-foreground mb-8">
-                  Zastanawiasz się, ile będzie kosztować strona internetowa w 2026 roku? Ten artykuł rozwieje Twoje wątpliwości, przedstawiając aktualny cennik i koszty związane z tworzeniem stron internetowych. Omówimy różne typy stron, czynniki wpływające na cenę, a także średni koszt wykonania strony internetowej w nadchodzącym roku.
+                  Zastanawiasz się, ile będzie kosztować strona internetowa w 2026 roku? Poniższe widełki są orientacyjne: zakres projektu, treści i integracje wpływają na ostateczną wycenę. Wyjaśniamy, co warto uwzględnić w budżecie i jak porównywać oferty wykonawców.
                 </p>
 
                 <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
@@ -234,7 +206,7 @@ const BlogKosztStrony = () => {
                 </div>
 
                 <h3 className="text-xl font-heading font-semibold mt-8 mb-4">
-                  Średni koszt wykonania strony internetowej w 2025
+                  Średni koszt wykonania strony internetowej w 2026
                 </h3>
                 <p className="text-muted-foreground mb-4">
                   Ustalenie dokładnego średniego kosztu wykonania strony internetowej w 2026 roku jest trudne, ponieważ zależy on od wielu wspomnianych czynników.
@@ -383,26 +355,12 @@ const BlogKosztStrony = () => {
                 </h2>
 
                 <div className="space-y-6 mb-12">
-                  <div className="p-6 bg-card rounded-xl border border-border/50">
-                    <h3 className="text-lg font-semibold mb-2">Jakie są koszty stworzenia strony internetowej?</h3>
-                    <p className="text-muted-foreground">Koszt stworzenia strony internetowej zależy od wielu czynników. Proste strony wizytówki kosztują od kilkuset do kilku tysięcy złotych, podczas gdy rozbudowane strony internetowe mogą kosztować od kilku do kilkudziesięciu tysięcy złotych.</p>
-                  </div>
-                  <div className="p-6 bg-card rounded-xl border border-border/50">
-                    <h3 className="text-lg font-semibold mb-2">Jakie są koszty utrzymania strony internetowej?</h3>
-                    <p className="text-muted-foreground">Koszt utrzymania strony obejmuje opłaty za hosting, domenę oraz ewentualne aktualizacje i wsparcie techniczne. Średnie miesięczne koszty wynoszą od kilkudziesięciu do kilkuset złotych.</p>
-                  </div>
-                  <div className="p-6 bg-card rounded-xl border border-border/50">
-                    <h3 className="text-lg font-semibold mb-2">Co wpływa na cenę wykonania strony internetowej?</h3>
-                    <p className="text-muted-foreground">Cena wykonania strony zależy od złożoności projektu, wybranych technologii, doświadczenia wykonawcy oraz dodatkowych usług jak pozycjonowanie czy optymalizacja.</p>
-                  </div>
-                  <div className="p-6 bg-card rounded-xl border border-border/50">
-                    <h3 className="text-lg font-semibold mb-2">Jak długo trwa wykonanie strony internetowej?</h3>
-                    <p className="text-muted-foreground">Czas wykonania strony może się różnić. Proste strony mogą być gotowe w ciągu kilku dni, podczas gdy bardziej złożone projekty mogą wymagać kilku tygodni lub miesięcy.</p>
-                  </div>
-                  <div className="p-6 bg-card rounded-xl border border-border/50">
-                    <h3 className="text-lg font-semibold mb-2">Jak wybrać wykonawcę strony internetowej?</h3>
-                    <p className="text-muted-foreground">Wybór wykonawcy powinien być przemyślany. Sprawdź portfolio, opinie klientów oraz zakres oferowanych usług. Dobry wykonawca przedstawi jasny cennik i terminy realizacji.</p>
-                  </div>
+                  {faqItems.map(({ question, answer }) => (
+                    <div key={question} className="p-6 bg-card rounded-xl border border-border/50">
+                      <h3 className="text-lg font-semibold mb-2">{question}</h3>
+                      <p className="text-muted-foreground">{answer}</p>
+                    </div>
+                  ))}
                 </div>
               </motion.div>
 
@@ -505,25 +463,6 @@ const BlogKosztStrony = () => {
             <RelatedServices services={servicesByCategory.websites} />
           </div>
         </div>
-
-            {/* SEO Article Section */}
-            <div className="mt-12 pt-12 border-t border-border">
-              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Koszty strony internetowej w 2025 roku — cennik i co wpływa na cenę?</h2>
-              <p className="text-muted-foreground mb-6">Koszt strony internetowej w Polsce waha się od 1500 zł za prostą stronę wizytówkową do 50 000+ zł za rozbudowany portal korporacyjny lub sklep e-commerce. Na cenę wpływa: zakres funkcjonalności, design (szablonowy vs. niestandardowy), platforma (WordPress, React, dedykowany CMS), liczba podstron i integracjami. Wycena zawsze powinna być indywidualna.</p>
-
-              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Tworzenie stron internetowych w Fotz Studio — transparentne ceny i jakość</h2>
-              <p className="text-muted-foreground mb-6">Fotz Studio tworzy strony internetowe dla firm z Polski: landing page od 2500 zł, strona firmowa od 4000 zł, sklep WooCommerce od 6000 zł, sklep Shopify od 4000 zł, portale korporacyjne wyceniane indywidualnie. Każda strona zoptymalizowana pod SEO i wydajność (Core Web Vitals).</p>
-
-              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Bezpłatna wycena strony internetowej — co zawiera oferta Fotz Studio?</h2>
-              <p className="text-muted-foreground">Wycena strony internetowej w Fotz Studio jest bezpłatna i obejmuje: zakres projektu, proponowane technologie, timeline realizacji i warunki opieki po wdrożeniu. Skontaktuj się z nami przez formularz lub telefon — ofertę przygotowujemy w 48 godzin od wypełnienia briefu.</p>
-            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
-              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
-              <Link to="/uslugi/sklepy-internetowe" className="text-primary hover:underline font-medium text-sm">→ Sklepy internetowe</Link>
-              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
-              <Link to="/konsultacja" className="text-primary hover:underline font-medium text-sm">→ Bezpłatna konsultacja</Link>
-            </div>
-            </div>
-
 
         {/* Related Articles */}
         <RelatedArticles currentArticleId="ile-kosztuje-strona-internetowa" />
