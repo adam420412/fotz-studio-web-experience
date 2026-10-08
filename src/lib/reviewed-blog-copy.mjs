@@ -3,6 +3,18 @@
  * Evidence and remaining source checks: docs/seo/DEEP-AUDIT-2026-10-08.md.
  */
 export const reviewedBlogCopy = {
+  "audyt-seo-skuteczne-strategie-dla-msp-widocznosc": [
+    [
+      "<h2 id=\"rekomendacja\" tabindex=\"-1\">Rekomendacja</h2>\n<ul>\n<li><a href=\"https://fotz.pl\">Fotz Studio - Agencja Marketingowa Poznań | Marketing Pre…</a></li>\n<li><a href=\"https://adjetmarketing.com/best-seo-practices-for-medspa-blog-posts\" target=\"_blank\" rel=\"noopener\">Best SEO Practices For MedSpa Blog Posts - AdJet Digital Marketing &amp; Google Partner Agency | SEO Development Google Ads Social</a></li>\n</ul>",
+      "<h2 id=\"rekomendacja\" tabindex=\"-1\">Materiały do dalszej pracy</h2>\n<ul>\n<li><a href=\"/seo/audyt\">Audyt SEO w FOTZ Studio — zakres analizy i plan poprawek</a></li>\n<li><a href=\"https://developers.google.com/search/docs/fundamentals/seo-starter-guide\" target=\"_blank\" rel=\"noopener noreferrer\">Podstawy SEO — oficjalny przewodnik Google Search Central</a></li>\n</ul>"
+    ]
+  ],
+  "jak-opracowac-strategie-content-marketingu-dla-wzrostu-marki": [
+    [
+      "<p>Publikujesz artykuły, posty i materiały wideo od miesięcy, ale leady nie napływają, a rozpoznawalność marki stoi w miejscu. To jedna z najczęstszych frustracji właścicieli małych i średnich firm. Problem rzadko leży w braku kreatywności czy zaangażowania zespołu. Leży w braku strategii. Jak pokazuje <a href=\"https://contentful.com/blog/content-marketing-benchmarker-report/\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">raport content marketingu</a>, firmy, które publikują treści bez audytu i planu, często produkują dziesiątki artykułów bez wygenerowania choćby jednego leada. Ten artykuł przeprowadzi cię krok po kroku przez cały proces, od audytu, przez wybór kanałów, aż po mierzenie efektów.</p>",
+      "<p>Publikujesz artykuły, posty i materiały wideo, ale trudno powiązać je z zapytaniami klientów? Zacznij od sprawdzenia, do kogo trafiają treści, jaką potrzebę rozwiązują i dokąd prowadzą odbiorcę. Przyczyna może leżeć w doborze tematów, dystrybucji, ofercie albo pomiarze konwersji. W tym przewodniku przejdziesz od audytu i wyboru kanałów do mierzenia efektów. Jeśli potrzebujesz wsparcia w uporządkowaniu tych działań, sprawdź zakres naszej <a href=\"/content-marketing/strategia\">strategii content marketingu</a>.</p>"
+    ]
+  ],
   "jak-marketing-internetowy-pomaga-rozwijac-mala-firme": [
     [
       "<p>Małe i średnie firmy w Polsce stoją dziś przed wyjątkową szansą. Według danych, <a href=\"https://www2.rp.pl/ekonomia/art43022981-polskie-msp-ciagle-z-potencjalem\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">MŚP generują 74,1% PKB</a> sektora przedsiębiorstw, a jednak duża część właścicieli nadal nie wykorzystuje w pełni możliwości, które daje internet. Marketing internetowy to nie tylko moda. To konkretne narzędzie do zdobywania klientów, budowania rozpoznawalności i zwiększania przychodów. W tym przewodniku dowiesz się, jakie korzyści naprawdę przynosi marketing online, które kanały wybrać i jak unikać błędów, które kosztują firmy pieniądze oraz czas.</p>",

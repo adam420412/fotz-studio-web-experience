@@ -397,6 +397,10 @@ export default function DlaKogoEcommerce() {
                 className="bg-card rounded-xl border border-border overflow-hidden"
               >
                 <button
+                  type="button"
+                  id={`faq-question-${index}`}
+                  aria-expanded={openFaq === index}
+                  aria-controls={`faq-answer-${index}`}
                   onClick={() => setOpenFaq(openFaq === index ? null : index)}
                   className="w-full flex items-center justify-between p-6 text-left hover:bg-muted/50 transition-colors"
                 >
@@ -408,6 +412,10 @@ export default function DlaKogoEcommerce() {
                   )}
                 </button>
                 <motion.div
+                  id={`faq-answer-${index}`}
+                  role="region"
+                  aria-labelledby={`faq-question-${index}`}
+                  aria-hidden={openFaq !== index}
                   initial={false}
                   animate={{ 
                     height: openFaq === index ? "auto" : 0,

@@ -7,6 +7,12 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { cn } from "@/lib/utils";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { BreadcrumbSchema, ServiceSchema, OrganizationSchema} from "@/components/seo/StructuredData";
+import { workImages } from "@/data/selected-work.mjs";
+import imageVariants from "@/data/selected-work-images.json";
+import officeSign from "@/assets/office/office-sign.webp";
+import officeWorkspace from "@/assets/office/office-workspace.webp";
+
+const backstage = imageVariants.backstage;
 
 const features = [
   {
@@ -108,34 +114,35 @@ export default function StudioPodcastowe() {
                 Studio podcastowe
               </span>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-4 sm:mb-6">
-                Nagraj podcast w{" "}
-                <span className="text-gradient">profesjonalnym studiu</span>
+                Nagraj podcast{" "}
+                <span className="text-gradient">w Poznaniu</span>
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8">
                 Nasze studio w centrum Poznania oferuje wszystko, czego potrzebujesz 
                 do nagrania profesjonalnego podcastu, wywiadu czy materiału video.
               </p>
-              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                <Button variant="hero" size="xl" asChild className="w-full sm:w-auto">
-                  <Link to="/kontakt" className="group">
-                    Zarezerwuj termin
-                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 transition-transform group-hover:translate-x-1" />
-                  </Link>
-                </Button>
-                <Button variant="outline" size="xl" asChild className="w-full sm:w-auto">
-                  <a href="#cennik">Zobacz cennik</a>
-                </Button>
+              <div className="flex flex-wrap gap-3 sm:gap-4">
+                <Link to="/kontakt" className="dv-btn dv-btn-primary group whitespace-nowrap">
+                  Zapytaj o nagranie
+                  <ArrowRight className="w-4 h-4 shrink-0" aria-hidden="true" />
+                </Link>
+                <a href="#cennik" className="dv-btn dv-btn-secondary whitespace-nowrap">Pakiety nagrań</a>
               </div>
             </div>
-            <div className="relative">
+            <figure className="relative">
               <div className="aspect-[4/3] rounded-xl sm:rounded-2xl overflow-hidden">
-                <img loading="lazy"
-                  src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=2070"
-                  alt="Studio podcastowe Fotz"
+                <img loading="eager" fetchPriority="high" decoding="async"
+                  src={backstage[1].src}
+                  srcSet={backstage.map(image => `${image.src} ${image.width}w`).join(', ')}
+                  sizes="(min-width: 1280px) 580px, (min-width: 1024px) 45vw, 90vw"
+                  width={backstage[1].width}
+                  height={backstage[1].height}
+                  alt={workImages.backstage.alt}
                   className="w-full h-full object-cover"
                 />
               </div>
-            </div>
+              <figcaption className="mt-3 text-sm text-muted-foreground">Za kulisami FOTZ Studio — praca nad kadrem i światłem podczas sesji produktowej.</figcaption>
+            </figure>
           </div>
         </div>
       </section>
@@ -192,23 +199,19 @@ export default function StudioPodcastowe() {
       {/* Gallery */}
       <section className="section-padding bg-background px-4 sm:px-6 md:px-12">
         <div className="container-wide">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
+          <h2 className="text-2xl sm:text-3xl font-heading mb-4">Poznaj nasze miejsce pracy</h2>
+          <p className="text-muted-foreground max-w-2xl mb-8">Biuro FOTZ Studio w Poznaniu. Tutaj rozmawiamy o pomysłach i przygotowujemy projekty do realizacji.</p>
+          <div className="grid sm:grid-cols-2 gap-6">
             {[
-              "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?q=80&w=2070",
-              "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?q=80&w=2070",
-              "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=2070",
-              "https://images.unsplash.com/photo-1606836576983-8b458e75221d?q=80&w=2070",
-            ].map((image, index) => (
-              <div
-                key={index}
-                className="aspect-square rounded-lg sm:rounded-xl overflow-hidden"
-              >
-                <img loading="lazy"
-                  src={image}
-                  alt={`Studio ${index + 1}`}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                />
-              </div>
+              { src: officeWorkspace, alt: "Przestrzeń robocza w biurze FOTZ Studio", caption: "Przestrzeń pracy nad projektami" },
+              { src: officeSign, alt: "Tabliczka FOTZ Studio przy biurze", caption: "FOTZ Studio w Poznaniu" },
+            ].map(image => (
+              <figure key={image.src}>
+                <div className="aspect-[4/3] rounded-xl overflow-hidden">
+                  <img loading="lazy" decoding="async" src={image.src} alt={image.alt} className="w-full h-full object-cover" />
+                </div>
+                <figcaption className="mt-3 text-sm text-muted-foreground">{image.caption}</figcaption>
+              </figure>
             ))}
           </div>
         </div>
