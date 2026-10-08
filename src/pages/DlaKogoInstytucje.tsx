@@ -9,7 +9,7 @@ import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "
 import { AnimatedCounter } from "@/components/AnimatedCounter";
 
 // Import case study images
-import eneaImage from "@/assets/portfolio/enea-stadion.png";
+import eneaImage from "@/assets/portfolio/enea-stadion-web.webp";
 import fpsImage from "@/assets/portfolio/fps-cegielski.png";
 import fabrykaViraliImage from "@/assets/portfolio/fabryka-virali.png";
 import gierkiImage from "@/assets/portfolio/gierki.png";

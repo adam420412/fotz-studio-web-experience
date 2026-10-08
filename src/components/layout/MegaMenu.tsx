@@ -53,7 +53,7 @@ import {
 // Import portfolio images for preview
 import brandingImg from "@/assets/portfolio/klagem.png";
 import websiteImg from "@/assets/portfolio/rppg.png";
-import videoImg from "@/assets/portfolio/enea-stadion.png";
+import videoImg from "@/assets/portfolio/enea-stadion-web.webp";
 import marketingImg from "@/assets/portfolio/fabryka-virali.png";
 import graphicImg from "@/assets/portfolio/verthe.png";
 import branzeImg from "@/assets/portfolio/fps-cegielski.png";

@@ -17,7 +17,7 @@ import vertheImg from "@/assets/portfolio/verthe.png";
 import victoryCarsImg from "@/assets/portfolio/victory-cars.png";
 import gierkiImg from "@/assets/portfolio/gierki.png";
 import przedszkoleImg from "@/assets/portfolio/przedszkole.png";
-import eneaStadionImg from "@/assets/portfolio/enea-stadion.png";
+import eneaStadionImg from "@/assets/portfolio/enea-stadion-web.webp";
 import lauvjahImg from "@/assets/portfolio/lauvjah.png";
 
 // Wizualizacje 3D

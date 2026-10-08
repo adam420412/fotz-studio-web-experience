@@ -1,6 +1,6 @@
 import { SEOHead } from "@/components/seo/SEOHead";
 import { ProjectCasePage } from "@/components/ProjectCasePage";
-import cover from "@/assets/portfolio/enea-stadion.png";
+import cover from "@/assets/portfolio/enea-stadion-web.webp";
 import gallery0 from "@/assets/enea/konferencja-event.jpg";
 import gallery1 from "@/assets/enea/lech-poznan-lounge.jpg";
 import gallery2 from "@/assets/enea/stadion-race-fajerwerki.jpg";
