@@ -1,0 +1,222 @@
+{
+  "stadium": [
+    {
+      "src": "/work/stadium-480.webp",
+      "width": 480,
+      "height": 359,
+      "bytes": 18868
+    },
+    {
+      "src": "/work/stadium-800.webp",
+      "width": 800,
+      "height": 599,
+      "bytes": 42816
+    },
+    {
+      "src": "/work/stadium-1200.webp",
+      "width": 1200,
+      "height": 898,
+      "bytes": 81320
+    }
+  ],
+  "concert": [
+    {
+      "src": "/work/concert-480.webp",
+      "width": 480,
+      "height": 320,
+      "bytes": 27344
+    },
+    {
+      "src": "/work/concert-800.webp",
+      "width": 800,
+      "height": 533,
+      "bytes": 54132
+    },
+    {
+      "src": "/work/concert-1200.webp",
+      "width": 1200,
+      "height": 800,
+      "bytes": 86738
+    }
+  ],
+  "conference": [
+    {
+      "src": "/work/conference-480.webp",
+      "width": 480,
+      "height": 320,
+      "bytes": 36698
+    },
+    {
+      "src": "/work/conference-800.webp",
+      "width": 800,
+      "height": 533,
+      "bytes": 83072
+    },
+    {
+      "src": "/work/conference-1200.webp",
+      "width": 1200,
+      "height": 800,
+      "bytes": 149868
+    }
+  ],
+  "lounge": [
+    {
+      "src": "/work/lounge-480.webp",
+      "width": 480,
+      "height": 270,
+      "bytes": 20450
+    },
+    {
+      "src": "/work/lounge-800.webp",
+      "width": 800,
+      "height": 450,
+      "bytes": 41576
+    },
+    {
+      "src": "/work/lounge-1200.webp",
+      "width": 1200,
+      "height": 675,
+      "bytes": 69852
+    }
+  ],
+  "bar": [
+    {
+      "src": "/work/bar-480.webp",
+      "width": 480,
+      "height": 320,
+      "bytes": 23060
+    },
+    {
+      "src": "/work/bar-800.webp",
+      "width": 800,
+      "height": 533,
+      "bytes": 55810
+    },
+    {
+      "src": "/work/bar-1200.webp",
+      "width": 1200,
+      "height": 800,
+      "bytes": 111870
+    }
+  ],
+  "bowling": [
+    {
+      "src": "/work/bowling-480.webp",
+      "width": 480,
+      "height": 320,
+      "bytes": 24680
+    },
+    {
+      "src": "/work/bowling-800.webp",
+      "width": 800,
+      "height": 533,
+      "bytes": 58452
+    },
+    {
+      "src": "/work/bowling-1200.webp",
+      "width": 1200,
+      "height": 800,
+      "bytes": 117266
+    }
+  ],
+  "backstage": [
+    {
+      "src": "/work/backstage-480.webp",
+      "width": 480,
+      "height": 270,
+      "bytes": 15460
+    },
+    {
+      "src": "/work/backstage-800.webp",
+      "width": 800,
+      "height": 450,
+      "bytes": 30956
+    },
+    {
+      "src": "/work/backstage-1200.webp",
+      "width": 1200,
+      "height": 675,
+      "bytes": 52152
+    }
+  ],
+  "product": [
+    {
+      "src": "/work/product-480.webp",
+      "width": 480,
+      "height": 572,
+      "bytes": 10620
+    },
+    {
+      "src": "/work/product-800.webp",
+      "width": 800,
+      "height": 954,
+      "bytes": 19764
+    },
+    {
+      "src": "/work/product-1200.webp",
+      "width": 1200,
+      "height": 1431,
+      "bytes": 32864
+    }
+  ],
+  "fps": [
+    {
+      "src": "/work/fps-480.webp",
+      "width": 480,
+      "height": 360,
+      "bytes": 12128
+    },
+    {
+      "src": "/work/fps-800.webp",
+      "width": 800,
+      "height": 600,
+      "bytes": 24734
+    },
+    {
+      "src": "/work/fps-1200.webp",
+      "width": 1200,
+      "height": 900,
+      "bytes": 44682
+    }
+  ],
+  "rppg": [
+    {
+      "src": "/work/rppg-480.webp",
+      "width": 480,
+      "height": 322,
+      "bytes": 17392
+    },
+    {
+      "src": "/work/rppg-800.webp",
+      "width": 800,
+      "height": 537,
+      "bytes": 31570
+    },
+    {
+      "src": "/work/rppg-1200.webp",
+      "width": 900,
+      "height": 604,
+      "bytes": 36880
+    }
+  ],
+  "klagem": [
+    {
+      "src": "/work/klagem-480.webp",
+      "width": 480,
+      "height": 331,
+      "bytes": 21138
+    },
+    {
+      "src": "/work/klagem-800.webp",
+      "width": 800,
+      "height": 551,
+      "bytes": 47080
+    },
+    {
+      "src": "/work/klagem-1200.webp",
+      "width": 1200,
+      "height": 826,
+      "bytes": 91910
+    }
+  ]
+}

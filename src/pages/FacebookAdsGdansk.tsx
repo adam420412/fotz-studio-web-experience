@@ -1,3 +1,4 @@
+import { Layout } from "@/components/layout/Layout";
 
 import { SEOHead } from '@/components/seo/SEOHead';
 import { BreadcrumbSchema, ServiceSchema, FAQSchema } from '@/components/seo/StructuredData';
@@ -211,7 +212,8 @@ export default function FacebookAdsGdansk() {
   ];
 
   return (
-    <>
+    <Layout>
+      <div className="pt-20">
       <SEOHead
         title="Agencja Facebook Ads Gdańsk — reklamy Meta dla firm | Fotz.pl"
         description="Facebook Ads Gdańsk ✓ Kampanie Meta Ads (Facebook, Instagram) dla firm z Gdańska i Trójmiasta. Od 400 zł/mies. Bezpłatna konsultacja!"
@@ -229,7 +231,7 @@ export default function FacebookAdsGdansk() {
       
       <FAQSchema questions={faqs} />
 
-      <main className="min-h-screen bg-white">
+      <div className="min-h-screen bg-white">
         {/* Hero Section */}
         <section className="relative min-h-screen bg-gradient-to-br from-blue-600 via-blue-500 to-cyan-400 text-white overflow-hidden">
           <div className="absolute inset-0 opacity-20">
@@ -649,7 +651,8 @@ export default function FacebookAdsGdansk() {
             </Link>
           </div>
         </section>
-      </main>
-    </>
+      </div>
+      </div>
+    </Layout>
   );
 }

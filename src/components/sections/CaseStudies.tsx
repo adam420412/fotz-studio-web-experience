@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Play } from "lucide-react";
 import { OptimizedImage } from "@/components/OptimizedImage";
 
-import eneaStadionImg from "@/assets/portfolio/enea-stadion.png";
+import eneaStadionImg from "@/assets/portfolio/enea-stadion-web.webp";
 import fpsCegielskiImg from "@/assets/portfolio/fps-cegielski.png";
 import rppgImg from "@/assets/portfolio/rppg.png";
 

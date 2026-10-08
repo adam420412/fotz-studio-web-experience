@@ -4,6 +4,7 @@ import { HeroV3 } from "@/components/sections/HeroV3";
 import { ClientMarqueeV3 } from "@/components/sections/ClientMarqueeV3";
 import { ProcessV3 } from "@/components/sections/ProcessV3";
 import { SEOHead } from "@/components/seo/SEOHead";
+import { SelectedWork } from "@/components/sections/SelectedWork";
 import { LocalBusinessSchema, OrganizationSchema } from "@/components/seo/StructuredData";
 
 // Lazy load sections below the fold for better LCP
@@ -32,7 +33,7 @@ const Index = () => {
       </SEOHead>
       <LocalBusinessSchema />
       <OrganizationSchema />
-      <Layout>
+      <Layout workPlacement="manual">
         <HeroV3 />
         <ClientMarqueeV3 />
         <Suspense fallback={<SectionLoader />}>
@@ -45,6 +46,7 @@ const Index = () => {
           <CaseStudies />
         </Suspense>
         <ProcessV3 />
+        <SelectedWork />
         <Suspense fallback={<SectionLoader />}>
           <OfficeGallery compact />
         </Suspense>

@@ -1,3 +1,4 @@
+import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import React from 'react';
 import { Link } from 'react-router-dom';
@@ -95,7 +96,8 @@ export default function StronyInternetoweWielkopolska() {
   ];
 
   return (
-    <>
+    <Layout>
+      <div className="pt-20">
       <SEOHead
         title="Strony internetowe Wielkopolska | Poznań | FOTZ Studio"
         description="Profesjonalne strony internetowe dla firm z Wielkopolski i Poznania. Mamy siedzibę w Poznaniu, specjalizujemy się w SEO dla branż lokalnych. Wycena indywidualna."
@@ -386,6 +388,7 @@ export default function StronyInternetoweWielkopolska() {
 
       {/* Contact Section */}
       <ContactSection />
-    </>
+      </div>
+    </Layout>
   );
 }

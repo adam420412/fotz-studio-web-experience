@@ -1,13 +1,13 @@
 // Client logos for the top marquee band
-import eneaLogo from "@/assets/clients/enea-stadion.png";
-import lechLogo from "@/assets/clients/lech-poznan.png";
+import eneaLogo from "@/assets/clients/enea-stadion-web.webp";
+import lechLogo from "@/assets/clients/lech-poznan-web.webp";
 import rppgLogo from "@/assets/clients/rppg.svg";
-import fpsLogo from "@/assets/clients/fps.png";
-import pumaLogo from "@/assets/clients/puma.png";
-import mixbudLogo from "@/assets/clients/mixbud.png";
-import klagemLogo from "@/assets/clients/klagem.png";
-import partsLogo from "@/assets/clients/parts-jewelry.jpeg";
-import zabkaLogo from "@/assets/clients/zabka.png";
+import fpsLogo from "@/assets/clients/fps-web.webp";
+import pumaLogo from "@/assets/clients/puma-web.webp";
+import mixbudLogo from "@/assets/clients/mixbud-web.webp";
+import klagemLogo from "@/assets/clients/klagem-web.webp";
+import partsLogo from "@/assets/clients/parts-jewelry-web.webp";
+import zabkaLogo from "@/assets/clients/zabka-web.webp";
 
 const CLIENTS = [
   { name: "Enea Stadion", logo: eneaLogo },

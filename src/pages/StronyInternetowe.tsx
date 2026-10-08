@@ -48,7 +48,7 @@ import { RelatedServices } from "@/components/sections/RelatedServices";
 import apartamentyImg from "@/assets/portfolio/apartamenty-chorwacja.jpg";
 import victoryCarsImg from "@/assets/portfolio/victory-cars.png";
 import cuteDumplingImg from "@/assets/portfolio/cute-dumpling-new.png";
-import eneaStadionImg from "@/assets/portfolio/enea-stadion.png";
+import eneaStadionImg from "@/assets/portfolio/enea-stadion-web.webp";
 import fpsCegielskiImg from "@/assets/portfolio/fps-cegielski.png";
 import przedszkoleImg from "@/assets/portfolio/przedszkole.png";
 import rppgImg from "@/assets/portfolio/rppg.png";

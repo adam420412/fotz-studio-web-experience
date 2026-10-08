@@ -34,7 +34,7 @@ const NotFound = () => {
       >
         <meta name="prerender-status-code" content="404" />
       </SEOHead>
-      <Layout>
+      <Layout workPlacement="manual">
       <section className="min-h-[80vh] flex items-center justify-center section-padding">
         <div className="text-center">
           <div className="text-8xl md:text-9xl font-heading font-bold text-gradient mb-6">

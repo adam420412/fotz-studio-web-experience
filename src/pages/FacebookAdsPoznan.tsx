@@ -1,3 +1,4 @@
+import { Layout } from "@/components/layout/Layout";
 
 import { SEOHead } from '@/components/seo/SEOHead';
 import { BreadcrumbSchema, ServiceSchema, FAQSchema } from '@/components/seo/StructuredData';
@@ -211,7 +212,8 @@ export default function FacebookAdsPoznan() {
   ];
 
   return (
-    <>
+    <Layout>
+      <div className="pt-20">
       <SEOHead
         title="Agencja Facebook Ads Poznań — reklamy Meta dla firm | Fotz.pl"
         description="Facebook Ads Poznań ✓ Kampanie Meta Ads (Facebook, Instagram) dla firm z Poznania i Wielkopolski. Od 400 zł/mies. Bezpłatna konsultacja!"
@@ -229,7 +231,7 @@ export default function FacebookAdsPoznan() {
       
       <FAQSchema questions={faqs} />
 
-      <main className="min-h-screen bg-white">
+      <div className="min-h-screen bg-white">
         {/* Hero Section */}
         <section className="relative min-h-screen bg-gradient-to-br from-blue-600 via-blue-500 to-cyan-400 text-white overflow-hidden">
           <div className="absolute inset-0 opacity-20">
@@ -649,7 +651,8 @@ export default function FacebookAdsPoznan() {
             </Link>
           </div>
         </section>
-      </main>
-    </>
+      </div>
+      </div>
+    </Layout>
   );
 }
