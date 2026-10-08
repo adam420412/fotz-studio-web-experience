@@ -41,6 +41,8 @@ export default defineConfig(({ mode, isSsrBuild }) => ({
     rollupOptions: {
       output: {
         manualChunks: isSsrBuild ? undefined : {
+          // Radix and Supabase share tslib; keep helpers out of the database SDK chunk.
+          shared: ["tslib"],
           vendor: ["react", "react-dom"],
           router: ["react-router-dom"],
           motion: ["framer-motion"],

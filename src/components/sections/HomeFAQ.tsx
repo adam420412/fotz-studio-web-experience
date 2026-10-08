@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useId, useState } from "react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { FAQSchema } from "@/components/seo/StructuredData";
@@ -87,10 +87,14 @@ function FAQItem({
   faq: { question: string; answer: string; link?: { text: string; url: string } };
 }) {
   const [open, setOpen] = useState(false);
+  const id = useId();
 
   return (
     <div style={{ borderBottom: "1px solid var(--dv-hair)" }}>
       <button
+        type="button"
+        id={`${id}-trigger`}
+        aria-controls={`${id}-panel`}
         onClick={() => setOpen(!open)}
         aria-expanded={open}
         className="w-full flex items-center justify-between gap-4 py-5 text-left cursor-pointer"
@@ -102,6 +106,7 @@ function FAQItem({
           {faq.question}
         </span>
         <ChevronDown
+          aria-hidden="true"
           className={cn(
             "w-5 h-5 flex-shrink-0 transition-transform duration-300",
             open && "rotate-180"
@@ -110,6 +115,10 @@ function FAQItem({
         />
       </button>
       <div
+        id={`${id}-panel`}
+        role="region"
+        aria-labelledby={`${id}-trigger`}
+        aria-hidden={!open}
         className={cn(
           "grid transition-[grid-template-rows] duration-300 ease-out",
           open ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
@@ -122,6 +131,7 @@ function FAQItem({
             </p>
             {faq.link && (
               <Link
+                tabIndex={open ? undefined : -1}
                 to={faq.link.url}
                 className="inline-flex items-center gap-1 mt-3 text-[13px] hover:underline"
                 style={{ color: "var(--dv-accent-pink)" }}
