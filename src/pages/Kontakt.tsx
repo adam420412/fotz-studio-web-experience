@@ -243,7 +243,7 @@ export default function Kontakt() {
                         Dziękujemy za wiadomość!
                       </h3>
                       <p className="text-sm sm:text-base text-muted-foreground mb-6">
-                        Odezwiemy się w mniej niż 24 h.
+                        Skontaktujemy się z Tobą w sprawie zapytania.
                       </p>
                       <Button variant="hero" asChild className="h-10 sm:h-11 text-sm sm:text-base">
                         <Link to="/konsultacja">
@@ -411,7 +411,7 @@ export default function Kontakt() {
                         Dziękujemy!
                       </h3>
                       <p className="text-sm sm:text-base text-muted-foreground mb-6">
-                        Odezwiemy się w mniej niż 24 h.
+                        Skontaktujemy się, aby omówić zakres i dostępność nagrania.
                       </p>
                       <Button variant="hero" asChild className="h-10 sm:h-11 text-sm sm:text-base">
                         <Link to="/konsultacja">

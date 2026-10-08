@@ -38,16 +38,18 @@ export default defineConfig(({ mode, isSsrBuild }) => ({
   },
   ssr: { noExternal: ["react-helmet-async"] },
   build: {
+    manifest: !isSsrBuild,
     rollupOptions: {
       output: {
-        manualChunks: isSsrBuild ? undefined : {
-          // Radix and Supabase share tslib; keep helpers out of the database SDK chunk.
-          shared: ["tslib"],
-          vendor: ["react", "react-dom"],
-          router: ["react-router-dom"],
-          motion: ["framer-motion"],
-          supabase: ["@supabase/supabase-js"],
-          charts: ["recharts"],
+        // Assign the underlying CJS/runtime files too. Entry-only assignments put
+        // JSX helpers inside the animation chunk and loaded it on every page.
+        manualChunks: isSsrBuild ? undefined : (id) => {
+          if (id.includes('commonjsHelpers') || id.includes('/node_modules/tslib/')) return 'shared';
+          if (/\/node_modules\/(react|react-dom|scheduler)\//.test(id)) return 'vendor';
+          if (/\/node_modules\/(react-router|react-router-dom|@remix-run\/router)\//.test(id)) return 'router';
+          if (/\/node_modules\/(framer-motion|motion-dom|motion-utils)\//.test(id)) return 'motion';
+          if (id.includes('/node_modules/@supabase/')) return 'supabase';
+          if (id.includes('/node_modules/recharts/')) return 'charts';
         },
         // Suppress asset size warnings in console
         assetFileNames: "assets/[name]-[hash][extname]",

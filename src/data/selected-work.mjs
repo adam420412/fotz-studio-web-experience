@@ -15,6 +15,7 @@ export const workImages = {
 };
 
 export const workCollections = {
+  localAgency: { title: 'Różne marki. Konkretne realizacje.', description: 'Fotografia dla Enea Stadionu oraz projekty stron FPS Poznań i Klagem. Zobacz, jak wyglądają wybrane prace FOTZ Studio.', images: ['stadium', 'fps', 'klagem'] },
   studio: { title: 'Nasza praca. W konkretnych kadrach.', description: 'Wydarzenia, miejsca i praca na planie — wybrane zdjęcia z portfolio FOTZ Studio.', images: ['stadium', 'bar', 'backstage'] },
   social: { title: 'Zdjęcia, które tworzą komunikację.', description: 'Koncert, wydarzenie i wnętrze. Zobacz materiały z naszych realizacji i sposób, w jaki pokazujemy miejsca oraz emocje.', images: ['concert', 'bar', 'stadium'] },
   photo: { title: 'Od wydarzenia do detalu.', description: 'Wybrane fotografie z naszego portfolio: ludzie, wnętrza i produkty.', images: ['concert', 'bar', 'product'] },

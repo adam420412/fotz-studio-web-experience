@@ -8,6 +8,7 @@ import { ThemeProvider } from "next-themes";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
+import { SEODevPanelLoader } from "@/components/dev/SEODevPanelLoader";
 
 // Only load Index synchronously - it's the most common entry point
 import Index from "./pages/Index";
@@ -1507,7 +1508,6 @@ const UslugiCluster = lazy(() => import("./pages/clusters/UslugiCluster"));
 
 // Lazy load non-critical global components
 const CookieBanner = lazy(() => import("./components/CookieBanner").then(m => ({ default: m.CookieBanner })));
-const SEODevPanel = lazy(() => import("./components/dev/SEODevPanel").then(m => ({ default: m.SEODevPanel })));
 const Redirect301 = lazy(() => import("./components/seo/Redirect301").then(m => ({ default: m.Redirect301 })));
 
 const queryClient = new QueryClient();
@@ -2822,7 +2822,7 @@ const App = () => (
             </Suspense>
             </ErrorBoundary>
             <Suspense fallback={null}>
-              <SEODevPanel />
+              <SEODevPanelLoader />
             </Suspense>
           </BrowserRouter>
           <Suspense fallback={null}>
