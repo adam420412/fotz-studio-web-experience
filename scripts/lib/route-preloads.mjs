@@ -18,21 +18,22 @@ export function routeAssets(manifest, entry) {
   return [...assets].map(([file, rel]) => ({ file, rel }));
 }
 
-export function addRoutePreloads(html, manifest, entry) {
+export function addRoutePreloads(html, manifest, entry, { preloadModules = true } = {}) {
   const existing = new Set([...html.matchAll(/<(?:link|script)\b[^>]*\b(?:href|src)="([^"]+)"[^>]*>/g)].map(match => match[1]));
-  const tags = routeAssets(manifest, entry).filter(asset => !existing.has(`/${asset.file}`))
+  const tags = routeAssets(manifest, entry).filter(asset => (preloadModules || asset.rel === 'stylesheet') && !existing.has(`/${asset.file}`))
     .map(({ file, rel }) => `<link rel="${rel}" crossorigin href="/${escapeHtml(file)}" />`);
   return html.replace('</head>', `${tags.join('\n')}\n</head>`);
 }
 
 /** React's rendered attributes are already HTML-escaped; preserve them verbatim. */
 export function addHeroPreload(html, body) {
-  const hero = [...body.matchAll(/<img\b[^>]*>/g)].find(([tag]) => /\bfetchpriority="high"/.test(tag))?.[0];
+  const hero = [...body.matchAll(/<img\b[^>]*>/g)].find(([tag]) => /\bfetchpriority="high"/i.test(tag))?.[0];
   if (!hero) return html;
   const attributes = Object.fromEntries([...hero.matchAll(/([\w-]+)="([^"]*)"/g)].map(([, key, value]) => [key, value]));
   if (!attributes.src) return html;
   const srcset = attributes.srcSet || attributes.srcset;
   const responsive = srcset ? ` imagesrcset="${srcset}"${attributes.sizes ? ` imagesizes="${attributes.sizes}"` : ''}` : '';
   const tag = `<link rel="preload" as="image" href="${attributes.src}"${responsive} fetchpriority="high" />`;
-  return html.replace('</head>', `${tag}\n</head>`);
+  // Discover the image before page-module preloads compete for the connection.
+  return html.replace(/(?=<script\b|<link\b|<\/head>)/, `${tag}\n`);
 }

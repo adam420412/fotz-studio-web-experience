@@ -24,6 +24,11 @@ test('existing entry scripts and preloads are not duplicated and repeated inject
   assert.ok(result.includes('rel="stylesheet" crossorigin href="/assets/shared.css"'));
   assert.equal(addRoutePreloads(result, manifest, 'src/pages/Offer.tsx').replace(/\n/g, ''), result.replace(/\n/g, ''));
 });
+test('retains page styles when modules are left to the client router', () => {
+  const result = addRoutePreloads('<head></head>', manifest, 'src/pages/Offer.tsx', { preloadModules: false });
+  assert.match(result, /rel="stylesheet" crossorigin href="\/assets\/shared.css"/);
+  assert.doesNotMatch(result, /modulepreload|offer\.js|shared\.js|other\.js/);
+});
 test('image preload uses the actual high-priority image and preserves responsive candidates and escaped URLs', () => {
   const html = '<head></head><body></body>';
   const body = '<img src="lazy.webp" loading="lazy"/><img src="hero.webp?a=1&amp;b=2" srcSet="small.webp 480w, hero.webp 800w" sizes="90vw" fetchpriority="high"/>';
@@ -32,4 +37,12 @@ test('image preload uses the actual high-priority image and preserves responsive
   assert.match(result, /href="hero.webp\?a=1&amp;b=2"/);
   assert.doesNotMatch(result, /lazy.webp|amp;amp/);
   assert.equal(addHeroPreload(html, '<img src="lazy.webp"/>'), html);
+});
+test('recognizes React SSR fetchPriority casing and discovers the hero before scripts', () => {
+  const html = '<head><meta charset="utf-8"><script type="module" src="app.js"></script></head>';
+  const body = '<img src="cover-800.webp" srcSet="cover-480.webp 480w, cover-800.webp 800w" sizes="92vw" fetchPriority="high"/>';
+  const result = addHeroPreload(html, body);
+  assert.match(result, /as="image" href="cover-800.webp" imagesrcset="cover-480.webp 480w, cover-800.webp 800w" imagesizes="92vw"/);
+  assert.ok(result.indexOf('as="image"') < result.indexOf('<script'));
+  assert.ok(result.indexOf('<meta charset') < result.indexOf('as="image"'));
 });
