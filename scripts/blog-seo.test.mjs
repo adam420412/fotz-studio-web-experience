@@ -91,3 +91,50 @@ test('CMS and SPA aliases match hosting redirects and preserve parameters withou
     assert.equal(prepareBlogHtml(`<a href="https://example.com${from}">Źródło</a>`), `<a href="https://example.com${from}">Źródło</a>`);
   }
 });
+
+test('CMS table of contents reaches existing Polish headings without changing unrelated links', () => {
+  const html = '<h2 id="wybor-kanalow">Kanały</h2><h2 id="optymalizacja-testowanie">Testy</h2><a href="#wyb%C3%B3r-kana%C5%82%C3%B3w">Wybór</a><a href="#optymalizacja%2C-testowanie">Testowanie</a><a href="#wybor-kanalow">Poprawny</a><a href="/inna#wyb%C3%B3r-kana%C5%82%C3%B3w">Inna strona</a>';
+  const result = prepareBlogHtml(html);
+  assert.match(result, /href="#wybor-kanalow">Wybór/);
+  assert.match(result, /href="#optymalizacja-testowanie">Testowanie/);
+  assert.match(result, /href="#wybor-kanalow">Poprawny/);
+  assert.match(result, /href="\/inna#wyb%C3%B3r-kana%C5%82%C3%B3w"/);
+});
+
+test('CMS fragment repair leaves ambiguous, missing, exact and malformed targets untouched', () => {
+  const html = '<h2 id="zrodlo">A</h2><h3 id="Źródło">B</h3><div id="podział"></div><a href="#źródło">Ambiguous</a><a href="#podzia%C5%82">Exact div</a><a href="#nie-ma">Missing</a><a href="#%XY">Malformed</a>';
+  assert.equal(prepareBlogHtml(html), html);
+});
+
+test('CMS fragments do not interpret data attributes as IDs or links', () => {
+  const html = '<h2 data-id="wybor">A</h2><h2 id="podzial">B</h2><a href="#wybór">Missing</a><a data-href="#podział">Not a link</a>';
+  assert.equal(prepareBlogHtml(html), html);
+});
+
+test('reviewed campaign guide has working contents links and retains its publication date', async () => {
+  const { readFile } = await import('node:fs/promises');
+  const { articles } = JSON.parse(await readFile(new URL('../src/data/blog-content.json', import.meta.url), 'utf8'));
+  const article = articles.find(item => item.slug === 'czym-sa-kampanie-reklamowe-i-jak-skutecznie-je-prowadzic');
+  const before = JSON.stringify(article);
+  const html = prepareBlogHtml(article.content_html, article.slug);
+  const ids = new Set([...html.matchAll(/\sid="([^"]+)"/g)].map(match => match[1]));
+  const links = [...html.matchAll(/href="#([^"]+)"/g)].map(match => decodeURIComponent(match[1]));
+  assert.ok(links.length >= 7);
+  for (const id of links) assert.ok(ids.has(id), `Missing heading: ${id}`);
+  assert.equal(JSON.stringify(article), before);
+  assert.doesNotMatch(html, /60\/20-30|minimum 1000 wyświetleń|znacząco obniżają koszt/);
+  assert.match(html, /\/social-media\/obsluga#materialy/);
+});
+
+test('all published CMS contents links resolve after review, including dashes and ampersands', async () => {
+  const { readFile } = await import('node:fs/promises');
+  const { articles } = JSON.parse(await readFile(new URL('../src/data/blog-content.json', import.meta.url), 'utf8'));
+  for (const article of articles) {
+    const html = prepareBlogHtml(article.content_html || '', article.slug);
+    const ids = new Set([...html.matchAll(/\sid=["']([^"']+)["']/g)].map(match => match[1].replace(/&amp;/g, '&')));
+    for (const [, raw] of html.matchAll(/\shref=["']#([^"']+)["']/g)) {
+      const id = decodeURIComponent(raw.replace(/&amp;/g, '&'));
+      assert.ok(ids.has(id), `${article.slug} has no target for #${id}`);
+    }
+  }
+});
