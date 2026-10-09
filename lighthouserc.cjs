@@ -3,7 +3,7 @@ module.exports = {
     collect: {
       staticDistDir: './dist',
       // Explicit samples prevent an accidental Lighthouse run on 1,000+ pages.
-      url: ['http://localhost/', 'http://localhost/social-media/obsluga', 'http://localhost/uslugi/strony-internetowe', 'http://localhost/seo/audyt'],
+      url: ['http://localhost/', 'http://localhost/social-media/obsluga', 'http://localhost/uslugi/strony-internetowe', 'http://localhost/seo/audyt', 'http://localhost/blog/czym-sa-kampanie-reklamowe-i-jak-skutecznie-je-prowadzic'],
       numberOfRuns: 2,
       settings: { onlyCategories: ['performance', 'accessibility', 'best-practices', 'seo'] },
     },

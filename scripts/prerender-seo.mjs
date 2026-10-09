@@ -242,6 +242,7 @@ for (const route of routes) {
       const schemaTags = [...new Set(schemas.map(schema => JSON.stringify(schema)))].map(json => `<script data-rh="true" type="application/ld+json">${json.replace(/</g, '\\u003c')}</script>`).join('\n');
       html = html.replace(jsonLdPattern, '').replace('</head>', () => `<!-- fotz-schema:start -->${schemaTags}<!-- fotz-schema:end --></head>`);
       html = html.replace('<div id="root"></div>', () => `<div id="root"${rendered.hydrate ? ` data-hydrate-path="${route.path}"` : ''}><!-- fotz-body:start -->${body}<!-- fotz-body:end --></div>`);
+      if (rendered.bootstrap) html = html.replace('</body>', () => `<script id="fotz-blog-data" type="application/json">${rendered.bootstrap}</script></body>`);
       bodyReport.rendered.push(route.path);
     } catch (error) {
       bodyReport.errors.push({path:route.path, message:error.message});
