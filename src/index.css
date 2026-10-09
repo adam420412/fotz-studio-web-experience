@@ -1047,8 +1047,12 @@ main table { display: block; max-width: 100%; overflow-x: auto; }
 .dark main :is(.bg-blue-300, .bg-blue-400, .bg-blue-500, .bg-yellow-300, .bg-yellow-400, .bg-yellow-500, .bg-amber-300, .bg-amber-400, .bg-amber-500, .bg-green-300, .bg-green-400, .bg-green-500, .bg-lime-300, .bg-lime-400, .bg-lime-500, .bg-cyan-300, .bg-cyan-400, .bg-cyan-500, .bg-sky-300, .bg-sky-400, .bg-sky-500, .bg-orange-300, .bg-orange-400, .bg-orange-500, .bg-pink-300, .bg-pink-400, .bg-pink-500, .bg-rose-300, .bg-rose-400, .bg-rose-500, .bg-teal-300, .bg-teal-400, .bg-teal-500, .bg-emerald-300, .bg-emerald-400, .bg-emerald-500, .bg-purple-300, .bg-purple-400, .bg-purple-500, .bg-indigo-300, .bg-indigo-400, .bg-indigo-500):is(.text-gray-900, .text-slate-900, .text-blue-950, .text-blue-900) { color: #111827; }
 
 /* Keep editorial links distinguishable without relying on color alone. */
-main p a, .prose li a, .prose td a, .prose blockquote a {
+main p a, .prose li a, .prose td a, .prose blockquote a, .prose figcaption a {
   text-decoration: underline;
   text-underline-offset: 0.2em;
   text-decoration-thickness: 1px;
+}
+
+.prose :is(h2, h3, h4, h5, h6) {
+  scroll-margin-top: 7rem;
 }

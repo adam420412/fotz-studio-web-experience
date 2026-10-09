@@ -60,11 +60,36 @@ export function getBlogMetadata(article) {
 /** The article view already emits one H1 and promotes CMS schema into Helmet. */
 export function prepareBlogHtml(html, slug = '') {
   for (const [before, after] of reviewedBlogCopy[slug] || []) html = html.replace(before, after);
-  return normalizeSiteUrls(html)
+  return repairBlogFragments(normalizeSiteUrls(html)
     // An automatic linkifier mistook the Polish abbreviation "m.in." for a domain.
     .replace(/<a\b[^>]*href=["']https?:\/\/m\.in\/?["'][^>]*>(m\.in\.?)<\/a>/gi, '$1')
     .replace(/(\bhref=["'])([^"']+)(["'])/gi, (_, start, href, end) => `${start}${canonicalLink(href)}${end}`)
     .replace(/<script\b(?=[^>]*\btype=["']application\/ld\+json["'])[^>]*>[\s\S]*?<\/script\s*>/gi, '')
     .replace(/<h1(\s[^>]*)?>/gi, '<h2$1>')
-    .replace(/<\/h1>/gi, '</h2>');
+    .replace(/<\/h1>/gi, '</h2>'));
+}
+
+// Some CMS tables of contents preserve Polish letters/punctuation while their
+// heading IDs are ASCII slugs. Repair only unique, existing heading targets.
+function fragmentKey(value) {
+  return value.normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+    .replace(/ł/g, 'l').replace(/Ł/g, 'L').toLowerCase()
+    .replace(/[^a-z0-9 -]/g, '').replace(/[ -]+/g, '-');
+}
+
+export function repairBlogFragments(html) {
+  const ids = new Set([...html.matchAll(/<[^>]+\sid=["']([^"']+)["']/gi)].map(match => match[1]));
+  const headings = new Map();
+  for (const [, id] of html.matchAll(/<h[1-6]\b[^>]*\sid=["']([^"']+)["']/gi)) {
+    const key = fragmentKey(id);
+    if (!key) continue;
+    headings.set(key, headings.has(key) ? null : id);
+  }
+  return html.replace(/(<a\b[^>]*\shref=["'])#([^"']+)(["'])/gi, (original, start, fragment, end) => {
+    let decoded;
+    try { decoded = decodeURIComponent(fragment.replace(/&amp;/g, '&')); } catch { return original; }
+    if (ids.has(decoded)) return original;
+    const target = headings.get(fragmentKey(decoded));
+    return target ? `${start}#${encodeURIComponent(target)}${end}` : original;
+  });
 }

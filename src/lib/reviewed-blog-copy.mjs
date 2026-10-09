@@ -1,8 +1,11 @@
+import { reviewedCampaignCopy } from "./reviewed-campaign-copy.mjs";
+
 /** Reviewed editorial corrections shared by live CMS rendering and prerender.
  * Exact source matches preserve subsequent CMS edits instead of overwriting them.
  * Evidence and remaining source checks: docs/seo/DEEP-AUDIT-2026-10-08.md.
  */
 export const reviewedBlogCopy = {
+  "czym-sa-kampanie-reklamowe-i-jak-skutecznie-je-prowadzic": reviewedCampaignCopy,
   "ai-w-marketingu-firm-jak-zwiekszyc-efektywnosc-dzialan": [
   [
     "<li>Sztuczna inteligencja w marketingu zwiększa przychody nawet o 20 procent, szczególnie w small i medium enterprises. AI automatyzuje komunikację, personalizuje oferty i optymalizuje kampanie, oszczędzając czas i koszty. Najważniejsze jest strategiczne połączenie technologii z wiedzą branżową i relacjami z klientami.</li>",
