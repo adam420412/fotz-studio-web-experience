@@ -14,6 +14,7 @@
     "seo:check": "python3 scripts/audit-built-site.py && node scripts/audit-source-links.mjs && node scripts/audit-work-photos.mjs",
     "seo:lighthouse": "lhci autorun",
     "images:work": "node scripts/prepare-selected-work.mjs",
+    "images:blog": "node scripts/prepare-blog-images.mjs",
     "seo:unlighthouse": "unlighthouse-ci",
     "seo:links:collect": "python3 scripts/collect-external-links.py",
     "seo:links": "npm run seo:links:collect && lychee reports/links/external.txt"

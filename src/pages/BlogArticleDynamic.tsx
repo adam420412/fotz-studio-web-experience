@@ -8,8 +8,9 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { ArrowLeft, Calendar, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { format } from "date-fns";
-import { pl } from "date-fns/locale";
+import { formatBlogDate } from "@/lib/blog-bootstrap.mjs";
+import { getBlogImage } from "@/lib/blog-images.mjs";
+import blogImages from "@/data/blog-images.json";
 import { getBlogMetadata, normalizeSchemaUrls, prepareBlogHtml } from "@/lib/blog-seo.mjs";
 
 /**
@@ -33,7 +34,7 @@ function extractKeywords(raw: unknown): string[] {
 
 export default function BlogArticleDynamic() {
   const { slug } = useParams<{ slug: string }>();
-  const { data: article, isLoading, error } = useBlogArticle(slug || "");
+  const { data: article, isLoading, error, refetch } = useBlogArticle(slug || "");
 
   if (isLoading) {
     return (
@@ -55,13 +56,26 @@ export default function BlogArticleDynamic() {
     );
   }
 
-  if (error || !article) {
+  if (error && !article) {
+    return (
+      <Layout>
+        <div className="pt-40 pb-20 section-padding bg-background">
+          <div className="container-wide max-w-4xl" role="alert">
+            <h1 className="text-3xl font-heading font-bold mb-6">Nie udało się wczytać artykułu</h1>
+            <p className="text-muted-foreground mb-6">Sprawdź połączenie i spróbuj ponownie.</p>
+            <Button onClick={() => refetch()}>Spróbuj ponownie</Button>
+            <Link to="/blog" className="underline ml-6">Wróć do bloga</Link>
+          </div>
+        </div>
+      </Layout>
+    );
+  }
+
+  if (!article) {
     return <Navigate to="/blog" replace />;
   }
 
-  const publishedDate = article.published_at
-    ? format(new Date(article.published_at), "d MMMM yyyy", { locale: pl })
-    : "";
+  const publishedDate = formatBlogDate(article.published_at);
 
   const canonicalUrl = `https://www.fotz-studio.pl/blog/${article.slug}`;
 
@@ -159,10 +173,11 @@ export default function BlogArticleDynamic() {
           {article.hero_image_url && (
             <div className="relative aspect-video rounded-2xl overflow-hidden mb-12">
               <img
-                src={metadata.ogImage}
+                {...getBlogImage(article, blogImages)}
                 alt={article.title}
                 className="w-full h-full object-cover"
                 loading="eager"
+                fetchPriority="high"
               />
             </div>
           )}

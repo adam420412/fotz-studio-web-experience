@@ -12,6 +12,7 @@ OUT = Path(os.environ.get('FOTZ_QA_DIR', ROOT / 'docs/seo/qa-2026-10-01'))
 OUT.mkdir(parents=True, exist_ok=True)
 SITE_ORIGIN = 'https://www.fotz-studio.pl'
 DIST = Path(os.environ.get('FOTZ_BUILD_DIR', ROOT / 'dist'))
+CMS_PATHS = {'/blog/'+article['slug'] for article in json.loads((ROOT/'src/data/blog-content.json').read_text())['articles']}
 class Head(HTMLParser):
     def __init__(self):
         super().__init__(convert_charrefs=True); self.titles=[]; self.current=None; self.meta=defaultdict(list); self.canonical=[]; self.links=[]; self.h1_count=0; self.hydrate_path=None
@@ -45,8 +46,23 @@ def inspect(html, check_local_assets=True):
             issues.append('hydration path differs from canonical')
         if any(re.search(r'(?:^|;)\s*opacity:\s*0(?:;|$)', style) for style in re.findall(r'style="([^"]*)"', html)):
             issues.append('hydrated document hides static content with inline opacity')
-    # Website URLs in schema and image tags must not reintroduce the old domain.
-    if re.search(r'https?://(?:www\.)?fotz\.pl(?=[/\s\"\'<>?#]|$)', html):issues.append('old website URL in generated HTML')
+    # The bootstrap contains the raw public CMS snapshot; the shared article
+    # renderer normalizes its URLs. Audit the rendered links/schema separately.
+    bootstrap_pattern=r'<script id="fotz-blog-data" type="application/json">([\s\S]*?)</script>'
+    bootstraps=re.findall(bootstrap_pattern, html)
+    if not noindex and h.canonical and urlparse(h.canonical[0]).path in CMS_PATHS and not bootstraps:
+        issues.append('missing CMS bootstrap')
+    if bootstraps:
+        try:
+            payload=json.loads(bootstraps[0]); article=payload['article']
+            if len(bootstraps)!=1 or payload['version']!=1 or payload['path']!=h.hydrate_path or payload['path']!='/blog/'+article['slug']:
+                issues.append('invalid CMS bootstrap route/version')
+            if not isinstance(article['title'],str) or not isinstance(article['content_html'],str):
+                issues.append('invalid CMS bootstrap article')
+        except (ValueError,KeyError,TypeError): issues.append('invalid CMS bootstrap JSON')
+    # Website URLs in rendered markup and schema must not use the old domain.
+    rendered_html=re.sub(bootstrap_pattern, '', html)
+    if re.search(r'https?://(?:www\.)?fotz\.pl(?=[/\s\"\'<>?#]|$)', rendered_html):issues.append('old website URL in generated HTML')
     if not noindex:
         body = re.search(r'<!-- fotz-body:start -->([\s\S]*?)<!-- fotz-body:end -->', html)
         if not body: issues.append('missing prerendered page body')
