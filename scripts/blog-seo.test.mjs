@@ -138,3 +138,21 @@ test('all published CMS contents links resolve after review, including dashes an
     }
   }
 });
+
+test('reviewed strategy guide preserves incoming fragments and bypasses replacement after any CMS edit', async () => {
+  const { readFile } = await import('node:fs/promises');
+  const { articles } = JSON.parse(await readFile(new URL('../src/data/blog-content.json', import.meta.url), 'utf8'));
+  const article = articles.find(item => item.slug === 'strategia-content-marketingu-skuteczny-przewodnik-dla-firm');
+  const original = JSON.stringify(article);
+  const html = prepareBlogHtml(article.content_html, article.slug);
+  const oldIds = [...article.content_html.matchAll(/\sid="([^"]+)"/g)].map(match => match[1]);
+  const newIds = new Set([...html.matchAll(/\sid="([^"]+)"/g)].map(match => match[1]));
+  for (const id of oldIds) assert.ok(newIds.has(id), `Incoming fragment lost: #${id}`);
+  assert.doesNotMatch(html, /29%|co najmniej 3-4 kanałach|case study optymalizacji konwersji/);
+  assert.match(html, /\/content-marketing\/strategia#przyklad-planu/);
+  assert.equal(JSON.stringify(article), original);
+  // Even a change near the end must retain the newer source, not overwrite it.
+  const changed = article.content_html.replace(/<\/ul>\s*$/, '<li>Nowa zatwierdzona informacja CMS</li></ul>');
+  assert.notEqual(changed, article.content_html);
+  assert.equal(prepareBlogHtml(changed, article.slug), prepareBlogHtml(changed));
+});
