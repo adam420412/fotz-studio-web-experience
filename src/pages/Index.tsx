@@ -1,4 +1,3 @@
-import { lazy, Suspense } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { HeroV3 } from "@/components/sections/HeroV3";
 import { ClientMarqueeV3 } from "@/components/sections/ClientMarqueeV3";
@@ -7,19 +6,15 @@ import { SEOHead } from "@/components/seo/SEOHead";
 import { SelectedWork } from "@/components/sections/SelectedWork";
 import { LocalBusinessSchema, OrganizationSchema } from "@/components/seo/StructuredData";
 
-// Lazy load sections below the fold for better LCP
-const FeaturedFilms = lazy(() => import("@/components/sections/FeaturedFilms").then(m => ({ default: m.FeaturedFilms })));
-const Services = lazy(() => import("@/components/sections/Services").then(m => ({ default: m.Services })));
-const CaseStudies = lazy(() => import("@/components/sections/CaseStudies").then(m => ({ default: m.CaseStudies })));
-const OfficeGallery = lazy(() => import("@/components/sections/OfficeGallery").then(m => ({ default: m.OfficeGallery })));
-const HomeFAQ = lazy(() => import("@/components/sections/HomeFAQ").then(m => ({ default: m.HomeFAQ })));
-const NewsletterSection = lazy(() => import("@/components/sections/NewsletterSection").then(m => ({ default: m.NewsletterSection })));
-const FinalCTA = lazy(() => import("@/components/sections/FinalCTA").then(m => ({ default: m.FinalCTA })));
-
-// Ultra minimal loading fallback - no spinner
-const SectionLoader = () => (
-  <div className="py-16 md:py-24" />
-);
+// The page itself is code-split in App. Keep its sections in one hydration
+// boundary so their existing HTML also survives early context updates.
+import { FeaturedFilms } from "@/components/sections/FeaturedFilms";
+import { Services } from "@/components/sections/Services";
+import { CaseStudies } from "@/components/sections/CaseStudies";
+import { OfficeGallery } from "@/components/sections/OfficeGallery";
+import { HomeFAQ } from "@/components/sections/HomeFAQ";
+import { NewsletterSection } from "@/components/sections/NewsletterSection";
+import { FinalCTA } from "@/components/sections/FinalCTA";
 
 const Index = () => {
   return (
@@ -36,29 +31,15 @@ const Index = () => {
       <Layout workPlacement="manual">
         <HeroV3 />
         <ClientMarqueeV3 />
-        <Suspense fallback={<SectionLoader />}>
-          <FeaturedFilms />
-        </Suspense>
-        <Suspense fallback={<SectionLoader />}>
-          <Services />
-        </Suspense>
-        <Suspense fallback={<SectionLoader />}>
-          <CaseStudies />
-        </Suspense>
+        <FeaturedFilms />
+        <Services />
+        <CaseStudies />
         <ProcessV3 />
         <SelectedWork />
-        <Suspense fallback={<SectionLoader />}>
-          <OfficeGallery compact />
-        </Suspense>
-        <Suspense fallback={<SectionLoader />}>
-          <HomeFAQ />
-        </Suspense>
-        <Suspense fallback={<SectionLoader />}>
-          <NewsletterSection />
-        </Suspense>
-        <Suspense fallback={<SectionLoader />}>
-          <FinalCTA />
-        </Suspense>
+        <OfficeGallery compact />
+        <HomeFAQ />
+        <NewsletterSection />
+        <FinalCTA />
 
       </Layout>
     </>

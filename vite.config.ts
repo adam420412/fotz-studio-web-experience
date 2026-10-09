@@ -1,6 +1,7 @@
-import { defineConfig } from "vite";
+import { defineConfig, type PreviewServer } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
+import { existsSync } from "node:fs";
 import { componentTagger } from "lovable-tagger";
 import viteCompression from "vite-plugin-compression";
 
@@ -15,6 +16,25 @@ export default defineConfig(({ mode, isSsrBuild }) => ({
   },
   plugins: [
     react(),
+    {
+      name: "prerender-preview",
+      configurePreviewServer(server: PreviewServer) {
+        // Vite otherwise serves the homepage for extensionless subpage URLs.
+        // Match the deployed directory indexes, including alternate QA outDirs.
+        const output = path.resolve(server.config.root, server.config.build.outDir);
+        server.middlewares.use((req, _res, next) => {
+          try {
+            const url = new URL(req.url || "/", "http://localhost");
+            const pathname = decodeURIComponent(url.pathname);
+            const file = path.resolve(output, `.${pathname}`, "index.html");
+            if (!pathname.endsWith("/") && file.startsWith(`${output}${path.sep}`) && existsSync(file)) {
+              req.url = `${url.pathname}/index.html${url.search}`;
+            }
+          } catch { /* Let Vite handle malformed URLs. */ }
+          next();
+        });
+      },
+    },
     mode === "development" && componentTagger(),
     // Gzip compression
     !isSsrBuild && viteCompression({

@@ -1,4 +1,4 @@
-import { Suspense, lazy } from "react";
+import { Suspense, lazy, type ComponentType, type PropsWithChildren } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -9,11 +9,11 @@ import { LanguageProvider } from "@/contexts/LanguageContext";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import { SEODevPanelLoader } from "@/components/dev/SEODevPanelLoader";
+import { CookieBannerLoader } from "@/components/CookieBannerLoader";
+import type { InitialPage } from "@/lib/hydrated-pages";
 
-// Only load Index synchronously - it's the most common entry point
-import Index from "./pages/Index";
-
-// Lazy load all other pages for code splitting
+// Prerendered content stays visible while the current page's code loads.
+const Index = lazy(() => import("./pages/Index"));
 const Uslugi = lazy(() => import("./pages/Uslugi"));
 const Realizacje = lazy(() => import("./pages/Realizacje"));
 const Kontakt = lazy(() => import("./pages/Kontakt"));
@@ -1507,7 +1507,6 @@ const PerformanceMarketingCluster = lazy(() => import("./pages/clusters/Performa
 const UslugiCluster = lazy(() => import("./pages/clusters/UslugiCluster"));
 
 // Lazy load non-critical global components
-const CookieBanner = lazy(() => import("./components/CookieBanner").then(m => ({ default: m.CookieBanner })));
 const Redirect301 = lazy(() => import("./components/seo/Redirect301").then(m => ({ default: m.Redirect301 })));
 
 const queryClient = new QueryClient();
@@ -1522,18 +1521,27 @@ const PageLoader = () => (
   </div>
 );
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
+type AppProps = {
+  Router?: ComponentType<PropsWithChildren>;
+  client?: QueryClient;
+  initialPage?: InitialPage;
+};
+
+const App = ({ Router = BrowserRouter, client = queryClient, initialPage }: AppProps) => (
+  <QueryClientProvider client={client}>
     <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
       <LanguageProvider>
         <TooltipProvider>
           <Toaster />
           <Sonner />
-          <BrowserRouter>
+          <Router>
             <ScrollToTop />
             <ErrorBoundary>
             <Suspense fallback={<PageLoader />}>
               <Routes>
+                {/* The loaded entry route wins the same-path tie, so hydration
+                    cannot suspend while its module is still being fetched. */}
+                {initialPage && <Route path={initialPage.path} element={<initialPage.Component />} />}
                 <Route path="/" element={<Index />} />
                 <Route path="/uslugi" element={<Uslugi />} />
                 <Route path="/realizacje" element={<Realizacje />} />
@@ -2824,10 +2832,8 @@ const App = () => (
             <Suspense fallback={null}>
               <SEODevPanelLoader />
             </Suspense>
-          </BrowserRouter>
-          <Suspense fallback={null}>
-            <CookieBanner />
-          </Suspense>
+          </Router>
+          <CookieBannerLoader />
         </TooltipProvider>
       </LanguageProvider>
     </ThemeProvider>

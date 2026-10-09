@@ -220,23 +220,28 @@ for (const route of routes) {
   }
   
   // Generate the HTML with injected meta
-  let html = addRoutePreloads(injectMeta(template, meta), assetManifest, path.relative(ROOT, file).split(path.sep).join('/'));
+  // The homepage has complete HTML already: fetch its portfolio modules after
+  // bootstrap, leaving the first connections for CSS and the hero image.
+  let html = addRoutePreloads(injectMeta(template, meta), assetManifest, path.relative(ROOT, file).split(path.sep).join('/'), { preloadModules: route.path !== '/' });
   if (!meta.noIndex) {
     try {
       const rendered = await renderPage(path.relative(path.join(SRC, 'pages'), file), route.path, publicArticles);
       let body = rendered.body;
       html = addHeroPreload(html, body);
       if (!/<h1[\s>]/.test(body)) throw new Error('Missing page H1 in rendered content');
-      // Initial animation styles must never hide the static document before JS.
-      body = body.replace(/style="([^"]*)"/g, (tag, style) => /(?:^|;)opacity:0(?:;|$)/.test(style)
-        ? `style="${style.replace(/(?:^|;)opacity:0(?=;|$)/, ';opacity:1').replace(/(?:^|;)(?:transform|filter):[^;]*/g, '')}"` : tag);
+      // Hydration requires the original React markup. Only legacy templates
+      // need animation normalization to keep their static document visible.
+      if (!rendered.hydrate) {
+        body = body.replace(/style="([^"]*)"/g, (tag, style) => /(?:^|;)opacity:0(?:;|$)/.test(style)
+          ? `style="${style.replace(/(?:^|;)opacity:0(?=;|$)/, ';opacity:1').replace(/(?:^|;)(?:transform|filter):[^;]*/g, '')}"` : tag);
+      }
       html = html.replace(/<noscript id="seo-fallback">[\s\S]*?<\/noscript>\s*/, '');
       const pageSchemas = [...rendered.scripts.matchAll(jsonLdPattern)].map(match => JSON.parse(match[1]));
       const pageTypes = new Set(pageSchemas.map(schema => schema['@type']));
       const schemas = [...defaultSchemas.filter(schema => !pageTypes.has(schema['@type'])), ...pageSchemas];
       const schemaTags = [...new Set(schemas.map(schema => JSON.stringify(schema)))].map(json => `<script data-rh="true" type="application/ld+json">${json.replace(/</g, '\\u003c')}</script>`).join('\n');
       html = html.replace(jsonLdPattern, '').replace('</head>', () => `<!-- fotz-schema:start -->${schemaTags}<!-- fotz-schema:end --></head>`);
-      html = html.replace('<div id="root"></div>', () => `<div id="root"><!-- fotz-body:start -->${body}<!-- fotz-body:end --></div>`);
+      html = html.replace('<div id="root"></div>', () => `<div id="root"${rendered.hydrate ? ` data-hydrate-path="${route.path}"` : ''}><!-- fotz-body:start -->${body}<!-- fotz-body:end --></div>`);
       bodyReport.rendered.push(route.path);
     } catch (error) {
       bodyReport.errors.push({path:route.path, message:error.message});

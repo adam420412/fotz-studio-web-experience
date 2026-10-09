@@ -14,7 +14,7 @@ SITE_ORIGIN = 'https://www.fotz-studio.pl'
 DIST = Path(os.environ.get('FOTZ_BUILD_DIR', ROOT / 'dist'))
 class Head(HTMLParser):
     def __init__(self):
-        super().__init__(convert_charrefs=True); self.titles=[]; self.current=None; self.meta=defaultdict(list); self.canonical=[]; self.links=[]; self.h1_count=0
+        super().__init__(convert_charrefs=True); self.titles=[]; self.current=None; self.meta=defaultdict(list); self.canonical=[]; self.links=[]; self.h1_count=0; self.hydrate_path=None
     def handle_starttag(self,tag,attrs):
         a=dict(attrs)
         if tag=='title': self.current=''
@@ -22,6 +22,7 @@ class Head(HTMLParser):
         if tag=='link' and a.get('rel')=='canonical': self.canonical.append(a.get('href',''))
         if tag=='a' and a.get('href'): self.links.append(a['href'])
         if tag=='h1': self.h1_count+=1
+        if tag=='div' and a.get('id')=='root': self.hydrate_path=a.get('data-hydrate-path')
     def handle_data(self,data):
         if self.current is not None: self.current+=data
     def handle_endtag(self,tag):
@@ -39,6 +40,11 @@ def inspect(html, check_local_assets=True):
             parsed=urlparse(url)
             if f'{parsed.scheme}://{parsed.netloc}' != SITE_ORIGIN:issues.append(f'{label}: wrong production origin')
     if h.canonical and h.meta['og:url'] != h.canonical:issues.append('og:url differs from canonical')
+    if h.hydrate_path is not None:
+        if not h.canonical or h.hydrate_path != (urlparse(h.canonical[0]).path.rstrip('/') or '/'):
+            issues.append('hydration path differs from canonical')
+        if any(re.search(r'(?:^|;)\s*opacity:\s*0(?:;|$)', style) for style in re.findall(r'style="([^"]*)"', html)):
+            issues.append('hydrated document hides static content with inline opacity')
     # Website URLs in schema and image tags must not reintroduce the old domain.
     if re.search(r'https?://(?:www\.)?fotz\.pl(?=[/\s\"\'<>?#]|$)', html):issues.append('old website URL in generated HTML')
     if not noindex:
