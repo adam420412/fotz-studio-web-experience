@@ -1,13 +1,11 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { scrollToLocation } from "@/lib/scroll-to-location.mjs";
 
 export function ScrollToTop() {
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
 
-  useEffect(() => {
-    // Use instant scroll for faster page transitions
-    window.scrollTo(0, 0);
-  }, [pathname]);
+  useEffect(() => scrollToLocation(hash), [pathname, hash]);
 
   return null;
 }

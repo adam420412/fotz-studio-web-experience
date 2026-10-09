@@ -1,3 +1,4 @@
+import { reviewedContentStrategyCopy } from "./reviewed-content-strategy-copy.mjs";
 import { reviewedCampaignCopy } from "./reviewed-campaign-copy.mjs";
 
 /** Reviewed editorial corrections shared by live CMS rendering and prerender.
@@ -5,6 +6,7 @@ import { reviewedCampaignCopy } from "./reviewed-campaign-copy.mjs";
  * Evidence and remaining source checks: docs/seo/DEEP-AUDIT-2026-10-08.md.
  */
 export const reviewedBlogCopy = {
+  "strategia-content-marketingu-skuteczny-przewodnik-dla-firm": reviewedContentStrategyCopy,
   "czym-sa-kampanie-reklamowe-i-jak-skutecznie-je-prowadzic": reviewedCampaignCopy,
   "ai-w-marketingu-firm-jak-zwiekszyc-efektywnosc-dzialan": [
   [
