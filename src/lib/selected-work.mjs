@@ -4,7 +4,7 @@ export function getWorkCollection(pathname) {
   if (path === '/agencja-marketingowa/poznan') return 'localAgency';
   const publicOffer = /^\/(?:uslugi(?:\/|$)|agencja[^/]*(?:\/|$)|social-media(?:\/|$)|content-marketing(?:\/|$)|performance-marketing(?:\/|$)|seo(?:\/|$)|strony-internetowe(?:\/|$)|dla-kogo(?:\/|$)|ai(?:\/|$)|fotograf[^/]*|kampanie[^/]*|wizualizacje-3d(?:\/|$))/.test(path);
   const editorial = path.startsWith('/blog/') && /(?:social-media|instagram|facebook|tiktok|reklam|marketing|fotograf|zdjeci|zdjec|video|wideo|film|rolk|branding|identyfikac|stron|landing-page|seo|ecommerce)/.test(path);
-  if (!publicOffer && !editorial && !['/', '/o-nas', '/kontakt', '/blog', '/poradniki', '/cennik'].includes(path)) return null;
+  if (!publicOffer && !editorial && !['/', '/o-nas', '/blog', '/poradniki', '/cennik'].includes(path)) return null;
   if (/gastronom|nieruchom|turyst|wnetrz|hotel/.test(path)) return 'spaces';
   if (/instytuc|event|wydarzen/.test(path)) return 'events';
   if (/produktow|branding|graficzn|identyfikac|ecommerce|e-commerce/.test(path)) return 'product';

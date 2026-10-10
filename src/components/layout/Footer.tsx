@@ -192,7 +192,7 @@ export function Footer() {
               Wolisz krótki call? Umów 15 minut.
             </h3>
             <p className="dv-mono uppercase tracking-[0.14em] text-[11px] text-white/50">
-              Bez zobowiązań · pierwszy wolny termin online
+              Bez zobowiązań · termin potwierdzimy osobiście
             </p>
           </div>
           <Link
@@ -243,6 +243,7 @@ export function Footer() {
           </span>
         </div>
 
+        <div className="mb-6"><button type="button" onClick={() => window.dispatchEvent(new Event("fotz:cookie-settings"))} className="text-sm underline underline-offset-4 min-h-11">Ustawienia analityki i cookies</button></div>
         {/* Brand block + contact */}
         <div className="grid grid-cols-2 md:grid-cols-[1.3fr_1fr_1fr_1fr_1fr_1fr] gap-8 pb-12">
           <div className="col-span-2">

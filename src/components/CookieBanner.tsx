@@ -1,3 +1,5 @@
+import { consentEvent, consentVersion } from "@/lib/analytics.mjs";
+import { revokeAnalytics } from "@/lib/google-analytics";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Cookie, X } from "lucide-react";
@@ -7,22 +9,21 @@ export function CookieBanner() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const consent = localStorage.getItem("cookie-consent");
-    if (!consent) {
-      const timer = setTimeout(() => setIsVisible(true), 1500);
-      return () => clearTimeout(timer);
-    }
+    let saved = false;
+    try { saved = !!localStorage.getItem('cookie-consent') && localStorage.getItem('cookie-consent-version') === consentVersion; } catch { /* ask without storage */ }
+    const timer = saved ? undefined : setTimeout(() => setIsVisible(true), 1500);
+    const open = () => setIsVisible(true);
+    window.addEventListener('fotz:cookie-settings', open);
+    return () => { clearTimeout(timer); window.removeEventListener('fotz:cookie-settings', open); };
   }, []);
-
-  const handleAccept = () => {
-    localStorage.setItem("cookie-consent", "accepted");
+  const choose = (value: 'accepted' | 'rejected') => {
+    try { localStorage.setItem('cookie-consent', value); localStorage.setItem('cookie-consent-version', consentVersion); } catch { /* optional analytics stay disabled */ }
     setIsVisible(false);
+    if (value === 'rejected') revokeAnalytics();
+    window.dispatchEvent(new Event(consentEvent));
   };
-
-  const handleReject = () => {
-    localStorage.setItem("cookie-consent", "rejected");
-    setIsVisible(false);
-  };
+  const handleAccept = () => choose('accepted');
+  const handleReject = () => choose('rejected');
 
   return (
     <AnimatePresence>
@@ -52,8 +53,7 @@ export function CookieBanner() {
                   Szanujemy Twoją prywatność
                 </h3>
                 <p className="text-xs sm:text-sm text-muted-foreground mb-3 sm:mb-4 leading-relaxed">
-                  Używamy plików cookies, aby zapewnić najlepsze doświadczenia na naszej stronie. 
-                  Klikając "Akceptuję", zgadzasz się na ich użycie.
+                  Za Twoją zgodą uruchomimy Google Analytics, aby mierzyć wizyty i kontakt z ofertą. Formularz działa także bez zgody. Ustawienia zmienisz w stopce. <a href="/polityka-prywatnosci" className="underline">Więcej o prywatności</a>.
                 </p>
                 <div className="flex gap-2">
                   <Button onClick={handleAccept} size="sm" className="flex-1 text-xs sm:text-sm min-h-11 h-auto py-2">

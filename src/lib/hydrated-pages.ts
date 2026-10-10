@@ -2,6 +2,14 @@ import type { ComponentType } from "react";
 
 // Opt in only after the page has matching server/client data and initial state.
 export const hydratedPages: Record<string, () => Promise<{ default: ComponentType }>> = {
+  "/kontakt": () => import("@/pages/Kontakt"),
+  "/konsultacja": () => import("@/pages/Konsultacja"),
+  "/uslugi/strony-internetowe": () => import("@/pages/StronyInternetowe"),
+  "/seo/pozycjonowanie": () => import("@/pages/Pozycjonowanie"),
+  "/uslugi/produkcja-filmow": () => import("@/pages/ProdukcjaFilmowPoznan"),
+  "/uslugi/produkcja-video": () => import("@/pages/SpotyReklamowe"),
+  "/social-media/obsluga": () => import("@/pages/SocialMedia"),
+  "/agencja-social-media": () => import("@/pages/AgencjaSocialMedia"),
   "/": () => import("@/pages/Index"),
   "/seo/pozycjonowanie-katowice": () => import("@/pages/SEOPozycjonowanieKatowice"),
   "/seo/pozycjonowanie-krakow": () => import("@/pages/SEOPozycjonowanieKrakow"),

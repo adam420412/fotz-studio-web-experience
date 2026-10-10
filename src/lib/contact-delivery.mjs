@@ -27,7 +27,7 @@ export function createContactSubmitter({ invoke, storage, crypto, context, track
       identity.receipt = receipt;
       save();
       // Measurement is optional and must not turn an accepted lead into a retry.
-      if (ctx.analytics) { try { track(receipt.submission_id, body.form_name, ctx.path); } catch { /* receipt remains authoritative */ } }
+      if (ctx.analytics) { try { track(receipt.submission_id, body.form_name, ctx.path, payload.service_tag); } catch { /* receipt remains authoritative */ } }
       return receipt;
     })();
     pending.set(hash, request);

@@ -1,3 +1,4 @@
+import { enquiryHref } from "@/lib/enquiry.mjs";
 import { Link } from "react-router-dom";
 import { ArrowRight, CheckCircle2, Sparkles } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
@@ -179,7 +180,7 @@ export default function AgencjaSocialMedia() {
             <p className="text-white/80 max-w-xl mx-auto mb-8">
               Umów 15 minut rozmowy. Opowiedz o swojej firmie, obecnych działaniach i celu, który chcesz osiągnąć.
             </p>
-            <Link to="/konsultacja" className="dv-btn dv-btn-primary inline-flex">
+            <Link to={enquiryHref("social")} className="dv-btn dv-btn-primary inline-flex">
               Umów konsultację
               <ArrowRight className="w-4 h-4" />
             </Link>

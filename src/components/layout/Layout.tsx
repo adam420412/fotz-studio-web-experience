@@ -2,6 +2,7 @@ import { ReactNode, lazy, Suspense, useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
+import { ConversionTracking } from "../ConversionTracking";
 import { SelectedWork } from "../sections/SelectedWork";
 
 // Lazy load non-critical widgets - they're not needed for initial render
@@ -30,6 +31,7 @@ export function Layout({ children, workPlacement = "end" }: LayoutProps) {
     <div className="min-h-screen bg-background flex flex-col">
       <a href="#main-content" className="skip-link">Przejdź do treści</a>
       <Navbar />
+      <ConversionTracking />
       <main id="main-content" tabIndex={-1} className="flex-1 min-w-0">{children}{workPlacement === "end" && <SelectedWork />}</main>
       <Footer />
       {loadWidgets && showWidgets && (
