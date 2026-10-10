@@ -1,148 +1,47 @@
 import { SEOHead } from "@/components/seo/SEOHead";
-import { Layout } from "@/components/layout/Layout";
-import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import { ArrowRight, MapPin, TrendingUp, Search, BarChart2, CheckCircle, Star } from "lucide-react";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema, LocalBusinessSchema, OrganizationSchema} from "@/components/seo/StructuredData";
-import { ContactSection } from "@/components/sections/ContactSection";
+import { LocalSeoOffer, type LocalSeoOfferProps } from "@/components/LocalSeoOffer";
 
-const features = [
-  { icon: Search, title: "Pozycjonowanie lokalne Wrocław", desc: "Optymalizujemy stronę pod frazy lokalne: '[usługa] Wrocław', '[branża] Wrocław' i okolice. Dobieramy tematy do rzeczywistych usług oraz zapytań klientów." },
-  { icon: MapPin, title: "Google Maps i Profil Firmy w Google", desc: "Optymalizujemy profil Profil Firmy w Google, zbieramy opinie i dbamy o obecność w mapach. Zakres obejmuje dane firmy, ofertę i sposób pozyskiwania autentycznych opinii." },
-  { icon: TrendingUp, title: "Audyt SEO dla Wrocławia", desc: "Analizujemy konkurencję w Wrocławiu, identyfikujemy frazy z największym potencjałem i tworzymy plan działań dopasowany do oferty i możliwości firmy." },
-  { icon: BarChart2, title: "Raportowanie i monitoring", desc: "Miesięczne raporty z pozycji w Google dla Wrocławia i okolic, ruchu organicznego i konwersji. Wiesz dokładnie, jakie efekty osiągamy." },
-];
-
-const faqItems = [
-  { question: "Ile kosztuje pozycjonowanie w Wrocławiu?", answer: "Wycenę ustalamy po analizie witryny, rynku i zakresu prac. W ofercie rozpisujemy działania techniczne, treści, pomiar i koszty dodatkowe. Zestawienie ma pozwolić porównać ten sam zakres usług." },
-  { question: "Jak długo trwa pozycjonowanie w Wrocławiu?", answer: "Termin zależy od stanu witryny, konkurencji i zakresu zmian. Najpierw sprawdzamy indeksowanie i błędy techniczne, następnie rozwijamy treści. Ocenę opieramy na danych Search Console oraz zapytaniach klientów; nie gwarantujemy pozycji ani terminu wejścia do TOP 10." },
-  { question: "Czy pozycjonujecie tylko firmy z Wrocławia?", answer: "Nie — pracujemy zdalnie z firmami z całej Polski. Nasza siedziba jest w Poznaniu, ale z sukcesem pozycjonujemy firmy w Wrocławiu, Warszawie, Krakowie i innych miastach. Znajomość lokalnego rynku i fraz nie wymaga fizycznej obecności." },
-  { question: "Co wyróżnia rynek Wrocławia i Dolnego Śląska w kontekście SEO?", answer: "Wrocław to miasto o dynamicznie rosnącej scenie startupowej i jednym z najaktywniejszych rynków e-commerce w Polsce. Oznacza to specyficzne frazy kluczowe, lokalną konkurencję i inne zwyczaje wyszukiwania — uwzględniamy to przy budowie strategii." },
-];
-
-const SEOPozycjonowanieWroclaw = () => {
-  return (
-    <>
-      <SEOHead
-        title="Pozycjonowanie Wrocław — Agencja SEO dla Firm z Wrocławiaia"
-        description="Pozycjonowanie stron internetowych Wrocław — SEO lokalne i ogólnopolskie, audyt SEO, link building dla firm z Wrocławiaia. Fotz Studio."
-        canonical="https://www.fotz-studio.pl/seo/pozycjonowanie-wroclaw"
-        keywords="pozycjonowanie wrocław, agencja seo wrocław, seo wrocław, pozycjonowanie stron wrocław, seo dla firm wrocław, pozycjonowanie lokalne wrocław, audyt seo wrocław"
-      />
-      <ServiceSchema
-        name="Pozycjonowanie Wrocław"
-        description="Usługi SEO i pozycjonowania stron dla firm z Wrocławia. Zwiększamy widoczność w Google dla lokalnych fraz."
-        provider="Fotz Studio"
-        areaServed="Wrocław"
-      />
-      <BreadcrumbSchema items={[
-        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
-        { name: "SEO", url: "https://www.fotz-studio.pl/seo" },
-        { name: "Pozycjonowanie Wrocław", url: "https://www.fotz-studio.pl/seo/pozycjonowanie-wroclaw" },
-      ]}/>
-      <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
-
-      <OrganizationSchema />
-
-
-      <Layout>
-        <section className="relative min-h-[75vh] flex items-center justify-center overflow-hidden pt-28 sm:pt-32 md:pt-40 pb-16 md:pb-20">
-          <div className="absolute inset-0 bg-gradient-to-b from-primary/10 via-background to-background" />
-          <div className="container mx-auto px-4 relative z-10">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-center max-w-4xl mx-auto"
-            >
-              <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">
-                <MapPin className="inline h-4 w-4 mr-1" /> Pozycjonowanie Wrocław
-              </span>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6">
-                Pozycjonowanie <span className="text-gradient">Wrocław</span>: SEO dla Lokalnych Firm
-              </h1>
-              <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-                Zwiększamy widoczność firm z Wrocławiaia i Dolnego Śląska w Google. Wrocław to miasto o dynamicznie rosnącej scenie startupowej i jednym z najaktywniejszych rynków e-commerce w Polsce. Skuteczne pozycjonowanie lokalne to dziś konieczność, nie luksus.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button asChild size="lg" className="group">
-                  <Link to="/kontakt">
-                    Bezpłatna wycena SEO
-                    <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-                  </Link>
-                </Button>
-                <Button asChild size="lg" variant="outline">
-                  <Link to="/seo/audyt">Zakres audytu</Link>
-                </Button>
-              </div>
-            </motion.div>
-          </div>
-        </section>
-
-        <section className="py-20 bg-muted/30">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-heading font-bold text-center mb-12">
-              SEO dla Firm z Wrocławia
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-              {features.map((f) => (
-                <div key={f.title} className="bg-card border rounded-xl p-6 hover:border-primary/40 transition-colors">
-                  <f.icon className="h-8 w-8 text-primary mb-4" />
-                  <h3 className="font-heading font-semibold text-lg mb-2">{f.title}</h3>
-                  <p className="text-muted-foreground text-sm">{f.desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="py-20">
-          <div className="container mx-auto px-4 max-w-3xl">
-            <h2 className="text-3xl font-heading font-bold text-center mb-12">
-              Pytania o pozycjonowanie w Wrocławiu
-            </h2>
-            <Accordion type="single" collapsible className="space-y-4">
-              {faqItems.map((item, i) => (
-                <AccordionItem key={i} value={`item-${i}`} className="border rounded-xl px-6">
-                  <AccordionTrigger className="text-left font-heading font-semibold py-4">
-                    {item.question}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground pb-4">
-                    {item.answer}
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
-          </div>
-        </section>
-
-      {/* SEO Article Section */}
-      <section className="py-20 bg-card">
-        <div className="container mx-auto px-4">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
-            <h2 className="text-3xl font-heading font-bold mb-6">Pozycjonowanie Wrocław — agencja SEO dla firm z Wrocławiaia i Dolnego Śląska</h2>
-            <p className="text-muted-foreground mb-4">Pozycjonowanie stron internetowych Wrocław — Fotz Studio oferuje kompleksowe SEO dla firm z Wrocławiaia i Dolnego Śląska. Rynek wrocławski dynamicznie rośnie, a widoczność w Google dla fraz lokalnych jest kluczem do pozyskiwania nowych klientów. Agencja SEO Wrocław z doświadczeniem w wielu branżach.</p>
-            <p className="text-muted-foreground mb-6">Kompleksowe pozycjonowanie Wrocław: audyt SEO strony, optymalizacja techniczna, content SEO z frazami lokalnymi, link building z portali wrocławskich i regionalnych, pozycjonowanie Google Maps dla firm ze Wrocławia.</p>
-            <h2 className="text-3xl font-heading font-bold mb-6">SEO dla firm z Wrocławiaia — wyniki, które mierzysz</h2>
-            <p className="text-muted-foreground">Pozycjonowanie stron Wrocław przynosi wymierne efekty: wzrost ruchu organicznego, wyższe pozycje na frazy lokalne i branżowe, więcej leadów ze strony internetowej. Raportujemy wyniki transparentnie — każdy miesiąc dostajesz raport z pozycji, ruchu i wykonanych działań SEO. Skontaktuj się z Fotz Studio — agencją SEO we Wrocławiu.</p>
-          
-            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
-              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
-              <Link to="/seo/audyt" className="text-primary hover:underline font-medium text-sm">→ Audyt SEO</Link>
-              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
-              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-
-        <ContactSection />
-      </Layout>
-    </>
-  );
+const offer: LocalSeoOfferProps = {
+  path: "/seo/pozycjonowanie-wroclaw",
+  city: "Wrocław",
+  cityGenitive: "Wrocławia",
+  title: "Pozycjonowanie Wrocław — zakres i wycena SEO | FOTZ Studio",
+  description: "SEO dla firm z Wrocławia: audyt, poprawki witryny, treści i pomiar zapytań. Sprawdź, od czego zależy cena pozycjonowania i jak wygląda współpraca z FOTZ.",
+  lead: "Zaczynamy od sprawdzenia obecnej strony i usług, które chcesz rozwijać. Dla firmy z Wrocławia układamy plan pozycjonowania z konkretnymi zadaniami, wyceną i odpowiedzialnością za wdrożenie — od audytu po ocenę zapytań z Google.",
+  hero: { image: "klagem", caption: "Klagem — projekt strony z portfolio FOTZ. Czytelny układ oferty i wizualna prezentacja marki." },
+  scope: [
+    { title: "Audyt jako punkt wyjścia", text: "Sprawdzamy indeksowanie ważnych ofert, przekierowania, wersję mobilną i dane Search Console. Wyniki przekładamy na listę problemów z priorytetem, proponowanym rozwiązaniem i sposobem sprawdzenia poprawki.", href: "/seo/audyt", link: "Poznaj zakres audytu" },
+    { title: "Wybór usług do rozwoju", text: "Ustalamy, które zapytania pasują do oferty i obszaru obsługi. Porównujemy istniejące podstrony, aby rozwijać właściwą treść i nie tworzyć kilku adresów odpowiadających na to samo pytanie.", href: "/seo/pozycjonowanie", link: "Zobacz ofertę pozycjonowania" },
+    { title: "Poprawki i odbiór wdrożeń", text: "Porządkujemy tytuły, nagłówki, linkowanie i wskazane problemy techniczne. Przed rozpoczęciem ustalamy dostęp do CMS, udział programisty oraz to, kto sprawdza działanie strony po publikacji.", href: "/seo/techniczne", link: "Sprawdź techniczne SEO" },
+    { title: "Treść potrzebna do wyceny", text: "Opisujemy zakres usługi, etapy, dane wejściowe i czynniki wpływające na koszt. Wykorzystujemy rzeczywiste realizacje firmy oraz odpowiedzi zespołu na pytania zadawane przed zakupem.", href: "/content-marketing/strategia", link: "Zaplanuj treści oferty" },
+    { title: "Lokalny obszar działania", text: "Dla firmy obsługującej Wrocław ustalamy, czy klienci przychodzą do punktu, czy usługa odbywa się z dojazdem. Profil Firmy w Google uwzględniamy po sprawdzeniu kwalifikowalności i prawdziwych danych działalności.", href: "/uslugi/pozycjonowanie-lokalne", link: "Poznaj lokalne SEO" },
+    { title: "Pomiar kontaktów", text: "Dobieramy pomiar do formularza, telefonu i procesu sprzedaży. Ustalamy, które dane są dostępne i jak odróżnić kliknięcie kontaktu od przyjętego zapytania oraz dalszej rozmowy handlowej.", href: "/kontakt", link: "Omów cele pozycjonowania" },
+  ],
+  examplesTitle: "Naprawa strony czy regularny rozwój?",
+  examplesIntro: "Firmy z Wrocławia mogą zaczynać z różnego miejsca. Te przykładowe sytuacje pomagają ustalić zakres; nie opisują wyników konkretnych klientów.",
+  examples: [
+    { title: "Strona działa, ale ofertę trudno znaleźć", text: "Sprawdzamy, czy Google widzi właściwe adresy i czy opisy odpowiadają na pytania o usługę. Najpierw planujemy poprawki konkretnych podstron oraz ich połączenie z pozostałą częścią witryny.", measure: "widoczność wybranych ofert, kliknięcia i zapytania dotyczące tych usług." },
+    { title: "Planowana przebudowa witryny", text: "Przed zmianą zapisujemy ważne adresy i dostępne wyniki. Ustalamy, które treści zachować, jak przypisać przekierowania i co skontrolować po uruchomieniu nowej wersji.", measure: "dostępność docelowych stron, poprawność przekierowań oraz zmiany ruchu po migracji." },
+    { title: "Nowa specjalizacja w ofercie", text: "Rozwijamy stronę usługi wokół odbiorcy, problemu, przebiegu współpracy i materiałów potwierdzających kompetencje. Lokalny zasięg opisujemy zgodnie z rzeczywistą dostępnością firmy.", measure: "zapytania o nową usługę i ich zgodność z zakresem, który firma może obsłużyć." },
+  ],
+  planning: [
+    { title: "Cena wynika z potrzebnych prac", text: "Przed wyceną sprawdzamy wielkość witryny, stan techniczny, liczbę ofert i materiały. Jednorazowy audyt, wdrożenie poprawek oraz stały rozwój treści mogą być osobnymi etapami. Kosztów nie ustalamy wyłącznie na podstawie liczby fraz." },
+    { title: "Porównywalny zakres w ofercie", text: "Rozpisujemy zadania, materiały do przygotowania, udział programisty, pomiar i częstotliwość omówień. Wskazujemy również prace poza zakresem oraz koszty zewnętrzne wymagające uzgodnienia. Dzięki temu wiadomo, co obejmuje wycena." },
+    { title: "Odbiór prac i przegląd danych", text: "Po publikacji sprawdzamy działanie zmienionych stron. W ustalonym terminie zestawiamy wykonane zadania z danymi Search Console i dostępnymi informacjami o zapytaniach. Czas wykonania prac oraz czas reakcji wyszukiwarki traktujemy osobno." },
+  ],
+  faqs: [
+    { question: "Ile kosztuje pozycjonowanie strony we Wrocławiu?", answer: "Cena zależy od stanu witryny, liczby rozwijanych usług, potrzebnych wdrożeń i treści. Prześlij adres strony, cel i obszar obsługi. Przygotujemy zakres z podziałem na analizę, poprawki, materiały i pomiar, wraz z informacją o kosztach dodatkowych." },
+    { question: "Co powinien zawierać cennik lub oferta SEO?", answer: "Przede wszystkim opis zadań: co jest analizowane, kto wdraża zmiany, jakie treści powstaną i jak będą odbierane. Warto porównać także harmonogram, raportowanie, koszty dodatkowe oraz zasady współpracy. Sama miesięczna kwota lub liczba fraz nie pokazuje, czy oferty obejmują tę samą pracę." },
+    { question: "Czy FOTZ ma biuro we Wrocławiu?", answer: "Nasz zespół pracuje w Poznaniu. Firmy z Wrocławia obsługujemy zdalnie: ustalamy brief, dostęp do potrzebnych danych, obieg materiałów i sposób akceptacji zmian. Zakres oraz harmonogram prac potwierdzamy przed rozpoczęciem." },
+    { question: "Czy można zacząć od samego audytu?", answer: "Tak. Audyt może być osobnym etapem z listą priorytetów i zaleceń. Ustalamy, czy kolejnym krokiem będzie wdrożenie przez FOTZ, czy przekazanie zadań Twojemu programiście. Sprawdzenie poprawek po publikacji określamy w zakresie współpracy." },
+    { question: "Czy przebudowa strony może wpłynąć na SEO?", answer: "Zmiana adresów, treści lub sposobu działania witryny może zmienić jej widoczność. Dlatego przed przebudową zapisujemy ważne strony, planujemy przekierowania i zachowanie potrzebnych treści. Po wdrożeniu sprawdzamy nowe adresy oraz dane Search Console." },
+    { question: "Kiedy można ocenić efekty i czy gwarantujecie pozycje?", answer: "Termin przeglądu ustalamy po diagnozie strony i zaplanowaniu prac. Wpływ zmian zależy także od konkurencji i ponownego przetworzenia witryny przez Google. Nie gwarantujemy TOP 10 ani liczby klientów; osobno raportujemy wykonane zadania, widoczność, kliknięcia i dostępne dane o zapytaniach." },
+  ],
 };
 
-export default SEOPozycjonowanieWroclaw;
+export default function SEOPozycjonowanieWroclaw() {
+  return <>
+    <SEOHead title={offer.title} description={offer.description} canonical={`https://www.fotz-studio.pl${offer.path}`} />
+    <LocalSeoOffer {...offer} />
+  </>;
+}
