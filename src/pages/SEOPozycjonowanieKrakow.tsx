@@ -1,148 +1,47 @@
 import { SEOHead } from "@/components/seo/SEOHead";
-import { Layout } from "@/components/layout/Layout";
-import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import { ArrowRight, MapPin, TrendingUp, Search, BarChart2, CheckCircle, Star } from "lucide-react";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema, LocalBusinessSchema, OrganizationSchema} from "@/components/seo/StructuredData";
-import { ContactSection } from "@/components/sections/ContactSection";
+import { LocalSeoOffer, type LocalSeoOfferProps } from "@/components/LocalSeoOffer";
 
-const features = [
-  { icon: Search, title: "Pozycjonowanie lokalne Kraków", desc: "Optymalizujemy stronę pod frazy lokalne: '[usługa] Kraków', '[branża] Kraków' i okolice. Dobieramy tematy do rzeczywistych usług oraz zapytań klientów." },
-  { icon: MapPin, title: "Google Maps i Profil Firmy w Google", desc: "Optymalizujemy profil Profil Firmy w Google, zbieramy opinie i dbamy o obecność w mapach. Zakres obejmuje dane firmy, ofertę i sposób pozyskiwania autentycznych opinii." },
-  { icon: TrendingUp, title: "Audyt SEO dla Krakowa", desc: "Analizujemy konkurencję w Krakowie, identyfikujemy frazy z największym potencjałem i tworzymy plan działań dopasowany do oferty i możliwości firmy." },
-  { icon: BarChart2, title: "Raportowanie i monitoring", desc: "Miesięczne raporty z pozycji w Google dla Krakowa i okolic, ruchu organicznego i konwersji. Wiesz dokładnie, jakie efekty osiągamy." },
-];
-
-const faqItems = [
-  { question: "Ile kosztuje pozycjonowanie w Krakowie?", answer: "Wycenę ustalamy po analizie witryny, rynku i zakresu prac. W ofercie rozpisujemy działania techniczne, treści, pomiar i koszty dodatkowe. Zestawienie ma pozwolić porównać ten sam zakres usług." },
-  { question: "Jak długo trwa pozycjonowanie w Krakowie?", answer: "Termin zależy od stanu witryny, konkurencji i zakresu zmian. Najpierw sprawdzamy indeksowanie i błędy techniczne, następnie rozwijamy treści. Ocenę opieramy na danych Search Console oraz zapytaniach klientów; nie gwarantujemy pozycji ani terminu wejścia do TOP 10." },
-  { question: "Czy pozycjonujecie tylko firmy z Krakowa?", answer: "Nie — pracujemy zdalnie z firmami z całej Polski. Nasza siedziba jest w Poznaniu, ale z sukcesem pozycjonujemy firmy w Krakowie, Warszawie, Krakowie i innych miastach. Znajomość lokalnego rynku i fraz nie wymaga fizycznej obecności." },
-  { question: "Co wyróżnia rynek Krakowa i Małopolski w kontekście SEO?", answer: "Kraków z 800 tys. mieszkańców to drugie największe miasto Polski i hub nowych technologii oraz turystyki. Oznacza to specyficzne frazy kluczowe, lokalną konkurencję i inne zwyczaje wyszukiwania — uwzględniamy to przy budowie strategii." },
-];
-
-const SEOPozycjonowanieKrakow = () => {
-  return (
-    <>
-      <SEOHead
-        title="Pozycjonowanie Kraków — Agencja SEO dla Firm z Krakowa"
-        description="Pozycjonowanie stron internetowych Kraków — SEO lokalne i ogólnopolskie, audyt SEO, link building dla firm z Krakowa. Fotz Studio."
-        canonical="https://www.fotz-studio.pl/seo/pozycjonowanie-krakow"
-        keywords="pozycjonowanie kraków, agencja seo kraków, seo kraków, pozycjonowanie małopolska, pozycjonowanie stron kraków, seo dla firm kraków, audyt seo kraków, pozycjonowanie lokalne kraków"
-      />
-      <ServiceSchema
-        name="Pozycjonowanie Kraków"
-        description="Usługi SEO i pozycjonowania stron dla firm z Krakowa. Zwiększamy widoczność w Google dla lokalnych fraz."
-        provider="Fotz Studio"
-        areaServed="Kraków"
-      />
-      <BreadcrumbSchema items={[
-        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
-        { name: "SEO", url: "https://www.fotz-studio.pl/seo" },
-        { name: "Pozycjonowanie Kraków", url: "https://www.fotz-studio.pl/seo/pozycjonowanie-krakow" },
-      ]}/>
-      <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
-
-      <OrganizationSchema />
-
-
-      <Layout>
-        <section className="relative min-h-[75vh] flex items-center justify-center overflow-hidden pt-28 sm:pt-32 md:pt-40 pb-16 md:pb-20">
-          <div className="absolute inset-0 bg-gradient-to-b from-primary/10 via-background to-background" />
-          <div className="container mx-auto px-4 relative z-10">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-center max-w-4xl mx-auto"
-            >
-              <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">
-                <MapPin className="inline h-4 w-4 mr-1" /> Pozycjonowanie Kraków
-              </span>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6">
-                Pozycjonowanie <span className="text-gradient">Kraków</span>: SEO dla Lokalnych Firm
-              </h1>
-              <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-                Zwiększamy widoczność firm z Krakowa i Małopolski w Google. Agencja SEO Kraków — pozycjonowanie stron i audyt SEO dla firm z Krakowa i Małopolski. Kraków z 800 tys. mieszkańców to drugie największe miasto Polski i hub nowych technologii oraz turystyki. Usługi SEO Kraków — pozycjonowanie lokalne, GMB i link building.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button asChild size="lg" className="group">
-                  <Link to="/kontakt">
-                    Bezpłatna wycena SEO
-                    <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-                  </Link>
-                </Button>
-                <Button asChild size="lg" variant="outline">
-                  <Link to="/seo/audyt">Zakres audytu</Link>
-                </Button>
-              </div>
-            </motion.div>
-          </div>
-        </section>
-
-        <section className="py-20 bg-muted/30">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-heading font-bold text-center mb-12">
-              SEO dla Firm z Krakowa
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-              {features.map((f) => (
-                <div key={f.title} className="bg-card border rounded-xl p-6 hover:border-primary/40 transition-colors">
-                  <f.icon className="h-8 w-8 text-primary mb-4" />
-                  <h3 className="font-heading font-semibold text-lg mb-2">{f.title}</h3>
-                  <p className="text-muted-foreground text-sm">{f.desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="py-20">
-          <div className="container mx-auto px-4 max-w-3xl">
-            <h2 className="text-3xl font-heading font-bold text-center mb-12">
-              Pytania o pozycjonowanie w Krakowie
-            </h2>
-            <Accordion type="single" collapsible className="space-y-4">
-              {faqItems.map((item, i) => (
-                <AccordionItem key={i} value={`item-${i}`} className="border rounded-xl px-6">
-                  <AccordionTrigger className="text-left font-heading font-semibold py-4">
-                    {item.question}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground pb-4">
-                    {item.answer}
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
-          </div>
-        </section>
-
-      {/* SEO Article Section */}
-      <section className="py-20 bg-card">
-        <div className="container mx-auto px-4">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
-            <h2 className="text-3xl font-heading font-bold mb-6">Pozycjonowanie Kraków — agencja SEO dla firm z Krakowa i Małopolski</h2>
-            <p className="text-muted-foreground mb-4">Pozycjonowanie stron internetowych Kraków to usługa dedykowana firmom z Krakowa, Małopolski i okolic. Kraków to jeden z najważniejszych rynków biznesowych w Polsce — silna konkurencja wymaga skutecznej strategii SEO, by wybić się ponad inne firmy w wynikach Google.</p>
-            <p className="text-muted-foreground mb-6">Agencja SEO Kraków — Fotz Studio oferuje: audyt SEO, optymalizację techniczną strony, content marketing SEO z lokalnymi frazami, link building z portali krakowskich i ogólnopolskich, pozycjonowanie Google Maps dla firm z Krakowa.</p>
-            <h2 className="text-3xl font-heading font-bold mb-6">SEO dla firm z Krakowa — jak wygląda skuteczne pozycjonowanie?</h2>
-            <p className="text-muted-foreground">Pozycjonowanie Kraków to długoterminowa inwestycja — pierwsze efekty widać po 3-6 miesiącach, a po roku SEO staje się głównym kanałem pozyskiwania klientów dla wielu firm. Przejrzyste raportowanie, regularne optymalizacje i partnerskie podejście — to nasza agencja SEO w Krakowie. Umów bezpłatną konsultację.</p>
-          
-            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
-              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
-              <Link to="/seo/audyt" className="text-primary hover:underline font-medium text-sm">→ Audyt SEO</Link>
-              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
-              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-
-        <ContactSection />
-      </Layout>
-    </>
-  );
+const offer: LocalSeoOfferProps = {
+  path: "/seo/pozycjonowanie-krakow",
+  city: "Kraków",
+  cityGenitive: "Krakowa",
+  title: "Pozycjonowanie Kraków — audyt i obsługa SEO | FOTZ Studio",
+  description: "Pozycjonowanie stron dla firm z Krakowa: audyt, oferta, lokalne SEO i pomiar zapytań. Poznaj zakres, zasady wyceny oraz projekty FOTZ Studio.",
+  lead: "Łączymy techniczne SEO z czytelną ofertą i drogą do kontaktu. Dla firmy z Krakowa planujemy działania wokół usług, o które pytają klienci — od poprawy istniejących podstron po ocenę zapytań i rezerwacji.",
+  hero: { image: "bar", caption: "Gierky Activity Bar — fotografia wnętrza z portfolio FOTZ. Autentyczne zdjęcia pokazują charakter miejsca jeszcze przed wizytą." },
+  scope: [
+    { title: "Kontrola istniejącej witryny", text: "Analizujemy widoczność adresów w Search Console, przekierowania i możliwość odczytania treści. Sprawdzamy też, czy mobilny użytkownik może poznać ofertę i przejść do kontaktu.", href: "/seo/audyt", link: "Sprawdź, co obejmuje audyt" },
+    { title: "Oferta zgodna z pytaniem", text: "Przypisujemy zapytania do usług, cennika, informacji o miejscu i poradników. Wybieramy stronę, która najlepiej odpowiada potrzebie odbiorcy, zamiast powielać podobne podstrony.", href: "/seo/pozycjonowanie", link: "Zobacz usługę pozycjonowania" },
+    { title: "Opisy, zdjęcia i dowody pracy", text: "Pomagamy opisać przebieg usługi, warunki rezerwacji i pytania przed zakupem. Uzupełniamy treści rzeczywistymi zdjęciami oraz realizacjami, z podpisami i plikami dopasowanymi do urządzenia.", href: "/content-marketing/strategia", link: "Przejdź do strategii treści" },
+    { title: "Widoczność lokalnego punktu", text: "Dla kwalifikującej się firmy sprawdzamy Profil Firmy w Google: kategorię, adres, kontakt i godziny. Uzgadniamy aktualizacje ze stroną, aby klient otrzymał spójne informacje.", href: "/uslugi/pozycjonowanie-lokalne", link: "Zobacz lokalne SEO" },
+    { title: "Poprawki techniczne", text: "Porządkujemy strukturę strony, linkowanie, metadane i wskazane problemy z wydajnością. Przy zmianie witryny planujemy przekierowania oraz sprawdzenie ważnych adresów po publikacji.", href: "/seo/techniczne", link: "Poznaj prace techniczne" },
+    { title: "Kontakt i rezerwacja", text: "Ustalamy, które działania można mierzyć na stronie i w zewnętrznym systemie rezerwacji. Odróżniamy kliknięcie przycisku od przyjętego zapytania, potwierdzonego terminu lub sprzedaży.", href: "/kontakt", link: "Omów ścieżkę klienta" },
+  ],
+  examplesTitle: "Od wyszukania usługi do zapytania.",
+  examplesIntro: "Inaczej układamy stronę lokalnego punktu, inaczej ofertę na rezerwacje grupowe czy sprzedaż poza Krakowem. To przykładowe scenariusze do rozmowy o zakresie, a nie deklaracje wyników klientów.",
+  examples: [
+    { title: "Usługa na umówiony termin", text: "Pokazujemy, dla kogo jest usługa, co obejmuje, gdzie się odbywa i jak ustalić termin. Na telefonie sprawdzamy drogę od opisu do formularza lub systemu rezerwacji oraz dostępność informacji o cenie.", measure: "przyjęte zapytania lub potwierdzone rezerwacje, jeśli system udostępnia takie dane." },
+    { title: "Miejsce dla grup i wydarzeń", text: "Porządkujemy ofertę dla organizatora: przeznaczenie przestrzeni, dostępne warianty, zdjęcia i informacje potrzebne do wyceny. Zapytania o zwykłą wizytę i wydarzenie mogą wymagać różnych stron oferty.", measure: "zapytania z terminem, liczbą uczestników i rodzajem wydarzenia." },
+    { title: "Firma z ofertą poza Krakowem", text: "Jeśli miejsce siedziby nie ogranicza sprzedaży, rozwijamy opisy produktów, specjalizacji i zastosowań. Lokalne zapytania pozostają częścią planu, ale nie zastępują potrzeb odbiorców z innych regionów.", measure: "jakość zapytań dla wybranych usług oraz ich udział w rozmowach handlowych." },
+  ],
+  planning: [
+    { title: "Ustalenie priorytetowej usługi", text: "Zaczynamy od oferty, którą chcesz rozwijać: odbiorcy, obszaru działania, dostępnych terminów i sposobu obsługi zapytań. Przeglądamy istniejące strony oraz dane, aby wybrać najważniejsze poprawki i uniknąć dublowania treści." },
+    { title: "Zakres i cena przed startem", text: "Wycenę dzielimy na analizę, wdrożenia, treści i pomiar. Liczba ofert, potrzebne zdjęcia, wersje językowe czy połączenie z rezerwacjami mogą zmienić koszt. Przed rozpoczęciem wskazujemy elementy w cenie, koszty dodatkowe oraz sposób akceptacji materiałów." },
+    { title: "Ocena efektów na danych", text: "Raport łączy listę zmian z widocznością i kliknięciami w Search Console oraz dostępnymi danymi o kontaktach. Przy ofercie sezonowej porównujemy odpowiednie okresy. Gdy rezerwacja kończy się poza witryną, ustalamy dostępny pomiar i jego ograniczenia." },
+  ],
+  faqs: [
+    { question: "Ile kosztuje pozycjonowanie w Krakowie?", answer: "Wycenę przygotowujemy po poznaniu strony, oferty i celu. Zakres może obejmować jednorazowy audyt, naprawę techniczną lub bieżący rozwój treści i pomiaru. W propozycji rozpisujemy zadania, terminy odbioru, odpowiedzialność za wdrożenie oraz ewentualne koszty dodatkowe." },
+    { question: "Czy macie lokalne biuro w Krakowie?", answer: "FOTZ Studio ma siedzibę w Poznaniu. Dla firm z Krakowa prowadzimy współpracę zdalną, z ustalonym kontaktem, obiegiem materiałów i akceptacją zmian. Nie przedstawiamy tej oferty jako biura w Krakowie." },
+    { question: "Czym SEO strony różni się od widoczności w Mapach Google?", answer: "SEO strony dotyczy treści, struktury i technicznej dostępności witryny. Wyniki w Mapach wiążą się z Profilem Firmy w Google, trafnością, odległością i rozpoznawalnością. Te obszary mogą się uzupełniać, ale nie mierzymy ich jako jednego wyniku ani nie obiecujemy jednakowej pozycji w każdej części miasta." },
+    { question: "Czy muszę tworzyć nową stronę, aby zacząć SEO?", answer: "Niekoniecznie. Najpierw sprawdzamy istniejącą stronę i możliwości jej edycji. Często zakres dotyczy poprawy oferty, nawigacji lub błędów technicznych. Przebudowę rozważamy wtedy, gdy obecne ograniczenia uniemożliwiają potrzebne zmiany; przedstawiamy wtedy konkretny powód i zakres." },
+    { question: "Jak mierzycie rezerwacje z ruchu organicznego?", answer: "Zależy to od używanego systemu i dostępnych integracji. Wysłanie formularza, kliknięcie telefonu, przejście do rezerwacji i potwierdzenie terminu to różne działania. Przed wdrożeniem określamy, które możemy wiarygodnie rejestrować. Sama wizyta z Google nie potwierdza pozyskania klienta." },
+    { question: "Ile czasu potrzeba na efekty pozycjonowania?", answer: "Termin zależy od stanu witryny, konkurencji, zakresu prac i przetworzenia zmian przez Google. Ustalamy harmonogram wdrożeń i termin przeglądu danych, ale nie gwarantujemy TOP 10 ani liczby rezerwacji. Pozycje, kliknięcia i zapytania obserwujemy osobno, z uwzględnieniem sezonowości." },
+  ],
 };
 
-export default SEOPozycjonowanieKrakow;
+export default function SEOPozycjonowanieKrakow() {
+  return <>
+    <SEOHead title={offer.title} description={offer.description} canonical={`https://www.fotz-studio.pl${offer.path}`} />
+    <LocalSeoOffer {...offer} />
+  </>;
+}
