@@ -2,8 +2,8 @@ import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { serviceForPath, readEnquiryContext } from '@/lib/enquiry.mjs';
 import { trackConversion } from '@/lib/conversions';
-import { consentEvent, measurementId, createPageReporter } from '@/lib/analytics.mjs';
-import { analyticsAllowed, initializeAnalytics } from '@/lib/google-analytics';
+import { consentEvent, createPageReporter } from '@/lib/analytics.mjs';
+import { analyticsAllowed, initializeAnalytics, sendAnalyticsEvent } from '@/lib/google-analytics';
 
 let reportPage: ReturnType<typeof createPageReporter>;
 export function ConversionTracking() {
@@ -14,7 +14,7 @@ export function ConversionTracking() {
     let offered = false;
     const measure = () => {
       if (!analyticsAllowed()) return;
-      reportPage ||= createPageReporter({ ready: initializeAnalytics, send: (name, params) => { window.gtag?.('config', measurementId, { ...params, send_page_view: false }); window.gtag?.('event', name, params); }, referrer: document.referrer });
+      reportPage ||= createPageReporter({ ready: initializeAnalytics, send: sendAnalyticsEvent, referrer: document.referrer });
       // Helmet commits page titles after render. Route cleanup cancels obsolete views.
       reportPage(window.location.href, document.title);
       if (!offered && service !== 'other') { trackConversion('offer_view', service); offered = true; }

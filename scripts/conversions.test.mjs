@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readEnquiryContext, enquiryHref, serviceForPath } from '../src/lib/enquiry.mjs';
 import { createConversionTracker } from '../src/lib/conversion-events.mjs';
-import { cleanAnalyticsUrl, createPageReporter, hasAnalyticsConsent } from '../src/lib/analytics.mjs';
+import { cleanAnalyticsUrl, createPageEventSender, createPageReporter, hasAnalyticsConsent } from '../src/lib/analytics.mjs';
 
 test('enquiry keeps a valid selected scope and rejects arbitrary query values', () => {
  assert.equal(enquiryHref('social','materials'), '/kontakt?usluga=social&wariant=materials#formularz');
@@ -37,4 +37,19 @@ test('SPA page views wait for consent, deduplicate mounts and strip query/hash f
  assert.equal(events.length,2);assert.equal(events[0][1].page_referrer,'https://fotz.pl/oferta');assert.equal(events[1][1].page_referrer,'https://www.fotz-studio.pl/kontakt');
  assert.doesNotMatch(JSON.stringify(events),/private|email=|usluga=|#form/);
  assert.equal(cleanAnalyticsUrl('javascript:alert(1)'), '');
+});
+test('conversion events carry the latest reported SPA page and referrer explicitly', () => {
+ const events=[];
+ const send=createPageEventSender({send:(...args)=>events.push(args),initialContext:{page_location:'https://www.fotz-studio.pl/kontakt?email=private',page_referrer:'https://fotz.pl/?private=1',page_title:'Kontakt'}});
+ send('form_start',{service:'other'});
+ send('page_view',{page_location:'https://www.fotz-studio.pl/uslugi/strony-internetowe#zakres',page_referrer:'https://www.fotz-studio.pl/kontakt?email=private',page_title:'WWW'});
+ send('offer_view',{service:'web'});
+ send('generate_lead',{service:'web'});
+ assert.equal(events[0][1].page_location,'https://www.fotz-studio.pl/kontakt');
+ for (const [,params] of events.slice(2)) {
+  assert.equal(params.page_location,'https://www.fotz-studio.pl/uslugi/strony-internetowe');
+  assert.equal(params.page_referrer,'https://www.fotz-studio.pl/kontakt');
+  assert.equal(params.page_title,'WWW'); assert.equal(params.service,'web');
+ }
+ assert.doesNotMatch(JSON.stringify(events),/private|email=|#zakres/);
 });

@@ -1,7 +1,8 @@
-import { cleanAnalyticsUrl, hasAnalyticsConsent, measurementId } from './analytics.mjs';
+import { cleanAnalyticsUrl, createPageEventSender, hasAnalyticsConsent, measurementId } from './analytics.mjs';
 
 declare global { interface Window { dataLayer?: unknown[]; } }
 let initialized = false;
+let sendEvent: ReturnType<typeof createPageEventSender>;
 export function analyticsAllowed() {
   try { return hasAnalyticsConsent(window.localStorage); } catch { return false; }
 }
@@ -16,10 +17,18 @@ export function initializeAnalytics() {
   window.gtag('consent', 'default', { analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
   window.gtag('consent', 'update', { analytics_storage: 'granted' });
   window.gtag('js', new Date());
+  const initialContext = {
+    page_location: cleanAnalyticsUrl(window.location.href),
+    page_referrer: cleanAnalyticsUrl(document.referrer), page_title: document.title,
+  };
+  window.gtag('set', initialContext);
   window.gtag('config', measurementId, {
     send_page_view: false, allow_google_signals: false, allow_ad_personalization_signals: false,
-    page_location: cleanAnalyticsUrl(window.location.href), page_referrer: cleanAnalyticsUrl(document.referrer),
   });
+  sendEvent = createPageEventSender({ initialContext, send: (name, params) => {
+    if (name === 'page_view') window.gtag?.('set', params);
+    window.gtag?.('event', name, params);
+  } });
   const script = document.createElement('script');
   script.async = true;
   script.src = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`;
@@ -27,6 +36,9 @@ export function initializeAnalytics() {
   document.head.appendChild(script);
   initialized = true;
   return true;
+}
+export function sendAnalyticsEvent(name: string, params: Record<string, unknown>) {
+  if (initializeAnalytics()) sendEvent(name, params);
 }
 export function revokeAnalytics() {
   if (!initialized) return;
