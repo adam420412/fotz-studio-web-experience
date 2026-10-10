@@ -1,4 +1,5 @@
 import { Layout } from "@/components/layout/Layout";
+import { ServicePaths } from "@/components/sections/ServicePaths";
 import { HeroV3 } from "@/components/sections/HeroV3";
 import { ClientMarqueeV3 } from "@/components/sections/ClientMarqueeV3";
 import { ProcessV3 } from "@/components/sections/ProcessV3";
@@ -30,6 +31,7 @@ const Index = () => {
       <OrganizationSchema />
       <Layout workPlacement="manual">
         <HeroV3 />
+        <ServicePaths />
         <ClientMarqueeV3 />
         <FeaturedFilms />
         <Services />

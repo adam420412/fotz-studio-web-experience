@@ -1,5 +1,8 @@
 /** Contact requests use a single server receipt, retry identity and CRM path. */
 import { createContactSubmitter } from "@/lib/contact-delivery.mjs";
+import { hasAnalyticsConsent } from "@/lib/analytics.mjs";
+import { trackConversion } from "@/lib/conversions";
+import { serviceForPath } from "@/lib/enquiry.mjs";
 import { getUTMs } from "@/lib/utm";
 import { sendLeadToCRM } from "@/hooks/useCRMWebhook";
 export interface Web3FormsPayload { subject?: string; from_name?: string; [key:string]:unknown }
@@ -13,7 +16,7 @@ export async function submitWeb3Form(payload:Web3FormsPayload):Promise<Web3Forms
    storage, crypto:window.crypto,
    context:() => {
     let analytics=false;
-    try { analytics=window.localStorage.getItem('cookie-consent')==='accepted'; } catch { /* no consent */ }
+    try { analytics=hasAnalyticsConsent(window.localStorage); } catch { /* no consent */ }
     return {path:window.location.pathname,url:window.location.origin+window.location.pathname,analytics,attribution:getUTMs()};
    },
    invoke:async body => {
@@ -21,7 +24,7 @@ export async function submitWeb3Form(payload:Web3FormsPayload):Promise<Web3Forms
     return supabase.functions.invoke('send-contact',{body,signal:AbortSignal.timeout(35000)});
    },
    legacyCRM:body => sendLeadToCRM({name:String(body.name || body.from_name || 'Zapytanie ze strony'),email:String(body.email || ''),phone:typeof body.phone==='string'?body.phone:undefined,company:typeof body.company==='string'?body.company:undefined,source:'fotz-studio.pl',notes:[body.subject,body.message].filter(Boolean).join('\n')}),
-   track:(id,form,path) => { if (typeof window.gtag === 'function') window.gtag('event','generate_lead',{transaction_id:id,form_name:form,page_path:path}); },
+   track:(_id, _form, path, service) => trackConversion('lead_received', service || serviceForPath(path)),
   });
  }
  const result=await submit(payload);

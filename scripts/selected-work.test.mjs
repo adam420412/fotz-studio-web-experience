@@ -12,7 +12,7 @@ test('portfolio selection follows page intent without claiming local project loc
     ['/uslugi/branding', 'product'], ['/fotograf-poznan', 'photo'],
     ['/uslugi/produkcja-video/', 'production'], ['/blog/instagram-dla-firmy', 'social'],
   ]) assert.equal(getWorkCollection(route), expected, route);
-  for (const route of ['/konsultacja', '/podziekowanie', '/polityka-prywatnosci', '/akademia/auth', '/realizacje/enea-stadion', '/blog/api-gateway-co-to-jest-kong-aws-traefik-kubernetes-ingress', '/nie-istnieje']) assert.equal(getWorkCollection(route), null, route);
+  for (const route of ['/kontakt', '/konsultacja', '/podziekowanie', '/polityka-prywatnosci', '/akademia/auth', '/realizacje/enea-stadion', '/blog/api-gateway-co-to-jest-kong-aws-traefik-kubernetes-ingress', '/nie-istnieje']) assert.equal(getWorkCollection(route), null, route);
 });
 
 test('curated photos have real source files, valid destinations and bounded responsive files', async () => {

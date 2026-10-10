@@ -27,14 +27,14 @@ export default function PolitykaPrywatnosci() {
               
               <div className="prose prose-invert prose-lg max-w-none space-y-8">
                 <p className="text-muted-foreground text-lg">
-                  Ostatnia aktualizacja: 16 grudnia 2024
+                  Ostatnia aktualizacja: 10 października 2026
                 </p>
 
                 <section className="space-y-4">
                   <h2 className="text-2xl font-heading font-semibold text-foreground">1. Administrator Danych</h2>
                   <p className="text-muted-foreground">
                     Administratorem Twoich danych osobowych jest Fotz Studio z siedzibą w Poznaniu, 
-                    Plac Wolności 16, 61-738 Poznań, NIP: 7851806089.
+                    Plac Wolności 16, 61-739 Poznań, NIP: 7851806089.
                   </p>
                   <p className="text-muted-foreground">
                     Kontakt z administratorem: <a href="mailto:adam@fotz.pl" className="text-primary hover:underline">adam@fotz.pl</a>, 
@@ -113,17 +113,18 @@ export default function PolitykaPrywatnosci() {
                   <h2 className="text-2xl font-heading font-semibold text-foreground">8. Pliki Cookies</h2>
                   <p className="text-muted-foreground">
                     Nasza strona wykorzystuje pliki cookies (ciasteczka) w celu zapewnienia 
-                    prawidłowego działania strony, analizy ruchu oraz personalizacji treści.
+                    prawidłowego działania strony i, po wyrażeniu zgody, analizy ruchu w Google Analytics 4.
                   </p>
+                  <p className="text-muted-foreground">Google Analytics 4 (Google) mierzy odwiedzane podstrony oraz etapy kontaktu: kliknięcie telefonu lub e-maila, rozpoczęcie formularza i potwierdzone przyjęcie zgłoszenia. Do tych zdarzeń przekazujemy kategorię usługi, bez imienia, e-maila, telefonu i treści wiadomości. Adresy stron w nowym pomiarze GA4 nie zawierają parametrów zapytania. Odmowa lub cofnięcie zgody nie blokuje kontaktu. Dodatkowe informacje: <a href="https://policies.google.com/privacy" className="underline">polityka prywatności Google</a>. Strona korzysta również z bezciasteczkowych statystyk Ahrefs Analytics; własne zdarzenia kontaktu wysyłamy dopiero po zgodzie.</p>
                   <p className="text-muted-foreground">Rodzaje wykorzystywanych cookies:</p>
                   <ul className="list-disc list-inside text-muted-foreground space-y-2">
                     <li><strong>Niezbędne</strong> – konieczne do funkcjonowania strony</li>
                     <li><strong>Analityczne</strong> – pomagają zrozumieć, jak użytkownicy korzystają ze strony</li>
-                    <li><strong>Marketingowe</strong> – służą do wyświetlania spersonalizowanych reklam</li>
+                    <li>Nowy pomiar GA4 nie włącza personalizacji reklam ani Google Signals.</li>
                   </ul>
                   <p className="text-muted-foreground">
                     Możesz zarządzać ustawieniami cookies w swojej przeglądarce lub poprzez 
-                    baner cookies na naszej stronie.
+                    baner cookies na naszej stronie i przycisk „Ustawienia analityki i cookies” w stopce.
                   </p>
                 </section>
 
@@ -152,7 +153,7 @@ export default function PolitykaPrywatnosci() {
                   <p className="text-muted-foreground">
                     E-mail: <a href="mailto:adam@fotz.pl" className="text-primary hover:underline">adam@fotz.pl</a><br />
                     Telefon: <a href="tel:+48790814814" className="text-primary hover:underline">+48 790 814 814</a><br />
-                    Adres: Plac Wolności 16, 61-738 Poznań
+                    Adres: Plac Wolności 16, 61-739 Poznań
                   </p>
                 </section>
               </div>
