@@ -1,148 +1,47 @@
 import { SEOHead } from "@/components/seo/SEOHead";
-import { Layout } from "@/components/layout/Layout";
-import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import { ArrowRight, MapPin, TrendingUp, Search, BarChart2, CheckCircle, Star } from "lucide-react";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema, LocalBusinessSchema, OrganizationSchema} from "@/components/seo/StructuredData";
-import { ContactSection } from "@/components/sections/ContactSection";
+import { LocalSeoOffer, type LocalSeoOfferProps } from "@/components/LocalSeoOffer";
 
-const features = [
-  { icon: Search, title: "Pozycjonowanie lokalne Gdańsk", desc: "Optymalizujemy stronę pod frazy lokalne: '[usługa] Gdańsk', '[branża] Gdańsk' i okolice. Dobieramy tematy do rzeczywistych usług oraz zapytań klientów." },
-  { icon: MapPin, title: "Google Maps i Profil Firmy w Google", desc: "Optymalizujemy profil Profil Firmy w Google, zbieramy opinie i dbamy o obecność w mapach. Zakres obejmuje dane firmy, ofertę i sposób pozyskiwania autentycznych opinii." },
-  { icon: TrendingUp, title: "Audyt SEO dla Gdańska", desc: "Analizujemy konkurencję w Gdańsku, identyfikujemy frazy z największym potencjałem i tworzymy plan działań dopasowany do oferty i możliwości firmy." },
-  { icon: BarChart2, title: "Raportowanie i monitoring", desc: "Miesięczne raporty z pozycji w Google dla Gdańska i okolic, ruchu organicznego i konwersji. Wiesz dokładnie, jakie efekty osiągamy." },
-];
-
-const faqItems = [
-  { question: "Ile kosztuje pozycjonowanie w Gdańsku?", answer: "Wycenę ustalamy po analizie witryny, rynku i zakresu prac. W ofercie rozpisujemy działania techniczne, treści, pomiar i koszty dodatkowe. Zestawienie ma pozwolić porównać ten sam zakres usług." },
-  { question: "Jak długo trwa pozycjonowanie w Gdańsku?", answer: "Termin zależy od stanu witryny, konkurencji i zakresu zmian. Najpierw sprawdzamy indeksowanie i błędy techniczne, następnie rozwijamy treści. Ocenę opieramy na danych Search Console oraz zapytaniach klientów; nie gwarantujemy pozycji ani terminu wejścia do TOP 10." },
-  { question: "Czy pozycjonujecie tylko firmy z Gdańska?", answer: "Nie — pracujemy zdalnie z firmami z całej Polski. Nasza siedziba jest w Poznaniu, ale z sukcesem pozycjonujemy firmy w Gdańsku, Warszawie, Krakowie i innych miastach. Znajomość lokalnego rynku i fraz nie wymaga fizycznej obecności." },
-  { question: "Co wyróżnia rynek Gdańska i Trójmiasta w kontekście SEO?", answer: "Trójmiasto z 750 tys. mieszkańców to rozwinięty rynek z silną bazą turystyki, logistyki i branży morskiej. Oznacza to specyficzne frazy kluczowe, lokalną konkurencję i inne zwyczaje wyszukiwania — uwzględniamy to przy budowie strategii." },
-];
-
-const SEOPozycjonowanieGdansk = () => {
-  return (
-    <>
-      <SEOHead
-        title="Pozycjonowanie Gdańsk — Agencja SEO dla Firm z Trójmiasta"
-        description="Pozycjonowanie stron internetowych Gdańsk — SEO dla firm z Trójmiasta (Gdańsk, Gdynia, Sopot). Audyt SEO, link building. Fotz Studio."
-        canonical="https://www.fotz-studio.pl/seo/pozycjonowanie-gdansk"
-        keywords="pozycjonowanie gdańsk, agencja seo gdańsk, seo gdańsk, seo trójmiasto, pozycjonowanie stron gdańsk, agencja seo trójmiasto, seo dla firm gdańsk, pozycjonowanie lokalne gdańsk, audyt seo gdańsk"
-      />
-      <ServiceSchema
-        name="Pozycjonowanie Gdańsk"
-        description="Usługi SEO i pozycjonowania stron dla firm z Gdańska. Zwiększamy widoczność w Google dla lokalnych fraz."
-        provider="Fotz Studio"
-        areaServed="Gdańsk"
-      />
-      <BreadcrumbSchema items={[
-        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
-        { name: "SEO", url: "https://www.fotz-studio.pl/seo" },
-        { name: "Pozycjonowanie Gdańsk", url: "https://www.fotz-studio.pl/seo/pozycjonowanie-gdansk" },
-      ]}/>
-      <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
-
-      <OrganizationSchema />
-
-
-      <Layout>
-        <section className="relative min-h-[75vh] flex items-center justify-center overflow-hidden pt-28 sm:pt-32 md:pt-40 pb-16 md:pb-20">
-          <div className="absolute inset-0 bg-gradient-to-b from-primary/10 via-background to-background" />
-          <div className="container mx-auto px-4 relative z-10">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-center max-w-4xl mx-auto"
-            >
-              <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">
-                <MapPin className="inline h-4 w-4 mr-1" /> Pozycjonowanie Gdańsk
-              </span>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6">
-                Pozycjonowanie <span className="text-gradient">Gdańsk</span>: SEO dla Lokalnych Firm
-              </h1>
-              <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-                Zwiększamy widoczność firm z Gdańskaa i Trójmiasta w Google. Agencja SEO Gdańsk — pozycjonowanie stron i audyt SEO dla firm z Trójmiasta (Gdańsk, Gdynia, Sopot). Trójmiasto z 750 tys. mieszkańców to rozwinięty rynek z silną bazą turystyki, logistyki i branży morskiej. Skuteczne pozycjonowanie lokalne w Gdańskuu — sprawdź nasze usługi SEO.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button asChild size="lg" className="group">
-                  <Link to="/kontakt">
-                    Bezpłatna wycena SEO
-                    <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-                  </Link>
-                </Button>
-                <Button asChild size="lg" variant="outline">
-                  <Link to="/seo/audyt">Zakres audytu</Link>
-                </Button>
-              </div>
-            </motion.div>
-          </div>
-        </section>
-
-        <section className="py-20 bg-muted/30">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-heading font-bold text-center mb-12">
-              SEO dla Firm z Gdańska
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-              {features.map((f) => (
-                <div key={f.title} className="bg-card border rounded-xl p-6 hover:border-primary/40 transition-colors">
-                  <f.icon className="h-8 w-8 text-primary mb-4" />
-                  <h3 className="font-heading font-semibold text-lg mb-2">{f.title}</h3>
-                  <p className="text-muted-foreground text-sm">{f.desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="py-20">
-          <div className="container mx-auto px-4 max-w-3xl">
-            <h2 className="text-3xl font-heading font-bold text-center mb-12">
-              Pytania o pozycjonowanie w Gdańsku
-            </h2>
-            <Accordion type="single" collapsible className="space-y-4">
-              {faqItems.map((item, i) => (
-                <AccordionItem key={i} value={`item-${i}`} className="border rounded-xl px-6">
-                  <AccordionTrigger className="text-left font-heading font-semibold py-4">
-                    {item.question}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground pb-4">
-                    {item.answer}
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
-          </div>
-        </section>
-
-      {/* SEO Article Section */}
-      <section className="py-20 bg-card">
-        <div className="container mx-auto px-4">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
-            <h2 className="text-3xl font-heading font-bold mb-6">Pozycjonowanie Gdańsk — agencja SEO dla firm z Trójmiasta</h2>
-            <p className="text-muted-foreground mb-4">Pozycjonowanie stron internetowych Gdańsk — Fotz Studio obsługuje firmy z Gdańskaa, Gdyni, Sopotu i całego Trójmiasta. Trójmiasto to dynamiczny rynek z silnym sektorem turystycznym, technologicznym i morskim. Lokalne SEO dla firm z Gdańskaa wymaga specjalistycznej wiedzy o regionalnej specyfice i konkurencji.</p>
-            <p className="text-muted-foreground mb-6">Agencja SEO Gdańsk — kompleksowe pozycjonowanie: audyt SEO strony, optymalizacja techniczna i treściowa, link building z portali trójmiejskich, pozycjonowanie Google Maps dla firm z Trójmiasta, content SEO pod lokalne frazy (Gdańsk, Gdynia, Sopot, Trójmiasto).</p>
-            <h2 className="text-3xl font-heading font-bold mb-6">SEO Trójmiasto — dominuj w Google na Gdańsk, Gdynię i Sopot</h2>
-            <p className="text-muted-foreground">Pozycjonowanie Gdańsk i całego Trójmiasta — z Fotz Studio zbudujesz widoczność online, która generuje stały napływ klientów. Transparentne raportowanie wyników, regularne optymalizacje i indywidualne podejście do każdego klienta. Umów konsultację z naszą agencją SEO w Gdańskuu.</p>
-          
-            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
-              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
-              <Link to="/seo/audyt" className="text-primary hover:underline font-medium text-sm">→ Audyt SEO</Link>
-              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
-              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-
-        <ContactSection />
-      </Layout>
-    </>
-  );
+const offer: LocalSeoOfferProps = {
+  path: "/seo/pozycjonowanie-gdansk",
+  city: "Gdańsk",
+  cityGenitive: "Gdańska",
+  title: "Pozycjonowanie Gdańsk — SEO dla firm i usług | FOTZ Studio",
+  description: "SEO dla firm z Gdańska i Trójmiasta: audyt strony, lokalny zasięg, treści i pomiar kontaktów. Zobacz realizacje FOTZ oraz zasady wyceny pozycjonowania.",
+  lead: "Pomagamy przedstawić ofertę osobom, które szukają konkretnej usługi lub miejsca w Gdańsku. Sprawdzamy stronę, planujemy treści i porządkujemy drogę do kontaktu, uwzględniając rzeczywisty zasięg obsługi w Trójmieście.",
+  hero: { image: "lounge", caption: "Lech Poznań Lounge na Enea Stadionie — fotografia wnętrza z realizacji FOTZ. Kadr pokazuje przestrzeń i jej wyposażenie." },
+  scope: [
+    { title: "Audyt oferty i indeksowania", text: "Weryfikujemy najważniejsze adresy, tytuły i dostępność treści dla wyszukiwarki. W Search Console sprawdzamy, jakie zapytania prowadzą do ofert, a na telefonie — czy można dotrzeć do potrzebnych informacji.", href: "/seo/audyt", link: "Zobacz audyt SEO" },
+    { title: "Zasięg w Trójmieście", text: "Ustalamy, gdzie usługa jest faktycznie dostępna: w punkcie w Gdańsku, z dojazdem czy również w Gdyni i Sopocie. Treści wyjaśniają warunki obsługi oraz kontakt do właściwego miejsca.", href: "/uslugi/pozycjonowanie-lokalne", link: "Poznaj pozycjonowanie lokalne" },
+    { title: "Informacje przed wizytą", text: "Porządkujemy opis usługi, godziny, dostępne warianty i sposób ustalenia terminu. Prawdziwe zdjęcia, podpisy i odpowiedzi na pytania pomagają klientowi ocenić ofertę przed wysłaniem zapytania.", href: "/content-marketing/strategia", link: "Zaplanuj potrzebne treści" },
+    { title: "Profil Firmy w Google", text: "Dla kwalifikującej się działalności sprawdzamy zgodność adresu, kategorii, godzin i danych kontaktowych ze stroną. Informacje sezonowe lub zmiany dostępności aktualizujemy w uzgodnionym zakresie.", href: "/uslugi/pozycjonowanie-lokalne", link: "Sprawdź zakres lokalnej widoczności" },
+    { title: "Technika strony i rezerwacje", text: "Sprawdzamy linki, przekierowania, ładowanie materiałów i dojście do formularza. Jeśli używasz zewnętrznego systemu rezerwacji, ustalamy dostępne połączenia i możliwość pomiaru przejść.", href: "/seo/techniczne", link: "Przejdź do technicznego SEO" },
+    { title: "Raport z uwzględnieniem sezonu", text: "Zestawiamy wykonane prace, wyświetlenia i kliknięcia z dostępnymi danymi o zapytaniach. Dla oferty sezonowej dobieramy okres porównania tak, aby odróżnić zmiany popytu od efektów wdrożenia.", href: "/kontakt", link: "Omów dane i cele firmy" },
+  ],
+  examplesTitle: "Punkt w Gdańsku czy obsługa całego Trójmiasta?",
+  examplesIntro: "Plan zależy od tego, jak klient korzysta z usługi. Poniżej znajdują się przykładowe scenariusze doboru działań, które dopasowujemy do rzeczywistej oferty firmy.",
+  examples: [
+    { title: "Miejsce odwiedzane osobiście", text: "Łączymy opis oferty z informacjami o godzinach, lokalizacji, dostępie i rezerwacji. Zdjęcia pokazują faktyczny wygląd miejsca, a kontakt jest dostępny bez szukania go w kilku podstronach.", measure: "zapytania i rezerwacje, o ile system pozwala potwierdzić ich źródło." },
+    { title: "Usługa z dojazdem", text: "Wyjaśniamy zasięg, warunki realizacji i informacje potrzebne do wyceny. Różnice w obsłudze Gdańska, Gdyni czy Sopotu opisujemy tylko wtedy, gdy wynikają z rzeczywistego sposobu pracy.", measure: "liczbę i jakość kontaktów z obszaru, który firma obsługuje." },
+    { title: "Oferta zależna od terminów", text: "Dla usług sezonowych i wydarzeń planujemy aktualizację oferty przed okresem zainteresowania. Dbamy o prawdziwe informacje o terminach, dostępności i kolejnym kroku klienta.", measure: "zapytania o odpowiedni termin oraz wyniki porównywalnego okresu sezonu." },
+  ],
+  planning: [
+    { title: "Mapa miejsc i usług", text: "Na początku zbieramy adres strony, listę usług, rzeczywisty obszar działania i informacje o punktach obsługi. Jeśli oferta różni się między miejscami, opisujemy te różnice. Samo dodanie kolejnej nazwy miasta nie jest powodem do tworzenia nowej podstrony." },
+    { title: "Wycena z materiałami", text: "Koszt zależy od potrzebnej analizy, liczby ofert, prac w CMS oraz treści i zdjęć. Ustalamy, które materiały dostarcza firma, a które przygotowuje FOTZ. Zakres integracji rezerwacji i koszty zewnętrzne rozpisujemy osobno." },
+    { title: "Aktualizacja i ocena kontaktów", text: "Uzgadniamy osobę odpowiedzialną za zmiany godzin, oferty i dostępności. Raport łączy listę wykonanych prac z widocznością, kliknięciami i dostępnymi danymi kontaktowymi. Potwierdzenie sprzedaży wymaga informacji z procesu obsługi klienta." },
+  ],
+  faqs: [
+    { question: "Ile kosztuje pozycjonowanie strony w Gdańsku?", answer: "Wycenę ustalamy po sprawdzeniu witryny, liczby usług, obszaru obsługi oraz potrzebnych treści i wdrożeń. Oferta określa zadania, terminy odbioru, podział odpowiedzialności i koszty dodatkowe. Możemy zacząć od jednorazowego audytu lub uzgodnić regularną pracę nad stroną." },
+    { question: "Czy FOTZ ma biuro w Gdańsku?", answer: "Siedziba FOTZ Studio znajduje się w Poznaniu. Obsługę SEO firm z Gdańska i Trójmiasta prowadzimy zdalnie, z uzgodnionym kontaktem, przekazaniem materiałów i akceptacją zmian. Zakres ewentualnej produkcji zdjęć lub filmów ustalamy oddzielnie." },
+    { question: "Czy jedna strona może obsługiwać Gdańsk, Gdynię i Sopot?", answer: "Tak, jeśli czytelnie przedstawia prawdziwy zakres działania firmy. Osobne podstrony rozważamy dla rzeczywistych placówek lub ofert wymagających innych informacji. Powtarzanie tego samego tekstu z podmienioną nazwą miasta nie pomaga klientowi wybrać usługi." },
+    { question: "Jak uwzględniacie sezonowość w SEO?", answer: "Plan treści i aktualizacji ustalamy z wyprzedzeniem względem ważnych terminów firmy. Wyniki porównujemy z okresem o podobnym charakterze, jeśli dostępne są dane. Wzrost lub spadek zainteresowania sezonową usługą sam w sobie nie dowodzi skuteczności albo nieskuteczności pozycjonowania." },
+    { question: "Czy Profil Firmy w Google zapewni widoczność w całym Trójmieście?", answer: "Nie można obiecać jednakowej widoczności w każdym miejscu. Lokalne wyniki zależą m.in. od trafności, odległości i rozpoznawalności. Profil prowadzimy zgodnie z rzeczywistą działalnością i zasadami Google, a jego dane oraz wyniki strony analizujemy osobno." },
+    { question: "Czy można mierzyć rezerwacje i kiedy ocenić wyniki?", answer: "Możliwości zależą od formularza lub systemu rezerwacji oraz dostępnych integracji. Kliknięcie przycisku odróżniamy od przyjętego zapytania i potwierdzonego terminu. Sposób pomiaru oraz termin przeglądu danych ustalamy przed wdrożeniem; nie gwarantujemy pozycji ani liczby rezerwacji." },
+  ],
 };
 
-export default SEOPozycjonowanieGdansk;
+export default function SEOPozycjonowanieGdansk() {
+  return <>
+    <SEOHead title={offer.title} description={offer.description} canonical={`https://www.fotz-studio.pl${offer.path}`} />
+    <LocalSeoOffer {...offer} />
+  </>;
+}
