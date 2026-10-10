@@ -1,148 +1,47 @@
 import { SEOHead } from "@/components/seo/SEOHead";
-import { Layout } from "@/components/layout/Layout";
-import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import { ArrowRight, MapPin, TrendingUp, Search, BarChart2, CheckCircle, Star } from "lucide-react";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema, LocalBusinessSchema, OrganizationSchema} from "@/components/seo/StructuredData";
-import { ContactSection } from "@/components/sections/ContactSection";
+import { LocalSeoOffer, type LocalSeoOfferProps } from "@/components/LocalSeoOffer";
 
-const features = [
-  { icon: Search, title: "Pozycjonowanie lokalne Katowice", desc: "Optymalizujemy stronę pod frazy lokalne: '[usługa] Katowice', '[branża] Katowice' i okolice. Dobieramy tematy do rzeczywistych usług oraz zapytań klientów." },
-  { icon: MapPin, title: "Google Maps i Profil Firmy w Google", desc: "Optymalizujemy profil Profil Firmy w Google, zbieramy opinie i dbamy o obecność w mapach. Zakres obejmuje dane firmy, ofertę i sposób pozyskiwania autentycznych opinii." },
-  { icon: TrendingUp, title: "Audyt SEO dla Katowic", desc: "Analizujemy konkurencję w Katowicach, identyfikujemy frazy z największym potencjałem i tworzymy plan działań dopasowany do oferty i możliwości firmy." },
-  { icon: BarChart2, title: "Raportowanie i monitoring", desc: "Miesięczne raporty z pozycji w Google dla Katowic i okolic, ruchu organicznego i konwersji. Wiesz dokładnie, jakie efekty osiągamy." },
-];
-
-const faqItems = [
-  { question: "Ile kosztuje pozycjonowanie w Katowicach?", answer: "Wycenę ustalamy po analizie witryny, rynku i zakresu prac. W ofercie rozpisujemy działania techniczne, treści, pomiar i koszty dodatkowe. Zestawienie ma pozwolić porównać ten sam zakres usług." },
-  { question: "Jak długo trwa pozycjonowanie w Katowicach?", answer: "Termin zależy od stanu witryny, konkurencji i zakresu zmian. Najpierw sprawdzamy indeksowanie i błędy techniczne, następnie rozwijamy treści. Ocenę opieramy na danych Search Console oraz zapytaniach klientów; nie gwarantujemy pozycji ani terminu wejścia do TOP 10." },
-  { question: "Czy pozycjonujecie tylko firmy z Katowic?", answer: "Nie — pracujemy zdalnie z firmami z całej Polski. Nasza siedziba jest w Poznaniu, ale z sukcesem pozycjonujemy firmy w Katowicach, Warszawie, Krakowie i innych miastach. Znajomość lokalnego rynku i fraz nie wymaga fizycznej obecności." },
-  { question: "Co wyróżnia rynek Katowic i całego Śląska w kontekście SEO?", answer: "Katowice to centrum aglomeracji śląskiej liczącej ponad 2 mln mieszkańców — olbrzymi rynek dla usług lokalnych. Oznacza to specyficzne frazy kluczowe, lokalną konkurencję i inne zwyczaje wyszukiwania — uwzględniamy to przy budowie strategii." },
-];
-
-const SEOPozycjonowanieKatowice = () => {
-  return (
-    <>
-      <SEOHead
-        title="Pozycjonowanie Katowice — Agencja SEO dla Firm z Katowic"
-        description="Pozycjonowanie stron internetowych Katowice — SEO dla firm z Katowic i Śląska. Audyt SEO, optymalizacja, link building. Fotz Studio."
-        canonical="https://www.fotz-studio.pl/seo/pozycjonowanie-katowice"
-        keywords="pozycjonowanie katowice, agencja seo katowice, seo katowice, pozycjonowanie śląsk, pozycjonowanie stron katowice, agencja seo śląsk, seo dla firm katowice, pozycjonowanie lokalne katowice"
-      />
-      <ServiceSchema
-        name="Pozycjonowanie Katowice"
-        description="Usługi SEO i pozycjonowania stron dla firm z Katowic. Zwiększamy widoczność w Google dla lokalnych fraz."
-        provider="Fotz Studio"
-        areaServed="Katowice"
-      />
-      <BreadcrumbSchema items={[
-        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
-        { name: "SEO", url: "https://www.fotz-studio.pl/seo" },
-        { name: "Pozycjonowanie Katowice", url: "https://www.fotz-studio.pl/seo/pozycjonowanie-katowice" },
-      ]}/>
-      <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
-
-      <OrganizationSchema />
-
-
-      <Layout>
-        <section className="relative min-h-[75vh] flex items-center justify-center overflow-hidden pt-28 sm:pt-32 md:pt-40 pb-16 md:pb-20">
-          <div className="absolute inset-0 bg-gradient-to-b from-primary/10 via-background to-background" />
-          <div className="container mx-auto px-4 relative z-10">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-center max-w-4xl mx-auto"
-            >
-              <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">
-                <MapPin className="inline h-4 w-4 mr-1" /> Pozycjonowanie Katowice
-              </span>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6">
-                Pozycjonowanie <span className="text-gradient">Katowice</span>: SEO dla Lokalnych Firm
-              </h1>
-              <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-                Zwiększamy widoczność firm z Katowic i całego Śląska w Google. Agencja SEO Katowice — pozycjonowanie stron i audyt SEO dla firm z aglomeracji śląskiej. Katowice to centrum aglomeracji śląskiej liczącej ponad 2 mln mieszkańców — olbrzymi rynek dla usług lokalnych. Usługi SEO Katowice — pozycjonowanie lokalne, GMB i link building.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button asChild size="lg" className="group">
-                  <Link to="/kontakt">
-                    Bezpłatna wycena SEO
-                    <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-                  </Link>
-                </Button>
-                <Button asChild size="lg" variant="outline">
-                  <Link to="/seo/audyt">Zakres audytu</Link>
-                </Button>
-              </div>
-            </motion.div>
-          </div>
-        </section>
-
-        <section className="py-20 bg-muted/30">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-heading font-bold text-center mb-12">
-              SEO dla Firm z Katowic
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-              {features.map((f) => (
-                <div key={f.title} className="bg-card border rounded-xl p-6 hover:border-primary/40 transition-colors">
-                  <f.icon className="h-8 w-8 text-primary mb-4" />
-                  <h3 className="font-heading font-semibold text-lg mb-2">{f.title}</h3>
-                  <p className="text-muted-foreground text-sm">{f.desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="py-20">
-          <div className="container mx-auto px-4 max-w-3xl">
-            <h2 className="text-3xl font-heading font-bold text-center mb-12">
-              Pytania o pozycjonowanie w Katowicach
-            </h2>
-            <Accordion type="single" collapsible className="space-y-4">
-              {faqItems.map((item, i) => (
-                <AccordionItem key={i} value={`item-${i}`} className="border rounded-xl px-6">
-                  <AccordionTrigger className="text-left font-heading font-semibold py-4">
-                    {item.question}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground pb-4">
-                    {item.answer}
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
-          </div>
-        </section>
-
-      {/* SEO Article Section */}
-      <section className="py-20 bg-card">
-        <div className="container mx-auto px-4">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
-            <h2 className="text-3xl font-heading font-bold mb-6">Pozycjonowanie Katowice — agencja SEO dla firm z Katowic i Górnego Śląska</h2>
-            <p className="text-muted-foreground mb-4">Pozycjonowanie stron internetowych Katowice — specjalizacja Fotz Studio dla firm z Katowic, Górnośląskiego Zagłębia Węglowego i całego Śląska. Śląsk to silny rynek przemysłowy i usługowy z rosnącą konkurencją online — skuteczne SEO to klucz do widoczności.</p>
-            <p className="text-muted-foreground mb-6">Agencja SEO Katowice oferuje: audyt SEO strony, optymalizację techniczną, content SEO dla firm ze Śląska, link building z portali regionalnych (Śląsk, Zagłębie), pozycjonowanie Google Maps dla firm z Katowic i okolic.</p>
-            <h2 className="text-3xl font-heading font-bold mb-6">SEO dla firm ze Śląska — pozycjonowanie na Katowice i regiony</h2>
-            <p className="text-muted-foreground">Pozycjonowanie Katowice to inwestycja w organiczny kanał sprzedaży. Firmy usługowe, produkcyjne i handlowe ze Śląska, które pojawią się wysoko w Google na frazy lokalne, zdobywają klientów o wysokiej intencji zakupowej. Skontaktuj się z Fotz Studio — agencją SEO dla Katowic i Śląska.</p>
-          
-            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
-              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
-              <Link to="/seo/audyt" className="text-primary hover:underline font-medium text-sm">→ Audyt SEO</Link>
-              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
-              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-
-        <ContactSection />
-      </Layout>
-    </>
-  );
+const offer: LocalSeoOfferProps = {
+  path: "/seo/pozycjonowanie-katowice",
+  city: "Katowice",
+  cityGenitive: "Katowic",
+  title: "Pozycjonowanie Katowice — zakres SEO dla firm | FOTZ Studio",
+  description: "SEO dla firm z Katowic i Śląska: audyt, poprawki strony, treści i pomiar zapytań. Zobacz zakres pozycjonowania, realizacje FOTZ oraz zasady wyceny.",
+  lead: "Pomagamy uporządkować widoczność oferty w Google: od indeksowania strony po treści odpowiadające na pytania klientów. Dla firmy z Katowic ustalamy, które usługi i obszary obsługi warto rozwijać oraz jak sprawdzać jakość pozyskanych zapytań.",
+  hero: { image: "fps", caption: "FPS Poznań — projekt strony internetowej z portfolio FOTZ. Prezentacja oferty producenta pojazdów szynowych." },
+  scope: [
+    { title: "Audyt i lista priorytetów", text: "Sprawdzamy indeksowanie, adresy kanoniczne, przekierowania oraz dane Search Console. Oddzielamy błędy blokujące ważne strony od adresów, które celowo nie powinny być indeksowane.", href: "/seo/audyt", link: "Zobacz zakres audytu SEO" },
+    { title: "Mapa usług i obszaru obsługi", text: "Łączymy zapytania z konkretnymi usługami. Ustalamy, czy klient szuka wykonawcy w Katowicach, obsługi z dojazdem na Śląsku czy dostawcy działającego w całym kraju.", href: "/seo/pozycjonowanie", link: "Sprawdź ofertę pozycjonowania" },
+    { title: "Wdrożenia na stronie", text: "Porządkujemy nagłówki, linki między ofertami, wersję mobilną i dostępność treści dla wyszukiwarki. Zakres prac programistycznych oraz testy po publikacji zapisujemy w planie.", href: "/seo/techniczne", link: "Przeczytaj o technicznym SEO" },
+    { title: "Treści wspierające decyzję", text: "Rozwijamy opis zakresu usługi, procesu, ograniczeń i danych do wyceny. Korzystamy z dokumentacji oraz rzeczywistych realizacji firmy, aby klient mógł ocenić, czy oferta pasuje do jego potrzeby.", href: "/content-marketing/strategia", link: "Zobacz planowanie treści" },
+    { title: "Profil Firmy w Google", text: "Jeśli firma kwalifikuje się do profilu, sprawdzamy kategorie, dane kontaktowe, godziny i rzeczywisty obszar obsługi. Profil w Mapach oraz widoczność strony wymagają osobnej oceny.", href: "/uslugi/pozycjonowanie-lokalne", link: "Poznaj zakres lokalnego SEO" },
+    { title: "Pomiar zapytań", text: "Ustalamy sposób mierzenia wysłanych formularzy i innych działań kontaktowych. W raporcie zestawiamy je z widocznością i wejściami; jakość zapytań oceniamy z osobą, która je obsługuje.", href: "/kontakt", link: "Omów cel i dostępne dane" },
+  ],
+  examplesTitle: "Katowice, region czy cała Polska?",
+  examplesIntro: "Obszar działań wynika z modelu sprzedaży. Poniższe przykłady pokazują sposób wyboru zakresu, a nie wyniki konkretnych klientów.",
+  examples: [
+    { title: "Usługa z dojazdem", text: "Dla wykonawcy obsługującego Katowice i sąsiednie miasta opisujemy faktyczny zasięg, warunki dojazdu i dane potrzebne do wyceny. Osobna podstrona ma sens, gdy pomaga wyjaśnić odrębną ofertę lub lokalną realizację.", measure: "zapytania o właściwą usługę z obszaru, który firma rzeczywiście obsługuje." },
+    { title: "Dostawca dla biznesu", text: "Dla firmy B2B sprawdzamy, czy ważniejsze od nazwy miasta są parametry produktu, zastosowania i wymagania zamawiającego. Rozwijamy strony rozwiązań oraz formularz zbierający dane do rozmowy handlowej.", measure: "zapytania ofertowe z informacją o potrzebie klienta, a nie tylko wejścia na blog." },
+    { title: "Kilka punktów obsługi", text: "Dla istniejących placówek porządkujemy adresy, godziny, kontakty i zakres usług. Każdy punkt powinien mieć aktualne informacje, a profil Google musi odpowiadać rzeczywistej działalności.", measure: "działania kontaktowe i zapytania przypisane do właściwej placówki." },
+  ],
+  planning: [
+    { title: "Diagnoza przed abonamentem", text: "Najpierw określamy stan witryny, ważne usługi i to, kto odpowiada za CMS. Jeżeli potrzebna jest jednorazowa naprawa indeksowania, opisujemy ją jako osobne zadanie. Stałą pracę planujemy dla uzgodnionych ofert i tematów." },
+    { title: "Wycena z rozpisanym zakresem", text: "Koszt zależy od liczby usług, wielkości strony, potrzebnych wdrożeń i treści. W propozycji oddzielamy audyt, pracę techniczną, przygotowanie materiałów oraz ewentualne koszty zewnętrzne. Ustalamy również, kto wprowadza i akceptuje zmiany." },
+    { title: "Raport po wdrożeniu", text: "Pokazujemy wykonane prace, stan najważniejszych adresów, wyświetlenia i kliknięcia w Search Console oraz dostępne dane o zapytaniach. Porównujemy ustalone okresy, uwzględniając sezonowość. Wzrost wyświetleń sam nie potwierdza wzrostu sprzedaży." },
+  ],
+  faqs: [
+    { question: "Ile kosztuje pozycjonowanie strony w Katowicach?", answer: "Cena zależy od stanu strony, liczby usług, obszaru obsługi i prac do wykonania. Do wyceny potrzebujemy adresu witryny oraz opisu celu. Oferta powinna określać zadania, odpowiedzialność za wdrożenia, harmonogram i koszty dodatkowe; sama liczba fraz nie opisuje całego zakresu." },
+    { question: "Czy FOTZ ma biuro w Katowicach?", answer: "Nasz zespół pracuje z Poznania. Obsługę SEO dla firmy z Katowic możemy prowadzić zdalnie: od briefu i analizy danych po uzgodnienie wdrożeń i omówienie raportu. Ta strona opisuje obszar obsługi, a nie lokalny oddział." },
+    { question: "Czy potrzebuję osobnej strony na każde miasto na Śląsku?", answer: "Nie ma takiej ogólnej potrzeby. Najpierw sprawdzamy rzeczywisty zasięg, różnice w ofercie i pytania klientów. Sama podmiana nazwy miasta nie tworzy użytecznej strony. Osobny adres rozważamy wtedy, gdy można pokazać odrębny zakres, placówkę, warunki obsługi lub udokumentowaną realizację." },
+    { question: "Czy możecie wykonać tylko audyt SEO?", answer: "Tak. Możemy rozpocząć od audytu z priorytetami i listą zadań. Przed pracą ustalamy, czy obejmuje również wdrożenie poprawek przez FOTZ, czy przekazanie zaleceń osobie zarządzającej stroną. Weryfikację po wdrożeniu określamy w zakresie." },
+    { question: "Czy pozycjonowanie obejmuje też Mapy Google?", answer: "Zakres Profilu Firmy w Google ustalamy osobno, po sprawdzeniu kwalifikowalności firmy. Obejmuje on prawdziwe dane, kategorie, godziny i informacje o usługach. Pozycja w Mapach zależy również od lokalizacji wyszukującej osoby; nie gwarantujemy jednakowej widoczności w całym regionie." },
+    { question: "Kiedy pojawią się wyniki i czy gwarantujecie TOP 10?", answer: "Nie gwarantujemy pozycji ani terminu wejścia do TOP 10. Wpływ zmian zależy m.in. od stanu witryny, konkurencji i ponownego przetworzenia stron przez Google. Harmonogram prac i termin przeglądu danych ustalamy przed rozpoczęciem; ranking oraz liczbę zapytań oceniamy oddzielnie od samego wdrożenia." },
+  ],
 };
 
-export default SEOPozycjonowanieKatowice;
+export default function SEOPozycjonowanieKatowice() {
+  return <>
+    <SEOHead title={offer.title} description={offer.description} canonical={`https://www.fotz-studio.pl${offer.path}`} />
+    <LocalSeoOffer {...offer} />
+  </>;
+}
