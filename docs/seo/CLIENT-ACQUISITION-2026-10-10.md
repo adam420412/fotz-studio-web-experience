@@ -43,3 +43,11 @@ Mobilny Unlighthouse na lokalnym buildzie (jedna seria, wynik laboratoryjny):
 - Odbiór zdarzeń GA4 oraz publiczną wersję aplikacji trzeba potwierdzić po wdrożeniu.
 - Na fotz.pl wykonano wyłącznie uwierzytelniony odczyt WPVibe. Nie opublikowano linków ani zmian treści.
 - Wyniki laboratoryjne i poprawność techniczna nie dowodzą wzrostu liczby zapytań. Efekt handlowy należy ocenić po zebraniu rzeczywistych danych.
+
+## Kontrola pierwszej publikacji i korekta GA4
+
+PR #38 opublikowano jako `dd94d2f`. Na 12 publicznych trasach potwierdzono HTTP 200, jeden H1, właściwy canonical i nowy pakiet aplikacji. Przed zgodą: 0 skryptów GA4 i 0 żądań Google Analytics. Po akceptacji: `page_view` oraz `offer_view` docierały do Google z odpowiedzią 204. Cofnięcie zgody przeładowuje stronę bez skryptu GA.
+
+Kontrola sieci wykazała jednak, że po przejściu kontakt → WWW `offer_view` zachowywał poprzedni `page_location`, mimo poprawnej nowej odsłony. Korekta przekazuje oczyszczony kontekst ostatniej odsłony bezpośrednio z każdym zdarzeniem. Wspólny kontekst `set` aktualizuje się przy odsłonie; jednorazowy `config` nie przypina już adresu początkowego. Test regresji sprawdza URL, referrer, tytuł i brak parametrów zapytania dla kolejnych zdarzeń. Łącznie 69 testów.
+
+Źródło semantyki pierwszeństwa parametrów: [Google tag API — parameter scope and precedence](https://developers.google.com/tag-platform/gtagjs/reference#parameter_precedence). Odbiór poprawionego kontekstu wymaga ponownego sprawdzenia po wdrożeniu korekty.
