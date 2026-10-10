@@ -8,10 +8,10 @@ const require = createRequire(import.meta.url);
 
 // Exercise the real component's event handlers with hook state and external I/O
 // replaced in memory. These checks never connect to Supabase, email or the CRM.
-function harness({ availabilityError = false, insertError = false, notificationError = false, crmError = false } = {}) {
+function harness({ availabilityError = false, insertError = false, notificationError = false, crmError = false, slotTaken = false } = {}) {
   const states = [], effects = [], dependencies = [];
   let cursor = 0;
-  const calls = { insert: 0, notify: 0, crm: 0 };
+  const calls = { submit: 0, availability: 0 };
   const react = { ...require('react'),
     useState(initial) {
       const i = cursor++;
@@ -31,11 +31,6 @@ function harness({ availabilityError = false, insertError = false, notificationE
       dependencies[i] = deps;
     },
   };
-  const query = {
-    select() { return this; }, gte() { return this; }, lte() { return this; },
-    in() { return Promise.resolve({ data: availabilityError ? null : [], error: availabilityError ? new Error('offline') : null }); },
-    insert() { calls.insert++; return Promise.resolve({ error: insertError ? new Error('save failed') : null }); },
-  };
   const mocks = {
     react,
     'react-router-dom': { useNavigate: () => () => {} },
@@ -43,12 +38,20 @@ function harness({ availabilityError = false, insertError = false, notificationE
     '@/components/ui/input': { Input: 'input' },
     '@/components/ui/textarea': { Textarea: 'textarea' },
     '@/lib/utils': { cn: (...a) => a.filter(Boolean).join(' ') },
-    '@/integrations/supabase/client': { supabase: { from: () => query, functions: { invoke: async () => { calls.notify++; return { error: notificationError ? new Error("notify failed") : null }; } } } },
-    '@/hooks/useCRMWebhook': { sendBookingToCRM: async () => { calls.crm++; return {success: !crmError}; } },
+    '@/integrations/supabase/client': { supabase: { functions: { invoke: async name => {
+      assert.equal(name, 'booking-availability'); calls.availability++;
+      return { data: availabilityError ? null : {success:true,slots:[]}, error: availabilityError ? new Error('offline') : null };
+    } } } },
+    '@/lib/booking': { submitConsultation: async () => {
+      calls.submit++;
+      if (slotTaken) throw Object.assign(new Error('Ten termin został już zajęty. Wybierz inny termin.'), {code:'SLOT_TAKEN'});
+      if (insertError) throw new Error('Wystąpił błąd. Spróbuj ponownie.');
+      return {success:true,crm_queued:true,crm_delivered:!crmError,agency_notification_sent:!notificationError,client_confirmation_sent:!notificationError};
+    } },
   };
   const source = fs.readFileSync(new URL('../src/components/BookingCalendar.tsx', import.meta.url), 'utf8');
   const code = ts.transpileModule(source, { compilerOptions: { module: ts.ModuleKind.CommonJS, jsx: ts.JsxEmit.ReactJSX, esModuleInterop: true } }).outputText;
-  const context = { exports: {}, require: key => mocks[key] ?? require(key), console, Date, AbortSignal };
+  const context = { exports: {}, require: key => mocks[key] ?? require(key), console, Date, Error, AbortSignal };
   vm.runInNewContext(code, context);
   function render() { cursor = 0; return context.exports.BookingCalendar({}); }
   function all(tree, predicate, result = []) {
@@ -92,7 +95,7 @@ test('failed booking save stays on the form and sends no notification or CRM eve
   const tree = await h.submit();
   assert.match(h.text(tree), /Wystąpił błąd/);
   assert.doesNotMatch(h.text(tree), /Zgłoszenie konsultacji zapisane/);
-  assert.deepEqual(h.calls, { insert: 1, notify: 0, crm: 0 });
+  assert.equal(h.calls.submit, 1);
 });
 
 test('successful pending save is described as a request, without asserting email delivery', async () => {
@@ -101,7 +104,7 @@ test('successful pending save is described as a request, without asserting email
   assert.match(h.text(tree), /Zgłoszenie konsultacji zapisane/);
   assert.match(h.text(tree), /Termin wymaga potwierdzenia/);
   assert.doesNotMatch(h.text(tree), /Wysłaliśmy potwierdzenie/);
-  assert.deepEqual(h.calls, { insert: 1, notify: 1, crm: 1 });
+  assert.equal(h.calls.submit, 1);
 });
 
 test('unavailable slot service shows retry and disables continuation', async () => {
@@ -110,7 +113,7 @@ test('unavailable slot service shows retry and disables continuation', async () 
   const tree = h.render();
   assert.match(h.text(tree), /Nie udało się sprawdzić dostępnych terminów/);
   assert.equal(h.find(tree, n => n.type === 'button' && h.text(n).includes('Dalej')).props.disabled, true);
-  assert.equal(h.calls.insert, 0);
+  assert.equal(h.calls.submit, 0);
 });
 
 test('changing week clears the previously selected day', async () => {
@@ -134,5 +137,14 @@ test('saved booking survives notification and CRM failure without inviting a dup
  assert.match(h.text(tree), /Zgłoszenie konsultacji zapisane/);
  assert.match(h.text(tree), /Nie wysyłaj go ponownie/);
  assert.doesNotMatch(h.text(tree), /Wystąpił błąd. Spróbuj ponownie/);
- assert.deepEqual(h.calls,{insert:1,notify:1,crm:1});
+ assert.equal(h.calls.submit,1);
+});
+
+
+test('a slot taken on the server returns to date selection with an explanation', async () => {
+ const h=harness({slotTaken:true});
+ const tree=await h.submit();
+ assert.match(h.text(tree), /Ten termin został już zajęty/);
+ assert.doesNotMatch(h.text(tree), /Zgłoszenie konsultacji zapisane/);
+ assert.equal(h.find(tree,n=>n.type==='button' && h.text(n).includes('Dalej')).props.disabled,true);
 });

@@ -570,12 +570,10 @@ export default function KalkulatorCen() {
                               <Button
                                 variant="outline"
                                 className="w-full"
-                                asChild
+                                onClick={() => setShowBookingModal(true)}
                               >
-                                <Link to="/kontakt">
-                                  Bezpłatna konsultacja
-                                  <ArrowRight className="w-4 h-4 ml-2" />
-                                </Link>
+                                Wybierz termin konsultacji
+                                <Calendar className="w-4 h-4 ml-2" />
                               </Button>
                             </div>
                           </>

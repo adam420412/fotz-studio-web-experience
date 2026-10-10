@@ -9,12 +9,12 @@ import { cn } from "@/lib/utils";
 import { z } from "zod";
 import { useNavigate } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
-import { sendBookingToCRM } from "@/hooks/useCRMWebhook";
+import { submitConsultation } from "@/lib/booking";
 
 const bookingSchema = z.object({
   name: z.string().trim().min(2, "Imię musi mieć minimum 2 znaki"),
   email: z.string().trim().email("Nieprawidłowy adres email"),
-  phone: z.string().trim().min(9, "Podaj prawidłowy numer telefonu"),
+  phone: z.string().trim().refine(value => value.replace(/\D/g, "").length >= 9, "Podaj prawidłowy numer telefonu"),
   company: z.string().trim().optional(),
   message: z.string().trim().optional(),
 });
@@ -65,19 +65,13 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
     const endDate = format(addDays(currentWeekStart, 6), "yyyy-MM-dd");
 
     try {
-      const { data, error } = await supabase
-      .from('bookings')
-      .select('booking_date, booking_time')
-      .gte('booking_date', startDate)
-      .lte('booking_date', endDate)
-      .in('status', ['pending', 'confirmed']);
-
-    if (request !== slotsRequest.current) return;
-    if (error || !data) throw error ?? new Error("No availability data");
-      setBookedSlots(data.map(b => ({ 
-        date: b.booking_date, 
-        time: b.booking_time.substring(0, 5) // Ensure format "HH:MM"
-      })));
+      const { data, error } = await supabase.functions.invoke('booking-availability', {
+        body: { start_date: startDate, end_date: endDate },
+        signal: AbortSignal.timeout(15000),
+      });
+      if (request !== slotsRequest.current) return;
+      if (error || data?.success !== true || !Array.isArray(data.slots)) throw error ?? new Error("No availability data");
+      setBookedSlots(data.slots);
     } catch {
       if (request === slotsRequest.current) {
         setBookedSlots([]);
@@ -155,60 +149,21 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
     setIsSubmitting(true);
 
     try {
-      // Save to Supabase database (for CRM sync)
-      const { error: dbError } = await supabase
-        .from('bookings')
-        .insert({
-          client_name: formData.name,
-          client_email: formData.email,
-          client_phone: formData.phone || null,
-          booking_date: selectedDate ? format(selectedDate, "yyyy-MM-dd") : null,
-          booking_time: selectedTime,
-          service_type: 'konsultacja',
-          notes: formData.company ? `Firma: ${formData.company}. ${formData.message || ''}` : formData.message || null,
-          source: 'website',
-          status: 'pending',
-        });
-
-      if (dbError) {
-        throw dbError;
-      }
-
-      // Send email notification via edge function
-      try {
-        const {error: notificationError} = await supabase.functions.invoke('notify-booking', {
-          signal: AbortSignal.timeout(15000),
-          body: {
-            client_name: formData.name,
-            client_email: formData.email,
-            client_phone: formData.phone || null,
-            booking_date: selectedDate ? format(selectedDate, "dd.MM.yyyy", { locale: pl }) : "",
-            booking_time: selectedTime,
-            notes: formData.company ? `Firma: ${formData.company}. ${formData.message || ''}` : formData.message || null,
-          },
-        });
-        if (notificationError) setNotificationWarning(true);
-      } catch {
-        setNotificationWarning(true);
-      }
-
-      // The booking is saved before notification attempts; do not ask for a duplicate booking.
-      if (selectedDate && selectedTime) {
-        const crm = await sendBookingToCRM({
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone || undefined,
-          booking_date: format(selectedDate, "yyyy-MM-dd"),
-          booking_time: selectedTime,
-          service_type: "konsultacja",
-          source: "fotz-studio.pl/kontakt",
-        }).catch(() => ({success:false}));
-        if (!crm?.success) setNotificationWarning(true);
-      }
-
+      const receipt = await submitConsultation({
+        ...result.data,
+        booking_date: format(selectedDate, "yyyy-MM-dd"),
+        booking_time: selectedTime,
+        service_type: 'konsultacja',
+      });
+      setNotificationWarning(!receipt.agency_notification_sent || !receipt.client_confirmation_sent);
       setStep("success");
-    } catch {
-      setFormErrors({ general: "Wystąpił błąd. Spróbuj ponownie." });
+    } catch (error) {
+      if (error && typeof error === 'object' && 'code' in error && error.code === 'SLOT_TAKEN') {
+        setSelectedTime(null);
+        setStep("date");
+        void fetchBookedSlots();
+      }
+      setFormErrors({ general: error instanceof Error ? error.message : "Wystąpił błąd. Spróbuj ponownie." });
     } finally {
       setIsSubmitting(false);
     }
@@ -360,6 +315,7 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
 
   return (
     <div className="space-y-6">
+      {formErrors.general && <p role="alert" className="text-sm text-destructive">{formErrors.general}</p>}
       {/* Week navigation */}
       <div className="flex items-center justify-between">
         <Button variant="outline" size="icon" onClick={handlePrevWeek} aria-label="Poprzedni tydzień">
