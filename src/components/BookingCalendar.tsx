@@ -11,13 +11,30 @@ import { useNavigate } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import { submitConsultation } from "@/lib/booking";
 
+/** Server-side note length is not published; keep the composed note within the limit the contact form already uses. */
+export const BOOKING_MESSAGE_LIMIT = 2000;
+
 const bookingSchema = z.object({
-  name: z.string().trim().min(2, "Imię musi mieć minimum 2 znaki"),
-  email: z.string().trim().email("Nieprawidłowy adres email"),
-  phone: z.string().trim().refine(value => value.replace(/\D/g, "").length >= 9, "Podaj prawidłowy numer telefonu"),
-  company: z.string().trim().optional(),
-  message: z.string().trim().optional(),
+  name: z.string().trim().min(2, "Imię musi mieć minimum 2 znaki").max(100, "Imię może mieć do 100 znaków"),
+  email: z.string().trim().email("Nieprawidłowy adres email").max(255, "Adres e-mail może mieć do 255 znaków"),
+  phone: z.string().trim().max(40, "Numer telefonu może mieć do 40 znaków").refine(value => value.replace(/\D/g, "").length >= 9, "Podaj prawidłowy numer telefonu"),
+  company: z.string().trim().max(200, "Nazwa firmy może mieć do 200 znaków").optional(),
+  message: z.string().trim().max(BOOKING_MESSAGE_LIMIT, `Wiadomość może mieć do ${BOOKING_MESSAGE_LIMIT} znaków`).optional(),
 });
+
+/**
+ * Joins the visitor's own message with an optional context note (e.g. a calculator summary)
+ * so that both land in the booking note / CRM. The visitor's text always wins the available room.
+ */
+// eslint-disable-next-line react-refresh/only-export-components
+export function composeBookingMessage(message: string | undefined, note?: string, limit = BOOKING_MESSAGE_LIMIT): string {
+  const own = (message ?? "").trim().slice(0, limit);
+  const extra = (note ?? "").trim();
+  if (!extra) return own;
+  if (!own) return extra.slice(0, limit);
+  const room = limit - own.length - 2;
+  return room > 0 ? `${own}\n\n${extra.slice(0, room)}` : own;
+}
 
 const timeSlots = [
   "09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00"
@@ -28,11 +45,27 @@ interface BookedSlot {
   time: string;
 }
 
-interface BookingCalendarProps {
-  onClose?: () => void;
+export interface BookingPrefill {
+  name?: string;
+  email?: string;
+  phone?: string;
+  company?: string;
+  message?: string;
 }
 
-export function BookingCalendar({ onClose }: BookingCalendarProps) {
+interface BookingCalendarProps {
+  onClose?: () => void;
+  /** Editable starting values, e.g. contact details already typed elsewhere on the page. Never persisted. */
+  initialValues?: BookingPrefill;
+  /** Context appended to the booking message (and thus the booking note / CRM), e.g. a calculator summary. */
+  note?: string;
+}
+
+const emptyForm = { name: "", email: "", phone: "", company: "", message: "" };
+type BookingField = keyof typeof emptyForm;
+const prefillForm = (values?: BookingPrefill) => ({ ...emptyForm, ...Object.fromEntries(Object.entries(values ?? {}).filter(([, v]) => typeof v === "string").map(([k, v]) => [k, String(v)])) }) as typeof emptyForm;
+
+export function BookingCalendar({ onClose, initialValues, note }: BookingCalendarProps) {
   const [currentWeekStart, setCurrentWeekStart] = useState(startOfWeek(new Date(), { weekStartsOn: 1 }));
   const [selectedDate, setSelectedDate] = useState<Date | null>(null);
   const [selectedTime, setSelectedTime] = useState<string | null>(null);
@@ -43,15 +76,26 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
   const [isLoadingSlots, setIsLoadingSlots] = useState(true);
   const [slotsError, setSlotsError] = useState(false);
   const slotsRequest = useRef(0);
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    company: "",
-    message: "",
-  });
+  const [formData, setFormData] = useState(() => prefillForm(initialValues));
+  const edited = useRef<Set<BookingField>>(new Set());
   const [formErrors, setFormErrors] = useState<Record<string, string>>({});
   const navigate = useNavigate();
+  const prefillKey = JSON.stringify(initialValues ?? null);
+
+  // New prefill values only replace fields the visitor has not edited; typed text is never overwritten.
+  useEffect(() => {
+    const next = prefillForm(JSON.parse(prefillKey) ?? undefined);
+    setFormData(prev => {
+      const merged = { ...prev };
+      (Object.keys(emptyForm) as BookingField[]).forEach(key => { if (!edited.current.has(key)) merged[key] = next[key]; });
+      return merged;
+    });
+  }, [prefillKey]);
+
+  const updateField = (key: BookingField, value: string) => {
+    edited.current.add(key);
+    setFormData(prev => ({ ...prev, [key]: value }));
+  };
 
   const weekDays = Array.from({ length: 7 }, (_, i) => addDays(currentWeekStart, i));
   const today = startOfDay(new Date());
@@ -151,6 +195,7 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
     try {
       const receipt = await submitConsultation({
         ...result.data,
+        message: composeBookingMessage(result.data.message, note),
         booking_date: format(selectedDate, "yyyy-MM-dd"),
         booking_time: selectedTime,
         service_type: 'konsultacja',
@@ -216,8 +261,9 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
                   id="booking-name" name="name"
                         autoComplete="name"
                         value={formData.name}
-                  onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
+                  onChange={(e) => updateField("name", e.target.value)}
                   placeholder="Jan Kowalski"
+                  maxLength={100}
                   className={cn("pl-10 bg-secondary", formErrors.name && "border-destructive")}
                 />
               </div>
@@ -232,8 +278,9 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
                   id="booking-email" name="email"
                         autoComplete="email"
                         value={formData.email}
-                  onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
+                  onChange={(e) => updateField("email", e.target.value)}
                   placeholder="jan@firma.pl"
+                  maxLength={255}
                   className={cn("pl-10 bg-secondary", formErrors.email && "border-destructive")}
                 />
               </div>
@@ -251,8 +298,9 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
                   id="booking-phone" name="phone"
                         autoComplete="tel"
                         value={formData.phone}
-                  onChange={(e) => setFormData(prev => ({ ...prev, phone: e.target.value }))}
+                  onChange={(e) => updateField("phone", e.target.value)}
                   placeholder="+48 123 456 789"
+                  maxLength={40}
                   className={cn("pl-10 bg-secondary", formErrors.phone && "border-destructive")}
                 />
               </div>
@@ -266,8 +314,9 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
                   id="booking-company" name="company"
                         autoComplete="organization"
                         value={formData.company}
-                  onChange={(e) => setFormData(prev => ({ ...prev, company: e.target.value }))}
+                  onChange={(e) => updateField("company", e.target.value)}
                   placeholder="Nazwa firmy"
+                  maxLength={200}
                   className="pl-10 bg-secondary"
                 />
               </div>
@@ -281,11 +330,19 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
               <Textarea
                 id="booking-message" name="message"
                         value={formData.message}
-                onChange={(e) => setFormData(prev => ({ ...prev, message: e.target.value }))}
+                onChange={(e) => updateField("message", e.target.value)}
                 placeholder="Opisz krótko, czego dotyczy Twoje zapytanie..."
-                className="pl-10 bg-secondary min-h-[100px] resize-none"
+                maxLength={BOOKING_MESSAGE_LIMIT}
+                className={cn("pl-10 bg-secondary min-h-[100px] resize-none", formErrors.message && "border-destructive")}
               />
             </div>
+            {formErrors.message && <p className="text-xs text-destructive mt-1">{formErrors.message}</p>}
+            {note?.trim() && (
+              <div className="mt-3 rounded-lg border border-border bg-muted/40 p-3 text-xs text-muted-foreground" data-testid="booking-note">
+                <p className="font-medium text-foreground mb-1">Do zgłoszenia dołączymy podsumowanie z kalkulatora:</p>
+                <p className="whitespace-pre-line max-h-32 overflow-y-auto">{note.trim()}</p>
+              </div>
+            )}
           </div>
 
           {formErrors.general && (

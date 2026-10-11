@@ -8,10 +8,10 @@ const require = createRequire(import.meta.url);
 
 // Exercise the real component's event handlers with hook state and external I/O
 // replaced in memory. These checks never connect to Supabase, email or the CRM.
-function harness({ availabilityError = false, insertError = false, notificationError = false, crmError = false, slotTaken = false } = {}) {
+function harness({ availabilityError = false, insertError = false, notificationError = false, crmError = false, slotTaken = false, props = {} } = {}) {
   const states = [], effects = [], dependencies = [];
   let cursor = 0;
-  const calls = { submit: 0, availability: 0 };
+  const calls = { submit: 0, availability: 0, payloads: [] };
   const react = { ...require('react'),
     useState(initial) {
       const i = cursor++;
@@ -42,8 +42,8 @@ function harness({ availabilityError = false, insertError = false, notificationE
       assert.equal(name, 'booking-availability'); calls.availability++;
       return { data: availabilityError ? null : {success:true,slots:[]}, error: availabilityError ? new Error('offline') : null };
     } } } },
-    '@/lib/booking': { submitConsultation: async () => {
-      calls.submit++;
+    '@/lib/booking': { submitConsultation: async payload => {
+      calls.submit++; calls.payloads.push(payload);
       if (slotTaken) throw Object.assign(new Error('Ten termin został już zajęty. Wybierz inny termin.'), {code:'SLOT_TAKEN'});
       if (insertError) throw new Error('Wystąpił błąd. Spróbuj ponownie.');
       return {success:true,crm_queued:true,crm_delivered:!crmError,agency_notification_sent:!notificationError,client_confirmation_sent:!notificationError};
@@ -53,7 +53,7 @@ function harness({ availabilityError = false, insertError = false, notificationE
   const code = ts.transpileModule(source, { compilerOptions: { module: ts.ModuleKind.CommonJS, jsx: ts.JsxEmit.ReactJSX, esModuleInterop: true } }).outputText;
   const context = { exports: {}, require: key => mocks[key] ?? require(key), console, Date, Error, AbortSignal };
   vm.runInNewContext(code, context);
-  function render() { cursor = 0; return context.exports.BookingCalendar({}); }
+  function render() { cursor = 0; return context.exports.BookingCalendar(props); }
   function all(tree, predicate, result = []) {
     if (!tree || typeof tree !== 'object') return result;
     if (predicate(tree)) result.push(tree);
@@ -87,7 +87,7 @@ function harness({ availabilityError = false, insertError = false, notificationE
     await find(tree, n => n.type === 'form').props.onSubmit({ preventDefault() {} });
     return render();
   }
-  return { render, flush, all, find, text, submit, calls };
+  return { render, flush, all, find, text, submit, selectSlot, calls, exports: context.exports };
 }
 
 test('failed booking save stays on the form and sends no notification or CRM event', async () => {
@@ -147,4 +147,91 @@ test('a slot taken on the server returns to date selection with an explanation',
  assert.match(h.text(tree), /Ten termin został już zajęty/);
  assert.doesNotMatch(h.text(tree), /Zgłoszenie konsultacji zapisane/);
  assert.equal(h.find(tree,n=>n.type==='button' && h.text(n).includes('Dalej')).props.disabled,true);
+});
+
+
+// --- Prefill and context note (calculator handoff) ---
+
+test('initial values prefill the form, stay editable and are sent with the booking', async () => {
+  const h = harness({ props: { initialValues: { name: 'Anna Prefill', email: 'anna@example.invalid', phone: '600700800', message: 'Chcę omówić wycenę' } } });
+  let tree = await h.selectSlot(); await h.flush(); tree = h.render();
+  assert.equal(h.find(tree, n => n.props?.id === 'booking-name').props.value, 'Anna Prefill');
+  assert.equal(h.find(tree, n => n.props?.id === 'booking-email').props.value, 'anna@example.invalid');
+  assert.equal(h.find(tree, n => n.props?.id === 'booking-message').props.value, 'Chcę omówić wycenę');
+  h.find(tree, n => n.props?.id === 'booking-name').props.onChange({ target: { value: 'Anna Poprawiona' } }); tree = h.render();
+  await h.find(tree, n => n.type === 'form').props.onSubmit({ preventDefault() {} });
+  tree = h.render();
+  assert.match(h.text(tree), /Zgłoszenie konsultacji zapisane/);
+  assert.equal(h.calls.submit, 1);
+  assert.equal(h.calls.payloads[0].name, 'Anna Poprawiona');
+  assert.equal(h.calls.payloads[0].email, 'anna@example.invalid');
+  assert.equal(h.calls.payloads[0].message, 'Chcę omówić wycenę');
+});
+
+test('a later prefill does not overwrite fields the visitor already edited', async () => {
+  const props = { initialValues: { name: 'Pierwsza', email: 'a@example.invalid' } };
+  const h = harness({ props });
+  let tree = await h.selectSlot(); await h.flush(); tree = h.render();
+  h.find(tree, n => n.props?.id === 'booking-name').props.onChange({ target: { value: 'Moje imię' } });
+  props.initialValues = { name: 'Druga', email: 'b@example.invalid' };
+  tree = h.render(); await h.flush(); tree = h.render();
+  assert.equal(h.find(tree, n => n.props?.id === 'booking-name').props.value, 'Moje imię');
+  assert.equal(h.find(tree, n => n.props?.id === 'booking-email').props.value, 'b@example.invalid');
+});
+
+test('nothing is submitted just because the calendar was opened with prefilled values', async () => {
+  const h = harness({ props: { initialValues: { name: 'Anna', email: 'anna@example.invalid', phone: '600700800' }, note: 'Wycena z kalkulatora' } });
+  const tree = await h.selectSlot(); await h.flush(); h.render();
+  assert.match(h.text(tree), /Do zgłoszenia dołączymy podsumowanie z kalkulatora/);
+  assert.equal(h.calls.submit, 0);
+});
+
+test('the context note is appended to the booking message and shown to the visitor', async () => {
+  const note = 'Wycena z kalkulatora (orientacyjna, netto):\n- Landing Page: 2 500 PLN jednorazowo';
+  const h = harness({ props: { note } });
+  let tree = await h.selectSlot();
+  for (const [id, value] of [['booking-name','Test User'],['booking-email','test@example.invalid'],['booking-phone','123456789'],['booking-message','Pytanie o termin']]) {
+    h.find(tree, n => n.props?.id === id).props.onChange({ target: { value } }); tree = h.render();
+  }
+  assert.match(h.text(tree), /Do zgłoszenia dołączymy podsumowanie z kalkulatora/);
+  await h.find(tree, n => n.type === 'form').props.onSubmit({ preventDefault() {} });
+  assert.equal(h.calls.payloads[0].message, `Pytanie o termin\n\n${note}`);
+  assert.equal(h.calls.payloads[0].service_type, 'konsultacja');
+});
+
+test('without a note the message is sent unchanged and no note box is rendered', async () => {
+  const h = harness();
+  let tree = await h.selectSlot();
+  assert.doesNotMatch(h.text(tree), /Do zgłoszenia dołączymy/);
+  for (const [id, value] of [['booking-name','Test User'],['booking-email','test@example.invalid'],['booking-phone','123456789'],['booking-message','Tylko moja treść']]) {
+    h.find(tree, n => n.props?.id === id).props.onChange({ target: { value } }); tree = h.render();
+  }
+  await h.find(tree, n => n.type === 'form').props.onSubmit({ preventDefault() {} });
+  assert.equal(h.calls.payloads[0].message, 'Tylko moja treść');
+});
+
+test('composeBookingMessage keeps the visitor text whole and trims only the note to the limit', () => {
+  const { composeBookingMessage, BOOKING_MESSAGE_LIMIT } = harness().exports;
+  assert.equal(BOOKING_MESSAGE_LIMIT, 2000);
+  assert.equal(composeBookingMessage('', 'nota'), 'nota');
+  assert.equal(composeBookingMessage('tekst', ''), 'tekst');
+  assert.equal(composeBookingMessage(undefined, undefined), '');
+  const own = 'x'.repeat(1990);
+  const composed = composeBookingMessage(own, 'y'.repeat(100));
+  assert.equal(composed.length, 2000);
+  assert.ok(composed.startsWith(own + '\n\n'));
+  assert.equal(composeBookingMessage('x'.repeat(1999), 'nota'), 'x'.repeat(1999));
+  assert.equal(composeBookingMessage('a', 'b', 10), 'a\n\nb');
+});
+
+test('a message over the limit is rejected before anything is sent', async () => {
+  const h = harness({ props: { note: 'nota' } });
+  let tree = await h.selectSlot();
+  for (const [id, value] of [['booking-name','Test User'],['booking-email','test@example.invalid'],['booking-phone','123456789'],['booking-message','z'.repeat(2001)]]) {
+    h.find(tree, n => n.props?.id === id).props.onChange({ target: { value } }); tree = h.render();
+  }
+  await h.find(tree, n => n.type === 'form').props.onSubmit({ preventDefault() {} });
+  tree = h.render();
+  assert.match(h.text(tree), /Wiadomość może mieć do 2000 znaków/);
+  assert.equal(h.calls.submit, 0);
 });

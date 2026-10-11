@@ -153,6 +153,70 @@ const urgencyOptions = [
   { id: "express", label: "Express (do 2 tyg.)", multiplier: 1.5 },
 ];
 
+const contractDiscounts = [
+  { months: 12, discount: 0.15 },
+  { months: 6, discount: 0.10 },
+  { months: 3, discount: 0.05 },
+];
+
+const formatPrice = (price: number) => new Intl.NumberFormat("pl-PL").format(price);
+const formatPercent = (ratio: number) => `${Math.round(ratio * 100)}%`;
+
+/** Keeps the note well under the booking message limit so the visitor's own text always fits as well. */
+export const CALCULATOR_NOTE_LIMIT = 1200;
+const NOTE_ITEM_LIMIT = 12;
+
+export interface CalculatorNoteInput {
+  selectedItems: { name: string; price: number; type: string }[];
+  complexityLabel: string;
+  urgencyLabel: string;
+  contractMonths: number;
+  oneTimeTotal: number;
+  monthlyTotal: number;
+  discountedMonthly: number;
+  monthlyDiscount: number;
+  totalContractValue: number;
+  /** Receipt of an enquiry already sent from this page, so the CRM can link both records. */
+  enquiryReceipt?: string;
+}
+
+/**
+ * Plain-text summary of the current estimate for the booking note / CRM.
+ * Contains only the selection and derived amounts — no contact data.
+ */
+// eslint-disable-next-line react-refresh/only-export-components
+export function buildCalculatorNote(input: CalculatorNoteInput): string {
+  if (input.selectedItems.length === 0) return "";
+  const shown = input.selectedItems.slice(0, NOTE_ITEM_LIMIT);
+  const hidden = input.selectedItems.length - shown.length;
+  const lines = [
+    "Wycena z kalkulatora (orientacyjna, netto):",
+    ...shown.map(item => `- ${item.name}: ${formatPrice(item.price)} PLN${item.type === "miesięcznie" ? "/mies." : " jednorazowo"}`),
+    ...(hidden > 0 ? [`- oraz ${hidden} kolejnych pozycji`] : []),
+    `Poziom: ${input.complexityLabel}; termin: ${input.urgencyLabel}${input.monthlyTotal > 0 ? `; umowa: ${input.contractMonths} mies.` : ""}`,
+  ];
+  const totals: string[] = [];
+  if (input.oneTimeTotal > 0) totals.push(`jednorazowo ${formatPrice(input.oneTimeTotal)} PLN`);
+  if (input.monthlyTotal > 0) totals.push(`miesięcznie ${formatPrice(input.discountedMonthly)} PLN${input.monthlyDiscount > 0 ? ` (rabat ${formatPercent(input.monthlyDiscount)})` : ""}`);
+  if (input.monthlyTotal > 0) totals.push(`łącznie za ${input.contractMonths} mies. ${formatPrice(input.totalContractValue)} PLN`);
+  if (totals.length) lines.push(`Szacunek: ${totals.join("; ")}.`);
+  if (input.enquiryReceipt) lines.push(`Zapytanie z kalkulatora wysłane wcześniej, nr zgłoszenia: ${input.enquiryReceipt}`);
+  const note = lines.join("\n");
+  return note.length > CALCULATOR_NOTE_LIMIT ? `${note.slice(0, CALCULATOR_NOTE_LIMIT - 1)}…` : note;
+}
+
+/** Price ranges derived from the same model the calculator uses, so the SEO copy cannot drift from it. */
+const categoryPriceRanges = categories.map(category => {
+  const label = (service: ServiceItem) => `${formatPrice(service.basePrice)} PLN${service.priceType === "miesięcznie" ? "/mies." : ""} (${service.name})`;
+  const cheapest = category.services.reduce((a, b) => (b.basePrice < a.basePrice ? b : a));
+  const dearest = category.services.reduce((a, b) => (b.basePrice > a.basePrice ? b : a));
+  return { name: category.name, from: label(cheapest), to: label(dearest) };
+});
+const maxComplexity = Math.max(...complexityLevels.map(level => level.multiplier));
+const maxUrgency = Math.max(...urgencyOptions.map(option => option.multiplier));
+const discountRange = `${formatPercent(Math.min(...contractDiscounts.map(d => d.discount)))}–${formatPercent(Math.max(...contractDiscounts.map(d => d.discount)))}`;
+const minDiscountMonths = Math.min(...contractDiscounts.map(d => d.months));
+
 export default function KalkulatorCen() {
   const { toast } = useToast();
   const [selectedServices, setSelectedServices] = useState<string[]>([]);
@@ -163,6 +227,7 @@ export default function KalkulatorCen() {
   const [showBookingModal, setShowBookingModal] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [enquiryReceipt, setEnquiryReceipt] = useState("");
   const [contactData, setContactData] = useState({
     name: "",
     email: "",
@@ -220,10 +285,7 @@ export default function KalkulatorCen() {
     });
 
     // Monthly discount for longer contracts
-    let monthlyDiscount = 0;
-    if (contractMonths >= 12) monthlyDiscount = 0.15;
-    else if (contractMonths >= 6) monthlyDiscount = 0.10;
-    else if (contractMonths >= 3) monthlyDiscount = 0.05;
+    const monthlyDiscount = contractDiscounts.find(tier => contractMonths >= tier.months)?.discount ?? 0;
 
     const discountedMonthly = Math.round(monthlyTotal * (1 - monthlyDiscount));
     const totalContractValue = oneTimeTotal + (discountedMonthly * contractMonths);
@@ -238,16 +300,26 @@ export default function KalkulatorCen() {
     };
   }, [selectedServices, complexity, urgency, contractMonths]);
 
-  const formatPrice = (price: number) => {
-    return new Intl.NumberFormat('pl-PL').format(price);
-  };
+  // Cheap to recompute on every render; always reflects the current selection when the calendar submits.
+  const calculatorNote = buildCalculatorNote({
+    selectedItems: calculation.selectedItems,
+    complexityLabel: getComplexityLabel(),
+    urgencyLabel: urgencyOptions.find(o => o.id === urgency)?.label ?? "",
+    contractMonths,
+    oneTimeTotal: calculation.oneTimeTotal,
+    monthlyTotal: calculation.monthlyTotal,
+    discountedMonthly: calculation.discountedMonthly,
+    monthlyDiscount: calculation.monthlyDiscount,
+    totalContractValue: calculation.totalContractValue,
+    enquiryReceipt,
+  });
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
     try {
-      await submitWeb3Form({
+      const result = await submitWeb3Form({
         subject: "Nowe zapytanie z Kalkulatora Cen - Fotz Studio",
         from_name: contactData.name,
         email: contactData.email,
@@ -261,6 +333,7 @@ export default function KalkulatorCen() {
         estimated_monthly: `${formatPrice(calculation.discountedMonthly)} PLN`,
         total_contract_value: `${formatPrice(calculation.totalContractValue)} PLN`
       });
+      setEnquiryReceipt(String(result.submission_id || result.id || ""));
 
       toast({
         title: "Wycena wysłana!",
@@ -279,11 +352,16 @@ export default function KalkulatorCen() {
     }
   };
 
-  const handleBookingComplete = () => {
-    setShowBookingModal(false);
+  const resetAfterHandoff = () => {
     setFormSubmitted(false);
     setSelectedServices([]);
+    setEnquiryReceipt("");
     setContactData({ name: "", email: "", phone: "", message: "" });
+  };
+
+  const handleBookingComplete = () => {
+    setShowBookingModal(false);
+    resetAfterHandoff();
   };
 
   return (
@@ -707,11 +785,7 @@ export default function KalkulatorCen() {
                     <Button 
                       variant="outline" 
                       className="w-full"
-                      onClick={() => {
-                        setFormSubmitted(false);
-                        setSelectedServices([]);
-                        setContactData({ name: "", email: "", phone: "", message: "" });
-                      }}
+                      onClick={resetAfterHandoff}
                     >
                       Zamknij
                     </Button>
@@ -760,8 +834,15 @@ export default function KalkulatorCen() {
                       <strong>Szacunkowa wartość:</strong>{" "}
                       {formatPrice(calculation.totalContractValue || calculation.oneTimeTotal)} PLN
                     </p>
+                    <p className="text-xs text-muted-foreground mt-2">
+                      Podsumowanie wyceny dołączymy do zgłoszenia terminu. Dane kontaktowe możesz zmienić przed wysłaniem.
+                    </p>
                   </div>
-                  <BookingCalendar onClose={handleBookingComplete} />
+                  <BookingCalendar
+                    onClose={handleBookingComplete}
+                    note={calculatorNote}
+                    initialValues={{ name: contactData.name, email: contactData.email, phone: contactData.phone, message: contactData.message }}
+                  />
                 </motion.div>
               </motion.div>
             )}
@@ -799,18 +880,20 @@ export default function KalkulatorCen() {
               Ile kosztuje pozycjonowanie SEO, strona www i kampanie Google Ads?
             </h2>
             <p className="text-muted-foreground mb-4">
-              Pozycjonowanie SEO: od 800 zł/mc (lokalna firma, mała witryna)
-              do 5000+ zł/mc (sklep e-commerce, duże serwisy). Strona internetowa:
-              od 2500 zł (landing page) do 20 000+ zł (rozbudowany portal).
-              Kampanie Google Ads: obsługa od 500 zł/mc + budżet reklamowy.
-              Obsługa social media: od 1200 zł/mc (podstawowy pakiet) do 4000+ zł/mc
-              (pełne zarządzanie z reklamami).
+              Poniższe widełki to ceny bazowe z kalkulatora (poziom podstawowy, termin standardowy), netto:
             </p>
+            <ul className="text-muted-foreground mb-4 list-disc pl-6 space-y-1">
+              {categoryPriceRanges.map(range => (
+                <li key={range.name}>
+                  <strong>{range.name}:</strong> od {range.from} do {range.to}.
+                </li>
+              ))}
+            </ul>
             <p className="text-muted-foreground mb-6">
-              Produkcja wideo: reel 500-1500 zł, spot reklamowy 3000-15 000 zł.
-              Identyfikacja wizualna (logo + brand book): 2000-8000 zł.
-              Sklep internetowy (WooCommerce/Shopify): 5000-25 000 zł.
-              Wszystkie ceny netto, wycena indywidualna bezpłatna.
+              Poziom zaawansowania podnosi cenę bazową nawet {maxComplexity}-krotnie (Premium), a krótszy termin realizacji
+              o maksymalnie +{formatPercent(maxUrgency - 1)} (Express). Usługi stałe przy umowie od {minDiscountMonths} miesięcy
+              mają rabat {discountRange}. Kampanie reklamowe nie obejmują budżetu mediowego. Wszystkie ceny netto;
+              finalna wycena jest przygotowywana indywidualnie i bezpłatnie.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
