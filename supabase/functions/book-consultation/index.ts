@@ -48,10 +48,15 @@ const escapeHtml = (value: unknown) => String(value ?? "")
   .replace(/"/g, "&quot;")
   .replace(/'/g, "&#39;");
 
-const sendEmail = async (to: string, subject: string, html: string) => {
+const isEmailLike = (value: unknown): value is string =>
+  typeof value === "string" && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+
+const sendEmail = async (to: string, subject: string, html: string, replyTo?: string) => {
   const apiKey = Deno.env.get("RESEND_API_KEY");
   if (!apiKey) return false;
   const from = (Deno.env.get("CONTACT_FROM") || "Fotz Studio <onboarding@resend.dev>").trim();
+  const body: Record<string, unknown> = { from, to: [to], subject, html };
+  if (isEmailLike(replyTo)) body.reply_to = replyTo;
   try {
     const response = await fetch("https://api.resend.com/emails", {
       method: "POST",
@@ -59,7 +64,7 @@ const sendEmail = async (to: string, subject: string, html: string) => {
         "Content-Type": "application/json",
         "Authorization": `Bearer ${apiKey}`,
       },
-      body: JSON.stringify({ from, to: [to], subject, html }),
+      body: JSON.stringify(body),
     });
     if (!response.ok) {
       console.error("[book-consultation] email failed", { status: response.status });
@@ -223,6 +228,7 @@ Deno.serve(async (req) => {
       inbox,
       `Nowa rezerwacja: ${safeSubjectName} — ${date} ${time}`,
       `<div style="font-family:Arial,sans-serif;max-width:640px;margin:auto"><h1>Nowa konsultacja FOTZ</h1><p><strong>${safeDate}, ${safeTime}</strong></p><p>Klient: ${safeName}<br>Email: ${safeEmail}<br>Telefon: ${safePhone}${safeCompany ? `<br>Firma: ${safeCompany}` : ""}</p>${safeMessage ? `<p>${safeMessage}</p>` : ""}<p><a href="https://fotz-connect-hub.lovable.app/crm">Otwórz CRM</a></p></div>`,
+      email,
     );
     if (agencyNotificationSent) notificationUpdates.agency_notification_sent_at = new Date().toISOString();
   }
@@ -233,6 +239,7 @@ Deno.serve(async (req) => {
       email,
       `Potwierdzenie konsultacji FOTZ — ${date} ${time}`,
       `<div style="font-family:Arial,sans-serif;max-width:640px;margin:auto"><h1>Termin zapisany</h1><p>Cześć ${safeName},</p><p>Twoja bezpłatna konsultacja z FOTZ Studio została zapisana na <strong>${safeDate} o ${safeTime}</strong>.</p><p>Jeśli termin wymaga zmiany, odpowiedz na tę wiadomość lub napisz na adam@fotz.pl.</p><p>Do zobaczenia,<br>FOTZ Studio</p></div>`,
+      (Deno.env.get("CONTACT_REPLY_TO") || "adam@fotz.pl").trim(),
     );
     if (clientConfirmationSent) notificationUpdates.client_confirmation_sent_at = new Date().toISOString();
   }
