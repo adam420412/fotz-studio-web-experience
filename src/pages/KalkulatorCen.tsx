@@ -681,7 +681,7 @@ export default function KalkulatorCen() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-background/80 backdrop-blur-sm"
+                className="fixed inset-0 z-[80] flex items-center justify-center p-4 bg-background/80 backdrop-blur-sm"
                 onClick={() => setShowContactForm(false)}
               >
                 <motion.div
@@ -689,7 +689,7 @@ export default function KalkulatorCen() {
                   animate={{ scale: 1, opacity: 1 }}
                   exit={{ scale: 0.95, opacity: 0 }}
                   onClick={e => e.stopPropagation()}
-                  className="bg-background border rounded-xl p-6 max-w-md w-full shadow-xl"
+                  className="bg-background border rounded-xl p-6 max-w-md w-full shadow-xl max-h-[90dvh] overflow-y-auto"
                 >
                   <h3 className="text-xl font-bold mb-4">Wyślij zapytanie o wycenę</h3>
                   <form onSubmit={handleSubmit} className="space-y-4">
@@ -762,13 +762,13 @@ export default function KalkulatorCen() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-background/80 backdrop-blur-sm"
+                className="fixed inset-0 z-[80] flex items-center justify-center p-4 bg-background/80 backdrop-blur-sm"
               >
                 <motion.div
                   initial={{ scale: 0.95, opacity: 0 }}
                   animate={{ scale: 1, opacity: 1 }}
                   exit={{ scale: 0.95, opacity: 0 }}
-                  className="bg-background border rounded-xl p-8 max-w-md w-full shadow-xl text-center"
+                  className="bg-background border rounded-xl p-8 max-w-md w-full shadow-xl text-center max-h-[90dvh] overflow-y-auto"
                 >
                   <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
                     <CheckCircle className="w-8 h-8 text-primary" />
@@ -810,7 +810,7 @@ export default function KalkulatorCen() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-background/80 backdrop-blur-sm"
+                className="fixed inset-0 z-[80] flex items-center justify-center p-4 bg-background/80 backdrop-blur-sm"
                 onClick={() => setShowBookingModal(false)}
               >
                 <motion.div
@@ -818,7 +818,7 @@ export default function KalkulatorCen() {
                   animate={{ scale: 1, opacity: 1 }}
                   exit={{ scale: 0.95, opacity: 0 }}
                   onClick={e => e.stopPropagation()}
-                  className="bg-background border rounded-xl p-6 max-w-lg w-full shadow-xl max-h-[90vh] overflow-y-auto"
+                  className="bg-background border rounded-xl p-6 max-w-lg w-full shadow-xl max-h-[90dvh] overflow-y-auto"
                 >
                   <div className="flex items-center justify-between mb-4">
                     <h3 className="text-xl font-bold">Zarezerwuj konsultację</h3>

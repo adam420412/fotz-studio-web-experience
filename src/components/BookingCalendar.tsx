@@ -250,12 +250,12 @@ export function BookingCalendar({ onClose, initialValues, note }: BookingCalenda
     return (
       <div className="space-y-6">
         <div className="flex items-center gap-3 p-4 bg-primary/10 rounded-lg">
-          <Calendar className="w-5 h-5 text-primary" />
-          <span className="font-medium">
+          <Calendar className="w-5 h-5 shrink-0 text-primary" />
+          <span className="min-w-0 flex-1 font-medium">
             {selectedDate && format(selectedDate, "EEEE, d MMMM yyyy", { locale: pl })}
           </span>
-          <Clock className="w-5 h-5 text-primary ml-auto" />
-          <span className="font-medium">{selectedTime}</span>
+          <Clock className="w-5 h-5 shrink-0 text-primary ml-auto" />
+          <span className="shrink-0 whitespace-nowrap font-medium">{selectedTime}</span>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-4">
