@@ -104,12 +104,21 @@ test('buildCalculatorNote lists the selection, labels and totals without any con
   assert.doesNotMatch(oneOff, /umowa|miesięcznie|rabat|łącznie/);
 });
 
-test('buildCalculatorNote caps very long selections within the note limit', () => {
+test('buildCalculatorNote shortens only the item list; totals and the enquiry receipt survive at the limit', () => {
   const { buildCalculatorNote, CALCULATOR_NOTE_LIMIT } = harness().exports;
-  const selectedItems = Array.from({ length: 30 }, (_, i) => ({ name: `Usługa o bardzo długiej nazwie numer ${i + 1} z dodatkowym opisem`, price: 1000 + i, type: 'miesięcznie' }));
-  const note = buildCalculatorNote({ selectedItems, complexityLabel: 'Premium', urgencyLabel: 'Express (do 2 tyg.)', contractMonths: 24, oneTimeTotal: 0, monthlyTotal: 30000, discountedMonthly: 25500, monthlyDiscount: 0.15, totalContractValue: 612000 });
+  const selectedItems = Array.from({ length: 30 }, (_, i) => ({ name: `Usługa o bardzo długiej nazwie numer ${i + 1} z dodatkowym opisem pakietu`, price: 1000 + i, type: 'miesięcznie' }));
+  const note = buildCalculatorNote({ selectedItems, complexityLabel: 'Premium', urgencyLabel: 'Express (do 2 tyg.)', contractMonths: 24, oneTimeTotal: 0, monthlyTotal: 30435, discountedMonthly: 25870, monthlyDiscount: 0.15, totalContractValue: 620880, enquiryReceipt: 'sub-max' });
   assert.ok(note.length <= CALCULATOR_NOTE_LIMIT, note.length);
-  assert.match(note, /- oraz 18 kolejnych pozycji/);
+  const lines = note.split('\n');
+  assert.equal(lines[0], 'Wycena z kalkulatora (orientacyjna, netto):');
+  assert.match(lines.at(-3), /^Poziom: Premium; termin: Express \(do 2 tyg\.\); umowa: 24 mies\.$/);
+  assert.match(lines.at(-2).replace(/\s+/g, ' '), /^Szacunek: miesięcznie 25 870 PLN \(rabat 15%\); łącznie za 24 mies\. 620 880 PLN\.$/);
+  assert.equal(lines.at(-1), 'Zapytanie z kalkulatora wysłane wcześniej, nr zgłoszenia: sub-max');
+  const shown = lines.filter(l => l.startsWith('- Usługa')).length;
+  const omitted = lines.find(l => l.startsWith('- oraz'));
+  assert.ok(shown >= 1 && shown <= 12, `shown ${shown}`);
+  assert.equal(omitted, `- oraz ${30 - shown} kolejnych pozycji`);
+  assert.doesNotMatch(note, /…/);
 });
 
 test('after a sent estimate the calendar receives the note and the typed contact data as editable initial values', async () => {
@@ -128,6 +137,32 @@ test('after a sent estimate the calendar receives the note and the typed contact
   assert.match(note, /nr zgłoszenia: sub-123/);
   assert.doesNotMatch(note, /Ewa|example\.invalid|600700800|kontakt po 16/);
   assert.equal(h.calls.submissions.length, 1, 'opening the calendar sends nothing');
+});
+
+test('with every service selected after a sent estimate, the calendar note still ends with totals and the receipt', async () => {
+  const h = harness();
+  let tree = h.render();
+  const tiles = h.all(tree, n => n.type === 'div' && typeof n.props.onClick === 'function' && /od \d/.test(h.plain(h.text(n))) && !h.plain(h.text(n)).includes('Wybierz usługi'));
+  assert.equal(tiles.length, 30, 'all services in the model');
+  for (const tile of tiles) { tile.props.onClick({ stopPropagation() {} }); }
+  tree = h.render();
+  tree = h.click(tree, h.button('Wyślij zapytanie'));
+  for (const [id, value] of Object.entries({ name: 'Max Test', email: 'max@example.invalid', phone: '600700800', message: 'Wszystko' })) {
+    h.find(tree, n => (n.type === 'Input' || n.type === 'Textarea') && n.props.id === id).props.onChange({ target: { value } }); tree = h.render();
+  }
+  await h.find(tree, n => n.type === 'form').props.onSubmit({ preventDefault() {} });
+  tree = h.render();
+  tree = h.click(tree, h.button('Zarezerwuj konsultację'));
+  const note = h.find(tree, n => n.type === 'BookingCalendar').props.note;
+  const { CALCULATOR_NOTE_LIMIT } = h.exports;
+  assert.ok(note.length <= CALCULATOR_NOTE_LIMIT, note.length);
+  const lines = note.split('\n');
+  assert.match(lines.at(-2), /^Szacunek: jednorazowo .* PLN; miesięcznie .* PLN \(rabat 5%\); łącznie za 3 mies\. .* PLN\.$/);
+  assert.equal(lines.at(-1), 'Zapytanie z kalkulatora wysłane wcześniej, nr zgłoszenia: sub-123');
+  assert.equal(lines.filter(l => l.startsWith('- ') && !l.startsWith('- oraz')).length, 12);
+  assert.ok(lines.includes('- oraz 18 kolejnych pozycji'));
+  assert.doesNotMatch(note, /Max|example\.invalid|600700800/);
+  assert.equal(h.calls.submissions.length, 1);
 });
 
 test('opening the calendar without sending an estimate passes the live selection and empty contact fields', () => {

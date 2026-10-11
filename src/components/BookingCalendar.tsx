@@ -11,8 +11,10 @@ import { useNavigate } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import { submitConsultation } from "@/lib/booking";
 
-/** Server-side note length is not published; keep the composed note within the limit the contact form already uses. */
+/** The visitor's own description, same limit as the contact form. */
 export const BOOKING_MESSAGE_LIMIT = 2000;
+/** The composed message (description + context note); book-consultation accepts `message` up to 4000 characters. */
+export const BOOKING_COMPOSED_LIMIT = 4000;
 
 const bookingSchema = z.object({
   name: z.string().trim().min(2, "Imię musi mieć minimum 2 znaki").max(100, "Imię może mieć do 100 znaków"),
@@ -23,16 +25,21 @@ const bookingSchema = z.object({
 });
 
 /**
- * Joins the visitor's own message with an optional context note (e.g. a calculator summary)
- * so that both land in the booking note / CRM. The visitor's text always wins the available room.
+ * Joins the visitor's own message (up to `messageLimit`) with an optional context note
+ * (e.g. a calculator summary) so that both land in the booking note / CRM. The composed text
+ * stays within `totalLimit`; a full 2000-character description plus a 1200-character note always fits.
  */
 // eslint-disable-next-line react-refresh/only-export-components
-export function composeBookingMessage(message: string | undefined, note?: string, limit = BOOKING_MESSAGE_LIMIT): string {
-  const own = (message ?? "").trim().slice(0, limit);
+export function composeBookingMessage(
+  message: string | undefined,
+  note?: string,
+  { messageLimit = BOOKING_MESSAGE_LIMIT, totalLimit = BOOKING_COMPOSED_LIMIT } = {},
+): string {
+  const own = (message ?? "").trim().slice(0, messageLimit);
   const extra = (note ?? "").trim();
   if (!extra) return own;
-  if (!own) return extra.slice(0, limit);
-  const room = limit - own.length - 2;
+  if (!own) return extra.slice(0, totalLimit);
+  const room = totalLimit - own.length - 2;
   return room > 0 ? `${own}\n\n${extra.slice(0, room)}` : own;
 }
 

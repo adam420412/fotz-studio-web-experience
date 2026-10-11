@@ -187,22 +187,27 @@ export interface CalculatorNoteInput {
 // eslint-disable-next-line react-refresh/only-export-components
 export function buildCalculatorNote(input: CalculatorNoteInput): string {
   if (input.selectedItems.length === 0) return "";
-  const shown = input.selectedItems.slice(0, NOTE_ITEM_LIMIT);
-  const hidden = input.selectedItems.length - shown.length;
-  const lines = [
-    "Wycena z kalkulatora (orientacyjna, netto):",
-    ...shown.map(item => `- ${item.name}: ${formatPrice(item.price)} PLN${item.type === "miesięcznie" ? "/mies." : " jednorazowo"}`),
-    ...(hidden > 0 ? [`- oraz ${hidden} kolejnych pozycji`] : []),
-    `Poziom: ${input.complexityLabel}; termin: ${input.urgencyLabel}${input.monthlyTotal > 0 ? `; umowa: ${input.contractMonths} mies.` : ""}`,
-  ];
+  const header = "Wycena z kalkulatora (orientacyjna, netto):";
+  const itemLines = input.selectedItems.map(item => `- ${item.name}: ${formatPrice(item.price)} PLN${item.type === "miesięcznie" ? "/mies." : " jednorazowo"}`);
+  // Parameters, totals and the enquiry receipt are always kept; only the item list is shortened to fit.
+  const tail = [`Poziom: ${input.complexityLabel}; termin: ${input.urgencyLabel}${input.monthlyTotal > 0 ? `; umowa: ${input.contractMonths} mies.` : ""}`];
   const totals: string[] = [];
   if (input.oneTimeTotal > 0) totals.push(`jednorazowo ${formatPrice(input.oneTimeTotal)} PLN`);
   if (input.monthlyTotal > 0) totals.push(`miesięcznie ${formatPrice(input.discountedMonthly)} PLN${input.monthlyDiscount > 0 ? ` (rabat ${formatPercent(input.monthlyDiscount)})` : ""}`);
   if (input.monthlyTotal > 0) totals.push(`łącznie za ${input.contractMonths} mies. ${formatPrice(input.totalContractValue)} PLN`);
-  if (totals.length) lines.push(`Szacunek: ${totals.join("; ")}.`);
-  if (input.enquiryReceipt) lines.push(`Zapytanie z kalkulatora wysłane wcześniej, nr zgłoszenia: ${input.enquiryReceipt}`);
-  const note = lines.join("\n");
-  return note.length > CALCULATOR_NOTE_LIMIT ? `${note.slice(0, CALCULATOR_NOTE_LIMIT - 1)}…` : note;
+  if (totals.length) tail.push(`Szacunek: ${totals.join("; ")}.`);
+  if (input.enquiryReceipt) tail.push(`Zapytanie z kalkulatora wysłane wcześniej, nr zgłoszenia: ${input.enquiryReceipt}`);
+  const compose = (shown: number) => {
+    const hidden = itemLines.length - shown;
+    return [header, ...itemLines.slice(0, shown), ...(hidden > 0 ? [`- oraz ${hidden} kolejnych pozycji`] : []), ...tail].join("\n");
+  };
+  for (let shown = Math.min(itemLines.length, NOTE_ITEM_LIMIT); shown >= 0; shown--) {
+    const note = compose(shown);
+    if (note.length <= CALCULATOR_NOTE_LIMIT) return note;
+  }
+  // Unreachable with the current model (the fixed lines are a few hundred characters); keep the tail whole regardless.
+  const fixed = [header, ...tail].join("\n");
+  return fixed.length <= CALCULATOR_NOTE_LIMIT ? fixed : `${fixed.slice(0, CALCULATOR_NOTE_LIMIT - 1)}…`;
 }
 
 /** Price ranges derived from the same model the calculator uses, so the SEO copy cannot drift from it. */

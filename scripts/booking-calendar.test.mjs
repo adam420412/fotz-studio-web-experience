@@ -210,18 +210,34 @@ test('without a note the message is sent unchanged and no note box is rendered',
   assert.equal(h.calls.payloads[0].message, 'Tylko moja treść');
 });
 
-test('composeBookingMessage keeps the visitor text whole and trims only the note to the limit', () => {
-  const { composeBookingMessage, BOOKING_MESSAGE_LIMIT } = harness().exports;
+test('composeBookingMessage keeps the full description and the full note within the composed limit', () => {
+  const { composeBookingMessage, BOOKING_MESSAGE_LIMIT, BOOKING_COMPOSED_LIMIT } = harness().exports;
   assert.equal(BOOKING_MESSAGE_LIMIT, 2000);
+  assert.equal(BOOKING_COMPOSED_LIMIT, 4000);
   assert.equal(composeBookingMessage('', 'nota'), 'nota');
   assert.equal(composeBookingMessage('tekst', ''), 'tekst');
   assert.equal(composeBookingMessage(undefined, undefined), '');
-  const own = 'x'.repeat(1990);
-  const composed = composeBookingMessage(own, 'y'.repeat(100));
-  assert.equal(composed.length, 2000);
-  assert.ok(composed.startsWith(own + '\n\n'));
-  assert.equal(composeBookingMessage('x'.repeat(1999), 'nota'), 'x'.repeat(1999));
-  assert.equal(composeBookingMessage('a', 'b', 10), 'a\n\nb');
+  const own = 'x'.repeat(2000), note = 'y'.repeat(1200);
+  assert.equal(composeBookingMessage(own, note), `${own}\n\n${note}`);
+  assert.equal(composeBookingMessage('x'.repeat(2500), note), `${own}\n\n${note}`, 'description itself is capped at 2000');
+  assert.equal(composeBookingMessage(own, 'y'.repeat(3000)).length, 4000, 'only an oversized note is trimmed, to the composed limit');
+  assert.equal(composeBookingMessage('a', 'b', { messageLimit: 1, totalLimit: 10 }), 'a\n\nb');
+  assert.equal(composeBookingMessage('ab', 'c', { messageLimit: 2, totalLimit: 4 }), 'ab', 'no room for the separator means the description wins');
+});
+
+test('a full 2000-character description and a full 1200-character note reach the booking payload uncut', async () => {
+  const note = 'N'.repeat(1200);
+  const own = 'O'.repeat(2000);
+  const h = harness({ props: { note } });
+  let tree = await h.selectSlot();
+  for (const [id, value] of [['booking-name','Test User'],['booking-email','test@example.invalid'],['booking-phone','123456789'],['booking-message',own]]) {
+    h.find(tree, n => n.props?.id === id).props.onChange({ target: { value } }); tree = h.render();
+  }
+  await h.find(tree, n => n.type === 'form').props.onSubmit({ preventDefault() {} });
+  tree = h.render();
+  assert.match(h.text(tree), /Zgłoszenie konsultacji zapisane/);
+  assert.equal(h.calls.payloads[0].message, `${own}\n\n${note}`);
+  assert.equal(h.calls.payloads[0].message.length, 3202);
 });
 
 test('a message over the limit is rejected before anything is sent', async () => {
