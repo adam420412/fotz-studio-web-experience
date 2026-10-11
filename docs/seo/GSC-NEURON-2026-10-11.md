@@ -123,3 +123,19 @@ Pomocnicza analiza ogólnej frazy Instagram Ads (`1a95b2ccb6cba431`) została oz
 Walidacja: typecheck, 148/148 testów, build 1074 dokumentów / 1071 pełnych treści / 0 błędów; 1072 adresy w sitemap, 134915 linków wyrenderowanych, 3920 odnośników źródłowych i 486 galerii bez błędów kontroli. Mobile 390 px: wszystkie trzy oferty bez poziomego przepełnienia; przejścia do kontaktu zachowują właściwą usługę i wariant. Konsola testowanej karty bez błędów. Nie wysyłano nowych zgłoszeń testowych. Publikacja i zapis edytorów NEURONwriter wymagają osobnego potwierdzenia po scaleniu.
 
 Dowody lokalne: `output/lead-audit-2026-10-11/gsc/etap-3/`, w tym rekomendacje, wyrenderowane wersje ocenione przez NEURONwriter i logi walidacji.
+
+
+## Potwierdzenie produkcji trzeciej partii
+
+PR #48 scalony, main `8631af964b2d7b54ca5bec45a4054036c56ba4f1`. Oba wdrożenia Vercel mają status success. Zweryfikowano trzy publiczne oferty: HTTP 200, nowe treści, jeden H1, własny canonical, index/follow i linki do formularza z wariantem usługi. Brak NUL i U+FFFD w HTML. Import bezpośrednio z produkcji do edytorów NEURONwriter dał odpowiednio **69 / 68 / 72**; dwie oceny różnią się o punkt od lokalnej ekstrakcji. Wszystkie trzy analizy zapisano, otagowano i oznaczono jako ukończone. Inwentaryzacja pokazuje wyniki importu produkcji. Razem 10 ofert opracowanych indywidualnie. Brak nowego dowodu indeksowania czy wzrostu zapytań — wymaga to obserwacji GSC i CRM po publikacji.
+
+
+## Portfolio — większe kadry i lżejsze podglądy
+
+Inspiracja funkcjonalna: https://boostagency.pl/ oraz https://boostagency.pl/portfolio (duże kadry, proste kategorie, spokojny ruch). Wykorzystano wyłącznie własne materiały i kolorystykę FOTZ. Portfolio otrzymało szeroki kadr Enea Stadionu, większą siatkę dwóch kolumn, filtry z licznikami i wyróżnioną kolejność Enea / KLAGEM / Dawid EDU. Do sekcji filmów dołączono istniejący spot CUPRA (łącznie siedem filmów). Zachowano 21 projektów i 58 zdjęć, adresy realizacji, powiększanie i ręczny start filmów.
+
+Nowe style obsługują delikatne powiększenie obrazu, ruch strzałki i wejście kart po filtrowaniu. Animacje nie ukrywają treści; są ograniczone do komputerów i preferencji no-preference. Strona została włączona do hydratacji, aby nie wymieniać prerenderowanego DOM przy starcie.
+
+Dla 77 źródłowych obrazów (77 864 088 bajtów) przygotowano podglądy WebP 480/960 px (obie wersje razem 7 594 990 bajtów). Nie jest to rozmiar początkowego transferu strony: obrazy ładują się leniwie, a przeglądarka wybiera wariant z srcset/sizes. Oryginały pozostają do pełnego podglądu. Generator: `npm run images:portfolio`. Nowe materiały z modułu danych mają fallback do oryginału do czasu regeneracji.
+
+Kontrola przeglądarkowa: mobile 390 px bez poziomego przepełnienia; filtrowanie projektów i zdjęć, doładowanie 12→24 zdjęć, otwarcie galerii 8 zdjęć Enea i przejście 1→2; Escape zamyka i przywraca fokus. Emulacja reduced motion wyłącza portfolio-arrive, przy zwykłym ustawieniu przejście obrazów trwa 0,7 s. Brak błędów konsoli. Filmów nie ma w DOM przed świadomym odtworzeniem. Końcowa walidacja z wariantami obrazów: typecheck, ESLint, build 1074 dokumentów / 1071 treści / 0 błędów, audyt SEO bez błędów (134915 linków HTML, 3922 źródłowych). Sprawdzono 66 wariantów obrazów obecnych w początkowym HTML; wszystkie istnieją w dist. Browser wybiera podgląd 480 px przy mobilnym layoucie 390 px. Odtwarzanie CUPRA potwierdzone: readyState 4, postęp 6,27 s / 26,38 s, brak błędu. Publikację potwierdzimy po scaleniu.
