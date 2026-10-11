@@ -31,6 +31,8 @@ class Head(HTMLParser):
 
 def inspect(html, check_local_assets=True):
     h=Head();h.feed(html);issues=[]
+    if '\x00' in html:issues.append('NUL byte in generated HTML')
+    if '\ufffd' in html:issues.append('replacement character in generated HTML')
     for name,values in [('title',h.titles),('description',h.meta['description']),('og:title',h.meta['og:title']),('og:description',h.meta['og:description']),('robots',h.meta['robots'])]:
         if len(values)!=1 or not values[0].strip():issues.append(f'{name}: expected one nonempty tag, got {len(values)}')
     noindex=any('noindex' in r for r in h.meta['robots'])
