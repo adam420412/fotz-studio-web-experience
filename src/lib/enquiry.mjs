@@ -15,6 +15,7 @@ export const enquiryVariants = {
   film: 'Film dla firmy', reels: 'Rolki do social media', spot: 'Spot reklamowy',
   ad_variants: 'Warianty filmu do testu reklam',
   meta_ads: 'Kampania Facebook i Instagram', lead_ads: 'Reklamy i obsługa zapytań',
+  instagram_ads: 'Kampania Instagram Ads', content_plan: 'Strategia treści',
   campaign_audit: 'Przegląd kampanii reklamowej',
   video_plan: 'Strategia i regularne materiały video',
   audit: 'Audyt i plan wdrożeń', ongoing: 'Stałe działania SEO',
@@ -40,7 +41,7 @@ export function serviceForPath(path) {
   if (/^\/(seo(?:\/|$)|.*pozycjonowanie)/.test(path)) return 'seo';
   if (/social-media/.test(path)) return 'social';
   if (/produkcja-(filmow|video)|video-marketing/.test(path)) return 'video';
-  if (/marketing-internetowy|agencja-marketing|reklama-facebook/.test(path)) return 'marketing';
+  if (/marketing-internetowy|agencja-marketing|reklama-facebook/.test(path) || /^\/(content-marketing|performance-marketing)(\/|$)/.test(path)) return 'marketing';
   if (/strony-internetowe|sklepy-internetowe|cennik-tworzenia-stron/.test(path)) return 'web';
   return 'other';
 }

@@ -17,6 +17,16 @@ test('offer defaults preserve a scope but never leak it into a different service
  assert.deepEqual(resolveEnquiryContext('', 'marketing', '__proto__'), {service:'marketing',variant:''});
  assert.equal(serviceForPath('/uslugi/reklama-facebook'), 'marketing');
 });
+test('content and Instagram enquiries retain their scope through contact links', () => {
+ for (const [path, variant] of [['/content-marketing/strategia', 'content_plan'], ['/performance-marketing/instagram-ads', 'instagram_ads']]) {
+  const service = serviceForPath(path);
+  assert.equal(service, 'marketing');
+  const url = new URL(enquiryHref(service, variant), 'https://www.fotz-studio.pl');
+  assert.equal(url.hash, '#formularz');
+  assert.deepEqual(resolveEnquiryContext(url.search), {service, variant});
+ }
+ assert.equal(serviceForPath('/performance-marketingowy-przyklad'), 'other');
+});
 test('analytics needs current consent; failures in storage default to off',()=>{
  assert.equal(hasAnalyticsConsent({getItem:k=>k==='cookie-consent'?'accepted':'2'}),true);
  assert.equal(hasAnalyticsConsent({getItem:()=> 'accepted'}),false);
