@@ -455,9 +455,8 @@ const PozycjonowaniePoznan = () => {
               Gotowy na pierwszą stronę Google w Poznaniu?
             </h2>
             <p className="text-primary-foreground/80 text-lg mb-8 max-w-xl mx-auto">
-              Zapytaj o audyt SEO swojej strony. Zakres i wycenę ustalimy na bezpłatnej konsultacji, a raport przygotujemy z
-              konkretnymi rekomendacjami dla poznańskiego rynku — bez żadnych
-              zobowiązań.
+              Zapytaj o audyt SEO swojej strony. Na bezpłatnej konsultacji ustalimy zakres i wycenę.
+              Po zaakceptowaniu oferty przygotujemy raport z rekomendacjami dla poznańskiego rynku.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" asChild className="text-base px-8">
