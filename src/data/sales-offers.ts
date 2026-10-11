@@ -2,7 +2,7 @@ import type { SalesOfferProps } from '@/components/SalesOffer';
 const webEvidence = [
   { title: 'FPS Poznań', text: 'Strona Fabryki Pojazdów Szynowych: prezentacja firmy przemysłowej i jej oferty. Zobacz układ oraz materiały z projektu.', href: '/realizacje/fps-cegielski' },
   { title: 'RPPG', text: 'Strona Rady Polskich Przedsiębiorców Globalnych. Projekt dla organizacji biznesowej z informacjami o jej działalności.', href: '/realizacje/rppg' },
-  { title: 'Klagem', text: 'Prezentacja usług odszkodowawczych. Przykład uporządkowania specjalistycznej oferty i jej oprawy wizualnej.', href: '/realizacje/klagem' },
+  { title: 'Klagem', text: 'Strona marki mebli modułowych i konfigurator 3D: dobór układu, wymiarów, kolorów oraz orientacyjna wycena projektu.', href: '/realizacje/klagem' },
 ];
 const filmEvidence = [
   { title: 'CUPRA × Enea Stadion', text: 'Spot łączący samochód i przestrzeń stadionu. Odtwórz materiał powyżej lub przejdź do jego oryginalnej publikacji.', href: '/realizacje/enea-stadion' },
@@ -15,10 +15,11 @@ export const websiteOffer: SalesOfferProps = {
   description: 'Strony firmowe, sklepy i przebudowa istniejących witryn. Zobacz projekty FPS, RPPG i Klagem, zakres prac oraz zasady wyceny strony w FOTZ Studio.',
   heading: 'Strona, która jasno pokazuje Twoją ofertę.', eyebrow: 'Strony internetowe dla firm · FOTZ Studio',
   lead: 'Projektujemy i wdrażamy strony firmowe, landing pages oraz sklepy. Łączymy treść, wygląd i działający kontakt, żeby klient wiedział, co oferujesz i jak zrobić kolejny krok.',
-  cta: 'Wyceń moją stronę', hero: 'fps', caption: 'FPS Poznań — projekt strony z portfolio FOTZ Studio.', evidence: webEvidence,
+  configurator: true, cta: 'Wyceń moją stronę', hero: 'fps', caption: 'FPS Poznań — projekt strony z portfolio FOTZ Studio.', evidence: webEvidence,
   options: [
     { title: 'Nowa strona firmowa', text: 'Dla firmy, która potrzebuje czytelnej prezentacji usług i miejsca do zbierania zapytań.', detail: 'Struktura, projekt, wdrożenie, formularz oraz przekazanie obsługi. Liczbę podstron i treści ustalamy w wycenie.', variant: 'website' },
     { title: 'Przebudowa strony', text: 'Dla firmy, której obecna witryna jest nieaktualna, trudna w edycji lub niewygodna na telefonie.', detail: 'Najpierw sprawdzamy istniejące adresy, treści i pomiar. Ustalamy migrację oraz przekierowania przed publikacją.', variant: 'redesign' },
+    { title: 'Konfigurator produktów 3D', text: 'Dla producenta, którego klient wybiera układ, wymiary lub wykończenie produktu.', detail: 'Ustalamy reguły łączenia elementów, modele 3D, sposób wyceny i przekazanie konfiguracji do obsługi. Zobacz realizację KLAGEM.', variant: 'configurator' },
     { title: 'Sklep internetowy', text: 'Dla marki, która chce sprzedawać produkty online i uporządkować obsługę zamówień.', detail: 'Katalog, koszyk, płatności, dostawy i integracje dobieramy do procesów firmy. Testujemy uzgodnioną ścieżkę zakupu.', variant: 'shop' },
   ],
   scope: [

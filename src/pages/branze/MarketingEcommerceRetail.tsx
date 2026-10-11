@@ -4,14 +4,13 @@ import { ShoppingCart, ArrowRight, CheckCircle, Package, Camera, TrendingUp, Cre
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { useState, lazy, Suspense } from "react";
+import { useState } from "react";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
-import { useCountUp } from "@/hooks/useCountUp";
 import { OtherIndustries } from "@/components/sections/OtherIndustries";
 
 import friendlyGasImg from "@/assets/portfolio/friendly-gas-new-web.webp";
 
-const ModelViewer3D = lazy(() => import("@/components/ModelViewer3D").then(module => ({ default: module.ModelViewer3D })));
+import { KlagemConfigurator } from "@/components/sections/KlagemConfigurator";
 
 const services = [
   {
@@ -165,91 +164,11 @@ const MarketingEcommerceRetail = () => {
             </div>
           </motion.div>
 
-          {/* Stats */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.7 }}
-            className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16"
-          >
-            {[
-              { value: 150, suffix: "%", label: "wzrost sprzedaży online" },
-              { value: 80, suffix: "+", label: "stworzonych sklepów" },
-              { value: 10000, suffix: "+", label: "sfotografowanych produktów" },
-              { value: 4, suffix: "x", label: "wyższy ROAS" },
-            ].map((stat, index) => {
-              const { ref, displayValue } = useCountUp({ end: stat.value, suffix: stat.suffix });
-              return (
-                <div key={index} ref={ref} className="text-center p-6 rounded-2xl bg-card border border-border/30">
-                  <div className="text-3xl md:text-4xl font-heading font-bold text-gradient-premium">
-                    {displayValue}
-                  </div>
-                  <p className="text-foreground/60 text-sm mt-2">{stat.label}</p>
-                </div>
-              );
-            })}
-          </motion.div>
+
         </div>
       </section>
 
-      {/* 3D Configurator Demo */}
-      <section className="section-padding bg-card">
-        <div className="container-wide">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-            >
-              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-                Konfigurator <span className="text-gradient-premium">3D produktów</span>
-              </h2>
-              <p className="text-foreground/70 mb-6">
-                Pozwól klientom personalizować produkty i oglądać je w 3D przed zakupem. 
-                Zwiększ konwersję i zmniejsz liczbę zwrotów.
-              </p>
-              <div className="space-y-4 mb-8">
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-foreground/80">Interaktywne obracanie produktu</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-foreground/80">Wybór wariantów, kolorów i materiałów</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-foreground/80">Automatyczna wycena konfiguracji</span>
-                </div>
-              </div>
-              <Button asChild>
-                <a href="https://klagem.pl/" target="_blank" rel="noopener noreferrer">
-                  Zobacz konfigurator na żywo
-                  <ArrowRight className="ml-2 w-4 h-4" />
-                </a>
-              </Button>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="relative"
-            >
-              <div className="aspect-square rounded-3xl overflow-hidden bg-gradient-to-br from-muted to-muted/50 border border-border/30">
-                <Suspense fallback={<div className="w-full h-full bg-muted animate-pulse flex items-center justify-center"><span className="text-muted-foreground">Ładowanie...</span></div>}>
-                  <ModelViewer3D 
-                    modelUrl="/models/regulator-3d.glb"
-                  />
-                </Suspense>
-              </div>
-              <p className="text-center text-foreground/60 text-sm mt-4">
-                Obracaj model 3D myszką lub palcem
-              </p>
-            </motion.div>
-          </div>
-        </div>
-      </section>
+      <KlagemConfigurator />
 
       {/* Services */}
       <section className="section-padding bg-background">

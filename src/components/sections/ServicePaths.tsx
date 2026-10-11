@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { ArrowUpRight } from 'lucide-react';
 
 const paths = [
-  { title: 'Strona, która pokazuje ofertę', text: 'Nowa witryna, przebudowa lub sklep. Zobacz zakres i projekty FPS, RPPG oraz Klagem.', links: [['Strony i sklepy', '/uslugi/strony-internetowe'], ['Koszt strony', '/cennik-stron-internetowych']] },
+  { title: 'Strona, która pokazuje ofertę', text: 'Nowa witryna, sklep lub konfigurator 3D. Zobacz projekty FPS, RPPG i modułowych mebli KLAGEM.', links: [['Strony i sklepy', '/uslugi/strony-internetowe'], ['Konfigurator 3D KLAGEM', '/realizacje/klagem'], ['Koszt strony', '/cennik-stron-internetowych']] },
   { title: 'Materiały, które pokazują firmę', text: 'Filmy, zdjęcia i rolki. Sama produkcja albo regularne prowadzenie profili.', links: [['Filmy i spoty', '/uslugi/produkcja-filmow'], ['Obsługa social media', '/social-media/obsluga']] },
   { title: 'Widoczność i zapytania', text: 'SEO i plan marketingowy oparty na ofercie firmy. Od diagnozy do wdrożeń i pomiaru kontaktów.', links: [['Pozycjonowanie', '/seo/pozycjonowanie'], ['Obsługa marketingowa', '/agencja-marketingu-internetowego']] },
 ];

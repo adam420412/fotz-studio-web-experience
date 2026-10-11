@@ -1,5 +1,6 @@
 import { Layout } from "@/components/layout/Layout";
 import { ServicePaths } from "@/components/sections/ServicePaths";
+import { KlagemConfigurator } from "@/components/sections/KlagemConfigurator";
 import { HeroV3 } from "@/components/sections/HeroV3";
 import { ClientMarqueeV3 } from "@/components/sections/ClientMarqueeV3";
 import { ProcessV3 } from "@/components/sections/ProcessV3";
@@ -34,6 +35,7 @@ const Index = () => {
         <ServicePaths />
         <ClientMarqueeV3 />
         <FeaturedFilms />
+        <KlagemConfigurator />
         <Services />
         <CaseStudies />
         <ProcessV3 />

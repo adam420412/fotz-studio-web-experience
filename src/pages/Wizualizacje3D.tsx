@@ -1,3 +1,4 @@
+import { KlagemConfigurator } from "@/components/sections/KlagemConfigurator";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
@@ -669,6 +670,7 @@ const Wizualizacje3D = () => {
         </section>
 
         {/* Portfolio Gallery */}
+        <KlagemConfigurator />
         <section id="portfolio" className="py-20 md:py-32">
           <div className="container-wide px-6 md:px-12">
             <FadeInView>
