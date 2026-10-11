@@ -1,7 +1,7 @@
 import type { SalesOfferProps } from '@/components/SalesOffer';
 
 export const companyWebsiteOffer: SalesOfferProps = {
-  path: '/uslugi/strony-internetowe-dla-firm', service: 'web',
+  path: '/uslugi/strony-internetowe-dla-firm', service: 'web', defaultVariant: 'website',
   title: 'Strony internetowe dla firm — projekt i wycena | FOTZ Studio',
   description: 'Tworzymy strony internetowe dla firm usługowych i produkcyjnych. Zobacz realizacje, zakres projektu, zasady wyceny i opisz stronę swojej firmy.',
   heading: 'Strony internetowe dla firm, które ułatwiają kontakt.',
@@ -48,7 +48,7 @@ export const companyWebsiteOffer: SalesOfferProps = {
 };
 
 export const facebookOffer: SalesOfferProps = {
-  path: '/uslugi/reklama-facebook', service: 'marketing',
+  path: '/uslugi/reklama-facebook', service: 'marketing', defaultVariant: 'meta_ads',
   title: 'Reklama na Facebooku i Instagramie — kampanie | FOTZ Studio',
   description: 'Reklama na Facebooku i Instagramie: plan kampanii, kreacje, formularze i pomiar zapytań. Zobacz realizację Dawid EDU i ustal zakres Meta Ads z FOTZ.',
   heading: 'Reklama na Facebooku od oferty do zapytania.',
@@ -64,7 +64,7 @@ export const facebookOffer: SalesOfferProps = {
   options: [
     { title: 'Start kampanii Facebook Ads', text: 'Masz usługę lub produkt, który chcesz promować. Ustalamy odbiorców, ofertę, miejsca emisji i sposób mierzenia celu.', detail: 'Plan kampanii, przygotowanie reklam, kontrola strony docelowej oraz uzgodniona obsługa i raportowanie.', variant: 'meta_ads' },
     { title: 'Reklamy pozyskujące zapytania', text: 'Potrzebujesz kontaktów do osób zainteresowanych konkretną ofertą. Wybieramy formularz Lead Ads albo formularz na stronie.', detail: 'Ustalamy pytania, odbiorcę zgłoszeń, czas reakcji i ewentualne połączenie z CRM. Integrację wyceniamy według systemu.', variant: 'lead_ads' },
-    { title: 'Przegląd obecnej kampanii', text: 'Reklamy działają, ale nie wiesz, dlaczego kontakty są drogie lub niedopasowane. Sprawdzamy całą drogę użytkownika.', detail: 'Analiza ustawień, kreacji, budżetu, formularzy i pomiaru. Rekomendacje oraz wdrożenia rozpisujemy osobno.', variant: 'audit' },
+    { title: 'Przegląd obecnej kampanii', text: 'Reklamy działają, ale nie wiesz, dlaczego kontakty są drogie lub niedopasowane. Sprawdzamy całą drogę użytkownika.', detail: 'Analiza ustawień, kreacji, budżetu, formularzy i pomiaru. Rekomendacje oraz wdrożenia rozpisujemy osobno.', variant: 'campaign_audit' },
   ],
   scope: [
     { title: 'Cel i grupa docelowa', text: 'Ustalamy, kogo ma zainteresować reklama na Facebooku, na jakim obszarze działa firma i co ma zrobić odbiorca. Inaczej planujemy zapytanie o usługę, a inaczej zakup w sklepie internetowym.' },
@@ -95,7 +95,7 @@ export const facebookOffer: SalesOfferProps = {
 };
 
 export const videoMarketingOffer: SalesOfferProps = {
-  path: '/uslugi/video-marketing', service: 'video',
+  path: '/uslugi/video-marketing', service: 'video', defaultVariant: 'video_plan',
   title: 'Video marketing dla firm — strategia i materiały | FOTZ Studio',
   description: 'Video marketing dla firm: plan treści, filmy, rolki i wersje do reklam. Zobacz realizacje FOTZ, sposób wyceny oraz pomiar działań i zaplanuj nagrania.',
   heading: 'Video marketing z planem na wykorzystanie filmu.',

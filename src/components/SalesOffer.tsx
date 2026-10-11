@@ -13,7 +13,7 @@ import imageVariants from '@/data/selected-work-images.json';
 
 type Item = { title: string; text: string };
 export interface SalesOfferProps {
-  path: string; service: string; title: string; description: string;
+  path: string; service: string; defaultVariant?: string; title: string; description: string;
   heading: string; eyebrow: string; lead: string; cta: string;
   hero: keyof typeof imageVariants; caption: string; films?: boolean; configurator?: boolean;
   scope: Item[]; options: (Item & { variant: string; detail: string })[];
@@ -44,6 +44,6 @@ export function SalesOffer(p: SalesOfferProps) {
     {p.films && <SelectedWork />}
     {p.guidance?.map(item => <section key={item.title} className="container-wide px-6 md:px-12 py-10 grid md:grid-cols-[1fr_1.4fr] gap-7 md:gap-12"><h2 className="font-heading text-3xl">{item.title}</h2><div><p className="text-muted-foreground leading-relaxed mb-5">{item.text}</p><ul className="list-disc pl-5 space-y-3 text-muted-foreground leading-relaxed mb-5">{item.points.map(point => <li key={point}>{point}</li>)}</ul><Link to={item.link.href} className="underline underline-offset-4">{item.link.label}</Link></div></section>)}
     <section id="faq" className="scroll-mt-28 container-wide max-w-4xl px-6 md:px-12 py-14"><h2 className="font-heading text-3xl mb-7">Przed podjęciem decyzji</h2>{p.faqs.map(item => <details key={item.question} className="border-b border-border py-5"><summary className="font-medium cursor-pointer text-lg">{item.question}</summary><p className="text-muted-foreground leading-relaxed mt-4">{item.answer}</p></details>)}</section>
-    <div className="container-wide max-w-4xl px-6 md:px-12 pb-16"><EnquiryForm id="zapytanie" defaultService={p.service} /></div>
+    <div className="container-wide max-w-4xl px-6 md:px-12 pb-16"><EnquiryForm id="zapytanie" defaultService={p.service} defaultVariant={p.defaultVariant} /></div>
   </Layout>;
 }
