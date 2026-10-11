@@ -412,7 +412,7 @@ export default function BlogPozycjonowanieStron() {
               <div className="bg-primary/10 border border-primary/20 rounded-xl p-8 my-8 text-center">
                 <h3 className="text-xl font-bold mb-4 mt-0">Potrzebujesz pomoc z pozycjonowaniem?</h3>
                 <p className="mb-6">
-                  Fotz Studio specjalizuje się w SEO dla firm, sklepów online i stron usługowych. Zróbmy bezpłatny audyt Twojej strony i pokażemy, gdzie są szanse na wzrost.
+                  Fotz Studio specjalizuje się w SEO dla firm, sklepów online i stron usługowych. Zacznijmy od bezpłatnej konsultacji: omówimy Twoją stronę i ustalimy zakres audytu, który pokaże, gdzie są szanse na wzrost.
                 </p>
                 <Button asChild size="lg">
                   <Link to="/kontakt">Umów bezpłatną konsultację SEO</Link>

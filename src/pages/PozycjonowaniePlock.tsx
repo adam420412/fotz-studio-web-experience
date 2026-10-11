@@ -51,7 +51,7 @@ const faqItems = [
   {
     question: "Jak działamy - proces pozycjonowania firm z Płocku?",
     answer:
-      "Najpierw robimy bezpłatny audyt SEO - analizujemy Twoją stronę, pozycje dla fraz Płock, konkurencję w Twojej branży. Następnie tworzymy strategię z fokusem na frazy lokalne + branża. Wdrażamy optymalizację on-page, budujemy treści lokalne i linki z mediów lokalnych. Co 2 tygodnie raportujemy pozycje i ruch - pełna transparentność.",
+      "Najpierw bezpłatna konsultacja: omawiamy Twoją stronę, pozycje dla fraz Płock i konkurencję w Twojej branży, a potem uzgadniamy zakres i wycenę audytu SEO. Następnie tworzymy strategię z fokusem na frazy lokalne + branża. Wdrażamy optymalizację on-page, budujemy treści lokalne i linki z mediów lokalnych. Co 2 tygodnie raportujemy pozycje i ruch - pełna transparentność.",
   },
 ];
 
@@ -88,7 +88,7 @@ const PozycjonowaniePlock = () => {
     <Layout>
       <SEOHead
         title="Pozycjonowanie Płock - Agencja SEO | Fotz Studio"
-        description="Pozycjonowanie stron Płock. Agencja SEO Fotz Studio - audyt SEO, optymalizacja i link building dla firm z Płocku. Bezpłatny audyt SEO!"
+        description="Pozycjonowanie stron Płock. Agencja SEO Fotz Studio - audyt SEO, optymalizacja i link building dla firm z Płocku. Bezpłatna konsultacja SEO!"
         canonical="https://www.fotz-studio.pl/pozycjonowanie/plock"
         keywords="pozycjonowanie płock, agencja seo płock, seo płock, pozycjonowanie stron płock, seo dla firm płock, seo mazowsze, pozycjonowanie lokalne płock"
       />
@@ -153,8 +153,8 @@ const PozycjonowaniePlock = () => {
               className="flex flex-col sm:flex-row gap-4 justify-center"
             >
               <Button size="lg" asChild className="text-base px-8">
-                <Link to="/kontakt">
-                  Zamów bezpłatny audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
+                <Link to="/kontakt?usluga=seo&wariant=audit#formularz">
+                  Zapytaj o audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
               <Button size="lg" variant="outline" asChild className="text-base px-8">
@@ -372,7 +372,7 @@ const PozycjonowaniePlock = () => {
             {[
               {
                 step: "01",
-                title: "Bezpłatny audyt SEO",
+                title: "Konsultacja i zakres audytu SEO",
                 desc: "Analizujemy Twoją stronę, pozycje w Google dla fraz Płock, konkurencję w Twojej branży (handel, gastronomia, usługi, przemysł czy inne).",
               },
               {
@@ -470,13 +470,13 @@ const PozycjonowaniePlock = () => {
               Gotowy na pierwszą stronę Google w Płocku?
             </h2>
             <p className="text-primary-foreground/80 text-lg mb-8 max-w-xl mx-auto">
-              Zamów bezpłatny audyt SEO. Otrzymasz raport z konkretnymi
+              Zapytaj o audyt SEO. Zakres i wycenę ustalimy na bezpłatnej konsultacji, a raport przygotujemy z konkretnymi
               rekomendacjami dla rynku płockiego i Twojej branży.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" asChild className="text-base px-8">
-                <Link to="/kontakt">
-                  Zamów bezpłatny audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
+                <Link to="/kontakt?usluga=seo&wariant=audit#formularz">
+                  Zapytaj o audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
               <Button

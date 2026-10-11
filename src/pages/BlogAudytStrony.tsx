@@ -310,7 +310,7 @@ export default function BlogAudytStrony() {
                 </p>
 
                 <p className="text-muted-foreground mb-6">
-                  <strong>Bezpłatny audyt w Fotz Studio</strong> — Fotz Studio oferuje każdemu klientowi bezpłatny audyt podstawowy obejmujący: analizę Core Web Vitals, najważniejszych problemów technicznych, top słów kluczowych dla branży, konkurencyjną analizę SERP, raport wstępny w 48 godzin. Skontaktuj się z nami, aby zarezerwować swoją darmową konsultację SEO.
+                  <strong>Audyt w Fotz Studio</strong> — zaczynamy od bezpłatnej konsultacji, na której omawiamy stronę i cel. Zakres audytu (Core Web Vitals, najważniejsze problemy techniczne, słowa kluczowe dla branży, analiza SERP konkurencji), termin raportu i wycenę ustalamy w ofercie. Skontaktuj się z nami, aby zarezerwować konsultację SEO.
                 </p>
 
                 <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
@@ -385,15 +385,15 @@ export default function BlogAudytStrony() {
                 className="mt-12 p-8 md:p-12 rounded-2xl bg-gradient-to-r from-[#75143F]/20 to-[#0F3053]/20 border border-primary/20 text-center"
               >
                 <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">
-                  Bezpłatny audyt Twojej strony?
+                  Audyt Twojej strony?
                 </h2>
                 <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                  Fotz Studio oferuje każdemu klientowi darmową, profesjonalną analizę strony. Poznaj dokładnie, co hamuje Twoją widoczność w Google.
+                  Zacznij od bezpłatnej konsultacji: omówimy stronę i cel, a zakres audytu i wycenę ustalimy w ofercie. Dowiesz się, co hamuje Twoją widoczność w Google.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button asChild size="lg" className="bg-gradient-to-r from-[#75143F] to-[#0F3053] hover:opacity-90">
-                    <Link to="/kontakt">
-                      Zamów bezpłatny audyt
+                    <Link to="/kontakt?usluga=seo&wariant=audit#formularz">
+                      Zapytaj o audyt
                       <ChevronRight className="ml-2 h-5 w-5" />
                     </Link>
                   </Button>

@@ -185,13 +185,13 @@ export default function OptymalizacjaStronyInternetowej() {
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild size="lg" className="group">
-                  <Link to="/kontakt">
-                    Bezpłatna analiza szybkości
+                  <Link to="/kontakt?usluga=seo#formularz">
+                    Bezpłatna konsultacja
                     <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </Button>
                 <Button asChild size="lg" variant="outline">
-                  <Link to="/seo/audyt">Darmowy audyt PageSpeed</Link>
+                  <Link to="/seo/audyt">Audyt SEO i szybkości strony</Link>
                 </Button>
               </div>
             </motion.div>

@@ -107,8 +107,8 @@ export default function AgencjaSEOLublin() {
 
               <div className="flex flex-wrap gap-4">
                 <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
-                  <Link to="/kontakt">
-                    Bezpłatny audyt SEO <ArrowRight className="ml-2 w-5 h-5" />
+                  <Link to="/kontakt?usluga=seo#formularz">
+                    Bezpłatna konsultacja SEO <ArrowRight className="ml-2 w-5 h-5" />
                   </Link>
                 </Button>
                 <Link to="/seo/pozycjonowanie">

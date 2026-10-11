@@ -144,8 +144,8 @@ const PozycjonowanieWalbrzych = () => {
             <FadeInView delay={0.3}>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" asChild className="text-base px-8 bg-yellow-400 text-gray-900 hover:bg-yellow-300">
-                  <Link to="/kontakt">
-                    Zamów bezpłatny audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
+                  <Link to="/kontakt?usluga=seo&wariant=audit#formularz">
+                    Zapytaj o audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
                 <Button size="lg" variant="outline" asChild className="text-base px-8 border-gray-700 text-white hover:bg-gray-800">
@@ -284,7 +284,7 @@ const PozycjonowanieWalbrzych = () => {
             {[
               {
                 step: "01",
-                title: "Bezpłatny audyt SEO",
+                title: "Konsultacja i zakres audytu SEO",
                 desc: "Analizujemy Twoją stronę i frazy z Wałbrzychu i całego Dolnego Śląska. Sprawdzamy potencjał w turystyce górniczej, usługach lokalnych czy Twojej branży.",
               },
               {
@@ -417,13 +417,13 @@ const PozycjonowanieWalbrzych = () => {
               Gotowy na pierwszą stronę Google w Wałbrzychu?
             </h2>
             <p className="text-gray-800 text-lg mb-8 max-w-xl mx-auto">
-              Zamów bezpłatny audyt SEO. Otrzymasz raport z konkretnymi
+              Zapytaj o audyt SEO. Zakres i wycenę ustalimy na bezpłatnej konsultacji, a raport przygotujemy z konkretnymi
               rekomendacjami dla rynku Wałbrzychu i całego Dolnego Śląska.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" asChild className="text-base px-8 bg-gray-900 text-yellow-400 hover:bg-gray-800">
-                <Link to="/kontakt">
-                  Zamów bezpłatny audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
+                <Link to="/kontakt?usluga=seo&wariant=audit#formularz">
+                  Zapytaj o audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
               <Button

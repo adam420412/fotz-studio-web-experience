@@ -751,7 +751,7 @@ const CaseStudyLocalSEO = () => {
                 <Link to="/kontakt" className="text-primary hover:underline font-medium text-sm">→ Skontaktuj się z nami</Link>
                 <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Usługi SEO</Link>
                 <Link to="/agencja-marketingowa/poznan" className="text-primary hover:underline font-medium text-sm">→ Więcej case studies</Link>
-                <Link to="/seo/audyt" className="text-primary hover:underline font-medium text-sm">→ Darmowy audyt</Link>
+                <Link to="/seo/audyt" className="text-primary hover:underline font-medium text-sm">→ Audyt SEO</Link>
               </div>
             </motion.div>
           </div>

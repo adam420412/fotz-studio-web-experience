@@ -92,7 +92,7 @@ const PozycjonowanieGdansk = () => {
     <Layout>
       <SEOHead
         title="Pozycjonowanie Gdańsk — Agencja SEO Trójmiasto | Fotz Studio"
-        description="Pozycjonowanie stron Gdańsk i Trójmiasto. Agencja SEO Fotz Studio — audyt, optymalizacja, link building dla firm z Gdańska. Bezpłatny audyt!"
+        description="Pozycjonowanie stron Gdańsk i Trójmiasto. Agencja SEO Fotz Studio — audyt, optymalizacja, link building dla firm z Gdańska. Bezpłatna konsultacja SEO!"
         canonical="https://www.fotz-studio.pl/uslugi/pozycjonowanie/gdansk"
         keywords="pozycjonowanie gdańsk, agencja seo gdańsk, seo gdańsk, pozycjonowanie stron gdańsk, seo dla firm gdańsk, seo trójmiasto, audyt seo gdańsk, pozycjonowanie lokalne gdańsk"
       />
@@ -158,8 +158,8 @@ const PozycjonowanieGdansk = () => {
               className="flex flex-col sm:flex-row gap-4 justify-center"
             >
               <Button size="lg" asChild className="text-base px-8">
-                <Link to="/kontakt">
-                  Zamów bezpłatny audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
+                <Link to="/kontakt?usluga=seo&wariant=audit#formularz">
+                  Zapytaj o audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
               <Button size="lg" variant="outline" asChild className="text-base px-8">
@@ -304,7 +304,7 @@ const PozycjonowanieGdansk = () => {
             {[
               {
                 step: "01",
-                title: "Bezpłatny audyt SEO",
+                title: "Konsultacja i zakres audytu SEO",
                 desc: "Analizujemy Twoją stronę i frazy z Gdańska, Gdynią i Sopotu. Sprawdzamy potencjał w turystyce, logistyce lub Twojej branży.",
               },
               {
@@ -349,13 +349,13 @@ const PozycjonowanieGdansk = () => {
               Gotowy na pierwszą stronę Google w Gdańsku?
             </h2>
             <p className="text-primary-foreground/80 text-lg mb-8 max-w-xl mx-auto">
-              Zamów bezpłatny audyt SEO. Otrzymasz raport z konkretnymi
+              Zapytaj o audyt SEO. Zakres i wycenę ustalimy na bezpłatnej konsultacji, a raport przygotujemy z konkretnymi
               rekomendacjami dla rynku Gdańska, Gdyni i Sopotu.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" asChild className="text-base px-8">
-                <Link to="/kontakt">
-                  Zamów bezpłatny audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
+                <Link to="/kontakt?usluga=seo&wariant=audit#formularz">
+                  Zapytaj o audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
               <Button

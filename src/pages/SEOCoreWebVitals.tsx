@@ -73,7 +73,7 @@ const SEOCoreWebVitals = () => {
                   </Link>
                 </Button>
                 <Button asChild size="lg" variant="outline">
-                  <Link to="/seo/audyt">Darmowy audyt SEO</Link>
+                  <Link to="/seo/audyt">Audyt SEO strony</Link>
                 </Button>
               </div>
             </motion.div>

@@ -306,8 +306,8 @@ const UslugiPozycjonowanie = () => {
               className="flex flex-col sm:flex-row gap-4 justify-center"
             >
               <Button size="lg" asChild className="text-base px-8">
-                <Link to="/kontakt">
-                  Zamów bezpłatny audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
+                <Link to="/kontakt?usluga=seo&wariant=audit#formularz">
+                  Zapytaj o audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
               <Button size="lg" variant="outline" asChild className="text-base px-8">
@@ -324,7 +324,7 @@ const UslugiPozycjonowanie = () => {
               {[
                 "White-hat SEO",
                 "Raportowanie miesięczne",
-                "Bezpłatny audyt wstępny",
+                "Bezpłatna konsultacja na start",
                 "Bez długoterminowych pułapek",
               ].map((item) => (
                 <div key={item} className="flex items-center gap-2">

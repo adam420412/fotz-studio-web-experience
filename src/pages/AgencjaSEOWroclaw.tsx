@@ -177,8 +177,8 @@ export default function AgencjaSEOWroclaw() {
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild size="lg" className="group">
-                  <Link to="/kontakt">
-                    Bezpłatny audyt SEO
+                  <Link to="/kontakt?usluga=seo#formularz">
+                    Bezpłatna konsultacja SEO
                     <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </Button>

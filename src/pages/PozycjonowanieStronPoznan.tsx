@@ -34,8 +34,8 @@ const PozycjonowanieStronPoznan = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Button asChild size="lg" className="bg-gradient-to-r from-[#75143F] to-[#0F3053] hover:opacity-90 w-full sm:w-auto text-sm sm:text-base">
-                <Link to="/kontakt">
-                  Bezpłatny audyt SEO <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
+                <Link to="/kontakt?usluga=seo#formularz">
+                  Bezpłatna konsultacja SEO <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="w-full sm:w-auto text-sm sm:text-base">
@@ -98,7 +98,7 @@ const PozycjonowanieStronPoznan = () => {
                       </div>
                     </div>
                     <p className="text-primary font-medium mt-4">
-                      Oferujemy bezpłatny audyt SEO - skontaktuj się z nami!
+                      Zacznij od bezpłatnej konsultacji SEO - skontaktuj się z nami!
                     </p>
                   </div>
                 </div>
@@ -381,7 +381,7 @@ const PozycjonowanieStronPoznan = () => {
               Zwiększ widoczność swojej strony w Google
             </h2>
             <p className="text-white/80 text-base sm:text-lg mb-6 sm:mb-8 px-2">
-              Skontaktuj się z nami i otrzymaj bezpłatny audyt SEO. Pokażemy Ci, jak poprawić pozycję Twojej strony w wynikach wyszukiwania.
+              Skontaktuj się z nami i umów bezpłatną konsultację SEO. Ustalimy zakres audytu i pokażemy, jak poprawić pozycję Twojej strony w wynikach wyszukiwania.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Button asChild size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90 w-full sm:w-auto text-sm sm:text-base">

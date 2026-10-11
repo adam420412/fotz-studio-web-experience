@@ -138,7 +138,7 @@ export default function PozycjonowanieGdynia() {
     <Layout>
       <SEOHead
         title="Pozycjonowanie Gdynia | SEO dla Firm z Gdyni | FOTZ"
-        description="Pozycjonowanie Gdynia — skuteczne SEO dla firm z Gdyni i Trójmiasta. Ponad 200 projektów. Bezpłatny audyt SEO!"
+        description="Pozycjonowanie Gdynia — skuteczne SEO dla firm z Gdyni i Trójmiasta. Ponad 200 projektów. Bezpłatna konsultacja SEO!"
         canonical="https://www.fotz-studio.pl/uslugi/pozycjonowanie/gdynia"
         keywords="pozycjonowanie gdynia, agencja seo gdynia, seo gdynia, pozycjonowanie stron gdynia, seo dla firm gdynia, seo trójmiasto, audyt seo gdynia"
       />
@@ -183,8 +183,8 @@ export default function PozycjonowanieGdynia() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" asChild className="text-base px-8">
-                <Link to="/kontakt">
-                  Bezpłatny audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
+                <Link to="/kontakt?usluga=seo#formularz">
+                  Bezpłatna konsultacja SEO <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
               <Button size="lg" variant="outline" asChild className="text-base px-8 bg-white/10 text-white border-white/20 hover:bg-white/20">
@@ -399,11 +399,11 @@ export default function PozycjonowanieGdynia() {
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">Gotowy na wzrost organiczny?</h2>
             <p className="text-lg text-slate-300 mb-10">
-              Zarezerwuj bezpłatny audyt SEO dla Twojej strony. Poznaj potencjał pozycjonowania w Gdyni.
+              Zarezerwuj bezpłatną konsultację SEO dla Twojej strony. Poznaj potencjał pozycjonowania w Gdyni.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" asChild className="text-base px-8">
-                <Link to="/kontakt">Bezpłatny audyt SEO</Link>
+                <Link to="/kontakt?usluga=seo#formularz">Bezpłatna konsultacja SEO</Link>
               </Button>
               <Button size="lg" variant="outline" asChild className="text-base px-8 bg-white/10 text-white border-white/20 hover:bg-white/20">
                 <Link to="/uslugi/pozycjonowanie">Dowiedz się więcej o SEO</Link>

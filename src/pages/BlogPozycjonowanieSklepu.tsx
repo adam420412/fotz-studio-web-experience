@@ -167,7 +167,7 @@ export default function BlogPozycjonowanieSklepu() {
               <div className="bg-blue-50 border border-blue-200 rounded-lg p-5 mb-6">
                 <p className="text-blue-800 font-semibold mb-2">Potrzebujesz SEO dla swojego sklepu?</p>
                 <p className="text-blue-700 text-sm mb-3">
-                  Specjalizujemy się w pozycjonowaniu sklepów WooCommerce. Audyt bezpłatny.
+                  Specjalizujemy się w pozycjonowaniu sklepów WooCommerce. Zacznij od bezpłatnej konsultacji.
                 </p>
                 <Link to="/seo/pozycjonowanie" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
                   Pozycjonowanie sklepów — oferta <ArrowRight className="w-4 h-4" />

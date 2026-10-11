@@ -107,7 +107,7 @@ const PozycjonowanieRadom = () => {
     <Layout>
       <SEOHead
         title="Pozycjonowanie Radom — Agencja SEO | Fotz Studio"
-        description="Pozycjonowanie stron Radom. Agencja SEO Fotz Studio — audyt SEO, optymalizacja, link building. Niska konkurencja = szybkie rezultaty. Bezpłatny audyt!"
+        description="Pozycjonowanie stron Radom. Agencja SEO Fotz Studio — audyt SEO, optymalizacja, link building. Niska konkurencja = szybkie rezultaty. Bezpłatna konsultacja SEO!"
         canonical="https://www.fotz-studio.pl/uslugi/pozycjonowanie/radom"
         keywords="pozycjonowanie radom, agencja seo radom, seo radom, pozycjonowanie stron radom, seo dla firm radom, seo mazowsze, pozycjonowanie lokalne radom"
       />
@@ -171,8 +171,8 @@ const PozycjonowanieRadom = () => {
               className="flex flex-col sm:flex-row gap-4 justify-center"
             >
               <Button size="lg" asChild className="text-base px-8">
-                <Link to="/kontakt">
-                  Zamów bezpłatny audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
+                <Link to="/kontakt?usluga=seo&wariant=audit#formularz">
+                  Zapytaj o audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
               <Button size="lg" variant="outline" asChild className="text-base px-8">
@@ -313,7 +313,7 @@ const PozycjonowanieRadom = () => {
             {[
               {
                 step: "01",
-                title: "Bezpłatny audyt SEO",
+                title: "Konsultacja i zakres audytu SEO",
                 desc: "Analizujemy Twoją stronę pod kątem fraz lokalnych (Radom, Mazovia). Patrzysz na konkurencję — w Radomiu jest niowa.",
               },
               {
@@ -358,13 +358,13 @@ const PozycjonowanieRadom = () => {
               Gotowy na pierwszą stronę Google w Radomiu?
             </h2>
             <p className="text-primary-foreground/80 text-lg mb-8 max-w-xl mx-auto">
-              Zamów bezpłatny audyt SEO. Niska konkurencja w Radomiu = szybkie wyniki.
+              Zapytaj o audyt SEO — zakres i wycenę ustalimy na bezpłatnej konsultacji. Niska konkurencja w Radomiu = szybkie wyniki.
               Przeanalizujemy Twoje frazy i pokażemy, jak zdominować lokalny rynek.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" asChild className="text-base px-8">
-                <Link to="/kontakt">
-                  Zamów bezpłatny audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
+                <Link to="/kontakt?usluga=seo&wariant=audit#formularz">
+                  Zapytaj o audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
               <Button
