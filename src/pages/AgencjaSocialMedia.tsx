@@ -31,6 +31,15 @@ const FAQ = [
   },
 ];
 
+const cooperation = [
+  { title: "Strategia social media zaczyna się od odbiorcy", text: "Ustalamy, kto podejmuje decyzję o zakupie, jakie ma pytania i co powinien zrobić po obejrzeniu materiału. Audyt dotychczasowej komunikacji pomaga ocenić profil, formaty, regularność i drogę do oferty. Na tej podstawie tworzymy plan tematów oraz wybieramy kanały social media. Dla firmy usługowej celem może być umówienie rozmowy, dla e-commerce przejście do produktu, a dla marki B2B pokazanie kompetencji i ułatwienie kontaktu handlowego. Nie każda firma potrzebuje obecności na każdej platformie." },
+  { title: "Prowadzenie profili i produkcja contentu", text: "Rozpisujemy posty, grafiki, zdjęcia, krótkie wideo i Stories na uzgodniony okres. Plan publikacji pokazuje temat, format, cel, materiały oraz termin akceptacji. Zdjęcia i nagrania możemy zrealizować jako osobny projekt lub część stałej współpracy. Ustalamy też, które informacje dostarcza klient: nowości w ofercie, ceny, dostępność i odpowiedzi wymagające wiedzy o produkcie. Dzięki temu komunikacja pozostaje aktualna, a kreatywny materiał odpowiada na realne pytanie odbiorcy.", href: "/social-media/content", link: "Zobacz produkcję treści do social media" },
+  { title: "Moderacja i odpowiedzialność za kontakt", text: "Obsługa social mediów wymaga ustalenia, kto odpowiada na komentarze i wiadomości. W zakresie zapisujemy kanały, godziny obsługi i sposób przekazania trudnego pytania do firmy. Informacje o zamówieniu, reklamację lub dane klienta kierujemy do właściwej osoby, zamiast zgadywać odpowiedź. Akceptację materiałów i dostęp do kont organizujemy przez uprawnienia platform. Przed startem określamy również, kto podejmie kontakt ze zgłoszeniem z reklamy lub formularza." },
+  { title: "Reklama w social media i budżet kampanii", text: "Regularne publikacje i kampanie reklamowe pełnią różne role. Organiczny content pozwala poznać markę i jej pracę; płatna dystrybucja pomaga dotrzeć do wybranych odbiorców. W kampanii ustalamy cel, kreacje, miejsce docelowe i sposób mierzenia wyniku. Budżet reklamowy na emisję rozpisujemy osobno od kosztu prowadzenia social media i produkcji. Przy pozyskiwaniu zapytań sprawdzamy także formularz oraz dalszą obsługę kontaktu. Sam tani klik nie przesądza o jakości klienta.", href: "/uslugi/reklama-facebook", link: "Kampanie Facebook i Instagram — zakres współpracy" },
+  { title: "Raportowanie: od zasięgu do zapytania", text: "Raport ma pomagać podjąć decyzję o kolejnych działaniach. Dla rozpoznawalności oceniamy zasięg i odbiór materiałów; dla ruchu — wejścia na właściwą stronę; dla sprzedaży — zgłoszenia, ich jakość i dalszy wynik w firmie. Optymalizacja może oznaczać zmianę kreacji, oferty, strony docelowej albo sposobu kontaktu. Jeżeli pomiar nie pozwala połączyć reklamy z transakcją, zaznaczamy to ograniczenie. W realizacji Dawid EDU pokazujemy zakres kampanii Meta Ads oraz dostępne dane bez utożsamiania wyświetleń z zapisami uczniów.", href: "/realizacje/dawid-edu", link: "Poznaj realizację kampanii dla Dawid EDU" },
+  { title: "Jak porównać oferty agencji social media", text: "Sprawdź, czy wycena obejmuje strategię, liczbę kanałów i materiałów, produkcję, publikację, moderację, reklamy oraz raport. Zapytaj o liczbę tur poprawek, terminy akceptacji, dostęp do plików i zasady zakończenia współpracy. Agencja, freelancer i wewnętrzny social media manager mogą pracować w różnym zakresie, więc porównywanie samej miesięcznej kwoty bywa mylące. Dobry punkt startu to określony cel, dostępne materiały i budżet na uzgodniony plan pracy.", href: "/agencja-social-media/cennik", link: "Od czego zależy koszt obsługi social media" },
+];
+
 const KIND_LABEL: Record<string, string> = {
   info: "Wiedza",
   city: "Miasto",
@@ -55,7 +64,7 @@ export default function AgencjaSocialMedia() {
   return (
     <>
       <SEOHead
-        title="Agencja social media — strategia, content, reklamy | Fotz"
+        title="Agencja social media — treści, profile i reklamy | FOTZ Studio"
         description="Agencja social media z Poznania: strategia, prowadzenie profili, zdjęcia, rolki i kampanie reklamowe. Sprawdź zakres współpracy z FOTZ Studio."
         canonical={`https://www.fotz-studio.pl${SM_PILLAR_PATH}`}
         keywords="agencja social media, prowadzenie social media, agencja SM Poznań, Meta Ads, TikTok Ads"
@@ -96,7 +105,7 @@ export default function AgencjaSocialMedia() {
               Pomagamy firmom uporządkować obecność w social media i połączyć treści z celem biznesowym.
             </p>
             <div className="flex flex-wrap gap-3">
-              <Link to="/kontakt" className="dv-btn dv-btn-primary group">
+              <Link to={enquiryHref("social")} className="dv-btn dv-btn-primary group">
                 Bezpłatna wycena
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
               </Link>
@@ -118,6 +127,18 @@ export default function AgencjaSocialMedia() {
 
         <FeaturedFilms reelsOnly />
         <SelectedWork />
+
+        <section className="container-wide px-6 md:px-12 py-16" aria-labelledby="social-kanaly">
+          <h2 id="social-kanaly" className="font-geist text-3xl md:text-4xl mb-5">Jakie media społecznościowe wybrać dla firmy?</h2>
+          <p className="text-muted-foreground max-w-3xl leading-relaxed mb-8">Zaczynamy od miejsca, w którym można sensownie pokazać ofertę Twojej grupie docelowej. Poniższe zastosowania pomagają ustalić kierunek; wybór platform i zakres obsługi potwierdzamy w planie.</p>
+          <div className="grid sm:grid-cols-2 gap-5">{[
+            { title: "Facebook i Instagram", text: "Prezentacja usług, realizacji i codziennej pracy. Posty, rolki i kampanie Meta Ads mogą kierować do oferty, rozmowy lub formularza." },
+            { title: "LinkedIn", text: "Komunikacja B2B, wiedza ekspertów i przykłady projektów. Treść powinna wyjaśniać problem klienta oraz kompetencje zespołu." },
+            { title: "TikTok", text: "Krótkie demonstracje, odpowiedzi i materiały zza kulis. Najpierw sprawdzamy, czy firma ma tematy i zasoby do regularnych nagrań." },
+            { title: "YouTube i Shorts", text: "Filmy pokazujące produkt, proces lub odpowiedzi na częste pytania. Krótsze wersje materiałów można zaplanować już przy scenariuszu." },
+          ].map(channel => <article key={channel.title} className="rounded-2xl border border-border p-6"><h3 className="font-geist text-xl mb-3">{channel.title}</h3><p className="text-muted-foreground leading-relaxed">{channel.text}</p></article>)}</div>
+        </section>
+        <div className="container-wide px-6 md:px-12 pb-12">{cooperation.map(item => <section key={item.title} className="grid md:grid-cols-[1fr_1.4fr] gap-6 md:gap-12 py-8 border-b border-border"><h2 className="font-geist text-2xl md:text-3xl">{item.title}</h2><div><p className="text-muted-foreground leading-relaxed">{item.text}</p>{item.href && <Link to={item.href} className="inline-flex items-center gap-2 underline underline-offset-4 mt-5">{item.link}<ArrowRight aria-hidden="true" className="w-4 h-4" /></Link>}</div></section>)}</div>
 
         {/* CLUSTER GRID */}
         <section className="container-wide px-6 md:px-12 py-20 md:py-28">

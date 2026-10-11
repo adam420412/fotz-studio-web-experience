@@ -4,12 +4,14 @@ import { Layout } from "@/components/layout/Layout";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
 import { SelectedWork } from "@/components/sections/SelectedWork";
 import { BreadcrumbSchema, FAQSchema, ServiceSchema } from "@/components/seo/StructuredData";
+import { enquiryHref, serviceForPath } from "@/lib/enquiry.mjs";
 
 interface EditorialSection {
   title: string;
   text: string;
   href?: string;
   link?: string;
+  points?: string[];
 }
 
 interface ServiceEditorialProps {
@@ -19,6 +21,7 @@ interface ServiceEditorialProps {
   path: string;
   area?: string;
   workAfterScope?: boolean;
+  enquiryVariant?: string;
   summary: string[];
   scopeTitle: string;
   scope: EditorialSection[];
@@ -27,7 +30,8 @@ interface ServiceEditorialProps {
 }
 
 /** Shared presentation; each offer keeps its own scope, evidence and answers. */
-export function ServiceEditorial({ title, eyebrow, lead, path, area = "Polska", workAfterScope = false, summary, scopeTitle, scope, sections, faqs }: ServiceEditorialProps) {
+export function ServiceEditorial({ title, eyebrow, lead, path, area = "Polska", workAfterScope = false, enquiryVariant, summary, scopeTitle, scope, sections, faqs }: ServiceEditorialProps) {
+  const contactHref = enquiryHref(serviceForPath(path), enquiryVariant);
   return <Layout workPlacement={workAfterScope ? "manual" : "end"}>
     <BreadcrumbSchema items={[{ name: "Strona główna", url: "/" }, { name: "Usługi", url: "/uslugi" }, { name: title, url: path }]} />
     <ServiceSchema name={title} description={lead} areaServed={area} />
@@ -41,7 +45,7 @@ export function ServiceEditorial({ title, eyebrow, lead, path, area = "Polska", 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading leading-tight mb-6">{title}</h1>
           <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">{lead}</p>
           <div className="flex flex-wrap gap-3 mt-8">
-            <Link to="/kontakt" className="dv-btn dv-btn-primary">Porozmawiajmy o projekcie <ArrowRight aria-hidden="true" className="w-4 h-4" /></Link>
+            <Link to={contactHref} className="dv-btn dv-btn-primary">Porozmawiajmy o projekcie <ArrowRight aria-hidden="true" className="w-4 h-4" /></Link>
             <a href="#zakres" className="dv-btn dv-btn-secondary">Zobacz zakres</a>
           </div>
         </div>
@@ -69,7 +73,7 @@ export function ServiceEditorial({ title, eyebrow, lead, path, area = "Polska", 
     <div className="container-wide px-6 md:px-12 py-12 md:py-16">
       {sections.map((item, index) => <section key={item.title} className="grid md:grid-cols-[1fr_1.4fr] gap-5 md:gap-12 py-8 border-b border-border first:pt-0">
         <div><p aria-hidden="true" className="text-sm text-primary mb-3">0{index + 1}</p><h2 className="text-2xl md:text-3xl font-heading">{item.title}</h2></div>
-        <div><p className="text-muted-foreground leading-relaxed">{item.text}</p>{item.href && <Link to={item.href} className="inline-flex items-center gap-2 underline underline-offset-4 mt-5">{item.link}<ArrowRight aria-hidden="true" className="w-4 h-4" /></Link>}</div>
+        <div><p className="text-muted-foreground leading-relaxed">{item.text}</p>{item.points && <ul className="mt-5 space-y-3 text-muted-foreground list-disc pl-5">{item.points.map(point => <li key={point} className="leading-relaxed">{point}</li>)}</ul>}{item.href && <Link to={item.href} className="inline-flex items-center gap-2 underline underline-offset-4 mt-5">{item.link}<ArrowRight aria-hidden="true" className="w-4 h-4" /></Link>}</div>
       </section>)}
     </div>
 
@@ -79,7 +83,7 @@ export function ServiceEditorial({ title, eyebrow, lead, path, area = "Polska", 
     </section>
 
     <section className="container-wide px-6 md:px-12 pb-16">
-      <div className="rounded-3xl border border-border bg-card p-6 md:p-10 flex flex-wrap items-center justify-between gap-6"><div><h2 className="text-2xl md:text-3xl font-heading mb-3">Zacznijmy od Twojej sytuacji.</h2><p className="text-muted-foreground max-w-xl">Prześlij adres strony, opisz cel i wskaż, co chcesz zmienić. Na tej podstawie ustalimy następny krok.</p></div><Link to="/kontakt" className="dv-btn dv-btn-primary">Przejdź do kontaktu <ArrowRight aria-hidden="true" className="w-4 h-4" /></Link></div>
+      <div className="rounded-3xl border border-border bg-card p-6 md:p-10 flex flex-wrap items-center justify-between gap-6"><div><h2 className="text-2xl md:text-3xl font-heading mb-3">Zacznijmy od Twojej sytuacji.</h2><p className="text-muted-foreground max-w-xl">Prześlij adres strony, opisz cel i wskaż, co chcesz zmienić. Na tej podstawie ustalimy następny krok.</p></div><Link to={contactHref} className="dv-btn dv-btn-primary">Przejdź do kontaktu <ArrowRight aria-hidden="true" className="w-4 h-4" /></Link></div>
     </section>
   </Layout>;
 }
