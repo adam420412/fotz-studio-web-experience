@@ -7,12 +7,17 @@ import { PortfolioVideo } from "@/components/PortfolioVideo";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { BreadcrumbSchema, OrganizationSchema } from "@/components/seo/StructuredData";
 import { projects, galleryCategories, galleryImages } from "@/data/portfolio";
+import { portfolioPreviews } from "@/data/portfolio-previews";
 import { business } from "@/data/business.mjs";
 import { cn } from "@/lib/utils";
+import "./realizacje.css";
 
 const projectCategories = ["Wszystkie", "Strony www", "Kampanie reklamowe", "E-commerce", "Wizualizacje 3D"];
-const orderedProjects = [...projects].sort((a, b) => Number(b.featured) - Number(a.featured));
+const spotlightOrder = ["enea-stadion", "klagem", "dawid-edu"];
+const projectOrder = (id: string) => spotlightOrder.includes(id) ? spotlightOrder.indexOf(id) : spotlightOrder.length;
+const orderedProjects = [...projects].sort((a, b) => projectOrder(a.id) - projectOrder(b.id));
 const videos = [
+  { src: "/videos/cupra-enea.mp4", poster: "/videos/cupra-enea-poster.webp", title: "CUPRA × Enea Stadion", category: "Spot reklamowy · motoryzacja" },
   { src: "/videos/fotz-reel-web.mp4", poster: "/videos/enea-stadion-cover.webp", title: "Enea Stadion — emocje z bliska", category: "Film z wydarzenia" },
   { src: "/videos/autospa.mp4", poster: "/videos/autospa-frame.webp", title: "AutoSpa", category: "Prezentacja firmy" },
   { src: "/videos/fps-poznan.mp4", poster: "/videos/fps-poznan-frame.webp", title: "FPS Poznań — prezentacja strony", category: "Projekt WWW" },
@@ -40,11 +45,11 @@ export default function Realizacje() {
       <OrganizationSchema />
       <SEOHead title="Realizacje FOTZ Studio — strony, kampanie, zdjęcia i filmy" description="Zobacz wybrane realizacje FOTZ Studio: strony internetowe, sklepy, kampanie reklamowe, fotografie, filmy i wizualizacje 3D. Poznaj zakres projektów." canonical="https://www.fotz-studio.pl/realizacje" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://www.fotz-studio.pl/" }, { name: "Realizacje", url: "https://www.fotz-studio.pl/realizacje" }]} />
-      <section className="pt-28 pb-12 md:pt-36 md:pb-16 border-b border-border">
+      <section className="portfolio-intro pt-28 pb-10 md:pt-36 md:pb-16 border-b border-border">
         <div className="container-wide px-6 md:px-12">
           <p className="dv-eyebrow mb-5">Portfolio FOTZ Studio</p>
           <div className="grid lg:grid-cols-[1.3fr_1fr] gap-6 lg:gap-16 items-end">
-            <h1 className="text-[clamp(42px,6vw,80px)] leading-[1.05] tracking-[-.045em]">Pomysły, które<br /><span className="dv-text-grad italic">przybrały formę.</span></h1>
+            <h1 className="text-[clamp(42px,6.4vw,88px)] leading-[1.02] tracking-[-.055em]">Pomysły, które<br /><span className="dv-text-grad italic">przybrały formę.</span></h1>
             <p className="text-lg text-muted-foreground leading-relaxed max-w-xl">Strony, kampanie i materiały wizualne. Zobacz wybrane realizacje, sprawdź zakres prac i wybierz przykłady bliskie Twojemu projektowi.</p>
           </div>
           <nav aria-label="Sekcje portfolio" className="mt-8 flex flex-wrap gap-3">
@@ -52,57 +57,70 @@ export default function Realizacje() {
             <a href="#filmy" className="dv-btn dv-btn-secondary">Filmy <span className="text-muted-foreground">{videos.length}</span></a>
             <a href="#zdjecia" className="dv-btn dv-btn-secondary">Zdjęcia i 3D <span className="text-muted-foreground">{galleryImages.length}</span></a>
           </nav>
+          <Link to="/realizacje/enea-stadion" className="portfolio-feature group relative mt-10 block overflow-hidden rounded-2xl bg-neutral-950 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
+            <img src="/work/stadium-1200.webp" srcSet="/work/stadium-480.webp 480w, /work/stadium-800.webp 800w, /work/stadium-1200.webp 1200w" sizes="(max-width: 767px) calc(100vw - 48px), (max-width: 1279px) calc(100vw - 96px), 1184px" width="1200" height="898" fetchPriority="high" alt="Enea Stadion w wieczornym świetle i czerwone race na pierwszym planie" className="portfolio-media absolute inset-0 h-full w-full object-cover object-center" />
+            <span aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent" />
+            <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-5 p-6 md:p-10">
+              <div><p className="mb-3 text-xs uppercase tracking-[.18em] text-white/80">W obiektywie FOTZ Studio</p><p className="text-3xl md:text-5xl tracking-tight">Enea Stadion</p><p className="mt-3 text-sm text-white/85">Miejsce, emocje i jego obecność w sieci.</p><span className="mt-5 inline-block text-sm underline underline-offset-4">Poznaj realizację</span></div>
+              <span aria-hidden="true" className="portfolio-arrow flex h-12 w-12 md:h-16 md:w-16 shrink-0 items-center justify-center rounded-full border border-white/50 bg-black/20"><ArrowUpRight className="h-6 w-6" /></span>
+            </div>
+          </Link>
         </div>
       </section>
 
-      <section id="projekty" aria-labelledby="projects-heading" className="py-12 md:py-16">
+      <section id="projekty" aria-labelledby="projects-heading" className="scroll-mt-28 py-14 md:py-20">
         <div className="container-wide px-6 md:px-12">
-          <h2 id="projects-heading" className="text-3xl md:text-4xl mb-6">Strony i projekty marketingowe</h2>
-          <div role="group" aria-label="Filtruj projekty" className="flex flex-wrap gap-2">
-            {projectCategories.map(category => <button key={category} type="button" aria-pressed={activeProjectCategory === category} aria-controls="project-grid" onClick={() => setActiveProjectCategory(category)} className={filterClass(activeProjectCategory === category)}>{category}</button>)}
+          <div className="mb-9 flex flex-wrap items-end justify-between gap-5"><div><p className="dv-eyebrow mb-4">Wybrane współprace</p><h2 id="projects-heading" className="text-3xl md:text-5xl tracking-tight">Strony i projekty marketingowe</h2></div><Link to="/kontakt" className="inline-flex items-center gap-2 underline underline-offset-4">Porozmawiajmy o Twoim projekcie <ArrowUpRight aria-hidden="true" className="h-4 w-4" /></Link></div>
+          <div className="grid gap-8 lg:grid-cols-[170px_minmax(0,1fr)] lg:gap-10">
+          <div className="lg:sticky lg:top-28 self-start">
+            <div role="group" aria-label="Filtruj projekty" className="flex flex-wrap gap-2 lg:flex-col lg:items-stretch">
+              {projectCategories.map(category => <button key={category} type="button" aria-pressed={activeProjectCategory === category} aria-controls="project-grid" onClick={() => setActiveProjectCategory(category)} className={cn(filterClass(activeProjectCategory === category), "flex items-center justify-between gap-3 text-left lg:rounded-xl")}><span>{category}</span><span className="text-xs opacity-70">{category === "Wszystkie" ? projects.length : projects.filter(project => project.category === category).length}</span></button>)}
+            </div>
+            <p role="status" className="text-xs text-muted-foreground mt-5 leading-relaxed">Wyświetlono {filteredProjects.length} z {projects.length} projektów</p>
           </div>
-          <p role="status" className="text-sm text-muted-foreground my-5">Wyświetlono {filteredProjects.length} z {projects.length} projektów</p>
-          <div id="project-grid" className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
-            {filteredProjects.map(project => {
+          <div id="project-grid" className="grid min-w-0 sm:grid-cols-2 gap-x-6 gap-y-10 md:gap-y-14">
+            {filteredProjects.map((project, index) => {
               const card = <>
-                <div className="relative aspect-[16/10] overflow-hidden bg-muted">
-                  <img src={project.image} alt="" className="h-full w-full object-cover object-top" loading="lazy" width="720" height="450" />
+                <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-border bg-muted">
+                  <img src={portfolioPreviews[project.image]?.src ?? project.image} srcSet={portfolioPreviews[project.image]?.srcSet} sizes="(max-width: 639px) calc(100vw - 48px), (max-width: 767px) calc((100vw - 72px) / 2), (max-width: 1023px) calc((100vw - 120px) / 2), (max-width: 1279px) calc((100vw - 330px) / 2), 475px" alt="" className="portfolio-media h-full w-full object-cover object-top" loading="lazy" decoding="async" width="720" height="540" />
                   {project.featured && <span className="absolute top-4 left-4 rounded-full bg-black/80 px-3 py-1.5 text-xs text-white">Wybrana realizacja</span>}
+                  <span aria-hidden="true" className="portfolio-card-icon absolute bottom-4 right-4 flex h-11 w-11 items-center justify-center rounded-full bg-background text-foreground shadow-sm">{project.hasCase ? <ArrowUpRight className="h-5 w-5" /> : <Expand className="h-5 w-5" />}</span>
                 </div>
-                <div className="p-5 flex flex-1 flex-col items-start">
-                  <p className="text-xs uppercase tracking-wider text-muted-foreground mb-2">{project.category}</p>
-                  <h3 className="text-xl mb-3">{project.title}</h3>
+                <div className="pt-5 flex flex-1 flex-col items-start">
+                  <p className="text-[11px] uppercase tracking-[.14em] text-muted-foreground mb-2">{project.category}</p>
+                  <h3 className="text-2xl md:text-3xl tracking-tight mb-3">{project.title}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed mb-5">{project.description}</p>
-                  <span className="mt-auto flex items-center gap-2 text-sm font-medium">{project.hasCase ? "Zobacz projekt" : "Powiększ wizualizację"}{project.hasCase ? <ArrowUpRight aria-hidden="true" className="w-4 h-4" /> : <Expand aria-hidden="true" className="w-4 h-4" />}</span>
+                  <span className="mt-auto text-sm underline underline-offset-4">{project.hasCase ? "Zobacz projekt" : "Powiększ wizualizację"}</span>
                 </div>
               </>;
-              const className = "flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card text-left hover:border-primary/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary";
-              return <article key={project.id}>{project.hasCase ? <Link to={`/realizacje/${project.id}`} className={className}>{card}</Link> : <button type="button" className={cn(className, "w-full")} onClick={() => setLightbox({ images: [{ src: project.image, alt: project.title }], index: 0 })}>{card}</button>}</article>;
+              const className = "portfolio-project group flex h-full flex-col rounded-2xl text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary";
+              return <article key={`${activeProjectCategory}-${project.id}`} className="portfolio-enter min-w-0" style={{ animationDelay: `${Math.min(index, 3) * 45}ms` }}>{project.hasCase ? <Link to={`/realizacje/${project.id}`} className={className}>{card}</Link> : <button type="button" className={cn(className, "w-full")} onClick={() => setLightbox({ images: [{ src: project.image, alt: project.title }], index: 0 })}>{card}</button>}</article>;
             })}
+          </div>
           </div>
         </div>
       </section>
 
-      <section id="filmy" aria-labelledby="videos-heading" className="py-12 md:py-16 bg-muted/30 border-y border-border">
+      <section id="filmy" aria-labelledby="videos-heading" className="scroll-mt-28 py-14 md:py-20 bg-muted/30 border-y border-border">
         <div className="container-wide px-6 md:px-12">
           <div className="flex flex-wrap justify-between items-end gap-5 mb-8">
             <div><p className="dv-eyebrow mb-3">Produkcja video</p><h2 id="videos-heading" className="text-3xl md:text-4xl">Zobacz nasze filmy</h2></div>
             <Link to="/uslugi/produkcja-video" className="underline underline-offset-4">Poznaj ofertę video</Link>
           </div>
-          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">{videos.map(video => <PortfolioVideo key={video.src} {...video} />)}</div>
+          <div className="portfolio-films grid md:grid-cols-2 gap-6 md:gap-8">{videos.map(video => <PortfolioVideo key={video.src} {...video} />)}</div>
         </div>
       </section>
 
-      <section id="zdjecia" aria-labelledby="photos-heading" className="py-12 md:py-16">
+      <section id="zdjecia" aria-labelledby="photos-heading" className="scroll-mt-28 py-14 md:py-20">
         <div className="container-wide px-6 md:px-12">
           <p className="dv-eyebrow mb-3">Galeria</p><h2 id="photos-heading" className="text-3xl md:text-4xl mb-4">Zdjęcia i wizualizacje 3D</h2>
           <p className="text-muted-foreground max-w-2xl mb-7">Koncerty, wydarzenia, portrety i przestrzenie. Wybierz kategorię i otwórz zdjęcie, żeby zobaczyć je w całości.</p>
           <div role="group" aria-label="Filtruj galerię" className="flex flex-wrap gap-2 mb-7">
             {galleryCategories.map(category => <button key={category.id} type="button" aria-pressed={activeGalleryCategory === category.id} aria-controls="photo-grid" onClick={() => { setActiveGalleryCategory(category.id); setVisiblePhotos(12); }} className={cn(filterClass(activeGalleryCategory === category.id), "flex items-center gap-2")}><category.icon aria-hidden="true" className="w-4 h-4" />{category.label}</button>)}
           </div>
-          <div id="photo-grid" className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-5">
-            {displayedPhotos.map((photo, index) => <button key={photo.src} type="button" aria-label={`Powiększ: ${photo.title}`} className="relative aspect-square overflow-hidden rounded-xl group focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" onClick={() => setLightbox({ images: filteredGallery.map(image => ({ src: image.src, alt: image.title })), index })}>
-              <img src={photo.src} alt="" className="w-full h-full object-cover" loading="lazy" width="480" height="480" />
+          <div id="photo-grid" className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-5">
+            {displayedPhotos.map((photo, index) => <button key={photo.src} type="button" aria-label={`Powiększ: ${photo.title}`} className="portfolio-photo relative aspect-[4/3] overflow-hidden rounded-xl group focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" onClick={() => setLightbox({ images: filteredGallery.map(image => ({ src: image.src, alt: image.title })), index })}>
+              <img src={portfolioPreviews[photo.src]?.src ?? photo.src} srcSet={portfolioPreviews[photo.src]?.srcSet} sizes="(max-width: 767px) calc((100vw - 60px) / 2), (max-width: 1279px) calc((100vw - 136px) / 3), 381px" alt="" className="portfolio-media w-full h-full object-cover" loading="lazy" decoding="async" width="640" height="480" />
               <span aria-hidden="true" className="absolute bottom-2 right-2 flex h-8 w-8 items-center justify-center rounded-full bg-black/65 text-white"><Expand className="w-4 h-4" /></span>
             </button>)}
           </div>
