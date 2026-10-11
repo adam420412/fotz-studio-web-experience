@@ -63,3 +63,29 @@ Kolejne analizy NEURONwriter uruchomione na podstawie wyświetleń bez kliknię�
 Dodatkowa inspekcja /uslugi/audyt-strony-internetowej także potwierdza indeksowanie mimo obecności w starszym raporcie wykluczeń.
 
 Claude Code przejrzał head 0c357d3 bez blokujących uwag. Jedną uwagę o zbyt ogólnym kontekście formularza poprawiono: formularze na ofertach dostają domyślny wariant, zachowują wariant jawnie podany w linku, a zmiana usługi usuwa poprzedni zakres. Temat wiadomości zawiera wariant. Kategoria backendowa marketing pozostaje istniejąca; etykieta obejmuje teraz również kampanie. Przegląd kampanii ma odrębny wariant campaign_audit. Dodano test dla domyślnych zakresów i pierwszeństwa kontekstu linku.
+
+
+## Druga partia — treści i kontekst zapytania
+
+Rozszerzono cztery oferty zgodnie z właściwą intencją analiz NEURONwriter: audyt SEO (zakres, raport, analiza treści, technologia i przygotowanie), agencja Poznań (kryteria wyboru i prawdziwe portfolio), social media (dobór kanałów, produkcja, moderacja, budżet i raportowanie) oraz strony Legnica (rodzaj strony, CMS, materiały, SEO i utrzymanie). Linki kontaktowe zachowują usługę; oferta audytu także wariant `audit`. Wspólny ServiceEditorial przekazuje kategorię również na pozostałych czterech korzystających z niego ofertach.
+
+| Oferta | Analiza | Przed | Po, lokalna treść |
+|---|---|---:|---:|
+| Agencja Poznań | 5a02ecc0a94e910d | 63 | 71 |
+| Audyt SEO | 880fa6a633767168 | 42 | 57 |
+| Agencja social media | a51d6a0db3ccc629 | 61 | 75 |
+| Strony Legnica | aaac7d78e9edc8f0 | 29 | 48 |
+
+Dla Legnicy utworzono ósmą analizę: „tworzenie stron internetowych Legnica”. Poprzednie ogólne zapytanie mieszało ofertę z portalem miejskim i nie jest właściwą podstawą oceny. Nowy SERP jest w 90% transakcyjny/lokalny, lecz zawiera także oferty pozycjonowania. Uwzględniono pytania o tworzenie stron, odrzucono rozszerzanie strony o niepowiązane lokalne rankingi i cenniki SEO. Wyników 29→48 nie wolno porównywać z 48 w starej analizie — to różne modele.
+
+Walidacja drugiej partii: pełny build 1074 dokumentów / 1071 pełnych treści / 0 błędów, 93/93 testy, kontrola 134874 linków wewnętrznych i 3926 odnośników źródłowych bez błędów, mobile 390 px bez poziomego przepełnienia. Wynik punktowy nie jest celem ani potwierdzeniem skuteczności w Google.
+
+## Cały serwis, nie tylko oferta
+
+Zebrano treść, nagłówki, obrazy, odnośniki i historyczne wyniki GSC dla wszystkich 1072 adresów: 742 adresy blogowe i 330 pozostałych. Pełna kolejka jest w `neuron-page-inventory-2026-10-11.csv`; status każdego URL odróżnia wdrożenie, ocenę i brak indywidualnej analizy. Arkusz nie stwierdza, że wszystkie strony przeszły NEURONwriter.
+
+Automatyczne flagi w lokalnym `all-pages-content-review.csv` są wyłącznie pomocą do ręcznej oceny, nie listą potwierdzonych błędów. Brak dodatkowego zdjęcia poza wspólną galerią nie oznacza awarii. Podstrony miejskie wymagają także sprawdzenia starych dat, statystyk doświadczenia i obietnic bez źródeł. Zbieżne adresy lokalnego SEO lub tworzenia stron należy porównać pod kątem intencji przed wydawaniem kolejnych analiz lub decyzją o konsolidacji. Nie wykonano masowych przekierowań ani usuwania stron.
+
+Priorytet kolejnych analiz: właściwe podstrony sprzedażowe z wyświetleniami i niską liczbą kliknięć; następnie wykluczone oferty; później powiązane poradniki. Strony kontaktowe i prawne oceniamy według ich funkcji, bez sztucznego rozbudowywania ich pod score narzędzia. Limit planu wynosi 75 nowych analiz miesięcznie, wykorzystano 8. Każde użycie analizy grupowej wymaga tej samej intencji; ogólna przynależność do SEO czy marketingu nie wystarcza.
+
+Dla widoczności w Google AI nie ma dodatkowego wymaganego schematu ani pliku: indeksowanie, dostępna treść i wiarygodne źródła pozostają podstawą. Nie ma gwarancji cytowania. Źródło: https://developers.google.com/search/docs/appearance/ai-features.
