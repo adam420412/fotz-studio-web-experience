@@ -92,7 +92,7 @@ const PozycjonowanieKrakow = () => {
     <Layout>
       <SEOHead
         title="Pozycjonowanie Kraków — Agencja SEO | Fotz Studio"
-        description="Pozycjonowanie stron internetowych Kraków. Agencja SEO Fotz Studio — audyt, optymalizacja, link building. Zwiększamy ruch firm krakowskich. Bezpłatny audyt!"
+        description="Pozycjonowanie stron internetowych Kraków. Agencja SEO Fotz Studio — audyt, optymalizacja, link building. Zwiększamy ruch firm krakowskich. Bezpłatna konsultacja SEO!"
         canonical="https://www.fotz-studio.pl/uslugi/pozycjonowanie/krakow"
         keywords="pozycjonowanie kraków, agencja seo kraków, seo kraków, pozycjonowanie stron kraków, seo dla firm kraków, seo małopolska, audyt seo kraków, pozycjonowanie lokalne kraków"
       />
@@ -158,8 +158,8 @@ const PozycjonowanieKrakow = () => {
               className="flex flex-col sm:flex-row gap-4 justify-center"
             >
               <Button size="lg" asChild className="text-base px-8">
-                <Link to="/kontakt">
-                  Zamów bezpłatny audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
+                <Link to="/kontakt?usluga=seo&wariant=audit#formularz">
+                  Zapytaj o audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
               <Button size="lg" variant="outline" asChild className="text-base px-8">
@@ -359,7 +359,7 @@ const PozycjonowanieKrakow = () => {
             {[
               {
                 step: "01",
-                title: "Bezpłatny audyt SEO",
+                title: "Konsultacja i zakres audytu SEO",
                 desc: "Analizujemy Twoją stronę, konkursów i potencjał dla słów kluczowych z Krakowem. Sprawdzamy, jakie frazy mają największy potencjał w Twojej branży.",
               },
               {
@@ -404,13 +404,13 @@ const PozycjonowanieKrakow = () => {
               Gotowy na pierwszą stronę Google w Krakowie?
             </h2>
             <p className="text-primary-foreground/80 text-lg mb-8 max-w-xl mx-auto">
-              Zamów bezpłatny audyt SEO swojej strony. Otrzymasz raport z
+              Zapytaj o audyt SEO swojej strony. Zakres i wycenę ustalimy na bezpłatnej konsultacji, a raport przygotujemy z
               konkretnymi rekomendacjami dla rynku krakowskiego i Twojej branży.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" asChild className="text-base px-8">
-                <Link to="/kontakt">
-                  Zamów bezpłatny audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
+                <Link to="/kontakt?usluga=seo&wariant=audit#formularz">
+                  Zapytaj o audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
               <Button

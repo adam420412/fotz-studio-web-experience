@@ -93,7 +93,7 @@ const PozycjonowanieElblag = () => {
     <Layout>
       <SEOHead
         title="Pozycjonowanie Elbląg - lokalne SEO dla firm | fotz studio"
-        description="Pozycjonowanie stron Elbląg. Agencja SEO fotz studio - audyt SEO, optymalizacja, link building. SEO dla turystyki, hoteli i portów. Bezpłatny audyt!"
+        description="Pozycjonowanie stron Elbląg. Agencja SEO fotz studio - audyt SEO, optymalizacja, link building. SEO dla turystyki, hoteli i portów. Bezpłatna konsultacja SEO!"
         canonical="https://www.fotz-studio.pl/pozycjonowanie/elblag"
         keywords="pozycjonowanie elbląg, agencja seo elbląg, seo elbląg, pozycjonowanie stron elbląg, seo dla firm elbląg, pozycjonowanie lokalne elbląg, seo warmia mazury"
       />
@@ -137,8 +137,8 @@ const PozycjonowanieElblag = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" asChild className="text-base px-8 bg-yellow-400 text-gray-900 hover:bg-yellow-300">
-                <Link to="/kontakt">
-                  Zamów bezpłatny audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
+                <Link to="/kontakt?usluga=seo&wariant=audit#formularz">
+                  Zapytaj o audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
               <Button size="lg" variant="outline" asChild className="text-base px-8 border-white text-white hover:bg-white/10">
@@ -276,7 +276,7 @@ const PozycjonowanieElblag = () => {
             {[
               {
                 step: "01",
-                title: "Bezpłatny audyt SEO",
+                title: "Konsultacja i zakres audytu SEO",
                 desc: "Analizujemy Twoją stronę pod kątem fraz lokalnych (Elbląg, turystyka morska) i branżowych. Sprawdzamy techniczne podstawy i profil konkurencji.",
               },
               {
@@ -418,13 +418,13 @@ const PozycjonowanieElblag = () => {
             Gotowy na pierwszą stronę Google w Elblągu?
           </h2>
           <p className="text-gray-900/80 text-lg mb-8 max-w-xl mx-auto">
-            Zamów bezpłatny audyt SEO. Przeanalizujemy Twoje frazy dla Elbląga
+            Zapytaj o audyt SEO. Zakres i wycenę ustalimy na bezpłatnej konsultacji, a w audycie przeanalizujemy Twoje frazy dla Elbląga
             i pokażemy, co powstrzymuje Cię przed TOP 10.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" asChild className="text-base px-8 bg-gray-900 text-white hover:bg-gray-800">
-              <Link to="/kontakt">
-                Zamów bezpłatny audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
+              <Link to="/kontakt?usluga=seo&wariant=audit#formularz">
+                Zapytaj o audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
             <Button

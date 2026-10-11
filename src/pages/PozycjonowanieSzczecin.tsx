@@ -97,7 +97,7 @@ const PozycjonowanieSzczecin = () => {
     <Layout>
       <SEOHead
         title="Pozycjonowanie Szczecin — Agencja SEO Zachodniopomorskie"
-        description="Pozycjonowanie stron Szczecin i Zachodniopomorskie. Agencja SEO Fotz Studio — audyt SEO, optymalizacja, link building. SEO dla rynku PL i DE. Bezpłatny audyt!"
+        description="Pozycjonowanie stron Szczecin i Zachodniopomorskie. Agencja SEO Fotz Studio — audyt SEO, optymalizacja, link building. SEO dla rynku PL i DE. Bezpłatna konsultacja SEO!"
         canonical="https://www.fotz-studio.pl/uslugi/pozycjonowanie/szczecin"
         keywords="pozycjonowanie szczecin, agencja seo szczecin, seo szczecin, pozycjonowanie stron szczecin, seo dla firm szczecin, seo zachodniopomorskie, pozycjonowanie lokalne szczecin"
       />
@@ -163,8 +163,8 @@ const PozycjonowanieSzczecin = () => {
               className="flex flex-col sm:flex-row gap-4 justify-center"
             >
               <Button size="lg" asChild className="text-base px-8">
-                <Link to="/kontakt">
-                  Zamów bezpłatny audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
+                <Link to="/kontakt?usluga=seo&wariant=audit#formularz">
+                  Zapytaj o audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
               <Button size="lg" variant="outline" asChild className="text-base px-8">
@@ -309,7 +309,7 @@ const PozycjonowanieSzczecin = () => {
             {[
               {
                 step: "01",
-                title: "Bezpłatny audyt SEO",
+                title: "Konsultacja i zakres audytu SEO",
                 desc: "Analizujemy Twoją stronę pod kątem fraz lokalnych (Szczecin, Zachodniopomorskie) oraz potencjału cross-border PL/DE. Sprawdzamy techniczne podstawy i profil linków.",
               },
               {
@@ -354,13 +354,13 @@ const PozycjonowanieSzczecin = () => {
               Gotowy na pierwszą stronę Google w Szczecinie?
             </h2>
             <p className="text-primary-foreground/80 text-lg mb-8 max-w-xl mx-auto">
-              Zamów bezpłatny audyt SEO. Przeanalizujemy Twoje frazy dla Szczecina
+              Zapytaj o audyt SEO. Zakres i wycenę ustalimy na bezpłatnej konsultacji, a w audycie przeanalizujemy Twoje frazy dla Szczecina
               i Zachodniopomorskiego — i pokażemy, co powstrzymuje Cię przed TOP 10.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" asChild className="text-base px-8">
-                <Link to="/kontakt">
-                  Zamów bezpłatny audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
+                <Link to="/kontakt?usluga=seo&wariant=audit#formularz">
+                  Zapytaj o audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
               <Button

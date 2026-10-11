@@ -97,7 +97,7 @@ const PozycjonowanieKalisz = () => {
     <Layout>
       <SEOHead
         title="Pozycjonowanie Kalisz - Agencja SEO Wielkopolska | Fotz Studio"
-        description="Pozycjonowanie stron Kalisz i Wielkopolska. Agencja SEO Fotz Studio - szybkie efekty, niższa konkurencja, białohat SEO dla firm z Kalisza. Bezpłatny audyt!"
+        description="Pozycjonowanie stron Kalisz i Wielkopolska. Agencja SEO Fotz Studio - szybkie efekty, niższa konkurencja, białohat SEO dla firm z Kalisza. Bezpłatna konsultacja SEO!"
         canonical="https://www.fotz-studio.pl/pozycjonowanie/kalisz"
         keywords="pozycjonowanie kalisz, agencja seo kalisz, seo kalisz, pozycjonowanie stron kalisz, seo dla firm kalisz, pozycjonowanie lokalne kalisz, seo wielkopolska"
       />
@@ -158,8 +158,8 @@ const PozycjonowanieKalisz = () => {
               className="flex flex-col sm:flex-row gap-4 justify-center"
             >
               <Button size="lg" asChild className="text-base px-8">
-                <Link to="/kontakt">
-                  Zamów bezpłatny audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
+                <Link to="/kontakt?usluga=seo&wariant=audit#formularz">
+                  Zapytaj o audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
               <Button size="lg" variant="outline" asChild className="text-base px-8">
@@ -293,7 +293,7 @@ const PozycjonowanieKalisz = () => {
             {[
               {
                 step: "01",
-                title: "Bezpłatny audyt SEO",
+                title: "Konsultacja i zakres audytu SEO",
                 desc: "Analizujemy Twoją stronę pod kątem fraz dla Kalisza i Wielkopolski. Oceniamy realne szanse na TOP 10 i czas potrzebny do wyników - zwykle krótszy niż w dużych miastach.",
               },
               {
@@ -407,7 +407,7 @@ const PozycjonowanieKalisz = () => {
                     variant={pkg.highlighted ? "default" : "outline"}
                     className="w-full"
                   >
-                    <Link to="/kontakt">Bezpłatny audyt SEO</Link>
+                    <Link to="/kontakt?usluga=seo#formularz">Bezpłatna konsultacja SEO</Link>
                   </Button>
                 </div>
               </FadeInView>
@@ -424,12 +424,12 @@ const PozycjonowanieKalisz = () => {
               Gotowy na pierwszą stronę Google w Kaliszu?
             </h2>
             <p className="text-primary-foreground/80 text-lg mb-8 max-w-xl mx-auto">
-              Zamów bezpłatny audyt SEO. Pokażemy Ci, jak szybko możesz wygrać z lokalną konkurencją w Kaliszu i co konkretnie trzeba zrobić, aby uzyskać organiczny ruch.
+              Zapytaj o audyt SEO. Zakres i wycenę ustalimy na bezpłatnej konsultacji, a potem pokażemy, jak wygrać z lokalną konkurencją w Kaliszu i co konkretnie trzeba zrobić, aby uzyskać organiczny ruch.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" asChild className="text-base px-8">
-                <Link to="/kontakt">
-                  Zamów bezpłatny audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
+                <Link to="/kontakt?usluga=seo&wariant=audit#formularz">
+                  Zapytaj o audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
               <Button

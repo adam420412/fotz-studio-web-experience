@@ -415,14 +415,14 @@ const BlogSEOLokalnePoznan = () => {
               <div className="mt-16 p-8 bg-gradient-to-r from-primary/20 to-primary/10 rounded-2xl text-center">
                 <h3 className="text-2xl font-bold mb-4">Potrzebujesz pomocy z SEO lokalnym w Poznaniu?</h3>
                 <p className="text-muted-foreground mb-6">
-                  Fotz Studio specjalizuje się w pozycjonowaniu lokalnych firm. Bezpłatny audyt pokaże Ci, co poprawić.
+                  Fotz Studio specjalizuje się w pozycjonowaniu lokalnych firm. Bezpłatna konsultacja pomoże ustalić, co sprawdzić i poprawić.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link 
-                    to="/kontakt" 
+                    to="/kontakt?usluga=seo#formularz" 
                     className="inline-flex items-center justify-center px-6 py-3 bg-primary text-primary-foreground rounded-full font-medium hover:bg-primary/90 transition-colors"
                   >
-                    Bezpłatny audyt SEO
+                    Bezpłatna konsultacja SEO
                   </Link>
                   <Link 
                     to="/seo/pozycjonowanie-poznan" 

@@ -206,7 +206,7 @@ export default function BlogPozycjonowanieStronCena() {
                 <TrendingUp className="w-5 h-5 text-blue-600 mb-2" />
                 <h3 className="font-bold text-slate-900 mb-2">Sprawdź ile kosztuje pozycjonowanie Twojej strony</h3>
                 <p className="text-slate-600 text-sm mb-3">
-                  Robimy bezpłatny audyt i wycenę SEO. Powiedz nam o celach i dostaniesz konkretną ofertę.
+                  Oferujemy bezpłatną konsultację i wycenę SEO. Powiedz nam o celach i dostaniesz konkretną ofertę.
                 </p>
                 <Link to="/kontakt">
                   <Button className="bg-blue-600 hover:bg-blue-700 text-white text-sm">

@@ -97,7 +97,7 @@ const PozycjonowanieBialystok = () => {
     <Layout>
       <SEOHead
         title="Pozycjonowanie Białystok — Agencja SEO Podlaskie | Fotz Studio"
-        description="Pozycjonowanie stron Białystok i Podlaskie. Agencja SEO Fotz Studio — szybkie efekty, niższa konkurencja, white hat SEO. Bezpłatny audyt SEO dla firm z Białegostoku i regionu."
+        description="Pozycjonowanie stron Białystok i Podlaskie. Agencja SEO Fotz Studio — szybkie efekty, niższa konkurencja, white hat SEO. Bezpłatna konsultacja SEO dla firm z Białegostoku i regionu."
         canonical="https://www.fotz-studio.pl/uslugi/pozycjonowanie/bialystok"
         keywords="pozycjonowanie białystok, agencja seo białystok, seo białystok, pozycjonowanie stron białystok, seo dla firm białystok, pozycjonowanie lokalne białystok, audyt seo białystok, seo podlaskie, agencja marketingowa białystok"
       />
@@ -163,8 +163,8 @@ const PozycjonowanieBialystok = () => {
               className="flex flex-col sm:flex-row gap-4 justify-center"
             >
               <Button size="lg" asChild className="text-base px-8">
-                <Link to="/kontakt">
-                  Zamów bezpłatny audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
+                <Link to="/kontakt?usluga=seo&wariant=audit#formularz">
+                  Zapytaj o audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
               <Button size="lg" variant="outline" asChild className="text-base px-8">
@@ -309,7 +309,7 @@ const PozycjonowanieBialystok = () => {
             {[
               {
                 step: "01",
-                title: "Bezpłatny audyt SEO",
+                title: "Konsultacja i zakres audytu SEO",
                 desc: "Analizujemy Twoją stronę pod kątem fraz dla Białegostoku i Podlasia. Oceniamy realne szanse na TOP 10 i czas potrzebny do wyników — zwykle krótszy niż w dużych miastach.",
               },
               {
@@ -354,13 +354,13 @@ const PozycjonowanieBialystok = () => {
               Gotowy na pierwszą stronę Google w Białymstoku?
             </h2>
             <p className="text-primary-foreground/80 text-lg mb-8 max-w-xl mx-auto">
-              Zamów bezpłatny audyt SEO. Pokażemy Ci, jak szybko możesz wygrać z
+              Zapytaj o audyt SEO. Zakres i wycenę ustalimy na bezpłatnej konsultacji, a potem pokażemy, jak wygrać z
               lokalną konkurencją w Białymstoku — i co konkretnie trzeba zrobić.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" asChild className="text-base px-8">
-                <Link to="/kontakt">
-                  Zamów bezpłatny audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
+                <Link to="/kontakt?usluga=seo&wariant=audit#formularz">
+                  Zapytaj o audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
               <Button

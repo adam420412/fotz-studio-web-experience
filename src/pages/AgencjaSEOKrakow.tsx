@@ -81,8 +81,8 @@ export default function AgencjaSEOKrakow() {
             </div>
 
             <Button asChild size="lg" className="bg-orange-600 hover:bg-orange-700 text-white">
-              <Link to="/kontakt">
-                Bezpłatny audyt SEO
+              <Link to="/kontakt?usluga=seo#formularz">
+                Bezpłatna konsultacja SEO
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
             </Button>

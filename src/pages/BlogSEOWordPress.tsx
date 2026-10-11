@@ -536,11 +536,11 @@ const BlogSEOWordPress = () => {
                   Chcesz osiągnąć pozycje 1-3 w Google?
                 </h2>
                 <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                  WordPress to świetna baza, ale bez właściwej strategii SEO - nigdy nie będziesz widoczny. Nasze doświadczenie w pozycjonowaniu WordPress pomogło już setkom firm. Skontaktuj się z nami aby uzyskać bezpłatną analizę SEO Twojej strony WordPress.
+                  WordPress to świetna baza, ale bez właściwej strategii SEO - nigdy nie będziesz widoczny. Nasze doświadczenie w pozycjonowaniu WordPress pomogło już setkom firm. Skontaktuj się z nami, aby umówić bezpłatną konsultację SEO dla Twojej strony WordPress.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button asChild size="lg" className="bg-gradient-to-r from-[#75143F] to-[#0F3053]">
-                    <Link to="/kontakt">Bezpłatna analiza SEO</Link>
+                    <Link to="/kontakt?usluga=seo#formularz">Bezpłatna konsultacja SEO</Link>
                   </Button>
                   <Button asChild variant="outline" size="lg">
                     <Link to="/uslugi/pozycjonowanie">Poznaj naszą usługę SEO</Link>

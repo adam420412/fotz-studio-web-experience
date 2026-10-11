@@ -92,7 +92,7 @@ const CaseStudyEcommerceCRO = () => {
                   </Link>
                 </Button>
                 <Button asChild size="lg" variant="outline">
-                  <Link to="/seo/audyt">Darmowy audyt UX</Link>
+                  <Link to="/seo/audyt">Audyt SEO strony</Link>
                 </Button>
               </div>
             </motion.div>
@@ -558,7 +558,7 @@ const CaseStudyEcommerceCRO = () => {
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <Link to="/seo/audyt">Darmowy audyt UX</Link>
+                <Link to="/seo/audyt">Audyt SEO strony</Link>
               </Button>
             </div>
           </div>

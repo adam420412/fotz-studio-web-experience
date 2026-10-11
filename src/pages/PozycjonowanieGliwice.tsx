@@ -96,7 +96,7 @@ const PozycjonowanieGliwice = () => {
     <Layout>
       <SEOHead
         title="Pozycjonowanie Gliwice — SEO lokalne | fotz studio"
-        description="Pozycjonowanie stron Gliwice i GOM. Agencja SEO fotz studio — audyt SEO, link building dla IT, produkcji i logistyki. Bezpłatny audyt!"
+        description="Pozycjonowanie stron Gliwice i GOM. Agencja SEO fotz studio — audyt SEO, link building dla IT, produkcji i logistyki. Bezpłatna konsultacja SEO!"
         canonical="https://www.fotz-studio.pl/pozycjonowanie/gliwice"
         keywords="pozycjonowanie gliwice, agencja seo gliwice, seo gliwice, pozycjonowanie stron gliwice, seo dla firm gliwice, seo śląsk, pozycjonowanie lokalne gliwice"
       />
@@ -148,8 +148,8 @@ const PozycjonowanieGliwice = () => {
             <FadeInView delay={0.3}>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" asChild className="text-base px-8 bg-yellow-400 text-gray-900 hover:bg-yellow-300">
-                  <Link to="/kontakt">
-                    Zamów bezpłatny audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
+                  <Link to="/kontakt?usluga=seo&wariant=audit#formularz">
+                    Zapytaj o audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
                 <Button size="lg" variant="outline" asChild className="text-base px-8 border-gray-700 text-white hover:bg-gray-800">
@@ -288,7 +288,7 @@ const PozycjonowanieGliwice = () => {
             {[
               {
                 step: "01",
-                title: "Bezpłatny audyt SEO",
+                title: "Konsultacja i zakres audytu SEO",
                 desc: "Analizujemy Twoją stronę i frazy z Gliwic i całego GOM. Sprawdzamy potencjał w IT, automatyce, logistyce czy Twojej branży.",
               },
               {
@@ -421,13 +421,13 @@ const PozycjonowanieGliwice = () => {
               Gotowy na pierwszą stronę Google w Gliwicach?
             </h2>
             <p className="text-gray-800 text-lg mb-8 max-w-xl mx-auto">
-              Zamów bezpłatny audyt SEO. Otrzymasz raport z konkretnymi
+              Zapytaj o audyt SEO. Zakres i wycenę ustalimy na bezpłatnej konsultacji, a raport przygotujemy z konkretnymi
               rekomendacjami dla rynku Gliwic i całego GOM.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" asChild className="text-base px-8 bg-gray-900 text-yellow-400 hover:bg-gray-800">
-                <Link to="/kontakt">
-                  Zamów bezpłatny audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
+                <Link to="/kontakt?usluga=seo&wariant=audit#formularz">
+                  Zapytaj o audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
               <Button

@@ -161,8 +161,8 @@ const PozycjonowaniePoznan = () => {
               className="flex flex-col sm:flex-row gap-4 justify-center"
             >
               <Button size="lg" asChild className="text-base px-8">
-                <Link to="/kontakt">
-                  Zamów bezpłatny audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
+                <Link to="/kontakt?usluga=seo&wariant=audit#formularz">
+                  Zapytaj o audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
               <Button size="lg" variant="outline" asChild className="text-base px-8">
@@ -311,7 +311,7 @@ const PozycjonowaniePoznan = () => {
             {[
               {
                 step: "01",
-                title: "Bezpłatny audyt SEO",
+                title: "Konsultacja i zakres audytu SEO",
                 desc: "Analizujemy Twoją stronę i rynek poznański. Sprawdzamy, jakie frazy z 'Poznań', 'Wielkopolska' lub dzielnicą mają potencjał w Twoim segmencie.",
               },
               {
@@ -455,14 +455,14 @@ const PozycjonowaniePoznan = () => {
               Gotowy na pierwszą stronę Google w Poznaniu?
             </h2>
             <p className="text-primary-foreground/80 text-lg mb-8 max-w-xl mx-auto">
-              Zamów bezpłatny audyt SEO swojej strony. Otrzymasz raport z
+              Zapytaj o audyt SEO swojej strony. Zakres i wycenę ustalimy na bezpłatnej konsultacji, a raport przygotujemy z
               konkretnymi rekomendacjami dla poznańskiego rynku — bez żadnych
               zobowiązań.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" asChild className="text-base px-8">
-                <Link to="/kontakt">
-                  Zamów bezpłatny audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
+                <Link to="/kontakt?usluga=seo&wariant=audit#formularz">
+                  Zapytaj o audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
               <Button

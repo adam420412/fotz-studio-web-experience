@@ -62,7 +62,7 @@ const results = [
 const faqItems = [
   {
     question: "Ile kosztuje pozycjonowanie stron w Poznaniu?",
-    answer: "Koszt SEO zależy od branży, konkurencyjności słów kluczowych i stanu technicznego strony. Nasze pakiety zaczynają się od 1200 zł/mies. dla lokalnych firm. Każdą wycenę poprzedzamy bezpłatnym audytem wstępnym."
+    answer: "Koszt SEO zależy od branży, konkurencyjności słów kluczowych i stanu technicznego strony. Nasze pakiety zaczynają się od 1200 zł/mies. dla lokalnych firm. Każdą wycenę poprzedzamy bezpłatną konsultacją, na której ustalamy zakres audytu i prac."
   },
   {
     question: "Po jakim czasie widać efekty pozycjonowania SEO?",
@@ -149,8 +149,8 @@ export default function AgencjaSEOPoznan() {
 
             <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-gradient-to-r from-[#75143F] to-[#0F3053] hover:opacity-90 text-white">
-                <Link to="/kontakt">
-                  Bezpłatny audyt SEO <ArrowRight className="ml-2 w-5 h-5" />
+                <Link to="/kontakt?usluga=seo#formularz">
+                  Bezpłatna konsultacja SEO <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg">
@@ -385,12 +385,12 @@ export default function AgencjaSEOPoznan() {
               Zacznij zdobywać klientów z Google już dziś
             </motion.h2>
             <motion.p variants={fadeIn} className="text-white/80 mb-8">
-              Umów bezpłatny audyt SEO — sprawdzimy stan Twojej strony i pokażemy konkretny plan działania.
+              Umów bezpłatną konsultację SEO — omówimy stan Twojej strony i ustalimy zakres audytu oraz plan działania.
             </motion.p>
             <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-white text-[#75143F] hover:bg-white/90 font-semibold">
-                <Link to="/kontakt">
-                  Bezpłatny audyt SEO <ArrowRight className="ml-2 w-5 h-5" />
+                <Link to="/kontakt?usluga=seo#formularz">
+                  Bezpłatna konsultacja SEO <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">

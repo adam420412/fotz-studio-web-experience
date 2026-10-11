@@ -496,12 +496,12 @@ const BlogCoToJestSeo = () => {
               Chcesz wypozycjonować swoją stronę?
             </h2>
             <p className="text-muted-foreground mb-6">
-              Zamów bezpłatny audyt SEO — sprawdzimy Twoją stronę i pokażemy,
+              Umów bezpłatną konsultację SEO — omówimy Twoją stronę i ustalimy zakres audytu, który pokaże,
               co hamuje Twoje pozycje w Google.
             </p>
             <Button asChild size="lg">
-              <Link to="/kontakt">
-                Zamów bezpłatny audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
+              <Link to="/kontakt?usluga=seo&wariant=audit#formularz">
+                Zapytaj o audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
           </div>
