@@ -2808,7 +2808,7 @@ const App = ({ Router = BrowserRouter, client = queryClient, initialPage }: AppP
 
                 {/* 301 Redirects - broken/legacy paths */}
                 <Route path="/login" element={<Redirect301 to="/zasoby" />} />
-                <Route path="/landing-page" element={<Redirect301 to="/blog/jak-stworzyc-landing-page" />} />
+                <Route path="/landing-page" element={<Redirect301 to="/uslugi/strony-internetowe" />} />
 
                 {/* 301 Redirects - stare URL-e /branze/* */}
                 <Route path="/branze/marketing-medyczny" element={<Redirect301 to="/dla-kogo/branza-medyczna" />} />

@@ -91,3 +91,16 @@ Priorytet kolejnych analiz: właściwe podstrony sprzedażowe z wyświetleniami 
 Dla widoczności w Google AI nie ma dodatkowego wymaganego schematu ani pliku: indeksowanie, dostępna treść i wiarygodne źródła pozostają podstawą. Nie ma gwarancji cytowania. Źródło: https://developers.google.com/search/docs/appearance/ai-features.
 
 Pierwsza partia została scalona w PR #43 (main aaef1b35903d1e35992cd93f877733c13a53ce7c). Potwierdzono udane wdrożenie Vercel oraz nowe treści na trzech publicznych adresach HTTP 200 z poprawnymi canonicalami i jednym H1. Import produkcji do NEURONwriter: 68 / 75 / 67. Google przyjął jedną prośbę o ponowne indeksowanie dla każdego z trzech adresów; nie jest to potwierdzenie ponownego przetworzenia treści. Druga partia jest w PR #44; przegląd Claude Code dokładnego head 78b673f nie wykazał błędów blokujących. Poprawiono wskazane sklejenie nagłówka w CSV.
+
+
+## Potwierdzenie produkcji drugiej partii
+
+PR #44 scalony: main `89fc3ba93c342a17cb7b50f1cb785c1095e7be80`. Dnia 11.10 potwierdzono nowe treści na wszystkich czterech publicznych URL-ach (HTTP 200, jeden H1, własny canonical, link do formularza z właściwą usługą). Import produkcji do NEURONwriter: Poznań **72**, audyt **57**, social media **75**, Legnica **48**. Cztery edytory zapisane i oznaczone jako ukończone. Razem siedem ofert opracowanych indywidualnie; pozostałe adresy nadal wymagają pracy zgodnie z inwentaryzacją.
+
+## Problem starych aliasów ujawniony w GSC
+
+Inspekcja `/agencja-marketingowa/poznan` wykazała brak indeksowania: Google pamięta canonical `https://fotz.pl/agencja-marketingowa/poznan` z 20.09 oraz wybiera alias `https://www.fotz-studio.pl/agencja-marketingowa-poznan`. Aktualna oferta ma już własny canonical, ale alias zwracał HTTP 200 z treścią i canonicalem strony głównej; przekierowanie działało dopiero po JavaScript.
+
+Uzupełniono dwanaście brakujących dokładnych reguł hostingowych według istniejących przekierowań React: jedenaście aliasów agencji miejskich i `/akademia`. Vercel `permanent: true` oznacza HTTP 308. Nie dodano szerokiego wildcardu akademii, ponieważ istnieją osobne strony auth/admin. W aplikacji ujednolicono `/landing-page` z istniejącym docelowym adresem serwera `/uslugi/strony-internetowe`.
+
+Test `redirect-parity.test.mjs` odczytuje AST routingu i sprawdza wszystkie dokładne aliasy: jedna bezwarunkowa reguła serwera, zgodny cel, trwały status, istniejąca strona docelowa i brak łańcucha przekierowań. Ta kontrola zapobiega powrotowi pozornych stron HTTP 200 dla aliasów. Publikację i odpowiedzi produkcji należy potwierdzić po scaleniu.
