@@ -1,530 +1,76 @@
-import { motion } from "framer-motion";
 import { SEOHead } from "@/components/seo/SEOHead";
-import { Link } from "react-router-dom";
-import { 
-  Target, Users, TrendingUp, BarChart3, Zap, Eye, 
-  MousePointer, DollarSign, CheckCircle2, 
-  ArrowRight, Video, Sparkles, Heart, Image,
-  Smartphone, Play, Camera, RefreshCw, ShoppingBag, Instagram
-} from "lucide-react";
-import { Button } from "@/components/ui/button";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-import { Layout } from "@/components/layout/Layout";
-import { ServiceSchema, BreadcrumbSchema, FAQSchema, OrganizationSchema} from "@/components/seo/StructuredData";
+import { ServiceEditorial } from "@/components/ServiceEditorial";
+import { enquiryHref } from "@/lib/enquiry.mjs";
 
-const InstagramAds = () => {
-  const benefits = [
-    { icon: Image, title: "Wizualny storytelling", description: "Angażuj odbiorców estetycznymi kreacjami foto i wideo" },
-    { icon: ShoppingBag, title: "Instagram Shopping", description: "Sprzedawaj produkty bezpośrednio przez aplikację" },
-    { icon: Heart, title: "Wysoka interakcja", description: "2x wyższe zaangażowanie niż na innych platformach" },
-    { icon: Target, title: "Precyzyjne targetowanie", description: "Docieraj do idealnych klientów dzięki Meta Ads" },
-  ];
+const path = "/performance-marketing/instagram-ads";
+const scope = [
+  { title: "Cel i odbiorcy kampanii", text: "Ustalamy ofertę, grupę odbiorców, obszar działania i oczekiwany następny krok: wizytę na stronie, zapytanie lub zakup. Dobieramy ustawienia kampanii do celu i dostępnego pomiaru." },
+  { title: "Kreacje do aktualności", text: "Zdjęcia, grafiki, wideo i karuzele z czytelnym komunikatem. Przygotowujemy warianty, które pokazują produkt, usługę lub realizację i prowadzą do konkretnej oferty.", href: "/social-media/content", link: "Produkcja treści do social media" },
+  { title: "Reklamy w Stories i Reels", text: "Pionowe filmy i materiały dopasowane do telefonu. Projektujemy początek filmu, napisy, kadry i wezwanie do działania; przed emisją sprawdzamy podgląd danego umiejscowienia.", href: "/uslugi/produkcja-video", link: "Zobacz nasze spoty reklamowe" },
+  { title: "Konfiguracja i uruchomienie", text: "Pracujemy w Menedżerze reklam Meta. Sprawdzamy dostępy, miejsce docelowe, budżet, harmonogram i dostępne umiejscowienia. Kreacje oraz warunki testu akceptujesz przed startem." },
+  { title: "Pomiar zapytań lub zakupów", text: "Uzgadniamy zdarzenia, oznaczenia linków i sposób przekazywania zgłoszeń. Sprawdzamy drogę od reklamy do formularza lub sklepu; zakres integracji z analityką i CRM określamy w ofercie." },
+  { title: "Optymalizacja i raport", text: "Porównujemy komunikaty, materiały i odbiorców. Raportujemy koszty oraz wyniki zgodnie z celem, a po stronie firmy weryfikujemy jakość kontaktów. Zmiany budżetu wymagają uzgodnienia." },
+];
+const sections = [
+  {
+    title: "Jak działają kampanie Instagram Ads?",
+    text: "Instagram Ads to płatne reklamy na Instagramie obsługiwane w systemie Meta Ads. Materiał może prowadzić do oferty na stronie, formularza lub rozmowy — sposób kontaktu dobieramy do celu oraz możliwości konta. Zaczynamy od ustalenia, komu i co chcemy pokazać. Dopiero potem wybieramy format, grupę odbiorców i budżet. Regularne prowadzenie profilu oraz płatna emisja są różnymi zadaniami, które można połączyć w jednym planie.",
+    href: "/social-media/obsluga", link: "Potrzebujesz także prowadzenia Instagrama?",
+  },
+  {
+    title: "Ile kosztuje reklama na Instagramie?",
+    text: "Koszt współpracy rozpisujemy na obsługę kampanii, przygotowanie materiałów i budżet reklamowy płacony Meta. Osobno ustalamy ewentualne prace nad stroną, formularzem lub pomiarem. Koszt kliknięcia i pozyskania kontaktu zależy od oferty, konkurencji, odbiorców oraz kreacji. Dlatego nie podajemy jednej stawki CPC ani gwarantowanego kosztu klienta dla każdej branży. Budżet testu ustalamy przed uruchomieniem, razem z zakresem oceny i zasadami dalszych decyzji.",
+    points: ["Obsługa: konfiguracja, monitoring, analiza i uzgodnione zmiany kampanii.", "Produkcja: liczba grafik lub filmów, formaty, poprawki i potrzebne nagrania.", "Emisja: środki na wyświetlanie reklam; nie są wynagrodzeniem agencji.", "Wycena: prześlij ofertę, adres profilu i strony, obszar sprzedaży oraz planowany budżet."],
+  },
+  {
+    title: "Formaty reklam: od zdjęcia do Reels",
+    text: "Zdjęcie lub krótki film może pokazać produkt i jego zastosowanie. Karuzela pozwala rozłożyć ofertę na kolejne kadry, a Stories i Reels dają miejsce na pionowy materiał. Format dobieramy do komunikatu i dostępnych zasobów. Nie każdy film z profilu nadaje się od razu do reklamy: sprawdzamy kadrowanie, czytelność napisów, dźwięk, prawa do materiałów i wymagania emisji. Pokazujemy, co odbiorca otrzymuje i jak może zrobić następny krok.",
+    points: ["Początek: produkt, problem lub konkretne zastosowanie, które szybko wyjaśnia temat.", "Treść: jeden główny komunikat, dowód w postaci realizacji i czytelne wezwanie do działania.", "Warianty: inne otwarcie, kadr lub argument do porównania; liczbę wersji zapisujemy w zakresie produkcji."],
+    href: "/social-media/obsluga#materialy", link: "Obejrzyj spot CUPRA × Enea Stadion i nasze rolki",
+  },
+  {
+    title: "Uruchomienie kampanii krok po kroku",
+    text: "Najpierw sprawdzamy ofertę oraz drogę klienta po kliknięciu. Uzgadniamy cel, obszar działania i odbiorców, następnie przygotowujemy kreacje. Po akceptacji konfigurujemy kampanię w Menedżerze reklam, testujemy linki i pomiar oraz kontrolujemy wydatki. Konta pozostają własnością firmy; ustalamy uprawnienia do potrzebnych zasobów. Zakres targetowania i dostępność formatów zależą także od konta, rodzaju oferty oraz aktualnych zasad Meta.",
+    points: ["Brief: profil, strona, oferta, materiały, budżet i osoba odpowiedzialna za odpowiedzi klientom.", "Przygotowanie: teksty, obrazy lub filmy, miejsce docelowe i zdarzenie mierzące cel.", "Start: akceptacja materiałów, kontrola emisji i sprawdzenie, czy zgłoszenia trafiają do właściwej osoby.", "Dalsza praca: porównanie danych, wnioski oraz uzgodnione zmiany kreacji i ustawień."],
+  },
+  {
+    title: "Jak mierzymy skuteczność reklam na Instagramie?",
+    text: "Dobieramy wskaźnik do zadania kampanii. Zasięg informuje o dotarciu, kliknięcie o reakcji, a odebrany formularz o zgłoszeniu. Dopiero rozmowa i dane firmy pozwalają ocenić, czy kontakt był wartościowy. Przy sprzedaży analizujemy potwierdzone zakupy i przychód w zakresie dostępnego pomiaru. Jeśli wdrażamy Meta Pixel lub integrację zdarzeń, testujemy ich działanie i ustawienia zgód. W raporcie oddzielamy dane platformy od potwierdzonych wyników w firmie.",
+    points: ["Dla zapytań: koszt zgłoszenia, poprawność danych, kontakt z klientem i jego zainteresowanie ofertą.", "Dla sklepu: zakupy, wartość zamówień i koszt reklam; przychód nie jest automatycznie zyskiem.", "Dla każdej kampanii: ograniczenia pomiaru i konkretna decyzja wynikająca z raportu."],
+    href: "/performance-marketing/meta-ads", link: "Zobacz szerszy zakres kampanii Meta Ads",
+  },
+  {
+    title: "Przykład FOTZ Studio: kampania Dawid EDU",
+    text: "Dla Dawid EDU połączyliśmy reklamę na Facebooku i Instagramie z kreacjami oraz poprawkami strony rekrutacyjnej. Materiały odpowiadały na pytania rodziców, a strona prowadziła do krótkiego formularza. W opisie realizacji pokazujemy zakres prac i dane całej kampanii Meta Ads. Nie przypisujemy tych wyników wyłącznie Instagramowi i nie utożsamiamy kliknięć z przyjętymi uczniami. To przykład tego, jak łączymy reklamę z drogą do kontaktu.",
+    href: "/realizacje/dawid-edu", link: "Zobacz kreacje i raport kampanii Dawid EDU",
+  },
+  {
+    title: "Masz już reklamy, ale nie masz zapytań?",
+    text: "Zaczynamy od miejsca, w którym urywa się kontakt: dopasowania komunikatu do oferty, jakości ruchu, formularza, pomiaru lub obsługi zgłoszeń. Samo zwiększenie budżetu nie rozwiązuje każdego problemu. Możemy uzgodnić przegląd istniejącej kampanii i plan poprawek albo przejąć jej prowadzenie. Przed wyceną potrzebujemy informacji o celu i dostępu do danych, które pozwalają ocenić dotychczasowe działania.",
+    href: enquiryHref("marketing", "campaign_audit"), link: "Zapytaj o przegląd kampanii",
+  },
+];
+const faqs = [
+  { question: "Czy lepiej wybrać Instagram Ads czy Facebook Ads?", answer: "Zależy to od odbiorców, oferty i materiałów. Możemy porównać emisję na Instagramie oraz Facebooku w ramach Meta Ads i ocenić wyniki według wspólnego celu. Nie zakładamy, że jedna platforma będzie tańsza lub lepsza dla każdej firmy. Jeśli potrzebujesz emisji tylko na Instagramie, sprawdzamy dostępne ustawienia dla danej kampanii." },
+  { question: "Czym kampania różni się od przycisku Promuj post?", answer: "Promowanie istniejącego posta upraszcza rozpoczęcie reklamy. Prowadzenie kampanii obejmuje również plan celu, odbiorców, kreacji, budżetu i pomiaru. Menedżer reklam pozwala pracować nad tymi elementami wspólnie i porównywać warianty. Dobieramy sposób uruchomienia do zadania, zamiast traktować samo promowanie posta jako kompletną strategię." },
+  { question: "Czy budżet reklamowy jest w cenie obsługi?", answer: "Budżet emisji płacony Meta, wynagrodzenie za obsługę i produkcję materiałów pokazujemy osobno. W ofercie określamy zakres, koszty oraz zasady akceptowania zmian. Cena filmu reklamowego także jest osobną pozycją i zależy od scenariusza, nagrań, montażu i liczby wersji." },
+  { question: "Czy potrzebuję strony internetowej do reklamy?", answer: "Nie w każdym modelu. Można ustalić kontakt przez formularz lub wiadomość, jeżeli dany cel i konto to obsługują. Przy bardziej złożonej ofercie strona pomaga wcześniej wyjaśnić zakres i pokazać realizacje. W obu przypadkach sprawdzamy, kto otrzyma zapytanie i jak na nie odpowie." },
+  { question: "Czy możecie wykorzystać nasze zdjęcia i rolki?", answer: "Tak, po sprawdzeniu jakości, formatu, komunikatu oraz praw do wykorzystania w reklamie. Dostępność muzyki przy publikacji rolki nie oznacza automatycznie możliwości użycia jej w płatnej kampanii. Jeśli potrzeba nowych materiałów, osobno ustalamy zdjęcia, nagrania, montaż i wersje do testu." },
+  { question: "Jak szybko kampania przyniesie klientów?", answer: "Nie deklarujemy terminu ani liczby klientów. Po uruchomieniu kontrolujemy emisję i poprawność pomiaru; czas potrzebny do oceny zależy od budżetu, liczby zdarzeń oraz procesu zakupu. Wspólnie ustalamy moment przeglądu i kryteria dalszych decyzji. Wyświetlenia reklamy nie są potwierdzeniem sprzedaży." },
+  { question: "Czy obsługa Instagram Ads obejmuje prowadzenie profilu?", answer: "Tylko jeśli włączymy je do zakresu. Kampanie reklamowe, regularne posty, Stories, moderacja i odpowiedzi na wiadomości wymagają osobnego ustalenia odpowiedzialności. Możemy połączyć te prace albo przygotować same reklamy i materiały." },
+];
 
-  const adFormats = [
-    { icon: Image, title: "Feed Ads", description: "Klasyczne reklamy zdjęciowe i wideo w feedzie" },
-    { icon: Play, title: "Stories Ads", description: "Pełnoekranowe reklamy w relacjach 9:16" },
-    { icon: Video, title: "Reels Ads", description: "Dynamiczne wideo dopasowane do trendu Reels" },
-    { icon: ShoppingBag, title: "Shopping Ads", description: "Reklamy produktowe z bezpośrednim zakupem" },
-    { icon: Camera, title: "Carousel Ads", description: "Wieloslajdowe kreacje z produktami" },
-    { icon: Sparkles, title: "Explore Ads", description: "Reklamy w sekcji Odkrywaj" },
-  ];
-
-  const processSteps = [
-    { step: "01", title: "Strategia wizualna", description: "Tworzymy spójną estetykę dopasowaną do marki" },
-    { step: "02", title: "Produkcja kreacji", description: "Projektujemy zdjęcia, grafiki i wideo" },
-    { step: "03", title: "Konfiguracja kampanii", description: "Ustawiamy targetowanie i pixel Meta" },
-    { step: "04", title: "Optymalizacja i skalowanie", description: "Testujemy i skalujemy najlepsze kreacje" },
-  ];
-
-  const pricingPackages = [
-    {
-      name: "Start",
-      price: "1 500",
-      period: "/mies.",
-      description: "Testowanie Instagrama",
-      features: [
-        "Budżet reklamowy do 3 000 zł",
-        "4-6 kreacji miesięcznie",
-        "Feed + Stories Ads",
-        "Podstawowe targetowanie",
-        "Raport miesięczny",
-        "Pixel konwersji",
-      ],
-      popular: false,
-    },
-    {
-      name: "Business",
-      price: "3 000",
-      period: "/mies.",
-      description: "Pełna obsługa Instagram",
-      features: [
-        "Budżet reklamowy do 10 000 zł",
-        "10-15 kreacji miesięcznie",
-        "Wszystkie formaty reklamowe",
-        "Zaawansowane targetowanie",
-        "Testy A/B kreacji",
-        "Remarketing",
-        "Raporty tygodniowe",
-      ],
-      popular: true,
-    },
-    {
-      name: "Premium",
-      price: "5 000",
-      period: "/mies.",
-      description: "Instagram + Influencerzy",
-      features: [
-        "Budżet reklamowy bez limitu",
-        "Nielimitowane kreacje",
-        "Instagram Shopping setup",
-        "Współpraca z influencerami",
-        "Produkcja foto/wideo w studio",
-        "Dedykowany opiekun",
-        "Strategia wielokanałowa",
-      ],
-      popular: false,
-    },
-  ];
-
-  const stats = [
-    { value: "2B+", label: "Aktywnych użytkowników miesięcznie" },
-    { value: "500M+", label: "Użytkowników Stories dziennie" },
-    { value: "83%", label: "Użytkowników odkrywa nowe produkty" },
-    { value: "130M", label: "Kliknięć w posty zakupowe miesięcznie" },
-  ];
-
-  const faqItems = [
-    {
-      question: "Czym Instagram Ads różni się od Facebook Ads?",
-      answer: "Instagram Ads to część ekosystemu Meta Ads, ale format i odbiorcy różnią się znacząco. Instagram jest bardziej wizualny, młodszy demograficznie (25-44 lata to główna grupa) i wymaga wysokiej jakości kreacji. Stories i Reels mają inny format niż Facebook. Często łączymy obie platformy dla maksymalnego zasięgu."
-    },
-    {
-      question: "Jaki budżet potrzebuję na Instagram Ads?",
-      answer: "Minimalny sensowny budżet to około 2000-3000 zł miesięcznie. Dla e-commerce i kampanii produktowych rekomendujemy start od 5000 zł miesięcznie. Koszt za kliknięcie (CPC) na Instagramie wynosi zwykle 0,50-2,00 zł w zależności od branży i targetowania."
-    },
-    {
-      question: "Jakie kreacje najlepiej działają na Instagramie?",
-      answer: "Najskuteczniejsze są: wysokiej jakości zdjęcia produktowe, naturalne treści w stylu UGC, wideo Stories 15 sekund, Reels nawiązujące do trendów, karuzele pokazujące proces lub portfolio. Unikamy zbyt reklamowych kreacji - użytkownicy Instagrama cenią autentyczność."
-    },
-    {
-      question: "Czy mogę sprzedawać bezpośrednio przez Instagram?",
-      answer: "Tak! Instagram Shopping pozwala oznaczać produkty na zdjęciach i Stories. Użytkownicy mogą przeglądać katalog i przechodzić do zakupu jednym kliknięciem. Pomagamy w konfiguracji sklepu Instagram i integracji z Twoim e-commerce."
-    },
-    {
-      question: "Jak mierzyć skuteczność reklam na Instagramie?",
-      answer: "Instalujemy Meta Pixel na Twojej stronie do śledzenia konwersji. Monitorujemy: zasięg, zaangażowanie (lajki, komentarze, zapisy), CTR, koszt za kliknięcie, koszt za konwersję, ROAS. Dla e-commerce śledzimy też dodania do koszyka i zakupy."
-    },
-    {
-      question: "Czy warto łączyć Instagram Ads z innymi platformami?",
-      answer: "Zdecydowanie! Instagram świetnie buduje świadomość marki. W połączeniu z remarketingiem na Facebook i Google Ads tworzy kompletną ścieżkę zakupową. Dla młodszych odbiorców dodajemy TikTok Ads. Oferujemy kompleksową obsługę kampanii cross-platform."
-    },
-    {
-      question: "Jak działa współpraca z influencerami na Instagramie?",
-      answer: "W pakiecie Premium pomagamy w doborze influencerów, negocjacji stawek i koordynacji kampanii. Branded Content Ads pozwalają promować posty influencerów jako reklamy płatne, łącząc autentyczność z zasięgiem. To najskuteczniejsza forma reklamy na Instagramie."
-    },
-    {
-      question: "Jak szybko zobaczę efekty kampanii Instagram?",
-      answer: "Pierwsze wyniki (zasięg, zaangażowanie) widać po 24-48 godzinach. Stabilne konwersje wymagają 2-3 tygodni zbierania danych przez pixel. Pełna optymalizacja i najlepsze wyniki osiągamy po 2-3 miesiącach regularnej pracy nad kampanią."
-    },
-  ];
-
-  return (
-    <>
-      <OrganizationSchema />
-      <Layout>
-      <SEOHead
-        title="Instagram Ads — Reklama na Instagramie dla Firm | Fotz Studio"
-        description="Instagram Ads — tworzenie i prowadzenie kampanii reklamowych na Instagramie. Reklamy wideo, stories, reels i karuzele. Fotz Studio."
-        canonical="https://www.fotz-studio.pl/performance-marketing/instagram-ads"
-        keywords="instagram ads polska, reklamy instagram, kampanie instagram ads, instagram ads agencja, stories ads, reels ads, instagram ads dla firm, meta ads instagram, instagram ads cennik, instagram advertising polska"
-      />
-
-      <ServiceSchema 
-        name="Instagram Ads - Kampanie reklamowe"
-        description="Profesjonalne kampanie Instagram Ads. Reklamy w Stories, Reels, Feed i Shopping. Wizualny storytelling dla Twojej marki."
-        provider="Fotz Studio"
-        areaServed="Polska"
-      />
-      <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
-          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
-          { name: "Instagram Ads", url: "https://www.fotz-studio.pl/performance-marketing/instagram-ads" }
-        ]}/>
-      <FAQSchema items={faqItems} />
-
-      {/* Hero Section */}
-      <section className="relative min-h-[80vh] flex items-center justify-center bg-background overflow-hidden pt-24">
-        <div className="absolute inset-0 bg-gradient-to-br from-pink-600/15 via-background to-purple-600/10" />
-        <div className="container mx-auto px-4 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center max-w-4xl mx-auto"
-          >
-            <span className="inline-block px-4 py-2 bg-pink-500/20 text-pink-400 rounded-full text-sm font-medium mb-6">
-              <Instagram className="inline-block w-4 h-4 mr-2" />
-              Instagram Ads
-            </span>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6">
-              Reklamy na Instagramie,
-              <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-orange-500">
-                które przyciągają wzrok
-              </span>
-            </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Buduj markę i sprzedawaj produkty na platformie, gdzie liczy się estetyka. 
-              Stories, Reels, Shopping - wykorzystujemy pełen potencjał Instagrama.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="text-lg px-8">
-                <Link to="/kontakt">
-                  Bezpłatna konsultacja
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
-              <Button asChild variant="outline" size="lg" className="text-lg px-8">
-                <Link to="/realizacje">Zobacz realizacje</Link>
-              </Button>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="py-16 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="text-center"
-              >
-                <div className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500 mb-2">{stat.value}</div>
-                <div className="text-sm md:text-base text-muted-foreground">{stat.label}</div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Benefits Section */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-              Dlaczego Instagram Ads?
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Platforma wizualna, gdzie marki budują relacje z klientami
-            </p>
-          </motion.div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {benefits.map((benefit, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="p-6 rounded-xl bg-card border border-border/50 hover:border-pink-500/30 transition-colors"
-              >
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-pink-500/10 text-pink-500 mb-4">
-                  <benefit.icon className="w-6 h-6" />
-                </div>
-                <h3 className="text-lg font-semibold text-foreground mb-2">{benefit.title}</h3>
-                <p className="text-muted-foreground text-sm">{benefit.description}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Ad Formats Section */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-              Formaty reklamowe Instagram
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Wykorzystujemy wszystkie możliwości platformy
-            </p>
-          </motion.div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {adFormats.map((format, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="p-6 rounded-xl bg-card border border-border/50 hover:border-pink-500/30 transition-colors group"
-              >
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-gradient-to-br from-pink-500/20 to-purple-500/20 text-pink-500 mb-4 group-hover:scale-110 transition-transform">
-                  <format.icon className="w-6 h-6" />
-                </div>
-                <h3 className="text-lg font-semibold text-foreground mb-2">{format.title}</h3>
-                <p className="text-muted-foreground text-sm">{format.description}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Process Section */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-              Jak pracujemy
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Od koncepcji do konwersji
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-4 gap-8">
-            {processSteps.map((step, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.15 }}
-                className="relative"
-              >
-                <div className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500/30 to-purple-500/30 mb-4">{step.step}</div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">{step.title}</h3>
-                <p className="text-muted-foreground text-sm">{step.description}</p>
-                {index < processSteps.length - 1 && (
-                  <div className="hidden md:block absolute top-8 left-full w-full h-0.5 bg-gradient-to-r from-pink-500/30 to-transparent" />
-                )}
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Pricing Section */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-              Cennik Instagram Ads
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Obsługa kampanii + produkcja kreacji wizualnych
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {pricingPackages.map((pkg, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.15 }}
-                className={`relative p-8 rounded-2xl border ${
-                  pkg.popular 
-                    ? 'bg-gradient-to-br from-pink-500/10 to-purple-500/10 border-pink-500' 
-                    : 'bg-card border-border/50'
-                }`}
-              >
-                {pkg.popular && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-gradient-to-r from-pink-500 to-purple-500 text-white text-sm font-medium rounded-full">
-                    Najpopularniejszy
-                  </div>
-                )}
-                <div className="text-center mb-6">
-                  <h3 className="text-xl font-semibold text-foreground mb-2">{pkg.name}</h3>
-                  <p className="text-sm text-muted-foreground mb-4">{pkg.description}</p>
-                  <div className="flex items-baseline justify-center gap-1">
-                    <span className="text-4xl font-bold text-foreground">{pkg.price}</span>
-                    <span className="text-muted-foreground">zł{pkg.period}</span>
-                  </div>
-                </div>
-                <ul className="space-y-3 mb-8">
-                  {pkg.features.map((feature, i) => (
-                    <li key={i} className="flex items-start gap-3 text-sm">
-                      <CheckCircle2 className="w-5 h-5 text-pink-500 shrink-0 mt-0.5" />
-                      <span className="text-muted-foreground">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                <Button 
-                  asChild 
-                  className={`w-full ${pkg.popular ? 'bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600' : ''}`}
-                  variant={pkg.popular ? "default" : "outline"}
-                >
-                  <Link to="/kontakt">Wybierz pakiet</Link>
-                </Button>
-              </motion.div>
-            ))}
-          </div>
-
-          <p className="text-center text-sm text-muted-foreground mt-8">
-            * Ceny nie zawierają budżetu reklamowego. Podane kwoty są cenami netto.
-          </p>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-pink-600/20 via-background to-purple-600/20">
-        <div className="container mx-auto px-4 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
-              Gotowy na wzrost na Instagramie?
-            </h2>
-            <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Umów bezpłatną konsultację i dowiedz się, jak Instagram Ads może rozwinąć Twój biznes
-            </p>
-            <Button asChild size="lg" className="text-lg px-8 bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600">
-              <Link to="/kontakt">
-                Bezpłatna konsultacja
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-              Najczęstsze pytania
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Wszystko, co musisz wiedzieć o Instagram Ads
-            </p>
-          </motion.div>
-
-          <div className="max-w-3xl mx-auto">
-            <Accordion type="single" collapsible className="space-y-4">
-              {faqItems.map((item, index) => (
-                <AccordionItem key={index} value={`item-${index}`} className="border border-border/50 rounded-lg px-6">
-                  <AccordionTrigger className="text-left hover:no-underline py-4">
-                    <span className="font-medium text-foreground">{item.question}</span>
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground pb-4">
-                    {item.answer}
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
-          </div>
-        </div>
-      </section>
-
-      {/* Related Services */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Powiązane usługi
-            </h2>
-            <p className="text-muted-foreground">
-              Inne platformy reklamowe, które obsługujemy
-            </p>
-          </motion.div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
-            {[
-              { name: "Meta Ads (FB + IG)", href: "/performance-marketing/meta-ads", description: "Synergia Facebook i Instagram" },
-              { name: "Google Ads", href: "/performance-marketing/google-ads", description: "Reklamy w wyszukiwarce" },
-              { name: "TikTok Ads", href: "/performance-marketing/tiktok-ads", description: "Viralowe kampanie wideo" },
-              { name: "YouTube Ads", href: "/performance-marketing/youtube-ads", description: "Reklamy wideo" },
-            ].map((service) => (
-              <Link
-                key={service.name}
-                to={service.href}
-                className="group p-6 rounded-xl border border-border bg-card hover:border-pink-500/50 transition-all"
-              >
-                <h3 className="font-semibold mb-2 group-hover:text-pink-400 transition-colors">
-                  {service.name}
-                </h3>
-                <p className="text-muted-foreground text-sm mb-4">{service.description}</p>
-                <span className="text-pink-400 text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
-                  Dowiedz się więcej <ArrowRight className="w-4 h-4" />
-                </span>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* SEO Article Section */}
-      <section className="py-20 bg-card">
-        <div className="container mx-auto px-4">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
-            <h2 className="text-3xl font-heading font-bold mb-6">Instagram Ads — skuteczna reklama na Instagramie dla firm</h2>
-            <p className="text-muted-foreground mb-4">Instagram Ads to reklamy wyświetlane w aplikacji Instagram — w feedzie, Stories, Reels i Explore. Zarządzane przez Meta Ads Manager, kampanie Instagram Ads korzystają z tych samych potężnych możliwości targetowania co Facebook Ads: zainteresowania, demografika, zachowania, własne listy klientów i lookalike audiences.</p>
-            <p className="text-muted-foreground mb-6">Reklama na Instagramie szczególnie efektywna jest dla branż wizualnych: moda, uroda, jedzenie, wnętrza, fitness, turystyka. Wysoka jakość kreacji graficznych i wideo jest kluczem do sukcesu na Instagramie — odbiorcy są wymagający i ignorują reklamy niespójne z estetycznym kontekstem platformy.</p>
-            <h2 className="text-3xl font-heading font-bold mb-6">Formaty Instagram Ads — Stories, Reels i feed reklamy</h2>
-            <p className="text-muted-foreground">Formaty reklam na Instagramie: Single image (feed), karuzele, wideo (feed i Reels), Stories Ads (pełnoekranowe, pionowe), reklamy Explore. Reels Ads wyróżniają się najwyższym zasięgiem organicznym i viralnym potencjałem. Instagram Shopping Ads pozwalają na oznaczanie produktów i bezpośredni zakup z aplikacji — idealne dla e-commerce. Tworzenie reklam wideo na Instagram Reels i Stories to nasza specjalność.</p>
-          
-            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
-              <Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline font-medium text-sm">→ Facebook Ads</Link>
-              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
-              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
-              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-    </Layout>
-    </>
-  );
-};
-
-export default InstagramAds;
+export default function InstagramAds() {
+  return <>
+    <SEOHead title="Instagram Ads — kampanie i reklama na Instagramie | FOTZ" description="Prowadzimy kampanie Instagram Ads: kreacje, Stories, Reels, budżet i pomiar zapytań. Zobacz realizację Dawid EDU i ustal zakres reklamy z FOTZ Studio." canonical={`https://www.fotz-studio.pl${path}`} />
+    <ServiceEditorial
+      path={path} title="Instagram Ads — reklama na Instagramie dla firm"
+      eyebrow="FOTZ Studio · od kreacji do kontaktu"
+      lead="Przygotowujemy i prowadzimy kampanie Instagram Ads: od pomysłu na zdjęcia lub wideo po emisję i ocenę zapytań. Łączymy kreacje, ofertę oraz drogę do kontaktu, żeby było wiadomo, co reklamujemy i jak sprawdzamy efekt."
+      summary={["Pokaż nam ofertę, profil i materiały. Ustalimy cel oraz odbiorców kampanii.", "Oddzielnie wycenimy obsługę, produkcję kreacji i budżet płacony Meta.", "Przed startem uzgodnimy pomiar oraz sposób odbierania i oceny zapytań."]}
+      scopeTitle="Co obejmuje prowadzenie kampanii Instagram Ads?"
+      scope={scope} sections={sections} faqs={faqs}
+      enquiryVariant="instagram_ads" workAfterScope
+    />
+  </>;
+}

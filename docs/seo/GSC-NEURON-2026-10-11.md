@@ -104,3 +104,22 @@ Inspekcja `/agencja-marketingowa/poznan` wykazała brak indeksowania: Google pam
 Uzupełniono dwanaście brakujących dokładnych reguł hostingowych według istniejących przekierowań React: jedenaście aliasów agencji miejskich i `/akademia`. Vercel `permanent: true` oznacza HTTP 308. Nie dodano szerokiego wildcardu akademii, ponieważ istnieją osobne strony auth/admin. W aplikacji ujednolicono `/landing-page` z istniejącym docelowym adresem serwera `/uslugi/strony-internetowe`.
 
 Test `redirect-parity.test.mjs` odczytuje AST routingu i sprawdza wszystkie dokładne aliasy: jedna bezwarunkowa reguła serwera, zgodny cel, trwały status, istniejąca strona docelowa i brak łańcucha przekierowań. Ta kontrola zapobiega powrotowi pozornych stron HTTP 200 dla aliasów. Publikację i odpowiedzi produkcji należy potwierdzić po scaleniu.
+
+
+## Trzecia partia — obsługa profili, strategia treści i Instagram Ads
+
+Treści przygotowano na podstawie trzech odrębnych analiz NEURONwriter. Doprecyzowano zakres współpracy, materiały od klienta, akceptację, budżet i ocenę zapytań. Strony prowadzą do formularza z konkretnym zakresem; dodano warianty `content_plan` i `instagram_ads` oraz rozpoznawanie istniejącej kategorii `marketing` na obu rodzinach ofert. Instagram Ads korzysta z czytelnego szablonu ServiceEditorial i zachowuje prerenderowaną treść przy hydratacji. Usunięto nieudokumentowane mnożniki wyników, stałe CPC i ogólne obietnice z poprzedniej wersji.
+
+| Oferta | Analiza | Przed (produkcja) | Po (lokalna treść) | Historyczne wyświetlenia GSC |
+|---|---|---:|---:|---:|
+| Obsługa social media | ad8273024336717e | 35 | 70 | 185 |
+| Strategia content marketingowa | be80621d8dbc76e5 | 48 | 69 | 277 |
+| Kampanie Instagram Ads | 266e632b9d0606e0 | 55 | 72 | 153 |
+
+Wyniki przed i po dotyczą tej samej analizy oraz treści `main-content`. Są wskazówką redakcyjną, nie dowodem pozycji, indeksowania ani leadów. Social media ma przewagę intencji transakcyjnej (62,1%). Strategia i obie przeanalizowane frazy Instagram Ads mają przewagę intencji informacyjnej: wykorzystano przydatne pytania, zachowując funkcję oferty. Nie dodawano treści o zarobkach twórców, ofertach pracy czy niepowiązanych usługach wyłącznie dla punktów.
+
+Pomocnicza analiza ogólnej frazy Instagram Ads (`1a95b2ccb6cba431`) została oznaczona jako pomocnicza, nie jako ukończona oferta. W tym etapie utworzono cztery analizy, łącznie 12 od początku audytu (limit planu: 75; nie wykupowano dodatkowych kredytów).
+
+Walidacja: typecheck, 148/148 testów, build 1074 dokumentów / 1071 pełnych treści / 0 błędów; 1072 adresy w sitemap, 134915 linków wyrenderowanych, 3920 odnośników źródłowych i 486 galerii bez błędów kontroli. Mobile 390 px: wszystkie trzy oferty bez poziomego przepełnienia; przejścia do kontaktu zachowują właściwą usługę i wariant. Konsola testowanej karty bez błędów. Nie wysyłano nowych zgłoszeń testowych. Publikacja i zapis edytorów NEURONwriter wymagają osobnego potwierdzenia po scaleniu.
+
+Dowody lokalne: `output/lead-audit-2026-10-11/gsc/etap-3/`, w tym rekomendacje, wyrenderowane wersje ocenione przez NEURONwriter i logi walidacji.
