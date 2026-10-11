@@ -3,7 +3,7 @@ export const enquiryServices = {
   video: 'Film, rolki lub zdjęcia',
   social: 'Obsługa social media',
   seo: 'SEO i widoczność w Google',
-  marketing: 'Stała obsługa marketingowa',
+  marketing: 'Marketing i kampanie reklamowe',
   reel: 'Zapytanie o darmową rolkę',
   other: 'Chcę dobrać zakres',
 };
@@ -14,12 +14,22 @@ export const enquiryVariants = {
   configurator: 'Konfigurator produktów 3D',
   film: 'Film dla firmy', reels: 'Rolki do social media', spot: 'Spot reklamowy',
   ad_variants: 'Warianty filmu do testu reklam',
+  meta_ads: 'Kampania Facebook i Instagram', lead_ads: 'Reklamy i obsługa zapytań',
+  campaign_audit: 'Przegląd kampanii reklamowej',
+  video_plan: 'Strategia i regularne materiały video',
   audit: 'Audyt i plan wdrożeń', ongoing: 'Stałe działania SEO',
 };
 export const validService = value => Object.hasOwn(enquiryServices, value) ? value : 'other';
 export function readEnquiryContext(search = '') {
   const params = new URLSearchParams(search);
   return { service: validService(params.get('usluga')), variant: Object.hasOwn(enquiryVariants, params.get('wariant')) ? params.get('wariant') : '' };
+}
+export function resolveEnquiryContext(search = '', defaultService = 'other', defaultVariant = '') {
+  const context = readEnquiryContext(search);
+  const baseService = validService(defaultService);
+  const service = context.service === 'other' ? baseService : context.service;
+  const variant = context.variant || (service === baseService && Object.hasOwn(enquiryVariants, defaultVariant) ? defaultVariant : '');
+  return { service, variant };
 }
 export function enquiryHref(service, variant) {
   const params = new URLSearchParams({ usluga: validService(service) });
@@ -30,7 +40,7 @@ export function serviceForPath(path) {
   if (/^\/(seo(?:\/|$)|.*pozycjonowanie)/.test(path)) return 'seo';
   if (/social-media/.test(path)) return 'social';
   if (/produkcja-(filmow|video)|video-marketing/.test(path)) return 'video';
-  if (/marketing-internetowy|agencja-marketing/.test(path)) return 'marketing';
+  if (/marketing-internetowy|agencja-marketing|reklama-facebook/.test(path)) return 'marketing';
   if (/strony-internetowe|sklepy-internetowe|cennik-tworzenia-stron/.test(path)) return 'web';
   return 'other';
 }

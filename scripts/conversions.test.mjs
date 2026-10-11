@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readEnquiryContext, enquiryHref, serviceForPath } from '../src/lib/enquiry.mjs';
+import { readEnquiryContext, resolveEnquiryContext, enquiryHref, serviceForPath } from '../src/lib/enquiry.mjs';
 import { createConversionTracker } from '../src/lib/conversion-events.mjs';
 import { cleanAnalyticsUrl, createPageEventSender, createPageReporter, hasAnalyticsConsent } from '../src/lib/analytics.mjs';
 
@@ -9,6 +9,13 @@ test('enquiry keeps a valid selected scope and rejects arbitrary query values', 
  assert.deepEqual(readEnquiryContext('?usluga=seo&wariant=audit&email=private@example.com'),{service:'seo',variant:'audit'});
  assert.deepEqual(readEnquiryContext('?usluga=__proto__&wariant=constructor'),{service:'other',variant:''});
  for (const [path,service] of [['/seo/pozycjonowanie','seo'],['/social-media/obsluga','social'],['/uslugi/strony-internetowe','web'],['/uslugi/produkcja-video','video'],['/uslugi/marketing-internetowy','marketing']]) assert.equal(serviceForPath(path),service);
+});
+test('offer defaults preserve a scope but never leak it into a different service', () => {
+ assert.deepEqual(resolveEnquiryContext('', 'marketing', 'meta_ads'), {service:'marketing', variant:'meta_ads'});
+ assert.deepEqual(resolveEnquiryContext('?usluga=marketing&wariant=lead_ads', 'marketing', 'meta_ads'), {service:'marketing',variant:'lead_ads'});
+ assert.deepEqual(resolveEnquiryContext('?usluga=web', 'marketing', 'meta_ads'), {service:'web',variant:''});
+ assert.deepEqual(resolveEnquiryContext('', 'marketing', '__proto__'), {service:'marketing',variant:''});
+ assert.equal(serviceForPath('/uslugi/reklama-facebook'), 'marketing');
 });
 test('analytics needs current consent; failures in storage default to off',()=>{
  assert.equal(hasAnalyticsConsent({getItem:k=>k==='cookie-consent'?'accepted':'2'}),true);

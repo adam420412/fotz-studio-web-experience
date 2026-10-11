@@ -5,7 +5,7 @@ import { z } from 'zod';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { submitContactForm } from '@/lib/web3forms';
-import { enquiryServices, enquiryVariants, readEnquiryContext, validService } from '@/lib/enquiry.mjs';
+import { enquiryServices, enquiryVariants, resolveEnquiryContext, validService } from '@/lib/enquiry.mjs';
 import { trackConversion } from '@/lib/conversions';
 
 const schema = z.object({
@@ -24,10 +24,10 @@ const prompts: Record<string, string> = {
   other: 'Opisz firmę i to, co chcesz zmienić. Wystarczą 2–3 zdania.',
 };
 
-export function EnquiryForm({ defaultService = 'other', consultation = false, id = 'formularz' }: { defaultService?: string; consultation?: boolean; id?: string }) {
+export function EnquiryForm({ defaultService = 'other', defaultVariant = '', consultation = false, id = 'formularz' }: { defaultService?: string; defaultVariant?: string; consultation?: boolean; id?: string }) {
   const { search, pathname } = useLocation();
   const [service, setService] = useState(validService(defaultService));
-  const [variant, setVariant] = useState('');
+  const [variant, setVariant] = useState(resolveEnquiryContext('', defaultService, defaultVariant).variant);
   const [data, setData] = useState({ name: '', email: '', message: '', phone: '', timing: '' });
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
@@ -36,10 +36,10 @@ export function EnquiryForm({ defaultService = 'other', consultation = false, id
   const success = useRef<HTMLDivElement>(null);
   const started = useRef(false);
   useEffect(() => {
-    const context = readEnquiryContext(search);
-    setService(context.service === 'other' ? validService(defaultService) : context.service);
+    const context = resolveEnquiryContext(search, defaultService, defaultVariant);
+    setService(context.service);
     setVariant(context.variant);
-  }, [search, defaultService]);
+  }, [search, defaultService, defaultVariant]);
   useEffect(() => { if (status === 'success') success.current?.focus(); }, [status]);
   const start = () => { if (!started.current) { started.current = true; trackConversion('form_start', service); } };
   const send = async (event: React.FormEvent) => {
@@ -58,7 +58,7 @@ export function EnquiryForm({ defaultService = 'other', consultation = false, id
       const result = await submitContactForm({
         ...parsed.data, topic: enquiryServices[service], service_tag: service,
         variant: variant ? enquiryVariants[variant] : '', form_id: `enquiry:${pathname}`,
-        subject: `${consultation ? 'Konsultacja' : 'Zapytanie'}: ${enquiryServices[service]}`,
+        subject: `${consultation ? 'Konsultacja' : 'Zapytanie'}: ${enquiryServices[service]}${variant ? ` — ${enquiryVariants[variant]}` : ''}`,
         from_name: 'FOTZ Studio — zapytanie ze strony',
         message: [parsed.data.message, parsed.data.timing && `Preferowany termin: ${parsed.data.timing}`, variant && `Zakres: ${enquiryVariants[variant]}`].filter(Boolean).join('\n\n'),
       });

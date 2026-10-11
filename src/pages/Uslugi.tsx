@@ -11,7 +11,7 @@ const services = [
     id: "strony", icon: Globe, title: "Strony internetowe i sklepy", audience: "Chcesz lepiej przedstawić ofertę lub sprzedawać online.",
     description: "Projektujemy strukturę, wygląd i funkcje strony. Dbamy o wersję mobilną, treść, formularze oraz podstawy technicznego SEO.",
     items: ["Strony firmowe i landing pages", "Sklepy internetowe", "Integracje i ścieżka kontaktu"],
-    links: [{ label: "Strony internetowe", path: "/uslugi/strony-internetowe" }, { label: "Sklepy internetowe", path: "/uslugi/sklepy-internetowe" }],
+    links: [{ label: "Strony dla firm", path: "/uslugi/strony-internetowe-dla-firm" }, { label: "Strony internetowe", path: "/uslugi/strony-internetowe" }, { label: "Sklepy internetowe", path: "/uslugi/sklepy-internetowe" }],
   },
   {
     id: "seo", icon: Search, title: "SEO i treści", audience: "Chcesz ułatwić klientom znalezienie Twojej oferty.",
@@ -29,13 +29,13 @@ const services = [
     id: "video", icon: Video, title: "Video i fotografia", audience: "Chcesz pokazać produkt, ludzi, miejsce lub wydarzenie.",
     description: "Od pomysłu i planu nagrań po zdjęcia, montaż i wersje do publikacji. Dobieramy formaty do strony, social media i kampanii.",
     items: ["Filmy firmowe, spoty i rolki", "Zdjęcia biznesowe i wydarzenia", "Ujęcia z drona"],
-    links: [{ label: "Produkcja video", path: "/uslugi/produkcja-video" }, { label: "Fotografia", path: "/uslugi/fotografia" }, { label: "Zdjęcia z drona", path: "/uslugi/fotografia-z-drona" }],
+    links: [{ label: "Video marketing", path: "/uslugi/video-marketing" }, { label: "Produkcja video", path: "/uslugi/produkcja-video" }, { label: "Fotografia", path: "/uslugi/fotografia" }, { label: "Zdjęcia z drona", path: "/uslugi/fotografia-z-drona" }],
   },
   {
     id: "kampanie", icon: Target, title: "Kampanie reklamowe", audience: "Chcesz dotrzeć z konkretną ofertą do wybranych odbiorców.",
     description: "Łączymy kreację, stronę docelową i pomiar zapytań. Budżet emisji omawiamy oddzielnie od przygotowania i obsługi kampanii.",
     items: ["Google Ads i Meta Ads", "Materiały reklamowe", "Pomiar i optymalizacja kampanii"],
-    links: [{ label: "Kampanie reklamowe", path: "/kampanie-reklamowe" }, { label: "Google Ads", path: "/performance-marketing/google-ads" }, { label: "Meta Ads", path: "/performance-marketing/meta-ads" }],
+    links: [{ label: "Reklama Facebook", path: "/uslugi/reklama-facebook" }, { label: "Kampanie reklamowe", path: "/kampanie-reklamowe" }, { label: "Google Ads", path: "/performance-marketing/google-ads" }, { label: "Meta Ads", path: "/performance-marketing/meta-ads" }],
   },
   {
     id: "identyfikacja", icon: Palette, title: "Identyfikacja i materiały wizualne", audience: "Potrzebujesz spójnego wyglądu marki i jej materiałów.",
