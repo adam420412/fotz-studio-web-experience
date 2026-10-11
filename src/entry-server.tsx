@@ -11,6 +11,7 @@ import { LanguageProvider } from '@/contexts/LanguageContext';
 import App from './App';
 import { hydratedPages } from '@/lib/hydrated-pages';
 import { blogBootstrap, serializeBlogBootstrap } from '@/lib/blog-bootstrap.mjs';
+import { decodeRenderedHtml } from '@/lib/decode-rendered-html.mjs';
 
 const pages = import.meta.glob('./pages/**/*.tsx');
 export async function renderPage(file: string, url: string, articles: Array<Record<string, unknown>> = []) {
@@ -38,10 +39,18 @@ export async function renderPage(file: string, url: string, articles: Array<Reco
   }</HelmetProvider>;
   return new Promise<{body: string; scripts: string; hydrate: boolean; bootstrap: string}>((resolve, reject) => {
     const output = new PassThrough();
-    let html = '';
+    const chunks: Buffer[] = [];
     const timeout = setTimeout(() => { stream.abort(); reject(new Error(`Render timeout: ${url}`)); }, 20000);
-    output.on('data', chunk => { html += chunk.toString(); });
-    output.on('end', () => { clearTimeout(timeout); client.clear(); resolve({body: html, scripts: context.helmet?.script.toString() || '', hydrate, bootstrap: bootstrap ? serializeBlogBootstrap(bootstrap) : ''}); });
+    output.on('data', chunk => { chunks.push(Buffer.from(chunk)); });
+    output.on('end', () => {
+      clearTimeout(timeout);
+      client.clear();
+      try {
+        resolve({body: decodeRenderedHtml(chunks), scripts: context.helmet?.script.toString() || '', hydrate, bootstrap: bootstrap ? serializeBlogBootstrap(bootstrap) : ''});
+      } catch (error) {
+        reject(error);
+      }
+    });
     output.on('error', reject);
     const stream = renderToPipeableStream(tree, {
       onAllReady() { stream.pipe(output); },
