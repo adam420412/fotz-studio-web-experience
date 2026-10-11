@@ -17,9 +17,9 @@ import victoryCarsImage from "@/assets/portfolio/victory-cars-web.webp";
 const caseStudies = [
   {
     title: "Klagem",
-    description: "Kompleksowy rebranding i nowa identyfikacja wizualna dla marki kosmetyków premium.",
+    description: "Identyfikacja wizualna, strona i konfigurator 3D dla marki mebli modułowych KLAGEM.",
     image: klageImage,
-    results: ["Nowa tożsamość marki", "Premium pozycjonowanie", "+180% rozpoznawalności"],
+    results: ["Identyfikacja wizualna", "Prezentacja produktów", "Konfigurator 3D"],
     href: "/realizacje/klagem",
   },
   {

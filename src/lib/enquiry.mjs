@@ -11,6 +11,7 @@ export const enquiryVariants = {
   materials: 'Produkcja materiałów', management: 'Regularna obsługa profili',
   campaign: 'Obsługa profili z reklamami', website: 'Nowa strona',
   redesign: 'Przebudowa istniejącej strony', shop: 'Sklep internetowy',
+  configurator: 'Konfigurator produktów 3D',
   film: 'Film dla firmy', reels: 'Rolki do social media', spot: 'Spot reklamowy',
   ad_variants: 'Warianty filmu do testu reklam',
   audit: 'Audyt i plan wdrożeń', ongoing: 'Stałe działania SEO',

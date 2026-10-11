@@ -5,6 +5,7 @@ import { PageBreadcrumbs } from '@/components/PageBreadcrumbs';
 import { EnquiryForm } from '@/components/EnquiryForm';
 import { FeaturedFilms } from '@/components/sections/FeaturedFilms';
 import { SelectedWork } from '@/components/sections/SelectedWork';
+import { KlagemConfigurator } from '@/components/sections/KlagemConfigurator';
 import { FAQSchema, BreadcrumbSchema, ServiceSchema } from '@/components/seo/StructuredData';
 import { enquiryHref } from '@/lib/enquiry.mjs';
 import { workImages } from '@/data/selected-work.mjs';
@@ -14,7 +15,7 @@ type Item = { title: string; text: string };
 export interface SalesOfferProps {
   path: string; service: string; title: string; description: string;
   heading: string; eyebrow: string; lead: string; cta: string;
-  hero: keyof typeof imageVariants; caption: string; films?: boolean;
+  hero: keyof typeof imageVariants; caption: string; films?: boolean; configurator?: boolean;
   scope: Item[]; options: (Item & { variant: string; detail: string })[];
   pricing: string; pricingHref: string; pricingLabel: string;
   steps: Item[]; faqs: { question: string; answer: string }[];
@@ -32,6 +33,7 @@ export function SalesOffer(p: SalesOfferProps) {
     </div></section>
     <nav aria-label="Na tej stronie" className="container-wide px-6 md:px-12 pb-8 flex flex-wrap gap-x-6 gap-y-3 text-sm">{[['#realizacje','Realizacje'],['#zakres','Zakres'],['#wycena','Wycena'],['#proces','Proces'],['#faq','Pytania'],['#zapytanie','Zapytaj o projekt']].map(([href,label]) => <a key={href} href={href} className="underline underline-offset-4">{label}</a>)}</nav>
     <section id="realizacje" className="scroll-mt-28">
+      {p.configurator && <KlagemConfigurator />}
       {p.films ? <FeaturedFilms id="filmy" /> : <SelectedWork />}
       <div className="container-wide px-6 md:px-12 py-10"><div className="grid md:grid-cols-3 gap-6">{p.evidence.map(item => <article key={item.title} className="border-t border-border pt-5"><h2 className="text-xl font-heading mb-3">{item.title}</h2><p className="text-muted-foreground leading-relaxed mb-4">{item.text}</p><Link to={item.href} className="underline underline-offset-4">Zobacz projekt</Link></article>)}</div></div>
     </section>

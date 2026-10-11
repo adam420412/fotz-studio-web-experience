@@ -7,7 +7,6 @@ import fabrykaViraliImg from "@/assets/portfolio/fabryka-virali-web.webp";
 import friendlyGasImg from "@/assets/portfolio/friendly-gas-new-web.webp";
 import cuteDumplingImg from "@/assets/portfolio/cute-dumpling-new-web.webp";
 import apartamentyChorwacjaImg from "@/assets/portfolio/apartamenty-chorwacja-web.webp";
-import klagemImg from "@/assets/portfolio/klagem-web.webp";
 import mechanicaImg from "@/assets/portfolio/mechanica-web.webp";
 import celsjuszImg from "@/assets/portfolio/celsjusz-web.webp";
 import sookarImg from "@/assets/portfolio/sookar-web.webp";
@@ -189,8 +188,8 @@ export const projects = [
     id: "klagem",
     title: "Klagem",
     category: "Strony www",
-    description: "Strona www dla firmy z modułowymi systemami meblowymi.",
-    image: klagemImg,
+    description: "Konfigurator mebli 3D i strona KLAGEM. Dobór modułów, wymiarów, kolorów oraz orientacyjna wycena.",
+    image: "/work/klagem-configurator-1280.webp",
     featured: false,
     hasCase: true,
   },
