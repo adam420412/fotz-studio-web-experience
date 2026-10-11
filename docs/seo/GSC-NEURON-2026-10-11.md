@@ -132,7 +132,7 @@ PR #48 scalony, main `8631af964b2d7b54ca5bec45a4054036c56ba4f1`. Oba wdrożenia 
 
 ## Portfolio — większe kadry i lżejsze podglądy
 
-Inspiracja funkcjonalna: https://boostagency.pl/ oraz https://boostagency.pl/portfolio (duże kadry, proste kategorie, spokojny ruch). Wykorzystano wyłącznie własne materiały i kolorystykę FOTZ. Portfolio otrzymało szeroki kadr Enea Stadionu, większą siatkę dwóch kolumn, filtry z licznikami i wyróżnioną kolejność Enea / KLAGEM / Dawid EDU. Do siedmiu filmów dołączono istniejący spot CUPRA. Zachowano 21 projektów i 58 zdjęć, adresy realizacji, powiększanie i ręczny start filmów.
+Inspiracja funkcjonalna: https://boostagency.pl/ oraz https://boostagency.pl/portfolio (duże kadry, proste kategorie, spokojny ruch). Wykorzystano wyłącznie własne materiały i kolorystykę FOTZ. Portfolio otrzymało szeroki kadr Enea Stadionu, większą siatkę dwóch kolumn, filtry z licznikami i wyróżnioną kolejność Enea / KLAGEM / Dawid EDU. Do sekcji filmów dołączono istniejący spot CUPRA (łącznie siedem filmów). Zachowano 21 projektów i 58 zdjęć, adresy realizacji, powiększanie i ręczny start filmów.
 
 Nowe style obsługują delikatne powiększenie obrazu, ruch strzałki i wejście kart po filtrowaniu. Animacje nie ukrywają treści; są ograniczone do komputerów i preferencji no-preference. Strona została włączona do hydratacji, aby nie wymieniać prerenderowanego DOM przy starcie.
 
