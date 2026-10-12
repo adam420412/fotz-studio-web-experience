@@ -33,8 +33,8 @@ export default function CaseStudyDawidEdu() {
   return (
     <Layout>
       <SEOHead
-        title="Dawid EDU — kampania rekrutacyjna | FOTZ Studio"
-        description="Kampania Meta Ads dla Dawid EDU: kreacje reklamowe, usprawnienie ścieżki kontaktu i 1 216 wyświetleń strony. Zobacz zakres pracy i wyniki."
+        title="Dawid EDU — strona WWW i kampania rekrutacyjna | FOTZ Studio"
+        description="Nowa strona dawid.edu.pl i kampania rekrutacyjna Meta Ads dla Chrześcijańskiej Edukacji im. Króla Dawida: projekt, wdrożenie na WordPressie, kreacje i ścieżka kontaktu."
         canonical="https://www.fotz-studio.pl/realizacje/dawid-edu"
         ogImage="https://www.fotz-studio.pl/case-studies/dawid-edu/ed-a.webp"
         ogType="article"
@@ -52,17 +52,18 @@ export default function CaseStudyDawidEdu() {
           </Link>
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
             <div>
-              <p className="text-sm uppercase tracking-[0.18em] text-foreground/60 mb-5">Dawid EDU · Kampania rekrutacyjna</p>
+              <p className="text-sm uppercase tracking-[0.18em] text-foreground/60 mb-5">Dawid EDU · Strona WWW i kampania rekrutacyjna</p>
               <h1 className="text-4xl md:text-5xl xl:text-6xl font-heading font-bold leading-[1.08] mb-6">
                 Od reklamy<br />do rozmowy<br /><span className="bg-gradient-to-r from-fuchsia-400 to-sky-400 bg-clip-text text-transparent">z rodzicem.</span>
               </h1>
               <p className="text-lg text-foreground/70 leading-relaxed max-w-xl mb-7">
-                Dla Chrześcijańskich Szkół im. Króla Dawida połączyliśmy kampanię
-                na Facebooku i Instagramie z poprawkami na stronie rekrutacyjnej.
-                Cel: ułatwić rodzicom poznanie oferty i pierwszy kontakt z placówką.
+                Dla Chrześcijańskiej Edukacji im. Króla Dawida zaprojektowaliśmy
+                i wdrożyliśmy nową stronę dawid.edu.pl, a potem uruchomiliśmy kampanię
+                rekrutacyjną na Facebooku i Instagramie. Cel: ułatwić rodzicom poznanie
+                oferty i pierwszy kontakt z placówką.
               </p>
               <div className="flex flex-wrap gap-2 text-sm">
-                {["Meta Ads", "Kreacje reklamowe", "Ścieżka kontaktu"].map(label => (
+                {["Strona WWW", "WordPress", "Meta Ads", "Kreacje reklamowe", "Ścieżka kontaktu"].map(label => (
                   <span key={label} className="rounded-full px-4 py-2 bg-muted border border-border/30">{label}</span>
                 ))}
               </div>
@@ -77,10 +78,66 @@ export default function CaseStudyDawidEdu() {
         </div>
       </section>
 
+      <section className="section-padding bg-background border-t border-border/30">
+        <div className="container-wide">
+          <div className="grid lg:grid-cols-[1fr_1.25fr] gap-10 lg:gap-16 items-center">
+            <div>
+              <p className="text-sm uppercase tracking-[0.18em] text-foreground/60 mb-4">Etap 1 · Strona internetowa</p>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">Nowa strona<br />dawid.edu.pl</h2>
+              <p className="text-lg text-foreground/70 leading-relaxed mb-7">
+                Placówka prowadzi przedszkole, szkołę podstawową, liceum i edukację domową.
+                Na stronie głównej każdy etap ma własny kolor, kafelek i ścieżkę dalej,
+                a rodzic od razu widzi wyniki egzaminów, opinie rodzin i informacje o rekrutacji.
+              </p>
+              <ul className="space-y-4 text-foreground/75 mb-8">
+                {[
+                  "Projekt graficzny i wdrożenie na WordPressie, zgodnie z systemami mailingowymi i hostingiem szkoły.",
+                  "Autorskie sekcje: wyniki egzaminów, etapy edukacji, „Dlaczego Dawid”, liczniki i opinie.",
+                  "Baner cookies, polityka prywatności oraz nagranie instruktażowe do samodzielnej edycji treści.",
+                ].map(item => <li key={item} className="flex gap-3"><Check className="w-5 h-5 shrink-0 mt-0.5" />{item}</li>)}
+              </ul>
+              <a href="https://www.dawid.edu.pl/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 underline underline-offset-4">
+                Zobacz stronę dawid.edu.pl<span className="sr-only"> — nowa karta</span> <ArrowRight className="w-4 h-4" />
+              </a>
+            </div>
+            <figure className="w-full">
+              <img src="/case-studies/dawid-edu/strona-etapy-edukacji-1280.webp"
+                srcSet="/case-studies/dawid-edu/strona-etapy-edukacji-480.webp 480w, /case-studies/dawid-edu/strona-etapy-edukacji-800.webp 800w, /case-studies/dawid-edu/strona-etapy-edukacji-1280.webp 1280w"
+                sizes="(max-width: 1024px) 100vw, 55vw" width="1280" height="756" loading="lazy"
+                alt="Sekcja strony dawid.edu.pl z czterema etapami edukacji: przedszkole, szkoła podstawowa, liceum i edukacja domowa"
+                className="w-full rounded-2xl border border-border/30" />
+              <figcaption className="text-xs text-foreground/50 mt-3">Strona główna dawid.edu.pl — wybór etapu edukacji.</figcaption>
+            </figure>
+          </div>
+          <div className="grid lg:grid-cols-[1.25fr_1fr] gap-10 lg:gap-16 items-center mt-14">
+            <figure className="w-full">
+              <img src="/case-studies/dawid-edu/strona-wyniki-egzaminow-1280.webp"
+                srcSet="/case-studies/dawid-edu/strona-wyniki-egzaminow-480.webp 480w, /case-studies/dawid-edu/strona-wyniki-egzaminow-800.webp 800w, /case-studies/dawid-edu/strona-wyniki-egzaminow-1280.webp 1280w"
+                sizes="(max-width: 1024px) 100vw, 55vw" width="1280" height="756" loading="lazy"
+                alt="Sekcja wyników egzaminu ósmoklasisty 2026 na stronie dawid.edu.pl z porównaniem do średniej"
+                className="w-full rounded-2xl border border-border/30" />
+              <figcaption className="text-xs text-foreground/50 mt-3">Sekcja wyników egzaminów — dane szkoły na tle średniej.</figcaption>
+            </figure>
+            <div>
+              <h3 className="font-heading font-semibold text-2xl mb-4">Konkretne argumenty dla rodziców</h3>
+              <p className="text-foreground/70 leading-relaxed mb-5">
+                Wyniki egzaminów, liczby i opinie rodzin są widoczne bez szukania po podstronach.
+                Na tej stronie oparliśmy później ścieżkę kontaktu z kampanii.
+              </p>
+              <p className="text-sm text-foreground/55 leading-relaxed">
+                Google Search Console: 741 kliknięć z wyników wyszukiwania we wrześniu 2026 r.
+                wobec 381 w lipcu. Wrzesień to okres rekrutacji i trwającej kampanii, więc
+                wzrostu nie przypisujemy wyłącznie zmianom na stronie.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="section-padding bg-muted/30 border-y border-border/30">
         <div className="container-wide">
           <div className="flex flex-wrap justify-between items-end gap-4 mb-9">
-            <h2 className="text-2xl md:text-3xl font-heading font-bold">Kampania w liczbach</h2>
+            <h2 className="text-2xl md:text-3xl font-heading font-bold"><span className="block text-sm uppercase tracking-[0.18em] text-foreground/60 font-normal mb-3">Etap 2 · Kampania rekrutacyjna</span>Kampania w liczbach</h2>
             <p className="text-sm text-foreground/60">18.08–28.09.2026 · Meta Ads</p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">

@@ -23,6 +23,28 @@ const caseStudies = [
     hasCase: true,
   },
   {
+    id: "wsb-merito",
+    title: "WSB Merito × Enea Stadion",
+    category: "Spot rekrutacyjny",
+    description:
+      "Spot 4K dla studiów podyplomowych Event Manager: koncepcja, scenariusz, zdjęcia na kampusie i stadionie, montaż.",
+    image: "/case-studies/wsb-merito/spot-stadion-800.webp",
+    video: true,
+    featured: false,
+    hasCase: true,
+  },
+  {
+    id: "dawid-edu",
+    title: "Dawid EDU",
+    category: "Strona WWW & kampania",
+    description:
+      "Nowa strona dawid.edu.pl i kampania rekrutacyjna Meta Ads dla szkoły, przedszkola i edukacji domowej.",
+    image: "/case-studies/dawid-edu/strona-etapy-edukacji-800.webp",
+    video: false,
+    featured: false,
+    hasCase: true,
+  },
+  {
     id: "fps-cegielski",
     title: "FPS Poznań (Cegielski)",
     category: "Strony www",
@@ -215,6 +237,16 @@ export function CaseStudies() {
                       "linear-gradient(to top, var(--dv-ink) 0%, var(--dv-ink)/70% 40%, transparent 100%)",
                   }}
                 />
+                {c.video && (
+                  <div className="absolute inset-0 flex items-center justify-center" aria-hidden="true">
+                    <div
+                      className="w-14 h-14 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+                      style={{ background: "var(--dv-brand-grad)", boxShadow: "0 8px 28px rgba(120,20,60,0.45)" }}
+                    >
+                      <Play className="w-6 h-6 text-white ml-0.5" fill="currentColor" strokeWidth={1.5} />
+                    </div>
+                  </div>
+                )}
               </div>
               <div className="p-6" style={{ background: "var(--dv-ink)" }}>
                 <span className="dv-pill mb-3 inline-block">{c.category}</span>

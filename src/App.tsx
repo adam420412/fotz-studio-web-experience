@@ -37,6 +37,7 @@ const CaseStudyFPS = lazy(() => import("./pages/CaseStudyFPS"));
 const CaseStudyGierki = lazy(() => import("./pages/CaseStudyGierki"));
 const CaseStudyPrzedszkole = lazy(() => import("./pages/CaseStudyPrzedszkole"));
 const CaseStudyDawidEdu = lazy(() => import("./pages/CaseStudyDawidEdu"));
+const CaseStudyWsbMerito = lazy(() => import("./pages/CaseStudyWsbMerito"));
 const CaseStudyVerthe = lazy(() => import("./pages/CaseStudyVerthe"));
 const CaseStudyVictoryCars = lazy(() => import("./pages/CaseStudyVictoryCars"));
 const CaseStudyKlagem = lazy(() => import("./pages/CaseStudyKlagem"));
@@ -1553,6 +1554,7 @@ const App = ({ Router = BrowserRouter, client = queryClient, initialPage }: AppP
                 <Route path="/realizacje/gierki" element={<CaseStudyGierki />} />
                 <Route path="/realizacje/przedszkole" element={<CaseStudyPrzedszkole />} />
                 <Route path="/realizacje/dawid-edu" element={<CaseStudyDawidEdu />} />
+                <Route path="/realizacje/wsb-merito" element={<CaseStudyWsbMerito />} />
                 <Route path="/realizacje/verthe" element={<CaseStudyVerthe />} />
                 <Route path="/realizacje/victory-cars" element={<CaseStudyVictoryCars />} />
                 <Route path="/realizacje/klagem" element={<CaseStudyKlagem />} />
