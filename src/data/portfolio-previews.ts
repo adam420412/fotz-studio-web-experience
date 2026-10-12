@@ -152,5 +152,6 @@ export const portfolioPreviews: Record<string, { src: string; srcSet: string }> 
   [preview73]: {"src":"/work/portfolio/backstage-session-final-1-480.webp","srcSet":"/work/portfolio/backstage-session-final-1-480.webp 480w, /work/portfolio/backstage-session-final-1-960.webp 960w"},
   [preview74]: {"src":"/work/portfolio/backstage-session-final-2-480.webp","srcSet":"/work/portfolio/backstage-session-final-2-480.webp 480w, /work/portfolio/backstage-session-final-2-960.webp 960w"},
   ["/case-studies/dawid-edu/ed-a.webp"]: {"src":"/work/portfolio/case-studies-dawid-edu-ed-a-480.webp","srcSet":"/work/portfolio/case-studies-dawid-edu-ed-a-480.webp 480w, /work/portfolio/case-studies-dawid-edu-ed-a-960.webp 960w"},
+  ["/case-studies/wsb-merito/spot-stadion-1280.webp"]: {"src":"/work/portfolio/case-studies-wsb-merito-spot-stadion-1280-480.webp","srcSet":"/work/portfolio/case-studies-wsb-merito-spot-stadion-1280-480.webp 480w, /work/portfolio/case-studies-wsb-merito-spot-stadion-1280-960.webp 960w"},
   ["/work/klagem-configurator-1280.webp"]: {"src":"/work/portfolio/work-klagem-configurator-1280-480.webp","srcSet":"/work/portfolio/work-klagem-configurator-1280-480.webp 480w, /work/portfolio/work-klagem-configurator-1280-960.webp 960w"},
 };

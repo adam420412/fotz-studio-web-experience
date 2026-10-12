@@ -8,12 +8,16 @@ import mixbudLogo from "@/assets/clients/mixbud-web.webp";
 import klagemLogo from "@/assets/clients/klagem-web.webp";
 import partsLogo from "@/assets/clients/parts-jewelry-web.webp";
 import zabkaLogo from "@/assets/clients/zabka-web.webp";
+import wsbMeritoLogo from "@/assets/clients/wsb-merito-web.webp";
+import dawidEduLogo from "@/assets/clients/dawid-edu-web.webp";
 
 const CLIENTS = [
   { name: "Enea Stadion", logo: eneaLogo },
   { name: "Lech Poznań", logo: lechLogo },
+  { name: "Uniwersytet WSB Merito Poznań", logo: wsbMeritoLogo },
   { name: "RPPG Group", logo: rppgLogo },
   { name: "FPS Cegielski", logo: fpsLogo },
+  { name: "Chrześcijańska Edukacja im. Króla Dawida", logo: dawidEduLogo },
   { name: "Puma", logo: pumaLogo },
   { name: "Mix-Bud", logo: mixbudLogo },
   { name: "Klagem", logo: klagemLogo },

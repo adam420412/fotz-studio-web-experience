@@ -13,11 +13,12 @@ import { cn } from "@/lib/utils";
 import "./realizacje.css";
 
 const projectCategories = ["Wszystkie", "Strony www", "Kampanie reklamowe", "E-commerce", "Wizualizacje 3D"];
-const spotlightOrder = ["enea-stadion", "klagem", "dawid-edu"];
+const spotlightOrder = ["enea-stadion", "wsb-merito", "klagem", "dawid-edu"];
 const projectOrder = (id: string) => spotlightOrder.includes(id) ? spotlightOrder.indexOf(id) : spotlightOrder.length;
 const orderedProjects = [...projects].sort((a, b) => projectOrder(a.id) - projectOrder(b.id));
 const videos = [
   { src: "/videos/cupra-enea.mp4", poster: "/videos/cupra-enea-poster.webp", title: "CUPRA × Enea Stadion", category: "Spot reklamowy · motoryzacja" },
+  { src: "/videos/wsb-merito-enea.mp4", poster: "/videos/wsb-merito-poster.webp", title: "WSB Merito × Enea Stadion", category: "Spot rekrutacyjny · edukacja" },
   { src: "/videos/fotz-reel-web.mp4", poster: "/videos/enea-stadion-cover.webp", title: "Enea Stadion — emocje z bliska", category: "Film z wydarzenia" },
   { src: "/videos/autospa.mp4", poster: "/videos/autospa-frame.webp", title: "AutoSpa", category: "Prezentacja firmy" },
   { src: "/videos/fps-poznan.mp4", poster: "/videos/fps-poznan-frame.webp", title: "FPS Poznań — prezentacja strony", category: "Projekt WWW" },
