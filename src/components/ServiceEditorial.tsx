@@ -72,7 +72,7 @@ export function ServiceEditorial({ title, eyebrow, lead, path, area = "Polska", 
 
     <div className="container-wide px-6 md:px-12 py-12 md:py-16">
       {sections.map((item, index) => <section key={item.title} className="grid md:grid-cols-[1fr_1.4fr] gap-5 md:gap-12 py-8 border-b border-border first:pt-0">
-        <div><p aria-hidden="true" className="text-sm text-primary mb-3">0{index + 1}</p><h2 className="text-2xl md:text-3xl font-heading">{item.title}</h2></div>
+        <div><p aria-hidden="true" className="text-sm text-primary mb-3">{String(index + 1).padStart(2, "0")}</p><h2 className="text-2xl md:text-3xl font-heading">{item.title}</h2></div>
         <div><p className="text-muted-foreground leading-relaxed">{item.text}</p>{item.points && <ul className="mt-5 space-y-3 text-muted-foreground list-disc pl-5">{item.points.map(point => <li key={point} className="leading-relaxed">{point}</li>)}</ul>}{item.href && <Link to={item.href} className="inline-flex items-center gap-2 underline underline-offset-4 mt-5">{item.link}<ArrowRight aria-hidden="true" className="w-4 h-4" /></Link>}</div>
       </section>)}
     </div>
