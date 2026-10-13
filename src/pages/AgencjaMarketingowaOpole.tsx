@@ -17,7 +17,7 @@ const sections = [
     points: ["Brief: adres strony, oferta, odbiorcy i obszar sprzedaży — rynek opolski lub szerszy.", "Plan: priorytety, materiały, terminy oraz sposób akceptacji.", "Realizacja: uzgodnione wdrożenia i kontrola drogi do kontaktu.", "Ocena: raport wykonanej pracy, dane i decyzje o kolejnych krokach."],
   },
   {
-    title: "Agencja reklamowa: Opole i kampanie Ads poza regionem",
+    title: "Agencja reklamowa — obsługa lokalna i ogólnopolska",
     text: "Dobór komunikatu zależy od zasięgu obsługi. Lokalny klient potrzebuje jasnej informacji o dojeździe, terminie lub miejscu wykonania usługi. Firma sprzedająca w całej Polsce powinna wyjaśniać także dostawę, warianty produktu i obsługę po zakupie. Usługi reklamowe dopasowujemy do tego procesu. LinkedIn może wspierać komunikację B2B, Instagram prezentację realizacji, a strona szczegółowe porównanie oferty. Kanały wybieramy na podstawie potrzeb odbiorców i zasobów firmy, bez obowiązku prowadzenia każdego profilu.",
   },
   {
@@ -26,7 +26,7 @@ const sections = [
     href: "/realizacje", link: "Przejdź do realizacji FOTZ Studio",
   },
   {
-    title: "Marketing, wycena i zakres odpowiedzialności",
+    title: "Marketing i kampanie Ads: wycena oraz zakres prac",
     text: "Wycena wynika z listy zadań. Inny zakres ma poprawa jednej oferty, inny przygotowanie zdjęć, prowadzenie profilu i stałej kampanii. W propozycji zapisujemy liczbę materiałów, kanały, poprawki, terminy oraz podział pracy. Budżet emisji nie jest wynagrodzeniem agencji. Konta reklamowe pozostają po stronie klienta, a my uzgadniamy potrzebne dostępy. Jeśli projekt obejmuje druk lub kampanie reklamowe offline, najpierw potwierdzamy wykonawcę, specyfikację i koszty — nie są domyślną częścią obsługi internetowej.",
     points: ["Prześlij link do strony i opisz, jakie zapytania chcesz pozyskiwać.", "Dodaj posiadane zdjęcia, filmy i informacje o dotychczasowych działaniach.", "Wskaż orientacyjny budżet, termin oraz osobę akceptującą materiały."],
   },
@@ -36,8 +36,7 @@ const sections = [
   },
 ];
 const faqs = [
-  { question: "Jak porównać oferty agencji reklamowych dostępnych w Opolu?", answer: "Na rynku usług reklamowych podobne nazwy pakietów mogą oznaczać różny zakres. Porównaj liczbę materiałów, odpowiedzialność za wdrożenie, dostęp do kont, budżet emisji i sposób raportowania. Poproś o pokazanie realizacji oraz wyjaśnienie roli agencji w projekcie. W naszej propozycji te ustalenia zapisujemy przed startem, aby można było świadomie wybrać potrzebne zadania." },
-
+  { question: "Jak porównać oferty agencji reklamowych dostępnych w Opolu?", answer: "Ranking najlepszych firm reklamowych może pomóc zebrać kandydatów do porównania. Przed wyborem sprawdź jednak portfolio i zakres oferty: na rynku usług reklamowych podobne nazwy pakietów mogą oznaczać różne zadania. Porównaj liczbę materiałów, odpowiedzialność za wdrożenie, dostęp do kont, budżet emisji i sposób raportowania. Poproś o pokazanie realizacji oraz wyjaśnienie roli agencji w projekcie. W naszej propozycji te ustalenia zapisujemy przed startem, aby można było świadomie wybrać potrzebne zadania." },
   { question: "Czy FOTZ Studio ma biuro w Opolu?", answer: "Nasza siedziba znajduje się w Poznaniu. Współpracę z firmami z Opola prowadzimy zdalnie, a spotkanie lub nagrania na miejscu wymagają uzgodnienia. Jeśli potrzebna jest firma z siedzibą w Opolu i stała obsługa w Twoim biurze, warto uwzględnić to już w briefie." },
   { question: "Agencja reklamowa czy marketingowa — jakiego zakresu potrzebuję?", answer: "Nazwa nie zastępuje zakresu. Firma reklamowa może przygotowywać kreacje i emisję, a agencja marketingowa łączyć je ze strategią, treścią, stroną i pomiarem. W FOTZ wybierasz konkretne zadania. Możemy rozpocząć od jednej kampanii lub materiału i dopiero po ocenie ustalić dalszą współpracę." },
   { question: "Czy można zlecić tylko social media albo SEO?", answer: "Tak. Poszczególne usługi mają osobne zakresy. Przed startem ustalamy, kto dostarcza materiały, wdraża zmiany, akceptuje publikacje i odbiera zgłoszenia. Dzięki temu współpraca może uzupełniać pracę Twojego zespołu." },
@@ -50,6 +49,6 @@ export default function AgencjaMarketingowaOpole() {
     <ServiceEditorial path={path} title="Agencja marketingowa Opole — reklama dla Twojej firmy" eyebrow="FOTZ Studio · współpraca zdalna dla firm z Opola" area="Opole"
       lead="Łączymy strategię, materiały wizualne, kampanie i stronę w drogę do kontaktu. Pomagamy wybrać działania do celu i budżetu Twojej firmy. Zespół FOTZ Studio pracuje z Poznania; zakres współpracy i ewentualnych nagrań w Opolu ustalamy przed startem."
       summary={["Pokaż nam ofertę, stronę i dotychczasowe działania.", "Wybierzemy priorytety, materiały i sposób oceny zapytań.", "Otrzymasz zakres prac, wycenę i harmonogram do akceptacji."]}
-      scopeTitle="Reklama: Opole, social media i SEO — dobierz zakres" scope={scope} sections={sections} faqs={faqs} workAfterScope />
+      scopeTitle="Opole: reklama, social media i SEO dla Twojej firmy" scope={scope} sections={sections} faqs={faqs} workAfterScope />
   </>;
 }
