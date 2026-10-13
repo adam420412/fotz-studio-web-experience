@@ -24,6 +24,7 @@ export const hydratedPages: Record<string, () => Promise<{ default: ComponentTyp
   "/uslugi/pozycjonowanie/opole": () => import("@/pages/PozycjonowanieOpole"),
   "/seo/audyt": () => import("@/pages/AudytSEO"),
   "/agencja-marketingowa/poznan": () => import("@/pages/AgencjaMarketingowaPoznan"),
+  "/agencja-marketingowa-opole": () => import("@/pages/AgencjaMarketingowaOpole"),
   "/agencja-marketingowa/wroclaw": () => import("@/pages/AgencjaMarketingowaWroclaw"),
   "/agencja-marketingu-internetowego": () => import("@/pages/AgencjaMarketinguInternetowego"),
   "/uslugi/marketing-internetowy": () => import("@/pages/MarketingInternetowy"),
