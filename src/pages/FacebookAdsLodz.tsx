@@ -42,7 +42,7 @@ const sections = [
   },
   {
     title: "Nasze realizacje: reklama i droga do kontaktu",
-    text: "W projekcie Dawid EDU połączyliśmy stronę internetową z kampanią rekrutacyjną Meta Ads. W case study zobaczysz kreacje i opis zakresu dla szkoły, przedszkola oraz edukacji domowej. To przykład pracy naszego zespołu, a nie deklaracja wyniku kampanii dla firm z Łodzi. Fotografie z własnych realizacji poniżej pokazują także materiały, które pomagają prezentować markę online. Przed wykorzystaniem konkretnego projektu wyjaśniamy, co wykonaliśmy; nie przypisujemy zdjęciom wyników sprzedażowych.",
+    text: "W projekcie Dawid EDU połączyliśmy stronę internetową z kampanią rekrutacyjną Meta Ads. W case study zobaczysz kreacje i opis zakresu dla szkoły, przedszkola oraz edukacji domowej. To przykład pracy naszego zespołu, a nie deklaracja wyniku kampanii dla firm z Łodzi. Fotografie z własnych realizacji pokazują także materiały, które pomagają prezentować markę online. Przed wykorzystaniem konkretnego projektu wyjaśniamy, co wykonaliśmy; nie przypisujemy zdjęciom wyników sprzedażowych.",
     href: "/realizacje/dawid-edu", link: "Zobacz realizację Dawid EDU",
   },
 ];
@@ -58,7 +58,7 @@ const faqs = [
 
 export default function FacebookAdsLodz() {
   return <>
-    <SEOHead title="Facebook Ads Łódź — agencja reklamy Facebook i Instagram | FOTZ" description="Reklama Facebook i Instagram dla firm z Łodzi. Kreacje, kampania, budżet i pomiar zapytań. Zobacz realizacje i ustal zakres zdalnej obsługi FOTZ Studio." canonical={`https://www.fotz-studio.pl${path}`} />
+    <SEOHead title="Facebook i Instagram Ads Łódź — agencja FOTZ" description="Reklama Facebook i Instagram dla firm z Łodzi. Kreacje, kampania, budżet i pomiar zapytań. Zobacz realizacje i ustal zakres zdalnej obsługi FOTZ Studio." canonical={`https://www.fotz-studio.pl${path}`} />
     <ServiceEditorial path={path} title="Agencja Facebook Ads Łódź — reklamy Meta i social media" eyebrow="FOTZ Studio · kampanie Meta dla firm z Łodzi" area="Łódź" enquiryVariant="meta_ads"
       lead="Przygotowujemy reklamy na Facebooku i Instagramie: od oferty i kreacji po emisję oraz ocenę zapytań. Ustalmy cel, budżet i obszar obsługi Twojej firmy. Otrzymasz konkretny zakres prac, a koszty materiałów, prowadzenia kampanii i emisji pokażemy oddzielnie."
       summary={["Pokaż ofertę, profil, stronę i dotychczasowe działania.", "Uzgodnimy odbiorców, materiały, budżet i obsługę zgłoszeń.", "Po akceptacji uruchomimy ustalony zakres i ocenimy dane."]}
