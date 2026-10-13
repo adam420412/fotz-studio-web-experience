@@ -4,7 +4,7 @@ import { companyWebsiteOffer } from '@/data/acquisition-offers';
 
 export default function StronyInternetoweDlaFirm() {
   return <>
-    <SEOHead title="Strony internetowe dla firm — projekt i wycena | FOTZ Studio" description="Tworzymy strony internetowe dla firm usługowych i produkcyjnych. Zobacz realizacje, zakres projektu, zasady wyceny i opisz stronę swojej firmy." canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe-dla-firm" />
+    <SEOHead title="Strony internetowe dla firm — tworzenie i oferta | FOTZ" description="Tworzymy i projektujemy strony WWW dla firm. Poznaj realizacje, zakres, CMS i wycenę profesjonalnej strony dla Twojej firmy. Zaplanuj projekt z FOTZ." canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe-dla-firm" />
     <SalesOffer {...companyWebsiteOffer} />
   </>;
 }

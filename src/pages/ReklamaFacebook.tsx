@@ -4,7 +4,7 @@ import { facebookOffer } from '@/data/acquisition-offers';
 
 export default function ReklamaFacebook() {
   return <>
-    <SEOHead title="Reklama na Facebooku i Instagramie — kampanie | FOTZ Studio" description="Reklama na Facebooku i Instagramie: plan kampanii, kreacje, formularze i pomiar zapytań. Zobacz realizację Dawid EDU i ustal zakres Meta Ads z FOTZ." canonical="https://www.fotz-studio.pl/uslugi/reklama-facebook" />
+    <SEOHead title="Reklama na Facebooku — kreacje i kampanie Meta | FOTZ" description="Reklama na Facebooku: kampanie Facebook Ads, kreacje, budżet i pomiar. Zobacz realizacje FOTZ, ustal zakres Meta Ads i zaplanuj pozyskiwanie zapytań." canonical="https://www.fotz-studio.pl/uslugi/reklama-facebook" />
     <SalesOffer {...facebookOffer} />
   </>;
 }
