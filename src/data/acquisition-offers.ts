@@ -95,7 +95,7 @@ export const companyWebsiteOffer: SalesOfferProps = {
   "guidance": [
     {
       "title": "Strony dla firm usługowych i firm produkcyjnych",
-      "text": "Projekt strony zależy od decyzji, którą ma podjąć odbiorca. Firma usługowa potrzebuje jasnego zakresu współpracy, a producent często także katalogu i informacji technicznych. Dopasowujemy strukturę do Twojej branży. Branża wpływa też na materiały: dla firm produkcyjnych ważne mogą być dokumentacja i parametry, a dla firm usługowych opis współpracy oraz przykłady wykonanych prac.",
+      "text": "Projekt strony zależy od decyzji, którą ma podjąć odbiorca. Firma usługowa potrzebuje jasnego zakresu współpracy, a producent często także katalogu i informacji technicznych. Branża wpływa na strukturę i materiały: dla firm produkcyjnych ważne mogą być dokumentacja i parametry, a dla firm usługowych opis współpracy oraz przykłady wykonanych prac.",
       "points": [
         "Usługi: opis problemu klienta, zakres prac, realizacje, sposób wyceny i dane kontaktowe przy ofercie.",
         "Produkcja i B2B: kategorie produktów, parametry, materiały do pobrania oraz formularz zapytania o konkretny produkt.",
@@ -108,7 +108,7 @@ export const companyWebsiteOffer: SalesOfferProps = {
     },
     {
       "title": "Co pomaga stronie firmowej zdobywać zapytania?",
-      "text": "Profesjonalna strona www powinna odpowiadać na pytania, które poprzedzają rozmowę z firmą. Sama publikacja nie zapewnia ruchu. Łączymy przejrzysty układ z planem dotarcia do odbiorców i sprawdzamy kolejne etapy kontaktu.",
+      "text": "Profesjonalna strona WWW powinna odpowiadać na pytania, które poprzedzają rozmowę z firmą. Sama publikacja nie zapewnia ruchu. Łączymy przejrzysty układ z planem dotarcia do odbiorców i sprawdzamy kolejne etapy kontaktu.",
       "points": [
         "Wiarygodność: własne realizacje, zakres wykonanej pracy i zdjęcia zamiast anonimowych obietnic.",
         "Ruch: pozycjonowanie, kampanie lub social media dobrane do oferty i budżetu Twojej firmy.",
@@ -252,9 +252,9 @@ export const facebookOffer: SalesOfferProps = {
   "path": "/uslugi/reklama-facebook",
   "service": "marketing",
   "defaultVariant": "meta_ads",
-  "title": "Reklama na Facebooku — kampanie Meta Ads | FOTZ Studio",
+  "title": "Reklama na Facebooku — kreacje i kampanie Meta | FOTZ",
   "description": "Reklama na Facebooku: kampanie Facebook Ads, kreacje, budżet i pomiar. Zobacz realizacje FOTZ, ustal zakres Meta Ads i zaplanuj pozyskiwanie zapytań.",
-  "heading": "Reklama na Facebooku — kampanie Facebook Ads dla firm",
+  "heading": "Reklama na Facebooku — kreacje i kampanie Facebook Ads",
   "eyebrow": "Facebook Ads i Instagram · FOTZ Studio",
   "lead": "Łączymy kampanię reklamową z tym, co dzieje się po kliknięciu. Przygotowujemy komunikat, grafiki lub wideo, sprawdzamy stronę docelową i sposób odbierania zgłoszeń. Zaczynamy od Twojej oferty oraz celu kampanii, a potem ustalamy budżet i plan testów.",
   "cta": "Opisz cel swojej kampanii",
@@ -465,7 +465,7 @@ export const facebookOffer: SalesOfferProps = {
     },
     {
       "title": "Jak tworzyć skuteczne reklamy na Facebooku?",
-      "text": "Jakość reklamy zaczyna się od konkretu: komu pomożesz, co oferujesz i dlaczego warto sprawdzić szczegóły. Agencja marketingowa powinna połączyć tę informację z odpowiednim obrazem i następnym krokiem. Reklamy na FB konkurują o uwagę z innymi treściami w mediach społecznościowych, dlatego unikamy przeładowanych grafik i kilku ofert w jednym komunikacie. Skuteczna reklama wymaga testu: sam atrakcyjny projekt nie dowodzi pozyskania nowych klientów.",
+      "text": "Jakość reklamy zaczyna się od konkretu: komu pomożesz, co oferujesz i dlaczego warto sprawdzić szczegóły. Agencja marketingowa powinna połączyć tę informację z odpowiednim obrazem i następnym krokiem. Reklamy na Facebooku konkurują o uwagę z innymi treściami w mediach społecznościowych, dlatego unikamy przeładowanych grafik i kilku ofert w jednym komunikacie. Skuteczna reklama wymaga testu: sam atrakcyjny projekt nie dowodzi pozyskania nowych klientów.",
       "points": [
         "Na etapie tworzenia reklamy przygotowujemy uzgodnione warianty komunikatu. Forma reklamy powinna umożliwić szybkie zrozumienie oferty także bez dźwięku.",
         "Każda kampania reklamowa potrzebuje spójnej strony lub formularza. Platforma dostarcza dane o emisji, a firma potwierdza, czy kontakty pasują do jej oferty."
@@ -537,7 +537,7 @@ export const videoMarketingOffer: SalesOfferProps = {
     {
       "title": "CUPRA × Enea Stadion",
       "text": "Spot pokazujący samochód w przestrzeni stadionu. Obejrzyj naszą realizację i zobacz sposób prowadzenia obrazu oraz montażu.",
-      "href": "/realizacje/enea-stadion"
+      "href": "#filmy"
     },
     {
       "title": "Wydarzenia i komunikacja miejsca",
@@ -655,7 +655,7 @@ export const videoMarketingOffer: SalesOfferProps = {
     },
     {
       "title": "Treści video w strategii content marketingowej",
-      "text": "Video marketing to strategia wykorzystania filmu do konkretnego zadania komunikacyjnego. Nie musi zaczynać się od dużej produkcji. Przedsiębiorca i marketer powinni najpierw ustalić pytanie odbiorcy, ofertę i miejsce publikacji. Dopiero później wybieramy temat, ekipę oraz czas nagrań. Materiał video może otwierać rozmowę, wyjaśniać produkt albo wspierać handlowca po spotkaniu. Strategia marketingowa wyznacza cel, a plan filmu przekłada go na scenariusz i sposób wykorzystania. W strategii video marketingowej zapisujemy również, kto zatwierdza fakty oraz jak długo oferta pozostanie aktualna.",
+      "text": "Plan filmu nie musi zaczynać się od dużej produkcji. Najpierw ustalamy z firmą pytanie odbiorcy, ofertę i miejsce publikacji. Dopiero później wybieramy temat, ekipę oraz czas nagrań. Materiał video może otwierać rozmowę, wyjaśniać produkt albo wspierać handlowca po spotkaniu. Strategia marketingowa wyznacza cel, a plan filmu przekłada go na scenariusz i sposób wykorzystania. W strategii video marketingowej zapisujemy również, kto zatwierdza fakty oraz jak długo oferta pozostanie aktualna.",
       "points": [
         "W ramach video marketingu porządkujemy tematy, kanały i odpowiedzialność. Budżet produkcji oraz promocji powinien być znany przed wejściem na plan.",
         "Wspólny plan contentu pozwala przygotować dłuższy film i krótkie fragmenty podczas jednej realizacji, jeżeli scenariusz przewiduje potrzebne kadry."
