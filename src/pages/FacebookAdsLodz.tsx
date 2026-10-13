@@ -1,419 +1,67 @@
-import { SEOHead } from '@/components/seo/SEOHead';
-import { Layout } from "@/components/layout/Layout";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
-import { FadeInView } from "@/components/FadeInView";
-import { ContactSection } from "@/components/sections/ContactSection";
-import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
-import { Link } from "react-router-dom";
+import { SEOHead } from "@/components/seo/SEOHead";
+import { ServiceEditorial } from "@/components/ServiceEditorial";
+
+const path = "/performance-marketing/facebook-ads/lodz";
+const scope = [
+  { title: "Plan kampanii reklamowej", text: "Wybieramy ofertę, cel i grupę docelową. Ustalamy, czy chcesz pozyskiwać zapytania o usługę, promować wydarzenie, czy sprzedawać produkty. Każdy cel potrzebuje innego komunikatu i pomiaru." },
+  { title: "Kreacje na Facebook i Instagram", text: "Przygotowujemy uzgodnione grafiki, teksty i materiały wideo. Format dopasowujemy do miejsca emisji: aktualności, relacji lub Reels. Liczbę wersji i poprawki zapisujemy w wycenie.", href: "/uslugi/video-marketing", link: "Filmy i rolki do reklam" },
+  { title: "Konfiguracja i monitorowanie", text: "Porządkujemy konto reklamowe, budżet, harmonogram i zdarzenia. Sprawdzamy stronę docelową oraz drogę zapytania. Raport łączy dane o reklamie z informacją o jakości kontaktów." },
+];
+const sections = [
+  {
+    title: "Facebook Ads Łódź — reklama dla Twojej firmy",
+    text: "FOTZ Studio prowadzi kampanie dla firm obsługujących Łódź i inne uzgodnione obszary. Pracujemy z Poznania, a brief, akceptację kreacji i omówienie wyników możemy przeprowadzić online. Ewentualną produkcję zdjęć lub filmu na miejscu wyceniamy osobno. Na początku określamy, co chcesz reklamować i dokąd ma trafić odbiorca po kliknięciu. Następnie przygotowujemy zakres prac do zatwierdzenia. Nie wymagamy zamówienia prowadzenia wszystkich profili, aby rozpocząć kampanię.",
+  },
+  {
+    title: "Agencja i firma: plan, harmonogram, odpowiedzialność",
+    text: "Dobra współpraca wymaga ustalenia, kto dostarcza ofertę, akceptuje materiały i odbiera wiadomości. Przed startem prosimy o link do strony, firmowy profil, informacje o produktach oraz wcześniejszych kampaniach. Ty potwierdzasz ceny, dostępność i warunki usługi; my odpowiadamy za uzgodniony zakres przygotowania i obsługi reklamy. Termin uruchomienia zależy od materiałów, dostępów i weryfikacji przez platformę. Samo włączenie emisji nie oznacza jeszcze pozyskania nowych klientów.",
+    points: ["Brief: usługa, obszar obsługi, budżet i oczekiwany rodzaj zapytań.", "Przygotowanie: komunikat, kreacje, strona lub formularz i pomiar.", "Start: akceptacja materiałów, kosztów oraz sposobu obsługi kontaktów.", "Ocena: dane, jakość zgłoszeń i decyzja o następnych testach."],
+  },
+  {
+    title: "Reklamy na Facebooku: Łódź i właściwa grupa odbiorców",
+    text: "Dla lokalnego biznesu ważny jest rzeczywisty obszar obsługi. Salon na Widzewie może potrzebować kontaktów z okolicy, a firma z dojazdem obejmować także Zgierz lub Pabianice. Sklep z siedzibą w Łodzi może sprzedawać w całej Polsce. Zamiast automatycznie zawężać każdą kampanię do miasta, dopasowujemy lokalizację do oferty. Wielkość grupy odbiorców wpływa na możliwości testowania i wydawania budżetu. Ustawienia nie gwarantują dokładnego miejsca zamieszkania każdej osoby; pytania w formularzu pomagają zweryfikować, czy możesz ją obsłużyć.",
+  },
+  {
+    title: "Facebook i Instagram — kreacje dopasowane do grupy docelowej",
+    text: "Reklama powinna pokazać produkt lub usługę, wyjaśnić korzyść i wskazać następny krok. Zdjęcie pomaga ocenić wygląd, karuzela porównać warianty, a krótki film zobaczyć zastosowanie. Z dostępnych typów reklam wybieramy te, do których masz odpowiednie materiały i ofertę. Testujemy uzgodnione warianty komunikatu. Wizerunek Twojej marki powinien być spójny w reklamie i na stronie; nie obiecujemy w kreacji czegoś, czego firma nie dostarcza. Content może powstać z nowych nagrań albo z posiadanych materiałów, po sprawdzeniu praw do wykorzystania.",
+    href: "/uslugi/reklama-facebook", link: "Zobacz zakres kreacji i kampanii Meta",
+  },
+  {
+    title: "Ile kosztuje reklama na Facebooku i Instagramie?",
+    text: "Wycena ma trzy części: obsługę kampanii, przygotowanie materiałów oraz budżet reklamowy płacony platformie Meta. Koszt zależy od liczby produktów, kreacji, kanałów i wymaganych wdrożeń. Uzgadniamy limit wydatków oraz sposób kontroli budżetu; budżet dzienny jest ustawieniem emisji, a nie ceną pozyskania klienta. Nie podajemy jednej stawki za kliknięcie dla całego miasta. Konkurencja, cel, jakość materiałów i zachowanie odbiorców wpływają na wynik. Po poznaniu potrzeb otrzymasz propozycję z zakresem i kosztami do akceptacji.",
+  },
+  {
+    title: "Meta Ads: optymalizacja i pomiar wartościowych zapytań",
+    text: "Najpierw określamy, jakie zdarzenie ma znaczenie dla biznesu. Lead to zgłoszenie, które wymaga dalszej oceny — nie każda wiadomość jest szansą sprzedaży. Sprawdzamy działanie formularza i przekazywanie kontaktu do ustalonego miejsca. Jeśli potrzebna jest integracja z CRM, potwierdzamy jej zakres i wykonujemy test. Konfigurację Piksela Meta lub Conversions API uzgadniamy z administratorem strony i mechanizmem zgód. Raport rozdziela wyświetlenia, kliknięcia, formularze oraz potwierdzoną sprzedaż. Optymalizację reklam opieramy na danych, a nie tylko na najtańszym kliknięciu.",
+    points: ["Kontakt z klientami: kto odpowiada i jak oznacza jakość zgłoszenia.", "Koszt: wydatki na emisję i obsługę pokazane oddzielnie.", "Sprzedaż: wynik weryfikowany po stronie firmy, z uwzględnieniem zwrotów i marży.", "Wnioski: co zmieniamy w kreacji, ofercie lub stronie i dlaczego."],
+  },
+  {
+    title: "Social media a kampania reklamowa — co obejmuje obsługa?",
+    text: "Prowadzenie social media to osobny zakres: plan publikacji, regularne materiały, moderacja i odpowiedzi na komentarze. Kampania płatna nie oznacza automatycznie codziennej obsługi profilu. Możemy połączyć oba zadania, jeśli potrzebujesz spójnej obecności marki w mediach społecznościowych. Wtedy ustalamy, co będziemy publikować, kto akceptuje wpisy i jak obsługiwane są wiadomości. Zasięgi i budowanie rozpoznawalności marki oceniamy oddzielnie od zapytań. Odbiorca może polubić post, nie będąc jeszcze gotowym do zakupu.",
+    href: "/social-media/obsluga", link: "Poznaj zakres obsługi social media",
+  },
+  {
+    title: "Nasze realizacje: reklama i droga do kontaktu",
+    text: "W projekcie Dawid EDU połączyliśmy stronę internetową z kampanią rekrutacyjną Meta Ads. W case study zobaczysz kreacje i opis zakresu dla szkoły, przedszkola oraz edukacji domowej. To przykład pracy naszego zespołu, a nie deklaracja wyniku kampanii dla firm z Łodzi. Fotografie z własnych realizacji pokazują także materiały, które pomagają prezentować markę online. Przed wykorzystaniem konkretnego projektu wyjaśniamy, co wykonaliśmy; nie przypisujemy zdjęciom wyników sprzedażowych.",
+    href: "/realizacje/dawid-edu", link: "Zobacz realizację Dawid EDU",
+  },
+];
+const faqs = [
+  { question: "Jak wybrać agencję Facebook Ads do obsługi firmy z Łodzi?", answer: "Sprawdź zakres realizacji, dostęp do kont, podział kosztów i sposób raportowania. Zapytaj, kto przygotuje materiały i co stanie się ze zgłoszeniem z reklamy. Nasza agencja pracuje z Poznania; współpracę z firmami z Łodzi prowadzimy zdalnie, a zdjęcia lub spotkanie na miejscu uzgadniamy osobno." },
+  { question: "Czy reklamy Facebook Ads sprawdzą się w małej firmie?", answer: "Mogą być sposobem sprawdzenia konkretnej oferty, jeśli firma ma środki na emisję, materiały i obsługę zapytań. Dla małych i średnich firm ważny jest ograniczony, czytelny zakres testu. Nie gwarantujemy opłacalności przed poznaniem marży, popytu i wyników." },
+  { question: "Facebook Ads czy Google Ads — co wybrać?", answer: "Google Ads warto rozważyć, gdy klient aktywnie szuka rozwiązania. Facebook i Instagram pomagają pokazać ofertę odbiorcom podczas korzystania z serwisów społecznościowych. Dobór kanałów zależy od produktu i procesu zakupu. Nie trzeba uruchamiać obu systemów jednocześnie." },
+  { question: "Czy przygotujecie reklamy na Facebooku i Instagramie z moich zdjęć?", answer: "Tak, po ocenie jakości, formatu i możliwości wykorzystania materiałów. Uzgadniamy liczbę kreacji, teksty oraz poprawki. Jeśli potrzebna jest nowa sesja lub nagrania, otrzymasz osobny zakres i koszt produkcji." },
+  { question: "Dlaczego kampania ma kliknięcia, ale nie daje zapytań?", answer: "Sprawdzamy zgodność reklamy z ofertą, stronę docelową, działanie formularza i jakość ruchu. Problem może dotyczyć komunikatu, ceny, zaufania albo kontaktu. Samo zwiększenie budżetu nie rozwiązuje tych przyczyn; najpierw ustalamy, gdzie odbiorca rezygnuje." },
+  { question: "Czy reklama będzie wyświetlana tylko mieszkańcom Łodzi?", answer: "Możemy ustawić uzgodniony obszar kierowania według opcji dostępnych na koncie. Lokalizacja jest sygnałem platformy, dlatego nie stanowi gwarancji adresu zamieszkania. W ofercie i formularzu jasno podajemy obszar usługi, a firma potwierdza możliwość realizacji przy kontakcie." },
+  { question: "Czy przejmiecie istniejące konto reklamowe?", answer: "Możemy rozpocząć od przeglądu po uzyskaniu potrzebnych uprawnień. Konto pozostaje po stronie klienta. Zakres porządkowania kampanii, zdarzeń i materiałów ustalamy po sprawdzeniu stanu; nie potrzebujemy hasła przesłanego w wiadomości." },
+];
 
 export default function FacebookAdsLodz() {
-  const faqItems = [
-    {
-      question: "Ile kosztuje Facebook Ads w Łodzi?",
-      answer: "Facebook Ads (Meta Ads) w Łodzi zaczyna się od 400 zł/miesiąc za zarządzanie kampanią (pakiet START). Dodatkowy budżet reklamowy to osobna pozycja — od 500 zł/miesiąc dla małych firm do 10 000+ zł/miesiąc dla e-commerce i sieci handlowych. Całkowity koszt zależy od branży, docelowej grupy odbiorców i konkurencji na Facebooku w Łodzi.",
-    },
-    {
-      question: "Jak długo trwa uruchomienie kampanii Facebook Ads w Łodzi?",
-      answer: "Kampanię można uruchomić w ciągu 24-48 godzin od podpisania umowy. Obejmuje to: tworzenie spersonalizowanych audiencji dla Łodzi, design kreatywnych reklam, konfigurację campaign structury, ustawienie pixela tracking i wdrożenie. Pierwsze wyniki są widoczne w ciągu kilku dni, pełna optymalizacja trwa 2-4 tygodnie.",
-    },
-    {
-      question: "Czy Facebook Ads są efektywne dla firm z Łodzi?",
-      answer: "Tak — szczególnie dla małych i średnich firm, e-commerce i usług. Łódź to miasto o przyzwoitej liczbie aktywnych użytkowników Facebooka i Instagrama. Możesz targetować ludzi z Łodzi po wieku, zainteresowaniach, zachowaniu. CPC (koszt za kliknięcie) jest niższy niż w Warszawie, a konwersje są efektywne dla usług lokalnych i e-commerce.",
-    },
-    {
-      question: "Czy mogę targetować reklamami tylko Łódź czy całą Polskę?",
-      answer: "Możesz targetować bardzo precyzyjnie — sama Łódź, Łódź plus sąsiednie miasta, lub całą Polskę. To największa zaletą Facebook Ads. Jeśli prowadzisz biznes lokalny (salon fryzjerski, restauracja, klinika), reklamujesz się tylko dla ludzi z Łodzi. Jeśli prowadzisz e-commerce, możesz rozszerzyć na całą Polskę lub poza granicami.",
-    },
-    {
-      question: "Jakie branże najczęściej korzystają z Facebook Ads w Łodzi?",
-      answer: "Najczęściej Facebook Ads korzystają: sklepy internetowe (e-commerce), salony beauty i fryzjerskie, restauracje, usługi konsultingowe, agencje reklamowe, szkoły jezykowe, fitness kluby, gabinety medyczne. Łódź to dynamiczne miasto — każda branża może znaleźć swoją publiczność na Facebooku.",
-    },
-    {
-      question: "Czy Facebook Ads będą efektywne dla mojego e-commerce z Łodzi?",
-      answer: "Tak — Facebook Ads (i Instagram Ads) działają bardzo dobrze dla e-commerce. Możesz sprzedawać na całą Polskę z siedzbą w Łodzi. Łódź to były potentat tekstylny, teraz dynamiczny hub handlu i produkcji. Wiele naszych klientów z Łodzi to sklepy internetowe, które zarabiają 10-30 tyś zł miesięcznie na Facebook Ads.",
-    },
-    {
-      question: "Co to jest Pixel Tracking i czy jest mi potrzebny w Łodzi?",
-      answer: "Pixel Tracking to kod, który instalujesz na stronie i automatycznie rejestruje kliknięcia, zamówienia, zapamiętane artykuły. Umożliwia remarketing (reklamy do osób, które widzieli Twoją stronę) i conversion optimization (Facebook sam optymalizuje kampanie po konwersjach). Pixel jest kluczowy dla dokładnego raportowania ROI kampanii Facebook Ads.",
-    },
-    {
-      question: "Czy mogę konkurować z firmami z Warszawy kampaniami Facebook Ads w Łodzi?",
-      answer: "Tak, ale inną strategią. Firmy z Warszawy mają większy budżet, ale ty znasz lokalny rynek Łodzi lepiej. Twoją strategią powinna być: (1) dominate lokalne słowa kluczowe dla Łodzi (2) skaluj na sąsiednie miasta (3) jeśli e-commerce — skaluj na całą Polskę. W Facebook Ads wygrywa ten, kto ma lepszą strategię i kreatywne reklamy, nie ten z największym budżetem.",
-    },
-  ];
-
-  return (
-    <>
-      <Layout>
-        <SEOHead
-          title="Agencja Facebook Ads Łódź — reklamy Meta dla firm | Fotz.pl"
-          description="Facebook Ads Łódź — agencja Fotz.pl. Kampanie Meta Ads dla firm z Łodzi. Od 400 zł/mies. Bezpłatna konsultacja!"
-          canonical="https://www.fotz-studio.pl/performance-marketing/facebook-ads/lodz"
-          keywords="facebook ads lodz, meta ads lodz, reklamy facebook lodz, agencja facebook ads lodz, kampanie facebook lodz, instagram ads lodz, facebook ads dla firm lodz, reklama na facebooku lodz, meta ads agencja lodz, facebook ads cennik lodz"
-        />
-
-        <ServiceSchema
-          name="Kampanie Facebook Ads Łódź"
-          description="Tworzenie i optymalizacja kampanii Facebook Ads i Meta Ads dla firm z Łodzi. Agencja Fotz.pl — certyfikowani specjaliści reklam Meta."
-          provider="Fotz Studio"
-          areaServed="Lodz"
-        />
-
-        <BreadcrumbSchema items={[
-            { name: "Strona główna", url: "https://www.fotz-studio.pl" },
-            { name: "Kampanie reklamowe", url: "https://www.fotz-studio.pl/performance-marketing" },
-            { name: "Facebook Ads", url: "https://www.fotz-studio.pl/performance-marketing/facebook-ads" },
-            { name: "Facebook Ads Łódź", url: "https://www.fotz-studio.pl/performance-marketing/facebook-ads/lodz" },
-          ]}/>
-
-        <FAQSchema items={faqItems} />
-
-        {/* Breadcrumbs */}
-        <PageBreadcrumbs items={[
-            { name: "Strona główna", path: "/" },
-            { name: "Kampanie reklamowe", path: "/performance-marketing" },
-            { name: "Facebook Ads", path: "/performance-marketing/facebook-ads" },
-            { name: "Łódź", path: "/performance-marketing/facebook-ads/lodz" },
-          ]}/>
-
-        {/* Hero Section */}
-        <section className="relative pt-32 sm:pt-36 md:pt-40 pb-16 md:pb-24 bg-gradient-to-br from-slate-950 via-blue-950 to-sky-900 overflow-hidden">
-          <div className="absolute top-1/4 right-1/3 w-96 h-96 rounded-full bg-sky-500/10 blur-3xl pointer-events-none" />
-          <div className="absolute bottom-0 left-1/4 w-64 h-64 rounded-full bg-blue-500/10 blur-3xl pointer-events-none" />
-
-          <div className="container px-4 relative z-10">
-            <div className="max-w-4xl mx-auto">
-              <div className="text-center mb-12">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-white">
-                  Agencja Facebook Ads Łódź
-                </h1>
-                <p className="text-xl md:text-2xl text-sky-100 mb-8">
-                  Facebook Ads Łódź — profesjonalne kampanie Meta Ads i reklamy Facebook dla firm z Łódź i Centralnej Polski. Zwiększamy sprzedaż, zasięg i ROI dzięki precyzyjnemu targetowaniu. Bezpłatna konsultacja.</p>
-              </div>
-
-              {/* Stats Grid */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-6 text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-sky-300 mb-2">400 zł</div>
-                  <div className="text-sm text-sky-100">Kampanie od</div>
-                </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-6 text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-sky-300 mb-2">24-48h</div>
-                  <div className="text-sm text-sky-100">Wyniki od</div>
-                </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-6 text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-sky-300 mb-2">100%</div>
-                  <div className="text-sm text-sky-100">Certyfikowani</div>
-                </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-6 text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-sky-300 mb-2">Raport</div>
-                  <div className="text-sm text-sky-100">Co miesiąc</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Why Facebook Ads in Lodz */}
-        <FadeInView>
-          <section className="py-16 md:py-24 bg-background">
-            <div className="container px-4">
-              <div className="max-w-3xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold mb-8">
-                  Facebook Ads Łódź — dlaczego warto?
-                </h2>
-                <div className="space-y-6 text-lg text-muted-foreground">
-                  <p>
-                    Łódź to trzecie co do wielkości miasto w Polsce, znane jako była stołica przemysłu tekstylnego. Dzisiaj to dynamiczne centrum e-commerce, produkcji i usług. Populacja 650 tysięcy mieszkańców, ale co najważniejsze — Łódź to hub handlu elektronicznego. Wiele firm z branży e-commerce ma siedziby w Łodzi, gdzie znajdują się magazyny i centra logistyczne.
-                  </p>
-                  <p>
-                    Facebook i Instagram mają ogromne nasycenie użytkowników w Łodzi — szczególnie w wieku 25-55 lat, czyli idealna grupa dla e-commerce i usług. Konkurencja na Facebook Ads jest niższa niż w Warszawie, ale rynek jest aktywny i pozwala na bardzo efektywne kampanie.
-                  </p>
-                  <p>
-                    Łódź przyciąga młodych przedsiębiorców i dynamicznych firm, które szukają tanszej lokalizacji niż Warszawa czy Kraków. Facebook Ads działają szybciej niż SEO — wyniki widoczne w ciągu 24-48 godzin. Możesz szybko przetestować swoją ofertę i skalować kampanię na resztę Polski.
-                  </p>
-                  <p>
-                    Historia tekstylna Łodzi to przychód dla marek odzieżowych, producentów tkanin i usług logistycznych. Manufaktura (dawna manufaktura tekstylna) to teraz hub biznesowy i kulturalny. Firmy, które reklamują się na Facebooku w Łodzi, osiągają niski CPC (koszt za kliknięcie) i wysoką konwersję.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-        </FadeInView>
-
-        {/* Services for Lodz */}
-        <FadeInView>
-          <section className="py-16 md:py-24 bg-secondary/30">
-            <div className="container px-4">
-              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-                Jakie reklamy Facebook Ads robimy dla Łodzi?
-              </h2>
-              <div className="grid md:grid-cols-2 gap-8">
-                <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-3">Kampanie konwersji</h3>
-                  <p className="text-muted-foreground">
-                    Reklamy skierowane na konkretny cel — sprzedaż, leady, zapamiętane artykuły. Facebook optymalizuje sam dostawy do osób, które mogą dokonać konwersji.
-                  </p>
-                </div>
-                <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-3">Kampanie zasięgu i świadomości</h3>
-                  <p className="text-muted-foreground">
-                    Pokazanie marki jak największej liczbie osób z Łodzi. Budowanie świadomości, reach, zapamiętanie nazwy firmy.
-                  </p>
-                </div>
-                <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-3">Kampanie leadów</h3>
-                  <p className="text-muted-foreground">
-                    Zbieranie kontaktów, numery telefonu, emaile. Idealne dla agencji, konsultantów, szkoł jezykowych działających w Łodzi.
-                  </p>
-                </div>
-                <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-3">Remarketing i ROAS kampanie</h3>
-                  <p className="text-muted-foreground">
-                    Reklamy dla osób, które już odwiedzały Twoją stronę lub kliknęły link. Konwersja 3-5x wyższa niż w kampaniach cold.
-                  </p>
-                </div>
-                <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-3">Kampanie katalogowe</h3>
-                  <p className="text-muted-foreground">
-                    Pokazywanie produktów ze zdjęciami i cenami. Obowiązkowe dla e-commerce. Produkty są dynamicznie pokazywane konkretnym osobom.
-                  </p>
-                </div>
-                <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-3">Kampanie niestandardowe</h3>
-                  <p className="text-muted-foreground">
-                    Kampanie na wideo, story, kolekcie, leads form, messaging ads. Każdy format, każdy cel — dopasowujemy do Twojej branży.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-        </FadeInView>
-
-        {/* Process */}
-        <FadeInView>
-          <section className="py-16 md:py-24 bg-background">
-            <div className="container px-4">
-              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-                Jak prowadzimy kampanie Facebook Ads w Łodzi?
-              </h2>
-              <div className="max-w-3xl mx-auto space-y-6">
-                <div className="flex gap-6">
-                  <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white font-bold">1</div>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-2">Brief i analiza</h3>
-                    <p className="text-muted-foreground">
-                      Poznajemy Twoją firmę, branżę, konkurencję w Łodzi i cele kampanii. Jaka jest Twoja docelowa grupa odbiorców? Ile jesteś gotów wydać na kampanię?
-                    </p>
-                  </div>
-                </div>
-                <div className="flex gap-6">
-                  <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white font-bold">2</div>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-2">Segmentacja i audiencje</h3>
-                    <p className="text-muted-foreground">
-                      Tworzymy spersonalizowane audiencje dla Łodzi — wiek, zainteresowania, zachowanie, status kupowania. Łódź to ponad 650 tys. mieszkańców — znajdujemy dla Ciebie idealne 5-10% z nich.
-                    </p>
-                  </div>
-                </div>
-                <div className="flex gap-6">
-                  <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white font-bold">3</div>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-2">Kreatywne i copy</h3>
-                    <p className="text-muted-foreground">
-                      Projektujemy obrazy, filmy, słowa reklam. Reklama musi zwrócić uwagę w newsfeedzie wśród dziesiątek treści. Testujemy różne warianty — tekst, rozmiar, kolorystyka.
-                    </p>
-                  </div>
-                </div>
-                <div className="flex gap-6">
-                  <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white font-bold">4</div>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-2">Wdrożenie i pixel tracking</h3>
-                    <p className="text-muted-foreground">
-                      Uruchamiamy kampanię, konfigurujemy pixel Facebooka na stronie, ustawiamy konwersje i cały mechanizm trackingu. Raportowanie jest automatyczne.
-                    </p>
-                  </div>
-                </div>
-                <div className="flex gap-6">
-                  <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white font-bold">5</div>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-2">Optymalizacja i scaling</h3>
-                    <p className="text-muted-foreground">
-                      Co miesiąc analizujemy wyniki, testujemy nowe kreatywne, optymalizujemy budżety. Jeśli działa — skalujemy. Jeśli nie — zatrzymujemy i próbujemy nowego podejścia.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        </FadeInView>
-
-        {/* Pricing */}
-        <FadeInView>
-          <section className="py-16 md:py-24 bg-secondary/30">
-            <div className="container px-4">
-              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-                Kampanie Facebook Ads Łódź — cennik
-              </h2>
-              <div className="max-w-4xl mx-auto overflow-x-auto">
-                <table className="w-full border-collapse">
-                  <thead>
-                    <tr className="border-b-2 border-border">
-                      <th className="text-left p-4 font-bold">Pakiet</th>
-                      <th className="text-left p-4 font-bold">Cena obsługi</th>
-                      <th className="text-left p-4 font-bold">Budżet reklamowy</th>
-                      <th className="text-left p-4 font-bold">Dla kogo</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="border-b border-border bg-background">
-                      <td className="p-4 font-semibold">START</td>
-                      <td className="p-4">400 zł/mies.</td>
-                      <td className="p-4">500-1500 zł</td>
-                      <td className="p-4">Małe firmy lokalne</td>
-                    </tr>
-                    <tr className="border-b border-border bg-background">
-                      <td className="p-4 font-semibold">GROWTH</td>
-                      <td className="p-4">800 zł/mies.</td>
-                      <td className="p-4">2000-5000 zł</td>
-                      <td className="p-4">Średnie firmy</td>
-                    </tr>
-                    <tr className="border-b border-border bg-background">
-                      <td className="p-4 font-semibold">PRO</td>
-                      <td className="p-4">1500+ zł/mies.</td>
-                      <td className="p-4">5000+ zł</td>
-                      <td className="p-4">E-commerce, sieci</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div className="max-w-3xl mx-auto mt-8 p-6 rounded-lg bg-primary/10 border border-primary/20">
-                <p className="text-sm text-muted-foreground">
-                  <strong className="text-foreground">Każdy pakiet zawiera:</strong> bezpłatną wstępną konsultację, strategię indywidualną, raportowanie miesięczne w Facebooku Ads Manager, dostęp do raportów online, dedykowany email ekspertów oraz nieograniczone testy A/B. Wszystkie pakiety mogą być rozszerzone o dodatkowe usługi.
-                </p>
-              </div>
-            </div>
-          </section>
-        </FadeInView>
-
-        {/* Industries for Lodz */}
-        <FadeInView>
-          <section className="py-16 md:py-24 bg-background">
-            <div className="container px-4">
-              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-                Branże, które korporacyjnie na Facebook Ads w Łodzi
-              </h2>
-              <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-                <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-lg font-bold mb-3">E-commerce i moda</h3>
-                  <p className="text-muted-foreground text-sm">
-                    Łódź to hub e-commerce — tu się produkuje i wysyła. Sklepy internetowe osiągają najlepsze ROI na Facebook Ads ze wszystkich branż w mieście.
-                  </p>
-                </div>
-                <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-lg font-bold mb-3">Salony beauty i fryzjerskie</h3>
-                  <p className="text-muted-foreground text-sm">
-                    Reklamy lokalne, promocje, rezerwacje online. Facebook to idealne miejsce do zbudowania bazy stałych klientów w Łodzi.
-                  </p>
-                </div>
-                <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-lg font-bold mb-3">Restauracje i kawiarnie</h3>
-                  <p className="text-muted-foreground text-sm">
-                    Kampanie promocyjne, Instagram Reels, promowanie menu. Ludzie w Łodzi aktywnie szukają miejsc do jedzenia na Facebooku.
-                  </p>
-                </div>
-                <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-lg font-bold mb-3">Szkoły jezykowe</h3>
-                  <p className="text-muted-foreground text-sm">
-                    Szkoły jezykowe w Łodzi szukają studentów. Facebook Ads idealnie targetuje osoby w wieku 16-40 lat zainteresowane nauką.
-                  </p>
-                </div>
-                <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-lg font-bold mb-3">Agencje marketingowe</h3>
-                  <p className="text-muted-foreground text-sm">
-                    Agencje w Łodzi reklamują się na Facebooku żeby znaleźć nowych klientów — skuteczność 40-60% lepszej niż cold emailing.
-                  </p>
-                </div>
-                <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-lg font-bold mb-3">Fitness i wellness</h3>
-                  <p className="text-muted-foreground text-sm">
-                    Siłownie, fitness kluby, joga — Facebook Ads trafiają do osób zainteresowanych zdrowiem i aktywnością w Łodzi.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-        </FadeInView>
-
-        {/* FAQ */}
-        <FadeInView>
-          <section className="py-16 md:py-24 bg-secondary/30">
-            <div className="container px-4">
-              <div className="max-w-3xl mx-auto">
-                <div className="text-center mb-12">
-                  <h2 className="text-3xl font-bold mb-4">
-                    Najczęstsze pytania — Facebook Ads Łódź
-                  </h2>
-                  <p className="text-muted-foreground">
-                    Odpowiadamy na pytania klientów o kampanie Meta, Facebook Ads i współpracę z agencją.
-                  </p>
-                </div>
-                <div className="space-y-4">
-                  {faqItems.map((item, i) => (
-                    <div
-                      key={i}
-                      className="p-6 rounded-lg border border-border bg-background"
-                    >
-                      <h3 className="font-bold mb-3">{item.question}</h3>
-                      <p className="text-sm text-muted-foreground">{item.answer}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </section>
-        </FadeInView>
-
-        {/* CTA Section */}
-        <ContactSection
-          title="Zaplanuj kampanię Facebook Ads w Łodzi"
-          description="Bezpłatna konsultacja — 30 minut, zero zobowiązań. Omówimy Twoją sytuację, konkurencję w Łodzi i zaproponujemy strategię Facebook Ads, która przyniesie wyniki."
-        />
-
-        {/* Internal Links */}
-        <section className="py-12 border-t border-border/30 bg-card/20">
-          <div className="container mx-auto px-4">
-            <p className="text-center text-sm text-muted-foreground mb-6 font-medium uppercase tracking-wider">Powiązane usługi</p>
-            <div className="flex flex-wrap justify-center gap-3">
-              {[
-                { label: "Facebook Ads Warszawa", to: "/performance-marketing/facebook-ads/warszawa" },
-                { label: "Google Ads Łódź", to: "/performance-marketing/google-ads/lodz" },
-                { label: "Pozycjonowanie Łódź", to: "/uslugi/pozycjonowanie/lodz" },
-                { label: "Strony internetowe", to: "/uslugi/strony-internetowe" },
-                { label: "Social media marketing", to: "/social-media" },
-              ].map((link) => (
-                <Link
-                  key={link.to}
-                  to={link.to}
-                  className="px-4 py-2 rounded-full border border-border/50 text-sm text-muted-foreground hover:border-primary/40 hover:text-primary transition-colors"
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
-      </Layout>
-    </>
-  );
+  return <>
+    <SEOHead title="Facebook i Instagram Ads Łódź — agencja FOTZ" description="Reklama Facebook i Instagram dla firm z Łodzi. Kreacje, kampania, budżet i pomiar zapytań. Zobacz realizacje i ustal zakres zdalnej obsługi FOTZ Studio." canonical={`https://www.fotz-studio.pl${path}`} />
+    <ServiceEditorial path={path} title="Agencja Facebook Ads Łódź — reklamy Meta i social media" eyebrow="FOTZ Studio · kampanie Meta dla firm z Łodzi" area="Łódź" enquiryVariant="meta_ads"
+      lead="Przygotowujemy reklamy na Facebooku i Instagramie: od oferty i kreacji po emisję oraz ocenę zapytań. Ustalmy cel, budżet i obszar obsługi Twojej firmy. Otrzymasz konkretny zakres prac, a koszty materiałów, prowadzenia kampanii i emisji pokażemy oddzielnie."
+      summary={["Pokaż ofertę, profil, stronę i dotychczasowe działania.", "Uzgodnimy odbiorców, materiały, budżet i obsługę zgłoszeń.", "Po akceptacji uruchomimy ustalony zakres i ocenimy dane."]}
+      scopeTitle="Facebook Ads i social media — zakres kampanii" scope={scope} sections={sections} faqs={faqs} workAfterScope />
+  </>;
 }
