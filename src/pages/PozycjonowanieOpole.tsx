@@ -8,7 +8,7 @@ const content = {
   "area": "Opole",
   "workAfterScope": true,
   "enquiryVariant": "ongoing",
-  "lead": "Chcesz, aby klienci z Opola znajdowali Twoją ofertę w Google? Pozycjonowanie Twojej strony zaczynamy od audytu strony, intencji wyszukiwania i sprawdzenia drogi do kontaktu. Łączymy techniczne SEO, optymalizację treści oraz pomiar zapytań. Otrzymujesz plan prac i wycenę dopasowaną do witryny, konkurencji i obszaru sprzedaży.",
+  "lead": "Chcesz, aby klienci z Opola znajdowali Twoją ofertę w Google? Pozycjonowanie Twojej strony zaczynamy od audytu witryny, intencji wyszukiwania i sprawdzenia drogi do kontaktu. Łączymy techniczne SEO, optymalizację treści oraz pomiar zapytań. Otrzymujesz plan prac i wycenę dopasowaną do witryny, konkurencji i obszaru sprzedaży.",
   "summary": [
     "Przesyłasz adres strony, opis usług i rzeczywisty obszar obsługi.",
     "Sprawdzamy widoczność, stan techniczny oraz podstrony istotne dla klientów.",
@@ -102,7 +102,7 @@ const content = {
     },
     {
       "title": "Agencja SEO: jak prowadzimy pozycjonowanie w Opolu?",
-      "text": "Zaczynamy od briefu i dostępów niezbędnych do analizy. Ustalamy najważniejsze usługi, stan witryny oraz osoby odpowiedzialne za treść i wdrożenia. Następnie przygotowujemy kolejność prac, harmonogram i sposób akceptacji. Po wdrożeniu sprawdzamy adresy, treść, formularz oraz dane o indeksowaniu. Regularna współpraca obejmuje uzgodnione zadania, kontrolę wyników i korektę priorytetów. Masz wiedzieć, co zostało wykonane i dlaczego proponujemy następny krok.",
+      "text": "Zaczynamy od briefu i dostępów niezbędnych do analizy. Ustalamy najważniejsze usługi, stan witryny oraz osoby odpowiedzialne za treść i wdrożenia. Następnie przygotowujemy kolejność prac, harmonogram i sposób akceptacji. Po wdrożeniu sprawdzamy adresy, treść, formularz oraz dane o indeksowaniu. Regularna współpraca obejmuje uzgodnione zadania, kontrolę wyników i korektę priorytetów. Wiesz, co zostało wykonane i dlaczego proponujemy następny krok.",
       "points": [
         "Diagnoza: strona, dane i potrzeby biznesowe.",
         "Plan: priorytety, zakres, koszt i odpowiedzialność za wdrożenie.",

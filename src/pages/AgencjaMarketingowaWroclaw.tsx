@@ -47,7 +47,7 @@ const content = {
     },
     {
       "title": "Branding, fotografia i produkcja wideo",
-      "text": "Identyfikacja wizualna, logo oraz materiały reklamowe pomagają utrzymać spójny wizerunek firmy. Tworzymy zdjęcia, rolki i filmy do strony, reklam i social mediów. Scenariusz oraz formaty wynikają z przeznaczenia materiału.",
+      "text": "Identyfikacja wizualna, logo oraz materiały reklamowe pomagają utrzymać spójny wizerunek firmy. Tworzymy zdjęcia, rolki i filmy na stronę, do reklam i mediów społecznościowych. Scenariusz oraz formaty wynikają z przeznaczenia materiału.",
       "href": "/uslugi/branding",
       "link": "Branding i identyfikacja wizualna"
     }
@@ -84,10 +84,10 @@ const content = {
       "link": "Zaplanuj treści dla marki"
     },
     {
-      "title": "Google Ads: kampanie reklamowe i efektywny budżet",
+      "title": "Google Ads i Meta Ads: kampanie reklamowe i efektywny budżet",
       "text": "Przed uruchomieniem kampanii sprawdzamy, dokąd prowadzi reklama i czy można wysłać zapytanie. Rozpisujemy cel, odbiorców, warianty komunikatu oraz budżet emisji. W trakcie działań porównujemy kreacje, zapytania i koszt pozyskania kontaktu. Optymalizacja konwersji może oznaczać uproszczenie formularza, doprecyzowanie oferty albo zmianę strony docelowej. Samo kliknięcie nie świadczy o sprzedaży. Wyniki kampanii zestawiamy z informacją od osoby obsługującej klientów, aby odróżnić wartościowy kontakt od przypadkowego formularza.",
       "href": "/realizacje/dawid-edu",
-      "link": "Dawid EDU: strona i kampania rekrutacyjna"
+      "link": "Dawid EDU: strona i kampania rekrutacyjna Meta Ads"
     },
     {
       "title": "Nasze realizacje: zobacz wykonanie przed rozmową",
@@ -161,7 +161,7 @@ const content = {
 export default function AgencjaMarketingowaWroclaw() {
   return <>
     <SEOHead
-      title="Agencja marketingowa Wrocław — marketing | FOTZ Studio"
+      title="Agencja marketingowa Wrocław — strategie | FOTZ Studio"
       description="Agencja marketingowa dla firm z Wrocławia: SEO, kampanie reklamowe, strony i social media. Poznaj realizacje FOTZ i ustal skuteczny plan marketingu."
       canonical="https://www.fotz-studio.pl/agencja-marketingowa/wroclaw"
     />
