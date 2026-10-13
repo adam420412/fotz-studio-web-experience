@@ -15,7 +15,7 @@ const content = {
   "scope": [
     {
       "title": "Indeksowanie w Google",
-      "text": "Widoczność strony w wynikach wyszukiwania, mapy witryny, inspekcja wybranych adresów i daty skanowania. Sprawdzamy, które wykluczenia są zamierzone, a które dotyczą ważnej oferty."
+      "text": "Raporty Search Console o indeksowaniu, mapy witryny, inspekcja wybranych adresów i daty skanowania. Sprawdzamy, które wykluczenia są zamierzone, a które dotyczą ważnej oferty."
     },
     {
       "title": "Dostępność techniczna",
@@ -23,7 +23,7 @@ const content = {
     },
     {
       "title": "Treść i intencja",
-      "text": "Temat podstrony, konkretna odpowiedź na pytanie klienta, nagłówki, tytuł i opis. Szukamy niespójności, braków oraz stron konkurujących o ten sam cel."
+      "text": "Analiza treści pod kątem SEO: temat podstrony, odpowiedź na pytanie klienta, nagłówki, tytuł i opis. Szukamy niespójności, braków oraz stron konkurujących o ten sam cel."
     },
     {
       "title": "Struktura strony i linkowanie",
@@ -44,8 +44,8 @@ const content = {
       "text": "Audyt strony internetowej porządkuje odpowiedź na trzy pytania: czy wyszukiwarka może odczytać ofertę, czy treść odpowiada potrzebom odbiorcy i czy odwiedzający potrafi wykonać następny krok. Warto przeprowadzić audyt SEO przed migracją, po spadku wejść albo wtedy, gdy publikowane materiały nie przynoszą zapytań. Profesjonalny audyt SEO nie polega na zebraniu wszystkich czerwonych komunikatów. Rozdziela przyczyny od objawów i wskazuje, które zmiany mają znaczenie dla ważnych podstron. Jeżeli chcesz poprawić widoczność swojej strony, zacznij od diagnozy konkretnego problemu, zamiast od przebudowy wszystkiego naraz."
     },
     {
-      "title": "Darmowy audyt SEO online czy profesjonalny audyt?",
-      "text": "Darmowy audyt SEO może szybko wskazać brak tytułu, uszkodzony link albo ciężki obraz. Darmowy audyt SEO strony internetowej jest przydatny jako pierwszy przegląd. Sprawdzenie strony pod kątem SEO według pojedynczych reguł nie obejmuje jednak oceny całej oferty. Nie zna jednak marży firmy, jakości zapytań ani przyczyn wcześniejszych zmian. Specjalista SEO weryfikuje ostrzeżenia na działającej witrynie i ocenia ich znaczenie dla biznesu. Płatny audyt SEO obejmuje uzgodnioną analizę, interpretację i zalecenia. W FOTZ Studio najpierw wyceniamy zakres; rozmowa o potrzebach nie jest wykonaniem pełnego raportu. Jeśli masz już bezpłatny audyt, możesz dołączyć go do briefu jako materiał pomocniczy."
+      "title": "Darmowy audyt SEO online a profesjonalny audyt SEO",
+      "text": "Automatyczne narzędzie szybko wskaże brak tytułu, uszkodzony link albo ciężki obraz i jest przydatne jako pierwszy przegląd. Nie zna jednak marży firmy, jakości zapytań ani przyczyn wcześniejszych zmian. Specjalista SEO weryfikuje ostrzeżenia na działającej witrynie i ocenia ich znaczenie dla biznesu. Płatny audyt SEO obejmuje uzgodnioną analizę, interpretację i zalecenia. W FOTZ Studio najpierw wyceniamy zakres; rozmowa o potrzebach nie jest wykonaniem pełnego raportu. Jeśli masz już bezpłatny audyt, możesz dołączyć go do briefu jako materiał pomocniczy."
     },
     {
       "title": "Wyniki audytu SEO: raport, priorytety i odbiór",
@@ -63,7 +63,7 @@ const content = {
     },
     {
       "title": "Google Search Console: widoczność strony i indeksowanie",
-      "text": "Weryfikujemy właściwą domenę, zakres raportu i daty. Strona z przekierowaniem albo celowym noindex nie musi być błędem. Przy adresie zeskanowanym, lecz niezindeksowanym, analizujemy treść, duplikaty i linkowanie. Po naprawie sprawdzamy produkcję; zgłoszenie URL-a lub rozpoczęcie weryfikacji nie oznacza jeszcze, że Google ponownie go odwiedził. Roboty Google mogą odwiedzić URL, ale nie umieścić go w indeksie. Dlatego widoczność strony w Google oceniamy osobno od dostępności technicznej. Odczyt raportu zapisujemy z datą: starszy przykład wykluczenia nie zawsze opisuje obecny stan strony."
+      "text": "Weryfikujemy właściwą domenę, zakres raportu i daty. Strona z przekierowaniem albo celowym noindex nie musi być błędem. Przy adresie zeskanowanym, lecz niezindeksowanym, analizujemy treść, duplikaty i linkowanie. Po naprawie sprawdzamy produkcję; zgłoszenie URL-a lub rozpoczęcie weryfikacji nie oznacza jeszcze, że Google ponownie go odwiedził. Roboty Google mogą odwiedzić URL, ale nie umieścić go w indeksie. Dlatego widoczność strony w Google oceniamy osobno od dostępności technicznej. Stan strony i odczyt raportu zapisujemy z datą: starszy przykład wykluczenia nie zawsze opisuje obecny stan strony."
     },
     {
       "title": "Kompleksowy audyt SEO sklepu internetowego i lokalnych usług",
@@ -99,7 +99,7 @@ const content = {
     },
     {
       "title": "Jak poprawić widoczność strony po audycie SEO?",
-      "text": "Przed wdrożeniem zapisujemy punkt odniesienia: daty, wybrane adresy, kliknięcia i zapytania. Po publikacji kontrolujemy działanie strony, a następnie obserwujemy widoczność w wyszukiwarce i ruch na tych samych podstronach. Porównanie musi uwzględniać sezonowość, zmianę oferty i kampanie płatne. Pozycję strony w wynikach wyszukiwania warto analizować dla konkretnych zapytań; średnia dla całej domeny może ukryć zmianę ważnej usługi. Wynik pojedynczego narzędzia nie potwierdza pozyskania klienta. Jeżeli celem jest sprzedaż, potrzebujemy również informacji, które kontakty okazały się wartościowe. Taka ocena pomaga wybrać następny etap działań SEO. Widoczność strony w wyszukiwarce nie jest stałą cechą witryny: zależy również od zmian konkurencji, zapytań i tego, jak aktualna jest oferta."
+      "text": "Przed wdrożeniem zapisujemy punkt odniesienia: daty, wybrane adresy, widoczność strony w wynikach wyszukiwania, kliknięcia i zapytania. Po publikacji kontrolujemy działanie strony, a następnie obserwujemy widoczność w wyszukiwarce i ruch na tych samych podstronach. Porównanie musi uwzględniać sezonowość, zmianę oferty i kampanie płatne. Pozycję strony w wynikach wyszukiwania warto analizować dla konkretnych zapytań; średnia dla całej domeny może ukryć zmianę ważnej usługi. Wynik pojedynczego narzędzia nie potwierdza pozyskania klienta. Jeżeli celem jest sprzedaż, potrzebujemy również informacji, które kontakty okazały się wartościowe. Taka ocena pomaga wybrać następny etap działań SEO. Widoczność strony w wyszukiwarce nie jest stałą cechą witryny: zależy również od zmian konkurencji, zapytań i tego, jak aktualna jest oferta."
     }
   ],
   "faqs": [
@@ -136,12 +136,12 @@ const content = {
       "answer": "Sprawdzamy dostępność treści, indeksowanie, jednoznaczność informacji o firmie i odpowiedzi na pytania klientów. To wspólne podstawy przydatne dla wyszukiwarek oraz systemów korzystających ze źródeł internetowych. Sam audyt ani specjalny znacznik nie gwarantują cytowania firmy w odpowiedzi AI."
     },
     {
-      "question": "Czy mogę samodzielnie wykonać audyt SEO online?",
-      "answer": "Możesz zacząć od raportów własnej witryny w Search Console oraz testu najważniejszych adresów na telefonie. Zapisz problemy i daty zmian. Darmowy audyt SEO online uzupełni tę listę o techniczne sygnały. Gdy nie wiesz, co oznacza wynik lub jakie ryzyko niesie poprawka, warto zlecić audyt SEO obejmujący interpretację i kolejność wdrożeń."
+      "question": "Czy darmowy audyt SEO strony internetowej wystarczy na początek?",
+      "answer": "Możesz zacząć od raportów własnej witryny w Search Console oraz testu najważniejszych adresów na telefonie. Zapisz problemy i daty zmian. Automatyczny skan uzupełni tę listę o techniczne sygnały. Gdy nie wiesz, co oznacza wynik lub jakie ryzyko niesie poprawka, warto zlecić audyt SEO obejmujący interpretację i kolejność wdrożeń."
     },
     {
       "question": "Kiedy warto zamówić audyt całej domeny?",
-      "answer": "Nie w każdym przypadku. Szczegółowy audyt SEO jednej ścieżki może wystarczyć, gdy problem dotyczy ważnej oferty lub migracji wybranego katalogu. Kompleksowy audyt ma sens, gdy objawy występują w wielu szablonach albo nie znamy źródła spadku. Zakres audytu SEO zależy od wielkości i złożoności strony oraz dostępnych danych. Najpierw ustalamy analizę strony internetowej odpowiadającą na rzeczywisty problem, potem dobieramy narzędzia i próbkę adresów."
+      "answer": "Gdy objawy występują na wielu ważnych podstronach. Szczegółowy audyt SEO jednej ścieżki może wystarczyć, gdy problem dotyczy ważnej oferty lub migracji wybranego katalogu. Kompleksowy audyt ma sens, gdy objawy występują w wielu szablonach albo nie znamy źródła spadku. Zakres audytu SEO zależy od wielkości i złożoności strony oraz dostępnych danych. Najpierw ustalamy analizę strony internetowej odpowiadającą na rzeczywisty problem, potem dobieramy narzędzia i próbkę adresów."
     },
     {
       "question": "Kto wdraża zalecenia i czy można podzielić pracę na etapy?",
