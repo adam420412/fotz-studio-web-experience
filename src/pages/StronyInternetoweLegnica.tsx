@@ -91,7 +91,7 @@ const sections = [
   },
   {
     "title": "Jak rozwijać stronę na podstawie danych?",
-    "text": "Po starcie warto zapisać punkt odniesienia: ruch, źródła wejść, najczęstsze pytania i zapytania z formularza. Strategie rozwoju powinny odpowiadać na te informacje. Jeśli użytkownicy nie rozumieją zakresu, poprawiamy ofertę. Jeśli rezygnują na telefonie, sprawdzamy działanie strony i czas ładowania na telefonie. Jeśli potrzebują porównania, dodajemy konkretne warianty i realizacje. Chcąc zwiększyć widoczność swojej strony, warto łączyć analizę techniczną z rzetelną treścią. Utrzymanie i rozwój Twojej strony internetowej można rozplanować według priorytetów, możliwości zespołu i budżetu."
+    "text": "Po starcie warto zapisać punkt odniesienia: ruch, źródła wejść, najczęstsze pytania i zapytania z formularza. Strategie rozwoju powinny odpowiadać na te informacje. Jeśli użytkownicy nie rozumieją zakresu, poprawiamy ofertę. Jeśli rezygnują na telefonie, sprawdzamy działanie i czas ładowania strony. Jeśli potrzebują porównania, dodajemy konkretne warianty i realizacje. Chcąc zwiększyć widoczność swojej strony, warto łączyć analizę techniczną z rzetelną treścią. Utrzymanie i rozwój Twojej strony internetowej można rozplanować według priorytetów, możliwości zespołu i budżetu."
   },
   {
     "title": "Legnica i okolice — współpraca online i zakres SEO",

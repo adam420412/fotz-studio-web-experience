@@ -29,3 +29,5 @@ Końcowe wyrenderowane oferty z rzeczywistymi title i description zapisano w edy
 Przyjęto prośbę o indeksację Facebook Ads Warszawa po publikacji PR62. Potwierdzenie i zrzut zapisano w output/lead-audit-2026-10-15/seo-legnica-photo/gsc-facebook-warsaw-requested.*. To przyjęcie do kolejki, nie potwierdzenie indeksacji Warszawy.
 
 Materiały i logi: output/lead-audit-2026-10-15/seo-legnica-photo/. Dawna nazwa Google Ads została sprawdzona w [oficjalnej pomocy Google](https://support.google.com/google-ads/answer/9028765?hl=en).
+
+Uzupełniający przegląd PR62 potwierdził brak regresji oraz zamknięcie uwag P1/P2. Uwzględniono dodatkowe korekty P3: usunięcie powtórzenia „na telefonie” i przeniesienie sekcji B2B za opis pozyskiwania leadów, z precyzyjnym opisem kosztu kontaktu zakończonego ofertą. Aktualny PR63 przekazano Claude do odczytowej kontroli.

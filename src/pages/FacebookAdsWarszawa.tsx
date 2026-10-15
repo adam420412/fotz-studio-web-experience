@@ -24,7 +24,6 @@ const data = {
     }
   ],
   "sections": [
-    {"title":"Kampanie Meta Ads dla B2B — branża i proces sprzedaży","text":"W usługach B2B reklama często rozpoczyna rozmowę, a decyzja zapada po wycenie, konsultacji lub porównaniu dostawców. Dlatego cel kampanii ustalamy razem ze sposobem kwalifikowania kontaktów. Formularz może pytać o rodzaj firmy, potrzebny zakres i planowany termin. Zbyt wiele pól utrudnia wysłanie zapytania; zbyt mało może oznaczać rozmowy z osobami, którym oferta nie odpowiada. Dobieramy pytania do etapu sprzedaży. Kreacja powinna pokazać konkretne zastosowanie, produkt albo realizację i wyjaśnić, do kogo jest skierowana. W raporcie oddzielamy zgłoszenia od kontaktów pasujących do oferty. Jeśli firma zapisuje wynik rozmowy, można porównać koszt pozyskania takiego kontaktu z liczbą przygotowanych ofert. Branża wpływa również na sezonowość i długość decyzji. Przed testem ustalamy więc czas obserwacji i dane, które przekaże zespół sprzedaży. Dzięki temu ocena reklamy w mediach społecznościowych odnosi się do Twojego biznesu."},
     {
       "title": "Agencja Meta Ads — kampanie dla firm z Warszawy",
       "text": "Tworzymy kampanie Facebook i Instagram od oferty po pomiar. FOTZ Studio pracuje z Poznania; współpracę z firmami z Warszawy prowadzimy zdalnie. Brief, akceptację materiałów i omówienie wyników można przeprowadzić online. Sesję, nagrania lub spotkanie na miejscu uzgadniamy oddzielnie. Na początku wybieramy jedną ofertę lub grupę produktów i ustalamy, jaki problem potencjalnych klientów rozwiązuje. Dzięki temu reklama, strona docelowa oraz rozmowa z firmą przekazują spójne informacje."
@@ -52,6 +51,10 @@ const data = {
         "Pomiar: które zdarzenia są rejestrowane i co oznaczają.",
         "Ocena: liczba zgłoszeń, ich jakość i potwierdzona sprzedaż."
       ]
+    },
+    {
+      "title": "Kampanie Meta Ads dla B2B — branża i proces sprzedaży",
+      "text": "W usługach B2B reklama często rozpoczyna rozmowę, a decyzja zapada po wycenie, konsultacji lub porównaniu dostawców. Dlatego cel kampanii ustalamy razem ze sposobem kwalifikowania kontaktów. Formularz może pytać o rodzaj firmy, potrzebny zakres i planowany termin. Zbyt wiele pól utrudnia wysłanie zapytania; zbyt mało może oznaczać rozmowy z osobami, którym oferta nie odpowiada. Dobieramy pytania do etapu sprzedaży. Kreacja powinna pokazać konkretne zastosowanie, produkt albo realizację i wyjaśnić, do kogo jest skierowana. W raporcie oddzielamy zgłoszenia od kontaktów pasujących do oferty. Jeśli firma zapisuje wynik rozmowy, można policzyć koszt pozyskania kontaktu, który zakończył się ofertą. Branża wpływa również na sezonowość i długość decyzji. Przed testem ustalamy więc czas obserwacji i dane, które przekaże zespół sprzedaży. Dzięki temu ocena reklamy w mediach społecznościowych odnosi się do Twojego biznesu."
     },
     {
       "title": "Koszt kampanii Facebook i budżet reklamowy",
