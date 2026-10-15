@@ -25,6 +25,7 @@ export const hydratedPages: Record<string, () => Promise<{ default: ComponentTyp
   "/seo/audyt": () => import("@/pages/AudytSEO"),
   "/agencja-marketingowa/warszawa": () => import("@/pages/AgencjaMarketingowaWarszawa"),
   "/performance-marketing/facebook-ads/lodz": () => import("@/pages/FacebookAdsLodz"),
+  "/performance-marketing/facebook-ads/warszawa": () => import("@/pages/FacebookAdsWarszawa"),
   "/agencja-marketingowa/poznan": () => import("@/pages/AgencjaMarketingowaPoznan"),
   "/agencja-marketingowa-opole": () => import("@/pages/AgencjaMarketingowaOpole"),
   "/agencja-marketingowa/wroclaw": () => import("@/pages/AgencjaMarketingowaWroclaw"),

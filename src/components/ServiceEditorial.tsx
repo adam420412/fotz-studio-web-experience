@@ -27,10 +27,11 @@ interface ServiceEditorialProps {
   scope: EditorialSection[];
   sections: EditorialSection[];
   faqs: { question: string; answer: string }[];
+  faqTitle?: string;
 }
 
 /** Shared presentation; each offer keeps its own scope, evidence and answers. */
-export function ServiceEditorial({ title, eyebrow, lead, path, area = "Polska", workAfterScope = false, enquiryVariant, summary, scopeTitle, scope, sections, faqs }: ServiceEditorialProps) {
+export function ServiceEditorial({ title, eyebrow, lead, path, area = "Polska", workAfterScope = false, enquiryVariant, summary, scopeTitle, scope, sections, faqs, faqTitle = "Przed rozpoczęciem współpracy" }: ServiceEditorialProps) {
   const contactHref = enquiryHref(serviceForPath(path), enquiryVariant);
   return <Layout workPlacement={workAfterScope ? "manual" : "end"}>
     <BreadcrumbSchema items={[{ name: "Strona główna", url: "/" }, { name: "Usługi", url: "/uslugi" }, { name: title, url: path }]} />
@@ -78,7 +79,7 @@ export function ServiceEditorial({ title, eyebrow, lead, path, area = "Polska", 
     </div>
 
     <section className="container-wide max-w-4xl px-6 md:px-12 pb-12 md:pb-16" aria-labelledby="faq-title">
-      <h2 id="faq-title" className="text-3xl font-heading mb-7">Przed rozpoczęciem współpracy</h2>
+      <h2 id="faq-title" className="text-3xl font-heading mb-7">{faqTitle}</h2>
       <div className="divide-y divide-border border-y border-border">{faqs.map(item => <details key={item.question} className="group py-5"><summary className="cursor-pointer font-medium text-lg pr-5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary">{item.question}</summary><p className="text-muted-foreground leading-relaxed pt-4">{item.answer}</p></details>)}</div>
     </section>
 

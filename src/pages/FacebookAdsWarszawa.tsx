@@ -1,543 +1,131 @@
 import { SEOHead } from "@/components/seo/SEOHead";
-import { Layout } from "@/components/layout/Layout";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
-import { FadeInView } from "@/components/FadeInView";
-import { ContactSection } from "@/components/sections/ContactSection";
-import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
-import { Link } from "react-router-dom";
+import { ServiceEditorial } from "@/components/ServiceEditorial";
+
+const data = {
+  "path": "/performance-marketing/facebook-ads/warszawa",
+  "title": "Facebook Ads Warszawa — agencja kampanii Meta Ads | FOTZ",
+  "description": "Kampanie Facebook i Instagram Ads dla firm z Warszawy. Kreacje, budżet, remarketing i pomiar zapytań. Poznaj FOTZ i zapytaj o zakres oraz wycenę.",
+  "h1": "Agencja Facebook Ads Warszawa — kampanie Meta i social media",
+  "lead": "Połączmy reklamę na Facebooku i Instagramie z ofertą, która jasno prowadzi do kontaktu. Przygotujemy kreacje, uzgodnimy budżet i sprawdzimy drogę zapytania. Koszt obsługi, materiałów i emisji poznasz przed startem.",
+  "scope": [
+    {
+      "title": "Cel kampanii i oferta",
+      "text": "Ustalamy, jakie kontakty lub zamówienia chcesz pozyskiwać. Dobieramy grupę docelową, obszar obsługi i stronę, na którą trafi odbiorca. Potrzebujemy informacji o produkcie, dostępności i sposobie sprzedaży."
+    },
+    {
+      "title": "Kreacje reklamowe",
+      "text": "Przygotowujemy uzgodnione teksty, grafiki, zdjęcia i wideo. Dobieramy formaty do miejsc emisji i sposobu prezentacji marki. Liczbę wariantów, poprawki i produkcję nowych materiałów zapisujemy w wycenie.",
+      "href": "/uslugi/video-marketing",
+      "link": "Filmy i rolki do reklam"
+    },
+    {
+      "title": "Emisja, pomiar i wnioski",
+      "text": "Konfigurujemy kampanię, kontrolujemy wydatki i oceniamy jakość zapytań. Raport rozdziela działania, koszt reklamy i wyniki. Uzgadniamy, kto odpowiada za obsługę kontaktów oraz informację o sprzedaży."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Agencja Meta Ads — kampanie dla firm z Warszawy",
+      "text": "Tworzymy kampanie Facebook i Instagram od oferty po pomiar. FOTZ Studio pracuje z Poznania; współpracę z firmami z Warszawy prowadzimy zdalnie. Brief, akceptację materiałów i omówienie wyników można przeprowadzić online. Sesję, nagrania lub spotkanie na miejscu uzgadniamy oddzielnie. Nasz zespół nie deklaruje warszawskiego biura. Na początku wybieramy jedną ofertę lub grupę produktów i ustalamy, jaki problem potencjalnych klientów rozwiązuje. Dzięki temu reklama, strona docelowa oraz rozmowa z firmą przekazują spójne informacje."
+    },
+    {
+      "title": "Czym jest Facebook Ads i jak działa system reklamowy Meta?",
+      "text": "Facebook Ads to płatny sposób prezentacji oferty w ekosystemie Meta. Facebook i Instagram pozwalają wykorzystać obraz, tekst oraz film do pokazania produktu lub usługi. System reklamowy Meta pomaga dobierać emisję do wskazanego celu, ale nie zastępuje strategii i obsługi klienta. Typ kampanii zależy od tego, czy zależy Ci na rozpoznawalności, zapytaniach czy zakupach. Specjalista powinien wyjaśnić wybór ustawień oraz sposób oceny. Nie przyjmujemy, że duży zasięg automatycznie oznacza sprzedażowy sukces."
+    },
+    {
+      "title": "Reklama na Facebooku — grupa odbiorców i obszar obsługi",
+      "text": "Firma usługowa z dojazdem potrzebuje innego zasięgu niż sklep internetowy sprzedający w całej Polsce. Uzgadniamy lokalizację, ograniczenia oferty i możliwości obsługi zgłoszeń. Jeśli przyjmujesz zlecenia także w Piasecznie lub Pruszkowie, warto podać to w ofercie i formularzu. To przykład planowania, a nie lista naszych klientów. Targetowanie jest oparte na opcjach i sygnałach platformy; nie gwarantuje miejsca zamieszkania każdej osoby. Pytania o usługę i lokalizację pomagają zweryfikować, czy kontakt pasuje do Twojego biznesu."
+    },
+    {
+      "title": "Facebook i Instagram — kreacje dopasowane do marki",
+      "text": "Zdjęcie pozwala ocenić detal, karuzela porównać warianty, a krótki film pokazuje produkt w użyciu. Komunikat powinien jasno wyjaśniać korzyść i następny krok. Dobieramy kreacje do grupy docelowej oraz etapu decyzji. Styl wizualny pozostaje zgodny ze stroną i profilami firmy. Test może porównywać argument, ujęcie albo wezwanie do kontaktu; zakres wersji ustalamy przed produkcją. Nie wystarczy angażować widza, jeśli reklama obiecuje coś innego niż oferta. Materiały publikujemy po akceptacji i sprawdzeniu możliwości ich wykorzystania.",
+      "href": "/uslugi/reklama-facebook",
+      "link": "Zobacz pełną ofertę kreacji i kampanii"
+    },
+    {
+      "title": "Pozyskiwanie leadów: formularz, strona i kontakt",
+      "text": "Lead to zgłoszenie, które trzeba ocenić i obsłużyć. Dobór celu kampanii poprzedzamy sprawdzeniem drogi odbiorcy: czy rozumie zakres, widzi realizacje i może wygodnie skontaktować się na telefonie. Formularz na stronie lub w Meta wymaga ustalenia miejsca odbioru kontaktów. Integrację z CRM wyceniamy osobno i potwierdzamy testem po wdrożeniu. Kliknięcie, wysłanie formularza i podpisana umowa są różnymi zdarzeniami. Razem z firmą określamy, jak oznaczać wartościowe zapytania i na jakiej podstawie oceniać efekty kampanii.",
+      "points": [
+        "Oferta: co klient otrzyma, za jakie pieniądze i na jakich warunkach.",
+        "Kontakt: kto odpowiada oraz gdzie zapisuje wynik rozmowy.",
+        "Pomiar: które zdarzenia są rejestrowane i co oznaczają.",
+        "Ocena: liczba zgłoszeń, ich jakość i potwierdzona sprzedaż."
+      ]
+    },
+    {
+      "title": "Cennik kampanii Facebook i budżet reklamowy",
+      "text": "Wycena ma trzy części: materiały, prowadzenie kampanii i budżet emisji płacony platformie. Koszt zależy od liczby ofert, kreacji, integracji oraz częstotliwości pracy. Przed startem ustalamy limit wydatków i zasady jego zmiany. Cennik z jedną stawką za wszystkie branże nie uwzględnia tych różnic. Nie obiecujemy stałego CPC dla Warszawy ani określonego ROAS. ROAS porównuje przychód przypisany reklamie z wydatkiem na emisję; pełny zwrot z inwestycji wymaga uwzględnienia również marży, zwrotów i kosztów obsługi. Budżet zwiększamy dopiero po uzgodnieniu decyzji."
+    },
+    {
+      "title": "Optymalizacja kampanii Facebook Ads i konwersja",
+      "text": "Sprawdzamy zdarzenia, stronę docelową oraz zgodność reklamy z ofertą. Wdrożenie Piksela Meta lub Conversions API uzgadniamy z administratorem strony i mechanizmem zgód. Google Analytics może uzupełnić analizę ruchu, lecz różne narzędzia mogą przypisywać wynik inaczej. Specjalista zajmujący się optymalizacją kampanii powinien pokazać, co zmienia i dlaczego. Analizujemy dane oraz informacje od firmy o jakości kontaktów. Wymierny wynik biznesowy to coś więcej niż tanie kliknięcie. Nie deklarujemy efektów po 48 godzinach ani automatycznego wzrostu w każdym miesiącu."
+    },
+    {
+      "title": "Remarketing i rozpoznawalność marki",
+      "text": "Nowy odbiorca potrzebuje wyjaśnienia, czym jest produkt i dlaczego warto go rozważyć. Osoba znająca ofertę może szukać porównania, demonstracji lub odpowiedzi na pytanie. Remarketing rozważamy wtedy, gdy są odpowiednie dane, zgody i wystarczająca wielkość grup odbiorców. Nie jest obowiązkowym składnikiem każdego projektu. Kontrolujemy częstotliwość emisji i dobieramy komunikaty do celu. Rozpoznawalność marki oceniamy oddzielnie od zapytań. Strategie reklamowe powinny uwzględniać czas decyzji oraz zasoby firmy."
+    },
+    {
+      "title": "Agencja social media Warszawa — jak współpracować zdalnie?",
+      "text": "Prowadzenie social media obejmuje uzgodniony plan publikacji, materiały i ewentualną moderację. Kampanie płatne skupiają się na emisji i jej ocenie. Jako agencja social media obsługująca klientów zdalnie możemy połączyć oba zakresy, ale rozpisujemy je osobno. Ustalamy kanały, liczbę materiałów, akceptacje i odpowiedzialność za wiadomości. Marketing w mediach społecznościowych ma wspierać ofertę firmy; reakcje i obserwujący nie są równoznaczni z klientami. Jeśli chcesz współpracować tylko przy wybranej kampanii, nie musisz zamawiać codziennej obsługi wszystkich profili.",
+      "href": "/social-media/obsluga",
+      "link": "Zakres obsługi social media"
+    },
+    {
+      "title": "Google Ads, Meta Ads i e-commerce — dobór kanałów",
+      "text": "Google Ads można rozważyć, gdy odbiorcy aktywnie szukają rozwiązania. Meta pomaga pokazać ofertę podczas korzystania z serwisów społecznościowych. Dla sklepu internetowego sprawdzamy również prezentację produktów, koszyk oraz warunki dostawy. Inne kanały, takie jak TikTok Ads czy LinkedIn, wymagają własnych materiałów i uzasadnienia biznesowego. Nie przenosimy automatycznie jednej reklamy do każdego systemu. Zaczynamy od priorytetu, który można obsłużyć i zmierzyć; kolejne działania marketingowe wyceniamy po ustaleniu zakresu."
+    },
+    {
+      "title": "Case study: Dawid EDU i droga do zapytania",
+      "text": "W projekcie Dawid EDU połączyliśmy stronę internetową z kampanią rekrutacyjną Meta Ads. W opisie realizacji pokazujemy zakres kreacji oraz ścieżkę kontaktu dla szkoły, przedszkola i edukacji domowej. To przykład wykonanych zadań, nie lista klientów z Warszawy ani gwarancja podobnych wyników. Nasze portfolio zawiera także fotografie i produkcje wideo. Możesz sprawdzić sposób prezentowania miejsc, wydarzeń i marek, zanim zlecisz własne materiały.",
+      "href": "/realizacje/dawid-edu",
+      "link": "Zobacz realizację Dawid EDU"
+    },
+    {
+      "title": "Jak prowadzić kampanie i zwiększać skalę?",
+      "text": "Najpierw oceniamy jakość kontaktów, koszt ich obsługi i możliwości realizacji zamówień. Skuteczne kampanie potrzebują spójnej oferty oraz odpowiedzi na zgłoszenia. Potencjał reklamy sprawdzamy w uzgodnionym teście. Zwiększenie wydatków nie musi oznaczać proporcjonalnego wzrostu sprzedaży. Zmianę skali poprzedzamy analizą wyników i zatwierdzeniem budżetu przez firmę."
+    },
+    {
+      "title": "Konto reklamowe, dostępy i odpowiedzialność",
+      "text": "Współpracę zaczynamy od ustalenia właściciela zasobów i potrzebnych uprawnień. Firma zachowuje kontrolę nad kontem, profilem oraz danymi. Nie potrzebujemy prywatnego hasła przekazanego w wiadomości. Jeśli konto ma wcześniejsze kampanie, sprawdzamy ich strukturę, zdarzenia i materiały w uzgodnionym zakresie. Dostępy do narzędzi Meta Business oraz sposób przekazania konfiguracji po zakończeniu współpracy opisujemy przed startem. Ustalamy także, kto zatwierdza reklamę, kto płaci za emisję i kto reaguje na problemy z kontem. Takie zasady pomagają prowadzić kampanie bez niejasnego podziału odpowiedzialności."
+    },
+    {
+      "title": "Jak porównać propozycje agencji?",
+      "text": "Nie każda oferta obsługi zawiera produkcję wideo, przebudowę strony i integrację formularza. Zanim porównasz ceny, zestaw liczbę kreacji, zakres konfiguracji, częstotliwość pracy i raportowanie. Sprawdź, czy specjalista wyjaśnia dobór celu kampanii oraz zasady kontroli wydatków. Dobra propozycja powinna także wskazywać materiały i decyzje potrzebne od Ciebie. Agencja social media w Warszawie może realizować projekt lokalnie albo zdalnie; o jakości współpracy decyduje konkretny proces i potwierdzone realizacje. Nasze warunki, koszty produkcji oraz termin akceptujesz przed rozpoczęciem prac. Dodatkowe zadania wymagają wcześniejszego uzgodnienia."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Jak wybrać agencję Facebook Ads dla firmy z Warszawy?",
+      "answer": "Porównaj zakres, przykłady realizacji, podział kosztów i sposób raportowania. Zapytaj, kto wykona materiały i odbierze zgłoszenia. FOTZ Studio pracuje z Poznania; obsługę prowadzimy zdalnie, a produkcję na miejscu uzgadniamy oddzielnie."
+    },
+    {
+      "question": "Czy przejmiecie istniejące konto reklamowe?",
+      "answer": "Możemy zacząć od przeglądu po uzyskaniu potrzebnych uprawnień. Konto i dane pozostają po stronie firmy. Zakres porządkowania ustalamy po analizie; nie potrzebujemy hasła wysłanego w wiadomości."
+    },
+    {
+      "question": "Kiedy można rozpocząć kampanię?",
+      "answer": "Termin zależy od materiałów, dostępów, strony i uzgodnionych wdrożeń. Emisja wymaga również weryfikacji reklamy przez Meta. Harmonogram i okres testu potwierdzamy po briefie."
+    },
+    {
+      "question": "Czy przygotujecie zdjęcia i rolki?",
+      "answer": "Tak, produkcję możemy włączyć do wyceny. Ustalamy cel, formaty, miejsce, liczbę materiałów i poprawki. Jeśli masz własne pliki, najpierw sprawdzamy ich jakość i możliwości wykorzystania."
+    },
+    {
+      "question": "Czy reklamy będą opłacalne w małej firmie?",
+      "answer": "To zależy od oferty, marży, popytu i obsługi kontaktów. Proponujemy ograniczony zakres testu i kryteria oceny. Nie gwarantujemy liczby klientów przed poznaniem danych."
+    },
+    {
+      "question": "Co przesłać do wyceny?",
+      "answer": "Adres strony, linki do profili, opis produktu, obszar obsługi i orientacyjny budżet. Napisz też, czy masz kreacje, konto i sposób odbierania zapytań. Pozwoli to oddzielić przygotowanie od regularnej obsługi."
+    }
+  ]
+};
 
 export default function FacebookAdsWarszawa() {
-  const faqItems = [
-    {
-      question: "Ile kosztują kampanie Facebook Ads (Meta Ads) w Warszawie?",
-      answer: "Facebook Ads w Warszawie zaczyna się od 400 zł/miesiąc za zarządzanie kampanią (pakiet START). Dodatkowy budżet reklamowy na samą Platforma Meta to osobna pozycja — od 500 zł/miesiąc dla małych firm do 20 000+ zł/miesiąc dla e-commerce i dużych sieci. Całkowity koszt zależy od branży, konkurencji i zasobów kreatywnych.",
-    },
-    {
-      question: "Jak szybko zobaczę wyniki kampanii Facebook Ads?",
-      answer: "Pierwsze wyniki są widoczne już po 24-48 godzinach od uruchomienia kampanii. Facebook szybko testuje różne audience i creative, więc dane napływają natychmiast. Pełna optymalizacja i znaczące konwersje trwają 2-4 tygodnie, gdy kampania zbierze wystarczająco danych do AI-driven optymalizacji.",
-    },
-    {
-      question: "Jakie formaty reklam są dostępne na Facebook/Instagram w Warszawie?",
-      answer: "Dostępne są: Feed Ads (klasyczne reklamy w feed), Stories Ads (reklamy fullscreen na Stories), Reels Ads (w sekcji Reels na Instagramie), Carousel Ads (karuzela produktów), Video Ads (wideo reklamowe), Lead Ads (zbieranie leadów bezpośrednio z Facebooka), Dynamic Ads (automatyczne reklamy produktów dla osób zainteresowanych). Każdy format ma inne zastosowania w zależności od branży.",
-    },
-    {
-      question: "Czy potrzebuję Pixel Facebooka (Meta Pixel) do kampanii?",
-      answer: "Tak — Meta Pixel (piksel Facebooka) jest kluczowy dla efektywnych kampanii. Instalujemy pixel na Twojej stronie, aby śledzić konwersje, budować grupy niestandardowych odbiorców do retargetingu i wspierać AI Facebooka w znalezeniu nowych klientów. Pixel pozwala na precyzyjne targetowanie: docierasz do osób, które odwiedziły Twoją stronę, zainteresowały się produktami, ale jeszcze nie kupiły. To retargeting — i działa bardzo dobrze. Wszystko zarządzane jest przez Facebook Business Manager (Menedżer Reklam Meta).",
-    },
-    {
-      question: "Jakie jest CPM i CPC na Facebook/Instagram w Warszawie?",
-      answer: "CPM (koszt za 1000 impressionów) na Facebook/Instagram w Warszawie wynosi średnio 5-15 zł, CPC (koszt za kliknięcie) to 1-5 zł. Ceny zależą od branży, sezonu i konkurencji. E-commerce i finansowe są droższe (10-20 zł CPM), usługi są tańsze (3-8 zł CPM). Nasi specjaliści optymalizują bidding, aby unikać drożych impressionów i skupiać się na klikami wysokiej jakości.",
-    },
-    {
-      question: "Jak Facebook/Instagram widzi moich potencjalnych klientów w Warszawie?",
-      answer: "Facebook ma dostęp do miliardów danych: wiek, płeć, zainteresowania, zachowanie na platformie, historia zakupów (pixel), lokalizacja. Targetowanie w Warszawie może być bardzo precyzyjne: wiek 25-45, zainteresowani modą i sportami, mieszkańcy centrum/Piaseczna, aktywnie poszukujący produktów online. Lookalike audience — ludzie podobni do Twoich obecnych klientów — również działa doskonale.",
-    },
-    {
-      question: "Jaki ROAS mogę oczekiwać z Facebook Ads w mojej branży?",
-      answer: "ROAS (Return on Ad Spend) wynosi zazwyczaj 2:1 do 5:1 dla dobrze skonfigurowanych kampanii. E-commerce średnio 3-5:1, usługi/lead generation 1,5-3:1, luxury i niche products mogą osiągnąć 4-8:1. Pierwszy miesiąc to testowanie — drugi i trzeci pokazują stały wzrost ROAS. Po 3 miesiącach optymalizacji, nasze kampanie osiągają najwyższy poziom efektywności.",
-    },
-    {
-      question: "Czy Facebook Ads działają dla małych firm i usług lokalnych w Warszawie?",
-      answer: "Tak — Facebook Ads są idealnym kanałem dla małych firm i usług lokalnych w Warszawie (restauracje, salony, usługi, handlowcy). Możesz targetować precyzyjnie Warszawę/Piaseczno/Milanówek, budować remarketing dla klientów, testować kampanię z budżetem 500-1000 zł/miesiąc. Wiele naszych lokalnych klientów z Warszawy generuje 10-20 leadów dziennie za mniej niż 2000 zł/miesiąc na Facebook Ads.",
-    },
-  ];
-
-  return (
-    <>
-      <Layout>
-        <SEOHead
-          title="Agencja Facebook Ads Warszawa — reklamy Meta dla firm | Fotz.pl"
-          description="Facebook Ads Warszawa ✓ Kampanie Meta Ads (Facebook, Instagram) od 400 zł/mies. Certyfikowani specjaliści Meta i skuteczne reklamy na Facebooku dla firm z Warszawy. Bezpłatna konsultacja na start."
-          canonical="https://www.fotz-studio.pl/performance-marketing/facebook-ads/warszawa"
-          keywords="facebook ads warszawa, meta ads warszawa, instagram ads warszawa, reklamy facebook, reklamy na facebooku, kampanie meta, agencja facebook ads warszawa"
-        />
-
-        <ServiceSchema
-          name="Kampanie Facebook Ads Warszawa"
-          description="Tworzenie i optymalizacja kampanii Facebook Ads (Meta Ads) dla firm z Warszawy. Agencja Fotz.pl — certyfikowani specjaliści Meta."
-          provider="Fotz Studio"
-          areaServed="Warszawa"
-        />
-
-        <BreadcrumbSchema items={[
-            { name: "Strona główna", url: "https://www.fotz-studio.pl" },
-            { name: "Kampanie reklamowe", url: "https://www.fotz-studio.pl/performance-marketing" },
-            { name: "Facebook Ads", url: "https://www.fotz-studio.pl/performance-marketing/facebook-ads" },
-            { name: "Facebook Ads Warszawa", url: "https://www.fotz-studio.pl/performance-marketing/facebook-ads/warszawa" },
-          ]}/>
-
-        <FAQSchema items={faqItems} />
-
-        {/* Breadcrumbs */}
-        <PageBreadcrumbs items={[
-            { name: "Strona główna", path: "/" },
-            { name: "Kampanie reklamowe", path: "/performance-marketing" },
-            { name: "Facebook Ads", path: "/performance-marketing/facebook-ads" },
-            { name: "Warszawa", path: "/performance-marketing/facebook-ads/warszawa" },
-          ]}/>
-
-        {/* Hero Section */}
-        <section className="relative pt-32 sm:pt-36 md:pt-40 pb-16 md:pb-24 bg-gradient-to-br from-slate-950 via-purple-950 to-pink-900 overflow-hidden">
-          <div className="absolute top-1/4 right-1/3 w-96 h-96 rounded-full bg-pink-500/10 blur-3xl pointer-events-none" />
-          <div className="absolute bottom-0 left-1/4 w-64 h-64 rounded-full bg-purple-500/10 blur-3xl pointer-events-none" />
-
-          <div className="container px-4 relative z-10">
-            <div className="max-w-4xl mx-auto">
-              <div className="text-center mb-12">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-white">
-                  Facebook Ads Warszawa — Reklamy Meta dla Twojej Firmy
-                </h1>
-                <p className="text-xl md:text-2xl text-pink-100 mb-8">
-                  Kampanie na Facebooku i Instagramie dla firm w Warszawie. Wyniki od 48h. Certyfikowani specjaliści Meta Ads.
-                </p>
-              </div>
-
-              {/* Stats Grid */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-6 text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-pink-300 mb-2">400 zł</div>
-                  <div className="text-sm text-pink-100">Kampanie od</div>
-                </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-6 text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-pink-300 mb-2">48h</div>
-                  <div className="text-sm text-pink-100">Wyniki od</div>
-                </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-6 text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-pink-300 mb-2">100%</div>
-                  <div className="text-sm text-pink-100">Certyfikowani</div>
-                </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-6 text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-pink-300 mb-2">Raport</div>
-                  <div className="text-sm text-pink-100">Co miesiąc</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Why Facebook Ads in Warsaw */}
-        <FadeInView>
-          <section className="py-16 md:py-24 bg-background">
-            <div className="container px-4">
-              <div className="max-w-3xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold mb-8">
-                  Facebook Ads Warszawa — dlaczego warto?
-                </h2>
-                <div className="space-y-6 text-lg text-muted-foreground">
-                  <p>
-                    Warszawa to 1,8 miliona mieszkańców, z czego ponad 80% aktywnie korzysta z Facebooka i Instagrama codziennie. To naturalny rynek do testowania kampanii dla całego kraju, a reklamy na Facebooku oferują najlepsze targetowanie dla warszawskiego segmentu.
-                  </p>
-                  <p>
-                    Facebook i Instagram są najskuteczniejsze dla e-commerce, restauracji, usług Beauty/SPA, nieruchomości i handlu lokalnego. W Warszawie, gdzie średnia płaca jest wysoka i ludzie mają pieniądze na zakupy, skuteczna kampania reklamowa na Facebooku generuje sprzedaż szybciej niż SEO lub Google Ads.
-                  </p>
-                  <p>
-                    Pixel Facebooka (Meta Pixel) umożliwia precyzyjny retargeting — reklamy dla osób, które już widziały Twoją stronę lub produkt. Konwersja z retargetingu jest 3-5x wyższa niż z kampanii prospectingowych, a koszt za konwersję jest znacznie niższy. Właściwy cel reklamowy — konwersje, leady czy zasięg — decyduje o efektywności każdej kampanii.
-                  </p>
-                  <p>
-                    Algorytm Meta (Facebook, Instagram, Messenger) automatycznie tworzy grupy niestandardowych odbiorców i znajduje ludzi zainteresowanych Twoimi produktami — nie musisz nic robić ręcznie. AI-driven optimization z Facebook Business Managera oznacza, że kampania jest coraz bardziej efektywna każdego dnia.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-        </FadeInView>
-
-        {/* Ad Formats */}
-        <FadeInView>
-          <section className="py-16 md:py-24 bg-secondary/30">
-            <div className="container px-4">
-              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-                Formaty reklam Facebook &amp; Instagram
-              </h2>
-              <div className="grid md:grid-cols-2 gap-8">
-                <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-3">Feed Ads</h3>
-                  <p className="text-muted-foreground">
-                    Klasyczne reklamy w głównym feed'zie Facebooka i Instagrama. Najczęstszy format — obraz i tekst, kliknięcie prowadzi na Twoją stronę lub Landing Page.
-                  </p>
-                </div>
-                <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-3">Stories Ads</h3>
-                  <p className="text-muted-foreground">
-                    Fullscreen reklamy na Stories (Facebook i Instagram). Bardzo efektywne dla mobile audience, szybka akcja, idealne dla E-commerce i fast-moving products.
-                  </p>
-                </div>
-                <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-3">Reels Ads</h3>
-                  <p className="text-muted-foreground">
-                    Reklamy wideo w sekcji Reels na Instagramie. Nowy format Meta, bardzo wysoki engagement, efektywne dla kreatywnych i dynamicznych kampanii.
-                  </p>
-                </div>
-                <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-3">Carousel Ads</h3>
-                  <p className="text-muted-foreground">
-                    Karuzela produktów (do 10 zdjęć/filmów). Idealnie dla E-commerce — każdy produkt ma swój slajd, użytkownik przesłania i klika na interesujące.
-                  </p>
-                </div>
-                <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-3">Video Ads</h3>
-                  <p className="text-muted-foreground">
-                    Reklamy wideo (6 sekund do 3 minut). Najwyższy engagement, opowiadanie historii marki, demony produktów. Pracują we wszystkich formatach.
-                  </p>
-                </div>
-                <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-3">Lead Ads &amp; Dynamic Ads</h3>
-                  <p className="text-muted-foreground">
-                    Lead Ads — zbieranie emailów i numerów telefonów bezpośrednio z Facebooka. Dynamic Ads — automatyczne pokazywanie produktów osobom zainteresowanym. Oba działają bez przychodzenia na Twoją stronę.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-        </FadeInView>
-
-        {/* Process */}
-        <FadeInView>
-          <section className="py-16 md:py-24 bg-background">
-            <div className="container px-4">
-              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-                Jak prowadzimy kampanie Facebook Ads w Warszawie?
-              </h2>
-              <div className="max-w-3xl mx-auto space-y-6">
-                <div className="flex gap-6">
-                  <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white font-bold">1</div>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-2">Brief i analiza branży</h3>
-                    <p className="text-muted-foreground">
-                      Poznajemy Twoją firmę, produkty, konkurencję na Facebook/Instagram. Jakie persona są Twoimi klientami? Jaki jest Twój LTV (lifetime value)? Ile jesteś gotów wydać na akwizycję klienta?
-                    </p>
-                  </div>
-                </div>
-                <div className="flex gap-6">
-                  <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white font-bold">2</div>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-2">Setup Pixel, Menedżer Reklam &amp; Audience</h3>
-                    <p className="text-muted-foreground">
-                      Instalujemy Meta Pixel na Twojej stronie i konfigurujemy Facebook Business Manager. Definiujemy konwersje (zakup, kontakt, lead) oraz cel reklamowy. Tworzymy grupy niestandardowych odbiorców (już istniejący klienci), Lookalike Audience (nowi ludzie podobni do Twoich klientów) i segmenty retargetingowe dla kampanii remarketingowych.
-                    </p>
-                  </div>
-                </div>
-                <div className="flex gap-6">
-                  <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white font-bold">3</div>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-2">Kreacje reklamowe (Copy &amp; Design)</h3>
-                    <p className="text-muted-foreground">
-                      Tworzymy copy (teksty reklam) i kreacje reklamowe (zdjęcia/wideo) dla każdego segmentu odbiorców. A/B testujemy wiele wariantów — różne nagłówki, call-to-actions, obrazy. Menedżer reklam Meta AI pomaga nam znaleźć najlepsze kombinacje kreacji dla Twojej branży.
-                    </p>
-                  </div>
-                </div>
-                <div className="flex gap-6">
-                  <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white font-bold">4</div>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-2">Uruchomienie i daily optimization</h3>
-                    <p className="text-muted-foreground">
-                      Kampania live — zaczyna zbierać dane. Przez pierwsze 48h monitorujemy CPM, CPC, CTR. Pauzujemy low-performing kreatywne, amplifikujemy best performers. Meta Ads Manager zaczyna optymalizować automatycznie.
-                    </p>
-                  </div>
-                </div>
-                <div className="flex gap-6">
-                  <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white font-bold">5</div>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-2">Analiza i skalowanie</h3>
-                    <p className="text-muted-foreground">
-                      Po 2-4 tygodniach mamy dostatecznie danych. Analizujemy ROAS, CPL, CAC. Skalujemy budżet na best-performing audience i creative. Testujemy nowe audience — lookalike, interest-based. Tworzymy long-term growth plan.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        </FadeInView>
-
-        {/* Pricing */}
-        <FadeInView>
-          <section className="py-16 md:py-24 bg-secondary/30">
-            <div className="container px-4">
-              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-                Kampanie Facebook Ads Warszawa — cennik
-              </h2>
-              <div className="max-w-4xl mx-auto overflow-x-auto">
-                <table className="w-full border-collapse">
-                  <thead>
-                    <tr className="border-b-2 border-border">
-                      <th className="text-left p-4 font-bold">Pakiet</th>
-                      <th className="text-left p-4 font-bold">Cena obsługi</th>
-                      <th className="text-left p-4 font-bold">Budżet reklamowy</th>
-                      <th className="text-left p-4 font-bold">Dla kogo</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="border-b border-border bg-background">
-                      <td className="p-4 font-semibold">START</td>
-                      <td className="p-4">400 zł/mies.</td>
-                      <td className="p-4">500-1500 zł</td>
-                      <td className="p-4">Małe firmy, usługi lokalne</td>
-                    </tr>
-                    <tr className="border-b border-border bg-background">
-                      <td className="p-4 font-semibold">GROWTH</td>
-                      <td className="p-4">800 zł/mies.</td>
-                      <td className="p-4">2000-5000 zł</td>
-                      <td className="p-4">Średnie firmy, E-commerce</td>
-                    </tr>
-                    <tr className="border-b border-border bg-background">
-                      <td className="p-4 font-semibold">PRO</td>
-                      <td className="p-4">1500+ zł/mies.</td>
-                      <td className="p-4">5000+ zł</td>
-                      <td className="p-4">E-commerce, sieci, skalowanie</td>
-                    </tr>
-                    <tr className="bg-background">
-                      <td className="p-4 font-semibold">ENTERPRISE</td>
-                      <td className="p-4">% budżetu (15-20%)</td>
-                      <td className="p-4">15000+ zł</td>
-                      <td className="p-4">Duże sieci, brand awareness</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <p className="text-center text-muted-foreground mt-8 max-w-2xl mx-auto">
-                Każdy pakiet obejmuje setup Pixel &amp; audience, creative optimization, daily management, A/B testing, monthly reporting ze szczegółową analizą ROAS i CAC.
-              </p>
-            </div>
-          </section>
-        </FadeInView>
-
-        {/* Industries */}
-        <FadeInView>
-          <section className="py-16 md:py-24 bg-background">
-            <div className="container px-4">
-              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-                Kampanie Facebook Ads dla jakich branż w Warszawie?
-              </h2>
-              <div className="max-w-3xl mx-auto">
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="bg-secondary/50 rounded-lg p-4 border border-border">
-                    <h3 className="font-bold mb-2">E-commerce &amp; online sklepy</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Carousel Ads, Dynamic Ads, retargeting. Skalowanie sprzedaży online dla produktów, odzieży, elektroniki. Średnia ROAS 3-5:1.
-                    </p>
-                  </div>
-                  <div className="bg-secondary/50 rounded-lg p-4 border border-border">
-                    <h3 className="font-bold mb-2">Restauracje &amp; catering</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Video Ads, Stories Ads dla promocji, menu. Lead Ads do rezerwacji. Geo-targeting — tylko Warszawa centrum i pobliskie dzielnice.
-                    </p>
-                  </div>
-                  <div className="bg-secondary/50 rounded-lg p-4 border border-border">
-                    <h3 className="font-bold mb-2">Beauty &amp; SPA</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Reels Ads (before/after), Stories Ads, Lead Ads dla rezerwacji. Retargeting osób zainteresowanych usługami. CPL niski, konwersja wysoka.
-                    </p>
-                  </div>
-                  <div className="bg-secondary/50 rounded-lg p-4 border border-border">
-                    <h3 className="font-bold mb-2">Nieruchomości</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Carousel Ads (galerię mieszkań), Video Ads (wirtualne spacery), Lead Ads. Targetowanie wiekowe, zainteresowane kupnem/wynajmem w Warszawie.
-                    </p>
-                  </div>
-                  <div className="bg-secondary/50 rounded-lg p-4 border border-border">
-                    <h3 className="font-bold mb-2">Usługi (hydraulik, elektryk, malowanie)</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Lead Ads do zbierania zapytań. Geo-targeting Warszawa i okolice. Low CPC, szybka konwersja, małe budżety sprawdzają się świetnie.
-                    </p>
-                  </div>
-                  <div className="bg-secondary/50 rounded-lg p-4 border border-border">
-                    <h3 className="font-bold mb-2">Edukacja &amp; szkolenia</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Video Ads (kursy, szkolenia online), Lead Ads. Retargeting osób zainteresowanych (remarketing z pixela). CPL średni, wysoka jakość leadów.
-                    </p>
-                  </div>
-                  <div className="bg-secondary/50 rounded-lg p-4 border border-border">
-                    <h3 className="font-bold mb-2">Usługi finansowe</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Lead Ads dla wniosków kredytowych, ubezpieczeń. Wysokie CPM (10-20 zł), ale znaczne wartości transakcji. Retargeting prospect warm audience.
-                    </p>
-                  </div>
-                  <div className="bg-secondary/50 rounded-lg p-4 border border-border">
-                    <h3 className="font-bold mb-2">Fitness &amp; sport</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Reels Ads (treningi), Stories Ads (promocje), Lead Ads do membership. Geo-targeting dla sieci fitness w Warszawie. Conversion tracking per member.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        </FadeInView>
-
-        {/* Targeting Section */}
-        <FadeInView>
-          <section className="py-16 md:py-24 bg-background">
-            <div className="container px-4">
-              <div className="max-w-3xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold mb-8">
-                  Targetowanie reklam na Facebooku w Warszawie
-                </h2>
-                <div className="space-y-6 text-lg text-muted-foreground">
-                  <p>
-                    Skuteczna kampania reklamowa na Facebooku zaczyna się od właściwego targetowania. Menedżer reklam Meta oferuje kilka typów grup odbiorców, które dobieramy dla każdego klienta indywidualnie.
-                  </p>
-                  <div className="grid md:grid-cols-2 gap-4 mt-6">
-                    <div className="bg-secondary/30 rounded-lg p-5 border border-border">
-                      <h3 className="font-bold mb-2 text-foreground">Grupy niestandardowych odbiorców</h3>
-                      <p className="text-base">Targetowanie osób, które już interagowały z Twoją firmą — odwiedziły stronę (piksel Facebooka), kupiły produkt lub są na liście CRM. Najwyższa konwersja z wszystkich typów odbiorców.</p>
-                    </div>
-                    <div className="bg-secondary/30 rounded-lg p-5 border border-border">
-                      <h3 className="font-bold mb-2 text-foreground">Lookalike Audience</h3>
-                      <p className="text-base">Meta tworzy grupę nowych użytkowników podobnych do Twoich obecnych klientów. Doskonałe narzędzie do skalowania kampanii poza retargeting na zupełnie nowych odbiorców w Warszawie.</p>
-                    </div>
-                    <div className="bg-secondary/30 rounded-lg p-5 border border-border">
-                      <h3 className="font-bold mb-2 text-foreground">Targetowanie zainteresowań</h3>
-                      <p className="text-base">Docierasz do osób zainteresowanych konkretnymi tematami, markami lub aktywnościami. Świetne do kampanii zasięgowych i budowania świadomości marki w Warszawie.</p>
-                    </div>
-                    <div className="bg-secondary/30 rounded-lg p-5 border border-border">
-                      <h3 className="font-bold mb-2 text-foreground">Cel reklamowy a konwersje</h3>
-                      <p className="text-base">Dobieramy cel reklamowy (konwersje, ruch, leady, zasięg) do etapu lejka sprzedażowego. Właściwy cel to podstawa — zły cel powoduje, że algorytm Meta optymalizuje się pod złe zdarzenia.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        </FadeInView>
-
-        {/* Why Fotz Studio */}
-        <FadeInView>
-          <section className="py-16 md:py-24 bg-secondary/30">
-            <div className="container px-4">
-              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-                Dlaczego Fotz Studio jako agencja Facebook Ads w Warszawie?
-              </h2>
-              <div className="max-w-3xl mx-auto space-y-6">
-                <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-2">Certyfikowani Meta Partners — specjaliści Facebook Ads</h3>
-                  <p className="text-muted-foreground">
-                    Nasi specjaliści Facebook Ads są certyfikowani przez Meta (Facebook Blueprint). Mamy dostęp do beta features, zaawansowanych narzędzi targetowania, najnowszych algorytmów Meta AI i wsparcia dedykowanego opiekuna Meta w Polsce.
-                  </p>
-                </div>
-                <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-2">Szybkie setup &amp; wyniki (48h)</h3>
-                  <p className="text-muted-foreground">
-                    Instalujemy Pixel, definiujemy audience, uruchamiamy kampanię w 48 godzin. Wyniki są natychmiast widoczne — CPM, CPC, engagement. Nie czekasz tygodniami na dane.
-                  </p>
-                </div>
-                <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-2">Kreatywne &amp; copy na każdy format</h3>
-                  <p className="text-muted-foreground">
-                    Tworzymy kreatywne i copy na każdy format (Feed, Stories, Reels, Carousel, Video, Lead Ads). A/B testujemy wszystko — wiele wariantów, szybka iteracja na bazie danych.
-                  </p>
-                </div>
-                <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-2">ROAS &gt; CAC fokus</h3>
-                  <p className="text-muted-foreground">
-                    Każda decyzja jest oparta na ROAS (Return on Ad Spend). Nie wydajemy budżetu beznamietnie — skalujemy to, co działa. Średni ROAS naszych klientów: 3-5:1 po 3 miesiącach.
-                  </p>
-                </div>
-                <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-2">Raportowanie co miesiąc</h3>
-                  <p className="text-muted-foreground">
-                    Szczegółowy raport co miesiąc: CPM, CPC, ROAS, CAC, liczba konwersji, revenue generated, budżet skonsuowany. Transparentne dane — wiesz dokładnie, jak wydawane są pieniądze.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-        </FadeInView>
-
-        {/* FAQ */}
-        <FadeInView>
-          <section className="py-16 md:py-24 bg-background">
-            <div className="container px-4">
-              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-                Najczęstsze pytania o Facebook Ads Warszawa
-              </h2>
-              <div className="max-w-3xl mx-auto space-y-4">
-                {faqItems.map((item, index) => (
-                  <div key={index} className="bg-secondary/30 rounded-lg border border-border p-6">
-                    <h3 className="text-lg font-bold mb-3">{item.question}</h3>
-                    <p className="text-muted-foreground">{item.answer}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
-        </FadeInView>
-
-        {/* CTA Section */}
-        <FadeInView>
-          <section className="py-16 md:py-24 bg-slate-900">
-            <div className="container px-4">
-              <div className="max-w-3xl mx-auto text-center">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
-                  Uruchom skuteczne reklamy na Facebooku w Warszawie
-                </h2>
-                <p className="text-lg text-slate-300 mb-10">
-                  Bezpłatna konsultacja bez zobowiązań. Poznaj naszą strategię kampanii Meta Ads dla Twojej branży. Wyniki od 48h — mierzony ROAS i realne konwersje.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Link
-                    to="/kontakt"
-                    className="inline-flex items-center justify-center px-8 py-3 bg-primary text-white rounded-lg font-semibold hover:bg-primary/90 transition"
-                  >
-                    Bezpłatna konsultacja
-                  </Link>
-                  <Link
-                    to="/performance-marketing/facebook-ads"
-                    className="inline-flex items-center justify-center px-8 py-3 bg-white/10 text-white rounded-lg font-semibold hover:bg-white/20 transition border border-white/20"
-                  >
-                    Poznaj Facebook Ads
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </section>
-        </FadeInView>
-
-        {/* Bottom Links */}
-        <FadeInView>
-          <section className="py-12 bg-background border-t border-border">
-            <div className="container px-4">
-              <div className="max-w-3xl mx-auto text-center">
-                <p className="text-muted-foreground mb-6">Powiązane usługi:</p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Link
-                    to="/performance-marketing/facebook-ads"
-                    className="text-primary hover:underline font-semibold"
-                  >
-                    Facebook Ads — kompleksowo
-                  </Link>
-                  <span className="text-muted-foreground hidden sm:inline">•</span>
-                  <Link
-                    to="/performance-marketing/google-ads/warszawa"
-                    className="text-primary hover:underline font-semibold"
-                  >
-                    Google Ads Warszawa
-                  </Link>
-                  <span className="text-muted-foreground hidden sm:inline">•</span>
-                  <Link
-                    to="/blog/cennik-facebook-ads"
-                    className="text-primary hover:underline font-semibold"
-                  >
-                    Cennik Facebook Ads
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </section>
-        </FadeInView>
-
-        {/* Contact Section */}
-        <ContactSection city="Warszawa" />
-      </Layout>
-    </>
-  );
+  return <>
+    <SEOHead title={data.title} description={data.description} canonical={`https://www.fotz-studio.pl${data.path}`} />
+    <ServiceEditorial path={data.path} title={data.h1} eyebrow="FOTZ Studio · reklamy dla firm z Warszawy" area="Warszawa" enquiryVariant="meta_ads" lead={data.lead}
+      summary={["Opisz ofertę, odbiorców i zlecenia, które chcesz pozyskiwać.", "Ustalimy materiały, stronę docelową, koszty i harmonogram.", "Ocenimy dane oraz jakość kontaktów."]}
+      faqTitle="Najczęściej zadawane pytania o kampanie Facebook Ads" scopeTitle="Co obejmuje kampania reklamowa w Meta?" scope={data.scope} sections={data.sections} faqs={data.faqs} workAfterScope />
+  </>;
 }

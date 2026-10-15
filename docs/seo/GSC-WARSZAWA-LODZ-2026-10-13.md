@@ -26,7 +26,7 @@ Treść redagowano na podstawie zaleceń oraz ocen NEURONwriter, z kontrolą uż
 
 ## Przegląd i walidacja
 
-Claude Code wykonał audyt obu starych stron na bazie `b55b22c`. Wskazane problemy uwzględniono w nowych ofertach. Przegląd dokładnego PR, końcowy build, ocena wyrenderowanej treści i potwierdzenie produkcji są wykonywane przed zamknięciem etapu.
+Claude Code wykonał audyt obu starych stron na bazie `b55b22c`, przegląd PR #58 na `1ba25f2` i końcowego diffu do `20c06b8`. Wskazane poprawki zostały potwierdzone; nie stwierdził nowych istotnych błędów. Końcowe wyniki i dowody produkcji poniżej.
 
 Ręczne zgłaszanie URL-i w GSC osiągnęło 13.10 dzienny limit podczas poprzedniej partii. Nie obchodzimy limitu; samo wdrożenie i aktualizacja sitemap nie potwierdzają przyjęcia prośby. W kolejce pozostaje także `/uslugi/video-marketing` z poprzedniej partii.
 
@@ -34,6 +34,16 @@ Dowody lokalne: `output/lead-audit-2026-10-13/neuron-warszawa-lodz-95/`: rekomen
 
 ## Walidacja wersji przygotowanej do przeglądu
 
-Wyrenderowana treść główna i rzeczywiste metadata: Warszawa **95**, Łódź **95**. Zapis w obu edytorach NEURONwriter potwierdza 95/100. Typecheck i ESLint zmienionych plików przeszły, testy 148/148. Build: 1075 dokumentów, 1072 pełne treści, zero błędów. Audyt: 1073 unikalne URL-e sitemap, 135063 linki w HTML, 3963 odnośniki źródłowe oraz 486 galerii bez błędów. Wynik publicznego importu będzie sprawdzony po wdrożeniu.
+Wyrenderowana treść główna i rzeczywiste metadata: Warszawa **95**, Łódź **95**. Zapis w obu edytorach NEURONwriter potwierdził 95/100 przed publikacją. Typecheck i ESLint zmienionych plików przeszły, testy 148/148. Build: 1075 dokumentów, 1072 pełne treści, zero błędów. Audyt: 1073 unikalne URL-e sitemap, 135063 linki w HTML, 3963 odnośniki źródłowe oraz 486 galerii bez błędów.
 
-Claude przejrzał dokładny head `1ba25f2` PR #58: zakres zaakceptowany, brak blokerów. Poprawiono wskazane umiejscowienie zdjęć w opisie i skrócono title Łodzi. Dwa nagłówki Warszawy mają mniej powtarzalny początek, doprecyzowano nazwę agencji marketingu internetowego, a informację o osobno uzgadnianym mailingu przeniesiono do kosztów i zakresu. Kontrola mobilna obu ofert przy 390 px nie wykazała poziomego przepełnienia; kliknięcie CTA wybrało w formularzu marketing, w Łodzi również wariant kampanii Facebook i Instagram. Nie wysyłano testowych zapytań. Konsola testowanej karty bez błędów. Końcowy publiczny wynik i wdrożenie nadal wymagają potwierdzenia po scaleniu.
+Claude przejrzał dokładny head `1ba25f2` PR #58: zakres zaakceptowany, brak blokerów. Poprawiono wskazane umiejscowienie zdjęć w opisie i skrócono title Łodzi. Dwa nagłówki Warszawy mają mniej powtarzalny początek, doprecyzowano nazwę agencji marketingu internetowego, a informację o osobno uzgadnianym mailingu przeniesiono do kosztów i zakresu. Kontrola mobilna obu ofert przy 390 px nie wykazała poziomego przepełnienia; kliknięcie CTA wybrało w formularzu marketing, w Łodzi również wariant kampanii Facebook i Instagram. Nie wysyłano testowych zapytań. Konsola testowanej karty lokalnej bez błędów.
+
+## Potwierdzenie wdrożenia, 13.10.2026, 22:22–22:25 CEST
+
+[PR #58](https://github.com/adam420412/fotz-studio-web-experience/pull/58) scalony jako `619096171277f5c6b96c8671970f2de65f1fe83f`. Oba projekty Vercel mają status success. CI końcowego head `20c06b8`: przebiegi `38460961015` oraz `38460960926` zakończone sukcesem. Lighthouse przeszedł dla pięciu reprezentatywnych tras po dwa uruchomienia; nie jest to osobny pomiar nowych dwóch ofert.
+
+Po pobraniu rzeczywistych publicznych URL-i do NEURONwriter, bez nadpisywania metadata, wynik wynosi **Warszawa 95/100 (wcześniej 69), Łódź 96/100 (wcześniej 72)**. Obie analizy oznaczono jako zakończone z tagami PR 58 i oceną produkcji.
+
+Odczyt publicznego HTML potwierdził HTTP 200, jeden właściwy H1, metadata zgodne ze źródłem, self-canonical, index/follow, aktualny tekst, ścieżkę hydratacji, kontakt z usługą/variant i poprawny JSON-LD bez zmyślonych ocen. Kontrola produkcji w przeglądarce: obie oferty przy 390 px bez poziomego przepełnienia, CTA wybierają marketing i dla Łodzi zakres kampanii Facebook i Instagram. Formularzy nie wysyłano.
+
+Dowody: `offers-production-http.json`, `production-neuron-deployment.json`, `merge-verification.json`, `claude-review-20c06b8.txt`, zrzuty `production-*.png` i odczyty formularzy w katalogu tej partii. Indeksacji Łodzi ani nowych leadów nie potwierdzono; ręczne zgłoszenie pozostaje do wykonania po odnowieniu limitu GSC.
