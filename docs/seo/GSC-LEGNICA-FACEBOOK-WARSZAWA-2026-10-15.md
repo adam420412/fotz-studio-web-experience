@@ -36,4 +36,3 @@ Dowody: output/lead-audit-2026-10-15/legnica-facebook-warszawa/ — rekomendacje
 ## Publikacja
 
 Oczekuje na scalenie, potwierdzenie Vercel oraz import rzeczywistych URL-i produkcyjnych do NEURONwriter. Wyniki robocze nie są jeszcze dowodem publikacji.
-
