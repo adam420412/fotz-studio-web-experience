@@ -31,3 +31,15 @@ Przyjęto prośbę o indeksację Facebook Ads Warszawa po publikacji PR62. Potwi
 Materiały i logi: output/lead-audit-2026-10-15/seo-legnica-photo/. Dawna nazwa Google Ads została sprawdzona w [oficjalnej pomocy Google](https://support.google.com/google-ads/answer/9028765?hl=en).
 
 Uzupełniający przegląd PR62 potwierdził brak regresji oraz zamknięcie uwag P1/P2. Uwzględniono dodatkowe korekty P3: usunięcie powtórzenia „na telefonie” i przeniesienie sekcji B2B za opis pozyskiwania leadów, z precyzyjnym opisem kosztu kontaktu zakończonego ofertą. Aktualny PR63 przekazano Claude do odczytowej kontroli.
+
+## Potwierdzenie publikacji
+
+PR [#63](https://github.com/adam420412/fotz-studio-web-experience/pull/63) scalono jako `46e887b08866edb63fb398e279d326f3a77f8fde`. Obie publikacje Vercel zakończone powodzeniem. Kontrole GitHuba na dokładnym head `c3f6b78ae86676521dac66e67b2cb7c09c132511`: TypeScript/tests run 38734519587 i SEO run 38734519612 — success.
+
+Kontrola publicznej strony 15.10 o 12:36 UTC potwierdziła HTTP 200, jeden H1, właściwe title/description, self-canonical, index/follow i parametry CTA dla pięciu zmienionych adresów. Sprawdzono końcowe treści PR63, obraz/OG Victory Cars i daty map witryny. Import rzeczywistych publicznych URL-i do NEURONwriter, bez podmiany metadanych: SEO Legnica 95, fotografia produktowa 95, WWW Legnica 95 i Facebook Ads Warszawa 95. Nowe dwie analizy oznaczono jako ukończone. Dowody: production-verification.json oraz neuron-production-scores.json w katalogu output tej partii.
+
+GSC przyjęło prośby o ponowną indeksację nowej fotografii produktowej i SEO Legnica. Potwierdzenia zapisane w gsc-photo-requested.* i gsc-seo-legnica-requested.*. Przyjęcie prośby nie dowodzi ponownego skanowania ani indeksacji nowej wersji.
+
+Odebrano końcowy raport Claude: PR63 bez istotnych usterek. Claude potwierdził zgodność drzewa merge z ostatnim head, CTA, galerie i hydratację nowych ofert przy 1366/390 px bez podmiany węzłów, błędów konsoli i overflow; produkcyjne H1 oraz kolejność sekcji również sprawdzone. NEURONwriter i GSC weryfikował Codex. Przy następnym odczycie GSC warto sprawdzić, czy title SEO Legnica nie przejmuje zapytań należących do oferty WWW Legnica; na razie brak dowodu takiej zmiany. Zapis: claude-pr63-final-review.txt.
+
+Ta sekcja i zaktualizowany inwentarz są lokalnym zapisem po wdrożeniu; nie były częścią scalonego PR63.
