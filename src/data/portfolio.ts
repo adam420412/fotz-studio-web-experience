@@ -161,7 +161,7 @@ export const projects = [
     id: "gierki",
     title: "Gierky Activity Bar",
     category: "Strony www",
-    description: "Strona internetowa z systemem rezerwacji dla activity baru w centrum Poznania.",
+    description: "Strona activity baru w centrum Poznania: podstrony atrakcji, rezerwacja, zdjęcia wnętrz i bieżąca opieka.",
     image: gierkiImg,
     featured: false,
     hasCase: true,

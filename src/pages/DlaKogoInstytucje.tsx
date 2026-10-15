@@ -37,10 +37,10 @@ const caseStudies = [
     href: "/realizacje/fabryka-virali",
   },
   {
-    title: "Gierki",
-    description: "Branding i marketing dla cyklicznych wydarzeń gamingowych i esportowych.",
+    title: "Gierky Activity Bar",
+    description: "Strona activity baru w Poznaniu z podstronami atrakcji, rezerwacją i zdjęciami wnętrz.",
     image: gierkiImage,
-    results: ["Rozpoznawalna marka", "Społeczność graczy", "Pełne sale"],
+    results: ["Podstrony atrakcji", "Rezerwacja", "Fotografia wnętrz"],
     href: "/realizacje/gierki",
   },
 ];
