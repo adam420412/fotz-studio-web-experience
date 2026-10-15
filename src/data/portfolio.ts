@@ -188,7 +188,7 @@ export const projects = [
     id: "victory-cars",
     title: "Victory Cars",
     category: "Strony www",
-    description: "Strona internetowa dla dealera samochodów premium z gwarancją producenta.",
+    description: "Strona internetowa i katalog pojazdów dla Victory Cars.",
     image: victoryCarsImg,
     featured: false,
     hasCase: true,

@@ -28,10 +28,11 @@ interface ServiceEditorialProps {
   sections: EditorialSection[];
   faqs: { question: string; answer: string }[];
   faqTitle?: string;
+  contactDescription?: string;
 }
 
 /** Shared presentation; each offer keeps its own scope, evidence and answers. */
-export function ServiceEditorial({ title, eyebrow, lead, path, area = "Polska", workAfterScope = false, enquiryVariant, summary, scopeTitle, scope, sections, faqs, faqTitle = "Przed rozpoczęciem współpracy" }: ServiceEditorialProps) {
+export function ServiceEditorial({ title, eyebrow, lead, path, area = "Polska", workAfterScope = false, enquiryVariant, summary, scopeTitle, scope, sections, faqs, faqTitle = "Przed rozpoczęciem współpracy", contactDescription = "Prześlij adres strony, opisz cel i wskaż, co chcesz zmienić. Na tej podstawie ustalimy następny krok." }: ServiceEditorialProps) {
   const contactHref = enquiryHref(serviceForPath(path), enquiryVariant);
   return <Layout workPlacement={workAfterScope ? "manual" : "end"}>
     <BreadcrumbSchema items={[{ name: "Strona główna", url: "/" }, { name: "Usługi", url: "/uslugi" }, { name: title, url: path }]} />
@@ -84,7 +85,7 @@ export function ServiceEditorial({ title, eyebrow, lead, path, area = "Polska", 
     </section>
 
     <section className="container-wide px-6 md:px-12 pb-16">
-      <div className="rounded-3xl border border-border bg-card p-6 md:p-10 flex flex-wrap items-center justify-between gap-6"><div><h2 className="text-2xl md:text-3xl font-heading mb-3">Zacznijmy od Twojej sytuacji.</h2><p className="text-muted-foreground max-w-xl">Prześlij adres strony, opisz cel i wskaż, co chcesz zmienić. Na tej podstawie ustalimy następny krok.</p></div><Link to={contactHref} className="dv-btn dv-btn-primary">Przejdź do kontaktu <ArrowRight aria-hidden="true" className="w-4 h-4" /></Link></div>
+      <div className="rounded-3xl border border-border bg-card p-6 md:p-10 flex flex-wrap items-center justify-between gap-6"><div><h2 className="text-2xl md:text-3xl font-heading mb-3">Zacznijmy od Twojej sytuacji.</h2><p className="text-muted-foreground max-w-xl">{contactDescription}</p></div><Link to={contactHref} className="dv-btn dv-btn-primary">Przejdź do kontaktu <ArrowRight aria-hidden="true" className="w-4 h-4" /></Link></div>
     </section>
   </Layout>;
 }

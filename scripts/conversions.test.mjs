@@ -27,6 +27,15 @@ test('content and Instagram enquiries retain their scope through contact links',
  }
  assert.equal(serviceForPath('/performance-marketingowy-przyklad'), 'other');
 });
+test('product photography enquiries reach the contact form with their scope', () => {
+ const service = serviceForPath('/uslugi/fotografia-produktowa');
+ assert.equal(service, 'video');
+ const url = new URL(enquiryHref(service, 'product_photos'), 'https://www.fotz-studio.pl');
+ assert.deepEqual(resolveEnquiryContext(url.search), {service:'video', variant:'product_photos'});
+ assert.equal(url.hash, '#formularz');
+ assert.equal(serviceForPath('/uslugi/fotografia-z-drona'), 'video');
+ assert.equal(serviceForPath('/uslugi/fotografiaprzyklad'), 'other');
+});
 test('analytics needs current consent; failures in storage default to off',()=>{
  assert.equal(hasAnalyticsConsent({getItem:k=>k==='cookie-consent'?'accepted':'2'}),true);
  assert.equal(hasAnalyticsConsent({getItem:()=> 'accepted'}),false);
