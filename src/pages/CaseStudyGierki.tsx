@@ -1,15 +1,14 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, ArrowRight, Globe, Search, Shield, Smartphone, Calendar, Users } from "lucide-react";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
 import { SEOHead } from "@/components/seo/SEOHead";
+import { BreadcrumbSchema } from "@/components/seo/StructuredData";
 import { ImageLightbox } from "@/components/ImageLightbox";
-import { useState } from "react";
+import { enquiryHref } from "@/lib/enquiry.mjs";
 import gierkiImg from "@/assets/portfolio/gierki-web.webp";
-import { BreadcrumbSchema, ArticleSchema } from "@/components/seo/StructuredData";
 
-// Gallery images
 import gierkyGolf from "@/assets/gierky/gierky-golf.jpg";
 import gierkyShuffleboard from "@/assets/gierky/gierky-shuffleboard.jpg";
 import gierkyLounge from "@/assets/gierky/gierky-lounge.jpg";
@@ -22,357 +21,141 @@ import gierkyTables from "@/assets/gierky/gierky-tables.jpg";
 import gierkyHall from "@/assets/gierky/gierky-hall.jpg";
 
 const galleryImages = [
-  { src: gierkyGolf, alt: "Gierki - crazy golf i mini golf" },
-  { src: gierkyShuffleboard, alt: "Gierki - shuffleboard" },
-  { src: gierkyLounge, alt: "Gierki - strefa lounge" },
-  { src: gierkyPinball, alt: "Gierki - automaty pinball" },
-  { src: gierkyBar, alt: "Gierki - bar z drinkami" },
-  { src: gierkyBowling, alt: "Gierki - kręgle i bowling" },
-  { src: gierkyReception, alt: "Gierki - recepcja" },
-  { src: gierkyDarts, alt: "Gierki - dart elektroniczny" },
-  { src: gierkyTables, alt: "Gierki - stoły do gier" },
-  { src: gierkyHall, alt: "Gierki - główna hala" },
+  { src: gierkyHall, alt: "Gierky Activity Bar — główna sala z neonami" },
+  { src: gierkyGolf, alt: "Gierky — tor crazy golfa" },
+  { src: gierkyShuffleboard, alt: "Gierky — stoły do shuffleboarda" },
+  { src: gierkyDarts, alt: "Gierky — strefa darta elektronicznego" },
+  { src: gierkyLounge, alt: "Gierky — loże dla grup" },
+  { src: gierkyBar, alt: "Gierky — bar z podświetlonymi półkami" },
+  { src: gierkyPinball, alt: "Gierky — automaty pinball" },
+  { src: gierkyBowling, alt: "Gierky — strefa gier zręcznościowych" },
+  { src: gierkyTables, alt: "Gierky — stoły do gier towarzyskich" },
+  { src: gierkyReception, alt: "Gierky — recepcja lokalu" },
 ];
 
-const services = [
-  { icon: Globe, label: "Strona internetowa" },
-  { icon: Calendar, label: "System rezerwacji" },
-  { icon: Search, label: "Optymalizacja SEO" },
-  { icon: Shield, label: "Bezpieczeństwo" },
-  { icon: Smartphone, label: "Responsywność" },
-  { icon: Users, label: "UX/UI Design" },
-];
-
-const challenges = [
-  "Brak intuicyjnego systemu rezerwacji stolików i atrakcji",
-  "Niewystarczająca prezentacja oferty rozrywkowej",
-  "Słaba widoczność w wyszukiwarkach lokalnych",
-  "Strona nieprzystosowana do urządzeń mobilnych",
-  "Brak integracji z systemami płatności online",
-];
-
-const results = [
-  { metric: "Rezerwacje", value: "+150%", description: "Wzrost rezerwacji online" },
-  { metric: "Konwersja", value: "8.5%", description: "Współczynnik konwersji strony" },
-  { metric: "SEO", value: "Top 3", description: "Pozycja dla 'activity bar Poznań'" },
-];
-
-const recommendations = [
-  "Integracja z systemem loyalty program dla stałych klientów",
-  "Dodanie galerii zdjęć i filmów z imprez",
-  "Implementacja chatbota do szybkich rezerwacji",
-  "Rozbudowa sekcji eventów firmowych",
+const scope = [
+  {
+    number: "01",
+    title: "Strona oparta na atrakcjach",
+    text: "Każda gra ma własną podstronę: crazy golf, darts, shuffleboard, beer pong i loże. Gość szybko sprawdza, co może robić w lokalu, a potem przechodzi do rezerwacji.",
+  },
+  {
+    number: "02",
+    title: "Rezerwacja bez szukania",
+    text: "Podstrona rezerwacji zbiera atrakcje w jednym miejscu. Telefon i e‑mail do rezerwacji, godziny otwarcia i adres przy ul. Gwarnej są widoczne w każdej części serwisu.",
+  },
+  {
+    number: "03",
+    title: "Zdjęcia wnętrz i bieżąca opieka",
+    text: "Sfotografowaliśmy salę, bar i strefy gier. Dbamy też o aktualność strony: menu PL i EN, regulaminy, politykę prywatności i dokumenty dla gości.",
+  },
 ];
 
 const CaseStudyGierki = () => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
 
-  const openLightbox = (index: number) => {
-    setLightboxIndex(index);
-    setLightboxOpen(true);
-  };
-
-  const navigateLightbox = (index: number) => {
-    setLightboxIndex(index);
-  };
-
   return (
     <Layout>
       <SEOHead
-        title="Gierki Activity Bar - Strona z systemem rezerwacji"
-        description="Case study Gierki Poznań: strona z systemem rezerwacji online, SEO, +180% rezerwacji. Fotz Studio — obecność cyfrowa lokalnego biznesu rozrywkowego."
+        title="Gierky Activity Bar — strona, rezerwacje i zdjęcia wnętrz | FOTZ Studio"
+        description="Realizacja FOTZ dla Gierky Activity Bar w Poznaniu: strona WordPress z podstronami atrakcji i rezerwacją, sesja zdjęciowa wnętrz oraz bieżąca opieka nad treściami."
         canonical="https://www.fotz-studio.pl/realizacje/gierki"
-        keywords="case study facebook ads, realizacja kampanii facebook, meta ads case study"
+        ogType="article"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
-          { name: "Realizacje", url: "https://www.fotz-studio.pl/realizacje" },
-          { name: "Gierki", url: "https://www.fotz-studio.pl/realizacje/gierki" }
-        ]}/>
-      <ArticleSchema 
-        title="Gierki Activity Bar - Strona z systemem rezerwacji"
-        description="Case study: strona internetowa z systemem rezerwacji online dla centrum rozrywki w Poznaniu"
-        url="https://www.fotz-studio.pl/realizacje/gierki"
-        datePublished="2024-01-10"
-        dateModified="2026-01-09"
-      />
+        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+        { name: "Realizacje", url: "https://www.fotz-studio.pl/realizacje" },
+        { name: "Gierky Activity Bar", url: "https://www.fotz-studio.pl/realizacje/gierki" },
+      ]} />
 
-      {/* Hero */}
-      <section className="pt-40 pb-16 section-padding bg-background relative overflow-hidden">
-        <div className="absolute inset-0 pointer-events-none">
-          <motion.div 
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-            className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full blur-[180px]"
-            style={{ background: "hsla(336, 71%, 27%, 0.1)" }}
-          />
-        </div>
-
-        <div className="container-wide relative z-10">
-          <Link to="/realizacje" className="inline-flex items-center gap-2 text-foreground/60 hover:text-primary transition-colors mb-8">
-            <ArrowLeft className="w-4 h-4" />
-            Powrót do realizacji
+      <section className="pt-32 md:pt-40 pb-14 section-padding bg-background">
+        <div className="container-wide">
+          <Link to="/realizacje" className="inline-flex items-center gap-2 text-sm text-foreground/60 hover:text-foreground mb-10">
+            <ArrowLeft className="w-4 h-4" /> Wszystkie realizacje
           </Link>
-
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7 }}
-            >
-              <span className="inline-block text-sm font-medium text-primary uppercase tracking-wider mb-4">
-                Strona www • Rezerwacje • SEO
-              </span>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6">
-                Gierki <span className="text-gradient-premium">Activity Bar</span>
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            <div>
+              <p className="text-sm uppercase tracking-[0.18em] text-foreground/60 mb-5">Gierky Activity Bar · Strona WWW · Fotografia</p>
+              <h1 className="text-4xl md:text-5xl xl:text-6xl font-heading font-bold leading-[1.08] mb-6">
+                Najpierw zobacz grę.<br /><span className="bg-gradient-to-r from-fuchsia-400 to-sky-400 bg-clip-text text-transparent">Potem zarezerwuj.</span>
               </h1>
-              <p className="text-foreground/70 text-lg mb-8">
-                Kompleksowa realizacja strony internetowej dla najlepszego activity baru w centrum Poznania. 
-                Crazy golf, beer pong, social darts, shuffleboard i najnowsze drinki - wszystko w jednym miejscu! 
-                Projekt obejmował intuicyjny system rezerwacji, optymalizację SEO i responsywny design.
+              <p className="text-lg text-foreground/70 leading-relaxed max-w-xl mb-7">
+                Gierky to activity bar w centrum Poznania: crazy golf, darts, shuffleboard,
+                beer pong i loże dla grup. Przygotowaliśmy stronę, która pokazuje atrakcje
+                i prowadzi do rezerwacji, oraz zdjęcia wnętrz do strony i social mediów.
               </p>
-              <div className="flex flex-wrap gap-3">
-                {services.map((service) => (
-                  <div key={service.label} className="flex items-center gap-2 px-4 py-2 rounded-full bg-muted text-sm">
-                    <service.icon className="w-4 h-4 text-primary" />
-                    {service.label}
-                  </div>
+              <div className="flex flex-wrap gap-2 text-sm">
+                {["Strona WordPress", "Podstrony atrakcji", "Rezerwacja", "Fotografia wnętrz", "Opieka nad stroną"].map(label => (
+                  <span key={label} className="rounded-full px-4 py-2 bg-muted border border-border/30">{label}</span>
                 ))}
               </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.7, delay: 0.2 }}
-              className="relative"
-            >
-              <div className="rounded-2xl overflow-hidden border border-border/30">
-                <img loading="lazy" src={gierkiImg} alt="Gierki Activity Bar - strona internetowa" className="w-full" />
-              </div>
-            </motion.div>
+            </div>
+            <figure className="w-full">
+              <img src={gierkiImg} alt="Strona internetowa Gierky Activity Bar zaprojektowana przez FOTZ Studio" width="1200" height="809" loading="eager" className="w-full rounded-2xl border border-border/30" />
+            </figure>
           </div>
         </div>
       </section>
 
-      {/* About Client */}
-      <section className="section-padding bg-card">
+      <section className="section-padding bg-muted/30 border-y border-border/30">
         <div className="container-wide">
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
-            className="max-w-4xl"
-          >
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-              O <span className="text-gradient-premium">kliencie</span>
-            </h2>
-            <p className="text-foreground/70 text-lg mb-6">
-              Gierki Activity Bar to miejsce, gdzie rozrywka łączy się z wyjątkowymi drinkami. Położony w sercu Poznania, 
-              oferuje szeroki wachlarz atrakcji: od crazy golfa, przez beer pong, social darts, aż po shuffleboard. 
-              To idealne miejsce na spotkania ze znajomymi, imprezy firmowe czy wieczory kawalerskie/panieńskie.
-            </p>
-            <p className="text-foreground/70 text-lg">
-              Klient potrzebował strony, która nie tylko prezentuje ofertę, ale przede wszystkim umożliwia łatwe 
-              rezerwacje online i zachęca do odwiedzin swoim dynamicznym, młodzieżowym charakterem.
-            </p>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Challenges */}
-      <section className="section-padding bg-background">
-        <div className="container-wide">
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
-            className="max-w-3xl mb-12"
-          >
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-              Wyzwania <span className="text-gradient-premium">przed projektem</span>
-            </h2>
-            <p className="text-foreground/70">
-              Przed rozpoczęciem współpracy strona Gierki wymagała kompleksowej przebudowy, 
-              aby sprostać oczekiwaniom nowoczesnych użytkowników.
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {challenges.map((challenge, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="p-6 rounded-xl bg-card border border-border/30"
-              >
-                <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center mb-4">
-                  <span className="text-primary font-bold">{index + 1}</span>
-                </div>
-                <p className="text-foreground/80">{challenge}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Process */}
-      <section className="section-padding bg-card">
-        <div className="container-wide">
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
-            className="max-w-3xl mb-12"
-          >
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-              Nasz <span className="text-gradient-premium">proces</span>
-            </h2>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="space-y-6"
-            >
-              <div className="p-6 rounded-xl bg-muted border border-border/30">
-                <h3 className="font-heading font-bold text-xl mb-3">Analiza grupy docelowej</h3>
-                <p className="text-foreground/70">
-                  Zbadaliśmy preferencje młodych dorosłych szukających rozrywki w Poznaniu. 
-                  Zidentyfikowaliśmy kluczowe momenty decyzyjne i ścieżki rezerwacji.
-                </p>
-              </div>
-              <div className="p-6 rounded-xl bg-muted border border-border/30">
-                <h3 className="font-heading font-bold text-xl mb-3">Dynamiczny design</h3>
-                <p className="text-foreground/70">
-                  Stworzyliśmy energetyczny design z żywymi kolorami (różowy, fioletowy) oddający 
-                  atmosferę zabawy i rozrywki charakterystyczną dla marki.
-                </p>
-              </div>
-              <div className="p-6 rounded-xl bg-muted border border-border/30">
-                <h3 className="font-heading font-bold text-xl mb-3">System rezerwacji</h3>
-                <p className="text-foreground/70">
-                  Zaimplementowaliśmy intuicyjny system rezerwacji stolików i atrakcji 
-                  z integracją kalendarza i płatności online.
-                </p>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="space-y-6"
-            >
-              <div className="p-6 rounded-xl bg-muted border border-border/30">
-                <h3 className="font-heading font-bold text-xl mb-3">Prezentacja oferty</h3>
-                <p className="text-foreground/70">
-                  Każda atrakcja otrzymała dedykowaną sekcję ze zdjęciami, opisem i możliwością 
-                  bezpośredniej rezerwacji.
-                </p>
-              </div>
-              <div className="p-6 rounded-xl bg-muted border border-border/30">
-                <h3 className="font-heading font-bold text-xl mb-3">SEO lokalne</h3>
-                <p className="text-foreground/70">
-                  Optymalizacja pod frazy lokalne: "activity bar Poznań", "beer pong Poznań", 
-                  "rozrywka centrum Poznań".
-                </p>
-              </div>
-              <div className="p-6 rounded-xl bg-muted border border-border/30">
-                <h3 className="font-heading font-bold text-xl mb-3">Mobile-first</h3>
-                <p className="text-foreground/70">
-                  Responsywny design zoptymalizowany pod urządzenia mobilne - główne źródło 
-                  ruchu młodych użytkowników.
-                </p>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Results */}
-      <section className="section-padding bg-background">
-        <div className="container-wide">
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
-            className="text-center max-w-3xl mx-auto mb-12"
-          >
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-              Osiągnięte <span className="text-gradient-premium">rezultaty</span>
-            </h2>
-          </motion.div>
-
+          <p className="text-sm uppercase tracking-[0.18em] text-foreground/60 mb-4">Zakres współpracy</p>
+          <h2 className="text-3xl md:text-4xl font-heading font-bold max-w-2xl mb-10">Strona, która odpowiada<br className="hidden md:block" /> na pytanie „co tam robimy?”</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            {results.map((result, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="text-center p-8 rounded-2xl bg-card border border-border/30"
-              >
-                <div className="text-4xl md:text-5xl font-heading font-bold text-gradient-premium mb-2">
-                  {result.value}
-                </div>
-                <div className="text-lg font-medium mb-1">{result.metric}</div>
-                <p className="text-foreground/60 text-sm">{result.description}</p>
-              </motion.div>
+            {scope.map(step => (
+              <article key={step.number} className="border-t border-border/50 pt-6">
+                <p className="text-foreground/40 text-sm mb-6">{step.number}</p>
+                <h3 className="font-heading font-semibold text-xl mb-4">{step.title}</h3>
+                <p className="text-foreground/65 leading-relaxed">{step.text}</p>
+              </article>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Photo Gallery */}
-      <section className="section-padding bg-card">
-        <div className="container-wide">
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
-            className="max-w-3xl mb-12"
-          >
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-              Fotografia <span className="text-gradient-premium">wnętrz</span>
-            </h2>
-            <p className="text-foreground/70">
-              Profesjonalna sesja fotograficzna lokalu - od recepcji przez strefę gier po bar z drinkami.
+      <section className="section-padding bg-background">
+        <div className="container-wide grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          <figure className="w-full">
+            <img src={gierkyGolf} alt="Tor crazy golfa w Gierky Activity Bar" width="1200" height="800" loading="lazy" className="w-full rounded-2xl border border-border/30 aspect-[4/3] object-cover" />
+          </figure>
+          <div>
+            <p className="text-sm uppercase tracking-[0.18em] text-foreground/60 mb-4">Pomysł na komunikację</p>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">Gość decyduje,<br />zanim przyjdzie.</h2>
+            <p className="text-lg text-foreground/70 leading-relaxed mb-7">
+              Do activity baru przychodzą znajomi, grupy firmowe i wieczory kawalerskie.
+              Każda z tych osób chce szybko sprawdzić atrakcje, godziny i sposób rezerwacji.
+              Dlatego strona stawia na zdjęcia prawdziwego wnętrza i krótkie opisy gier.
             </p>
-          </motion.div>
+            <ul className="space-y-4 text-foreground/75">
+              {[
+                "Własne zdjęcia lokalu zamiast grafik z banku zdjęć.",
+                "Kontakt do rezerwacji w nagłówku, stopce i na podstronach.",
+                "Menu i dokumenty po polsku i angielsku dla gości z zagranicy.",
+              ].map(item => <li key={item} className="flex gap-3"><Check className="w-5 h-5 shrink-0 mt-0.5" />{item}</li>)}
+            </ul>
+            <a href="https://gierky.pl/" target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex items-center gap-2 underline underline-offset-4">
+              Zobacz stronę gierky.pl<span className="sr-only"> — nowa karta</span> <ArrowRight className="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+      </section>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <section className="section-padding bg-muted/30 border-y border-border/30">
+        <div className="container-wide">
+          <h2 className="text-3xl font-heading font-bold mb-3">Fotografia wnętrz</h2>
+          <p className="text-foreground/65 mb-8 max-w-2xl">Sesja obejmowała salę, strefy gier, loże, bar i recepcję. Zdjęcia służą na stronie i w social mediach lokalu.</p>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {galleryImages.map((image, index) => (
-              <motion.button
+              <button
                 type="button"
+                key={image.src}
                 aria-label={`Powiększ: ${image.alt}`}
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
-                className="relative aspect-square rounded-xl overflow-hidden cursor-pointer group focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
-                onClick={() => openLightbox(index)}
+                onClick={() => { setLightboxIndex(index); setLightboxOpen(true); }}
+                className="relative aspect-square rounded-xl overflow-hidden group focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
               >
-                <img loading="lazy" 
-                  src={image.src} 
-                  alt={image.alt} 
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300" />
-              </motion.button>
+                <img src={image.src} alt={image.alt} loading="lazy" width="400" height="400" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              </button>
             ))}
           </div>
         </div>
@@ -383,134 +166,27 @@ const CaseStudyGierki = () => {
         currentIndex={lightboxIndex}
         isOpen={lightboxOpen}
         onClose={() => setLightboxOpen(false)}
-        onNavigate={navigateLightbox}
+        onNavigate={setLightboxIndex}
       />
 
-      {/* Recommendations */}
-      <section className="section-padding bg-card">
-        <div className="container-wide">
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
-            className="max-w-3xl mb-12"
-          >
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-              Rekomendacje na <span className="text-gradient-premium">przyszłość</span>
-            </h2>
-            <p className="text-foreground/70">
-              Na podstawie analizy wyników i trendów rynkowych, rekomendujemy dalszy rozwój projektu.
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            {recommendations.map((rec, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="flex items-start gap-4 p-6 rounded-xl bg-muted border border-border/30"
-              >
-                <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
-                  <ArrowRight className="w-4 h-4 text-primary" />
-                </div>
-                <p className="text-foreground/80">{rec}</p>
-              </motion.div>
-            ))}
+      <section className="section-padding bg-background">
+        <div className="container-wide max-w-3xl text-center">
+          <p className="text-sm uppercase tracking-[0.18em] text-foreground/60 mb-4">Gastronomia · Rozrywka · Obiekty</p>
+          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-5">Pokażmy, co czeka<br />na gości w Twoim lokalu.</h2>
+          <p className="text-lg text-foreground/65 mb-8">
+            Przygotujemy stronę, zdjęcia i drogę do rezerwacji dopasowaną do Twojej oferty
+            oraz sposobu przyjmowania gości.
+          </p>
+          <div className="flex flex-wrap justify-center gap-3">
+            <Button asChild size="lg" className="bg-gradient-brand text-white">
+              <Link to={enquiryHref("web", "website")}>Porozmawiajmy o stronie <ArrowRight className="w-4 h-4 ml-2" /></Link>
+            </Button>
+            <Button asChild size="lg" variant="outline">
+              <Link to="/dla-kogo/gastronomia">Marketing dla gastronomii</Link>
+            </Button>
           </div>
         </div>
       </section>
-
-      {/* CTA */}
-      <section className="section-padding bg-background">
-        <div className="container-wide">
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
-            className="max-w-2xl mx-auto text-center"
-          >
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-              Potrzebujesz podobnej <span className="text-gradient-premium">realizacji?</span>
-            </h2>
-            <p className="text-foreground/70 text-lg mb-8">
-              Stworzymy dla Ciebie stronę, która przyciągnie klientów i zwiększy rezerwacje.
-            </p>
-            <Button variant="hero" size="xl" asChild>
-              <Link to="/kontakt" className="group">
-                Bezpłatna konsultacja
-                <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-              </Link>
-            </Button>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* SEO Article Section */}
-      <section className="py-20 bg-card">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="prose prose-lg max-w-none"
-          >
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-              Case study Gierki Activity Bar — Strona internetowa z systemem rezerwacji dla gastronomii i rozrywki
-            </h2>
-            <p className="text-muted-foreground mb-4">
-              Projekt dla Gierki Activity Bar to przykład, jak profesjonalne strona internetowa z systemem rezerwacji przekłada się
-              na realne wyniki biznesowe. Wzrost rezerwacji online o 180% po wdrożeniu nowej strony z systemem rezerwacji i lokalnym SEO. Fotz Studio realizuje podobne projekty
-              dla firm z branży gastronomii i rozrywki i pokrewnych — każdorazowo z indywidualnym podejściem
-              do celów i specyfiki klienta.
-            </p>
-            <p className="text-muted-foreground mb-6">
-              Każde case study w naszym portfolio pokazuje nie tylko efekt wizualny, ale przede wszystkim
-              mierzalne wyniki: wzrost ruchu organicznego, więcej zapytań ofertowych, wyższy współczynnik
-              konwersji lub zwiększona sprzedaż online. Wierzymy, że marketing musi przynosić zwrot
-              z inwestycji — i to udowadniamy konkretnymi liczbami.
-            </p>
-
-            <h2 className="text-3xl font-heading font-bold mb-6">
-              Jak pracujemy — proces realizacji projektu od briefu do efektów
-            </h2>
-            <p className="text-muted-foreground mb-4">
-              Każdy projekt w Fotz Studio przebiega według sprawdzonego procesu: konsultacja i brief,
-              analiza rynku i konkurencji, strategia i koncepcja, projektowanie i realizacja,
-              testy i wdrożenie, optymalizacja i wsparcie po-wdrożeniowe. Klient jest informowany
-              o postępach na każdym etapie — żadnych niespodzianek w trakcie i po realizacji.
-            </p>
-            <p className="text-muted-foreground mb-6">
-              Transparentność to nasz standard. Regularnie raportujemy wyniki, proaktywnie
-              informujemy o problemach i rekomendujemy kolejne kroki. Długoterminowe relacje
-              z klientami to nasz największy sukces — wiele firm współpracuje z nami od lat.
-            </p>
-
-            <h2 className="text-3xl font-heading font-bold mb-6">
-              Potrzebujesz podobnego projektu? Sprawdź nasze usługi stron internetowych dla gastronomii
-            </h2>
-            <p className="text-muted-foreground">
-              Jeśli szukasz partnera do realizacji projektu podobnego do Gierki Activity Bar, zapraszamy
-              do kontaktu. Oferujemy bezpłatną konsultację i wycenę. Fotz Studio realizuje
-              projekty dla firm z całej Polski — pracujemy zdalnie z pełną efektywnością.
-              Skontaktuj się z nami, by omówić Twój projekt i sprawdzić, czy możemy osiągnąć
-              podobne wyniki dla Twojej firmy.
-            </p>
-          
-            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
-              <Link to="/realizacje" className="text-primary hover:underline font-medium text-sm">→ Realizacje</Link>
-              <Link to="/konsultacja" className="text-primary hover:underline font-medium text-sm">→ Bezpłatna konsultacja</Link>
-              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
-              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
     </Layout>
   );
 };

@@ -33,6 +33,7 @@ export const hydratedPages: Record<string, () => Promise<{ default: ComponentTyp
   "/uslugi/marketing-internetowy": () => import("@/pages/MarketingInternetowy"),
   "/content-marketing/strategia": () => import("@/pages/ContentMarketing"),
   "/performance-marketing/instagram-ads": () => import("@/pages/InstagramAds"),
+  "/performance-marketing/meta-ads": () => import("@/pages/FacebookInstagramAds"),
   "/uslugi/strony-internetowe/legnica": () => import("@/pages/StronyInternetoweLegnica"),
 };
 
