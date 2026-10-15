@@ -24,17 +24,18 @@ const data = {
     }
   ],
   "sections": [
+    {"title":"Kampanie Meta Ads dla B2B — branża i proces sprzedaży","text":"W usługach B2B reklama często rozpoczyna rozmowę, a decyzja zapada po wycenie, konsultacji lub porównaniu dostawców. Dlatego cel kampanii ustalamy razem ze sposobem kwalifikowania kontaktów. Formularz może pytać o rodzaj firmy, potrzebny zakres i planowany termin. Zbyt wiele pól utrudnia wysłanie zapytania; zbyt mało może oznaczać rozmowy z osobami, którym oferta nie odpowiada. Dobieramy pytania do etapu sprzedaży. Kreacja powinna pokazać konkretne zastosowanie, produkt albo realizację i wyjaśnić, do kogo jest skierowana. W raporcie oddzielamy zgłoszenia od kontaktów pasujących do oferty. Jeśli firma zapisuje wynik rozmowy, można porównać koszt pozyskania takiego kontaktu z liczbą przygotowanych ofert. Branża wpływa również na sezonowość i długość decyzji. Przed testem ustalamy więc czas obserwacji i dane, które przekaże zespół sprzedaży. Dzięki temu ocena reklamy w mediach społecznościowych odnosi się do Twojego biznesu."},
     {
       "title": "Agencja Meta Ads — kampanie dla firm z Warszawy",
-      "text": "Tworzymy kampanie Facebook i Instagram od oferty po pomiar. FOTZ Studio pracuje z Poznania; współpracę z firmami z Warszawy prowadzimy zdalnie. Brief, akceptację materiałów i omówienie wyników można przeprowadzić online. Sesję, nagrania lub spotkanie na miejscu uzgadniamy oddzielnie. Nasz zespół nie deklaruje warszawskiego biura. Na początku wybieramy jedną ofertę lub grupę produktów i ustalamy, jaki problem potencjalnych klientów rozwiązuje. Dzięki temu reklama, strona docelowa oraz rozmowa z firmą przekazują spójne informacje."
+      "text": "Tworzymy kampanie Facebook i Instagram od oferty po pomiar. FOTZ Studio pracuje z Poznania; współpracę z firmami z Warszawy prowadzimy zdalnie. Brief, akceptację materiałów i omówienie wyników można przeprowadzić online. Sesję, nagrania lub spotkanie na miejscu uzgadniamy oddzielnie. Na początku wybieramy jedną ofertę lub grupę produktów i ustalamy, jaki problem potencjalnych klientów rozwiązuje. Dzięki temu reklama, strona docelowa oraz rozmowa z firmą przekazują spójne informacje."
     },
     {
       "title": "Czym jest Facebook Ads i jak działa system reklamowy Meta?",
-      "text": "Facebook Ads to płatny sposób prezentacji oferty w ekosystemie Meta. Facebook i Instagram pozwalają wykorzystać obraz, tekst oraz film do pokazania produktu lub usługi. System reklamowy Meta pomaga dobierać emisję do wskazanego celu, ale nie zastępuje strategii i obsługi klienta. Typ kampanii zależy od tego, czy zależy Ci na rozpoznawalności, zapytaniach czy zakupach. Specjalista powinien wyjaśnić wybór ustawień oraz sposób oceny. Nie przyjmujemy, że duży zasięg automatycznie oznacza sprzedażowy sukces."
+      "text": "Facebook Ads to płatny sposób prezentacji oferty w ekosystemie Meta. Facebook i Instagram pozwalają wykorzystać obraz, tekst oraz film do pokazania produktu lub usługi. System reklamowy Meta pomaga dobierać emisję do wskazanego celu, ale nie zastępuje strategii i obsługi klienta. Typ kampanii dobieramy do celu: rozpoznawalności, zapytań lub zakupów. Specjalista powinien wyjaśnić wybór ustawień oraz sposób oceny. Nie przyjmujemy, że duży zasięg automatycznie oznacza sprzedażowy sukces."
     },
     {
       "title": "Reklama na Facebooku — grupa odbiorców i obszar obsługi",
-      "text": "Firma usługowa z dojazdem potrzebuje innego zasięgu niż sklep internetowy sprzedający w całej Polsce. Uzgadniamy lokalizację, ograniczenia oferty i możliwości obsługi zgłoszeń. Jeśli przyjmujesz zlecenia także w Piasecznie lub Pruszkowie, warto podać to w ofercie i formularzu. To przykład planowania, a nie lista naszych klientów. Targetowanie jest oparte na opcjach i sygnałach platformy; nie gwarantuje miejsca zamieszkania każdej osoby. Pytania o usługę i lokalizację pomagają zweryfikować, czy kontakt pasuje do Twojego biznesu."
+      "text": "Firma usługowa z dojazdem potrzebuje innego zasięgu niż sklep internetowy sprzedający w całej Polsce. Uzgadniamy lokalizację, ograniczenia oferty i możliwości obsługi zgłoszeń. Jeśli przyjmujesz zlecenia także w Piasecznie lub Pruszkowie, warto podać to w ofercie i formularzu. To przykład planowania, a nie lista naszych klientów. Targetowanie jest oparte na opcjach i sygnałach platformy; nie daje pewności, że każdy odbiorca mieszka w wybranym obszarze. Pytania o usługę i lokalizację pomagają zweryfikować, czy kontakt pasuje do Twojego biznesu."
     },
     {
       "title": "Facebook i Instagram — kreacje dopasowane do marki",
@@ -53,21 +54,21 @@ const data = {
       ]
     },
     {
-      "title": "Cennik kampanii Facebook i budżet reklamowy",
-      "text": "Wycena ma trzy części: materiały, prowadzenie kampanii i budżet emisji płacony platformie. Koszt zależy od liczby ofert, kreacji, integracji oraz częstotliwości pracy. Przed startem ustalamy limit wydatków i zasady jego zmiany. Cennik z jedną stawką za wszystkie branże nie uwzględnia tych różnic. Nie obiecujemy stałego CPC dla Warszawy ani określonego ROAS. ROAS porównuje przychód przypisany reklamie z wydatkiem na emisję; pełny zwrot z inwestycji wymaga uwzględnienia również marży, zwrotów i kosztów obsługi. Budżet zwiększamy dopiero po uzgodnieniu decyzji."
+      "title": "Koszt kampanii Facebook i budżet reklamowy",
+      "text": "Wycena ma trzy części: materiały, prowadzenie kampanii i budżet emisji płacony platformie. Koszt zależy od liczby ofert, kreacji, integracji oraz częstotliwości pracy. Przed startem ustalamy limit wydatków i zasady jego zmiany. Cennik z jedną stawką za wszystkie branże nie uwzględnia tych różnic. Nie obiecujemy stałego CPC dla Warszawy ani określonego ROAS. ROAS porównuje przychód przypisany reklamie z wydatkiem na emisję; pełny zwrot z inwestycji wymaga uwzględnienia również marży, zwrotów i kosztów obsługi. Budżet zwiększamy dopiero po Twojej akceptacji."
     },
     {
       "title": "Optymalizacja kampanii Facebook Ads i konwersja",
-      "text": "Sprawdzamy zdarzenia, stronę docelową oraz zgodność reklamy z ofertą. Wdrożenie Piksela Meta lub Conversions API uzgadniamy z administratorem strony i mechanizmem zgód. Google Analytics może uzupełnić analizę ruchu, lecz różne narzędzia mogą przypisywać wynik inaczej. Specjalista zajmujący się optymalizacją kampanii powinien pokazać, co zmienia i dlaczego. Analizujemy dane oraz informacje od firmy o jakości kontaktów. Wymierny wynik biznesowy to coś więcej niż tanie kliknięcie. Nie deklarujemy efektów po 48 godzinach ani automatycznego wzrostu w każdym miesiącu."
+      "text": "Sprawdzamy zdarzenia, stronę docelową oraz zgodność reklamy z ofertą. Wdrożenie Piksela Meta lub Conversions API uzgadniamy z administratorem strony i dostosowujemy do mechanizmu zgód. Google Analytics może uzupełnić analizę ruchu, lecz różne narzędzia mogą przypisywać wynik inaczej. Specjalista zajmujący się optymalizacją kampanii powinien pokazać, co zmienia i dlaczego. Analizujemy dane oraz informacje od firmy o jakości kontaktów. Wymierny wynik biznesowy to coś więcej niż tanie kliknięcie. Wnioski z testu omawiamy po zebraniu danych potrzebnych do oceny kampanii."
     },
     {
       "title": "Remarketing i rozpoznawalność marki",
       "text": "Nowy odbiorca potrzebuje wyjaśnienia, czym jest produkt i dlaczego warto go rozważyć. Osoba znająca ofertę może szukać porównania, demonstracji lub odpowiedzi na pytanie. Remarketing rozważamy wtedy, gdy są odpowiednie dane, zgody i wystarczająca wielkość grup odbiorców. Nie jest obowiązkowym składnikiem każdego projektu. Kontrolujemy częstotliwość emisji i dobieramy komunikaty do celu. Rozpoznawalność marki oceniamy oddzielnie od zapytań. Strategie reklamowe powinny uwzględniać czas decyzji oraz zasoby firmy."
     },
     {
-      "title": "Agencja social media Warszawa — jak współpracować zdalnie?",
+      "title": "Agencja social media a kampanie płatne — dwa osobne zakresy",
       "text": "Prowadzenie social media obejmuje uzgodniony plan publikacji, materiały i ewentualną moderację. Kampanie płatne skupiają się na emisji i jej ocenie. Jako agencja social media obsługująca klientów zdalnie możemy połączyć oba zakresy, ale rozpisujemy je osobno. Ustalamy kanały, liczbę materiałów, akceptacje i odpowiedzialność za wiadomości. Marketing w mediach społecznościowych ma wspierać ofertę firmy; reakcje i obserwujący nie są równoznaczni z klientami. Jeśli chcesz współpracować tylko przy wybranej kampanii, nie musisz zamawiać codziennej obsługi wszystkich profili.",
-      "href": "/social-media/obsluga",
+      "href": "/agencja-social-media/warszawa",
       "link": "Zakres obsługi social media"
     },
     {
@@ -89,8 +90,8 @@ const data = {
       "text": "Współpracę zaczynamy od ustalenia właściciela zasobów i potrzebnych uprawnień. Firma zachowuje kontrolę nad kontem, profilem oraz danymi. Nie potrzebujemy prywatnego hasła przekazanego w wiadomości. Jeśli konto ma wcześniejsze kampanie, sprawdzamy ich strukturę, zdarzenia i materiały w uzgodnionym zakresie. Dostępy do narzędzi Meta Business oraz sposób przekazania konfiguracji po zakończeniu współpracy opisujemy przed startem. Ustalamy także, kto zatwierdza reklamę, kto płaci za emisję i kto reaguje na problemy z kontem. Takie zasady pomagają prowadzić kampanie bez niejasnego podziału odpowiedzialności."
     },
     {
-      "title": "Jak porównać propozycje agencji?",
-      "text": "Nie każda oferta obsługi zawiera produkcję wideo, przebudowę strony i integrację formularza. Zanim porównasz ceny, zestaw liczbę kreacji, zakres konfiguracji, częstotliwość pracy i raportowanie. Sprawdź, czy specjalista wyjaśnia dobór celu kampanii oraz zasady kontroli wydatków. Dobra propozycja powinna także wskazywać materiały i decyzje potrzebne od Ciebie. Agencja social media w Warszawie może realizować projekt lokalnie albo zdalnie; o jakości współpracy decyduje konkretny proces i potwierdzone realizacje. Nasze warunki, koszty produkcji oraz termin akceptujesz przed rozpoczęciem prac. Dodatkowe zadania wymagają wcześniejszego uzgodnienia."
+      "title": "Agencja Facebook Ads — jak porównać zakres i cennik?",
+      "text": "Nie każda oferta obsługi zawiera produkcję wideo, przebudowę strony i integrację formularza. Zanim porównasz ceny, zestaw liczbę kreacji, zakres konfiguracji, częstotliwość pracy i raportowanie. Sprawdź, czy specjalista wyjaśnia dobór celu kampanii oraz zasady kontroli wydatków. Dobra propozycja powinna także wskazywać materiały i decyzje potrzebne od Ciebie. Agencja może realizować projekt lokalnie albo zdalnie; o jakości współpracy decyduje konkretny proces i potwierdzone realizacje. Nasze warunki, koszty produkcji oraz termin akceptujesz przed rozpoczęciem prac. Dodatkowe zadania wymagają wcześniejszego uzgodnienia."
     }
   ],
   "faqs": [

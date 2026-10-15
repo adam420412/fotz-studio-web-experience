@@ -3,14 +3,14 @@ import { ArrowUpRight, Check } from "lucide-react";
 import { business } from "@/data/business.mjs";
 
 export interface QuoteOption { title: string; description: string; items: string[]; href?: string }
-export function QuoteOptions({ options }: { options: QuoteOption[] }) {
+export function QuoteOptions({ options, note = business.quote }: { options: QuoteOption[]; note?: string }) {
   return <div>
     <div className="grid md:grid-cols-3 gap-5">{options.map(option => <article key={option.title} className="rounded-2xl border border-border p-6 md:p-8 bg-card flex flex-col">
       <h3 className="text-2xl font-heading mb-3">{option.title}</h3><p className="text-muted-foreground mb-5">{option.description}</p>
       <p className="text-lg font-semibold mb-5">Wycena indywidualna</p>
       <ul className="space-y-3 mb-6">{option.items.map(item => <li key={item} className="flex gap-2 text-sm"><Check className="w-4 h-4 flex-shrink-0 mt-0.5" aria-hidden />{item}</li>)}</ul>
       <Link className="dv-btn dv-btn-primary mt-auto" to={option.href || '/kontakt'}>Omów zakres <ArrowUpRight className="w-4 h-4" /></Link>
-    </article>)}</div><p className="text-sm text-muted-foreground mt-6">{business.quote}</p>
+    </article>)}</div><p className="text-sm text-muted-foreground mt-6">{note}</p>
   </div>;
 }
 export const websiteOptions: QuoteOption[] = [
