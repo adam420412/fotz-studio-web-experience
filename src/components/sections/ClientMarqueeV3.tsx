@@ -42,7 +42,7 @@ export function ClientMarqueeV3() {
             className="flex items-center gap-10"
           >
             <span
-              className="flex items-center justify-center bg-white px-5 py-2"
+              className="flex items-center justify-center bg-white dark:bg-white px-5 py-2"
               style={{ borderRadius: 12, height: 56 }}
             >
               <img
