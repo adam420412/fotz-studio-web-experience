@@ -36,7 +36,7 @@ const sections = [
   {
     "title": "Pozycjonowanie stron internetowych w Legnicy — osobny zakres obsługi",
     "text": "Wdrożenie nowej strony i regularne pozycjonowanie to różne zakresy. Pozycjonowanie strony wymaga oceny danych, konkurencji, treści i problemów technicznych. Jeśli potrzebujesz widoczności dla usług w Legnicy, strategia pozycjonowania strony powinna uwzględniać ofertę oraz rzeczywisty obszar działania. Pozycjonowanie lokalne może obejmować także spójność danych firmy i wizytówkę Google. Nie tworzymy fikcyjnych oddziałów ani obietnic TOP 10. Agencja SEO powinna pokazać, jakie prace wykonuje i jak ocenia widoczność. Zakres usług SEO oraz późniejszy koszt ustalamy osobno.",
-    "href": "/seo/pozycjonowanie",
+    "href": "/pozycjonowanie/legnica",
     "link": "Poznaj zakres pozycjonowania dla firm z Legnicy"
   },
   {

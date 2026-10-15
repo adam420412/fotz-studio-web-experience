@@ -18,6 +18,7 @@ export const enquiryVariants = {
   instagram_ads: 'Kampania Instagram Ads', content_plan: 'Strategia treści',
   campaign_audit: 'Przegląd kampanii reklamowej',
   video_plan: 'Strategia i regularne materiały video',
+  product_photos: 'Fotografia produktowa',
   audit: 'Audyt i plan wdrożeń', ongoing: 'Stałe działania SEO',
 };
 export const validService = value => Object.hasOwn(enquiryServices, value) ? value : 'other';
@@ -40,7 +41,7 @@ export function enquiryHref(service, variant) {
 export function serviceForPath(path) {
   if (/^\/(seo(?:\/|$)|.*pozycjonowanie)/.test(path)) return 'seo';
   if (/social-media/.test(path)) return 'social';
-  if (/produkcja-(filmow|video)|video-marketing/.test(path)) return 'video';
+  if (/produkcja-(filmow|video)|video-marketing/.test(path) || /^\/uslugi\/fotografia(?:[-/]|$)/.test(path)) return 'video';
   if (/marketing-internetowy|agencja-marketing|reklama-facebook/.test(path) || /^\/(content-marketing|performance-marketing)(\/|$)/.test(path)) return 'marketing';
   if (/strony-internetowe|sklepy-internetowe|cennik-tworzenia-stron/.test(path)) return 'web';
   return 'other';

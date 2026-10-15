@@ -2,6 +2,7 @@
 export function getWorkCollection(pathname) {
   const path = pathname.replace(/\/+$/, '') || '/';
   if (path === '/agencja-marketingowa/poznan') return 'localAgency';
+  if (path === '/pozycjonowanie/legnica') return 'web';
   const publicOffer = /^\/(?:uslugi(?:\/|$)|agencja[^/]*(?:\/|$)|social-media(?:\/|$)|content-marketing(?:\/|$)|performance-marketing(?:\/|$)|seo(?:\/|$)|strony-internetowe(?:\/|$)|dla-kogo(?:\/|$)|ai(?:\/|$)|fotograf[^/]*|kampanie[^/]*|wizualizacje-3d(?:\/|$))/.test(path);
   const editorial = path.startsWith('/blog/') && /(?:social-media|instagram|facebook|tiktok|reklam|marketing|fotograf|zdjeci|zdjec|video|wideo|film|rolk|branding|identyfikac|stron|landing-page|seo|ecommerce)/.test(path);
   if (!publicOffer && !editorial && !['/', '/o-nas', '/blog', '/poradniki', '/cennik'].includes(path)) return null;

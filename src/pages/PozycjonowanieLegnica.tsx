@@ -1,396 +1,108 @@
 import { SEOHead } from "@/components/seo/SEOHead";
-import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
-import { Layout } from "@/components/layout/Layout";
-import { Search, TrendingUp, MapPin, Users, Clock, Award } from "lucide-react";
-
+import { ServiceEditorial } from "@/components/ServiceEditorial";
+const data = {
+  "title": "Pozycjonowanie stron Legnica — SEO i tworzenie stron WWW",
+  "description": "Pozycjonowanie stron WWW dla firm z Legnicy: audyt SEO, tworzenie treści i optymalizacja. Wizytówka Google, zakres prac i wycena dopasowana do potrzeb firmy.",
+  "path": "/pozycjonowanie/legnica",
+  "h1": "Pozycjonowanie stron WWW Legnica — lokalne SEO",
+  "lead": "Pomagamy uporządkować stronę, treści i lokalną widoczność firmy, aby odbiorca mógł znaleźć właściwą ofertę i łatwo się skontaktować. Zaczynamy od danych, problemów i zakresu do wdrożenia. FOTZ Studio pracuje z Poznania; firmy z Legnicy obsługujemy zdalnie.",
+  "scope": [
+    {
+      "title": "Audyt i plan prac",
+      "text": "Sprawdzamy indeksowanie, strukturę oferty, linki i dane Search Console. Otrzymujesz priorytety, zakres odpowiedzialności oraz listę zmian potrzebnych na stronie.",
+      "href": "/seo/audyt",
+      "link": "Zobacz zakres audytu SEO"
+    },
+    {
+      "title": "Treści i optymalizacja",
+      "text": "Dopracowujemy podstrony usług, nagłówki, meta opisy i odnośniki. Łączymy odpowiedź na potrzeby odbiorcy z technicznym przygotowaniem strony do wyszukiwarki."
+    },
+    {
+      "title": "Lokalna widoczność",
+      "text": "Porządkujemy informacje o obszarze obsługi, kontakcie i ofercie. Prace nad Profilem Firmy w Google, mapą oraz lokalnymi wzmiankami rozpisujemy w osobnym zakresie."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Legnica, Lubin i okolice — pozycjonowanie lokalne",
+      "text": "Dla firm z Legnicy punktem wyjścia jest rzeczywisty sposób działania. Punkt stacjonarny potrzebuje poprawnego adresu, godzin i wskazówek dojazdu. Firma usługowa dojeżdżająca do klienta powinna opisać zasięg, warunki i koszt dojazdu. Jeśli obsługujesz również Lubin lub inne miejscowości zagłębia miedziowego, uwzględnimy je tam, gdzie pomagają odbiorcy podjąć decyzję. Samo powielenie tekstu i zamiana nazwy miasta nie wyjaśnia oferty. Dobieramy frazy z nazwą miasta do usług, które rzeczywiście świadczysz. Lokalny hydraulik, zakład produkcyjny i sklep mają inne zapytania oraz ścieżki kontaktu. Specyfika branży decyduje o planie treści."
+    },
+    {
+      "title": "Audyt SEO — dlaczego strona WWW nie pojawia się w Google?",
+      "text": "Najpierw sprawdzamy, czy wyszukiwarka może dotrzeć do strony i odczytać jej treść. Analizujemy statusy odpowiedzi, przekierowania, canonical, blokady indeksowania i mapę witryny. Następnie porównujemy informacje w Search Console z tym, co jest obecnie opublikowane. Raport może pokazywać starszy skan. Sam status niezindeksowanej podstrony nie wskazuje jeszcze jednej przyczyny. Kontrolujemy także podobne adresy, jakość opisu, odnośniki wewnętrzne i działanie na telefonie. Audyt kończy się listą prac: co poprawić, kto może to wdrażać i jak sprawdzić rezultat. Zgłoszenie adresu do indeksowania nie oznacza, że Google już go dodało."
+    },
+    {
+      "title": "Pozycjonowanie stron internetowych a tworzenie stron WWW",
+      "text": "Pozycjonowanie rozwija widoczność istniejącej witryny, natomiast tworzenie stron obejmuje projekt i uruchomienie nowego serwisu. Można połączyć te zadania, ale warto oddzielić ich zakres i koszt. Jeśli strona internetowa utrudnia kontakt, ma nieczytelną ofertę albo brakuje dostępu do edycji, planujemy potrzebne poprawki lub przebudowę. Tworzenie stron internetowych powinno uwzględniać adresy, przekierowania i zachowanie wartościowych materiałów. Strony firmowe nie zawsze wymagają wymiany technologii. Najpierw oceniamy, co da się poprawić w obecnym systemie, a co wymaga pracy programisty.",
+      "href": "/uslugi/strony-internetowe/legnica",
+      "link": "Strony internetowe Legnica — projekt i wdrożenie"
+    },
+    {
+      "title": "Frazy, konkurencja i treści odpowiadające na zapytania",
+      "text": "Sprawdzamy, czego szukają osoby zainteresowane ofertą i jakie wyniki już otrzymują. Fraza powinna pasować do jednej czytelnej podstrony, zamiast kierować kilka podobnych adresów do tego samego celu. Analiza konkurencji pomaga zrozumieć oczekiwany zakres informacji; treści przygotowujemy na podstawie Twojej firmy. Opisujemy zastosowania, ograniczenia, proces, materiały potrzebne do wyceny i odpowiedzi na pytania klientów. Branżowy przykład lub zdjęcie realizacji może wyjaśnić więcej niż ogólny slogan. Nagłówek porządkuje temat, a meta opis pomaga przedstawić zawartość przed kliknięciem. Nie zastępujemy konkretów listą słów kluczowych."
+    },
+    {
+      "title": "Wizytówka Google i mapa — spójne dane firmy",
+      "text": "Profil Firmy w Google, często nazywany wizytówką Google, uzupełnia witrynę. Sprawdzamy nazwę, kategorię, dane kontaktowe, godziny, adres strony i zgodność z faktyczną działalnością. Dla firm usługowych ważny jest także obszar obsługi. Uzupełnienie profilu wymaga uprawnionego dostępu oraz prawdziwych informacji. Nie tworzymy pozornych oddziałów. Widoczność w Mapach Google zależy również od lokalizacji osoby szukającej i konkurencji, dlatego nie obiecujemy identycznej pozycji dla każdego odbiorcy. Opinie powinny pochodzić od rzeczywistych klientów. Wyceniamy obsługę profilu razem z określeniem, kto aktualizuje dane i odpowiada na pytania."
+    },
+    {
+      "title": "Optymalizacja strony i wsparcie techniczne",
+      "text": "Sprawdzamy, czy odbiorca może wygodnie wyszukiwać informacje, kliknąć telefon lub wysłać formularz na urządzeniu mobilnym. Kontrolujemy wielkość obrazów, stabilność układu i podstawowe parametry ładowania. Poprawiamy odnośniki prowadzące do właściwych ofert oraz usuwamy błędne przejścia. Dane strukturalne opisują fakty widoczne na stronie; nie dodajemy fikcyjnych ocen ani usług. Wsparcie techniczne może obejmować wdrożenie, współpracę z administratorem lub przygotowanie zaleceń. Dostępne zasoby i technologia wpływają na harmonogram. Każdą istotną zmianę sprawdzamy po publikacji, a nie tylko w pliku roboczym."
+    },
+    {
+      "title": "Sklepy internetowe — SEO dla firm z Legnicy",
+      "text": "Sklepy internetowe potrzebują uporządkowanych kategorii, kart produktów, wariantów i filtrów. Sprawdzamy, które adresy mają być widoczne w Google oraz czy podobne wersje nie konkurują ze sobą. Opis produktu powinien pomagać porównać cechy, dostępność i sposób zamówienia. Jeśli zasięg jest ogólnopolski, strategia nie powinna ograniczać się do nazwy Legnica. Oddzielamy ofertę lokalną od sprzedaży wysyłkowej. Dla producentów i usług B2B uwzględniamy dłuższy proces decyzji, dokumentację, realizacje i pytania o parametry. Zakres dopasowujemy do indywidualnych potrzeb i możliwości aktualizacji asortymentu."
+    },
+    {
+      "title": "Google Ads i reklama sponsorowana a pozycjonowanie",
+      "text": "Google Ads (dawniej Google AdWords) pozwala prowadzić płatną emisję, a pozycjonowanie dotyczy widoczności organicznej. To odrębne zakresy pracy i budżety. Reklamy Google można rozważyć, gdy firma potrzebuje testu oferty lub wsparcia wybranego sezonu, lecz płatna kampania nie zapewnia wyższej pozycji organicznej. Wyniki sponsorowane oraz bezpłatne analizujemy osobno. W szerszym planie SEM kanały mogą się uzupełniać, jeśli mają jasny cel i działający pomiar. Najpierw sprawdzamy stronę docelową oraz sposób obsługi zgłoszeń. Dobór kanału wynika z popytu, marży i budżetu, a nie z obowiązku zakupu całego pakietu."
+    },
+    {
+      "title": "Widoczność w Google i formularz — jak oceniamy zapytania?",
+      "text": "Raportujemy wykonane prace, dane i następne decyzje. Search Console pokazuje wyświetlenia, kliknięcia oraz zapytania, na które witryna pojawiała się w wynikach wyszukiwania. W analityce strony sprawdzamy ruch i uzgodnione zdarzenia, a dane z formularza lub CRM pomagają ocenić jakość kontaktów. Kliknięcie telefonu nie potwierdza rozmowy, a wysłany formularz nie oznacza sprzedaży. Jeśli firma zapisuje wynik kontaktu, łatwiej porównać wejścia z realnymi potrzebami odbiorców. Pierwsze efekty oceniamy w kontekście wcześniejszych danych, sezonowości i zmian na stronie. Algorytm, działania konkurencji i stan witryny wpływają na tempo zmian."
+    },
+    {
+      "title": "Wycena pozycjonowania — zakres, odpowiedzialność i współpraca",
+      "text": "Koszt ustalamy po poznaniu adresu strony, usług, obszaru działania i dostępu do danych. W ofercie rozpisujemy audyt, treści, prace techniczne, raportowanie oraz ewentualne koszty publikacji. Pozyskiwanie linków z lokalnych serwisów rozważamy tylko wtedy, gdy publikacja ma sens dla odbiorcy i jest zgodna z zasadami wyszukiwarki. Uzgadniamy, które poprawki wykonuje FOTZ Studio, a które administrator. Specjalista powinien wyjaśnić priorytety i ograniczenia przed rozpoczęciem pracy. Nie trzeba zamawiać stałej obsługi, aby ustalić pierwszy etap. Możemy zacząć od analizy i planu, a dalsze wdrożenia rozłożyć zgodnie z budżetem."
+    }
+,
+{
+  "title": "Podstrona usługi — od widoczności do kontaktu",
+  "text": "Osoby, które szukają usług, potrzebują jasnej odpowiedzi: co robisz, na jakim obszarze i jak uzyskać wycenę. Dlatego podstrona powinna pokazywać zakres, realizacje oraz warunki współpracy. Sprawdzamy, czy ruch na stronie prowadzi do właściwej oferty, a nie do ogólnej listy haseł. Informacje o zapytaniach z Google pomagają ustalić, które pytania warto wyjaśnić wcześniej. Nowoczesne strony mogą wyświetlać atrakcyjne animacje, ale najważniejsza pozostaje czytelność i sprawny kontakt. To, czy pozycjonowanie przynosi efekty, oceniamy na podstawie danych i celu firmy. Widoczność w wynikach lokalnych oraz linki z lokalnych publikacji analizujemy wraz z jakością odwiedzin. Oferta dla Legnicy i zagłębia miedziowego powinna jasno odróżniać obsługę na miejscu od dojazdu."
+}
+  ],
+  "faqs": [
+    {
+      "question": "Ile kosztuje pozycjonowanie stron w Legnicy?",
+      "answer": "Wycena zależy od stanu strony, liczby ofert, konkurencji i zakresu wdrożeń. Prześlij adres witryny oraz cel. Przygotujemy propozycję z rozdzieleniem prac jednorazowych, regularnych i kosztów zewnętrznych."
+    },
+    {
+      "question": "Kiedy pojawią się pierwsze efekty SEO?",
+      "answer": "Nie ma jednego terminu dla każdej witryny. Najpierw ustalamy punkt odniesienia i problemy. Po wdrożeniach obserwujemy skanowanie, indeksację, widoczność i zapytania. Nie gwarantujemy pozycji ani liczby klientów w określonym miesiącu."
+    },
+    {
+      "question": "Czy obsługujecie Legnicę, Lubin i cały region zdalnie?",
+      "answer": "Tak, uzgodnienia i dostęp do narzędzi organizujemy online z Poznania. Jeśli oferta obejmuje klientów z całego regionu, opisujemy faktyczny zasięg. Ewentualne spotkanie lub sesję na miejscu wyceniamy osobno."
+    },
+    {
+      "question": "Czy sama wizytówka wystarczy do lokalnego SEO?",
+      "answer": "To zależy od modelu działalności. Profil pomaga przedstawić podstawowe informacje i dojazd, a strona pozwala dokładniej opisać usługi, realizacje oraz warunki współpracy. Ocenimy oba miejsca i ustalimy priorytety."
+    },
+    {
+      "question": "Czy poprawicie niezindeksowane podstrony?",
+      "answer": "Sprawdzimy powody widoczne w Search Console oraz aktualną wersję strony. Usuniemy rozpoznane błędy w uzgodnionym zakresie. Decyzję o indeksacji podejmuje Google, dlatego samo zgłoszenie adresu nie jest potwierdzeniem dodania go do wyników."
+    },
+    {
+      "question": "Co przygotować do rozmowy o pozycjonowaniu?",
+      "answer": "Adres strony, listę najważniejszych usług, obszar obsługi oraz informację, kto zarządza witryną. Przydadzą się dane Search Console i przykłady zleceń, które chcesz pozyskiwać. Dostęp udostępniasz przez uprawnienia, bez przesyłania hasła."
+    }
+  ]
+};
 export default function PozycjonowanieLegnica() {
-  const breadcrumbs = [
-    { name: "Strona główna", url: "/" },
-    { name: "Pozycjonowanie", url: "/uslugi/pozycjonowanie" },
-    { name: "Legnica", url: "/pozycjonowanie/legnica" },
-  ];
-
-  const faqItems = [
-    {
-      question: "Jak długo trwa pozycjonowanie strony internetowej w Legnicy?",
-      answer:
-        "Typowo pierwsze rezultaty są widoczne po 3-6 miesiącach systematycznej pracy. Pozycjonowanie to proces długoterminowy, ale już po kilku miesiącach możesz obserwować poprawę widoczności w wynikach wyszukiwania. Niektóre słowa kluczowe mogą zaklasyfikować się szybciej, szczególnie te z mniejszą konkurencją.",
-    },
-    {
-      question: "Ile kosztuje pozycjonowanie strony dla firm z Legnicy?",
-      answer:
-        "Ceny pozycjonowania zaczynają się od 1500 zł miesięcznie dla pakietu startupowego. Oferujemy różne pakiety dostosowane do potrzeb i budżetu Twojej firmy. Każdy pakiet jest spersonalizowany w zależności od branży, konkurencji i celów biznesowych.",
-    },
-    {
-      question: "Jakie branże mogą skorzystać z pozycjonowania lokalnego w Legnicy?",
-      answer:
-        "Pozycjonowanie lokalne jest korzystne dla wszystkich firm okazjonalnie odwiedzających Legnicę. Szczególnie polecamy dla: sklepów internetowych i stacjonarnych, restauracji i kawiarni, salonów fryzjerskich i kosmetycznych, gabinetów lekarskich i stomatologicznych, firm budowlanych, agencji nieruchomości, szkół i kursów, usług transportu i logistyki.",
-    },
-    {
-      question: "Czy pozycjonowanie będzie skuteczne dla mojej konkurencji w Legnicy?",
-      answer:
-        "Tak, pozycjonowanie działa niezależnie od wielkości konkurencji. Naszą specjalność jest analiza rynku lokalnego i identyfikacja niszy, w której Twoja firma będzie mogła dominować. Nawet jeśli konkurenci są zalegalizowani, mamy sprawdzone strategie, aby wyprzedzić ich w wynikach wyszukiwania.",
-    },
-    {
-      question: "Jaki jest proces współpracy z Fotz Studio?",
-      answer:
-        "Rozpoczynamy od bezpłatnej konsultacji i audytu SEO Twojej strony. Następnie opracowujemy strategię pozycjonowania dostosowaną do Twoich celów. W trakcie współpracy otrzymujesz regularnie raporty z postępami i możliwością dostosowania strategii. Nasz zespół utrzymuje stały kontakt i wspiera Cię na każdym etapie.",
-    },
-  ];
-
-  return (
-    <>
-      <SEOHead
-        title="Pozycjonowanie Legnica | Fotz Studio"
-        description="Profesjonalne usługi pozycjonowania stron internetowych w Legnicy. Zwiększ widoczność Twojej firmy w Google. Pakiety SEO dostosowane do Twoich potrzeb i lokalnego rynku."
-        canonical="https://www.fotz-studio.pl/pozycjonowanie/legnica"
-        keywords="pozycjonowanie legnica, agencja seo legnica, seo legnica, pozycjonowanie stron legnica, seo dla firm legnica, pozycjonowanie lokalne legnica, seo dolny śląsk"
-      />
-
-      <ServiceSchema
-        name="Usługi Pozycjonowania Legnica"
-        description="Profesjonalne usługi pozycjonowania stron internetowych (SEO) dla firm z Legnicy. Zwiększ widoczność w Google i przyciągnij więcej klientów."
-        provider="Fotz Studio"
-        areaServed="Legnica"
-      />
-
-      <BreadcrumbSchema items={breadcrumbs} />
-
-      <FAQSchema items={faqItems} />
-
-      <Layout>
-        <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-blue-50">
-          {/* Hero Section */}
-          <section className="relative pt-20 pb-16 px-4 sm:px-6 lg:px-8">
-            <div className="max-w-6xl mx-auto">
-              <div className="text-center mb-12">
-                <h1 className="text-5xl sm:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                  Pozycjonowanie <span className="text-blue-600">Legnica</span>
-                </h1>
-                <p className="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
-                  Profesjonalne usługi SEO dla firm z Legnicy. Zwiększ widoczność w Google, przyciągnij więcej
-                  klientów i rozwijaj swoją biznes na lokalnym rynku.
-                </p>
-                <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
-                  Bezpłatna Konsultacja
-                </a>
-              </div>
-            </div>
-          </section>
-
-          {/* Why Choose Legnica */}
-          <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-            <div className="max-w-6xl mx-auto">
-              <h2 className="text-4xl font-bold text-gray-900 text-center mb-12">Dlaczego Pozycjonowanie w Legnicy?</h2>
-              <div className="grid md:grid-cols-2 gap-8">
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0">
-                    <MapPin className="h-8 w-8 text-blue-600 mt-1" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Lokalna Widoczność</h3>
-                    <p className="text-gray-700">
-                      Legnica to dynamicznie rozwijające się miasto z dużą konkurencją na rynku cyfrowym. Pozycjonowanie
-                      lokalne zapewni Ci lepszą widoczność wśród potencjalnych klientów wyszukujących usługi w Twojej okolicy.
-                    </p>
-                  </div>
-                </div>
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0">
-                    <Search className="h-8 w-8 text-blue-600 mt-1" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Zwiększenie Ruchu</h3>
-                    <p className="text-gray-700">
-                      Pozycjonowanie SEO w Legnicy to inwestycja w długoterminowy wzrost ruchu organicznego na Twojej
-                      stronie. Znacznie więcej osób znajdzie Cię w wynikach wyszukiwania Google.
-                    </p>
-                  </div>
-                </div>
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0">
-                    <TrendingUp className="h-8 w-8 text-blue-600 mt-1" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Konkretne Rezultaty</h3>
-                    <p className="text-gray-700">
-                      Nasze strategie pozycjonowania przynoszą konkretne wyniki. Śledzisz postęp poprzez regularne
-                      raporty i widzisz bezpośrednie przychody z SEO w Legnicy.
-                    </p>
-                  </div>
-                </div>
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0">
-                    <Award className="h-8 w-8 text-blue-600 mt-1" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Profesjonal Expertise</h3>
-                    <p className="text-gray-700">
-                      Fotz Studio ma doświadczenie w pozycjonowaniu firm z różnych branż w Legnicy. Znamy lokalny rynek
-                      i wiemy, co działa.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Services for Different Industries */}
-          <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-white">
-            <div className="max-w-6xl mx-auto">
-              <h2 className="text-4xl font-bold text-gray-900 text-center mb-12">Pozycjonowanie dla Różnych Branż</h2>
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Sklepy Internetowe</h3>
-                  <p className="text-gray-700">
-                    Zwiększ sprzedaż poprzez pozycjonowanie produktów w wyszukiwarkach. Przyciągnij klientów z Legnicy
-                    i okolic, szukających produktów, które oferujesz.
-                  </p>
-                </div>
-                <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Restauracje i Kawiarnie</h3>
-                  <p className="text-gray-700">
-                    Pozycjonowanie lokalne dla gastronomii w Legnicy to przyciąganie głodnych klientów. Pojawiaj się na
-                    mapach Google i w wynikach lokalnych wyszukiwań.
-                  </p>
-                </div>
-                <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Usługi Biznesowe</h3>
-                  <p className="text-gray-700">
-                    Niezależnie od tego, czy prowadzisz biuro rachunkowe, agencję marketingową czy firmę doradczą, SEO
-                    w Legnicy przyciąga klientów B2B.
-                  </p>
-                </div>
-                <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Salony Piękności</h3>
-                  <p className="text-gray-700">
-                    Klienci szukają fryzjerów, kosmetyczek i salonów spa w Legnicy. Pozycjonowanie lokalne to klucz do
-                    pełnego harmonogramu rezerwacji.
-                  </p>
-                </div>
-                <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Opiekę Zdrowotną</h3>
-                  <p className="text-gray-700">
-                    Gabinety lekarskie, dentystyczne i specjalistyczne w Legnicy mogą przyciągać pacjentów poprzez SEO
-                    i widoczność w lokalnych wyszukiwaniach.
-                  </p>
-                </div>
-                <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Nieruchomości</h3>
-                  <p className="text-gray-700">
-                    Agencje nieruchomości w Legnicy mogą wykazać swoje oferty lepiej poprzez pozycjonowanie dla słów
-                    kluczowych związanych z lokalnym rynkiem.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Our Process */}
-          <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-            <div className="max-w-6xl mx-auto">
-              <h2 className="text-4xl font-bold text-gray-900 text-center mb-12">Jak Współpracujemy</h2>
-              <div className="grid md:grid-cols-4 gap-6 mb-12">
-                <div className="text-center">
-                  <div className="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 text-xl font-bold">
-                    1
-                  </div>
-                  <h3 className="font-semibold text-gray-900 mb-2">Audyt SEO</h3>
-                  <p className="text-gray-700 text-sm">
-                    Przeprowadzamy szczegółową analizę Twojej strony i konkurencji w Legnicy
-                  </p>
-                </div>
-                <div className="text-center">
-                  <div className="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 text-xl font-bold">
-                    2
-                  </div>
-                  <h3 className="font-semibold text-gray-900 mb-2">Strategia</h3>
-                  <p className="text-gray-700 text-sm">
-                    Opracowujemy spersonalizowaną strategię pozycjonowania dla Twojego biznesu
-                  </p>
-                </div>
-                <div className="text-center">
-                  <div className="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 text-xl font-bold">
-                    3
-                  </div>
-                  <h3 className="font-semibold text-gray-900 mb-2">Implementacja</h3>
-                  <p className="text-gray-700 text-sm">
-                    Realizujemy optymalizacje i pracujemy nad widocznością Twojej strony
-                  </p>
-                </div>
-                <div className="text-center">
-                  <div className="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 text-xl font-bold">
-                    4
-                  </div>
-                  <h3 className="font-semibold text-gray-900 mb-2">Monitorowanie</h3>
-                  <p className="text-gray-700 text-sm">
-                    Śledzisz postępy poprzez raporty i stale optymalizujemy wyniki
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Pricing Section */}
-          <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-white">
-            <div className="max-w-6xl mx-auto">
-              <h2 className="text-4xl font-bold text-gray-900 text-center mb-12">Pakiety Pozycjonowania</h2>
-              <div className="grid md:grid-cols-3 gap-8">
-                <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-200">
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-2">Startup</h3>
-                  <p className="text-gray-600 mb-6">Dla nowych firm i startupów</p>
-                  <div className="mb-6">
-                    <span className="text-4xl font-bold text-blue-600">1500 zł</span>
-                    <span className="text-gray-600 ml-2">/miesiąc</span>
-                  </div>
-                  <ul className="space-y-3 text-gray-700 mb-8">
-                    <li className="flex items-center gap-2">
-                      <span className="text-blue-600">✓</span> Optymalizacja on-page
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="text-blue-600">✓</span> Badanie słów kluczowych
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="text-blue-600">✓</span> 4 artykuły mesięcznie
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="text-blue-600">✓</span> Raport miesięczny
-                    </li>
-                  </ul>
-                  <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full bg-blue-100 text-blue-600 py-3 rounded-lg font-semibold hover:bg-blue-200 transition-colors">
-                    Wybierz Plan
-                  </a>
-                </div>
-
-                <div className="bg-white p-8 rounded-lg shadow-xl border-2 border-blue-600 relative">
-                  <div className="absolute top-0 right-0 bg-blue-600 text-white px-4 py-1 rounded-bl-lg text-sm font-semibold">
-                    Popularne
-                  </div>
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-2">Professional</h3>
-                  <p className="text-gray-600 mb-6">Dla rozwijających się biznesów</p>
-                  <div className="mb-6">
-                    <span className="text-4xl font-bold text-blue-600">3500 zł</span>
-                    <span className="text-gray-600 ml-2">/miesiąc</span>
-                  </div>
-                  <ul className="space-y-3 text-gray-700 mb-8">
-                    <li className="flex items-center gap-2">
-                      <span className="text-blue-600">✓</span> Wszystko ze Startup
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="text-blue-600">✓</span> Link building
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="text-blue-600">✓</span> 8 artykułów miesięcznie
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="text-blue-600">✓</span> Konsultacje 2x miesięcznie
-                    </li>
-                  </ul>
-                  <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
-                    Wybierz Plan
-                  </a>
-                </div>
-
-                <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-200">
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-2">Enterprise</h3>
-                  <p className="text-gray-600 mb-6">Dla dużych organizacji</p>
-                  <div className="mb-6">
-                    <span className="text-4xl font-bold text-blue-600">7500 zł</span>
-                    <span className="text-gray-600 ml-2">/miesiąc</span>
-                  </div>
-                  <ul className="space-y-3 text-gray-700 mb-8">
-                    <li className="flex items-center gap-2">
-                      <span className="text-blue-600">✓</span> Wszystko z Professional
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="text-blue-600">✓</span> PPC kampanie
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="text-blue-600">✓</span> 16 artykułów miesięcznie
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="text-blue-600">✓</span> Dedykowany account manager
-                    </li>
-                  </ul>
-                  <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full bg-blue-100 text-blue-600 py-3 rounded-lg font-semibold hover:bg-blue-200 transition-colors">
-                    Wybierz Plan
-                  </a>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Why Fotz Studio */}
-          <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-            <div className="max-w-6xl mx-auto">
-              <h2 className="text-4xl font-bold text-gray-900 text-center mb-12">Dlaczego Fotz Studio?</h2>
-              <div className="grid md:grid-cols-3 gap-8">
-                <div className="flex gap-4">
-                  <Users className="h-8 w-8 text-blue-600 flex-shrink-0 mt-1" />
-                  <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Doświadczony Zespół</h3>
-                    <p className="text-gray-700">
-                      Nasi specjaliści SEO mają lata doświadczenia w pozycjonowaniu firm lokalnych w całej Polsce,
-                      w tym w Legnicy.
-                    </p>
-                  </div>
-                </div>
-                <div className="flex gap-4">
-                  <Clock className="h-8 w-8 text-blue-600 flex-shrink-0 mt-1" />
-                  <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Szybkie Rezultaty</h3>
-                    <p className="text-gray-700">
-                      Stosujemy sprawdzone strategie SEO, które przynoszą widoczne rezultaty w ciągu kilku miesięcy
-                      pracy.
-                    </p>
-                  </div>
-                </div>
-                <div className="flex gap-4">
-                  <Award className="h-8 w-8 text-blue-600 flex-shrink-0 mt-1" />
-                  <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Certyfikacje</h3>
-                    <p className="text-gray-700">
-                      Jesteśmy certyfikowani Google Partners i posiadamy wiedzę na temat najnowszych algorytmów
-                      wyszukiwarek.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* FAQ Section */}
-          <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-white">
-            <div className="max-w-3xl mx-auto">
-              <h2 className="text-4xl font-bold text-gray-900 text-center mb-12">Często Zadawane Pytania</h2>
-              <div className="space-y-6">
-                {faqItems.map((item, index) => (
-                  <details key={index} className="bg-white p-6 rounded-lg shadow-lg cursor-pointer group">
-                    <summary className="font-semibold text-gray-900 text-lg flex items-center gap-3">
-                      <span className="text-blue-600 group-open:rotate-180 transition-transform">▼</span>
-                      {item.question}
-                    </summary>
-                    <p className="text-gray-700 mt-4 ml-8">{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </div>
-          </section>
-
-          {/* CTA Section */}
-          <section className="py-16 px-4 sm:px-6 lg:px-8 bg-blue-600 text-white">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-4xl font-bold mb-6">Gotów na Wzrost Twojego Biznesu?</h2>
-              <p className="text-xl mb-8 text-blue-100">
-                Skontaktuj się z nami dzisiaj, aby uzyskać bezpłatną konsultację SEO dla Twojej firmy w Legnicy.
-              </p>
-              <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-colors text-lg">
-                Zapytaj o Bezpłatną Konsultację
-              </a>
-            </div>
-          </section>
-        </div>
-      </Layout>
-    </>
-  );
+ return <>
+  <SEOHead title={data.title} description={data.description} canonical={`https://www.fotz-studio.pl${data.path}`} />
+  <ServiceEditorial path={data.path} title={data.h1} eyebrow="FOTZ Studio · współpraca zdalna" area="Legnica" enquiryVariant="ongoing" lead={data.lead}
+   summary={["Pokaż stronę i usługi, na których Ci zależy.","Sprawdzimy dane, bariery i potrzebne wdrożenia.","Ustalimy zakres, koszty i sposób oceny zapytań."]} scopeTitle="Pozycjonowanie w Legnicy — zakres usług SEO" faqTitle="Najczęstsze pytania o pozycjonowanie w Legnicy"
+   scope={data.scope} sections={data.sections} faqs={data.faqs} workAfterScope />
+ </>;
 }

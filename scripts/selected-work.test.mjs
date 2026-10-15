@@ -8,6 +8,7 @@ test('portfolio selection follows page intent without claiming local project loc
   for (const [route, expected] of [
     ['/', 'studio'], ['/social-media/obsluga', 'social'], ['/agencja-social-media/warszawa', 'social'],
     ['/uslugi/strony-internetowe/poznan', 'web'], ['/seo/audyt', 'web'],
+    ['/pozycjonowanie/legnica', 'web'], ['/uslugi/fotografia-produktowa', 'product'],
     ['/dla-kogo/gastronomia', 'spaces'], ['/dla-kogo/instytucje', 'events'],
     ['/uslugi/branding', 'product'], ['/fotograf-poznan', 'photo'],
     ['/uslugi/produkcja-video/', 'production'], ['/blog/instagram-dla-firmy', 'social'],
