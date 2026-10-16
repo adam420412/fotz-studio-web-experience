@@ -483,7 +483,7 @@ const PozycjonowanieGliwice = () => {
               { label: "Pozycjonowanie Kraków", url: "/seo/pozycjonowanie-krakow" },
               { label: "Pozycjonowanie Katowice", url: "/seo/pozycjonowanie-katowice" },
               { label: "Pozycjonowanie Wrocław", url: "/uslugi/pozycjonowanie/wroclaw" },
-              { label: "Pozycjonowanie Poznań", url: "/uslugi/pozycjonowanie/poznan" },
+              { label: "Pozycjonowanie Poznań", url: "/seo/pozycjonowanie-poznan" },
               { label: "Pozycjonowanie Gdańsk", url: "/uslugi/pozycjonowanie/gdansk" },
               { label: "Pozycjonowanie Łódź", url: "/uslugi/pozycjonowanie/lodz" },
               { label: "Pozycjonowanie Szczecin", url: "/uslugi/pozycjonowanie/szczecin" },

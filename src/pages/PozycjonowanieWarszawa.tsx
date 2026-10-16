@@ -414,7 +414,7 @@ const PozycjonowanieWarszawa = () => {
             {[
               { label: "Pozycjonowanie Kraków", url: "/seo/pozycjonowanie-krakow" },
               { label: "Pozycjonowanie Wrocław", url: "/uslugi/pozycjonowanie/wroclaw" },
-              { label: "Pozycjonowanie Poznań", url: "/uslugi/pozycjonowanie/poznan" },
+              { label: "Pozycjonowanie Poznań", url: "/seo/pozycjonowanie-poznan" },
               { label: "Pozycjonowanie Gdańsk", url: "/uslugi/pozycjonowanie/gdansk" },
               { label: "Wszystkie usługi SEO", url: "/uslugi/pozycjonowanie" },
             ].map((link) => (
