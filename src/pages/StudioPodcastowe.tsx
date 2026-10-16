@@ -113,6 +113,11 @@ const faqs = [
       "Wystarczy, że znasz temat. Przed nagraniem wysyłamy plan rozmowy i pytania, podpowiadamy, w co się ubrać, i robimy krótką próbę na miejscu. Nie trzeba mieć doświadczenia przed mikrofonem.",
   },
   {
+    question: "Czy nagrywacie tylko w centrum Poznania?",
+    answer:
+      "Nie. Nagrywamy w różnych częściach miasta i pod Poznaniem — tam, gdzie jest odpowiednie miejsce na rozmowę. Dojazd poza miasto uwzględniamy w wycenie.",
+  },
+  {
     question: "Czy obsługujecie firmy spoza Poznania?",
     answer:
       "Tak. Spotkania i ustalenia prowadzimy online, a pliki przesyłamy cyfrowo. Wyjazd na nagranie poza Poznań jest możliwy, ale ustalamy go osobno przy wycenie.",
@@ -293,7 +298,7 @@ export default function StudioPodcastowe() {
                 przykład gdy seria ma mieć spójny, rozpoznawalny wizualny styl.
               </p>
               <p className="text-muted-foreground">
-                Nagrywamy w Poznaniu — w centrum Poznania, na obrzeżach albo pod miastem — i doradzamy,
+                Nagrywamy w Poznaniu i okolicach — i doradzamy,
                 które miejsce da najlepszy efekt przy Twoim budżecie. Profesjonalny sprzęt i
                 obsługę zapewnia nasza ekipa, a miejsce oraz termin rezerwacji potwierdzamy
                 razem z wyceną. Podcast łączymy też z innymi usługami: nagraniem spotów reklamowych
