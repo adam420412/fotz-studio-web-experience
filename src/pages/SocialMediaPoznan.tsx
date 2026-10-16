@@ -12,7 +12,7 @@ const services = [
   { icon: CalendarDays, title: "Prowadzenie profili na Facebooku i Instagramie", text: "Tworzenie treści, grafiki, harmonogram publikacji oraz komentarze i wiadomości. Liczbę materiałów i zasady moderacji zapisujemy w zakresie.", href: "/social-media/obsluga" },
   { icon: Camera, title: "Zdjęcia i treści", text: "Oferta, produkty, ludzie i kulisy pracy. Łączymy materiały firmy z sesjami zdjęciowymi, żeby profil pokazywał jej charakter.", href: "/social-media/content" },
   { icon: Video, title: "Rolki i filmy", text: "Pomysł, scenariusz, nagrania i montaż w formatach na Instagram, Facebook i LinkedIn. Przed produkcją ustalamy napisy, wersje i miejsca publikacji.", href: "/uslugi/produkcja-video" },
-  { icon: MessageSquare, title: "Kampanie reklamowe Meta Ads", text: "Facebook Ads i reklama na Instagramie: cel, kreacje, grupy odbiorców oraz analizę wyników. Budżet płacony platformie wyceniamy oddzielnie.", href: "/performance-marketing/meta-ads" },
+  { icon: MessageSquare, title: "Kampanie reklamowe Meta Ads", text: "Facebook Ads i reklama na Instagramie. Zarządzanie kampaniami obejmuje cel, kreacje, grupy odbiorców, optymalizację i analizę wyników. Budżet płacony platformie wyceniamy oddzielnie.", href: "/performance-marketing/meta-ads" },
   { icon: ChartNoAxesCombined, title: "Pomiar i raportowanie", text: "Sprawdzamy zasięgi i zaangażowanie, wejścia oraz zapytania. Przy dostępie do danych sprzedaży oceniamy też jakość kontaktów od nowych klientów.", href: "/social-media/analityka" },
 ];
 const faqs = [
@@ -62,6 +62,7 @@ export default function SocialMediaPoznan() {
       <section id="zakres-social-media" className="container-wide px-6 md:px-12 py-12 md:py-16 scroll-mt-28" aria-labelledby="zakres-heading">
         <p className="dv-eyebrow mb-3">Zakres współpracy</p><h2 id="zakres-heading" className="text-3xl md:text-4xl font-heading mb-5">Prowadzenie social media dla firm: co obejmuje?</h2>
         <p className="text-muted-foreground max-w-3xl mb-8 leading-relaxed">Możesz powierzyć nam kompleksowe prowadzenie firmowych profili w mediach społecznościowych albo wybraną część działań marketingowych. Zakres dobieramy do tego, co firma ma już gotowe, i do jej branży.</p>
+        <p className="text-muted-foreground max-w-3xl mb-8 leading-relaxed">Prowadzimy social media dla firm usługowych, lokalnych biznesów, instytucji i marek, które chcą dotrzeć do nowych klientów, a nie tylko „być” na każdej platformie. Social media marketing ma wspierać sprzedaż i promocję Twojej marki, dlatego zaczynamy od tego, kto ma zobaczyć treści i co powinien potem zrobić.</p>
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-5">{services.map(service => <article key={service.href} className="border border-border bg-card rounded-2xl p-6 flex flex-col items-start"><service.icon aria-hidden="true" className="w-6 h-6 text-primary mb-5" /><h3 className="text-xl mb-3">{service.title}</h3><p className="text-muted-foreground leading-relaxed mb-5">{service.text}</p><Link to={service.href} className="underline underline-offset-4 text-sm mt-auto" aria-label={`Poznaj zakres: ${service.title}`}>Poznaj zakres</Link></article>)}</div>
       </section>
 
