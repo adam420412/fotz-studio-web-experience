@@ -25,24 +25,32 @@ const cities = [
 
 const faqItems = [
   {
-    "question": "Jakie są koszty stworzenia strony internetowej?",
-    "answer": "Koszt stworzenia strony internetowej zależy od wielu czynników. Proste strony wizytówki kosztują od kilkuset do kilku tysięcy złotych, podczas gdy rozbudowane strony internetowe mogą kosztować od kilku do kilkudziesięciu tysięcy złotych."
+    "question": "Ile kosztuje zrobienie strony internetowej firmy?",
+    "answer": "Nie ma jednej stawki, bo koszt zrobienia strony internetowej dla firmy zależy od liczby podstron, projektu graficznego, systemu CMS, funkcji, treści i zakresu SEO. Najrzetelniej sprawdzisz to, zbierając kilka ofert na ten sam, spisany zakres prac."
   },
   {
-    "question": "Jakie są koszty utrzymania strony internetowej?",
-    "answer": "Koszt utrzymania strony obejmuje opłaty za hosting, domenę oraz ewentualne aktualizacje i wsparcie techniczne. Średnie miesięczne koszty wynoszą od kilkudziesięciu do kilkuset złotych."
+    "question": "Czy da się samemu stworzyć stronę internetową?",
+    "answer": "Tak. Kreator stron (np. Wix lub WebWave) albo WordPress z gotowym szablonem pozwalają postawić prostą stronę bez programowania. Płacisz wtedy głównie abonamentem i własnym czasem, a ograniczeniem bywa elastyczność, wydajność i możliwości SEO."
   },
   {
-    "question": "Co wpływa na cenę wykonania strony internetowej?",
-    "answer": "Cena wykonania strony zależy od złożoności projektu, wybranych technologii, doświadczenia wykonawcy oraz dodatkowych usług jak pozycjonowanie czy optymalizacja."
+    "question": "Jaka jest najtańsza strona internetowa?",
+    "answer": "Najmniej kosztuje zwykle prosta strona wizytówka zbudowana samodzielnie w kreatorze lub na gotowym szablonie. Niska cena na starcie oznacza jednak często ograniczone funkcje i dodatkowe koszty później, gdy firma zacznie rozwijać stronę."
+  },
+  {
+    "question": "Jaka będzie cena strony internetowej w 2026 roku?",
+    "answer": "Wycena nadal zależy przede wszystkim od zakresu projektu, a nie od samego kalendarza. Na wycenę wpływają typ strony, indywidualny projekt, integracje, przygotowanie treści, optymalizacja SEO oraz to, kto wykonuje stronę."
+  },
+  {
+    "question": "Ile kosztuje utrzymanie strony internetowej?",
+    "answer": "Utrzymanie strony obejmuje domenę, hosting, certyfikat SSL, aktualizacje CMS i wtyczek, kopie zapasowe oraz ewentualną opiekę techniczną. Jego wysokość zależy od rodzaju strony, ruchu i tego, ile pracy administracyjnej przejmuje wykonawca."
   },
   {
     "question": "Jak długo trwa wykonanie strony internetowej?",
-    "answer": "Czas wykonania strony może się różnić. Proste strony mogą być gotowe w ciągu kilku dni, podczas gdy bardziej złożone projekty mogą wymagać kilku tygodni lub miesięcy."
+    "answer": "Prosta strona może powstać w kilka dni lub tygodni, a rozbudowany serwis czy sklep wymaga zwykle dłuższej pracy. Na czas realizacji wpływa też tempo dostarczania treści i akceptacji projektu po stronie klienta."
   },
   {
-    "question": "Jak wybrać wykonawcę strony internetowej?",
-    "answer": "Wybór wykonawcy powinien być przemyślany. Sprawdź portfolio, opinie klientów oraz zakres oferowanych usług. Dobry wykonawca przedstawi jasny cennik i terminy realizacji."
+    "question": "Freelancer czy agencja — kogo wybrać do stworzenia strony?",
+    "answer": "Freelancer sprawdzi się przy mniejszym, jasno opisanym projekcie, agencja przy stronie wymagającej projektu, treści, SEO i dalszej opieki w jednym miejscu. W obu przypadkach sprawdź portfolio, zakres oferty i warunki wsparcia po publikacji."
   }
 ];
 
@@ -50,8 +58,8 @@ const BlogKosztStrony = () => {
   return (
     <>
       <SEOHead
-        title="Ile Kosztuje Strona Internetowa w 2026? Cennik i Czynniki Wyceny"
-        description="Ile kosztuje strona internetowa w 2026? Poznaj orientacyjne widełki cenowe, koszty utrzymania, typy stron i czynniki wpływające na indywidualną wycenę."
+        title="Ile kosztuje strona internetowa w 2026? Od czego zależy cena"
+        description="Ile kosztuje strona internetowa w 2026? Koszt stworzenia strony www i strony firmowej, domena, hosting oraz czynniki, od których zależy cena strony."
         ogType="article"
         canonical="https://www.fotz-studio.pl/blog/ile-kosztuje-strona-internetowa"
         keywords="ile kosztuje strona internetowa, cennik stron internetowych, koszt strony www, cena strony internetowej 2026"
@@ -59,7 +67,7 @@ const BlogKosztStrony = () => {
           {
             "@context": "https://schema.org",
             "@type": "Article",
-            "headline": "Ile kosztuje strona internetowa w 2026? Cennik i czynniki wyceny",
+            "headline": "Ile kosztuje strona internetowa w 2026? Od czego zależy cena",
             "description": "Kompleksowy przewodnik po kosztach tworzenia stron internetowych w 2026 roku",
             "author": {
               "@type": "Organization",
@@ -98,7 +106,7 @@ const BlogKosztStrony = () => {
               <ChevronRight className="h-4 w-4 shrink-0" aria-hidden="true" />
               <Link to="/blog" className="shrink-0 hover:text-primary transition-colors">Blog</Link>
               <ChevronRight className="h-4 w-4 shrink-0" aria-hidden="true" />
-              <span className="text-foreground">Ile kosztuje strona internetowa w 2026?</span>
+              <span className="text-foreground">Ile kosztuje strona internetowa</span>
             </nav>
           </div>
         </section>
@@ -122,7 +130,7 @@ const BlogKosztStrony = () => {
                 </p>
                 
                 <h1 className="text-3xl md:text-5xl font-heading font-bold mb-6">
-                  Ile kosztuje strona internetowa w 2026? Cennik i czynniki wyceny
+                  Ile kosztuje strona internetowa w 2026? Koszt stworzenia strony internetowej dla firmy i jej utrzymania
                 </h1>
                 
                 <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground mb-8">
@@ -159,194 +167,204 @@ const BlogKosztStrony = () => {
                 className="prose prose-lg prose-invert max-w-none"
               >
                 <p className="lead text-xl text-muted-foreground mb-8">
-                  Zastanawiasz się, ile będzie kosztować strona internetowa w 2026 roku? Poniższe widełki są orientacyjne: zakres projektu, treści i integracje wpływają na ostateczną wycenę. Wyjaśniamy, co warto uwzględnić w budżecie i jak porównywać oferty wykonawców.
+                  Pytanie, ile kosztuje strona internetowa, pada w niemal każdej rozmowie o nowej stronie dla firmy. Uczciwa odpowiedź brzmi: to zależy od zakresu. W tym poradniku na 2026 rok nie podajemy cennika, tylko pokazujemy, z czego składa się wycena, ile kosztuje utrzymanie strony i jak porównywać oferty, żeby wiedzieć, za co płacisz.
                 </p>
-
                 <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
-                  Koszt stworzenia strony internetowej
+                  Od czego zależy cena strony internetowej?
                 </h2>
-
+                <p className="text-muted-foreground mb-6">
+                  Koszt strony internetowej zależy od wielu czynników jednocześnie: rodzaju strony, liczby podstron, sposobu wykonania, zakresu treści i tego, kto realizuje projekt. Dwie oferty z bardzo różną kwotą mogą być rzetelne, jeśli opisują zupełnie inny zakres prac. Dlatego zanim zapytasz o cenę, warto spisać, czego strona ma potrzebować.
+                </p>
                 <h3 className="text-xl font-heading font-semibold mt-8 mb-4">
-                  Różne typy stron internetowych
+                  Typ strony: strona wizytówka, strona firmowa, sklep internetowy
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  <strong>Koszt stworzenia strony internetowej zależy w dużej mierze od jej typu.</strong> Prosta strona wizytówka, prezentująca podstawowe informacje o Twojej firmie, będzie znacznie tańsza niż rozbudowany sklep internetowy z systemem płatności online i bazą produktów. Cena strony internetowej rośnie wraz z jej złożonością i funkcjonalnością. Sprawdź naszą ofertę <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">tworzenia stron internetowych</Link>.
+                  <strong>Typ strony to pierwszy element, który wpływa na cenę strony.</strong> Strona wizytówka (często w formie one page) prezentuje firmę, ofertę i dane kontaktowe. Strona firmowa ma kilka lub kilkanaście podstron: usługi, realizacje, blog, zakładkę o firmie. Strony e-commerce, czyli sklep internetowy z koszykiem i płatnościami, to już osobna kategoria projektu z dużo większą liczbą funkcji. Większa strona oznacza więcej projektowania, programowania i testów. Zobacz, jak wygląda nasze <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">tworzenie stron internetowych</Link>.
                 </p>
-
                 <h3 className="text-xl font-heading font-semibold mt-8 mb-4">
-                  Czynniki wpływające na koszt stworzenia strony
+                  Jakie czynniki wpływają na koszt strony www?
                 </h3>
-                <p className="text-muted-foreground mb-4">
-                  Na koszt stworzenia strony internetowej wpływa wiele czynników. Funkcjonalność strony, wykorzystane technologie i czas potrzebny na jej wykonanie to tylko niektóre z nich.
+                <p className="text-muted-foreground mb-6">
+                  Poza rodzajem strony liczą się szczegóły, które często wychodzą dopiero przy dokładnej rozmowie z wykonawcą. Poniższa tabela zbiera najważniejsze z nich.
                 </p>
-
                 <div className="overflow-x-auto mb-8">
                   <table className="w-full border-collapse">
                     <thead>
                       <tr className="border-b border-border">
-                        <th className="text-left py-4 px-4 font-semibold">Czynniki wpływające na koszt</th>
-                        <th className="text-left py-4 px-4 font-semibold">Przykłady</th>
+                        <th className="text-left py-4 px-4 font-semibold">Czynnik</th>
+                        <th className="text-left py-4 px-4 font-semibold">Co wpływa na cenę strony</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr className="border-b border-border/50">
+                        <td className="py-4 px-4 text-muted-foreground">Liczba podstron i wielkość strony</td>
+                        <td className="py-4 px-4 text-muted-foreground">Każda podstrona to osobny układ, treść i testy na urządzeniach mobilnych</td>
+                      </tr>
+                      <tr className="border-b border-border/50">
                         <td className="py-4 px-4 text-muted-foreground">Projekt graficzny</td>
-                        <td className="py-4 px-4 text-muted-foreground">Indywidualny projekt, unikalny układ i interakcje</td>
+                        <td className="py-4 px-4 text-muted-foreground">Gotowy szablon jest tańszy, indywidualny projekt strony zajmuje więcej czasu</td>
+                      </tr>
+                      <tr className="border-b border-border/50">
+                        <td className="py-4 px-4 text-muted-foreground">System zarządzania treścią (CMS)</td>
+                        <td className="py-4 px-4 text-muted-foreground">WordPress, inny CMS lub rozwiązanie pisane od zera</td>
                       </tr>
                       <tr className="border-b border-border/50">
                         <td className="py-4 px-4 text-muted-foreground">Funkcjonalność strony</td>
-                        <td className="py-4 px-4 text-muted-foreground">System CMS, formularze, integracje, e-commerce</td>
+                        <td className="py-4 px-4 text-muted-foreground">Formularze, rezerwacje, integracje z CRM, wersje językowe, e-commerce</td>
                       </tr>
                       <tr className="border-b border-border/50">
-                        <td className="py-4 px-4 text-muted-foreground">Pozycjonowanie SEO</td>
-                        <td className="py-4 px-4 text-muted-foreground">Optymalizacja treści, meta tagi, struktura URL</td>
+                        <td className="py-4 px-4 text-muted-foreground">Treści i zdjęcia</td>
+                        <td className="py-4 px-4 text-muted-foreground">Copywriting, sesja zdjęciowa, wideo albo materiały od klienta</td>
+                      </tr>
+                      <tr className="border-b border-border/50">
+                        <td className="py-4 px-4 text-muted-foreground">SEO i wydajność</td>
+                        <td className="py-4 px-4 text-muted-foreground">Struktura nagłówków, meta tagi, szybkość ładowania strony</td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
-
-                <h3 className="text-xl font-heading font-semibold mt-8 mb-4">
-                  Średni koszt wykonania strony internetowej w 2026
-                </h3>
-                <p className="text-muted-foreground mb-4">
-                  Ustalenie dokładnego średniego kosztu wykonania strony internetowej w 2026 roku jest trudne, ponieważ zależy on od wielu wspomnianych czynników.
+                <p className="text-muted-foreground mb-6">
+                  Czynniki wpływają na koszt łącznie: prosta strona na szablonie z gotowymi tekstami to zupełnie inny projekt niż serwis z indywidualnym designem, wersją angielską i integracją z systemem rezerwacji.
                 </p>
-
+                <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
+                  Ile kosztuje stworzenie strony internetowej dla firmy?
+                </h2>
+                <p className="text-muted-foreground mb-6">
+                  Koszt stworzenia strony internetowej najlepiej rozbić na etapy. Typowa realizacja strony obejmuje analizę potrzeb, architekturę informacji, projekt graficzny, wdrożenie w CMS, przygotowanie treści, podstawową optymalizację SEO, testy i publikację. Każdy z tych kroków można wykonać szybciej i prościej albo dokładniej i drożej. Wygląd strony to tylko część pracy, a cena wynika z czasu specjalistów potrzebnego na wszystkie etapy.
+                </p>
+                <h3 className="text-xl font-heading font-semibold mt-8 mb-4">
+                  Ile kosztuje zrobienie strony internetowej u freelancera, a ile w agencji?
+                </h3>
+                <p className="text-muted-foreground mb-6">
+                  Freelancer zwykle ma niższe koszty stałe i dobrze sprawdza się przy mniejszym projekcie z jasno opisanym zakresem. Agencja łączy w jednym zespole projektanta, programistę, copywritera i specjalistę SEO, więc zajmuje się też treścią, strategią i opieką po publikacji. Duże firmy częściej wybierają agencję, bo potrzebują wielu ról naraz, ale dla małej firmy dobrym wyborem bywa każdy z tych modeli. Ważne, żeby porównywać oferty o tym samym zakresie.
+                </p>
+                <h3 className="text-xl font-heading font-semibold mt-8 mb-4">
+                  Co obejmuje oferta na budowę strony internetowej?
+                </h3>
+                <p className="text-muted-foreground mb-6">
+                  Rzetelna oferta powinna jasno opisywać, co zawiera budowa strony internetowej, a czego nie obejmuje. Zwróć uwagę na takie elementy:
+                </p>
+                <ul className="list-disc pl-6 text-muted-foreground mb-6 space-y-2">
+                  <li>liczbę podstron i projektów graficznych (np. strona główna i szablony podstron),</li>
+                  <li>system CMS i możliwość samodzielnej edycji treści,</li>
+                  <li>to, kto przygotowuje teksty i zdjęcia,</li>
+                  <li>zakres optymalizacji SEO i wersję mobilną,</li>
+                  <li>liczbę rund poprawek oraz termin realizacji,</li>
+                  <li>warunki wsparcia technicznego po uruchomieniu nowej strony.</li>
+                </ul>
+                <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
+                  Kreator stron, WordPress czy strona na zamówienie?
+                </h2>
+                <p className="text-muted-foreground mb-6">
+                  Sposób wykonania mocno wpływa na koszt budowy strony i na jej późniejsze utrzymanie. Kreator stron, taki jak Wix czy WebWave, pozwala złożyć stronę z gotowych bloków bez kodowania; płacisz abonament, a ograniczeniem jest elastyczność i zależność od platformy. WordPress to popularny CMS z ogromnym wyborem szablonów i wtyczek: daje dużo swobody, ale wymaga regularnych aktualizacji. Strona pisana na zamówienie jest najbardziej dopasowana do potrzeb firmy, ale też najbardziej pracochłonna.
+                </p>
+                <h3 className="text-xl font-heading font-semibold mt-8 mb-4">
+                  Czy da się samemu stworzyć stronę internetową?
+                </h3>
+                <p className="text-muted-foreground mb-6">
+                  Tak, postawienie strony samodzielnie jest możliwe dzięki kreatorom i gotowym szablonom. To rozsądna droga na start, gdy budżet jest mały, a firma potrzebuje prostej strony internetowej z kilkoma informacjami. Trzeba jednak doliczyć własny czas na naukę narzędzia, przygotowanie treści i konfigurację, a efekt zależy od Twoich umiejętności. Przy stronie, która ma pozyskiwać klientów z Google i kampanii, wsparcie specjalisty zwykle się opłaca.
+                </p>
+                <h3 className="text-xl font-heading font-semibold mt-8 mb-4">
+                  Jaka jest najtańsza strona internetowa?
+                </h3>
+                <p className="text-muted-foreground mb-6">
+                  Najtańsza jest zwykle strona typu wizytówka zbudowana samodzielnie w kreatorze albo na darmowym szablonie. Tanie strony internetowe mają jednak swoją cenę w innym miejscu: ograniczony wygląd, mniejsze możliwości rozbudowy, słabsza optymalizacja i czasem konieczność przebudowy po roku lub dwóch. Więcej o tym piszemy w artykule o tym, <Link to="/blog/tanie-strony-internetowe" className="text-primary hover:underline">czy warto wybierać tanie strony internetowe</Link>.
+                </p>
+                <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
+                  Ile kosztuje utrzymanie strony internetowej?
+                </h2>
+                <p className="text-muted-foreground mb-6">
+                  Koszt utrzymania strony internetowej to wydatki, które pojawiają się co miesiąc lub co rok po publikacji. Czym różni się koszt stworzenia strony od kosztu jej utrzymania? Pierwszy płacisz raz za projekt i wdrożenie, drugi ponosisz przez cały czas działania Twojej strony internetowej. Na budżet składają się przede wszystkim:
+                </p>
                 <div className="overflow-x-auto mb-8">
                   <table className="w-full border-collapse">
                     <thead>
                       <tr className="border-b border-border">
-                        <th className="text-left py-4 px-4 font-semibold">Typ strony internetowej</th>
-                        <th className="text-left py-4 px-4 font-semibold">Orientacyjny koszt</th>
+                        <th className="text-left py-4 px-4 font-semibold">Element utrzymania</th>
+                        <th className="text-left py-4 px-4 font-semibold">Od czego zależy koszt</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr className="border-b border-border/50">
-                        <td className="py-4 px-4 text-muted-foreground">Strona wizytówka (one page)</td>
-                        <td className="py-4 px-4 text-muted-foreground">od 2 000 zł do 5 000 zł</td>
+                        <td className="py-4 px-4 text-muted-foreground">Domena</td>
+                        <td className="py-4 px-4 text-muted-foreground">Rozszerzenie (.pl, .com, .eu) i cennik rejestratora przy odnowieniu</td>
                       </tr>
                       <tr className="border-b border-border/50">
-                        <td className="py-4 px-4 text-muted-foreground">Strona firmowa (wielopodstronowa)</td>
-                        <td className="py-4 px-4 text-muted-foreground">od 5 000 zł do 15 000 zł</td>
+                        <td className="py-4 px-4 text-muted-foreground">Hosting</td>
+                        <td className="py-4 px-4 text-muted-foreground">Typ serwera, wydajność, ruch na stronie, lokalizacja serwerów</td>
                       </tr>
                       <tr className="border-b border-border/50">
-                        <td className="py-4 px-4 text-muted-foreground">Sklep internetowy</td>
-                        <td className="py-4 px-4 text-muted-foreground">od 10 000 zł do 50 000 zł</td>
+                        <td className="py-4 px-4 text-muted-foreground">Certyfikat SSL</td>
+                        <td className="py-4 px-4 text-muted-foreground">Darmowy certyfikat lub płatny z rozszerzoną weryfikacją</td>
                       </tr>
                       <tr className="border-b border-border/50">
-                        <td className="py-4 px-4 text-muted-foreground">Portal / aplikacja webowa</td>
-                        <td className="py-4 px-4 text-muted-foreground">od 30 000 zł wzwyż</td>
+                        <td className="py-4 px-4 text-muted-foreground">Wtyczki i szablony premium</td>
+                        <td className="py-4 px-4 text-muted-foreground">Liczba płatnych licencji w CMS</td>
+                      </tr>
+                      <tr className="border-b border-border/50">
+                        <td className="py-4 px-4 text-muted-foreground">Aktualizacje i kopie zapasowe</td>
+                        <td className="py-4 px-4 text-muted-foreground">Samodzielna obsługa lub opieka administratora strony</td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
-
-                <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
-                  Cennik stron internetowych
-                </h2>
-
                 <h3 className="text-xl font-heading font-semibold mt-8 mb-4">
-                  Porównanie cenników różnych usługodawców
+                  Domena i hosting
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  Analiza cenników stron internetowych różnych usługodawców ujawnia znaczne różnice w cenach. Cena strony internetowej zależy od renomy agencji, zakresu usług i oferowanych technologii. Niektórzy oferują tanie strony oparte na gotowych szablonach, podczas gdy inni specjalizują się w profesjonalnych stronach internetowych z indywidualnym projektem graficznym.
+                  Domena i hosting to podstawa: bez nich strona nie działa w sieci. Domena to adres Twojej firmy w internecie, płatny przy rejestracji i co roku przy odnowieniu, przy czym cena odnowienia bywa inna niż promocyjna cena pierwszego roku. Hosting to miejsce na serwerze, na którym działa strona; od jego jakości zależy szybkość ładowania strony i stabilność, co ma też znaczenie dla SEO.
                 </p>
-
                 <h3 className="text-xl font-heading font-semibold mt-8 mb-4">
-                  Co zawiera cennik wykonania strony?
+                  Certyfikat SSL, wtyczki i bezpieczeństwo
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  Cennik wykonania strony internetowej zazwyczaj zawiera kilka podstawowych elementów: projekt graficzny strony, kodowanie i programowanie, integrację z systemem zarządzania treścią (np. WordPress) oraz podstawowe pozycjonowanie.
+                  Certyfikat SSL szyfruje połączenie i jest dziś standardem, bo przeglądarki oznaczają strony bez SSL jako niezabezpieczone. Wielu dostawców hostingu oferuje darmowy certyfikat, płatne wersje są potrzebne rzadziej. W przypadku WordPressa dochodzi dbanie o bezpieczeństwo strony: aktualizacje systemu i wtyczek, kopie zapasowe oraz monitorowanie. Dobrze utrzymana strona internetowa jest szybsza i mniej podatna na ataki. Możesz robić to sam albo zlecić opiekę.
                 </p>
-
-                <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
-                  Koszt utrzymania strony internetowej
-                </h2>
-
                 <h3 className="text-xl font-heading font-semibold mt-8 mb-4">
-                  Co obejmuje koszt utrzymania strony?
+                  Całkowity koszt strony w pierwszym roku
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  Koszt utrzymania strony internetowej obejmuje: opłatę za hosting, domenę, aktualizacje oprogramowania, certyfikaty SSL, kopie zapasowe oraz wsparcie techniczne.
+                  Planując budżet, policz całkowity koszt na pierwszy rok: wykonanie strony, domenę, hosting, ewentualne licencje i opiekę techniczną. Takie zestawienie pokazuje, czy tańsza na starcie oferta nie okaże się droższa w utrzymaniu. Szerzej opisujemy to w artykule o tym, <Link to="/blog/koszt-prowadzenia-strony-internetowej" className="text-primary hover:underline">ile kosztuje prowadzenie strony internetowej</Link>.
                 </p>
-
-                <h3 className="text-xl font-heading font-semibold mt-8 mb-4">
-                  Jakie są średnie koszty miesięczne?
-                </h3>
-                <div className="overflow-x-auto mb-8">
-                  <table className="w-full border-collapse">
-                    <thead>
-                      <tr className="border-b border-border">
-                        <th className="text-left py-4 px-4 font-semibold">Typ Strony</th>
-                        <th className="text-left py-4 px-4 font-semibold">Miesięczny Koszt Utrzymania</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr className="border-b border-border/50">
-                        <td className="py-4 px-4 text-muted-foreground">Prosta strona wizytówka</td>
-                        <td className="py-4 px-4 text-muted-foreground">50 - 200 zł</td>
-                      </tr>
-                      <tr className="border-b border-border/50">
-                        <td className="py-4 px-4 text-muted-foreground">Strona firmowa z CMS</td>
-                        <td className="py-4 px-4 text-muted-foreground">100 - 500 zł</td>
-                      </tr>
-                      <tr className="border-b border-border/50">
-                        <td className="py-4 px-4 text-muted-foreground">Sklep internetowy</td>
-                        <td className="py-4 px-4 text-muted-foreground">300 - 2 000 zł</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-
                 <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
                   Ile kosztuje landing page?
                 </h2>
-
-                <p className="text-muted-foreground mb-4">
-                  <strong>Landing page</strong> to oddzielna kategoria stron internetowych — pojedyncza strona zaprojektowana pod jeden cel: sprzedaż, zbieranie leadów lub zapis na newsletter. Jest tańsza i szybsza w realizacji od pełnej strony firmowej, ale wymaga precyzyjnego projektu konwersji. Więcej o tym, <Link to="/uslugi/landing-page" className="text-primary hover:underline">czym jest landing page i ile kosztuje</Link>, znajdziesz na naszej stronie usługi.
+                <p className="text-muted-foreground mb-6">
+                  <strong>Landing page</strong> to pojedyncza strona zaprojektowana pod jeden cel: sprzedaż, zbieranie zapytań lub zapis na newsletter. Zwykle jest szybsza w realizacji od pełnej strony firmowej, ale wymaga przemyślanego układu pod konwersję. Na koszt wpływa długość strony, liczba sekcji, animacje, integracja z CRM lub narzędziem mailingowym oraz to, czy planujesz testy A/B kilku wersji. Więcej o tym, <Link to="/uslugi/landing-page" className="text-primary hover:underline">czym jest landing page i jak go wycenić</Link>, znajdziesz na stronie usługi.
                 </p>
-
-                <div className="overflow-x-auto mb-8">
-                  <table className="w-full border-collapse">
-                    <thead>
-                      <tr className="border-b border-border">
-                        <th className="text-left py-4 px-4 font-semibold">Typ landing page</th>
-                        <th className="text-left py-4 px-4 font-semibold">Orientacyjny koszt</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr className="border-b border-border/50">
-                        <td className="py-4 px-4 text-muted-foreground">Landing page basic (do kampanii reklamowej)</td>
-                        <td className="py-4 px-4 text-muted-foreground">od 2 000 zł</td>
-                      </tr>
-                      <tr className="border-b border-border/50">
-                        <td className="py-4 px-4 text-muted-foreground">Landing page pro (animacje, integracje CRM)</td>
-                        <td className="py-4 px-4 text-muted-foreground">od 4 500 zł</td>
-                      </tr>
-                      <tr className="border-b border-border/50">
-                        <td className="py-4 px-4 text-muted-foreground">Landing page enterprise (funnel, A/B testing)</td>
-                        <td className="py-4 px-4 text-muted-foreground">od 9 000 zł</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-
                 <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
-                  Pozycjonowanie stron a koszty
+                  Ile kosztuje sklep internetowy?
                 </h2>
-
-                <h3 className="text-xl font-heading font-semibold mt-8 mb-4">
-                  Ile kosztuje pozycjonowanie strony internetowej?
-                </h3>
                 <p className="text-muted-foreground mb-6">
-                  <strong>Pozycjonowanie stron internetowych to proces optymalizacji Twojej strony, mający na celu poprawę jej widoczności w wynikach wyszukiwania.</strong> Cennik SEO obejmuje audyt strony, analizę słów kluczowych, optymalizację treści i link building. Koszty pozycjonowania zaczynają się od kilkuset złotych miesięcznie dla mniej konkurencyjnych branż. Dowiedz się więcej o naszej usłudze <Link to="/seo/pozycjonowanie" className="text-primary hover:underline">pozycjonowania stron</Link>.
+                  Strona ze sklepem internetowym to najbardziej złożony z popularnych projektów. Cenę kształtują: platforma (WooCommerce, Shopify, PrestaShop lub rozwiązanie dedykowane), liczba produktów i wariantów, integracje z płatnościami, kurierami i systemem magazynowym, a także projekt karty produktu i koszyka. Przy sklepie rosną też koszty utrzymania: mocniejszy hosting, płatne rozszerzenia, prowizje operatorów płatności i regularna opieka.
                 </p>
-
-                <h3 className="text-xl font-heading font-semibold mt-8 mb-4">
-                  Dlaczego warto inwestować w SEO?
-                </h3>
+                <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
+                  Koszt strony a SEO i pozycjonowanie
+                </h2>
                 <p className="text-muted-foreground mb-6">
-                  Inwestycja w SEO jest kluczowa dla zwiększenia widoczności Twojej strony i dotarcia do potencjalnych klientów. Dobrze wypozycjonowana witryna generuje większy ruch organiczny, co przekłada się na wzrost sprzedaży. Dowiedz się więcej o <Link to="/seo/pozycjonowanie" className="text-primary hover:underline">pozycjonowaniu stron</Link>.
+                  Podstawowa optymalizacja SEO powinna być częścią budowy strony: poprawna struktura nagłówków, meta tagi, przyjazne adresy URL i szybkość działania. Pozycjonowanie to osobna, długofalowa usługa: audyt, analiza słów kluczowych, rozbudowa treści i link building. Jego koszt zależy od konkurencyjności branży i zakresu prac, a efektów nie da się zagwarantować z góry, bo pojawiają się stopniowo. Jeśli chcesz rozwijać widoczność w Google, sprawdź nasze <Link to="/seo/pozycjonowanie" className="text-primary hover:underline">pozycjonowanie stron</Link>.
+                </p>
+                <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
+                  Jak obniżyć koszt stworzenia strony internetowej?
+                </h2>
+                <ul className="list-disc pl-6 text-muted-foreground mb-6 space-y-2">
+                  <li>Przygotuj własne treści i zdjęcia lub listę informacji, które mają się znaleźć na stronie.</li>
+                  <li>Zacznij od mniejszej liczby podstron i rozbudowuj serwis etapami.</li>
+                  <li>Wybierz sprawdzony szablon zamiast pełnego projektu, jeśli wizerunek nie wymaga unikalnego designu.</li>
+                  <li>Ogranicz zakres do rzeczy, które realnie pomogą klientom, zamiast dodawać kolejne funkcje do strony na zapas.</li>
+                  <li>Spisz brief, dzięki któremu wykonawca nie będzie musiał zgadywać zakresu.</li>
+                </ul>
+                <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
+                  Strony internetowe – cennik czy indywidualna wycena?
+                </h2>
+                <p className="text-muted-foreground mb-6">
+                  Gotowy cennik daje szybką orientację, ale rzadko uwzględnia specyfikę Twojej firmy. Cena strony internetowej z cennika zwykle dotyczy podstawowego pakietu, a dodatki (treści, wersje językowe, integracje) wycenia się osobno. Porównując kilku wykonawców, poproś o rozpisanie zakresu i sprawdź portfolio. Dobra strona to taka, która realizuje cel biznesowy: zbiera zapytania, sprzedaje lub buduje zaufanie, a nie tylko dobrze wygląda.
+                </p>
+                <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
+                  Planujesz realizację strony www dla Twojej firmy?
+                </h2>
+                <p className="text-muted-foreground mb-6">
+                  W FOTZ Studio z Poznania budujemy strony dla firm, łącząc projekt, treści, zdjęcia i wideo w jednym zespole. Ostateczną cenę ustalamy po rozmowie o celach i zakresie; orientacyjne widełki znajdziesz w <Link to="/cennik-tworzenia-stron" className="text-primary hover:underline">cenniku tworzenia stron</Link>. Jeśli chcesz poznać koszt własnej strony internetowej, opisz projekt na stronie <Link to="/uslugi/strony-internetowe-dla-firm" className="text-primary hover:underline">stron internetowych dla firm</Link> albo <Link to="/kontakt" className="text-primary hover:underline">skontaktuj się z nami</Link>.
                 </p>
 
                 {/* FAQ Section */}
