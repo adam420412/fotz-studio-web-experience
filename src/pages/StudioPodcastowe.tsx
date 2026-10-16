@@ -85,7 +85,7 @@ const faqs = [
   {
     question: "Gdzie w Poznaniu nagrywacie podcasty?",
     answer:
-      "Zespół FOTZ Studio pracuje w Poznaniu. Miejsce nagrania dobieramy do projektu: może to być Twoja siedziba, sala konferencyjna albo wynajęte studio nagraniowe. Szczegóły ustalamy przy wycenie, zanim potwierdzimy termin.",
+      "Zespół FOTZ Studio pracuje w Poznaniu. Miejsce nagrania dobieramy do projektu: może to być Twoja siedziba, sala konferencyjna albo wynajęte studio do nagrań. Szczegóły ustalamy przy wycenie, zanim potwierdzimy termin.",
   },
   {
     question: "Ile kosztuje nagranie podcastu?",
@@ -213,7 +213,7 @@ export default function StudioPodcastowe() {
               <p className="mt-4 text-muted-foreground">
                 To kompleksowe usługi dla firm, które chcą regularnie publikować rozmowy z ekspertami,
                 klientami lub własnym zespołem. Możesz zamówić całość albo tylko wybrane etapy —
-                na przykład samo nagranie, jeśli edycję robisz u siebie. Cały proces nagraniowy prowadzi jedna ekipa.
+                na przykład samo nagranie, jeśli edycję robisz u siebie. Całość prowadzi jedna ekipa.
               </p>
             </div>
 
@@ -249,7 +249,7 @@ export default function StudioPodcastowe() {
                 Podcast firmowy sprawdza się tam, gdzie klient chce poznać ludzi i wiedzę stojącą za
                 marką: w usługach eksperckich, firmach technologicznych, edukacji, branży medycznej
                 czy produkcyjnej. Rozmowa trwająca kilkadziesiąt minut pokazuje kompetencje lepiej
-                niż kolejny post, a z jednego nagrania powstaje dużo contentu na kolejne tygodnie.
+                niż kolejny post, a z jednego nagrania powstaje content na kolejne tygodnie — odcinek dobrze wpisuje się w plan contentu marki.
               </p>
               <p className="text-muted-foreground">
                 Pracujemy z firmami, które startują z pierwszym odcinkiem, i z takimi, które mają już
@@ -282,11 +282,11 @@ export default function StudioPodcastowe() {
         <section className="section-padding bg-card px-4 sm:px-6 md:px-12">
           <div className="container-wide">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold mb-4">
-              Profesjonalne studio, biuro czy nagranie w terenie?
+              Profesjonalne studio nagraniowe, biuro czy nagranie w terenie?
             </h2>
             <div className="grid lg:grid-cols-2 gap-8 mb-10">
               <p className="text-muted-foreground">
-                Nie każdy podcast wymaga wynajmu studia. Często dobra przestrzeń do nagrywania
+                Studio podcastowe i nagraniowe to dla nas przede wszystkim ekipa i proces, a nie jeden adres. Nie każdy podcast wymaga wynajmu studia. Często dobra przestrzeń do nagrywania
                 to sala w Twojej firmie — rozmówca czuje się swobodniej, a w tle widać markę.
                 Przy nagraniach w siedzibie klienta przyjeżdżamy z naszym sprzętem — to zestaw mobilny: mikrofony, kamery i światło. Innym razem
                 lepiej sprawdzi się wynajęte studio filmowe lub studio fotograficzne z wygłuszeniem i stałą scenografią, na
@@ -320,7 +320,7 @@ export default function StudioPodcastowe() {
         <section className="section-padding bg-background px-4 sm:px-6 md:px-12">
           <div className="container-wide">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold mb-8">
-              Jak wygląda realizacja podcastu krok po kroku
+              Jak wygląda profesjonalny proces nagraniowy krok po kroku
             </h2>
             <ol className="grid md:grid-cols-2 lg:grid-cols-5 gap-4">
               {steps.map((step, index) => (
@@ -338,7 +338,7 @@ export default function StudioPodcastowe() {
         <section className="section-padding bg-card px-4 sm:px-6 md:px-12">
           <div className="container-wide max-w-4xl">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold mb-4">
-              Realizacja nagrań wideo — zespół produkcyjny, Poznań i okolice
+              Zespół produkcyjny — Poznań i okolice
             </h2>
             <p className="text-muted-foreground mb-4">
               FOTZ to kreatywny zespół, który na co dzień realizuje filmy reklamowe, materiały
@@ -362,7 +362,7 @@ export default function StudioPodcastowe() {
         <section id="wycena" className="section-padding bg-background px-4 sm:px-6 md:px-12">
           <div className="container-wide max-w-4xl">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold mb-4">
-              Od czego zależy cena nagrania podcastu
+              Od czego zależy cena: nagranie, montaż, liczba odcinków
             </h2>
             <p className="text-muted-foreground mb-6">
               Nie podajemy cen w ciemno, bo dwa podcasty o tej samej długości mogą wymagać zupełnie
