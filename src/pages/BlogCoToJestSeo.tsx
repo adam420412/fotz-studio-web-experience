@@ -334,11 +334,11 @@ const BlogCoToJestSeo = () => {
                 pozycjonowanie lokalne
               </Link>{" "}
               dla firm z całej Polski — od{" "}
-              <Link to="/uslugi/pozycjonowanie/warszawa" className="text-primary hover:underline">
+              <Link to="/seo/pozycjonowanie-warszawa" className="text-primary hover:underline">
                 Warszawy
               </Link>{" "}
               po{" "}
-              <Link to="/uslugi/pozycjonowanie/gdansk" className="text-primary hover:underline">
+              <Link to="/seo/pozycjonowanie-gdansk" className="text-primary hover:underline">
                 Gdańsk
               </Link>.
             </p>

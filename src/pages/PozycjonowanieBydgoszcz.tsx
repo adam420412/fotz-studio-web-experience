@@ -423,9 +423,9 @@ const PozycjonowanieBydgoszcz = () => {
               { city: "Toruń", href: "/uslugi/pozycjonowanie/torun" },
               { city: "Radom", href: "/uslugi/pozycjonowanie/radom" },
               { city: "Kielce", href: "/uslugi/pozycjonowanie/kielce" },
-              { city: "Warszawa", href: "/uslugi/pozycjonowanie/warszawa" },
+              { city: "Warszawa", href: "/seo/pozycjonowanie-warszawa" },
               { city: "Kraków", href: "/seo/pozycjonowanie-krakow" },
-              { city: "Wrocław", href: "/uslugi/pozycjonowanie/wroclaw" },
+              { city: "Wrocław", href: "/seo/pozycjonowanie-wroclaw" },
             ].map((item) => (
               <Link
                 key={item.city}

@@ -5,6 +5,46 @@
   "outputDirectory": "dist",
   "redirects": [
     {
+      "source": "/uslugi/pozycjonowanie/lublin",
+      "destination": "/seo/pozycjonowanie-lublin",
+      "permanent": true
+    },
+    {
+      "source": "/agencja-seo-lublin",
+      "destination": "/seo/pozycjonowanie-lublin",
+      "permanent": true
+    },
+    {
+      "source": "/uslugi/pozycjonowanie/gdansk",
+      "destination": "/seo/pozycjonowanie-gdansk",
+      "permanent": true
+    },
+    {
+      "source": "/uslugi/pozycjonowanie/lodz",
+      "destination": "/seo/pozycjonowanie-lodz",
+      "permanent": true
+    },
+    {
+      "source": "/uslugi/pozycjonowanie/wroclaw",
+      "destination": "/seo/pozycjonowanie-wroclaw",
+      "permanent": true
+    },
+    {
+      "source": "/agencja-seo-wroclaw",
+      "destination": "/seo/pozycjonowanie-wroclaw",
+      "permanent": true
+    },
+    {
+      "source": "/uslugi/pozycjonowanie/warszawa",
+      "destination": "/seo/pozycjonowanie-warszawa",
+      "permanent": true
+    },
+    {
+      "source": "/agencja-seo-warszawa",
+      "destination": "/seo/pozycjonowanie-warszawa",
+      "permanent": true
+    },
+    {
       "source": "/agencja-reklamowa-poznan",
       "destination": "/kampanie-reklamowe-poznan",
       "permanent": true

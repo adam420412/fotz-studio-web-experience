@@ -166,6 +166,7 @@ const SEOPozycjonowanieWarszawa = lazy(() => import("./pages/SEOPozycjonowanieWa
 const SEOPozycjonowanieKrakow = lazy(() => import("./pages/SEOPozycjonowanieKrakow"));
 const SEOPozycjonowanieWroclaw = lazy(() => import("./pages/SEOPozycjonowanieWroclaw"));
 const SEOPozycjonowanieGdansk = lazy(() => import("./pages/SEOPozycjonowanieGdansk"));
+const SEOPozycjonowanieLublin = lazy(() => import("./pages/SEOPozycjonowanieLublin"));
 const SEOPozycjonowanieKatowice = lazy(() => import("./pages/SEOPozycjonowanieKatowice"));
 const SEOPozycjonowanieLodz = lazy(() => import("./pages/SEOPozycjonowanieLodz"));
 
@@ -247,10 +248,6 @@ const FacebookInstagramAds = lazy(() => import("./pages/FacebookInstagramAds"));
 // Wave 5: New service pages (logo, pozycjonowanie, fotografia, video)
 const LogoIBranding = lazy(() => import("./pages/LogoIBranding"));
 const UslugiPozycjonowanie = lazy(() => import("./pages/UslugiPozycjonowanie"));
-const PozycjonowanieWarszawa = lazy(() => import("./pages/PozycjonowanieWarszawa"));
-const PozycjonowanieWroclaw = lazy(() => import("./pages/PozycjonowanieWroclaw"));
-const PozycjonowanieGdansk = lazy(() => import("./pages/PozycjonowanieGdansk"));
-const PozycjonowanieLodz = lazy(() => import("./pages/PozycjonowanieLodz"));
 const FotografiaProduktowa = lazy(() => import("./pages/FotografiaProduktowa"));
 const VideoMarketing = lazy(() => import("./pages/VideoMarketing"));
 
@@ -266,7 +263,6 @@ const BlogCoToJestSeo = lazy(() => import("./pages/BlogCoToJestSeo"));
 
 // Wave 8: New city pages + pricing
 const CennikStronInternetowych = lazy(() => import("./pages/CennikStronInternetowych"));
-const PozycjonowanieLublin = lazy(() => import("./pages/PozycjonowanieLublin"));
 const PozycjonowanieRzeszow = lazy(() => import("./pages/PozycjonowanieRzeszow"));
 const PozycjonowanieCzestochowa = lazy(() => import("./pages/PozycjonowanieCzestochowa"));
 const AgencjaMarketingowaLodz = lazy(() => import("./pages/AgencjaMarketingowaLodz"));
@@ -319,7 +315,6 @@ const TworzenieStronKatowice = lazy(() => import("./pages/TworzenieStronKatowice
 const TworzenieStronLublin = lazy(() => import("./pages/TworzenieStronLublin"));
 const TworzenieStronPoznan = lazy(() => import("./pages/TworzenieStronPoznan"));
 const MarketingInternetowy = lazy(() => import("./pages/MarketingInternetowy"));
-const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 
 
@@ -895,7 +890,6 @@ const BlogSklepInternetowyCena = lazy(() => import("./pages/BlogSklepInternetowy
 const GoogleMojaFirma = lazy(() => import("./pages/GoogleMojaFirma"));
 const MarketingAutomation = lazy(() => import("./pages/MarketingAutomation"));
 const LeadGeneration = lazy(() => import("./pages/LeadGeneration"));
-const AgencjaSEOLublin = lazy(() => import("./pages/AgencjaSEOLublin"));
 const StronaInternetowaDlaRestauracji = lazy(() => import("./pages/StronaInternetowaDlaRestauracji"));
 
 // Wave 15: FB/IG Ads, email marketing, content marketing, strona cena, pozycjonowanie cena
@@ -919,7 +913,6 @@ const MarketingB2B = lazy(() => import("./pages/MarketingB2B"));
 const AudytStronyInternetowej = lazy(() => import("./pages/AudytStronyInternetowej"));
 const OptymalizacjaStronyInternetowej = lazy(() => import("./pages/OptymalizacjaStronyInternetowej"));
 const StronaOnePage = lazy(() => import("./pages/StronaOnePage"));
-const AgencjaSEOWroclaw = lazy(() => import("./pages/AgencjaSEOWroclaw"));
 const BlogLandingPageCena = lazy(() => import("./pages/BlogLandingPageCena"));
 
 // Wave 12: High-value service pages + city SEO + blog
@@ -1335,15 +1328,15 @@ const App = ({ Router = BrowserRouter, client = queryClient, initialPage }: AppP
                 <Route path="/uslugi/strony-internetowe/gorzow" element={<StronyInternetoweGorzow />} />
                 <Route path="/uslugi/logo-i-branding" element={<LogoIBranding />} />
                 <Route path="/uslugi/pozycjonowanie" element={<UslugiPozycjonowanie />} />
-                <Route path="/uslugi/pozycjonowanie/warszawa" element={<PozycjonowanieWarszawa />} />
+                <Route path="/uslugi/pozycjonowanie/warszawa" element={<Redirect301 to="/seo/pozycjonowanie-warszawa" />} />
                 <Route path="/uslugi/pozycjonowanie/krakow" element={<Redirect301 to="/seo/pozycjonowanie-krakow" />} />
-                <Route path="/uslugi/pozycjonowanie/wroclaw" element={<PozycjonowanieWroclaw />} />
+                <Route path="/uslugi/pozycjonowanie/wroclaw" element={<Redirect301 to="/seo/pozycjonowanie-wroclaw" />} />
                 <Route path="/uslugi/pozycjonowanie/poznan" element={<Redirect301 to="/seo/pozycjonowanie-poznan" />} />
-                <Route path="/uslugi/pozycjonowanie/gdansk" element={<PozycjonowanieGdansk />} />
-                <Route path="/uslugi/pozycjonowanie/lodz" element={<PozycjonowanieLodz />} />
+                <Route path="/uslugi/pozycjonowanie/gdansk" element={<Redirect301 to="/seo/pozycjonowanie-gdansk" />} />
+                <Route path="/uslugi/pozycjonowanie/lodz" element={<Redirect301 to="/seo/pozycjonowanie-lodz" />} />
                 <Route path="/uslugi/pozycjonowanie/szczecin" element={<PozycjonowanieSzczecin />} />
                 <Route path="/uslugi/pozycjonowanie/bialystok" element={<PozycjonowanieBialystok />} />
-                <Route path="/uslugi/pozycjonowanie/lublin" element={<PozycjonowanieLublin />} />
+                <Route path="/uslugi/pozycjonowanie/lublin" element={<Redirect301 to="/seo/pozycjonowanie-lublin" />} />
                 <Route path="/uslugi/pozycjonowanie/rzeszow" element={<PozycjonowanieRzeszow />} />
                 <Route path="/uslugi/pozycjonowanie/katowice" element={<Redirect301 to="/seo/pozycjonowanie-katowice" />} />
                 <Route path="/uslugi/pozycjonowanie/czestochowa" element={<PozycjonowanieCzestochowa />} />
@@ -1368,7 +1361,7 @@ const App = ({ Router = BrowserRouter, client = queryClient, initialPage }: AppP
                 <Route path="/uslugi/tworzenie-stron-internetowych/lublin" element={<TworzenieStronLublin />} />
                 <Route path="/uslugi/tworzenie-stron-internetowych/poznan" element={<TworzenieStronPoznan />} />
                 <Route path="/uslugi/marketing-internetowy" element={<MarketingInternetowy />} />
-                <Route path="/agencja-seo-warszawa" element={<AgencjaSEOWarszawa />} />
+                <Route path="/agencja-seo-warszawa" element={<Redirect301 to="/seo/pozycjonowanie-warszawa" />} />
                 <Route path="/blog/dropshipping-polska" element={<BlogDropshippingPolska />} />
                 <Route path="/uslugi/tworzenie-stron-www" element={<TworzenieStronWWW />} />
                 <Route path="/uslugi/strony-internetowe-dla-firm" element={<StronyInternetoweDlaFirm />} />
@@ -1861,7 +1854,7 @@ const App = ({ Router = BrowserRouter, client = queryClient, initialPage }: AppP
                 <Route path="/blog/google-moja-firma" element={<GoogleMojaFirma />} />
                 <Route path="/uslugi/marketing-automation" element={<MarketingAutomation />} />
                 <Route path="/uslugi/lead-generation" element={<LeadGeneration />} />
-                <Route path="/agencja-seo-lublin" element={<AgencjaSEOLublin />} />
+                <Route path="/agencja-seo-lublin" element={<Redirect301 to="/seo/pozycjonowanie-lublin" />} />
                 <Route path="/uslugi/strona-internetowa-dla-restauracji" element={<StronaInternetowaDlaRestauracji />} />
                 {/* Wave 15 */}
                 <Route path="/blog/strona-internetowa-cena" element={<StronaInternetowaCena />} />
@@ -1881,7 +1874,7 @@ const App = ({ Router = BrowserRouter, client = queryClient, initialPage }: AppP
                 <Route path="/uslugi/audyt-strony-internetowej" element={<AudytStronyInternetowej />} />
                 <Route path="/uslugi/optymalizacja-strony-internetowej" element={<OptymalizacjaStronyInternetowej />} />
                 <Route path="/uslugi/strona-one-page" element={<StronaOnePage />} />
-                <Route path="/agencja-seo-wroclaw" element={<AgencjaSEOWroclaw />} />
+                <Route path="/agencja-seo-wroclaw" element={<Redirect301 to="/seo/pozycjonowanie-wroclaw" />} />
                 <Route path="/blog/landing-page-cena" element={<BlogLandingPageCena />} />
                 <Route path="/uslugi/projektowanie-stron-internetowych" element={<ProjektowanieStronInternetowych />} />
                 <Route path="/uslugi/strony-internetowe/lubelskie" element={<StronyInternetoweLubelskie />} />
@@ -1913,6 +1906,7 @@ const App = ({ Router = BrowserRouter, client = queryClient, initialPage }: AppP
                 <Route path="/seo/pozycjonowanie-krakow" element={<SEOPozycjonowanieKrakow />} />
                 <Route path="/seo/pozycjonowanie-wroclaw" element={<SEOPozycjonowanieWroclaw />} />
                 <Route path="/seo/pozycjonowanie-gdansk" element={<SEOPozycjonowanieGdansk />} />
+                <Route path="/seo/pozycjonowanie-lublin" element={<SEOPozycjonowanieLublin />} />
                 <Route path="/seo/pozycjonowanie-katowice" element={<SEOPozycjonowanieKatowice />} />
                 <Route path="/seo/pozycjonowanie-lodz" element={<SEOPozycjonowanieLodz />} />
 

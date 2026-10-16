@@ -230,12 +230,12 @@ const UslugiPozycjonowanie = () => {
   ];
 
   const cityPages = [
-    { city: "Warszawa", url: "/uslugi/pozycjonowanie/warszawa" },
+    { city: "Warszawa", url: "/seo/pozycjonowanie-warszawa" },
     { city: "Kraków", url: "/seo/pozycjonowanie-krakow" },
-    { city: "Wrocław", url: "/uslugi/pozycjonowanie/wroclaw" },
+    { city: "Wrocław", url: "/seo/pozycjonowanie-wroclaw" },
     { city: "Poznań", url: "/seo/pozycjonowanie-poznan" },
-    { city: "Gdańsk", url: "/uslugi/pozycjonowanie/gdansk" },
-    { city: "Łódź", url: "/uslugi/pozycjonowanie/lodz" },
+    { city: "Gdańsk", url: "/seo/pozycjonowanie-gdansk" },
+    { city: "Łódź", url: "/seo/pozycjonowanie-lodz" },
   ];
 
   return (
