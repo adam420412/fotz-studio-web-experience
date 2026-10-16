@@ -44,7 +44,7 @@ const audiences = [
 export default function SocialMediaSzczecin() {
   return (
     <Layout>
-      <SEOHead title="Agencja social media Szczecin | agencja marketingowa FOTZ" description="Agencja social media Szczecin: kompleksowa obsługa i marketing – Facebook, Instagram, content, strategie, kampania i Google Ads na sprzedaż i zasięgi." canonical={PAGE_URL} />
+      <SEOHead title="Agencja social media Szczecin | agencja marketingowa FOTZ" description="Agencja social media Szczecin: kompleksowa obsługa – Facebook, Instagram, content, strategie, kampania i Google Ads wspierające sprzedaż i zasięgi." canonical={PAGE_URL} />
       <ServiceSchema name="Obsługa social media dla firm ze Szczecina" description="Strategia, prowadzenie profili w mediach społecznościowych, produkcja treści i kampanie reklamowe Meta Ads w uzgodnionym zakresie, realizowane zdalnie." areaServed="Szczecin" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://www.fotz-studio.pl/" }, { name: "Agencja social media", url: "https://www.fotz-studio.pl/agencja-social-media" }, { name: "Szczecin", url: PAGE_URL }]} />
       <FAQSchema items={faqs} />
@@ -67,7 +67,7 @@ export default function SocialMediaSzczecin() {
       <section id="zakres-social-media" className="container-wide px-6 md:px-12 py-12 md:py-16 scroll-mt-28" aria-labelledby="zakres-heading">
         <p className="dv-eyebrow mb-3">Usługi agencji</p><h2 id="zakres-heading" className="text-3xl md:text-4xl font-heading mb-5">Prowadzenie social media Szczecin: strategie, content, kampania i sprzedaż</h2>
         <p className="text-muted-foreground max-w-3xl mb-6 leading-relaxed">Możesz zlecić nam kompleksową obsługę mediów społecznościowych albo tylko wybrany element: strategię, posty, filmy lub kampanie. Zakres dobieramy do branży, materiałów, które już masz, i czasu, jaki Twój zespół może poświęcić na akceptacje.</p>
-        <p className="text-muted-foreground max-w-3xl mb-8 leading-relaxed">Social media marketing ma wspierać sprzedaż i rozpoznawalność marki, a nie tylko zbierać polubienia i zasięgi. Gdy profil jest częścią lejka sprzedażowego, posty i reklamy prowadzą do konkretnej oferty lub formularza. Ustalamy mierzalny cel, np. liczbę zapytań ofertowych lub formularzy wysłanych z reklamy. Treści, które budują rozpoznawalność, łączymy z działaniami sprzedażowymi. Dlatego przed pierwszym postem ustalamy, kogo chcesz zainteresować ofertą i co odbiorca ma zrobić dalej: napisać wiadomość, zarezerwować termin czy odwiedzić sklep.</p>
+        <p className="text-muted-foreground max-w-3xl mb-8 leading-relaxed">Social media marketing ma wspierać sprzedaż i rozpoznawalność marki, a nie tylko zbierać polubienia i zasięgi. Ustalamy mierzalny cel, np. liczbę zapytań ofertowych lub formularzy wysłanych z reklamy. Treści, które budują rozpoznawalność, łączymy z działaniami sprzedażowymi. Dlatego przed pierwszym postem ustalamy, kogo chcesz zainteresować ofertą i co odbiorca ma zrobić dalej: napisać wiadomość, zarezerwować termin czy odwiedzić sklep.</p>
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-5">{services.map(service => <article key={service.href} className="border border-border bg-card rounded-2xl p-6 flex flex-col items-start"><service.icon aria-hidden="true" className="w-6 h-6 text-primary mb-5" /><h3 className="text-xl mb-3">{service.title}</h3><p className="text-muted-foreground leading-relaxed mb-5">{service.text}</p><Link to={service.href} className="underline underline-offset-4 text-sm mt-auto" aria-label={`Poznaj zakres: ${service.title}`}>Poznaj zakres</Link></article>)}</div>
       </section>
 
@@ -75,7 +75,7 @@ export default function SocialMediaSzczecin() {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16">
           <div>
             <p className="dv-eyebrow mb-3">Rynek szczeciński</p>
-            <h2 id="dla-kogo-heading" className="text-3xl md:text-4xl font-heading mb-5">Dla kogo pracujemy: klienci biznesowi, lokalne i ogólnopolskie marki</h2>
+            <h2 id="dla-kogo-heading" className="text-3xl md:text-4xl font-heading mb-5">Dla kogo pracujemy: klienci biznesowi i lokalne marki</h2>
             <p className="text-muted-foreground leading-relaxed mb-5">Stolica Pomorza Zachodniego to miasto portowe, akademickie i przygraniczne. Firmy mówią tu do kilku grup naraz: mieszkańców, studentów, turystów i klientów z Niemiec. Komunikacja w mediach społecznościowych powinna to uwzględniać, np. osobnymi kampaniami lub treściami dla poszczególnych odbiorców.</p>
             <p className="text-muted-foreground leading-relaxed">Lokalny biznes często opiera się na poleceniach i opiniach, dlatego relacje z klientami budujemy przez szybkie odpowiedzi w wiadomościach i komentarzach. Firmom B2B pomagamy pokazać kompetencje i ludzi, a markom konsumenckim przygotować krótkie filmy, które wyróżnią się w feedzie.</p>
           </div>
@@ -114,7 +114,7 @@ export default function SocialMediaSzczecin() {
       <section className="container-wide px-6 md:px-12 py-12 md:py-16" aria-labelledby="marketing-heading">
         <div className="max-w-3xl">
           <p className="dv-eyebrow mb-3">Kompleksowe podejście</p>
-          <h2 id="marketing-heading" className="text-3xl md:text-4xl font-heading mb-5">Kompleksowy i spójny plan marketingowy: social media, branding, strony</h2>
+          <h2 id="marketing-heading" className="text-3xl md:text-4xl font-heading mb-5">Kompleksowy i spójny marketing: social media, branding, strony</h2>
           <p className="text-muted-foreground leading-relaxed mb-5">Profil firmowy działa lepiej, gdy prowadzi do dobrze przygotowanej strony, a reklama na Facebooku i Instagramie wspiera kampanie Google Ads i pozycjonowanie. Zajmujemy się też tworzeniem stron, SEO i identyfikacją wizualną. Strony internetowe i profile powinny mówić tym samym językiem, a komunikacja marki w internecie budować spójny wizerunek we wszystkich kanałach. Kompleksowa obsługa nie jest obowiązkowa: możesz zacząć od samych social mediów. Branding i identyfikacja marki, projekty graficzne oraz tworzenie stron (web) mogą dojść później.</p>
           <p className="text-muted-foreground leading-relaxed mb-6">Jeśli planujesz budżet marketingowy na kolejny rok, pomożemy rozdzielić go między obsługę profili, produkcję treści i kampanie marketingowe. Będziemy raportować ruch na stronie z social mediów, każdy lead i zapytanie, żeby decyzje o kolejnych wydatkach opierały się na danych, a nie na przeczuciu.</p>
           <ul className="grid sm:grid-cols-2 gap-3 text-sm">
