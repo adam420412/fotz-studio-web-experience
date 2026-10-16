@@ -5,6 +5,26 @@
   "outputDirectory": "dist",
   "redirects": [
     {
+      "source": "/agencja-reklamowa-poznan",
+      "destination": "/kampanie-reklamowe-poznan",
+      "permanent": true
+    },
+    {
+      "source": "/performance-marketing/facebook-ads/poznan",
+      "destination": "/kampanie-reklamowe-poznan",
+      "permanent": true
+    },
+    {
+      "source": "/performance-marketing/google-ads/poznan",
+      "destination": "/kampanie-reklamowe-poznan",
+      "permanent": true
+    },
+    {
+      "source": "/performance-marketing/facebook-ads",
+      "destination": "/uslugi/reklama-facebook",
+      "permanent": true
+    },
+    {
       "source": "/blog/automatyzacja-marketingu-dzialanie-firmy",
       "destination": "/blog/marketing-automation-co-to",
       "permanent": true
@@ -131,7 +151,7 @@
     },
     {
       "source": "/blog/reklamy-google-ads-poznan-5",
-      "destination": "/performance-marketing/google-ads/poznan",
+      "destination": "/kampanie-reklamowe-poznan",
       "permanent": true
     },
     {
@@ -442,7 +462,7 @@
     },
     {
       "source": "/facebook-ads",
-      "destination": "/performance-marketing/facebook-ads",
+      "destination": "/uslugi/reklama-facebook",
       "permanent": true
     },
     {

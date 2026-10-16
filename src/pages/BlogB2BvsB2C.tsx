@@ -222,7 +222,7 @@ export default function BlogB2BvsB2C() {
               <h3>Najskuteczniejsze kanały B2C</h3>
               <ol>
                 <li><strong><Link to="/performance-marketing/instagram-ads" className="text-primary hover:underline">Instagram</Link> + <Link to="/performance-marketing/tiktok-ads" className="text-primary hover:underline">TikTok</Link></strong> - visual, lifestyle, influencerzy</li>
-                <li><strong><Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline">Facebook Ads</Link></strong> - precyzyjne targetowanie</li>
+                <li><strong><Link to="/uslugi/reklama-facebook" className="text-primary hover:underline">Facebook Ads</Link></strong> - precyzyjne targetowanie</li>
                 <li><strong>Google Shopping</strong> - dla <Link to="/uslugi/strony-internetowe/ecommerce" className="text-primary hover:underline">e-commerce</Link></li>
                 <li><strong>Email marketing</strong> - promocje, <Link to="/performance-marketing/remarketing" className="text-primary hover:underline">porzucone koszyki</Link></li>
                 <li><strong><Link to="/social-media/influencer" className="text-primary hover:underline">Influencer marketing</Link></strong> - social proof</li>

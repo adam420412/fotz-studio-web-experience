@@ -185,7 +185,7 @@ export default function FacebookAdsGdynia() {
         <PageBreadcrumbs items={[
             { name: "Strona główna", url: "/" },
             { name: "Performance Marketing", url: "/performance-marketing" },
-            { name: "Facebook Ads", url: "/performance-marketing/facebook-ads" },
+            { name: "Facebook Ads", url: "/uslugi/reklama-facebook" },
             { name: "Gdynia", url: "https://www.fotz-studio.pl" },
           ]}/>
 

@@ -31,7 +31,7 @@ export default function FacebookAdsRzeszow() {
         <PageBreadcrumbs items={[
             { name: "Home", path: "/" },
             { name: "Performance Marketing", path: "/performance-marketing" },
-            { name: "Facebook Ads", path: "/performance-marketing/facebook-ads" },
+            { name: "Facebook Ads", path: "/uslugi/reklama-facebook" },
             { name: "Rzeszów", url: "https://www.fotz-studio.pl" }
           ]}/>
 

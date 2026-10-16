@@ -429,7 +429,7 @@ export const TikTokAdsGdansk = () => {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Link
-                to="/performance-marketing/facebook-ads"
+                to="/uslugi/reklama-facebook"
                 className="text-blue-600 hover:text-blue-800 hover:underline font-semibold text-lg"
               >
                 Facebook Ads — Kampanie na Facebooku

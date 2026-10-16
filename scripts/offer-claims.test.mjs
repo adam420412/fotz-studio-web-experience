@@ -50,7 +50,7 @@ const reviewed = [
   '/content-marketing/strategia', '/agencja-marketingowa/wroclaw', '/social-media/obsluga', '/agencja-marketingowa/warszawa',
   '/performance-marketing/instagram-ads', '/uslugi/pozycjonowanie/opole', '/performance-marketing/facebook-ads/warszawa',
   '/performance-marketing/facebook-ads/lodz', '/uslugi/fotografia-produktowa', '/pozycjonowanie/legnica',
-  '/agencja-marketingowa-opole', '/uslugi/pozycjonowanie-lokalne',
+  '/agencja-marketingowa-opole', '/uslugi/pozycjonowanie-lokalne', '/kampanie-reklamowe-poznan', '/o-nas',
 ];
 const files = routeFiles(new URL('../src/App.tsx', import.meta.url));
 

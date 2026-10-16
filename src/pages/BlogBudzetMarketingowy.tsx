@@ -117,7 +117,7 @@ export default function BlogBudzetMarketingowy() {
               </h2>
               <p>
                 <strong>Budżet marketingowy</strong> to nie tylko liczba w arkuszu kalkulacyjnym - to strategiczne 
-                narzędzie, które determinuje, jak szybko i efektywnie Twoja firma będzie rosnąć. Właściwe planowanie budżetu pozwala zoptymalizować wydatki na <Link to="/performance-marketing/google-ads" className="text-primary hover:underline">kampanie Google Ads</Link> oraz <Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline">reklamy Facebook Ads</Link>.
+                narzędzie, które determinuje, jak szybko i efektywnie Twoja firma będzie rosnąć. Właściwe planowanie budżetu pozwala zoptymalizować wydatki na <Link to="/performance-marketing/google-ads" className="text-primary hover:underline">kampanie Google Ads</Link> oraz <Link to="/uslugi/reklama-facebook" className="text-primary hover:underline">reklamy Facebook Ads</Link>.
                 Bez jasnego planu wydatków marketingowych ryzykujesz:
               </p>
               <ul>
@@ -216,7 +216,7 @@ export default function BlogBudzetMarketingowy() {
                       <td>Ruch organiczny</td>
                     </tr>
                     <tr>
-                      <td><Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline">Social Media Ads</Link></td>
+                      <td><Link to="/uslugi/reklama-facebook" className="text-primary hover:underline">Social Media Ads</Link></td>
                       <td>20%</td>
                       <td>2 000 zł</td>
                       <td>Świadomość + <Link to="/performance-marketing/remarketing" className="text-primary hover:underline">remarketing</Link></td>

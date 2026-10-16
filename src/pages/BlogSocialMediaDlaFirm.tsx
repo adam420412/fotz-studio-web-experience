@@ -469,7 +469,7 @@ const BlogSocialMediaDlaFirm = () => {
                     <h4 className="font-semibold mb-2">Strategia Social Media</h4>
                     <p className="text-sm text-muted-foreground">Opracowanie strategii dla Twojej marki</p>
                   </Link>
-                  <Link to="/performance-marketing/facebook-ads" className="p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all">
+                  <Link to="/uslugi/reklama-facebook" className="p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all">
                     <h4 className="font-semibold mb-2">Facebook Ads</h4>
                     <p className="text-sm text-muted-foreground">Kampanie reklamowe na Facebooku i Instagramie</p>
                   </Link>

@@ -14,7 +14,7 @@ export const enquiryVariants = {
   configurator: 'Konfigurator produktów 3D',
   film: 'Film dla firmy', reels: 'Rolki do social media', spot: 'Spot reklamowy',
   ad_variants: 'Warianty filmu do testu reklam',
-  meta_ads: 'Kampania Facebook i Instagram', lead_ads: 'Reklamy i obsługa zapytań',
+  meta_ads: 'Kampania Facebook i Instagram', google_ads: 'Kampania Google Ads', lead_ads: 'Reklamy i obsługa zapytań',
   instagram_ads: 'Kampania Instagram Ads', content_plan: 'Strategia treści',
   campaign_audit: 'Przegląd kampanii reklamowej',
   video_plan: 'Strategia i regularne materiały video',

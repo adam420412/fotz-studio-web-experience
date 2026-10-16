@@ -162,7 +162,7 @@ const PMTargetowanie = () => {
               <Link to="/performance-marketing" className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm hover:bg-primary/20 transition-colors">Performance Marketing Hub</Link>
               <Link to="/performance-marketing/optymalizacja" className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm hover:bg-primary/20 transition-colors">Optymalizacja Kampanii</Link>
               <Link to="/performance-marketing/remarketing" className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm hover:bg-primary/20 transition-colors">Remarketing</Link>
-              <Link to="/performance-marketing/facebook-ads" className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm hover:bg-primary/20 transition-colors">Facebook Ads</Link>
+              <Link to="/uslugi/reklama-facebook" className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm hover:bg-primary/20 transition-colors">Facebook Ads</Link>
               <Link to="/performance-marketing/google-ads" className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm hover:bg-primary/20 transition-colors">Google Ads</Link>
             </div>
           </div>
@@ -180,7 +180,7 @@ const PMTargetowanie = () => {
           
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
               <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>
-              <Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline font-medium text-sm">→ Facebook Ads</Link>
+              <Link to="/uslugi/reklama-facebook" className="text-primary hover:underline font-medium text-sm">→ Facebook Ads</Link>
               <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
               <Link to="/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
             </div>

@@ -172,7 +172,6 @@ const SEOPozycjonowanieLodz = lazy(() => import("./pages/SEOPozycjonowanieLodz")
 // Local SEO pages
 const AgencjaMarketingowaPoznan = lazy(() => import("./pages/AgencjaMarketingowaPoznan"));
 const AgencjaMarketinguInternetowego = lazy(() => import("./pages/AgencjaMarketinguInternetowego"));
-const AgencjaReklamowaPoznan = lazy(() => import("./pages/AgencjaReklamowaPoznan"));
 const AgencjaMarketingowa = lazy(() => import("./pages/AgencjaMarketingowa"));
 
 // City pages - all lazy loaded
@@ -232,7 +231,6 @@ const KompleksowaObsluga = lazy(() => import("./pages/KompleksowaObsluga"));
 const StudioPodcastowe = lazy(() => import("./pages/StudioPodcastowe"));
 
 // Ads pages
-const FacebookAds = lazy(() => import("./pages/FacebookAds"));
 const GoogleAds = lazy(() => import("./pages/GoogleAds"));
 const GoogleAdsWarszawa = lazy(() => import("./pages/GoogleAdsWarszawa"));
 const SocialMediaWarszawa = lazy(() => import("./pages/SocialMediaWarszawa"));
@@ -1054,7 +1052,6 @@ const AgencjaMarketingowaGdynia = lazy(() => import("./pages/AgencjaMarketingowa
 // Wave 253-254 Google Ads + Facebook Ads city pages
 const GoogleAdsKrakow = lazy(() => import("./pages/GoogleAdsKrakow"));
 const GoogleAdsWroclaw = lazy(() => import("./pages/GoogleAdsWroclaw"));
-const GoogleAdsPoznan = lazy(() => import("./pages/GoogleAdsPoznan"));
 const GoogleAdsGdansk = lazy(() => import("./pages/GoogleAdsGdansk"));
 const GoogleAdsLodz = lazy(() => import("./pages/GoogleAdsLodz"));
 const GoogleAdsKatowice = lazy(() => import("./pages/GoogleAdsKatowice"));
@@ -1066,7 +1063,6 @@ const FacebookAdsWarszawa = lazy(() => import("./pages/FacebookAdsWarszawa"));
 const FacebookAdsKrakow = lazy(() => import("./pages/FacebookAdsKrakow"));
 const FacebookAdsWroclaw = lazy(() => import("./pages/FacebookAdsWroclaw"));
 const FacebookAdsGdansk = lazy(() => import("./pages/FacebookAdsGdansk"));
-const FacebookAdsPoznan = lazy(() => import("./pages/FacebookAdsPoznan"));
 const FacebookAdsLodz = lazy(() => import("./pages/FacebookAdsLodz"));
 const FacebookAdsKatowice = lazy(() => import("./pages/FacebookAdsKatowice"));
 const FacebookAdsSzczecin = lazy(() => import("./pages/FacebookAdsSzczecin"));
@@ -1936,7 +1932,7 @@ const App = ({ Router = BrowserRouter, client = queryClient, initialPage }: AppP
                 <Route path="/performance-marketing/google-ads/warszawa" element={<GoogleAdsWarszawa />} />
                 <Route path="/performance-marketing/google-ads/krakow" element={<GoogleAdsKrakow />} />
                 <Route path="/performance-marketing/google-ads/wroclaw" element={<GoogleAdsWroclaw />} />
-                <Route path="/performance-marketing/google-ads/poznan" element={<GoogleAdsPoznan />} />
+                <Route path="/performance-marketing/google-ads/poznan" element={<Redirect301 to="/kampanie-reklamowe-poznan" />} />
                 <Route path="/performance-marketing/google-ads/gdansk" element={<GoogleAdsGdansk />} />
                 <Route path="/performance-marketing/google-ads/lodz" element={<GoogleAdsLodz />} />
                 <Route path="/performance-marketing/google-ads/katowice" element={<GoogleAdsKatowice />} />
@@ -1948,7 +1944,7 @@ const App = ({ Router = BrowserRouter, client = queryClient, initialPage }: AppP
                 <Route path="/performance-marketing/google-ads/lublin" element={<GoogleAdsLublin />} />
                 <Route path="/performance-marketing/google-ads/rzeszow" element={<GoogleAdsRzeszow />} />
                 <Route path="/performance-marketing/facebook-ads/gdansk" element={<FacebookAdsGdansk />} />
-                <Route path="/performance-marketing/facebook-ads/poznan" element={<FacebookAdsPoznan />} />
+                <Route path="/performance-marketing/facebook-ads/poznan" element={<Redirect301 to="/kampanie-reklamowe-poznan" />} />
                 <Route path="/performance-marketing/facebook-ads/lodz" element={<FacebookAdsLodz />} />
                 <Route path="/performance-marketing/facebook-ads/katowice" element={<FacebookAdsKatowice />} />
                 <Route path="/performance-marketing/facebook-ads/szczecin" element={<FacebookAdsSzczecin />} />
@@ -1971,7 +1967,7 @@ const App = ({ Router = BrowserRouter, client = queryClient, initialPage }: AppP
                 <Route path="/performance-marketing/facebook-ads/torun" element={<FacebookAdsTorun />} />
                 <Route path="/performance-marketing/google-ads/bialystok" element={<GoogleAdsBialystok />} />
                 <Route path="/performance-marketing/google-ads/kielce" element={<GoogleAdsKielce />} />
-                <Route path="/performance-marketing/facebook-ads" element={<FacebookAds />} />
+                <Route path="/performance-marketing/facebook-ads" element={<Redirect301 to="/uslugi/reklama-facebook" />} />
                 <Route path="/performance-marketing/instagram-ads" element={<InstagramAds />} />
                 <Route path="/performance-marketing/meta-ads" element={<FacebookInstagramAds />} />
                 <Route path="/performance-marketing/linkedin-ads" element={<LinkedInAds />} />
@@ -1995,7 +1991,7 @@ const App = ({ Router = BrowserRouter, client = queryClient, initialPage }: AppP
                 <Route path="/agencja-marketingowa-poznan" element={<Redirect301 to="/agencja-marketingowa/poznan" />} />
                 <Route path="/agencja-marketingowa" element={<AgencjaMarketingowa />} />
                 <Route path="/agencja-marketingu-internetowego" element={<AgencjaMarketinguInternetowego />} />
-                <Route path="/agencja-reklamowa-poznan" element={<AgencjaReklamowaPoznan />} />
+                <Route path="/agencja-reklamowa-poznan" element={<Redirect301 to="/kampanie-reklamowe-poznan" />} />
                 <Route path="/agencja-seo-poznan" element={<Redirect301 to="/seo/pozycjonowanie-poznan" />} />
                 <Route path="/uslugi/sklepy-internetowe" element={<SklepyInternetowe />} />
                 <Route path="/uslugi/sklepy-internetowe/poznan" element={<SklepyInternetowePoznan />} />

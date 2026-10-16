@@ -207,7 +207,7 @@ export default function FacebookAdsGdansk() {
   const breadcrumbItems = [
     { label: 'Home', path: '/' },
     { label: 'Performance Marketing', path: '/performance-marketing' },
-    { label: 'Facebook Ads', path: '/performance-marketing/facebook-ads' },
+    { label: 'Facebook Ads', path: '/uslugi/reklama-facebook' },
     { label: 'Gdańsk' }
   ];
 
@@ -646,7 +646,7 @@ export default function FacebookAdsGdansk() {
         {/* Back Link */}
         <section className="py-12 bg-white border-t">
           <div className="max-w-7xl mx-auto px-6">
-            <Link to="/performance-marketing/facebook-ads" className="text-blue-600 hover:text-blue-700 flex items-center gap-2 text-lg font-semibold">
+            <Link to="/uslugi/reklama-facebook" className="text-blue-600 hover:text-blue-700 flex items-center gap-2 text-lg font-semibold">
               &larr; Wróć do Facebook Ads
             </Link>
           </div>

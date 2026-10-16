@@ -87,7 +87,7 @@ const relatedServices = [
   { title: "Strony internetowe", href: "/uslugi/strony-internetowe", description: "Strony dla placówek edukacyjnych" },
   { title: "Social Media", href: "/social-media/obsluga", description: "Budowanie społeczności" },
   { title: "Produkcja video", href: "/uslugi/produkcja-filmow", description: "Filmy promocyjne" },
-  { title: "Facebook Ads", href: "/performance-marketing/facebook-ads", description: "Kampanie rekrutacyjne" },
+  { title: "Facebook Ads", href: "/uslugi/reklama-facebook", description: "Kampanie rekrutacyjne" },
 ];
 
 const MarketingEdukacja = () => {

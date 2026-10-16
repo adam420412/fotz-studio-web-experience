@@ -361,7 +361,7 @@ export default function SocialMediaCluster() {
           <h3 className="font-heading font-bold text-lg mb-6">Powiązane usługi</h3>
           <div className="flex flex-wrap gap-3">
             {[
-              { label: "Facebook Ads", href: "/performance-marketing/facebook-ads" },
+              { label: "Facebook Ads", href: "/uslugi/reklama-facebook" },
               { label: "Instagram Ads", href: "/performance-marketing/instagram-ads" },
               { label: "TikTok Ads", href: "/performance-marketing/tiktok-ads" },
               { label: "Content Marketing", href: "/content-marketing" },

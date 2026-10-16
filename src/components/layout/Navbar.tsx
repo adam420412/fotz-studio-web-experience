@@ -19,7 +19,7 @@ const mobileServicesData = [
   { name: "Kompleksowa obsługa", href: "/kompleksowa-obsluga-marketingowa" },
   { name: "Agencja Social Media", href: "/agencja-social-media" },
   { name: "Prowadzenie social media", href: "/social-media/obsluga" },
-  { name: "Facebook Ads", href: "/performance-marketing/facebook-ads" },
+  { name: "Facebook Ads", href: "/uslugi/reklama-facebook" },
   { name: "Google Ads", href: "/performance-marketing/google-ads" },
   { name: "Strony Internetowe", href: "/uslugi/strony-internetowe" },
   { name: "Pozycjonowanie SEO", href: "/seo/pozycjonowanie" },

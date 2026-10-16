@@ -396,7 +396,7 @@ export default function AgencjaKreaTywnaPoznan() {
           <p className="text-center text-sm text-muted-foreground mb-6 font-medium uppercase tracking-wider">Powiązane usługi</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              { label: "Agencja reklamowa Poznań", to: "/agencja-reklamowa-poznan" },
+              { label: "Agencja reklamowa Poznań", to: "/kampanie-reklamowe-poznan" },
               { label: "Agencja marketingowa Poznań", to: "/agencja-marketingowa/poznan" },
               { label: "Identyfikacja wizualna", to: "/uslugi/identyfikacja-wizualna" },
               { label: "Social media Poznań", to: "/agencja-social-media/poznan" },

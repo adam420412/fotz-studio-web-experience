@@ -30,6 +30,7 @@ export const hydratedPages: Record<string, () => Promise<{ default: ComponentTyp
   "/performance-marketing/facebook-ads/lodz": () => import("@/pages/FacebookAdsLodz"),
   "/performance-marketing/facebook-ads/warszawa": () => import("@/pages/FacebookAdsWarszawa"),
   "/agencja-marketingowa/poznan": () => import("@/pages/AgencjaMarketingowaPoznan"),
+  "/kampanie-reklamowe-poznan": () => import("@/pages/KampanieReklamowePoznan"),
   "/agencja-marketingowa-opole": () => import("@/pages/AgencjaMarketingowaOpole"),
   "/agencja-marketingowa/wroclaw": () => import("@/pages/AgencjaMarketingowaWroclaw"),
   "/agencja-marketingu-internetowego": () => import("@/pages/AgencjaMarketinguInternetowego"),

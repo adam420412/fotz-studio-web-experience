@@ -164,7 +164,7 @@ const SocialMediaAnalityka = () => {
               <Link to="/social-media/strategia" className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm hover:bg-primary/20 transition-colors">Strategia Social Media</Link>
               <Link to="/social-media/content" className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm hover:bg-primary/20 transition-colors">Content Social Media</Link>
               <Link to="/performance-marketing/google-ads" className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm hover:bg-primary/20 transition-colors">Google Ads</Link>
-              <Link to="/performance-marketing/facebook-ads" className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm hover:bg-primary/20 transition-colors">Facebook Ads</Link>
+              <Link to="/uslugi/reklama-facebook" className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm hover:bg-primary/20 transition-colors">Facebook Ads</Link>
             </div>
           </div>
         </section>
