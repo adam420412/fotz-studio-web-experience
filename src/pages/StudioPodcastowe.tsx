@@ -36,7 +36,7 @@ const scope = [
     icon: Scissors,
     title: "Postprodukcja",
     description:
-      "Montaż, czyszczenie i wyrównanie dźwięku, napisy, plansze oraz wersje do publikacji. Na końcu dostajesz finalny plik gotowy do wrzucenia.",
+      "Cięcie, czyszczenie i wyrównanie dźwięku, napisy, plansze oraz wersje do publikacji. Na końcu dostajesz finalny plik gotowy do wrzucenia.",
   },
 ];
 
@@ -157,7 +157,7 @@ export default function StudioPodcastowe() {
                 </span>
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-4 sm:mb-6">
                   Studio podcastowe Poznań{" "}
-                  <span className="text-gradient">— podcast i realizacja nagrań wideo</span>
+                  <span className="text-gradient">— nagraj podcast audio i wideo w Poznaniu</span>
                 </h1>
                 <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8">
                   Chcesz nagrać swój podcast, ale nie masz ekipy ani czasu na technikę? Przygotujemy
@@ -293,7 +293,7 @@ export default function StudioPodcastowe() {
                 przykład gdy seria ma mieć spójny, rozpoznawalny wizualny styl.
               </p>
               <p className="text-muted-foreground">
-                Nie musisz sam szukać studia nagrań. Robimy nagrania wideo w Poznaniu — w centrum Poznania, na obrzeżach albo pod miastem — i doradzamy,
+                Nie musisz sam szukać studia nagrań. Nagrywamy w Poznaniu — w centrum Poznania, na obrzeżach albo pod miastem — i doradzamy,
                 które miejsce da najlepszy efekt przy Twoim budżecie. Profesjonalny sprzęt i
                 obsługę zapewnia nasza ekipa, a miejsce oraz termin rezerwacji potwierdzamy
                 razem z wyceną. Podcast łączymy też z innymi usługami: nagraniem spotów reklamowych
@@ -338,7 +338,7 @@ export default function StudioPodcastowe() {
         <section className="section-padding bg-card px-4 sm:px-6 md:px-12">
           <div className="container-wide max-w-4xl">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold mb-4">
-              Zespół produkcyjny — Poznań i okolice
+              Realizacja nagrań wideo — zespół z Poznania
             </h2>
             <p className="text-muted-foreground mb-4">
               FOTZ to kreatywny zespół, który na co dzień realizuje filmy reklamowe, materiały

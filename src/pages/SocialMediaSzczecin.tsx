@@ -36,7 +36,7 @@ const steps = [
 const audiences = [
   "Restauracje, kawiarnie i hotele, które chcą przyciągać mieszkańców i turystów odwiedzających miasto i wybrzeże.",
   "Firmy usługowe i gabinety: komunikacja lokalna, opinie, rezerwacje i pytania przez Messenger.",
-  "Przedsiębiorstwa z branży morskiej, logistycznej i produkcyjnej, które budują wizerunek pracodawcy i markę na LinkedIn.",
+  "Przedsiębiorstwa z branży morskiej, logistycznej i produkcyjnej, które budują wizerunek pracodawcy i biznesowy profil na LinkedIn.",
   "Sklepy i marki e-commerce ze Szczecina, które prowadzą sprzedaż na rynku ogólnopolskim lub także do Niemiec i potrzebują kampanii sprzedażowych.",
   "Organizatorzy wydarzeń, uczelnie i instytucje kultury, które potrzebują promocji wydarzeń i relacji na żywo.",
 ];
@@ -44,7 +44,7 @@ const audiences = [
 export default function SocialMediaSzczecin() {
   return (
     <Layout>
-      <SEOHead title="Agencja social media Szczecin | agencja marketingowa FOTZ" description="Agencja social media Szczecin: kompleksowa obsługa – Facebook, Instagram, content, strategie, kampania i Google Ads wspierające sprzedaż i zasięgi." canonical={PAGE_URL} />
+      <SEOHead title="Agencja social media Szczecin – prowadzenie social mediów" description="Agencja marketingowa FOTZ: social media Szczecin, kompleksowa obsługa – Facebook, content, strategie, reklama, kampania i Google Ads dla sprzedaży." canonical={PAGE_URL} />
       <ServiceSchema name="Obsługa social media dla firm ze Szczecina" description="Strategia, prowadzenie profili w mediach społecznościowych, produkcja treści i kampanie reklamowe Meta Ads w uzgodnionym zakresie, realizowane zdalnie." areaServed="Szczecin" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://www.fotz-studio.pl/" }, { name: "Agencja social media", url: "https://www.fotz-studio.pl/agencja-social-media" }, { name: "Szczecin", url: PAGE_URL }]} />
       <FAQSchema items={faqs} />
@@ -53,7 +53,7 @@ export default function SocialMediaSzczecin() {
         <div className="max-w-4xl">
           <p className="dv-eyebrow mb-5">FOTZ Studio · obsługa zdalna</p>
           <h1 className="text-4xl md:text-6xl font-heading leading-[1.08] tracking-tight mb-6">Agencja social media Szczecin<br /><span className="text-gradient">prowadzenie social mediów i marketing firmowy.</span></h1>
-          <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mb-7">FOTZ Studio to agencja marketingowa z własną produkcją zdjęć i wideo. Firmom ze Szczecina zapewniamy prowadzenie social mediów na Facebooku, Instagramie i LinkedIn, nagrywamy wideo, tworzymy content i kampanie reklamowe. Pracujemy z Poznania, a współpraca ma charakter zdalny.</p>
+          <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mb-7">FOTZ Studio to agencja marketingu internetowego z własną produkcją zdjęć i wideo. Firmom ze Szczecina prowadzimy profile na Facebooku, Instagramie i LinkedIn, nagrywamy wideo, tworzymy content i kampanie reklamowe. Pracujemy z Poznania, a współpraca ma charakter zdalny.</p>
           <div className="flex flex-col sm:flex-row gap-3 items-start">
             <Link to="/konsultacja" className="dv-btn dv-btn-primary">Umów rozmowę online <ArrowRight aria-hidden="true" className="w-4 h-4" /></Link>
             <a href="#zakres-social-media" className="dv-btn dv-btn-secondary">Sprawdź zakres usług</a>
@@ -65,7 +65,7 @@ export default function SocialMediaSzczecin() {
       </section>
 
       <section id="zakres-social-media" className="container-wide px-6 md:px-12 py-12 md:py-16 scroll-mt-28" aria-labelledby="zakres-heading">
-        <p className="dv-eyebrow mb-3">Usługi agencji</p><h2 id="zakres-heading" className="text-3xl md:text-4xl font-heading mb-5">Prowadzenie social media Szczecin: strategie, content, kampania</h2>
+        <p className="dv-eyebrow mb-3">Usługi agencji</p><h2 id="zakres-heading" className="text-3xl md:text-4xl font-heading mb-5">Prowadzenie social media Szczecin: strategie, content, kampania i sprzedaż</h2>
         <p className="text-muted-foreground max-w-3xl mb-6 leading-relaxed">Możesz zlecić nam kompleksową obsługę mediów społecznościowych albo tylko wybrany element: strategię, posty, filmy lub kampanie. Zakres dobieramy do branży, materiałów, które już masz, i czasu, jaki Twój zespół może poświęcić na akceptacje.</p>
         <p className="text-muted-foreground max-w-3xl mb-8 leading-relaxed">Social media marketing ma wspierać sprzedaż i rozpoznawalność marki, a nie tylko zbierać polubienia i zasięgi. Ustalamy mierzalny cel, np. liczbę zapytań ofertowych lub formularzy wysłanych z reklamy. Treści, które budują rozpoznawalność, łączymy z działaniami sprzedażowymi. Dlatego przed pierwszym postem ustalamy, kogo chcesz zainteresować ofertą i co odbiorca ma zrobić dalej: napisać wiadomość, zarezerwować termin czy odwiedzić sklep.</p>
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-5">{services.map(service => <article key={service.href} className="border border-border bg-card rounded-2xl p-6 flex flex-col items-start"><service.icon aria-hidden="true" className="w-6 h-6 text-primary mb-5" /><h3 className="text-xl mb-3">{service.title}</h3><p className="text-muted-foreground leading-relaxed mb-5">{service.text}</p><Link to={service.href} className="underline underline-offset-4 text-sm mt-auto" aria-label={`Poznaj zakres: ${service.title}`}>Poznaj zakres</Link></article>)}</div>
@@ -85,7 +85,7 @@ export default function SocialMediaSzczecin() {
 
       <section id="realizacje-social-media" className="py-12 md:py-16 bg-muted/30 border-y border-border scroll-mt-28" aria-labelledby="realizacje-heading">
         <div className="container-wide px-6 md:px-12">
-          <div className="flex flex-wrap items-end justify-between gap-5 mb-8"><div><p className="dv-eyebrow mb-3">Przykłady naszej pracy</p><h2 id="realizacje-heading" className="text-3xl md:text-4xl font-heading">Realizacje i case study: wideo, montaż, reklama</h2></div><Link to="/realizacje" className="underline underline-offset-4">Zobacz portfolio</Link></div>
+          <div className="flex flex-wrap items-end justify-between gap-5 mb-8"><div><p className="dv-eyebrow mb-3">Przykłady naszej pracy</p><h2 id="realizacje-heading" className="text-3xl md:text-4xl font-heading">Realizacje i case study: kreatywne wideo, montaż, reklama</h2></div><Link to="/realizacje" className="underline underline-offset-4">Zobacz portfolio</Link></div>
           <div className="grid md:grid-cols-2 gap-6">
             <PortfolioVideo src="/videos/fotz-reel-web.mp4" poster="/videos/enea-stadion-cover.webp" title="Enea Stadion — emocje z bliska" category="Film z wydarzenia" />
             <PortfolioVideo src="/videos/autospa.mp4" poster="/videos/autospa-frame.webp" title="AutoSpa" category="Prezentacja firmy" />
@@ -95,7 +95,7 @@ export default function SocialMediaSzczecin() {
       </section>
 
       <section id="proces-social-media" className="container-wide px-6 md:px-12 py-12 md:py-16 scroll-mt-28" aria-labelledby="proces-heading">
-        <p className="dv-eyebrow mb-3">Jak pracujemy</p><h2 id="proces-heading" className="text-3xl md:text-4xl font-heading mb-8">Współpraca z agencją: audyt, social media manager, raport</h2>
+        <p className="dv-eyebrow mb-3">Jak pracujemy</p><h2 id="proces-heading" className="text-3xl md:text-4xl font-heading mb-8">Prowadzenie social mediów zdalnie: audyt, social media manager, raport</h2>
         <ol className="grid md:grid-cols-2 lg:grid-cols-4 gap-7">{steps.map((step, index) => <li key={step.title} className="border-t border-border pt-5"><span aria-hidden="true" className="text-sm text-primary">0{index + 1}</span><h3 className="text-xl mt-3 mb-3">{step.title}</h3><p className="text-muted-foreground leading-relaxed">{step.text}</p></li>)}</ol>
         <p className="mt-8 text-muted-foreground max-w-3xl leading-relaxed">Spotkania prowadzimy online, a materiały wymieniamy przez wspólny folder. Nie mamy biura w Szczecinie. Jeśli projekt wymaga sesji zdjęciowej lub nagrań na miejscu, termin i koszt wyjazdu ustalamy osobno albo przygotowujemy instrukcję nagrań dla Twojego zespołu.</p>
       </section>

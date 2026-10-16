@@ -12,7 +12,7 @@ const services = [
   { icon: CalendarDays, title: "Prowadzenie profili na Facebooku, Instagramie i LinkedIn", text: "Publikowanie treści według harmonogramu: posty, grafiki, opisy i relacje, a do tego moderacja komentarzy oraz wiadomości w uzgodnionych godzinach.", href: "/social-media/obsluga" },
   { icon: Camera, title: "Content marketing i zdjęcia", text: "Tworzymy content z materiałów, które przesyła firma, a gdy ich brakuje, planujemy sesję. Wyjazd na zdjęcia do Krakowa ustalamy osobno, razem z terminem i kosztami.", href: "/social-media/content" },
   { icon: Video, title: "Rolki i krótkie filmy", text: "Scenariusze, montaż i napisy do rolek na Instagram, Facebook i TikTok. Pracujemy na Twoich nagraniach albo na materiale z dnia zdjęciowego, jeśli taki zaplanujemy.", href: "/uslugi/produkcja-video" },
-  { icon: MessageSquare, title: "Kampanie reklamowe na Facebooku i Instagramie", text: "Reklama w systemach reklamowych Meta — na platformie Facebook i Instagram — skierowana do grupy docelowej w Krakowie i okolicy albo w całej Polsce. Ustalamy cel, kreacje i odbiorców, a budżet emisji rozliczasz bezpośrednio z platformą.", href: "/performance-marketing/meta-ads" },
+  { icon: MessageSquare, title: "Kampanie reklamowe na Facebooku i Instagramie", text: "Reklama w systemach reklamowych Meta Platforms — na Facebooku i Instagramie — skierowana do grupy docelowej w Krakowie i okolicy albo w całej Polsce. Ustalamy cel, kreacje i odbiorców, a budżet emisji rozliczasz bezpośrednio z platformą.", href: "/performance-marketing/meta-ads" },
   { icon: ChartNoAxesCombined, title: "Analityka i raporty", text: "Analizujemy zasięgi, interakcje, kliknięcia i zapytania, a potem raportujemy je w prostej formie. Raport kończy się listą zmian na kolejny okres, a nie samą tabelą liczb.", href: "/social-media/analityka" },
 ];
 
@@ -22,6 +22,7 @@ const faqs = [
   { question: "Ile kosztuje prowadzenie social mediów dla firmy z Krakowa?", answer: "Wycena zależy od liczby kanałów i publikacji, rodzaju treści, moderacji, rolek oraz kampanii. Osobno pokazujemy obsługę, produkcję i budżet reklamowy. Lokalizacja firmy nie zmienia zasad wyceny, a ewentualny wyjazd na nagrania wyceniamy oddzielnie." },
   { question: "Czy prowadzicie też Google Ads i SEO?", answer: "Tak, jeśli kampania ma objąć wyszukiwarkę. Kampanie w wyszukiwarce, pozycjonowanie i strony internetowe to osobne usługi FOTZ Studio, które możemy połączyć z obsługą social mediów w jednej ofercie." },
   { question: "Czym różni się zdalna współpraca od tej, którą zapewni agencja marketingowa z Krakowa?", answer: "Lokalna agencja może łatwiej przyjechać na spotkanie lub nagranie. U nas kontakt jest zdalny, a dzień zdjęciowy w Krakowie planujemy osobno. Zakres pracy — strategia, treści, moderacja i kampanie — jest taki sam, a wsparcie w zakresie produkcji filmów zapewnia ten sam zespół, który prowadzi profile." },
+  { question: "Jesteście agencją reklamową czy agencją social media?", answer: "Łączymy obie role. Agencja reklamowa zwykle skupia się na kampaniach, a agencja social media na prowadzeniu profili — w FOTZ strategię, treści, nagrania i reklamę przygotowuje jeden zespół." },
   { question: "Czy możecie publikować treści po angielsku?", answer: "Jeśli Twoi klienci w Krakowie to także turyści lub osoby spoza Polski, wersje językowe ustalamy w zakresie współpracy przy wycenie." },
   { question: "Czy gwarantujecie wzrost obserwujących lub sprzedaży?", answer: "Nie gwarantujemy konkretnych wyników. Ustalamy mierniki, regularnie je sprawdzamy i na tej podstawie zmieniamy treści oraz kampanie. Efekty zależą też od oferty, budżetu i obsługi zapytań po Twojej stronie." },
 ];
@@ -45,7 +46,7 @@ export default function SocialMediaKrakow() {
         <div className="grid lg:grid-cols-[1.2fr_1fr] gap-10 lg:gap-16 items-center">
           <div>
             <p className="dv-eyebrow mb-5">FOTZ Studio · obsługa zdalna · Kraków</p>
-            <h1 className="text-4xl md:text-6xl font-heading leading-[1.08] tracking-tight mb-6">Agencja social media Kraków<br /><span className="text-gradient">agencja marketingowa online i kompleksowa obsługa profili.</span></h1>
+            <h1 className="text-4xl md:text-6xl font-heading leading-[1.08] tracking-tight mb-6">Agencja social media Kraków<br /><span className="text-gradient">marketing online, kompleksowa obsługa profili i reklama.</span></h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mb-7">Pomagamy firmom z Krakowa prowadzić media społecznościowe tak, żeby profil odpowiadał na pytania klientów i prowadził do kontaktu. Tworzymy strategie, content i rolki, prowadzimy Facebooka, Instagram i LinkedIn oraz kampanie reklamowe — zdalnie, z zespołu w Poznaniu.</p>
             <div className="flex flex-col sm:flex-row gap-3 items-start">
               <Link to="/konsultacja" className="dv-btn dv-btn-primary">Umów rozmowę <ArrowRight aria-hidden="true" className="w-4 h-4" /></Link>
@@ -79,8 +80,8 @@ export default function SocialMediaKrakow() {
           <div>
             <p className="dv-eyebrow mb-3">Reklama płatna</p>
             <h2 id="kampanie-heading" className="text-3xl md:text-4xl font-heading mb-5">Kampania reklamowa: Meta Ads na Facebooku i Google Ads dla Twojej firmy</h2>
-            <p className="text-muted-foreground leading-relaxed mb-5">Same publikacje rzadko wystarczą, gdy firma chce szybko dotrzeć do nowych odbiorców. Kampania reklamowa pozwala pokazać ofertę osobom w Krakowie, które jeszcze nie znają marki, i wrócić z przekazem do tych, które odwiedziły stronę lub profil.</p>
-            <p className="text-muted-foreground leading-relaxed">Przy prowadzeniu płatnych kampanii nie celujemy w same kliknięcia: ustawiamy je na rozpoznawalność, ruch, pozyskiwanie leadów albo sprzedaż w sklepie internetowym. Przy celach sprzedażowych sprawdzamy, czy strona i formularz są gotowe na konwersję, bo od tego zależy, czy kliknięcie zamieni się w zapytanie. Konwersja jest dla nas ważniejsza niż sam zasięg, a po każdym okresie sprawdzamy, czy kampania realizuje założone cele.</p>
+            <p className="text-muted-foreground leading-relaxed mb-5">Same publikacje rzadko wystarczą, gdy firma chce szybko dotrzeć do nowych odbiorców. Kampania reklamowa pozwala pokazać ofertę osobom w Krakowie, które jeszcze nie znają marki, i wrócić z przekazem do tych, które odwiedziły stronę lub profil. Konsument zwykle styka się z marką kilka razy, zanim zapyta o ofertę.</p>
+            <p className="text-muted-foreground leading-relaxed">Przy prowadzeniu płatnych kampanii nie celujemy w same kliknięcia: ustawiamy je na rozpoznawalność, ruch, pozyskiwanie leadów albo sprzedaż w sklepie internetowym. Przy celach sprzedażowych sprawdzamy, czy strona internetowa i formularz są gotowe na konwersję, bo od tego zależy, czy kliknięcie zamieni się w zapytanie. Konwersja jest dla nas ważniejsza niż sam zasięg, a po każdym okresie sprawdzamy, czy kampania realizuje założone cele.</p>
           </div>
           <div>
             <h3 className="text-2xl mb-4">Skuteczny marketing zaczyna się od decyzji</h3>
