@@ -54,7 +54,7 @@ const content = {
   ],
   "sections": [
     {
-      "title": "Agencja marketingowa Łódź: jak zaczynamy pracę z klientem?",
+      "title": "Jak zaczynamy pracę z klientem z Łodzi?",
       "text": "Pierwsza rozmowa odbywa się online. Pytamy o ofertę, klientów, obszar sprzedaży i o to, co dziś najbardziej przeszkadza w pozyskiwaniu zapytań. Przeglądamy stronę, profile społecznościowe i dostępne dane z kampanii. Jeśli witrynę odwiedza niewiele osób, zaczynamy od widoczności. Gdy ruch jest, a kontaktów brakuje, sprawdzamy ofertę, formularz i szybkość odpowiedzi. Współpraca może zacząć się od jednej usługi, bez zamawiania pełnego pakietu.",
       "points": [
         "Prześlij adres strony, linki do profili i krótki opis najważniejszej usługi.",
@@ -73,12 +73,12 @@ const content = {
     },
     {
       "title": "Kompleksowa obsługa czy pojedyncze działania?",
-      "text": "Kompleksowy marketing ma sens, gdy strona, reklamy i treści muszą mówić tym samym językiem. Wtedy jedna agencja pilnuje spójności: obietnica z reklamy znajduje potwierdzenie na stronie, a zdjęcia pokazują to, co firma rzeczywiście robi. Nie każda firma potrzebuje jednak wszystkiego naraz. Często lepiej najpierw poprawić stronę i formularz, a dopiero potem uruchomić kampanie. Proponujemy zakres, który Twój zespół zdoła obsłużyć, i rozszerzamy go, gdy pojawią się wyniki.",
+      "text": "Kompleksowy marketing w kanałach digital ma sens, gdy strona, reklamy i treści muszą mówić tym samym językiem. Wtedy jedna agencja pilnuje spójności: obietnica z reklamy znajduje potwierdzenie na stronie, a zdjęcia pokazują to, co firma rzeczywiście robi. Nie każda firma potrzebuje jednak wszystkiego naraz. Często lepiej najpierw poprawić stronę i formularz, a dopiero potem uruchomić kampanie. Proponujemy zakres, który Twój zespół zdoła obsłużyć, i rozszerzamy go, gdy pojawią się wyniki.",
       "href": "/uslugi/marketing-internetowy",
       "link": "Zakres marketingu internetowego"
     },
     {
-      "title": "Strategie komunikacji: Google Ads i Meta Ads, SEO, social media",
+      "title": "Strategie komunikacji: Google Ads i Meta Ads, pozycjonowanie, social media",
       "text": "Strategiczny plan zaczyna się od roli każdego kanału. Strona prezentuje pełną ofertę i zbiera zapytania. Pozycjonowanie buduje widoczność na frazy związane z usługą, także z nazwą miasta, jeśli lokalizacja ma znaczenie dla klienta. Reklamy w Google i w Meta uzupełniają się: pierwsze odpowiada na bieżące wyszukiwania, drugie dociera do osób, które jeszcze nie szukają oferty. Marketing w social mediach pomaga utrzymać kontakt z odbiorcami i pokazać firmę od środka. Skuteczne działania zaczynamy od kanału, który w Twojej branży ma największe znaczenie.",
       "href": "/performance-marketing/meta-ads",
       "link": "Kampanie Meta Ads"
@@ -97,7 +97,7 @@ const content = {
     },
     {
       "title": "Agencja reklamowa w Łodzi, kreatywna czy interaktywna?",
-      "text": "Wpisując w wyszukiwarkę „agencja reklamowa Łódź”, trafisz na różne nazwy: agencja kreatywna, agencja interaktywna, agencja marketingu internetowego. Część z nich to agencja reklamowa z Łodzi, część — zespoły z innych miast pracujące zdalnie, tak jak my. Granice między nimi są płynne. Interaktywna agencja zwykle projektuje strony i kampanie online, kreatywna skupia się na pomyśle i kreacji, a agencja reklamowa — na przygotowaniu i emisji reklam. W FOTZ łączymy te obszary marketingu i reklamy w jednym zespole, dbając o spójność wizerunku firm, z którymi pracujemy. Nie prowadzimy klasycznego public relations ani zakupu mediów tradycyjnych; jeśli ich potrzebujesz, napisz o tym w briefie.",
+      "text": "Wpisując w wyszukiwarkę „agencja reklamowa Łódź”, trafisz na różne nazwy: agencja kreatywna, agencja interaktywna, agencja marketingu internetowego. Część z nich to agencja reklamowa z Łodzi, część — zespoły z innych miast pracujące zdalnie, tak jak my. Granice między nimi są płynne. Interaktywna agencja zwykle projektuje strony i kampanie online, kreatywna skupia się na pomyśle i kreacji, a typowo reklamowa — na przygotowaniu i emisji reklam. Kreatywny pomysł ma jednak sens tylko wtedy, gdy wspiera sprzedaż. W FOTZ łączymy te obszary marketingu i reklamy w jednym zespole, dbając o spójność wizerunku firm, z którymi pracujemy. Nie prowadzimy klasycznego public relations ani zakupu mediów tradycyjnych; jeśli ich potrzebujesz, napisz o tym w briefie.",
       "points": [
         "Strategia i doradztwo: cele, grupa docelowa, plan kanałów.",
         "Kreacja: grafiki, teksty, zdjęcia i wideo.",
@@ -115,14 +115,14 @@ const content = {
       "text": "Po briefie ustalamy zakres, harmonogram i osobę kontaktową po obu stronach. Spotkania prowadzimy online, materiały przekazujesz przez dysk lub e-mail, a akceptacje zbieramy w jednym miejscu. Przed produkcją zatwierdzasz kierunek, przed publikacją — gotowe treści i reklamy. Konta reklamowe, domena i profile pozostają własnością Twojej firmy; pracujemy na nadanych uprawnieniach. Liczbę poprawek i czas na akceptację zapisujemy w ofercie."
     },
     {
-      "title": "Ile kosztuje agencja marketingowa w 2026 roku?",
+      "title": "Ile kosztuje obsługa marketingowa w 2026 roku?",
       "text": "Koszt zależy od liczby kanałów, skali strony, ilości materiałów i tego, czy chodzi o jednorazowy projekt, czy stałą obsługę. W wycenie osobno pokazujemy strategię, projekt strony, produkcję treści, prowadzenie kampanii oraz budżet reklamowy, który płacisz bezpośrednio platformie. Jeśli sesja zdjęciowa lub nagranie wymaga przyjazdu do Łodzi, koszt dojazdu ustalamy osobno. Porównując oferty, zwróć uwagę na rezultat każdego etapu, a nie tylko na miesięczną kwotę.",
       "href": "/cennik",
       "link": "Zobacz cennik i pakiety"
     },
     {
       "title": "Jak mierzymy efekty i sprzedaż?",
-      "text": "Na początku wybieramy mierniki, które odpowiadają celowi. Dla SEO są to wyświetlenia, kliknięcia i widoczność ważnych podstron w Search Console. Dla kampanii — wydatki, konwersje i koszt pozyskania kontaktu. Dla social media — zasięg materiałów i przejścia na stronę. Wyniki zestawiamy z informacją od Twojego zespołu — obsługa klienta najlepiej wie, które zapytania były wartościowe, bo nie każde kliknięcie oznacza sprzedaż. Nie gwarantujemy pozycji w Google ani konkretnej liczby klientów: wynik zależy też od konkurencji, budżetu i oferty.",
+      "text": "Każdy cel biznesowy wymaga innych mierników, dlatego ustalamy je na początku. Dla SEO są to wyświetlenia, kliknięcia i widoczność ważnych podstron w Search Console. Dla kampanii — wydatki, konwersje i koszt pozyskania kontaktu. Dla social media — zasięg materiałów i przejścia na stronę. Wyniki zestawiamy z informacją od Twojego zespołu — obsługa klienta najlepiej wie, które zapytania były wartościowe, bo nie każde kliknięcie oznacza sprzedaż. Nie gwarantujemy pozycji w Google ani konkretnej liczby klientów: wynik zależy też od konkurencji, budżetu i oferty.",
       "href": "/kontakt?usluga=marketing#formularz",
       "link": "Opisz projekt i poproś o wycenę"
     }
@@ -146,7 +146,7 @@ const content = {
     },
     {
       "question": "Kiedy widać efekty działań marketingowych?",
-      "answer": "To zależy od kanału. Nową stronę i formularz sprawdzamy od razu po wdrożeniu, kampania potrzebuje danych z emisji, a SEO czasu na przetworzenie zmian przez Google. Nie podajemy jednego terminu dla każdej firmy."
+      "answer": "To zależy od kanału. Nową stronę i formularz sprawdzamy od razu po wdrożeniu, kampania potrzebuje danych z emisji, a pozycjonowanie czasu na przetworzenie zmian przez Google. Nie podajemy jednego terminu dla każdej firmy."
     },
     {
       "question": "Co przygotować przed wyceną?",

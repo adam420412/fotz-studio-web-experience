@@ -13,7 +13,7 @@ const content = {
     "Wskazujemy kanały, kolejność działań i sposób mierzenia efektów.",
     "Dostajesz rozpisany zakres, harmonogram i wycenę przed startem prac."
   ],
-  "scopeTitle": "Usługi marketingowe: co możemy dla Ciebie realizować",
+  "scopeTitle": "Co oferujemy: usługi marketingowe, które możemy realizować",
   "scope": [
     {
       "title": "Strategia marketingowa",
@@ -23,7 +23,7 @@ const content = {
     },
     {
       "title": "Strony internetowe i sklepy",
-      "text": "Na etapie projektowania stron dbamy o czytelną ofertę, doświadczenie użytkownika i wygodny kontakt na telefonie. Wdrożenie sklepu internetowego wyceniamy według liczby produktów, integracji i funkcji.",
+      "text": "Tworzymy strony z czytelną ofertą. Na etapie projektowania stron dbamy o doświadczenie użytkownika i wygodny kontakt na telefonie. Wdrożenie sklepu internetowego wyceniamy według liczby produktów, integracji i funkcji.",
       "href": "/uslugi/strony-internetowe/krakow",
       "link": "Strony internetowe w Krakowie"
     },
@@ -73,19 +73,19 @@ const content = {
     },
     {
       "title": "Strategie marketingowe: cele biznesowe i plan rozwoju biznesu",
-      "text": "Kompleksowa obsługa firm ma sens, gdy wszystkie elementy mówią to samo. Obietnica z reklamy powinna znaleźć potwierdzenie na stronie i w rozmowie handlowej. Strategia ustala priorytety, kreacja nadaje im formę, a analityka pokazuje, co działa. Nie każda firma potrzebuje od razu wideo i kilku profili — często lepiej dopracować jeden kanał. Zakres usług dobieramy do potrzeb i oczekiwań, a także do tego, ile pracy Twój zespół udźwignie.",
+      "text": "Oferujemy kompleksowe wsparcie, ale ma ono sens tylko wtedy, gdy wszystkie elementy mówią to samo. Obietnica z reklamy powinna znaleźć potwierdzenie na stronie i w rozmowie handlowej. Strategia ustala priorytety, kreacja nadaje im formę, a analityka pokazuje, co działa. Strategie oparte na rozmowach z klientami i danych z analityki lepiej służą realizacji Twoich celów marketingowych niż gotowy szablon. Nie każda firma potrzebuje od razu wideo i kilku profili — często lepiej dopracować jeden kanał. Zakres usług dobieramy do potrzeb i oczekiwań, a także do tego, ile pracy Twój zespół udźwignie.",
       "href": "/uslugi/marketing-internetowy",
       "link": "Zakres marketingu internetowego"
     },
     {
       "title": "Kampanie reklamowe dobrane do Twoich odbiorców",
-      "text": "Przed startem sprawdzamy, dokąd prowadzi reklama i czy łatwo wysłać zapytanie. Ustalamy cel, obszar emisji, warianty komunikatu i budżet. Prowadzimy kampanie w wyszukiwarce dla osób szukających usługi, na Facebooku i Instagramie dla szerszego zasięgu, w LinkedIn Ads przy marketingu B2B oraz w TikTok Ads, gdy masz materiały wideo dla młodszej grupy. Optymalizacja obejmuje kreacje i stronę docelową, bo konwersja zależy też od oferty i formularza. Przykład z portfolio: kampania rekrutacyjna na Facebooku i Instagramie dla szkoły Dawid EDU.",
+      "text": "Przed startem sprawdzamy, dokąd prowadzi reklama i czy łatwo wysłać zapytanie. Ustalamy cel, obszar emisji, warianty komunikatu i budżet. Prowadzimy kampanie w wyszukiwarce dla osób szukających usługi, na Facebooku i Instagramie dla szerszego zasięgu, w LinkedIn Ads przy marketingu B2B oraz w TikTok Ads, gdy masz materiały wideo dla młodszej grupy. Optymalizacja to stała praca: po starcie trzeba optymalizować kreacje i stronę docelową, bo konwersja zależy też od oferty i formularza. Zintegrowane kampanie, w których reklama, strona i treści mówią to samo, łatwiej zachęcają klientów do kontaktu. Przykład z portfolio: kampania rekrutacyjna na Facebooku i Instagramie dla szkoły Dawid EDU.",
       "href": "/performance-marketing/facebook-ads/krakow",
       "link": "Facebook Ads w Krakowie"
     },
     {
       "title": "Digital marketing i content dla Twojej marki",
-      "text": "W digital marketingu dobre treści zaczynają się od pytań, które zadają klienci. Przygotowujemy opisy usług, artykuły, scenariusze filmów i posty. Copywriting porządkuje argumenty, a własne zdjęcia pokazują, jak firma naprawdę pracuje. W planie publikacji ustalamy kanał, częstotliwość i osobę zatwierdzającą, aby komunikacja marketingu Twojej marki była spójna.",
+      "text": "W digital marketingu dobre treści zaczynają się od pytań, które zadają klienci. Przygotowujemy opisy usług, artykuły, scenariusze filmów i posty. Copywriting porządkuje argumenty, a własne zdjęcia pokazują, jak firma naprawdę pracuje. W planie publikacji ustalamy kanał, częstotliwość i osobę zatwierdzającą, aby działania marketingowe Twojej firmy były spójne.",
       "href": "/social-media/obsluga",
       "link": "Obsługa social media"
     },
@@ -97,7 +97,7 @@ const content = {
     },
     {
       "title": "Jesteśmy agencją z Poznania: jak działamy z klientami z Krakowa?",
-      "text": "Briefy, spotkania, akceptacje i raporty prowadzimy online, a materiały przekazujemy cyfrowo. Konta reklamowe i profile pozostają własnością firmy; pracujemy na nadanych uprawnieniach. Jeśli projekt wymaga zdjęć lub nagrań w Krakowie, możliwość i warunki wyjazdu ustalamy osobno przy wycenie.",
+      "text": "Briefy, spotkania, akceptacje i raporty prowadzimy online, a materiały przekazujemy cyfrowo. Konta reklamowe i profile pozostają własnością firmy; pracujemy na nadanych uprawnieniach. Dzięki temu firma zyska pewność, że dostęp zostanie u niej także po zakończeniu współpracy. Jeśli projekt wymaga zdjęć lub nagrań w Krakowie, możliwość i warunki wyjazdu ustalamy osobno przy wycenie.",
       "points": [
         "Etapy: plan, przygotowanie materiałów, wdrożenie, kontrola po starcie.",
         "Przed emisją akceptujesz gotowe reklamy.",
@@ -132,7 +132,7 @@ const content = {
     },
     {
       "question": "Jak wybrać agencję marketingową?",
-      "answer": "Sprawdź realizacje, rozpisany zakres usług, zasady akceptacji i raportowania oraz to, kto jest właścicielem kont reklamowych. Obietnica szybkiego wzrostu sprzedaży bez analizy sytuacji w Twojej firmie powinna budzić ostrożność."
+      "answer": "Sprawdź realizacje, rozpisany zakres, zasady akceptacji i raportowania oraz to, kto jest właścicielem kont reklamowych. Obietnica szybkiego wzrostu sprzedaży bez analizy sytuacji w Twojej firmie powinna budzić ostrożność."
     },
     {
       "question": "Kiedy widać efekty marketingu?",

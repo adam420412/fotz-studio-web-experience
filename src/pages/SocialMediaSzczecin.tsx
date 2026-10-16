@@ -44,7 +44,7 @@ const audiences = [
 export default function SocialMediaSzczecin() {
   return (
     <Layout>
-      <SEOHead title="Agencja social media Szczecin | agencja marketingowa FOTZ" description="Social media Szczecin: kompleksowa obsługa Facebooka i Instagrama, content, strategie, reklama i Google Ads wspierające sprzedaż i zasięgi. Marketing zdalnie." canonical={PAGE_URL} />
+      <SEOHead title="Agencja social media Szczecin | agencja marketingowa FOTZ" description="Agencja social media Szczecin: kompleksowa obsługa – Facebook, Instagram, content, strategie, kampania i Google Ads wspierające sprzedaż i zasięgi." canonical={PAGE_URL} />
       <ServiceSchema name="Obsługa social media dla firm ze Szczecina" description="Strategia, prowadzenie profili w mediach społecznościowych, produkcja treści i kampanie reklamowe Meta Ads w uzgodnionym zakresie, realizowane zdalnie." areaServed="Szczecin" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://www.fotz-studio.pl/" }, { name: "Agencja social media", url: "https://www.fotz-studio.pl/agencja-social-media" }, { name: "Szczecin", url: PAGE_URL }]} />
       <FAQSchema items={faqs} />
@@ -95,7 +95,7 @@ export default function SocialMediaSzczecin() {
       </section>
 
       <section id="proces-social-media" className="container-wide px-6 md:px-12 py-12 md:py-16 scroll-mt-28" aria-labelledby="proces-heading">
-        <p className="dv-eyebrow mb-3">Jak pracujemy</p><h2 id="proces-heading" className="text-3xl md:text-4xl font-heading mb-8">Współpraca z agencją: audyt, harmonogram, raport</h2>
+        <p className="dv-eyebrow mb-3">Jak pracujemy</p><h2 id="proces-heading" className="text-3xl md:text-4xl font-heading mb-8">Współpraca z agencją: audyt, social media manager, raport</h2>
         <ol className="grid md:grid-cols-2 lg:grid-cols-4 gap-7">{steps.map((step, index) => <li key={step.title} className="border-t border-border pt-5"><span aria-hidden="true" className="text-sm text-primary">0{index + 1}</span><h3 className="text-xl mt-3 mb-3">{step.title}</h3><p className="text-muted-foreground leading-relaxed">{step.text}</p></li>)}</ol>
         <p className="mt-8 text-muted-foreground max-w-3xl leading-relaxed">Spotkania prowadzimy online, a materiały wymieniamy przez wspólny folder. Nie mamy biura w Szczecinie. Jeśli projekt wymaga sesji zdjęciowej lub nagrań na miejscu, termin i koszt wyjazdu ustalamy osobno albo przygotowujemy instrukcję nagrań dla Twojego zespołu.</p>
       </section>
@@ -114,8 +114,8 @@ export default function SocialMediaSzczecin() {
       <section className="container-wide px-6 md:px-12 py-12 md:py-16" aria-labelledby="marketing-heading">
         <div className="max-w-3xl">
           <p className="dv-eyebrow mb-3">Kompleksowe podejście</p>
-          <h2 id="marketing-heading" className="text-3xl md:text-4xl font-heading mb-5">Spójny marketing: social media, strony internetowe i Google Ads</h2>
-          <p className="text-muted-foreground leading-relaxed mb-5">Profil firmowy działa lepiej, gdy prowadzi do dobrze przygotowanej strony, a reklama w mediach społecznościowych wspiera kampanie Google Ads i pozycjonowanie. Zajmujemy się też tworzeniem stron, SEO i identyfikacją wizualną, więc komunikacja marki w internecie może mieć spójny wizerunek we wszystkich kanałach. Kompleksowy pakiet nie jest obowiązkowy: możesz zacząć od samych social mediów. Branding i identyfikacja marki, projekty graficzne oraz tworzenie stron (web) mogą dojść później.</p>
+          <h2 id="marketing-heading" className="text-3xl md:text-4xl font-heading mb-5">Kompleksowy marketing na 2026: social media, branding, strony i Google Ads</h2>
+          <p className="text-muted-foreground leading-relaxed mb-5">Profil firmowy działa lepiej, gdy prowadzi do dobrze przygotowanej strony, a reklama w mediach społecznościowych wspiera kampanie Google Ads i pozycjonowanie. Zajmujemy się też tworzeniem stron, SEO i identyfikacją wizualną, więc komunikacja marki w internecie może mieć spójny wizerunek we wszystkich kanałach. Kompleksowa obsługa nie jest obowiązkowa: możesz zacząć od samych social mediów. Branding i identyfikacja marki, projekty graficzne oraz tworzenie stron (web) mogą dojść później.</p>
           <p className="text-muted-foreground leading-relaxed mb-6">Jeśli planujesz budżet marketingowy na 2026 rok, pomożemy rozdzielić go między obsługę profili, produkcję treści i kampanie marketingowe. Będziemy raportować ruch na stronie z social mediów, każdy lead i zapytanie, żeby decyzje o kolejnych wydatkach opierały się na danych, a nie na przeczuciu.</p>
           <ul className="grid sm:grid-cols-2 gap-3 text-sm">
             <li><Link to="/uslugi/strony-internetowe/szczecin" className="underline underline-offset-4">Projektowanie stron internetowych dla firm ze Szczecina</Link></li>
@@ -127,7 +127,7 @@ export default function SocialMediaSzczecin() {
       </section>
 
       <section className="container-wide px-6 md:px-12 py-12 md:pb-20" aria-labelledby="poradniki-heading">
-        <h2 id="poradniki-heading" className="text-2xl md:text-3xl font-heading mb-6">Poradniki i powiązane usługi</h2>
+        <h2 id="poradniki-heading" className="text-2xl md:text-3xl font-heading mb-6">Poradniki marketingowe i powiązane usługi</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           <Link to="/blog/agencja-social-media-poznan" className="border border-border rounded-xl p-5 underline-offset-4 hover:underline">Jak wybrać agencję social media</Link>
           <Link to="/agencja-social-media/cennik" className="border border-border rounded-xl p-5 underline-offset-4 hover:underline">Cennik social media: składniki wyceny</Link>

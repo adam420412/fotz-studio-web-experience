@@ -7,8 +7,8 @@ import { filmOffer } from '@/data/sales-offers';
 const offer: SalesOfferProps = {
   ...filmOffer,
   title: 'Produkcja filmów dla firm: film reklamowy, spot, video | FOTZ',
-  description: 'Profesjonalna produkcja filmów dla firm: film reklamowy, film promocyjny, spot i krótkie formaty dla Twojej marki. Scenariusz, zdjęcia, montaż i wycena.',
-  heading: 'Film reklamowy, spot, film promocyjny: profesjonalna produkcja filmów dla firm',
+  description: 'Profesjonalna produkcja filmów reklamowych: film reklamowy, film promocyjny, spot i rolki, w których marka mówi jasno. Scenariusz, zdjęcia, montaż.',
+  heading: 'Film reklamowy, spot, film promocyjny i video: profesjonalna produkcja filmów dla firm',
   eyebrow: 'Produkcja filmów · zespół FOTZ Studio z Poznania',
   lead: 'Zajmujemy się produkcją filmów od pomysłu, przez dzień zdjęciowy, po finalne pliki w formatach do publikacji. Realizujemy filmy reklamowe dla firm, materiały wizerunkowe, produktowe i krótkie formy do social media. Najpierw ustalamy, kto ma obejrzeć materiał, co powinien zapamiętać i gdzie go zobaczy.',
   cta: 'Wyceń produkcję filmu',
@@ -28,7 +28,7 @@ const offer: SalesOfferProps = {
     { title: 'Scenariusz i plan filmowy', text: 'Rozpisujemy ujęcia, pytania do wypowiedzi i harmonogram. Ustalamy lokalizacje, rekwizyty, osoby przed kamerą oraz potrzebne zgody.' },
     { title: 'Dzień zdjęciowy', text: 'Na plan przyjeżdża ekipa dobrana do zadania: kamera, światło i dźwięk. Ujęcia lotnicze realizujemy, jeśli pozwala na to miejsce i przepisy.' },
     { title: 'Postprodukcja i animacja', text: 'Po zakończeniu zdjęć układamy materiał, korygujemy kolor i opracowujemy dźwięk. Muzykę, lektora, napisy i proste animacje tekstu ustalamy w zakresie.' },
-    { title: 'Formaty video i wideo reklamowe', text: 'Przygotowujemy wersję poziomą na stronę i YouTube oraz pionowe skróty do publikacji w mediach społecznościowych. Każdy dodatkowy format planujemy przed nagraniem, żeby kadry do niego pasowały.' },
+    { title: 'Produkcja video w wielu formatach', text: 'Przygotowujemy wersję poziomą na stronę i YouTube oraz pionowe skróty, np. wideo reklamowe do publikacji w mediach społecznościowych. Każdy dodatkowy format planujemy przed nagraniem, żeby kadry do niego pasowały.' },
     { title: 'Odbiór i prawa do materiału', text: 'Uzgadniamy rundy poprawek, sposób przekazania plików i zakres wykorzystania. Wyjaśniamy prawa do muzyki i wizerunku oraz to, czy przekazujemy surowy materiał filmowy.' },
   ],
   pricing: 'Koszt produkcji filmu zależy przede wszystkim od tego, jaka będzie liczba dni zdjęciowych, lokalizacji i osób na planie, a także od skali postprodukcji i liczby wersji. Przy produkcji filmów reklamowych i promocyjnych na końcową kwotę wpływa też to, czy potrzebni są aktorzy, lektor, wynajęte studio, ujęcia lotnicze albo animacje reklamowe. W ofercie rozpisujemy każdą pozycję, a koszty zewnętrzne pokazujemy osobno. Na prosty start z pionowymi rolkami mamy pakiet WIDEO START z opisanym zakresem.',
@@ -50,12 +50,12 @@ const offer: SalesOfferProps = {
       link: { label: 'Przeczytaj, ile kosztuje film reklamowy', href: '/blog/ile-kosztuje-film-reklamowy' },
     },
     {
-      title: 'Filmy promocyjne dla firm i filmy szkoleniowe',
+      title: 'Filmy promocyjne dla firm, filmy szkoleniowe i krótkie filmy',
       text: 'Tworzenie filmów promocyjnych zaczynamy od pytania, jaką decyzję ma podjąć widz. Nie dla każdej firmy najlepszy będzie długi film. Ten sam budżet można przeznaczyć na jeden dłuższy film wizerunkowy albo na kilka krótkich materiałów do testów w kampanii. Pomagamy wybrać formę pasującą do Twojej marki i do tego, czego potrzeba Twojej firmie teraz. Nagrywaliśmy materiały dla firm z różnych branż, m.in. sportu i wydarzeń, edukacji, rozrywki i motoryzacji. Pamiętaj jednak, że sam film nie wystarczy, żeby wyróżnić się na tle konkurencji — marka potrzebuje też jasnej oferty i przemyślanej dystrybucji.',
       points: [
         'Materiały szkoleniowe i filmy instruktażowe pokazujące obsługę produktu lub procedurę.',
         'Filmy rekrutacyjne i wizerunkowe, w których występują pracownicy i prawdziwe miejsce pracy.',
-        'Relacje z wydarzeń, konferencji i targów oraz krótkie filmy na profile firmowe.',
+        'Relacje z wydarzeń, konferencji i targów oraz krótkie materiały na profile firmowe.',
       ],
       link: { label: 'Zobacz poradnik o filmie rekrutacyjnym', href: '/blog/film-rekrutacyjny-employer-branding' },
     },
@@ -65,7 +65,7 @@ const offer: SalesOfferProps = {
       points: [
         'W zespole: koncepcja, realizacja zdjęć, ujęcia lotnicze, edycja, kolor i dźwięk oraz przygotowanie formatów.',
         'Osobno: aktorzy, lektor, wynajem studia, licencje muzyczne i rozbudowane animacje 2D i 3D.',
-        'Produkcja video, w tym serie materiałów video do kampanii, może być połączona z publikacją i reklamami, ale te zakresy rozliczamy oddzielnie.',
+        'Nagrania, w tym serie materiałów video do kampanii, mogą być połączone z publikacją i reklamami, ale te zakresy rozliczamy oddzielnie.',
       ],
       link: { label: 'Porównaj z ofertą spotów reklamowych', href: '/uslugi/produkcja-video' },
     },
@@ -82,5 +82,5 @@ const offer: SalesOfferProps = {
 };
 
 export default function ProdukcjaFilmowPoznan() {
-  return <><SEOHead title="Produkcja filmów dla firm: film reklamowy, spot, video | FOTZ" description="Profesjonalna produkcja filmów dla firm: film reklamowy, film promocyjny, spot i krótkie formaty dla Twojej marki. Scenariusz, zdjęcia, montaż i wycena." canonical="https://www.fotz-studio.pl/uslugi/produkcja-filmow" /><SalesOffer {...offer} /></>;
+  return <><SEOHead title="Produkcja filmów dla firm: film reklamowy, spot, video | FOTZ" description="Profesjonalna produkcja filmów reklamowych: film reklamowy, film promocyjny, spot i rolki, w których marka mówi jasno. Scenariusz, zdjęcia, montaż." canonical="https://www.fotz-studio.pl/uslugi/produkcja-filmow" /><SalesOffer {...offer} /></>;
 }
