@@ -425,6 +425,11 @@
       "permanent": true
     },
     {
+      "source": "/social-media/warszawa",
+      "destination": "/agencja-social-media/warszawa",
+      "permanent": true
+    },
+    {
       "source": "/blog/content-marketing-dla-firmy",
       "destination": "/blog/content-marketing-poradnik",
       "permanent": true

@@ -56,6 +56,9 @@ const reviewed = [
   '/uslugi/strony-internetowe/poznan', '/uslugi/strony-internetowe/torun', '/uslugi/strony-internetowe/lodz', '/uslugi/strony-internetowe/szczecin', '/uslugi/strony-internetowe/bialystok',
   '/pozycjonowanie/zabrze', '/pozycjonowanie/walbrzych', '/pozycjonowanie/elblag', '/uslugi/pozycjonowanie/olsztyn', '/uslugi/pozycjonowanie/rzeszow',
   '/uslugi/pozycjonowanie/czestochowa', '/pozycjonowanie/sosnowiec', '/pozycjonowanie/plock',
+  '/agencja-social-media/szczecin', '/agencja-social-media/lublin', '/agencja-social-media/warszawa', '/agencja-social-media/krakow',
+  '/agencja-marketingowa/rzeszow', '/agencja-marketingowa/lodz', '/agencja-marketingowa/krakow', '/uslugi/studio-podcastowe',
+  '/uslugi/sklepy-internetowe/krakow', '/kompleksowa-obsluga-marketingowa', '/uslugi/produkcja-filmow', '/uslugi/strony-internetowe/wroclaw',
 ];
 const files = routeFiles(new URL('../src/App.tsx', import.meta.url));
 

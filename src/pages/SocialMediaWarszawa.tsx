@@ -1,460 +1,138 @@
-import { SEOHead } from "@/components/seo/SEOHead";
-import { Layout } from "@/components/layout/Layout";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
-import { FadeInView } from "@/components/FadeInView";
-import { ContactSection } from "@/components/sections/ContactSection";
-import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
 import { Link } from "react-router-dom";
+import { ArrowRight, Camera, CalendarDays, ChartNoAxesCombined, MessageSquare, Target, Video } from "lucide-react";
+import { Layout } from "@/components/layout/Layout";
+import { SEOHead } from "@/components/seo/SEOHead";
+import { BreadcrumbSchema, FAQSchema, ServiceSchema } from "@/components/seo/StructuredData";
+import { PortfolioVideo } from "@/components/PortfolioVideo";
+import stadiumPhoto from "@/assets/enea/stadion-race-fajerwerki-web.webp";
+
+const services = [
+  { icon: Target, title: "Strategia social media i grupy docelowe", text: "Zaczynamy od tego, do kogo mówi marka: zarząd firmy B2B, klient sklepu internetowego czy gość restauracji. Zdefiniowana strategia social media opisuje kanały, tematy, ton komunikacji i to, jak treści mają prowadzić do zapytania.", href: "/social-media/strategia" },
+  { icon: CalendarDays, title: "Prowadzenie profili: Facebook, Instagram, LinkedIn", text: "Plan publikacji, teksty, grafika, harmonogram i moderacja komentarzy. Prowadzenie mediów społecznościowych ustalamy tak, żeby po stronie firmy zostały tylko akceptacje i odpowiedzi wymagające wiedzy eksperta.", href: "/social-media/obsluga" },
+  { icon: Camera, title: "Content i zdjęcia", text: "Materiały o ofercie, produktach, zespole i kulisach pracy. Łączymy własne zdjęcia i grafiki z plikami, które firma już ma, żeby profil wyglądał spójnie na każdej platformie.", href: "/social-media/content" },
+  { icon: Video, title: "Filmy, rolki i TikTok", text: "Scenariusz, nagranie i montaż krótkich filmów na Instagram, Facebook, LinkedIn i TikTok. Format, napisy i wersje do reklam ustalamy przed produkcją, a nie po niej.", href: "/uslugi/produkcja-video" },
+  { icon: MessageSquare, title: "Kampanie reklamowe Meta Ads i nie tylko", text: "Facebook i Instagram Ads, a przy kampaniach B2B także LinkedIn Ads; TikTok Ads, gdy grupa docelowa naprawdę tam jest. Ustawiamy cel, materiały reklamowe i odbiorców, a optymalizacja trwa przez cały czas emisji. Budżet reklamowy płacony platformie jest osobną pozycją.", href: "/performance-marketing/meta-ads" },
+  { icon: ChartNoAxesCombined, title: "Analityka i wyniki", text: "Sprawdzamy zasięg, zaangażowanie, ruch na stronie, leady i konwersje. Podsumowanie zawiera wnioski: co zostawiamy, co zmieniamy i czego potrzebujemy od Ciebie w kolejnym miesiącu.", href: "/social-media/analityka" },
+];
+
+const faqs = [
+  { question: "Czy FOTZ Studio ma biuro w Warszawie?", answer: "Nie. Nasz zespół pracuje w Poznaniu i nie mamy biura w Warszawie. Firmy z Warszawy obsługujemy zdalnie: spotkania prowadzimy online, a materiały do akceptacji i gotowe pliki przesyłamy cyfrowo. Jeśli projekt wymaga zdjęć lub nagrań na miejscu, wyjazd i jego koszt ustalamy osobno przy wycenie." },
+  { question: "Czym zajmuje się agencja social media?", answer: "Planuje komunikację marki w mediach społecznościowych, prowadzi profile, tworzy content, obsługuje kampanie reklamowe i raportuje wyniki. Zakres zależy od firmy: jedni potrzebują pełnej obsługi, inni samej strategii, produkcji filmów albo prowadzenia reklam." },
+  { question: "Ile się bierze za prowadzenie social mediów?", answer: "Nie podajemy jednej stawki, bo koszt zależy od liczby kanałów i publikacji, produkcji zdjęć i filmów, moderacji oraz tego, czy prowadzimy kampanie. W ofercie rozdzielamy obsługę, produkcję i budżet reklamowy, więc widać, za co płacisz." },
+  { question: "Czy pracujecie z firmami biznesowymi i konsumenckimi?", answer: "Tak. Dla firm z sektora biznesowego częściej proponujemy LinkedIn i treści eksperckie, dla marek konsumenckich Instagram, Facebook i krótkie rolki. O wyborze kanałów decyduje grupa docelowa, a nie moda na daną platformę." },
+  { question: "Jak sprawdzić opinie o agencji social media?", answer: "Poproś o konkretne realizacje, porozmawiaj o procesie i zapytaj, kto będzie prowadził Twój profil. U nas możesz obejrzeć portfolio i porozmawiać o projektach, przy których pracowaliśmy. Nie publikujemy wymyślonych liczb ani wyników, których nie możemy pokazać." },
+  { question: "Po jakim czasie widać efekty?", answer: "Nie gwarantujemy wyników w określonym terminie. Pierwsze sygnały daje odbiór treści i reakcje na reklamy, a o skuteczności świadczą zapytania, leady i sprzedaż. Tempo zależy od oferty, budżetu, konkurencji w branży i tego, jak szybko firma odpowiada na kontakty." },
+];
+
+const steps = [
+  { title: "Rozmowa i brief", text: "Na wideorozmowie przeglądamy profile, ofertę i dotychczasowe kampanie. Ustalamy cel, kanały oraz zadania, które zostają po stronie Twojego zespołu." },
+  { title: "Strategia i plan treści", text: "Przygotowujemy tematy, formaty, materiały reklamowe i plan publikacji. Jeśli potrzebne są nowe nagrania, ustalamy, czy powstaną z Twoich plików, czy podczas osobno zaplanowanej sesji." },
+  { title: "Akceptacja i publikacja", text: "Materiały trafiają do wskazanej osoby we wspólnym folderze lub narzędziu do akceptacji. Zatwierdzone treści publikujemy według planu i moderujemy komentarze." },
+  { title: "Raport i decyzje", text: "Co miesiąc omawiamy dane: zasięg, interakcje, ruch, leady. Wnioski zamieniamy na konkretne zmiany w treściach i kampaniach na kolejny okres." },
+];
 
 export default function SocialMediaWarszawa() {
-  const breadcrumbItems = [
-    { label: "Strona glowna", path: "/" },
-    { label: "Social Media", path: "/social-media" },
-    { label: "Social Media Warszawa", path: "/social-media/warszawa" }
-  ];
-
-  const services = [
-    {
-      title: "Strategia tresci",
-      description: "Opracowanie spersonalizowanej strategii social media dostosowanej do Twojej branzy i grupy docelowej w Warszawie."
-    },
-    {
-      title: "Tworzenie grafik",
-      description: "Profesjonalne grafiki dostosowane do kazdej platformy, spójne z Twoim identyfikowaniem wizualnym."
-    },
-    {
-      title: "Pisanie postow",
-      description: "Angażujące teksty do postow, które budzą emocje i zachecają do interakcji odbiorcy w Warszawie."
-    },
-    {
-      title: "Harmonogram i publikacja",
-      description: "Regularnie publikowane posty w optymalnych godzinach dla maksymalnego zasiegu i zaangażowania."
-    },
-    {
-      title: "Community management",
-      description: "Odpowiadamy na komentarze, wiadomosci i budujemy relacje z Twoimi fanami i klientami."
-    },
-    {
-      title: "Miesięczny raport",
-      description: "Szczegółowa analiza wyników z metrykami, insights i rekomendacjami do optymalizacji."
-    }
-  ];
-
-  const platforms = [
-    {
-      name: "Facebook",
-      description: "Dla firm lokalnych i B2C",
-      details: "Idealna platforma do budowania zaangażowanej społeczności wśród firm w Warszawie. Doskonała do promocji lokalnych usług, organizacji eventów i komunikacji z klientami.",
-      icon: "f"
-    },
-    {
-      name: "Instagram",
-      description: "Dla marek wizualnych",
-      details: "Perfekt dla beauty, fashion, food i fotografii. Branże wizualne z Warszawy powinny miec silna obecnosc na Instagramie ze Storiami i Reelsami.",
-      icon: "i"
-    },
-    {
-      name: "LinkedIn",
-      description: "B2B i rekrutacja",
-      details: "Niezbędny dla firm IT, agencji, usług profesjonalnych i rekrutacji. Warszawskie IT i startup'i zyskuja na LinkedIn zdywersyfikowaną wiedze i leads biznesowe.",
-      icon: "l"
-    },
-    {
-      name: "TikTok",
-      description: "Dla mlodych odbiorców",
-      details: "Doskonały do budowania wirusowych trendów i dotarcia do osób poniżej 35 lat. Restauracje, marki fashion i entertainment z Warszawy beda popularne na TikToku."
-    }
-  ];
-
-  const pricing = [
-    {
-      package: "START",
-      platforms: "Facebook LUB Instagram",
-      posts: "8 postow/mies.",
-      price: "900 zl"
-    },
-    {
-      package: "GROWTH",
-      platforms: "Facebook + Instagram",
-      posts: "16 postow + Stories",
-      price: "1 800 zl"
-    },
-    {
-      package: "PRO",
-      platforms: "3 platformy",
-      posts: "24 posty + Reels + LinkedIn",
-      price: "3 500 zl"
-    }
-  ];
-
-  const differentiators = [
-    {
-      title: "Doswiadczenie z warszawskim rynkiem",
-      description: "Znamy specyfike konkurencji, grupy docelowe i trendy charakterystyczne dla Warszawy i Mazowsza."
-    },
-    {
-      title: "Dedykowany opiekun konta",
-      description: "Otrzymujesz osobisty kontakt do specjalisty, ktorzy pilnuje Twoich kampanii i odpowiada na pytania."
-    },
-    {
-      title: "Raporty co miesiac",
-      description: "Dostajesz rzetelne dane o zasiegu, zaangażowaniu, wzroście follow i konwersjach z social media."
-    },
-    {
-      title: "Integracja z Google Ads",
-      description: "Łączymy social media z placa reklamami Google Ads dla kompleksowej strategii marketingowej."
-    },
-    {
-      title: "Elastyczne umowy",
-      description: "Zaczynamy od pakietu 1 miesiaca bez długoterminowych zobowiązan, mozliwość skalowania pakietu w górę."
-    }
-  ];
-
-  const niches = [
-    "Restauracje i gastronomia",
-    "Kancelarie prawne",
-    "Gabinety medyczne i dental",
-    "Agencje nieruchomosci",
-    "Firmy IT i software",
-    "Beauty i SPA",
-    "Sklepy e-commerce",
-    "Firmy budowlane"
-  ];
-
-  const faqItems = [
-    {
-      question: "Ile kosztuje prowadzenie social media w Warszawie?",
-      answer: "Cena zalezy od zakresu usług, liczby platform i liczby postow. Nasz pakiet START kosztuje 900 zl/mies., GROWTH 1800 zl/mies., a PRO 3500 zl/mies. Dla dużych firm z Warszawy mozemy przygotowac ofertę indywidualną."
-    },
-    {
-      question: "Jak dlugo trwa efekt prowadzenia social media?",
-      answer: "Pierwsze rezultaty sa widoczne juz po 1-2 miesiącach, ale budowanie solidnej bazy obserwatorów i zaangażowania zajmuje 3-6 miesięcy. Długoterminowe efekty rosną eksponencjalnie, jesli strategia jest spójna."
-    },
-    {
-      question: "Czy agencja z innego miasta moze obsługiwac firmy z Warszawy?",
-      answer: "Tak, mozliwe jest. Jednakze my mamy zespół w Warszawie i znamy lokalny rynek. Dla firm z Warszawy zalecamy agencje, ktora zna specyfikę konkurencji i trendy warszawskiego rynku."
-    },
-    {
-      question: "Co wchodzi w sklad obsługi social media?",
-      answer: "W nasz zakres wchodzi: opracowanie strategii, tworzenie grafik, pisanie postow, harmonogram publikacji, zarządzanie community (odpowiadanie na komentarze), moderacja i raport miesięczny z metrykami."
-    },
-    {
-      question: "Jak czesto publikowac posty na Instagramie?",
-      answer: "Rekomendujemy 4-5 postow na Instagramie dziennie, ale wartosc ma nad ilością. Dla firm z Warszawy polecamy 3-4 posty tygodniowo ze Storiami 5-7 razy w tygodniu."
-    },
-    {
-      question: "Czy agencja moze tez robic reklamy platne (Meta Ads)?",
-      answer: "Tak. Oferujemy również zarządzanie reklamami na Facebooku i Instagramie. Mozemy integrować organic reach z placa reklama dla maksymalnych rezultatów."
-    },
-    {
-      question: "Jak zmierzyc efektywnosc social media dla mojej firmy?",
-      answer: "Analizujemy zasiag, engagement, liczbe kliknięć, konwersje i ROI. Dostarczamy co miesiac raport z metryki. Dla kampanii e-commerce mozemy śledzic sprzedaż bezposrednio ze social media."
-    },
-    {
-      question: "Czy oferujecie sesje fotograficzne do social media?",
-      answer: "Sesje fotograficzne mozemy doporucic naszym partnerom fotografów w Warszawie. Sami skupiamy się na prowadzeniu social media, ale mozemy zkoordynowac współprace."
-    }
-  ];
-
   return (
     <Layout>
-      <SEOHead
-        title="Agencja Social Media Warszawa | Fotz Studio"
-        description="Profesjonalne prowadzenie social media dla firm z Warszawy. Agencja Fotz Studio z doświadczeniem w obsłudze Facebooka, Instagrama i LinkedIn. Pakiety od 900 zł/mies. dopasowane do warszawskiego rynku."
-        canonical="https://www.fotz-studio.pl/social-media/warszawa"
-        keywords="agencja social media warszawa, obsługa social media warszawa, prowadzenie fanpage warszawa, social media marketing warszawa"
-      />
+      <SEOHead title="Agencja social media Warszawa — obsługa zdalna | FOTZ" description="Szukasz agencji social media w Warszawie? Kompleksowa obsługa: strategie, profil marki, content i kampania reklamowa dla klientów z Warszawy — zdalnie." canonical="https://www.fotz-studio.pl/agencja-social-media/warszawa" />
+      <ServiceSchema name="Obsługa social media dla firm z Warszawy" description="Strategia, prowadzenie profili, produkcja zdjęć i wideo oraz kampanie reklamowe w social media, realizowane zdalnie z Poznania." areaServed="Warszawa" />
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://www.fotz-studio.pl/" }, { name: "Agencja social media", url: "https://www.fotz-studio.pl/agencja-social-media" }, { name: "Warszawa", url: "https://www.fotz-studio.pl/agencja-social-media/warszawa" }]} />
+      <FAQSchema items={faqs} />
 
-      <ServiceSchema
-        name="Obsługa Social Media Warszawa"
-        description="Profesjonalne prowadzenie social media dla firm z Warszawy. Fotz Studio — agencja social media z doswiadczeniem."
-        areaServed="Warszawa"
-      />
-
-      <BreadcrumbSchema items={breadcrumbItems} />
-
-      <PageBreadcrumbs items={breadcrumbItems} />
-
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-slate-950 via-pink-950 to-purple-900 text-white py-20 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">Agencja Social Media Warszawa</h1>
-          <p className="text-xl text-gray-200 mb-10">
-            Profesjonalne prowadzenie mediow spolecznych dla firm z Warszawy. Zwiększ zasiag, zaangażowanie i sprzedaż dzięki strategii dostosowanej do warszawskiego rynku.
-          </p>
-          <Link
-            to="/kontakt"
-            className="inline-block bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-8 rounded-lg transition"
-          >
-            Skontaktuj się z nami
-          </Link>
-        </div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="bg-gray-50 py-16 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <FadeInView>
-              <div className="bg-white rounded-lg p-6 text-center shadow-sm">
-                <h3 className="text-2xl font-bold text-slate-900 mb-2">Firmy z Warszawy</h3>
-                <p className="text-gray-600">i okolic obsługujemy</p>
-              </div>
-            </FadeInView>
-            <FadeInView delay={0.1}>
-              <div className="bg-white rounded-lg p-6 text-center shadow-sm">
-                <h3 className="text-2xl font-bold text-slate-900 mb-2">4+ Platformy</h3>
-                <p className="text-gray-600">Facebook, Instagram, LinkedIn, TikTok</p>
-              </div>
-            </FadeInView>
-            <FadeInView delay={0.2}>
-              <div className="bg-white rounded-lg p-6 text-center shadow-sm">
-                <h3 className="text-2xl font-bold text-slate-900 mb-2">Od 800 zl</h3>
-                <p className="text-gray-600">Pakiety obsługi social media</p>
-              </div>
-            </FadeInView>
-            <FadeInView delay={0.3}>
-              <div className="bg-white rounded-lg p-6 text-center shadow-sm">
-                <h3 className="text-2xl font-bold text-slate-900 mb-2">Od 1 miesiaca</h3>
-                <p className="text-gray-600">Pierwsze efekty widoczne</p>
-              </div>
-            </FadeInView>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 1: Obsługa social media dla firm z Warszawy */}
-      <section className="py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <FadeInView>
-            <h2 className="text-4xl font-bold text-slate-900 mb-8">
-              Obsługa social media dla firm z Warszawy
-            </h2>
-            <div className="prose max-w-none space-y-4">
-              <p>
-                Warszawa to dynamiczne centrum biznesu, gdzie konkurencja w social media jest intensywna. Firmy z Warszawy konkurują nie tylko z innymi firmami lokalnymi, ale również z markami z całej Polski. W tak konkurencyjnym środowisku obsługa social media wymaga profesjonalnego podejścia, strategii i stałego zaangażowania.
-              </p>
-              <p>
-                Warszawa ma wyjątkowy rynek. Tu spotyka się biznes IT z branżą finansową, usługami profesjonalnymi i tradycyjnym handlem. Każda branża wymaga innego podejścia do komunikacji na mediach społecznych. Restauracja w Warszawie musi osiągnąć inny cel niż kancelaria prawna czy agencja nieruchomości.
-              </p>
-              <p>
-                Profesjonalne prowadzenie social media dla firm z Warszawy to inwestycja, która przynosi konkretne rezultaty. Zwiększony zasiąg, więcej wiadomości od zainteresowanych klientów, lepsze pozycjonowanie w wyszukiwarce i – co najważniejsze – więcej sprzedaży. Jednak sam social media to nie wszystko. Musi być spójna z Twoją całą strategią marketingową.
-              </p>
-              <p>
-                W Fotz Studio obsługujemy firmy z Warszawy od ponad pięciu lat. Znamy warszawski rynek, wiemy, jak się zmienia, jakie trendy się pojawiają i które platformy są najważniejsze dla danej branży. Nasze doświadczenie to Twoja przewaga konkurencyjna.
-              </p>
+      <section className="container-wide px-6 md:px-12 pt-32 md:pt-40 pb-12 md:pb-20">
+        <div className="grid lg:grid-cols-[1.2fr_1fr] gap-10 lg:gap-16 items-center">
+          <div>
+            <p className="dv-eyebrow mb-5">FOTZ Studio · dla firm z Warszawy</p>
+            <h1 className="text-4xl md:text-6xl font-heading leading-[1.08] tracking-tight mb-6">Agencja social media Warszawa<br /><span className="text-gradient">obsługa social media i marketing.</span></h1>
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mb-7">Szukasz agencji social media, która sama nagra materiały, poprowadzi profile i ustawi kampanie reklamowe? FOTZ Studio to agencja z Poznania z własną produkcją zdjęć i filmów. Firmy z Warszawy obsługujemy zdalnie: od strategii, przez content, po analizę wyników.</p>
+            <div className="flex flex-col sm:flex-row gap-3 items-start">
+              <Link to="/konsultacja" className="dv-btn dv-btn-primary">Umów rozmowę <ArrowRight aria-hidden="true" className="w-4 h-4" /></Link>
+              <a href="#realizacje-social-media" className="dv-btn dv-btn-secondary">Zobacz realizacje</a>
             </div>
-          </FadeInView>
-        </div>
-      </section>
-
-      {/* Section 2: Co robimy dla firm z Warszawy? */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <FadeInView>
-            <h2 className="text-4xl font-bold text-slate-900 mb-12 text-center">
-              Co robimy dla firm z Warszawy?
-            </h2>
-          </FadeInView>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {services.map((service, idx) => (
-              <FadeInView key={idx} delay={idx * 0.1}>
-                <div className="bg-white rounded-lg p-6 shadow-sm">
-                  <h3 className="text-xl font-bold text-slate-900 mb-3">{service.title}</h3>
-                  <p className="text-gray-600">{service.description}</p>
-                </div>
-              </FadeInView>
-            ))}
           </div>
+          <figure className="overflow-hidden rounded-2xl border border-border bg-card">
+            <img src={stadiumPhoto} alt="Fajerwerki i race podczas wydarzenia na Enea Stadionie" width="960" height="640" loading="eager" className="w-full aspect-[3/2] object-cover" />
+            <figcaption className="p-5 flex flex-wrap items-center justify-between gap-3 text-sm"><span>Enea Stadion · materiał z wydarzenia</span><Link to="/realizacje/enea-stadion" className="underline underline-offset-4">Poznaj projekt</Link></figcaption>
+          </figure>
+        </div>
+        <nav aria-label="Na tej stronie" className="flex flex-wrap gap-x-6 gap-y-3 mt-10 pt-6 border-t border-border text-sm">
+          <a href="#dla-kogo-social-media" className="underline underline-offset-4">Dla kogo</a><a href="#zakres-social-media" className="underline underline-offset-4">Zakres obsługi</a><a href="#proces-social-media" className="underline underline-offset-4">Współpraca zdalna</a><a href="#wycena-social-media" className="underline underline-offset-4">Wycena</a><a href="#pytania-social-media" className="underline underline-offset-4">Pytania</a>
+        </nav>
+      </section>
+
+      <section id="dla-kogo-social-media" className="container-wide px-6 md:px-12 py-12 md:py-16 scroll-mt-28" aria-labelledby="dla-kogo-heading">
+        <p className="dv-eyebrow mb-3">Rynek stołeczny</p><h2 id="dla-kogo-heading" className="text-3xl md:text-4xl font-heading mb-5">Dla jakiej firmy z Warszawy jest ta oferta i jak wygląda konkurencja</h2>
+        <div className="grid lg:grid-cols-2 gap-8 max-w-6xl">
+          <p className="text-muted-foreground leading-relaxed">Warszawa to rynek, na którym niemal każda branża ma kilku mocnych graczy, a odbiorca w ciągu jednego dnia widzi reklamy dziesiątek marek. Konkurencja o uwagę jest duża, dlatego obecność w mediach społecznościowych musi mieć jasny cel. Profil, który tylko „jest”, rzadko przynosi zapytania. Pomagamy firmom ustalić, czym ich komunikacja ma się wyróżniać i jaki materiał najlepiej to pokaże.</p>
+          <p className="text-muted-foreground leading-relaxed">Pracujemy z firmami B2B i B2C: firmami usługowymi i doradczymi, które budują markę eksperta na LinkedIn, gastronomią i lokalami szukającymi gości na Instagramie, markami konsumenckimi i sklepami internetowymi, a także organizatorami wydarzeń. Jeśli w Twojej firmie social media prowadzi jedna osoba „przy okazji”, możemy przejąć całość albo tylko produkcję i kampanie.</p>
         </div>
       </section>
 
-      {/* Section 3: Platformy social media */}
-      <section className="py-16 px-4">
-        <div className="max-w-6xl mx-auto">
-          <FadeInView>
-            <h2 className="text-4xl font-bold text-slate-900 mb-12 text-center">
-              Platformy social media, które prowadzimy
-            </h2>
-          </FadeInView>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {platforms.map((platform, idx) => (
-              <FadeInView key={idx} delay={idx * 0.1}>
-                <div className="bg-white rounded-lg p-6 border-l-4 border-pink-600 shadow-sm">
-                  <h3 className="text-2xl font-bold text-slate-900 mb-2">{platform.name}</h3>
-                  <p className="text-pink-600 font-semibold mb-3">{platform.description}</p>
-                  <p className="text-gray-600">{platform.details}</p>
-                </div>
-              </FadeInView>
-            ))}
+      <section id="zakres-social-media" className="container-wide px-6 md:px-12 py-12 md:py-16 scroll-mt-28" aria-labelledby="zakres-heading">
+        <p className="dv-eyebrow mb-3">Zakres współpracy</p><h2 id="zakres-heading" className="text-3xl md:text-4xl font-heading mb-5">Usługi agencji social media: kampanie, content marketing i kreacje</h2>
+        <p className="text-muted-foreground max-w-3xl mb-5 leading-relaxed">Możesz powierzyć nam kompleksową obsługę social media albo wybrany element: strategię, produkcję contentu, kampanie w social media lub analitykę. Zakres dopasowujemy do tego, co firma ma już gotowe, i do zasobów jej zespołu marketingowego.</p>
+        <p className="text-muted-foreground max-w-3xl mb-8 leading-relaxed">Nasza przewaga to połączenie agencji marketingowej z produkcją. Ten sam zespół, który planuje kampanię, pisze scenariusz rolki i montuje film, więc kreacje reklamowe powstają z myślą o konkretnym celu, a nie są dopasowywane po fakcie. Social media marketing traktujemy jako część większej całości: content marketing, strona internetowa i SEO powinny ze sobą współpracować.</p>
+        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-5">{services.map(service => <article key={service.href} className="border border-border bg-card rounded-2xl p-6 flex flex-col items-start"><service.icon aria-hidden="true" className="w-6 h-6 text-primary mb-5" /><h3 className="text-xl mb-3">{service.title}</h3><p className="text-muted-foreground leading-relaxed mb-5">{service.text}</p><Link to={service.href} className="underline underline-offset-4 text-sm mt-auto" aria-label={`Poznaj zakres: ${service.title}`}>Poznaj zakres</Link></article>)}</div>
+      </section>
+
+      <section className="container-wide px-6 md:px-12 py-12 md:py-16" aria-labelledby="kanaly-heading">
+        <h2 id="kanaly-heading" className="text-3xl md:text-4xl font-heading mb-5">Facebook, Instagram, LinkedIn czy TikTok? Kanały dobieramy do klienta</h2>
+        <div className="grid md:grid-cols-2 gap-6 max-w-6xl text-muted-foreground leading-relaxed">
+          <p><strong className="text-foreground">Facebook i Instagram</strong> sprawdzają się, gdy marka sprzedaje osobom prywatnym albo działa lokalnie. Tu najlepiej działają krótkie filmy, zdjęcia produktów i kampanie Meta Ads kierowane do określonych grup docelowych, np. mieszkańców wybranych dzielnic albo osób, które odwiedziły stronę.</p>
+          <p><strong className="text-foreground">LinkedIn</strong> wybieramy dla firm biznesowych: usług profesjonalnych, technologii, HR, branży nieruchomości. Komunikacja opiera się na wiedzy specjalistów firmy i profilach osób z zarządu, a płatne kampanie pomagają dotrzeć do decydentów według stanowiska i branży.</p>
+          <p><strong className="text-foreground">TikTok</strong> polecamy markom, których odbiorcy są tam aktywni i które są gotowe na swobodny, szybki format. Płatna promocja na tej platformie ma sens, gdy mamy materiał nagrany natywnie dla tej platformy, a nie przeniesiony z innego kanału.</p>
+          <p><strong className="text-foreground">Strona i lead.</strong> Każda kampania prowadzi tam, gdzie klient może zostawić kontakt: na stronę, formularz lub do wiadomości. Mierzymy wejścia i konwersję, żeby ocenić, czy kampania przynosi zapytania, a nie tylko polubienia.</p>
+        </div>
+      </section>
+
+      <section className="container-wide px-6 md:px-12 py-12 md:py-16" aria-labelledby="wybor-heading">
+        <h2 id="wybor-heading" className="text-3xl md:text-4xl font-heading mb-5">Agencja social media z Warszawy czy agencja marketingowa z produkcją?</h2>
+        <div className="grid lg:grid-cols-2 gap-8 max-w-6xl text-muted-foreground leading-relaxed">
+          <p>Lokalna agencja będzie bliżej fizycznie i łatwiej zorganizuje spotkanie w biurze klienta. To realna zaleta, której nie udajemy, że mamy. Wybierając nas, dostajesz za to zespół, w którym marketing w mediach społecznościowych, zdjęcia, montaż i reklama płatna są w jednych rękach. Nie musisz koordynować osobno agencji reklamowej, fotografa i operatora wideo.</p>
+          <p>Profesjonalny partner w działaniach social media powinien przede wszystkim rozumieć Twój biznes i umieć przełożyć strategie marketingowe na konkretne publikacje. Dlatego przed startem pytamy o marżę na usługach, sezonowość, proces sprzedaży i to, kto w firmie odbiera zapytania. Profile social media to dopiero początek; liczy się to, co dzieje się po kliknięciu.</p>
+          <p>Media społecznościowe zmieniają się szybko, więc w trakcie kampanii social media testujemy różne formaty i komunikaty. Dobra strategia marketingowa zostawia miejsce na testy, a decyzje opiera na danych, nie na przeczuciu. Optymalizacja budżetu reklamowego to stały element pracy, a nie jednorazowe ustawienie.</p>
+          <p>Jeśli masz już własny zespół marketingowy, możemy go wesprzeć: przygotować strategię, wyprodukować pakiet materiałów albo przejąć kampanie płatne, a publikacje zostawić po Twojej stronie. Kompleksowa obsługa nie jest warunkiem współpracy.</p>
+          <p>Przed podpisaniem umowy o współpracy z agencją social media sprawdź, kto konkretnie będzie pracował nad Twoją marką, jak wygląda akceptacja treści i jak szybko agencja reaguje na komentarze klientów. Firma z Warszawy często ma bardziej rozbudowany proces decyzyjny niż mała firma lokalna, dlatego już na starcie ustalamy, kto zatwierdza publikacje, a kto kampanię reklamową.</p>
+        </div>
+      </section>
+
+      <section id="realizacje-social-media" className="py-12 md:py-16 bg-muted/30 border-y border-border scroll-mt-28" aria-labelledby="realizacje-heading">
+        <div className="container-wide px-6 md:px-12">
+          <div className="flex flex-wrap items-end justify-between gap-5 mb-8"><div><p className="dv-eyebrow mb-3">Z naszej produkcji</p><h2 id="realizacje-heading" className="text-3xl md:text-4xl font-heading">Realizacje: kampanie w social media i filmy</h2></div><Link to="/realizacje" className="underline underline-offset-4">Całe portfolio</Link></div>
+          <div className="grid md:grid-cols-2 gap-6">
+            <PortfolioVideo src="/videos/fotz-reel-web.mp4" poster="/videos/enea-stadion-cover.webp" title="Enea Stadion — emocje z bliska" category="Film z wydarzenia" />
+            <PortfolioVideo src="/videos/autospa.mp4" poster="/videos/autospa-frame.webp" title="AutoSpa" category="Prezentacja firmy" />
           </div>
+          <p className="text-muted-foreground max-w-3xl mt-6 leading-relaxed">Pracowaliśmy m.in. przy materiałach dla Enea Stadionu i FPS Cegielski, przygotowaliśmy spot dla WSB Merito, a dla Dawid EDU prowadziliśmy kampanię Meta Ads. To projekty z Wielkopolski; przy współpracy z firmą z Warszawy pokażemy na rozmowie realizacje najbliższe Twojej branży.</p>
         </div>
       </section>
 
-      {/* Section 4: Cennik */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-4xl mx-auto">
-          <FadeInView>
-            <h2 className="text-4xl font-bold text-slate-900 mb-12 text-center">
-              Cennik prowadzenia social media w Warszawie
-            </h2>
-          </FadeInView>
-          <FadeInView>
-            <div className="overflow-x-auto">
-              <table className="w-full">
-                <thead>
-                  <tr className="bg-slate-900 text-white">
-                    <th className="px-4 py-3 text-left font-semibold">Pakiet</th>
-                    <th className="px-4 py-3 text-left font-semibold">Platformy</th>
-                    <th className="px-4 py-3 text-left font-semibold">Posty na miesiąc</th>
-                    <th className="px-4 py-3 text-left font-semibold">Cena</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {pricing.map((row, idx) => (
-                    <tr key={idx} className={idx % 2 === 0 ? "bg-white" : "bg-gray-100"}>
-                      <td className="px-4 py-3 font-semibold text-slate-900">{row.package}</td>
-                      <td className="px-4 py-3 text-gray-600">{row.platforms}</td>
-                      <td className="px-4 py-3 text-gray-600">{row.posts}</td>
-                      <td className="px-4 py-3 font-bold text-pink-600">{row.price}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-            <p className="text-gray-600 text-sm mt-4">
-              Ceny mogą się różnić w zależności od zakresu usług. Dla dużych kampanii i długoterminowych umów oferujemy rabaty.
-            </p>
-          </FadeInView>
+      <section id="proces-social-media" className="container-wide px-6 md:px-12 py-12 md:py-16 scroll-mt-28" aria-labelledby="proces-heading">
+        <p className="dv-eyebrow mb-3">Od briefu do raportu</p><h2 id="proces-heading" className="text-3xl md:text-4xl font-heading mb-8">Jak wygląda współpraca z klientem z Warszawy</h2>
+        <ol className="grid md:grid-cols-2 lg:grid-cols-4 gap-7">{steps.map((step, index) => <li key={step.title} className="border-t border-border pt-5"><span aria-hidden="true" className="text-sm text-primary">0{index + 1}</span><h3 className="text-xl mt-3 mb-3">{step.title}</h3><p className="text-muted-foreground leading-relaxed">{step.text}</p></li>)}</ol>
+        <p className="mt-8 text-muted-foreground max-w-3xl leading-relaxed">Zespół FOTZ pracuje w Poznaniu i nie mamy biura w Warszawie. Dla klientów z Warszawy to zwykle nie problem: strategia, akceptacje, prowadzenie profili i kampanie prowadzimy zdalnie, a stały kontakt zapewnia jeden specjalista po naszej stronie. Gdy potrzebne są zdjęcia lub nagrania u Ciebie w firmie, możliwość i koszt wyjazdu ustalamy osobno. Alternatywą jest praca na materiałach od Twojego zespołu albo nagranie zdalnie wyreżyserowane.</p>
+      </section>
+
+      <section id="wycena-social-media" className="container-wide px-6 md:px-12 py-12 md:py-16 scroll-mt-28" aria-labelledby="wycena-heading">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16">
+          <div><p className="dv-eyebrow mb-3">Wycena</p><h2 id="wycena-heading" className="text-3xl md:text-4xl font-heading mb-5">Ile kosztuje kampania i prowadzenie social media dla firmy z Warszawy?</h2><p className="text-muted-foreground leading-relaxed mb-4">Nie podajemy stałej ceny, bo na koszt wpływa liczba kanałów i publikacji, ilość grafiki i filmów, moderacja, liczba kampanii reklamowych oraz ewentualny wyjazd na nagrania. W ofercie osobno pokazujemy obsługę profili, produkcję i budżet reklamowy, który płacisz bezpośrednio platformie.</p><p className="text-muted-foreground leading-relaxed mb-6">Możesz zacząć od mniejszego zakresu, np. strategii i pakietu rolek, a pełną obsługę dodać później, gdy zobaczysz, jak pracujemy.</p><Link to="/agencja-social-media/cennik" className="underline underline-offset-4">Sprawdź modele rozliczeń i składniki wyceny</Link></div>
+          <aside className="rounded-2xl border border-border bg-card p-6 md:p-8"><h3 className="text-2xl mb-5">Co przesłać do wyceny?</h3><ul className="list-disc pl-5 space-y-3 text-muted-foreground"><li>Linki do strony i obecnych profili w social media.</li><li>Cel: zapytania od klientów, sprzedaż, rekrutacja albo promocja wydarzenia.</li><li>Opis grup docelowych i głównych konkurentów.</li><li>Dostępne zdjęcia i filmy oraz informację, czy potrzebujesz nowych nagrań.</li><li>Kanały, termin startu i planowany budżet na obsługę oraz reklamę.</li></ul><Link to="/kontakt" className="dv-btn dv-btn-primary mt-7">Wyślij zapytanie <ArrowRight aria-hidden="true" className="w-4 h-4" /></Link></aside>
         </div>
       </section>
 
-      {/* Section 5: Dlaczego firmy z Warszawy wybierają Fotz Studio? */}
-      <section className="py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <FadeInView>
-            <h2 className="text-4xl font-bold text-slate-900 mb-12 text-center">
-              Dlaczego firmy z Warszawy wybierają Fotz Studio?
-            </h2>
-          </FadeInView>
-          <div className="space-y-6">
-            {differentiators.map((item, idx) => (
-              <FadeInView key={idx} delay={idx * 0.1}>
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-pink-600 rounded-full flex items-center justify-center text-white font-bold">
-                    ✓
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-slate-900 mb-2">{item.title}</h3>
-                    <p className="text-gray-600">{item.description}</p>
-                  </div>
-                </div>
-              </FadeInView>
-            ))}
-          </div>
-        </div>
+      <section id="pytania-social-media" className="container-wide px-6 md:px-12 py-12 md:py-16 scroll-mt-28" aria-labelledby="faq-heading">
+        <div className="max-w-3xl"><h2 id="faq-heading" className="text-3xl md:text-4xl font-heading mb-7">Pytania klientów: agencja social media w Warszawie czy zdalnie?</h2>{faqs.map(faq => <details key={faq.question} className="border-b border-border py-5"><summary className="font-medium cursor-pointer pr-3">{faq.question}</summary><p className="text-muted-foreground leading-relaxed mt-4">{faq.answer}</p></details>)}</div>
       </section>
 
-      {/* Section 6: Jakie firmy z Warszawy obsługujemy? */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-4xl mx-auto">
-          <FadeInView>
-            <h2 className="text-4xl font-bold text-slate-900 mb-12 text-center">
-              Jakie firmy z Warszawy obsługujemy?
-            </h2>
-          </FadeInView>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {niches.map((niche, idx) => (
-              <FadeInView key={idx} delay={idx * 0.05}>
-                <div className="bg-white rounded-lg p-4 shadow-sm">
-                  <p className="text-gray-700">{niche}</p>
-                </div>
-              </FadeInView>
-            ))}
-          </div>
-          <FadeInView>
-            <p className="text-gray-600 text-center mt-10">
-              Nie widzisz swojej branży? Skontaktuj się z nami. Dobrze pracujemy z każdą branżą i zawsze znajdujemy rozwiązanie dostosowane do konkretnych potrzeb.
-            </p>
-          </FadeInView>
+      <section className="container-wide px-6 md:px-12 py-12 md:pb-20" aria-labelledby="poradniki-heading">
+        <h2 id="poradniki-heading" className="text-2xl md:text-3xl font-heading mb-6">Poradniki przed współpracą z agencją social media</h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+          <Link to="/blog/agencja-social-media-poznan" className="border border-border rounded-xl p-5"><h3 className="font-medium">Jak porównać agencje social media</h3><p className="text-sm text-muted-foreground mt-3">Pytania, które warto zadać przed podpisaniem umowy.</p></Link>
+          <Link to="/agencja-social-media/cennik" className="border border-border rounded-xl p-5"><h3 className="font-medium">Cennik i modele rozliczeń</h3><p className="text-sm text-muted-foreground mt-3">Z czego składa się wycena obsługi i kampanii.</p></Link>
+          <Link to="/social-media/obsluga" className="border border-border rounded-xl p-5"><h3 className="font-medium">Obsługa social media</h3><p className="text-sm text-muted-foreground mt-3">Co obejmuje bieżące prowadzenie profili.</p></Link>
+          <Link to="/agencja-social-media" className="border border-border rounded-xl p-5"><h3 className="font-medium">Agencja social media FOTZ</h3><p className="text-sm text-muted-foreground mt-3">Pełna oferta i sposób pracy zespołu.</p></Link>
         </div>
       </section>
-
-      {/* FAQ Section */}
-      <section className="py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <FadeInView>
-            <h2 className="text-4xl font-bold text-slate-900 mb-12 text-center">
-              Najczęstsze pytania
-            </h2>
-          </FadeInView>
-          <div className="space-y-4">
-            {faqItems.map((item, idx) => (
-              <FadeInView key={idx} delay={idx * 0.05}>
-                <details className="bg-white rounded-lg p-6 shadow-sm group">
-                  <summary className="font-semibold text-slate-900 cursor-pointer flex justify-between items-center">
-                    {item.question}
-                    <span className="ml-4 text-pink-600">▼</span>
-                  </summary>
-                  <p className="text-gray-600 mt-4">{item.answer}</p>
-                </details>
-              </FadeInView>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <FAQSchema items={faqItems} />
-
-      {/* CTA Section */}
-      <section className="bg-slate-900 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <FadeInView>
-            <h2 className="text-4xl font-bold mb-6">Zlec prowadzenie social media w Warszawie</h2>
-            <p className="text-lg text-gray-300 mb-10">
-              Skontaktuj się z nami dzisiaj i odkryj, jak profesjonalne social media mogą zmienić Twój biznes.
-            </p>
-            <div className="flex gap-4 justify-center flex-wrap">
-              <Link
-                to="/social-media/obsluga"
-                className="inline-block bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-8 rounded-lg transition"
-              >
-                Dowiedz się więcej
-              </Link>
-              <Link
-                to="/kontakt"
-                className="inline-block bg-white hover:bg-gray-100 text-slate-900 font-bold py-3 px-8 rounded-lg transition"
-              >
-                Skontaktuj się
-              </Link>
-            </div>
-          </FadeInView>
-        </div>
-      </section>
-
-      {/* Bottom Links */}
-      <section className="py-12 px-4 bg-gray-50">
-        <div className="max-w-4xl mx-auto">
-          <FadeInView>
-            <div className="flex flex-wrap justify-center gap-6">
-              <Link to="/blog/prowadzenie-social-media-cennik" className="text-pink-600 hover:text-pink-700 font-semibold">
-                Blog: Cennik prowadzenia social media
-              </Link>
-              <span className="text-gray-300">•</span>
-              <Link to="/social-media/obsluga" className="text-pink-600 hover:text-pink-700 font-semibold">
-                Obsługa social media
-              </Link>
-              <span className="text-gray-300">•</span>
-              <Link to="/blog/social-media-marketing-poradnik" className="text-pink-600 hover:text-pink-700 font-semibold">
-                Blog: Poradnik social media marketing
-              </Link>
-            </div>
-          </FadeInView>
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <ContactSection city="Warszawa" />
     </Layout>
   );
 }
