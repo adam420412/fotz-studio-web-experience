@@ -348,7 +348,7 @@ https://www.fotz-studio.pl/blog/okr-co-to-jest,1,0,410 — decyzja (alias w teś
 https://www.fotz-studio.pl/blog/api-gateway-co-to-jest-kong-aws-traefik-kubernetes-ingress,0,0,410 — decyzja (alias w teście blog-seo),,temat spoza oferty; cel aliasu chronionego testem CMS — usunąć po decyzji
 https://www.fotz-studio.pl/blog/zero-trust-security-co-to-jest-jak-wdrozyz-ztna-mfa,0,0,410 — decyzja (alias w teście blog-seo),,temat spoza oferty; cel aliasu chronionego testem CMS — usunąć po decyzji
 https://www.fotz-studio.pl/blog/tworzenie-stron-internetowych-poznan-5,30,0,przekierować 301,/uslugi/strony-internetowe/poznan,numerowany wpis dublujący ofertę
-https://www.fotz-studio.pl/blog/reklamy-google-ads-poznan-5,15,0,przekierować 301,/performance-marketing/google-ads/poznan,numerowany wpis dublujący ofertę
+https://www.fotz-studio.pl/blog/reklamy-google-ads-poznan-5,15,0,przekierować 301,/kampanie-reklamowe-poznan,numerowany wpis dublujący ofertę
 https://www.fotz-studio.pl/blog/strony-wordpress-poznan-5,14,0,przekierować 301,/uslugi/strona-wordpress,numerowany wpis dublujący ofertę
 https://www.fotz-studio.pl/blog/icp-ideal-customer-profile-co-to,12,0,przekierować 301,/blog/icp-co-to-jest,"duplikat tematu, scalić z celem"
 https://www.fotz-studio.pl/blog/psychologia-cen-co-to,8,0,przekierować 301,/blog/psychologia-cen,"duplikat tematu, scalić z celem"

@@ -31,7 +31,7 @@ export default function FacebookAdsBydgoszcz() {
         <PageBreadcrumbs items={[
             { name: "Home", path: "/" },
             { name: "Performance Marketing", path: "/performance-marketing" },
-            { name: "Facebook Ads", path: "/performance-marketing/facebook-ads" },
+            { name: "Facebook Ads", path: "/uslugi/reklama-facebook" },
             { name: "Bydgoszcz", url: "https://www.fotz-studio.pl" }
           ]}/>
 

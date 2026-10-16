@@ -227,7 +227,7 @@ const BlogAIMarketing = () => {
 
               <h3>Optymalizacja kampanii reklamowych</h3>
               <p>
-                <Link to="/performance-marketing/google-ads" className="text-primary hover:underline">Google Ads</Link> i <Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline">Meta Ads</Link> intensywnie wykorzystują AI do optymalizacji kampanii. Algorytmy automatycznie dostosowują stawki, targetowanie i kreacje, aby maksymalizować ROI.
+                <Link to="/performance-marketing/google-ads" className="text-primary hover:underline">Google Ads</Link> i <Link to="/uslugi/reklama-facebook" className="text-primary hover:underline">Meta Ads</Link> intensywnie wykorzystują AI do optymalizacji kampanii. Algorytmy automatycznie dostosowują stawki, targetowanie i kreacje, aby maksymalizować ROI.
               </p>
 
               <h2>5. Generowanie grafik i wideo</h2>

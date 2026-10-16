@@ -99,7 +99,7 @@ const GoogleAds = () => {
     },
     {
       question: "Ile kosztuje reklama w Google Ads?",
-      answer: <>Koszt zależy od konkurencyjności słów kluczowych, jakości reklamy i branży. Średni koszt kliknięcia w Polsce to 1-5 zł, ale w konkurencyjnych branżach może wynosić nawet 20-50 zł. Ty decydujesz o dziennym budżecie i maksymalnej stawce za kliknięcie. Sprawdź także naszą ofertę <Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline">Facebook Ads</Link> dla kampanii uzupełniających.</>
+      answer: <>Koszt zależy od konkurencyjności słów kluczowych, jakości reklamy i branży. Średni koszt kliknięcia w Polsce to 1-5 zł, ale w konkurencyjnych branżach może wynosić nawet 20-50 zł. Ty decydujesz o dziennym budżecie i maksymalnej stawce za kliknięcie. Sprawdź także naszą ofertę <Link to="/uslugi/reklama-facebook" className="text-primary hover:underline">Facebook Ads</Link> dla kampanii uzupełniających.</>
     },
     {
       question: "Jakie typy kampanii Google Ads są dostępne?",
@@ -123,7 +123,7 @@ const GoogleAds = () => {
     },
     {
       question: "Czy warto połączyć Google Ads z Facebook Ads?",
-      answer: <>Tak, obie platformy uzupełniają się. Google Ads dociera do osób aktywnie szukających produktów/usług (wysoka intencja zakupowa), <Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline">Facebook Ads</Link> buduje świadomość i dociera do osób na podstawie zainteresowań. Remarketing cross-platformowy zwiększa efektywność. Oferujemy <Link to="/kompleksowa-obsluga-marketingowa" className="text-primary hover:underline">kompleksową obsługę marketingową</Link> łączącą oba kanały.</>
+      answer: <>Tak, obie platformy uzupełniają się. Google Ads dociera do osób aktywnie szukających produktów/usług (wysoka intencja zakupowa), <Link to="/uslugi/reklama-facebook" className="text-primary hover:underline">Facebook Ads</Link> buduje świadomość i dociera do osób na podstawie zainteresowań. Remarketing cross-platformowy zwiększa efektywność. Oferujemy <Link to="/kompleksowa-obsluga-marketingowa" className="text-primary hover:underline">kompleksową obsługę marketingową</Link> łączącą oba kanały.</>
     },
   ];
 
@@ -254,7 +254,7 @@ const GoogleAds = () => {
                 <Link to="/seo/pozycjonowanie" className="text-green-400 hover:text-green-300 text-sm flex items-center gap-1">
                   <ArrowRight className="w-4 h-4" /> Pozycjonowanie SEO
                 </Link>
-                <Link to="/performance-marketing/facebook-ads" className="text-green-400 hover:text-green-300 text-sm flex items-center gap-1">
+                <Link to="/uslugi/reklama-facebook" className="text-green-400 hover:text-green-300 text-sm flex items-center gap-1">
                   <ArrowRight className="w-4 h-4" /> Facebook Ads
                 </Link>
               </div>
@@ -625,7 +625,7 @@ const GoogleAds = () => {
               { title: "E-commerce & Sklepy", description: "Tworzymy skuteczne sklepy online zintegrowane z kampaniami", href: "/uslugi/strony-internetowe/ecommerce", icon: ShoppingCart },
               { title: "Pozycjonowanie SEO", description: "Organiczny wzrost widoczności w wyszukiwarce", href: "/seo/pozycjonowanie", icon: TrendingUp },
               { title: "Strony internetowe", description: "Profesjonalne strony z wysoką konwersją", href: "/uslugi/strony-internetowe", icon: Globe },
-              { title: "Facebook Ads", description: "Kampanie w social media dla szerszego zasięgu", href: "/performance-marketing/facebook-ads", icon: Users },
+              { title: "Facebook Ads", description: "Kampanie w social media dla szerszego zasięgu", href: "/uslugi/reklama-facebook", icon: Users },
             ].map((service, index) => (
               <motion.div
                 key={service.title}
@@ -768,7 +768,7 @@ const GoogleAds = () => {
 
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
               <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
-              <Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline font-medium text-sm">→ Facebook Ads</Link>
+              <Link to="/uslugi/reklama-facebook" className="text-primary hover:underline font-medium text-sm">→ Facebook Ads</Link>
               <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
               <Link to="/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
               <Link to="/case-studies/optymalizacja-konwersji-ecommerce" className="text-primary hover:underline font-medium text-sm">→ Case Study: Optymalizacja konwersji</Link>

@@ -19,7 +19,7 @@ const services = [
     icon: Facebook,
     title: "Facebook Ads",
     description: "Kampanie na Facebooku z zaawansowanym targetowaniem. Lookalike audiences, retargeting i optymalizacja pod konwersje.",
-    href: "/performance-marketing/facebook-ads",
+    href: "/uslugi/reklama-facebook",
     features: ["Lookalike audiences", "Retargeting", "Lead generation"],
   },
   {

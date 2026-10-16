@@ -26,11 +26,11 @@ const footerLinks = {
     { name: "Spoty reklamowe", href: "/uslugi/produkcja-video" },
     { name: "Fotografia z drona", href: "/uslugi/fotografia-z-drona" },
     { name: "Obsługa graficzna", href: "/agencja-graficzna" },
-    { name: "Agencja reklamowa", href: "/agencja-reklamowa-poznan" },
+    { name: "Agencja reklamowa", href: "/kampanie-reklamowe-poznan" },
   ],
   kampanie: [
     { name: "Google Ads", href: "/performance-marketing/google-ads" },
-    { name: "Facebook Ads", href: "/performance-marketing/facebook-ads" },
+    { name: "Facebook Ads", href: "/uslugi/reklama-facebook" },
     { name: "Instagram Ads", href: "/performance-marketing/instagram-ads" },
     { name: "Meta Ads (FB + IG)", href: "/performance-marketing/meta-ads" },
     { name: "TikTok Ads", href: "/performance-marketing/tiktok-ads" },

@@ -87,7 +87,7 @@ const relatedServices = [
   { title: "Wizualizacje 3D", href: "/wizualizacje-3d", description: "Fotorealistyczne rendery" },
   { title: "Spoty reklamowe", href: "/uslugi/produkcja-video", description: "Filmowe prezentacje" },
   { title: "Fotograf Poznań", href: "/uslugi/fotografia", description: "Sesje nieruchomości" },
-  { title: "Facebook Ads", href: "/performance-marketing/facebook-ads", description: "Kampanie lead generation" },
+  { title: "Facebook Ads", href: "/uslugi/reklama-facebook", description: "Kampanie lead generation" },
 ];
 
 const MarketingNieruchomosci = () => {

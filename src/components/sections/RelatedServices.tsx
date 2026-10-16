@@ -25,7 +25,7 @@ const serviceDatabase: Record<string, RelatedService> = {
   },
   "facebook-ads": {
     title: "Facebook Ads",
-    href: "/performance-marketing/facebook-ads",
+    href: "/uslugi/reklama-facebook",
     description: "Reklamy na największej platformie",
     icon: Megaphone,
     color: "from-blue-500/20 to-purple-500/20"

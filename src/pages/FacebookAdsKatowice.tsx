@@ -72,7 +72,7 @@ export default function FacebookAdsKatowice() {
         <PageBreadcrumbs items={[
             { name: "Strona główna", path: "/" },
             { name: "Kampanie reklamowe", path: "/performance-marketing" },
-            { name: "Facebook Ads", path: "/performance-marketing/facebook-ads" },
+            { name: "Facebook Ads", path: "/uslugi/reklama-facebook" },
             { name: "Katowice", path: "/performance-marketing/facebook-ads/katowice" },
           ]}/>
 

@@ -80,7 +80,7 @@ export const servicesByCategory = {
   ],
   ads: [
     { title: "Google Ads", description: "Kampanie w sieci wyszukiwania Google", path: "/performance-marketing/google-ads" },
-    { title: "Facebook Ads", description: "Reklamy na Facebooku i Instagramie", path: "/performance-marketing/facebook-ads" },
+    { title: "Facebook Ads", description: "Reklamy na Facebooku i Instagramie", path: "/uslugi/reklama-facebook" },
     { title: "Kampanie reklamowe", description: "Kompleksowe kampanie wielokanałowe", path: "/kampanie-reklamowe" },
     { title: "Remarketing", description: "Odzyskuj porzucone koszyki", path: "/performance-marketing/remarketing" },
   ],
@@ -100,7 +100,7 @@ export const servicesByCategory = {
     { title: "Sklepy e-commerce", description: "Sklepy z wysoką konwersją", path: "/uslugi/strony-internetowe/ecommerce" },
     { title: "Google Ads", description: "Kampanie produktowe i search", path: "/performance-marketing/google-ads" },
     { title: "Pozycjonowanie SEO", description: "SEO dla e-commerce", path: "/seo/pozycjonowanie" },
-    { title: "Facebook Ads", description: "Remarketing i DPA", path: "/performance-marketing/facebook-ads" },
+    { title: "Facebook Ads", description: "Remarketing i DPA", path: "/uslugi/reklama-facebook" },
   ],
   analytics: [
     { title: "Google Ads", description: "Kampanie z pełną analityką", path: "/performance-marketing/google-ads" },
@@ -129,7 +129,7 @@ export const servicesByCategory = {
   automation: [
     { title: "Kampanie reklamowe", description: "Automatyzacja kampanii Ads", path: "/kampanie-reklamowe" },
     { title: "Google Ads", description: "Smart Bidding i automatyzacja", path: "/performance-marketing/google-ads" },
-    { title: "Facebook Ads", description: "Automatyczne kampanie Meta", path: "/performance-marketing/facebook-ads" },
+    { title: "Facebook Ads", description: "Automatyczne kampanie Meta", path: "/uslugi/reklama-facebook" },
     { title: "Content Marketing", description: "Automatyzacja content marketingu", path: "/content-marketing/strategia" },
   ],
 };

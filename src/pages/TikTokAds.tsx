@@ -113,7 +113,7 @@ const TikTokAds = () => {
       question: "Jaki budżet potrzebuję na TikTok Ads?",
       answer: "Minimalny budżet dzienny to około 50 zł, ale rekomendujemy start od 100-200 zł dziennie (3000-6000 zł miesięcznie) dla zebrania wystarczających danych. TikTok często ma niższy CPM niż Facebook/Instagram, więc za ten sam budżet możesz dotrzeć do większej liczby osób.",
       links: [
-        { text: "Facebook Ads", href: "/performance-marketing/facebook-ads" },
+        { text: "Facebook Ads", href: "/uslugi/reklama-facebook" },
         { text: "Instagram Ads", href: "/performance-marketing/instagram-ads" }
       ]
     },
@@ -143,7 +143,7 @@ const TikTokAds = () => {
       question: "Czy warto łączyć TikTok Ads z innymi platformami?",
       answer: "Zdecydowanie tak! TikTok świetnie buduje świadomość i generuje ruch. W połączeniu z remarketingiem na Facebook/Instagram i Google Ads tworzy kompletną ścieżkę konwersji. Oferujemy kompleksową obsługę kampanii reklamowych na wszystkich platformach.",
       links: [
-        { text: "Facebook Ads", href: "/performance-marketing/facebook-ads" },
+        { text: "Facebook Ads", href: "/uslugi/reklama-facebook" },
         { text: "Google Ads", href: "/performance-marketing/google-ads" },
         { text: "Kompleksowa obsługa", href: "/kompleksowa-obsluga-marketingowa" }
       ]
@@ -495,7 +495,7 @@ const TikTokAds = () => {
             <p className="text-muted-foreground">TikTok for Business oferuje targetowanie podobne do Meta — zainteresowania, demografika, lookalike audiences i retargeting przez TikTok Pixel. Reklama na TikTok biznes staje się coraz ważniejszym elementem mediamixu firm B2C, szczególnie w e-commerce, beauty, fashion i gastronomii. Jako agencja TikTok Ads oferujemy pełną obsługę: od strategii kreatywnej i produkcji wideo, przez konfigurację kampanii w TikTok Ads Manager, po optymalizację i raportowanie wyników.</p>
           
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
-              <Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline font-medium text-sm">→ Facebook Ads</Link>
+              <Link to="/uslugi/reklama-facebook" className="text-primary hover:underline font-medium text-sm">→ Facebook Ads</Link>
               <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
               <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
               <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>

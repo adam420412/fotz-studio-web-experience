@@ -234,7 +234,7 @@ const BlogGoogleVsFacebook = () => {
               <h2>Kiedy wybrać Facebook Ads?</h2>
 
               <p>
-                <Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline">Reklamy na Facebooku</Link> sprawdzają się najlepiej gdy:
+                <Link to="/uslugi/reklama-facebook" className="text-primary hover:underline">Reklamy na Facebooku</Link> sprawdzają się najlepiej gdy:
               </p>
 
               <h3>1. Twój produkt jest impulsywny lub wizualny</h3>
@@ -484,7 +484,7 @@ const BlogGoogleVsFacebook = () => {
               <p className="text-muted-foreground">Prowadzisz kampanie reklamowe, ale nie jesteś pewien ich efektywności? Fotz Studio oferuje bezpłatny audyt kampanii — analizujemy strukturę, słowa kluczowe, kreacje, grupy docelowe i koszty, by wskazać obszary optymalizacji. Umów się na bezpłatną konsultację.</p>
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
               <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>
-              <Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline font-medium text-sm">→ Facebook Ads</Link>
+              <Link to="/uslugi/reklama-facebook" className="text-primary hover:underline font-medium text-sm">→ Facebook Ads</Link>
               <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Performance marketing</Link>
               <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
             </div>

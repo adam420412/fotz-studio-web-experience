@@ -72,7 +72,7 @@ export default function FacebookAdsKrakow() {
         <PageBreadcrumbs items={[
             { name: "Strona główna", path: "/" },
             { name: "Kampanie reklamowe", path: "/performance-marketing" },
-            { name: "Facebook Ads", path: "/performance-marketing/facebook-ads" },
+            { name: "Facebook Ads", path: "/uslugi/reklama-facebook" },
             { name: "Kraków", path: "/performance-marketing/facebook-ads/krakow" },
           ]}/>
 
@@ -454,7 +454,7 @@ export default function FacebookAdsKrakow() {
                     Bezpłatna konsultacja
                   </Link>
                   <Link
-                    to="/performance-marketing/facebook-ads"
+                    to="/uslugi/reklama-facebook"
                     className="inline-flex items-center justify-center px-8 py-3 bg-white/10 text-white rounded-lg font-semibold hover:bg-white/20 transition border border-white/20"
                   >
                     Poznaj Facebook Ads
@@ -473,7 +473,7 @@ export default function FacebookAdsKrakow() {
                 <p className="text-muted-foreground mb-6">Powiązane usługi:</p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link
-                    to="/performance-marketing/facebook-ads"
+                    to="/uslugi/reklama-facebook"
                     className="text-primary hover:underline font-semibold"
                   >
                     Facebook Ads — kompleksowo

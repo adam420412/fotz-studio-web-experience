@@ -34,7 +34,7 @@ const values = [
   {
     icon: Heart,
     title: "Pasja",
-    description: "Kochamy to, co robimy. Każdy projekt traktujemy jak własny, angażując się w 100%.",
+    description: "Kochamy to, co robimy. Każdy projekt prowadzimy tak, jakby był nasz: z jedną osobą kontaktową i jasnym planem.",
   },
   {
     icon: Zap,
@@ -256,7 +256,7 @@ export default function ONas() {
             </h2>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
               Nie oszczędzamy na sprzęcie, bo liczy się dla nas jakość. Pracujemy na profesjonalnym 
-              sprzęcie filmowym i fotograficznym, który gwarantuje kinową jakość każdej produkcji.
+              sprzęcie filmowym i fotograficznym, który pozwala nagrywać materiały w jakości kinowej.
             </p>
           </div>
 

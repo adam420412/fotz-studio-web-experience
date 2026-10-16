@@ -31,7 +31,7 @@ export default function FacebookAdsLublin() {
         <PageBreadcrumbs items={[
             { name: "Home", path: "/" },
             { name: "Performance Marketing", path: "/performance-marketing" },
-            { name: "Facebook Ads", path: "/performance-marketing/facebook-ads" },
+            { name: "Facebook Ads", path: "/uslugi/reklama-facebook" },
             { name: "Lublin", url: "https://www.fotz-studio.pl" }
           ]}/>
 

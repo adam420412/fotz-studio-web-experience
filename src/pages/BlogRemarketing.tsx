@@ -124,7 +124,7 @@ export default function BlogRemarketing() {
               <p>
                 Statystyki są bezlitosne: <strong>97% użytkowników opuszcza stronę bez zakupu</strong> podczas pierwszej wizyty. 
                 Remarketing pozwala "podążać" za tymi użytkownikami i przypominać im o Twojej ofercie, znacząco 
-                zwiększając szanse na konwersję. Najlepiej działa w połączeniu z <Link to="/performance-marketing/google-ads" className="text-primary hover:underline">Google Ads</Link> i <Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline">Facebook Ads</Link>.
+                zwiększając szanse na konwersję. Najlepiej działa w połączeniu z <Link to="/performance-marketing/google-ads" className="text-primary hover:underline">Google Ads</Link> i <Link to="/uslugi/reklama-facebook" className="text-primary hover:underline">Facebook Ads</Link>.
               </p>
 
               <div className="bg-primary/10 border border-primary/20 rounded-xl p-6 my-8">
@@ -392,7 +392,7 @@ export default function BlogRemarketing() {
               <p className="text-muted-foreground">Czy Twoje kampanie reklamowe obejmują remarketing? Fotz Studio skonfiguruje remarketing od zera lub zoptymalizuje istniejące kampanie. Bezpłatny audyt kampanii i konsultacja dostępne online. Skontaktuj się z nami, by przestać tracić potencjalnych klientów.</p>
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
               <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>
-              <Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline font-medium text-sm">→ Facebook Ads</Link>
+              <Link to="/uslugi/reklama-facebook" className="text-primary hover:underline font-medium text-sm">→ Facebook Ads</Link>
               <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Performance marketing</Link>
               <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
             </div>

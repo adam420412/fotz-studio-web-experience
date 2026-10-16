@@ -33,7 +33,7 @@ const KampanieReklamowe = () => {
       icon: Facebook, 
       title: "Facebook Ads", 
       description: "Buduj świadomość marki i docieraj do idealnych klientów na podstawie zainteresowań",
-      href: "/performance-marketing/facebook-ads",
+      href: "/uslugi/reklama-facebook",
       features: ["Feed & Stories", "Lead Ads", "Remarketing"],
       color: "from-blue-500/20 to-purple-500/10",
       accent: "bg-blue-500/20 text-blue-400"
@@ -557,7 +557,7 @@ const KampanieReklamowe = () => {
           <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
             {[
               { title: "Google Ads", href: "/performance-marketing/google-ads", icon: Search },
-              { title: "Facebook Ads", href: "/performance-marketing/facebook-ads", icon: Facebook },
+              { title: "Facebook Ads", href: "/uslugi/reklama-facebook", icon: Facebook },
               { title: "TikTok Ads", href: "/performance-marketing/tiktok-ads", icon: Music2 },
               { title: "Spoty reklamowe", href: "/uslugi/produkcja-video", icon: Video },
               { title: "Landing Page", href: "/uslugi/strony-internetowe", icon: Monitor },

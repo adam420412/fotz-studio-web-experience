@@ -108,7 +108,7 @@ const getRecommendation = (answers: Record<number, string>): Recommendation => {
       description: "Dla sklepów internetowych rekomendujemy kampanie reklamowe Google Shopping, remarketing oraz pozycjonowanie produktów.",
       services: [
         { name: "Google Ads", link: "/performance-marketing/google-ads" },
-        { name: "Facebook Ads", link: "/performance-marketing/facebook-ads" },
+        { name: "Facebook Ads", link: "/uslugi/reklama-facebook" },
         { name: "SEO dla e-commerce", link: "/seo/pozycjonowanie" },
       ],
       budget: "od 3 000 zł/mies.",

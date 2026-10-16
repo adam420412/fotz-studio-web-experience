@@ -47,7 +47,7 @@ const glossaryTerms: Term[] = [
   { term: "Engagement Rate", definition: "Współczynnik zaangażowania - miara interakcji użytkowników z treściami (polubienia, komentarze, udostępnienia) względem zasięgu.", category: "Social Media" },
   
   // F
-  { term: "Facebook Ads", definition: "System reklamowy Meta pozwalający na tworzenie i zarządzanie reklamami na Facebooku i Instagramie.", category: "Reklama", relatedLink: "/performance-marketing/facebook-ads", relatedLinkText: "Kampanie Facebook Ads" },
+  { term: "Facebook Ads", definition: "System reklamowy Meta pozwalający na tworzenie i zarządzanie reklamami na Facebooku i Instagramie.", category: "Reklama", relatedLink: "/uslugi/reklama-facebook", relatedLinkText: "Kampanie Facebook Ads" },
   { term: "Funnel (Lejek sprzedażowy)", definition: "Model przedstawiający ścieżkę klienta od pierwszego kontaktu z marką do zakupu, podzielony na etapy: świadomość, zainteresowanie, decyzja, akcja.", category: "Strategia" },
   
   // G
