@@ -23,42 +23,42 @@ export default function BlogCopywritingCoTo() {
 
   const faqItems = [
     {
-      question: "Co to jest copywriting?",
+      question: "Co oznacza słowo „copywriter”?",
       answer:
-        "Copywriting to pisanie tekstów perswazyjnych i marketingowych w celach biznesowych. Copywriter tworzy teksty na strony internetowe, reklamy, emaile, posty social media, opisy produktów i inne materiały, których zadaniem jest skłonienie czytelnika do podjęcia określonego działania (zakup, kontakt, zapis).",
+        "Słowo pochodzi z angielskiego: „copy” to tekst reklamowy, a „writer” to autor. Copywriter to specjalista, który pisze teksty o konkretnym celu marketingowym — ma przyciągać uwagę odbiorcy i prowadzić go do określonego działania, np. kontaktu albo zakupu.",
+    },
+    {
+      question: "Ile zarabia copywriter za 1000 znaków?",
+      answer:
+        "Na rynku popularne jest rozliczanie za 1000 znaków ze spacjami, ale nie ma jednej stawki. Wpływają na nią doświadczenie autora, branża, ilość researchu, rodzaj tekstu (opis produktu, artykuł, landing page) i to, czy zlecenie obejmuje optymalizację SEO. Teksty sprzedażowe i specjalistyczne częściej wycenia się za projekt niż za znaki.",
+    },
+    {
+      question: "Czy copywriting ma jeszcze sens?",
+      answer:
+        "Tak. Narzędzia AI przyspieszają pisanie szkiców, ale nie znają Twojej firmy, klientów ani przewag. Copywriting nadal decyduje o tym, czy strona, reklama czy mailing jest zrozumiały, wiarygodny i prowadzi do działania. Zmienia się raczej warsztat niż sama potrzeba dobrych tekstów.",
+    },
+    {
+      question: "Jak inaczej nazwać copywritera?",
+      answer:
+        "W zależności od kontekstu mówi się: autor tekstów reklamowych, tekściarz, redaktor treści marketingowych, content writer albo — w przypadku interfejsów — UX writer. Nie są to idealne synonimy, bo każde określenie akcentuje inny zakres pracy.",
     },
     {
       question: "Czym różni się copywriting od content writingu?",
       answer:
-        "Copywriting skupia się na perswazji i konwersji — teksty sprzedające, landing pages, reklamy. Content writing to tworzenie wartościowych treści informacyjnych — blogi, artykuły, poradniki. Oba są ważne, ale służą różnym celom. W praktyce dobry marketer łączy oba podejścia.",
-    },
-    {
-      question: "Ile zarabia copywriter w Polsce?",
-      answer:
-        "Junior copywriter: 3000-5000 zł brutto. Mid copywriter: 5000-8000 zł. Senior/specjalizowany: 8000-15 000 zł. Freelancerzy rozliczają się per tekst: artykuł blogowy 200-2000 zł, landing page 500-5000 zł, e-mail 100-500 zł. Stawki zależą od specjalizacji i doświadczenia.",
+        "Copywriting skupia się na perswazji i działaniu — to teksty sprzedażowe, reklamy, strony ofertowe. Content writing to treści edukacyjne i dłuższe formy, które budują zaufanie: poradniki, artykuły, e-booki. W praktyce oba podejścia się przenikają.",
     },
     {
       question: "Jak zostać copywriterem?",
       answer:
-        "Nie ma jednej drogi. Najszybsza ścieżka: naucz się podstaw marketingu i perswazji (lektura: Ogilvy on Advertising, Influence Cialdiniego), pisz praktycznie (własny blog, wolontariat), buduj portfolio, zacznij od małych zleceń. Kurs copywritingu lub marketing online przyspiesza naukę.",
-    },
-    {
-      question: "Czym jest SEO copywriting?",
-      answer:
-        "SEO copywriting to łączenie technik copywriterskich z optymalizacją pod wyszukiwarki. Tekst musi być atrakcyjny dla czytelnika I zawierać frazy kluczowe w odpowiednich miejscach. Dobry SEO copywriting nie brzmi jak 'pchanie słów kluczowych' — jest naturalny i przydatny.",
-    },
-    {
-      question: "Ile kosztuje zlecenie copywritingu?",
-      answer:
-        "Stawki za copywriting: artykuł blogowy (1000 słów) — 150-800 zł, strona główna — 500-3000 zł, landing page — 800-5000 zł, email newsletter — 200-1000 zł, opis produktu — 50-200 zł. Agencje wyceniają kompleksowo. Cena zależy od specjalizacji, researchu i doświadczenia copywritera.",
+        "Nie ma jednej drogi. Warto poznać podstawy marketingu i psychologii perswazji, dużo czytać i pisać, analizować reklamy, które działają, i zbudować portfolio choćby z kilku tekstów dla realnych firm. Pierwsze zlecenia często przychodzą z sieci kontaktów, platform dla freelancerów lub stażu w agencji.",
     },
   ];
 
   return (
     <>
       <SEOHead
-        title="Copywriting — co to jest, rodzaje i ile zarabia copywriter"
-        description="Copywriting co to — kompleksowy przewodnik. Definicja, rodzaje copywritingu, ile zarabia copywriter i jak napisać dobry tekst marketingowy. Przeczytaj!"
+        title="Copywriting — co to? Definicja i kim jest copywriter"
+        description="Copywriting co to jest? Definicja, rodzaje tekstów, czym zajmuje się copywriter, SEO i rola AI w marketingu. Praktyczny poradnik FOTZ Studio."
         canonical="https://www.fotz-studio.pl/blog/copywriting-co-to"
 
         keywords="Copywriting co to jest, Copywriting definicja, czym jest Copywriting, Copywriting przykłady, jak działa Copywriting, Copywriting znaczenie, Copywriting przewodnik"
@@ -80,16 +80,17 @@ export default function BlogCopywritingCoTo() {
           <div className="max-w-3xl mx-auto px-4 md:px-6">
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
               <div className="flex items-center gap-4 text-sm text-slate-400 mb-4">
-                <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 7 min czytania</span>
+                <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 9 min czytania</span>
                 <span className="flex items-center gap-1"><User className="w-4 h-4" /> Zespół FOTZ Studio</span>
                 <span className="flex items-center gap-1"><BookOpen className="w-4 h-4" /> Marketing</span>
               </div>
               <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">
-                Copywriting — co to jest i jak działa w marketingu?
+                Copywriting — co to jest? Definicja i czym zajmuje się copywriter
               </h1>
               <p className="text-xl text-slate-300 leading-relaxed">
-                Copywriting to jedna z najcenniejszych umiejętności w marketingu. Dobrze napisany tekst może
-                zwiększyć konwersję o 100-300%. Ale czym dokładnie jest copywriting i dlaczego jest tak ważny?
+                Copywriting to umiejętność pisania tekstów, które coś załatwiają: przyciągają uwagę, wyjaśniają ofertę
+                i prowadzą czytelnika do decyzji. W tym poradniku wyjaśniamy, czym jest copywriting, kim jest copywriter,
+                jakie są rodzaje tekstów i jak na tę pracę wpływa sztuczna inteligencja.
               </p>
             </motion.div>
           </div>
@@ -100,15 +101,32 @@ export default function BlogCopywritingCoTo() {
           <div className="max-w-3xl mx-auto px-4 md:px-6">
 
             <FadeInView>
-              <h2 className="text-2xl font-bold text-slate-900 mt-8 mb-4">Definicja copywritingu</h2>
+              <h2 className="text-2xl font-bold text-slate-900 mt-8 mb-4">Czym jest copywriting — definicja</h2>
               <p className="text-slate-700 leading-relaxed mb-4">
-                Copywriting to sztuka pisania tekstów marketingowych i reklamowych, których celem jest skłonienie
-                czytelnika do podjęcia określonej akcji. Może to być zakup produktu, kontakt z firmą, zapis na newsletter
-                lub kliknięcie reklamy.
+                Najkrótsza definicja brzmi tak: copywriting to proces tworzenia tekstów, które mają skłonić odbiorcę
+                do określonego działania. Może to być zakup produktu lub usługi, wysłanie zapytania, zapis na newsletter
+                albo kliknięcie reklamy. Innymi słowy, copywriting polega na tworzeniu treści z jasnym celem
+                biznesowym, a nie tylko na ładnym pisaniu.
               </p>
               <p className="text-slate-700 leading-relaxed mb-6">
-                Słowo "copy" w języku angielskim oznacza tekst reklamowy. "Copywriter" to osoba, która taki tekst pisze.
-                W Polsce termin copywriter często używany jest szerzej — jako określenie każdego, kto pisze na zlecenie.
+                Słowo „copy” w języku angielskim oznacza tekst reklamowy, stąd nazwa. W języku polskim termin przyjął się
+                szerzej i często obejmuje każde pisanie na zlecenie firm. Warto jednak pamiętać o różnicy: tekst
+                copywriterski ocenia się po tym, czy działa, a nie po tym, czy jest długi lub efektowny.
+              </p>
+            </FadeInView>
+
+            <FadeInView>
+              <h2 className="text-2xl font-bold text-slate-900 mt-8 mb-4">Kim jest copywriter i czym zajmuje się na co dzień?</h2>
+              <p className="text-slate-700 leading-relaxed mb-4">
+                Copywriter to specjalista od komunikacji pisanej, który łączy kreatywność z wiedzą z zakresu marketingu.
+                Zanim napisze pierwsze zdanie, poznaje produkt, klienta i potrzeby grupy docelowej, a potem dobiera argumenty,
+                ton i formę. Dlatego pytanie, czym zajmuje się copywriter, ma szerszą odpowiedź niż „pisze teksty”.
+              </p>
+              <p className="text-slate-700 leading-relaxed mb-6">
+                Copywriterzy tworzą m.in. treści na strony internetowe, hasła i slogany, nagłówki reklam, opisy produktów
+                w sklepach, mailingi, posty w mediach społecznościowych, scenariusz spotu wideo czy materiały promocyjne
+                do druku. Kim jest copywriter w praktyce? To ktoś, kto potrafi spojrzeć na ofertę oczami klienta i ubrać
+                to w słowa, które ten klient zrozumie.
               </p>
             </FadeInView>
 
@@ -116,10 +134,10 @@ export default function BlogCopywritingCoTo() {
               <h2 className="text-2xl font-bold text-slate-900 mt-8 mb-4">Rodzaje copywritingu</h2>
               <div className="grid md:grid-cols-2 gap-4 mb-6">
                 {[
-                  { icon: Target, title: "Direct response copywriting", desc: "Teksty nastawione na natychmiastowe działanie — landing pages, emaile, reklamy. Mierzone konwersją." },
-                  { icon: FileText, title: "SEO copywriting", desc: "Tworzenie treści zoptymalizowanych pod wyszukiwarki. Łączy perswazję z frazami kluczowymi." },
-                  { icon: BookOpen, title: "Content copywriting", desc: "Wartościowe artykuły, poradniki, case studies. Buduje autorytet i zaufanie marki." },
-                  { icon: DollarSign, title: "UX copywriting", desc: "Mikroteksty w interfejsach — przyciski, komunikaty błędów, onboarding. Poprawia user experience." },
+                  { icon: Target, title: "Copywriting sprzedażowy", desc: "Strony ofertowe, landing page, mailingi i reklamy. Ma prowadzić do konkretnej konwersji — zakupu, zapytania, zapisu." },
+                  { icon: FileText, title: "Copywriting SEO", desc: "Teksty pisane pod kątem wyszukiwarek i ludzi jednocześnie, by strona była widoczna w Google i przekonywała po wejściu." },
+                  { icon: BookOpen, title: "Copywriting wizerunkowy", desc: "Hasła, manifest marki, opowiadanie historii firmy. Buduje rozpoznawalność i spójny wizerunek marki." },
+                  { icon: DollarSign, title: "UX writing", desc: "Krótkie teksty w interfejsach: przyciski, komunikaty, formularze. Pomagają użytkownikowi przejść przez stronę bez frustracji." },
                 ].map((item, idx) => {
                   const Icon = item.icon;
                   return (
@@ -131,20 +149,24 @@ export default function BlogCopywritingCoTo() {
                   );
                 })}
               </div>
+              <p className="text-slate-700 leading-relaxed mb-6">
+                Teksty reklamowe dzielimy też ze względu na funkcję: perswazyjny tekst sprzedaje, informacyjny wyjaśnia,
+                a wizerunkowy buduje skojarzenia. Dobór rodzaju tekstu zależy od tego, na jakim etapie decyzji jest odbiorca.
+              </p>
             </FadeInView>
 
             <FadeInView>
-              <h2 className="text-2xl font-bold text-slate-900 mt-8 mb-4">Gdzie jest używany copywriting?</h2>
+              <h2 className="text-2xl font-bold text-slate-900 mt-8 mb-4">Gdzie copywriting pracuje w marketingu?</h2>
               <div className="space-y-2 mb-6">
                 {[
-                  "Strony internetowe i landing pages",
-                  "Reklamy Google Ads i Meta Ads",
-                  "Email marketing i newslettery",
-                  "Posty i reklamy social media",
+                  "Strony internetowe i landing page",
+                  "Reklamy w Google i na Facebooku",
+                  "E-mail marketing i newslettery",
+                  "Posty i kampanie w social media",
                   "Opisy produktów w sklepach internetowych",
-                  "Artykuły blogowe i content marketing",
-                  "Broszury i materiały drukowane",
-                  "Skrypty wideo i podcastów",
+                  "Artykuły blogowe i poradniki",
+                  "Ulotki, katalogi i broszury",
+                  "Scenariusze wideo i podcastów",
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-3 p-3 bg-slate-50 rounded-lg">
                     <CheckCircle2 className="w-4 h-4 text-blue-600 flex-shrink-0" />
@@ -152,42 +174,88 @@ export default function BlogCopywritingCoTo() {
                   </div>
                 ))}
               </div>
+              <p className="text-slate-700 leading-relaxed mb-6">
+                W każdym z tych miejsc tekst wspiera inne działania marketingowe: kampania przyprowadza ruch, a słowa
+                decydują, czy ktoś zostanie na stronie. Marketing internetowy bez dobrego copy przypomina sklep
+                z ładną witryną i pustą ladą.
+              </p>
             </FadeInView>
 
             <FadeInView>
-              <h2 className="text-2xl font-bold text-slate-900 mt-8 mb-4">Dobre techniki copywriterskie</h2>
-              <p className="text-slate-700 mb-4">
-                Najskuteczniejsze techniki to: AIDA (Attention, Interest, Desire, Action), PAS (Problem, Agitation, Solution),
-                FAB (Features, Advantages, Benefits), storytelling i social proof. Dobry copywriter wie kiedy użyć której techniki.
+              <h2 className="text-2xl font-bold text-slate-900 mt-8 mb-4">SEO copywriting — teksty pod wyszukiwarki</h2>
+              <p className="text-slate-700 leading-relaxed mb-4">
+                Zanim klient cokolwiek kupi, zwykle zaczyna wyszukiwać informacje, wpisując proste pytanie w wyszukiwarkę. Żeby Twoja strona pojawiła
+                się w wynikach wyszukiwania, tekst musi odpowiadać na to pytanie lepiej niż konkurencja. Tym zajmuje się
+                SEO copywriting: łączy pisanie dla ludzi z optymalizacją pod kątem algorytmów.
               </p>
-              <div className="bg-blue-50 border border-blue-200 rounded-lg p-5 mb-6">
-                <p className="font-bold text-blue-900 mb-2">Przykład: AIDA w praktyce</p>
-                <div className="space-y-1 text-sm text-blue-800">
-                  <p><strong>A</strong>ttention: "Twoja strona traci 70% klientów na pierwszym ekranie"</p>
-                  <p><strong>I</strong>nterest: "Większość stron ma nagłówek który nie mówi co sprzedają"</p>
-                  <p><strong>D</strong>esire: "Zmień jeden nagłówek i zwiększ konwersję o 40%"</p>
-                  <p><strong>A</strong>ction: "Zamów bezpłatny audyt copy"</p>
-                </div>
+              <p className="text-slate-700 leading-relaxed mb-6">
+                Treści SEO wymagają researchu: trzeba wiedzieć, jakie słowa kluczowe wpisują użytkownicy, i rozsądnie
+                rozmieścić frazy w nagłówkach i treści. Znajomość zasad SEO to jednak dopiero połowa pracy. Tekst
+                napisany wyłącznie pod roboty, z upchniętą frazą w co drugim zdaniu, zniechęca czytelnika i nie
+                sprzedaje. Więcej o tym piszemy w poradniku o{" "}
+                <Link to="/blog/seo-copywriting-co-to" className="text-blue-600 hover:underline">pisaniu tekstów pod SEO</Link>.
+              </p>
+            </FadeInView>
+
+            <FadeInView>
+              <h2 className="text-2xl font-bold text-slate-900 mt-8 mb-4">Proces tworzenia tekstów krok po kroku</h2>
+              <div className="space-y-3 mb-6">
+                {[
+                  ["Brief", "Cel tekstu, odbiorca, oferta, przewagi i ograniczenia. Dobry brief oszczędza kilka rund poprawek."],
+                  ["Research", "Rozmowa z klientem, analiza konkurencji, pytania i obiekcje kupujących, fraz kluczowych w wyszukiwarce."],
+                  ["Struktura", "Kolejność argumentów i nagłówków — zanim powstanie pierwsze zdanie."],
+                  ["Pisanie i redakcja", "Wersja robocza, skracanie, sprawdzanie, czy każdy akapit prowadzi do celu."],
+                  ["Testy i poprawki", "Po publikacji warto obserwować zachowanie użytkowników i dopracowywać tekst."],
+                ].map(([t, d], idx) => (
+                  <div key={idx} className="p-4 bg-slate-50 rounded-lg border border-slate-200">
+                    <p className="font-semibold text-slate-900 mb-1">{idx + 1}. {t}</p>
+                    <p className="text-slate-700 text-sm">{d}</p>
+                  </div>
+                ))}
               </div>
             </FadeInView>
 
             <FadeInView>
-              <h2 className="text-2xl font-bold text-slate-900 mt-8 mb-4">Copywriting vs content writing — różnica</h2>
-              <div className="overflow-x-auto mb-6">
+              <h2 className="text-2xl font-bold text-slate-900 mt-8 mb-4">Skuteczny copywriting: język korzyści, AIDA i storytelling</h2>
+              <p className="text-slate-700 leading-relaxed mb-4">
+                Skuteczny copywriting opiera się na kilku sprawdzonych technikach. Język korzyści przekłada cechy na to,
+                co realnie zyskuje klient („bateria 5000 mAh” zamienia się w „telefon wytrzyma cały dzień w trasie”).
+                Model AIDA (Attention, Interest, Desire, Action) porządkuje tekst od przyciągnięcia uwagi do wezwania
+                do działania. Storytelling, czyli opowiadanie historii, pomaga zapamiętać markę, a dobrze dobrana
+                historia bywa bardziej przekonująca niż lista suchych argumentów.
+              </p>
+              <div className="bg-blue-50 border border-blue-200 rounded-lg p-5 mb-6">
+                <p className="font-bold text-blue-900 mb-2">Przykład: AIDA w praktyce</p>
+                <div className="space-y-1 text-sm text-blue-800">
+                  <p><strong>A</strong>ttention: „Twoja strona ładnie wygląda, ale telefon nie dzwoni?”</p>
+                  <p><strong>I</strong>nterest: „Często winny jest nagłówek, który nie mówi, co i dla kogo oferujesz.”</p>
+                  <p><strong>D</strong>esire: „Jasny komunikat sprawia, że klient od razu wie, że trafił we właściwe miejsce.”</p>
+                  <p><strong>A</strong>ction: „Umów krótką konsultację tekstów na stronie.”</p>
+                </div>
+              </div>
+              <p className="text-slate-700 leading-relaxed mb-6">
+                Psychologia odgrywa tu dużą rolę: dobre teksty odpowiadają na obawy, zanim czytelnik je wypowie, i
+                pokazują dowody zamiast obietnic. Tak tekst może wpływać na decyzje zakupowe bez nachalności.
+              </p>
+            </FadeInView>
+
+            <FadeInView>
+              <h2 className="text-2xl font-bold text-slate-900 mt-8 mb-4">Copywriting a content marketing — różnica</h2>
+              <div className="overflow-x-auto mb-4">
                 <table className="w-full text-sm border-collapse">
                   <thead>
                     <tr className="bg-slate-100">
                       <th className="text-left p-3 border border-slate-200">Cecha</th>
                       <th className="text-left p-3 border border-slate-200">Copywriting</th>
-                      <th className="text-left p-3 border border-slate-200">Content writing</th>
+                      <th className="text-left p-3 border border-slate-200">Content marketing</th>
                     </tr>
                   </thead>
                   <tbody>
                     {[
-                      ["Cel", "Konwersja, sprzedaż", "Edukacja, budowanie autorytetu"],
-                      ["Ton", "Perswazyjny, bezpośredni", "Informacyjny, wartościowy"],
-                      ["Przykłady", "Landing pages, reklamy", "Blogi, artykuły, e-booki"],
-                      ["Miernik", "CTR, konwersja", "Ruch, czas na stronie"],
+                      ["Cel", "Działanie: zakup, zapytanie, zapis", "Edukacja i zaufanie w dłuższym czasie"],
+                      ["Ton", "Perswazyjny, bezpośredni", "Informacyjny, ekspercki"],
+                      ["Przykłady", "Oferty, reklamy, mailingi", "Blogi, poradniki, e-booki"],
+                      ["Miernik", "Kliknięcia, konwersja", "Ruch, zaangażowanie, powroty"],
                     ].map((row, idx) => (
                       <tr key={idx} className={idx % 2 === 0 ? "bg-white" : "bg-slate-50"}>
                         {row.map((cell, ci) => (
@@ -198,17 +266,73 @@ export default function BlogCopywritingCoTo() {
                   </tbody>
                 </table>
               </div>
+              <p className="text-slate-700 leading-relaxed mb-6">
+                Obie dziedziny korzystają z tych samych umiejętności, a granica jest płynna: dobry artykuł też może kończyć się
+                wezwaniem do działania, a strona ofertowa — zawierać wartościowe wyjaśnienia.
+              </p>
+            </FadeInView>
+
+            <FadeInView>
+              <h2 className="text-2xl font-bold text-slate-900 mt-8 mb-4">Co musi umieć dobry copywriter?</h2>
+              <ul className="list-disc pl-6 space-y-2 text-slate-700 mb-6">
+                <li>Umiejętność pisania tekstów prostym, poprawnym językiem i dostosowania stylu do marki.</li>
+                <li>Słuchanie i zadawanie pytań — bez tego trudno zrozumieć produkt i cele biznesowe klienta.</li>
+                <li>Kreatywny pomysł na nagłówek, ale też dyscyplina, by trzymać się briefu.</li>
+                <li>Podstawy marketingu, psychologii i SEO oraz ciekawość branży, w której pisze.</li>
+                <li>Gotowość na krytykę i poprawki — redakcja to normalna część pracy.</li>
+              </ul>
+              <p className="text-slate-700 leading-relaxed mb-6">
+                Czy copywriter musi być ekspertem w danej dziedzinie? Nie zawsze, ale musi umieć szybko się uczyć
+                i rozmawiać ze specjalistami. Przy tematach technicznych, medycznych czy prawnych merytoryczna weryfikacja
+                po stronie klienta jest konieczna.
+              </p>
+            </FadeInView>
+
+            <FadeInView>
+              <h2 className="text-2xl font-bold text-slate-900 mt-8 mb-4">Praca copywritera: etat, agencja czy freelancer?</h2>
+              <p className="text-slate-700 leading-relaxed mb-4">
+                Praca copywritera może wyglądać różnie. Na etacie w firmie autor zna jedną markę bardzo dobrze. W agencji
+                pisze dla wielu klientów i współpracuje z grafikami, strategami czy specjalistami od reklam. Jako freelancer
+                sam zdobywa zlecenia, ustala stawki i dba o terminy.
+              </p>
+              <p className="text-slate-700 leading-relaxed mb-6">
+                Zarobki zależą od specjalizacji, doświadczenia i formy współpracy, dlatego nie podajemy tu jednej kwoty.
+                Przy mniejszych tekstach często spotyka się rozliczenie za 1000 znaków ze spacjami, przy tekstach
+                sprzedażowych — wycenę za cały projekt. Orientacyjne koszty zleceń omawiamy w artykule{" "}
+                <Link to="/blog/copywriting-cennik" className="text-blue-600 hover:underline">cennik copywritingu</Link>.
+              </p>
+            </FadeInView>
+
+            <FadeInView>
+              <h2 className="text-2xl font-bold text-slate-900 mt-8 mb-4">Copywriting a AI — czy sztuczna inteligencja zastąpi copywritera?</h2>
+              <p className="text-slate-700 leading-relaxed mb-4">
+                Narzędzia AI potrafią w kilka sekund napisać szkic, zaproponować nagłówki czy przeredagować akapit. Dla
+                copywritera to wygodne wsparcie przy researchu i pierwszych wersjach. Problem pojawia się, gdy firma
+                publikuje teksty wygenerowane bez redakcji: są poprawne, ale podobne do tysięcy innych i nie mówią nic
+                konkretnego o ofercie.
+              </p>
+              <p className="text-slate-700 leading-relaxed mb-6">
+                Sztuczna inteligencja nie zna Twoich klientów, nie była na rozmowie sprzedażowej i nie wie, które
+                argumenty naprawdę przekonują. Dlatego copywriting nadal ma sens — zmienia się warsztat, a rośnie
+                znaczenie strategii, faktów i własnego głosu marki.
+              </p>
             </FadeInView>
 
             <FadeInView>
               <div className="bg-blue-50 border border-blue-200 rounded-lg p-5 mb-6">
                 <p className="text-blue-800 font-semibold mb-2">Potrzebujesz tekstów dla swojej firmy?</p>
                 <p className="text-blue-700 text-sm mb-3">
-                  Tworzymy copy które sprzedaje — strony, landing pages, reklamy, emaile. Sprawdź nasz cennik copywritingu.
+                  W FOTZ Studio piszemy teksty jako część większej całości — strony, kampanii i komunikacji marki.
+                  Zaczynamy od strategii treści, a potem tworzymy copy dopasowane do Twoich odbiorców.
                 </p>
-                <Link to="/blog/copywriting-cennik" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
-                  Cennik copywritingu <ArrowRight className="w-4 h-4" />
-                </Link>
+                <div className="flex flex-wrap gap-4">
+                  <Link to="/content-marketing/strategia" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
+                    Strategia treści <ArrowRight className="w-4 h-4" />
+                  </Link>
+                  <Link to="/blog/copywriting-cennik" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
+                    Cennik copywritingu <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </div>
               </div>
             </FadeInView>
           </div>

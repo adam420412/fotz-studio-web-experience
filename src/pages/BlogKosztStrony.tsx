@@ -25,24 +25,32 @@ const cities = [
 
 const faqItems = [
   {
-    "question": "Jakie są koszty stworzenia strony internetowej?",
-    "answer": "Koszt stworzenia strony internetowej zależy od wielu czynników. Proste strony wizytówki kosztują od kilkuset do kilku tysięcy złotych, podczas gdy rozbudowane strony internetowe mogą kosztować od kilku do kilkudziesięciu tysięcy złotych."
+    "question": "Ile kosztuje zrobienie strony internetowej firmy?",
+    "answer": "Nie ma jednej stawki, bo koszt zrobienia strony internetowej dla firmy zależy od liczby podstron, projektu graficznego, systemu CMS, funkcji, treści i zakresu SEO. Najrzetelniej sprawdzisz to, zbierając kilka ofert na ten sam, spisany zakres prac."
   },
   {
-    "question": "Jakie są koszty utrzymania strony internetowej?",
-    "answer": "Koszt utrzymania strony obejmuje opłaty za hosting, domenę oraz ewentualne aktualizacje i wsparcie techniczne. Średnie miesięczne koszty wynoszą od kilkudziesięciu do kilkuset złotych."
+    "question": "Czy da się samemu stworzyć stronę internetową?",
+    "answer": "Tak. Kreator stron (np. Wix lub WebWave) albo WordPress z gotowym szablonem pozwalają postawić prostą stronę bez programowania. Płacisz wtedy głównie abonamentem i własnym czasem, a ograniczeniem bywa elastyczność, wydajność i możliwości SEO."
   },
   {
-    "question": "Co wpływa na cenę wykonania strony internetowej?",
-    "answer": "Cena wykonania strony zależy od złożoności projektu, wybranych technologii, doświadczenia wykonawcy oraz dodatkowych usług jak pozycjonowanie czy optymalizacja."
+    "question": "Jaka jest najtańsza strona internetowa?",
+    "answer": "Najmniej kosztuje zwykle prosta strona wizytówka zbudowana samodzielnie w kreatorze lub na gotowym szablonie. Niska cena na starcie oznacza jednak często ograniczone funkcje i dodatkowe koszty później, gdy firma zacznie rozwijać stronę."
+  },
+  {
+    "question": "Jaka będzie cena strony internetowej w 2026 roku?",
+    "answer": "Cena strony w 2026 roku nadal zależy przede wszystkim od zakresu projektu, a nie od samego roku. Na wycenę wpływają typ strony, indywidualny projekt, integracje, przygotowanie treści, optymalizacja SEO oraz to, kto wykonuje stronę."
+  },
+  {
+    "question": "Ile kosztuje utrzymanie strony internetowej?",
+    "answer": "Koszt utrzymania strony obejmuje domenę, hosting, certyfikat SSL, aktualizacje CMS i wtyczek, kopie zapasowe oraz ewentualną opiekę techniczną. Jego wysokość zależy od rodzaju strony, ruchu i tego, ile pracy administracyjnej przejmuje wykonawca."
   },
   {
     "question": "Jak długo trwa wykonanie strony internetowej?",
-    "answer": "Czas wykonania strony może się różnić. Proste strony mogą być gotowe w ciągu kilku dni, podczas gdy bardziej złożone projekty mogą wymagać kilku tygodni lub miesięcy."
+    "answer": "Prosta strona może powstać w kilka dni lub tygodni, a rozbudowany serwis czy sklep wymaga zwykle dłuższej pracy. Na czas realizacji wpływa też tempo dostarczania treści i akceptacji projektu po stronie klienta."
   },
   {
-    "question": "Jak wybrać wykonawcę strony internetowej?",
-    "answer": "Wybór wykonawcy powinien być przemyślany. Sprawdź portfolio, opinie klientów oraz zakres oferowanych usług. Dobry wykonawca przedstawi jasny cennik i terminy realizacji."
+    "question": "Freelancer czy agencja — kogo wybrać do stworzenia strony?",
+    "answer": "Freelancer sprawdzi się przy mniejszym, jasno opisanym projekcie, agencja przy stronie wymagającej projektu, treści, SEO i dalszej opieki w jednym miejscu. W obu przypadkach sprawdź portfolio, zakres oferty i warunki wsparcia po publikacji."
   }
 ];
 
@@ -50,8 +58,8 @@ const BlogKosztStrony = () => {
   return (
     <>
       <SEOHead
-        title="Ile Kosztuje Strona Internetowa w 2026? Cennik i Czynniki Wyceny"
-        description="Ile kosztuje strona internetowa w 2026? Poznaj orientacyjne widełki cenowe, koszty utrzymania, typy stron i czynniki wpływające na indywidualną wycenę."
+        title="Ile kosztuje strona internetowa w 2026? Od czego zależy cena"
+        description="Ile kosztuje strona internetowa w 2026? Koszt stworzenia strony www i strony firmowej, domena, hosting oraz czynniki, od których zależy cena strony."
         ogType="article"
         canonical="https://www.fotz-studio.pl/blog/ile-kosztuje-strona-internetowa"
         keywords="ile kosztuje strona internetowa, cennik stron internetowych, koszt strony www, cena strony internetowej 2026"
@@ -59,7 +67,7 @@ const BlogKosztStrony = () => {
           {
             "@context": "https://schema.org",
             "@type": "Article",
-            "headline": "Ile kosztuje strona internetowa w 2026? Cennik i czynniki wyceny",
+            "headline": "Ile kosztuje strona internetowa w 2026? Od czego zależy cena",
             "description": "Kompleksowy przewodnik po kosztach tworzenia stron internetowych w 2026 roku",
             "author": {
               "@type": "Organization",
@@ -122,7 +130,7 @@ const BlogKosztStrony = () => {
                 </p>
                 
                 <h1 className="text-3xl md:text-5xl font-heading font-bold mb-6">
-                  Ile kosztuje strona internetowa w 2026? Cennik i czynniki wyceny
+                  Ile kosztuje strona internetowa w 2026? Koszt stworzenia strony internetowej dla firmy i jej utrzymania
                 </h1>
                 
                 <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground mb-8">
