@@ -22,7 +22,7 @@ Nie przeniesiono twierdzeń ze starych stron: „+240%” i „+380%” ruchu, �
 
 ## NEURONwriter
 
-Projekt `59db8bbb8ee62780`, nowa analiza `3ddd4fddd51489b2`, fraza „pozycjonowanie poznań”, Polish / google.pl, intencja transakcyjna, typ wyników: landing page. Jedna analiza z planu, bez zakupu. Ocena wyrenderowanej treści: w toku (wynik zostanie dopisany przed publikacją; próg 95).
+Projekt `59db8bbb8ee62780`, nowa analiza `3ddd4fddd51489b2`, fraza „pozycjonowanie poznań”, Polish / google.pl, intencja transakcyjna, typ wyników: landing page. Jedna analiza z planu, bez zakupu. Pierwsza wersja wyrenderowanego `main-content` z title/description: 76. Po uzupełnieniu brakujących tematów (audyt, frazy, lokalne SEO i wizytówka, sklepy, raport, Google Ads, WordPress) i rozwinięciu treści do ok. 2470 słów: **99/100** (ocena API `evaluate-content` na zbudowanym HTML). Treść zapisano w edytorze (`import-content`, 99). Nie dopisywano fraz konkurencji ani sztucznych powtórzeń. Ocena tekstu nie potwierdza rankingu ani pozyskania klienta; po publikacji potwierdzić import produkcyjnego URL.
 
 ## Test twierdzeń bez pokrycia
 
@@ -30,7 +30,7 @@ Projekt `59db8bbb8ee62780`, nowa analiza `3ddd4fddd51489b2`, fraza „pozycjonow
 
 ## Kontrola lokalna
 
-TypeScript bez błędów, 178/178 testów, build: 1070 dokumentów / 1067 pełnych treści SSR bez błędów, 1068 adresów sitemap bez problemów, 134414 linków wyrenderowanych bez uszkodzeń, galerie bez błędów. Strona docelowa: jeden H1, self-canonical, `index, follow`, ok. 2490 słów w `main-content`. Aliasów nie prerenderowano. Kontrola mobilna, publikacja i odpowiedzi produkcji (308) wymagają potwierdzenia po scaleniu.
+TypeScript bez błędów, 178/178 testów, build: 1070 dokumentów / 1067 pełnych treści SSR bez błędów, 1068 adresów sitemap bez problemów, 134414 linków wyrenderowanych bez uszkodzeń, galerie bez błędów. Strona docelowa: jeden H1, self-canonical, `index, follow`, ok. 2470 słów w `main-content`. Aliasów nie prerenderowano. Kontrola mobilna, publikacja i odpowiedzi produkcji (308) wymagają potwierdzenia po scaleniu.
 
 ## Leady
 
