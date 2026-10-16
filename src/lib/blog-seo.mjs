@@ -7,7 +7,7 @@ export const SITE_ORIGIN = 'https://www.fotz-studio.pl';
 const canonicalPaths = {
   '/social-media': '/social-media/obsluga',
   '/content-marketing': '/content-marketing/strategia',
-  '/blog/automatyzacja-marketingu': '/blog/marketing-automation',
+  '/blog/automatyzacja-marketingu': '/blog/marketing-automation-co-to',
   '/social-media/poznan': '/agencja-social-media/poznan',
   '/blog/nps-co-to-jest': '/blog/nps-net-promoter-score-co-to-jest',
   '/blog/reklama-programatyczna-co-to': '/blog/programmatic-advertising-co-to',

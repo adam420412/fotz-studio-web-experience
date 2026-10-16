@@ -145,7 +145,7 @@ export default function BlogJakNegocjowacCennikAgencji() {
               cenniku agencji social media
             </Link>{" "}
             oraz w opisie{" "}
-            <Link to="/blog/pakiety-uslug-agencji-social-media" className="text-[#75143F] underline">
+            <Link to="/blog/prowadzenie-social-media-cennik" className="text-[#75143F] underline">
               pakietów usług agencji social media
             </Link>
             .

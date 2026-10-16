@@ -167,7 +167,7 @@ export default function BlogPlatformySocialMedia2026() {
           </p>
           <p>
             W FOTZ Studio dokładnie od tego zaczynamy każdą współpracę, tak samo robiliśmy to przy realizacjach dla <strong>Żabki, WSB Merito, Zakładów Cegielskiego czy FPS</strong>. Szczegóły zakresów obsługi znajdziesz we wpisie{" "}
-            <Link to="/blog/pakiety-uslug-agencji-social-media" className="text-[#75143F] underline">
+            <Link to="/blog/prowadzenie-social-media-cennik" className="text-[#75143F] underline">
               pakiety usług agencji social media
             </Link>
             .

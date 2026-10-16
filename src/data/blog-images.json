@@ -119,30 +119,6 @@
       }
     ]
   },
-  "automatyzacja-marketingu-dzialanie-firmy": {
-    "source": "https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-14802/1769972236298_image.png",
-    "sourceBytes": 1160987,
-    "variants": [
-      {
-        "src": "/blog-images/automatyzacja-marketingu-dzialanie-firmy-c4dac08a0159-480.webp",
-        "width": 480,
-        "height": 274,
-        "bytes": 11442
-      },
-      {
-        "src": "/blog-images/automatyzacja-marketingu-dzialanie-firmy-c4dac08a0159-800.webp",
-        "width": 800,
-        "height": 457,
-        "bytes": 22730
-      },
-      {
-        "src": "/blog-images/automatyzacja-marketingu-dzialanie-firmy-c4dac08a0159-1200.webp",
-        "width": 1200,
-        "height": 686,
-        "bytes": 39130
-      }
-    ]
-  },
   "automatyzacja-marketingu-klucz-do-efektywnosci-i-wzrostu": {
     "source": "https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-14802/1777282503776_Marketing-team-working-together-in-bright-office.jpeg",
     "sourceBytes": 113228,
@@ -167,54 +143,6 @@
       }
     ]
   },
-  "automatyzacja-marketingu-przewodnik-wzrostu-efektywnosci": {
-    "source": "https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-14802/1777280650945_image.jpeg",
-    "sourceBytes": 73860,
-    "variants": [
-      {
-        "src": "/blog-images/automatyzacja-marketingu-przewodnik-wzrostu-efektywnosci-23a456f9d6e4-480.webp",
-        "width": 480,
-        "height": 274,
-        "bytes": 12126
-      },
-      {
-        "src": "/blog-images/automatyzacja-marketingu-przewodnik-wzrostu-efektywnosci-23a456f9d6e4-800.webp",
-        "width": 800,
-        "height": 457,
-        "bytes": 23246
-      },
-      {
-        "src": "/blog-images/automatyzacja-marketingu-przewodnik-wzrostu-efektywnosci-23a456f9d6e4-1200.webp",
-        "width": 1200,
-        "height": 686,
-        "bytes": 38426
-      }
-    ]
-  },
-  "branding-poznan-6": {
-    "source": "https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-14802/1777945636898_Branding-agency-team-collaborating-in-sunny-Poznan-office.jpeg",
-    "sourceBytes": 796079,
-    "variants": [
-      {
-        "src": "/blog-images/branding-poznan-6-b7b67254bc41-480.webp",
-        "width": 480,
-        "height": 268,
-        "bytes": 11668
-      },
-      {
-        "src": "/blog-images/branding-poznan-6-b7b67254bc41-800.webp",
-        "width": 800,
-        "height": 446,
-        "bytes": 22566
-      },
-      {
-        "src": "/blog-images/branding-poznan-6-b7b67254bc41-1200.webp",
-        "width": 1200,
-        "height": 669,
-        "bytes": 37746
-      }
-    ]
-  },
   "co-to-jest-content-marketing-i-jak-rozwija-twoj-biznes": {
     "source": "https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-14802/1777291672656_Osoba-przy-biurku-pracuje-nad-trescia-marketingowa.jpeg",
     "sourceBytes": 83458,
@@ -236,30 +164,6 @@
         "width": 1200,
         "height": 669,
         "bytes": 51026
-      }
-    ]
-  },
-  "co-to-jest-pozycjonowanie-kompletny-przewodnik-dla-firm": {
-    "source": "https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-14802/1777291705002_Mezczyzna-przy-biurku-w-domowym-biurze-pracujacy-na-laptopie.jpeg",
-    "sourceBytes": 90361,
-    "variants": [
-      {
-        "src": "/blog-images/co-to-jest-pozycjonowanie-kompletny-przewodnik-dla-firm-6534b46a77aa-480.webp",
-        "width": 480,
-        "height": 268,
-        "bytes": 14504
-      },
-      {
-        "src": "/blog-images/co-to-jest-pozycjonowanie-kompletny-przewodnik-dla-firm-6534b46a77aa-800.webp",
-        "width": 800,
-        "height": 446,
-        "bytes": 30972
-      },
-      {
-        "src": "/blog-images/co-to-jest-pozycjonowanie-kompletny-przewodnik-dla-firm-6534b46a77aa-1200.webp",
-        "width": 1200,
-        "height": 669,
-        "bytes": 54218
       }
     ]
   },
@@ -332,78 +236,6 @@
         "width": 1200,
         "height": 686,
         "bytes": 43418
-      }
-    ]
-  },
-  "dlaczego-warto-inwestowac-w-content-marketing-firmy": {
-    "source": "https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-14802/1777300332809_Menedzer-czyta-blog-firmowy-przy-biurku.jpeg",
-    "sourceBytes": 65575,
-    "variants": [
-      {
-        "src": "/blog-images/dlaczego-warto-inwestowac-w-content-marketing-firmy-019af58cd3ab-480.webp",
-        "width": 480,
-        "height": 268,
-        "bytes": 10158
-      },
-      {
-        "src": "/blog-images/dlaczego-warto-inwestowac-w-content-marketing-firmy-019af58cd3ab-800.webp",
-        "width": 800,
-        "height": 446,
-        "bytes": 19770
-      },
-      {
-        "src": "/blog-images/dlaczego-warto-inwestowac-w-content-marketing-firmy-019af58cd3ab-1200.webp",
-        "width": 1200,
-        "height": 669,
-        "bytes": 32850
-      }
-    ]
-  },
-  "dlaczego-warto-miec-strone-firmowa-przewaga-online": {
-    "source": "https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-14802/1777282497620_W-asciciel-firmy-pracuje-nad-strona-internetowa.jpeg",
-    "sourceBytes": 101731,
-    "variants": [
-      {
-        "src": "/blog-images/dlaczego-warto-miec-strone-firmowa-przewaga-online-2af27a2a9cc8-480.webp",
-        "width": 480,
-        "height": 268,
-        "bytes": 19024
-      },
-      {
-        "src": "/blog-images/dlaczego-warto-miec-strone-firmowa-przewaga-online-2af27a2a9cc8-800.webp",
-        "width": 800,
-        "height": 447,
-        "bytes": 37108
-      },
-      {
-        "src": "/blog-images/dlaczego-warto-miec-strone-firmowa-przewaga-online-2af27a2a9cc8-1200.webp",
-        "width": 1200,
-        "height": 670,
-        "bytes": 60208
-      }
-    ]
-  },
-  "efektywny-przewodnik-reklama-internet-male-firmy": {
-    "source": "https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-14802/1777287664343_image.jpeg",
-    "sourceBytes": 82596,
-    "variants": [
-      {
-        "src": "/blog-images/efektywny-przewodnik-reklama-internet-male-firmy-e329a64158c5-480.webp",
-        "width": 480,
-        "height": 274,
-        "bytes": 13336
-      },
-      {
-        "src": "/blog-images/efektywny-przewodnik-reklama-internet-male-firmy-e329a64158c5-800.webp",
-        "width": 800,
-        "height": 457,
-        "bytes": 26830
-      },
-      {
-        "src": "/blog-images/efektywny-przewodnik-reklama-internet-male-firmy-e329a64158c5-1200.webp",
-        "width": 1200,
-        "height": 686,
-        "bytes": 46080
       }
     ]
   },
@@ -623,30 +455,6 @@
       }
     ]
   },
-  "jak-planowac-content-marketing-i-budowac-skuteczna-strategie": {
-    "source": "https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-14802/1777291678639_Kobieta-planujaca-tresci-przy-biurku-w-domu.jpeg",
-    "sourceBytes": 93453,
-    "variants": [
-      {
-        "src": "/blog-images/jak-planowac-content-marketing-i-budowac-skuteczna-strategie-7444f60a1142-480.webp",
-        "width": 480,
-        "height": 268,
-        "bytes": 13588
-      },
-      {
-        "src": "/blog-images/jak-planowac-content-marketing-i-budowac-skuteczna-strategie-7444f60a1142-800.webp",
-        "width": 800,
-        "height": 446,
-        "bytes": 29430
-      },
-      {
-        "src": "/blog-images/jak-planowac-content-marketing-i-budowac-skuteczna-strategie-7444f60a1142-1200.webp",
-        "width": 1200,
-        "height": 669,
-        "bytes": 51546
-      }
-    ]
-  },
   "jak-social-media-napedzaja-rozwoj-firmy-przewodnik": {
     "source": "https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-14802/1777280517803_Kobieta-pracuje-przy-laptopie-w-domowym-biurze.jpeg",
     "sourceBytes": 79515,
@@ -716,30 +524,6 @@
         "width": 1200,
         "height": 686,
         "bytes": 41056
-      }
-    ]
-  },
-  "kalendarz-publikacji-social-media-klucz-do-wzrostu-marki": {
-    "source": "https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-14802/1778502765154_Woman-reviewing-social-media-calendar-at-desk.jpeg",
-    "sourceBytes": 92858,
-    "variants": [
-      {
-        "src": "/blog-images/kalendarz-publikacji-social-media-klucz-do-wzrostu-marki-aeb0821fa882-480.webp",
-        "width": 480,
-        "height": 268,
-        "bytes": 16192
-      },
-      {
-        "src": "/blog-images/kalendarz-publikacji-social-media-klucz-do-wzrostu-marki-aeb0821fa882-800.webp",
-        "width": 800,
-        "height": 446,
-        "bytes": 31536
-      },
-      {
-        "src": "/blog-images/kalendarz-publikacji-social-media-klucz-do-wzrostu-marki-aeb0821fa882-1200.webp",
-        "width": 1200,
-        "height": 669,
-        "bytes": 51952
       }
     ]
   },
@@ -1007,30 +791,6 @@
       }
     ]
   },
-  "optymalizacja-strony-wiecej-konwersji-i-wyzsze-przychody": {
-    "source": "https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-14802/1777282508223_Mezczyzna-pracujacy-nad-optymalizacja-strony-w-biurze-domowym.jpeg",
-    "sourceBytes": 92906,
-    "variants": [
-      {
-        "src": "/blog-images/optymalizacja-strony-wiecej-konwersji-i-wyzsze-przychody-77ef5d3ecbb4-480.webp",
-        "width": 480,
-        "height": 268,
-        "bytes": 15852
-      },
-      {
-        "src": "/blog-images/optymalizacja-strony-wiecej-konwersji-i-wyzsze-przychody-77ef5d3ecbb4-800.webp",
-        "width": 800,
-        "height": 447,
-        "bytes": 31644
-      },
-      {
-        "src": "/blog-images/optymalizacja-strony-wiecej-konwersji-i-wyzsze-przychody-77ef5d3ecbb4-1200.webp",
-        "width": 1200,
-        "height": 670,
-        "bytes": 52018
-      }
-    ]
-  },
   "pozycjonowanie-stron-poznan-4": {
     "source": "https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-14802/1777681664851_image.jpeg",
     "sourceBytes": 581458,
@@ -1124,30 +884,6 @@
         "width": 1200,
         "height": 669,
         "bytes": 34110
-      }
-    ]
-  },
-  "reklamy-google-ads-poznan-5": {
-    "source": "https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-14802/1778032167790_Marketer-analyzing-campaign-in-Poznan-office.jpeg",
-    "sourceBytes": 717530,
-    "variants": [
-      {
-        "src": "/blog-images/reklamy-google-ads-poznan-5-e8006a07ca11-480.webp",
-        "width": 480,
-        "height": 268,
-        "bytes": 11550
-      },
-      {
-        "src": "/blog-images/reklamy-google-ads-poznan-5-e8006a07ca11-800.webp",
-        "width": 800,
-        "height": 447,
-        "bytes": 21352
-      },
-      {
-        "src": "/blog-images/reklamy-google-ads-poznan-5-e8006a07ca11-1200.webp",
-        "width": 1200,
-        "height": 670,
-        "bytes": 33694
       }
     ]
   },
@@ -1364,54 +1100,6 @@
         "width": 1200,
         "height": 670,
         "bytes": 30496
-      }
-    ]
-  },
-  "strony-wordpress-poznan-5": {
-    "source": "https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-14802/1777258593075_Web-design-team-working-in-Poznan-office.jpeg",
-    "sourceBytes": 674157,
-    "variants": [
-      {
-        "src": "/blog-images/strony-wordpress-poznan-5-46c4efbe8168-480.webp",
-        "width": 480,
-        "height": 268,
-        "bytes": 9700
-      },
-      {
-        "src": "/blog-images/strony-wordpress-poznan-5-46c4efbe8168-800.webp",
-        "width": 800,
-        "height": 446,
-        "bytes": 18246
-      },
-      {
-        "src": "/blog-images/strony-wordpress-poznan-5-46c4efbe8168-1200.webp",
-        "width": 1200,
-        "height": 669,
-        "bytes": 29426
-      }
-    ]
-  },
-  "tworzenie-stron-internetowych-poznan-5": {
-    "source": "https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-14802/1776998945583_Web-designer-coding-at-desk-in-Poznan-office.jpeg",
-    "sourceBytes": 653368,
-    "variants": [
-      {
-        "src": "/blog-images/tworzenie-stron-internetowych-poznan-5-5bb79af47025-480.webp",
-        "width": 480,
-        "height": 268,
-        "bytes": 10732
-      },
-      {
-        "src": "/blog-images/tworzenie-stron-internetowych-poznan-5-5bb79af47025-800.webp",
-        "width": 800,
-        "height": 447,
-        "bytes": 20432
-      },
-      {
-        "src": "/blog-images/tworzenie-stron-internetowych-poznan-5-5bb79af47025-1200.webp",
-        "width": 1200,
-        "height": 670,
-        "bytes": 31566
       }
     ]
   },

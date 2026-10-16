@@ -470,7 +470,7 @@ export default function BlogRetargetingPoradnik() {
             <ul className="space-y-3">
               <li><a href="/blog/performance-max-co-to" className="text-blue-600 hover:underline">Google Ads Performance Max — jak działa kampania</a></li>
               <li><a href="/blog/facebook-ads-poradnik" className="text-blue-600 hover:underline">Facebook Ads — konfiguracja i prowadzenie kampanii</a></li>
-              <li><a href="/blog/cro-co-to-jest" className="text-blue-600 hover:underline">Optymalizacja konwersji (CRO) — praktyczne porady</a></li>
+              <li><a href="/blog/cro-conversion-rate-optimization-co-to-jest" className="text-blue-600 hover:underline">Optymalizacja konwersji (CRO) — praktyczne porady</a></li>
             </ul>
           </section>
         </div>

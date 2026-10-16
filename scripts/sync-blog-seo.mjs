@@ -18,6 +18,10 @@ for (let offset = 0; ; offset += 500) {
   if (data.length < 500) break;
 }
 if (!articles.length) throw new Error('Empty published article response; previous snapshot preserved');
+// Posts retired on purpose stay out of the snapshot even if still published in the CMS.
+const retired = JSON.parse(fs.readFileSync(path.join(root, 'src/data/retired-blog.json'), 'utf8'));
+const retiredSlugs = new Set([...retired.gone, ...retired.redirects.map(item => item.source)].map(item => item.replace(/^\/blog\//, '')));
+for (let index = articles.length - 1; index >= 0; index--) if (retiredSlugs.has(articles[index].slug)) articles.splice(index, 1);
 const slugs = new Set();
 for (const article of articles) {
   if (!article.title?.trim() || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(article.slug) || slugs.has(article.slug)) throw new Error(`Invalid or duplicate published slug: ${article.slug}`);

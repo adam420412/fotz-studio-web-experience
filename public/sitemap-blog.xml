@@ -43,12 +43,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/pakiety-uslug-agencji-social-media</loc>
-    <lastmod>2026-07-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/jak-przygotowac-dzien-zdjeciowy</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
@@ -97,12 +91,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/aarrr-pirate-metrics-framework-wzrostu</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/ab-testing-co-to</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -127,67 +115,13 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/account-management-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/activation-rate-co-to-jest-jak-poprawic-aktywacje</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/affiliate-marketing-co-to</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/agile-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/ai-agents-autonomiczne-agenty-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/ai-agents-mcp-vercel-ai-sdk-langgraph-rag-budowanie-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/ai-coding-tools-copilot-cursor-windsurf-continue-aider-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/ai-generowanie-obrazow-dalle-replicate-fal-flux-stable-diffusion-typescript-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/ai-sdk-openai-langchain-integracja-nextjs-typescript-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/ai-w-marketingu-msp-2025</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/algolia-typesense-meilisearch-elasticsearch-search-engine-2024</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -205,24 +139,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/angular-signals-standalone-components-defer-angular-17-nowosci-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/annual-planning-planowanie-roczne-firmy</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/api-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/api-gateway-co-to-jest-kong-aws-traefik-kubernetes-ingress</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -230,36 +146,6 @@
   </url>
   <url>
     <loc>https://www.fotz-studio.pl/blog/architektura-marki-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/architektura-serverless-co-to-jest-aws-lambda-cloud-run-step-functions</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/arr-annual-recurring-revenue-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/astro-4-content-collections-view-transitions-islands-astro-db-actions-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/astro-5-content-layer-server-islands-actions-vs-nextjs-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/astro-sveltekit-remix-island-architecture-co-to-jest-kiedy-wybrac</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -289,18 +175,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/aws-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/b2b-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/behavioral-marketing-co-to</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -308,18 +182,6 @@
   </url>
   <url>
     <loc>https://www.fotz-studio.pl/blog/blog-firmowy-poradnik</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/board-meeting-spotkanie-zarzadu-jak-przygotowac</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/bootstrapping-co-to</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -391,43 +253,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/break-even-prog-rentownosci-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/budzet-marketingowy-planowanie</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/bullmq-inngest-job-queues-background-jobs-nodejs-nextjs-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/bun-deno-nodejs-porownanie-javascript-runtime-co-wybrac</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/burn-multiple-efektywnosc-kapitalowa-saas</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/burn-rate-runway-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/buyer-journey-co-to</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -445,37 +271,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/cac-payback-period-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/cap-table-tabela-kapitalizacji-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/capacitor-ionic-pwa-expo-cross-platform-mobile-web-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/category-creation-tworzenie-kategorii-rynkowej</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/cause-marketing-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/ceidg-co-to-jest</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -499,79 +295,13 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/champion-building-sprzedaz-b2b-enterprise</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/change-management-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/channel-sales-sprzedaz-partnerska-co-to-jest</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/chaos-engineering-co-to-jest-jak-wdrozyz</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/chatgpt-w-marketingu</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/churn-analysis-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/churn-prediction-jak-przewidywac-zapobiegac-churnu</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/churn-prevention-zapobieganie-odejsciom-klientow</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/churn-rate-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/ci-cd-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/cicd-best-practices-github-actions-gitlab-canary-deploy-slsa</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/clickhouse-co-to-jest-olap-mergetree-kafka-ingestion-vs-bigquery-snowflake</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/cloudflare-workers-kv-d1-r2-durable-objects-workers-ai-edge-2024</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -607,25 +337,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/cohort-analysis-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/cold-calling-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/cold-email-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/community-led-growth-co-to</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -638,18 +350,6 @@
   </url>
   <url>
     <loc>https://www.fotz-studio.pl/blog/competitive-intelligence-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/competitive-moat-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/container-security-bezpieczenstwo-kontenerow-trivy-falco-kubernetes-rbac</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -721,31 +421,13 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/core-web-vitals-lcp-inp-cls-optymalizacja-wydajnosci-web-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/cpm-co-to</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/cqrs-command-query-responsibility-segregation-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/crawl-budget-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/crdt-yjs-liveblocks-partykit-collaborative-editing-react-2024</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -763,12 +445,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/cro-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/cro-conversion-rate-optimization-co-to-jest</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -776,42 +452,6 @@
   </url>
   <url>
     <loc>https://www.fotz-studio.pl/blog/cross-selling-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/csat-customer-satisfaction-score-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/css-anchor-positioning-popover-api-has-view-transitions-scroll-driven-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/css-container-queries-layer-nesting-scope-view-transitions-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/css-custom-properties-variables-design-tokens-theming-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/css-grid-subgrid-masonry-named-areas-responsive-layout-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/css-in-js-vanilla-extract-stylex-linaria-zero-runtime-2024</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -829,31 +469,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/customer-data-platform-cdp-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/customer-experience-management-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/customer-health-score-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/customer-journey-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/customer-ltv-co-to</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -871,19 +487,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/customer-success-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/dark-social-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/dashboard-kpi-co-to</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -895,115 +499,13 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/data-governance-co-to-jest-jak-wdrozyz-lad-danych</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/data-mesh-co-to-jest-jak-wdrozyz-architekture-danych</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/data-room-co-to-jest-jak-przygotowac-startup</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/data-storytelling-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/data-warehouse-co-to-jest-jak-wybrac</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/database-migrations-co-to-jest-flyway-liquibase-alembic-zero-downtime-rollback</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/database-sharding-co-to-jest-strategie-vitess-cassandra</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/date-fns-dayjs-luxon-temporal-api-biblioteki-dat-javascript-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/dau-mau-stickiness-metryki-zaangazowania</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/dcf-discounted-cash-flow-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/deal-desk-co-to-jest-sprzedaz-saas-enterprise</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/demand-generation-co-to</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/demo-sprzedazowe-jak-prowadzic</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/dependency-injection-solid-design-patterns-typescript-nodejs</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/design-sprint-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/design-system-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/design-thinking-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/devops-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/devsecops-co-to-jest-jak-wbudowac-security-w-cicd</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -1021,30 +523,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/dlug-techniczny-co-to-jest-jak-mierzyc-zarzadzac-redukowac</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/dnd-kit-drag-drop-react-sortable-kanban-pragmatic-dnd-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/docker-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/docker-nodejs-nextjs-dockerfile-compose-github-actions-kubernetes-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/domain-driven-design-ddd-co-to-jest-bounded-context-aggregate-event-storming</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -1052,12 +530,6 @@
   </url>
   <url>
     <loc>https://www.fotz-studio.pl/blog/domena-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/dora-metrics-co-to-jest-jak-mierzyc-wydajnosc-devops</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -1075,25 +547,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/dropshipping-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/dropshipping-polska</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/due-diligence-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/d%C5%82ug-techniczny-co-to</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -1111,49 +565,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/ebitda-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/ebpf-co-to-jest-jak-uzywac-kubernetes-observability</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/ecommerce-marketing-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/edge-computing-co-to-jest-cloudflare-workers-edge-functions</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/efekty-sieciowe-network-effects</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/effect-ts-fp-ts-neverthrow-functional-programming-typescript-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/elasticsearch-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/elysia-js-hono-bun-backend-typescript-frameworki-2024</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -1195,37 +607,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/envoy-proxy-co-to-jest-xds-api-service-mesh-rate-limiting-circuit-breaking</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/erp-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/esg-co-to-jest-environmental-social-governance</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/eslint-biome-prettier-husky-linting-code-quality-typescript-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/event-driven-architecture-co-to-jest-jak-wdrozyz</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/event-driven-architecture-co-to-jest-kafka-rabbitmq-event-sourcing</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -1243,85 +625,13 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/expansion-revenue-upsell-cross-sell-saas</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/expo-router-react-navigation-react-native-nawigacja-universal-apps-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/facebook-ads-poradnik</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/faktoring-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/feature-adoption-co-to-jest-jak-zwiekszyc-adopcje-funkcji</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/feature-flags-co-to-jest-jak-stosowac</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/feature-flags-co-to-jest-launchdarkly-unleash-ab-testing</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/featured-snippets-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/feedback-loop-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/file-uploads-uploadthing-cloudinary-s3-mux-nextjs-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/financial-model-co-to-jest-saas-startup</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/fine-tuning-llm-co-to-jest-jak-dostroic-model-ai</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/finops-co-to-jest-jak-optymalizowac-koszty-cloud</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/firebase-supabase-convex-baas-porownanie-co-wybrac-2024</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -1351,49 +661,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/framer-motion-gsap-css-animations-web-animacje-react-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/freelancer-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/freemium-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/funnel-analytics-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/gdpr-rodo-co-to-jest-jak-wdrozyz-firmy-technologiczne</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/git-flow-trunk-based-conventional-commits-strategie-git-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/github-actions-changesets-semantic-release-oidc-optymalizacja-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/gitops-co-to-jest-jak-wdrozyz-argo-cd-flux</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -1459,43 +727,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/graphql-apollo-server-client-urql-subscriptions-typescript-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/graphql-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/graphql-federation-co-to-jest-apollo-supergraph-subgraphy</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/gross-margin-marza-brutto-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/growth-accounting-analiza-wzrostu-uzytkownikow</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/growth-hacking-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/growth-loop-co-to</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -1507,31 +739,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/grpc-co-to-jest-protocol-buffers-mikroserwisy</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/gtm-strategy-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/guerrilla-marketing-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/headcount-planning-planowanie-zatrudnienia-startup</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/heatmapa-co-to</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -1543,37 +751,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/hipoteka-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/hono-fastify-express-nodejs-backend-frameworks-co-wybrac-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/hreflang-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/htmx-hypermedia-hx-get-swap-oob-sse-alpine-js-vs-react-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/http-clients-typescript-fetch-axios-ky-ofetch-tanstack-query-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/i18n-internationalization-next-intl-react-i18next-nextjs-2024</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -1581,24 +759,6 @@
   <url>
     <loc>https://www.fotz-studio.pl/blog/icp-co-to-jest</loc>
     <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/icp-ideal-customer-profile-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/idempotencja-api-co-to-jest-idempotency-key-redis-platnosci-kafka</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/identyfikacja-wizualna-cennik</loc>
-    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1657,12 +817,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/incident-management-co-to-jest-severity-pagerduty-postmortem-on-call-sla</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/influencer-marketing-co-to</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -1682,18 +836,6 @@
   </url>
   <url>
     <loc>https://www.fotz-studio.pl/blog/internal-linking-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/investor-update-aktualizacja-dla-inwestorow</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/ipo-co-to-jest-debiut-gieldowy</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -1777,61 +919,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/javascript-memory-management-weakmap-weakref-gc-memory-leaks-react-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/jobs-to-be-done-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/jobs-to-be-done-jtbd</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/jobs-to-be-done-jtbd-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/jwt-oauth2-oidc-autentykacja-autoryzacja-web-session-passkeys</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/kafka-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/kanban-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/key-account-management-kam-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/keyword-research-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/konva-fabricjs-html2canvas-canvas-screenshot-qr-pdf-react-2024</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -1873,37 +961,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/krs-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/kubernetes-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/kubernetes-operators-co-to-jest-kubebuilder-cloudnativepg-strimzi</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/kurs-google-ads</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/kysely-mikro-orm-drizzle-prisma-typeorm-porownanie-orm-typescript-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/land-and-expand-strategia</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -1945,24 +1003,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/lean-startup-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/leasing-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/legend-state-nanostores-valtio-signals-state-management-react-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/lejek-konwersji-conversion-funnel-co-to-jest</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -1993,31 +1033,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/llm-tool-calling-ai-agenci-rag-vercel-ai-sdk-typescript-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/local-first-jazz-tools-powersync-electricsql-dexie-pglite-offline-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/long-tail-keywords-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/lottie-rive-framer-motion-gsap-animacje-webowe-react-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/low-code-no-code-co-to-jest-retool-bubble-airtable-n8n</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -2035,12 +1051,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/magic-number-efektywnosc-sprzedazy-saas</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/mapa-empatii-co-to</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -2048,18 +1058,6 @@
   </url>
   <url>
     <loc>https://www.fotz-studio.pl/blog/market-research-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/marketing-afiliacyjny-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/marketing-automation</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -2167,12 +1165,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/micro-frontends-co-to-jest-jak-wdrozyz-module-federation</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/micro-influencer-marketing-co-to</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -2185,85 +1177,13 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/mikroserwisy-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/mlops-machine-learning-operations-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/moat-przewaga-konkurencyjna-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/mobile-marketing-co-to</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/modern-browser-apis-indexeddb-dexie-web-share-clipboard-file-system-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/modern-css-container-queries-has-view-transitions-scroll-driven-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/mongodb-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/monorepo-co-to-jest-nx-turborepo-pnpm-workspaces-nx-cloud</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/mrr-arr-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/mrr-monthly-recurring-revenue-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/msw-mock-service-worker-storybook-pact-contract-testing-react-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/multichannel-marketing-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/multithreading-sprzedaz-b2b-buying-committee</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/mvp-co-to-jest</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -2281,25 +1201,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/nativewind-tamagui-gluestack-unistyles-react-native-styling-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/negocjacje-sprzedazowe-techniki-b2b</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/nestjs-co-to-jest-moduly-guardy-mikrouslugi-vs-express-fastify</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/net-promoter-score-co-to</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -2317,91 +1219,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/nextauth-lucia-auth-clerk-supabase-biblioteki-autentykacji-nextjs-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/nextjs-15-turbopack-async-params-after-caching-migracja-v14-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/nextjs-font-optimization-variable-fonts-fout-foit-google-fonts-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/nextjs-image-optimization-webp-avif-cloudinary-sharp-svgr-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/nextjs-middleware-edge-auth-i18n-rate-limiting-ab-testing-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/nip-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/nodejs-streams-readable-writable-transform-pipeline-web-streams-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/north-star-metric-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/nowe-funkcje-javascript-es2024-tc39-proposals-temporal-iterator-helpers</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/npm-pnpm-yarn-bun-package-managers-nodejs-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/nps-net-promoter-score-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/nrr-grr-net-revenue-retention-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/nuxtjs-3-usefetch-nitro-pinia-auto-imports-deployment-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/objection-handling-obsluga-obiekcji-sprzedaz</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/observability-co-to-jest-opentelemetry-prometheus-grafana</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -2414,30 +1232,6 @@
   </url>
   <url>
     <loc>https://www.fotz-studio.pl/blog/omnichannel-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/onboarding-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/openai-assistants-api-threads-file-search-code-interpreter-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/openapi-zod-trpc-orval-scalar-dokumentacja-api-typescript-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/opentelemetry-co-to-jest-traces-metrics-logs-collector-jaeger</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -2461,19 +1255,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/ote-on-target-earnings-sprzedaz-b2b</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/outbound-marketing-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/outsourcing-co-to-jest</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -2486,24 +1268,6 @@
   </url>
   <url>
     <loc>https://www.fotz-studio.pl/blog/paid-social-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/panda-css-unocss-open-props-vanilla-extract-stylex-atomic-css-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/partner-ecosystem-ekosystem-partnerski-saas</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/passkeys-webauthn-implementacja-nextjs-simplewebauthn-fido2-2024</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -2539,42 +1303,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/pipeline-management-zarzadzanie-sprzedaza-b2b</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/pipeline-velocity-co-to-jest-jak-poprawic</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/pit-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/pitch-deck-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/pivot-startup-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/platform-engineering-co-to-jest-internal-developer-platform</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/poc-proof-of-concept-sprzedaz-b2b</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -2594,30 +1322,6 @@
   </url>
   <url>
     <loc>https://www.fotz-studio.pl/blog/positioning-statement-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/postgresql-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/postgresql-optymalizacja-explain-analyze-indeksy-partitioning-pgbouncer-patroni</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/posthog-sentry-plausible-feature-flags-analytics-monitoring-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/postmortem-analiza-incydentu</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -2653,12 +1357,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/pozycjonowanie-stron-cena</loc>
-    <lastmod>2026-10-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/pozycjonowanie-stron-internetowych-poradnik</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -2671,19 +1369,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/prisma-drizzle-orm-typescript-schema-first-migracje-edge-co-wybrac</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/product-analytics-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/product-discovery-co-to-jest-jak-przeprowadzic</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -2695,25 +1381,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/product-led-growth-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/product-market-fit-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/product-marketing-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/product-owner-co-to</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -2725,31 +1393,13 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/progressive-web-app-pwa-co-to-jest-jak-wdrozyz</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/projektowanie-stron-internetowych-poradnik</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/prompt-engineering-co-to-jest-jak-pisac-prompty</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/proposal-sprzedazowy-oferta-handlowa-b2b</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/prospecting-b2b-generowanie-leadow</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -2767,19 +1417,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/psychologia-cen-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/public-relations-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/qbr-co-to</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -2791,145 +1429,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/quic-http3-co-to-jest-jak-wplywa-na-web-performance</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/quota-planning-targetowanie-sprzedazowe-saas</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/quota-sprzedazowa-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/qwik-framework-resumability-usesignal-qwik-city-zerowa-hydration-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/rag-retrieval-augmented-generation-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/ramp-period-onboarding-handlowca-b2b</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/rate-limiting-co-to-jest-token-bucket-redis-nginx-kong-aws-api-gateway</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/react-19-use-hook-useactionstate-compiler-server-actions-nextjs-15-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/react-aria-ariakit-wcag-dostepnosc-a11y-react-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/react-compiler-automatyczna-memoizacja-react-19-use-hook-server-actions-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/react-concurrent-suspense-usetransition-usedeferredvalue-react-19-hooks-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/react-email-resend-nodemailer-szablony-email-jsx-typescript-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/react-error-handling-error-boundary-sentry-tanstack-query-nextjs-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/react-flow-xyflow-mermaid-graph-visualization-diagramy-react-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/react-hook-form-zod-walidacja-formularzy-typescript-nextjs-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/react-native-expo-co-to-jest-mobile-development-vs-flutter-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/react-native-new-architecture-jsi-fabric-turbomodules-bridgeless-expo-sdk-52-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/react-native-reanimated-gesture-handler-skia-animacje-gesty-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/react-performance-scan-million-bundle-analyzer-code-splitting-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/react-router-7-framework-mode-loaders-actions-typegen-vs-nextjs-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/react-server-components-server-actions-ppr-nextjs-app-router-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/react-testing-library-queries-user-event-mocking-async-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/react-three-fiber-drei-3d-threejs-fizyka-webxr-react-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/react-wzorce-compound-components-custom-hooks-hoc-error-boundary</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -2947,25 +1447,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/recharts-nivo-chartjs-data-visualization-react-wykresy-mapy-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/redis-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/referral-marketing-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/regon-co-to-jest</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -2983,73 +1465,13 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/reklama-w-google</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/remix-nested-routes-loader-action-defer-usefetcher-optimistic-ui-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/resend-sendgrid-nodemailer-emaile-transakcyjne-nextjs-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/rest-api-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/retargeting-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/retargeting-reklamy-poradnik</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/retention-curve-krzywa-retencji-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/retention-marketing-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/revenue-model-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/revenue-operations-revops-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/revops-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/risk-management-co-to</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -3067,66 +1489,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/rspack-farm-rolldown-esbuild-swc-bundlery-rust-narzedzia-build-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/rule-of-40-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/saas-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/saas-metrics-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/saas-pricing-modele-cenowe</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/safe-note-co-to-jest-jak-dziala-startup</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/saga-pattern-co-to-jest-choreography-orchestration-temporal-kafka</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/sales-compensation-plan-prowizyjny-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/sales-discovery-rozmowa-sprzedazowa</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/sales-enablement-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/sales-forecast-prognoza-sprzedazy</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -3139,67 +1501,13 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/sales-funnel-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/sales-operations-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/sales-playbook-co-to-jest-jak-budowac</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/sales-velocity-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/sbom-software-bill-of-materials-co-to-jest-jak-wdrozyz</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/schema-markup-co-to</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/scrum-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/scrum-master-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/sdr-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/segmentacja-rynku-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/sentry-co-to-jest-error-tracking-performance-monitoring-react-python</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -3229,12 +1537,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/seo-ecommerce-poradnik</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/seo-lokalne-co-to</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -3255,30 +1557,6 @@
   <url>
     <loc>https://www.fotz-studio.pl/blog/seo-wordpress-poradnik</loc>
     <lastmod>2026-10-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/serverless-database-neon-planetscale-turso-d1-electric-sql-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/service-blueprint-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/service-design-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/service-mesh-co-to-jest-istio-linkerd-mtls</loc>
-    <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -3307,19 +1585,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/sla-slo-sli-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/smart-bidding-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/soc2-compliance-co-to-jest-jak-uzyskac-startup</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -3361,18 +1627,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/solidjs-fine-grained-reactivity-createsignal-solidstart-vs-react-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/speech-ai-whisper-elevenlabs-deepgram-text-to-speech-typescript-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/spin-selling-metodologia-sprzedazy</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -3385,49 +1639,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/sprint-planning-co-to-jest-jak-przeprowadzic</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/sprint-retrospective-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/sre-site-reliability-engineering-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/stakeholder-management-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/startup-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/storybook-8-csf-vitest-autodocs-chromatic-component-driven-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/storytelling-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/strategia-cenowa</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -3446,18 +1658,6 @@
   </url>
   <url>
     <loc>https://www.fotz-studio.pl/blog/strategia-social-media-marketing</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/strategie-cache-co-to-jest-cache-aside-write-through-redis-cdn-invalidation</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/stripe-paddle-przelewy24-platnosci-nextjs-typescript-2024</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -3487,91 +1687,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/structured-logging-co-to-jest-loki-elk-fluentd-kibana-grafana</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/subscription-model-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/supabase-auth-rls-storage-realtime-edge-functions-vector-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/svelte-5-runes-angular-18-19-signals-sveltekit-2-frameworki-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/sveltekit-routing-load-functions-form-actions-adaptery-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/switching-costs-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/tailwind-css-shadcn-ui-radix-mantine-biblioteki-ui-react-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/tailwind-css-v4-theme-oxide-engine-oklch-migracja-v3-2025</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/tam-sam-som-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/tanie-strony-internetowe</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/tanstack-form-react-hook-form-server-actions-formularze-nextjs-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/tanstack-query-react-query-co-to-jest-cache-usemutation-nextjs-ssr</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/tanstack-router-react-router-v7-type-safe-routing-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/tanstack-start-fullstack-react-router-server-functions-vinxi-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/tanstack-table-ag-grid-react-data-tables-sortowanie-filtrowanie-wirtualizacja-2024</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -3583,37 +1699,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/tauri-electron-wails-desktop-apps-react-typescript-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/technical-seo-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/techniki-closingu-zamykanie-sprzedazy</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/term-sheet-co-to-jest-vc-inwestycje</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/terraform-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/territory-planning-planowanie-terytoriow-sprzedazowych</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -3631,79 +1717,13 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/time-to-value-co-to-jest-jak-skrocic-ttv</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/tiptap-lexical-slate-rich-text-editor-react-collaborative-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/topic-clusters-co-to</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/transactional-outbox-pattern-co-to-jest-debezium-cdc-inbox-spring</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/trendy-ecommerce-2027</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/trpc-co-to-jest-end-to-end-type-safety-nextjs-tanstack-query-vs-graphql</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/tsconfig-json-konfiguracja-typescript-strict-paths-project-references</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/two-sided-marketplace-dwustronny-rynek-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/tworzenie-stron-internetowych-cennik</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/typescript-5-5-5-6-inferred-predicates-using-isolated-declarations-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/typescript-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/typescript-utility-types-partial-returntype-conditional-mapped-branded-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/typescript-zaawansowany-generics-conditional-types-decorators-typescript-5</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -3721,43 +1741,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/umowa-b2b-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/unit-economics-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/usability-testing-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/usage-based-pricing-co-to-jest-jak-wdrozyz</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/user-onboarding-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/user-persona-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/user-story-co-to</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -3781,67 +1765,13 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/ux-design-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/ux-ui-ecommerce</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/valibot-arktype-typebox-zod-v4-schema-validation-typescript-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/value-proposition-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/value-selling-sprzedaz-przez-wartosc</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/value-stream-mapping-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/vat-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/vector-database-co-to-jest-jak-wybrac</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/venture-capital-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/vercel-netlify-cloudflare-pages-railway-deployment-nextjs-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/vesting-schedule-co-to-jest-equity-startup</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -3865,25 +1795,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/viral-coefficient-wspolczynnik-viralnosci-produktu</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/viral-marketing-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/vite-esbuild-turbopack-rollup-webpack-bundlery-js-co-wybrac</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/vitest-playwright-cypress-storybook-testowanie-react-2024</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -3901,85 +1813,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/volta-fnm-mise-nvm-corepack-nodejs-version-managers-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/vue3-composition-api-pinia-nuxt3-co-to-jest-jak-dziala</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/wacc-sredni-wazony-koszt-kapitalu</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/web-components-lit-stencil-shadow-dom-micro-frontends-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/web-security-xss-csrf-csp-sql-injection-owasp-nodejs-nextjs</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/web-workers-comlink-offscreencanvas-shared-array-buffer-javascript-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/web3-blockchain-dla-firm-smart-contracts-tokenizacja-aktywow</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/webassembly-wasm-co-to-jest-rust-cpp-emscripten</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/webinar-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/webrtc-co-to-jest-jak-budowac-real-time-komunikacje</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/websocket-sse-long-polling-real-time-komunikacja-socket-io-mqtt</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/wersjonowanie-api-co-to-jest-url-header-date-strategia-stripe-pact</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/win-loss-analysis-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/win-rate-wskaznik-wygranych-jak-poprawic</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -4027,19 +1861,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/blog/wzorce-odpornosci-circuit-breaker-retry-bulkhead-backpressure-resilience4j</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/blog/xml-sitemap-co-to</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/xstate-co-to-jest-maszyna-stanow-statecharts-actor-model-react</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -4068,41 +1890,16 @@
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/zod-zaawansowany-discriminated-unions-branded-types-transforms-typescript-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/zus-co-to-jest</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/blog/zustand-jotai-redux-toolkit-zarzadzanie-stanem-react-2024</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
   <url><loc>https://www.fotz-studio.pl/blog/agencja-marketingowa-b2b-3</loc></url>
   <url><loc>https://www.fotz-studio.pl/blog/agencja-marketingowa-poznan-5</loc></url>
   <url><loc>https://www.fotz-studio.pl/blog/ai-w-marketingu-firm-jak-zwiekszyc-efektywnosc-dzialan</loc></url>
   <url><loc>https://www.fotz-studio.pl/blog/audyt-seo-skuteczne-strategie-dla-msp-widocznosc</loc></url>
   <url><loc>https://www.fotz-studio.pl/blog/automatyzacja-marketingu-dla-msp-wzrost-i-oszczednosc-czasu</loc></url>
-  <url><loc>https://www.fotz-studio.pl/blog/automatyzacja-marketingu-dzialanie-firmy</loc></url>
   <url><loc>https://www.fotz-studio.pl/blog/automatyzacja-marketingu-klucz-do-efektywnosci-i-wzrostu</loc></url>
-  <url><loc>https://www.fotz-studio.pl/blog/automatyzacja-marketingu-przewodnik-wzrostu-efektywnosci</loc></url>
-  <url><loc>https://www.fotz-studio.pl/blog/branding-poznan-6</loc></url>
   <url><loc>https://www.fotz-studio.pl/blog/co-to-jest-content-marketing-i-jak-rozwija-twoj-biznes</loc></url>
-  <url><loc>https://www.fotz-studio.pl/blog/co-to-jest-pozycjonowanie-kompletny-przewodnik-dla-firm</loc></url>
   <url><loc>https://www.fotz-studio.pl/blog/content-marketing-dla-firm-zwieksz-sprzedaz-rozpoznawalnosc</loc></url>
   <url><loc>https://www.fotz-studio.pl/blog/czym-sa-kampanie-reklamowe-i-jak-skutecznie-je-prowadzic</loc><lastmod>2026-10-09</lastmod></url>
   <url><loc>https://www.fotz-studio.pl/blog/dlaczego-content-marketing-zwieksza-zyski-i-marke</loc></url>
-  <url><loc>https://www.fotz-studio.pl/blog/dlaczego-warto-inwestowac-w-content-marketing-firmy</loc></url>
-  <url><loc>https://www.fotz-studio.pl/blog/dlaczego-warto-miec-strone-firmowa-przewaga-online</loc></url>
-  <url><loc>https://www.fotz-studio.pl/blog/efektywny-przewodnik-reklama-internet-male-firmy</loc></url>
   <url><loc>https://www.fotz-studio.pl/blog/formy-reklamy-online-skuteczne-rozwiazania-dla-msp-w-polsce</loc></url>
   <url><loc>https://www.fotz-studio.pl/blog/google-business-profile-optymalizacja-przewodnik-dla-firm</loc></url>
   <url><loc>https://www.fotz-studio.pl/blog/ile-kosztuje-pozycjonowanie-cennik-2026</loc></url>
@@ -4112,11 +1909,9 @@
   <url><loc>https://www.fotz-studio.pl/blog/jak-media-spolecznosciowe-buduja-marke-i-wzrost-firmy</loc></url>
   <url><loc>https://www.fotz-studio.pl/blog/jak-napisac-brief-marketingowy-praktyczny-przewodnik</loc></url>
   <url><loc>https://www.fotz-studio.pl/blog/jak-opracowac-strategie-content-marketingu-dla-wzrostu-marki</loc></url>
-  <url><loc>https://www.fotz-studio.pl/blog/jak-planowac-content-marketing-i-budowac-skuteczna-strategie</loc></url>
   <url><loc>https://www.fotz-studio.pl/blog/jak-social-media-napedzaja-rozwoj-firmy-przewodnik</loc></url>
   <url><loc>https://www.fotz-studio.pl/blog/jak-stworzyc-skuteczny-landing-page-dla-firm</loc></url>
   <url><loc>https://www.fotz-studio.pl/blog/jak-ux-zwieksza-skutecznosc-kampanii-reklamowych</loc></url>
-  <url><loc>https://www.fotz-studio.pl/blog/kalendarz-publikacji-social-media-klucz-do-wzrostu-marki</loc></url>
   <url><loc>https://www.fotz-studio.pl/blog/konwersja-w-marketingu-skuteczne-strategie-dla-malych-firm</loc></url>
   <url><loc>https://www.fotz-studio.pl/blog/kpi-w-marketingu-praktyczny-przewodnik-dla-msp</loc></url>
   <url><loc>https://www.fotz-studio.pl/blog/lejek-sprzedazowy-b2b-przewodnik-dla-menedzerow</loc></url>
@@ -4128,12 +1923,10 @@
   <url><loc>https://www.fotz-studio.pl/blog/najlepsze-praktyki-seo-zwieksz-widocznosc-swojej-firmy</loc></url>
   <url><loc>https://www.fotz-studio.pl/blog/optymalizacja-seo-widocznosc-przychody-firmy</loc></url>
   <url><loc>https://www.fotz-studio.pl/blog/optymalizacja-strony-internetowej-przewodnik</loc></url>
-  <url><loc>https://www.fotz-studio.pl/blog/optymalizacja-strony-wiecej-konwersji-i-wyzsze-przychody</loc></url>
   <url><loc>https://www.fotz-studio.pl/blog/pozycjonowanie-stron-poznan-4</loc></url>
   <url><loc>https://www.fotz-studio.pl/blog/proces-tworzenia-tresci-seo-dla-firm</loc></url>
   <url><loc>https://www.fotz-studio.pl/blog/prowadzenie-instagrama-dla-firm-sposob-na-skuteczna-marke</loc></url>
   <url><loc>https://www.fotz-studio.pl/blog/reklama-na-facebooku-poznan-4</loc></url>
-  <url><loc>https://www.fotz-studio.pl/blog/reklamy-google-ads-poznan-5</loc></url>
   <url><loc>https://www.fotz-studio.pl/blog/seo-dla-firm-praktyczny-przewodnik-po-optymalizacji</loc></url>
   <url><loc>https://www.fotz-studio.pl/blog/sklep-internetowy-poznan-6</loc></url>
   <url><loc>https://www.fotz-studio.pl/blog/skuteczna-optymalizacja-dzialan-online-dla-wyzszych-zyskow</loc></url>
@@ -4143,7 +1936,5 @@
   <url><loc>https://www.fotz-studio.pl/blog/strategia-content-marketingu-skuteczny-przewodnik-dla-firm</loc><lastmod>2026-10-09</lastmod></url>
   <url><loc>https://www.fotz-studio.pl/blog/strona-www-cena-jak-obnizyc-koszty-i-zwiekszyc-zwrot</loc></url>
   <url><loc>https://www.fotz-studio.pl/blog/strony-internetowe-wielkopolska-5</loc></url>
-  <url><loc>https://www.fotz-studio.pl/blog/strony-wordpress-poznan-5</loc></url>
-  <url><loc>https://www.fotz-studio.pl/blog/tworzenie-stron-internetowych-poznan-5</loc></url>
   <url><loc>https://www.fotz-studio.pl/blog/zwieksz-sprzedaz-sklep-internetowy-strategie</loc></url>
 </urlset>
