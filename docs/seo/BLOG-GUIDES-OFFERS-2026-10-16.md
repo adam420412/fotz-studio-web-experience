@@ -25,9 +25,13 @@ Nowe strony dopisano do testu `offer-claims` (także poradniki — zdania z nega
 
 - Instagram: opis kroków zakładania konta firmowego i funkcji konta profesjonalnego jest ogólny (z zastrzeżeniem, że menu się zmienia) — sprawdzić w aktualnej aplikacji.
 - Copywriting: CTA mówi, że FOTZ pisze teksty jako część większego projektu (strategia treści).
-- Agencja marketingu internetowego: opis pracy specjalisty SEO z osobą od treści i wspólnych spotkań SEO/PPC; konta reklamowe i analityczne zakładane lub prowadzone na firmę klienta.
 - Koszt strony: sekcja z linkami do 12 miast pod poradnikiem — czy zostaje.
 - Agencja social media Poznań: wizyty u klientów w Poznaniu i okolicach po uzgodnieniu terminu.
+
+## Potwierdzone przez właściciela (16.10)
+
+- Specjalista SEO pracuje razem z osobą od treści; dane z SEO i reklam omawiamy na wspólnym spotkaniu.
+- Konta reklamowe i analityczne zakładamy lub prowadzimy na firmę klienta.
 
 ## Kontrola lokalna
 
