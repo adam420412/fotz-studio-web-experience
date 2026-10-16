@@ -528,10 +528,10 @@ const PozycjonowaniePlock = () => {
           </h3>
           <div className="flex flex-wrap gap-x-6 gap-y-2">
             {[
-              { label: "Pozycjonowanie Warszawa", url: "/uslugi/pozycjonowanie/warszawa" },
+              { label: "Pozycjonowanie Warszawa", url: "/seo/pozycjonowanie-warszawa" },
               { label: "Pozycjonowanie Kraków", url: "/seo/pozycjonowanie-krakow" },
-              { label: "Pozycjonowanie Wrocław", url: "/uslugi/pozycjonowanie/wroclaw" },
-              { label: "Pozycjonowanie Łódź", url: "/uslugi/pozycjonowanie/lodz" },
+              { label: "Pozycjonowanie Wrocław", url: "/seo/pozycjonowanie-wroclaw" },
+              { label: "Pozycjonowanie Łódź", url: "/seo/pozycjonowanie-lodz" },
               { label: "Wszystkie usługi SEO", url: "/uslugi/pozycjonowanie" },
             ].map((link) => (
               <Link

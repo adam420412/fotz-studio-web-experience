@@ -412,12 +412,12 @@ const PozycjonowanieBialystok = () => {
           </h3>
           <div className="flex flex-wrap gap-3">
             {[
-              { city: "Warszawa", href: "/uslugi/pozycjonowanie/warszawa" },
+              { city: "Warszawa", href: "/seo/pozycjonowanie-warszawa" },
               { city: "Kraków", href: "/seo/pozycjonowanie-krakow" },
-              { city: "Wrocław", href: "/uslugi/pozycjonowanie/wroclaw" },
+              { city: "Wrocław", href: "/seo/pozycjonowanie-wroclaw" },
               { city: "Poznań", href: "/seo/pozycjonowanie-poznan" },
-              { city: "Gdańsk", href: "/uslugi/pozycjonowanie/gdansk" },
-              { city: "Łódź", href: "/uslugi/pozycjonowanie/lodz" },
+              { city: "Gdańsk", href: "/seo/pozycjonowanie-gdansk" },
+              { city: "Łódź", href: "/seo/pozycjonowanie-lodz" },
               { city: "Szczecin", href: "/uslugi/pozycjonowanie/szczecin" },
             ].map((item) => (
               <Link

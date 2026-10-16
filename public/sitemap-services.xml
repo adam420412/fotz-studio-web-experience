@@ -415,12 +415,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.fotz-studio.pl/uslugi/pozycjonowanie/gdansk</loc>
-    <lastmod>2026-10-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://www.fotz-studio.pl/uslugi/pozycjonowanie/gdynia</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
@@ -428,18 +422,6 @@
   </url>
   <url>
     <loc>https://www.fotz-studio.pl/uslugi/pozycjonowanie/kielce</loc>
-    <lastmod>2026-10-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/uslugi/pozycjonowanie/lodz</loc>
-    <lastmod>2026-10-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/uslugi/pozycjonowanie/lublin</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -477,18 +459,6 @@
   <url>
     <loc>https://www.fotz-studio.pl/uslugi/pozycjonowanie/torun</loc>
     <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/uslugi/pozycjonowanie/warszawa</loc>
-    <lastmod>2026-10-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.fotz-studio.pl/uslugi/pozycjonowanie/wroclaw</loc>
-    <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -692,9 +662,6 @@
   <url><loc>https://www.fotz-studio.pl/agencja-marketingowa-olsztyn</loc></url>
   <url><loc>https://www.fotz-studio.pl/agencja-marketingowa-opole</loc><lastmod>2026-10-13</lastmod></url>
   <url><loc>https://www.fotz-studio.pl/agencja-marketingowa-torun</loc></url>
-  <url><loc>https://www.fotz-studio.pl/agencja-seo-lublin</loc><lastmod>2026-10-11</lastmod></url>
-  <url><loc>https://www.fotz-studio.pl/agencja-seo-warszawa</loc><lastmod>2026-10-11</lastmod></url>
-  <url><loc>https://www.fotz-studio.pl/agencja-seo-wroclaw</loc><lastmod>2026-10-11</lastmod></url>
   <url><loc>https://www.fotz-studio.pl/ai-marketing</loc><lastmod>2026-10-11</lastmod></url>
   <url><loc>https://www.fotz-studio.pl/ai-seo</loc><lastmod>2026-10-11</lastmod></url>
   <url><loc>https://www.fotz-studio.pl/cennik-pozycjonowania</loc></url>
