@@ -1,625 +1,185 @@
-import { SEOHead } from "@/components/seo/SEOHead";
-import { Layout } from "@/components/layout/Layout";
-import { Button } from "@/components/ui/button";
+import { enquiryHref } from "@/lib/enquiry.mjs";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import { 
-  Globe, 
-  Search, 
-  ShoppingCart, 
-  Palette, 
-  MessageSquare,
-  Settings,
-  TrendingUp,
-  Handshake,
-  Phone,
-  Smartphone,
-  Shield,
-  Headphones,
-  ArrowRight,
-  Sparkles,
-  Zap,
-  Target,
-  Code2,
-  Layers,
-  Rocket,
-  Star,
-  Clock,
-  Camera,
-  Video
-} from "lucide-react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
-import { ContactSection } from "@/components/sections/ContactSection";
-import { CityServicesGrid } from "@/components/sections/CityServicesGrid";
-import { CityPricingCards } from "@/components/sections/CityPricingCards";
-import { CityIntroSection } from "@/components/sections/CityIntroSection";
-import { CityBenefitsSection } from "@/components/sections/CityBenefitsSection";
-import { CityLinksSection } from "@/components/sections/CityLinksSection";
+import { Layout } from "@/components/layout/Layout";
+import { SEOHead } from "@/components/seo/SEOHead";
+import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
+import { QuoteOptions, websiteOptions } from "@/components/QuoteOptions";
+import eneaStadion from "@/assets/portfolio/enea-stadion-web.webp";
+import fpsCegielski from "@/assets/portfolio/fps-cegielski-web.webp";
+import klagem from "@/assets/portfolio/klagem-web.webp";
 
-import apartamentyImg from "@/assets/portfolio/apartamenty-chorwacja-web.webp";
-import victoryCarsImg from "@/assets/portfolio/victory-cars-web.webp";
-import cuteDumplingImg from "@/assets/portfolio/cute-dumpling-new-web.webp";
+type Section = { title: string; text: string; points?: string[]; href?: string; link?: string };
 
-const StronyInternetowePoznan = () => {
-  const services = [
-    { icon: Globe, title: "Strony internetowe", desc: "Profesjonalne strony www oraz sklepy internetowe dla firm z Poznania." },
-    { icon: Search, title: "Pozycjonowanie SEO", desc: "Optymalizacja SEO zwiększająca widoczność w wyszukiwarce Google." },
-    { icon: Palette, title: "Projektowanie UI/UX", desc: "Nowoczesne strony internetowe z naciskiem na użytkownika." },
-    { icon: ShoppingCart, title: "Sklepy e-commerce", desc: "Tworzenie sklepów internetowych Poznań z pełnymi integracjami." },
-    { icon: MessageSquare, title: "Systemy CMS", desc: "WordPress, Webflow, Shopify i dedykowane rozwiązania." },
-    { icon: TrendingUp, title: "Optymalizacja konwersji", desc: "Strony, które zamieniają odwiedzających w klientów." },
-  ];
-
-  const whyUs = [
-    { icon: Settings, title: "Nowoczesne technologie", desc: "React, Next.js, WordPress, Webflow - dobieramy technologię do projektu strony." },
-    { icon: Search, title: "SEO w standardzie", desc: "Każda strona www jest zoptymalizowana pod wyszukiwarki od pierwszego dnia." },
-    { icon: Handshake, title: "Partnerskie podejście", desc: "Specjalizujemy się w tworzeniu stron skrojonych na miarę Twojej firmy." },
-    { icon: Smartphone, title: "Mobile-first", desc: "Tworzymy responsywne strony internetowe działające na wszystkich urządzeniach." },
-    { icon: Shield, title: "Bezpieczne strony", desc: "SSL, regularne aktualizacje, zabezpieczenia przed atakami." },
-    { icon: Headphones, title: "Wsparcie po wdrożeniu", desc: "Nie zostawiamy Cię po uruchomieniu nowej strony internetowej." },
-  ];
-
-  const pricing = [
-    { 
-      title: "Landing Page", 
-      desc: "Strona wizytówkowa prezentująca firmę", 
-      price: "Wycena indywidualna",
-      features: ["Do 5 podstron", "Responsywny design", "Podstawowe SEO", "Formularz kontaktowy", "Certyfikat SSL"]
-    },
-    { 
-      title: "Strona Firmowa", 
-      desc: "Rozbudowana strona z dodatkowymi funkcjami", 
-      price: "Wycena indywidualna",
-      popular: true,
-      features: ["Do 15 podstron", "Zaawansowane SEO", "Blog firmowy", "Integracja social media", "System CMS", "Wsparcie techniczne"]
-    },
-    { 
-      title: "Sklep E-commerce", 
-      desc: "Platforma sprzedażowa z integracjami", 
-      price: "Wycena indywidualna",
-      features: ["Nieograniczona liczba produktów", "Panel administracyjny", "Integracje płatności", "Optymalizacja konwersji", "Narzędzia marketingowe"]
-    },
-  ];
-
-  const processSteps = [
-    { icon: Target, step: "01", title: "Brief i analiza", desc: "Poznajemy cele biznesowe i specyfikę Twojej firmy w Poznaniu." },
-    { icon: Palette, step: "02", title: "Projekt UX/UI", desc: "Zaprojektowanie strony z naciskiem na użyteczność i estetykę." },
-    { icon: Code2, step: "03", title: "Programowanie", desc: "Profesjonalne tworzenie stron www z dbałością o kod." },
-    { icon: Rocket, step: "04", title: "Testy i wdrożenie", desc: "Testujemy i uruchamiamy Twoją stronę internetową." },
-  ];
-
-  const caseStudies = [
-    {
-      title: "Apartamenty Chorwacja",
-      category: "Strona rezerwacyjna",
-      result: "+180% rezerwacji online",
-      link: "/realizacje/apartamenty-chorwacja",
-      image: apartamentyImg
-    },
-    {
-      title: "Victory Cars",
-      category: "Strona motoryzacyjna",
-      result: "Nowoczesny design premium",
-      link: "/realizacje/victory-cars",
-      image: victoryCarsImg
-    },
-    {
-      title: "Cute Dumpling",
-      category: "Strona gastronomiczna",
-      result: "+250% ruchu organicznego",
-      link: "/realizacje/cute-dumpling",
-      image: cuteDumplingImg
-    },
-  ];
-
-  const faqItems = [
-    {
-      question: "Jak stworzyć własną stronę internetową?",
-      answer: "Proces tworzenia strony internetowej rozpoczynamy od rozmowy i researchu. Następnie wyceniamy projekt. Po stworzeniu kodu i oprawy graficznej prezentujemy projekt klientowi i wprowadzamy ewentualne poprawki. Każda witryna jest estetyczna, funkcjonalna i dostosowana do urządzeń mobilnych."
-    },
-    {
-      question: "W jaki sposób pozycjonować witrynę?",
-      answer: "Pozycjonowanie strony internetowej SEO obejmuje optymalizację techniczną, tworzenie wartościowych treści, link building oraz analizę konkurencji. Nasze działania zapewniają wysoką pozycję w Google i zwiększenie widoczności."
-    },
-    {
-      question: "Jak zwiększyć sprzedaż sklepu internetowego?",
-      answer: "Efektywna strategia SEO, oparta na analizach i dostosowywaniu działań, zapewni długotrwałe efekty w postaci większej liczby odwiedzin na stronie oraz lepszej konwersji. Pomagamy budować większą społeczność i poszerzać zasięgi."
-    },
-    {
-      question: "Ile kosztuje strona internetowa w Poznaniu?",
-      answer: "Koszt zależy od zakresu, treści i integracji. Prześlij brief, aby otrzymać indywidualną ofertę z harmonogramem i rozpisanymi kosztami."
-    },
-    {
-      question: "Jakie systemy CMS wykorzystujecie?",
-      answer: "Korzystamy z WordPress, Joomla, Drupal, Webflow, Shopify i wielu innych systemów zarządzania treścią. Dobieramy technologię do potrzeb projektu i oczekiwań klienta."
-    },
-    {
-      question: "Czy tworzycie strony responsywne?",
-      answer: "Tak, wszystkie nasze strony są responsywne i dostosowane do urządzeń mobilnych. Projektowanie responsywnych stron internetowych zapewnia wysoką pozycję w Google i lepsze doświadczenie użytkowników."
-    },
-    {
-      question: "Jak długo trwa realizacja strony internetowej?",
-      answer: "Czas realizacji zależy od złożoności projektu. Prosta strona wizytówkowa może być gotowa w 2-3 tygodnie, strona firmowa w 4-8 tygodni, a sklep internetowy w 8-16 tygodni."
-    },
-    {
-      question: "Czy oferujecie wsparcie po uruchomieniu strony?",
-      answer: "Tak, oferujemy kompleksowe wsparcie techniczne, aktualizacje, optymalizację SEO oraz rozwój funkcjonalności po uruchomieniu strony. Jesteśmy strategicznym partnerem naszych klientów."
-    },
-  ];
-
-  const stats = [
-    { value: "WWW", label: "Strony i sklepy", icon: Layers },
-    { value: "UX", label: "Projekt dla odbiorcy", icon: Star },
-    { value: "5 lat", label: "Doświadczenia", icon: Clock },
-    { value: "Kontakt", label: "Uzgodniona opieka", icon: Headphones },
-  ];
-
-  const benefits = [
-    "Lokalna agencja z Poznania - znamy rynek",
-    "Kompleksowa obsługa od projektu po wdrożenie",
-    "SEO w standardzie każdej strony",
-    "Responsywny design mobile-first",
-    "Wsparcie techniczne po uruchomieniu",
-    "Konkurencyjne ceny bez ukrytych kosztów"
-  ];
-
-  const introContent = {
-    title: "Tworzenie stron www dla firm z Poznania",
-    paragraphs: [
-      "Fotz Studio to agencja z Wielkopolski specjalizująca się w tworzeniu stron internetowych dla firm z Poznania i okolic. Projektujemy responsywne witryny www, sklepy e-commerce i landing page — lokalnie i zdalnie.",
-      "Strony internetowe realizujemy od A do Z: brief, projekt graficzny w Figma, kodowanie (WordPress, Webflow, React), wdrożenie i opieka techniczna. Nie ma u nas podwykonawców — całość realizuje nasz własny zespół z Poznania.",
-      "Każda strona www jest tworzona z myślą o użytkowniku i zoptymalizowana pod wyszukiwarki — SEO w standardzie, Core Web Vitals w zielonym, schema markup LocalBusiness w cenie projektu.",
-      "Poznań to jedno z najszybciej rozwijających się centrów biznesowych w Polsce — miasto innowacji, silnego sektora MŚP i prężnej sceny startupowej. Jako lokalna agencja z Poznania rozumiemy tutejszy rynek od podszewki i tworzymy strony, które realnie wspierają wzrost poznańskich firm."
+const sections: Section[] = [
+  {
+    title: "Strony www dla firm z Poznania — od czego zaczynamy?",
+    text: "Pracujemy w Poznaniu, więc spotkanie w biurze klienta, na budowie czy w restauracji umawiamy po uzgodnieniu terminu. Rozmowę zaczynamy od pytania, kto ma trafić na stronę i co powinien zrobić po jej przeczytaniu. Inaczej planuje się serwis gabinetu na Jeżycach, a inaczej firmy produkcyjnej, która sprzedaje w całym kraju. Ustalamy obszar działania, najważniejsze usługi, pytania klientów i sposób przyjmowania zleceń. Strona www ma odpowiadać na te pytania, dlatego dopiero na tej podstawie powstaje struktura strony, czyli lista podstron i kolejność informacji. Profesjonalne strony nie muszą być rozbudowane, ale każda podstrona powinna mieć jasny cel. Dzięki temu nowa strona nie jest zbiorem przypadkowych zakładek, tylko uporządkowaną drogą od pierwszego wejścia do kontaktu.",
+  },
+  {
+    title: "Tworzenie stron internetowych Poznań — elementy każdego projektu strony",
+    text: "Profesjonalne tworzenie stron internetowych to coś więcej niż kod. W zakresie projektowania stron internetowych ustalamy strukturę strony, treści, funkcjonalności strony i sposób pomiaru zapytań. Każda strona www, którą przekazujemy, przechodzi kontrolę formularzy, linków i widoku mobilnego. Wykonanie strony obejmuje też metadane, przekierowania i przekazanie dostępów. W przypadku strony z rezerwacjami lub sklepem dochodzą testy płatności i powiadomień. Realizujemy strony internetowe dla małych firm i większych organizacji, a zakres dopasowujemy do budżetu. Profesjonalna strona internetowa nie musi być rozbudowana. Od profesjonalnej strony www oczekujemy przede wszystkim jasnej oferty, szybkiego działania i prostego kontaktu. Skuteczne strony internetowe pomagają klientom, którzy porównują firmy przez strony online, mapy i media społecznościowe. Ogólnopolski opis usługi znajdziesz w zakładce Strony internetowe w menu.",
+  },
+  {
+    title: "Strona firmowa, landing page czy sklep — co sprawdzi się w Twojej firmie?",
+    text: "Strona firmowa sprawdzi się, gdy oferujesz kilka usług i chcesz pokazać realizacje, zespół oraz odpowiedzi na częste pytania. Landing page wystarczy przy jednej ofercie, na przykład kampanii reklamowej lub zapisach na wydarzenie. Sklep internetowy wymaga katalogu produktów, wariantów, koszyka, płatności i obsługi zamówień, dlatego planujemy go osobno. Każda firma ma inne oczekiwania wobec strony, więc najpierw sprawdzamy, ile informacji trzeba przekazać i jak klienci dziś kupują. Nie namawiamy na rozbudowany serwis, jeśli na start wystarczy prosta wizytówka z czytelną ofertą. Rozwiązanie można później rozwijać etapami.",
+    href: "/uslugi/sklepy-internetowe",
+    link: "Sklepy internetowe — zakres wdrożenia",
+  },
+  {
+    title: "Proces tworzenia stron internetowych w Poznaniu",
+    text: "Tworzenie strony internetowej to proces złożony z kilku etapów, a każdy kończy się akceptacją. Po briefie przygotowujemy układ najważniejszych widoków i plan treści. Następnie powstaje projekt graficzny strony dopasowany do marki: kolorów, zdjęć, typografii i tonu komunikacji. Po zatwierdzeniu projektu strony internetowej przechodzimy do wdrożenia, czyli programowania, podłączenia formularzy i przygotowania panelu. Na końcu testujemy wersje strony na telefonie, tablecie i komputerze. Uruchomienie strony planujemy razem z Tobą, tak aby zmiana domeny lub hostingu nie wypadła w najgorętszym okresie sprzedaży.",
+    points: [
+      "Brief: cel, odbiorcy, zakres i materiały",
+      "Projekt strony www: układ, treść i wygląd strony",
+      "Wdrożenie strony: kod, CMS, formularze i integracje",
+      "Testy, publikacja i przekazanie dostępów",
     ],
-    videoSrc: "/videos/fotz-reel.mp4"
-  };
+  },
+  {
+    title: "Wygląd i użyteczność strony internetowej dla Twojej firmy",
+    text: "Estetyka ma znaczenie, ale ważniejsze jest to, czy odwiedzający szybko znajdzie potrzebne informacje. Użyteczność strony sprawdzamy już na etapie makiet: czy menu jest zrozumiałe, czy przyciski kontaktu są widoczne i czy formularz nie zadaje zbędnych pytań. Projektowanie stron internetowych w Poznaniu często dotyczy firm, które obsługują klientów lokalnie, więc dbamy o mapę dojazdu, godziny otwarcia i dane kontaktowe. Tworzymy funkcjonalne strony, na których treść prowadzi do decyzji, a dekoracje jej nie zasłaniają. Nowoczesny projekt nie musi oznaczać ciężkich animacji.",
+  },
+  {
+    title: "Nowa strona www — responsywność i szybkość ładowania",
+    text: "Wielu odwiedzających trafia na stronę z telefonu, dlatego responsywne strony internetowe i responsywne strony www projektujemy od widoku mobilnego. Sprawdzamy czytelność tekstu, wielkość przycisków i działanie menu na różnych szerokościach ekranu. Na czas ładowania strony wpływają obrazy, skrypty zewnętrzne, hosting i liczba wtyczek. Kompresujemy grafiki, ograniczamy zbędny kod i opisujemy, które dodatki mogą spowolnić serwis w przyszłości. Bezpieczne strony wymagają też certyfikatu SSL, aktualnego oprogramowania i kopii zapasowych. Te elementy zapisujemy w zakresie prac, aby było jasne, kto za nie odpowiada po starcie.",
+  },
+  {
+    title: "Strony www WordPress czy rozwiązanie dedykowane?",
+    text: "Technologię dobieramy do sposobu pracy z treścią. WordPress dobrze sprawdza się, gdy chcesz samodzielnie dodawać wpisy, realizacje lub zmieniać ofertę w panelu. Przy sklepie można rozważyć WooCommerce albo inną platformę sprzedażową. Rozwiązania dedykowane wybieramy wtedy, gdy potrzebne są niestandardowe funkcje, na przykład kalkulator, rezerwacje lub konfigurator. W wycenie określamy, które elementy edytujesz samodzielnie i czy przekazanie obejmuje szkolenie. Nie każda zmiana układu będzie możliwa z poziomu panelu, dlatego mówimy o tym przed startem.",
+  },
+  {
+    title: "Treści, zdjęcia i wideo na Twojej stronie www",
+    text: "Dobra strona potrzebuje konkretnych tekstów i prawdziwych zdjęć. Ustalamy, które materiały dostarczasz, a co przygotujemy w ramach zlecenia. Oprócz tworzenia stron FOTZ Studio zajmuje się fotografią i produkcją wideo, więc sesję zespołu, wnętrza lub produktów możemy zaplanować w Poznaniu razem z projektem. Strona www ze zdjęciami z realnej pracy pomaga klientom zrozumieć ofertę lepiej niż grafiki ze stockowych banków. Teksty piszemy prostym językiem, z odpowiedziami na pytania, które klienci zadają przez telefon. Koszt sesji lub nagrań rozpisujemy osobno.",
+  },
+  {
+    title: "SEO i widoczność Twojej strony w wynikach wyszukiwania",
+    text: "Podstawy SEO wdrażamy podczas budowania strony www, a nie po publikacji. Obejmują one strukturę adresów, tytuły, opisy, nagłówki, linkowanie wewnętrzne i dane strukturalne. Przygotowujemy serwis pod kątem wyszukiwarek internetowych, ale samo wdrożenie nie zapewnia wysokiej pozycji. Na to, jak wysoko pojawi się serwis, wpływają konkurencja, treść, linki i historia domeny. Jeśli celem jest zwiększenie widoczności strony w Google, pozycjonowanie stron rozpisujemy jako osobną usługę. Nie obiecujemy określonego miejsca w Google, pokazujemy natomiast, jakie prace wykonujemy i jak oceniamy pozycję Twojej strony.",
+    href: "/seo/pozycjonowanie-poznan",
+    link: "Oferta pozycjonowania w Poznaniu",
+  },
+  {
+    title: "Przebudowa swojej strony zamiast budowania strony www od zera",
+    text: "Jeśli masz już serwis, zaczynamy od przeglądu treści, ruchu i zapytań. Sprawdzamy, które podstrony są odwiedzane i mają linki z innych witryn. Przy zmianie adresów przygotowujemy przekierowania, a po publikacji kontrolujemy indeksowanie. Czasem lepszym wyjściem jest poprawa struktury i treści zamiast stawiania wszystkiego od nowa. Przed decyzją możemy wykonać audyt, który pokaże problemy techniczne i miejsca do poprawy.",
+    href: "/seo/audyt",
+    link: "Audyt SEO obecnej strony",
+  },
+  {
+    title: "Cena strony internetowej — od czego zależy?",
+    text: "Koszt zależy od liczby podstron, ilości treści, projektu graficznego i potrzebnych funkcji. Koszt wykonania strony internetowej rośnie przy integracjach z systemami zewnętrznymi, wersjach językowych, sklepie lub rezerwacjach. Osobno rozpisujemy koszty cykliczne: domenę, hosting, licencje i opiekę techniczną. Porównując oferty, sprawdź liczbę rund poprawek, prawa do projektu, przekazanie dostępów i zasady dalszej współpracy. Dokładna wycena powstaje po briefie, gdy znamy zakres i harmonogram. Nie podajemy jednej stawki dla wszystkich projektów, bo realizacja strony internetowej dla gabinetu i dla producenta to zupełnie inne zadania.",
+    href: "/cennik-stron-internetowych",
+    link: "Jak wyceniamy strony internetowe",
+  },
+  {
+    title: "Ile trwa realizacja? Harmonogram tworzenia stron www",
+    text: "Czas przygotowania strony internetowej zależy od zakresu oraz tempa przekazywania materiałów i decyzji. Prosta strona www w formie wizytówki wymaga mniej etapów niż serwis z blogiem czy sklep z setkami produktów. Harmonogram rozpisujemy po briefie i aktualizujemy, jeśli zakres się zmienia. Najczęściej opóźnienia wynikają z brakujących tekstów, zdjęć lub akceptacji, dlatego już na początku ustalamy, kto po stronie firmy zatwierdza kolejne etapy.",
+  },
+  {
+    title: "Chcesz stworzyć stronę? Co przygotować do tworzenia strony",
+    text: "Jeśli zależy Ci na serwisie, który od początku będzie dobrze zaplanowana, zbierz kilka informacji przed spotkaniem. Nie musisz mieć gotowych tekstów; wystarczy opis oferty i odbiorców.",
+    points: [
+      "adres obecnej witryny lub profilu firmy",
+      "listę usług lub produktów i najczęstsze pytania klientów",
+      "logo, zdjęcia i materiały, które możesz wykorzystać",
+      "przykłady stron, które Ci się podobają, i termin startu",
+    ],
+  },
+  {
+    title: "Strony internetowe tworzymy z myślą o rozwoju — opieka po publikacji",
+    text: "Po uruchomieniu serwis wymaga aktualizacji, kopii zapasowych i reakcji na zgłoszenia. Zakres opieki ustalamy przed publikacją, aby było jasne, co obejmuje abonament, a co jest osobnym zleceniem. Rozwój Twojej firmy często oznacza nowe usługi, a rozwój Twojej strony internetowej — kolejne podstrony lub integracje, dlatego planujemy strukturę tak, aby łatwo ją rozbudować. Po starcie warto obserwować dane z Google Search Console i analityki: skąd przychodzą odwiedzający, które podstrony czytają i gdzie rezygnują. Na tej podstawie proponujemy kolejne zmiany.",
+  },
+  {
+    title: "Strony www Poznań — jak wybrać wykonawcę strony?",
+    text: "Poznań to miasto, w którym działa wiele agencji i freelancerów, więc warto porównać nie tylko portfolio. Zapytaj, kto przygotuje projekt, treści i wdrożenie, ile rund poprawek obejmuje oferta i kto po publikacji będzie właścicielem dostępów. Doświadczenie w tworzeniu stron internetowych najlepiej ocenić po konkretnych realizacjach i opisie roli wykonawcy. Od wykonawcy strony warto oczekiwać jasnej informacji, czego nie obejmuje zlecenie. Specjalizujemy się w tworzeniu stron internetowych dla firm usługowych i produkcyjnych, a jako agencja interaktywna łączymy projekt z fotografią, wideo i kampaniami.",
+  },
+];
 
+const poznanOptions = websiteOptions.map((option, index) => ({ ...option, href: enquiryHref("web", index === 2 ? "shop" : "website") }));
+
+const work = [
+  { name: "Enea Stadion Poznań", text: "Strona prezentująca stadion, jego przestrzenie i ofertę dla organizatorów wydarzeń.", image: eneaStadion, path: "/realizacje/enea-stadion" },
+  { name: "FPS Poznań (Cegielski)", text: "Strona internetowa i identyfikacja wizualna dla fabryki pojazdów szynowych.", image: fpsCegielski, path: "/realizacje/fps-cegielski" },
+  { name: "KLAGEM", text: "Strona i konfigurator mebli 3D z doborem modułów, wymiarów i kolorów.", image: klagem, path: "/realizacje/klagem" },
+];
+
+const faqs = [
+  { question: "Ile kosztuje strona firmowa w Poznaniu?", answer: "Cena zależy od liczby podstron, treści, funkcji i integracji. Po krótkim briefie przygotowujemy wycenę z rozpisanym zakresem, harmonogramem oraz kosztami cyklicznymi, takimi jak domena i hosting." },
+  { question: "Czy możemy spotkać się osobiście?", answer: "Tak. Zespół FOTZ Studio pracuje w Poznaniu, więc spotkanie umawiamy po uzgodnieniu terminu. Część rozmów i akceptacji możemy prowadzić online." },
+  { question: "Jak długo trwa stworzenie strony internetowej?", answer: "Termin zależy od zakresu oraz gotowości tekstów, zdjęć i decyzji. Harmonogram etapów potwierdzamy po briefie." },
+  { question: "Czy strona będzie dostosowana do telefonów i wyszukiwarek?", answer: "Tak, projektujemy widoki mobilne i wdrażamy techniczne podstawy SEO. Sama publikacja serwisu nie zapewnia jednak określonej pozycji w Google." },
+  { question: "Czy samodzielnie zmienię treść na stronie?", answer: "Jeśli potrzebujesz regularnie edytować ofertę, dobieramy CMS, na przykład WordPress, i ustalamy zakres edycji oraz szkolenie." },
+  { question: "Czy przygotujecie teksty i zdjęcia?", answer: "Możemy przygotować treści oraz sesję zdjęciową lub nagrania w Poznaniu. Zakres i koszt tych prac rozpisujemy w wycenie." },
+];
+
+export default function StronyInternetowePoznan() {
   return (
-    <>
+    <Layout>
       <SEOHead
-        title="Strony Internetowe Poznań | Tworzenie i Projektowanie Stron WWW"
-        description="Strony internetowe Poznań — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Poznania. Fotz Studio."
+        title="Tworzenie stron internetowych Poznań – projektowanie stron WWW"
+        description="Profesjonalne strony internetowe dla firm z Poznania: strona www, sklep i podstawy SEO. Spotkanie w Poznaniu, jasna wycena i realizacje FOTZ Studio."
         canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/poznan"
-        keywords="strony internetowe poznań, tworzenie stron poznań, strony www poznań, projektowanie stron poznań, sklep internetowy poznań"
       />
-      
-      <ServiceSchema 
-        name="Strony Internetowe Poznań - Projektowanie i Tworzenie Stron WWW"
-        description="Profesjonalne tworzenie stron internetowych dla firm z Poznania. Projektowanie responsywnych stron www, sklepów e-commerce i pozycjonowanie SEO."
-        provider="FOTZ Studio"
-        areaServed="Poznań"
-      />
-      
-      <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
-          { name: "Strony Internetowe", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe" },
-          { name: "Poznań", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe/poznan" },
-        ]}/>
-      
-      <FAQSchema 
-        items={faqItems.map(item => ({ question: item.question, answer: item.answer }))}
-      />
+      <ServiceSchema name="Tworzenie stron internetowych dla firm z Poznania" description="Projektowanie i wdrożenie stron firmowych, landing page'y oraz sklepów internetowych." areaServed="Poznań" />
+      <FAQSchema items={faqs} />
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://www.fotz-studio.pl" }, { name: "Strony internetowe", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe" }, { name: "Poznań", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe/poznan" }]} />
 
-      <OrganizationSchema />
-
-
-      <Layout>
-        {/* Hero Section - Enhanced */}
-        <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-32 pb-20">
-          {/* Animated background */}
-          <div className="absolute inset-0">
-            <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-background to-background" />
-            <motion.div 
-              animate={{ 
-                scale: [1, 1.2, 1],
-                opacity: [0.15, 0.25, 0.15] 
-              }}
-              transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[150px]" 
-            />
-            <motion.div 
-              animate={{ 
-                scale: [1.2, 1, 1.2],
-                opacity: [0.15, 0.25, 0.15] 
-              }}
-              transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 4 }}
-              className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-secondary/20 rounded-full blur-[120px]" 
-            />
-          </div>
-          
-          {/* Floating elements */}
-          <motion.div
-            animate={{ y: [-20, 20, -20], rotate: [0, 5, 0] }}
-            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-            className="absolute top-32 right-[15%] hidden lg:block"
-          >
-            <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 backdrop-blur-sm border border-primary/20 flex items-center justify-center">
-              <Globe className="w-10 h-10 text-primary" />
-            </div>
-          </motion.div>
-          
-          <motion.div
-            animate={{ y: [20, -20, 20], rotate: [0, -5, 0] }}
-            transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-            className="absolute bottom-32 left-[10%] hidden lg:block"
-          >
-            <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-secondary/20 to-secondary/5 backdrop-blur-sm border border-secondary/20 flex items-center justify-center">
-              <Code2 className="w-8 h-8 text-secondary" />
-            </div>
-          </motion.div>
-          
-          <div className="container mx-auto px-4 relative z-10">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-center max-w-5xl mx-auto"
-            >
-              <motion.div
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-              >
-                <span className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-8">
-                  <Sparkles className="w-4 h-4" />
-                  Agencja z Wielkopolski
-                  <Sparkles className="w-4 h-4" />
-                </span>
-              </motion.div>
-              
-              <motion.h1 
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-heading font-bold mb-6 md:mb-8 leading-tight px-2"
-              >
-                Strony Internetowe{" "}
-                <span className="text-gradient relative">
-                  Poznań
-                  <motion.span
-                    initial={{ scaleX: 0 }}
-                    animate={{ scaleX: 1 }}
-                    transition={{ duration: 0.8, delay: 0.8 }}
-                    className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-primary to-primary/50 rounded-full origin-left"
-                  />
-                </span>
-              </motion.h1>
-              
-              <motion.p 
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-                className="text-base sm:text-lg md:text-xl text-muted-foreground mb-8 md:mb-10 max-w-3xl mx-auto leading-relaxed px-4"
-              >
-                <strong className="text-foreground">Profesjonalna strona internetowa to podstawa sukcesu każdej firmy.</strong>{" "}
-                Tworzymy strony www, które wyglądają świetnie, działają błyskawicznie i skutecznie pozyskują klientów dla poznańskich firm.
-              </motion.p>
-
-              <motion.div 
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.5 }}
-                className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-8 md:mb-12 px-4"
-              >
-                <Button asChild size="lg" className="group text-sm sm:text-base px-6 sm:px-8 py-5 sm:py-6 shadow-lg shadow-primary/20 w-full sm:w-auto">
-                  <Link to="/kontakt">
-                    Bezpłatna wycena
-                    <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 transition-transform group-hover:translate-x-1" />
-                  </Link>
-                </Button>
-                <Button asChild variant="outline" size="lg" className="group text-sm sm:text-base px-6 sm:px-8 py-5 sm:py-6 border-2 w-full sm:w-auto">
-                  <a href="tel:+48790814814">
-                    <Phone className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
-                    +48 790 814 814
-                  </a>
-                </Button>
-              </motion.div>
-
-              {/* Stats bar */}
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.7 }}
-                className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-8 max-w-4xl mx-auto px-4"
-              >
-                {stats.map((stat, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.4, delay: 0.8 + index * 0.1 }}
-                    className="group p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-card/50 backdrop-blur-sm border border-border/50 hover:border-primary/30 transition-all"
-                  >
-                    <stat.icon className="w-5 h-5 sm:w-6 sm:h-6 text-primary mx-auto mb-1 sm:mb-2 transition-transform group-hover:scale-110" />
-                    <div className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground">{stat.value}</div>
-                    <div className="text-[10px] sm:text-xs md:text-sm text-muted-foreground leading-tight">{stat.label}</div>
-                  </motion.div>
-                ))}
-              </motion.div>
-            </motion.div>
-          </div>
-
-          {/* Scroll indicator */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.5 }}
-            className="absolute bottom-8 left-1/2 -translate-x-1/2"
-          >
-            <motion.div
-              animate={{ y: [0, 8, 0] }}
-              transition={{ duration: 1.5, repeat: Infinity }}
-              className="w-6 h-10 rounded-full border-2 border-muted-foreground/30 flex items-start justify-center p-2"
-            >
-              <motion.div className="w-1.5 h-1.5 rounded-full bg-primary" />
-            </motion.div>
-          </motion.div>
-        </section>
-
-        {/* Intro Section */}
-        <CityIntroSection 
-          content={introContent}
-          cityName="Poznań"
-        />
-
-        {/* Benefits Section */}
-        <CityBenefitsSection 
-          benefits={benefits}
-          title="Dlaczego warto nam zaufać?"
-          subtitle="Poznaj korzyści współpracy z lokalną agencją"
-          cityName="Poznań"
-        />
-
-        {/* Services Grid */}
-        <CityServicesGrid 
-          services={services}
-          title="Nasze usługi"
-          subtitle="Kompleksowe usługi tworzenia stron www dla poznańskich firm"
-          cityName="Poznań"
-        />
-
-        {/* Process Section */}
-        <section className="py-24 bg-card/30">
-          <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="text-center mb-16"
-            >
-              <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">
-                Proces
-              </span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-4">
-                Jak tworzymy strony?
-              </h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-                Przejrzysty proces, który gwarantuje sukces Twojego projektu
-              </p>
-            </motion.div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-              {processSteps.map((item, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
-                  className="group relative"
-                >
-                  <div className="p-8 rounded-2xl bg-background border border-border/50 hover:border-primary/30 transition-all h-full relative overflow-hidden">
-                    <div className="absolute top-0 right-0 text-8xl font-bold text-primary/5 group-hover:text-primary/10 transition-colors">
-                      {item.step}
-                    </div>
-                    <div className="relative z-10">
-                      <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                        <item.icon className="w-7 h-7 text-primary" />
-                      </div>
-                      <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
-                      <p className="text-muted-foreground">{item.desc}</p>
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Case Studies Section */}
-        <section className="py-24">
-          <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="text-center mb-16"
-            >
-              <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">
-                Realizacje
-              </span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-4">
-                Nasze projekty
-              </h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-                Zobacz strony internetowe, które stworzyliśmy dla naszych klientów
-              </p>
-            </motion.div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {caseStudies.map((study, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
-                >
-                  <Link 
-                    to={study.link}
-                    className="group block rounded-2xl overflow-hidden bg-card border border-border/50 hover:border-primary/30 transition-all hover:shadow-2xl hover:shadow-primary/10"
-                  >
-                    <div className="aspect-video overflow-hidden">
-                      <img loading="lazy" 
-                        src={study.image} 
-                        alt={study.title}
-                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                      />
-                    </div>
-                    <div className="p-6">
-                      <span className="text-primary text-sm font-medium">{study.category}</span>
-                      <h3 className="text-xl font-semibold mt-2 mb-2 group-hover:text-primary transition-colors">{study.title}</h3>
-                      <p className="text-muted-foreground">{study.result}</p>
-                    </div>
-                  </Link>
-                </motion.div>
-              ))}
-            </div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="text-center mt-12"
-            >
-              <Button asChild variant="outline" size="lg" className="group">
-                <Link to="/realizacje">
-                  Zobacz więcej realizacji
-                  <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-                </Link>
-              </Button>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* Pricing Section */}
-        <CityPricingCards 
-          pricing={pricing}
-          title="Cennik stron internetowych"
-          subtitle="Transparentne ceny bez ukrytych kosztów"
-          cityName="Poznań"
-        />
-
-        <CityLinksSection currentCity="Poznań" />
-
-        {/* FAQ Section */}
-        <section className="py-24">
-          <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="text-center mb-16"
-            >
-              <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">
-                FAQ
-              </span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-4">
-                Najczęstsze pytania
-              </h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-                Odpowiedzi na pytania o strony internetowe w Poznaniu
-              </p>
-            </motion.div>
-
-            <div className="max-w-3xl mx-auto">
-              <Accordion type="single" collapsible className="space-y-4">
-                {faqItems.map((item, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: index * 0.05 }}
-                  >
-                    <AccordionItem value={`item-${index}`} className="border border-border/50 rounded-xl px-6 bg-card/50">
-                      <AccordionTrigger className="text-left hover:no-underline py-6">
-                        <span className="font-medium">{item.question}</span>
-                      </AccordionTrigger>
-                      <AccordionContent className="text-muted-foreground pb-6">
-                        {item.answer}
-                      </AccordionContent>
-                    </AccordionItem>
-                  </motion.div>
-                ))}
-              </Accordion>
-            </div>
-          </div>
-        </section>
-
-        {/* Contact Section */}
-
-      {/* SEO Article Section */}
-      <section className="py-20 bg-card">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="prose prose-lg dark:prose-invert max-w-4xl mx-auto"
-          >
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-              Strony internetowe Poznań — dlaczego lokalna agencja robi różnicę?
-            </h2>
-            <p className="text-muted-foreground mb-4">
-              Tworzenie stron internetowych dla firm z Poznania to nasza codzienna praca od ponad 5 lat. Znamy poznański rynek — wiemy, jakie oczekiwania mają klienci z Jeżyc, Wildy czy Nowego Miasta, rozumiemy specyfikę lokalnych branż (od gastronomii na Starym Rynku po firmy logistyczne z Franowa) i jesteśmy dostępni na spotkanie stacjonarne w ciągu 24 godzin. Zdalna współpraca jest oczywiście możliwa, jednak poznańscy klienci szczególnie cenią możliwość bezpośredniego kontaktu z naszym zespołem.
-            </p>
-            <p className="text-muted-foreground mb-6">
-              Poznań jest jednym z najszybciej rozwijających się centrów biznesowych w Polsce — tu działa ponad 90 000 firm, a konkurencja online jest intensywna. Profesjonalna strona internetowa to dziś nie opcja, lecz warunek wejścia na rynek. Nasze strony internetowe dla firm z Poznania są projektowane z myślą o widoczności w Google, szybkości działania i konwersji — bo samo ładnie wyglądające www bez klientów to strata inwestycji.
-            </p>
-
-            <h2 className="text-3xl font-heading font-bold mb-6">
-              Projektowanie stron internetowych Poznań — jak wygląda nasz proces?
-            </h2>
-            <p className="text-muted-foreground mb-4">
-              Każde zlecenie na tworzenie stron www dla poznańskiej firmy zaczynamy od bezpłatnej konsultacji — telefonicznie, przez Teams lub osobiście w Poznaniu. Na spotkaniu omawiamy cele biznesowe, grupę docelową, budżet i harmonogram. Następnie przygotowujemy ofertę i brief projektowy.
-            </p>
-            <p className="text-muted-foreground mb-6">
-              Projektowanie strony internetowej realizujemy w Figma — otrzymujesz klikalny prototyp do akceptacji przed startem kodowania. Dzięki temu wiesz dokładnie, jak będzie wyglądać Twoja strona, zanim zostanie zbudowana. Po zatwierdzeniu projektu przechodzimy do programowania (WordPress, Webflow lub React/Next.js — zależnie od potrzeb), testów na różnych urządzeniach i wdrożenia. Po uruchomieniu strony oferujemy 30 dni bezpłatnej opieki technicznej.
-            </p>
-
-            <h2 className="text-3xl font-heading font-bold mb-6">
-              Strony www a pozycjonowanie w Poznaniu — co warto wiedzieć
-            </h2>
-            <p className="text-muted-foreground mb-4">
-              Strony internetowe tworzymy z wbudowaną optymalizacją SEO — meta tagi, szybkość Core Web Vitals, struktura nagłówków, schema markup LocalBusiness i mapa strony XML to nasz standard, nie dodatek płatny. Dzięki temu Twoja nowa strona www startuje z solidnym fundamentem i szybciej osiąga wysokie pozycje w Google dla lokalnych zapytań z Poznania.
-            </p>
-            <p className="text-muted-foreground mb-6">
-              Jeśli zależy Ci na dalszym rozwoju widoczności, oferujemy kompleksowe{" "}
-              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline">pozycjonowanie stron internetowych</Link> — od audytu SEO przez budowę linków po content marketing. Połączenie profesjonalnej strony www z regularnym SEO to najskuteczniejsza strategia pozyskiwania klientów online dla firm z Poznania.
-            </p>
-
-            <h2 className="text-3xl font-heading font-bold mb-6">
-              Ile kosztuje strona internetowa w Poznaniu? Transparentne wyceny
-            </h2>
-            <p className="text-muted-foreground mb-4">
-              Ceny stron internetowych w Poznaniu wahają się od kilkuset złotych za strony na kreatorach (Wix, Squarespace) do kilkudziesięciu tysięcy za zaawansowane portale e-commerce. W FOTZ Studio koszt ustalamy według zakresu: struktury, treści, funkcji i integracji. Każda wycena jest bezpłatna i przygotowywana indywidualnie — bez ukrytych kosztów.
-            </p>
-            <p className="text-muted-foreground mb-4">
-              Jeśli szukasz więcej informacji o kosztach i rodzajach stron internetowych, przejdź do naszej strony głównej usługi:{" "}
-              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium">Tworzenie stron internetowych — oferta ogólnopolska</Link>.
-            </p>
-
-            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
-              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe — oferta</Link>
-              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron SEO</Link>
-              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Kampanie Google Ads</Link>
-              <Link to="/social-media/obsluga" className="text-primary hover:underline font-medium text-sm">→ Social media marketing</Link>
-            </div>
-          </motion.div>
+      <section className="max-w-6xl mx-auto px-6 pt-32 pb-14">
+        <p className="dv-eyebrow mb-5">FOTZ Studio · zespół w Poznaniu</p>
+        <h1 className="text-4xl md:text-6xl font-heading mb-6">Tworzenie stron internetowych Poznań — strony WWW dla firm</h1>
+        <p className="text-lg text-muted-foreground max-w-3xl mb-7">
+          Oferujemy strony firmowe, landing page i sklepy, które działają na telefonie, jasno opisują ofertę i ułatwiają kontakt. Tworzenie i projektowanie stron prowadzimy od briefu przez projekt i wdrożenie po publikację.
+        </p>
+        <div className="flex flex-wrap gap-4">
+          <Link className="dv-btn dv-btn-primary" to={enquiryHref("web")}>Opisz projekt do wyceny</Link>
+          <a className="dv-btn dv-btn-secondary" href="tel:+48790814814">+48 790 814 814</a>
         </div>
       </section>
 
-        <ContactSection />
-      </Layout>
-    </>
-  );
-};
+      <section className="max-w-6xl mx-auto px-6 py-12">
+        <h2 className="text-3xl font-heading mb-5">Strona internetowa w Poznaniu — zakres współpracy</h2>
+        <p className="text-muted-foreground leading-relaxed max-w-4xl mb-7">
+          Tworzymy profesjonalne strony internetowe dla firm usługowych, produkcyjnych, gabinetów, restauracji i instytucji. Zakres obejmuje tworzenie strony od planu treści po wdrożenie, a w razie potrzeby także zdjęcia, wideo i kampanie. Wybierz wariant najbliższy Twoim potrzebom — szczegóły ustalimy na rozmowie.
+        </p>
+        <QuoteOptions options={poznanOptions} note="Zakres, cenę i harmonogram ustalamy po poznaniu projektu. Domenę, hosting, licencje i dalszą opiekę rozpisujemy w wycenie." />
+      </section>
 
-export default StronyInternetowePoznan;
+      <section className="max-w-6xl mx-auto px-6 py-12">
+        <h2 className="text-3xl font-heading mb-7">Realizacje — profesjonalne strony dla firm</h2>
+        <div className="grid md:grid-cols-3 gap-6">
+          {work.map(x => (
+            <Link key={x.path} to={x.path} className="rounded-xl border border-border overflow-hidden">
+              <img src={x.image} alt={x.name} loading="lazy" className="w-full aspect-video object-cover" />
+              <div className="p-5"><h3 className="text-xl mb-2">{x.name}</h3><p className="text-muted-foreground">{x.text}</p></div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <div className="max-w-6xl mx-auto px-6 py-12">
+        {sections.map(item => (
+          <section key={item.title} className="grid md:grid-cols-[1fr_1.4fr] gap-5 md:gap-12 py-8 border-b border-border">
+            <h2 className="text-2xl md:text-3xl font-heading">{item.title}</h2>
+            <div>
+              <p className="text-muted-foreground leading-relaxed">{item.text}</p>
+              {item.points && <ul className="list-disc pl-5 mt-4 space-y-2 text-muted-foreground">{item.points.map(point => <li key={point}>{point}</li>)}</ul>}
+              {item.href && <Link to={item.href} className="inline-block underline underline-offset-4 mt-5">{item.link}</Link>}
+            </div>
+          </section>
+        ))}
+      </div>
+
+      <section className="max-w-4xl mx-auto px-6 py-12">
+        <h2 className="text-3xl font-heading mb-7">Tworzenie stron www w Poznaniu — najczęstsze pytania</h2>
+        {faqs.map(f => (
+          <details key={f.question} className="py-5 border-b border-border">
+            <summary className="font-medium cursor-pointer">{f.question}</summary>
+            <p className="mt-4 text-muted-foreground">{f.answer}</p>
+          </details>
+        ))}
+        <div className="mt-8 flex flex-wrap gap-4">
+          <Link className="dv-btn dv-btn-primary" to={enquiryHref("web")}>Zapytaj o wycenę</Link>
+          <Link className="dv-btn dv-btn-secondary" to="/uslugi/strony-internetowe-dla-firm">Strony internetowe dla firm — oferta</Link>
+        </div>
+      </section>
+    </Layout>
+  );
+}
