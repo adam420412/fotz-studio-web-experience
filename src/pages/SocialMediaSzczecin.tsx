@@ -9,7 +9,7 @@ const PAGE_URL = "https://www.fotz-studio.pl/agencja-social-media/szczecin";
 
 const services = [
   { icon: Target, title: "Strategia social media i plan tematów", text: "Zaczynamy od tego, do kogo mówi Twoja firma: mieszkańcy Szczecina, turyści, kontrahenci z regionu czy partnerzy zza zachodniej granicy. Na tej podstawie ustalamy strategię komunikacji: rolę kanałów, ton wypowiedzi i tematy na kolejne tygodnie, dopasowane do grupy docelowej.", href: "/social-media/strategia" },
-  { icon: CalendarDays, title: "Prowadzenie profili Facebook i Instagram", text: "Przygotowujemy posty, grafiki i opisy, planujemy publikacje w kalendarzu i odpowiadamy na komentarze w uzgodnionych godzinach. Prowadzenie profili w mediach społecznościowych odbywa się według zaakceptowanego harmonogramu.", href: "/social-media/obsluga" },
+  { icon: CalendarDays, title: "Prowadzenie profili Facebook i Instagram", text: "Przygotowujemy posty, grafiki i opisy, planujemy publikacje w kalendarzu i odpowiadamy na komentarze w uzgodnionych godzinach. Publikujemy według zaakceptowanego harmonogramu.", href: "/social-media/obsluga" },
   { icon: Camera, title: "Treści i zdjęcia dla marki", text: "Projektujemy treści z materiałów, które przesyłasz, i z własnej produkcji. Jeśli sesja na miejscu w Szczecinie będzie potrzebna, warunki wyjazdu ustalamy osobno.", href: "/social-media/content" },
   { icon: Video, title: "Rolki i krótkie filmy", text: "Filmy promocyjne i rolki: scenariusz, montaż, napisy i wersje pionowe na Instagram, Facebook, TikTok i LinkedIn. Nagrania możesz zrobić we własnym zespole według naszych wskazówek albo zlecić je nam.", href: "/uslugi/produkcja-video" },
   { icon: MessageSquare, title: "Kampanie reklamowe Meta Ads", text: "Reklama na Facebooku i Instagramie: cel kampanii, kreacje, grupy odbiorców, np. zawężone do Szczecina i województwa zachodniopomorskiego, oraz bieżąca optymalizacja. Wysokość budżetu reklamowego płaconego platformie ustalasz i rozliczasz oddzielnie.", href: "/performance-marketing/meta-ads" },
@@ -23,7 +23,7 @@ const faqs = [
   { question: "Czy możecie prowadzić komunikację także po niemiecku?", answer: "Jeśli Twoi klienci są także po drugiej stronie granicy, omówmy to przy wycenie. Zakres treści w języku obcym i sposób ich weryfikacji ustalamy indywidualnie." },
   { question: "Czy reklamy Facebook Ads są w cenie obsługi?", answer: "Prowadzenie kampanii reklamowych może być częścią oferty, a budżet emisji płacony Mecie zawsze wskazujemy oddzielnie. Dla firm, które chcą docierać też do osób szukających usług w wyszukiwarce, możemy dołączyć Google Ads." },
   { question: "Agencja czy freelancer — co wybrać?", answer: "Freelancer sprawdzi się przy prostym prowadzeniu jednego profilu. Agencja przydaje się, gdy oprócz postów potrzebujesz nagrań, montażu, projektów graficznych i kampanii reklamowych w jednym miejscu. U nas stałym kontaktem jest jeden social media manager, który koordynuje pracę grafików, operatorów i specjalistów od reklam." },
-  { question: "Kiedy zobaczę efekty działań w mediach społecznościowych?", answer: "Nie gwarantujemy konkretnych wyników ani terminów. Zasięg i zaangażowanie pokazują, jak odbiorcy reagują na treści, a wiadomości, telefony i rezerwacje mówią o zainteresowaniu ofertą. Tempo zależy od branży, budżetu i od tego, jak szybko firma odpowiada na zapytania." },
+  { question: "Kiedy zobaczę efekty działań w social mediach?", answer: "Nie gwarantujemy konkretnych wyników ani terminów. Zasięg i zaangażowanie pokazują, jak odbiorcy reagują na treści, a wiadomości, telefony i rezerwacje mówią o zainteresowaniu ofertą. Tempo zależy od branży, budżetu i od tego, jak szybko firma odpowiada na zapytania." },
 ];
 
 const steps = [
@@ -52,7 +52,7 @@ export default function SocialMediaSzczecin() {
       <section className="container-wide px-6 md:px-12 pt-32 md:pt-40 pb-12 md:pb-20">
         <div className="max-w-4xl">
           <p className="dv-eyebrow mb-5">FOTZ Studio · obsługa zdalna</p>
-          <h1 className="text-4xl md:text-6xl font-heading leading-[1.08] tracking-tight mb-6">Agencja social media Szczecin<br /><span className="text-gradient">prowadzenie social mediów i marketing dla firm.</span></h1>
+          <h1 className="text-4xl md:text-6xl font-heading leading-[1.08] tracking-tight mb-6">Agencja social media Szczecin<br /><span className="text-gradient">prowadzenie social mediów i marketing firmowy.</span></h1>
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mb-7">FOTZ Studio to agencja marketingowa z własną produkcją zdjęć i wideo. Firmom ze Szczecina zapewniamy prowadzenie social mediów na Facebooku, Instagramie i LinkedIn, nagrywamy wideo, tworzymy content i kampanie reklamowe. Pracujemy z Poznania, a współpraca ma charakter zdalny.</p>
           <div className="flex flex-col sm:flex-row gap-3 items-start">
             <Link to="/konsultacja" className="dv-btn dv-btn-primary">Umów rozmowę online <ArrowRight aria-hidden="true" className="w-4 h-4" /></Link>
@@ -75,7 +75,7 @@ export default function SocialMediaSzczecin() {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16">
           <div>
             <p className="dv-eyebrow mb-3">Rynek szczeciński</p>
-            <h2 id="dla-kogo-heading" className="text-3xl md:text-4xl font-heading mb-5">Social media Szczecin: klienci biznesowi i lokalne marki</h2>
+            <h2 id="dla-kogo-heading" className="text-3xl md:text-4xl font-heading mb-5">Dla kogo pracujemy: klienci biznesowi i lokalne marki</h2>
             <p className="text-muted-foreground leading-relaxed mb-5">Stolica Pomorza Zachodniego to miasto portowe, akademickie i przygraniczne. Firmy mówią tu do kilku grup naraz: mieszkańców, studentów, turystów i klientów z Niemiec. Komunikacja w mediach społecznościowych powinna to uwzględniać, np. osobnymi kampaniami lub treściami dla poszczególnych odbiorców.</p>
             <p className="text-muted-foreground leading-relaxed">Lokalny biznes często opiera się na poleceniach i opiniach, dlatego relacje z klientami budujemy przez szybkie odpowiedzi w wiadomościach i komentarzach. Firmom B2B pomagamy pokazać kompetencje i ludzi, a markom konsumenckim przygotować krótkie filmy, które wyróżnią się w feedzie.</p>
           </div>
@@ -108,14 +108,14 @@ export default function SocialMediaSzczecin() {
       </section>
 
       <section id="pytania-social-media" className="container-wide px-6 md:px-12 py-12 md:py-16 scroll-mt-28" aria-labelledby="faq-heading">
-        <div className="max-w-3xl"><h2 id="faq-heading" className="text-3xl md:text-4xl font-heading mb-7">FAQ: social media dla firm ze Szczecina</h2>{faqs.map(faq => <details key={faq.question} className="border-b border-border py-5"><summary className="font-medium cursor-pointer pr-3">{faq.question}</summary><p className="text-muted-foreground leading-relaxed mt-4">{faq.answer}</p></details>)}</div>
+        <div className="max-w-3xl"><h2 id="faq-heading" className="text-3xl md:text-4xl font-heading mb-7">FAQ: agencja marketingowa Szczecin i social media</h2>{faqs.map(faq => <details key={faq.question} className="border-b border-border py-5"><summary className="font-medium cursor-pointer pr-3">{faq.question}</summary><p className="text-muted-foreground leading-relaxed mt-4">{faq.answer}</p></details>)}</div>
       </section>
 
       <section className="container-wide px-6 md:px-12 py-12 md:py-16" aria-labelledby="marketing-heading">
         <div className="max-w-3xl">
           <p className="dv-eyebrow mb-3">Kompleksowe podejście</p>
-          <h2 id="marketing-heading" className="text-3xl md:text-4xl font-heading mb-5">Kompleksowy marketing na 2026: social media, branding, strony i Google Ads</h2>
-          <p className="text-muted-foreground leading-relaxed mb-5">Profil firmowy działa lepiej, gdy prowadzi do dobrze przygotowanej strony, a reklama w mediach społecznościowych wspiera kampanie Google Ads i pozycjonowanie. Zajmujemy się też tworzeniem stron, SEO i identyfikacją wizualną, więc komunikacja marki w internecie może mieć spójny wizerunek we wszystkich kanałach. Kompleksowa obsługa nie jest obowiązkowa: możesz zacząć od samych social mediów. Branding i identyfikacja marki, projekty graficzne oraz tworzenie stron (web) mogą dojść później.</p>
+          <h2 id="marketing-heading" className="text-3xl md:text-4xl font-heading mb-5">Kompleksowy i spójny marketing na 2026: social media, branding, strony</h2>
+          <p className="text-muted-foreground leading-relaxed mb-5">Profil firmowy działa lepiej, gdy prowadzi do dobrze przygotowanej strony, a reklama na Facebooku i Instagramie wspiera kampanie Google Ads i pozycjonowanie. Zajmujemy się też tworzeniem stron, SEO i identyfikacją wizualną. Strony internetowe i profile powinny mówić tym samym językiem, a komunikacja marki w internecie budować spójny wizerunek we wszystkich kanałach. Kompleksowa obsługa nie jest obowiązkowa: możesz zacząć od samych social mediów. Branding i identyfikacja marki, projekty graficzne oraz tworzenie stron (web) mogą dojść później.</p>
           <p className="text-muted-foreground leading-relaxed mb-6">Jeśli planujesz budżet marketingowy na 2026 rok, pomożemy rozdzielić go między obsługę profili, produkcję treści i kampanie marketingowe. Będziemy raportować ruch na stronie z social mediów, każdy lead i zapytanie, żeby decyzje o kolejnych wydatkach opierały się na danych, a nie na przeczuciu.</p>
           <ul className="grid sm:grid-cols-2 gap-3 text-sm">
             <li><Link to="/uslugi/strony-internetowe/szczecin" className="underline underline-offset-4">Projektowanie stron internetowych dla firm ze Szczecina</Link></li>
