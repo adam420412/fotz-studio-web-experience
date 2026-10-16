@@ -8,7 +8,7 @@ const offer: SalesOfferProps = {
   ...filmOffer,
   title: 'Produkcja filmów dla firm: film reklamowy, spot, video | FOTZ',
   description: 'Profesjonalna produkcja filmów reklamowych: film reklamowy, film promocyjny, spot i rolki, w których marka mówi jasno. Scenariusz, zdjęcia, montaż.',
-  heading: 'Film reklamowy, spot, film promocyjny i video: profesjonalna produkcja filmów dla firm',
+  heading: 'Film reklamowy, spot, film promocyjny: profesjonalna produkcja filmów dla firm',
   eyebrow: 'Produkcja filmów · zespół FOTZ Studio z Poznania',
   lead: 'Zajmujemy się produkcją filmów od pomysłu, przez dzień zdjęciowy, po finalne pliki w formatach do publikacji. Realizujemy filmy reklamowe dla firm, materiały wizerunkowe, produktowe i krótkie formy do social media. Najpierw ustalamy, kto ma obejrzeć materiał, co powinien zapamiętać i gdzie go zobaczy.',
   cta: 'Wyceń produkcję filmu',
@@ -51,7 +51,7 @@ const offer: SalesOfferProps = {
     },
     {
       title: 'Filmy promocyjne dla firm, filmy szkoleniowe i krótkie filmy',
-      text: 'Tworzenie filmów promocyjnych zaczynamy od pytania, jaką decyzję ma podjąć widz. Nie dla każdej firmy najlepszy będzie długi film. Ten sam budżet można przeznaczyć na jeden dłuższy film wizerunkowy albo na kilka krótkich materiałów do testów w kampanii. Pomagamy wybrać formę pasującą do Twojej marki i do tego, czego potrzeba Twojej firmie teraz. Nagrywaliśmy materiały dla firm z różnych branż, m.in. sportu i wydarzeń, edukacji, rozrywki i motoryzacji. Pamiętaj jednak, że sam film nie wystarczy, żeby wyróżnić się na tle konkurencji — marka potrzebuje też jasnej oferty i przemyślanej dystrybucji.',
+      text: 'Tworzenie filmów promocyjnych zaczynamy od pytania, jaką decyzję ma podjąć widz. Nie dla każdej firmy najlepszy będzie długi film. Ten sam budżet można przeznaczyć na jeden dłuższy film wizerunkowy albo na kilka krótkich materiałów do testów w kampanii. Pomagamy wybrać formę pasującą do Twojej marki i do tego, czego potrzeba Twojej firmie teraz. Filmy, które wyróżniają się na tle konkurencji, zwykle mają jeden jasny przekaz i prawdziwych ludzi w kadrze. Nagrywaliśmy materiały dla firm z różnych branż, m.in. sportu i wydarzeń, edukacji, rozrywki i motoryzacji. Pamiętaj jednak, że sam film nie wystarczy, żeby wyróżnić się na tle konkurencji — marka potrzebuje też jasnej oferty i przemyślanej dystrybucji.',
       points: [
         'Materiały szkoleniowe i filmy instruktażowe pokazujące obsługę produktu lub procedurę.',
         'Filmy rekrutacyjne i wizerunkowe, w których występują pracownicy i prawdziwe miejsce pracy.',
@@ -61,7 +61,7 @@ const offer: SalesOfferProps = {
     },
     {
       title: 'Kompleksowa produkcja wideo: co robimy sami, a co wyceniamy osobno',
-      text: 'FOTZ Studio to nie klasyczne studio filmowe z własną halą zdjęciową. U nas produkcja filmów reklamowych dla firm odbywa się w siedzibie klienta, w plenerze lub w wynajętym miejscu. Przy zlecaniu tworzenia filmów warto wiedzieć, kto za co odpowiada. Kompleksowy zakres oznacza, że jedna ekipa odpowiada za koncepcję, nagrania i edycję. Profesjonalne filmy wymagają jednak czasem osób spoza zespołu — wtedy mówimy o tym otwarcie.',
+      text: 'FOTZ Studio to nie klasyczne studio filmowe z własną halą zdjęciową. U nas produkcja filmów reklamowych dla firm odbywa się w siedzibie klienta, w plenerze lub w wynajętym miejscu. Przy zlecaniu tworzenia filmów warto wiedzieć, kto za co odpowiada. Kompleksowy zakres oznacza, że jedna ekipa odpowiada za koncepcję, nagrania i edycję. Profesjonalne filmy wymagają jednak czasem osób spoza zespołu — wtedy mówimy o tym otwarcie. Zamiast deklarować najwyższą jakość, pokazujemy realizacje i rozpisujemy zakres prac.',
       points: [
         'W zespole: koncepcja, realizacja zdjęć, ujęcia lotnicze, edycja, kolor i dźwięk oraz przygotowanie formatów.',
         'Osobno: aktorzy, lektor, wynajem studia, licencje muzyczne i rozbudowane animacje 2D i 3D.',

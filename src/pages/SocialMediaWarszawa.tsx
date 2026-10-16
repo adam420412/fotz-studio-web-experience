@@ -81,17 +81,18 @@ export default function SocialMediaWarszawa() {
           <p><strong className="text-foreground">Facebook i Instagram</strong> sprawdzają się, gdy marka sprzedaje osobom prywatnym albo działa lokalnie. Tu najlepiej działają krótkie filmy, zdjęcia produktów i kampanie Meta Ads kierowane do określonych grup docelowych, np. mieszkańców wybranych dzielnic albo osób, które odwiedziły stronę.</p>
           <p><strong className="text-foreground">LinkedIn</strong> wybieramy dla firm biznesowych: usług profesjonalnych, technologii, HR, branży nieruchomości. Komunikacja opiera się na wiedzy specjalistów firmy i profilach osób z zarządu, a płatne kampanie pomagają dotrzeć do decydentów według stanowiska i branży.</p>
           <p><strong className="text-foreground">TikTok</strong> polecamy markom, których odbiorcy są tam aktywni i które są gotowe na swobodny, szybki format. Płatna promocja na tej platformie ma sens, gdy mamy materiał nagrany natywnie dla tej platformy, a nie przeniesiony z innego kanału.</p>
-          <p><strong className="text-foreground">Strona i lead.</strong> Kampanie kierujemy tam, gdzie klient może zostawić kontakt: na stronę, formularz lub do wiadomości. Mierzymy wejścia i konwersję, żeby ocenić, czy kampania przynosi zapytania, a nie tylko polubienia.</p>
+          <p><strong className="text-foreground">Strona i lead.</strong> Każda kampania prowadzi tam, gdzie klient może zostawić kontakt: na stronę, formularz lub do wiadomości. Mierzymy wejścia i konwersję, żeby ocenić, czy kampania przynosi zapytania, a nie tylko polubienia.</p>
         </div>
       </section>
 
       <section className="container-wide px-6 md:px-12 py-12 md:py-16" aria-labelledby="wybor-heading">
         <h2 id="wybor-heading" className="text-3xl md:text-4xl font-heading mb-5">Agencja social media z Warszawy czy agencja marketingowa z produkcją?</h2>
         <div className="grid lg:grid-cols-2 gap-8 max-w-6xl text-muted-foreground leading-relaxed">
-          <p>Agencja social media z Warszawy będzie bliżej fizycznie i łatwiej zorganizuje spotkanie w biurze klienta. To realna zaleta, której nie udajemy, że mamy. Wybierając nas, dostajesz za to zespół, w którym marketing w mediach społecznościowych, zdjęcia, montaż i reklama płatna są w jednych rękach. Nie musisz koordynować osobno agencji reklamowej, fotografa i operatora.</p>
+          <p>Lokalna agencja będzie bliżej fizycznie i łatwiej zorganizuje spotkanie w biurze klienta. To realna zaleta, której nie udajemy, że mamy. Wybierając nas, dostajesz za to zespół, w którym marketing w mediach społecznościowych, zdjęcia, montaż i reklama płatna są w jednych rękach. Nie musisz koordynować osobno agencji reklamowej, fotografa i operatora wideo.</p>
           <p>Profesjonalny partner w działaniach social media powinien przede wszystkim rozumieć Twój biznes i umieć przełożyć strategie marketingowe na konkretne publikacje. Dlatego przed startem pytamy o marżę na usługach, sezonowość, proces sprzedaży i to, kto w firmie odbiera zapytania. Profile social media to dopiero początek; liczy się to, co dzieje się po kliknięciu.</p>
           <p>Media społecznościowe zmieniają się szybko, więc w trakcie kampanii social media testujemy różne formaty i komunikaty. Dobra strategia marketingowa zostawia miejsce na testy, a decyzje opiera na danych, nie na przeczuciu. Optymalizacja budżetu reklamowego to stały element pracy, a nie jednorazowe ustawienie.</p>
           <p>Jeśli masz już własny zespół marketingowy, możemy go wesprzeć: przygotować strategię, wyprodukować pakiet materiałów albo przejąć kampanie płatne, a publikacje zostawić po Twojej stronie. Kompleksowa obsługa nie jest warunkiem współpracy.</p>
+          <p>Przed podpisaniem umowy o współpracy z agencją social media sprawdź, kto konkretnie będzie pracował nad Twoją marką, jak wygląda akceptacja treści i jak szybko agencja reaguje na komentarze klientów. Firma z Warszawy często ma bardziej rozbudowany proces decyzyjny niż mała firma lokalna, dlatego już na starcie ustalamy, kto zatwierdza publikacje, a kto kampanię reklamową.</p>
         </div>
       </section>
 
@@ -124,7 +125,7 @@ export default function SocialMediaWarszawa() {
       </section>
 
       <section className="container-wide px-6 md:px-12 py-12 md:pb-20" aria-labelledby="poradniki-heading">
-        <h2 id="poradniki-heading" className="text-2xl md:text-3xl font-heading mb-6">Poradniki: social media marketing i wybór agencji</h2>
+        <h2 id="poradniki-heading" className="text-2xl md:text-3xl font-heading mb-6">Poradniki przed współpracą z agencją social media</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
           <Link to="/blog/agencja-social-media-poznan" className="border border-border rounded-xl p-5"><h3 className="font-medium">Jak porównać agencje social media</h3><p className="text-sm text-muted-foreground mt-3">Pytania, które warto zadać przed podpisaniem umowy.</p></Link>
           <Link to="/agencja-social-media/cennik" className="border border-border rounded-xl p-5"><h3 className="font-medium">Cennik i modele rozliczeń</h3><p className="text-sm text-muted-foreground mt-3">Z czego składa się wycena obsługi i kampanii.</p></Link>
