@@ -413,7 +413,7 @@ const PozycjonowanieSzczecin = () => {
           <div className="flex flex-wrap gap-3">
             {[
               { city: "Warszawa", href: "/uslugi/pozycjonowanie/warszawa" },
-              { city: "Kraków", href: "/uslugi/pozycjonowanie/krakow" },
+              { city: "Kraków", href: "/seo/pozycjonowanie-krakow" },
               { city: "Wrocław", href: "/uslugi/pozycjonowanie/wroclaw" },
               { city: "Poznań", href: "/uslugi/pozycjonowanie/poznan" },
               { city: "Gdańsk", href: "/uslugi/pozycjonowanie/gdansk" },

@@ -514,7 +514,7 @@ const PozycjonowaniePoznan = () => {
           <div className="flex flex-wrap gap-x-6 gap-y-2">
             {[
               { label: "Pozycjonowanie Warszawa", url: "/uslugi/pozycjonowanie/warszawa" },
-              { label: "Pozycjonowanie Kraków", url: "/uslugi/pozycjonowanie/krakow" },
+              { label: "Pozycjonowanie Kraków", url: "/seo/pozycjonowanie-krakow" },
               { label: "Pozycjonowanie Wrocław", url: "/uslugi/pozycjonowanie/wroclaw" },
               { label: "Wszystkie usługi SEO", url: "/uslugi/pozycjonowanie" },
             ].map((link) => (

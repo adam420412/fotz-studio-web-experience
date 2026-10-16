@@ -482,7 +482,7 @@ const PozycjonowanieKalisz = () => {
           <div className="flex flex-wrap gap-3">
             {[
               { city: "Warszawa", href: "/uslugi/pozycjonowanie/warszawa" },
-              { city: "Kraków", href: "/uslugi/pozycjonowanie/krakow" },
+              { city: "Kraków", href: "/seo/pozycjonowanie-krakow" },
               { city: "Poznań", href: "/uslugi/pozycjonowanie/poznan" },
               { city: "Wrocław", href: "/uslugi/pozycjonowanie/wroclaw" },
               { city: "Gdańsk", href: "/uslugi/pozycjonowanie/gdansk" },

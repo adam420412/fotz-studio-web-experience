@@ -254,7 +254,6 @@ const FacebookInstagramAds = lazy(() => import("./pages/FacebookInstagramAds"));
 const LogoIBranding = lazy(() => import("./pages/LogoIBranding"));
 const UslugiPozycjonowanie = lazy(() => import("./pages/UslugiPozycjonowanie"));
 const PozycjonowanieWarszawa = lazy(() => import("./pages/PozycjonowanieWarszawa"));
-const PozycjonowanieKrakow = lazy(() => import("./pages/PozycjonowanieKrakow"));
 const PozycjonowanieWroclaw = lazy(() => import("./pages/PozycjonowanieWroclaw"));
 const PozycjonowaniePoznan = lazy(() => import("./pages/PozycjonowaniePoznan"));
 const PozycjonowanieGdansk = lazy(() => import("./pages/PozycjonowanieGdansk"));
@@ -276,7 +275,6 @@ const BlogCoToJestSeo = lazy(() => import("./pages/BlogCoToJestSeo"));
 const CennikStronInternetowych = lazy(() => import("./pages/CennikStronInternetowych"));
 const PozycjonowanieLublin = lazy(() => import("./pages/PozycjonowanieLublin"));
 const PozycjonowanieRzeszow = lazy(() => import("./pages/PozycjonowanieRzeszow"));
-const PozycjonowanieKatowice = lazy(() => import("./pages/PozycjonowanieKatowice"));
 const PozycjonowanieCzestochowa = lazy(() => import("./pages/PozycjonowanieCzestochowa"));
 const AgencjaMarketingowaLodz = lazy(() => import("./pages/AgencjaMarketingowaLodz"));
 const AgencjaMarketingowaGdansk = lazy(() => import("./pages/AgencjaMarketingowaGdansk"));
@@ -1299,7 +1297,6 @@ const StronyInternetoweDlaFirm = lazy(() => import("./pages/StronyInternetoweDla
 const PozycjonowanieLokalne = lazy(() => import("./pages/PozycjonowanieLokalne"));
 const TworzenieSklepowInternetowych = lazy(() => import("./pages/TworzenieSklepowInternetowych"));
 const ProjektStronyInternetowej = lazy(() => import("./pages/ProjektStronyInternetowej"));
-const AgencjaSEOKrakow = lazy(() => import("./pages/AgencjaSEOKrakow"));
 const TworzenieStronBialystok = lazy(() => import("./pages/TworzenieStronBialystok"));
 const BlogJakSprzedawacWInternecie = lazy(() => import("./pages/BlogJakSprzedawacWInternecie"));
 
@@ -1714,7 +1711,7 @@ const App = ({ Router = BrowserRouter, client = queryClient, initialPage }: AppP
                 <Route path="/uslugi/logo-i-branding" element={<LogoIBranding />} />
                 <Route path="/uslugi/pozycjonowanie" element={<UslugiPozycjonowanie />} />
                 <Route path="/uslugi/pozycjonowanie/warszawa" element={<PozycjonowanieWarszawa />} />
-                <Route path="/uslugi/pozycjonowanie/krakow" element={<PozycjonowanieKrakow />} />
+                <Route path="/uslugi/pozycjonowanie/krakow" element={<Redirect301 to="/seo/pozycjonowanie-krakow" />} />
                 <Route path="/uslugi/pozycjonowanie/wroclaw" element={<PozycjonowanieWroclaw />} />
                 <Route path="/uslugi/pozycjonowanie/poznan" element={<PozycjonowaniePoznan />} />
                 <Route path="/uslugi/pozycjonowanie/gdansk" element={<PozycjonowanieGdansk />} />
@@ -1723,7 +1720,7 @@ const App = ({ Router = BrowserRouter, client = queryClient, initialPage }: AppP
                 <Route path="/uslugi/pozycjonowanie/bialystok" element={<PozycjonowanieBialystok />} />
                 <Route path="/uslugi/pozycjonowanie/lublin" element={<PozycjonowanieLublin />} />
                 <Route path="/uslugi/pozycjonowanie/rzeszow" element={<PozycjonowanieRzeszow />} />
-                <Route path="/uslugi/pozycjonowanie/katowice" element={<PozycjonowanieKatowice />} />
+                <Route path="/uslugi/pozycjonowanie/katowice" element={<Redirect301 to="/seo/pozycjonowanie-katowice" />} />
                 <Route path="/uslugi/pozycjonowanie/czestochowa" element={<PozycjonowanieCzestochowa />} />
                 <Route path="/uslugi/pozycjonowanie/torun" element={<PozycjonowanieTorun />} />
                 <Route path="/uslugi/pozycjonowanie/bydgoszcz" element={<PozycjonowanieBydgoszcz />} />
@@ -1754,7 +1751,7 @@ const App = ({ Router = BrowserRouter, client = queryClient, initialPage }: AppP
                 <Route path="/uslugi/pozycjonowanie-lokalne" element={<PozycjonowanieLokalne />} />
                 <Route path="/uslugi/tworzenie-sklepow-internetowych" element={<TworzenieSklepowInternetowych />} />
                 <Route path="/uslugi/projekt-strony-internetowej" element={<ProjektStronyInternetowej />} />
-                <Route path="/agencja-seo-krakow" element={<AgencjaSEOKrakow />} />
+                <Route path="/agencja-seo-krakow" element={<Redirect301 to="/seo/pozycjonowanie-krakow" />} />
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<Redirect301 to="/seo/audyt" />} />

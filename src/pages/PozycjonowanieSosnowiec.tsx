@@ -481,8 +481,8 @@ const PozycjonowanieSosnowiec = () => {
           <div className="flex flex-wrap gap-x-6 gap-y-2">
             {[
               { label: "Pozycjonowanie Warszawa", url: "/uslugi/pozycjonowanie/warszawa" },
-              { label: "Pozycjonowanie Kraków", url: "/uslugi/pozycjonowanie/krakow" },
-              { label: "Pozycjonowanie Katowice", url: "/uslugi/pozycjonowanie/katowice" },
+              { label: "Pozycjonowanie Kraków", url: "/seo/pozycjonowanie-krakow" },
+              { label: "Pozycjonowanie Katowice", url: "/seo/pozycjonowanie-katowice" },
               { label: "Pozycjonowanie Wrocław", url: "/uslugi/pozycjonowanie/wroclaw" },
               { label: "Pozycjonowanie Poznań", url: "/uslugi/pozycjonowanie/poznan" },
               { label: "Pozycjonowanie Gdańsk", url: "/uslugi/pozycjonowanie/gdansk" },
