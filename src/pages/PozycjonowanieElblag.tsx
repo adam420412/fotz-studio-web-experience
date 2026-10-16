@@ -1,511 +1,72 @@
 import { SEOHead } from "@/components/seo/SEOHead";
-import { Layout } from "@/components/layout/Layout";
-import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
-import {
-  Search,
-  MapPin,
-  TrendingUp,
-  CheckCircle2,
-  ArrowRight,
-  BarChart2,
-  Star,
-  Building2,
-  Globe,
-  Target,
-  Clock,
-  Award,
-  Shield,
-} from "lucide-react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
-import { ContactSection } from "@/components/sections/ContactSection";
+import { LocalSeoOffer, type LocalSeoOfferProps } from "@/components/LocalSeoOffer";
 
-const faqItems = [
-  {
-    question: "Ile kosztuje pozycjonowanie w Elblągu?",
-    answer:
-      "Pozycjonowanie SEO w Elblągu zaczyna się od 800 zł netto miesięcznie dla małych firm usługowych i lokalnych. Pakiet STANDARD (1500-3000 zł) rekomendujemy dla e-commerce i firm z wyższą konkurencją. Pakiet PRO (3000-6000 zł) dla ambitnych projektów z branż turystyki lub logistyki portu. Elbląg to miasto portowe z rosnącą turystyką - potencjał SEO jest duży.",
+const offer: LocalSeoOfferProps = {
+  path: "/pozycjonowanie/elblag",
+  city: "Elbląg",
+  cityGenitive: "Elbląga",
+  headingPrefix: "Pozycjonowanie stron internetowych",
+  headingSuffix: " — agencja SEO, widoczność w Google i optymalizacja",
+  title: "Pozycjonowanie stron internetowych Elbląg — agencja SEO i Google",
+  description: "Pozycjonowanie stron w Elblągu: agencja SEO FOTZ Studio. Audyt, optymalizacja, wizytówka Google i rozsądne połączenie z reklamą Google Ads. Firmy z Elbląga obsługujemy zdalnie.",
+  lead: "Szukasz sposobu, by klienci z Elbląga i okolic trafiali z Google na Twoją ofertę, a nie tylko do konkurencji? Porządkujemy stronę, treści i drogę do kontaktu wokół usług, które chcesz sprzedawać. Zespół FOTZ pracuje w Poznaniu, a firmy z Elbląga i Żuław obsługujemy zdalnie.",
+  hero: { image: "fps", caption: "H. Cegielski – FPS — realizacja FOTZ dla firmy przemysłowej: strona i zdjęcia produkcji. Rzetelne materiały pomagają pokazać kompetencje firmy przed pierwszą rozmową." },
+  scopeTitle: "Pozycjonowanie stron w Elblągu — zakres usługi SEO",
+  planningTitle: "Pozycjonowanie Elbląg: jak zaczynamy współpracę?",
+  scope: [
+    { title: "Audyt SEO witryny", text: "Sprawdzamy indeksowanie, przekierowania, powielone adresy i działanie strony na urządzeniach mobilnych. Dane z Search Console pokazują, które podstrony mają wyświetlenia, a gdzie brakuje kliknięć.", href: "/seo/audyt", link: "Zobacz zakres audytu" },
+    { title: "Słowa kluczowe i podstrony", text: "Każdą usługę łączymy z jedną podstroną i grupą fraz, żeby podobne adresy nie konkurowały ze sobą o tę samą potrzebę klienta.", href: "/seo/pozycjonowanie", link: "Poznaj usługę pozycjonowania" },
+    { title: "Treści i własne zdjęcia", text: "Rozwijamy opisy ofert i odpowiedzi na pytania przed zakupem. Jako studio produkcyjne możemy przygotować zdjęcia lub wideo z Twojej firmy.", href: "/content-marketing/strategia", link: "Przejdź do strategii treści" },
+    { title: "Wizytówka Google i lokalne SEO", text: "Dla firm obsługujących klientów na miejscu porządkujemy Profil Firmy: kategorię, obszar działania, godziny i dane zgodne ze stroną.", href: "/uslugi/pozycjonowanie-lokalne", link: "Zobacz pozycjonowanie lokalne" },
+    { title: "Optymalizacja techniczna", text: "Metadane, linkowanie wewnętrzne, dane strukturalne i wydajność. Przy zmianie strony planujemy przekierowania, aby nie stracić wypracowanego ruchu.", href: "/seo/techniczne", link: "Poznaj prace techniczne" },
+    { title: "Pomiar zapytań", text: "Ustalamy, co jest wynikiem: telefon, wiadomość, rezerwacja czy zakup. Odróżniamy kliknięcie przycisku od zapytania, które dotarło do firmy.", href: "/kontakt", link: "Omów sposób pomiaru" },
+  ],
+  examplesTitle: "Pozycjonowanie stron Elbląg: usługi, firma B2B czy sklep?",
+  examplesIntro: "Inaczej układamy stronę warsztatu z Zatorza, inaczej ofertę zakładu, który sprzedaje w całym kraju. To przykładowe sytuacje do rozmowy o zakresie, a nie opisy wyników naszych klientów.",
+  examples: [
+    { title: "Usługi z wizytą klienta", text: "Gabinet, warsztat czy szkoła językowa potrzebują jasnej podstrony usługi, aktualnej wizytówki i prostego kontaktu z telefonu.", measure: "połączenia, wiadomości i rezerwacje z wyników wyszukiwania oraz Map, jeśli da się je zarejestrować." },
+    { title: "Przemysł i firmy B2B", text: "Elbląg ma tradycje przemysłowe i firmy produkcyjne, które sprzedają poza regionem. Rozwijamy strony produktów i zastosowań, a frazy z nazwą miasta traktujemy jako uzupełnienie.", measure: "liczba i jakość zapytań o konkretne produkty, oceniana z działem handlowym." },
+    { title: "Turystyka i sezon", text: "Noclegi, rejsy po Kanale Elbląskim czy wypoczynek nad Zalewem Wiślanym wymagają aktualnych terminów, cen i warunków rezerwacji przed sezonem.", measure: "zapytania z terminem i liczbą osób lub potwierdzone rezerwacje, jeśli system je udostępnia." },
+  ],
+  content: [
+    { title: "Pozycjonowanie stron internetowych Elbląg — na czym polega?", text: "Pozycjonowanie to praca nad treścią, strukturą i techniczną stroną witryny, dzięki której wyszukiwarka łączy ją z pytaniami klientów. SEO nie jest jednorazowym ustawieniem: obejmuje audyt, optymalizację, rozwój treści i kontrolę efektów. Dla przedsiębiorcy z Elbląga celem zwykle nie jest sam ruch, ale zapytania o konkretne usługi. Dlatego zaczynamy od oferty, obszaru obsługi i tego, ile nowych zleceń firma może przyjąć. Strona internetowa ma odpowiadać na potrzebę wyszukującego, a nie powtarzać nazwę miasta w każdym zdaniu." },
+    { title: "Rynek w Elblągu a strategie SEO dla Twojej firmy", text: "Elbląg łączy przemysł, usługi dla mieszkańców, handel i turystykę związaną z Kanałem Elbląskim, Starym Miastem i Zalewem Wiślanym. Klient szukający mechanika na Zawadzie potrzebuje czegoś innego niż kupiec hurtowy porównujący dostawców. Strategie dobieramy do grupy docelowej: dla usług lokalnych ważne są Mapy i podstrony z obszarem dojazdu, dla firm B2B — produkty, specyfikacje i zastosowania. Uwzględniamy też klientów z Żuław, Braniewa czy Pasłęka, jeśli rzeczywiście ich obsługujesz." },
+    { title: "Wizytówka Google i pozycjonowanie lokalne w Elblągu", text: "Pozycjonowanie lokalne obejmuje stronę oraz, dla kwalifikującej się firmy, Profil Firmy w Google. W mapach Google liczą się trafność, odległość i rozpoznawalność, dlatego wynik może różnić się w zależności od miejsca, z którego ktoś szuka. Wizytówka powinna mieć właściwą kategorię, prawdziwy adres lub obszar działania, godziny i zdjęcia. Lokalne SEO prowadzi z wizytówki do odpowiedniej podstrony usługi, a nie na stronę główną. Nie obiecujemy miejsca wśród 10 najlepszych wyników w każdej części miasta." },
+    { title: "Audyt, słowa kluczowe i optymalizacja SEO", text: "Audyt zaczynamy od podstron, które mają sprzedawać. Sprawdzamy, czy Google je indeksuje, na jakie frazy się wyświetlają i dlaczego nie przynoszą kliknięć. Słowa kluczowe dobieramy na podstawie oferty, danych z Search Console i analizy, co pokazują wyniki wyszukiwania. Optymalizacja SEO obejmuje tytuły, nagłówki, linkowanie, szybkość i czytelność na telefonie. Wysokie pozycje nie mają wartości, jeśli po kliknięciu klient nie znajduje ceny, zakresu ani kontaktu." },
+    { title: "Sklep internetowy i e-commerce z Elbląga", text: "Sklep internetowy potrzebuje innego planu niż strona usługowa. Porządkujemy kategorie, filtry, opisy produktów i adresy, które wyszukiwarka nie powinna indeksować. W e-commerce frazy z nazwą miasta mają mniejsze znaczenie niż produkty, ale lokalny odbiór może być atutem. Przy produktach pokazywanych w zakładce Zakupy sprawdzamy też spójność danych z Google Merchant Center. Sprzedaż oceniamy tylko wtedy, gdy platforma rzetelnie ją zlicza." },
+    { title: "Skuteczne pozycjonowanie stron internetowych a kampanie Google Ads", text: "SEO rozwija widoczność w bezpłatnych wynikach, a reklamy w Google mają osobny budżet. Kampania Google Ads — dawniej Google AdWords — pomaga zaistnieć w sieci od razu, gdy strona dopiero zdobywa widoczność. Działania SEM łączymy z pozycjonowaniem tak, by nie płacić za frazy, które przynoszą ruch organiczny. Reklama nie kupuje wyższej pozycji w wynikach organicznych. Kampanie reklamowe i ich prowadzenie wyceniamy osobno, a w raporcie rozdzielamy kanały." },
+    { title: "Content marketing, social media i rozpoznawalność marki", text: "Content marketing w SEO to przede wszystkim opisy usług i poradniki, które odpowiadają na pytania przed zakupem. Social media nie zastąpią strony, ale wspierają rozpoznawalność Twojej marki i pomagają dotrzeć do mieszkańców. Posty w mediach społecznościowych mogą kierować do konkretnej oferty. Lokalne media i portale bywają dobrym miejscem na wzmiankę o firmie, jeśli publikacja ma realną wartość dla czytelnika. Własne zdjęcia z realizacji pokazują firmę rzetelniej niż zdjęcia stockowe." },
+    { title: "Tworzenie stron www Elbląg a pozycjonowanie", text: "Nie zawsze trzeba projektować nową witrynę. Najpierw sprawdzamy, czy obecna strona pozwala na zmiany w treści, nagłówkach i adresach. Gdy przebudowa jest potrzebna, łączymy projektowanie stron www z planem SEO: zapisujemy ważne adresy, przygotowujemy przekierowania i kontrolę po publikacji. Nowoczesne strony to nie tylko wygląd, ale szybkość, dostępność i prosty formularz kontaktowy. Tworzenie stron internetowych i pozycjonowanie stron www wyceniamy jako osobne zakresy." },
+    { title: "Ile kosztuje pozycjonowanie w Elblągu i jak mierzymy efekty?", text: "Wycena zależy od rozmiaru serwisu, stanu technicznego, liczby ofert i potrzebnych materiałów. Nie podajemy stałego cennika, bo inny zakres ma strona jednego warsztatu, a inny sklep z setkami produktów. Raport łączy wykonane prace z danymi z Search Console i Google Analytics. Konwersja to dla nas konkretna akcja: telefon, wiadomość, rezerwacja lub zakup. Efekty obserwujemy w miesiącach, a nie dniach, i porównujemy podobne okresy przy ofercie sezonowej." },
+    { title: "Agencja SEO z Poznania dla firm z Elbląga", text: "Szukając agencji, która zajmie się Twoim biznesem, porównaj zakres prac, odpowiedzialność za wdrożenia i sposób raportowania. FOTZ to agencja marketingowa i studio produkcyjne z Poznania; firmy z Elbląga obsługujemy zdalnie, bez biura w mieście. Kompleksowy marketing nie oznacza, że każda firma potrzebuje wszystkich usług. Ustalamy priorytety dla Twojego biznesu i jeden kontakt po naszej stronie." },
+  ],
+  planning: [
+    { title: "Rozmowa o priorytetowej usłudze", text: "Ustalamy, którą ofertę rozwijać, kto jest odbiorcą, jaki obszar obsługujesz i jak przyjmujesz zapytania. Przeglądamy stronę i dostępne dane." },
+    { title: "Zakres i wycena przed startem", text: "Dzielimy prace na analizę, wdrożenia, treści i pomiar. Przed rozpoczęciem wskazujemy, co jest w cenie, co wymaga dodatkowej wyceny i kto akceptuje zmiany." },
+    { title: "Wdrożenia i przegląd danych", text: "Po publikacji sprawdzamy adresy, linki i kontakt na telefonie. W ustalonym terminie omawiamy widoczność, kliknięcia i zapytania oraz kolejny krok." },
+  ],
+  related: {
+    title: "Pozycjonowanie w innych miastach Pomorza i Warmii",
+    text: "Jeśli działasz także w Trójmieście lub na Warmii, zobacz zakres pracy dla Gdańska, Gdyni i Olsztyna. Przy kilku obszarach obsługi ustalamy wspólny plan zamiast powielać te same treści.",
+    links: [
+      { href: "/seo/pozycjonowanie-gdansk", label: "Pozycjonowanie Gdańsk" },
+      { href: "/uslugi/pozycjonowanie/gdynia", label: "Pozycjonowanie Gdynia" },
+      { href: "/uslugi/pozycjonowanie/olsztyn", label: "Pozycjonowanie Olsztyn" },
+    ],
   },
-  {
-    question: "Ile czasu trwa pozycjonowanie w Elblągu?",
-    answer:
-      "Pierwsze efekty widoczne są po 4-6 tygodni. Stabilne pozycje TOP 10 dla fraz lokalnych osiągamy w 2-4 miesiące. TOP 5 wymaga średnio 4-6 miesięcy pracy, ale zależy od konkurencji na frazy docelowe. Elbląg ma niższą konkurencję SEO niż duże metropolie - co przyspieszenia uzyskanie wyników.",
-  },
-  {
-    question: "Czy pozycjonujecie firmy z sektora turystyki i portów w Elblągu?",
-    answer:
-      "Zdecydowanie tak. Elbląg to jedno z głównych miast turystycznych nad Morzem Bałtyckim - frazy takie jak 'noclegi Elbląg', 'atrakcje turystyczne Elbląg', 'kajaki Elbląg' mają rosnące wyszukiwania. Specjalizujemy się w SEO dla hoteli, restauracji, wypożyczalni kajaków i agencji turystycznych. Obsługujemy również usługi logistyki portowej.",
-  },
-  {
-    question: "Jakie branże pozycjonujemy w Elblągu?",
-    answer:
-      "Mamy doświadczenie w turystyce (hotele, pensjonaty, restauracje), logistyce (porty, spedycja), handlu detalicznym (e-commerce), usługach lokalnych (hydraulika, fryzjerstwo, salony), edukacji, gastronomii i HoReCa. Elbląg to miasto portowe i turystyczne - sektorów jest wiele.",
-  },
-  {
-    question: "Jak port Elbląski wpływa na SEO w mieście?",
-    answer:
-      "Port Elbląski to jedno z najważniejszych miejsc pracy w mieście - firmy logistyczne, spedycje i producenci szukają partnerów online. Frazy takie jak 'logistyka Elbląg', 'spedycja port Elbląg', 'usługi portowe' mają stały popyt. SEO dla firm B2B z sektora portowo-logistycznego to nasza specjalność.",
-  },
-  {
-    question: "Czy SEO dla turystyki w Elblągu ma sens?",
-    answer:
-      "Absolutnie. Elbląg przyciąga turystów morskich, aktywnych (kajaki) i kulturalnych (katedra gotycka, muzea). Frazy takie jak 'rezerwacja hotelu Elbląg', 'kajaki Elbląg', 'co zobaczyć Elbląg' rosną każdego roku. Konkurencja SEO jest niska - idealna szansa do szybkiego zdobycia pozycji i dominacji na rynku turystycznym Elbląga.",
-  },
-];
-
-const PozycjonowanieElblag = () => {
-  const results = [
-    {
-      metric: "+245%",
-      label: "Wzrost ruchu organicznego",
-      context: "firma turystyczna Elbląg",
-    },
-    { metric: "TOP 3", label: "Pozycja w Google", context: "frazy lokalne Elbląg" },
-    { metric: "3 mies.", label: "Czas do pierwszej strony", context: "turystyka i hotele" },
-    { metric: "4,9/5", label: "Ocena klientów", context: "11 opinii" },
-  ];
-
-  const districts = [
-    "Stare Miasto",
-    "Śródmieście",
-    "Nowe Miasto",
-    "Grodzisko",
-    "Piaski",
-    "Robotnicze",
-  ];
-
-  const industries = [
-    { name: "Turystyka i hotele", icon: Globe },
-    { name: "Gastronomia i HoReCa", icon: Building2 },
-    { name: "Logistyka i porty", icon: TrendingUp },
-    { name: "Usługi lokalne", icon: Target },
-    { name: "E-commerce", icon: BarChart2 },
-    { name: "Edukacja i kultura", icon: Star },
-  ];
-
-  return (
-    <Layout>
-      <SEOHead
-        title="Pozycjonowanie Elbląg - lokalne SEO dla firm | fotz studio"
-        description="Pozycjonowanie stron Elbląg. Agencja SEO fotz studio - audyt SEO, optymalizacja, link building. SEO dla turystyki, hoteli i portów. Bezpłatna konsultacja SEO!"
-        canonical="https://www.fotz-studio.pl/pozycjonowanie/elblag"
-        keywords="pozycjonowanie elbląg, agencja seo elbląg, seo elbląg, pozycjonowanie stron elbląg, seo dla firm elbląg, pozycjonowanie lokalne elbląg, seo warmia mazury"
-      />
-      <ServiceSchema
-        name="Pozycjonowanie stron internetowych Elbląg"
-        description="Agencja SEO fotz studio oferuje profesjonalne pozycjonowanie stron dla firm z Elbląga. Audyt SEO, optymalizacja on-page, link building dla turystyki, hoteli, gastronomii i logistyki."
-        provider="fotz studio"
-        areaServed="Elblag"
-      />
-      <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://www.fotz-studio.pl/" },
-          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
-          { name: "Pozycjonowanie", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie" },
-          { name: "Elbląg", url: "https://www.fotz-studio.pl/pozycjonowanie/elblag" },
-        ]}/>
-      <FAQSchema items={faqItems} />
-
-      {/* Hero */}
-      <section className="relative min-h-[85vh] flex items-center justify-center bg-gray-900 overflow-hidden pt-20">
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-yellow-400/5 rounded-full blur-3xl" />
-          <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-yellow-400/5 rounded-full blur-3xl" />
-        </div>
-
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 bg-yellow-400/10 text-yellow-400 rounded-full px-4 py-2 text-sm font-medium mb-6">
-              <MapPin className="w-4 h-4" />
-              Pozycjonowanie · Elbląg nad Morzem Bałtyckim
-            </div>
-
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-              Pozycjonowanie{" "}
-              <span className="text-yellow-400">Elbląg</span> —
-              lokalne SEO dla firm portowych i turystycznych
-            </h1>
-
-            <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
-              Pomagamy firmom z Elbląga zdobyć pierwszą stronę Google. Specjalizujemy się w SEO dla turystyki, gastronomii, hoteli i logistyki portowej. Audyt SEO, optymalizacja i link building dostosowany do morskiego rynku Elbląga.
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" asChild className="text-base px-8 bg-yellow-400 text-gray-900 hover:bg-yellow-300">
-                <Link to="/kontakt?usluga=seo&wariant=audit#formularz">
-                  Zapytaj o audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
-              <Button size="lg" variant="outline" asChild className="text-base px-8 border-white text-white hover:bg-white/10">
-                <Link to="/uslugi/pozycjonowanie">
-                  Pakiety i ceny SEO
-                </Link>
-              </Button>
-            </div>
-
-            <div className="flex flex-wrap justify-center gap-6 mt-12 text-sm text-gray-400">
-              {["White-hat SEO", "Turystyka i logistyka", "Google Analytics 4", "Raport co 2 tygodnie"].map(
-                (item) => (
-                  <div key={item} className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-yellow-400" />
-                    <span>{item}</span>
-                  </div>
-                )
-              )}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Results */}
-      <section className="py-16 bg-gray-800/50 border-y border-gray-700">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {results.map((r, i) => (
-              <div key={i} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-1">
-                  {r.metric}
-                </div>
-                <div className="text-sm font-medium text-white">{r.label}</div>
-                <div className="text-xs text-gray-400 mt-1">{r.context}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Elbląg specifics */}
-      <section className="py-20 bg-gray-900">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              SEO w Elblągu — turystyka, port i rosnący rynek lokalny
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8 items-start">
-            <div>
-              <div className="space-y-6 text-gray-400">
-                <p>
-                  Elbląg to <strong className="text-white">ok. 118 tys. mieszkańców</strong> i jedno z
-                  najważniejszych miast turystycznych nad{" "}
-                  <strong className="text-white">Morzem Bałtyckim</strong>. Miasto przyciąga turystów
-                  z całego świata - zarówno aktywnych (kajaki, wycieczki) jak i kulturalnych (gotycka
-                  katedra, muzea, kanały).
-                </p>
-                <p>
-                  <strong className="text-white">Port Elbląski</strong> to jedno z pierwszych miast w
-                  Polsce pod względem przeładunków - firmy logistyczne, spedycje i producenci szukają
-                  partnerów online. Konkurencja SEO jest<strong className="text-white"> niska, a potencjał duży</strong>.
-                </p>
-                <p>
-                  Dla firm turystycznych (hotele, restauracje, kajaki) SEO to droga do nowych
-                  rezerwacji i gości. Dla biznesu portowego i logistyki - to kanał B2B do znalezienia
-                  partnerów handlowych. <strong className="text-white">Elbląg to niedoceniony rynek SEO</strong>.
-                </p>
-              </div>
-            </div>
-
-            <div>
-              <div className="bg-gray-800 border border-gray-700 rounded-xl p-6">
-                <h3 className="font-bold text-white mb-4">
-                  Pozycjonujemy firmy we wszystkich dzielnicach Elbląga
-                </h3>
-                <div className="flex flex-wrap gap-2">
-                  {districts.map((district) => (
-                    <span
-                      key={district}
-                      className="bg-yellow-400/10 text-yellow-400 text-sm px-3 py-1 rounded-full font-medium"
-                    >
-                      {district}
-                    </span>
-                  ))}
-                </div>
-                <p className="text-xs text-gray-400 mt-4">
-                  + Cały rejon Warmińsko-Mazurski i przymorze
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Industries */}
-      <section className="py-20 bg-gray-800/30">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-white mb-4">
-              Branże, które pozycjonujemy w Elblągu
-            </h2>
-            <p className="text-gray-400 max-w-xl mx-auto">
-              Od turystyki po logistykę portową — mamy doświadczenie
-              w sektorach typowych dla Elbląga.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-3xl mx-auto">
-            {industries.map((ind, i) => (
-              <div key={i}>
-                <div className="bg-gray-800 border border-gray-700 rounded-xl p-5 flex items-center gap-3 hover:border-yellow-400/40 transition-colors">
-                  <div className="w-10 h-10 bg-yellow-400/10 rounded-lg flex items-center justify-center shrink-0">
-                    <ind.icon className="w-5 h-5 text-yellow-400" />
-                  </div>
-                  <span className="font-medium text-white text-sm">{ind.name}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Process */}
-      <section className="py-20 bg-gray-900">
-        <div className="container mx-auto px-4 max-w-3xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-white mb-4">
-              Jak działamy — pozycjonowanie firm z Elbląga
-            </h2>
-          </div>
-
-          <div className="space-y-6">
-            {[
-              {
-                step: "01",
-                title: "Konsultacja i zakres audytu SEO",
-                desc: "Analizujemy Twoją stronę pod kątem fraz lokalnych (Elbląg, turystyka morska) i branżowych. Sprawdzamy techniczne podstawy i profil konkurencji.",
-              },
-              {
-                step: "02",
-                title: "Strategia dla Elbląga",
-                desc: "Dobieramy słowa kluczowe dla turystyki, hoteli, gastronomii i logistyki. Plany content uwzględniają lokalne trendy i sezonowość (letnie wakacje, weekendy morskie).",
-              },
-              {
-                step: "03",
-                title: "Wdrożenie i optymalizacja",
-                desc: "Optymalizujemy stronę technicznie, tworzymy treści SEO na frazy elbląskie i budujemy linki z zasobów turystycznych i portowych.",
-              },
-              {
-                step: "04",
-                title: "Raportowanie i skalowanie",
-                desc: "Co 2 tygodnie raportujemy pozycje i ruch. Gdy strona nabiera autorytetu, rozszerzamy na kolejne frazy i ekspandujemy geograficznie.",
-              },
-            ].map((step, i) => (
-              <div key={i}>
-                <div className="flex gap-6 items-start">
-                  <div className="w-14 h-14 bg-yellow-400 rounded-xl flex items-center justify-center shrink-0 text-gray-900 font-bold text-lg">
-                    {step.step}
-                  </div>
-                  <div className="pt-2">
-                    <h3 className="font-semibold text-white text-lg mb-1">
-                      {step.title}
-                    </h3>
-                    <p className="text-gray-400">{step.desc}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Pricing */}
-      <section className="py-20 bg-gray-800/30">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-white mb-4">
-              Pakiety SEO dla Elbląga
-            </h2>
-            <p className="text-gray-400 max-w-xl mx-auto">
-              Elastyczne plany dostosowane do budżetu i potrzeb Twojego biznesu
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              {
-                name: "LOCAL",
-                price: "800-1500 zł",
-                period: "/miesiąc",
-                desc: "Idealne dla małych firm usługowych i lokalnych",
-                features: [
-                  "Audyt SEO",
-                  "Optymalizacja na 10-15 fraz",
-                  "Techniczne SEO",
-                  "Basic link building",
-                  "Raport co 2 tygodnie",
-                  "Support email",
-                ],
-              },
-              {
-                name: "STANDARD",
-                price: "1500-3000 zł",
-                period: "/miesiąc",
-                desc: "Dla firm z wyższą konkurencją i ambicją wzrostu",
-                features: [
-                  "Audyt SEO + strategia",
-                  "Optymalizacja na 25-35 fraz",
-                  "Content SEO (6-8 artykułów)",
-                  "Advanced link building",
-                  "Raport co 2 tygodnie",
-                  "Monthly strategy call",
-                ],
-                highlighted: true,
-              },
-              {
-                name: "PRO",
-                price: "3000-6000 zł",
-                period: "/miesiąc",
-                desc: "Dla ambitnych projektów e-commerce i turystyki",
-                features: [
-                  "Full SEO audit + strategy",
-                  "Optymalizacja 50+ fraz",
-                  "Content SEO (12-16 artykułów)",
-                  "Aggressive link building",
-                  "Technical SEO deep dive",
-                  "Bi-weekly strategy calls",
-                ],
-              },
-            ].map((pkg, i) => (
-              <div
-                key={i}
-                className={`rounded-xl p-6 border transition-colors ${
-                  pkg.highlighted
-                    ? "bg-yellow-400/10 border-yellow-400"
-                    : "bg-gray-800 border-gray-700"
-                }`}
-              >
-                <h3 className="text-xl font-bold text-white mb-1">{pkg.name}</h3>
-                <div className="flex items-baseline gap-1 mb-2">
-                  <span className="text-3xl font-bold text-yellow-400">{pkg.price}</span>
-                  <span className="text-sm text-gray-400">{pkg.period}</span>
-                </div>
-                <p className="text-sm text-gray-400 mb-6">{pkg.desc}</p>
-                <ul className="space-y-3 mb-6">
-                  {pkg.features.map((feature, j) => (
-                    <li key={j} className="flex items-start gap-2 text-sm text-gray-300">
-                      <CheckCircle2 className="w-4 h-4 text-yellow-400 mt-0.5 shrink-0" />
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-                <Button
-                  size="lg"
-                  asChild
-                  className={`w-full ${
-                    pkg.highlighted
-                      ? "bg-yellow-400 text-gray-900 hover:bg-yellow-300"
-                      : "border-yellow-400 text-yellow-400 hover:bg-yellow-400/10"
-                  }`}
-                  variant={pkg.highlighted ? "default" : "outline"}
-                >
-                  <Link to="/kontakt">Wybierz pakiet</Link>
-                </Button>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-20 bg-yellow-400 text-gray-900">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Gotowy na pierwszą stronę Google w Elblągu?
-          </h2>
-          <p className="text-gray-900/80 text-lg mb-8 max-w-xl mx-auto">
-            Zapytaj o audyt SEO. Zakres i wycenę ustalimy na bezpłatnej konsultacji, a w audycie przeanalizujemy Twoje frazy dla Elbląga
-            i pokażemy, co powstrzymuje Cię przed TOP 10.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary" asChild className="text-base px-8 bg-gray-900 text-white hover:bg-gray-800">
-              <Link to="/kontakt?usluga=seo&wariant=audit#formularz">
-                Zapytaj o audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              asChild
-              className="text-base px-8 border-gray-900 text-gray-900 hover:bg-gray-900/10"
-            >
-              <Link to="/uslugi/pozycjonowanie">Wszystkie pakiety SEO</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section className="py-20 bg-gray-800/30">
-        <div className="container mx-auto px-4 max-w-3xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-white mb-4">
-              FAQ — pozycjonowanie stron Elbląg
-            </h2>
-          </div>
-          <Accordion type="single" collapsible className="space-y-3">
-            {faqItems.map((item, i) => (
-              <div key={i}>
-                <AccordionItem
-                  value={`item-${i}`}
-                  className="bg-gray-800 border border-gray-700 rounded-xl px-6"
-                >
-                  <AccordionTrigger className="text-left font-medium hover:no-underline py-5 text-white hover:text-yellow-400">
-                    {item.question}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-gray-400 pb-5">
-                    {item.answer}
-                  </AccordionContent>
-                </AccordionItem>
-              </div>
-            ))}
-          </Accordion>
-        </div>
-      </section>
-
-      {/* Internal nav */}
-      <section className="py-12 bg-gray-900 border-t border-gray-700">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <h3 className="font-semibold text-white mb-4 text-sm uppercase tracking-wide">
-            Pozycjonowanie w innych miastach
-          </h3>
-          <div className="flex flex-wrap gap-3">
-            {[
-              { city: "Gdańsk", href: "/seo/pozycjonowanie-gdansk" },
-              { city: "Szczecin", href: "/uslugi/pozycjonowanie/szczecin" },
-              { city: "Toruń", href: "/uslugi/pozycjonowanie/torun" },
-              { city: "Bydgoszcz", href: "/uslugi/pozycjonowanie/bydgoszcz" },
-              { city: "Warszawa", href: "/seo/pozycjonowanie-warszawa" },
-              { city: "Kraków", href: "/seo/pozycjonowanie-krakow" },
-              { city: "Wrocław", href: "/seo/pozycjonowanie-wroclaw" },
-            ].map((item) => (
-              <Link
-                key={item.city}
-                to={item.href}
-                className="bg-gray-800 hover:bg-yellow-400/10 text-gray-300 hover:text-yellow-400 transition-colors text-sm px-4 py-2 rounded-full font-medium border border-gray-700 hover:border-yellow-400"
-              >
-                {item.city}
-              </Link>
-            ))}
-          </div>
-          <div className="mt-4">
-            <Link
-              to="/uslugi/pozycjonowanie"
-              className="text-yellow-400 hover:text-yellow-300 text-sm font-medium inline-flex items-center gap-1"
-            >
-              <ArrowRight className="w-3 h-3" /> Wszystkie pakiety pozycjonowania
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <ContactSection />
-    </Layout>
-  );
+  faqs: [
+    { question: "Na czym polega pozycjonowanie stron?", answer: "To praca nad treścią, strukturą i technicznym stanem witryny, aby wyszukiwarka mogła powiązać ofertę z pytaniem klienta. Zaczynamy od audytu i celu firmy, a potem wdrażamy poprawki według priorytetów." },
+    { question: "Ile kosztuje pozycjonowanie w Elblągu?", answer: "Wycenę przygotowujemy po poznaniu strony, oferty i celu. Zakres może obejmować jednorazowy audyt, naprawę techniczną albo stały rozwój treści. W propozycji rozpisujemy zadania, terminy i ewentualne koszty dodatkowe." },
+    { question: "Jak długo trzeba czekać na efekty pozycjonowania?", answer: "Zależy to od stanu witryny, konkurencji i zakresu prac. Pierwsze zmiany w danych bywają widoczne po kilku tygodniach, ale stabilną ocenę robimy po kilku miesiącach. Nie gwarantujemy konkretnej pozycji ani liczby zapytań." },
+    { question: "Czy macie biuro w Elblągu?", answer: "Nie. Zespół FOTZ Studio pracuje w Poznaniu, a firmy z Elbląga obsługujemy zdalnie: rozmowy wideo, wspólne dokumenty i ustalony obieg akceptacji. Nie przedstawiamy tej oferty jako biura w Elblągu." },
+    { question: "Czym różni się pozycjonowanie lokalne od ogólnopolskiego?", answer: "Lokalne dotyczy klientów z określonego obszaru i obejmuje wizytówkę oraz wyniki w Mapach. Ogólnopolskie skupia się na produktach i usługach bez względu na miejsce. Wiele firm z Elbląga potrzebuje obu podejść dla różnych ofert." },
+    { question: "Czy muszę mieć stronę, żeby pozycjonować wizytówkę?", answer: "Wizytówka może działać bez strony, ale strona daje miejsce na pełny opis usług, cennik i odpowiedzi na pytania. Zwykle polecamy połączyć oba elementy." },
+  ],
 };
 
-export default PozycjonowanieElblag;
+export default function PozycjonowanieElblag() {
+  return <>
+    <SEOHead title={offer.title} description={offer.description} canonical={`https://www.fotz-studio.pl${offer.path}`} />
+    <LocalSeoOffer {...offer} />
+  </>;
+}
