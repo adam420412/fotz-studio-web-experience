@@ -66,7 +66,7 @@ const content = {
     },
     {
       "title": "Dla kogo jest nasza agencja digital marketingu",
-      "text": "Współpraca z agencją ma sens, gdy marketing internetowy przestał być dodatkiem, a w firmie brakuje czasu, kompetencji albo spójnego procesu między stroną, materiałami i kampaniami reklamowymi. Pracujemy z właścicielami małych i średnich firm, z działami marketingu, które potrzebują wsparcia wykonawczego, oraz z instytucjami prowadzącymi rekrutację lub komunikację wydarzeń. Obsługujemy firmy usługowe, sklepy, szkoły i organizacje sportowe.",
+      "text": "Współpraca z agencją ma sens, gdy marketing internetowy przestał być dodatkiem, a w firmie brakuje czasu, kompetencji albo spójnego procesu między stroną, materiałami i kampaniami reklamowymi. Pracujemy z właścicielami małych i średnich firm, z działami marketingu, które potrzebują wsparcia wykonawczego, oraz z instytucjami prowadzącymi rekrutację lub komunikację wydarzeń. Obsługujemy firmy usługowe, sklepy, szkoły i organizacje sportowe. W każdej z tych grup inny jest cykl decyzji klienta, dlatego plan marketingowy budujemy od zera, a nie kopiujemy z poprzedniego projektu.",
       "points": [
         "Firma usługowa, która chce generować zapytania z Google i z reklam, a nie tylko polubienia.",
         "Właściciel sklepu internetowego, który potrzebuje porządku w strukturze, opisach i kampaniach produktowych.",
@@ -95,7 +95,7 @@ const content = {
     },
     {
       "title": "SEO, SEM i kampania reklamowa w jednym planie",
-      "text": "Czy jedna agencja może prowadzić pozycjonowanie i reklamy jednocześnie? Tak, i często to upraszcza pracę. Dane z kampanii PPC pokazują, które zapytania przynoszą kontakty, więc strategie SEO mogą skupić się na frazach o realnej wartości. Z kolei dobrze opisane podstrony obniżają ryzyko, że płatny ruch trafi na stronę bez odpowiedzi. SEO i SEM różnią się jednak tempem: reklama może zacząć działać po zatwierdzeniu, a efekty SEO zwykle wymagają dłuższej pracy nad treściami i techniką. Nie gwarantujemy pierwszego miejsca w wyszukiwarce Google — nikt nie kontroluje algorytmu — ale możemy pokazać plan, który usuwa przeszkody i rozwija treści pod pytania klientów. Coraz częściej uwzględniamy też SEO AI, czyli to, jak strona jest opisywana w odpowiedziach asystentów i modeli językowych.",
+      "text": "Czy jedna agencja może prowadzić pozycjonowanie i reklamy jednocześnie? Tak, i często to upraszcza pracę. Dane z kampanii PPC pokazują, które zapytania przynoszą kontakty, więc strategie SEO mogą skupić się na frazach o realnej wartości. Z kolei dobrze opisane podstrony obniżają ryzyko, że płatny ruch trafi na stronę bez odpowiedzi. SEO i SEM różnią się jednak tempem: reklama może zacząć działać po zatwierdzeniu, a efekty SEO zwykle wymagają dłuższej pracy nad treściami i techniką. Nie gwarantujemy pierwszego miejsca w wyszukiwarce Google — nikt nie kontroluje algorytmu — ale możemy pokazać plan, który usuwa przeszkody i rozwija treści pod pytania klientów. W zakresie SEO pracuje u nas specjalista SEO razem z osobą od treści, a dane z SEO i PPC omawiamy na wspólnym spotkaniu. Coraz częściej uwzględniamy też SEO AI, czyli to, jak strona jest opisywana w odpowiedziach asystentów i modeli językowych.",
       "points": [
         "Słowa kluczowe dobieramy według intencji: informacyjnej, porównawczej i zakupowej.",
         "Płatna kampania w Google pomaga sprawdzić komunikat, zanim powstanie rozbudowana treść SEO.",
@@ -108,14 +108,14 @@ const content = {
     {
       "title": "Content marketing i materiały, które produkujemy sami",
       "text": "Wiele firm ma pomysł na content marketing, ale brakuje im materiałów. Tu wyróżnia nas własna produkcja: robimy zdjęcia, filmy i ujęcia z drona, piszemy teksty i projektujemy grafiki do reklam. Dzięki temu seo i content mogą korzystać z tych samych zdjęć i nagrań, co kampanie reklamowe i social media. Przed produkcją ustalamy, gdzie materiał zostanie opublikowany, w jakich formatach i w ilu wersjach. Taka organizacja ogranicza dodatkowe dni zdjęciowe i pozwala testować różne kreacje w tej samej kampanii.",
-      "href": "/content-marketing",
+      "href": "/content-marketing/strategia",
       "link": "Content marketing"
     },
     {
       "title": "Wybór agencji: na co zwrócić uwagę",
-      "text": "Wybór agencji warto oprzeć na pytaniach o proces, a nie o nazwy pakietów. Dobra agencja marketingowa potrafi wyjaśnić, co zrobi w pierwszym miesiącu, kto u niej odpowiada za Twoje konto i jak oceni efekt. Zanim uznasz, że to odpowiednia agencja marketingu internetowego, porównaj odpowiedzi kilku wykonawców na te same pytania. Jeśli szukasz wyłącznie wykonawcy do pozycjonowania, sprawdź, czy agencja SEO będzie dobrym wyborem przy Twoim modelu sprzedaży — czasem lepiej połączyć SEO z reklamą i pracą nad stroną.",
+      "text": "Wybór agencji warto oprzeć na pytaniach o proces, a nie o nazwy pakietów. Dobra agencja marketingowa potrafi wyjaśnić, co zrobi w pierwszym miesiącu, kto u niej odpowiada za Twoje konto i jak oceni efekt. Zanim uznasz, że to odpowiednia agencja marketingu internetowego, porównaj odpowiedzi kilku wykonawców na te same pytania. Jeśli szukasz wyłącznie wykonawcy do pozycjonowania, sprawdź, czy agencja SEO będzie dobrym wyborem przy Twoim modelu sprzedaży — czasem lepiej połączyć SEO z reklamą i pracą nad stroną. Gdy chcesz wybrać agencję SEO, zapytaj, kto konkretnie wykona audyt i czy specjaliści od SEO mają wpływ na treści oraz technikę strony. Skuteczna agencja nie obiecuje wyników z góry, tylko pokazuje, jak będzie je mierzyć. Doświadczona agencja marketingowa poznaje się po pytaniach, które zadaje na pierwszym spotkaniu, a nie po liczbie logotypów na stronie.",
       "points": [
-        "Jakie kompetencje agencja posiada w zespole, a co zleca podwykonawcom?",
+        "Co oferuje agencja we własnym zespole, a co zleca podwykonawcom?",
         "Czy dana agencja pokazuje realizacje podobne do Twojego projektu i opisuje swoją rolę w nich?",
         "Kto jest właścicielem kont reklamowych, analityki i plików po zakończeniu współpracy?",
         "Jak oddzielony jest koszt obsługi od budżetu płatnych kampanii?",
@@ -125,16 +125,31 @@ const content = {
       "link": "Poradnik: jak wybrać agencję marketingową"
     },
     {
+      "title": "Email marketing i relacje z klientami",
+      "text": "Nie każdy kontakt kończy się zakupem przy pierwszej wizycie. Dlatego w obszarach marketingu, które obsługujemy, jest też komunikacja z osobami, które już znają firmę: newsletter, sekwencje powitalne po zapisie i przypomnienia o ofercie. Celem marketingu bezpośredniego jest utrzymanie relacji z klientami i powrót potencjalnego klienta, który porzucił formularz lub koszyk. Przy wdrożeniu email marketingu ustalamy źródła zapisów, zgody, treść wiadomości i sposób mierzenia odpowiedzi. Gdy firma korzysta już z narzędzia do wysyłek, pracujemy na nim, zamiast przenosić bazę bez potrzeby.",
+      "points": [
+        "Formularze zapisu na stronie i w materiałach reklamowych.",
+        "Seria wiadomości po pobraniu materiału lub wysłaniu zapytania.",
+        "Remarketing łączący kampanie reklamowe z komunikacją do istniejących kontaktów."
+      ]
+    },
+    {
+      "title": "Marketing cyfrowy dopasowany do Twojej marki",
+      "text": "Agencja interaktywna, agencja digital czy agencja specjalizująca się w marketingu efektywnościowym — nazwy bywają różne, a o dopasowaniu decyduje sposób pracy. W FOTZ Studio zakres marketingu cyfrowego wynika z tego, jak Twoja marka sprzedaje: czy klient decyduje szybko, czy porównuje oferty tygodniami, czy kupuje w sklepie internetowym, czy prosi o wycenę. Inne materiały reklamowe przygotujemy dla szkoły prowadzącej rekrutację, a inne dla producenta, który szuka partnerów B2B. Spójny ton, zdjęcia i filmy sprawiają, że reklama, profil w mediach społecznościowych i strona wyglądają jak jedna firma, a nie trzech różnych wykonawców.",
+      "href": "/realizacje/dawid-edu",
+      "link": "Przykład: kampania rekrutacyjna Dawid EDU"
+    },
+    {
       "title": "Realizacje naszej agencji",
-      "text": "Profesjonalna agencja digital powinna pokazać prace, które da się sprawdzić. W portfolio FOTZ Studio są m.in. strona i materiały dla Enea Stadionu w Poznaniu, projekty dla FPS Cegielski, Gierky, RPPG i Klagem, kampania Meta Ads wspierająca rekrutację Dawid EDU oraz spot dla WSB Merito. Każdy z tych projektów miał inny cel i inny zakres — od produkcji wideo po stronę WWW i reklamy w social media. Przy pierwszej rozmowie możemy omówić przykłady najbliższe Twojej branży.",
+      "text": "Profesjonalna agencja digital powinna pokazać prace, które da się sprawdzić. Dobra agencja nie ukrywa, którą część projektu wykonała sama. W portfolio FOTZ Studio są m.in. strona i materiały dla Enea Stadionu w Poznaniu, projekty dla FPS Cegielski, Gierky, RPPG i Klagem, kampania Meta Ads wspierająca rekrutację Dawid EDU oraz spot dla WSB Merito. Każdy z tych projektów miał inny cel i inny zakres — od produkcji wideo po stronę WWW i reklamy w social media. Przy pierwszej rozmowie możemy omówić przykłady najbliższe Twojej branży.",
       "href": "/realizacje",
       "link": "Zobacz realizacje"
     },
     {
       "title": "Ile kosztuje marketing internetowy w Twojej firmie",
-      "text": "Co wpływa na koszty współpracy z agencją marketingu internetowego? Przede wszystkim zakres i tempo. Nie publikujemy stałego cennika, bo dwie firmy z tej samej branży mogą potrzebować zupełnie innych działań. Wycenę przygotowujemy po rozmowie i krótkiej diagnozie, a koszt emisji reklam w Google czy na Facebooku zawsze rozpisujemy osobno od wynagrodzenia agencji.",
+      "text": "Co wpływa na koszty współpracy z agencją marketingu internetowego? Przede wszystkim zakres i tempo. Nie publikujemy stałego cennika, bo dwie firmy z tej samej branży mogą potrzebować zupełnie innych działań. Wycenę przygotowujemy po rozmowie i krótkiej diagnozie, a koszt emisji reklam w Google czy na Facebooku zawsze rozpisujemy osobno od wynagrodzenia agencji. Możemy zaoferować etap diagnozy jako osobne zlecenie, a po nim przedstawić plan i koszt dalszych działań w Twojej firmie.",
       "points": [
-        "Liczba kanałów: samo SEO, sama kampania reklamowa czy połączenie kilku obszarów.",
+        "Liczba kanałów: samo SEO, sama kampania reklamowa czy połączenie kilku obszarów zakresu marketingu internetowego.",
         "Stan wyjściowy: czy strona wymaga poprawek, czy jest gotowa na ruch z reklam.",
         "Produkcja: liczba zdjęć, filmów, grafik i tekstów w miesiącu.",
         "Model współpracy: jednorazowy projekt, okres próbny albo stała obsługa.",
@@ -145,7 +160,7 @@ const content = {
     },
     {
       "title": "Pomiar, raport i dalsze decyzje",
-      "text": "Skutecznego marketingu nie da się ocenić po liczbie publikacji. Dlatego przed startem ustalamy, co jest konwersją dla Twojej firmy i jak ją mierzymy: formularz, telefon, zakup, zapis. Raport pokazuje wykonane działania, dane z analityki i kont reklamowych oraz rekomendacje na kolejny okres. Ewentualne zwiększenie budżetu wynika z oceny wyników i możliwości firmy. Nie gwarantujemy konkretnej liczby nowych klientów, ale pokazujemy, skąd przychodzą zapytania i które działania warto rozwijać, a które wyłączyć."
+      "text": "Skutecznego marketingu nie da się ocenić po liczbie publikacji ani po zasięgu jednej kampanii reklamowej. Dlatego przed startem ustalamy, co jest konwersją dla Twojej firmy i jak ją mierzymy: formularz, telefon, zakup, zapis. Raport pokazuje wykonane działania, dane z analityki i kont reklamowych oraz rekomendacje na kolejny okres. Ewentualne zwiększenie budżetu wynika z oceny wyników i możliwości firmy. Nie gwarantujemy konkretnej liczby nowych klientów, ale pokazujemy, skąd przychodzą zapytania i które działania warto rozwijać, a które wyłączyć. Rekomendacje omawiamy na krótkim spotkaniu, żeby decyzja o kolejnym kroku zapadała wspólnie, a nie na podstawie samego zestawienia liczb."
     }
   ],
   "faqs": [
@@ -160,6 +175,14 @@ const content = {
     {
       "question": "Czy agencja gwarantuje osiągnięcie określonych rezultatów?",
       "answer": "Nie. Wynik zależy od oferty, konkurencji, budżetu i obsługi zapytań po stronie firmy. Nie składamy obietnic dotyczących pozycji ani sprzedaży — zobowiązujemy się do uzgodnionego zakresu prac, przejrzystego raportu i rekomendacji opartych na danych."
+    },
+    {
+      "question": "Czy jesteście agencją SEO, czy agencją marketingową?",
+      "answer": "Jesteśmy agencją marketingową, w której SEO jest jednym z filarów. Profesjonalna agencja SEO skupia się zwykle wyłącznie na wyszukiwarce, a my łączymy działania SEO ze stroną, treściami, kampaniami reklamowymi i produkcją. Jeśli potrzebujesz tylko pozycjonowania, możesz zlecić nam sam ten zakres — działamy wtedy jak agencja SEO."
+    },
+    {
+      "question": "Jakie kampanie reklamowe prowadzicie?",
+      "answer": "Prowadzimy kampanie w wyszukiwarce Google, kampanie produktowe dla sklepów oraz reklamy na Facebooku i Instagramie. Rodzaj kampanii dobieramy do celu: zapytań, sprzedaży, zapisów albo budowania rozpoznawalności."
     },
     {
       "question": "Czy współpracujecie tylko z firmami z Poznania?",
@@ -192,7 +215,7 @@ export default function AgencjaMarketinguInternetowego() {
   return <>
     <SEOHead
       title="Agencja marketingu internetowego: SEO i digital | FOTZ"
-      description="Agencja marketingu internetowego FOTZ Studio: SEO, kampanie Google Ads, Facebook i social media. Zakres i wycena dopasowane do Twojego biznesu."
+      description="Agencja marketingu internetowego FOTZ Studio: marketing internetowy, SEO, kampania Google Ads, Facebook i social media dopasowane do Twojego biznesu."
       canonical="https://www.fotz-studio.pl/agencja-marketingu-internetowego"
     />
     <ServiceEditorial {...content} />
