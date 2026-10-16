@@ -480,7 +480,7 @@ const PozycjonowanieElblag = () => {
               { city: "Toruń", href: "/uslugi/pozycjonowanie/torun" },
               { city: "Bydgoszcz", href: "/uslugi/pozycjonowanie/bydgoszcz" },
               { city: "Warszawa", href: "/uslugi/pozycjonowanie/warszawa" },
-              { city: "Kraków", href: "/uslugi/pozycjonowanie/krakow" },
+              { city: "Kraków", href: "/seo/pozycjonowanie-krakow" },
               { city: "Wrocław", href: "/uslugi/pozycjonowanie/wroclaw" },
             ].map((item) => (
               <Link

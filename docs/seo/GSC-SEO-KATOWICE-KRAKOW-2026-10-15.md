@@ -23,9 +23,9 @@ Powiązane stare oferty /uslugi/pozycjonowanie/katowice, /uslugi/pozycjonowanie/
 
 ## Weryfikacja
 
-Materiały: output/lead-audit-2026-10-15/seo-katowice-krakow/. Są tam rekomendacje, zapis inspekcji GSC sprzed zmiany, oceniany HTML i logi kontroli. Status publikacji, przeglądu Claude i zgłoszeń GSC zostanie uzupełniony po ich potwierdzeniu. Wynik NEURONwriter nie jest dowodem pozycji, widoczności AI ani leadów.
+Materiały: output/lead-audit-2026-10-15/seo-katowice-krakow/. Są tam rekomendacje, zapis inspekcji GSC sprzed zmiany, oceniany HTML i logi kontroli. Publikację i przegląd Claude potwierdzono poniżej. Search Console przyjęło 15.10 prośby o ponowne zindeksowanie obu opublikowanych stron; ponowny skan nowych treści nie jest jeszcze potwierdzony. Wynik NEURONwriter nie jest dowodem pozycji, widoczności AI ani leadów.
 
-Końcowy import HTML z renderera SSR potwierdził 95/100 dla obu ofert. Pełny build: 1075 dokumentów. Audyt: 1073 URL-e sitemap, 135086 odnośników HTML i 3938 źródłowych bez błędów. Galerie: 487 stron bez błędów. Testy: 149/149.
+Końcowy import HTML z renderera SSR potwierdził 95/100 dla obu ofert. Pełny build: 1075 dokumentów. Audyt: 1073 URL-e sitemap, 135084 odnośników HTML i 3936 źródłowych bez błędów. Galerie: 487 stron bez błędów. Testy: 149/149.
 
 ## Przegląd Claude i korekty
 
@@ -34,3 +34,9 @@ Claude zakończył przegląd PR #64 w rozmowie https://claude.ai/chat/563b2f27-b
 Po przeglądzie skrócono H1 Krakowa (usunięto „Skuteczne”), poprawiono pierwsze zdanie Katowic, doprecyzowano „lokalne SEO” w H1 Katowic i odróżniono tytuły przez audyt/plan. Usunięto nowe odnośniki do Google Ads, ponieważ stara strona docelowa zawiera nieudokumentowane deklaracje Google Partners i ceny. Pozostawiono rzeczowe wyjaśnienie różnicy między reklamą i SEO. Kraków uzupełniono o dobór słów kluczowych i lokalny kontekst sklepu.
 
 Do osobnego etapu: stare oferty Google Ads, lokalnego i technicznego SEO oraz porównanie zapytań stron o zbliżonej intencji. Wskazane przez Claude deklaracje cen/wyników na tych starszych stronach nie zostały potwierdzone. Same różne tytuły nie rozwiązują potencjalnego dublowania intencji.
+
+## Publikacja
+
+PR #64 połączony po zielonym CI (TypeScript/testy oraz SEO/Lighthouse), merge `bd7285186625c54fb2d1a5d5ee2dbf9ab1b41d55`. Publiczne strony sprawdzone 15.10 o 16:00 UTC: HTTP 200, właściwe nowe tytuły i opisy, pojedynczy H1, self-canonical, index/follow, treść SSR, galerie oraz CTA z usługą SEO/ongoing. Mapa zawiera lastmod 2026-10-15. Import publicznych URL-i do NEURONwritera bez nadpisywania metadanych dał ponownie 95/100 dla obu stron; analizy oznaczone jako ukończone.
+
+Potwierdzenia zgłoszeń: `katowice-gsc-submitted.txt` oraz `krakow-gsc-submitted.txt` w katalogu materiałów. Kontrola publicznego wyglądu Krakowa: `krakow-production.png`. Nie wyciągamy z oceny treści ani przyjęcia zgłoszenia wniosku o wzroście ruchu lub zapytań.

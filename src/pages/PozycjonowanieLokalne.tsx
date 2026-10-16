@@ -1,466 +1,182 @@
 import { SEOHead } from "@/components/seo/SEOHead";
-import { Layout } from "@/components/layout/Layout";
-import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import { ArrowRight, CheckCircle2, TrendingUp, Zap, Globe, ShoppingCart, BarChart3, Target, MapPin, Building2, Search, Star } from "lucide-react";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
-import { FadeInView } from "@/components/FadeInView";
-import { ContactSection } from "@/components/sections/ContactSection";
+import { ServiceEditorial } from "@/components/ServiceEditorial";
 
-const breadcrumbs = [
-  { name: "Strona główna", url: "/" },
-  { name: "Usługi", url: "/uslugi" },
-  { name: "Pozycjonowanie", url: "/uslugi/pozycjonowanie" },
-  { name: "Pozycjonowanie lokalne", url: "/uslugi/pozycjonowanie-lokalne" },
-];
+const content = {
+  "title": "Pozycjonowanie lokalne — lokalne SEO dla Twojej firmy",
+  "eyebrow": "FOTZ Studio · oferta, profil i kontakt",
+  "path": "/uslugi/pozycjonowanie-lokalne",
+  "enquiryVariant": "ongoing",
+  "workAfterScope": true,
+  "lead": "Pomagamy firmom uporządkować widoczność w lokalnych wynikach wyszukiwania i ułatwić klientom kontakt. Pozycjonowanie lokalne łączy pracę nad stroną internetową, Profilem Firmy w Google i informacjami o rzeczywistym obszarze obsługi. Zaczynamy od diagnozy, ustalamy zakres i wdrażamy uzgodnione zmiany. Raportujemy wykonane zadania oraz zapytania — bez obietnic pierwszego miejsca.",
+  "summary": [
+    "Prześlij adres strony, profil Google i obszar, na którym obsługujesz klientów.",
+    "Wybierzmy usługi i lokalizacje ważne dla przychodu, a następnie kolejność poprawek.",
+    "Otrzymasz zakres, wycenę, plan wdrożenia i sposób oceny zapytań."
+  ],
+  "scopeTitle": "Co obejmuje pozycjonowanie lokalne w FOTZ Studio?",
+  "scope": [
+    {
+      "title": "Diagnoza strony i widoczności",
+      "text": "Sprawdzamy indeksowanie ważnych ofert, dane o wyświetleniach i kliknięciach, treść wyników oraz drogę do kontaktu. Audyt SEO pozwala odróżnić błąd techniczny od braku popytu lub niedopasowanej oferty.",
+      "href": "/seo/audyt",
+      "link": "Poznaj zakres audytu"
+    },
+    {
+      "title": "Profil Firmy w Google",
+      "text": "Weryfikujemy uprawnienia, kwalifikowalność działalności, kategorie, kontakt, godziny i lokalizację. Uzgadniamy potrzebne zdjęcia, opis usług oraz zasady aktualizacji profilu. Właścicielem konta pozostaje klient."
+    },
+    {
+      "title": "Treści i lokalne słowa kluczowe",
+      "text": "Przypisujemy frazy do konkretnych usług. Opisujemy zakres, warunki obsługi, dane do wyceny i przykłady wykonanej pracy. Poprawiamy tytuły, nagłówki oraz linkowanie między ofertami.",
+      "href": "/content-marketing/strategia",
+      "link": "Zobacz planowanie treści"
+    },
+    {
+      "title": "Optymalizacja i wdrożenia",
+      "text": "Kontrolujemy wersję mobilną, dostępność tekstu dla wyszukiwarki, przekierowania i formularze. Zadania programistyczne, odpowiedzialność oraz testy po publikacji określamy w wycenie."
+    },
+    {
+      "title": "Zdjęcia i spójne informacje",
+      "text": "Porządkujemy dane firmy i wykorzystujemy autentyczne materiały. Fotografia wnętrza, zespołu lub produktu pomaga klientowi ocenić ofertę. Nową sesję zdjęciową możemy wycenić jako osobny element.",
+      "href": "/uslugi/fotografia",
+      "link": "Zobacz ofertę fotografii"
+    },
+    {
+      "title": "Pomiar i dalsze decyzje",
+      "text": "Ustalamy, które działania oznaczają kontakt, a które tylko zainteresowanie. Zestawiamy widoczność strony w wynikach wyszukiwania z formularzami i informacją o jakości zapytań z obsługi klienta."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Czym jest pozycjonowanie lokalne i komu pomaga?",
+      "text": "Pozycjonowanie lokalne to strategia poprawy dostępności oferty dla osób, które szukają wykonawcy lub miejsca w określonej okolicy. Może dotyczyć punktu usługowego, sklepu stacjonarnego, restauracji albo działalności z dojazdem. Lokalna firma potrzebuje informacji, które pozwalają podjąć decyzję: co można zamówić, gdzie jest realizowana usługa i jak się umówić. Sama obecność adresu na stronie nie wystarcza. Sprawdzamy, czy wyszukiwarka odczytuje właściwą ofertę, czy użytkownik rozumie warunki współpracy i czy działają numery telefonu oraz formularze. Lokalne pozycjonowanie stron jest szczególnie przydatne wtedy, gdy miejsce wykonania usługi wpływa na wybór klienta."
+    },
+    {
+      "title": "Lokalne SEO a pozycjonowanie ogólnopolskie",
+      "text": "Zasięg działań wynika z modelu sprzedaży. Salon odwiedzany na miejscu potrzebuje innej prezentacji niż producent wysyłający towary do całego kraju. SEO ogólnokrajowe skupia się także na zastosowaniach, parametrach i potrzebach odbiorców niezależnych od miasta. Jedna firma może łączyć oba zakresy, na przykład prowadząc sklep internetowy i punkt odbioru. Strategia SEO powinna wtedy oddzielić strony produktów od informacji o placówce. Nie zakładamy, że dodanie nazwy miejscowości do wszystkich nagłówków zwiększy sprzedaż. Najpierw wybieramy odbiorcę, obszar obsługi i ofertę, którą rzeczywiście można tam zrealizować.",
+      "href": "/seo/pozycjonowanie",
+      "link": "Porównaj szerszy zakres pozycjonowania"
+    },
+    {
+      "title": "Jak Google ustala lokalne wyniki wyszukiwania?",
+      "text": "Według dokumentacji Google znaczenie mają przede wszystkim trafność, odległość i rozpoznawalność. Trafność dotyczy dopasowania firmy do potrzeby, odległość zależy od miejsca wyszukiwania, a rozpoznawalność obejmuje informacje o działalności dostępne w sieci. Dlatego wynik wyszukiwania może różnić się między dzielnicami i urządzeniami. Nie sprzedajemy pozycji w Google ani miejsca w pakiecie map. Zamiast tego porządkujemy ofertę, uzupełniamy prawdziwe dane i sprawdzamy efekty w uzgodnionym obszarze. Algorytmy Google oraz działania konkurencji pozostają poza kontrolą wykonawcy.",
+      "href": "https://support.google.com/business/answer/7091?hl=pl",
+      "link": "Przeczytaj wyjaśnienie Google"
+    },
+    {
+      "title": "Wizytówka Google Moja Firma — dziś Profil Firmy w Google",
+      "text": "Wizytówka Google Moja Firma to nadal często używana nazwa obecnego Profilu Firmy w Google, czyli Google Business Profile. Ten sam zasób prezentuje informacje o działalności w wyszukiwarce i Google Maps. Przed rozpoczęciem prac sprawdzamy, czy profil już istnieje i kto nim zarządza. Tworzenie kolejnego wpisu bez sprawdzenia poprzedniego może spowodować duplikację. Weryfikujemy nazwę zgodną z rzeczywistą marką, główną kategorię, opis, godziny, telefon, witrynę i dostępne atrybuty. Nie dopisujemy do nazwy przypadkowych słów kluczowych. Profil powinien pomagać rozpoznać firmę, a nie imitować reklamowy nagłówek.",
+      "points": [
+        "Uprawnienia nadaje właściciel przez zaproszenie; nie potrzebujemy przekazywania hasła.",
+        "Zmiany istotnych danych uzgadniamy z osobą reprezentującą firmę.",
+        "Weryfikację wymagającą dokumentów, nagrania lub potwierdzenia na miejscu wykonuje uprawniony przedstawiciel."
+      ]
+    },
+    {
+      "title": "Lokalizacja: punkt obsługi czy firma z dojazdem?",
+      "text": "Prawidłowe przedstawienie lokalizacji ma znaczenie dla klientów i zgodności profilu z rzeczywistą działalnością. Jeśli przyjmujesz klientów w lokalu, sprawdzamy adres, oznaczenie wejścia, godziny oraz wskazówki dojazdu. Jeśli pracujesz u zamawiającego, ustalamy faktyczny obszar świadczenia usług i sposób prezentacji adresu zgodnie z zasadami profilu. Sam adres korespondencyjny nie uzasadnia reklamowania punktu obsługi. Firma działająca wyłącznie online może nie kwalifikować się do wizytówki, choć nadal może rozwijać stronę i treści. Nie tworzymy wirtualnych oddziałów w miastach, w których działalność nie jest prowadzona."
+    },
+    {
+      "title": "Optymalizacja strony internetowej pod lokalne zapytania",
+      "text": "W pozycjonowaniu lokalnym strona internetowa wyjaśnia ofertę szerzej niż profil w mapach. Powinna zawierać opis usługi, obszar działania, warunki zamówienia i wyraźny kontakt. Sprawdzamy pojedynczy temat podstrony, czytelne nagłówki, opis w wynikach i powiązania z realizacjami. Optymalizacja obejmuje także dostępność tekstu bez konieczności klikania skomplikowanych elementów interfejsu. Jeśli dwie podstrony odpowiadają na tę samą potrzebę, analizujemy ich dane i rozważamy połączenie. Zwiększenie widoczności strony nie polega na publikowaniu wielu niemal identycznych tekstów. Ważniejsza jest użyteczna odpowiedź dla konkretnego odbiorcy."
+    },
+    {
+      "title": "Słowa kluczowe i frazy lokalne: od potrzeby do oferty",
+      "text": "Dobór fraz kluczowych zaczynamy od usług, marży i pytań otrzymywanych przez firmę. Łączymy tę wiedzę z danymi Google Search Console oraz analizą rzeczywistych wyników. Fraza opisująca konkretną pracę może być ważniejsza od ogólnego hasła z dużą liczbą wyświetleń. Rozróżniamy szukanie wykonawcy, porównywanie ceny i potrzebę instrukcji. Oferta odpowiada na pytanie o zakres i zamówienie, poradnik tłumaczy problem, a realizacja pokazuje wykonanie. Lokalne frazy przypisujemy do istniejących adresów; nowe podstrony powstają wtedy, gdy wnoszą odrębną wartość. Nie kopiujemy tekstów konkurencji ani list miejscowości."
+    },
+    {
+      "title": "Widoczność firmy a spójność danych NAP",
+      "text": "NAP oznacza nazwę, adres i numer telefonu. W pozycjonowaniu dane te pomagają powiązać stronę, profil i inne informacje o działalności. Weryfikujemy ich zgodność z aktualnym stanem, zwłaszcza po przeprowadzce, zmianie numeru lub rebrandingu. Najpierw poprawiamy miejsca rzeczywiście używane przez klientów. Lokalny katalog branżowy może być przydatny, jeśli ma aktualne wpisy i jasny cel, ale setki automatycznych publikacji nie zastąpią rzetelnej informacji. Sprawdzamy też link prowadzący do właściwej oferty, a przy wielu placówkach kontakt do konkretnego zespołu. Właściciel potwierdza poprawne dane przed zmianą."
+    },
+    {
+      "title": "Opinie w Google i odpowiedzi na doświadczenia klientów",
+      "text": "Opinie klientów pomagają ocenić sposób obsługi i dopasowanie oferty. Ustalamy prostą, neutralną prośbę o recenzję po wykonanej usłudze oraz osobę odpowiedzialną za odpowiedzi. Pozytywne opinie powinny wynikać z prawdziwych doświadczeń. Nie kupujemy ocen, nie oferujemy nagród za wybraną liczbę gwiazdek i nie kierujemy prośby wyłącznie do zadowolonych osób. Przy krytyce proponujemy rzeczową odpowiedź bez ujawniania prywatnych danych klienta. Ocena może ujawnić problem operacyjny: termin, komunikację lub niejasną cenę. W takim przypadku poprawa obsługi jest równie ważna jak działania SEO."
+    },
+    {
+      "title": "Zdjęcia, realizacje i informacje, które ułatwiają wybór",
+      "text": "Potencjalni klienci chcą wiedzieć, jak wygląda miejsce, produkt i efekt pracy. Pomagamy wybrać aktualne zdjęcia, podpisać je zgodnie z tym, co przedstawiają, oraz połączyć z odpowiednią ofertą. Przykłady z portfolio FOTZ pokazują naszą pracę nad stronami, fotografią i komunikacją. Nie są automatycznie dowodem wyników pozycjonowania. Przygotowując materiał dla Twojej firmy, ustalamy zgodę na publikację, zakres projektu i fakty możliwe do potwierdzenia. Optymalizacja obrazów obejmuje także rozmiar, format i opis alternatywny. Dobrze dobrana fotografia ma pomagać ocenić usługę, zamiast wyłącznie dekorować stronę.",
+      "href": "/realizacje",
+      "link": "Zobacz rzeczywiste realizacje FOTZ"
+    },
+    {
+      "title": "Lokalne linki i obecność w źródłach branżowych",
+      "text": "W pozycjonowaniu analizujemy także informacje o firmie poza jej witryną. Lokalne portale informacyjne, organizatorzy wydarzeń czy partnerzy biznesowi mogą opisywać autentyczną współpracę. Dobieramy miejsca publikacji do działalności oraz odbiorcy, a nie do samej liczby odnośników. Lokalne katalogi mają sens wtedy, gdy użytkownik faktycznie szuka tam danego wykonawcy. Unikamy masowego dodawania wpisów, wymian bez kontekstu i obietnic dziesiątek linków miesięcznie. Jeśli plan zakłada płatną publikację, jej koszt, charakter i właściwe oznaczenie ustalamy przed realizacją. Linkowanie ma wynikać z użytecznej informacji o firmie."
+    },
+    {
+      "title": "Lokalne firmy na telefonie: kontakt bez przeszkód",
+      "text": "Optymalizacja strony na urządzeniach mobilnych obejmuje czytelność tekstu, wielkość przycisków, szybkość obrazów i działanie formularza. Osoba stojąca przed lokalem może potrzebować tylko wejścia, godzin lub numeru telefonu. Osoba porównująca wykonawców potrzebuje również zakresu i danych do wyceny. Sprawdzamy oba scenariusze. Samo kliknięcie przycisku „zadzwoń” nie potwierdza odbytej rozmowy, a otwarcie formularza nie jest wysłanym zapytaniem. Dlatego testujemy przekazanie danych i ustalamy, kto odbiera wiadomości. Widoczność firmy w wynikach wyszukiwania przynosi niewiele korzyści, jeśli kontakt kończy się błędem albo pozostaje bez odpowiedzi."
+    },
+    {
+      "title": "Pozycjonowanie lokalne w Google dla kilku placówek",
+      "text": "Firma z kilkoma rzeczywistymi punktami potrzebuje uporządkowanej struktury. Każda lokalizacja może mieć inne godziny, zakres, dostępność lub osobę kontaktową. Zbieramy te różnice i ustalamy, które zasługują na osobne strony. Nie powielamy całego opisu z wymienioną nazwą miasta. W pozycjonowaniu wielu placówek ważny jest również podział odpowiedzialności: kto aktualizuje informacje, przekazuje zdjęcia i reaguje na zmiany. Dla firmy z dojazdem opis obszaru nie powinien udawać sieci oddziałów. Wybór adresów kanonicznych, przekierowania i mapa witryny muszą wspólnie wskazywać docelowe oferty."
+    },
+    {
+      "title": "Jak mierzymy efekty pozycjonowania lokalnego?",
+      "text": "Raport oddziela wykonane zmiany, widoczność, wejścia i kontakty. Wyszukiwarka Google pokazuje wyświetlenia oraz kliknięcia w Search Console; statystyki profilu obejmują dostępne działania użytkowników profilu. Google Analytics może wspierać analizę wejść i zdarzeń na stronie, jeśli jest poprawnie wdrożone. Łączymy te źródła z informacją od osoby obsługującej zapytania. Interesują nas właściwa usługa, obszar, budżet i dalszy etap rozmowy. Pozycje w wynikach wyszukiwania są jednym z sygnałów. Ich wzrost nie dowodzi sam w sobie sprzedaży.",
+      "points": [
+        "Ustalamy porównywalne okresy i zaznaczamy sezonowość oraz zmiany oferty.",
+        "Rozróżniamy formularz przyjęty przez system, kontakt w CRM i kwalifikowaną szansę sprzedaży.",
+        "Zaznaczamy niepełne dane, ograniczenia zgód analitycznych oraz brak potwierdzenia źródła."
+      ]
+    },
+    {
+      "title": "Ile kosztuje pozycjonowanie lokalne?",
+      "text": "Koszt określamy po poznaniu strony, liczby placówek, usług i zakresu wdrożeń. Proste uporządkowanie profilu to inna praca niż przebudowa witryny z wieloma ofertami. W wycenie rozdzielamy diagnozę, przygotowanie treści, prace techniczne, fotografię oraz stałą obsługę. Ustalamy, co wykonuje FOTZ, a co pozostaje po stronie klienta lub administratora. Inwestycja w pozycjonowanie lokalne powinna mieć uzasadnienie w wartości i możliwości obsługi nowych zleceń. Wycenę opieramy na zadaniach, potrzebnych materiałach i odpowiedzialności za wdrożenie. Przed startem otrzymasz zakres, sposób rozliczenia i listę ewentualnych kosztów dodatkowych."
+    },
+    {
+      "title": "Jak zaczynamy współpracę nad lokalnym SEO?",
+      "text": "Najpierw poznajemy ofertę i problem: brak wyświetleń, niewiele wejść czy zapytania od niewłaściwych odbiorców. Następnie ustalamy potrzebne dostępy i zapisujemy punkt wyjścia. Przygotowujemy priorytety, uzgadniamy treści oraz wdrażamy zatwierdzone poprawki. Po publikacji sprawdzamy działanie adresów, kontaktu i dostępność ważnych informacji. W pozycjonowaniu kolejne decyzje opieramy na nowych danych, zamiast bez końca powtarzać ten sam zestaw czynności. Termin przeglądu wyników jest częścią planu. Klient powinien wiedzieć, co zostało wykonane, co czeka na materiały i jakie pytanie rozstrzygamy dalej."
+    },
+    {
+      "title": "Google Ads, Mapy i lokalne pozycjonowanie — różne zadania",
+      "text": "Reklama Google Ads może wspierać promocję wybranej oferty, ale ma odrębny budżet i sposób rozliczenia. Pozycjonowanie strony internetowej oraz praca nad profilem dotyczą innych obszarów widoczności. Nie obiecujemy, że zakup reklam podniesie organiczną pozycję wizytówki. Jeśli firma łączy kanały, ustalamy osobny pomiar kampanii i wejść organicznych, aby nie przypisywać wszystkich kontaktów SEO. Najpierw warto sprawdzić, czy oferta i formularz są gotowe na ruch. Plan marketingowy ma uwzględniać możliwości sprzedaży oraz jakość zapytań, a nie wyłącznie liczbę kliknięć."
+    },
+    {
+      "title": "Firma w odpowiedziach AI: rzetelna i czytelna oferta",
+      "text": "Porządkujemy informacje tak, aby człowiek i system odczytujący stronę mogli zrozumieć, czym zajmuje się firma. Pomagają w tym jasne odpowiedzi, prawdziwe dane, opis procesu oraz realizacje z konkretnym zakresem. Nie dopisujemy sztucznych rekomendacji ani nie przedstawiamy wyniku narzędzia do analizy tekstu jako potwierdzenia widoczności w AI. W pozycjonowaniu oceniamy osobno publikację, obecność w indeksie, wyświetlenia, cytowania i wejścia. Żaden z tych etapów nie daje automatycznie zapytania. Celem treści pozostaje pomoc klientowi w wyborze odpowiedniej usługi i podjęciu kontaktu."
+    }
+  ],
+  "faqTitle": "Pytania o pozycjonowanie lokalne i zakres współpracy",
+  "faqs": [
+    {
+      "question": "Czy mogę samodzielnie prowadzić SEO lokalne?",
+      "answer": "Tak. Możesz aktualizować godziny, opis usług, telefon, zdjęcia oraz odpowiadać na recenzje. Przy optymalizacji strony internetowej potrzebna bywa pomoc administratora. Warto zaprosić specjalistów SEO, gdy nie wiadomo, co blokuje ważne adresy, pomiar nie działa albo kolejne publikacje nie odpowiadają na potrzeby klientów. Zakres wsparcia można ograniczyć do diagnozy i konkretnych wdrożeń."
+    },
+    {
+      "question": "Jak długo trwa pozycjonowanie lokalne?",
+      "answer": "Termin prac ustalamy po diagnozie. Zmianę danych można opublikować szybciej niż przebudowę wielu podstron, ale czas aktualizacji wyników zależy również od Google. Nie gwarantujemy TOP 3 po określonej liczbie tygodni. Postęp oceniamy na podstawie kolejnych okresów i konkretnych wdrożeń; sezonowość oraz stan wyjściowy wpływają na interpretację danych."
+    },
+    {
+      "question": "Czy pozycjonowanie wizytówki wystarczy bez strony?",
+      "answer": "Profil może przekazywać podstawowe informacje i umożliwiać kontakt, jeśli firma kwalifikuje się do jego posiadania. Strona pozwala szerzej pokazać zakres, realizacje, warunki i formularz. Warto dopasować oba miejsca do jednej oferty. Nie zakładamy, że każda firma potrzebuje rozbudowanego serwisu; najpierw ustalamy, czego brakuje jej klientom."
+    },
+    {
+      "question": "Czy gwarantujecie pierwsze miejsce w Google Maps?",
+      "answer": "Nie. Lokalne wyniki zależą także od odległości osoby szukającej, konkurencji i decyzji wyszukiwarki. Ustalamy zakres pracy, odpowiedzialność i warunki odbioru. Możemy potwierdzić wykonanie zmian i pomiar ich wpływu, ale nie zamówić konkretnej pozycji. Wyniki lokalne sprawdzamy w kontekście obszaru obsługi."
+    },
+    {
+      "question": "Czy potrzebuję osobnej podstrony na każdą miejscowość?",
+      "answer": "Tylko jeśli istnieje użyteczna różnica: placówka, warunki dojazdu, zakres lub prawdziwa realizacja. Przed tworzeniem nowych adresów analizujemy intencję i zapytania. Zbliżone oferty można połączyć, zachowując ważne informacje i przekierowania. Sama podmiana nazwy miasta prowadzi do powtarzania treści bez korzyści dla odbiorcy."
+    },
+    {
+      "question": "Co przygotować do wyceny usługi?",
+      "answer": "Adres witryny i profilu, opis najważniejszych usług, obszar obsługi oraz cel. Pomocne są informacje o dotychczasowych działaniach, liczbie placówek i osobie wdrażającej zmiany. Dostępy ustalimy później przez zaproszenia do kont. Nie przesyłaj haseł w formularzu. Do planowania działań potrzebujemy przede wszystkim zgodnych z rzeczywistością danych o firmie."
+    },
+    {
+      "question": "Czy FOTZ obsługuje firmy spoza Poznania?",
+      "answer": "Tak, zakres prac nad stroną i danymi możemy prowadzić zdalnie. Nasz zespół działa z Poznania; oferta dla danego miasta opisuje obszar obsługi, nie fikcyjny oddział. Ewentualne zdjęcia na miejscu oraz dojazd ustalamy osobno. W ofercie rzetelnie przedstawiamy faktyczną lokalizację klienta i jego możliwości realizacji zleceń."
+    },
+    {
+      "question": "Czy mogę zamówić jednorazowe uporządkowanie profilu?",
+      "answer": "Możemy wycenić konkretny zakres po sprawdzeniu stanu profilu i dostępów. Oddzielamy jednorazowe poprawki od późniejszych aktualizacji, odpowiedzi na recenzje i analizy danych. Stała współpraca ma sens wtedy, gdy istnieje uzgodniony plan dalszych działań. Nie trzeba zaczynać od rozbudowanego abonamentu bez diagnozy."
+    }
+  ],
+  "contactDescription": "Podaj adres strony i profilu Google, obszar obsługi oraz usługi, na których Ci zależy. Ustalimy zakres lokalnego SEO i przygotujemy wycenę."
+};
 
 export default function PozycjonowanieLokalne() {
-  return (
-    <>
-      <SEOHead
-        title="Pozycjonowanie lokalne | SEO dla firm lokalnych | FOTZ Studio"
-        description="Pozycjonowanie lokalne dla firm — dominuj w Google Maps i lokalnych wynikach. Więcej klientów z Twojej okolicy. Sprawdź ofertę!"
-        canonical="https://www.fotz-studio.pl/uslugi/pozycjonowanie-lokalne"
-        keywords="pozycjonowanie lokalne, seo lokalne, pozycjonowanie lokalne firmy, seo dla lokalnych firm, pozycjonowanie lokalne google maps, lokalne wyniki google, seo lokalne cennik, pozycjonowanie lokalne poradnik"
-      />
-      <ServiceSchema
-        name="Pozycjonowanie lokalne"
-        description="SEO dla firm lokalnych — pozycjonowanie w Google Maps i lokalnych wynikach"
-        areaServed={["PL"]}
-      />
-      <BreadcrumbSchema items={breadcrumbs} />
-      <Layout>
-        {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-br from-purple-50 to-pink-50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="text-center mb-12"
-            >
-              <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-                Pozycjonowanie lokalne — bądź #1 w Google dla klientów z Twojej okolicy
-              </h1>
-              <p className="text-2xl text-purple-700 mb-8 font-semibold max-w-3xl mx-auto">
-                46% zapytań Google ma lokalny charakter. Ktoś w Twoim mieście szuka Twojej usługi. Jesteś w Top 3?
-              </p>
-              <Button asChild className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-lg text-lg">
-                <Link to="/kontakt?usluga=seo#formularz">
-                  Bezpłatna konsultacja SEO
-                  <ArrowRight className="ml-2 w-5 h-5" />
-                </Link>
-              </Button>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* What is local SEO */}
-        <FadeInView>
-          <section className="py-20">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center">Co to jest pozycjonowanie lokalne?</h2>
-              <p className="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto">
-                To strategia, która sprawia, że Twoja firma pojawia się dla osób szukających Twojej usługi w Twojej okolicy.
-              </p>
-
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                {[
-                  {
-                    title: "Google Business Profile",
-                    desc: "Twoja wizytówka w Google — informacje, zdjęcia, opinie, godziny otwarcia",
-                  },
-                  {
-                    title: "Local Pack",
-                    desc: "Top 3 wyniki na mapie dla konkretnego miasta/okolicy",
-                  },
-                  {
-                    title: "Lokalne frazy",
-                    desc: 'Pozycjonowanie dla zapytań typu "najlepszy fryzjer w Krakowie"',
-                  },
-                ].map((item, i) => (
-                  <motion.div
-                    key={i}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: i * 0.1 }}
-                    className="p-8 bg-gradient-to-br from-purple-50 to-pink-50 rounded-lg border border-purple-200"
-                  >
-                    <h3 className="text-xl font-bold text-gray-900 mb-3">{item.title}</h3>
-                    <p className="text-gray-600">{item.desc}</p>
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-          </section>
-        </FadeInView>
-
-        {/* Why Google Maps is gold */}
-        <FadeInView>
-          <section className="py-20 bg-gray-50">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center">Dlaczego Google Maps to złoto?</h2>
-              <p className="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto">
-                Liczby nie kłamią. Local Pack otrzymuje połowę wszystkich kliknięć.
-              </p>
-
-              <div className="space-y-6 max-w-4xl mx-auto">
-                {[
-                  {
-                    stat: "44%",
-                    title: "Kliknięć w Local Pack",
-                    desc: "Ponad połowa wszystkich lokalnych wyszukiwań kliknie na mapę",
-                  },
-                  {
-                    stat: "76%",
-                    title: "Szuka na telefonie",
-                    desc: "Szukają na komórce gdy są w drodze lub w sklepie konkurencji",
-                  },
-                  {
-                    stat: "72%",
-                    title: "Zamierza wiedzieć więcej",
-                    desc: "Szukają głównie Twojej lokalizacji, godzin otwarcia, opinii",
-                  },
-                  {
-                    stat: "35%",
-                    title: "Przychodzą do Ciebie",
-                    desc: "Osoby z Local Pack mają wysoką konwersję — gotowe kupować",
-                  },
-                ].map((item, i) => (
-                  <motion.div
-                    key={i}
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.5, delay: i * 0.1 }}
-                    className="flex gap-6 items-start p-6 bg-white rounded-lg border border-gray-200"
-                  >
-                    <div className="text-5xl font-bold text-purple-600 flex-shrink-0">{item.stat}</div>
-                    <div>
-                      <h3 className="text-xl font-bold text-gray-900 mb-1">{item.title}</h3>
-                      <p className="text-gray-600">{item.desc}</p>
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-          </section>
-        </FadeInView>
-
-        {/* Co zawiera usługa */}
-        <FadeInView>
-          <section className="py-20">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center">Co zawiera nasza usługa?</h2>
-              <p className="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto">
-                Kompleksowe podejście do pozycjonowania lokalnego.
-              </p>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                {[
-                  {
-                    icon: MapPin,
-                    title: "Google Business Profile",
-                    desc: "Optymalizujemy Twój profil, dodajemy zdjęcia, odpowiadamy na opinie",
-                  },
-                  {
-                    icon: CheckCircle2,
-                    title: "NAP Consistency",
-                    desc: "Nazwa, adres, telefon — spójnie na całej sieci",
-                  },
-                  {
-                    icon: Globe,
-                    title: "Lokalne cytacje",
-                    desc: "Umieszczamy Twoją firmę w katalogach lokalnych i branżowych",
-                  },
-                  {
-                    icon: Star,
-                    title: "Zarządzanie opiniami",
-                    desc: "Zbieramy pozytywne recenzje, mądrze odpowiadamy na krytykę",
-                  },
-                  {
-                    icon: Search,
-                    title: "Lokalna zawartość",
-                    desc: "Artykuły, strony z frazy lokalne, blogi dla Twojego regionu",
-                  },
-                  {
-                    icon: TrendingUp,
-                    title: "Link building",
-                    desc: "Uzyskujemy linki ze stron lokalnych i branżowych",
-                  },
-                  {
-                    icon: BarChart3,
-                    title: "Schema markup",
-                    desc: "Strukturalizujemy dane, aby Google lepiej Cię rozumiał",
-                  },
-                  {
-                    icon: Building2,
-                    title: "Monitoring",
-                    desc: "Śledzisz pozycje, kliknięcia, rozmowy, wiadomości",
-                  },
-                ].map((item, i) => (
-                  <motion.div
-                    key={i}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.4, delay: i * 0.05 }}
-                    className="p-6 border border-gray-200 rounded-lg hover:shadow-lg transition-shadow"
-                  >
-                    <item.icon className="w-10 h-10 text-purple-600 mb-3" />
-                    <h3 className="text-lg font-bold text-gray-900 mb-2">{item.title}</h3>
-                    <p className="text-gray-600 text-sm">{item.desc}</p>
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-          </section>
-        </FadeInView>
-
-        {/* Dla kogo */}
-        <FadeInView>
-          <section className="py-20 bg-purple-50">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center">Dla kogo jest pozycjonowanie lokalne?</h2>
-              <p className="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto">
-                Każda firma z fizyczną lokalizacją potrzebuje tego.
-              </p>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {[
-                  { icon: Zap, title: "Restauracje", desc: "Klienci szukają: najlepsza restauracja w mojej okolicy" },
-                  { icon: Target, title: "Salony urody", desc: "Fryzjerki, kosmetyczki, manicure — szukają lokalnie" },
-                  { icon: Building2, title: "Warsztaty", desc: "Warsztaty samochodowe, szewskie, usługi" },
-                  { icon: Search, title: "Kancelarie", desc: "Adwokaci, notariusze, doradcy szukani lokalnie" },
-                  { icon: MapPin, title: "Lekarze", desc: "Przychodni, dentysci, specjaliści — pacjenci szukają blisko" },
-                  { icon: ShoppingCart, title: "Sklepy", desc: "Delikatesów, ubrań, elektroniki — konkurencja o widoczność" },
-                ].map((item, i) => (
-                  <motion.div
-                    key={i}
-                    initial={{ opacity: 0, scale: 0.95 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.4, delay: i * 0.1 }}
-                    className="p-6 bg-white rounded-lg border border-gray-200"
-                  >
-                    <item.icon className="w-10 h-10 text-purple-600 mb-3" />
-                    <h3 className="text-lg font-bold text-gray-900 mb-2">{item.title}</h3>
-                    <p className="text-gray-600 text-sm">{item.desc}</p>
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-          </section>
-        </FadeInView>
-
-        {/* Packages */}
-        <FadeInView>
-          <section className="py-20">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center">Pakiety pozycjonowania lokalnego</h2>
-              <p className="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto">
-                Dostosowujemy zakres do potrzeb Twojej firmy.
-              </p>
-
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                {[
-                  {
-                    name: "Local Basic",
-                    price: "499 zł/mies",
-                    features: [
-                      "Optymalizacja Google Business",
-                      "Zarządzanie opiniami",
-                      "NAP consistency check",
-                      "10 cytacji lokalnych",
-                      "Monitoring pozycji",
-                      "Raport miesięczny",
-                    ],
-                  },
-                  {
-                    name: "Local Standard",
-                    price: "999 zł/mies",
-                    featured: true,
-                    features: [
-                      "Wszystko z Basic",
-                      "20 cytacji lokalnych",
-                      "Artykuły z frazy lokalne",
-                      "Zbieranie recenzji (kampania)",
-                      "Schema markup",
-                      "Link building (3 linki/mies)",
-                      "Wsparcie telefoniczne",
-                      "Raport szczegółowy",
-                    ],
-                  },
-                  {
-                    name: "Local Premium",
-                    price: "1999 zł/mies",
-                    features: [
-                      "Wszystko ze Standard",
-                      "50 cytacji lokalnych",
-                      "Blog lokalny (4 artykuły/mies)",
-                      "Video content",
-                      "Link building (8 linków/mies)",
-                      "PPC kampania lokalna",
-                      "Analityka zaawansowana",
-                      "Wsparcie priorytetowe",
-                    ],
-                  },
-                ].map((pkg, i) => (
-                  <motion.div
-                    key={i}
-                    initial={{ opacity: 0, scale: 0.95 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.4, delay: i * 0.1 }}
-                    className={`rounded-lg p-8 border-2 transition-all ${
-                      pkg.featured
-                        ? "border-purple-600 bg-purple-50 shadow-xl relative -mt-4"
-                        : "border-gray-200 bg-white"
-                    }`}
-                  >
-                    {pkg.featured && (
-                      <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-purple-600 text-white px-4 py-1 rounded-full text-sm font-bold">
-                        Najpopularniejszy
-                      </div>
-                    )}
-                    <h3 className="text-2xl font-bold text-gray-900 mb-2">{pkg.name}</h3>
-                    <div className="text-3xl font-bold text-purple-600 mb-6">{pkg.price}</div>
-                    <ul className="space-y-3 mb-8">
-                      {pkg.features.map((feature, j) => (
-                        <li key={j} className="flex items-center gap-2">
-                          <CheckCircle2 className="w-5 h-5 text-purple-600" />
-                          <span className="text-gray-700 text-sm">{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                    <Button asChild
-                      className={`w-full ${
-                        pkg.featured
-                          ? "bg-purple-600 hover:bg-purple-700 text-white"
-                          : "bg-gray-200 hover:bg-gray-300 text-gray-900"
-                      }`}>
-                      <Link to="/kontakt">
-                        Zamów audyt
-                      </Link>
-                    </Button>
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-          </section>
-        </FadeInView>
-
-        {/* Results */}
-        <FadeInView>
-          <section className="py-20 bg-gray-50">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center">Średnie wyniki naszych klientów</h2>
-              <p className="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto">
-                Po 3 miesiącach pozycjonowania lokalnego.
-              </p>
-
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                {[
-                  {
-                    metric: "+180%",
-                    title: "Wyświetlenia w Google Maps",
-                    desc: "Znacznie więcej ludzi widzi Twoją firmę na mapie",
-                  },
-                  {
-                    metric: "+65%",
-                    title: "Kliknięć ze strony do Ciebie",
-                    desc: "Więcej wizyt na stronie z pozycji w Google Maps",
-                  },
-                  {
-                    metric: "+40%",
-                    title: "Rozmów telefonicznych",
-                    desc: "Ludzie dzwonią do Ciebie ze zwykłego wyszukiwania",
-                  },
-                ].map((item, i) => (
-                  <motion.div
-                    key={i}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: i * 0.1 }}
-                    className="p-8 bg-white rounded-lg shadow-sm border border-gray-200 text-center"
-                  >
-                    <div className="text-5xl font-bold text-purple-600 mb-3">{item.metric}</div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">{item.title}</h3>
-                    <p className="text-gray-600">{item.desc}</p>
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-          </section>
-        </FadeInView>
-
-        {/* FAQ */}
-        <FadeInView>
-          <section className="py-20">
-            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center">Pytania o pozycjonowanie lokalne</h2>
-              <p className="text-xl text-gray-600 text-center mb-16">Czemu warto inwestować w SEO lokalne.</p>
-
-              <Accordion type="single" collapsible className="space-y-4">
-                <AccordionItem value="item-1" className="border border-gray-200 rounded-lg px-6">
-                  <AccordionTrigger className="text-lg font-bold text-gray-900">
-                    Jak długo trwa pozycjonowanie lokalne?
-                  </AccordionTrigger>
-                  <AccordionContent className="text-gray-600">
-                    Pierwsze rezultaty w 4-6 tygodni (optymalizacja profilu). Top 3 pozycje zwykle w 3-6 miesięcy, zależnie od konkurencji w Twojej okolicy.
-                  </AccordionContent>
-                </AccordionItem>
-
-                <AccordionItem value="item-2" className="border border-gray-200 rounded-lg px-6">
-                  <AccordionTrigger className="text-lg font-bold text-gray-900">
-                    Czy muszę być na Google Maps?
-                  </AccordionTrigger>
-                  <AccordionContent className="text-gray-600">
-                    Tak. Google Business Profile to fundament pozycjonowania lokalnego. Bez tego jesteś niewidoczny dla lokalnych szukających.
-                  </AccordionContent>
-                </AccordionItem>
-
-                <AccordionItem value="item-3" className="border border-gray-200 rounded-lg px-6">
-                  <AccordionTrigger className="text-lg font-bold text-gray-900">
-                    Czy opinie wpływają na ranking?
-                  </AccordionTrigger>
-                  <AccordionContent className="text-gray-600">
-                    Zdecydowanie. Więcej recenzji i wyższa ocena to wyższy ranking w Google Maps i lokalnych wynikach. To drugi najważniejszy czynnik po optymalizacji profilu.
-                  </AccordionContent>
-                </AccordionItem>
-
-                <AccordionItem value="item-4" className="border border-gray-200 rounded-lg px-6">
-                  <AccordionTrigger className="text-lg font-bold text-gray-900">
-                    Co to są cytacje lokalne?
-                  </AccordionTrigger>
-                  <AccordionContent className="text-gray-600">
-                    To wzmianki Twojej firmy w katalogach branżowych, portalach, Mapach Google itp. Sygnalizują, że jesteś rzeczywistą firmą. Ważne dla wiarygodności.
-                  </AccordionContent>
-                </AccordionItem>
-
-                <AccordionItem value="item-5" className="border border-gray-200 rounded-lg px-6">
-                  <AccordionTrigger className="text-lg font-bold text-gray-900">
-                    Czy SEO lokalne to ta sama rzecz co zwykłe SEO?
-                  </AccordionTrigger>
-                  <AccordionContent className="text-gray-600">
-                    Zbliżone, ale inne. Lokalne SEO to przede wszystkim Google Business, opinie, cytacje. Zwykłe SEO to zawartość, linki, technika. Oba się uzupełniają.
-                  </AccordionContent>
-                </AccordionItem>
-
-                <AccordionItem value="item-6" className="border border-gray-200 rounded-lg px-6">
-                  <AccordionTrigger className="text-lg font-bold text-gray-900">
-                    Czy mogę zrobić to sam?
-                  </AccordionTrigger>
-                  <AccordionContent className="text-gray-600">
-                    Możesz, ale to czasochłonne i łatwo zrobić błędy. Agencja wie, co robić, gdzie szukać cytacji, jak budować link. Zaoszczędzisz czas i unikniesz pułapek.
-                  </AccordionContent>
-                </AccordionItem>
-              </Accordion>
-            </div>
-          </section>
-        </FadeInView>
-
-        <ContactSection
-        />
-      </Layout>
-    </>
-  );
+  return <>
+    <SEOHead title="Pozycjonowanie lokalne — lokalne SEO | FOTZ Studio" description="Pozycjonowanie lokalne dla firm: profil Google, optymalizacja strony i pomiar zapytań. Sprawdź, jak rozwijamy widoczność, i wyceń lokalne SEO." canonical="https://www.fotz-studio.pl/uslugi/pozycjonowanie-lokalne" />
+    <ServiceEditorial {...content} />
+  </>;
 }

@@ -422,7 +422,7 @@ const PozycjonowanieKielce = () => {
               { city: "Bydgoszcz", href: "/uslugi/pozycjonowanie/bydgoszcz" },
               { city: "Radom", href: "/uslugi/pozycjonowanie/radom" },
               { city: "Warszawa", href: "/uslugi/pozycjonowanie/warszawa" },
-              { city: "Kraków", href: "/uslugi/pozycjonowanie/krakow" },
+              { city: "Kraków", href: "/seo/pozycjonowanie-krakow" },
               { city: "Wrocław", href: "/uslugi/pozycjonowanie/wroclaw" },
             ].map((item) => (
               <Link

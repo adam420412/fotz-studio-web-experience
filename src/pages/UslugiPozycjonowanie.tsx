@@ -231,7 +231,7 @@ const UslugiPozycjonowanie = () => {
 
   const cityPages = [
     { city: "Warszawa", url: "/uslugi/pozycjonowanie/warszawa" },
-    { city: "Kraków", url: "/uslugi/pozycjonowanie/krakow" },
+    { city: "Kraków", url: "/seo/pozycjonowanie-krakow" },
     { city: "Wrocław", url: "/uslugi/pozycjonowanie/wroclaw" },
     { city: "Poznań", url: "/uslugi/pozycjonowanie/poznan" },
     { city: "Gdańsk", url: "/uslugi/pozycjonowanie/gdansk" },
