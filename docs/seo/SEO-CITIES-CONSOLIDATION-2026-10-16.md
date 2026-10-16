@@ -27,9 +27,9 @@ Projekt `59db8bbb8ee62780`, pięć nowych analiz (Polish / google.pl), bez zakup
 | Wrocław | e90aa476368c8ace | 46 | **98** | ok. 2155 |
 | Łódź | 44ca580d47bf9933 | 52 | **99** | ok. 1875 |
 | Gdańsk | c1d194b5daa622ed | 49 | **99** | ok. 2705 |
-| Lublin | 99328e9690d6770e | 24 | **≥95** (wynik końcowy w PR) | ok. 2470 |
+| Lublin | 99328e9690d6770e | 24 | **97** | ok. 2400 |
 
-Treści są pisane osobno dla każdego miasta (rynek, typy firm, dzielnice i okolice jako przykłady obszaru), bez statystyk. Kontrola duplikacji: zdania wspólne między ofertami miast to tylko stałe elementy szablonu. Każda oferta wprost mówi, że zespół pracuje w Poznaniu, a firmy z danego miasta obsługuje zdalnie — bez biura w tym mieście. Wszystkie pięć ofert dopisano do testu `offer-claims`.
+Treści są pisane osobno dla każdego miasta (rynek, typy firm, dzielnice i okolice jako przykłady obszaru), bez statystyk. Kontrola duplikacji: po przepisaniu 22 zdań Lublina zdania wspólne między ofertami miast to tylko stałe elementy szablonu. Każda oferta wprost mówi, że zespół pracuje w Poznaniu, a firmy z danego miasta obsługuje zdalnie — bez biura w tym mieście. Wszystkie pięć ofert dopisano do testu `offer-claims`.
 
 Ocena tekstu nie potwierdza rankingu ani pozyskania klienta.
 
