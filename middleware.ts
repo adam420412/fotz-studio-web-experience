@@ -16,9 +16,13 @@
  * Vercel's static layer with HTTP 200 — middleware does not touch them.
  */
 import manifest from './known-routes.json';
+import retired from './src/data/retired-blog.json';
 
 const STATIC_ROUTES: Set<string> = new Set(manifest.staticRoutes);
 const STATIC_FILES: Set<string> = new Set(manifest.staticFiles ?? []);
+// Blog posts retired on purpose (docs/seo/BLOG-PRUNING-2026-10-16.md): 410 Gone
+// tells crawlers the removal is permanent; /blog/:slug would otherwise serve 200.
+const GONE_ROUTES: Set<string> = new Set(retired.gone);
 const DYNAMIC_PATTERNS: RegExp[] = manifest.dynamicPatterns.map(
   (p: string) => new RegExp(`^${p}$`)
 );
@@ -79,22 +83,31 @@ export default async function middleware(request: Request): Promise<Response> {
   if (ALLOW_FILES.has(pathname)) return new Response(null, { status: 200, headers: { 'x-middleware-next': '1' } });
   if (STATIC_FILES.has(pathname)) return new Response(null, { status: 200, headers: { 'x-middleware-next': '1' } });
 
-  // 2) Known route → continue to SPA rewrite (returns 200 + index.html).
+  // 2) Retired content → 410 with the prerendered not-found body.
+  const normalized = pathname.length > 1 ? pathname.replace(/\/+$/, '') : pathname;
+  let decoded = normalized;
+  try { decoded = decodeURIComponent(normalized); } catch { /* keep raw path */ }
+  if (GONE_ROUTES.has(decoded)) return notFound(request, 410);
+
+  // 3) Known route → continue to SPA rewrite (returns 200 + index.html).
   // A file-like URL copied from an article must not match /blog/:slug.
   if (!ASSET_EXT_RE.test(pathname) && isKnownRoute(pathname)) {
     return new Response(null, { status: 200, headers: { 'x-middleware-next': '1' } });
   }
 
-  // 3) Unknown route → serve /404.html with HTTP 404.
-  // Use rewrite (internal) so the URL bar stays the same and the prerendered
-  // 404 body (with H1, footer, header markup) is delivered.
+  // 4) Unknown route → serve /404.html with HTTP 404.
+  return notFound(request, 404);
+}
+
+// Serve the prerendered 404 body (H1, header, footer) without changing the URL.
+async function notFound(request: Request, status: 404 | 410): Promise<Response> {
   const notFoundUrl = new URL('/404.html', request.url);
   const res = await fetch(notFoundUrl, {
     headers: { 'x-middleware-bypass': '1' },
   });
   const body = await res.text();
   return new Response(body, {
-    status: 404,
+    status,
     headers: {
       'content-type': 'text/html; charset=utf-8',
       'cache-control': 'public, max-age=0, s-maxage=60, must-revalidate',

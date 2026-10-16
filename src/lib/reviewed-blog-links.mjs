@@ -20,4 +20,6 @@ export const repairedSourceLinks = {
   'https://monday.com/blog/marketing/b2b-marketing/1000': 'https://monday.com/blog/marketing/b2b-marketing/',
   'https://www.iab.org.pl/baza-wiedzy/iab-polska-pwc-adex-q3-2025/': 'https://www.iab.org.pl/aktualnosci/miliard-wiecej-niz-rok-wczesniej-dla-reklamy-online-iab-polska-pwc-adex/',
   'https://www2.rp.pl/ekonomia/art43022981-polskie-msp-ciagle-z-potencjalem': 'https://www.rp.pl/ekonomia/art43022981-polskie-msp-ciagle-z-potencjalem',
+  // Glossary post retired 16.10.2026 (BLOG-PRUNING); the B2B offer answers the same reader.
+  'https://www.fotz-studio.pl/blog/b2b-co-to-jest': '/uslugi/marketing-b2b',
 };

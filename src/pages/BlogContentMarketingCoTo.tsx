@@ -215,7 +215,7 @@ export default function BlogContentMarketingCoTo() {
                   { title: "Copywriting — co to jest?", href: "/blog/copywriting-co-to" },
                   { title: "SEO — pozycjonowanie stron internetowych", href: "/uslugi/pozycjonowanie" },
                   { title: "Marketing internetowy dla firm", href: "/uslugi/marketing-internetowy" },
-                  { title: "Reklama w Google — jak działa?", href: "/blog/reklama-w-google" },
+                  { title: "Reklama w Google — jak działa?", href: "/blog/google-ads-co-to" },
                 ].map((post, idx) => (
                   <Link key={idx} to={post.href} className="flex items-center gap-2 p-3 bg-slate-50 rounded-lg hover:bg-slate-100 transition-colors group">
                     <ArrowRight className="w-3.5 h-3.5 text-blue-600 flex-shrink-0 group-hover:translate-x-1 transition-transform" />

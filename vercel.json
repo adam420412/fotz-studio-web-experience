@@ -4,257 +4,1150 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "redirects": [
-    {"source": "/uslugi/pozycjonowanie/poznan", "destination": "/seo/pozycjonowanie-poznan", "permanent": true},
-    {"source": "/agencja-seo-poznan", "destination": "/seo/pozycjonowanie-poznan", "permanent": true},
-    {"source": "/uslugi/pozycjonowanie/katowice", "destination": "/seo/pozycjonowanie-katowice", "permanent": true},
-    {"source": "/uslugi/pozycjonowanie/krakow", "destination": "/seo/pozycjonowanie-krakow", "permanent": true},
-    {"source": "/agencja-seo-krakow", "destination": "/seo/pozycjonowanie-krakow", "permanent": true},
-    {"source": "/agencja-marketingowa-poznan", "destination": "/agencja-marketingowa/poznan", "permanent": true},
-    {"source": "/agencja-marketingowa-warszawa", "destination": "/agencja-marketingowa/warszawa", "permanent": true},
-    {"source": "/agencja-marketingowa-katowice", "destination": "/agencja-marketingowa/katowice", "permanent": true},
-    {"source": "/agencja-marketingowa-wroclaw", "destination": "/agencja-marketingowa/wroclaw", "permanent": true},
-    {"source": "/agencja-marketingowa-lodz", "destination": "/agencja-marketingowa/lodz", "permanent": true},
-    {"source": "/agencja-marketingowa-gdansk", "destination": "/agencja-marketingowa/gdansk", "permanent": true},
-    {"source": "/agencja-marketingowa-krakow", "destination": "/agencja-marketingowa/krakow", "permanent": true},
-    {"source": "/agencja-marketingowa-lublin", "destination": "/agencja-marketingowa/lublin", "permanent": true},
-    {"source": "/agencja-marketingowa-rzeszow", "destination": "/agencja-marketingowa/rzeszow", "permanent": true},
-    {"source": "/agencja-marketingowa-bydgoszcz", "destination": "/agencja-marketingowa/bydgoszcz", "permanent": true},
-    {"source": "/agencja-marketingowa-szczecin", "destination": "/agencja-marketingowa/szczecin", "permanent": true},
-    {"source": "/akademia", "destination": "/zasoby", "permanent": true},
-    {"source": "/blog/nps-co-to-jest", "destination": "/blog/nps-net-promoter-score-co-to-jest", "permanent": true},
-    {"source": "/blog/reklama-programatyczna-co-to", "destination": "/blog/programmatic-advertising-co-to", "permanent": true},
-    {"source": "/blog/zero-trust-security-co-to-jest-jak-wdrozyz", "destination": "/blog/zero-trust-security-co-to-jest-jak-wdrozyz-ztna-mfa", "permanent": true},
-    {"source": "/blog/api-gateway-co-to-jest-jak-wybrac-kong-aws-apigee", "destination": "/blog/api-gateway-co-to-jest-kong-aws-traefik-kubernetes-ingress", "permanent": true},
-    {"source": "/blog/okr-co-to", "destination": "/blog/okr-co-to-jest", "permanent": true},
-    {"source": "/uslugi/audyt-seo", "destination": "/seo/audyt", "permanent": true},
-    {"source": "/uslugi/strony-internetowe/kielce", "destination": "/strony-internetowe/kielce", "permanent": true},
-    { "source": "/social-media/poznan", "destination": "/agencja-social-media/poznan", "permanent": true },
-    { "source": "/blog/content-marketing-dla-firmy", "destination": "/blog/content-marketing-poradnik", "permanent": true },
-    { "source": "/project-type/social-media", "destination": "/realizacje", "permanent": true },
-    { "source": "/produkcja-video-poznan", "destination": "/uslugi/produkcja-video", "permanent": true },
-    { "source": "/strony-internetowe/torun", "destination": "/uslugi/strony-internetowe/torun", "permanent": true },
-    { "source": "/blog/customer-health-score-co-to-jest-jak-zbudowac", "destination": "/blog/customer-health-score-co-to", "permanent": true },
-    { "source": "/:path*", "has": [{ "type": "host", "value": "fotz-studio.pl" }], "destination": "https://www.fotz-studio.pl/:path*", "permanent": true },
-    { "source": "/strony-internetowe", "destination": "/uslugi/strony-internetowe", "permanent": true },
-    { "source": "/strony-internetowe-:city", "destination": "/uslugi/strony-internetowe/:city", "permanent": true },
-    { "source": "/sklepy-internetowe-:city", "destination": "/uslugi/sklepy-internetowe/:city", "permanent": true },
-    { "source": "/tiktok-ads-gdansk", "destination": "/performance-marketing/tiktok-ads/gdansk", "permanent": true },
-    { "source": "/ecommerce-tworzenie-sklepu", "destination": "/uslugi/strony-internetowe/ecommerce", "permanent": true },
-    { "source": "/identyfikacja-wizualna", "destination": "/uslugi/branding", "permanent": true },
-    { "source": "/spoty-reklamowe", "destination": "/uslugi/produkcja-video", "permanent": true },
-    { "source": "/fotograf-poznan", "destination": "/uslugi/fotografia", "permanent": true },
-    { "source": "/fotografia-z-drona", "destination": "/uslugi/fotografia-z-drona", "permanent": true },
-    { "source": "/studio-podcastowe", "destination": "/uslugi/studio-podcastowe", "permanent": true },
-    { "source": "/produkcja-filmow-poznan", "destination": "/uslugi/produkcja-filmow", "permanent": true },
-    { "source": "/branding", "destination": "/uslugi/branding", "permanent": true },
-    { "source": "/produkcja-video", "destination": "/uslugi/produkcja-video", "permanent": true },
-    { "source": "/social-media-marketing", "destination": "/uslugi/social-media-marketing", "permanent": true },
-    { "source": "/audyt-seo", "destination": "/seo/audyt", "permanent": true },
-    { "source": "/pozycjonowanie", "destination": "/seo/pozycjonowanie", "permanent": true },
-    { "source": "/pozycjonowanie-stron-poznan", "destination": "/seo/pozycjonowanie-poznan", "permanent": true },
-    { "source": "/pozycjonowanie-google-maps", "destination": "/seo/google-maps", "permanent": true },
-    { "source": "/social-media", "destination": "/social-media/obsluga", "permanent": true },
-    { "source": "/social-media-poznan", "destination": "/agencja-social-media/poznan", "permanent": true },
-    { "source": "/google-ads", "destination": "/performance-marketing/google-ads", "permanent": true },
-    { "source": "/facebook-ads", "destination": "/performance-marketing/facebook-ads", "permanent": true },
-    { "source": "/instagram-ads", "destination": "/performance-marketing/instagram-ads", "permanent": true },
-    { "source": "/facebook-instagram-ads", "destination": "/performance-marketing/meta-ads", "permanent": true },
-    { "source": "/linkedin-ads", "destination": "/performance-marketing/linkedin-ads", "permanent": true },
-    { "source": "/tiktok-ads", "destination": "/performance-marketing/tiktok-ads", "permanent": true },
-    { "source": "/youtube-ads", "destination": "/performance-marketing/youtube-ads", "permanent": true },
-    { "source": "/content-marketing", "destination": "/content-marketing/strategia", "permanent": true },
-    { "source": "/blog/seo-ecommerce", "destination": "/seo/ecommerce", "permanent": true },
-    { "source": "/blog/seo-lokalne-poznan-poradnik", "destination": "/seo/lokalne-poznan", "permanent": true },
-    { "source": "/blog/influencer-marketing-polska", "destination": "/social-media/influencer", "permanent": true },
-    { "source": "/blog/instagram-reels-vs-tiktok", "destination": "/social-media/reels-vs-tiktok", "permanent": true },
-    { "source": "/blog/tiktok-dla-biznesu", "destination": "/social-media/tiktok-biznes", "permanent": true },
-    { "source": "/blog/google-ads-vs-facebook-ads", "destination": "/performance-marketing/google-vs-facebook", "permanent": true },
-    { "source": "/blog/remarketing-poradnik", "destination": "/performance-marketing/remarketing", "permanent": true },
-    { "source": "/blog/copywriting-landing-page", "destination": "/content-marketing/copywriting-landing", "permanent": true },
-    { "source": "/blog/email-marketing-2025", "destination": "/content-marketing/email-2025", "permanent": true },
-    { "source": "/blog/kampania-reklamowa-marketingowa", "destination": "/content-marketing/kampanie", "permanent": true },
-    { "source": "/branze/marketing-medyczny", "destination": "/dla-kogo/branza-medyczna", "permanent": true },
-    { "source": "/branze/marketing-gastronomia", "destination": "/dla-kogo/gastronomia", "permanent": true },
-    { "source": "/branze/marketing-beauty", "destination": "/dla-kogo/beauty-wellness", "permanent": true },
-    { "source": "/branze/marketing-nieruchomosci", "destination": "/dla-kogo/nieruchomosci", "permanent": true },
-    { "source": "/branze/marketing-automotive", "destination": "/dla-kogo/automotive", "permanent": true },
-    { "source": "/branze/marketing-edukacja", "destination": "/dla-kogo/edukacja", "permanent": true },
-    { "source": "/branze/marketing-prawo-finanse", "destination": "/dla-kogo/prawo-finanse", "permanent": true },
-    { "source": "/branze/marketing-ecommerce-retail", "destination": "/dla-kogo/ecommerce-retail", "permanent": true },
-    { "source": "/branze/marketing-it", "destination": "/dla-kogo/it-saas", "permanent": true },
-    { "source": "/branze/marketing-produkcja", "destination": "/dla-kogo/produkcja", "permanent": true },
-    { "source": "/branze/marketing-ngo", "destination": "/dla-kogo/ngo", "permanent": true },
-    { "source": "/branze/marketing-turystyka", "destination": "/dla-kogo/turystyka", "permanent": true },
-    { "source": "/branze/:path*", "destination": "/dla-kogo/:path*", "permanent": true },
-    { "source": "/blog/kampania-reklamowa-marketingowa-przyklady-definicja", "destination": "/content-marketing/kampanie", "permanent": true },
-    { "source": "/blog/remarketing-retargeting-co-to", "destination": "/performance-marketing/remarketing", "permanent": true },
-    { "source": "/blog/seo-dla-sklepow-internetowych", "destination": "/seo/ecommerce", "permanent": true },
-    { "source": "/blog/automatyzacja-marketingu", "destination": "/blog/marketing-automation", "permanent": true },
-    { "source": "/blog/b2b-b2c-roznice", "destination": "/blog/marketing-b2b-vs-b2c", "permanent": true },
-    { "source": "/blog/ga4-poradnik", "destination": "/blog/google-analytics-4-poradnik", "permanent": true },
-    { "source": "/blog/ai-w-marketingu", "destination": "/blog/ai-w-marketingu-msp-2025", "permanent": true },
-    { "source": "/blog/branding-startupy", "destination": "/blog/branding-dla-startupow", "permanent": true },
-    { "source": "/blog/ile-kosztuje-strona", "destination": "/blog/ile-kosztuje-strona-internetowa", "permanent": true },
-    { "source": "/blog/copywriting-na-landing-page", "destination": "/content-marketing/copywriting-landing", "permanent": true },
-    { "source": "/blog/influencer-marketing-poradnik", "destination": "/social-media/influencer", "permanent": true },
-    { "source": "/blog/personal-branding-na-linkedin", "destination": "/blog/personal-branding-linkedin", "permanent": true },
-    { "source": "/blog/psychologia-cenowa", "destination": "/blog/psychologia-cen", "permanent": true },
-    { "source": "/blog/tiktok-dla-firm", "destination": "/social-media/tiktok-biznes", "permanent": true },
-    { "source": "/blog/ux-dla-ecommerce", "destination": "/blog/ux-ui-ecommerce", "permanent": true },
-    { "source": "/blog/video-marketing-poradnik", "destination": "/blog/video-marketing-trendy-2025", "permanent": true },
-    { "source": "/blog/email-marketing", "destination": "/content-marketing/email-2025", "permanent": true },
-    { "source": "/blog/landing-page", "destination": "/blog/jak-stworzyc-landing-page", "permanent": true },
-    { "source": "/blog/reels-vs-tiktok", "destination": "/social-media/reels-vs-tiktok", "permanent": true },
-    { "source": "/blog/google-vs-facebook", "destination": "/performance-marketing/google-vs-facebook", "permanent": true },
-    { "source": "/blog/google-ads-poradnik", "destination": "/performance-marketing/google-ads", "permanent": true },
-    { "source": "/blog/seo-lokalne-poznan", "destination": "/seo/lokalne-poznan", "permanent": true },
-    { "source": "/blog/budzet-marketingowy", "destination": "/blog/budzet-marketingowy-planowanie", "permanent": true },
-    { "source": "/blog/koszt-strony-internetowej", "destination": "/blog/ile-kosztuje-strona-internetowa", "permanent": true },
-    { "source": "/blog/b2b-vs-b2c", "destination": "/blog/marketing-b2b-vs-b2c", "permanent": true },
-    { "source": "/blog/google-analytics-4", "destination": "/blog/google-analytics-4-poradnik", "permanent": true },
-    { "source": "/blog/ai-marketing", "destination": "/blog/ai-w-marketingu-msp-2025", "permanent": true },
-    { "source": "/blog/video-marketing", "destination": "/blog/video-marketing-trendy-2025", "permanent": true },
-    { "source": "/blog/influencer-marketing", "destination": "/social-media/influencer", "permanent": true },
-    { "source": "/blog/tiktok-biznes", "destination": "/social-media/tiktok-biznes", "permanent": true },
-    { "source": "/blog/ux-ecommerce", "destination": "/blog/ux-ui-ecommerce", "permanent": true },
-    { "source": "/case-study-enea", "destination": "/realizacje/enea-stadion", "permanent": true },
-    { "source": "/case-study-fps", "destination": "/realizacje/fps-cegielski", "permanent": true },
-    { "source": "/case-study-rppg", "destination": "/realizacje/rppg", "permanent": true },
-    { "source": "/case-study-verthe", "destination": "/realizacje/verthe", "permanent": true },
-    { "source": "/case-study-victory-cars", "destination": "/realizacje/victory-cars", "permanent": true },
-    { "source": "/case-study-przedszkole", "destination": "/realizacje/przedszkole", "permanent": true },
-    { "source": "/case-study-cute-dumpling", "destination": "/realizacje/cute-dumpling", "permanent": true },
-    { "source": "/case-study-klagem", "destination": "/realizacje/klagem", "permanent": true },
-    { "source": "/case-study-mechanica", "destination": "/realizacje/mechanica", "permanent": true },
-    { "source": "/case-study-gierki", "destination": "/realizacje/gierki", "permanent": true },
-    { "source": "/case-study-graf", "destination": "/realizacje/graf-tapicerstwo", "permanent": true },
-    { "source": "/case-study-fabryka-virali", "destination": "/realizacje/fabryka-virali", "permanent": true },
-    { "source": "/case-study-friendly-gas", "destination": "/realizacje/friendly-gas", "permanent": true },
-    { "source": "/case-study-celsjusz", "destination": "/realizacje/celsjusz", "permanent": true },
-    { "source": "/case-study-sookar", "destination": "/realizacje/sookar", "permanent": true },
-    { "source": "/case-study-stageplan", "destination": "/realizacje/stageplan", "permanent": true },
-    { "source": "/case-study-apartamenty", "destination": "/realizacje/apartamenty-chorwacja", "permanent": true },
-    { "source": "/case-study-lauvjah", "destination": "/realizacje/lauvjah", "permanent": true },
-    { "source": "/realizacje/fps", "destination": "/realizacje/fps-cegielski", "permanent": true },
-    { "source": "/realizacje/graf", "destination": "/realizacje/graf-tapicerstwo", "permanent": true },
-    { "source": "/login", "destination": "/zasoby", "permanent": true },
-    { "source": "/agencja-social-media-poznan", "destination": "/agencja-social-media/poznan", "permanent": true },
-    { "source": "/landing-page", "destination": "/uslugi/strony-internetowe", "permanent": true },
-    { "source": "/sitemap", "destination": "/sitemap-index.xml", "permanent": true },
-    { "source": "/content-marketing/tresci-seo", "destination": "/content-marketing/strategia", "permanent": true },
-    { "source": "/social-media/facebook", "destination": "/blog/facebook-ads-poradnik", "permanent": true },
-    { "source": "/social-media/instagram", "destination": "/blog/instagram-dla-firmy", "permanent": true },
-    { "source": "/social-media/tiktok", "destination": "/blog/tiktok-dla-firmy", "permanent": true },
-    { "source": "/social-media/linkedin", "destination": "/blog/linkedin-dla-firmy", "permanent": true },
-    { "source": "/social-media/youtube", "destination": "/blog/youtube-dla-firmy", "permanent": true },
-    { "source": "/social-media/pinterest", "destination": "/blog/pinterest-dla-firmy", "permanent": true },
-    { "source": "/social-media/meta", "destination": "/performance-marketing/meta-ads", "permanent": true },
-    { "source": "/uslugi/seo", "destination": "/seo/pozycjonowanie", "permanent": true },
-    { "source": "/uslugi/seo/:path*", "destination": "/seo/pozycjonowanie", "permanent": true },
-    { "source": "/uslugi/google-ads", "destination": "/performance-marketing/google-ads", "permanent": true },
-    { "source": "/uslugi/google-ads/:path*", "destination": "/performance-marketing/google-ads", "permanent": true },
-    { "source": "/uslugi/strony-www", "destination": "/uslugi/strony-internetowe", "permanent": true },
-    { "source": "/uslugi/strony-www/:path*", "destination": "/uslugi/strony-internetowe", "permanent": true },
-    { "source": "/uslugi/social-media", "destination": "/uslugi/social-media-marketing", "permanent": true },
-    { "source": "/uslugi/social-media/:path*", "destination": "/uslugi/social-media-marketing", "permanent": true },
-    { "source": "/uslugi/copywriting", "destination": "/content-marketing/copywriting-landing", "permanent": true },
-    { "source": "/uslugi/copywriting/:path*", "destination": "/content-marketing/copywriting-landing", "permanent": true },
-    { "source": "/portfolio", "destination": "/realizacje", "permanent": true },
-    { "source": "/portfolio/:path*", "destination": "/realizacje/:path*", "permanent": true }
+    {
+      "source": "/blog/automatyzacja-marketingu-dzialanie-firmy",
+      "destination": "/blog/marketing-automation-co-to",
+      "permanent": true
+    },
+    {
+      "source": "/blog/automatyzacja-marketingu-przewodnik-wzrostu-efektywnosci",
+      "destination": "/blog/marketing-automation-co-to",
+      "permanent": true
+    },
+    {
+      "source": "/blog/branding-poznan-6",
+      "destination": "/agencja-kreatywna-poznan",
+      "permanent": true
+    },
+    {
+      "source": "/blog/buyer-journey-co-to",
+      "destination": "/blog/customer-journey-co-to",
+      "permanent": true
+    },
+    {
+      "source": "/blog/co-to-jest-pozycjonowanie-kompletny-przewodnik-dla-firm",
+      "destination": "/blog/seo-co-to-jest",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cro-co-to-jest",
+      "destination": "/blog/cro-conversion-rate-optimization-co-to-jest",
+      "permanent": true
+    },
+    {
+      "source": "/blog/customer-ltv-co-to",
+      "destination": "/blog/ltv-customer-lifetime-value-co-to",
+      "permanent": true
+    },
+    {
+      "source": "/blog/dlaczego-warto-inwestowac-w-content-marketing-firmy",
+      "destination": "/blog/dlaczego-content-marketing-zwieksza-zyski-i-marke",
+      "permanent": true
+    },
+    {
+      "source": "/blog/dlaczego-warto-miec-strone-firmowa-przewaga-online",
+      "destination": "/blog/strona-internetowa-dla-firmy",
+      "permanent": true
+    },
+    {
+      "source": "/blog/dropshipping-co-to-jest",
+      "destination": "/blog/dropshipping-polska",
+      "permanent": true
+    },
+    {
+      "source": "/blog/efektywny-przewodnik-reklama-internet-male-firmy",
+      "destination": "/blog/formy-reklamy-online-skuteczne-rozwiazania-dla-msp-w-polsce",
+      "permanent": true
+    },
+    {
+      "source": "/blog/gtm-strategy-co-to",
+      "destination": "/blog/go-to-market-strategy-co-to",
+      "permanent": true
+    },
+    {
+      "source": "/blog/heatmapa-co-to",
+      "destination": "/blog/heatmapy-co-to-jest",
+      "permanent": true
+    },
+    {
+      "source": "/blog/icp-ideal-customer-profile-co-to",
+      "destination": "/blog/icp-co-to-jest",
+      "permanent": true
+    },
+    {
+      "source": "/blog/identyfikacja-wizualna-cennik",
+      "destination": "/blog/ile-kosztuje-branding",
+      "permanent": true
+    },
+    {
+      "source": "/blog/jak-planowac-content-marketing-i-budowac-skuteczna-strategie",
+      "destination": "/blog/strategia-content-marketingu",
+      "permanent": true
+    },
+    {
+      "source": "/blog/kalendarz-publikacji-social-media-klucz-do-wzrostu-marki",
+      "destination": "/blog/content-calendar-co-to",
+      "permanent": true
+    },
+    {
+      "source": "/blog/marketing-afiliacyjny-co-to",
+      "destination": "/blog/affiliate-marketing-co-to",
+      "permanent": true
+    },
+    {
+      "source": "/blog/marketing-automation",
+      "destination": "/blog/marketing-automation-co-to",
+      "permanent": true
+    },
+    {
+      "source": "/blog/optymalizacja-strony-wiecej-konwersji-i-wyzsze-przychody",
+      "destination": "/blog/jak-zwiekszyc-konwersje-strony",
+      "permanent": true
+    },
+    {
+      "source": "/blog/pakiety-uslug-agencji-social-media",
+      "destination": "/blog/prowadzenie-social-media-cennik",
+      "permanent": true
+    },
+    {
+      "source": "/blog/pozycjonowanie-stron-cena",
+      "destination": "/blog/ile-kosztuje-pozycjonowanie",
+      "permanent": true
+    },
+    {
+      "source": "/blog/prospecting-b2b-generowanie-leadow",
+      "destination": "/blog/lead-generation-co-to",
+      "permanent": true
+    },
+    {
+      "source": "/blog/psychologia-cen-co-to",
+      "destination": "/blog/psychologia-cen",
+      "permanent": true
+    },
+    {
+      "source": "/blog/reklama-w-google",
+      "destination": "/blog/google-ads-co-to",
+      "permanent": true
+    },
+    {
+      "source": "/blog/reklamy-google-ads-poznan-5",
+      "destination": "/performance-marketing/google-ads/poznan",
+      "permanent": true
+    },
+    {
+      "source": "/blog/retargeting-co-to",
+      "destination": "/blog/retargeting-reklamy-poradnik",
+      "permanent": true
+    },
+    {
+      "source": "/blog/sales-funnel-co-to",
+      "destination": "/blog/lejek-konwersji-conversion-funnel-co-to-jest",
+      "permanent": true
+    },
+    {
+      "source": "/blog/seo-ecommerce-poradnik",
+      "destination": "/blog/seo-dla-sklepu-internetowego",
+      "permanent": true
+    },
+    {
+      "source": "/blog/strategia-cenowa",
+      "destination": "/blog/pricing-strategy-co-to",
+      "permanent": true
+    },
+    {
+      "source": "/blog/strony-wordpress-poznan-5",
+      "destination": "/uslugi/strona-wordpress",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tworzenie-stron-internetowych-cennik",
+      "destination": "/blog/ile-kosztuje-strona-internetowa-realne-koszty-i-zwrot",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tworzenie-stron-internetowych-poznan-5",
+      "destination": "/uslugi/strony-internetowe/poznan",
+      "permanent": true
+    },
+    {
+      "source": "/blog/user-persona-co-to",
+      "destination": "/blog/buyer-persona-co-to",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ux-design-co-to",
+      "destination": "/blog/ui-ux-co-to",
+      "permanent": true
+    },
+    {
+      "source": "/uslugi/pozycjonowanie/poznan",
+      "destination": "/seo/pozycjonowanie-poznan",
+      "permanent": true
+    },
+    {
+      "source": "/agencja-seo-poznan",
+      "destination": "/seo/pozycjonowanie-poznan",
+      "permanent": true
+    },
+    {
+      "source": "/uslugi/pozycjonowanie/katowice",
+      "destination": "/seo/pozycjonowanie-katowice",
+      "permanent": true
+    },
+    {
+      "source": "/uslugi/pozycjonowanie/krakow",
+      "destination": "/seo/pozycjonowanie-krakow",
+      "permanent": true
+    },
+    {
+      "source": "/agencja-seo-krakow",
+      "destination": "/seo/pozycjonowanie-krakow",
+      "permanent": true
+    },
+    {
+      "source": "/agencja-marketingowa-poznan",
+      "destination": "/agencja-marketingowa/poznan",
+      "permanent": true
+    },
+    {
+      "source": "/agencja-marketingowa-warszawa",
+      "destination": "/agencja-marketingowa/warszawa",
+      "permanent": true
+    },
+    {
+      "source": "/agencja-marketingowa-katowice",
+      "destination": "/agencja-marketingowa/katowice",
+      "permanent": true
+    },
+    {
+      "source": "/agencja-marketingowa-wroclaw",
+      "destination": "/agencja-marketingowa/wroclaw",
+      "permanent": true
+    },
+    {
+      "source": "/agencja-marketingowa-lodz",
+      "destination": "/agencja-marketingowa/lodz",
+      "permanent": true
+    },
+    {
+      "source": "/agencja-marketingowa-gdansk",
+      "destination": "/agencja-marketingowa/gdansk",
+      "permanent": true
+    },
+    {
+      "source": "/agencja-marketingowa-krakow",
+      "destination": "/agencja-marketingowa/krakow",
+      "permanent": true
+    },
+    {
+      "source": "/agencja-marketingowa-lublin",
+      "destination": "/agencja-marketingowa/lublin",
+      "permanent": true
+    },
+    {
+      "source": "/agencja-marketingowa-rzeszow",
+      "destination": "/agencja-marketingowa/rzeszow",
+      "permanent": true
+    },
+    {
+      "source": "/agencja-marketingowa-bydgoszcz",
+      "destination": "/agencja-marketingowa/bydgoszcz",
+      "permanent": true
+    },
+    {
+      "source": "/agencja-marketingowa-szczecin",
+      "destination": "/agencja-marketingowa/szczecin",
+      "permanent": true
+    },
+    {
+      "source": "/akademia",
+      "destination": "/zasoby",
+      "permanent": true
+    },
+    {
+      "source": "/blog/nps-co-to-jest",
+      "destination": "/blog/nps-net-promoter-score-co-to-jest",
+      "permanent": true
+    },
+    {
+      "source": "/blog/reklama-programatyczna-co-to",
+      "destination": "/blog/programmatic-advertising-co-to",
+      "permanent": true
+    },
+    {
+      "source": "/blog/zero-trust-security-co-to-jest-jak-wdrozyz",
+      "destination": "/blog/zero-trust-security-co-to-jest-jak-wdrozyz-ztna-mfa",
+      "permanent": true
+    },
+    {
+      "source": "/blog/api-gateway-co-to-jest-jak-wybrac-kong-aws-apigee",
+      "destination": "/blog/api-gateway-co-to-jest-kong-aws-traefik-kubernetes-ingress",
+      "permanent": true
+    },
+    {
+      "source": "/blog/okr-co-to",
+      "destination": "/blog/okr-co-to-jest",
+      "permanent": true
+    },
+    {
+      "source": "/uslugi/audyt-seo",
+      "destination": "/seo/audyt",
+      "permanent": true
+    },
+    {
+      "source": "/uslugi/strony-internetowe/kielce",
+      "destination": "/strony-internetowe/kielce",
+      "permanent": true
+    },
+    {
+      "source": "/social-media/poznan",
+      "destination": "/agencja-social-media/poznan",
+      "permanent": true
+    },
+    {
+      "source": "/blog/content-marketing-dla-firmy",
+      "destination": "/blog/content-marketing-poradnik",
+      "permanent": true
+    },
+    {
+      "source": "/project-type/social-media",
+      "destination": "/realizacje",
+      "permanent": true
+    },
+    {
+      "source": "/produkcja-video-poznan",
+      "destination": "/uslugi/produkcja-video",
+      "permanent": true
+    },
+    {
+      "source": "/strony-internetowe/torun",
+      "destination": "/uslugi/strony-internetowe/torun",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "fotz-studio.pl"
+        }
+      ],
+      "destination": "https://www.fotz-studio.pl/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/strony-internetowe",
+      "destination": "/uslugi/strony-internetowe",
+      "permanent": true
+    },
+    {
+      "source": "/strony-internetowe-:city",
+      "destination": "/uslugi/strony-internetowe/:city",
+      "permanent": true
+    },
+    {
+      "source": "/sklepy-internetowe-:city",
+      "destination": "/uslugi/sklepy-internetowe/:city",
+      "permanent": true
+    },
+    {
+      "source": "/tiktok-ads-gdansk",
+      "destination": "/performance-marketing/tiktok-ads/gdansk",
+      "permanent": true
+    },
+    {
+      "source": "/ecommerce-tworzenie-sklepu",
+      "destination": "/uslugi/strony-internetowe/ecommerce",
+      "permanent": true
+    },
+    {
+      "source": "/identyfikacja-wizualna",
+      "destination": "/uslugi/branding",
+      "permanent": true
+    },
+    {
+      "source": "/spoty-reklamowe",
+      "destination": "/uslugi/produkcja-video",
+      "permanent": true
+    },
+    {
+      "source": "/fotograf-poznan",
+      "destination": "/uslugi/fotografia",
+      "permanent": true
+    },
+    {
+      "source": "/fotografia-z-drona",
+      "destination": "/uslugi/fotografia-z-drona",
+      "permanent": true
+    },
+    {
+      "source": "/studio-podcastowe",
+      "destination": "/uslugi/studio-podcastowe",
+      "permanent": true
+    },
+    {
+      "source": "/produkcja-filmow-poznan",
+      "destination": "/uslugi/produkcja-filmow",
+      "permanent": true
+    },
+    {
+      "source": "/branding",
+      "destination": "/uslugi/branding",
+      "permanent": true
+    },
+    {
+      "source": "/produkcja-video",
+      "destination": "/uslugi/produkcja-video",
+      "permanent": true
+    },
+    {
+      "source": "/social-media-marketing",
+      "destination": "/uslugi/social-media-marketing",
+      "permanent": true
+    },
+    {
+      "source": "/audyt-seo",
+      "destination": "/seo/audyt",
+      "permanent": true
+    },
+    {
+      "source": "/pozycjonowanie",
+      "destination": "/seo/pozycjonowanie",
+      "permanent": true
+    },
+    {
+      "source": "/pozycjonowanie-stron-poznan",
+      "destination": "/seo/pozycjonowanie-poznan",
+      "permanent": true
+    },
+    {
+      "source": "/pozycjonowanie-google-maps",
+      "destination": "/seo/google-maps",
+      "permanent": true
+    },
+    {
+      "source": "/social-media",
+      "destination": "/social-media/obsluga",
+      "permanent": true
+    },
+    {
+      "source": "/social-media-poznan",
+      "destination": "/agencja-social-media/poznan",
+      "permanent": true
+    },
+    {
+      "source": "/google-ads",
+      "destination": "/performance-marketing/google-ads",
+      "permanent": true
+    },
+    {
+      "source": "/facebook-ads",
+      "destination": "/performance-marketing/facebook-ads",
+      "permanent": true
+    },
+    {
+      "source": "/instagram-ads",
+      "destination": "/performance-marketing/instagram-ads",
+      "permanent": true
+    },
+    {
+      "source": "/facebook-instagram-ads",
+      "destination": "/performance-marketing/meta-ads",
+      "permanent": true
+    },
+    {
+      "source": "/linkedin-ads",
+      "destination": "/performance-marketing/linkedin-ads",
+      "permanent": true
+    },
+    {
+      "source": "/tiktok-ads",
+      "destination": "/performance-marketing/tiktok-ads",
+      "permanent": true
+    },
+    {
+      "source": "/youtube-ads",
+      "destination": "/performance-marketing/youtube-ads",
+      "permanent": true
+    },
+    {
+      "source": "/content-marketing",
+      "destination": "/content-marketing/strategia",
+      "permanent": true
+    },
+    {
+      "source": "/blog/seo-ecommerce",
+      "destination": "/seo/ecommerce",
+      "permanent": true
+    },
+    {
+      "source": "/blog/seo-lokalne-poznan-poradnik",
+      "destination": "/seo/lokalne-poznan",
+      "permanent": true
+    },
+    {
+      "source": "/blog/influencer-marketing-polska",
+      "destination": "/social-media/influencer",
+      "permanent": true
+    },
+    {
+      "source": "/blog/instagram-reels-vs-tiktok",
+      "destination": "/social-media/reels-vs-tiktok",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tiktok-dla-biznesu",
+      "destination": "/social-media/tiktok-biznes",
+      "permanent": true
+    },
+    {
+      "source": "/blog/google-ads-vs-facebook-ads",
+      "destination": "/performance-marketing/google-vs-facebook",
+      "permanent": true
+    },
+    {
+      "source": "/blog/remarketing-poradnik",
+      "destination": "/performance-marketing/remarketing",
+      "permanent": true
+    },
+    {
+      "source": "/blog/copywriting-landing-page",
+      "destination": "/content-marketing/copywriting-landing",
+      "permanent": true
+    },
+    {
+      "source": "/blog/email-marketing-2025",
+      "destination": "/content-marketing/email-2025",
+      "permanent": true
+    },
+    {
+      "source": "/blog/kampania-reklamowa-marketingowa",
+      "destination": "/content-marketing/kampanie",
+      "permanent": true
+    },
+    {
+      "source": "/branze/marketing-medyczny",
+      "destination": "/dla-kogo/branza-medyczna",
+      "permanent": true
+    },
+    {
+      "source": "/branze/marketing-gastronomia",
+      "destination": "/dla-kogo/gastronomia",
+      "permanent": true
+    },
+    {
+      "source": "/branze/marketing-beauty",
+      "destination": "/dla-kogo/beauty-wellness",
+      "permanent": true
+    },
+    {
+      "source": "/branze/marketing-nieruchomosci",
+      "destination": "/dla-kogo/nieruchomosci",
+      "permanent": true
+    },
+    {
+      "source": "/branze/marketing-automotive",
+      "destination": "/dla-kogo/automotive",
+      "permanent": true
+    },
+    {
+      "source": "/branze/marketing-edukacja",
+      "destination": "/dla-kogo/edukacja",
+      "permanent": true
+    },
+    {
+      "source": "/branze/marketing-prawo-finanse",
+      "destination": "/dla-kogo/prawo-finanse",
+      "permanent": true
+    },
+    {
+      "source": "/branze/marketing-ecommerce-retail",
+      "destination": "/dla-kogo/ecommerce-retail",
+      "permanent": true
+    },
+    {
+      "source": "/branze/marketing-it",
+      "destination": "/dla-kogo/it-saas",
+      "permanent": true
+    },
+    {
+      "source": "/branze/marketing-produkcja",
+      "destination": "/dla-kogo/produkcja",
+      "permanent": true
+    },
+    {
+      "source": "/branze/marketing-ngo",
+      "destination": "/dla-kogo/ngo",
+      "permanent": true
+    },
+    {
+      "source": "/branze/marketing-turystyka",
+      "destination": "/dla-kogo/turystyka",
+      "permanent": true
+    },
+    {
+      "source": "/branze/:path*",
+      "destination": "/dla-kogo/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/blog/kampania-reklamowa-marketingowa-przyklady-definicja",
+      "destination": "/content-marketing/kampanie",
+      "permanent": true
+    },
+    {
+      "source": "/blog/remarketing-retargeting-co-to",
+      "destination": "/performance-marketing/remarketing",
+      "permanent": true
+    },
+    {
+      "source": "/blog/seo-dla-sklepow-internetowych",
+      "destination": "/seo/ecommerce",
+      "permanent": true
+    },
+    {
+      "source": "/blog/automatyzacja-marketingu",
+      "destination": "/blog/marketing-automation-co-to",
+      "permanent": true
+    },
+    {
+      "source": "/blog/b2b-b2c-roznice",
+      "destination": "/blog/marketing-b2b-vs-b2c",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ga4-poradnik",
+      "destination": "/blog/google-analytics-4-poradnik",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-w-marketingu",
+      "destination": "/blog/ai-w-marketingu-msp-2025",
+      "permanent": true
+    },
+    {
+      "source": "/blog/branding-startupy",
+      "destination": "/blog/branding-dla-startupow",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ile-kosztuje-strona",
+      "destination": "/blog/ile-kosztuje-strona-internetowa",
+      "permanent": true
+    },
+    {
+      "source": "/blog/copywriting-na-landing-page",
+      "destination": "/content-marketing/copywriting-landing",
+      "permanent": true
+    },
+    {
+      "source": "/blog/influencer-marketing-poradnik",
+      "destination": "/social-media/influencer",
+      "permanent": true
+    },
+    {
+      "source": "/blog/personal-branding-na-linkedin",
+      "destination": "/blog/personal-branding-linkedin",
+      "permanent": true
+    },
+    {
+      "source": "/blog/psychologia-cenowa",
+      "destination": "/blog/psychologia-cen",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tiktok-dla-firm",
+      "destination": "/social-media/tiktok-biznes",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ux-dla-ecommerce",
+      "destination": "/blog/ux-ui-ecommerce",
+      "permanent": true
+    },
+    {
+      "source": "/blog/video-marketing-poradnik",
+      "destination": "/blog/video-marketing-trendy-2025",
+      "permanent": true
+    },
+    {
+      "source": "/blog/email-marketing",
+      "destination": "/content-marketing/email-2025",
+      "permanent": true
+    },
+    {
+      "source": "/blog/landing-page",
+      "destination": "/blog/jak-stworzyc-landing-page",
+      "permanent": true
+    },
+    {
+      "source": "/blog/reels-vs-tiktok",
+      "destination": "/social-media/reels-vs-tiktok",
+      "permanent": true
+    },
+    {
+      "source": "/blog/google-vs-facebook",
+      "destination": "/performance-marketing/google-vs-facebook",
+      "permanent": true
+    },
+    {
+      "source": "/blog/google-ads-poradnik",
+      "destination": "/performance-marketing/google-ads",
+      "permanent": true
+    },
+    {
+      "source": "/blog/seo-lokalne-poznan",
+      "destination": "/seo/lokalne-poznan",
+      "permanent": true
+    },
+    {
+      "source": "/blog/budzet-marketingowy",
+      "destination": "/blog/budzet-marketingowy-planowanie",
+      "permanent": true
+    },
+    {
+      "source": "/blog/koszt-strony-internetowej",
+      "destination": "/blog/ile-kosztuje-strona-internetowa",
+      "permanent": true
+    },
+    {
+      "source": "/blog/b2b-vs-b2c",
+      "destination": "/blog/marketing-b2b-vs-b2c",
+      "permanent": true
+    },
+    {
+      "source": "/blog/google-analytics-4",
+      "destination": "/blog/google-analytics-4-poradnik",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-marketing",
+      "destination": "/blog/ai-w-marketingu-msp-2025",
+      "permanent": true
+    },
+    {
+      "source": "/blog/video-marketing",
+      "destination": "/blog/video-marketing-trendy-2025",
+      "permanent": true
+    },
+    {
+      "source": "/blog/influencer-marketing",
+      "destination": "/social-media/influencer",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tiktok-biznes",
+      "destination": "/social-media/tiktok-biznes",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ux-ecommerce",
+      "destination": "/blog/ux-ui-ecommerce",
+      "permanent": true
+    },
+    {
+      "source": "/case-study-enea",
+      "destination": "/realizacje/enea-stadion",
+      "permanent": true
+    },
+    {
+      "source": "/case-study-fps",
+      "destination": "/realizacje/fps-cegielski",
+      "permanent": true
+    },
+    {
+      "source": "/case-study-rppg",
+      "destination": "/realizacje/rppg",
+      "permanent": true
+    },
+    {
+      "source": "/case-study-verthe",
+      "destination": "/realizacje/verthe",
+      "permanent": true
+    },
+    {
+      "source": "/case-study-victory-cars",
+      "destination": "/realizacje/victory-cars",
+      "permanent": true
+    },
+    {
+      "source": "/case-study-przedszkole",
+      "destination": "/realizacje/przedszkole",
+      "permanent": true
+    },
+    {
+      "source": "/case-study-cute-dumpling",
+      "destination": "/realizacje/cute-dumpling",
+      "permanent": true
+    },
+    {
+      "source": "/case-study-klagem",
+      "destination": "/realizacje/klagem",
+      "permanent": true
+    },
+    {
+      "source": "/case-study-mechanica",
+      "destination": "/realizacje/mechanica",
+      "permanent": true
+    },
+    {
+      "source": "/case-study-gierki",
+      "destination": "/realizacje/gierki",
+      "permanent": true
+    },
+    {
+      "source": "/case-study-graf",
+      "destination": "/realizacje/graf-tapicerstwo",
+      "permanent": true
+    },
+    {
+      "source": "/case-study-fabryka-virali",
+      "destination": "/realizacje/fabryka-virali",
+      "permanent": true
+    },
+    {
+      "source": "/case-study-friendly-gas",
+      "destination": "/realizacje/friendly-gas",
+      "permanent": true
+    },
+    {
+      "source": "/case-study-celsjusz",
+      "destination": "/realizacje/celsjusz",
+      "permanent": true
+    },
+    {
+      "source": "/case-study-sookar",
+      "destination": "/realizacje/sookar",
+      "permanent": true
+    },
+    {
+      "source": "/case-study-stageplan",
+      "destination": "/realizacje/stageplan",
+      "permanent": true
+    },
+    {
+      "source": "/case-study-apartamenty",
+      "destination": "/realizacje/apartamenty-chorwacja",
+      "permanent": true
+    },
+    {
+      "source": "/case-study-lauvjah",
+      "destination": "/realizacje/lauvjah",
+      "permanent": true
+    },
+    {
+      "source": "/realizacje/fps",
+      "destination": "/realizacje/fps-cegielski",
+      "permanent": true
+    },
+    {
+      "source": "/realizacje/graf",
+      "destination": "/realizacje/graf-tapicerstwo",
+      "permanent": true
+    },
+    {
+      "source": "/login",
+      "destination": "/zasoby",
+      "permanent": true
+    },
+    {
+      "source": "/agencja-social-media-poznan",
+      "destination": "/agencja-social-media/poznan",
+      "permanent": true
+    },
+    {
+      "source": "/landing-page",
+      "destination": "/uslugi/strony-internetowe",
+      "permanent": true
+    },
+    {
+      "source": "/sitemap",
+      "destination": "/sitemap-index.xml",
+      "permanent": true
+    },
+    {
+      "source": "/content-marketing/tresci-seo",
+      "destination": "/content-marketing/strategia",
+      "permanent": true
+    },
+    {
+      "source": "/social-media/facebook",
+      "destination": "/blog/facebook-ads-poradnik",
+      "permanent": true
+    },
+    {
+      "source": "/social-media/instagram",
+      "destination": "/blog/instagram-dla-firmy",
+      "permanent": true
+    },
+    {
+      "source": "/social-media/tiktok",
+      "destination": "/blog/tiktok-dla-firmy",
+      "permanent": true
+    },
+    {
+      "source": "/social-media/linkedin",
+      "destination": "/blog/linkedin-dla-firmy",
+      "permanent": true
+    },
+    {
+      "source": "/social-media/youtube",
+      "destination": "/blog/youtube-dla-firmy",
+      "permanent": true
+    },
+    {
+      "source": "/social-media/pinterest",
+      "destination": "/blog/pinterest-dla-firmy",
+      "permanent": true
+    },
+    {
+      "source": "/social-media/meta",
+      "destination": "/performance-marketing/meta-ads",
+      "permanent": true
+    },
+    {
+      "source": "/uslugi/seo",
+      "destination": "/seo/pozycjonowanie",
+      "permanent": true
+    },
+    {
+      "source": "/uslugi/seo/:path*",
+      "destination": "/seo/pozycjonowanie",
+      "permanent": true
+    },
+    {
+      "source": "/uslugi/google-ads",
+      "destination": "/performance-marketing/google-ads",
+      "permanent": true
+    },
+    {
+      "source": "/uslugi/google-ads/:path*",
+      "destination": "/performance-marketing/google-ads",
+      "permanent": true
+    },
+    {
+      "source": "/uslugi/strony-www",
+      "destination": "/uslugi/strony-internetowe",
+      "permanent": true
+    },
+    {
+      "source": "/uslugi/strony-www/:path*",
+      "destination": "/uslugi/strony-internetowe",
+      "permanent": true
+    },
+    {
+      "source": "/uslugi/social-media",
+      "destination": "/uslugi/social-media-marketing",
+      "permanent": true
+    },
+    {
+      "source": "/uslugi/social-media/:path*",
+      "destination": "/uslugi/social-media-marketing",
+      "permanent": true
+    },
+    {
+      "source": "/uslugi/copywriting",
+      "destination": "/content-marketing/copywriting-landing",
+      "permanent": true
+    },
+    {
+      "source": "/uslugi/copywriting/:path*",
+      "destination": "/content-marketing/copywriting-landing",
+      "permanent": true
+    },
+    {
+      "source": "/portfolio",
+      "destination": "/realizacje",
+      "permanent": true
+    },
+    {
+      "source": "/portfolio/:path*",
+      "destination": "/realizacje/:path*",
+      "permanent": true
+    }
   ],
   "functions": {
-    "api/send-contact.js": { "maxDuration": 10 }
+    "api/send-contact.js": {
+      "maxDuration": 10
+    }
   },
   "rewrites": [
-    { "source": "/mapa-strony", "destination": "/mapa-strony-v3.html" },
-    { "source": "/((?!api/|assets/|kampanie/).*)", "destination": "/index.html" }
+    {
+      "source": "/mapa-strony",
+      "destination": "/mapa-strony-v3.html"
+    },
+    {
+      "source": "/((?!api/|assets/|kampanie/).*)",
+      "destination": "/index.html"
+    }
   ],
   "headers": [
     {
       "source": "/sitemap-index.xml",
       "headers": [
-        { "key": "Content-Type", "value": "application/xml; charset=utf-8" },
-        { "key": "Cache-Control", "value": "public, max-age=3600" }
+        {
+          "key": "Content-Type",
+          "value": "application/xml; charset=utf-8"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        }
       ]
     },
     {
       "source": "/sitemap-main.xml",
       "headers": [
-        { "key": "Content-Type", "value": "application/xml; charset=utf-8" },
-        { "key": "Cache-Control", "value": "public, max-age=3600" }
+        {
+          "key": "Content-Type",
+          "value": "application/xml; charset=utf-8"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        }
       ]
     },
     {
       "source": "/sitemap-blog.xml",
       "headers": [
-        { "key": "Content-Type", "value": "application/xml; charset=utf-8" },
-        { "key": "Cache-Control", "value": "public, max-age=3600" }
+        {
+          "key": "Content-Type",
+          "value": "application/xml; charset=utf-8"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        }
       ]
     },
     {
       "source": "/sitemap-services.xml",
       "headers": [
-        { "key": "Content-Type", "value": "application/xml; charset=utf-8" },
-        { "key": "Cache-Control", "value": "public, max-age=3600" }
+        {
+          "key": "Content-Type",
+          "value": "application/xml; charset=utf-8"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        }
       ]
     },
     {
       "source": "/sitemap-cities.xml",
       "headers": [
-        { "key": "Content-Type", "value": "application/xml; charset=utf-8" },
-        { "key": "Cache-Control", "value": "public, max-age=3600" }
+        {
+          "key": "Content-Type",
+          "value": "application/xml; charset=utf-8"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        }
       ]
     },
     {
       "source": "/sitemap-industries.xml",
       "headers": [
-        { "key": "Content-Type", "value": "application/xml; charset=utf-8" },
-        { "key": "Cache-Control", "value": "public, max-age=3600" }
+        {
+          "key": "Content-Type",
+          "value": "application/xml; charset=utf-8"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        }
       ]
     },
     {
       "source": "/sitemap-casestudies.xml",
       "headers": [
-        { "key": "Content-Type", "value": "application/xml; charset=utf-8" },
-        { "key": "Cache-Control", "value": "public, max-age=3600" }
+        {
+          "key": "Content-Type",
+          "value": "application/xml; charset=utf-8"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        }
       ]
     },
     {
       "source": "/robots.txt",
       "headers": [
-        { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
-        { "key": "Cache-Control", "value": "public, max-age=3600" }
+        {
+          "key": "Content-Type",
+          "value": "text/plain; charset=utf-8"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        }
       ]
     },
     {
       "source": "/mapa-strony",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=0, s-maxage=0, must-revalidate" },
-        { "key": "CDN-Cache-Control", "value": "no-store" },
-        { "key": "Vercel-CDN-Cache-Control", "value": "no-store" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, s-maxage=0, must-revalidate"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        },
+        {
+          "key": "Vercel-CDN-Cache-Control",
+          "value": "no-store"
+        }
       ]
     },
     {
       "source": "/agencja-marketingowa",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=0, s-maxage=0, must-revalidate" },
-        { "key": "CDN-Cache-Control", "value": "no-store" },
-        { "key": "Vercel-CDN-Cache-Control", "value": "no-store" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, s-maxage=0, must-revalidate"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        },
+        {
+          "key": "Vercel-CDN-Cache-Control",
+          "value": "no-store"
+        }
       ]
     },
     {
       "source": "/assets/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     },
     {
       "source": "/:path*",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "DENY" },
-        { "key": "X-XSS-Protection", "value": "1; mode=block" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
       ]
     }
   ]

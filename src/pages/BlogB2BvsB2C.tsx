@@ -214,7 +214,7 @@ export default function BlogB2BvsB2C() {
               <ol>
                 <li><strong><Link to="/performance-marketing/linkedin-ads" className="text-primary hover:underline">LinkedIn</Link></strong> - #1 dla B2B, 80% leadów B2B z social media</li>
                 <li><strong><Link to="/content-marketing/strategia" className="text-primary hover:underline">Content marketing</Link></strong> - whitepapers, ebooki, webinary</li>
-                <li><strong>Email marketing</strong> - nurturing, <Link to="/blog/marketing-automation" className="text-primary hover:underline">automatyzacja</Link></li>
+                <li><strong>Email marketing</strong> - nurturing, <Link to="/blog/marketing-automation-co-to" className="text-primary hover:underline">automatyzacja</Link></li>
                 <li><strong><Link to="/seo/pozycjonowanie" className="text-primary hover:underline">SEO</Link> + <Link to="/performance-marketing/google-ads" className="text-primary hover:underline">Google Ads</Link></strong> - intencyjne wyszukiwania</li>
                 <li><strong>Targi i wydarzenia</strong> - networking, demo</li>
               </ol>

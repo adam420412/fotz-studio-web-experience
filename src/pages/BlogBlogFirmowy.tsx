@@ -528,7 +528,7 @@ export default function BlogBlogFirmowy() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <Link
-                to="/blog/marketing-automation"
+                to="/blog/marketing-automation-co-to"
                 className="group p-6 border border-slate-200 rounded-lg hover:shadow-lg transition"
               >
                 <h3 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">

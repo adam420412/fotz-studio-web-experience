@@ -471,7 +471,7 @@ const BlogSprzedazOnline = () => {
                   </p>
                   <div className="bg-card/50 rounded-xl p-4 text-sm">
                     <p className="text-muted-foreground"><strong className="text-foreground">Koszt:</strong> 200–1000 PLN/mies. (narzędzie) + konfiguracja</p>
-                    <p className="text-muted-foreground"><strong className="text-foreground">Sprawdź:</strong> <Link to="/blog/marketing-automation" className="text-primary hover:underline">Marketing automation — kompletny przewodnik</Link></p>
+                    <p className="text-muted-foreground"><strong className="text-foreground">Sprawdź:</strong> <Link to="/blog/marketing-automation-co-to" className="text-primary hover:underline">Marketing automation — kompletny przewodnik</Link></p>
                   </div>
                 </div>
 
