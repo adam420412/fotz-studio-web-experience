@@ -364,7 +364,7 @@ const BlogKosztStrony = () => {
                   Planujesz realizację strony www dla Twojej firmy?
                 </h2>
                 <p className="text-muted-foreground mb-6">
-                  W FOTZ Studio z Poznania budujemy strony dla firm, łącząc projekt, treści, zdjęcia i wideo w jednym zespole. Każdy projekt wyceniamy indywidualnie po rozmowie o celach i zakresie, dlatego nie publikujemy stałego cennika. Jeśli chcesz poznać koszt własnej strony internetowej, opisz projekt na stronie <Link to="/uslugi/strony-internetowe-dla-firm" className="text-primary hover:underline">stron internetowych dla firm</Link> albo <Link to="/kontakt" className="text-primary hover:underline">skontaktuj się z nami</Link>.
+                  W FOTZ Studio z Poznania budujemy strony dla firm, łącząc projekt, treści, zdjęcia i wideo w jednym zespole. Ostateczną cenę ustalamy po rozmowie o celach i zakresie; orientacyjne widełki znajdziesz w <Link to="/cennik-tworzenia-stron" className="text-primary hover:underline">cenniku tworzenia stron</Link>. Jeśli chcesz poznać koszt własnej strony internetowej, opisz projekt na stronie <Link to="/uslugi/strony-internetowe-dla-firm" className="text-primary hover:underline">stron internetowych dla firm</Link> albo <Link to="/kontakt" className="text-primary hover:underline">skontaktuj się z nami</Link>.
                 </p>
 
                 {/* FAQ Section */}
