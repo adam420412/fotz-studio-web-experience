@@ -37,7 +37,7 @@ const steps = [
 export default function SocialMediaKrakow() {
   return (
     <Layout>
-      <SEOHead title="Agencja social media Kraków — marketing, Facebook, Google Ads" description="Agencja marketingowa i social media dla firm z Krakowa: prowadzenie social media, marketing na Facebook i Instagram, kampanie Meta Ads i Google Ads." canonical={PAGE_URL} />
+      <SEOHead title="Agencja social media Kraków — agencja marketingowa i reklamowa" description="Agencja marketingowa i social media dla firm z Krakowa: prowadzenie profili, strategie na Facebook i Instagram, kampanie reklamowe Meta Ads i Google Ads." canonical={PAGE_URL} />
       <ServiceSchema name="Obsługa social media dla firm z Krakowa" description="Strategia, prowadzenie profili w mediach społecznościowych, content, wideo i kampanie reklamowe realizowane zdalnie." areaServed="Kraków" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://www.fotz-studio.pl/" }, { name: "Agencja social media", url: "https://www.fotz-studio.pl/agencja-social-media" }, { name: "Kraków", url: PAGE_URL }]} />
       <FAQSchema items={faqs} />
@@ -116,7 +116,7 @@ export default function SocialMediaKrakow() {
       <section className="container-wide px-6 md:px-12 py-12 md:py-16" aria-labelledby="agencja-heading">
         <div className="max-w-3xl">
           <p className="dv-eyebrow mb-3">O FOTZ Studio</p>
-          <h2 id="agencja-heading" className="text-3xl md:text-4xl font-heading mb-5">Agencja marketingowa i kreatywna: w czym się specjalizujemy</h2>
+          <h2 id="agencja-heading" className="text-3xl md:text-4xl font-heading mb-5">Agencja marketingowa, reklamowa i kreatywna: w czym się specjalizujemy</h2>
           <p className="text-muted-foreground leading-relaxed mb-5">FOTZ Studio to agencja kreatywna z Poznania. Łączymy pracę agencji marketingowej z własną produkcją zdjęć i wideo, dlatego strategię, treści i kampanie przygotowuje jeden zespół. Dla firm, które potrzebują szerszego marketingu internetowego, realizujemy też tworzenie stron internetowych i SEO, a plan marketingowy obejmuje wtedy kilka kanałów i inne działania w internecie naraz.</p>
           <p className="text-muted-foreground leading-relaxed">Krakowskiego rynku nie znamy od środka tak jak lokalna agencja — dlatego na starcie prosimy o informacje o Twoich klientach, sezonowości i konkurencji. Treści przygotowujemy pod Twoją branżę i odbiorców, a nie według jednego szablonu dla każdego biznesu. Inaczej planujemy komunikację w social mediach hotelu, a inaczej dla firmy, której klient biznesowy podejmuje decyzję po kilku tygodniach rozmów — branża zmienia ton, formaty i rytm publikacji.</p>
           <p className="text-muted-foreground leading-relaxed mt-5">W ramach współpracy możemy stworzyć strategię, projektować treści, realizować nagrania, wdrażać kampanie, analizować wyniki i raportować je co miesiąc. Zespół kreatywny dba o to, żeby wygląd i język Twojej marki był spójny na każdej platformie, a regularne odpowiedzi na komentarze i wiadomości budują zaufanie do firmy.</p>
