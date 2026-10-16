@@ -219,8 +219,7 @@ const SocialMediaPoznan = lazy(() => import("./pages/SocialMediaPoznan"));
 const SocialMedia = lazy(() => import("./pages/SocialMedia"));
 const FotografPoznan = lazy(() => import("./pages/FotografPoznan"));
 const FotografiaZDrona = lazy(() => import("./pages/FotografiaZDrona"));
-const PozycjonowanieStronPoznan = lazy(() => import("./pages/PozycjonowanieStronPoznan"));
-const AgencjaSEOPoznan = lazy(() => import("./pages/AgencjaSEOPoznan"));
+const SEOPozycjonowaniePoznan = lazy(() => import("./pages/SEOPozycjonowaniePoznan"));
 const SklepyInternetowePoznan = lazy(() => import("./pages/SklepyInternetowePoznan"));
 const SklepyInternetoweWarszawa = lazy(() => import("./pages/SklepyInternetoweWarszawa"));
 const SklepyInternetoweKrakow = lazy(() => import("./pages/SklepyInternetoweKrakow"));
@@ -255,7 +254,6 @@ const LogoIBranding = lazy(() => import("./pages/LogoIBranding"));
 const UslugiPozycjonowanie = lazy(() => import("./pages/UslugiPozycjonowanie"));
 const PozycjonowanieWarszawa = lazy(() => import("./pages/PozycjonowanieWarszawa"));
 const PozycjonowanieWroclaw = lazy(() => import("./pages/PozycjonowanieWroclaw"));
-const PozycjonowaniePoznan = lazy(() => import("./pages/PozycjonowaniePoznan"));
 const PozycjonowanieGdansk = lazy(() => import("./pages/PozycjonowanieGdansk"));
 const PozycjonowanieLodz = lazy(() => import("./pages/PozycjonowanieLodz"));
 const FotografiaProduktowa = lazy(() => import("./pages/FotografiaProduktowa"));
@@ -1713,7 +1711,7 @@ const App = ({ Router = BrowserRouter, client = queryClient, initialPage }: AppP
                 <Route path="/uslugi/pozycjonowanie/warszawa" element={<PozycjonowanieWarszawa />} />
                 <Route path="/uslugi/pozycjonowanie/krakow" element={<Redirect301 to="/seo/pozycjonowanie-krakow" />} />
                 <Route path="/uslugi/pozycjonowanie/wroclaw" element={<PozycjonowanieWroclaw />} />
-                <Route path="/uslugi/pozycjonowanie/poznan" element={<PozycjonowaniePoznan />} />
+                <Route path="/uslugi/pozycjonowanie/poznan" element={<Redirect301 to="/seo/pozycjonowanie-poznan" />} />
                 <Route path="/uslugi/pozycjonowanie/gdansk" element={<PozycjonowanieGdansk />} />
                 <Route path="/uslugi/pozycjonowanie/lodz" element={<PozycjonowanieLodz />} />
                 <Route path="/uslugi/pozycjonowanie/szczecin" element={<PozycjonowanieSzczecin />} />
@@ -2638,7 +2636,7 @@ const App = ({ Router = BrowserRouter, client = queryClient, initialPage }: AppP
                 {/* SEO cluster */}
                 <Route path="/seo/audyt" element={<AudytSEO />} />
                 <Route path="/seo/pozycjonowanie" element={<Pozycjonowanie />} />
-                <Route path="/seo/pozycjonowanie-poznan" element={<PozycjonowanieStronPoznan />} />
+                <Route path="/seo/pozycjonowanie-poznan" element={<SEOPozycjonowaniePoznan />} />
                 <Route path="/seo/google-maps" element={<PozycjonowanieGoogleMaps />} />
                 <Route path="/seo/ecommerce" element={<BlogSEOEcommerce />} />
                 <Route path="/seo/lokalne-poznan" element={<BlogSEOLokalnePoznan />} />
@@ -2731,7 +2729,7 @@ const App = ({ Router = BrowserRouter, client = queryClient, initialPage }: AppP
                 <Route path="/agencja-marketingowa" element={<AgencjaMarketingowa />} />
                 <Route path="/agencja-marketingu-internetowego" element={<AgencjaMarketinguInternetowego />} />
                 <Route path="/agencja-reklamowa-poznan" element={<AgencjaReklamowaPoznan />} />
-                <Route path="/agencja-seo-poznan" element={<AgencjaSEOPoznan />} />
+                <Route path="/agencja-seo-poznan" element={<Redirect301 to="/seo/pozycjonowanie-poznan" />} />
                 <Route path="/uslugi/sklepy-internetowe" element={<SklepyInternetowe />} />
                 <Route path="/uslugi/sklepy-internetowe/poznan" element={<SklepyInternetowePoznan />} />
                 <Route path="/uslugi/sklepy-internetowe/warszawa" element={<SklepyInternetoweWarszawa />} />

@@ -315,7 +315,7 @@ export default function SklepyInternetowePoznan() {
           <div className="flex flex-wrap justify-center gap-3">
             {[
               { label: "Strony internetowe Poznań", to: "/uslugi/strony-internetowe/poznan" },
-              { label: "Agencja SEO Poznań", to: "/agencja-seo-poznan" },
+              { label: "Agencja SEO Poznań", to: "/seo/pozycjonowanie-poznan" },
               { label: "Agencja marketingowa Poznań", to: "/agencja-marketingowa/poznan" },
               { label: "Google Ads", to: "/performance-marketing/google-ads" },
               { label: "E-commerce — tworzenie sklepów", to: "/uslugi/sklepy-internetowe" },
