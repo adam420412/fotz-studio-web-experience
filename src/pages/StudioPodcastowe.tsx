@@ -75,15 +75,15 @@ const steps = [
 const pricingFactors = [
   "liczba odcinków i ich długość — jednorazowe nagranie czy seria",
   "format: samo audio czy obraz z kilku kamer",
-  "miejsce nagrania i ewentualny dojazd",
+  "miejsce nagrania i ewentualny dojazd — przy wynajętym studiu podajemy, co jest w cenie wynajmu sali, a co w cenie naszej pracy",
   "zakres montażu, napisów i grafik do odcinka",
   "liczba krótkich fragmentów do publikacji",
-  "dodatkowe elementy: scenografia, makijażystka, transmisja na żywo",
+  "dodatkowe elementy: scenografia, makijażystka, nadawanie na żywo",
 ];
 
 const faqs = [
   {
-    question: "Gdzie w Poznaniu nagrywacie podcasty?",
+    question: "Gdzie nagrywacie i czy trzeba szukać studia nagrań?",
     answer:
       "Zespół FOTZ Studio pracuje w Poznaniu. Miejsce nagrania dobieramy do projektu: może to być Twoja siedziba, sala konferencyjna albo wynajęte studio do nagrań. Szczegóły ustalamy przy wycenie, zanim potwierdzimy termin.",
   },
@@ -125,8 +125,8 @@ export default function StudioPodcastowe() {
   return (
     <>
       <SEOHead
-        title="Studio podcastowe Poznań – podcast i studio nagraniowe"
-        description="Studio podcastowe Poznań: podcast audio i wideo, montaż oraz kompleksowy, profesjonalny proces nagraniowy dla firm. Wycena po krótkiej rozmowie."
+        title="Studio podcastowe Poznań – studio nagraniowe i podcast"
+        description="Studio podcastowe Poznań: profesjonalny podcast audio i wideo, montaż i kompleksowy proces nagraniowy — w centrum Poznania lub w Twojej firmie."
         canonical="https://www.fotz-studio.pl/uslugi/studio-podcastowe"
         keywords="studio podcastowe poznań, nagranie podcastu, podcast wideo, montaż podcastu, studio nagraniowe poznań"
       />
@@ -157,7 +157,7 @@ export default function StudioPodcastowe() {
                 </span>
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-4 sm:mb-6">
                   Studio podcastowe Poznań{" "}
-                  <span className="text-gradient">— nagraj podcast audio i wideo w Poznaniu</span>
+                  <span className="text-gradient">— podcast, transmisja i nagrania wideo w Poznaniu</span>
                 </h1>
                 <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8">
                   Chcesz nagrać swój podcast, ale nie masz ekipy ani czasu na technikę? Przygotujemy
@@ -287,13 +287,13 @@ export default function StudioPodcastowe() {
             <div className="grid lg:grid-cols-2 gap-8 mb-10">
               <p className="text-muted-foreground">
                 Studio podcastowe i nagraniowe to dla nas przede wszystkim ekipa i proces, a nie jeden adres. Nie każdy podcast wymaga wynajmu studia. Często dobra przestrzeń do nagrywania
-                to sala w Twojej firmie — rozmówca czuje się swobodniej, a w tle widać markę.
+                to sala w Twojej firmie — wystarczy przestronny, cichy pokój, a rozmówca czuje się swobodniej, a w tle widać markę.
                 Przy nagraniach w siedzibie klienta przyjeżdżamy z naszym sprzętem — to zestaw mobilny: mikrofony, kamery i światło. Innym razem
                 lepiej sprawdzi się wynajęte studio filmowe lub studio fotograficzne z wygłuszeniem i stałą scenografią, na
                 przykład gdy seria ma mieć spójny, rozpoznawalny wizualny styl.
               </p>
               <p className="text-muted-foreground">
-                Nie musisz sam szukać studia nagrań. Nagrywamy w Poznaniu — w centrum Poznania, na obrzeżach albo pod miastem — i doradzamy,
+                Nagrywamy w Poznaniu — w centrum Poznania, na obrzeżach albo pod miastem — i doradzamy,
                 które miejsce da najlepszy efekt przy Twoim budżecie. Profesjonalny sprzęt i
                 obsługę zapewnia nasza ekipa, a miejsce oraz termin rezerwacji potwierdzamy
                 razem z wyceną. Podcast łączymy też z innymi usługami: nagraniem spotów reklamowych
@@ -338,7 +338,7 @@ export default function StudioPodcastowe() {
         <section className="section-padding bg-card px-4 sm:px-6 md:px-12">
           <div className="container-wide max-w-4xl">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold mb-4">
-              Realizacja nagrań wideo — zespół z Poznania
+              Realizacja nagrań wideo: zespół produkcyjny, Poznań
             </h2>
             <p className="text-muted-foreground mb-4">
               FOTZ to kreatywny zespół, który na co dzień realizuje filmy reklamowe, materiały
@@ -396,7 +396,7 @@ export default function StudioPodcastowe() {
               {faqs.map(faq => (
                 <details key={faq.question} className="group p-5 rounded-xl bg-secondary border border-border">
                   <summary className="cursor-pointer font-heading font-bold list-none flex justify-between gap-4">
-                    {faq.question}
+                    <h3 className="text-base font-heading font-bold">{faq.question}</h3>
                     <span className="text-primary group-open:rotate-45 transition-transform">+</span>
                   </summary>
                   <p className="mt-3 text-muted-foreground">{faq.answer}</p>

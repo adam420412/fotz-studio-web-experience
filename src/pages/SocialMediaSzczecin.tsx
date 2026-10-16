@@ -52,7 +52,7 @@ export default function SocialMediaSzczecin() {
       <section className="container-wide px-6 md:px-12 pt-32 md:pt-40 pb-12 md:pb-20">
         <div className="max-w-4xl">
           <p className="dv-eyebrow mb-5">FOTZ Studio · obsługa zdalna</p>
-          <h1 className="text-4xl md:text-6xl font-heading leading-[1.08] tracking-tight mb-6">Agencja social media Szczecin<br /><span className="text-gradient">prowadzenie social mediów i marketing firmowy w 2026.</span></h1>
+          <h1 className="text-4xl md:text-6xl font-heading leading-[1.08] tracking-tight mb-6">Agencja social media Szczecin<br /><span className="text-gradient">prowadzenie social mediów i marketing firmowy.</span></h1>
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mb-7">FOTZ Studio to agencja marketingu internetowego z własną produkcją zdjęć i wideo. Firmom ze Szczecina prowadzimy profile na Facebooku, Instagramie i LinkedIn, nagrywamy wideo, tworzymy content i kampanie reklamowe. Pracujemy z Poznania, a współpraca ma charakter zdalny.</p>
           <div className="flex flex-col sm:flex-row gap-3 items-start">
             <Link to="/konsultacja" className="dv-btn dv-btn-primary">Umów rozmowę online <ArrowRight aria-hidden="true" className="w-4 h-4" /></Link>
@@ -114,9 +114,9 @@ export default function SocialMediaSzczecin() {
       <section className="container-wide px-6 md:px-12 py-12 md:py-16" aria-labelledby="marketing-heading">
         <div className="max-w-3xl">
           <p className="dv-eyebrow mb-3">Kompleksowe podejście</p>
-          <h2 id="marketing-heading" className="text-3xl md:text-4xl font-heading mb-5">Kompleksowy i spójny marketing na 2026: social media, branding, strony</h2>
+          <h2 id="marketing-heading" className="text-3xl md:text-4xl font-heading mb-5">Kompleksowy i spójny marketing: social media, branding, strony</h2>
           <p className="text-muted-foreground leading-relaxed mb-5">Profil firmowy działa lepiej, gdy prowadzi do dobrze przygotowanej strony, a reklama na Facebooku i Instagramie wspiera kampanie Google Ads i pozycjonowanie. Zajmujemy się też tworzeniem stron, SEO i identyfikacją wizualną. Strony internetowe i profile powinny mówić tym samym językiem, a komunikacja marki w internecie budować spójny wizerunek we wszystkich kanałach. Kompleksowa obsługa nie jest obowiązkowa: możesz zacząć od samych social mediów. Branding i identyfikacja marki, projekty graficzne oraz tworzenie stron (web) mogą dojść później.</p>
-          <p className="text-muted-foreground leading-relaxed mb-6">Jeśli planujesz budżet marketingowy na 2026 rok, pomożemy rozdzielić go między obsługę profili, produkcję treści i kampanie marketingowe. Będziemy raportować ruch na stronie z social mediów, każdy lead i zapytanie, żeby decyzje o kolejnych wydatkach opierały się na danych, a nie na przeczuciu.</p>
+          <p className="text-muted-foreground leading-relaxed mb-6">Jeśli planujesz budżet marketingowy na kolejny rok, pomożemy rozdzielić go między obsługę profili, produkcję treści i kampanie marketingowe. Będziemy raportować ruch na stronie z social mediów, każdy lead i zapytanie, żeby decyzje o kolejnych wydatkach opierały się na danych, a nie na przeczuciu.</p>
           <ul className="grid sm:grid-cols-2 gap-3 text-sm">
             <li><Link to="/uslugi/strony-internetowe/szczecin" className="underline underline-offset-4">Projektowanie stron internetowych dla firm ze Szczecina</Link></li>
             <li><Link to="/uslugi/pozycjonowanie/szczecin" className="underline underline-offset-4">Pozycjonowanie stron WWW w Szczecinie</Link></li>
