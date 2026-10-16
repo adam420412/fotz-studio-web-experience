@@ -29,7 +29,7 @@ const faqs = [
 
 const steps = [
   { title: "Rozmowa na start", text: "Na wideorozmowie poznajemy Twój biznes, obecne profile i to, kim jest Twój klient. Ustalamy cel i to, co zostaje po stronie Twojego zespołu." },
-  { title: "Audyt i strategia", text: "Przeglądamy profile i komunikację konkurencji w Twojej branży. Tworzymy strategię, harmonogram i listę potrzebnych materiałów." },
+  { title: "Audyt i strategia", text: "Przeglądamy profile i komunikację konkurencji w Twojej branży. Autorska strategia powstaje dla każdego klienta osobno — razem z harmonogramem i listą potrzebnych materiałów." },
   { title: "Treści i akceptacja", text: "Plan publikacji trafia do Ciebie z wyprzedzeniem, a klient zatwierdza każdy post przed publikacją. Poprawki zgłaszasz w jednym miejscu, a zatwierdzone posty publikujemy zgodnie z harmonogramem." },
   { title: "Raport i optymalizacja", text: "Po każdym okresie omawiamy wyniki na krótkim spotkaniu zdalnym i wdrażamy zmiany: co rozwijać, a z czego zrezygnować." },
 ];
@@ -50,7 +50,7 @@ export default function SocialMediaKrakow() {
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mb-7">Pomagamy firmom z Krakowa prowadzić media społecznościowe tak, żeby profil odpowiadał na pytania klientów i prowadził do kontaktu. Tworzymy strategie, content i rolki, prowadzimy Facebooka, Instagram i LinkedIn oraz kampanie reklamowe — zdalnie, z zespołu w Poznaniu.</p>
             <div className="flex flex-col sm:flex-row gap-3 items-start">
               <Link to="/konsultacja" className="dv-btn dv-btn-primary">Umów rozmowę <ArrowRight aria-hidden="true" className="w-4 h-4" /></Link>
-              <a href="#zakres-social-media" className="dv-btn dv-btn-secondary">Sprawdź zakres usług</a>
+              <a href="#zakres-social-media" className="dv-btn dv-btn-secondary">Sprawdź, co obejmuje obsługa</a>
             </div>
           </div>
           <aside className="rounded-2xl border border-border bg-card p-6 md:p-8">
@@ -69,9 +69,9 @@ export default function SocialMediaKrakow() {
       </section>
 
       <section id="zakres-social-media" className="container-wide px-6 md:px-12 py-12 md:py-16 scroll-mt-28" aria-labelledby="zakres-heading">
-        <p className="dv-eyebrow mb-3">Usługi social media</p><h2 id="zakres-heading" className="text-3xl md:text-4xl font-heading mb-5">Zakres usług: projektujemy strategie, prowadzimy profil na Facebooku i Instagramie</h2>
-        <p className="text-muted-foreground max-w-3xl mb-6 leading-relaxed">Kraków to rynek, na którym obok siebie działają lokale nastawione na ruch turystyczny, marki kierujące ofertę do studentów i firmy obsługujące klientów biznesowych. Każda z tych grup korzysta z innych kanałów i reaguje na inne treści, dlatego zanim zaczniemy publikować, ustalamy odbiorców, język marki i cel profilu. Twoja marka nie musi być obecna wszędzie — lepiej prowadzić dwa kanały dobrze niż pięć przypadkowo.</p>
-        <p className="text-muted-foreground max-w-3xl mb-8 leading-relaxed">Możesz zlecić nam kompleksową obsługę mediów społecznościowych albo wybrane działania — np. samą strategię, produkcję rolek lub kampanie reklamowe, gdy profil prowadzi Twój zespół. Social media marketing traktujemy jako część sprzedaży Twojej firmy: liczy się to, czy odbiorca zrobi kolejny krok. Każda platforma ma inną rolę — Instagram pokazuje markę, Facebook dobrze sprawdza się w kontakcie z lokalną społecznością, a LinkedIn w komunikacji z firmami — dlatego opracowujemy strategie osobno dla każdego kanału.</p>
+        <p className="dv-eyebrow mb-3">Usługi social media</p><h2 id="zakres-heading" className="text-3xl md:text-4xl font-heading mb-5">Zakres usług: projektujemy strategie i prowadzimy profil — Facebook, Instagram, LinkedIn</h2>
+        <p className="text-muted-foreground max-w-3xl mb-6 leading-relaxed">Kraków to rynek, na którym obok siebie działają lokale nastawione na ruch turystyczny, marki kierujące ofertę do studentów i firmy obsługujące klientów biznesowych. Każda z tych grup korzysta z innych kanałów i reaguje na inne treści, dlatego zanim zaczniemy publikować, ustalamy odbiorców, język marki i cel profilu. Twoja marka nie musi być obecna wszędzie — lepiej prowadzić dwa kanały dobrze niż pięć przypadkowo. Klucz do sukcesu to regularność i treści, które odpowiadają na realne pytania odbiorców — na tym opiera się skuteczne prowadzenie profilu.</p>
+        <p className="text-muted-foreground max-w-3xl mb-8 leading-relaxed">Możesz zlecić nam kompleksowy zakres prac w mediach społecznościowych albo wybrane działania — np. samą strategię, produkcję rolek lub kampanie reklamowe, gdy profil prowadzi Twój zespół. Social media marketing traktujemy jako część sprzedaży Twojej firmy: liczy się to, czy odbiorca zrobi kolejny krok. Każda platforma ma inną rolę — Instagram pokazuje markę, Facebook dobrze sprawdza się w kontakcie z lokalną społecznością, a LinkedIn w komunikacji z firmami — dlatego opracowujemy strategie osobno dla każdego kanału.</p>
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-5">{services.map(service => <article key={service.href} className="border border-border bg-card rounded-2xl p-6 flex flex-col items-start"><service.icon aria-hidden="true" className="w-6 h-6 text-primary mb-5" /><h3 className="text-xl mb-3">{service.title}</h3><p className="text-muted-foreground leading-relaxed mb-5">{service.text}</p><Link to={service.href} className="underline underline-offset-4 text-sm mt-auto" aria-label={`Szczegóły usługi: ${service.title}`}>Szczegóły usługi</Link></article>)}</div>
       </section>
 
@@ -81,10 +81,10 @@ export default function SocialMediaKrakow() {
             <p className="dv-eyebrow mb-3">Reklama płatna</p>
             <h2 id="kampanie-heading" className="text-3xl md:text-4xl font-heading mb-5">Kampania reklamowa: Meta Ads na Facebooku i Google Ads dla Twojej firmy</h2>
             <p className="text-muted-foreground leading-relaxed mb-5">Same publikacje rzadko wystarczą, gdy firma chce szybko dotrzeć do nowych odbiorców. Kampania reklamowa pozwala pokazać ofertę osobom w Krakowie, które jeszcze nie znają marki, i wrócić z przekazem do tych, które odwiedziły stronę lub profil. Konsument zwykle styka się z marką kilka razy, zanim zapyta o ofertę.</p>
-            <p className="text-muted-foreground leading-relaxed">Przy prowadzeniu płatnych kampanii nie celujemy w same kliknięcia: ustawiamy je na rozpoznawalność, ruch, pozyskiwanie leadów albo sprzedaż w sklepie internetowym. Przy celach sprzedażowych sprawdzamy, czy strona internetowa i formularz są gotowe na konwersję, bo od tego zależy, czy kliknięcie zamieni się w zapytanie. Konwersja jest dla nas ważniejsza niż sam zasięg, a po każdym okresie sprawdzamy, czy kampania realizuje założone cele.</p>
+            <p className="text-muted-foreground leading-relaxed">Przy prowadzeniu płatnych kampanii nie celujemy w same kliknięcia: ustawiamy je na rozpoznawalność, ruch, pozyskiwanie leadów albo sprzedaż w sklepie internetowym. Przy celach sprzedażowych sprawdzamy, czy strona internetowa i formularz są gotowe na konwersję, bo od tego zależy, czy kliknięcie zamieni się w zapytanie. Sprawdzamy też, czy każdy lead trafia do właściwej osoby, bo proces zakupowy nie kończy się na kliknięciu. Konwersja jest dla nas ważniejsza niż sam zasięg, a po każdym okresie sprawdzamy, czy kampania realizuje założone cele.</p>
           </div>
           <div>
-            <h3 className="text-2xl mb-4">Skuteczny marketing zaczyna się od decyzji</h3>
+            <h3 className="text-2xl mb-4">Facebook Ads czy Google Ads? Skuteczny marketing zaczyna się od decyzji</h3>
             <ul className="list-disc pl-5 space-y-3 text-muted-foreground">
               <li>Facebook Ads i reklama na Instagramie — gdy oferta ma wzbudzić zainteresowanie.</li>
               <li>Reklama w wyszukiwarce Google — gdy klienci sami szukają usługi.</li>
@@ -108,7 +108,7 @@ export default function SocialMediaKrakow() {
       </section>
 
       <section id="proces-social-media" className="container-wide px-6 md:px-12 py-12 md:py-16 scroll-mt-28" aria-labelledby="proces-heading">
-        <p className="dv-eyebrow mb-3">Współpraca zdalna</p><h2 id="proces-heading" className="text-3xl md:text-4xl font-heading mb-8">Jak wygląda współpraca: klient, profil i kampania krok po kroku</h2>
+        <p className="dv-eyebrow mb-3">Współpraca zdalna</p><h2 id="proces-heading" className="text-3xl md:text-4xl font-heading mb-8">Prowadzenie social media krok po kroku: klient, profil i kampania</h2>
         <ol className="grid md:grid-cols-2 lg:grid-cols-4 gap-7">{steps.map((step, index) => <li key={step.title} className="border-t border-border pt-5"><span aria-hidden="true" className="text-sm text-primary">0{index + 1}</span><h3 className="text-xl mt-3 mb-3">{step.title}</h3><p className="text-muted-foreground leading-relaxed">{step.text}</p></li>)}</ol>
         <p className="mt-8 text-muted-foreground max-w-3xl leading-relaxed">Nie mamy biura w Krakowie. Bieżący kontakt prowadzimy zdalnie, a zdjęcia i nagrania możesz przesyłać nam cyfrowo. Jeśli projekt wymaga dnia zdjęciowego na miejscu, termin i koszt przyjazdu ustalamy osobno.</p>
       </section>
@@ -117,7 +117,7 @@ export default function SocialMediaKrakow() {
         <div className="max-w-3xl">
           <p className="dv-eyebrow mb-3">O FOTZ Studio</p>
           <h2 id="agencja-heading" className="text-3xl md:text-4xl font-heading mb-5">Agencja marketingowa i kreatywna: w czym się specjalizujemy</h2>
-          <p className="text-muted-foreground leading-relaxed mb-5">FOTZ Studio to agencja kreatywna z Poznania. Łączymy pracę agencji marketingowej z własną produkcją zdjęć i wideo, dlatego strategię, treści i kampanie przygotowuje jeden zespół. Dla firm, które potrzebują szerszego marketingu internetowego, realizujemy też tworzenie stron internetowych i SEO, a plan marketingowy obejmuje wtedy kilka kanałów naraz.</p>
+          <p className="text-muted-foreground leading-relaxed mb-5">FOTZ Studio to agencja kreatywna z Poznania. Łączymy pracę agencji marketingowej z własną produkcją zdjęć i wideo, dlatego strategię, treści i kampanie przygotowuje jeden zespół. Dla firm, które potrzebują szerszego marketingu internetowego, realizujemy też tworzenie stron internetowych i SEO, a plan marketingowy obejmuje wtedy kilka kanałów i inne działania digitalowe naraz.</p>
           <p className="text-muted-foreground leading-relaxed">Krakowskiego rynku nie znamy od środka tak jak lokalna agencja — dlatego na starcie prosimy o informacje o Twoich klientach, sezonowości i konkurencji. Treści przygotowujemy pod Twoją branżę i odbiorców, a nie według jednego szablonu dla każdego biznesu. Inaczej planujemy komunikację w social mediach hotelu, a inaczej dla firmy, której klient biznesowy podejmuje decyzję po kilku tygodniach rozmów — branża zmienia ton, formaty i rytm publikacji.</p>
           <p className="text-muted-foreground leading-relaxed mt-5">W ramach współpracy możemy stworzyć strategię, projektować treści, realizować nagrania, wdrażać kampanie, analizować wyniki i raportować je co miesiąc. Zespół kreatywny dba o to, żeby wygląd i język Twojej marki był spójny na każdej platformie, a regularne odpowiedzi na komentarze i wiadomości budują zaufanie do firmy.</p>
         </div>

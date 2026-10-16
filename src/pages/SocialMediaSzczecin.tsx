@@ -44,7 +44,7 @@ const audiences = [
 export default function SocialMediaSzczecin() {
   return (
     <Layout>
-      <SEOHead title="Agencja social media Szczecin – prowadzenie social mediów" description="Agencja marketingowa FOTZ: social media Szczecin, kompleksowa obsługa – Facebook, content, strategie, reklama, kampania i Google Ads dla sprzedaży." canonical={PAGE_URL} />
+      <SEOHead title="Agencja social media Szczecin | agencja marketingowa FOTZ" description="Agencja social media Szczecin: kompleksowa obsługa – Facebook, Instagram, content, strategie, kampania i Google Ads wspierające sprzedaż i zasięgi." canonical={PAGE_URL} />
       <ServiceSchema name="Obsługa social media dla firm ze Szczecina" description="Strategia, prowadzenie profili w mediach społecznościowych, produkcja treści i kampanie reklamowe Meta Ads w uzgodnionym zakresie, realizowane zdalnie." areaServed="Szczecin" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://www.fotz-studio.pl/" }, { name: "Agencja social media", url: "https://www.fotz-studio.pl/agencja-social-media" }, { name: "Szczecin", url: PAGE_URL }]} />
       <FAQSchema items={faqs} />
@@ -52,7 +52,7 @@ export default function SocialMediaSzczecin() {
       <section className="container-wide px-6 md:px-12 pt-32 md:pt-40 pb-12 md:pb-20">
         <div className="max-w-4xl">
           <p className="dv-eyebrow mb-5">FOTZ Studio · obsługa zdalna</p>
-          <h1 className="text-4xl md:text-6xl font-heading leading-[1.08] tracking-tight mb-6">Agencja social media Szczecin<br /><span className="text-gradient">prowadzenie social mediów i marketing firmowy.</span></h1>
+          <h1 className="text-4xl md:text-6xl font-heading leading-[1.08] tracking-tight mb-6">Agencja social media Szczecin<br /><span className="text-gradient">prowadzenie social mediów i marketing firmowy w 2026.</span></h1>
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mb-7">FOTZ Studio to agencja marketingu internetowego z własną produkcją zdjęć i wideo. Firmom ze Szczecina prowadzimy profile na Facebooku, Instagramie i LinkedIn, nagrywamy wideo, tworzymy content i kampanie reklamowe. Pracujemy z Poznania, a współpraca ma charakter zdalny.</p>
           <div className="flex flex-col sm:flex-row gap-3 items-start">
             <Link to="/konsultacja" className="dv-btn dv-btn-primary">Umów rozmowę online <ArrowRight aria-hidden="true" className="w-4 h-4" /></Link>
