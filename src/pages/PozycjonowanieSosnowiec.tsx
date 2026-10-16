@@ -1,510 +1,77 @@
 import { SEOHead } from "@/components/seo/SEOHead";
-import { Layout } from "@/components/layout/Layout";
-import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
-import {
-  Search,
-  MapPin,
-  TrendingUp,
-  CheckCircle2,
-  ArrowRight,
-  BarChart2,
-  Star,
-  Building2,
-  Globe,
-  Target,
-  Clock,
-  Award,
-  Shield,
-} from "lucide-react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
-import { FadeInView } from "@/components/FadeInView";
-import { ContactSection } from "@/components/sections/ContactSection";
+import { LocalSeoOffer, type LocalSeoOfferProps } from "@/components/LocalSeoOffer";
 
-const faqItems = [
-  {
-    question: "Ile kosztuje pozycjonowanie w Sosnowcu?",
-    answer:
-      "Pozycjonowanie lokalne w Sosnowcu zaczyna się od 800 zł netto miesięcznie. Sosnowiec to 180k miasto z bogatą historią górniczą i rosnącym sektorem handlu, usług i małych biznesów. Dla branż tradycyjnych i lokalnych usług — szybciej i taniej osiągamy TOP 10. Dla e-commerce i bardziej konkurencyjnych fraz — pakiet STANDARD (1500-3000 zł) lub PRO (3000-6000 zł).",
+const offer: LocalSeoOfferProps = {
+  path: "/pozycjonowanie/sosnowiec",
+  city: "Sosnowiec",
+  headingPrefix: "Pozycjonowanie stron",
+  headingSuffix: " — lokalne SEO dla firm z Sosnowca",
+  cityGenitive: "Sosnowca",
+  title: "Pozycjonowanie stron Sosnowiec — agencja SEO | FOTZ Studio",
+  description: "Pozycjonowanie Sosnowiec: agencja SEO FOTZ Studio pomaga w pozycjonowaniu stron firm z Zagłębia. Audyt, wizytówka i widoczność w wyszukiwarce Google, aby klient trafił do Ciebie.",
+  lead: "Prowadzisz biznes w Sosnowcu i chcesz, żeby klient z miasta i okolic znalazł Twoją ofertę w Google? Porządkujemy stronę, treści i wizytówkę tak, aby osoba szukająca usługi szybko zrozumiała, co oferujesz, gdzie działasz i jak się skontaktować.",
+  hero: { image: "fps", caption: "H. Cegielski – FPS — realizacja FOTZ dla firmy przemysłowej. Rzeczywiste zdjęcia zakładu i ludzi pomagają pokazać ofertę B2B bez stockowych obrazów." },
+  scopeTitle: "Pozycjonowanie Sosnowiec — co obejmuje usługa?",
+  planningTitle: "Pozycjonowanie w Sosnowcu: wycena i start współpracy",
+  scope: [
+    { title: "Audyt SEO witryny", text: "Sprawdzamy indeksowanie w Search Console, przekierowania, duplikaty i szybkość ważnych podstron, a także drogę od opisu usługi do formularza na telefonie.", href: "/seo/audyt", link: "Zobacz zakres audytu" },
+    { title: "Frazy przypisane do ofert", text: "Każdej grupie zapytań przypisujemy jedną stronę: usługę, kategorię sklepu albo poradnik, aby podstrony nie konkurowały ze sobą.", href: "/seo/pozycjonowanie", link: "Poznaj usługę pozycjonowania" },
+    { title: "Treści odpowiadające na pytania", text: "Opisujemy zakres prac, obszar dojazdu, terminy i dane potrzebne do wyceny. Wykorzystujemy Twoje zdjęcia i realizacje zamiast ogólników.", href: "/content-marketing/strategia", link: "Przejdź do strategii treści" },
+    { title: "Profil Firmy i mapa", text: "Sprawdzamy kategorię, obszar obsługi, godziny i zdjęcia w Profilu Firmy w Google, a dane uzgadniamy ze stroną.", href: "/uslugi/pozycjonowanie-lokalne", link: "Zobacz pozycjonowanie lokalne" },
+    { title: "Technika i struktura serwisu", text: "Porządkujemy menu, linkowanie wewnętrzne, metadane i mapę witryny. Przy przebudowie planujemy przekierowania ważnych adresów.", href: "/seo/techniczne", link: "Poznaj SEO techniczne" },
+    { title: "Pomiar kontaktów", text: "Ustalamy, co liczymy jako zapytanie: telefon, formularz czy wiadomość, i odróżniamy kliknięcie od rozmowy o zleceniu.", href: "/kontakt", link: "Omów cele z nami" },
+  ],
+  examplesTitle: "Pozycjonowanie stron internetowych Sosnowiec: trzy sytuacje klienta",
+  examplesIntro: "Inny plan przygotujemy dla warsztatu z Zagórza, inny dla hurtowni z całego Zagłębia, a jeszcze inny dla sklepu wysyłającego w Polsce. To przykłady do rozmowy o zakresie, nie wyniki naszych klientów.",
+  examples: [
+    { title: "Usługa z dojazdem", text: "Firma remontowa czy serwis klimatyzacji często pracuje w Sosnowcu, Będzinie i Dąbrowie Górniczej. Opisujemy realny obszar dojazdu zamiast kopiować stronę dla każdego miasta.", measure: "telefony i formularze z lokalizacją zlecenia." },
+    { title: "Punkt stacjonarny", text: "Gabinet, salon lub sklep potrzebuje aktualnych godzin, dojazdu i zdjęć wnętrza. Łączymy stronę z wizytówką, aby informacje były spójne.", measure: "kliknięcia w trasę i telefon oraz zapytania ze strony." },
+    { title: "Firma B2B z regionu", text: "Dostawca dla przemysłu lub logistyki sprzedaje w całym regionie. Rozwijamy opisy specjalizacji i procesu współpracy, a nazwę miasta zostawiamy tam, gdzie ma znaczenie.", measure: "jakość zapytań ofertowych dla wybranych usług." },
+  ],
+  content: [
+    { title: "Pozycjonowanie stron Sosnowiec — od czego zależy widoczność?", text: "W pozycjonowaniu zaczynamy od pytania, kogo chcesz pozyskać. Mieszkaniec Pogoni szuka usługi blisko domu, kierownik zakupów z Katowic szuka dostawcy, a klient sklepu porównuje produkty z całego kraju. Każdy wpisuje inną frazę i oczekuje innej odpowiedzi. Dlatego najpierw ustalamy, która usługa jest najważniejsza dla Twojego biznesu i ile zleceń możesz przyjąć. Dopiero potem dobieramy słowa kluczowe i strony. Pozycjonowanie stron www ma sens wtedy, gdy fraza prowadzi do oferty, którą naprawdę sprzedajesz." },
+    { title: "Sosnowiec to miasto Zagłębia — lokalne SEO dla Sosnowca i okolic", text: "Sosnowiec to miasto, które z Katowicami, Będzinem, Czeladzią i Dąbrową Górniczą tworzy jeden gęsty obszar. Klienci przejeżdżają między miastami do pracy i na zakupy, więc granica administracyjna nie zawsze wyznacza rynek. Lokalne SEO wymaga więc decyzji: Sosnowiec, kilka sąsiednich miast czy usługa bez nazwy miejscowości. Odpowiedź zależy od tego, gdzie naprawdę pracujesz. Jeśli obsługujesz klientów z Sosnowca i okolic, piszemy to wprost, zamiast dopisywać nazwy miast tylko dla wyszukiwarki." },
+    { title: "Pozycjonowanie lokalne w Sosnowcu: wizytówka Google i mapa", text: "Lokalne pozycjonowanie stron w Sosnowcu obejmuje stronę oraz Profil Firmy w Google, znany wcześniej jako Google Moja Firma. Wizytówka Google pokazuje się na mapie i w lokalnych wynikach wyszukiwania, a jej pozycja zależy m.in. od trafności, odległości od użytkownika i rozpoznawalności firmy. Dbamy o kategorię, opis, godziny, zdjęcia i odpowiedzi na opinie. Profil powinien prowadzić do strony z konkretną ofertą. Wyniki na mapie oceniamy osobno, bo od Zagórza po Klimontów mogą wyglądać inaczej." },
+    { title: "Audyt i optymalizacja: miejsce strony w wynikach wyszukiwania", text: "Audyt SEO pokazuje, co blokuje widoczność strony w wynikach wyszukiwania. Sprawdzamy, czy Google indeksuje ważne podstrony, czy adresy nie dublują treści i czy witryna szybko działa na telefonie. Analizujemy tytuły, nagłówki, linkowanie i dane z Search Console. Optymalizacja obejmuje też formularz i przyciski kontaktu: wolna strona albo ukryty numer telefonu tracą klienta niezależnie od pozycji. Raport dzieli zalecenia na pilne, ważne i do rozważenia, z informacją, kto je wdraża." },
+    { title: "Fraza, konkurencja i frazy lokalne w wyszukiwarce Google", text: "Frazy lokalne, czyli usługa z nazwą miasta, to tylko część zapytań. Wiele osób wpisuje samą usługę, a wyszukiwarka uwzględnia ich lokalizację. Analizujemy oba typy wyników wyszukiwania Google i sprawdzamy, co pokazuje konkurencja: oferty, katalogi czy poradniki. Nie kopiujemy cudzych tekstów. Konkurencja pomaga ocenić, czego oczekuje klient, a my dodajemy to, co wyróżnia Twoją firmę. Każda fraza kluczowa dostaje jedną stronę docelową. Dobór fraz kluczowych opieramy na danych, nie na intuicji." },
+    { title: "Skuteczne pozycjonowanie stron: potencjalni klienci i zapytania", text: "Skuteczne pozycjonowanie stron internetowych wymaga czytelnej oferty. Potencjalni klienci chcą wiedzieć, co robisz, gdzie, w jakim terminie i jak poprosić o wycenę. Pomagamy przygotować strony usług z etapami pracy i odpowiedziami na częste pytania. Gdy usług jest wiele, zaczynamy od tych o najwyższej marży lub popycie. Przy pozycjonowaniu wolimy kilka dobrych stron niż dziesiątki podobnych tekstów. Dobrze opisana oferta pomaga pozyskać nowych klientów, którzy porównują kilka firm." },
+    { title: "Sklep internetowy — pozycjonowanie strony i kategorii", text: "Sklep internetowy potrzebuje innego podejścia niż strona usługowa. Liczą się kategorie, opisy produktów, filtry i struktura adresów. Sprawdzamy, czy filtry nie tworzą tysięcy podobnych adresów. Jeśli sklep z Sosnowca sprzedaje w całej Polsce, nazwa miasta ma mniejsze znaczenie niż frazy produktowe; odbiór osobisty w Zagłębiu może być dodatkiem. Pozycjonowanie strony sklepu łączymy z analizą zamówień, o ile platforma pozwala na wiarygodny pomiar. Zmiany szablonu wyceniamy osobno." },
+    { title: "Proces pozycjonowania lokalnego krok po kroku", text: "Proces pozycjonowania stron dzielimy na etapy z jasnym odbiorem. Najpierw diagnoza: audyt, analiza fraz i cele. Potem poprawki techniczne i struktura. Następnie treści dla priorytetowych usług i profil w Mapach. Po publikacji kontrolujemy indeksowanie, linki i formularze. Wdrożenie może prowadzić Twój zespół, programista lub my. Harmonogram prac odróżniamy od czasu, którego Google potrzebuje na przetworzenie zmian, dlatego w pozycjonowaniu nie obiecujemy dat." },
+    { title: "Ile kosztuje pozycjonowanie stron w Sosnowcu?", text: "Koszt zależy od rozmiaru strony, jej stanu technicznego, liczby usług, konkurencji i tego, kto przygotowuje treści. Jednorazowy audyt to inny zakres niż stała praca nad treściami i profilem w Mapach. Wycena powstaje po obejrzeniu witryny i rozmowie o celach. Rozpisujemy zadania, terminy, odpowiedzialność i koszty dodatkowe, np. zdjęcia czy prace programistyczne. Nie podajemy stałej ceny bez znajomości strony. Zbyt tanie pozycjonowanie często oznacza raport bez wdrożeń." },
+    { title: "Agencja SEO Sosnowiec — czy musi mieć tu biuro?", text: "FOTZ Studio to agencja z zespołem w Poznaniu. Firmy z Sosnowca obsługujemy zdalnie i nie przedstawiamy tej oferty jako biura w Sosnowcu. Współpraca opiera się na wideorozmowach, wspólnej liście zadań i dostępie do Search Console. Adres agencji nie wpływa na pozycje Twojej strony; znaczenie mają treści, struktura i profil firmy. Od Ciebie potrzebujemy wiedzy o klientach i ofercie. Wybierając agencję SEO, sprawdź, czy dostaniesz konkretną listę prac i dostęp do danych." },
+    { title: "Lokalne firmy i SEO w Sosnowcu: strategie dla biznesu", text: "Lokalne firmy z miasta Sosnowiec to często rzemiosło, handel, usługi medyczne, transport i firmy obsługujące przemysł. Strategie SEO różnią się między nimi: gabinet potrzebuje widoczności w okolicy, a firma logistyczna opisów usług dla całego regionu. Pomagamy wybrać kierunek, który odpowiada sposobowi sprzedaży. W pozycjonowaniu lokalnym liczy się spójność: te same dane firmy na stronie, w profilu i katalogach. Działania z zakresu SEO planujemy tak, aby Twój zespół mógł je później utrzymać." },
+    { title: "Pozycjonowanie a Google Ads i marketing", text: "Pozycjonowanie rozwija obecność w organicznych wynikach wyszukiwania. Google Ads to płatna reklama z osobnym budżetem, która działa od razu, ale znika po wyłączeniu kampanii. Reklama pomaga sprawdzić, które frazy dają zapytania, a SEO buduje stałą obecność. Reklama nie podnosi pozycji w wynikach organicznych. W raportach rozdzielamy kanały, żeby było widać, skąd przychodzi klient. Marketing obejmuje też social media czy wideo, ale ich wpływ oceniamy osobno." },
+    { title: "Efekty pozycjonowania stron internetowych i raport", text: "Efekty pozycjonowania obserwujemy w kilku warstwach: indeksowanie, wyświetlenia, kliknięcia, ruch na stronie i kontakty. Wzrost wyświetleń bez kontaktów oznacza, że trzeba poprawić ofertę lub formularz. Raport opisuje, co zrobiliśmy, co się zmieniło i jaki jest następny krok. Konwersja, czyli kontakt lub zakup, jest ważniejsza niż sama pozycja frazy. Nie gwarantujemy miejsca wysoko w wynikach wyszukiwania; zobowiązujemy się do uzgodnionych prac i terminów." },
+    { title: "Strona www Sosnowiec — SEO przy przebudowie", text: "Przebudowa to moment, w którym łatwo stracić widoczność. Przed migracją zapisujemy listę adresów, treści i dane z Search Console, a po publikacji sprawdzamy mapę przekierowań. Jeśli tworzysz nową stronę, od początku planujemy strukturę usług i adresów. FOTZ Studio projektuje też strony, więc możemy połączyć projekt i SEO. Strona internetowa nowej firmy też może być pozycjonowana, ale Google potrzebuje czasu, by ją poznać. Na rozmowę przygotuj adres witryny i opis najważniejszych usług." },
+  ],
+  planning: [
+    { title: "Rozmowa i diagnoza", text: "Poznajemy ofertę, obszar obsługi i cel firmy. Przeglądamy stronę, profil w Mapach i dostępne dane, aby wskazać najważniejsze problemy." },
+    { title: "Wycena i zakres prac", text: "Przygotowujemy propozycję z listą zadań, terminami i podziałem odpowiedzialności. Osobno opisujemy koszty dodatkowe." },
+    { title: "Realizacja i przegląd danych", text: "Wprowadzamy uzgodnione poprawki i kontrolujemy je po publikacji. W ustalonym terminie porównujemy dane z punktem wyjścia." },
+  ],
+  related: {
+    title: "Działasz poza Sosnowcem? Lokalna widoczność w innych miastach",
+    text: "Jeśli Twoja firma obsługuje klientów w całej metropolii, zobacz oferty dla Katowic, Gliwic i Zabrza. Przy kilku miastach przygotowujemy wspólny plan, zamiast powielać te same treści na wielu podstronach.",
+    links: [
+      { href: "/seo/pozycjonowanie-katowice", label: "Pozycjonowanie Katowice" },
+      { href: "/pozycjonowanie/gliwice", label: "Pozycjonowanie Gliwice" },
+      { href: "/pozycjonowanie/zabrze", label: "Pozycjonowanie Zabrze" },
+    ],
   },
-  {
-    question: "Ile czasu zajmuje TOP 10 w Google dla słów z Sosnowca?",
-    answer:
-      "Pierwsze rezultaty przychodzą po 4–6 tygodni. Stabilne pozycje TOP 10 uzyskujemy po 2–4 miesiące dla słów lokalnych. Sosnowiec ma niższą konkurencję SEO niż większe miasta (Katowice, Kraków), ale solidny rynek lokalny. Dla lokalnych fraz (np. 'usługi transportowe Sosnowiec', 'fryzjer Sosnowiec') — top 10 w 3–6 tygodni. Traffic organiczny rośnie systematycznie.",
-  },
-  {
-    question: "Jakie branże mają największy potencjał SEO w Sosnowcu?",
-    answer:
-      "Usługi lokalne i rzemiosło (fryzjerstwo, kosmetyka, hydraulika, elektryka) — wysokie zapotrzebowanie na franczyzy słów 'Sosnowiec'. Handel i e-commerce (moda, sport, wyposażenie domu). Logistyka i transport (sąsiedztwo Katowic i głównych tras GOM). Usługi medyczne i zdrowotne dla 180k populacji. Gastronomia i HoReCa. Turystyka związana z dziedzictwem górniczym.",
-  },
-  {
-    question: "Czy dziedzictwo górnicze Sosnowca wpływa na SEO?",
-    answer:
-      "Zdecydowanie. Sosnowiec to legendarne miasto górnicze — frazy takie jak 'wycieczki historyczne Sosnowiec', 'muzeum górnictwa', 'turystyka górnicza' mają rosnący potencjał. Turystyka aktywna, edukacyjna i patrimonium stwarzają szanse dla usług związanych z historią. Jednocześnie miasto transformuje się — nowe biznesu i usługi. Mała konkurencja SEO dla tego segmentu = duża szansa.",
-  },
-  {
-    question: "Czy warto pozycjonować się na Sosnowiec czy całe GOM?",
-    answer:
-      "Zależy od branży. Dla lokalnych usług (fryzjer, lekarz, auto-serwis, sklep) — skupiamy się na Sosnowcu i okolicach (Kazimierz Górniczy, Modrzejów). Dla e-commerce i B2B — optymalizujemy Sosnowiec, ale i całe GOM ('dostawa Zabrze Gliwice', 'transport GOM'). Rekomendujemy strategię hybrydową: silna obecność w Sosnowcu + zasięg regionalny.",
-  },
-  {
-    question: "Czy transformacja pogornictwa w Sosnowcu zmienia SEO?",
-    answer:
-      "Tak — Sosnowiec przechodzi ewolucję od miasta górniczego do centrum usług i handlu. Powstawanie nowych biznesów, rozwój handlu, turystyki i Small & Medium Business. Potencjał SEO rośnie dla usług biznesowych, logistyki, handlu. Konkurencja jest niższa niż w dużych ośrodkach — idealnie do szybkiego zdobycia pozycji i dominacji lokalnej.",
-  },
-];
-
-const PozycjonowanieSosnowiec = () => {
-  const results = [
-    {
-      metric: "+240%",
-      label: "Wzrost ruchu organicznego",
-      context: "usługi lokalne i handel",
-    },
-    { metric: "TOP 5", label: "Pozycja w Google", context: "frazy Sosnowiec" },
-    { metric: "3-4 mies.", label: "Czas do stabilnych pozycji", context: "konkurencyjne frazy" },
-    { metric: "4,9/5", label: "Ocena klientów", context: "15 opinii" },
-  ];
-
-  const districts = [
-    "Śródmieście",
-    "Przezchlebie",
-    "Centrum",
-    "Maczki",
-    "Kazimierz Górniczy",
-    "Modrzejów",
-    "Stary Sosnowiec",
-    "Nowe Osiedle",
-  ];
-
-  const industries = [
-    { name: "Usługi lokalne", icon: Star },
-    { name: "Handel e-commerce", icon: Award },
-    { name: "Transport i logistyka", icon: BarChart2 },
-    { name: "Gastronomia", icon: Globe },
-    { name: "Usługi medyczne", icon: Building2 },
-    { name: "Turystyka górnicza", icon: Target },
-  ];
-
-  return (
-    <Layout>
-      <SEOHead
-        title="Pozycjonowanie Sosnowiec - SEO lokalne dla firm | fotz studio"
-        description="Pozycjonowanie stron Sosnowiec. Agencja SEO Fotz Studio — audyt SEO, optymalizacja dla usług lokalnych, handlu i transportu. Pomagamy firmom z Sosnowca i GOM zdobyć pierwszą stronę Google."
-        canonical="https://www.fotz-studio.pl/pozycjonowanie/sosnowiec"
-        keywords="pozycjonowanie sosnowiec, agencja seo sosnowiec, seo sosnowiec, pozycjonowanie stron sosnowiec, seo dla firm sosnowiec, seo śląsk, pozycjonowanie lokalne sosnowiec"
-      />
-      <ServiceSchema
-        name="Pozycjonowanie stron internetowych Sosnowiec"
-        description="Agencja SEO fotz studio oferuje pozycjonowanie stron dla firm z Sosnowca. Specjalizacja w usługach lokalnych, handlu, transporcie i turystyce górniczej. Audyt SEO, optymalizacja on-page, link building i pozycjonowanie lokalne dla Sosnowca i GOM."
-        provider="Fotz Studio"
-        areaServed="Sosnowiec"
-      />
-      <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://www.fotz-studio.pl/" },
-          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
-          { name: "Pozycjonowanie", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie" },
-          { name: "Sosnowiec", url: "https://www.fotz-studio.pl/pozycjonowanie/sosnowiec" },
-        ]}/>
-      <FAQSchema items={faqItems} />
-
-      {/* Hero */}
-      <section className="relative min-h-[85vh] flex items-center justify-center bg-gray-900 overflow-hidden pt-20">
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-yellow-400/5 rounded-full blur-3xl" />
-          <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-yellow-400/5 rounded-full blur-3xl" />
-        </div>
-
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <FadeInView>
-              <div className="inline-flex items-center gap-2 bg-yellow-400/10 text-yellow-400 rounded-full px-4 py-2 text-sm font-medium mb-6">
-                <MapPin className="w-4 h-4" />
-                Pozycjonowanie lokalne · Sosnowiec i GOM
-              </div>
-            </FadeInView>
-
-            <FadeInView delay={0.1}>
-              <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-                Pozycjonowanie{" "}
-                <span className="text-yellow-400">Sosnowiec</span> — lokalne SEO dla firm
-              </h1>
-            </FadeInView>
-
-            <FadeInView delay={0.2}>
-              <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
-                Pomagamy firmom z Sosnowca zdobyć pierwszą stronę Google. Sosnowiec to 180k ludzi,
-                bogatą historią górniczą i rosnącym rynkiem usług, handlu i transportu w GOM.
-                Audyt SEO, optymalizacja techniczna, content i link building dostosowane do lokalnego rynku.
-              </p>
-            </FadeInView>
-
-            <FadeInView delay={0.3}>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" asChild className="text-base px-8 bg-yellow-400 text-gray-900 hover:bg-yellow-300">
-                  <Link to="/kontakt?usluga=seo&wariant=audit#formularz">
-                    Zapytaj o audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-                <Button size="lg" variant="outline" asChild className="text-base px-8 border-gray-700 text-white hover:bg-gray-800">
-                  <Link to="/uslugi/pozycjonowanie">
-                    Pakiety i ceny SEO
-                  </Link>
-                </Button>
-              </div>
-            </FadeInView>
-
-            <FadeInView delay={0.4}>
-              <div className="flex flex-wrap justify-center gap-6 mt-12 text-sm text-gray-400">
-                {["White-hat SEO", "Raport co 2 tygodnie", "Doświadczenie rynku Sosnowca", "Gwarancja transparentności"].map(
-                  (item) => (
-                    <div key={item} className="flex items-center gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-yellow-400" />
-                      <span>{item}</span>
-                    </div>
-                  )
-                )}
-              </div>
-            </FadeInView>
-          </div>
-        </div>
-      </section>
-
-      {/* Results */}
-      <section className="py-16 bg-gray-800 border-y border-gray-700">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {results.map((r, i) => (
-              <FadeInView key={i} delay={i * 0.1} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-1">
-                  {r.metric}
-                </div>
-                <div className="text-sm font-medium text-white">{r.label}</div>
-                <div className="text-xs text-gray-400 mt-1">{r.context}</div>
-              </FadeInView>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Sosnowiec SEO specifics */}
-      <section className="py-20 bg-gray-900">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <FadeInView className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Sosnowiec — od dziedzictwa górniczego do nowoczesnego rynku
-            </h2>
-          </FadeInView>
-
-          <div className="grid md:grid-cols-2 gap-8 items-start">
-            <FadeInView>
-              <div className="space-y-6 text-gray-300">
-                <p>
-                  Sosnowiec to <strong className="text-white">180 tys. ludzi</strong> z bogatą
-                  <strong className="text-white"> historią górniczą</strong> — legendarne miasto węglowe GOM,
-                  teraz transformujące się w nowoczesne centrum usług, handlu i małych biznesów.
-                </p>
-                <p>
-                  <strong className="text-white">Rynek lokalny ekspanduje</strong> — usługi dla 180k ludzi,
-                  handel e-commerce, gastronomia, transport, turystyka związana z dziedzictwem górniczym.
-                  Potencjał SEO rośnie — mniejsza konkurencja niż w Katowicach czy Krakowie,
-                  ale solidny rynek lokalny z wysokim zapotrzebowaniem na słowa kluczowe.
-                </p>
-                <p>
-                  <strong className="text-white">Turystyka górnicza i edukacyjna</strong> — wycieczki,
-                  muzea, patimoniium stwarzają szanse dla branży usług turystycznych.
-                  <strong className="text-white"> Logistyka</strong> — sąsiedztwo głównych tras A1/A4 = rynek transportu.
-                  <strong className="text-white"> Handel i usługi</strong> — intensywna lokalnie.
-                </p>
-              </div>
-            </FadeInView>
-
-            <FadeInView delay={0.2}>
-              <div className="bg-gray-800 border border-gray-700 rounded-xl p-6">
-                <h3 className="font-bold text-white mb-4">
-                  Pozycjonujemy firmy we wszystkich dzielnicach Sosnowca
-                </h3>
-                <div className="flex flex-wrap gap-2">
-                  {districts.map((district) => (
-                    <span
-                      key={district}
-                      className="bg-yellow-400/10 text-yellow-400 text-sm px-3 py-1 rounded-full font-medium"
-                    >
-                      {district}
-                    </span>
-                  ))}
-                </div>
-                <p className="text-xs text-gray-400 mt-4">
-                  + cały GOM (Zabrze, Gliwice, Katowice, Bytom, Chorzów...)
-                </p>
-              </div>
-            </FadeInView>
-          </div>
-        </div>
-      </section>
-
-      {/* Industries */}
-      <section className="py-20 bg-gray-800">
-        <div className="container mx-auto px-4">
-          <FadeInView className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-white mb-4">
-              Branże, które pozycjonujemy w Sosnowcu
-            </h2>
-            <p className="text-gray-300 max-w-xl mx-auto">
-              Od usług lokalnych po turystykę górniczą — doświadczenie we wszystkich segmentach rynku Sosnowca.
-            </p>
-          </FadeInView>
-
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-3xl mx-auto">
-            {industries.map((ind, i) => (
-              <FadeInView key={i} delay={i * 0.08}>
-                <div className="bg-gray-900 border border-gray-700 rounded-xl p-5 flex items-center gap-3 hover:border-yellow-400/40 transition-colors">
-                  <div className="w-10 h-10 bg-yellow-400/10 rounded-lg flex items-center justify-center shrink-0">
-                    <ind.icon className="w-5 h-5 text-yellow-400" />
-                  </div>
-                  <span className="font-medium text-white text-sm">{ind.name}</span>
-                </div>
-              </FadeInView>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Process */}
-      <section className="py-20 bg-gray-900">
-        <div className="container mx-auto px-4 max-w-3xl">
-          <FadeInView className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-white mb-4">
-              Jak działamy — pozycjonowanie firm z Sosnowca
-            </h2>
-          </FadeInView>
-
-          <div className="space-y-6">
-            {[
-              {
-                step: "01",
-                title: "Konsultacja i zakres audytu SEO",
-                desc: "Analizujemy Twoją stronę i frazy z Sosnowca i całego GOM. Sprawdzamy potencjał w usługach lokalnych, handlu, logistyce czy Twojej branży.",
-              },
-              {
-                step: "02",
-                title: "Strategia dla Sosnowca i regionu",
-                desc: "Dobieramy słowa kluczowe dla lokalnych usług, e-commerce i turystyki. Planujemy SEO dla transformującego się rynku Sosnowca.",
-              },
-              {
-                step: "03",
-                title: "Wdrożenie i optymalizacja",
-                desc: "Optymalizujemy stronę technicznie, tworzymy treści na lokalne i branżowe frazy, budujemy linki z branżowych źródeł.",
-              },
-              {
-                step: "04",
-                title: "Raportowanie i dostosowanie",
-                desc: "Co 2 tygodnie raportujemy pozycje i ruch. Strategia dostosowywana do zmian konkurencji i wzrostu rynku Sosnowca.",
-              },
-            ].map((step, i) => (
-              <FadeInView key={i} delay={i * 0.1}>
-                <div className="flex gap-6 items-start">
-                  <div className="w-14 h-14 bg-yellow-400 rounded-xl flex items-center justify-center shrink-0 text-gray-900 font-bold text-lg">
-                    {step.step}
-                  </div>
-                  <div className="pt-2">
-                    <h3 className="font-semibold text-white text-lg mb-1">
-                      {step.title}
-                    </h3>
-                    <p className="text-gray-300">{step.desc}</p>
-                  </div>
-                </div>
-              </FadeInView>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Pricing */}
-      <section className="py-20 bg-gray-800">
-        <div className="container mx-auto px-4">
-          <FadeInView className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-white mb-4">
-              Pakiety pozycjonowania
-            </h2>
-            <p className="text-gray-300 max-w-xl mx-auto">
-              Elastyczne pakiety dostosowane do potrzeb Twojej firmy. Wszystkie pakiety zawierają pełny audyt SEO.
-            </p>
-          </FadeInView>
-
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            {[
-              {
-                name: "LOCAL",
-                price: "800-1500",
-                features: [
-                  "Audyt SEO",
-                  "20-30 słów kluczowych",
-                  "Optymalizacja on-page",
-                  "Raport co 2 tygodnie",
-                  "Sosnowiec + bliska okolica",
-                ],
-              },
-              {
-                name: "STANDARD",
-                price: "1500-3000",
-                features: [
-                  "Audyt SEO + techniczny",
-                  "40-60 słów kluczowych",
-                  "Optymalizacja + content",
-                  "Link building",
-                  "Raport tygodniowy",
-                  "Sosnowiec + całe GOM",
-                ],
-                highlight: true,
-              },
-              {
-                name: "PRO",
-                price: "3000-6000",
-                features: [
-                  "Pełny audyt wieloaspektowy",
-                  "80+ słów kluczowych",
-                  "Content strategy",
-                  "Zaawansowany link building",
-                  "Raport tygodniowy + konsultacje",
-                  "Sosnowiec + Śląsk + B2B",
-                ],
-              },
-            ].map((tier, i) => (
-              <FadeInView key={i} delay={i * 0.1}>
-                <div className={`rounded-xl p-8 border transition-all ${
-                  tier.highlight
-                    ? "bg-gray-900 border-yellow-400 ring-2 ring-yellow-400/20"
-                    : "bg-gray-900 border-gray-700"
-                }`}>
-                  <h3 className={`text-lg font-bold mb-2 ${
-                    tier.highlight ? "text-yellow-400" : "text-white"
-                  }`}>
-                    {tier.name}
-                  </h3>
-                  <div className="mb-6">
-                    <span className="text-3xl font-bold text-white">{tier.price} zł</span>
-                    <span className="text-gray-400 ml-2">/mies. netto</span>
-                  </div>
-                  <ul className="space-y-3 mb-8">
-                    {tier.features.map((feature, j) => (
-                      <li key={j} className="flex items-start gap-3 text-gray-300">
-                        <CheckCircle2 className="w-5 h-5 text-yellow-400 shrink-0 mt-0.5" />
-                        <span>{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <Button asChild className={`w-full ${
-                    tier.highlight
-                      ? "bg-yellow-400 text-gray-900 hover:bg-yellow-300"
-                      : "border-gray-700 text-white hover:bg-gray-800"
-                  }`} variant={tier.highlight ? "default" : "outline"}>
-                    <Link to="/kontakt">Wybierz pakiet</Link>
-                  </Button>
-                </div>
-              </FadeInView>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-20 bg-yellow-400 text-gray-900">
-        <div className="container mx-auto px-4 text-center">
-          <FadeInView>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Gotowy na pierwszą stronę Google w Sosnowcu?
-            </h2>
-            <p className="text-gray-800 text-lg mb-8 max-w-xl mx-auto">
-              Zapytaj o audyt SEO. Zakres i wycenę ustalimy na bezpłatnej konsultacji, a raport przygotujemy z konkretnymi
-              rekomendacjami dla rynku Sosnowca i całego GOM.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" asChild className="text-base px-8 bg-gray-900 text-yellow-400 hover:bg-gray-800">
-                <Link to="/kontakt?usluga=seo&wariant=audit#formularz">
-                  Zapytaj o audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                asChild
-                className="text-base px-8 border-gray-900 text-gray-900 hover:bg-yellow-300"
-              >
-                <Link to="/uslugi/pozycjonowanie">Wszystkie pakiety SEO</Link>
-              </Button>
-            </div>
-          </FadeInView>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section className="py-20 bg-gray-800">
-        <div className="container mx-auto px-4 max-w-3xl">
-          <FadeInView className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-white mb-4">
-              FAQ — pozycjonowanie stron Sosnowiec
-            </h2>
-          </FadeInView>
-          <Accordion type="single" collapsible className="space-y-3">
-            {faqItems.map((item, i) => (
-              <FadeInView key={i} delay={i * 0.05}>
-                <AccordionItem
-                  value={`item-${i}`}
-                  className="bg-gray-900 border border-gray-700 rounded-xl px-6"
-                >
-                  <AccordionTrigger className="text-left font-medium hover:no-underline py-5 text-white hover:text-yellow-400">
-                    {item.question}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-gray-300 pb-5">
-                    {item.answer}
-                  </AccordionContent>
-                </AccordionItem>
-              </FadeInView>
-            ))}
-          </Accordion>
-        </div>
-      </section>
-
-      {/* Internal nav */}
-      <section className="py-12 bg-gray-900 border-t border-gray-700">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <h3 className="font-semibold text-white mb-4 text-sm uppercase tracking-wide">
-            Pozycjonowanie w innych miastach:
-          </h3>
-          <div className="flex flex-wrap gap-x-6 gap-y-2">
-            {[
-              { label: "Pozycjonowanie Warszawa", url: "/seo/pozycjonowanie-warszawa" },
-              { label: "Pozycjonowanie Kraków", url: "/seo/pozycjonowanie-krakow" },
-              { label: "Pozycjonowanie Katowice", url: "/seo/pozycjonowanie-katowice" },
-              { label: "Pozycjonowanie Wrocław", url: "/seo/pozycjonowanie-wroclaw" },
-              { label: "Pozycjonowanie Poznań", url: "/seo/pozycjonowanie-poznan" },
-              { label: "Pozycjonowanie Gdańsk", url: "/seo/pozycjonowanie-gdansk" },
-              { label: "Pozycjonowanie Gliwice", url: "/pozycjonowanie/gliwice" },
-              { label: "Pozycjonowanie Zabrze", url: "/pozycjonowanie/zabrze" },
-              { label: "Wszystkie usługi SEO", url: "/uslugi/pozycjonowanie" },
-            ].map((link) => (
-              <Link
-                key={link.url}
-                to={link.url}
-                className="text-yellow-400 hover:underline font-medium text-sm"
-              >
-                → {link.label}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <ContactSection />
-    </Layout>
-  );
+  faqs: [
+    { question: "Czy pozycjonowanie w Sosnowcu się opłaca?", answer: "Zależy to od popytu na Twoje usługi, konkurencji, marży i możliwości obsługi zapytań. Dla wielu lokalnych firm rozsądnym startem jest poprawa najważniejszej strony usługi i wizytówki. Przed stałą współpracą porównujemy zakres prac z celem biznesowym. Nie deklarujemy zwrotu z inwestycji bez danych o zapytaniach i sprzedaży." },
+    { question: "Ile trwa, zanim widać efekty pozycjonowania?", answer: "Termin zależy od stanu strony, konkurencji, zakresu prac i tego, jak szybko Google przetworzy zmiany. Poprawki techniczne mogą zostać zauważone szybciej niż rozbudowa treści. Ustalamy harmonogram wdrożeń i termin przeglądu danych, ale nie obiecujemy konkretnej daty ani pozycji." },
+    { question: "Czy gwarantujecie pierwsze miejsce w Google?", answer: "Nie. Nikt nie kontroluje algorytmu Google, więc gwarancja konkretnej pozycji byłaby nieuczciwa. Zobowiązujemy się do uzgodnionych prac, terminów wdrożeń i przejrzystego raportu." },
+    { question: "Czy macie biuro w Sosnowcu?", answer: "Nie. FOTZ Studio ma zespół w Poznaniu, a firmy z Sosnowca obsługujemy zdalnie. Adres agencji nie ma wpływu na widoczność Twojej strony." },
+    { question: "Czy mogę pozycjonować stronę samodzielnie?", answer: "Tak, wiele podstawowych działań, jak uzupełnienie wizytówki czy opisanie usług, możesz wykonać sam. Agencja przydaje się, gdy problemy dotyczą techniki, struktury serwisu lub gdy brakuje czasu na regularną pracę." },
+    { question: "Czy pozycjonowanie jest legalne i bezpieczne?", answer: "Tak, o ile działania są zgodne z wytycznymi Google: poprawiają stronę i treści, a nie próbują manipulować wynikami. Nie kupujemy masowych linków ani nie publikujemy automatycznie generowanych tekstów." },
+    { question: "Czy da się pozycjonować stronę na całą Polskę, nie tylko Sosnowiec?", answer: "Tak. Jeśli sprzedajesz w całym kraju, skupiamy się na frazach produktowych i usługowych bez nazwy miasta. Pozycjonowanie lokalne i ogólnopolskie można łączyć, gdy firma ma oba typy klientów." },
+  ],
 };
 
-export default PozycjonowanieSosnowiec;
+export default function PozycjonowanieSosnowiec() {
+  return <>
+    <SEOHead title={offer.title} description={offer.description} canonical={`https://www.fotz-studio.pl${offer.path}`} />
+    <LocalSeoOffer {...offer} />
+  </>;
+}
