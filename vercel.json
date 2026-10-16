@@ -5,6 +5,66 @@
   "outputDirectory": "dist",
   "redirects": [
     {
+      "source": "/uslugi/tworzenie-stron-internetowych/bialystok",
+      "destination": "/uslugi/strony-internetowe/bialystok",
+      "permanent": true
+    },
+    {
+      "source": "/uslugi/tworzenie-stron-internetowych/poznan",
+      "destination": "/uslugi/strony-internetowe/poznan",
+      "permanent": true
+    },
+    {
+      "source": "/uslugi/tworzenie-stron-internetowych/lublin",
+      "destination": "/uslugi/strony-internetowe/lublin",
+      "permanent": true
+    },
+    {
+      "source": "/uslugi/tworzenie-stron-internetowych/katowice",
+      "destination": "/uslugi/strony-internetowe/katowice",
+      "permanent": true
+    },
+    {
+      "source": "/uslugi/tworzenie-stron-internetowych/bydgoszcz",
+      "destination": "/uslugi/strony-internetowe/bydgoszcz",
+      "permanent": true
+    },
+    {
+      "source": "/uslugi/tworzenie-stron-internetowych/szczecin",
+      "destination": "/uslugi/strony-internetowe/szczecin",
+      "permanent": true
+    },
+    {
+      "source": "/uslugi/tworzenie-stron-internetowych/torun",
+      "destination": "/uslugi/strony-internetowe/torun",
+      "permanent": true
+    },
+    {
+      "source": "/uslugi/tworzenie-stron-internetowych/lodz",
+      "destination": "/uslugi/strony-internetowe/lodz",
+      "permanent": true
+    },
+    {
+      "source": "/uslugi/tworzenie-stron-internetowych/gdansk",
+      "destination": "/uslugi/strony-internetowe/gdansk",
+      "permanent": true
+    },
+    {
+      "source": "/uslugi/tworzenie-stron-internetowych/wroclaw",
+      "destination": "/uslugi/strony-internetowe/wroclaw",
+      "permanent": true
+    },
+    {
+      "source": "/uslugi/tworzenie-stron-internetowych/krakow",
+      "destination": "/uslugi/strony-internetowe/krakow",
+      "permanent": true
+    },
+    {
+      "source": "/uslugi/tworzenie-stron-internetowych/warszawa",
+      "destination": "/uslugi/strony-internetowe/warszawa",
+      "permanent": true
+    },
+    {
       "source": "/uslugi/pozycjonowanie/lublin",
       "destination": "/seo/pozycjonowanie-lublin",
       "permanent": true

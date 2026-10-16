@@ -300,20 +300,9 @@ const AgencjaMarketingowaOpole = lazy(() => import("./pages/AgencjaMarketingowaO
 const AgencjaMarketingowaOlsztyn = lazy(() => import("./pages/AgencjaMarketingowaOlsztyn"));
 
 // Wave 10: Tworzenie stron city pages
-const TworzenieStronWarszawa = lazy(() => import("./pages/TworzenieStronWarszawa"));
-const TworzenieStronKrakow = lazy(() => import("./pages/TworzenieStronKrakow"));
-const TworzenieStronWroclaw = lazy(() => import("./pages/TworzenieStronWroclaw"));
-const TworzenieStronGdansk = lazy(() => import("./pages/TworzenieStronGdansk"));
-const TworzenieStronLodz = lazy(() => import("./pages/TworzenieStronLodz"));
-const TworzenieStronTorun = lazy(() => import("./pages/TworzenieStronTorun"));
-const TworzenieStronSzczecin = lazy(() => import("./pages/TworzenieStronSzczecin"));
 const BlogJakZalozycSklep = lazy(() => import("./pages/BlogJakZalozycSklep"));
 
 // Wave 11: More tworzenie stron city pages + service pages + blog
-const TworzenieStronBydgoszcz = lazy(() => import("./pages/TworzenieStronBydgoszcz"));
-const TworzenieStronKatowice = lazy(() => import("./pages/TworzenieStronKatowice"));
-const TworzenieStronLublin = lazy(() => import("./pages/TworzenieStronLublin"));
-const TworzenieStronPoznan = lazy(() => import("./pages/TworzenieStronPoznan"));
 const MarketingInternetowy = lazy(() => import("./pages/MarketingInternetowy"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 
@@ -921,7 +910,6 @@ const StronyInternetoweDlaFirm = lazy(() => import("./pages/StronyInternetoweDla
 const PozycjonowanieLokalne = lazy(() => import("./pages/PozycjonowanieLokalne"));
 const TworzenieSklepowInternetowych = lazy(() => import("./pages/TworzenieSklepowInternetowych"));
 const ProjektStronyInternetowej = lazy(() => import("./pages/ProjektStronyInternetowej"));
-const TworzenieStronBialystok = lazy(() => import("./pages/TworzenieStronBialystok"));
 const BlogJakSprzedawacWInternecie = lazy(() => import("./pages/BlogJakSprzedawacWInternecie"));
 
 // Other service pages
@@ -1348,18 +1336,18 @@ const App = ({ Router = BrowserRouter, client = queryClient, initialPage }: AppP
                 <Route path="/uslugi/pozycjonowanie/olsztyn" element={<PozycjonowanieOlsztyn />} />
                 <Route path="/uslugi/identyfikacja-wizualna" element={<UslugiIdentyfikacjaWizualna />} />
                 <Route path="/uslugi/tworzenie-stron-internetowych" element={<TworzenieStronInternetowych />} />
-                <Route path="/uslugi/tworzenie-stron-internetowych/warszawa" element={<TworzenieStronWarszawa />} />
-                <Route path="/uslugi/tworzenie-stron-internetowych/krakow" element={<TworzenieStronKrakow />} />
-                <Route path="/uslugi/tworzenie-stron-internetowych/wroclaw" element={<TworzenieStronWroclaw />} />
-                <Route path="/uslugi/tworzenie-stron-internetowych/gdansk" element={<TworzenieStronGdansk />} />
-                <Route path="/uslugi/tworzenie-stron-internetowych/lodz" element={<TworzenieStronLodz />} />
-                <Route path="/uslugi/tworzenie-stron-internetowych/torun" element={<TworzenieStronTorun />} />
-                <Route path="/uslugi/tworzenie-stron-internetowych/szczecin" element={<TworzenieStronSzczecin />} />
+                <Route path="/uslugi/tworzenie-stron-internetowych/warszawa" element={<Redirect301 to="/uslugi/strony-internetowe/warszawa" />} />
+                <Route path="/uslugi/tworzenie-stron-internetowych/krakow" element={<Redirect301 to="/uslugi/strony-internetowe/krakow" />} />
+                <Route path="/uslugi/tworzenie-stron-internetowych/wroclaw" element={<Redirect301 to="/uslugi/strony-internetowe/wroclaw" />} />
+                <Route path="/uslugi/tworzenie-stron-internetowych/gdansk" element={<Redirect301 to="/uslugi/strony-internetowe/gdansk" />} />
+                <Route path="/uslugi/tworzenie-stron-internetowych/lodz" element={<Redirect301 to="/uslugi/strony-internetowe/lodz" />} />
+                <Route path="/uslugi/tworzenie-stron-internetowych/torun" element={<Redirect301 to="/uslugi/strony-internetowe/torun" />} />
+                <Route path="/uslugi/tworzenie-stron-internetowych/szczecin" element={<Redirect301 to="/uslugi/strony-internetowe/szczecin" />} />
                 <Route path="/blog/jak-zalozyc-sklep-internetowy" element={<BlogJakZalozycSklep />} />
-                <Route path="/uslugi/tworzenie-stron-internetowych/bydgoszcz" element={<TworzenieStronBydgoszcz />} />
-                <Route path="/uslugi/tworzenie-stron-internetowych/katowice" element={<TworzenieStronKatowice />} />
-                <Route path="/uslugi/tworzenie-stron-internetowych/lublin" element={<TworzenieStronLublin />} />
-                <Route path="/uslugi/tworzenie-stron-internetowych/poznan" element={<TworzenieStronPoznan />} />
+                <Route path="/uslugi/tworzenie-stron-internetowych/bydgoszcz" element={<Redirect301 to="/uslugi/strony-internetowe/bydgoszcz" />} />
+                <Route path="/uslugi/tworzenie-stron-internetowych/katowice" element={<Redirect301 to="/uslugi/strony-internetowe/katowice" />} />
+                <Route path="/uslugi/tworzenie-stron-internetowych/lublin" element={<Redirect301 to="/uslugi/strony-internetowe/lublin" />} />
+                <Route path="/uslugi/tworzenie-stron-internetowych/poznan" element={<Redirect301 to="/uslugi/strony-internetowe/poznan" />} />
                 <Route path="/uslugi/marketing-internetowy" element={<MarketingInternetowy />} />
                 <Route path="/agencja-seo-warszawa" element={<Redirect301 to="/seo/pozycjonowanie-warszawa" />} />
                 <Route path="/blog/dropshipping-polska" element={<BlogDropshippingPolska />} />
@@ -1369,7 +1357,7 @@ const App = ({ Router = BrowserRouter, client = queryClient, initialPage }: AppP
                 <Route path="/uslugi/tworzenie-sklepow-internetowych" element={<TworzenieSklepowInternetowych />} />
                 <Route path="/uslugi/projekt-strony-internetowej" element={<ProjektStronyInternetowej />} />
                 <Route path="/agencja-seo-krakow" element={<Redirect301 to="/seo/pozycjonowanie-krakow" />} />
-                <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
+                <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<Redirect301 to="/uslugi/strony-internetowe/bialystok" />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<Redirect301 to="/seo/audyt" />} />
                 {/* Wave 202 */}
