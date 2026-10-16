@@ -15,7 +15,7 @@ const sections = [
   },
   {
     title: "Jaka powinna być strona internetowa Twojej firmy?",
-    text: "Profesjonalny wygląd to za mało. Dobrze wykonana strona mówi, co oferujesz, komu i na jakich warunkach, i pomaga pozyskiwać zapytania. Strona www przestała być tylko wizytówką każdej firmy. Każda podstrona prowadzi do jednego działania: telefonu, formularza albo zamówienia. Responsywny układ sprawdzamy na urządzenia mobilne o różnych szerokościach, a polityka prywatności i zgody cookies są częścią wdrożenia.",
+    text: "Profesjonalny wygląd to za mało. Dobrze wykonana strona mówi, co oferujesz, komu i na jakich warunkach, i pomaga pozyskiwać zapytania. Strona www przestała być dla firm tylko wizytówką. Każda podstrona prowadzi do jednego działania: telefonu, formularza albo zamówienia. Responsywny układ sprawdzamy na urządzenia mobilne o różnych szerokościach, a polityka prywatności i zgody cookies są częścią wdrożenia.",
   },
   {
     title: "Projektowanie stron internetowych w Białymstoku — etapy i wdrożenie",
@@ -51,7 +51,7 @@ const sections = [
   },
   {
     title: "Jak wybrać agencję do tworzenia stron internetowych?",
-    text: "Zapytaj, kto przygotuje projekt, treści i wdrożenie oraz kto zachowa dostęp do domeny. Sprawdź case z portfolio. Agencja reklamowa czy agencja interaktywna powinna rozpisać zadania, a nie obiecywać konkurencyjność na rynku bez pracy nad ofertą.",
+    text: "Zapytaj, kto przygotuje projekt, treści i wdrożenie oraz kto zachowa dostęp do domeny. Sprawdź case z portfolio. Agencja reklamowa czy agencja interaktywna powinna rozpisać zadania, zamiast obiecywać przewagę nad konkurencją bez pracy nad ofertą.",
   },
 ];
 
