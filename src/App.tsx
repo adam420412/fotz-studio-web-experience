@@ -214,6 +214,9 @@ const UslugiLandingPage = lazy(() => import("./pages/UslugiLandingPage"));
 
 // Service pages
 const SocialMediaPoznan = lazy(() => import("./pages/SocialMediaPoznan"));
+const SocialMediaSzczecin = lazy(() => import("./pages/SocialMediaSzczecin"));
+const SocialMediaLublin = lazy(() => import("./pages/SocialMediaLublin"));
+const SocialMediaKrakow = lazy(() => import("./pages/SocialMediaKrakow"));
 const SocialMedia = lazy(() => import("./pages/SocialMedia"));
 const FotografPoznan = lazy(() => import("./pages/FotografPoznan"));
 const FotografiaZDrona = lazy(() => import("./pages/FotografiaZDrona"));
@@ -1274,6 +1277,10 @@ const App = ({ Router = BrowserRouter, client = queryClient, initialPage }: AppP
                 <Route path="/agencja-social-media" element={<AgencjaSocialMedia />} />
                 <Route path="/agencja-social-media/cennik" element={<AgencjaSocialMediaCennik />} />
                 <Route path="/agencja-social-media/poznan" element={<SocialMediaPoznan />} />
+                <Route path="/agencja-social-media/szczecin" element={<SocialMediaSzczecin />} />
+                <Route path="/agencja-social-media/lublin" element={<SocialMediaLublin />} />
+                <Route path="/agencja-social-media/warszawa" element={<SocialMediaWarszawa />} />
+                <Route path="/agencja-social-media/krakow" element={<SocialMediaKrakow />} />
                 <Route path="/agencja-social-media/:clusterSlug" element={<SocialMediaClusterHub />} />
 
                 <Route path="/poradniki" element={<Poradniki />} />
@@ -1901,7 +1908,7 @@ const App = ({ Router = BrowserRouter, client = queryClient, initialPage }: AppP
                 {/* Social media cluster */}
                 <Route path="/social-media/obsluga" element={<SocialMedia />} />
                 <Route path="/social-media/poznan" element={<Redirect301 to="/agencja-social-media/poznan" />} />
-                <Route path="/social-media/warszawa" element={<SocialMediaWarszawa />} />
+                <Route path="/social-media/warszawa" element={<Redirect301 to="/agencja-social-media/warszawa" />} />
                 <Route path="/social-media/influencer" element={<BlogInfluencerMarketing />} />
                 <Route path="/social-media/reels-vs-tiktok" element={<BlogReelsVsTikTok />} />
                 <Route path="/social-media/strategia" element={<SocialMediaStrategia />} />
