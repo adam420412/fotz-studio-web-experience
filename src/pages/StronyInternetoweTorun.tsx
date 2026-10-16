@@ -84,7 +84,7 @@ export default function StronyInternetoweTorun() {
 
       <section className="max-w-6xl mx-auto px-6 pt-32 pb-14">
         <p className="dv-eyebrow mb-5">FOTZ Studio · współpraca zdalna z Poznania</p>
-        <h1 className="text-4xl md:text-6xl font-heading mb-6">Strony internetowe Toruń — tworzenie stron internetowych, strona www i sklep internetowy dla Twojej firmy</h1>
+        <h1 className="text-4xl md:text-6xl font-heading mb-6">Strony internetowe Toruń — tworzenie stron internetowych, strona www i sklep internetowy</h1>
         <p className="text-lg text-muted-foreground max-w-3xl mb-7">Pomagamy zbudować obecność firmy w sieci: projektujemy i wdrażamy nowoczesne strony, które jasno przedstawiają ofertę, działają na telefonie i prowadzą do zapytania lub zakupu. Zajmujemy się strukturą, projektem, treściami i uzgodnionymi funkcjami.</p>
         <Link className="dv-btn dv-btn-primary" to={enquiryHref("web")}>Opisz stronę do wyceny</Link>
       </section>
