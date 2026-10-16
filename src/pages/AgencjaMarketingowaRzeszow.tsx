@@ -1,442 +1,152 @@
-import { Layout } from "@/components/layout/Layout";
 import { SEOHead } from "@/components/seo/SEOHead";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { Card, CardContent } from "@/components/ui/card";
-import { Link } from "react-router-dom";
-import { useState } from "react";
-import { Building2, TrendingUp, Star, Users, MapPin, CheckCircle2, ArrowRight, Phone, Target, Smartphone, BarChart3, Lightbulb, Zap } from "lucide-react";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { ServiceSchema, FAQSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { ServiceEditorial } from "@/components/ServiceEditorial";
+
+const content = {
+  "title": "Agencja marketingowa i reklamowa Rzeszów — kampanie, social media, marka",
+  "eyebrow": "FOTZ Studio · Rzeszów i Podkarpacie",
+  "path": "/agencja-marketingowa/rzeszow",
+  "area": "Rzeszów",
+  "workAfterScope": true,
+  "lead": "Planujemy działania promocyjne, projektujemy strony internetowe, prowadzimy kampanie reklamowe i tworzymy zdjęcia oraz filmy dla firm z Rzeszowa. Zespół FOTZ Studio pracuje w Poznaniu, a z klientami z Podkarpacia współpracujemy zdalnie. Opisz swoją ofertę i cel — zaproponujemy zakres dopasowany do Twojej firmy.",
+  "summary": [
+    "Mówisz, co sprzedajesz, komu i skąd dziś przychodzą klienci.",
+    "Razem wybieramy kanały, kolejność prac i sposób mierzenia wyników.",
+    "Dostajesz rozpisany zakres, harmonogram i wycenę przed startem."
+  ],
+  "scopeTitle": "Co oferujemy firmom z Rzeszowa?",
+  "scope": [
+    {
+      "title": "Strategia i planowanie działań",
+      "text": "Porządkujemy cel, grupę docelową i argumenty, które odróżniają ofertę od konkurencji. Plan wskazuje kanały, tematy komunikacji i materiały na najbliższe miesiące, dzięki czemu wiesz, co wspiera sprzedaż, a co buduje rozpoznawalność marki.",
+      "href": "/content-marketing/strategia",
+      "link": "Strategia i content marketing"
+    },
+    {
+      "title": "Strony internetowe i e-commerce",
+      "text": "Projektujemy strony WWW z czytelną ofertą i prostym kontaktem: struktura treści, projekt graficzny, wdrożenie (np. na WordPress) i test na telefonie. Tworzenie sklepów internetowych i rozbudowanych funkcji wyceniamy według listy wymagań.",
+      "href": "/uslugi/strony-internetowe",
+      "link": "Tworzenie stron internetowych"
+    },
+    {
+      "title": "SEO i pozycjonowanie stron",
+      "text": "Sprawdzamy widoczność w Google, indeksowanie, strukturę podstron i treści usług. Audyt SEO kończy się listą priorytetów: co poprawić technicznie, które frazy obsłużyć i jakich opisów brakuje.",
+      "href": "/seo/audyt",
+      "link": "Zakres audytu SEO"
+    },
+    {
+      "title": "Google Ads i Meta Ads",
+      "text": "Reklama w wyszukiwarce dociera do osób, które szukają usługi, a Facebook i Instagram — do tych, którzy jeszcze jej nie szukają. Wynagrodzenie za obsługę i budżet reklamowy to w ofercie dwie odrębne pozycje.",
+      "href": "/performance-marketing/google-ads",
+      "link": "Kampanie Google Ads"
+    },
+    {
+      "title": "Social media",
+      "text": "Działania w mediach społecznościowych łączą plan publikacji, grafika, copywriting i rolki — każdy klient dostaje kalendarz do akceptacji. Możesz zlecić pełną obsługę albo same materiały dla własnego zespołu.",
+      "href": "/social-media/obsluga",
+      "link": "Obsługa social media"
+    },
+    {
+      "title": "Branding, zdjęcia i wideo",
+      "text": "Projektujemy logo i spójny system wizualny, realizujemy zdjęcia produktów i zespołu oraz filmy reklamowe. Format i scenariusz wynikają z miejsca publikacji.",
+      "href": "/uslugi/branding",
+      "link": "Branding i identyfikacja wizualna"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Agencja marketingowa Rzeszów: jak zaczynamy?",
+      "text": "Pierwsza rozmowa dotyczy Twojej firmy, a nie listy usług. Pytamy o ofertę, klientów, obszar sprzedaży i o to, co dziś hamuje pozyskiwanie zapytań. Przeglądamy stronę, profile i dotychczasowe działania marketingowe. Gdy stronę odwiedza niewiele osób, zaczynamy od widoczności; gdy ruch jest, ale brakuje kontaktów — od oferty i formularza. Współpracę można rozpocząć od jednego zlecenia.",
+      "points": [
+        "Wyślij adres strony, linki do profili i opis najważniejszej usługi.",
+        "Podaj grupę docelową, obszar działania, termin i posiadane materiały.",
+        "Wskaż osobę, która akceptuje treści i odpowiada na zapytania."
+      ]
+    },
+    {
+      "title": "Jakim firmom z Podkarpacia oferujemy wsparcie?",
+      "text": "Rzeszów to ośrodek akademicki i gospodarczy regionu: obok usług lokalnych działają tu producenci, dostawcy dla przemysłu, w tym lotniczego, firmy technologiczne i logistyczne. Każda z tych grup potrzebuje innej komunikacji. Salon czy gabinet szuka klienta w okolicy, a producent rozmawia z działami zakupów w całej Polsce i za granicą. Zanim wybierzemy kanały, ustalamy, kto decyduje o zakupie i jakich informacji potrzebuje, żeby rozwijać swoją działalność.",
+      "points": [
+        "Usługi lokalne: oferta, obszar obsługi, opinie klientów i szybki kontakt.",
+        "B2B: parametry, zastosowania, dokumentacja i ścieżka zapytania.",
+        "E-commerce: karty produktów, wersja mobilna i pomiar kroków zakupu."
+      ]
+    },
+    {
+      "title": "Agencja reklamowa Rzeszów czy kompleksowa obsługa marketingowa?",
+      "text": "Agencja reklamowa kojarzy się z kreacją i kampanią, a marketing także ze strategią, treściami i stroną. Kompleksową obsługę warto wybrać, gdy reklama, strona i rozmowa handlowa mają mówić to samo — wtedy jeden zespół pilnuje spójności. Często wystarczy jednak przebudowa strony, sesja zdjęciowa albo kampania na jeden sezon. Każdy nowy kanał to także obowiązki po Twojej stronie: akceptacje i odpowiedzi na wiadomości.",
+      "href": "/uslugi/marketing-internetowy",
+      "link": "Poznaj marketing internetowy"
+    },
+    {
+      "title": "Efektywne kampanie: jak zwiększyć liczbę zapytań z reklamy?",
+      "text": "Zanim uruchomimy reklamę, sprawdzamy stronę docelową i to, czy zapytanie trafi do właściwej osoby. Ustalamy cel, odbiorców, warianty komunikatu i stawki. W trakcie emisji porównujemy kreacje, koszt kontaktu i jakość zgłoszeń. Optymalizacja nie zawsze dotyczy reklamy: czasem trzeba skrócić formularz albo doprecyzować ofertę. Wyniki zestawiamy z informacją od działu sprzedaży.",
+      "href": "/realizacje/dawid-edu",
+      "link": "Dawid EDU: strona i kampania rekrutacyjna Meta Ads"
+    },
+    {
+      "title": "Marka, projekty graficzne, banery reklamowe i druk",
+      "text": "Rebranding bywa potrzebny po zmianie oferty lub wejściu na nowy rynek. Oceniamy, co w obecnym wizerunku warto zachować, i projektujemy znak, kolory, typografię oraz zasady użycia. Przygotowujemy też materiały promocyjne: wizytówki, teczki firmowe, prezentacje sprzedażowe, banery reklamowe i grafiki wielkoformatowe na targi. Pliki przekazujemy gotowe do druku; samą produkcję realizuje wybrana przez Ciebie drukarnia lub inny dostawca poligrafii.",
+      "href": "/uslugi/branding",
+      "link": "Omów branding firmy"
+    },
+    {
+      "title": "Projekty, które zrealizowaliśmy dla klientów",
+      "text": "W portfolio pokazujemy prawdziwe projekty: materiały foto i wideo dla Enea Stadion, stronę i kampanię rekrutacyjną Dawid EDU, spot dla WSB Merito i konfigurator mebli 3D KLAGEM. To nie są firmy z Rzeszowa, ale widać w nich nasz sposób pracy — od planu, przez produkcję, po wdrożenie. Nie stosujemy szablonowych rozwiązań: zakres projektujemy pod cel firmy, z którą mamy współpracować.",
+      "href": "/realizacje",
+      "link": "Zobacz realizacje"
+    },
+    {
+      "title": "Współpraca zdalna z firmą z Rzeszowa",
+      "text": "Jesteśmy agencją z Poznania, dlatego briefy, prezentacje koncepcji, akceptacje i raporty prowadzimy online. Materiały przesyłasz w udostępnionym folderze, gotowe pliki odbierasz cyfrowo. Projekt dzielimy na etapy z terminami i liczbą poprawek. Konta reklamowe pozostają własnością Twojej firmy. Jeśli zdjęcia lub nagrania wymagają pracy na miejscu, możliwość wyjazdu omawiamy osobno. Po starcie strony możemy zapewniać opiekę techniczną w uzgodnionym zakresie, a przy kolejnym zamówieniu wrócić do wspólnych ustaleń.",
+      "href": "/kontakt?usluga=marketing#formularz",
+      "link": "Opisz projekt"
+    },
+    {
+      "title": "Ile kosztuje agencja marketingowa?",
+      "text": "Koszt zależy od liczby kanałów, skali strony, ilości materiałów i częstotliwości obsługi. Rozdzielamy strategię, projekt i wdrożenie strony, produkcję treści, stałą obsługę i budżet reklamowy. Ewentualny wyjazd wyceniamy po ustaleniu miejsca i terminu. Porównując oferty, sprawdź, co powstaje na każdym etapie i jakie obowiązki ma każda strona.",
+      "href": "/cennik",
+      "link": "Zobacz cennik"
+    },
+    {
+      "title": "Jak oceniamy wyniki?",
+      "text": "Na starcie wybieramy wskaźniki pasujące do celu: dla SEO wyświetlenia i kliknięcia w Search Console, dla kampanii wydatki, konwersje i jakość kontaktów. Raport kończy się wnioskami i propozycją kolejnych kroków. Profesjonalizm to dla nas jasne zasady i dbałość o dobre relacje z klientami, a nie obietnice wejścia na wyższy poziom bez planu. Nie gwarantujemy pozycji w Google ani liczby zapytań — wynik zależy też od konkurencji, budżetu i obsługi klienta."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Czy macie biuro w Rzeszowie?",
+      "answer": "Nie. Zespół FOTZ Studio pracuje w Poznaniu, a firmy z Rzeszowa i Podkarpacia obsługujemy zdalnie: spotkania odbywają się online, a materiały wymieniamy cyfrowo. Ewentualny przyjazd na zdjęcia lub nagrania ustalamy osobno."
+    },
+    {
+      "question": "Czym zajmuje się firma marketingowa?",
+      "answer": "Pomaga zaplanować i prowadzić komunikację: strategię, stronę, treści, reklamy i analizę wyników. W FOTZ wybierasz tylko te usługi, których potrzebuje Twoja firma."
+    },
+    {
+      "question": "Czy mogę zlecić tylko jedną usługę?",
+      "answer": "Tak. Realizujemy pojedyncze projekty — stronę, identyfikację wizualną, sesję zdjęciową lub film — a także stałą obsługę. Przed startem ustalamy materiały, liczbę poprawek i sposób przekazania plików."
+    },
+    {
+      "question": "Jak wybrać agencję?",
+      "answer": "Sprawdź portfolio, rozpisany zakres prac, zasady akceptacji, własność kont reklamowych i sposób raportowania. Zapytaj, jaki problem rozwiązuje każde proponowane działanie."
+    },
+    {
+      "question": "Kiedy widać efekty?",
+      "answer": "To zależy od kanału. Stronę i formularz sprawdzamy od razu po wdrożeniu, kampania potrzebuje danych z emisji, a SEO czasu, aż wyszukiwarka przetworzy zmiany. Nie podajemy jednego terminu dla wszystkich."
+    },
+    {
+      "question": "Co przygotować do wyceny?",
+      "answer": "Link do witryny, opis oferty, grupę odbiorców, obszar działania i cel. Dołącz linki do profili, informację o posiadanych zdjęciach i termin. Na tej podstawie możemy stworzyć propozycję zakresu."
+    }
+  ]
+};
 
 export default function AgencjaMarketingowaRzeszow() {
-  const [selectedPackage, setSelectedPackage] = useState("standard");
-
-  const services = [
-    {
-      id: "seo",
-      icon: TrendingUp,
-      title: "Pozycjonowanie SEO",
-      description: "Zwiększymy widoczność Twojej strony w wyszukiwarce Google. Specjalizujemy się w SEO dla firm lokalnych w Rzeszowie.",
-      features: ["Badanie słów kluczowych", "Optymalizacja on-page", "Budowanie backlinków", "Raporty miesięczne"]
-    },
-    {
-      id: "ads",
-      icon: Target,
-      title: "Google Ads & Social Media",
-      description: "Kampanie reklamowe na Google i mediach społecznościowych przynoszące konkretne rezultaty.",
-      features: ["Konfiguracja kampanii", "Targeting precyzyjny", "Optymalizacja budżetu", "ROI tracking"]
-    },
-    {
-      id: "www",
-      icon: Smartphone,
-      title: "Strony Internetowe",
-      description: "Nowoczesne, responsywne strony www, które konwertują odwiedzających w klientów.",
-      features: ["Responsywny design", "Szybkie ładowanie", "CMS Headless", "SEO-friendly"]
-    },
-    {
-      id: "social",
-      icon: Users,
-      title: "Social Media Management",
-      description: "Zarządzanie Twoimi profilami na Facebook, Instagram i LinkedIn. Budowanie społeczności.",
-      features: ["Tworzenie contentu", "Harmonogram postów", "Interakcja z obserwatorami", "Analytics"]
-    },
-    {
-      id: "content",
-      icon: Lightbulb,
-      title: "Content Marketing",
-      description: "Artykuły, blogi i materiały edukacyjne, które przyciągają i utrzymują klientów.",
-      features: ["Blog posts", "EBook creation", "Infografiki", "Video scripts"]
-    },
-    {
-      id: "analytics",
-      icon: BarChart3,
-      title: "Analytics & Reporting",
-      description: "Pełna analiza wyników Twoich działań marketingowych z rekomendacjami optymalizacji.",
-      features: ["GA4 setup", "Dashboards", "Analiza konkurencji", "Strategie wzrostu"]
-    }
-  ];
-
-  const packages = [
-    {
-      id: "starter",
-      name: "Starter",
-      price: "2499",
-      description: "Dla małych firm zaczynających swoją obecność online",
-      features: [
-        "Strona internetowa (5-10 stron)",
-        "Konfiguracja Google Business",
-        "Setup Google Ads (1000 PLN budżetu)",
-        "30 dni wsparcia",
-        "Monthly report"
-      ],
-      highlight: false
-    },
-    {
-      id: "standard",
-      name: "Standard",
-      price: "5999",
-      description: "Najpopularniejszy pakiet dla firm średnich",
-      features: [
-        "Wszystko z Starter",
-        "SEO optimization (90 dni)",
-        "Google Ads & Social Media Ads",
-        "10 artykułów na blog",
-        "Social media setup",
-        "Wsparcie 24/5",
-        "3 miesiące konsultacji"
-      ],
-      highlight: true
-    },
-    {
-      id: "premium",
-      name: "Premium",
-      price: "14999",
-      description: "Pełny pakiet dla ambitnych firm",
-      features: [
-        "Wszystko ze Standard",
-        "SEO acceleration (6 miesięcy)",
-        "Social media full management",
-        "Content marketing plan",
-        "Video production (2-3 filmy)",
-        "Brand identity (logo, guidelines)",
-        "Dedykowany manager",
-        "Wsparcie 24/7"
-      ],
-      highlight: false
-    }
-  ];
-
-  const faqs = [
-    {
-      question: "Jak szybko będę mieć pierwsze wyniki z SEO?",
-      answer: "Pierwsze rezultaty pozycjonowania obserwujemy zwykle po 4-6 tygodniach. Jednak pełne efekty, czyli Top 3 pozycje w Google, wymogą 3-6 miesięcy intensywnej pracy. Wszystko zależy od konkurencji i zakresu słów kluczowych. Będziesz otrzymywać raporty co miesiąc."
-    },
-    {
-      question: "Czy mogę skorzystać z waszych usług, jeśli już mam stronę internetową?",
-      answer: "Oczywiście! Jeśli masz już stronę, możemy ją zoptymalizować pod kątem SEO, poprawić szybkość ładowania, modernizować wygląd i dodać nowe funkcjonalności. Przeprowadzimy audit i zaproponujemy konkretne ulepszenia."
-    },
-    {
-      question: "Jakie są gwarancje dotyczące wyników?",
-      answer: "Nie gwarantujemy konkretnych pozycji w Google, ponieważ zmienia on algorytm. Jednak gwarantujemy rzetelną pracę, transparentność i raporty. Naszych klientów wyróżnia 97% wskaźnik zadowolenia. Pracujemy na podstawie umowy ze ścisłym harmonogramem."
-    },
-    {
-      question: "Czy pracujecie z firmami z Podkarpacia?",
-      answer: "Tak! Specjalizujemy się w marketingu dla firm z Rzeszowa i całego regionu Podkarpacia. Mamy doświadczenie z branżą lotniczą, IT, handlem, usługami i produkcją. Znamy lokalne uwarunkowania i możemy dostosować strategię do Twojego rynku."
-    },
-    {
-      question: "Ile kosztuje bezpłatna konsultacja?",
-      answer: "Konsultacja jest całkowicie bezpłatna! Poznacie nasz zespół, omówicie Wasze cele biznesowe, analiżemy obecną sytuację i zaproponujemy konkretne działania. Bez zobowiązań, bez presji sprzedażowej."
-    }
-  ];
-
-  const areas = [
-    "Śródmieście",
-    "Słocina",
-    "Przybyszówka",
-    "Biała",
-    "Drabinianka",
-    "Zwięczyca",
-    "Nowy Świat",
-    "Krakowska"
-  ];
-
-  const stats = [
-    { label: "Obsłużonych Klientów", value: "500+" },
-    { label: "Lat Doświadczenia", value: "8" },
-    { label: "Zadowolonych Klientów", value: "97%" },
-    { label: "Średnia Pozycja", value: "TOP 3" }
-  ];
-
-  return (
-    <Layout>
-      <SEOHead
-        title="Agencja Marketingowa Rzeszów | Fotz Studio"
-        description="Agencja marketingowa Rzeszów ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Rzeszowa i Podkarpacia. Bezpłatna wycena!"
-        canonical="https://www.fotz-studio.pl/agencja-marketingowa/rzeszow"
-        keywords="agencja marketingowa rzeszów, marketing internetowy rzeszów, agencja reklamowa rzeszów, kampanie reklamowe rzeszów, seo rzeszów, google ads rzeszów"
-      />
-
-      <BreadcrumbSchema items={[
-          { name: "Home", url: "https://www.fotz-studio.pl" },
-          { name: "Agencje Marketingowe", url: "https://www.fotz-studio.pl/agencja-marketingowa" },
-          { name: "Rzeszów", url: "https://www.fotz-studio.pl/agencja-marketingowa/rzeszow" }
-        ]}/>
-
-      <ServiceSchema
-        name="Agencja Marketingowa Rzeszów"
-        description="Profesjonalne usługi marketingowe dla firm z Rzeszowa i Podkarpacia"
-        areaServed="Rzeszow"
-      />
-
-      <FAQSchema items={faqs} />
-
-      <main className="min-h-screen bg-white">
-        {/* Hero */}
-        <section className="relative py-20 bg-gradient-to-br from-blue-50 to-indigo-50 border-b">
-          <div className="container mx-auto px-4">
-            <div className="max-w-3xl">
-              <Badge className="mb-4">Agencja Marketingowa w Rzeszowie</Badge>
-              <h1 className="text-5xl font-bold mb-6 text-gray-900">
-                Agencja Marketingowa Rzeszów
-              </h1>
-              <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-                Ponad 500 klientów zaufało nam w Rzeszowie i całym Podkarpaciu. Tworzymy strategie marketingowe, które rzeczywiście przynoszą wyniki. SEO, Google Ads, strony WWW i zarządzanie mediami społecznościowymi - wszystko w jednym miejscu.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
-                  <Link to="/kontakt">
-                    <Phone className="w-4 h-4 mr-2" />
-                    Bezpłatna Konsultacja
-                  </Link>
-                </Button>
-                <Button asChild size="lg" variant="outline"><a href="/realizacje">
-                  <ArrowRight className="w-4 h-4 mr-2" />
-                  Sprawdź nasze realizacje
-                </a></Button>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Stats */}
-        <section className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              {stats.map((stat, idx) => (
-                <div key={idx} className="text-center">
-                  <div className="text-4xl font-bold text-blue-600 mb-2">{stat.value}</div>
-                  <div className="text-gray-600 text-sm">{stat.label}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Services */}
-        <section className="py-20">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-4 text-center text-gray-900">Nasze Usługi Marketingowe</h2>
-            <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-              Oferujemy kompleksowy zakres usług marketingowych dostosowany do potrzeb firm z Rzeszowa. Niezależnie od branży, mamy sprawdzone rozwiązania.
-            </p>
-
-            <div className="grid md:grid-cols-3 gap-8">
-              {services.map((service) => {
-                const Icon = service.icon;
-                return (
-                  <Card key={service.id} className="border-0 shadow-md hover:shadow-lg transition-shadow">
-                    <CardContent className="p-6">
-                      <Icon className="w-10 h-10 text-blue-600 mb-4" />
-                      <h3 className="text-xl font-bold mb-2 text-gray-900">{service.title}</h3>
-                      <p className="text-gray-600 mb-6 text-sm">{service.description}</p>
-                      <ul className="space-y-2">
-                        {service.features.map((feature, idx) => (
-                          <li key={idx} className="flex items-start text-sm text-gray-700">
-                            <CheckCircle2 className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                            <span>{feature}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </CardContent>
-                  </Card>
-                );
-              })}
-            </div>
-          </div>
-        </section>
-
-        {/* Packages */}
-        <section className="py-20 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-4 text-center text-gray-900">Pakiety Cenowe</h2>
-            <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-              Zaplanowaliśmy pakiety dla każdego budżetu. Możemy również stworzyć dedykowaną ofertę dla Twoich konkretnych potrzeb.
-            </p>
-
-            <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-              {packages.map((pkg) => (
-                <Card
-                  key={pkg.id}
-                  className={`border-0 transition-all ${
-                    pkg.highlight
-                      ? "shadow-2xl ring-2 ring-blue-500 scale-105"
-                      : "shadow-md hover:shadow-lg"
-                  }`}
-                >
-                  <CardContent className="p-8">
-                    {pkg.highlight && (
-                      <Badge className="mb-4 bg-blue-600">Najpopularniejszy</Badge>
-                    )}
-                    <h3 className="text-2xl font-bold mb-2 text-gray-900">{pkg.name}</h3>
-                    <p className="text-gray-600 text-sm mb-6">{pkg.description}</p>
-                    <div className="mb-6">
-                      <span className="text-4xl font-bold text-gray-900">{pkg.price}</span>
-                      <span className="text-gray-600 ml-2">PLN</span>
-                    </div>
-                    <Button asChild
-                      className={`w-full mb-6 ${
-                        pkg.highlight
-                          ? "bg-blue-600 hover:bg-blue-700"
-                          : "bg-gray-200 hover:bg-gray-300 text-gray-900"
-                      }`}
-                    ><a href="/kontakt">
-                      Wybierz Plan
-                    </a></Button>
-                    <ul className="space-y-3">
-                      {pkg.features.map((feature, idx) => (
-                        <li key={idx} className="flex items-start text-sm text-gray-700">
-                          <CheckCircle2 className="w-4 h-4 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                          <span>{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Areas */}
-        <section className="py-20">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-4 text-center text-gray-900">Obsługiwane Dzielnice Rzeszowa</h2>
-            <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-              Bez względu na to, w której części Rzeszowa znajduje się Twoja firma, możemy Ci pomóc rozwinąć biznes w sieci.
-            </p>
-
-            <div className="max-w-2xl mx-auto">
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                {areas.map((area, idx) => (
-                  <Card key={idx} className="border-0 shadow-md hover:shadow-lg transition-shadow">
-                    <CardContent className="p-4 text-center">
-                      <MapPin className="w-5 h-5 text-blue-600 mx-auto mb-2" />
-                      <p className="font-medium text-gray-900">{area}</p>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </div>
-
-            <p className="text-center text-gray-600 mt-8 max-w-2xl mx-auto">
-              + całe Podkarpacie i województwo podkarpackie
-            </p>
-          </div>
-        </section>
-
-        {/* Why Us */}
-        <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-50">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-12 text-center text-gray-900">Dlaczego My?</h2>
-
-            <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
-              <div>
-                <h3 className="text-xl font-bold mb-4 text-gray-900 flex items-center">
-                  <Star className="w-6 h-6 text-yellow-400 mr-3" />
-                  Doświadczenie
-                </h3>
-                <p className="text-gray-700 leading-relaxed mb-4">
-                  8 lat pracy na rynku marketingu cyfrowego. Obsłużyliśmy firmy z Rzeszowa, Warszawy, Krakowa i innych miast. Znamy specyficzne wyzwania biznesu lokalnego.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-bold mb-4 text-gray-900 flex items-center">
-                  <Zap className="w-6 h-6 text-blue-600 mr-3" />
-                  Szybkie Rezultaty
-                </h3>
-                <p className="text-gray-700 leading-relaxed mb-4">
-                  Nasze strategie są testowane i sprawdzone. W ciągu 30-90 dni obserwujesz wzrost ruchu, leadów lub sprzedaży. Wszystko mierzone i raportowane.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-bold mb-4 text-gray-900 flex items-center">
-                  <Building2 className="w-6 h-6 text-green-600 mr-3" />
-                  Transparentność
-                </h3>
-                <p className="text-gray-700 leading-relaxed mb-4">
-                  Każdy klient dostaje dostęp do dashboardów, raportów miesięcznych i regularnych konsultacji. Widzisz dokładnie, na co tracimy Twoje pieniądze.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-bold mb-4 text-gray-900 flex items-center">
-                  <Users className="w-6 h-6 text-purple-600 mr-3" />
-                  Wsparcie
-                </h3>
-                <p className="text-gray-700 leading-relaxed mb-4">
-                  Dedykowany menedżer ds. klienta odpowiada na wszystkie Twoje pytania. Pracujemy jako rozszerzenie Twojego zespołu, a nie jako zewnętrzny dostawca.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* FAQ */}
-        <section className="py-20">
-          <div className="container mx-auto px-4 max-w-2xl">
-            <h2 className="text-3xl font-bold mb-12 text-center text-gray-900">Najczęstsze Pytania</h2>
-
-            <Accordion type="single" collapsible className="w-full">
-              {faqs.map((faq, idx) => (
-                <AccordionItem key={idx} value={`item-${idx}`} className="border-b border-gray-200">
-                  <AccordionTrigger className="text-left font-semibold text-gray-900 py-4">
-                    {faq.question}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-gray-700 pb-4">
-                    {faq.answer}
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
-          </div>
-        </section>
-
-        {/* CTA */}
-        <section className="py-20 bg-blue-600">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-4xl font-bold mb-6 text-white">Gotowy na Zmianę?</h2>
-            <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-              Zaproś nas na bezpłatną konsultację. Poznamy Twój biznes, analizujemy konkurencję i zaproponujemy konkretne działania marketingowe.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-blue-50">
-                <Link to="/kontakt">
-                  Zarezerwuj Bezpłatną Konsultację
-                </Link>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-blue-700">
-                <a href="tel:+48790814814">
-                  <Phone className="w-4 h-4 mr-2" />
-                  Zadzwoń: +48 790 814 814
-                </a>
-              </Button>
-            </div>
-          </div>
-        </section>
-
-        {/* Footer Info */}
-        <section className="py-16 bg-gray-50 border-t">
-          <div className="container mx-auto px-4">
-            <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto text-center">
-              <div>
-                <h3 className="font-bold text-gray-900 mb-2">Rzeszów</h3>
-                <p className="text-gray-600 text-sm">Stolicą Podkarpacia i szybko rosnącym miastem tech.</p>
-              </div>
-              <div>
-                <h3 className="font-bold text-gray-900 mb-2">Dolina Lotnicza</h3>
-                <p className="text-gray-600 text-sm">Specjalizujemy się w branży lotniczej i IT.</p>
-              </div>
-              <div>
-                <h3 className="font-bold text-gray-900 mb-2">Wsparcie EU</h3>
-                <p className="text-gray-600 text-sm">Znamy programy dofinansowania dla firm.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-    </Layout>
-  );
+  return <>
+    <SEOHead
+      title="Agencja marketingowa i agencja reklamowa Rzeszów | FOTZ"
+      description="Agencja marketingowa Rzeszów: strony WWW, SEO, kampanie Google i Meta Ads, social media. Agencja reklamowa, która pomoże firmie zwiększyć widoczność."
+      canonical="https://www.fotz-studio.pl/agencja-marketingowa/rzeszow"
+    />
+    <ServiceEditorial {...content} />
+  </>;
 }

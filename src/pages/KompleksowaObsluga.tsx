@@ -1,10 +1,10 @@
 import { SEOHead } from "@/components/seo/SEOHead";
-import { BreadcrumbSchema, ServiceSchema, FAQSchema, OrganizationSchema} from "@/components/seo/StructuredData";
+import { BreadcrumbSchema, ServiceSchema, FAQSchema, OrganizationSchema } from "@/components/seo/StructuredData";
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Target, Users, TrendingUp, BarChart3, Megaphone, Globe, PenTool, Mail, CheckCircle, Zap, Crown, Briefcase, LineChart, Smartphone, Search } from "lucide-react";
+import { ArrowRight, Target, Users, BarChart3, Megaphone, Globe, PenTool, CheckCircle, LineChart, Smartphone, Search, Video, Palette, Layers } from "lucide-react";
 import { FadeInView } from "@/components/FadeInView";
 import { TextReveal } from "@/components/TextReveal";
 import {
@@ -16,204 +16,181 @@ import {
 
 const services = [
   {
-    icon: Globe,
-    title: "Strony internetowe",
-    description: "Profesjonalne strony www zoptymalizowane pod SEO",
-    link: "/uslugi/strony-internetowe"
+    icon: Target,
+    title: "Strategia marketingowa",
+    description: "Audyt, analiza konkurencji i grup docelowych, wybór kanałów marketingowych oraz plan działań powiązany z celami biznesowymi firmy.",
+    link: "/content-marketing/strategia",
   },
   {
     icon: Smartphone,
-    title: "Social Media",
-    description: "Kompleksowe prowadzenie profili w mediach społecznościowych",
-    link: "/social-media/obsluga"
-  },
-  {
-    icon: Search,
-    title: "Pozycjonowanie SEO",
-    description: "Optymalizacja i pozycjonowanie w Google",
-    link: "/seo/pozycjonowanie"
+    title: "Prowadzenie social media",
+    description: "Facebook, Instagram, LinkedIn i TikTok: plan publikacji, grafiki, rolki, moderacja i komunikacja z klientami w mediach społecznościowych.",
+    link: "/social-media/obsluga",
   },
   {
     icon: Megaphone,
     title: "Kampanie reklamowe",
-    description: "Google Ads, Meta Ads i kampanie display",
-    link: "/uslugi/produkcja-video"
+    description: "Reklamy Facebook Ads i Instagram oraz kampanie w Google Ads — od konfiguracji konta i pomiaru po optymalizację budżetu reklamowego.",
+    link: "/kampanie-reklamowe",
   },
   {
-    icon: PenTool,
-    title: "Content marketing",
-    description: "Tworzenie angażujących treści dla Twojej marki",
-    link: "/uslugi"
+    icon: Search,
+    title: "SEO i content marketing",
+    description: "Optymalizacja techniczna strony, treści pod frazy z wyszukiwarki i działania, które budują widoczność w wynikach wyszukiwania Google.",
+    link: "/seo/pozycjonowanie",
+  },
+  {
+    icon: Globe,
+    title: "Strony WWW i landing page",
+    description: "Strona firmowa, sklep lub landing page pod konkretną kampanię — projektowane tak, żeby ruch na stronie zamieniał się w zapytania.",
+    link: "/uslugi/strony-internetowe",
+  },
+  {
+    icon: Video,
+    title: "Produkcja wideo i zdjęcia",
+    description: "Spoty reklamowe, rolki, filmy wizerunkowe i sesje zdjęciowe realizowane przez nasz zespół — materiał gotowy do reklam i publikacji.",
+    link: "/uslugi/produkcja-video",
+  },
+  {
+    icon: Palette,
+    title: "Identyfikacja wizualna",
+    description: "Logo, kolorystyka i szablony graficzne, dzięki którym komunikacja marki jest spójna we wszystkich kanałach — online i offline.",
+    link: "/uslugi/logo-i-branding",
   },
   {
     icon: BarChart3,
     title: "Analityka i raportowanie",
-    description: "Monitoring wyników i optymalizacja działań",
-    link: "/uslugi"
-  }
+    description: "Konfiguracja Google Analytics 4 i pikseli, miesięczny raport z działań oraz wnioski, co zmieniamy w kolejnym miesiącu.",
+    link: "/blog/google-analytics-4-poradnik",
+  },
 ];
 
 const benefits = [
   {
-    icon: Target,
-    title: "Spójność działań",
-    description: "Wszystkie kanały marketingowe działają zgodnie z jedną strategią"
-  },
-  {
-    icon: TrendingUp,
-    title: "Wzrost sprzedaży",
-    description: "Skuteczne pozyskiwanie leadów i konwersja na klientów"
+    icon: Layers,
+    title: "Jeden plan dla wszystkich kanałów",
+    description: "Reklama, social media, SEO i strona pracują na te same cele, zamiast konkurować o budżet.",
   },
   {
     icon: Users,
-    title: "Dedykowany zespół",
-    description: "Osobisty opiekun i zespół specjalistów do Twojej dyspozycji"
+    title: "Jeden opiekun projektu",
+    description: "Kontaktujesz się z jedną osobą, która koordynuje grafików, filmowców, copywritera i specjalistę od reklam.",
+  },
+  {
+    icon: PenTool,
+    title: "Produkcja treści w zespole",
+    description: "Zdjęcia, wideo i grafiki tworzymy sami, więc materiały do reklam nie czekają na zewnętrznego dostawcę.",
   },
   {
     icon: LineChart,
-    title: "Mierzalne rezultaty",
-    description: "Regularne raporty i transparentne wyniki działań"
-  }
+    title: "Przejrzyste raporty",
+    description: "Co miesiąc widzisz, co zrobiliśmy, ile wydano na reklamę i jakie wnioski wyciągamy na kolejny okres.",
+  },
 ];
 
 const processSteps = [
   {
     step: "01",
-    title: "Audyt i analiza",
-    description: "Dokładna analiza potrzeb Twojego biznesu i dotychczasowych działań marketingowych"
+    title: "Rozmowa i audyt",
+    description: "Poznajemy firmę, ofertę i klientów. Sprawdzamy stronę, profile w mediach społecznościowych, konta reklamowe i analitykę.",
   },
   {
     step: "02",
-    title: "Strategia",
-    description: "Opracowanie kompleksowej strategii marketingowej dopasowanej do celów"
+    title: "Strategia i zakres",
+    description: "Proponujemy strategię marketingową: cele, grupy docelowe, kanały, harmonogram i miesięczny zakres prac do akceptacji.",
   },
   {
     step: "03",
-    title: "Realizacja",
-    description: "Wdrożenie działań marketingowych we wszystkich wybranych kanałach"
+    title: "Wdrożenie",
+    description: "Przygotowujemy materiały, uruchamiamy kampanie, publikujemy treści i porządkujemy pomiar konwersji na stronie.",
   },
   {
     step: "04",
-    title: "Optymalizacja",
-    description: "Ciągły monitoring, analiza wyników i optymalizacja strategii"
-  }
+    title: "Raport i optymalizacja",
+    description: "Co miesiąc analizujemy dane, omawiamy wyniki i przesuwamy budżet tam, gdzie działania przynoszą najlepszy zwrot.",
+  },
 ];
 
-const pricingPackages = [
-  {
-    name: "Start",
-    icon: Zap,
-    price: "2 499",
-    period: "/mies.",
-    description: "Dla małych firm rozpoczynających działania marketingowe",
-    features: [
-      "Prowadzenie 2 profili social media",
-      "8 postów miesięcznie",
-      "Podstawowe SEO strony",
-      "Raport miesięczny",
-      "Dedykowany opiekun",
-    ],
-    popular: false,
-  },
-  {
-    name: "Business",
-    icon: Briefcase,
-    price: "4 999",
-    period: "/mies.",
-    description: "Kompleksowa obsługa dla rozwijających się firm",
-    features: [
-      "Prowadzenie 3 profili social media",
-      "16 postów miesięcznie",
-      "Kampanie Google Ads (budżet do 2000 zł)",
-      "Kampanie Meta Ads (budżet do 2000 zł)",
-      "Pozycjonowanie SEO",
-      "Content marketing (2 artykuły/mies.)",
-      "Raport tygodniowy",
-      "Dedykowany opiekun",
-    ],
-    popular: true,
-  },
-  {
-    name: "Premium",
-    icon: Crown,
-    price: "9 999",
-    period: "/mies.",
-    description: "Pełna obsługa marketingowa dla ambitnych firm",
-    features: [
-      "Prowadzenie wszystkich profili social media",
-      "Nieograniczona liczba postów",
-      "Kampanie Google Ads (budżet do 10 000 zł)",
-      "Kampanie Meta Ads (budżet do 10 000 zł)",
-      "Zaawansowane pozycjonowanie SEO",
-      "Content marketing (8 artykułów/mies.)",
-      "E-mail marketing",
-      "Produkcja video (2 filmy/mies.)",
-      "Raport tygodniowy + call strategiczny",
-      "Dedykowany zespół projektowy",
-    ],
-    popular: false,
-  },
+const pricingFactors = [
+  "liczba kanałów, które prowadzimy (np. sam Facebook i Instagram albo także LinkedIn, Google Ads i SEO),",
+  "częstotliwość publikacji i liczba materiałów graficznych miesięcznie,",
+  "zakres produkcji wideo i zdjęć — dni zdjęciowe, montaż, formaty pionowe,",
+  "budżet reklamowy w Meta Ads i Google Ads (płacisz go bezpośrednio platformom, osobno od naszego wynagrodzenia),",
+  "stan strony internetowej — czy wystarczy optymalizacja, czy potrzebny jest nowy landing page,",
+  "wymagany poziom raportowania i liczba spotkań w miesiącu.",
+];
+
+const cases = [
+  { name: "Enea Stadion Poznań", scope: "strona internetowa i bieżąca obsługa treści", link: "/realizacje/enea-stadion" },
+  { name: "Dawid EDU", scope: "kampania rekrutacyjna Meta Ads", link: "/realizacje/dawid-edu" },
+  { name: "WSB Merito", scope: "spot reklamowy", link: "/realizacje/wsb-merito" },
+  { name: "FPS H. Cegielski", scope: "strona i materiały dla marki przemysłowej", link: "/realizacje/fps-cegielski" },
+  { name: "RPPG", scope: "realizacja dla klienta biznesowego", link: "/realizacje/rppg" },
+  { name: "Klagem", scope: "realizacja dla klienta biznesowego", link: "/realizacje/klagem" },
 ];
 
 const faqItems = [
   {
-    question: "Jakie korzyści przynosi kompleksowa obsługa marketingowa?",
-    answer: "Kompleksowa obsługa marketingowa pozwala na zwiększenie rozpoznawalności marki, pozyskiwanie nowych klientów i wzrost świadomości marki. Dzięki odpowiednim narzędziom i strategiom, takim jak pozycjonowanie w Google czy efektywne kampanie w mediach społecznościowych, firmy mogą skuteczniej konkurować na rynku."
+    question: "Czym jest kompleksowa obsługa marketingowa?",
+    answer: "To model współpracy, w którym jedna agencja marketingowa odpowiada za całość działań firmy w internecie: strategię, social media, kampanie reklamowe, SEO, stronę WWW oraz produkcję zdjęć i wideo. Zamiast kilku dostawców masz jeden zespół, jeden plan i jeden raport.",
   },
   {
-    question: "Co wchodzi w zakres usług kompleksowej obsługi marketingowej?",
-    answer: "W ramach obsługi marketingowej oferujemy: pozycjonowanie stron internetowych, prowadzenie kampanii reklamowych w mediach społecznościowych, copywriting, tworzenie i zarządzanie landing page, produkcję video oraz opracowywanie strategii marketingowej skrojonej na miarę potrzeb Twojej firmy."
+    question: "Ile kosztuje usługa marketingowa?",
+    answer: "Nie publikujemy stałego cennika, bo koszt zależy od liczby kanałów, ilości treści, produkcji wideo i wielkości budżetu reklamowego. Po krótkiej rozmowie i audycie przygotowujemy wycenę z miesięcznym zakresem prac. Budżet na reklamy w Meta Ads i Google Ads jest rozliczany osobno, bezpośrednio z platformami.",
   },
   {
-    question: "Dlaczego social media jest ważne dla małych firm?",
-    answer: "Social media marketing jest kluczowym elementem strategii, ponieważ pozwala na bezpośredni kontakt z klientami, budowanie relacji i zwiększanie zaangażowania. Platformy takie jak Facebook, Instagram czy LinkedIn umożliwiają dotarcie do dużej grupy potencjalnych klientów."
+    question: "Czym zajmuje się agencja reklamowa, a czym agencja marketingowa full service?",
+    answer: "Agencja reklamowa zwykle tworzy kampanie i kreacje. Agencja full service, taka jak FOTZ Studio, prowadzi także strategię, komunikację w social media, SEO, stronę internetową i analitykę — czyli cały marketing firmy, a nie pojedynczą kampanię.",
   },
   {
-    question: "Jak mierzyć efektywność działań marketingowych?",
-    answer: "Efektywność mierzymy przy pomocy narzędzi analitycznych, które dostarczają informacji o zachowaniach użytkowników, reakcjach na kampanie oraz konwersjach. Ustalamy konkretne KPIs takie jak wzrost odwiedzin, liczba leadów czy sprzedaż, a następnie regularnie monitorujemy wyniki."
+    question: "Jakie są narzędzia marketingu, z których korzystacie?",
+    answer: "Na co dzień pracujemy z Meta Business Suite i menedżerem reklam Meta, Google Ads, Google Analytics 4, Google Search Console, narzędziami do analizy słów kluczowych oraz programami do grafiki i montażu wideo. Dobór narzędzi zależy od kanałów, które prowadzimy dla danej firmy.",
   },
   {
-    question: "Czy mała firma bez działu marketingu może skutecznie konkurować?",
-    answer: "Tak! Mała firma bez własnego działu marketingu może efektywnie konkurować, korzystając z profesjonalnych usług agencji. Oferujemy kompleksowe usługi od analizy rynku, przez strategię, aż po realizację kampanii, co pozwala nawet małym firmom budować obecność online."
+    question: "Jak stworzyć strategię marketingową?",
+    answer: "Zaczynamy od celów biznesowych i opisu klientów, potem analizujemy konkurencję i obecne kanały. Na tej podstawie wybieramy, gdzie warto być, jaki komunikat kierować do poszczególnych grup docelowych i jak mierzyć efekty. Strategię zamieniamy w miesięczny plan działań, który można ocenić po wynikach.",
   },
   {
-    question: "Co to jest lead w marketingu internetowym?",
-    answer: "Lead to potencjalny klient, który wyraził zainteresowanie produktem lub usługą poprzez wykonanie akcji - zapisanie się na newsletter, wypełnienie formularza czy pobranie materiałów. Pozyskiwanie leadów jest kluczowym elementem strategii marketingowych."
+    question: "Czy gwarantujecie wzrost sprzedaży?",
+    answer: "Nie gwarantujemy konkretnych wyników sprzedażowych ani pozycji w Google, bo zależą one także od oferty, cen, konkurencji i obsługi klienta. Możemy natomiast obiecać rzetelnie wykonaną pracę, przejrzysty raport i rekomendacje oparte na danych.",
   },
   {
-    question: "Jak copywriting wspiera działania marketingowe?",
-    answer: "Profesjonalne teksty wpływają na pozycjonowanie strony w Google, angażowanie odbiorców i przekonywanie ich do działania. Dobre treści budują wizerunek eksperta, wzmacniają branding i skutecznie komunikują zalety oferowanych produktów lub usług."
+    question: "Czy obsługujecie firmy spoza Poznania?",
+    answer: "Tak. Zespół FOTZ Studio pracuje w Poznaniu, a firmy z innych miast obsługujemy zdalnie — spotkania odbywają się online, materiały przekazujemy cyfrowo. Ewentualny wyjazd na zdjęcia lub nagrania ustalamy osobno przy wycenie.",
   },
   {
-    question: "Jak długo trwa wdrożenie strategii marketingowej?",
-    answer: "Pełne wdrożenie strategii marketingowej trwa zazwyczaj 4-8 tygodni, w zależności od zakresu działań. Pierwsze efekty w postaci zwiększonego ruchu na stronie i większego zasięgu w social media są widoczne już po 2-4 tygodniach."
-  }
+    question: "Jak długo trwa współpraca z agencją i czy jest okres wypowiedzenia?",
+    answer: "Kompleksowa obsługa to zwykle współpraca miesięczna, bo marketing wymaga czasu na testy i optymalizację. Warunki umowy, w tym okres wypowiedzenia, ustalamy indywidualnie przed startem i zapisujemy je w umowie.",
+  },
+  {
+    question: "Czy mogę zlecić tylko część działań?",
+    answer: "Tak. Jeśli masz własnego specjalistę od social media, możemy przejąć tylko reklamy, SEO albo produkcję wideo. Kompleksowa obsługa marketingowa ma największy sens wtedy, gdy kanałów jest kilka i trzeba je ze sobą połączyć.",
+  },
 ];
 
 const KompleksowaObsluga = () => {
   return (
     <>
       <SEOHead
-        title="Kompleksowa Obsługa Marketingowa Firm | Fotz Studio"
-        description="Kompleksowa obsługa marketingowa firm — marketing 360°: SEO, social media, content, reklamy Google i Meta, produkcja wideo. Jeden partner dla całego marketingu Twojej firmy."
+        title="Kompleksowa obsługa marketingowa — agencja marketingowa FOTZ"
+        description="Kompleksowa obsługa marketingowa to usługa, w której firma dostaje cały marketing: strategię, social media, SEO, stronę, wideo i kampanię Meta lub Google Ads."
         canonical="https://www.fotz-studio.pl/kompleksowa-obsluga-marketingowa"
-        keywords="kompleksowa obsługa marketingowa, pełna obsługa marketingu, agencja marketingowa kompleksowa, marketing 360, outsourcing marketingu"
+        keywords="kompleksowa obsługa marketingowa, agencja marketingowa full service, pełna obsługa marketingu, outsourcing marketingu, usługi marketingowe"
       />
       <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://www.fotz-studio.pl" },
           { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
           { name: "Kompleksowa obsługa", url: "https://www.fotz-studio.pl/kompleksowa-obsluga-marketingowa" }
         ]}/>
-      <ServiceSchema 
+      <ServiceSchema
         name="Kompleksowa obsługa marketingowa"
-        description="Pełna obsługa marketingowa dla małych firm - strategia, social media, SEO, kampanie, content marketing."
+        description="Kompleksowa obsługa marketingowa firm: strategia, social media, kampanie reklamowe, SEO, strony WWW, produkcja wideo i analityka."
         provider="Fotz Studio"
       />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
-      
+
       <OrganizationSchema />
 
-      
       <Layout>
         {/* Hero Section */}
         <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden pt-32 pb-20">
@@ -222,7 +199,7 @@ const KompleksowaObsluga = () => {
             <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#75143F]/30 rounded-full blur-3xl" />
             <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#75143F]/20 rounded-full blur-3xl" />
           </div>
-          
+
           <div className="container-wide px-6 md:px-12 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
               <motion.div
@@ -232,28 +209,29 @@ const KompleksowaObsluga = () => {
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#75143F]/20 border border-[#75143F]/30 text-[#75143F] mb-6"
               >
                 <Target className="w-4 h-4" />
-                <span className="text-sm font-medium">Kompleksowa obsługa</span>
+                <span className="text-sm font-medium">Agencja marketingowa full service</span>
               </motion.div>
-              
+
               <TextReveal>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-                  Kompleksowa Obsługa Marketingowa{" "}
+                  Kompleksowa obsługa marketingowa{" "}
                   <span className="bg-gradient-brand bg-clip-text text-transparent">
-                    dla Małych Firm
+                    — usługi marketingowe i reklamowe dla firm
                   </span>
                 </h1>
               </TextReveal>
-              
+
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
                 className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8"
               >
-                W dynamicznie zmieniającym się świecie marketingu cyfrowego, małe firmy stoją przed wielkimi możliwościami. 
-                Kompleksowa obsługa marketingowa może być kluczem do sukcesu w budowaniu marki i zwiększeniu sprzedaży.
+                FOTZ Studio przejmuje marketing Twojej firmy w całości: strategię, prowadzenie social media,
+                kampanie reklamowe w Meta Ads i Google Ads, SEO, stronę internetową oraz produkcję zdjęć i wideo.
+                Jeden zespół, jeden plan i jeden miesięczny raport.
               </motion.p>
-              
+
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -262,13 +240,13 @@ const KompleksowaObsluga = () => {
               >
                 <Button variant="hero" size="lg" asChild>
                   <Link to="/kontakt" className="group">
-                    Bezpłatna konsultacja
+                    Umów rozmowę o wycenie
                     <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </Button>
                 <Button variant="outline" size="lg" asChild>
-                  <a href="#cennik">
-                    Zobacz pakiety
+                  <a href="#wycena">
+                    Od czego zależy cena
                   </a>
                 </Button>
               </motion.div>
@@ -283,29 +261,32 @@ const KompleksowaObsluga = () => {
               <FadeInView>
                 <div>
                   <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                    Jak rozpocząć{" "}
-                    <span className="bg-gradient-brand bg-clip-text text-transparent">kompleksową obsługę?</span>
+                    Dla jakiej firmy jest{" "}
+                    <span className="bg-gradient-brand bg-clip-text text-transparent">kompleksowa obsługa marketingowa?</span>
                   </h2>
                   <div className="space-y-6 text-muted-foreground">
                     <p>
-                      Pierwszym krokiem jest dokładna <strong className="text-foreground">analiza potrzeb Twojego biznesu</strong> oraz 
-                      określenie celów marketingowych. Zrozumienie kim są Twoi potencjalni klienci i jak najefektywniej do nich dotrzeć.
+                      Najczęściej zgłaszają się do nas firmy, które nie mają własnego działu marketingu, a właściciel
+                      sam „dorzuca” posty i reklamy do codziennych obowiązków. Druga grupa to firmy, które współpracują
+                      z kilkoma podwykonawcami — osobno grafik, osobno ktoś od reklam, osobno ktoś od strony — i tracą
+                      czas na koordynację, a komunikacja marki przestaje być spójna.
                     </p>
                     <p>
-                      Kompleksowa obsługa powinna obejmować wszystkie aspekty <Link to="/uslugi" className="text-[#75143F] hover:underline">marketingu internetowego</Link> - 
-                      od analizy rynku, przez planowanie strategii, realizację kampanii reklamowych, 
-                      <Link to="/seo/pozycjonowanie" className="text-[#75143F] hover:underline"> optymalizację SEO</Link>, 
-                      <Link to="/social-media/obsluga" className="text-[#75143F] hover:underline"> marketing w social media</Link>, 
-                      aż po analizę i raportowanie wyników.
+                      Obsługujemy firmy usługowe, producentów, szkoły i uczelnie, marki lokalne oraz sklepy internetowe.
+                      Każdej z nich potrzebny jest inny miks kanałów, dlatego zakres działań ustalamy po audycie, a nie
+                      z gotowego pakietu. W jednej branży kluczowe będą treści eksperckie dla klienta biznesowego, w innej rolki
+                      na Instagramie i płatne kampanie lokalne.
                     </p>
                     <p>
-                      Szukaj agencji z doświadczeniem w pracy z małymi firmami, która rozumie ich specyfikę i ograniczenia budżetowe - 
-                      takiej jak <strong className="text-foreground">Fotz Studio</strong>.
+                      W naszym zespole są nie tylko specjalistów od reklamy i{" "}
+                      <Link to="/seo/pozycjonowanie" className="text-[#75143F] hover:underline">pozycjonowania</Link>,
+                      ale też operatorzy kamer, fotografowie i montażyści. Dzięki temu materiały do kampanii powstają
+                      w tym samym zespole, który potem je publikuje i rozlicza.
                     </p>
                   </div>
                 </div>
               </FadeInView>
-              
+
               <FadeInView delay={0.2}>
                 <div className="grid grid-cols-2 gap-4">
                   {benefits.map((benefit, index) => (
@@ -337,17 +318,17 @@ const KompleksowaObsluga = () => {
             <FadeInView>
               <div className="text-center mb-16">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                  Zakres usług marketingowych
+                  Zakres usług: kampania, SEO, social media i treści w jednym miejscu
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Szeroki zakres usług dostosowanych do potrzeb małych i średnich firm
+                  Pełen zakres usług, jaki oferują agencje full service — wybieramy te elementy, które realnie wspierają cele Twojej firmy.
                 </p>
               </div>
             </FadeInView>
-            
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {services.map((service, index) => (
-                <FadeInView key={service.title} delay={index * 0.1}>
+                <FadeInView key={service.title} delay={index * 0.05}>
                   <Link to={service.link}>
                     <motion.div
                       whileHover={{ y: -8 }}
@@ -370,44 +351,61 @@ const KompleksowaObsluga = () => {
           </div>
         </section>
 
-        {/* Brand Building Section */}
+        {/* Channels Section */}
         <section className="py-20 md:py-32 bg-muted/30">
           <div className="container-wide px-6 md:px-12">
             <FadeInView>
               <div className="max-w-4xl mx-auto">
                 <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
-                  Jak agencja marketingowa pomaga{" "}
-                  <span className="bg-gradient-brand bg-clip-text text-transparent">w rozwoju Twojej marki?</span>
+                  Komunikacja online i offline{" "}
+                  <span className="bg-gradient-brand bg-clip-text text-transparent">— jeden kompleksowy plan</span>
                 </h2>
-                
+
                 <div className="space-y-8">
                   <div className="bg-card border border-border rounded-2xl p-8">
-                    <h3 className="text-xl font-semibold mb-4">Kluczowe działania dla małych firm</h3>
-                    <p className="text-muted-foreground mb-4">
-                      Dla małych firm kluczowe są działania umożliwiające budowanie świadomości marki i pozyskiwanie nowych klientów. 
-                      Obejmują one efektywny <strong className="text-foreground">content marketing</strong>, 
-                      obecność w <Link to="/social-media/obsluga" className="text-[#75143F] hover:underline">social media</Link> (Facebook, Instagram), 
-                      a także lokalne <Link to="/seo/pozycjonowanie" className="text-[#75143F] hover:underline">działania SEO</Link>.
-                    </p>
-                  </div>
-                  
-                  <div className="bg-card border border-border rounded-2xl p-8">
-                    <h3 className="text-xl font-semibold mb-4">Budowanie rozpoznawalności w internecie</h3>
-                    <p className="text-muted-foreground mb-4">
-                      Budowanie rozpoznawalności wymaga strategicznego podejścia do content marketingu oraz efektywnego wykorzystania 
-                      kanałów <Link to="/social-media/obsluga" className="text-[#75143F] hover:underline">social media</Link>. 
-                      Tworzenie wartościowych treści odpowiadających na potrzeby klientów, wsparte 
-                      <Link to="/uslugi/produkcja-video" className="text-[#75143F] hover:underline"> kampaniami reklamowymi</Link> w Google Ads czy Meta Ads.
-                    </p>
-                  </div>
-                  
-                  <div className="bg-card border border-border rounded-2xl p-8">
-                    <h3 className="text-xl font-semibold mb-4">Profesjonalna strona internetowa</h3>
+                    <h3 className="text-xl font-semibold mb-4">Ruch organiczny i płatny</h3>
                     <p className="text-muted-foreground">
-                      <Link to="/uslugi/strony-internetowe" className="text-[#75143F] hover:underline">Tworzenie stron www</Link> jest kluczowym 
-                      elementem strategii marketingowej. Profesjonalnie zaprojektowana strona buduje pozytywny wizerunek marki i stanowi 
-                      platformę do komunikacji z klientami. <Link to="/seo/pozycjonowanie" className="text-[#75143F] hover:underline">Optymalizacja pod kątem SEO</Link> pozwala 
-                      łatwiej dotrzeć do potencjalnych klientów przez wyszukiwarki.
+                      SEO i content marketing budują widoczność w wynikach wyszukiwania na dłuższą metę, a kampanie
+                      płatne dają ruch od pierwszego dnia. W kompleksowej obsłudze planujemy oba źródła razem:
+                      reklamy w Google Ads testują frazy, a te, które przynoszą zapytania, rozwijamy w treściach
+                      na stronie. Dzięki temu budżet nie jest wydawany w oderwaniu od reszty działań.
+                    </p>
+                  </div>
+
+                  <div className="bg-card border border-border rounded-2xl p-8">
+                    <h3 className="text-xl font-semibold mb-4">Social media i reklama Meta Ads</h3>
+                    <p className="text-muted-foreground">
+                      Organiczne{" "}
+                      <Link to="/social-media/obsluga" className="text-[#75143F] hover:underline">prowadzenie social media</Link>{" "}
+                      buduje świadomość marki i zaufanie, a{" "}
+                      <Link to="/kampanie-reklamowe" className="text-[#75143F] hover:underline">kampanie reklamowe</Link>{" "}
+                      w Facebook Ads i na Instagramie pozwalają docierać do Twojej grupy docelowej z konkretną ofertą.
+                      Najlepiej działające posty wykorzystujemy jako reklamy, a dane z kampanii podpowiadają, jakie
+                      treści publikować dalej. Dla firm z sektora B2B prowadzimy też komunikację ekspercką w kanałach biznesowych.
+                    </p>
+                  </div>
+
+                  <div className="bg-card border border-border rounded-2xl p-8">
+                    <h3 className="text-xl font-semibold mb-4">Strona internetowa jako centrum działań</h3>
+                    <p className="text-muted-foreground">
+                      Wszystkie kanały kierują klienta w jedno miejsce — na stronę albo{" "}
+                      <Link to="/uslugi/landing-page" className="text-[#75143F] hover:underline">landing page</Link>.
+                      Jeśli strona nie zamienia ruchu na stronie w zapytania, nawet efektywny marketing online traci sens.
+                      Dlatego w ramach obsługi dbamy o szybkość, poprawki optymalizacji technicznej, formularze i pomiar konwersji,
+                      a w razie potrzeby projektujemy{" "}
+                      <Link to="/uslugi/strony-internetowe" className="text-[#75143F] hover:underline">nową stronę internetową</Link>.
+                    </p>
+                  </div>
+
+                  <div className="bg-card border border-border rounded-2xl p-8">
+                    <h3 className="text-xl font-semibold mb-4">Treści wideo i zdjęcia od jednego zespołu</h3>
+                    <p className="text-muted-foreground">
+                      Reklamy i posty potrzebują stałego dopływu materiałów. W FOTZ Studio{" "}
+                      <Link to="/uslugi/produkcja-video" className="text-[#75143F] hover:underline">produkcja wideo</Link>{" "}
+                      i{" "}
+                      <Link to="/uslugi/fotografia" className="text-[#75143F] hover:underline">fotografia</Link>{" "}
+                      są częścią tej samej usługi — planujemy dzień zdjęciowy tak, żeby powstały z niego rolki do social
+                      media, kreacje reklamowe i zdjęcia na stronę. Spójny styl graficzny wzmacnia rozpoznawalność marki także poza internetem: na banerach, ekranach czy materiałach drukowanych.
                     </p>
                   </div>
                 </div>
@@ -421,13 +419,13 @@ const KompleksowaObsluga = () => {
           <div className="container-wide px-6 md:px-12">
             <FadeInView>
               <div className="text-center mb-16">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">Jak wygląda nasza współpraca?</h2>
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">Jak wygląda współpraca z agencją marketingową FOTZ?</h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Przejrzysty proces od analizy do osiągania rezultatów
+                  Od pierwszej rozmowy do comiesięcznej optymalizacji — każdy etap ma jasny zakres i odpowiedzialną osobę.
                 </p>
               </div>
             </FadeInView>
-            
+
             <div className="grid md:grid-cols-4 gap-8">
               {processSteps.map((step, index) => (
                 <FadeInView key={step.step} delay={index * 0.1}>
@@ -441,87 +439,133 @@ const KompleksowaObsluga = () => {
                 </FadeInView>
               ))}
             </div>
+
+            <FadeInView delay={0.3}>
+              <div className="max-w-3xl mx-auto mt-16 space-y-4 text-muted-foreground">
+                <p>
+                  Spotkania w Poznaniu umawiamy po uzgodnieniu terminu, a z firmami z innych miast pracujemy zdalnie:
+                  rozmowy prowadzimy online, a pliki, akceptacje i raporty przekazujemy cyfrowo. Komunikacja odbywa się
+                  przez jednego opiekuna, który zna Twój projekt i odpowiada za terminy całego zespołu.
+                </p>
+                <p>
+                  Każdy miesiąc zaczyna się od planu: harmonogramu publikacji, listy materiałów do produkcji i podziału
+                  budżetu między kampanie. Kończy się raportem, w którym pokazujemy liczby z narzędzi analitycznych,
+                  opisujemy, co zadziałało, a co nie, i proponujemy zmiany na kolejny miesiąc. Zarządzanie kontami
+                  reklamowymi odbywa się na Twoich kontach firmowych, więc dostęp do danych zostaje po Twojej stronie.
+                </p>
+              </div>
+            </FadeInView>
           </div>
         </section>
 
-        {/* Pricing Section */}
-        <section id="cennik" className="py-20 md:py-32 bg-muted/30">
+        {/* Pricing factors Section */}
+        <section id="wycena" className="py-20 md:py-32 bg-muted/30">
+          <div className="container-wide px-6 md:px-12">
+            <div className="max-w-4xl mx-auto">
+              <FadeInView>
+                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
+                  Cennik i budżet —{" "}
+                  <span className="bg-gradient-brand bg-clip-text text-transparent">ile kosztuje agencja marketingowa?</span>
+                </h2>
+                <p className="text-muted-foreground mb-8 text-center">
+                  Nie mamy jednego cennika dla wszystkich, bo każda firma potrzebuje innego zakresu. Miesięczne
+                  wynagrodzenie agencji wyceniamy po audycie, na podstawie konkretnego zakresu działań.
+                </p>
+              </FadeInView>
+
+              <FadeInView delay={0.1}>
+                <div className="bg-card border border-border rounded-2xl p-8">
+                  <h3 className="text-xl font-semibold mb-4">Od czego zależy wycena usługi marketingowej</h3>
+                  <ul className="space-y-3">
+                    {pricingFactors.map((factor) => (
+                      <li key={factor} className="flex gap-3 text-muted-foreground">
+                        <CheckCircle className="w-5 h-5 text-[#75143F] flex-shrink-0 mt-0.5" />
+                        <span>{factor}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <p className="text-muted-foreground mt-6">
+                    W wycenie rozdzielamy trzy pozycje: jednorazowe przygotowanie (audyt, strategia, konfiguracja analityki,
+                    ewentualnie landing page), stałą miesięczną obsługę oraz budżet reklamowy. Dzięki temu wiesz, ile
+                    płacisz za pracę zespołu, a ile trafia bezpośrednio do platform reklamowych. Zwrot z inwestycji
+                    oceniamy wspólnie na podstawie danych o zapytaniach i sprzedaży, które masz po swojej stronie.
+                  </p>
+                </div>
+              </FadeInView>
+
+              <FadeInView delay={0.2}>
+                <div className="mt-10 text-center">
+                  <Button variant="hero" size="lg" asChild>
+                    <Link to="/kontakt" className="group">
+                      Poproś o wycenę
+                      <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+                    </Link>
+                  </Button>
+                </div>
+              </FadeInView>
+            </div>
+          </div>
+        </section>
+
+        {/* How to choose */}
+        <section className="py-20 md:py-32">
           <div className="container-wide px-6 md:px-12">
             <FadeInView>
-              <div className="text-center mb-16">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                  Pakiety{" "}
-                  <span className="bg-gradient-brand bg-clip-text text-transparent">kompleksowej obsługi</span>
+              <div className="max-w-4xl mx-auto">
+                <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
+                  Jak wybrać agencję marketingową lub agencję reklamową?
                 </h2>
+                <div className="space-y-6 text-muted-foreground">
+                  <p>
+                    Dobra agencja zaczyna od pytań o Twój biznes, a nie od listy pakietów. Zanim podpiszesz umowę,
+                    sprawdź, czy agencja pokazuje prawdziwe realizacje, czy potrafi wyjaśnić, jak mierzy efekty, i czy
+                    konta reklamowe oraz analityka będą założone na Twoją firmę. To ostatnie jest ważne — po zakończeniu
+                    współpracy dane i historia kampanii powinny zostać u Ciebie.
+                  </p>
+                  <p>
+                    Zwróć uwagę na to, kto będzie wykonywał pracę. W wielu agencjach produkcja wideo, zdjęcia czy strona
+                    są zlecane dalej. W FOTZ Studio większość tych elementów robimy sami, a przy usługach, których
+                    nie wykonujemy w zespole, mówimy o tym wprost przed startem.
+                  </p>
+                  <p>
+                    Nie ufaj obietnicom konkretnego wzrostu sprzedaży albo pierwszego miejsca w Google w krótkim czasie.
+                    Uczciwy wykonawca może obiecać rzetelną pracę, systematyczne testy i jasne
+                    raporty, ale nie wynik, na który wpływa też oferta, cena, konkurencja i obsługa klienta po Twojej stronie.
+                  </p>
+                </div>
+              </div>
+            </FadeInView>
+          </div>
+        </section>
+
+        {/* Cases Section */}
+        <section className="py-20 md:py-32 bg-muted/30">
+          <div className="container-wide px-6 md:px-12">
+            <FadeInView>
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">Wybrane realizacje — klient, branża i zakres prac</h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Wybierz pakiet dopasowany do potrzeb i możliwości Twojej firmy
+                  Projekty, przy których łączyliśmy produkcję treści, strony internetowe i kampanie. Szczegóły znajdziesz w opisach realizacji.
                 </p>
               </div>
             </FadeInView>
-            
-            <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-              {pricingPackages.map((pkg, index) => (
-                <FadeInView key={pkg.name} delay={index * 0.1}>
-                  <motion.div
-                    whileHover={{ y: -8 }}
-                    className={`relative bg-card border rounded-2xl p-8 h-full flex flex-col ${
-                      pkg.popular 
-                        ? "border-[#75143F] ring-2 ring-[#75143F]/20" 
-                        : "border-border hover:border-[#75143F]/50"
-                    } transition-all duration-300`}
-                  >
-                    {pkg.popular && (
-                      <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-gradient-brand rounded-full text-white text-xs font-medium">
-                        Najpopularniejszy
-                      </div>
-                    )}
-                    
-                    <div className="mb-6">
-                      <div className="w-12 h-12 rounded-xl bg-gradient-brand flex items-center justify-center mb-4">
-                        <pkg.icon className="w-6 h-6 text-white" />
-                      </div>
-                      <h3 className="text-2xl font-bold mb-1">{pkg.name}</h3>
-                      <p className="text-sm text-muted-foreground">{pkg.description}</p>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+              {cases.map((item, index) => (
+                <FadeInView key={item.name} delay={index * 0.05}>
+                  <Link to={item.link} className="block bg-card border border-border rounded-2xl p-6 h-full hover:border-[#75143F]/50 transition-all group">
+                    <h3 className="text-lg font-semibold mb-2 group-hover:text-[#75143F] transition-colors">{item.name}</h3>
+                    <p className="text-sm text-muted-foreground">{item.scope}</p>
+                    <div className="mt-4 flex items-center text-[#75143F] text-sm font-medium">
+                      Zobacz realizację
+                      <ArrowRight className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" />
                     </div>
-                    
-                    <div className="mb-6">
-                      <span className="text-4xl font-bold">{pkg.price}</span>
-                      <span className="text-muted-foreground"> zł{pkg.period}</span>
-                    </div>
-                    
-                    <ul className="space-y-3 mb-8 flex-1">
-                      {pkg.features.map((feature, i) => (
-                        <li key={i} className="flex gap-2 text-sm">
-                          <CheckCircle className="w-4 h-4 text-[#75143F] flex-shrink-0 mt-0.5" />
-                          <span>{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                    
-                    <Button 
-                      variant={pkg.popular ? "hero" : "outline"} 
-                      className="w-full" 
-                      asChild
-                    >
-                      <Link to="/kontakt">
-                        Wybierz pakiet
-                      </Link>
-                    </Button>
-                  </motion.div>
+                  </Link>
                 </FadeInView>
               ))}
             </div>
-            
-            <FadeInView delay={0.4}>
-              <div className="mt-12 text-center">
-                <p className="text-muted-foreground">
-                  Potrzebujesz indywidualnej wyceny?{" "}
-                  <Link to="/kontakt" className="text-[#75143F] hover:underline font-medium">
-                    Skontaktuj się z nami
-                  </Link>
-                </p>
-              </div>
-            </FadeInView>
+            <div className="mt-10 text-center">
+              <Link to="/realizacje" className="text-[#75143F] hover:underline font-medium">Wszystkie realizacje →</Link>
+            </div>
           </div>
         </section>
 
@@ -530,13 +574,13 @@ const KompleksowaObsluga = () => {
           <div className="container-wide px-6 md:px-12">
             <FadeInView>
               <div className="text-center mb-16">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">Często zadawane pytania</h2>
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">Często zadawane pytania o kompleksową obsługę marketingową</h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Odpowiedzi na najczęstsze pytania o kompleksową obsługę marketingową
+                  Odpowiedzi na pytania, które klienci zadają nam przed rozpoczęciem współpracy.
                 </p>
               </div>
             </FadeInView>
-            
+
             <div className="max-w-3xl mx-auto">
               <Accordion type="single" collapsible className="space-y-4">
                 {faqItems.map((item, index) => (
@@ -565,17 +609,18 @@ const KompleksowaObsluga = () => {
                   <div className="absolute top-0 right-0 w-96 h-96 bg-white/30 rounded-full blur-3xl" />
                   <div className="absolute bottom-0 left-0 w-96 h-96 bg-white/20 rounded-full blur-3xl" />
                 </div>
-                
+
                 <div className="relative z-10">
                   <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-                    Gotowy na wzrost Twojej firmy?
+                    Porozmawiajmy o marketingu Twojej firmy
                   </h2>
                   <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8">
-                    Umów się na bezpłatną konsultację i dowiedz się, jak kompleksowa obsługa marketingowa może pomóc w rozwoju Twojego biznesu.
+                    Opisz krótko firmę i cele. Odezwiemy się, żeby umówić rozmowę, a po audycie przygotujemy propozycję
+                    zakresu kompleksowej obsługi marketingowej wraz z wyceną.
                   </p>
                   <Button variant="secondary" size="lg" asChild>
                     <Link to="/kontakt" className="group">
-                      Umów bezpłatną konsultację
+                      Przejdź do kontaktu
                       <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
                     </Link>
                   </Button>
@@ -595,60 +640,89 @@ const KompleksowaObsluga = () => {
             className="prose prose-lg max-w-none"
           >
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-              Kompleksowa obsługa marketingowa — marketing 360° dla firm
+              Outsourcing marketingu — zewnętrzny dział marketingowy zamiast etatu
             </h2>
             <p className="text-muted-foreground mb-4">
-              Kompleksowa obsługa marketingowa firm to model współpracy, w którym Fotz Studio
-              staje się zewnętrznym działem marketingu Twojej firmy. Zarządzamy całością
-              działań: SEO i pozycjonowanie, kampanie reklamowe Google Ads i Meta Ads,
-              social media marketing, content marketing, produkcja wideo i grafika.
-              Marketing 360° to synergia wszystkich kanałów — efekty wielokrotnie wyższe
-              niż suma działań osobnych.
+              Zatrudnienie jednej osoby do marketingu rzadko wystarcza: trudno znaleźć kogoś, kto jednocześnie
+              ustawi kampanie, napisze teksty, zaprojektuje grafiki, nagra wideo i zadba o SEO. Outsourcing marketingu
+              do agencji daje dostęp do kilku specjalistów naraz, a firma płaci za ustalony zakres pracy, nie za etaty.
+              Taki kompleksowy model jest szczególnie dobry dla firm, które chcą działać w kilku kanałach,
+              ale nie planują budować własnego zespołu. Usługa obejmuje działania marketingowe od planu po raport.
             </p>
             <p className="text-muted-foreground mb-6">
-              Zamiast koordynować kilku dostawców — jedną agencję SEO, inną do social media,
-              inne studio wideo — zlecasz wszystko jednemu partnerowi. Oszczędzasz czas,
-              pieniądze i masz spójną komunikację marki we wszystkich kanałach.
+              Nie oznacza to, że tracisz kontrolę. Akceptujesz strategię, harmonogram publikacji i kreacje reklamowe,
+              a raz w miesiącu dostajesz podsumowanie działań. Jeśli masz w firmie osobę od marketingu, możemy z nią
+              współpracować — przejmujemy wtedy produkcję treści i płatne kampanie, a ona zostaje głosem marki
+              i pierwszym kontaktem dla klientów.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
-              Outsourcing marketingu — zewnętrzny dział marketingu dla Twojej firmy
+              Strategie marketingowe powiązane z celami sprzedażowymi
             </h2>
             <p className="text-muted-foreground mb-4">
-              Outsourcing marketingu to rozwiązanie idealne dla firm, które chcą
-              profesjonalnych działań marketingowych bez kosztów zatrudniania
-              in-house marketerów. Zewnętrzny dział marketingu Fotz Studio to doświadczony
-              zespół specjalistów SEO, social media managerów, copywriterów i grafików —
-              za ułamek kosztów budowania własnego działu.
+              Dobra strategia zaczyna się od pytania, co ma się wydarzyć w firmie: więcej zapytań o konkretną usługę,
+              rekrutacja uczniów lub pracowników, sprzedaż w sklepie internetowym czy budowanie rozpoznawalności marki
+              przed wejściem na nowy rynek. Od tego zależy wybór kanałów, komunikat i sposób pomiaru. Inaczej
+              planujemy działania dla firmy, która sprzedaje produkty online, a inaczej dla marki, która pozyskuje
+              klientów biznesowych przez LinkedIn i polecenia.
+            </p>
+            <p className="text-muted-foreground mb-4">
+              W strategii opisujemy grupy docelowe, potrzeby klientów, przewagi oferty i ton komunikacji. Następnie
+              rozpisujemy plan: jakie treści publikujemy, które kampanie uruchamiamy, jaki budżet przypada na każdy
+              kanał i jakie wskaźniki będą sygnałem, że trzeba coś zmienić. Planowanie na kwartał z miesięcznymi
+              korektami pozwala reagować na sezonowość i dane z kampanii.
             </p>
             <p className="text-muted-foreground mb-6">
-              Stała kompleksowa obsługa marketingowa obejmuje: miesięczną strategię
-              działań, cotygodniowe posty i treści, raportowanie wyników, optymalizację
-              kampanii i reakcję na zmiany rynkowe. Reagujemy elastycznie na potrzeby
-              Twojego biznesu.
+              Tam, gdzie to ma sens, proponujemy proste automatyzacje — np. przekazywanie zapytań z formularzy
+              i reklam leadowych do skrzynki lub CRM, tak aby żaden kontakt nie czekał na odpowiedź. Zakres takich
+              wdrożeń ustalamy przy wycenie.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
-              Strategia marketingowa i realizacja — marketing dla małych i średnich firm
+              Co obejmuje miesięczny plan marketingowy dla klienta?
             </h2>
             <p className="text-muted-foreground mb-4">
-              Kompleksowy marketing dla małych i średnich firm to nasza specjalność.
-              Wiemy, że budżety są ograniczone, dlatego priorytetyzujemy działania
-              z najwyższym ROI. Zaczynamy od audytu obecnej sytuacji, opracowujemy
-              realną strategię marketingową i wdrażamy ją krok po kroku.
+              Każdy klient dostaje plan marketingowy dopasowany do tego, co sprzedaje i komu. Inaczej wygląda marketing
+              firmy usługowej, która chce pozyskiwać potencjalnych klientów z okolicy, a inaczej producenta, który
+              buduje rozpoznawalność marki wśród klientów biznesowych. Dlatego zanim zaproponujemy zakres, robimy
+              analizę potrzeb klientów, oferty produktów i usług oraz tego, jak konkurencja komunikuje się w danej branży.
+            </p>
+            <p className="text-muted-foreground mb-4">
+              Typowy miesiąc kompleksowej obsługi to: harmonogram publikacji i materiały graficzne, nagrania lub
+              zdjęcia do treści, co najmniej jedna kampania reklamowa z jasno określonym celem, prace SEO na stronie
+              i raport marketingowy z wnioskami. Kampania może mieć cel sprzedażowy (zapytania, zakupy, zapisy),
+              wizerunkowy (budować świadomość marki w nowej grupie odbiorców) albo rekrutacyjny. W celach marketingowych
+              zapisujemy wskaźniki, po których ocenimy efekt — na przykład liczbę zapytań z formularza czy rozmów
+              telefonicznych, a nie wyłącznie zasięg.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Wybór kanałów też ma znaczenie, bo nie każda firma musi być na wszystkich portalach, a każda platforma wymaga innych treści. Lepszy jest
+              spójny przekaz w dwóch dobrze prowadzonych kanałach niż sporadyczna obecność w pięciu. Marketingu online
+              nie traktujemy jako osobnego świata — jeśli promujesz wydarzenie, otwarcie lokalu albo nowy produkt lub
+              usługę, materiały z sesji przygotujemy również do druku i na ekrany.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Marketing cyfrowy w Poznaniu i zdalnie — miesięczny plan dla firm
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Zespół FOTZ Studio pracuje w Poznaniu, więc z lokalnymi firmami łatwo spotykamy się na żywo i realizujemy
+              sesje zdjęciowe czy nagrania na miejscu. Firmy z innych miast obsługujemy zdalnie — strategia, kampanie
+              Meta Ads i Google Ads, SEO czy prowadzenie profili nie wymagają naszej obecności w biurze klienta.
+              Wyjazd na zdjęcia lub nagrania poza Poznań wyceniamy osobno.
             </p>
             <p className="text-muted-foreground">
-              Fotz Studio obsługuje firmy z branży usługowej, e-commerce, deweloperskiej,
-              medycznej i wielu innych. Skontaktuj się z nami po bezpłatną wycenę
-              kompleksowej obsługi marketingowej i dowiedz się, jak możemy przyspieszyć
-              wzrost Twojego biznesu.
+              Jeśli chcesz sprawdzić, czy kompleksowa obsługa marketingowa ma sens w Twojej sytuacji, napisz do nas.
+              Po rozmowie wskażemy, od których działań warto zacząć, a które mogą poczekać, i przygotujemy wycenę
+              dopasowaną do budżetu firmy.
             </p>
-          
+
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
               <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
               <Link to="/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
-              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
-              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/social-media/obsluga" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+              <Link to="/content-marketing/strategia" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/agencja-marketingowa-poznan" className="text-primary hover:underline font-medium text-sm">→ Agencja marketingowa Poznań</Link>
             </div>
           </motion.div>
         </div>

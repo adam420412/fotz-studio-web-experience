@@ -1,283 +1,190 @@
-import { SEOHead } from "@/components/seo/SEOHead";
-import { Layout } from "@/components/layout/Layout";
-import { Button } from "@/components/ui/button";
+import { enquiryHref } from "@/lib/enquiry.mjs";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import { 
-  Globe, Search, ShoppingCart, Palette, MessageSquare, Settings, TrendingUp, Handshake, Phone, Smartphone, Shield, Headphones, ArrowRight, Sparkles, Target, Code2, Layers, Rocket, Star, Clock
-} from "lucide-react";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
-import { ContactSection } from "@/components/sections/ContactSection";
-import { CityServicesGrid } from "@/components/sections/CityServicesGrid";
-import { CityPricingCards } from "@/components/sections/CityPricingCards";
-import { CityIntroSection } from "@/components/sections/CityIntroSection";
-import { CityBenefitsSection } from "@/components/sections/CityBenefitsSection";
-import { CityLinksSection } from "@/components/sections/CityLinksSection";
+import { Layout } from "@/components/layout/Layout";
+import { SEOHead } from "@/components/seo/SEOHead";
+import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
+import { QuoteOptions, websiteOptions } from "@/components/QuoteOptions";
+import eneaStadion from "@/assets/portfolio/enea-stadion-web.webp";
+import fpsCegielski from "@/assets/portfolio/fps-cegielski-web.webp";
+import klagem from "@/assets/portfolio/klagem-web.webp";
 
-import apartamentyImg from "@/assets/portfolio/apartamenty-chorwacja-web.webp";
-import victoryCarsImg from "@/assets/portfolio/victory-cars-web.webp";
-import cuteDumplingImg from "@/assets/portfolio/cute-dumpling-new-web.webp";
+type Section = { title: string; text: string; points?: string[]; href?: string; link?: string };
 
-const StronyInternetoweWroclaw = () => {
-  const services = [
-    { icon: Globe, title: "Strony internetowe", desc: "Profesjonalne strony www oraz sklepy internetowe dla firm z Wrocławia." },
-    { icon: Search, title: "Pozycjonowanie SEO", desc: "Optymalizacja SEO zwiększająca widoczność w wyszukiwarce Google." },
-    { icon: Palette, title: "Projektowanie UI/UX", desc: "Nowoczesne strony internetowe z naciskiem na użytkownika." },
-    { icon: ShoppingCart, title: "Sklepy e-commerce", desc: "Tworzenie sklepów internetowych z pełnymi integracjami." },
-    { icon: MessageSquare, title: "Systemy CMS", desc: "WordPress, Webflow, Shopify i dedykowane rozwiązania." },
-    { icon: TrendingUp, title: "Optymalizacja konwersji", desc: "Strony, które zamieniają odwiedzających w klientów." },
-  ];
-
-  const pricing = [
-    { title: "Landing Page", desc: "Strona wizytówkowa prezentująca firmę", price: "Wycena indywidualna", features: ["Do 5 podstron", "Responsywny design", "Podstawowe SEO", "Formularz kontaktowy", "Certyfikat SSL"] },
-    { title: "Strona Firmowa", desc: "Rozbudowana strona z dodatkowymi funkcjami", price: "Wycena indywidualna", popular: true, features: ["Do 15 podstron", "Zaawansowane SEO", "Blog firmowy", "Integracja social media", "System CMS", "Wsparcie techniczne"] },
-    { title: "Sklep E-commerce", desc: "Platforma sprzedażowa z integracjami", price: "Wycena indywidualna", features: ["Nieograniczona liczba produktów", "Panel administracyjny", "Integracje płatności", "Optymalizacja konwersji", "Narzędzia marketingowe"] },
-  ];
-
-  const processSteps = [
-    { icon: Target, step: "01", title: "Brief i analiza", desc: "Poznajemy cele biznesowe i specyfikę Twojej firmy we Wrocławiu." },
-    { icon: Palette, step: "02", title: "Projekt UX/UI", desc: "Zaprojektowanie strony z naciskiem na użyteczność i estetykę." },
-    { icon: Code2, step: "03", title: "Programowanie", desc: "Profesjonalne tworzenie stron www z dbałością o kod." },
-    { icon: Rocket, step: "04", title: "Testy i wdrożenie", desc: "Testujemy i uruchamiamy Twoją stronę internetową." },
-  ];
-
-  const caseStudies = [
-    { title: "Apartamenty Chorwacja", category: "Strona rezerwacyjna", result: "+180% rezerwacji online", link: "/realizacje/apartamenty-chorwacja", image: apartamentyImg },
-    { title: "Victory Cars", category: "Strona motoryzacyjna", result: "Nowoczesny design premium", link: "/realizacje/victory-cars", image: victoryCarsImg },
-    { title: "Cute Dumpling", category: "Strona gastronomiczna", result: "+250% ruchu organicznego", link: "/realizacje/cute-dumpling", image: cuteDumplingImg },
-  ];
-
-  const faqItems = [
-    { question: "Jakie są korzyści z posiadania strony internetowej dla firm we Wrocławiu?", answer: "Posiadanie strony internetowej dla firm przynosi wiele korzyści: zwiększenie widoczności online, budowanie wiarygodności, możliwość prezentacji oferty 24/7, łatwiejszy kontakt z klientami oraz potencjalne zwiększenie sprzedaży." },
-    { question: "Dlaczego warto skorzystać z usług profesjonalnej agencji?", answer: "Profesjonalna agencja zapewnia kompleksowe podejście do projektowania i tworzenia stron internetowych. Eksperci zadbają o estetykę, funkcjonalność i optymalizację strony." },
-    { question: "Czy oferujecie tworzenie sklepów internetowych we Wrocławiu?", answer: "Tak, specjalizujemy się w tworzeniu sklepów internetowych we Wrocławiu. Nasze usługi obejmują projektowanie i implementację funkcjonalnych platform e-commerce." },
-    { question: "Jak przebiega proces projektowania i tworzenia stron?", answer: "Proces obejmuje kilka etapów: konsultację z klientem, analizę potrzeb, tworzenie projektu graficznego, programowanie, testowanie oraz wdrożenie." },
-    { question: "Ile kosztuje strona internetowa we Wrocławiu?", answer: "Koszt zależy od zakresu, treści i integracji. Prześlij brief, aby otrzymać indywidualną ofertę z harmonogramem i rozpisanymi kosztami." },
-    { question: "Czy oferujecie wsparcie po zakończeniu projektu?", answer: "Tak, zapewniamy wsparcie techniczne i konsultacje po zakończeniu projektu. Oferujemy również usługi utrzymania i aktualizacji stron www." },
-  ];
-
-  const stats = [
-    { value: "WWW", label: "Strony i sklepy", icon: Layers },
-    { value: "UX", label: "Projekt dla odbiorcy", icon: Star },
-    { value: "5 lat", label: "Doświadczenia", icon: Clock },
-    { value: "Kontakt", label: "Uzgodniona opieka", icon: Headphones },
-  ];
-
-  const benefits = [
-    "Doświadczenie na wrocławskim rynku",
-    "Kompleksowa obsługa od projektu po wdrożenie",
-    "SEO w standardzie każdej strony",
-    "Responsywny design mobile-first",
-    "Wsparcie techniczne po uruchomieniu",
-    "Konkurencyjne ceny bez ukrytych kosztów"
-  ];
-
-  const introContent = {
-    title: "Tworzenie stron www dla firm z Wrocławia",
-    paragraphs: [
-      "W dobie intensywnej rywalizacji na rynku cyfrowym, projektowanie i tworzenie stron odgrywa kluczową rolę w budowaniu wizerunku każdej firmy.",
-      "Profesjonalna strona internetowa to nie tylko wizytówka przedsiębiorstwa, ale i efektywne narzędzie do pozyskiwania klientów we Wrocławiu.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych.",
-      "Wrocław to centrum technologiczne Dolnego Śląska z setkami firm IT, start-upów i korporacji. Profesjonalna strona internetowa to Twój cyfrowy ambasador na tym wymagającym, nowoczesnym rynku."
+const sections: Section[] = [
+  {
+    title: "Tworzenie stron www Wrocław — jak współpracujemy z klientem zdalnie?",
+    text: "Zespół FOTZ Studio pracuje w Poznaniu, a firmy z Wrocławia obsługujemy zdalnie. Brief, prezentację projektu i akceptacje prowadzimy na spotkaniach online, a teksty, logo i zdjęcia przesyłasz nam w formie cyfrowej. Każdy etap kończy się krótkim podsumowaniem na piśmie, więc wiadomo, co zostało zatwierdzone i co dzieje się dalej. Pierwsza rozmowa dotyczy celu strony: kto ma ją odwiedzić i jaki krok powinien wykonać — zadzwonić, wysłać zapytanie, zarezerwować termin albo kupić produkt. Na tej podstawie planujemy strukturę, czyli listę podstron i kolejność informacji. Potrzeb klienta nie zgadujemy — pytamy o nie wprost, zanim powstanie pierwsza makieta.",
+  },
+  {
+    title: "Profesjonalne tworzenie stron internetowych — co obejmuje realizacja?",
+    text: "Profesjonalne tworzenie stron internetowych zaczyna się od planu, a nie od wyboru szablonu. W zakresie projektu ustalamy treści, funkcjonalność formularzy i sposób mierzenia zapytań. Wykonanie strony internetowej obejmuje też metadane, przekierowania ze starych adresów i przekazanie dostępów do domeny, hostingu i panelu CMS. Każda strona www przed publikacją przechodzi kontrolę linków, formularzy i widoku na urządzeniach mobilnych. Gdy serwis ma rezerwacje lub płatności, testujemy także powiadomienia i potwierdzenia. Zakres dopasowujemy do budżetu i do tego, co firma rzeczywiście wykorzysta.",
+  },
+  {
+    title: "Strony internetowe dla firm we Wrocławiu — dla kogo projektujemy?",
+    text: "Wrocław to miasto z dużym rynkiem usług dla biznesu, firmami technologicznymi, logistyką, przemysłem i silną branżą gastronomiczno-turystyczną. Każda z tych grup ma inny cel strony. Firma B2B potrzebuje jasnego opisu oferty, przykładów zastosowań i formularza dla działu zakupów. Lokal w centrum miasta potrzebuje menu, godzin otwarcia, rezerwacji i dobrej wersji mobilnej. Wiele firm, dla których Wrocław jest siedzibą, współpracuje z partnerami z zagranicy, dlatego wersję angielską lub niemiecką planujemy już na etapie struktury, a nie dopiero po publikacji. Strona internetowa dla firmy ma przede wszystkim pomagać w zdobywaniu nowych klientów i odpowiadać na pytania, które dziś trafiają do Ciebie telefonicznie.",
+  },
+  {
+    title: "Wizytówka, strona firmowa czy sklep internetowy?",
+    text: "Prosta wizytówka wystarczy, gdy klient ma szybko sprawdzić ofertę, dane i sposób kontaktu. Strona firmowa sprawdzi się, gdy masz kilka usług i chcesz pokazać realizacje, zespół oraz odpowiedzi na częste pytania. Landing page wystarczy przy jednej ofercie, kampanii reklamowej albo rekrutacji. Sklep internetowy wymaga katalogu, wariantów produktów, koszyka, płatności i obsługi zamówień, dlatego planujemy go jako osobny projekt. Wybór strony czy sklepu internetowego zależy od tego, jak klienci kupują dziś. Nie proponujemy rozbudowanego serwisu, jeśli na start wystarczy firmowa strona z czytelną ofertą — kolejne podstrony można dodać etapami.",
+    href: "/uslugi/sklepy-internetowe",
+    link: "Sklepy internetowe — zakres wdrożenia",
+  },
+  {
+    title: "Proces tworzenia stron internetowych Wrocław krok po kroku",
+    text: "Proces tworzenia stron internetowych dzielimy na etapy, z akceptacją po każdym z nich. Po briefie przygotowujemy układ kluczowych widoków i plan treści. Potem powstaje projekt graficzny dopasowany do marki: kolorów, typografii, zdjęć i tonu komunikacji. Po zatwierdzeniu projektu strony internetowej przechodzimy do wdrożenia — kodu, CMS, formularzy i integracji. Na końcu sprawdzamy wersje na telefonie, tablecie i komputerze oraz ustalamy z Tobą termin uruchomienia.",
+    points: [
+      "Brief online: cel, odbiorcy, zakres i materiały",
+      "Projekt strony: układ, treść i design",
+      "Wdrożenie: kod, CMS, formularze i integracje",
+      "Testy, publikacja i przekazanie dostępów",
     ],
-    videoSrc: "/videos/fotz-reel.mp4"
-  };
+  },
+  {
+    title: "Projektowanie stron www Wrocław — użyteczność i design",
+    text: "Proces projektowania stron zaczynamy od makiet, a dopiero potem dobieramy kolory i zdjęcia. Sprawdzamy, czy menu jest zrozumiałe, czy numer telefonu i przycisk kontaktu są widoczne i czy formularz nie pyta o zbędne dane. Na rynku, na którym klient porównuje kilka firm w kilka minut, wygrywa zwykle strona, która szybko odpowiada na pytanie „czy to dla mnie i ile to trwa”. Projektujemy tak, aby design wspierał treść, a nie ją zasłaniał. Nowoczesne strony internetowe nie muszą mieć ciężkich animacji — liczy się czytelność i szybki kontakt.",
+  },
+  {
+    title: "Responsywne strony internetowe — mobilny widok i optymalizacja",
+    text: "Dużo wejść pochodzi z telefonów, dlatego strony responsywne projektujemy od widoku mobilnego. Sprawdzamy rozmiar tekstu, wielkość przycisków i działanie menu na różnych ekranach. Na czas ładowania wpływają zdjęcia, skrypty zewnętrzne, hosting i liczba wtyczek, więc optymalizacja obejmuje kompresję grafik i ograniczenie zbędnego kodu. Bezpieczna strona wymaga certyfikatu SSL, aktualizacji i kopii zapasowych — w zakresie prac zapisujemy, kto za nie odpowiada po starcie.",
+  },
+  {
+    title: "WordPress, inny CMS czy rozwiązanie dedykowane?",
+    text: "Technologię dobieramy do tego, jak zespół będzie pracował z treścią. Strony WordPress sprawdzają się, gdy chcesz samodzielnie publikować wpisy, oferty pracy lub realizacje. WordPress z WooCommerce bywa dobrym wyborem przy mniejszym sklepie. Rozwiązanie dedykowane ma sens przy niestandardowych funkcjach, takich jak kalkulator, konfigurator czy integracja z systemem firmy. W wycenie opisujemy, które elementy edytujesz w panelu CMS i czy przekazanie obejmuje szkolenie online.",
+  },
+  {
+    title: "Projektowanie logo, treści i zdjęcia na stronę",
+    text: "Strona potrzebuje konkretnych tekstów, spójnej identyfikacji i prawdziwych zdjęć. Jeśli marka nie ma jeszcze znaku, projektowanie logo i podstawowych elementów graficznych możemy włączyć do zlecenia. Teksty piszemy prostym językiem, z odpowiedziami na pytania, które klienci zadają przez telefon. Oprócz tworzenia stron FOTZ Studio zajmuje się fotografią i produkcją wideo. Jeśli potrzebna jest sesja we Wrocławiu, możliwość i koszt wyjazdu ustalamy osobno przy wycenie; często wystarczą też materiały, które firma już ma.",
+  },
+  {
+    title: "SEO, pozycjonowanie stron i widoczność w wyszukiwarce",
+    text: "Podstawy SEO wdrażamy w trakcie budowania strony: adresy, tytuły, opisy, nagłówki, linkowanie wewnętrzne i dane strukturalne. Przygotowujemy serwis pod kątem wyszukiwarek internetowych, ale samo wdrożenie nie daje wysokiej pozycji. O tym, gdzie pojawią się wyniki wyszukiwania z Twoją firmą, decydują m.in. konkurencja w branży, jakość treści, linki i historia domeny. Jeśli zależy Ci na widoczności strony w Google, pozycjonowanie stron internetowych rozpisujemy jako osobną usługę z własnym zakresem. Nie gwarantujemy konkretnego miejsca w wyszukiwarce — pokazujemy, jakie prace SEO wykonujemy i jak mierzymy postępy.",
+    href: "/seo/pozycjonowanie-wroclaw",
+    link: "Pozycjonowanie stron — Wrocław",
+  },
+  {
+    title: "Nowa strona czy przebudowa — jak nie stracić efektów pozycjonowania?",
+    text: "Jeśli masz już serwis, zaczynamy od przeglądu treści, ruchu i zapytań. Sprawdzamy, które podstrony są odwiedzane i mają linki z innych witryn, żeby nie stracić ich przy zmianie adresów. Czasem lepiej poprawić strukturę i treść niż budować wszystko od nowa. Przed decyzją możemy wykonać audyt SEO, który pokaże problemy techniczne i miejsca do poprawy.",
+    href: "/seo/audyt",
+    link: "Audyt SEO obecnej strony",
+  },
+  {
+    title: "Stworzenie strony internetowej — od czego zależy cena?",
+    text: "Cena strony internetowej zależy od liczby podstron, ilości treści, projektu graficznego i potrzebnych funkcji. Koszt wykonania strony rośnie przy integracjach, wersjach językowych, sklepie lub rezerwacjach. Osobno rozpisujemy koszty utrzymania strony internetowej: domenę, hosting, licencje i opiekę techniczną. Porównując oferty, sprawdź liczbę rund poprawek, prawa do projektu i to, kto po publikacji jest właścicielem dostępów. Dokładna wycena powstaje po briefie.",
+    href: "/cennik-stron-internetowych",
+    link: "Jak wyceniamy strony internetowe",
+  },
+  {
+    title: "Ile trwa realizacja strony?",
+    text: "Czas realizacji zależy od zakresu oraz tempa przekazywania materiałów i decyzji. Prosta wizytówka ma mniej etapów niż serwis z blogiem, wersją językową czy sklepem. Harmonogram rozpisujemy po briefie. Przy pracy zdalnej szczególnie ważne jest, aby po stronie firmy była jedna osoba, która zbiera uwagi i zatwierdza etapy — to najlepiej skraca cały projekt.",
+  },
+  {
+    title: "Agencja interaktywna — projektowanie stron i sklepów internetowych",
+    text: "FOTZ Studio to agencja interaktywna, która łączy projektowanie i tworzenie stron z fotografią, wideo, SEO i kampaniami reklamowymi. Budujemy strony tak, aby kolejne działania marketingowe — reklamy, social media czy pozycjonowanie — miały dokąd kierować ruch. Przy wyborze wykonawcy warto zapytać, kto przygotuje projekt, treści i wdrożenie, ile rund poprawek obejmuje oferta i czego zlecenie nie obejmuje. Budowa stron internetowych to dla nas część większej obecności firmy w internecie, a nie pojedynczy produkt.",
+  },
+  {
+    title: "Tworzenie strony — co przygotować przed rozmową",
+    text: "Nie musisz mieć gotowych tekstów. Wystarczy kilka informacji, które przyspieszą wycenę.",
+    points: [
+      "adres obecnej witryny lub profilu firmy",
+      "listę usług lub produktów i najczęstsze pytania klientów",
+      "logo, zdjęcia i materiały do wykorzystania",
+      "przykłady stron, które Ci się podobają, oraz planowany termin startu",
+    ],
+  },
+  {
+    title: "Opieka i rozwój strony po publikacji",
+    text: "Po uruchomieniu serwis wymaga aktualizacji, kopii zapasowych i reakcji na zgłoszenia. Zakres opieki ustalamy przed publikacją, żeby było jasne, co obejmuje abonament, a co jest osobnym zleceniem. Plan rozwoju strony zakłada, że łatwo dodasz nowe usługi, podstrony lub integracje. Po starcie warto śledzić dane z Google Search Console i analityki — na ich podstawie proponujemy kolejne zmiany Twojej strony internetowej.",
+  },
+];
 
+const wroclawOptions = websiteOptions.map((option, index) => ({ ...option, href: enquiryHref("web", index === 2 ? "shop" : "website") }));
+
+const work = [
+  { name: "Enea Stadion Poznań", text: "Strona prezentująca stadion, jego przestrzenie i ofertę dla organizatorów wydarzeń.", image: eneaStadion, path: "/realizacje/enea-stadion" },
+  { name: "FPS Poznań (Cegielski)", text: "Strona internetowa i identyfikacja wizualna dla fabryki pojazdów szynowych.", image: fpsCegielski, path: "/realizacje/fps-cegielski" },
+  { name: "KLAGEM", text: "Strona i konfigurator mebli 3D z doborem modułów, wymiarów i kolorów.", image: klagem, path: "/realizacje/klagem" },
+];
+
+const faqs = [
+  { question: "Czy macie biuro we Wrocławiu?", answer: "Nie. Zespół FOTZ Studio pracuje w Poznaniu, a firmy z Wrocławia obsługujemy zdalnie: spotkania online, materiały przesyłane cyfrowo i akceptacje etapów na piśmie." },
+  { question: "Ile kosztuje strona internetowa we Wrocławiu?", answer: "Cena zależy od liczby podstron, treści, funkcji i integracji. Po briefie przygotowujemy wycenę z rozpisanym zakresem, harmonogramem i kosztami cyklicznymi, takimi jak domena i hosting." },
+  { question: "Czy przyjedziecie na zdjęcia lub nagrania?", answer: "Wyjazd na sesję zdjęciową lub nagrania we Wrocławiu ustalamy osobno — zależy od zakresu i terminu. Projekt strony możemy też oprzeć na materiałach, które firma już posiada." },
+  { question: "Jak długo trwa stworzenie strony internetowej?", answer: "Termin zależy od zakresu oraz gotowości tekstów, zdjęć i decyzji. Harmonogram etapów potwierdzamy po briefie." },
+  { question: "Czy strona będzie dostosowana do telefonów i wyszukiwarek?", answer: "Tak, projektujemy widoki mobilne i wdrażamy techniczne podstawy SEO. Sama publikacja nie zapewnia jednak określonej pozycji w Google." },
+  { question: "Czy przygotujecie wersję angielską lub niemiecką?", answer: "Tak, wersje językowe planujemy w strukturze strony. Tłumaczenia może dostarczyć firma albo ustalamy ich przygotowanie w wycenie." },
+];
+
+export default function StronyInternetoweWroclaw() {
   return (
-    <>
+    <Layout>
       <SEOHead
-        title="Strony Internetowe Wrocław | Tworzenie i Projektowanie Stron WWW"
-        description="Strony internetowe Wrocław — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Wrocławia. Fotz Studio."
+        title="Strony internetowe Wrocław – strona www dla firm"
+        description="Strony internetowe dla firm z Wrocławia: strona www, landing page, sklep i podstawy SEO. Współpraca zdalna z zespołem FOTZ Studio i jasna wycena."
         canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/wroclaw"
-        keywords="strony internetowe wrocław, tworzenie stron www wrocław, projektowanie stron wrocław, sklepy internetowe wrocław, wykonanie strony internetowej wrocław, responsywna strona www wrocław, wordpress wrocław, nowoczesne strony www wrocław, agencja stron internetowych wrocław"
       />
-      
-      <ServiceSchema name="Strony Internetowe Wrocław" description="Profesjonalne tworzenie stron internetowych dla firm z Wrocławia." provider="FOTZ Studio" areaServed="Wrocław" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://www.fotz-studio.pl" }, { name: "Strony Internetowe", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe" }, { name: "Wrocław", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe/wroclaw" }]}/>
-      <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
+      <ServiceSchema name="Tworzenie stron internetowych dla firm z Wrocławia" description="Projektowanie i wdrożenie stron firmowych, landing page'y oraz sklepów internetowych — współpraca zdalna." areaServed="Wrocław" />
+      <FAQSchema items={faqs} />
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://www.fotz-studio.pl" }, { name: "Strony internetowe", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe" }, { name: "Wrocław", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe/wroclaw" }]} />
 
-      <OrganizationSchema />
-
-
-      <Layout>
-        {/* Hero */}
-        <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-32 pb-20">
-          <div className="absolute inset-0">
-            <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-background to-background" />
-            <motion.div animate={{ scale: [1, 1.2, 1], opacity: [0.15, 0.25, 0.15] }} transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }} className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[150px]" />
-            <motion.div animate={{ scale: [1.2, 1, 1.2], opacity: [0.15, 0.25, 0.15] }} transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 4 }} className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-secondary/20 rounded-full blur-[120px]" />
-          </div>
-          
-          <motion.div animate={{ y: [-20, 20, -20], rotate: [0, 5, 0] }} transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }} className="absolute top-32 right-[15%] hidden lg:block">
-            <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 backdrop-blur-sm border border-primary/20 flex items-center justify-center"><Globe className="w-10 h-10 text-primary" /></div>
-          </motion.div>
-          
-          <div className="container mx-auto px-4 relative z-10">
-            <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="text-center max-w-5xl mx-auto">
-              <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5, delay: 0.2 }}>
-                <span className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-8"><Sparkles className="w-4 h-4" />Strony WWW Wrocław<Sparkles className="w-4 h-4" /></span>
-              </motion.div>
-              
-              <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.3 }} className="text-4xl md:text-5xl lg:text-7xl font-heading font-bold mb-8 leading-tight">
-                Strony Internetowe{" "}<span className="text-gradient relative">Wrocław<motion.span initial={{ scaleX: 0 }} animate={{ scaleX: 1 }} transition={{ duration: 0.8, delay: 0.8 }} className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-primary to-primary/50 rounded-full origin-left" /></span>
-              </motion.h1>
-              
-              <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.4 }} className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed">
-                <strong className="text-foreground">Profesjonalna strona internetowa to podstawa sukcesu każdej firmy.</strong>{" "}Tworzymy responsywne strony www i nowoczesne strony internetowe — wykonanie strony internetowej Wrocław w React, Next.js i WordPress. Projektowanie stron Wrocław dla firm, które chcą wyróżnić się w Google.
-              </motion.p>
-
-              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.5 }} className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-                <Button asChild size="lg" className="group text-base px-8 py-6 shadow-lg shadow-primary/20"><Link to="/kontakt">Bezpłatna wycena<ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" /></Link></Button>
-                <Button asChild variant="outline" size="lg" className="group text-base px-8 py-6 border-2"><a href="tel:+48790814814"><Phone className="mr-2 h-5 w-5" />+48 790 814 814</a></Button>
-              </motion.div>
-
-              <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.7 }} className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 max-w-4xl mx-auto">
-                {stats.map((stat, index) => (
-                  <motion.div key={index} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.8 + index * 0.1 }} className="group p-4 rounded-2xl bg-card/50 backdrop-blur-sm border border-border/50 hover:border-primary/30 transition-all">
-                    <stat.icon className="w-6 h-6 text-primary mx-auto mb-2 transition-transform group-hover:scale-110" />
-                    <div className="text-2xl md:text-3xl font-bold text-foreground">{stat.value}</div>
-                    <div className="text-xs md:text-sm text-muted-foreground">{stat.label}</div>
-                  </motion.div>
-                ))}
-              </motion.div>
-            </motion.div>
-          </div>
-        </section>
-
-        <CityIntroSection content={introContent} cityName="Wrocław" />
-        <CityBenefitsSection benefits={benefits} title="Dlaczego warto nam zaufać?" subtitle="Poznaj korzyści współpracy" cityName="Wrocław" />
-        <CityServicesGrid services={services} title="Nasze usługi" subtitle="Kompleksowe usługi tworzenia stron www dla wrocławskich firm" cityName="Wrocław" />
-
-        {/* Process */}
-        <section className="py-24 bg-card/30">
-          <div className="container mx-auto px-4">
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
-              <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">Proces</span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-4">Jak tworzymy strony?</h2>
-            </motion.div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-              {processSteps.map((item, index) => (
-                <motion.div key={index} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }} className="group relative">
-                  <div className="p-8 rounded-2xl bg-background border border-border/50 hover:border-primary/30 transition-all h-full relative overflow-hidden">
-                    <div className="absolute top-0 right-0 text-8xl font-bold text-primary/5 group-hover:text-primary/10 transition-colors">{item.step}</div>
-                    <div className="relative z-10">
-                      <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"><item.icon className="w-7 h-7 text-primary" /></div>
-                      <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
-                      <p className="text-muted-foreground">{item.desc}</p>
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Case Studies */}
-        <section className="py-24">
-          <div className="container mx-auto px-4">
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
-              <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">Realizacje</span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-4">Nasze projekty</h2>
-            </motion.div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {caseStudies.map((study, index) => (
-                <motion.div key={index} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }}>
-                  <Link to={study.link} className="group block rounded-2xl overflow-hidden bg-card border border-border/50 hover:border-primary/30 transition-all hover:shadow-2xl hover:shadow-primary/10">
-                    <div className="aspect-video overflow-hidden"><img loading="lazy" src={study.image} alt={study.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" /></div>
-                    <div className="p-6">
-                      <span className="text-primary text-sm font-medium">{study.category}</span>
-                      <h3 className="text-xl font-semibold mt-2 mb-2 group-hover:text-primary transition-colors">{study.title}</h3>
-                      <p className="text-muted-foreground">{study.result}</p>
-                    </div>
-                  </Link>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <CityPricingCards pricing={pricing} title="Cennik stron internetowych" subtitle="Transparentne ceny bez ukrytych kosztów" cityName="Wrocław" />
-
-        <CityLinksSection currentCity="Wrocław" />
-
-        {/* FAQ */}
-        <section className="py-24">
-          <div className="container mx-auto px-4">
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
-              <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">FAQ</span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-4">Najczęstsze pytania</h2>
-            </motion.div>
-            <div className="max-w-3xl mx-auto">
-              <Accordion type="single" collapsible className="space-y-4">
-                {faqItems.map((item, index) => (
-                  <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.05 }}>
-                    <AccordionItem value={`item-${index}`} className="border border-border/50 rounded-xl px-6 bg-card/50">
-                      <AccordionTrigger className="text-left hover:no-underline py-6"><span className="font-medium">{item.question}</span></AccordionTrigger>
-                      <AccordionContent className="text-muted-foreground pb-6">{item.answer}</AccordionContent>
-                    </AccordionItem>
-                  </motion.div>
-                ))}
-              </Accordion>
-            </div>
-          </div>
-        </section>
-
-      {/* SEO Article Section */}
-      <section className="py-20 bg-card">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="prose prose-lg dark:prose-invert max-w-4xl mx-auto"
-          >
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-              Strony internetowe Wrocław — rynek lokalny i specyfika regionu
-            </h2>
-            <p className="text-muted-foreground mb-4">
-              Wrocław to czwarte co do wielkości miasto w Polsce i jeden z najszybciej rozwijających się rynków biznesowych w Europie Środkowej. Silny sektor IT (KPMG, IBM, Nokia, Google Campus), dynamiczna scena startupów, branża fintech i rosnąca turystyka (Rynek, Ostrów Tumski) sprawiają, że rynek online we Wrocławiu jest wymagający i bardzo konkurencyjny.
-            </p>
-            <p className="text-muted-foreground mb-6">
-              Fotz Studio tworzy strony internetowe dla firm z Wrocławia w modelu w pełni zdalnym — bez kompromisów w jakości. Każdy projekt realizuje nasz własny zespół: projektant UX/UI, developer i specjalista SEO. Żadnych podwykonawców, żadnych szablonów kupowanych hurtowo. Efekt? Strony, które wyróżniają się na lokalnym rynku i konwertują odwiedzających w klientów.
-            </p>
-
-            <h2 className="text-3xl font-heading font-bold mb-6">
-              Projektowanie stron internetowych Wrocław — nasz proces od A do Z
-            </h2>
-            <p className="text-muted-foreground mb-4">
-              Tworzenie strony internetowej dla firmy z Wrocławia zaczynamy od bezpłatnej konsultacji — omawiamy cel strony, grupę docelową, budżet i harmonogram. Następnie przygotowujemy brief kreatywny i analizę konkurencji. Projekt graficzny powstaje w Figma i jest akceptowany przez Ciebie przed startem kodowania. Po uruchomieniu strony masz pełne dostępy i możesz samodzielnie edytować treści.
-            </p>
-            <p className="text-muted-foreground mb-6">
-              Czas realizacji strony wizytówkowej to 2–3 tygodnie, strony firmowej 4–8 tygodni. Nasze strony są objęte 30-dniową gwarancją po wdrożeniu — wszelkie błędy po uruchomieniu poprawiamy bezpłatnie.
-            </p>
-
-            <h2 className="text-3xl font-heading font-bold mb-6">
-              SEO dla stron internetowych w Wrocław — lokalna widoczność w Google
-            </h2>
-            <p className="text-muted-foreground mb-4">
-              Każda strona internetowa, którą tworzymy dla wrocławskich firm, zawiera podstawowe SEO w cenie: meta tagi title i description, schema LocalBusiness z danymi adresowymi Wrocławia i Dolnego Śląska, szybkość Core Web Vitals i poprawna architektura nagłówków H1–H3. Dzięki temu strona startuje z solidnym fundamentem i szybciej osiąga widoczność w Google.
-            </p>
-            <p className="text-muted-foreground mb-6">
-              Kompleksowa oferta 
-              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">tworzenia stron internetowych</Link> dostępna jest na naszej stronie głównej usługi. Jeśli potrzebujesz strony do kampanii reklamowej, sprawdź naszą ofertę 
-              <Link to="/uslugi/landing-page" className="text-primary hover:underline">landing page dla Google Ads i Meta Ads</Link>.
-            </p>
-
-            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
-              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">&rarr; Strony internetowe — oferta</Link>
-              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">&rarr; Landing page</Link>
-              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">&rarr; Pozycjonowanie SEO</Link>
-              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">&rarr; Kampanie reklamowe</Link>
-            </div>
-          </motion.div>
+      <section className="max-w-6xl mx-auto px-6 pt-32 pb-14">
+        <p className="dv-eyebrow mb-5">FOTZ Studio · współpraca zdalna z Wrocławiem</p>
+        <h1 className="text-4xl md:text-6xl font-heading mb-6">Strony internetowe Wrocław — projektowanie i tworzenie stron internetowych we Wrocławiu</h1>
+        <p className="text-lg text-muted-foreground max-w-3xl mb-7">
+          Projektujemy strony firmowe, landing page i sklepy dla firm z Wrocławia — strony, które działają na telefonie, jasno opisują ofertę i ułatwiają kontakt. Całą współpracę prowadzimy zdalnie — od briefu, przez projekt i wdrożenie, po publikację.
+        </p>
+        <div className="flex flex-wrap gap-4">
+          <Link className="dv-btn dv-btn-primary" to={enquiryHref("web")}>Opisz projekt do wyceny</Link>
+          <a className="dv-btn dv-btn-secondary" href="tel:+48790814814">+48 790 814 814</a>
         </div>
       </section>
 
-        <ContactSection />
-      </Layout>
-    </>
-  );
-};
+      <section className="max-w-6xl mx-auto px-6 py-12">
+        <h2 className="text-3xl font-heading mb-5">Profesjonalne strony www dla firm z Wrocławia — zakres współpracy</h2>
+        <p className="text-muted-foreground leading-relaxed max-w-4xl mb-7">
+          Projekt strony internetowej i budowę serwisu przygotowujemy dla firm usługowych, produkcyjnych, technologicznych, gabinetów i lokali gastronomicznych. Zakres obejmuje plan treści, projekt, wdrożenie i publikację, a w razie potrzeby także zdjęcia, wideo i kampanie. Wybierz wariant najbliższy Twoim potrzebom — szczegóły ustalimy na rozmowie online.
+        </p>
+        <QuoteOptions options={wroclawOptions} note="Zakres, cenę i harmonogram ustalamy po poznaniu projektu. Domenę, hosting, licencje i dalszą opiekę rozpisujemy w wycenie." />
+      </section>
 
-export default StronyInternetoweWroclaw;
+      <section className="max-w-6xl mx-auto px-6 py-12">
+        <h2 className="text-3xl font-heading mb-3">Realizacje — portfolio stron internetowych FOTZ Studio</h2>
+        <p className="text-muted-foreground mb-7">Projekty zrealizowane dla firm z Wielkopolski — pokazują, jak pracujemy nad strukturą, treścią i wdrożeniem.</p>
+        <div className="grid md:grid-cols-3 gap-6">
+          {work.map(x => (
+            <Link key={x.path} to={x.path} className="rounded-xl border border-border overflow-hidden">
+              <img src={x.image} alt={x.name} loading="lazy" className="w-full aspect-video object-cover" />
+              <div className="p-5"><h3 className="text-xl mb-2">{x.name}</h3><p className="text-muted-foreground">{x.text}</p></div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <div className="max-w-6xl mx-auto px-6 py-12">
+        {sections.map(item => (
+          <section key={item.title} className="grid md:grid-cols-[1fr_1.4fr] gap-5 md:gap-12 py-8 border-b border-border">
+            <h2 className="text-2xl md:text-3xl font-heading">{item.title}</h2>
+            <div>
+              <p className="text-muted-foreground leading-relaxed">{item.text}</p>
+              {item.points && <ul className="list-disc pl-5 mt-4 space-y-2 text-muted-foreground">{item.points.map(point => <li key={point}>{point}</li>)}</ul>}
+              {item.href && <Link to={item.href} className="inline-block underline underline-offset-4 mt-5">{item.link}</Link>}
+            </div>
+          </section>
+        ))}
+      </div>
+
+      <section className="max-w-4xl mx-auto px-6 py-12">
+        <h2 className="text-3xl font-heading mb-7">Strony internetowe Wrocław — pytania klientów</h2>
+        {faqs.map(f => (
+          <details key={f.question} className="py-5 border-b border-border">
+            <summary className="font-medium cursor-pointer">{f.question}</summary>
+            <p className="mt-4 text-muted-foreground">{f.answer}</p>
+          </details>
+        ))}
+        <div className="mt-8 flex flex-wrap gap-4">
+          <Link className="dv-btn dv-btn-primary" to={enquiryHref("web")}>Zapytaj o wycenę</Link>
+          <Link className="dv-btn dv-btn-secondary" to="/uslugi/strony-internetowe-dla-firm">Strony internetowe dla firm — oferta</Link>
+        </div>
+      </section>
+    </Layout>
+  );
+}
