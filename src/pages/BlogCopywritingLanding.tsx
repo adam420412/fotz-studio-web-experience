@@ -2,7 +2,7 @@ import { CopyArticleLinkButton } from "@/components/CopyArticleLinkButton";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { ArrowLeft, Calendar, Clock, User, Share2, Bookmark, PenTool, Target, Zap, CheckCircle, AlertCircle, Lightbulb } from "lucide-react";
+import { ArrowLeft, Calendar, Clock, User, PenTool, Target, Zap, CheckCircle, AlertCircle, Lightbulb } from "lucide-react";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
@@ -23,7 +23,7 @@ const faqItems = [
   },
   {
     question: "Jak pisać o cenach na landing page?",
-    answer: "Zawsze pokazuj wartość przed ceną. Używaj kotwiczenia (przekreślona wyższa cena), framing ('tylko 3 zł dziennie'), social proof ('wybrane przez 5000 firm'). Cena bez kontekstu wartości to błąd."
+    answer: "Zawsze pokazuj wartość przed ceną. Używaj kotwiczenia (porównanie z droższą opcją), framingu (np. przeliczenie kosztu na dzień) i prawdziwego social proof, który możesz udokumentować. Cena bez kontekstu wartości to błąd."
   },
   {
     question: "Co to jest power words i jak ich używać?",
@@ -126,8 +126,8 @@ export default function BlogCopywritingLanding() {
                 <h3 className="text-lg font-bold mb-3 mt-0">🎯 Złota zasada copywritingu</h3>
                 <p className="text-lg mb-0">
                   <strong>Pisz o korzyściach, nie o cechach.</strong><br />
-                  Zamiast: "Nasz CRM ma 50 integracji"<br />
-                  Pisz: "Oszczędź 10 godzin tygodniowo dzięki automatyzacji"
+                  Zamiast: "Nasz CRM ma dziesiątki integracji"<br />
+                  Pisz: "Oszczędzaj czas dzięki automatyzacji"
                 </p>
               </div>
 
@@ -136,8 +136,8 @@ export default function BlogCopywritingLanding() {
                 Headline - masz 3 sekundy
               </h2>
               <p>
-                Headline to najważniejszy element strony. 80% odwiedzających czyta tylko nagłówek. 
-                Musi natychmiast komunikować wartość i zatrzymać uwagę.
+                Headline to najważniejszy element strony. Wielu odwiedzających czyta tylko nagłówek, 
+                więc musi on natychmiast komunikować wartość i zatrzymać uwagę.
               </p>
 
               <h3>Formuły skutecznych headlines</h3>
@@ -146,13 +146,13 @@ export default function BlogCopywritingLanding() {
                 <div className="bg-card border border-border rounded-lg p-4">
                   <p className="font-bold mb-1">1. Formuła korzyści</p>
                   <p className="text-sm text-muted-foreground mb-2">[Osiągnij rezultat] bez [problemu/wysiłku]</p>
-                  <p className="text-primary">"Zwiększ sprzedaż o 30% bez zwiększania budżetu reklamowego"</p>
+                  <p className="text-primary">"Więcej zapytań ze strony bez zwiększania budżetu reklamowego"</p>
                 </div>
                 
                 <div className="bg-card border border-border rounded-lg p-4">
                   <p className="font-bold mb-1">2. Formuła "How to"</p>
                   <p className="text-sm text-muted-foreground mb-2">Jak [osiągnąć cel] w [czas/kroki]</p>
-                  <p className="text-primary">"Jak zbudować listę mailingową 10 000 subskrybentów w 90 dni"</p>
+                  <p className="text-primary">"Jak zbudować listę mailingową od zera — krok po kroku"</p>
                 </div>
                 
                 <div className="bg-card border border-border rounded-lg p-4">
@@ -163,8 +163,8 @@ export default function BlogCopywritingLanding() {
                 
                 <div className="bg-card border border-border rounded-lg p-4">
                   <p className="font-bold mb-1">4. Formuła dowodu</p>
-                  <p className="text-sm text-muted-foreground mb-2">Liczba/rezultat + co osiągnęli</p>
-                  <p className="text-primary">"5000 firm zwiększyło konwersję średnio o 47%"</p>
+                  <p className="text-sm text-muted-foreground mb-2">Udokumentowany rezultat + kto go osiągnął (tylko prawdziwe, sprawdzalne dane)</p>
+                  <p className="text-primary">"[Liczba] firm z [branża] korzysta z [produkt] — zobacz ich historie"</p>
                 </div>
               </div>
 
@@ -181,7 +181,7 @@ export default function BlogCopywritingLanding() {
               <ul>
                 <li><strong>Konkretność</strong> - "Pobierz darmowy ebook" zamiast "Wyślij"</li>
                 <li><strong>Korzyść</strong> - "Zacznij oszczędzać" zamiast "Zarejestruj się"</li>
-                <li><strong>Pilność</strong> - "Odbierz 20% rabatu dziś" zamiast "Kup teraz"</li>
+                <li><strong>Pilność</strong> - "Odbierz rabat do końca tygodnia" zamiast "Kup teraz" (tylko gdy oferta naprawdę jest ograniczona)</li>
                 <li><strong>Pierwsza osoba</strong> - "Chcę zwiększyć sprzedaż" zamiast "Zwiększ sprzedaż"</li>
               </ul>
 
@@ -192,19 +192,19 @@ export default function BlogCopywritingLanding() {
                     <AlertCircle className="w-5 h-5 text-red-500 flex-shrink-0" />
                     <span className="line-through text-muted-foreground">Wyślij</span>
                     <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
-                    <span className="text-primary">Wyślij i odbierz wycenę w 24h</span>
+                    <span className="text-primary">Wyślij i odbierz wycenę</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <AlertCircle className="w-5 h-5 text-red-500 flex-shrink-0" />
                     <span className="line-through text-muted-foreground">Zarejestruj się</span>
                     <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
-                    <span className="text-primary">Zacznij 14-dniowy trial za darmo</span>
+                    <span className="text-primary">Wypróbuj za darmo</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <AlertCircle className="w-5 h-5 text-red-500 flex-shrink-0" />
                     <span className="line-through text-muted-foreground">Dowiedz się więcej</span>
                     <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
-                    <span className="text-primary">Zobacz, jak to działa (2 min video)</span>
+                    <span className="text-primary">Zobacz, jak to działa (krótkie wideo)</span>
                   </div>
                 </div>
               </div>
@@ -226,11 +226,11 @@ export default function BlogCopywritingLanding() {
                 <ul className="space-y-2 mb-0">
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span><strong>Automatyczne follow-upy</strong> - nigdy nie zapomnisz o leadzie, zamkniesz o 40% więcej deali</span>
+                    <span><strong>Automatyczne follow-upy</strong> - nie zapomnisz o leadzie i domkniesz więcej rozmów</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span><strong>Integracja z mailem</strong> - cała historia rozmów w jednym miejscu, oszczędzasz 2h dziennie</span>
+                    <span><strong>Integracja z mailem</strong> - cała historia rozmów w jednym miejscu, mniej czasu na szukanie</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
@@ -244,8 +244,8 @@ export default function BlogCopywritingLanding() {
                 Social proof - buduj zaufanie
               </h2>
               <p>
-                92% konsumentów czyta opinie przed zakupem. Social proof zmniejsza ryzyko 
-                i buduje zaufanie. Używaj konkretnych liczb i nazwisk.
+                Wielu klientów sprawdza opinie przed zakupem. Social proof zmniejsza ryzyko 
+                i buduje zaufanie — pod warunkiem, że jest prawdziwy. Używaj tylko danych, opinii i nazwisk, które możesz udokumentować i na które masz zgodę.
               </p>
 
               <h3>Rodzaje social proof:</h3>
@@ -253,20 +253,20 @@ export default function BlogCopywritingLanding() {
                 <li><strong>Testimoniale</strong> - cytaty klientów z imieniem, zdjęciem, firmą</li>
                 <li><strong>Case studies</strong> - szczegółowe historie sukcesu z liczbami</li>
                 <li><strong>Logotypy klientów</strong> - "Zaufali nam: [logo] [logo] [logo]"</li>
-                <li><strong>Liczby</strong> - "10 000+ klientów", "4.9/5 z 500 opinii"</li>
+                <li><strong>Liczby</strong> - liczba klientów lub średnia ocena, jeśli masz je udokumentowane</li>
                 <li><strong>Media/Nagrody</strong> - "Featured in Forbes", "Winner of..."</li>
-                <li><strong>Certyfikaty</strong> - Google Partner, ISO, branżowe</li>
+                <li><strong>Certyfikaty</strong> - tylko te, które faktycznie posiadasz (np. ISO, branżowe)</li>
               </ol>
 
               <div className="bg-primary/10 border border-primary/20 rounded-xl p-6 my-8">
-                <h4 className="font-bold mb-3">Formuła silnego testimonialu:</h4>
+                <h4 className="font-bold mb-3">Formuła silnego testimonialu (szablon):</h4>
                 <blockquote className="border-l-4 border-primary pl-4 italic mb-4">
-                  "Przed współpracą z FOTZ nasza strona generowała 10 zapytań miesięcznie. 
-                  Po redesignie i kampanii SEO mamy <strong>85 zapytań miesięcznie</strong>. 
-                  Zwrot z inwestycji w pierwszym roku: 340%."
+                  "Przed współpracą [sytuacja wyjściowa]. 
+                  Po [co zostało zrobione] <strong>[zmierzony, prawdziwy rezultat]</strong>. 
+                  [Co najbardziej doceniam we współpracy]."
                 </blockquote>
                 <p className="text-sm mb-0">
-                  — <strong>Jan Kowalski</strong>, CEO, Firma XYZ
+                  — <strong>[Imię i nazwisko]</strong>, [stanowisko], [firma] — za zgodą klienta
                 </p>
               </div>
 
@@ -287,7 +287,7 @@ export default function BlogCopywritingLanding() {
               <ol>
                 <li><strong>Pisanie o sobie</strong> - "Jesteśmy liderem..." zamiast "Zyskujesz..."</li>
                 <li><strong>Żargon branżowy</strong> - Pisz tak, jak mówi Twój klient</li>
-                <li><strong>Brak konkretów</strong> - "Wysoka jakość" → "Gwarancja 5 lat"</li>
+                <li><strong>Brak konkretów</strong> - "Wysoka jakość" → konkretna, prawdziwa informacja (np. okres gwarancji, z czego wykonano produkt)</li>
                 <li><strong>Za dużo tekstu</strong> - Każde słowo musi pracować</li>
                 <li><strong>Słabe CTA</strong> - "Wyślij" to nie CTA, to instrukcja</li>
                 <li><strong>Brak pilności</strong> - Dlaczego mam działać teraz?</li>
@@ -352,7 +352,7 @@ export default function BlogCopywritingLanding() {
               <p className="text-muted-foreground mb-6">Copywriting to dusza każdej strony lądowania. Piękny design bez przekonującego tekstu nie konwertuje. Dobry copywriting strony lądowania prowadzi użytkownika przez lejek: zrozumienie problemu → prezentacja rozwiązania → budowanie zaufania → wezwanie do działania. Każde zdanie musi mieć cel.</p>
 
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">SEO copywriting i copy sprzedażowy — tworzenie tekstów dla firm w Fotz Studio</h2>
-              <p className="text-muted-foreground mb-6">Fotz Studio tworzy copy dla stron lądowania, stron usługowych, reklam Google Ads i Meta Ads oraz emaili sprzedażowych. Nasi copywriterzy łączą techniki copywritingu sprzedażowego z optymalizacją SEO — teksty, które zarówno wyróżniają się w wynikach wyszukiwania, jak i konwertują odwiedzających.</p>
+              <p className="text-muted-foreground mb-6">Fotz Studio tworzy copy dla stron lądowania, stron usługowych, reklam Google Ads i Meta Ads oraz emaili sprzedażowych. Łączymy techniki copywritingu sprzedażowego z optymalizacją SEO — piszemy teksty, które mają być czytelne dla wyszukiwarek i przekonujące dla odwiedzających.</p>
 
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Copywriting dla Twojej strony — zwiększ konwersję z profesjonalnym tekstem</h2>
               <p className="text-muted-foreground">Chcesz poprawić konwersję swojej strony lub landing page? Fotz Studio audytuje istniejące teksty i pisze nowy copy zoptymalizowany pod konwersję. Skontaktuj się z nami — pierwsze konsultacje są bezpłatne.</p>

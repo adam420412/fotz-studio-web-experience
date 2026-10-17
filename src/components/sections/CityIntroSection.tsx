@@ -145,8 +145,8 @@ export const CityIntroSection = ({ content, cityName }: CityIntroSectionProps) =
                     <span className="text-2xl">🚀</span>
                   </div>
                   <div>
-                    <span className="text-2xl font-bold text-gradient">8+ lat</span>
-                    <p className="text-xs text-muted-foreground">doświadczenia</p>
+                    <span className="text-2xl font-bold text-gradient">Poznań</span>
+                    <p className="text-xs text-muted-foreground">współpraca zdalna z całą Polską</p>
                   </div>
                 </div>
               </motion.div>

@@ -18,7 +18,6 @@ import {
   Headphones,
   ArrowRight,
   Sparkles,
-  Zap,
   Target,
   Code2,
   Layers,

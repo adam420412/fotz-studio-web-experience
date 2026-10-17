@@ -159,7 +159,7 @@ export function ContactSection({ city, variant = "full", title, description }: C
       label: "Email",
       value: "adam@fotz.pl",
       href: "mailto:adam@fotz.pl",
-      desc: "Odpowiadamy w ciągu 24h"
+      desc: "Odpisujemy w dni robocze"
     },
     {
       icon: MapPin,
@@ -171,10 +171,10 @@ export function ContactSection({ city, variant = "full", title, description }: C
   ];
 
   const benefits = [
-    "Bezpłatna wycena w 24h",
+    "Bezpłatna wycena",
     "Bez zobowiązań",
     "Indywidualne podejście",
-    "Ekspresowa realizacja"
+    "Jasny harmonogram prac"
   ];
 
   if (variant === "compact") {

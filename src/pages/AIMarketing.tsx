@@ -11,15 +11,15 @@ import { ContactSection } from "@/components/sections/ContactSection";
 const AIMarketing = () => {
   const features = [
     { icon: Zap, title: "Automatyzacja kampanii reklamowych", desc: "AI optymalizuje stawki, targetowanie i kreacje reklamowe w czasie rzeczywistym. Meta Advantage+, Google Performance Max i inne systemy AI — zarządzamy nimi strategicznie." },
-    { icon: FileText, title: "Generowanie treści z AI", desc: "ChatGPT, Claude, Gemini jako narzędzia do produkcji treści: artykuły, opisy produktów, maile, posty social media. AI przyspiesza produkcję 5-10x przy zachowaniu jakości." },
-    { icon: BarChart2, title: "AI Analityka i predykcja", desc: "Modele predykcyjne analizują zachowanie użytkowników i prognozują konwersje. Segmentacja oparta na AI, LTV klienta, churn prediction — decyzje oparte na danych." },
-    { icon: Search, title: "Optymalizacja pod AI search", desc: "ChatGPT, Perplexity i Gemini zmieniają sposób wyszukiwania informacji. Optymalizujemy treści tak, aby Twoja firma była cytowana przez modele AI jako wiarygodne źródło." },
+    { icon: FileText, title: "Generowanie treści z AI", desc: "ChatGPT, Claude, Gemini jako narzędzia do produkcji treści: artykuły, opisy produktów, maile, posty social media. AI przyspiesza pracę nad treściami, a każdy tekst przechodzi redakcję człowieka." },
+    { icon: BarChart2, title: "AI Analityka i predykcja", desc: "Wykorzystujemy funkcje AI w narzędziach analitycznych i reklamowych do analizy zachowań użytkowników, segmentacji i prognoz. Pomagają podejmować decyzje oparte na danych." },
+    { icon: Search, title: "Optymalizacja pod AI search", desc: "ChatGPT, Perplexity i Gemini zmieniają sposób wyszukiwania informacji. Optymalizujemy treści tak, aby zwiększyć szansę, że modele AI wskażą Twoją firmę jako źródło — nie gwarantujemy jednak, że konkretny model ją zacytuje." },
   ];
 
   const faqItems = [
     { question: "Czy AI zastąpi agencje marketingowe?", answer: "AI zmienia sposób pracy agencji, ale ich nie zastąpi. Strategia, kreatywność, rozumienie kontekstu biznesowego i zarządzanie relacjami z klientami wymagają ludzkiego podejścia. AI jest narzędziem, które amplifikuje możliwości agencji — dlatego z nim pracujemy." },
     { question: "Jakie narzędzia AI wdrażacie?", answer: "Pracujemy z ChatGPT, Claude, Gemini, Midjourney, HeyGen (wideo AI), Eleven Labs (voice), n8n i Make (automatyzacje), Zapier, Notion AI i wieloma innymi. Dobieramy narzędzia do konkretnych potrzeb biznesowych." },
-    { question: "Ile kosztuje wdrożenie AI w marketingu?", answer: "Zależy od zakresu. Podstawowe automatyzacje (np. AI do generowania postów social media) można wdrożyć za 500-1500 zł/mies. Kompleksowe wdrożenie AI (automatyzacje, analityka, chatbot) to 3000-8000 zł. Zwrot z inwestycji pojawia się zwykle w ciągu 2-4 miesięcy." },
+    { question: "Ile kosztuje wdrożenie AI w marketingu?", answer: "Wycenę przygotowujemy po rozmowie o zakresie: jakie procesy chcesz zautomatyzować, z jakich narzędzi już korzystasz, ile integracji trzeba zbudować i czy potrzebujesz stałej opieki. Koszty licencji narzędzi AI oraz budżet reklamowy płacony platformom są zawsze osobno." },
   ];
 
   return (
@@ -62,7 +62,7 @@ const AIMarketing = () => {
                 AI w Marketingu: <span className="text-gradient">Automatyzacja, Treści i Analityka</span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-                Sztuczna inteligencja rewolucjonizuje marketing. Firmy, które wdrożą AI już teraz, zyskają przewagę, której konkurenci nie nadgonią przez lata. Implementujemy narzędzia AI, które realnie zwiększają sprzedaż i redukują koszty operacyjne.
+                Sztuczna inteligencja zmienia sposób prowadzenia marketingu. Pomagamy wdrożyć narzędzia AI tam, gdzie mają sens: w automatyzacjach, produkcji treści, kampaniach i analityce — tak, by oszczędzać czas zespołu i wspierać sprzedaż.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild size="lg" className="group">
@@ -118,7 +118,7 @@ const AIMarketing = () => {
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
             <h2 className="text-3xl font-heading font-bold mb-6">AI marketing — sztuczna inteligencja w marketingu cyfrowym</h2>
             <p className="text-muted-foreground mb-4">AI marketing to wykorzystanie narzędzi opartych na sztucznej inteligencji do automatyzacji, personalizacji i optymalizacji działań marketingowych. Od automatycznego generowania treści (AI copywriting), przez inteligentne targetowanie reklam, po predyktywną analitykę marketingową — AI zmienia sposób, w jaki firmy komunikują się z klientami.</p>
-            <p className="text-muted-foreground mb-6">Marketing automation z elementami AI pozwala personalizować komunikację e-mailową, rekomendacje produktowe i reklamy w czasie rzeczywistym, na podstawie zachowania użytkownika. Inbound marketingu strategia wsparta przez AI jest znacznie efektywniejsza — systemy AI analizują dane i optymalizują content pod konkretnych odbiorców.</p>
+            <p className="text-muted-foreground mb-6">Marketing automation z elementami AI pozwala personalizować komunikację e-mailową, rekomendacje produktowe i reklamy w czasie rzeczywistym, na podstawie zachowania użytkownika. Strategia inbound marketingu wsparta przez AI pozwala szybciej analizować dane i dopasowywać treści do konkretnych odbiorców.</p>
             <h2 className="text-3xl font-heading font-bold mb-6">Narzędzia AI w marketingu — co możesz zautomatyzować?</h2>
             <p className="text-muted-foreground mb-4">AI copywriting (ChatGPT, Claude, Gemini) przyspiesza tworzenie treści — artykułów, opisów produktów, postów social media i emaili marketingowych. AI w reklamach (Google Performance Max, Meta Advantage+) automatyzuje targetowanie i optymalizację stawek w kampaniach PPC. Analityka predyktywna pomaga prognozować zachowania klientów i wartość lifetime (CLV).</p>
             <p className="text-muted-foreground">AI marketing nie zastępuje strategii marketingowej — ją wzmacnia. Potrzebujesz nadal jasnych celów biznesowych, znajomości grupy docelowej i kreatywności. AI to narzędzie, które pozwala działać szybciej, taniej i precyzyjniej. Dowiedz się, jak wdrożyć AI w swoim marketingu — umów bezpłatną konsultację.</p>

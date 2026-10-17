@@ -188,11 +188,11 @@ export default function StronyInternetoweLubelskie() {
     },
     {
       question: "Jakie technologie używacie?",
-      answer: "Koszt ustalamy po poznaniu zakresu: liczby podstron, treści, integracji i sposobu zarządzania. W ofercie określamy cenę, etapy, poprawki i termin; utrzymanie oraz działania marketingowe omawiamy osobno."
+      answer: "Technologię dobieramy do projektu: najczęściej WordPress, gdy zespół klienta ma sam edytować treści, albo lżejszą stronę statyczną, gdy liczy się szybkość i niski koszt utrzymania. Wybór opisujemy w ofercie."
     },
     {
       question: "Czy mogę mieć support po uruchomieniu?",
-      answer: "Koszt ustalamy po poznaniu zakresu: liczby podstron, treści, integracji i sposobu zarządzania. W ofercie określamy cenę, etapy, poprawki i termin; utrzymanie oraz działania marketingowe omawiamy osobno."
+      answer: "Tak. Zakres opieki po starcie (aktualizacje, kopie zapasowe, drobne zmiany treści) i sposób rozliczenia ustalamy w ofercie, osobno od samego wykonania strony."
     },
     {
       question: "Czy otrzymam dostępy do strony?",

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { SEOHead } from "@/components/seo/SEOHead";
-import { GraduationCap, ArrowRight, CheckCircle, Users, Globe, Video, TrendingUp, BookOpen, Calendar, Award, Plus, Phone } from "lucide-react";
+import { GraduationCap, ArrowRight, CheckCircle, Users, Globe, Video, TrendingUp, BookOpen, Calendar, Award, Plus } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";

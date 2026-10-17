@@ -236,10 +236,10 @@ const StronyInternetoweTarnow = () => {
               Strony internetowe Tarnów — tworzenie stron www dla firm z Małopolski Wschodniej
             </h2>
             <p className="text-muted-foreground mb-4">
-              Tarnów to trzecie co do wielkości miasto Małopolski i ważny ośrodek przemysłowy — centrum chemii (Azoty Tarnów), przemysłu maszynowego i rosnącego sektora usług. Firmy z Tarnowa i Małopolski Wschodniej (Nowy Sącz, Nowy Targ, Rzeszów) coraz aktywniej szukają klientów w internecie — i potrzebują do tego profesjonalnych stron www.
+              Tarnów to jedno z największych miast Małopolski i ważny ośrodek przemysłowy — centrum chemii (Azoty Tarnów), przemysłu maszynowego i usług. Firmy z Tarnowa i Małopolski Wschodniej szukają klientów w internecie — i potrzebują do tego profesjonalnych stron www.
             </p>
             <p className="text-muted-foreground mb-6">
-              Obsługujemy firmy z Tarnowa i całej Małopolski Wschodniej. Zdalny model współpracy, projekt w Figmie, wdrożenie online, optymalizacja SEO. Termin: 3–5 tygodni. Bezpłatna wycena w 24 godziny.
+              Pracujemy z Poznania, a firmy z Tarnowa i całej Małopolski Wschodniej obsługujemy zdalnie. Projekt w Figmie, wdrożenie online, optymalizacja SEO. Termin ustalamy w indywidualnej ofercie, wycena jest bezpłatna.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
@@ -256,10 +256,10 @@ const StronyInternetoweTarnow = () => {
               SEO dla firm z Tarnowa — lokalna widoczność w Małopolsce
             </h2>
             <p className="text-muted-foreground mb-4">
-              Optymalizacja pod frazy lokalne — „usługa + Tarnów", „usługa + Małopolska" — to najskuteczniejszy sposób na lokalnych klientów. Google Moja Firma, spójność NAP, lokalne linki. Dla firm działających w całej Małopolsce Wschodniej rozszerzamy zasięg o Kraków, Nowy Sącz i Rzeszów.
+              Optymalizacja pod frazy lokalne — „usługa + Tarnów", „usługa + Małopolska" — pomaga docierać do klientów z okolicy. Google Moja Firma, spójność NAP, lokalne linki. Nie gwarantujemy konkretnej pozycji w Google. Dla firm działających w całej Małopolsce Wschodniej rozszerzamy zasięg o Kraków, Nowy Sącz i Rzeszów.
             </p>
             <p className="text-muted-foreground">
-              Skontaktuj się z nami — bezpłatna wycena w 24 godziny. Firmy z Tarnowa i Małopolski Wschodniej mogą liczyć na strony, które sprzedają.
+              Skontaktuj się z nami — wycena jest bezpłatna. Firmom z Tarnowa i Małopolski Wschodniej projektujemy strony z myślą o pozyskiwaniu klientów.
             </p>
           
                         <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">

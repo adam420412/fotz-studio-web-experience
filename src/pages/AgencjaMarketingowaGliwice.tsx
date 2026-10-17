@@ -11,59 +11,59 @@ const services = [
   {
     icon: Globe,
     title: "Strony i sklepy internetowe",
-    description: "Projektujemy responsywne strony www i sklepy e-commerce dla firm z Gliwic. Szybkie, zoptymalizowane pod SEO i konwersję. Shopify, WooCommerce, Next.js — rozwiązania dla firm technologicznych i produkcyjnych Gliwic."
+    description: "Projektujemy responsywne strony www i sklepy e-commerce dla firm z Gliwic. Szybkie, zoptymalizowane pod SEO i konwersję. Shopify, WooCommerce, Next.js — dobieramy technologię do skali i potrzeb firmy."
   },
   {
     icon: Target,
     title: "Pozycjonowanie SEO",
-    description: "Agencja SEO Gliwice — zwiększamy widoczność firm w Google. Audyt techniczny, optymalizacja treści, link building. Specjalizacja w SEO dla firm IT, inżynieryjnych i produkcyjnych na konkurencyjnym rynku Śląska."
+    description: "Pozycjonowanie dla firm z Gliwic — pracujemy nad widocznością w Google. Audyt techniczny, optymalizacja treści, link building. Nie gwarantujemy konkretnej pozycji — raportujemy realne zmiany widoczności i ruchu."
   },
   {
     icon: Zap,
     title: "Kampanie Google Ads",
-    description: "Zaawansowane kampanie Google Ads: search, shopping, display. Konfiguracja, optymalizacja i skalowanie. Raportowanie ROAS i CPL. Budżety od 2 000 do 100 000 PLN/mies. Gliwice to hub IT — wysokie konkurencje wymagają profesjonalnego podejścia."
+    description: "Zaawansowane kampanie Google Ads: search, shopping, display. Konfiguracja, optymalizacja i skalowanie. Raportowanie ROAS i CPL. Budżet reklamowy płacisz Google osobno — pomagamy dobrać go do celu i konkurencji w branży."
   },
   {
     icon: Star,
     title: "Kampanie Meta Ads",
-    description: "Kampanie na Facebooku i Instagramie z precyzyjnym targetowaniem. Efektywne dla B2B, e-commerce i firm produkcji. Targeting dla firm technicznych i decydentów z Gliwic i regionu śląskiego."
+    description: "Kampanie na Facebooku i Instagramie z precyzyjnym targetowaniem. Dla B2B, e-commerce i firm produkcyjnych. Targetowanie na odbiorców z Gliwic i regionu śląskiego."
   },
   {
     icon: Users,
     title: "Social media marketing",
-    description: "Agencja social media Gliwice — obsługa Instagram, Facebook, LinkedIn, TikTok. Kreacje treści, kampanie, community management. LinkedIn strategy dla firm IT i inżynieryjnych, Twitter dla community tech."
+    description: "Obsługa social media dla firm z Gliwic — Instagram, Facebook, LinkedIn, TikTok. Kreacje treści, kampanie, community management. LinkedIn dla firm B2B i inżynieryjnych."
   },
   {
     icon: Building2,
     title: "Identyfikacja wizualna",
-    description: "Branding i identyfikacja wizualna: logo, brandbook, system identyfikacji. Dla startupów tech, firm produkcji i firm usług dla biznesu. Mocna identyfikacja zwiększa wiarygodność na konkurencyjnym rynku."
+    description: "Branding i identyfikacja wizualna: logo, brandbook, system identyfikacji. Dla startupów tech, firm produkcji i firm usług dla biznesu. Spójna identyfikacja pomaga budować wiarygodność marki."
   }
 ];
 
 const faqItems = [
   {
     question: "Jakie wyzwania marketingowe stoi przed firmami z Gliwic?",
-    answer: "Gliwice to hub IT/tech Śląska (Politechnika Śląska, PSG Group, firmy IT, Mitsubishi Motors). Konkurencja jest wysoka, ale audytorium jest zaawansowane cyfrowo i zna wartość dobrego marketingu. Firmy z Gliwic szukają agencji znającej specyfikę tech-focused biznesu — SEO dla technical terms, LinkedIn Ads dla B2B, kampanie na developer forums."
+    answer: "Gliwice to ważny ośrodek technologiczny i przemysłowy Śląska, z Politechniką Śląską i wieloma firmami B2B. Dla takich firm liczą się zwykle: SEO pod specjalistyczne frazy, LinkedIn dla B2B i komunikacja, która tłumaczy złożoną ofertę prostym językiem. Konkretne priorytety ustalamy po analizie Twojej firmy i konkurencji."
   },
   {
     question: "Czy agencja z innego miasta obsługuje klientów z Gliwic?",
-    answer: "Tak — obsługujemy firmy z całej Polski, w tym z Gliwic. Współpraca przebiega online (Google Meet, Teams). Ponad 40% naszych klientów pochodzi z różnych miast. Gliwice to rynek zaawansowany cyfrowo — format online nie jest problemem. Ważne jest zrozumienie specyfiki firm IT i produkcji, które dominują w Gliwicach."
+    answer: "Tak — pracujemy z Poznania, a firmy z Gliwic obsługujemy zdalnie. Współpraca przebiega online (Google Meet, Teams), a materiały i raporty udostępniamy w chmurze. Nie mamy biura w Gliwicach."
   },
   {
     question: "Ile kosztuje agencja marketingowa w Gliwicach?",
-    answer: "Ceny zależą od zakresu: pojedynczy kanał (SEO, Meta Ads) od 1 500–3 000 PLN/mies. Kompleksowa obsługa — SEO, Google Ads, social media — od 5 000–15 000 PLN/mies. Dla firm IT i produkcji dochodzą LinkedIn campaigns i technical SEO. Każdą wycenę poprzedzamy bezpłatną konsultacją."
+    answer: "Cena zależy od zakresu: liczby kanałów (SEO, Google Ads, Meta Ads, LinkedIn, social media), ilości treści i kreacji, potrzeby strony WWW oraz częstotliwości raportowania. Wycenę przygotowujemy po bezpłatnej rozmowie o zakresie. Budżet reklamowy płacony platformom jest zawsze osobną pozycją."
   },
   {
     question: "Jakie kampanie reklamowe są najskuteczniejsze dla Gliwic?",
-    answer: "W Gliwicach skuteczne są: LinkedIn Ads dla firm IT/engineering (targetowanie CEO, CTO, managers), Google Ads dla technical terms i B2B procurement, SEO dla firm produkcji (BMW, Mitsubishi Motors), kampanie retargeting dla e-commerce. Gliwice wymaga B2B-focused podejścia — mniej sensu mają mass-market kampanie jak TikTok."
+    answer: "To zależy od branży i grupy docelowej. Dla firm IT i inżynieryjnych warto rozważyć LinkedIn Ads (targetowanie na stanowiska decyzyjne) i Google Ads na specjalistyczne frazy B2B, dla firm produkcyjnych — SEO pod frazy produktowe, dla e-commerce — kampanie z retargetingiem. Właściwy miks kanałów dobieramy po analizie, a skuteczność sprawdzamy na danych z kampanii."
   },
   {
     question: "Czym wyróżnia się Gliwice na rynku marketingowym Śląska?",
-    answer: "Gliwice to centrum IT/tech Śląska — Politechnika Śląska, PSG Group, duża koncentracja firm technologicznych, Mitsubishi Motors. Rynek wymaga specjalistów w technical marketing, B2B, developer relations. Gliwice to miasto innowacyjne — marki tu muszą wyróżniać się kompetencją i technologią, nie tylko kreatywą."
+    answer: "Gliwice to ośrodek akademicki i technologiczny — z Politechniką Śląską, strefą ekonomiczną i firmami przemysłowymi. W takim otoczeniu marki B2B zwykle muszą wyróżniać się kompetencją i jasnym wyjaśnieniem oferty, nie tylko kreacją."
   },
   {
     question: "Czy oferujecie marketing dla firm technologicznych z Gliwic?",
-    answer: "Tak — specjalizacja w marketing dla tech firms. Projektujemy SEO dla dokumentacji i developer content, LinkedIn campaigns dla C-level, Google Ads dla high-intent B2B leads, content marketing (technical posts, case studies). Rozumiemy ecosystem Politechniki Śląskiej i firm z PSG Group."
+    answer: "Tak. Dla firm technologicznych przygotowujemy m.in. SEO treści eksperckich, kampanie LinkedIn kierowane do kadry zarządzającej, Google Ads na frazy B2B o wysokiej intencji oraz content marketing (artykuły techniczne, opisy wdrożeń). Zakres dobieramy po rozmowie o Twojej ofercie i klientach."
   }
 ];
 
@@ -80,7 +80,7 @@ export default function AgencjaMarketingowaGliwice() {
 
         <ServiceSchema
           name="Agencja Marketingowa Gliwice"
-          description="Kompleksowe usługi marketingu internetowego dla firm z Gliwic — SEO, Google Ads, Meta Ads, social media, strony internetowe dla tech hub i firm produkcji."
+          description="Kompleksowe usługi marketingu internetowego dla firm z Gliwic — SEO, Google Ads, Meta Ads, social media, strony internetowe — obsługa zdalna z Poznania."
           provider="Fotz Studio"
           areaServed="Gliwice"
         />
@@ -109,11 +109,11 @@ export default function AgencjaMarketingowaGliwice() {
               </h1>
 
               <p className="text-lg md:text-xl text-muted-foreground mb-6 max-w-2xl mx-auto">
-                Kompleksowy marketing internetowy dla firm z Gliwic. SEO, Google Ads, Meta Ads, social media, strony internetowe — wszystko w jednej agencji. Specjaliści w marketingu dla IT hub i firm produkcji.
+                Kompleksowy marketing internetowy dla firm z Gliwic. SEO, Google Ads, Meta Ads, social media, strony internetowe — wszystko w jednej agencji. Pracujemy z Poznania, firmy z Gliwic obsługujemy zdalnie.
               </p>
 
               <p className="text-base text-muted-foreground/80 mb-10 max-w-xl mx-auto">
-                Gliwice to centrum IT/tech Śląska — Politechnika Śląska, PSG Group, firmy technologiczne, Mitsubishi Motors. Rynek wymaga profesjonalnego podejścia do marketingu, mierzalnych wyników i ciągłej optymalizacji.
+                Gliwice to ośrodek technologiczny i przemysłowy Śląska. Firmy z takiego rynku potrzebują marketingu opartego na danych, mierzalnych celach i regularnej optymalizacji.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -130,25 +130,6 @@ export default function AgencjaMarketingowaGliwice() {
           </div>
         </section>
 
-        {/* Stats */}
-        <section className="py-12 bg-card/30 border-y border-border/30">
-          <div className="container px-4">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto text-center">
-              {[
-                { value: "+280%", label: "wzrost ruchu (5 miesięcy)" },
-                { value: "TOP 5", label: "pozycje w Google" },
-                { value: "4.8/5", label: "ocena (22 opinie)" },
-                { value: "200+", label: "zrealizowanych kampanii" }
-              ].map((s, i) => (
-                <div key={i}>
-                  <div className="text-3xl md:text-4xl font-heading font-bold text-yellow-400 mb-1">{s.value}</div>
-                  <div className="text-sm text-muted-foreground">{s.label}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* Services */}
         <section className="py-20 md:py-28 bg-background">
           <div className="container px-4">
@@ -159,7 +140,7 @@ export default function AgencjaMarketingowaGliwice() {
                   <span className="text-yellow-400">Gliwic</span>
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Kompleksowe usługi dostosowane do rynku Gliwic — od startupów tech po firmy produkcji i PSG Group.
+                  Usługi dobierane do potrzeb firmy — od startupów technologicznych po firmy produkcyjne.
                 </p>
               </div>
 
@@ -189,7 +170,7 @@ export default function AgencjaMarketingowaGliwice() {
                   <span className="text-yellow-400">Gliwic?</span>
                 </h2>
                 <p className="text-muted-foreground">
-                  Specjaliści w marketingu dla tech hub i firm produkcji.
+                  Strategia, kreacja i kampanie w jednym zespole — zdalnie, z Poznania.
                 </p>
               </div>
 
@@ -197,8 +178,8 @@ export default function AgencjaMarketingowaGliwice() {
                 {[
                   {
                     icon: Award,
-                    title: "Doświadczenie na rynku IT/tech",
-                    desc: "Gliwice to centrum technologiczne Śląska — znamy specyfikę firm IT, Politechniki Śląskiej, innowacyjnych startupów. Wiemy, jak wyróżnić Twoją firmę w konkurencyjnym ekosystemie."
+                    title: "Analiza przed działaniem",
+                    desc: "Zanim zaproponujemy kanały, analizujemy Twoją ofertę, klientów i konkurencję w regionie. Rekomendacje opieramy na tej analizie, a nie na gotowym pakiecie."
                   },
                   {
                     icon: TrendingUp,
@@ -207,13 +188,13 @@ export default function AgencjaMarketingowaGliwice() {
                   },
                   {
                     icon: Users,
-                    title: "Dedykowany ekspert projektu",
-                    desc: "Masz stały kontakt z ekspertem znającym rynek Gliwic, trendy tech, psychologię decydentów. Nie rotujemy juniorów."
+                    title: "Stała osoba kontaktowa",
+                    desc: "Masz jedną osobę odpowiedzialną za projekt i komunikację — spotkania prowadzimy online."
                   },
                   {
                     icon: Globe,
-                    title: "Strategia dla miasta innowacyjnego",
-                    desc: "Gliwice przyciąga firmy technologiczne i innowacyjne. Znamy zarówno polski rynek jak i kampanie dla audytorium tech-savvy."
+                    title: "Własna produkcja treści",
+                    desc: "Video, zdjęcia, grafiki i strony WWW tworzymy we własnym zespole, więc kampanie i treści są spójne."
                   }
                 ].map((item, i) => (
                   <div
@@ -237,82 +218,35 @@ export default function AgencjaMarketingowaGliwice() {
         {/* Pricing */}
         <section className="py-20 md:py-28 bg-background">
           <div className="container px-4">
-            <div className="max-w-5xl mx-auto">
+            <div className="max-w-3xl mx-auto">
               <div className="text-center mb-14">
                 <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Pakiety marketingowe
+                  Od czego zależy wycena?
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Elastyczne pakiety dostosowane do budżetu i potrzeb Twojej firmy.
+                  Nie mamy sztywnych pakietów. Wycenę przygotowujemy po rozmowie o zakresie, biorąc pod uwagę:
                 </p>
               </div>
 
-              <div className="grid md:grid-cols-3 gap-6">
+              <ul className="space-y-3 mb-10">
                 {[
-                  {
-                    name: "START",
-                    price: "1500",
-                    desc: "Dla startupów i małych firm",
-                    features: [
-                      "Strona www (5 podstron)",
-                      "Podstawowy SEO",
-                      "Google Business Profile",
-                      "Social media setup"
-                    ]
-                  },
-                  {
-                    name: "ROZWÓJ",
-                    price: "3500",
-                    desc: "Dla firm średnich",
-                    features: [
-                      "Strona www lub redesign",
-                      "Kompleksowe SEO",
-                      "Kampania Google Ads",
-                      "Social media campaigns",
-                      "Raportowanie"
-                    ],
-                    highlighted: true
-                  },
-                  {
-                    name: "PREMIUM",
-                    price: "7000+",
-                    desc: "Dla firm dużych i korporacji",
-                    features: [
-                      "Kompleksowy marketing",
-                      "Wielokanałowe kampanie",
-                      "Dedykowany team",
-                      "Strategia full-funnel",
-                      "Ciągła optymalizacja"
-                    ]
-                  }
-                ].map((pkg, i) => (
-                  <div
-                    key={i}
-                    className={`p-8 rounded-2xl border transition-all ${
-                      pkg.highlighted
-                        ? "border-yellow-400/50 bg-card/40 shadow-lg shadow-yellow-400/10"
-                        : "border-border/40 bg-card/20"
-                    }`}
-                  >
-                    <h3 className="text-xl font-heading font-bold mb-2">{pkg.name}</h3>
-                    <p className="text-sm text-muted-foreground mb-4">{pkg.desc}</p>
-                    <div className="mb-6 pb-6 border-b border-border/30">
-                      <span className="text-3xl font-bold text-yellow-400">{pkg.price}</span>
-                      <span className="text-muted-foreground"> PLN/mies</span>
-                    </div>
-                    <ul className="space-y-3 mb-6">
-                      {pkg.features.map((feature, j) => (
-                        <li key={j} className="flex items-center gap-2 text-sm">
-                          <span className="w-1.5 h-1.5 rounded-full bg-yellow-400" />
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
-                    <Button asChild variant={pkg.highlighted ? "default" : "outline"} className="w-full">
-                      <Link to="/kontakt">Więcej informacji</Link>
-                    </Button>
-                  </div>
+                  "liczbę kanałów — SEO, Google Ads, Meta Ads, LinkedIn, social media",
+                  "ilość treści i kreacji do przygotowania, w tym video i zdjęcia",
+                  "potrzebę nowej strony WWW lub przebudowy obecnej",
+                  "częstotliwość raportowania i spotkań",
+                  "budżet reklamowy — płacony platformom osobno, poza wynagrodzeniem agencji"
+                ].map((factor, i) => (
+                  <li key={i} className="flex items-start gap-2 text-sm">
+                    <span className="w-1.5 h-1.5 rounded-full bg-yellow-400 mt-2 flex-shrink-0" />
+                    <span className="text-muted-foreground">{factor}</span>
+                  </li>
                 ))}
+              </ul>
+
+              <div className="text-center">
+                <Button asChild>
+                  <Link to="/kontakt">Zapytaj o wycenę</Link>
+                </Button>
               </div>
             </div>
           </div>
@@ -336,7 +270,7 @@ export default function AgencjaMarketingowaGliwice() {
                 </Button>
               </div>
               <p className="text-white/50 text-xs mt-6">
-                Odpowiadamy w ciągu 24 godzin - Bez sprzedaży pod presją
+                Bez sprzedaży pod presją
               </p>
             </div>
           </div>

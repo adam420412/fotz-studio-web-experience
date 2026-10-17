@@ -2,10 +2,9 @@ import { motion } from "framer-motion";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { Link } from "react-router-dom";
 import { 
-  Target, Users, TrendingUp, BarChart3, Zap, Eye, 
-  MousePointer, DollarSign, CheckCircle2, 
+  Users, TrendingUp, DollarSign, CheckCircle2, 
   ArrowRight, Video, Sparkles, Music2, Heart,
-  Smartphone, Play, Megaphone, RefreshCw, Rocket
+  Play, Megaphone, Rocket
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {

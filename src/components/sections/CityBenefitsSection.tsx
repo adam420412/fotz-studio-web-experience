@@ -150,8 +150,8 @@ export const CityBenefitsSection = ({
                 className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-primary to-primary/80 p-6 
                           flex flex-col justify-center items-center text-center shadow-xl shadow-primary/20"
               >
-                <span className="text-4xl font-bold text-primary-foreground mb-2">600+</span>
-                <span className="text-primary-foreground/80 text-sm">Zrealizowanych projektów</span>
+                <span className="text-3xl font-bold text-primary-foreground mb-2">Foto · Wideo · WWW</span>
+                <span className="text-primary-foreground/80 text-sm">w jednym zespole z Poznania</span>
               </motion.div>
             </div>
 
@@ -164,8 +164,8 @@ export const CityBenefitsSection = ({
               className="absolute -top-6 -right-6 w-24 h-24 rounded-full bg-gradient-to-br from-secondary to-secondary/80
                         flex flex-col items-center justify-center text-secondary-foreground shadow-xl z-10"
             >
-              <span className="text-2xl font-bold">100%</span>
-              <span className="text-[10px] leading-tight text-center px-2">zadowolonych klientów</span>
+              <span className="text-lg font-bold">Zdalnie</span>
+              <span className="text-[10px] leading-tight text-center px-2">w całej Polsce</span>
             </motion.div>
           </motion.div>
         </div>

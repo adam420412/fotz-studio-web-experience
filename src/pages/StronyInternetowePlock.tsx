@@ -256,10 +256,10 @@ const StronyInternetowePlock = () => {
               SEO lokalne dla firm z Płocka — Google Moja Firma i lokalna widoczność
             </h2>
             <p className="text-muted-foreground mb-4">
-              Lokalne frazy to najtańszy sposób na pozyskanie klientów z okolicy. Optymalizujemy strony pod frazy z Płocka i regionu, konfigurujemy profil Google Moja Firma i budujemy widoczność w mapach Google. Podwójna widoczność — organic i mapy — bez stałych kosztów reklamy.
+              Optymalizujemy strony pod frazy z Płocka i regionu, konfigurujemy profil Google Moja Firma i pracujemy nad widocznością w mapach Google. Nie gwarantujemy konkretnej pozycji — efekty zależą od branży, konkurencji i stanu strony.
             </p>
             <p className="text-muted-foreground">
-              Skontaktuj się z nami — bezpłatna wycena w 24 godziny. Strony internetowe dla firm z Płocka tworzymy z pasją i precyzją.
+              Skontaktuj się z nami — wycena jest bezpłatna. Strony internetowe dla firm z Płocka tworzymy z pasją i precyzją.
             </p>
           
                         <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
