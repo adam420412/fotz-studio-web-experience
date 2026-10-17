@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { SEOHead } from "@/components/seo/SEOHead";
-import { Scale, ArrowRight, CheckCircle, Shield, Globe, FileText, TrendingUp, Briefcase, Award, Lock, Plus, Phone } from "lucide-react";
+import { Scale, ArrowRight, CheckCircle, Shield, Globe, FileText, TrendingUp, Briefcase, Award, Lock, Plus } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
@@ -51,7 +51,7 @@ const customSolutions = [
 
 const benefits = [
   "Budowanie autorytetu eksperta w branży",
-  "Pozyskiwanie klientów premium i korporacyjnych",
+  "Komunikacja skierowana do klientów premium i korporacyjnych",
   "Kampanie zgodne z regulacjami samorządów zawodowych",
   "Bezpieczna komunikacja z klientami online",
   "Content marketing budujący zaufanie",
@@ -61,7 +61,7 @@ const benefits = [
 const faqItems = [
   {
     question: "Czy prawnik może się reklamować?",
-    answer: "Tak, ale z ograniczeniami. Reklama usług prawnych podlega regulacjom samorządów. Nie można obiecywać konkretnych wyników, porównywać się z konkurencją ani używać agresywnych metod pozyskiwania klientów. Nasze kampanie są w pełni zgodne z etyką zawodową.",
+    answer: "Tak, ale z ograniczeniami. Reklama usług prawnych podlega regulacjom samorządów. Nie można obiecywać konkretnych wyników, porównywać się z konkurencją ani używać agresywnych metod pozyskiwania klientów. Kampanie projektujemy z uwzględnieniem tych zasad, a każdą treść przed publikacją akceptuje kancelaria.",
   },
   {
     question: "Jak budować markę osobistą prawnika?",
@@ -69,11 +69,11 @@ const faqItems = [
   },
   {
     question: "Ile kosztuje marketing dla kancelarii prawnej?",
-    answer: "Podstawowa obsługa (strona + SEO + LinkedIn) zaczyna się od 4000 zł/miesiąc. Pełna obsługa z content marketingiem, PR i kampaniami to 8000-15000 zł/miesiąc w zależności od specjalizacji.",
+    answer: "Wycenę przygotowujemy po rozmowie o zakresie. Zależy ona od tego, czy potrzebna jest nowa strona, jak intensywnie prowadzimy SEO i LinkedIn, ile treści eksperckich powstaje co miesiąc oraz czy w grę wchodzą kampanie płatne. Budżet reklamowy płacony platformom (Google, LinkedIn, Meta) jest zawsze osobno.",
   },
   {
     question: "Czy tworzycie treści prawnicze?",
-    answer: "Współpracujemy z prawnikami i specjalistami, którzy tworzą merytoryczne treści. Zapewniamy redakcję, optymalizację SEO i dystrybucję. Treści są zawsze weryfikowane przez kancelarię przed publikacją.",
+    answer: "Merytoryczną treść dostarcza lub konsultuje kancelaria albo jej eksperci. My zapewniamy redakcję, optymalizację SEO i dystrybucję. Treści są zawsze weryfikowane przez kancelarię przed publikacją.",
   },
   {
     question: "Jak pozyskiwać klientów korporacyjnych?",

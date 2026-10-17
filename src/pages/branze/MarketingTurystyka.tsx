@@ -178,6 +178,28 @@ const MarketingTurystyka = () => {
               </Button>
             </div>
           </motion.div>
+
+          {/* Highlights */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.7 }}
+            className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16"
+          >
+            {[
+              { title: "Strony z rezerwacją", label: "dla hoteli i biur podróży" },
+              { title: "Foto i wideo", label: "własna produkcja w Poznaniu" },
+              { title: "Ujęcia z drona", label: "operator z uprawnieniami UAVO" },
+              { title: "Kampanie sezonowe", label: "Google Ads i Meta Ads" },
+            ].map((item, index) => (
+              <div key={index} className="text-center p-6 rounded-2xl bg-card border border-border/30">
+                <div className="text-lg md:text-xl font-heading font-bold text-gradient-premium">
+                  {item.title}
+                </div>
+                <p className="text-foreground/60 text-sm mt-2">{item.label}</p>
+              </div>
+            ))}
+          </motion.div>
         </div>
       </section>
 

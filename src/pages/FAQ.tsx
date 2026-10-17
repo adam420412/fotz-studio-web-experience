@@ -24,7 +24,7 @@ const faqCategories = [
       },
       {
         question: "Gdzie mieści się biuro Fotz Studio?",
-        answer: "Nasze biuro znajduje się w centrum Poznania, na Placu Wolności 16. Zapraszamy na spotkania od poniedziałku do piątku w godzinach 9:00-17:00. Możemy również umówić się na wideokonferencję.",
+        answer: "Pracujemy z Poznania. Z firmami z Poznania i okolic możemy spotkać się osobiście po wcześniejszym umówieniu terminu, a firmy z innych miast obsługujemy zdalnie — przez wideokonferencje, telefon i e-mail.",
       },
       {
         question: "Dla jakich branż pracujecie?",
@@ -32,7 +32,7 @@ const faqCategories = [
       },
       {
         question: "Jak wygląda proces współpracy z Fotz Studio?",
-        answer: "Proces rozpoczynamy od bezpłatnej konsultacji, podczas której poznajemy Twoje cele biznesowe. Następnie przygotowujemy indywidualną strategię i ofertę. Po akceptacji przechodzimy do realizacji, regularnie raportując postępy. Stawiamy na długoterminową współpracę opartą na zaufaniu i wynikach.",
+        answer: "Proces rozpoczynamy od bezpłatnej konsultacji, podczas której poznajemy Twoje cele biznesowe. Następnie przygotowujemy indywidualną strategię i ofertę. Po akceptacji przechodzimy do realizacji, regularnie raportując postępy. Stawiamy na długoterminową współpracę opartą na zaufaniu i przejrzystej komunikacji.",
       },
     ],
   },
@@ -43,19 +43,19 @@ const faqCategories = [
     questions: [
       {
         question: "Ile kosztuje strona internetowa?",
-        answer: "Ceny stron internetowych zaczynają się od około 3000 zł za prostą stronę wizytówkę, przez 5000-10000 zł za rozbudowane strony firmowe, do 15000+ zł za sklepy internetowe i zaawansowane platformy. Dokładna wycena zależy od funkcjonalności, ilości podstron i indywidualnych wymagań.",
+        answer: "Nie mamy sztywnego cennika. Wycena zależy od liczby podstron, projektu graficznego, potrzebnych funkcji i integracji (np. sklep, płatności, panel do edycji treści) oraz zakresu wsparcia po uruchomieniu. Domena i hosting to osobne koszty u dostawców. Wycenę przygotowujemy po rozmowie o zakresie.",
       },
       {
         question: "Jak długo trwa stworzenie strony internetowej?",
-        answer: "Czas realizacji zależy od skali projektu. Prosta strona wizytówka to 2-3 tygodnie. Rozbudowana strona firmowa to 4-6 tygodni. Sklep internetowy to 6-10 tygodni. Czas może się wydłużyć w zależności od dostarczenia materiałów i ilości poprawek.",
+        answer: "Czas realizacji zależy od skali projektu, liczby podstron i funkcji, terminu dostarczenia materiałów (teksty, zdjęcia) oraz liczby rund poprawek. Harmonogram ustalamy indywidualnie przed startem prac i zapisujemy go w ofercie.",
       },
       {
         question: "Czy strona będzie responsywna (dostosowana do telefonów)?",
-        answer: "Tak, wszystkie nasze strony są w pełni responsywne i dostosowane do urządzeń mobilnych. Ponad 70% ruchu internetowego pochodzi z telefonów, więc jest to dla nas absolutny priorytet.",
+        answer: "Tak, wszystkie nasze strony są w pełni responsywne i dostosowane do urządzeń mobilnych. Wielu użytkowników odwiedza strony z telefonów, więc wersja mobilna jest dla nas priorytetem.",
       },
       {
         question: "Czy pomagacie w pozycjonowaniu strony?",
-        answer: "Tak, oferujemy kompleksowe usługi SEO. Każda strona od nas jest zoptymalizowana pod kątem wyszukiwarek już na etapie tworzenia. Dodatkowo oferujemy stałą obsługę pozycjonowania z comiesięcznym raportowaniem.",
+        answer: "Tak, oferujemy kompleksowe usługi SEO. Każda strona od nas jest zoptymalizowana pod kątem wyszukiwarek już na etapie tworzenia. Dodatkowo oferujemy stałą obsługę pozycjonowania z comiesięcznym raportowaniem. Nie gwarantujemy konkretnych pozycji w Google — opisujemy działania i ich efekty w raportach.",
       },
     ],
   },
@@ -66,7 +66,7 @@ const faqCategories = [
     questions: [
       {
         question: "Ile kosztuje prowadzenie social media?",
-        answer: "Pakiety prowadzenia social media zaczynają się od 1500 zł/mies za podstawowy pakiet (8 postów + stories). Pakiet Business to 2500-4000 zł/mies (16 postów + reelsy). Kompleksowa obsługa z tworzeniem treści video to 5000+ zł/mies. Ceny zależą od ilości platform i zakresu usług.",
+        answer: "Nie mamy sztywnych pakietów cenowych. Koszt zależy od liczby platform, liczby i rodzaju publikacji (posty, stories, reelsy), tego, czy treści video nagrywamy u Ciebie, oraz od zakresu moderacji i raportowania. Budżet na reklamy płacony platformom jest zawsze osobny. Wycenę przygotowujemy po rozmowie o zakresie.",
       },
       {
         question: "Jakie platformy social media obsługujecie?",
@@ -89,7 +89,7 @@ const faqCategories = [
     questions: [
       {
         question: "Jaki budżet reklamowy potrzebuję na start?",
-        answer: "Rekomendujemy minimalny budżet reklamowy od 2000 zł/mies na platformę (Facebook/Instagram Ads lub Google Ads). Do tego dochodzi koszt obsługi kampanii. Optymalny budżet na start to 3000-5000 zł/mies, który pozwala na zebranie wystarczającej ilości danych do optymalizacji.",
+        answer: "Budżet reklamowy dobieramy do celu kampanii, branży, konkurencji i zasięgu geograficznego. Płacisz go bezpośrednio platformie (Meta, Google) — zawsze osobno od kosztu obsługi kampanii. Ważne, by budżet pozwalał zebrać dane potrzebne do optymalizacji; konkretną propozycję przedstawiamy po rozmowie o celach.",
       },
       {
         question: "Google Ads czy Facebook Ads - co wybrać?",
@@ -97,7 +97,7 @@ const faqCategories = [
       },
       {
         question: "Jak szybko zobaczę wyniki z reklam?",
-        answer: "Pierwsze wyniki widoczne są już po kilku dniach od uruchomienia kampanii. Jednak pełna optymalizacja i stabilne wyniki wymagają 2-3 miesięcy zbierania danych i testowania. Dlatego rekomendujemy minimum 3-miesięczną współpracę.",
+        answer: "Kampanie zaczynają zbierać dane od momentu uruchomienia, ale nie obiecujemy konkretnych wyników ani terminów. Optymalizacja wymaga czasu na testowanie kreacji, grup odbiorców i stawek — jego długość zależy od budżetu, branży i liczby konwersji. Postępy pokazujemy w regularnych raportach.",
       },
       {
         question: "Czy prowadzicie kampanie na TikToku i LinkedIn?",
@@ -105,7 +105,7 @@ const faqCategories = [
       },
       {
         question: "Jakie są zalety łączenia Facebook i Instagram Ads?",
-        answer: "Łączenie Facebook i Instagram Ads w ramach Meta Ads daje dostęp do wspólnej puli odbiorców i automatycznej optymalizacji cross-platform. Jeden Pixel śledzi konwersje z obu platform, remarketing działa płynnie między nimi, a Advantage+ alokuje budżet tam, gdzie osiągasz najlepsze wyniki. Szczegóły znajdziesz na naszej stronie Meta Ads.",
+        answer: "Łączenie Facebook i Instagram Ads w ramach Meta Ads daje dostęp do wspólnej puli odbiorców i automatycznej optymalizacji cross-platform. Jeden Pixel śledzi konwersje z obu platform, remarketing działa płynnie między nimi, a Advantage+ automatycznie rozdziela budżet między miejsca emisji. Szczegóły znajdziesz na naszej stronie Meta Ads.",
         link: "/performance-marketing/meta-ads"
       },
     ],
@@ -121,11 +121,11 @@ const faqCategories = [
       },
       {
         question: "Ile kosztuje projekt logo?",
-        answer: "Samo logo to koszt od 1500 zł (podstawowe) do 5000+ zł (z pełnym procesem strategicznym). Pełna identyfikacja wizualna to 5000-15000 zł w zależności od zakresu. Rebranding istniejącej marki wymaga indywidualnej wyceny.",
+        answer: "Nie mamy sztywnego cennika. Wycena zależy od tego, czy potrzebujesz samego logo, czy pełnej identyfikacji (kolory, typografia, materiały, księga znaku), od liczby koncepcji i rund poprawek oraz od tego, czy projekt obejmuje warsztat strategiczny. Rebranding istniejącej marki również wyceniamy indywidualnie, po rozmowie o zakresie.",
       },
       {
         question: "Ile trwa stworzenie identyfikacji wizualnej?",
-        answer: "Podstawowe logo to 1-2 tygodnie. Pełna identyfikacja wizualna to 3-6 tygodni w zależności od zakresu. Czas może się wydłużyć przy większej liczbie rund poprawek. Priorytetowe realizacje są możliwe za dodatkową opłatą.",
+        answer: "Czas zależy od zakresu (samo logo czy pełna identyfikacja), liczby koncepcji i rund poprawek oraz tempa przekazywania informacji zwrotnej. Harmonogram ustalamy przed startem prac. Realizacje priorytetowe omawiamy indywidualnie.",
       },
     ],
   },
@@ -136,7 +136,7 @@ const faqCategories = [
     questions: [
       {
         question: "Ile kosztuje spot reklamowy?",
-        answer: "Prosty spot reklamowy (15-30 sek) to koszt od 3000 zł. Spot z profesjonalną ekipą, aktorem i lokacją to 8000-20000 zł. Kampanie wizerunkowe premium mogą kosztować 30000+ zł. Cena zależy od scenariusza, lokacji, obsady i postprodukcji.",
+        answer: "Nie mamy sztywnego cennika. Koszt spotu zależy od scenariusza, liczby dni zdjęciowych, wielkości ekipy, lokacji, obsady (np. aktorzy), sprzętu (np. dron) oraz zakresu postprodukcji i liczby wersji montażowych. Wycenę przygotowujemy po rozmowie o koncepcji i zakresie.",
       },
       {
         question: "Czy macie własne studio nagraniowe?",
@@ -163,7 +163,7 @@ const faqCategories = [
       },
       {
         question: "Czy oferujecie stałą obsługę sklepu?",
-        answer: "Tak, oferujemy pakiety stałej obsługi obejmujące: aktualizacje techniczne, dodawanie produktów, optymalizację SEO, obsługę kampanii reklamowych oraz analizę i optymalizację konwersji. Pakiety od 1500 zł/mies.",
+        answer: "Tak, oferujemy stałą obsługę obejmującą m.in.: aktualizacje techniczne, dodawanie produktów, optymalizację SEO, obsługę kampanii reklamowych oraz analizę konwersji. Zakres i wycenę ustalamy indywidualnie, a budżet reklamowy płacony platformom jest zawsze osobny.",
       },
     ],
   },
@@ -215,7 +215,7 @@ export default function FAQ() {
               </p>
               <div className="flex items-center gap-2 mt-6 text-muted-foreground">
                 <MapPin className="w-4 h-4 text-primary" />
-                <span>Plac Wolności 16, Poznań</span>
+                <span>Pracujemy z Poznania, klientów spoza miasta obsługujemy zdalnie</span>
               </div>
             </motion.div>
 
@@ -347,17 +347,18 @@ export default function FAQ() {
               Jak długo trwa pozycjonowanie SEO? Ile kosztuje marketing online?
             </h2>
             <p className="text-muted-foreground mb-4">
-              Pozycjonowanie SEO to proces długoterminowy — pierwsze efekty widoczne
-              są zwykle po 3-6 miesiącach, pełne efekty po 6-12 miesiącach systematycznej
-              pracy. Koszt SEO dla małej firmy to 800-2000 zł miesięcznie. To inwestycja,
-              która procentuje latami — w przeciwieństwie do reklam płatnych, ruch
-              organiczny jest bezpłatny i trwały.
+              Pozycjonowanie SEO to proces długoterminowy — tempo efektów zależy od
+              konkurencji, stanu strony i regularności działań, dlatego nie podajemy
+              sztywnych terminów ani nie gwarantujemy konkretnych pozycji. Koszt SEO
+              zależy od zakresu prac (audyt, treści, optymalizacja techniczna, linki)
+              i wyceniamy go po rozmowie. W przeciwieństwie do reklam płatnych za ruch
+              organiczny nie płacisz za każde kliknięcie.
             </p>
             <p className="text-muted-foreground mb-6">
-              Kampanie Google Ads mogą dać efekty niemal natychmiastowo — od uruchomienia
-              do pierwszych zapytań to kwestia dni. Koszt obsługi kampanii Google Ads
-              w Fotz Studio to od 500 zł miesięcznie, budżet reklamowy ustalamy
-              z klientem indywidualnie.
+              Kampanie Google Ads zaczynają wyświetlać reklamy wkrótce po uruchomieniu,
+              ale wyniki zależą od budżetu, branży i jakości strony docelowej. Koszt
+              obsługi kampanii wyceniamy po rozmowie o zakresie, a budżet reklamowy
+              płacony Google jest zawsze osobny.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
@@ -366,15 +367,14 @@ export default function FAQ() {
             <p className="text-muted-foreground mb-4">
               Wybierając agencję marketingową, sprawdź: portfolio i case studies,
               opinie klientów na Google, transparentność w komunikacji i raportowaniu,
-              znajomość Twojej branży oraz podejście do mierzenia wyników. Unikaj
-              agencji obiecujących pierwsze miejsce w Google w ciągu miesiąca —
-              to niemożliwe i może skończyć się karą od Google.
+              znajomość Twojej branży oraz podejście do mierzenia wyników. Uważaj
+              na obietnice szybkich, gwarantowanych efektów w wyszukiwarce — nikt poza
+              Google nie kontroluje wyników wyszukiwania.
             </p>
             <p className="text-muted-foreground">
               Fotz Studio oferuje bezpłatną konsultację przed nawiązaniem współpracy —
-              możesz zadać wszystkie pytania, zanim podejmiesz decyzję. Pracujemy
-              na umowach miesięcznych bez długich zobowiązań, bo jesteśmy pewni
-              jakości naszych usług.
+              możesz zadać wszystkie pytania, zanim podejmiesz decyzję. Warunki
+              i okres współpracy ustalamy indywidualnie i zapisujemy w umowie.
             </p>
           
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">

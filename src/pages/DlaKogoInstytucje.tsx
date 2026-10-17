@@ -6,20 +6,18 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
-import { AnimatedCounter } from "@/components/AnimatedCounter";
 
 // Import case study images
 import eneaImage from "@/assets/portfolio/enea-stadion-web.webp";
 import fpsImage from "@/assets/portfolio/fps-cegielski-web.webp";
-import fabrykaViraliImage from "@/assets/portfolio/fabryka-virali-web.webp";
 import gierkiImage from "@/assets/portfolio/gierki-web.webp";
 
 const caseStudies = [
   {
     title: "Enea Stadion Poznań",
-    description: "Kompleksowa obsługa marketingowa stadionu - od wydarzeń sportowych po koncerty i eventy biznesowe.",
+    description: "Współpraca przy komunikacji stadionu - od wydarzeń sportowych po koncerty i eventy biznesowe.",
     image: eneaImage,
-    results: ["500+ wydarzeń", "Miliony widzów", "Pełna obsługa foto/video"],
+    results: ["Strona WWW i treści", "Materiały na wydarzenia", "Foto i video z wydarzeń"],
     href: "/realizacje/enea-stadion",
   },
   {
@@ -28,13 +26,6 @@ const caseStudies = [
     image: fpsImage,
     results: ["Profesjonalna dokumentacja", "Promocja wydarzeń", "Archiwum cyfrowe"],
     href: "/realizacje/fps-cegielski",
-  },
-  {
-    title: "Fabryka Virali",
-    description: "Viral marketing i kampanie social media dla organizatora wydarzeń rozrywkowych.",
-    image: fabrykaViraliImage,
-    results: ["10M+ wyświetleń", "Viralowe kampanie", "Sold-out wydarzeń"],
-    href: "/realizacje/fabryka-virali",
   },
   {
     title: "Gierky Activity Bar",
@@ -82,7 +73,7 @@ const eventTypes = [
 const benefits = [
   "Doświadczenie z wydarzeniami na Enea Stadion",
   "Pełna obsługa foto i video eventów",
-  "Kampanie sprzedaży biletów z wysokim ROAS",
+  "Kampanie Meta Ads wspierające sprzedaż biletów",
   "Rozumiemy specyfikę różnych typów wydarzeń",
   "Szybka reakcja i elastyczność",
   "Zespół gotowy do pracy w weekendy i wieczory",
@@ -107,7 +98,7 @@ const faqItems = [
   },
   {
     question: "Jaki budżet reklamowy potrzebny na promocję eventu?",
-    answer: "Budżet zależy od skali wydarzenia. Dla lokalnych eventów na 100-500 osób wystarczy 2000-5000 zł. Większe wydarzenia na 1000+ osób wymagają budżetów 10000-50000 zł. Ważny jest też budżet na produkcję contentu.",
+    answer: "Budżet zależy od skali wydarzenia, liczby biletów do sprzedania, zasięgu geograficznego i czasu trwania kampanii. Budżet reklamowy płacony platformom (Meta, Google) jest zawsze osobno od naszego wynagrodzenia za obsługę i produkcję contentu. Konkretną propozycję przygotowujemy po rozmowie o wydarzeniu i celach sprzedażowych.",
   },
   {
     question: "Czy pomagacie w relacjach live z wydarzeń?",
@@ -169,8 +160,8 @@ export default function DlaKogoInstytucje() {
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-3xl">
               Wspieramy instytucje kultury, organizatorów wydarzeń i branżę eventową 
-              w promocji i budowaniu zasięgów. Wiemy, jak przyciągnąć publiczność 
-              i wyprzedać bilety.
+              w promocji i budowaniu zasięgów. Pomagamy przyciągnąć publiczność 
+              i wspieramy sprzedaż biletów.
             </p>
             
             <div className="flex flex-wrap gap-4">
@@ -195,21 +186,25 @@ export default function DlaKogoInstytucje() {
       <section className="py-12 bg-card border-y border-border">
         <div className="container-wide">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <AnimatedCounter end={500} suffix="+" label="Wydarzeń" index={0} />
-            <AnimatedCounter end={5} prefix="" suffix=" mln" label="Widzów" index={1} />
-            <div className="text-center">
-              <motion.div
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.8 }}
-                className="text-3xl md:text-4xl font-heading font-bold text-gradient-premium mb-2"
-              >
-                Enea
-              </motion.div>
-              <div className="text-sm text-foreground/60">Stadion Poznań</div>
-            </div>
-            <AnimatedCounter end={8} suffix="+" label="Lat doświadczenia" index={3} />
+            {[
+              { value: "Enea", label: "Stadion Poznań" },
+              { value: "Foto + video", label: "Dokumentacja wydarzeń" },
+              { value: "Social", label: "Promocja przed i po evencie" },
+              { value: "Meta Ads", label: "Kampanie biletowe" },
+            ].map((item, index) => (
+              <div key={item.value} className="text-center">
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.2 }}
+                  className="text-3xl md:text-4xl font-heading font-bold text-gradient-premium mb-2"
+                >
+                  {item.value}
+                </motion.div>
+                <div className="text-sm text-foreground/60">{item.label}</div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -512,8 +507,8 @@ export default function DlaKogoInstytucje() {
             </h2>
             <p className="text-muted-foreground mb-4">
               Marketing dla instytucji kultury, organizacji pozarządowych i organizatorów
-              wydarzeń to nasza specjalność. Fotz Studio pomaga teatrom, muzeom, galeriom,
-              fundacjom i organizatorom eventów dotrzeć do szerokiej publiczności.
+              wydarzeń to nasza specjalność. Fotz Studio pomaga instytucjom kultury, fundacjom
+              i organizatorom eventów dotrzeć do szerokiej publiczności.
               Kampanie promocyjne wydarzeń, social media marketing i produkcja wideo
               dla instytucji — z rozumieniem specyfiki sektora publicznego i NGO.
             </p>
@@ -545,7 +540,7 @@ export default function DlaKogoInstytucje() {
             <p className="text-muted-foreground mb-4">
               Instytucje kultury i organizacje pozarządowe mają wyjątkową misję —
               social media to dla nich narzędzie budowania społeczności wokół wartości.
-              Zarządzamy profilami instytucji na Facebooku, Instagramie i LinkedInie,
+              Prowadzimy profile instytucji na Facebooku, Instagramie i LinkedInie,
               tworząc treści edukacyjne, relacje z wydarzeń i angażujące kampanie,
               które przyciągają nowych odbiorców.
             </p>

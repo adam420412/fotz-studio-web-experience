@@ -211,7 +211,7 @@ export default function TworzenieStronInternetowych() {
     },
     {
       question: 'Czy zapewniacie hosting i domenę?',
-      answer: 'Koszt ustalamy po poznaniu zakresu: liczby podstron, treści, integracji i sposobu zarządzania. W ofercie określamy cenę, etapy, poprawki i termin; utrzymanie oraz działania marketingowe omawiamy osobno.'
+      answer: 'Możemy pomóc dobrać i skonfigurować hosting oraz domenę. Zalecamy, żeby domena i konto hostingowe były zarejestrowane na Twoją firmę — wtedy masz do nich pełny dostęp. Koszt utrzymania opisujemy w ofercie osobno.'
     },
     {
       question: 'Czy mogę samodzielnie zarządzać treścią strony?',

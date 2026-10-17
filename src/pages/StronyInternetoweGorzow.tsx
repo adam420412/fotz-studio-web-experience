@@ -254,7 +254,7 @@ const StronyInternetoweGorzow = () => {
 
                   <h3>SEO dla firm z Gorzowa Wielkopolskiego</h3>
                   <p>
-                    Nasze profesjonalne tworzenie stron internetowych to gwarancja indywidualnego podejścia do klienta.
+                    Do każdego projektu strony internetowej podchodzimy indywidualnie.
                     Zapewniamy stały kontakt i wsparcie na każdym etapie projektu, od koncepcji po wdrożenie.
                     Rozumiemy, że <Link to="/seo/pozycjonowanie" className="text-primary hover:underline">pozycjonowanie stron w Gorzowie Wielkopolskim i Lubuskim</Link> jest
                     kluczowe dla lokalnego biznesu, dlatego każda strona wychodzi z wbudowaną optymalizacją SEO.
