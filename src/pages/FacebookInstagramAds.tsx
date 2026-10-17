@@ -116,8 +116,8 @@ const sections = [
     link: "Google Ads czy reklamy Meta — porównanie",
   },
   {
-    title: "Meta Ads w 2026: co zmienia automatyzacja",
-    text: "W 2026 roku kampanie w Meta Ads coraz mocniej opierają się na automatyzacji: system Meta Ads sam dobiera miejsca emisji, odbiorców i warianty reklam. Dla firmy oznacza to, że przewagę dają dobre kreacje, poprawny pomiar i jasna oferta, a nie ręczne ustawianie dziesiątek grup odbiorców. Dlatego w kampaniach Meta Ads większą część pracy poświęcamy materiałom reklamowym i jakości danych z konta. Automatyzacja pomaga, ale nie zastępuje decyzji, komu i z jaką ofertą chcesz się pokazać.",
+    title: "Meta Ads dziś: co zmienia automatyzacja",
+    text: "Obecnie kampanie w Meta Ads coraz mocniej opierają się na automatyzacji: system Meta Ads sam dobiera miejsca emisji, odbiorców i warianty reklam. Dla firmy oznacza to, że przewagę dają dobre kreacje, poprawny pomiar i jasna oferta, a nie ręczne ustawianie dziesiątek grup odbiorców. Dlatego w kampaniach Meta Ads większą część pracy poświęcamy materiałom reklamowym i jakości danych z konta. Automatyzacja pomaga, ale nie zastępuje decyzji, komu i z jaką ofertą chcesz się pokazać.",
   },
   {
     title: "Realizacja: kampania Meta Ads dla Dawid EDU",
