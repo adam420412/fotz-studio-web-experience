@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
   ArrowRight, Palette, Camera, Video, Globe, Layers, Sparkles,
-  MapPin, Award, Zap, Target, CheckCircle2, Users
+  MapPin, Award, Target, CheckCircle2, Users
 } from "lucide-react";
 import { ServiceSchema, BreadcrumbSchema, FAQSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 
@@ -64,7 +64,7 @@ const faqItems = [
   },
   {
     question: "Ile kosztuje stworzenie identyfikacji wizualnej przez agencję kreatywną?",
-    answer: "Pakiet basic (logo + kolorystyka + typografia) zaczyna się od 3 500 zł. Kompletny brand book z systemem identyfikacji to od 8 000 zł. Wycena zależy od zakresu projektu i liczby wariantów do opracowania."
+    answer: "Wycenę przygotowujemy po rozmowie o zakresie. Zależy ona od tego, czy potrzebne jest samo logo z kolorystyką i typografią, czy kompletny brand book z systemem identyfikacji, od liczby wariantów koncepcji do opracowania oraz od liczby materiałów firmowych do zaprojektowania."
   },
   {
     question: "Czy agencja kreatywna zajmuje się też social media?",
@@ -123,7 +123,7 @@ export default function AgencjaKreaTywnaPoznan() {
 
             <motion.div variants={fadeIn} className="mb-6">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#75143F]/20 border border-[#75143F]/30 text-sm text-foreground/80">
-                <MapPin className="w-4 h-4" /> Plac Wolności 16, Poznań
+                <MapPin className="w-4 h-4" /> Pracujemy z Poznania
               </span>
             </motion.div>
 
@@ -151,27 +151,6 @@ export default function AgencjaKreaTywnaPoznan() {
                 <Link to="/realizacje">Zobacz portfolio</Link>
               </Button>
             </motion.div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Stats */}
-      <section className="py-12 bg-gradient-to-r from-[#75143F]/10 via-background to-[#0F3053]/10 border-y border-foreground/10">
-        <div className="container px-4">
-          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }}
-            variants={staggerContainer}
-            className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto text-center">
-            {[
-              { value: "300+", label: "projektów kreatywnych" },
-              { value: "8+ lat", label: "doświadczenia" },
-              { value: "160+", label: "opinii 5★ w Google" },
-              { value: "20+", label: "branż obsługiwanych" }
-            ].map((s, i) => (
-              <motion.div key={i} variants={fadeIn}>
-                <div className="text-3xl md:text-4xl font-heading font-bold bg-gradient-to-r from-[#75143F] to-[#0F3053] bg-clip-text text-transparent mb-1">{s.value}</div>
-                <div className="text-sm text-foreground/60">{s.label}</div>
-              </motion.div>
-            ))}
           </motion.div>
         </div>
       </section>
@@ -238,8 +217,8 @@ export default function AgencjaKreaTywnaPoznan() {
                 },
                 {
                   icon: Award,
-                  title: "Design z doświadczeniem",
-                  desc: "Ponad 300 projektów kreatywnych dla firm różnych branż. Nasze realizacje zdobywały uznanie klientów z sektorów premium, FMCG, technologii i gastronomii."
+                  title: "Realizacje, które można sprawdzić",
+                  desc: "Pracowaliśmy m.in. dla Enea Stadion, FPS Cegielski, WSB Merito, Gierky i Dawid EDU. Wybrane projekty opisujemy w portfolio."
                 },
                 {
                   icon: Target,
@@ -317,9 +296,9 @@ export default function AgencjaKreaTywnaPoznan() {
 
             <div className="grid md:grid-cols-3 gap-6 mb-10">
               {[
-                { title: "Enea Stadion", cat: "Branding + Social Media", link: "/realizacje/enea-stadion" },
-                { title: "Fabryka Virali", cat: "Identyfikacja wizualna + Web", link: "/realizacje/fabryka-virali" },
-                { title: "Cute Dumpling", cat: "Fotografia + Strona www", link: "/realizacje/cute-dumpling" }
+                { title: "Enea Stadion", cat: "Strona www", link: "/realizacje/enea-stadion" },
+                { title: "FPS Cegielski", cat: "Strona www + identyfikacja wizualna", link: "/realizacje/fps-cegielski" },
+                { title: "WSB Merito × Enea Stadion", cat: "Spot rekrutacyjny", link: "/realizacje/wsb-merito" }
               ].map((cs, i) => (
                 <motion.div key={i} variants={fadeIn}>
                   <Link to={cs.link}

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { SEOHead } from "@/components/seo/SEOHead";
-import { ShoppingCart, ArrowRight, CheckCircle, Package, Camera, TrendingUp, CreditCard, BarChart, Truck, Percent, Plus, Phone } from "lucide-react";
+import { ShoppingCart, ArrowRight, CheckCircle, Package, Camera, TrendingUp, CreditCard, BarChart, Truck, Plus } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
@@ -54,7 +54,6 @@ const customSolutions = [
 ];
 
 const benefits = [
-  "Wzrost sprzedaży online o 150%",
   "Konfigurator 3D produktów do personalizacji",
   "Integracja z marketplace'ami (Allegro, Amazon)",
   "Automatyzacja marketingu i remarketingu",
@@ -65,7 +64,7 @@ const benefits = [
 const faqItems = [
   {
     question: "Ile kosztuje stworzenie sklepu internetowego?",
-    answer: "Prosty sklep na WooCommerce zaczyna się od 8000 zł. Zaawansowany sklep z integracjami i konfiguratorem to 20000-80000 zł. Sklepy enterprise na dedykowanych platformach od 50000 zł.",
+    answer: "Wycenę przygotowujemy po rozmowie o zakresie. Koszt zależy od platformy (np. WooCommerce, Shopify lub rozwiązanie dedykowane), liczby produktów i wariantów, integracji (płatności, kurierzy, hurtownie, ERP, marketplace'y), konfiguratora produktów oraz zakresu zdjęć i treści. Budżet reklamowy na kampanie płacony platformom (Google, Meta) jest zawsze osobno.",
   },
   {
     question: "Czy tworzycie konfiguratory 3D dla produktów?",

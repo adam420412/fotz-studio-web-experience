@@ -36,7 +36,7 @@ const faqItems = [
   {
     question: "Ile kosztuje identyfikacja wizualna firmy?",
     answer:
-      "Koszt zależy od zakresu projektu. Podstawowa identyfikacja (logo + kolory + czcionki + karta wzorcowa) to 1 500–3 000 zł. Pełna identyfikacja z księgą znaku, szablonami dokumentów i materiałami marketingowymi kosztuje 3 500–8 000 zł. Dla korporacji z rozbudowanymi wytycznymi brand book może kosztować 10 000–30 000 zł.",
+      "Koszt zależy od zakresu projektu: czy potrzebujesz samego logo i podstawowego systemu (kolory, typografia, karta wzorcowa), czy pełnej identyfikacji z księgą znaku, szablonami dokumentów i materiałami marketingowymi. Wycenę przygotowujemy po rozmowie o zakresie, liczbie materiałów i terminie.",
   },
   {
     question: "Co zawiera kompleksowa identyfikacja wizualna?",
@@ -46,7 +46,7 @@ const faqItems = [
   {
     question: "Ile trwa stworzenie identyfikacji wizualnej?",
     answer:
-      "Czas realizacji zależy od zakresu: samo logo to 7–14 dni roboczych, pełna identyfikacja 3–6 tygodni, a rozbudowana księga znaku 6–10 tygodni. Na czas realizacji wpływa też tempo decyzji po stronie klienta — etapy zatwierdzania koncepcji i poprawki są wliczone w harmonogram.",
+      "Czas realizacji zależy od zakresu — samo logo powstaje szybciej niż pełna identyfikacja z rozbudowaną księgą znaku. Harmonogram ustalamy po briefie. Na czas realizacji wpływa też tempo decyzji po stronie klienta — etapy zatwierdzania koncepcji i poprawki są wliczone w harmonogram.",
   },
   {
     question: "Czy będę właścicielem praw autorskich do identyfikacji?",
@@ -61,7 +61,7 @@ const faqItems = [
   {
     question: "Czy pomagacie też firmom, które chcą odświeżyć starą identyfikację?",
     answer:
-      "Tak — rebrand lub refresh to nasza specjalność. Analizujemy istniejącą tożsamość wizualną, zachowujemy elementy rozpoznawalne dla klientów i modernizujemy to, co przestało działać. Rebrand może być radykalny (zupełnie nowe logo) lub ewolucyjny (aktualizacja kolorów, typografii, proporcji).",
+      "Tak — robimy zarówno rebrand, jak i refresh. Analizujemy istniejącą tożsamość wizualną, zachowujemy elementy rozpoznawalne dla klientów i modernizujemy to, co przestało działać. Rebrand może być radykalny (zupełnie nowe logo) lub ewolucyjny (aktualizacja kolorów, typografii, proporcji).",
   },
   {
     question: "Czy identyfikacja wizualna obejmuje stronę internetową?",
@@ -70,58 +70,11 @@ const faqItems = [
   },
 ];
 
-const packages = [
-  {
-    name: "Identity Start",
-    price: "1 500 zł",
-    desc: "Dla nowych firm i startupów",
-    features: [
-      "Logo (3 wersje kolorystyczne)",
-      "Paleta barw (5 kolorów)",
-      "Typografia (2 kroje pisma)",
-      "Karta wzorcowa A4",
-      "Pliki AI, EPS, PNG, SVG",
-      "Prawa autorskie w cenie",
-    ],
-    popular: false,
-  },
-  {
-    name: "Identity Business",
-    price: "3 500 zł",
-    desc: "Dla rozwijających się firm",
-    features: [
-      "Wszystko z pakietu Start",
-      "Wizytówka (projekt + gotowy do druku)",
-      "Papier firmowy i koperta",
-      "Szablon prezentacji (10 slajdów)",
-      "Sygnatura e-mail",
-      "Grafiki social media (FB, IG, LI)",
-      "Podstawowa księga znaku (20 stron)",
-    ],
-    popular: true,
-  },
-  {
-    name: "Identity Premium",
-    price: "7 500 zł",
-    desc: "Dla firm z wysokimi wymaganiami",
-    features: [
-      "Wszystko z pakietu Business",
-      "Brand book / pełna księga znaku (40+ stron)",
-      "System ikon marki (10 ikon)",
-      "Ilustracje i elementy graficzne",
-      "Materiały marketingowe (ulotka, roll-up)",
-      "Wytyczne dla dostawców i drukarni",
-      "Pełne wsparcie po wdrożeniu (3 mies.)",
-    ],
-    popular: false,
-  },
-];
-
 const services = [
   {
     icon: Pen,
     title: "Projektowanie logo",
-    desc: "Unikalne logo dopasowane do Twojej branży, wartości i grupy docelowej. 3 koncepcje, nielimitowane poprawki.",
+    desc: "Unikalne logo dopasowane do Twojej branży, wartości i grupy docelowej. Kilka koncepcji do wyboru i poprawki w ustalonym zakresie.",
   },
   {
     icon: Palette,
@@ -155,7 +108,7 @@ const UslugiIdentyfikacjaWizualna = () => {
     <Layout>
       <SEOHead
         title="Identyfikacja Wizualna Firmy — Projekt, Logo, Brand Book"
-        description="Profesjonalna identyfikacja wizualna dla firm. Logo, paleta barw, księga znaku, materiały firmowe i digital. Ceny od 1 500 zł, pełne prawa autorskie i spójny system wizualny na każdym nośniku."
+        description="Profesjonalna identyfikacja wizualna dla firm. Logo, paleta barw, księga znaku, materiały firmowe i digital. Wycena po rozmowie o zakresie, pełne prawa autorskie i spójny system wizualny na każdym nośniku."
         canonical="https://www.fotz-studio.pl/uslugi/identyfikacja-wizualna"
         keywords="identyfikacja wizualna firmy, branding usługi, projekt logo, system identyfikacji wizualnej, ci corporate identity"
       />
@@ -232,7 +185,7 @@ const UslugiIdentyfikacjaWizualna = () => {
               transition={{ delay: 0.5 }}
               className="flex flex-wrap justify-center gap-6 mt-12 text-sm text-muted-foreground"
             >
-              {["Pełne prawa autorskie", "Pliki AI, EPS, SVG, PNG", "Cała Polska", "Brand book w cenie"].map(
+              {["Pełne prawa autorskie", "Pliki AI, EPS, SVG, PNG", "Cała Polska — zdalnie z Poznania", "Księga znaku"].map(
                 (item) => (
                   <div key={item} className="flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-primary" />
@@ -241,26 +194,6 @@ const UslugiIdentyfikacjaWizualna = () => {
                 )
               )}
             </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Stats */}
-      <section className="py-16 bg-muted/30 border-y border-border/40">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {[
-              { metric: "150+", label: "Projektów identyfikacji", context: "od 2018 roku" },
-              { metric: "4,9/5", label: "Ocena klientów", context: "Google i Clutch" },
-              { metric: "3 tygodnie", label: "Średni czas realizacji", context: "pakiet Business" },
-              { metric: "100%", label: "Praw autorskich", context: "przeniesienie w cenie" },
-            ].map((r, i) => (
-              <FadeInView key={i} delay={i * 0.1} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-primary mb-1">{r.metric}</div>
-                <div className="text-sm font-medium text-foreground">{r.label}</div>
-                <div className="text-xs text-muted-foreground mt-1">{r.context}</div>
-              </FadeInView>
-            ))}
           </div>
         </div>
       </section>
@@ -309,10 +242,8 @@ const UslugiIdentyfikacjaWizualna = () => {
                 jest trudniejszy do zapamiętania.
               </p>
               <p>
-                Badania pokazują, że{" "}
-                <strong className="text-foreground">spójna prezentacja wizualna marki</strong> zwiększa
-                jej rozpoznawalność o 80%, a firmy z profesjonalną identyfikacją wzbudzają o 33% więcej
-                zaufania wśród nowych klientów. Klient, który widzi Twoją wizytówkę, stronę internetową
+                <strong className="text-foreground">Spójna prezentacja wizualna marki</strong> ułatwia
+                jej zapamiętanie i buduje wrażenie profesjonalizmu. Klient, który widzi Twoją wizytówkę, stronę internetową
                 i post na Instagramie, powinien natychmiast wiedzieć, że to ta sama firma.
               </p>
 
@@ -355,69 +286,40 @@ const UslugiIdentyfikacjaWizualna = () => {
         </div>
       </section>
 
-      {/* Packages */}
+      {/* Pricing factors */}
       <section className="py-20 bg-background">
-        <div className="container mx-auto px-4 max-w-5xl">
+        <div className="container mx-auto px-4 max-w-3xl">
           <FadeInView className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Pakiety identyfikacji wizualnej — cennik
+              Od czego zależy wycena identyfikacji wizualnej?
             </h2>
             <p className="text-muted-foreground max-w-xl mx-auto">
-              Ceny dopasowane do etapu rozwoju Twojej firmy. Każdy pakiet obejmuje
-              prawa autorskie i pliki w wymaganych formatach.
+              Wycenę przygotowujemy po rozmowie o zakresie — nie mamy sztywnego cennika,
+              bo każda marka potrzebuje innego zestawu elementów.
             </p>
           </FadeInView>
-          <div className="grid md:grid-cols-3 gap-6">
-            {packages.map((pkg, i) => (
-              <FadeInView key={i} delay={i * 0.1}>
-                <div
-                  className={`relative bg-card rounded-2xl border p-8 flex flex-col h-full transition-shadow hover:shadow-lg ${
-                    pkg.popular
-                      ? "border-primary shadow-md shadow-primary/10"
-                      : "border-border/60"
-                  }`}
-                >
-                  {pkg.popular && (
-                    <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                      <span className="bg-primary text-primary-foreground text-xs font-semibold px-4 py-1.5 rounded-full">
-                        Najpopularniejszy
-                      </span>
-                    </div>
-                  )}
-                  <div className="mb-6">
-                    <h3 className="text-xl font-bold text-foreground mb-1">{pkg.name}</h3>
-                    <p className="text-sm text-muted-foreground mb-4">{pkg.desc}</p>
-                    <div className="text-3xl font-bold text-primary">{pkg.price}</div>
-                    <div className="text-xs text-muted-foreground mt-1">netto + VAT</div>
-                  </div>
-                  <ul className="space-y-3 flex-1">
-                    {pkg.features.map((f, j) => (
-                      <li key={j} className="flex items-start gap-2 text-sm text-muted-foreground">
-                        <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                        {f}
-                      </li>
-                    ))}
-                  </ul>
-                  <Button
-                    asChild
-                    className="mt-8 w-full"
-                    variant={pkg.popular ? "default" : "outline"}
-                  >
-                    <Link to="/kontakt">
-                      Zamów wycenę <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </div>
-              </FadeInView>
-            ))}
-          </div>
+          <FadeInView>
+            <ul className="space-y-3">
+              {[
+                "Zakres projektu — samo logo, podstawowy system (logo, kolory, typografia) czy pełna księga znaku.",
+                "Liczba materiałów firmowych i digital do zaprojektowania (wizytówki, papier, prezentacje, grafiki social media).",
+                "Nowa marka czy rebrand istniejącej identyfikacji.",
+                "Liczba kierunków kreatywnych i rund poprawek ustalonych w umowie.",
+                "Termin realizacji i potrzebne formaty plików.",
+              ].map((f, j) => (
+                <li key={j} className="flex items-start gap-2 text-muted-foreground">
+                  <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-1" />
+                  {f}
+                </li>
+              ))}
+            </ul>
+          </FadeInView>
           <FadeInView className="text-center mt-8">
-            <p className="text-sm text-muted-foreground">
-              Potrzebujesz czegoś spoza pakietów?{" "}
-              <Link to="/kontakt" className="text-primary hover:underline font-medium">
-                Zapytaj o wycenę indywidualną →
+            <Button asChild>
+              <Link to="/kontakt">
+                Zapytaj o wycenę <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
-            </p>
+            </Button>
           </FadeInView>
         </div>
       </section>
@@ -486,8 +388,8 @@ const UslugiIdentyfikacjaWizualna = () => {
             {[
               {
                 icon: Award,
-                title: "Doświadczenie w 20+ branżach",
-                desc: "Od gastronomii i medycyny po IT i fintech — rozumiemy specyfikę różnych sektorów i tworzymy identyfikacje, które trafiają do właściwej grupy docelowej.",
+                title: "Research branży przed projektem",
+                desc: "Zanim zaczniemy projektować, poznajemy Twoją branżę, konkurencję i grupę docelową — żeby identyfikacja trafiała do właściwych odbiorców.",
               },
               {
                 icon: Shield,
@@ -497,7 +399,7 @@ const UslugiIdentyfikacjaWizualna = () => {
               {
                 icon: Star,
                 title: "Kompleksowość i spójność",
-                desc: "Projektujemy identyfikację, a potem możemy zrealizować stronę internetową, kampanie reklamowe i social media — w jednym miejscu, zachowując 100% spójności.",
+                desc: "Projektujemy identyfikację, a potem możemy zrealizować stronę internetową, kampanie reklamowe i social media — w jednym miejscu, zachowując spójność marki.",
               },
               {
                 icon: Target,
@@ -530,7 +432,7 @@ const UslugiIdentyfikacjaWizualna = () => {
             </h2>
             <p className="text-primary-foreground/80 text-lg mb-8 max-w-xl mx-auto">
               Bezpłatna wycena identyfikacji wizualnej — wyślij brief lub zadzwoń.
-              Odpowiemy w ciągu 24 godzin z propozycją zakresu i kosztów.
+              Odpowiemy z propozycją zakresu i kosztów.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" asChild className="text-base px-8">

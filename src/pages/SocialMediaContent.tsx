@@ -3,7 +3,7 @@ import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Image, Video, FileText, Palette, MessageSquare, TrendingUp, Sparkles, Camera, Zap, Star } from "lucide-react";
+import { Image, Video, FileText, Palette, Sparkles, Camera } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 import { ContactSection } from "@/components/sections/ContactSection";
@@ -13,16 +13,9 @@ const SocialMediaContent = () => {
     { icon: Image, title: "Grafiki i posty statyczne", desc: "Profesjonalne grafiki spójne z brand bookiem: posty informacyjne, promocyjne, cytaty, infografiki. Projektujemy w Canva Pro, Figma i Adobe CC." },
     { icon: Video, title: "Reelsy i krótkie wideo", desc: "Reelsy na Instagramie, rolki na Facebooku, TikToki. Nagrywamy, montujemy, dodajemy napisy i muzykę. Format, który algorytmy premiują." },
     { icon: FileText, title: "Copywriting i opisy postów", desc: "Teksty, które angażują i sprzedają. Hooks, wartość, CTA — każdy post ma cel. Optymalizujemy pod algorytmy i grupę docelową." },
-    { icon: Palette, title: "Karuzele i slide decks", desc: "Posty karuzelowe na Instagramie i LinkedIn mają najwyższe zaangażowanie. Tworzymy prezentacje, poradniki i case studies w tym formacie." },
+    { icon: Palette, title: "Karuzele i slide decks", desc: "Posty karuzelowe na Instagramie i LinkedIn dobrze sprawdzają się przy treściach edukacyjnych. Tworzymy prezentacje, poradniki i case studies w tym formacie." },
     { icon: Camera, title: "Sesje zdjęciowe produktów i marki", desc: "Profesjonalne zdjęcia produktów, wnętrz i teamu. Spójne z identyfikacją wizualną marki. Stock w najwyższej jakości." },
     { icon: Sparkles, title: "Relacje i Stories", desc: "Ulotne treści budujące autentyczność: kulisy firmy, Q&A, ankiety, countdown. Stories to najlepszy format do budowania relacji z odbiorcami." },
-  ];
-
-  const results = [
-    { value: "+150%", label: "Zasięg organiczny", desc: "dzięki angażującym formatom" },
-    { value: "4,8%", label: "Średni engagement rate", desc: "vs. 1,2% średnia branżowa" },
-    { value: "2M+", label: "Wyświetleń miesięcznie", desc: "dla zarządzanych profili" },
-    { value: "50+", label: "Postów miesięcznie", desc: "produkowanych dla klientów" },
   ];
 
   const faqItems = [
@@ -113,29 +106,6 @@ const SocialMediaContent = () => {
           </div>
         </section>
 
-        {/* Results */}
-        <section className="py-16 bg-primary/5">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Wyniki naszych treści</h2>
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
-              {results.map((r, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.1 }}
-                  className="text-center"
-                >
-                  <div className="text-3xl md:text-4xl font-bold text-primary mb-2">{r.value}</div>
-                  <div className="text-sm text-foreground font-medium mb-1">{r.label}</div>
-                  <div className="text-xs text-muted-foreground">{r.desc}</div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* FAQ */}
         <section className="py-20 bg-background">
           <div className="container mx-auto px-4 max-w-3xl">
@@ -177,7 +147,7 @@ const SocialMediaContent = () => {
             <p className="text-muted-foreground mb-4">Content social media to rdzeń skutecznej strategii w mediach społecznościowych. Tworzenie treści na social media obejmuje: grafiki i infografiki, posty tekstowe i karuzelowe, rolki (Reels) i wideo na Instagrama i TikToka, stories, relacje na żywo, artykuły na LinkedIn i posty blogowe dystrybuowane w social mediach.</p>
             <p className="text-muted-foreground mb-6">Każda platforma rządzi się innymi prawami. Content na Instagrama musi być wizualnie spójny i estetyczny. Na LinkedIn liczy się merytoryka i profesjonalizm. TikTok i Reels nagradzają autentyczność i kreatywność. Dobry content manager wie, jak dopasować styl komunikacji do kanału.</p>
             <h2 className="text-3xl font-heading font-bold mb-6">Tworzenie rolek i wideo na social media — video content marketing</h2>
-            <p className="text-muted-foreground">Tworzenie rolek pod social media to jeden z najefektywniejszych sposobów na zwiększenie zasięgu organicznego. Algorytmy Instagrama, TikToka i YouTube premiują krótkie wideo, dając mu wielokrotnie większy zasięg niż statycznym postom. Tworzenie reklam wideo i organicznego video contentu to nasza specjalność — od scenariusza po montaż.</p>
+            <p className="text-muted-foreground">Tworzenie rolek pod social media to jeden z najefektywniejszych sposobów na zwiększenie zasięgu organicznego. Algorytmy Instagrama, TikToka i YouTube chętnie promują krótkie wideo. Tworzenie reklam wideo i organicznego video contentu to nasza specjalność — od scenariusza po montaż.</p>
           
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
               <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>

@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
-import { AnimatedCounter } from "@/components/AnimatedCounter";
 
 // Import case study images
 import klageImage from "@/assets/portfolio/klagem-web.webp";
@@ -26,21 +25,21 @@ const caseStudies = [
     title: "Verthé",
     description: "Strategia marketingowa i content premium dla ekskluzywnej marki modowej.",
     image: vertheImage,
-    results: ["Ekskluzywny wizerunek", "Influencer marketing", "+45% AOV"],
+    results: ["Ekskluzywny wizerunek", "Influencer marketing", "Content premium"],
     href: "/realizacje/verthe",
   },
   {
     title: "Sookar",
     description: "Strona internetowa i branding dla elitarnego komisu samochodów luksusowych.",
     image: sookarImage,
-    results: ["Premium experience", "Ekskluzywny design", "Wysoka konwersja"],
+    results: ["Premium experience", "Ekskluzywny design", "Branding"],
     href: "/realizacje/sookar",
   },
   {
     title: "Victory Cars",
     description: "Identyfikacja wizualna i marketing dla salonu samochodów premium.",
     image: victoryCarsImage,
-    results: ["Spójny branding", "Prestiżowy wizerunek", "+200% leadów"],
+    results: ["Spójny branding", "Prestiżowy wizerunek", "Marketing"],
     href: "/realizacje/victory-cars",
   },
 ];
@@ -88,7 +87,7 @@ const principles = [
 ];
 
 const benefits = [
-  "Doświadczenie z markami luksusowymi i premium",
+  "Własna produkcja foto i video w jakości premium",
   "Rozumiemy psychologię klienta premium",
   "Ekskluzywne podejście do każdego projektu",
   "Współpraca z fotografami i twórcami premium contentu",
@@ -107,11 +106,11 @@ const faqItems = [
   },
   {
     question: "Jaki budżet potrzebny jest na marketing marki premium?",
-    answer: "Marketing premium wymaga wyższych inwestycji niż standardowy - minimum 10000-15000 zł miesięcznie na pełną obsługę. Obejmuje to produkcję premium contentu, współpracę z influencerami i starannie targetowane kampanie.",
+    answer: "To zależy od zakresu: ile contentu produkujemy (sesje foto, video), czy w grę wchodzi współpraca z influencerami, jakie kanały obsługujemy i jak intensywne mają być kampanie. Budżet reklamowy płacony platformom jest osobny od wynagrodzenia agencji. Wycenę przygotowujemy po rozmowie o zakresie.",
   },
   {
     question: "Czy influencer marketing działa dla marek premium?",
-    answer: "Tak, ale wymaga starannego doboru ambasadorów. Dla marek premium ważniejsza jest autentyczność i dopasowanie wartości niż liczba followersów. Współpracujemy z mikroinfluencerami z segmentu lifestyle i luxury.",
+    answer: "Tak, ale wymaga starannego doboru ambasadorów. Dla marek premium ważniejsza jest autentyczność i dopasowanie wartości niż liczba followersów. Dlatego twórców dobieramy pod wartości marki, a nie same zasięgi.",
   },
   {
     question: "Jak mierzyć sukces marketingu premium?",
@@ -119,7 +118,7 @@ const faqItems = [
   },
   {
     question: "Czy obsługujecie marki dopiero wchodzące w segment premium?",
-    answer: "Tak, pomagamy markom w repozycjonowaniu do segmentu premium. To proces wymagający kompleksowej strategii - od rebrandingu przez nową komunikację po zmianę kanałów dystrybucji. Mamy doświadczenie w takich transformacjach.",
+    answer: "Tak, pomagamy markom w repozycjonowaniu do segmentu premium. To proces wymagający kompleksowej strategii - od rebrandingu przez nową komunikację po zmianę kanałów dystrybucji.",
   },
 ];
 
@@ -195,19 +194,6 @@ export default function DlaKogoMarkiPremium() {
                 </a>
               </Button>
             </div>
-            
-            {/* Animated Statistics */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12 p-6 rounded-2xl bg-card/50 backdrop-blur-sm border border-border/30"
-            >
-              <AnimatedCounter end={25} suffix="+" label="Marek premium" index={0} />
-              <AnimatedCounter end={300} suffix="%" label="Wzrost rozpoznawalności" index={1} />
-              <AnimatedCounter end={15} prefix="" suffix=" mln" label="Zasięg kampanii" index={2} />
-              <AnimatedCounter end={95} suffix="%" label="Zadowolonych klientów" index={3} />
-            </motion.div>
           </motion.div>
         </div>
       </section>
@@ -550,9 +536,9 @@ export default function DlaKogoMarkiPremium() {
               obecność cyfrową zachowując ekskluzywność i spójność z wartościami marki.
             </p>
             <p className="text-muted-foreground">
-              Fotz Studio realizuje projekty marketingowe dla marek jubilerskich,
-              deweloperów premium, hoteli i restauracji fine dining, marek modowych
-              i beauty oraz usług finansowych skierowanych do klientów zamożnych.
+              Fotz Studio pracuje z Poznania i przygotowuje projekty marketingowe
+              m.in. dla marek modowych, motoryzacyjnych, meblowych i innych firm
+              z segmentu premium — także zdalnie, dla firm z całej Polski.
               Skontaktuj się z nami, by omówić projekt marketingowy dla Twojej marki.
             </p>
           

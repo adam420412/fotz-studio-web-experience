@@ -10,9 +10,7 @@ import {
   CheckCircle2,
   ArrowRight,
   Eye,
-  Layers,
   Code,
-  RefreshCw,
   Users,
   BarChart,
   Accessibility,
@@ -67,12 +65,12 @@ export default function ProjektowanieStronInternetowych() {
     {
       icon: Smartphone,
       title: "Mobile-First",
-      desc: "Zaczynamy od wersji mobilnej, ponieważ większość ruchu pochodzi z telefonów i tabletów."
+      desc: "Zaczynamy od wersji mobilnej, ponieważ duża część ruchu pochodzi z telefonów i tabletów."
     },
     {
       icon: Accessibility,
       title: "Dostępność (A11y)",
-      desc: "Strona jest zoptymalizowana dla osób niepełnosprawnych. WCAG 2.1 AA standard na minimum."
+      desc: "Projektujemy z myślą o osobach z niepełnosprawnościami, opierając się na wytycznych WCAG 2.1 (kontrast, czytelność, nawigacja klawiaturą)."
     },
     {
       icon: Zap,
@@ -109,8 +107,8 @@ export default function ProjektowanieStronInternetowych() {
         "Jasna struktura informacji",
         "Intuicyjna nawigacja",
         "Idealna na mobilu",
-        "Ładowanie < 2s",
-        "Wzrost konwersji o 150%+"
+        "Szybsze ładowanie",
+        "Wyraźne wezwania do działania (CTA)"
       ],
       icon: "✨"
     },
@@ -199,24 +197,6 @@ export default function ProjektowanieStronInternetowych() {
                 Tworzymy strony, które nie tylko wyglądają spektakularnie, ale przede wszystkim <strong>sprzedają</strong>.
                 Każdy projekt to połączenie analizy użytkownika, strategii UX i najnowszych trendów designu.
               </p>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-                <div className="bg-slate-800 bg-opacity-50 p-4 rounded-lg">
-                  <div className="text-2xl font-bold text-blue-400">78+</div>
-                  <div className="text-sm text-slate-400">Projektów</div>
-                </div>
-                <div className="bg-slate-800 bg-opacity-50 p-4 rounded-lg">
-                  <div className="text-2xl font-bold text-blue-400">150%</div>
-                  <div className="text-sm text-slate-400">Wzrost konwersji</div>
-                </div>
-                <div className="bg-slate-800 bg-opacity-50 p-4 rounded-lg">
-                  <div className="text-2xl font-bold text-blue-400">&lt;2s</div>
-                  <div className="text-sm text-slate-400">Czas ładowania</div>
-                </div>
-                <div className="bg-slate-800 bg-opacity-50 p-4 rounded-lg">
-                  <div className="text-2xl font-bold text-blue-400">5 lat</div>
-                  <div className="text-sm text-slate-400">Doświadczenia</div>
-                </div>
-              </div>
               <Link to="/realizacje">
                 <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
                   Obejrzyj nasze realizacje <ArrowRight className="ml-2 w-5 h-5" />
@@ -292,7 +272,7 @@ export default function ProjektowanieStronInternetowych() {
                 Nasz proces projektowania
               </h2>
               <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
-                Od pomysłu do uruchomiania: struktura, która gwarantuje sukces
+                Od pomysłu do uruchomienia: jasny podział na etapy
               </p>
 
               <div className="space-y-8">
@@ -360,7 +340,7 @@ export default function ProjektowanieStronInternetowych() {
                 Szukasz inspiracji?
               </h2>
               <p className="text-xl mb-8 opacity-90">
-                Obejrzyj nasze najnowsze projekty. Każdy to historia sukcesu i konkretne wyniki dla klientów.
+                Obejrzyj nasze najnowsze projekty i zobacz, jak pracujemy dla klientów.
               </p>
               <Link to="/realizacje">
                 <Button size="lg" className="bg-white text-blue-600 hover:bg-slate-100">
@@ -522,7 +502,7 @@ export default function ProjektowanieStronInternetowych() {
                 >
                   <h3 className="font-bold text-slate-900 mb-2">Cennik usług</h3>
                   <p className="text-slate-600 text-sm mb-4">
-                    Transparentne ceny za poszczególne pakiety usług
+                    Od czego zależy koszt projektu i wdrożenia strony
                   </p>
                   <span className="text-blue-600 font-semibold text-sm flex items-center gap-2">
                     Sprawdź cennik <ArrowRight className="w-4 h-4" />

@@ -66,7 +66,7 @@ export default function AudytStronyInternetowej() {
     {
       icon: BarChart3,
       title: "Mobile responsiveness",
-      desc: "Testujemy na 10+ urządzeniach. Google rankinguje mobile-first. Większość ruchu = mobile.",
+      desc: "Testujemy na różnych urządzeniach i rozdzielczościach. Google indeksuje strony w podejściu mobile-first.",
     },
     {
       icon: AlertTriangle,
@@ -78,7 +78,7 @@ export default function AudytStronyInternetowej() {
   const packages = [
     {
       title: "Quick Audit",
-      price: "399 zł",
+      price: "Wycena po rozmowie",
       desc: "Strona główna + 5 kluczowych podstron",
       features: [
         "Core Web Vitals pomiar",
@@ -86,13 +86,13 @@ export default function AudytStronyInternetowej() {
         "Mobile test",
         "Bezpieczeństwo SSL",
         "Raport PDF 10-15 stron",
-        "Lista TOP 10 błędów",
+        "Lista najważniejszych błędów",
       ],
-      delivery: "2 dni robocze",
+      delivery: "ok. 2 dni robocze",
     },
     {
       title: "Standard Audit",
-      price: "799 zł",
+      price: "Wycena po rozmowie",
       desc: "Do 30 podstron — kompleksowy",
       features: [
         "Pełny audyt techniczny",
@@ -105,11 +105,11 @@ export default function AudytStronyInternetowej() {
         "Konsultacja 45 min",
       ],
       highlight: true,
-      delivery: "5 dni roboczych",
+      delivery: "ok. 5 dni roboczych",
     },
     {
       title: "Deep Audit",
-      price: "1 499 zł",
+      price: "Wycena po rozmowie",
       desc: "Cały serwis + analiza zaawansowana",
       features: [
         "Wszystko z Standard",
@@ -120,7 +120,7 @@ export default function AudytStronyInternetowej() {
         "Konsultacja 90 min",
         "Plan działań 3-mies.",
       ],
-      delivery: "10 dni roboczych",
+      delivery: "ok. 10 dni roboczych",
     },
   ];
 
@@ -138,7 +138,7 @@ export default function AudytStronyInternetowej() {
     {
       question: "Ile trwa realizacja audytu?",
       answer:
-        "Quick Audit: 2 dni robocze. Standard Audit: 5 dni roboczych. Deep Audit z heatmapami i user testingiem: 10 dni roboczych. Po zakończeniu umawiamy konsultację omówieniową.",
+        "Orientacyjnie: Quick Audit ok. 2 dni robocze, Standard Audit ok. 5 dni roboczych, Deep Audit z heatmapami i user testingiem ok. 10 dni roboczych. Dokładny termin potwierdzamy po poznaniu wielkości serwisu. Po zakończeniu umawiamy konsultację omówieniową.",
     },
     {
       question: "Co mogę zrobić po audycie?",
@@ -153,7 +153,7 @@ export default function AudytStronyInternetowej() {
     {
       question: "Czy po audycie wdrożycie zmiany?",
       answer:
-        "Tak — oferujemy wdrożenie zmian jako oddzielną usługę. Po audycie przygotowujemy kosztorys wdrożenia. Wielu klientów decyduje się na pakiet: audyt + wdrożenie, który jest korzystniejszy cenowo.",
+        "Tak — oferujemy wdrożenie zmian jako oddzielną usługę. Po audycie przygotowujemy kosztorys wdrożenia. Audyt i wdrożenie można zlecić razem — wtedy wyceniamy je łącznie.",
     },
   ];
 
@@ -181,16 +181,16 @@ export default function AudytStronyInternetowej() {
                 Audyt strony internetowej — kompleksowa analiza UX, wydajności i konwersji
               </h1>
               <p className="text-xl text-slate-300 mb-8 leading-relaxed">
-                Twoja strona to najważniejszy pracownik firmy — działa 24/7. Kiedy ostatnio sprawdziłeś,
+                Twoja strona to najważniejszy pracownik firmy — działa całą dobę. Kiedy ostatnio sprawdziłeś,
                 czy robi swoją pracę dobrze? Audyt ujawnia błędy które tracą Ci klientów.
               </p>
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
                 {[
-                  { value: "5,4 sek.", label: "Śr. ładowanie PL strony" },
-                  { value: "53%", label: "Porzuceń po 3 sek." },
-                  { value: "2,5 sek.", label: "Top 10 Google" },
-                  { value: "70%", label: "Konwersji zależy od UX" },
+                  { value: "UX", label: "Nawigacja i ścieżki" },
+                  { value: "Szybkość", label: "Core Web Vitals" },
+                  { value: "SEO", label: "On-page i technika" },
+                  { value: "Raport", label: "Lista priorytetów" },
                 ].map((stat, idx) => (
                   <div key={idx} className="bg-slate-800 bg-opacity-50 p-4 rounded-lg">
                     <div className="text-2xl font-bold text-blue-400">{stat.value}</div>
@@ -272,6 +272,11 @@ export default function AudytStronyInternetowej() {
           <section className="py-16 md:py-24 bg-white">
             <div className="max-w-5xl mx-auto px-4 md:px-6">
               <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Pakiety audytu strony</h2>
+              <p className="text-center text-slate-600 max-w-2xl mx-auto">
+                Wycenę przygotowujemy po rozmowie o zakresie. Zależy od liczby podstron do przeanalizowania,
+                wybranych obszarów audytu (technika, UX, treści, analityka), tego, czy potrzebne są heatmapy
+                i testy z użytkownikami, oraz od długości konsultacji po audycie.
+              </p>
               <div className="grid md:grid-cols-3 gap-8 mt-12">
                 {packages.map((pkg, idx) => (
                   <motion.div
@@ -290,7 +295,7 @@ export default function AudytStronyInternetowej() {
                       {pkg.price}
                     </div>
                     <div className={`text-sm mb-4 ${pkg.highlight ? "text-blue-100" : "text-slate-500"}`}>
-                      jednorazowo · realizacja {pkg.delivery}
+                      orientacyjny czas realizacji: {pkg.delivery}
                     </div>
                     <p className={`mb-6 text-sm ${pkg.highlight ? "text-blue-100" : "text-slate-600"}`}>{pkg.desc}</p>
                     <ul className="space-y-3">

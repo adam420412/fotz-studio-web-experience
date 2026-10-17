@@ -1,12 +1,11 @@
 import { Link } from "react-router-dom";
-import { ShoppingBag, ArrowRight, CheckCircle, TrendingUp, BarChart3, RefreshCcw, Zap, Star, Phone, Target, Plus, Minus } from "lucide-react";
+import { ShoppingBag, ArrowRight, CheckCircle, TrendingUp, BarChart3, RefreshCcw, Zap, Phone, Target, Plus, Minus } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
-import { AnimatedCounter } from "@/components/AnimatedCounter";
 
 import { KlagemConfigurator } from "@/components/sections/KlagemConfigurator";
 
@@ -21,7 +20,7 @@ const caseStudies = [
     title: "Verthé",
     description: "Kompleksowa obsługa e-commerce dla marki modowej - sklep, kampanie reklamowe i content marketing.",
     image: vertheImage,
-    results: ["+320% wzrost sprzedaży", "ROAS 8.5", "+45% AOV"],
+    results: ["Sklep online", "Kampanie reklamowe", "Content marketing"],
     href: "/realizacje/verthe",
   },
   {
@@ -35,14 +34,14 @@ const caseStudies = [
     title: "Cute Dumpling",
     description: "Branding i sklep online dla marki lifestyle z optymalizacją pod mobile.",
     image: cuteDumplingImage,
-    results: ["85% ruchu z mobile", "+180% sprzedaży", "Silny brand"],
+    results: ["Branding", "Sklep online", "Mobile-first"],
     href: "/realizacje/cute-dumpling",
   },
   {
     title: "Friendly Gas",
     description: "Platforma e-commerce B2B z systemem zamówień i integracją z magazynem.",
     image: friendlyGasImage,
-    results: ["+400% zamówień online", "Automatyzacja procesów", "Oszczędność czasu"],
+    results: ["E-commerce B2B", "System zamówień", "Integracja z magazynem"],
     href: "/realizacje/friendly-gas",
   },
 ];
@@ -70,15 +69,8 @@ const services = [
   },
 ];
 
-const metrics = [
-  { value: "8.5x", label: "Średni ROAS" },
-  { value: "+320%", label: "Wzrost sprzedaży" },
-  { value: "45%", label: "Wzrost AOV" },
-  { value: "2.5%", label: "Konwersja" },
-];
-
 const benefits = [
-  "Doświadczenie z platformami Shopify, WooCommerce, PrestaShop",
+  "Praca z popularnymi platformami, m.in. WooCommerce i Shopify",
   "Strategie skalowania od małych do dużych budżetów",
   "Pełna analityka i atrybucja konwersji",
   "Integracja z Google Analytics 4 i Meta Pixel",
@@ -89,23 +81,23 @@ const benefits = [
 const faqItems = [
   {
     question: "Jaki budżet reklamowy potrzebuję na start?",
-    answer: "Dla małych sklepów rekomendujemy start od 3000-5000 zł miesięcznie na reklamy (Google + Meta). Pozwala to zebrać dane i zoptymalizować kampanie. Większe sklepy z szerszym asortymentem powinny zaczynać od 10000+ zł miesięcznie.",
+    answer: "To zależy od asortymentu, marży, konkurencji i celów sprzedażowych. Budżet powinien pozwolić kampaniom zebrać dane o konwersjach. Rekomendację przygotowujemy po audycie sklepu. Budżet reklamowy płacisz platformom (Google, Meta) osobno, poza naszym wynagrodzeniem.",
   },
   {
     question: "Co to jest ROAS i jaki powinienem mieć?",
-    answer: "ROAS (Return on Ad Spend) to zwrot z wydatków reklamowych. Jeśli ROAS wynosi 5x, oznacza to, że każda wydana złotówka na reklamy generuje 5 zł przychodu. Dobry ROAS zależy od marży - przy marży 30% potrzebujesz minimum ROAS 3.3x, aby wyjść na zero.",
+    answer: "ROAS (Return on Ad Spend) to zwrot z wydatków reklamowych. ROAS 5x oznacza, że przychód z reklam jest pięciokrotnie wyższy niż wydatki na nie. Dobry ROAS zależy od marży — im niższa marża, tym wyższego ROAS potrzebujesz, aby wyjść na zero. Próg opłacalności liczymy indywidualnie dla Twojego sklepu.",
   },
   {
     question: "Jak długo trwa optymalizacja kampanii e-commerce?",
-    answer: "Pierwsze wyniki widoczne są po 2-4 tygodniach. Pełna optymalizacja kampanii trwa 2-3 miesiące - algorytmy potrzebują danych o konwersjach. Po tym okresie kampanie osiągają stabilną wydajność i można je skalować.",
+    answer: "Optymalizacja to proces ciągły. Algorytmy potrzebują danych o konwersjach, więc tempo zależy od budżetu i liczby zamówień. Nie obiecujemy wyników w sztywnym terminie — postępy pokazujemy w regularnych raportach, a skalujemy, gdy dane to uzasadniają.",
   },
   {
     question: "Czy pomożecie z remarketingiem?",
-    answer: "Tak, remarketing to nasza specjalność. Konfigurujemy dynamiczny remarketing produktowy, kampanie odzyskiwania porzuconych koszyków i cross-selling. Remarketing często ma najwyższy ROAS ze wszystkich kanałów.",
+    answer: "Tak, remarketing to nasza specjalność. Konfigurujemy dynamiczny remarketing produktowy, kampanie odzyskiwania porzuconych koszyków i cross-selling. Remarketing trafia do osób, które już znają Twój sklep, dlatego często dobrze uzupełnia pozostałe kampanie.",
   },
   {
     question: "Jakie platformy e-commerce obsługujecie?",
-    answer: "Mamy doświadczenie ze wszystkimi popularnymi platformami: Shopify, WooCommerce, PrestaShop, Magento, Shoper, IdoSell. Integrujemy się z każdą platformą obsługującą feedy produktowe.",
+    answer: "Pracujemy z popularnymi platformami, m.in. WooCommerce i Shopify. Kampanie produktowe możemy prowadzić dla platform, które generują feedy produktowe — szczegóły sprawdzamy podczas audytu.",
   },
   {
     question: "Czy zajmujecie się również SEO dla sklepów?",
@@ -167,8 +159,8 @@ export default function DlaKogoEcommerce() {
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-3xl">
               Skalujemy sprzedaż w sklepach internetowych poprzez performance marketing, 
-              optymalizację konwersji i automatyzację. Od małych butików po duże platformy 
-              - wiemy, jak zwiększyć Twoje przychody.
+              optymalizację konwersji i automatyzację. Od małych butików po większe platformy 
+              - dobieramy działania do danych Twojego sklepu.
             </p>
             
             <div className="flex flex-wrap gap-4">
@@ -186,18 +178,6 @@ export default function DlaKogoEcommerce() {
               </Button>
             </div>
           </motion.div>
-        </div>
-      </section>
-
-      {/* Animated Metrics */}
-      <section className="py-12 bg-card border-y border-border">
-        <div className="container-wide">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <AnimatedCounter end={500} suffix="%" label="Średni wzrost ROAS" index={0} />
-            <AnimatedCounter end={180} suffix="%" label="Wzrost konwersji" index={1} />
-            <AnimatedCounter end={50} suffix="+" label="Sklepów e-commerce" index={2} />
-            <AnimatedCounter end={10} prefix="" suffix=" mln zł" label="Wygenerowanej sprzedaży" index={3} />
-          </div>
         </div>
       </section>
 
@@ -320,7 +300,7 @@ export default function DlaKogoEcommerce() {
               Nasze <span className="text-gradient">realizacje e-commerce</span>
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Zobacz, jak pomagamy sklepom internetowym zwiększać sprzedaż.
+              Zobacz wybrane projekty dla sklepów internetowych.
             </p>
           </motion.div>
 
@@ -522,7 +502,7 @@ export default function DlaKogoEcommerce() {
               Google Shopping, SEO e-commerce i reklamy dla sklepów — jak to robimy
             </h2>
             <p className="text-muted-foreground mb-4">
-              Google Shopping to jeden z najefektywniejszych kanałów dla e-commerce —
+              Google Shopping to ważny kanał dla e-commerce —
               reklamy produktowe z ceną i zdjęciem wyświetlają się na samej górze
               wyników wyszukiwania. Zarządzamy feed produktowym, strategiami stawek
               i strukturą kampanii Shopping dla maksymalizacji ROAS.
@@ -538,14 +518,13 @@ export default function DlaKogoEcommerce() {
               Email marketing i automatyzacja dla e-commerce — odzysk porzuconych koszyków i retencja
             </h2>
             <p className="text-muted-foreground mb-4">
-              Email marketing dla e-commerce to jeden z kanałów z najwyższym ROI.
-              Konfigurujemy automatyzacje: odzysk porzuconych koszyków (średnio 10-15%
-              konwersji), sekwencje powitalne, rekomendacje produktowe po zakupie
+              Email marketing pozwala docierać do klientów, którzy już znają Twój sklep.
+              Konfigurujemy automatyzacje: odzysk porzuconych koszyków, sekwencje powitalne, rekomendacje produktowe po zakupie
               i kampanie win-back dla nieaktywnych klientów.
             </p>
             <p className="text-muted-foreground">
-              Fotz Studio obsługuje sklepy internetowe na każdym etapie — od startupu
-              z pierwszymi produktami po duże sklepy z tysiącami SKU. Skontaktuj się
+              Fotz Studio obsługuje sklepy internetowe na każdym etapie — od startu
+              z pierwszymi produktami po rozbudowane sklepy z szerokim asortymentem. Skontaktuj się
               z nami po bezpłatny audyt marketingowy swojego sklepu e-commerce.
             </p>
           

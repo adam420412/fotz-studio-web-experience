@@ -11,7 +11,7 @@ import { ContactSection } from "@/components/sections/ContactSection";
 const PMTargetowanie = () => {
   const features = [
     { icon: Target, title: "Demograficzne i zainteresowania", desc: "Wiek, płeć, lokalizacja, wykształcenie, dochody, zainteresowania, zachowania zakupowe. Budujemy szczegółowe profile idealnego klienta na każdej platformie." },
-    { icon: Users, title: "Lookalike Audiences", desc: "Algorytmy Google i Meta znajdują osoby podobne do Twoich najlepszych klientów. Skalujemy zasięg bez utraty jakości — najtańsza forma ekspansji." },
+    { icon: Users, title: "Lookalike Audiences", desc: "Algorytmy Google i Meta znajdują osoby podobne do Twoich najlepszych klientów. Pozwala skalować zasięg, zachowując dopasowanie do grupy docelowej." },
     { icon: Eye, title: "Retargeting i remarketing", desc: "Odwiedzający stronę, osoby oglądające wideo, porzucający koszyk — każda grupa dostaje dedykowane przekazy reklamowe dopasowane do etapu lejka." },
     { icon: Search, title: "Targetowanie słów kluczowych", desc: "Google Ads: dokładne, przybliżone, wykluczające. Precyzyjne dopasowanie słów kluczowych do intencji zakupowej. Eliminujemy niekonwertujące zapytania." },
     { icon: Sparkles, title: "Custom Audiences i CRM", desc: "Import list klientów, wykluczenie istniejących kupujących, tworzenie segmentów na podstawie LTV. Personalizacja na poziomie 1:1." },
@@ -19,10 +19,10 @@ const PMTargetowanie = () => {
   ];
 
   const results = [
-    { value: "-50%", label: "Niższy koszt za klik", desc: "dzięki eliminacji słabych segmentów" },
-    { value: "+220%", label: "Wyższy ROAS", desc: "po optymalizacji targetowania" },
-    { value: "2-4×", label: "Wyższy CTR", desc: "dla właściwie targetowanych reklam" },
-    { value: "0 zł", label: "Marnotrawionego budżetu", desc: "na osoby spoza grupy docelowej" },
+    { value: "CPC", label: "Koszt za klik", desc: "obniżamy, eliminując słabe segmenty" },
+    { value: "ROAS", label: "Zwrot z wydatków", desc: "śledzimy i poprawiamy po każdej iteracji" },
+    { value: "CTR", label: "Klikalność", desc: "rośnie, gdy reklama trafia do właściwych osób" },
+    { value: "Budżet", label: "Mniej przepalonych środków", desc: "wykluczamy osoby spoza grupy docelowej" },
   ];
 
   const faqItems = [
@@ -115,7 +115,7 @@ const PMTargetowanie = () => {
         {/* Results */}
         <section className="py-16 bg-primary/5">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Efekty precyzyjnego targetowania</h2>
+            <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Na co wpływa precyzyjne targetowanie</h2>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
               {results.map((r, i) => (
                 <motion.div
@@ -176,7 +176,7 @@ const PMTargetowanie = () => {
             <p className="text-muted-foreground mb-4">Targetowanie reklam to proces definiowania grupy odbiorców, do których kierowane są kampanie reklamowe. Im precyzyjniejsze targetowanie, tym wyższa trafność reklam i niższy koszt pozyskania klienta (CPA). Nowoczesne platformy reklamowe (Google, Meta, TikTok, LinkedIn) oferują zaawansowane możliwości targetowania swoich odbiorców.</p>
             <p className="text-muted-foreground mb-6">Rodzaje targetowania: demograficzne (wiek, płeć, wykształcenie), geograficzne (lokalizacja, promień od adresu), zainteresowania i zachowania, własne listy klientów (Custom Audiences — na podstawie danych CRM, pikseli śledzących), Lookalike Audiences (podobni do istniejących klientów) oraz retargeting/remarketing (osoby, które już odwiedziły stronę).</p>
             <h2 className="text-3xl font-heading font-bold mb-6">Retargeting i remarketing — reklamy dla osób, które już Cię znają</h2>
-            <p className="text-muted-foreground">Retargeting (Meta, Google Display) i remarketing (Google Ads) to reklamy kierowane do użytkowników, którzy odwiedzili Twoją stronę lub weszli w interakcję z Twoją marką, ale nie skonwertowali. Reklamy remarketingowe wyróżniają się wyjątkowo wysokim CTR i niskim CPA — bo trafiają do osób już zaznajomionych z Twoją ofertą. Analiza konkurencji w internecie pomaga też identyfikować grupy docelowe, które Twoi konkurenci pozyskują skutecznie.</p>
+            <p className="text-muted-foreground">Retargeting (Meta, Google Display) i remarketing (Google Ads) to reklamy kierowane do użytkowników, którzy odwiedzili Twoją stronę lub weszli w interakcję z Twoją marką, ale nie skonwertowali. Reklamy remarketingowe często osiągają wyższy CTR i niższy CPA niż kampanie do zimnych odbiorców — bo trafiają do osób już zaznajomionych z Twoją ofertą. Analiza konkurencji w internecie pomaga też identyfikować grupy docelowe, które Twoi konkurenci pozyskują skutecznie.</p>
           
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
               <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>

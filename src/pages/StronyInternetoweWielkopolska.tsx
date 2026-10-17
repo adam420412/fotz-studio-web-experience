@@ -22,7 +22,7 @@ export default function StronyInternetoweWielkopolska() {
   const faqItems = [
     {
       question: "Czy fotz.pl obsługuje firmy z całej Wielkopolski?",
-      answer: "Tak, prowadzimy projekty dla firm z całej Wielkopolski. Nasz zespół pracuje zdalnie, ale mamy głębokie zrozumienie rynku poznańskiego i regionalnego. Firma fotz.pl ma swoją siedzibę w Poznaniu, więc doskonale znamy specyfikę biznesu w regionie."
+      answer: "Tak, prowadzimy projekty dla firm z całej Wielkopolski. Pracujemy z Poznania — z firmami z regionu możemy spotkać się osobiście albo prowadzić projekt zdalnie."
     },
     {
       question: "Jaki jest koszt strony internetowej dla firmy z Wielkopolski?",
@@ -42,7 +42,7 @@ export default function StronyInternetoweWielkopolska() {
     },
     {
       question: "Czy strona będzie zoptymalizowana pod Poznań i Wielkopolskę?",
-      answer: "Absolutnie. Wdrażamy SEO od pierwszego dnia projektu. Strona będzie zoptymalizowana pod frazy takie jak 'Twoja usługa + Poznań/Wielkopolska', co ułatwi klientom znalezienie Ciebie w lokalnych wyszukiwaniach."
+      answer: "Tak. Podstawy SEO wdrażamy od początku projektu — strukturę, treści i metadane przygotowujemy pod frazy takie jak 'Twoja usługa + Poznań/Wielkopolska'. Nie gwarantujemy konkretnej pozycji w Google, bo zależy ona też od konkurencji i działań po uruchomieniu strony."
     },
     {
       question: "Czy mogę sama edytować treść na stronie?",
@@ -50,14 +50,14 @@ export default function StronyInternetoweWielkopolska() {
     },
     {
       question: "Czy strona będzie działać poprawnie na mobilnych?",
-      answer: "Tak, wszystkie nasze strony są w 100% responsywne i zoptymalizowane pod urządzenia mobilne. W 2025 roku to standard, a dla nas priorytet. Strona będzie działać idealnie niezależnie od urządzenia klienta."
+      answer: "Tak, projektujemy strony responsywne i testujemy je na telefonach, tabletach i komputerach w popularnych przeglądarkach przed uruchomieniem."
     }
   ];
 
   const whyWielkopolska = [
     {
-      title: "Poznańska siedziba",
-      description: "Mamy zespół w Poznaniu, rozumiemy lokalny rynek i specyfikę biznesu Wielkopolski. To dla nas nie nowy region - to nasz dom.",
+      title: "Pracujemy z Poznania",
+      description: "Nasz zespół pracuje w Poznaniu, więc Wielkopolska to dla nas naturalny obszar działania — bez dalekich dojazdów.",
       icon: MapPin
     },
     {
@@ -67,21 +67,14 @@ export default function StronyInternetoweWielkopolska() {
     },
     {
       title: "SEO na terenie Wielkopolski",
-      description: "Specjalizujemy się w optymalizacji pod frazy lokalne. Strona będzie widoczna dla klientów szukających usług w Poznaniu, Koninie, Lesznie i całej Wielkopolsce.",
+      description: "Optymalizujemy strony pod frazy lokalne — np. usługi w Poznaniu, Koninie czy Lesznie. Nie gwarantujemy konkretnych pozycji, ale dbamy o techniczne i treściowe podstawy widoczności.",
       icon: TrendingUp
     },
     {
-      title: "Doświadczenie z branżami regionu",
-      description: "Realizujemy projekty dla firm z branż silnie reprezentowanych w Wielkopolsce: produkcji, handlu, logistyki, targów i konferencji.",
+      title: "Zrozumienie Twojej branży",
+      description: "Na starcie poznajemy Twoją branżę, konkurencję i klientów — niezależnie od tego, czy działasz w produkcji, handlu, logistyce czy usługach.",
       icon: Award
     }
-  ];
-
-  const regionStats = [
-    { number: "3,4 mln", label: "ludzi w Wielkopolsce" },
-    { number: "550k", label: "mieszkańców Poznania" },
-    { number: "20k+", label: "zarejestrowanych firm" },
-    { number: "4 miejsca", label: "na światowych targach" }
   ];
 
   const industriesWielkopolska = [
@@ -100,7 +93,7 @@ export default function StronyInternetoweWielkopolska() {
       <div className="pt-20">
       <SEOHead
         title="Strony internetowe Wielkopolska | Poznań | FOTZ Studio"
-        description="Profesjonalne strony internetowe dla firm z Wielkopolski i Poznania. Mamy siedzibę w Poznaniu, specjalizujemy się w SEO dla branż lokalnych. Wycena indywidualna."
+        description="Profesjonalne strony internetowe dla firm z Wielkopolski i Poznania. Pracujemy z Poznania, dbamy o SEO lokalne. Wycena indywidualna."
         canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/wielkopolska"
         structuredData={{
           "@context": "https://schema.org",
@@ -150,7 +143,7 @@ export default function StronyInternetoweWielkopolska() {
             </h1>
             
             <p className="text-xl text-slate-300 mb-8 leading-relaxed">
-              Realizujemy projekty dla firm z całej Wielkopolski. Nasz zespół pracuje w Poznaniu i doskonale zna specyfikę lokalnego biznesu. Projektujemy strony internetowe z indywidualną wyceną i zakresem SEO ustalonym w ofercie.
+              Realizujemy projekty dla firm z całej Wielkopolski. Nasz zespół pracuje w Poznaniu. Projektujemy strony internetowe z indywidualną wyceną i zakresem SEO ustalonym w ofercie.
             </p>
 
             <div className="flex gap-4 flex-wrap">
@@ -169,33 +162,13 @@ export default function StronyInternetoweWielkopolska() {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-16 bg-slate-50">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {regionStats.map((stat, idx) => (
-              <FadeInView key={idx} delay={idx * 0.1}>
-                <div className="text-center">
-                  <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
-                    {stat.number}
-                  </div>
-                  <div className="text-sm text-slate-600">
-                    {stat.label}
-                  </div>
-                </div>
-              </FadeInView>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Why Choose Wielkopolska Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mb-16">
             <h2 className="text-4xl font-bold mb-6">Dlaczego fotz.pl dla firm z Wielkopolski?</h2>
             <p className="text-lg text-slate-600">
-              Prowadzimy biuro w Poznaniu i rozumiemy rynek Wielkopolski na wskroś. To nie jest kolejny freelancer z internetu - to partner biznesowy, który zna Twoją konkurencję i możliwości regionu.
+              Pracujemy z Poznania, więc z firmami z Wielkopolski możemy spotkać się osobiście. Przed projektem analizujemy Twoją konkurencję i rynek, na którym działasz.
             </p>
           </div>
 
@@ -236,7 +209,7 @@ export default function StronyInternetoweWielkopolska() {
             <div className="bg-white p-8 rounded-lg border border-primary/20">
               <h3 className="text-2xl font-semibold mb-4">Twoja branża nie jest na liście?</h3>
               <p className="text-slate-600 mb-6">
-                Obsługujemy projekty z każdej branży. Jeśli prowadzisz biznes w Wielkopolsce, niezależnie od sektora, możemy Ci pomóc zbudować stronę, która będzie przynosić nowych klientów.
+                Obsługujemy projekty z każdej branży. Jeśli prowadzisz biznes w Wielkopolsce, niezależnie od sektora, możemy Ci pomóc zbudować stronę dopasowaną do Twoich klientów.
               </p>
               <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center text-primary font-semibold flex items-center gap-2 hover:gap-3 transition">
                 Skonsultuj się z nami
@@ -253,7 +226,7 @@ export default function StronyInternetoweWielkopolska() {
           <div className="max-w-3xl mb-12">
             <h2 className="text-4xl font-bold mb-6">SEO dla Wielkopolski i Poznania</h2>
             <p className="text-lg text-slate-600 mb-8">
-              Strona internetowa to inwestycja. Dbamy, aby była widoczna dla klientów szukających Twoich usług w Poznaniu, Koninie, Lesznie i całej Wielkopolsce. Optymalizujemy pod lokalne frazy jak "tworzenie stron Poznań", "agencja interaktywna Wielkopolska" itp.
+              Strona internetowa to inwestycja. Dbamy o jej przygotowanie pod wyszukiwania klientów z Poznania, Konina, Leszna i całej Wielkopolski — bez obietnic konkretnych pozycji. Optymalizujemy pod lokalne frazy jak "tworzenie stron Poznań", "agencja interaktywna Wielkopolska" itp.
             </p>
           </div>
 

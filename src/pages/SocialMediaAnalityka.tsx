@@ -19,16 +19,16 @@ const SocialMediaAnalityka = () => {
   ];
 
   const results = [
-    { value: "100%", label: "Decyzji opartych na danych", desc: "zamiast intuicji" },
-    { value: "-20%", label: "Niższy koszt na post", desc: "dzięki optymalizacji" },
-    { value: "+35%", label: "Wyższe zaangażowanie", desc: "po optymalizacji contentu" },
-    { value: "24/7", label: "Monitoring marki", desc: "i alertów wzmianek" },
+    { label: "Decyzje oparte na danych", desc: "zamiast intuicji" },
+    { label: "Widać, co działa", desc: "które formaty i tematy angażują odbiorców" },
+    { label: "Lepsze wykorzystanie budżetu", desc: "środki kierowane tam, gdzie dają efekt" },
+    { label: "Monitoring marki", desc: "wzmianki i alerty w jednym miejscu" },
   ];
 
   const faqItems = [
     { question: "Jakie narzędzia analityczne używacie?", answer: "Meta Business Suite, TikTok Analytics, LinkedIn Analytics dla danych platformowych. Metricool i Sprout Social do dashboardów zbiorczych. Google Analytics 4 + Meta Pixel do śledzenia konwersji. Brand24 do monitoringu wzmianek." },
     { question: "Jak często dostarczacie raporty?", answer: "Standard to raport miesięczny z kluczowymi KPI, analizą trendów i rekomendacjami. Na życzenie przygotowujemy raporty tygodniowe lub kwartalne. Klienci mają też dostęp do live dashboardu w czasie rzeczywistym." },
-    { question: "Co to jest engagement rate i jaki jest dobry wynik?", answer: "Engagement rate to stosunek interakcji (polubienia+komentarze+udostępnienia) do zasięgu lub followersów. Dobry ER na Instagramie to 2-5%, powyżej 5% to wynik ponadprzeciętny. LinkedIn: 1-3%. TikTok: 5-10%. Benchmarki różnią się między branżami." },
+    { question: "Co to jest engagement rate i jaki jest dobry wynik?", answer: "Engagement rate to stosunek interakcji (polubienia+komentarze+udostępnienia) do zasięgu lub followersów. Nie ma jednej uniwersalnej normy — dobry wynik zależy od platformy, branży, wielkości profilu i sposobu liczenia. Dlatego porównujemy ER z wcześniejszymi okresami Twojego profilu i z porównywalnymi profilami konkurencji." },
     { question: "Czy mogę mieć dostęp do danych analitycznych na bieżąco?", answer: "Tak — konfigurujemy dashboard z dostępem online, gdzie możesz w każdej chwili sprawdzić kluczowe metryki. Używamy Metricool lub Data Studio (Looker Studio) jako platformy raportowej." },
   ];
 
@@ -127,8 +127,7 @@ const SocialMediaAnalityka = () => {
                   transition={{ delay: i * 0.1 }}
                   className="text-center"
                 >
-                  <div className="text-3xl md:text-4xl font-bold text-primary mb-2">{r.value}</div>
-                  <div className="text-sm text-foreground font-medium mb-1">{r.label}</div>
+                  <div className="text-lg md:text-xl font-bold text-primary mb-2">{r.label}</div>
                   <div className="text-xs text-muted-foreground">{r.desc}</div>
                 </motion.div>
               ))}

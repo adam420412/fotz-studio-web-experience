@@ -22,7 +22,7 @@ export default function StronyInternetowePodkarpacie() {
   const faqItems = [
     {
       question: "Czy fotz.pl wspiera firmy z Rzeszowa i Podkarpacia?",
-      answer: "Tak, specjalizujemy się w obsłudze firm z całego Podkarpacia, w tym z Rzeszowa, Przemyśla, Tarnobrzegu i okolicznych miast. Pracujemy zdalnie, ale rozumiemy specyfikę biznesu na Podkarpaciu - szybko rosnący rynek, dużo innowacyjnych firm, niedostateczna digitalizacja w wielu sektorach."
+      answer: "Tak. Pracujemy z Poznania, a firmy z Rzeszowa, Przemyśla, Tarnobrzegu i całego Podkarpacia obsługujemy zdalnie: rozmowy online, wspólne makiety w Figmie i stały kontakt mailowy oraz telefoniczny."
     },
     {
       question: "Ile kosztuje strona internetowa w Podkarpaciu?",
@@ -30,19 +30,19 @@ export default function StronyInternetowePodkarpacie() {
     },
     {
       question: "Czym się wyróżniacie dla firm z Podkarpacia?",
-      answer: "Rozumiemy, że Podkarpacie szybko się rozwija. Jest wiele firm, które dopiero wchodzą na rynek cyfrowy. Specjalizujemy się w tworzeniu stron, które mogą być budowane etapami - zaczniesz od strony wizytówki, a później dodasz e-commerce czy integracje z systemami biznesowymi."
+      answer: "Wiele firm dopiero rozbudowuje swoją obecność w internecie. Dlatego budujemy strony, które mogą być rozwijane etapami - zaczniesz od strony wizytówki, a później dodasz e-commerce czy integracje z systemami biznesowymi."
     },
     {
       question: "Czy będzie SEO dla Rzeszowa?",
-      answer: "Oczywiście. Optymalizujemy strony pod frazy lokalne jak 'strony internetowe Rzeszów', 'tworzenie stron Podkarpacie', 'agencja interaktywna Rzeszów' itp. To daje Ci przewagę konkurencyjną w lokalnych wyszukiwaniach."
+      answer: "Oczywiście. Optymalizujemy strony pod frazy lokalne jak 'strony internetowe Rzeszów', 'tworzenie stron Podkarpacie', 'agencja interaktywna Rzeszów' itp. Nie gwarantujemy konkretnej pozycji w Google, ale przygotowujemy stronę tak, by miała solidne podstawy do widoczności lokalnej."
     },
     {
       question: "Ile czasu trwa zrobienie strony?",
-      answer: "Zazwyczaj 4-8 tygodni zależnie od skomplikowania projektu. Staramy się pracować szybko, ale bez pogorszenia jakości. Jeśli pilny projekt - możemy pracować intensywniej, ale wtedy koszt może być wyższy."
+      answer: "Termin podajemy w ofercie, bo zależy od zakresu projektu i dostarczenia materiałów. Staramy się pracować szybko, ale bez pogorszenia jakości. Jeśli pilny projekt - możemy pracować intensywniej, ale wtedy koszt może być wyższy."
     },
     {
       question: "Czy mogę płacić etapami?",
-      answer: "Tak, oferujemy różne modele płatności, w tym rozłożenie na etapy projektu. Zazwyczaj: 30% zaliczki, 40% w trakcie, 30% po uruchomieniu. Dla dużych projektów możemy negocjować warunki."
+      answer: "Tak, oferujemy różne modele płatności, w tym rozłożenie na etapy projektu. Harmonogram płatności ustalamy indywidualnie i zapisujemy w umowie."
     },
     {
       question: "Co się stanie po uruchomieniu strony?",
@@ -50,33 +50,10 @@ export default function StronyInternetowePodkarpacie() {
     }
   ];
 
-  const podkarpacieFacts = [
-    {
-      number: "2,1 mln",
-      label: "ludzi w Podkarpaciu",
-      description: "Trzecia co do wielkości populacji w Polsce"
-    },
-    {
-      number: "550k",
-      label: "mieszkańców Rzeszowa",
-      description: "Drugie miasto Podkarpacia"
-    },
-    {
-      number: "120+",
-      label: "firm w Aviation Valley",
-      description: "Klaster lotniczy (MTU, P&W, Safran)"
-    },
-    {
-      number: "15%",
-      label: "wzrost PKB rocznie",
-      description: "Najszybciej rosnący region w Polsce"
-    }
-  ];
-
   const opportunities = [
     {
       title: "Aviation Valley",
-      description: "Ponad 120 firm z sektora lotniczego. Wiele z nich potrzebuje nowoczesnych stron do rekrutacji i B2B.",
+      description: "Klaster firm z sektora lotniczego. Takie firmy często potrzebują nowoczesnych stron do rekrutacji i B2B.",
       icon: Rocket
     },
     {
@@ -86,7 +63,7 @@ export default function StronyInternetowePodkarpacie() {
     },
     {
       title: "Niski poziom digitalizacji",
-      description: "Wiele firm małych i średnich w Podkarpaciu nie ma jeszcze stron. To ogromna szansa dla tych, którzy pójdą pierwszy.",
+      description: "Część małych i średnich firm wciąż nie ma nowoczesnej strony. To szansa dla tych, którzy zadbają o nią wcześniej.",
       icon: TrendingUp
     },
     {
@@ -112,7 +89,7 @@ export default function StronyInternetowePodkarpacie() {
       <div className="pt-20">
       <SEOHead
         title="Strony internetowe Podkarpacie | Rzeszów | FOTZ Studio"
-        description="Profesjonalne strony internetowe dla firm z Podkarpacia i Rzeszowa. Specjalizujemy się w firmach z Aviation Valley, startupach i sektorze logistyki. Strony Wycena indywidualna, responsywne i zoptymalizowane pod SEO."
+        description="Strony internetowe dla firm z Podkarpacia i Rzeszowa. Pracujemy z Poznania, klientów z regionu obsługujemy zdalnie. Responsywne strony zoptymalizowane pod SEO, wycena indywidualna."
         canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/podkarpacie"
         structuredData={{
           "@context": "https://schema.org",
@@ -122,7 +99,8 @@ export default function StronyInternetowePodkarpacie() {
           "description": "Tworzenie stron internetowych dla firm z Podkarpacia i Rzeszowa. Aviation Valley, startups, logistyka, produkcja.",
           "address": {
             "@type": "PostalAddress",
-            "addressRegion": "Podkarpackie",
+            "addressLocality": "Poznań",
+            "addressRegion": "Wielkopolskie",
             "addressCountry": "PL"
           },
           "areaServed": [
@@ -154,7 +132,7 @@ export default function StronyInternetowePodkarpacie() {
           >
             <div className="inline-flex items-center gap-2 bg-primary/20 text-primary px-4 py-2 rounded-full mb-6 border border-primary/30">
               <MapPin className="w-4 h-4" />
-              <span className="text-sm font-medium">Rzeszów - Podkarpacie</span>
+              <span className="text-sm font-medium">Rzeszów i Podkarpacie, obsługa zdalna z Poznania</span>
             </div>
             
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
@@ -162,7 +140,7 @@ export default function StronyInternetowePodkarpacie() {
             </h1>
             
             <p className="text-xl text-slate-300 mb-8 leading-relaxed">
-              Podkarpacie to najszybciej rosnący region w Polsce. Czy Twoja firma rośnie razem z regionem? Nowoczesna strona internetowa to krok, który zrobimy za Ciebie. Zapytaj o indywidualną wycenę.
+              Podkarpacie to dynamicznie rozwijający się region. Czy Twoja firma rośnie razem z nim? Nowoczesna strona internetowa to krok, który zrobimy za Ciebie. Zapytaj o indywidualną wycenę.
             </p>
 
             <div className="flex gap-4 flex-wrap">
@@ -181,36 +159,13 @@ export default function StronyInternetowePodkarpacie() {
         </div>
       </section>
 
-      {/* Facts Section */}
-      <section className="py-16 bg-slate-50">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {podkarpacieFacts.map((fact, idx) => (
-              <FadeInView key={idx} delay={idx * 0.1}>
-                <div className="text-center">
-                  <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
-                    {fact.number}
-                  </div>
-                  <div className="text-sm font-semibold text-slate-800 mb-1">
-                    {fact.label}
-                  </div>
-                  <div className="text-xs text-slate-600">
-                    {fact.description}
-                  </div>
-                </div>
-              </FadeInView>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Opportunities Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mb-16">
             <h2 className="text-4xl font-bold mb-6">Dlaczego Podkarpacie to idealne miejsce na cyfrową transformację?</h2>
             <p className="text-lg text-slate-600">
-              Podkarpacie rośnie szybciej niż inne regiony Polski. Aviation Valley przyciąga światowe firmy, startups zmieniają sposób robienia biznesu, a wiele tradycyjnych firm dopiero wchodzi na rynek cyfrowy. To idealna chwila, by zainwestować w nowoczesną stronę.
+              Podkarpacie to region z silnym przemysłem i rosnącą liczbą firm technologicznych. Aviation Valley przyciąga duże firmy, startups zmieniają sposób robienia biznesu, a wiele tradycyjnych firm dopiero wchodzi na rynek cyfrowy. To idealna chwila, by zainwestować w nowoczesną stronę.
             </p>
           </div>
 
@@ -314,7 +269,7 @@ export default function StronyInternetowePodkarpacie() {
       {/* Cost Structure Section */}
       <section className="py-20 bg-slate-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold mb-16">Ceny dostępne dla firm Podkarpackich</h2>
+          <h2 className="text-4xl font-bold mb-16">Od czego zależy wycena?</h2>
 
           <div className="grid md:grid-cols-3 gap-8">
             <FadeInView delay={0}>
@@ -387,7 +342,7 @@ export default function StronyInternetowePodkarpacie() {
           <FadeInView delay={0.3}>
             <div className="mt-16 bg-white p-8 rounded-lg border border-slate-200 text-center">
               <p className="text-slate-600 mb-6 text-lg">
-                Każdy projekt jest inny. Powyższe ceny to orientacyjne pakiety. Możemy dostosować zakres i budżet do Twoich potrzeb.
+                Każdy projekt jest inny. Wycenę przygotowujemy po rozmowie o zakresie: liczbie podstron, treściach, integracjach i sposobie zarządzania stroną.
               </p>
               <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary/90 transition">
                 Zaplanuj konsultację

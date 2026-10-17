@@ -3,7 +3,7 @@ import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { FileText, Download, Users, Target, TrendingUp, Sparkles, CheckCircle, BarChart, Zap, Eye } from "lucide-react";
+import { FileText, Download, Users, Sparkles, CheckCircle, BarChart } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 import { ContactSection } from "@/components/sections/ContactSection";
@@ -12,23 +12,23 @@ const CMEbooki = () => {
   const features = [
     { icon: FileText, title: "Ebooki i poradniki PDF", desc: "Kompleksowe poradniki (15-50 stron), praktyczne przewodniki i raporty branżowe. Profesjonalny design, merytoryczna treść, CTA do kolejnego kroku." },
     { icon: Download, title: "Whitepapery i raporty", desc: "Pogłębione analizy, raporty rynkowe i case studies dla segmentu B2B. Whitepaper pozycjonuje Twoją firmę jako thought leadera w branży." },
-    { icon: CheckCircle, title: "Checklisty i szablony", desc: "Gotowe do użycia narzędzia: checklisty, szablony Excel/Google Sheets, workbooki. Najwyższy conversion rate ze wszystkich formatów lead magnetów." },
-    { icon: Sparkles, title: "Mini-kursy i email sequences", desc: "5-7 dniowe kursy email dostarczające wartość i budujące relację. Po sekwencji edukacyjnej konwersja na klienta jest 3× wyższa." },
+    { icon: CheckCircle, title: "Checklisty i szablony", desc: "Gotowe do użycia narzędzia: checklisty, szablony Excel/Google Sheets, workbooki. Praktyczny format, który odbiorca może od razu wykorzystać w pracy." },
+    { icon: Sparkles, title: "Mini-kursy i email sequences", desc: "5-7 dniowe kursy email dostarczające wartość i budujące relację. Sekwencja edukacyjna przygotowuje odbiorcę do rozmowy o Twojej ofercie." },
     { icon: Users, title: "Strony lądowania lead magnetów", desc: "Landing pages z formularzami zapisu zoptymalizowane pod konwersję. Testy A/B nagłówka, opisu, designu formularza i CTA." },
     { icon: BarChart, title: "Dystrybucja i lead nurturing", desc: "Promocja lead magnetu (paid, organic, social), integracja z CRM, sekwencja follow-up. Zbieramy leady i prowadzimy je do sprzedaży." },
   ];
 
   const results = [
-    { value: "35%", label: "Średni conversion rate", desc: "dla dobrze zaprojektowanych LP" },
-    { value: "5×", label: "Więcej leadów", desc: "niż formularz kontaktowy" },
-    { value: "3×", label: "Wyższy CR na klienta", desc: "po sekwencji nurturingowej" },
-    { value: "500+", label: "Leadów miesięcznie", desc: "generowanych przez ebooki" },
+    { value: "Problem", label: "Konkretny temat", desc: "materiał odpowiada na realną potrzebę odbiorcy" },
+    { value: "Landing", label: "Strona zapisu", desc: "formularz i przekaz testowane w praktyce" },
+    { value: "Follow-up", label: "Sekwencja e-mail", desc: "prowadzi leada do kolejnego kroku" },
+    { value: "Pomiar", label: "Zapisy i jakość leadów", desc: "mierzone na Twoich danych, nie obiecywane z góry" },
   ];
 
   const faqItems = [
     { question: "Czym jest lead magnet?", answer: "Lead magnet to bezpłatna wartość (ebook, checklist, raport, kurs), którą oferujesz w zamian za adres e-mail. Dobrze zaprojektowany lead magnet powinien rozwiązywać konkretny problem Twojej grupy docelowej i naturalnie prowadzić do Twojej płatnej oferty." },
-    { question: "Jak długi powinien być ebook?", answer: "Zależy od celu: mini ebook (5-15 stron) ma najwyższy CR, bo niska bariera wejścia. Kompleksowy poradnik (30-60 stron) buduje większy autorytet. Dla B2B sprawdzają się whitepapery (10-25 stron). Kluczowe: każda strona musi dostarczać wartość." },
-    { question: "Jak dystrybuować ebook?", answer: "Kanały dystrybucji: landing page z formularzem, posty organiczne na social media, reklamy paid (Meta Ads, LinkedIn Ads), newsletter, blog CTA, partnerzy branżowi. Paid distribution daje najszybsze wyniki, organiczny – długoterminową bazę." },
+    { question: "Jak długi powinien być ebook?", answer: "Zależy od celu: mini ebook (5-15 stron) łatwiej przeczytać, bo bariera wejścia jest niska. Kompleksowy poradnik (30-60 stron) buduje większy autorytet. Dla B2B sprawdzają się whitepapery (10-25 stron). Kluczowe: każda strona musi dostarczać wartość." },
+    { question: "Jak dystrybuować ebook?", answer: "Kanały dystrybucji: landing page z formularzem, posty organiczne na social media, reklamy paid (Meta Ads, LinkedIn Ads), newsletter, blog CTA, partnerzy branżowi. Płatna dystrybucja pozwala szybciej dotrzeć do odbiorców, organiczna buduje bazę długoterminowo. Budżet reklamowy płacisz bezpośrednio platformie, osobno od wynagrodzenia za nasze działania." },
     { question: "Jak ebook wspiera sprzedaż?", answer: "Ebook buduje zaufanie i ekspertyzę przed pierwszym kontaktem sprzedażowym. Sekwencja follow-up po pobraniu edukuje leada i prowadzi go do zakupu. Lead, który pobrał ebook i przeszedł sekwencję, jest znacznie bardziej skłonny do rozmowy niż 'zimny' kontakt." },
   ];
 
@@ -75,7 +75,7 @@ const CMEbooki = () => {
                 Ebooki i Lead Magnety
               </h1>
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl">
-                Wartościowy content przyciąga klientów lepiej niż reklama. Tworzymy ebooki, whitepapery i lead magnety, które budują bazę i pozycjonują Cię jako eksperta.
+                Wartościowy content przyciąga klientów, którzy szukają wiedzy przed zakupem. Tworzymy ebooki, whitepapery i lead magnety, które budują bazę i pozycjonują Cię jako eksperta.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg">
@@ -116,7 +116,7 @@ const CMEbooki = () => {
         {/* Results */}
         <section className="py-16 bg-primary/5">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Efekty lead magnetów</h2>
+            <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Na czym opieramy lead magnety</h2>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
               {results.map((r, i) => (
                 <motion.div
@@ -206,7 +206,7 @@ const CMEbooki = () => {
             <p className="text-muted-foreground mb-6">
               E-booki, raporty branżowe i whitepapers budują pozycję eksperta w swojej
               dziedzinie. Content marketing B2B oparty na wartościowych materiałach
-              edukacyjnych skraca cykl sprzedaży i zwiększa jakość pozyskiwanych leadów.
+              edukacyjnych może skracać cykl sprzedaży i poprawiać jakość pozyskiwanych leadów.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
@@ -219,7 +219,7 @@ const CMEbooki = () => {
               mini-kursy w edukacji i usługach profesjonalnych.
             </p>
             <p className="text-muted-foreground">
-              Content marketing oparty na lead magnetach przynosi trwałe rezultaty —
+              Content marketing oparty na lead magnetach może działać długofalowo —
               zbudowana baza e-mail to aktywo firmy, które pracuje latami. Skontaktuj się
               z Fotz Studio, by omówić strategię content marketingu i lead generation
               dopasowaną do Twojej branży i celów biznesowych.

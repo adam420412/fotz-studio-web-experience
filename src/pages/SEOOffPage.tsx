@@ -3,7 +3,7 @@ import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Link2, Globe, ExternalLink, TrendingUp, Target, Shield, Search, BarChart, Zap, Award } from "lucide-react";
+import { Link2, Globe, ExternalLink, Shield, Search, BarChart } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 import { ContactSection } from "@/components/sections/ContactSection";
@@ -19,17 +19,17 @@ const SEOOffPage = () => {
   ];
 
   const results = [
-    { value: "+280%", label: "Wzrost Domain Rating", desc: "średnio po 12 miesiącach" },
-    { value: "500+", label: "Linków pozyskanych", desc: "dla klientów w 2025 roku" },
-    { value: "Top 5", label: "Pozycje dla trudnych fraz", desc: "po 6 miesiącach link buildingu" },
-    { value: "0", label: "Kar od Google", desc: "dzięki naturalnym metodom" },
+    { value: "Jakość", label: "Zamiast liczby linków", desc: "linki z tematycznych, wartościowych serwisów" },
+    { value: "White hat", label: "Bez farm linków i PBN", desc: "metody zgodne z wytycznymi Google" },
+    { value: "Raport", label: "Co miesiąc", desc: "nowe i utracone linki, zmiany widoczności" },
+    { value: "Bez obietnic", label: "Konkretnych pozycji", desc: "wynik zależy od konkurencji i algorytmu Google" },
   ];
 
   const faqItems = [
     { question: "Czym jest SEO off-page?", answer: "SEO off-page obejmuje wszystkie działania poza Twoją stroną, które wpływają na jej pozycje w Google: link building, digital PR, wzmianki w mediach, recenzje. Najważniejszy element to pozyskiwanie wartościowych linków zwrotnych (backlinków)." },
     { question: "Ile linków potrzebuję do wypozycjonowania?", answer: "Nie chodzi o ilość, ale o jakość. Jeden link z autorytety serwisu (DR 70+) jest wart więcej niż setki linków ze spamowych katalogów. Analizujemy profil konkurencji i opracowujemy strategię dopasowaną do Twojej niszy." },
     { question: "Czy link building jest bezpieczny?", answer: "Tak, o ile stosuje się naturalne metody: artykuły gościnne, digital PR, budowanie relacji z webmasterami. Niebezpieczny jest zakup linków w farmach, PBN i sieciach linków. My stosujemy wyłącznie metody white hat." },
-    { question: "Jak szybko link building daje efekty?", answer: "Google musi najpierw odkryć i ocenić nowe linki, co zajmuje kilka tygodni. Pierwsze efekty widoczne są po 2-4 miesiącach, a stabilne wzrosty po 6-12 miesiącach systematycznego link buildingu." },
+    { question: "Jak szybko link building daje efekty?", answer: "Google musi najpierw odkryć i ocenić nowe linki, co zajmuje kilka tygodni. Pierwsze zmiany zwykle widać dopiero po kilku miesiącach systematycznej pracy, a tempo zależy od konkurencji w branży i stanu strony. Nie gwarantujemy konkretnej pozycji ani terminu efektów." },
   ];
 
   return (
@@ -75,7 +75,7 @@ const SEOOffPage = () => {
                 SEO Off-Page i Link Building
               </h1>
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl">
-                Autorytet domeny to sygnał, który Google waży najsilniej. Budujemy go przez wartościowe linki, wzmianki i digital PR — naturalnie i bezpiecznie.
+                Autorytet domeny to jeden z ważnych sygnałów dla Google. Budujemy go przez wartościowe linki, wzmianki i digital PR — naturalnie i bezpiecznie.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg">
@@ -93,7 +93,7 @@ const SEOOffPage = () => {
         <section className="py-20 bg-background">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-4 text-foreground">Jak budujemy autorytet Twojej domeny</h2>
-            <p className="text-muted-foreground text-center mb-12 max-w-2xl mx-auto">Każdy link to głos zaufania dla Google. Pozyskujemy te, które naprawdę podnoszą rankingi.</p>
+            <p className="text-muted-foreground text-center mb-12 max-w-2xl mx-auto">Każdy link to głos zaufania dla Google. Szukamy linków, które mają realną wartość dla Twojej domeny.</p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {features.map((f, i) => (
                 <motion.div
@@ -116,7 +116,7 @@ const SEOOffPage = () => {
         {/* Results */}
         <section className="py-16 bg-primary/5">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Wyniki link buildingu</h2>
+            <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Jak pracujemy przy link buildingu</h2>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
               {results.map((r, i) => (
                 <motion.div

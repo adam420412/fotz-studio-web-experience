@@ -10,15 +10,15 @@ export const TikTokAdsPoznan = () => {
   const faqItems = [
     {
       question: "Ile kosztuje TikTok Ads w Poznaniu?",
-      answer: "Koszt kampanii TikTok Ads w Poznaniu zależy od budżetu, celów i grupy docelowej. Agencja Fotz oferuje elastyczne pakiety dostosowane do potrzeb firm. Minimum kampanii to zwykle 500 PLN dziennie. Skontaktuj się z nami na bezpłatną konsultację, aby uzyskać wycenę dostosowaną do Twojej marki.",
+      answer: "Koszt kampanii TikTok Ads w Poznaniu zależy od budżetu, celów i grupy docelowej. Wycenę obsługi przygotowujemy po rozmowie o zakresie: liczbie kampanii, produkcji materiałów wideo i raportowaniu. Budżet reklamowy płacony TikTokowi jest zawsze osobno i ustalamy go razem z Tobą. Skontaktuj się z nami na bezpłatną konsultację, aby uzyskać wycenę dostosowaną do Twojej marki.",
     },
     {
       question: "Ile TikTok płaci za 1000 wyświetleń?",
-      answer: "Stawka CPM (koszt za tysiąc wyświetleń) na TikTok waha się od 2 do 10 PLN w zależności od regionu, branży i sezonu. Polska znajduje się w średnim przedziale. Rzeczywisty koszt kampanii zależy od optymalizacji i jakości materiałów wideo oraz targetowania grupy docelowej.",
+      answer: "Stawka CPM (koszt za tysiąc wyświetleń) na TikToku nie jest stała: zależy od regionu, branży, sezonu i konkurencji o tę samą grupę odbiorców. Rzeczywisty koszt kampanii zależy od optymalizacji i jakości materiałów wideo oraz targetowania grupy docelowej.",
     },
     {
       question: "Jaka jest najlepsza agencja TikTok Ads w Poznaniu?",
-      answer: "Fotz.pl to wiodąca agencja reklamowa na TikToku w Poznaniu z doświadczeniem w prowadzeniu kampanii dla firm z różnych branż. Nasze zespoły tworzą kreatywne materiały wideo, optymalizują konwersje i zapewniają najlepsze wyniki. Sprawdziliśmy już formaty reklamowe In-Feed Ads, Spark Ads i TopView Ads dla wielu biznesów.",
+      answer: "Najlepsza agencja to ta, która dobrze rozumie Twój biznes i sama produkuje materiały wideo. FOTZ Studio to agencja z Poznania, która łączy produkcję wideo z prowadzeniem kampanii reklamowych. Na konsultacji pokażemy, jak pracujemy, i zaproponujemy formaty dopasowane do Twojego celu.",
     },
     {
       question: "Dla jakiej branży sprawdza się reklama na TikToku w Poznaniu?",
@@ -75,34 +75,11 @@ export const TikTokAdsPoznan = () => {
               TikTok Ads Poznań — Kampanie Reklamowe na TikToku dla Firm
             </h1>
             <p className="text-lg md:text-xl text-gray-700 mb-8">
-              TikTok Ads Poznan — profesjonalne kampanie reklamowe TikTok dla firm z Poznana i Wielkopolski. Dotrzemy do młodych odbiorców i zwiększamy sprzedaż. Bezpłatna konsultacja.
+              TikTok Ads Poznan — profesjonalne kampanie reklamowe TikTok dla firm z Poznana i Wielkopolski. Pomagamy dotrzeć do młodych odbiorców i wspierać sprzedaż. Bezpłatna konsultacja.
             </p>
             <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
               Bezpłatna konsultacja
             </a>
-          </div>
-        </section>
-      </FadeInView>
-
-      <FadeInView>
-        <section className="stats-section py-12 px-4 bg-gray-50">
-          <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div className="text-center">
-              <p className="text-3xl font-bold text-blue-600 mb-2">150+</p>
-              <p className="text-gray-700">Kampanii TikTok Ads</p>
-            </div>
-            <div className="text-center">
-              <p className="text-3xl font-bold text-blue-600 mb-2">2.5M+</p>
-              <p className="text-gray-700">Zasięgi kampanii</p>
-            </div>
-            <div className="text-center">
-              <p className="text-3xl font-bold text-blue-600 mb-2">45%</p>
-              <p className="text-gray-700">Średnia konwersja</p>
-            </div>
-            <div className="text-center">
-              <p className="text-3xl font-bold text-blue-600 mb-2">95%</p>
-              <p className="text-gray-700">Zadowolenie klientów</p>
-            </div>
           </div>
         </section>
       </FadeInView>
@@ -134,7 +111,7 @@ export const TikTokAdsPoznan = () => {
                 <h3 className="font-bold text-lg mb-3">TopView Ads</h3>
                 <p className="text-gray-700 text-sm">
                   Premium formaty na górze kanału. TopView Ads to kampania TikTok Ads o wysokiej widoczności,
-                  gwarantująca pierwsze wrażenie na użytkowników platformy.
+                  wyświetlana jako pierwsza reklama po otwarciu aplikacji.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg border border-gray-200 hover:shadow-lg transition">
@@ -177,7 +154,7 @@ export const TikTokAdsPoznan = () => {
               <div className="bg-white p-6 rounded-lg border border-gray-200">
                 <h3 className="font-bold text-lg mb-3">Świadomość marki</h3>
                 <p className="text-gray-700 text-sm">
-                  Osiągnij miliony użytkowników TikToka. Kampania TikTok Ads skoncentrowana na zasięgach buduje
+                  Dotrzyj do szerokiej grupy użytkowników TikToka. Kampania TikTok Ads skoncentrowana na zasięgach buduje
                   rozpoznawalność i ugruntowuje markę wśród grupy docelowej.
                 </p>
               </div>
@@ -212,8 +189,8 @@ export const TikTokAdsPoznan = () => {
               <div className="bg-white p-6 rounded-lg border border-gray-200">
                 <h3 className="font-bold text-lg mb-3">Konkurencja na rynku</h3>
                 <p className="text-gray-700 text-sm">
-                  Wyprzedź konkurencję. Agencja Fotz monitoruje kampanie reklamowe na TikToku i optymalizuje taktykę
-                  aby dominować na platformie w Twojej branży.
+                  Obserwuj konkurencję. Agencja Fotz monitoruje kampanie reklamowe na TikToku i dopasowuje taktykę
+                  do tego, co dzieje się w Twojej branży.
                 </p>
               </div>
             </div>
@@ -301,36 +278,36 @@ export const TikTokAdsPoznan = () => {
               <div className="bg-white p-6 rounded-lg border border-gray-200">
                 <h3 className="font-bold text-lg mb-3">Doświadczenie</h3>
                 <p className="text-gray-700 text-sm">
-                  Od lat prowadzimy kampanie TikTok Ads dla firm w Poznaniu i całej Polsce. Znamy platformę TikTok,
-                  wszystkie formaty reklam i sposoby optymalizacji konwersji.
+                  Prowadzimy kampanie reklamowe i sami produkujemy wideo, więc kreacja i kampania powstają w jednym miejscu.
+                  Pracujemy z Poznania, firmy z innych miast obsługujemy zdalnie.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg border border-gray-200">
-                <h3 className="font-bold text-lg mb-3">Specjaliści</h3>
+                <h3 className="font-bold text-lg mb-3">Zespół</h3>
                 <p className="text-gray-700 text-sm">
-                  Nasz zespół to eksperci w zakresie reklamy na TikToku, kreacji wideo i targetowania. Każdy członek
-                  ma praktyczne doświadczenie w tworzeniu kampanii reklamowych na platformie.
+                  Za kampanię odpowiadają osoby, które zajmują się reklamą, kreacją wideo i targetowaniem.
+                  Wiesz, kto prowadzi Twoje konto i z kim rozmawiasz.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg border border-gray-200">
-                <h3 className="font-bold text-lg mb-3">Wyniki</h3>
+                <h3 className="font-bold text-lg mb-3">Mierzalność</h3>
                 <p className="text-gray-700 text-sm">
-                  Kampanie TikTok Ads prowadzone przez Fotz osiągają średnio 45% konwersji i generują miliony
-                  zasięgów. Nasze reklamy na tiktoku przynoszą konkretne rezultaty.
+                  Ustalamy cele i wskaźniki przed startem kampanii, a potem mierzymy je w raportach. Nie obiecujemy
+                  konkretnych wyników z góry, bo zależą od branży, budżetu i oferty.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg border border-gray-200">
                 <h3 className="font-bold text-lg mb-3">Kreatywność</h3>
                 <p className="text-gray-700 text-sm">
                   Materiały wideo tworzone przez naszych specjalistów są angażujące i dostosowane do platformy TikTok.
-                  Każda reklama na tiktoku ma szansę na sukces i viral reach.
+                  Testujemy różne warianty, żeby sprawdzić, co działa najlepiej.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg border border-gray-200">
                 <h3 className="font-bold text-lg mb-3">Wsparcie</h3>
                 <p className="text-gray-700 text-sm">
-                  Podczas trwania kampanii TikTok Ads jesteśmy dostępni 24/7. Optymalizujemy akcje reklamowe na
-                  bieżąco i reagujemy na wszelkie zmiany na platformie.
+                  Podczas trwania kampanii TikTok Ads jesteśmy w stałym kontakcie. Optymalizujemy akcje reklamowe na
+                  bieżąco i reagujemy na zmiany na platformie.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg border border-gray-200">
@@ -374,8 +351,8 @@ export const TikTokAdsPoznan = () => {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold mb-8 text-center">TikTok Ads w innych miastach</h2>
             <p className="text-gray-700 text-center mb-8">
-              Agencja Fotz prowadzi kampanie TikTok Ads w wielu miastach Polski. Kampanie reklamowe na TikToku są
-              dostosowane do specyfiki lokalnej każdego regionu.
+              Pracujemy z Poznania, a firmy z innych miast obsługujemy zdalnie. Kampanie reklamowe na TikToku
+              dopasowujemy do lokalnej grupy odbiorców.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               <Link

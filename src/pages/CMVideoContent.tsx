@@ -10,8 +10,8 @@ import { ContactSection } from "@/components/sections/ContactSection";
 
 const CMVideoContent = () => {
   const features = [
-    { icon: Camera, title: "Reelsy i krótkie wideo", desc: "Reelsy na Instagram, Shorts na YouTube, TikToki — krótkie (15-90s) pionowe wideo dla algorytmów. Najwyższy organiczny zasięg ze wszystkich formatów." },
-    { icon: Video, title: "Explainer Videos", desc: "2-3 minutowe filmy tłumaczące produkt lub usługę. Animowane lub live action. Świetne na strony lądowania — zwiększają konwersję o 80%." },
+    { icon: Camera, title: "Reelsy i krótkie wideo", desc: "Reelsy na Instagram, Shorts na YouTube, TikToki — krótkie (15-90s) pionowe wideo dla algorytmów. Format, który platformy chętnie pokazują w zasięgach organicznych." },
+    { icon: Video, title: "Explainer Videos", desc: "2-3 minutowe filmy tłumaczące produkt lub usługę. Animowane lub live action. Dobrze sprawdzają się na stronach lądowania, gdzie trzeba szybko wyjaśnić ofertę." },
     { icon: Users, title: "Testimoniale i case studies", desc: "Wideo z zadowolonymi klientami to najsilniejszy social proof. Produkcja, montaż, napisy, optymalizacja pod platformy." },
     { icon: Eye, title: "Webinary i live stream", desc: "Budowanie autorytetu przez edukację. Powtarzalne nagrania webinarowe jako evergreen content. Generowanie leadów na żywo." },
     { icon: TrendingUp, title: "Brand video i reklamy wideo", desc: "Profesjonalne filmy wizerunkowe, reklamy pre-roll YouTube, wideo na landing pages. Storytelling, który buduje emocjonalne połączenie z marką." },
@@ -19,14 +19,14 @@ const CMVideoContent = () => {
   ];
 
   const results = [
-    { value: "82%", label: "Ruchu internetowego", desc: "generuje wideo (Cisco)" },
-    { value: "+80%", label: "Wyższy CR na LP", desc: "z wideo vs. bez" },
-    { value: "6×", label: "Więcej udostępnień", desc: "niż tekst i grafika" },
-    { value: "3min", label: "Dłuższy czas na stronie", desc: "gdy jest wideo" },
+    { value: "Brief", label: "Cel i format", desc: "ustalamy przed nagraniem" },
+    { value: "Nagranie", label: "Studio lub lokacja", desc: "własny sprzęt i ekipa" },
+    { value: "Montaż", label: "Kolor, grafiki, napisy", desc: "muzyka i udźwiękowienie" },
+    { value: "Formaty", label: "9:16, 16:9, 1:1", desc: "pod każdą platformę" },
   ];
 
   const faqItems = [
-    { question: "Ile kosztuje produkcja wideo marketingowego?", answer: "Ceny zależą od formatu i złożoności. Prosty reel: 500-1500 zł. Explainer video (animowany, 2 min): 3000-8000 zł. Profesjonalne wideo wizerunkowe (live action, 3-5 min): 5000-15000 zł. Wycenę przygotowujemy bezpłatnie po briefie." },
+    { question: "Ile kosztuje produkcja wideo marketingowego?", answer: "Wycenę przygotowujemy bezpłatnie po rozmowie o zakresie i briefie. Koszt zależy od formatu i długości filmu, liczby dni zdjęciowych i lokalizacji, liczby osób w ekipie, animacji i grafik, lektora oraz liczby wersji pod różne platformy. Budżet na promocję wideo w reklamach płatny platformom (np. Meta, YouTube) jest zawsze osobno." },
     { question: "Jak długo trwa produkcja wideo?", answer: "Reelsy i krótkie formaty: 3-7 dni. Explainer video animowany: 3-6 tygodni (scenariusz, animacja, lektor). Profesjonalne wideo live action: 2-4 tygodnie (pre-produkcja, nagranie, montaż). Harmonogram ustalamy na etapie briefu." },
     { question: "Czy przyjedziecie na nagranie do Poznania i okolic?", answer: "Tak, obsługujemy nagrania na terenie Poznania, Wielkopolski i całej Polski. Dysponujemy sprzętem do nagrań mobilnych. Możemy też zorganizować nagranie w naszym studiu w centrum Poznania." },
     { question: "Na jakie platformy optymalizujecie wideo?", answer: "Tworzymy wideo w formatach zoptymalizowanych pod każdą platformę: Instagram/TikTok (9:16, do 90s dla reelsów), YouTube (16:9, różne długości), LinkedIn (1:1 lub 16:9), Facebook (1:1 lub 16:9). Jeden projekt → wiele formatów." },
@@ -75,7 +75,7 @@ const CMVideoContent = () => {
                 Video Content Marketing
               </h1>
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl">
-                Wideo to najszybciej rosnący format contentowy — 82% ruchu internetowego to wideo. Tworzymy materiały, które budują markę, budują relacje i sprzedają.
+                Wideo to jeden z najważniejszych formatów w content marketingu. Tworzymy materiały, które budują markę, relacje z odbiorcami i wspierają sprzedaż.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg">
@@ -116,7 +116,7 @@ const CMVideoContent = () => {
         {/* Results */}
         <section className="py-16 bg-primary/5">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Siła video marketingu</h2>
+            <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Jak wygląda produkcja wideo</h2>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
               {results.map((r, i) => (
                 <motion.div
@@ -182,15 +182,14 @@ const CMVideoContent = () => {
               Video content marketing — produkcja wideo dla firm jako filar strategii content
             </h2>
             <p className="text-muted-foreground mb-4">
-              Video content marketing to najpotężniejszy format treści w 2024 roku. Wideo
-              generuje 82% całego ruchu internetowego, zwiększa konwersję na landing page
-              o 80% i jest 6-krotnie częściej udostępniane niż tekst. Fotz Studio oferuje
+              Wideo to jeden z formatów treści, które najlepiej przyciągają uwagę — w social
+              mediach, na stronach i w reklamach. Fotz Studio oferuje
               kompleksową produkcję wideo dla firm — od krótkich reelsów po pełne filmy
               wizerunkowe i spoty reklamowe.
             </p>
             <p className="text-muted-foreground mb-6">
               Content marketing oparty na wideo buduje autorytet marki, angażuje odbiorców
-              i wspiera SEO (Google premiuje strony z wideo). Nasze produkcje wideo są
+              i może wspierać SEO, np. wydłużając czas spędzony na stronie. Nasze produkcje wideo są
               optymalizowane pod konkretne cele biznesowe i platformy dystrybucji.
             </p>
 
@@ -199,7 +198,7 @@ const CMVideoContent = () => {
             </h2>
             <p className="text-muted-foreground mb-4">
               Dobieramy format wideo do celu marketingowego. Reelsy i Shorts (15-90 sekund)
-              to najwyższy organiczny zasięg w social media. Explainer video (2-3 minuty)
+              dają dużą szansę na zasięg organiczny w social media. Explainer video (2-3 minuty)
               tłumaczy skomplikowany produkt lub usługę. Filmy wizerunkowe budują zaufanie.
               Testimoniale klientów to najsilniejszy social proof. YouTube Ads generują
               zasięg przy precyzyjnym targetowaniu.
@@ -215,9 +214,9 @@ const CMVideoContent = () => {
             </h2>
             <p className="text-muted-foreground mb-4">
               Wideo to nie koszt, to inwestycja. Film wizerunkowy na stronie głównej
-              zwiększa czas przebywania użytkownika i zmniejsza współczynnik odrzuceń.
-              Wideo na landing page podnosi konwersję. Reelsy na Instagramie budują
-              zasięg organiczny bez płatnych kampanii. YouTube pozycjonuje markę jako eksperta.
+              może wydłużyć czas przebywania użytkownika na stronie. Wideo na landing page
+              pomaga szybko wyjaśnić ofertę. Reelsy na Instagramie pomagają budować
+              zasięg organiczny. YouTube pozwala pokazać markę jako eksperta.
             </p>
             <p className="text-muted-foreground">
               Fotz Studio tworzy strategię video content marketingu dostosowaną do Twojego

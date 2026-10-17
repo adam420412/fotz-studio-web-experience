@@ -9,11 +9,11 @@ import { ArticleSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/Str
 const faqItems = [
   {
     question: "Jak długo trwa pozycjonowanie sklepu internetowego?",
-    answer: "Pierwsze efekty widoczne po 3-6 miesiącach, stabilne pozycje po 6-12 miesiącach. E-commerce wymaga więcej czasu ze względu na dużą liczbę podstron i konkurencję. Kluczowe jest ciągłe działanie i optymalizacja."
+    answer: "SEO to proces długoterminowy — efekty narastają stopniowo, a tempo zależy od stanu sklepu, konkurencji w branży i zakresu prac. E-commerce zwykle wymaga więcej czasu ze względu na dużą liczbę podstron. Nie gwarantujemy konkretnych pozycji ani terminów; kluczowe jest ciągłe działanie i optymalizacja."
   },
   {
     question: "Czy warto inwestować w SEO dla sklepu online?",
-    answer: "Zdecydowanie tak. SEO generuje 53% ruchu w e-commerce i ma najwyższy ROI spośród kanałów marketingowych. W przeciwieństwie do reklam, ruch organiczny nie znika po zakończeniu kampanii."
+    answer: "Dla większości sklepów tak. Wyszukiwarka jest jednym z głównych miejsc, w których klienci zaczynają szukać produktów. W przeciwieństwie do reklam, ruch organiczny nie znika po zakończeniu kampanii."
   },
   {
     question: "Jakie błędy SEO najczęściej popełniają sklepy internetowe?",
@@ -25,7 +25,7 @@ const faqItems = [
   },
   {
     question: "Ile kosztuje SEO dla sklepu e-commerce?",
-    answer: "Koszt zależy od wielkości sklepu i konkurencji. Małe sklepy: 2000-5000 PLN/mies., średnie: 5000-15000 PLN/mies., duże marketplace: 15000-50000+ PLN/mies. Inwestycja zwraca się przez wzrost ruchu organicznego."
+    answer: "Koszt zależy od wielkości sklepu (liczby kategorii i produktów), platformy, stanu technicznego, konkurencyjności branży i tego, czy w zakres wchodzą treści i link building. Wycenę przygotowujemy po audycie i rozmowie o zakresie."
   }
 ];
 
@@ -135,28 +135,6 @@ const BlogSEOEcommerce = () => {
                 <p>
                   <Link to="/seo/pozycjonowanie" className="text-primary hover:underline">Pozycjonowanie</Link> sklepu internetowego to jeden z najważniejszych kanałów pozyskiwania klientów. W przeciwieństwie do płatnych reklam jak <Link to="/performance-marketing/google-ads" className="text-primary hover:underline">Google Ads</Link>, ruch organiczny jest bezpłatny i buduje długoterminową wartość biznesu.
                 </p>
-
-                <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8 my-8 not-prose">
-                  <h3 className="text-xl font-bold mb-4">Kluczowe statystyki SEO w e-commerce</h3>
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <div className="bg-background/50 rounded-xl p-4">
-                      <div className="text-3xl font-bold text-primary mb-2">44%</div>
-                      <p className="text-sm text-muted-foreground">kupujących online rozpoczyna od wyszukiwarki</p>
-                    </div>
-                    <div className="bg-background/50 rounded-xl p-4">
-                      <div className="text-3xl font-bold text-primary mb-2">23%</div>
-                      <p className="text-sm text-muted-foreground">średni współczynnik konwersji z ruchu organicznego</p>
-                    </div>
-                    <div className="bg-background/50 rounded-xl p-4">
-                      <div className="text-3xl font-bold text-primary mb-2">5.7x</div>
-                      <p className="text-sm text-muted-foreground">wyższy ROI SEO vs płatne reklamy</p>
-                    </div>
-                    <div className="bg-background/50 rounded-xl p-4">
-                      <div className="text-3xl font-bold text-primary mb-2">75%</div>
-                      <p className="text-sm text-muted-foreground">użytkowników nie scrolluje poza 1. stronę wyników</p>
-                    </div>
-                  </div>
-                </div>
 
                 <p>
                   Dobrze zoptymalizowany sklep może generować tysiące odwiedzin miesięcznie bez wydawania budżetu na reklamy. To szczególnie ważne dla małych i średnich <Link to="/uslugi/strony-internetowe/ecommerce" className="text-primary hover:underline">sklepów e-commerce</Link>, które nie mogą konkurować budżetami reklamowymi z gigantami. Warto połączyć SEO z <Link to="/content-marketing/strategia" className="text-primary hover:underline">content marketingiem</Link> dla maksymalnych efektów.
@@ -412,7 +390,7 @@ const BlogSEOEcommerce = () => {
                       </div>
                       <div className="bg-background/50 rounded-xl p-4">
                         <h4 className="font-semibold mb-2">🏆 Rankingi i TOP listy</h4>
-                        <p className="text-sm text-muted-foreground">"TOP 10 najlepszych laptopów do pracy 2025"</p>
+                        <p className="text-sm text-muted-foreground">"Najlepsze laptopy do pracy — ranking 2025"</p>
                       </div>
                       <div className="bg-background/50 rounded-xl p-4">
                         <h4 className="font-semibold mb-2">🔧 Instrukcje użytkowania</h4>
@@ -471,7 +449,7 @@ const BlogSEOEcommerce = () => {
                 <div className="space-y-4">
                   <div className="bg-secondary/30 rounded-xl p-6">
                     <h3 className="font-bold mb-2">Ile trwa pozycjonowanie sklepu internetowego?</h3>
-                    <p className="text-muted-foreground">Pierwsze efekty widać po 3-6 miesiącach, ale pełne rezultaty SEO dla e-commerce pojawiają się po 12-18 miesiącach systematycznej pracy.</p>
+                    <p className="text-muted-foreground">To proces długoterminowy — efekty narastają stopniowo i zależą od stanu sklepu, konkurencji oraz zakresu prac. Nie podajemy sztywnych terminów ani nie gwarantujemy konkretnych pozycji.</p>
                   </div>
                   <div className="bg-secondary/30 rounded-xl p-6">
                     <h3 className="font-bold mb-2">Czy warto pozycjonować produkty czy kategorie?</h3>
@@ -483,7 +461,7 @@ const BlogSEOEcommerce = () => {
                   </div>
                   <div className="bg-secondary/30 rounded-xl p-6">
                     <h3 className="font-bold mb-2">Ile kosztuje pozycjonowanie sklepu?</h3>
-                    <p className="text-muted-foreground">Profesjonalne SEO e-commerce to koszt od 3000 do 15000 zł miesięcznie, w zależności od wielkości sklepu i konkurencyjności branży.</p>
+                    <p className="text-muted-foreground">Koszt zależy od wielkości sklepu, platformy, stanu technicznego i konkurencyjności branży. Wycenę przygotowujemy po audycie i rozmowie o zakresie.</p>
                   </div>
                 </div>
               </section>
@@ -511,10 +489,10 @@ const BlogSEOEcommerce = () => {
               <p className="text-muted-foreground mb-6">SEO dla sklepów internetowych jest bardziej złożone niż SEO zwykłych stron. Tysiące produktów, dynamiczne filtry kategorii (faceted navigation), zduplikowane treści, zmieniające się stany magazynowe i konkurencja z marketplace'ami — to wyzwania specyficzne dla e-commerce. Skuteczna strategia SEO sklep e-commerce wymaga technicznej biegłości i bieżącej optymalizacji.</p>
 
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Pozycjonowanie sklepów e-commerce w Fotz Studio — WooCommerce, Shopify, PrestaShop</h2>
-              <p className="text-muted-foreground mb-6">Fotz Studio specjalizuje się w SEO dla sklepów e-commerce na wszystkich popularnych platformach: WooCommerce, Shopify, PrestaShop, Magento. Audyt SEO e-commerce, optymalizacja kart produktowych i kategorii, link building i SEO techniczne to nasze codzienne działania przynoszące mierzalne wzrosty sprzedaży organicznej.</p>
+              <p className="text-muted-foreground mb-6">Fotz Studio zajmuje się SEO sklepów e-commerce na popularnych platformach, takich jak WooCommerce, Shopify czy PrestaShop. W zakres prac wchodzą audyt SEO e-commerce, optymalizacja kart produktowych i kategorii, link building i SEO techniczne, a efekty mierzymy w ruchu organicznym i sprzedaży.</p>
 
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Audyt SEO sklepu internetowego — skontaktuj się z Fotz Studio</h2>
-              <p className="text-muted-foreground">Twój sklep internetowy nie generuje ruchu organicznego? Na bezpłatnej konsultacji omówimy sklep i ustalimy zakres audytu SEO, który wskaże najważniejsze problemy do naprawy. Skontaktuj się z nami, by zapytać o audyt SEO e-commerce — odpowiadamy w ciągu 24 godzin.</p>
+              <p className="text-muted-foreground">Twój sklep internetowy nie generuje ruchu organicznego? Na bezpłatnej konsultacji omówimy sklep i ustalimy zakres audytu SEO, który wskaże najważniejsze problemy do naprawy. Skontaktuj się z nami, by zapytać o audyt SEO e-commerce.</p>
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
               <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
               <Link to="/uslugi/sklepy-internetowe" className="text-primary hover:underline font-medium text-sm">→ Sklepy internetowe</Link>

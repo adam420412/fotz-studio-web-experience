@@ -3,7 +3,7 @@ import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, CheckCircle2, TrendingUp, Zap, Globe, ShoppingCart, BarChart3, Target, MapPin, Building2, Search, Star } from "lucide-react";
+import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 import { FadeInView } from "@/components/FadeInView";
@@ -20,7 +20,7 @@ export default function TworzenieSklepowInternetowych() {
     <>
       <SEOHead
         title="Tworzenie sklepów internetowych | E-commerce | FOTZ Studio"
-        description="Tworzymy profesjonalne sklepy internetowe. WooCommerce, Shopify, PrestaShop. Od 2999 zł netto. Pełna integracja płatności i logistyki. Bezpłatna wycena!"
+        description="Tworzymy profesjonalne sklepy internetowe. WooCommerce, Shopify, PrestaShop. Integracja płatności i logistyki. Wycena po rozmowie o zakresie."
         canonical="https://www.fotz-studio.pl/uslugi/tworzenie-sklepow-internetowych"
         keywords="tworzenie sklepów internetowych, sklep internetowy, budowa sklepu internetowego, agencja e-commerce, wdrożenie sklepu online, WooCommerce, PrestaShop, Shopify"
       />
@@ -44,7 +44,7 @@ export default function TworzenieSklepowInternetowych() {
                 Tworzenie sklepów internetowych — Twój sklep online gotowy do sprzedaży
               </h1>
               <p className="text-2xl text-orange-700 mb-8 font-semibold max-w-3xl mx-auto">
-                E-commerce w Polsce rośnie 15% rocznie. Ponad 30 tys. nowych sklepów online otwiera się każdego roku. Czy Twój sklep jest już online?
+                Projektujemy i wdrażamy sklepy dopasowane do Twojego asortymentu, płatności i wysyłek. Czy Twój sklep jest już online?
               </p>
               <Button asChild className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-lg text-lg">
                 <Link to="/kontakt">
@@ -142,7 +142,7 @@ export default function TworzenieSklepowInternetowych() {
                   "System zarządzania — panel administracyjny do obsługi zamówień",
                   "Optymalizacja SEO — rozszerzeń, kategorii, filtrów",
                   "Analityka — Google Analytics, raport konwersji, ROI",
-                  "Mobile-first — ponad 80% zakupów online to telefony",
+                  "Mobile-first — sklep projektowany z myślą o zakupach na telefonie",
                   "Bezpieczeństwo SSL — certyfikat, HTTPS, ochrona danych",
                   "Wiadomości email — powiadomienia o zamówieniu, przypomnienia",
                   "Przypomnienia o porzuconym koszyku",
@@ -170,7 +170,7 @@ export default function TworzenieSklepowInternetowych() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center">Integracje płatności i logistyki</h2>
               <p className="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto">
-                Twój sklep pracuje z wszystkimi popularnymi systemami.
+                Dobieramy integracje do platformy i potrzeb Twojego sklepu.
               </p>
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
@@ -196,61 +196,42 @@ export default function TworzenieSklepowInternetowych() {
           </section>
         </FadeInView>
 
-        {/* Packages */}
+        {/* Wycena */}
         <FadeInView>
           <section className="py-20 bg-gray-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center">Pakiety e-commerce</h2>
+              <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center">Od czego zależy wycena sklepu?</h2>
               <p className="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto">
-                Dla każdego budżetu i skali.
+                Nie mamy sztywnego cennika. Wycenę przygotowujemy po rozmowie o zakresie projektu.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {[
                   {
-                    name: "Starter e-commerce",
-                    price: "2999 zł",
+                    name: "Zakres i katalog",
                     features: [
-                      "Do 100 produktów",
-                      "1 kategoria produktów",
-                      "Płatności online",
-                      "Integracja 1 kuriera",
-                      "Email powiadomienia",
-                      "Hosting przez rok",
-                      "Wsparcie przez 2 miesiące",
-                      "Szkolenie obsługi",
+                      "Platforma (WooCommerce, Shopify, PrestaShop i inne)",
+                      "Liczba produktów, kategorii i wariantów",
+                      "Import danych produktowych",
+                      "Projekt graficzny: szablon czy projekt od zera",
                     ],
                   },
                   {
-                    name: "Sklep Pro",
-                    price: "5999 zł",
-                    featured: true,
+                    name: "Integracje",
                     features: [
-                      "Do 1000 produktów",
-                      "Nieograniczone kategorie",
-                      "Wszystkie metody płatności",
-                      "Integracja 3 kurierów",
-                      "System rabatów",
-                      "Powiadomienia zaawansowane",
-                      "Statystyki sprzedaży",
-                      "Blog e-commerce",
-                      "Wsparcie przez 6 miesięcy",
+                      "Bramki płatności",
+                      "Firmy kurierskie i paczkomaty",
+                      "Marketplace (np. Allegro)",
+                      "Systemy ERP/CRM i automatyzacje",
                     ],
                   },
                   {
-                    name: "Enterprise",
-                    price: "9999+ zł",
+                    name: "Wsparcie po starcie",
                     features: [
-                      "Nieograniczona ilość produktów",
-                      "B2B i B2C",
-                      "Wszystkie metody płatności",
-                      "Integracja wszystkich kurierów",
-                      "Zaawansowane promocje",
-                      "Integracja z ERP/CRM",
-                      "Automatyzacja procesu",
-                      "Integracja Allegro/Amazon",
-                      "Wsparcie priorytetowe",
-                      "Konsultacje strategiczne",
+                      "Szkolenie z obsługi panelu",
+                      "Zakres i czas opieki technicznej",
+                      "Hosting i domena (koszty dostawców osobno)",
+                      "Budżet reklamowy płacony platformom zawsze osobno",
                     ],
                   },
                 ].map((pkg, i) => (
@@ -259,20 +240,10 @@ export default function TworzenieSklepowInternetowych() {
                     initial={{ opacity: 0, scale: 0.95 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.4, delay: i * 0.1 }}
-                    className={`rounded-lg p-8 border-2 transition-all ${
-                      pkg.featured
-                        ? "border-orange-600 bg-orange-50 shadow-xl relative -mt-4"
-                        : "border-gray-200 bg-white"
-                    }`}
+                    className="rounded-lg p-8 border-2 transition-all border-gray-200 bg-white"
                   >
-                    {pkg.featured && (
-                      <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-orange-600 text-white px-4 py-1 rounded-full text-sm font-bold">
-                        Najpopularniejszy
-                      </div>
-                    )}
-                    <h3 className="text-2xl font-bold text-gray-900 mb-2">{pkg.name}</h3>
-                    <div className="text-3xl font-bold text-orange-600 mb-6">{pkg.price}</div>
-                    <ul className="space-y-3 mb-8">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-6">{pkg.name}</h3>
+                    <ul className="space-y-3">
                       {pkg.features.map((feature, j) => (
                         <li key={j} className="flex items-center gap-2">
                           <CheckCircle2 className="w-5 h-5 text-orange-600" />
@@ -280,18 +251,17 @@ export default function TworzenieSklepowInternetowych() {
                         </li>
                       ))}
                     </ul>
-                    <Button asChild
-                      className={`w-full ${
-                        pkg.featured
-                          ? "bg-orange-600 hover:bg-orange-700 text-white"
-                          : "bg-gray-200 hover:bg-gray-300 text-gray-900"
-                      }`}>
-                      <Link to="/kontakt">
-                        Zamów sklep
-                      </Link>
-                    </Button>
                   </motion.div>
                 ))}
+              </div>
+
+              <div className="text-center mt-12">
+                <Button asChild className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-lg text-lg">
+                  <Link to="/kontakt">
+                    Porozmawiajmy o zakresie
+                    <ArrowRight className="ml-2 w-5 h-5" />
+                  </Link>
+                </Button>
               </div>
             </div>
           </section>
@@ -347,7 +317,7 @@ export default function TworzenieSklepowInternetowych() {
                     Ile kosztuje sklep internetowy?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-600">
-                    Od 2999 zł za startową wersję. Średni sklep Pro to 5999 zł. Enterprise (integracja ERP, Allegro) to 9999 zł i więcej. Zawsze robimy darmową wycenę po poznaniu Twoich potrzeb.
+                    Nie mamy sztywnego cennika. Koszt zależy od platformy, liczby produktów, projektu graficznego i potrzebnych integracji (płatności, kurierzy, Allegro, ERP). Wycenę przygotowujemy po rozmowie o zakresie.
                   </AccordionContent>
                 </AccordionItem>
 
@@ -365,7 +335,7 @@ export default function TworzenieSklepowInternetowych() {
                     Czy możesz zadbać o integracje płatności i kurierów?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-600">
-                    Oczywiście. Integrujemy Przelewy24, PayU, Stripe i wszystkie kurierów (InPost, DPD, GLS, DHL). Sklep będzie w pełni funkcjonalny.
+                    Oczywiście. Integrujemy popularne bramki płatności (np. Przelewy24, PayU, Stripe) i firmy kurierskie (np. InPost, DPD, GLS, DHL) — dobór zależy od platformy i Twoich potrzeb.
                   </AccordionContent>
                 </AccordionItem>
 
@@ -374,7 +344,7 @@ export default function TworzenieSklepowInternetowych() {
                     Czy będzie SEO dla sklepu?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-600">
-                    Tak. Optymalizujemy kategorii, meta-tagi, strukturę URLi,Schema markup. Sklep będzie widoczny w Google. Możesz też dodać kampanię Google Shopping.
+                    Tak. Optymalizujemy kategorii, meta-tagi, strukturę URLi,Schema markup. Przygotowujemy sklep technicznie pod wyszukiwarki, ale nie gwarantujemy konkretnych pozycji w Google. Możesz też dodać kampanię Google Shopping.
                   </AccordionContent>
                 </AccordionItem>
 
@@ -383,7 +353,7 @@ export default function TworzenieSklepowInternetowych() {
                     Czy będę mógł sprzedawać na Allegro z tego samego sklepu?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-600">
-                    Tak. W pakiecie Enterprise integrujemy z Allegro API. Edytujesz produkty raz, a pojawiają się na Allegro i Twoim sklepie.
+                    Tak, możemy zintegrować sklep z Allegro API. Edytujesz produkty raz, a pojawiają się na Allegro i Twoim sklepie.
                   </AccordionContent>
                 </AccordionItem>
 

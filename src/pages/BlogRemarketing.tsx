@@ -15,7 +15,7 @@ const faqItems = [
   },
   {
     question: "Ile kosztuje remarketing?",
-    answer: "Koszt remarketingu zależy od platformy i konkurencji w branży. W Google Ads CPC remarketingowy to zazwyczaj 0,50-3 zł, w Facebook Ads CPM wynosi 5-20 zł. Budżet miesięczny dla MŚP to zwykle 1000-5000 zł."
+    answer: "Koszt remarketingu zależy od platformy, konkurencji w branży, wielkości list odbiorców i celu kampanii. Budżet reklamowy płacisz bezpośrednio platformie (Google, Meta) i jest on zawsze osobny od wynagrodzenia za obsługę. Wycenę obsługi przygotowujemy po rozmowie o zakresie."
   },
   {
     question: "Jaka jest różnica między remarketingiem a retargetingiem?",
@@ -122,18 +122,18 @@ export default function BlogRemarketing() {
                 skutecznych <Link to="/kampanie-reklamowe" className="text-primary hover:underline">kampanii reklamowych</Link>.
               </p>
               <p>
-                Statystyki są bezlitosne: <strong>97% użytkowników opuszcza stronę bez zakupu</strong> podczas pierwszej wizyty. 
-                Remarketing pozwala "podążać" za tymi użytkownikami i przypominać im o Twojej ofercie, znacząco 
-                zwiększając szanse na konwersję. Najlepiej działa w połączeniu z <Link to="/performance-marketing/google-ads" className="text-primary hover:underline">Google Ads</Link> i <Link to="/uslugi/reklama-facebook" className="text-primary hover:underline">Facebook Ads</Link>.
+                Większość odwiedzających <strong>opuszcza stronę bez zakupu</strong> podczas pierwszej wizyty. 
+                Remarketing pozwala "podążać" za tymi użytkownikami i przypominać im o Twojej ofercie, 
+                dając szansę na powrót i konwersję. Najlepiej działa w połączeniu z <Link to="/performance-marketing/google-ads" className="text-primary hover:underline">Google Ads</Link> i <Link to="/uslugi/reklama-facebook" className="text-primary hover:underline">Facebook Ads</Link>.
               </p>
 
               <div className="bg-primary/10 border border-primary/20 rounded-xl p-6 my-8">
-                <h3 className="text-lg font-bold mb-3 mt-0">💡 Kluczowe statystyki remarketingu</h3>
+                <h3 className="text-lg font-bold mb-3 mt-0">💡 Kiedy remarketing ma sens?</h3>
                 <ul className="mb-0">
-                  <li>Remarketing zwiększa rozpoznawalność marki o 1046%</li>
-                  <li>Użytkownicy remarketingowi konwertują 70% częściej</li>
-                  <li>CTR reklam remarketingowych jest 10x wyższy niż standardowych</li>
-                  <li>Koszt pozyskania klienta z remarketingu jest o 50% niższy</li>
+                  <li>Masz stały ruch na stronie, z którego da się zbudować listy odbiorców</li>
+                  <li>Proces zakupowy trwa dłużej niż jedną wizytę</li>
+                  <li>Masz poprawnie wdrożone tagi i zgody na cookies marketingowe</li>
+                  <li>Możesz przygotować różne kreacje dla różnych etapów decyzji</li>
                 </ul>
               </div>
 
@@ -163,13 +163,13 @@ export default function BlogRemarketing() {
               <h3>4. Remarketing video</h3>
               <p>
                 Docierasz do osób, które obejrzały Twoje filmy na YouTube. Możesz targetować 
-                według czasu oglądania (25%, 50%, 75%, 100% filmu).
+                według tego, jaką część filmu obejrzeli.
               </p>
 
               <h3>5. Remarketing RLSA (Search)</h3>
               <p>
                 Modyfikujesz stawki w kampaniach search dla osób, które już odwiedziły Twoją stronę. 
-                Np. +50% stawki dla powracających użytkowników szukających "buty sportowe".
+                Np. wyższe stawki dla powracających użytkowników szukających "buty sportowe".
               </p>
 
               <h2 className="flex items-center gap-3">
@@ -255,21 +255,21 @@ export default function BlogRemarketing() {
               <ul>
                 <li>Cel: przypomnienie o marce, budowanie zaufania</li>
                 <li>Kreacje: wartościowy content, social proof, misja firmy</li>
-                <li>Budżet: 20% całości</li>
+                <li>Budżet: mniejsza część całości</li>
               </ul>
 
               <h3>MOFU - Rozważanie (przeglądający produkty/usługi)</h3>
               <ul>
                 <li>Cel: przekonanie do rozważenia zakupu</li>
                 <li>Kreacje: porównania, case studies, demo</li>
-                <li>Budżet: 30% całości</li>
+                <li>Budżet: umiarkowana część całości</li>
               </ul>
 
               <h3>BOFU - Decyzja (dodali do koszyka, rozpoczęli formularz)</h3>
               <ul>
                 <li>Cel: domknięcie konwersji</li>
                 <li>Kreacje: rabaty, darmowa dostawa, gwarancja zwrotu</li>
-                <li>Budżet: 50% całości (najwyższy ROI)</li>
+                <li>Budżet: zwykle największa część — to osoby najbliżej decyzji</li>
               </ul>
 
               <h2 className="flex items-center gap-3">
@@ -277,44 +277,19 @@ export default function BlogRemarketing() {
                 Koszty i budżet remarketingu
               </h2>
 
-              <div className="overflow-x-auto my-8">
-                <table className="w-full">
-                  <thead>
-                    <tr>
-                      <th>Platforma</th>
-                      <th>Średni CPC</th>
-                      <th>Średni CPM</th>
-                      <th>Min. budżet/msc</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Google Display</td>
-                      <td>0,50-2 zł</td>
-                      <td>3-10 zł</td>
-                      <td>500 zł</td>
-                    </tr>
-                    <tr>
-                      <td>Google Search (RLSA)</td>
-                      <td>1-5 zł</td>
-                      <td>-</td>
-                      <td>1000 zł</td>
-                    </tr>
-                    <tr>
-                      <td>Facebook/Instagram</td>
-                      <td>0,30-1,50 zł</td>
-                      <td>5-20 zł</td>
-                      <td>500 zł</td>
-                    </tr>
-                    <tr>
-                      <td>LinkedIn</td>
-                      <td>5-15 zł</td>
-                      <td>30-80 zł</td>
-                      <td>2000 zł</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+              <p>
+                Nie podajemy uniwersalnych stawek — koszt kliknięcia i wyświetlenia zależy od branży, konkurencji, 
+                platformy i jakości kreacji, a ceny w aukcjach reklamowych stale się zmieniają. Na budżet wpływają:
+              </p>
+              <ul>
+                <li><strong>Wielkość list odbiorców</strong> - im większy ruch na stronie, tym więcej osób do ponownego dotarcia</li>
+                <li><strong>Platforma</strong> - Google Display, RLSA, Facebook/Instagram i LinkedIn mają różne modele kosztów</li>
+                <li><strong>Częstotliwość wyświetleń</strong> - wyższy frequency cap to wyższe wydatki</li>
+                <li><strong>Czas trwania list</strong> - dłuższe okno to więcej odbiorców</li>
+              </ul>
+              <p>
+                Budżet reklamowy płacisz bezpośrednio platformie i jest on zawsze osobny od kosztu obsługi kampanii.
+              </p>
 
               <h2>Błędy w remarketingu, których musisz unikać</h2>
               <ol>
@@ -337,9 +312,8 @@ export default function BlogRemarketing() {
 
               <h2>Podsumowanie</h2>
               <p>
-                Remarketing to jedna z najbardziej efektywnych kosztowo form reklamy online. 
-                Pozwala docierać do osób już zainteresowanych Twoją ofertą, znacząco zwiększając 
-                szanse na konwersję przy niższym koszcie niż pozyskiwanie nowych użytkowników.
+                Remarketing to forma reklamy, która pozwala docierać do osób już zainteresowanych 
+                Twoją ofertą — zamiast zaczynać od zera z każdym nowym odbiorcą.
               </p>
               <p>
                 Kluczem do sukcesu jest <strong>segmentacja odbiorców</strong>, 
@@ -383,7 +357,7 @@ export default function BlogRemarketing() {
             {/* SEO Article Section */}
             <div className="mt-12 pt-12 border-t border-border">
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Remarketing i retargeting — dlaczego odwiedzający, którzy nie kupili, są najcenniejszą grupą?</h2>
-              <p className="text-muted-foreground mb-6">Remarketing (retargeting) to kampanie skierowane do osób, które już odwiedziły Twoją stronę lub sklep, ale nie dokonały konwersji. Te osoby znają Twoją markę i są statystycznie 70% bardziej skłonne do zakupu niż nowi odwiedzający. Remarketing to jeden z najwyższych wskaźników ROI spośród wszystkich form reklamy online.</p>
+              <p className="text-muted-foreground mb-6">Remarketing (retargeting) to kampanie skierowane do osób, które już odwiedziły Twoją stronę lub sklep, ale nie dokonały konwersji. Te osoby znają już Twoją markę i ofertę, więc komunikacja do nich może być konkretniejsza niż do zupełnie nowych odbiorców.</p>
 
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Kampanie remarketingowe Google Ads i Meta Ads — konfiguracja i optymalizacja</h2>
               <p className="text-muted-foreground mb-6">Fotz Studio konfiguruje i optymalizuje kampanie remarketingowe w Google Ads (RLSA, Display Remarketing, YouTube Remarketing) i Meta Ads (Facebook i Instagram Custom Audiences, Lookalike Audiences). Tworzymy spersonalizowane reklamy dla różnych segmentów odwiedzających — inaczej do porzucających koszyk, inaczej do czytających bloga.</p>

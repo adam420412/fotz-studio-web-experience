@@ -23,7 +23,6 @@ import {
   Play,
   Expand
 } from "lucide-react";
-import { useCountUp } from "@/hooks/useCountUp";
 import {
   Accordion,
   AccordionContent,
@@ -49,13 +48,6 @@ const galleryImages = [
   { src: droneAerialView, alt: "Strefa relaksu - perspektywa lotnicza", category: "Eventy" },
   { src: droneConcert1, alt: "Koncert plenerowy - ujęcie z drona", category: "Eventy" },
   { src: stadionFajerwerki, alt: "Enea Stadion Poznań - nocne fajerwerki z drona", category: "Eventy" },
-];
-
-const stats = [
-  { value: 500, suffix: "+", label: "Lotów zrealizowanych" },
-  { value: 12, suffix: "", label: "Lat doświadczenia" },
-  { value: 4, suffix: "K", label: "Jakość nagrań" },
-  { value: 100, suffix: "%", label: "Zadowolonych klientów" },
 ];
 
 const services = [
@@ -91,50 +83,6 @@ const services = [
   },
 ];
 
-const packages = [
-  {
-    name: "Start",
-    price: "od 800",
-    description: "Podstawowy pakiet zdjęć z drona",
-    features: [
-      "Do 30 minut lotu",
-      "10 zdjęć w wysokiej rozdzielczości",
-      "Podstawowa obróbka",
-      "Dostawa w 3 dni robocze",
-    ],
-    popular: false,
-  },
-  {
-    name: "Business",
-    price: "od 1 500",
-    description: "Rozszerzony pakiet foto + video",
-    features: [
-      "Do 60 minut lotu",
-      "20 zdjęć + film 1-2 min",
-      "Profesjonalna obróbka",
-      "Montaż z muzyką",
-      "Dostawa w 5 dni",
-    ],
-    popular: true,
-  },
-  {
-    name: "Premium",
-    price: "od 3 000",
-    description: "Kompleksowa produkcja lotnicza",
-    features: [
-      "Nieograniczony czas lotu",
-      "Pełna sesja foto + video",
-      "Panoramy 360°",
-      "Profesjonalny montaż",
-      "Konsultacje i planowanie",
-      "Dostawa w 7 dni",
-    ],
-    popular: false,
-  },
-];
-
-
-
 const faqItems = [
   {
     question: "Co to jest fotografia z drona?",
@@ -146,7 +94,7 @@ const faqItems = [
   },
   {
     question: "Ile kosztuje usługa zdjęć z drona?",
-    answer: "Cennik zależy od zakresu prac: czasu lotu, liczby ujęć, postprodukcji i dodatkowych opcji. Podstawowe zdjęcia z drona zaczynają się od 800 PLN, bardziej zaawansowane usługi jak filmowanie 4K czy panoramy 360° są droższe. Przygotowujemy indywidualną wycenę dopasowaną do projektu.",
+    answer: "Koszt zależy od zakresu prac: czasu lotu, liczby ujęć, postprodukcji i dodatkowych opcji. Wycenę przygotowujemy indywidualnie po rozmowie o zakresie projektu.",
   },
   {
     question: "Czy oferujecie panoramy 360° i transmisje live?",
@@ -158,7 +106,7 @@ const faqItems = [
   },
   {
     question: "Jaką jakość materiałów dostarczacie?",
-    answer: "Dostarczamy filmy i zdjęcia w wysokiej jakości 4K, w formatach gotowych do publikacji online i do druku. Posiadamy profesjonalne drony z kamerami stabilizowanymi gimbalem, co gwarantuje stabilny obraz nawet podczas dynamicznych ujęć. Materiały są gotowe do wykorzystania w produkcji filmowej i kampaniach reklamowych.",
+    answer: "Dostarczamy filmy i zdjęcia w wysokiej jakości 4K, w formatach gotowych do publikacji online i do druku. Posiadamy profesjonalne drony z kamerami stabilizowanymi gimbalem, co pomaga utrzymać stabilny obraz także podczas dynamicznych ujęć. Materiały są gotowe do wykorzystania w produkcji filmowej i kampaniach reklamowych.",
   },
   {
     question: "Jak wygląda proces przygotowania do lotu?",
@@ -166,21 +114,9 @@ const faqItems = [
   },
   {
     question: "Jak zamówić usługę fotografii z drona?",
-    answer: "Aby skorzystać z naszych usług wystarczy kontakt: opisz projekt, lokalizację i wymagania. Przygotujemy ofertę, przedstawimy cennik i zaplanujemy termin lotu. Zapraszamy do kontaktu przez formularz lub telefon +48 790 814 814.",
+    answer: "Aby skorzystać z naszych usług wystarczy kontakt: opisz projekt, lokalizację i wymagania. Przygotujemy wycenę i zaplanujemy termin lotu. Zapraszamy do kontaktu przez formularz lub telefon +48 790 814 814.",
   },
 ];
-
-function StatCounter({ value, suffix, label }: { value: number; suffix: string; label: string }) {
-  const { ref, displayValue } = useCountUp({ end: value, duration: 2000 });
-  return (
-    <div className="text-center" ref={ref}>
-      <div className="text-4xl md:text-5xl font-bold text-primary">
-        {displayValue}{suffix}
-      </div>
-      <div className="text-sm text-muted-foreground mt-2">{label}</div>
-    </div>
-  );
-}
 
 const droneVideos = [
   { src: "/videos/enea-stadion-header.mp4", title: "Enea Stadion Poznań", category: "Eventy sportowe" },
@@ -268,25 +204,6 @@ export default function FotografiaZDrona() {
               </Button>
             </div>
           </motion.div>
-        </div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="py-16 bg-secondary/30">
-        <div className="container-wide">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
-              <motion.div
-                key={stat.label}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-              >
-                <StatCounter {...stat} />
-              </motion.div>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -444,50 +361,35 @@ export default function FotografiaZDrona() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
-              Cennik usług dronowych
+              Od czego zależy wycena?
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Wybierz pakiet dopasowany do Twoich potrzeb. Wszystkie ceny netto.
+              Wycenę przygotowujemy po rozmowie o zakresie zlecenia. Nie mamy sztywnego cennika — koszt zależy od kilku czynników.
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {packages.map((pkg, index) => (
-              <motion.div
-                key={pkg.name}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-              >
-                <Card className={`h-full relative ${pkg.popular ? 'border-primary shadow-lg shadow-primary/10' : 'border-border'}`}>
-                  {pkg.popular && (
-                    <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                      <Badge className="bg-primary text-primary-foreground">Najpopularniejszy</Badge>
-                    </div>
-                  )}
-                  <CardContent className="p-6 pt-8">
-                    <h3 className="font-heading font-bold text-xl text-foreground mb-2">{pkg.name}</h3>
-                    <p className="text-sm text-muted-foreground mb-4">{pkg.description}</p>
-                    <div className="mb-6">
-                      <span className="text-3xl font-bold text-primary">{pkg.price}</span>
-                      <span className="text-muted-foreground ml-1">PLN</span>
-                    </div>
-                    <ul className="space-y-3 mb-6">
-                      {pkg.features.map((feature, i) => (
-                        <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
-                          <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
-                    <Button asChild className="w-full" variant={pkg.popular ? "default" : "outline"}>
-                      <Link to="/kontakt">Wybierz pakiet</Link>
-                    </Button>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ))}
+          <div className="max-w-3xl mx-auto">
+            <Card className="border-border">
+              <CardContent className="p-6 md:p-8">
+                <ul className="space-y-3 mb-6">
+                  {[
+                    "Lokalizacja i dojazd oraz wymagane zgody na lot w danej strefie",
+                    "Czas lotu i liczba ujęć do wykonania",
+                    "Rodzaj materiału: zdjęcia, film, panoramy",
+                    "Zakres postprodukcji i montażu",
+                    "Termin realizacji i warunki pogodowe",
+                  ].map((feature, i) => (
+                    <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
+                      <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+                <Button asChild className="w-full">
+                  <Link to="/kontakt">Zapytaj o wycenę</Link>
+                </Button>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
@@ -643,16 +545,15 @@ export default function FotografiaZDrona() {
               Fotografia z drona Poznań — profesjonalne zdjęcia lotnicze 4K dla firm
             </h2>
             <p className="text-muted-foreground mb-4">
-              Fotografia z drona to jeden z najbardziej spektakularnych i skutecznych
-              formatów content marketingu. Zdjęcia z drona 4K i film dronem wyróżniają
+              Fotografia z drona to efektowny format content marketingu. Zdjęcia z drona 4K i film dronem wyróżniają
               ofertę nieruchomości, prezentują obiekty przemysłowe z unikatowej perspektywy
               i nadają prestiż każdej marce. Fotz Studio oferuje profesjonalne usługi
               drona w Poznaniu i okolicznych województwach.
             </p>
             <p className="text-muted-foreground mb-6">
-              Nasze ujęcia lotnicze realizowane są certyfikowanym dronem z kamerą 4K,
-              z zachowaniem wszystkich przepisów lotniczych i ubezpieczeniem OC pilota.
-              Gwarantujemy najwyższą jakość materiałów i terminowość realizacji.
+              Loty wykonuje nasz własny operator drona z uprawnieniami UAVO, ubezpieczeniem OC
+              i aktualnymi badaniami lotniczymi. Nagrywamy dronem z kamerą 4K, zgodnie z przepisami
+              lotniczymi, a termin realizacji ustalamy przed zleceniem.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
@@ -666,8 +567,7 @@ export default function FotografiaZDrona() {
               i turystyki — promocja obiektów i atrakcji z unikatowej perspektywy.
             </p>
             <p className="text-muted-foreground mb-6">
-              Film z drona do reklamy i materiałów marketingowych to inwestycja, która
-              zwraca się wielokrotnie. Profesjonalne ujęcia lotnicze można wykorzystać
+              Film z drona to materiał, który można wykorzystać wielokrotnie. Profesjonalne ujęcia lotnicze można wykorzystać
               w reklamach Meta Ads i Google Ads, na stronie internetowej i w mediach społecznościowych.
             </p>
 
@@ -681,8 +581,8 @@ export default function FotografiaZDrona() {
               oraz dokumentację eventów i imprez masowych z góry.
             </p>
             <p className="text-muted-foreground">
-              Fotografia z drona w Poznaniu i całej Wielkopolsce — realizujemy zlecenia
-              w każdych warunkach pogodowych (z wyjątkiem silnego wiatru i opadów).
+              Fotografia z drona w Poznaniu i całej Wielkopolsce — loty planujemy
+              z uwzględnieniem pogody — przy silnym wietrze lub opadach przesuwamy termin.
               Skontaktuj się z nami, by wycenić sesję dronem dla Twojej firmy lub inwestycji.
             </p>
           

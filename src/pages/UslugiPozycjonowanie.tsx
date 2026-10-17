@@ -10,20 +10,12 @@ import {
   Target,
   CheckCircle2,
   ArrowRight,
-  Award,
-  Clock,
-  Shield,
-  Zap,
   Globe,
   FileText,
   Link2,
   Settings,
-  Users,
-  Star,
   MapPin,
-  LineChart,
   Eye,
-  MessageSquare,
 } from "lucide-react";
 import {
   Accordion,
@@ -39,12 +31,12 @@ const faqItems = [
   {
     question: "Ile kosztuje pozycjonowanie stron internetowych?",
     answer:
-      "Koszt pozycjonowania w Fotz Studio zaczyna się od 800 zł netto miesięcznie dla lokalnych fraz i małych stron. Projekty dla konkurencyjnych branż lub ogólnopolskie SEO to koszt 2000–6000 zł/mies. Cena zależy od liczby słów kluczowych, konkurencyjności branży i zakresu działań technicznych.",
+      "Wycenę przygotowujemy po rozmowie o zakresie. Koszt zależy od tego, czy chodzi o SEO lokalne czy ogólnopolskie, od liczby i konkurencyjności fraz, stanu technicznego strony, ilości treści do przygotowania oraz zakresu link buildingu.",
   },
   {
     question: "Po jakim czasie widać efekty pozycjonowania?",
     answer:
-      "Pierwsze efekty pozycjonowania widoczne są zazwyczaj po 2–3 miesiącach — strona zaczyna pojawiać się na dalszych stronach wyników. Znaczący wzrost ruchu organicznego następuje po 4–6 miesiącach regularnych działań SEO. Pełen efekt kampanii oceniamy po 12 miesiącach.",
+      "Nie podajemy sztywnych terminów — tempo zależy od konkurencji w branży, stanu strony i zakresu prac. Pozycjonowanie to praca długoterminowa: pierwsze zmiany zwykle pojawiają się po kilku miesiącach systematycznych działań, a efekty najlepiej oceniać w dłuższym okresie.",
   },
   {
     question: "Na czym polega pozycjonowanie stron?",
@@ -69,12 +61,12 @@ const faqItems = [
   {
     question: "Jak Fotz Studio mierzy efekty pozycjonowania?",
     answer:
-      "Raportujemy miesięcznie: pozycje na kluczowe słowa kluczowe (Google Search Console), ruch organiczny (Google Analytics 4), liczba zindeksowanych stron, profil linków zewnętrznych. Każdy klient otrzymuje dostęp do panelu raportowego z danymi w czasie rzeczywistym.",
+      "Raportujemy miesięcznie: pozycje na kluczowe słowa kluczowe (Google Search Console), ruch organiczny (Google Analytics 4), liczba zindeksowanych stron, profil linków zewnętrznych. Możesz też mieć bezpośredni dostęp do danych w Google Search Console i Google Analytics 4.",
   },
   {
     question: "Czy Fotz Studio gwarantuje pozycje w Google?",
     answer:
-      "Żadna agencja nie może gwarantować konkretnych pozycji w Google — algorytm się zmienia, a wyniki zależą od setek czynników. Gwarantujemy natomiast: transparentne działania zgodne z wytycznymi Google (White-hat SEO), systematyczną pracę i regularne raportowanie postępów.",
+      "Nie — nie gwarantujemy konkretnej pozycji w Google. Algorytm się zmienia, a wyniki zależą od wielu czynników, na które żadna agencja nie ma pełnego wpływu. Zapewniamy natomiast transparentne działania zgodne z wytycznymi Google (White-hat SEO), systematyczną pracę i regularne raportowanie postępów.",
   },
 ];
 
@@ -174,61 +166,6 @@ const UslugiPozycjonowanie = () => {
     },
   ];
 
-  const packages = [
-    {
-      name: "SEO Local",
-      price: "800",
-      period: "/mies.",
-      description: "Dla firm lokalnych i usługowych",
-      features: [
-        "Do 10 słów kluczowych",
-        "Pozycjonowanie lokalne",
-        "Optymalizacja Google Moja Firma",
-        "Audyt techniczny SEO",
-        "Optymalizacja on-page",
-        "2 artykuły SEO/mies.",
-        "Raport miesięczny",
-        "Realizacja: umowa min. 6 mies.",
-      ],
-      popular: false,
-    },
-    {
-      name: "SEO Business",
-      price: "2 000",
-      period: "/mies.",
-      description: "Dla firm rosnących i e-commerce",
-      features: [
-        "Do 30 słów kluczowych",
-        "SEO techniczne zaawansowane",
-        "Strategia content marketingu",
-        "4 artykuły SEO/mies.",
-        "Link building (4 linki/mies.)",
-        "Optymalizacja konwersji",
-        "Raport z pozycjami co 2 tyg.",
-        "Dedykowany specjalista SEO",
-      ],
-      popular: true,
-    },
-    {
-      name: "SEO Enterprise",
-      price: "5 000",
-      period: "/mies.",
-      description: "Dla dużych serwisów i e-commerce",
-      features: [
-        "Nielimitowane słowa kluczowe",
-        "Pełne SEO techniczne",
-        "Content plan + 10 artykułów/mies.",
-        "Agresywny link building",
-        "Analityka i CRO",
-        "Kampanie PR cyfrowy",
-        "Raportowanie real-time",
-        "Priorytetowe wsparcie",
-        "Dostęp do Ahrefs/SEMrush",
-      ],
-      popular: false,
-    },
-  ];
-
   const cityPages = [
     { city: "Warszawa", url: "/seo/pozycjonowanie-warszawa" },
     { city: "Kraków", url: "/seo/pozycjonowanie-krakow" },
@@ -242,7 +179,7 @@ const UslugiPozycjonowanie = () => {
     <Layout>
       <SEOHead
         title="Pozycjonowanie Stron Internetowych — Agencja SEO | Fotz Studio"
-        description="Profesjonalne pozycjonowanie stron internetowych w Google. Agencja SEO Fotz Studio — audyt, optymalizacja, link building. Sprawdź pakiety od 800 zł/mies.!"
+        description="Profesjonalne pozycjonowanie stron internetowych w Google. Agencja SEO Fotz Studio — audyt, optymalizacja, link building. Wycena po bezpłatnej konsultacji."
         canonical="https://www.fotz-studio.pl/uslugi/pozycjonowanie"
         keywords="pozycjonowanie stron internetowych, usługi seo, agencja seo, seo dla firm, pozycjonowanie google, seo pozycjonowanie cennik, kampanie seo, pozycjonowanie stron cennik, seo audyt, pozycjonowanie organiczne"
       />
@@ -296,7 +233,7 @@ const UslugiPozycjonowanie = () => {
             >
               Agencja SEO Fotz Studio — audyt techniczny, optymalizacja treści,
               link building. Pozycjonujemy strony małych firm, e-commerce i dużych
-              serwisów. Pierwsze efekty w 2–3 miesiące.
+              serwisów.
             </motion.p>
 
             <motion.div
@@ -311,7 +248,7 @@ const UslugiPozycjonowanie = () => {
                 </Link>
               </Button>
               <Button size="lg" variant="outline" asChild className="text-base px-8">
-                <Link to="#pakiety">Pakiety i ceny</Link>
+                <Link to="#pakiety">Od czego zależy wycena</Link>
               </Button>
             </motion.div>
 
@@ -333,27 +270,6 @@ const UslugiPozycjonowanie = () => {
                 </div>
               ))}
             </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Stats */}
-      <section className="py-16 bg-muted/30 border-y border-border/40">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {[
-              { value: "150+", label: "kampanii SEO" },
-              { value: "+340%", label: "średni wzrost ruchu" },
-              { value: "5 lat", label: "w SEO i content marketingu" },
-              { value: "2–3 mies.", label: "do pierwszych efektów" },
-            ].map((stat, i) => (
-              <FadeInView key={i} delay={i * 0.1} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-primary mb-1">
-                  {stat.value}
-                </div>
-                <div className="text-sm text-muted-foreground">{stat.label}</div>
-              </FadeInView>
-            ))}
           </div>
         </div>
       </section>
@@ -452,62 +368,41 @@ const UslugiPozycjonowanie = () => {
         </div>
       </section>
 
-      {/* Packages */}
+      {/* Pricing factors */}
       <section id="pakiety" className="py-20 bg-muted/20">
         <div className="container mx-auto px-4">
           <FadeInView className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Pakiety i ceny pozycjonowania stron
+              Od czego zależy wycena pozycjonowania?
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Transparentne ceny bez ukrytych kosztów. Każdy pakiet zawiera regularny
-              reporting i dedykowanego specjalistę.
+              Wycenę przygotowujemy po rozmowie o zakresie i wstępnym przeglądzie
+              strony. Na koszt wpływają przede wszystkim:
             </p>
           </FadeInView>
 
-          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {packages.map((pkg, i) => (
-              <FadeInView key={i} delay={i * 0.1}>
-                <div
-                  className={`rounded-2xl border p-6 flex flex-col h-full relative ${
-                    pkg.popular
-                      ? "border-primary bg-primary/5 shadow-lg shadow-primary/10"
-                      : "border-border/60 bg-card"
-                  }`}
-                >
-                  {pkg.popular && (
-                    <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground text-xs font-semibold px-4 py-1 rounded-full">
-                      Najpopularniejszy
-                    </div>
-                  )}
-                  <div className="mb-6">
-                    <h3 className="text-xl font-bold text-foreground mb-1">{pkg.name}</h3>
-                    <p className="text-sm text-muted-foreground mb-4">{pkg.description}</p>
-                    <div className="flex items-baseline gap-1">
-                      <span className="text-3xl font-bold text-foreground">{pkg.price} zł</span>
-                      <span className="text-muted-foreground text-sm">{pkg.period}</span>
-                    </div>
-                  </div>
-                  <ul className="space-y-2 mb-8 flex-1">
-                    {pkg.features.map((f, fi) => (
-                      <li key={fi} className="flex items-start gap-2 text-sm">
-                        <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                        <span className="text-muted-foreground">{f}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <Button
-                    asChild
-                    variant={pkg.popular ? "default" : "outline"}
-                    className="w-full"
-                  >
-                    <Link to="/kontakt">
-                      Wybierz pakiet <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </div>
-              </FadeInView>
+          <ul className="grid md:grid-cols-2 gap-4 max-w-4xl mx-auto">
+            {[
+              "Zasięg działań — SEO lokalne (frazy z miastem) czy ogólnopolskie",
+              "Liczba i konkurencyjność fraz, na które chcesz być widoczny",
+              "Stan techniczny strony i zakres poprawek do wdrożenia",
+              "Ilość treści do przygotowania lub przebudowy",
+              "Zakres link buildingu i działań poza stroną",
+              "Częstotliwość raportowania i konsultacji",
+            ].map((item) => (
+              <li key={item} className="flex items-start gap-3 bg-card border border-border/60 rounded-xl p-4 text-sm">
+                <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                <span className="text-muted-foreground">{item}</span>
+              </li>
             ))}
+          </ul>
+
+          <div className="text-center mt-10">
+            <Button asChild size="lg">
+              <Link to="/kontakt">
+                Zapytaj o wycenę <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
           </div>
         </div>
       </section>
@@ -520,8 +415,8 @@ const UslugiPozycjonowanie = () => {
               Pozycjonowanie lokalne — wybierz swoje miasto
             </h2>
             <p className="text-muted-foreground max-w-xl mx-auto">
-              Specjalizujemy się w pozycjonowaniu firm z konkretnych miast.
-              Poznaj ofertę SEO dla Twojego regionu.
+              Pracujemy z Poznania, a firmy z innych miast obsługujemy zdalnie.
+              Sprawdź informacje o SEO dla Twojego regionu.
             </p>
           </FadeInView>
           <div className="flex flex-wrap justify-center gap-4 max-w-3xl mx-auto">
@@ -553,7 +448,7 @@ const UslugiPozycjonowanie = () => {
                 (SEO, Search Engine Optimization) to zestaw działań mających na celu
                 poprawę widoczności strony w organicznych (bezpłatnych) wynikach
                 wyszukiwania Google. W odróżnieniu od płatnych reklam Google Ads,
-                efekty SEO są trwałe i kumulują się z czasem.
+                efekty SEO nie znikają w chwili wyłączenia budżetu i mogą kumulować się z czasem.
               </p>
 
               <h3 className="text-xl font-bold text-foreground mt-8">
@@ -605,19 +500,19 @@ const UslugiPozycjonowanie = () => {
                 Ile czasu zajmuje pozycjonowanie?
               </h3>
               <p>
-                SEO to maraton, nie sprint. Pierwsze ruchy w pozycjach widać po 2–3
-                miesiącach. Znaczący wzrost ruchu organicznego następuje zazwyczaj po
-                4–6 miesiącach, a pełen efekt kampanii najlepiej oceniać po 12
-                miesiącach. Dlatego{" "}
+                SEO to maraton, nie sprint. Nie da się podać sztywnego terminu —
+                tempo zależy od konkurencji, stanu strony i zakresu prac. Pierwsze
+                zmiany pojawiają się zwykle po kilku miesiącach, a efekty najlepiej
+                oceniać w dłuższym okresie. Dlatego{" "}
                 <strong className="text-foreground">
                   pozycjonowanie wymaga systematycznej, długoterminowej pracy
                 </strong>
                 .
               </p>
               <p>
-                Agencje oferujące „gwarantowane pierwsze miejsce w Google w 30 dni"
-                stosują niebezpieczne techniki Black-hat SEO, które krótkoterminowo
-                mogą podbić pozycje, ale długoterminowo skutkują karą od Google
+                Uważaj na oferty obiecujące szybkie i pewne efekty w Google. Często
+                stoją za nimi techniki Black-hat SEO, które krótkoterminowo mogą
+                poprawić widoczność, ale długoterminowo grożą karą od Google
                 (Google Penalty) i utratą widoczności.
               </p>
             </div>

@@ -8,7 +8,7 @@ import { ArticleSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/Str
 const faqItems = [
   {
     question: "Jaki jest średni ROI email marketingu?",
-    answer: "Email marketing ma średni ROI 4200%, czyli 42 złote zwrotu z każdej zainwestowanej złotówki. To jeden z najskuteczniejszych kanałów marketingowych."
+    answer: "Email marketing często wypada korzystnie na tle innych kanałów, bo wysyłka do własnej listy kosztuje niewiele. Rzeczywisty zwrot zależy jednak od jakości listy, oferty i branży, dlatego warto liczyć go na własnych danych (przychód z kampanii vs koszt narzędzi i pracy), a nie opierać się na uśrednionych wskaźnikach z raportów."
   },
   {
     question: "Co to jest lead magnet i jak go stworzyć?",
@@ -20,7 +20,7 @@ const faqItems = [
   },
   {
     question: "Jaki powinien być open rate emaili?",
-    answer: "Dobry open rate to 20-25%. CTR powinien wynosić 2-5%, a unsubscribe rate poniżej 0.5%. Te benchmarki różnią się w zależności od branży."
+    answer: "Nie ma jednej uniwersalnej wartości — wyniki różnią się w zależności od branży, jakości listy i sposobu liczenia otwarć (funkcje prywatności w programach pocztowych potrafią zawyżać open rate). Najlepiej porównywać własne kampanie w czasie: open rate, CTR i odsetek wypisań."
   },
   {
     question: "Jakie narzędzia do email marketingu polecacie?",
@@ -91,7 +91,7 @@ const BlogEmailMarketing = () => {
               </h1>
               
               <p className="text-lg md:text-xl text-muted-foreground max-w-3xl">
-                Email marketing ma średni ROI 4200%. To 42 złote zwrotu z każdej zainwestowanej złotówki. Dowiedz się, jak wykorzystać ten potencjał.
+                Własna lista mailingowa to kanał, którego nie odbierze Ci żaden algorytm. Dowiedz się, jak ją zbudować i jak zamieniać subskrybentów w klientów.
               </p>
             </motion.div>
           </div>
@@ -102,17 +102,17 @@ const BlogEmailMarketing = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto prose">
               <p>
-                W erze <Link to="/social-media/obsluga" className="text-primary hover:underline">social media</Link> i chatbotów, email marketing może wydawać się przestarzały. <strong>Nic bardziej mylnego.</strong> Email pozostaje jednym z najskuteczniejszych kanałów marketingowych z ROI sięgającym 4200%. W tym artykule pokażemy, jak zbudować listę mailingową od zera i przekształcić subskrybentów w klientów. Email marketing doskonale współgra z <Link to="/content-marketing/strategia" className="text-primary hover:underline">content marketingiem</Link> oraz <Link to="/kampanie-reklamowe" className="text-primary hover:underline">kampaniami reklamowymi</Link>.
+                W erze <Link to="/social-media/obsluga" className="text-primary hover:underline">social media</Link> i chatbotów, email marketing może wydawać się przestarzały. <strong>Nic bardziej mylnego.</strong> Email pozostaje jednym z najważniejszych kanałów marketingowych, bo daje bezpośredni dostęp do odbiorców. W tym artykule pokażemy, jak zbudować listę mailingową od zera i przekształcić subskrybentów w klientów. Email marketing doskonale współgra z <Link to="/content-marketing/strategia" className="text-primary hover:underline">content marketingiem</Link> oraz <Link to="/kampanie-reklamowe" className="text-primary hover:underline">kampaniami reklamowymi</Link>.
               </p>
 
               {/* Key stats */}
               <div className="not-prose my-12">
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                   {[
-                    { value: "4200%", label: "średni ROI email marketingu" },
-                    { value: "4.2 mld", label: "użytkowników email na świecie" },
-                    { value: "21%", label: "średni open rate" },
-                    { value: "3.7%", label: "średni CTR" },
+                    { value: "Lista", label: "własny kanał, niezależny od algorytmów" },
+                    { value: "Segmenty", label: "treść dopasowana do odbiorcy" },
+                    { value: "Sekwencje", label: "automatyczne maile we właściwym momencie" },
+                    { value: "Testy A/B", label: "decyzje oparte na własnych danych" },
                   ].map((stat, index) => (
                     <div key={index} className="text-center p-4 bg-card rounded-xl border border-border">
                       <div className="text-2xl md:text-3xl font-bold text-primary mb-1">{stat.value}</div>
@@ -132,7 +132,7 @@ const BlogEmailMarketing = () => {
                 <div className="grid md:grid-cols-2 gap-6">
                   {[
                     { icon: Target, title: "Precyzyjne targetowanie", desc: "Segmentacja pozwala wysyłać spersonalizowane wiadomości do różnych grup odbiorców" },
-                    { icon: TrendingUp, title: "Najwyższy ROI", desc: "Email marketing generuje 42 złote na każdą zainwestowaną złotówkę" },
+                    { icon: TrendingUp, title: "Niski koszt dotarcia", desc: "Wysyłka do własnej listy kosztuje niewiele w porównaniu z płatnymi kampaniami" },
                     { icon: Users, title: "Własność listy", desc: "Lista mailingowa należy do Ciebie – niezależnie od platform zewnętrznych" },
                     { icon: Zap, title: "Automatyzacja", desc: "Sekwencje email pracują za Ciebie 24/7, konwertując leady na klientów" },
                   ].map((item, index) => (
@@ -159,9 +159,9 @@ const BlogEmailMarketing = () => {
                 <li><strong>E-booki i poradniki</strong> – "Kompletny przewodnik po SEO dla początkujących"</li>
                 <li><strong>Checklisty</strong> – "10-punktowa checklista przed publikacją strony"</li>
                 <li><strong>Szablony</strong> – "5 szablonów maili sprzedażowych"</li>
-                <li><strong>Webinary</strong> – "Jak zwiększyć sprzedaż o 50% w 30 dni"</li>
+                <li><strong>Webinary</strong> – "Jak zwiększyć sprzedaż w sklepie internetowym"</li>
                 <li><strong>Darmowe narzędzia</strong> – kalkulatory, generatory, audyty</li>
-                <li><strong>Kupony i zniżki</strong> – "10% zniżki na pierwsze zamówienie"</li>
+                <li><strong>Kupony i zniżki</strong> – "Rabat na pierwsze zamówienie"</li>
               </ul>
 
               <div className="not-prose my-8 p-6 bg-primary/10 rounded-xl border border-primary/20">
@@ -187,7 +187,7 @@ const BlogEmailMarketing = () => {
               </p>
 
               <ul>
-                <li><strong>Pop-up z intencją wyjścia</strong> – pojawia się gdy użytkownik chce opuścić stronę (konwersja 2-4%)</li>
+                <li><strong>Pop-up z intencją wyjścia</strong> – pojawia się, gdy użytkownik chce opuścić stronę</li>
                 <li><strong>Sticky bar</strong> – pasek u góry lub dołu strony</li>
                 <li><strong>W treści artykułu</strong> – naturalnie wpleciony w content</li>
                 <li><strong>Sidebar</strong> – boczny panel na blogu</li>
@@ -212,7 +212,7 @@ const BlogEmailMarketing = () => {
               <h2>Segmentacja listy – klucz do personalizacji</h2>
 
               <p>
-                Wysyłanie tych samych maili do wszystkich to błąd. <strong>Segmentacja zwiększa open rate o 14% i CTR o 100%.</strong>
+                Wysyłanie tych samych maili do wszystkich to błąd. <strong>Segmentacja zwykle poprawia otwarcia i kliknięcia, bo treść lepiej pasuje do odbiorcy.</strong>
               </p>
 
               <h3>Sposoby segmentacji:</h3>
@@ -229,20 +229,20 @@ const BlogEmailMarketing = () => {
                 <div className="p-6 bg-card rounded-xl border border-border">
                   <h4 className="font-semibold mb-4 flex items-center gap-2">
                     <BarChart3 className="w-5 h-5 text-primary" />
-                    Wpływ segmentacji na wyniki
+                    Na co segmentacja zwykle wpływa
                   </h4>
                   <div className="space-y-3">
                     <div className="flex justify-between items-center">
-                      <span className="text-muted-foreground">Wzrost open rate</span>
-                      <span className="font-semibold text-primary">+14%</span>
+                      <span className="text-muted-foreground">Open rate</span>
+                      <span className="font-semibold text-primary">zwykle w górę</span>
                     </div>
                     <div className="flex justify-between items-center">
-                      <span className="text-muted-foreground">Wzrost CTR</span>
-                      <span className="font-semibold text-primary">+100%</span>
+                      <span className="text-muted-foreground">CTR</span>
+                      <span className="font-semibold text-primary">zwykle w górę</span>
                     </div>
                     <div className="flex justify-between items-center">
-                      <span className="text-muted-foreground">Spadek wypisań</span>
-                      <span className="font-semibold text-primary">-28%</span>
+                      <span className="text-muted-foreground">Wypisania</span>
+                      <span className="font-semibold text-primary">zwykle w dół</span>
                     </div>
                   </div>
                 </div>
@@ -270,7 +270,7 @@ const BlogEmailMarketing = () => {
 
               <h4>2. Abandoned cart (porzucony koszyk)</h4>
               <p>
-                Dla e-commerce – odzyskuje średnio 10-15% porzuconych koszyków.
+                Dla e-commerce – pozwala odzyskać część porzuconych koszyków.
               </p>
               <ul>
                 <li><strong>Email 1 (1h po porzuceniu):</strong> "Zapomniałeś czegoś?"</li>
@@ -314,7 +314,7 @@ const BlogEmailMarketing = () => {
                   <div>
                     <h4 className="font-semibold mb-2">Testuj tematy A/B!</h4>
                     <p className="text-muted-foreground text-sm">
-                      Temat emaila decyduje o tym, czy wiadomość zostanie otwarta. Testuj różne warianty: pytania vs stwierdzenia, krótkie vs długie, z emoji vs bez. Nawet mała zmiana może zwiększyć open rate o 20-30%.
+                      Temat emaila decyduje o tym, czy wiadomość zostanie otwarta. Testuj różne warianty: pytania vs stwierdzenia, krótkie vs długie, z emoji vs bez. Nawet mała zmiana potrafi wyraźnie wpłynąć na open rate — sprawdzaj to na własnej liście.
                     </p>
                   </div>
                 </div>
@@ -349,11 +349,11 @@ const BlogEmailMarketing = () => {
               <div className="not-prose my-8">
                 <div className="space-y-4">
                   {[
-                    { metric: "Open Rate", benchmark: "20-25%", desc: "Procent otwartych emaili" },
-                    { metric: "Click-Through Rate (CTR)", benchmark: "2-5%", desc: "Procent kliknięć w linki" },
-                    { metric: "Conversion Rate", benchmark: "1-3%", desc: "Procent realizacji celu (zakup, zapis)" },
-                    { metric: "Unsubscribe Rate", benchmark: "<0.5%", desc: "Procent wypisań" },
-                    { metric: "Bounce Rate", benchmark: "<2%", desc: "Procent niedostarczonych maili" },
+                    { metric: "Open Rate", benchmark: "trend w czasie", desc: "Procent otwartych emaili" },
+                    { metric: "Click-Through Rate (CTR)", benchmark: "im wyżej, tym lepiej", desc: "Procent kliknięć w linki" },
+                    { metric: "Conversion Rate", benchmark: "mierz w GA4", desc: "Procent realizacji celu (zakup, zapis)" },
+                    { metric: "Unsubscribe Rate", benchmark: "jak najniżej", desc: "Procent wypisań" },
+                    { metric: "Bounce Rate", benchmark: "jak najniżej", desc: "Procent niedostarczonych maili" },
                   ].map((item, index) => (
                     <div key={index} className="flex items-center justify-between p-4 bg-card rounded-xl border border-border">
                       <div>
@@ -362,7 +362,7 @@ const BlogEmailMarketing = () => {
                       </div>
                       <div className="text-right">
                         <span className="text-primary font-semibold">{item.benchmark}</span>
-                        <p className="text-xs text-muted-foreground">benchmark</p>
+                        <p className="text-xs text-muted-foreground">na co patrzeć</p>
                       </div>
                     </div>
                   ))}
@@ -375,7 +375,7 @@ const BlogEmailMarketing = () => {
                 <li><strong>Kupowanie list mailingowych</strong> – nielegalne (RODO) i nieefektywne</li>
                 <li><strong>Brak regularności</strong> – subskrybenci zapominają o Tobie</li>
                 <li><strong>Tylko sprzedaż</strong> – dawaj wartość, nie tylko promuj</li>
-                <li><strong>Ignorowanie mobilnych</strong> – 60% maili otwierane na telefonach</li>
+                <li><strong>Ignorowanie mobilnych</strong> – duża część maili jest otwierana na telefonach</li>
                 <li><strong>Brak personalizacji</strong> – "Drogi Kliencie" nie działa</li>
                 <li><strong>Zbyt długie maile</strong> – szanuj czas czytelnika</li>
               </ul>
@@ -415,7 +415,7 @@ const BlogEmailMarketing = () => {
 
                   <div>
                     <h3 className="text-lg font-semibold mb-2">Jaki jest dobry open rate?</h3>
-                    <p className="text-muted-foreground">Średni open rate to 20-25%, ale zależy od branży. E-commerce często ma 15-20%, podczas gdy B2B może osiągać 25-30%. Ważniejszy od porównywania z benchmarkami jest Twój własny trend – czy rośnie czy spada.</p>
+                    <p className="text-muted-foreground">Zależy od branży, jakości listy i sposobu liczenia otwarć, więc ogólne benchmarki niewiele mówią. Ważniejszy od porównywania się z innymi jest Twój własny trend – czy rośnie czy spada.</p>
                   </div>
 
                   <div>
@@ -457,8 +457,8 @@ const BlogEmailMarketing = () => {
 
             {/* SEO Article Section */}
             <div className="mt-12 pt-12 border-t border-border">
-              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Email marketing jako kanał z najwyższym ROI — dlaczego warto budować listę?</h2>
-              <p className="text-muted-foreground mb-6">Email marketing ma jeden z najwyższych ROI w marketingu cyfrowym — średnio 36-42 zł zwrotu na każdą złotówkę zainwestowaną. Lista mailingowa to własne medium — w przeciwieństwie do social media, nikt nie może Ci odebrać dostępu do subskrybentów. Budowanie bazy email to inwestycja na lata.</p>
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Email marketing jako własny kanał — dlaczego warto budować listę?</h2>
+              <p className="text-muted-foreground mb-6">Email marketing to kanał o niskim koszcie dotarcia, którego zwrot warto mierzyć na własnych danych. Lista mailingowa to własne medium — w przeciwieństwie do social media, nikt nie może Ci odebrać dostępu do subskrybentów. Budowanie bazy email to inwestycja na lata.</p>
 
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Automatyzacja email marketingu — newslettery, sekwencje i odzysk koszyków</h2>
               <p className="text-muted-foreground mb-6">Fotz Studio konfiguruje systemy email marketingu (Mailchimp, MailerLite, GetResponse, Klaviyo) i tworzy automatyzacje: sekwencje powitalne, odzysk porzuconych koszyków dla e-commerce, sekwencje nurturujące dla B2B i kampanie win-back. Newsletter regularnie wysyłany do bazy to silnik generowania leadów.</p>

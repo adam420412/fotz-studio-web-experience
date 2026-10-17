@@ -3,7 +3,7 @@ import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, CheckCircle2, TrendingUp, Zap, Globe, Palette, Layers, Code2, Monitor, Star } from "lucide-react";
+import { ArrowRight, CheckCircle2, TrendingUp, Zap, Globe, Palette, Code2, Monitor } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 import { FadeInView } from "@/components/FadeInView";
@@ -21,7 +21,7 @@ export default function ProjektStronyInternetowej() {
     <>
       <SEOHead
         title="Projekt strony internetowej | Profesjonalny design WWW | FOTZ Studio"
-        description="Projekt strony internetowej od profesjonalnych designerów. Unikalne szablony, indywidualny design, mobile-first. Sprawdź portfolio i cennik fotz.pl!"
+        description="Projekt strony internetowej od profesjonalnych designerów. Unikalne szablony, indywidualny design, mobile-first. Sprawdź portfolio i zapytaj o wycenę."
         canonical="https://www.fotz-studio.pl/uslugi/projekt-strony-internetowej"
         keywords="projekt strony internetowej, projektowanie strony www, projekt strony dla firmy, jak wygląda projekt strony, etapy tworzenia strony internetowej"
       />
@@ -46,39 +46,11 @@ export default function ProjektStronyInternetowej() {
               Projekt strony internetowej — indywidualny design dopasowany do Twojej firmy
             </h1>
             <p className="text-xl text-gray-700 mb-4">
-              Dobry projekt strony = 40% wyższy współczynnik konwersji
+              Przemyślany projekt porządkuje treść i prowadzi użytkownika do kontaktu lub zakupu
             </p>
             <p className="text-lg text-gray-600 mb-8">
               Tworzymy projektów stron internetowych, które nie tylko wyglądają pięknie, ale również generują sprzedaż.
             </p>
-
-            {/* Stats */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-              <FadeInView delay={0.1}>
-                <div className="bg-white p-4 rounded-lg shadow">
-                  <div className="text-3xl font-bold text-blue-600 mb-1">400+</div>
-                  <div className="text-sm text-gray-600">Zrealizowanych projektów</div>
-                </div>
-              </FadeInView>
-              <FadeInView delay={0.2}>
-                <div className="bg-white p-4 rounded-lg shadow">
-                  <div className="text-3xl font-bold text-blue-600 mb-1">4.9/5</div>
-                  <div className="text-sm text-gray-600">Średnia ocena klientów</div>
-                </div>
-              </FadeInView>
-              <FadeInView delay={0.3}>
-                <div className="bg-white p-4 rounded-lg shadow">
-                  <div className="text-3xl font-bold text-blue-600 mb-1">14 dni</div>
-                  <div className="text-sm text-gray-600">Średni czas projektu</div>
-                </div>
-              </FadeInView>
-              <FadeInView delay={0.4}>
-                <div className="bg-white p-4 rounded-lg shadow">
-                  <div className="text-3xl font-bold text-blue-600 mb-1">100%</div>
-                  <div className="text-sm text-gray-600">Mobile-first każdy projekt</div>
-                </div>
-              </FadeInView>
-            </div>
 
             <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
               <Link to="/kontakt">
@@ -215,62 +187,31 @@ export default function ProjektStronyInternetowej() {
           </section>
         </FadeInView>
 
-        {/* Pakiety projektowe */}
+        {/* Od czego zależy wycena */}
         <FadeInView>
           <section className="mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-12">Pakiety projektowe</h2>
-            <div className="grid md:grid-cols-3 gap-6">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Od czego zależy wycena?</h2>
+            <p className="text-gray-600 mb-8 max-w-3xl">
+              Wycenę przygotowujemy po rozmowie o zakresie projektu. Nie mamy sztywnego cennika, bo każdy projekt różni się liczbą podstron, stopniem złożoności i potrzebnymi materiałami.
+            </p>
+            <div className="grid md:grid-cols-2 gap-6">
               {[
-                {
-                  name: "Design Basic",
-                  price: "999 zł",
-                  features: ["Makiety UX/UI", "Do 5 stron", "Mobile design", "Konsultacja 2h"],
-                  highlight: false,
-                },
-                {
-                  name: "Design Pro",
-                  price: "1999 zł",
-                  features: ["Makiety UX/UI", "Nieograniczone strony", "Mobile + tablet", "Prototyp interaktywny", "Konsultacja 4h", "Poprawki 2 rundy"],
-                  highlight: true,
-                },
-                {
-                  name: "Design Enterprise",
-                  price: "3999+ zł",
-                  features: ["Kompleksowy design", "Analiza konkurencji", "User research", "A/B testy", "Dokumentacja", "Wsparcie post-launch"],
-                  highlight: false,
-                },
-              ].map((pkg, idx) => (
+                "Liczba podstron i unikalnych szablonów do zaprojektowania",
+                "Wersje na desktop, tablet i mobile oraz prototyp interaktywny",
+                "Zakres researchu: analiza konkurencji, user research",
+                "Liczba rund poprawek i dokumentacja dla developerów",
+              ].map((feature, idx) => (
                 <FadeInView key={idx} delay={idx * 0.1}>
-                  <div
-                    className={`p-8 rounded-lg border-2 transition ${
-                      pkg.highlight ? "border-blue-600 bg-blue-50 shadow-lg" : "border-gray-200 bg-white"
-                    }`}
-                  >
-                    {pkg.highlight && (
-                      <div className="mb-4 inline-block px-3 py-1 bg-blue-600 text-white rounded-full text-sm font-semibold">
-                        Najpopularniejszy
-                      </div>
-                    )}
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">{pkg.name}</h3>
-                    <div className="text-3xl font-bold text-blue-600 mb-6">{pkg.price}</div>
-                    <ul className="space-y-3">
-                      {pkg.features.map((feature, fidx) => (
-                        <li key={fidx} className="flex gap-3">
-                          <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0" />
-                          <span className="text-gray-700">{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                    <Button asChild
-                      variant={pkg.highlight ? "default" : "outline"}
-                      className="w-full mt-8"
-                    ><a href="/kontakt">
-                      Zapytaj o szczegóły
-                    </a></Button>
+                  <div className="flex gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-1" />
+                    <span className="text-gray-700">{feature}</span>
                   </div>
                 </FadeInView>
               ))}
             </div>
+            <Button asChild className="mt-8"><a href="/kontakt">
+              Zapytaj o wycenę
+            </a></Button>
           </section>
         </FadeInView>
 
@@ -286,7 +227,7 @@ export default function ProjektStronyInternetowej() {
                 },
                 {
                   q: "Ile czasu trwa tworzenie projektu?",
-                  a: "Średnio 2-3 tygodnie w zależności od złożoności. Design Basic (~10 dni), Design Pro (~14 dni), Design Enterprise (~21 dni).",
+                  a: "To zależy od liczby podstron, złożoności projektu i tempa przekazywania materiałów oraz uwag. Harmonogram ustalamy po rozmowie o zakresie.",
                 },
                 {
                   q: "W jakich formatach dostawacie pliki projektowe?",
@@ -294,7 +235,7 @@ export default function ProjektStronyInternetowej() {
                 },
                 {
                   q: "Czy mogę prosić o zmiany po projekcie?",
-                  a: "Tak, w pakiecie Design Pro i Enterprise są wliczone rundy poprawek. Design Basic ma limitowaną ilość zmian.",
+                  a: "Tak. Liczbę rund poprawek ustalamy przed startem projektu, razem z zakresem prac.",
                 },
                 {
                   q: "Czy mogę sam wdrożyć projekt czy potrzebuję wdrożenia?",

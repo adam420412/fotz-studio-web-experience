@@ -34,14 +34,14 @@ const processSteps = [
   { num: 1, title: "Pomiar baseline", desc: "PageSpeed Insights, WebVitals, real user monitoring — określamy punkt wyjścia." },
   { num: 2, title: "Analiza", desc: "Identyfikujemy bottlenecks: obrazy, CSS, JS, serwer, baza. Tworzymy mapa problematycznych zasobów." },
   { num: 3, title: "Optymalizacja", desc: "Implementujemy zmiany: kompresja, lazy loading, kod splitting, cache. Działamy bez przerywania działania strony." },
-  { num: 4, title: "Pomiar po", desc: "Powtarzamy testy, porównujemy wyniki, dokumentujemy poprawy. Ścieżka do Core Web Vitals poniżej 100ms LCP." },
-  { num: 5, title: "Raport", desc: "Dostarczamy szczegółowy raport: co zrobiliśmy, jakie ulepszenia, jakie czasy ładowania now" }
+  { num: 4, title: "Pomiar po", desc: "Powtarzamy testy, porównujemy wyniki z punktem wyjścia i dokumentujemy zmiany w Core Web Vitals." },
+  { num: 5, title: "Raport", desc: "Dostarczamy szczegółowy raport: co zrobiliśmy, jakie ulepszenia, jakie czasy ładowania teraz" }
 ];
 
 const packages = [
   {
     name: "Quick Fix",
-    price: "599 zł",
+    price: "Wycena indywidualna",
     type: "one-time",
     highlight: false,
     features: [
@@ -55,9 +55,9 @@ const packages = [
   },
   {
     name: "Standard",
-    price: "999 zł",
+    price: "Wycena indywidualna",
     type: "one-time",
-    highlight: true,
+    highlight: false,
     features: [
       "Pełna analiza Core Web Vitals",
       "Konwersja do WebP + lazy loading",
@@ -68,11 +68,11 @@ const packages = [
       "Raport + konsultacja 1h",
       "Powtórne testy po 2 tyg."
     ],
-    desc: "Kompletna optymalizacja dla stron średnich. Gwarancja poprawy ponad 60% czasu ładowania."
+    desc: "Kompletna optymalizacja dla stron średnich. Skalę poprawy pokazujemy w raporcie z pomiarów przed i po zmianach."
   },
   {
     name: "Enterprise",
-    price: "1999+ zł",
+    price: "Wycena indywidualna",
     type: "one-time",
     highlight: false,
     features: [
@@ -92,15 +92,15 @@ const packages = [
 const faqItems = [
   {
     question: "Ile czasu zajmuje optymalizacja strony?",
-    answer: "Zależy od rozmiaru i komplikacji. Małe strony: 5-7 dni. Średnie: 2-3 tygodnie. Duże app'y: 4-6 tygodni. Podczas prac strona pozostaje dostępna — nie ma downtime'u."
+    answer: "Zależy od rozmiaru i stopnia skomplikowania strony — mała strona to zwykle krótsza praca niż rozbudowany sklep czy aplikacja. Termin ustalamy w ofercie po wstępnym pomiarze. Prace planujemy tak, aby strona pozostawała dostępna."
   },
   {
     question: "Czy optymalizacja może złamać moją stronę?",
-    answer: "Praktycznie niemożliwe, jeśli zrobimy to profesjonalnie. Testujemy każdą zmianę na staging, robimy backup, monitorujemy live. Wiecej lat doświadczenia, zero incydentów."
+    answer: "Ograniczamy to ryzyko: testujemy zmiany na środowisku testowym (staging), robimy kopię zapasową przed wdrożeniem i sprawdzamy stronę po publikacji. Jeśli coś działa inaczej niż przed zmianą, możemy przywrócić poprzednią wersję."
   },
   {
     question: "Co jeśli optymalizacja nie przyniesie efektów?",
-    answer: "Daję gwarancję: jeśli czas ładowania nie poprawy o minimum 40% w pakiecie Standard, zwracamy 100% kosztów. Jednak to rare — prawie każda strona ma miejsca do poprawy."
+    answer: "Nie obiecujemy konkretnego procentu poprawy, bo zależy on od punktu wyjścia, hostingu i technologii strony. Przed wyceną robimy pomiar i mówimy, gdzie widzimy realne pole do poprawy — a po pracach pokazujemy wyniki przed i po."
   },
   {
     question: "Czy lepiej optymalizować WordPress czy custom kod?",
@@ -108,7 +108,7 @@ const faqItems = [
   },
   {
     question: "Czy zmiana hostingu wpłynie na szybkość?",
-    answer: "Tak — hostingu jest ~20% poprawy. Optymalizacja kodu to ~60%. Jeśli hosting jest naprawdę słaby (shared hosting z 2000 stronami), zmiana na VPS lub Cloud rzeczywiście pomaga. Diagnozujemy, czy hosting jest problemem."
+    answer: "Może wpłynąć, ale zwykle to tylko część problemu — dużo zależy też od kodu, obrazów i skryptów. Jeśli hosting jest naprawdę słaby (shared hosting z 2000 stronami), zmiana na VPS lub Cloud rzeczywiście pomaga. Diagnozujemy, czy hosting jest problemem."
   },
   {
     question: "Jak często trzeba optymalizować stronę?",
@@ -122,14 +122,14 @@ export default function OptymalizacjaStronyInternetowej() {
       <Layout>
         <SEOHead
           title="Optymalizacja strony internetowej | Fotz Studio"
-          description="Optymalizacja strony internetowej — przyspieszamy Twoją stronę, poprawiamy Core Web Vitals, zwiększamy konwersje. Sprawdź co możemy zrobić!"
+          description="Optymalizacja strony internetowej — przyspieszamy Twoją stronę i poprawiamy Core Web Vitals. Sprawdź, co możemy zrobić!"
           canonical="https://www.fotz-studio.pl/uslugi/optymalizacja-strony-internetowej"
           keywords="optymalizacja strony internetowej, optymalizacja seo strony, przyspieszenie strony, core web vitals, optymalizacja wydajności strony, optymalizacja strony www"
         />
 
         <ServiceSchema
           name="Optymalizacja strony internetowej"
-          description="Optymalizacja szybkości i Core Web Vitals — przyspieszamy Twoją stronę, poprawiamy ranking w Google, zwiększamy konwersje."
+          description="Optymalizacja szybkości i Core Web Vitals — przyspieszamy Twoją stronę i porządkujemy kwestie techniczne istotne dla SEO i użytkowników."
           provider="Fotz Studio"
           areaServed="Polska"
         />
@@ -157,31 +157,12 @@ export default function OptymalizacjaStronyInternetowej() {
               </span>
 
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6">
-                Optymalizacja strony internetowej — <span className="text-gradient">szybsza strona to wyższe pozycje i więcej klientów</span>
+                Optymalizacja strony internetowej — <span className="text-gradient">szybsza strona to lepsze doświadczenie użytkowników</span>
               </h1>
 
               <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto">
-                Strona ładująca się 1 sekundę dłużej traci 7% konwersji. Google rankinguje szybkie strony wyżej od 2021 roku. Przeciętnie poprawiamy czas ładowania o 60%, a Core Web Vitals osiągają wynik powyżej 90 punktów.
+                Wolna strona zniechęca użytkowników, a Core Web Vitals są jednym z sygnałów, które Google bierze pod uwagę. Mierzymy punkt wyjścia, usuwamy wąskie gardła i pokazujemy wyniki przed i po zmianach.
               </p>
-
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 max-w-4xl mx-auto">
-                <FadeInView delay={0} className="bg-card border rounded-lg p-4">
-                  <div className="text-2xl font-bold text-primary mb-2">60%</div>
-                  <div className="text-sm text-muted-foreground">Średnia poprawa czasu ładowania</div>
-                </FadeInView>
-                <FadeInView delay={0.1} className="bg-card border rounded-lg p-4">
-                  <div className="text-2xl font-bold text-primary mb-2">90+</div>
-                  <div className="text-sm text-muted-foreground">Core Web Vitals score</div>
-                </FadeInView>
-                <FadeInView delay={0.2} className="bg-card border rounded-lg p-4">
-                  <div className="text-2xl font-bold text-primary mb-2">+30 pos.</div>
-                  <div className="text-sm text-muted-foreground">Średni SEO boost</div>
-                </FadeInView>
-                <FadeInView delay={0.3} className="bg-card border rounded-lg p-4">
-                  <div className="text-2xl font-bold text-primary mb-2">30 dni</div>
-                  <div className="text-sm text-muted-foreground">Efekt widoczny</div>
-                </FadeInView>
-              </div>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild size="lg" className="group">
@@ -226,7 +207,7 @@ export default function OptymalizacjaStronyInternetowej() {
             <div className="space-y-8">
               <FadeInView delay={0}>
                 <div className="bg-card border rounded-xl p-6">
-                  <h3 className="text-xl font-heading font-bold mb-3">LCP — Largest Contentful Paint (powyżej 2,5 sekundy)</h3>
+                  <h3 className="text-xl font-heading font-bold mb-3">LCP — Largest Contentful Paint</h3>
                   <p className="text-muted-foreground mb-3">Czas, w jakim główny element strony (tekst, zdjęcie) pojawia się na ekranie. Google mierzy to z perspektywy użytkownika — czym szybciej, tym lepiej dla rankingu i konwersji.</p>
                   <p className="text-sm text-primary font-medium">Target: poniżej 2,5 sekundy (ideał: poniżej 1 sekundy)</p>
                 </div>
@@ -280,8 +261,8 @@ export default function OptymalizacjaStronyInternetowej() {
         {/* Pakiety */}
         <section className="py-20">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-heading font-bold mb-4 text-center">Pakiety optymalizacji</h2>
-            <p className="text-muted-foreground text-center mb-16 max-w-2xl mx-auto">Wybierz pakiet dostosowany do rozmiaru i komplikacji Twojej strony.</p>
+            <h2 className="text-3xl font-heading font-bold mb-4 text-center">Zakres optymalizacji</h2>
+            <p className="text-muted-foreground text-center mb-16 max-w-2xl mx-auto">Wycenę przygotowujemy po wstępnym pomiarze. Zależy od rozmiaru strony, technologii (WordPress czy własny kod), hostingu i liczby problemów do rozwiązania.</p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
               {packages.map((pkg, i) => (
@@ -299,8 +280,7 @@ export default function OptymalizacjaStronyInternetowej() {
                   <div className="p-6 md:p-8">
                     <h3 className="text-2xl font-heading font-bold mb-2">{pkg.name}</h3>
                     <div className="mb-6">
-                      <span className="text-4xl font-bold text-primary">{pkg.price}</span>
-                      <span className="text-muted-foreground ml-2">{pkg.type === 'one-time' ? '(jednorazowo)' : '/miesiąc'}</span>
+                      <span className="text-2xl font-bold text-primary">{pkg.price}</span>
                     </div>
                     <p className="text-muted-foreground text-sm mb-8">{pkg.desc}</p>
 
@@ -314,7 +294,7 @@ export default function OptymalizacjaStronyInternetowej() {
                     </ul>
 
                     <Button asChild className="w-full" variant={pkg.highlight ? "default" : "outline"}>
-                      <Link to="/kontakt">Zamów teraz</Link>
+                      <Link to="/kontakt">Zapytaj o wycenę</Link>
                     </Button>
                   </div>
                 </FadeInView>

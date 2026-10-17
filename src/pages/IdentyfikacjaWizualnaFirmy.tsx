@@ -44,7 +44,6 @@ export default function IdentyfikacjaWizualnaFirmy() {
   const packages = [
     {
       title: "Logo Basic",
-      price: "od 1 500 zł",
       desc: "Samo logo + podstawowe warianty",
       features: [
         "Logo (3 propozycje)",
@@ -56,7 +55,6 @@ export default function IdentyfikacjaWizualnaFirmy() {
     },
     {
       title: "Identyfikacja Standard",
-      price: "od 3 999 zł",
       desc: "Pełna identyfikacja wizualna",
       features: [
         "Logo + wszystkie warianty",
@@ -70,7 +68,6 @@ export default function IdentyfikacjaWizualnaFirmy() {
     },
     {
       title: "Identyfikacja Premium",
-      price: "od 7 999 zł",
       desc: "Pełny system + brandbook",
       features: [
         "Wszystko z Standard",
@@ -92,7 +89,7 @@ export default function IdentyfikacjaWizualnaFirmy() {
     {
       question: "Ile kosztuje identyfikacja wizualna?",
       answer:
-        "Koszt zależy od zakresu: samo logo to od 1500 zł. Pełna identyfikacja wizualna (logo + kolory + typografia + szablony + brandbook) to od 3999 do 20 000 zł. Cena zależy od liczby wariantów, materiałów do zaprojektowania i doświadczenia studia/agencji.",
+        "Wycenę przygotowujemy po rozmowie o zakresie. Inaczej wycenia się samo logo, a inaczej pełną identyfikację (logo, kolory, typografia, szablony, brandbook). Na koszt wpływa liczba wariantów, liczba materiałów do zaprojektowania i liczba rund poprawek.",
     },
     {
       question: "Co zawiera brandbook?",
@@ -102,7 +99,7 @@ export default function IdentyfikacjaWizualnaFirmy() {
     {
       question: "Jak długo trwa projekt identyfikacji wizualnej?",
       answer:
-        "Logo i podstawowa identyfikacja: 2-4 tygodnie. Pełna identyfikacja z brandbook: 4-8 tygodni. Czas zależy od liczby rund poprawek, szybkości decyzji po stronie klienta i zakresu zamówienia.",
+        "Samo logo zajmuje mniej czasu niż pełna identyfikacja z brandbookiem. Harmonogram ustalamy po rozmowie o zakresie — czas zależy od liczby rund poprawek, szybkości decyzji po stronie klienta i zakresu zamówienia.",
     },
     {
       question: "Czy mogę samodzielnie zaprojektować logo?",
@@ -148,20 +145,6 @@ export default function IdentyfikacjaWizualnaFirmy() {
               <p className="text-xl text-slate-300 mb-8 leading-relaxed">
                 Identyfikacja wizualna firmy — logo, branding i brandbook, które budują spójny wizerunek marki. Tworzenie identyfikacji wizualnej: projekt logo, paleta kolorów, typografia, materiały firmowe. Spójna identyfikacja wizualna = rozpoznawalna marka.
               </p>
-
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-                {[
-                  { value: "7 sek.", label: "Tyle trwa pierwsze wrażenie" },
-                  { value: "3x", label: "Wyższe zaufanie" },
-                  { value: "38%", label: "Lepszy recall marki" },
-                  { value: "od 1500 zł", label: "Cena logo" },
-                ].map((stat, idx) => (
-                  <div key={idx} className="bg-slate-800 bg-opacity-50 p-4 rounded-lg">
-                    <div className="text-2xl font-bold text-violet-400">{stat.value}</div>
-                    <div className="text-sm text-slate-400">{stat.label}</div>
-                  </div>
-                ))}
-              </div>
 
               <div className="flex flex-wrap gap-4">
                 <Button asChild size="lg" className="bg-violet-600 hover:bg-violet-700 text-white">
@@ -209,9 +192,9 @@ export default function IdentyfikacjaWizualnaFirmy() {
         <FadeInView>
           <section className="py-16 md:py-24 bg-slate-50">
             <div className="max-w-5xl mx-auto px-4 md:px-6">
-              <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Pakiety identyfikacji wizualnej</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Przykładowe zakresy identyfikacji wizualnej</h2>
               <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
-                Dostosowane do potrzeb i etapu rozwoju firmy.
+                Zakres dopasowujemy do potrzeb i etapu rozwoju firmy. Wycenę przygotowujemy po rozmowie o zakresie — zależy od liczby wariantów, materiałów i rund poprawek.
               </p>
               <div className="grid md:grid-cols-3 gap-8">
                 {packages.map((pkg, idx) => (
@@ -227,9 +210,6 @@ export default function IdentyfikacjaWizualnaFirmy() {
                     }`}
                   >
                     <h3 className="text-xl font-bold mb-2">{pkg.title}</h3>
-                    <div className={`text-2xl font-bold mb-2 ${pkg.highlight ? "text-white" : "text-violet-600"}`}>
-                      {pkg.price}
-                    </div>
                     <p className={`mb-6 text-sm ${pkg.highlight ? "text-violet-100" : "text-slate-600"}`}>{pkg.desc}</p>
                     <ul className="space-y-3">
                       {pkg.features.map((feature, i) => (

@@ -9,18 +9,13 @@ import {
   Layers,
   CheckCircle2,
   ArrowRight,
-  Star,
-  Award,
-  Clock,
   Shield,
-  Sparkles,
   Eye,
   Zap,
   FileText,
   Monitor,
   Printer,
   Target,
-  Users,
   MessageSquare,
   TrendingUp,
   BookOpen,
@@ -44,12 +39,12 @@ const faqItems = [
   {
     question: "Ile kosztuje zaprojektowanie logo dla firmy?",
     answer:
-      "Koszt projektu logo w Fotz Studio zaczyna się od 900 zł za pakiet podstawowy (sam logotyp + 3 warianty kolorystyczne). Pełna identyfikacja wizualna (logo + księga znaku + szablony materiałów) to koszt od 2500 zł. Cena zależy od złożoności projektu i zakresu prac.",
+      "Wycenę przygotowujemy po rozmowie o zakresie: czy potrzebujesz samego logotypu, czy pełnej identyfikacji wizualnej z księgą znaku i szablonami materiałów. Na cenę wpływa liczba koncepcji, rund poprawek, nośników i materiałów do zaprojektowania.",
   },
   {
     question: "Jak długo trwa projektowanie logo?",
     answer:
-      "Podstawowy projekt logo realizujemy w 5–7 dni roboczych. Pełna identyfikacja wizualna zajmuje 2–4 tygodnie. Na czas realizacji wpływa liczba rund poprawek i szybkość feedbacku ze strony klienta.",
+      "Termin ustalamy w harmonogramie po briefie — sam logotyp powstaje szybciej niż pełna identyfikacja wizualna. Na czas realizacji wpływa zakres prac, liczba rund poprawek i szybkość feedbacku ze strony klienta.",
   },
   {
     question: "Co to jest identyfikacja wizualna firmy?",
@@ -64,12 +59,12 @@ const faqItems = [
   {
     question: "Czy mogę wprowadzać poprawki do projektu logo?",
     answer:
-      "Tak, każdy pakiet zawiera rundy poprawek. Pakiet Basic – 3 rundy, pakiet Standard – 5 rund, pakiet Premium – nielimitowane poprawki. Zaczynamy od briefu, który pomaga nam dobrze zrozumieć Twoje potrzeby, dzięki czemu liczba poprawek jest zazwyczaj minimalna.",
+      "Tak, każdy projekt zawiera rundy poprawek — ich liczbę ustalamy w ofercie, razem z zakresem prac. Zaczynamy od briefu, który pomaga nam dobrze zrozumieć Twoje potrzeby, dzięki czemu liczba poprawek jest zazwyczaj minimalna.",
   },
   {
     question: "Czy Fotz Studio projektuje logo dla nowych firm?",
     answer:
-      "Tak, specjalizujemy się zarówno w projektowaniu logo dla nowych firm (startup branding), jak i w rebrandingu istniejących marek. Współpracowaliśmy z firmami z Poznania, Warszawy, Wrocławia i całej Polski. Każdy projekt traktujemy indywidualnie.",
+      "Tak, specjalizujemy się zarówno w projektowaniu logo dla nowych firm (startup branding), jak i w rebrandingu istniejących marek. Każdy projekt traktujemy indywidualnie.",
   },
   {
     question: "Jak wygląda proces projektowania logo?",
@@ -79,7 +74,7 @@ const faqItems = [
   {
     question: "Czy Fotz Studio projektuje logo tylko dla firm z Poznania?",
     answer:
-      "Nie, pracujemy z klientami z całej Polski — Warszawa, Wrocław, Kraków, Gdańsk, Katowice i inne miasta. Cały proces projektowania odbywa się zdalnie poprzez briefy online, prezentacje i komunikację mailową lub na Zoom.",
+      "Nie. Pracujemy z Poznania, a firmy z innych miast obsługujemy zdalnie. Cały proces projektowania odbywa się zdalnie poprzez briefy online, prezentacje i komunikację mailową lub na Zoom.",
   },
 ];
 
@@ -163,7 +158,7 @@ const LogoIBranding = () => {
       step: "03",
       title: "Wybór i dopracowanie",
       description:
-        "Wybierasz najlepszy kierunek i razem go dopracowujemy. Tyle rund poprawek, ile potrzebujesz (zależnie od pakietu).",
+        "Wybierasz najlepszy kierunek i razem go dopracowujemy. Liczbę rund poprawek ustalamy w ofercie.",
     },
     {
       step: "04",
@@ -179,76 +174,20 @@ const LogoIBranding = () => {
     },
   ];
 
-  const packages = [
-    {
-      name: "Logo Basic",
-      price: "900",
-      period: "jednorazowo",
-      description: "Dla firm potrzebujących samego logo",
-      features: [
-        "Projekt logotypu od podstaw",
-        "2 koncepcje do wyboru",
-        "3 rundy poprawek",
-        "Wariant poziomy i pionowy",
-        "Wersja kolorowa i monochromatyczna",
-        "Pliki wektorowe (AI, EPS, SVG)",
-        "Pliki rastrowe (PNG, JPG, PDF)",
-        "Pełne prawa autorskie",
-        "Realizacja 5–7 dni",
-      ],
-      popular: false,
-    },
-    {
-      name: "Identyfikacja Standard",
-      price: "2 500",
-      period: "jednorazowo",
-      description: "Logo + system identyfikacji wizualnej",
-      features: [
-        "Wszystko z pakietu Basic",
-        "Paleta kolorów (CMYK, RGB, HEX)",
-        "Typografia firmowa",
-        "Szablony social media (5 szt.)",
-        "Projekt wizytówki",
-        "Papier firmowy A4",
-        "Podstawowa księga znaku (PDF)",
-        "5 rund poprawek",
-        "Realizacja 2–3 tygodnie",
-      ],
-      popular: true,
-    },
-    {
-      name: "Branding Premium",
-      price: "5 500",
-      period: "jednorazowo",
-      description: "Kompleksowy branding dla rosnących firm",
-      features: [
-        "Wszystko z pakietu Standard",
-        "Pełna księga znaku (30+ stron)",
-        "Szablony social media (15 szt.)",
-        "Projekt opakowań lub ulotek",
-        "Stopka e-mail i favicon",
-        "Teczka firmowa i koperta",
-        "Mockupy prezentacyjne",
-        "Nielimitowane poprawki",
-        "Realizacja 3–4 tygodnie",
-        "3 miesiące wsparcia po wdrożeniu",
-      ],
-      popular: false,
-    },
-  ];
-
-  const stats = [
-    { value: "200+", label: "projektów logo" },
-    { value: "8 lat", label: "doświadczenia w brandingu" },
-    { value: "97%", label: "klientów poleca nas dalej" },
-    { value: "48h", label: "pierwsza koncepcja" },
+  const pricingFactors = [
+    "Zakres: sam logotyp czy pełna identyfikacja wizualna z księgą znaku",
+    "Liczba koncepcji i rund poprawek",
+    "Liczba i rodzaj materiałów: social media, druki firmowe, opakowania, ulotki",
+    "Potrzeba researchu rynku i konkurencji przed projektem",
+    "Wsparcie przy wdrożeniu identyfikacji na stronie i w materiałach",
+    "Termin realizacji ustalany w harmonogramie",
   ];
 
   return (
     <Layout>
       <SEOHead
         title="Projektowanie Logo i Identyfikacja Wizualna — Fotz Studio Poznań"
-        description="Projektujemy profesjonalne logo i identyfikację wizualną dla firm z całej Polski. Tworzenie logo od 900 zł — pełne prawa autorskie, formaty web i print, księga znaku i szablony materiałów."
+        description="Projektujemy profesjonalne logo i identyfikację wizualną dla firm z całej Polski. Wycena po rozmowie o zakresie — pełne prawa autorskie, formaty web i print, księga znaku i szablony materiałów."
         canonical="https://www.fotz-studio.pl/uslugi/logo-i-branding"
         keywords="logo i branding, projekt logo, tworzenie logo, logo dla firmy, branding firmy, identyfikacja wizualna, logo cena"
       />
@@ -303,7 +242,7 @@ const LogoIBranding = () => {
             >
               Tworzymy unikalne logo i spójną identyfikację wizualną, które budują
               zaufanie i wyróżniają Twoją firmę na rynku. Pełne prawa autorskie,
-              wszystkie formaty, realizacja od 5 dni.
+              wszystkie formaty, termin ustalony w harmonogramie.
             </motion.p>
 
             <motion.div
@@ -318,7 +257,7 @@ const LogoIBranding = () => {
                 </Link>
               </Button>
               <Button size="lg" variant="outline" asChild className="text-base px-8">
-                <Link to="#pakiety">Zobacz pakiety i ceny</Link>
+                <Link to="#pakiety">Od czego zależy wycena</Link>
               </Button>
             </motion.div>
 
@@ -331,7 +270,7 @@ const LogoIBranding = () => {
               {[
                 "Pełne prawa autorskie",
                 "Formaty web i print",
-                "Realizacja od 5 dni",
+                "Jasny harmonogram",
                 "Wycena bezpłatna",
               ].map((item) => (
                 <div key={item} className="flex items-center gap-2">
@@ -340,22 +279,6 @@ const LogoIBranding = () => {
                 </div>
               ))}
             </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Stats */}
-      <section className="py-16 bg-muted/30 border-y border-border/40">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, i) => (
-              <FadeInView key={i} delay={i * 0.1} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-primary mb-1">
-                  {stat.value}
-                </div>
-                <div className="text-sm text-muted-foreground">{stat.label}</div>
-              </FadeInView>
-            ))}
           </div>
         </div>
       </section>
@@ -506,59 +429,27 @@ const LogoIBranding = () => {
         <div className="container mx-auto px-4">
           <FadeInView className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Pakiety i ceny — projekt logo dla firmy
+              Od czego zależy wycena projektu logo?
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Transparentne ceny bez ukrytych kosztów. Wybierz pakiet dopasowany do
-              potrzeb Twojej firmy.
+              Wycenę przygotowujemy po rozmowie o zakresie. Każdą ofertę opisujemy
+              konkretnie: co dostajesz, ile rund poprawek i w jakim terminie.
             </p>
           </FadeInView>
 
-          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {packages.map((pkg, i) => (
-              <FadeInView key={i} delay={i * 0.1}>
-                <div
-                  className={`rounded-2xl border p-6 flex flex-col h-full relative ${
-                    pkg.popular
-                      ? "border-primary bg-primary/5 shadow-lg shadow-primary/10"
-                      : "border-border/60 bg-card"
-                  }`}
+          <FadeInView>
+            <ul className="max-w-3xl mx-auto grid md:grid-cols-2 gap-4">
+              {pricingFactors.map((factor, i) => (
+                <li
+                  key={i}
+                  className="bg-card border border-border/60 rounded-xl p-5 flex items-start gap-3 text-sm"
                 >
-                  {pkg.popular && (
-                    <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground text-xs font-semibold px-4 py-1 rounded-full">
-                      Najpopularniejszy
-                    </div>
-                  )}
-                  <div className="mb-6">
-                    <h3 className="text-xl font-bold text-foreground mb-1">{pkg.name}</h3>
-                    <p className="text-sm text-muted-foreground mb-4">{pkg.description}</p>
-                    <div className="flex items-baseline gap-1">
-                      <span className="text-3xl font-bold text-foreground">{pkg.price} zł</span>
-                      <span className="text-muted-foreground text-sm">{pkg.period}</span>
-                    </div>
-                  </div>
-                  <ul className="space-y-2 mb-8 flex-1">
-                    {pkg.features.map((f, fi) => (
-                      <li key={fi} className="flex items-start gap-2 text-sm">
-                        <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                        <span className="text-muted-foreground">{f}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <Button
-                    asChild
-                    variant={pkg.popular ? "default" : "outline"}
-                    className="w-full"
-                  >
-                    <Link to="/kontakt">
-                      Zamów pakiet {pkg.name.split(" ")[1]}
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </div>
-              </FadeInView>
-            ))}
-          </div>
+                  <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                  <span className="text-muted-foreground">{factor}</span>
+                </li>
+              ))}
+            </ul>
+          </FadeInView>
 
           <FadeInView className="text-center mt-8">
             <p className="text-muted-foreground text-sm">
@@ -584,9 +475,9 @@ const LogoIBranding = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
             {[
               {
-                icon: Award,
-                title: "8 lat doświadczenia",
-                desc: "Setki projektów logo dla firm z różnych branż — od startupów po korporacje.",
+                icon: Target,
+                title: "Projekt oparty na briefie",
+                desc: "Zaczynamy od analizy branży, grupy docelowej i konkurencji — dopiero potem projektujemy.",
               },
               {
                 icon: Shield,
@@ -595,8 +486,8 @@ const LogoIBranding = () => {
               },
               {
                 icon: Zap,
-                title: "Szybka realizacja",
-                desc: "Pierwsza koncepcja w 48h. Gotowe logo nawet w 5 dni roboczych.",
+                title: "Jasny harmonogram",
+                desc: "Terminy kolejnych etapów ustalamy w ofercie, zależnie od zakresu prac.",
               },
               {
                 icon: MessageSquare,
@@ -665,17 +556,18 @@ const LogoIBranding = () => {
                 Ile kosztuje projekt logo? Porównanie opcji
               </h3>
               <p>
-                Na rynku możesz znaleźć logo za 50 zł (serwisy z gotowymi szablonami)
-                lub za 50 000 zł (duże agencje brandingowe dla korporacji). Fotz Studio
-                celuje w środek rynku — oferujemy jakość agencji przy cenach dostępnych
-                dla małych i średnich firm.
+                Rozpiętość cen na rynku jest ogromna — od gotowych szablonów w
+                serwisach online po rozbudowane projekty dużych agencji brandingowych
+                dla korporacji. Fotz Studio pracuje głównie z małymi i średnimi
+                firmami i dopasowuje zakres prac do ich potrzeb i budżetu.
               </p>
               <p>
-                Nasze pakiety zaczynają się od 900 zł za podstawowy{" "}
-                <strong className="text-foreground">projekt logo dla firmy</strong> i
-                sięgają 5 500 zł za kompleksowy branding z pełną dokumentacją. Każdy
-                pakiet zawiera pełne prawa autorskie i wszystkie potrzebne formaty
-                plików.
+                Cena{" "}
+                <strong className="text-foreground">projektu logo dla firmy</strong>{" "}
+                zależy od zakresu: inaczej wyceniamy sam logotyp, a inaczej
+                kompleksowy branding z księgą znaku i szablonami materiałów. Wycenę
+                przygotowujemy po rozmowie o zakresie. Każdy projekt obejmuje pełne
+                prawa autorskie i wszystkie potrzebne formaty plików.
               </p>
 
               <h3 className="text-xl font-bold text-foreground mt-8">
@@ -706,8 +598,8 @@ const LogoIBranding = () => {
               <p>
                 Profesjonalne{" "}
                 <strong className="text-foreground">tworzenie logo</strong> w agencji
-                gwarantuje unikalność, pełne prawa oraz przemyślaną strategię wizualną.
-                Inwestycja, która zwraca się przez lata.
+                to projekt tworzony od podstaw dla Twojej marki, przeniesienie pełnych
+                praw autorskich i przemyślana strategia wizualna.
               </p>
             </div>
           </FadeInView>

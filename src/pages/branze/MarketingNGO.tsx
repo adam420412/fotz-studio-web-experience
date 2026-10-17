@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
-import { useCountUp } from "@/hooks/useCountUp";
 import { OtherIndustries } from "@/components/sections/OtherIndustries";
 import eneaImg from "@/assets/portfolio/enea-stadion-web.webp";
 
@@ -41,8 +40,8 @@ const customSolutions = [
   },
   {
     icon: Megaphone,
-    title: "Kampanie 1%",
-    description: "Kompleksowe kampanie zachęcające do przekazania 1% podatku na rzecz OPP.",
+    title: "Kampanie przekazania podatku",
+    description: "Kampanie zachęcające podatników do przekazania części podatku na rzecz Twojej OPP.",
   },
   {
     icon: Target,
@@ -52,10 +51,10 @@ const customSolutions = [
 ];
 
 const benefits = [
-  "Zwiększenie wpływów z darowizn o 200%",
+  "Prosta ścieżka darowizn online",
   "Budowanie lojalnej społeczności wspierających",
   "Profesjonalne materiały do pozyskiwania grantów",
-  "Kampanie 1% z wysoką konwersją",
+  "Kampanie przekazania podatku planowane z wyprzedzeniem",
   "Storytelling budujący emocjonalne zaangażowanie",
   "Transparentna komunikacja działań organizacji",
 ];
@@ -63,15 +62,15 @@ const benefits = [
 const faqItems = [
   {
     question: "Czy NGO stać na profesjonalny marketing?",
-    answer: "Oferujemy specjalne warunki dla organizacji pozarządowych. Część usług realizujemy pro bono lub po kosztach. Inwestycja w marketing szybko się zwraca poprzez zwiększone wpływy z darowizn i grantów.",
+    answer: "Zakres działań dopasowujemy do budżetu organizacji — można zacząć od najważniejszych elementów, np. strony z płatnościami online albo jednej kampanii. Wycenę przygotowujemy po rozmowie o zakresie. Nie obiecujemy konkretnego wzrostu darowizn, bo zależy on m.in. od bazy darczyńców i siły przekazu.",
   },
   {
     question: "Jak zwiększyć wpływy z darowizn online?",
     answer: "Kluczowe są: prosty proces wpłaty (1-click donation), regularne kampanie email, storytelling pokazujący efekty działań, transparentność finansowa i remarketing do potencjalnych darczyńców.",
   },
   {
-    question: "Jak prowadzić skuteczną kampanię 1%?",
-    answer: "Kampania 1% powinna zacząć się już w styczniu. Obejmuje: email marketing do bazy, kampanie social media, Google Grants, materiały wideo i współpracę z ambasadorami marki.",
+    question: "Jak prowadzić kampanię na przekazanie podatku dla OPP?",
+    answer: "Kampanię warto zaplanować przed sezonem rozliczeń PIT. Może obejmować: email marketing do bazy, kampanie social media, Google Grants, materiały wideo i współpracę z ambasadorami marki.",
   },
   {
     question: "Czy pomagacie w pozyskiwaniu grantów?",
@@ -79,7 +78,7 @@ const faqItems = [
   },
   {
     question: "Czym są Google Grants dla NGO?",
-    answer: "Google Grants to bezpłatne reklamy Google Ads o wartości do 10 000 USD miesięcznie dla organizacji non-profit. Pomagamy w uzyskaniu grantu i prowadzeniu kampanii.",
+    answer: "Google Ad Grants to program Google, w którym kwalifikujące się organizacje non-profit otrzymują bezpłatny budżet na reklamy w wyszukiwarce — aktualne limity i warunki określa Google. Pomagamy w uzyskaniu grantu i prowadzeniu kampanii.",
   },
 ];
 
@@ -145,8 +144,8 @@ const MarketingNGO = () => {
             </h1>
             
             <p className="text-foreground/70 text-lg md:text-xl mb-8 max-w-3xl">
-              Pomagamy organizacjom pozarządowym zwiększać wpływy i budować społeczność wspierających. 
-              Kampanie fundraisingowe, 1% i profesjonalna komunikacja misji.
+              Pomagamy organizacjom pozarządowym w pozyskiwaniu darczyńców i budowaniu społeczności wspierających. 
+              Kampanie fundraisingowe, kampanie przekazania podatku i profesjonalna komunikacja misji.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -162,7 +161,7 @@ const MarketingNGO = () => {
             </div>
           </motion.div>
 
-          {/* Stats */}
+          {/* Highlights */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -170,21 +169,18 @@ const MarketingNGO = () => {
             className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16"
           >
             {[
-              { value: 200, suffix: "%", label: "wzrost darowizn online" },
-              { value: 30, suffix: "+", label: "obsłużonych organizacji" },
-              { value: 5, suffix: "mln", label: "zebranych środków" },
-              { value: 100, suffix: "+", label: "kampanii społecznych" },
-            ].map((stat, index) => {
-              const { ref, displayValue } = useCountUp({ end: stat.value, suffix: stat.suffix });
-              return (
-                <div key={index} ref={ref} className="text-center p-6 rounded-2xl bg-card border border-border/30">
-                  <div className="text-3xl md:text-4xl font-heading font-bold text-gradient-premium">
-                    {displayValue}
-                  </div>
-                  <p className="text-foreground/60 text-sm mt-2">{stat.label}</p>
+              { title: "Strony z darowiznami", label: "płatności online i zbiórki" },
+              { title: "Kampanie fundraisingowe", label: "social media, e-mail, Google" },
+              { title: "Filmy społeczne", label: "spoty i materiały dla darczyńców" },
+              { title: "Social media", label: "społeczność i wolontariusze" },
+            ].map((item, index) => (
+              <div key={index} className="text-center p-6 rounded-2xl bg-card border border-border/30">
+                <div className="text-lg md:text-xl font-heading font-bold text-gradient-premium">
+                  {item.title}
                 </div>
-              );
-            })}
+                <p className="text-foreground/60 text-sm mt-2">{item.label}</p>
+              </div>
+            ))}
           </motion.div>
         </div>
       </section>

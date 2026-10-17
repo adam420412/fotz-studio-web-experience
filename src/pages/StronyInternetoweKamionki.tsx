@@ -43,9 +43,9 @@ const StronyInternetoweKamionki = () => {
   ];
 
   const caseStudies = [
-    { title: "Apartamenty Chorwacja", category: "Strona rezerwacyjna", result: "+180% rezerwacji online", link: "/realizacje/apartamenty-chorwacja", image: apartamentyImg },
+    { title: "Apartamenty Chorwacja", category: "Strona rezerwacyjna", result: "Strona z rezerwacjami online", link: "/realizacje/apartamenty-chorwacja", image: apartamentyImg },
     { title: "Victory Cars", category: "Strona motoryzacyjna", result: "Nowoczesny design premium", link: "/realizacje/victory-cars", image: victoryCarsImg },
-    { title: "Cute Dumpling", category: "Strona gastronomiczna", result: "+250% ruchu organicznego", link: "/realizacje/cute-dumpling", image: cuteDumplingImg },
+    { title: "Cute Dumpling", category: "Strona gastronomiczna", result: "Strona lokalu gastronomicznego", link: "/realizacje/cute-dumpling", image: cuteDumplingImg },
   ];
 
   const faqItems = [
@@ -59,7 +59,7 @@ const StronyInternetoweKamionki = () => {
   const stats = [
     { value: "WWW", label: "Strony i sklepy", icon: Layers },
     { value: "UX", label: "Projekt dla odbiorcy", icon: Star },
-    { value: "5 lat", label: "Doświadczenia", icon: Clock },
+    { value: "Kamionki", label: "Siedziba rejestrowa", icon: Clock },
     { value: "Kontakt", label: "Uzgodniona opieka", icon: Headphones },
   ];
 

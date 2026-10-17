@@ -63,8 +63,6 @@ const IdentyfikacjaWizualna = () => {
   const pricingPackages = [
     {
       name: "Starter",
-      price: "2 500",
-      period: "jednorazowo",
       description: "Podstawowa identyfikacja",
       features: [
         "Logo w 3 wariantach",
@@ -77,8 +75,6 @@ const IdentyfikacjaWizualna = () => {
     },
     {
       name: "Business",
-      price: "5 500",
-      period: "jednorazowo",
       description: "Kompletna identyfikacja",
       features: [
         "Logo + sygnet + wersje",
@@ -94,8 +90,6 @@ const IdentyfikacjaWizualna = () => {
     },
     {
       name: "Premium",
-      price: "12 000",
-      period: "jednorazowo",
       description: "Kompleksowy branding",
       features: [
         "Pełna identyfikacja Business",
@@ -203,7 +197,7 @@ const IdentyfikacjaWizualna = () => {
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg">
-                <a href="#cennik">Zobacz cennik</a>
+                <a href="#cennik">Od czego zależy wycena</a>
               </Button>
             </div>
           </motion.div>
@@ -288,10 +282,10 @@ const IdentyfikacjaWizualna = () => {
               className="grid grid-cols-2 gap-4"
             >
               {[
-                { value: "100%", label: "Spójność marki" },
-                { value: "3x", label: "Lepsza rozpoznawalność" },
-                { value: "70%", label: "Większe zaufanie" },
-                { value: "∞", label: "Wartość dla firmy" },
+                { value: "Logo", label: "Znak i jego warianty" },
+                { value: "Kolory", label: "Paleta z kodami barw" },
+                { value: "Typografia", label: "Kroje firmowe" },
+                { value: "Księga", label: "Zasady stosowania" },
               ].map((stat, index) => (
                 <div key={index} className="bg-card border border-border rounded-xl p-6 text-center">
                   <div className="text-3xl font-bold bg-gradient-to-r from-[#75143F] to-[#0F3053] bg-clip-text text-transparent mb-2">
@@ -681,7 +675,7 @@ const IdentyfikacjaWizualna = () => {
                   Księga identyfikacji wizualnej jest dokumentem, który określa zasady stosowania elementów wizerunkowych marki, zapewniając ich <strong>spójne i odpowiednie użycie</strong>.
                 </p>
                 <p>
-                  Pełni funkcję przewodnika dla wszystkich działań marketingowych i reklamowych, gwarantując <strong>jednolity obraz marki</strong> we wszystkich punktach kontaktu z klientem.
+                  Pełni funkcję przewodnika dla wszystkich działań marketingowych i reklamowych, pomagając utrzymać <strong>jednolity obraz marki</strong> we wszystkich punktach kontaktu z klientem.
                 </p>
               </div>
               <ul className="mt-6 space-y-3">
@@ -738,10 +732,10 @@ const IdentyfikacjaWizualna = () => {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Cennik identyfikacji wizualnej
+              Zakres identyfikacji wizualnej
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Wybierz pakiet dopasowany do potrzeb Twojej marki
+              Przykładowe zakresy prac. Nie mamy sztywnego cennika — wycenę przygotowujemy po rozmowie o zakresie, liczbie materiałów i potrzebie strategii marki.
             </p>
           </motion.div>
 
@@ -757,21 +751,10 @@ const IdentyfikacjaWizualna = () => {
                   pkg.popular ? "border-[#75143F] ring-2 ring-[#75143F]/20" : "border-border"
                 }`}
               >
-                {pkg.popular && (
-                  <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                    <span className="bg-gradient-to-r from-[#75143F] to-[#0F3053] text-white text-xs font-medium px-4 py-1 rounded-full">
-                      Najpopularniejszy
-                    </span>
-                  </div>
-                )}
                 <div className="text-center mb-6">
                   <h3 className="text-xl font-bold text-foreground mb-2">{pkg.name}</h3>
                   <p className="text-muted-foreground text-sm mb-4">{pkg.description}</p>
-                  <div className="flex items-baseline justify-center gap-1">
-                    <span className="text-4xl font-bold text-foreground">{pkg.price}</span>
-                    <span className="text-muted-foreground"> zł</span>
-                  </div>
-                  <span className="text-sm text-muted-foreground">{pkg.period}</span>
+                  <span className="text-sm text-muted-foreground">Wycena indywidualna</span>
                 </div>
                 <ul className="space-y-3 mb-6">
                   {pkg.features.map((feature, i) => (

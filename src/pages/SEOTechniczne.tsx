@@ -10,19 +10,19 @@ import { ContactSection } from "@/components/sections/ContactSection";
 
 const SEOTechniczne = () => {
   const features = [
-    { icon: Zap, title: "Core Web Vitals (LCP, INP, CLS)", desc: "Optymalizujemy wskaźniki doświadczenia użytkownika. LCP poniżej 2,5s, CLS poniżej 0,1, INP poniżej 200ms — wymogi rankingowe Google." },
+    { icon: Zap, title: "Core Web Vitals (LCP, INP, CLS)", desc: "Optymalizujemy wskaźniki doświadczenia użytkownika. Celujemy w progi zalecane przez Google: LCP poniżej 2,5s, CLS poniżej 0,1, INP poniżej 200ms." },
     { icon: Search, title: "Indeksacja i crawl budget", desc: "Sprawdzamy jakie strony Google indeksuje, a jakie ignoruje. Optymalizujemy crawl budget przez noindex, sitemap i strukturę linkowania." },
     { icon: FileText, title: "Sitemap XML i robots.txt", desc: "Prawidłowe sitemaps ułatwiają Google odkrywanie nowych treści. Robots.txt chroni przed indeksacją stron bez wartości SEO." },
     { icon: Globe, title: "HTTPS i bezpieczeństwo", desc: "SSL to sygnał rankingowy. Sprawdzamy certyfikat, mixed content, bezpieczne nagłówki HTTP i konfigurację serwera." },
-    { icon: Code2, title: "Structured Data i JSON-LD", desc: "Schema.org dla Organization, LocalBusiness, FAQ, Article, Product. Rich snippets wyróżniają stronę i zwiększają CTR." },
+    { icon: Code2, title: "Structured Data i JSON-LD", desc: "Schema.org dla Organization, LocalBusiness, FAQ, Article, Product. Rich snippets mogą wyróżnić stronę w wynikach wyszukiwania." },
     { icon: Shield, title: "Kanonikalizacja i duplikaty", desc: "Tagi canonical, przekierowania 301, parametry URL — eliminujemy duplikaty treści, które rozdzielają sygnały rankingowe." },
   ];
 
   const results = [
-    { value: "99/100", label: "PageSpeed Insights", desc: "dla zoptymalizowanych stron" },
-    { value: "-60%", label: "Mniej błędów crawl", desc: "po naprawie technicznej" },
-    { value: "+25%", label: "Więcej zaindeksowanych stron", desc: "po optymalizacji sitemap" },
-    { value: "<2s", label: "Czas ładowania", desc: "po optymalizacji Core Web Vitals" },
+    { value: "Audyt", label: "Lista błędów technicznych", desc: "z priorytetami i opisem wpływu" },
+    { value: "Pomiar", label: "Wyniki przed i po zmianach", desc: "PageSpeed Insights i Search Console" },
+    { value: "Wdrożenie", label: "Naprawy w kodzie i konfiguracji", desc: "sitemap, robots.txt, canonical, przekierowania" },
+    { value: "Raport", label: "Podsumowanie prac", desc: "co zmieniliśmy i co warto monitorować" },
   ];
 
   const faqItems = [
@@ -93,7 +93,7 @@ const SEOTechniczne = () => {
         <section className="py-20 bg-background">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-4 text-foreground">Co audytujemy i naprawiamy technicznie</h2>
-            <p className="text-muted-foreground text-center mb-12 max-w-2xl mx-auto">Błędy techniczne blokują wzrost. Identyfikujemy i usuwamy każdą przeszkodę.</p>
+            <p className="text-muted-foreground text-center mb-12 max-w-2xl mx-auto">Błędy techniczne blokują wzrost. Identyfikujemy przeszkody i usuwamy je według priorytetów.</p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {features.map((f, i) => (
                 <motion.div
@@ -116,7 +116,7 @@ const SEOTechniczne = () => {
         {/* Results */}
         <section className="py-16 bg-primary/5">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Efekty optymalizacji technicznej</h2>
+            <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Co otrzymujesz w ramach optymalizacji technicznej</h2>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
               {results.map((r, i) => (
                 <motion.div

@@ -19,15 +19,15 @@ const PMOptymalizacja = () => {
   ];
 
   const results = [
-    { value: "+180%", label: "Wzrost ROAS", desc: "po pełnej optymalizacji" },
-    { value: "-40%", label: "Niższy CPA", desc: "po optymalizacji targetowania" },
-    { value: "3,5×", label: "Wyższy CTR", desc: "po testach A/B kreacji" },
-    { value: "0 zł", label: "Marnotrawionego budżetu", desc: "po audycie i czyszczeniu" },
+    { label: "Audyt konta", desc: "Lista problemów i wycieków budżetu z priorytetami" },
+    { label: "Plan testów", desc: "Hipotezy do sprawdzenia w kreacjach, copy i targetowaniu" },
+    { label: "Raport miesięczny", desc: "ROAS, CPA, CTR i rekomendacje kolejnych kroków" },
+    { label: "Jasne zasady", desc: "Budżet reklamowy płacisz platformie osobno, wyników nie gwarantujemy — pracujemy na danych" },
   ];
 
   const faqItems = [
-    { question: "Jak szybko widać efekty optymalizacji kampanii?", answer: "Pierwsze efekty (poprawa CTR, redukcja CPC) widoczne są w ciągu 2-4 tygodni. Pełne efekty optymalizacji ROAS i CPA widać po 1-3 miesiącach systematycznej pracy, gdy algorytmy Google/Meta zbierają wystarczające dane do uczenia maszynowego." },
-    { question: "Jaki ROAS powinienem osiągać?", answer: "Dobry ROAS zależy od branży i modelu biznesowego. Dla e-commerce minimum to 4-6×, dla usług może być niższy przy wysokiej wartości klienta (LTV). Najpierw obliczamy break-even ROAS dla Twojego biznesu, potem stawiamy cel." },
+    { question: "Jak szybko widać efekty optymalizacji kampanii?", answer: "To zależy od budżetu, liczby konwersji na koncie i branży. Zmiany w CTR czy CPC bywają widoczne wcześniej, a ocena ROAS i CPA wymaga czasu, aż algorytmy Google/Meta zbiorą wystarczająco danych. Nie obiecujemy konkretnych wyników w sztywnym terminie — postępy pokazujemy w raportach." },
+    { question: "Jaki ROAS powinienem osiągać?", answer: "Dobry ROAS zależy od branży i modelu biznesowego. Inny poziom ma sens dla sklepu z niską marżą, a inny dla usług o wysokiej wartości klienta (LTV). Najpierw obliczamy break-even ROAS dla Twojego biznesu, potem stawiamy cel." },
     { question: "Jak obniżyć CPA bez zmniejszania liczby konwersji?", answer: "Kluczowe dźwignie to: lepsza jakość landing page (wyższy CR → niższy CPA), precyzyjniejsze targetowanie, wykluczenia niekonwertujących segmentów, optymalizacja lejka konwersji. CPA = koszt kliknięcia / współczynnik konwersji — pracujemy nad oboma." },
     { question: "Czy przejmiecie zarządzanie istniejącymi kampaniami?", answer: "Tak. Zaczynamy od audytu istniejących kont reklamowych, przejmujemy zarządzanie i stopniowo wdrażamy optymalizacje. Zachowujemy historię konta (cenne dane do Smart Bidding) i nie resetujemy kampanii od zera." },
   ];
@@ -115,7 +115,7 @@ const PMOptymalizacja = () => {
         {/* Results */}
         <section className="py-16 bg-primary/5">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Wyniki optymalizacji</h2>
+            <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Co dostajesz w ramach optymalizacji</h2>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
               {results.map((r, i) => (
                 <motion.div
@@ -126,7 +126,6 @@ const PMOptymalizacja = () => {
                   transition={{ delay: i * 0.1 }}
                   className="text-center"
                 >
-                  <div className="text-3xl md:text-4xl font-bold text-primary mb-2">{r.value}</div>
                   <div className="text-sm text-foreground font-medium mb-1">{r.label}</div>
                   <div className="text-xs text-muted-foreground">{r.desc}</div>
                 </motion.div>
@@ -176,7 +175,7 @@ const PMOptymalizacja = () => {
             <p className="text-muted-foreground mb-4">Optymalizacja kampanii reklamowych to systematyczny proces poprawy efektywności reklam poprzez analizę danych, testy A/B i dostosowywanie strategii. Kluczowe wskaźniki optymalizacji: ROAS (Return on Ad Spend — zwrot z wydatków na reklamy), CPA (Cost Per Acquisition — koszt pozyskania klienta), CTR (Click-Through Rate), Quality Score (Google Ads) i częstotliwość wyświetleń.</p>
             <p className="text-muted-foreground mb-6">Optymalizacja konwersji (CRO) to nieodłączny element optymalizacji kampanii — nawet najlepiej ustawiona kampania nie przyniesie efektów, jeśli strona docelowa (landing page) nie konwertuje odwiedzających w klientów. Raporty efektywności kampanii pozwalają identyfikować słabe punkty i priorytetyzować działania optymalizacyjne.</p>
             <h2 className="text-3xl font-heading font-bold mb-6">Testy A/B i analiza danych w optymalizacji reklam</h2>
-            <p className="text-muted-foreground">Testy A/B kreacji reklamowych, landing page'ów i grup docelowych pozwalają systematycznie poprawiać wyniki kampanii. Monitorowanie ruchu na stronie (Google Analytics 4, Microsoft Clarity, heatmapy) dostarcza danych o zachowaniu użytkowników po kliknięciu reklamy. Systematyczna analiza seo strony i kampanii płatnych — to fundament data-driven marketingu. Zlecenie optymalizacji kampanii doświadczonym specjalistom może wielokrotnie poprawić efektywność Twojego budżetu reklamowego.</p>
+            <p className="text-muted-foreground">Testy A/B kreacji reklamowych, landing page'ów i grup docelowych pozwalają systematycznie poprawiać wyniki kampanii. Monitorowanie ruchu na stronie (Google Analytics 4, Microsoft Clarity, heatmapy) dostarcza danych o zachowaniu użytkowników po kliknięciu reklamy. Systematyczna analiza seo strony i kampanii płatnych — to fundament data-driven marketingu. Regularna optymalizacja pomaga lepiej wykorzystać budżet reklamowy, który płacisz platformie osobno.</p>
           
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
               <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>

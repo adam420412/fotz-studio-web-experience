@@ -56,56 +56,16 @@ const AgencjaGraficzna = () => {
   const processSteps = [
     { step: "01", title: "Brief i konsultacja", description: "Poznajemy Twoje potrzeby, cele i oczekiwania" },
     { step: "02", title: "Koncepcje kreatywne", description: "Przygotowujemy wstępne propozycje projektów" },
-    { step: "03", title: "Dopracowanie", description: "Wprowadzamy poprawki aż do pełnej akceptacji" },
+    { step: "03", title: "Dopracowanie", description: "Wprowadzamy poprawki w ustalonym zakresie" },
     { step: "04", title: "Finalizacja", description: "Dostarczamy pliki gotowe do użycia i druku" },
   ];
 
-  const pricingPackages = [
-    {
-      name: "Pojedynczy projekt",
-      price: "od 500",
-      period: "jednorazowo",
-      description: "Dla pojedynczych zleceń",
-      features: [
-        "Jeden projekt graficzny",
-        "Do 3 rund poprawek",
-        "Pliki w formatach web i print",
-        "Realizacja 3-5 dni roboczych",
-        "Pełne prawa autorskie",
-      ],
-      popular: false,
-    },
-    {
-      name: "Pakiet Start",
-      price: "1 500",
-      period: "/mies.",
-      description: "Dla małych firm",
-      features: [
-        "Do 5 projektów miesięcznie",
-        "Grafiki social media",
-        "Materiały firmowe",
-        "Nielimitowane poprawki",
-        "Dedykowany grafik",
-        "Realizacja 24-48h",
-      ],
-      popular: true,
-    },
-    {
-      name: "Pakiet Business",
-      price: "3 500",
-      period: "/mies.",
-      description: "Dla rozwijających się firm",
-      features: [
-        "Do 15 projektów miesięcznie",
-        "Pełna obsługa graficzna",
-        "Materiały reklamowe",
-        "Katalogi i broszury",
-        "Priorytetowa realizacja",
-        "Konsultacje strategiczne",
-        "Przygotowanie do druku",
-      ],
-      popular: false,
-    },
+  const pricingFactors = [
+    "Rodzaj i liczba projektów — pojedyncza grafika, materiały firmowe, katalog czy stała obsługa miesięczna.",
+    "Stopień skomplikowania projektu i liczba wersji (formaty, języki, warianty).",
+    "Liczba rund poprawek ustalona w umowie.",
+    "Termin realizacji.",
+    "Przygotowanie do druku i ewentualna koordynacja z drukarnią (koszt druku rozliczany osobno).",
   ];
 
   const faqItems = [
@@ -119,7 +79,7 @@ const AgencjaGraficzna = () => {
     },
     {
       question: "Jakie są koszty obsługi graficznej?",
-      answer: "Koszty obsługi graficznej zależą od zakresu i skomplikowania projektów. Po wstępnych konsultacjach i ustaleniu zakresu potrzeb, przygotowujemy indywidualną wycenę. Dla stałych klientów przewidujemy atrakcyjne rabaty i elastyczne pakiety abonamentowe."
+      answer: "Koszty obsługi graficznej zależą od zakresu i skomplikowania projektów. Po wstępnych konsultacjach i ustaleniu zakresu potrzeb, przygotowujemy indywidualną wycenę. Przy stałej współpracy możemy przygotować wycenę w formie miesięcznego abonamentu."
     },
     {
       question: "Czy mogę liczyć na indywidualne podejście?",
@@ -199,7 +159,7 @@ const AgencjaGraficzna = () => {
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg">
-                <a href="#cennik">Zobacz cennik</a>
+                <a href="#cennik">Od czego zależy wycena</a>
               </Button>
             </div>
           </motion.div>
@@ -436,10 +396,10 @@ const AgencjaGraficzna = () => {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              W jakich branżach się specjalizujemy?
+              Dla jakich branż projektujemy?
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Mamy doświadczenie w pracy z klientami z różnorodnych sektorów
+              Projektujemy dla firm z różnych sektorów — na start zawsze poznajemy specyfikę Twojej branży
             </p>
           </motion.div>
 
@@ -589,72 +549,32 @@ const AgencjaGraficzna = () => {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Cennik usług graficznych
+              Od czego zależy wycena usług graficznych?
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Elastyczne pakiety dopasowane do potrzeb Twojej firmy
+              Wycenę przygotowujemy po rozmowie o zakresie — nie mamy sztywnego cennika
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {pricingPackages.map((pkg, index) => (
-              <motion.div
-                key={pkg.name}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className={`relative bg-card border rounded-2xl p-6 ${
-                  pkg.popular ? "border-[#75143F] ring-2 ring-[#75143F]/20" : "border-border"
-                }`}
-              >
-                {pkg.popular && (
-                  <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                    <span className="bg-gradient-to-r from-[#75143F] to-[#0F3053] text-white text-xs font-medium px-4 py-1 rounded-full">
-                      Najpopularniejszy
-                    </span>
-                  </div>
-                )}
-                <div className="text-center mb-6">
-                  <h3 className="text-xl font-bold text-foreground mb-2">{pkg.name}</h3>
-                  <p className="text-muted-foreground text-sm mb-4">{pkg.description}</p>
-                  <div className="flex items-baseline justify-center gap-1">
-                    <span className="text-4xl font-bold text-foreground">{pkg.price}</span>
-                    <span className="text-muted-foreground"> zł</span>
-                  </div>
-                  <span className="text-sm text-muted-foreground">{pkg.period}</span>
-                </div>
-                <ul className="space-y-3 mb-6">
-                  {pkg.features.map((feature, i) => (
-                    <li key={i} className="flex items-start gap-3 text-sm text-foreground">
-                      <CheckCircle2 className="w-4 h-4 text-[#75143F] mt-0.5 flex-shrink-0" />
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                <Button
-                  asChild
-                  className={`w-full ${
-                    pkg.popular
-                      ? "bg-gradient-to-r from-[#75143F] to-[#0F3053] hover:from-[#75143F]/90 hover:to-[#0F3053]/90"
-                      : ""
-                  }`}
-                  variant={pkg.popular ? "default" : "outline"}
-                >
-                  <Link to="/kontakt">Zamów wycenę</Link>
-                </Button>
-              </motion.div>
-            ))}
-          </div>
-
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
+          <motion.ul
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center text-sm text-muted-foreground mt-8"
+            className="space-y-3 max-w-3xl mx-auto"
           >
-            Wszystkie ceny netto. Dla stałych klientów przewidujemy atrakcyjne rabaty.
-          </motion.p>
+            {pricingFactors.map((factor, i) => (
+              <li key={i} className="flex items-start gap-3 text-foreground">
+                <CheckCircle2 className="w-5 h-5 text-[#75143F] mt-0.5 flex-shrink-0" />
+                <span>{factor}</span>
+              </li>
+            ))}
+          </motion.ul>
+
+          <div className="text-center mt-8">
+            <Button asChild variant="outline" size="lg">
+              <Link to="/kontakt">Zamów wycenę</Link>
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -756,7 +676,7 @@ const AgencjaGraficzna = () => {
             <p className="text-muted-foreground mb-6">
               Profesjonalne projektowanie graficzne przekłada się bezpośrednio na postrzeganie marki
               przez klientów. Agencja kreatywna Fotz Studio łączy doświadczenie designerów z wiedzą
-              o marketingu, by grafiki były nie tylko piękne, ale i skuteczne sprzedażowo.
+              o marketingu, by grafiki były nie tylko estetyczne, ale też wspierały komunikację i sprzedaż.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
@@ -769,8 +689,8 @@ const AgencjaGraficzna = () => {
               i Meta Ads w odpowiednich formatach i proporcjach.
             </p>
             <p className="text-muted-foreground mb-6">
-              Nasze studio graficzne oferuje szybkie terminy realizacji, nieograniczone poprawki
-              i pełne prawa autorskie do projektów. Stała współpraca z agencją graficzną pozwala
+              Terminy realizacji i liczbę rund poprawek ustalamy w harmonogramie projektu, a prawa
+              autorskie do projektów przenosimy na klienta zgodnie z umową. Stała współpraca z agencją graficzną pozwala
               utrzymać spójność komunikacji wizualnej na wszystkich kanałach.
             </p>
 
@@ -778,15 +698,14 @@ const AgencjaGraficzna = () => {
               Dlaczego warto wybrać naszą agencję graficzną w Poznaniu?
             </h2>
             <p className="text-muted-foreground mb-4">
-              Fotz Studio to agencja graficzna z wieloletnim doświadczeniem w projektowaniu dla
-              firm z różnych branż. Nasz zespół designerów tworzy projekty graficzne, które
-              wyróżniają się na tle konkurencji i skutecznie wspierają sprzedaż. Oferujemy
+              Fotz Studio to agencja kreatywna z Poznania, która projektuje dla firm z różnych
+              branż. Tworzymy projekty graficzne dopasowane do marki i celu komunikacji. Oferujemy
               kompleksową obsługę graficzną — od konceptu po finalny projekt gotowy do druku lub publikacji online.
             </p>
             <p className="text-muted-foreground">
               Skontaktuj się z nami, by omówić projekt graficzny dla Twojej firmy. Ofertę
-              przygotowujemy bezpłatnie na podstawie briefu. Projektowanie graficzne w Fotz Studio
-              to gwarancja jakości, terminowości i pełnego zaangażowania w Twój sukces.
+              przygotowujemy bezpłatnie na podstawie briefu. Zakres, terminy i liczbę poprawek
+              ustalamy w ofercie przed rozpoczęciem prac.
             </p>
           
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
