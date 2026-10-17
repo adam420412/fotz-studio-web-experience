@@ -9,13 +9,6 @@ import { Building2, TrendingUp, Star, Users, MapPin, CheckCircle2, ArrowRight, P
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { ServiceSchema, FAQSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 
-const stats = [
-  { value: "500+", label: "klientów w Katowicach" },
-  { value: "8", label: "lat doświadczenia" },
-  { value: "97%", label: "zadowolonych klientów" },
-  { value: "TOP3", label: "wyniki pozycjonowania" },
-];
-
 const services = [
   {
     icon: TrendingUp,
@@ -25,7 +18,7 @@ const services = [
   {
     icon: Target,
     title: "Google Ads & SEM",
-    description: "Kampanie reklamowe w Google Ads z maksymalnym ROI. Tworzymy strategie bazujące na danych i ciągle optymalizujemy wyniki.",
+    description: "Kampanie reklamowe w Google Ads nastawione na mierzalne konwersje. Tworzymy strategie bazujące na danych i ciągle optymalizujemy wyniki.",
   },
   {
     icon: Smartphone,
@@ -52,8 +45,6 @@ const services = [
 const packages = [
   {
     name: "Pakiet Starter",
-    price: "od 1 500",
-    period: "/miesiąc",
     description: "Idealne dla początkujących firm",
     features: [
       "Optymalizacja SEO 2-3 słów kluczowych",
@@ -67,14 +58,12 @@ const packages = [
   },
   {
     name: "Pakiet Business",
-    price: "od 3 500",
-    period: "/miesiąc",
     description: "Dla firm chcących wzrostu",
     features: [
       "Pozycjonowanie 5-8 słów kluczowych",
       "2 kanały social media",
       "3 posty tygodniowo + kampanie",
-      "Kampania Google Ads (budżet od 1000 zł)",
+      "Kampania Google Ads (budżet reklamowy osobno)",
       "Raport miesięczny",
       "Wsparcie priorytetowe",
     ],
@@ -83,8 +72,6 @@ const packages = [
   },
   {
     name: "Pakiet Premium",
-    price: "od 7 500",
-    period: "/miesiąc",
     description: "Kompleksowe rozwiązanie marketingowe",
     features: [
       "Pełne pozycjonowanie SEO",
@@ -113,15 +100,15 @@ const locations = [
 const faqItems = [
   {
     question: "Dlaczego marketing online jest ważny dla firm z Katowic?",
-    answer: "Katowice to czwarte co do wielkości miasto w Polsce i centrum Górnego Śląska. Jako główne miasto Górnośląskiego Związku Metropolitalnego (GZM), Katowice przyciąga firmy z całego regionu. Marketing online pozwala na szybkie dotarcie do potencjalnych klientów, zwiększenie widoczności w wyszukiwarce Google i budowanie marki. W dobie transformacji z gospodarki przemysłowej na usługową, marketing cyfrowy jest kluczem do sukcesu.",
+    answer: "Katowice to stolica województwa śląskiego i centrum Górnego Śląska. Jako główne miasto Górnośląskiego Związku Metropolitalnego (GZM), Katowice przyciąga firmy z całego regionu. Marketing online pozwala na szybkie dotarcie do potencjalnych klientów, zwiększenie widoczności w wyszukiwarce Google i budowanie marki. W dobie transformacji z gospodarki przemysłowej na usługową, marketing cyfrowy jest kluczem do sukcesu.",
   },
   {
     question: "Jak pozycjonowanie SEO może pomóc mojej firmie z Katowic?",
-    answer: "Pozycjonowanie SEO to długoterminowa inwestycja w widoczność. Gdy Twoja strona pojawia się w TOP 3 wynikach Google dla słów kluczowych takich jak 'agencja marketingowa Katowice' czy 'usługi B2B Katowice', zarabiasz organiczne kliknięcia. Pracujemy nad technikalną stroną SEO, contentem oraz autorytetu domeny. Średnio klienci widzą efekty po 3-6 miesiącach.",
+    answer: "Pozycjonowanie SEO to długoterminowa inwestycja w widoczność. Im wyżej Twoja strona pojawia się w Google dla fraz takich jak 'agencja marketingowa Katowice' czy 'usługi B2B Katowice', tym więcej organicznych kliknięć możesz zdobyć. Pracujemy nad techniczną stroną SEO, treściami oraz autorytetem domeny. Nie gwarantujemy konkretnej pozycji ani terminu — tempo efektów zależy od konkurencji i stanu strony.",
   },
   {
     question: "Jakie wyniki mogę się spodziewać z kampanii Google Ads?",
-    answer: "Kampanie Google Ads działają natychmiast. Możesz pojawić się na pierwszej stronie dla konkurencyjnych słów kluczowych tego samego dnia. ROI zależy od branży, konkurencji i budżetu. Dla firm usługowych z Katowic średni koszt akwizycji klienta wynosi 200-500 zł, a wartość klienta życiowego osiąga 10-50 tysięcy zł. Zarządzamy budżetami od 1000 zł miesięcznie.",
+    answer: "Kampanie Google Ads mogą zacząć wyświetlać reklamy krótko po uruchomieniu i akceptacji przez Google, ale pozycja reklamy zależy od aukcji, stawek i jakości reklam. Wyniki zależą od branży, konkurencji i budżetu — nie obiecujemy konkretnego kosztu pozyskania klienta. Budżet reklamowy płacony Google jest zawsze osobno od naszego wynagrodzenia i ustalamy go wspólnie po rozmowie o celach.",
   },
   {
     question: "Czy wasze usługi obejmują projektowanie strony www?",
@@ -129,7 +116,7 @@ const faqItems = [
   },
   {
     question: "Ile czasu zajmuje widoczność w Google?",
-    answer: "Pozycjonowanie to proces trwający średnio 3-6 miesięcy w zależności od konkurencji. Google Ads działa od razu. Social media budują markę systematycznie. Rekomendujemy połączenie wszystkich kanałów: SEO (długoterminowy), Google Ads (szybkie wyniki), social media (budowanie społeczności) i email marketing (retencja klientów). Wyniki najlepsze uzyskujemy, gdy wszystkie kanały pracują w harmonii.",
+    answer: "Pozycjonowanie to proces rozłożony na miesiące, a jego tempo zależy od konkurencji i stanu strony — nie podajemy sztywnych terminów. Google Ads może działać od uruchomienia kampanii. Social media budują markę systematycznie. Rekomendujemy połączenie wszystkich kanałów: SEO (długoterminowy), Google Ads (szybkie wyniki), social media (budowanie społeczności) i email marketing (retencja klientów). Kanały najlepiej działają, gdy się wzajemnie uzupełniają.",
   },
 ];
 
@@ -141,7 +128,7 @@ export default function AgencjaMarketingowaKatowice() {
       <Layout>
         <SEOHead
           title="Agencja Marketingowa Katowice | Fotz Studio"
-          description="Agencja marketingowa Katowice ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Katowic i Śląska. Bezpłatna wycena!"
+          description="Agencja marketingowa Katowice ✓ SEO, Google Ads, Social Media, strony WWW. Pracujemy z Poznania, firmy z Katowic i Śląska obsługujemy zdalnie. Bezpłatna wycena!"
           canonical="https://www.fotz-studio.pl/agencja-marketingowa/katowice"
         keywords="agencja marketingowa katowice, marketing internetowy katowice, agencja reklamowa katowice, kampanie reklamowe katowice, seo katowice, google ads katowice, agencja marketingowa śląsk"
         />
@@ -169,13 +156,13 @@ export default function AgencjaMarketingowaKatowice() {
             <div className="text-center max-w-4xl mx-auto">
               <Badge variant="outline" className="mb-6 text-primary border-primary/30 inline-block">
                 <MapPin className="w-4 h-4 mr-2" />
-                Marketing w Katowicach
+                Marketing dla firm z Katowic
               </Badge>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-foreground mb-6">
                 Agencja Marketingowa Katowice
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-                Ponad 8 lat doświadczenia w marketingu cyfrowym. Specjalizujemy się w SEO, Google Ads, social media i tworzeniu stron www dla firm z Katowic i całego Śląska. 500+ zadowolonych klientów.
+                SEO, Google Ads, social media i strony www dla firm z Katowic i całego Śląska. Pracujemy z Poznania, a klientów z Katowic obsługujemy zdalnie — realizowaliśmy projekty m.in. dla Enea Stadion, H. Cegielski – FPS i WSB Merito.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild size="lg" className="text-base">
@@ -188,20 +175,6 @@ export default function AgencjaMarketingowaKatowice() {
                   Zapytaj o szczegóły <ArrowRight className="w-5 h-5 ml-2" />
                 </a></Button>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Stats Section */}
-        <section className="py-20 bg-primary/5 border-y border-border">
-          <div className="container-wide">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              {stats.map((stat, i) => (
-                <div key={i} className="text-center">
-                  <div className="text-3xl md:text-4xl font-bold text-primary mb-2">{stat.value}</div>
-                  <div className="text-sm text-muted-foreground">{stat.label}</div>
-                </div>
-              ))}
             </div>
           </div>
         </section>
@@ -234,9 +207,9 @@ export default function AgencjaMarketingowaKatowice() {
         <section className="py-20 bg-primary/5">
           <div className="container-wide">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Pakiety Cenowe</h2>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Przykładowe Zakresy Współpracy</h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Elastyczne plany dostosowane do wielkości i budżetu Twojej firmy
+                Nie mamy sztywnego cennika. Wycenę przygotowujemy po rozmowie o zakresie, liczbie kanałów i celach. Budżet reklamowy płacony platformom (Google, Meta) jest zawsze osobno.
               </p>
             </div>
 
@@ -250,16 +223,13 @@ export default function AgencjaMarketingowaKatowice() {
                 >
                   {pkg.popular && (
                     <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                      <Badge className="bg-primary">Najpopularniejszy</Badge>
+                      <Badge className="bg-primary">Rekomendowany</Badge>
                     </div>
                   )}
                   <CardContent className="pt-6 pb-4 flex-1 flex flex-col">
                     <h3 className="font-heading font-bold text-xl mb-2">{pkg.name}</h3>
                     <p className="text-sm text-muted-foreground mb-4">{pkg.description}</p>
-                    <div className="mb-6">
-                      <span className="text-3xl font-bold text-primary">{pkg.price}</span>
-                      <span className="text-muted-foreground ml-1">{pkg.period}</span>
-                    </div>
+                    <p className="text-sm text-muted-foreground mb-6">Wycena indywidualna po rozmowie o zakresie</p>
                     <ul className="space-y-3 mb-6 flex-1">
                       {pkg.features.map((feature, j) => (
                         <li key={j} className="flex items-start gap-3 text-sm">
@@ -282,9 +252,9 @@ export default function AgencjaMarketingowaKatowice() {
         <section className="py-20">
           <div className="container-wide">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Obsługujemy Wszystkie Dzielnice Katowic</h2>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Obsługujemy Zdalnie Wszystkie Dzielnice Katowic</h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Jako Górnośląski Związek Metropolitalny (GZM), Katowice są kluczowym hubem biznesowym regionu. Pracujemy z firmami ze wszystkich dzielnic miasta.
+                Katowice to główne miasto Górnośląsko-Zagłębiowskiej Metropolii (GZM) i ważny ośrodek biznesowy regionu. Pracujemy z Poznania, a firmy ze wszystkich dzielnic Katowic obsługujemy zdalnie.
               </p>
             </div>
 
@@ -355,7 +325,7 @@ export default function AgencjaMarketingowaKatowice() {
                   <div>
                     <h3 className="font-semibold text-lg mb-2">Potencjał Rynkowy</h3>
                     <p className="text-muted-foreground">
-                      Populacja Katowic to ponad 300 tysięcy mieszkańców, a GZM to ponad 2 miliony ludzi. To ogromny potencjał rynkowy dla firm szukających nowych klientów.
+                      Katowice wraz z całą metropolią GZM to jeden z największych obszarów miejskich w Polsce — duży rynek dla firm szukających nowych klientów.
                     </p>
                   </div>
                 </div>
@@ -370,7 +340,7 @@ export default function AgencjaMarketingowaKatowice() {
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Nasz Proces Pracy</h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Systematyczne podejście do marketingu zapewnia rezultaty
+                Systematyczne podejście do marketingu oparte na danych
               </p>
             </div>
 

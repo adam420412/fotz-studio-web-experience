@@ -1,6 +1,6 @@
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
-import { ArrowLeft, Calendar, Clock, User, Search, Users, Target, BarChart3, DollarSign, CheckCircle2, XCircle } from "lucide-react";
+import { ArrowLeft, Calendar, Clock, User, Search, Users, DollarSign, CheckCircle2, XCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { ArticleSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
@@ -9,7 +9,7 @@ import { RelatedArticles } from "@/components/blog/RelatedArticles";
 const faqItems = [
   {
     question: "Jaki budżet minimalny potrzebuję na start?",
-    answer: "Dla Google Ads rekomendujemy minimum 1500-2000 PLN miesięcznie, dla Facebook Ads można startować od 1000 PLN. Mniejsze budżety utrudniają zbieranie danych i optymalizację."
+    answer: "Nie ma jednej kwoty dla wszystkich — budżet zależy od branży, konkurencji, kosztu kliknięcia w Twojej niszy i celu kampanii. Ważne, by był na tyle duży, żeby kampania zebrała dane do optymalizacji; zbyt małe budżety to utrudniają. Budżet reklamowy płacisz platformie zawsze osobno od wynagrodzenia agencji."
   },
   {
     question: "Która platforma jest lepsza dla początkujących?",
@@ -17,7 +17,7 @@ const faqItems = [
   },
   {
     question: "Czy mogę prowadzić kampanie samodzielnie?",
-    answer: "Tak, obie platformy oferują tryby automatyczne dla początkujących. Jednak profesjonalne zarządzanie kampaniami może zwiększyć ROAS nawet o 50-100%."
+    answer: "Tak, obie platformy oferują tryby automatyczne dla początkujących. Profesjonalne zarządzanie pomaga uniknąć typowych błędów w strukturze kampanii, targetowaniu i mierzeniu konwersji — konkretnego wzrostu wyników nie da się jednak obiecać z góry."
   },
   {
     question: "Jak długo trwa zanim zobaczę wyniki?",
@@ -213,22 +213,11 @@ const BlogGoogleVsFacebook = () => {
                 Jeśli średnia wartość klienta jest wysoka (np. usługi prawne, B2B software), wyższy koszt kliknięcia szybko się zwróci.
               </p>
 
-              <div className="not-prose my-8">
-                <h4 className="font-semibold mb-4">Średnie koszty CPC w wybranych branżach (Google Ads, Polska)</h4>
-                <div className="space-y-3">
-                  {[
-                    { industry: "Prawo i finanse", cpc: "8-25 PLN" },
-                    { industry: "E-commerce (odzież)", cpc: "1-4 PLN" },
-                    { industry: "Usługi lokalne", cpc: "2-8 PLN" },
-                    { industry: "Software B2B", cpc: "10-30 PLN" },
-                    { industry: "Nieruchomości", cpc: "5-15 PLN" },
-                  ].map((item, index) => (
-                    <div key={index} className="flex justify-between items-center p-3 bg-card rounded-lg border border-border">
-                      <span className="text-muted-foreground">{item.industry}</span>
-                      <span className="font-semibold">{item.cpc}</span>
-                    </div>
-                  ))}
-                </div>
+              <div className="not-prose my-8 p-6 bg-card rounded-xl border border-border">
+                <h4 className="font-semibold mb-2">Od czego zależy koszt kliknięcia (CPC)?</h4>
+                <p className="text-muted-foreground text-sm">
+                  CPC w Google Ads ustala aukcja, więc zależy od konkurencji w danej branży i regionie, jakości reklamy i strony docelowej oraz od tego, jak bardzo zakupowe są wybrane frazy. Rzeczywiste stawki dla Twojej branży najlepiej sprawdzić w planerze słów kluczowych i w pierwszych tygodniach kampanii.
+                </p>
               </div>
 
               <h2>Kiedy wybrać Facebook Ads?</h2>
@@ -296,11 +285,6 @@ const BlogGoogleVsFacebook = () => {
                         <td className="py-3 px-4">Usługi, B2B, produkty funkcjonalne</td>
                         <td className="py-3 px-4">E-commerce, lifestyle, nowe marki</td>
                       </tr>
-                      <tr>
-                        <td className="py-3 px-4 font-medium">Średni ROAS</td>
-                        <td className="py-3 px-4">200-400%</td>
-                        <td className="py-3 px-4">150-300%</td>
-                      </tr>
                     </tbody>
                   </table>
                 </div>
@@ -330,7 +314,7 @@ const BlogGoogleVsFacebook = () => {
               <div className="not-prose my-8 p-6 bg-card rounded-xl border border-border">
                 <h4 className="font-semibold mb-4 flex items-center gap-2">
                   <DollarSign className="w-5 h-5 text-primary" />
-                  Przykładowy podział budżetu
+                  Przykładowy podział budżetu (orientacyjnie, zależy od branży i wyników testów)
                 </h4>
                 <div className="space-y-3">
                   <div className="flex items-center gap-3">
@@ -339,7 +323,7 @@ const BlogGoogleVsFacebook = () => {
                       <div className="w-[70%] bg-indigo-500"></div>
                       <div className="w-[30%] bg-blue-500"></div>
                     </div>
-                    <div className="text-sm">70% FB / 30% Google</div>
+                    <div className="text-sm">Przewaga Facebooka</div>
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-16 text-sm text-muted-foreground">Usługi lokalne</div>
@@ -347,7 +331,7 @@ const BlogGoogleVsFacebook = () => {
                       <div className="w-[30%] bg-indigo-500"></div>
                       <div className="w-[70%] bg-blue-500"></div>
                     </div>
-                    <div className="text-sm">30% FB / 70% Google</div>
+                    <div className="text-sm">Przewaga Google</div>
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-16 text-sm text-muted-foreground">E-commerce</div>
@@ -355,30 +339,25 @@ const BlogGoogleVsFacebook = () => {
                       <div className="w-[50%] bg-indigo-500"></div>
                       <div className="w-[50%] bg-blue-500"></div>
                     </div>
-                    <div className="text-sm">50% FB / 50% Google</div>
+                    <div className="text-sm">Zbliżony podział</div>
                   </div>
                 </div>
               </div>
 
-              <h2>Case study: Sklep z odzieżą sportową</h2>
+              <h2>Przykład: jak można rozłożyć strategię dla sklepu z odzieżą sportową</h2>
 
               <p>
-                Nasz klient, sklep z odzieżą sportową, chciał zwiększyć sprzedaż online. Oto jak rozłożyliśmy strategię:
+                Poniżej przykładowy (hipotetyczny) podział działań dla sklepu internetowego z odzieżą sportową:
               </p>
 
               <ul>
-                <li><strong>Facebook (60% budżetu):</strong> Kampanie świadomościowe z dynamicznymi reklamami produktowymi. Targetowanie na osoby zainteresowane sportem, fitness, bieganiem. Remarketing do odwiedzających stronę.</li>
-                <li><strong>Google (40% budżetu):</strong> Google Shopping z pełnym katalogiem produktów. Search na słowa brandowe i produktowe ("buty do biegania Nike Air", "legginsy sportowe damskie").</li>
+                <li><strong>Facebook i Instagram:</strong> Kampanie świadomościowe z dynamicznymi reklamami produktowymi. Targetowanie na osoby zainteresowane sportem, fitness, bieganiem. Remarketing do odwiedzających stronę.</li>
+                <li><strong>Google:</strong> Google Shopping z pełnym katalogiem produktów. Search na słowa brandowe i produktowe ("buty do biegania Nike Air", "legginsy sportowe damskie").</li>
               </ul>
 
               <p>
-                <strong>Wyniki po 6 miesiącach:</strong>
+                Proporcje budżetu między platformami ustala się na podstawie danych z pierwszych tygodni — więcej środków trafia tam, gdzie koszt pozyskania klienta jest niższy.
               </p>
-              <ul>
-                <li>Wzrost przychodów o 340%</li>
-                <li>ROAS 450% (Facebook) i 380% (Google)</li>
-                <li>Koszt pozyskania klienta spadł o 45%</li>
-              </ul>
 
               <h2>Podsumowanie – co wybrać?</h2>
 
@@ -422,7 +401,7 @@ const BlogGoogleVsFacebook = () => {
                 <div className="space-y-6">
                   <div>
                     <h3 className="text-lg font-semibold mb-2">Jaki budżet minimalny potrzebuję na start?</h3>
-                    <p className="text-muted-foreground">Dla Google Ads rekomendujemy minimum 1500-2000 PLN miesięcznie, dla Facebook Ads można startować od 1000 PLN. Mniejsze budżety utrudniają zbieranie danych i optymalizację.</p>
+                    <p className="text-muted-foreground">Nie ma jednej kwoty dla wszystkich — budżet zależy od branży, konkurencji, kosztu kliknięcia w Twojej niszy i celu kampanii. Ważne, by był na tyle duży, żeby kampania zebrała dane do optymalizacji; zbyt małe budżety to utrudniają. Budżet reklamowy płacisz platformie zawsze osobno od wynagrodzenia agencji.</p>
                   </div>
 
                   <div>
@@ -432,7 +411,7 @@ const BlogGoogleVsFacebook = () => {
 
                   <div>
                     <h3 className="text-lg font-semibold mb-2">Czy mogę prowadzić kampanie samodzielnie?</h3>
-                    <p className="text-muted-foreground">Tak, obie platformy oferują tryby automatyczne dla początkujących. Jednak profesjonalne zarządzanie kampaniami może zwiększyć ROAS nawet o 50-100%.</p>
+                    <p className="text-muted-foreground">Tak, obie platformy oferują tryby automatyczne dla początkujących. Profesjonalne zarządzanie pomaga uniknąć typowych błędów w strukturze kampanii, targetowaniu i mierzeniu konwersji — konkretnego wzrostu wyników nie da się jednak obiecać z góry.</p>
                   </div>
 
                   <div>

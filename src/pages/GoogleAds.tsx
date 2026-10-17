@@ -2,9 +2,9 @@ import { SEOHead } from "@/components/seo/SEOHead";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { 
-  Target, Users, TrendingUp, BarChart3, Zap, Eye, 
-  MousePointer, DollarSign, Layers, CheckCircle2, 
-  ArrowRight, Search, PieChart, RefreshCw, Megaphone,
+  Target, Users, TrendingUp, BarChart3, Eye, 
+  MousePointer, DollarSign, CheckCircle2, 
+  ArrowRight, Search, PieChart, Megaphone,
   Monitor, ShoppingCart, Video, Globe, Settings, LineChart
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -42,54 +42,12 @@ const GoogleAds = () => {
     { step: "04", title: "Optymalizacja i skalowanie", description: "Ciągłe testowanie i poprawa wyników" },
   ];
 
-  const pricingPackages = [
-    {
-      name: "Start",
-      price: "1 500",
-      period: "/mies.",
-      description: "Idealne na początek",
-      features: [
-        "Budżet reklamowy do 3 000 zł",
-        "Kampania w sieci wyszukiwania",
-        "Do 50 słów kluczowych",
-        "Raport miesięczny",
-        "Podstawowe śledzenie konwersji",
-      ],
-      popular: false,
-    },
-    {
-      name: "Business",
-      price: "2 500",
-      period: "/mies.",
-      description: "Dla rozwijających się firm",
-      features: [
-        "Budżet reklamowy do 15 000 zł",
-        "Sieć wyszukiwania + reklamowa",
-        "Do 200 słów kluczowych",
-        "Remarketing",
-        "Testy A/B reklam",
-        "Raporty tygodniowe",
-        "Integracja z Google Analytics",
-      ],
-      popular: true,
-    },
-    {
-      name: "Premium",
-      price: "4 500",
-      period: "/mies.",
-      description: "Pełna obsługa SEM",
-      features: [
-        "Budżet reklamowy bez limitu",
-        "Wszystkie typy kampanii",
-        "Google Shopping / Performance Max",
-        "Zaawansowany remarketing",
-        "Dedykowany opiekun",
-        "Raporty na żądanie",
-        "Strategia wielokanałowa",
-        "Integracja z CRM",
-      ],
-      popular: false,
-    },
+  const pricingFactors = [
+    "Liczba i typ kampanii (wyszukiwarka, sieć reklamowa, Shopping, YouTube, Performance Max)",
+    "Liczba produktów, usług i lokalizacji, które obejmuje kampania",
+    "Stan konta i analityki — nowa konfiguracja czy przejęcie istniejących kampanii",
+    "Zakres testów A/B, remarketingu i integracji (np. CRM, Merchant Center)",
+    "Częstotliwość raportowania i konsultacji",
   ];
 
   const faqItems = [
@@ -99,7 +57,7 @@ const GoogleAds = () => {
     },
     {
       question: "Ile kosztuje reklama w Google Ads?",
-      answer: <>Koszt zależy od konkurencyjności słów kluczowych, jakości reklamy i branży. Średni koszt kliknięcia w Polsce to 1-5 zł, ale w konkurencyjnych branżach może wynosić nawet 20-50 zł. Ty decydujesz o dziennym budżecie i maksymalnej stawce za kliknięcie. Sprawdź także naszą ofertę <Link to="/uslugi/reklama-facebook" className="text-primary hover:underline">Facebook Ads</Link> dla kampanii uzupełniających.</>
+      answer: <>Koszt zależy od konkurencyjności słów kluczowych, jakości reklamy i branży. Stawki za kliknięcie mocno różnią się między branżami i frazami — w konkurencyjnych branżach mogą być wielokrotnie wyższe niż w niszowych. Ty decydujesz o dziennym budżecie i maksymalnej stawce za kliknięcie. Sprawdź także naszą ofertę <Link to="/uslugi/reklama-facebook" className="text-primary hover:underline">Facebook Ads</Link> dla kampanii uzupełniających.</>
     },
     {
       question: "Jakie typy kampanii Google Ads są dostępne?",
@@ -111,11 +69,11 @@ const GoogleAds = () => {
     },
     {
       question: "Po jakim czasie widać efekty kampanii Google Ads?",
-      answer: "Pierwsze wyniki widać już po kilku dniach od uruchomienia kampanii - reklamy zaczynają generować kliknięcia i ruch. Pełna optymalizacja i stabilne wyniki wymagają zwykle 2-4 tygodni zbierania danych i testowania różnych wariantów."
+      answer: "Pierwsze wyniki widać już po kilku dniach od uruchomienia kampanii - reklamy zaczynają generować kliknięcia i ruch. Optymalizacja wymaga czasu na zebranie danych i testowanie wariantów — tempo zależy od budżetu, branży i liczby konwersji. Nie obiecujemy konkretnego terminu ani poziomu wyników."
     },
     {
       question: "Czym różni się Google Ads od pozycjonowania SEO?",
-      answer: <>Google Ads daje natychmiastowe wyniki - reklamy pojawiają się od razu po uruchomieniu kampanii. <Link to="/seo/pozycjonowanie" className="text-primary hover:underline">SEO</Link> to proces długoterminowy (3-6 miesięcy). Najlepsze rezultaty daje połączenie obu strategii - płatne reklamy na szybkie efekty i <Link to="/seo/pozycjonowanie" className="text-primary hover:underline">pozycjonowanie</Link> na długoterminowy wzrost organiczny.</>
+      answer: <>Google Ads daje natychmiastowe wyniki - reklamy pojawiają się od razu po uruchomieniu kampanii. <Link to="/seo/pozycjonowanie" className="text-primary hover:underline">SEO</Link> to proces długoterminowy, rozłożony na miesiące. Najlepsze rezultaty daje połączenie obu strategii - płatne reklamy na szybkie efekty i <Link to="/seo/pozycjonowanie" className="text-primary hover:underline">pozycjonowanie</Link> na długoterminowy wzrost organiczny.</>
     },
     {
       question: "Jak mierzyć skuteczność kampanii Google Ads?",
@@ -133,9 +91,9 @@ const GoogleAds = () => {
       <Layout>
       <SEOHead
         title="Kampanie Google Ads - Skuteczna Reklama w Google dla Firm"
-        description="Kampanie Google Ads dla firm — reklamy w wyszukiwarce Google, YouTube i Google Shopping. Prowadzenie i optymalizacja kampanii Google Ads przez agencję Google Partners, które generują sprzedaż i zwrot z inwestycji."
+        description="Kampanie Google Ads dla firm — reklamy w wyszukiwarce Google, YouTube i Google Shopping. Prowadzenie i optymalizacja kampanii Google Ads nastawionych na sprzedaż i zwrot z inwestycji."
         canonical="https://www.fotz-studio.pl/performance-marketing/google-ads"
-        keywords="kampanie google ads, reklamy w google ads, prowadzenie kampanii google ads, agencja google ads, google adwords, reklama w google, google partners, google ads dla firm, google ads cennik, optymalizacja google ads, sem google ads"
+        keywords="kampanie google ads, reklamy w google ads, prowadzenie kampanii google ads, agencja google ads, google adwords, reklama w google, google ads dla firm, google ads cennik, optymalizacja google ads, sem google ads"
       />
 
       <ServiceSchema 
@@ -172,7 +130,7 @@ const GoogleAds = () => {
               </span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Docieraj do klientów w momencie, gdy szukają Twoich produktów. Tworzymy kampanie, które generują sprzedaż i maksymalizują zwrot z inwestycji.
+              Docieraj do klientów w momencie, gdy szukają Twoich produktów. Tworzymy kampanie nastawione na sprzedaż i zwrot z inwestycji.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-green-600 hover:bg-green-700">
@@ -182,7 +140,7 @@ const GoogleAds = () => {
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg">
-                <a href="#cennik">Zobacz cennik</a>
+                <a href="#cennik">Od czego zależy wycena</a>
               </Button>
             </div>
           </motion.div>
@@ -267,10 +225,10 @@ const GoogleAds = () => {
               className="grid grid-cols-2 gap-4"
             >
               {[
-                { value: "90%", label: "Udziału w rynku wyszukiwarek" },
-                { value: "5:1", label: "Średni ROAS kampanii" },
-                { value: "65%", label: "Kliknięć trafia do reklam" },
-                { value: "24/7", label: "Monitoring i optymalizacja" },
+                { value: "PPC", label: "Płacisz za kliknięcia w reklamę" },
+                { value: "GA4", label: "Śledzenie konwersji" },
+                { value: "A/B", label: "Testy tekstów i stron docelowych" },
+                { value: "KPI", label: "Raporty z rekomendacjami" },
               ].map((stat, index) => (
                 <div key={index} className="bg-card border border-border rounded-xl p-6 text-center">
                   <div className="text-3xl font-bold bg-gradient-to-r from-green-500 to-yellow-500 bg-clip-text text-transparent mb-2">
@@ -416,7 +374,7 @@ const GoogleAds = () => {
               Jak prowadzimy kampanie?
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Sprawdzony proces, który gwarantuje skuteczne kampanie Google Ads
+              Proces, który porządkuje kampanię od analizy po optymalizację
             </p>
           </motion.div>
 
@@ -456,59 +414,29 @@ const GoogleAds = () => {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Cennik Google Ads
+              Od czego zależy wycena?
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Przejrzyste pakiety dopasowane do różnych potrzeb i budżetów
+              Wycenę obsługi przygotowujemy po rozmowie o zakresie. Bierzemy pod uwagę przede wszystkim:
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {pricingPackages.map((pkg, index) => (
-              <motion.div
-                key={pkg.name}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className={`relative bg-card border rounded-2xl p-6 ${
-                  pkg.popular ? "border-green-500 shadow-lg shadow-green-500/20" : "border-border"
-                }`}
-              >
-                {pkg.popular && (
-                  <span className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-green-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
-                    Najpopularniejszy
-                  </span>
-                )}
-                <div className="text-center mb-6">
-                  <h3 className="text-xl font-bold text-foreground mb-2">{pkg.name}</h3>
-                  <p className="text-sm text-muted-foreground mb-4">{pkg.description}</p>
-                  <div className="flex items-baseline justify-center gap-1">
-                    <span className="text-4xl font-bold text-foreground">{pkg.price}</span>
-                    <span className="text-muted-foreground">zł{pkg.period}</span>
-                  </div>
-                </div>
-                <ul className="space-y-3 mb-6">
-                  {pkg.features.map((feature, i) => (
-                    <li key={i} className="flex items-start gap-2 text-sm">
-                      <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
-                      <span className="text-muted-foreground">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                <Button
-                  asChild
-                  className={`w-full ${pkg.popular ? "bg-green-600 hover:bg-green-700" : ""}`}
-                  variant={pkg.popular ? "default" : "outline"}
-                >
-                  <Link to="/kontakt">Wybierz pakiet</Link>
-                </Button>
-              </motion.div>
-            ))}
+          <div className="max-w-3xl mx-auto bg-card border border-border rounded-2xl p-6">
+            <ul className="space-y-3 mb-6">
+              {pricingFactors.map((factor, i) => (
+                <li key={i} className="flex items-start gap-2 text-sm">
+                  <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                  <span className="text-muted-foreground">{factor}</span>
+                </li>
+              ))}
+            </ul>
+            <Button asChild className="w-full bg-green-600 hover:bg-green-700">
+              <Link to="/kontakt">Zapytaj o wycenę</Link>
+            </Button>
           </div>
 
           <p className="text-center text-sm text-muted-foreground mt-8">
-            * Ceny nie zawierają budżetu reklamowego. Budżet opłacany jest bezpośrednio w Google Ads.
+            * Budżet reklamowy jest zawsze osobną pozycją — opłacasz go bezpośrednio w Google Ads.
           </p>
         </div>
       </section>
@@ -689,14 +617,14 @@ const GoogleAds = () => {
               Kampanie Google Ads — jak zacząć i osiągnąć sukces reklamowy online?
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Kampanie Google Ads to najskuteczniejszy sposób na natychmiastowe dotarcie do klientów szukających Twoich produktów i usług w Google. Reklamy w Google Ads wyświetlają się dokładnie wtedy, gdy potencjalny klient wpisuje frazę powiązaną z Twoją ofertą — w sieci wyszukiwania, sieci reklamowej, YouTube czy Google Zakupy. Prowadzenie kampanii Google Ads przez doświadczoną agencję pozwala maksymalizować zwrot z budżetu reklamowego i eliminować marnotrawstwo środków. Fotz Studio to certyfikowana agencja Google Partners z doświadczeniem w kampaniach dla firm z całej Polski.
+              Kampanie Google Ads to jeden z najszybszych sposobów na dotarcie do klientów szukających Twoich produktów i usług w Google. Reklamy w Google Ads wyświetlają się dokładnie wtedy, gdy potencjalny klient wpisuje frazę powiązaną z Twoją ofertą — w sieci wyszukiwania, sieci reklamowej, YouTube czy Google Zakupy. Prowadzenie kampanii Google Ads przez doświadczoną agencję pozwala maksymalizować zwrot z budżetu reklamowego i eliminować marnotrawstwo środków. Fotz Studio pracuje z Poznania i prowadzi kampanie także dla firm z innych miast — zdalnie.
             </p>
 
             <h3 className="text-xl font-heading font-semibold mb-3">
               Reklamy w Google Ads — typy kampanii i wybór słów kluczowych
             </h3>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Reklamy w Google Ads dzielą się na: kampanie w sieci wyszukiwania (tekstowe), kampanie Display (banerowe), kampanie YouTube (wideo), kampanie Shopping (produktowe) i Performance Max. Wybór typu kampanii zależy od celu — budowanie świadomości marki, generowanie ruchu na stronę, leady czy sprzedaż. Kampanie Google Ads w sieci wyszukiwania Google dają najwyższy intent zakupowy — użytkownik aktywnie szuka Twojej usługi. Dobór słów kluczowych to fundament — analiza fraz, dopasowania i wykluczenia decydują o efektywności i kosztach reklam. Google Adwords (dawna nazwa Google Ads) to platforma o największym zasięgu reklamowym na świecie — miliardy wyszukiwań dziennie.
+              Reklamy w Google Ads dzielą się na: kampanie w sieci wyszukiwania (tekstowe), kampanie Display (banerowe), kampanie YouTube (wideo), kampanie Shopping (produktowe) i Performance Max. Wybór typu kampanii zależy od celu — budowanie świadomości marki, generowanie ruchu na stronę, leady czy sprzedaż. Kampanie Google Ads w sieci wyszukiwania Google dają najwyższy intent zakupowy — użytkownik aktywnie szuka Twojej usługi. Dobór słów kluczowych to fundament — analiza fraz, dopasowania i wykluczenia decydują o efektywności i kosztach reklam. Google Adwords to dawna nazwa Google Ads — platformy o bardzo dużym zasięgu reklamowym.
             </p>
             <h3 className="text-xl font-heading font-semibold mb-3">
               Prowadzenie kampanii Google Ads — zarządzanie budżetem i optymalizacja
@@ -705,10 +633,10 @@ const GoogleAds = () => {
               Prowadzenie kampanii Google Ads to nie tylko konfiguracja — to ciągła optymalizacja: stawki, grupy reklam, rozszerzenia, wykluczenia i testy A/B tekstów reklam. Budżet kampanii Google Ads ustalamy dziennie lub łącznie — strategie licytacji (docelowy CPA, ROAS, Maximize Clicks) dostosowujemy do celów. Monitoring wydatków i dostosowywanie budżetu w oparciu o dane to klucz do rentowności. Pomocą kampanii Google Ads mierzalnych efektów dostarcza nam Google Analytics 4 zintegrowany z kontem reklamowym. Połączenie z Google Analytics umożliwia śledzenie konwersji i optymalizację kampanii pod realne wyniki, nie tylko kliknięcia.
             </p>
             <h3 className="text-xl font-heading font-semibold mb-3">
-              Agencja Google Partners — Google Ads to narzędzie wymagające ekspertyzy
+              Google Ads to narzędzie wymagające wiedzy i praktyki
             </h3>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Agencja Google Partners to certyfikowany partner Google, który spełnił wymagania dotyczące wyników kampanii, wiedzy i budżetów obsługiwanych klientów. Google Ads to narzędzie potężne, ale kosztowne bez odpowiedniej wiedzy — źle skonfigurowane kampanie przepalają budżet bez efektów. Użytkownikiem Google jest każda osoba szukająca czegokolwiek w Google — dotarcie do właściwego użytkownika Google we właściwym momencie to sedno skutecznych reklam. Zakresie Google Ads specjalizujemy się w kampaniach dla branży e-commerce, usługowej, B2B i lokalnej.
+              Google Ads to narzędzie potężne, ale kosztowne bez odpowiedniej wiedzy — źle skonfigurowane kampanie przepalają budżet bez efektów. Użytkownikiem Google jest każda osoba szukająca czegokolwiek w Google — dotarcie do właściwego użytkownika Google we właściwym momencie to sedno skutecznych reklam. Zakresie Google Ads specjalizujemy się w kampaniach dla branży e-commerce, usługowej, B2B i lokalnej.
             </p>
             <h3 className="text-xl font-heading font-semibold mb-3">
               Strony internetowej w Google — landing page i konwersja z reklam
@@ -721,49 +649,49 @@ const GoogleAds = () => {
               Google Ads vs SEO — kiedy wybrać reklamę, a kiedy pozycjonowanie?
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Google Ads i SEO to dwa komplementarne kanały pozyskiwania ruchu z Google. Reklamy Google Ads dają natychmiastowe efekty — kampania może generować leady już pierwszego dnia. SEO wymaga 3-6 miesięcy, ale buduje trwałą widoczność organiczną bez stałych kosztów kliknięć. Najlepsza strategia łączy oba kanały: Google Ads zapewnia natychmiastowy ruch i dane o konwertujących frazach, a SEO buduje długoterminową bazę organiczną. Dane z kampanii Google Ads (konwertujące słowa kluczowe, CTR, bounce rate) są bezcenne dla strategii SEO — pozwalają priorytetyzować optymalizację pod frazy o najwyższym potencjale konwersji.
+              Google Ads i SEO to dwa komplementarne kanały pozyskiwania ruchu z Google. Reklamy Google Ads zaczynają się wyświetlać zaraz po uruchomieniu kampanii. SEO wymaga więcej czasu, ale buduje trwałą widoczność organiczną bez stałych kosztów kliknięć. Najlepsza strategia łączy oba kanały: Google Ads zapewnia natychmiastowy ruch i dane o konwertujących frazach, a SEO buduje długoterminową bazę organiczną. Dane z kampanii Google Ads (konwertujące słowa kluczowe, CTR, bounce rate) są bezcenne dla strategii SEO — pozwalają priorytetyzować optymalizację pod frazy o najwyższym potencjale konwersji.
             </p>
 
             <h3 className="text-xl font-heading font-semibold mb-3">
               Remarketing i kampanie Performance Max — zaawansowane strategie Google Ads
             </h3>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Remarketing w Google Ads pozwala dotrzeć do użytkowników, którzy odwiedzili Twoją stronę, ale nie dokonali konwersji. Wyświetlamy im spersonalizowane reklamy w sieci reklamowej Google, YouTube i Gmailu, przypominając o ofercie. Kampanie Performance Max to najnowszy typ kampanii Google Ads, który automatycznie optymalizuje wyświetlanie reklam we wszystkich kanałach Google (wyszukiwarka, display, YouTube, Discovery, Maps, Gmail) przy użyciu machine learningu. Performance Max wymaga dobrego feedu produktowego i jasnych celów konwersji — to narzędzie dla zaawansowanych reklamodawców, które w rękach doświadczonej agencji daje znakomite wyniki.
+              Remarketing w Google Ads pozwala dotrzeć do użytkowników, którzy odwiedzili Twoją stronę, ale nie dokonali konwersji. Wyświetlamy im spersonalizowane reklamy w sieci reklamowej Google, YouTube i Gmailu, przypominając o ofercie. Kampanie Performance Max to najnowszy typ kampanii Google Ads, który automatycznie optymalizuje wyświetlanie reklam we wszystkich kanałach Google (wyszukiwarka, display, YouTube, Discovery, Maps, Gmail) przy użyciu machine learningu. Performance Max wymaga dobrego feedu produktowego i jasnych celów konwersji — to narzędzie dla zaawansowanych reklamodawców, które wymaga starannej konfiguracji i stałej kontroli.
             </p>
 
             <h3 className="text-xl font-heading font-semibold mb-3">
               Google Ads dla e-commerce — kampanie Shopping i produktowe
             </h3>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Kampanie Google Shopping (Zakupy Google) to must-have dla sklepów internetowych. Reklamy produktowe wyświetlają zdjęcie, cenę i nazwę produktu bezpośrednio w wynikach wyszukiwania — mają wyższy CTR i konwersję niż reklamy tekstowe. Konfiguracja wymaga Google Merchant Center z poprawnym feedem produktowym (tytuły, opisy, ceny, zdjęcia, kategorie). Optymalizacja kampanii Shopping obejmuje: segmentację produktów, wykluczanie nierentownych pozycji, dostosowywanie stawek per kategoria i testy różnych strategii licytacji. Dla klientów e-commerce łączymy kampanie Shopping z Performance Max i remarketingiem, tworząc pełny lejek sprzedażowy.
+              Kampanie Google Shopping (Zakupy Google) to must-have dla sklepów internetowych. Reklamy produktowe wyświetlają zdjęcie, cenę i nazwę produktu bezpośrednio w wynikach wyszukiwania — dzięki temu wyróżniają się wizualnie na tle reklam tekstowych. Konfiguracja wymaga Google Merchant Center z poprawnym feedem produktowym (tytuły, opisy, ceny, zdjęcia, kategorie). Optymalizacja kampanii Shopping obejmuje: segmentację produktów, wykluczanie nierentownych pozycji, dostosowywanie stawek per kategoria i testy różnych strategii licytacji. Dla klientów e-commerce łączymy kampanie Shopping z Performance Max i remarketingiem, tworząc pełny lejek sprzedażowy.
             </p>
 
             <h3 className="text-xl font-heading font-semibold mb-3">
               Analityka i raportowanie kampanii Google Ads — mierzalność każdego grosza
             </h3>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Jedną z największych zalet Google Ads jest pełna mierzalność wyników. Każde kliknięcie, wyświetlenie i konwersja są śledzone w czasie rzeczywistym. Google Analytics 4 w połączeniu z Google Ads pozwala analizować pełną ścieżkę użytkownika — od kliknięcia w reklamę, przez przeglądanie strony, aż po zakup lub wysłanie formularza. W Fotz Studio tworzymy dedykowane dashboardy w Looker Studio (dawniej Google Data Studio), które prezentują kluczowe metryki: CTR, CPC, CPA, ROAS, wartość konwersji i quality score. Klient ma dostęp do danych 24/7 i otrzymuje comiesięczny raport z analizą trendów i rekomendacjami optymalizacyjnymi.
+              Jedną z największych zalet Google Ads jest pełna mierzalność wyników. Każde kliknięcie, wyświetlenie i konwersja są śledzone w czasie rzeczywistym. Google Analytics 4 w połączeniu z Google Ads pozwala analizować pełną ścieżkę użytkownika — od kliknięcia w reklamę, przez przeglądanie strony, aż po zakup lub wysłanie formularza. W Fotz Studio tworzymy dedykowane dashboardy w Looker Studio (dawniej Google Data Studio), które prezentują kluczowe metryki: CTR, CPC, CPA, ROAS, wartość konwersji i quality score. Klient ma stały dostęp do dashboardu i otrzymuje comiesięczny raport z analizą trendów i rekomendacjami optymalizacyjnymi.
             </p>
 
             <h3 className="text-xl font-heading font-semibold mb-3">
               Ile kosztuje reklama w Google Ads — budżet i cennik kampanii
             </h3>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Koszt reklamy w Google Ads zależy od konkurencyjności branży, wybranych słów kluczowych i lokalizacji. Średni koszt kliknięcia (CPC) w Polsce wynosi 1-5 zł dla fraz ogólnych i 5-25 zł dla branż konkurencyjnych (prawo, finanse, medycyna). Minimalny rekomendowany budżet miesięczny to 2000-3000 zł na sam budżet reklamowy plus koszty zarządzania kampanią. W Fotz Studio prowadzenie kampanii Google Ads zaczyna się od 1500 zł miesięcznie za zarządzanie plus budżet reklamowy. Każdy złoty zainwestowany w Google Ads jest mierzalny — wiemy dokładnie, ile kosztował każdy lead i jaki jest ROAS (Return on Ad Spend).
+              Koszt reklamy w Google Ads zależy od konkurencyjności branży, wybranych słów kluczowych i lokalizacji. Stawki za kliknięcie (CPC) są wyraźnie wyższe w branżach konkurencyjnych, takich jak prawo, finanse czy medycyna. Budżet reklamowy płacisz bezpośrednio Google i jest on zawsze osobną pozycją — pomagamy dobrać jego wysokość do celu i rynku. Wycenę obsługi kampanii przygotowujemy po rozmowie o zakresie: liczbie i typach kampanii, stanie konta i analityki oraz częstotliwości raportowania. Każdy złoty zainwestowany w Google Ads jest mierzalny — wiemy dokładnie, ile kosztował każdy lead i jaki jest ROAS (Return on Ad Spend).
             </p>
 
             <h3 className="text-xl font-heading font-semibold mb-3">
               Google Ads dla firm lokalnych — reklamy geotargetowane
             </h3>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Dla firm działających lokalnie Google Ads oferuje precyzyjne geotargetowanie — reklamy wyświetlają się tylko użytkownikom w określonym promieniu od lokalizacji firmy. Kampanie lokalne w Google Ads obejmują reklamy w wyszukiwarce, mapach Google i sieci reklamowej. Rozszerzenia lokalizacji pokazują adres i numer telefonu bezpośrednio w reklamie, co zwiększa CTR o 10-20%. Dla firm usługowych w Poznaniu i Wielkopolsce konfigurujemy kampanie z geotargetowaniem na konkretne dzielnice, miasta i powiaty. Połączenie Google Ads z optymalizacją Google Business Profile daje maksymalną widoczność w lokalnych wynikach wyszukiwania.
+              Dla firm działających lokalnie Google Ads oferuje precyzyjne geotargetowanie — reklamy wyświetlają się tylko użytkownikom w określonym promieniu od lokalizacji firmy. Kampanie lokalne w Google Ads obejmują reklamy w wyszukiwarce, mapach Google i sieci reklamowej. Rozszerzenia lokalizacji pokazują adres i numer telefonu bezpośrednio w reklamie, co ułatwia kontakt z firmą. Dla firm usługowych w Poznaniu i Wielkopolsce konfigurujemy kampanie z geotargetowaniem na konkretne dzielnice, miasta i powiaty. Połączenie Google Ads z optymalizacją Google Business Profile daje maksymalną widoczność w lokalnych wynikach wyszukiwania.
             </p>
 
             <h3 className="text-xl font-heading font-semibold mb-3">
               Współpraca z Fotz Studio — jak rozpocząć kampanię Google Ads?
             </h3>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Proces rozpoczynamy od bezpłatnej konsultacji i analizy potencjału reklamowego — badamy konkurencję, wolumeny wyszukiwań i szacujemy budżet. Następnie konfigurujemy konto Google Ads, implementujemy śledzenie konwersji (Google Tag Manager, GA4) i uruchamiamy kampanię testową. Po zebraniu pierwszych danych (zwykle 2-4 tygodnie) optymalizujemy kampanię pod realne wyniki — eliminujemy nieefektywne frazy, testujemy nowe teksty reklam i dostosowujemy stawki. Klient otrzymuje pełny dostęp do konta Google Ads i comiesięczny raport z analizą wyników. Naszym celem jest nie tylko generowanie kliknięć, ale przede wszystkim dostarczanie konwersji — leadów, sprzedaży i zapytań ofertowych, które bezpośrednio przekładają się na przychód firmy. Każda kampania jest prowadzona z myślą o maksymalizacji zwrotu z inwestycji reklamowej przy jednoczesnym utrzymaniu optymalnego kosztu pozyskania klienta. Stale testujemy nowe formaty reklam, strategie licytacji i grupy odbiorców, aby zapewnić najlepsze możliwe wyniki. Nasza przewaga to połączenie wiedzy technicznej o platformie Google Ads z głębokim zrozumieniem biznesowych celów klienta — nie prowadzimy kampanii "na ślepo", lecz strategicznie, z jasno zdefiniowanymi KPI i regularnymi przeglądami wyników. Dla nowych klientów oferujemy bezpłatny audyt istniejących kampanii Google Ads z konkretnymi rekomendacjami optymalizacyjnymi i szacunkowym potencjałem wzrostu przy optymalnej konfiguracji kampanii reklamowych w Google. Niezależnie od tego, czy dopiero zaczynasz przygodę z reklamą online, czy szukasz agencji, która zoptymalizuje istniejące kampanie Google Ads i zwiększy ich rentowność — skontaktuj się z naszym zespołem specjalistów SEM.
+              Proces rozpoczynamy od bezpłatnej konsultacji i analizy potencjału reklamowego — badamy konkurencję, wolumeny wyszukiwań i szacujemy budżet. Następnie konfigurujemy konto Google Ads, implementujemy śledzenie konwersji (Google Tag Manager, GA4) i uruchamiamy kampanię testową. Po zebraniu pierwszych danych optymalizujemy kampanię pod realne wyniki — eliminujemy nieefektywne frazy, testujemy nowe teksty reklam i dostosowujemy stawki. Klient otrzymuje pełny dostęp do konta Google Ads i comiesięczny raport z analizą wyników. Naszym celem jest nie tylko generowanie kliknięć, ale przede wszystkim dostarczanie konwersji — leadów, sprzedaży i zapytań ofertowych, które bezpośrednio przekładają się na przychód firmy. Każda kampania jest prowadzona z myślą o maksymalizacji zwrotu z inwestycji reklamowej przy jednoczesnym utrzymaniu optymalnego kosztu pozyskania klienta. Stale testujemy nowe formaty reklam, strategie licytacji i grupy odbiorców. Nasza przewaga to połączenie wiedzy technicznej o platformie Google Ads z głębokim zrozumieniem biznesowych celów klienta — nie prowadzimy kampanii "na ślepo", lecz strategicznie, z jasno zdefiniowanymi KPI i regularnymi przeglądami wyników. Dla nowych klientów oferujemy bezpłatny audyt istniejących kampanii Google Ads z konkretnymi rekomendacjami optymalizacyjnymi i szacunkowym potencjałem wzrostu przy optymalnej konfiguracji kampanii reklamowych w Google. Niezależnie od tego, czy dopiero zaczynasz przygodę z reklamą online, czy szukasz agencji, która zoptymalizuje istniejące kampanie Google Ads i zwiększy ich rentowność — skontaktuj się z naszym zespołem specjalistów SEM.
             </p>
 
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">

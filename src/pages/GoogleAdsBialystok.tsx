@@ -12,11 +12,11 @@ function GoogleAdsBialystok() {
   const faqs = [
     {
       question: "Ile kosztują kampanie Google Ads w Białymstoku?",
-      answer: "Koszt kampanii Google Ads to głównie budżet kliknięć (CPC). W Białymstoku średnia cena za klik wynosi 1-5 PLN, w zależności od branży i konkurencji. Minimalna inwestycja to zwykle 500 PLN miesięcznie.",
+      answer: "Na koszt składają się dwie osobne pozycje: budżet reklamowy płacony bezpośrednio Google (koszt kliknięć ustalany w aukcji, zależny od branży i konkurencji) oraz wynagrodzenie za obsługę kampanii. Wycenę obsługi przygotowujemy po rozmowie o zakresie: liczbie kampanii, typach reklam i sposobie raportowania.",
     },
     {
       question: "Jak szybko dobrze pozycjonuje się kampania Google Ads?",
-      answer: "Pierwsze rezultaty widać w ciągu kilku godzin. Jednak pełną optymalizację kampania osiąga po 2-4 tygodniach zbierania danych i testowania różnych słów kluczowych.",
+      answer: "Reklamy mogą zacząć się wyświetlać krótko po zatwierdzeniu przez Google, ale optymalizacja wymaga zebrania danych i testowania słów kluczowych. Jak długo to trwa, zależy od budżetu, branży i liczby konwersji — nie obiecujemy sztywnych terminów efektów.",
     },
     {
       question: "Jaka jest różnica między Google Ads a Display Network?",
@@ -24,7 +24,7 @@ function GoogleAdsBialystok() {
     },
     {
       question: "Czy mogę zwiększyć budżet kampanii w środku miesiąca?",
-      answer: "Oczywiście. Budżet można zmienić w każdej chwili w Google Ads. Poradczę Ci optymalną strategię zwiększania budżetu bez marnowania pieniędzy.",
+      answer: "Oczywiście. Budżet można zmienić w każdej chwili w Google Ads. Doradzimy, jak zwiększać budżet stopniowo, żeby nie tracić kontroli nad kosztem konwersji.",
     },
     {
       question: "Jakie słowa kluczowe wybrać dla firmy w Białymstoku?",
@@ -32,7 +32,7 @@ function GoogleAdsBialystok() {
     },
     {
       question: "Czy Quality Score wpływa na koszt kampanii Google Ads?",
-      answer: "Tak, Quality Score znacznie wpływa na CPC. Wyższy Quality Score = niższy koszt kliknięcia. Optymalizujemy Landing Page, Ad Copy i słowa kluczowe dla maksymalnego Score.",
+      answer: "Tak, Quality Score znacznie wpływa na CPC. Wyższy Quality Score = niższy koszt kliknięcia. Optymalizujemy Landing Page, Ad Copy i słowa kluczowe, aby poprawić Quality Score.",
     },
     {
       question: "Ile reklam powinno być w jednej kampanii Google Ads?",
@@ -40,7 +40,7 @@ function GoogleAdsBialystok() {
     },
     {
       question: "Jak mierzyć sukces kampanii Google Ads?",
-      answer: "Mierzymy: ROAS (zwrot z inwestycji), CPA (koszt pozyskania klienta), konwersje, koszty kliknięcia. Dostarczamy cotygodniowe raporty ze wszystkimi metrykami.",
+      answer: "Mierzymy: ROAS (zwrot z inwestycji), CPA (koszt pozyskania klienta), konwersje, koszty kliknięcia. Raportujemy wyniki w ustalonym z Tobą rytmie.",
     },
   ];
 
@@ -98,11 +98,11 @@ function GoogleAdsBialystok() {
           <div className="max-w-3xl mx-auto">
             <h1 className="text-4xl font-bold mb-6">Google Ads Białystok</h1>
             <p className="text-lg text-gray-600 mb-8">
-              Profesjonalne kampanie Google Ads dla firm z Białegostoku. Dochodzimy do klientów, którzy aktywnie szukają Twoich produktów lub usług. Reklamy w wyszukiwarce Google i Display Network z targetowaniem lokalnym dla Białystoku.
+              Profesjonalne kampanie Google Ads dla firm z Białegostoku. Dochodzimy do klientów, którzy aktywnie szukają Twoich produktów lub usług. Reklamy w wyszukiwarce Google i Display Network z targetowaniem lokalnym dla Białegostoku. Pracujemy z Poznania, a firmy z Białegostoku obsługujemy zdalnie.
             </p>
             <div className="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8">
               <p className="text-blue-900">
-                <strong>Bezpłatna konsultacja:</strong> Dowiedz się, jak Google Ads może zwiększyć przychody Twojej firmy w Białymstoku.
+                <strong>Bezpłatna konsultacja:</strong> Sprawdź, czy i jak Google Ads może pomóc Twojej firmie w Białymstoku pozyskiwać klientów.
               </p>
             </div>
           </div>

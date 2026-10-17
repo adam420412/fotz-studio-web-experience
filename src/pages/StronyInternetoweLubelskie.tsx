@@ -163,10 +163,10 @@ export default function StronyInternetoweLubelskie() {
   ];
 
   const regionalStats = [
-    { value: "2.1M", label: "Mieszkańców w Lubelskiem" },
-    { value: "340k", label: "Ludzi w Lublinie" },
-    { value: "100k+", label: "Studentów na uczelniach" },
-    { value: "LSEZ", label: "Specjalna Strefa Ekonomiczna" },
+    { value: "Zdalnie", label: "Pracujemy z Poznania" },
+    { value: "Online", label: "Spotkania przez Zoom/Meet" },
+    { value: "Figma", label: "Projekt do komentowania" },
+    { value: "CMS", label: "Samodzielna edycja treści" },
   ];
 
   const faqItems = [
@@ -176,11 +176,11 @@ export default function StronyInternetoweLubelskie() {
     },
     {
       question: "Jak długo trwa stworzenie strony?",
-      answer: "Wizytówka: 2-3 tygodnie. Strona firmowa: 4-8 tygodni. Sklep: 8-12 tygodni. Czas zależy od złożoności i szybkości dostarczenia materiałów przez Ciebie. Pracujemy sprawnie, ale nie na szybkość - na jakość."
+      answer: "Czas realizacji zależy od liczby podstron, integracji i tego, jak szybko dostarczysz materiały. Prosta wizytówka powstaje szybciej niż strona firmowa czy sklep. Termin ustalamy w ofercie po poznaniu zakresu."
     },
     {
       question: "Czy pracujecie zdalnie z regionem lubelskim?",
-      answer: "Tak, całkowicie. Pracujemy przez Zoom, Figma, Slack. Nie potrzebujemy spotkań na żywo - wszystko się odbywa online. Czasem zapraszamy klientów z Lublina na kawe, żeby się poznać, ale to opcjonalne."
+      answer: "Tak. Pracujemy z Poznania, a firmy z województwa lubelskiego obsługujemy zdalnie — przez Zoom/Meet, Figmę i maila. Spotkania na żywo nie są potrzebne, cały projekt prowadzimy online."
     },
     {
       question: "Czy strona będzie zoptymalizowana pod SEO?",
@@ -188,11 +188,11 @@ export default function StronyInternetoweLubelskie() {
     },
     {
       question: "Jakie technologie używacie?",
-      answer: "Koszt ustalamy po poznaniu zakresu: liczby podstron, treści, integracji i sposobu zarządzania. W ofercie określamy cenę, etapy, poprawki i termin; utrzymanie oraz działania marketingowe omawiamy osobno."
+      answer: "Technologię dobieramy do projektu: najczęściej WordPress, gdy zespół klienta ma sam edytować treści, albo lżejszą stronę statyczną, gdy liczy się szybkość i niski koszt utrzymania. Wybór opisujemy w ofercie."
     },
     {
       question: "Czy mogę mieć support po uruchomieniu?",
-      answer: "Koszt ustalamy po poznaniu zakresu: liczby podstron, treści, integracji i sposobu zarządzania. W ofercie określamy cenę, etapy, poprawki i termin; utrzymanie oraz działania marketingowe omawiamy osobno."
+      answer: "Tak. Zakres opieki po starcie (aktualizacje, kopie zapasowe, drobne zmiany treści) i sposób rozliczenia ustalamy w ofercie, osobno od samego wykonania strony."
     },
     {
       question: "Czy otrzymam dostępy do strony?",
@@ -245,8 +245,8 @@ export default function StronyInternetoweLubelskie() {
                 Tworzenie stron internetowych w Lubelskiem
               </h1>
               <p className="text-xl text-slate-300 mb-8 leading-relaxed">
-                Obsługujemy całe województwo lubelskie. 2.1 mln mieszkańców, 10 dużych miast, bogata ekosystem biznesowy.
-                Jesteśmy <strong>zdalnie</strong>, co oznacza szybkość i elastyczność. Pracujemy z firmami z Lublina, Zamościa, Chełma i całego regionu.
+                Pracujemy z Poznania, a firmy z województwa lubelskiego obsługujemy <strong>zdalnie</strong>.
+                Zapraszamy do współpracy firmy z Lublina, Zamościa, Chełma i całego regionu.
               </p>
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
@@ -275,7 +275,7 @@ export default function StronyInternetoweLubelskie() {
                 Obsługujemy całe województwo lubelskie
               </h2>
               <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
-                Pracujemy z firmami ze wszystkich dużych miast regionu, bez względu na to gdzie się znajdują
+                Współpraca odbywa się online, więc lokalizacja Twojej firmy w regionie nie ma znaczenia
               </p>
 
               <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-4">
@@ -296,12 +296,12 @@ export default function StronyInternetoweLubelskie() {
               <div className="mt-12 p-8 bg-blue-50 rounded-lg border border-blue-200">
                 <h3 className="font-bold text-slate-900 mb-4">Lublin - serce regionu</h3>
                 <p className="text-slate-700 mb-4">
-                  Lublin to metropolia wschodnia (340k mieszkańców) z bogatym potencjałem biznesowym. UMCS, KUL, UP i UM Lublin to
-                  100k+ studentów, którzy tworzą dynamiczny rynek. Specjalna Strefa Ekonomiczna przyciąga inwestycje.
+                  Lublin to największe miasto wschodniej Polski, z dużymi uczelniami (UMCS, KUL, UP, UM Lublin) i strefą ekonomiczną
+                  przyciągającą inwestycje.
                 </p>
                 <p className="text-slate-700">
-                  <strong>Ale co ważne:</strong> obsługujemy równie chętnie firmy z Zamościa (40k), Chełma (38k), Białej Podlaskiej (57k),
-                  Puław (44k) i mniejszych miast. Dla nas jako agencji sieciowej lokalizacja fizyczna nie ma znaczenia - liczy się jakość pracy.
+                  <strong>Ale co ważne:</strong> równie chętnie pracujemy z firmami z Zamościa, Chełma, Białej Podlaskiej,
+                  Puław i mniejszych miast. Pracujemy z Poznania i całą współpracę prowadzimy zdalnie.
                 </p>
               </div>
             </div>
@@ -324,7 +324,7 @@ export default function StronyInternetoweLubelskie() {
                     Wiele firm z regionu lubelskiego nadal nie ma profesjonalnej strony lub ma starą, nieoptymalizowaną.
                   </p>
                   <p className="text-slate-700 font-semibold text-blue-600">
-                    To oznacza: jeśli weźmiesz temat SEO/marketing digitalny poważnie, zostaniesz liderem w swojej branży w regionie.
+                    To oznacza: jeśli weźmiesz temat strony i marketingu internetowego poważnie, możesz wyróżnić się na tle konkurencji w regionie.
                   </p>
                 </div>
 
@@ -335,7 +335,7 @@ export default function StronyInternetoweLubelskie() {
                     Lubelszczyzna to brama do Europy Wschodniej. Bliskość Ukrainy, Białorusi, Litwy otwiera możliwości dla eksportu i B2B.
                   </p>
                   <p className="text-slate-700 font-semibold text-blue-600">
-                    Strona internetowa to Twoja szafka wystawowa dla ponad 2 mln potencjalnych klientów w regionie.
+                    Strona internetowa to Twoja wystawa dla klientów z regionu i spoza niego.
                   </p>
                 </div>
 
@@ -343,21 +343,21 @@ export default function StronyInternetoweLubelskie() {
                   <div className="text-3xl mb-4">🎓</div>
                   <h3 className="font-bold text-lg text-slate-900 mb-3">Talenty i bezrobocie</h3>
                   <p className="text-slate-700 mb-4">
-                    100k+ studentów na uniwersytetach w Lublinie. Dużo talentów szuka pracy lub staży. Strona to pierwszy krok do budowania zespołu.
+                    Lubelskie uczelnie kształcą wielu absolwentów, którzy szukają pracy lub staży. Strona to pierwszy krok do budowania zespołu.
                   </p>
                   <p className="text-slate-700 font-semibold text-blue-600">
-                    Job board na stronie przyciąga najlepszych kandydatów w Twoją branżę.
+                    Zakładka „Kariera” na stronie ułatwia kandydatom poznanie Twojej firmy.
                   </p>
                 </div>
 
                 <div className="bg-white p-8 rounded-lg border border-slate-200">
                   <div className="text-3xl mb-4">💪</div>
-                  <h3 className="font-bold text-lg text-slate-900 mb-3">Konkurencja jest słaba</h3>
+                  <h3 className="font-bold text-lg text-slate-900 mb-3">Konkurencja lokalna</h3>
                   <p className="text-slate-700 mb-4">
-                    W dużych miastach (Warszawa, Wrocław) pozycjonowanie kosztuje. W Lubelskiem - można dominować całą branżę za ułamek ceny.
+                    W wielu branżach i mniejszych miastach konkurencja w wynikach lokalnych bywa mniejsza niż w największych aglomeracjach.
                   </p>
                   <p className="text-slate-700 font-semibold text-blue-600">
-                    Strona + SEO to szansa na TOP 3 w Google dla Twojej usługi w regionie.
+                    Dobrze zoptymalizowana strona to podstawa widoczności w Google. Nie gwarantujemy konkretnej pozycji — zależy ona od konkurencji i dalszych działań SEO.
                   </p>
                 </div>
               </div>
@@ -373,7 +373,7 @@ export default function StronyInternetoweLubelskie() {
                 Branże, które obsługujemy w regionie
               </h2>
               <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
-                Doświadczenie z każdą z tych branż. Znamy ich problemy, potrzeby, konkurencję.
+                Przykładowe zastosowania stron w branżach typowych dla regionu.
               </p>
 
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

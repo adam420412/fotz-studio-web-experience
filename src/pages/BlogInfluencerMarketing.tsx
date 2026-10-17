@@ -10,11 +10,11 @@ import { ArticleSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/Str
 const faqItems = [
   {
     question: "Ile kosztuje współpraca z influencerem w Polsce?",
-    answer: "Ceny zależą od wielkości influencera: nano (1-10K) - 100-500 PLN za post, mikro (10-100K) - 500-3000 PLN, makro (100K-1M) - 3000-15000 PLN, mega (1M+) - 15000+ PLN. TikTok jest zazwyczaj droższy niż Instagram."
+    answer: "Stawki zależą od wielkości i zaangażowania społeczności twórcy, platformy i formatu (post, Story, TikTok), zakresu praw do treści oraz wyłączności. Nano i mikro influencerzy są zwykle znacznie tańsi niż makro i mega. Konkretną kwotę ustala się w rozmowie z twórcą lub jego managementem."
   },
   {
     question: "Jak znaleźć odpowiedniego influencera dla mojej marki?",
-    answer: "Użyj platform jak InfluTool, Reach a Blogger lub HypeAuditor. Sprawdź engagement rate (min. 3%), dopasowanie do wartości marki, historię współprac i autentyczność followersów."
+    answer: "Użyj platform jak InfluTool, Reach a Blogger lub HypeAuditor. Sprawdź engagement rate na tle podobnych kont, dopasowanie do wartości marki, historię współprac i autentyczność followersów."
   },
   {
     question: "Czym różnią się nano, mikro i makro influencerzy?",
@@ -125,29 +125,8 @@ export default function BlogInfluencerMarketing() {
             <div className="prose prose-lg dark:prose-invert max-w-none">
               
               <p className="lead">
-                Influencer marketing w Polsce to już dojrzały rynek wart ponad 500 milionów złotych rocznie. Współpraca z twórcami internetowymi może być niezwykle skuteczna, ale wymaga strategicznego podejścia i znajomości specyfiki polskiego rynku. Kluczowe jest odpowiednie <Link to="/social-media/obsluga" className="text-primary hover:underline">zarządzanie social media</Link> oraz integracja z <Link to="/kampanie-reklamowe" className="text-primary hover:underline">kampaniami reklamowymi</Link>. Szczególnie skuteczne są kampanie na <Link to="/performance-marketing/instagram-ads" className="text-primary hover:underline">Instagramie</Link> i <Link to="/performance-marketing/tiktok-ads" className="text-primary hover:underline">TikToku</Link>.
+                Influencer marketing w Polsce to już dojrzały rynek. Współpraca z twórcami internetowymi może być niezwykle skuteczna, ale wymaga strategicznego podejścia i znajomości specyfiki polskiego rynku. Kluczowe jest odpowiednie <Link to="/social-media/obsluga" className="text-primary hover:underline">zarządzanie social media</Link> oraz integracja z <Link to="/kampanie-reklamowe" className="text-primary hover:underline">kampaniami reklamowymi</Link>. Szczególnie skuteczne są kampanie na <Link to="/performance-marketing/instagram-ads" className="text-primary hover:underline">Instagramie</Link> i <Link to="/performance-marketing/tiktok-ads" className="text-primary hover:underline">TikToku</Link>.
               </p>
-
-              <div className="bg-card rounded-2xl p-8 my-8">
-                <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
-                  <TrendingUp className="w-6 h-6 text-primary" />
-                  Influencer marketing w liczbach (Polska 2025)
-                </h3>
-                <div className="grid md:grid-cols-3 gap-6">
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-primary">500M+</div>
-                    <div className="text-sm text-muted-foreground">PLN wartość rynku</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-primary">78%</div>
-                    <div className="text-sm text-muted-foreground">firm korzysta z influencerów</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-primary">11x</div>
-                    <div className="text-sm text-muted-foreground">wyższy ROI niż banery</div>
-                  </div>
-                </div>
-              </div>
 
               <h2>Rodzaje influencerów - kogo wybrać?</h2>
 
@@ -163,7 +142,7 @@ export default function BlogInfluencerMarketing() {
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-4 h-4 text-green-500 mt-0.5" />
-                      Najwyższy engagement (8-15%)
+                      Zwykle najwyższy engagement
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-4 h-4 text-green-500 mt-0.5" />
@@ -195,7 +174,7 @@ export default function BlogInfluencerMarketing() {
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-4 h-4 text-green-500 mt-0.5" />
-                      Engagement 3-8%
+                      Dobry engagement w niszy
                     </li>
                   </ul>
                 </div>
@@ -243,7 +222,7 @@ export default function BlogInfluencerMarketing() {
                     </li>
                     <li className="flex items-start gap-2">
                       <AlertCircle className="w-4 h-4 text-yellow-500 mt-0.5" />
-                      Niższy engagement (1-3%)
+                      Zwykle niższy engagement
                     </li>
                   </ul>
                 </div>
@@ -279,7 +258,7 @@ export default function BlogInfluencerMarketing() {
                   <div>
                     <p className="font-medium mb-2">Analiza ilościowa:</p>
                     <ul className="space-y-1 text-sm">
-                      <li>☑️ Engagement rate (min. 3%)</li>
+                      <li>☑️ Engagement rate na tle podobnych kont</li>
                       <li>☑️ Wzrost obserwujących</li>
                       <li>☑️ Autentyczność followersów</li>
                       <li>☑️ Demografia odbiorców</li>
@@ -290,45 +269,15 @@ export default function BlogInfluencerMarketing() {
 
               <h2>Jak negocjować współpracę?</h2>
 
-              <h3>Cennik orientacyjny (Polska 2025)</h3>
-              <div className="overflow-x-auto my-6">
-                <table className="w-full">
-                  <thead>
-                    <tr className="border-b border-border">
-                      <th className="text-left py-3 px-4">Typ influencera</th>
-                      <th className="text-left py-3 px-4">Post Instagram</th>
-                      <th className="text-left py-3 px-4">Story</th>
-                      <th className="text-left py-3 px-4">TikTok</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="border-b border-border/50">
-                      <td className="py-3 px-4">Nano (1-10K)</td>
-                      <td className="py-3 px-4">100-500 PLN</td>
-                      <td className="py-3 px-4">50-200 PLN</td>
-                      <td className="py-3 px-4">200-800 PLN</td>
-                    </tr>
-                    <tr className="border-b border-border/50">
-                      <td className="py-3 px-4">Mikro (10-100K)</td>
-                      <td className="py-3 px-4">500-3000 PLN</td>
-                      <td className="py-3 px-4">200-1000 PLN</td>
-                      <td className="py-3 px-4">800-4000 PLN</td>
-                    </tr>
-                    <tr className="border-b border-border/50">
-                      <td className="py-3 px-4">Makro (100K-1M)</td>
-                      <td className="py-3 px-4">3000-15000 PLN</td>
-                      <td className="py-3 px-4">1000-5000 PLN</td>
-                      <td className="py-3 px-4">4000-20000 PLN</td>
-                    </tr>
-                    <tr>
-                      <td className="py-3 px-4">Mega (1M+)</td>
-                      <td className="py-3 px-4">15000+ PLN</td>
-                      <td className="py-3 px-4">5000+ PLN</td>
-                      <td className="py-3 px-4">20000+ PLN</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+              <h3>Od czego zależą stawki influencerów?</h3>
+              <p>Stawki twórców bardzo się różnią i zmieniają się z roku na rok, dlatego nie podajemy cennika. Na wycenę współpracy wpływają przede wszystkim:</p>
+              <ul>
+                <li><strong>Wielkość i zaangażowanie społeczności</strong> - nano i mikro twórcy są zwykle tańsi niż makro i mega</li>
+                <li><strong>Format i platforma</strong> - post, Story, Reels czy TikTok wymagają innego nakładu pracy</li>
+                <li><strong>Prawa do treści</strong> - wykorzystanie materiału w reklamach płatnych podnosi stawkę</li>
+                <li><strong>Wyłączność branżowa</strong> - zakaz współpracy z konkurencją kosztuje dodatkowo</li>
+                <li><strong>Liczba publikacji i czas trwania</strong> - długoterminowe partnerstwa często dają lepsze warunki</li>
+              </ul>
 
               <h3>Modele rozliczeń</h3>
               <div className="grid md:grid-cols-3 gap-4 my-6">
@@ -428,10 +377,10 @@ export default function BlogInfluencerMarketing() {
               <h3>Obliczanie ROI</h3>
               <div className="bg-primary/10 rounded-xl p-6 my-6">
                 <p className="font-mono text-center text-lg">
-                  ROI = (Przychód z kampanii - Koszt kampanii) / Koszt kampanii × 100%
+                  ROI = (Przychód z kampanii - Koszt kampanii) / Koszt kampanii
                 </p>
                 <p className="text-center text-sm text-muted-foreground mt-4">
-                  Średni ROI influencer marketingu w Polsce: 520% (5,20 PLN na każdą zainwestowaną złotówkę)
+                  Wynik pomnożony przez 100 daje ROI w procentach. Do przychodu wliczaj tylko sprzedaż, którą da się przypisać kampanii (np. kody rabatowe, linki z UTM).
                 </p>
               </div>
 
@@ -507,10 +456,10 @@ export default function BlogInfluencerMarketing() {
             {/* SEO Article Section */}
             <div className="mt-12 pt-12 border-t border-border">
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Influencer marketing — skuteczny kanał dotarcia do zaangażowanych odbiorców</h2>
-              <p className="text-muted-foreground mb-6">Influencer marketing w Polsce to dynamicznie rosnący kanał reklamowy. Współpraca z odpowiednio dobranymi twórcami treści pozwala dotrzeć do zaangażowanych społeczności z autentycznym przekazem. Kluczem jest dobór influencera o wartościach zgodnych z marką i rzeczywistym zaangażowaniu (engagement rate &gt; 3%), a nie samej liczbie followersów.</p>
+              <p className="text-muted-foreground mb-6">Influencer marketing w Polsce to dynamicznie rosnący kanał reklamowy. Współpraca z odpowiednio dobranymi twórcami treści pozwala dotrzeć do zaangażowanych społeczności z autentycznym przekazem. Kluczem jest dobór influencera o wartościach zgodnych z marką i rzeczywistym zaangażowaniu odbiorców, a nie samej liczbie followersów.</p>
 
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Mikro i makro influencerzy — dobór ambasadorów i realizacja kampanii w Fotz Studio</h2>
-              <p className="text-muted-foreground mb-6">Fotz Studio realizuje kampanie influencer marketingowe dla marek z różnych branż. Pomagamy w doborze influencerów (mikro: 10-100k, makro: 100k+), negocjacji warunków współpracy, briefowaniu twórców i pomiarze wyników (zasięg, wyświetlenia, kliknięcia, sprzedaż). Mamy bazę zweryfikowanych twórców z różnych nisz.</p>
+              <p className="text-muted-foreground mb-6">Fotz Studio pomaga w doborze influencerów (mikro: 10-100k, makro: 100k+), negocjacji warunków współpracy, briefowaniu twórców i pomiarze wyników (zasięg, wyświetlenia, kliknięcia, sprzedaż). Każdego twórcę weryfikujemy przed współpracą (autentyczność obserwujących, dotychczasowe współprace).</p>
 
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Kampania z influencerami dla Twojej marki — skontaktuj się z Fotz Studio</h2>
               <p className="text-muted-foreground">Chcesz uruchomić kampanię influencer marketingową? Fotz Studio przeprowadzi Cię przez cały proces — od strategii i doboru twórców po realizację i raportowanie. Bezpłatna konsultacja dostępna dla firm planujących pierwsze kampanie z influencerami.</p>

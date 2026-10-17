@@ -10,7 +10,6 @@ import {
   TrendingUp,
   Award,
   Star,
-  Users,
   MapPin,
   CheckCircle2,
   ArrowRight,
@@ -20,7 +19,6 @@ import {
   BarChart3,
   Globe,
   Lightbulb,
-  Zap,
 } from "lucide-react";
 import {
   Accordion,
@@ -34,7 +32,7 @@ const services = [
   {
     icon: TrendingUp,
     title: "SEO Lokalne",
-    description: "Pozycjonowanie w Koszalinie i okolicach Pomorza Srodkowego. Dominacja w lokalnych wynikach Google i Google Maps dla firm turystycznych i handlowych.",
+    description: "Pozycjonowanie w Koszalinie i okolicach Pomorza Srodkowego. Praca nad widocznością w lokalnych wynikach Google i Google Maps dla firm turystycznych i handlowych. Nie gwarantujemy konkretnej pozycji.",
   },
   {
     icon: Smartphone,
@@ -44,12 +42,12 @@ const services = [
   {
     icon: BarChart3,
     title: "Google Ads & Facebook Ads",
-    description: "Skuteczne kampanie reklamowe na Google i Meta. Targeting lokalny dla turystyki nadmorskiej - dochodzimy do turystow szukajacych ofert w Koszalinie.",
+    description: "Kampanie reklamowe na Google i Meta. Targetowanie lokalne dla turystyki nadmorskiej - docieramy do turystów szukających ofert w Koszalinie. Budżet reklamowy płacisz platformie osobno.",
   },
   {
     icon: Building2,
     title: "Tworzenie Stron Internetowych",
-    description: "Nowoczesne strony internetowe zoptymalizowane pod SEO i konwersje. Responsywne, szybkie, skuteczne dla hotelow, restauracji i usług turystycznych.",
+    description: "Nowoczesne strony internetowe zoptymalizowane pod SEO i konwersje. Responsywne i szybkie, dla hoteli, restauracji i usług turystycznych.",
   },
   {
     icon: Target,
@@ -66,7 +64,6 @@ const services = [
 const packages = [
   {
     name: "Start",
-    price: "od 1 499",
     description: "Pakiet dla malych firm i startupow",
     features: [
       "Audyt SEO lokalne Koszalin",
@@ -79,7 +76,6 @@ const packages = [
   },
   {
     name: "Biznes",
-    price: "od 3 999",
     description: "Kompleksowa obsluga marketingowa dla firm turystycznych",
     features: [
       "Pelne SEO lokalne Koszalin",
@@ -93,7 +89,6 @@ const packages = [
   },
   {
     name: "Premium",
-    price: "od 7 999",
     description: "Strategia marketingowa na miare",
     features: [
       "Zaawansowane SEO lokalne",
@@ -110,8 +105,8 @@ const packages = [
 
 const faqItems = [
   {
-    question: "Dlaczego warto wybrac agencje marketingowa w Koszalinie?",
-    answer: "Agencja marketingowa z Koszalina zna lokalny rynek Pomorza Srodkowego, rozumie konkurencje i specyfike biznesu turystycznego w regionie. Fotz Studio polacz profesjonalne uslugi z wiedza na temat preferencji turystow i mieszkancow Koszalina. Dla firm turystycznych, handlowych i uslugowych to idealne rozwiazanie - nie placisz za obcy zespol z duzego miasta, a dostajesz ekspertyz i zaangazowanie specjalisty znajacego rynek Koszalina.",
+    question: "Czy agencja spoza Koszalina może prowadzić marketing mojej firmy?",
+    answer: "Tak. Fotz Studio pracuje z Poznania, a firmy z Koszalina obsługujemy zdalnie — spotkania prowadzimy online, materiały i raporty wymieniamy elektronicznie. Na starcie poznajemy Twoją branżę, konkurencję i sezonowość regionu, a strategię dopasowujemy do Twoich klientów: turystów i mieszkańców.",
   },
   {
     question: "Jakie usługi oferuje agencja marketingowa dla Koszalina?",
@@ -119,7 +114,7 @@ const faqItems = [
   },
   {
     question: "Ile kosztuje kampania marketingowa dla firm z Koszalina?",
-    answer: "Ceny zaczynaja sie od 1 499 zl za pakiet Start. Oferujemy trzy glowne pakiety: Start dla startupow i malych firm, Biznes dla sredních przedsiebiorstw (od 3 999 zl) i Premium dla duzych kampanii (od 7 999 zl). Przygotowujemy takze wyceny indywidualne dostosowane do Twoich potrzeb i budżetu.",
+    answer: "Wycenę przygotowujemy po rozmowie o zakresie. Koszt zależy od liczby kanałów (SEO, Google Ads, Meta Ads, social media), ilości treści do przygotowania i częstotliwości raportowania. Budżet reklamowy płacony platformom (Google, Meta) jest zawsze osobno.",
   },
   {
     question: "Jak działa SEO lokalne dla firm z Koszalina?",
@@ -127,31 +122,13 @@ const faqItems = [
   },
   {
     question: "Jakie są wyzwania marketingowe dla Koszalina i turystyki nad morzem?",
-    answer: "Glowne wyzwania to sezonowość turystyki (szczyt w lipocu-sierpniu), wysoki CPL w sezonie letnim, konkurencja z duzych portali turystycznych, konieczneość budowania wizerunku poza sezonem. Marketing musi byc dual - dla turystow latem i dla mieszkancow przez caly rok. Fotz Studio zna specyfike Koszalina i Pomorza Srodkowego - rynek uslug nadmorskich, handel i turystyka to nasze specjalnosci.",
+    answer: "Glowne wyzwania to sezonowość turystyki (szczyt w lipocu-sierpniu), wysoki CPL w sezonie letnim, konkurencja z duzych portali turystycznych, konieczneość budowania wizerunku poza sezonem. Marketing musi byc dual - dla turystow latem i dla mieszkancow przez caly rok.",
   },
   {
     question: "Czy mogę anulowac wspolprace z agencja marketingowa?",
-    answer: "Tak, umowy mozna anulowac. Zwykle wymagamy 30-dniowego okresu wypowiedzenia. Najbardziej efektywne kampanie to jednak te dlugoteminowe - rekomendujemy minimum 3-6 miesiacy wspolpracy, aby zaobserwowac solidne rezultaty, szczegolnie dla firm turystycznych sezonowych.",
+    answer: "Tak, umowę można wypowiedzieć — okres wypowiedzenia ustalamy w umowie. Marketing, zwłaszcza SEO, wymaga jednak czasu, a firmy sezonowe potrzebują danych z więcej niż jednego okresu, dlatego rekomendujemy dłuższą współpracę. Nie obiecujemy efektów w sztywnym terminie.",
   },
 ];
-
-const stats = [
-  { value: 200, suffix: "+", label: "Zadowolonych klientow" },
-  { value: 15, suffix: "+", label: "Lat doswiadczenia" },
-  { value: 500, suffix: "%", label: "Sredni ROI" },
-  { value: 98, suffix: "%", label: "Retencja klientow" },
-];
-
-function StatCounter({ value, suffix, label }: { value: number; suffix: string; label: string }) {
-  return (
-    <div className="text-center">
-      <div className="text-4xl md:text-5xl font-bold text-primary">
-        {value}{suffix}
-      </div>
-      <div className="text-sm text-muted-foreground mt-2">{label}</div>
-    </div>
-  );
-}
 
 export default function AgencjaMarketingowaKoszalin() {
   return (
@@ -159,14 +136,14 @@ export default function AgencjaMarketingowaKoszalin() {
       <Layout>
         <SEOHead
           title="Agencja Marketingowa Koszalin - SEO, Google Ads, Social Media"
-          description="Agencja marketingowa w Koszalinie. Profesjonalne usługi SEO lokalne, Google Ads, Facebook Ads, zarządzanie social media i tworzenie stron dla firm turystycznych, handlowych i usługowych z Pomorza Środkowego."
+          description="Agencja marketingowa z Poznania dla firm z Koszalina — obsługa zdalna. Usługi SEO lokalne, Google Ads, Facebook Ads, zarządzanie social media i tworzenie stron dla firm turystycznych, handlowych i usługowych z Pomorza Środkowego."
           canonical="https://www.fotz-studio.pl/agencja-marketingowa/koszalin"
         keywords="agencja marketingowa koszalin, marketing internetowy koszalin, agencja reklamowa koszalin, seo koszalin"
         />
 
         <ServiceSchema
           name="Agencja Marketingowa Koszalin"
-          description="Profesjonalne uslugi marketingowe dla firm w Koszalinie: SEO lokalne, kampanie reklamowe, social media marketing, tworzenie stron internetowych. Specjalizacja w turystyce nadmorskiej."
+          description="Profesjonalne uslugi marketingowe dla firm w Koszalinie: SEO lokalne, kampanie reklamowe, social media marketing, tworzenie stron internetowych. Obsługa zdalna z Poznania."
           areaServed="Koszalin"
         />
         <BreadcrumbSchema items={[
@@ -185,14 +162,14 @@ export default function AgencjaMarketingowaKoszalin() {
             <div className="text-center max-w-4xl mx-auto">
               <Badge variant="outline" className="mb-6 text-primary border-primary/30">
                 <MapPin className="w-4 h-4 mr-2" />
-                Agencja marketingowa w Koszalinie
+                Marketing dla firm z Koszalina
               </Badge>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-foreground mb-6">
                 Agencja Marketingowa <br className="hidden md:block" />
                 <span className="text-primary">Koszalin</span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-                Fotz Studio to profesjonalna agencja marketingowa w Koszalinie. Pomagamy firmom turystycznym, handlowym i uslugom wzrostu online poprzez SEO lokalne, kampanie Google Ads, social media marketing i tworzenie stron internetowych.
+                Fotz Studio to agencja marketingowa z Poznania — firmy z Koszalina obsługujemy zdalnie. Pomagamy firmom turystycznym, handlowym i usługowym rozwijać się online poprzez SEO lokalne, kampanie Google Ads, social media marketing i tworzenie stron internetowych.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild size="lg" className="gap-2">
@@ -208,19 +185,6 @@ export default function AgencjaMarketingowaKoszalin() {
                   </a>
                 </Button>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Stats Section */}
-        <section className="py-16 bg-secondary/30">
-          <div className="container-wide">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              {stats.map((stat, index) => (
-                <div key={stat.label}>
-                  <StatCounter {...stat} />
-                </div>
-              ))}
             </div>
           </div>
         </section>
@@ -267,7 +231,7 @@ export default function AgencjaMarketingowaKoszalin() {
                 Dlaczego Fotz Studio?
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Poznajcie przyczyny, dla ktorych firmy z Koszalina wybieraja nas
+                Jak pracujemy z firmami z Koszalina i Pomorza Środkowego
               </p>
             </div>
 
@@ -275,23 +239,23 @@ export default function AgencjaMarketingowaKoszalin() {
               {[
                 {
                   icon: TrendingUp,
-                  title: "Doswiadczenie w marketingu turystycznym",
-                  desc: "Rozumiemy sezonowość turystyki nadmorskiej. Kampanie skalowane pod szczyty sezonu, content dostrojony pod turystow oraz mieszkancow Koszalina.",
+                  title: "Planowanie pod sezonowość",
+                  desc: "Uwzględniamy sezonowość turystyki nadmorskiej: kampanie planowane pod szczyty sezonu, treści dla turystów oraz mieszkańców Koszalina.",
                 },
                 {
                   icon: Award,
-                  title: "Specjaliści Pomorza Środkowego",
-                  desc: "Znamy specyfike regionu - turystyka nadmorska, handel, uslugi gastronomiczne. Dostosowujemy strategie do branzy i rynku lokalnego.",
+                  title: "Obsługa zdalna z Poznania",
+                  desc: "Pracujemy z Poznania, a z firmami z Koszalina współpracujemy zdalnie. Na starcie analizujemy branżę i lokalną konkurencję, a strategię dostosowujemy do rynku.",
                 },
                 {
                   icon: Star,
                   title: "Dedykowany ekspert projektu",
-                  desc: "Znajacy specyfike Koszalina, sezonowość turystyki nadmorskiej, konkurencje lokalna. Stały kontakt, nie rotacja juniorow.",
+                  desc: "Jedna osoba prowadząca Twój projekt i stały kontakt przez cały czas współpracy.",
                 },
                 {
                   icon: Globe,
                   title: "Strategia turystyki nad morzem",
-                  desc: "Koszalin to magnes turystyki - plaże, morze, przyrodnicze atrakcje. Znamy anglojęzyczne kampanie dla turystow zagranicznych i SEO dla turystyki.",
+                  desc: "Okolice Koszalina przyciągają turystów - plaże, morze, atrakcje przyrodnicze. Możemy przygotować kampanie i treści skierowane do turystów, także zagranicznych.",
                 },
               ].map((item, i) => (
                 <div
@@ -316,10 +280,10 @@ export default function AgencjaMarketingowaKoszalin() {
           <div className="container-wide">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
-                Pakiety i cenniki
+                Przykładowe zakresy współpracy
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Wybierz pakiet dostosowany do potrzeb Twojej firmy
+                Wycenę przygotowujemy po rozmowie o zakresie — zależy od liczby kanałów, ilości treści i częstotliwości raportowania. Budżet reklamowy płacony Google i Meta jest zawsze osobno.
               </p>
             </div>
 
@@ -349,17 +313,8 @@ export default function AgencjaMarketingowaKoszalin() {
                       {pkg.description}
                     </p>
 
-                    <div className="mb-6">
-                      <div className="text-3xl font-bold text-primary">
-                        {pkg.price}
-                        <span className="text-base text-muted-foreground ml-1">
-                          PLN/mies.
-                        </span>
-                      </div>
-                    </div>
-
                     <Button asChild className="w-full mb-8">
-                      <Link to="/kontakt">Wybieram ten pakiet</Link>
+                      <Link to="/kontakt">Zapytaj o wycenę</Link>
                     </Button>
 
                     <div className="space-y-3">
@@ -451,10 +406,10 @@ export default function AgencjaMarketingowaKoszalin() {
                 Agencja Marketingowa Koszalin - SEO Lokalne, Google Ads i Social Media
               </h2>
               <p className="text-muted-foreground mb-4">
-                Fotz Studio to profesjonalna agencja marketingowa obsługujaca firmy z Koszalina i Pomorza Srodkowego. Specjalizujemy sie w SEO lokalnym, kampaniach Google Ads, Facebook Ads i zarzadzaniu social media dla biznesu turystycznego, handlowego i uslugowego.
+                Fotz Studio to agencja marketingowa z Poznania. Firmy z Koszalina i Pomorza Środkowego obsługujemy zdalnie. Zajmujemy się SEO lokalnym, kampaniach Google Ads, Facebook Ads i zarzadzaniu social media dla biznesu turystycznego, handlowego i uslugowego.
               </p>
               <p className="text-muted-foreground mb-6">
-                Koszalin to centrum turystyki nadmorskiej Pomorza Srodkowego - co roku miliony turystow szuka noclegów, restauracji i atrakcji turystycznych w regionie. Dla firm turystycznych, hotelow i restauracji SEO lokalne to najskuteczniejszy sposób na znalezienie nowych klientow. Gdy ktos w Koszalinie lub z zewnatrz szuka Twojej uslugi, chce znalezc cos blisko plaży i w dobrym miejscu. My pomagamy firmom pojawiac sie wyzej w wynikach wyszukiwania dla zapa tan zawierajacych Koszalin.
+                Koszalin to centrum turystyki nadmorskiej Pomorza Srodkowego - wielu turystów szuka noclegów, restauracji i atrakcji turystycznych w regionie. Dla firm turystycznych, hotelow i restauracji SEO lokalne to jeden ze sposobów na dotarcie do nowych klientów. Gdy ktos w Koszalinie lub z zewnatrz szuka Twojej uslugi, chce znalezc cos blisko plaży i w dobrym miejscu. Pracujemy nad widocznością firm w wynikach wyszukiwania dla zapytań zawierających Koszalin — bez gwarancji konkretnej pozycji.
               </p>
 
               <h2 className="text-2xl font-heading font-bold mb-6">
@@ -471,7 +426,7 @@ export default function AgencjaMarketingowaKoszalin() {
                 Social Media Marketing dla Firm z Koszalina
               </h2>
               <p className="text-muted-foreground mb-4">
-                Zarzadzanie social media to zdecydowanie najskuteczniejszy sposob na budowanie relacji z klientami i turystami. Facebook i Instagram pozwalaja Ci na bezposrednie dotarcie do osób z Koszalina i turystow, pokazanie Twojej osobowosci biznesu i zbudowanie lojalnosci.
+                Zarządzanie social media to dobry sposób na budowanie relacji z klientami i turystami. Facebook i Instagram pozwalaja Ci na bezposrednie dotarcie do osób z Koszalina i turystow, pokazanie Twojej osobowosci biznesu i zbudowanie lojalnosci.
               </p>
               <p className="text-muted-foreground mb-6">
                 Zajmujemy sie tworzeniem postow, zarzadzaniem komentarzami, respondowaniem na wiadomosci i tworzeniem kampanii promocyjnych na Facebooku i Instagramie. Wszystko dostosowane do specyfiki Twojej branzy turystycznej i celu biznesowego.
@@ -481,10 +436,10 @@ export default function AgencjaMarketingowaKoszalin() {
                 Kampanie Google Ads i Facebook Ads dla Koszalina
               </h2>
               <p className="text-muted-foreground mb-4">
-                Google Ads i Facebook Ads to platne kampanie reklamowe, które pozwalaja szybko dotrzec do nowych klientow i turystow. W Google Ads pojawaiasz sie na szczycie wynikow wyszukiwania dla wybranych slow kluczowych. Na Facebooku i Instagramie mozesz pokazywac reklamy do uzytkownikow spelniajacych konkretne kryteria (wiek, płec, zainteresowania, lokalizacja).
+                Google Ads i Facebook Ads to platne kampanie reklamowe, które pozwalaja szybko dotrzec do nowych klientow i turystow. W Google Ads reklama może wyświetlać się nad wynikami wyszukiwania dla wybranych słów kluczowych. Na Facebooku i Instagramie mozesz pokazywac reklamy do uzytkownikow spelniajacych konkretne kryteria (wiek, płec, zainteresowania, lokalizacja).
               </p>
               <p className="text-muted-foreground mb-6">
-                Dla firm turystycznych z Koszalina kampanie lokalnie ukierunkowane na mieszkancow Koszalina oraz turystow z Polski i zagranicy daja swietne rezultaty. Mozemy optymalizowac kampanie pod wzgledem geografii i sezonowosci - wiekszy budzet w sezonie (lipiec-sierpien) i mniejszy w off-sezonie.
+                Dla firm turystycznych z Koszalina kampanie lokalnie ukierunkowane na mieszkancow Koszalina oraz turystów z Polski i zagranicy pozwalają dopasować przekaz do odbiorców. Budżet reklamowy płacisz platformom osobno. Mozemy optymalizowac kampanie pod wzgledem geografii i sezonowosci - wiekszy budzet w sezonie (lipiec-sierpien) i mniejszy w off-sezonie.
               </p>
 
               <h2 className="text-2xl font-heading font-bold mb-6">
@@ -501,10 +456,10 @@ export default function AgencjaMarketingowaKoszalin() {
                 Obsluga Klientow z Koszalina i Pomorza Srodkowego
               </h2>
               <p className="text-muted-foreground mb-4">
-                Fotz Studio pracuje z firmami z Koszalina, ale takze z Slupska, Bytowa, Mysliborza i całego Pomorza Srodkowego. Dobrze znamy lokalny rynek turystyki nadmorskiej, konkurencje i potrzeby biznesu w kazdym z tych miast. To pozwala nam na tworzenie strategii dedykowanych i skutecznych dla branzy turystycznej i handlu.
+                Fotz Studio pracuje z Poznania. Zdalnie możemy obsłużyć firmy z Koszalina, Słupska, Bytowa i całego Pomorza Środkowego. Przed startem analizujemy lokalny rynek, konkurencję i sezonowość, aby dopasować strategię do branży turystycznej i handlu.
               </p>
               <p className="text-muted-foreground mb-6">
-                Jezeli Twoja firma szuka profesjonalnej agencji marketingowej w Koszalinie, zapraszamy do kontaktu. Chętnie przeprowadzimy bezpłatną konsultacje i opowiemy o tym, jak mozemy pomoc Twojemu biznesowi wzrosnąć w sezonie i poza nim.
+                Jeżeli Twoja firma z Koszalina szuka agencji marketingowej, zapraszamy do kontaktu. Chętnie przeprowadzimy bezpłatną konsultacje i opowiemy o tym, jak mozemy pomoc Twojemu biznesowi wzrosnąć w sezonie i poza nim.
               </p>
 
               <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">

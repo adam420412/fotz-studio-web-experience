@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
-import { useCountUp } from "@/hooks/useCountUp";
 import { OtherIndustries } from "@/components/sections/OtherIndustries";
 import { GalleryImage } from "@/components/GalleryImage";
 import apartamentyImg from "@/assets/portfolio/apartamenty-chorwacja-web.webp";
@@ -70,9 +69,9 @@ const customSolutions = [
 ];
 
 const benefits = [
-  "Zwiększenie rezerwacji bezpośrednich o 150%",
+  "Strona i kampanie nastawione na rezerwacje bezpośrednie",
   "Wirtualne spacery 360° po obiektach",
-  "Kampanie sezonowe z wysokim ROI",
+  "Kampanie sezonowe planowane z wyprzedzeniem",
   "Integracja z systemami rezerwacyjnymi",
   "Profesjonalne zdjęcia i filmy promocyjne",
   "Zarządzanie reputacją online",
@@ -85,7 +84,7 @@ const faqItems = [
   },
   {
     question: "Ile kosztuje marketing dla hotelu?",
-    answer: "Podstawowa obsługa (strona + SEO + kampanie) zaczyna się od 4000 zł/miesiąc. Pełna obsługa z produkcją foto/video, wirtualnymi spacerami i kampaniami sezonowymi to 8000-20000 zł/miesiąc.",
+    answer: "Wycenę przygotowujemy po rozmowie o zakresie. Zależy od tego, czy potrzebujesz strony z rezerwacjami, SEO, kampanii sezonowych, produkcji foto i wideo czy stałej obsługi social media. Budżet reklamowy płacony platformom (Google, Meta) jest zawsze osobno.",
   },
   {
     question: "Czy robicie wirtualne spacery po hotelach?",
@@ -180,7 +179,7 @@ const MarketingTurystyka = () => {
             </div>
           </motion.div>
 
-          {/* Stats */}
+          {/* Highlights */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -188,21 +187,18 @@ const MarketingTurystyka = () => {
             className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16"
           >
             {[
-              { value: 150, suffix: "%", label: "wzrost rezerwacji bezpośrednich" },
-              { value: 40, suffix: "+", label: "obsłużonych obiektów" },
-              { value: 100, suffix: "+", label: "wirtualnych spacerów" },
-              { value: 5, suffix: "x", label: "ROI kampanii sezonowych" },
-            ].map((stat, index) => {
-              const { ref, displayValue } = useCountUp({ end: stat.value, suffix: stat.suffix });
-              return (
-                <div key={index} ref={ref} className="text-center p-6 rounded-2xl bg-card border border-border/30">
-                  <div className="text-3xl md:text-4xl font-heading font-bold text-gradient-premium">
-                    {displayValue}
-                  </div>
-                  <p className="text-foreground/60 text-sm mt-2">{stat.label}</p>
+              { title: "Strony z rezerwacją", label: "dla hoteli i biur podróży" },
+              { title: "Foto i wideo", label: "własna produkcja w Poznaniu" },
+              { title: "Ujęcia z drona", label: "operator z uprawnieniami UAVO" },
+              { title: "Kampanie sezonowe", label: "Google Ads i Meta Ads" },
+            ].map((item, index) => (
+              <div key={index} className="text-center p-6 rounded-2xl bg-card border border-border/30">
+                <div className="text-lg md:text-xl font-heading font-bold text-gradient-premium">
+                  {item.title}
                 </div>
-              );
-            })}
+                <p className="text-foreground/60 text-sm mt-2">{item.label}</p>
+              </div>
+            ))}
           </motion.div>
         </div>
       </section>
@@ -357,10 +353,10 @@ const MarketingTurystyka = () => {
             className="text-center max-w-3xl mx-auto mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-              Nasze <span className="text-gradient-premium">realizacje turystyczne</span>
+              Nasze <span className="text-gradient-premium">realizacje eventowe</span>
             </h2>
             <p className="text-foreground/70">
-              Eventy, koncerty i doświadczenia, które promowaliśmy dla branży turystycznej i eventowej
+              Zdjęcia i ujęcia z drona z eventów i koncertów, m.in. na Enea Stadionie w Poznaniu
             </p>
           </motion.div>
 

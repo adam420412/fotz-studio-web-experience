@@ -43,14 +43,14 @@ const StronyInternetowePlock = () => {
   ];
 
   const caseStudies = [
-    { title: "Apartamenty Chorwacja", category: "Strona rezerwacyjna", result: "+180% rezerwacji online", link: "/realizacje/apartamenty-chorwacja", image: apartamentyImg },
+    { title: "Apartamenty Chorwacja", category: "Strona rezerwacyjna", result: "Strona z rezerwacjami online", link: "/realizacje/apartamenty-chorwacja", image: apartamentyImg },
     { title: "Victory Cars", category: "Strona motoryzacyjna", result: "Nowoczesny design premium", link: "/realizacje/victory-cars", image: victoryCarsImg },
-    { title: "Cute Dumpling", category: "Strona gastronomiczna", result: "+250% ruchu organicznego", link: "/realizacje/cute-dumpling", image: cuteDumplingImg },
+    { title: "Cute Dumpling", category: "Strona gastronomiczna", result: "Strona lokalu gastronomicznego", link: "/realizacje/cute-dumpling", image: cuteDumplingImg },
   ];
 
   const faqItems = [
     { question: "Ile kosztuje strona internetowa w Płocku?", answer: "Koszt zależy od zakresu, treści i integracji. Prześlij brief, aby otrzymać indywidualną ofertę z harmonogramem i rozpisanymi kosztami." },
-    { question: "Jak długo trwa tworzenie strony www?", answer: "Czas realizacji zależy od złożoności projektu. Prosta strona wizytówkowa to 2-3 tygodnie, rozbudowana strona firmowa 4-6 tygodni, sklep internetowy 6-10 tygodni." },
+    { question: "Jak długo trwa tworzenie strony www?", answer: "Czas realizacji zależy od złożoności projektu, liczby podstron, integracji i tego, jak szybko powstają treści. Orientacyjny harmonogram zapisujemy w indywidualnej ofercie po rozmowie o zakresie." },
     { question: "Czy oferujecie wsparcie po uruchomieniu strony?", answer: "Tak, zapewniamy wsparcie techniczne po uruchomieniu. Oferujemy pakiety serwisowe obejmujące aktualizacje, kopie zapasowe i pomoc techniczną." },
     { question: "Czy strona będzie responsywna?", answer: "Wszystkie nasze strony są w pełni responsywne i dostosowane do urządzeń mobilnych. Projektujemy w podejściu mobile-first." },
     { question: "Czy pomagacie w pozycjonowaniu strony?", answer: "Tak, każda strona jest zoptymalizowana pod SEO. Oferujemy również kompleksowe usługi pozycjonowania dla firm z Płocka." },
@@ -60,24 +60,24 @@ const StronyInternetowePlock = () => {
   const stats = [
     { value: "WWW", label: "Strony i sklepy", icon: Layers },
     { value: "UX", label: "Projekt dla odbiorcy", icon: Star },
-    { value: "5 lat", label: "Doświadczenia", icon: Clock },
+    { value: "Plan", label: "Ustalony harmonogram", icon: Clock },
     { value: "Kontakt", label: "Uzgodniona opieka", icon: Headphones },
   ];
 
   const benefits = [
-    "Znajomość płockiego rynku",
+    "Zdalna współpraca z Poznania z firmami z Płocka",
     "Kompleksowa obsługa od projektu po wdrożenie",
     "SEO w standardzie każdej strony",
     "Responsywny design mobile-first",
     "Wsparcie techniczne po uruchomieniu",
-    "Konkurencyjne ceny bez ukrytych kosztów"
+    "Wycena po rozmowie o zakresie, bez ukrytych kosztów"
   ];
 
   const introContent = {
     title: "Tworzenie stron www dla firm z Płocka",
     paragraphs: [
       "Szukasz profesjonalnego partnera do stworzenia strony internetowej dla Twojej firmy w Płocku? Nasza agencja specjalizuje się w projektowaniu i wdrażaniu nowoczesnych stron www.",
-      "Twoja strona internetowa będzie nie tylko estetyczna, ale również efektywna w pozyskiwaniu klientów.",
+      "Pracujemy z Poznania, a firmy z Płocka obsługujemy zdalnie — od briefu, przez projekt, po wdrożenie strony.",
       "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych.",
       "Płock to centrum polskiego przemysłu petrochemicznego i siedziba PKN Orlen. Lokalne firmy – dostawcy, usługodawcy i handlowcy – potrzebują profesjonalnych stron internetowych, by wyróżnić się w tym specjalistycznym środowisku biznesowym."
     ],
@@ -124,7 +124,7 @@ const StronyInternetowePlock = () => {
               </motion.h1>
               
               <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.4 }} className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed">
-                <strong className="text-foreground">Profesjonalna strona internetowa to podstawa sukcesu każdej firmy.</strong>{" "}Tworzymy strony www, które wyglądają świetnie i skutecznie pozyskują klientów dla płockich firm.
+                <strong className="text-foreground">Profesjonalna strona internetowa to podstawa sukcesu każdej firmy.</strong>{" "}Tworzymy strony www, które dobrze wyglądają i są projektowane z myślą o pozyskiwaniu klientów — dla płockich firm.
               </motion.p>
 
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.5 }} className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -197,7 +197,7 @@ const StronyInternetowePlock = () => {
           </div>
         </section>
 
-        <CityPricingCards pricing={pricing} title="Cennik stron internetowych" subtitle="Transparentne ceny bez ukrytych kosztów" cityName="Płock" />
+        <CityPricingCards pricing={pricing} title="Zakres i wycena stron internetowych" subtitle="Wycena po rozmowie o zakresie" cityName="Płock" />
 
         <CityLinksSection currentCity="Płock" />
 
@@ -236,17 +236,17 @@ const StronyInternetowePlock = () => {
               Strony internetowe Płock — tworzenie stron www dla firm z regionu
             </h2>
             <p className="text-muted-foreground mb-4">
-              Płock to miasto nafty i chemii — siedziba PKN Orlen, jednej z największych firm w Polsce, i centrum branży petrochemicznej w Polsce Centralnej. Rynek lokalny jest powiązany z sektorem energetycznym, ale też dynamicznie się dywersyfikuje. Usługi, handel i sektor MŚP rosną — i potrzebują profesjonalnych stron www by dotrzeć do klientów z Mazowsza i całej Polski.
+              Płock to miasto nafty i chemii — siedziba ORLEN i centrum branży petrochemicznej w Polsce Centralnej. Rynek lokalny jest powiązany z sektorem energetycznym, ale działają tu też firmy usługowe, handlowe i MŚP, które potrzebują profesjonalnych stron www, by dotrzeć do klientów z Mazowsza i całej Polski.
             </p>
             <p className="text-muted-foreground mb-6">
-              Obsługujemy firmy z Płocka i regionu — Sierpc, Gostynin, Kutno. Projekt graficzny w Figmie, wdrożenie w React lub WordPress, optymalizacja SEO. Termin: 3–5 tygodni, wycena bezpłatna w 24 godziny.
+              Pracujemy z Poznania, a firmy z Płocka i regionu — Sierpc, Gostynin, Kutno — obsługujemy zdalnie. Projekt graficzny w Figmie, wdrożenie w React lub WordPress, optymalizacja SEO. Termin ustalamy w indywidualnej ofercie, wycena jest bezpłatna.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
               Strony www dla firm z sektora energetycznego i B2B
             </h2>
             <p className="text-muted-foreground mb-4">
-              Dostawcy i kooperanci PKN Orlen potrzebują solidnych stron korporacyjnych z sekcją portfolio, certyfikatów i kontaktów dla partnerów instytucjonalnych. Tworzymy strony B2B, które budują wiarygodność i ułatwiają pozyskiwanie kontraktów w sektorze energetycznym i przemysłowym.
+              Dostawcy i kooperanci dużych firm przemysłowych potrzebują solidnych stron korporacyjnych z sekcją portfolio, certyfikatów i kontaktów dla partnerów instytucjonalnych. Tworzymy strony B2B, które budują wiarygodność i ułatwiają pozyskiwanie kontraktów w sektorze energetycznym i przemysłowym.
             </p>
             <p className="text-muted-foreground mb-6">
               Dla lokalnych firm usługowych projektujemy przystępne strony wizytówkowe z naciskiem na lokalne SEO. Każda strona jest zoptymalizowana pod frazy z geolokalizacją — „usługa + Płock" — i konfigurowana w Google Moja Firma.
@@ -256,10 +256,10 @@ const StronyInternetowePlock = () => {
               SEO lokalne dla firm z Płocka — Google Moja Firma i lokalna widoczność
             </h2>
             <p className="text-muted-foreground mb-4">
-              Lokalne frazy to najtańszy sposób na pozyskanie klientów z okolicy. Optymalizujemy strony pod frazy z Płocka i regionu, konfigurujemy profil Google Moja Firma i budujemy widoczność w mapach Google. Podwójna widoczność — organic i mapy — bez stałych kosztów reklamy.
+              Optymalizujemy strony pod frazy z Płocka i regionu, konfigurujemy profil Google Moja Firma i pracujemy nad widocznością w mapach Google. Nie gwarantujemy konkretnej pozycji — efekty zależą od branży, konkurencji i stanu strony.
             </p>
             <p className="text-muted-foreground">
-              Skontaktuj się z nami — bezpłatna wycena w 24 godziny. Strony internetowe dla firm z Płocka tworzymy z pasją i precyzją.
+              Skontaktuj się z nami — wycena jest bezpłatna. Strony internetowe dla firm z Płocka tworzymy z pasją i precyzją.
             </p>
           
                         <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">

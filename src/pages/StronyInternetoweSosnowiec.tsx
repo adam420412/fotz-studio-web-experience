@@ -43,14 +43,14 @@ const StronyInternetoweSosnowiec = () => {
   ];
 
   const caseStudies = [
-    { title: "Apartamenty Chorwacja", category: "Strona rezerwacyjna", result: "+180% rezerwacji online", link: "/realizacje/apartamenty-chorwacja", image: apartamentyImg },
+    { title: "Apartamenty Chorwacja", category: "Strona rezerwacyjna", result: "Strona z systemem rezerwacji", link: "/realizacje/apartamenty-chorwacja", image: apartamentyImg },
     { title: "Victory Cars", category: "Strona motoryzacyjna", result: "Nowoczesny design premium", link: "/realizacje/victory-cars", image: victoryCarsImg },
-    { title: "Cute Dumpling", category: "Strona gastronomiczna", result: "+250% ruchu organicznego", link: "/realizacje/cute-dumpling", image: cuteDumplingImg },
+    { title: "Cute Dumpling", category: "Strona gastronomiczna", result: "Strona dla lokalu gastronomicznego", link: "/realizacje/cute-dumpling", image: cuteDumplingImg },
   ];
 
   const faqItems = [
     { question: "Ile kosztuje strona internetowa w Sosnowcu?", answer: "Koszt zależy od zakresu, treści i integracji. Prześlij brief, aby otrzymać indywidualną ofertę z harmonogramem i rozpisanymi kosztami." },
-    { question: "Jak długo trwa tworzenie strony www?", answer: "Czas realizacji zależy od złożoności projektu. Prosta strona wizytówkowa to 2-3 tygodnie, rozbudowana strona firmowa 4-6 tygodni, sklep internetowy 6-10 tygodni." },
+    { question: "Jak długo trwa tworzenie strony www?", answer: "Czas realizacji zależy od złożoności projektu, liczby podstron i integracji oraz od tego, jak szybko dostarczysz treści i materiały. Harmonogram ustalamy przed startem prac i zapisujemy w ofercie." },
     { question: "Czy oferujecie wsparcie po uruchomieniu strony?", answer: "Tak, zapewniamy wsparcie techniczne po uruchomieniu. Oferujemy pakiety serwisowe obejmujące aktualizacje, kopie zapasowe i pomoc techniczną." },
     { question: "Czy strona będzie responsywna?", answer: "Wszystkie nasze strony są w pełni responsywne i dostosowane do urządzeń mobilnych. Projektujemy w podejściu mobile-first." },
     { question: "Czy pomagacie w pozycjonowaniu strony?", answer: "Tak, każda strona jest zoptymalizowana pod SEO. Oferujemy również kompleksowe usługi pozycjonowania dla firm z Sosnowca." },
@@ -60,17 +60,17 @@ const StronyInternetoweSosnowiec = () => {
   const stats = [
     { value: "WWW", label: "Strony i sklepy", icon: Layers },
     { value: "UX", label: "Projekt dla odbiorcy", icon: Star },
-    { value: "5 lat", label: "Doświadczenia", icon: Clock },
+    { value: "Zdalnie", label: "Pracujemy z Poznania", icon: Clock },
     { value: "Kontakt", label: "Uzgodniona opieka", icon: Headphones },
   ];
 
   const benefits = [
-    "Znajomość sosnowieckiego rynku",
+    "Zdalna współpraca z firmami z Sosnowca",
     "Kompleksowa obsługa od projektu po wdrożenie",
     "SEO w standardzie każdej strony",
     "Responsywny design mobile-first",
     "Wsparcie techniczne po uruchomieniu",
-    "Konkurencyjne ceny bez ukrytych kosztów"
+    "Wycena po rozmowie o zakresie, bez ukrytych kosztów"
   ];
 
   const introContent = {
@@ -79,7 +79,7 @@ const StronyInternetoweSosnowiec = () => {
       "Szukasz profesjonalnego partnera do stworzenia strony internetowej dla Twojej firmy w Sosnowcu? Nasza agencja specjalizuje się w projektowaniu i wdrażaniu nowoczesnych stron www.",
       "Twoja strona internetowa będzie nie tylko estetyczna, ale również efektywna w pozyskiwaniu klientów.",
       "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych.",
-      "Sosnowiec leży w sercu Górnośląskiego Obszaru Metropolitalnego, otoczonego przez miliony potencjalnych klientów. Lokalne firmy handlowe i usługowe mogą znacznie powiększyć zasięg dzięki profesjonalnej obecności online."
+      "Sosnowiec leży w sercu Górnośląsko-Zagłębiowskiej Metropolii, jednego z największych obszarów miejskich w Polsce. Lokalne firmy handlowe i usługowe mogą znacznie powiększyć zasięg dzięki profesjonalnej obecności online."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };
@@ -197,7 +197,7 @@ const StronyInternetoweSosnowiec = () => {
           </div>
         </section>
 
-        <CityPricingCards pricing={pricing} title="Cennik stron internetowych" subtitle="Transparentne ceny bez ukrytych kosztów" cityName="Sosnowiec" />
+        <CityPricingCards pricing={pricing} title="Cennik stron internetowych" subtitle="Wycenę przygotowujemy po rozmowie o zakresie" cityName="Sosnowiec" />
 
         <CityLinksSection currentCity="Sosnowiec" />
 
@@ -239,7 +239,7 @@ const StronyInternetoweSosnowiec = () => {
               Sosnowiec to miasto w sercu Górnośląskiego Okręgu Przemysłowego — aglomeracji, która z ciężkiego przemysłu stopniowo przechodzi w kierunku usług, handlu i technologii. Firmy z Sosnowca coraz aktywniej budują obecność online, bo klienci — zarówno z Sosnowca, jak z całego GOP — szukają usługodawców w Google, zanim zdecydują się na kontakt.
             </p>
             <p className="text-muted-foreground mb-6">
-              Obsługujemy firmy z Sosnowca i aglomeracji śląskiej — Będzin, Dąbrowa Górnicza, Czeladź. Zdalny model współpracy, projekt w Figmie, wdrożenie online. Termin: 3–5 tygodni. Bezpłatna wycena w 24 godziny.
+              Pracujemy z Poznania, a firmy z Sosnowca i aglomeracji śląskiej — Będzin, Dąbrowa Górnicza, Czeladź — obsługujemy zdalnie: projekt w Figmie, wdrożenie online. Harmonogram i wycenę przygotowujemy po rozmowie o zakresie.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
@@ -259,7 +259,7 @@ const StronyInternetoweSosnowiec = () => {
               Lokalna optymalizacja SEO dla firm z Sosnowca — frazy z geolokalizacją, konfiguracja Google Moja Firma i widoczność w Google Maps. Dla firm działających w całej aglomeracji rozszerzamy zasięg SEO na Katowice, Będzin i Dąbrowę Górniczą.
             </p>
             <p className="text-muted-foreground">
-              Skontaktuj się z nami — bezpłatna wycena, projekt w 3–5 tygodni. Strony internetowe dla firm z Sosnowca i Zagłębia na najwyższym poziomie.
+              Skontaktuj się z nami — bezpłatna wycena i harmonogram dopasowany do zakresu projektu. Strony internetowe dla firm z Sosnowca i Zagłębia, realizowane zdalnie.
             </p>
           
                         <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">

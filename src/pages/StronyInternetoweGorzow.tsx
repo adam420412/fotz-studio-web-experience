@@ -20,10 +20,7 @@ import {
   ArrowRight,
   Server,
   FileCode,
-  Sparkles,
-  BarChart3,
-  Users,
-  Building2
+  Sparkles
 } from "lucide-react";
 import {
   Accordion,
@@ -57,7 +54,7 @@ const StronyInternetoweGorzow = () => {
     { icon: Smartphone, title: "Responsywność", desc: "Tworzymy responsywne strony internetowe działające na wszystkich urządzeniach." },
     { icon: Shield, title: "Bezpieczeństwo", desc: "Certyfikat SSL, kopie zapasowe i regularne aktualizacje bezpieczeństwa." },
     { icon: Headphones, title: "Wsparcie techniczne", desc: "Kompleksowa obsługa stron internetowych po uruchomieniu — zawsze pod ręką." },
-    { icon: Sparkles, title: "Lokalna znajomość rynku", desc: "Gorzów Wielkopolski to dynamiczne miasto portowe w sercu Lubuskiego — prężne centrum handlowe, turystyczne i technologiczne. Tworzymy strony skrojone pod potrzeby lokalnych firm, start-upów i marek premium." },
+    { icon: Sparkles, title: "Współpraca zdalna", desc: "Pracujemy z Poznania, a firmy z Gorzowa Wielkopolskiego obsługujemy zdalnie — rozmowy, prezentacje projektu i akceptacje prowadzimy online. Stronę dopasowujemy do branży i klientów Twojej firmy." },
   ];
 
   const pricing = [
@@ -77,7 +74,7 @@ const StronyInternetoweGorzow = () => {
     {
       title: "Apartamenty Chorwacja",
       category: "Strona rezerwacyjna",
-      result: "+180% rezerwacji online",
+      result: "Strona z systemem rezerwacji online",
       link: "/realizacje/apartamenty-chorwacja",
       image: apartamentyImg
     },
@@ -91,7 +88,7 @@ const StronyInternetoweGorzow = () => {
     {
       title: "Cute Dumpling",
       category: "Strona gastronomiczna",
-      result: "+250% ruchu organicznego",
+      result: "Strona gastronomiczna z menu i SEO",
       link: "/realizacje/cute-dumpling",
       image: cuteDumplingImg
     },
@@ -120,7 +117,7 @@ const StronyInternetoweGorzow = () => {
     },
     {
       question: "Dlaczego warto wybrać tworzenie stron w Gorzowie Wielkopolskim z FOTZ Studio?",
-      answer: "Gorzów Wielkopolski to dynamiczny rynek nadmorski — turystyka, e-commerce, usługi premium. Znamy specyfikę lokalnego biznesu i tworzymy strony, które przyciągają właściwych klientów. Nasze portfolio obejmuje projekty z Lubuskiego i całej Polski."
+      answer: "Pracujemy z Poznania, a firmy z Gorzowa Wielkopolskiego obsługujemy zdalnie. Stronę projektujemy pod cele Twojej firmy — z SEO w standardzie, responsywnym projektem i wsparciem po uruchomieniu. Przykłady naszych prac znajdziesz w zakładce Realizacje."
     },
     {
       question: "Jakie rodzaje stron tworzycie dla firm z Lubuskiego?",
@@ -131,8 +128,8 @@ const StronyInternetoweGorzow = () => {
       answer: "Czas realizacji zależy od skomplikowania: prosta strona może być gotowa w kilka tygodni, bardziej rozbudowane projekty wymagają kilku miesięcy. Etapy obejmują projektowanie, testy, poprawki oraz finalną realizację i wdrożenie kodu na serwerze."
     },
     {
-      question: "Czy zajmujecie się pozycjonowaniem stron w Gorzowie Wielkopolskim i Trójmieście?",
-      answer: "Tak — każda strona wychodzi z naszej pracowni z podstawową optymalizacją SEO. Oferujemy też pełne usługi pozycjonowania lokalnego dla firm z Gorzowa Wielkopolskiego, Zielonej Góry i Szczecina, zwiększając widoczność w lokalnych wynikach Google."
+      question: "Czy zajmujecie się pozycjonowaniem stron w Gorzowie Wielkopolskim?",
+      answer: "Tak — każda strona wychodzi z naszej pracowni z podstawową optymalizacją SEO. Oferujemy też pozycjonowanie lokalne dla firm z Gorzowa Wielkopolskiego i regionu, które pomaga budować widoczność w lokalnych wynikach Google. Nie gwarantujemy konkretnej pozycji — wyniki wyszukiwania zależą od Google i konkurencji."
     },
   ];
 
@@ -214,35 +211,6 @@ const StronyInternetoweGorzow = () => {
           </div>
         </section>
 
-        {/* Gorzów Wielkopolski Stats Section */}
-        <section className="py-12 bg-card/40 border-y border-border/30">
-          <div className="container mx-auto px-4">
-            <FadeInView>
-              <div className="text-center mb-8">
-                <span className="text-primary text-sm font-medium uppercase tracking-wider mb-2 block">Gorzów Wielkopolski w liczbach</span>
-                <h2 className="text-2xl sm:text-3xl font-heading font-bold mb-2">Dlaczego warto inwestować w stronę www w Gorzowie Wielkopolskim?</h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto text-sm sm:text-base">
-                  Gorzów Wielkopolski to jedno z najbardziej dynamicznych miast w Polsce — centrum Lubuskiego z silnym rynkiem turystycznym, usługowym i e-commerce.
-                </p>
-              </div>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-                {[
-                  { icon: Users, value: "250 tys.", label: "mieszkańców Gorzowie Wielkopolskim" },
-                  { icon: Building2, value: "35 tys.", label: "aktywnych firm w Gorzowie Wielkopolskim" },
-                  { icon: BarChart3, value: "Top 3", label: "miasto Lubuskiego" },
-                  { icon: Globe, value: "79%", label: "firm szuka klientów online" },
-                ].map((stat, i) => (
-                  <div key={i} className="text-center p-4 rounded-xl bg-background border border-border/40">
-                    <stat.icon className="w-8 h-8 text-primary mx-auto mb-2" />
-                    <div className="text-2xl font-bold text-primary">{stat.value}</div>
-                    <div className="text-xs text-muted-foreground mt-1">{stat.label}</div>
-                  </div>
-                ))}
-              </div>
-            </FadeInView>
-          </div>
-        </section>
-
         {/* Projektowanie stron Section */}
         <section className="py-12 md:py-16 border-b border-border/30">
           <div className="container mx-auto px-4">
@@ -259,7 +227,7 @@ const StronyInternetoweGorzow = () => {
                   <ul>
                     <li><strong>Analizę potrzeb klienta</strong>, aby dokładnie zrozumieć jego oczekiwania i cel biznesowy.</li>
                     <li><strong>Stworzenie projektu graficznego strony</strong>, który będzie wizualnie atrakcyjny i spójny z identyfikacją marki.</li>
-                    <li><strong>Wdrożenie i optymalizację SEO</strong>, aby strona działała sprawnie i pojawiała się wysoko w Google.</li>
+                    <li><strong>Wdrożenie i optymalizację SEO</strong>, aby strona działała sprawnie i była dobrze przygotowana pod wyszukiwarki.</li>
                   </ul>
                   <p>
                     Rozumiemy, że każda firma jest inna, dlatego do każdego projektu podchodzimy indywidualnie.
@@ -273,7 +241,7 @@ const StronyInternetoweGorzow = () => {
                     Indywidualne podejście do klienta pozwala nam tworzyć unikalne projekty graficzne stron www,
                     które odzwierciedlają charakter Twojej firmy i wyróżniają ją na tle konkurencji w Gorzowie Wielkopolskim, Zielonej Górze i Szczecinie.
                     <strong>Nowoczesna strona internetowa to inwestycja w rozwój Twojego biznesu</strong>,
-                    która przynosi wymierne korzyści w postaci zwiększonej liczby klientów.
+                    która ułatwia klientom poznanie oferty i kontakt z firmą.
                   </p>
 
                   <h3>Responsywne strony www</h3>
@@ -286,7 +254,7 @@ const StronyInternetoweGorzow = () => {
 
                   <h3>SEO dla firm z Gorzowa Wielkopolskiego</h3>
                   <p>
-                    Nasze profesjonalne tworzenie stron internetowych to gwarancja indywidualnego podejścia do klienta.
+                    Do każdego projektu strony internetowej podchodzimy indywidualnie.
                     Zapewniamy stały kontakt i wsparcie na każdym etapie projektu, od koncepcji po wdrożenie.
                     Rozumiemy, że <Link to="/seo/pozycjonowanie" className="text-primary hover:underline">pozycjonowanie stron w Gorzowie Wielkopolskim i Lubuskim</Link> jest
                     kluczowe dla lokalnego biznesu, dlatego każda strona wychodzi z wbudowaną optymalizacją SEO.
@@ -346,7 +314,7 @@ const StronyInternetoweGorzow = () => {
                     Zaczynamy od określenia potrzeb firmy i specyfiki branży — czy to turystyka,
                     moda, elektronika, czy produkty lokalne. Następnie projektujemy indywidualny projekt
                     i wdrażamy sklep ze wszystkimi integracjami płatności (PayU, Przelewy24, Stripe, BLIK).
-                    <strong>Profesjonalna strona internetowa to inwestycja, która przynosi wymierne korzyści.</strong>
+                    <strong>Profesjonalna strona internetowa to inwestycja w sprzedaż online Twojej firmy.</strong>
                   </p>
 
                   <h3>Optymalizacja e-commerce dla rynku Lubuskiego</h3>
@@ -478,7 +446,7 @@ const StronyInternetoweGorzow = () => {
                   Wybrane realizacje stron www
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Projekty, które przynosiły realne rezultaty naszym klientom.
+                  Przykładowe projekty stron z naszego portfolio.
                 </p>
               </div>
             </FadeInView>
@@ -609,10 +577,10 @@ const StronyInternetoweGorzow = () => {
               Strony internetowe Gorzów Wielkopolski — tworzenie stron www dla firm z regionu
             </h2>
             <p className="text-muted-foreground mb-4">
-              Gorzów Wielkopolski to stolica województwa lubuskiego i centrum zachodniej Polski — 80 km od Berlina, 150 km od Szczecina. Bliskość granicy z Niemcami to ogromna szansa dla lokalnych firm: sektor motoryzacyjny (Volkswagen Poznań), logistyczny i handlowy intensywnie korzysta z transgranicznego potencjału. Profesjonalna strona www — w tym dwujęzyczna PL/DE — to często klucz do sukcesu.
+              Gorzów Wielkopolski leży blisko granicy z Niemcami, co dla wielu lokalnych firm — handlowych, logistycznych i usługowych — oznacza klientów po obu stronach Odry. Profesjonalna strona www, także w wersji dwujęzycznej PL/DE, pomaga dotrzeć do obu grup odbiorców.
             </p>
             <p className="text-muted-foreground mb-6">
-              Obsługujemy firmy z Gorzowa i regionu lubuskiego — Zielona Góra, Słubice, Kostrzyn nad Odrą. Projekt graficzny w Figmie, wdrożenie online, optymalizacja SEO. Termin: 3–5 tygodni, wycena bezpłatna.
+              Pracujemy z Poznania, a firmy z Gorzowa i regionu lubuskiego obsługujemy zdalnie. Projekt graficzny w Figmie, wdrożenie online, optymalizacja SEO. Termin zależy od zakresu i ustalamy go w ofercie, wycena jest bezpłatna.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
@@ -629,10 +597,10 @@ const StronyInternetoweGorzow = () => {
               SEO lokalne i transgraniczne — widoczność w Polsce i Niemczech
             </h2>
             <p className="text-muted-foreground mb-4">
-              Lokalna optymalizacja SEO dla firm z Gorzowa to frazy z geolokalizacją po polsku i po niemiecku. Konfigurujemy hreflang dla dwujęzycznych stron, budujemy profil Google Moja Firma i zapewniamy widoczność zarówno na polskim jak i niemieckim Google.
+              Lokalna optymalizacja SEO dla firm z Gorzowa to frazy z geolokalizacją po polsku i po niemiecku. Konfigurujemy hreflang dla dwujęzycznych stron, budujemy profil Google Moja Firma i przygotowujemy stronę pod wyszukiwanie zarówno w polskim, jak i niemieckim Google.
             </p>
             <p className="text-muted-foreground">
-              Skontaktuj się z nami — bezpłatna wycena w 24 godziny. Strony dla firm z Gorzowa, które otwierają drzwi do rynku niemieckiego.
+              Skontaktuj się z nami — wycenę przygotujemy po rozmowie o zakresie projektu. Strony dla firm z Gorzowa, które otwierają drzwi do rynku niemieckiego.
             </p>
           
                         <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">

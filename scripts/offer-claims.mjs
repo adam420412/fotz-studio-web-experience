@@ -7,9 +7,9 @@ import ts from 'typescript';
 
 export const claimRules = [
   { id: 'percent', label: 'procent lub statystyka', pattern: /[+\-−]?\s?\d+(?:[.,]\d+)?\s?%/u },
-  { id: 'price', label: 'stała cena', pattern: /\d[\d\s.]*(?:,\d+)?\s?(?:zł|PLN)(?!\p{L})/u },
+  { id: 'price', label: 'stała cena', pattern: /\d[\d\s.]*(?:,\d+)?\s?(?:zł|zl|PLN)(?!\p{L})/u },
   { id: 'ranking', label: 'obietnica pozycji', pattern: /\bTOP\s?\d+\b|\b(?:pierwsz\p{L}*|1\.)\s+(?:miejsc\p{L}*|pozycj\p{L}*)/iu },
-  { id: 'guarantee', label: 'gwarancja wyniku', pattern: /gwarant\p{L}*/iu },
+  { id: 'guarantee', label: 'gwarancja wyniku', pattern: /gwarant\p{L}*|gwarancj\p{L}*\s+(?:\p{L}+\s+)?(?:wynik|skuteczn|pozycj|efekt|zadowolen|jakości|ROI|sprzeda|terminow)\p{L}*/iu },
   { id: 'certified', label: 'certyfikat bez dowodu', pattern: /certyfikowan\p{L}*/iu },
   { id: 'rating', label: 'ocena lub opinia', pattern: /ratingValue|\b\d[,.]\d\s?\/\s?5\b|★/u },
   { id: 'office', label: 'biuro poza Poznaniem', pattern: /\b(?:biur\p{L}*|oddzia\p{L}*)\s+w\s+(?!Poznaniu)\p{Lu}\p{L}+|\b(?:nasz\p{L}*|FOTZ\p{L}*)\s+(?:\p{L}+\s+){0,3}siedzib\p{L}*\s+w\s+(?!Poznaniu)\p{Lu}\p{L}+/u },
@@ -32,6 +32,8 @@ export function findClaims(text) {
       if (!match) continue;
       const before = sentence.slice(0, match.index);
       if (negation.test(before)) continue;
+      // "Gwarancji pozycji nie dajemy": a guarantee negated later in the sentence is a stated limit too.
+      if (rule.id === 'guarantee' && negation.test(sentence.slice(match.index))) continue;
       found.push({ rule: rule.id, label: rule.label, match: match[0].trim(), sentence });
     }
   }
@@ -44,10 +46,14 @@ export function pageCopy(file) {
   const parts = [];
   const skip = node => ts.isImportDeclaration(node) || ts.isExportDeclaration(node);
   const attrName = node => ts.isJsxAttribute(node.parent) ? node.parent.name.getText(source) : '';
+  const cssColor = /^\s*(?:hsla?|rgba?)\(/i;
   const technical = new Set(['className', 'href', 'to', 'src', 'srcSet', 'sizes', 'id', 'aria-labelledby', 'canonical', 'image', 'key', 'rel', 'target', 'type', 'loading', 'fetchPriority']);
   function visit(node) {
     if (skip(node)) return;
-    if ((ts.isStringLiteral(node) || ts.isNoSubstitutionTemplateLiteral(node)) && !technical.has(attrName(node))) {
+    if (ts.isTemplateExpression(node) && !technical.has(attrName(node))) {
+      // Template copy with substitutions (e.g. `od 2 500 zł w ${city}`): keep the literal parts.
+      parts.push([node.head.text, ...node.templateSpans.map(span => span.literal.text)].join(' … '));
+    } else if ((ts.isStringLiteral(node) || ts.isNoSubstitutionTemplateLiteral(node)) && !technical.has(attrName(node)) && !cssColor.test(node.text)) {
       const parent = node.parent;
       const key = parent && ts.isPropertyAssignment(parent) && parent.initializer === node ? parent.name.getText(source).replace(/["']/g, '') : '';
       if (!['path', 'href', 'image', 'link', 'url', 'src'].includes(key)) parts.push(node.text);

@@ -10,15 +10,15 @@ export const TikTokAdsGdansk = () => {
   const faqItems = [
     {
       question: "Ile kosztuje TikTok Ads w Gdańsku?",
-      answer: "Koszt kampanii TikTok Ads w Gdańsku i Trójmieście zależy od budżetu, celów i grupy docelowej. Agencja Fotz oferuje elastyczne pakiety dostosowane do potrzeb firm. Minimum kampanii to zwykle 500 PLN dziennie. Skontaktuj się z nami na bezpłatną konsultację, aby uzyskać wycenę dostosowaną do Twojej marki.",
+      answer: "Koszt kampanii TikTok Ads w Gdańsku i Trójmieście zależy od budżetu, celów i grupy docelowej. Wycenę obsługi przygotowujemy po rozmowie o zakresie: liczbie kampanii, produkcji materiałów wideo i sposobie raportowania. Budżet reklamowy płacony platformie TikTok jest zawsze osobną pozycją i ustalasz go Ty. Skontaktuj się z nami na bezpłatną konsultację.",
     },
     {
       question: "Ile TikTok płaci za 1000 wyświetleń?",
-      answer: "Stawka CPM (koszt za tysiąc wyświetleń) na TikTok waha się od 2 do 10 PLN w zależności od regionu, branży i sezonu. Polska i Trójmiasto znajdują się w średnim przedziale. Rzeczywisty koszt kampanii zależy od optymalizacji i jakości materiałów wideo oraz targetowania grupy docelowej.",
+      answer: "Stawka CPM (koszt za tysiąc wyświetleń) na TikToku nie jest stała — ustala się w aukcji i zależy od regionu, branży, sezonu, grupy docelowej i jakości materiałów wideo. Rzeczywisty koszt widać dopiero po uruchomieniu i pierwszych testach kampanii.",
     },
     {
-      question: "Jaka jest najlepsza agencja TikTok Ads w Gdańsku?",
-      answer: "Fotz.pl to wiodąca agencja reklamowa na TikToku w Gdańsku, Trójmieście i regionie ze znakomitym doświadczeniem w prowadzeniu kampanii dla firm z różnych branż. Nasze zespoły tworzą kreatywne materiały wideo, optymalizują konwersje i zapewniają najlepsze wyniki. Sprawdziliśmy już formaty reklamowe In-Feed Ads, Spark Ads i TopView Ads dla wielu biznesów.",
+      question: "Jak wygląda współpraca przy TikTok Ads z firmą z Gdańska?",
+      answer: "Fotz Studio pracuje z Poznania, a firmy z Gdańska i Trójmiasta obsługujemy zdalnie. Łączymy produkcję wideo z prowadzeniem kampanii: tworzymy kreacje, konfigurujemy TikTok Pixel i Ads Managera, a potem testujemy i optymalizujemy reklamy. Nie obiecujemy konkretnych wyników — ustalamy cele i mierniki na starcie i rozliczamy się z nich w raportach.",
     },
     {
       question: "Dla jakiej branży sprawdza się reklama na TikToku w Gdańsku?",
@@ -30,7 +30,7 @@ export const TikTokAdsGdansk = () => {
     },
     {
       question: "Jak długo trwa uruchomienie kampanii TikTok Ads?",
-      answer: "Uruchomienie kampanii TikTok Ads zajmuje zwykle 1-2 dni robocze od momentu zatwierdzenia kreatywności. W TikTok Ads Manager nasi specjaliści konfigurują wszystkie parametry, ustawiają budżet i cel kampanii. Po zatwierdzeniu przez platformę reklama zaczyna się wyświetlać użytkownikom TikToka.",
+      answer: "Czas uruchomienia zależy od gotowości materiałów wideo, konfiguracji konta i Pixela oraz weryfikacji reklam przez TikTok. W TikTok Ads Manager nasi specjaliści konfigurują wszystkie parametry, ustawiają budżet i cel kampanii. Po zatwierdzeniu przez platformę reklama zaczyna się wyświetlać użytkownikom TikToka.",
     },
     {
       question: "Czy TikTok Ads działa dla firm B2B?",
@@ -75,34 +75,11 @@ export const TikTokAdsGdansk = () => {
               TikTok Ads Gdańsk — Kampanie Reklamowe na TikToku dla Firm
             </h1>
             <p className="text-lg md:text-xl text-gray-700 mb-8">
-              Agencja TikTok Ads Gdańsk — Fotz.pl specjalizuje się w kampaniach TikTok for Business dla firm z Gdańska i Trójmiasta. Tworzymy kreatywne materiały wideo, konfigurujemy TikTok Pixel, zarządzamy TikTok Ads Manager i prowadzimy reklamy z pełną optymalizacją konwersji. Dołącz do firm, które zwiększyły sprzedaż dzięki reklamom na platformie TikTok.
+              Agencja TikTok Ads Gdańsk — Fotz.pl specjalizuje się w kampaniach TikTok for Business dla firm z Gdańska i Trójmiasta. Tworzymy kreatywne materiały wideo, konfigurujemy TikTok Pixel, zarządzamy TikTok Ads Manager i prowadzimy reklamy z pełną optymalizacją konwersji. Pracujemy z Poznania, a firmy z Gdańska i Trójmiasta obsługujemy zdalnie.
             </p>
             <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
               Bezpłatna konsultacja
             </a>
-          </div>
-        </section>
-      </FadeInView>
-
-      <FadeInView>
-        <section className="stats-section py-12 px-4 bg-gray-50">
-          <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div className="text-center">
-              <p className="text-3xl font-bold text-blue-600 mb-2">150+</p>
-              <p className="text-gray-700">Kampanii TikTok Ads</p>
-            </div>
-            <div className="text-center">
-              <p className="text-3xl font-bold text-blue-600 mb-2">2.5M+</p>
-              <p className="text-gray-700">Zasięgi kampanii</p>
-            </div>
-            <div className="text-center">
-              <p className="text-3xl font-bold text-blue-600 mb-2">45%</p>
-              <p className="text-gray-700">Średnia konwersja</p>
-            </div>
-            <div className="text-center">
-              <p className="text-3xl font-bold text-blue-600 mb-2">95%</p>
-              <p className="text-gray-700">Zadowolenie klientów</p>
-            </div>
           </div>
         </section>
       </FadeInView>
@@ -133,8 +110,8 @@ export const TikTokAdsGdansk = () => {
               <div className="bg-white p-6 rounded-lg border border-gray-200 hover:shadow-lg transition">
                 <h3 className="font-bold text-lg mb-3">TopView Ads</h3>
                 <p className="text-gray-700 text-sm">
-                  Premium formaty na górze kanału. TopView Ads to kampania TikTok Ads o wysokiej widoczności,
-                  gwarantująca pierwsze wrażenie na użytkowników platformy TikTok.
+                  Premium formaty na górze kanału. TopView Ads to format o wysokiej widoczności,
+                  wyświetlany jako pierwsza reklama po otwarciu aplikacji TikTok.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg border border-gray-200 hover:shadow-lg transition">
@@ -177,7 +154,7 @@ export const TikTokAdsGdansk = () => {
               <div className="bg-white p-6 rounded-lg border border-gray-200">
                 <h3 className="font-bold text-lg mb-3">Świadomość marki</h3>
                 <p className="text-gray-700 text-sm">
-                  Osiągnij miliony użytkowników TikToka. Kampania TikTok Ads skoncentrowana na zasięgach buduje
+                  Docieraj do szerokiej grupy użytkowników TikToka. Kampania TikTok Ads skoncentrowana na zasięgach buduje
                   rozpoznawalność i ugruntowuje markę wśród grupy docelowej na platformie.
                 </p>
               </div>
@@ -212,8 +189,8 @@ export const TikTokAdsGdansk = () => {
               <div className="bg-white p-6 rounded-lg border border-gray-200">
                 <h3 className="font-bold text-lg mb-3">Konkurencja na rynku</h3>
                 <p className="text-gray-700 text-sm">
-                  Wyprzedź konkurencję. Agencja Fotz monitoruje kampanie reklamowe na TikToku i optymalizuje taktykę
-                  aby dominować na platformie w Twojej branży.
+                  Wyróżnij się na tle konkurencji. Agencja Fotz obserwuje reklamy konkurencji na TikToku i na tej podstawie
+                  dopracowuje taktykę Twoich kampanii.
                 </p>
               </div>
             </div>
@@ -301,8 +278,8 @@ export const TikTokAdsGdansk = () => {
               <div className="bg-white p-6 rounded-lg border border-gray-200">
                 <h3 className="font-bold text-lg mb-3">Doświadczenie</h3>
                 <p className="text-gray-700 text-sm">
-                  Od lat prowadzimy kampanie TikTok Ads dla firm w Gdańsku, Trójmieście i całej Polsce. Znamy
-                  platformę TikTok, wszystkie formaty reklam i sposoby optymalizacji konwersji.
+                  Prowadzimy kampanie reklamowe w social media i produkujemy wideo dla marek. Znamy
+                  platformę TikTok, jej formaty reklam i sposoby optymalizacji konwersji.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg border border-gray-200">
@@ -313,10 +290,10 @@ export const TikTokAdsGdansk = () => {
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg border border-gray-200">
-                <h3 className="font-bold text-lg mb-3">Wyniki</h3>
+                <h3 className="font-bold text-lg mb-3">Mierzalne cele</h3>
                 <p className="text-gray-700 text-sm">
-                  Kampanie TikTok Ads prowadzone przez Fotz osiągają średnio 45% konwersji i generują miliony
-                  zasięgów. Nasze reklamy na tiktoku przynoszą konkretne rezultaty dla biznesu.
+                  Przed startem ustalamy cel kampanii i wskaźniki, po których ocenimy jej skuteczność.
+                  Nie gwarantujemy konkretnych wyników — raportujemy rzeczywiste dane i na ich podstawie optymalizujemy.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg border border-gray-200">
@@ -329,8 +306,8 @@ export const TikTokAdsGdansk = () => {
               <div className="bg-white p-6 rounded-lg border border-gray-200">
                 <h3 className="font-bold text-lg mb-3">Wsparcie</h3>
                 <p className="text-gray-700 text-sm">
-                  Podczas trwania kampanii TikTok Ads jesteśmy dostępni 24/7. Optymalizujemy akcje reklamowe na
-                  bieżąco i reagujemy na wszelkie zmiany na platformie.
+                  Podczas trwania kampanii TikTok Ads jesteśmy w stałym kontakcie. Optymalizujemy akcje reklamowe na
+                  bieżąco i reagujemy na zmiany na platformie.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg border border-gray-200">

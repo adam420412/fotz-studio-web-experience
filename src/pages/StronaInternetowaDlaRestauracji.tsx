@@ -35,7 +35,7 @@ export default function StronaInternetowaDlaRestauracji() {
     {
       question: "Ile kosztuje strona internetowa dla restauracji?",
       answer:
-        "Strona internetowa dla restauracji kosztuje od 2000 do 10 000 zł w zależności od zakresu. Prosta strona z menu i mapą: 2000-4000 zł. Strona z systemem rezerwacji: 4000-7000 zł. Strona z zamówieniami online: 6000-15 000 zł. Do tego hosting (ok. 50-150 zł/mies.) i domena (ok. 80 zł/rok).",
+        "Nie mamy sztywnego cennika. Wycenę przygotowujemy po rozmowie o zakresie: czy wystarczy strona z menu i mapą, czy potrzebny jest system rezerwacji, zamówienia online, sesja zdjęciowa dań i wnętrza albo wersje językowe. Hosting i domena to osobne, stałe koszty — omawiamy je przy wycenie.",
     },
     {
       question: "Co powinna zawierać strona restauracji?",
@@ -45,7 +45,7 @@ export default function StronaInternetowaDlaRestauracji() {
     {
       question: "Czy restauracja potrzebuje strony internetowej?",
       answer:
-        "W 2025 roku — zdecydowanie tak. 90% gości sprawdza restaurację online zanim przyjdzie. Jeśli nie masz strony (lub masz słabą) — tracisz gości na rzecz konkurencji która ją ma. Poza tym strona to warunek konieczny do skutecznego SEO lokalnego i Google Maps.",
+        "W większości przypadków tak. Wielu gości sprawdza menu, godziny i zdjęcia online, zanim wybierze lokal — bez strony te informacje znajdą tylko u konkurencji lub w nieaktualnych serwisach. Poza tym strona to warunek konieczny do skutecznego SEO lokalnego i Google Maps.",
     },
     {
       question: "Jak promować restaurację w internecie?",
@@ -63,7 +63,7 @@ export default function StronaInternetowaDlaRestauracji() {
     <>
       <SEOHead
         title="Strona internetowa dla restauracji — menu, rezerwacje, SEO"
-        description="Strona internetowa dla restauracji — menu online, system rezerwacji, SEO lokalne, zamówienia online. Profesjonalne strony dla gastronomii od 2000 zł. Wycena!"
+        description="Strona internetowa dla restauracji — menu online, system rezerwacji, SEO lokalne, zamówienia online. Profesjonalne strony dla gastronomii, wycena po rozmowie o zakresie. Bezpłatna wycena!"
         canonical="https://www.fotz-studio.pl/uslugi/strona-internetowa-dla-restauracji"
         keywords="strona internetowa dla restauracji, strona www restauracji, strona restauracji, strona dla gastronomii, menu online restauracja"
       />
@@ -95,9 +95,9 @@ export default function StronaInternetowaDlaRestauracji() {
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
                 {[
-                  { value: "90%", label: "Gości sprawdza online" },
-                  { value: "od 2000 zł", label: "Cena strony" },
-                  { value: "2-4 tyg.", label: "Czas realizacji" },
+                  { value: "Menu", label: "Aktualizujesz samodzielnie" },
+                  { value: "Rezerwacje", label: "Stolików online" },
+                  { value: "SEO", label: "Lokalne i Google Maps" },
                   { value: "WordPress", label: "Łatwa aktualizacja" },
                 ].map((stat, idx) => (
                   <div key={idx} className="bg-slate-800 bg-opacity-50 p-4 rounded-lg">
@@ -151,7 +151,7 @@ export default function StronaInternetowaDlaRestauracji() {
                 {[
                   "Goście szukają menu online zanim zdecydują się przyjść",
                   "Konkurencja z rezerwacjami online zyskuje więcej stolików",
-                  "Google Maps favours firmy z dobrymi stronami internetowymi",
+                  "Strona z aktualnymi danymi wspiera widoczność w Google Maps",
                   "Brak zdjęć = utracone zakupy impulsowe",
                   "Klienci nie mogą znaleźć godzin otwarcia przez telefon",
                   "TripAdvisor i opinie online decydują o wyborze restauracji",

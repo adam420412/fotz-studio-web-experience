@@ -1,12 +1,11 @@
 import { Link } from "react-router-dom";
-import { Building2, ArrowRight, CheckCircle, MapPin, TrendingUp, Users, Target, Star, Phone, Plus, Minus } from "lucide-react";
+import { Building2, ArrowRight, CheckCircle, MapPin, TrendingUp, Users, Target, Phone, Plus, Minus } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
-import { AnimatedCounter } from "@/components/AnimatedCounter";
 
 // Import case study images
 import rppgImage from "@/assets/portfolio/rppg-web.webp";
@@ -19,28 +18,28 @@ const caseStudies = [
     title: "RPPG",
     description: "Strona internetowa dla Rady Polskich Przedsiębiorców Globalnych z systemem zarządzania treścią.",
     image: rppgImage,
-    results: ["Profesjonalny wizerunek online", "+200% więcej zapytań", "Nowoczesna strona WWW"],
+    results: ["Strona WWW", "System zarządzania treścią"],
     href: "/realizacje/rppg",
   },
   {
     title: "Graf Tapicerstwo",
     description: "Strona internetowa i pozycjonowanie lokalne dla firmy specjalizującej się w tapicerowaniu autobusów.",
     image: grafImage,
-    results: ["TOP 3 w Google Maps", "+150% ruchu organicznego", "Stały napływ zleceń"],
+    results: ["Strona WWW", "SEO lokalne"],
     href: "/realizacje/graf-tapicerstwo",
   },
   {
     title: "Mechanica",
     description: "Kompleksowa strona WWW dla producenta suwnic i wciągników przemysłowych.",
     image: mechanicaImage,
-    results: ["Profesjonalna wizytówka B2B", "+180% zapytań ofertowych", "Widoczność w branży"],
+    results: ["Strona WWW", "Wizytówka B2B"],
     href: "/realizacje/mechanica",
   },
   {
     title: "Przedszkole",
     description: "Strona internetowa i marketing lokalny dla przedszkola z pełną funkcjonalnością dla rodziców.",
     image: przedszkoleImage,
-    results: ["100% zapełnienie miejsc", "Top 5 w lokalnych wynikach", "Zaufanie rodziców"],
+    results: ["Strona WWW", "Marketing lokalny"],
     href: "/realizacje/przedszkole",
   },
 ];
@@ -49,7 +48,7 @@ const services = [
   {
     icon: MapPin,
     title: "SEO lokalne",
-    description: "Pozycjonowanie w Google Maps i wynikach lokalnych. Dominuj w swoim mieście.",
+    description: "Pozycjonowanie w Google Maps i wynikach lokalnych — bez obietnic konkretnych pozycji.",
   },
   {
     icon: Target,
@@ -74,17 +73,17 @@ const benefits = [
   "Rozumiemy potrzeby małych i średnich firm",
   "Elastyczne budżety dopasowane do Twoich możliwości",
   "Szybka reakcja i stały kontakt",
-  "Mierzalne rezultaty i transparentne raporty",
+  "Transparentne raporty z prowadzonych działań",
 ];
 
 const faqItems = [
   {
     question: "Ile kosztuje marketing dla małej lokalnej firmy?",
-    answer: "Budżety zaczynają się od około 2000 zł miesięcznie za podstawową obsługę SEO lokalnego i Google My Business. Pełna obsługa z kampaniami reklamowymi to zazwyczaj 4000-8000 zł miesięcznie, w zależności od zakresu działań i budżetu reklamowego.",
+    answer: "Nie mamy sztywnego cennika. Koszt zależy od zakresu działań (SEO lokalne, wizytówka Google, social media, kampanie), konkurencji w branży i liczby lokalizacji. Budżet reklamowy płacony platformom (Google, Meta) jest zawsze osobny. Wycenę przygotowujemy po rozmowie o zakresie.",
   },
   {
     question: "Jak szybko zobaczę efekty pozycjonowania lokalnego?",
-    answer: "Pierwsze efekty SEO lokalnego widoczne są zazwyczaj po 2-3 miesiącach. Optymalizacja Google My Business może przynieść rezultaty szybciej - często już po kilku tygodniach. Pełne efekty pozycjonowania lokalnego osiągamy w ciągu 6-12 miesięcy.",
+    answer: "SEO lokalne to proces rozłożony w czasie i nie da się z góry wyznaczyć sztywnego terminu efektów. Tempo zależy od konkurencji w okolicy, stanu wizytówki i strony oraz regularności działań. Optymalizacja wizytówki Google zwykle daje pierwsze sygnały szybciej niż pozycjonowanie strony. Nie gwarantujemy konkretnej pozycji w Google.",
   },
   {
     question: "Czy potrzebuję strony internetowej do marketingu lokalnego?",
@@ -96,7 +95,7 @@ const faqItems = [
   },
   {
     question: "Czy obsługujecie firmy spoza Poznania?",
-    answer: "Tak, obsługujemy firmy z całej Polski. Jednak naszą specjalizacją jest rynek poznański i wielkopolski - tutaj mamy największe doświadczenie i najlepsze rezultaty. Dla firm z innych regionów oferujemy pełną obsługę zdalną.",
+    answer: "Tak. Pracujemy z Poznania — z firmami z Poznania i okolic możemy spotkać się osobiście, a firmy z innych miast obsługujemy zdalnie.",
   },
   {
     question: "Co to jest Google My Business i dlaczego jest ważne?",
@@ -177,18 +176,6 @@ export default function DlaKogoFirmyLokalne() {
               </Button>
             </div>
             
-            {/* Animated Statistics */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12 p-6 rounded-2xl bg-card/50 backdrop-blur-sm border border-border/30"
-            >
-              <AnimatedCounter end={150} suffix="+" label="Firm lokalnych" index={0} />
-              <AnimatedCounter end={95} suffix="%" label="Wzrost widoczności" index={1} />
-              <AnimatedCounter end={3} prefix="TOP " label="W Google Maps" index={2} />
-              <AnimatedCounter end={200} suffix="%" label="Więcej leadów" index={3} />
-            </motion.div>
           </motion.div>
         </div>
       </section>
@@ -206,7 +193,7 @@ export default function DlaKogoFirmyLokalne() {
               Jak pomagamy <span className="text-gradient">lokalnym firmom?</span>
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Specjalizujemy się w marketingu lokalnym, który przynosi realne wyniki 
+              Łączymy SEO lokalne, wizytówkę Google, reklamy i social media 
               dla firm działających w Poznaniu i regionie.
             </p>
           </motion.div>
@@ -275,20 +262,18 @@ export default function DlaKogoFirmyLokalne() {
             >
               <div className="bg-gradient-to-br from-primary/20 to-primary/5 rounded-3xl p-8 lg:p-12">
                 <div className="text-center mb-8">
-                  <div className="text-6xl font-heading font-bold text-primary mb-2">160+</div>
-                  <p className="text-muted-foreground">zadowolonych klientów</p>
+                  <MapPin className="w-12 h-12 text-primary mx-auto mb-4" />
+                  <div className="text-4xl font-heading font-bold text-primary mb-2">Poznań</div>
+                  <p className="text-muted-foreground">tu pracujemy — firmy z innych miast obsługujemy zdalnie</p>
                 </div>
                 <div className="grid grid-cols-2 gap-6">
                   <div className="text-center">
-                    <div className="text-3xl font-heading font-bold mb-1">8+</div>
-                    <p className="text-sm text-muted-foreground">lat doświadczenia</p>
+                    <div className="text-xl font-heading font-bold mb-1">Spotkania</div>
+                    <p className="text-sm text-muted-foreground">osobiście w Poznaniu i okolicach</p>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-heading font-bold mb-1">5.0</div>
-                    <p className="text-sm text-muted-foreground flex items-center justify-center gap-1">
-                      <Star className="w-4 h-4 text-yellow-500 fill-yellow-500" />
-                      w Google
-                    </p>
+                    <div className="text-xl font-heading font-bold mb-1">Raporty</div>
+                    <p className="text-sm text-muted-foreground">jasne podsumowania działań</p>
                   </div>
                 </div>
               </div>
@@ -310,7 +295,7 @@ export default function DlaKogoFirmyLokalne() {
               Nasze <span className="text-gradient">realizacje</span>
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Zobacz, jak pomagamy lokalnym firmom osiągać sukces w internecie.
+              Wybrane projekty stron i działań online dla firm.
             </p>
           </motion.div>
 
@@ -501,8 +486,8 @@ export default function DlaKogoFirmyLokalne() {
             </p>
             <p className="text-muted-foreground mb-6">
               Lokalne SEO i Google Moja Firma to fundamenty widoczności lokalnej.
-              Firma pojawiająca się w Local Pack Google (3 wyniki mapowe) zdobywa
-              znacznie więcej zapytań niż konkurenci poniżej. Optymalizujemy wizytówkę
+              Local Pack Google (wyniki mapowe nad wynikami organicznymi) to miejsce,
+              gdzie lokalni klienci często szukają usług. Optymalizujemy wizytówkę
               Google i pozycjonujemy stronę na frazy lokalne z intencją zakupową.
             </p>
 
@@ -528,8 +513,8 @@ export default function DlaKogoFirmyLokalne() {
             <p className="text-muted-foreground mb-4">
               Mała firma lokalna nie potrzebuje ogromnego budżetu — potrzebuje
               precyzyjnie ukierunkowanych działań. Google Moja Firma (bezpłatna),
-              lokalne SEO i targetowane kampanie Google/Facebook z budżetem 500-2000 zł
-              miesięcznie mogą przynieść znaczny wzrost liczby klientów.
+              lokalne SEO i targetowane kampanie Google/Facebook z budżetem dopasowanym
+              do możliwości firmy (płaconym bezpośrednio platformom) to dobry punkt startu.
             </p>
             <p className="text-muted-foreground">
               Fotz Studio pomaga firmom lokalnym z Poznania i okolic wyróżnić się

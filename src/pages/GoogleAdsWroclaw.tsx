@@ -10,19 +10,19 @@ export default function GoogleAdsWroclaw() {
   const faqItems = [
     {
       question: "Ile kosztuje Google Ads we Wrocławiu?",
-      answer: "Google Ads we Wrocławiu zaczyna się od 400 zł/miesiąc za zarządzanie kampanią (pakiet START). Dodatkowy budżet reklamowy to osobna pozycja — od 500 zł/miesiąc dla małych firm do 10 000+ zł/miesiąc dla e-commerce i sieci handlowych. Całkowity koszt zależy od branży i konkurencji na słowa kluczowe we Wrocławiu.",
+      answer: "Wycenę obsługi przygotowujemy po rozmowie o zakresie: liczbie i typach kampanii, liczbie promowanych produktów lub usług oraz sposobie raportowania. Budżet reklamowy płacony Google jest zawsze osobną pozycją, a jego wysokość zależy od branży, konkurencji na słowa kluczowe i Twoich celów.",
     },
     {
       question: "Jak długo trwa uruchomienie kampanii Google Ads we Wrocławiu?",
-      answer: "Kampanię można uruchomić w ciągu 24-48 godzin od podpisania umowy. Obejmuje to: audit konkurencji wrocławskiej, badanie słów kluczowych, tworzenie struktury kampanii, konfigurację trackingu konwersji i wdrożenie. Pierwsze wyniki są widoczne po kilku dniach, pełna optymalizacja trwa 2-4 tygodnie.",
+      answer: "Przygotowanie kampanii obejmuje: audyt konkurencji, badanie słów kluczowych, tworzenie struktury kampanii, konfigurację śledzenia konwersji i wdrożenie. Czas startu zależy od stanu konta, materiałów i akceptacji reklam przez Google, a optymalizacja wymaga zebrania danych — nie obiecujemy sztywnych terminów efektów.",
     },
     {
       question: "Czy we Wrocławiu konkurencja na Google Ads jest duża?",
-      answer: "Wrocław to czwarte co do wielkości miasto w Polsce z silnym sektorem IT i handlu. Konkurencja jest umiarkowanaana — niższa niż w Warszawie, ale wyższa niż w mniejszych miastach. Średni CPC (koszt za kliknięcie) wynosi 3-8 zł w zależności od branży. To sprawia, że Wrocław jest idealnym rynkiem do testowania kampanii przed skalowaniem na całą Polskę.",
+      answer: "Wrocław to jedno z największych miast w Polsce z silnym sektorem IT i handlu, więc w wielu branżach konkurencja w aukcjach jest wyraźna. Koszt kliknięcia ustala się w aukcji i mocno zależy od branży i słów kluczowych — realne stawki sprawdzamy w Planerze słów kluczowych i w pierwszych testach kampanii.",
     },
     {
       question: "Jakie słowa kluczowe są popularne dla firm z Wrocławia?",
-      answer: "Popularne słowa kluczowe to: 'agencja web Wrocław', 'SEO Wrocław', 'projektant graficzny Wrocław', 'restauracja Wrocław', 'dentysta Wrocław', 'nieruchomości Wrocław', 'freelancer IT Wrocław'. Wrocław ma aktywną scenę IT, więc kampanie dla agencji, programistów i freelancerów działają bardzo dobrze.",
+      answer: "Popularne słowa kluczowe to: 'agencja web Wrocław', 'SEO Wrocław', 'projektant graficzny Wrocław', 'restauracja Wrocław', 'dentysta Wrocław', 'nieruchomości Wrocław', 'freelancer IT Wrocław'. Wrocław ma aktywną scenę IT, więc wiele z tych fraz ma dużą konkurencję w aukcjach.",
     },
     {
       question: "Czy mogę targetować reklamami tylko Wrocław czy muszę brać całą Polskę?",
@@ -30,15 +30,15 @@ export default function GoogleAdsWroclaw() {
     },
     {
       question: "Czy Google Ads będą efektywne dla mojej e-commerce z Wrocławia?",
-      answer: "Tak — Google Ads (zwłaszcza Performance Max i Google Shopping) działają bardzo dobrze dla e-commerce. Możesz sprzedawać na całą Polskę z siedzbą we Wrocławiu. Wiele naszych klientów z Wrocławia to sklepy internetowe, które zarabiają 20-50 tyś zł miesięcznie na Google Ads.",
+      answer: "Tak — Google Ads (zwłaszcza Performance Max i Google Shopping) działają bardzo dobrze dla e-commerce. Możesz sprzedawać na całą Polskę z siedzibą we Wrocławiu. Skuteczność zależy od asortymentu, marż, jakości feedu produktowego i strony sklepu — sprawdzamy to przed startem.",
     },
     {
       question: "Jakie branże najczęściej korzystają z Google Ads we Wrocławiu?",
-      answer: "Najczęściej Google Ads korzystają: agencje web, programiści, dentyści, restauracje, nieruchomości, sklepy internetowe, szkoły jezykowe, fryzjerzy, salony beauty, usługi budowlane. Wrocław ma silną scenę IT, więc agencje i freelancerzy zarabiają najwięcej na Google Ads.",
+      answer: "Najczęściej Google Ads korzystają: agencje web, programiści, dentyści, restauracje, nieruchomości, sklepy internetowe, szkoły jezykowe, fryzjerzy, salony beauty, usługi budowlane. Wrocław ma silną scenę IT, więc w branżach technologicznych konkurencja o kliknięcia jest szczególnie duża.",
     },
     {
       question: "Czy Google Ads pomogą mi konkurować z firmami z Warszawy?",
-      answer: "Tak, ale inną strategią. Firmy z Warszawy mają większy budżet, ale ty znasz lokalny rynek Wrocławia lepiej. Twoją strategią powinno być: (1) dominate lokalne słowa kluczowe we Wrocławiu (2) skaluj na sąsiednie miasta (3) jeśli e-commerce — skaluj na całą Polskę. W Google Ads wygrywa ten, kto ma lepszą strategię i optymalizację, nie ten z największym budżetem.",
+      answer: "Tak, ale inną strategią. Firmy z Warszawy mają większy budżet, ale ty znasz lokalny rynek Wrocławia lepiej. Twoją strategią powinno być: (1) postaw na lokalne słowa kluczowe we Wrocławiu (2) skaluj na sąsiednie miasta (3) jeśli e-commerce — skaluj na całą Polskę. Dobra strategia i optymalizacja pozwalają lepiej wykorzystać mniejszy budżet.",
     },
   ];
 
@@ -47,14 +47,14 @@ export default function GoogleAdsWroclaw() {
       <Layout>
         <SEOHead
           title="Agencja Google Ads Wrocław | Fotz Studio"
-          description="Google Ads Wrocław — agencja certyfikowana Fotz.pl. Kampanie od 400 zł/mies., wyniki od 24-48h, specjaliści z certyfikatem Google. Bezpłatna konsultacja!"
+          description="Google Ads Wrocław — Fotz Studio prowadzi kampanie Google Ads dla firm z Wrocławia zdalnie z Poznania. Search, Performance Max, Shopping i remarketing. Bezpłatna konsultacja!"
           canonical="https://www.fotz-studio.pl/performance-marketing/google-ads/wroclaw"
           keywords="google ads wroclaw, kampanie google ads wroclaw, agencja google ads wroclaw, reklamy google wroclaw, google adwords wroclaw, sem wroclaw, google ads dla firm wroclaw, prowadzenie google ads wroclaw, google ads cennik wroclaw, reklama w google wroclaw"
         />
 
         <ServiceSchema
           name="Kampanie Google Ads Wrocław"
-          description="Tworzenie i optymalizacja kampanii Google Ads dla firm z Wrocławia. Agencja Fotz.pl — certyfikowani specjaliści Google Ads."
+          description="Tworzenie i optymalizacja kampanii Google Ads dla firm z Wrocławia. Fotz Studio pracuje z Poznania i obsługuje firmy z Wrocławia zdalnie."
           provider="Fotz Studio"
           areaServed="Wroclaw"
         />
@@ -88,28 +88,9 @@ export default function GoogleAdsWroclaw() {
                   Agencja Google Ads Wrocław
                 </h1>
                 <p className="text-xl md:text-2xl text-sky-100 mb-8">
-                  Google Ads Wroclaw — profesjonalne kampanie Google Ads i reklamy w Google dla firm z Wroclawa i Dolnego Śląska. Zwiększamy ruch, konwersje i ROI dzięki skutecznym kampaniom SEM. Bezpłatna konsultacja.</p>
+                  Google Ads Wroclaw — profesjonalne kampanie Google Ads i reklamy w Google dla firm z Wroclawa i Dolnego Śląska. Pracujemy z Poznania, a firmy z Wrocławia obsługujemy zdalnie. Bezpłatna konsultacja.</p>
               </div>
 
-              {/* Stats Grid */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-6 text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-sky-300 mb-2">400 zł</div>
-                  <div className="text-sm text-sky-100">Kampanie od</div>
-                </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-6 text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-sky-300 mb-2">24-48h</div>
-                  <div className="text-sm text-sky-100">Wyniki od</div>
-                </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-6 text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-sky-300 mb-2">100%</div>
-                  <div className="text-sm text-sky-100">Certyfikowani</div>
-                </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-6 text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-sky-300 mb-2">Raport</div>
-                  <div className="text-sm text-sky-100">Co miesiąc</div>
-                </div>
-              </div>
             </div>
           </div>
         </section>
@@ -124,13 +105,13 @@ export default function GoogleAdsWroclaw() {
                 </h2>
                 <div className="space-y-6 text-lg text-muted-foreground">
                   <p>
-                    Wrocław to czwarte co do wielkości miasto w Polsce, znane jako Miasto 100 Mostów. Populacja 650 tysięcy mieszkańców, ale co najważniejsze — to dynamiczny hub technologiczny i biznesowy w województwie dolnośląskim. Przedsiębiorcy we Wrocławiu aktywnie inwestują w reklamy internetowe, szczególnie w sektora IT, e-commerce i usług.
+                    Wrocław to jedno z największych miast w Polsce, znane jako Miasto 100 Mostów, a przede wszystkim — dynamiczny hub technologiczny i biznesowy w województwie dolnośląskim. Przedsiębiorcy we Wrocławiu aktywnie inwestują w reklamy internetowe, szczególnie w sektora IT, e-commerce i usług.
                   </p>
                   <p>
-                    Konkurencja na słowa kluczowe we Wrocławiu jest mniejsza niż w Warszawie, ale rynek jest dojrzały i aktywny. Średni CPC (koszt za kliknięcie) wynosi 3-8 zł — jest to świetny punkt do testowania strategii kampanii. We Wrocławiu możesz szybko sprawdzić, co działa, a potem skalować na resztę Polski.
+                    Rynek reklamowy we Wrocławiu jest dojrzały i aktywny. Koszt kliknięcia ustala się w aukcji i zależy od branży, dlatego zaczynamy od testów — sprawdzamy, co działa, a potem można skalować kampanie na resztę Polski.
                   </p>
                   <p>
-                    Google Ads działają szybciej niż SEO — wyniki widoczne w ciągu 24-48 godzin. W Wrocławiu, gdzie jest wiele małych i średnich firm, Google Ads to najprostsza droga do przyciągnięcia konkretnych, zainteresowanych klientów. Płacisz tylko za kliknięcia, nie za wyświetlenia.
+                    Google Ads zwykle daje ruch szybciej niż SEO, bo reklamy mogą się wyświetlać zaraz po uruchomieniu i akceptacji. We Wrocławiu, gdzie jest wiele małych i średnich firm, to dobry sposób na dotarcie do osób, które aktywnie szukają Twoich usług. W kampaniach Search płacisz za kliknięcia, nie za wyświetlenia.
                   </p>
                   <p>
                     Bliskość Niemiec to dodatkowy atut — Wrocław graniczy z rynkiem niemieckim. Firmy we Wrocławiu mogą reklamować się zarówno lokalnie (Wrocław, Dolny Śląsk), jak i ekspandować na rynki niemieckie. Google Ads obsługuje targeting geograficzny na poziomie miasta, powiatu, czy nawet promienia.
@@ -170,7 +151,7 @@ export default function GoogleAdsWroclaw() {
                 <div className="bg-background rounded-lg border border-border p-6">
                   <h3 className="text-xl font-bold mb-3">Remarketing</h3>
                   <p className="text-muted-foreground">
-                    Reklamy dla osób, które już odwiedzały Twoją stronę. Konwersja 3-5x wyższa niż w kampaniach Search.
+                    Reklamy dla osób, które już odwiedzały Twoją stronę — przypominają o ofercie tym, którzy ją znają.
                   </p>
                 </div>
                 <div className="bg-background rounded-lg border border-border p-6">
@@ -263,49 +244,22 @@ export default function GoogleAdsWroclaw() {
           <section className="py-16 md:py-24 bg-secondary/30">
             <div className="container px-4">
               <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-                Kampanie Google Ads Wrocław — cennik
+                Kampanie Google Ads Wrocław — od czego zależy wycena
               </h2>
-              <div className="max-w-4xl mx-auto overflow-x-auto">
-                <table className="w-full border-collapse">
-                  <thead>
-                    <tr className="border-b-2 border-border">
-                      <th className="text-left p-4 font-bold">Pakiet</th>
-                      <th className="text-left p-4 font-bold">Cena obsługi</th>
-                      <th className="text-left p-4 font-bold">Budżet reklamowy</th>
-                      <th className="text-left p-4 font-bold">Dla kogo</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="border-b border-border bg-background">
-                      <td className="p-4 font-semibold">START</td>
-                      <td className="p-4">400 zł/mies.</td>
-                      <td className="p-4">500-1500 zł</td>
-                      <td className="p-4">Małe firmy lokalne</td>
-                    </tr>
-                    <tr className="border-b border-border bg-background">
-                      <td className="p-4 font-semibold">GROWTH</td>
-                      <td className="p-4">800 zł/mies.</td>
-                      <td className="p-4">2000-5000 zł</td>
-                      <td className="p-4">Średnie firmy</td>
-                    </tr>
-                    <tr className="border-b border-border bg-background">
-                      <td className="p-4 font-semibold">PRO</td>
-                      <td className="p-4">1500+ zł/mies.</td>
-                      <td className="p-4">5000+ zł</td>
-                      <td className="p-4">E-commerce, sieci</td>
-                    </tr>
-                    <tr className="bg-background">
-                      <td className="p-4 font-semibold">ENTERPRISE</td>
-                      <td className="p-4">% budżetu (15-20%)</td>
-                      <td className="p-4">10000+ zł</td>
-                      <td className="p-4">Duże firmy</td>
-                    </tr>
-                  </tbody>
-                </table>
+              <div className="max-w-3xl mx-auto space-y-4 text-muted-foreground">
+                <p>
+                  Nie mamy sztywnego cennika ani gotowych pakietów. Wycenę obsługi przygotowujemy po rozmowie o zakresie — zależy ona od:
+                </p>
+                <ul className="list-disc pl-6 space-y-2">
+                  <li>liczby i typów kampanii (Search, Performance Max, Shopping, Display, YouTube, remarketing),</li>
+                  <li>liczby produktów, usług i lokalizacji, które chcesz promować,</li>
+                  <li>stanu konta i konfiguracji pomiaru konwersji,</li>
+                  <li>zakresu raportowania i częstotliwości optymalizacji.</li>
+                </ul>
+                <p>
+                  Budżet reklamowy płacony Google jest zawsze osobną pozycją — ustalasz go Ty, a my doradzamy, jak go rozłożyć.
+                </p>
               </div>
-              <p className="text-center text-muted-foreground mt-8 max-w-2xl mx-auto">
-                Każdy pakiet obejmuje setup kampanii, daily optimization, raportowanie co miesiąc, A/B testy reklam i ciągłą optymalizację Quality Score.
-              </p>
             </div>
           </section>
         </FadeInView>
@@ -382,9 +336,9 @@ export default function GoogleAdsWroclaw() {
               </h2>
               <div className="max-w-3xl mx-auto space-y-6">
                 <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-2">Certyfikowani specjaliści Google</h3>
+                  <h3 className="text-xl font-bold mb-2">Kampanie i produkcja w jednym miejscu</h3>
                   <p className="text-muted-foreground">
-                    Nasi specjaliści posiadają certyfikat Google Ads. Mamy dostęp do beta features, nowych algorytmów i najnowszych best practices bezpośrednio od Google.
+                    Oprócz prowadzenia kampanii przygotowujemy landing page, grafiki i wideo do reklam, więc nie musisz koordynować kilku wykonawców.
                   </p>
                 </div>
                 <div className="bg-background rounded-lg border border-border p-6">
@@ -394,15 +348,15 @@ export default function GoogleAdsWroclaw() {
                   </p>
                 </div>
                 <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-2">Wyniki od 24-48h</h3>
+                  <h3 className="text-xl font-bold mb-2">Szybki start i stała optymalizacja</h3>
                   <p className="text-muted-foreground">
-                    Szybko uruchamiamy kampanie i szybko je optymalizujemy. Twoja firma widzi wyniki prawie natychmiast — nie czekasz tygodniami.
+                    Sprawnie uruchamiamy kampanie i optymalizujemy je na podstawie danych. Nie obiecujemy sztywnych terminów efektów — tempo zależy od budżetu, branży i liczby konwersji.
                   </p>
                 </div>
                 <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-2">Znamy rynek wrocławski</h3>
+                  <h3 className="text-xl font-bold mb-2">Współpraca zdalna z Poznania</h3>
                   <p className="text-muted-foreground">
-                    Specjalizujemy się w branżach wrocławskich — IT, e-commerce, usługi lokalne, nieruchomości. Znamy konkurencję, słowa kluczowe i CPCy dla każdej branży.
+                    Pracujemy z Poznania, a firmy z Wrocławia obsługujemy zdalnie. Przed startem analizujemy Twoją branżę, konkurencję i słowa kluczowe na rynku wrocławskim.
                   </p>
                 </div>
                 <div className="bg-background rounded-lg border border-border p-6">
@@ -444,7 +398,7 @@ export default function GoogleAdsWroclaw() {
                   Uruchom kampanie Google Ads we Wrocławiu
                 </h2>
                 <p className="text-lg text-slate-300 mb-10">
-                  Bezpłatna konsultacja bez zobowiązań. Poznaj naszą strategię dla Twojej branży. Wyniki od 24-48h.
+                  Bezpłatna konsultacja bez zobowiązań. Poznaj naszą strategię dla Twojej branży.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link

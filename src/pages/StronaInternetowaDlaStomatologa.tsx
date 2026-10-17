@@ -35,7 +35,7 @@ export default function StronaInternetowaDlaStomatologa() {
     {
       question: "Ile kosztuje strona internetowa dla stomatologa?",
       answer:
-        "Strona internetowa dla stomatologa kosztuje od 2000 do 8000 zł w zależności od zakresu. Prosta strona z usługami, galerią i formularzem kontaktowym: 2000-4000 zł. Strona z systemem rezerwacji online: 4000-8000 zł. Do tego hosting (50-150 zł/mies.) i domena (ok. 80 zł/rok). Czas realizacji: 2-4 tygodnie.",
+        "Wycenę przygotowujemy po rozmowie o zakresie. Koszt zależy głównie od liczby podstron i usług do opisania, tego, czy potrzebny jest system rezerwacji online (i z jakim systemem ma się integrować), od przygotowania treści i zdjęć gabinetu oraz od zakresu SEO lokalnego. Hosting i domena to osobne, niewielkie koszty stałe. Termin realizacji ustalamy razem z wyceną.",
     },
     {
       question: "Co powinna zawierać strona stomatologa?",
@@ -50,7 +50,7 @@ export default function StronaInternetowaDlaStomatologa() {
     {
       question: "Czy rezerwacja online zwiększa liczbę wizyt?",
       answer:
-        "Tak — badania pokazują, że gabinety z rezerwacją online mają od 20% do 40% więcej umówionych wizyt. Powody: pacjenci mogą rezerwować o każdej porze (wieczorem, w nocy), nie muszą czekać na linii telefonicznej, mniejsza bariera dla nieśmiałych pacjentów. System rezerwacji zwraca się w ciągu kilku miesięcy.",
+        "Może pomóc, choć efekt zależy od gabinetu i jego pacjentów. Rezerwacja online ułatwia umówienie wizyty: pacjenci mogą rezerwować o każdej porze (wieczorem, w nocy), nie muszą czekać na linii telefonicznej, a bariera jest mniejsza dla osób, które nie lubią dzwonić.",
     },
     {
       question: "Czy strona stomatologa wymaga szczególnych wymogów prawnych?",
@@ -63,7 +63,7 @@ export default function StronaInternetowaDlaStomatologa() {
     <>
       <SEOHead
         title="Strona internetowa dla stomatologa — rezerwacje, SEO, RODO"
-        description="Strona internetowa dla stomatologa — rezerwacje wizyt online, SEO lokalne, galeria, cennik usług i zgodność z RODO. Profesjonalne strony dla gabinetów stomatologicznych od 2000 zł."
+        description="Strona internetowa dla stomatologa — rezerwacje wizyt online, SEO lokalne, galeria, cennik usług i zgodność z RODO. Profesjonalne strony dla gabinetów stomatologicznych — wycena po rozmowie o zakresie."
         canonical="https://www.fotz-studio.pl/uslugi/strona-internetowa-dla-stomatologa"
         keywords="strona internetowa dla stomatologa, strona www gabinetu dentystycznego, strona stomatologa, strona dentysty online"
       />
@@ -95,8 +95,8 @@ export default function StronaInternetowaDlaStomatologa() {
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
                 {[
-                  { value: "od 2000 zł", label: "Cena strony" },
-                  { value: "2-4 tyg.", label: "Czas realizacji" },
+                  { value: "Wycena", label: "Po rozmowie o zakresie" },
+                  { value: "RODO", label: "Zgodne formularze" },
                   { value: "24/7", label: "Rezerwacje online" },
                   { value: "SEO", label: "Lokalna widoczność" },
                 ].map((stat, idx) => (
@@ -149,9 +149,9 @@ export default function StronaInternetowaDlaStomatologa() {
               <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Dlaczego stomatolog potrzebuje strony?</h2>
               <div className="grid md:grid-cols-2 gap-4">
                 {[
-                  "80% pacjentów szuka stomatologa online zanim zadzwoni",
+                  "Wielu pacjentów szuka stomatologa online, zanim zadzwoni",
                   "Pacjenci porównują gabinety — bez strony nie ma Cię w grze",
-                  "Rezerwacja online redukuje obciążenie recepcji o 30-50%",
+                  "Rezerwacja online odciąża recepcję z części telefonów",
                   "Opinie Google decydują o wyborze między gabinetami",
                   "Brak strony = brak widoczności w Google Maps",
                   "Profesjonalna strona buduje zaufanie przed pierwszą wizytą",

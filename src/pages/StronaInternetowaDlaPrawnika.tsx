@@ -35,7 +35,7 @@ export default function StronaInternetowaDlaPrawnika() {
     {
       question: "Ile kosztuje strona internetowa dla prawnika?",
       answer:
-        "Strona internetowa dla prawnika lub kancelarii kosztuje od 2000 do 8000 zł w zależności od zakresu. Prosta strona z prezentacją usług: 2000-4000 zł. Strona z blogiem, formularzami i SEO: 4000-8000 zł. Do tego hosting (50-150 zł/mies.) i domena (ok. 80 zł/rok). Czas realizacji: 2-4 tygodnie.",
+        "Wycenę przygotowujemy po rozmowie o zakresie. Koszt zależy od liczby podstron i specjalizacji do opisania, tego, czy potrzebny jest blog, formularze konsultacji i lokalne SEO, a także od tego, kto przygotowuje treści. Hosting i domena to osobne, stałe koszty utrzymania — omawiamy je przy wycenie. Prosta strona powstaje zwykle w 2-4 tygodnie.",
     },
     {
       question: "Czy prawnik może reklamować się w internecie?",
@@ -63,7 +63,7 @@ export default function StronaInternetowaDlaPrawnika() {
     <>
       <SEOHead
         title="Strona internetowa dla prawnika — kancelaria, SEO, blog | FOTZ Studio"
-        description="Strona internetowa dla prawnika i kancelarii — SEO lokalne, blog prawniczy, formularz kontaktowy, prezentacja specjalizacji. Profesjonalne strony od 2000 zł, które budują autorytet i zdobywają klientów."
+        description="Strona internetowa dla prawnika i kancelarii — SEO lokalne, blog prawniczy, formularz kontaktowy, prezentacja specjalizacji. Profesjonalne strony budujące autorytet kancelarii — wycena po rozmowie o zakresie."
         canonical="https://www.fotz-studio.pl/uslugi/strona-internetowa-dla-prawnika"
         keywords="strona internetowa dla prawnika, strona www kancelarii, strona prawnika, strona kancelarii prawnej, landing page prawnika"
       />
@@ -95,7 +95,7 @@ export default function StronaInternetowaDlaPrawnika() {
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
                 {[
-                  { value: "od 2000 zł", label: "Cena strony" },
+                  { value: "Wycena", label: "Po rozmowie o zakresie" },
                   { value: "2-4 tyg.", label: "Realizacja" },
                   { value: "SEO", label: "Lokalna widoczność" },
                   { value: "Blog", label: "Budowanie autorytetu" },
@@ -149,8 +149,8 @@ export default function StronaInternetowaDlaPrawnika() {
               <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Dlaczego prawnik potrzebuje strony?</h2>
               <div className="grid md:grid-cols-2 gap-4">
                 {[
-                  "75% osób szuka prawnika przez internet przed podjęciem decyzji",
-                  "Strona to 24/7 aktywna wizytówka — klienci znajdą Cię o każdej porze",
+                  "Wiele osób sprawdza prawnika w internecie przed podjęciem decyzji",
+                  "Strona to wizytówka dostępna całą dobę — klienci znajdą Cię o każdej porze",
                   "Blog prawniczy buduje autorytet i generuje organiczny ruch latami",
                   "Brak strony = brak widoczności w Google Maps i wyszukiwarce",
                   "Profesjonalna strona odróżnia Cię od konkurencji i buduje zaufanie",

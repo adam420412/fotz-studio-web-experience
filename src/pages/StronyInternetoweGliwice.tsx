@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { 
-  Globe, Search, ShoppingCart, Palette, MessageSquare, TrendingUp, Phone, Headphones, ArrowRight, Sparkles, Target, Code2, Layers, Rocket, Star, Clock
+  Globe, Search, ShoppingCart, Palette, MessageSquare, TrendingUp, Phone, Headphones, ArrowRight, Sparkles, Target, Code2, Layers, Rocket, Star
 } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
@@ -43,9 +43,9 @@ const StronyInternetoweGliwice = () => {
   ];
 
   const caseStudies = [
-    { title: "Apartamenty Chorwacja", category: "Strona rezerwacyjna", result: "+180% rezerwacji online", link: "/realizacje/apartamenty-chorwacja", image: apartamentyImg },
+    { title: "Apartamenty Chorwacja", category: "Strona rezerwacyjna", result: "Strona z systemem rezerwacji online", link: "/realizacje/apartamenty-chorwacja", image: apartamentyImg },
     { title: "Victory Cars", category: "Strona motoryzacyjna", result: "Nowoczesny design premium", link: "/realizacje/victory-cars", image: victoryCarsImg },
-    { title: "Cute Dumpling", category: "Strona gastronomiczna", result: "+250% ruchu organicznego", link: "/realizacje/cute-dumpling", image: cuteDumplingImg },
+    { title: "Cute Dumpling", category: "Strona gastronomiczna", result: "Strona gastronomiczna z menu i treściami pod SEO", link: "/realizacje/cute-dumpling", image: cuteDumplingImg },
   ];
 
   const faqItems = [
@@ -59,23 +59,23 @@ const StronyInternetoweGliwice = () => {
   const stats = [
     { value: "WWW", label: "Strony i sklepy", icon: Layers },
     { value: "UX", label: "Projekt dla odbiorcy", icon: Star },
-    { value: "5 lat", label: "Doświadczenia", icon: Clock },
+    { value: "Zdalnie", label: "Współpraca z Poznania", icon: Globe },
     { value: "Kontakt", label: "Uzgodniona opieka", icon: Headphones },
   ];
 
   const benefits = [
-    "Znajomość rynku śląskiego",
+    "Zdalna współpraca z firmami ze Śląska",
     "Kompleksowa obsługa od projektu po wdrożenie",
     "SEO w standardzie każdej strony",
     "Responsywny design mobile-first",
     "Wsparcie techniczne po uruchomieniu",
-    "Konkurencyjne ceny bez ukrytych kosztów"
+    "Wycena po rozmowie o zakresie, bez ukrytych kosztów"
   ];
 
   const introContent = {
     title: "Tworzenie stron www dla firm z Gliwic",
     paragraphs: [
-      "Szukasz profesjonalnego partnera do stworzenia strony internetowej dla Twojej firmy w Gliwicach? Nasza agencja specjalizuje się w projektowaniu i wdrażaniu nowoczesnych stron www.",
+      "Szukasz profesjonalnego partnera do stworzenia strony internetowej dla Twojej firmy w Gliwicach? Nasza agencja specjalizuje się w projektowaniu i wdrażaniu nowoczesnych stron www. Pracujemy z Poznania, firmy z Gliwic obsługujemy zdalnie.",
       "Gliwice to jedno z najważniejszych miast aglomeracji śląskiej, będące centrum nauki i technologii. Profesjonalna strona internetowa jest niezbędna dla sukcesu na tym rynku.",
       "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek.",
       "Gliwice to centrum innowacji na Śląsku – siedziba Politechniki Śląskiej i licznych firm technologicznych. Dynamicznie rozwijający się sektor IT i automotive tworzy zapotrzebowanie na nowoczesne strony internetowe."
@@ -191,7 +191,7 @@ const StronyInternetoweGliwice = () => {
           </div>
         </section>
 
-        <CityPricingCards pricing={pricing} title="Cennik stron internetowych" subtitle="Transparentne ceny bez ukrytych kosztów" cityName="Gliwice" />
+        <CityPricingCards pricing={pricing} title="Cennik stron internetowych" subtitle="Wycenę przygotowujemy po rozmowie o zakresie, treściach i integracjach" cityName="Gliwice" />
         <CityLinksSection currentCity="Gliwice" />
 
         {/* FAQ */}
@@ -239,7 +239,7 @@ const StronyInternetoweGliwice = () => {
               Strony www dla technologii i automotive — Śląski Kontekst
             </h2>
             <p className="text-muted-foreground mb-4">
-              Sektor automotive jest mocno obecny w Gliwicach — dostawcy GM, firmy logistyczne i serwisowe potrzebują stron B2B z sekcją partnerstwa, certyfikatów i katalogu usług. Projektujemy strony korporacyjne z wysokimi standardami wizualnymi i technicznymi — Core Web Vitals na poziomie top 10% w Polsce.
+              Sektor automotive jest mocno obecny w Gliwicach — dostawcy GM, firmy logistyczne i serwisowe potrzebują stron B2B z sekcją partnerstwa, certyfikatów i katalogu usług. Projektujemy strony korporacyjne z dbałością o warstwę wizualną i techniczną, w tym o szybkość ładowania i wskaźniki Core Web Vitals.
             </p>
             <p className="text-muted-foreground mb-6">
               Dla środowiska akademickiego i startupowego Gliwic tworzymy strony dla spin-offów Politechniki, firm doradczych i agencji technologicznych. Strony, które muszą jednocześnie rekrutować pracowników, pozyskiwać klientów i budować markę eksperta.
@@ -252,7 +252,7 @@ const StronyInternetoweGliwice = () => {
               Optymalizujemy strony pod słowa kluczowe z Gliwic i całego GOP. Dla firm z zasięgiem ogólnopolskim budujemy strukturę treści, które rankują na frazy ogólne i lokalne jednocześnie. Google Moja Firma, lokalne linki, cytaty — pełen pakiet lokalnego SEO.
             </p>
             <p className="text-muted-foreground">
-              Skontaktuj się z nami — bezpłatna wycena w 24 godziny, projekt w 3–5 tygodni. Tworzymy strony dla firm z Gliwic, które wyróżniają się na tle śląskiej konkurencji.
+              Skontaktuj się z nami — wycenę i harmonogram przygotowujemy po rozmowie o zakresie projektu. Tworzymy strony dla firm z Gliwic, które wyróżniają się na tle śląskiej konkurencji.
             </p>
           
                         <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">

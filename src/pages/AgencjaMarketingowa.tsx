@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, BarChart3, CheckCircle2, Clapperboard, Compass, FileText, Globe2, Mail, MapPin, Megaphone, Palette, Phone, Search, Sparkles, Target, Users } from "lucide-react";
+import { ArrowRight, BarChart3, Clapperboard, Compass, FileText, Globe2, Mail, MapPin, Megaphone, Palette, Phone, Search, Sparkles, Target, Users } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { Button } from "@/components/ui/button";
@@ -82,12 +82,12 @@ const processSteps = [
 ];
 
 const priceItems = [
-  { name: "Konsultacja i audyt marketingu", price: "od 900 zł netto", note: "dla firm, które chcą uporządkować priorytety i budżet" },
-  { name: "Strategia marketingowa", price: "od 4 500 zł netto", note: "pozycjonowanie, kanały, plan działań i KPI" },
-  { name: "Stała obsługa marketingowa", price: "od 3 500 zł netto / mies.", note: "koordynacja działań, content, kampanie i raportowanie" },
-  { name: "Strona internetowa lub landing page", price: "od 2 000 zł netto", note: "projekt, copy, wdrożenie i podstawowe SEO" },
-  { name: "Kampanie reklamowe", price: "od 1 500 zł netto / mies.", note: "Google Ads, Meta Ads, LinkedIn lub TikTok" },
-  { name: "Produkcja video", price: "od 3 000 zł netto", note: "scenariusz, plan, zdjęcia, montaż i formaty social" },
+  { name: "Konsultacja i audyt marketingu", note: "zakres zależy od liczby kanałów, stanu analityki i ilości materiałów do przejrzenia" },
+  { name: "Strategia marketingowa", note: "zależy od liczby grup odbiorców, rynków, ofert i głębokości analizy konkurencji" },
+  { name: "Stała obsługa marketingowa", note: "zależy od liczby kanałów, częstotliwości publikacji, produkcji contentu i raportowania" },
+  { name: "Strona internetowa lub landing page", note: "zależy od liczby podstron, copy, integracji i zakresu SEO" },
+  { name: "Kampanie reklamowe", note: "wynagrodzenie za obsługę zależy od liczby kampanii i platform; budżet reklamowy płacisz platformie osobno" },
+  { name: "Produkcja video", note: "zależy od liczby dni zdjęciowych, lokalizacji, ekipy, animacji i liczby formatów" },
 ];
 
 const faqs = [
@@ -113,7 +113,7 @@ const faqs = [
   },
   {
     q: "Ile kosztuje współpraca z agencją marketingową?",
-    a: "Budżet zależy od zakresu. Proste konsultacje zaczynają się od 900 zł netto, landing page od 2 000 zł netto, strategia od 4 500 zł netto, a stała obsługa marketingowa od 3 500 zł netto miesięcznie.",
+    a: "Budżet zależy od zakresu: liczby kanałów, skali produkcji, konkurencyjności rynku i tego, czy startujemy od zera. Wycenę przygotowujemy po rozmowie o zakresie i celach. Budżet reklamowy płacony platformom (Google, Meta) jest zawsze osobną pozycją.",
   },
   {
     q: "Czy prowadzicie kampanie Google Ads i SEO równolegle?",
@@ -356,7 +356,6 @@ export default function AgencjaMarketingowa() {
                   {priceItems.map((item) => (
                     <div key={item.name} className="rounded-lg border border-border bg-card p-6">
                       <h3 className="font-geist text-xl font-semibold">{item.name}</h3>
-                      <p className="mt-3 text-2xl font-semibold text-primary">{item.price}</p>
                       <p className="mt-3 text-sm text-muted-foreground">{item.note}</p>
                     </div>
                   ))}

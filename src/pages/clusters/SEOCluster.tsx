@@ -4,149 +4,326 @@ import { SEOHead } from "@/components/seo/SEOHead";
 import { BreadcrumbSchema, FAQSchema, ServiceSchema } from "@/components/seo/StructuredData";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { Search, BarChart3, MapPin, ShoppingCart, ArrowRight, CheckCircle, TrendingUp, Eye, Target, Zap, FileSearch, Link2, Code2, Globe } from "lucide-react";
+import {
+  Search,
+  BarChart3,
+  MapPin,
+  ShoppingCart,
+  ArrowRight,
+  CheckCircle,
+  TrendingUp,
+  FileSearch,
+  Link2,
+  Zap,
+  Sparkles,
+  PenLine,
+  XCircle,
+} from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const services = [
   {
     icon: Search,
     title: "Audyt SEO",
-    description: "Kompleksowa analiza techniczna Twojej strony, identyfikacja błędów i rekomendacje. Audytujemy Core Web Vitals, strukturę URL, indeksację i content.",
+    description:
+      "Diagnoza strony przed startem pozycjonowania: indeksacja, błędy techniczne, struktura treści, linkowanie wewnętrzne i profil linków. Dostajesz listę zadań ułożoną według priorytetu, a nie sam raport z błędami.",
     href: "/seo/audyt",
-    features: ["Analiza techniczna", "Core Web Vitals", "Raport z rekomendacjami"],
+    features: ["Analiza techniczna i on-site", "Przegląd konkurencji w wyszukiwarce", "Plan zadań z priorytetami"],
   },
   {
     icon: TrendingUp,
     title: "Pozycjonowanie stron",
-    description: "Długoterminowa strategia SEO budująca organiczną widoczność. Optymalizacja on-page, link building i monitoring pozycji na kluczowe frazy.",
+    description:
+      "Stała opieka SEO nad serwisem firmy: dobór fraz, optymalizacja podstron, nowe treści i budowa autorytetu domeny. Szczegóły usługi opisujemy na osobnej stronie.",
     href: "/seo/pozycjonowanie",
-    features: ["Strategia słów kluczowych", "Link building", "Monitoring pozycji"],
+    features: ["Strategia SEO i dobór fraz", "Optymalizacja podstron", "Raporty i rekomendacje"],
   },
   {
     icon: MapPin,
-    title: "SEO Lokalne Poznań",
-    description: "Dominuj w lokalnych wynikach wyszukiwania. Optymalizacja Google Business Profile, cytaty NAP i strategie dla firm działających lokalnie.",
-    href: "/seo/lokalne-poznan",
-    features: ["Google Business Profile", "Cytaty NAP", "Mapy Google"],
+    title: "Pozycjonowanie lokalne",
+    description:
+      "Local SEO dla firm, które obsługują klientów w konkretnym mieście lub regionie: profil firmy w Google, podstrony lokalne, spójne dane kontaktowe i opinie.",
+    href: "/uslugi/pozycjonowanie-lokalne",
+    features: ["Profil firmy w Google", "Podstrony pod miasta", "Spójne dane NAP"],
   },
   {
     icon: MapPin,
-    title: "Pozycjonowanie Google Maps",
-    description: "Zwiększ widoczność w Mapach Google. Optymalizacja profilu, zbieranie opinii, lokalne słowa kluczowe i zarządzanie obecnością w mapach.",
+    title: "Pozycjonowanie w Mapach Google",
+    description:
+      "Praca nad widocznością wizytówki w Mapach Google: kategorie, opisy, zdjęcia, wpisy, odpowiedzi na opinie i powiązanie wizytówki ze stroną.",
     href: "/seo/google-maps",
-    features: ["Optymalizacja profilu", "Zarządzanie opiniami", "Local Pack"],
+    features: ["Optymalizacja wizytówki", "Obsługa opinii", "Wyniki mapowe"],
   },
   {
     icon: ShoppingCart,
     title: "SEO dla e-commerce",
-    description: "Specjalistyczne pozycjonowanie sklepów internetowych. Optymalizacja kart produktów, kategorii, filtrów i struktury danych produktowych.",
+    description:
+      "Sklep internetowy ma inne problemy niż strona firmowa: filtry, warianty, duplikaty opisów, paginacja. Porządkujemy kategorie i karty produktów pod kątem SEO.",
     href: "/seo/ecommerce",
-    features: ["Schema produktowe", "Optymalizacja kategorii", "Filtry faceted"],
+    features: ["Struktura kategorii", "Karty produktów", "Kontrola indeksacji filtrów"],
   },
   {
     icon: BarChart3,
     title: "Pozycjonowanie Poznań",
-    description: "Dedykowane usługi SEO dla firm z Poznania i okolic. Lokalna ekspertyza, znajomość rynku i bezpośredni kontakt z zespołem.",
+    description:
+      "Oferta dla firm z Poznania i okolic, które chcą spotkać się z zespołem na miejscu i budować widoczność na lokalne zapytania.",
     href: "/seo/pozycjonowanie-poznan",
-    features: ["Lokalna ekspertyza", "Bezpośredni kontakt", "Raporty miesięczne"],
+    features: ["Spotkania w Poznaniu", "Frazy lokalne", "Strona i wizytówka razem"],
   },
   {
     icon: FileSearch,
-    title: "Optymalizacja On-Page",
-    description: "Meta tagi, nagłówki, treści, schema markup, Core Web Vitals. Wszystko, co Google analizuje bezpośrednio na Twojej stronie.",
+    title: "SEO on-site",
+    description:
+      "Tytuły, opisy, nagłówki, treści, dane strukturalne i linkowanie wewnętrzne, czyli wszystko, co wyszukiwarka czyta bezpośrednio na Twojej stronie.",
     href: "/seo/on-page",
-    features: ["Meta tagi i H1-H6", "Core Web Vitals", "Schema markup JSON-LD"],
-  },
-  {
-    icon: Link2,
-    title: "SEO Off-Page i Link Building",
-    description: "Budowanie autorytetu domeny przez wartościowe linki, digital PR i wzmianki. Naturalnie i bezpiecznie.",
-    href: "/seo/off-page",
-    features: ["Link building white hat", "Digital PR", "Analiza profilu linków"],
+    features: ["Meta tagi i nagłówki", "Dane strukturalne", "Linkowanie wewnętrzne"],
   },
   {
     icon: Zap,
-    title: "Techniczne SEO",
-    description: "Szybkość, indeksacja, crawl budget, robots.txt, sitemap, HTTPS. Fundament bez którego inne działania SEO nie dają efektów.",
+    title: "Technical SEO",
+    description:
+      "Szybkość, indeksacja, przekierowania, mapa strony, robots.txt i wersja mobilna. Bez tego fundamentu pozostałe działania SEO tracą sens.",
     href: "/seo/techniczne",
-    features: ["Core Web Vitals", "Optymalizacja crawl budget", "Audyt techniczny"],
+    features: ["Indeksacja i crawl", "Core Web Vitals", "Przekierowania i błędy 404"],
   },
   {
     icon: Link2,
-    title: "Link Building",
-    description: "Budujemy profil backlinków wysokiej jakości: linki z mediów, portali branżowych i prasy lokalnej. Bezpiecznie i skutecznie.",
-    href: "/seo/link-building",
-    features: ["Linki z mediów i prasy", "Guest posting", "Broken link building"],
+    title: "Link building i off-page",
+    description:
+      "Pozyskiwanie wartościowych linków i wzmianek o marce: publikacje branżowe, portale lokalne, partnerzy. Bez farm linków i systemów wymiany.",
+    href: "/seo/off-page",
+    features: ["Analiza profilu linków", "Publikacje tematyczne", "Wzmianki o marce"],
   },
   {
-    icon: FileSearch,
-    title: "Copywriting SEO",
-    description: "Piszemy teksty, które rankują wysoko i konwertują. Analiza intencji wyszukiwania, optymalizacja fraz, treści, które sprzedają.",
+    icon: PenLine,
+    title: "SEO copywriting",
+    description:
+      "Teksty na podstrony usług, kategorie i blog pisane pod intencję użytkownika: najpierw odpowiedź na pytanie klienta, potem frazy.",
     href: "/seo/copywriting-seo",
-    features: ["Analiza intencji wyszukiwania", "Optymalizacja fraz", "Teksty konwertujące"],
+    features: ["Analiza intencji", "Teksty usługowe i blogowe", "Optymalizacja istniejących treści"],
+  },
+  {
+    icon: Sparkles,
+    title: "SEO a AI",
+    description:
+      "Przygotowanie treści i danych strony tak, by marka była zrozumiała dla Google AI Overviews i asystentów AI, które coraz częściej odpowiadają na pytania klientów.",
+    href: "/ai-seo",
+    features: ["Treści odpowiadające na pytania", "Dane o firmie i ofercie", "Spójny wizerunek marki w sieci"],
   },
 ];
 
-const stats = [
-  { value: "150+", label: "Zoptymalizowanych stron", icon: Eye },
-  { value: "Top 3", label: "Pozycje dla klientów", icon: Target },
-  { value: "+340%", label: "Średni wzrost ruchu organicznego", icon: TrendingUp },
-  { value: "98%", label: "Klientów z widocznym wzrostem", icon: Zap },
+const cityOffers = [
+  { label: "Poznań", href: "/seo/pozycjonowanie-poznan" },
+  { label: "Warszawa", href: "/seo/pozycjonowanie-warszawa" },
+  { label: "Kraków", href: "/seo/pozycjonowanie-krakow" },
+  { label: "Wrocław", href: "/seo/pozycjonowanie-wroclaw" },
+  { label: "Gdańsk", href: "/seo/pozycjonowanie-gdansk" },
+  { label: "Łódź", href: "/seo/pozycjonowanie-lodz" },
+  { label: "Katowice", href: "/seo/pozycjonowanie-katowice" },
+  { label: "Lublin", href: "/seo/pozycjonowanie-lublin" },
+];
+
+const choosingCriteria = [
+  {
+    title: "Zaczyna od pytań o biznes, nie od listy fraz",
+    text: "Dobra agencja SEO najpierw pyta, które usługi lub produkty są dla Ciebie najważniejsze, kto jest klientem i gdzie kończy się Twój obszar działania. Dopiero potem dobiera frazy. Ruch, który nie zamienia się w zapytania, nie jest celem.",
+  },
+  {
+    title: "Pokazuje, co dokładnie zrobi",
+    text: "Profesjonalna agencja potrafi opisać zakres prac na najbliższe miesiące: które podstrony poprawi, jakie treści napisze, co zmieni w kodzie, jak będzie zdobywać linki. Hasło „kompleksowe działania SEO” bez konkretów to sygnał ostrzegawczy.",
+  },
+  {
+    title: "Daje dostęp do danych",
+    text: "Google Search Console, Google Analytics 4 i wizytówka firmy powinny należeć do Ciebie. Agencja dostaje uprawnienia, a nie przejmuje kont. Dzięki temu w każdej chwili widzisz te same dane co specjalista SEO.",
+  },
+  {
+    title: "Mówi o ryzyku i czasie",
+    text: "Proces pozycjonowania rozkłada się na miesiące, a wyniki zależą też od konkurencji i zmian w algorytmach. Rzetelna agencja SEO mówi o tym przed podpisaniem umowy i nie obiecuje konkretnych pozycji w określonym terminie.",
+  },
+  {
+    title: "Ma kompetencje w treściach i technice",
+    text: "Skuteczne pozycjonowanie wymaga zarówno pracy z kodem strony, jak i dobrego contentu. Sprawdź, czy agencja ma w zespole osoby, które wdrażają zmiany techniczne, a nie tylko je zalecają, i czy pisze teksty, które da się czytać.",
+  },
+  {
+    title: "Stosuje bezpieczne metody",
+    text: "Masowe linki z przypadkowych katalogów, ukryty tekst czy kopiowane treści mogą przynieść krótkotrwały wzrost, a potem spadek widoczności. Zapytaj wprost, skąd agencja pozyskuje linki i jak pisze teksty.",
+  },
+];
+
+const redFlags = [
+  "Obietnica konkretnej pozycji w Google w określonym terminie",
+  "Brak dostępu do danych i raportów źródłowych",
+  "Setki linków „w pakiecie” bez informacji, skąd pochodzą",
+  "Teksty generowane hurtem, bez redakcji i bez sprawdzenia faktów",
+  "Umowa, w której nie wiadomo, co agencja robi co miesiąc",
+];
+
+const processSteps = [
+  {
+    step: "01",
+    title: "Rozmowa i brief",
+    desc: "Poznajemy firmę, ofertę, klientów i dotychczasowe działania marketingowe. Ustalamy, które usługi mają przynosić zapytania i jaki obszar obsługujesz.",
+  },
+  {
+    step: "02",
+    title: "Audyt SEO i analiza konkurencji",
+    desc: "Sprawdzamy stronę technicznie i treściowo, przeglądamy wyniki wyszukiwania dla ważnych zapytań i porównujemy się z firmami, które dziś są wyżej.",
+  },
+  {
+    step: "03",
+    title: "Strategia SEO",
+    desc: "Przygotowujemy mapę fraz i podstron, plan treści, listę zmian technicznych i propozycję działań off-page. Każde zadanie ma priorytet.",
+  },
+  {
+    step: "04",
+    title: "Wdrożenie",
+    desc: "Poprawiamy stronę, piszemy i optymalizujemy treści, porządkujemy wizytówkę firmy. Jeśli strona wymaga przebudowy, możemy zrobić ją w naszym zespole WWW.",
+  },
+  {
+    step: "05",
+    title: "Content i linki",
+    desc: "Rozbudowujemy serwis o nowe podstrony i artykuły, które odpowiadają na pytania klientów, oraz pozyskujemy linki z tematycznych miejsc.",
+  },
+  {
+    step: "06",
+    title: "Pomiar i korekty",
+    desc: "Śledzimy widoczność, ruch z wyszukiwarki i zapytania. Dane z kolejnych miesięcy kampanii SEO pozwalają dostosować strategię SEO, zamiast trzymać się planu, który przestał działać.",
+  },
+];
+
+const audiences = [
+  {
+    title: "Firmy usługowe i lokalne",
+    text: "Gabinety, warsztaty, kancelarie, firmy budowlane czy szkoły, które pozyskują klientów z jednego miasta lub regionu. Klienci, którzy chcą wyszukiwać usługi w okolicy, widzą najpierw mapę i kilka wizytówek. Tu najważniejsze są local SEO, wizytówka w Mapach Google i podstrony usług z nazwą miejscowości.",
+  },
+  {
+    title: "Sklepy internetowe",
+    text: "Sklep internetowy potrzebuje uporządkowanej struktury kategorii, opisów produktów i kontroli nad indeksacją filtrów. SEO dla e-commerce łączymy z analizą, które kategorie sprzedają najlepiej.",
+  },
+  {
+    title: "Firmy B2B i produkcyjne",
+    text: "Długi proces decyzyjny, mało zapytań, ale o dużej wartości. Budujemy treści, które tłumaczą ofertę inżynierom, zakupowcom i zarządom, oraz podstrony pod konkretne zastosowania produktów.",
+  },
+  {
+    title: "Firmy spoza Poznania",
+    text: "Zespół FOTZ pracuje w Poznaniu, a firmy z innych miast obsługujemy zdalnie: spotkania online, wspólne dokumenty, dostęp do raportów. W SEO lokalizacja agencji ma mniejsze znaczenie niż znajomość rynku klienta, dlatego zaczynamy od poznania Twojej okolicy i konkurencji.",
+  },
+];
+
+const pricingFactors = [
+  "Konkurencja w branży i liczba firm walczących o te same zapytania w wyszukiwarce Google",
+  "Stan techniczny strony: czy wystarczą poprawki, czy potrzebna jest przebudowa",
+  "Liczba usług, produktów i lokalizacji, które mają być widoczne",
+  "Ilość treści do napisania lub przepisania co miesiąc",
+  "Zakres działań off-page i link buildingu",
+  "Czy SEO ma iść w parze z kampaniami Google Ads, social media lub nową stroną",
 ];
 
 const faqs = [
   {
-    question: "Ile trwa pozycjonowanie strony?",
-    answer: "Pierwsze efekty widoczne są po 3-6 miesiącach. Pełne rezultaty SEO budują się w ciągu 6-12 miesięcy. To inwestycja długoterminowa – raz zbudowana widoczność utrzymuje się latami."
+    question: "Co to jest agencja SEO i czym się zajmuje?",
+    answer:
+      "Agencja SEO to firma, która zwiększa widoczność stron internetowych w wynikach wyszukiwania Google. Czym zajmuje się agencja SEO na co dzień? Audytem strony, doborem fraz, optymalizacją treści i kodu, pisaniem nowych tekstów, pozyskiwaniem linków, lokalnym SEO i raportowaniem. Coraz częściej także przygotowaniem marki na odpowiedzi AI.",
   },
   {
-    question: "Czy SEO się opłaca dla małej firmy?",
-    answer: "Zdecydowanie tak. SEO lokalne pozwala małym firmom konkurować z dużymi graczami w swoim regionie. Koszt pozyskania klienta przez SEO jest wielokrotnie niższy niż przez płatne reklamy."
+    question: "Ile kosztuje SEO miesięcznie?",
+    answer:
+      "Nie podajemy stałego cennika, bo koszt pozycjonowania zależy od konkurencji w branży, stanu strony, liczby usług i lokalizacji oraz ilości treści do przygotowania. Po rozmowie i wstępnej analizie przygotowujemy wycenę z opisem zadań na pierwsze miesiące, żeby było jasne, za co płacisz.",
   },
   {
-    question: "Co obejmuje audyt SEO?",
-    answer: "Audyt SEO obejmuje analizę techniczną (szybkość, indeksacja, Core Web Vitals), analizę on-page (treści, meta tagi, nagłówki), analizę off-page (profil linków) oraz rekomendacje z priorytetyzacją działań."
+    question: "Jak rozpoznać dobrą agencję SEO?",
+    answer:
+      "Dobra agencja SEO zadaje pytania o Twój biznes, pokazuje konkretny plan prac, daje Ci dostęp do Search Console i Analytics, uczciwie mówi o czasie potrzebnym na efekty i nie obiecuje konkretnego miejsca w Google. Cechą rzetelnej agencji SEO jest też to, że mówi, kto realnie wdraża zmiany na stronie i pisze treści.",
   },
   {
-    question: "Jaka jest różnica między SEO a Google Ads?",
-    answer: "SEO buduje długotrwałą, organiczną widoczność – efekty utrzymują się po zakończeniu działań. Google Ads daje natychmiastowy ruch, ale wymaga stałego budżetu. Najlepsza strategia łączy oba kanały."
+    question: "Czy możecie zagwarantować pierwsze miejsce w Google?",
+    answer:
+      "Nie. Żadna agencja nie kontroluje algorytmu Google, więc nie dajemy gwarancji pozycji. Możemy za to opisać, co zrobimy, pokazać postęp na danych i reagować, gdy coś nie działa.",
   },
   {
-    question: "Czy pozycjonujecie strony na WordPressie?",
-    answer: "Tak, pozycjonujemy strony na każdej platformie – WordPress, Shopify, custom CMS i inne. Każda platforma wymaga specyficznego podejścia technicznego, które znamy i stosujemy."
+    question: "Po jakim czasie widać efekty pozycjonowania?",
+    answer:
+      "Zależy to od wieku domeny, stanu strony i konkurencji. Poprawki techniczne i optymalizacja istniejących podstron mogą dać pierwsze zmiany szybciej, a budowa widoczności na trudne frazy to zwykle praca na wiele miesięcy. Realne oczekiwania omawiamy po audycie.",
   },
   {
-    question: "Jak mierzycie efekty pozycjonowania?",
-    answer: "Monitorujemy pozycje na wybrane frazy kluczowe, ruch organiczny z Google Analytics 4, widoczność w Google Search Console, Domain Rating w Ahrefs oraz konwersje i leady. Klient otrzymuje miesięczny raport z danymi i rekomendacjami."
+    question: "Czy macie biura w innych miastach?",
+    answer:
+      "Nie. Zespół FOTZ Studio pracuje w Poznaniu. Firmy z innych miast obsługujemy zdalnie, a strony z ofertą dla poszczególnych miast opisują, jak wygląda taka współpraca.",
   },
   {
-    question: "Czy oferujecie pozycjonowanie lokalne w Poznaniu?",
-    answer: "Tak, SEO lokalne w Poznaniu to nasza specjalizacja. Optymalizujemy Google Business Profile, budujemy cytaty NAP na lokalnych portalach i pozycjonujemy strony na frazy z nazwą miasta. Nasze case study pokazuje wzrost ruchu o 520% dla klienta lokalnego."
+    question: "Czym różni się agencja SEO od agencji marketingowej?",
+    answer:
+      "Agencja SEO skupia się na widoczności w wyszukiwarce: strona, treści, linki, wizytówka. Agencja marketingowa obejmuje szerzej komunikację marki, reklamy i social media. Na rynku marketingu w Polsce wiele firm łączy oba obszary, podobnie jak agencje SEO i SEM. My robimy marketing SEO razem z kampaniami reklamowymi, stronami i produkcją treści, więc możesz zlecić jeden obszar albo kilka naraz.",
   },
   {
-    question: "Ile kosztuje pozycjonowanie strony?",
-    answer: "Koszt pozycjonowania zależy od konkurencyjności branży, obecnego stanu strony i zakresu działań. Typowe budżety SEO zaczynają się od 1500 zł miesięcznie dla firm lokalnych do 5000+ zł dla e-commerce i branż ogólnopolskich. Oferujemy bezpłatną wycenę po audycie."
+    question: "Czy przejmujecie SEO po innej agencji?",
+    answer:
+      "Tak. Zaczynamy wtedy od audytu, przeglądu dotychczasowych działań i profilu linków. Jeśli w przeszłości stosowano ryzykowne metody, najpierw je porządkujemy.",
+  },
+  {
+    question: "Czy łączycie SEO z Google Ads i innymi działaniami?",
+    answer:
+      "Tak, jeśli ma to sens dla Twojego celu. SEO i SEM, czyli pozycjonowanie i kampanie Google Ads, dobrze się uzupełniają: reklamy dają ruch od razu, a SEO buduje widoczność, która nie znika po wyłączeniu budżetu. Możemy też przygotować stronę, treści wideo i zdjęcia.",
+  },
+  {
+    question: "Na jakich platformach pracujecie?",
+    answer:
+      "Na stronach w WordPressie, sklepach na popularnych platformach e-commerce i serwisach pisanych na zamówienie. Zakres zmian, które możemy wdrożyć sami, ustalamy po sprawdzeniu dostępu do strony.",
   },
 ];
+
+const deliverables = [
+  {
+    title: "Plan działań na start",
+    text: "Po audycie dostajesz listę zadań z priorytetami: co poprawiamy od razu, co w kolejnych miesiącach i czego na razie nie warto ruszać. To podstawa strategii pozycjonowania, do której wracamy przy każdym podsumowaniu.",
+  },
+  {
+    title: "Mapa fraz i podstron",
+    text: "Przypisujemy zapytania klientów do konkretnych podstron, żeby kilka stron nie konkurowało o to samo. Widać od razu, których treści brakuje i które podstrony trzeba połączyć lub rozbudować.",
+  },
+  {
+    title: "Wdrożone zmiany, nie tylko rekomendacje",
+    text: "Jeśli mamy dostęp do strony, zmiany techniczne i treściowe wprowadzamy sami. Jeśli stroną opiekuje się inna firma, przygotowujemy dla niej precyzyjne wytyczne i sprawdzamy, czy zostały wdrożone.",
+  },
+  {
+    title: "Raport z komentarzem",
+    text: "W raporcie pokazujemy widoczność, ruch z wyszukiwarki i zapytania ze strony, ale przede wszystkim opisujemy, co z tego wynika i co robimy dalej. Liczby bez wniosków nie pomagają w decyzjach.",
+  },
+];
+
+const guides = [
+  { label: "Jak wybrać agencję SEO", href: "/blog/jak-wybrac-agencje-seo" },
+  { label: "Ile kosztuje pozycjonowanie", href: "/blog/ile-kosztuje-pozycjonowanie" },
+  { label: "Audyt SEO krok po kroku", href: "/blog/audyt-seo-krok-po-kroku" },
+  { label: "SEO czy Google Ads", href: "/blog/seo-vs-google-ads" },
+  { label: "Pozycjonowanie lokalne dla firm", href: "/blog/pozycjonowanie-lokalne-dla-firm" },
+  { label: "SEO dla sklepu internetowego", href: "/blog/seo-dla-sklepu-internetowego" },
+];
+
+const fadeUp = {
+  initial: { opacity: 0, y: 20 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true },
+};
 
 export default function SEOCluster() {
   return (
     <Layout>
       <SEOHead
-        title="SEO i Pozycjonowanie Stron | Fotz Studio Poznań"
-        description="Kompleksowe usługi SEO: audyt, pozycjonowanie, SEO lokalne, Google Maps. Zwiększ widoczność w Google i pozyskuj klientów organicznie."
+        title="Agencja SEO — marketing w Google i AI | FOTZ Studio"
+        description="Czym jest agencja SEO i jak pracujemy: audyt, strategia pozycjonowania, local SEO, content marketing i SEO pod AI. Wycena bez pakietów. FOTZ Poznań."
         canonical="https://www.fotz-studio.pl/seo"
-        keywords="SEO, pozycjonowanie stron, audyt SEO, SEO lokalne, pozycjonowanie Poznań, Google Maps, optymalizacja"
+        keywords="agencja SEO, agencja SEO Poznań, usługi SEO, audyt SEO, pozycjonowanie lokalne, SEO AI, marketing internetowy"
       />
       <BreadcrumbSchema
         items={[
           { name: "Strona główna", url: "https://www.fotz-studio.pl" },
-          { name: "SEO i Pozycjonowanie", url: "https://www.fotz-studio.pl/seo" },
+          { name: "Agencja SEO", url: "https://www.fotz-studio.pl/seo" },
         ]}
       />
       <ServiceSchema
-        name="SEO i Pozycjonowanie - Fotz Studio"
-        description="Kompleksowe usługi SEO: audyt techniczny, pozycjonowanie stron, SEO lokalne i optymalizacja e-commerce"
+        name="Agencja SEO - FOTZ Studio"
+        description="Usługi agencji SEO: audyt, strategia SEO, pozycjonowanie stron, local SEO, SEO dla e-commerce, content marketing i widoczność w odpowiedziach AI"
       />
 
       {/* Hero */}
@@ -172,19 +349,20 @@ export default function SEOCluster() {
             className="text-center max-w-4xl mx-auto"
           >
             <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
-              Organiczny wzrost
+              Agencja SEO · Poznań i cała Polska zdalnie
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 leading-tight">
-              SEO i{" "}
-              <span className="text-gradient">Pozycjonowanie</span>
+              Agencja SEO i marketing internetowy: <span className="text-gradient">widoczność w Google i AI</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-10 leading-relaxed">
-              Zwiększ widoczność Twojej strony w Google i przyciągnij klientów, którzy aktywnie szukają Twoich usług. Budujemy długoterminową strategię SEO opartą na danych.
+              Szukasz agencji SEO, która powie, co konkretnie zrobi z Twoją stroną? FOTZ Studio łączy audyt, strategię SEO,
+              treści i zmiany techniczne w jeden plan. Pracujemy dla firm usługowych, sklepów internetowych i firm B2B, a w
+              tym samym zespole robimy strony WWW, wideo i kampanie reklamowe.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="hero" size="lg" asChild>
                 <Link to="/kontakt">
-                  Bezpłatna konsultacja SEO
+                  Porozmawiajmy o SEO
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Link>
               </Button>
@@ -196,40 +374,51 @@ export default function SEOCluster() {
         </div>
       </section>
 
-      {/* Stats */}
-      <section className="py-16 border-y border-border/50">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, i) => (
-              <motion.div
-                key={stat.label}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className="text-center"
-              >
-                <stat.icon className="w-6 h-6 text-primary mx-auto mb-3" />
-                <div className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-1">{stat.value}</div>
-                <div className="text-sm text-muted-foreground">{stat.label}</div>
-              </motion.div>
-            ))}
-          </div>
+      {/* Czym zajmuje się agencja SEO */}
+      <section className="py-16 md:py-20 border-y border-border/50">
+        <div className="max-w-4xl mx-auto px-4">
+          <motion.div {...fadeUp}>
+            <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Czym jest i czym zajmuje się agencja SEO?</h2>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              Czym jest agencja SEO? W praktyce to zespół, który sprawia, że klienci znajdują Twoją firmę, kiedy chcą wyszukiwać produkty lub
+              usługi w Google, a Twoja strona pojawia się w wynikach wyszukiwania tam, gdzie oni patrzą. Praca agencji obejmuje kilka obszarów naraz: technical SEO (czy wyszukiwarka
+              może poprawnie odczytać stronę), SEO on-site (czy treści i nagłówki odpowiadają na zapytania), content (czy na
+              stronie jest wszystko, czego szuka klient) i off-page (czy inne serwisy wskazują na Twoją markę). Do tego
+              dochodzi local SEO dla firm działających w jednym mieście oraz analiza danych, która pokazuje, co przynosi
+              efekty.
+            </p>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              SEO to fundament widoczności firmy w internecie, bo wyszukiwarka jest miejscem, w którym klienci porównują
+              oferty i sprawdzają, komu zaufać. Jednocześnie SEO to proces, a nie jednorazowa usługa. Wyniki wyszukiwania zmieniają się codziennie, konkurencja publikuje
+              nowe treści, a Google rozwija algorytmy i odpowiedzi AI. Dlatego współpraca z agencją SEO zwykle trwa dłużej
+              niż jeden projekt: najpierw porządkujemy fundamenty, potem systematycznie zwiększamy widoczność strony na
+              kolejne zapytania. Celem pozycjonowania nie jest sam ruch, tylko zapytania i sprzedaż.
+            </p>
+            <h3 className="text-xl font-heading font-semibold mb-3 mt-8">Kim jesteśmy</h3>
+            <p className="text-muted-foreground leading-relaxed">
+              FOTZ Studio to agencja kreatywna z Poznania. Robimy wideo i zdjęcia, strony internetowe, prowadzimy social
+              media, kampanie Meta Ads i działania SEO. Dla klienta oznacza to jedno miejsce, w którym
+              strona, treści, materiały wizualne i pozycjonowanie są planowane razem. Nie jesteśmy wyłącznie agencją SEO
+              i nie udajemy sieci oddziałów w całej Polsce: zespół pracuje w Poznaniu, a klientów z innych miast obsługuje
+              zdalnie.
+            </p>
+            <p className="text-muted-foreground leading-relaxed mt-4">
+              W zakresie SEO nasza agencja zajmuje się wszystkim, co wpływa na widoczność strony: od technical SEO, przez
+              treści, po wizytówkę w Mapach Google. Eksperci SEO pracują u nas obok projektantów stron, copywriterów i
+              osób od reklam, więc zmiany na stronie nie czekają tygodniami na innego wykonawcę.
+            </p>
+          </motion.div>
         </div>
       </section>
 
-      {/* Services Grid */}
+      {/* Usługi */}
       <section className="py-20 md:py-28">
         <div className="max-w-6xl mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Nasze usługi SEO</h2>
+          <motion.div {...fadeUp} className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Usługi naszej agencji SEO</h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Od audytu technicznego po kompleksowe pozycjonowanie – dobieramy strategię do Twoich celów biznesowych.
+              Naszym zadaniem jest zwiększać widoczność Twojej firmy tam, gdzie szukają jej klienci. Każda usługa SEO ma osobną stronę z opisem zakresu. Wybierz to, czego potrzebujesz, albo zacznij od audytu, a
+              zakres dobierzemy razem.
             </p>
           </motion.div>
 
@@ -240,7 +429,7 @@ export default function SEOCluster() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.08 }}
+                transition={{ delay: i * 0.06 }}
               >
                 <Link
                   to={service.href}
@@ -262,7 +451,7 @@ export default function SEOCluster() {
                     ))}
                   </ul>
                   <div className="mt-4 flex items-center text-primary text-sm font-medium group-hover:gap-2 transition-all">
-                    Dowiedz się więcej <ArrowRight className="w-4 h-4 ml-1" />
+                    Zobacz zakres <ArrowRight className="w-4 h-4 ml-1" />
                   </div>
                 </Link>
               </motion.div>
@@ -271,188 +460,281 @@ export default function SEOCluster() {
         </div>
       </section>
 
-      {/* Why SEO Section */}
+      {/* Miasta */}
+      <section className="py-16 md:py-20 bg-muted/30">
+        <div className="max-w-4xl mx-auto px-4">
+          <motion.div {...fadeUp}>
+            <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Agencja SEO w Poznaniu, SEO w Polsce zdalnie</h2>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              W Poznaniu możemy spotkać się na miejscu, a z firmami z innych miast pracujemy zdalnie: spotkania online,
+              wspólne dokumenty i dostęp do tych samych danych. Nie mamy biur poza Poznaniem. Dla wybranych miast
+              przygotowaliśmy osobne strony, które opisują pozycjonowanie z uwzględnieniem lokalnego rynku.
+            </p>
+            <div className="flex flex-wrap gap-3">
+              {cityOffers.map((city) => (
+                <Link
+                  key={city.href}
+                  to={city.href}
+                  className="px-4 py-2 rounded-full bg-card border border-border/50 text-sm text-foreground/80 hover:text-primary hover:border-primary/30 transition-colors"
+                >
+                  Pozycjonowanie {city.label}
+                </Link>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Jak wybrać agencję SEO */}
+      <section className="py-20 md:py-28">
+        <div className="max-w-6xl mx-auto px-4">
+          <motion.div {...fadeUp} className="max-w-3xl mb-12">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Wybór agencji SEO: po czym poznać, że to dobra agencja SEO?</h2>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              Wybór agencji to decyzja na wiele miesięcy, więc warto zadać kilka pytań przed podpisaniem umowy. Poniżej
+              kryteria, po których można ocenić, czy dana agencja SEO jest rzetelna, niezależnie od tego, czy wybierzesz
+              nas, czy inną firmę z branży SEO. Skuteczna agencja nie musi być największa. Jeśli chcesz znaleźć skuteczną agencję SEO i porównać kilka ofert, potraktuj je jak
+              listę kontrolną.
+            </p>
+          </motion.div>
+          <div className="grid md:grid-cols-2 gap-6 mb-12">
+            {choosingCriteria.map((item, i) => (
+              <motion.div
+                key={item.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.05 }}
+                className="p-6 rounded-2xl bg-card border border-border/50"
+              >
+                <h3 className="font-heading font-bold text-lg mb-2 flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                  {item.title}
+                </h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{item.text}</p>
+              </motion.div>
+            ))}
+          </div>
+          <motion.div {...fadeUp} className="p-8 rounded-2xl bg-muted/40 border border-border/50">
+            <h2 className="font-heading font-bold text-xl mb-4">Jak wybrać dobrą agencję SEO: kiedy lepiej szukać dalej</h2>
+            <ul className="space-y-3">
+              {redFlags.map((flag) => (
+                <li key={flag} className="flex items-start gap-3 text-foreground/80">
+                  <XCircle className="w-5 h-5 text-destructive mt-0.5 flex-shrink-0" />
+                  <span>{flag}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="text-muted-foreground text-sm mt-6">
+              Więcej o tym, jak rozpoznać dobrą agencję SEO, piszemy w poradniku{" "}
+              <Link to="/blog/jak-wybrac-agencje-seo" className="text-primary hover:underline">
+                jak wybrać agencję SEO
+              </Link>
+              .
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Proces */}
       <section className="py-20 md:py-28 bg-muted/30">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-            >
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            <motion.div {...fadeUp}>
               <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-                Dlaczego SEO to <span className="text-gradient">najlepsza inwestycja?</span>
+                Współpraca z agencją SEO <span className="text-gradient">krok po kroku</span>
               </h2>
-              <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
-                SEO to jedyny kanał marketingowy, który z czasem staje się tańszy. W przeciwieństwie do reklam płatnych, ruch organiczny nie wymaga stałego budżetu reklamowego – raz zbudowana widoczność generuje ruch przez lata.
+              <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
+                Każda współpraca zaczyna się od zrozumienia firmy, a nie od sprzedaży pakietu. Działania SEO planujemy tak,
+                żeby po każdym etapie było jasne, co zostało zrobione, co przyniosło efekt i co robimy dalej.
               </p>
-              <div className="space-y-4">
-                {[
-                  "Niższy koszt pozyskania klienta (CAC) niż w reklamach",
-                  "Ruch organiczny rośnie nawet po zakończeniu współpracy",
-                  "Użytkownicy z Google mają wyższy współczynnik konwersji",
-                  "SEO buduje zaufanie – 70% użytkowników omija reklamy",
-                  "Efekt kuli śnieżnej – każdy miesiąc wzmacnia pozycje",
-                ].map((item) => (
-                  <div key={item} className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-foreground/80">{item}</span>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Po naszej stronie masz osobę, która zna Twój projekt i odpowiada na pytania. Raporty dostajesz w ustalonym
+                rytmie, zwykle co miesiąc, a dane źródłowe są dostępne cały czas na Twoich kontach Google. Warunki umowy,
+                w tym okres współpracy i wypowiedzenie, omawiamy przed startem.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Do pracy używamy m.in. Google Search Console, Google Analytics 4, narzędzi do crawlowania strony i analizy
+                treści. Zestaw narzędzi dobieramy do projektu, ale decyzje zawsze opieramy na danych z Twojej strony.
+              </p>
+            </motion.div>
+            <motion.div {...fadeUp} className="bg-card rounded-2xl border border-border/50 p-8">
+              <div className="space-y-6">
+                {processSteps.map((item) => (
+                  <div key={item.step} className="flex gap-4">
+                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                      <span className="text-primary font-bold text-sm">{item.step}</span>
+                    </div>
+                    <div>
+                      <h3 className="font-medium text-foreground">{item.title}</h3>
+                      <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+                    </div>
                   </div>
                 ))}
-              </div>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="relative"
-            >
-              <div className="bg-card rounded-2xl border border-border/50 p-8">
-                <h3 className="font-heading font-bold text-xl mb-6">Jak działamy?</h3>
-                <div className="space-y-6">
-                  {[
-                    { step: "01", title: "Audyt i analiza", desc: "Diagnozujemy stan Twojej strony i konkurencji" },
-                    { step: "02", title: "Strategia SEO", desc: "Dobieramy słowa kluczowe i plan działań" },
-                    { step: "03", title: "Optymalizacja", desc: "Wdrażamy zmiany techniczne i contentowe" },
-                    { step: "04", title: "Link building", desc: "Budujemy autorytet domeny naturalnie" },
-                    { step: "05", title: "Monitoring i raport", desc: "Śledzimy pozycje i raportujemy postępy" },
-                  ].map((item) => (
-                    <div key={item.step} className="flex gap-4">
-                      <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                        <span className="text-primary font-bold text-sm">{item.step}</span>
-                      </div>
-                      <div>
-                        <div className="font-medium text-foreground">{item.title}</div>
-                        <div className="text-sm text-muted-foreground">{item.desc}</div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
               </div>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* SEO Article Content */}
+      {/* Co dostajesz */}
+      <section className="py-20 md:py-28">
+        <div className="max-w-6xl mx-auto px-4">
+          <motion.div {...fadeUp} className="max-w-3xl mb-12">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Co dostajesz we współpracy z naszą agencją SEO</h2>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              Działania SEO są mniej widoczne niż nowa strona czy kampania wideo, dlatego dbamy o to, żeby zawsze było
+              wiadomo, nad czym pracujemy. Oto, co konkretnie trafia do Ciebie w trakcie pozycjonowania.
+            </p>
+          </motion.div>
+          <div className="grid md:grid-cols-2 gap-6">
+            {deliverables.map((item) => (
+              <motion.div key={item.title} {...fadeUp} className="p-6 rounded-2xl bg-card border border-border/50">
+                <h3 className="font-heading font-bold text-lg mb-2">{item.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{item.text}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Artykuł: SEO w marketingu */}
       <section className="py-20 md:py-28">
         <div className="max-w-4xl mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
+          <motion.div {...fadeUp}>
             <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">
-              Pozycjonowanie stron internetowych — jak działa SEO i dlaczego warto inwestować?
-            </h2>
-            <p className="text-muted-foreground leading-relaxed mb-6">
-              Pozycjonowanie stron internetowych (SEO — Search Engine Optimization) to proces optymalizacji strony www tak, aby zajmowała jak najwyższe pozycje w organicznych wynikach wyszukiwania Google. W Polsce ponad 95% wyszukiwań odbywa się przez Google, a 75% użytkowników nigdy nie przechodzi na drugą stronę wyników. Dlatego pozycjonowanie strony w Google to jedna z najskuteczniejszych form marketingu online — docierasz do osób, które aktywnie szukają Twoich produktów lub usług. Koszt pozyskania klienta (CAC) przez SEO jest średnio 5-7 razy niższy niż przez reklamy płatne, a efekty utrzymują się długoterminowo.
-            </p>
-
-            <h3 className="text-xl font-heading font-semibold mb-3">
-              Optymalizacja on-page — fundament skutecznego SEO
-            </h3>
-            <p className="text-muted-foreground leading-relaxed mb-6">
-              Optymalizacja on-page obejmuje wszystkie działania wykonywane bezpośrednio na stronie internetowej: od meta tagów (title, description), przez strukturę nagłówków H1-H6, aż po treści i linkowanie wewnętrzne. Poprawna optymalizacja on-page zapewnia, że Googlebot rozumie tematykę strony i przypisuje ją do odpowiednich zapytań. Schema markup (dane strukturalne JSON-LD) pomaga Google wyświetlać rich snippets — gwiazdki, FAQ, breadcrumby — co zwiększa CTR nawet o 30%. Core Web Vitals (LCP, FID, CLS) to od 2021 roku oficjalny czynnik rankingowy — szybkość ładowania strony bezpośrednio wpływa na pozycje w Google. Optymalizujemy każdy element strony zgodnie z wytycznymi Google Search Central.
-            </p>
-
-            <h3 className="text-xl font-heading font-semibold mb-3">
-              Link building i SEO off-page — budowanie autorytetu domeny
-            </h3>
-            <p className="text-muted-foreground leading-relaxed mb-6">
-              SEO off-page koncentruje się na działaniach poza stroną, przede wszystkim na pozyskiwaniu wartościowych linków zwrotnych (backlinków). Autorytet domeny (Domain Rating w Ahrefs) rośnie proporcjonalnie do jakości i liczby linków wskazujących na stronę. W Fotz Studio stosujemy wyłącznie white-hat link building: digital PR, guest posting na portalach branżowych, broken link building i lokalne cytaty NAP. Budowanie profilu linków to proces długoterminowy — unikamy sztucznych linków, które mogą skutkować karą algorytmiczną od Google. Naturalny profil linków w połączeniu z wartościowym contentem to recepta na trwałe, wysokie pozycje w wynikach wyszukiwania.
-            </p>
-
-            <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">
-              SEO lokalne — pozycjonowanie dla firm działających lokalnie
+              Agencja SEO czy agencja marketingowa? Digital marketing w jednym zespole
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              SEO lokalne to specjalizacja Fotz Studio — pomagamy firmom z Poznania i innych miast Polski dominować w lokalnych wynikach wyszukiwania. Optymalizacja Google Business Profile (dawniej Google Moja Firma) to pierwszy krok: uzupełniamy kategorie, opisy, godziny otwarcia, zdjęcia i zarządzamy opiniami. Lokalne SEO obejmuje też optymalizację strony pod frazy z nazwą miasta, budowanie cytatów NAP (Name, Address, Phone) na portalach branżowych i lokalnych oraz zbieranie opinii Google. Algorytm Google Maps bierze pod uwagę trzy czynniki: trafność, odległość i rozpoznawalność (prominence). Pozycjonowanie w Google Maps pozwala firmom lokalnym pojawić się w tzw. Local Pack — trzech wynikach mapowych wyświetlanych nad wynikami organicznymi. Dla firm usługowych i gastronomii Local Pack generuje nawet 50% całego ruchu z Google.
+              Agencja SEO, agencja marketingu internetowego i agencja interaktywna to często różne firmy. Jedna optymalizuje stronę, druga
+              prowadzi reklamy, trzecia nagrywa wideo, a klient próbuje to wszystko połączyć. W FOTZ Studio digital
+              marketing planujemy razem: ta sama osoba widzi, jakie frazy rosną w wyszukiwarce, jakie kampanie Google Ads
+              działają i jakie treści publikujemy w social media.
             </p>
-            <p className="text-muted-foreground leading-relaxed mb-6">
-              Skuteczne SEO lokalne wymaga systematycznego podejścia: regularne publikowanie Google Posts, odpowiadanie na opinie klientów, aktualizowanie informacji o firmie i budowanie relacji z lokalnymi portalami informacyjnymi. Monitorujemy pozycje w lokalnych wynikach za pomocą narzędzi BrightLocal i Whitespark, śledząc widoczność na mapach i w organicznych wynikach dla fraz z nazwą miasta. Firmy lokalne, które systematycznie inwestują w SEO lokalne, osiągają pozycje w top 3 Google Maps w ciągu 3-6 miesięcy.
-            </p>
-
-            <h3 className="text-xl font-heading font-semibold mb-3">
-              Audyt SEO — diagnoza i plan naprawczy dla Twojej strony
-            </h3>
-            <p className="text-muted-foreground leading-relaxed mb-6">
-              Każdą współpracę rozpoczynamy od szczegółowego audytu SEO. Nasz audyt obejmuje: analizę techniczną (crawlability, indeksacja, szybkość, bezpieczeństwo HTTPS), analizę on-page (treści, meta tagi, nagłówki, schema markup), analizę off-page (profil linków, cytaty NAP, domain rating) oraz analizę konkurencji (porównanie z top 10 wynikami dla głównych fraz). Audyt SEO to nie lista błędów, lecz priorytetyzowany plan naprawczy z jasnym harmonogramem wdrożeń. Identyfikujemy szybkie wygrane (quick wins) — zmiany, które dają natychmiastowe efekty, oraz działania strategiczne budujące widoczność długoterminowo.
-            </p>
-
-            <h3 className="text-xl font-heading font-semibold mb-3">
-              SEO dla e-commerce — pozycjonowanie sklepów internetowych
-            </h3>
-            <p className="text-muted-foreground leading-relaxed mb-6">
-              Sklepy internetowe mają specyficzne wyzwania SEO: tysiące podstron produktowych, duplikacja treści, filtry faceted, paginacja i canonical tags. Optymalizacja e-commerce SEO wymaga innego podejścia niż strony firmowe — pracujemy nad strukturą kategorii, schema produktowe (Product, Offer, AggregateRating), optymalizacją kart produktów i zarządzaniem indeksacją filtrów. Dobrze zoptymalizowany sklep internetowy generuje ruch na frazy long-tail o wysokim intencje zakupowym. Nasze case studies pokazują wzrosty ruchu organicznego o 200-500% w ciągu 6-12 miesięcy dla sklepów e-commerce.
-            </p>
-
-            <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">
-              SEO techniczne — wydajność, indeksacja i Core Web Vitals
+            <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4 mt-12">
+              Content marketing i marketing internetowy jako paliwo dla SEO
             </h2>
-            <p className="text-muted-foreground leading-relaxed mb-6">
-              SEO techniczne to fundament, bez którego inne działania SEO tracą na efektywności. Obejmuje: optymalizację szybkości ładowania (Core Web Vitals — LCP pod 2.5s, FID pod 100ms, CLS pod 0.1), poprawną konfigurację robots.txt i sitemap.xml, zarządzanie crawl budgetem, wdrożenie protokołu HTTPS, eliminację błędów 404 i redirect chains, oraz optymalizację mobile-first (Google indeksuje mobilną wersję strony). Stosujemy narzędzia takie jak Google Search Console, Ahrefs, Screaming Frog i PageSpeed Insights do ciągłego monitorowania zdrowia technicznego strony. Regularne audyty techniczne zapewniają, że Googlebot może efektywnie crawlować i indeksować wszystkie ważne podstrony.
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              Content marketing jest dla SEO paliwem. Artykuły poradnikowe, opisy usług, studia przypadków czy materiały
+              wideo dają wyszukiwarce powód, by pokazywać Twoją stronę na kolejne zapytania. Treści przygotowujemy pod
+              konkretne pytania klientów, a nie pod liczbę słów kluczowych. Marketing internetowy, w którym SEO, wideo,
+              zdjęcia i social media korzystają z tych samych materiałów, jest po prostu tańszy w produkcji: jeden dzień
+              zdjęciowy może dać grafiki do artykułów, film na podstronę usługi i posty do mediów społecznościowych. Jeśli potrzebujesz większej skali, sprawdź
+              usługę{" "}
+              <Link to="/content-marketing" className="text-primary hover:underline">
+                content marketingu
+              </Link>
+              .
             </p>
 
-            <h3 className="text-xl font-heading font-semibold mb-3">
-              Narzędzia SEO — czym się posługujemy w codziennej pracy?
-            </h3>
-            <p className="text-muted-foreground leading-relaxed mb-6">
-              Profesjonalne pozycjonowanie wymaga zaawansowanych narzędzi analitycznych. W Fotz Studio korzystamy z: Ahrefs (analiza backlinków, pozycji i konkurencji), Google Search Console (monitoring indeksacji i wydajności), Google Analytics 4 (analiza ruchu i konwersji), Screaming Frog (audyty techniczne i crawl), NeuronWriter (optymalizacja treści pod SEO semantyczne), PageSpeed Insights (Core Web Vitals) i BrightLocal (SEO lokalne i monitoring map). Każde narzędzie dostarcza unikalnych danych — ich połączenie daje pełny obraz widoczności strony i pozwala podejmować decyzje oparte na faktach, nie na intuicji.
+            <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4 mt-12">SEO i performance marketingu: wyszukiwarka i reklamy razem</h2>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              SEO i PPC odpowiadają na te same zapytania, ale działają inaczej. Kampanie{" "}
+              <Link to="/performance-marketing/google-ads" className="text-primary hover:underline">
+                Google Ads
+              </Link>{" "}
+              dają ruch od pierwszego dnia i pozwalają szybko sprawdzić, które usługi interesują klientów. Pozycjonowanie
+              stron internetowych działa wolniej, ale widoczność w wynikach wyszukiwania Google zostaje, kiedy budżet reklamowy się
+              kończy. Połączenie SEO i performance marketingu pozwala wykorzystać dane z reklam do planowania treści i
+              odwrotnie. Wiele firm szuka osobno agencji SEO i SEM, a u nas obie części kampanii prowadzi ten sam zespół.
             </p>
 
-            <h3 className="text-xl font-heading font-semibold mb-3">
-              Content marketing i SEO — jak treści wspierają pozycjonowanie?
-            </h3>
-            <p className="text-muted-foreground leading-relaxed mb-6">
-              Content marketing to integralna część strategii SEO. Regularne publikowanie wartościowych treści na blogu firmowym buduje topical authority — Google postrzega stronę jako eksperta w danej dziedzinie i nagradza wyższymi pozycjami. Każdy artykuł blogowy to nowa podstrona, która może rankować na dodatkowe frazy long-tail i przyciągać nowy ruch organiczny. Strategia content marketingowa obejmuje: badanie słów kluczowych (keyword research), analizę intencji wyszukiwania (search intent), tworzenie treści odpowiadających na pytania użytkowników i optymalizację pod kątem featured snippets. W Fotz Studio łączymy tworzenie treści z SEO copywritingiem — każdy tekst jest optymalizowany pod NeuronWriter, co gwarantuje pokrycie wszystkich semantycznie powiązanych fraz.
+            <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4 mt-12">Skuteczne pozycjonowanie stron internetowych zaczyna się od strony</h2>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              Nawet najlepsza strategia SEO nie pomoże, jeśli strona ładuje się wolno, ma chaotyczną strukturę albo nie
+              mówi jasno, co firma oferuje. Nasz zespół robi też{" "}
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">
+                strony internetowe
+              </Link>
+              , więc gdy audyt pokaże, że lepiej przebudować serwis niż go łatać, możemy zrobić to u siebie i od razu pod
+              kątem SEO. Przykłady naszych projektów stron znajdziesz w{" "}
+              <Link to="/realizacje" className="text-primary hover:underline">
+                realizacjach
+              </Link>
+              .
             </p>
+          </motion.div>
+        </div>
+      </section>
 
+      {/* SEO a AI */}
+      <section className="py-20 md:py-28 bg-muted/30">
+        <div className="max-w-4xl mx-auto px-4">
+          <motion.div {...fadeUp}>
             <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">
-              Pozycjonowanie stron Poznań — lokalna agencja SEO z doświadczeniem
+              SEO AI: widoczność w Google AI Overviews i odpowiedziach AI
             </h2>
-            <p className="text-muted-foreground leading-relaxed mb-6">
-              Fotz Studio to agencja SEO z siedzibą w Poznaniu, specjalizująca się w pozycjonowaniu stron internetowych dla firm z Wielkopolski i całej Polski. Nasza lokalna ekspertyza oznacza znajomość rynku poznańskiego, bezpośredni kontakt z klientem i zrozumienie specyfiki lokalnych branż. Pozycjonowanie stron w Poznaniu prowadziliśmy dla firm z branży gastronomicznej, usługowej, produkcyjnej, medycznej i e-commerce. Oferujemy przejrzyste raporty miesięczne, regularne spotkania strategiczne i dedykowanego specjalistę SEO dla każdego klienta. Nasze podejście łączy dane z Ahrefs, Google Search Console i Google Analytics z kreatywnym content marketingiem.
-            </p>
-
-            <h3 className="text-xl font-heading font-semibold mb-3">
-              SEO a AI — jak sztuczna inteligencja zmienia pozycjonowanie w 2026?
-            </h3>
-            <p className="text-muted-foreground leading-relaxed mb-6">
-              Wyszukiwanie zmienia się dynamicznie — AI Overviews w Google, odpowiedzi ChatGPT i Gemini zmieniają sposób, w jaki użytkownicy konsumują informacje. Strony, które są cytowane przez modele AI, zyskują nowy kanał widoczności i ruchu. Strategia SEO w 2026 roku musi uwzględniać nie tylko tradycyjne pozycjonowanie w Google, ale też optymalizację pod cytowania w AI — publikowanie oryginalnych badań, case studies z konkretnymi danymi i unikalnych insightów branżowych. Fotz Studio monitoruje AI visibility swoich klientów i wdraża strategie zwiększające szanse na cytowanie przez modele językowe.
-            </p>
-
-            <h3 className="text-xl font-heading font-semibold mb-3">
-              Jak wybrać agencję SEO — na co zwrócić uwagę?
-            </h3>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Wybierając agencję SEO, zwróć uwagę na: doświadczenie potwierdzone case studies z konkretnymi wynikami, transparentność w raportowaniu (dostęp do Google Search Console i Analytics), stosowanie wyłącznie metod white-hat SEO, brak długoterminowych umów wiążących bez możliwości rezygnacji oraz dedykowany zespół specjalistów. Unikaj agencji gwarantujących pozycję nr 1 w określonym czasie — Google nie pozwala na takie gwarancje. Dobra agencja SEO jasno komunikuje strategię, ryzyka i realistyczne oczekiwania co do terminów i wyników. W Fotz Studio oferujemy elastyczne warunki współpracy, miesięczne rozliczenia i pełną transparentność w każdym etapie.
-            </p>
-
-            <h3 className="text-xl font-heading font-semibold mb-3">
-              Proces współpracy SEO z Fotz Studio — od audytu do wzrostu
-            </h3>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              Współpraca z Fotz Studio rozpoczyna się od bezpłatnej konsultacji, podczas której omawiamy cele biznesowe, obecny stan strony i budżet. Następnie przeprowadzamy szczegółowy audyt SEO i przygotowujemy strategię z priorytetyzacją działań. W pierwszym miesiącu wdrażamy quick wins — zmiany techniczne i on-page dające najszybsze efekty. W kolejnych miesiącach budujemy content, profil linków i monitorujemy postępy. Klient otrzymuje dostęp do dashboardu z aktualnymi danymi o pozycjach, ruchu i konwersjach. Regularnie spotykamy się na calls strategicznych, aby omawiać wyniki i dostosowywać strategię do zmieniających się warunków rynkowych.
+              Klienci coraz częściej zadają pytania asystentom AI zamiast przeglądać listę linków, a Google pokazuje nad
+              wynikami podsumowania generowane przez AI. Pozycjonowanie w AI nie zastępuje klasycznego SEO dla stron, tylko na nim
+              stoi: modele językowe korzystają z treści, które są dobrze zindeksowane, jasno napisane i spójne z tym, co o
+              firmie mówią inne źródła.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Nasze podejście do SEO opiera się na trzech filarach: dane (wszystkie decyzje są poparte analityką), jakość (tworzymy wartościowe treści i pozyskujemy naturalne linki) oraz transparentność (klient wie dokładnie, co robimy i jakie efekty to przynosi). To podejście sprawia, że nasi klienci zostają z nami średnio ponad 18 miesięcy — bo widzą realne rezultaty i stały wzrost widoczności w Google.
+              W praktyce oznacza to treści, które bezpośrednio odpowiadają na pytania klientów, uporządkowane dane o firmie
+              i ofercie, dane strukturalne oraz spójne informacje o marce w katalogach, mediach i na profilach
+              społecznościowych. Widoczność budujemy tymi samymi narzędziami, tylko z większym naciskiem na
+              jasność odpowiedzi.
             </p>
+            <p className="text-muted-foreground leading-relaxed">
+              Nie obiecujemy, że asystent zacytuje Twoją stronę. Możemy natomiast przygotować ją tak, żeby miała na to realną
+              szansę. Szczegóły opisujemy na stronie{" "}
+              <Link to="/ai-seo" className="text-primary hover:underline">
+                SEO pod AI
+              </Link>
+              .
+            </p>
+          </motion.div>
+        </div>
+      </section>
 
-            <h3 className="text-xl font-heading font-semibold mb-3">
-              Mobile-first indexing i Core Web Vitals — wymogi Google w 2026
-            </h3>
+      {/* Dla kogo */}
+      <section className="py-20 md:py-28">
+        <div className="max-w-6xl mx-auto px-4">
+          <motion.div {...fadeUp} className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Profesjonalna agencja SEO dla firm lokalnych, sklepów i B2B</h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              Zakres działań SEO zależy od modelu biznesu. Inaczej pracujemy z warsztatem, inaczej ze sklepem, a jeszcze
+              inaczej z producentem maszyn.
+            </p>
+          </motion.div>
+          <div className="grid md:grid-cols-2 gap-6">
+            {audiences.map((item) => (
+              <motion.div key={item.title} {...fadeUp} className="p-6 rounded-2xl bg-card border border-border/50">
+                <h3 className="font-heading font-bold text-lg mb-2">{item.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{item.text}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Wycena */}
+      <section className="py-20 md:py-28 bg-muted/30">
+        <div className="max-w-4xl mx-auto px-4">
+          <motion.div {...fadeUp}>
+            <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Ile kosztuje agencja SEO? Od czego zależy wycena</h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Od 2021 roku Google stosuje mobile-first indexing — indeksuje mobilną wersję strony jako główną. Strona, która nie jest responsywna lub ładuje się wolno na smartfonie, traci pozycje niezależnie od jakości treści i linków. Core Web Vitals — Largest Contentful Paint (LCP), First Input Delay (FID) i Cumulative Layout Shift (CLS) — to mierzalne metryki wydajności, które bezpośrednio wpływają na ranking. Optymalizacja obejmuje kompresję obrazów (WebP, lazy loading), minimalizację JavaScript i CSS, wdrożenie CDN (Content Delivery Network) i optymalizację czcionek. W Fotz Studio regularnie monitorujemy Core Web Vitals wszystkich stron klientów i natychmiast reagujemy na pogorszenie wyników. Strony zoptymalizowane pod Core Web Vitals osiągają średnio 15-25% wyższy CTR w wynikach wyszukiwania Google. Każdy projekt SEO w Fotz Studio rozpoczyna się od audytu wydajności — mierzymy aktualne wyniki Core Web Vitals, identyfikujemy wąskie gardła i wdrażamy poprawki. Dla stron na WordPressie optymalizujemy wtyczki i konfigurację serwera, dla stron custom (React, Next.js, Vite) pracujemy bezpośrednio z kodem źródłowym, wdrażając lazy loading, code splitting i server-side rendering. Inwestycja w wydajność techniczną strony to nie tylko lepsze SEO — szybsza strona oznacza wyższy współczynnik konwersji, niższy bounce rate i lepsze doświadczenie użytkownika na każdym urządzeniu, zarówno desktop jak i mobilnym.
+              Nie publikujemy cennika pakietów, bo dwie firmy z tej samej branży mogą potrzebować zupełnie innego zakresu
+              prac. Wycenę przygotowujemy po rozmowie i wstępnej analizie strony. Na koszt wpływają przede wszystkim:
             </p>
-
-            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
-              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
-              <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>
-              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social Media</Link>
-              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content Marketing</Link>
-              <Link to="/case-studies/seo-lokalne-poznan-wzrost-ruchu" className="text-primary hover:underline font-medium text-sm">→ Case Study: SEO Lokalne Poznań</Link>
-            </div>
+            <ul className="space-y-3 mb-6">
+              {pricingFactors.map((factor) => (
+                <li key={factor} className="flex items-start gap-3 text-foreground/80">
+                  <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span>{factor}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              W wycenie opisujemy zadania na pierwsze miesiące, a nie tylko kwotę. Możesz zacząć od samego audytu SEO i
+              zdecydować o dalszej współpracy po zapoznaniu się z wynikami. Ogólne widełki rynkowe i to, z czego się
+              składają, omawiamy w artykule{" "}
+              <Link to="/blog/ile-kosztuje-pozycjonowanie" className="text-primary hover:underline">
+                ile kosztuje pozycjonowanie
+              </Link>
+              .
+            </p>
           </motion.div>
         </div>
       </section>
@@ -460,48 +742,52 @@ export default function SEOCluster() {
       {/* FAQ */}
       <section className="py-20 md:py-28">
         <div className="max-w-3xl mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Najczęstsze pytania o SEO</h2>
+          <motion.div {...fadeUp} className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Najczęstsze pytania o agencję SEO</h2>
           </motion.div>
           <FAQSchema items={faqs} />
           <Accordion type="single" collapsible className="space-y-3">
             {faqs.map((faq, i) => (
               <AccordionItem key={i} value={`faq-${i}`} className="bg-card rounded-xl border border-border/50 px-6">
-                <AccordionTrigger className="text-left font-medium hover:text-primary">
-                  {faq.question}
-                </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground leading-relaxed">
-                  {faq.answer}
-                </AccordionContent>
+                <AccordionTrigger className="text-left font-medium hover:text-primary">{faq.question}</AccordionTrigger>
+                <AccordionContent className="text-muted-foreground leading-relaxed">{faq.answer}</AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>
         </div>
       </section>
 
+      {/* Poradniki */}
+      <section className="py-16 border-t border-border/50">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="font-heading font-bold text-2xl mb-6">Poradniki o SEO</h2>
+          <div className="flex flex-wrap gap-3">
+            {guides.map((guide) => (
+              <Link
+                key={guide.href}
+                to={guide.href}
+                className="px-4 py-2 rounded-full bg-card border border-border/50 text-sm text-muted-foreground hover:text-primary hover:border-primary/30 transition-colors"
+              >
+                {guide.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-20 md:py-28 bg-muted/30">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-              Gotowy na wzrost widoczności?
-            </h2>
+          <motion.div {...fadeUp}>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">Szukasz agencji SEO? Porozmawiajmy</h2>
             <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
-              Porozmawiajmy o Twoich celach. Bezpłatna konsultacja SEO pomoże nam zaproponować strategię dopasowaną do Twojego budżetu i branży.
+              Opowiedz nam o firmie i stronie. Powiemy, od czego zaczęlibyśmy, jakie działania SEO mają sens w Twojej
+              sytuacji i jak mogłaby wyglądać współpraca.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="hero" size="lg" asChild>
                 <Link to="/kontakt">
-                  Umów bezpłatną konsultację
+                  Napisz do nas
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Link>
               </Button>
@@ -516,14 +802,15 @@ export default function SEOCluster() {
       {/* Related links */}
       <section className="py-16 border-t border-border/50">
         <div className="max-w-6xl mx-auto px-4">
-          <h3 className="font-heading font-bold text-lg mb-6">Powiązane usługi</h3>
+          <h2 className="font-heading font-bold text-lg mb-6">Powiązane usługi</h2>
           <div className="flex flex-wrap gap-3">
             {[
               { label: "Google Ads", href: "/performance-marketing/google-ads" },
               { label: "Content Marketing", href: "/content-marketing" },
               { label: "Strony internetowe", href: "/uslugi/strony-internetowe" },
               { label: "Social Media", href: "/social-media" },
-              { label: "E-commerce", href: "/uslugi/strony-internetowe/ecommerce" },
+              { label: "Sklepy internetowe", href: "/uslugi/strony-internetowe/ecommerce" },
+              { label: "AI marketing", href: "/ai-marketing" },
             ].map((link) => (
               <Link
                 key={link.href}

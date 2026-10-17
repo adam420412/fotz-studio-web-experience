@@ -52,7 +52,7 @@ export default function KampaniaGoogleAds() {
     {
       icon: Zap,
       title: "YouTube Ads",
-      desc: "Reklamy wideo przed i w trakcie filmów. Zasięg 2+ mld użytkowników.",
+      desc: "Reklamy wideo przed i w trakcie filmów. Duży zasięg i targetowanie po zainteresowaniach.",
     },
     {
       icon: Target,
@@ -78,50 +78,18 @@ export default function KampaniaGoogleAds() {
     "Optymalizacja i skalowanie kampanii",
   ];
 
-  const packages = [
+  const pricingFactors = [
     {
-      title: "Starter",
-      budget: "500–1500 zł/mies. budżet",
-      fee: "+ 499 zł obsługa",
-      desc: "Dla małych firm i usług lokalnych",
-      features: [
-        "Kampania Search (1-2 grupy)",
-        "Do 30 słów kluczowych",
-        "Miesięczna optymalizacja",
-        "Raport co 2 tygodnie",
-        "Śledzenie konwersji",
-      ],
+      title: "Zakres kampanii",
+      desc: "Liczba i typy kampanii (Search, Display, Shopping, YouTube, Performance Max) oraz liczba grup reklam i słów kluczowych.",
     },
     {
-      title: "Standard",
-      budget: "1500–5000 zł/mies. budżet",
-      fee: "+ 799 zł obsługa",
-      desc: "Dla firm z ambicją wzrostu",
-      features: [
-        "2-4 kampanie (Search + Display)",
-        "Do 100 słów kluczowych",
-        "Cotygodniowa optymalizacja",
-        "Raport tygodniowy",
-        "A/B testy reklam",
-        "Landing page review",
-        "Google Analytics 4 setup",
-      ],
-      highlight: true,
+      title: "Tryb obsługi",
+      desc: "Jak często optymalizujemy i raportujemy, czy potrzebna jest konfiguracja GA4, śledzenia konwersji lub integracja z CRM.",
     },
     {
-      title: "Enterprise",
-      budget: "5000+ zł/mies. budżet",
-      fee: "+ 1499 zł obsługa",
-      desc: "Dla e-commerce i dużych firm",
-      features: [
-        "Wszystkie typy kampanii",
-        "Nieograniczone słowa kluczowe",
-        "Codzienny monitoring",
-        "Dedykowany account manager",
-        "Shopping Ads + Performance Max",
-        "Pełna integracja CRM",
-        "Comiesięczna strategia",
-      ],
+      title: "Budżet reklamowy",
+      desc: "Budżet płacisz bezpośrednio Google, osobno od wynagrodzenia za obsługę. Jego wysokość dobieramy do branży, konkurencji i celu.",
     },
   ];
 
@@ -129,22 +97,22 @@ export default function KampaniaGoogleAds() {
     {
       question: "Jaki jest minimalny budżet na Google Ads?",
       answer:
-        "Rekomendujemy minimum 500 zł/mies. na budżet reklamowy. Poniżej tej kwoty algorytm Google ma za mało danych do optymalizacji. Dla e-commerce minimum to 1500-2000 zł/mies. Im większy budżet, tym szybsza optymalizacja.",
+        "Nie ma jednej kwoty dla wszystkich — zależy od branży, stawek za kliknięcie w Twojej niszy i celu kampanii. Zbyt mały budżet daje algorytmowi mało danych do optymalizacji, dlatego wysokość budżetu ustalamy po analizie słów kluczowych. Budżet reklamowy płacisz Google osobno od obsługi.",
     },
     {
       question: "Kiedy zobaczę pierwsze wyniki?",
       answer:
-        "Pierwsze kliknięcia pojawiają się w ciągu kilku godzin od uruchomienia. Konwersje i optymalizacja algorytmu potrzebują 2-4 tygodni uczenia się. Pełne wyniki widać po 60-90 dniach współpracy.",
+        "Pierwsze kliknięcia mogą pojawić się wkrótce po uruchomieniu kampanii. Konwersje i optymalizacja algorytmu potrzebują czasu na naukę, a tempo zależy od budżetu, branży i strony docelowej — dlatego nie obiecujemy sztywnych terminów efektów.",
     },
     {
       question: "Czy Google Ads vs SEO — co lepsze?",
       answer:
-        "Google Ads = szybkie wyniki, płacisz za kliknięcie, łatwo kontrolować budżet. SEO = wolniejsze wyniki (3-6 mies.), ale bezpłatny ruch organiczny. Najlepiej łączyć oba kanały — Ads na start, SEO długoterminowo.",
+        "Google Ads = szybsze dotarcie, płacisz za kliknięcie, łatwo kontrolować budżet. SEO = efekty narastają wolniej, ale ruch organiczny nie jest opłacany za każde kliknięcie. Najlepiej łączyć oba kanały — Ads na start, SEO długoterminowo.",
     },
     {
       question: "Jak mierzyć ROI z Google Ads?",
       answer:
-        "Konfigurujemy śledzenie konwersji (sprzedaż, zapytania, telefony). W raporcie widzisz koszt na konwersję, ROAS (return on ad spend), wartość leadów. Śr. ROAS u naszych klientów: 3-8x budżet.",
+        "Konfigurujemy śledzenie konwersji (sprzedaż, zapytania, telefony). W raporcie widzisz koszt na konwersję, ROAS (return on ad spend) i wartość leadów — na tej podstawie decydujemy o dalszej optymalizacji.",
     },
     {
       question: "Na jak długo umowa?",
@@ -154,7 +122,7 @@ export default function KampaniaGoogleAds() {
     {
       question: "Co jeśli wyniki będą słabe?",
       answer:
-        "Analizujemy przyczyny — może być: zbyt niski budżet, złe słowa kluczowe, słaba strona docelowa, za duża konkurencja. Wdrażamy poprawki i eskalujemy do naszego zespołu seniorów. Transparentnie raportujemy co działa, a co nie.",
+        "Analizujemy przyczyny — może być: zbyt niski budżet, złe słowa kluczowe, słaba strona docelowa, za duża konkurencja. Wdrażamy poprawki i jasno raportujemy co działa, a co nie.",
     },
   ];
 
@@ -162,7 +130,7 @@ export default function KampaniaGoogleAds() {
     <>
       <SEOHead
         title="Kampania Google Ads | Reklama Google dla firm | FOTZ Studio"
-        description="Kampanie Google Ads — skuteczna reklama w wyszukiwarce Google. ROI 3-8x. Certyfikowani specjaliści. Bezpłatna wycena kampanii!"
+        description="Kampanie Google Ads — reklama w wyszukiwarce Google, Display, Shopping i YouTube. Konfiguracja, optymalizacja i raporty. Bezpłatna wycena kampanii!"
         canonical="https://www.fotz-studio.pl/uslugi/kampania-google-ads"
         keywords="kampania google ads, prowadzenie kampanii google ads, kampania reklamowa google, obsługa google ads, google ads agencja, google ads dla firm"
       />
@@ -180,23 +148,23 @@ export default function KampaniaGoogleAds() {
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
               <div className="inline-flex items-center gap-2 bg-blue-900 bg-opacity-50 text-blue-300 px-3 py-1 rounded-full text-sm mb-4">
                 <Target className="w-4 h-4" />
-                Google Certified Partners
+                Kampanie Google Ads
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
                 Kampania Google Ads — reklama w Google która przynosi wyniki
               </h1>
               <p className="text-xl text-slate-300 mb-8 leading-relaxed">
-                65% kliknięć dla zapytań z zamiarem zakupu trafia na reklamy Google Ads.
-                Docieramy do klientów dokładnie wtedy, gdy szukają Twojej usługi.
-                Średni ROAS naszych klientów: 3-8x budżet reklamowy.
+                Reklama w wyszukiwarce trafia do osób, które same szukają produktu lub usługi.
+                Docieramy do klientów dokładnie wtedy, gdy szukają Twojej usługi,
+                a wyniki mierzymy śledzeniem konwersji.
               </p>
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
                 {[
-                  { value: "3-8x", label: "Śr. ROAS" },
-                  { value: "Google", label: "Certified Partner" },
-                  { value: "5 dni", label: "Start kampanii" },
-                  { value: "500 zł", label: "Min. budżet" },
+                  { value: "ROAS", label: "Mierzony w raportach" },
+                  { value: "Search", label: "Display, Shopping, YouTube" },
+                  { value: "Wycena", label: "Po rozmowie o zakresie" },
+                  { value: "Budżet", label: "Płacony Google osobno" },
                 ].map((stat, idx) => (
                   <div key={idx} className="bg-slate-800 bg-opacity-50 p-4 rounded-lg">
                     <div className="text-2xl font-bold text-blue-400">{stat.value}</div>
@@ -271,45 +239,25 @@ export default function KampaniaGoogleAds() {
         <FadeInView>
           <section className="py-16 md:py-24 bg-white">
             <div className="max-w-5xl mx-auto px-4 md:px-6">
-              <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Pakiety Google Ads</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Od czego zależy wycena?</h2>
               <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
-                Przejrzyste ceny. Płacisz za budżet + obsługę. Bez prowizji od wydatków.
+                Wycenę obsługi przygotowujemy po rozmowie o zakresie i celach kampanii.
               </p>
               <div className="grid md:grid-cols-3 gap-8">
-                {packages.map((pkg, idx) => (
+                {pricingFactors.map((factor, idx) => (
                   <motion.div
                     key={idx}
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ delay: idx * 0.1 }}
-                    className={`rounded-lg p-8 ${
-                      pkg.highlight
-                        ? "bg-gradient-to-br from-blue-600 to-blue-700 text-white border-2 border-blue-400 transform scale-105"
-                        : "bg-white border border-slate-200"
-                    }`}
+                    className="rounded-lg p-8 bg-white border border-slate-200"
                   >
-                    <h3 className="text-xl font-bold mb-2">{pkg.title}</h3>
-                    <div className="mb-4">
-                      <div className={`text-lg font-bold ${pkg.highlight ? "text-white" : "text-blue-600"}`}>
-                        {pkg.budget}
-                      </div>
-                      <div className={`text-sm ${pkg.highlight ? "text-blue-100" : "text-slate-500"}`}>{pkg.fee}</div>
-                    </div>
-                    <p className={`mb-6 text-sm ${pkg.highlight ? "text-blue-100" : "text-slate-600"}`}>{pkg.desc}</p>
-                    <ul className="space-y-3">
-                      {pkg.features.map((feature, i) => (
-                        <li key={i} className="flex items-start gap-2 text-sm">
-                          <CheckCircle2 className={`w-4 h-4 flex-shrink-0 mt-0.5 ${pkg.highlight ? "text-white" : "text-blue-600"}`} />
-                          <span>{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
+                    <CheckCircle2 className="w-6 h-6 text-blue-600 mb-3" />
+                    <h3 className="text-xl font-bold mb-2">{factor.title}</h3>
+                    <p className="text-sm text-slate-600">{factor.desc}</p>
                   </motion.div>
                 ))}
               </div>
-              <p className="text-center text-slate-500 text-sm mt-8">
-                * Nie pobieramy prowizji od wydatków reklamowych. Płacisz tylko stałą opłatę za obsługę.
-              </p>
             </div>
           </section>
         </FadeInView>
@@ -325,8 +273,8 @@ export default function KampaniaGoogleAds() {
                   { icon: Target, title: "Usługi lokalne", desc: "Fryzjer, mechanik, dentysta — klienci szukający lokalnie." },
                   { icon: TrendingUp, title: "B2B / Leady", desc: "Firmy B2B szukające nowych klientów przez formularze kontaktowe." },
                   { icon: Zap, title: "Startupy", desc: "Szybkie dotarcie do klientów bez czekania na SEO." },
-                  { icon: DollarSign, title: "Nieruchomości", desc: "Deweloperzy i agencje nieruchomości z wysokim ROI per lead." },
-                  { icon: Globe, title: "Usługi prawnicze", desc: "Kancelarie, doradcy — lead z Google Ads = klient wartości 5000+ zł." },
+                  { icon: DollarSign, title: "Nieruchomości", desc: "Deweloperzy i agencje nieruchomości, dla których każdy lead ma wysoką wartość." },
+                  { icon: Globe, title: "Usługi prawnicze", desc: "Kancelarie, doradcy — jeden klient z zapytania w Google bywa wart wielokrotność kosztu kliknięcia." },
                 ].map((item, idx) => {
                   const Icon = item.icon;
                   return (

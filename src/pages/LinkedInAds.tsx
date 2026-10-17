@@ -45,11 +45,9 @@ const LinkedInAds = () => {
   const pricingPackages = [
     {
       name: "Start",
-      price: "2 500",
-      period: "/mies.",
       description: "Testowanie LinkedIn Ads",
       features: [
-        "Budżet reklamowy do 5 000 zł",
+        "Mniejszy budżet testowy",
         "Sponsored Content",
         "Targetowanie podstawowe",
         "1 kampania aktywna",
@@ -60,11 +58,9 @@ const LinkedInAds = () => {
     },
     {
       name: "Business",
-      price: "4 500",
-      period: "/mies.",
       description: "Pełna obsługa B2B",
       features: [
-        "Budżet reklamowy do 15 000 zł",
+        "Kilka równoległych kampanii",
         "Sponsored Content + Message Ads",
         "Lead Gen Forms",
         "Zaawansowane targetowanie",
@@ -76,11 +72,9 @@ const LinkedInAds = () => {
     },
     {
       name: "Enterprise",
-      price: "8 000",
-      period: "/mies.",
       description: "Kompleksowy ABM",
       features: [
-        "Budżet reklamowy bez limitu",
+        "Skala dopasowana do listy kont",
         "Wszystkie formaty reklamowe",
         "Conversation Ads",
         "Integracja z CRM",
@@ -94,10 +88,10 @@ const LinkedInAds = () => {
   ];
 
   const stats = [
-    { value: "900M+", label: "Profesjonalistów na LinkedIn" },
-    { value: "80%", label: "Lead'ów B2B z LinkedIn" },
-    { value: "4x", label: "Wyższy intent zakupowy" },
-    { value: "33%", label: "Niższy CPL vs inne platformy B2B" },
+    { value: "B2B", label: "Reklama dla decydentów" },
+    { value: "Stanowisko", label: "Targetowanie po roli w firmie" },
+    { value: "ABM", label: "Kampanie na listę firm" },
+    { value: "Lead Gen", label: "Formularze w reklamie" },
   ];
 
   const faqItems = [
@@ -107,23 +101,23 @@ const LinkedInAds = () => {
     },
     {
       question: "Jaki budżet potrzebuję na LinkedIn Ads?",
-      answer: "LinkedIn ma wyższe stawki niż inne platformy (CPC od 15-50 zł), ale oferuje lepszą jakość leadów. Minimalny sensowny budżet to 3000-5000 zł miesięcznie. Dla skutecznych kampanii ABM rekomendujemy 10000-20000 zł. Wyższa inwestycja przekłada się na leady o wyższej wartości życiowej klienta."
+      answer: "Stawki na LinkedIn są zwykle wyższe niż na innych platformach, dlatego budżet ustalamy po rozmowie o celu, grupie docelowej i liczbie kont, do których chcesz dotrzeć. Budżet reklamowy płacisz bezpośrednio LinkedIn — jest zawsze osobny od wynagrodzenia za obsługę."
     },
     {
       question: "Jak działa targetowanie na LinkedIn?",
-      answer: "LinkedIn oferuje unikalne opcje targetowania B2B: stanowisko, dział, branża, wielkość firmy, staż pracy, umiejętności, grupy, a nawet konkretne firmy (ABM). Możemy targetować np. 'CFO w firmach IT 50-200 pracowników w Polsce'. Żadna inna platforma nie oferuje tak precyzyjnego targetowania B2B."
+      answer: "LinkedIn oferuje unikalne opcje targetowania B2B: stanowisko, dział, branża, wielkość firmy, staż pracy, umiejętności, grupy, a nawet konkretne firmy (ABM). Możemy targetować np. 'CFO w firmach IT 50-200 pracowników w Polsce'. To jedne z najbardziej precyzyjnych opcji targetowania B2B dostępnych w reklamie online."
     },
     {
       question: "Co to są Lead Gen Forms?",
-      answer: "Lead Gen Forms to formularze kontaktowe wbudowane w reklamę LinkedIn. Użytkownik może zostawić dane (imię, email, firma, stanowisko) jednym kliknięciem - formularz automatycznie wypełnia się danymi z profilu. Konwersja jest 2-3x wyższa niż przy kierowaniu na zewnętrzny landing page."
+      answer: "Lead Gen Forms to formularze kontaktowe wbudowane w reklamę LinkedIn. Użytkownik może zostawić dane (imię, email, firma, stanowisko) jednym kliknięciem - formularz automatycznie wypełnia się danymi z profilu, co skraca drogę do zostawienia kontaktu."
     },
     {
       question: "Jak wygląda Message Ads (InMail)?",
-      answer: "Message Ads to spersonalizowane wiadomości wysyłane bezpośrednio do skrzynki LinkedIn odbiorcy. Wyglądają jak zwykłe wiadomości, ale są oznaczone jako sponsorowane. Świetnie działają do generowania demo, webinarów, personalizowanych ofert. Open rate wynosi 50-60%."
+      answer: "Message Ads to spersonalizowane wiadomości wysyłane bezpośrednio do skrzynki LinkedIn odbiorcy. Wyglądają jak zwykłe wiadomości, ale są oznaczone jako sponsorowane. Sprawdzają się przy zaproszeniach na demo, webinary i personalizowanych ofertach."
     },
     {
       question: "Czy mogę targetować konkretne firmy?",
-      answer: "Tak, dzięki Account Based Marketing (ABM) możemy targetować listę konkretnych firm. Możesz przesłać listę 50-5000 firm, do których chcesz dotrzeć. LinkedIn dopasuje użytkowników pracujących w tych firmach. Idealne dla sprzedaży enterprise do wybranej listy kont."
+      answer: "Tak, dzięki Account Based Marketing (ABM) możemy targetować listę konkretnych firm. Możesz przesłać listę firm, do których chcesz dotrzeć. LinkedIn dopasuje użytkowników pracujących w tych firmach. Idealne dla sprzedaży enterprise do wybranej listy kont."
     },
     {
       question: "Jak mierzyć ROI kampanii LinkedIn?",
@@ -179,7 +173,7 @@ const LinkedInAds = () => {
               </span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              LinkedIn to najpotężniejsza platforma reklamowa B2B w Polsce.
+              LinkedIn to platforma reklamowa stworzona z myślą o odbiorcach biznesowych.
               Zarządzamy kampaniami w LinkedIn Campaign Manager i generujemy wartościowe leady od osób podejmujących decyzje zakupowe w firmach.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -231,7 +225,7 @@ const LinkedInAds = () => {
               Dlaczego LinkedIn Ads?
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Najskuteczniejsza platforma dla marketingu B2B
+              Platforma dopasowana do marketingu B2B
             </p>
           </motion.div>
 
@@ -343,10 +337,10 @@ const LinkedInAds = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-              Cennik LinkedIn Ads
+              Zakres obsługi LinkedIn Ads
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Obsługa kampanii i strategia lead generation
+              Wycenę przygotowujemy po rozmowie o zakresie: liczbie kampanii, formatach reklam, kreacjach, integracjach z CRM i częstotliwości raportów.
             </p>
           </motion.div>
 
@@ -373,8 +367,7 @@ const LinkedInAds = () => {
                   <h3 className="text-xl font-semibold text-foreground mb-2">{pkg.name}</h3>
                   <p className="text-sm text-muted-foreground mb-4">{pkg.description}</p>
                   <div className="flex items-baseline justify-center gap-1">
-                    <span className="text-4xl font-bold text-foreground">{pkg.price}</span>
-                    <span className="text-muted-foreground">zł{pkg.period}</span>
+                    <span className="text-2xl font-bold text-foreground">Wycena indywidualna</span>
                   </div>
                 </div>
                 <ul className="space-y-3 mb-8">
@@ -397,7 +390,7 @@ const LinkedInAds = () => {
           </div>
 
           <p className="text-center text-sm text-muted-foreground mt-8">
-            * Ceny nie zawierają budżetu reklamowego. VAT doliczany do każdej ceny.
+            * Budżet reklamowy płacony LinkedIn jest zawsze osobny od wynagrodzenia za obsługę.
           </p>
         </div>
       </section>

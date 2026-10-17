@@ -57,11 +57,11 @@ export default function GoogleAdsBydgoszcz() {
   const packages = [
     {
       name: "START",
-      price: "400",
+      price: "Wycena indywidualna",
       description: "Dla firm zaczynających z Google Ads",
       features: [
         "Setup kampanii Search Ads",
-        "Maksymalnie 2 kampanie (~500 zł budżetu/mies.)",
+        "Maksymalnie 2 kampanie",
         "Optymalizacja co 2 tygodnie",
         "Raport miesięczny",
         "Konsultacja strategiczna"
@@ -69,12 +69,12 @@ export default function GoogleAdsBydgoszcz() {
     },
     {
       name: "GROWTH",
-      price: "1200",
+      price: "Wycena indywidualna",
       description: "Dla firm rozwijających się",
       features: [
         "Zarządzanie 3-5 kampaniami Search",
         "Kampanie Display Network",
-        "Budżet ~3000-5000 zł/mies.",
+        "Budżet reklamowy ustalany osobno",
         "Optymalizacja tygodniowa",
         "A/B testy reklam",
         "Raporty szczegółowe + call co 2 tygodnie",
@@ -84,14 +84,14 @@ export default function GoogleAdsBydgoszcz() {
     },
     {
       name: "PRO",
-      price: "2500",
+      price: "Wycena indywidualna",
       description: "Kompleksowe zarządzanie kampaniami",
       features: [
         "Zarządzanie 5+ kampaniami",
         "Search Ads + Display + Remarketing",
         "Shopping Ads (dla e-commerce)",
         "Video Ads (YouTube) planning",
-        "Budżet ~8000-15000 zł/mies.",
+        "Budżet reklamowy ustalany osobno",
         "Optymalizacja codziennie",
         "Dedykowany account manager",
         "Cotygodniowe spotkania strategiczne",
@@ -100,18 +100,17 @@ export default function GoogleAdsBydgoszcz() {
     },
     {
       name: "ENTERPRISE",
-      price: "5000+",
+      price: "Wycena indywidualna",
       description: "Pełny zakres dla dużych kampanii",
       features: [
         "Wszystko z PRO",
         "Video Ads + App Campaigns management",
         "Advanced automation i scripts",
-        "Budżet &gt; 15000 zł/mies.",
-        "24/7 monitoring",
+        "Budżet reklamowy ustalany osobno",
+        "Stały monitoring kampanii",
         "Spersonalizowane strategie",
         "Quarterly business reviews",
-        "Direct Google Account Manager support",
-        "Eksperymentalne kampanie i testy"
+                "Eksperymentalne kampanie i testy"
       ]
     }
   ];
@@ -163,23 +162,23 @@ export default function GoogleAdsBydgoszcz() {
   const faqs = [
     {
       question: "Ile czasu potrzeba, aby zobaczyć wyniki z Google Ads?",
-      answer: "Pierwsze wyniki (kliknięcia, wrażenia) widać natychmiast po uruchomieniu kampanii. Jednak optymalizacja konwersji zajmuje zazwyczaj 2-4 tygodnie. Dla firm z Bydgoszczy pracujemy ostrożnie w pierwszym miesiącu, testując różne podejścia, aby znaleźć to, co działa dla Twojej branży i rynku Kujaw."
+      answer: "Pierwsze dane (wyświetlenia, kliknięcia) pojawiają się po uruchomieniu kampanii. Czas potrzebny na optymalizację konwersji zależy od branży, budżetu i liczby zbieranych konwersji, dlatego nie obiecujemy sztywnych terminów. Na początku współpracy pracujemy ostrożnie, testując różne podejścia, aby znaleźć to, co działa dla Twojej branży i rynku Kujaw."
     },
     {
       question: "Czy mogę zarządzać budżetem w Google Ads sam?",
-      answer: "Oczywiście! Google Ads to platforma samoobsługowa. Jednak bez doświadczenia łatwo zmarnować budżet. Większość firm bez specjalisty osiąga ROI poniżej 1.5x. Nasz team potrafi osiągnąć 3-5x ROI dzięki doświadczeniu, testowaniu i optymalizacji dla rynku bydgoskiego."
+      answer: "Oczywiście! Google Ads to platforma samoobsługowa. Jednak bez doświadczenia łatwo zmarnować budżet na nietrafione słowa kluczowe i źle ustawione konwersje. Pomagamy uporządkować strukturę kampanii, pomiar i testy, ale nie obiecujemy konkretnego zwrotu z inwestycji."
     },
     {
       question: "Jakie są średnie koszty dla firm w Bydgoszczy?",
-      answer: "Dla startupów zaczynamy od ~400 zł/miesiąc. Firmy rozwijające się inwestują ~1200-2500 zł/miesiąc. Większe kampanie to 5000+ zł/miesiąc. Bydgoszcz ma umiarkowaną konkurencję online – to znaczy, że keywords są relatywnie tańsze niż w dużych miastach. Świetna okazja dla firm z Kujaw."
+      answer: "Wynagrodzenie za prowadzenie kampanii wyceniamy po rozmowie o zakresie: liczbie i typach kampanii, liczbie produktów lub usług, potrzebnych reklamach graficznych i wideo oraz częstotliwości raportów. Budżet reklamowy płacony Google jest zawsze osobno, a koszt kliknięcia zależy od konkurencji w danej branży."
     },
     {
       question: "Czy mogę zacząć z małym budżetem?",
-      answer: "Tak! Google Ads skaluje się wraz z Twoim biznesem. Możesz zacząć od 400-500 zł/miesiąc i stopniowo zwiększać budżet na kampanie, które przynoszą wyniki. Nie ma minimalnego budżetu – tylko maksymalne ryzyko, jeśli kampanię źle skonfigurujemy."
+      answer: "Tak! Google Ads skaluje się wraz z Twoim biznesem. Możesz zacząć od mniejszego budżetu reklamowego i stopniowo zwiększać go na kampanie, które przynoszą wyniki. Nie ma minimalnego budżetu – tylko maksymalne ryzyko, jeśli kampanię źle skonfigurujemy."
     },
     {
       question: "Czy Google Ads działa dla branż technicznych?",
-      answer: "Absolutnie! Bydgoszcz ma rosnący sektor IT – Canal Plus, firmy SaaS, agencje dev. Google Ads świetnie działa dla B2B tech. Ważne jest proper lead tracking, long sales cycle, i optymalizacja na \"wartość leadów\". Pracowaliśmy z wieloma tech startupami z Bydgoszczy."
+      answer: "Tak, Google Ads może sprawdzić się także w B2B i branżach technicznych. Ważne jest poprawne śledzenie leadów, uwzględnienie długiego cyklu sprzedaży i optymalizacja na \"wartość leadów\"."
     },
     {
       question: "Jak mierzycie sukces kampanii?",
@@ -187,11 +186,11 @@ export default function GoogleAdsBydgoszcz() {
     },
     {
       question: "Czy Google Ads działa dla usług lokalnych?",
-      answer: "Tak! Jeśli obsługujesz Bydgoszcz i Kujawsko-Pomorskie, Google Ads jest doskonały. Możemy targetować geograficznie – tylko osoby szukające Twoich usług w Bydgoszczy. Połączenie z Google Maps i Local Services Ads daje jeszcze lepsze wyniki dla firm lokalnych."
+      answer: "Tak! Jeśli obsługujesz Bydgoszcz i Kujawsko-Pomorskie, Google Ads jest doskonały. Możemy targetować geograficznie – tylko osoby szukające Twoich usług w Bydgoszczy. Warto połączyć kampanie z profilem firmy w Google (Mapy), który pomaga docierać do klientów lokalnych."
     },
     {
       question: "Czy mogę zaufać Waszemu zespołowi?",
-      answer: "Tak! 6 lat doświadczenia, 150+ kampanii, 3.2x średni ROI, 95% retencji klientów. Pracujemy z transparentnym raportowaniem – masz dostęp do wszystkich danych, accountu Google Ads i wskaźników wydajności. Dla nas to długoterminowe partnerstwo, a nie jednorazowy projekt."
+      answer: "Pracujemy z transparentnym raportowaniem – masz dostęp do wszystkich danych, accountu Google Ads i wskaźników wydajności. Dla nas to długoterminowe partnerstwo, a nie jednorazowy projekt."
     }
   ];
 
@@ -210,7 +209,7 @@ export default function GoogleAdsBydgoszcz() {
     <Layout>
       <SEOHead
         title="Agencja Google Ads Bydgoszcz | Fotz Studio"
-        description="Google Ads Bydgoszcz ✓ Kampanie dla firm z Bydgoszczy i Kujaw. Od 400 zł/mies. Bezpłatna konsultacja!"
+        description="Google Ads Bydgoszcz ✓ Kampanie dla firm z Bydgoszczy i Kujaw, prowadzone zdalnie z Poznania. Wycena po rozmowie o zakresie. Bezpłatna konsultacja!"
         canonical="https://www.fotz-studio.pl/performance-marketing/google-ads/bydgoszcz"
         keywords="google ads bydgoszcz, kampanie google ads bydgoszcz, agencja google ads bydgoszcz, reklamy google bydgoszcz, google adwords bydgoszcz, sem bydgoszcz, google ads dla firm bydgoszcz, prowadzenie google ads bydgoszcz, google ads cennik bydgoszcz, reklama w google bydgoszcz"
       />
@@ -255,7 +254,7 @@ export default function GoogleAdsBydgoszcz() {
               Google Ads dla Firm w Bydgoszczy
             </h1>
             <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-              Google Ads Bydgoszcz — profesjonalne kampanie Google Ads i reklamy w Google dla firm z Bydgoszcza i Kujaw. Zwiększamy ruch, konwersje i ROI dzięki skutecznym kampaniom SEM. Bezpłatna konsultacja.
+              Google Ads Bydgoszcz — profesjonalne kampanie Google Ads i reklamy w Google dla firm z Bydgoszczy i Kujaw. Prowadzimy kampanie SEM nastawione na ruch, konwersje i zwrot z inwestycji. Pracujemy z Poznania, firmy z Bydgoszczy obsługujemy zdalnie. Bezpłatna konsultacja.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
@@ -286,8 +285,8 @@ export default function GoogleAdsBydgoszcz() {
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">Bydgoszcz – Miasto Rosnące IT</h3>
                   <p className="text-gray-700 mb-4">
-                    Bydgoszcz to największe miasto w Kujawsko-Pomorskim. Siedziba Canal Plus,
-                    rosnący sektor IT, edukacyjny i usługowy. Firmy z Bydgoszczy mają różne
+                    Bydgoszcz to największe miasto w Kujawsko-Pomorskim, z rozwijającym się
+                    sektorem IT, edukacyjnym i usługowym. Firmy z Bydgoszczy mają różne
                     potrzeby – od e-commerce, przez SaaS, po usługi lokalne.
                   </p>
                   <p className="text-gray-700">
@@ -303,12 +302,12 @@ export default function GoogleAdsBydgoszcz() {
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">Konkurencja i Okazja</h3>
                   <p className="text-gray-700 mb-4">
-                    W Bydgoszczy konkurencja w Google Ads jest umiarkowana – wciąż wiele firm
-                    nie inwestuje w reklamy cyfrowe. To znaczy, że keywords są tańsze niż w dużych metropoliach.
+                    Poziom konkurencji i koszt kliknięcia zależą od branży i wybranych słów kluczowych.
+                    Przed startem sprawdzamy, ile firm z Twojej branży reklamuje się w Bydgoszczy.
                   </p>
                   <p className="text-gray-700">
-                    Dla firm z Bydgoszczy to doskonała okazja – możesz zdominować lokalne wyszukiwanie
-                    z mniejszym budżetem niż firmy w Warszawie czy Wrocławiu.
+                    Na tej podstawie planujemy budżet reklamowy i dobieramy frazy lokalne,
+                    które mają sens dla Twojej firmy.
                   </p>
                 </CardContent>
               </Card>
@@ -322,20 +321,20 @@ export default function GoogleAdsBydgoszcz() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-4xl font-bold text-blue-400 mb-2">150+</div>
-              <p className="text-gray-300">Kampanii Google Ads</p>
+              <div className="text-4xl font-bold text-blue-400 mb-2">Zdalnie</div>
+              <p className="text-gray-300">Obsługa firm z Bydgoszczy</p>
             </div>
             <div>
-              <div className="text-4xl font-bold text-blue-400 mb-2">3.2x</div>
-              <p className="text-gray-300">Średni ROI</p>
+              <div className="text-4xl font-bold text-blue-400 mb-2">Poznań</div>
+              <p className="text-gray-300">Stąd pracujemy</p>
             </div>
             <div>
-              <div className="text-4xl font-bold text-blue-400 mb-2">95%</div>
-              <p className="text-gray-300">Retencja Klientów</p>
+              <div className="text-4xl font-bold text-blue-400 mb-2">Wycena</div>
+              <p className="text-gray-300">Po rozmowie o zakresie</p>
             </div>
             <div>
-              <div className="text-4xl font-bold text-blue-400 mb-2">6 lat</div>
-              <p className="text-gray-300">Doświadczenia</p>
+              <div className="text-4xl font-bold text-blue-400 mb-2">Budżet</div>
+              <p className="text-gray-300">Płacony Google osobno</p>
             </div>
           </div>
         </div>
@@ -413,8 +412,13 @@ export default function GoogleAdsBydgoszcz() {
       <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
-            Pakiety Cenowe
+            Pakiety Współpracy
           </h2>
+          <p className="text-center text-gray-700 max-w-3xl mx-auto mb-12 -mt-6">
+            Wycenę przygotowujemy po rozmowie o zakresie: liczbie i typach kampanii, wielkości oferty,
+            potrzebnych kreacjach oraz częstotliwości raportów i spotkań. Budżet reklamowy płacony Google
+            jest zawsze osobno i nie wchodzi w wynagrodzenie za prowadzenie kampanii.
+          </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
             {packages.map((pkg, index) => (
@@ -424,15 +428,14 @@ export default function GoogleAdsBydgoszcz() {
                 >
                   {pkg.popular && (
                     <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                      <Badge className="bg-blue-600 text-white">NAJPOPULARNIEJSZY</Badge>
+                      <Badge className="bg-blue-600 text-white">DLA ROZWIJAJĄCYCH SIĘ</Badge>
                     </div>
                   )}
                   <CardContent className="p-6">
                     <h3 className="text-2xl font-bold text-gray-900 mb-2">{pkg.name}</h3>
                     <p className="text-gray-600 text-sm mb-4">{pkg.description}</p>
                     <div className="mb-6">
-                      <span className="text-4xl font-bold text-gray-900">{pkg.price}</span>
-                      <span className="text-gray-600 ml-2">PLN/mies.</span>
+                      <span className="text-2xl font-bold text-gray-900">{pkg.price}</span>
                     </div>
                     <ul className="space-y-2 mb-6">
                       {pkg.features.map((feature, fidx) => (
@@ -499,7 +502,7 @@ export default function GoogleAdsBydgoszcz() {
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Obsługujemy Całe Kujawsko-Pomorskie</h3>
                 <p className="text-gray-700 mb-4">
                   Bydgoszcz jest sercem regionu Kujaw. Pracujemy z firmami z całego Kujawsko-Pomorskiego –
-                  od Tucholi po Konin. Znamy specyfikę każdej części regionu.
+                  od Tucholi po Włocławek. Pracujemy z Poznania, a firmy z regionu obsługujemy zdalnie.
                 </p>
                 <p className="text-gray-700">
                   Niezależnie gdzie Twoja firma się znajduje, jesteśmy gotowi wspomóc Twój
@@ -552,7 +555,7 @@ export default function GoogleAdsBydgoszcz() {
                   <div>
                     <h3 className="text-xl font-bold text-gray-900 mb-2">Specjalizacja w Google Ads</h3>
                     <p className="text-gray-700">
-                      To jest nasza specjalność – nie robimy „wszystkiego". 150+ kampanii, 3.2x średni ROI.
+                      Kampanie Google Ads prowadzimy jako jedną z kluczowych usług, w połączeniu ze stronami WWW i produkcją wideo.
                     </p>
                   </div>
                 </div>
@@ -602,9 +605,9 @@ export default function GoogleAdsBydgoszcz() {
                     <Building2 className="w-6 h-6 text-blue-600 mt-1" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">Doświadczenie z Lokalnymi Rynkami</h3>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">Kampanie Lokalne</h3>
                     <p className="text-gray-700">
-                      Znamy Bydgoszcz i Kujawsko-Pomorskie. Wiemy, co działa dla firm z tego regionu.
+                      Ustawiamy kierowanie na Bydgoszcz i Kujawsko-Pomorskie. Pracujemy z Poznania, firmy z regionu obsługujemy zdalnie.
                     </p>
                   </div>
                 </div>

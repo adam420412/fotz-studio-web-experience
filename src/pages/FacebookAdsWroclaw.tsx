@@ -34,7 +34,7 @@ const adTypes = [
   {
     icon: Video,
     title: "Video Ads",
-    description: "Filmy w Feed oraz Stories. Największy zaangażowanie użytkowników — do 70% większa konwersja."
+    description: "Filmy w Feed, Stories i Reels. Dobrze sprawdzają się tam, gdzie produkt lub usługę trzeba pokazać w ruchu."
   },
   {
     icon: Megaphone,
@@ -44,7 +44,7 @@ const adTypes = [
   {
     icon: Users2,
     title: "Lead Ads",
-    description: "Zbieranie leadów bez opuszczania Facebooka. Niższy CPC, szybsza konwersja dla usług B2B."
+    description: "Zbieranie leadów bez opuszczania Facebooka. Krótsza ścieżka kontaktu, przydatna m.in. dla usług B2B."
   },
   {
     icon: Filter,
@@ -54,7 +54,7 @@ const adTypes = [
   {
     icon: Smartphone,
     title: "Messenger Ads",
-    description: "Kampanie w Messengerze — najwyższy engagement rate. Dla chatbotów i sprzedaży konwersacyjnej."
+    description: "Kampanie kierujące do rozmowy w Messengerze. Dla chatbotów i sprzedaży konwersacyjnej."
   }
 ];
 
@@ -77,7 +77,7 @@ const procesSteps = [
   {
     number: 4,
     title: "Wdrożenie kampanii",
-    description: "Konfigurujemy kampanię w Ads Manager. Ustawiamy pixel retargeting, conversion tracking i daily budget. Live monitoring pierwszych 48 godzin."
+    description: "Konfigurujemy kampanię w Ads Manager. Ustawiamy pixel, conversion tracking i budżet dzienny. Szczególnie uważnie monitorujemy pierwsze dni kampanii."
   },
   {
     number: 5,
@@ -86,54 +86,18 @@ const procesSteps = [
   }
 ];
 
-const pricingPlans = [
-  {
-    name: "START",
-    price: "400",
-    description: "Dla firm zaczynających kampanie na Meta",
-    features: [
-      "1 kampania testowa",
-      "Segmentacja podstawowa",
-      "Conversion tracking",
-      "Raport miesięczny (ROAS, CPL)",
-      "Email support"
-    ]
-  },
-  {
-    name: "GROWTH",
-    price: "1 200",
-    description: "Dla firm skalujących sprzedaż",
-    features: [
-      "3-5 kampanii jednocześnie",
-      "Segmentacja zaawansowana",
-      "A/B testing kreatyw",
-      "Pixel i conversion API",
-      "Raport tygodniowy",
-      "2 konsultacje/miesiąc",
-      "Optymalizacja codziennie"
-    ]
-  },
-  {
-    name: "PREMIUM",
-    price: "2 500",
-    description: "Kampanie o budżecie 10k+ PLN/mies",
-    features: [
-      "Nieograniczone kampanie",
-      "Strategia custom na rynku wrocławskim",
-      "Professional copywriting i design",
-      "Conversion API + dynamic products",
-      "Raport zaawansowany + video call",
-      "Dedykowany account manager",
-      "Priority optimization",
-      "Event-based retargeting"
-    ]
-  }
+const pricingFactors = [
+  "Liczba kampanii i platform (Facebook, Instagram, Messenger)",
+  "Cel: sprzedaż w sklepie, leady, ruch czy budowanie rozpoznawalności",
+  "Liczba i rodzaj kreacji — grafiki, wideo, warianty do testów A/B",
+  "Stan konfiguracji: pixel, Conversion API, katalog produktów",
+  "Częstotliwość raportowania i konsultacji",
 ];
 
 const industries = [
   {
     name: "E-commerce",
-    desc: "Sprzedaż produktów online na Amazon, Allegro, własny sklep. Dynamic Ads pokazują dokładnie to co oglądał użytkownik — 3-5x wyższy ROAS niż klasyczne kampanie."
+    desc: "Sprzedaż produktów online na Amazon, Allegro, własny sklep. Dynamic Ads pokazują produkty, które użytkownik wcześniej oglądał."
   },
   {
     name: "Usługi (B2B)",
@@ -160,35 +124,35 @@ const industries = [
 const faqItems = [
   {
     question: "Ile kosztuje kampania Facebook Ads w Wrocławiu?",
-    answer: "Od 400 PLN/mies dla testowych kampanii, przez 1200 PLN dla mid-market, do 2500+ PLN dla premium obsługi. To koszt obsługi agencji. Osobno dodajesz budżet na same reklamy — od 500 PLN/dzień dla lokalnych firm, do 10 000+ PLN dla e-commerce. Łącznie: 1500-15 000 PLN/mies w zależności od celów."
+    answer: "Wycenę obsługi przygotowujemy po rozmowie o zakresie: liczbie kampanii, celach, kreacjach i stanie konfiguracji konta. Budżet reklamowy płacisz Mecie osobno i to Ty decydujesz o jego wysokości — pomagamy go dobrać do celu i skali działań."
   },
   {
     question: "Jak szybko widzę rezultaty Facebook Ads?",
-    answer: "Pierwsze dane o zaangażowaniu (impressions, clicks) w ciągu 1-2 godzin. Pierwsze konwersje (sprzedaż, leady) zwykle w ciągu 24-48 godzin. Pełne dane do optymalizacji uzyskujemy po 7 dni. Dlatego doporučamy testowanie na 2 tygodnie przed decyzją o skalowaniu budżetu."
+    answer: "Pierwsze dane o wyświetleniach i kliknięciach pojawiają się zwykle krótko po starcie, ale tempo pojawiania się konwersji zależy od branży, oferty, budżetu i jakości strony. Nie obiecujemy konkretnego terminu efektów — zanim zdecydujemy o skalowaniu budżetu, dajemy kampanii czas na zebranie danych i fazę uczenia algorytmu."
   },
   {
     question: "Dlaczego Facebook Ads w Wrocławiu są lepsze niż Google Ads?",
-    answer: "Inne cele. Google Ads targeting na intent (ktoś szuka rozwiązania). Facebook Ads targeting na audience (budujemy świadomość, budujemy retargeting). Dla e-commerce — Dynamic Ads na Facebooku dają 2-3x wyższy ROAS. Dla B2B i usług — Lead Ads zbierają leady taniej niż Google Ads (CPL 20-50 PLN vs 50-100 PLN). Dla branding — wideo na Facebook osiąga 10x większy reach za tę samą cenę."
+    answer: "Nie są lepsze — służą innym celom. Google Ads odpowiada na intencję (ktoś szuka rozwiązania). Facebook Ads docierają do odbiorców po zainteresowaniach i zachowaniach, budują świadomość i retargeting. Dla e-commerce przydatne są Dynamic Ads, dla usług Lead Ads, dla budowania marki wideo. Który kanał wypadnie korzystniej kosztowo, zależy od branży i oferty — często najlepiej działają razem."
   },
   {
     question: "Czy mogę uruchomić kampanię bez piksela?",
-    answer: "Technicznie tak, ale to strata pieniędzy. Pixel Facebook (konwersja tracking) pokazuje co się konwertuje. Bez niego reklamujemy na ślepo. Pixel instaluje się w ciągu 5 minut — JavaScript kod w <head> strony lub przez Metę Tag Manager. Conversion API (lepszy niż pixel) łączy dane offline (z CRM, sklepu) z Facebookiem — to najlepsze rozwiązanie dla B2B i SaaS."
+    answer: "Technicznie tak, ale to strata pieniędzy. Pixel Facebook (konwersja tracking) pokazuje co się konwertuje. Bez niego reklamujemy na ślepo. Pixel instaluje się kodem JavaScript w <head> strony lub przez Google Tag Manager. Conversion API (lepszy niż pixel) łączy dane offline (z CRM, sklepu) z Facebookiem — to najlepsze rozwiązanie dla B2B i SaaS."
   },
   {
     question: "Czy lokalizacja Wrocławia wpływa na ceny kampanii?",
-    answer: "Tak, ale pozytywnie. Wrocław ma mniejszą konkurencję w CPM (koszt tysiąca impressions) niż Warszawa czy Kraków — średnio 30-50% taniej. To oznacza że Twój budżet rozpracuje się dalej. Równocześnie Wrocław to duży rynek (770 tys. mieszkańców), więc jest wystarczająco użytkowników do targetowania. Ideał dla firm szukających szybkiego ROI na mniejszym budżecie."
+    answer: "Koszt wyświetleń (CPM) zależy od konkurencji o tę samą grupę odbiorców, sezonu, branży i jakości kreacji, a nie tylko od miasta. Wrocław to duży rynek, więc zwykle jest wystarczająco wielu użytkowników do precyzyjnego targetowania. Realne stawki sprawdzamy w kampanii testowej."
   },
   {
     question: "Jakie metryki śledząc podczas kampanii?",
-    answer: "ROAS (Return on Ad Spend) — klucz. Na każde 1 PLN wydanego w reklamy, ile przychodu? Docelowo ROAS 3-5x dla e-commerce, 1.5-3x dla usług. CPL (Cost Per Lead) — ile kosztuje jeden lead. CPC (Click Per Cost) — ile kosztuje jedno kliknięcie. CTR (Click Through Rate) — procent ludzi, którzy zobaczyli i kliknęli. Conversion Rate — jaki procent kliknięć zamienił się na konwersję. Frequency — ile razy średnio widział reklamy jeden użytkownik (powyżej 5 = ad fatigue, trzeba zmienić kreatyw)."
+    answer: "ROAS (Return on Ad Spend) — klucz. Na każde 1 PLN wydanego w reklamy, ile przychodu? Docelowy ROAS ustalamy indywidualnie na podstawie marży i modelu biznesowego. CPL (Cost Per Lead) — ile kosztuje jeden lead. CPC (Click Per Cost) — ile kosztuje jedno kliknięcie. CTR (Click Through Rate) — procent ludzi, którzy zobaczyli i kliknęli. Conversion Rate — jaki procent kliknięć zamienił się na konwersję. Frequency — ile razy średnio widział reklamy jeden użytkownik (powyżej 5 = ad fatigue, trzeba zmienić kreatyw)."
   },
   {
     question: "Czy kampania Facebook Ads do sprzedaży czy brandingu?",
-    answer: "Obie rzeczy naraz, ale w różnych fazach. Awareness (kampanie discovery) — budujemy świadomość Twojej marki poprzez video i reach targeting. Consideration (retargeting) — pokazujemy konwersjom ludzi którzy odwiedzili stronę ale nie kupili. Conversion (dynamic ads) — zbieramy sprzedaż. Idealny funnel to: (1) 70% budżetu na awareness + consideration, (2) 30% budżetu na conversion i retargeting. Ta proporcja zmienia się w zależności od Twojego celu — dla sprzedaży może być 50/50."
+    answer: "Obie rzeczy naraz, ale w różnych fazach. Awareness (kampanie discovery) — budujemy świadomość Twojej marki poprzez video i reach targeting. Consideration (retargeting) — pokazujemy konwersjom ludzi którzy odwiedzili stronę ale nie kupili. Conversion (dynamic ads) — zbieramy sprzedaż. Podział budżetu między etapy lejka ustalamy indywidualnie — zależy od celu, rozpoznawalności marki i wielkości grup do retargetingu."
   },
   {
     question: "Czy mogę sam uruchomić kampanię bez agencji?",
-    answer: "Tak, ale: (1) Musisz nauczyć się segmentacji audience, (2) eksperymentować z kreatywami (A/B testing wymaga 2-3 tygodni), (3) codziennie optymalizować kampanie. Większość firm wydaje zbyt dużo na złe audience i słabe kreatywki. Agencja przyspiesza to 5-10x — nasi klienci widzą rezultaty w 48 godzin zamiast czekać tydzień. Koszt agencji (400-2500 PLN/mies) zwraca się przez lepszy ROAS w ciągu pierwszych 2-3 kampanii."
+    answer: "Tak, ale: (1) Musisz nauczyć się segmentacji audience, (2) eksperymentować z kreatywami (A/B testing wymaga 2-3 tygodni), (3) codziennie optymalizować kampanie. Częsty problem to budżet wydawany na źle dobrane grupy odbiorców i słabe kreacje. Agencja wnosi gotowy proces testowania i optymalizacji, ale nie gwarantujemy konkretnego zwrotu — o opłacalności decydują oferta, strona i rynek."
   }
 ];
 
@@ -197,13 +161,13 @@ export default function FacebookAdsWroclaw() {
     <Layout>
       <SEOHead
         title="Agencja Facebook Ads Wrocław — reklamy Meta dla firm | Fotz.pl"
-        description="Facebook Ads Wrocław ✓ Kampanie Meta Ads (Facebook, Instagram) od 400 zł/mies. Certyfikowani specjaliści. Bezpłatna konsultacja!"
+        description="Facebook Ads Wrocław ✓ Kampanie Meta Ads (Facebook, Instagram) dla firm z Wrocławia, prowadzone zdalnie z Poznania. Bezpłatna konsultacja!"
         canonical="https://www.fotz-studio.pl/performance-marketing/facebook-ads/wroclaw"
         keywords="facebook ads wrocław, agencja facebook ads wrocław, kampanie facebook wrocław, reklamy facebook wrocław, meta ads wrocław, instagram ads wrocław"
       />
       <ServiceSchema
         name="Kampanie Facebook Ads Wrocław"
-        description="Agencja Meta Ads (Facebook, Instagram) w Wrocławiu. Kampanie reklamowe do sprzedaży, leadów i brandingu. Tracking pixel, conversion API, optymalizacja codziennie. Od 400 PLN/mies."
+        description="Kampanie Meta Ads (Facebook, Instagram) dla firm z Wrocławia, prowadzone zdalnie z Poznania. Kampanie reklamowe do sprzedaży, leadów i brandingu. Tracking pixel, conversion API, bieżąca optymalizacja."
         provider="Fotz Studio"
         areaServed="Wroclaw"
       />
@@ -241,11 +205,11 @@ export default function FacebookAdsWroclaw() {
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Kampanie Meta Ads (Facebook, Instagram, Messenger) do sprzedaży, leadów i brandingu. Segmentacja precyzyjna, pixel tracking, optymalizacja codziennie. ROAS 3-5x dla e-commerce.
+              Kampanie Meta Ads (Facebook, Instagram, Messenger) do sprzedaży, leadów i brandingu. Segmentacja precyzyjna, pixel tracking, bieżąca optymalizacja.
             </p>
 
             <p className="text-base text-muted-foreground/80 mb-10 max-w-xl mx-auto">
-              Od 400 PLN/mies obsługi agencji. Certyfikowani specjaliści. Pierwsze rezultaty w 24-48h.
+              Pracujemy z Poznania, firmy z Wrocławia obsługujemy zdalnie. Wycenę przygotowujemy po rozmowie o zakresie.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -262,25 +226,6 @@ export default function FacebookAdsWroclaw() {
         </div>
       </section>
 
-      {/* Stats */}
-      <section className="py-12 bg-card/30 border-y border-border/30">
-        <div className="container px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto text-center">
-            {[
-              { value: "3.5x", label: "średni ROAS dla klientów e-commerce" },
-              { value: "48h", label: "czas do pierwszych konwersji" },
-              { value: "50+", label: "kampanii uruchomionych dla Wrocławia" },
-              { value: "4.8/5", label: "średnia ocen klientów" }
-            ].map((s, i) => (
-              <div key={i}>
-                <div className="text-3xl md:text-4xl font-heading font-bold text-primary mb-1">{s.value}</div>
-                <div className="text-sm text-muted-foreground">{s.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Why Facebook Ads */}
       <section className="py-20 md:py-28 bg-gradient-to-b from-secondary/10 to-background">
         <div className="container px-4">
@@ -291,7 +236,7 @@ export default function FacebookAdsWroclaw() {
                 <span className="text-gradient">Wrocławiu?</span>
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Facebook i Instagram to najefektywniejsze kanały do targetowania audience w Polsce. W Wrocławiu mamy 770 tys. użytkowników — baza do kampanii sprzedażowych i brandingowych.
+                Facebook i Instagram pozwalają precyzyjnie dotrzeć do mieszkańców Wrocławia i okolic — zarówno w kampaniach sprzedażowych, jak i wizerunkowych.
               </p>
             </div>
 
@@ -305,27 +250,27 @@ export default function FacebookAdsWroclaw() {
                 {
                   icon: TrendingUp,
                   title: "Szybkie skalowanie",
-                  desc: "Kampanie testowe na 500 PLN, skalowanie do 5000-50 000 PLN/dzień. Algorytm Facebooka szybko uczy się co konwertuje."
+                  desc: "Zaczynamy od kampanii testowej, a budżet zwiększamy dopiero tam, gdzie dane pokazują sens skalowania."
                 },
                 {
                   icon: BarChart3,
                   title: "Pełny tracking i ROAS",
-                  desc: "Pixel conversion tracking pokazuje dokładnie ile zarabiamy z każdej reklamy. Raportowanie codzienne + weekly optymalizacja."
+                  desc: "Pixel i Conversion API pokazują, które reklamy prowadzą do konwersji. Regularne raporty i optymalizacja."
                 },
                 {
                   icon: Users,
                   title: "Retargeting zaawansowany",
-                  desc: "Dynamic Ads — pokazujemy dokładnie produkty które użytkownik oglądał. 5-10x wyższe ROAS niż awareness campaigns."
+                  desc: "Dynamic Ads — pokazujemy produkty, które użytkownik oglądał, oraz przypominamy o ofercie osobom, które odwiedziły stronę."
                 },
                 {
                   icon: Award,
-                  title: "Competitive CPM w Wrocławiu",
-                  desc: "Koszt tysiąca impressions 30-50% niższy niż w Warszawie czy Krakowie. Twój budżet rozpracuje się dalej."
+                  title: "Targetowanie lokalne",
+                  desc: "Kampanie zawężone do Wrocławia i okolic albo do wybranych dzielnic — budżet trafia do osób, które realnie mogą skorzystać z oferty."
                 },
                 {
                   icon: Zap,
-                  title: "Agencja certyfikowana",
-                  desc: "Facebook Partner. Dostęp do beta features, support bezpośredni od Facebooka. Account manager dedykowany dla Ciebie."
+                  title: "Kreacje z własnej produkcji",
+                  desc: "Zdjęcia i wideo do reklam realizujemy we własnym zakresie — jako studio produkcyjne z Poznania. Samą kampanię prowadzimy zdalnie."
                 }
               ].map((item, i) => (
                 <FadeInView key={i}>
@@ -419,51 +364,36 @@ export default function FacebookAdsWroclaw() {
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-14">
               <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                Pakiety Facebook Ads{" "}
-                <span className="text-gradient">dla Wrocławia</span>
+                Od czego zależy{" "}
+                <span className="text-gradient">wycena?</span>
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Trzy pakiety obsługi agencji. Osobnie dodajesz budżet na same reklamy. Wszystkie pakiety z bezpłatną wstępną konsultacją.
+                Wycenę obsługi przygotowujemy po rozmowie o zakresie. Bierzemy pod uwagę przede wszystkim:
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-6">
-              {pricingPlans.map((pkg, i) => (
-                <FadeInView key={i}>
-                  <div className="rounded-2xl border border-border/40 bg-card/20 overflow-hidden flex flex-col">
-                    <div className="p-6 pb-4">
-                      <h3 className="font-heading font-bold text-xl mb-2">{pkg.name}</h3>
-                      <div className="mb-2">
-                        <span className="text-4xl font-heading font-bold text-primary">{pkg.price}</span>
-                        <span className="text-muted-foreground"> zł/mies</span>
-                      </div>
-                      <p className="text-sm text-muted-foreground">{pkg.description}</p>
-                    </div>
-                    <div className="flex-1 px-6 py-4 space-y-3">
-                      {pkg.features.map((feature, j) => (
-                        <div key={j} className="flex items-start gap-2 text-sm">
-                          <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
-                          <span className="text-muted-foreground">{feature}</span>
-                        </div>
-                      ))}
-                    </div>
-                    <div className="p-6 pt-4">
-                      <Button asChild size="sm" className="w-full bg-primary hover:bg-primary/90">
-                        <Link to="/kontakt">
-                          Zapytaj o cenę
-                        </Link>
-                      </Button>
-                    </div>
-                  </div>
-                </FadeInView>
+            <div className="max-w-2xl mx-auto space-y-3">
+              {pricingFactors.map((factor, i) => (
+                <div key={i} className="flex items-start gap-2 text-sm">
+                  <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                  <span className="text-muted-foreground">{factor}</span>
+                </div>
               ))}
+            </div>
+
+            <div className="mt-10 text-center">
+              <Button asChild size="sm" className="bg-primary hover:bg-primary/90">
+                <Link to="/kontakt">
+                  Zapytaj o wycenę
+                </Link>
+              </Button>
             </div>
 
             <div className="mt-12 p-6 rounded-2xl bg-primary/5 border border-primary/20">
               <div className="flex items-start gap-3">
                 <AlertCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                 <p className="text-sm text-muted-foreground">
-                  <strong className="text-foreground">Koszt kampanii osobno:</strong> Budżet na same reklamy ustawiasz sam. Minimum 500 PLN/dzień dla testów, 2000-10 000 PLN/dzień dla skalowania. Nasza agencja optymalizuje każde złoto, żeby uzyskać najwyższy ROAS.
+                  <strong className="text-foreground">Budżet reklamowy osobno:</strong> Budżet na same reklamy płacisz bezpośrednio Mecie i ustalasz go sam. Pomagamy dobrać go do celu i rozsądnie rozdzielić między testy a skalowanie.
                 </p>
               </div>
             </div>
@@ -481,7 +411,7 @@ export default function FacebookAdsWroclaw() {
                 <span className="text-gradient">Wrocławiu</span>
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Doświadczenie z każdą branżą — od e-commerce, przez usługi B2B, po edukację i gastronomię.
+                Kampanie planujemy pod specyfikę branży — od e-commerce, przez usługi B2B, po edukację i gastronomię.
               </p>
             </div>
 
@@ -536,7 +466,7 @@ export default function FacebookAdsWroclaw() {
               Gotów uruchomić kampanię Meta Ads?
             </h2>
             <p className="text-lg text-white/90 mb-10">
-              Bezpłatna konsultacja — omówisz cele, budżet i strategię z ekspertem. Pierwsza kampania testowa w ciągu 48 godzin.
+              Bezpłatna konsultacja — omówisz cele, budżet i strategię. Termin startu kampanii ustalamy wspólnie po konsultacji.
             </p>
             <Button asChild size="lg" className="bg-white hover:bg-white/90 text-primary">
               <Link to="/kontakt">

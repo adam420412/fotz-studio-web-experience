@@ -128,7 +128,7 @@ export function ContactSection({ city, variant = "full", title, description }: C
 
       toast({
         title: "Wiadomość wysłana!",
-        description: "Odezwiemy się w ciągu 24 godzin.",
+        description: "Odezwiemy się w dni robocze.",
       });
       
       setFormData({ name: "", email: "", phone: "", message: "" });
@@ -159,7 +159,7 @@ export function ContactSection({ city, variant = "full", title, description }: C
       label: "Email",
       value: "adam@fotz.pl",
       href: "mailto:adam@fotz.pl",
-      desc: "Odpowiadamy w ciągu 24h"
+      desc: "Odpisujemy w dni robocze"
     },
     {
       icon: MapPin,
@@ -171,10 +171,10 @@ export function ContactSection({ city, variant = "full", title, description }: C
   ];
 
   const benefits = [
-    "Bezpłatna wycena w 24h",
+    "Bezpłatna wycena",
     "Bez zobowiązań",
     "Indywidualne podejście",
-    "Ekspresowa realizacja"
+    "Jasny harmonogram prac"
   ];
 
   if (variant === "compact") {
@@ -198,7 +198,7 @@ export function ContactSection({ city, variant = "full", title, description }: C
               </h2>
               
               <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-                {description ?? "Skontaktuj się z nami i otrzymaj bezpłatną wycenę. Odpowiadamy w ciągu 24 godzin."}
+                {description ?? "Skontaktuj się z nami i otrzymaj bezpłatną wycenę. Odpisujemy w dni robocze."}
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -250,7 +250,7 @@ export function ContactSection({ city, variant = "full", title, description }: C
             </h2>
             
             <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
-              {description ?? "Porozmawiajmy o Twoim projekcie. Bezpłatna wycena w ciągu 24 godzin."}
+              {description ?? "Porozmawiajmy o Twoim projekcie. Wycenę przygotowujemy po krótkiej rozmowie."}
             </p>
           </div>
         </FadeInView>

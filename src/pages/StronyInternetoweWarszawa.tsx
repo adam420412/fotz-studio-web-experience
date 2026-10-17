@@ -18,13 +18,11 @@ import {
   Headphones,
   ArrowRight,
   Sparkles,
-  Zap,
   Target,
   Code2,
   Layers,
   Rocket,
-  Star,
-  Clock
+  Star
 } from "lucide-react";
 import {
   Accordion,
@@ -61,7 +59,7 @@ const StronyInternetoweWarszawa = () => {
     { icon: Smartphone, title: "Mobile-first", desc: "Tworzymy responsywne strony internetowe działające na wszystkich urządzeniach." },
     { icon: Shield, title: "Bezpieczne strony", desc: "SSL, regularne aktualizacje, zabezpieczenia przed atakami." },
     { icon: Headphones, title: "Wsparcie po wdrożeniu", desc: "Nie zostawiamy Cię po uruchomieniu nowej strony internetowej." },
-    { icon: Sparkles, title: "Lokalna znajomość rynku", desc: "Znamy specyfikę największego rynku biznesowego w Polsce. Tworzymy strony, które wyróżniają się wśród dziesiątek tysięcy warszawskich firm w wynikach Google." },
+    { icon: Sparkles, title: "Współpraca zdalna", desc: "Pracujemy z Poznania, firmy z Warszawy obsługujemy zdalnie — spotkania online i wgląd w postęp prac na każdym etapie." },
   ];
 
   const pricing = [
@@ -97,7 +95,7 @@ const StronyInternetoweWarszawa = () => {
     {
       title: "Apartamenty Chorwacja",
       category: "Strona rezerwacyjna",
-      result: "+180% rezerwacji online",
+      result: "Strona z systemem rezerwacji",
       link: "/realizacje/apartamenty-chorwacja",
       image: apartamentyImg
     },
@@ -111,7 +109,7 @@ const StronyInternetoweWarszawa = () => {
     {
       title: "Cute Dumpling",
       category: "Strona gastronomiczna",
-      result: "+250% ruchu organicznego",
+      result: "Strona gastronomiczna z menu",
       link: "/realizacje/cute-dumpling",
       image: cuteDumplingImg
     },
@@ -124,7 +122,7 @@ const StronyInternetoweWarszawa = () => {
     },
     {
       question: "Jakie są kluczowe cechy responsywnych stron internetowych?",
-      answer: "Responsywne strony internetowe automatycznie dostosowują swoją strukturę i wygląd do rozmiaru ekranu urządzenia. To kluczowe dla użytkowników mobilnych, gwarantuje komfort przeglądania i jest jednym z kryteriów oceny przez wyszukiwarki jak Google."
+      answer: "Responsywne strony internetowe automatycznie dostosowują swoją strukturę i wygląd do rozmiaru ekranu urządzenia. To kluczowe dla użytkowników mobilnych, poprawia komfort przeglądania i jest jednym z kryteriów oceny przez wyszukiwarki jak Google."
     },
     {
       question: "Ile kosztuje wykonanie strony internetowej w Warszawie?",
@@ -147,12 +145,12 @@ const StronyInternetoweWarszawa = () => {
   const stats = [
     { value: "WWW", label: "Strony i sklepy", icon: Layers },
     { value: "UX", label: "Projekt dla odbiorcy", icon: Star },
-    { value: "5 lat", label: "Doświadczenia", icon: Clock },
+    { value: "SEO", label: "Optymalizacja w standardzie", icon: Search },
     { value: "Kontakt", label: "Uzgodniona opieka", icon: Headphones },
   ];
 
   const benefits = [
-    "Doświadczenie na konkurencyjnym rynku warszawskim",
+    "Pracujemy z Poznania, firmy z Warszawy obsługujemy zdalnie",
     "Kompleksowa obsługa od projektu po wdrożenie",
     "SEO w standardzie każdej strony",
     "Responsywny design mobile-first",
@@ -353,7 +351,7 @@ const StronyInternetoweWarszawa = () => {
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
               <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">Proces</span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-4">Jak tworzymy strony?</h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto text-lg">Przejrzysty proces, który gwarantuje sukces Twojego projektu</p>
+              <p className="text-muted-foreground max-w-2xl mx-auto text-lg">Przejrzysty proces z jasnymi etapami i akceptacjami</p>
             </motion.div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
               {processSteps.map((item, index) => (
@@ -446,52 +444,48 @@ const StronyInternetoweWarszawa = () => {
               Strony internetowe Warszawa — tworzenie stron www dla warszawskich firm
             </h2>
             <p className="text-muted-foreground mb-4">
-              Warszawa to największy rynek biznesowy w Polsce — prawie 400 000 zarejestrowanych
-              przedsiębiorstw, siedziby PKO BP, PZU, Orlenu i dziesiątek międzynarodowych korporacji.
+              Warszawa to największy rynek biznesowy w Polsce — siedziby PKO BP, PZU, Orlenu
+              i wielu międzynarodowych korporacji.
               To też miasto, w którym wyrosły globalne startupy: OLX, Docplanner, Packhelp, Brainly.
               W tak konkurencyjnym środowisku profesjonalna strona internetowa nie jest opcją —
-              jest koniecznością. Tworzenie stron www w Warszawie to nasza codzienna praca.
+              jest koniecznością. Pracujemy z Poznania, a firmy z Warszawy obsługujemy zdalnie.
             </p>
             <p className="text-muted-foreground mb-6">
-              Obsługujemy zarówno duże firmy, jak i freelancerów czy małe biznesy z Woli, Mokotowa,
-              Ursynowa czy Pragi. Każdą stronę internetową projektujemy indywidualnie — bez gotowych
+              Możemy pracować zarówno z większymi firmami, jak i z freelancerami czy małymi biznesami.
+              Każdą stronę internetową projektujemy indywidualnie — bez gotowych
               szablonów, bez powtarzających się układów. Strony dla firm z Warszawy budujemy
-              w technologiach React, Next.js i WordPress Warszawa, które zapewniają błyskawiczne ładowanie i doskonałą
-              optymalizację pod algorytmy Google. Nowoczesna strona www to fundament skutecznego marketingu online.
+              w technologiach React, Next.js i WordPress, dbając o szybkie ładowanie i techniczne
+              podstawy SEO. Nowoczesna strona www to fundament skutecznego marketingu online.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
               Dlaczego firmy z Warszawy potrzebują silnej strony www?
             </h2>
             <p className="text-muted-foreground mb-4">
-              Warszawski rynek jest nasycony — w każdej branży działa kilkuset konkurentów walczących
-              o tę samą grupę klientów. Gdy potencjalny klient szuka usługi w Google, trafia do
-              pierwszych trzech wyników. Strona, która nie jest zoptymalizowana pod SEO, nie istnieje
-              dla większości klientów. Dlatego każdą stronę internetową dla firm z Warszawy budujemy
+              Warszawski rynek jest nasycony — w wielu branżach działa duża konkurencja walcząca
+              o tę samą grupę klientów. Gdy potencjalny klient szuka usługi w Google, zwykle wybiera
+              spośród pierwszych wyników. Strona bez podstaw SEO ma mniejszą szansę, by do niego trafić. Dlatego każdą stronę internetową dla firm z Warszawy budujemy
               z myślą o pozycjonowaniu od pierwszego dnia projektu.
             </p>
             <p className="text-muted-foreground mb-6">
               Pracujemy zdalnie — spotkania i konsultacje odbywają się przez Google Meet lub Zoom,
-              a wszystkie etapy projektu są dostępne online w czasie rzeczywistym. Mimo braku
-              fizycznego biura w Warszawie, nasi klienci mają pełen wgląd w postęp prac przez
-              całą dobę. Ten model sprawdza się doskonale w dynamicznym środowisku stolicy.
+              a wszystkie etapy projektu są dostępne online. Pracujemy z Poznania, firmy z Warszawy
+              obsługujemy zdalnie — masz wgląd w postęp prac na każdym etapie.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
               Strony internetowe dla różnych sektorów warszawskiego rynku
             </h2>
             <p className="text-muted-foreground mb-4">
-              Warszawa to mozaika sektorów. Tworzymy strony internetowe dla firm prawniczych
-              z centrum, agencji nieruchomości z Wilanowa, restauracji na Starym Mieście,
-              kancelarii podatkowych z Mokotowa i startupów technologicznych z Mordoru.
+              Warszawa to mozaika sektorów — kancelarie, agencje nieruchomości, restauracje,
+              biura rachunkowe, startupy technologiczne.
               Każda branża ma inne potrzeby — od rozbudowanych systemów rezerwacji po proste
               strony prezentacyjne z formularzem kontaktowym.
             </p>
             <p className="text-muted-foreground mb-6">
-              Szczególnym wyzwaniem dla warszawskich firm jest wielojęzyczność — część naszych
-              klientów ze stolicy potrzebuje stron w kilku wersjach językowych (PL/EN/DE/UK),
-              by obsługiwać klientów zagranicznych lub expat community. Projektujemy i kodujemy
-              wielojęzyczne strony www bez kompromisów w zakresie wydajności i pozycjonowania.
+              Częstym wyzwaniem dla warszawskich firm jest wielojęzyczność — strony w kilku wersjach
+              językowych (PL/EN/DE/UK) pozwalają obsługiwać klientów zagranicznych lub expat community.
+              Projektujemy i kodujemy wielojęzyczne strony www z dbałością o wydajność i SEO.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
@@ -504,8 +498,8 @@ const StronyInternetoweWarszawa = () => {
               Po akceptacji projektu przechodzimy do wdrożenia w wybranej technologii.
             </p>
             <p className="text-muted-foreground mb-6">
-              Standardowy projekt strony internetowej dla firmy z Warszawy trwa 3–6 tygodni.
-              W tym czasie dostarczamy: projekt UX/UI, responsywną stronę www, podstawową
+              Harmonogram projektu ustalamy w ofercie — zależy od zakresu i dostarczenia treści.
+              W ramach projektu dostarczamy: projekt UX/UI, responsywną stronę www, podstawową
               optymalizację SEO (meta tagi, schema, sitemap, prędkość), szkolenie z obsługi CMS
               i 30-dniowy support po wdrożeniu. Strony internetowe dla warszawskich firm
               przekazujemy z pełną dokumentacją i dostępem administracyjnym.
@@ -519,13 +513,12 @@ const StronyInternetoweWarszawa = () => {
               kluczowe jest pojawienie się w wynikach lokalnych Google. Optymalizujemy strony
               pod frazy z geolokalizacją („usługa + Warszawa", „usługa + Mokotów") i integrujemy
               je z profilem Google Moja Firma. To podwójna widoczność: w organicznych wynikach
-              i w mapach Google — bezpłatny ruch od klientów w Twojej okolicy.
+              i w mapach Google. Nie gwarantujemy konkretnej pozycji — wynik zależy m.in. od konkurencji w danej dzielnicy i branży.
             </p>
             <p className="text-muted-foreground">
               Jeśli szukasz partnera do tworzenia strony internetowej dla firmy z Warszawy,
-              skontaktuj się z nami. Bezpłatna wycena w ciągu 24 godzin, projekt w 3–6 tygodni,
-              gwarancja satysfakcji na każdym etapie. Dziesiątki firm ze stolicy już nam zaufały —
-              dołącz do nich i zacznij pozyskiwać klientów przez internet.
+              skontaktuj się z nami. Wycenę i harmonogram przygotowujemy bezpłatnie po rozmowie
+              o zakresie projektu.
             </p>
           
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">

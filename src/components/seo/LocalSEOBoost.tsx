@@ -34,15 +34,15 @@ const variantCopy = {
     faq: (city: string, cityLoc: string) => [
       {
         q: `Ile kosztuje agencja marketingowa w ${cityLoc}?`,
-        a: `Stawki rynkowe w ${cityLoc} dla profesjonalnej obsługi marketingowej zaczynają się od 2 500 zł netto miesięcznie za pakiet startowy (1-2 kanały: SEO lub Google Ads). Pełna obsługa wielokanałowa (SEO + Ads + Social Media + content) to widełki 6 000–15 000 zł netto, w zależności od skali kampanii i konkurencyjności branży.`,
+        a: `Koszt zależy od liczby kanałów (SEO, Google Ads, Meta Ads, social media, content), zakresu produkcji zdjęć i wideo oraz konkurencji w branży. Wycenę przygotowujemy po rozmowie o celu i zakresie. Budżet reklamowy płacony Google lub Meta jest zawsze osobną pozycją.`,
       },
       {
         q: `Czy musimy spotykać się stacjonarnie w ${cityLoc}?`,
-        a: `Nie wymagamy spotkań stacjonarnych — całą współpracę prowadzimy zdalnie (Google Meet, Slack, Asana). Jeśli jednak preferujesz osobisty kontakt, organizujemy kwartalne spotkania strategiczne w ${cityLoc} lub zapraszamy do naszego biura w Poznaniu.`,
+        a: `Nie wymagamy spotkań stacjonarnych — całą współpracę prowadzimy zdalnie (Google Meet, Slack, Asana). Zespół pracuje w Poznaniu. Spotkanie na miejscu w ${cityLoc} albo wyjazd na zdjęcia i nagrania ustalamy osobno, jeśli zakres projektu tego wymaga.`,
       },
       {
         q: `Jak długo trwa, zanim zobaczę pierwsze efekty marketingu w ${city}?`,
-        a: `Płatne kampanie (Google Ads, Meta Ads) zaczynają generować ruch i leady już w pierwszym tygodniu od uruchomienia. SEO to inwestycja długofalowa — pierwsze wzrosty pozycji widać po 2-3 miesiącach, a stabilne efekty biznesowe po 6-9 miesiącach. Social media organic budujemy w cyklu 3-6 miesięcy.`,
+        a: `Kampanie płatne zaczynają zbierać dane od dnia uruchomienia, ale tempo pozyskiwania zapytań zależy od oferty, budżetu i strony docelowej. SEO działa dłużej i zależy od stanu witryny oraz konkurencji. Nie gwarantujemy konkretnych pozycji ani terminu — ustalamy termin przeglądu danych i kolejne kroki.`,
       },
       {
         q: `Czy obsługujecie firmy spoza ${city}?`,
@@ -50,7 +50,7 @@ const variantCopy = {
       },
       {
         q: `Co odróżnia FOTZ od innych agencji w ${cityLoc}?`,
-        a: `Łączymy performance marketing z produkcją kreatywną in-house — własne studio video, fotografia, branding, a nie tylko obsługa kampanii. Dzięki temu nasi klienci nie muszą koordynować trzech różnych dostawców, a kreacje reklamowe powstają z pełnym zrozumieniem strategii mediowej.`,
+        a: `Łączymy kampanie z własną produkcją: wideo, fotografię i branding robi ten sam zespół, który prowadzi reklamy. Dzięki temu nasi klienci nie muszą koordynować trzech różnych dostawców, a kreacje reklamowe powstają z pełnym zrozumieniem strategii mediowej.`,
       },
     ],
   },
@@ -68,11 +68,11 @@ const variantCopy = {
     faq: (city: string, cityLoc: string) => [
       {
         q: `Ile kosztuje strona internetowa dla firmy z ${city}?`,
-        a: `Landing page wizytówkowy startuje od 2 000 zł netto, klasyczna strona firmowa (5-8 podstron + CMS) to 5 000–12 000 zł, a rozbudowany serwis z konfiguratorem lub portfolio dynamicznym 15 000–35 000 zł. Hosting roczny i opieka techniczna dochodzą jako 200–600 zł netto miesięcznie.`,
+        a: `Cena zależy od liczby podstron, funkcji (formularze, rezerwacje, wersje językowe, integracje), zakresu treści i zdjęć oraz opieki po starcie. Wycenę przygotowujemy po rozmowie o zakresie; hosting i opiekę techniczną opisujemy w ofercie jako osobne pozycje.`,
       },
       {
         q: `Jak długo trwa wykonanie strony www w ${cityLoc}?`,
-        a: `Landing page realizujemy w 2-3 tygodnie, stronę firmową w 4-8 tygodni, a rozbudowany serwis 8-16 tygodni. Tempo zależy głównie od dostępności treści i materiałów graficznych po stronie klienta — pomagamy przyspieszyć ten etap copywritingiem i sesją zdjęciową.`,
+        a: `Harmonogram podajemy w ofercie po ustaleniu zakresu. Tempo zależy głównie od dostępności treści i materiałów graficznych po stronie klienta — pomagamy przyspieszyć ten etap copywritingiem i sesją zdjęciową.`,
       },
       {
         q: `Czy strona będzie pozycjonować się w ${cityLoc}?`,
@@ -84,7 +84,7 @@ const variantCopy = {
       },
       {
         q: `Czy możemy sami edytować treści po oddaniu strony?`,
-        a: `Tak — każdą stronę przekazujemy z panelem CMS (najczęściej WordPress lub Webflow), w którym samodzielnie edytujesz teksty, zdjęcia, posty bloga i podstrony. Nagrywamy też szkolenie video w języku polskim, które krok po kroku tłumaczy obsługę panelu.`,
+        a: `Tak — każdą stronę przekazujemy z panelem CMS (najczęściej WordPress lub Webflow), w którym samodzielnie edytujesz teksty, zdjęcia, posty bloga i podstrony. Po oddaniu strony pokazujemy, jak obsługiwać panel, i przekazujemy krótką instrukcję.`,
       },
     ],
   },
@@ -102,7 +102,7 @@ const variantCopy = {
     faq: (city: string, cityLoc: string) => [
       {
         q: `Ile kosztuje sklep internetowy dla firmy z ${city}?`,
-        a: `Sklep startowy na WooCommerce (do 100 produktów) to 8 000–15 000 zł netto, średni sklep z integracjami (płatności, kurierzy, księgowość, marketing automation) 18 000–35 000 zł, a duży B2B/B2C z konfiguratorem produktów lub multi-language 40 000–100 000 zł. Doliczyć trzeba hosting (200–800 zł/mc) i opiekę techniczną.`,
+        a: `Koszt zależy od platformy, liczby produktów, integracji (płatności, kurierzy, księgowość), wersji językowych i zakresu zdjęć produktowych. Wycenę przygotowujemy po rozmowie o zakresie; hosting i opiekę techniczną opisujemy w ofercie osobno.`,
       },
       {
         q: `Jaką platformę wybrać — WooCommerce, Shopify czy PrestaShop?`,
@@ -110,7 +110,7 @@ const variantCopy = {
       },
       {
         q: `Jak długo trwa uruchomienie sklepu?`,
-        a: `Sklep startowy uruchamiamy w 4-6 tygodni, średni z integracjami w 8-12 tygodni, a rozbudowany B2B w 12-20 tygodni. Kluczowy etap to przygotowanie zdjęć produktowych i opisów — możemy zrobić sesję w naszym studio w Poznaniu lub u klienta w ${cityLoc}.`,
+        a: `Harmonogram podajemy w ofercie po ustaleniu zakresu i integracji. Kluczowy etap to przygotowanie zdjęć produktowych i opisów — możemy zrobić sesję w Poznaniu; sesję u klienta w ${cityLoc} ustalamy osobno.`,
       },
       {
         q: `Czy zajmujecie się też reklamą sklepu po uruchomieniu?`,
@@ -118,7 +118,7 @@ const variantCopy = {
       },
       {
         q: `Czy sklep będzie zoptymalizowany pod SEO?`,
-        a: `Tak — od fundamentów. Implementujemy poprawną strukturę URL, Schema.org Product/Offer, optymalizację Core Web Vitals, breadcrumbs, paginację z rel=next/prev, kanoniczne adresy filtrów oraz mapę produktową XML. Dla klientów z ${cityLoc} dodajemy też lokalne strony kategorii (np. \"dostawa do ${city} w 24h\").`,
+        a: `Tak — od fundamentów. Implementujemy poprawną strukturę URL, Schema.org Product/Offer, optymalizację Core Web Vitals, breadcrumbs, paginację z rel=next/prev, kanoniczne adresy filtrów oraz mapę produktową XML. Dla klientów z ${cityLoc} dodajemy też lokalne strony kategorii (np. \"dostawa do ${city}\").`,
       },
     ],
   },

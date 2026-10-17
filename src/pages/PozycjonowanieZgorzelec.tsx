@@ -14,19 +14,19 @@ export default function PozycjonowanieZgorzelec() {
   const faqs = [
     {
       question: "Ile czasu trwa pozycjonowanie strony w Zgorzelcu?",
-      answer: "Typowo pierwsze efekty są widoczne po 4-6 tygodniach, jednak pełne rezultaty osiągamy w 3-6 miesięcy. Czas realizacji zależy od konkurencji w branży, stanu startowego strony i zakresu pracy SEO. W Zgorzelcu, gdzie konkurencja lokalna jest umiarkowana, procesy działają szybciej niż w dużych miastach."
+      answer: "SEO to proces rozłożony na miesiące, a nie jednorazowa usługa. Tempo zmian zależy od konkurencji w branży, stanu startowego strony i zakresu prac, dlatego nie podajemy sztywnych terminów efektów. Po audycie opisujemy, czego można realnie oczekiwać i jak będziemy mierzyć postępy."
     },
     {
       question: "Dlaczego pozycjonowanie lokalne jest ważne dla firm w Zgorzelcu?",
-      answer: "Zgorzelec jest miastem portowym przy granicy z Niemcami, co stwarza unikalne możliwości biznesowe. Pozycjonowanie lokalne pozwala firmom docierać do potencjalnych klientów zarówno z okolicy, jak i z niemieckiego Görlitz. Prawie 70 procent wyszukiwań zawiera element lokalizacji, dlatego SEO lokalne jest kluczowe dla wzrostu sprzedaży."
+      answer: "Zgorzelec leży przy granicy z Niemcami, naprzeciw Görlitz, co stwarza dodatkowe możliwości biznesowe. Pozycjonowanie lokalne pomaga docierać do klientów zarówno z okolicy, jak i z niemieckiej strony granicy. Wielu klientów szuka usług z nazwą miasta w zapytaniu, dlatego dla lokalnych firm SEO lokalne bywa jednym z ważniejszych kanałów pozyskiwania klientów."
     },
     {
-      question: "Jakie są średnie ceny pozycjonowania w Zgorzelcu?",
-      answer: "Nasze pakiety startują od 1500 zł miesięcznie dla małych firm. Pakiet Standard to 3000 zł, a Premium z pełnym wsparciem SEO to 5000 zł. Ceny są konkurencyjne w stosunku do Wrocławia czy Warszawy, a efekty są szybsze ze względu na mniejszą konkurencję lokalną na słowach kluczowych Zgorzelec."
+      question: "Ile kosztuje pozycjonowanie w Zgorzelcu?",
+      answer: "Wycenę przygotowujemy po rozmowie o zakresie i krótkim audycie strony. Koszt zależy od stanu technicznego strony, liczby fraz i podstron, konkurencji w branży, ilości treści do przygotowania oraz tego, czy pozycjonujemy stronę także na rynek niemiecki."
     },
     {
       question: "Czy pozycjonowanie pomoże mojemu sklepowi turystyczno-handlowemu w Zgorzelcu?",
-      answer: "Absolutnie. Turystyka i handel transgraniczny to dwa główne sektory w Zgorzelcu. Pozycjonowanie pozwala wyświetlać się w wynikach wyszukiwania turystów i kupców z Niemiec szukających produktów, usług czy atrakcji. Specjalizujemy się w optymalizacji dla słów kluczowych kierowanych do turystów oraz klientów z niemieckiej strony granicy."
+      answer: "Może pomóc. Turystyka i handel transgraniczny są ważne dla wielu firm w Zgorzelcu. Pozycjonowanie pozwala budować widoczność w wynikach wyszukiwania turystów i kupców z Niemiec szukających produktów, usług czy atrakcji. Dobieramy słowa kluczowe kierowane do turystów oraz klientów z niemieckiej strony granicy."
     },
     {
       question: "Jakie metody SEO używacie dla lokalnego pozycjonowania?",
@@ -38,7 +38,7 @@ export default function PozycjonowanieZgorzelec() {
     <Layout>
       <SEOHead
         title="Pozycjonowanie Zgorzelec | SEO dla firm | Fotz Studio"
-        description="Profesjonalne pozycjonowanie stron w Zgorzelcu. Specjalizujemy się w SEO dla turystyki, handlu i usług lokalnych. Pakiety od 1500 zł. Rezultaty w 3-6 miesięcy."
+        description="Pozycjonowanie stron dla firm ze Zgorzelca — SEO lokalne dla turystyki, handlu i usług. Pracujemy z Poznania, Zgorzelec obsługujemy zdalnie. Wycena po rozmowie o zakresie."
         canonical="https://www.fotz-studio.pl/pozycjonowanie/zgorzelec"
         keywords="pozycjonowanie zgorzelec, agencja seo zgorzelec, seo zgorzelec, pozycjonowanie stron zgorzelec, seo dla firm zgorzelec, seo dolny śląsk, pozycjonowanie lokalne zgorzelec"
       />
@@ -65,7 +65,7 @@ export default function PozycjonowanieZgorzelec() {
                 Lokalne SEO dla firm przy granicy z Niemcami
               </p>
               <p className="text-blue-200 text-lg">
-                Wyświetlaj się na pierwszej stronie Google dla Zgorzelca
+                Buduj widoczność w lokalnych wynikach Google dla Zgorzelca
               </p>
             </div>
           </div>
@@ -79,10 +79,10 @@ export default function PozycjonowanieZgorzelec() {
                 Dlaczego SEO dla Zgorzelca?
               </h2>
               <p className="text-slate-700 mb-4 leading-relaxed">
-                Zgorzelec to dynamiczne miasto portowe położone bezpośrednio przy granicy z Niemcami. Jego położenie geograficzne stwarza wyjątkowe możliwości biznesowe dla firm, które chcą docierać zarówno do lokalnych klientów, jak i do potencjalnych kupców z Niemiec oraz turystów odwiedzających region.
+                Zgorzelec to miasto położone bezpośrednio przy granicy z Niemcami. Jego położenie geograficzne stwarza wyjątkowe możliwości biznesowe dla firm, które chcą docierać zarówno do lokalnych klientów, jak i do potencjalnych kupców z Niemiec oraz turystów odwiedzających region.
               </p>
               <p className="text-slate-700 mb-4 leading-relaxed">
-                Pozycjonowanie lokalne w Zgorzelcu to nie tylko zwiększenie widoczności w Google Search – to dostęp do rynku transgranicznego, do turystów i inwestorów zainteresowanych handlem i usługami. Nasze strategie SEO są dostosowane do specyfiki Zgorzelca i jego unikalnego położenia na mapie Polski.
+                Pozycjonowanie lokalne w Zgorzelcu to nie tylko zwiększenie widoczności w Google Search – to dostęp do rynku transgranicznego, do turystów i inwestorów zainteresowanych handlem i usługami. Strategię SEO dopasowujemy do specyfiki Zgorzelca i jego położenia. Pracujemy z Poznania, a firmy ze Zgorzelca obsługujemy zdalnie.
               </p>
             </div>
             <div className="bg-blue-50 rounded-lg p-8 border-l-4 border-blue-600">
@@ -105,11 +105,7 @@ export default function PozycjonowanieZgorzelec() {
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span>Mniejsza konkurencja niż w dużych miastach</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span>Szybsze rezultaty SEO</span>
+                  <span>Klienci szukający usług po polsku i po niemiecku</span>
                 </li>
               </ul>
             </div>
@@ -129,7 +125,7 @@ export default function PozycjonowanieZgorzelec() {
                   Handel Transgraniczny
                 </h3>
                 <p className="text-slate-700 leading-relaxed">
-                  Firmy w Zgorzelcu, które sprzedają towary lub usługi, mogą docierać do klientów z Niemiec poprzez właściwie zoptymalizowane słowa kluczowe. Pozycjonowanie dla zapytań takich jak "pozycjonowanie Zgorzelec" czy "usługi Zgorzelec" gwarantuje, że Twoja firma będzie widoczna dla niemieckich kupców szukających partnerów biznesowych.
+                  Firmy w Zgorzelcu, które sprzedają towary lub usługi, mogą docierać do klientów z Niemiec poprzez właściwie zoptymalizowane słowa kluczowe. Pozycjonowanie na zapytania związane ze Zgorzelcem — także po niemiecku — pomaga budować widoczność wśród kupców z Niemiec szukających partnerów biznesowych. Nie gwarantujemy konkretnej pozycji w Google.
                 </p>
               </div>
 
@@ -139,7 +135,7 @@ export default function PozycjonowanieZgorzelec() {
                   Turystyka i Usługi
                 </h3>
                 <p className="text-slate-700 leading-relaxed">
-                  Turyści szukają hoteli, restauracji, atrakcji i usług w Zgorzelcu. SEO lokalne pozwala wyświetlić się w wyszukiwaniach takich jak "noclegi Zgorzelec" czy "atrakcje turystyczne Zgorzelec". Dzięki naszej strategii turystyka lokalnego biznesu znacznie się zwiększa.
+                  Turyści szukają hoteli, restauracji, atrakcji i usług w Zgorzelcu. SEO lokalne pozwala wyświetlić się w wyszukiwaniach takich jak "noclegi Zgorzelec" czy "atrakcje turystyczne Zgorzelec". Dobrze przygotowana strona i profil firmy ułatwiają turystom znalezienie Twojej oferty.
                 </p>
               </div>
 
@@ -149,7 +145,7 @@ export default function PozycjonowanieZgorzelec() {
                   Usługi Lokalne
                 </h3>
                 <p className="text-slate-700 leading-relaxed">
-                  Hydraulicy, elektrycy, fryzjerzy, lekarze i inne usługi lokalne mogą znaleźć nowych klientów poprzez pozycjonowanie. Zainteresowani są wyszukiwaniem "fryzjer Zgorzelec" czy "hydraulik Zgorzelec". Nasze SEO postawia Twoją firmę na pierwszym miejscu.
+                  Hydraulicy, elektrycy, fryzjerzy, lekarze i inne usługi lokalne mogą znaleźć nowych klientów poprzez pozycjonowanie. Zainteresowani są wyszukiwaniem "fryzjer Zgorzelec" czy "hydraulik Zgorzelec". SEO lokalne pomaga budować widoczność firmy w takich wynikach — bez obietnic konkretnej pozycji.
                 </p>
               </div>
 
@@ -159,113 +155,47 @@ export default function PozycjonowanieZgorzelec() {
                   Google My Business
                 </h3>
                 <p className="text-slate-700 leading-relaxed">
-                  Optymalizacja profilu Google My Business to kluczowy element lokalnego SEO. Zapewniamy, że Twoja firma pojawi się w Google Maps, w wyszukiwaniach lokalnych i będzie mieć wiarygodne opinie od klientów. To bezpośredni droga do nowych kupców.
+                  Optymalizacja profilu Google My Business to kluczowy element lokalnego SEO. Uzupełniamy i porządkujemy profil, aby firma była dobrze przygotowana do wyświetlania w Google Maps i wyszukiwaniach lokalnych, oraz podpowiadamy, jak zbierać opinie od klientów.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Packages */}
+        {/* Pricing factors */}
         <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
-          <h2 className="text-3xl font-bold text-slate-900 mb-12 text-center">
-            Pakiety SEO dla Zgorzelca
+          <h2 className="text-3xl font-bold text-slate-900 mb-6 text-center">
+            Od czego zależy wycena SEO?
           </h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            {/* Starter */}
-            <div className="rounded-lg border border-slate-200 p-8 hover:shadow-lg transition-shadow">
-              <h3 className="text-2xl font-bold text-slate-900 mb-2">Starter</h3>
-              <p className="text-slate-600 mb-6">Dla małych firm</p>
-              <p className="text-4xl font-bold text-blue-600 mb-6">1500 zł<span className="text-lg text-slate-600">/msc</span></p>
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-700">Optymalizacja on-page</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-700">5 artykułów SEO</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-700">Profil Google My Business</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-700">Raport co miesiąc</span>
-                </li>
-              </ul>
-              <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors">
-                Zamów
-              </a>
-            </div>
-
-            {/* Standard */}
-            <div className="rounded-lg border-2 border-blue-600 p-8 shadow-lg relative">
-              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                <span className="bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-bold">NAJPOPULARNIEJSZY</span>
-              </div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-2 mt-4">Standard</h3>
-              <p className="text-slate-600 mb-6">Dla rozwijających się firm</p>
-              <p className="text-4xl font-bold text-blue-600 mb-6">3000 zł<span className="text-lg text-slate-600">/msc</span></p>
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-700">Wszystko z pakietu Starter</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-700">12 artykułów SEO</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-700">Budowanie backlinków lokalnych</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-700">Zarządzanie recenzjami</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-700">Wsparcie 1x na tydzień</span>
-                </li>
-              </ul>
-              <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors">
-                Zamów
-              </a>
-            </div>
-
-            {/* Premium */}
-            <div className="rounded-lg border border-slate-200 p-8 hover:shadow-lg transition-shadow">
-              <h3 className="text-2xl font-bold text-slate-900 mb-2">Premium</h3>
-              <p className="text-slate-600 mb-6">Dla ambitnych firm</p>
-              <p className="text-4xl font-bold text-blue-600 mb-6">5000 zł<span className="text-lg text-slate-600">/msc</span></p>
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-700">Wszystko z pakietu Standard</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-700">25+ artykułów SEO</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-700">Dedykowany account manager</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-700">Analiza konkurencji</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-700">Wsparcie bieżące</span>
-                </li>
-              </ul>
-              <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors">
-                Zamów
-              </a>
-            </div>
+          <p className="text-slate-700 mb-8 text-center max-w-3xl mx-auto">
+            Wycenę przygotowujemy po rozmowie o zakresie i krótkim audycie strony. Na koszt wpływają m.in.:
+          </p>
+          <ul className="space-y-3 mb-8 max-w-2xl mx-auto">
+            <li className="flex items-start gap-2">
+              <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+              <span className="text-slate-700">Stan techniczny i treści obecnej strony</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+              <span className="text-slate-700">Liczba fraz, podstron i wersji językowych (PL/DE)</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+              <span className="text-slate-700">Konkurencja w Twojej branży</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+              <span className="text-slate-700">Ilość treści do przygotowania i działania link building</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+              <span className="text-slate-700">Zakres raportowania i konsultacji</span>
+            </li>
+          </ul>
+          <div className="text-center">
+            <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-blue-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-blue-700 transition-colors">
+              Zapytaj o wycenę
+            </a>
           </div>
         </section>
 
@@ -282,10 +212,10 @@ export default function PozycjonowanieZgorzelec() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-slate-900 mb-2">
-                    Doświadczenie w SEO Lokalnym
+                    Praca z Poznania, obsługa zdalna
                   </h3>
                   <p className="text-slate-700">
-                    Od ponad 8 lat pracujemy z lokalnymi firmami w Polsce. Znamy specyfikę każdego rynku, w tym unikalne wyzwania związane z pozycjonowaniem w Zgorzelcu.
+                    Pracujemy z Poznania, a firmy ze Zgorzelca obsługujemy zdalnie. Przed startem analizujemy lokalną konkurencję i frazy związane z Twoją branżą.
                   </p>
                 </div>
               </div>
@@ -298,7 +228,7 @@ export default function PozycjonowanieZgorzelec() {
                     Strategie White-hat
                   </h3>
                   <p className="text-slate-700">
-                    Używamy wyłącznie etycznych metod SEO zgodnych z wytycznymi Google. Nie ryzzykujemy karom ani penalizacjom algorytmicznych.
+                    Używamy wyłącznie etycznych metod SEO zgodnych z wytycznymi Google. Nie stosujemy technik, które narażają stronę na kary od Google.
                   </p>
                 </div>
               </div>
@@ -311,7 +241,7 @@ export default function PozycjonowanieZgorzelec() {
                     Rezultaty Mierzalne
                   </h3>
                   <p className="text-slate-700">
-                    Raportujemy efekty co miesiąc. Widzisz dokładnie, jak rośnie Twoja pozycja w Google i ile ruchu organicznego przynosi SEO.
+                    Raportujemy efekty co miesiąc. Widzisz, jak zmieniają się pozycje w Google i ile ruchu organicznego przynosi SEO.
                   </p>
                 </div>
               </div>
@@ -324,7 +254,7 @@ export default function PozycjonowanieZgorzelec() {
                     Wsparcie i Konsultacje
                   </h3>
                   <p className="text-slate-700">
-                    Zawsze dostępni do konsultacji. Jeśli masz pytania dotyczące SEO albo chcesz zmienić strategię, możemy to zrobić.
+                    Jesteśmy dostępni do konsultacji. Jeśli masz pytania dotyczące SEO albo chcesz zmienić strategię, możemy to zrobić.
                   </p>
                 </div>
               </div>
@@ -334,10 +264,10 @@ export default function PozycjonowanieZgorzelec() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-slate-900 mb-2">
-                    Szybkie Rezultaty
+                    Uczciwe Oczekiwania
                   </h3>
                   <p className="text-slate-700">
-                    Ze względu na mniejszą konkurencję lokalną w Zgorzelcu, pierwsze efekty osiągamy szybciej niż w dużych miastach.
+                    Nie gwarantujemy konkretnej pozycji ani terminu efektów — mówimy wprost, od czego zależą wyniki i jak będziemy je mierzyć.
                   </p>
                 </div>
               </div>
@@ -347,10 +277,10 @@ export default function PozycjonowanieZgorzelec() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-slate-900 mb-2">
-                    Ceny Konkurencyjne
+                    Wycena Dopasowana do Zakresu
                   </h3>
                   <p className="text-slate-700">
-                    Nasze pakiety SEO są bardziej przystępne niż u dużych agencji z Wrocławia czy Warszawy, bez utraty jakości.
+                    Zakres prac i budżet ustalamy indywidualnie — po rozmowie o celach firmy i audycie strony.
                   </p>
                 </div>
               </div>

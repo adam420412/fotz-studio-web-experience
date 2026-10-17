@@ -9,11 +9,11 @@ import { RelatedArticles } from "@/components/blog/RelatedArticles";
 const faqItems = [
   {
     question: "Ile kosztuje pozycjonowanie lokalne w Poznaniu?",
-    answer: "Profesjonalne SEO lokalne to koszt od 1500 do 5000 PLN miesięcznie, w zależności od konkurencyjności branży i zakresu działań."
+    answer: "Koszt SEO lokalnego zależy od konkurencyjności branży, liczby lokalizacji, stanu strony i profilu firmy oraz zakresu działań (treści, linki, cytaty). Wycenę przygotowujemy po rozmowie o zakresie i krótkim audycie."
   },
   {
     question: "Jak szybko zobaczę efekty SEO lokalnego?",
-    answer: "Pierwsze efekty mogą być widoczne już po 2-4 tygodniach. Pełne efekty pozycjonowania organicznego wymagają 3-6 miesięcy."
+    answer: "To zależy od konkurencji w branży, stanu profilu i strony oraz regularności działań. SEO lokalne to proces rozłożony na miesiące, a nie jednorazowa zmiana — nie gwarantujemy konkretnej pozycji ani terminu."
   },
   {
     question: "Czy mogę samodzielnie robić SEO lokalne?",
@@ -91,7 +91,7 @@ const BlogSEOLokalnePoznan = () => {
               </h1>
               
               <p className="text-lg md:text-xl text-muted-foreground max-w-3xl">
-                46% wszystkich wyszukiwań Google ma charakter lokalny. Jeśli prowadzisz firmę w Poznaniu, SEO lokalne może być kluczem do pozyskania nowych klientów.
+                Wielu klientów szuka usług w Google razem z nazwą miasta lub dzielnicy. Jeśli prowadzisz firmę w Poznaniu, SEO lokalne może pomóc Ci do nich dotrzeć.
               </p>
             </motion.div>
           </div>
@@ -105,23 +105,6 @@ const BlogSEOLokalnePoznan = () => {
                 Wyobraź sobie: klient w Poznaniu szuka "dentysta Jeżyce" lub "mechanik Grunwald". <strong>Czy Twoja firma pojawia się w wynikach?</strong> Jeśli nie, tracisz klientów na rzecz konkurencji, która zadbała o SEO lokalne. Ten poradnik pokaże Ci krok po kroku, jak to zmienić. Sprawdź również nasze usługi <Link to="/seo/pozycjonowanie" className="text-primary hover:underline">pozycjonowania stron</Link> i <Link to="/seo/google-maps" className="text-primary hover:underline">pozycjonowania w Google Maps</Link>. Profesjonalna <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">strona internetowa</Link> z optymalizacją lokalną to fundament sukcesu.
               </p>
 
-              {/* Key stats */}
-              <div className="not-prose my-12">
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                  {[
-                    { value: "46%", label: "wyszukiwań jest lokalnych" },
-                    { value: "78%", label: "prowadzi do zakupu offline" },
-                    { value: "88%", label: "dzwoni lub odwiedza w 24h" },
-                    { value: "97%", label: "szuka lokalnych firm online" },
-                  ].map((stat, index) => (
-                    <div key={index} className="text-center p-4 bg-card rounded-xl border border-border">
-                      <div className="text-2xl md:text-3xl font-bold text-primary mb-1">{stat.value}</div>
-                      <p className="text-xs text-muted-foreground">{stat.label}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
               <h2>Co to jest SEO lokalne?</h2>
 
               <p>
@@ -131,7 +114,7 @@ const BlogSEOLokalnePoznan = () => {
               <div className="not-prose my-8">
                 <div className="grid md:grid-cols-2 gap-6">
                   {[
-                    { icon: MapPin, title: "Google Maps Pack", desc: "Top 3 wyniki na mapie – najbardziej widoczne miejsce w lokalnych wyszukiwaniach" },
+                    { icon: MapPin, title: "Google Maps Pack", desc: "Blok wyników z mapą – bardzo widoczne miejsce w lokalnych wyszukiwaniach" },
                     { icon: Search, title: "Wyniki organiczne", desc: "Klasyczne wyniki wyszukiwania z kontekstem lokalnym" },
                     { icon: Star, title: "Recenzje Google", desc: "Opinie klientów wpływające na pozycję i zaufanie" },
                     { icon: Building2, title: "Google Moja Firma", desc: "Profil firmowy z wszystkimi informacjami o działalności" },
@@ -178,7 +161,7 @@ const BlogSEOLokalnePoznan = () => {
                   <div>
                     <h4 className="font-semibold mb-2">Checklist optymalizacji GMB</h4>
                     <ul className="text-muted-foreground space-y-1 text-sm">
-                      <li>✓ Profil wypełniony w 100%</li>
+                      <li>✓ Profil wypełniony w całości</li>
                       <li>✓ Minimum 10 zdjęć (w tym logo i okładka)</li>
                       <li>✓ Odpowiedzi na wszystkie recenzje</li>
                       <li>✓ Regularne posty (min. 1 tygodniowo)</li>
@@ -258,18 +241,18 @@ const BlogSEOLokalnePoznan = () => {
                 <div className="grid md:grid-cols-3 gap-4">
                   <div className="text-center p-6 bg-card rounded-xl border border-border">
                     <Star className="w-8 h-8 text-primary mx-auto mb-2" />
-                    <div className="text-2xl font-bold mb-1">4.5+</div>
-                    <p className="text-xs text-muted-foreground">Minimalna ocena dla dobrej widoczności</p>
+                    <div className="text-2xl font-bold mb-1">Jakość</div>
+                    <p className="text-xs text-muted-foreground">Dbaj o dobrą obsługę, która przekłada się na oceny</p>
                   </div>
                   <div className="text-center p-6 bg-card rounded-xl border border-border">
                     <Globe className="w-8 h-8 text-primary mx-auto mb-2" />
-                    <div className="text-2xl font-bold mb-1">50+</div>
-                    <p className="text-xs text-muted-foreground">Zalecana liczba opinii</p>
+                    <div className="text-2xl font-bold mb-1">Regularność</div>
+                    <p className="text-xs text-muted-foreground">Zbieraj nowe opinie na bieżąco</p>
                   </div>
                   <div className="text-center p-6 bg-card rounded-xl border border-border">
                     <Map className="w-8 h-8 text-primary mx-auto mb-2" />
-                    <div className="text-2xl font-bold mb-1">100%</div>
-                    <p className="text-xs text-muted-foreground">Odpowiedzi na opinie</p>
+                    <div className="text-2xl font-bold mb-1">Odpowiedzi</div>
+                    <p className="text-xs text-muted-foreground">Odpowiadaj na każdą opinię</p>
                   </div>
                 </div>
               </div>
@@ -376,7 +359,7 @@ const BlogSEOLokalnePoznan = () => {
               </div>
 
               <p>
-                SEO lokalne to maraton, nie sprint. Efekty zobaczysz po 3-6 miesiącach systematycznej pracy. Ale gdy już osiągniesz wysoką pozycję, trudno ją stracić – a klienci będą przychodzić do Ciebie, nie do konkurencji.
+                SEO lokalne to maraton, nie sprint. Efekty przychodzą stopniowo i zależą od konkurencji oraz systematyczności pracy, a pozycję trzeba potem utrzymywać — konkurencja też nie stoi w miejscu.
               </p>
 
               {/* FAQ Section */}
@@ -386,12 +369,12 @@ const BlogSEOLokalnePoznan = () => {
                 <div className="space-y-6">
                   <div>
                     <h3 className="text-lg font-semibold mb-2">Ile kosztuje pozycjonowanie lokalne w Poznaniu?</h3>
-                    <p className="text-muted-foreground">Profesjonalne SEO lokalne to koszt od 1500 do 5000 PLN miesięcznie, w zależności od konkurencyjności branży i zakresu działań. Fotz Studio oferuje pakiety dostosowane do potrzeb lokalnych firm.</p>
+                    <p className="text-muted-foreground">Koszt zależy od konkurencyjności branży, liczby lokalizacji, stanu strony i profilu firmy oraz zakresu działań. Wycenę przygotowujemy po rozmowie o zakresie i krótkim audycie.</p>
                   </div>
 
                   <div>
                     <h3 className="text-lg font-semibold mb-2">Jak szybko zobaczę efekty SEO lokalnego?</h3>
-                    <p className="text-muted-foreground">Pierwsze efekty (wzrost widoczności w Google Maps) mogą być widoczne już po 2-4 tygodniach. Pełne efekty pozycjonowania organicznego wymagają 3-6 miesięcy.</p>
+                    <p className="text-muted-foreground">To zależy od konkurencji w branży, stanu profilu i strony oraz regularności działań. SEO lokalne to proces rozłożony na miesiące — nie gwarantujemy konkretnej pozycji ani terminu efektów.</p>
                   </div>
 
                   <div>
@@ -439,13 +422,13 @@ const BlogSEOLokalnePoznan = () => {
             {/* SEO Article Section */}
             <div className="mt-12 pt-12 border-t border-border">
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">SEO lokalne Poznań — jak zdobyć widoczność w wynikach map i lokalnych wyszukiwaniach?</h2>
-              <p className="text-muted-foreground mb-6">SEO lokalne w Poznaniu to obszar, gdzie lokalne firmy walczą o pozycje w Google Maps i Local Pack (3 wyniki mapowe na górze strony). Aż 46% wszystkich zapytań Google ma charakter lokalny — frazy "firma + Poznań" mają wysoką intencję zakupową i konwertują lepiej niż ogólne zapytania. Optymalizacja pod lokalne SEO to priorytet każdej firmy działającej w konkretnym mieście.</p>
+              <p className="text-muted-foreground mb-6">SEO lokalne w Poznaniu to obszar, gdzie lokalne firmy walczą o pozycje w Google Maps i Local Pack (3 wyniki mapowe na górze strony). Frazy typu "usługa + Poznań" wpisują zwykle osoby, które szukają konkretnej firmy w okolicy — to zapytania z wyraźną intencją zakupową. Optymalizacja pod lokalne SEO to priorytet każdej firmy działającej w konkretnym mieście.</p>
 
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Lokalne SEO dla firm z Poznania — Google Moja Firma, cytaty i linki lokalne</h2>
               <p className="text-muted-foreground mb-6">Fotz Studio pomaga firmom z Poznania i Wielkopolski wygrywać w lokalnych wynikach wyszukiwania. Optymalizujemy Google Moja Firma (Google Business Profile), budujemy cytaty NAP (Name, Address, Phone) w katalogach lokalnych, pozyskujemy linki z lokalnych serwisów i tworzymy treści geolokalizowane na stronie.</p>
 
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Lokalne SEO Poznań dla Twojej firmy — skontaktuj się z Fotz Studio</h2>
-              <p className="text-muted-foreground">Chcesz pojawić się w Google Maps na frazy związane z Twoją branżą i Poznaniem? Fotz Studio przeprowadzi audyt lokalnego SEO i wdroży strategię, która poprawi Twoją widoczność w lokalnych wynikach w ciągu 2-3 miesięcy. Bezpłatna konsultacja — skontaktuj się z nami.</p>
+              <p className="text-muted-foreground">Chcesz pojawić się w Google Maps na frazy związane z Twoją branżą i Poznaniem? Fotz Studio przeprowadzi audyt lokalnego SEO i zaproponuje strategię poprawy widoczności w lokalnych wynikach. Nie gwarantujemy konkretnej pozycji — rzetelnie pokażemy, co da się poprawić. Bezpłatna konsultacja — skontaktuj się z nami.</p>
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
               <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
               <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>

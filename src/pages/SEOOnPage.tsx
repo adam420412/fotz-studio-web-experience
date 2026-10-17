@@ -10,25 +10,25 @@ import { ContactSection } from "@/components/sections/ContactSection";
 
 const SEOOnPage = () => {
   const features = [
-    { icon: FileText, title: "Meta tagi (title, description)", desc: "Optymalizujemy tytuły i opisy stron pod kluczowe frazy. Właściwe meta tagi zwiększają CTR w wynikach wyszukiwania nawet o 30%." },
+    { icon: FileText, title: "Meta tagi (title, description)", desc: "Optymalizujemy tytuły i opisy stron pod kluczowe frazy. Trafne meta tagi zachęcają do kliknięcia w wynik wyszukiwania." },
     { icon: Heading1, title: "Struktura nagłówków H1-H6", desc: "Poprawna hierarchia nagłówków pomaga robotom Google zrozumieć strukturę treści i zwiększa trafność tematyczną strony." },
     { icon: FileText, title: "Optymalizacja treści", desc: "Tworzymy i optymalizujemy treści bogate w słowa kluczowe, odpowiadające na intencje użytkowników. Unikalny, wartościowy content." },
     { icon: Image, title: "Optymalizacja obrazów", desc: "Alt texty, kompresja, lazy loading, nowoczesne formaty (WebP, AVIF). Obrazy muszą być szybkie i opisane dla Google Images." },
     { icon: Zap, title: "Core Web Vitals", desc: "LCP, CLS, INP — kluczowe wskaźniki doświadczenia użytkownika. Optymalizujemy je, bo Google używa ich jako sygnałów rankingowych." },
-    { icon: Code2, title: "Schema Markup", desc: "Dane strukturalne JSON-LD: FAQ, LocalBusiness, Product, Article. Rich snippets wyróżniają stronę w SERP i zwiększają CTR." },
+    { icon: Code2, title: "Schema Markup", desc: "Dane strukturalne JSON-LD: FAQ, LocalBusiness, Product, Article. Rich snippets mogą wyróżnić stronę w SERP, choć o ich wyświetleniu decyduje Google." },
   ];
 
   const results = [
-    { value: "+45%", label: "Średni wzrost CTR", desc: "po optymalizacji meta tagów" },
-    { value: "Top 3", label: "Pozycje dla fraz", desc: "po pełnej optymalizacji" },
-    { value: "-40%", label: "Mniej błędów crawl", desc: "po poprawie struktury" },
-    { value: "98/100", label: "PageSpeed Score", desc: "dla zoptymalizowanych stron" },
+    { value: "Audyt", label: "Lista problemów z priorytetami", desc: "przed wdrożeniem zmian" },
+    { value: "Meta", label: "Nowe tytuły i opisy", desc: "dopasowane do intencji fraz" },
+    { value: "GSC", label: "Pomiar w Search Console", desc: "porównanie przed i po zmianach" },
+    { value: "CWV", label: "Core Web Vitals", desc: "poprawki szybkości i stabilności" },
   ];
 
   const faqItems = [
     { question: "Co to jest optymalizacja on-page?", answer: "Optymalizacja on-page (SEO na stronie) obejmuje wszystkie działania podejmowane bezpośrednio na stronie internetowej: meta tagi, nagłówki, treści, strukturę URL, szybkość ładowania, dane strukturalne i wewnętrzne linkowanie. To fundament każdej strategii SEO." },
     { question: "Od czego zacząć optymalizację on-page?", answer: "Zaczynamy od audytu SEO, który identyfikuje największe problemy. Następnie priorytetyzujemy: najpierw błędy techniczne (błędy crawl, duplikaty), potem meta tagi, treści, a na końcu zaawansowane elementy jak schema markup." },
-    { question: "Jak długo trwa optymalizacja on-page?", answer: "Pierwsze wyniki widoczne są już po 4-8 tygodniach od wdrożenia zmian. Pełne efekty optymalizacji on-page widać po 3-6 miesiącach, gdy Google przeprowadziło recrawl i zaktualizowało rankingi." },
+    { question: "Jak długo trwa optymalizacja on-page?", answer: "Samo wdrożenie zmian zajmuje zwykle od kilku dni do kilku tygodni, zależnie od wielkości strony. Efekty w wynikach wyszukiwania pojawiają się stopniowo, gdy Google ponownie zindeksuje stronę — nie podajemy sztywnego terminu, bo zależy on od konkurencji, częstotliwości indeksowania i stanu wyjściowego strony." },
     { question: "Czy optymalizacja on-page wystarczy bez link buildingu?", answer: "Dla konkurencyjnych fraz sam on-page może nie wystarczyć — potrzebny jest też autorytet (linki). Jednak dla fraz lokalnych i niszowych dobrze zoptymalizowany on-page często daje silne wyniki bez agresywnego link buildingu." },
   ];
 
@@ -116,7 +116,7 @@ const SEOOnPage = () => {
         {/* Results */}
         <section className="py-16 bg-primary/5">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Efekty optymalizacji on-page</h2>
+            <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Co dostajesz w ramach optymalizacji on-page</h2>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
               {results.map((r, i) => (
                 <motion.div
@@ -133,6 +133,9 @@ const SEOOnPage = () => {
                 </motion.div>
               ))}
             </div>
+            <p className="text-sm text-muted-foreground text-center mt-10 max-w-2xl mx-auto">
+              Nie gwarantujemy konkretnej pozycji w Google — wyniki zależą od konkurencji, autorytetu domeny i zmian algorytmu. Efekty pokazujemy na danych z Google Search Console i Analytics.
+            </p>
           </div>
         </section>
 

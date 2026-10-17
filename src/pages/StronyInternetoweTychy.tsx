@@ -43,9 +43,9 @@ const StronyInternetoweTychy = () => {
   ];
 
   const caseStudies = [
-    { title: "Apartamenty Chorwacja", category: "Strona rezerwacyjna", result: "+180% rezerwacji online", link: "/realizacje/apartamenty-chorwacja", image: apartamentyImg },
+    { title: "Apartamenty Chorwacja", category: "Strona rezerwacyjna", result: "Strona z systemem rezerwacji online", link: "/realizacje/apartamenty-chorwacja", image: apartamentyImg },
     { title: "Victory Cars", category: "Strona motoryzacyjna", result: "Nowoczesny design premium", link: "/realizacje/victory-cars", image: victoryCarsImg },
-    { title: "Cute Dumpling", category: "Strona gastronomiczna", result: "+250% ruchu organicznego", link: "/realizacje/cute-dumpling", image: cuteDumplingImg },
+    { title: "Cute Dumpling", category: "Strona gastronomiczna", result: "Strona gastronomiczna z menu i lokalnym SEO", link: "/realizacje/cute-dumpling", image: cuteDumplingImg },
   ];
 
   const faqItems = [
@@ -59,12 +59,12 @@ const StronyInternetoweTychy = () => {
   const stats = [
     { value: "WWW", label: "Strony i sklepy", icon: Layers },
     { value: "UX", label: "Projekt dla odbiorcy", icon: Star },
-    { value: "5 lat", label: "Doświadczenia", icon: Clock },
+    { value: "Zdalnie", label: "Współpraca z Poznania", icon: Clock },
     { value: "Kontakt", label: "Uzgodniona opieka", icon: Headphones },
   ];
 
   const benefits = [
-    "Znajomość rynku śląskiego",
+    "Pracujemy z Poznania, firmy z Tychów obsługujemy zdalnie",
     "Kompleksowa obsługa od projektu po wdrożenie",
     "SEO w standardzie każdej strony",
     "Responsywny design mobile-first",
@@ -252,7 +252,7 @@ const StronyInternetoweTychy = () => {
               Optymalizacja lokalna dla firm z Tychów — frazy z geolokalizacją, Google Moja Firma, spójność NAP i budowanie recenzji Google. Dla firm działających na terenie całego GOP rozszerzamy zasięg SEO na kluczowe miasta regionu.
             </p>
             <p className="text-muted-foreground">
-              Bezpłatna wycena w 24 godziny. Skontaktuj się z nami i zacznijmy pracę nad Twoją stroną internetową.
+              Wycenę przygotowujemy po rozmowie o zakresie projektu. Skontaktuj się z nami i zacznijmy pracę nad Twoją stroną internetową.
             </p>
           
                         <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">

@@ -1,9 +1,4 @@
 import { SEOHead } from "@/components/seo/SEOHead";
-import {
-  ServiceSchema,
-  BreadcrumbSchema,
-  FAQSchema,
-} from "@/components/seo/StructuredData";
 import { Layout } from "@/components/layout/Layout";
 
 export default function AgencjaMarketingowaJeleniaGora() {
@@ -12,7 +7,7 @@ export default function AgencjaMarketingowaJeleniaGora() {
     "@type": "LocalBusiness",
     name: "Fotz Studio - Agencja Marketingowa Jelenia Góra",
     description:
-      "Profesjonalna agencja marketingowa w Jeleniej Górze. Oferujemy SEO, SEM, social media, tworzenie stron internetowych i kampanie Google Ads.",
+      "Agencja marketingowa z Poznania, która zdalnie obsługuje firmy z Jeleniej Góry. Oferujemy SEO, SEM, social media, tworzenie stron internetowych i kampanie Google Ads.",
     url: "https://www.fotz-studio.pl/agencja-marketingowa/jelenia-gora",
     telephone: "+48 790 814 814",
     areaServed: "Jelenia Góra",
@@ -58,7 +53,7 @@ export default function AgencjaMarketingowaJeleniaGora() {
         name: "Jakie uslugi oferuje agencja marketingowa w Jeleniej Gorze?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Nasza agencja w Jeleniej Gorze oferuje kompleksowe uslugi marketingowe: optymalizacje SEO, kampanie Google Ads, zarzadzanie social media, tworzenie stron internetowych, strategie content marketingowe oraz analize konkurencji. Dostosowujemy kazda strategie do specyficznych potrzeb lokalnych przedsiebiorstw.",
+          text: "Firmom z Jeleniej Góry, które obsługujemy zdalnie z Poznania, oferujemy kompleksowe usługi marketingowe: optymalizacje SEO, kampanie Google Ads, zarzadzanie social media, tworzenie stron internetowych, strategie content marketingowe oraz analize konkurencji. Dostosowujemy kazda strategie do specyficznych potrzeb lokalnych przedsiebiorstw.",
         },
       },
       {
@@ -66,7 +61,7 @@ export default function AgencjaMarketingowaJeleniaGora() {
         name: "Ile kosztuje kampania marketingowa od agencji w Jeleniej Gorze?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Ceny naszych uslug poczytaja sie od zakresu projektu. Oferujemy pakiety od kilkuset zlotych mesiecznie dla malych firm az do rozbudowanych strategii dla duzych korporacji. Kazda cennik jest indywidualnie dopasowany do budzetu i celow Twojej firmy.",
+          text: "Wycenę przygotowujemy po rozmowie o zakresie: liczbie kanałów, stanie strony i kont reklamowych oraz ilości treści do przygotowania. Budżet reklamowy płacony Google lub Meta jest zawsze osobno od naszego wynagrodzenia.",
         },
       },
       {
@@ -74,7 +69,7 @@ export default function AgencjaMarketingowaJeleniaGora() {
         name: "Dlaczego warto wybrac Fotz Studio jako agencje marketingowa?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Fotz Studio to zaufana agencja z doswiadczeniem w obsludze firm z Jeleniej Gory i calego wojewodztwa dolnoslaskiego. Oferujemy spersonalizowany dostep, nowoczesne narzedzia, transparentne raporty i gwarancje rezultatow. Naszym celem jest maksymalizacja zwrotu z inwestycji w marketing.",
+          text: "Fotz Studio pracuje z Poznania, a firmy z Jeleniej Góry obsługuje zdalnie. Łączymy kampanie i SEO z własną produkcją foto i wideo. Realizowaliśmy projekty m.in. dla Enea Stadionu, FPS Cegielski i WSB Merito. Stawiamy na indywidualne podejście i przejrzyste raporty z wykonanych działań.",
         },
       },
       {
@@ -82,7 +77,7 @@ export default function AgencjaMarketingowaJeleniaGora() {
         name: "Jak dlugo trwa optymalizacja SEO w Jeleniej Gorze?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Typowa kampania SEO przynosi pierwsze rezultaty w ciagu 2-3 miesiecy. Pelne efekty optymalizacji sa widoczne po 6-12 miesiacach. Czas zalezy od konkurencyjnosci hasel, stanu strony internetowej i zakresu prac. Zapewniamy ciagly monitoring i optymalizacje rezultatow.",
+          text: "SEO to działanie długoterminowe i nie da się podać sztywnego terminu efektów. Czas zależy od konkurencyjności fraz, stanu strony internetowej i zakresu prac — zwykle na wyraźne zmiany trzeba poczekać kilka miesięcy. Nie gwarantujemy konkretnej pozycji w Google, ale regularnie raportujemy wykonane prace i zmiany widoczności.",
         },
       },
       {
@@ -90,7 +85,7 @@ export default function AgencjaMarketingowaJeleniaGora() {
         name: "Czy agencja oferuje doradztwo SEO dla lokalnych firm?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Tak, specjalizujemy sie w lokalnym SEO dla firm z Jeleniej Gory. Nasza strategia lokalna obejmuje optymalizacje Google My Business, lokalne backlinki, recenzje klientow i geograficzne oznaczenie slow kluczowych. Pomagamy firmom zdominowac wyniki wyszukiwania w swojej okolicy.",
+          text: "Tak, zajmujemy się lokalnym SEO, także dla firm z Jeleniej Góry, które obsługujemy zdalnie. Działania lokalne obejmują optymalizację profilu Google Business, lokalne linki, zbieranie opinii klientów i dopasowanie fraz do lokalizacji. Celem jest lepsza widoczność firmy w jej okolicy.",
         },
       },
     ],
@@ -100,7 +95,7 @@ export default function AgencjaMarketingowaJeleniaGora() {
     <Layout>
       <SEOHead
         title="Agencja Marketingowa Jelenia Gora | Fotz Studio"
-        description="Profesjonalna agencja marketingowa w Jeleniej Gorze. SEO, SEM, social media, strony internetowe i kampanie Google Ads dla firm lokalnych."
+        description="Agencja marketingowa dla firm z Jeleniej Góry: SEO, SEM, social media, strony internetowe i kampanie Google Ads. Pracujemy z Poznania, obsługujemy zdalnie."
         canonical="https://www.fotz-studio.pl/agencja-marketingowa/jelenia-gora"
         ogImage="https://www.fotz-studio.pl/og-image.jpg"
         keywords="agencja marketingowa jelenia góra, marketing internetowy jelenia góra, agencja reklamowa jelenia góra, seo jelenia góra"
@@ -114,11 +109,12 @@ export default function AgencjaMarketingowaJeleniaGora() {
         <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16 px-4">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Agencja Marketingowa w Jeleniej Gorze
+              Agencja Marketingowa Jelenia Góra
             </h1>
             <p className="text-xl mb-6 text-blue-100">
-              Profesjonalne uslugi marketingowe dla firm lokalnych. Zwieksz
-              sprzedaz dzeki efektywnym strategiom cyfrowym.
+              Usługi marketingowe dla firm z Jeleniej Góry. Pracujemy z
+              Poznania, a współpracę prowadzimy zdalnie — od strategii po
+              kampanie i treści.
             </p>
             <div className="flex gap-4">
               <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-white text-blue-700 px-6 py-3 rounded-lg font-bold hover:bg-blue-50 transition">
@@ -138,11 +134,11 @@ export default function AgencjaMarketingowaJeleniaGora() {
               Kim jestesmy?
             </h2>
             <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-              Fotz Studio to zaufana agencja marketingowa obslugujacej firmy z
-              Jeleniej Gory i wojewodztwa dolnoslaskiego. Przez lata
-              wspieralismy dziesiatki przedsiebiorstw w osiaganiu ich celow
-              biznesowych poprzez nowoczesne strategie marketingowe i cyfrowe
-              transformacje.
+              Fotz Studio to agencja kreatywna z Poznania: video, foto, strony
+              WWW, social media, Meta Ads, Google Ads i SEO. Firmy z Jeleniej
+              Góry i województwa dolnośląskiego obsługujemy zdalnie.
+              Realizowaliśmy projekty m.in. dla Enea Stadionu, FPS Cegielski,
+              WSB Merito i Dawid EDU.
             </p>
             <p className="text-lg text-gray-700 mb-4 leading-relaxed">
               Naszym glownym celem jest dostarczenie wynikow, ktore generuja
@@ -168,10 +164,10 @@ export default function AgencjaMarketingowaJeleniaGora() {
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
                   Zwieksz widocznosc Twojej strony w wynikach wyszukiwania
-                  Google. Specjalizujemy sie w lokalnym SEO dla Jeleniej Gory,
-                  optymalizacji slow kluczowych oraz budowaniu autorytetu
-                  domeny. Nasza strategia SEO opiera sie na najnowszych
-                  algorytmach Google i best practices branzy.
+                  Google. Zajmujemy się lokalnym SEO, także dla firm z
+                  Jeleniej Góry, optymalizacją pod wybrane frazy oraz
+                  budowaniem autorytetu domeny. Nie gwarantujemy konkretnej
+                  pozycji — raportujemy wykonane prace i zmiany widoczności.
                 </p>
               </div>
 
@@ -184,8 +180,8 @@ export default function AgencjaMarketingowaJeleniaGora() {
                   Dotieraj do potencjalnych klientow w Jeleniej Gorze poprzez
                   dobrze zaplanowane kampanie Google Ads. Zaradzamy od
                   planowania budzytu, poprzez tworzenie ogloszen az do
-                  optymalizacji konwersji. Kazda zlota w sieciach reklamy jest
-                  wydatkowana efektywnie.
+                  optymalizacji konwersji. Budżet reklamowy płacony Google jest
+                  zawsze osobno od naszego wynagrodzenia.
                 </p>
               </div>
 
@@ -252,16 +248,16 @@ export default function AgencjaMarketingowaJeleniaGora() {
               Lokalne SEO dla Jeleniej Gory
             </h2>
             <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-              Jestesmy specjalistami w lokalnym SEO dla firm znajdujacych sie w
-              Jeleniej Gorze. Nasza strategia lokalna zawiera optymalizacje
+              Prowadzimy lokalne SEO dla firm, także z Jeleniej Góry, które
+              obsługujemy zdalnie z Poznania. Działania lokalne obejmują optymalizację
               Google My Business, zbudowanie lokalnych backlinkowz, zbieranie
               recenzji od klientow oraz geograficzne dostrojenie slow kluczowych.
             </p>
             <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-              Dzieki naszym dzialaniom, Twoja firma bedzie widoczna dla
-              potencjalnych klientow szukajacych uslug w Jeleniej Gorze. Lokalne
-              SEO to jeden z najtanszych sposobów na generowanie nowych
-              klientow, szczegolnie dla malych i srednich przedsiebiorstw.
+              Celem tych działań jest lepsza widoczność Twojej firmy dla
+              potencjalnych klientów szukających usług w Jeleniej Górze. Nie
+              gwarantujemy konkretnej pozycji w wynikach — efekty zależą od
+              branży, konkurencji i stanu strony.
             </p>
             <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
               <li>Optymalizacja Google My Business i lokalnych lokal</li>
@@ -279,64 +275,40 @@ export default function AgencjaMarketingowaJeleniaGora() {
         <section className="py-16 px-4 bg-gray-50">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-gray-900">
-              Nasze ceny i pakiety
+              Od czego zależy wycena
             </h2>
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              Oferujemy elastyczne pakiety dostosowane do budzytu i potrzeb
-              Twojej firmy. Ceny zaczytaja sie od kilkuset zlotych mesiecznie
-              dla malych firm az do rozbudowanych strategii dla duzych
-              korporacji. Kazda wycena jest indywidualna i przygotowana na
-              podstawie analizy Twoich potrzeb.
+              Nie mamy sztywnego cennika ani pakietów z kwotami. Wycenę
+              przygotowujemy po rozmowie o zakresie i celach Twojej firmy.
             </p>
 
-            <div className="grid md:grid-cols-3 gap-8">
-              {/* Starter */}
+            <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-white p-8 rounded-lg shadow-md border-l-4 border-blue-500">
-                <h3 className="text-2xl font-bold mb-4">Pakiet Starter</h3>
-                <p className="text-3xl font-bold text-blue-600 mb-4">
-                  od 999 PLN
+                <h3 className="text-xl font-bold mb-2">Zakres działań</h3>
+                <p className="text-gray-700">
+                  Jeden kanał (np. SEO albo Google Ads) czy kilka naraz:
+                  kampanie, social media, treści i strona WWW.
                 </p>
-                <p className="text-gray-600 mb-6">mesiecznie</p>
-                <ul className="space-y-2 text-gray-700">
-                  <li>✓ Audyt SEO</li>
-                  <li>✓ Optymalizacja 10 slow kluczowych</li>
-                  <li>✓ 4 artykuly na miesiac</li>
-                  <li>✓ Raport mesiecny</li>
-                </ul>
               </div>
-
-              {/* Professional */}
-              <div className="bg-white p-8 rounded-lg shadow-md border-l-4 border-blue-700 transform scale-105">
-                <h3 className="text-2xl font-bold mb-4">Pakiet Professional</h3>
-                <p className="text-3xl font-bold text-blue-700 mb-4">
-                  od 2,499 PLN
-                </p>
-                <p className="text-gray-600 mb-6">mesiecznie</p>
-                <ul className="space-y-2 text-gray-700">
-                  <li>✓ Pelen audyt SEO</li>
-                  <li>✓ Kampania Google Ads</li>
-                  <li>✓ Zarzadzanie social media</li>
-                  <li>✓ 8 artykułow na miesiac</li>
-                  <li>✓ Analize konkurencji</li>
-                  <li>✓ Raport dwutygodniowy</li>
-                </ul>
-              </div>
-
-              {/* Enterprise */}
               <div className="bg-white p-8 rounded-lg shadow-md border-l-4 border-blue-500">
-                <h3 className="text-2xl font-bold mb-4">Pakiet Enterprise</h3>
-                <p className="text-3xl font-bold text-blue-600 mb-4">
-                  Od 5,999 PLN
+                <h3 className="text-xl font-bold mb-2">Punkt wyjścia</h3>
+                <p className="text-gray-700">
+                  Stan strony, kont reklamowych i profili — start od zera
+                  wycenia się inaczej niż rozwój trwających działań.
                 </p>
-                <p className="text-gray-600 mb-6">mesiecznie</p>
-                <ul className="space-y-2 text-gray-700">
-                  <li>✓ Dedykowany zespol</li>
-                  <li>✓ Wszystkie kanaly marketingowe</li>
-                  <li>✓ Tworzenie stron internetowych</li>
-                  <li>✓ Strategie business growth</li>
-                  <li>✓ Codzienne monitoring</li>
-                  <li>✓ Raport tygodniowy</li>
-                </ul>
+              </div>
+              <div className="bg-white p-8 rounded-lg shadow-md border-l-4 border-blue-500">
+                <h3 className="text-xl font-bold mb-2">Produkcja treści</h3>
+                <p className="text-gray-700">
+                  Liczba i rodzaj materiałów: teksty, grafiki, zdjęcia i wideo.
+                </p>
+              </div>
+              <div className="bg-white p-8 rounded-lg shadow-md border-l-4 border-blue-500">
+                <h3 className="text-xl font-bold mb-2">Budżet reklamowy</h3>
+                <p className="text-gray-700">
+                  Budżet płacony Google lub Meta jest zawsze osobno od naszego
+                  wynagrodzenia — o jego wysokości decydujesz Ty.
+                </p>
               </div>
             </div>
 
@@ -360,11 +332,11 @@ export default function AgencjaMarketingowaJeleniaGora() {
                   1
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-2">Doswiadczenie</h3>
+                  <h3 className="text-xl font-bold mb-2">Doświadczenie</h3>
                   <p className="text-gray-700">
-                    Lata doswiadczenia w obsludze firm z Jeleniej Gory i
-                    wojewodztwa dolnoslaskiego. Znamy lokalne rynki i specyfike
-                    biznesu w regionie.
+                    Realizowaliśmy projekty m.in. dla Enea Stadionu, FPS
+                    Cegielski i WSB Merito. Pracujemy z Poznania, a firmy z
+                    Jeleniej Góry obsługujemy zdalnie.
                   </p>
                 </div>
               </div>
@@ -452,16 +424,19 @@ export default function AgencjaMarketingowaJeleniaGora() {
             <h2 className="text-3xl font-bold mb-8">Skontaktuj sie z nami</h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div>
-                <h3 className="text-xl font-bold mb-2">Adres</h3>
+                <h3 className="text-xl font-bold mb-2">Lokalizacja</h3>
                 <p className="text-gray-300">
-                  Jelenia Gora
-                  <br />
-                  Wojewodztwo Dolnoslaskie
+                  Pracujemy z Poznania — firmy z Jeleniej Góry obsługujemy
+                  zdalnie.
                 </p>
               </div>
               <div>
                 <h3 className="text-xl font-bold mb-2">Telefon</h3>
-                <p className="text-gray-300">+48 XXX XXX XXX</p>
+                <p className="text-gray-300">
+                  <a href="tel:+48790814814" className="hover:underline">
+                    +48 790 814 814
+                  </a>
+                </p>
               </div>
               <div>
                 <h3 className="text-xl font-bold mb-2">Email</h3>

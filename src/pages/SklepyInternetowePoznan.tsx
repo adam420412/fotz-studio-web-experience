@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
   ArrowRight, ShoppingCart, CreditCard, Truck, BarChart3, Settings,
-  CheckCircle2, MapPin, Globe, Smartphone, Zap, Shield
+  CheckCircle2, MapPin, Smartphone, Shield
 } from "lucide-react";
 import { ServiceSchema, BreadcrumbSchema, FAQSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 
@@ -27,7 +27,7 @@ const platforms = [
 ];
 
 const features = [
-  { icon: Smartphone, title: "Responsywny design", desc: "Mobile-first — ponad 60% zakupów online odbywa się na telefonie. Twój sklep musi wyglądać i działać perfekcyjnie na każdym urządzeniu." },
+  { icon: Smartphone, title: "Responsywny design", desc: "Mobile-first — duża część klientów robi zakupy na telefonie. Twój sklep musi wyglądać i działać perfekcyjnie na każdym urządzeniu." },
   { icon: CreditCard, title: "Integracje płatności", desc: "PayU, Przelewy24, Stripe, PayPal, BLIK, Apple Pay. Wdrożymy bramki płatności odpowiednie dla Twojego rynku i grupy docelowej." },
   { icon: Truck, title: "Dostawa i logistyka", desc: "Integracje z DHL, InPost, DPD, GLS. Automatyczne śledzenie przesyłek, etykiety kurierskie i zarządzanie zwrotami." },
   { icon: BarChart3, title: "Analityka sprzedaży", desc: "GA4, Hotjar, piksel Meta. Śledzenie konwersji, lejków zakupowych i źródeł ruchu — dane, które realnie wspierają decyzje sprzedażowe." },
@@ -38,11 +38,11 @@ const features = [
 const faqItems = [
   {
     question: "Ile kosztuje stworzenie sklepu internetowego w Poznaniu?",
-    answer: "Koszt zależy od platformy i funkcjonalności. Sklep na Shopify lub WooCommerce to od 8 000 zł. Dedykowane rozwiązania custom zaczynają się od 25 000 zł. Każdą wycenę poprzedzamy rozmową o Twoich potrzebach i planowanym asortymencie."
+    answer: "Koszt zależy od platformy, liczby produktów i kategorii, integracji (płatności, dostawy, ERP, marketplace), zakresu projektu UX/UI i migracji danych. Wycenę przygotowujemy po rozmowie o zakresie, Twoich potrzebach i planowanym asortymencie."
   },
   {
     question: "Jak długo trwa stworzenie sklepu internetowego?",
-    answer: "Sklep na gotowej platformie (Shopify/WooCommerce) robimy w 4–8 tygodni. Rozwiązanie custom zajmuje 2–4 miesiące. Czas zależy od liczby kategorii, integracji i skali customizacji."
+    answer: "Czas realizacji zależy od platformy, liczby kategorii, integracji i skali customizacji. Sklep na gotowej platformie (Shopify/WooCommerce) powstaje zwykle szybciej niż rozwiązanie custom. Harmonogram ustalamy po doprecyzowaniu zakresu."
   },
   {
     question: "Czy zajmujecie się też SEO i marketingiem dla sklepów?",
@@ -126,33 +126,6 @@ export default function SklepyInternetowePoznan() {
                 <Link to="/uslugi/strony-internetowe/ecommerce">Więcej o e-commerce</Link>
               </Button>
             </motion.div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Stats */}
-      <section className="py-12 bg-gradient-to-r from-[#75143F]/10 via-background to-[#0F3053]/10 border-y border-foreground/10">
-        <div className="container px-4">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={staggerContainer}
-            className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto text-center"
-          >
-            {[
-              { value: "50+", label: "sklepów wdrożonych" },
-              { value: "4 platformy", label: "Shopify, Woo, Presta, Custom" },
-              { value: "8+ lat", label: "doświadczenia w e-commerce" },
-              { value: "160+", label: "opinii 5★ w Google" }
-            ].map((s, i) => (
-              <motion.div key={i} variants={fadeIn}>
-                <div className="text-3xl md:text-4xl font-heading font-bold bg-gradient-to-r from-[#75143F] to-[#0F3053] bg-clip-text text-transparent mb-1">
-                  {s.value}
-                </div>
-                <div className="text-sm text-foreground/60">{s.label}</div>
-              </motion.div>
-            ))}
           </motion.div>
         </div>
       </section>
@@ -363,7 +336,7 @@ export default function SklepyInternetowePoznan() {
               WooCommerce, Shopify i sklep na miarę — sklep online dla firmy z Poznania
             </h2>
             <p className="text-muted-foreground mb-4">
-              WooCommerce to najpopularniejsza platforma sklepowa na świecie — idealna
+              WooCommerce to jedna z najpopularniejszych platform sklepowych — dobra
               dla firm szukających elastyczności i kontroli nad sklepem. Shopify sprawdza
               się dla firm ceniących prostotę zarządzania i szybkie wdrożenie. Dla dużych
               projektów e-commerce tworzymy dedykowane sklepy internetowe dopasowane
@@ -386,9 +359,9 @@ export default function SklepyInternetowePoznan() {
               i email marketing dla e-commerce realizujemy we własnym zakresie.
             </p>
             <p className="text-muted-foreground">
-              Sklep internetowy dla firmy z Poznania od Fotz Studio to gwarancja jakości,
-              terminowości i skuteczności. Umów się na bezpłatną konsultację i wycenę
-              projektu e-commerce — stworzymy sklep, który naprawdę sprzedaje.
+              Umów się na bezpłatną konsultację i wycenę projektu e-commerce — omówimy
+              asortyment, procesy sprzedaży i integracje, a potem zaproponujemy platformę
+              i zakres prac dopasowany do Twojej firmy.
             </p>
           
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">

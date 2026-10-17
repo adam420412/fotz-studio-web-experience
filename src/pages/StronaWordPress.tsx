@@ -33,18 +33,17 @@ export default function StronaWordPress() {
   ];
 
   const advantages = [
-    { icon: Globe, title: "Najpopularniejszy CMS na świecie", desc: "Ponad 43% stron w internecie działa na WordPress. Ogromna społeczność, tysiące wtyczek i motywów." },
+    { icon: Globe, title: "Najpopularniejszy CMS na świecie", desc: "Jeden z najczęściej wybieranych systemów do stron firmowych. Duża społeczność, tysiące wtyczek i motywów." },
     { icon: Settings, title: "Łatwe zarządzanie treścią", desc: "Dodajesz artykuły, zdjęcia i strony bez kodowania. Intuicyjny panel administracyjny dla każdego." },
     { icon: Zap, title: "Szybkość i wydajność", desc: "Zoptymalizowany WordPress jest szybki. Caching, CDN, optymalizacja obrazów — wszystko możliwe." },
     { icon: Shield, title: "Bezpieczeństwo", desc: "Regularne aktualizacje, wtyczki bezpieczeństwa, SSL, backupy. WordPress może być bezpieczny jak każda platforma." },
-    { icon: BarChart3, title: "SEO-friendly", desc: "Yoast SEO, RankMath, schema markup — WordPress ma najlepszy ekosystem wtyczek SEO." },
+    { icon: BarChart3, title: "SEO-friendly", desc: "Yoast SEO, RankMath, schema markup — WordPress ma bogaty ekosystem wtyczek SEO." },
     { icon: Star, title: "Elastyczność", desc: "Od prostej strony wizytówki do zaawansowanego e-commerce. WordPress rośnie razem z Twoim biznesem." },
   ];
 
   const packages = [
     {
       title: "WordPress Basic",
-      price: "od 1 999 zł",
       desc: "Strona wizytówka / firmowa",
       features: [
         "Do 5 podstron",
@@ -57,7 +56,6 @@ export default function StronaWordPress() {
     },
     {
       title: "WordPress Business",
-      price: "od 3 999 zł",
       desc: "Rozbudowana strona firmowa",
       features: [
         "Do 15 podstron",
@@ -72,7 +70,6 @@ export default function StronaWordPress() {
     },
     {
       title: "WordPress Premium",
-      price: "od 7 999 zł",
       desc: "Zaawansowane rozwiązania",
       features: [
         "Nielimitowane podstrony",
@@ -89,12 +86,12 @@ export default function StronaWordPress() {
     {
       question: "Czy WordPress jest dobry dla mojej firmy?",
       answer:
-        "WordPress sprawdza się świetnie dla: firm usługowych, agencji, freelancerów, sklepów (WooCommerce), blogów, portali. Nie jest najlepszy dla bardzo specyficznych aplikacji webowych lub systemów wymagających niestandardowej logiki. 43% stron w internecie to WordPress — to mówi samo za siebie.",
+        "WordPress sprawdza się świetnie dla: firm usługowych, agencji, freelancerów, sklepów (WooCommerce), blogów, portali. Nie jest najlepszy dla bardzo specyficznych aplikacji webowych lub systemów wymagających niestandardowej logiki.",
     },
     {
       question: "Ile kosztuje strona na WordPress?",
       answer:
-        "Koszt strony WordPress to: domena ok. 60-100 zł/rok, hosting 40-200 zł/mies., motyw premium 0-400 zł (jednorazowo), projekt i wdrożenie przez agencję 1999-15 000 zł. Najtańsza sensowna strona to ok. 2500 zł łącznie. Cena zależy od liczby podstron, funkcji i stopnia customizacji.",
+        "Nie mamy sztywnego cennika. Wycena zależy od liczby podstron, projektu graficznego (motyw czy projekt od zera), potrzebnych funkcji i integracji oraz zakresu wsparcia po starcie. Domena, hosting i ewentualne płatne wtyczki to osobne koszty u dostawców. Wycenę przygotowujemy po rozmowie o zakresie.",
     },
     {
       question: "Jak długo trwa budowa strony WordPress?",
@@ -122,7 +119,7 @@ export default function StronaWordPress() {
     <>
       <SEOHead
         title="Strona WordPress dla firmy | Tworzenie stron WordPress | FOTZ Studio"
-        description="Tworzenie stron na WordPress — od wizytówki do zaawansowanego e-commerce. Responsywne, szybkie i SEO-friendly strony WordPress. Wycena od 1999 zł!"
+        description="Tworzenie stron na WordPress — od wizytówki do zaawansowanego e-commerce. Responsywne, szybkie i SEO-friendly strony WordPress. Wycena po rozmowie o zakresie."
         canonical="https://www.fotz-studio.pl/uslugi/strona-wordpress"
         keywords="strona wordpress, strona internetowa wordpress, tworzenie stron wordpress, wordpress dla firm, strona www wordpress, wordpress agencja"
       />
@@ -142,7 +139,7 @@ export default function StronaWordPress() {
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
               <div className="inline-flex items-center gap-2 bg-blue-900 bg-opacity-50 text-blue-300 px-3 py-1 rounded-full text-sm mb-4">
                 <Code className="w-4 h-4" />
-                Eksperci WordPress
+                Strony na WordPress
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
                 Strona WordPress dla firmy — responsywna, szybka i skuteczna
@@ -151,20 +148,6 @@ export default function StronaWordPress() {
                 Tworzymy profesjonalne strony internetowe na WordPress. Od prostej wizytówki po zaawansowany sklep WooCommerce.
                 Każda strona jest responsywna, zoptymalizowana pod SEO i dostosowana do Twojej marki.
               </p>
-
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-                {[
-                  { value: "43%", label: "Stron na świecie na WP" },
-                  { value: "1999 zł", label: "Cena od" },
-                  { value: "2-6 tyg.", label: "Czas realizacji" },
-                  { value: "100%", label: "Responsywność" },
-                ].map((stat, idx) => (
-                  <div key={idx} className="bg-slate-800 bg-opacity-50 p-4 rounded-lg">
-                    <div className="text-2xl font-bold text-blue-400">{stat.value}</div>
-                    <div className="text-sm text-slate-400">{stat.label}</div>
-                  </div>
-                ))}
-              </div>
 
               <div className="flex flex-wrap gap-4">
                 <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
@@ -212,9 +195,9 @@ export default function StronaWordPress() {
         <FadeInView>
           <section className="py-16 md:py-24 bg-slate-50">
             <div className="max-w-5xl mx-auto px-4 md:px-6">
-              <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Pakiety stron WordPress</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Przykładowe zakresy stron WordPress</h2>
               <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
-                Dopasowane do rozmiaru i potrzeb Twojej firmy.
+                Nie mamy sztywnego cennika — wycenę przygotowujemy po rozmowie o zakresie, liczbie podstron i potrzebnych funkcjach.
               </p>
               <div className="grid md:grid-cols-3 gap-8">
                 {packages.map((pkg, idx) => (
@@ -230,9 +213,6 @@ export default function StronaWordPress() {
                     }`}
                   >
                     <h3 className="text-xl font-bold mb-2">{pkg.title}</h3>
-                    <div className={`text-2xl font-bold mb-2 ${pkg.highlight ? "text-white" : "text-blue-600"}`}>
-                      {pkg.price}
-                    </div>
                     <p className={`mb-6 text-sm ${pkg.highlight ? "text-blue-100" : "text-slate-600"}`}>{pkg.desc}</p>
                     <ul className="space-y-3">
                       {pkg.features.map((feature, i) => (

@@ -10,23 +10,23 @@ export default function GoogleAdsWarszawa() {
   const faqItems = [
     {
       question: "Ile kosztuje Google Ads w Warszawie?",
-      answer: "Google Ads w Warszawie zaczyna się od 400 zł/miesiąc za zarządzanie kampanią (pakiet START). Dodatkowy budżet reklamowy to osobna pozycja — od 500 zł/miesiąc dla małych firm do 15 000+ zł/miesiąc dla e-commerce i sieci handlowych. Całkowity koszt zależy od branży i konkurencji na słowa kluczowe.",
+      answer: "Wycenę obsługi przygotowujemy po rozmowie o zakresie: liczbie i typach kampanii, liczbie produktów lub usług, konkurencji na słowa kluczowe w Twojej branży i tym, czy trzeba skonfigurować śledzenie konwersji od zera. Budżet reklamowy, który płacisz bezpośrednio Google, jest zawsze osobną pozycją i ustalamy go razem z Tobą.",
     },
     {
       question: "Jak długo trwa uruchomienie kampanii Google Ads?",
-      answer: "Kampanię można uruchomić w ciągu 24-48 godzin od podpisania umowy. Obejmuje to: audit konkursowy, badanie słów kluczowych, tworzenie struktury kampanii, konfigurację trackingu konwersji i wdrożenie. Pierwsze wyniki są widoczne po kilku dniach, pełna optymalizacja trwa 2-4 tygodnie.",
+      answer: "Czas uruchomienia zależy od zakresu i od tego, jak szybko dostaniemy dostępy oraz materiały. Przygotowanie obejmuje: analizę konkurencji, badanie słów kluczowych, strukturę kampanii, konfigurację śledzenia konwersji i wdrożenie. Po starcie kampania potrzebuje czasu na zebranie danych, zanim optymalizacja da pełny obraz.",
     },
     {
       question: "Czy potrzebuję certyfikatu Google do uruchomienia reklam?",
-      answer: "Nie — certyfikat Google nie jest wymagany do uruchomienia kampanii. Wymagane jest jednak konto Google Ads. My, jako agencja certyfikowana, prowadzimy całą konfigurację, optymalizację i zarządzanie kampaniami. Ty masz dostęp do pełnych danych i raportów w panelu Google Ads.",
+      answer: "Nie — certyfikat Google nie jest wymagany do uruchomienia kampanii. Wymagane jest jednak konto Google Ads. Prowadzimy całą konfigurację, optymalizację i zarządzanie kampaniami, a Ty masz dostęp do pełnych danych i raportów w panelu Google Ads.",
     },
     {
-      question: "Jaka jest minimalna kwota budżetu na Google Ads?",
-      answer: "Minimalna kwota budżetu to 500 zł/miesiąc dla małych firm lokalne. Rekomendujemy jednak minimum 1 500 zł/miesiąc, aby kampania miała wystarczająco danych do optymalizacji. W Warszawie, gdzie konkurencja jest wysoka, budżet 2 000-5 000 zł/miesiąc zapewnia znacznie lepsze wyniki.",
+      question: "Jaki budżet reklamowy przeznaczyć na Google Ads?",
+      answer: "Nie ma jednej kwoty dla wszystkich. Budżet zależy od kosztu kliknięcia w Twojej branży, obszaru, na którym chcesz się wyświetlać, i liczby zapytań, jakie chcesz pozyskać. Na konsultacji szacujemy go na podstawie danych z planera słów kluczowych. Budżet reklamowy płacisz bezpośrednio Google, osobno od naszej obsługi.",
     },
     {
       question: "Jak agencja rozlicza się za kampanie Google Ads?",
-      answer: "Rozliczamy się na podstawie modelu: opłata za zarządzanie kampanią (400-1 500 zł/miesiąc) + budżet reklamowy, który wydajesz w Google Ads (płacisz bezpośrednio Google). Całkowita transparentność — wszystkie raportowanie co miesiąc.",
+      answer: "Rozliczenie składa się z dwóch części: opłaty za naszą obsługę kampanii (wycenianej indywidualnie po rozmowie o zakresie) oraz budżetu reklamowego, który płacisz bezpośrednio Google. Co miesiąc dostajesz raport z wynikami.",
     },
     {
       question: "Jakie branże w Warszawie korzystają z Google Ads?",
@@ -34,11 +34,11 @@ export default function GoogleAdsWarszawa() {
     },
     {
       question: "Czy Google Ads da efekty dla małej firmy w Warszawie?",
-      answer: "Tak — Google Ads są idealnym kanałem dla małych firm w Warszawie. Płacisz tylko za kliknięcia, możesz precyzyjnie targetować swoją grupę docelową (lokalizacja, słowa kluczowe, demografia), i masz pełne śledzenie zwrotu z inwestycji (ROI). Wiele naszych klientów z Warszawy to małe firmy, które zarabiają na Google Ads od pierwszego miesiąca.",
+      answer: "Tak — Google Ads są idealnym kanałem dla małych firm w Warszawie. Płacisz tylko za kliknięcia, możesz precyzyjnie targetować swoją grupę docelową (lokalizacja, słowa kluczowe, demografia), i masz pełne śledzenie zwrotu z inwestycji (ROI). Pracujemy z Poznania, a firmy z Warszawy obsługujemy zdalnie — wyniki zależą od branży, oferty i budżetu, dlatego nie obiecujemy ich z góry.",
     },
     {
       question: "Co to jest Quality Score i jak wpływa na cenę reklamy?",
-      answer: "Quality Score to ocena jakości reklamy, strony docelowej i słowa kluczowego przyznawana przez Google (1-10). Im wyższy Quality Score, tym niższy koszt za kliknięcie (CPC). Dobry Quality Score (7-10) może obniżyć CPC nawet o 50%. Obsługujemy Quality Score na poziomie 8-9 dla większości kampanii warszawskich klientów.",
+      answer: "Quality Score to ocena jakości reklamy, strony docelowej i słowa kluczowego przyznawana przez Google (1-10). Im wyższy Quality Score, tym zwykle niższy koszt za kliknięcie (CPC). Dlatego dbamy o dopasowanie słów kluczowych, tekstów reklam i strony docelowej.",
     },
   ];
 
@@ -47,14 +47,14 @@ export default function GoogleAdsWarszawa() {
       <Layout>
         <SEOHead
           title="Agencja Google Ads Warszawa | Fotz Studio"
-          description="Google Ads Warszawa — agencja certyfikowana Fotz.pl. Kampanie od 500 zł/mies., wyniki od 24-48h, specjaliści z certyfikatem Google. Bezpłatna konsultacja!"
+          description="Google Ads dla firm z Warszawy — Fotz Studio. Pracujemy z Poznania, kampanie prowadzimy zdalnie: Search, Performance Max, Shopping, remarketing. Bezpłatna konsultacja!"
           canonical="https://www.fotz-studio.pl/performance-marketing/google-ads/warszawa"
           keywords="google ads warszawa, agencja google ads warszawa, kampanie google ads warszawa, reklamy google warszawa, google ads dla firm warszawa, sem warszawa, adwords warszawa"
         />
 
         <ServiceSchema
           name="Kampanie Google Ads Warszawa"
-          description="Tworzenie i optymalizacja kampanii Google Ads dla firm z Warszawy. Agencja Fotz.pl — certyfikowani specjaliści Google Ads."
+          description="Tworzenie i optymalizacja kampanii Google Ads dla firm z Warszawy, prowadzone zdalnie z Poznania przez Fotz Studio."
           provider="Fotz Studio"
           areaServed="Warszawa"
         />
@@ -88,23 +88,23 @@ export default function GoogleAdsWarszawa() {
                   Agencja Google Ads Warszawa
                 </h1>
                 <p className="text-xl md:text-2xl text-sky-100 mb-8">
-                  Kampanie dla firm w Warszawie. Wyniki od 24-48h. Certyfikowani specjaliści.
+                  Kampanie dla firm z Warszawy. Pracujemy z Poznania, firmy z Warszawy obsługujemy zdalnie.
                 </p>
               </div>
 
               {/* Stats Grid */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-6 text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-sky-300 mb-2">500 zł</div>
-                  <div className="text-sm text-sky-100">Kampanie od</div>
+                  <div className="text-2xl md:text-3xl font-bold text-sky-300 mb-2">Search</div>
+                  <div className="text-sm text-sky-100">i Performance Max</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-6 text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-sky-300 mb-2">24-48h</div>
-                  <div className="text-sm text-sky-100">Wyniki od</div>
+                  <div className="text-2xl md:text-3xl font-bold text-sky-300 mb-2">Tracking</div>
+                  <div className="text-sm text-sky-100">Konwersji</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-6 text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-sky-300 mb-2">100%</div>
-                  <div className="text-sm text-sky-100">Certyfikowani</div>
+                  <div className="text-2xl md:text-3xl font-bold text-sky-300 mb-2">Zdalnie</div>
+                  <div className="text-sm text-sky-100">Z Poznania</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-6 text-center">
                   <div className="text-2xl md:text-3xl font-bold text-sky-300 mb-2">Raport</div>
@@ -125,13 +125,13 @@ export default function GoogleAdsWarszawa() {
                 </h2>
                 <div className="space-y-6 text-lg text-muted-foreground">
                   <p>
-                    Warszawa to 1,8 miliona mieszkańców, największy rynek handlowy w Polsce. Przedsiębiorcy z Warszawy inwestują rocznie miliardy złotych w reklamy internetowe — to naturalne miejsce do testowania kampanii dla całego kraju.
+                    Warszawa to największy rynek w Polsce — dużo firm, dużo klientów i dużo wyszukiwań w Google każdego dnia.
                   </p>
                   <p>
-                    Konkurencja na słowa kluczowe w Warszawie jest wysoka (CPC średnio 5-15 zł), ale też liczba potencjalnych klientów jest ogromna. Kampanie Google Ads działają tutaj efektywnie dla każdej branży: e-commerce, usługi, nieruchomości, prawnicy, restauracje, sklepy.
+                    Konkurencja na słowa kluczowe w Warszawie jest wysoka, co przekłada się na wyższe stawki za kliknięcie, ale też liczba potencjalnych klientów jest duża. Kampanie Google Ads sprawdzają się w wielu branżach: e-commerce, usługi, nieruchomości, prawnicy, restauracje, sklepy.
                   </p>
                   <p>
-                    Paid ads (Google Ads) działają szybciej niż SEO — wyniki widoczne w ciągu 24-48 godzin. W Warszawie, gdzie konkurencja jest duża, Google Ads to najprostsza droga do pierwszej strony i do konkretnych klientów.
+                    Reklamy Google Ads zaczynają się wyświetlać zaraz po uruchomieniu i zatwierdzeniu, w przeciwieństwie do SEO, które buduje widoczność miesiącami. To dobry sposób, by docierać do osób, które właśnie szukają Twojej usługi.
                   </p>
                   <p>
                     Targetowanie lokalne (Warszawa, Piaseczno, Konstancin, Milanówek) pozwala precyzyjnie trafić w swoją grupę docelową. Jeśli prowadzisz biznes lokalny lub masz siedzbę w Warszawie, możesz kampanię skalować na całą Polskę z czasem.
@@ -171,7 +171,7 @@ export default function GoogleAdsWarszawa() {
                 <div className="bg-background rounded-lg border border-border p-6">
                   <h3 className="text-xl font-bold mb-3">Remarketing</h3>
                   <p className="text-muted-foreground">
-                    Reklamy dla osób, które już odwiedzały Twoją stronę. Konwersja 3-5x wyższa niż w kampaniach Search.
+                    Reklamy dla osób, które już odwiedzały Twoją stronę — przypominasz się tym, którzy znają już Twoją ofertę.
                   </p>
                 </div>
                 <div className="bg-background rounded-lg border border-border p-6">
@@ -264,48 +264,18 @@ export default function GoogleAdsWarszawa() {
           <section className="py-16 md:py-24 bg-secondary/30">
             <div className="container px-4">
               <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-                Kampanie Google Ads Warszawa — cennik
+                Od czego zależy wycena Google Ads?
               </h2>
-              <div className="max-w-4xl mx-auto overflow-x-auto">
-                <table className="w-full border-collapse">
-                  <thead>
-                    <tr className="border-b-2 border-border">
-                      <th className="text-left p-4 font-bold">Pakiet</th>
-                      <th className="text-left p-4 font-bold">Cena obsługi</th>
-                      <th className="text-left p-4 font-bold">Budżet reklamowy</th>
-                      <th className="text-left p-4 font-bold">Dla kogo</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="border-b border-border bg-background">
-                      <td className="p-4 font-semibold">START</td>
-                      <td className="p-4">400 zł/mies.</td>
-                      <td className="p-4">500-1500 zł</td>
-                      <td className="p-4">Małe firmy lokalne</td>
-                    </tr>
-                    <tr className="border-b border-border bg-background">
-                      <td className="p-4 font-semibold">GROWTH</td>
-                      <td className="p-4">800 zł/mies.</td>
-                      <td className="p-4">2000-5000 zł</td>
-                      <td className="p-4">Średnie firmy</td>
-                    </tr>
-                    <tr className="border-b border-border bg-background">
-                      <td className="p-4 font-semibold">PRO</td>
-                      <td className="p-4">1500+ zł/mies.</td>
-                      <td className="p-4">5000+ zł</td>
-                      <td className="p-4">E-commerce, sieci</td>
-                    </tr>
-                    <tr className="bg-background">
-                      <td className="p-4 font-semibold">ENTERPRISE</td>
-                      <td className="p-4">% budżetu (15-20%)</td>
-                      <td className="p-4">15000+ zł</td>
-                      <td className="p-4">Duże firmy</td>
-                    </tr>
-                  </tbody>
-                </table>
+              <div className="max-w-3xl mx-auto space-y-4 text-lg text-muted-foreground">
+                <p>
+                  Wycenę obsługi przygotowujemy po rozmowie o zakresie. Bierzemy pod uwagę liczbę i rodzaj kampanii (Search, Performance Max, Shopping, remarketing), wielkość oferty, konkurencję w Twojej branży oraz to, czy trzeba od zera skonfigurować śledzenie konwersji.
+                </p>
+                <p>
+                  Budżet reklamowy płacisz bezpośrednio Google — zawsze osobno od naszej obsługi. Jego wysokość ustalamy razem, na podstawie kosztów kliknięcia w Twojej branży i Twoich celów.
+                </p>
               </div>
               <p className="text-center text-muted-foreground mt-8 max-w-2xl mx-auto">
-                Każdy pakiet obejmuje setup kampanii, daily optimization, raportowanie co miesiąc, A/B testy reklam i ciągłą optymalizację Quality Score.
+                Obsługa obejmuje konfigurację kampanii, bieżącą optymalizację, testy reklam i raport co miesiąc.
               </p>
             </div>
           </section>
@@ -383,9 +353,9 @@ export default function GoogleAdsWarszawa() {
               </h2>
               <div className="max-w-3xl mx-auto space-y-6">
                 <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-2">Certyfikowani specjaliści Google</h3>
+                  <h3 className="text-xl font-bold mb-2">Kampanie i kreacje w jednym miejscu</h3>
                   <p className="text-muted-foreground">
-                    Nasi specjaliści posiadają certyfikat Google Ads. Mamy dostęp do beta features, nowych algorytmów i najnowszych best practices bezpośrednio od Google.
+                    Jesteśmy agencją kreatywną — oprócz kampanii przygotujemy też grafiki, wideo i strony docelowe, więc reklamy i landing page są spójne.
                   </p>
                 </div>
                 <div className="bg-background rounded-lg border border-border p-6">
@@ -395,15 +365,15 @@ export default function GoogleAdsWarszawa() {
                   </p>
                 </div>
                 <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-2">Wyniki od 24-48h</h3>
+                  <h3 className="text-xl font-bold mb-2">Współpraca zdalna</h3>
                   <p className="text-muted-foreground">
-                    Szybko uruchamiamy kampanie i szybko je optymalizujemy. Twoja firma widzi wyniki prawie natychmiast — nie czekasz tygodniami.
+                    Pracujemy z Poznania, a firmy z Warszawy obsługujemy zdalnie — spotkania online, wspólny dostęp do konta reklamowego i regularne raporty.
                   </p>
                 </div>
                 <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-2">Specjalizacja w branżach warszawskich</h3>
+                  <h3 className="text-xl font-bold mb-2">Strategia dopasowana do branży</h3>
                   <p className="text-muted-foreground">
-                    Znamy warszawski rynek — od e-commerce do nieruchomości do usług. Każda branża ma inne wyzwania, my wiemy jak je rozwiązać.
+                    Każda branża ma inne wyzwania — inne słowa kluczowe, koszty kliknięcia i ścieżkę klienta. Strategię budujemy po analizie Twojego rynku i konkurencji.
                   </p>
                 </div>
                 <div className="bg-background rounded-lg border border-border p-6">
@@ -445,7 +415,7 @@ export default function GoogleAdsWarszawa() {
                   Uruchom kampanie Google Ads w Warszawie
                 </h2>
                 <p className="text-lg text-slate-300 mb-10">
-                  Bezpłatna konsultacja bez zobowiązań. Poznaj naszą strategię dla Twojej branży. Wyniki od 24-48h.
+                  Bezpłatna konsultacja bez zobowiązań. Poznaj naszą strategię dla Twojej branży.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link

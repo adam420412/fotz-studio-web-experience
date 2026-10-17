@@ -41,7 +41,7 @@ export default function MarketingB2B() {
     {
       icon: Target,
       title: "LinkedIn Ads",
-      desc: "Reklamy kierowane do decydentów po stanowisku, branży, wielkości firmy. Najlepsza platforma B2B.",
+      desc: "Reklamy kierowane do decydentów po stanowisku, branży, wielkości firmy. W wielu branżach B2B to kluczowy kanał.",
     },
     {
       icon: Mail,
@@ -73,10 +73,10 @@ export default function MarketingB2B() {
   const packages = [
     {
       title: "Lead Gen Basic",
-      price: "1 499 zł/mies.",
+      price: "Wycena po rozmowie o zakresie",
       desc: "Start z marketing B2B",
       features: [
-        "LinkedIn Ads (do 1500 zł budżet)",
+        "LinkedIn Ads (budżet reklamowy osobno)",
         "2 posty na LinkedIn/tydzień",
         "Email kampania (1 sekwencja)",
         "Monthly raport",
@@ -85,13 +85,13 @@ export default function MarketingB2B() {
     },
     {
       title: "Growth B2B",
-      price: "2 499 zł/mies.",
+      price: "Wycena po rozmowie o zakresie",
       desc: "Skalowanie generacji leadów",
       features: [
-        "LinkedIn Ads (do 3000 zł budżet)",
+        "LinkedIn Ads (budżet reklamowy osobno)",
         "Content marketing (4 artykuły/mies.)",
         "Email automation (3+ sekwencje)",
-        "ABM dla top 20 kont",
+        "ABM dla wybranych kont kluczowych",
         "CRM integration",
         "Tygodniowy raport",
         "Konsultacja strategiczna 2x/mies.",
@@ -100,7 +100,7 @@ export default function MarketingB2B() {
     },
     {
       title: "Enterprise B2B",
-      price: "4 999+ zł/mies.",
+      price: "Wycena po rozmowie o zakresie",
       desc: "Pełny marketing B2B",
       features: [
         "Multi-channel strategy",
@@ -118,12 +118,12 @@ export default function MarketingB2B() {
     {
       question: "Czym różni się marketing B2B od B2C?",
       answer:
-        "B2B: dłuższy cykl decyzyjny (6-12 mies.), wielu decydentów, wyższa wartość transakcji, content edukacyjny ważniejszy niż emocjonalny, LinkedIn i email kluczowe. B2C: krótki cykl, jedna decyzja, social media i Google Ads priorytet. Strategia B2B wymaga cierpliwości i budowania relacji.",
+        "B2B: dłuższy cykl decyzyjny (często wiele miesięcy), wielu decydentów, wyższa wartość transakcji, content edukacyjny ważniejszy niż emocjonalny, LinkedIn i email kluczowe. B2C: krótki cykl, jedna decyzja, social media i Google Ads priorytet. Strategia B2B wymaga cierpliwości i budowania relacji.",
     },
     {
       question: "LinkedIn czy Google Ads dla B2B?",
       answer:
-        "LinkedIn dla B2B to #1 — targeting po stanowisku, branży i wielkości firmy jest unikatowy. Google Ads sprawdza się dla frazy z intencją zakupu (np. 'oprogramowanie ERP cena'). Dla większości firm B2B rekomendujemy LinkedIn + content marketing jako fundament, z Google Ads jako uzupełnienie.",
+        "LinkedIn jest w B2B mocnym kanałem — targeting po stanowisku, branży i wielkości firmy jest unikatowy. Google Ads sprawdza się dla frazy z intencją zakupu (np. 'oprogramowanie ERP cena'). Dla większości firm B2B rekomendujemy LinkedIn + content marketing jako fundament, z Google Ads jako uzupełnienie.",
     },
     {
       question: "Jak mierzyć skuteczność marketingu B2B?",
@@ -133,17 +133,17 @@ export default function MarketingB2B() {
     {
       question: "Jakie treści działają najlepiej w B2B?",
       answer:
-        "Case studies (85% B2B buyers czyta przed zakupem), webinary, white papers, e-booki, porównania produktów, ROI calculators, referencje klientów. Content musi edukować i budować zaufanie, nie sprzedawać na siłę.",
+        "Case studies, webinary, white papers, e-booki, porównania produktów, ROI calculators, referencje klientów. Content musi edukować i budować zaufanie, nie sprzedawać na siłę.",
     },
     {
       question: "Po jakim czasie zobaczymy leady?",
       answer:
-        "Pierwsze leady z LinkedIn Ads: 2-4 tygodnie. Leady z content marketing i SEO: 3-6 miesięcy. Marketing B2B to gra długoterminowa — im dłużej prowadzisz, tym niższy koszt per lead. Po 6 miesiącach zazwyczaj koszty pozyskania leadu spadają o 40-60%.",
+        "Kampanie LinkedIn Ads mogą dać pierwsze zapytania szybciej niż content marketing i SEO, które zwykle potrzebują kilku miesięcy. Nie podajemy sztywnych terminów ani liczby leadów, bo zależą od oferty, grupy docelowej, konkurencji i budżetu. Marketing B2B to gra długoterminowa — systematyczna optymalizacja kampanii i treści pomaga z czasem obniżać koszt pozyskania leadu.",
     },
     {
       question: "Jaki jest minimalny budżet na marketing B2B?",
       answer:
-        "Minimalny budżet reklamowy dla LinkedIn Ads to 1000-1500 zł/mies. Do tego dochodzi koszt obsługi agencji (od 1499 zł/mies.) i ewentualnie content marketing. Łącznie minimum to ok. 3000-4000 zł/mies. Poniżej tej kwoty trudno o mierzalne wyniki.",
+        "Budżet składa się z dwóch części: budżetu reklamowego płaconego bezpośrednio platformie (np. LinkedIn) oraz wynagrodzenia za obsługę i ewentualny content marketing. Wysokość obu zależy od wielkości grupy docelowej, liczby kanałów i zakresu treści — konkretną propozycję przygotowujemy po rozmowie o celach. Zbyt mały budżet reklamowy utrudnia zebranie danych do rzetelnej oceny kampanii, dlatego omawiamy go na starcie.",
     },
   ];
 
@@ -181,10 +181,10 @@ export default function MarketingB2B() {
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
                 {[
-                  { value: "6-9 mies.", label: "Śr. cykl B2B" },
-                  { value: "5+", label: "Decydentów w procesie" },
-                  { value: "3x", label: "Więcej leadów z content" },
-                  { value: "LinkedIn", label: "#1 platforma B2B" },
+                  { value: "LinkedIn", label: "Dotarcie do decydentów" },
+                  { value: "Content", label: "Edukacja przed zakupem" },
+                  { value: "Email", label: "Nurturing leadów" },
+                  { value: "CRM", label: "Pomiar od leada do sprzedaży" },
                 ].map((stat, idx) => (
                   <div key={idx} className="bg-slate-800 bg-opacity-50 p-4 rounded-lg">
                     <div className="text-2xl font-bold text-blue-400">{stat.value}</div>
@@ -209,10 +209,10 @@ export default function MarketingB2B() {
               <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Dlaczego marketing B2B jest trudniejszy?</h2>
               <div className="mt-12 grid md:grid-cols-2 gap-8">
                 {[
-                  { icon: TrendingUp, title: "Długi cykl decyzyjny", desc: "Decyzja zakupowa w B2B trwa średnio 6-12 miesięcy. Potrzebujesz strategii nurturingu która utrzyma zainteresowanie przez cały czas." },
-                  { icon: Users, title: "Wielu decydentów", desc: "Śr. 5+ osób bierze udział w decyzji B2B. Marketing musi docierać do CEO, CFO, IT, i użytkowników końcowych jednocześnie." },
-                  { icon: FileText, title: "Potrzeba edukacji", desc: "Kupujący B2B chcą być edukowani, nie sprzedawani. 70% procesu sprzedaży robi się samodzielnie zanim skontaktuje się z handlowcem." },
-                  { icon: Target, title: "Wąska grupa docelowa", desc: "W B2B targetujesz 500-5000 firm, nie miliony konsumentów. Każdy kontakt ma ogromną wartość. Personalizacja jest niezbędna." },
+                  { icon: TrendingUp, title: "Długi cykl decyzyjny", desc: "Decyzja zakupowa w B2B często trwa wiele miesięcy. Potrzebujesz strategii nurturingu która utrzyma zainteresowanie przez cały czas." },
+                  { icon: Users, title: "Wielu decydentów", desc: "W decyzji B2B zwykle bierze udział kilka osób. Marketing musi docierać do CEO, CFO, IT, i użytkowników końcowych jednocześnie." },
+                  { icon: FileText, title: "Potrzeba edukacji", desc: "Kupujący B2B chcą być edukowani, nie sprzedawani. Dużą część researchu robią samodzielnie, zanim skontaktują się z handlowcem." },
+                  { icon: Target, title: "Wąska grupa docelowa", desc: "W B2B targetujesz ograniczoną grupę firm, nie miliony konsumentów. Każdy kontakt ma ogromną wartość. Personalizacja jest niezbędna." },
                 ].map((item, idx) => {
                   const Icon = item.icon;
                   return (
@@ -258,9 +258,9 @@ export default function MarketingB2B() {
         <FadeInView>
           <section className="py-16 md:py-24 bg-white">
             <div className="max-w-5xl mx-auto px-4 md:px-6">
-              <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Pakiety marketing B2B</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Przykładowe zakresy współpracy B2B</h2>
               <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
-                Transparentne miesięczne plany. Bez ukrytych kosztów.
+                Wycenę przygotowujemy po rozmowie o zakresie, kanałach i celach. Budżet reklamowy płacony platformom jest zawsze osobno.
               </p>
               <div className="grid md:grid-cols-3 gap-8">
                 {packages.map((pkg, idx) => (

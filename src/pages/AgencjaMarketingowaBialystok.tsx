@@ -9,16 +9,13 @@ import {
   Globe,
   Target,
   Search,
-  Rocket,
   BarChart3,
   Users,
   Award,
   Share2,
   Video,
   Palette,
-  TrendingUp,
   AlertCircle,
-  Star,
   Zap
 } from "lucide-react";
 import { ServiceSchema, BreadcrumbSchema, FAQSchema, OrganizationSchema } from "@/components/seo/StructuredData";
@@ -33,13 +30,13 @@ const services = [
   {
     icon: Search,
     title: "Pozycjonowanie SEO",
-    description: "Agencja SEO Białystok zwiększa widoczność firm w Google. Audyt techniczny, optymalizacja treści, link building. Specjalizacja w SEO lokalnym dla Białegostoku i rynku polskiego — niższa konkurencja niż w dużych miastach.",
+    description: "Pracujemy nad widocznością firm z Białegostoku w Google. Audyt techniczny, optymalizacja treści, link building, SEO lokalne. Nie gwarantujemy konkretnej pozycji — efekty zależą od konkurencji i stanu strony.",
     link: "/seo/pozycjonowanie"
   },
   {
     icon: Target,
     title: "Kampanie Google Ads i Meta Ads",
-    description: "Zaawansowane kampanie marketingowe w Google Ads i Meta Ads. Konfiguracja, optymalizacja i skalowanie. Raportowanie ROAS i CPL. Budżety od 2 000 do 100 000 PLN/mies. Wyniki sprzedażowe mierzone w leadach i konwersjach.",
+    description: "Zaawansowane kampanie marketingowe w Google Ads i Meta Ads. Konfiguracja, optymalizacja i skalowanie. Raportowanie ROAS i CPL. Budżet reklamowy płacony platformie ustalamy z Tobą osobno od wynagrodzenia za obsługę.",
     link: "/performance-marketing/google-ads"
   },
   {
@@ -57,7 +54,7 @@ const services = [
   {
     icon: Palette,
     title: "Branding i identyfikacja wizualna",
-    description: "Budujemy i rozwijamy Twój brand. Logo, brandbook, system identyfikacji wizualnej, materiały graficzne. Spójna identyfikacja wizualna Twojej marki przekłada się na wyższe ceny i lepsze konwersje.",
+    description: "Budujemy i rozwijamy Twój brand. Logo, brandbook, system identyfikacji wizualnej, materiały graficzne. Spójna identyfikacja wizualna pomaga budować rozpoznawalność i zaufanie do marki.",
     link: "/uslugi/identyfikacja-wizualna"
   }
 ];
@@ -65,83 +62,38 @@ const services = [
 const chooseCriteria = [
   {
     icon: Award,
-    title: "Doświadczenie na rynku białostockim",
-    desc: "Znamy specyfikę rynku Białegostoku — tekstyliści, IT, akademia. Rozumiemy dynamikę lokalnego biznesu i potrzeby firm z województwa podlaskiego."
+    title: "Współpraca zdalna",
+    desc: "Pracujemy z Poznania, firmy z Białegostoku obsługujemy zdalnie. Przed startem analizujemy Twoją branżę i konkurencję na rynku podlaskim."
   },
   {
     icon: BarChart3,
     title: "Data-driven marketing",
-    desc: "Każda decyzja oparta na danych z GA4, Google Ads, Meta. Raportujemy ROAS, CPL, konwersje. Każde złoto musi być optymalizowane."
+    desc: "Każda decyzja oparta na danych z GA4, Google Ads, Meta. Raportujemy ROAS, CPL, konwersje. Każda złotówka budżetu powinna być rozliczalna."
   },
   {
     icon: Users,
     title: "Dedykowany ekspert projektu",
-    desc: "Masz stały kontakt z ekspertem znającym konkurencję Białegostoku i trendy rynku. Nie rotujemy juniorów — masz jedną osobę zaangażowaną w Twój projekt."
+    desc: "Masz stały kontakt z osobą prowadzącą Twój projekt — bez przekazywania sprawy między kolejnymi opiekunami."
   },
   {
     icon: Zap,
-    title: "Szybkie efekty w mniejszym rynku",
-    desc: "Białystok to niższa konkurencja SEO niż duże miasta. To oznacza szybsze pozycjonowanie, lepszy ROI i szybszy powrót z inwestycji w marketing."
-  }
-];
-
-const pricingPackages = [
-  {
-    name: "START",
-    price: "1 500",
-    description: "Dla firm zaczynających przygodę z marketingiem cyfrowym",
-    features: [
-      "Google My Business optymalizacja",
-      "Local SEO dla Białegostoku",
-      "1 kanał mediów społecznościowych",
-      "Bazowy raport miesięczny",
-      "Email support",
-      "1 konsultacja /miesiąc"
-    ]
-  },
-  {
-    name: "ROZWÓJ",
-    price: "3 500",
-    description: "Dla firm chcących skalować kampanie i budować widoczność",
-    features: [
-      "SEO + Local SEO",
-      "Google Ads (Search) kampania",
-      "2 kanały mediów społecznościowych",
-      "Dedykowany ekspert",
-      "Raport zaawansowany (GA4, Google Ads)",
-      "2 konsultacje /miesiąc",
-      "Optymalizacja stron"
-    ]
-  },
-  {
-    name: "PREMIUM",
-    price: "7 000",
-    description: "Kompleksowy marketing cyfrowy pełnego zakresu",
-    features: [
-      "SEO + Local SEO + Link building",
-      "Google Ads (Search, Shopping, Display)",
-      "Meta Ads kampanie",
-      "3+ kanały mediów społecznościowych",
-      "Dedykowany ekspert + senior review",
-      "Raporty zaawansowane + video call",
-      "Content marketing i email",
-      "Strategia quarterly review"
-    ]
+    title: "Realne oczekiwania",
+    desc: "Na mniejszym rynku konkurencja w części branż bywa niższa, ale nie obiecujemy konkretnych pozycji ani terminów efektów. Konkurencję sprawdzamy przed startem."
   }
 ];
 
 const faqItems = [
   {
     question: "Jakie wyzwania marketingowe stoi przed firmami z Białegostoku?",
-    answer: "Białystok to dynamiczne miasto, ale niż warszawskie tempo. Główne wyzwania: mniejsza świadomość o SEO i digital marketingu wśród firm, konkurencja jednak rosnąca, CPL niższy niż w dużych miastach. Firmy tutaj, które inwestują w marketing cyfrowy, zyskują szybką przewagę nad konkurencją, która jeszcze nie zaczęła. Specjalizujemy się w budowaniu widoczności dla białostockich firm w niszach lokalnych — medycyna, IT, handel, tekstylia."
+    answer: "Białystok to dynamiczne miasto, ale niż warszawskie tempo. Główne wyzwania: mniejsza świadomość o SEO i digital marketingu wśród firm, konkurencja jednak rosnąca, CPL niższy niż w dużych miastach. Firmy, które zaczną wcześniej, mogą łatwiej wyróżnić się na tle konkurencji, która jeszcze nie działa online. Możemy pomóc w budowaniu widoczności w niszach lokalnych — medycyna, IT, handel, tekstylia."
   },
   {
     question: "Czy agencja z innego miasta obsługuje klientów z Białegostoku?",
-    answer: "Tak — obsługujemy firmy z całej Polski, w tym z Białegostoku. Współpraca przebiega online (Google Meet, Teams). Ponad 40% naszych klientów pochodzi z różnych miast. Białystok jest rynkiem zaawansowanym cyfrowo — format online nie jest problemem. Ważne jest zrozumienie konkurencyjnego rynku Białegostoku i umiejętność budowania efektywnych kampanii dla lokalnych branż."
+    answer: "Tak — pracujemy z Poznania, a firmy z Białegostoku obsługujemy zdalnie. Współpraca przebiega online (Google Meet, Teams). Białystok jest rynkiem zaawansowanym cyfrowo — format online nie jest problemem. Ważne jest zrozumienie konkurencyjnego rynku Białegostoku i umiejętność budowania efektywnych kampanii dla lokalnych branż."
   },
   {
     question: "Ile kosztuje agencja marketingowa w Białymstoku?",
-    answer: "Ceny zależą od zakresu: pojedynczy kanał (SEO, Meta Ads) od 1 500–3 000 PLN/mies. Kompleksowa obsługa — SEO, Google Ads, social media — od 5 000–15 000 PLN/mies. Białystok to tańszy rynek niż Warszawa czy Kraków — kampanie kosztują mniej, ale wymagają profesjonalnego podejścia. Zwróć uwagę na agencje obiecujące rezultaty za zaledwie 299 PLN — zwykle brakuje im strategii."
+    answer: "Wycenę przygotowujemy po rozmowie o zakresie. Zależy od liczby kanałów (SEO, Google Ads, Meta Ads, social media), ilości treści i kampanii, konkurencji w branży oraz stanu strony. Budżet reklamowy płacony Google lub Meta jest zawsze osobną pozycją. Uważaj na oferty obiecujące rezultaty za symboliczną kwotę — zwykle brakuje w nich strategii."
   },
   {
     question: "Jakie branże dominują w Białymstoku i czy mają SEO?",
@@ -149,11 +101,11 @@ const faqItems = [
   },
   {
     question: "Czy SEO w Białymstoku jest trudne ze względu na lokalizację geograficzną?",
-    answer: "Nie — wręcz przeciwnie. Białystok jako stolica województwa podlaskiego skupia znaczną część zapytań lokalnych dla całego regionu. Mniejsza konkurencja oznacza, że łatwiej i taniej osiągnąć TOP 10 niż w zachodniej Polsce. Jednocześnie miasto jest wystarczająco duże (ok. 300 tys. mieszkańców), żeby uzasadniać inwestycję w pozycjonowanie. To idealny rynek dla firm szukających szybkich efektów."
+    answer: "Nie — wręcz przeciwnie. Białystok jako stolica województwa podlaskiego skupia znaczną część zapytań lokalnych dla całego regionu. W części branż konkurencja jest niższa niż w największych miastach, co może ułatwić budowanie widoczności — ale nie gwarantujemy konkretnej pozycji ani terminu. Jednocześnie miasto jest wystarczająco duże, żeby uzasadniać inwestycję w pozycjonowanie."
   },
   {
     question: "Czy oferujecie kompleksową obsługę marketingową dla Białegostoku?",
-    answer: "Tak — pełny zakres usług. Projektujemy strony, prowadzimy SEO, konfigurujemy Google Ads i Meta, obsługujemy social media. Jeden partner, pełna odpowiedzialność. Spójność strategii daje lepsze wyniki w konkurencyjnym rynku Białegostoku niż współpraca z kilkoma firmami niezkoordynowanymi."
+    answer: "Tak — pełny zakres usług. Projektujemy strony, prowadzimy SEO, konfigurujemy Google Ads i Meta, obsługujemy social media. Jeden partner, pełna odpowiedzialność. Spójna strategia jest łatwiejsza do prowadzenia niż współpraca z kilkoma nieskoordynowanymi firmami."
   }
 ];
 
@@ -201,13 +153,13 @@ export default function AgencjaMarketingowaBialystok() {
 
               <p className="text-lg md:text-xl text-muted-foreground mb-6 max-w-2xl mx-auto">
                 Kompleksowy marketing internetowy dla firm z Białegostoku. SEO, Google Ads,
-                social media, strony internetowe i wideo — wszystko w jednej agencji. Fotz Studio to profesjonalna agencja reklamowa Białystok
-                łącząca kreatywność z analityką danych.
+                social media, strony internetowe i wideo — wszystko w jednej agencji. Fotz Studio to agencja z Poznania — firmy z Białegostoku
+                obsługujemy zdalnie, łącząc kreatywność z analityką danych.
               </p>
 
               <p className="text-base text-muted-foreground/80 mb-10 max-w-xl mx-auto">
-                Białystok to 300 tysięcy mieszkańców, stolica województwa podlaskiego,
-                ośrodek akademicki, dynamiczny sektor IT i tekstylny. Firmy, które inwestują w profesjonalne kampanie marketingowe, systematycznie zyskują nowych klientów.
+                Białystok to stolica województwa podlaskiego, ośrodek akademicki,
+                dynamiczny sektor IT i tekstylny.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -229,10 +181,10 @@ export default function AgencjaMarketingowaBialystok() {
           <div className="container px-4">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto text-center">
               {[
-                { value: "5+ lat", label: "doświadczenia na rynku polskim" },
-                { value: "120+", label: "klientów z całej Polski" },
-                { value: "+320%", label: "średni wzrost ruchu w kampaniach" },
-                { value: "4.9/5", label: "średnia ocen klientów" }
+                { value: "WWW", label: "strony i sklepy internetowe" },
+                { value: "SEO", label: "pozycjonowanie i SEO lokalne" },
+                { value: "Ads", label: "kampanie Google i Meta" },
+                { value: "Wideo", label: "produkcja foto i wideo" }
               ].map((s, i) => (
                 <div key={i}>
                   <div className="text-3xl md:text-4xl font-heading font-bold text-primary mb-1">{s.value}</div>
@@ -249,13 +201,12 @@ export default function AgencjaMarketingowaBialystok() {
             <div className="max-w-5xl mx-auto">
               <div className="text-center mb-14">
                 <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Dlaczego klienci z Białegostoku{" "}
-                  <span className="text-gradient">wybierają Fotz Studio?</span>
+                  Dlaczego warto{" "}
+                  <span className="text-gradient">wybrać Fotz Studio?</span>
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Nie jesteśmy najtańszą agencją — jesteśmy jedną z najlepszych agencji marketingowych w Białymstoku pod względem wyników.
-                  Łączymy profesjonalizm i kreatywność, by budować trwałą widoczność Twojej marki i wyniki sprzedażowe,
-                  które realnie przekładają się na biznes.
+                  Nie jesteśmy najtańszą agencją. Łączymy kreację z analityką, by budować widoczność Twojej marki
+                  i działania nastawione na wyniki sprzedażowe.
                 </p>
               </div>
 
@@ -363,50 +314,26 @@ export default function AgencjaMarketingowaBialystok() {
             <div className="max-w-5xl mx-auto">
               <div className="text-center mb-14">
                 <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Pakiety usług dla firm z Białegostoku
+                  Od czego zależy wycena?
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Trzy pakiety zaplanowane dla różnych etapów rozwoju Twojego biznesu. Każdy pakiet zawiera konsultacje i dedykowane wsparcie.
+                  Wycenę przygotowujemy po rozmowie o zakresie. Zależy ona od liczby prowadzonych kanałów (SEO, Google Ads, Meta Ads, social media, strona WWW), ilości treści i kampanii, konkurencji w Twojej branży oraz obecnego stanu strony i profili.
                 </p>
               </div>
 
-              <div className="grid md:grid-cols-3 gap-6">
-                {pricingPackages.map((pkg, i) => (
-                  <div key={i} className="rounded-2xl border border-border/40 bg-card/20 overflow-hidden flex flex-col">
-                    <div className="p-6 pb-4">
-                      <h3 className="font-heading font-bold text-xl mb-2">{pkg.name}</h3>
-                      <div className="mb-2">
-                        <span className="text-4xl font-heading font-bold text-primary">{pkg.price}</span>
-                        <span className="text-muted-foreground"> zł/mies</span>
-                      </div>
-                      <p className="text-sm text-muted-foreground">{pkg.description}</p>
-                    </div>
-                    <div className="flex-1 px-6 py-4 space-y-3">
-                      {pkg.features.map((feature, j) => (
-                        <div key={j} className="flex items-start gap-2 text-sm">
-                          <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
-                          <span className="text-muted-foreground">{feature}</span>
-                        </div>
-                      ))}
-                    </div>
-                    <div className="p-6 pt-4">
-                      <Button asChild size="sm" className="w-full bg-primary hover:bg-primary/90">
-                        <Link to="/kontakt">
-                          Zapytaj o cenę
-                        </Link>
-                      </Button>
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              <div className="mt-12 p-6 rounded-2xl bg-primary/5 border border-primary/20">
+              <div className="p-6 rounded-2xl bg-primary/5 border border-primary/20">
                 <div className="flex items-start gap-3">
                   <AlertCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                   <p className="text-sm text-muted-foreground">
-                    <strong className="text-foreground">Każdy pakiet zawiera:</strong> bezpłatną wstępną konsultację, strategię indywidualną, raportowanie miesięczne, dostęp do raportów online i dedykowany email ekspertów. Wszystkie pakiety mogą być rozszerzone o dodatkowe usługi.
+                    <strong className="text-foreground">Budżet reklamowy:</strong> kwotę płaconą Google lub Meta za emisję reklam ustalamy wspólnie i zawsze rozliczamy osobno od wynagrodzenia za obsługę.
                   </p>
                 </div>
+              </div>
+
+              <div className="text-center mt-8">
+                <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
+                  <Link to="/kontakt">Zapytaj o wycenę</Link>
+                </Button>
               </div>
             </div>
           </div>
@@ -464,7 +391,7 @@ export default function AgencjaMarketingowaBialystok() {
                 </Button>
               </div>
               <p className="text-white/50 text-xs mt-6">
-                Odpowiadamy w ciągu 24 godzin · Bez sprzedaży pod presją · Indywidualne podejście do każdego klienta
+                Bez sprzedaży pod presją · Indywidualne podejście do każdego klienta
               </p>
             </div>
           </div>
@@ -501,10 +428,10 @@ export default function AgencjaMarketingowaBialystok() {
             <div className="prose prose-lg prose-invert max-w-none">
               <h2 className="text-3xl font-heading font-bold mb-6 text-foreground">Agencja marketingowa Białystok — marketing internetowy dla firm</h2>
               <p className="text-muted-foreground mb-4">
-                Fotz Studio to agencja marketingowa Białystok oferująca kompleksowe usługi marketingu cyfrowego dla firm z Białegostoku i regionu podlaskiego. Strategie marketingu cyfrowego, które tworzymy, łączą SEO, kampanie PPC, social media marketing i content marketing w spójny ekosystem, generujący leady i sprzedaż.
+                Fotz Studio to agencja marketingowa Białystok oferująca kompleksowe usługi marketingu cyfrowego dla firm z Białegostoku i regionu podlaskiego. Strategie marketingu cyfrowego, które tworzymy, łączą SEO, kampanie PPC, social media marketing i content marketing w spójny ekosystem nastawiony na leady i sprzedaż. Pracujemy z Poznania, firmy z Białegostoku obsługujemy zdalnie.
               </p>
               <p className="text-muted-foreground mb-6">
-                Białystok to dynamiczne miasto — 300 tysięcy mieszkańców, stolica województwa podlaskiego, ośrodek akademicki, silny sektor medyczny i rosnący hub IT. Bliskość Puszczy Białowieskiej i parków narodowych przyciąga turystów. Agencja marketingowa w Białymstoku musi znać specyfikę rynku lokalnego i turystyki, dysponować narzędziami, które pozwolą Twojej firmie wyróżnić się na tle konkurencji.
+                Białystok to dynamiczne miasto — stolica województwa podlaskiego, ośrodek akademicki, silny sektor medyczny i rosnący hub IT. Bliskość Puszczy Białowieskiej i parków narodowych przyciąga turystów. Agencja marketingowa w Białymstoku musi znać specyfikę rynku lokalnego i turystyki, dysponować narzędziami, które pozwolą Twojej firmie wyróżnić się na tle konkurencji.
               </p>
             </div>
           </div>

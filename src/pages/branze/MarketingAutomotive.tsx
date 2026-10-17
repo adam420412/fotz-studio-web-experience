@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
-import { useCountUp } from "@/hooks/useCountUp";
 import { OtherIndustries } from "@/components/sections/OtherIndustries";
 import victoryCarsImg from "@/assets/portfolio/victory-cars-web.webp";
 
@@ -52,7 +51,7 @@ const customSolutions = [
 ];
 
 const benefits = [
-  "Zwiększenie liczby zapytań o jazdy próbne o 80%",
+  "Prosty formularz rezerwacji jazd próbnych na stronie",
   "Profesjonalna prezentacja floty pojazdów online",
   "Automatyzacja rezerwacji serwisowych",
   "Targetowanie klientów premium w kampaniach",
@@ -67,11 +66,11 @@ const faqItems = [
   },
   {
     question: "Ile kosztuje marketing dla dealera samochodowego?",
-    answer: "Podstawowa obsługa (strona + SEO + kampanie) zaczyna się od 5000 zł/miesiąc. Pełna obsługa z produkcją video, konfiguratorem 3D i zaawansowanymi kampaniami to 10000-25000 zł/miesiąc.",
+    answer: "Wycenę przygotowujemy po rozmowie o zakresie. Koszt zależy od tego, czy potrzebna jest nowa strona lub konfigurator, ile produkcji foto i video planujemy w miesiącu, ile kampanii prowadzimy i w ilu lokalizacjach działa salon. Budżet reklamowy płacony platformom (Google, Meta) jest zawsze osobno.",
   },
   {
     question: "Czy robicie zdjęcia samochodów?",
-    answer: "Tak, oferujemy profesjonalną fotografię motoryzacyjną - sesje studyjne, outdoor, packshoty dla katalogów i zdjęcia lifestyle. Posiadamy doświadczenie w fotografii dla dealerów premium.",
+    answer: "Tak, oferujemy profesjonalną fotografię motoryzacyjną - sesje studyjne, outdoor, packshoty dla katalogów i zdjęcia lifestyle.",
   },
   {
     question: "Jak działa konfigurator 3D dla samochodów?",
@@ -79,7 +78,7 @@ const faqItems = [
   },
   {
     question: "Czy integrujecie się z systemami DMS?",
-    answer: "Tak, mamy doświadczenie w integracji z popularnymi systemami DMS używanymi przez dealerów. Synchronizujemy dane o pojazdach, cenach i dostępności w czasie rzeczywistym.",
+    answer: "Integrację z systemem DMS omawiamy indywidualnie — możliwy zakres zależy od tego, czy system udostępnia API lub eksport danych. Po analizie technicznej proponujemy sposób synchronizacji danych o pojazdach, cenach i dostępności.",
   },
 ];
 
@@ -97,7 +96,7 @@ const MarketingAutomotive = () => {
     <Layout>
       <SEOHead
         title="Marketing dla Branży Motoryzacyjnej | Salony, Dealerzy, Serwisy | Fotz Studio"
-        description="Marketing dla branży motoryzacyjnej - strony dla dealerów, fotografia samochodów, spoty reklamowe, kampanie leadowe. Zwiększ sprzedaż w salonie."
+        description="Marketing dla branży motoryzacyjnej - strony dla dealerów, fotografia samochodów, spoty reklamowe, kampanie leadowe dla salonów, dealerów i serwisów."
         canonical="https://www.fotz-studio.pl/dla-kogo/automotive"
         keywords="marketing motoryzacyjny, marketing dla dealerów, agencja marketingowa motoryzacja, reklama salonu samochodowego, kampanie google ads motoryzacja, social media motoryzacja, fotografia motoryzacyjna, marketing serwisu samochodowego"
       />
@@ -162,7 +161,7 @@ const MarketingAutomotive = () => {
             </div>
           </motion.div>
 
-          {/* Stats */}
+          {/* Highlights */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -170,21 +169,18 @@ const MarketingAutomotive = () => {
             className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16"
           >
             {[
-              { value: 80, suffix: "%", label: "więcej zapytań o jazdy próbne" },
-              { value: 500, suffix: "+", label: "sfotografowanych pojazdów" },
-              { value: 30, suffix: "+", label: "obsłużonych dealerów" },
-              { value: 3, suffix: "x", label: "wyższy ROI kampanii" },
-            ].map((stat, index) => {
-              const { ref, displayValue } = useCountUp({ end: stat.value, suffix: stat.suffix });
-              return (
-                <div key={index} ref={ref} className="text-center p-6 rounded-2xl bg-card border border-border/30">
-                  <div className="text-3xl md:text-4xl font-heading font-bold text-gradient-premium">
-                    {displayValue}
-                  </div>
-                  <p className="text-foreground/60 text-sm mt-2">{stat.label}</p>
+              { title: "Foto", label: "sesje pojazdów i salonu" },
+              { title: "Video", label: "spoty i rolki do social media" },
+              { title: "WWW", label: "strony z katalogiem i rezerwacją jazd" },
+              { title: "Kampanie", label: "Google Ads i Meta Ads" },
+            ].map((tile, index) => (
+              <div key={index} className="text-center p-6 rounded-2xl bg-card border border-border/30">
+                <div className="text-3xl md:text-4xl font-heading font-bold text-gradient-premium">
+                  {tile.title}
                 </div>
-              );
-            })}
+                <p className="text-foreground/60 text-sm mt-2">{tile.label}</p>
+              </div>
+            ))}
           </motion.div>
         </div>
       </section>
@@ -440,7 +436,7 @@ const MarketingAutomotive = () => {
               Gotowy na <span className="text-gradient-premium">więcej klientów?</span>
             </h2>
             <p className="text-foreground/70 mb-8 max-w-2xl mx-auto">
-              Umów się na bezpłatną konsultację i dowiedz się, jak możemy zwiększyć sprzedaż w Twoim salonie.
+              Umów się na bezpłatną konsultację i dowiedz się, jak możemy wspierać sprzedaż w Twoim salonie.
             </p>
             <Button asChild size="lg" className="group">
               <Link to="/kontakt">

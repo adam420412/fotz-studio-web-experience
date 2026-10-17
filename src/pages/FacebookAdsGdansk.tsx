@@ -101,22 +101,22 @@ export default function FacebookAdsGdansk() {
   const pricing = [
     {
       name: "START",
-      price: "400",
+      price: "Wycena indywidualna",
       description: "Idealne na początek",
       features: [
         "1 kampania (Feed lub Stories)",
-        "Do 3 000 zł budżetu/mies",
+        "Mniejszy budżet testowy",
         "Tygodniowe optymalizacje",
         "Podstawowy reporting"
       ]
     },
     {
       name: "GROWTH",
-      price: "1 200",
-      description: "Najczęściej wybierane",
+      price: "Wycena indywidualna",
+      description: "Kilka kampanii równolegle",
       features: [
         "Do 5 kampanii",
-        "Do 10 000 zł budżetu/mies",
+        "Budżet dopasowany do celów",
         "Codzienne optymalizacje",
         "Szczegółowy raport",
         "Strategia targetowania",
@@ -126,12 +126,12 @@ export default function FacebookAdsGdansk() {
     },
     {
       name: "PRO",
-      price: "2 500",
+      price: "Wycena indywidualna",
       description: "Dla skalowania biznesu",
       features: [
         "Do 15 kampanii",
-        "Do 30 000 zł budżetu/mies",
-        "24/7 monitoring i optymalizacje",
+        "Większa skala budżetu",
+        "Stały monitoring i optymalizacje",
         "Zaawansowana analityka",
         "Retargeting + lookalike audiences",
         "Video asset creation",
@@ -140,12 +140,12 @@ export default function FacebookAdsGdansk() {
     },
     {
       name: "ENTERPRISE",
-      price: "5 000+",
-      description: "Dedykowany team",
+      price: "Wycena indywidualna",
+      description: "Rozszerzona obsługa",
       features: [
-        "Unlimited kampanie",
-        "Unlimited budżet",
-        "24/7 dedicated account manager",
+        "Liczba kampanii według potrzeb",
+        "Budżet dopasowany do skali",
+        "Dedykowany opiekun konta",
         "Custom strategy & optimization",
         "Full creative studio",
         "Integracje CRM/Automatyzacja",
@@ -172,15 +172,15 @@ export default function FacebookAdsGdansk() {
   const faqs = [
     {
       question: "Jaki budżet na Facebook Ads dla firm z Gdańska?",
-      answer: "Minimum 400 PLN/mies dla małych firm (patrz plan START). Średnie firmy inwestują 1200-2500 PLN, duże 5000+ PLN. W Gdańsku biznesu portowego czy turystyki rekomendujemy min. 1200 PLN dla efektów."
+      answer: "Budżet ustalamy po rozmowie o celu kampanii, grupie docelowej i sezonowości branży. Budżet reklamowy płacisz bezpośrednio Meta - jest zawsze osobny od wynagrodzenia za obsługę, którą wyceniamy indywidualnie według zakresu."
     },
     {
       question: "Ile czasu na pierwsze wyniki z Facebook Ads?",
-      answer: "Pierwsze konwersje widać po 2-3 tygodniach. Optymalne wyniki to 6-8 tygodni. W tym czasie zbieramy dane, testujemy audiences i creative assets."
+      answer: "To zależy od branży, budżetu i oferty - nie obiecujemy sztywnego terminu. Na początku zbieramy dane, testujemy grupy odbiorców i kreacje, a potem optymalizujemy kampanie na podstawie wyników."
     },
     {
       question: "Czy Facebook Ads działa dla B2B?",
-      answer: "Tak, ale inaczej niż dla e-commerce. Musimy budować brand awareness i leadów, nie sprzedaż bezpośrednią. W Gdańsku firmy portowe czy konsultingowe mają świetne wyniki z retargetingiem."
+      answer: "Tak, ale inaczej niż dla e-commerce. Musimy budować brand awareness i leadów, nie sprzedaż bezpośrednią. W B2B dobrze sprawdza się retargeting osób, które już odwiedziły stronę."
     },
     {
       question: "Ile kampanii powinno być na raz?",
@@ -196,7 +196,7 @@ export default function FacebookAdsGdansk() {
     },
     {
       question: "Ile osób z Gdańska możemy osiągnąć reklamami?",
-      answer: "W Gdańsku jest ~500k aktywnych użytkowników Facebook/Instagram. W zależności od targeting (wiek, zainteresowania, behawior) możemy dotrzeć do 5k-100k osób/dzień. Bardziej sprecyzowany targeting = wyższy ROI."
+      answer: "Szacowany zasięg pokazuje Menedżer reklam Meta po ustawieniu lokalizacji, wieku i zainteresowań - podajemy go przy planowaniu kampanii. Węższe targetowanie to mniejszy, ale lepiej dopasowany zasięg."
     },
     {
       question: "Czy obsługujecie retargeting i lookalike audiences?",
@@ -216,7 +216,7 @@ export default function FacebookAdsGdansk() {
       <div className="pt-20">
       <SEOHead
         title="Agencja Facebook Ads Gdańsk — reklamy Meta dla firm | Fotz.pl"
-        description="Facebook Ads Gdańsk ✓ Kampanie Meta Ads (Facebook, Instagram) dla firm z Gdańska i Trójmiasta. Od 400 zł/mies. Bezpłatna konsultacja!"
+        description="Facebook Ads Gdańsk ✓ Kampanie Meta Ads (Facebook, Instagram) dla firm z Gdańska i Trójmiasta, prowadzone zdalnie z Poznania. Bezpłatna konsultacja!"
         canonical="https://www.fotz-studio.pl/performance-marketing/facebook-ads/gdansk"
         keywords="facebook ads gdansk, meta ads gdansk, reklamy facebook gdansk, agencja facebook ads gdansk, kampanie facebook gdansk, instagram ads gdansk, facebook ads dla firm gdansk, reklama na facebooku gdansk, meta ads agencja gdansk, facebook ads cennik gdansk"
       />
@@ -249,17 +249,17 @@ export default function FacebookAdsGdansk() {
                     Facebook Ads dla Gdańska
                   </h1>
                   <p className="text-xl text-blue-100 mb-8 leading-relaxed">
-                    Reklamy na Facebook i Instagram, które zamieniają przewijających w klientów. Od firm turystycznych, przez e-commerce, po agencje – dla wszystkich marki z Gdańska i Trójmiasta.
+                    Reklamy na Facebook i Instagram, które zamieniają przewijających w klientów. Pracujemy z Poznania, a firmy z Gdańska i Trójmiasta obsługujemy zdalnie – od turystyki, przez e-commerce, po usługi.
                   </p>
                   <div className="flex flex-wrap gap-4 mb-8">
                     <Badge className="bg-white text-blue-600 px-4 py-2 text-base">
-                      150+ kampanii
+                      Facebook + Instagram
                     </Badge>
                     <Badge className="bg-white/20 text-white px-4 py-2 text-base">
-                      3.2x średni ROI
+                      Obsługa zdalna z Poznania
                     </Badge>
                     <Badge className="bg-white/20 text-white px-4 py-2 text-base">
-                      95% retencja klientów
+                      Raporty z KPI
                     </Badge>
                   </div>
                   <Button asChild
@@ -279,8 +279,8 @@ export default function FacebookAdsGdansk() {
                       <div className="flex items-start gap-4">
                         <CheckCircle2 className="w-6 h-6 flex-shrink-0 text-green-300 mt-1" />
                         <div>
-                          <h3 className="font-semibold text-lg mb-2">Kampanie od 400 zł/mies</h3>
-                          <p className="text-blue-100 text-sm">Bez ukrytych opłat. Transparentne ceny dla firm z Gdańska.</p>
+                          <h3 className="font-semibold text-lg mb-2">Wycena po rozmowie o zakresie</h3>
+                          <p className="text-blue-100 text-sm">Bez ukrytych opłat. Budżet reklamowy płacisz Meta osobno.</p>
                         </div>
                       </div>
                       <div className="flex items-start gap-4">
@@ -293,7 +293,7 @@ export default function FacebookAdsGdansk() {
                       <div className="flex items-start gap-4">
                         <CheckCircle2 className="w-6 h-6 flex-shrink-0 text-green-300 mt-1" />
                         <div>
-                          <h3 className="font-semibold text-lg mb-2">Analityka co dzień</h3>
+                          <h3 className="font-semibold text-lg mb-2">Regularna analityka</h3>
                           <p className="text-blue-100 text-sm">Cotygodniowe wyniki, raport co miesiąc. Widzisz dokładnie, co działa.</p>
                         </div>
                       </div>
@@ -314,7 +314,7 @@ export default function FacebookAdsGdansk() {
                   Dlaczego Facebook Ads w Gdańsku?
                 </h2>
                 <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                  Facebook Ads Gdańsk — profesjonalne kampanie Meta Ads i reklamy Facebook dla firm z Gdańsk i Trójmiasta. Zwiększamy sprzedaż, zasięg i ROI dzięki precyzyjnemu targetowaniu. Bezpłatna konsultacja.
+                  Facebook Ads Gdańsk — profesjonalne kampanie Meta Ads i reklamy Facebook dla firm z Gdańsk i Trójmiasta. Pracujemy nad sprzedażą, zasięgiem i kosztem pozyskania klienta dzięki precyzyjnemu targetowaniu. Bezpłatna konsultacja.
                 </p>
               </div>
             </FadeInView>
@@ -324,7 +324,7 @@ export default function FacebookAdsGdansk() {
                 {
                   icon: MapPin,
                   title: "Turystyka i Trójmiasto",
-                  description: "Hotele, restauracje, atrakcje turystyczne. Facebook i Instagram to kanały, gdzie turyści planują wyjazdy. Doskonałe wyniki dla branży turystycznej."
+                  description: "Hotele, restauracje, atrakcje turystyczne. Facebook i Instagram to kanały, gdzie wiele osób szuka inspiracji do wyjazdów."
                 },
                 {
                   icon: Zap,
@@ -334,7 +334,7 @@ export default function FacebookAdsGdansk() {
                 {
                   icon: TrendingUp,
                   title: "E-commerce na Fali",
-                  description: "Sklepy online w Gdańsku i regionie. Facebook Ads to sposób, aby dotrzeć do ludzi szukających produktów. Catalog Ads, retargeting – to działa tutaj."
+                  description: "Sklepy online w Gdańsku i regionie. Facebook Ads to sposób, aby dotrzeć do ludzi szukających produktów. Catalog Ads i retargeting pomagają wrócić do osób zainteresowanych ofertą."
                 }
               ].map((item, i) => (
                 <FadeInView key={i} delay={i * 100}>
@@ -393,7 +393,7 @@ export default function FacebookAdsGdansk() {
                   Jak działamy – 5 kroków
                 </h2>
                 <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                  Od audytu do skalowania. Proces, który sprawdzył się dla 150+ kampanii w Gdańsku.
+                  Od audytu do skalowania – uporządkowany proces prowadzenia kampanii.
                 </p>
               </div>
             </FadeInView>
@@ -427,10 +427,10 @@ export default function FacebookAdsGdansk() {
             <FadeInView>
               <div className="text-center mb-16">
                 <h2 className="text-4xl font-bold text-gray-900 mb-4">
-                  Ceny kampanii Meta Ads
+                  Zakres obsługi Meta Ads
                 </h2>
                 <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                  Od małych firm na start, do enterprise – mamy pakiet dla każdego
+                  Wycenę przygotowujemy po rozmowie o zakresie: liczbie kampanii, kreacjach i raportowaniu. Budżet reklamowy płacony Meta jest zawsze osobny.
                 </p>
               </div>
             </FadeInView>
@@ -448,8 +448,7 @@ export default function FacebookAdsGdansk() {
                       <CardTitle className="text-2xl text-gray-900">{tier.name}</CardTitle>
                       <CardDescription>{tier.description}</CardDescription>
                       <div className="mt-4">
-                        <span className="text-5xl font-bold text-gray-900">{tier.price}</span>
-                        <span className="text-gray-500 ml-2">/mies</span>
+                        <span className="text-2xl font-bold text-gray-900">{tier.price}</span>
                       </div>
                     </CardHeader>
                     <CardContent>
@@ -548,13 +547,13 @@ export default function FacebookAdsGdansk() {
               {[
                 {
                   icon: Award,
-                  title: "6 lat doświadczenia",
-                  description: "Od 2019 roku robimy kampanie Facebook Ads, które się zwracają. Znamy algorytmy Mety na pamięć."
+                  title: "Kreacje i kampanie w jednym miejscu",
+                  description: "Sami produkujemy video i zdjęcia do reklam, więc kreacje i kampanie prowadzi jeden zespół."
                 },
                 {
                   icon: Users,
-                  title: "Menedżerowie z branży",
-                  description: "Nasi account managers pracowali w e-commerce, turystyce, IT. Znają Twoje wyzwania."
+                  title: "Poznanie Twojej branży",
+                  description: "Przed startem analizujemy Twoją ofertę, klientów i konkurencję."
                 },
                 {
                   icon: Zap,
@@ -568,13 +567,13 @@ export default function FacebookAdsGdansk() {
                 },
                 {
                   icon: Clock,
-                  title: "Wsparcie 24/7",
-                  description: "Masz pytanie o kampanię? Odpowiadamy szybko. Problemy? Rozwiązujemy natychmiast."
+                  title: "Stały kontakt",
+                  description: "Masz pytanie o kampanię? Kontaktujesz się bezpośrednio z osobą, która ją prowadzi."
                 },
                 {
                   icon: CheckCircle2,
-                  title: "Gwarantowany ROI",
-                  description: "Jeśli w 3 miesiące kampania nie zwroci się (ROAS &lt;1.5) – refundujemy część opłat."
+                  title: "Uczciwe zasady",
+                  description: "Nie gwarantujemy konkretnego ROAS – wyniki zależą też od oferty i rynku. Zapewniamy przejrzystą pracę i decyzje oparte na danych."
                 }
               ].map((item, i) => (
                 <FadeInView key={i} delay={i * 100}>
@@ -600,7 +599,7 @@ export default function FacebookAdsGdansk() {
                   Najczęstsze pytania
                 </h2>
                 <p className="text-xl text-gray-600">
-                  Odpowiadamy na pytania, które usłyszeliśmy 100 razy
+                  Odpowiedzi na pytania, które często słyszymy
                 </p>
               </div>
             </FadeInView>

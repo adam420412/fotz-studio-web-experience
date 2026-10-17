@@ -45,10 +45,10 @@ import { TextReveal } from '@/components/TextReveal';
 
 export default function TworzenieStronInternetowych() {
   const heroStats = [
-    { value: '500+', label: 'Projektów' },
-    { value: '4.9/5', label: 'Opinie' },
+    { value: 'Poznań', label: 'Pracujemy z' },
+    { value: 'Figma', label: 'Projekt przed kodem' },
     { value: 'Wycena indywidualna', label: 'Cena' },
-    { value: '7-21 dni', label: 'Realizacja' },
+    { value: 'W ofercie', label: 'Termin realizacji' },
   ];
 
   const whatWeCreate = [
@@ -85,7 +85,7 @@ export default function TworzenieStronInternetowych() {
       title: 'Aplikacje webowe',
       desc: 'Kompleksowe projekty custom. React, Next.js. Dla skomplikowanych systemów biznesowych.',
       price: 'wycena ind.',
-      features: ['Architektura custom', 'Bezpieczeństwo', 'Skalowanie', 'DevOps', 'Wsparcie 24/7']
+      features: ['Architektura custom', 'Bezpieczeństwo', 'Skalowanie', 'DevOps', 'Wsparcie po wdrożeniu']
     },
     {
       icon: Sparkles,
@@ -99,13 +99,13 @@ export default function TworzenieStronInternetowych() {
   const whyChooseUs = [
     {
       icon: Zap,
-      title: 'Szybkość < 2 sekundy',
-      desc: 'Strony ładujące się błyskawicznie. Core Web Vitals na zielono. Ranking + konwersja do góry.'
+      title: 'Dbamy o szybkość',
+      desc: 'Optymalizujemy grafiki, kod i Core Web Vitals już na etapie budowy, bo wolna strona zniechęca odwiedzających.'
     },
     {
       icon: Smartphone,
       title: 'Mobile-first design',
-      desc: '70% ruchu to mobile. Każda strona jest responsywna od podstaw. Zero problemów na telefonach.'
+      desc: 'Duża część odwiedzających wchodzi z telefonu. Każdą stronę projektujemy responsywnie od podstaw i testujemy na urządzeniach mobilnych.'
     },
     {
       icon: Search,
@@ -199,7 +199,7 @@ export default function TworzenieStronInternetowych() {
     },
     {
       question: 'Jak długo trwa stworzenie strony internetowej?',
-      answer: 'Strona wizytówkowa: 7-14 dni. Strona firmowa: 14-21 dni. Sklep e-commerce: 21-45 dni. Czas zależy od złożoności, liczby podstron i szybkości dostarczania materiałów. Czasami robimy szybciej - wszystko zależy od Ciebie.'
+      answer: 'Termin podajemy w ofercie po ustaleniu zakresu. Zależy od rodzaju strony (wizytówka, strona firmowa, sklep), liczby podstron, integracji i tego, jak szybko dostarczysz treści i materiały.'
     },
     {
       question: 'Jaką technologię używacie do tworzenia stron?',
@@ -207,11 +207,11 @@ export default function TworzenieStronInternetowych() {
     },
     {
       question: 'Czy strona będzie responsywna na urządzenia mobilne?',
-      answer: 'Tak, zawsze! Mobile-first to standard w każdym projekcie. 70% ruchu to mobile - wiemy to dobrze. Każda strona jest testowana na iPhone\'ach, Androidach, tabletach. Zero kompromisów.'
+      answer: 'Tak, zawsze! Mobile-first to standard w każdym projekcie. Każda strona jest testowana na iPhone\'ach, Androidach, tabletach. Zero kompromisów.'
     },
     {
       question: 'Czy zapewniacie hosting i domenę?',
-      answer: 'Koszt ustalamy po poznaniu zakresu: liczby podstron, treści, integracji i sposobu zarządzania. W ofercie określamy cenę, etapy, poprawki i termin; utrzymanie oraz działania marketingowe omawiamy osobno.'
+      answer: 'Możemy pomóc dobrać i skonfigurować hosting oraz domenę. Zalecamy, żeby domena i konto hostingowe były zarejestrowane na Twoją firmę — wtedy masz do nich pełny dostęp. Koszt utrzymania opisujemy w ofercie osobno.'
     },
     {
       question: 'Czy mogę samodzielnie zarządzać treścią strony?',
@@ -227,7 +227,7 @@ export default function TworzenieStronInternetowych() {
     },
     {
       question: 'Co zawiera wsparcie po wdrożeniu?',
-      answer: 'Standardowo 30 dni gwarancji i wsparcia w cenie. Oferujemy pakiety rozszerzone: podstawowe (pomoc techniczna), standardowe (aktualizacje, backupy), premium (pełna opieka + rozwój). Jesteśmy dostępni nawet po latach - nie porzucamy klientów.'
+      answer: 'Zakres wsparcia po wdrożeniu (poprawki, aktualizacje, backupy, rozwój strony) ustalamy w ofercie. Opiekę techniczną możemy prowadzić dalej jako osobną usługę.'
     },
     {
       question: 'Czy mogę zobaczyć projekt przed wdrożeniem?',
@@ -238,28 +238,28 @@ export default function TworzenieStronInternetowych() {
   const contentSections = [
     {
       title: 'Dlaczego profesjonalna strona to inwestycja?',
-      content: `Polska jest krajem przedsiębiorców. 90% firm online to małe i średnie przedsiębiorstwa. Problem: wiele z nich ma strony z 2010 roku. Wolne, brzydkie, bez SEO.
+      content: `Polska jest krajem przedsiębiorców. Problem: wiele małych firm ma strony sprzed lat. Wolne, nieczytelne, bez SEO.
 
 Twoja strona to Twoja witryna 24/7. Pracuje nawet gdy Ty śpisz. Generuje leadów, buduje wizerunek, uczy klientów o Tobie.
 
-Zła strona to strata potencjalnych klientów. Szacunek: co czwarta osoba, która by Cię znalazła w Google, odchodzi bo strona się nie ładuje. To konkretne pieniądze - czasami tysiące złotych rocznie.
+Zła strona to strata potencjalnych klientów. Ktoś, kto znajdzie Cię w Google, a trafi na wolną lub nieczytelną stronę, często po prostu wraca do wyników wyszukiwania.
 
-Dobra strona? To inwestycja, która się zwraca. Nawet proste strony generują 2-3 zapytania tygodniowo. Czasami więcej. Koszt strony to 1-2 tygodnie pracy jednego klienta.`
+Dobra strona to inwestycja. Ile zapytań przyniesie, zależy od branży, ruchu i działań marketingowych, dlatego nie obiecujemy konkretnych liczb, ale projektujemy ją tak, żeby kontakt był jak najprostszy.`
     },
     {
       title: 'Błędy, które robią konkurenci',
       content: `Wiemy co piszą Ci wszyscy. "Najszybsze strony", "SEO na 1", "Niesamowita cena". A potem klient jest rozczarowany.
 
 Najczęstsze błędy:
-- Strony które ładują się 5+ sekund (to 50% mniej konwersji)
-- Brak mobilności (70% ruchu do kosza)
+- Strony, które ładują się kilka sekund i zniechęcają odwiedzających
+- Brak wersji mobilnej, choć wielu użytkowników wchodzi z telefonu
 - Nieczytelny tekst, zbyt wiele kolorów, bałagan
 - Formy kontaktowe z 20 polami (nikto nie wypełnia)
 - SEO teoretyczne, bez praktycznych wyników
 - Brak danych dostępowych - klient nie ma dostępu do własnej strony
 - Wsparcie typu "mamy chat" a odpowiadają za tydzień
 
-My robimy inaczej. Strony które działają, zespół który odpowiada w 24h, transparentne ceny, pełne dane dostępowe od startu.`
+My robimy inaczej. Strony, które działają, kontakt bez zbędnej zwłoki, jasna oferta i pełne dane dostępowe od startu.`
     },
     {
       title: 'Jak dobra strona generuje przychód?',
@@ -272,11 +272,11 @@ Jak to działa:
 4. Klikają "Umów wizytę" lub "Zadzwoń"
 5. Ty masz nowego klienta
 
-To się powtarza. Codziennie. Bez reklamy PPC. Bez wydawania 500 zł tygodniowo na Google Ads.
+To może się powtarzać także bez płatnej reklamy, choć reklama często przyspiesza efekty.
 
-Statystyka: dobra strona generuje 30-50% nowych klientów (reszta to rekomendacje, media społeczne, słowo w słowo).
+Strona to jedno ze źródeł klientów, obok rekomendacji i mediów społecznościowych. Jaki ma udział, zależy od branży i działań marketingowych.
 
-Dla e-commerce to jeszcze prostsze: strona robi za Ciebie 24h sprzedaż. Jedna dobrze zrobiona strona sklepowa robi średnio 5-20k rocznie przychodu (zależy od branży).`
+W e-commerce strona sprzedaje przez całą dobę. Wyniki sklepu zależą od asortymentu, ruchu i marketingu, dlatego nie podajemy obiecanych kwot przychodu.`
     }
   ];
 
@@ -445,7 +445,7 @@ Dla e-commerce to jeszcze prostsze: strona robi za Ciebie 24h sprzedaż. Jedna d
                   Dlaczego wybrać <span className="text-gradient">fotz.pl?</span>
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                  Wszystko, co robią inni — my robimy lepiej i taniej.
+                  Co dostajesz w każdym projekcie strony.
                 </p>
               </div>
             </FadeInView>

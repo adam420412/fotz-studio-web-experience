@@ -4,7 +4,7 @@ import { SEOHead } from "@/components/seo/SEOHead";
 import { BreadcrumbSchema, FAQSchema, ServiceSchema } from "@/components/seo/StructuredData";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { Target, Search, Facebook, Instagram, Linkedin, Video, BarChart3, ArrowRight, CheckCircle, TrendingUp, DollarSign, Zap, RotateCcw } from "lucide-react";
+import { Target, Search, Facebook, Instagram, Linkedin, Video, BarChart3, ArrowRight, CheckCircle, Zap, RotateCcw } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const services = [
@@ -80,17 +80,10 @@ const services = [
   },
 ];
 
-const stats = [
-  { value: "8.5x", label: "Średni ROAS klientów", icon: DollarSign },
-  { value: "200+", label: "Zarządzanych kampanii", icon: Target },
-  { value: "-42%", label: "Redukcja kosztu leada", icon: TrendingUp },
-  { value: "3M+", label: "Budżetu reklamowego/rok", icon: Zap },
-];
-
 const faqs = [
   {
     question: "Jaki budżet reklamowy potrzebuję na start?",
-    answer: "Rekomendujemy minimum 3 000-5 000 PLN/mies. na jedną platformę. Mniejsze budżety nie dają wystarczających danych do optymalizacji. Dla kampanii wieloplatformowych zalecamy 8 000+ PLN/mies."
+    answer: "To zależy od branży, konkurencji w aukcji, celu kampanii i liczby platform. Budżet reklamowy płacisz bezpośrednio platformie (Google, Meta, LinkedIn, TikTok) – osobno od naszego wynagrodzenia. Wysokość budżetu i wycenę obsługi ustalamy po rozmowie o zakresie i celach."
   },
   {
     question: "Która platforma reklamowa będzie najlepsza dla mojego biznesu?",
@@ -98,15 +91,15 @@ const faqs = [
   },
   {
     question: "Jak szybko zobaczę wyniki z kampanii?",
-    answer: "Pierwsze wyniki pojawiają się w ciągu 1-2 tygodni. Pełna optymalizacja kampanii wymaga 4-8 tygodni na zebranie danych i dopracowanie targetowania. Google Ads zwykle daje szybsze efekty niż kampanie awareness."
+    answer: "Pierwsze dane z kampanii widać zwykle krótko po starcie, ale tempo efektów zależy od budżetu, branży i platformy. Optymalizacja wymaga zebrania danych i dopracowania targetowania. Google Ads zwykle daje szybsze efekty niż kampanie awareness."
   },
   {
     question: "Czy zarządzacie budżetem reklamowym?",
-    answer: "Tak. Zarządzamy pełnym budżetem reklamowym na wszystkich platformach. Optymalizujemy stawki, alokację budżetu między kampaniami i testujemy różne strategie licytowania dla najlepszego ROI."
+    answer: "Tak. Prowadzimy kampanie i rozdysponowujemy budżet na wybranych platformach – sam budżet reklamowy jest opłacany bezpośrednio platformie, osobno od naszego wynagrodzenia. Optymalizujemy stawki, alokację budżetu między kampaniami i testujemy różne strategie licytowania."
   },
   {
     question: "Czym różnicie się od freelancera lub samodzielnego zarządzania?",
-    answer: "Mamy doświadczenie z 200+ kampaniami i budżetami 3M+ PLN/rok. Znamy pułapki, które kosztują. Używamy zaawansowanych narzędzi analitycznych i strategii, które wymagają ekspertyzy – np. remarketing sekwencyjny czy Attribution Modeling."
+    answer: "Łączymy prowadzenie kampanii z produkcją kreacji – video, foto i grafiki robimy u siebie, więc testy A/B nie czekają na zewnętrznego wykonawcę. Pracujemy na danych z trackingu i stosujemy m.in. remarketing sekwencyjny oraz analizę atrybucji."
   },
 ];
 
@@ -169,28 +162,6 @@ export default function PerformanceMarketingCluster() {
               </Button>
             </div>
           </motion.div>
-        </div>
-      </section>
-
-      {/* Stats */}
-      <section className="py-16 border-y border-border/50">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, i) => (
-              <motion.div
-                key={stat.label}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className="text-center"
-              >
-                <stat.icon className="w-6 h-6 text-primary mx-auto mb-3" />
-                <div className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-1">{stat.value}</div>
-                <div className="text-sm text-muted-foreground">{stat.label}</div>
-              </motion.div>
-            ))}
-          </div>
         </div>
       </section>
 

@@ -89,12 +89,12 @@ const integrations = [
 ];
 
 const benefits = [
-  { icon: TrendingUp, title: "Twój sklep zarabia 24/7", desc: "Profesjonalny sklep internetowy sprzedaje wtedy, gdy Ty śpisz. Automatyzacja zamówień, płatności i wysyłki pozwala skalować sprzedaż bez proporcjonalnego wzrostu kosztów obsługi." },
+  { icon: TrendingUp, title: "Sprzedaż także po godzinach", desc: "Sklep internetowy przyjmuje zamówienia także wtedy, gdy Ty śpisz. Automatyzacja zamówień, płatności i wysyłki pozwala skalować sprzedaż bez proporcjonalnego wzrostu kosztów obsługi." },
   { icon: Users, title: "Klienci z całej Polski i Europy", desc: "Własny sklep internetowy to brak geograficznych ograniczeń. Docierasz do klientów z każdego regionu Polski i — gdy jesteś gotowy — za granicę." },
   { icon: Globe, title: "Niezależność od marketplace'ów", desc: "Allegro bierze prowizję i decyduje o zasadach gry. Własny sklep online to Twoje dane, Twoi klienci i Twoje marże — bez pośredników." },
-  { icon: Zap, title: "Szybkość i Core Web Vitals", desc: "Twój sklep ładuje się w mniej niż 2 sekundy. Szybkość to zarówno konwersja (każda sekunda opóźnienia to -7% sprzedaży), jak i czynnik rankingowy Google." },
-  { icon: Store, title: "Sklep zintegrowany z SEO", desc: "Od architektury kategorii, przez opisy produktów po linkowanie wewnętrzne — budujemy sklepy internetowe, które organicznie rosną w wynikach wyszukiwania." },
-  { icon: ShoppingCart, title: "Konwersja i UX zakupowy", desc: "Koszyk, checkout, karty produktów i cross-selling zaprojektowane pod maksymalną konwersję. Twój sklep nie tylko przyciąga ruch — zamienia go w sprzedaż." }
+  { icon: Zap, title: "Szybkość i Core Web Vitals", desc: "Optymalizujemy sklep pod szybkość ładowania i Core Web Vitals. Szybkość wpływa zarówno na wygodę zakupów, jak i na ocenę strony przez Google." },
+  { icon: Store, title: "Sklep zintegrowany z SEO", desc: "Od architektury kategorii, przez opisy produktów po linkowanie wewnętrzne — budujemy sklepy internetowe przygotowane do pozycjonowania w Google." },
+  { icon: ShoppingCart, title: "Konwersja i UX zakupowy", desc: "Koszyk, checkout, karty produktów i cross-selling zaprojektowane z myślą o konwersji — tak, żeby ruch w sklepie łatwiej zamieniał się w sprzedaż." }
 ];
 
 const cityLinks = [
@@ -106,7 +106,7 @@ const cityLinks = [
 const faqItems = [
   {
     question: "Ile kosztuje tworzenie sklepów internetowych?",
-    answer: "Koszt tworzenia sklepu internetowego zależy od platformy i zakresu funkcjonalności. Sklep na Shopify lub WooCommerce to od 8 000–15 000 zł. PrestaShop i rozbudowane sklepy dla hurtowni — od 20 000 zł. Dedykowane rozwiązanie custom (React/Next.js) to 30 000–100 000+ zł. Każdą wycenę poprzedzamy bezpłatną rozmową."
+    answer: "Koszt tworzenia sklepu internetowego zależy od platformy i zakresu funkcjonalności. Na cenę wpływa liczba produktów i kategorii, projekt graficzny, integracje (płatności, kurierzy, ERP, marketplace) oraz migracja danych. Sklep na gotowej platformie (Shopify, WooCommerce) jest zwykle tańszy niż rozbudowany PrestaShop czy rozwiązanie custom. Wycenę przygotowujemy po bezpłatnej rozmowie o zakresie."
   },
   {
     question: "Jak długo trwa założyć sklep internetowy od podstaw?",
@@ -130,7 +130,7 @@ const faqItems = [
   },
   {
     question: "Czy pomożecie z migracją istniejącego sklepu na inną platformę?",
-    answer: "Tak — migrujemy sklepy między platformami (np. PrestaShop → Shopify, Magento → WooCommerce) z zachowaniem struktury URL i przekierowań 301, historii zamówień, bazy klientów i danych produktów. Migracja jest przeprowadzana tak, żeby nie stracić pozycji w Google."
+    answer: "Tak — migrujemy sklepy między platformami (np. PrestaShop → Shopify, Magento → WooCommerce) z zachowaniem struktury URL i przekierowań 301, historii zamówień, bazy klientów i danych produktów. Migrację planujemy tak, żeby ograniczyć ryzyko spadków w Google — nie gwarantujemy jednak utrzymania konkretnych pozycji."
   },
   {
     question: "Czy mogę sprzedawać przez własny sklep i Allegro jednocześnie?",
@@ -146,7 +146,7 @@ const faqItems = [
   },
   {
     question: "Jaką agencję wybrać do tworzenia sklepu internetowego?",
-    answer: "Wybierając agencję e-commerce, zwróć uwagę na: portfolio zrealizowanych sklepów, doświadczenie z konkretną platformą (Shopify, WooCommerce, PrestaShop), podejście do SEO i konwersji, transparentność w wycenie i możliwość dalszej współpracy. Fotz Studio tworzy sklepy internetowe od 8 lat — możesz zobaczyć nasze realizacje i porozmawiać z naszymi klientami."
+    answer: "Wybierając agencję e-commerce, zwróć uwagę na: portfolio zrealizowanych sklepów, doświadczenie z konkretną platformą (Shopify, WooCommerce, PrestaShop), podejście do SEO i konwersji, transparentność w wycenie i możliwość dalszej współpracy. Zanim zaczniemy, pokażemy Ci nasze realizacje i opowiemy, jak pracujemy."
   },
   {
     question: "Czy możecie zaprojektować sklep dla branży B2B?",
@@ -192,7 +192,7 @@ export default function SklepyInternetowe() {
           >
             <motion.div variants={fadeIn} className="mb-4">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#75143F]/20 border border-[#75143F]/30 text-sm text-foreground/80">
-                <ShoppingCart className="w-4 h-4" /> Agencja e-commerce — ponad 50 wdrożonych sklepów
+                <ShoppingCart className="w-4 h-4" /> Agencja e-commerce z Poznania
               </span>
             </motion.div>
 
@@ -226,33 +226,6 @@ export default function SklepyInternetowe() {
                 <Link to="/realizacje">Zobacz realizacje e-commerce</Link>
               </Button>
             </motion.div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Stats */}
-      <section className="py-12 bg-gradient-to-r from-[#75143F]/10 via-background to-[#0F3053]/10 border-y border-foreground/10">
-        <div className="container px-4">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={staggerContainer}
-            className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto text-center"
-          >
-            {[
-              { value: "50+", label: "sklepów internetowych wdrożonych" },
-              { value: "4 platformy", label: "Shopify, WooCommerce, PrestaShop, Custom" },
-              { value: "8+ lat", label: "doświadczenia w e-commerce" },
-              { value: "160+", label: "opinii 5★ w Google" }
-            ].map((s, i) => (
-              <motion.div key={i} variants={fadeIn}>
-                <div className="text-3xl md:text-4xl font-heading font-bold bg-gradient-to-r from-[#75143F] to-[#0F3053] bg-clip-text text-transparent mb-1">
-                  {s.value}
-                </div>
-                <div className="text-sm text-foreground/60">{s.label}</div>
-              </motion.div>
-            ))}
           </motion.div>
         </div>
       </section>
@@ -412,7 +385,7 @@ export default function SklepyInternetowe() {
                 </span>
               </h2>
               <p className="text-foreground/70 max-w-2xl mx-auto">
-                Własny sklep online to inwestycja, która zwraca się wielokrotnie — przez większe marże, własną bazę klientów i niezależność od platform marketplace.
+                Własny sklep online to inwestycja w większą kontrolę nad marżami, własną bazę klientów i niezależność od platform marketplace.
               </p>
             </motion.div>
 
@@ -462,19 +435,19 @@ export default function SklepyInternetowe() {
                 },
                 {
                   title: "Sklep zoptymalizowany pod konwersję od pierwszego dnia",
-                  desc: "Projektujemy na podstawie danych, a nie intuicji. Każdy element Twojego sklepu online — od koszyka po checkout — jest testowany pod kątem maksymalnej konwersji zakupowej."
+                  desc: "Ścieżkę zakupową — od karty produktu, przez koszyk, po checkout — projektujemy z myślą o konwersji, a po starcie analizujemy dane i poprawiamy to, co blokuje zakupy."
                 },
                 {
                   title: "SEO jako fundament, nie dodatek",
-                  desc: "Budowa sklepu internetowego u nas zaczyna się od architektury informacji i struktury SEO. Twój sklep rośnie organicznie w Google już od uruchomienia — bez dodatkowych nakładów."
+                  desc: "Budowa sklepu internetowego u nas zaczyna się od architektury informacji i struktury SEO. Sklep od uruchomienia jest technicznie gotowy do pozycjonowania — nie obiecujemy jednak konkretnych pozycji ani terminów."
                 },
                 {
                   title: "Przejrzysta wycena i transparentny projekt",
                   desc: "Znasz budżet i harmonogram zanim zaczniemy. Żadnych ukrytych kosztów, żadnych niespodzianek. Tworzenie sklepu internetowego u nas to partnerska relacja, nie transakcja."
                 },
                 {
-                  title: "8 lat doświadczenia — ponad 50 wdrożonych sklepów",
-                  desc: "Budowaliśmy sklepy dla startupów, MŚP i firm z obrotem 10+ mln zł. Znamy typowe pułapki e-commerce i wiemy, jak ich unikać. Twój biznes jest w dobrych rękach."
+                  title: "Doradztwo w wyborze platformy",
+                  desc: "Nie sprzedajemy jednej technologii. Dobieramy platformę do Twojego asortymentu, budżetu i planów rozwoju — i mówimy wprost, kiedy prostsze rozwiązanie wystarczy."
                 },
                 {
                   title: "Wsparcie i rozwój po wdrożeniu sklepu",
@@ -524,7 +497,7 @@ export default function SklepyInternetowe() {
               {[
                 {
                   title: "Optymalizacja sklepu — Core Web Vitals i szybkość",
-                  desc: "Optymalizacja sklepu internetowego pod Core Web Vitals i szybkość ładowania to kluczowy czynnik rankingowy. Responsywny sklep internetowy ładujący się poniżej 2 sekund konwertuje nawet 2× lepiej niż wolna konkurencja. Wdrożenia sklepu zawsze obejmują pełne testowanie responsywności na wszystkich urządzeniach."
+                  desc: "Optymalizacja sklepu internetowego pod Core Web Vitals i szybkość ładowania to kluczowy czynnik rankingowy. Szybszy sklep to wygodniejsze zakupy, zwłaszcza na telefonie. Wdrożenia sklepu zawsze obejmują pełne testowanie responsywności na wszystkich urządzeniach."
                 },
                 {
                   title: "Prowadzenie sklepu internetowego — funkcjonalności dla klienta",
@@ -574,7 +547,7 @@ export default function SklepyInternetowe() {
                 </span>
               </h2>
               <p className="text-foreground/70 max-w-2xl mx-auto">
-                Pracujemy zdalnie z firmami z całej Polski — i stacjonarnie w miastach, gdzie mamy biura lub regularnie bywamy.
+                Pracujemy z Poznania, a firmy z innych miast obsługujemy zdalnie.
                 Wybierz swoje miasto, aby dowiedzieć się więcej o naszej ofercie e-commerce.
               </p>
             </motion.div>
@@ -696,16 +669,16 @@ export default function SklepyInternetowe() {
         <div className="container mx-auto px-4">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
             <h2 className="text-3xl font-heading font-bold mb-6">Tworzenie sklepów internetowych — budowa sklepów i projektowanie sklepów internetowych</h2>
-            <p className="text-muted-foreground mb-4">Tworzenie sklepów internetowych to nasz obszar specjalizacji. Budowa sklepów online dla firm każdej branży — od lokalnych e-commerceów po duże platformy sprzedażowe z tysiącami produktów. Projektowanie sklepów internetowych obejmuje UX, layout produktowy, koszyk zakupowy i cały lejek konwersji, by sklep realnie sprzedawał od pierwszego dnia.</p>
+            <p className="text-muted-foreground mb-4">Tworzenie sklepów internetowych to nasz obszar specjalizacji. Budujemy sklepy online dla firm z różnych branż — od małych sklepów po rozbudowane katalogi produktów. Projektowanie sklepów internetowych obejmuje UX, layout produktowy, koszyk zakupowy i cały lejek konwersji, by sklep był gotowy do sprzedaży od pierwszego dnia.</p>
             <p className="text-muted-foreground mb-6">Sklep internetowy powinien być szybki, responsywny i zintegrowany z systemami płatności (PayU, Przelewy24, Stripe), kurierami i systemami magazynowymi. Proces budowy sklepu internetowego obejmuje: analizę wymagań, projekt graficzny, wdrożenie platformy, import produktów, konfigurację płatności i szkolenie z obsługi.</p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">Sklep internetowy na WooCommerce, Shopify, PrestaShop i Magento</h2>
             <p className="text-muted-foreground mb-4">Dobór platformy zależy od skali sprzedaży i budżetu. WooCommerce (na WordPressie) to świetne rozwiązanie dla małych i średnich sklepów — elastyczne, z ogromną bazą wtyczek. Shopify sprawdza się, gdy priorytetem jest prostota obsługi i szybki start. PrestaShop i Magento to platformy dla bardziej rozbudowanych serwisów internetowych z zaawansowaną logiką cenową i katalogiem.</p>
-            <p className="text-muted-foreground mb-6">Tworzenie sklepów internetowych Warszawa, Kraków, Wrocław i inne duże miasta — działamy zdalnie dla całej Polski. Projektowanie sklepów internetowych warszawa to jeden z naszych głównych rynków, ale obsługujemy klientów z całego kraju. Każdy projekt graficzny sklepu jest dopasowany do branży i grupy docelowej.</p>
+            <p className="text-muted-foreground mb-6">Tworzenie sklepów internetowych dla firm z Warszawy, Krakowa, Wrocławia i innych miast — pracujemy z Poznania, a klientów spoza Poznania obsługujemy zdalnie. Każdy projekt graficzny sklepu jest dopasowany do branży i grupy docelowej.</p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">Sklep internetowy a SEO — pozycjonowanie sklepów i optymalizacja e-commerce</h2>
             <p className="text-muted-foreground mb-4">Budowa sklepu internetowego bez myślenia o SEO to przepalony budżet. Każdy sklep internetowy, który budujemy, jest od podstaw zoptymalizowany pod wyszukiwarki — poprawna struktura URL, schema markup produktów, szybkość ładowania strony, zoptymalizowane meta tagi i opisy produktów bogate w słowa kluczowe.</p>
-            <p className="text-muted-foreground">Stronie sklepu internetowego z dobrym SEO nie są potrzebne kolosalne budżety reklamowe — ruch organiczny pracuje 24/7. Połączenie profesjonalnej budowy sklepów z SEO i kampaniami Google Shopping to strategia, która przynosi wymierne wyniki sprzedażowe. Skontaktuj się z nami i stwórz sklep internetowy, który sprzedaje.</p>
+            <p className="text-muted-foreground">Dobre SEO może zmniejszyć zależność sklepu od płatnych reklam, bo ruch organiczny nie kosztuje za każde kliknięcie. Połączenie budowy sklepu z SEO i kampaniami Google Shopping pozwala mierzyć, które kanały faktycznie sprzedają. Skontaktuj się z nami i stwórz sklep internetowy, który sprzedaje.</p>
           
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
               <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>

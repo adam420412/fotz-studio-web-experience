@@ -35,7 +35,7 @@ export default function StronaInternetowaDlaFotografa() {
     {
       question: "Ile kosztuje strona internetowa dla fotografa?",
       answer:
-        "Strona internetowa dla fotografa kosztuje od 1500 do 5000 zł w zależności od zakresu. Prosta strona portfolio z galerią i formularzem: 1500-3000 zł. Strona z blogiem, rezerwacją online i wieloma galeriami: 3000-5000 zł. Do tego hosting (50-100 zł/mies.) i domena (ok. 80 zł/rok). Czas realizacji: 1-3 tygodnie.",
+        "Nie mamy stałego cennika — wycenę przygotowujemy po rozmowie o zakresie. Na cenę wpływają: liczba galerii i podstron, to, czy potrzebny jest blog, rezerwacja online lub płatności, kto przygotowuje teksty, oraz zakres SEO lokalnego. Hosting i domena to osobne, niewielkie koszty roczne, które omawiamy przy wycenie. Czas realizacji ustalamy po zebraniu materiałów (zdjęć i tekstów).",
     },
     {
       question: "Co powinna zawierać strona fotografa?",
@@ -55,7 +55,7 @@ export default function StronaInternetowaDlaFotografa() {
     {
       question: "Jak szybko powinna ładować się galeria fotografa?",
       answer:
-        "Galeria powinna ładować się poniżej 3 sekund. Techniki optymalizacji: lazy loading (zdjęcia ładują się gdy scrollujesz), format WebP (30-50% mniejszy niż JPEG przy tej samej jakości), miniatury w galerii + pełne zdjęcia w lightbox, CDN (Content Delivery Network) do serwowania zdjęć. Wolna galeria to najczęstsza przyczyna porzucenia strony fotografa. Każda sekunda ładowania kosztuje ~7% konwersji.",
+        "Galeria powinna ładować się poniżej 3 sekund. Techniki optymalizacji: lazy loading (zdjęcia ładują się gdy scrollujesz), format WebP (zwykle wyraźnie lżejszy niż JPEG przy podobnej jakości), miniatury w galerii + pełne zdjęcia w lightbox, CDN (Content Delivery Network) do serwowania zdjęć. Wolna galeria to częsty powód, dla którego odwiedzający opuszczają stronę fotografa, zanim zobaczą portfolio.",
     },
   ];
 
@@ -63,7 +63,7 @@ export default function StronaInternetowaDlaFotografa() {
     <>
       <SEOHead
         title="Strona internetowa dla fotografa — portfolio, SEO, galerie"
-        description="Strona internetowa dla fotografa — profesjonalne portfolio z galerią, SEO lokalne, blog fotograficzny i formularz zapytań. Strony dla fotografów od 1500 zł, dzięki którym klienci znajdą Cię w Google."
+        description="Strona internetowa dla fotografa — profesjonalne portfolio z galerią, SEO lokalne, blog fotograficzny i formularz zapytań. Wycena po rozmowie o zakresie — strona, która pomaga klientom znaleźć Cię w Google."
         canonical="https://www.fotz-studio.pl/uslugi/strona-internetowa-dla-fotografa"
         keywords="strona internetowa dla fotografa, portfolio fotografa, strona www fotograf, strona fotografa cennik, strona fotografa online"
       />
@@ -95,7 +95,7 @@ export default function StronaInternetowaDlaFotografa() {
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
                 {[
-                  { value: "od 1500 zł", label: "Cena strony" },
+                  { value: "Wycena", label: "Po rozmowie o zakresie" },
                   { value: "1-3 tyg.", label: "Realizacja" },
                   { value: "Galeria", label: "Portfolio foto" },
                   { value: "SEO", label: "Widoczność w Google" },
@@ -149,11 +149,11 @@ export default function StronaInternetowaDlaFotografa() {
               <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Dlaczego fotograf potrzebuje strony?</h2>
               <div className="grid md:grid-cols-2 gap-4">
                 {[
-                  "80% klientów szuka fotografa przez Google zanim zapyta znajomych",
+                  "Wielu klientów szuka fotografa w Google, zanim zapyta znajomych",
                   "Portfolio na stronie www ładuje się szybciej i wygląda lepiej niż Instagram",
                   "Formularz zapytań kwalifikuje klientów — oszczędzasz czas na telefony",
-                  "Blog z realizacjami ('sesja ślubna Kraków') przyciąga klientów latami",
-                  "Google Business Profile + strona = dominacja w lokalnym SEO",
+                  "Blog z realizacjami ('sesja ślubna Kraków') może przyciągać ruch z Google przez długi czas",
+                  "Google Business Profile + strona wzmacniają widoczność w lokalnych wynikach wyszukiwania",
                   "Strona z cennikiem redukuje pytania o ceny i przyciąga klientów zdecydowanych",
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-start gap-3 bg-white p-4 rounded-lg border border-slate-200">

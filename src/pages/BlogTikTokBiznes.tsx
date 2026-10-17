@@ -91,7 +91,7 @@ const BlogTikTokBiznes = () => {
               </h1>
               
               <p className="text-lg md:text-xl text-muted-foreground max-w-3xl">
-                TikTok to nie tylko taneczne wyzwania dla nastolatków. To potężna platforma marketingowa z miliardami wyświetleń dziennie. Poznaj strategie, które działają.
+                TikTok to nie tylko taneczne wyzwania dla nastolatków. To potężna platforma marketingowa z ogromnym zasięgiem. Poznaj strategie, które działają.
               </p>
             </motion.div>
           </div>
@@ -102,25 +102,8 @@ const BlogTikTokBiznes = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto prose">
               <p>
-                Z ponad 1,5 miliarda aktywnych użytkowników miesięcznie, TikTok stał się jedną z najważniejszych platform marketingowych na świecie. <strong>Co ciekawe, to już nie tylko młodzież</strong> – użytkownicy w wieku 25-44 lat stanowią obecnie ponad 40% bazy użytkowników. To ogromna szansa dla firm, które chcą dotrzeć do nowych odbiorców poprzez <Link to="/performance-marketing/tiktok-ads" className="text-primary hover:underline">reklamy TikTok Ads</Link> oraz organiczny <Link to="/social-media/obsluga" className="text-primary hover:underline">marketing w social media</Link>.
+                TikTok stał się jedną z najważniejszych platform marketingowych na świecie. <strong>Co ciekawe, to już nie tylko młodzież</strong> – coraz więcej użytkowników to dorośli w wieku zawodowym. To ogromna szansa dla firm, które chcą dotrzeć do nowych odbiorców poprzez <Link to="/performance-marketing/tiktok-ads" className="text-primary hover:underline">reklamy TikTok Ads</Link> oraz organiczny <Link to="/social-media/obsluga" className="text-primary hover:underline">marketing w social media</Link>.
               </p>
-
-              {/* Key stats */}
-              <div className="not-prose my-12">
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                  {[
-                    { value: "1.5 mld", label: "aktywnych użytkowników" },
-                    { value: "95 min", label: "średni czas dziennie" },
-                    { value: "40%", label: "użytkowników 25-44 lata" },
-                    { value: "83%", label: "odkrywa nowe produkty" },
-                  ].map((stat, index) => (
-                    <div key={index} className="text-center p-4 bg-card rounded-xl border border-border">
-                      <div className="text-2xl md:text-3xl font-bold text-primary mb-1">{stat.value}</div>
-                      <p className="text-xs text-muted-foreground">{stat.label}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
 
               <h2>Dlaczego TikTok jest ważny dla biznesu?</h2>
 
@@ -131,7 +114,7 @@ const BlogTikTokBiznes = () => {
               <div className="not-prose my-8">
                 <div className="grid md:grid-cols-2 gap-6">
                   {[
-                    { icon: TrendingUp, title: "Organiczny zasięg", desc: "Algorytm TikToka pozwala nawet małym kontom zdobyć miliony wyświetleń bez płatnej promocji" },
+                    { icon: TrendingUp, title: "Organiczny zasięg", desc: "Algorytm TikToka daje szansę na zasięg nawet małym kontom, bez płatnej promocji" },
                     { icon: Users, title: "Autentyczność", desc: "Użytkownicy cenią prawdziwe, nieofiltrowane treści bardziej niż wypolerowane reklamy" },
                     { icon: Sparkles, title: "Trendy i virale", desc: "Jeden filmik może zmienić losy marki – viralowe treści powstają codziennie" },
                     { icon: Music, title: "Kreatywność", desc: "Platforma nagradza kreatywność i oryginalność, nie budżet reklamowy" },
@@ -244,29 +227,22 @@ const BlogTikTokBiznes = () => {
 
               <h3>Koszty reklam na TikToku</h3>
               <p>
-                TikTok Ads są generalnie tańsze niż Facebook czy Instagram:
+                Nie podajemy stałych stawek, bo koszty reklam na TikToku ustala aukcja i zmieniają się w czasie:
               </p>
 
               <div className="not-prose my-8">
                 <div className="p-6 bg-card rounded-xl border border-border">
                   <h4 className="font-semibold mb-4 flex items-center gap-2">
                     <BarChart3 className="w-5 h-5 text-primary" />
-                    Orientacyjne koszty (Polska, 2025)
+                    Od czego zależą koszty
                   </h4>
-                  <div className="space-y-3">
-                    <div className="flex justify-between items-center">
-                      <span className="text-muted-foreground">CPM (koszt za 1000 wyświetleń)</span>
-                      <span className="font-semibold">15-40 PLN</span>
-                    </div>
-                    <div className="flex justify-between items-center">
-                      <span className="text-muted-foreground">CPC (koszt za kliknięcie)</span>
-                      <span className="font-semibold">0.50-2.00 PLN</span>
-                    </div>
-                    <div className="flex justify-between items-center">
-                      <span className="text-muted-foreground">Minimalny budżet dzienny</span>
-                      <span className="font-semibold">50 PLN</span>
-                    </div>
-                  </div>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li>Grupa docelowa i jej wielkość – im węższa i bardziej pożądana, tym drożej</li>
+                    <li>Cel kampanii – zasięg, ruch, konwersje mają różne koszty</li>
+                    <li>Jakość i dopasowanie kreacji – lepiej oglądane reklamy zwykle kosztują mniej</li>
+                    <li>Sezon i konkurencja w aukcji (np. okres przedświąteczny)</li>
+                    <li>Minimalne budżety określa sama platforma – sprawdź aktualne wymagania w TikTok Ads Manager</li>
+                  </ul>
                 </div>
               </div>
 
@@ -372,7 +348,7 @@ const BlogTikTokBiznes = () => {
             {/* SEO Article Section */}
             <div className="mt-12 pt-12 border-t border-border">
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">TikTok dla biznesu — dlaczego firmy nie mogą ignorować TikToka w 2025?</h2>
-              <p className="text-muted-foreground mb-6">TikTok to platforma z ponad 1 miliardem aktywnych użytkowników miesięcznie i najwyższym organicznym zasięgiem spośród wszystkich social media. Nawet nowe konta bez followersów mogą zdobyć miliony wyświetleń, jeśli treść jest angażująca. Dla firm celujących w grupę 18-35 lat TikTok to kanał obowiązkowy, ale coraz częściej wkraczają też starsze demografie.</p>
+              <p className="text-muted-foreground mb-6">TikTok to jedna z największych platform społecznościowych, znana z dużego organicznego zasięgu. Nawet nowe konta bez followersów mogą dotrzeć do szerokiej publiczności, jeśli treść jest angażująca. Dla firm celujących w grupę 18-35 lat TikTok to kanał obowiązkowy, ale coraz częściej wkraczają też starsze demografie.</p>
 
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">TikTok content i TikTok Ads dla firm — tworzenie treści i kampanie reklamowe</h2>
               <p className="text-muted-foreground mb-6">Fotz Studio tworzy content na TikTok dla firm: krótkie wideo edukacyjne, behind-the-scenes, product demos, trendy i challenge nawiązujące do marki. Prowadzimy też kampanie TikTok Ads — In-Feed Ads, TopView, Branded Hashtag Challenge — z targetowaniem na właściwą grupę docelową.</p>

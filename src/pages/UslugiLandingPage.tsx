@@ -19,20 +19,17 @@ import { ContactSection } from "@/components/sections/ContactSection";
 import {
   Target,
   Zap,
-  TrendingUp,
   ShoppingCart,
   BarChart,
   Search,
   Palette,
   Smartphone,
-  Shield,
   ArrowRight,
   Phone,
   CheckCircle2,
   Clock,
   Star,
   Users,
-  Layers,
   Code2,
   Rocket,
   MousePointerClick,
@@ -49,7 +46,7 @@ const faqItems = [
   {
     question: "Ile kosztuje landing page?",
     answer:
-      "Cena landing page w Fotz Studio zaczyna się od 2 000 zł za prostą stronę lądowania do kampanii reklamowej. Landing page z zaawansowanymi animacjami, integracją CRM i A/B testami kosztuje od 5 000 do 10 000 zł. Każdą wycenę przygotowujemy bezpłatnie i indywidualnie — skontaktuj się z nami, podaj cel kampanii i budżet, a otrzymasz ofertę w ciągu 24 godzin.",
+      "Nie mamy stałego cennika landing page. Wycenę przygotowujemy po rozmowie o zakresie: liczbie sekcji i wariantów, tym, czy przygotowujemy teksty i grafiki, potrzebnych integracjach (CRM, newsletter, płatności), konfiguracji śledzenia konwersji i ewentualnej dalszej optymalizacji. Wycena jest bezpłatna — skontaktuj się z nami, opisz cel kampanii, a przygotujemy ofertę. Budżet reklamowy płacony Google lub Meta jest zawsze osobnym kosztem.",
   },
   {
     question: "Jak długo trwa tworzenie landing page?",
@@ -79,7 +76,7 @@ const faqItems = [
   {
     question: "Czy tworzycie landing page do kampanii Google Ads?",
     answer:
-      "Tak — to jedna z naszych specjalności. Projektujemy landing page z uwzględnieniem Quality Score Google Ads: dopasowanie treści do słów kluczowych kampanii, szybkość ładowania (Core Web Vitals), jasne CTA i tracking konwersji przez Google Tag Manager. Wielu naszych klientów obniżyło CPC o 20–40% po przejściu z ogólnej strony firmowej na dedykowany landing page.",
+      "Tak — to jedna z naszych specjalności. Projektujemy landing page z uwzględnieniem Quality Score Google Ads: dopasowanie treści do słów kluczowych kampanii, szybkość ładowania (Core Web Vitals), jasne CTA i tracking konwersji przez Google Tag Manager. Dedykowana strona lądowania lepiej odpowiada na intencję z reklamy niż ogólna strona firmowa, co może pomóc w ocenie jakości reklamy i koszcie kliknięcia — konkretnego wyniku nie obiecujemy, bo zależy od branży, konkurencji i samej kampanii.",
   },
 ];
 
@@ -87,7 +84,7 @@ const packages = [
   {
     title: "Landing Page Basic",
     desc: "Szybki landing page do kampanii reklamowej",
-    price: "od 2 000 zł",
+    price: "Wycena po rozmowie o zakresie",
     features: [
       "1 strona + Thank You Page",
       "Projekt graficzny w Figma",
@@ -100,7 +97,7 @@ const packages = [
   {
     title: "Landing Page Pro",
     desc: "Rozbudowany landing z animacjami i integracjami",
-    price: "od 4 500 zł",
+    price: "Wycena po rozmowie o zakresie",
     popular: true,
     features: [
       "Landing + Thank You + Upsell Page",
@@ -115,7 +112,7 @@ const packages = [
   {
     title: "Landing Page Enterprise",
     desc: "Kampania z wieloma wariantami i optymalizacją CRO",
-    price: "od 9 000 zł",
+    price: "Wycena po rozmowie o zakresie",
     features: [
       "Wielowariantowy funnel sprzedażowy",
       "Personalizacja treści wg źródła ruchu",
@@ -184,15 +181,15 @@ const processSteps = [
     icon: Rocket,
     step: "04",
     title: "Testy i wdrożenie",
-    desc: "Testy na urządzeniach, speed test (PageSpeed Insights), testy formularzy i ścieżek konwersji. Wdrożenie w 24h.",
+    desc: "Testy na urządzeniach, speed test (PageSpeed Insights), testy formularzy i ścieżek konwersji. Wdrożenie po Twojej akceptacji.",
   },
 ];
 
 const stats = [
-  { value: "200+", label: "Landing page zrealizowanych", icon: Layers },
-  { value: "+35%", label: "Średni wzrost CR po rebrandingu", icon: TrendingUp },
+  { value: "1 cel", label: "Jedno wezwanie do działania", icon: Target },
+  { value: "GA4 + GTM", label: "Śledzenie konwersji w standardzie", icon: BarChart },
   { value: "3s", label: "Docelowy czas ładowania", icon: Zap },
-  { value: "24/7", label: "Monitoring i wsparcie", icon: Shield },
+  { value: "Mobile", label: "Projekt od smartfona", icon: Smartphone },
 ];
 
 const FadeInView = ({
@@ -373,10 +370,10 @@ export default function UslugiLandingPage() {
                   <strong className="text-foreground">jednym wezwaniu do działania (CTA)</strong>.
                 </p>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  Według badań HubSpot firmy z 10–15 landing page generują o 55% więcej
-                  leadów niż te, które mają mniej niż 10. Dobrze zaprojektowany landing
-                  page może osiągać współczynnik konwersji na poziomie 5–25%, podczas gdy
-                  standardowe strony www rzadko przekraczają 1–2%.
+                  Osobne strony lądowania dla różnych kampanii i grup odbiorców pozwalają
+                  dopasować komunikat do tego, co ktoś zobaczył w reklamie. Dzięki temu łatwiej
+                  sprawdzić, który przekaz działa, i poprawiać stronę na podstawie danych
+                  z analityki, a nie przeczucia.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
                   Landing page sprawdza się wszędzie tam, gdzie kierujesz ruch z kampanii
@@ -427,11 +424,12 @@ export default function UslugiLandingPage() {
             <FadeInView>
               <div className="text-center mb-14">
                 <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">
-                  Ile kosztuje landing page? Pakiety i cennik
+                  Ile kosztuje landing page? Od czego zależy wycena
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Każdy projekt wyceniamy indywidualnie, ale orientacyjne przedziały cenowe
-                  pomogą Ci zaplanować budżet.
+                  Nie mamy stałego cennika — każdy projekt wyceniamy po rozmowie o zakresie.
+                  Poniższe warianty pokazują, co wpływa na nakład pracy i cenę. Budżet
+                  reklamowy płacony platformom jest zawsze osobno.
                 </p>
               </div>
             </FadeInView>
@@ -449,7 +447,7 @@ export default function UslugiLandingPage() {
                     {pkg.popular && (
                       <div className="absolute -top-3 left-1/2 -translate-x-1/2">
                         <span className="bg-primary text-primary-foreground text-xs font-bold px-4 py-1 rounded-full">
-                          NAJPOPULARNIEJSZY
+                          ROZSZERZONY ZAKRES
                         </span>
                       </div>
                     )}
@@ -545,12 +543,12 @@ export default function UslugiLandingPage() {
                   {
                     icon: Zap,
                     title: "Szybkość poniżej 3 sekund",
-                    desc: "Każda sekunda opóźnienia ładowania zmniejsza konwersję o 7%. Nasze landing page osiągają wynik Core Web Vitals Passed w Google PageSpeed.",
+                    desc: "Wolno ładująca się strona traci odwiedzających, zanim zobaczą ofertę. Projektujemy i kodujemy z myślą o Core Web Vitals i sprawdzamy wynik w Google PageSpeed przed wdrożeniem.",
                   },
                   {
                     icon: Smartphone,
                     title: "Mobile-first design",
-                    desc: "Ponad 60% ruchu z kampanii Meta Ads trafia z urządzeń mobilnych. Projektujemy landing page od razu pod smartfona — nie jako afterthought.",
+                    desc: "Duża część ruchu z kampanii Meta Ads trafia z urządzeń mobilnych. Projektujemy landing page od razu pod smartfona — nie jako afterthought.",
                   },
                   {
                     icon: BarChart,
@@ -565,7 +563,7 @@ export default function UslugiLandingPage() {
                   {
                     icon: Search,
                     title: "Zoptymalizowany pod Quality Score",
-                    desc: "Dopasowanie treści landing page do słów kluczowych kampanii Google Ads obniża CPC nawet o 30–40% i poprawia pozycję reklam.",
+                    desc: "Dopasowujemy treść landing page do słów kluczowych kampanii Google Ads, bo trafność strony docelowej jest jednym z elementów oceny jakości reklamy.",
                   },
                 ].map((item, index) => (
                   <FadeInView key={index} delay={index * 0.08}>
@@ -648,8 +646,8 @@ export default function UslugiLandingPage() {
               </p>
               <p className="text-muted-foreground mb-6">
                 Dedykowany landing page dopasowany do treści reklamy (message match) i prowadzący
-                do jednego CTA może zwiększyć konwersję nawet 2–5 razy w porównaniu z kierowaniem
-                na stronę główną. Fotz Studio tworzy landing page jako integralną część strategii
+                do jednego CTA zwykle lepiej odpowiada na intencję odwiedzającego niż strona
+                główna — ile to da w Twojej kampanii, pokazują dopiero dane z testów. Fotz Studio tworzy landing page jako integralną część strategii
                 kampanijnej — nie jako odizolowany element.
               </p>
 
@@ -664,7 +662,7 @@ export default function UslugiLandingPage() {
                 i wypełnienie formularza.
               </p>
               <p className="text-muted-foreground mb-6">
-                Dla klientów z budżetem reklamowym powyżej 5 000 zł miesięcznie zalecamy
+                Przy większych, stale prowadzonych kampaniach zalecamy
                 wdrożenie Hotjar lub Microsoft Clarity — narzędzi do nagrywania sesji i map ciepła,
                 które pokazują, gdzie użytkownicy klikają, zatrzymują się i rezygnują. Te dane
                 pozwalają na ciągłą optymalizację (CRO — Conversion Rate Optimization).

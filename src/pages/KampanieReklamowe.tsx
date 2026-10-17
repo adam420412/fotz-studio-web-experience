@@ -89,7 +89,7 @@ const KampanieReklamowe = () => {
     { icon: Target, title: "Precyzyjne targetowanie", description: "Docieramy do osób najbardziej zainteresowanych Twoją ofertą" },
     { icon: BarChart3, title: "Mierzalne wyniki", description: "Śledzimy każdą konwersję i optymalizujemy pod ROI" },
     { icon: DollarSign, title: "Kontrola budżetu", description: "Płacisz tylko za wyniki - kliknięcia lub wyświetlenia" },
-    { icon: Zap, title: "Szybkie efekty", description: "Pierwsze wyniki widoczne już po kilku dniach" },
+    { icon: Zap, title: "Szybki start", description: "Pierwsze dane z kampanii zbierasz szybciej niż w działaniach organicznych" },
     { icon: RefreshCw, title: "Ciągła optymalizacja", description: "Testujemy i ulepszamy kampanie codziennie" },
     { icon: Eye, title: "Pełna transparentność", description: "Dostęp do statystyk i regularne raporty" },
   ];
@@ -101,62 +101,13 @@ const KampanieReklamowe = () => {
     { step: "04", title: "Optymalizacja i skalowanie", description: "Analizujemy wyniki i skalujemy najlepsze reklamy" },
   ];
 
-  const pricingPackages = [
-    {
-      name: "Start",
-      price: "1 500",
-      period: "/mies.",
-      description: "Jedna platforma reklamowa",
-      features: [
-        "Google Ads LUB Facebook Ads",
-        "Budżet reklamowy do 3 000 zł",
-        "Podstawowe targetowanie",
-        "Kreacje statyczne",
-        "Raport miesięczny",
-        "Śledzenie konwersji",
-      ],
-      popular: false,
-    },
-    {
-      name: "Business",
-      price: "3 500",
-      period: "/mies.",
-      description: "Multi-platformowe kampanie",
-      features: [
-        "Google Ads + Facebook/Instagram Ads",
-        "Budżet reklamowy do 15 000 zł",
-        "Zaawansowane targetowanie",
-        "Kreacje statyczne + wideo",
-        "Testy A/B reklam",
-        "Remarketing cross-platform",
-        "Raporty tygodniowe",
-      ],
-      popular: true,
-    },
-    {
-      name: "Premium",
-      price: "6 000",
-      period: "/mies.",
-      description: "Pełna obsługa performance",
-      features: [
-        "Wszystkie platformy reklamowe",
-        "Budżet reklamowy bez limitu",
-        "YouTube + TikTok + LinkedIn Ads",
-        "Produkcja materiałów wideo",
-        "Dedykowany opiekun kampanii",
-        "Automatyzacja i AI",
-        "Raporty na żądanie",
-        "Strategia wielokanałowa",
-      ],
-      popular: false,
-    },
-  ];
-
-  const stats = [
-    { value: "500+", label: "Przeprowadzonych kampanii" },
-    { value: "12M+", label: "Wydanego budżetu reklamowego" },
-    { value: "350%", label: "Średni ROAS klientów" },
-    { value: "45+", label: "Stałych klientów" },
+  const pricingFactors = [
+    "Liczba platform reklamowych (Google, Meta, TikTok, LinkedIn, YouTube)",
+    "Liczba i złożoność kampanii oraz grup odbiorców",
+    "Zakres kreacji: grafiki, teksty, materiały wideo",
+    "Konfiguracja śledzenia konwersji i analityki",
+    "Częstotliwość raportów i spotkań",
+    "Ewentualne landing page pod kampanie",
   ];
 
   const faqItems = [
@@ -166,11 +117,11 @@ const KampanieReklamowe = () => {
     },
     {
       question: "Jaki budżet reklamowy potrzebuję na start?",
-      answer: "Minimalny budżet to około 2000-3000 zł miesięcznie na jedną platformę. TikTok często ma niższy CPM niż Meta. LinkedIn jest najdroższy, ale generuje najbardziej wartościowe leady B2B. W konkurencyjnych branżach warto zacząć od 5000-10000 zł. Pomagamy dobrać optymalny budżet do Twoich celów."
+      answer: "Budżet reklamowy zależy od branży, konkurencji, platformy i celu kampanii, dlatego nie podajemy jednej kwoty. LinkedIn jest zwykle droższy w przeliczeniu na kliknięcie, a w konkurencyjnych branżach potrzeba większego budżetu, by zebrać dane. Budżet płacony platformom jest zawsze osobno od wynagrodzenia agencji. Pomagamy dobrać go do Twoich celów."
     },
     {
       question: "Po jakim czasie widać efekty kampanii reklamowych?",
-      answer: "Pierwsze wyniki (kliknięcia, ruch na stronie) widać już po 1-2 dniach. Stabilne konwersje i optymalizacja wymagają 2-4 tygodni zbierania danych. Pełna optymalizacja kampanii to proces ciągły - najlepsze wyniki osiągamy po 2-3 miesiącach systematycznej pracy."
+      answer: "Pierwsze dane (kliknięcia, ruch na stronie) pojawiają się krótko po starcie kampanii. Stabilne konwersje wymagają zebrania danych, a czas zależy od budżetu, branży i oferty. Optymalizacja kampanii to proces ciągły, dlatego nie obiecujemy sztywnych terminów efektów."
     },
     {
       question: "Czy mogę sam śledzić wyniki kampanii?",
@@ -182,11 +133,11 @@ const KampanieReklamowe = () => {
     },
     {
       question: "Kiedy warto wybrać LinkedIn Ads?",
-      answer: "LinkedIn Ads to idealne rozwiązanie dla firm B2B, usług profesjonalnych, rekrutacji i branży technologicznej. Możesz targetować po stanowisku, branży, wielkości firmy czy umiejętnościach. Choć koszt za kliknięcie jest wyższy, leady są znacznie bardziej wartościowe niż na innych platformach."
+      answer: "LinkedIn Ads to idealne rozwiązanie dla firm B2B, usług profesjonalnych, rekrutacji i branży technologicznej. Możesz targetować po stanowisku, branży, wielkości firmy czy umiejętnościach. Choć koszt za kliknięcie jest zwykle wyższy, precyzyjne targetowanie B2B często to rekompensuje."
     },
     {
       question: "Jakie są zalety łączenia Facebook i Instagram Ads w jednej kampanii?",
-      answer: "Łączenie Facebook i Instagram Ads (Meta Ads) daje dostęp do wspólnej puli odbiorców i optymalizacji cross-platform. Reklamy automatycznie wyświetlają się tam, gdzie osiągają lepsze wyniki. Jeden Pixel śledzi konwersje z obu platform, a remarketing działa między nimi płynnie. To oszczędność czasu i wyższy ROAS dzięki szerszemu zasięgowi i lepszej optymalizacji.",
+      answer: "Łączenie Facebook i Instagram Ads (Meta Ads) daje dostęp do wspólnej puli odbiorców i optymalizacji cross-platform. Reklamy automatycznie wyświetlają się tam, gdzie osiągają lepsze wyniki. Jeden Pixel śledzi konwersje z obu platform, a remarketing działa między nimi płynnie. To oszczędność czasu i więcej danych do optymalizacji.",
       hasLink: true
     },
     {
@@ -195,11 +146,11 @@ const KampanieReklamowe = () => {
     },
     {
       question: "Czy potrzebuję landing page do kampanii reklamowych?",
-      answer: "Landing page znacząco zwiększa konwersję reklam (nawet 3-5x). Strona zoptymalizowana pod konkretną kampanię konwertuje lepiej niż zwykła strona firmowa. W pakietach Business i Premium możemy przygotować dedykowane strony docelowe."
+      answer: "Nie zawsze, ale często pomaga. Strona zoptymalizowana pod konkretną kampanię zwykle konwertuje lepiej niż ogólna strona firmowa. W ramach współpracy możemy przygotować dedykowane strony docelowe."
     },
     {
       question: "Jak działa remarketing cross-platform?",
-      answer: "Remarketing to wyświetlanie reklam osobom, które już odwiedziły Twoją stronę. Działamy cross-platform - osoba, która była na stronie, zobaczy Twoje reklamy zarówno w Google, jak i na Facebooku, TikToku czy LinkedIn. To najskuteczniejsza forma reklamy z najwyższym ROI."
+      answer: "Remarketing to wyświetlanie reklam osobom, które już odwiedziły Twoją stronę. Działamy cross-platform - osoba, która była na stronie, zobaczy Twoje reklamy zarówno w Google, jak i na Facebooku, TikToku czy LinkedIn. To zwykle jedna z najbardziej opłacalnych form reklamy, bo trafia do osób, które już znają Twoją markę."
     },
     {
       question: "Czy tworzycie materiały reklamowe dla wszystkich platform?",
@@ -264,31 +215,10 @@ const KampanieReklamowe = () => {
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="text-lg px-8">
-                <Link to="/realizacje">Zobacz efekty</Link>
+                <Link to="/realizacje">Zobacz realizacje</Link>
               </Button>
             </div>
           </motion.div>
-        </div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="py-16 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="text-center"
-              >
-                <div className="text-3xl md:text-4xl font-bold text-primary mb-2">{stat.value}</div>
-                <div className="text-sm md:text-base text-muted-foreground">{stat.label}</div>
-              </motion.div>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -397,7 +327,7 @@ const KampanieReklamowe = () => {
               Jak pracujemy
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Sprawdzony proces, który gwarantuje wyniki
+              Proces, w którym decyzje opieramy na danych
             </p>
           </motion.div>
 
@@ -433,61 +363,37 @@ const KampanieReklamowe = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-              Cennik kampanii reklamowych
+              Od czego zależy wycena?
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Przejrzyste ceny bez ukrytych kosztów
+              Wycenę obsługi przygotowujemy po rozmowie o zakresie. Wpływają na nią przede wszystkim te elementy
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {pricingPackages.map((pkg, index) => (
+          <div className="grid sm:grid-cols-2 gap-4 max-w-4xl mx-auto">
+            {pricingFactors.map((factor, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.15 }}
-                className={`relative p-8 rounded-2xl border ${
-                  pkg.popular 
-                    ? 'bg-primary/5 border-primary' 
-                    : 'bg-card border-border/50'
-                }`}
+                transition={{ delay: index * 0.1 }}
+                className="flex items-start gap-3 p-5 rounded-xl bg-card border border-border/50"
               >
-                {pkg.popular && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-primary text-primary-foreground text-sm font-medium rounded-full">
-                    Najpopularniejszy
-                  </div>
-                )}
-                <div className="text-center mb-6">
-                  <h3 className="text-xl font-semibold text-foreground mb-2">{pkg.name}</h3>
-                  <p className="text-sm text-muted-foreground mb-4">{pkg.description}</p>
-                  <div className="flex items-baseline justify-center gap-1">
-                    <span className="text-4xl font-bold text-foreground">{pkg.price}</span>
-                    <span className="text-muted-foreground">zł{pkg.period}</span>
-                  </div>
-                </div>
-                <ul className="space-y-3 mb-8">
-                  {pkg.features.map((feature, i) => (
-                    <li key={i} className="flex items-start gap-3 text-sm">
-                      <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                      <span className="text-muted-foreground">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                <Button 
-                  asChild 
-                  className="w-full" 
-                  variant={pkg.popular ? "default" : "outline"}
-                >
-                  <Link to="/kontakt">Wybierz pakiet</Link>
-                </Button>
+                <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                <span className="text-muted-foreground text-sm">{factor}</span>
               </motion.div>
             ))}
           </div>
 
+          <div className="text-center mt-10">
+            <Button asChild size="lg">
+              <Link to="/kontakt">Poproś o wycenę</Link>
+            </Button>
+          </div>
+
           <p className="text-center text-sm text-muted-foreground mt-8">
-            * Ceny nie zawierają budżetu reklamowego, który trafia bezpośrednio do Google/Meta
+            * Wycena obsługi nie obejmuje budżetu reklamowego, który płacisz bezpośrednio platformom (Google, Meta, TikTok, LinkedIn)
           </p>
         </div>
       </section>

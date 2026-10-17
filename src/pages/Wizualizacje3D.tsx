@@ -4,7 +4,7 @@ import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Box, Building, Camera, Layers, Play, Sparkles, Eye, Palette, CheckCircle, ChevronLeft, ChevronRight, X, Check, Zap, Crown, Repeat, Home, ShoppingBag, Factory, Sofa, Bath, Utensils, Building2, Store, Warehouse, Car } from "lucide-react";
+import { ArrowRight, Box, Building, Camera, Layers, Play, Sparkles, Eye, Palette, CheckCircle, ChevronLeft, ChevronRight, X, Repeat, Home, ShoppingBag, Factory, Sofa, Bath, Utensils, Building2, Store, Warehouse, Car } from "lucide-react";
 import { FadeInView } from "@/components/FadeInView";
 import { TextReveal } from "@/components/TextReveal";
 import { useState, useCallback, useEffect, Suspense, lazy } from "react";
@@ -93,14 +93,14 @@ const serviceCategories = [
     title: "Wizualizacje wnętrz",
     description: "Fotorealistyczne wizualizacje pomieszczeń mieszkalnych i komercyjnych",
     variants: [
-      { name: "Salon / Pokój dzienny", price: "od 800 zł", time: "3-5 dni" },
-      { name: "Sypialnia", price: "od 700 zł", time: "3-5 dni" },
-      { name: "Kuchnia", price: "od 900 zł", time: "4-6 dni" },
-      { name: "Łazienka", price: "od 800 zł", time: "3-5 dni" },
-      { name: "Biuro / Open space", price: "od 1200 zł", time: "5-7 dni" },
-      { name: "Restauracja / Kawiarnia", price: "od 1500 zł", time: "5-8 dni" },
-      { name: "Hotel / Apartament", price: "od 1800 zł", time: "6-10 dni" },
-      { name: "Sklep / Showroom", price: "od 1400 zł", time: "5-8 dni" },
+      { name: "Salon / Pokój dzienny" },
+      { name: "Sypialnia" },
+      { name: "Kuchnia" },
+      { name: "Łazienka" },
+      { name: "Biuro / Open space" },
+      { name: "Restauracja / Kawiarnia" },
+      { name: "Hotel / Apartament" },
+      { name: "Sklep / Showroom" },
     ]
   },
   {
@@ -109,14 +109,14 @@ const serviceCategories = [
     title: "Wizualizacje architektoniczne",
     description: "Zewnętrzne wizualizacje budynków i osiedli",
     variants: [
-      { name: "Dom jednorodzinny", price: "od 1500 zł", time: "5-8 dni" },
-      { name: "Budynek wielorodzinny", price: "od 3000 zł", time: "8-14 dni" },
-      { name: "Osiedle mieszkaniowe", price: "od 5000 zł", time: "14-21 dni" },
-      { name: "Budynek biurowy", price: "od 3500 zł", time: "10-14 dni" },
-      { name: "Obiekt handlowy", price: "od 2500 zł", time: "7-12 dni" },
-      { name: "Obiekt przemysłowy", price: "od 3000 zł", time: "8-14 dni" },
-      { name: "Zagospodarowanie terenu", price: "od 2000 zł", time: "5-10 dni" },
-      { name: "Wizualizacja nocna", price: "+30%", time: "+1-2 dni" },
+      { name: "Dom jednorodzinny" },
+      { name: "Budynek wielorodzinny" },
+      { name: "Osiedle mieszkaniowe" },
+      { name: "Budynek biurowy" },
+      { name: "Obiekt handlowy" },
+      { name: "Obiekt przemysłowy" },
+      { name: "Zagospodarowanie terenu" },
+      { name: "Wizualizacja nocna" },
     ]
   },
   {
@@ -125,14 +125,14 @@ const serviceCategories = [
     title: "Wizualizacje produktowe",
     description: "Renderingi produktów dla e-commerce i reklamy",
     variants: [
-      { name: "Produkt prosty (1 ujęcie)", price: "od 300 zł", time: "1-2 dni" },
-      { name: "Produkt prosty (pakiet 5 ujęć)", price: "od 1200 zł", time: "3-5 dni" },
-      { name: "Produkt złożony (1 ujęcie)", price: "od 600 zł", time: "2-4 dni" },
-      { name: "Produkt złożony (pakiet 5 ujęć)", price: "od 2500 zł", time: "5-8 dni" },
-      { name: "Packshot na białym tle", price: "od 200 zł", time: "1 dzień" },
-      { name: "Lifestyle / Kontekst", price: "od 500 zł", time: "2-4 dni" },
-      { name: "Exploded view (rozłożony)", price: "od 800 zł", time: "3-5 dni" },
-      { name: "Animacja produktowa (10s)", price: "od 1500 zł", time: "5-10 dni" },
+      { name: "Produkt prosty (1 ujęcie)" },
+      { name: "Produkt prosty (pakiet 5 ujęć)" },
+      { name: "Produkt złożony (1 ujęcie)" },
+      { name: "Produkt złożony (pakiet 5 ujęć)" },
+      { name: "Packshot na białym tle" },
+      { name: "Lifestyle / Kontekst" },
+      { name: "Exploded view (rozłożony)" },
+      { name: "Animacja produktowa (10s)" },
     ]
   },
   {
@@ -141,12 +141,12 @@ const serviceCategories = [
     title: "Wizualizacje mebli",
     description: "Renderingi mebli dla producentów i deweloperów",
     variants: [
-      { name: "Pojedynczy mebel (1 ujęcie)", price: "od 400 zł", time: "2-3 dni" },
-      { name: "Pojedynczy mebel (pakiet 5 ujęć)", price: "od 1500 zł", time: "4-6 dni" },
-      { name: "Zestaw mebli", price: "od 800 zł", time: "3-5 dni" },
-      { name: "Mebel w kontekście wnętrza", price: "od 1000 zł", time: "4-6 dni" },
-      { name: "Konfiguracja wariantów kolorystycznych", price: "od 200 zł/wariant", time: "+1 dzień" },
-      { name: "Model 3D do konfiguratora", price: "od 600 zł", time: "3-5 dni" },
+      { name: "Pojedynczy mebel (1 ujęcie)" },
+      { name: "Pojedynczy mebel (pakiet 5 ujęć)" },
+      { name: "Zestaw mebli" },
+      { name: "Mebel w kontekście wnętrza" },
+      { name: "Konfiguracja wariantów kolorystycznych" },
+      { name: "Model 3D do konfiguratora" },
     ]
   },
   {
@@ -155,12 +155,12 @@ const serviceCategories = [
     title: "Wizualizacje łazienek",
     description: "Specjalistyczne wizualizacje armatury i ceramiki",
     variants: [
-      { name: "Łazienka kompletna", price: "od 1000 zł", time: "4-6 dni" },
-      { name: "Armatura sanitarna (1 produkt)", price: "od 350 zł", time: "2-3 dni" },
-      { name: "Ceramika łazienkowa", price: "od 400 zł", time: "2-4 dni" },
-      { name: "Kabina prysznicowa / Wanna", price: "od 500 zł", time: "2-4 dni" },
-      { name: "Meble łazienkowe", price: "od 450 zł", time: "2-4 dni" },
-      { name: "Pakiet produktowy (10 produktów)", price: "od 2500 zł", time: "7-10 dni" },
+      { name: "Łazienka kompletna" },
+      { name: "Armatura sanitarna (1 produkt)" },
+      { name: "Ceramika łazienkowa" },
+      { name: "Kabina prysznicowa / Wanna" },
+      { name: "Meble łazienkowe" },
+      { name: "Pakiet produktowy (10 produktów)" },
     ]
   },
   {
@@ -169,12 +169,12 @@ const serviceCategories = [
     title: "Wizualizacje kuchni",
     description: "Wizualizacje zabudów i sprzętów kuchennych",
     variants: [
-      { name: "Kuchnia kompletna", price: "od 1200 zł", time: "5-7 dni" },
-      { name: "Zabudowa kuchenna", price: "od 900 zł", time: "4-6 dni" },
-      { name: "AGD (1 produkt)", price: "od 400 zł", time: "2-3 dni" },
-      { name: "AGD pakiet (5 produktów)", price: "od 1600 zł", time: "5-7 dni" },
-      { name: "Blat / Zlewozmywak", price: "od 350 zł", time: "2-3 dni" },
-      { name: "Kuchnia w kontekście salonu", price: "od 1500 zł", time: "5-8 dni" },
+      { name: "Kuchnia kompletna" },
+      { name: "Zabudowa kuchenna" },
+      { name: "AGD (1 produkt)" },
+      { name: "AGD pakiet (5 produktów)" },
+      { name: "Blat / Zlewozmywak" },
+      { name: "Kuchnia w kontekście salonu" },
     ]
   },
   {
@@ -183,13 +183,13 @@ const serviceCategories = [
     title: "Wizualizacje komercyjne",
     description: "Wizualizacje dla retail, hoteli i gastronomii",
     variants: [
-      { name: "Sklep / Butik", price: "od 1800 zł", time: "6-10 dni" },
-      { name: "Restauracja", price: "od 2000 zł", time: "7-12 dni" },
-      { name: "Bar / Kawiarnia", price: "od 1500 zł", time: "5-8 dni" },
-      { name: "Recepcja hotelowa", price: "od 1600 zł", time: "5-8 dni" },
-      { name: "Pokój hotelowy", price: "od 1200 zł", time: "4-7 dni" },
-      { name: "Sala konferencyjna", price: "od 1400 zł", time: "5-8 dni" },
-      { name: "Fitness / SPA", price: "od 2000 zł", time: "7-12 dni" },
+      { name: "Sklep / Butik" },
+      { name: "Restauracja" },
+      { name: "Bar / Kawiarnia" },
+      { name: "Recepcja hotelowa" },
+      { name: "Pokój hotelowy" },
+      { name: "Sala konferencyjna" },
+      { name: "Fitness / SPA" },
     ]
   },
   {
@@ -198,12 +198,12 @@ const serviceCategories = [
     title: "Wizualizacje przemysłowe",
     description: "Wizualizacje maszyn, hal i procesów produkcyjnych",
     variants: [
-      { name: "Maszyna / Urządzenie", price: "od 1500 zł", time: "5-10 dni" },
-      { name: "Linia produkcyjna", price: "od 3000 zł", time: "10-18 dni" },
-      { name: "Hala produkcyjna", price: "od 2500 zł", time: "8-14 dni" },
-      { name: "Magazyn / Logistyka", price: "od 2000 zł", time: "6-10 dni" },
-      { name: "Schemat technologiczny", price: "od 1200 zł", time: "4-7 dni" },
-      { name: "Animacja procesu (30s)", price: "od 4000 zł", time: "14-21 dni" },
+      { name: "Maszyna / Urządzenie" },
+      { name: "Linia produkcyjna" },
+      { name: "Hala produkcyjna" },
+      { name: "Magazyn / Logistyka" },
+      { name: "Schemat technologiczny" },
+      { name: "Animacja procesu (30s)" },
     ]
   },
   {
@@ -212,12 +212,12 @@ const serviceCategories = [
     title: "Wizualizacje automotive",
     description: "Wizualizacje pojazdów i części samochodowych",
     variants: [
-      { name: "Samochód - ujęcie zewnętrzne", price: "od 2000 zł", time: "7-12 dni" },
-      { name: "Samochód - wnętrze", price: "od 1800 zł", time: "6-10 dni" },
-      { name: "Część samochodowa", price: "od 600 zł", time: "3-5 dni" },
-      { name: "Opona / Felga", price: "od 400 zł", time: "2-4 dni" },
-      { name: "Konfiguracja kolorystyczna", price: "od 300 zł/wariant", time: "+1 dzień" },
-      { name: "Animacja 360° pojazdu", price: "od 3500 zł", time: "10-18 dni" },
+      { name: "Samochód - ujęcie zewnętrzne" },
+      { name: "Samochód - wnętrze" },
+      { name: "Część samochodowa" },
+      { name: "Opona / Felga" },
+      { name: "Konfiguracja kolorystyczna" },
+      { name: "Animacja 360° pojazdu" },
     ]
   },
 ];
@@ -226,7 +226,7 @@ const benefits = [
   {
     icon: Eye,
     title: "Fotorealistyczny realizm",
-    description: "Nasze wizualizacje są nie do odróżnienia od rzeczywistych zdjęć"
+    description: "Dbamy o światło, materiały i detale, aby wizualizacje wyglądały jak fotografia"
   },
   {
     icon: Sparkles,
@@ -271,7 +271,7 @@ const processSteps = [
 const faqItems = [
   {
     question: "Jak długo trwa realizacja wizualizacji 3D?",
-    answer: "Czas realizacji zależy od złożoności projektu. Prosta wizualizacja produktowa może być gotowa w 3-5 dni roboczych, natomiast kompleksowe projekty architektoniczne mogą wymagać 2-4 tygodni."
+    answer: "Czas realizacji zależy od złożoności projektu, liczby ujęć i kompletności materiałów. Prosta wizualizacja produktowa zajmuje zwykle mniej czasu niż kompleksowy projekt architektoniczny, a dokładny harmonogram ustalamy w ofercie."
   },
   {
     question: "Jakie materiały są potrzebne do rozpoczęcia pracy?",
@@ -279,7 +279,7 @@ const faqItems = [
   },
   {
     question: "Czy mogę wprowadzać poprawki w trakcie realizacji?",
-    answer: "Tak, oferujemy możliwość wprowadzania poprawek na każdym etapie projektu. Standardowo w cenie zawarte są 2-3 rundy poprawek."
+    answer: "Tak, oferujemy możliwość wprowadzania poprawek na każdym etapie projektu. Liczbę rund poprawek ustalamy w ofercie."
   },
   {
     question: "W jakich formatach dostarczacie gotowe wizualizacje?",
@@ -291,81 +291,40 @@ const faqItems = [
   },
   {
     question: "Jaki jest koszt wizualizacji 3D?",
-    answer: "Koszt zależy od złożoności projektu. Proste wizualizacje produktowe zaczynają się od 300 zł, natomiast kompleksowe projekty architektoniczne wyceniamy indywidualnie. Sprawdź nasze kategorie cenowe poniżej."
+    answer: "Koszt zależy od rodzaju i złożoności obiektu, liczby ujęć i wariantów, dostępnych materiałów (modele 3D, rzuty, zdjęcia), poziomu detalu, ewentualnych animacji oraz terminu. Wycenę przygotowujemy po rozmowie o zakresie."
   }
 ];
 
-const pricingPackages = [
+const pricingFactors = [
   {
-    name: "Jednorazowo",
-    icon: Zap,
-    description: "Pojedyncze wizualizacje na zamówienie",
-    prices: [
-      { type: "Wizualizacja produktowa", price: "od 300 zł" },
-      { type: "Wizualizacja wnętrza", price: "od 700 zł" },
-      { type: "Wizualizacja architektoniczna", price: "od 1500 zł" },
-      { type: "Animacja 3D (do 30s)", price: "od 3000 zł" },
-    ],
-    features: [
-      "2 rundy poprawek w cenie",
-      "Wysokiej rozdzielczości pliki",
-      "Realizacja 5-14 dni roboczych",
-      "Wsparcie konsultacyjne",
-    ],
-    popular: false,
-  },
-  {
-    name: "Start",
     icon: Box,
-    price: "1 499",
-    period: "/mies.",
-    description: "Idealne dla małych firm i startupów",
-    features: [
-      "2 wizualizacje produktowe miesięcznie",
-      "1 wizualizacja wnętrza miesięcznie",
-      "3 rundy poprawek na projekt",
-      "Priorytetowa realizacja (3-7 dni)",
-      "Dedykowany opiekun projektu",
-      "Rabat 10% na dodatkowe projekty",
-    ],
-    popular: false,
+    title: "Rodzaj i złożoność obiektu",
+    description: "Inaczej wyceniamy prosty produkt, a inaczej rozbudowane wnętrze, budynek czy całe osiedle."
   },
   {
-    name: "Business",
-    icon: Crown,
-    price: "2 999",
-    period: "/mies.",
-    description: "Dla firm z regularnymi potrzebami",
-    features: [
-      "5 wizualizacji produktowych miesięcznie",
-      "3 wizualizacje wnętrz miesięcznie",
-      "1 wizualizacja architektoniczna miesięcznie",
-      "Nieograniczone poprawki",
-      "Ekspresowa realizacja (2-5 dni)",
-      "Dedykowany opiekun projektu",
-      "Rabat 20% na animacje 3D",
-      "Dostęp do panoram 360°",
-    ],
-    popular: true,
+    icon: Layers,
+    title: "Liczba ujęć i wariantów",
+    description: "Liczba kamer, wersji kolorystycznych i materiałowych oraz ujęć dziennych lub nocnych."
   },
   {
-    name: "Premium",
+    icon: Camera,
+    title: "Materiały wejściowe",
+    description: "Czy dostarczasz modele 3D lub CAD, rzuty i zdjęcia referencyjne, czy model budujemy od zera."
+  },
+  {
+    icon: Eye,
+    title: "Poziom detalu i przeznaczenie",
+    description: "Packshot na białym tle, scena lifestyle czy plik do druku wielkoformatowego."
+  },
+  {
+    icon: Play,
+    title: "Animacje i formaty interaktywne",
+    description: "Długość animacji, panoramy 360°, spacery wirtualne i modele do konfiguratora."
+  },
+  {
     icon: Repeat,
-    price: "5 999",
-    period: "/mies.",
-    description: "Kompleksowa obsługa dla dużych projektów",
-    features: [
-      "Nieograniczone wizualizacje produktowe",
-      "8 wizualizacji wnętrz miesięcznie",
-      "3 wizualizacje architektoniczne miesięcznie",
-      "2 animacje 3D (do 30s) miesięcznie",
-      "Nieograniczone poprawki",
-      "Realizacja priorytetowa (1-3 dni)",
-      "Dedykowany zespół projektowy",
-      "Panoramy 360° w cenie",
-      "Spacery wirtualne w cenie",
-    ],
-    popular: false,
+    title: "Termin i zakres poprawek",
+    description: "Harmonogram, tryb pilny i liczbę rund poprawek ustalamy w ofercie."
   },
 ];
 
@@ -468,7 +427,7 @@ const Wizualizacje3D = () => {
                 className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8"
               >
                 Poszukujesz profesjonalnych wizualizacji architektonicznych, które pomogą Ci w realizacji projektu wnętrza? 
-                Jesteśmy biurem projektowym z Poznania, które oferuje fotorealistyczne wizualizacje 3D, które spełnią Twoje oczekiwania.
+                Jesteśmy studiem kreatywnym z Poznania, które tworzy fotorealistyczne wizualizacje 3D dopasowane do Twojego projektu.
               </motion.p>
               
               <motion.div
@@ -505,7 +464,7 @@ const Wizualizacje3D = () => {
                   Wybierz <span className="bg-gradient-brand bg-clip-text text-transparent">rodzaj wizualizacji</span>
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Kliknij w kategorię, aby zobaczyć szczegółowe warianty i ceny
+                  Kliknij w kategorię, aby zobaczyć przykładowe warianty. Każdy projekt wyceniamy po rozmowie o zakresie.
                 </p>
               </div>
             </FadeInView>
@@ -553,10 +512,6 @@ const Wizualizacje3D = () => {
                               className="flex items-center justify-between text-sm p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors"
                             >
                               <span className="font-medium">{variant.name}</span>
-                              <div className="flex items-center gap-4">
-                                <span className="text-muted-foreground text-xs">{variant.time}</span>
-                                <span className="text-primary font-semibold">{variant.price}</span>
-                              </div>
                             </div>
                           ))}
                         </div>
@@ -759,87 +714,46 @@ const Wizualizacje3D = () => {
           </div>
         </section>
 
-        {/* Pricing Section */}
+        {/* Pricing Factors Section */}
         <section className="py-20 md:py-32">
           <div className="container-wide px-6 md:px-12">
             <FadeInView>
               <div className="text-center mb-16">
                 <span className="inline-block text-sm font-medium text-primary uppercase tracking-wider mb-4">
-                  Pakiety abonamentowe
+                  Wycena
                 </span>
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                  Stała współpraca ={" "}
-                  <span className="bg-gradient-brand bg-clip-text text-transparent">niższe ceny</span>
+                  Od czego zależy{" "}
+                  <span className="bg-gradient-brand bg-clip-text text-transparent">wycena?</span>
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Wybierz pakiet dopasowany do Twoich potrzeb
+                  Wycenę przygotowujemy po rozmowie o zakresie i przejrzeniu materiałów. Przy regularnych
+                  zleceniach możemy ustalić stały miesięczny zakres współpracy.
                 </p>
               </div>
             </FadeInView>
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {pricingPackages.map((pkg, index) => (
-                <FadeInView key={pkg.name} delay={index * 0.1}>
-                  <motion.div
-                    whileHover={{ y: -8 }}
-                    className={cn(
-                      "relative bg-card border rounded-2xl p-6 h-full flex flex-col",
-                      pkg.popular 
-                        ? "border-primary ring-2 ring-primary/20" 
-                        : "border-border"
-                    )}
-                  >
-                    {pkg.popular && (
-                      <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                        <span className="px-3 py-1 rounded-full bg-gradient-brand text-white text-xs font-medium">
-                          Najpopularniejszy
-                        </span>
-                      </div>
-                    )}
-                    
-                    <div className="mb-6">
-                      <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center mb-4">
-                        <pkg.icon className="w-6 h-6 text-primary" />
-                      </div>
-                      <h3 className="text-xl font-bold mb-1">{pkg.name}</h3>
-                      <p className="text-sm text-muted-foreground">{pkg.description}</p>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {pricingFactors.map((factor, index) => (
+                <FadeInView key={factor.title} delay={index * 0.1}>
+                  <div className="bg-card border border-border rounded-2xl p-6 h-full">
+                    <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center mb-4">
+                      <factor.icon className="w-6 h-6 text-primary" />
                     </div>
-                    
-                    {pkg.price ? (
-                      <div className="mb-6">
-                        <span className="text-3xl font-bold">{pkg.price}</span>
-                        <span className="text-muted-foreground"> zł{pkg.period}</span>
-                      </div>
-                    ) : (
-                      <div className="mb-6 space-y-2">
-                        {pkg.prices?.map((p, i) => (
-                          <div key={i} className="flex justify-between text-sm">
-                            <span className="text-muted-foreground">{p.type}</span>
-                            <span className="font-medium">{p.price}</span>
-                          </div>
-                        ))}
-                      </div>
-                    )}
-                    
-                    <ul className="space-y-3 mb-6 flex-1">
-                      {pkg.features.map((feature, i) => (
-                        <li key={i} className="flex items-start gap-2 text-sm">
-                          <Check className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                          <span>{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                    
-                    <Button 
-                      variant={pkg.popular ? "hero" : "outline"} 
-                      className="w-full"
-                      asChild
-                    >
-                      <Link to="/kontakt">Wybierz pakiet</Link>
-                    </Button>
-                  </motion.div>
+                    <h3 className="text-lg font-semibold mb-2">{factor.title}</h3>
+                    <p className="text-sm text-muted-foreground">{factor.description}</p>
+                  </div>
                 </FadeInView>
               ))}
+            </div>
+
+            <div className="text-center mt-12">
+              <Button variant="hero" asChild>
+                <Link to="/kontakt" className="group">
+                  Poproś o wycenę
+                  <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+                </Link>
+              </Button>
             </div>
           </div>
         </section>
@@ -935,8 +849,8 @@ const Wizualizacje3D = () => {
               jeszcze przed ich realizacją.
             </p>
             <p className="text-muted-foreground mb-6">
-              Jakość naszych wizualizacji 3D jest na poziomie fotorealizmu — renderingi
-              są nie do odróżnienia od prawdziwych zdjęć. Używamy najnowszych technologii:
+              Dążymy do fotorealizmu — dbamy o światło, materiały i detale,
+              aby renderingi wyglądały jak fotografia. Używamy najnowszych technologii:
               3ds Max, Corona Renderer, V-Ray, Blender — dopasowujemy workflow do specyfiki
               projektu.
             </p>
@@ -953,9 +867,8 @@ const Wizualizacje3D = () => {
             </p>
             <p className="text-muted-foreground mb-6">
               Architekci i biura projektowe korzystają z naszych usług wizualizacji 3D
-              do prezentacji projektów inwestorom i klientom. Renderingi 3D eliminują
-              niezrozumienie rysunków technicznych — każdy klient zobaczy dokładnie
-              jak będzie wyglądać realizacja.
+              do prezentacji projektów inwestorom i klientom. Renderingi 3D ułatwiają
+              zrozumienie rysunków technicznych — klient widzi, jak może wyglądać realizacja.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
@@ -963,13 +876,13 @@ const Wizualizacje3D = () => {
             </h2>
             <p className="text-muted-foreground mb-4">
               Wizualizacje produktów 3D to alternatywa dla sesji fotograficznych —
-              szybsza, tańsza i dająca pełną kontrolę nad światłem, tłem i wariantami
-              kolorystycznymi. Sklepy e-commerce, katalogi i materiały reklamowe zyskują
-              na jakości przy niższych kosztach produkcji.
+              często prostsza w organizacji i dająca pełną kontrolę nad światłem, tłem i wariantami
+              kolorystycznymi. Sklepy e-commerce, katalogi i materiały reklamowe mogą korzystać
+              z jednego modelu w wielu ujęciach i wariantach.
             </p>
             <p className="text-muted-foreground">
               Animacje 3D i virtual tour to nowoczesne formaty prezentacji, które
-              zachwycają klientów i zwiększają konwersję. Skontaktuj się z Fotz Studio,
+              pomagają klientom lepiej zrozumieć produkt lub inwestycję. Skontaktuj się z Fotz Studio,
               by wycenić wizualizacje 3D dla Twojego projektu — renderingi architektoniczne,
               wnętrz lub produktów.
             </p>

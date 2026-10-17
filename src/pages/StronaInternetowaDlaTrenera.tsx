@@ -35,7 +35,7 @@ export default function StronaInternetowaDlaTrenera() {
     {
       question: "Ile kosztuje strona internetowa dla trenera personalnego?",
       answer:
-        "Strona dla trenera personalnego kosztuje od 1500 do 4000 zł w zależności od zakresu. Prosta strona prezentacyjna z formularzem: 1500-2500 zł. Strona z blogiem, galeriami transformacji i systemem rezerwacji: 2500-4000 zł. Hosting 40-80 zł/mies., domena ok. 80 zł/rok. Czas realizacji: 1-2 tygodnie.",
+        "Wycenę przygotowujemy po rozmowie o zakresie. Koszt zależy od liczby podstron, tego, czy potrzebujesz bloga, galerii transformacji i systemu rezerwacji, integracji płatności oraz od tego, kto przygotowuje teksty i zdjęcia. Hosting i domena to osobne, roczne lub miesięczne koszty. Termin realizacji ustalamy w ofercie.",
     },
     {
       question: "Co powinna zawierać strona trenera personalnego?",
@@ -63,7 +63,7 @@ export default function StronaInternetowaDlaTrenera() {
     <>
       <SEOHead
         title="Strona internetowa dla trenera personalnego — SEO, rezerwacje"
-        description="Strona internetowa dla trenera personalnego — oferta treningowa, SEO lokalne, system rezerwacji i prezentacja transformacji klientów. Profesjonalne strony od 1500 zł."
+        description="Strona internetowa dla trenera personalnego — oferta treningowa, SEO lokalne, system rezerwacji i prezentacja transformacji klientów. Wycena po rozmowie o zakresie."
         canonical="https://www.fotz-studio.pl/uslugi/strona-internetowa-dla-trenera-personalnego"
         keywords="strona internetowa dla trenera, strona www trenera personalnego, strona trenera fitness, portfolio trenera online"
       />
@@ -95,8 +95,8 @@ export default function StronaInternetowaDlaTrenera() {
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
                 {[
-                  { value: "od 1500 zł", label: "Cena strony" },
-                  { value: "1-2 tyg.", label: "Realizacja" },
+                  { value: "Wycena", label: "Po rozmowie o zakresie" },
+                  { value: "Termin", label: "Ustalany w ofercie" },
                   { value: "Rezerwacje", label: "System online" },
                   { value: "SEO", label: "Widoczność lokalna" },
                 ].map((stat, idx) => (
@@ -149,8 +149,8 @@ export default function StronaInternetowaDlaTrenera() {
               <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Dlaczego trener potrzebuje strony?</h2>
               <div className="grid md:grid-cols-2 gap-4">
                 {[
-                  "70% klientów szuka trenera przez Google — bez strony jesteś niewidoczny",
-                  "Strona z transformacjami konwertuje lepiej niż rozmowy telefoniczne",
+                  "Wiele osób szuka trenera w Google — bez strony trudniej Cię znaleźć",
+                  "Galeria transformacji pokazuje efekty pracy, zanim klient zadzwoni",
                   "System rezerwacji online eliminuje chaotyczną wymianę wiadomości",
                   "Blog treningowy buduje autorytet i przyciąga klientów przez lata",
                   "Strona działa 24/7 — klient zapisuje się o 23:00 gdy ma motywację",

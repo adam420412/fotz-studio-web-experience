@@ -11,7 +11,7 @@ import { ContactSection } from "@/components/sections/ContactSection";
 
 const useCases = [
   { icon: Target, title: "Freelancerzy i korepetytorzy", desc: "Portfolio + kontakt. Prosta prezentacja usług. Idealne do zdobywania klientów." },
-  { icon: Zap, title: "Startupy i MVP", desc: "Szybko na rynek. Strona one page to MVP dla wielu startupów. Testowanie pomysłu bez 50k nakładów." },
+  { icon: Zap, title: "Startupy i MVP", desc: "Szybko na rynek. Strona one page to MVP dla wielu startupów. Testowanie pomysłu bez dużych nakładów." },
   { icon: Globe, title: "Gabinety i kliniki", desc: "Lekarz, dentysta, psycholog. Wizytówka online + rezerwacja. Pacjenci szukają podstawowych info." },
   { icon: Clock, title: "Restauracje", desc: "Menu, zdjęcia, adres, godziny. One page działa świetnie dla lokali. Użytkownicy z mobilnych otwierają Google Maps." },
   { icon: Zap, title: "Fotografowie i artyści", desc: "Portfolio w pięknym formacie. Galeria, kilka słów o sobie, kontakt. To wystarczy do zdobywania zleceń." },
@@ -31,13 +31,13 @@ const features = [
 const comparison = [
   {
     feature: "Czas implementacji",
-    onePage: "2-4 tygodnie",
-    multiPage: "4-12 tygodni"
+    onePage: "Zwykle 2-4 tygodnie",
+    multiPage: "Zwykle 4-12 tygodni"
   },
   {
     feature: "Koszt",
-    onePage: "499-999 zł",
-    multiPage: "1500-5000+ zł"
+    onePage: "Niższy — mniej sekcji i treści",
+    multiPage: "Wyższy — zależy od liczby podstron"
   },
   {
     feature: "Szybkość ładowania",
@@ -70,7 +70,7 @@ const examples = [
 const faqItems = [
   {
     question: "Czy strona one page jest dobra dla SEO?",
-    answer: "Tak, ale z limitacją: jedna strona = głównie jedno hasło główne. Jeśli chcesz pozycjonować się na 50 haseł, wielostronicowa będzie lepsza. Ale dla lokalnych firm (fryzjer w mieście) one page działa świetnie — Google lubi strony szybkie i mobilne, a strony one page to mają. Jeśli będziesz pisać dobre treści, jeden keyword, to sięgniesz top 10."
+    answer: "Tak, ale z limitacją: jedna strona = głównie jedno hasło główne. Jeśli chcesz pozycjonować się na 50 haseł, wielostronicowa będzie lepsza. Ale dla lokalnych firm (fryzjer w mieście) one page działa świetnie — Google lubi strony szybkie i mobilne, a strony one page to mają. Dobre treści pod jedno hasło dają realną szansę na widoczność, ale nie gwarantujemy konkretnej pozycji w Google."
   },
   {
     question: "Ile czasu trwa realizacja strony one page?",
@@ -78,15 +78,15 @@ const faqItems = [
   },
   {
     question: "Czy mogę edytować stronę samodzielnie?",
-    answer: "Owszem! Dostarczamy Ci stronę w CMS (Webflow, WP albo nawet GitHub) — możesz edytować tekst, zdjęcia, cennik bez kodu. Jeśli wolisz niezależność, uczymy Cię obsługi. Jeśli preferujesz hands-off, proponujemy plane maintenance (30 zł/zmiana)."
+    answer: "Owszem! Dostarczamy Ci stronę w CMS (Webflow, WP albo nawet GitHub) — możesz edytować tekst, zdjęcia, cennik bez kodu. Jeśli wolisz niezależność, uczymy Cię obsługi. Jeśli preferujesz hands-off, możemy wprowadzać zmiany za Ciebie — zasady rozliczenia ustalamy w ofercie."
   },
   {
     question: "Czy strona jest responsywna (mobile-friendly)?",
-    answer: "Oczywiście. Każda strona, którą robimy, jest w 100% responsywna — na telefonie, tablecie, desktopie wygląda świetnie. To jest standard, nie opcja. Google też to wymaga, więc responsywność = wysoka pozycja."
+    answer: "Oczywiście. Każda strona, którą robimy, jest responsywna — na telefonie, tablecie i desktopie. To jest standard, nie opcja. Google bierze pod uwagę wersję mobilną strony, więc responsywność to jeden z warunków dobrej widoczności."
   },
   {
     question: "Co jeśli moja firma się rozrośnie i będę potrzebować więcej stron?",
-    answer: "Nie problem. Strona one page zawiera architekturę, którą łatwo rozszerzyć. Możemy dodać bloga, sekcję usług, case studies — wszystko bez przebudowy od zera. Koszty będą niższe niż budowanie nowej strony od razu. Dużo klientów zaczyna od one page, potem dodaje zawartość."
+    answer: "Nie problem. Strona one page zawiera architekturę, którą łatwo rozszerzyć. Możemy dodać bloga, sekcję usług, case studies — wszystko bez przebudowy od zera. Koszty będą niższe niż budowanie nowej strony od razu. Wiele firm zaczyna od one page, a potem dodaje zawartość."
   },
   {
     question: "Czy strona one page obsługuje rezerwacje lub e-commerce?",
@@ -100,14 +100,14 @@ export default function StronaOnePage() {
       <Layout>
         <SEOHead
           title="Strona one page | Jednostronicowa strona internetowa | FOTZ Studio"
-          description="Strona one page — elegancka jednostronicowa strona internetowa dla firm i freelancerów. Od 499 zł netto. Szybko, profesjonalnie, mobilna. Bezpłatna wycena!"
+          description="Strona one page — elegancka jednostronicowa strona internetowa dla firm i freelancerów. Szybko, profesjonalnie, mobilna. Bezpłatna wycena po rozmowie o zakresie!"
           canonical="https://www.fotz-studio.pl/uslugi/strona-one-page"
           keywords="strona one page, strona jednopodstronowa, one page website, landing page one page, strona internetowa jednostrona"
         />
 
         <ServiceSchema
           name="Strona one page"
-          description="Jednostronicowa strona internetowa dla freelancerów, startupów, firm usługowych. Szybka, profesjonalna, mobilna. Od 499 zł."
+          description="Jednostronicowa strona internetowa dla freelancerów, startupów, firm usługowych. Szybka, profesjonalna, mobilna."
           provider="Fotz Studio"
           areaServed="Polska"
         />
@@ -143,8 +143,7 @@ export default function StronaOnePage() {
               </p>
 
               <div className="flex items-center justify-center gap-2 mb-12">
-                <div className="text-3xl md:text-4xl font-bold text-primary">od 499 zł</div>
-                <div className="text-muted-foreground">za pełną stronę</div>
+                <div className="text-muted-foreground">Wycenę przygotowujemy po rozmowie o zakresie strony.</div>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -231,7 +230,7 @@ export default function StronaOnePage() {
         {/* Przykładowe realizacje */}
         <section className="py-20">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-heading font-bold mb-16 text-center">Przykładowe realizacje stron one page</h2>
+            <h2 className="text-3xl font-heading font-bold mb-16 text-center">Przykładowe zastosowania stron one page</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
               {examples.map((example, i) => (
@@ -254,8 +253,8 @@ export default function StronaOnePage() {
 
             <FadeInView className="bg-card border-2 border-primary rounded-xl p-8">
               <div className="mb-8">
-                <div className="text-4xl font-bold text-primary mb-2">499 zł - 999 zł</div>
-                <p className="text-muted-foreground">w zależności od złożoności i liczby sekcji</p>
+                <div className="text-2xl font-bold text-primary mb-2">Wycena po rozmowie o zakresie</div>
+                <p className="text-muted-foreground">Cena zależy od liczby sekcji, zakresu copywritingu, potrzebnych integracji (rezerwacje, płatności) i tego, czy dostarczasz własne zdjęcia.</p>
               </div>
 
               <div className="space-y-4 mb-12">

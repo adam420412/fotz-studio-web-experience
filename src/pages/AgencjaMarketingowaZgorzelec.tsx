@@ -1,5 +1,5 @@
 import { SEOHead } from "@/components/seo/SEOHead";
-import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
+import { BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { Layout } from "@/components/layout/Layout";
 import { Building2, MapPin, Globe, TrendingUp, Star, CheckCircle, Award, Users } from "lucide-react";
 
@@ -13,7 +13,7 @@ export default function AgencjaMarketingowaZgorzelec() {
   const faqData = [
     {
       question: "Jakie uslugi SEO oferuje agencja marketingowa w Zgorzelcu?",
-      answer: "Nasza agencja specjalizuje sie w lokalnym SEO dla Zgorzelca, optymalizacji stron internetowych, budowaniu linkow zwrotnych i wdrazaniu strategii SEO dostosowanej do rynku przygranicznych. Oferujemy audyty stron, optymalizacje slow kluczowych oraz raportowanie wynikow."
+      answer: "Pracujemy z Poznania, a firmy ze Zgorzelca obsługujemy zdalnie. Zajmujemy się lokalnym SEO, optymalizacją stron internetowych, budowaniu linkow zwrotnych i wdrazaniu strategii SEO dostosowanej do rynku przygranicznych. Oferujemy audyty stron, optymalizacje slow kluczowych oraz raportowanie wynikow. Nie gwarantujemy konkretnej pozycji w Google."
     },
     {
       question: "Czy agencja oferuje usluge twomu stron internetowych dla firm z Zgorzelca?",
@@ -21,11 +21,11 @@ export default function AgencjaMarketingowaZgorzelec() {
     },
     {
       question: "Czy agencja oferuje marketing dwujezyczny PL/DE?",
-      answer: "Tak, specjalizujemy sie w marketingu dwujezycznym. Ze wzgledu na polozenie Zgorzelca przy granicy z Niemcami, oferujemy kampanie Google Ads, artykuly bloga oraz social media w jezykach polskim i niemieckim, aby dosiegnal zarówno odbiorcy lokalne jak i niemieckie."
+      answer: "Tak. Ze wzgledu na polozenie Zgorzelca przy granicy z Niemcami, oferujemy kampanie Google Ads, artykuly bloga oraz social media w jezykach polskim i niemieckim, aby dosiegnal zarówno odbiorcy lokalne jak i niemieckie."
     },
     {
       question: "Ile kosztuja usluge agencji marketingowej w Zgorzelcu?",
-      answer: "Oferujemy elastyczne pakiety cenowe dostosowane do budżetu i potrzeb Twojej firmy. Pakiety poczyna się od opracowania strategii dla małych firm, poprzez kompleksowe kampanie marketingowe dla duzych przedsiębiorstw. Zapraszamy do kontaktu w celu otrzymania indywidualnej wyceny."
+      answer: "Wycenę przygotowujemy po rozmowie o zakresie: jakie kanały prowadzimy, ile treści i kampanii, w ilu językach. Budżet reklamowy płacony platformom (Google, Meta) jest zawsze osobno. Zapraszamy do kontaktu w celu otrzymania indywidualnej wyceny."
     },
     {
       question: "Czy agencja obsługuje kampanie na Facebook i Instagram?",
@@ -37,14 +37,14 @@ export default function AgencjaMarketingowaZgorzelec() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "Agencja Marketingowa Zgorzelec - FOTZ",
-    description: "Profesjonalna agencja marketingowa w Zgorzelcu specjalizujaca sie w SEO, tworzeniu stron internetowych i marketingu cyfrowym dla firm lokalnych",
+    description: "FOTZ Studio z Poznania zdalnie obsługuje firmy ze Zgorzelca: SEO, strony internetowe i marketing cyfrowy",
     areaServed: "Zgorzelec",
     image: "https://www.fotz-studio.pl/og-image.jpg",
     url: "https://www.fotz-studio.pl/agencja-marketingowa/zgorzelec",
     telephone: "+48 790 814 814",
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Zgorzelec",
+      addressLocality: "Poznań",
       addressCountry: "PL"
     },
     priceRange: "PLN",
@@ -55,7 +55,7 @@ export default function AgencjaMarketingowaZgorzelec() {
     <Layout>
       <SEOHead
         title="Agencja Marketingowa Zgorzelec - SEO, Strony WWW | FOTZ"
-        description="Agencja marketingowa w Zgorzelcu oferuje usługi SEO, tworzenie stron internetowych, Google Ads i marketing cyfrowy dla firm lokalnych i działających w regionie przygranicznym."
+        description="FOTZ Studio pracuje z Poznania i zdalnie obsługuje firmy ze Zgorzelca: SEO, tworzenie stron internetowych, Google Ads i marketing cyfrowy dla firm z regionu przygranicznego."
         canonical="https://www.fotz-studio.pl/agencja-marketingowa/zgorzelec"
         keywords="agencja marketingowa zgorzelec, marketing internetowy zgorzelec, agencja reklamowa zgorzelec, seo zgorzelec"
       />
@@ -76,7 +76,7 @@ export default function AgencjaMarketingowaZgorzelec() {
               Agencja Marketingowa Zgorzelec
             </h1>
             <p className="text-xl text-blue-100 mb-6">
-              Kompleksowe usluge marketingu cyfrowego dla firm z Zgorzelca i regionu przygranicznego
+              Kompleksowe usługi marketingu cyfrowego dla firm ze Zgorzelca i regionu przygranicznego. Pracujemy z Poznania, firmy ze Zgorzelca obsługujemy zdalnie.
             </p>
             <div className="flex flex-wrap gap-4">
               <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">
@@ -99,19 +99,19 @@ export default function AgencjaMarketingowaZgorzelec() {
               <div>
                 <h3 className="text-xl font-semibold mb-4 text-gray-900">Rynek Przygraniczny</h3>
                 <p className="text-gray-700 mb-4">
-                  Zgorzelec to unikalne miasto polozne przy granicy z Niemcami. Rynek tutejszych firm ma specyficzne cechy i mozliwosci. Nasza agencja marketingowa w Zgorzelcu rozumie dynamike tego rynku i potrafi efektywnie docierac do klientow zarówno po polskiej jak i niemieckiej stronie granicy.
+                  Zgorzelec to unikalne miasto polozne przy granicy z Niemcami. Rynek tutejszych firm ma specyficzne cechy i mozliwosci. Pracujemy z Poznania i zdalnie pomagamy firmom ze Zgorzelca docierać do klientów zarówno po polskiej, jak i po niemieckiej stronie granicy.
                 </p>
                 <p className="text-gray-700">
-                  Firmy w Zgorzelcu maja dostep do niemieckich klientow bez koniecznosci ponoszenia dodatkowych kosztow internacjonalizacji. To ogromna szansa dla biznesu, którą my doskonale znamy i wykorzystujemy w naszych strategiach marketingowych.
+                  Firmy w Zgorzelcu maja dostep do niemieckich klientow bez koniecznosci ponoszenia dodatkowych kosztow internacjonalizacji. To szansa dla biznesu, którą uwzględniamy w strategii marketingowej.
                 </p>
               </div>
               <div>
                 <h3 className="text-xl font-semibold mb-4 text-gray-900">Marketing Dwujezyczny</h3>
                 <p className="text-gray-700 mb-4">
-                  Specjalizujemy sie w marketingu dwujezycznym PL/DE. Nasza agencja tworzy kampanie Google Ads, opracowuje artykuly bloga, zarzadza social media na Facebook i Instagram w obu jezykach. To pozwala Twojej firmie na skuteczne dotarcie do szerszej grupy odbiorców.
+                  Przygotowujemy marketing w wersji PL/DE. Tworzymy kampanie Google Ads, opracowuje artykuly bloga, zarzadza social media na Facebook i Instagram w obu jezykach. To pozwala Twojej firmie na skuteczne dotarcie do szerszej grupy odbiorców.
                 </p>
                 <p className="text-gray-700">
-                  Jezyk niemiecki to kluczowy element sukcesu firm przygranicznych. Zapewniamy profesjonalne tłumaczenia marketingowe i dostosowanie slogan oraz komunikacji do niemieckiej publicznosci.
+                  Jezyk niemiecki to kluczowy element sukcesu firm przygranicznych. Dbamy o tłumaczenia marketingowe i dostosowanie sloganów oraz komunikacji do niemieckiej publiczności.
                 </p>
               </div>
             </div>
@@ -246,113 +246,27 @@ export default function AgencjaMarketingowaZgorzelec() {
         {/* Pricing Section */}
         <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-12 text-gray-900">Pakiety Cenowe</h2>
-            
-            <div className="grid md:grid-cols-3 gap-8">
-              {/* Starter Package */}
-              <div className="bg-white rounded-lg shadow-lg p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Starter</h3>
-                <p className="text-gray-600 mb-6">Dla malych firm poczatkujacych z marketingiem cyfrowym</p>
-                <div className="text-4xl font-bold text-blue-600 mb-6">
-                  od 1 500 zl
-                  <span className="text-lg text-gray-600">/miesiac</span>
-                </div>
-                <ul className="space-y-3 mb-8">
-                  <li className="flex items-center gap-2 text-gray-700">
-                    <CheckCircle size={18} className="text-green-600" />
-                    Konsultacja strategiczna
-                  </li>
-                  <li className="flex items-center gap-2 text-gray-700">
-                    <CheckCircle size={18} className="text-green-600" />
-                    SEO optymalizacja
-                  </li>
-                  <li className="flex items-center gap-2 text-gray-700">
-                    <CheckCircle size={18} className="text-green-600" />
-                    1 kampania Google Ads
-                  </li>
-                  <li className="flex items-center gap-2 text-gray-700">
-                    <CheckCircle size={18} className="text-green-600" />
-                    Raport miesięczny
-                  </li>
-                </ul>
-                <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
-                  Wybierz Plan
-                </a>
-              </div>
-
-              {/* Professional Package */}
-              <div className="bg-gradient-to-br from-blue-600 to-blue-800 text-white rounded-lg shadow-xl p-8 transform scale-105">
-                <div className="absolute top-4 right-4 bg-yellow-400 text-blue-900 px-3 py-1 rounded-full text-sm font-bold">
-                  Popularne
-                </div>
-                <h3 className="text-2xl font-bold mb-2">Professional</h3>
-                <p className="text-blue-100 mb-6">Dla rosnacej firmy gotowej inwestowac w wzrost</p>
-                <div className="text-4xl font-bold mb-6">
-                  od 4 500 zl
-                  <span className="text-lg text-blue-200">/miesiac</span>
-                </div>
-                <ul className="space-y-3 mb-8">
-                  <li className="flex items-center gap-2">
-                    <CheckCircle size={18} className="text-green-300" />
-                    Pełne audyty SEO
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle size={18} className="text-green-300" />
-                    2-3 kampanie Google Ads
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle size={18} className="text-green-300" />
-                    Social media management
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle size={18} className="text-green-300" />
-                    Content marketing
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle size={18} className="text-green-300" />
-                    Raport szczegółowy
-                  </li>
-                </ul>
-                <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full bg-white text-blue-600 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
-                  Wybierz Plan
-                </a>
-              </div>
-
-              {/* Enterprise Package */}
-              <div className="bg-white rounded-lg shadow-lg p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Enterprise</h3>
-                <p className="text-gray-600 mb-6">Dla duzych firm z rozbudowanymi potrzebami</p>
-                <div className="text-4xl font-bold text-blue-600 mb-6">
-                  od 8 000 zl
-                  <span className="text-lg text-gray-600">/miesiac</span>
-                </div>
-                <ul className="space-y-3 mb-8">
-                  <li className="flex items-center gap-2 text-gray-700">
-                    <CheckCircle size={18} className="text-green-600" />
-                    Dedykowany account manager
-                  </li>
-                  <li className="flex items-center gap-2 text-gray-700">
-                    <CheckCircle size={18} className="text-green-600" />
-                    Pełny stack marketingowy
-                  </li>
-                  <li className="flex items-center gap-2 text-gray-700">
-                    <CheckCircle size={18} className="text-green-600" />
-                    Marketing dwujezyczny PL/DE
-                  </li>
-                  <li className="flex items-center gap-2 text-gray-700">
-                    <CheckCircle size={18} className="text-green-600" />
-                    Custom strategia biznesowa
-                  </li>
-                  <li className="flex items-center gap-2 text-gray-700">
-                    <CheckCircle size={18} className="text-green-600" />
-                    Wsparcie 24/7
-                  </li>
-                </ul>
-                <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
-                  Umawiaj Spotkanie
-                </a>
-              </div>
-            </div>
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">Od czego zależy wycena?</h2>
+            <p className="text-gray-700 mb-8">
+              Nie mamy sztywnych pakietów. Wycenę przygotowujemy po rozmowie o zakresie i celach Twojej firmy. Budżet reklamowy płacony platformom (Google, Meta) jest zawsze osobną pozycją, rozliczaną bezpośrednio z platformą.
+            </p>
+            <ul className="space-y-3 mb-8">
+              {[
+                "Zakres usług: SEO, strona WWW, Google Ads, social media lub ich połączenie",
+                "Liczba kampanii, kanałów i wersji językowych (PL/DE)",
+                "Ilość treści do przygotowania co miesiąc",
+                "Stan obecnej strony i kont reklamowych na starcie",
+                "Zakres raportowania i częstotliwość spotkań",
+              ].map((item) => (
+                <li key={item} className="flex items-center gap-2 text-gray-700">
+                  <CheckCircle size={18} className="text-green-600" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+            <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+              Poproś o wycenę
+            </a>
           </div>
         </section>
 
@@ -365,9 +279,9 @@ export default function AgencjaMarketingowaZgorzelec() {
               <div className="flex gap-4">
                 <Award className="text-blue-600 flex-shrink-0" size={32} />
                 <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">Doswiadczenie Lokalne</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Współpraca zdalna</h3>
                   <p className="text-gray-700">
-                    Znamy specyfike rynku Zgorzelca i regionu przygranicznego. Rozumiemy dynamike biznesu przy granicy z Niemcami i potrafimy efektywnie obsługiwac firmy z Zgorzelca.
+                    Pracujemy z Poznania, a firmy ze Zgorzelca obsługujemy zdalnie: spotkania online, wspólne dokumenty i regularne raporty. Na starcie poznajemy specyfikę Twojego rynku przy granicy z Niemcami.
                   </p>
                 </div>
               </div>
@@ -397,7 +311,7 @@ export default function AgencjaMarketingowaZgorzelec() {
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">SEO Lokalne</h3>
                   <p className="text-gray-700">
-                    Specjalizujemy sie w lokalnym SEO dla Zgorzelca. Optymalizujemy Google My Business, budujemy lokalne cytowania i pomagamy Twojej firmie pojawic sie w wyszukiwarce.
+                    Zajmujemy się lokalnym SEO dla firm ze Zgorzelca. Optymalizujemy Google My Business, budujemy lokalne cytowania i pomagamy Twojej firmie pojawić się w wyszukiwarce — bez obietnic konkretnej pozycji.
                   </p>
                 </div>
               </div>
@@ -431,7 +345,7 @@ export default function AgencjaMarketingowaZgorzelec() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold mb-4">Gotów na Wzrost Twojego Biznesu?</h2>
             <p className="text-xl text-blue-100 mb-8">
-              Skontaktuj sie z naszą agencją marketingową w Zgorzelcu. Oferujemy bezpłatną konsultacje i diagnose Twojej obecnej strategii marketingowej.
+              Skontaktuj się z nami — pracujemy z Poznania, firmy ze Zgorzelca obsługujemy zdalnie. Oferujemy bezpłatną konsultacje i diagnose Twojej obecnej strategii marketingowej.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">

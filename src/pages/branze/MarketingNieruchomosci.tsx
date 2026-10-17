@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
-import { useCountUp } from "@/hooks/useCountUp";
 import { OtherIndustries } from "@/components/sections/OtherIndustries";
 import apartamentyImg from "@/assets/portfolio/apartamenty-chorwacja-web.webp";
 
@@ -52,7 +51,7 @@ const customSolutions = [
 ];
 
 const benefits = [
-  "Wizualizacje 3D przyspieszające sprzedaż",
+  "Wizualizacje 3D pokazujące inwestycję przed budową",
   "Profesjonalne zdjęcia i wideo ofert",
   "Kampanie generujące leady kupujących",
   "Strony landing page dla inwestycji",
@@ -63,7 +62,7 @@ const benefits = [
 const faqItems = [
   {
     question: "Ile kosztuje wizualizacja 3D mieszkania?",
-    answer: "Pojedyncza wizualizacja wnętrza to koszt 800-2000 zł. Pełna wizualizacja osiedla (zewnętrzna + wybrane mieszkania) to 8000-25000 zł w zależności od skali projektu i poziomu detali.",
+    answer: "Wycenę przygotowujemy po rozmowie o zakresie. Zależy od liczby ujęć i pomieszczeń, tego, czy potrzebne są widoki zewnętrzne całego osiedla, poziomu detalu i aranżacji wnętrz, materiałów wejściowych od architekta oraz liczby rund poprawek.",
   },
   {
     question: "Jak długo trwa przygotowanie materiałów dla inwestycji?",
@@ -71,7 +70,7 @@ const faqItems = [
   },
   {
     question: "Czy pomagacie z kampaniami na Facebooku dla deweloperów?",
-    answer: "Tak, prowadzimy kampanie lead generation dla deweloperów i biur nieruchomości. Średni koszt pozyskania leada to 50-150 zł w zależności od lokalizacji i segmentu cenowego.",
+    answer: "Tak, prowadzimy kampanie lead generation dla deweloperów i biur nieruchomości. Koszt pozyskania zapytania zależy od lokalizacji, segmentu cenowego i konkurencji, dlatego nie podajemy go z góry. Budżet reklamowy płacisz bezpośrednio platformie, osobno od wynagrodzenia za prowadzenie kampanii.",
   },
   {
     question: "Jak działają wirtualne spacery 360?",
@@ -79,7 +78,7 @@ const faqItems = [
   },
   {
     question: "Czy obsługujecie małe biura nieruchomości?",
-    answer: "Tak, mamy pakiety dostosowane do różnych budżetów - od pojedynczych sesji zdjęciowych po pełną obsługę marketingową. Współpracujemy zarówno z dużymi deweloperami jak i lokalnymi agencjami.",
+    answer: "Tak, zakres dobieramy do budżetu - od pojedynczej sesji zdjęciowej po pełną obsługę marketingową inwestycji.",
   },
 ];
 
@@ -170,21 +169,18 @@ const MarketingNieruchomosci = () => {
             className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16"
           >
             {[
-              { value: 200, suffix: "+", label: "wizualizacji 3D" },
-              { value: 50, suffix: "%", label: "szybsza sprzedaż" },
-              { value: 30, suffix: "+", label: "deweloperów" },
-              { value: 85, suffix: "zł", label: "średni koszt leada" },
-            ].map((stat, index) => {
-              const { ref, displayValue } = useCountUp({ end: stat.value, suffix: stat.suffix });
-              return (
-                <div key={index} ref={ref} className="text-center p-6 rounded-2xl bg-card border border-border/30">
-                  <div className="text-3xl md:text-4xl font-heading font-bold text-gradient-premium">
-                    {displayValue}
-                  </div>
-                  <p className="text-foreground/60 text-sm mt-2">{stat.label}</p>
+              { value: "3D", label: "wizualizacje inwestycji" },
+              { value: "Foto i wideo", label: "sesje i spoty" },
+              { value: "Dron", label: "ujęcia z powietrza" },
+              { value: "Leady", label: "kampanie Meta i Google" },
+            ].map((stat, index) => (
+              <div key={index} className="text-center p-6 rounded-2xl bg-card border border-border/30">
+                <div className="text-3xl md:text-4xl font-heading font-bold text-gradient-premium">
+                  {stat.value}
                 </div>
-              );
-            })}
+                <p className="text-foreground/60 text-sm mt-2">{stat.label}</p>
+              </div>
+            ))}
           </motion.div>
         </div>
       </section>
@@ -282,8 +278,8 @@ const MarketingNieruchomosci = () => {
                 Dlaczego warto <span className="text-gradient-premium">współpracować?</span>
               </h2>
               <p className="text-foreground/70 mb-8">
-                Mamy doświadczenie z projektami deweloperskimi różnej skali - 
-                od pojedynczych mieszkań po całe osiedla.
+                Łączymy produkcję wizualną, strony i kampanie - materiały dla
+                inwestycji przygotowujesz z jednym zespołem.
               </p>
               
               <div className="space-y-4">

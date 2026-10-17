@@ -1,6 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
 import { findClaims, pageCopy, routeFiles } from './offer-claims.mjs';
 
 // Golden set: real sentences removed from offers during the October review
@@ -18,6 +20,8 @@ const rejected = [
   ['Średnia ocena 4,9/5 od klientów.', 'rating'],
   ['Nasze biuro w Katowicach obsługuje firmy ze Śląska.', 'office'],
   ['FOTZ Studio ma siedzibę w Warszawie.', 'office'],
+  ['Pakiet START: 1 499 zl/mc.', 'price'],
+  ['Gwarancja skuteczności kampanii.', 'guarantee'],
 ];
 
 // Stated limits that reviewed offers use on purpose.
@@ -35,6 +39,14 @@ test('golden set of rejected claims is still detected', () => {
   for (const [sentence, rule] of rejected) {
     assert.ok(findClaims(sentence).some(item => item.rule === rule), `${rule} not detected: ${sentence}`);
   }
+});
+
+test('page copy skips CSS colours and keeps template text', () => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'claims-'));
+  const file = path.join(dir, 'Page.tsx');
+  fs.writeFileSync(file, 'const city = "Gdańsk";\nexport default () => <div style={{ background: "hsla(30, 71%, 27%, 0.1)" }}>{`Pakiet od 2 500 zł w ${city}`}</div>;');
+  const claims = findClaims(pageCopy(file));
+  assert.deepEqual(claims.map(item => item.rule), ['price']);
 });
 
 test('stated limits and questions are not reported as claims', () => {
@@ -59,10 +71,44 @@ const reviewed = [
   '/agencja-social-media/szczecin', '/agencja-social-media/lublin', '/agencja-social-media/warszawa', '/agencja-social-media/krakow',
   '/agencja-marketingowa/rzeszow', '/agencja-marketingowa/lodz', '/agencja-marketingowa/krakow', '/uslugi/studio-podcastowe',
   '/uslugi/sklepy-internetowe/krakow', '/kompleksowa-obsluga-marketingowa', '/uslugi/produkcja-filmow', '/uslugi/strony-internetowe/wroclaw',
+  '/seo', '/performance-marketing/meta-ads',
+];
+// Offers cleaned of unsupported claims on 17.10 (not rewritten for NEURONwriter yet).
+const cleaned = [
+  '/uslugi/strony-internetowe/lublin', '/performance-marketing/tiktok-ads/gdansk', '/dla-kogo/branza-medyczna', '/performance-marketing/google-ads/bialystok',
+  '/performance-marketing/google-ads/wroclaw', '/uslugi/strony-internetowe/koszalin', '/performance-marketing/linkedin-ads', '/uslugi/strony-internetowe/tychy',
+  '/agencja-marketingowa/gdynia', '/dla-kogo/gastronomia', '/performance-marketing/facebook-ads/gdansk', '/social-media/strategia',
+  '/performance-marketing/google-ads/warszawa', '/seo/lokalne-poznan', '/uslugi/email-marketing', '/uslugi/strony-internetowe/lubelskie',
+  '/dla-kogo/it-saas', '/slownik-marketingowy', '/cennik-pozycjonowania', '/uslugi/strony-internetowe/rzeszow',
+  '/performance-marketing/facebook-ads/szczecin', '/blog', '/performance-marketing/tiktok-ads', '/content-marketing/copywriting-landing',
+  '/agencja-marketingowa', '/performance-marketing/facebook-ads/wroclaw', '/dla-kogo/beauty-wellness', '/uslugi/sklepy-internetowe/poznan',
+  '/performance-marketing/google-ads', '/agencja-marketingowa/gliwice', '/agencja-marketingowa/gdansk', '/agencja-marketingowa-torun',
+  '/performance-marketing/youtube-ads', '/agencja-marketingowa/katowice', '/dla-kogo/produkcja', '/uslugi/strona-internetowa-dla-restauracji',
+  '/uslugi/strony-internetowe/gliwice', '/wizualizacje-3d', '/performance-marketing/google-ads/bydgoszcz', '/uslugi/tworzenie-stron-www',
+  '/agencja-marketingowa/szczecin', '/social-media/reels-vs-tiktok', '/uslugi/strony-internetowe/radom', '/performance-marketing/google-ads/katowice',
+  '/agencja-marketingowa/plock', '/uslugi/strony-internetowe/warszawa', '/agencja-marketingowa/bialystok', '/dla-kogo/edukacja',
+  '/agencja-marketingowa/bydgoszcz', '/agencja-marketingowa/jelenia-gora', '/uslugi/strony-internetowe/zabrze', '/uslugi/strony-internetowe/plock',
+  '/uslugi/strony-internetowe/tarnow', '/ai-marketing', '/performance-marketing/facebook-ads/katowice', '/performance-marketing/google-vs-facebook',
+  '/social-media/tiktok-biznes', '/uslugi/sklep-woocommerce', '/uslugi/strony-internetowe/sosnowiec', '/agencja-marketingowa/legnica',
+  '/performance-marketing', '/uslugi/strona-internetowa-dla-trenera-personalnego', '/uslugi/kampania-google-ads', '/seo/ecommerce',
+  '/performance-marketing/targetowanie', '/dla-kogo/marki-premium', '/uslugi/landing-page', '/uslugi/strona-internetowa-dla-fotografa',
+  '/uslugi/marketing-b2b', '/seo/on-page', '/content-marketing/email-2025', '/dla-kogo/instytucje',
+  '/uslugi/strony-internetowe/kamionki', '/uslugi/strona-internetowa-dla-prawnika', '/uslugi/audyt-strony-internetowej', '/seo/off-page',
+  '/content-marketing/ebooki', '/dla-kogo/nieruchomosci', '/uslugi/strony-internetowe/gorzow', '/pozycjonowanie/zgorzelec',
+  '/uslugi/optymalizacja-strony-internetowej', '/seo/techniczne', '/content-marketing/video-content', '/dla-kogo/automotive',
+  '/uslugi/logo-i-branding', '/agencja-marketingowa/zgorzelec', '/uslugi/strona-one-page', '/social-media/influencer',
+  '/uslugi/sklepy-internetowe', '/dla-kogo/prawo-finanse', '/uslugi/pozycjonowanie', '/uslugi/strona-internetowa-dla-stomatologa',
+  '/uslugi/projektowanie-stron-internetowych', '/social-media/content', '/agencja-kreatywna-poznan', '/dla-kogo/ecommerce-retail',
+  '/uslugi/identyfikacja-wizualna', '/uslugi/marketing-automation', '/uslugi/strony-internetowe/wielkopolska', '/social-media/analityka',
+  '/agencja-graficzna', '/dla-kogo/ngo', '/uslugi/tworzenie-stron-internetowych', '/uslugi/lead-generation',
+  '/uslugi/strony-internetowe/podkarpacie', '/performance-marketing/tiktok-ads/poznan', '/kampanie-reklamowe', '/dla-kogo/turystyka',
+  '/uslugi/tworzenie-sklepow-internetowych', '/uslugi/strona-wordpress', '/uslugi/branding', '/performance-marketing/remarketing',
+  '/dla-kogo/firmy-lokalne', '/faq', '/uslugi/projekt-strony-internetowej', '/uslugi/identyfikacja-wizualna-firmy',
+  '/uslugi/fotografia-z-drona', '/performance-marketing/optymalizacja', '/dla-kogo/ecommerce', '/agencja-marketingowa/koszalin',
 ];
 const files = routeFiles(new URL('../src/App.tsx', import.meta.url));
 
-for (const path of reviewed) {
+for (const path of [...reviewed, ...cleaned]) {
   test(`reviewed offer ${path} publishes no unsupported claims`, () => {
     const file = files.get(path);
     assert.ok(file && fs.existsSync(file), `no page source for ${path}`);

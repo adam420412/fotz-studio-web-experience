@@ -88,7 +88,7 @@ const glossaryTerms: Term[] = [
   // R
   { term: "Remarketing / Retargeting", definition: "Strategia reklamowa polegająca na wyświetlaniu reklam użytkownikom, którzy wcześniej odwiedzili stronę lub wykonali określoną akcję.", category: "Reklama" },
   { term: "Responsive Design", definition: "Projektowanie stron internetowych, które automatycznie dostosowują się do rozmiaru ekranu urządzenia.", category: "Web Design" },
-  { term: "ROAS (Return on Ad Spend)", definition: "Zwrot z wydatków na reklamę - stosunek przychodu do wydatków reklamowych. ROAS 400% oznacza 4 zł przychodu na każdą wydaną złotówkę.", category: "Reklama" },
+  { term: "ROAS (Return on Ad Spend)", definition: "Zwrot z wydatków na reklamę - stosunek przychodu do wydatków reklamowych. Przykładowo ROAS równy 4 (zapisywany też jako 4:1) oznacza, że każda złotówka wydana na reklamę przyniosła cztery złotówki przychodu.", category: "Reklama" },
   { term: "ROI (Return on Investment)", definition: "Zwrot z inwestycji - procentowy wskaźnik pokazujący zysk w stosunku do poniesionych kosztów.", category: "Analityka", relatedLink: "/kalkulator-roi", relatedLinkText: "Oblicz swój ROI" },
   
   // S

@@ -38,7 +38,7 @@ export default function LeadGeneration() {
     { icon: Target, title: "Google Ads i Meta Ads", desc: "Płatna generacja leadów — szybkie efekty, pełna kontrola budżetu, mierzalny koszt per lead." },
     { icon: Users, title: "LinkedIn i B2B outreach", desc: "Dotarcie do konkretnych decydentów — CEO, CMO, dyrektorów. Idealny dla B2B." },
     { icon: Globe, title: "Landing pages i funnel", desc: "Dedykowane strony do konwersji + sekwencja po-konwersyjna. Wyższy % leadów na klientów." },
-    { icon: Mail, title: "Email cold outreach", desc: "Spersonalizowane zimne emaile do precyzyjnie dobranych firm i osób. Legalne przy RODO." },
+    { icon: Mail, title: "Email cold outreach", desc: "Spersonalizowane zimne emaile do precyzyjnie dobranych firm i osób, prowadzone z uwzględnieniem RODO." },
     { icon: Zap, title: "Marketing automation", desc: "Automatyczny nurturing leadów — od pierwszego kontaktu do gotowości do zakupu." },
   ];
 
@@ -56,7 +56,7 @@ export default function LeadGeneration() {
     {
       question: "Ile kosztuje pozyskanie leadu (CPL)?",
       answer:
-        "Koszt per lead (CPL) jest bardzo zróżnicowany: usługi lokalne 20-100 zł, B2B 100-500 zł, finanse/ubezpieczenia 200-1000 zł, nieruchomości 50-300 zł. Wpływa na to: kanał (SEO najtańsze długoterminowo, reklamy płatne natychmiastowe), branża, konkurencja i jakość landing page.",
+        "Koszt per lead (CPL) jest bardzo zróżnicowany i nie podajemy go z góry. Wpływa na niego: kanał (SEO najtańsze długoterminowo, reklamy płatne natychmiastowe), branża, konkurencja i jakość landing page. Wycenę naszej pracy przygotowujemy po rozmowie o zakresie, a budżet reklamowy płacony platformom (Google, Meta, LinkedIn) jest zawsze osobno.",
     },
     {
       question: "Jakie kanały lead generation działają najlepiej?",
@@ -71,7 +71,7 @@ export default function LeadGeneration() {
     {
       question: "Jak szybko zobaczymy pierwsze leady?",
       answer:
-        "Zależy od kanału: Google Ads/Meta Ads: pierwsze leady w 1-2 tygodnie. LinkedIn outreach: pierwsze odpowiedzi w 1-4 tygodnie. SEO: 3-6 miesięcy do widocznych wyników organicznych. Content marketing: 6-12 miesięcy. Rekomendujemy start z kanałami płatnymi i równoległe budowanie organicznych.",
+        "Zależy od kanału, branży i budżetu, dlatego nie podajemy sztywnych terminów. Kampanie płatne (Google Ads, Meta Ads) zwykle dają pierwsze dane najszybciej, outreach wymaga kilku rund kontaktu, a SEO i content marketing to działania długoterminowe. Rekomendujemy start z kanałami płatnymi i równoległe budowanie organicznych.",
     },
   ];
 
@@ -113,7 +113,7 @@ export default function LeadGeneration() {
                 {[
                   { value: "6+", label: "Kanałów lead gen" },
                   { value: "CPL", label: "Optymalizacja pod koszt" },
-                  { value: "3x", label: "ROI vs cold calling" },
+                  { value: "GA4", label: "Śledzenie konwersji" },
                   { value: "CRM", label: "Pełna integracja" },
                 ].map((stat, idx) => (
                   <div key={idx} className="bg-slate-800 bg-opacity-50 p-4 rounded-lg">
