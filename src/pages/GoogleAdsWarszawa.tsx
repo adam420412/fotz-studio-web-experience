@@ -10,23 +10,23 @@ export default function GoogleAdsWarszawa() {
   const faqItems = [
     {
       question: "Ile kosztuje Google Ads w Warszawie?",
-      answer: "Google Ads w Warszawie zaczyna się od 400 zł/miesiąc za zarządzanie kampanią (pakiet START). Dodatkowy budżet reklamowy to osobna pozycja — od 500 zł/miesiąc dla małych firm do 15 000+ zł/miesiąc dla e-commerce i sieci handlowych. Całkowity koszt zależy od branży i konkurencji na słowa kluczowe.",
+      answer: "Wycenę obsługi przygotowujemy po rozmowie o zakresie: liczbie i typach kampanii, liczbie produktów lub usług, konkurencji na słowa kluczowe w Twojej branży i tym, czy trzeba skonfigurować śledzenie konwersji od zera. Budżet reklamowy, który płacisz bezpośrednio Google, jest zawsze osobną pozycją i ustalamy go razem z Tobą.",
     },
     {
       question: "Jak długo trwa uruchomienie kampanii Google Ads?",
-      answer: "Kampanię można uruchomić w ciągu 24-48 godzin od podpisania umowy. Obejmuje to: audit konkursowy, badanie słów kluczowych, tworzenie struktury kampanii, konfigurację trackingu konwersji i wdrożenie. Pierwsze wyniki są widoczne po kilku dniach, pełna optymalizacja trwa 2-4 tygodnie.",
+      answer: "Czas uruchomienia zależy od zakresu i od tego, jak szybko dostaniemy dostępy oraz materiały. Przygotowanie obejmuje: analizę konkurencji, badanie słów kluczowych, strukturę kampanii, konfigurację śledzenia konwersji i wdrożenie. Po starcie kampania potrzebuje czasu na zebranie danych, zanim optymalizacja da pełny obraz.",
     },
     {
       question: "Czy potrzebuję certyfikatu Google do uruchomienia reklam?",
-      answer: "Nie — certyfikat Google nie jest wymagany do uruchomienia kampanii. Wymagane jest jednak konto Google Ads. My, jako agencja certyfikowana, prowadzimy całą konfigurację, optymalizację i zarządzanie kampaniami. Ty masz dostęp do pełnych danych i raportów w panelu Google Ads.",
+      answer: "Nie — certyfikat Google nie jest wymagany do uruchomienia kampanii. Wymagane jest jednak konto Google Ads. Prowadzimy całą konfigurację, optymalizację i zarządzanie kampaniami, a Ty masz dostęp do pełnych danych i raportów w panelu Google Ads.",
     },
     {
-      question: "Jaka jest minimalna kwota budżetu na Google Ads?",
-      answer: "Minimalna kwota budżetu to 500 zł/miesiąc dla małych firm lokalne. Rekomendujemy jednak minimum 1 500 zł/miesiąc, aby kampania miała wystarczająco danych do optymalizacji. W Warszawie, gdzie konkurencja jest wysoka, budżet 2 000-5 000 zł/miesiąc zapewnia znacznie lepsze wyniki.",
+      question: "Jaki budżet reklamowy przeznaczyć na Google Ads?",
+      answer: "Nie ma jednej kwoty dla wszystkich. Budżet zależy od kosztu kliknięcia w Twojej branży, obszaru, na którym chcesz się wyświetlać, i liczby zapytań, jakie chcesz pozyskać. Na konsultacji szacujemy go na podstawie danych z planera słów kluczowych. Budżet reklamowy płacisz bezpośrednio Google, osobno od naszej obsługi.",
     },
     {
       question: "Jak agencja rozlicza się za kampanie Google Ads?",
-      answer: "Rozliczamy się na podstawie modelu: opłata za zarządzanie kampanią (400-1 500 zł/miesiąc) + budżet reklamowy, który wydajesz w Google Ads (płacisz bezpośrednio Google). Całkowita transparentność — wszystkie raportowanie co miesiąc.",
+      answer: "Rozliczenie składa się z dwóch części: opłaty za naszą obsługę kampanii (wycenianej indywidualnie po rozmowie o zakresie) oraz budżetu reklamowego, który płacisz bezpośrednio Google. Co miesiąc dostajesz raport z wynikami.",
     },
     {
       question: "Jakie branże w Warszawie korzystają z Google Ads?",

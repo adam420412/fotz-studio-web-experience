@@ -4,15 +4,12 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
-import { useState } from "react";
-import { Building2, TrendingUp, Star, Users, MapPin, CheckCircle2, ArrowRight, Phone, Target, Smartphone, BarChart3, Lightbulb, Zap } from "lucide-react";
+import { TrendingUp, Users, MapPin, CheckCircle2, ArrowRight, Phone, Target, Smartphone, BarChart3, Lightbulb, Zap } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { ServiceSchema, FAQSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 import LocalSEOBoost from "@/components/seo/LocalSEOBoost";
 
 export default function AgencjaMarketingowaBydgoszcz() {
-  const [selectedPackage, setSelectedPackage] = useState<string | null>(null);
-
   const breadcrumbs = [
     { name: "Strona główna", url: "/" },
     { name: "Agencja marketingowa", url: "/agencja-marketingowa" },
@@ -23,14 +20,14 @@ export default function AgencjaMarketingowaBydgoszcz() {
     {
       id: 1,
       title: "Pozycjonowanie SEO",
-      description: "Umieszczenie Twojej firmy na pierwszej stronie wyszukiwarek dla kluczowych słów kluczowych w Bydgoszczy i regionie Kujaw. Garantujemy vidoczność organiczną i zwiększenie ruchu na stronie.",
+      description: "Praca nad widocznością Twojej firmy w wyszukiwarce na frazy związane z Bydgoszczą i regionem Kujaw: audyt, poprawki na stronie, treści i linkowanie. Nie gwarantujemy konkretnej pozycji w Google — pokazujemy, co zrobiliśmy i jak zmienia się widoczność.",
       icon: TrendingUp,
       features: ["Audyt SEO", "Linkowanie", "Optymalizacja on-page"],
     },
     {
       id: 2,
       title: "Google Ads i kampanie PPC",
-      description: "Bezpośrednie dotarcie do potencjalnych klientów szukających usług w Bydgoszczy. Profesjonalne zarządzanie budżetem i maksymalizacja zwrotu z inwestycji (ROI).",
+      description: "Bezpośrednie dotarcie do potencjalnych klientów szukających usług w Bydgoszczy. Konfigurujemy i prowadzimy kampanie, pilnujemy budżetu i regularnie je optymalizujemy. Budżet reklamowy płacony Google jest zawsze osobno od naszego wynagrodzenia.",
       icon: Target,
       features: ["Google Search", "Display & Video", "Remarketing"],
     },

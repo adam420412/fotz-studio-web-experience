@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { 
-  Globe, Search, ShoppingCart, Palette, MessageSquare, TrendingUp, Phone, Headphones, ArrowRight, Sparkles, Target, Code2, Layers, Rocket, Star, Clock
+  Globe, Search, ShoppingCart, Palette, MessageSquare, TrendingUp, Phone, Headphones, ArrowRight, Sparkles, Target, Code2, Layers, Rocket, Star
 } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
@@ -43,9 +43,9 @@ const StronyInternetoweRadom = () => {
   ];
 
   const caseStudies = [
-    { title: "Apartamenty Chorwacja", category: "Strona rezerwacyjna", result: "+180% rezerwacji online", link: "/realizacje/apartamenty-chorwacja", image: apartamentyImg },
+    { title: "Apartamenty Chorwacja", category: "Strona rezerwacyjna", result: "Strona z systemem rezerwacji", link: "/realizacje/apartamenty-chorwacja", image: apartamentyImg },
     { title: "Victory Cars", category: "Strona motoryzacyjna", result: "Nowoczesny design premium", link: "/realizacje/victory-cars", image: victoryCarsImg },
-    { title: "Cute Dumpling", category: "Strona gastronomiczna", result: "+250% ruchu organicznego", link: "/realizacje/cute-dumpling", image: cuteDumplingImg },
+    { title: "Cute Dumpling", category: "Strona gastronomiczna", result: "Strona gastronomiczna z menu", link: "/realizacje/cute-dumpling", image: cuteDumplingImg },
   ];
 
   const faqItems = [
@@ -60,12 +60,12 @@ const StronyInternetoweRadom = () => {
   const stats = [
     { value: "WWW", label: "Strony i sklepy", icon: Layers },
     { value: "UX", label: "Projekt dla odbiorcy", icon: Star },
-    { value: "5 lat", label: "Doświadczenia", icon: Clock },
+    { value: "SEO", label: "Optymalizacja w standardzie", icon: Search },
     { value: "Kontakt", label: "Uzgodniona opieka", icon: Headphones },
   ];
 
   const benefits = [
-    "Znajomość radomskiego rynku",
+    "Pracujemy z Poznania, firmy z Radomia obsługujemy zdalnie",
     "Kompleksowa obsługa od projektu po wdrożenie",
     "SEO w standardzie każdej strony",
     "Responsywny design mobile-first",
@@ -246,20 +246,20 @@ const StronyInternetoweRadom = () => {
               Tworzenie stron dla radomskich firm — B2B i B2C
             </h2>
             <p className="text-muted-foreground mb-4">
-              Sektor zbrojeniowy i obronny to specyfika Radomia — firmy z tej branży potrzebują stron z sekcją certyfikatów, przetargów publicznych i kontaktów dla partnerów instytucjonalnych. Tworzymy profesjonalne strony korporacyjne zgodne z wymogami zamówień publicznych i standardami branży obronnej.
+              Sektor zbrojeniowy i obronny to specyfika Radomia — firmy z tej branży potrzebują stron z sekcją certyfikatów, przetargów publicznych i kontaktów dla partnerów instytucjonalnych. Możemy przygotować stronę korporacyjną z takimi sekcjami, dopasowaną do wymagań Twojej firmy.
             </p>
             <p className="text-muted-foreground mb-6">
-              Dla mniejszych firm usługowych — gabinetów, salonów, restauracji, firm budowlanych — projektujemy przystępne strony wizytówkowe z lokalną optymalizacją SEO. Czas realizacji: 3–5 tygodni. Cenę i termin ustalamy w indywidualnej ofercie. Pełna dokumentacja i transfer dostępów.
+              Dla mniejszych firm usługowych — gabinetów, salonów, restauracji, firm budowlanych — projektujemy przystępne strony wizytówkowe z lokalną optymalizacją SEO. Cenę i termin ustalamy w indywidualnej ofercie. Pełna dokumentacja i transfer dostępów.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
               SEO dla firm z Radomia — lokalna widoczność w Google
             </h2>
             <p className="text-muted-foreground mb-4">
-              Frazy lokalne — „usługa + Radom", „usługa + Mazowsze" — to najtańszy sposób na pozyskanie klientów. Konfigurujemy Google Moja Firma, optymalizujemy stronę pod frazy lokalne i budujemy widoczność w mapach Google. Efekt: klienci z Radomia i okolic trafiają do Ciebie, a nie do konkurencji.
+              Frazy lokalne — „usługa + Radom", „usługa + Mazowsze" — to najtańszy sposób na pozyskanie klientów. Konfigurujemy Google Moja Firma, optymalizujemy stronę pod frazy lokalne i budujemy widoczność w mapach Google. Cel: żeby klienci z Radomia i okolic łatwiej trafiali do Ciebie. Nie gwarantujemy konkretnej pozycji w Google — wynik zależy m.in. od konkurencji i historii domeny.
             </p>
             <p className="text-muted-foreground">
-              Bezpłatna wycena w 24 godziny. Skontaktuj się z nami i porozmawiajmy o stronie internetowej dla Twojej firmy z Radomia.
+              Wycenę przygotowujemy bezpłatnie po rozmowie o zakresie. Skontaktuj się z nami i porozmawiajmy o stronie internetowej dla Twojej firmy z Radomia.
             </p>
           
                         <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
