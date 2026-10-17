@@ -9,7 +9,7 @@ const scope = [
     text: "Strategia reklamowa Meta Ads zaczyna się od celu biznesowego: zapytania o usługę, sprzedaż w sklepie internetowym, zapisy na wydarzenie albo rekrutacja. Do celu dobieramy rodzaj kampanii, grupy docelowe, miejsca emisji i budżet reklamowy. Plan zapisujemy przed startem, żeby obie strony wiedziały, co oceniamy po pierwszych tygodniach i jakie wskaźniki mają znaczenie dla Twojej sprzedaży.",
   },
   {
-    title: "Kreacje reklamowe na Facebook i Instagram",
+    title: "Kreacje reklamowe: Facebook i Instagram",
     text: "Przygotowujemy grafiki, karuzele i krótkie wideo w formatach dla aktualności, relacji i Reels. Jeden komunikat dostosowujemy do różnych miejsc wyświetlania, a teksty reklam piszemy pod konkretną grupę odbiorców. Liczbę wersji, poprawki i ewentualną produkcję zdjęć lub filmu ustalamy w wycenie.",
     href: "/uslugi/reklama-facebook",
     link: "Zobacz zakres kreacji reklamowych",
@@ -22,7 +22,7 @@ const scope = [
 
 const sections = [
   {
-    title: "Agencja Meta Ads z Poznania dla firm z całej Polski",
+    title: "Agencja reklamowa z Poznania dla firm z całej Polski",
     text: "FOTZ Studio to agencja reklamowa i produkcyjna z Poznania. Kampanie Meta Ads prowadzimy dla firm z Poznania i z całej Polski: spotkania odbywamy online lub w Poznaniu po uzgodnieniu terminu, a materiały i dostępy wymieniamy cyfrowo. Dla firm spoza Poznania nie mamy osobnego biura — cała współpraca działa zdalnie. Jako kompleksowa agencja łączymy w jednym zespole marketing, planowanie kampanii, produkcję zdjęć i wideo oraz analizę danych, dlatego reklama nie czeka tygodniami na materiały od kilku podwykonawców.",
     points: [
       "Usługi lokalne: gabinety, szkoły, warsztaty, firmy remontowe i inne biznesy, które potrzebują zapytań z określonego obszaru.",

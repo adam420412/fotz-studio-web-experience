@@ -89,6 +89,21 @@ const cleaned = [
   '/agencja-marketingowa/bydgoszcz', '/agencja-marketingowa/jelenia-gora', '/uslugi/strony-internetowe/zabrze', '/uslugi/strony-internetowe/plock',
   '/uslugi/strony-internetowe/tarnow', '/ai-marketing', '/performance-marketing/facebook-ads/katowice', '/performance-marketing/google-vs-facebook',
   '/social-media/tiktok-biznes', '/uslugi/sklep-woocommerce', '/uslugi/strony-internetowe/sosnowiec', '/agencja-marketingowa/legnica',
+  '/performance-marketing', '/uslugi/strona-internetowa-dla-trenera-personalnego', '/uslugi/kampania-google-ads', '/seo/ecommerce',
+  '/performance-marketing/targetowanie', '/dla-kogo/marki-premium', '/uslugi/landing-page', '/uslugi/strona-internetowa-dla-fotografa',
+  '/uslugi/marketing-b2b', '/seo/on-page', '/content-marketing/email-2025', '/dla-kogo/instytucje',
+  '/uslugi/strony-internetowe/kamionki', '/uslugi/strona-internetowa-dla-prawnika', '/uslugi/audyt-strony-internetowej', '/seo/off-page',
+  '/content-marketing/ebooki', '/dla-kogo/nieruchomosci', '/uslugi/strony-internetowe/gorzow', '/pozycjonowanie/zgorzelec',
+  '/uslugi/optymalizacja-strony-internetowej', '/seo/techniczne', '/content-marketing/video-content', '/dla-kogo/automotive',
+  '/uslugi/logo-i-branding', '/agencja-marketingowa/zgorzelec', '/uslugi/strona-one-page', '/social-media/influencer',
+  '/uslugi/sklepy-internetowe', '/dla-kogo/prawo-finanse', '/uslugi/pozycjonowanie', '/uslugi/strona-internetowa-dla-stomatologa',
+  '/uslugi/projektowanie-stron-internetowych', '/social-media/content', '/agencja-kreatywna-poznan', '/dla-kogo/ecommerce-retail',
+  '/uslugi/identyfikacja-wizualna', '/uslugi/marketing-automation', '/uslugi/strony-internetowe/wielkopolska', '/social-media/analityka',
+  '/agencja-graficzna', '/dla-kogo/ngo', '/uslugi/tworzenie-stron-internetowych', '/uslugi/lead-generation',
+  '/uslugi/strony-internetowe/podkarpacie', '/performance-marketing/tiktok-ads/poznan', '/kampanie-reklamowe', '/dla-kogo/turystyka',
+  '/uslugi/tworzenie-sklepow-internetowych', '/uslugi/strona-wordpress', '/uslugi/branding', '/performance-marketing/remarketing',
+  '/dla-kogo/firmy-lokalne', '/faq', '/uslugi/projekt-strony-internetowej', '/uslugi/identyfikacja-wizualna-firmy',
+  '/uslugi/fotografia-z-drona', '/performance-marketing/optymalizacja', '/dla-kogo/ecommerce', '/agencja-marketingowa/koszalin',
 ];
 const files = routeFiles(new URL('../src/App.tsx', import.meta.url));
 

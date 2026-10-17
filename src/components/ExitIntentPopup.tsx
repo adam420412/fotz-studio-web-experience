@@ -106,7 +106,7 @@ export function ExitIntentPopup() {
             </div>
 
             <p className="text-xs text-muted-foreground mt-4">
-              Bez zobowiązań • Odpowiadamy w 24h
+              Bez zobowiązań • Odpisujemy w dni robocze
             </p>
           </div>
         </div>
