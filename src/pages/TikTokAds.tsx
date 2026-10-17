@@ -21,16 +21,16 @@ import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@
 const TikTokAds = () => {
   const benefits = [
     { icon: Users, title: "Młoda grupa docelowa", description: "Docieraj do Gen Z i Millenialsów aktywnych na TikToku" },
-    { icon: TrendingUp, title: "Viralowy potencjał", description: "Organiczny zasięg i możliwość viral contentu" },
+    { icon: TrendingUp, title: "Zasięg organiczny", description: "Dobre treści reklamowe mogą zdobywać też zasięg organiczny" },
     { icon: Sparkles, title: "Autentyczność", description: "Naturalne reklamy dopasowane do stylu platformy" },
-    { icon: DollarSign, title: "Niższy CPM", description: "Konkurencyjne stawki w porównaniu do Meta i Google" },
+    { icon: DollarSign, title: "Kontrola budżetu", description: "Budżet ustalasz sam i zmieniasz go w trakcie kampanii" },
   ];
 
   const adFormats = [
     { icon: Video, title: "In-Feed Ads", description: "Reklamy wideo w feedzie użytkownika, 9-60 sekund" },
     { icon: Sparkles, title: "Spark Ads", description: "Promowanie organicznych treści jako reklamy" },
     { icon: Megaphone, title: "TopView", description: "Pełnoekranowa reklama przy otwarciu aplikacji" },
-    { icon: Music2, title: "Branded Hashtag Challenge", description: "Viralowe wyzwania z Twoim hashtagiem" },
+    { icon: Music2, title: "Branded Hashtag Challenge", description: "Wyzwania z Twoim hashtagiem" },
     { icon: Play, title: "Branded Effects", description: "Interaktywne filtry i efekty AR" },
     { icon: Heart, title: "Influencer Marketing", description: "Współpraca z TikTokerami" },
   ];
@@ -39,65 +39,48 @@ const TikTokAds = () => {
     { step: "01", title: "Strategia i kreacja", description: "Tworzymy koncepcję dopasowaną do TikToka" },
     { step: "02", title: "Produkcja wideo", description: "Nagrywamy lub adaptujemy materiały wideo" },
     { step: "03", title: "Konfiguracja kampanii", description: "Ustawiamy targetowanie i pixel konwersji" },
-    { step: "04", title: "Optymalizacja i skalowanie", description: "Testujemy kreacje i skalujemy zwycięzców" },
+    { step: "04", title: "Optymalizacja i skalowanie", description: "Testujemy kreacje i rozwijamy te, które działają lepiej" },
   ];
 
   const pricingPackages = [
     {
       name: "Start",
-      price: "2 000",
-      period: "/mies.",
       description: "Testowanie TikToka",
       features: [
-        "Budżet reklamowy do 3 000 zł",
-        "1-2 kreacje wideo miesięcznie",
+        "Budżet reklamowy ustalany z Tobą",
+        "Kilka kreacji wideo do testów",
         "In-Feed Ads",
         "Podstawowe targetowanie",
         "Raport miesięczny",
         "Pixel konwersji",
       ],
-      popular: false,
     },
     {
       name: "Business",
-      price: "3 500",
-      period: "/mies.",
       description: "Pełna obsługa TikTok",
       features: [
-        "Budżet reklamowy do 10 000 zł",
-        "4-6 kreacji wideo miesięcznie",
+        "Budżet reklamowy ustalany z Tobą",
+        "Regularna produkcja kreacji wideo",
         "In-Feed + Spark Ads",
         "Zaawansowane targetowanie",
         "Testy A/B kreacji",
         "Remarketing",
-        "Raporty tygodniowe",
+        "Raporty w uzgodnionym rytmie",
       ],
-      popular: true,
     },
     {
       name: "Premium",
-      price: "6 000",
-      period: "/mies.",
       description: "TikTok + Influencerzy",
       features: [
-        "Budżet reklamowy bez limitu",
-        "Nielimitowane kreacje",
-        "Wszystkie formaty reklamowe",
+        "Budżet reklamowy ustalany z Tobą",
+        "Kreacje w uzgodnionej liczbie",
+        "Dobór formatów reklamowych do celu",
         "Branded Hashtag Challenge",
         "Współpraca z influencerami",
-        "Produkcja wideo w studio",
-        "Dedykowany opiekun",
+        "Produkcja wideo",
         "Strategia wielokanałowa",
       ],
-      popular: false,
     },
-  ];
-
-  const stats = [
-    { value: "1.5B+", label: "Aktywnych użytkowników TikToka" },
-    { value: "52 min", label: "Średni czas spędzony dziennie" },
-    { value: "67%", label: "Użytkowników to 18-34 lata" },
-    { value: "2x", label: "Wyższe zaangażowanie niż inne platformy" },
   ];
 
   const faqItems = [
@@ -111,7 +94,7 @@ const TikTokAds = () => {
     },
     {
       question: "Jaki budżet potrzebuję na TikTok Ads?",
-      answer: "Minimalny budżet dzienny to około 50 zł, ale rekomendujemy start od 100-200 zł dziennie (3000-6000 zł miesięcznie) dla zebrania wystarczających danych. TikTok często ma niższy CPM niż Facebook/Instagram, więc za ten sam budżet możesz dotrzeć do większej liczby osób.",
+      answer: "Budżet dobieramy do celu kampanii, grupy docelowej i liczby testowanych kreacji — musi wystarczyć na zebranie danych do optymalizacji. Budżet reklamowy płacisz bezpośrednio TikTokowi, osobno od wynagrodzenia za obsługę kampanii, które wyceniamy po rozmowie o zakresie.",
       links: [
         { text: "Facebook Ads", href: "/uslugi/reklama-facebook" },
         { text: "Instagram Ads", href: "/performance-marketing/instagram-ads" }
@@ -134,14 +117,14 @@ const TikTokAds = () => {
     },
     {
       question: "Jak długo trwa produkcja reklamy TikTok?",
-      answer: "Prosta kreacja In-Feed może być gotowa w 2-3 dni. Bardziej złożone produkcje z nagraniem w studio zajmują 1-2 tygodnie. Dla Branded Hashtag Challenge potrzeba 3-4 tygodnie przygotowań. Rekomendujemy tworzenie wielu wariantów do testów A/B.",
+      answer: "To zależy od formatu: prosta kreacja In-Feed powstaje szybciej niż produkcja z dniem zdjęciowym, a Branded Hashtag Challenge wymaga najdłuższych przygotowań. Termin ustalamy w ofercie. Rekomendujemy tworzenie kilku wariantów do testów A/B.",
       links: [
         { text: "Produkcja wideo", href: "/uslugi/produkcja-video" }
       ]
     },
     {
       question: "Czy warto łączyć TikTok Ads z innymi platformami?",
-      answer: "Zdecydowanie tak! TikTok świetnie buduje świadomość i generuje ruch. W połączeniu z remarketingiem na Facebook/Instagram i Google Ads tworzy kompletną ścieżkę konwersji. Oferujemy kompleksową obsługę kampanii reklamowych na wszystkich platformach.",
+      answer: "Zdecydowanie tak! TikTok świetnie buduje świadomość i generuje ruch. W połączeniu z remarketingiem na Facebook/Instagram i Google Ads tworzy kompletną ścieżkę konwersji. Prowadzimy też kampanie Meta Ads i Google Ads, więc możemy zaplanować je razem.",
       links: [
         { text: "Facebook Ads", href: "/uslugi/reklama-facebook" },
         { text: "Google Ads", href: "/performance-marketing/google-ads" },
@@ -150,7 +133,7 @@ const TikTokAds = () => {
     },
     {
       question: "Co to są Spark Ads i dlaczego są skuteczne?",
-      answer: "Spark Ads to format pozwalający promować organiczne treści (Twoje lub influencerów) jako reklamy płatne. Zachowują wszystkie interakcje (lajki, komentarze) i wyglądają bardziej autentycznie. Często mają wyższy CTR i niższy koszt niż tradycyjne reklamy.",
+      answer: "Spark Ads to format pozwalający promować organiczne treści (Twoje lub influencerów) jako reklamy płatne. Zachowują interakcje (lajki, komentarze) i wyglądają jak zwykłe treści na platformie, dlatego warto je testować obok klasycznych reklam.",
       links: [
         { text: "Social Media", href: "/agencja-social-media/poznan" }
       ]
@@ -202,7 +185,7 @@ const TikTokAds = () => {
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
               Prowadzimy kampanie TikTok Ads dla firm przez TikTok for Business i TikTok Ads Manager.
-              Tworzymy viralowe kreacje wideo, In-Feed Ads i Spark Ads, które docierają do Twojej grupy docelowej i generują realne konwersje.
+              Tworzymy kreacje wideo, In-Feed Ads i Spark Ads dopasowane do Twojej grupy docelowej i celu kampanii.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="text-lg px-8">
@@ -219,27 +202,6 @@ const TikTokAds = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-16 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="text-center"
-              >
-                <div className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-500 mb-2">{stat.value}</div>
-                <div className="text-sm md:text-base text-muted-foreground">{stat.label}</div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Benefits Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
@@ -253,7 +215,7 @@ const TikTokAds = () => {
               Dlaczego TikTok Ads?
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Platforma z najwyższym zaangażowaniem użytkowników
+              Platforma oparta na krótkich formach wideo
             </p>
           </motion.div>
 
@@ -329,7 +291,7 @@ const TikTokAds = () => {
               Jak pracujemy
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Od strategii do viralowego contentu
+              Od strategii do gotowych kreacji
             </p>
           </motion.div>
 
@@ -368,7 +330,7 @@ const TikTokAds = () => {
               Cennik TikTok Ads
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Obsługa kampanii + produkcja kreacji wideo
+              Nie publikujemy stałych cen. Wycenę przygotowujemy po rozmowie o zakresie — zależy od liczby kreacji wideo, formatów, częstotliwości raportów i współpracy z influencerami.
             </p>
           </motion.div>
 
@@ -380,23 +342,13 @@ const TikTokAds = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.15 }}
-                className={`relative p-8 rounded-2xl border ${
-                  pkg.popular 
-                    ? 'bg-gradient-to-br from-pink-500/10 to-cyan-500/10 border-pink-500' 
-                    : 'bg-card border-border/50'
-                }`}
+                className="relative p-8 rounded-2xl border bg-card border-border/50"
               >
-                {pkg.popular && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-gradient-to-r from-pink-500 to-cyan-500 text-white text-sm font-medium rounded-full">
-                    Najpopularniejszy
-                  </div>
-                )}
                 <div className="text-center mb-6">
                   <h3 className="text-xl font-semibold text-foreground mb-2">{pkg.name}</h3>
                   <p className="text-sm text-muted-foreground mb-4">{pkg.description}</p>
                   <div className="flex items-baseline justify-center gap-1">
-                    <span className="text-4xl font-bold text-foreground">{pkg.price}</span>
-                    <span className="text-muted-foreground">zł{pkg.period}</span>
+                    <span className="text-xl font-semibold text-foreground">Wycena indywidualna</span>
                   </div>
                 </div>
                 <ul className="space-y-3 mb-8">
@@ -409,17 +361,17 @@ const TikTokAds = () => {
                 </ul>
                 <Button 
                   asChild 
-                  className={`w-full ${pkg.popular ? 'bg-gradient-to-r from-pink-500 to-cyan-500 hover:from-pink-600 hover:to-cyan-600' : ''}`}
-                  variant={pkg.popular ? "default" : "outline"}
+                  className="w-full"
+                  variant="outline"
                 >
-                  <Link to="/kontakt">Wybierz pakiet</Link>
+                  <Link to="/kontakt">Omów zakres</Link>
                 </Button>
               </motion.div>
             ))}
           </div>
 
           <p className="text-center text-sm text-muted-foreground mt-8">
-            * Ceny nie zawierają budżetu reklamowego, który trafia bezpośrednio do TikToka
+            * Budżet reklamowy płacisz bezpośrednio TikTokowi — zawsze osobno od wynagrodzenia za obsługę
           </p>
         </div>
       </section>
@@ -489,8 +441,8 @@ const TikTokAds = () => {
         <div className="container mx-auto px-4">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
             <h2 className="text-3xl font-heading font-bold mb-6">Agencja TikTok Ads — reklama na TikToku i kampanie marketingowe</h2>
-            <p className="text-muted-foreground mb-4">Agencja TikTok Ads Fotz Studio to specjaliści od kampanii na TikTok for Business dla firm B2C i e-commerce w Polsce. TikTok to jedna z najszybciej rosnących platform społecznościowych na świecie — reklamy TikTok docierają do zaangażowanych odbiorców (głównie Gen Z i Millennialsi). Formaty TikTok Ads: In-Feed Ads (w feedzie "Dla Ciebie"), Spark Ads (promocja treści organicznych), TopView (pierwsza reklama przy otwarciu aplikacji), Brand Takeover i Branded Hashtag Challenge. TikTok Pixel umożliwia śledzenie konwersji i budowanie custom audiences.</p>
-            <p className="text-muted-foreground mb-6">TikTok preferuje treści autentyczne i natywne — reklamy wyglądające jak organiczne wideo osiągają znacznie lepsze wyniki. Tworzenie kreacji pod TikToka wymaga rozumienia kultury platformy: trendy, dźwięki, filtry i challenge. Dobra reklama TikTok to taka, którą użytkownicy chcą oglądać. Zarządzamy kampaniami przez TikTok Ads Manager, monitorując CPM, CTR, CPC i ROAS każdej kampanii.</p>
+            <p className="text-muted-foreground mb-4">Fotz Studio prowadzi kampanie na TikTok for Business dla firm B2C i e-commerce w Polsce. Reklamy TikTok docierają przede wszystkim do młodszych odbiorców (Gen Z i Millennialsi). Formaty TikTok Ads: In-Feed Ads (w feedzie "Dla Ciebie"), Spark Ads (promocja treści organicznych), TopView (pierwsza reklama przy otwarciu aplikacji), Brand Takeover i Branded Hashtag Challenge. TikTok Pixel umożliwia śledzenie konwersji i budowanie custom audiences.</p>
+            <p className="text-muted-foreground mb-6">TikTok preferuje treści autentyczne i natywne — reklamy wyglądające jak organiczne wideo zwykle lepiej wpisują się w platformę. Tworzenie kreacji pod TikToka wymaga rozumienia kultury platformy: trendy, dźwięki, filtry i challenge. Dobra reklama TikTok to taka, którą użytkownicy chcą oglądać. Zarządzamy kampaniami przez TikTok Ads Manager, monitorując CPM, CTR, CPC i ROAS każdej kampanii.</p>
             <h2 className="text-3xl font-heading font-bold mb-6">Kampanie TikTok — jak reklamować firmę na TikToku?</h2>
             <p className="text-muted-foreground">TikTok for Business oferuje targetowanie podobne do Meta — zainteresowania, demografika, lookalike audiences i retargeting przez TikTok Pixel. Reklama na TikTok biznes staje się coraz ważniejszym elementem mediamixu firm B2C, szczególnie w e-commerce, beauty, fashion i gastronomii. Jako agencja TikTok Ads oferujemy pełną obsługę: od strategii kreatywnej i produkcji wideo, przez konfigurację kampanii w TikTok Ads Manager, po optymalizację i raportowanie wyników.</p>
           

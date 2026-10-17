@@ -43,14 +43,14 @@ const StronyInternetoweKoszalin = () => {
   ];
 
   const caseStudies = [
-    { title: "Apartamenty Chorwacja", category: "Strona rezerwacyjna", result: "+180% rezerwacji online", link: "/realizacje/apartamenty-chorwacja", image: apartamentyImg },
+    { title: "Apartamenty Chorwacja", category: "Strona rezerwacyjna", result: "Strona z rezerwacjami online", link: "/realizacje/apartamenty-chorwacja", image: apartamentyImg },
     { title: "Victory Cars", category: "Strona motoryzacyjna", result: "Nowoczesny design premium", link: "/realizacje/victory-cars", image: victoryCarsImg },
-    { title: "Cute Dumpling", category: "Strona gastronomiczna", result: "+250% ruchu organicznego", link: "/realizacje/cute-dumpling", image: cuteDumplingImg },
+    { title: "Cute Dumpling", category: "Strona gastronomiczna", result: "Strona z menu i ofertą lokalu", link: "/realizacje/cute-dumpling", image: cuteDumplingImg },
   ];
 
   const faqItems = [
     { question: "Ile kosztuje strona internetowa w Koszalinie?", answer: "Koszt zależy od zakresu, treści i integracji. Prześlij brief, aby otrzymać indywidualną ofertę z harmonogramem i rozpisanymi kosztami." },
-    { question: "Jak długo trwa realizacja strony?", answer: "Prosta strona wizytówka to 1-2 tygodnie. Strona firmowa wymaga 3-4 tygodni, a sklep 4-8 tygodni w zależności od złożoności." },
+    { question: "Jak długo trwa realizacja strony?", answer: "Czas realizacji zależy od zakresu, liczby podstron, integracji i tempa dostarczania materiałów. Konkretny harmonogram podajemy w ofercie po rozmowie o projekcie." },
     { question: "Czy oferujecie hosting i domenę?", answer: "Tak, pomagamy w wyborze i konfiguracji hostingu oraz domeny. Możemy przejąć pełną obsługę techniczną." },
     { question: "Czy strona będzie zoptymalizowana pod SEO?", answer: "Każda strona tworzona jest z myślą o pozycjonowaniu. Stosujemy najlepsze praktyki SEO dla widoczności w Google." },
     { question: "Czy mogę samodzielnie edytować treści?", answer: "Tak, wszystkie strony wyposażone są w intuicyjny panel CMS do łatwej edycji treści." },
@@ -59,12 +59,12 @@ const StronyInternetoweKoszalin = () => {
   const stats = [
     { value: "WWW", label: "Strony i sklepy", icon: Layers },
     { value: "UX", label: "Projekt dla odbiorcy", icon: Star },
-    { value: "5 lat", label: "Doświadczenia", icon: Clock },
+    { value: "Zdalnie", label: "Współpraca z Poznania", icon: Clock },
     { value: "Kontakt", label: "Uzgodniona opieka", icon: Headphones },
   ];
 
   const benefits = [
-    "Znajomość rynku zachodniopomorskiego",
+    "Pracujemy z Poznania, firmy z Koszalina obsługujemy zdalnie",
     "Kompleksowa obsługa od projektu po wdrożenie",
     "SEO w standardzie każdej strony",
     "Responsywny design mobile-first",
@@ -232,7 +232,7 @@ const StronyInternetoweKoszalin = () => {
               Koszalin to największe miasto Pomorza Środkowego — centrum handlowe, usługowe i turystyczne dla całego regionu między Szczecinem a Gdańskiem. Bliskość morza, rozbudowana infrastruktura i rosnący sektor usług dla turystów tworzą różnorodny rynek dla profesjonalnych stron internetowych.
             </p>
             <p className="text-muted-foreground mb-6">
-              Obsługujemy firmy z Koszalina, Słupska, Kołobrzegu i całego Pomorza Środkowego. Projekt w Figmie, wdrożenie online, pełna optymalizacja SEO. Termin: 3–5 tygodni. Bezpłatna wycena w 24 godziny.
+              Pracujemy z Poznania, a firmy z Koszalina, Słupska, Kołobrzegu i całego Pomorza Środkowego obsługujemy zdalnie. Projekt w Figmie, wdrożenie online, optymalizacja SEO. Termin i wycenę ustalamy po rozmowie o zakresie projektu.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
@@ -242,7 +242,7 @@ const StronyInternetoweKoszalin = () => {
               Region Koszalina to popularne letnisko — hotele, pensjonaty, campingi i restauracje potrzebują stron z systemem rezerwacji, galerią i wielojęzycznością. Sezon trwa od maja do września — strona musi działać bezbłędnie wtedy, gdy ruch jest najwyższy.
             </p>
             <p className="text-muted-foreground mb-6">
-              Dla lokalnych firm usługowych i handlowych projektujemy przystępne strony z lokalną optymalizacją SEO. Frazy z geolokalizacją — „usługa + Koszalin" — zapewniają stały napływ lokalnych klientów.
+              Dla lokalnych firm usługowych i handlowych projektujemy przystępne strony z lokalną optymalizacją SEO. Frazy z geolokalizacją — „usługa + Koszalin" — pomagają docierać do osób szukających usług w okolicy.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
@@ -252,7 +252,7 @@ const StronyInternetoweKoszalin = () => {
               Konfiguracja Google Moja Firma, optymalizacja pod frazy lokalne i budowanie widoczności w mapach Google — pełny pakiet lokalnego SEO. Dla firm działających sezonowo przygotowujemy strategie contentowe generujące ruch przez cały rok.
             </p>
             <p className="text-muted-foreground">
-              Skontaktuj się z nami — bezpłatna wycena, projekt w 3–5 tygodni. Tworzymy strony dla firm z Koszalina i całego Pomorza Środkowego.
+              Skontaktuj się z nami — przygotujemy bezpłatną wycenę po rozmowie o zakresie. Tworzymy strony dla firm z Koszalina i całego Pomorza Środkowego, pracując zdalnie z Poznania.
             </p>
           
                         <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">

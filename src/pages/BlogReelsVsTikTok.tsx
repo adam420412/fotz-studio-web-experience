@@ -1,6 +1,6 @@
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
-import { ArrowLeft, Calendar, Clock, User, Video, Users, TrendingUp, Zap, BarChart3, CheckCircle2, XCircle } from "lucide-react";
+import { ArrowLeft, Calendar, Clock, User, Video, TrendingUp, Zap, BarChart3, CheckCircle2, XCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { ArticleSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
@@ -163,61 +163,8 @@ const BlogReelsVsTikTok = () => {
               <h2>Demografia użytkowników</h2>
 
               <p>
-                Kluczowa różnica między platformami to wiek użytkowników:
+                Profil wiekowy użytkowników obu platform zmienia się z roku na rok i różni się między krajami, dlatego przed wyborem kanału warto sprawdzić aktualne dane o odbiorcach w panelach reklamowych TikToka i Mety. W praktyce TikTok jest kojarzony z młodszą publicznością, a Instagram Reels częściej trafia do osób, które już obserwują markę na Instagramie.
               </p>
-
-              <div className="not-prose my-8">
-                <div className="p-6 bg-card rounded-xl border border-border">
-                  <h4 className="font-semibold mb-4 flex items-center gap-2">
-                    <Users className="w-5 h-5 text-primary" />
-                    Rozkład wiekowy użytkowników
-                  </h4>
-                  <div className="space-y-4">
-                    <div>
-                      <p className="text-sm text-muted-foreground mb-2">TikTok</p>
-                      <div className="flex gap-2">
-                        <div className="flex-1">
-                          <div className="h-6 bg-primary/80 rounded" style={{ width: "40%" }}></div>
-                          <p className="text-xs text-muted-foreground mt-1">16-24: 40%</p>
-                        </div>
-                        <div className="flex-1">
-                          <div className="h-6 bg-primary/60 rounded" style={{ width: "32%" }}></div>
-                          <p className="text-xs text-muted-foreground mt-1">25-34: 32%</p>
-                        </div>
-                        <div className="flex-1">
-                          <div className="h-6 bg-primary/40 rounded" style={{ width: "16%" }}></div>
-                          <p className="text-xs text-muted-foreground mt-1">35-44: 16%</p>
-                        </div>
-                        <div className="flex-1">
-                          <div className="h-6 bg-primary/20 rounded" style={{ width: "12%" }}></div>
-                          <p className="text-xs text-muted-foreground mt-1">45+: 12%</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <p className="text-sm text-muted-foreground mb-2">Instagram Reels</p>
-                      <div className="flex gap-2">
-                        <div className="flex-1">
-                          <div className="h-6 bg-pink-500/80 rounded" style={{ width: "23%" }}></div>
-                          <p className="text-xs text-muted-foreground mt-1">16-24: 23%</p>
-                        </div>
-                        <div className="flex-1">
-                          <div className="h-6 bg-pink-500/60 rounded" style={{ width: "31%" }}></div>
-                          <p className="text-xs text-muted-foreground mt-1">25-34: 31%</p>
-                        </div>
-                        <div className="flex-1">
-                          <div className="h-6 bg-pink-500/40 rounded" style={{ width: "24%" }}></div>
-                          <p className="text-xs text-muted-foreground mt-1">35-44: 24%</p>
-                        </div>
-                        <div className="flex-1">
-                          <div className="h-6 bg-pink-500/20 rounded" style={{ width: "22%" }}></div>
-                          <p className="text-xs text-muted-foreground mt-1">45+: 22%</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
               <h2>Algorytm i zasięgi</h2>
 
@@ -400,7 +347,7 @@ const BlogReelsVsTikTok = () => {
 
                   <div>
                     <h3 className="text-lg font-semibold mb-2">Czy TikTok jest tylko dla Gen Z?</h3>
-                    <p className="text-muted-foreground">Nie! 40% użytkowników TikToka ma ponad 25 lat. Platforma szybko dojrzewa i dociera do coraz szerszej publiczności.</p>
+                    <p className="text-muted-foreground">Nie. Z TikToka korzystają także starsze grupy wiekowe, a platforma dociera do coraz szerszej publiczności. Aktualny rozkład wieku odbiorców sprawdzisz w panelu TikTok Ads.</p>
                   </div>
                 </div>
               </div>

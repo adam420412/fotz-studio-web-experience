@@ -19,10 +19,7 @@ import {
   Award,
   Video,
   TrendingUp,
-  AlertCircle,
-  Eye,
-  Zap,
-  Star
+  AlertCircle
 } from "lucide-react";
 import { ServiceSchema, BreadcrumbSchema, FAQSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -47,13 +44,13 @@ const services = [
   {
     icon: Search,
     title: "Pozycjonowanie SEO",
-    description: "Fotz Studio jako agencja SEO Legnica zwiększa widoczność firm w Google. Audyt techniczny, optymalizacja treści, link building. Specjalizacja w SEO lokalnym dla Legnicy i woj. dolnośląskiego.",
+    description: "Fotz Studio jako agencja SEO Legnica zwiększa widoczność firm w Google. Audyt techniczny, optymalizacja treści, link building. Obejmujemy też SEO lokalne dla Legnicy i woj. dolnośląskiego. Nie gwarantujemy konkretnej pozycji w Google.",
     link: "/seo/pozycjonowanie"
   },
   {
     icon: Target,
     title: "Kampanie Google Ads i Facebook Ads",
-    description: "Zaawansowane kampanie marketingowe w Google Ads i Meta Ads. Konfiguracja, optymalizacja i skalowanie. Raportowanie ROAS i CPL. Budżety od 2 000 do 100 000 PLN/mies. Wyniki sprzedażowe mierzone w leadach i konwersjach.",
+    description: "Zaawansowane kampanie marketingowe w Google Ads i Meta Ads. Konfiguracja, optymalizacja i skalowanie. Raportowanie ROAS i CPL. Budżet reklamowy płacisz platformom osobno — jego wysokość ustalamy razem. Wyniki mierzymy w leadach i konwersjach.",
     link: "/performance-marketing/google-ads"
   },
   {
@@ -65,13 +62,13 @@ const services = [
   {
     icon: Video,
     title: "Produkcja wideo i foto",
-    description: "Profesjonalne sesje fotograficzne, filmy produktowe i kreacje wideo na social media. Realizacje w Legnicy i całej Polsce. Materiały graficzne i wideo gotowe do kampanii reklamowych dla handlu, produkcji i usług.",
+    description: "Profesjonalne sesje fotograficzne, filmy produktowe i kreacje wideo na social media. Nagrania i sesje możliwe na miejscu w Legnicy i w całej Polsce. Materiały graficzne i wideo gotowe do kampanii reklamowych dla handlu, produkcji i usług.",
     link: "/uslugi/produkcja-filmow"
   },
   {
     icon: Palette,
     title: "Branding i identyfikacja wizualna",
-    description: "Budujemy i rozwijamy Twój brand. Logo, brandbook, system identyfikacji wizualnej, materiały graficzne. Spójna identyfikacja wizualna Twojej marki przekłada się na wyższe ceny i lepsze konwersje dla firm produkcyjnych i handlowych.",
+    description: "Budujemy i rozwijamy Twój brand. Logo, brandbook, system identyfikacji wizualnej, materiały graficzne. Spójna identyfikacja wizualna pomaga budować rozpoznawalność i zaufanie do marki firm produkcyjnych i handlowych.",
     link: "/uslugi/identyfikacja-wizualna"
   }
 ];
@@ -103,51 +100,6 @@ const processSteps = [
   }
 ];
 
-const pricingTiers = [
-  {
-    name: "START",
-    price: "1 500",
-    description: "Idealne do wprowadzenia firmy na rynek online",
-    includes: [
-      "Audyt obecności online",
-      "Optymalizacja profilu lokalnego",
-      "1 kanał marketingowy (Google Ads lub Social Media)",
-      "Raportowanie miesięczne",
-      "Konsultacje co 2 tygodnie"
-    ]
-  },
-  {
-    name: "ROZWÓJ",
-    price: "3 500",
-    description: "Kompleksowy marketing z wymiernymi wynikami",
-    includes: [
-      "Strategia marketingowa",
-      "2-3 kanały (SEO, Google Ads, Social Media)",
-      "Tworzenie treści",
-      "Kampanie remarketing",
-      "Raportowanie tygodniowe",
-      "Dedykowany ekspert",
-      "Optymalizacja budżetu"
-    ],
-    highlighted: true
-  },
-  {
-    name: "PREMIUM",
-    price: "7 000+",
-    description: "Full-service marketing z pełnym wsparciem strategicznym",
-    includes: [
-      "Kompleksowa strategia biznesowa",
-      "Wszystkie kanały marketingowe",
-      "Projektowanie i optymalizacja strony",
-      "Kampanie video i produkcja treści",
-      "Pełna obsługa mediów społecznościowych",
-      "Raportowanie real-time",
-      "Dedykowany kierownik konta",
-      "Scaling budżetu i optymalizacja zaawansowana"
-    ]
-  }
-];
-
 const chooseCriteria = [
   {
     icon: Award,
@@ -162,7 +114,7 @@ const chooseCriteria = [
   {
     icon: Users,
     title: "Dedykowany ekspert, nie call-center",
-    desc: "Kluczowe jest, czy masz stały kontakt z ekspertem znającym Twój biznes. Rotacja juniorów to jeden z najczęstszych powodów niezadowolenia klientów z agencji marketingowych w Polsce."
+    desc: "Kluczowe jest, czy masz stały kontakt z ekspertem znającym Twój biznes. Częsta zmiana osób prowadzących projekt utrudnia ciągłość i zrozumienie Twojego biznesu."
   },
   {
     icon: TrendingUp,
@@ -178,19 +130,19 @@ const faqItems = [
   },
   {
     question: "Czy agencja z innego miasta obsługuje klientów z Legnicy?",
-    answer: "Tak — obsługujemy firmy z całej Polski, w tym z Legnicy i okolic. Współpraca z klientem przebiega online (Google Meet, Teams). Przy większych kampaniach przyjeżdżamy do Legnicy. Format online nie wpływa na jakość i wyniki kampanii reklamowych — obsługujemy firmy produkcyjne, handlowe i usługowe z takim samym zaangażowaniem."
+    answer: "Tak — pracujemy z Poznania, a firmy z Legnicy i okolic obsługujemy zdalnie. Współpraca przebiega online (Google Meet, Teams), a gdy projekt tego wymaga (np. nagrania wideo lub sesja zdjęciowa), przyjeżdżamy na miejsce. Kampanie reklamowe i SEO prowadzi się online, więc odległość nie jest przeszkodą."
   },
   {
     question: "Ile kosztuje agencja marketingowa w Legnicy?",
-    answer: "Ceny zależą od zakresu usług. Pojedynczy kanał (np. pozycjonowania SEO lub kampanie Meta) to od 1 500 PLN/mies. Kompleksowa obsługa marketingowa — SEO, Google Ads, social media — od 3 500 PLN/mies. PREMIUM pakiet z pełnym wsparciem od 7 000+ PLN/mies. Każdą wycenę poprzedzamy bezpłatną konsultacją. Uważaj na reklama agencji w stylu 'kompleksowy marketing od 299 PLN' — zwykle oznacza brak strategii biznesowej."
+    answer: "Wycenę przygotowujemy po rozmowie o zakresie. Zależy ona od liczby kanałów (SEO, Google Ads, Meta, social media), ilości treści i kreacji do przygotowania, częstotliwości raportowania oraz od tego, czy potrzebna jest nowa strona lub produkcja wideo. Budżet reklamowy płacony Google czy Meta jest zawsze osobną pozycją. Każdą wycenę poprzedzamy bezpłatną konsultacją. Uważaj na oferty kompleksowego marketingu za symboliczną kwotę — zwykle oznaczają brak strategii biznesowej."
   },
   {
     question: "Marketing dla firm produkcyjnych i handlowych w Legnicy — jak powinna być zbudowana agencja?",
-    answer: "Legnica to ośrodek przemysłowy — górnictwo miedzi (KGHM), produkcja, handel. Marketing dla firm produkcyjnych wymaga innego podejścia niż dla startupów tech — focus na local SEO, kampanie dla High-intent klientów B2B, katalogi produktów, content marketing edukacyjny. Agencja powinna rozumieć cykl sprzedaży w branży, targetowanie właściwych osób decyzyjnych oraz efektywne wykorzystanie budżetu reklamowego dla firm lokalnych. Specjalizujemy się w marketingu dla produkcji i handlu w Legnicy."
+    answer: "Legnica to ośrodek przemysłowy — przemysł miedziowy, produkcja, handel. Marketing dla firm produkcyjnych wymaga innego podejścia niż dla startupów tech — focus na local SEO, kampanie dla High-intent klientów B2B, katalogi produktów, content marketing edukacyjny. Agencja powinna rozumieć cykl sprzedaży w branży, targetowanie właściwych osób decyzyjnych oraz efektywne wykorzystanie budżetu reklamowego dla firm lokalnych."
   },
   {
     question: "Jakie kampanie reklamowe warto prowadzić dla firmy z Legnicy?",
-    answer: "Legnica to miasto dynamiczne — 160 tysięcy mieszkańców, znaczący ośrodek gospodarczy, bliskość Dolnego Śląska i rynku DACH. Dla firm produkcyjnych skuteczne są kampanie B2B na Google Ads, LinkedIn, katalogi produktów, SEO dla long-tail keywords. Dla handlu — Google Shopping, kampanie Meta, remarketing. Dla usług — local SEO, Google Business, kampanie na terenie Legnicy. Dobieramy strategie do celu i budżetu każdego klienta — bez szablonów."
+    answer: "Legnica to znaczący ośrodek gospodarczy Dolnego Śląska, blisko rynku DACH. Dla firm produkcyjnych skuteczne są kampanie B2B na Google Ads, LinkedIn, katalogi produktów, SEO dla long-tail keywords. Dla handlu — Google Shopping, kampanie Meta, remarketing. Dla usług — local SEO, Google Business, kampanie na terenie Legnicy. Dobieramy strategie do celu i budżetu każdego klienta — bez szablonów."
   },
   {
     question: "Czym różni się agencja marketingowa od agencji reklamowej?",
@@ -202,11 +154,11 @@ const faqItems = [
   },
   {
     question: "Czy oferujecie kompleksową obsługę marketingową dla firm z Legnicy?",
-    answer: "Tak, jesteśmy agencją full-service. Możemy zaprojektować stronę lub katalog produktów, a następnie prowadzić jej kompleksowy marketing — SEO, Google Ads, kampanie Meta, social media (Instagram, Facebook, LinkedIn), email marketing. Jeden partner, pełna odpowiedzialność. Spójność strategii i kreacje dają lepsze efekty niż współpracować z kilkoma firmami naraz. Specjalizujemy się w marketingu dla firm produkcyjnych, handlowych i usługowych z Legnicy i regionu."
+    answer: "Tak, jesteśmy agencją full-service. Możemy zaprojektować stronę lub katalog produktów, a następnie prowadzić jej kompleksowy marketing — SEO, Google Ads, kampanie Meta, social media (Instagram, Facebook, LinkedIn), email marketing. Jeden partner, pełna odpowiedzialność. Spójność strategii i kreacje dają lepsze efekty niż współpracować z kilkoma firmami naraz."
   },
   {
     question: "Marketing dla firm z obszaru górnictwa i produkcji — jakie mamy doświadczenie?",
-    answer: "Legnica to tradycyjne centrum górnictwa miedzi (KGHM) i produkcji. Marketing dla firm z tej branży wymaga zrozumienia specyfiki — long sales cycle, wielu decydentów, B2B oriented. Prowadzimy kampanie dla firm produkcyjnych, dostawców usług dla KGHM i firm handlowych. Znamy branżę, znamy naszych klientów, wiemy jak efektywnie promować produkty i usługi dla sektora produkcyjnego w Legnicy i regionie dolnośląskim."
+    answer: "Legnica to tradycyjne centrum przemysłu miedziowego i produkcji. Marketing dla firm z tej branży wymaga zrozumienia specyfiki — długi cykl sprzedaży, wielu decydentów, model B2B. Mamy doświadczenie we współpracy z firmą przemysłową H. Cegielski – FPS z Poznania (strona i treści). Firmy z Legnicy obsługujemy zdalnie z Poznania — każdy projekt zaczynamy od poznania Twojej branży i klientów."
   }
 ];
 
@@ -258,11 +210,11 @@ export default function AgencjaMarketingowaLegnica() {
             </motion.h1>
 
             <motion.p variants={fadeIn} className="text-lg md:text-xl text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Kompleksowy marketing internetowy dla firm z Legnicy. SEO, Google Ads, social media, strony internetowe i wideo — wszystko w jednej agencji. Fotz Studio to profesjonalna agencja reklamowa Legnica i agencja digital łącząca kreatywność z analityką danych.
+              Kompleksowy marketing internetowy dla firm z Legnicy. SEO, Google Ads, social media, strony internetowe i wideo — wszystko w jednej agencji. Fotz Studio to agencja digital z Poznania łącząca kreatywność z analityką danych — firmy z Legnicy obsługujemy zdalnie.
             </motion.p>
 
             <motion.p variants={fadeIn} className="text-base text-muted-foreground/80 mb-10 max-w-xl mx-auto">
-              Legnica to 160 tysięcy mieszkańców, ośrodek przemysłowy znany jako historyczna Stolica Miedzi, sede KGHM Polska Miedź. Silna baza produkcyjna, handel, usługi — firmy, które inwestują w profesjonalne kampanie marketingowe, systematycznie zyskują nowych klientów i polepszają sprzedaż.
+              Legnica to ośrodek przemysłowy znany jako historyczna Stolica Miedzi. Silna baza produkcyjna, handel, usługi — firmy, które inwestują w profesjonalne kampanie marketingowe, systematycznie zyskują nowych klientów i polepszają sprzedaż.
             </motion.p>
 
             <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -290,10 +242,10 @@ export default function AgencjaMarketingowaLegnica() {
             className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto text-center"
           >
             {[
-              { value: "5+ lat", label: "doświadczenia w Legnicy i regionie" },
-              { value: "85+", label: "klientów z Legnicy i okolic" },
-              { value: "+320%", label: "średni wzrost ruchu w kampaniach" },
-              { value: "4.9/5", label: "średnia ocen klientów" }
+              { value: "Poznań", label: "stąd pracujemy, Legnicę obsługujemy zdalnie" },
+              { value: "Full-service", label: "strony, SEO, kampanie, social media, wideo" },
+              { value: "Raport", label: "co miesiąc z wynikami kampanii" },
+              { value: "Konsultacja", label: "bezpłatna, bez zobowiązań" }
             ].map((s, i) => (
               <motion.div key={i} variants={fadeIn}>
                 <div className="text-3xl md:text-4xl font-heading font-bold text-yellow-400 mb-1">{s.value}</div>
@@ -427,7 +379,7 @@ export default function AgencjaMarketingowaLegnica() {
               <div className="flex items-start gap-3">
                 <AlertCircle className="w-5 h-5 text-yellow-400 flex-shrink-0 mt-0.5" />
                 <p className="text-sm text-muted-foreground">
-                  <strong className="text-foreground">Uwaga na najtańszą ofertę z Legnicy:</strong> Agencje marketingowe oferujące bardzo niskie stawki często pracują na szablonach bez strategii biznesowej, nie mierzą konwersji, albo współpracować wolą z tanimi podwykonawcami. Najtańsza reklama w Legnicy rzadko oznacza najlepszy zwrot z inwestycji w kampanie reklamowe. Zamiast ceny — pytaj o wyniki.
+                  <strong className="text-foreground">Uwaga na najtańszą ofertę z Legnicy:</strong> Agencje marketingowe oferujące bardzo niskie stawki często pracują na szablonach bez strategii biznesowej, nie mierzą konwersji, albo współpracować wolą z tanimi podwykonawcami. Najtańsza reklama w Legnicy rzadko oznacza najlepszy zwrot z inwestycji w kampanie reklamowe. Zamiast samej ceny — pytaj o sposób mierzenia wyników.
                 </p>
               </div>
             </motion.div>
@@ -487,55 +439,35 @@ export default function AgencjaMarketingowaLegnica() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={staggerContainer}
-            className="max-w-6xl mx-auto"
+            className="max-w-3xl mx-auto"
           >
-            <motion.div variants={fadeIn} className="text-center mb-14">
+            <motion.div variants={fadeIn} className="text-center mb-10">
               <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                Pakiety marketingowe dla Twojej firmy
+                Od czego zależy wycena?
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Elastyczne pakiety dopasowane do budżetu i potrzeb Twojej firmy z Legnicy. Od wprowadzenia na rynek do kompleksowej obsługi marketingowej.
+                Nie mamy sztywnych pakietów. Wycenę przygotowujemy po rozmowie o zakresie i celach Twojej firmy z Legnicy.
               </p>
             </motion.div>
-
-            <div className="grid md:grid-cols-3 gap-6">
-              {pricingTiers.map((tier, i) => (
-                <motion.div
-                  key={i}
-                  variants={fadeIn}
-                  className={`p-8 rounded-2xl border transition-all ${
-                    tier.highlighted
-                      ? "border-yellow-400/40 bg-yellow-400/5 ring-1 ring-yellow-400/10"
-                      : "border-border/40 bg-card/20"
-                  }`}
-                >
-                  {tier.highlighted && (
-                    <div className="inline-block px-3 py-1 rounded-full bg-yellow-400/20 text-yellow-400 text-xs font-semibold mb-4">
-                      Najpopularniejszy
-                    </div>
-                  )}
-                  <h3 className="text-2xl font-heading font-bold mb-2">{tier.name}</h3>
-                  <p className="text-muted-foreground text-sm mb-4">{tier.description}</p>
-                  <div className="mb-6">
-                    <span className="text-4xl font-heading font-bold text-yellow-400">{tier.price}</span>
-                    <span className="text-muted-foreground"> PLN/mies</span>
-                  </div>
-                  <ul className="space-y-3 mb-8">
-                    {tier.includes.map((item, j) => (
-                      <li key={j} className="flex items-start gap-3 text-sm text-muted-foreground">
-                        <CheckCircle2 className="w-4 h-4 text-yellow-400 flex-shrink-0 mt-0.5" />
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <Button asChild className={tier.highlighted ? "bg-yellow-400 text-gray-900 hover:bg-yellow-400/90 w-full font-semibold" : "border-border w-full"}>
-                    <Link to="/kontakt">
-                      {tier.highlighted ? "Umów konsultację" : "Zapytaj o szczegóły"}
-                    </Link>
-                  </Button>
-                </motion.div>
+            <motion.ul variants={fadeIn} className="space-y-3 mb-8">
+              {[
+                "Liczba kanałów marketingowych (SEO, Google Ads, Meta Ads, social media)",
+                "Ilość treści, grafik i materiałów wideo do przygotowania",
+                "Potrzeba nowej strony, sklepu lub katalogu produktów",
+                "Częstotliwość raportowania i spotkań",
+                "Budżet reklamowy płacony platformom (Google, Meta) — zawsze osobno od wynagrodzenia agencji"
+              ].map((item, j) => (
+                <li key={j} className="flex items-start gap-3 text-sm text-muted-foreground">
+                  <CheckCircle2 className="w-4 h-4 text-yellow-400 flex-shrink-0 mt-0.5" />
+                  <span>{item}</span>
+                </li>
               ))}
-            </div>
+            </motion.ul>
+            <motion.div variants={fadeIn} className="text-center">
+              <Button asChild className="bg-yellow-400 text-gray-900 hover:bg-yellow-400/90 font-semibold">
+                <Link to="/kontakt">Umów konsultację</Link>
+              </Button>
+            </motion.div>
           </motion.div>
         </div>
       </section>
@@ -603,7 +535,7 @@ export default function AgencjaMarketingowaLegnica() {
               </Button>
             </motion.div>
             <motion.p variants={fadeIn} className="text-gray-900/50 text-xs mt-6">
-              Odpowiadamy w ciągu 24 godzin · Bez sprzedaży pod presją · Indywidualne podejście do każdego klienta
+              Bez sprzedaży pod presją · Indywidualne podejście do każdego klienta
             </motion.p>
           </motion.div>
         </div>
@@ -639,12 +571,12 @@ export default function AgencjaMarketingowaLegnica() {
         <div className="container mx-auto px-4">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none text-muted-foreground">
             <h2 className="text-3xl font-heading font-bold mb-6 text-foreground">Agencja marketingowa Legnica — marketing internetowy dla firm z miasta Miedzianego</h2>
-            <p className="mb-4">Fotz Studio to agencja marketingowa Legnica oferująca kompleksowe usługi marketingu cyfrowego dla firm z Legnicy i okolic. Strategie marketingu cyfrowego, które tworzymy, łączą SEO, kampanie PPC, social media marketing i content marketing w spójny ekosystem, generujący leady i sprzedaż.</p>
-            <p className="mb-6">Legnica to dynamiczne miasto — 160 tysięcy mieszkańców, historyczna Stolica Miedzi, sede KGHM Polska Miedź, ośrodek produkcyjny i handlowy. Agencja marketingowa w Legnicy musi znać specyfikę rynku i dysponować narzędziami, które pozwolą Twojej firmie wyróżnić się na tle konkurencji.</p>
+            <p className="mb-4">Fotz Studio to agencja marketingowa z Poznania oferująca kompleksowe usługi marketingu cyfrowego — firmy z Legnicy i okolic obsługujemy zdalnie. Strategie marketingu cyfrowego, które tworzymy, łączą SEO, kampanie PPC, social media marketing i content marketing w spójny ekosystem, generujący leady i sprzedaż.</p>
+            <p className="mb-6">Legnica to historyczna Stolica Miedzi, ośrodek produkcyjny i handlowy. Agencja marketingowa w Legnicy musi znać specyfikę rynku i dysponować narzędziami, które pozwolą Twojej firmie wyróżnić się na tle konkurencji.</p>
 
             <h2 className="text-3xl font-heading font-bold mb-6 text-foreground">Marketing cyfrowy dla firm z Legnicy — SEO, Google Ads i social media</h2>
             <p className="mb-4">Oferujemy: pozycjonowanie stron internetowych w Legnicy, kampanie Google Ads (search, shopping, display), obsługę Social Media (Facebook, Instagram, LinkedIn dla B2B, TikTok), tworzenie stron internetowych Legnica i sklepów e-commerce, email marketing i marketing automation.</p>
-            <p className="mb-6">Agencja marketingowa Legnica z podejściem data-driven — analizujemy dane, by optymalizować każdy aspekt Twojej obecności online. Raporty efektywności kampanii, monitorowanie ruchu na stronie i analiza konwersji to elementy naszej standardowej usługi. Specjalizujemy się w marketingu dla firm produkcyjnych, handlowych, usług i branży miedziowej. Skontaktuj się — bezpłatna konsultacja dla firm z Legnicy.</p>
+            <p className="mb-6">Agencja marketingowa Legnica z podejściem data-driven — analizujemy dane, by optymalizować każdy aspekt Twojej obecności online. Raporty efektywności kampanii, monitorowanie ruchu na stronie i analiza konwersji to elementy naszej standardowej usługi. Skontaktuj się — bezpłatna konsultacja dla firm z Legnicy.</p>
 
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
               <Link to="/seo/pozycjonowanie" className="text-yellow-400 hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>

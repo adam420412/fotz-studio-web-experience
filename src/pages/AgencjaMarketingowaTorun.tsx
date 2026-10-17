@@ -23,22 +23,22 @@ const services = [
   {
     icon: Globe,
     title: "Strony i sklepy internetowe",
-    description: "Projektujemy responsywne strony www i sklepy e-commerce dla firm z Torunia. Szybkie, zoptymalizowane pod SEO i konwersję. Dedykowana obsługa dla firm turystycznych i restauracyjnych."
+    description: "Projektujemy responsywne strony www i sklepy e-commerce dla firm z Torunia. Szybkie, zoptymalizowane pod SEO i konwersję — także dla firm turystycznych i restauracji."
   },
   {
     icon: Target,
     title: "Pozycjonowanie SEO",
-    description: "Agencja SEO Toruń — zwiększamy widoczność firm w Google. Audyt techniczny, optymalizacja treści, link building. Specjalizacja w SEO lokalnym dla turystyki i hospitality."
+    description: "Agencja SEO Toruń — zwiększamy widoczność firm w Google. Audyt techniczny, optymalizacja treści, link building. SEO lokalne również dla turystyki i hospitality."
   },
   {
     icon: Zap,
     title: "Kampanie Google Ads",
-    description: "Zaawansowane kampanie Google Ads: search, shopping, display. Konfiguracja, optymalizacja i skalowanie dla firm z Torunia. Raportowanie ROAS i CPL. Budżety od 2 000 do 100 000 PLN/mies."
+    description: "Zaawansowane kampanie Google Ads: search, shopping, display. Konfiguracja, optymalizacja i skalowanie dla firm z Torunia. Raportowanie ROAS i CPL. Budżet reklamowy płacony Google ustalamy z Tobą i jest on osobno od naszego wynagrodzenia."
   },
   {
     icon: Star,
     title: "Kampanie Meta Ads",
-    description: "Kampanie na Facebooku i Instagramie z precyzyjnym targetowaniem. Efektywne dla turystyki (300k+ turystów/rok), restauracji, hoteli. Sezonowe kampanie dostosowane do piku turystycznego."
+    description: "Kampanie na Facebooku i Instagramie z precyzyjnym targetowaniem. Dla turystyki, restauracji i hoteli. Sezonowe kampanie dostosowane do piku turystycznego."
   },
   {
     icon: Users,
@@ -48,30 +48,30 @@ const services = [
   {
     icon: Building2,
     title: "Identyfikacja wizualna",
-    description: "Branding i identyfikacja wizualna: logo, brandbook, system identyfikacji. Dla firm turystycznych, restauracji, hoteli. Spójna wizualna tożsamość przekłada się na wyższe ceny i konwersje."
+    description: "Branding i identyfikacja wizualna: logo, brandbook, system identyfikacji. Dla firm turystycznych, restauracji, hoteli. Spójna identyfikacja ułatwia rozpoznawalność marki."
   }
 ];
 
 const faqItems = [
   {
     question: "Jak prowadzić marketing dla firm turystycznych w Toruniu?",
-    answer: "Toruń to UNESCO World Heritage Site, 200k+ mieszkańców, 300k+ turystów rocznie. Marketing turystyczny wymaga dual approach: sezonowe kampanie (Google Ads, Meta Ads) dla turystów + lokalny biznes (restauracje, hotele, atrakcje). Instagram i TikTok dla młodszych turystów, Google Ads dla starszych. Pozycjonowanie organiczne (SEO) działa całorocznie."
+    answer: "Stare Miasto w Toruniu jest wpisane na listę UNESCO i przyciąga turystów przez cały sezon. Marketing turystyczny wymaga dual approach: sezonowe kampanie (Google Ads, Meta Ads) dla turystów + lokalny biznes (restauracje, hotele, atrakcje). Instagram i TikTok dla młodszych turystów, Google Ads dla starszych. Pozycjonowanie organiczne (SEO) działa całorocznie."
   },
   {
     question: "Czy agencja z innego miasta obsługuje klientów z Torunia?",
-    answer: "Tak — obsługujemy firmy z całej Polski, w tym z Torunia i regionu kujawsko-pomorskiego. Współpraca przebiega online (Google Meet, Teams). Ponad 40% naszych klientów pochodzi z różnych miast. Format online nie wpływa na jakość kampanii — szczególnie dla firm turystycznych, gdzie sezonowość i trendy są kluczowe."
+    answer: "Tak — obsługujemy firmy z całej Polski, w tym z Torunia i regionu kujawsko-pomorskiego. Pracujemy z Poznania, a firmy z Torunia obsługujemy zdalnie (Google Meet, Teams). Kampanie, raporty i spotkania prowadzimy online, więc lokalizacja agencji nie ogranicza zakresu współpracy."
   },
   {
     question: "Ile kosztuje agencja marketingowa w Toruniu?",
-    answer: "Ceny zależą od zakresu: pojedynczy kanał (SEO, Meta Ads) od 1 500–3 000 PLN/mies. Kompleksowa obsługa — SEO, Google Ads, social media — od 5 000–15 000 PLN/mies. Dla firm turystycznych dodatkowy koszt to sezonowe skalowanie kampanii (pik turystyczny). Każdą wycenę poprzedzamy bezpłatną konsultacją znającą specyfikę toruńskiego rynku turystyki."
+    answer: "Nie mamy sztywnego cennika. Wycenę przygotowujemy po rozmowie o zakresie: liczbie kanałów (SEO, Google Ads, Meta Ads, social media), ilości treści do przygotowania i celach. Budżet reklamowy płacony platformom (Google, Meta) jest zawsze osobno — w turystyce często zmienia się sezonowo. Każdą wycenę poprzedzamy bezpłatną konsultacją."
   },
   {
     question: "Jakie są wyzwania marketingowe dla Torunia?",
-    answer: "Główne wyzwania: sezonowość turystyki (pik letni), konkurencja z dużych portali turystycznych (TripAdvisor, Booking), mała populacja lokalna (200k), marketing musi być dual — turystyka + lokalni klienci. Toruń to niche market turystyki — solidny SEO i targeted campaigns mogą mieć dużo większy impact niż w dużych miastach."
+    answer: "Główne wyzwania: sezonowość turystyki (pik letni), konkurencja z dużych portali turystycznych (TripAdvisor, Booking), ograniczony rynek lokalny, marketing musi być dual — turystyka + lokalni klienci. W mniejszym rynku dobrze dopasowane SEO i kampanie łatwiej wyróżniają się na tle konkurencji."
   },
   {
     question: "Czy oferujecie marketing dla restauracji i hoteli w Toruniu?",
-    answer: "Tak — to nasz core market dla Torunia. Marketing dla restauracji/hoteli: Google Ads dla rezerwacji, Meta Ads dla turystów, SEO dla lokalnych fraz (restauracje Toruń, hotele Stare Miasto), Instagram dla visual branding, TripAdvisor reputation management. Sezonowe kampanie dostosowane do piku turystycznego (maj-sierpień)."
+    answer: "Tak — obsługujemy je zdalnie. Marketing dla restauracji/hoteli: Google Ads dla rezerwacji, Meta Ads dla turystów, SEO dla lokalnych fraz (restauracje Toruń, hotele Stare Miasto), Instagram dla visual branding, TripAdvisor reputation management. Sezonowe kampanie dostosowane do piku turystycznego (maj-sierpień)."
   },
   {
     question: "Jak budować widoczność firmy turystycznej w Toruniu przez cały rok?",
@@ -79,7 +79,7 @@ const faqItems = [
   },
   {
     question: "Jakie są możliwości growth marketing dla startup'ów turystycznych w Toruniu?",
-    answer: "Growth marketing dla startup'ów: Google Ads (szybki lead gen dla rezerwacji), SEO (long-tail keywords dla niszy), social media (low-cost traffic via Instagram/TikTok), partnerships z innymi turystycznymi biznesami, email marketing dla repeat customers, content marketing (YouTube travel vlogs). Budżety zazwyczaj mniejsze (1 000–3 000 PLN/mies), więc skupiamy się na high-ROI kanałach."
+    answer: "Growth marketing dla startup'ów: Google Ads (szybki lead gen dla rezerwacji), SEO (long-tail keywords dla niszy), social media (low-cost traffic via Instagram/TikTok), partnerships z innymi turystycznymi biznesami, email marketing dla repeat customers, content marketing (YouTube travel vlogs). Przy mniejszych budżetach skupiamy się na kanałach, które najszybciej dają mierzalne dane."
   }
 ];
 
@@ -96,7 +96,7 @@ export default function AgencjaMarketingowaTorun() {
 
         <ServiceSchema
           name="Agencja Marketingowa Toruń"
-          description="Kompleksowe usługi marketingu internetowego dla firm z Torunia — SEO, Google Ads, Meta Ads, social media, specjalizacja w turystyce i hospitality."
+          description="Kompleksowe usługi marketingu internetowego dla firm z Torunia — SEO, Google Ads, Meta Ads, social media, także dla turystyki i hospitality. Pracujemy z Poznania, firmy z Torunia obsługujemy zdalnie."
           provider="Fotz Studio"
           areaServed="Toruń"
         />
@@ -120,7 +120,7 @@ export default function AgencjaMarketingowaTorun() {
             >
               <motion.div variants={fadeIn} className="mb-4">
                 <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-sm text-foreground/80">
-                  <MapPin className="w-4 h-4 text-primary" /> Toruń, Kujawsko-Pomorskie — współpraca online
+                  <MapPin className="w-4 h-4 text-primary" /> Toruń — pracujemy z Poznania, obsługujemy zdalnie
                 </span>
               </motion.div>
 
@@ -130,11 +130,11 @@ export default function AgencjaMarketingowaTorun() {
               </motion.h1>
 
               <motion.p variants={fadeIn} className="text-lg md:text-xl text-muted-foreground mb-6 max-w-2xl mx-auto">
-                Kompleksowy marketing internetowy dla firm z Torunia. SEO, Google Ads, Meta Ads, social media, strony internetowe — specjalizacja w turystyce, hotelach i restauracjach.
+                Kompleksowy marketing internetowy dla firm z Torunia. SEO, Google Ads, Meta Ads, social media, strony internetowe — także dla turystyki, hoteli i restauracji.
               </motion.p>
 
               <motion.p variants={fadeIn} className="text-base text-muted-foreground/80 mb-10 max-w-xl mx-auto">
-                Toruń to 200k+ mieszkańców, UNESCO World Heritage Site (Stare Miasto), 300k+ turystów rocznie. NCU university, Polpharma pharma plant, gingerbread industry. Marketing wymaga specjalizacji turystycznej — my ją mamy.
+                Pracujemy z Poznania, a firmy z Torunia obsługujemy zdalnie. Toruń to Stare Miasto z listy UNESCO, uniwersytet i silna lokalna gastronomia — strategię dopasowujemy do tego rynku i jego sezonowości.
               </motion.p>
 
               <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -147,31 +147,6 @@ export default function AgencjaMarketingowaTorun() {
                   <Link to="/realizacje">Zobacz nasze realizacje</Link>
                 </Button>
               </motion.div>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* Stats */}
-        <section className="py-12 bg-card/30 border-y border-border/30">
-          <div className="container px-4">
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={staggerContainer}
-              className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto text-center"
-            >
-              {[
-                { value: "+240%", label: "wzrost ruchu (3 miesiące)" },
-                { value: "TOP 3", label: "pozycje w Google" },
-                { value: "4.8/5", label: "ocena (10 opinii)" },
-                { value: "140+", label: "zrealizowanych kampanii" }
-              ].map((s, i) => (
-                <motion.div key={i} variants={fadeIn}>
-                  <div className="text-3xl md:text-4xl font-heading font-bold text-primary mb-1">{s.value}</div>
-                  <div className="text-sm text-muted-foreground">{s.label}</div>
-                </motion.div>
-              ))}
             </motion.div>
           </div>
         </section>
@@ -192,7 +167,7 @@ export default function AgencjaMarketingowaTorun() {
                   <span className="text-gradient">turystyki</span>
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Kompleksowe usługi dostosowane do specyfiki rynku toruńskiego — turystyka, hotele, restauracje i gingerbread.
+                  Kompleksowe usługi dostosowane do specyfiki rynku toruńskiego — turystyka, hotele, restauracje i lokalne firmy.
                 </p>
               </motion.div>
 
@@ -229,7 +204,7 @@ export default function AgencjaMarketingowaTorun() {
                   <span className="text-gradient">Torunia?</span>
                 </h2>
                 <p className="text-muted-foreground">
-                  Specjaliści w marketingu turystycznym i hospitality.
+                  Marketing dopasowany do sezonowości i lokalnego rynku.
                 </p>
               </motion.div>
 
@@ -237,8 +212,8 @@ export default function AgencjaMarketingowaTorun() {
                 {[
                   {
                     icon: Award,
-                    title: "Doświadczenie w turystyce",
-                    desc: "Rozumiemy sezonowość turystyki (300k+ turystów rocznie). Wiemy, jak targetować turystów, budować brand awareness, zarządzać sezonowymi spike'ami."
+                    title: "Planowanie pod sezon",
+                    desc: "Uwzględniamy sezonowość turystyki: kampanie skalujemy w szczycie, a poza sezonem stawiamy na lokalnych klientów i budowanie marki."
                   },
                   {
                     icon: TrendingUp,
@@ -248,12 +223,12 @@ export default function AgencjaMarketingowaTorun() {
                   {
                     icon: Users,
                     title: "Dedykowany ekspert projektu",
-                    desc: "Znający specyfikę Torunia, UNESCO heritage marketing, konkurencję turystyczną. Stały kontakt, nie rotacja juniorów."
+                    desc: "Jedna osoba prowadząca, która poznaje Twój biznes i konkurencję w Toruniu. Stały kontakt zdalny, nie rotacja juniorów."
                   },
                   {
                     icon: Globe,
                     title: "Strategia dla UNESCO hub'a",
-                    desc: "Toruń to UNESCO World Heritage Site — znamy heritage marketing, storytelling, visual branding dla turystów. International targeting (niemcy, inne kraje UE)."
+                    desc: "Stare Miasto z listy UNESCO to mocny motyw do storytellingu i treści wizualnych dla turystów. Kampanie możemy kierować też do turystów zagranicznych (np. z Niemiec)."
                   }
                 ].map((item, i) => (
                   <motion.div
@@ -299,7 +274,7 @@ export default function AgencjaMarketingowaTorun() {
                 </Button>
               </motion.div>
               <motion.p variants={fadeIn} className="text-white/50 text-xs mt-6">
-                Odpowiadamy w ciągu 24 godzin · Bez sprzedaży pod presją
+                Bez sprzedaży pod presją
               </motion.p>
             </motion.div>
           </div>

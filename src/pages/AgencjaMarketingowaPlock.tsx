@@ -22,15 +22,15 @@ export default function AgencjaMarketingowaPlock() {
     },
     {
       question: "Czy SEO dla malych firm w Plocku ma sens ekonomiczny?",
-      answer: "Absolutnie! Lokalne SEO dla malych firm w Plocku jest bardzo efektywne kosztowo. Pozwala dotrzec do klientow szukajacych Twoich uslug w Plocku i okolicznych gminach. Inwestycja w SEO zwraca sie szybciej niz w reklame tradycyjne, a rezultaty sa trwale."
+      answer: "Absolutnie! Lokalne SEO dla malych firm w Plocku jest bardzo efektywne kosztowo. Pozwala dotrzec do klientow szukajacych Twoich uslug w Plocku i okolicznych gminach. Oplacalnosc zalezy od branzy i konkurencji — ocenimy ja po analizie Twojej strony i rynku."
     },
     {
       question: "Jak dlugo trwa widocznosc w Google dla agencji z Plocka?",
-      answer: "Pierwsze wyniki SEO mozna zaobserwowac juz po 4-6 tygodniach, jednak pena widocznosc w wyszukiwarce zwykle wymaga 3-6 miesiecy pracy. Czas zalezy od konkurencji, poziomu trudnosci slowan kluczowych i aktualnego stanu strony. Gwarantujemy przejrzystosc w procesie optymalizacji."
+      answer: "SEO to proces dlugofalowy — zwykle trwa miesiacami, a tempo zalezy od konkurencji, trudnosci slow kluczowych i aktualnego stanu strony. Nie gwarantujemy konkretnej pozycji ani terminu jej osiagniecia. Na biezaco raportujemy wykonane prace i zmiany widocznosci."
     },
     {
       question: "Czy agencja z Plocka moze pomoc w reklamie na Facebooku i Instagramie?",
-      answer: "Tak, oferujemy pelnoprawne uslogi reklamy na mediach spolecznych, w tym Facebook i Instagram. Tworzymy kampanie kierowane do odbiorcow z Plocka i regionu, optymalizujemy budzety reklamowe i mierzymy ROI. Nasze kampanie social media maja ponad 50% lepsze wyniki niz srednia branzowa."
+      answer: "Tak, oferujemy pelnoprawne uslogi reklamy na mediach spolecznych, w tym Facebook i Instagram. Tworzymy kampanie kierowane do odbiorcow z Plocka i regionu, optymalizujemy budzety reklamowe i mierzymy ROI."
     }
   ];
 
@@ -38,7 +38,7 @@ export default function AgencjaMarketingowaPlock() {
     <Layout>
       <SEOHead
         title="Agencja Marketingowa Plock | SEO, Google Ads, Social Media"
-        description="Profesjonalna agencja marketingowa w Płocku. Usługi SEO, Google Ads, social media marketing i tworzenie stron internetowych dla firm z Płocka i Mazowsza. Darmowa konsultacja na start."
+        description="Agencja marketingowa dla firm z Płocka — pracujemy z Poznania, obsługa zdalna. Usługi SEO, Google Ads, social media marketing i tworzenie stron internetowych dla firm z Płocka i Mazowsza. Darmowa konsultacja na start."
         canonical="https://www.fotz-studio.pl/agencja-marketingowa/plock"
         keywords="agencja marketingowa płock, marketing internetowy płock, agencja reklamowa płock, seo płock"
       />
@@ -46,7 +46,7 @@ export default function AgencjaMarketingowaPlock() {
       <BreadcrumbSchema items={breadcrumbs} />
       <ServiceSchema
         name="Agencja Marketingowa Plock"
-        description="Kompleksowe uslugami marketingowe dla firm w Plocku"
+        description="Kompleksowe uslugi marketingowe dla firm z Plocka (obsluga zdalna z Poznania)"
         areaServed="Plock"
       />
       <FAQSchema items={faqItems} />
@@ -56,7 +56,7 @@ export default function AgencjaMarketingowaPlock() {
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Agencja Marketingowa w Plocku
+              Agencja Marketingowa dla Firm z Płocka
             </h1>
             <p className="text-xl text-blue-100 mb-6">
               Profesjonalne uslugami marketingowe dla firm z Plocka. SEO, Google Ads, social media i tworzenie stron internetowych.
@@ -80,10 +80,10 @@ export default function AgencjaMarketingowaPlock() {
                 Plock to dynamicznie rozwijajace sie miasto nad Wislą na Mazowszu, stanowiace ważny center gospodarczy i logistyczny regionu. Lokalny rynek charakteryzuje sie silna obecnoscia przemyslu petrochemicznego (PKN Orlen), a takze rosnacej liczbie firm z sektora handlu, uslug i turystyki.
               </p>
               <p className="text-gray-700 mb-4">
-                Konkurencja miedzy firmami w Plocku systematycznie rosnaca. Aby Twoj biznes wyróznial sie na tle konkurencji, musisz byc widoczny tam, gdzie szukaja Cie klienci - online. Wiecej niz 75% konsumentów szuka firm lokalnych w Internecie przez Google, Facebook i Instagram.
+                Konkurencja miedzy firmami w Plocku systematycznie rosnaca. Aby Twoj biznes wyróznial sie na tle konkurencji, musisz byc widoczny tam, gdzie szukaja Cie klienci - online. Coraz wiecej klientow szuka lokalnych firm w Google, na Facebooku i Instagramie.
               </p>
               <p className="text-gray-700">
-                Specjalizujemy sie w marketing dla firm z Plocka i okolic, rozumiemy specyfike lokalnego rynku i potrzeby przedsiębiorców z naszego regionu.
+                Pracujemy z Poznania, a firmy z Plocka i okolic obslugujemy zdalnie — spotkania online, wspolne dokumenty i regularne raporty.
               </p>
             </div>
             <div className="bg-white p-8 rounded-lg shadow-lg">
@@ -150,7 +150,7 @@ export default function AgencjaMarketingowaPlock() {
               <TrendingUp className="text-blue-600 mb-4" size={32} />
               <h3 className="text-xl font-bold text-gray-900 mb-3">Google Ads i SEM</h3>
               <p className="text-gray-700 mb-4">
-                Reklama Google Ads to najszybszy sposób na zdobycie klientow. Tworzymy kampanie kierowane bezposrednio na potencjalnych klientow w Plocku z wysokim wspolczynnikiem konwersji.
+                Reklama Google Ads pozwala dotrzec do osob, ktore wlasnie szukaja Twoich uslug. Tworzymy kampanie kierowane na potencjalnych klientow w Plocku i optymalizujemy je pod konwersje.
               </p>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li className="flex items-center gap-2">
@@ -267,101 +267,18 @@ export default function AgencjaMarketingowaPlock() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
-            Pakiety Cenowe dla Firm z Plocka
+            Od czego zależy wycena?
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Basic */}
-            <div className="bg-white p-8 rounded-lg shadow-lg">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Pakiet Starter</h3>
-              <p className="text-gray-600 mb-6">Dla malych firm i start-upow</p>
-              <p className="text-4xl font-bold text-blue-600 mb-6">1 499 zl/mc</p>
-              <ul className="space-y-3 mb-8 text-gray-700">
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 size={20} className="text-green-600" />
-                  Strona internetowa
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 size={20} className="text-green-600" />
-                  Podstawowe SEO
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 size={20} className="text-green-600" />
-                  Google My Business
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 size={20} className="text-green-600" />
-                  1 profil social media
-                </li>
-              </ul>
-              <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
-                Wybierz
-              </a>
-            </div>
-
-            {/* Professional */}
-            <div className="bg-white p-8 rounded-lg shadow-lg border-2 border-blue-600">
-              <div className="inline-block bg-blue-600 text-white px-4 py-1 rounded text-sm font-semibold mb-4">
-                Najpopularniejszy
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Pakiet Profesjonalny</h3>
-              <p className="text-gray-600 mb-6">Dla rozwijajacych sie firm</p>
-              <p className="text-4xl font-bold text-blue-600 mb-6">3 499 zl/mc</p>
-              <ul className="space-y-3 mb-8 text-gray-700">
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 size={20} className="text-green-600" />
-                  Strona + e-commerce
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 size={20} className="text-green-600" />
-                  SEO zaawansowane
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 size={20} className="text-green-600" />
-                  Google Ads (1000 zl/mc)
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 size={20} className="text-green-600" />
-                  Facebook + Instagram
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 size={20} className="text-green-600" />
-                  Raporty miesieczne
-                </li>
-              </ul>
-              <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
-                Wybierz
-              </a>
-            </div>
-
-            {/* Enterprise */}
-            <div className="bg-white p-8 rounded-lg shadow-lg">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Pakiet Enterprise</h3>
-              <p className="text-gray-600 mb-6">Dla dużych firm i korporacji</p>
-              <p className="text-4xl font-bold text-blue-600 mb-6">Wycena</p>
-              <ul className="space-y-3 mb-8 text-gray-700">
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 size={20} className="text-green-600" />
-                  Wszystkie uslugami
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 size={20} className="text-green-600" />
-                  Dedykowany team
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 size={20} className="text-green-600" />
-                  Kampanie premium
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 size={20} className="text-green-600" />
-                  Strateg dedykowany
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 size={20} className="text-green-600" />
-                  Wsparcie 24/7
-                </li>
-              </ul>
-              <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
-                Konsultacja
+          <div className="max-w-3xl mx-auto space-y-4 text-gray-700">
+            <p>
+              Wycenę przygotowujemy po rozmowie o zakresie. Zależy ona m.in. od tego, które kanały prowadzimy (SEO, Google Ads, social media, strona WWW), ile treści i kampanii potrzebujesz, jak duża jest konkurencja w Twojej branży oraz jaki jest obecny stan strony i profili.
+            </p>
+            <p>
+              Budżet reklamowy płacony Google lub Meta jest zawsze osobną pozycją, niezależną od wynagrodzenia za obsługę — ustalamy go wspólnie do Twoich celów.
+            </p>
+            <div className="text-center pt-4">
+              <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-blue-600 text-white px-8 py-2 rounded-lg hover:bg-blue-700 transition">
+                Poproś o wycenę
               </a>
             </div>
           </div>
@@ -415,10 +332,10 @@ export default function AgencjaMarketingowaPlock() {
       <section className="py-8 bg-gray-900 text-gray-300">
         <div className="container mx-auto px-4 text-center">
           <p className="mb-2">
-            Agencja Marketingowa Plock - Specjalista w Marketingu dla Firm z Mazowsza
+            FOTZ Studio — pracujemy z Poznania, firmy z Płocka obsługujemy zdalnie
           </p>
           <p className="text-sm">
-            ul. Grodzka 10, 09-400 Plock | Tel: +48 790 814 814 | Email: hello@fotz.pl
+            Tel: +48 790 814 814 | Email: hello@fotz.pl
           </p>
         </div>
       </section>

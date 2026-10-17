@@ -11,7 +11,7 @@ export default function FacebookAdsSzczecin() {
     <>
       <SEOHead
         title="Agencja Facebook Ads Szczecin — reklamy Meta dla firm | Fotz.pl"
-        description="Facebook Ads Szczecin ✓ Kampanie Meta Ads dla firm z Szczecina i Zachodniopomorskiego. Od 400 zł/mies. Bezpłatna konsultacja!"
+        description="Facebook Ads Szczecin ✓ Kampanie Meta Ads dla firm ze Szczecina i Zachodniopomorskiego, prowadzone zdalnie z Poznania. Bezpłatna konsultacja!"
         canonical="https://www.fotz-studio.pl/performance-marketing/facebook-ads/szczecin"
         keywords="facebook ads szczecin, meta ads szczecin, reklamy facebook szczecin, agencja facebook ads szczecin, kampanie facebook szczecin, instagram ads szczecin, facebook ads dla firm szczecin, reklama na facebooku szczecin, meta ads agencja szczecin, facebook ads cennik szczecin"
       />
@@ -49,22 +49,22 @@ export default function FacebookAdsSzczecin() {
                   Agencja Facebook Ads w Szczecinie
                 </h1>
                 <p className="text-xl text-gray-700 mb-8">
-                  Facebook Ads Szczecin — profesjonalne kampanie Meta Ads i reklamy Facebook dla firm z Szczecina i Zachodniopomorskiego. Zwiększamy sprzedaż, zasięg i ROI dzięki precyzyjnemu targetowaniu i kreatywnym reklamom. Bezpłatna konsultacja i wycena kampanii.
+                  Facebook Ads Szczecin — profesjonalne kampanie Meta Ads i reklamy Facebook dla firm z Szczecina i Zachodniopomorskiego. Pracujemy z Poznania, a firmy ze Szczecina obsługujemy zdalnie: planujemy kampanie, przygotowujemy kreacje i optymalizujemy targetowanie. Bezpłatna konsultacja i wycena kampanii.
                 </p>
 
                 {/* STATS */}
                 <div className="grid grid-cols-3 gap-4 mb-8">
                   <div className="bg-white rounded-lg p-4 shadow-md">
-                    <div className="text-2xl font-bold text-blue-600">400 zł</div>
-                    <div className="text-sm text-gray-600">od miesiąca</div>
+                    <div className="text-2xl font-bold text-blue-600">✓</div>
+                    <div className="text-sm text-gray-600">wycena po rozmowie</div>
                   </div>
                   <div className="bg-white rounded-lg p-4 shadow-md">
-                    <div className="text-2xl font-bold text-green-600">48h</div>
-                    <div className="text-sm text-gray-600">pierwsze wyniki</div>
+                    <div className="text-2xl font-bold text-green-600">✓</div>
+                    <div className="text-sm text-gray-600">kreacje i kampanie</div>
                   </div>
                   <div className="bg-white rounded-lg p-4 shadow-md">
                     <div className="text-2xl font-bold text-purple-600">✓</div>
-                    <div className="text-sm text-gray-600">certyfikowani</div>
+                    <div className="text-sm text-gray-600">obsługa zdalna</div>
                   </div>
                 </div>
 
@@ -78,7 +78,7 @@ export default function FacebookAdsSzczecin() {
                 </div>
 
                 <p className="text-sm text-gray-600 mt-6">
-                  ✓ Raporty miesięczne ✓ Dedykowany account manager ✓ Gwarancja zadowolenia
+                  ✓ Raporty z kampanii ✓ Stały kontakt ✓ Budżet reklamowy płacony Meta osobno
                 </p>
               </div>
             </FadeInView>
@@ -97,33 +97,32 @@ export default function FacebookAdsSzczecin() {
                 <div className="bg-blue-50 rounded-lg p-8">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">Dosięgnij odbiorców lokalnie</h3>
                   <p className="text-gray-700">
-                    Szczecin i Zachodniopomorskie to dynamicznie rozwijające się regiony.
-                    Facebook Ads pozwala nam precyzyjnie kierować reklamy do osób zainteresowanych
+                    Facebook Ads pozwala kierować reklamy w Szczecinie i Zachodniopomorskiem
+                    precyzyjnie — według lokalizacji, wieku i zainteresowań — do osób zainteresowanych
                     Twoją branżą w tym obszarze.
                   </p>
                 </div>
 
                 <div className="bg-indigo-50 rounded-lg p-8">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">Niskie koszty akcji</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">Kontrola budżetu</h3>
                   <p className="text-gray-700">
-                    Reklamy Meta w Szczecinie kosztują znacznie mniej niż na terenie dużych miast.
-                    To oznacza wyższy ROI dla Twojego budżetu marketingowego.
+                    Budżet ustalasz sam i możesz go zmieniać w trakcie kampanii.
+                    Koszt wyniku zależy od branży, oferty i jakości kreacji — sprawdzamy go w testach.
                   </p>
                 </div>
-
                 <div className="bg-green-50 rounded-lg p-8">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">Zaangażowana społeczność</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">Relacje z klientami</h3>
                   <p className="text-gray-700">
-                    Szczecinianie aktywnie korzystają z Facebooka i Instagramu.
-                    To idealne kanały do budowania relacji z potencjalnymi klientami.
+                    Facebook i Instagram to kanały, w których możesz regularnie pokazywać ofertę
+                    i budować relacje z potencjalnymi klientami.
                   </p>
                 </div>
 
                 <div className="bg-purple-50 rounded-lg p-8">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">Mniejsza konkurencja</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">Testy zamiast zgadywania</h3>
                   <p className="text-gray-700">
-                    Mniej agencji zarządza kampaniami Facebook Ads w Szczecinie.
-                    To daje Ci przewagę konkurencyjną i lepsze ceny na aukcjach.
+                    Porównujemy warianty kreacji i grup odbiorców,
+                    a budżet przesuwamy na te, które w Twoim przypadku działają lepiej.
                   </p>
                 </div>
               </div>
@@ -143,7 +142,7 @@ export default function FacebookAdsSzczecin() {
                 <div className="bg-white rounded-lg p-8 shadow-md hover:shadow-lg transition">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">Feed Ads</h3>
                   <p className="text-gray-700">
-                    Reklamy wyświetlane bezpośrednio w kanale newsfeed. Wysokie CTR i doskonałe do e-commerce.
+                    Reklamy wyświetlane bezpośrednio w kanale newsfeed. Dobrze sprawdzają się m.in. w e-commerce.
                   </p>
                 </div>
 
@@ -157,7 +156,7 @@ export default function FacebookAdsSzczecin() {
                 <div className="bg-white rounded-lg p-8 shadow-md hover:shadow-lg transition">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">Reels Ads</h3>
                   <p className="text-gray-700">
-                    Krótkie, zaangażujące reklamy wideo. Największy zasięg i engagement na Instagramie.
+                    Krótkie, pionowe reklamy wideo wyświetlane między rolkami na Instagramie i Facebooku.
                   </p>
                 </div>
 
@@ -171,7 +170,7 @@ export default function FacebookAdsSzczecin() {
                 <div className="bg-white rounded-lg p-8 shadow-md hover:shadow-lg transition">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">Video Ads</h3>
                   <p className="text-gray-700">
-                    Reklamy video o długości 15 sec do 2 min. Najwyższy engagement i konwersje.
+                    Reklamy wideo w różnych długościach i formatach — od krótkich ujęć po dłuższe materiały.
                   </p>
                 </div>
 
@@ -221,7 +220,7 @@ export default function FacebookAdsSzczecin() {
                       <h3 className="text-xl font-bold text-gray-900 mb-2">Tworzenie kreatywów</h3>
                       <p className="text-gray-700">
                         Projektujemy przyciągające wzrok grafiki i filmy.
-                        Tworzymy teksty copywritingu, które konwertują.
+                        Przygotowujemy teksty reklam dopasowane do odbiorców.
                       </p>
                     </div>
                   </div>
@@ -251,7 +250,7 @@ export default function FacebookAdsSzczecin() {
                       <h3 className="text-xl font-bold text-gray-900 mb-2">Optymalizacja</h3>
                       <p className="text-gray-700">
                         Testujemy różne warianty i odbiorców.
-                        Stopniowo zwiększamy ROI poprzez ciągłe ulepszenia.
+                        Wprowadzamy kolejne poprawki na podstawie danych z kampanii.
                       </p>
                     </div>
                   </div>
@@ -265,7 +264,7 @@ export default function FacebookAdsSzczecin() {
                     <div>
                       <h3 className="text-xl font-bold text-gray-900 mb-2">Raportowanie i skalowanie</h3>
                       <p className="text-gray-700">
-                        Dostarczamy raporty miesięczne ze wszystkimi metrykami.
+                        Przygotowujemy raporty z kluczowymi metrykami.
                         Skalujemy to, co działa najlepiej.
                       </p>
                     </div>
@@ -280,70 +279,37 @@ export default function FacebookAdsSzczecin() {
         <section className="py-16 md:py-24 bg-gray-50">
           <div className="container mx-auto px-4">
             <FadeInView>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
-                Cennik
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">
+                Od czego zależy wycena
               </h2>
+              <p className="text-gray-700 text-center max-w-3xl mx-auto mb-12">
+                Nie publikujemy stałych pakietów cenowych. Wycenę obsługi kampanii przygotowujemy po rozmowie o zakresie.
+                Budżet reklamowy płacisz bezpośrednio Meta — zawsze osobno od wynagrodzenia za obsługę.
+              </p>
 
-              <div className="grid md:grid-cols-4 gap-6">
-                <div className="bg-white rounded-lg p-8 shadow-md hover:shadow-lg transition border-t-4 border-blue-600">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">START</h3>
-                  <div className="text-3xl font-bold text-blue-600 mb-4">400 zł</div>
-                  <p className="text-sm text-gray-600 mb-6">na miesiąc</p>
-                  <ul className="space-y-2 text-sm text-gray-700 mb-8">
-                    <li>✓ 1 kampania</li>
-                    <li>✓ Budżet do 2000 zł/mies</li>
-                    <li>✓ Raport co 2 tygodnie</li>
-                    <li>✓ Email support</li>
-                  </ul>
-                  <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full border-2 border-blue-600 text-blue-600 font-bold py-2 px-4 rounded-lg hover:bg-blue-50 transition">
-                    Wybierz
-                  </a>
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="bg-white rounded-lg p-8 shadow-md border-t-4 border-blue-600">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Liczba kampanii</h3>
+                  <p className="text-sm text-gray-700">Ile kampanii, grup odbiorców i celów (sprzedaż, leady, zasięg) prowadzimy równolegle.</p>
                 </div>
+                <div className="bg-white rounded-lg p-8 shadow-md border-t-4 border-green-600">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Kreacje</h3>
+                  <p className="text-sm text-gray-700">Czy korzystamy z Twoich materiałów, czy przygotowujemy grafiki, teksty i wideo od podstaw.</p>
+                </div>
+                <div className="bg-white rounded-lg p-8 shadow-md border-t-4 border-purple-600">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Pomiar i konfiguracja</h3>
+                  <p className="text-sm text-gray-700">Stan Piksela Meta, zdarzeń konwersji i katalogu produktów — czasem trzeba je najpierw uporządkować.</p>
+                </div>
+                <div className="bg-white rounded-lg p-8 shadow-md border-t-4 border-red-600">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Raportowanie</h3>
+                  <p className="text-sm text-gray-700">Częstotliwość raportów i spotkań podsumowujących ustalamy razem w ofercie.</p>
+                </div>
+              </div>
 
-                <div className="bg-white rounded-lg p-8 shadow-md hover:shadow-lg transition border-t-4 border-green-600">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">GROWTH</h3>
-                  <div className="text-3xl font-bold text-green-600 mb-4">800 zł</div>
-                  <p className="text-sm text-gray-600 mb-6">na miesiąc</p>
-                  <ul className="space-y-2 text-sm text-gray-700 mb-8">
-                    <li>✓ 3 kampanie</li>
-                    <li>✓ Budżet do 5000 zł/mies</li>
-                    <li>✓ Raport tygodniowy</li>
-                    <li>✓ Telefon i email</li>
-                  </ul>
-                  <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition">
-                    Wybierz
-                  </a>
-                </div>
-
-                <div className="bg-white rounded-lg p-8 shadow-md hover:shadow-lg transition border-t-4 border-purple-600">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">PRO</h3>
-                  <div className="text-3xl font-bold text-purple-600 mb-4">1500 zł</div>
-                  <p className="text-sm text-gray-600 mb-6">na miesiąc</p>
-                  <ul className="space-y-2 text-sm text-gray-700 mb-8">
-                    <li>✓ Nieograniczone kampanie</li>
-                    <li>✓ Budżet do 15000 zł/mies</li>
-                    <li>✓ Raport co 3 dni</li>
-                    <li>✓ Dedykowany manager</li>
-                  </ul>
-                  <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full border-2 border-purple-600 text-purple-600 font-bold py-2 px-4 rounded-lg hover:bg-purple-50 transition">
-                    Wybierz
-                  </a>
-                </div>
-
-                <div className="bg-white rounded-lg p-8 shadow-md hover:shadow-lg transition border-t-4 border-red-600">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">ENTERPRISE</h3>
-                  <div className="text-3xl font-bold text-red-600 mb-4">Custom</div>
-                  <p className="text-sm text-gray-600 mb-6">na miesiąc</p>
-                  <ul className="space-y-2 text-sm text-gray-700 mb-8">
-                    <li>✓ Nieograniczone wszystko</li>
-                    <li>✓ Budżet 15000+ zł/mies</li>
-                    <li>✓ Raport codziennie</li>
-                    <li>✓ Account manager + analityk</li>
-                  </ul>
-                  <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full border-2 border-red-600 text-red-600 font-bold py-2 px-4 rounded-lg hover:bg-red-50 transition">
-                    Zapytaj ofertę
-                  </a>
-                </div>
+              <div className="text-center mt-10">
+                <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition">
+                  Zapytaj o wycenę
+                </a>
               </div>
             </FadeInView>
           </div>
@@ -362,7 +328,7 @@ export default function FacebookAdsSzczecin() {
                   <div className="text-2xl">🏢</div>
                   <div>
                     <h3 className="font-bold text-gray-900 mb-2">E-commerce</h3>
-                    <p className="text-gray-700">Zwiększamy sprzedaż online produktów poprzez ukierunkowane reklamy produktowe.</p>
+                    <p className="text-gray-700">Prowadzimy reklamy produktowe i kampanie sprzedażowe dla sklepów online.</p>
                   </div>
                 </div>
 
@@ -370,7 +336,7 @@ export default function FacebookAdsSzczecin() {
                   <div className="text-2xl">💼</div>
                   <div>
                     <h3 className="font-bold text-gray-900 mb-2">Usługi biznesowe</h3>
-                    <p className="text-gray-700">Pozyskujemy wysokojakościowych leadów dla konsultantów, prawników i doradców.</p>
+                    <p className="text-gray-700">Prowadzimy kampanie pozyskujące zapytania dla konsultantów, prawników i doradców.</p>
                   </div>
                 </div>
 
@@ -386,7 +352,7 @@ export default function FacebookAdsSzczecin() {
                   <div className="text-2xl">🍽️</div>
                   <div>
                     <h3 className="font-bold text-gray-900 mb-2">HoReCa i restauracje</h3>
-                    <p className="text-gray-700">Zapraszamy klientów do restauracji, kawiarni i pubów poprzez atrakcyjne kampanie.</p>
+                    <p className="text-gray-700">Promujemy restauracje, kawiarnie i puby w ich okolicy.</p>
                   </div>
                 </div>
 
@@ -394,7 +360,7 @@ export default function FacebookAdsSzczecin() {
                   <div className="text-2xl">🏠</div>
                   <div>
                     <h3 className="font-bold text-gray-900 mb-2">Nieruchomości</h3>
-                    <p className="text-gray-700">Znajdujemy kupujących i wynajmujących dla deweloperów i agentów nieruchomości.</p>
+                    <p className="text-gray-700">Prowadzimy kampanie dla deweloperów i agentów nieruchomości.</p>
                   </div>
                 </div>
 
@@ -402,7 +368,7 @@ export default function FacebookAdsSzczecin() {
                   <div className="text-2xl">🎓</div>
                   <div>
                     <h3 className="font-bold text-gray-900 mb-2">Edukacja</h3>
-                    <p className="text-gray-700">Rekrutujemy studentów do szkół, kursów i uniwersytetów poprzez Facebook Ads.</p>
+                    <p className="text-gray-700">Prowadzimy kampanie rekrutacyjne dla szkół i kursów — np. kampanię Meta Ads dla Dawid EDU.</p>
                   </div>
                 </div>
 
@@ -410,7 +376,7 @@ export default function FacebookAdsSzczecin() {
                   <div className="text-2xl">💪</div>
                   <div>
                     <h3 className="font-bold text-gray-900 mb-2">Fitness i wellness</h3>
-                    <p className="text-gray-700">Pozyskujemy członków siłowni, klubów fitness i studiów jogi.</p>
+                    <p className="text-gray-700">Promujemy siłownie, kluby fitness i studia jogi.</p>
                   </div>
                 </div>
 
@@ -442,9 +408,9 @@ export default function FacebookAdsSzczecin() {
                   </summary>
                   <div className="bg-gray-50 p-6 border-t border-gray-200">
                     <p className="text-gray-700">
-                      Oferujemy elastyczne pakiety od 400 zł do 1500+ zł miesięcznie.
-                      Cena zależy od liczby kampanii, budżetu na reklamy i poziomu wsparcia.
-                      Każdy pakiet zawiera optymalizację, raporty i dedykowaną obsługę.
+                      Wycenę przygotowujemy po rozmowie o zakresie.
+                      Koszt obsługi zależy od liczby kampanii, przygotowania kreacji, konfiguracji pomiaru i częstotliwości raportów.
+                      Budżet reklamowy płacisz bezpośrednio Meta — zawsze osobno.
                     </p>
                   </div>
                 </details>
@@ -456,9 +422,9 @@ export default function FacebookAdsSzczecin() {
                   </summary>
                   <div className="bg-gray-50 p-6 border-t border-gray-200">
                     <p className="text-gray-700">
-                      Większość kampanii wykazuje pierwsze rezultaty w ciągu 48 godzin.
-                      Pełne rezultaty i optymalizacja widoczne są po 2-3 tygodniach działalności kampanii.
-                      Czas oczekiwania zależy od branży i budżetu.
+                      Pierwsze dane (wyświetlenia, kliknięcia) pojawiają się krótko po starcie kampanii,
+                      ale na wnioski i optymalizację potrzeba czasu na zebranie danych.
+                      Nie obiecujemy sztywnego terminu efektów — zależy on od branży, oferty i budżetu.
                     </p>
                   </div>
                 </details>
@@ -470,8 +436,8 @@ export default function FacebookAdsSzczecin() {
                   </summary>
                   <div className="bg-gray-50 p-6 border-t border-gray-200">
                     <p className="text-gray-700">
-                      Absolutnie. Możesz wznowić, zawieszić lub zmodyfikować kampanię w dowolnym momencie.
-                      Nie ma kar za zmianę decyzji. Wszystkie dane kampanii będą zachowane.
+                      Tak. Kampanię można wstrzymać, wznowić lub zmodyfikować.
+                      Dane kampanii pozostają na Twoim koncie reklamowym.
                     </p>
                   </div>
                 </details>
@@ -485,7 +451,7 @@ export default function FacebookAdsSzczecin() {
                     <p className="text-gray-700">
                       Raporty zawierają: liczbę wyświetleń, kliki, konwersje, CPC, CTR, ROAS i ROI.
                       Dostarczamy również analizę demograficzną odbiorców i najlepiej działających kreatywów.
-                      Wszystko w czytelnym formacie z rekomendacjami optymalizacyjnymi.
+                      Wszystko w czytelnym formacie z rekomendacjami.
                     </p>
                   </div>
                 </details>
@@ -497,8 +463,8 @@ export default function FacebookAdsSzczecin() {
                   </summary>
                   <div className="bg-gray-50 p-6 border-t border-gray-200">
                     <p className="text-gray-700">
-                      Nie. Możesz zacząć od niewielkiego budżetu (nawet 500 zł/mies) i skalować w miarę wzrostu.
-                      Testujemy wszystko na małej skali najpierw, aby znaleźć to, co działa.
+                      Nie zawsze. Budżet dobieramy do celu, branży i zasięgu kampanii, a potem skalujemy w miarę wyników.
+                      Najpierw testujemy na mniejszej skali, aby znaleźć to, co działa.
                       Dopiero wtedy zwiększamy budżet na zwycięskie kampanie.
                     </p>
                   </div>
@@ -511,8 +477,8 @@ export default function FacebookAdsSzczecin() {
                   </summary>
                   <div className="bg-gray-50 p-6 border-t border-gray-200">
                     <p className="text-gray-700">
-                      Nie możemy zagwarantować konkretnych wyników, bo rynek się zmienia.
-                      Ale gwarantujemy, że będziemy optymalizować kampanię każdego dnia.
+                      Nie gwarantujemy konkretnych wyników, bo zależą one od rynku, oferty i budżetu.
+                      Odpowiadamy za uzgodniony zakres prac i regularną optymalizację kampanii.
                       Jeśli kampania nie przynosi rezultatów, wspólnie szukamy przyczyn i dokonujemy zmian.
                     </p>
                   </div>
@@ -525,8 +491,7 @@ export default function FacebookAdsSzczecin() {
                   </summary>
                   <div className="bg-gray-50 p-6 border-t border-gray-200">
                     <p className="text-gray-700">
-                      Raczej pracujemy bez długoterminowych umów. Możesz pracować z nami miesiąc po miesiącu.
-                      Chcemy, żebyś pracował z nami, ponieważ ceni sobie nasze usługi, nie dlatego, że musi.
+                      Okres współpracy i warunki wypowiedzenia ustalamy indywidualnie i zapisujemy w umowie.
                     </p>
                   </div>
                 </details>

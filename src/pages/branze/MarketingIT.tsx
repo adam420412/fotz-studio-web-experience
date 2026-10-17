@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
-import { useCountUp } from "@/hooks/useCountUp";
 import { OtherIndustries } from "@/components/sections/OtherIndustries";
 import rppgImg from "@/assets/portfolio/rppg-web.webp";
 
@@ -67,7 +66,7 @@ const faqItems = [
   },
   {
     question: "Ile kosztuje marketing dla firmy IT?",
-    answer: "Marketing B2B dla IT to inwestycja od 6000 zł/miesiąc (strona + SEO + LinkedIn). Pełna obsługa z content marketingiem, PR i kampaniami ABM to 15000-30000 zł/miesiąc.",
+    answer: "Wycenę przygotowujemy po rozmowie o zakresie: czy potrzebna jest nowa strona, jakie kanały prowadzimy (SEO, LinkedIn, Google Ads), ile treści i materiałów wideo przygotowujemy oraz jak długo trwa współpraca. Budżet reklamowy płacony platformom (LinkedIn, Google, Meta) jest zawsze osobną pozycją.",
   },
   {
     question: "Jak promować produkt SaaS?",
@@ -124,7 +123,7 @@ const MarketingIT = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
             className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full blur-[180px]"
-            style={{ background: "hsla(170, 71%, 27%, 0.1)" }}
+            style={{ background: "rgba(20, 118, 101, 0.1)" }}
           />
         </div>
 
@@ -162,30 +161,6 @@ const MarketingIT = () => {
             </div>
           </motion.div>
 
-          {/* Stats */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.7 }}
-            className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16"
-          >
-            {[
-              { value: 300, suffix: "%", label: "wzrost leadów B2B" },
-              { value: 40, suffix: "+", label: "obsłużonych firm IT" },
-              { value: 50, suffix: "mln", label: "budżetu kampanii" },
-              { value: 8, suffix: "x", label: "ROI z kampanii ABM" },
-            ].map((stat, index) => {
-              const { ref, displayValue } = useCountUp({ end: stat.value, suffix: stat.suffix });
-              return (
-                <div key={index} ref={ref} className="text-center p-6 rounded-2xl bg-card border border-border/30">
-                  <div className="text-3xl md:text-4xl font-heading font-bold text-gradient-premium">
-                    {displayValue}
-                  </div>
-                  <p className="text-foreground/60 text-sm mt-2">{stat.label}</p>
-                </div>
-              );
-            })}
-          </motion.div>
         </div>
       </section>
 

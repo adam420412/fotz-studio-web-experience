@@ -219,7 +219,7 @@ const posts: BlogPost[] = [
     id: "ile-kosztuje-rolka-dla-firmy",
     title: "Ile kosztuje produkcja rolki dla firmy? Cennik video 2026",
     excerpt:
-      "Pojedyncza rolka od 1 900 zł netto, seria 10 rolek za 12 000 zł netto. Zobacz cennik produkcji video 2026 i co wpływa na cenę.",
+      "Od czego zależy koszt produkcji rolki dla firmy: scenariusz, dzień zdjęciowy, liczba rolek w serii i montaż. Zobacz, co wpływa na cenę.",
     category: "Video",
     author: "Zespół FOTZ",
     date: "3 lip 2026",
@@ -231,7 +231,7 @@ const posts: BlogPost[] = [
     id: "modele-rozliczen-agencja-social-media",
     title: "Modele rozliczeń z agencją social media: abonament, projekt czy success fee?",
     excerpt:
-      "Porównujemy modele rozliczeń z agencją social media, z cenami od 2 500 zł netto/mc. Zobacz, co się opłaca.",
+      "Porównujemy modele rozliczeń z agencją social media: abonament, projekt i success fee. Zobacz, co się opłaca w Twojej sytuacji.",
     category: "Social Media",
     author: "Zespół FOTZ",
     date: "3 lip 2026",
@@ -363,7 +363,7 @@ const posts: BlogPost[] = [
     id: "ile-kosztuje-film-reklamowy",
     title: "Ile kosztuje film reklamowy dla firmy",
     excerpt:
-      "Ile kosztuje film reklamowy dla firmy w 2026? Pojedynczy film od 1 900 zł, dzień zdjęciowy z serią 10 rolek 12 000 zł. Sprawdź, co wpływa na cenę i jak nie przepłacić.",
+      "Ile kosztuje film reklamowy dla firmy w 2026? Wyjaśniamy, co wpływa na cenę — od scenariusza i dnia zdjęciowego po montaż — i jak nie przepłacić.",
     category: "Wideo",
     author: "Zespół FOTZ",
     date: "11 lip 2026",
@@ -375,7 +375,7 @@ const posts: BlogPost[] = [
     id: "ile-kosztuje-reklama-wideo-facebook",
     title: "Ile kosztuje reklama wideo na Facebooku i Instagramie",
     excerpt:
-      "Ile kosztuje reklama wideo na Facebooku i Instagramie? Rozkładamy dwa koszty: produkcję filmu (od 1 900 zł) i budżet mediowy Meta. Sprawdź, ile realnie potrzebujesz.",
+      "Ile kosztuje reklama wideo na Facebooku i Instagramie? Rozkładamy dwa osobne koszty: produkcję filmu i budżet mediowy płacony Meta. Sprawdź, od czego zależą.",
     category: "Wideo",
     author: "Zespół FOTZ",
     date: "11 lip 2026",
@@ -846,9 +846,9 @@ export default function Blog() {
               TikTok, LinkedIn, Facebook) i strony internetowe (UX, konwersja, WordPress).
             </p>
             <p className="text-muted-foreground mb-6">
-              Nasz blog marketingowy jest czytany przez właścicieli firm, marketerów
-              i studentów marketingu z całej Polski. Regularnie piszemy case studies
-              z naszych projektów — z konkretnymi wynikami i wnioskami.
+              Piszemy dla właścicieli firm i marketerów. Opisujemy też wybrane
+              projekty z naszej praktyki — z wnioskami, które można przenieść
+              na własny marketing.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
@@ -856,9 +856,8 @@ export default function Blog() {
             </h2>
             <p className="text-muted-foreground">
               Zapisz się do newslettera Fotz Studio, by otrzymywać najnowsze artykuły
-              i aktualizacje marketingowe. Co tydzień — jeden wartościowy email
-              z praktyczną wiedzą o marketingu online. Bez spamu, bez reklam,
-              tylko wartościowa treść przydatna w prowadzeniu biznesu online.
+              i aktualizacje marketingowe — praktyczną wiedzę o marketingu online.
+              Bez spamu, tylko treści przydatne w prowadzeniu biznesu online.
             </p>
           
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">

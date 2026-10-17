@@ -17,7 +17,7 @@ export default function AgencjaMarketingowaSzczecin() {
     <Layout>
       <SEOHead
         title="Agencja Marketingowa Szczecin | Fotz Studio"
-        description="Agencja marketingowa Szczecin ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm ze Szczecina i Zachodniopomorskiego. Bezpłatna wycena!"
+        description="Agencja marketingowa Szczecin ✓ SEO, Google Ads, Social Media, strony WWW. Pracujemy z Poznania, firmy ze Szczecina i Zachodniopomorskiego obsługujemy zdalnie. Bezpłatna wycena!"
         canonical="https://www.fotz-studio.pl/agencja-marketingowa/szczecin"
         keywords="agencja marketingowa szczecin, marketing internetowy szczecin, agencja reklamowa szczecin, kampanie reklamowe szczecin, seo szczecin, google ads szczecin"
       />
@@ -38,19 +38,19 @@ export default function AgencjaMarketingowaSzczecin() {
         items={[
           {
             question: "Ile kosztuje agencja marketingowa w Szczecinie?",
-            answer: "Ceny zaczynają się od 2500 zł/miesiąc za pakiet STARTER. Każde wyceny dostosowujemy indywidualnie do potrzeb firmy. Oferujemy bezpłatną konsultację.",
+            answer: "Wycenę przygotowujemy po rozmowie o zakresie: liczbie kanałów, częstotliwości publikacji, rodzaju kampanii i potrzebnych materiałach. Budżet reklamowy płacony platformom (Google, Meta) jest zawsze osobno. Oferujemy bezpłatną konsultację.",
           },
           {
             question: "Jak długo czekać na pierwsze wyniki z SEO?",
-            answer: "Pierwsze pozytywne wyniki obserwujemy zwykle po 2-3 miesiącach. Pełne efekty SEO osiągamy po 6-9 miesiącach regularnej pracy.",
+            answer: "SEO to praca długoterminowa. Tempo efektów zależy od konkurencji na wybrane frazy i stanu wyjściowego strony, dlatego nie obiecujemy sztywnych terminów ani konkretnych pozycji.",
           },
           {
             question: "Czy pracujecie z firmami z Zachodniopomorskiego?",
-            answer: "Tak, pracujemy z firmami z całego Szczecina i regionu Zachodniopomorskiego. Oferujemy również obsługę firm chcących ekspandować na rynki niemieckie.",
+            answer: "Tak. Pracujemy z Poznania, a firmy ze Szczecina i regionu Zachodniopomorskiego obsługujemy zdalnie.",
           },
           {
-            question: "Co zawiera pakiet PREMIUM?",
-            answer: "Pakiet PREMIUM zawiera: SEO, kampanie Google Ads, zarządzanie social media, copywriting, analitykę i raporty miesięczne.",
+            question: "Co może obejmować pełny zakres współpracy?",
+            answer: "Pełny zakres może obejmować SEO, kampanie Google Ads, zarządzanie social media, copywriting, analitykę i raporty miesięczne. Dokładny zakres ustalamy w ofercie.",
           },
           {
             question: "Czy oferujecie stronę internetową?",
@@ -65,13 +65,13 @@ export default function AgencjaMarketingowaSzczecin() {
           <div className="text-center mb-12">
             <div className="flex items-center justify-center gap-2 mb-4">
               <MapPin className="w-5 h-5 text-blue-600" />
-              <span className="text-sm font-semibold text-blue-600">Agencja Marketingowa w Szczecinie</span>
+              <span className="text-sm font-semibold text-blue-600">Marketing dla firm ze Szczecina</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Agencja Marketingowa Szczecin
             </h1>
             <p className="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
-              Profesjonalny marketing dla firm ze Szczecina. Specjalizujemy się w SEO, Google Ads, Social Media i tworzeniu stron internetowych. Ponad 200 projektów na koncie.
+              Profesjonalny marketing dla firm ze Szczecina. Specjalizujemy się w SEO, Google Ads, Social Media i tworzeniu stron internetowych. Pracujemy z Poznania, firmy ze Szczecina obsługujemy zdalnie.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
@@ -93,26 +93,26 @@ export default function AgencjaMarketingowaSzczecin() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16">
             <Card className="text-center">
               <CardContent className="pt-6">
-                <div className="text-3xl font-bold text-blue-600 mb-2">500+</div>
-                <div className="text-sm text-gray-600">Klientów z regionu</div>
+                <div className="text-3xl font-bold text-blue-600 mb-2">Zdalnie</div>
+                <div className="text-sm text-gray-600">Obsługa firm ze Szczecina</div>
               </CardContent>
             </Card>
             <Card className="text-center">
               <CardContent className="pt-6">
-                <div className="text-3xl font-bold text-blue-600 mb-2">8 lat</div>
-                <div className="text-sm text-gray-600">Doświadczenia</div>
+                <div className="text-3xl font-bold text-blue-600 mb-2">Poznań</div>
+                <div className="text-sm text-gray-600">Stąd pracujemy</div>
               </CardContent>
             </Card>
             <Card className="text-center">
               <CardContent className="pt-6">
-                <div className="text-3xl font-bold text-blue-600 mb-2">97%</div>
-                <div className="text-sm text-gray-600">Zadowolonych Klientów</div>
+                <div className="text-3xl font-bold text-blue-600 mb-2">Wycena</div>
+                <div className="text-sm text-gray-600">Po rozmowie o zakresie</div>
               </CardContent>
             </Card>
             <Card className="text-center">
               <CardContent className="pt-6">
-                <div className="text-3xl font-bold text-blue-600 mb-2">TOP3</div>
-                <div className="text-sm text-gray-600">Wyniki w Szczecinie</div>
+                <div className="text-3xl font-bold text-blue-600 mb-2">Raporty</div>
+                <div className="text-sm text-gray-600">Uzgodniony zakres i wskaźniki</div>
               </CardContent>
             </Card>
           </div>
@@ -134,19 +134,19 @@ export default function AgencjaMarketingowaSzczecin() {
                 Miasto przyciąga przedsiębiorców z całej Polski. Rosnąca scena startupowa, nowoczesne obiekty (Filharmonia, nowe biurowce) i rosnąca liczba specjalistów IT sprawiają, że Szczecin to idealny rynek dla agencji marketingowej.
               </p>
               <p className="text-lg text-gray-700 mb-6">
-                Obsługujemy firmy z dzielnic: Śródmieście, Niebuszewo, Pogodno, Gumieńce, Żelechowa, Pomorzany i całego regionu Zachodniopomorskiego.
+                Pracujemy z Poznania, a firmy z całego Szczecina i regionu Zachodniopomorskiego obsługujemy zdalnie.
               </p>
               <div className="flex items-center gap-3">
                 <Building2 className="w-5 h-5 text-blue-600" />
-                <span className="text-gray-700">Biuro w Szczecinie dostępne do wizyty</span>
+                <span className="text-gray-700">Pracujemy z Poznania, firmy ze Szczecina obsługujemy zdalnie</span>
               </div>
             </div>
             <div className="grid grid-cols-2 gap-4">
               <Card>
                 <CardContent className="pt-6">
                   <Users className="w-8 h-8 text-blue-600 mb-3" />
-                  <div className="font-semibold text-gray-900">Populacja</div>
-                  <div className="text-sm text-gray-600">408 000+ mieszkańców</div>
+                  <div className="font-semibold text-gray-900">Miasto wojewódzkie</div>
+                  <div className="text-sm text-gray-600">Stolica Zachodniopomorskiego</div>
                 </CardContent>
               </Card>
               <Card>
@@ -219,7 +219,7 @@ export default function AgencjaMarketingowaSzczecin() {
                 <Zap className="w-10 h-10 text-blue-600 mb-4" />
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Google Ads</h3>
                 <p className="text-gray-700 mb-4">
-                  Kampanie Google Ads z szybkim zwrotem z inwestycji. Docieramy do klientów szukających Twoich produktów i usług w Szczecinie.
+                  Kampanie Google Ads ustawione pod cele biznesowe i mierzone konwersjami. Docieramy do klientów szukających Twoich produktów i usług w Szczecinie.
                 </p>
                 <ul className="text-sm text-gray-600 space-y-2">
                   <li className="flex items-start gap-2">
@@ -362,11 +362,10 @@ export default function AgencjaMarketingowaSzczecin() {
               onClick={() => setSelectedPackage("starter")}
             >
               <CardContent className="pt-6">
-                <Badge className="mb-4 bg-blue-100 text-blue-800">Najpopularniejszy</Badge>
+                <Badge className="mb-4 bg-blue-100 text-blue-800">Na start</Badge>
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">STARTER</h3>
                 <div className="mb-6">
-                  <span className="text-4xl font-bold text-gray-900">2500 zł</span>
-                  <span className="text-gray-600">/miesiąc</span>
+                  <span className="text-2xl font-bold text-gray-900">Wycena indywidualna</span>
                 </div>
                 <p className="text-gray-700 mb-6">
                   Idealna dla małych firm i startupów chcących rozpocząć marketing online.
@@ -403,11 +402,10 @@ export default function AgencjaMarketingowaSzczecin() {
               onClick={() => setSelectedPackage("standard")}
             >
               <CardContent className="pt-6">
-                <Badge className="mb-4 bg-green-100 text-green-800">Najczęściej wybierany</Badge>
+                <Badge className="mb-4 bg-green-100 text-green-800">Rozwój</Badge>
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">STANDARD</h3>
                 <div className="mb-6">
-                  <span className="text-4xl font-bold text-gray-900">4990 zł</span>
-                  <span className="text-gray-600">/miesiąc</span>
+                  <span className="text-2xl font-bold text-gray-900">Wycena indywidualna</span>
                 </div>
                 <p className="text-gray-700 mb-6">
                   Kompleksowe rozwiązanie dla firm chcących rosta i widoczności w sieci.
@@ -451,11 +449,10 @@ export default function AgencjaMarketingowaSzczecin() {
                 <Badge className="mb-4 bg-purple-100 text-purple-800">Premium</Badge>
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">PREMIUM</h3>
                 <div className="mb-6">
-                  <span className="text-4xl font-bold text-gray-900">8900 zł</span>
-                  <span className="text-gray-600">/miesiąc</span>
+                  <span className="text-2xl font-bold text-gray-900">Wycena indywidualna</span>
                 </div>
                 <p className="text-gray-700 mb-6">
-                  Pełny zakres usług marketingowych dla firm chcących dominować na rynku.
+                  Pełny zakres usług marketingowych dla firm, które chcą prowadzić marketing w wielu kanałach.
                 </p>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-start gap-3">
@@ -492,7 +489,7 @@ export default function AgencjaMarketingowaSzczecin() {
 
           <div className="mt-12 bg-blue-50 rounded-lg p-8 text-center">
             <p className="text-lg text-gray-700 mb-4">
-              Nie jesteś pewien, który pakiet wybrać? Chętnie pomożemy!
+              Wycenę przygotowujemy po rozmowie o zakresie: liczbie kanałów, częstotliwości publikacji, rodzaju kampanii i potrzebnej produkcji treści. Budżet reklamowy płacony platformom (Google, Meta) jest zawsze osobno. Nie jesteś pewien, który pakiet wybrać? Chętnie pomożemy!
             </p>
             <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
               <Link to="/kontakt">
@@ -522,7 +519,7 @@ export default function AgencjaMarketingowaSzczecin() {
                 Ile kosztuje agencja marketingowa w Szczecinie?
               </AccordionTrigger>
               <AccordionContent className="px-6 py-4 text-gray-700">
-                Ceny agencji marketingowych w Szczecinie zaczynają się od 2500 zł/miesiąc za pakiet STARTER. Nasz pakiet STANDARD (najpopularniejszy) to 4990 zł/miesiąc, a PREMIUM to 8900 zł/miesiąc. Każda wycena jest dostosowana indywidualnie do potrzeb i budżetu firmy. Oferujemy bezpłatną konsultację i wycenę.
+                Koszt zależy od zakresu: liczby kanałów, częstotliwości publikacji, rodzaju kampanii i potrzebnej produkcji treści. Wycenę przygotowujemy po rozmowie o zakresie, a budżet reklamowy płacony platformom (Google, Meta) jest zawsze osobno. Oferujemy bezpłatną konsultację i wycenę.
               </AccordionContent>
             </AccordionItem>
 
@@ -531,7 +528,7 @@ export default function AgencjaMarketingowaSzczecin() {
                 Jak długo czekać na pierwsze wyniki z SEO w Szczecinie?
               </AccordionTrigger>
               <AccordionContent className="px-6 py-4 text-gray-700">
-                SEO to długoterminowa inwestycja. Pierwsze pozytywne wyniki obserwujemy zwykle po 2-3 miesiącach regularnej pracy. Znaczne poprawy widoczności pojawiają się po 6-9 miesiącach. Wszystko zależy od konkurencji na słowa kluczowe i stanu wyjściowego strony. Chętnie opowiemy dokładniej podczas konsultacji.
+                SEO to długoterminowa inwestycja. Tempo efektów zależy od konkurencji na słowa kluczowe i stanu wyjściowego strony, dlatego nie obiecujemy sztywnych terminów ani konkretnych pozycji. Chętnie opowiemy dokładniej podczas konsultacji.
               </AccordionContent>
             </AccordionItem>
 
@@ -540,16 +537,16 @@ export default function AgencjaMarketingowaSzczecin() {
                 Czy pracujecie z firmami z Zachodniopomorskiego?
               </AccordionTrigger>
               <AccordionContent className="px-6 py-4 text-gray-700">
-                Tak, pracujemy z firmami z całego Szczecina i regionu Zachodniopomorskiego. Obsługiwaliśmy już firmy z dzielnic: Śródmieście, Niebuszewo, Pogodno, Gumieńce, Żelechowa, Pomorzany. Oferujemy również specjalistyczną obsługę dla firm chcących ekspandować na rynki niemieckie, wykorzystując naszą bliskość do granic Niemiec.
+                Tak. Pracujemy z Poznania, a firmy ze Szczecina i regionu Zachodniopomorskiego obsługujemy zdalnie: spotkania prowadzimy online, a materiały i raporty wymieniamy elektronicznie.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-4" className="border rounded-lg">
               <AccordionTrigger className="px-6 py-4 hover:no-underline">
-                Co zawiera pakiet PREMIUM?
+                Co obejmuje pakiet PREMIUM?
               </AccordionTrigger>
               <AccordionContent className="px-6 py-4 text-gray-700">
-                Pakiet PREMIUM zawiera: kompleksowe SEO i strategie marketingowe, zarządzanie 4 kanałami social media, 20+ postów na miesiąc, kampanie Google Ads oraz Social Ads, copywriting profesjonalny, email marketing, dedykowany account manager i raporty analityczne. To pełny zakres usług dla firm chcących dominować na rynku Szczecina.
+                Pakiet PREMIUM zawiera: kompleksowe SEO i strategie marketingowe, zarządzanie 4 kanałami social media, 20+ postów na miesiąc, kampanie Google Ads oraz Social Ads, copywriting profesjonalny, email marketing, dedykowany account manager i raporty analityczne. Dokładny zakres i wycenę ustalamy po rozmowie, a budżet reklamowy jest zawsze osobno.
               </AccordionContent>
             </AccordionItem>
 
@@ -572,7 +569,7 @@ export default function AgencjaMarketingowaSzczecin() {
             Gotowy na nowy poziom marketingu?
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
-            Ponad 500 firm z Szczecina i regionu ufa nam obsługę swoje kampanie marketingowe. Dołącz do nich i dostań bezpłatną wycenę.
+            Opowiedz nam o swojej firmie i celach, a przygotujemy bezpłatną wycenę. Firmy ze Szczecina obsługujemy zdalnie.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" variant="secondary" className="text-blue-600 hover:text-blue-700">
@@ -598,21 +595,21 @@ export default function AgencjaMarketingowaSzczecin() {
                 Skontaktuj się z nami
               </h2>
               <p className="text-lg text-gray-700 mb-8">
-                Jesteśmy dostępni do dyskusji o Twoim projekcie marketingowym. Zadzwoń, wyślij wiadomość lub umów się na spotkanie w naszym biurze w Szczecinie.
+                Jesteśmy dostępni do dyskusji o Twoim projekcie marketingowym. Zadzwoń, wyślij wiadomość lub umów się na spotkanie online. Pracujemy z Poznania, firmy ze Szczecina obsługujemy zdalnie.
               </p>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <Phone className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
                   <div>
                     <div className="font-semibold text-gray-900">Telefon</div>
-                    <div className="text-gray-700">+48 531 234 567</div>
+                    <div className="text-gray-700">+48 790 814 814</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <Building2 className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
                   <div>
-                    <div className="font-semibold text-gray-900">Adres</div>
-                    <div className="text-gray-700">Szczecin, Zachodniopomorskie</div>
+                    <div className="font-semibold text-gray-900">Lokalizacja</div>
+                    <div className="text-gray-700">Poznań — Szczecin obsługujemy zdalnie</div>
                   </div>
                 </div>
               </div>

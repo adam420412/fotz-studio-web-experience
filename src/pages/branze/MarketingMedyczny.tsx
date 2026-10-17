@@ -7,7 +7,6 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
-import { useCountUp } from "@/hooks/useCountUp";
 import { OtherIndustries } from "@/components/sections/OtherIndustries";
 import gabinetImg from "@/assets/medyczny/gabinet-stomatologiczny.jpg";
 import konsultacjaImg from "@/assets/medyczny/konsultacja-rtg.jpg";
@@ -45,7 +44,7 @@ const customSolutions = [
   {
     icon: Clock,
     title: "Automatyczne przypomnienia",
-    description: "System SMS i email przypominający o wizytach, redukujący nieobecności o 40%.",
+    description: "System SMS i email przypominający o wizytach, który pomaga ograniczać nieobecności pacjentów.",
   },
   {
     icon: Stethoscope,
@@ -55,8 +54,8 @@ const customSolutions = [
 ];
 
 const benefits = [
-  "Zwiększenie liczby rezerwacji online o 60%",
-  "Redukcja nieobecności pacjentów o 40%",
+  "Wygodna rezerwacja wizyt online dla pacjentów",
+  "Automatyczne przypomnienia ograniczające nieobecności",
   "Budowanie zaufania przez profesjonalny wizerunek",
   "Zgodność z regulacjami prawymi reklamy medycznej",
   "Automatyzacja procesów administracyjnych",
@@ -66,7 +65,7 @@ const benefits = [
 const faqItems = [
   {
     question: "Czy reklama usług medycznych jest legalna?",
-    answer: "Tak, ale podlega ścisłym regulacjom. Nie można reklamować konkretnych zabiegów, obiecywać gwarancji wyleczenia ani używać wizerunku lekarza bez kontekstu edukacyjnego. Nasze kampanie są w pełni zgodne z prawem.",
+    answer: "Tak, ale podlega ścisłym regulacjom. Nie można reklamować konkretnych zabiegów, obiecywać gwarancji wyleczenia ani używać wizerunku lekarza bez kontekstu edukacyjnego. Kampanie projektujemy z uwzględnieniem tych ograniczeń, a przy wątpliwych treściach rekomendujemy konsultację z prawnikiem placówki.",
   },
   {
     question: "Jak działa system rezerwacji online dla gabinetu?",
@@ -74,7 +73,7 @@ const faqItems = [
   },
   {
     question: "Ile kosztuje marketing dla gabinetu medycznego?",
-    answer: "Podstawowa obsługa (strona + SEO lokalne) zaczyna się od 3000 zł/miesiąc. Pełna obsługa z systemem rezerwacji, kampaniami i content marketingiem to 6000-12000 zł/miesiąc w zależności od wielkości placówki.",
+    answer: "Wycenę przygotowujemy po rozmowie o zakresie: czy potrzebna jest nowa strona lub system rezerwacji, ile usług i specjalistów prezentujemy, jakie kanały prowadzimy (SEO, Google Ads, social media) i jak duża jest placówka. Budżet reklamowy płacony platformom (Google, Meta) jest zawsze osobną pozycją.",
   },
   {
     question: "Jak budować zaufanie pacjentów online?",
@@ -82,7 +81,7 @@ const faqItems = [
   },
   {
     question: "Czy obsługujecie duże placówki medyczne?",
-    answer: "Tak, mamy doświadczenie z gabinetami jednoosobowymi, klinikami wielospecjalistycznymi oraz sieciami placówek. Dostosowujemy zakres usług do wielkości i potrzeb placówki.",
+    answer: "Tak — zakres usług dopasowujemy do wielkości placówki, od gabinetu jednoosobowego po klinikę wielospecjalistyczną. Pracujemy z Poznania, a placówki z innych miast obsługujemy zdalnie.",
   },
 ];
 
@@ -132,7 +131,7 @@ const MarketingMedyczny = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
             className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full blur-[180px]"
-            style={{ background: "hsla(336, 71%, 27%, 0.1)" }}
+            style={{ background: "rgba(118, 20, 59, 0.1)" }}
           />
         </div>
 
@@ -170,30 +169,6 @@ const MarketingMedyczny = () => {
             </div>
           </motion.div>
 
-          {/* Stats */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.7 }}
-            className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16"
-          >
-            {[
-              { value: 60, suffix: "%", label: "więcej rezerwacji online" },
-              { value: 40, suffix: "%", label: "mniej nieobecności" },
-              { value: 50, suffix: "+", label: "obsłużonych gabinetów" },
-              { value: 100, suffix: "%", label: "zgodność z prawem" },
-            ].map((stat, index) => {
-              const { ref, displayValue } = useCountUp({ end: stat.value, suffix: stat.suffix });
-              return (
-                <div key={index} ref={ref} className="text-center p-6 rounded-2xl bg-card border border-border/30">
-                  <div className="text-3xl md:text-4xl font-heading font-bold text-gradient-premium">
-                    {displayValue}
-                  </div>
-                  <p className="text-foreground/60 text-sm mt-2">{stat.label}</p>
-                </div>
-              );
-            })}
-          </motion.div>
         </div>
       </section>
 

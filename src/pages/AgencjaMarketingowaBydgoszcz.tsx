@@ -61,64 +61,33 @@ export default function AgencjaMarketingowaBydgoszcz() {
     },
   ];
 
-  const packages = [
+  const pricingFactors = [
     {
-      id: "starter",
-      name: "Pakiet Starter",
-      price: "1 500 zł",
-      period: "/miesiąc",
-      description: "Idealne dla małych firm i startupów",
-      features: [
-        "Pozycjonowanie SEO",
-        "5 wpisów na blogu",
-        "Monitoring rankingów",
-        "Raport miesięczny",
-      ],
-      popular: false,
+      title: "Zakres działań",
+      description: "Czy potrzebujesz jednego kanału (np. SEO albo Google Ads), czy kilku naraz: kampanii, social mediów, treści i strony WWW.",
     },
     {
-      id: "professional",
-      name: "Pakiet Professional",
-      price: "3 500 zł",
-      period: "/miesiąc",
-      description: "Najpopularniejszy - kompleksowy marketing",
-      features: [
-        "Wszystko z Starter",
-        "Zarządzanie Google Ads",
-        "Media społecznościowe",
-        "10 wpisów na blogu",
-        "Konsultacje SEO",
-        "Raport szczegółowy",
-      ],
-      popular: true,
+      title: "Punkt wyjścia",
+      description: "Stan strony, konta reklamowego i profili społecznościowych — inaczej wycenia się start od zera, a inaczej rozwój działań, które już trwają.",
     },
     {
-      id: "enterprise",
-      name: "Pakiet Enterprise",
-      price: "Od 7 000 zł",
-      period: "/miesiąc",
-      description: "Całkowita transformacja cyfrowa",
-      features: [
-        "Wszystko z Professional",
-        "Dedykowany account manager",
-        "Kampanie e-commerce",
-        "Strategie niestandardowe",
-        "Konsultacje wideo co tydzień",
-        "Raport strategiczny",
-        "Optymalizacja konwersji",
-      ],
-      popular: false,
+      title: "Produkcja treści",
+      description: "Liczba i rodzaj materiałów: teksty, grafiki, zdjęcia, wideo. Produkcję foto i wideo realizujemy własnym zespołem.",
+    },
+    {
+      title: "Budżet reklamowy",
+      description: "Budżet płacony Google lub Meta jest zawsze osobno od naszego wynagrodzenia — to Ty decydujesz, ile przeznaczasz na reklamy.",
     },
   ];
 
   const faqs = [
     {
       question: "Ile czasu trwa pojawienie się rezultatów z SEO?",
-      answer: "SEO to inwestycja długoterminowa. Zazwyczaj pierwsze rezultaty są widoczne po 3-6 miesiącach, a maksymalne rezultaty uzyskuje się po 12-18 miesiącach. Google Ads działają szybciej - możliwe pierwsze konwersje w ciągu kilku dni.",
+      answer: "SEO to inwestycja długoterminowa i nie da się podać sztywnego terminu efektów — zależy on od branży, konkurencji i stanu strony. Zwykle na wyraźne zmiany trzeba poczekać kilka miesięcy. Google Ads mogą zacząć przyprowadzać ruch szybciej, bo reklamy wyświetlają się od momentu uruchomienia kampanii.",
     },
     {
-      question: "Dlaczego wybierać FOTZ zamiast innych agencji w Bydgoszczy?",
-      answer: "Mamy ponad 8 lat doświadczenia i pracowaliśmy z 500 plus klientami. Nasz zespół zna specyfkę rynku Bydgoszczy i regionu Kujaw. Gwarantujemy przejrzystość, regularne raporty i dedykowanego specjalistę dla każdego projektu.",
+      question: "Dlaczego wybierać FOTZ zamiast innych agencji?",
+      answer: "Pracujemy z Poznania, a firmy z Bydgoszczy obsługujemy zdalnie. Łączymy kampanie i SEO z własną produkcją foto i wideo, więc kreacje powstają w jednym zespole. Realizowaliśmy projekty m.in. dla Enea Stadionu, FPS Cegielski i WSB Merito. Stawiamy na przejrzystość i regularne raporty z wykonanych działań.",
     },
     {
       question: "Czy mogę anulować umowę w każdym momencie?",
@@ -126,19 +95,12 @@ export default function AgencjaMarketingowaBydgoszcz() {
     },
     {
       question: "Czy FOTZ pracuje z firmami spoza Bydgoszczy?",
-      answer: "Tak, pracujemy z firmami z całej Polski i poza granicami. Jednak specjalizujemy się w marketingu lokalnym dla Bydgoszczy. Jeśli Twoja firma ma zasięg krajowy, możemy również dostosować strategię do Twoich potrzeb.",
+      answer: "Tak. Nasz zespół pracuje z Poznania i obsługuje zdalnie firmy z różnych miast, w tym z Bydgoszczy. Strategię dopasowujemy do zasięgu firmy — lokalnego, regionalnego lub ogólnopolskiego.",
     },
     {
-      question: "Jaka jest najniższa cena za usługi?",
-      answer: "Nasz pakiet Starter zaczyna się od 1500 zł miesięcznie. Dodatkowo oferujemy bezpłatną wycenę i konsultację dla nowych klientów. Skontaktuj się z nami, aby ustalić budżet dostosowany do Twoich możliwości.",
+      question: "Ile kosztuje współpraca?",
+      answer: "Wycenę przygotowujemy po rozmowie o zakresie: liczbie kanałów, stanie strony i kont reklamowych oraz ilości treści do przygotowania. Budżet reklamowy płacony Google lub Meta jest zawsze osobno. Wycena i pierwsza konsultacja są bezpłatne.",
     },
-  ];
-
-  const stats = [
-    { value: "500+", label: "klientów" },
-    { value: "8", label: "lat doświadczenia" },
-    { value: "97%", label: "zadowolonych" },
-    { value: "TOP3", label: "wyniki" },
   ];
 
   const areas = [
@@ -154,7 +116,7 @@ export default function AgencjaMarketingowaBydgoszcz() {
     <Layout>
       <SEOHead
         title="Agencja Marketingowa Bydgoszcz | Fotz Studio"
-        description="Agencja marketingowa Bydgoszcz ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Bydgoszczy i Kujaw. Bezpłatna wycena!"
+        description="Agencja marketingowa dla firm z Bydgoszczy ✓ SEO, Google Ads, Social Media, strony WWW. Pracujemy z Poznania, Bydgoszcz obsługujemy zdalnie. Bezpłatna wycena!"
         canonical="https://www.fotz-studio.pl/agencja-marketingowa/bydgoszcz"
         keywords="agencja marketingowa Bydgoszcz, SEO Bydgoszcz, Google Ads Bydgoszcz, media społecznościowe, strony WWW, marketing Kujaw"
       />
@@ -167,7 +129,7 @@ export default function AgencjaMarketingowaBydgoszcz() {
           <div className="max-w-4xl mx-auto text-center">
             <Badge className="mb-6 px-4 py-2 bg-blue-100 text-blue-700">
               <MapPin className="w-4 h-4 mr-2" />
-              Serwisujemy cały region Bydgoszczy i Kujaw
+              Pracujemy z Poznania — Bydgoszcz obsługujemy zdalnie
             </Badge>
 
             <h1 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight">
@@ -175,7 +137,7 @@ export default function AgencjaMarketingowaBydgoszcz() {
             </h1>
 
             <p className="text-lg md:text-xl text-slate-600 mb-8 leading-relaxed">
-              Specjaliści z SEO, Google Ads, social media i tworzenia stron WWW dla firm w Bydgoszczy. Ponad 8 lat doświadczenia, 500 plus zadowolonych klientów, 97% wskaźnik satysfakcji.
+              SEO, Google Ads, social media i strony WWW dla firm z Bydgoszczy. Pracujemy z Poznania, a współpracę z firmami z Bydgoszczy prowadzimy zdalnie — od strategii po własną produkcję foto i wideo.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -194,20 +156,6 @@ export default function AgencjaMarketingowaBydgoszcz() {
                 Zapytaj o szczegóły
               </a></Button>
             </div>
-          </div>
-
-          {/* Stats Section */}
-          <div className="max-w-5xl mx-auto mt-20 grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">
-                  {stat.value}
-                </div>
-                <div className="text-sm md:text-base text-slate-600">
-                  {stat.label}
-                </div>
-              </div>
-            ))}
           </div>
         </section>
 
@@ -263,67 +211,35 @@ export default function AgencjaMarketingowaBydgoszcz() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-                Pakiety i cennik
+                Od czego zależy wycena
               </h2>
               <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                Wybierz pakiet dopasowany do wielkości Twojej firmy i budżetu.
+                Nie mamy sztywnego cennika. Wycenę przygotowujemy po rozmowie o zakresie i celach Twojej firmy.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {packages.map((pkg) => (
-                <Card
-                  key={pkg.id}
-                  className={`relative transition-all ${
-                    pkg.popular
-                      ? "border-2 border-blue-600 shadow-xl scale-105"
-                      : "border-slate-200"
-                  }`}
-                >
-                  {pkg.popular && (
-                    <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                      <Badge className="bg-blue-600 text-white px-4 py-1">
-                        Najpopularniejszy
-                      </Badge>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {pricingFactors.map((factor) => (
+                <Card key={factor.title} className="border-slate-200">
+                  <CardContent className="p-8">
+                    <div className="flex items-start">
+                      <CheckCircle2 className="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-0.5" />
+                      <div>
+                        <h3 className="text-xl font-bold text-slate-900 mb-2">
+                          {factor.title}
+                        </h3>
+                        <p className="text-slate-700">{factor.description}</p>
+                      </div>
                     </div>
-                  )}
-                  <CardContent className="p-8 pt-12">
-                    <h3 className="text-2xl font-bold text-slate-900 mb-2">
-                      {pkg.name}
-                    </h3>
-                    <p className="text-sm text-slate-600 mb-6">
-                      {pkg.description}
-                    </p>
-
-                    <div className="mb-8">
-                      <span className="text-4xl font-bold text-slate-900">
-                        {pkg.price}
-                      </span>
-                      <span className="text-slate-600">{pkg.period}</span>
-                    </div>
-
-                    <ul className="space-y-3 mb-8">
-                      {pkg.features.map((feature, idx) => (
-                        <li key={idx} className="flex items-start">
-                          <CheckCircle2 className="w-5 h-5 text-green-500 mr-3 flex-shrink-0 mt-0.5" />
-                          <span className="text-slate-700">{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-
-                    <Button
-                      onClick={() => setSelectedPackage(pkg.id)}
-                      className={`w-full ${
-                        pkg.popular
-                          ? "bg-blue-600 hover:bg-blue-700"
-                          : "bg-slate-200 hover:bg-slate-300 text-slate-900"
-                      }`}
-                    >
-                      Wybrać pakiet
-                    </Button>
                   </CardContent>
                 </Card>
               ))}
+            </div>
+
+            <div className="text-center mt-12">
+              <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
+                <Link to="/kontakt">Poproś o wycenę</Link>
+              </Button>
             </div>
           </div>
         </section>
@@ -336,7 +252,7 @@ export default function AgencjaMarketingowaBydgoszcz() {
                 Obsługujemy wszystkie dzielnice Bydgoszczy
               </h2>
               <p className="text-lg text-slate-600">
-                Nasz zespół obsługuje firmy z całego miasta i powiatu bydgoskiego.
+                Pracujemy z Poznania, a firmy z całego miasta i powiatu bydgoskiego obsługujemy zdalnie.
               </p>
             </div>
 
@@ -356,10 +272,10 @@ export default function AgencjaMarketingowaBydgoszcz() {
                 O Bydgoszczy
               </h3>
               <p className="text-slate-700 leading-relaxed mb-3">
-                Bydgoszcz to największe miasto w województwie kujawsko-pomorskim, znane z pięknego Kanału Bydgoskiego, nowoczesnej Opery Nova i dynamicznie rozwijającego się sektora IT. Jako agencja marketingowa z siedzibą w Bydgoszczy, doskonale rozumiemy specyfikę lokalnego rynku, potrzeby przedsiębiorców i trendami w cyfrowym marketingu.
+                Bydgoszcz to największe miasto w województwie kujawsko-pomorskim, znane z pięknego Kanału Bydgoskiego, nowoczesnej Opery Nova i dynamicznie rozwijającego się sektora IT. Nasz zespół pracuje z Poznania, a z firmami z Bydgoszczy współpracujemy zdalnie — przez rozmowy online, wspólne dokumenty i regularne raporty.
               </p>
               <p className="text-slate-700 leading-relaxed">
-                Nasza wiedza o Bydgoszczy i całego regionu Kujaw pozwala nam tworzyć strategie marketingowe, które rzeczywiście działają dla firm w tym obszarze.
+                Strategię zaczynamy od poznania Twojej firmy, klientów i konkurencji w Bydgoszczy i regionie Kujaw, a działania dopasowujemy do realnego zasięgu Twojej obsługi.
               </p>
             </div>
           </div>
@@ -426,7 +342,7 @@ export default function AgencjaMarketingowaBydgoszcz() {
 
       <ServiceSchema
         name="FOTZ - Agencja Marketingowa Bydgoszcz"
-        description="Profesjonalna agencja marketingowa w Bydgoszczy specjalizująca się w SEO, Google Ads, social media i tworzeniu stron internetowych."
+        description="Agencja marketingowa z Poznania obsługująca zdalnie firmy z Bydgoszczy: SEO, Google Ads, social media i strony internetowe."
         areaServed="Bydgoszcz"
       />
 

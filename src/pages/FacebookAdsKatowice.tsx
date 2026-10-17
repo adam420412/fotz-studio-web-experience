@@ -10,15 +10,15 @@ export default function FacebookAdsKatowice() {
   const faqItems = [
     {
       question: "Ile kosztuje Facebook Ads w Katowicach?",
-      answer: "Facebook Ads (Meta Ads) w Katowicach zaczyna się od 400 zł/miesiąc za zarządzanie kampanią (pakiet START). Dodatkowy budżet reklamowy to osobna pozycja — od 500 zł/miesiąc dla małych firm do 10 000+ zł/miesiąc dla e-commerce i sieci handlowych. Całkowity koszt zależy od branży, docelowej grupy odbiorców i konkurencji na Facebooku w Katowicach i Śląsku.",
+      answer: "Wycenę obsługi przygotowujemy po rozmowie o zakresie — zależy od liczby kampanii i grup odbiorców, liczby kreacji do przygotowania (grafiki, wideo), konfiguracji pixela i konwersji oraz częstotliwości raportowania. Budżet reklamowy płacisz bezpośrednio Meta i jest zawsze osobną pozycją, niezależną od wynagrodzenia agencji. Jego wysokość ustalamy razem, w zależności od branży, celu i konkurencji w Katowicach i na Śląsku.",
     },
     {
       question: "Jak długo trwa uruchomienie kampanii Facebook Ads w Katowicach?",
-      answer: "Kampanię można uruchomić w ciągu 24-48 godzin od podpisania umowy. Obejmuje to: tworzenie spersonalizowanych audiencji dla Katowic i regionu GZM, design kreatywnych reklam, konfigurację campaign structury, ustawienie pixela tracking i wdrożenie. Pierwsze wyniki są widoczne w ciągu kilku dni, pełna optymalizacja trwa 2-4 tygodnie.",
+      answer: "Termin startu ustalamy indywidualnie — zależy od tego, czy masz gotowe materiały, działający pixel i dostęp do konta reklamowego. Przygotowanie obejmuje: tworzenie audiencji dla Katowic i regionu GZM, projekt kreacji reklamowych, strukturę kampanii, konfigurację pixela i wdrożenie. Po starcie kampania potrzebuje czasu na zebranie danych i optymalizację — tempo zależy od budżetu i branży.",
     },
     {
       question: "Czy Facebook Ads są efektywne dla firm z Katowic?",
-      answer: "Tak — szczególnie dla średnich i dużych firm, e-commerce i usług konferencyjnych. Katowice to stolica Górnego Śląska z populacją 300 tys., ale w całym GZM (Górnośląsko-Zagłębiowska Metropolia) mieszka 2,5 mln ludzi. Możesz targetować ludzi z Katowic po wieku, zainteresowaniach, zachowaniu. CPC jest efektywny, a konwersje pracują bardzo dobrze dla usług biznesowych.",
+      answer: "Tak — szczególnie dla średnich i dużych firm, e-commerce i usług konferencyjnych. Katowice to stolica Górnego Śląska, a cała Górnośląsko-Zagłębiowska Metropolia (GZM) to jeden z największych obszarów metropolitalnych w Polsce. Możesz targetować ludzi z Katowic po wieku, zainteresowaniach i zachowaniu. Efektywność kampanii zależy od oferty, kreacji i strony docelowej — sprawdzamy ją na danych z Twojego konta.",
     },
     {
       question: "Czy mogę targetować reklamami tylko Katowice czy muszę brać cały Śląsk?",
@@ -26,15 +26,15 @@ export default function FacebookAdsKatowice() {
     },
     {
       question: "Jakie branże najczęściej korzystają z Facebook Ads w Katowicach?",
-      answer: "Najczęściej Facebook Ads korzystają: hotele i konferencje (MICE), restauracje i kluby, salony beauty i fryzjerskie, usługi konsultingowe, agencje marketingowe, szkoły jezykowe, fitness kluby, gabinety medyczne, nieruchomości, sklepy internetowe. Katowice to dynamiczne miasto — MICE industry sam generuje miliony zł w reklamach.",
+      answer: "Najczęściej Facebook Ads korzystają: hotele i konferencje (MICE), restauracje i kluby, salony beauty i fryzjerskie, usługi konsultingowe, agencje marketingowe, szkoły jezykowe, fitness kluby, gabinety medyczne, nieruchomości, sklepy internetowe.",
     },
     {
       question: "Czy Facebook Ads będą efektywne dla mojego e-commerce z Katowic?",
-      answer: "Tak — Facebook Ads (i Instagram Ads) działają bardzo dobrze dla e-commerce. Możesz sprzedawać na całą Polskę z siedzbą w Katowicach. Wiele naszych klientów z Katowic to sklepy internetowe o branżach takich jak elektronika, ubrania, kosmetyki, które zarabiają 15-40 tyś zł miesięcznie na Facebook Ads.",
+      answer: "Tak — Facebook Ads (i Instagram Ads) działają bardzo dobrze dla e-commerce. Możesz sprzedawać na całą Polskę, mając siedzibę w Katowicach. Pracujemy z Poznania, a firmy z Katowic obsługujemy zdalnie — kampanie katalogowe, remarketing i testy kreacji prowadzimy w Twoim koncie reklamowym.",
     },
     {
       question: "Czy Katowice są dobrym rynkiem do testowania kampanii Facebook Ads?",
-      answer: "Tak — Katowice i Górny Śląsk to doskonały rynek testowania. GZM to 2,5 mln ludzi — wystarczająco duży, żeby mieć reprezentatywne wyniki, ale wystarczająco mały, żeby testować taniej niż na całej Polsce. Wiele firm testuje kampanie w Katowicach, a potem skaluje na całą Polskę.",
+      answer: "Tak — Katowice i Górny Śląsk to doskonały rynek testowania. GZM jest wystarczająco duża, żeby zebrać sensowne dane, a jednocześnie mniejsza niż cała Polska, więc test kosztuje mniej. Dobrze sprawdzone kampanie można potem skalować na cały kraj.",
     },
     {
       question: "Czy mogę konkurować z firmami z Warszawy kampaniami Facebook Ads w Katowicach?",
@@ -47,14 +47,14 @@ export default function FacebookAdsKatowice() {
       <Layout>
         <SEOHead
           title="Agencja Facebook Ads Katowice — reklamy Meta dla firm | Fotz.pl"
-          description="Facebook Ads Katowice — agencja Fotz.pl. Kampanie Meta Ads dla firm z Katowic i Śląska. Od 400 zł/mies. Bezpłatna konsultacja!"
+          description="Facebook Ads Katowice — agencja Fotz.pl. Kampanie Meta Ads dla firm z Katowic i Śląska, prowadzone zdalnie z Poznania. Bezpłatna konsultacja!"
           canonical="https://www.fotz-studio.pl/performance-marketing/facebook-ads/katowice"
           keywords="facebook ads katowice, meta ads katowice, reklamy facebook katowice, agencja facebook ads katowice, kampanie facebook katowice, instagram ads katowice, facebook ads dla firm katowice, reklama na facebooku katowice, meta ads agencja katowice, facebook ads cennik katowice"
         />
 
         <ServiceSchema
           name="Kampanie Facebook Ads Katowice"
-          description="Tworzenie i optymalizacja kampanii Facebook Ads i Meta Ads dla firm z Katowic i Śląska. Agencja Fotz.pl — certyfikowani specjaliści reklam Meta."
+          description="Tworzenie i optymalizacja kampanii Facebook Ads i Meta Ads dla firm z Katowic i Śląska. Agencja Fotz.pl z Poznania — firmy z Katowic obsługujemy zdalnie."
           provider="Fotz Studio"
           areaServed="Katowice"
         />
@@ -88,22 +88,22 @@ export default function FacebookAdsKatowice() {
                   Agencja Facebook Ads Katowice
                 </h1>
                 <p className="text-xl md:text-2xl text-sky-100 mb-8">
-                  Facebook Ads Katowice — profesjonalne kampanie Meta Ads i reklamy Facebook dla firm z Katowice i Śląska. Zwiększamy sprzedaż, zasięg i ROI dzięki precyzyjnemu targetowaniu. Bezpłatna konsultacja.</p>
+                  Facebook Ads Katowice — profesjonalne kampanie Meta Ads i reklamy Facebook dla firm z Katowice i Śląska. Pracujemy z Poznania, firmy z Katowic obsługujemy zdalnie. Bezpłatna konsultacja.</p>
               </div>
 
               {/* Stats Grid */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-6 text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-sky-300 mb-2">400 zł</div>
-                  <div className="text-sm text-sky-100">Kampanie od</div>
+                  <div className="text-2xl md:text-3xl font-bold text-sky-300 mb-2">Wycena</div>
+                  <div className="text-sm text-sky-100">Po rozmowie o zakresie</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-6 text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-sky-300 mb-2">24-48h</div>
-                  <div className="text-sm text-sky-100">Wyniki od</div>
+                  <div className="text-2xl md:text-3xl font-bold text-sky-300 mb-2">Budżet</div>
+                  <div className="text-sm text-sky-100">Płacony Meta osobno</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-6 text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-sky-300 mb-2">2,5 mln</div>
-                  <div className="text-sm text-sky-100">Ludzi w GZM</div>
+                  <div className="text-2xl md:text-3xl font-bold text-sky-300 mb-2">GZM</div>
+                  <div className="text-sm text-sky-100">Katowice i region</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-6 text-center">
                   <div className="text-2xl md:text-3xl font-bold text-sky-300 mb-2">Raport</div>
@@ -124,16 +124,16 @@ export default function FacebookAdsKatowice() {
                 </h2>
                 <div className="space-y-6 text-lg text-muted-foreground">
                   <p>
-                    Katowice to stolica województwa śląskiego i gospodarczego serca Górnego Śląska. Samo miasto ma 300 tysięcy mieszkańców, ale w całej Górnośląsko-Zagłębiowskiej Metropolii (GZM) mieszka 2,5 miliona ludzi — to trzeci co do wielkości rynek metropolitalny w Polsce. To jest ogromna populacja dla kampanii Facebook Ads.
+                    Katowice to stolica województwa śląskiego i gospodarczego serca Górnego Śląska. Razem z całą Górnośląsko-Zagłębiowską Metropolią (GZM) to jeden z największych obszarów metropolitalnych w Polsce — duży rynek dla kampanii Facebook Ads.
                   </p>
                   <p>
-                    Katowice to dynamiczne centrum konferencji, biznesu i targów (MICE industry). Hotele takie jak Marriott, Hilton, a także dziesiątki mniejszych obiektów, biur i sal konferencyjnych generują miliardy złotych w obrotach. Firmy z MICE intensywnie reklamują się na Facebooku i Instagramie, co sprawia, że rynek jest aktywny i przetestowany.
+                    Katowice to dynamiczne centrum konferencji, biznesu i targów (MICE industry). Hotele, obiekty konferencyjne i organizatorzy wydarzeń reklamują się na Facebooku i Instagramie, więc rynek reklamowy jest aktywny.
                   </p>
                   <p>
-                    Facebook i Instagram mają ogromne nasycenie użytkowników w Katowicach i Śląsku — szczególnie w wieku 25-55 lat, czyli idealna grupa dla e-commerce, usług i konferencji. Konkurencja jest umiarkowanaana — niższa niż w Warszawie, ale wyższa niż w małych miastach. To sprawia, że CPC (koszt za kliknięcie) jest konkurencyjny.
+                    Facebook i Instagram są powszechnie używane w Katowicach i na Śląsku, także przez osoby w wieku produkcyjnym — ważną grupę dla e-commerce, usług i konferencji. Koszt kliknięcia zależy od branży i konkurencji, dlatego sprawdzamy go w pierwszych testach.
                   </p>
                   <p>
-                    Katowice to też hub IT i technologiczny — wiele firm tech ma tu siedziby i centra R&D. Międzynarodowe korporacje (KGHM, PKN Orlen) mają tu zasoby i biura, co sprawia, że rynek jest zaawansowany i profesjonalny. Kampanie Facebook Ads działają szybciej i drożej niż SEO — wyniki widoczne w ciągu 24-48 godzin.
+                    Katowice to też ośrodek IT i usług biznesowych, więc rynek B2B jest wymagający. Kampanie Facebook Ads dają pierwsze dane szybciej niż SEO, ale wymagają stałego budżetu reklamowego.
                   </p>
                 </div>
               </div>
@@ -170,7 +170,7 @@ export default function FacebookAdsKatowice() {
                 <div className="bg-background rounded-lg border border-border p-6">
                   <h3 className="text-xl font-bold mb-3">Remarketing i ROAS kampanie</h3>
                   <p className="text-muted-foreground">
-                    Reklamy dla osób, które już odwiedzały Twoją stronę lub kliknęły link. Konwersja 3-5x wyższa niż w kampaniach cold.
+                    Reklamy dla osób, które już odwiedzały Twoją stronę lub kliknęły link. Zwykle to najcieplejsza grupa odbiorców w koncie.
                   </p>
                 </div>
                 <div className="bg-background rounded-lg border border-border p-6">
@@ -216,7 +216,7 @@ export default function FacebookAdsKatowice() {
                   <div>
                     <h3 className="text-xl font-bold mb-2">Segmentacja i audiencje</h3>
                     <p className="text-muted-foreground">
-                      Tworzymy spersonalizowane audiencje dla Katowic, GZM lub całego Śląska — wiek, zainteresowania, zachowanie, status kupowania. Katowice i Śląsk to 2,5 mln ludzi — znajdujemy dla Ciebie idealne 5-10% z nich.
+                      Tworzymy spersonalizowane audiencje dla Katowic, GZM lub całego Śląska — wiek, zainteresowania, zachowanie, status kupowania. Zawężamy grupę do osób, które realnie mogą być Twoimi klientami.
                     </p>
                   </div>
                 </div>
@@ -263,43 +263,19 @@ export default function FacebookAdsKatowice() {
           <section className="py-16 md:py-24 bg-secondary/30">
             <div className="container px-4">
               <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-                Kampanie Facebook Ads Katowice — cennik
+                Kampanie Facebook Ads Katowice — od czego zależy wycena
               </h2>
-              <div className="max-w-4xl mx-auto overflow-x-auto">
-                <table className="w-full border-collapse">
-                  <thead>
-                    <tr className="border-b-2 border-border">
-                      <th className="text-left p-4 font-bold">Pakiet</th>
-                      <th className="text-left p-4 font-bold">Cena obsługi</th>
-                      <th className="text-left p-4 font-bold">Budżet reklamowy</th>
-                      <th className="text-left p-4 font-bold">Dla kogo</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="border-b border-border bg-background">
-                      <td className="p-4 font-semibold">START</td>
-                      <td className="p-4">400 zł/mies.</td>
-                      <td className="p-4">500-1500 zł</td>
-                      <td className="p-4">Małe firmy lokalne</td>
-                    </tr>
-                    <tr className="border-b border-border bg-background">
-                      <td className="p-4 font-semibold">GROWTH</td>
-                      <td className="p-4">800 zł/mies.</td>
-                      <td className="p-4">2000-5000 zł</td>
-                      <td className="p-4">Średnie firmy</td>
-                    </tr>
-                    <tr className="border-b border-border bg-background">
-                      <td className="p-4 font-semibold">PRO</td>
-                      <td className="p-4">1500+ zł/mies.</td>
-                      <td className="p-4">5000+ zł</td>
-                      <td className="p-4">E-commerce, sieci</td>
-                    </tr>
-                  </tbody>
-                </table>
+              <div className="max-w-3xl mx-auto space-y-4 text-muted-foreground">
+                <p>
+                  Nie mamy sztywnego cennika. Wycenę obsługi przygotowujemy po rozmowie o zakresie: liczbie kampanii i grup odbiorców, liczbie kreacji do przygotowania (grafiki, wideo), konfiguracji pixela i konwersji oraz sposobie raportowania.
+                </p>
+                <p>
+                  Budżet reklamowy płacisz bezpośrednio Meta — zawsze osobno, niezależnie od wynagrodzenia za obsługę. Jego wysokość ustalamy razem, w zależności od celu kampanii i konkurencji w Twojej branży.
+                </p>
               </div>
               <div className="max-w-3xl mx-auto mt-8 p-6 rounded-lg bg-primary/10 border border-primary/20">
                 <p className="text-sm text-muted-foreground">
-                  <strong className="text-foreground">Każdy pakiet zawiera:</strong> bezpłatną wstępną konsultację, strategię indywidualną, raportowanie miesięczne w Facebooku Ads Manager, dostęp do raportów online, dedykowany email ekspertów oraz nieograniczone testy A/B. Wszystkie pakiety mogą być rozszerzone o dodatkowe usługi.
+                  <strong className="text-foreground">Współpraca obejmuje:</strong> bezpłatną wstępną konsultację, indywidualną strategię, miesięczne raportowanie z Menedżera reklam i testy A/B kreacji. Pracujemy z Poznania, firmy z Katowic obsługujemy zdalnie.
                 </p>
               </div>
             </div>
@@ -317,13 +293,13 @@ export default function FacebookAdsKatowice() {
                 <div className="bg-background rounded-lg border border-border p-6">
                   <h3 className="text-lg font-bold mb-3">Hotele i MICE events</h3>
                   <p className="text-muted-foreground text-sm">
-                    Katowice to miasto konferencji. Hotele, centra konferencyjne i agencje eventowe reklamują się na Facebooku. MIME industry to miliardy zł w obrotach.
+                    Katowice to miasto konferencji. Hotele, centra konferencyjne i agencje eventowe reklamują się na Facebooku.
                   </p>
                 </div>
                 <div className="bg-background rounded-lg border border-border p-6">
                   <h3 className="text-lg font-bold mb-3">E-commerce i moda</h3>
                   <p className="text-muted-foreground text-sm">
-                    Sklepy internetowe osiągają najlepsze ROI na Facebook Ads. Katowice to rynek dostatecznie duży, żeby testować tanio, a potem skalować na całą Polskę.
+                    Kampanie katalogowe i remarketing to naturalny kanał dla sklepów internetowych. Katowice to rynek dostatecznie duży, żeby testować tanio, a potem skalować na całą Polskę.
                   </p>
                 </div>
                 <div className="bg-background rounded-lg border border-border p-6">

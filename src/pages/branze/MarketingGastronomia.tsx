@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
-import { useCountUp } from "@/hooks/useCountUp";
 import { OtherIndustries } from "@/components/sections/OtherIndustries";
 import cuteDumplingImg from "@/assets/portfolio/cute-dumpling-new-web.webp";
 
@@ -53,8 +52,8 @@ const customSolutions = [
 
 const benefits = [
   "Profesjonalne zdjęcia dań zwiększające apetyt",
-  "Więcej rezerwacji online i telefonicznych",
-  "Lepsza widoczność w Google Maps",
+  "Działania nastawione na rezerwacje online i telefoniczne",
+  "Praca nad widocznością w Google Maps",
   "Aktywna społeczność w social media",
   "Zarządzanie reputacją i opiniami",
   "Kampanie promocyjne na eventy i święta",
@@ -63,7 +62,7 @@ const benefits = [
 const faqItems = [
   {
     question: "Ile kosztuje sesja zdjęciowa menu restauracji?",
-    answer: "Podstawowa sesja 20-30 dań to koszt 2500-4000 zł. Pełna sesja z food stylingiem, zdjęciami wnętrza i zespołu to 5000-8000 zł. Oferujemy też pakiety abonamentowe na regularne aktualizacje menu.",
+    answer: "Wycenę przygotowujemy po rozmowie o zakresie: liczbie dań, food stylingu, zdjęciach wnętrza i zespołu oraz liczbie dni zdjęciowych. Możemy też ustalić stałą współpracę przy regularnych aktualizacjach menu.",
   },
   {
     question: "Jak zwiększyć liczbę opinii w Google?",
@@ -71,7 +70,7 @@ const faqItems = [
   },
   {
     question: "Czy prowadzicie social media dla restauracji?",
-    answer: "Tak, oferujemy pełną obsługę: strategia, tworzenie treści, publikacja, odpowiadanie na komentarze i reklamy. Średni budżet na obsługę social media to 3000-6000 zł miesięcznie.",
+    answer: "Tak, oferujemy pełną obsługę: strategia, tworzenie treści, publikacja, odpowiadanie na komentarze i reklamy. Wycena zależy od liczby kanałów i publikacji, produkcji zdjęć i wideo oraz tego, czy prowadzimy też reklamy - budżet reklamowy płacony platformom jest zawsze osobny.",
   },
   {
     question: "Jak działa system rezerwacji online?",
@@ -124,7 +123,7 @@ const MarketingGastronomia = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
             className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full blur-[180px]"
-            style={{ background: "hsla(30, 71%, 27%, 0.1)" }}
+            style={{ background: "rgba(118, 69, 20, 0.1)" }}
           />
         </div>
 
@@ -170,21 +169,18 @@ const MarketingGastronomia = () => {
             className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16"
           >
             {[
-              { value: 80, suffix: "%", label: "więcej rezerwacji" },
-              { value: 45, suffix: "%", label: "wzrost ruchu" },
-              { value: 100, suffix: "+", label: "sesji kulinarnych" },
-              { value: 4.9, suffix: "", label: "średnia ocen klientów" },
-            ].map((stat, index) => {
-              const { ref, displayValue } = useCountUp({ end: stat.value, suffix: stat.suffix });
-              return (
-                <div key={index} ref={ref} className="text-center p-6 rounded-2xl bg-card border border-border/30">
-                  <div className="text-3xl md:text-4xl font-heading font-bold text-gradient-premium">
-                    {displayValue}
-                  </div>
-                  <p className="text-foreground/60 text-sm mt-2">{stat.label}</p>
+              { value: "Foto", label: "sesje menu i wnętrz" },
+              { value: "Video", label: "rolki i spoty" },
+              { value: "Social", label: "Instagram, Facebook, TikTok" },
+              { value: "Lokalnie", label: "Google Maps i opinie" },
+            ].map((stat, index) => (
+              <div key={index} className="text-center p-6 rounded-2xl bg-card border border-border/30">
+                <div className="text-3xl md:text-4xl font-heading font-bold text-gradient-premium">
+                  {stat.value}
                 </div>
-              );
-            })}
+                <p className="text-foreground/60 text-sm mt-2">{stat.label}</p>
+              </div>
+            ))}
           </motion.div>
         </div>
       </section>
@@ -282,8 +278,8 @@ const MarketingGastronomia = () => {
                 Dlaczego warto <span className="text-gradient-premium">współpracować?</span>
               </h2>
               <p className="text-foreground/70 mb-8">
-                Znamy branżę gastronomiczną od kuchni. Wiemy, jak przyciągnąć głodnych klientów 
-                i zamienić ich w stałych bywalców.
+                Łączymy zdjęcia, wideo, social media i widoczność lokalną, żeby pomagać
+                przyciągać nowych gości i zamieniać ich w stałych bywalców.
               </p>
               
               <div className="space-y-4">

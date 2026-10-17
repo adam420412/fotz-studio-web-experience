@@ -10,15 +10,15 @@ export default function GoogleAdsKatowice() {
   const faqItems = [
     {
       question: "Ile kosztuje Google Ads w Katowicach?",
-      answer: "Google Ads w Katowicach zaczyna się od 400 zł/miesiąc za zarządzanie kampanią (pakiet START). Dodatkowy budżet reklamowy to osobna pozycja — od 500 zł/miesiąc dla małych firm do 10 000+ zł/miesiąc dla e-commerce i sieci handlowych. Całkowity koszt zależy od branży i konkurencji na słowa kluczowe w Katowicach i Górnym Śląsku.",
+      answer: "Wycenę obsługi przygotowujemy po rozmowie o zakresie — zależy od liczby i typu kampanii, branży, konkurencji na słowa kluczowe i potrzeb w zakresie raportowania. Budżet reklamowy płacisz bezpośrednio Google, zawsze osobno od wynagrodzenia za obsługę — jego wysokość ustalamy wspólnie do Twoich celów.",
     },
     {
       question: "Jak długo trwa uruchomienie kampanii Google Ads w Katowicach?",
-      answer: "Kampanię można uruchomić w ciągu 24-48 godzin od podpisania umowy. Obejmuje to: audit konkurencji katowickiej, badanie słów kluczowych dla Górnego Śląska, tworzenie struktury kampanii, konfigurację trackingu konwersji i wdrożenie. Pierwsze wyniki są widoczne po kilku dniach, pełna optymalizacja trwa 2-4 tygodnie.",
+      answer: "Termin startu ustalamy po briefie — zależy od zakresu i gotowości strony oraz trackingu. Przygotowanie obejmuje: analizę konkurencji, badanie słów kluczowych dla Katowic i Górnego Śląska, strukturę kampanii, konfigurację śledzenia konwersji i wdrożenie. Po starcie kampanię optymalizujemy na bieżąco na podstawie zbieranych danych.",
     },
     {
       question: "Czy w Katowicach konkurencja na Google Ads jest duża?",
-      answer: "Katowice to stolica Górnego Śląska z populacją 300 tysięcy mieszkańców i aglomeracją GZM liczącą 2,5 miliona ludzi. Konkurencja jest umiarkowanaana — niższa niż w Warszawie, ale wyższa niż w mniejszych miastach. Średni CPC (koszt za kliknięcie) wynosi 2-6 zł w zależności od branży. To sprawia, że Katowice są idealnym rynkiem do testowania kampanii przed skalowaniem na całą Polskę.",
+      answer: "Katowice to stolica Górnego Śląska i centrum metropolii GZM. Poziom konkurencji i koszt kliknięcia zależą od branży i słów kluczowych — sprawdzamy je na etapie analizy, zanim zaproponujemy budżet. Lokalne kampanie dobrze nadają się do testowania przed skalowaniem na większy obszar.",
     },
     {
       question: "Jakie słowa kluczowe są popularne dla firm z Katowic?",
@@ -30,15 +30,15 @@ export default function GoogleAdsKatowice() {
     },
     {
       question: "Czy Google Ads będą efektywne dla mojej e-commerce z Katowic?",
-      answer: "Tak — Google Ads (zwłaszcza Performance Max i Google Shopping) działają bardzo dobrze dla e-commerce. Możesz sprzedawać na całą Polskę z siedzbą w Katowicach. Wiele naszych klientów z Katowic to sklepy internetowe, które zarabiają 15-40 tyś zł miesięcznie na Google Ads.",
+      answer: "Tak — Google Ads (zwłaszcza Performance Max i Google Shopping) działają bardzo dobrze dla e-commerce. Możesz sprzedawać na całą Polskę z siedzibą w Katowicach. Efekty zależą od asortymentu, marż, jakości feedu produktowego i budżetu — nie obiecujemy konkretnych przychodów.",
     },
     {
       question: "Jakie branże najczęściej korzystają z Google Ads w Katowicach?",
-      answer: "Najczęściej Google Ads korzystają: usługi lokalne (fryzjerstwo, kosmetyka, dentyści), restauracje i bary, agencje web, handel elektroniczny, nieruchomości, usługi budowlane, szkoły jezykowe. Katowice mają aktywną scenę biznesową, więc wszystkie branże mogą liczyć na dobre wyniki.",
+      answer: "Najczęściej Google Ads korzystają: usługi lokalne (fryzjerstwo, kosmetyka, dentyści), restauracje i bary, agencje web, handel elektroniczny, nieruchomości, usługi budowlane, szkoły jezykowe. Opłacalność kampanii zależy od branży, marży i konkurencji — oceniamy ją indywidualnie.",
     },
     {
       question: "Czy Google Ads pomogą mi konkurować z firmami z Warszawy?",
-      answer: "Tak, ale inną strategią. Firmy z Warszawy mają większy budżet, ale ty znasz lokalny rynek Katowic i Górnego Śląska lepiej. Twoją strategią powinno być: (1) dominate lokalne słowa kluczowe w Katowicach (2) skaluj na sąsiednie miasta i aglomerację (3) jeśli e-commerce — skaluj na całą Polskę. W Google Ads wygrywa ten, kto ma lepszą strategię i optymalizację, nie ten z największym budżetem.",
+      answer: "Tak, ale inną strategią. Firmy z Warszawy mają większy budżet, ale ty znasz lokalny rynek Katowic i Górnego Śląska lepiej. Twoją strategią powinno być: (1) skup się na lokalnych słowach kluczowych w Katowicach (2) skaluj na sąsiednie miasta i aglomerację (3) jeśli e-commerce — skaluj na całą Polskę. W Google Ads wygrywa ten, kto ma lepszą strategię i optymalizację, nie ten z największym budżetem.",
     },
   ];
 
@@ -47,14 +47,14 @@ export default function GoogleAdsKatowice() {
       <Layout>
         <SEOHead
           title="Agencja Google Ads Katowice | Fotz Studio"
-          description="Google Ads Katowice — agencja certyfikowana Fotz.pl. Kampanie od 400 zł/mies., wyniki od 24-48h, specjaliści z certyfikatem Google. Bezpłatna konsultacja!"
+          description="Google Ads Katowice — kampanie Search, Performance Max i Shopping dla firm z Katowic i Śląska. Pracujemy z Poznania, obsługa zdalna. Bezpłatna konsultacja."
           canonical="https://www.fotz-studio.pl/performance-marketing/google-ads/katowice"
           keywords="google ads katowice, kampanie google ads katowice, agencja google ads katowice, reklamy google katowice, google adwords katowice, sem katowice, google ads dla firm katowice, prowadzenie google ads katowice, google ads cennik katowice, reklama w google katowice"
         />
 
         <ServiceSchema
           name="Kampanie Google Ads Katowice"
-          description="Tworzenie i optymalizacja kampanii Google Ads dla firm z Katowic. Agencja Fotz.pl — certyfikowani specjaliści Google Ads."
+          description="Tworzenie i optymalizacja kampanii Google Ads dla firm z Katowic. FOTZ Studio z Poznania — obsługa zdalna."
           provider="Fotz Studio"
           areaServed="Katowice"
         />
@@ -88,22 +88,22 @@ export default function GoogleAdsKatowice() {
                   Agencja Google Ads Katowice
                 </h1>
                 <p className="text-xl md:text-2xl text-sky-100 mb-8">
-                  Google Ads Katowice — profesjonalne kampanie Google Ads i reklamy w Google dla firm z Katowicea i Śląska. Zwiększamy ruch, konwersje i ROI dzięki skutecznym kampaniom SEM. Bezpłatna konsultacja.</p>
+                  Google Ads Katowice — profesjonalne kampanie Google Ads i reklamy w Google dla firm z Katowic i Śląska. Pracujemy z Poznania, firmy z Katowic obsługujemy zdalnie. Bezpłatna konsultacja.</p>
               </div>
 
               {/* Stats Grid */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-6 text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-sky-300 mb-2">400 zł</div>
-                  <div className="text-sm text-sky-100">Kampanie od</div>
+                  <div className="text-2xl md:text-3xl font-bold text-sky-300 mb-2">Search</div>
+                  <div className="text-sm text-sky-100">i Performance Max</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-6 text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-sky-300 mb-2">24-48h</div>
-                  <div className="text-sm text-sky-100">Wyniki od</div>
+                  <div className="text-2xl md:text-3xl font-bold text-sky-300 mb-2">Wycena</div>
+                  <div className="text-sm text-sky-100">Po rozmowie o zakresie</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-6 text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-sky-300 mb-2">100%</div>
-                  <div className="text-sm text-sky-100">Certyfikowani</div>
+                  <div className="text-2xl md:text-3xl font-bold text-sky-300 mb-2">Zdalnie</div>
+                  <div className="text-sm text-sky-100">Z Poznania</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-6 text-center">
                   <div className="text-2xl md:text-3xl font-bold text-sky-300 mb-2">Raport</div>
@@ -124,13 +124,13 @@ export default function GoogleAdsKatowice() {
                 </h2>
                 <div className="space-y-6 text-lg text-muted-foreground">
                   <p>
-                    Katowice to stolica Górnego Śląska i drugiego co do wielkości obszaru metropolitalnego w Polsce. Populacja miasta: 300 tysięcy mieszkańców, ale co najważniejsze — aglomeracja GZM (Górnośląsko-Zagłębiowska Metropolia) liczy 2,5 miliona ludzi. To ogromny rynek z dynamiczną gospodarką i dużym potencjałem dla biznesu.
+                    Katowice to stolica Górnego Śląska i centrum Górnośląsko-Zagłębiowskiej Metropolii (GZM). To duży rynek z dynamiczną gospodarką i dużym potencjałem dla biznesu.
                   </p>
                   <p>
                     Górny Śląsk przechodzi transformację od tradycyjnego przemysłu do nowoczesnych sektorów — technologia, usługi biznesowe, turystyka, MICE (konferencje i eventy). Przedsiębiorcy w Katowicach i regionie aktywnie inwestują w reklamy internetowe. Konkurencja jest mniejsza niż w Warszawie, ale rynek jest dynamiczny i aktywny.
                   </p>
                   <p>
-                    Średni CPC (koszt za kliknięcie) w Katowicach wynosi 2-6 zł — jest to świetny punkt do testowania strategii kampanii. W Katowicach możesz szybko sprawdzić, co działa, a potem skalować na sąsiednie miasta czy całą aglomerację. Google Ads działają szybciej niż SEO — wyniki widoczne w ciągu 24-48 godzin.
+                    Koszt kliknięcia zależy od branży i konkurencji — sprawdzamy go przed startem. W Katowicach możesz sprawdzić, co działa, a potem skalować na sąsiednie miasta czy całą aglomerację. Google Ads zaczynają generować ruch zwykle szybciej niż SEO, bo reklamy wyświetlają się od momentu uruchomienia.
                   </p>
                   <p>
                     Katowice to także ważny hub dla MICE — konferencji, seminarów i eventów. Jeśli prowadzisz hotel, restaurację, centrum konferencyjne, lub usługi biznesowe, Google Ads to najprostsza droga do przyciągnięcia konkretnych, zainteresowanych klientów. Płacisz tylko za kliknięcia, nie za wyświetlenia.
@@ -170,7 +170,7 @@ export default function GoogleAdsKatowice() {
                 <div className="bg-background rounded-lg border border-border p-6">
                   <h3 className="text-xl font-bold mb-3">Remarketing</h3>
                   <p className="text-muted-foreground">
-                    Reklamy dla osób, które już odwiedzały Twoją stronę. Konwersja 3-5x wyższa niż w kampaniach Search.
+                    Reklamy dla osób, które już odwiedzały Twoją stronę i znają Twoją ofertę.
                   </p>
                 </div>
                 <div className="bg-background rounded-lg border border-border p-6">
@@ -263,49 +263,16 @@ export default function GoogleAdsKatowice() {
           <section className="py-16 md:py-24 bg-secondary/30">
             <div className="container px-4">
               <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-                Kampanie Google Ads Katowice — cennik
+                Kampanie Google Ads Katowice — od czego zależy wycena
               </h2>
-              <div className="max-w-4xl mx-auto overflow-x-auto">
-                <table className="w-full border-collapse">
-                  <thead>
-                    <tr className="border-b-2 border-border">
-                      <th className="text-left p-4 font-bold">Pakiet</th>
-                      <th className="text-left p-4 font-bold">Cena obsługi</th>
-                      <th className="text-left p-4 font-bold">Budżet reklamowy</th>
-                      <th className="text-left p-4 font-bold">Dla kogo</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="border-b border-border bg-background">
-                      <td className="p-4 font-semibold">START</td>
-                      <td className="p-4">400 zł/mies.</td>
-                      <td className="p-4">500-1500 zł</td>
-                      <td className="p-4">Małe firmy lokalne</td>
-                    </tr>
-                    <tr className="border-b border-border bg-background">
-                      <td className="p-4 font-semibold">GROWTH</td>
-                      <td className="p-4">800 zł/mies.</td>
-                      <td className="p-4">2000-5000 zł</td>
-                      <td className="p-4">Średnie firmy</td>
-                    </tr>
-                    <tr className="border-b border-border bg-background">
-                      <td className="p-4 font-semibold">PRO</td>
-                      <td className="p-4">1500+ zł/mies.</td>
-                      <td className="p-4">5000+ zł</td>
-                      <td className="p-4">E-commerce, sieci</td>
-                    </tr>
-                    <tr className="bg-background">
-                      <td className="p-4 font-semibold">ENTERPRISE</td>
-                      <td className="p-4">% budżetu (15-20%)</td>
-                      <td className="p-4">10000+ zł</td>
-                      <td className="p-4">Duże firmy</td>
-                    </tr>
-                  </tbody>
-                </table>
+              <div className="max-w-3xl mx-auto space-y-4 text-muted-foreground">
+                <p>
+                  Wycenę przygotowujemy po rozmowie o zakresie. Na koszt obsługi wpływają m.in.: liczba i rodzaj kampanii (Search, Performance Max, Shopping, Display, remarketing), liczba produktów lub usług, konkurencja w branży, konfiguracja śledzenia konwersji oraz częstotliwość raportowania.
+                </p>
+                <p>
+                  Budżet reklamowy płacisz bezpośrednio Google — zawsze osobno od wynagrodzenia za obsługę. Jego wysokość ustalamy wspólnie, do Twoich celów i możliwości.
+                </p>
               </div>
-              <p className="text-center text-muted-foreground mt-8 max-w-2xl mx-auto">
-                Każdy pakiet obejmuje setup kampanii, daily optimization, raportowanie co miesiąc, A/B testy reklam i ciągłą optymalizację Quality Score.
-              </p>
             </div>
           </section>
         </FadeInView>
@@ -382,9 +349,9 @@ export default function GoogleAdsKatowice() {
               </h2>
               <div className="max-w-3xl mx-auto space-y-6">
                 <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-2">Certyfikowani specjaliści Google</h3>
+                  <h3 className="text-xl font-bold mb-2">Kampanie i strona w jednym miejscu</h3>
                   <p className="text-muted-foreground">
-                    Nasi specjaliści posiadają certyfikat Google Ads. Mamy dostęp do beta features, nowych algorytmów i najnowszych best practices bezpośrednio od Google.
+                    Robimy też strony, landing page i materiały wideo — możemy poprawić stronę docelową, gdy to ona ogranicza wyniki kampanii.
                   </p>
                 </div>
                 <div className="bg-background rounded-lg border border-border p-6">
@@ -394,21 +361,21 @@ export default function GoogleAdsKatowice() {
                   </p>
                 </div>
                 <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-2">Wyniki od 24-48h</h3>
+                  <h3 className="text-xl font-bold mb-2">Optymalizacja na danych</h3>
                   <p className="text-muted-foreground">
-                    Szybko uruchamiamy kampanie i szybko je optymalizujemy. Twoja firma widzi wyniki prawie natychmiast — nie czekasz tygodniami.
+                    Decyzje o budżetach, słowach kluczowych i reklamach podejmujemy na podstawie danych z kampanii, a nie przeczucia. Nie obiecujemy konkretnych wyników w ustalonym terminie.
                   </p>
                 </div>
                 <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-2">Znamy rynek katowicko-śląski</h3>
+                  <h3 className="text-xl font-bold mb-2">Współpraca zdalna</h3>
                   <p className="text-muted-foreground">
-                    Specjalizujemy się w branżach Katowic i Górnego Śląska — IT, e-commerce, usługi lokalne, nieruchomości, MICE. Znamy konkurencję, słowa kluczowe i CPCy dla każdej branży.
+                    Pracujemy z Poznania, firmy z Katowic obsługujemy zdalnie. Przed startem analizujemy konkurencję i słowa kluczowe w Twojej branży na rynku śląskim.
                   </p>
                 </div>
                 <div className="bg-background rounded-lg border border-border p-6">
                   <h3 className="text-xl font-bold mb-2">Skalowanie poza Katowice</h3>
                   <p className="text-muted-foreground">
-                    Zaczynasz w Katowicach, potem skalujesz na sąsiednie miasta, Górny Śląsk, całą Polskę. Obsługujemy firmy z Katowic, które chcą ekspandować.
+                    Zaczynasz w Katowicach, potem skalujesz na sąsiednie miasta, Górny Śląsk, całą Polskę. Pomagamy zaplanować rozszerzanie kampanii na kolejne obszary.
                   </p>
                 </div>
               </div>
@@ -444,7 +411,7 @@ export default function GoogleAdsKatowice() {
                   Uruchom kampanie Google Ads w Katowicach
                 </h2>
                 <p className="text-lg text-slate-300 mb-10">
-                  Bezpłatna konsultacja bez zobowiązań. Poznaj naszą strategię dla Twojej branży. Wyniki od 24-48h.
+                  Bezpłatna konsultacja bez zobowiązań. Poznaj naszą propozycję strategii dla Twojej branży.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link

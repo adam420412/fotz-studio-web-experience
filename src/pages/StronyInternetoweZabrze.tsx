@@ -41,14 +41,14 @@ const StronyInternetoweZabrze = () => {
   ];
 
   const caseStudies = [
-    { title: "Apartamenty Chorwacja", category: "Strona rezerwacyjna", result: "+180% rezerwacji online", link: "/realizacje/apartamenty-chorwacja", image: apartamentyImg },
+    { title: "Apartamenty Chorwacja", category: "Strona rezerwacyjna", result: "Strona z rezerwacjami online", link: "/realizacje/apartamenty-chorwacja", image: apartamentyImg },
     { title: "Victory Cars", category: "Strona motoryzacyjna", result: "Nowoczesny design premium", link: "/realizacje/victory-cars", image: victoryCarsImg },
-    { title: "Cute Dumpling", category: "Strona gastronomiczna", result: "+250% ruchu organicznego", link: "/realizacje/cute-dumpling", image: cuteDumplingImg },
+    { title: "Cute Dumpling", category: "Strona gastronomiczna", result: "Strona lokalu gastronomicznego", link: "/realizacje/cute-dumpling", image: cuteDumplingImg },
   ];
 
   const faqItems = [
     { question: "Ile kosztuje strona internetowa w Zabrzu?", answer: "Koszt zależy od zakresu, treści i integracji. Prześlij brief, aby otrzymać indywidualną ofertę z harmonogramem i rozpisanymi kosztami." },
-    { question: "Jak długo trwa tworzenie strony www?", answer: "Czas realizacji zależy od złożoności projektu. Prosta strona wizytówkowa to 2-3 tygodnie, rozbudowana strona firmowa 4-6 tygodni, sklep internetowy 6-10 tygodni." },
+    { question: "Jak długo trwa tworzenie strony www?", answer: "Czas realizacji zależy od złożoności projektu, liczby podstron, integracji i tego, jak szybko powstają treści. Orientacyjny harmonogram zapisujemy w indywidualnej ofercie po rozmowie o zakresie." },
     { question: "Czy oferujecie wsparcie po uruchomieniu strony?", answer: "Tak, zapewniamy wsparcie techniczne po uruchomieniu. Oferujemy pakiety serwisowe obejmujące aktualizacje, kopie zapasowe i pomoc techniczną." },
     { question: "Czy strona będzie responsywna?", answer: "Wszystkie nasze strony są w pełni responsywne i dostosowane do urządzeń mobilnych. Projektujemy w podejściu mobile-first." },
     { question: "Czy pomagacie w pozycjonowaniu strony?", answer: "Tak, każda strona jest zoptymalizowana pod SEO. Oferujemy również kompleksowe usługi pozycjonowania dla firm z Zabrza." },
@@ -63,19 +63,19 @@ const StronyInternetoweZabrze = () => {
   ];
 
   const benefits = [
-    "Znajomość rynku Górnego Śląska",
+    "Zdalna współpraca z Poznania z firmami z Zabrza",
     "Kompleksowa obsługa od projektu po wdrożenie",
     "SEO w standardzie każdej strony",
     "Responsywny design mobile-first",
     "Wsparcie techniczne po uruchomieniu",
-    "Konkurencyjne ceny bez ukrytych kosztów"
+    "Wycena po rozmowie o zakresie, bez ukrytych kosztów"
   ];
 
   const introContent = {
     title: "Tworzenie stron www dla firm z Zabrza",
     paragraphs: [
       "Szukasz profesjonalnego partnera do stworzenia strony internetowej dla Twojej firmy w Zabrzu? Nasza agencja specjalizuje się w projektowaniu i wdrażaniu nowoczesnych stron www.",
-      "Zabrze to ważny ośrodek gospodarczy Górnego Śląska z bogatą tradycją przemysłową. Twoja strona internetowa będzie nie tylko estetyczna, ale również efektywna w pozyskiwaniu klientów.",
+      "Zabrze to ważny ośrodek gospodarczy Górnego Śląska z bogatą tradycją przemysłową. Pracujemy z Poznania, a firmy z Zabrza obsługujemy zdalnie — od briefu, przez projekt, po wdrożenie strony.",
       "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych.",
       "Zabrze, jako jedno z największych miast Śląska, skupia przedsiębiorców z branż produkcyjnych, usługowych i handlowych. Lokalne firmy coraz chętniej inwestują w profesjonalne strony internetowe jako kluczowy kanał pozyskiwania klientów."
     ],
@@ -86,7 +86,7 @@ const StronyInternetoweZabrze = () => {
     <>
       <SEOHead
         title="Strony Internetowe Zabrze | Tworzenie i Projektowanie Stron WWW"
-        description="Strony internetowe Zabrze — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Zabrza i Górnego Śląska. Fotz Studio tworzy strony, które pozyskują klientów."
+        description="Strony internetowe Zabrze — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Zabrza i Górnego Śląska. Pracujemy z Poznania, Zabrze obsługujemy zdalnie."
         canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/zabrze"
         keywords="strony internetowe zabrze, tworzenie stron zabrze, strony www zabrze, projektowanie stron zabrze"
       />
@@ -115,7 +115,7 @@ const StronyInternetoweZabrze = () => {
               </h1>
 
               <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto">
-                <strong className="text-foreground">Profesjonalna strona internetowa to podstawa sukcesu każdej firmy.</strong>{" "}Tworzymy strony www, które wyglądają świetnie i skutecznie pozyskują klientów dla firm z Zabrza i Górnego Śląska.
+                <strong className="text-foreground">Profesjonalna strona internetowa to podstawa sukcesu każdej firmy.</strong>{" "}Tworzymy strony www, które dobrze wyglądają i są projektowane z myślą o pozyskiwaniu klientów — dla firm z Zabrza i Górnego Śląska.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -182,7 +182,7 @@ const StronyInternetoweZabrze = () => {
           </div>
         </section>
 
-        <CityPricingCards pricing={pricing} title="Cennik stron internetowych" subtitle="Transparentne ceny bez ukrytych kosztów" cityName="Zabrze" />
+        <CityPricingCards pricing={pricing} title="Zakres i wycena stron internetowych" subtitle="Wycena po rozmowie o zakresie" cityName="Zabrze" />
         <CityLinksSection currentCity="Zabrze" />
 
         {/* FAQ */}
@@ -236,7 +236,7 @@ const StronyInternetoweZabrze = () => {
               E-commerce i handel online — Zabrze i Górny Śląsk
             </h2>
             <p className="text-muted-foreground mb-4">
-              Rynek e-commerce w Zabrzu rośnie dynamicznie. Lokalni producenci,
+              Lokalni producenci,
               dystrybutorzy i usługodawcy coraz częściej sprzedają przez internet
               — zarówno na platformach jak Allegro i Amazon, jak i przez własne
               sklepy online. Tworzymy sklepy e-commerce w WooCommerce i Shopify,
@@ -245,8 +245,8 @@ const StronyInternetoweZabrze = () => {
             <p className="text-muted-foreground mb-6">
               Dla małych i średnich firm handlowych z Zabrza projektujemy
               przystępne strony wizytówkowe i katalogowe — funkcjonalne, szybkie
-              i zoptymalizowane pod lokalny Google Maps. Czas realizacji: 3-5 tygodni,
-              Cenę i termin ustalamy w indywidualnej ofercie. Bez ukrytych kosztów, z pełnym transferem dostępów.
+              i zoptymalizowane pod lokalny Google Maps. Cenę i termin ustalamy
+              w indywidualnej ofercie. Bez ukrytych kosztów, z pełnym transferem dostępów.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
@@ -263,8 +263,9 @@ const StronyInternetoweZabrze = () => {
             <p className="text-muted-foreground">
               Jeśli prowadzisz firmę w Zabrzu lub na Górnym Śląsku i potrzebujesz
               profesjonalnej strony internetowej — skontaktuj się z nami.
-              Bezpłatna wycena w 24 godziny, zdalny model współpracy,
-              pełna optymalizacja SEO. Zacznij pozyskiwać klientów przez internet.
+              Pracujemy z Poznania, a firmy z Zabrza obsługujemy zdalnie.
+              Wycena jest bezpłatna, a optymalizacja SEO wchodzi w zakres
+              każdej strony.
             </p>
 
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">

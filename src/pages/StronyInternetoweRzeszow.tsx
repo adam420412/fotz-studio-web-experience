@@ -43,7 +43,7 @@ export default function StronyInternetoweRzeszow() {
     {
       icon: ShoppingCart,
       title: "Sklepy internetowe",
-      desc: "Pełnofunkcyjne platformy e-commerce z integracją płatności, zarządzaniem magazynem, logistyką. Sprzedawaj 24/7 bez granic geograficznych.",
+      desc: "Pełnofunkcyjne platformy e-commerce z integracją płatności, zarządzaniem magazynem, logistyką. Sprzedawaj online także poza godzinami pracy sklepu stacjonarnego.",
       price: "Wycena indywidualna",
     },
     {
@@ -64,27 +64,27 @@ export default function StronyInternetoweRzeszow() {
     {
       icon: TrendingUp,
       title: "SEO od początku",
-      desc: "Każdą stronę budujemy myśląc o wyszukiwarkach. Czytelna struktura, szybkość, responsywność, meta tagi, schemat danych. Wynik: widoczność w Google.",
+      desc: "Każdą stronę budujemy myśląc o wyszukiwarkach. Czytelna struktura, szybkość, responsywność, meta tagi, schemat danych. To dobre podstawy pod widoczność w Google.",
     },
     {
       icon: Smartphone,
       title: "Mobile-first design",
-      desc: "70% użytkowników na mobilach. Budziemy strony które działają idealnie na telefonach, tabletach i komputerach. Testujemy na 10+ urządzeniach.",
+      desc: "Duża część ruchu pochodzi dziś z telefonów. Budujemy strony, które działają na telefonach, tabletach i komputerach, i sprawdzamy je na różnych urządzeniach przed oddaniem.",
     },
     {
       icon: Zap,
       title: "Szybkość błyskawiczna",
-      desc: "Strona wolna = klienci zaraz odchodzą. Optymalizujemy kod, obrazy, cache. Celujemy w ładowanie poniżej 2 sekund na mobilach.",
+      desc: "Strona wolna = klienci zaraz odchodzą. Optymalizujemy kod, obrazy i cache, a szybkość sprawdzamy w narzędziach Google przed oddaniem strony.",
     },
     {
       icon: Clock,
       title: "CMS WordPress",
-      desc: "Łatwe zarządzanie bez kodowania. Dodawaj artykuły, zdjęcia, zmień treści sam. WordPress — najpopularniejszy system. Ty jesteś szefem.",
+      desc: "Łatwe zarządzanie bez kodowania. Dodawaj artykuły, zdjęcia, zmień treści sam. WordPress to jeden z najczęściej wybieranych systemów. Ty jesteś szefem.",
     },
     {
       icon: Search,
       title: "Wsparcie po wdrożeniu",
-      desc: "Nie znikamy po oddaniu strony. Pomagamy z drobnymiFixami, aktualizacjami, copywritingiem. Dostępni mailowo i telefonicznie.",
+      desc: "Nie znikamy po oddaniu strony. Pomagamy z drobnymi poprawkami, aktualizacjami, copywritingiem. Dostępni mailowo i telefonicznie.",
     },
     {
       icon: Palette,
@@ -96,58 +96,48 @@ export default function StronyInternetoweRzeszow() {
   const pricingTable = [
     {
       title: "Wizytówka",
-      basePrice: "2 500",
-      maxPrice: "4 500",
-      pages: "3-5 stron",
+      pages: "Kilka podstron",
       features: [
         "Responsywny design",
         "Formularz kontaktowy",
         "Integracja map",
         "SEO podstawowe",
-        "SSL certyfikat",
-        "Hosting 1 rok",
-        "Czas realizacji: 2-3 tygodnie",
+        "Certyfikat SSL",
+        "Termin ustalany w ofercie",
       ],
     },
     {
-      title: "Standard",
-      basePrice: "5 000",
-      maxPrice: "9 000",
-      pages: "5-15 stron",
+      title: "Strona firmowa",
+      pages: "Uzgodniona liczba podstron",
       features: [
         "Wszystko z wizytówki",
         "WordPress CMS",
-        "Blog integrowany",
+        "Blog",
         "Galeria zdjęć",
         "SEO rozszerzone",
         "Google Analytics 4",
-        "Czas realizacji: 3-4 tygodnie",
+        "Termin ustalany w ofercie",
       ],
-      highlight: true,
     },
     {
       title: "E-commerce",
-      basePrice: "8 000",
-      maxPrice: "25 000",
-      pages: "Nieograniczone",
+      pages: "Zakres zależny od katalogu",
       features: [
         "Sklep internetowy",
         "Zarządzanie produktami",
         "Integracja płatności",
         "Zarządzanie zamówieniami",
         "SEO dla e-commerce",
-        "Bezpieczeństwo PCI-DSS",
-        "Czas realizacji: 4-8 tygodni",
+        "Termin ustalany w ofercie",
       ],
     },
   ];
-
 
   const faqItems = [
     {
       question: "Ile czasu trwa stworzenie strony internetowej w Rzeszowie?",
       answer:
-        "Czas zależy od złożoności. Strona wizytówka: 2-3 tygodnie. Strona standard z blogiem: 3-4 tygodnie. Sklep internetowy: 4-8 tygodni. Aplikacja zaawansowana: 2-6 miesięcy. Zawsze ustalamy terminy przed rozpoczęciem prac.",
+        "Czas zależy od złożoności: liczby podstron, gotowości treści, integracji i tempa akceptacji. Prosta wizytówka powstaje szybciej niż sklep czy aplikacja. Termin ustalamy i zapisujemy w ofercie przed rozpoczęciem prac.",
     },
     {
       question: "Ile kosztuje strona internetowa?",
@@ -162,12 +152,12 @@ export default function StronyInternetoweRzeszow() {
     {
       question: "Czy strona będzie responsywna na telefonach?",
       answer:
-        "Oczywiście. Wszystkie nasze strony są mobile-first. Testujemy na iPhone, Androidzie, różnych rozdzielczościach ekranu. Google ranguje mobile-first — jeśli strona nie działa na telefonie, SEO będzie słabe. Responsywność to obowiązkowe minimum.",
+        "Tak. Nasze strony projektujemy z myślą o telefonach. Testujemy na iPhone, Androidzie, różnych rozdzielczościach ekranu. Google ranguje mobile-first — jeśli strona nie działa na telefonie, SEO będzie słabe. Responsywność to obowiązkowe minimum.",
     },
     {
       question: "Czy dostaję dostęp do edycji strony?",
       answer:
-        "Tak. W każdej umowie dostarczamy dostęp do panelu WordPress. Możesz dodawać artykuły, zmieniaćtreści, publikować posty sam. Jeśli coś pójdzie nie tak, jesteśmy dostępni telefonicznie lub mailowo. Jesteś właścicielem strony — my tylko Ci pomagamy.",
+        "Tak. Przy stronach na WordPressie przekazujemy dostęp do panelu. Możesz dodawać artykuły, zmieniaćtreści, publikować posty sam. Jeśli coś pójdzie nie tak, jesteśmy dostępni telefonicznie lub mailowo. Jesteś właścicielem strony — my tylko Ci pomagamy.",
     },
     {
       question: "Czy moja strona będzie widoczna w Google?",
@@ -223,7 +213,7 @@ export default function StronyInternetoweRzeszow() {
               </h1>
 
               <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed">
-                <strong className="text-foreground">Profesjonalna strona internetowa to podstawa sukcesu każdej firmy.</strong> Tworzymy strony www, które wyglądają świetnie i skutecznie pozyskują klientów dla rzeszowskich firm. SEO od początku, responsywny design, szybkość i wsparcie po wdrożeniu.
+                <strong className="text-foreground">Profesjonalna strona internetowa to podstawa sukcesu każdej firmy.</strong> Tworzymy strony www dla firm z Rzeszowa, zaprojektowane tak, by ułatwiać klientom kontakt. SEO od początku, responsywny design, szybkość i wsparcie po wdrożeniu.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -323,12 +313,12 @@ export default function StronyInternetoweRzeszow() {
                   Zawsze dostępna na każdym urządzeniu
                 </h2>
                 <p className="text-lg text-muted-foreground mb-6">
-                  70% użytkowników internetu korzysta ze smartfonów. Każda strona którą budujemy jest testowana na iPhone, Androidzie, tabletach i komputerach. Responsywność to nie opcja — to obowiązek.
+                  Duża część użytkowników przegląda strony na smartfonach. Każdą stronę, którą budujemy, sprawdzamy na iPhone, Androidzie, tabletach i komputerach. Responsywność to nie opcja — to obowiązek.
                 </p>
                 <ul className="space-y-3">
                   {[
-                    "Testowanie na 10+ urządzeniach",
-                    "Szybkość ładowania poniżej 2 sekund",
+                    "Testy na różnych urządzeniach",
+                    "Optymalizacja szybkości ładowania",
                     "Czytelne menu na telefonach",
                     "Dotyk-friendly przyciski",
                   ].map((item, idx) => (
@@ -365,7 +355,7 @@ export default function StronyInternetoweRzeszow() {
                   WordPress — standardowy system
                 </h2>
                 <p className="text-lg text-muted-foreground mb-6">
-                  WordPress zasila ponad 40% wszystkich stron w internecie. Dlaczego? Ponieważ jest uniwersalny, bezpieczny i łatwy w obsłudze. Po wdrożeniu Ty zarządzasz swoją stroną bez kodowania.
+                  WordPress to jeden z najpopularniejszych systemów do zarządzania stronami. Jest uniwersalny i łatwy w obsłudze, a regularnie aktualizowany pozostaje bezpieczny. Po wdrożeniu Ty zarządzasz swoją stroną bez kodowania.
                 </p>
                 <ul className="space-y-3">
                   {[
@@ -390,27 +380,23 @@ export default function StronyInternetoweRzeszow() {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">
-                Transparent pricing
+                Od czego zależy wycena
               </span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-4">
                 Cennik stron internetowych
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Przejrzyste ceny bez ukrytych kosztów. Każdy pakiet dostosowany do Twoich potrzeb.
+                Nie podajemy stałych cen pakietów. Wycenę przygotowujemy po rozmowie o zakresie — poniżej przykładowe zakresy prac.
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
               {pricingTable.map((tier, index) => (
-                <FadeInView key={index} delay={index * 0.1} className={`rounded-2xl border transition-all ${tier.highlight ? "border-primary/50 bg-card shadow-lg shadow-primary/10 relative" : "border-border/50 bg-background"} overflow-hidden`}>
-                  {tier.highlight && (
-                    <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-primary/50" />
-                  )}
+                <FadeInView key={index} delay={index * 0.1} className="rounded-2xl border transition-all border-border/50 bg-background overflow-hidden">
                   <div className="p-8">
                     <h3 className="text-2xl font-bold mb-2">{tier.title}</h3>
                     <div className="mb-6">
-                      <span className="text-4xl font-bold">{tier.basePrice}</span>
-                      <span className="text-muted-foreground"> - {tier.maxPrice} zł</span>
+                      <span className="text-lg font-semibold">Wycena indywidualna</span>
                     </div>
                     <p className="text-sm text-muted-foreground mb-6">{tier.pages}</p>
                     <ul className="space-y-3 mb-8">
@@ -421,8 +407,8 @@ export default function StronyInternetoweRzeszow() {
                         </li>
                       ))}
                     </ul>
-                    <Button asChild className="w-full" variant={tier.highlight ? "default" : "outline"}>
-                      <Link to="/kontakt">Zamów teraz</Link>
+                    <Button asChild className="w-full" variant="outline">
+                      <Link to="/kontakt">Omów zakres</Link>
                     </Button>
                   </div>
                 </FadeInView>
@@ -431,7 +417,7 @@ export default function StronyInternetoweRzeszow() {
 
             <div className="mt-16 p-8 rounded-2xl bg-primary/5 border border-primary/20 text-center max-w-2xl mx-auto">
               <p className="text-muted-foreground">
-                Ceny są orientacyjne i mogą się różnić w zależności od złożoności projektu. <strong>Zarezerwuj bezpłatną konsultację</strong> i otrzymaj wycenę dostosowaną do Twoich potrzeb.
+                Wycena zależy od liczby podstron i szablonów, przygotowania treści i zdjęć, funkcji i integracji, a także od hostingu, domeny i zakresu późniejszej opieki. <strong>Zarezerwuj bezpłatną konsultację</strong> i otrzymaj wycenę dostosowaną do Twoich potrzeb.
               </p>
             </div>
           </div>
@@ -477,30 +463,30 @@ export default function StronyInternetoweRzeszow() {
                 Strony internetowe Rzeszów — rynek i specyfika Podkarpacia
               </h2>
               <p className="text-lg text-muted-foreground">
-                Rzeszów to najszybciej rozwijające się miasto w Polsce i stolica województwa podkarpackiego. Słynna "Dolina Lotnicza" — klaster ponad 200 firm lotniczych i kosmicznych (Pratt &amp; Whitney, MTU Aero Engines, Safran, Airbus) — sprawia, że Rzeszów przyciąga inwestorów i specjalistów z całego świata. Do tego prężna scena startupów, rosnący sektor IT, silna branża medyczna i akademicka (UR, PRz, UM) tworzą wymagający, dynamiczny rynek online.
+                Rzeszów to stolica województwa podkarpackiego, znana m.in. z branży lotniczej skupionej wokół Doliny Lotniczej. Do tego sektor IT, firmy usługowe oraz uczelnie tworzą wymagający rynek, na którym strona internetowa często jest pierwszym kontaktem klienta z firmą.
               </p>
               <p className="text-lg text-muted-foreground">
-                Fotz Studio tworzy strony internetowe dla firm z Rzeszowa i całego Podkarpacia w modelu zdalnym — bez kompromisów w jakości. Obsługujemy zarówno lokalne firmy usługowe, jak i rzeszowskie firmy technologiczne potrzebujące stron w kilku językach. Każdy projekt realizuje nasz własny zespół z Poznania: projektant, developer i SEO specialist — żadnych podwykonawców.
+                Pracujemy z Poznania, a firmy z Rzeszowa i całego Podkarpacia obsługujemy zdalnie. Możemy przygotować zarówno stronę dla lokalnej firmy usługowej, jak i serwis w kilku wersjach językowych.
               </p>
 
               <h2 className="text-3xl font-heading font-bold pt-6">
                 Tworzenie stron internetowych Rzeszów — jak działamy?
               </h2>
               <p className="text-lg text-muted-foreground">
-                Każdą stronę internetową dla rzeszowskiej firmy zaczynamy od bezpłatnej konsultacji przez Teams lub telefon. Omawiamy cel strony, konkurencję, grupę docelową i budżet. Następnie tworzymy brief kreatywny i analizę konkurencji — sprawdzamy, które strony rankują w Google dla Twoich słów kluczowych i jak wyróżnić Twój serwis. Projekt graficzny w Figma jest akceptowany przez Ciebie przed startem kodowania — wiesz, jak będzie wyglądać strona, zanim zostanie zbudowana.
+                Każdą stronę internetową dla rzeszowskiej firmy zaczynamy od bezpłatnej konsultacji online lub telefonicznej. Omawiamy cel strony, konkurencję, grupę docelową i budżet. Następnie tworzymy brief kreatywny i analizę konkurencji — sprawdzamy, które strony rankują w Google dla Twoich słów kluczowych i jak wyróżnić Twój serwis. Projekt graficzny w Figma jest akceptowany przez Ciebie przed startem kodowania — wiesz, jak będzie wyglądać strona, zanim zostanie zbudowana.
               </p>
               <p className="text-lg text-muted-foreground">
-                Strony firmowe realizujemy w 4–8 tygodni, strony wizytówkowe w 2–3 tygodnie. Po wdrożeniu dostajesz pełne dostępy (hosting, FTP, CMS) i 30 dni bezpłatnej opieki technicznej. Firmy z Rzeszowa, które potrzebują kampanii reklamowej, mogą też skorzystać z naszych landing page dla Google Ads.
+                Termin realizacji zależy od zakresu i gotowości treści — ustalamy go w ofercie. Po wdrożeniu przekazujemy dostępy do strony, a zakres dalszej opieki technicznej ustalamy w umowie. Firmy z Rzeszowa, które potrzebują kampanii reklamowej, mogą też skorzystać z naszych landing page dla Google Ads.
               </p>
 
               <h2 className="text-3xl font-heading font-bold pt-6">
                 SEO dla firm z Rzeszowa — lokalna widoczność w Google
               </h2>
               <p className="text-lg text-muted-foreground">
-                Każda strona, którą tworzymy dla rzeszowskich firm, ma wbudowane podstawowe SEO: meta tagi, schema LocalBusiness z danymi adresowymi Rzeszowa i Podkarpacia, szybkość Core Web Vitals i poprawna architektura URL. To przekłada się na szybszą indeksację i lepszą widoczność w Google Maps oraz organicznych wynikach wyszukiwania dla lokalnych zapytań.
+                Każda strona, którą tworzymy dla rzeszowskich firm, ma wbudowane podstawowe SEO: meta tagi, dane strukturalne LocalBusiness z danymi Twojej firmy, dbałość o Core Web Vitals i poprawna architektura URL. To porządne podstawy pod widoczność w Google Maps i wynikach organicznych dla lokalnych zapytań — nie gwarantujemy jednak konkretnej pozycji w Google.
               </p>
               <p className="text-lg text-muted-foreground">
-                Jeśli chcesz kompleksowego pozycjonowania lub kampanii Google Ads dla firmy z Rzeszowa, skontaktuj się z nami — oferujemy pełen pakiet marketingu online.
+                Jeśli chcesz pozycjonowania lub kampanii Google Ads dla firmy z Rzeszowa, skontaktuj się z nami — zajmujemy się też marketingiem online.
               </p>
 
               <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-4">

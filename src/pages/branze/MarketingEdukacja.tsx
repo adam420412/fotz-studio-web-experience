@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
-import { useCountUp } from "@/hooks/useCountUp";
 import { OtherIndustries } from "@/components/sections/OtherIndustries";
 import przedszkoleImg from "@/assets/portfolio/przedszkole-web.webp";
 
@@ -52,12 +51,12 @@ const customSolutions = [
 ];
 
 const benefits = [
-  "Zwiększenie liczby zgłoszeń rekrutacyjnych o 120%",
+  "Kampanie rekrutacyjne zaplanowane pod sezon naboru",
   "Automatyzacja procesu rekrutacji online",
   "Budowanie prestiżu i rozpoznawalności placówki",
-  "Komunikacja z rodzicami i uczniami 24/7",
+  "Komunikacja z rodzicami i uczniami online",
   "Wirtualne spacery po kampusie",
-  "Integracja z systemami dzienników elektronicznych",
+  "Integracje z systemami szkoły — zakres ustalamy indywidualnie",
 ];
 
 const faqItems = [
@@ -67,11 +66,11 @@ const faqItems = [
   },
   {
     question: "Ile kosztuje marketing dla placówki edukacyjnej?",
-    answer: "Podstawowa obsługa (strona + social media) zaczyna się od 3000 zł/miesiąc. Pełna obsługa z kampaniami rekrutacyjnymi, produkcją video i e-learningiem to 8000-20000 zł/miesiąc.",
+    answer: "Wycenę przygotowujemy po rozmowie o zakresie. Zależy od tego, czy potrzebujesz strony, prowadzenia social mediów, kampanii rekrutacyjnych, produkcji wideo czy platformy e-learning, a także od skali placówki i długości kampanii. Budżet reklamowy płacony Meta lub Google jest zawsze osobną pozycją.",
   },
   {
     question: "Czy możecie stworzyć platformę e-learning?",
-    answer: "Tak, tworzymy dedykowane platformy LMS z kursami video, testami, certyfikatami i systemem postępów. Integrujemy z istniejącymi systemami szkolnymi.",
+    answer: "Tak, możemy przygotować platformę LMS z kursami video, testami, certyfikatami i systemem postępów. Możliwość integracji z istniejącymi systemami szkolnymi sprawdzamy indywidualnie.",
   },
   {
     question: "Jak działa wirtualny dzień otwarty?",
@@ -79,7 +78,7 @@ const faqItems = [
   },
   {
     question: "Czy obsługujecie uczelnie wyższe?",
-    answer: "Tak, mamy doświadczenie z uczelniami publicznymi i prywatnymi. Prowadzimy kampanie rekrutacyjne na kierunki studiów, budujemy strony wydziałów i wspieramy komunikację naukową.",
+    answer: "Tak — realizowaliśmy m.in. spot wideo dla WSB Merito, a dla Dawid EDU prowadziliśmy kampanię rekrutacyjną Meta Ads. Możemy prowadzić kampanie rekrutacyjne na kierunki studiów, budować strony wydziałów i wspierać komunikację uczelni.",
   },
 ];
 
@@ -170,21 +169,18 @@ const MarketingEdukacja = () => {
             className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16"
           >
             {[
-              { value: 120, suffix: "%", label: "więcej zgłoszeń rekrutacyjnych" },
-              { value: 50, suffix: "+", label: "obsłużonych placówek" },
-              { value: 10000, suffix: "+", label: "pozyskanych uczniów" },
-              { value: 95, suffix: "%", label: "zadowolonych klientów" },
-            ].map((stat, index) => {
-              const { ref, displayValue } = useCountUp({ end: stat.value, suffix: stat.suffix });
-              return (
-                <div key={index} ref={ref} className="text-center p-6 rounded-2xl bg-card border border-border/30">
-                  <div className="text-3xl md:text-4xl font-heading font-bold text-gradient-premium">
-                    {displayValue}
-                  </div>
-                  <p className="text-foreground/60 text-sm mt-2">{stat.label}</p>
+              { value: "Dawid EDU", label: "kampania rekrutacyjna Meta Ads" },
+              { value: "WSB Merito", label: "spot wideo dla uczelni" },
+              { value: "WWW", label: "strony z formularzem rekrutacji" },
+              { value: "Wideo", label: "filmy promocyjne i rekrutacyjne" },
+            ].map((stat, index) => (
+              <div key={index} className="text-center p-6 rounded-2xl bg-card border border-border/30">
+                <div className="text-2xl md:text-3xl font-heading font-bold text-gradient-premium">
+                  {stat.value}
                 </div>
-              );
-            })}
+                <p className="text-foreground/60 text-sm mt-2">{stat.label}</p>
+              </div>
+            ))}
           </motion.div>
         </div>
       </section>

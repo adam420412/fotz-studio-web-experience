@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
-import { useCountUp } from "@/hooks/useCountUp";
 import { OtherIndustries } from "@/components/sections/OtherIndustries";
 import vertheImg from "@/assets/portfolio/verthe-web.webp";
 
@@ -67,7 +66,7 @@ const faqItems = [
   },
   {
     question: "Ile kosztuje marketing dla salonu beauty?",
-    answer: "Podstawowa obsługa (social media + Google My Business) zaczyna się od 2500 zł/miesiąc. Pełna obsługa z sesją zdjęciową, kampaniami i stroną WWW to 5000-10000 zł/miesiąc w zależności od zakresu.",
+    answer: "Wycenę przygotowujemy po rozmowie o zakresie: liczbie kanałów, częstotliwości publikacji, sesjach zdjęciowych, kampaniach i ewentualnej stronie WWW. Budżet reklamowy płacony platformom (Meta, Google) jest zawsze osobną pozycją.",
   },
   {
     question: "Czy warto inwestować w stronę WWW dla salonu?",
@@ -124,7 +123,7 @@ const MarketingBeauty = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
             className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full blur-[180px]"
-            style={{ background: "hsla(320, 71%, 27%, 0.1)" }}
+            style={{ background: "rgba(118, 20, 85, 0.1)" }}
           />
         </div>
 
@@ -160,31 +159,6 @@ const MarketingBeauty = () => {
                 <Link to="/realizacje">Zobacz realizacje</Link>
               </Button>
             </div>
-          </motion.div>
-
-          {/* Stats */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.7 }}
-            className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16"
-          >
-            {[
-              { value: 150, suffix: "%", label: "więcej rezerwacji" },
-              { value: 10, suffix: "k+", label: "obserwatorek" },
-              { value: 80, suffix: "+", label: "salonów beauty" },
-              { value: 4.9, suffix: "", label: "średnia ocen" },
-            ].map((stat, index) => {
-              const { ref, displayValue } = useCountUp({ end: stat.value, suffix: stat.suffix });
-              return (
-                <div key={index} ref={ref} className="text-center p-6 rounded-2xl bg-card border border-border/30">
-                  <div className="text-3xl md:text-4xl font-heading font-bold text-gradient-premium">
-                    {displayValue}
-                  </div>
-                  <p className="text-foreground/60 text-sm mt-2">{stat.label}</p>
-                </div>
-              );
-            })}
           </motion.div>
         </div>
       </section>

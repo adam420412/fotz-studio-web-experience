@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
-import { useCountUp } from "@/hooks/useCountUp";
 import { OtherIndustries } from "@/components/sections/OtherIndustries";
 import fpsImg from "@/assets/portfolio/fps-cegielski-web.webp";
 
@@ -54,7 +53,7 @@ const customSolutions = [
 const benefits = [
   "Pozyskiwanie klientów B2B i dystrybutorów",
   "Profesjonalna prezentacja możliwości produkcyjnych",
-  "Filmy i zdjęcia przemysłowe najwyższej jakości",
+  "Filmy i zdjęcia przemysłowe realizowane przez nasz zespół",
   "Katalogi produktowe z integracją ERP",
   "Kampanie na targach i wydarzeniach branżowych",
   "Budowanie marki eksperta w branży",
@@ -67,11 +66,11 @@ const faqItems = [
   },
   {
     question: "Ile kosztuje marketing dla firmy produkcyjnej?",
-    answer: "Podstawowa obsługa (strona + SEO B2B) zaczyna się od 5000 zł/miesiąc. Pełna obsługa z produkcją video, katalogami i kampaniami to 10000-25000 zł/miesiąc.",
+    answer: "Nie mamy sztywnego cennika. Wycenę przygotowujemy po rozmowie o zakresie: czy potrzebna jest strona lub katalog produktowy, ile dni zdjęciowych i filmów, które kanały reklamowe i jakie wsparcie targowe. Budżet reklamowy płacony platformom (Google, Meta, LinkedIn) jest zawsze osobno.",
   },
   {
     question: "Czy robicie zdjęcia i filmy w halach produkcyjnych?",
-    answer: "Tak, specjalizujemy się w fotografii i wideo przemysłowym. Dokumentujemy procesy produkcyjne, maszyny, produkty i zespoły. Pracujemy zgodnie z wymogami BHP zakładów.",
+    answer: "Tak, realizujemy fotografię i wideo w zakładach produkcyjnych — m.in. dla H. Cegielski – FPS. Dokumentujemy procesy produkcyjne, maszyny, produkty i zespoły. Pracujemy zgodnie z wymogami BHP zakładów.",
   },
   {
     question: "Jak stworzyć katalog produktowy online?",
@@ -124,7 +123,7 @@ const MarketingProdukcja = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
             className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full blur-[180px]"
-            style={{ background: "hsla(30, 71%, 27%, 0.1)" }}
+            style={{ background: "rgba(118, 69, 20, 0.1)" }}
           />
         </div>
 
@@ -160,31 +159,6 @@ const MarketingProdukcja = () => {
                 <Link to="/realizacje">Zobacz realizacje</Link>
               </Button>
             </div>
-          </motion.div>
-
-          {/* Stats */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.7 }}
-            className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16"
-          >
-            {[
-              { value: 200, suffix: "%", label: "wzrost zapytań B2B" },
-              { value: 50, suffix: "+", label: "obsłużonych producentów" },
-              { value: 100, suffix: "+", label: "filmów przemysłowych" },
-              { value: 15, suffix: "+", label: "krajów eksportu klientów" },
-            ].map((stat, index) => {
-              const { ref, displayValue } = useCountUp({ end: stat.value, suffix: stat.suffix });
-              return (
-                <div key={index} ref={ref} className="text-center p-6 rounded-2xl bg-card border border-border/30">
-                  <div className="text-3xl md:text-4xl font-heading font-bold text-gradient-premium">
-                    {displayValue}
-                  </div>
-                  <p className="text-foreground/60 text-sm mt-2">{stat.label}</p>
-                </div>
-              );
-            })}
           </motion.div>
         </div>
       </section>

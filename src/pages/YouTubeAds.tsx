@@ -20,9 +20,9 @@ import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@
 
 const YouTubeAds = () => {
   const benefits = [
-    { icon: Users, title: "2 mld użytkowników", description: "Druga największa wyszukiwarka na świecie" },
-    { icon: TrendingUp, title: "Długi czas oglądania", description: "Średnio 40 minut sesji na urządzeniu mobilnym" },
-    { icon: Video, title: "Siła wideo", description: "Najskuteczniejszy format reklamowy online" },
+    { icon: Users, title: "Ogromny zasięg", description: "Jedna z największych platform wideo na świecie" },
+    { icon: TrendingUp, title: "Czas oglądania", description: "Użytkownicy przychodzą tu oglądać wideo, także na telefonach i TV" },
+    { icon: Video, title: "Siła wideo", description: "Obraz, dźwięk i ruch w jednym przekazie reklamowym" },
     { icon: Target, title: "Precyzyjne targetowanie", description: "Dane Google o intencjach i zainteresowaniach" },
   ];
 
@@ -30,7 +30,7 @@ const YouTubeAds = () => {
     { icon: SkipForward, title: "TrueView In-Stream", description: "Reklamy pomijalne przed, w trakcie lub po filmie" },
     { icon: Film, title: "TrueView Discovery", description: "Reklamy w wynikach wyszukiwania YouTube" },
     { icon: Tv, title: "Bumper Ads", description: "6-sekundowe niepomijalne reklamy" },
-    { icon: Video, title: "Non-skippable Ads", description: "15-20 sekundowe reklamy bez opcji pominięcia" },
+    { icon: Video, title: "Non-skippable Ads", description: "Krótkie reklamy bez opcji pominięcia" },
     { icon: Monitor, title: "Masthead", description: "Reklama na stronie głównej YouTube" },
     { icon: Play, title: "YouTube Shorts Ads", description: "Reklamy w krótkich pionowych filmach" },
   ];
@@ -45,11 +45,9 @@ const YouTubeAds = () => {
   const pricingPackages = [
     {
       name: "Start",
-      price: "2 000",
-      period: "/mies.",
       description: "Testowanie YouTube Ads",
       features: [
-        "Budżet reklamowy do 5 000 zł",
+        "Mniejszy budżet testowy",
         "TrueView In-Stream",
         "Podstawowe targetowanie",
         "1 kreacja wideo",
@@ -60,11 +58,9 @@ const YouTubeAds = () => {
     },
     {
       name: "Business",
-      price: "4 000",
-      period: "/mies.",
       description: "Pełna obsługa YouTube",
       features: [
-        "Budżet reklamowy do 15 000 zł",
+        "Budżet dopasowany do skali kampanii",
         "Wszystkie formaty reklamowe",
         "Zaawansowane targetowanie",
         "2-3 kreacje wideo",
@@ -76,28 +72,19 @@ const YouTubeAds = () => {
     },
     {
       name: "Premium",
-      price: "7 000",
-      period: "/mies.",
       description: "YouTube + Google Ads",
       features: [
-        "Budżet reklamowy bez limitu",
+        "Kampanie o większej skali",
         "Integracja z Google Ads",
-        "Nielimitowane kreacje",
+        "Kreacje według potrzeb kampanii",
         "YouTube Shorts Ads",
-        "Produkcja wideo w studio",
+        "Produkcja wideo przez nasz zespół",
         "Dedykowany opiekun",
         "Strategia wielokanałowa",
         "Raporty na żądanie",
       ],
       popular: false,
     },
-  ];
-
-  const stats = [
-    { value: "2B+", label: "Aktywnych użytkowników YouTube" },
-    { value: "500h", label: "Wideo uploadowane co minutę" },
-    { value: "70%", label: "Użytkowników ogląda na mobile" },
-    { value: "95%", label: "Zapamiętanie reklam wideo" },
   ];
 
   const faqItems = [
@@ -107,7 +94,7 @@ const YouTubeAds = () => {
     },
     {
       question: "Jaki budżet potrzebuję na YouTube Ads?",
-      answer: "Minimalny budżet dzienny to około 30 zł, ale rekomendujemy start od 150-300 zł dziennie (4500-9000 zł miesięcznie) dla zebrania wystarczających danych. YouTube oferuje model CPV (cost per view) - płacisz tylko gdy użytkownik obejrzy reklamę lub wejdzie w interakcję."
+      answer: "Budżet reklamowy płacisz bezpośrednio Google i jest on zawsze osobno od naszego wynagrodzenia. Jego wysokość zależy od celu, grupy docelowej, regionu i czasu trwania kampanii — ustalamy go wspólnie po rozmowie, tak by zebrać wystarczająco danych do optymalizacji. YouTube oferuje model CPV (cost per view) - płacisz tylko gdy użytkownik obejrzy reklamę lub wejdzie w interakcję."
     },
     {
       question: "Jak powinna wyglądać reklama na YouTube?",
@@ -119,7 +106,7 @@ const YouTubeAds = () => {
     },
     {
       question: "Czym różnią się formaty reklamowe YouTube?",
-      answer: "TrueView In-Stream (pomijalne po 5s) - płacisz za 30s oglądania lub interakcję. Bumper Ads (6s, niepomijalne) - świetne do budowania świadomości. Non-skippable (15-20s) - gwarantowana ekspozycja. Discovery - reklamy w wynikach wyszukiwania. Shorts Ads - pionowe wideo dla młodszych odbiorców."
+      answer: "TrueView In-Stream (pomijalne po 5s) - płacisz za 30s oglądania lub interakcję. Bumper Ads (6s, niepomijalne) - świetne do budowania świadomości. Non-skippable (krótkie, niepomijalne) - widz ogląda całą reklamę. Discovery - reklamy w wynikach wyszukiwania. Shorts Ads - pionowe wideo dla młodszych odbiorców."
     },
     {
       question: "Jak mierzyć skuteczność reklam YouTube?",
@@ -131,7 +118,7 @@ const YouTubeAds = () => {
     },
     {
       question: "Czy tworzycie materiały wideo do reklam YouTube?",
-      answer: "Tak, mamy własne studio produkcyjne i tworzymy profesjonalne spoty reklamowe zoptymalizowane pod YouTube. Produkujemy różne wersje (6s, 15s, 30s) do testów A/B. Zobacz nasze realizacje wideo i spoty reklamowe."
+      answer: "Tak, produkcja wideo to jedna z naszych głównych usług — tworzymy spoty reklamowe dopasowane do YouTube (realizowaliśmy m.in. spot dla WSB Merito). Produkujemy różne wersje (6s, 15s, 30s) do testów A/B. Zobacz nasze realizacje wideo i spoty reklamowe."
     },
   ];
 
@@ -141,13 +128,13 @@ const YouTubeAds = () => {
       <Layout>
       <SEOHead
         title="YouTube Ads Warszawa — Reklama Wideo na YouTube dla Firm"
-        description="YouTube Ads Warszawa ✓ Kampanie wideo na YouTube: TrueView, Bumper Ads, Discovery Ads. Agencja YouTube Ads — skuteczna reklama wideo od 2000 zł/mies. dla firm z Warszawy i całej Polski."
+        description="YouTube Ads Warszawa ✓ Kampanie wideo na YouTube: TrueView, Bumper Ads, Discovery Ads. Agencja YouTube Ads z Poznania — strategia, produkcja wideo i prowadzenie kampanii dla firm z Warszawy (zdalnie) i całej Polski."
         canonical="https://www.fotz-studio.pl/performance-marketing/youtube-ads"
         keywords="youtube ads warszawa, reklama na youtube, kampanie youtube, youtube advertising, agencja youtube ads, reklamy wideo warszawa, video marketing"
       />
       <ServiceSchema
         name="YouTube Ads - Reklamy wideo"
-        description="Profesjonalne kampanie YouTube Ads. Docieraj do 2 miliardów użytkowników dzięki reklamom wideo."
+        description="Profesjonalne kampanie YouTube Ads: strategia, produkcja wideo, konfiguracja i optymalizacja kampanii."
         provider="Fotz Studio"
       />
       <BreadcrumbSchema items={[
@@ -179,7 +166,7 @@ const YouTubeAds = () => {
               </span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Kampanie YouTube Ads (YouTube Advertising) dla firm z Warszawy i całej Polski.
+              Kampanie YouTube Ads (YouTube Advertising) dla firm z Warszawy i całej Polski — pracujemy z Poznania, klientów spoza Poznania obsługujemy zdalnie.
               Od strategii i produkcji wideo, przez konfigurację w Google Ads, po codzienną optymalizację i mierzalne wyniki.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -194,27 +181,6 @@ const YouTubeAds = () => {
               </Button>
             </div>
           </motion.div>
-        </div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="py-16 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="text-center"
-              >
-                <div className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-500 mb-2">{stat.value}</div>
-                <div className="text-sm md:text-base text-muted-foreground">{stat.label}</div>
-              </motion.div>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -343,7 +309,7 @@ const YouTubeAds = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-              Cennik YouTube Ads
+              Zakres obsługi YouTube Ads
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Obsługa kampanii + produkcja wideo
@@ -366,16 +332,12 @@ const YouTubeAds = () => {
               >
                 {pkg.popular && (
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-gradient-to-r from-red-500 to-orange-500 text-white text-sm font-medium rounded-full">
-                    Najpopularniejszy
+                    Rekomendowany
                   </div>
                 )}
                 <div className="text-center mb-6">
                   <h3 className="text-xl font-semibold text-foreground mb-2">{pkg.name}</h3>
-                  <p className="text-sm text-muted-foreground mb-4">{pkg.description}</p>
-                  <div className="flex items-baseline justify-center gap-1">
-                    <span className="text-4xl font-bold text-foreground">{pkg.price}</span>
-                    <span className="text-muted-foreground">zł{pkg.period}</span>
-                  </div>
+                  <p className="text-sm text-muted-foreground">{pkg.description}</p>
                 </div>
                 <ul className="space-y-3 mb-8">
                   {pkg.features.map((feature, i) => (
@@ -390,14 +352,14 @@ const YouTubeAds = () => {
                   className={`w-full ${pkg.popular ? 'bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 hover:to-orange-600' : ''}`}
                   variant={pkg.popular ? "default" : "outline"}
                 >
-                  <Link to="/kontakt">Wybierz pakiet</Link>
+                  <Link to="/kontakt">Zapytaj o wycenę</Link>
                 </Button>
               </motion.div>
             ))}
           </div>
 
           <p className="text-center text-sm text-muted-foreground mt-8">
-            Ceny netto. Budżet reklamowy doliczany osobno. Produkcja wideo wyceniana indywidualnie.
+            Wycenę przygotowujemy po rozmowie o zakresie: liczbie formatów i kreacji, skali kampanii i potrzebach produkcyjnych. Budżet reklamowy płacony Google jest zawsze osobno. Produkcja wideo wyceniana indywidualnie.
           </p>
         </div>
       </section>
@@ -498,10 +460,10 @@ const YouTubeAds = () => {
         <div className="container mx-auto px-4">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
             <h2 className="text-3xl font-heading font-bold mb-6">YouTube Ads Warszawa — reklama wideo na YouTube i video marketing dla firm</h2>
-            <p className="text-muted-foreground mb-4">YouTube Ads Warszawa to kampanie reklamowe wideo w Google Ads dla firm, które chcą dotrzeć do warszawskich odbiorców. YouTube to druga największa wyszukiwarka na świecie — z ponad 2 miliardami użytkowników miesięcznie. Kampanie YouTube Ads zarządzane są przez Google Ads, co daje dostęp do danych Google o intencjach użytkowników i precyzyjnego targetowania geograficznego — możesz targetować tylko Warszawę, Mazowsze lub całą Polskę.</p>
-            <p className="text-muted-foreground mb-6">Formaty YouTube Ads: TrueView In-Stream (reklamy z możliwością pominięcia po 5 sek., model CPV — płacisz za obejrzenie), Non-Skippable In-Stream (obowiązkowe do 15 sek.), Bumper Ads (6 sek., niemożliwe do pominięcia, świetne do budowania świadomości marki), Video Discovery Ads (w wynikach wyszukiwania YouTube — widoczne dla użytkowników szukających Twoich usług) i Masthead (na stronie głównej YouTube). YouTube Advertising jest ważnym elementem video marketingu dla firm w Warszawie.</p>
+            <p className="text-muted-foreground mb-4">YouTube Ads Warszawa to kampanie reklamowe wideo w Google Ads dla firm, które chcą dotrzeć do warszawskich odbiorców. YouTube to jedna z największych platform wideo na świecie. Kampanie YouTube Ads zarządzane są przez Google Ads, co daje dostęp do danych Google o intencjach użytkowników i precyzyjnego targetowania geograficznego — możesz targetować tylko Warszawę, Mazowsze lub całą Polskę.</p>
+            <p className="text-muted-foreground mb-6">Formaty YouTube Ads: TrueView In-Stream (reklamy z możliwością pominięcia po 5 sek., model CPV — płacisz za obejrzenie), Non-Skippable In-Stream (krótkie, bez możliwości pominięcia), Bumper Ads (6 sek., niemożliwe do pominięcia, świetne do budowania świadomości marki), Video Discovery Ads (w wynikach wyszukiwania YouTube — widoczne dla użytkowników szukających Twoich usług) i Masthead (na stronie głównej YouTube). YouTube Advertising jest ważnym elementem video marketingu dla firm w Warszawie.</p>
             <h2 className="text-3xl font-heading font-bold mb-6">Agencja YouTube Ads Warszawa — produkcja wideo i zarządzanie kampaniami</h2>
-            <p className="text-muted-foreground">Skuteczna reklama na YouTube wymaga profesjonalnie wyprodukowanych materiałów wideo. Spoty reklamowe do YouTube powinny przykuć uwagę w pierwszych 5 sekundach (nim użytkownik pominie reklamę). Produkcja filmów reklamowych, animacji i spotów — od scenariusza po montaż — to pełny zakres Fotz Studio jako agencji YouTube Ads w Warszawie. Reklamy wideo na YouTube w połączeniu z kampaniami Google Ads tworzą kompleksową strategię video advertisingu dla Twojej firmy w stolicy.</p>
+            <p className="text-muted-foreground">Dobra reklama na YouTube wymaga profesjonalnie wyprodukowanych materiałów wideo. Spoty reklamowe do YouTube powinny przykuć uwagę w pierwszych 5 sekundach (nim użytkownik pominie reklamę). Produkcja filmów reklamowych, animacji i spotów — od scenariusza po montaż — to pełny zakres Fotz Studio jako agencji YouTube Ads — pracujemy z Poznania, a firmy z Warszawy obsługujemy zdalnie. Reklamy wideo na YouTube w połączeniu z kampaniami Google Ads tworzą kompleksową strategię video advertisingu dla Twojej firmy w stolicy.</p>
           
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
               <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>

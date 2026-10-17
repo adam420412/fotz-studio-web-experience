@@ -13,16 +13,16 @@ const SocialMediaStrategia = () => {
     { icon: Users, title: "Analiza grupy docelowej", desc: "Kim są Twoi klienci w social media? Wiek, zainteresowania, godziny aktywności, preferowane formaty treści — budujemy persony na podstawie danych." },
     { icon: Target, title: "Pozycjonowanie marki", desc: "Jak chcesz być postrzegany? Ton komunikacji, wartości, wyróżniki na tle konkurencji. Spójna tożsamość, która buduje zaufanie." },
     { icon: Calendar, title: "Plan i harmonogram treści", desc: "Content calendar: tematyka, formaty (posty, relacje, reels, live), częstotliwość, optymalne godziny publikacji dla każdej platformy." },
-    { icon: Sparkles, title: "Strategia contentowa", desc: "Mieszanka treści: edukacyjnych, sprzedażowych, rozrywkowych i angażujących. Zasada 80/20: 80% wartości, 20% promocji." },
+    { icon: Sparkles, title: "Strategia contentowa", desc: "Mieszanka treści: edukacyjnych, sprzedażowych, rozrywkowych i angażujących. Przewaga treści wartościowych nad czysto promocyjnymi." },
     { icon: BarChart, title: "KPI i monitoring", desc: "Wskaźniki sukcesu: zasięg, zaangażowanie, kliknięcia, leady, konwersje. Miesięczne raporty i korekta strategii na podstawie danych." },
     { icon: Eye, title: "Analiza konkurencji", desc: "Co robią rynkowi liderzy? Identyfikujemy content gaps i możliwości wyróżnienia się w przestrzeni social media Twojej branży." },
   ];
 
   const results = [
-    { value: "+200%", label: "Wzrost zaangażowania", desc: "po 3 miesiącach strategii" },
-    { value: "3×", label: "Więcej leadów", desc: "ze social media do zapytań" },
-    { value: "-35%", label: "Niższy koszt postu", desc: "dzięki planowaniu z wyprzedzeniem" },
-    { value: "98%", label: "Spójność marki", desc: "we wszystkich kanałach" },
+    { value: "Cel", label: "Jasne cele", desc: "każdy post ma określone zadanie" },
+    { value: "Plan", label: "Harmonogram treści", desc: "publikacje planowane z wyprzedzeniem" },
+    { value: "KPI", label: "Mierzalne wskaźniki", desc: "ustalone przed startem działań" },
+    { value: "Marka", label: "Spójna komunikacja", desc: "jeden ton we wszystkich kanałach" },
   ];
 
   const faqItems = [
@@ -116,7 +116,7 @@ const SocialMediaStrategia = () => {
         {/* Results */}
         <section className="py-16 bg-primary/5">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Efekty dobrze zaplanowanej strategii</h2>
+            <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Co daje dobrze zaplanowana strategia</h2>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
               {results.map((r, i) => (
                 <motion.div

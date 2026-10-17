@@ -32,7 +32,7 @@ export default function SklepWooCommerce() {
   ];
 
   const processSteps = [
-    { step: "1", title: "Analiza i wycena", desc: "Omawiamy zakres sklepu, liczbę produktów, potrzebne integracje. Bezpłatna wycena w 24h." },
+    { step: "1", title: "Analiza i wycena", desc: "Omawiamy zakres sklepu, liczbę produktów, potrzebne integracje. Wycenę przygotowujemy po rozmowie o zakresie." },
     { step: "2", title: "Design i UX", desc: "Projektujemy sklep pod konwersje — wygląd, nawigację, koszyk zakupowy. Makiety do akceptacji." },
     { step: "3", title: "Wdrożenie", desc: "Instalacja WordPress + WooCommerce, konfiguracja płatności, wysyłki, dodawanie produktów." },
     { step: "4", title: "Optymalizacja SEO", desc: "Konfiguracja Yoast SEO, schema markup dla produktów, mapa strony, optymalizacja prędkości." },
@@ -44,17 +44,17 @@ export default function SklepWooCommerce() {
     {
       question: "Co to jest WooCommerce?",
       answer:
-        "WooCommerce to darmowa wtyczka e-commerce dla WordPress — najpopularniejsza platforma sklepów internetowych na świecie (28% wszystkich sklepów online). Daje pełną kontrolę nad funkcjonalnością, wyglądem i SEO. Instalujesz ją na własnym hostingu — brak prowizji od sprzedaży (poza prowizją bramki płatności). Elastyczna, skalowalna i wspierana przez ogromną społeczność deweloperów.",
+        "WooCommerce to darmowa wtyczka e-commerce dla WordPress — jedna z najpopularniejszych platform sklepów internetowych na świecie. Daje pełną kontrolę nad funkcjonalnością, wyglądem i SEO. Instalujesz ją na własnym hostingu — brak prowizji od sprzedaży (poza prowizją bramki płatności). Elastyczna, skalowalna i wspierana przez ogromną społeczność deweloperów.",
     },
     {
       question: "Ile kosztuje sklep WooCommerce?",
       answer:
-        "Koszt wdrożenia sklepu WooCommerce: mały sklep (do 100 produktów, podstawowe funkcje) 3000-8000 zł, średni sklep (100-500 produktów, integracje kurierskie) 6000-15 000 zł, duży sklep (500+ produktów, integracja ERP/fakturami) 10 000-30 000 zł. Koszty stałe: hosting 50-200 zł/mies., domena ok. 80 zł/rok, ewentualnie wtyczki premium 200-1000 zł/rok.",
+        "Wycenę przygotowujemy po rozmowie o zakresie. Koszt wdrożenia zależy głównie od liczby produktów i wariantów, liczby integracji (płatności, kurierzy, ERP, fakturowanie), stopnia indywidualizacji projektu graficznego oraz tego, czy przenosimy dane z istniejącego sklepu. Do tego dochodzą koszty stałe płacone dostawcom: hosting, domena i ewentualne wtyczki premium — ich wysokość zależy od wybranych usług.",
     },
     {
       question: "WooCommerce czy Shopify?",
       answer:
-        "WooCommerce: brak prowizji od sprzedaży, pełna kontrola kodu i SEO, większa elastyczność, wymaga własnego hostingu i dewelopera. Shopify: prostszy w obsłudze, hosting w cenie, prowizja 0.5-2% od każdej transakcji (jeśli nie używasz Shopify Payments, niedostępnego w Polsce), ograniczona customizacja. Dla polskich firm preferujemy WooCommerce — szczególnie gdy zależy na SEO i brak prowizji.",
+        "WooCommerce: brak prowizji od sprzedaży, pełna kontrola kodu i SEO, większa elastyczność, wymaga własnego hostingu i dewelopera. Shopify: prostszy w obsłudze, hosting w cenie abonamentu, możliwe dodatkowe opłaty transakcyjne zależne od planu i bramki płatności, ograniczona customizacja. Dla polskich firm preferujemy WooCommerce — szczególnie gdy zależy na SEO i brak prowizji.",
     },
     {
       question: "Jak dodać płatności do WooCommerce?",
@@ -72,7 +72,7 @@ export default function SklepWooCommerce() {
     <>
       <SEOHead
         title="Sklep WooCommerce — tworzenie sklepów internetowych | FOTZ Studio"
-        description="Sklep WooCommerce — profesjonalne wdrożenia e-commerce na WordPress. Płatności, wysyłka, SEO, integracje. Ceny od 3000 zł. Bezpłatna wycena!"
+        description="Sklep WooCommerce — profesjonalne wdrożenia e-commerce na WordPress. Płatności, wysyłka, SEO, integracje. Wycena po rozmowie o zakresie — bezpłatnie!"
         canonical="https://www.fotz-studio.pl/uslugi/sklep-woocommerce"
         keywords="sklep woocommerce, tworzenie sklepu woocommerce, woocommerce wordpress, sklep internetowy woocommerce, woocommerce cena, woocommerce konfiguracja"
       />
@@ -98,15 +98,15 @@ export default function SklepWooCommerce() {
                 Sklep WooCommerce — zarabiaj w internecie
               </h1>
               <p className="text-xl text-slate-300 mb-8 leading-relaxed">
-                Tworzymy sklepy internetowe na WooCommerce — najpopularniejszej platformie e-commerce świata.
+                Tworzymy sklepy internetowe na WooCommerce — jednej z najpopularniejszych platform e-commerce na świecie.
                 Pełna kontrola, zero prowizji od sprzedaży, świetne SEO i intuicyjny panel zarządzania.
               </p>
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
                 {[
-                  { value: "od 3000 zł", label: "Cena wdrożenia" },
-                  { value: "3-6 tyg.", label: "Czas realizacji" },
-                  { value: "0%", label: "Prowizji od sprzedaży" },
+                  { value: "Wycena", label: "Po rozmowie o zakresie" },
+                  { value: "Harmonogram", label: "Ustalany przed startem" },
+                  { value: "Bez prowizji", label: "Platformy od sprzedaży" },
                   { value: "WordPress", label: "Łatwa obsługa" },
                 ].map((stat, idx) => (
                   <div key={idx} className="bg-slate-800 bg-opacity-50 p-4 rounded-lg">
@@ -178,10 +178,10 @@ export default function SklepWooCommerce() {
               <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Dlaczego WooCommerce?</h2>
               <div className="grid md:grid-cols-2 gap-4">
                 {[
-                  "28% wszystkich sklepów internetowych na świecie działa na WooCommerce",
+                  "Jedna z najpopularniejszych platform sklepów internetowych na świecie",
                   "Brak prowizji od sprzedaży — każda złotówka trafia do Ciebie",
                   "Pełna kontrola nad kodem — nie jesteś zależny od platformy SaaS",
-                  "Najlepsze SEO wśród platform e-commerce — Yoast SEO, schema markup",
+                  "Duże możliwości SEO — Yoast SEO, schema markup, pełna kontrola nad treścią",
                   "Ogromna społeczność i tysiące gotowych wtyczek i motywów",
                   "Niezależność — przeniesiesz sklep na dowolny hosting kiedy chcesz",
                 ].map((item, idx) => (

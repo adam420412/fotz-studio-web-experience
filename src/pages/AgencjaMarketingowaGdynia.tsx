@@ -63,7 +63,7 @@ export default function AgencjaMarketingowaGdynia() {
         "Kampanie Search Ads",
         "Reklamy Display Network",
         "Retargeting do klientów",
-        "Maksymalna ROI",
+        "Optymalizacja kosztu konwersji",
       ],
     },
     {
@@ -94,7 +94,7 @@ export default function AgencjaMarketingowaGdynia() {
       icon: <Zap className="w-8 h-8" />,
       title: "Email Marketing",
       description:
-        "Kampanie email marketingowe dla firm w Gdyni. Automatyzacja, segmentacja, wysokie wskaźniki otwierania.",
+        "Kampanie email marketingowe dla firm w Gdyni. Automatyzacja, segmentacja i testy treści.",
       features: [
         "Automaty mailowe",
         "Segmentacja listy",
@@ -119,8 +119,8 @@ export default function AgencjaMarketingowaGdynia() {
   const packages = [
     {
       name: "Starter",
-      price: "2 999 zł",
-      period: "/miesiąc",
+      price: "Wycena indywidualna",
+      period: "zależna od zakresu",
       description: "Idealna dla małych firm i startupów",
       features: [
         "SEO podstawowe",
@@ -134,9 +134,9 @@ export default function AgencjaMarketingowaGdynia() {
     },
     {
       name: "Professional",
-      price: "5 999 zł",
-      period: "/miesiąc",
-      description: "Najlepszy stosunek ceny do jakości",
+      price: "Wycena indywidualna",
+      period: "zależna od zakresu",
+      description: "Kilka kanałów prowadzonych równolegle",
       features: [
         "SEO zaawansowane",
         "Google Ads + Social Media",
@@ -150,16 +150,15 @@ export default function AgencjaMarketingowaGdynia() {
     },
     {
       name: "Enterprise",
-      price: "Indywidualnie",
-      period: "/miesiąc",
+      price: "Wycena indywidualna",
+      period: "zależna od zakresu",
       description: "Pełna obsługa marketingowa",
       features: [
         "Wszystkie strategie",
-        "Dedykowany team",
-        "Nieograniczone konsultacje",
-        "Raport codziennie",
-        "Wsparcie VIP",
-        "Rozwój custom",
+        "Stały opiekun projektu",
+        "Konsultacje według potrzeb",
+        "Raportowanie w ustalonym rytmie",
+        "Rozwiązania dopasowane do firmy",
       ],
       cta: "Zaplanuj rozmowę",
       popular: false,
@@ -171,54 +170,54 @@ export default function AgencjaMarketingowaGdynia() {
       id: "1",
       question: "Ile kosztuje agencja marketingowa w Gdyni?",
       answer:
-        "Cena zależy od zakresu usług i Twoich celów. Nasza agencja oferuje pakiety od 2999 zł do 15000+ zł miesięcznie. Każdy pakiet jest dostosowany do potrzeb Twojej firmy. Oferujemy także wycenę na projekt dla stron WWW i kampanii jednorazowych.",
+        "Wycenę przygotowujemy po rozmowie o zakresie: liczbie kanałów, ilości treści, kampaniach reklamowych i częstotliwości raportów. Strony WWW i kampanie jednorazowe wyceniamy projektowo. Budżet reklamowy płacony platformom (Google, Meta) jest zawsze osobny od wynagrodzenia za obsługę.",
     },
     {
       id: "2",
       question:
         "Jakie obszary Gdyni obsługujemy? Czy pracujecie w Śródmieściu?",
       answer:
-        "Pracujemy z firmami z całej Gdyni, w tym z obszarów: Śródmieście, Redłowo, Karwiny, Orłowo, Witomino i Grabówek. Prowadzimy też projekty dla firm w całym Trójmieście (Gdańsk, Sopot). Lokalizacja geograficzna nie stanowi dla nas bariery - współpracujemy online.",
+        "Pracujemy z firmami z całej Gdyni, w tym z obszarów: Śródmieście, Redłowo, Karwiny, Orłowo, Witomino i Grabówek. Prowadzimy też projekty dla firm w całym Trójmieście (Gdańsk, Sopot). Pracujemy z Poznania, a firmy z Gdyni obsługujemy zdalnie - spotkania, akceptacje i raporty odbywają się online.",
     },
     {
       id: "3",
       question: "Jak szybko zobaczę rezultaty SEO w Gdyni?",
       answer:
-        "SEO to długoterminowa inwestycja. Pierwsze efekty widać po 3-4 miesiącach, ale znaczące wyniki osiągamy w 6-12 miesięcy. Kampanie Google Ads działają od razu - już w pierwszym tygodniu możesz mieć klientów. Wszystko zależy od konkurencji w Twojej branży.",
+        "SEO to długoterminowa inwestycja, a tempo efektów zależy od konkurencji w branży, stanu strony i zakresu prac - nie gwarantujemy konkretnej pozycji ani terminu. Kampanie Google Ads zaczynają wyświetlać reklamy zaraz po uruchomieniu, a ich wyniki optymalizujemy na bieżąco.",
     },
     {
       id: "4",
       question: "Czy mogę zmienić agencję marketingową?",
       answer:
-        "Oczywiście! Przy przejściu z innej agencji przeprowadzimy pełny audit Twoich kampanii i wyjaśnimy, jak były zarządzane. Bez karnych opłat - jeśli nasze wyniki się nie spodoba, zawsze możesz odejść. Pracujemy na zasadzie wzajemnego zaufania i zadowolenia.",
+        "Oczywiście! Przy przejściu z innej agencji przeprowadzimy pełny audit Twoich kampanii i wyjaśnimy, jak były zarządzane. Warunki współpracy i wypowiedzenia ustalamy jasno w umowie.",
     },
     {
       id: "5",
       question: "Jakie są wasze gwarancje i zobowiązania?",
       answer:
-        "Gwarantujemy transparentne raporty, wyznaczone KPI i cotygodniowe sprawdzanie postępów. W ciągu 30 dni dostarczamy wstępny plan działań. Jeśli po 90 dniach nie zobaczysz poprawy, możesz skontaktować się z nami - wtedy zmieniamy strategię bezpłatnie.",
+        "Nie gwarantujemy konkretnych pozycji ani wyników sprzedażowych, bo zależą one także od rynku i konkurencji. Zobowiązujemy się do przejrzystych raportów, wspólnie ustalonych KPI i regularnego przeglądu postępów, a strategię korygujemy na podstawie danych.",
     },
   ];
 
   const stats = [
     {
-      number: "500+",
-      label: "klientów obsłużonych",
+      number: "Poznań",
+      label: "stąd pracujemy",
       icon: <Users className="w-6 h-6" />,
     },
     {
-      number: "8",
-      label: "lat doświadczenia",
+      number: "Zdalnie",
+      label: "obsługa firm z Gdyni",
       icon: <Building2 className="w-6 h-6" />,
     },
     {
-      number: "97%",
-      label: "zadowolonych klientów",
+      number: "KPI",
+      label: "ustalane wspólnie",
       icon: <Star className="w-6 h-6" />,
     },
     {
-      number: "TOP3",
-      label: "wyniki w SERP",
+      number: "Raporty",
+      label: "w ustalonym rytmie",
       icon: <TrendingUp className="w-6 h-6" />,
     },
   ];
@@ -236,7 +235,7 @@ export default function AgencjaMarketingowaGdynia() {
     <Layout>
       <SEOHead
         title="Agencja Marketingowa Gdynia | FOTZ – Marketing Dla Firm w Gdyni"
-        description="Agencja marketingowa Gdynia ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Gdyni i Trójmiasta. Bezpłatna wycena!"
+        description="Agencja marketingowa dla firm z Gdyni ✓ SEO, Google Ads, Social Media, strony WWW. Pracujemy z Poznania, firmy z Trójmiasta obsługujemy zdalnie. Bezpłatna konsultacja."
         canonical="https://www.fotz-studio.pl/agencja-marketingowa/gdynia"
         keywords="agencja marketingowa gdynia, marketing internetowy gdynia, agencja reklamowa gdynia, kampanie reklamowe gdynia, seo gdynia, agencja marketingowa trójmiasto"
       />
@@ -248,7 +247,7 @@ export default function AgencjaMarketingowaGdynia() {
           <div className="max-w-6xl mx-auto">
             <div className="mb-6 flex items-center gap-2 text-sm text-slate-600">
               <MapPin className="w-4 h-4" />
-              <span>Gdynia, Trójmiasto</span>
+              <span>Gdynia, Trójmiasto - obsługa zdalna z Poznania</span>
             </div>
 
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-slate-900">
@@ -256,11 +255,10 @@ export default function AgencjaMarketingowaGdynia() {
             </h1>
 
             <p className="text-xl text-slate-700 mb-8 max-w-3xl">
-              Profesjonalna agencja marketingowa w Gdyni. Obsługujemy firmy z
-              całego Trójmiasta - Gdańska, Sopotu i Gdyni. Specjalizujemy się w
-              SEO, Google Ads, social media i tworzeniu nowoczesnych stron
-              internetowych. Ponad 500 zadowolonych klientów i 8 lat
-              doświadczenia na rynku.
+              Agencja marketingowa dla firm z Gdyni. Pracujemy z Poznania, a
+              firmy z całego Trójmiasta - Gdańska, Sopotu i Gdyni - obsługujemy
+              zdalnie. Zajmujemy się SEO, Google Ads, social media i tworzeniem
+              nowoczesnych stron internetowych.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
@@ -337,7 +335,7 @@ export default function AgencjaMarketingowaGdynia() {
         <section className="py-16 px-4 md:px-6 lg:px-8 bg-slate-50">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-slate-900">
-              Pakiety Cenowe Dla Gdyni
+              Zakres Współpracy - Od Czego Zależy Wycena
             </h2>
 
             <div className="grid md:grid-cols-3 gap-6">
@@ -438,8 +436,8 @@ export default function AgencjaMarketingowaGdynia() {
               </h3>
               <p className="text-slate-700 mb-4">
                 Gdynia to dynamicznie rozwijające się miasto portowe
-                z bogatą historią i bogatą sceną biznesową. Nasza agencja
-                zna specyfiquę lokalnego rynku:
+                z bogatą historią i bogatą sceną biznesową. Przed startem
+                analizujemy lokalny rynek i konkurencję w Twojej branży:
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
@@ -457,7 +455,7 @@ export default function AgencjaMarketingowaGdynia() {
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
                   <span className="text-slate-700">
-                    Turystyka i morze - marketing nautyczny to nasza specjalność
+                    Turystyka i morze - sezonowość, którą uwzględniamy w planie działań
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
@@ -527,7 +525,7 @@ export default function AgencjaMarketingowaGdynia() {
               </Button>
             </div>
             <p className="text-sm text-blue-100 mt-8">
-              Odpowiadamy w ciągu 2 godzin, 7 dni w tygodniu
+              Pracujemy z Poznania - firmy z Gdyni obsługujemy zdalnie
             </p>
           </div>
         </section>
@@ -542,10 +540,10 @@ export default function AgencjaMarketingowaGdynia() {
               <div>
                 <Star className="w-8 h-8 text-blue-600 mx-auto mb-4" />
                 <h4 className="font-bold text-slate-900 mb-2">
-                  Doświadczeni Eksperci
+                  Jeden Zespół
                 </h4>
                 <p className="text-sm text-slate-600">
-                  Team z ponad 8 latami doświadczenia w branży
+                  Video, foto, strony WWW i kampanie w jednym miejscu
                 </p>
               </div>
               <div>
@@ -569,10 +567,10 @@ export default function AgencjaMarketingowaGdynia() {
               <div>
                 <Zap className="w-8 h-8 text-blue-600 mx-auto mb-4" />
                 <h4 className="font-bold text-slate-900 mb-2">
-                  Szybka Implementacja
+                  Sprawny Start
                 </h4>
                 <p className="text-sm text-slate-600">
-                  Plan działania w ciągu 48 godzin po umowie
+                  Plan działania ustalamy na początku współpracy
                 </p>
               </div>
             </div>

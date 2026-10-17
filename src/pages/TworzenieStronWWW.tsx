@@ -120,14 +120,14 @@ export default function TworzenieStronWWW() {
                 Dlaczego strona WWW to inwestycja, nie koszt?
               </h2>
               <p className="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto">
-                Strona internetowa pracuje dla Ciebie 24/7, zwiększając prestiż i przychody.
+                Strona internetowa jest dostępna dla klientów przez całą dobę i wspiera wizerunek oraz sprzedaż.
               </p>
 
               <div className="space-y-6">
                 {[
                   { title: "Obecność 24/7", desc: "Twoja strona pracuje, nawet gdy Ty śpisz. Klienci mogą Cię znaleźć o każdej porze." },
                   { title: "Ranking w Google", desc: "Profesjonalna strona, dobrze zoptymalizowana, pojawia się w wynikach wyszukiwania." },
-                  { title: "Wiarygodność", desc: "92% klientów ufa firmom z profesjonalną stroną internetową." },
+                  { title: "Wiarygodność", desc: "Dopracowana strona z aktualnymi informacjami i realizacjami pomaga budować zaufanie do firmy." },
                   { title: "Generowanie leadów", desc: "Formy kontaktowe, telefony, e-maile — automatycznie zbierasz pytania od potencjalnych klientów." },
                   { title: "Analityka", desc: "Wiesz dokładnie, skąd przychodzą klienci, co ich interesuje, ile czasu spędzają na stronie." },
                 ].map((item, i) => (
@@ -231,7 +231,7 @@ export default function TworzenieStronWWW() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center">Pakiety</h2>
               <p className="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto">
-                Każdy pakiet zawiera hosting, certyfikat SSL i support.
+                Zakres każdego pakietu, w tym hosting, certyfikat SSL i opiekę po wdrożeniu, ustalamy w ofercie.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -244,7 +244,7 @@ export default function TworzenieStronWWW() {
                       "Responsywny design",
                       "Formularz kontaktowy",
                       "Google Analytics",
-                      "Hosting przez rok",
+                      "Pomoc w konfiguracji hostingu",
                       "Email support",
                     ],
                   },
@@ -331,9 +331,9 @@ export default function TworzenieStronWWW() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
                 {[
-                  { icon: Zap, title: "Szybko", desc: "Realizujemy projekty w 4-8 tygodni" },
+                  { icon: Zap, title: "Szybko", desc: "Harmonogram ustalamy na starcie projektu" },
                   { icon: TrendingUp, title: "Efektywnie", desc: "Każdy projekt optymalizujemy pod SEO" },
-                  { icon: Star, title: "Zawsze dostępni", desc: "Pytania, zmiany, wsparcie — szybka reakcja" },
+                  { icon: Star, title: "W kontakcie", desc: "Pytania, zmiany, wsparcie — w uzgodnionym trybie" },
                   { icon: Globe, title: "Nowoczesnie", desc: "Najnowsze technologie, best practices" },
                   { icon: Target, title: "Po Twojej stronie", desc: "Twój sukces to nasz sukces" },
                 ].map((item, i) => (

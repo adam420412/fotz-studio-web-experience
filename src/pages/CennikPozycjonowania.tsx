@@ -6,120 +6,119 @@ import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
-import { ArrowRight, Check, ChevronRight, Zap } from "lucide-react";
+import { ArrowRight, Check, ChevronRight } from "lucide-react";
 import { motion } from "framer-motion";
 
 const packages = [
   {
     name: "Lokalny",
-    price: 999,
-    popular: false,
-    description: "Idealna dla firm lokalnych",
+    description: "Dla firm działających w jednym mieście lub regionie",
     features: [
-      "Pozycjonowanie lokalne (1 miasto)",
-      "Do 10 słów kluczowych",
+      "Pozycjonowanie lokalne (wybrane miasto lub region)",
+      "Uzgodniona lista fraz kluczowych",
       "Audyt techniczny SEO",
       "Optymalizacja on-page",
-      "Raport miesięczny",
-      "Wsparcie email"
+      "Profil firmy w Google",
+      "Raport miesięczny"
     ],
-    cta: "Rozpocznij"
+    cta: "Omów zakres"
   },
   {
-    name: "Standard",
-    price: 1999,
-    popular: true,
-    description: "Najpopularniejszy pakiet",
+    name: "Ogólnopolski",
+    description: "Dla firm sprzedających usługi w całej Polsce",
     features: [
       "Pozycjonowanie ogólnopolskie",
-      "Do 30 słów kluczowych",
-      "Audyt techniczny + content",
-      "Link building (5 linków/mies.)",
+      "Uzgodniona lista fraz kluczowych",
+      "Audyt techniczny + treści",
+      "Link building w uzgodnionym zakresie",
       "Optymalizacja on-page + off-page",
-      "Raport + opieka dedykowanego specjalisty"
+      "Raport miesięczny"
     ],
-    cta: "Zacznij teraz"
+    cta: "Omów zakres"
   },
   {
-    name: "Pro",
-    price: 3499,
-    popular: false,
-    description: "Dla ambitnych firm",
+    name: "Treści + SEO",
+    description: "Gdy strona potrzebuje nowych treści",
     features: [
-      "Pozycjonowanie ogólnopolskie",
-      "Do 60 słów kluczowych",
       "Audyt + strategia contentowa",
-      "Link building (15 linków/mies.)",
-      "Content marketing (2 artykuły/mies.)",
-      "Dedykowany account manager"
+      "Artykuły i podstrony w uzgodnionej liczbie",
+      "Link building w uzgodnionym zakresie",
+      "Optymalizacja istniejących treści",
+      "Raport miesięczny"
     ],
-    cta: "Skontaktuj się"
+    cta: "Omów zakres"
   },
   {
     name: "E-commerce",
-    price: 2499,
-    popular: false,
     description: "Dla sklepów internetowych",
     features: [
-      "Sklepy internetowe",
-      "Do 100 kategorii/produktów",
-      "Optymalizacja kart produktów",
-      "Link building (10 linków/mies.)",
+      "Optymalizacja kategorii i kart produktów",
+      "Zakres kategorii ustalany po audycie",
+      "Link building w uzgodnionym zakresie",
       "Schema markup",
-      "Raport + priorytetowe wsparcie"
+      "Raport miesięczny"
     ],
     cta: "Wycena sklepu"
   }
 ];
 
 const factors = [
-  { icon: "🏢", title: "Branża", description: "Konkurencyjność rynku wpływa na koszt" },
-  { icon: "🔍", title: "Stan strony", description: "SEO-friendliness obecnej witryny" },
+  { icon: "🏢", title: "Branża", description: "Konkurencyjność rynku wpływa na nakład pracy" },
+  { icon: "🔍", title: "Stan strony", description: "Ile poprawek technicznych i treści wymaga obecna witryna" },
   { icon: "🎯", title: "Słowa kluczowe", description: "Liczba i konkurencyjność haseł" },
   { icon: "📍", title: "Region", description: "Pozycjonowanie lokalne lub ogólnopolskie" },
-  { icon: "📊", title: "Historia domeny", description: "Wiek i poprzednia historia SEO"  }
+  { icon: "📊", title: "Historia domeny", description: "Wiek i poprzednia historia SEO" },
+  { icon: "✍️", title: "Treści i linki", description: "Ile nowych tekstów i działań link buildingowych potrzeba co miesiąc" }
 ];
 
 const addons = [
-  { service: "Jednorazowy audyt SEO", price: "400–800 zł" },
-  { service: "Content (artykuł blogowy)", price: "200–400 zł" },
-  { service: "Link building (dodatkowe linki)", price: "80–150 zł/link" },
-  { service: "Optymalizacja Google Maps", price: "299 zł/mies." },
-  { service: "Raport analityczny (GA4+GSC)", price: "199 zł/mies." }
+  { service: "Jednorazowy audyt SEO", price: "Zależy od wielkości i stanu strony" },
+  { service: "Content (artykuł blogowy)", price: "Zależy od długości i tematu tekstu" },
+  { service: "Link building (dodatkowe linki)", price: "Zależy od rodzaju i źródła publikacji" },
+  { service: "Optymalizacja profilu firmy w Google", price: "Zależy od liczby lokalizacji" },
+  { service: "Raport analityczny (GA4+GSC)", price: "Zależy od zakresu danych i częstotliwości" }
 ];
 
 const faqItems = [
   {
     question: "Czy ceny zawierają VAT?",
-    answer: "Wszystkie ceny podane w cennikach to ceny netto. VAT doliczany jest zgodnie z obowiązującymi przepisami (23% dla usług SEO)."
+    answer: "Wyceny podajemy w kwotach netto. VAT doliczamy zgodnie z obowiązującymi przepisami."
   },
   {
-    question: "Czy mogę zmienić pakiet w trakcie umowy?",
-    answer: "Tak, możesz zmienić pakiet w dowolnym momencie. Zmiana obowiązuje od następnego okresu rozliczeniowego. Możliwe jest również rozszerzenie pakietu o dodatkowe usługi."
+    question: "Ile kosztuje pozycjonowanie?",
+    answer: "Wycenę przygotowujemy po rozmowie o zakresie i przeglądzie strony. Koszt zależy od branży i konkurencji, liczby fraz, stanu technicznego witryny, potrzebnych treści oraz link buildingu. Nie podajemy cennika pakietów z góry, bo te same nazwy pakietów kryją u różnych firm bardzo różny zakres pracy."
+  },
+  {
+    question: "Czy mogę zmienić zakres w trakcie współpracy?",
+    answer: "Tak, zakres można rozszerzyć lub zawęzić. Zasady zmian i okres rozliczeniowy ustalamy w umowie."
   },
   {
     question: "Jak długo trwa umowa?",
-    answer: "Standardowo umowy zawieramy na okres 12 miesięcy. Oferujemy również umowy na krótsze okresy (3-6 miesięcy) z wyższym monthly rate'em. Możliwość rozwiązania umowy za 30 dni przed końcem okresu."
+    answer: "Okres współpracy i warunki wypowiedzenia ustalamy indywidualnie i zapisujemy w umowie. SEO to działanie rozłożone w czasie, dlatego warto planować je na kilka miesięcy."
   },
   {
     question: "Kiedy zobaczę efekty pozycjonowania?",
-    answer: "Pierwsze efekty widać po 4-6 tygodniach, ale pełne rezultaty osiągamy po 3-6 miesiącach, zależnie od konkurencyjności branży i stanu startowego witryny."
+    answer: "Nie da się podać jednego terminu. Tempo zmian zależy od konkurencyjności branży, stanu startowego witryny i zakresu prac. Postępy pokazujemy w miesięcznych raportach."
+  },
+  {
+    question: "Czy gwarantujecie pozycję w Google?",
+    answer: "Nie gwarantujemy konkretnej pozycji ani miejsca w wynikach wyszukiwania — o kolejności decyduje Google. Odpowiadamy za uzgodniony zakres prac i raportujemy, co zostało zrobione."
   },
   {
     question: "Czy pozycjonowanie lokalne jest tańsze?",
-    answer: "Tak, pozycjonowanie lokalne jest tańsze niż ogólnopolskie, ponieważ konkurencja jest mniejsza. Pakiet Lokalny to najmniejszy wydatek w naszym cennikku."
+    answer: "Zwykle wymaga mniejszego zakresu niż ogólnopolskie, bo konkurencja jest mniejsza, ale ostateczny koszt zależy od branży i stanu strony."
   },
   {
     question: "Co to jest link building?",
-    answer: "Link building to pozyskiwanie linków zewnętrznych do Twojej witryny z innych stron. Wysokiej jakości linki znacznie poprawiają autorytet domeny i pozycje w Google."
+    answer: "Link building to pozyskiwanie linków zewnętrznych do Twojej witryny z innych stron. Wartościowe linki pomagają budować autorytet domeny."
   },
   {
     question: "Czy oferujecie pozycjonowanie sklepów?",
-    answer: "Tak! Pakiet E-commerce jest dedykowany dla sklepów internetowych. Obejmuje optymalizację kart produktów, schema markup dla e-commerce i linki branżowe."
+    answer: "Tak. Przy sklepach internetowych zajmujemy się optymalizacją kategorii i kart produktów, schema markup dla e-commerce i linkami branżowymi."
   },
   {
     question: "Jakie wyniki mogę osiągnąć?",
-    answer: "Wyniki zależą od branży, konkurencji i stanu startowego. Średnio osiągamy wzrost organicznego ruchu o 50-200% w ciągu 6 miesięcy dla konkurencyjnych branż."
+    answer: "Wyniki zależą od branży, konkurencji i stanu startowego strony, dlatego nie obiecujemy z góry konkretnych liczb. Cele i sposób pomiaru ustalamy na początku współpracy."
   }
 ];
 
@@ -128,7 +127,7 @@ const CennikPozycjonowania = () => {
     <>
       <SEOHead
         title="Cennik pozycjonowania stron 2025 | Ile kosztuje SEO? | FOTZ Studio"
-        description="Sprawdź aktualne ceny pozycjonowania stron w 2025. Pakiety SEO od 999 zł/mies. Transparentny cennik bez ukrytych kosztów. Bezpłatna wycena!"
+        description="Sprawdź, od czego zależy koszt pozycjonowania stron. Wycenę SEO przygotowujemy po rozmowie o zakresie i przeglądzie strony. Bezpłatna wycena."
         ogType="website"
         canonical="https://www.fotz-studio.pl/cennik-pozycjonowania"
         keywords="cennik pozycjonowania, cena SEO, pozycjonowanie stron, ile kosztuje pozycjonowanie, pakiety SEO"
@@ -167,7 +166,7 @@ const CennikPozycjonowania = () => {
                   Cennik pozycjonowania stron 2025
                 </h1>
                 <p className="text-lg md:text-xl text-muted-foreground mb-8">
-                  Transparentny cennik bez ukrytych kosztów. Pakiety SEO dostosowane do budżetu i potrzeb Twojej firmy.
+                  Nie publikujemy stałych cen pakietów. Wycenę przygotowujemy po rozmowie o zakresie — poniżej znajdziesz, od czego zależy koszt pozycjonowania.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button asChild size="lg" className="bg-gradient-to-r from-[#75143F] to-[#0F3053]">
@@ -177,7 +176,7 @@ const CennikPozycjonowania = () => {
                     </Link>
                   </Button>
                   <Button asChild variant="outline" size="lg">
-                    <a href="#packages">Przeglądaj pakiety</a>
+                    <a href="#packages">Zobacz zakresy współpracy</a>
                   </Button>
                 </div>
               </div>
@@ -192,10 +191,10 @@ const CennikPozycjonowania = () => {
               <div className="max-w-5xl mx-auto">
                 <div className="text-center mb-12">
                   <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                    Pakiety pozycjonowania
+                    Zakresy współpracy
                   </h2>
                   <p className="text-lg text-muted-foreground">
-                    Wybierz pakiet odpowiadający potrzebom Twojej firmy
+                    Przykładowe zakresy — każdy wyceniamy indywidualnie po przeglądzie strony
                   </p>
                 </div>
 
@@ -206,26 +205,14 @@ const CennikPozycjonowania = () => {
                       initial={{ opacity: 0, y: 20 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ delay: idx * 0.1 }}
-                      className={`relative p-6 rounded-2xl border transition-all ${
-                        pkg.popular
-                          ? "bg-gradient-to-b from-primary/20 to-primary/5 border-primary/50 ring-1 ring-primary/30"
-                          : "bg-card border-border/50 hover:border-primary/30"
-                      }`}
+                      className="relative p-6 rounded-2xl border transition-all bg-card border-border/50 hover:border-primary/30"
                     >
-                      {pkg.popular && (
-                        <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                          <span className="inline-block px-3 py-1 bg-primary text-primary-foreground text-xs font-semibold rounded-full">
-                            POPULARNE
-                          </span>
-                        </div>
-                      )}
 
                       <div className="mb-6">
                         <h3 className="text-xl font-heading font-bold mb-2">{pkg.name}</h3>
                         <p className="text-sm text-muted-foreground mb-4">{pkg.description}</p>
                         <div className="flex items-baseline gap-1 mb-2">
-                          <span className="text-4xl font-heading font-bold">{pkg.price}</span>
-                          <span className="text-muted-foreground">zł netto/mies.</span>
+                          <span className="text-lg font-heading font-semibold">Wycena indywidualna</span>
                         </div>
                       </div>
 
@@ -238,7 +225,7 @@ const CennikPozycjonowania = () => {
                         ))}
                       </ul>
 
-                      <Button asChild className="w-full" variant={pkg.popular ? "default" : "outline"}>
+                      <Button asChild className="w-full" variant="outline">
                         <Link to="/kontakt">{pkg.cta}</Link>
                       </Button>
                     </motion.div>
@@ -292,14 +279,14 @@ const CennikPozycjonowania = () => {
                     <thead>
                       <tr className="bg-muted/50 border-b border-border/50">
                         <th className="text-left py-4 px-6 font-semibold">Usługa dodatkowa</th>
-                        <th className="text-right py-4 px-6 font-semibold">Cena</th>
+                        <th className="text-right py-4 px-6 font-semibold">Od czego zależy koszt</th>
                       </tr>
                     </thead>
                     <tbody>
                       {addons.map((addon, idx) => (
                         <tr key={idx} className="border-b border-border/30 hover:bg-muted/20 transition-colors">
                           <td className="py-4 px-6 text-muted-foreground">{addon.service}</td>
-                          <td className="py-4 px-6 text-right font-semibold">{addon.price}</td>
+                          <td className="py-4 px-6 text-right">{addon.price}</td>
                         </tr>
                       ))}
                     </tbody>
@@ -307,7 +294,7 @@ const CennikPozycjonowania = () => {
                 </div>
 
                 <p className="text-sm text-muted-foreground mt-6">
-                  Wszystkie ceny to ceny netto. VAT doliczany jest zgodnie z obowiązującymi przepisami (23%).
+                  Usługi dodatkowe wyceniamy razem z głównym zakresem, w kwotach netto (plus VAT zgodnie z przepisami).
                 </p>
               </div>
             </FadeInView>

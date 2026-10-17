@@ -46,7 +46,6 @@ export default function EmailMarketing() {
   const packages = [
     {
       title: "Email Basic",
-      price: "799 zł/mies.",
       desc: "Regularne newslettery",
       features: [
         "Do 4 newsletterów/mies.",
@@ -58,7 +57,6 @@ export default function EmailMarketing() {
     },
     {
       title: "Email Growth",
-      price: "1 699 zł/mies.",
       desc: "Newsletter + automation",
       features: [
         "Do 8 emaili/mies.",
@@ -72,10 +70,9 @@ export default function EmailMarketing() {
     },
     {
       title: "Email Pro",
-      price: "2 999+ zł/mies.",
       desc: "Pełna automatyzacja email",
       features: [
-        "Unlimited emaili",
+        "Liczba wysyłek ustalana indywidualnie",
         "Pełna marketing automation",
         "Integracja z CRM",
         "Lead scoring",
@@ -89,17 +86,17 @@ export default function EmailMarketing() {
     {
       question: "Czy email marketing nadal działa w 2025?",
       answer:
-        "Tak — email marketing ma najwyższy ROI ze wszystkich kanałów marketingowych: 36-42 zł zwrotu na każde 1 zł inwestycji (wg DMA). Otwieralność emaili w Polsce to 20-35%, znacznie wyżej niż zasięg organiczny w social media. Email to kanał własny — nie zależy od algorytmów platform.",
+        "Tak — email to kanał własny: baza subskrybentów należy do Ciebie i nie zależy od algorytmów platform społecznościowych. Dobrze prowadzony newsletter i automatyzacje pozwalają regularnie docierać do osób, które same wyraziły zgodę na kontakt.",
     },
     {
       question: "Jak zbudować bazę mailingową?",
       answer:
-        "Metody budowania bazy: lead magnet (e-book, checklist, darmowy kurs), pop-up na stronie, formularz w stopce, contest/konkurs, lista zakupów z newsletterem, checkout opt-in w sklepie. Kupowanie baz jest nielegalne (RODO) i nieskuteczne. Organicznie zbudowana baza to 5-10x wyższe wyniki.",
+        "Metody budowania bazy: lead magnet (e-book, checklist, darmowy kurs), pop-up na stronie, formularz w stopce, contest/konkurs, lista zakupów z newsletterem, checkout opt-in w sklepie. Kupowanie baz jest niezgodne z RODO i nieskuteczne. Baza zbudowana samodzielnie, ze zgodami, składa się z osób faktycznie zainteresowanych ofertą.",
     },
     {
       question: "Jaka powinna być otwieralność emaili?",
       answer:
-        "Branżowe benchmarki dla Polski: e-commerce 20-25%, B2B 25-35%, NGO/edukacja 35-45%. Jeśli Open Rate jest poniżej 15% — problem z jakością bazy lub tematami. Kluczowe do poprawy: temat emaila, nadawca, czas wysyłki, segmentacja, higiena bazy.",
+        "Otwieralność mocno zależy od branży, jakości bazy i sposobu jej mierzenia (np. funkcje prywatności w programach pocztowych zawyżają otwarcia), dlatego najlepiej porównywać się z własnymi wcześniejszymi wynikami. Spadek otwarć zwykle oznacza problem z jakością bazy lub tematami. Kluczowe do poprawy: temat emaila, nadawca, czas wysyłki, segmentacja, higiena bazy.",
     },
     {
       question: "Jakie narzędzie do email marketingu wybrać?",
@@ -109,7 +106,7 @@ export default function EmailMarketing() {
     {
       question: "Czym jest email automation?",
       answer:
-        "Email automation to automatyczne wysyłanie emaili na podstawie zachowań użytkownika lub czasu. Przykłady: welcome series (po zapisie), porzucony koszyk (2h po opuszczeniu koszyka), drip campaign (co 3 dni przez miesiąc), win-back (po 90 dniach nieaktywności). Raz ustawiony, działa 24/7.",
+        "Email automation to automatyczne wysyłanie emaili na podstawie zachowań użytkownika lub czasu. Przykłady: welcome series (po zapisie), porzucony koszyk (2h po opuszczeniu koszyka), drip campaign (co 3 dni przez miesiąc), win-back (po 90 dniach nieaktywności). Raz ustawiony, działa automatycznie.",
     },
     {
       question: "Jak unikać spamu w email marketingu?",
@@ -122,7 +119,7 @@ export default function EmailMarketing() {
     <>
       <SEOHead
         title="Email marketing dla firm — automation i newslettery | FOTZ Studio"
-        description="Email marketing — newslettery, automation, lead nurturing dla firm. Najwyższy ROI z wszystkich kanałów marketingowych. Obsługa email marketingu od 799 zł/mies.!"
+        description="Email marketing — newslettery, automation, lead nurturing dla firm. Kanał własny, niezależny od algorytmów. Wycena po rozmowie o zakresie — bezpłatna konsultacja."
         canonical="https://www.fotz-studio.pl/uslugi/email-marketing"
         keywords="email marketing, e-mail marketing, mailing, newsletter, marketing automation, kampanie email, newsletter marketing, automatyzacja email, agencja email marketing, skuteczny email marketing, mailing dla firm, obsługa email marketingu"
       />
@@ -145,7 +142,7 @@ export default function EmailMarketing() {
                 Email Marketing Specialists
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                Email marketing — najwyższy ROI w marketingu
+                Email marketing — kanał, który należy do Ciebie
               </h1>
               <p className="text-xl text-slate-300 mb-8 leading-relaxed">
                 Email marketing — skuteczne kampanie emailowe, newslettery i marketing automation dla firm. E-mail marketing to kanał własny, niezależny od algorytmów. Tworzymy mailing i sekwencje automatyczne, które konwertują subskrybentów w klientów.
@@ -153,10 +150,10 @@ export default function EmailMarketing() {
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
                 {[
-                  { value: "4200%", label: "Średni ROI email marketingu" },
-                  { value: "25-35%", label: "Open rate B2B w PL" },
-                  { value: "36 zł", label: "Zwrot na każde 1 zł" },
-                  { value: "24/7", label: "Automation pracuje" },
+                  { value: "Newsletter", label: "Regularny kontakt z bazą" },
+                  { value: "Automation", label: "Sekwencje bez ręcznej pracy" },
+                  { value: "Segmentacja", label: "Treść dopasowana do odbiorcy" },
+                  { value: "Raporty", label: "Otwarcia, kliknięcia, konwersje" },
                 ].map((stat, idx) => (
                   <div key={idx} className="bg-slate-800 bg-opacity-50 p-4 rounded-lg">
                     <div className="text-2xl font-bold text-emerald-400">{stat.value}</div>
@@ -227,9 +224,9 @@ export default function EmailMarketing() {
         <FadeInView>
           <section className="py-16 md:py-24 bg-white">
             <div className="max-w-5xl mx-auto px-4 md:px-6">
-              <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Pakiety email marketingu</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Zakres współpracy w email marketingu</h2>
               <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
-                Stałe plany miesięczne. Bez ukrytych kosztów.
+                Wycenę przygotowujemy po rozmowie o zakresie — zależy od liczby wysyłek, stopnia automatyzacji, integracji (sklep, CRM) i tego, czy przygotowujemy treści i grafiki. Koszt narzędzia do wysyłki (np. Mailchimp, Klaviyo) płacisz osobno.
               </p>
               <div className="grid md:grid-cols-3 gap-8">
                 {packages.map((pkg, idx) => (
@@ -245,9 +242,6 @@ export default function EmailMarketing() {
                     }`}
                   >
                     <h3 className="text-xl font-bold mb-2">{pkg.title}</h3>
-                    <div className={`text-2xl font-bold mb-2 ${pkg.highlight ? "text-white" : "text-emerald-600"}`}>
-                      {pkg.price}
-                    </div>
                     <p className={`mb-6 text-sm ${pkg.highlight ? "text-emerald-100" : "text-slate-600"}`}>{pkg.desc}</p>
                     <ul className="space-y-3">
                       {pkg.features.map((feature, i) => (

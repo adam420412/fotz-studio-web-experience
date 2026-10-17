@@ -54,7 +54,6 @@ export default function AgencjaMarketingowaGdansk() {
   const packages = [
     {
       name: "START",
-      price: "od 1500",
       description: "Dla małych firm dopiero startujących",
       features: [
         "Audyt SEO strony",
@@ -66,7 +65,6 @@ export default function AgencjaMarketingowaGdansk() {
     },
     {
       name: "BIZNES",
-      price: "od 4500",
       description: "Dla rozwijających się firm",
       features: [
         "Pełne zarządzanie SEO",
@@ -80,7 +78,6 @@ export default function AgencjaMarketingowaGdansk() {
     },
     {
       name: "PREMIUM",
-      price: "od 9000",
       description: "Kompleksowy zakres usług",
       features: [
         "Dedykowany account manager",
@@ -97,11 +94,11 @@ export default function AgencjaMarketingowaGdansk() {
   const faqs = [
     {
       question: "Ile czasu zajmuje pojawienie się efektów SEO w Gdańsku?",
-      answer: "Efekty SEO są widoczne zazwyczaj po 2-3 miesiącach intensywnej pracy. Jednak będziemy raportować progres od miesiąca pierwszego. Pozycjonowanie to maraton, a nie sprint - myślimy długoterminowo o sukcesie Twojej firmy."
+      answer: "SEO to proces rozłożony na miesiące, a tempo zależy od konkurencji, stanu strony i branży. Nie gwarantujemy konkretnej pozycji ani terminu efektów, ale raportujemy postępy od pierwszego miesiąca. Pozycjonowanie to maraton, a nie sprint - myślimy długoterminowo o sukcesie Twojej firmy."
     },
     {
       question: "Jakie branże obsługujecie w Gdańsku?",
-      answer: "Pracujemy z firmami handlowymi, usługowymi, produkcyjnymi, gastronomią, nieruchomościami i turystyką. Specjalizujemy się w branżach typowych dla Trójmiasta i Gdańska. Każda strategia dostosowujemy do specyfiki Twojej branży."
+      answer: "Pracujemy z firmami handlowymi, usługowymi, produkcyjnymi, gastronomią, nieruchomościami i turystyką. Pracujemy z Poznania, a firmy z Gdańska i Trójmiasta obsługujemy zdalnie. Każdą strategię dostosowujemy do specyfiki Twojej branży."
     },
     {
       question: "Czy mogę zdecydować, w jakie kanały marketingowe chcę inwestować?",
@@ -113,7 +110,7 @@ export default function AgencjaMarketingowaGdansk() {
     },
     {
       question: "Jakie są Wasze ceny w Gdańsku?",
-      answer: "Oferujemy elastyczne pakiety od 1500 zł do ponad 10 000 zł miesięcznie. Wszystko zależy od zakresu usług, branży i celów. Zapraszamy na bezpłatną wycenę - bez zobowiązań!"
+      answer: "Nie mamy sztywnego cennika. Wycenę przygotowujemy po rozmowie o zakresie usług, liczbie kanałów, branży i celach. Budżet reklamowy płacony platformom (Google, Meta) jest zawsze osobno. Zapraszamy na bezpłatną wycenę - bez zobowiązań!"
     }
   ];
 
@@ -132,7 +129,7 @@ export default function AgencjaMarketingowaGdansk() {
     <Layout>
       <SEOHead
         title="Agencja Marketingowa Gdańsk | FOTZ – Marketing Dla Firm w Gdańsku"
-        description="Agencja marketingowa Gdańsk ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Gdańska i Trójmiasta. Bezpłatna wycena!"
+        description="Agencja marketingowa Gdańsk ✓ SEO, Google Ads, Social Media, strony WWW. Pracujemy z Poznania, firmy z Gdańska i Trójmiasta obsługujemy zdalnie. Bezpłatna wycena!"
         canonical="https://www.fotz-studio.pl/agencja-marketingowa/gdansk"
         keywords="agencja marketingowa gdańsk, marketing internetowy gdańsk, agencja reklamowa gdańsk, kampanie reklamowe gdańsk, seo gdańsk, google ads gdańsk, agencja marketingowa trójmiasto"
       />
@@ -168,8 +165,8 @@ export default function AgencjaMarketingowaGdansk() {
               Marketing Dla Firm w Gdańsku i Trójmieście
             </h1>
             <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-              Ponad 200 projektów realizowanych dla firm z Gdańska. SEO, Google Ads, Social Media i strony WWW – 
-              kompleksowe rozwiązania marketingowe, które przynoszą wymierne wyniki.
+              Pracujemy z Poznania, a firmy z Gdańska i Trójmiasta obsługujemy zdalnie. SEO, Google Ads, Social Media i strony WWW – 
+              kompleksowe działania marketingowe oparte na danych i regularnych raportach.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
@@ -182,30 +179,6 @@ export default function AgencjaMarketingowaGdansk() {
                   Zadzwoń: +48 790 814 814
                 </a>
               </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="py-12 bg-gray-900 text-white">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-4xl font-bold text-blue-400 mb-2">500+</div>
-              <p className="text-gray-300">Zadowolonych Klientów</p>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-blue-400 mb-2">8 lat</div>
-              <p className="text-gray-300">Doświadczenia</p>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-blue-400 mb-2">97%</div>
-              <p className="text-gray-300">Zadowolenia Klientów</p>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-blue-400 mb-2">TOP3</div>
-              <p className="text-gray-300">Wyniki Gwarancji</p>
             </div>
           </div>
         </div>
@@ -246,8 +219,12 @@ export default function AgencjaMarketingowaGdansk() {
       <section className="py-16 md:py-24 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
-            Pakiety Cenowe
+            Przykładowe Zakresy Współpracy
           </h2>
+          <p className="text-center text-gray-700 max-w-3xl mx-auto mb-12 -mt-6">
+            Nie mamy sztywnego cennika. Wycenę przygotowujemy po rozmowie o zakresie, liczbie kanałów i celach.
+            Budżet reklamowy płacony platformom (Google, Meta) jest zawsze osobno.
+          </p>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {packages.map((pkg, index) => (
@@ -257,16 +234,13 @@ export default function AgencjaMarketingowaGdansk() {
               >
                 {pkg.popular && (
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                    <Badge className="bg-blue-600 text-white">NAJPOPULARNIEJSZY</Badge>
+                    <Badge className="bg-blue-600 text-white">REKOMENDOWANY</Badge>
                   </div>
                 )}
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">{pkg.name}</h3>
                   <p className="text-gray-600 text-sm mb-4">{pkg.description}</p>
-                  <div className="mb-6">
-                    <span className="text-4xl font-bold text-gray-900">{pkg.price}</span>
-                    <span className="text-gray-600 ml-2">PLN/m-c</span>
-                  </div>
+                  <p className="text-gray-600 text-sm mb-6">Wycena indywidualna po rozmowie o zakresie</p>
                   <ul className="space-y-3 mb-8">
                     {pkg.features.map((feature, fidx) => (
                       <li key={fidx} className="flex items-start gap-3">
@@ -304,11 +278,11 @@ export default function AgencjaMarketingowaGdansk() {
 
             <Card className="bg-gradient-to-r from-blue-50 to-indigo-50 border-blue-200">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Pracujemy w Całym Trójmieście</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Obsługujemy Zdalnie Całe Trójmiasto</h3>
                 <p className="text-gray-700 mb-4">
-                  Nasze doświadczenie obejmuje obsługę firm z całej Metropolii Gdańskiej – od tradycyjnych dzielnic 
-                  Śródmieścia po nowoczesne Przymorze. Znamy specyfikę każdej części miasta i dostosowujemy strategie 
-                  marketingowe do lokalnego rynku.
+                  Pracujemy z Poznania, a firmy z Gdańska i całej Metropolii Gdańskiej obsługujemy zdalnie – 
+                  przez wideorozmowy, wspólne dokumenty i regularne raporty. Strategię dopasowujemy do Twojego 
+                  lokalnego rynku i konkurencji.
                 </p>
                 <p className="text-gray-700">
                   Niezależnie czy Twoja firma znajduje się w centrum Gdańska czy na jego obrzeżach, jesteśmy gotowi 
@@ -360,7 +334,7 @@ export default function AgencjaMarketingowaGdansk() {
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Doświadczenie i Wiedza</h3>
                   <p className="text-gray-700">
-                    8 lat pracy na rynku marketingu. Znamy trendy, algorytmy Google i to, co naprawdę działa dla firm.
+                    Realizowaliśmy projekty m.in. dla Enea Stadion, H. Cegielski – FPS i WSB Merito. Śledzimy zmiany w Google i Meta na bieżąco.
                   </p>
                 </div>
               </div>
@@ -398,7 +372,7 @@ export default function AgencjaMarketingowaGdansk() {
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Wielobranżowe Doświadczenie</h3>
                   <p className="text-gray-700">
-                    Pracowaliśmy z e-commerce, SaaS, usługami, handlem i produkcją. Wiemy, jak pozycjonować różne typy biznesu.
+                    Pracowaliśmy z e-commerce, usługami, edukacją i przemysłem. Strategię dopasowujemy do typu biznesu.
                   </p>
                 </div>
               </div>
@@ -422,7 +396,7 @@ export default function AgencjaMarketingowaGdansk() {
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Pełna Transparentność</h3>
                   <p className="text-gray-700">
-                    Dostęp do wszystkich danych, raporty cotygodniowe, regularne spotkania. Żadnych ukrytych kosztów.
+                    Dostęp do wszystkich danych, regularne raporty i spotkania. Żadnych ukrytych kosztów.
                   </p>
                 </div>
               </div>
@@ -476,7 +450,7 @@ export default function AgencjaMarketingowaGdansk() {
                 <div className="text-center">
                   <MapPin className="w-8 h-8 text-blue-600 mx-auto mb-2" />
                   <h3 className="font-bold text-gray-900 mb-1">Siedziba</h3>
-                  <p className="text-gray-700">Gdańsk, Pomorskie</p>
+                  <p className="text-gray-700">Poznań – firmy z Gdańska obsługujemy zdalnie</p>
                 </div>
                 <div className="text-center">
                   <Building2 className="w-8 h-8 text-blue-600 mx-auto mb-2" />
