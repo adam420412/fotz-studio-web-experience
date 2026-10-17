@@ -71,6 +71,7 @@ const reviewed = [
   '/agencja-social-media/szczecin', '/agencja-social-media/lublin', '/agencja-social-media/warszawa', '/agencja-social-media/krakow',
   '/agencja-marketingowa/rzeszow', '/agencja-marketingowa/lodz', '/agencja-marketingowa/krakow', '/uslugi/studio-podcastowe',
   '/uslugi/sklepy-internetowe/krakow', '/kompleksowa-obsluga-marketingowa', '/uslugi/produkcja-filmow', '/uslugi/strony-internetowe/wroclaw',
+  '/seo', '/performance-marketing/meta-ads',
 ];
 // Offers cleaned of unsupported claims on 17.10 (not rewritten for NEURONwriter yet).
 const cleaned = [

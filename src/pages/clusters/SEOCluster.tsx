@@ -194,7 +194,7 @@ const processSteps = [
 const audiences = [
   {
     title: "Firmy usługowe i lokalne",
-    text: "Gabinety, warsztaty, kancelarie, firmy budowlane czy szkoły, które pozyskują klientów z jednego miasta lub regionu. Tu najważniejsze są local SEO, wizytówka w Mapach Google i podstrony usług z nazwą miejscowości.",
+    text: "Gabinety, warsztaty, kancelarie, firmy budowlane czy szkoły, które pozyskują klientów z jednego miasta lub regionu. Klienci, którzy chcą wyszukiwać usługi w okolicy, widzą najpierw mapę i kilka wizytówek. Tu najważniejsze są local SEO, wizytówka w Mapach Google i podstrony usług z nazwą miejscowości.",
   },
   {
     title: "Sklepy internetowe",
@@ -272,6 +272,25 @@ const faqs = [
   },
 ];
 
+const deliverables = [
+  {
+    title: "Plan działań na start",
+    text: "Po audycie dostajesz listę zadań z priorytetami: co poprawiamy od razu, co w kolejnych miesiącach i czego na razie nie warto ruszać. To podstawa strategii pozycjonowania, do której wracamy przy każdym podsumowaniu.",
+  },
+  {
+    title: "Mapa fraz i podstron",
+    text: "Przypisujemy zapytania klientów do konkretnych podstron, żeby kilka stron nie konkurowało o to samo. Widać od razu, których treści brakuje i które podstrony trzeba połączyć lub rozbudować.",
+  },
+  {
+    title: "Wdrożone zmiany, nie tylko rekomendacje",
+    text: "Jeśli mamy dostęp do strony, zmiany techniczne i treściowe wprowadzamy sami. Jeśli stroną opiekuje się inna firma, przygotowujemy dla niej precyzyjne wytyczne i sprawdzamy, czy zostały wdrożone.",
+  },
+  {
+    title: "Raport z komentarzem",
+    text: "W raporcie pokazujemy widoczność, ruch z wyszukiwarki i zapytania ze strony, ale przede wszystkim opisujemy, co z tego wynika i co robimy dalej. Liczby bez wniosków nie pomagają w decyzjach.",
+  },
+];
+
 const guides = [
   { label: "Jak wybrać agencję SEO", href: "/blog/jak-wybrac-agencje-seo" },
   { label: "Ile kosztuje pozycjonowanie", href: "/blog/ile-kosztuje-pozycjonowanie" },
@@ -333,7 +352,7 @@ export default function SEOCluster() {
               Agencja SEO · Poznań i cała Polska zdalnie
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 leading-tight">
-              Agencja SEO, która buduje <span className="text-gradient">widoczność w Google i AI</span>
+              Agencja SEO i marketing internetowy: <span className="text-gradient">widoczność w Google i AI</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-10 leading-relaxed">
               Szukasz agencji SEO, która powie, co konkretnie zrobi z Twoją stroną? FOTZ Studio łączy audyt, strategię SEO,
@@ -359,9 +378,9 @@ export default function SEOCluster() {
       <section className="py-16 md:py-20 border-y border-border/50">
         <div className="max-w-4xl mx-auto px-4">
           <motion.div {...fadeUp}>
-            <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Czym jest agencja SEO i czym się zajmuje?</h2>
+            <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Czym jest i czym zajmuje się agencja SEO?</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              W praktyce to zespół, który sprawia, że klienci znajdują Twoją firmę, kiedy chcą wyszukiwać produkty lub
+              Czym jest agencja SEO? W praktyce to zespół, który sprawia, że klienci znajdują Twoją firmę, kiedy chcą wyszukiwać produkty lub
               usługi w Google, a Twoja strona pojawia się w wynikach wyszukiwania tam, gdzie oni patrzą. Praca agencji obejmuje kilka obszarów naraz: technical SEO (czy wyszukiwarka
               może poprawnie odczytać stronę), SEO on-site (czy treści i nagłówki odpowiadają na zapytania), content (czy na
               stronie jest wszystko, czego szuka klient) i off-page (czy inne serwisy wskazują na Twoją markę). Do tego
@@ -396,7 +415,7 @@ export default function SEOCluster() {
       <section className="py-20 md:py-28">
         <div className="max-w-6xl mx-auto px-4">
           <motion.div {...fadeUp} className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Usługi SEO naszej agencji</h2>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Usługi naszej agencji SEO</h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               Naszym zadaniem jest zwiększać widoczność Twojej firmy tam, gdzie szukają jej klienci. Każda usługa SEO ma osobną stronę z opisem zakresu. Wybierz to, czego potrzebujesz, albo zacznij od audytu, a
               zakres dobierzemy razem.
@@ -445,7 +464,7 @@ export default function SEOCluster() {
       <section className="py-16 md:py-20 bg-muted/30">
         <div className="max-w-4xl mx-auto px-4">
           <motion.div {...fadeUp}>
-            <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Agencja SEO w Poznaniu i dla firm z innych miast</h2>
+            <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Agencja SEO w Poznaniu, SEO w Polsce zdalnie</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
               W Poznaniu możemy spotkać się na miejscu, a z firmami z innych miast pracujemy zdalnie: spotkania online,
               wspólne dokumenty i dostęp do tych samych danych. Nie mamy biur poza Poznaniem. Dla wybranych miast
@@ -497,7 +516,7 @@ export default function SEOCluster() {
             ))}
           </div>
           <motion.div {...fadeUp} className="p-8 rounded-2xl bg-muted/40 border border-border/50">
-            <h3 className="font-heading font-bold text-xl mb-4">Kiedy lepiej szukać dalej</h3>
+            <h2 className="font-heading font-bold text-xl mb-4">Jak wybrać dobrą agencję SEO: kiedy lepiej szukać dalej</h2>
             <ul className="space-y-3">
               {redFlags.map((flag) => (
                 <li key={flag} className="flex items-start gap-3 text-foreground/80">
@@ -558,6 +577,27 @@ export default function SEOCluster() {
         </div>
       </section>
 
+      {/* Co dostajesz */}
+      <section className="py-20 md:py-28">
+        <div className="max-w-6xl mx-auto px-4">
+          <motion.div {...fadeUp} className="max-w-3xl mb-12">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Co dostajesz we współpracy z naszą agencją SEO</h2>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              Działania SEO są mniej widoczne niż nowa strona czy kampania wideo, dlatego dbamy o to, żeby zawsze było
+              wiadomo, nad czym pracujemy. Oto, co konkretnie trafia do Ciebie w trakcie pozycjonowania.
+            </p>
+          </motion.div>
+          <div className="grid md:grid-cols-2 gap-6">
+            {deliverables.map((item) => (
+              <motion.div key={item.title} {...fadeUp} className="p-6 rounded-2xl bg-card border border-border/50">
+                <h3 className="font-heading font-bold text-lg mb-2">{item.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{item.text}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Artykuł: SEO w marketingu */}
       <section className="py-20 md:py-28">
         <div className="max-w-4xl mx-auto px-4">
@@ -571,10 +611,15 @@ export default function SEOCluster() {
               marketing planujemy razem: ta sama osoba widzi, jakie frazy rosną w wyszukiwarce, jakie kampanie Google Ads
               działają i jakie treści publikujemy w social media.
             </p>
+            <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4 mt-12">
+              Content marketing i marketing internetowy jako paliwo dla SEO
+            </h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
               Content marketing jest dla SEO paliwem. Artykuły poradnikowe, opisy usług, studia przypadków czy materiały
               wideo dają wyszukiwarce powód, by pokazywać Twoją stronę na kolejne zapytania. Treści przygotowujemy pod
-              konkretne pytania klientów, a nie pod liczbę słów kluczowych. Jeśli potrzebujesz większej skali, sprawdź
+              konkretne pytania klientów, a nie pod liczbę słów kluczowych. Marketing internetowy, w którym SEO, wideo,
+              zdjęcia i social media korzystają z tych samych materiałów, jest po prostu tańszy w produkcji: jeden dzień
+              zdjęciowy może dać grafiki do artykułów, film na podstronę usługi i posty do mediów społecznościowych. Jeśli potrzebujesz większej skali, sprawdź
               usługę{" "}
               <Link to="/content-marketing" className="text-primary hover:underline">
                 content marketingu
@@ -582,7 +627,7 @@ export default function SEOCluster() {
               .
             </p>
 
-            <h3 className="text-xl font-heading font-semibold mb-3 mt-8">SEO i SEM, czyli pozycjonowanie i reklamy</h3>
+            <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4 mt-12">SEO i performance marketingu: wyszukiwarka i reklamy razem</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
               SEO i PPC odpowiadają na te same zapytania, ale działają inaczej. Kampanie{" "}
               <Link to="/performance-marketing/google-ads" className="text-primary hover:underline">
@@ -594,7 +639,7 @@ export default function SEOCluster() {
               odwrotnie. Wiele firm szuka osobno agencji SEO i SEM, a u nas obie części kampanii prowadzi ten sam zespół.
             </p>
 
-            <h3 className="text-xl font-heading font-semibold mb-3 mt-8">Strona internetowa jako fundament widoczności</h3>
+            <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4 mt-12">Skuteczne pozycjonowanie stron internetowych zaczyna się od strony</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
               Nawet najlepsza strategia SEO nie pomoże, jeśli strona ładuje się wolno, ma chaotyczną strukturę albo nie
               mówi jasno, co firma oferuje. Nasz zespół robi też{" "}
