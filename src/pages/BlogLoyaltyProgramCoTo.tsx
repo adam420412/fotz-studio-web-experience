@@ -20,12 +20,12 @@ const faqItems = [
   {
     question: "Czy programy lojalnościowe naprawdę działają?",
     answer:
-      "Tak, ale tylko gdy są dobrze zaprojektowane. Badania Bond Brand Loyalty pokazują, że 79% konsumentów jest bardziej skłonnych do ponownego zakupu od marek z programem lojalnościowym. Jednak słabo zaprojektowane programy (zbyt trudne do zdobycia nagród, brak emocjonalnego zaangażowania) mogą nie przynieść ROI.",
+      "Tak, ale tylko gdy są dobrze zaprojektowane. Dobrze zaprojektowany program daje klientom konkretny powód, żeby wracać do marki zamiast szukać alternatywy. Jednak słabo zaprojektowane programy (zbyt trudne do zdobycia nagród, brak emocjonalnego zaangażowania) mogą nie przynieść ROI.",
   },
   {
     question: "Ile kosztuje wdrożenie programu lojalnościowego?",
     answer:
-      "Koszty są zróżnicowane: prosty program email-based może kosztować kilka tysięcy PLN miesięcznie za platformę. Zaawansowany program z dedykowaną aplikacją, gamifikacją i integracją z CRM to inwestycja rzędu setek tysięcy do milionów PLN. Kluczowy jest ROI — koszt nagród + technologii vs. wzrost LTV i retencji.",
+      "Koszty są zróżnicowane. Przykładowe, orientacyjne widełki rynkowe (nie cennik FOTZ Studio): prosty program email-based może kosztować kilka tysięcy PLN miesięcznie za platformę. Zaawansowany program z dedykowaną aplikacją, gamifikacją i integracją z CRM to inwestycja rzędu setek tysięcy do milionów PLN. Kluczowy jest ROI — koszt nagród + technologii vs. wzrost LTV i retencji.",
   },
   {
     question: "Jak zmierzyć skuteczność programu lojalnościowego?",
@@ -143,9 +143,9 @@ export default function BlogLoyaltyProgramCoTo() {
             </p>
             <div className="grid md:grid-cols-3 gap-4">
               {[
-                { stat: "79%", opis: "konsumentów chętniej kupuje od marek z programem lojalnościowym" },
-                { stat: "5×", opis: "tańsze utrzymanie klienta niż pozyskanie nowego" },
-                { stat: "2,5×", opis: "wyższy LTV członków programu vs. non-members" },
+                { stat: "Powroty", opis: "klienci chętniej wracają do marek, które nagradzają ich lojalność" },
+                { stat: "Retencja", opis: "utrzymanie obecnego klienta zwykle kosztuje mniej niż pozyskanie nowego" },
+                { stat: "LTV", opis: "aktywni członkowie programu często wydają więcej w dłuższym okresie" },
               ].map((s, i) => (
                 <div key={i} className="bg-orange-50 rounded-xl p-5 text-center">
                   <p className="text-3xl font-bold text-orange-600 mb-2">{s.stat}</p>

@@ -71,7 +71,7 @@ export default function BlogMarketResearchCoTo() {
     },
     {
       question: "Ile kosztuje badanie rynku?",
-      answer: "Koszty market research zależą od metody i skali: Desk research (wtórna) — od 0 PLN (publiczne dane GUS, Eurostat) do kilku tysięcy PLN za raporty branżowe (Euromonitor, Statista, IBISWorld). Ankiety online — narzędzia: Typeform (darmowe do 10 odpowiedzi, płatne od ~200 PLN/mies.), SurveyMonkey (~300 PLN/mies.). Rekrutacja respondentów przez panel: 20-100 PLN za respondenta. 200 odpowiedzi = 4-20k PLN. Wywiady IDI — agencja: 3-8k PLN za wywiad (z rekrutacją, transkrypcją, analizą). Samodzielnie: koszt czasu + 100-300 PLN incentive dla respondenta. Focus Groups — 8-20k PLN za grupę (rekrutacja, moderacja, wynajem sali, nagranie, raport). Pełne badanie rynku przez agencję — od 20k do 200k+ PLN zależnie od zakresu. Alternatywa dla startupów: 10-20 wywiadów IDI przeprowadzonych samodzielnie = bardzo cenna wiedza za koszt <5k PLN.",
+      answer: "Koszty market research zależą od metody i skali. Poniżej przykładowe, orientacyjne widełki rynkowe (to nie jest cennik FOTZ Studio; aktualne ceny narzędzi i agencji badawczych sprawdź u dostawców): Desk research (wtórna) — od 0 PLN (publiczne dane GUS, Eurostat) do kilku tysięcy PLN za raporty branżowe (Euromonitor, Statista, IBISWorld). Ankiety online — narzędzia takie jak Typeform czy SurveyMonkey mają darmowe plany z limitami i płatne abonamenty miesięczne. Rekrutacja respondentów przez panel: 20-100 PLN za respondenta. 200 odpowiedzi = 4-20k PLN. Wywiady IDI — agencja: 3-8k PLN za wywiad (z rekrutacją, transkrypcją, analizą). Samodzielnie: koszt czasu + 100-300 PLN incentive dla respondenta. Focus Groups — 8-20k PLN za grupę (rekrutacja, moderacja, wynajem sali, nagranie, raport). Pełne badanie rynku przez agencję — od 20k do 200k+ PLN zależnie od zakresu. Alternatywa dla startupów: 10-20 wywiadów IDI przeprowadzonych samodzielnie daje bardzo cenną wiedzę przy niewielkim budżecie.",
     },
     {
       question: "Jaka jest różnica między badaniami jakościowymi a ilościowymi?",
@@ -83,7 +83,7 @@ export default function BlogMarketResearchCoTo() {
     },
     {
       question: "Jak market research pomaga w strategii marketingowej?",
-      answer: "Zastosowania market research w marketingu: Segmentacja i targeting: dane badań pozwalają zidentyfikować i opisać segmenty klientów, co poprawia efektywność targetowania kampanii. Messaging i pozycjonowanie: wywiady z klientami ujawniają 'language they use' — jak opisują problem i rozwiązanie. Ten język trafia bezpośrednio do kopii reklam i stron. Keyword research SEO: Google Trends i analiza wyszukiwań to forma market research — co i jak szukają Twoi klienci? Content strategy: tematy, formaty i pytania wynikające z badań informują plan contentowy. Competitive positioning: analiza konkurencji wskazuje białe plamy na rynku — czego nie robią inni, gdzie możesz się wyróżnić. Cennik i oferta: price sensitivity badania (Van Westendorp model) wskazują optymalny poziom cen. Efekt: firmy inwestujące w market research mają 2x wyższy success rate nowych produktów vs firmy działające 'na intuicji'.",
+      answer: "Zastosowania market research w marketingu: Segmentacja i targeting: dane badań pozwalają zidentyfikować i opisać segmenty klientów, co poprawia efektywność targetowania kampanii. Messaging i pozycjonowanie: wywiady z klientami ujawniają 'language they use' — jak opisują problem i rozwiązanie. Ten język trafia bezpośrednio do kopii reklam i stron. Keyword research SEO: Google Trends i analiza wyszukiwań to forma market research — co i jak szukają Twoi klienci? Content strategy: tematy, formaty i pytania wynikające z badań informują plan contentowy. Competitive positioning: analiza konkurencji wskazuje białe plamy na rynku — czego nie robią inni, gdzie możesz się wyróżnić. Cennik i oferta: price sensitivity badania (Van Westendorp model) wskazują optymalny poziom cen. Efekt: decyzje o nowych produktach i kampaniach opierają się na danych, a nie tylko na intuicji, co zmniejsza ryzyko kosztownych pomyłek.",
     },
   ];
 
@@ -121,7 +121,7 @@ export default function BlogMarketResearchCoTo() {
               </h1>
               <p className="text-xl text-slate-300 leading-relaxed">
                 Market research to systematyczne zbieranie wiedzy o rynku, klientach i konkurencji.
-                Firmy które badają rynek mają 2x wyższy success rate nowych produktów.
+                Dzięki niemu decyzje o produkcie i marketingu opierasz na danych, a nie tylko na intuicji.
               </p>
             </motion.div>
           </div>

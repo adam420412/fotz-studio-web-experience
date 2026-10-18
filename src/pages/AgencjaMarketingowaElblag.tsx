@@ -8,7 +8,7 @@ import { CheckCircle2, ArrowRight } from "lucide-react";
 
 export const AgencjaMarketingowaElblag = () => {
   const seoTitle = "Agencja marketingowa Elbląg - fotz studio | Marketing dla firm";
-  const seoDescription = "Profesjonalna agencja marketingowa w Elblągu. Oferujemy kompleksowe usługi marketingowe dla firm. Zwiększ widoczność swojej marki z fotz studio.";
+  const seoDescription = "Agencja marketingowa dla firm z Elbląga. Pracujemy z Poznania, firmy z Elbląga obsługujemy zdalnie — SEO, Google Ads, social media, strony WWW.";
 
   const breadcrumbItems = [
     { name: "Home", url: "/" },
@@ -23,19 +23,19 @@ export const AgencjaMarketingowaElblag = () => {
     },
     {
       question: "Ile czasu zajmuje widoczność wyników w pozycjonowaniu?",
-      answer: "Pierwsze rezultaty są widoczne po 3-4 miesiącach intensywnych prac SEO. Pełne efekty widać zwykle po 6-12 miesiącach, w zależności od konkurencji na rynku i zakresu optymalizacji. Prowadzimy regularne raporty postępów.",
+      answer: "SEO to proces rozłożony na miesiące. Tempo zależy od konkurencji na wybrane frazy, stanu strony i zakresu prac — nie gwarantujemy konkretnej pozycji ani terminu. Prowadzimy regularne raporty postępów.",
     },
     {
       question: "Czy pracujecie z małymi i średnimi firmami?",
-      answer: "Tak, pracujemy głównie z małymi i średnimi firmami. Posiadamy specjalistyczne pakiety dla każdej wielkości biznesu - START dla początkujących, ROZWÓJ dla rozwijających się firm i PREMIUM dla dużych przedsiębiorstw.",
+      answer: "Tak, pracujemy głównie z małymi i średnimi firmami. Zakres współpracy dopasowujemy do wielkości firmy i budżetu — od obsługi jednego kanału po kompleksowy marketing.",
     },
     {
       question: "Jak ustalana jest cena usług marketingowych?",
-      answer: "Ceny zależą od zakresu usług, konkurencji branżowej i celów biznesowych. Oferujemy pakiety od 1500 zł (START), przez 3500 zł (ROZWÓJ), do 7000+ zł (PREMIUM) miesięcznie. Każdy pakiet można dostosować do indywidualnych potrzeb.",
+      answer: "Ceny zależą od zakresu usług, liczby kanałów, konkurencji branżowej i celów biznesowych. Wycenę przygotowujemy po rozmowie o zakresie. Budżet reklamowy płacony platformom (Google, Meta) jest zawsze osobno.",
     },
     {
       question: "Czy macie portfolio realizacji w Elblągu?",
-      answer: "Tak, posiadamy bogatą bazę realizacji dla firm z Elbląga i regionu. Zapraszamy do zapoznania się z case studies na naszej stronie. Chętnie pokażemy konkretne rezultaty dla firm podobnych do Waszej.",
+      answer: "Pracujemy z Poznania, a firmy z Elbląga obsługujemy zdalnie. Nasze realizacje — m.in. dla Enea Stadionu, FPS Cegielski, WSB Merito czy AutoSpa — znajdziesz w zakładce z portfolio. Chętnie pokażemy projekty podobne do Waszego.",
     },
     {
       question: "Jak wygląda proces współpracy z agencją?",
@@ -69,7 +69,7 @@ export const AgencjaMarketingowaElblag = () => {
               Agencja marketingowa Elbląg
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
-              Profesjonalne strategie marketingowe dla firm z Elbląga. Zwiększamy widoczność, budujemy marki i generujemy sprzedaż.
+              Profesjonalne strategie marketingowe dla firm z Elbląga. Pomagamy zwiększać widoczność, budować markę i pozyskiwać klientów.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
               <Button asChild size="lg" className="bg-yellow-400 text-gray-900 hover:bg-yellow-500">
@@ -95,9 +95,9 @@ export const AgencjaMarketingowaElblag = () => {
             <div className="flex gap-4">
               <CheckCircle2 className="text-yellow-400 flex-shrink-0 w-6 h-6 mt-1" />
               <div>
-                <h3 className="text-xl font-bold mb-2">Doświadczenie i specjalistyka</h3>
+                <h3 className="text-xl font-bold mb-2">Współpraca zdalna</h3>
                 <p className="text-gray-300">
-                  Ponad 10 lat doświadczenia w obsłudze firm z regionu Elbląga. Znamy lokalny rynek i specyficzne potrzeby firm.
+                  Pracujemy z Poznania, a firmy z Elbląga obsługujemy zdalnie. Lokalną specyfikę poznajemy na starcie współpracy.
                 </p>
               </div>
             </div>
@@ -122,9 +122,9 @@ export const AgencjaMarketingowaElblag = () => {
             <div className="flex gap-4">
               <CheckCircle2 className="text-yellow-400 flex-shrink-0 w-6 h-6 mt-1" />
               <div>
-                <h3 className="text-xl font-bold mb-2">Wsparcie 24/7</h3>
+                <h3 className="text-xl font-bold mb-2">Stały kontakt</h3>
                 <p className="text-gray-300">
-                  Nasz zespół jest zawsze dostępny dla Waszych pytań i pilnych spraw. Szybka komunikacja gwarantowana.
+                  Masz stałą osobę kontaktową. Sposób i częstotliwość komunikacji ustalamy na starcie współpracy.
                 </p>
               </div>
             </div>
@@ -223,7 +223,7 @@ export const AgencjaMarketingowaElblag = () => {
       {/* Elbląg Local Context Section */}
       <section className="bg-gray-800 text-white py-16 md:py-24">
         <div className="container mx-auto px-4 md:px-6 max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">Marketing w Elblągu - znamy Wasz rynek</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-8">Marketing dla firm z Elbląga</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <h3 className="text-2xl font-bold text-yellow-400 mb-4">Elbląg jako hub biznesowy</h3>
@@ -240,13 +240,13 @@ export const AgencjaMarketingowaElblag = () => {
                 Elbląg przyciąga turystów starą architekturą i malowniczym Kanalem Elbląskim. Sektor turystyczny rozwija się dynamicznie, tworząc szanse dla branży hotelarskiej, gastronomii i usług.
               </p>
               <p className="text-gray-300">
-                Marketing lokalny w Elblągu wymaga zrozumienia tak ruchu turystycznego, jak i potrzeb stałych mieszkańców. My to znamy.
+                Marketing lokalny w Elblągu wymaga uwzględnienia zarówno ruchu turystycznego, jak i potrzeb stałych mieszkańców — od tego zaczynamy planowanie.
               </p>
             </div>
           </div>
           <div className="mt-8 p-8 bg-gray-900 rounded-lg border border-gray-700">
             <p className="text-gray-300 mb-3">
-              Nasz zespół pracuje z firmami z sektora logistyki, turystyki, produkcji i handlu. Wiemy, jakie strategie marketingowe działają najlepiej w Elblągu i dla jakich grup docelowych.
+              Pracujemy z Poznania, a firmy z Elbląga obsługujemy zdalnie. Strategię dobieramy do branży i grup docelowych, a skuteczność działań sprawdzamy na danych.
             </p>
             <p className="text-yellow-400 font-semibold">
               Chcesz zapoznać się, jak możemy wspomóc Twoją firmę w Elblągu? Zaproś nas na rozmowę.
@@ -259,102 +259,36 @@ export const AgencjaMarketingowaElblag = () => {
       <section className="bg-gray-900 text-white py-16 md:py-24">
         <div className="container mx-auto px-4 md:px-6 max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            Pakiety cenowe
+            Od czego zależy wycena
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-gray-800 p-8 rounded-lg border border-gray-700 flex flex-col">
-              <h3 className="text-2xl font-bold text-yellow-400 mb-2">START</h3>
-              <p className="text-gray-400 mb-6">Dla małych firm i startupów</p>
-              <div className="mb-6">
-                <span className="text-4xl font-bold">1500</span>
-                <span className="text-gray-400 ml-2">zł/miesiąc</span>
-              </div>
-              <ul className="space-y-3 mb-8 flex-grow text-gray-300">
-                <li className="flex gap-2">
-                  <span className="text-yellow-400">+</span> Zarządzanie jednym kanałem social media
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-yellow-400">+</span> 4 posty miesięcznie
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-yellow-400">+</span> Podstawowy raport wyników
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-yellow-400">+</span> Email support
-                </li>
-              </ul>
-              <Button asChild className="bg-yellow-400 text-gray-900 hover:bg-yellow-500 w-full"><a href="/kontakt">
-                Wybierz pakiet
-              </a></Button>
+              <h3 className="text-2xl font-bold text-yellow-400 mb-4">Zakres działań</h3>
+              <p className="text-gray-300">
+                Liczba kanałów (social media, Google Ads, SEO, content), częstotliwość publikacji i to, czy potrzebna jest produkcja zdjęć lub video.
+              </p>
             </div>
-
-            <div className="bg-gray-800 p-8 rounded-lg border-2 border-yellow-400 flex flex-col transform md:scale-105">
-              <div className="bg-yellow-400 text-gray-900 px-4 py-2 rounded-full inline-block mb-4 w-fit font-bold">
-                Najpopularniejszy
-              </div>
-              <h3 className="text-2xl font-bold text-yellow-400 mb-2">ROZWÓJ</h3>
-              <p className="text-gray-400 mb-6">Dla średnich firm</p>
-              <div className="mb-6">
-                <span className="text-4xl font-bold">3500</span>
-                <span className="text-gray-400 ml-2">zł/miesiąc</span>
-              </div>
-              <ul className="space-y-3 mb-8 flex-grow text-gray-300">
-                <li className="flex gap-2">
-                  <span className="text-yellow-400">+</span> Zarządzanie 2-3 kanałami social media
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-yellow-400">+</span> 12 postów miesięcznie
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-yellow-400">+</span> Kampania Google Ads (200 zł budżetu)
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-yellow-400">+</span> Raport szczegółowy
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-yellow-400">+</span> Wsparcie priorytetowe
-                </li>
-              </ul>
-              <Button asChild className="bg-yellow-400 text-gray-900 hover:bg-yellow-500 w-full"><a href="/kontakt">
-                Wybierz pakiet
-              </a></Button>
-            </div>
-
             <div className="bg-gray-800 p-8 rounded-lg border border-gray-700 flex flex-col">
-              <h3 className="text-2xl font-bold text-yellow-400 mb-2">PREMIUM</h3>
-              <p className="text-gray-400 mb-6">Dla dużych firm i e-commerce</p>
-              <div className="mb-6">
-                <span className="text-4xl font-bold">7000</span>
-                <span className="text-gray-400 ml-2">zł+/miesiąc</span>
-              </div>
-              <ul className="space-y-3 mb-8 flex-grow text-gray-300">
-                <li className="flex gap-2">
-                  <span className="text-yellow-400">+</span> Pełna strategia marketingowa
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-yellow-400">+</span> Zarządzanie wszystkimi kanałami
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-yellow-400">+</span> Kampanie Google Ads (1000 zł budżetu)
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-yellow-400">+</span> SEO i content marketing
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-yellow-400">+</span> Raport zaawansowany z analizą
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-yellow-400">+</span> Wsparcie VIP 24/7
-                </li>
-              </ul>
-              <Button asChild className="bg-yellow-400 text-gray-900 hover:bg-yellow-500 w-full"><a href="/kontakt">
-                Wybierz pakiet
-              </a></Button>
+              <h3 className="text-2xl font-bold text-yellow-400 mb-4">Punkt startowy</h3>
+              <p className="text-gray-300">
+                Stan obecnej strony, profili i kampanii, gotowe materiały marki oraz to, ile trzeba zbudować od zera.
+              </p>
+            </div>
+            <div className="bg-gray-800 p-8 rounded-lg border border-gray-700 flex flex-col">
+              <h3 className="text-2xl font-bold text-yellow-400 mb-4">Budżet reklamowy</h3>
+              <p className="text-gray-300">
+                Budżet na reklamy płacisz bezpośrednio platformie (Google, Meta) — zawsze osobno od naszego wynagrodzenia za obsługę.
+              </p>
             </div>
           </div>
           <p className="text-center text-gray-400 mt-12">
-            Wszystkie pakiety możemy dostosować do Waszych specyficznych potrzeb. Chcesz coś innego? Skontaktuj się z nami.
+            Wycenę przygotowujemy po rozmowie o zakresie i celach. Dostajesz ofertę z rozpisanymi kosztami.
           </p>
+          <div className="text-center mt-8">
+            <Button asChild className="bg-yellow-400 text-gray-900 hover:bg-yellow-500"><a href="/kontakt">
+              Zapytaj o wycenę
+            </a></Button>
+          </div>
         </div>
       </section>
 
@@ -417,7 +351,7 @@ export const AgencjaMarketingowaElblag = () => {
               fotz studio - agencja marketingowa
             </p>
             <p className="text-gray-800">
-              Elbląg, Polska | phone: +48 790 814 814 | email: hello@fotz.pl
+              Poznań — firmy z Elbląga obsługujemy zdalnie | phone: +48 790 814 814 | email: hello@fotz.pl
             </p>
           </div>
         </div>

@@ -25,7 +25,7 @@ const faqItems = [
   {
     question: "Jak MEDDIC pomaga w prognozowaniu sprzedaży?",
     answer:
-      "MEDDIC poprawia jakość prognoz bo wymagana kompletność kryteriów per deal. Deal który przeszedł do kolejnego etapu bez zidentyfikowanego Economic Buyer lub bez jasnych Decision Criteria — jest wyjęty z Commit i trafia do Pipeline/Best Case. Handlowcy oceniają każdy deal wg checklisty MEDDIC (0-6 punktów) — wyższy score = wyższe prawdopodobieństwo. Firmy używające MEDDIC raportują o 20-30% wyższy Win Rate i 15-25% krótszy Sales Cycle przez szybszą eliminację długich, nierealistycznych dealów.",
+      "MEDDIC poprawia jakość prognoz bo wymagana kompletność kryteriów per deal. Deal który przeszedł do kolejnego etapu bez zidentyfikowanego Economic Buyer lub bez jasnych Decision Criteria — jest wyjęty z Commit i trafia do Pipeline/Best Case. Handlowcy oceniają każdy deal wg checklisty MEDDIC (0-6 punktów) — wyższy score = wyższe prawdopodobieństwo. Zespoły stosujące MEDDIC często wskazują na lepszy Win Rate i krótszy Sales Cycle, bo szybciej eliminują długie, nierealistyczne deale.",
   },
   {
     question: "Co to jest MEDDICC i MEDDPICC?",
@@ -141,7 +141,7 @@ export default function BlogMeddicCoTo() {
             MEDDIC — co to jest i jak kwalifikować deale B2B?
           </h1>
           <p className="text-xl text-slate-300 max-w-2xl mx-auto">
-            MEDDIC to najskuteczniejszy framework kwalifikacji w enterprise sales.
+            MEDDIC to jeden z najpopularniejszych frameworków kwalifikacji w enterprise sales.
             Poznaj 6 elementów, pytania kwalifikacyjne i jak scoring poprawia Win Rate.
           </p>
         </div>
@@ -167,9 +167,9 @@ export default function BlogMeddicCoTo() {
             </div>
             <div className="grid md:grid-cols-3 gap-4">
               {[
-                { stat: "+25%", opis: "Wyższy Win Rate u firm stosujących MEDDIC vs tradycyjne metody kwalifikacji" },
-                { stat: "20%", opis: "Krótszy Sales Cycle przez szybkie eliminowanie nierealistycznych szans sprzedażowych" },
-                { stat: "PTC", opis: "Firma gdzie powstało MEDDIC — PTC Corporation. Metodologia skalowała ich przychody do 1B USD" },
+                { stat: "Win Rate", opis: "Lepsza kwalifikacja pozwala skupić czas handlowców na dealach, które realnie da się wygrać" },
+                { stat: "Sales Cycle", opis: "Szybsze eliminowanie nierealistycznych szans skraca czas poświęcany na martwe deale" },
+                { stat: "PTC", opis: "Firma, w której powstało MEDDIC — PTC Corporation, w okresie swojego dynamicznego wzrostu" },
               ].map((s, i) => (
                 <div key={i} className="bg-slate-50 rounded-xl p-5 text-center">
                   <p className="text-2xl font-bold text-slate-700 mb-2">{s.stat}</p>

@@ -42,34 +42,34 @@ const StronyInternetoweWalbrzych = () => {
   ];
 
   const caseStudies = [
-    { title: "Apartamenty Chorwacja", category: "Strona rezerwacyjna", result: "+180% rezerwacji online", link: "/realizacje/apartamenty-chorwacja", image: apartamentyImg },
+    { title: "Apartamenty Chorwacja", category: "Strona rezerwacyjna", result: "Strona z rezerwacjami online", link: "/realizacje/apartamenty-chorwacja", image: apartamentyImg },
     { title: "Victory Cars", category: "Strona motoryzacyjna", result: "Nowoczesny design premium", link: "/realizacje/victory-cars", image: victoryCarsImg },
-    { title: "Cute Dumpling", category: "Strona gastronomiczna", result: "+250% ruchu organicznego", link: "/realizacje/cute-dumpling", image: cuteDumplingImg },
+    { title: "Cute Dumpling", category: "Strona gastronomiczna", result: "Strona gastronomiczna z naciskiem na SEO", link: "/realizacje/cute-dumpling", image: cuteDumplingImg },
   ];
 
   const faqItems = [
     { question: "Ile kosztuje strona internetowa w Wałbrzychu?", answer: "Koszt zależy od zakresu, treści i integracji. Prześlij brief, aby otrzymać indywidualną ofertę z harmonogramem i rozpisanymi kosztami." },
-    { question: "Jak długo trwa realizacja strony?", answer: "Prosta strona wizytówka to 1-2 tygodnie. Strona firmowa wymaga 3-4 tygodni, a sklep 4-8 tygodni w zależności od złożoności." },
+    { question: "Jak długo trwa realizacja strony?", answer: "Czas realizacji zależy od złożoności projektu, liczby podstron, treści i integracji. Termin ustalamy w harmonogramie po rozmowie o zakresie." },
     { question: "Czy oferujecie hosting i domenę?", answer: "Tak, pomagamy w wyborze i konfiguracji hostingu oraz domeny. Możemy przejąć pełną obsługę techniczną." },
     { question: "Czy strona będzie zoptymalizowana pod SEO?", answer: "Każda strona tworzona jest z myślą o pozycjonowaniu. Stosujemy najlepsze praktyki SEO dla widoczności w Google." },
     { question: "Czy mogę samodzielnie edytować treści?", answer: "Tak, wszystkie strony wyposażone są w intuicyjny panel CMS do łatwej edycji treści." },
-    { question: "Jakie miasta z Dolnego Śląska obsługujecie?", answer: "Tworzymy strony dla firm z całego Dolnego Śląska — Wałbrzych, Wrocław, Jelenia Góra, Legnica, Bolesławiec i okolic." },
+    { question: "Jakie miasta z Dolnego Śląska obsługujecie?", answer: "Pracujemy z Poznania i zdalnie obsługujemy firmy z całego Dolnego Śląska — Wałbrzycha, Wrocławia, Jeleniej Góry, Legnicy, Bolesławca i okolic." },
   ];
 
   const stats = [
     { value: "WWW", label: "Strony i sklepy", icon: Layers },
     { value: "UX", label: "Projekt dla odbiorcy", icon: Star },
-    { value: "5 lat", label: "Doświadczenia", icon: Clock },
+    { value: "Zdalnie", label: "Współpraca z Poznania", icon: Clock },
     { value: "Kontakt", label: "Uzgodniona opieka", icon: Headphones },
   ];
 
   const benefits = [
-    "Znajomość rynku dolnośląskiego",
+    "Pracujemy z Poznania, firmy z Wałbrzycha obsługujemy zdalnie",
     "Kompleksowa obsługa od projektu po wdrożenie",
     "SEO w standardzie każdej strony",
     "Responsywny design mobile-first",
     "Wsparcie techniczne po uruchomieniu",
-    "Konkurencyjne ceny bez ukrytych kosztów"
+    "Wycena po rozmowie o zakresie, bez ukrytych kosztów"
   ];
 
   const introContent = {
@@ -190,7 +190,7 @@ const StronyInternetoweWalbrzych = () => {
           </div>
         </section>
 
-        <CityPricingCards pricing={pricing} title="Cennik stron internetowych" subtitle="Transparentne ceny bez ukrytych kosztów" cityName="Walbrzych" />
+        <CityPricingCards pricing={pricing} title="Cennik stron internetowych" subtitle="Wycenę przygotowujemy po rozmowie o zakresie" cityName="Walbrzych" />
         <CityLinksSection currentCity="Walbrzych" />
 
         {/* FAQ */}
@@ -226,7 +226,7 @@ const StronyInternetoweWalbrzych = () => {
                 Wałbrzych przechodzi dynamiczną transformację. Miasto znane z bogatej historii przemysłowej i górnictwa teraz rozwija się w kierunku turystyki, małych przedsiębiorstw i usług. Hotele, restauracje, firmy edukacyjne, agencje — każda z nich potrzebuje nowoczesnej strony internetowej, aby dotrzeć do klientów online.
               </p>
               <p className="text-muted-foreground mb-6">
-                Wałbrzych leży w Dolnym Śląsku, jednym z najszybciej rozwijających się regionów Polski. Nasza agencja ma doświadczenie w tworzeniu stron dla całego regionu — Wrocławia, Jeleniej Góry, Legnicy, Bolesławca. Znamy lokalny rynek i wiemy, jak pozycjonować firmy z Wałbrzycha.
+                Wałbrzych leży na Dolnym Śląsku. Pracujemy z Poznania, a firmy z Wałbrzycha i regionu — Wrocławia, Jeleniej Góry, Legnicy, Bolesławca — obsługujemy zdalnie: brief, projekt i odbiory odbywają się online.
               </p>
 
               <h2 className="text-3xl font-heading font-bold mb-6">
@@ -246,7 +246,7 @@ const StronyInternetoweWalbrzych = () => {
                 Optymalizujemy strony pod słowa kluczowe z Wałbrzycha, ale też pod szerszy rynek Dolnego Śląska. Dla firm o zasięgu ogólnopolskim budujemy strukturę treści rankujące zarówno lokalnie jak i globalnie.
               </p>
               <p className="text-muted-foreground">
-                Skontaktuj się z nami — bezpłatna wycena w 24 godziny, projekt w 3–5 tygodni. Tworzymy strony dla firm z Wałbrzycha, które wyróżniają się na tle dolnośląskiej konkurencji.
+                Skontaktuj się z nami — wycenę przygotujemy po rozmowie o zakresie, a termin projektu ustalimy w harmonogramie. Tworzymy strony dla firm z Wałbrzycha, które wyróżniają się na tle dolnośląskiej konkurencji.
               </p>
 
               <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">

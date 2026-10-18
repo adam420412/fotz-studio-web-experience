@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 const faqItems = [
   {
     question: "Jakie jest minimum budżetu na marketing lokalny dla małej firmy?",
-    answer: "Minimum to 500-800 zł/mies. Można zacząć od: Google Business Profile (bezpłatne), Google Local Ads (300-500 zł/mies) i własne social media (0 zł). Efekty będą mniejsze, ale będą. Rekomendacja: 1500-3000 zł/mies dla solidnych rezultatów."
+    answer: "Przykładowe widełki rynkowe zaczynają się od ok. 500-800 zł/mies. Można zacząć od: Google Business Profile (bezpłatne), lokalnych kampanii Google Ads (przykładowo 300-500 zł/mies budżetu reklamowego) i własnych social mediów (0 zł). Efekty będą mniejsze, ale będą. Przy kilku kanałach naraz wiele małych firm przeznacza przykładowo 1500-3000 zł/mies - konkretna kwota zależy od branży, konkurencji i celów."
   },
   {
     question: "Ile czasu zajmuje zobaczenie efektów marketingu lokalnego?",
@@ -23,7 +23,7 @@ const faqItems = [
   },
   {
     question: "Jaka jest konwersja dla eventów i partnerskich akcji lokalnych?",
-    answer: "Eventy lokalne oraz partnerstwa mogą generować 10-50 leadów na event w zależności od branży. ROI jest trudny do zmierzenia ale zwykle jest wysokie - lepiej mierzyć w udziałach, wzmocnieniu brand awareness i bezpośrednich sprzedażach."
+    answer: "Eventy lokalne oraz partnerstwa mogą przynieść od kilku do kilkudziesięciu leadów na event - mocno zależy to od branży i skali wydarzenia. ROI jest trudny do zmierzenia ale zwykle jest wysokie - lepiej mierzyć w udziałach, wzmocnieniu brand awareness i bezpośrednich sprzedażach."
   },
   {
     question: "Czy mogę robić marketing lokalny sam bez agencji?",
@@ -39,7 +39,7 @@ const faqItems = [
   },
   {
     question: "Czy ulotki i print nadal działają w 2025 roku?",
-    answer: "Tak, ulotki mają niższą konwersję online ale funkcjonują w połączeniu z QR kodem linkujących na stronę lub Google Business Profile. Najlepsze: hybrid - ulotka z QR kodem + Google Ads + Facebook. Budżet: 500-1500 zł na kampanię ulotek."
+    answer: "Tak, ulotki mają niższą konwersję online ale funkcjonują w połączeniu z QR kodem linkujących na stronę lub Google Business Profile. Najlepsze: hybrid - ulotka z QR kodem + Google Ads + Facebook. Przykładowe widełki rynkowe: 500-1500 zł na kampanię ulotek (zależnie od nakładu i dystrybucji)."
   }
 ];
 
@@ -284,7 +284,7 @@ const BlogMarketingLokalny = () => {
                       <thead className="bg-gray-800/50">
                         <tr className="border-b border-gray-700">
                           <th className="px-6 py-4 text-left text-yellow-400 font-semibold">Kanał</th>
-                          <th className="px-6 py-4 text-left text-yellow-400 font-semibold">Koszt startu</th>
+                          <th className="px-6 py-4 text-left text-yellow-400 font-semibold">Koszt startu (przykładowe widełki rynkowe)</th>
                           <th className="px-6 py-4 text-left text-yellow-400 font-semibold">Zasięg lokalny</th>
                           <th className="px-6 py-4 text-left text-yellow-400 font-semibold">Czas do efektów</th>
                         </tr>
@@ -363,14 +363,14 @@ const BlogMarketingLokalny = () => {
                   </h2>
 
                   <p className="text-gray-300 leading-relaxed mb-6">
-                    Opinie to jeden z największych czynników rankingowych dla lokalnego SEO. Firmy z 4.5+ gwiazdkami pozycjonują się znacznie wyżej. Poza tym, 92% konsumentów ufa opiniom online bardziej niż reklamie.
+                    Opinie to jeden z największych czynników rankingowych dla lokalnego SEO. Firmy z wysoką oceną i dużą liczbą świeżych opinii zwykle są lepiej widoczne. Poza tym wiele osób przed wyborem lokalnej firmy czyta opinie i ufa im bardziej niż reklamie.
                   </p>
 
                   <h3 className="text-2xl font-bold text-white mb-4">Strategie zbierania opinii:</h3>
                   <ul className="space-y-4 text-gray-300">
                     <li className="flex gap-3">
                       <span className="text-yellow-400 font-bold">1.</span>
-                      <span><strong>SMS zaraz po usłudze</strong> - najwyższa konwersja (10-20%). Link w SMS do strony recenzji.</span>
+                      <span><strong>SMS zaraz po usłudze</strong> - zwykle najlepiej działa, bo klient ma usługę świeżo w pamięci. Link w SMS do strony recenzji.</span>
                     </li>
                     <li className="flex gap-3">
                       <span className="text-yellow-400 font-bold">2.</span>
@@ -413,7 +413,7 @@ const BlogMarketingLokalny = () => {
                   </h2>
 
                   <p className="text-gray-300 leading-relaxed mb-6">
-                    Ile powinna kosztować strategia marketingu lokalnego? Zależy od wielkości firmy i ambicji. Oto rekomendacje:
+                    Ile powinna kosztować strategia marketingu lokalnego? Zależy od wielkości firmy i ambicji. Poniżej przykładowe widełki rynkowe (budżet reklamowy i praca łącznie) - to orientacyjne kwoty, nie cennik; konkretną wycenę ustala się po rozmowie i analizie konkurencji:
                   </p>
 
                   <div className="space-y-4">
@@ -469,7 +469,7 @@ const BlogMarketingLokalny = () => {
                     Chcesz dominować w swoim mieście?
                   </h2>
                   <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-                    Marketing lokalny to najtańszy i najszybszy sposób na pozyskanie nowych klientów. Pozwól nam zbudować strategię, która będzie działać dla Twojej firmy.
+                    Marketing lokalny to jeden z tańszych i szybszych sposobów na pozyskanie nowych klientów. Pozwól nam zbudować strategię, która będzie działać dla Twojej firmy.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <Button asChild size="lg" className="bg-yellow-400 text-gray-900 hover:bg-yellow-300">

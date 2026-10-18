@@ -46,12 +46,12 @@ export default function BlogCoToJestHosting() {
     {
       question: "Jaka jest różnica między hostingiem a domeną?",
       answer:
-        "Domena (np. mojafirma.pl) to adres, pod którym Twoja strona jest dostępna — jak adres ulicy. Hosting to przestrzeń na serwerze gdzie przechowywane są pliki strony — jak sam budynek. Potrzebujesz obu: domenę (ok. 80-150 zł/rok) i hosting (ok. 20-300 zł/mies.). Domenę można kupić u rejestratora, a hosting u firmy hostingowej — lub oba w jednym miejscu.",
+        "Domena (np. mojafirma.pl) to adres, pod którym Twoja strona jest dostępna — jak adres ulicy. Hosting to przestrzeń na serwerze gdzie przechowywane są pliki strony — jak sam budynek. Potrzebujesz obu: domenę i hosting (przykładowe widełki rynkowe: domena ok. 80-150 zł/rok, hosting ok. 20-300 zł/mies. — zależnie od dostawcy i pakietu). Domenę można kupić u rejestratora, a hosting u firmy hostingowej — lub oba w jednym miejscu.",
     },
     {
       question: "Ile kosztuje hosting w Polsce?",
       answer:
-        "Ceny hostingu w Polsce: hosting współdzielony (shared) 20-100 zł/mies., hosting WordPress (zarządzany) 30-200 zł/mies., VPS 50-500 zł/mies., serwer dedykowany 500-5000+ zł/mies. Dla małej firmy lub bloga wystarczy hosting współdzielony za 30-60 zł/mies. od firm takich jak LH.pl, Cyber_Folks, home.pl, H88.",
+        "Przykładowe widełki rynkowe cen hostingu w Polsce (aktualne ceny zależą od dostawcy, pakietu i promocji): hosting współdzielony (shared) 20-100 zł/mies., hosting WordPress (zarządzany) 30-200 zł/mies., VPS 50-500 zł/mies., serwer dedykowany 500-5000+ zł/mies. Dla małej firmy lub bloga wystarczy hosting współdzielony za 30-60 zł/mies. od firm takich jak LH.pl, Cyber_Folks, home.pl, H88.",
     },
     {
       question: "Jaki hosting wybrać dla WordPress?",
@@ -129,6 +129,9 @@ export default function BlogCoToJestHosting() {
 
             <FadeInView>
               <h2 className="text-2xl font-bold text-slate-900 mt-8 mb-4">Rodzaje hostingu</h2>
+              <p className="text-slate-700 mb-4">
+                Kwoty podane przy rodzajach hostingu to przykładowe widełki rynkowe — aktualne ceny sprawdź u wybranego dostawcy.
+              </p>
               <div className="grid md:grid-cols-2 gap-4 mb-6">
                 {hostingTypes.map((item, idx) => {
                   const Icon = item.icon;
@@ -160,6 +163,9 @@ export default function BlogCoToJestHosting() {
 
             <FadeInView>
               <h2 className="text-2xl font-bold text-slate-900 mt-8 mb-4">Polecani dostawcy hostingu w Polsce</h2>
+              <p className="text-slate-700 mb-4">
+                Ceny w tabeli są orientacyjne (ceny startowe pakietów w momencie pisania artykułu) — dostawcy często je zmieniają, więc przed zakupem sprawdź aktualny cennik.
+              </p>
               <div className="overflow-x-auto mb-6">
                 <table className="w-full text-sm border-collapse">
                   <thead>
@@ -198,7 +204,7 @@ export default function BlogCoToJestHosting() {
               <div className="bg-blue-50 border border-blue-200 rounded-lg p-5 mb-6">
                 <p className="text-blue-800 font-semibold mb-2">Potrzebujesz pomocy z hostingiem i stroną?</p>
                 <p className="text-blue-700 text-sm mb-3">
-                  Tworzymy strony i doradzamy w wyborze hostingu — zapewniamy szybką, bezpieczną infrastrukturę.
+                  Tworzymy strony i doradzamy w wyborze hostingu — pomagamy dobrać szybką i bezpieczną infrastrukturę do potrzeb projektu.
                 </p>
                 <Link to="/uslugi/tworzenie-stron-internetowych" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
                   Tworzenie stron internetowych <ArrowRight className="w-4 h-4" />

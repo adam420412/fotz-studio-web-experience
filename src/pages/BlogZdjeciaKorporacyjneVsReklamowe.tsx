@@ -180,18 +180,18 @@ export default function BlogZdjeciaKorporacyjneVsReklamowe() {
             Zamiast rozbijać to na kilka osobnych zleceń w różnych miesiącach, wszystko dzieje się jednego dnia.
           </p>
           <p>
-            Dla klientów, którzy chcą połączyć sesję foto z produkcją wideo: <strong>pojedyncza rolka od 1 900 zł netto</strong> w ramach takiej wspólnej produkcji. Zakres zdjęć, liczbę ujęć i dodatkową scenografię wyceniamy indywidualnie pod projekt, bo każda firma ma inne potrzeby.
+            Jeśli chcesz połączyć sesję foto z produkcją wideo, zakres zdjęć, liczbę rolek, ujęć i dodatkową scenografię wyceniamy indywidualnie po krótkiej rozmowie, bo każda firma ma inne potrzeby.
           </p>
 
           <h2>Jak to wygląda w praktyce u nas</h2>
           <p>
-            Sami prowadzimy w całości Instagram Enea Stadionu, gdzie nasze materiały mają <strong>ponad 3 miliony wyświetleń miesięcznie</strong>, więc wiemy, jak duże znaczenie ma dopasowanie materiału do kanału, na którym ląduje. Zdjęcie korporacyjne, które świetnie sprawdza się na LinkedIn, nie zadziała tak samo w reklamie na Meta, i odwrotnie.
+            Przy pracy z treściami dla Enea Stadionu dobrze widać, jak duże znaczenie ma dopasowanie materiału do kanału, na którym ląduje. Zdjęcie korporacyjne, które świetnie sprawdza się na LinkedIn, nie zadziała tak samo w reklamie na Meta, i odwrotnie.
           </p>
           <p>
-            Robiliśmy sesje foto i produkcje wideo dla marek takich jak <strong>Żabka, WSB Merito, Zakłady Cegielskiego czy FPS</strong>, więc różne branże i różne potrzeby, od czysto wizerunkowych po w pełni kampanijne, przewinęły się przez nasze studio.
+            Pracowaliśmy m.in. dla <strong>Enea Stadionu, FPS Cegielski, AutoSpa</strong>, a dla <strong>WSB Merito</strong> zrealizowaliśmy spot, więc różne branże i różne potrzeby, od czysto wizerunkowych po kampanijne, są nam dobrze znane.
           </p>
           <p>
-            Mamy własne studio i zespół na miejscu w Poznaniu, ale dojeżdżamy z ekipą po całej Polsce, więc lokalizacja klienta nie jest ograniczeniem. Jeśli chcesz zobaczyć, jak podchodzimy do fotografii biznesowej całościowo, od zdjęć korporacyjnych po reklamowe, zajrzyj na naszą stronę{" "}
+            Działamy z Poznania, a firmy z innych miast obsługujemy zdalnie; termin i miejsce dnia zdjęciowego ustalamy indywidualnie. Jeśli chcesz zobaczyć, jak podchodzimy do fotografii biznesowej całościowo, od zdjęć korporacyjnych po reklamowe, zajrzyj na naszą stronę{" "}
             <Link to="/uslugi/fotografia" className="text-[#75143F] underline">
               fotografia biznesowa
             </Link>

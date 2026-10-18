@@ -4,18 +4,13 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
-  Search,
   MapPin,
-  TrendingUp,
   CheckCircle2,
   ArrowRight,
-  BarChart2,
   Star,
   Building2,
   Globe,
   Target,
-  Clock,
-  Award,
   Shield,
 } from "lucide-react";
 import {
@@ -32,45 +27,41 @@ const faqItems = [
   {
     question: "Ile kosztuje pozycjonowanie w Szczecinie?",
     answer:
-      "Pozycjonowanie lokalne w Szczecinie zaczyna się od 1 200 zł netto miesięcznie dla małych firm. Dla firm obsługujących rynek polsko-niemiecki (cross-border) koszt wynosi 2 500–7 000 zł/mies., ponieważ wymaga strategii dwujęzycznej i osobnych kampanii dla fraz PL i DE. Branże takie jak logistyka portowa czy nieruchomości przy granicy wymagają wyższego budżetu.",
+      "Wycenę przygotowujemy po rozmowie o zakresie i audycie strony. Zależy ona od liczby fraz i podstron, stanu technicznego serwisu, konkurencji w branży oraz tego, czy działasz tylko na rynku polskim, czy także niemieckim — strategia dwujęzyczna (PL i DE) wymaga więcej pracy nad treściami i linkami.",
   },
   {
     question: "Ile czasu trwa pozycjonowanie w Szczecinie?",
     answer:
-      "Szczecin to rynek o niższej konkurencji niż Warszawa czy Wrocław, dlatego pierwsze efekty widoczne są już po 2–3 miesiącach. Stabilne pozycje TOP 10 dla większości fraz branżowych osiągamy w 4–8 miesięcy. Dla firm eksportujących na rynek niemiecki czas może być dłuższy z uwagi na konieczność budowania autorytetu domeny w .de.",
+      "SEO to proces rozłożony na miesiące, a tempo zależy od konkurencji w branży, stanu strony i historii domeny. Nie gwarantujemy konkretnej pozycji ani terminu — w raportach pokazujemy, jak zmienia się widoczność i ruch. Dla firm działających także na rynku niemieckim proces zwykle trwa dłużej, bo widoczność trzeba budować w dwóch językach.",
   },
   {
     question: "Czy pozycjonujecie firmy w regionie zachodniopomorskim poza Szczecinem?",
     answer:
-      "Tak — obsługujemy firmy z całego województwa zachodniopomorskiego: Koszalin, Kołobrzeg, Stargard, Świnoujście, Police. Dla firm z branży turystycznej (Kołobrzeg, Świnoujście) wdrażamy pozycjonowanie sezonowe pod ruch letni oraz całoroczne dla wczasowiczów niskobudżetowych.",
+      "Tak — pracujemy z Poznania, a firmy ze Szczecina i całego województwa zachodniopomorskiego (Koszalin, Kołobrzeg, Stargard, Świnoujście, Police) obsługujemy zdalnie. Dla firm z branży turystycznej (Kołobrzeg, Świnoujście) wdrażamy pozycjonowanie sezonowe pod ruch letni oraz całoroczne dla wczasowiczów niskobudżetowych.",
   },
   {
     question: "Jak wygląda pozycjonowanie dla firm eksportujących do Niemiec ze Szczecina?",
     answer:
-      "Przygotowujemy strategię dual-market — strona PL dla rynku polskiego + osobna podstrona lub subdomena DE z polskim SEO i content marketingiem. Budujemy linki z polskich katalogów branżowych i z de.media oraz platform B2B (Wloclawek, Branżowe PL). Szczecin + 60 km od Berlina to unikalna nisza geograficzna.",
+      "Przygotowujemy strategię dla dwóch rynków — strona PL dla rynku polskiego oraz osobna wersja językowa lub podstrona DE z treściami i SEO pod niemieckie frazy. Linki budujemy ze źródeł branżowych w obu krajach. Bliskość Berlina sprawia, że dla wielu szczecińskich firm rynek niemiecki jest naturalnym kierunkiem.",
   },
   {
     question: "Które branże są najtrudniejsze do pozycjonowania w Szczecinie?",
     answer:
-      "Najtrudniejsze branże: logistyka i transport morski (wysoka konkurencja między firmami portowymi), nieruchomości deweloperskie (duże agencje z budżetami), prawnicy i doradcy podatkowi (skomplikowane frazy long-tail), gabinety medyczne i stomatologiczne. Dla tych branż rekomendujemy budżet min. 3 000 zł/mies.",
+      "Najtrudniejsze branże: logistyka i transport morski (wysoka konkurencja między firmami portowymi), nieruchomości deweloperskie (duże agencje z budżetami), prawnicy i doradcy podatkowi (skomplikowane frazy long-tail), gabinety medyczne i stomatologiczne. W tych branżach zakres prac jest zwykle szerszy, co uwzględniamy w wycenie.",
   },
   {
     question: "Czy macie doświadczenie w SEO dla firm z branży morskiej i portowej?",
     answer:
-      "Tak — port w Szczecinie-Świnoujściu to unikalny ekosystem biznesowy. Obsługujemy agentów morskich, firmy spedycyjne, logistykę chłodniczą i operatorów terminal. Znamy specyfikę fraz B2B w tej branży i wiemy, jak docierać do decydentów szukających partnerów logistycznych online.",
+      "Port Szczecin-Świnoujście to specyficzny rynek B2B — klienci agentów morskich, spedytorów czy operatorów terminali szukają partnerów po precyzyjnych frazach branżowych. Strategię dla takiej firmy zaczynamy od audytu i analizy fraz, którymi szukają decydenci, a podejście dopasowujemy do Twojej oferty.",
   },
 ];
 
 const PozycjonowanieSzczecin = () => {
   const results = [
-    {
-      metric: "+280%",
-      label: "Wzrost ruchu organicznego",
-      context: "firma logistyczna Szczecin",
-    },
-    { metric: "TOP 5", label: "Pozycja w Google", context: "frazy usługowe Zachodniopomorskie" },
-    { metric: "3 mies.", label: "Czas do pierwszej strony", context: "branża budowlana" },
-    { metric: "4,8/5", label: "Ocena klientów", context: "14 opinii" },
+    { metric: "Audyt", label: "Na start współpracy", context: "technika, treści, linki" },
+    { metric: "PL / DE", label: "Strategia lokalna lub cross-border", context: "frazy polskie i niemieckie" },
+    { metric: "Raporty", label: "Widoczność i ruch", context: "regularnie, w ustalonym rytmie" },
+    { metric: "Zdalnie", label: "Pracujemy z Poznania", context: "firmy ze Szczecina obsługujemy online" },
   ];
 
   const districts = [
@@ -151,7 +142,7 @@ const PozycjonowanieSzczecin = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto"
             >
-              Pomagamy firmom ze Szczecina i całego Zachodniopomorskiego zdobyć pierwszą stronę
+              Pomagamy firmom ze Szczecina i całego Zachodniopomorskiego budować widoczność w
               Google — zarówno na rynku polskim, jak i niemieckim. Audyt SEO,
               optymalizacja techniczna i link building dla branż portowych, logistycznych i usługowych.
             </motion.p>
@@ -223,22 +214,22 @@ const PozycjonowanieSzczecin = () => {
             <FadeInView>
               <div className="space-y-6 text-muted-foreground">
                 <p>
-                  Szczecin to <strong className="text-foreground">ok. 400 tys. mieszkańców</strong>{" "}
-                  i największy port na Odrze. Miasto leży zaledwie{" "}
-                  <strong className="text-foreground">60 km od Berlina</strong>, co czyni je
-                  unikalną bramą do rynku DACH. Szczecińska Specjalna Strefa Ekonomiczna przyciąga
-                  produkcję (Samsung SDI, BorgWarner, Siemens Energy).
+                  Szczecin to jedno z największych miast zachodniej Polski i ważny port nad Odrą.
+                  Bliskość{" "}
+                  <strong className="text-foreground">granicy i Berlina</strong> sprawia, że dla
+                  wielu firm naturalnym kierunkiem jest rynek DACH, a w regionie działają również
+                  zakłady produkcyjne i firmy logistyczne.
                 </p>
                 <p>
                   Zachodniopomorski rynek SEO ma niższą konkurencję niż Warszawa, ale firmy
                   działające cross-border muszą budować widoczność w{" "}
                   <strong className="text-foreground">dwóch językach i dwóch domenach</strong>.
                   Skuteczne SEO w Szczecinie to nie tylko optymalizacja frazy „Szczecin" —
-                  to strategia łącząca rynek Polski z dostępem do 83 milionów konsumentów w Niemczech.
+                  to strategia łącząca rynek polski z rynkiem niemieckim.
                 </p>
                 <p>
                   Dodatkowo region ma silną <strong className="text-foreground">sezonowość turystyczną</strong>{" "}
-                  — Kołobrzeg, Świnoujście i Niechorze generują ogromny ruch letni. SEO dla firm
+                  — Kołobrzeg, Świnoujście i Niechorze generują duży ruch w sezonie letnim. SEO dla firm
                   wypoczynkowych wymaga planowania z wyprzedzeniem i content calendar na sezon.
                 </p>
               </div>
@@ -247,7 +238,7 @@ const PozycjonowanieSzczecin = () => {
             <FadeInView delay={0.2}>
               <div className="bg-card border border-border/60 rounded-xl p-6">
                 <h3 className="font-bold text-foreground mb-4">
-                  Pozycjonujemy firmy we wszystkich dzielnicach Szczecina
+                  Obsługujemy zdalnie firmy z całego Szczecina
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {districts.map((district) => (
@@ -273,11 +264,11 @@ const PozycjonowanieSzczecin = () => {
         <div className="container mx-auto px-4">
           <FadeInView className="text-center mb-12">
             <h2 className="text-3xl font-bold text-foreground mb-4">
-              Branże, które pozycjonujemy w Szczecinie
+              Branże, dla których przygotowujemy strategie SEO w Szczecinie
             </h2>
             <p className="text-muted-foreground max-w-xl mx-auto">
-              Od logistyki portowej po turystykę nadbałtycką — mamy doświadczenie
-              w sektorach typowych dla Zachodniopomorskiego.
+              Od logistyki portowej po turystykę nadbałtycką — strategię dopasowujemy
+              do specyfiki sektorów typowych dla Zachodniopomorskiego.
             </p>
           </FadeInView>
 
@@ -351,11 +342,11 @@ const PozycjonowanieSzczecin = () => {
         <div className="container mx-auto px-4 text-center">
           <FadeInView>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Gotowy na pierwszą stronę Google w Szczecinie?
+              Chcesz poprawić widoczność w Google w Szczecinie?
             </h2>
             <p className="text-primary-foreground/80 text-lg mb-8 max-w-xl mx-auto">
               Zapytaj o audyt SEO. Zakres i wycenę ustalimy na bezpłatnej konsultacji, a w audycie przeanalizujemy Twoje frazy dla Szczecina
-              i Zachodniopomorskiego — i pokażemy, co powstrzymuje Cię przed TOP 10.
+              i Zachodniopomorskiego — i pokażemy, co dziś ogranicza widoczność Twojej strony.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" asChild className="text-base px-8">

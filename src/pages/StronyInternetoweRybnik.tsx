@@ -43,14 +43,14 @@ const StronyInternetoweRybnik = () => {
   ];
 
   const caseStudies = [
-    { title: "Apartamenty Chorwacja", category: "Strona rezerwacyjna", result: "+180% rezerwacji online", link: "/realizacje/apartamenty-chorwacja", image: apartamentyImg },
+    { title: "Apartamenty Chorwacja", category: "Strona rezerwacyjna", result: "Strona z rezerwacjami online", link: "/realizacje/apartamenty-chorwacja", image: apartamentyImg },
     { title: "Victory Cars", category: "Strona motoryzacyjna", result: "Nowoczesny design premium", link: "/realizacje/victory-cars", image: victoryCarsImg },
-    { title: "Cute Dumpling", category: "Strona gastronomiczna", result: "+250% ruchu organicznego", link: "/realizacje/cute-dumpling", image: cuteDumplingImg },
+    { title: "Cute Dumpling", category: "Strona gastronomiczna", result: "Strona lokalu gastronomicznego", link: "/realizacje/cute-dumpling", image: cuteDumplingImg },
   ];
 
   const faqItems = [
     { question: "Ile kosztuje strona internetowa w Rybniku?", answer: "Koszt zależy od zakresu, treści i integracji. Prześlij brief, aby otrzymać indywidualną ofertę z harmonogramem i rozpisanymi kosztami." },
-    { question: "Jak długo trwa realizacja strony?", answer: "Prosta strona wizytówka to 1-2 tygodnie. Strona firmowa wymaga 3-4 tygodni, a sklep 4-8 tygodni w zależności od złożoności." },
+    { question: "Jak długo trwa realizacja strony?", answer: "Termin zależy od zakresu, liczby podstron, gotowości treści i integracji. Harmonogram ustalamy w ofercie po rozmowie o projekcie." },
     { question: "Czy oferujecie hosting i domenę?", answer: "Tak, pomagamy w wyborze i konfiguracji hostingu oraz domeny. Możemy przejąć pełną obsługę techniczną." },
     { question: "Czy strona będzie zoptymalizowana pod SEO?", answer: "Każda strona tworzona jest z myślą o pozycjonowaniu. Stosujemy najlepsze praktyki SEO dla widoczności w Google." },
     { question: "Czy mogę samodzielnie edytować treści?", answer: "Tak, wszystkie strony wyposażone są w intuicyjny panel CMS do łatwej edycji treści." },
@@ -59,17 +59,17 @@ const StronyInternetoweRybnik = () => {
   const stats = [
     { value: "WWW", label: "Strony i sklepy", icon: Layers },
     { value: "UX", label: "Projekt dla odbiorcy", icon: Star },
-    { value: "5 lat", label: "Doświadczenia", icon: Clock },
+    { value: "Zdalnie", label: "Współpraca online", icon: Clock },
     { value: "Kontakt", label: "Uzgodniona opieka", icon: Headphones },
   ];
 
   const benefits = [
-    "Znajomość rynku śląskiego",
+    "Pracujemy z Poznania, firmy z Rybnika obsługujemy zdalnie",
     "Kompleksowa obsługa od projektu po wdrożenie",
     "SEO w standardzie każdej strony",
     "Responsywny design mobile-first",
     "Wsparcie techniczne po uruchomieniu",
-    "Konkurencyjne ceny bez ukrytych kosztów"
+    "Wycena po rozmowie o zakresie, z rozpisanymi kosztami"
   ];
 
   const introContent = {
@@ -191,7 +191,7 @@ const StronyInternetoweRybnik = () => {
           </div>
         </section>
 
-        <CityPricingCards pricing={pricing} title="Cennik stron internetowych" subtitle="Transparentne ceny bez ukrytych kosztów" cityName="Rybnik" />
+        <CityPricingCards pricing={pricing} title="Cennik stron internetowych" subtitle="Wycenę przygotowujemy po rozmowie o zakresie, treściach i integracjach" cityName="Rybnik" />
         <CityLinksSection currentCity="Rybnik" />
 
         {/* FAQ */}
@@ -232,7 +232,7 @@ const StronyInternetoweRybnik = () => {
               Rybnik to serce subregionu zachodniego województwa śląskiego — miasto w transformacji energetycznej, które od węgla przechodzi ku nowym branżom: produkcji, logistyce i usługom dla firm. Rybnickie firmy coraz częściej szukają klientów poza lokalnym rynkiem — i potrzebują stron internetowych, które otwierają drzwi do nowych rynków.
             </p>
             <p className="text-muted-foreground mb-6">
-              Obsługujemy firmy z Rybnika i subregionu zachodniego — Żory, Jastrzębie-Zdrój, Wodzisław Śląski, Racibórz. Zdalny model współpracy oznacza zero dojazdów — projekt w Figmie, wdrożenie online, pełna optymalizacja SEO w terminie 3–5 tygodni.
+              Pracujemy z Poznania, a firmy z Rybnika i subregionu zachodniego — Żory, Jastrzębie-Zdrój, Wodzisław Śląski, Racibórz — obsługujemy zdalnie. Projekt w Figmie, wdrożenie online i podstawowa optymalizacja SEO w terminie ustalonym w ofercie.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
@@ -249,10 +249,10 @@ const StronyInternetoweRybnik = () => {
               Lokalna widoczność w Rybniku i subregionie zachodnim
             </h2>
             <p className="text-muted-foreground mb-4">
-              Optymalizujemy strony pod frazy z geolokalizacją dla całego subregionu. Google Moja Firma, recenzje Google, spójność NAP — pełny pakiet lokalnego SEO. Efekt: klienci z Rybnika i okolic trafiają do Ciebie przy pierwszym wyszukiwaniu.
+              Optymalizujemy strony pod frazy z geolokalizacją dla całego subregionu. Google Moja Firma, recenzje Google, spójność NAP — pełny pakiet lokalnego SEO. Nie gwarantujemy konkretnej pozycji w Google — dbamy o to, by strona była technicznie gotowa do lokalnych wyszukiwań.
             </p>
             <p className="text-muted-foreground">
-              Bezpłatna wycena w 24 godziny. Skontaktuj się z nami i zacznijmy pracę nad stroną internetową dla Twojej firmy z Rybnika.
+              Bezpłatna wycena po rozmowie o zakresie. Skontaktuj się z nami i zacznijmy pracę nad stroną internetową dla Twojej firmy z Rybnika.
             </p>
           
                         <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">

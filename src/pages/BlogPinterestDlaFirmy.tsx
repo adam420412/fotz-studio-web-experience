@@ -14,7 +14,7 @@ const faqItems = [
   },
   {
     question: "Jakie typy pinów powinienem tworzyć dla mojej firmy?",
-    answer: "Cztery główne typy pinów dla biznesu: 1) Piny produktowe - dla e-commerce, pokazują zdjęcie produktu, cenę, dostępność. Linki do sklepu. 2) Infografiki - artykuły wizualne z kluczowymi informacjami, poradami, statystykami. Bardzo popularne na Pintereście (robi się je w Canva). 3) Przepisy i poradniki - jeśli prowadzisz blog kulinarny, porady lifestylowe. Pinterest to drugie co do wielkości wyszukiwanie przepisów po Google. 4) Piny markowe (Branded Pins) - promocja kampanii, webinariów, e-booków. Kombinuj typy - 80 procent porad/inspiracji, 20 procent sprzedaży bezpośredniej.",
+    answer: "Cztery główne typy pinów dla biznesu: 1) Piny produktowe - dla e-commerce, pokazują zdjęcie produktu, cenę, dostępność. Linki do sklepu. 2) Infografiki - artykuły wizualne z kluczowymi informacjami, poradami, statystykami. Bardzo popularne na Pintereście (robi się je w Canva). 3) Przepisy i poradniki - jeśli prowadzisz blog kulinarny, porady lifestylowe. Pinterest to jedno z popularnych miejsc, w których ludzie szukają przepisów. 4) Piny markowe (Branded Pins) - promocja kampanii, webinariów, e-booków. Kombinuj typy - 80 procent porad/inspiracji, 20 procent sprzedaży bezpośredniej.",
   },
   {
     question: "Jak optymalizować profil Pinteresta dla lepszej widoczności?",
@@ -26,18 +26,18 @@ const faqItems = [
   },
   {
     question: "Czy Pinterest Ads są warte inwestycji dla małych firm?",
-    answer: "Pinterest Ads mogą być opłacalne dla małych firm - wszystko zależy od branży i budżetu. Pinterest ma mniejsze CPM (koszt na 1000 wyświetleń) niż Facebook Ads czy Google Ads. Średni CPC na Pintereście: 0,30-0,50 USD (gdzie CPM: 5-10 USD). Najlepiej działa dla: e-commerce (moda, dekoracja, elektronika), rzemiosła, usług lifestylowych. Mniej efektywne dla: finansów, B2B, usług biznesowych (choć zależy od branży). Rodzaje reklam: Regular Ads (zwykłe piny sponsorowane), Buyable Pins (piny z możliwością bezpośredniego zakupu), Video Pins (reklamy wideo). Zacznij od budżetu 5-10 USD dziennie. Testuj. Mierz ROAS (zwrot z inwestycji). Pinterest dobrze konwertuje dla e-commerce (średni ROAS: 2-5x budżetu reklamy).",
+    answer: "Pinterest Ads mogą być opłacalne dla małych firm - wszystko zależy od branży i budżetu. Koszt kliknięcia (CPC) i 1000 wyświetleń (CPM) zależy od branży, targetowania i sezonu - przed startem sprawdź szacunki w panelu Pinterest Ads i porównaj je z wynikami z innych kanałów. Najlepiej działa dla: e-commerce (moda, dekoracja, elektronika), rzemiosła, usług lifestylowych. Mniej efektywne dla: finansów, B2B, usług biznesowych (choć zależy od branży). Rodzaje reklam: Regular Ads (zwykłe piny sponsorowane), Buyable Pins (piny z możliwością bezpośredniego zakupu), Video Pins (reklamy wideo). Zacznij od budżetu 5-10 USD dziennie. Testuj. Mierz ROAS (zwrot z inwestycji). Pinterest często sprawdza się w e-commerce, ale opłacalność trzeba zweryfikować na własnych danych.",
   },
 ];
 
 const pinterestSuccessBranches = [
   { branża: "Moda", powód: "Inspiracja outfitów, trendy, stylizacja. Pinterest jest de facto katalogiem mody online." },
   { branża: "Wnętrza i design", powód: "Inspiracja aranżacji pokojów, mebli, dekoracji. Wysokie CTR (Click-Through Rate)." },
-  { branża: "Kulinaria i przepisy", powód: "Drugie miejsce po Google dla wyszukiwania przepisów. Wysokie zaangażowanie." },
+  { branża: "Kulinaria i przepisy", powód: "Popularne miejsce wyszukiwania przepisów i inspiracji kulinarnych. Wysokie zaangażowanie." },
   { branża: "E-commerce (bez mody)", powód: "Elektronika, biżuteria, kosmetyki - wszystkie kategorie produktowe mogą działać dobrze." },
   { branża: "Uroda i pielęgnacja", powód: "Tutoriale makijażu, zabiegi, produkty kosmetyczne - duża baza użytkowników." },
   { branża: "DIY i rzemiosło", powód: "Inspiracja do projektów DIY, instrukcje. Użytkownicy aktywnie szukają porad." },
-  { branża: "Zdrowie i fitness", powód: "Treningi, przepisy zdrowe, motywacja - Pinterest to drugie miejsce po YouTube." },
+  { branża: "Zdrowie i fitness", powód: "Treningi, przepisy zdrowe, motywacja - popularne źródło inspiracji obok YouTube." },
   { branża: "Lifestyle i samodoskonalenie", powód: "Cytaty motywacyjne, porady życiowe, produktywność - bardzo dobra penetracja." },
 ];
 
@@ -87,9 +87,9 @@ export default function BlogPinterestDlaFirmy() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {[
                 { label: "Typ", value: "Visual Search" },
-                { label: "CPM", value: "5-10 USD" },
-                { label: "Zbiór", value: "300k/mies" },
-                { label: "Trend", value: "+42% wzrost" },
+                { label: "Kanał", value: "Wyszukiwarka" },
+                { label: "Najlepiej dla", value: "E-commerce" },
+                { label: "Klucz", value: "Pinterest SEO" },
               ].map((s) => (
                 <div key={s.label} className="bg-white/10 rounded-lg p-4 text-center">
                   <div className="text-lg font-bold text-rose-300">{s.value}</div>
@@ -125,7 +125,7 @@ export default function BlogPinterestDlaFirmy() {
                 </li>
                 <li className="flex items-start gap-3">
                   <TrendingUp className="w-5 h-5 text-rose-600 flex-shrink-0 mt-0.5" />
-                  <span>Niższe CPM niż Facebook czy Google Ads - efektywne dla małych budżetów</span>
+                  <span>Stawki reklamowe bywają konkurencyjne - można testować przy małych budżetach</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Heart className="w-5 h-5 text-rose-600 flex-shrink-0 mt-0.5" />
@@ -219,7 +219,7 @@ export default function BlogPinterestDlaFirmy() {
           <FadeInView>
             <div className="space-y-4">
               {[
-                { label: "Nazwa użytkownika", desc: "Jeśli możliwe, zawieraj słowo kluczowe (np. InspiracjeWnętrza zamiast Kasia123). Bez zmiany后就nie będzie można zmienić." },
+                { label: "Nazwa użytkownika", desc: "Jeśli możliwe, zawieraj słowo kluczowe (np. InspiracjeWnętrza zamiast Kasia123). Nazwę warto przemyśleć od początku - częste zmiany utrudniają rozpoznawalność." },
                 { label: "Bio profilu", desc: "Opisz, co oferujesz, jakie kategorie pinów. Nie zaśmiecaj słowami kluczowymi - bądź autentyczną. Max 150 znaków." },
                 { label: "Zdjęcie profilowe", desc: "Logo marki lub zdjęcie. Czytelne, kolorowe, rozmiar min. 200x200px. Dobrze rozpoznawalne." },
                 { label: "Link do strony", desc: "Dodaj link do swojej strony internetowej w profilu. To zwiększa traffic na twoją stronę." },
@@ -361,9 +361,9 @@ export default function BlogPinterestDlaFirmy() {
 
           <FadeInView>
             <p className="text-gray-700 leading-relaxed mb-8">
-              Pinterest Ads to system reklam płatnych (PPC - pay-per-click). Pinterest ma mniejsze CPM (koszt na 1000
-              wyświetleń) niż Facebook czy Google Ads, co czyni go atrakcyjnym dla małych firm. Średni CPC na Pintereście
-              wynosi 0,30-0,50 USD, a CPM to około 5-10 USD.
+              Pinterest Ads to system reklam płatnych (PPC - pay-per-click). Stawki CPC i CPM (koszt na 1000
+              wyświetleń) zależą od branży, targetowania i sezonu, a kampanie można testować przy niewielkich budżetach,
+              co czyni Pinterest atrakcyjnym dla małych firm. Przed startem sprawdź szacunki stawek w panelu reklamowym.
             </p>
           </FadeInView>
 
@@ -400,8 +400,8 @@ export default function BlogPinterestDlaFirmy() {
               <p className="text-gray-800 mb-3 font-semibold">Budżet dla początkujących:</p>
               <p className="text-gray-800 text-sm leading-relaxed">
                 Zacznij od budżetu 5-10 USD dziennie. Testuj różne kreatywności, targetingi, słowa kluczowe.
-                Śledź ROAS (zwrot z inwestycji). Pinterest jest szczególnie efektywny dla e-commerce
-                (średni ROAS: 2-5x budżetu reklamy). Jeśli ROAS przekroczy 2x, zwiększ budżet.
+                Śledź ROAS (zwrot z inwestycji). Pinterest często dobrze sprawdza się w e-commerce,
+                ale opłacalność zweryfikuj na własnych danych. Jeśli ROAS jest rentowny przy Twoich marżach, zwiększaj budżet stopniowo.
               </p>
             </div>
           </FadeInView>

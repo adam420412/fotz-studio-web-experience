@@ -148,8 +148,8 @@ export default function BlogSeoCopywritingCoTo() {
             <div className="grid md:grid-cols-3 gap-4">
               {[
                 { stat: "E-E-A-T", opis: "Google ocenia Experience, Expertise, Authoritativeness i Trustworthiness treści" },
-                { stat: "68%", opis: "doświadczeń online zaczyna się od wyszukiwarki — dlatego SEO content to fundament" },
-                { stat: "3-6 mies.", opis: "tyle zwykle zajmuje osiągnięcie top 10 Google dla nowego artykułu SEO" },
+                { stat: "Intencja", opis: "wiele ścieżek zakupowych zaczyna się od wyszukiwarki — dlatego treść musi odpowiadać na realne pytania" },
+                { stat: "Cierpliwość", opis: "nowy artykuł potrzebuje zwykle kilku miesięcy, zanim zdobędzie stabilne pozycje w Google" },
               ].map((s, i) => (
                 <div key={i} className="bg-blue-50 rounded-xl p-5 text-center">
                   <p className="text-3xl font-bold text-blue-600 mb-2">{s.stat}</p>

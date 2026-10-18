@@ -43,14 +43,14 @@ const StronyInternetoweKonin = () => {
   ];
 
   const caseStudies = [
-    { title: "Apartamenty Chorwacja", category: "Strona rezerwacyjna", result: "+180% rezerwacji online", link: "/realizacje/apartamenty-chorwacja", image: apartamentyImg },
+    { title: "Apartamenty Chorwacja", category: "Strona rezerwacyjna", result: "Strona z rezerwacjami online", link: "/realizacje/apartamenty-chorwacja", image: apartamentyImg },
     { title: "Victory Cars", category: "Strona motoryzacyjna", result: "Nowoczesny design premium", link: "/realizacje/victory-cars", image: victoryCarsImg },
-    { title: "Cute Dumpling", category: "Strona gastronomiczna", result: "+250% ruchu organicznego", link: "/realizacje/cute-dumpling", image: cuteDumplingImg },
+    { title: "Cute Dumpling", category: "Strona gastronomiczna", result: "Strona gastronomiczna z naciskiem na SEO", link: "/realizacje/cute-dumpling", image: cuteDumplingImg },
   ];
 
   const faqItems = [
     { question: "Ile kosztuje strona internetowa w Koninie?", answer: "Koszt zależy od zakresu, treści i integracji. Prześlij brief, aby otrzymać indywidualną ofertę z harmonogramem i rozpisanymi kosztami." },
-    { question: "Jak długo trwa tworzenie strony www?", answer: "Czas realizacji zależy od złożoności projektu. Prosta strona wizytówkowa to 2-3 tygodnie, rozbudowana strona firmowa 4-6 tygodni, sklep internetowy 6-10 tygodni." },
+    { question: "Jak długo trwa tworzenie strony www?", answer: "Czas realizacji zależy od złożoności projektu, liczby podstron, treści i integracji. Termin ustalamy w harmonogramie po rozmowie o zakresie." },
     { question: "Czy oferujecie wsparcie po uruchomieniu strony?", answer: "Tak, zapewniamy wsparcie techniczne po uruchomieniu. Oferujemy pakiety serwisowe obejmujące aktualizacje, kopie zapasowe i pomoc techniczną." },
     { question: "Czy strona będzie responsywna?", answer: "Wszystkie nasze strony są w pełni responsywne i dostosowane do urządzeń mobilnych. Projektujemy w podejściu mobile-first." },
     { question: "Czy pomagacie w pozycjonowaniu strony?", answer: "Tak, każda strona jest zoptymalizowana pod SEO. Oferujemy również kompleksowe usługi pozycjonowania dla firm z Konina." },
@@ -60,17 +60,17 @@ const StronyInternetoweKonin = () => {
   const stats = [
     { value: "WWW", label: "Strony i sklepy", icon: Layers },
     { value: "UX", label: "Projekt dla odbiorcy", icon: Star },
-    { value: "5 lat", label: "Doświadczenia", icon: Clock },
+    { value: "Zdalnie", label: "Współpraca z Poznania", icon: Clock },
     { value: "Kontakt", label: "Uzgodniona opieka", icon: Headphones },
   ];
 
   const benefits = [
-    "Znajomość konińskiego rynku",
+    "Pracujemy z Poznania, firmy z Konina obsługujemy zdalnie",
     "Kompleksowa obsługa od projektu po wdrożenie",
     "SEO w standardzie każdej strony",
     "Responsywny design mobile-first",
     "Wsparcie techniczne po uruchomieniu",
-    "Konkurencyjne ceny bez ukrytych kosztów"
+    "Wycena po rozmowie o zakresie, bez ukrytych kosztów"
   ];
 
   const introContent = {
@@ -197,7 +197,7 @@ const StronyInternetoweKonin = () => {
           </div>
         </section>
 
-        <CityPricingCards pricing={pricing} title="Cennik stron internetowych" subtitle="Transparentne ceny bez ukrytych kosztów" cityName="Konin" />
+        <CityPricingCards pricing={pricing} title="Cennik stron internetowych" subtitle="Wycenę przygotowujemy po rozmowie o zakresie" cityName="Konin" />
 
         <CityLinksSection currentCity="Konin" />
 
@@ -239,14 +239,14 @@ const StronyInternetoweKonin = () => {
               Konin to miasto w transformacji energetycznej — przez lata zależne od górnictwa węgla brunatnego i elektrowni, dziś aktywnie buduje nowe gałęzie gospodarki: logistykę, przetwórstwo metali i sektor MŚP. Firmy z Konina i regionu szukają nowych rynków — i potrzebują profesjonalnych stron internetowych, które pomagają im dotrzeć do nowych klientów.
             </p>
             <p className="text-muted-foreground mb-6">
-              Obsługujemy firmy z Konina, Turku i całej Wielkopolski Wschodniej. Zdalny model współpracy, projekt w Figmie, wdrożenie online, optymalizacja SEO. Termin realizacji: 3–5 tygodni. Bezpłatna wycena w 24 godziny.
+              Pracujemy z Poznania, firmy z Konina, Turku i całej Wielkopolski Wschodniej obsługujemy zdalnie. Projekt w Figmie, wdrożenie online, optymalizacja SEO. Termin realizacji ustalamy po briefie, a wycenę przygotowujemy po rozmowie o zakresie.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
               Strony www dla firm przemysłowych i usługowych z Konina
             </h2>
             <p className="text-muted-foreground mb-4">
-              Firmy przemysłowe z Konina potrzebują solidnych stron B2B — z katalogiem usług, certyfikatami i formularzami kontaktowymi dla klientów instytucjonalnych. Tworzymy strony, które generują zapytania ofertowe od firm z całej Polski.
+              Firmy przemysłowe z Konina potrzebują solidnych stron B2B — z katalogiem usług, certyfikatami i formularzami kontaktowymi dla klientów instytucjonalnych. Tworzymy strony, które ułatwiają klientom z całej Polski wysłanie zapytania ofertowego.
             </p>
             <p className="text-muted-foreground mb-6">
               Dla lokalnych firm usługowych, gabinetów i restauracji projektujemy przystępne strony wizytówkowe. Każda strona jest zoptymalizowana pod frazy lokalne i konfigurowana w Google Moja Firma.
@@ -259,7 +259,7 @@ const StronyInternetoweKonin = () => {
               Optymalizujemy strony pod frazy z Konina i Wielkopolski Wschodniej. Google Moja Firma, lokalne linki, spójność NAP — pełen pakiet. Dla firm szukających klientów poza regionem budujemy strukturę SEO celującą w ogólnopolskie frazy branżowe.
             </p>
             <p className="text-muted-foreground">
-              Skontaktuj się z nami — bezpłatna wycena, realizacja w 3–5 tygodni. Firmy z Konina mogą liczyć na strony, które naprawdę pracują.
+              Skontaktuj się z nami — bezpłatna wycena i termin ustalony w harmonogramie. Firmy z Konina mogą liczyć na strony, które naprawdę pracują.
             </p>
           
                         <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">

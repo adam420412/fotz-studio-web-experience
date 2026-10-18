@@ -30,7 +30,7 @@ const faqItems = [
   {
     question: "Czy inbound marketing działa dla firm B2B?",
     answer:
-      "Inbound jest szczególnie skuteczny w B2B, gdzie kupujący intensywnie badają dostawców przed zakupem. Firmy B2B stosujące inbound generują 3x więcej leadów za 62% kosztu outboundu. Content edukacyjny buduje zaufanie do eksperta, co skraca cykl sprzedaży i zwiększa win rate.",
+      "Inbound jest szczególnie skuteczny w B2B, gdzie kupujący intensywnie badają dostawców przed zakupem. Dobrze prowadzony inbound często obniża koszt pozyskania leada w porównaniu z outboundem, choć efekty przychodzą wolniej. Content edukacyjny buduje zaufanie do eksperta, co skraca cykl sprzedaży i zwiększa win rate.",
   },
 ];
 
@@ -129,9 +129,9 @@ export default function BlogInboundMarketingCoTo() {
             </p>
             <div className="grid md:grid-cols-3 gap-4">
               {[
-                { stat: "3×", opis: "więcej leadów niż outbound przy 62% niższym koszcie" },
-                { stat: "47%", opis: "kupujących B2B przegląda 3–5 treści przed kontaktem ze sprzedawcą" },
-                { stat: "14,6%", opis: "średni wskaźnik zamknięcia leadów inbound vs. 1,7% outbound" },
+                { stat: "Koszt", opis: "treści pracują długo po publikacji, więc koszt leada z czasem zwykle spada" },
+                { stat: "Research", opis: "kupujący B2B często czytają kilka materiałów, zanim skontaktują się ze sprzedawcą" },
+                { stat: "Jakość", opis: "leady, które same Cię znalazły, są zwykle lepiej przygotowane do rozmowy niż kontakty z cold outreachu" },
               ].map((s, i) => (
                 <div key={i} className="bg-teal-50 rounded-xl p-5 text-center">
                   <p className="text-3xl font-bold text-teal-600 mb-2">{s.stat}</p>

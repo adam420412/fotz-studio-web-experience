@@ -68,7 +68,7 @@ export default function BlogPozycjonowanieSklepu() {
     {
       question: "Ile kosztuje SEO dla sklepu internetowego?",
       answer:
-        "SEO dla sklepu internetowego kosztuje więcej niż dla strony firmowej — wymaga pracy na wielu podstronach. Orientacyjnie: mały sklep (do 100 produktów) 1500-3000 zł/mies., sklep średni (100-1000 produktów) 3000-8000 zł/mies., duży sklep (1000+ produktów) 5000-20 000 zł/mies. Do tego tworzenie treści (opisy, blog) — 500-3000 zł/mies. Inwestycja powinna dawać co najmniej 3-5x ROI po 12 miesiącach.",
+        "SEO dla sklepu internetowego kosztuje więcej niż dla strony firmowej — wymaga pracy na wielu podstronach. Przykładowe widełki rynkowe (nie cennik konkretnej agencji): mały sklep (do 100 produktów) 1500-3000 zł/mies., sklep średni (100-1000 produktów) 3000-8000 zł/mies., duży sklep (1000+ produktów) 5000-20 000 zł/mies. Do tego tworzenie treści (opisy, blog) — przykładowo 500-3000 zł/mies. Na ostateczny koszt wpływają m.in. wielkość katalogu, konkurencyjność branży, stan techniczny sklepu i ilość treści do przygotowania. Przed startem warto ustalić, jak będziesz mierzyć zwrot z inwestycji (ruch, przychód z kanału organicznego).",
     },
   ];
 
@@ -122,9 +122,9 @@ export default function BlogPozycjonowanieSklepu() {
               </p>
               <div className="grid md:grid-cols-3 gap-4 mb-6">
                 {[
-                  { stat: "38%", desc: "ruchu e-commerce pochodzi z organicznego SEO" },
-                  { stat: "3x", desc: "wyższe ROI SEO vs Google Ads po 12 miesiącach" },
-                  { stat: "1000+", desc: "słów kluczowych dla typowego sklepu" },
+                  { stat: "Kategorie", desc: "zwykle przyciągają najwięcej ruchu organicznego w sklepie" },
+                  { stat: "Long-tail", desc: "frazy produktowe często rankują szybciej niż ogólne" },
+                  { stat: "Setki fraz", desc: "na trzech poziomach: ogólnym, kategorii i produktu" },
                 ].map((item, idx) => (
                   <div key={idx} className="bg-blue-50 p-4 rounded-lg border border-blue-200 text-center">
                     <div className="text-2xl font-bold text-blue-600 mb-1">{item.stat}</div>
@@ -167,7 +167,7 @@ export default function BlogPozycjonowanieSklepu() {
               <div className="bg-blue-50 border border-blue-200 rounded-lg p-5 mb-6">
                 <p className="text-blue-800 font-semibold mb-2">Potrzebujesz SEO dla swojego sklepu?</p>
                 <p className="text-blue-700 text-sm mb-3">
-                  Specjalizujemy się w pozycjonowaniu sklepów WooCommerce. Zacznij od bezpłatnej konsultacji.
+                  Pomagamy w SEO sklepów internetowych, m.in. na WooCommerce. Zacznij od rozmowy — zakres i wycenę ustalimy po poznaniu Twojego sklepu.
                 </p>
                 <Link to="/seo/pozycjonowanie" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
                   Pozycjonowanie sklepów — oferta <ArrowRight className="w-4 h-4" />

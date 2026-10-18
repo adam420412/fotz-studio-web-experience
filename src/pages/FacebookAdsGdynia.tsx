@@ -32,7 +32,7 @@ import {
 const faqItems = [
   {
     question: "Ile kosztuje kampania Facebook Ads w Gdyni?",
-    answer: "Kampanie Facebook Ads (Meta Ads) w Gdyni zaczynają się od 400 zł miesięcznie za zarządzanie. Budżet na reklamy jest oddzielny i zależy od Twoich celów. Oferujemy pakiety od 400 zł/mies. do premium kampanii z dedykowanym specjalistą.",
+    answer: "Wycenę obsługi przygotowujemy po rozmowie o zakresie: liczbie kampanii, przygotowaniu kreacji, konfiguracji śledzenia i częstotliwości raportów. Budżet reklamowy płacisz bezpośrednio platformie Meta, zawsze osobno od naszego wynagrodzenia.",
   },
   {
     question: "Jaka jest różnica między Facebook Ads a Google Ads?",
@@ -48,7 +48,7 @@ const faqItems = [
   },
   {
     question: "Jak szybko mogę spodziewać się wyników?",
-    answer: "Pierwsze rezultaty pojawiają się w ciągu 3-5 dni. Jednak rzeczywista optymalizacja i zbieranie danych trwa 2-4 tygodnie. W tym okresie testujemy różne grupy docelowe, kreatywność i messaging. Typowo kampania osiąga pełny potencjał po 2-3 miesiącach.",
+    answer: "Pierwsze dane pojawiają się krótko po starcie, ale tempo efektów zależy od budżetu, branży i oferty, dlatego nie podajemy sztywnych terminów. Na początku testujemy różne grupy docelowe, kreacje i komunikaty, a potem rozwijamy to, co działa.",
   },
   {
     question: "Czy mogę targetować mieszkańców Gdyni i Trójmiasta?",
@@ -56,11 +56,11 @@ const faqItems = [
   },
   {
     question: "Jaki jest najlepszy budżet na start kampanii?",
-    answer: "Rekomendujemy minimum 400-500 zł budżetu na kampanię, aby uzbierać wystarczającą ilość danych. Przy mniejszych budżetach algorytm Facebooka ma trudności z optymalizacją. Większe budżety (1000+ zł/mies.) pozwalają na testowanie więcej wariantów i szybszą skalę.",
+    answer: "Budżet ustalamy indywidualnie, zależnie od celu, branży i zasięgu geograficznego. Przy bardzo małych budżetach algorytm Meta ma mało danych do optymalizacji, a większy budżet pozwala testować więcej wariantów. Budżet reklamowy płacisz bezpośrednio platformie, osobno od naszego wynagrodzenia.",
   },
   {
     question: "Czy mogę łączyć Facebook Ads z innymi kanałami?",
-    answer: "Absolutnie! Łączymy Facebook Ads z Google Ads, email marketingiem, SEO i content marketingiem. Taka holistyczna strategia daje zwykle 2-3x lepsze wyniki niż pojedynczy kanał. Oferujemy integrację kampanii dla maksymalnego impact'u na sprzedaż.",
+    answer: "Absolutnie! Łączymy Facebook Ads z Google Ads, email marketingiem, SEO i content marketingiem. Kanały wzajemnie się uzupełniają, dlatego często planujemy je razem.",
   },
 ];
 
@@ -97,53 +97,12 @@ const services = [
   },
 ];
 
-const packages = [
-  {
-    name: "Podstawowy",
-    price: "400",
-    period: "zł/mies.",
-    description: "Dla małych biznesów na starcie",
-    features: [
-      "Zarządzanie 1-2 kampaniami",
-      "Targeting podstawowy",
-      "Raport miesięczny",
-      "Email support",
-      "Optymalizacja co 2 tygodnie",
-    ],
-    cta: "Rozpocznij",
-  },
-  {
-    name: "Profesjonalny",
-    price: "900",
-    period: "zł/mies.",
-    description: "Dla firm chcących rosnąć szybciej",
-    features: [
-      "Zarządzanie 3-5 kampaniami",
-      "Zaawansowany targeting",
-      "Video Ads i Dynamic Ads",
-      "Raport co tydzień",
-      "Tygodniowe konsultacje",
-      "A/B testing",
-    ],
-    cta: "Wybierz pakiet",
-    popular: true,
-  },
-  {
-    name: "Enterprise",
-    price: "1600+",
-    period: "zł/mies.",
-    description: "Dla dużych firm i e-commerce",
-    features: [
-      "Nieograniczona liczba kampanii",
-      "Dedykowany kierownik konta",
-      "Zaawansowana analityka",
-      "Custom audience building",
-      "Raport co tygodzień",
-      "Konsultacje 2x tygodniowo",
-      "24/7 support",
-    ],
-    cta: "Zapytaj o szczegóły",
-  },
+const pricingFactors = [
+  "Liczba kampanii i grup odbiorców, które prowadzimy",
+  "Przygotowanie kreacji: grafiki, wideo, copy",
+  "Konfiguracja Pixela, zdarzeń i analityki",
+  "Częstotliwość optymalizacji, raportów i konsultacji",
+  "Cele kampanii: zasięg, leady czy sprzedaż online",
 ];
 
 const industries = [
@@ -161,14 +120,14 @@ export default function FacebookAdsGdynia() {
       <Layout>
         <SEOHead
           title="Agencja Facebook Ads Gdynia — reklamy Meta dla firm | Fotz.pl"
-          description="Facebook Ads Gdynia ✓ Kampanie Meta Ads dla firm z Gdyni i Trójmiasta. Od 400 zł/mies. Bezpłatna konsultacja!"
+          description="Facebook Ads Gdynia ✓ Kampanie Meta Ads dla firm z Gdyni i Trójmiasta. Wycena po rozmowie o zakresie. Bezpłatna konsultacja!"
           canonical="https://www.fotz-studio.pl/performance-marketing/facebook-ads/gdynia"
         keywords="facebook ads gdynia, meta ads gdynia, reklamy facebook gdynia, agencja facebook ads gdynia, kampanie facebook gdynia, instagram ads gdynia, facebook ads dla firm gdynia, reklama na facebooku gdynia, meta ads agencja gdynia, facebook ads cennik gdynia"
         />
 
         <ServiceSchema
           name="Facebook Ads Gdynia"
-          description="Profesjonalne zarządzanie kampaniami Facebook Ads (Meta Ads) dla firm z Gdyni i Trójmiasta. Brand Awareness, Lead Generation, E-commerce. Od 400 zł/mies."
+          description="Profesjonalne zarządzanie kampaniami Facebook Ads (Meta Ads) dla firm z Gdyni i Trójmiasta. Brand Awareness, Lead Generation, E-commerce."
           areaServed="Gdynia"
         />
 
@@ -206,7 +165,7 @@ export default function FacebookAdsGdynia() {
                   <span className="text-primary">dla firm z Gdyni i Trójmiasta</span>
                 </h1>
                 <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-                  Facebook Ads Gdynia — profesjonalne kampanie Meta Ads i reklamy Facebook dla firm z Gdynia i Trójmiasta. Zwiększamy sprzedaż, zasięg i ROI dzięki precyzyjnemu targetowaniu. Bezpłatna konsultacja.</p>
+                  Facebook Ads Gdynia — profesjonalne kampanie Meta Ads i reklamy Facebook dla firm z Gdynia i Trójmiasta. Pomagamy zwiększać zasięg i sprzedaż dzięki precyzyjnemu targetowaniu. Bezpłatna konsultacja.</p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button asChild size="lg" className="gap-2">
                     <Link to="/kontakt">
@@ -236,9 +195,8 @@ export default function FacebookAdsGdynia() {
                 </h2>
                 <div className="space-y-4 text-muted-foreground text-lg">
                   <p>
-                    Facebook i Instagram mają ponad 3 miliardy aktywnych użytkowników globalnie.
-                    W Polsce ponad 80 proc. internautów korzysta z Facebooka, a jeszcze więcej z Instagramu.
-                    To kanały, gdzie znajduje się Twoja docelowa publiczność.
+                    Facebook i Instagram to kanały, z których na co dzień korzysta duża część Twoich
+                    potencjalnych klientów. Pracujemy z Poznania, firmy z Gdyni i Trójmiasta obsługujemy zdalnie.
                   </p>
                   <p>
                     Reklamy Meta Ads pozwalają na precyzyjne targetowanie: po zainteresowaniach, Demographics,
@@ -246,9 +204,9 @@ export default function FacebookAdsGdynia() {
                     Facebook Ads to idealny kanał do pozyskiwania klientów dla restauracji, sklepów, usług i e-commerce.
                   </p>
                   <p>
-                    Meta Ads generator konwersji szybciej niż tradycyjny marketing. Statystycznie kampanie Facebook
-                    generują ROI 3-5x większy niż tradycyjna reklama. Nasza agencja optymalizuje każdą kampanię
-                    dla maksymalnego zwrotu z inwestycji.
+                    Kampanie Meta Ads są mierzalne — widać, ile kosztuje kontakt czy sprzedaż. Wyniki zależą od
+                    oferty, budżetu i strony docelowej, dlatego nie obiecujemy konkretnego zwrotu z inwestycji,
+                    tylko regularnie optymalizujemy kampanie na podstawie danych.
                   </p>
                 </div>
               </div>
@@ -349,71 +307,28 @@ export default function FacebookAdsGdynia() {
             <div className="container-wide">
               <div className="text-center mb-12">
                 <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
-                  Pakiety Facebook Ads
+                  Od czego zależy wycena
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Elastyczne pakiety zarządzania. Budżet na reklamy jest oddzielny.
+                  Nie mamy sztywnych pakietów. Budżet reklamowy płacisz platformie Meta osobno.
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {packages.map((pkg, index) => (
-                  <div
-                    key={index}
-                    className={`relative rounded-xl border transition-all ${
-                      pkg.popular
-                        ? "border-primary/50 bg-card shadow-lg scale-105"
-                        : "border-border/50 bg-card/50"
-                    }`}
-                  >
-                    {pkg.popular && (
-                      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                        <Badge className="bg-primary text-primary-foreground">
-                          Popularne
-                        </Badge>
-                      </div>
-                    )}
-
-                    <div className="p-8">
-                      <h3 className="text-2xl font-heading font-bold text-foreground mb-2">
-                        {pkg.name}
-                      </h3>
-                      <p className="text-muted-foreground mb-6 text-sm">
-                        {pkg.description}
-                      </p>
-
-                      <div className="mb-6">
-                        <div className="flex items-baseline gap-1">
-                          <span className="text-4xl font-bold text-foreground">
-                            {pkg.price}
-                          </span>
-                          <span className="text-muted-foreground">
-                            {pkg.period}
-                          </span>
-                        </div>
-                      </div>
-
-                      <ul className="space-y-3 mb-8">
-                        {pkg.features.map((feature, fIdx) => (
-                          <li key={fIdx} className="flex gap-2 text-sm">
-                            <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
-                            <span className="text-muted-foreground">{feature}</span>
-                          </li>
-                        ))}
-                      </ul>
-
-                      <Button
-                        asChild
-                        variant={pkg.popular ? "default" : "outline"}
-                        className="w-full"
-                      >
-                        <Link to="/kontakt">
-                          {pkg.cta}
-                        </Link>
-                      </Button>
-                    </div>
-                  </div>
-                ))}
+              <div className="max-w-2xl mx-auto rounded-xl border border-border/50 bg-card/50 p-8">
+                <p className="text-muted-foreground mb-6">
+                  Wycenę przygotowujemy po rozmowie o zakresie. Najczęściej zależy ona od:
+                </p>
+                <ul className="space-y-3 mb-8">
+                  {pricingFactors.map((factor, fIdx) => (
+                    <li key={fIdx} className="flex gap-2 text-sm">
+                      <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                      <span className="text-muted-foreground">{factor}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Button asChild className="w-full">
+                  <Link to="/kontakt">Poproś o wycenę</Link>
+                </Button>
               </div>
             </div>
           </section>

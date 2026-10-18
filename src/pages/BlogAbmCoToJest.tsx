@@ -17,11 +17,11 @@ const faqItems = [
   },
   {
     question: "Czym ABM różni się od tradycyjnego marketingu B2B?",
-    answer: "Tradycyjny marketing B2B: generuje jak największy wolumen leadów, przekazuje je do sprzedaży, sprzedaż odrzuca 60–80% jako złe leady, brak personalizacji. ABM: Marketing i Sales wspólnie wybierają konkretne firmy przed kampanią, każdy touchpoint jest spersonalizowany do tego account, mierzony pipeline i przychód z konkretnych accounts, nie ilość leadów. Kluczowa różnica: ABM mierzy 'pipeline z targeted accounts', nie 'liczba MQL-ów'.",
+    answer: "Tradycyjny marketing B2B: generuje jak największy wolumen leadów, przekazuje je do sprzedaży, sprzedaż często odrzuca znaczną część z nich jako złe leady, brak personalizacji. ABM: Marketing i Sales wspólnie wybierają konkretne firmy przed kampanią, każdy touchpoint jest spersonalizowany do tego account, mierzony pipeline i przychód z konkretnych accounts, nie ilość leadów. Kluczowa różnica: ABM mierzy 'pipeline z targeted accounts', nie 'liczba MQL-ów'.",
   },
   {
     question: "Kiedy warto wdrożyć ABM?",
-    answer: "ABM sprawdza się gdy: firma sprzedaje do dużych organizacji (enterprise, mid-market) z długim cyklem decyzji. ACV (Annual Contract Value) wynosi powyżej 50 000 PLN — uzasadnia wyższe nakłady na personalizację. Masz jasno zdefiniowany ICP i listę docelowych firm. Sprzedaż i marketing są zdolne do ściskiej współpracy. Masz dane o firmach (firmographic, technographic, intent data). ABM NIE sprawdza się przy niskim ACV (poniżej 5K PLN), transakcyjnym modelu lub gdy brak resources na personalizację.",
+    answer: "ABM sprawdza się gdy: firma sprzedaje do dużych organizacji (enterprise, mid-market) z długim cyklem decyzji. ACV (Annual Contract Value) jest wysokie (orientacyjnie kilkadziesiąt tysięcy zł rocznie i więcej) — uzasadnia wyższe nakłady na personalizację. Masz jasno zdefiniowany ICP i listę docelowych firm. Sprzedaż i marketing są zdolne do ściskiej współpracy. Masz dane o firmach (firmographic, technographic, intent data). ABM NIE sprawdza się przy niskim ACV (orientacyjnie kilka tysięcy zł), transakcyjnym modelu lub gdy brak resources na personalizację.",
   },
   {
     question: "Jak mierzyć skuteczność ABM?",
@@ -131,8 +131,8 @@ export default function BlogAbmCoToJest() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {[
                 { label: "Poziomy ABM", value: "3" },
-                { label: "Wyższy win rate", value: "20–35%" },
-                { label: "Wyższy ACV", value: "2–3x" },
+                { label: "Fazy wdrożenia", value: "4" },
+                { label: "Główna metryka", value: "Pipeline" },
                 { label: "Tech stack tools", value: "5 kategorii" },
               ].map((stat) => (
                 <div key={stat.label} className="bg-white/10 rounded-lg p-4 text-center">

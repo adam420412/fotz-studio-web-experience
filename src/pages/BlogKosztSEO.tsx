@@ -12,7 +12,7 @@ import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/Str
 const faqItems = [
   {
     question: "Ile kosztuje pozycjonowanie strony miesięcznie?",
-    answer: "Koszt SEO w Polsce wynosi średnio 1500-5000 zł miesięcznie dla stron małych i średnich firm. Dla kampanii ogólnopolskich i e-commerce może być 5000-15000 zł+. Zakres pracy, konkurencja słów kluczowych i stan strony wpływają na ostateczną cenę. Wiele agencji oferuje pakiety od 999 zł dla lokalnych biznesów."
+    answer: "Przykładowe widełki rynkowe w Polsce to ok. 1500-5000 zł miesięcznie dla stron małych i średnich firm, a dla kampanii ogólnopolskich i e-commerce - 5000-15000 zł+. To orientacyjne kwoty, nie cennik konkretnej agencji. Zakres pracy, konkurencja słów kluczowych i stan strony wpływają na ostateczną cenę. Wiele agencji oferuje pakiety od 999 zł dla lokalnych biznesów."
   },
   {
     question: "Czy tanie SEO za 300 zł miesięcznie jest skuteczne?",
@@ -20,11 +20,11 @@ const faqItems = [
   },
   {
     question: "Kiedy zobaczę pierwsze efekty SEO?",
-    answer: "Pierwsze efekty (pozycje 20-50) widać po 4-8 tygodniach pracy. Istotne wyniki (pozycje top 10) osiągamy zwykle po 2-3 miesiącach. Pełne potencjalne wyniki bywają widoczne po 6-12 miesiącach. Czas zależy od konkurencji słów kluczowych, wieku domeny i stanu strony."
+    answer: "Pierwsze efekty (pozycje 20-50) widać po 4-8 tygodniach pracy. Istotne wyniki (pozycje w top 10) przy umiarkowanej konkurencji pojawiają się zwykle po kilku miesiącach - nikt uczciwy nie zagwarantuje konkretnej pozycji ani terminu. Pełne potencjalne wyniki bywają widoczne po 6-12 miesiącach. Czas zależy od konkurencji słów kluczowych, wieku domeny i stanu strony."
   },
   {
     question: "Czy lepsza jest agencja SEO czy freelancer?",
-    answer: "Agencja SEO oferuje: zespół specjalistów, wyspecjalizowanych narzędzi, wieloletnie doświadczenie i gwarancje. Freelancer może być tańszy, ale bywają niezawodni. W agencji masz dostęp do pełnego spektrum usług i sprawdzony proces. Sprawdź opinie, portfolio i referencje przed wyborem."
+    answer: "Agencja SEO zwykle oferuje: zespół specjalistów, wyspecjalizowane narzędzia i ciągłość obsługi. Freelancer może być tańszy, ale jego dostępność i zakres kompetencji bywają ograniczone. W agencji masz dostęp do pełnego spektrum usług i sprawdzony proces. Sprawdź opinie, portfolio i referencje przed wyborem."
   },
   {
     question: "Co zawiera pakiet SEO w agencji?",
@@ -40,7 +40,7 @@ const faqItems = [
   },
   {
     question: "Jaki budżet SEO potrzebuje mała firma?",
-    answer: "Małe firmy lokalne mogą zacząć od 999-2000 zł miesięcznie. To wystarczająco na audyt, optymalizację strony i basics. Dla skuteczniejszych kampanii rekomendujemy 2000-5000 zł. Jeśli konkurencja jest niska, nawet 1500 zł może przynieść dobre rezultaty. Liczy się konsystencja pracy nad czasem."
+    answer: "Według przykładowych widełek rynkowych małe firmy lokalne zaczynają często od ok. 999-2000 zł miesięcznie - to zwykle wystarcza na audyt, optymalizację strony i podstawy. Szerszy zakres pracy to przykładowo 2000-5000 zł. Przy niskiej konkurencji mniejszy budżet też może dać dobre rezultaty. Konkretną kwotę warto ustalić po analizie strony i konkurencji. Liczy się konsystencja pracy nad czasem."
   }
 ];
 
@@ -211,7 +211,7 @@ export function BlogKosztSEO() {
                       </tr>
                       <tr className="hover:bg-gray-800/50 transition-colors">
                         <td className="px-6 py-4 font-semibold">Godzinowa konsultacja</td>
-                        <td className="px-6 py-4 text-muted-foreground">Płacisz za każdą godzinę konsultacji (200-500 zł/h). Pasuje dla krótkoterminowych potrzeb lub doradztwu.</td>
+                        <td className="px-6 py-4 text-muted-foreground">Płacisz za każdą godzinę konsultacji (przykładowo 200-500 zł/h). Pasuje dla krótkoterminowych potrzeb lub doradztwu.</td>
                         <td className="px-6 py-4 text-muted-foreground">Punktowe wsparcie, audyty,Strategy Sessions</td>
                       </tr>
                     </tbody>
@@ -223,7 +223,7 @@ export function BlogKosztSEO() {
                 </h2>
 
                 <p className="text-muted-foreground mb-6">
-                  Poniżej znajdują się realistyczne przedziały cenowe dla SEO w Polsce w 2025 roku, podzielone na kategorie biznesu.
+                  Poniżej znajdują się przykładowe widełki rynkowe dla SEO w Polsce, podzielone na kategorie biznesu. To orientacyjne kwoty spotykane na rynku - nie cennik FOTZ Studio.
                 </p>
 
                 <div className="overflow-x-auto mb-8 rounded-lg border border-gray-700">
@@ -231,7 +231,7 @@ export function BlogKosztSEO() {
                     <thead>
                       <tr className="bg-gray-800 border-b border-gray-700">
                         <th className="px-6 py-4 text-left font-semibold">Zakres/typ biznesu</th>
-                        <th className="px-6 py-4 text-left font-semibold">Koszt miesięczny</th>
+                        <th className="px-6 py-4 text-left font-semibold">Przykładowe widełki rynkowe / mies.</th>
                         <th className="px-6 py-4 text-left font-semibold">Co obejmuje</th>
                       </tr>
                     </thead>
@@ -270,7 +270,7 @@ export function BlogKosztSEO() {
                     <AlertCircle className="h-5 w-5 text-yellow-400 flex-shrink-0 mt-0.5" />
                     <div>
                       <p className="text-muted-foreground">
-                        <strong>Ważne:</strong> Powyższe ceny są średnimi dla Polski w 2025. Agencje w Warszawie mogą być droższe, agencje na prowincji tańsze. Doświadczenie agencji, portfel klientów i gwarancje również wpływają na cenę.
+                        <strong>Ważne:</strong> Powyższe kwoty to orientacyjne, przykładowe widełki rynkowe - nie wynik badania ani cennik konkretnej agencji. Agencje w dużych miastach mogą być droższe, mniejsze - tańsze. Doświadczenie agencji, zakres pracy i warunki umowy również wpływają na cenę.
                       </p>
                     </div>
                   </div>
@@ -291,12 +291,12 @@ export function BlogKosztSEO() {
 
                 <h3 className="text-xl font-semibold mt-8 mb-4">2. Stan techniczny strony</h3>
                 <p className="text-muted-foreground mb-6">
-                  Stara strona zbudowana na WordPress 2010 z problemami technicznymi wymaga więcej pracy niż nowoczesna React aplikacja. Architektura URLs, szybkość loading, responsywność - wszystko to wpływa na koszt. Audyt SEO zwykle ujawnia 50-200 problemów.
+                  Stara strona zbudowana na WordPress 2010 z problemami technicznymi wymaga więcej pracy niż nowoczesna React aplikacja. Architektura URLs, szybkość loading, responsywność - wszystko to wpływa na koszt. Audyt SEO często ujawnia dziesiątki problemów do poprawy.
                 </p>
 
                 <h3 className="text-xl font-semibold mt-8 mb-4">3. Ilość publikowanych artykułów</h3>
                 <p className="text-muted-foreground mb-6">
-                  Czy potrzebujesz 2 artykułów miesięcznie czy 10? Content marketing to 40-60% koszt SEO. Quality content wymaga copywriterów, fotografów, edytorów. Im więcej contentu, tym wyższy koszt.
+                  Czy potrzebujesz 2 artykułów miesięcznie czy 10? Content marketing często stanowi dużą część kosztu SEO. Quality content wymaga copywriterów, fotografów, edytorów. Im więcej contentu, tym wyższy koszt.
                 </p>
 
                 <h3 className="text-xl font-semibold mt-8 mb-4">4. Doświadczenie agencji i specjalistów</h3>
@@ -377,7 +377,7 @@ export function BlogKosztSEO() {
 
                 <h3 className="text-xl font-semibold mt-8 mb-4">Krok 1: Zdefiniuj cel biznesowy</h3>
                 <p className="text-muted-foreground mb-6">
-                  Ile leadów lub sprzedaży potrzebujesz z SEO w następnym roku? Jeśli chcesz 50 leadów/miesiąc, a średnia wartość leadu to 500 zł, to potencjał roczny to 300 000 zł. Budżet SEO powinien być ułamkiem tego potencjału - zazwyczaj 5-10%.
+                  Ile leadów lub sprzedaży potrzebujesz z SEO w następnym roku? Jeśli chcesz 50 leadów/miesiąc, a średnia wartość leadu to 500 zł, to potencjał roczny to 300 000 zł. Budżet SEO powinien być rozsądnym ułamkiem tego potencjału - takim, który zwróci się nawet przy ostrożnym scenariuszu.
                 </p>
 
                 <h3 className="text-xl font-semibold mt-8 mb-4">Krok 2: Przeanalizuj konkurencję SEO</h3>
@@ -387,15 +387,15 @@ export function BlogKosztSEO() {
 
                 <h3 className="text-xl font-semibold mt-8 mb-4">Krok 3: Ustal procent od przychodu</h3>
                 <p className="text-muted-foreground mb-6">
-                  Średnio firmy wydają 2-10% przychodu na marketing. SEO powinno być częścią tego. Dla e-commerce: 3-5% przychodu na SEO. Dla usług: 5-10%. Dla startupu: 10-15% budżetu marketingowego.
+                  Wiele firm ustala budżet marketingowy jako procent przychodu, a SEO jest jego częścią. Wysokość tego procentu zależy od branży, marż i etapu rozwoju - e-commerce i startupy w fazie wzrostu zwykle przeznaczają na marketing relatywnie więcej niż dojrzałe firmy usługowe.
                 </p>
 
                 <h3 className="text-xl font-semibold mt-8 mb-4">Krok 4: Porównaj roczny koszt vs ROI</h3>
                 <p className="text-muted-foreground mb-6">
-                  Roczny koszt SEO przy 3000 zł/miesiąc to 36 000 zł. Jeśli to przyniesie Ci 20 leadów/miesiąc warte po 1000 zł każdy, to ROI to 240 000 zł. To 6.7x zwrotu - solidna inwestycja.
+                  Roczny koszt SEO przy 3000 zł/miesiąc to 36 000 zł. Jeśli (przykładowo) przyniesie Ci to 20 leadów/miesiąc warte po 1000 zł każdy, to wartość leadów wyniesie 240 000 zł rocznie - ok. 6,7x kosztu. Taki rachunek warto zrobić na własnych, ostrożnych założeniach.
                 </p>
 
-                <h3 className="text-xl font-semibold mt-8 mb-4">Wytyczne budżetowania SEO:</h3>
+                <h3 className="text-xl font-semibold mt-8 mb-4">Wytyczne budżetowania SEO (przykładowe widełki rynkowe):</h3>
                 <ul className="space-y-3 mb-6 text-muted-foreground">
                   <li className="flex gap-3">
                     <Check className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />

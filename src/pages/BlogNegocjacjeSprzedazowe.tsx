@@ -34,7 +34,7 @@ const negotiationTactics = [
     taktyka: "Anchoring (kotwiczenie)",
     opis: "Pierwsza złożona oferta zakotwicza negocjacje — strony wracają do niej jako punktu odniesienia",
     jak: "Zawsze składaj ofertę jako pierwszy. Anchor wysoko (lub nisko jeśli kupujesz). Uzasadnij anchor logicznie.",
-    przykład: "Zamiast czekać na ofertę klienta, powiedz: 'Standardowo nasz pakiet Enterprise to 120 000 PLN rocznie, jednak dla Was przygotowałem propozycję bazując na Waszych potrzebach...'",
+    przykład: "Zamiast czekać na ofertę klienta, powiedz (kwota czysto przykładowa): 'Standardowo nasz pakiet Enterprise to 120 000 PLN rocznie, jednak dla Was przygotowałem propozycję bazując na Waszych potrzebach...'",
     kolor: "blue",
   },
   {
@@ -55,14 +55,14 @@ const negotiationTactics = [
     taktyka: "Strategic Silence",
     opis: "Po złożeniu oferty lub pytania — milcz. Kto mówi pierwszy, traci",
     jak: "Po podaniu ceny lub warunku, zatrzymaj się. Nie wypełniaj ciszy uzasadnieniami — to osłabia Twoją pozycję. Poczekaj na odpowiedź klienta.",
-    przykład: "Po powiedzeniu 'Nasza propozycja to 85 000 PLN' — milcz. Klient czuje presję do odpowiedzi. Pierwsze słowa po Twojej ofercie są bardzo informacyjne.",
+    przykład: "Po powiedzeniu np. 'Nasza propozycja to 85 000 PLN' (kwota przykładowa) — milcz. Klient czuje presję do odpowiedzi. Pierwsze słowa po Twojej ofercie są bardzo informacyjne.",
     kolor: "orange",
   },
 ];
 
 const concessionRules = [
   { zasada: "Nigdy nie dawaj concession bez otrzymywania czegoś w zamian", opis: "Jednostronne ustępstwa dewaluują Twoją ofertę i zachęcają do dalszych żądań. Zawsze używaj 'Jeśli Wy... to my...'" },
-  { zasada: "Zmniejszaj rozmiar kolejnych ustępstw", opis: "Pierwsza concession może być 10%, następna 5%, potem 2% — sygnalizuje, że zbliżasz się do limitu" },
+  { zasada: "Zmniejszaj rozmiar kolejnych ustępstw", opis: "Przykładowo: pierwsza concession 10%, następna 5%, potem 2% — sygnalizuje, że zbliżasz się do limitu" },
   { zasada: "Ustępuj powoli i z trudnością", opis: "Łatwe ustępstwa sugerują, że masz duże pole do manewru. Każda concession powinna być 'wywalczona'" },
   { zasada: "Nie ustępuj w ostatniej chwili", opis: "Klienci mogą celowo zostawić negocjacje na koniec, licząc na 'last minute deal'. Trzymaj się warunków." },
 ];

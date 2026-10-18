@@ -10,11 +10,8 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import {
-  TrendingUp,
   Target,
-  Zap,
   BarChart3,
-  Users,
   ShoppingCart,
   Search,
   Briefcase,
@@ -22,9 +19,6 @@ import {
   CheckCircle2,
   ArrowRight,
   Phone,
-  DollarSign,
-  Clock,
-  Shield,
   Smartphone,
   Globe,
 } from "lucide-react";
@@ -32,7 +26,7 @@ import {
 const faqItems = [
   {
     question: "Ile kosztuje kampania Google Ads w Gdyni?",
-    answer: "Kampanie Google Ads w Gdyni zaczynają się od 400 zł miesięcznie za zarządzanie. Budżet na reklamy jest oddzielny i dostosowany do Twoich potrzeb. Oferujemy pakiety od minimum 400 zł/mies. aż do kampanii premium z dedykowanym kierownikiem konta.",
+    answer: "Nie podajemy stałych cen ani pakietów. Wycenę obsługi przygotowujemy po rozmowie o zakresie: liczbie kampanii, rodzajach reklam, częstotliwości raportów i potrzebie przygotowania kreacji lub landing page. Budżet reklamowy płacisz bezpośrednio Google, zawsze osobno od naszego wynagrodzenia.",
   },
   {
     question: "Jak Google Ads pomaga firmom z Gdyni i Trójmiasta?",
@@ -40,7 +34,7 @@ const faqItems = [
   },
   {
     question: "Czy mogę zarządzać Google Ads sam bez agencji?",
-    answer: "Technicznie tak, ale wymaga to wiedzy i stałego monitorowania. Nasze agencja oferuje profesjonalne zarządzanie: analizę konkurencji, optymalizację słów kluczowych, testowanie ogłoszeń i ciągłe ulepszanie ROI. Pozwala to zaoszczędzić czas i zwrócić większy zwrot z inwestycji.",
+    answer: "Technicznie tak, ale wymaga to wiedzy i stałego monitorowania. Nasza agencja zajmuje się analizą konkurencji, optymalizacją słów kluczowych, testowaniem ogłoszeń i bieżącym ulepszaniem kampanii. Ty oszczędzasz czas, a decyzje opieramy na danych z Twojego konta.",
   },
   {
     question: "Jakie są najpopularniejsze formaty reklam Google Ads?",
@@ -48,7 +42,7 @@ const faqItems = [
   },
   {
     question: "Jak długo trwa zanim zobaczę wyniki z Google Ads?",
-    answer: "Pierwszych wyników zwykle widać w ciągu tygodnia. Jednak optymalizacja kampanii to proces ciągły. Typowo 2-3 miesiące to czas potrzebny na zebranie danych i dokonanie znaczących ulepszeń. Nasze kampanie pokazują stale rosnący ROI w okresie 3-6 miesięcy.",
+    answer: "Pierwsze kliknięcia i dane pojawiają się zwykle krótko po uruchomieniu kampanii. Optymalizacja to jednak proces ciągły, a czas potrzebny na zebranie danych i znaczące ulepszenia zależy od budżetu, branży i konkurencji. Nie obiecujemy sztywnych terminów efektów.",
   },
   {
     question: "Czy mogę reklamy dostosować do mojego miasta (Gdynia)?",
@@ -97,55 +91,8 @@ const services = [
   },
 ];
 
-const packages = [
-  {
-    name: "Start",
-    price: "400",
-    period: "zł/mies.",
-    description: "Dla małych biznesów i startupów",
-    features: [
-      "Zarządzanie 1 kampanią",
-      "Do 5 grup ogłoszeniowych",
-      "Raport co miesiąc",
-      "Podstawowa optymalizacja",
-      "Email support",
-    ],
-    cta: "Wybierz pakiet",
-  },
-  {
-    name: "Business",
-    price: "800",
-    period: "zł/mies.",
-    description: "Dla firm średnich i rozwijających się",
-    features: [
-      "Zarządzanie 3-5 kampaniami",
-      "Czasowe konsultacje",
-      "A/B testing ogłoszeń",
-      "Tygodniowe raportowanie",
-      "Priorytetowy support",
-    ],
-    cta: "Wybierz pakiet",
-    popular: true,
-  },
-  {
-    name: "Premium",
-    price: "1500+",
-    period: "zł/mies.",
-    description: "Dla dużych firm i e-commerce",
-    features: [
-      "Zarządzanie 5+ kampaniami",
-      "Dedykowany kierownik konta",
-      "Zaawansowana optymalizacja",
-      "Raport co tydzień",
-      "Konsultacje co 2 tygodnie",
-      "24h support",
-    ],
-    cta: "Zapytaj o szczegóły",
-  },
-];
-
 const industries = [
-  { title: "E-commerce", description: "Sprzedaż produktów online z maksymalnym ROI" },
+  { title: "E-commerce", description: "Sprzedaż produktów online i kampanie produktowe" },
   { title: "Usługi", description: "Pozyskiwanie klientów dla firm usługowych" },
   { title: "Nieruchomości", description: "Promowanie inwestycji i mieszkań" },
   { title: "Turystyka", description: "Rezerwacje hoteli i pakietów wakacyjnych" },
@@ -159,14 +106,14 @@ export default function GoogleAdsGdynia() {
       <Layout>
         <SEOHead
           title="Agencja Google Ads Gdynia — kampanie reklamowe dla firm | Fotz.pl"
-          description="Google Ads Gdynia ✓ Kampanie dla firm z Gdyni i Trójmiasta. Od 400 zł/mies. Certyfikowani specjaliści. Bezpłatna konsultacja!"
+          description="Google Ads Gdynia ✓ Kampanie dla firm z Gdyni i Trójmiasta prowadzone zdalnie z Poznania. Wycena po rozmowie o zakresie. Bezpłatna konsultacja!"
           canonical="https://www.fotz-studio.pl/performance-marketing/google-ads/gdynia"
         keywords="google ads gdynia, kampanie google ads gdynia, agencja google ads gdynia, reklamy google gdynia, google adwords gdynia, sem gdynia, google ads dla firm gdynia, prowadzenie google ads gdynia, google ads cennik gdynia, reklama w google gdynia"
         />
 
         <ServiceSchema
           name="Google Ads Gdynia"
-          description="Profesjonalne zarządzanie kampaniami Google Ads dla firm z Gdyni i Trójmiasta. Search, Display, Shopping i Video Ads. Od 400 zł/mies."
+          description="Profesjonalne zarządzanie kampaniami Google Ads dla firm z Gdyni i Trójmiasta. Search, Display, Shopping i Video Ads. Wycena po rozmowie o zakresie."
           areaServed="Gdynia"
         />
 
@@ -204,7 +151,7 @@ export default function GoogleAdsGdynia() {
                   <span className="text-primary">dla firm z Gdyni i Trójmiasta</span>
                 </h1>
                 <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-                  Google Ads Gdynia — profesjonalne kampanie Google Ads i reklamy w Google dla firm z Gdyniaa i Trójmiasta. Zwiększamy ruch, konwersje i ROI dzięki skutecznym kampaniom SEM. Bezpłatna konsultacja.</p>
+                  Google Ads Gdynia — kampanie Google Ads i reklamy w Google dla firm z Gdyni i Trójmiasta. Pracujemy z Poznania, firmy z Gdyni obsługujemy zdalnie. Bezpłatna konsultacja.</p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button asChild size="lg" className="gap-2">
                     <Link to="/kontakt">
@@ -244,8 +191,8 @@ export default function GoogleAdsGdynia() {
                     pozyskiwania klientów.
                   </p>
                   <p>
-                    Google Ads to najszybszy sposób na pojawienie się przed potencjalnymi klientami szukającymi
-                    Twoich produktów lub usług. Bez czekania na SEO, od razu masz widoczność i możliwość konwersji.
+                    Google Ads pozwala szybko pojawić się przed potencjalnymi klientami szukającymi
+                    Twoich produktów lub usług, bez czekania na efekty SEO.
                   </p>
                 </div>
               </div>
@@ -344,73 +291,32 @@ export default function GoogleAdsGdynia() {
         <FadeInView>
           <section className="section-padding">
             <div className="container-wide">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
-                  Cennik kampanii Google Ads
+              <div className="max-w-3xl mx-auto">
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4 text-center">
+                  Od czego zależy wycena
                 </h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Pakiety dla firm każdej wielkości. Budżet na reklamy to osobna opłata.
+                <p className="text-muted-foreground mb-8 text-center">
+                  Wycenę przygotowujemy po rozmowie o zakresie. Budżet reklamowy płacisz Google, zawsze osobno od naszego wynagrodzenia.
                 </p>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {packages.map((pkg, index) => (
-                  <div
-                    key={index}
-                    className={`relative rounded-xl border transition-all ${
-                      pkg.popular
-                        ? "border-primary/50 bg-card shadow-lg scale-105"
-                        : "border-border/50 bg-card/50"
-                    }`}
-                  >
-                    {pkg.popular && (
-                      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                        <Badge className="bg-primary text-primary-foreground">
-                          Popularne
-                        </Badge>
-                      </div>
-                    )}
-
-                    <div className="p-8">
-                      <h3 className="text-2xl font-heading font-bold text-foreground mb-2">
-                        {pkg.name}
-                      </h3>
-                      <p className="text-muted-foreground mb-6 text-sm">
-                        {pkg.description}
-                      </p>
-
-                      <div className="mb-6">
-                        <div className="flex items-baseline gap-1">
-                          <span className="text-4xl font-bold text-foreground">
-                            {pkg.price}
-                          </span>
-                          <span className="text-muted-foreground">
-                            {pkg.period}
-                          </span>
-                        </div>
-                      </div>
-
-                      <ul className="space-y-3 mb-8">
-                        {pkg.features.map((feature, fIdx) => (
-                          <li key={fIdx} className="flex gap-2 text-sm">
-                            <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
-                            <span className="text-muted-foreground">{feature}</span>
-                          </li>
-                        ))}
-                      </ul>
-
-                      <Button
-                        asChild
-                        variant={pkg.popular ? "default" : "outline"}
-                        className="w-full"
-                      >
-                        <Link to="/kontakt">
-                          {pkg.cta}
-                        </Link>
-                      </Button>
-                    </div>
-                  </div>
-                ))}
+                <ul className="space-y-3">
+                  {[
+                    "Liczba i rodzaje kampanii (Search, Display, Shopping, Video)",
+                    "Zasięg geograficzny: Gdynia, Trójmiasto lub cała Polska",
+                    "Konkurencja na frazy w Twojej branży",
+                    "Częstotliwość raportów i konsultacji",
+                    "Potrzeba przygotowania kreacji, landing page lub konfiguracji analityki",
+                  ].map((item, index) => (
+                    <li key={index} className="flex gap-2 text-muted-foreground">
+                      <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <div className="text-center mt-8">
+                  <Button asChild>
+                    <Link to="/kontakt">Zapytaj o wycenę</Link>
+                  </Button>
+                </div>
               </div>
             </div>
           </section>

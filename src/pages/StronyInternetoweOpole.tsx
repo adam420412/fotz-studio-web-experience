@@ -43,9 +43,9 @@ const StronyInternetoweOpole = () => {
   ];
 
   const caseStudies = [
-    { title: "Apartamenty Chorwacja", category: "Strona rezerwacyjna", result: "+180% rezerwacji online", link: "/realizacje/apartamenty-chorwacja", image: apartamentyImg },
+    { title: "Apartamenty Chorwacja", category: "Strona rezerwacyjna", result: "Strona z rezerwacjami online", link: "/realizacje/apartamenty-chorwacja", image: apartamentyImg },
     { title: "Victory Cars", category: "Strona motoryzacyjna", result: "Nowoczesny design premium", link: "/realizacje/victory-cars", image: victoryCarsImg },
-    { title: "Cute Dumpling", category: "Strona gastronomiczna", result: "+250% ruchu organicznego", link: "/realizacje/cute-dumpling", image: cuteDumplingImg },
+    { title: "Cute Dumpling", category: "Strona gastronomiczna", result: "Strona z menu i treściami pod SEO", link: "/realizacje/cute-dumpling", image: cuteDumplingImg },
   ];
 
   const faqItems = [
@@ -60,17 +60,17 @@ const StronyInternetoweOpole = () => {
   const stats = [
     { value: "WWW", label: "Strony i sklepy", icon: Layers },
     { value: "UX", label: "Projekt dla odbiorcy", icon: Star },
-    { value: "5 lat", label: "Doświadczenia", icon: Clock },
+    { value: "Zdalnie", label: "Współpraca z Poznania", icon: Clock },
     { value: "Kontakt", label: "Uzgodniona opieka", icon: Headphones },
   ];
 
   const benefits = [
-    "Znajomość opolskiego rynku",
+    "Pracujemy z Poznania, firmy z Opola obsługujemy zdalnie",
     "Kompleksowa obsługa od projektu po wdrożenie",
     "SEO w standardzie każdej strony",
     "Responsywny design mobile-first",
     "Wsparcie techniczne po uruchomieniu",
-    "Konkurencyjne ceny bez ukrytych kosztów"
+    "Wycena po rozmowie o zakresie, bez ukrytych kosztów"
   ];
 
   const introContent = {
@@ -236,10 +236,10 @@ const StronyInternetoweOpole = () => {
               Strony internetowe Opole — tworzenie stron www dla firm ze Śląska Opolskiego
             </h2>
             <p className="text-muted-foreground mb-4">
-              Opole to stolica Śląska Opolskiego i kulturalne centrum regionu — z Krajowym Festiwalem Polskiej Piosenki, silnym środowiskiem akademickim (Politechnika Opolska, Uni Opolski) i rosnącym sektorem usług. Region Opolski intensywnie korzysta ze środków KPO i funduszy UE — firmy inwestujące w cyfryzację i obecność online mogą liczyć na dofinansowanie.
+              Opole to stolica Śląska Opolskiego i kulturalne centrum regionu — z Krajowym Festiwalem Polskiej Piosenki, silnym środowiskiem akademickim (Politechnika Opolska, Uni Opolski) i rosnącym sektorem usług. Firmy planujące cyfryzację mogą sprawdzić, czy ich projekt kwalifikuje się do dostępnych programów dofinansowania.
             </p>
             <p className="text-muted-foreground mb-6">
-              Obsługujemy firmy z Opola i całego Śląska Opolskiego — Kędzierzyn-Koźle, Nysa, Brzeg. Projekt w Figmie, wdrożenie online, optymalizacja SEO. Termin: 3–5 tygodni. Bezpłatna wycena w 24 godziny.
+              Pracujemy z Poznania, a firmy z Opola i całego Śląska Opolskiego — Kędzierzyna-Koźla, Nysy, Brzegu — obsługujemy zdalnie. Projekt w Figmie, wdrożenie online, optymalizacja SEO. Termin ustalamy po briefie, zależnie od zakresu. Wycenę przygotowujemy po rozmowie o zakresie projektu.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
@@ -259,7 +259,7 @@ const StronyInternetoweOpole = () => {
               Lokalna optymalizacja SEO dla firm z Opola i regionu opolskiego. Frazy z geolokalizacją, Google Moja Firma i spójność NAP. Dla firm szukających klientów z całego Śląska Opolskiego rozszerzamy zasięg na kluczowe miasta województwa.
             </p>
             <p className="text-muted-foreground">
-              Skontaktuj się z nami — bezpłatna wycena w 24 godziny. Tworzymy strony internetowe dla firm z Opola i całego Śląska Opolskiego.
+              Skontaktuj się z nami — wycenę przygotujemy po rozmowie o zakresie. Tworzymy strony internetowe dla firm z Opola i całego Śląska Opolskiego.
             </p>
           
                         <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">

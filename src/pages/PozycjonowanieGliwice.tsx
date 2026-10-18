@@ -3,9 +3,7 @@ import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import {
-  Search,
   MapPin,
-  TrendingUp,
   CheckCircle2,
   ArrowRight,
   BarChart2,
@@ -13,9 +11,7 @@ import {
   Building2,
   Globe,
   Target,
-  Clock,
   Award,
-  Shield,
 } from "lucide-react";
 import {
   Accordion,
@@ -31,22 +27,22 @@ const faqItems = [
   {
     question: "Ile kosztuje pozycjonowanie w Gliwicach?",
     answer:
-      "Pozycjonowanie lokalne w Gliwicach zaczyna się od 1 500 zł netto miesięcznie. Gliwice to czwarte co do wielkości miasto w GOM (180k mieszkańców), z silnym sektorem IT i produkcji. Dla branż technicznych, logistyki i e-commerce koszt wynosi 3 500–8 000 zł/mies. Dla lokalnych usług i małych biznesów — szybciej i taniej.",
+      "Wycenę przygotowujemy po rozmowie o zakresie: liczbie i konkurencyjności fraz, obszarze (same Gliwice czy cały GOM), stanie technicznym strony oraz potrzebnych treściach i linkach. Lokalna usługa wymaga zwykle mniejszego zakresu niż firma B2B czy sklep internetowy działający w całym regionie.",
   },
   {
-    question: "Ile czasu zajmuje TOP 10 w Google dla słów z Gliwic?",
+    question: "Ile czasu trwa pozycjonowanie dla słów z Gliwic?",
     answer:
-      "Pierwsze rezultaty przychodzą po 4–6 tygodni. Stabilne pozycje TOP 10 uzyskujemy po 3–5 miesięcy dla słów konkurencyjnych. Gliwice ma niższą konkurencję SEO niż Katowice, ale wyższą niż mniejsze miasta GOM. Dla lokalnych fraz (np. 'montaż systemów Gliwice') — top 10 w 4–8 tygodni. Traffic organiczny wzrasta systematycznie.",
+      "SEO to proces rozłożony na miesiące, a tempo zależy od konkurencji w branży, historii domeny i stanu strony. Nie gwarantujemy konkretnej pozycji ani terminu jej osiągnięcia — pozycje zależą od algorytmów Google i działań konkurencji. Postępy pokazujemy w regularnych raportach.",
   },
   {
     question: "Jakie branże mają największy potencjał SEO w Gliwicach?",
     answer:
-      "IT i automatyka (Rockwell, ABB, Eaton, Siemens) — firmy High-Tech szukają dostawców online. Logistyka i handel (Port Lotniczy Gliwice, trasy A1/A4) — transport, magazynowanie. Produkcja metalurgiczna i energetyka (dziedzictwo górnicze). HoReCa dla 180k populacji. Budownictwo — boom mieszkaniowy i inwestycji. E-commerce w całym GOM.",
+      "IT i automatyka — firmy technologiczne szukają dostawców online. Logistyka i handel (położenie przy A1/A4) — transport, magazynowanie. Produkcja i energetyka. HoReCa i usługi lokalne. Budownictwo. E-commerce w całym GOM. Potencjał konkretnej branży oceniamy w audycie.",
   },
   {
     question: "Czy transformacja Gliwic od górnictwa do High-Tech wpływa na SEO?",
     answer:
-      "Zdecydowanie. Gliwice przechodzą transformację od górnictwa do automatyki, IT i High-Tech. To tworzy nowy rynek — frazy takie jak 'rozwiązania automatyki Gliwice', 'integrator systemów GOM', 'IT consulting Śląsk' mają rosnący potencjał. Konkurencja SEO jest niższa niż dla tradycyjnych rynków.",
+      "Zdecydowanie. Gliwice przechodzą transformację od górnictwa do automatyki, IT i High-Tech. To tworzy nowy rynek — frazy takie jak 'rozwiązania automatyki Gliwice', 'integrator systemów GOM', 'IT consulting Śląsk' mają rosnący potencjał. Poziom konkurencji dla takich fraz sprawdzamy w audycie.",
   },
   {
     question: "Czy warto pozycjonować się na cały GOM czy tylko Gliwice?",
@@ -56,30 +52,19 @@ const faqItems = [
   {
     question: "Czy Politechnika Śląska zmienia dynamikę SEO w Gliwicach?",
     answer:
-      "Tak — Politechnika ma 20k+ studentów i pracowników. Potencjał SEO dla 'akademiki Gliwice', 'noclegi dla pracowników konferencji', 'usługi dla studentów'. B2B dla uczelni: rozwiązania IT, logistyka, catering. Poszerzamy grę poza typowe lokalne usługi na segment akademicki.",
+      "Może — Politechnika Śląska przyciąga studentów, pracowników i gości konferencji. Potencjał SEO dla 'akademiki Gliwice', 'noclegi dla pracowników konferencji', 'usługi dla studentów'. B2B dla uczelni: rozwiązania IT, logistyka, catering. Poszerzamy grę poza typowe lokalne usługi na segment akademicki.",
   },
 ];
 
 const PozycjonowanieGliwice = () => {
-  const results = [
-    {
-      metric: "+285%",
-      label: "Wzrost ruchu organicznego",
-      context: "automaty i IT firmy",
-    },
-    { metric: "TOP 5", label: "Pozycja w Google", context: "frazy Gliwice" },
-    { metric: "5 mies.", label: "Czas do stabilnych pozycji", context: "konkurencyjne frazy" },
-    { metric: "4,8/5", label: "Ocena klientów", context: "12 opinii" },
-  ];
-
   const districts = [
     "Śródmieście",
-    "Włókniarza",
+    "Zatorze",
     "Szobiszowice",
-    "Wojkowice",
+    "Sośnica",
     "Stare Gliwice",
-    "Lutomiersk",
-    "Przedmieście",
+    "Łabędy",
+    "Ostropa",
     "Trynek",
   ];
 
@@ -139,9 +124,9 @@ const PozycjonowanieGliwice = () => {
 
             <FadeInView delay={0.2}>
               <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
-                Pomagamy firmom z Gliwic zdobyć pierwszą stronę Google. Gliwice to centrum automatyki,
-                IT i high-tech sektora w GOM (2.2M ludzi). Audyt SEO, optymalizacja techniczna,
-                content i link building dostosowane do transformującego się Śląska.
+                Pomagamy firmom z Gliwic poprawić widoczność w Google. Pracujemy z Poznania, a firmy
+                z Gliwic obsługujemy zdalnie. Audyt SEO, optymalizacja techniczna, content i link building
+                dostosowane do Twojej branży i rynku GOM.
               </p>
             </FadeInView>
 
@@ -154,7 +139,7 @@ const PozycjonowanieGliwice = () => {
                 </Button>
                 <Button size="lg" variant="outline" asChild className="text-base px-8 border-gray-700 text-white hover:bg-gray-800">
                   <Link to="/uslugi/pozycjonowanie">
-                    Pakiety i ceny SEO
+                    Oferta SEO
                   </Link>
                 </Button>
               </div>
@@ -162,7 +147,7 @@ const PozycjonowanieGliwice = () => {
 
             <FadeInView delay={0.4}>
               <div className="flex flex-wrap justify-center gap-6 mt-12 text-sm text-gray-400">
-                {["White-hat SEO", "Raport co 2 tygodnie", "Doświadczenie High-Tech", "Gwarancja transparentności"].map(
+                {["White-hat SEO", "Regularne raporty", "Współpraca zdalna", "Jasne zasady współpracy"].map(
                   (item) => (
                     <div key={item} className="flex items-center gap-2">
                       <CheckCircle2 className="w-4 h-4 text-yellow-400" />
@@ -172,23 +157,6 @@ const PozycjonowanieGliwice = () => {
                 )}
               </div>
             </FadeInView>
-          </div>
-        </div>
-      </section>
-
-      {/* Results */}
-      <section className="py-16 bg-gray-800 border-y border-gray-700">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {results.map((r, i) => (
-              <FadeInView key={i} delay={i * 0.1} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-1">
-                  {r.metric}
-                </div>
-                <div className="text-sm font-medium text-white">{r.label}</div>
-                <div className="text-xs text-gray-400 mt-1">{r.context}</div>
-              </FadeInView>
-            ))}
           </div>
         </div>
       </section>
@@ -206,20 +174,19 @@ const PozycjonowanieGliwice = () => {
             <FadeInView>
               <div className="space-y-6 text-gray-300">
                 <p>
-                  Gliwice to <strong className="text-white">180 tys. ludzi</strong> ale
-                  <strong className="text-white"> czwarte co do wielkości miasto w konurbacji GOM (2.2M)</strong> — hub transformacji od górnictwa do High-Tech,
-                  automatyki i IT. Centrum zaawansowanych rozwiązań technologicznych dla całego Śląska.
+                  Gliwice to <strong className="text-white">jedno z miast metropolii GOM</strong> — miasto
+                  przechodzące transformację od górnictwa do automatyki, IT i nowych technologii.
                 </p>
                 <p>
-                  <strong className="text-white">IT i Automatyka boom</strong> — Rockwell Automation, ABB,
-                  Eaton, Siemens, rozwiązania automacyjne. Politechnika Śląska (20k+ studentów) — talent pool
-                  dla startupów i firm tech. To young, dynamic market z ogromnym potencjałem SEO dla high-tech i B2B.
+                  <strong className="text-white">IT i automatyka</strong> — firmy technologiczne i dostawcy
+                  rozwiązań automatyki. Politechnika Śląska — zaplecze dla startupów i firm tech. Dla firm
+                  high-tech i B2B to rynek, w którym warto zadbać o widoczność w Google.
                 </p>
                 <p>
                   <strong className="text-white">Logistyka A1/A4</strong> — crossroads autostrad.
                   <strong className="text-white"> Kultura i nauka (Muzeum Górnictwa, Politechnika)</strong>.
-                  Handel e-commerce, HoReCa dla 180k populacji. Konkurencja SEO jest umiarkowana
-                  — idealny rynek do dominacji.
+                  Handel e-commerce, HoReCa i usługi lokalne. Poziom konkurencji SEO w Twojej branży
+                  sprawdzamy w audycie.
                 </p>
               </div>
             </FadeInView>
@@ -227,7 +194,7 @@ const PozycjonowanieGliwice = () => {
             <FadeInView delay={0.2}>
               <div className="bg-gray-800 border border-gray-700 rounded-xl p-6">
                 <h3 className="font-bold text-white mb-4">
-                  Pozycjonujemy firmy we wszystkich dzielnicach Gliwic
+                  Zdalnie obsługujemy firmy z całych Gliwic
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {districts.map((district) => (
@@ -253,10 +220,10 @@ const PozycjonowanieGliwice = () => {
         <div className="container mx-auto px-4">
           <FadeInView className="text-center mb-12">
             <h2 className="text-3xl font-bold text-white mb-4">
-              Branże, które pozycjonujemy w Gliwicach
+              Branże, z którymi pracujemy przy SEO dla Gliwic
             </h2>
             <p className="text-gray-300 max-w-xl mx-auto">
-              Od IT i automatyki po logistykę — doświadczenie w sektorach transformującego się High-Tech Górnego Śląska.
+              Od IT i automatyki po logistykę — strategię dobieramy do specyfiki branży i rynku Górnego Śląska.
             </p>
           </FadeInView>
 
@@ -304,7 +271,7 @@ const PozycjonowanieGliwice = () => {
               {
                 step: "04",
                 title: "Raportowanie i dostosowanie",
-                desc: "Co 2 tygodnie raportujemy pozycje i ruch. Strategia dostosowywana do zmian konkurencji i wzrostu rynku Gliwic.",
+                desc: "Regularnie raportujemy pozycje i ruch. Strategię dostosowujemy do zmian konkurencji i wyników.",
               },
             ].map((step, i) => (
               <FadeInView key={i} delay={i * 0.1}>
@@ -330,85 +297,41 @@ const PozycjonowanieGliwice = () => {
         <div className="container mx-auto px-4">
           <FadeInView className="text-center mb-12">
             <h2 className="text-3xl font-bold text-white mb-4">
-              Pakiety pozycjonowania
+              Od czego zależy wycena pozycjonowania
             </h2>
             <p className="text-gray-300 max-w-xl mx-auto">
-              Elastyczne pakiety dostosowane do potrzeb Twojej firmy. Wszystkie pakiety zawierają pełny audyt SEO.
+              Nie mamy sztywnych pakietów. Wycenę przygotowujemy po rozmowie o zakresie i po wstępnej analizie strony.
             </p>
           </FadeInView>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {[
               {
-                name: "LOCAL",
-                price: "800-1500",
-                features: [
-                  "Audyt SEO",
-                  "20-30 słów kluczowych",
-                  "Optymalizacja on-page",
-                  "Raport co 2 tygodnie",
-                  "Gliwice + bliska okolica",
-                ],
+                name: "Frazy i obszar",
+                desc: "Liczba i konkurencyjność słów kluczowych oraz to, czy celujesz w same Gliwice, cały GOM czy Śląsk.",
               },
               {
-                name: "STANDARD",
-                price: "1500-3000",
-                features: [
-                  "Audyt SEO + techniczny",
-                  "40-60 słów kluczowych",
-                  "Optymalizacja + content",
-                  "Link building",
-                  "Raport tygodniowy",
-                  "Gliwice + całe GOM",
-                ],
-                highlight: true,
+                name: "Stan strony",
+                desc: "Kondycja techniczna, szybkość, struktura i historia domeny — od tego zależy zakres optymalizacji.",
               },
               {
-                name: "PRO",
-                price: "3000-6000",
-                features: [
-                  "Pełny audyt wieloaspektowy",
-                  "80+ słów kluczowych",
-                  "Content strategy",
-                  "Zaawansowany link building",
-                  "Raport tygodniowy + konsultacje",
-                  "Gliwice + Śląsk + B2B",
-                ],
+                name: "Treści i linki",
+                desc: "Ile nowych treści trzeba przygotować i jaki zakres link buildingu ma sens w Twojej branży.",
               },
-            ].map((tier, i) => (
+            ].map((factor, i) => (
               <FadeInView key={i} delay={i * 0.1}>
-                <div className={`rounded-xl p-8 border transition-all ${
-                  tier.highlight
-                    ? "bg-gray-900 border-yellow-400 ring-2 ring-yellow-400/20"
-                    : "bg-gray-900 border-gray-700"
-                }`}>
-                  <h3 className={`text-lg font-bold mb-2 ${
-                    tier.highlight ? "text-yellow-400" : "text-white"
-                  }`}>
-                    {tier.name}
-                  </h3>
-                  <div className="mb-6">
-                    <span className="text-3xl font-bold text-white">{tier.price} zł</span>
-                    <span className="text-gray-400 ml-2">/mies. netto</span>
-                  </div>
-                  <ul className="space-y-3 mb-8">
-                    {tier.features.map((feature, j) => (
-                      <li key={j} className="flex items-start gap-3 text-gray-300">
-                        <CheckCircle2 className="w-5 h-5 text-yellow-400 shrink-0 mt-0.5" />
-                        <span>{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <Button asChild className={`w-full ${
-                    tier.highlight
-                      ? "bg-yellow-400 text-gray-900 hover:bg-yellow-300"
-                      : "border-gray-700 text-white hover:bg-gray-800"
-                  }`} variant={tier.highlight ? "default" : "outline"}>
-                    <Link to="/kontakt">Wybierz pakiet</Link>
-                  </Button>
+                <div className="rounded-xl p-8 border bg-gray-900 border-gray-700 h-full">
+                  <h3 className="text-lg font-bold mb-3 text-white">{factor.name}</h3>
+                  <p className="text-gray-300">{factor.desc}</p>
                 </div>
               </FadeInView>
             ))}
+          </div>
+
+          <div className="text-center mt-10">
+            <Button asChild className="bg-yellow-400 text-gray-900 hover:bg-yellow-300">
+              <Link to="/kontakt">Zapytaj o wycenę</Link>
+            </Button>
           </div>
         </div>
       </section>
@@ -418,7 +341,7 @@ const PozycjonowanieGliwice = () => {
         <div className="container mx-auto px-4 text-center">
           <FadeInView>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Gotowy na pierwszą stronę Google w Gliwicach?
+              Chcesz poprawić widoczność w Google w Gliwicach?
             </h2>
             <p className="text-gray-800 text-lg mb-8 max-w-xl mx-auto">
               Zapytaj o audyt SEO. Zakres i wycenę ustalimy na bezpłatnej konsultacji, a raport przygotujemy z konkretnymi

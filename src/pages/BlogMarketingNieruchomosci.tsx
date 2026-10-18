@@ -10,45 +10,45 @@ import { ArrowLeft, Calendar, Clock, User, ChevronRight, Camera, TrendingUp } fr
 const faqItems = [
   {
     question: "Ile kosztuje reklama nieruchomości na Google Ads?",
-    answer: "Google Ads dla nieruchomości zwykle kosztuje 15-50 zł za klik (CPC), zależnie od lokalizacji i konkurencji. Budżet startowy to 2000-5000 zł/miesiąc. Średni koszt zdobycia liśmy kontaktu to 100-300 zł. Lokalnych rynków mniejszych miast są tańsze (15-25 zł CPC), podczas gdy duże miasta jak Warszawa to 30-50 zł."
+    answer: "Koszt kliknięcia (CPC) w Google Ads dla nieruchomości zależy głównie od lokalizacji, konkurencji w danym mieście i dopasowania słów kluczowych. W dużych miastach kliknięcia są zwykle wyraźnie droższe niż na mniejszych rynkach lokalnych. Budżet warto ustalić po sprawdzeniu stawek w Planerze słów kluczowych i po pierwszych tygodniach testów, mierząc koszt pozyskania kontaktu (CPL)."
   },
   {
     question: "Czy wirtualne wycieczki (virtual tours) faktycznie zwiększają sprzedaż?",
-    answer: "Tak — nieruchomości z wirtualnymi wycieczkami mają 2-3x więcej zapytań. Klienci chcą zobaczyć całe mieszkanie przed wizytą. Virtual tour redukuje niepotrzebne wizyty, oszczędzając czas pośrednika. Koszt: 200-500 zł za nieruchomość. ROI zwykle zwraca się w 2-3 sprzedanych ofertach."
+    answer: "Często pomagają. Klienci chcą zobaczyć całe mieszkanie przed wizytą, a virtual tour odsiewa osoby, którym układ czy standard nie pasuje, co oszczędza czas pośrednika na niepotrzebnych wizytach. Koszt zależy od metrażu, liczby punktów i technologii, a opłacalność warto ocenić na kilku ofertach, porównując liczbę i jakość zapytań."
   },
   {
     question: "Które media społeczne działają najlepiej dla biur nieruchomości?",
-    answer: "Instagram i Facebook dominują w nieruchomościach. Instagram dla mlodszych kupujących (fotografia, reel'e), Facebook dla starszych (oferty, dyskusje). LinkedIn jest niedoceniany dla B2B (sprzedaż biur, nieruchomości komercyjne). TikTok robi się coraz popularny. Średnia konwersja: Facebook/Instagram 0,5-1%, LinkedIn 2-3%."
+    answer: "Instagram i Facebook dominują w nieruchomościach. Instagram dla mlodszych kupujących (fotografia, reel'e), Facebook dla starszych (oferty, dyskusje). LinkedIn jest niedoceniany dla B2B (sprzedaż biur, nieruchomości komercyjne). TikTok robi się coraz popularny. Konwersję warto mierzyć osobno dla każdego kanału, bo zależy od grupy docelowej i rodzaju oferty."
   },
   {
     question: "Jakie słowa kluczowe mają największy potencjał dla biura nieruchomości?",
-    answer: "Słowa lokalne mają najwyżej konwersję: 'mieszkanie na sprzedaż Warszawa', 'dom do wynajęcia Kraków', 'biuro do wynajęcia [miasto]'. Szacunkowe wolumeny to 300-1000 wyszukiwań/miesiąc dla większych miast. Long-tail: 'dwupokojowe mieszkanie na sprzedaż w Piaseczkach blisko metra' ma mniej trafficu ale wyższą konwersję."
+    answer: "Słowa lokalne mają najwyżej konwersję: 'mieszkanie na sprzedaż Warszawa', 'dom do wynajęcia Kraków', 'biuro do wynajęcia [miasto]'. Rzeczywiste wolumeny sprawdzisz w Planerze słów kluczowych Google. Long-tail: 'dwupokojowe mieszkanie na sprzedaż w Piaseczkach blisko metra' ma mniej trafficu ale wyższą konwersję."
   },
   {
     question: "Jak SEO dla biura nieruchomości różni się od innego biznesu?",
-    answer: "SEO nieruchomości jest 80% lokalne. Musisz rankować dla 'nieruchomości [miasto]', a następnie dla konkretnych dzielnic/osiedli. Google Moja Firma (GMB) jest kluczowe — musi być w pełni uzupełnione. Backlinki z portali nieruchomości (Otodom, Gratka, Morizon) liczą się więcej. Treści muszą być bardzo lokalne i specyficzne."
+    answer: "SEO nieruchomości jest w dużej mierze lokalne. Musisz rankować dla 'nieruchomości [miasto]', a następnie dla konkretnych dzielnic/osiedli. Google Moja Firma (GMB) jest kluczowe — musi być w pełni uzupełnione. Backlinki z portali nieruchomości (Otodom, Gratka, Morizon) liczą się więcej. Treści muszą być bardzo lokalne i specyficzne."
   },
   {
     question: "Czy email marketing działa dla biur nieruchomości?",
-    answer: "Tak — email marketing ma najwyższą ROI w nieruchomościach. Osoba, która przejrzała 3+ ofert, ma 30-50% szansę na zakup w ciągu 6 miesięcy. Regular newsletter z nowymi ofertami uderzającymi w kryteria (lokalizacja, cena, typ) ma 2-3% konwersję. Koszt: znikomy (Mailchimp free do 500 kontaktów), zarabianie: 5000-50000 zł/deal."
+    answer: "Tak, szczególnie przy kontaktach, które już przeglądały oferty i zostawiły dane. Regularny newsletter z nowymi ofertami dopasowanymi do kryteriów (lokalizacja, cena, typ) pozwala wrócić do klienta, gdy pojawi się coś dla niego. Koszt narzędzi do mailingu jest zwykle niewielki w porównaniu z wartością jednej transakcji."
   },
   {
     question: "Czy portal Otodom/Gratka to wystarczająca strategia marketingowa?",
-    answer: "Nie. Portale nieruchomości to konieczność, nie strategia. Są tam miliony ofert — łatwo się zgubić. Musisz wyróżniać się fotografią, opisem, virtual tour, atakami na Google Ads i social media. Biura, które polegają TYLKO na portalach, tracą 30-40% potencjalnego biznesu na konkurencję."
+    answer: "Nie. Portale nieruchomości to konieczność, nie strategia. Są tam miliony ofert — łatwo się zgubić. Musisz wyróżniać się fotografią, opisem, virtual tour, atakami na Google Ads i social media. Biura, które polegają tylko na portalach, łatwo oddają część potencjalnych klientów konkurencji."
   },
   {
     question: "Jak zmierzyć efektywność marketingu nieruchomości?",
-    answer: "KPIs: ile zapytań/aplikacji na miesiąc, ile się przelewa na wizyty, ile wizyt przelewa się na oferty. Śledź CPL (koszt liśmy), CPA (koszt per aplikację), conversion rate na każdym etapie. UTM na wszystkich linkach. Powinna być 7-10% konwersja z zapytania do sprzedaży. Jeśli mniej — poprawiaj fotografie, opisy, funnel."
+    answer: "KPIs: ile zapytań/aplikacji na miesiąc, ile się przelewa na wizyty, ile wizyt przelewa się na oferty. Śledź CPL (koszt liśmy), CPA (koszt per aplikację), conversion rate na każdym etapie. UTM na wszystkich linkach. Porównuj wyniki miesiąc do miesiąca — jeśli konwersja z zapytania do sprzedaży spada, poprawiaj fotografie, opisy, funnel."
   }
 ];
 
 const marketingChannels = [
-  { channel: "Google Ads (lokalne SEM)", cost: "15-50 zł/klik", reach: "1000-5000 zapytań/mies", conversion: "5-10%" },
-  { channel: "Facebook/Instagram Ads", cost: "0,5-2 zł/klik", reach: "10000-50000 wyświetleń", conversion: "0,5-2%" },
-  { channel: "Portal Otodom/Gratka", cost: "0-150 zł/oferta", reach: "100000+ potencjalni kupujący", conversion: "2-5%" },
-  { channel: "SEO lokalne", cost: "2000-5000 zł/mies", reach: "Organiczny, rosnący", conversion: "8-15%" },
-  { channel: "Virtual tours + Video", cost: "200-500 zł/oferta", reach: "2-3x więcej zapytań", conversion: "+2-3x" },
-  { channel: "Email do bazy klientów", cost: "0-50 zł/mies", reach: "Zależnie od listy", conversion: "2-5%" }
+  { channel: "Google Ads (lokalne SEM)", cost: "Płatność za klik, stawki zależne od miasta", reach: "Osoby aktywnie szukające", conversion: "Wysoka intencja zakupu" },
+  { channel: "Facebook/Instagram Ads", cost: "Budżet dzienny, zwykle tańsze kliknięcia", reach: "Szeroki zasięg lokalny", conversion: "Niższa, dobra do retargetingu" },
+  { channel: "Portal Otodom/Gratka", cost: "Opłata za ogłoszenie lub pakiet", reach: "Duża baza kupujących", conversion: "Duża konkurencja ofert" },
+  { channel: "SEO lokalne", cost: "Stała praca nad treścią i profilem", reach: "Organiczny, rosnący", conversion: "Wysoka, efekty po czasie" },
+  { channel: "Virtual tours + Video", cost: "Zależny od metrażu i zakresu", reach: "Wspiera każdy kanał", conversion: "Lepiej przygotowane wizyty" },
+  { channel: "Email do bazy klientów", cost: "Niski koszt narzędzi", reach: "Zależnie od listy", conversion: "Dobra przy ciepłej bazie" }
 ];
 
 const BlogMarketingNieruchomosci = () => {
@@ -177,16 +177,16 @@ const BlogMarketingNieruchomosci = () => {
                 </p>
 
                 <p className="text-gray-300 mb-6">
-                  <strong className="text-white">Statystyki tego sektora:</strong>
+                  <strong className="text-white">Co warto wiedzieć o tym sektorze:</strong>
                 </p>
 
                 <ul className="space-y-3 mb-6 text-gray-300">
-                  <li>• 92% kupujących zaczyna poszukiwanie nieruchomości online (portale, Google)</li>
-                  <li>• Przeciętny kupujący przegląda 10-15 ofert zanim zgłosi się do biura</li>
-                  <li>• Fotografia i video są decydujące — 78% odrzuca ofertę po złych zdjęciach</li>
-                  <li>• Biura z virtual tour'ami mają 3x więcej zapytań</li>
-                  <li>• Email marketing w nieruchomościach ma 2-5% konwersję (najwyższą spośród branż)</li>
-                  <li>• Lokalny SEO dla biura to 40-60% nowych leadów</li>
+                  <li>• Większość kupujących zaczyna poszukiwanie nieruchomości online (portale, Google)</li>
+                  <li>• Kupujący zwykle przegląda wiele ofert, zanim zgłosi się do biura</li>
+                  <li>• Fotografia i video są decydujące — słabe zdjęcia często kończą przeglądanie oferty</li>
+                  <li>• Virtual tour pomaga wyróżnić ofertę na tle konkurencji</li>
+                  <li>• Email marketing dobrze sprawdza się przy kontaktach, które już przeglądały oferty</li>
+                  <li>• Lokalne SEO i wizytówka Google mogą być stałym źródłem nowych leadów</li>
                 </ul>
 
                 <h2 className="text-2xl md:text-3xl font-bold mt-12 mb-6 text-white">
@@ -225,7 +225,7 @@ const BlogMarketingNieruchomosci = () => {
                 </h2>
 
                 <p className="text-gray-300 mb-6">
-                  Zła fotografia to kamera na smartfonie. Dobra fotografia to zawód. W nieruchomościach fotografia i wideo to 70-80% decyzji kupującego.
+                  Zła fotografia to kamera na smartfonie. Dobra fotografia to zawód. W nieruchomościach fotografia i wideo w dużej mierze decydują o tym, czy kupujący w ogóle zainteresuje się ofertą.
                 </p>
 
                 <p className="text-gray-300 mb-6">
@@ -233,27 +233,27 @@ const BlogMarketingNieruchomosci = () => {
                 </p>
 
                 <ul className="space-y-3 mb-6 text-gray-300">
-                  <li>• Nieruchomości ze zdjęciami profesjonalnymi mają 2-3x więcej zapytań</li>
-                  <li>• 45% kupujących nie sprawdzi oferty, jeśli zdjęcia są słabe</li>
-                  <li>• Virtual tour zmienia 2-3 wizyty na 0,5-1 wizytę (oszczędzasz czas)</li>
-                  <li>• Video listings mają wyższą cenę sprzedaży (ludzie widzą wartość)</li>
-                  <li>• Drony i zdjęcia z perspektywy zwiększają konwersję o 40%</li>
+                  <li>• Profesjonalne zdjęcia wyróżniają ofertę na portalu pełnym podobnych ogłoszeń</li>
+                  <li>• Słabe zdjęcia sprawiają, że wiele osób pomija ofertę bez czytania opisu</li>
+                  <li>• Virtual tour odsiewa niepotrzebne wizyty (oszczędzasz czas)</li>
+                  <li>• Wideo pomaga pokazać wartość nieruchomości i jej otoczenia</li>
+                  <li>• Ujęcia z drona dobrze pokazują lokalizację, działkę i okolicę</li>
                 </ul>
 
                 <p className="text-gray-300 mb-6">
-                  <strong className="text-white">Cennik fotografii nieruchomości (2025):</strong>
+                  <strong className="text-white">Od czego zależy koszt fotografii nieruchomości:</strong>
                 </p>
 
                 <ul className="space-y-3 mb-6 text-gray-300">
-                  <li>• Fotografia standardowa: 300-500 zł (30-50 zdjęć, obróbka)</li>
-                  <li>• Fotografia premium (HDR, drony): 500-1000 zł</li>
-                  <li>• Virtual tour 360°: 200-400 zł</li>
-                  <li>• Wideo walkthrough: 300-600 zł (3-5 min)</li>
-                  <li>• Pakiet kompleks (foto + video + tour): 1000-2000 zł</li>
+                  <li>• Fotografia standardowa: liczba zdjęć, metraż i zakres obróbki</li>
+                  <li>• Fotografia premium: technika HDR, ujęcia z drona, praca w kilku porach dnia</li>
+                  <li>• Virtual tour 360°: liczba punktów i pomieszczeń</li>
+                  <li>• Wideo walkthrough: długość materiału, montaż, napisy i muzyka</li>
+                  <li>• Pakiet (foto + video + tour): łączenie usług w jednym terminie zwykle obniża koszt jednostkowy</li>
                 </ul>
 
                 <p className="text-gray-300 mb-6">
-                  <strong className="text-white">ROI:</strong> 1 sprzedana nieruchomość = marża 5000-50000 zł. Koszt fotografii się zwraca w 1-2 ofertach. Brak profesjonalnych zdjęć to strata potencjalnego przychodu.
+                  <strong className="text-white">ROI:</strong> prowizja z jednej sprzedanej nieruchomości jest zwykle wielokrotnie wyższa niż koszt profesjonalnej sesji. Brak profesjonalnych zdjęć to strata potencjalnego przychodu.
                 </p>
 
                 <h2 className="text-2xl md:text-3xl font-bold mt-12 mb-6 text-white">
@@ -270,7 +270,7 @@ const BlogMarketingNieruchomosci = () => {
 
                 <ol className="space-y-4 mb-6 text-gray-300 list-decimal list-inside">
                   <li>
-                    <strong className="text-white">Google Moja Firma (GMB):</strong> To kluczowe. Uzupełnij 100%: zdjęcia biura, portfolio ofert, recenzje, godziny. 40-50% leadów pochodzi z GMB dla biur nieruchomości.
+                    <strong className="text-white">Google Moja Firma (GMB):</strong> To kluczowe. Uzupełnij wszystkie pola: zdjęcia biura, portfolio ofert, recenzje, godziny. Dla wielu biur nieruchomości to jedno z ważniejszych źródeł leadów.
                   </li>
                   <li>
                     <strong className="text-white">Lokalne słowa kluczowe:</strong> Pisz artykuły o dzielnicach, inwestycjach w konkretnych lokalizacjach. Każdy dzielnica/osiedle = osobna strona (co wymaga struktury).
@@ -345,19 +345,19 @@ const BlogMarketingNieruchomosci = () => {
                 </h2>
 
                 <ol className="space-y-4 mb-8 text-gray-300 list-decimal list-inside">
-                  <li><strong className="text-white">Profesjonalna fotografia nieruchomości.</strong> To pierwszy krok. Bez niej, szum na portalach to wszystko. Budżet: 300-500 zł/oferta. ROI: 1 dodatkowa sprzedaż</li>
-                  <li><strong className="text-white">Virtual tour 360° lub video.</strong> Zmień zachowanie klienta. Mniej wizyt w biurze, więcej gotowych do kupna. Koszt: 200-400 zł. Efekt: +2-3x zapytań</li>
-                  <li><strong className="text-white">Uzupełnij 100% Google Moja Firma.</strong> To darmowy, potężny kanał. 40-50% leadów dla biur pochodzi stąd. Czas: 1-2 godziny</li>
-                  <li><strong className="text-white">Buduj bazę email ze swoimi leadami.</strong> Email marketing w nieruchomościach ma najwyższą ROI. Regularny newsletter o nowych ofertach = 2-5% konwersja</li>
+                  <li><strong className="text-white">Profesjonalna fotografia nieruchomości.</strong> To pierwszy krok. Bez niej, szum na portalach to wszystko. Wystarczy jedna dodatkowa sprzedaż, żeby się zwróciła</li>
+                  <li><strong className="text-white">Virtual tour 360° lub video.</strong> Zmień zachowanie klienta. Mniej wizyt w biurze, więcej gotowych do kupna</li>
+                  <li><strong className="text-white">Uzupełnij w pełni Google Moja Firma.</strong> To darmowy, potężny kanał. Czas: 1-2 godziny</li>
+                  <li><strong className="text-white">Buduj bazę email ze swoimi leadami.</strong> Email marketing to tani sposób na utrzymanie kontaktu z leadami. Regularny newsletter o nowych ofertach pozwala wracać do ciepłych kontaktów</li>
                   <li><strong className="text-white">Zainwestuj w social media + Google Ads.</strong> Portale nieruchomości to konieczność, ale tam jesteś jeden z milionów. Własne kanały (Instagram, Facebook, Google Ads) to gdzie zdobywasz przewagę konkurencyjną</li>
                 </ol>
 
                 <p className="text-gray-300 mb-6">
-                  Marketing nieruchomości w 2025 to połączenie tradycji (zaufanie, kontakt osobisty) z nowoczesnością (fotografia, social media, SEO, AI-powered chatboty). Biura, które łączą oba podejścia, dominują rynek.
+                  Marketing nieruchomości w 2025 to połączenie tradycji (zaufanie, kontakt osobisty) z nowoczesnością (fotografia, social media, SEO, AI-powered chatboty). Biura, które łączą oba podejścia, mają przewagę nad konkurencją.
                 </p>
 
                 <p className="text-gray-400 italic">
-                  Chcesz skalować marketing Twojego biura nieruchomości? FOTZ ma doświadczenie z biurami od Gdańska do Krakowa. Zaplanujemy strategię, obsługimy kanały, zdobędziemy Ci leadów. Zaplanuj konsultację poniżej.
+                  Chcesz rozwinąć marketing Twojego biura nieruchomości? FOTZ Studio działa z Poznania, a firmy z innych miast obsługuje zdalnie. Pomożemy zaplanować strategię i poprowadzić kanały: fotografię, wideo, social media i kampanie. Zaplanuj konsultację poniżej.
                 </p>
               </div>
             </div>

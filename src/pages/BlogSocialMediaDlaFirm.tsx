@@ -12,7 +12,7 @@ import { FadeInView } from "@/components/FadeInView";
 const faqItems = [
   {
     question: "Ile kosztuje prowadzenie social media dla firmy?",
-    answer: "Prowadzenie social media dla firmy kosztuje od 1500 do 5000 zł miesięcznie, w zależności od liczby platform, częstotliwości publikacji i zakresu usług. Mniejsze agencje lub freelancerzy mogą oferować od 1000 zł, podczas gdy duże agencje mogą pobierać 5000+ zł. Wycena zależy od branży, rozmiaru zespołu firmy i od tego, czy w cenę wliczone są kampanie reklamowe."
+    answer: "Koszt zależy przede wszystkim od liczby platform, częstotliwości publikacji, tego, czy w zakresie jest produkcja zdjęć i wideo, oraz od tego, czy obsługa obejmuje kampanie reklamowe. Przykładowe widełki rynkowe w Polsce to mniej więcej 1500–5000 zł miesięcznie za obsługę (bez budżetu reklamowego) — freelancerzy bywają tańsi, duże agencje droższe. To orientacyjne stawki rynkowe, nie cennik FOTZ Studio; my wyceniamy obsługę indywidualnie po rozmowie o zakresie."
   },
   {
     question: "Jak często publikować posty w social media?",
@@ -24,7 +24,7 @@ const faqItems = [
   },
   {
     question: "Czy warto inwestować w reklamy na Facebooku?",
-    answer: "Tak, reklamy na Facebooku (i Instagram Ads) mogą być bardzo efektywne, zwłaszcza dla firm e-commerce i B2C. Średni ROAS (Return on Ad Spend) wynosi 3-5:1 dla dobrze skonfigurowanych kampanii. Warto zacząć od 500-1000 zł testowego budżetu. Kluczowe jest testowanie, optymalizacja i ciągłe A/B testowanie reklam. Złe kampanie mogą tracić pieniądze, dlatego warto pracować z profesjonalistą."
+    answer: "Tak, reklamy na Facebooku (i Instagram Ads) mogą być bardzo efektywne, zwłaszcza dla firm e-commerce i B2C. Zwrot z wydatków reklamowych (ROAS) mocno zależy od branży, marży i jakości kampanii, dlatego warto zacząć od niewielkiego budżetu testowego (np. kilkuset złotych miesięcznie). Kluczowe jest testowanie, optymalizacja i ciągłe A/B testowanie reklam. Złe kampanie mogą tracić pieniądze, dlatego warto pracować z profesjonalistą."
   },
   {
     question: "Jak zbudować społeczność od zera?",
@@ -36,7 +36,7 @@ const faqItems = [
   },
   {
     question: "Kiedy zatrudnić agencję do social media?",
-    answer: "Zatrudnij agencję, gdy: 1) nie masz czasu, aby robić to samodzielnie, 2) wyniki są słabe mimo Twoich wysiłków, 3) masz budżet na reklamy i chcesz je optymalizować, 4) chcesz lepsze strategie i bardziej profesjonalne podejście. Agencje kosztują więcej, ale wyniki są zwykle lepsze. Zanim zatrudnisz agencję, spróbuj robić to sam przez 2-3 miesiące, aby zrozumieć kanały."
+    answer: "Zatrudnij agencję, gdy: 1) nie masz czasu, aby robić to samodzielnie, 2) wyniki są słabe mimo Twoich wysiłków, 3) masz budżet na reklamy i chcesz je optymalizować, 4) chcesz lepsze strategie i bardziej profesjonalne podejście. Agencje kosztują więcej, ale wnoszą doświadczenie z wielu projektów. Zanim zatrudnisz agencję, spróbuj robić to sam przez 2-3 miesiące, aby zrozumieć kanały."
   }
 ];
 
@@ -159,7 +159,7 @@ const BlogSocialMediaDlaFirm = () => {
                 </h2>
 
                 <p className="text-muted-foreground mb-4">
-                  <strong>Statystyki mówią jasno — social media nie są już opcjonalne.</strong> W Polsce 73% dorosłych użytkowników internetu korzysta z mediów społecznościowych. To oznacza, że znajdują się tam Twoi klienci — zarówno obecni, jak i potencjalni. 60% odkrywa marki właśnie przez social media, a 54% robi zakupy online po zobaczeniu produktu w mediach społecznościowych.
+                  <strong>Social media nie są już opcjonalne.</strong> Większość dorosłych użytkowników internetu w Polsce korzysta z mediów społecznościowych. To oznacza, że znajdują się tam Twoi klienci — zarówno obecni, jak i potencjalni. Wiele osób odkrywa nowe marki właśnie w social mediach i sprawdza tam firmę, zanim zdecyduje się na zakup.
                 </p>
 
                 <p className="text-muted-foreground mb-4">
@@ -179,17 +179,17 @@ const BlogSocialMediaDlaFirm = () => {
                 </p>
 
                 <h3 className="text-xl font-heading font-semibold mt-8 mb-4">
-                  Facebook (30 mln Polaków)
+                  Facebook (największy zasięg w Polsce)
                 </h3>
                 <p className="text-muted-foreground mb-4">
-                  Facebook wciąż pozostaje numerem jeden w Polsce. 30 mln Polaków ma konto na Facebooku, a średni czas spędzony to 1,5 godziny dziennie. Algorytm Facebooka zmienił się w ostatnich latach — teraz priorytet mają posty od przyjaciół i rodziny, ale strony mogą nadal uzyskać reach poprzez reklamy. Facebook jest idealny dla firm B2C, lokalne firmy znajdą tutaj swoich klientów. Najlepsze na Facebooku to video, posts z pytaniami i calls to action.
+                  Facebook wciąż pozostaje jedną z najpopularniejszych platform w Polsce i korzystają z niego użytkownicy w bardzo różnym wieku. Algorytm Facebooka zmienił się w ostatnich latach — teraz priorytet mają posty od przyjaciół i rodziny, ale strony mogą nadal uzyskać reach poprzez reklamy. Facebook jest idealny dla firm B2C, lokalne firmy znajdą tutaj swoich klientów. Najlepsze na Facebooku to video, posts z pytaniami i calls to action.
                 </p>
 
                 <h3 className="text-xl font-heading font-semibold mt-8 mb-4">
-                  Instagram (12 mln Polaków)
+                  Instagram (wizualny i zaangażowany)
                 </h3>
                 <p className="text-muted-foreground mb-4">
-                  Instagram jest bardziej wizualny niż Facebook i bardziej zaangażowany. 12 mln Polaków korzysta z Instagrama, a średni czas spędzony to ponad 40 minut dziennie. Instagram Reels (krótkie filmy) są teraz priorytetem algorytmu. Instagram działą dobrze dla brandów lifestyle, mody, kosmetyki, restauracji, fotografii, agentur kreatywnych. Na Instagramie liczy się estetyka — starsze posty mogą nie być zauważane. Stories i Reels generują więcej zaangażowania niż static posts.
+                  Instagram jest bardziej wizualny niż Facebook i bardziej zaangażowany. Korzysta z niego szczególnie dużo młodszych dorosłych. Instagram Reels (krótkie filmy) są teraz priorytetem algorytmu. Instagram działą dobrze dla brandów lifestyle, mody, kosmetyki, restauracji, fotografii, agentur kreatywnych. Na Instagramie liczy się estetyka — starsze posty mogą nie być zauważane. Stories i Reels generują więcej zaangażowania niż static posts.
                 </p>
 
                 <h3 className="text-xl font-heading font-semibold mt-8 mb-4">
@@ -203,14 +203,14 @@ const BlogSocialMediaDlaFirm = () => {
                   TikTok (szybko rosnący, Gen Z)
                 </h3>
                 <p className="text-muted-foreground mb-4">
-                  TikTok ma najmłodszą publiczność w Polsce, ale szybko dorasta. Średni wiek użytkownika to 24 lata, ale rosnie liczba 30-45 latków. Algorytm TikToka faworyzuje video kreatywne, autentyczne (nie perfetto) i zabawne. Jeśli Twoja grupa docelowa to Gen Z lub młodzi milenialowie, TikTok jest obowiązkowy. Dla innych branż może być opcjonalny, chyba że chcesz eksperymentować z nowymi platformami.
+                  TikTok ma najmłodszą publiczność w Polsce, ale szybko dorasta — przybywa na nim także użytkowników po trzydziestce. Algorytm TikToka faworyzuje video kreatywne, autentyczne (nie perfetto) i zabawne. Jeśli Twoja grupa docelowa to Gen Z lub młodzi milenialowie, TikTok jest obowiązkowy. Dla innych branż może być opcjonalny, chyba że chcesz eksperymentować z nowymi platformami.
                 </p>
 
                 <h3 className="text-xl font-heading font-semibold mt-8 mb-4">
                   YouTube (2. największa wyszukiwarka)
                 </h3>
                 <p className="text-muted-foreground mb-4">
-                  YouTube to nie tylko social media — to druga największa wyszukiwarka po Google. 90% Polaków korzysta z YouTube'a. Video content ma najwyższe zaangażowanie spośród wszystkich formatów. Jeśli chcesz budować marę long-term i SEO, YouTube jest niezbędny. Warto zacząć od short video (YouTube Shorts), a potem przejść na dłuższe, bardziej wartościowe video.
+                  YouTube to nie tylko social media — to druga największa wyszukiwarka po Google. Z YouTube'a korzysta ogromna część polskich internautów. Video content ma najwyższe zaangażowanie spośród wszystkich formatów. Jeśli chcesz budować marę long-term i SEO, YouTube jest niezbędny. Warto zacząć od short video (YouTube Shorts), a potem przejść na dłuższe, bardziej wartościowe video.
                 </p>
 
                 <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
@@ -253,7 +253,7 @@ const BlogSocialMediaDlaFirm = () => {
                   Krok 5: Ustal budżet
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  Czy będziesz robić to sam czy zatrudnisz kogoś? Czy będziesz płacić za reklamy? Budżet powinien obejmować czas pracy (lub pensję osoby) oraz budżet na reklamy. Minimum to 1500 zł/miesiąc dla małej firmy (outsourcing) lub 20 godzin tygodniowo własnego czasu + budżet na reklamy.
+                  Czy będziesz robić to sam czy zatrudnisz kogoś? Czy będziesz płacić za reklamy? Budżet powinien obejmować czas pracy (lub pensję osoby) oraz budżet na reklamy. Przy outsourcingu orientacyjny próg rynkowy dla małej firmy to ok. 1500 zł miesięcznie za samą obsługę (przykładowe widełki rynkowe, nie cennik konkretnej agencji); przy pracy we własnym zakresie licz się z kilkunastoma–dwudziestoma godzinami tygodniowo. Do tego dochodzi budżet na reklamy.
                 </p>
 
                 <h3 className="text-xl font-heading font-semibold mt-8 mb-4">
@@ -300,15 +300,15 @@ const BlogSocialMediaDlaFirm = () => {
                 </p>
 
                 <p className="text-muted-foreground mb-4">
-                  <strong>Facebook Ads i Instagram Ads</strong> — to są najlepsze platformy do reklam, ponieważ mają najlepsze targeting. Możesz targetować po wieku, płci, zainteresowaniach, behawiorze, lokalizacji i wiele więcej. Budżet startowy to 500-1000 zł/miesiąc. CPM (koszt za 1000 odsłon) to zwykle 5-15 zł w zależności od industry.
+                  <strong>Facebook Ads i Instagram Ads</strong> — to są najlepsze platformy do reklam, ponieważ mają najlepsze targeting. Możesz targetować po wieku, płci, zainteresowaniach, behawiorze, lokalizacji i wiele więcej. Na start wystarczy niewielki budżet testowy (np. kilkaset złotych miesięcznie). CPM (koszt za 1000 odsłon) zależy od branży, grupy docelowej i sezonu.
                 </p>
 
                 <p className="text-muted-foreground mb-4">
-                  <strong>LinkedIn Ads</strong> — droższe niż Facebook, ale targeting jest jeszcze lepszy. Idealne dla B2B. CPM to 20-50 zł. Minimum budget to zwykle 1000-2000 zł/miesiąc.
+                  <strong>LinkedIn Ads</strong> — droższe niż Facebook, ale targeting jest jeszcze lepszy. Idealne dla B2B. Koszt dotarcia jest tu zwykle wyraźnie wyższy niż na Facebooku, więc budżet testowy też powinien być większy.
                 </p>
 
                 <p className="text-muted-foreground mb-6">
-                  <strong>TikTok Ads</strong> — szybko rosnący. CPM jest niski (3-10 zł), ale targeting jest mniej zaawansowany. Warto testować dla brandów skierowanych na młodszą publiczność.
+                  <strong>TikTok Ads</strong> — szybko rosnący. Koszt dotarcia bywa niższy niż na innych platformach, ale targeting jest mniej zaawansowany. Warto testować dla brandów skierowanych na młodszą publiczność.
                 </p>
 
                 <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
@@ -336,7 +336,7 @@ const BlogSocialMediaDlaFirm = () => {
                 </p>
 
                 <p className="text-muted-foreground mb-6">
-                  <strong>ROAS (Return on Ad Spend)</strong> — przychody podzielone przez wydatki na reklamy. Np. jeśli wydałeś 1000 zł na reklamy i wygenerowałeś 5000 zł sprzedaży, ROAS = 5. Dobry ROAS to 3-5:1 lub wyżej.
+                  <strong>ROAS (Return on Ad Spend)</strong> — przychody podzielone przez wydatki na reklamy. Np. jeśli wydałeś 1000 zł na reklamy i wygenerowałeś 5000 zł sprzedaży, ROAS = 5. To, jaki ROAS jest „dobry”, zależy od Twojej marży — policz próg opłacalności dla swojego biznesu.
                 </p>
 
                 <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
@@ -388,7 +388,7 @@ const BlogSocialMediaDlaFirm = () => {
                 </p>
 
                 <p className="text-muted-foreground mb-6">
-                  <strong>Agencja:</strong> Zaletami są doświadczenie, dostęp do tools premium, dedykowany zespół, lepsze wyniki. Wadami są wyższe koszty (1500-5000 zł/miesiąc), mniej kontroli, czasem brak pełnego zrozumienia branży. Agencja jest warta inwestycji, jeśli chcesz profesjonalne wyniki.
+                  <strong>Agencja:</strong> Zaletami są doświadczenie, dostęp do tools premium, dedykowany zespół. Wadami są wyższe koszty (przykładowe widełki rynkowe to ok. 1500–5000 zł miesięcznie za obsługę), mniej kontroli, czasem brak pełnego zrozumienia branży. Agencja jest warta inwestycji, jeśli chcesz profesjonalne wyniki.
                 </p>
 
                 {/* FAQ Section */}

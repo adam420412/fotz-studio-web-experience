@@ -19,7 +19,7 @@ const BlogMarketingB2BPoradnik = () => {
     },
     {
       question: "Ile czasu trwa typowy cykl sprzedaży B2B?",
-      answer: "Cykl sprzedaży B2B trwa średnio od 3 do 6 miesięcy, a w przypadku rozwiązań enterprise nawet 12 miesięcy. Zależy od ceny produktu, liczby zaangażowanych decydentów i skomplikowania procesu."
+      answer: "Cykl sprzedaży B2B często trwa kilka miesięcy, a w przypadku rozwiązań enterprise może sięgać nawet roku. Zależy od ceny produktu, liczby zaangażowanych decydentów i skomplikowania procesu."
     },
     {
       question: "Co to jest MQL i SQL w marketingu B2B?",
@@ -139,7 +139,7 @@ const BlogMarketingB2BPoradnik = () => {
                     <div>
                       <h3 className="font-semibold text-lg mb-2">Wielcy Decydenci</h3>
                       <p className="text-gray-600">
-                        Decyzja zakupowa angażuje średnio 5-7 osób z różnych działów (IT, finanse, management).
+                        Decyzja zakupowa często angażuje kilka osób z różnych działów (IT, finanse, management).
                       </p>
                     </div>
                   </div>
@@ -217,7 +217,7 @@ const BlogMarketingB2BPoradnik = () => {
                 <CardContent className="pt-6">
                   <h3 className="text-xl font-semibold mb-3">LinkedIn Ads</h3>
                   <p className="text-gray-700 mb-3">
-                    LinkedIn to królestwo B2B. Możesz targetować klientów na podstawie stanowiska, branży, poziomu doświadczenia i wielkości firmy. LinkedIn Ads ma najwyższy conversion rate wśród firm B2B.
+                    LinkedIn to królestwo B2B. Możesz targetować klientów na podstawie stanowiska, branży, poziomu doświadczenia i wielkości firmy. Dla wielu firm B2B to jeden z najskuteczniejszych kanałów pozyskiwania leadów.
                   </p>
                   <ul className="space-y-2 text-gray-700">
                     <li>✓ Dokładne targetowanie decydentów</li>
@@ -259,10 +259,10 @@ const BlogMarketingB2BPoradnik = () => {
                 <CardContent className="pt-6">
                   <h3 className="text-xl font-semibold mb-3">Email Marketing</h3>
                   <p className="text-gray-700 mb-3">
-                    Email to najprofitowniejszy kanał B2B. Nurturing sequences poprzez email pomagają w konwersji leadsów na klientów przez edukowanie i budowanie relacji.
+                    Email to jeden z najbardziej opłacalnych kanałów B2B. Nurturing sequences poprzez email pomagają w konwersji leadsów na klientów przez edukowanie i budowanie relacji.
                   </p>
                   <ul className="space-y-2 text-gray-700">
-                    <li>✓ Najwyższe ROI (średnio 4:1)</li>
+                    <li>✓ Niski koszt dotarcia do istniejących kontaktów</li>
                     <li>✓ Automatyzacja nurturing</li>
                     <li>✓ Segmentacja i personalizacja</li>
                   </ul>
@@ -448,7 +448,7 @@ const BlogMarketingB2BPoradnik = () => {
             <h2 className="text-3xl font-bold mb-6 text-gray-900">Email Marketing B2B</h2>
 
             <p className="text-gray-700 mb-6">
-              Email to najprofitowniejszy kanał B2B. Średni ROI email marketingu wynosi 4200% (cztery dolary przychodu na każdy wydany dolar). Jak to robić dobrze?
+              Email to jeden z najbardziej opłacalnych kanałów B2B — koszt wysyłki jest niski, a dobrze prowadzona baza kontaktów pracuje przez lata. Jak to robić dobrze?
             </p>
 
             <div className="bg-purple-50 border-l-4 border-purple-600 p-6 mb-8">
@@ -590,10 +590,10 @@ const BlogMarketingB2BPoradnik = () => {
 
           {/* Section 9: Case Study */}
           <section className="mb-12">
-            <h2 className="text-3xl font-bold mb-6 text-gray-900">Case Study: Kampania B2B SaaS</h2>
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">Przykładowy scenariusz: kampania B2B SaaS</h2>
 
             <p className="text-gray-700 mb-6">
-              Jak wygląda kompletna kampania B2B w praktyce? Oto rzeczywisty case study:
+              Jak może wyglądać kompletna kampania B2B w praktyce? Poniżej przykładowy, hipotetyczny scenariusz — firma i liczby są ilustracyjne, nie opisują realnego klienta:
             </p>
 
             <Card className="mb-8">
@@ -619,7 +619,7 @@ const BlogMarketingB2BPoradnik = () => {
                   </li>
                 </ol>
 
-                <h3 className="font-semibold text-lg mb-4 mt-6">Rezultaty (6 miesięcy):</h3>
+                <h3 className="font-semibold text-lg mb-4 mt-6">Przykładowe wyniki po 6 miesiącach (liczby ilustracyjne):</h3>
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="bg-blue-50 p-4 rounded">
                     <p className="text-blue-900 font-semibold">3,500 MQLs</p>
@@ -631,7 +631,7 @@ const BlogMarketingB2BPoradnik = () => {
                   </div>
                   <div className="bg-blue-50 p-4 rounded">
                     <p className="text-blue-900 font-semibold">62 New Customers</p>
-                    <p className="text-sm text-gray-600">signed (124% of goal)</p>
+                    <p className="text-sm text-gray-600">signed (cel: 50)</p>
                   </div>
                   <div className="bg-blue-50 p-4 rounded">
                     <p className="text-blue-900 font-semibold">3.2x ROI</p>
@@ -641,10 +641,10 @@ const BlogMarketingB2BPoradnik = () => {
 
                 <h3 className="font-semibold text-lg mb-4 mt-6">Wnioski:</h3>
                 <ul className="space-y-2 text-gray-700">
-                  <li>• LinkedIn Ads okazał się najskuteczniejszy (42% lead generation)</li>
-                  <li>• Content marketing buduje trust (44% leads z organicznego traffic)</li>
-                  <li>• Email nurturing ma najwyższy conversion rate (18% MQL &rarr; SQL)</li>
-                  <li>• Partnerships wygenerowali highest quality leads (9% conversion do customer)</li>
+                  <li>• LinkedIn Ads pozwala szybko dotrzeć do precyzyjnie wybranych decydentów</li>
+                  <li>• Content marketing buduje zaufanie i z czasem dostarcza leady z ruchu organicznego</li>
+                  <li>• Email nurturing pomaga zamieniać MQL w SQL, bo edukuje leady przed rozmową ze sprzedażą</li>
+                  <li>• Partnerstwa dają mniej leadów, ale często lepszej jakości</li>
                 </ul>
               </CardContent>
             </Card>

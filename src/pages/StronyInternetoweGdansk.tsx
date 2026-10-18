@@ -43,9 +43,9 @@ const StronyInternetoweGdansk = () => {
   ];
 
   const caseStudies = [
-    { title: "Apartamenty Chorwacja", category: "Strona rezerwacyjna", result: "+180% rezerwacji online", link: "/realizacje/apartamenty-chorwacja", image: apartamentyImg },
+    { title: "Apartamenty Chorwacja", category: "Strona rezerwacyjna", result: "Strona z rezerwacją online", link: "/realizacje/apartamenty-chorwacja", image: apartamentyImg },
     { title: "Victory Cars", category: "Strona motoryzacyjna", result: "Nowoczesny design premium", link: "/realizacje/victory-cars", image: victoryCarsImg },
-    { title: "Cute Dumpling", category: "Strona gastronomiczna", result: "+250% ruchu organicznego", link: "/realizacje/cute-dumpling", image: cuteDumplingImg },
+    { title: "Cute Dumpling", category: "Strona gastronomiczna", result: "Strona dla lokalu gastronomicznego", link: "/realizacje/cute-dumpling", image: cuteDumplingImg },
   ];
 
   const faqItems = [
@@ -54,18 +54,18 @@ const StronyInternetoweGdansk = () => {
     { question: "Czy oferujecie responsywny design i optymalizację SEO?", answer: "Tak — nasze responsywne strony www są projektowane pod kątem szybkiego ładowania i najlepszych praktyk SEO." },
     { question: "Czy pomagacie w tworzeniu sklepów internetowych?", answer: "Tak, tworzymy sklepy internetowe oparte na sprawdzonych rozwiązaniach e-commerce z konfiguracją produktów, płatności i integracjami wysyłkowymi." },
     { question: "Ile czasu trwa przygotowanie i uruchomienie strony?", answer: "Czas realizacji zależy od zakresu — proste strony można uruchomić w kilku tygodniach, bardziej rozbudowane projekty wymagają kilku miesięcy." },
-    { question: "Dlaczego warto wybrać lokalną agencję w Gdańsku?", answer: "Lokalna agencja lepiej rozumie specyfikę rynku Trójmiasta i potrzeby klientów. Dzięki temu otrzymujesz bardziej dopasowane rozwiązania." },
+    { question: "Czy macie biuro w Gdańsku?", answer: "Nie — pracujemy z Poznania, a firmy z Gdańska i Trójmiasta obsługujemy zdalnie: brief, akceptacje projektu i odbiory robimy online, a specyfikę Twojego rynku poznajemy na starcie projektu." },
   ];
 
   const stats = [
     { value: "WWW", label: "Strony i sklepy", icon: Layers },
     { value: "UX", label: "Projekt dla odbiorcy", icon: Star },
-    { value: "5 lat", label: "Doświadczenia", icon: Clock },
+    { value: "SEO", label: "Podstawy w standardzie", icon: Clock },
     { value: "Kontakt", label: "Uzgodniona opieka", icon: Headphones },
   ];
 
   const benefits = [
-    "Znajomość rynku Trójmiasta",
+    "Pracujemy z Poznania, firmy z Trójmiasta obsługujemy zdalnie",
     "Kompleksowa obsługa od projektu po wdrożenie",
     "SEO w standardzie każdej strony",
     "Responsywny design mobile-first",
@@ -76,7 +76,7 @@ const StronyInternetoweGdansk = () => {
   const introContent = {
     title: "Tworzenie stron www dla firm z Trójmiasta",
     paragraphs: [
-      "W dzisiejszych czasach posiadanie profesjonalnej strony internetowej to podstawa sukcesu w biznesie. Nasza agencja specjalizuje się w tworzeniu stron WWW dla firm z Gdańska, Gdyni i Sopotu.",
+      "W dzisiejszych czasach posiadanie profesjonalnej strony internetowej to podstawa sukcesu w biznesie. Pracujemy z Poznania, a firmy z Gdańska, Gdyni i Sopotu obsługujemy zdalnie.",
       "Tworzymy strony, które nie tylko wyglądają estetycznie, ale przede wszystkim generują realne korzyści dla Twojej marki w Trójmieście.",
       "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych.",
       "Gdańsk, Gdynia i Sopot tworzą jeden z najbardziej dynamicznych obszarów biznesowych w Polsce. Silny sektor morski, turystyczny i technologiczny generuje ogromne zapotrzebowanie na profesjonalne strony internetowe."
@@ -256,7 +256,7 @@ const StronyInternetoweGdansk = () => {
               SEO dla stron internetowych w Gdańsku — widoczność w lokalnym Google
             </h2>
             <p className="text-muted-foreground mb-4">
-              Strony internetowe tworzymy z wbudowanym SEO — meta tagi, schema LocalBusiness z adresem gdańskim, szybkość Core Web Vitals i poprawna struktura nagłówków to nasz standard, nie dodatek płatny. Dla firm z Gdańska i Trójmiasta to kluczowe, ponieważ lokalne wyniki Google są bardzo istotnym kanałem pozyskiwania klientów — szczególnie w usługach, restauracjach, prawie i medycynie.
+              Strony internetowe tworzymy z wbudowanym SEO — meta tagi, schema LocalBusiness z danymi Twojej firmy, szybkość Core Web Vitals i poprawna struktura nagłówków to nasz standard, nie dodatek płatny. Dla firm z Gdańska i Trójmiasta to kluczowe, ponieważ lokalne wyniki Google są bardzo istotnym kanałem pozyskiwania klientów — szczególnie w usługach, restauracjach, prawie i medycynie.
             </p>
             <p className="text-muted-foreground mb-6">
               Więcej szczegółów o kompleksowym pakiecie{" "}
