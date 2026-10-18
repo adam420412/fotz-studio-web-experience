@@ -9,7 +9,7 @@ import { RelatedArticles } from "@/components/blog/RelatedArticles";
 const faqItems = [
   {
     question: "Co to jest sales forecast?",
-    answer: "Sales forecast (prognoza sprzedaży) to projekcja przyszłych przychodów na podstawie analizy pipeline'u, historycznych danych i aktualnej aktywności sprzedażowej. Forecast jest kluczowym narzędziem dla liderów sprzedaży — umożliwia planowanie zasobów, budżetów i prognozowanie wyników dla zarządu. Dobry forecast ma accuracy powyżej 90% w horyzoncie kwartalnym. Forecast jest też podstawą zarządzania pipeline'em — identyfikuje luki i ryzyko niedokonania celu w czasie, gdy jest jeszcze szansa na reakcję.",
+    answer: "Sales forecast (prognoza sprzedaży) to projekcja przyszłych przychodów na podstawie analizy pipeline'u, historycznych danych i aktualnej aktywności sprzedażowej. Forecast jest kluczowym narzędziem dla liderów sprzedaży — umożliwia planowanie zasobów, budżetów i prognozowanie wyników dla zarządu. Dobry forecast w horyzoncie kwartalnym niewiele odbiega od faktycznie zamkniętej sprzedaży — wiele zespołów ustala sobie wewnętrzny próg dokładności i rozlicza się z niego. Forecast jest też podstawą zarządzania pipeline'em — identyfikuje luki i ryzyko niedokonania celu w czasie, gdy jest jeszcze szansa na reakcję.",
   },
   {
     question: "Jakie są metody prognozowania sprzedaży?",
@@ -25,7 +25,7 @@ const faqItems = [
   },
   {
     question: "Jakie narzędzia wspierają forecast sprzedaży?",
-    answer: "Narzędzia do forecastingu: Salesforce/HubSpot — podstawowe CRM z forecast categories i pipeline views. Clari — AI-based platform do forecastingu; analizuje aktywność email, kalendarza i przewiduje close probability. Gong — Revenue Intelligence; analiza nagranych rozmów i sygnałów deali. Boostup — advanced revenue forecasting i pipeline management. Aviso — AI forecast z scenario modeling. Narzędzia AI mają accuracy 90-95% vs 60-70% dla manual forecast przez AE. Warunkiem efektywności jest dyscyplina hygieny CRM — garbage in, garbage out.",
+    answer: "Narzędzia do forecastingu: Salesforce/HubSpot — podstawowe CRM z forecast categories i pipeline views. Clari — AI-based platform do forecastingu; analizuje aktywność email, kalendarza i przewiduje close probability. Gong — Revenue Intelligence; analiza nagranych rozmów i sygnałów deali. Boostup — advanced revenue forecasting i pipeline management. Aviso — AI forecast z scenario modeling. Narzędzia AI mogą poprawić dokładność względem ręcznych szacunków AE, ale tylko przy dobrych danych. Warunkiem efektywności jest dyscyplina hygieny CRM — garbage in, garbage out.",
   },
 ];
 
@@ -33,21 +33,21 @@ const forecastCategories = [
   {
     kategoria: "Commit",
     definicja: "AE jest pewny zamknięcia w tym kwartale",
-    accuracy: "Oczekiwana 90%+",
+    accuracy: "Zakładana zwykle 90%+ (wewnętrzna konwencja)",
     manager: "Traktuje jako gwarancję",
     kolor: "green",
   },
   {
     kategoria: "Upside / Best Case",
     definicja: "Deal może się zamknąć, ale z ryzykiem",
-    accuracy: "Oczekiwana 50-70%",
+    accuracy: "Zakładana zwykle 50-70% (wewnętrzna konwencja)",
     manager: "Waży z dyskontem przy roll-upie",
     kolor: "blue",
   },
   {
     kategoria: "Pipeline",
     definicja: "Kwalifikowane szanse, które mogą zamknąć się w kwartale",
-    accuracy: "Oczekiwana 20-40%",
+    accuracy: "Zakładana zwykle 20-40% (wewnętrzna konwencja)",
     manager: "Monitoruje coverage i velocity",
     kolor: "gray",
   },
@@ -66,28 +66,28 @@ const forecastMethods = [
     jak: "Każdy etap pipeline ma % probability. Weighted forecast = suma (wartość x probability) dla wszystkich dealów",
     plusy: "Prosta, automatyczna w CRM",
     minusy: "Bazuje na subiektywnym przypisaniu etapu przez AE — może być manipulowana",
-    accuracy: "Średnia (60–70%)",
+    accuracy: "Średnia",
   },
   {
     metoda: "Historical Win Rate Forecast",
     jak: "Bazuje na rzeczywistym win rate każdego etapu z historycznych danych (12-18 miesięcy)",
     plusy: "Oparta na faktycznych danych, nie subiektywnnych ocenach",
     minusy: "Wymaga dojrzałych danych historycznych, nie sprawdza się dla nowych rynków/produktów",
-    accuracy: "Dobra (70–80%)",
+    accuracy: "Dobra (przy dojrzałych danych)",
   },
   {
     metoda: "Judgment-based (Commit/Upside)",
     jak: "AE i managerowie oceniają które deale zamkną się w kwartale na podstawie rozmów i sygnałów",
     plusy: "Uwzględnia kontekst, który nie jest w CRM",
     minusy: "Subiektywna, wrażliwa na sandbagging lub overoptimism",
-    accuracy: "Zmienna (50–90%)",
+    accuracy: "Zmienna",
   },
   {
     metoda: "AI-based Forecasting",
     jak: "Algorytmy analizują aktywność emailową, spotkania, czas trwania cyklu i przewidują close probability",
-    plusy: "Obiektywna, wysoka accuracy, identyfikuje ryzyk wcześnie",
+    plusy: "Mniej subiektywna, wcześnie identyfikuje ryzyka",
     minusy: "Wymaga integracji z emailem, kalendarzem i CRM; koszt platform AI",
-    accuracy: "Wysoka (85–95%)",
+    accuracy: "Potencjalnie wysoka (zależna od jakości danych)",
   },
 ];
 
@@ -139,14 +139,14 @@ export default function BlogSalesForecastCoTo() {
             <p className="text-xl text-gray-300 mb-8 max-w-3xl">
               Prognoza sprzedaży to fundament planowania biznesowego. Bez dobrego forecastu
               nie można zarządzać zasobami, budżetem ani odpowiedzialnością w organizacji.
-              Poznaj metody, które podnoszą accuracy do 90%+.
+              Poznaj metody, które pomagają zwiększyć dokładność prognoz.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {[
                 { label: "Kategorii forecastu", value: "4" },
                 { label: "Metod prognozowania", value: "4" },
-                { label: "AI forecast accuracy", value: "85–95%" },
-                { label: "Cel accuracy", value: "90%+" },
+                { label: "Głównych ryzyk", value: "5" },
+                { label: "Kluczowa kategoria", value: "Commit" },
               ].map((stat) => (
                 <div key={stat.label} className="bg-white/10 rounded-lg p-4 text-center">
                   <div className="text-2xl font-bold text-cyan-400">{stat.value}</div>

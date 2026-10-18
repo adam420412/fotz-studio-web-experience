@@ -10,23 +10,23 @@ export default function GoogleAdsGdansk() {
   const faqItems = [
     {
       question: "Ile kosztuje Google Ads w Gdańsku?",
-      answer: "Google Ads w Gdańsku zaczyna się od 400 zł/miesiąc za zarządzanie kampanią (pakiet START). Dodatkowy budżet reklamowy to osobna pozycja — od 500 zł/miesiąc dla małych firm do 12 000+ zł/miesiąc dla e-commerce i turystyki. Całkowity koszt zależy od branży, konkurencji na słowa kluczowe i liczby potencjalnych klientów w Trójmieście.",
+      answer: "Wycenę obsługi przygotowujemy po rozmowie o zakresie: liczbie kampanii, produktów i usług, konfiguracji śledzenia i częstotliwości raportów. Budżet reklamowy to osobna pozycja, którą płacisz bezpośrednio Google — jego wysokość zależy od branży, konkurencji na słowa kluczowe i Twoich celów.",
     },
     {
       question: "Jak długo trwa uruchomienie kampanii Google Ads w Gdańsku?",
-      answer: "Kampanię można uruchomić w ciągu 24-48 godzin od podpisania umowy. Obejmuje to: audit konkurencji w Gdańsku, badanie słów kluczowych regionalnych (Trójmiasto), tworzenie struktury kampanii, konfigurację trackingu konwersji i wdrożenie. Pierwsze wyniki są widoczne po kilku dniach, pełna optymalizacja trwa 2-4 tygodnie.",
+      answer: "Termin uruchomienia ustalamy po briefie — zależy od zakresu i od tego, czy masz już konto i śledzenie konwersji. Przygotowanie obejmuje: audyt konkurencji w Gdańsku, badanie słów kluczowych regionalnych (Trójmiasto), strukturę kampanii, konfigurację trackingu konwersji i wdrożenie. Optymalizacja trwa później stale, na podstawie zebranych danych.",
     },
     {
       question: "Czy potrzebuję certyfikatu Google do uruchomienia reklam w Gdańsku?",
-      answer: "Nie — certyfikat Google nie jest wymagany. Wymagane jest tylko konto Google Ads. My, jako agencja certyfikowana, prowadzimy całą konfigurację, optymalizację i zarządzanie kampaniami dla firm gdańskich. Ty masz dostęp do pełnych danych i raportów w panelu Google Ads.",
+      answer: "Nie — certyfikat Google nie jest wymagany. Wymagane jest tylko konto Google Ads. My prowadzimy całą konfigurację, optymalizację i zarządzanie kampaniami. Pracujemy z Poznania, firmy z Gdańska obsługujemy zdalnie. Ty masz dostęp do pełnych danych i raportów w panelu Google Ads.",
     },
     {
       question: "Jaka jest minimalna kwota budżetu na Google Ads w Gdańsku?",
-      answer: "Minimalna kwota budżetu to 500 zł/miesiąc dla małych firm lokalnych. Rekomendujemy jednak minimum 1 500 zł/miesiąc, aby kampania miała wystarczająco danych do optymalizacji. W Gdańsku, gdzie sektor turystyczny i portowy są ważne, budżet 2 000-4 000 zł/miesiąc zapewnia dobre wyniki.",
+      answer: "Google nie narzuca wysokiego minimum, ale zbyt mały budżet daje mało danych do optymalizacji. Wysokość budżetu ustalamy razem, zależnie od branży, konkurencji na słowa kluczowe i celu kampanii. Budżet reklamowy płacisz bezpośrednio Google.",
     },
     {
       question: "Jak agencja rozlicza się za kampanie Google Ads w Gdańsku?",
-      answer: "Rozliczamy się na podstawie modelu: opłata za zarządzanie kampanią (400-1 500 zł/miesiąc) + budżet reklamowy, który wydajesz w Google Ads (płacisz bezpośrednio Google). Całkowita transparentność — wszystkie raporty co miesiąc z szczegółową analizą wyników dla firm gdańskich.",
+      answer: "Rozliczamy się w modelu: opłata za zarządzanie kampanią, ustalana po rozmowie o zakresie, plus budżet reklamowy, który płacisz bezpośrednio Google. Co miesiąc dostajesz raport z analizą wyników.",
     },
     {
       question: "Jakie branże w Gdańsku korzystają z Google Ads?",
@@ -34,11 +34,11 @@ export default function GoogleAdsGdansk() {
     },
     {
       question: "Czy Google Ads da efekty dla małej firmy w Gdańsku?",
-      answer: "Tak — Google Ads są idealnym kanałem dla małych firm w Gdańsku. Płacisz tylko za kliknięcia, możesz precyzyjnie targetować swoją grupę docelową (lokalizacja, słowa kluczowe, demografia), i masz pełne śledzenie zwrotu z inwestycji (ROI). Wiele naszych klientów z Gdańska to małe firmy, które zarabiają na Google Ads od pierwszego miesiąca.",
+      answer: "Tak — Google Ads są idealnym kanałem dla małych firm w Gdańsku. Płacisz tylko za kliknięcia, możesz precyzyjnie targetować swoją grupę docelową (lokalizacja, słowa kluczowe, demografia), i masz pełne śledzenie zwrotu z inwestycji (ROI). Efekty zależą od oferty, strony i konkurencji, dlatego nie obiecujemy konkretnego wyniku.",
     },
     {
       question: "Co to jest Quality Score i jak wpływa na cenę reklamy w Gdańsku?",
-      answer: "Quality Score to ocena jakości reklamy, strony docelowej i słowa kluczowego (1-10). Im wyższy Quality Score, tym niższy koszt za kliknięcie (CPC). Dobry Quality Score (7-10) może obniżyć CPC nawet o 50%. Obsługujemy Quality Score na poziomie 8-9 dla większości kampanii gdańskich klientów.",
+      answer: "Quality Score to ocena jakości reklamy, strony docelowej i słowa kluczowego (1-10). Im wyższy Quality Score, tym niższy koszt za kliknięcie (CPC). Dlatego dbamy o dopasowanie słów kluczowych, tekstów reklam i strony docelowej.",
     },
   ];
 
@@ -47,14 +47,14 @@ export default function GoogleAdsGdansk() {
       <Layout>
         <SEOHead
           title="Agencja Google Ads Gdańsk — kampanie reklamowe dla firm | Fotz.pl"
-          description="Google Ads Gdańsk — agencja certyfikowana Fotz.pl. Kampanie od 400 zł/mies., wyniki od 24-48h. Bezpłatna konsultacja!"
+          description="Google Ads Gdańsk — Fotz.pl. Kampanie Google Ads dla firm z Gdańska i Trójmiasta, obsługa zdalna z Poznania. Bezpłatna konsultacja!"
           canonical="https://www.fotz-studio.pl/performance-marketing/google-ads/gdansk"
           keywords="google ads gdansk, kampanie google ads gdansk, agencja google ads gdansk, reklamy google gdansk, google adwords gdansk, sem gdansk, google ads dla firm gdansk, prowadzenie google ads gdansk, google ads cennik gdansk, reklama w google gdansk"
         />
 
         <ServiceSchema
           name="Kampanie Google Ads Gdańsk"
-          description="Tworzenie i optymalizacja kampanii Google Ads dla firm z Gdańska. Agencja Fotz.pl — certyfikowani specjaliści Google Ads."
+          description="Tworzenie i optymalizacja kampanii Google Ads dla firm z Gdańska. Agencja Fotz.pl — obsługa zdalna z Poznania."
           provider="Fotz Studio"
           areaServed="Gdansk"
         />
@@ -88,22 +88,22 @@ export default function GoogleAdsGdansk() {
                   Agencja Google Ads Gdańsk
                 </h1>
                 <p className="text-xl md:text-2xl text-sky-100 mb-8">
-                  Google Ads Gdansk — profesjonalne kampanie Google Ads i reklamy w Google dla firm z Gdanska i Trójmiasta. Zwiększamy ruch, konwersje i ROI dzięki skutecznym kampaniom SEM. Bezpłatna konsultacja.</p>
+                  Google Ads Gdansk — profesjonalne kampanie Google Ads i reklamy w Google dla firm z Gdanska i Trójmiasta. Pomagamy zwiększać ruch i konwersje dzięki dobrze ustawionym kampaniom SEM. Bezpłatna konsultacja.</p>
               </div>
 
               {/* Stats Grid */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-6 text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-sky-300 mb-2">400 zł</div>
-                  <div className="text-sm text-sky-100">Kampanie od</div>
+                  <div className="text-2xl md:text-3xl font-bold text-sky-300 mb-2">Wycena</div>
+                  <div className="text-sm text-sky-100">Po rozmowie o zakresie</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-6 text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-sky-300 mb-2">24-48h</div>
-                  <div className="text-sm text-sky-100">Wyniki od</div>
+                  <div className="text-2xl md:text-3xl font-bold text-sky-300 mb-2">Budżet</div>
+                  <div className="text-sm text-sky-100">Płacisz bezpośrednio Google</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-6 text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-sky-300 mb-2">100%</div>
-                  <div className="text-sm text-sky-100">Certyfikowani</div>
+                  <div className="text-2xl md:text-3xl font-bold text-sky-300 mb-2">Dostęp</div>
+                  <div className="text-sm text-sky-100">Do konta i danych</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-6 text-center">
                   <div className="text-2xl md:text-3xl font-bold text-sky-300 mb-2">Raport</div>
@@ -124,13 +124,13 @@ export default function GoogleAdsGdansk() {
                 </h2>
                 <div className="space-y-6 text-lg text-muted-foreground">
                   <p>
-                    Gdańsk to stolica Pomorza z ponad 460 000 mieszkańców. Jedno z największych miast w Polsce ze znacznym ruchem turystycznym, sektorem portowym i dynamicznym biznesem. Przedsiębiorcy z Gdańska inwestują rocznie miliony złotych w reklamy internetowe.
+                    Gdańsk to stolica Pomorza ze znacznym ruchem turystycznym, sektorem portowym i dynamicznym biznesem.
                   </p>
                   <p>
-                    Konkurencja na słowa kluczowe w Gdańsku jest umiarkowana (CPC średnio 3-8 zł), ale liczba potencjalnych klientów z Trójmiasta (Gdańsk/Gdynia/Sopot) jest duża. Kampanie Google Ads działają efektywnie dla każdej branży: turystyka, e-commerce, usługi, nieruchomości, porty, restauracje.
+                    Koszt kliknięcia zależy od branży i konkurencji, a liczba potencjalnych klientów z Trójmiasta (Gdańsk/Gdynia/Sopot) jest duża. Kampanie Google Ads działają efektywnie dla każdej branży: turystyka, e-commerce, usługi, nieruchomości, porty, restauracje.
                   </p>
                   <p>
-                    Gdańsk przyciąga turystów z całej Europy — to trzecie najpopularniejsze miasto turystyczne w Polsce. Google Ads pozwala Ci dotrzeć do turystów szukających noclegu, restauracji i atrakcji. Doskonały kanał dla hoteli, pensjonatów, restauracji, wycieczek.
+                    Gdańsk przyciąga turystów z całej Europy. Google Ads pozwala Ci dotrzeć do turystów szukających noclegu, restauracji i atrakcji. Doskonały kanał dla hoteli, pensjonatów, restauracji, wycieczek.
                   </p>
                   <p>
                     Targetowanie lokalne (Gdańsk, Gdynia, Sopot, Trójmiasto) pozwala precyzyjnie trafić w swoją grupę docelową. Port Gdańsk to również znaczący hub logistyki — firmy B2B z sektora portowego to doskonali klienci do Google Ads.
@@ -170,7 +170,7 @@ export default function GoogleAdsGdansk() {
                 <div className="bg-background rounded-lg border border-border p-6">
                   <h3 className="text-xl font-bold mb-3">Remarketing</h3>
                   <p className="text-muted-foreground">
-                    Reklamy dla osób, które już odwiedzały Twoją stronę. Konwersja 3-5x wyższa niż w kampaniach Search.
+                    Reklamy dla osób, które już odwiedzały Twoją stronę. Pozwalają wrócić do osób, które już znają Twoją ofertę.
                   </p>
                 </div>
                 <div className="bg-background rounded-lg border border-border p-6">
@@ -263,48 +263,24 @@ export default function GoogleAdsGdansk() {
           <section className="py-16 md:py-24 bg-secondary/30">
             <div className="container px-4">
               <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-                Kampanie Google Ads Gdańsk — cennik
+                Kampanie Google Ads Gdańsk — od czego zależy wycena
               </h2>
-              <div className="max-w-4xl mx-auto overflow-x-auto">
-                <table className="w-full border-collapse">
-                  <thead>
-                    <tr className="border-b-2 border-border">
-                      <th className="text-left p-4 font-bold">Pakiet</th>
-                      <th className="text-left p-4 font-bold">Cena obsługi</th>
-                      <th className="text-left p-4 font-bold">Budżet reklamowy</th>
-                      <th className="text-left p-4 font-bold">Dla kogo</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="border-b border-border bg-background">
-                      <td className="p-4 font-semibold">START</td>
-                      <td className="p-4">400 zł/mies.</td>
-                      <td className="p-4">500-1500 zł</td>
-                      <td className="p-4">Małe firmy lokalne</td>
-                    </tr>
-                    <tr className="border-b border-border bg-background">
-                      <td className="p-4 font-semibold">GROWTH</td>
-                      <td className="p-4">800 zł/mies.</td>
-                      <td className="p-4">2000-5000 zł</td>
-                      <td className="p-4">Średnie firmy</td>
-                    </tr>
-                    <tr className="border-b border-border bg-background">
-                      <td className="p-4 font-semibold">PRO</td>
-                      <td className="p-4">1500+ zł/mies.</td>
-                      <td className="p-4">5000+ zł</td>
-                      <td className="p-4">E-commerce, hotele</td>
-                    </tr>
-                    <tr className="bg-background">
-                      <td className="p-4 font-semibold">ENTERPRISE</td>
-                      <td className="p-4">% budżetu (15-20%)</td>
-                      <td className="p-4">15000+ zł</td>
-                      <td className="p-4">Duże firmy</td>
-                    </tr>
-                  </tbody>
-                </table>
+              <div className="max-w-3xl mx-auto bg-background rounded-lg border border-border p-6">
+                <p className="text-muted-foreground mb-4">
+                  Nie mamy sztywnego cennika. Wycenę obsługi przygotowujemy po rozmowie o zakresie. Zależy ona głównie od:
+                </p>
+                <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                  <li>liczby i typu kampanii (Search, Performance Max, Shopping, remarketing),</li>
+                  <li>liczby produktów, usług i lokalizacji, które promujesz,</li>
+                  <li>konfiguracji śledzenia konwersji i analityki,</li>
+                  <li>częstotliwości optymalizacji i raportowania.</li>
+                </ul>
+                <p className="text-muted-foreground mt-4">
+                  Budżet reklamowy płacisz bezpośrednio Google, zawsze osobno od naszego wynagrodzenia.
+                </p>
               </div>
               <p className="text-center text-muted-foreground mt-8 max-w-2xl mx-auto">
-                Każdy pakiet obejmuje setup kampanii, daily optimization, raportowanie co miesiąc, A/B testy reklam i ciągłą optymalizację Quality Score.
+                Obsługa obejmuje setup kampanii, bieżącą optymalizację, raportowanie co miesiąc, A/B testy reklam i dbanie o Quality Score.
               </p>
             </div>
           </section>
@@ -382,9 +358,9 @@ export default function GoogleAdsGdansk() {
               </h2>
               <div className="max-w-3xl mx-auto space-y-6">
                 <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-2">Certyfikowani specjaliści Google</h3>
+                  <h3 className="text-xl font-bold mb-2">Praca zdalna z Poznania</h3>
                   <p className="text-muted-foreground">
-                    Nasi specjaliści posiadają certyfikat Google Ads. Mamy dostęp do beta features, nowych algorytmów i najnowszych best practices bezpośrednio od Google.
+                    Pracujemy z Poznania, firmy z Gdańska obsługujemy zdalnie — spotkania online, wspólny dostęp do konta Google Ads i regularne raporty.
                   </p>
                 </div>
                 <div className="bg-background rounded-lg border border-border p-6">
@@ -394,15 +370,15 @@ export default function GoogleAdsGdansk() {
                   </p>
                 </div>
                 <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-2">Wyniki od 24-48h</h3>
+                  <h3 className="text-xl font-bold mb-2">Sprawne wdrożenie</h3>
                   <p className="text-muted-foreground">
-                    Szybko uruchamiamy kampanie i szybko je optymalizujemy. Twoja firma widzi wyniki prawie natychmiast — nie czekasz tygodniami.
+                    Termin startu ustalamy po briefie, a po uruchomieniu kampanii optymalizujemy ją na podstawie danych. Tempo efektów zależy od branży, budżetu i oferty.
                   </p>
                 </div>
                 <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-2">Specjalizacja w branżach gdańskich</h3>
+                  <h3 className="text-xl font-bold mb-2">Strategia pod branżę</h3>
                   <p className="text-muted-foreground">
-                    Znamy gdański rynek — od turystyki do portu do e-commerce do nieruchomości. Każda branża ma inne wyzwania, my wiemy jak je rozwiązać.
+                    Przed startem analizujemy Twoją branżę i konkurencję w Trójmieście — turystyka, port, e-commerce czy nieruchomości mają inne wyzwania.
                   </p>
                 </div>
                 <div className="bg-background rounded-lg border border-border p-6">
@@ -444,7 +420,7 @@ export default function GoogleAdsGdansk() {
                   Uruchom kampanie Google Ads w Gdańsku
                 </h2>
                 <p className="text-lg text-slate-300 mb-10">
-                  Bezpłatna konsultacja bez zobowiązań. Poznaj naszą strategię dla Twojej branży. Wyniki od 24-48h.
+                  Bezpłatna konsultacja bez zobowiązań. Poznaj naszą strategię dla Twojej branży.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link

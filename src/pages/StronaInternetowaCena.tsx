@@ -68,7 +68,7 @@ export default function StronaInternetowaCena() {
     {
       question: "Ile kosztuje prosta strona internetowa?",
       answer:
-        "Prosta strona wizytówka (1-5 podstron) kosztuje od 1500 do 4000 zł. Do tego dochodzi domena (ok. 80 zł/rok) i hosting (100-300 zł/rok). Razem gotowa do pracy strona to koszt ok. 1800-4500 zł w pierwszym roku. Najtańsze opcje to kreatory jak Wix (400-1000 zł/rok) — ale mniej elastyczne.",
+        "Przykładowe widełki rynkowe: prosta strona wizytówka (1-5 podstron) kosztuje zwykle od 1500 do 4000 zł. Do tego dochodzi domena (ok. 80 zł/rok) i hosting (100-300 zł/rok). Razem gotowa do pracy strona to koszt ok. 1800-4500 zł w pierwszym roku. Najtańsze opcje to kreatory jak Wix (400-1000 zł/rok) — ale mniej elastyczne.",
     },
     {
       question: "Co wpływa na cenę strony internetowej?",
@@ -78,12 +78,12 @@ export default function StronaInternetowaCena() {
     {
       question: "Czy strona internetowa to jednorazowy koszt?",
       answer:
-        "Nie — strona ma koszty stałe: domena (ok. 80 zł/rok), hosting (100-500 zł/rok), ewentualnie opieka techniczna (100-500 zł/mies.). Opcjonalnie: aktualizacje treści, pozycjonowanie, reklamy. Łączny koszt utrzymania to 100-1000 zł miesięcznie w zależności od potrzeb.",
+        "Nie — strona ma koszty stałe: domena (ok. 80 zł/rok), hosting (100-500 zł/rok), ewentualnie opieka techniczna (100-500 zł/mies.). Opcjonalnie: aktualizacje treści, pozycjonowanie, reklamy. Rynkowo łączny koszt utrzymania to orientacyjnie 100-1000 zł miesięcznie w zależności od potrzeb.",
     },
     {
       question: "Jak długo trwa budowa strony internetowej?",
       answer:
-        "Prosta strona wizytówka: 1-2 tygodnie. Strona firmowa z blogiem: 3-6 tygodni. Sklep e-commerce: 6-16 tygodni. Największy wpływ na czas ma przygotowanie treści przez klienta i liczba korekt. Dobry brief i sprawna komunikacja skracają czas o 30-50%.",
+        "Prosta strona wizytówka: 1-2 tygodnie. Strona firmowa z blogiem: 3-6 tygodni. Sklep e-commerce: 6-16 tygodni. Największy wpływ na czas ma przygotowanie treści przez klienta i liczba korekt. Dobry brief i sprawna komunikacja wyraźnie skracają czas realizacji.",
     },
     {
       question: "Czy warto skorzystać z kreatora stron jak Wix?",
@@ -93,7 +93,7 @@ export default function StronaInternetowaCena() {
     {
       question: "Czy firma potrzebuje strony internetowej?",
       answer:
-        "W 2025 roku — tak, zdecydowanie. 76% konsumentów sprawdza firmę online przed zakupem. Strona internetowa to cyfrowa wizytówka dostępna 24/7, element wiarygodności i narzędzie do pozyskiwania klientów. Brak strony to utrata leadów na rzecz konkurencji która ją ma.",
+        "W 2025 roku — tak, zdecydowanie. Wiele osób sprawdza firmę online, zanim zdecyduje się na zakup lub kontakt. Strona internetowa to cyfrowa wizytówka dostępna 24/7, element wiarygodności i narzędzie do pozyskiwania klientów. Brak strony to utrata leadów na rzecz konkurencji która ją ma.",
     },
   ];
 
@@ -130,7 +130,7 @@ export default function StronaInternetowaCena() {
               </h1>
               <p className="text-xl text-slate-300 leading-relaxed">
                 Ceny stron internetowych w Polsce wahają się od 0 zł (kreatory DIY) do setek tysięcy złotych.
-                Wyjaśniamy co naprawdę wpływa na cenę i czego nie mów swojemu klientowi.
+                Wyjaśniamy, co naprawdę wpływa na cenę i jakie koszty łatwo przeoczyć.
               </p>
             </motion.div>
           </div>
@@ -142,7 +142,7 @@ export default function StronaInternetowaCena() {
             <FadeInView>
               <h2 className="text-2xl font-bold text-slate-900 mb-4">Ceny stron internetowych w Polsce — przegląd</h2>
               <p className="text-slate-600 mb-8">
-                Orientacyjne przedziały cenowe w polskich agencjach i u freelancerów (netto):
+                Przykładowe widełki rynkowe w polskich agencjach i u freelancerów (netto). To nie jest cennik FOTZ Studio — każdy projekt wyceniamy indywidualnie po rozmowie o zakresie:
               </p>
               <div className="grid md:grid-cols-2 gap-6 mb-8">
                 {pricingTiers.map((tier, idx) => (
@@ -187,7 +187,7 @@ export default function StronaInternetowaCena() {
                   <thead>
                     <tr className="bg-slate-100">
                       <th className="text-left p-3 border border-slate-200">Pozycja</th>
-                      <th className="text-left p-3 border border-slate-200">Szacowany koszt</th>
+                      <th className="text-left p-3 border border-slate-200">Szacowany koszt (rynkowo)</th>
                       <th className="text-left p-3 border border-slate-200">Uwagi</th>
                     </tr>
                   </thead>
@@ -209,7 +209,7 @@ export default function StronaInternetowaCena() {
               <div className="grid md:grid-cols-2 gap-4 mb-8">
                 {[
                   { title: "Liczba podstron", desc: "Każda podstrona to praca designera i dewelopera. Im więcej, tym drożej — ale nie liniowo." },
-                  { title: "Projekt graficzny", desc: "Gotowy motyw vs. custom design: różnica 2000-10 000 zł. Custom = unikalność i pełna kontrola." },
+                  { title: "Projekt graficzny", desc: "Gotowy motyw vs. custom design: rynkowo różnica rzędu 2000-10 000 zł. Custom = unikalność i pełna kontrola." },
                   { title: "Funkcjonalności", desc: "Blog, sklep, rezerwacje, chat, wielojęzyczność — każda funkcja to dodatkowy koszt." },
                   { title: "Treści i zdjęcia", desc: "Agencja przygotowuje treści lub je wprowadza. Własne teksty i zdjęcia obniżają cenę." },
                   { title: "Integracje", desc: "CRM, systemy płatności, marketing automation — każda integracja to dodatkowe godziny pracy." },
@@ -228,11 +228,11 @@ export default function StronaInternetowaCena() {
                 <Globe className="w-6 h-6 text-blue-600 mb-2" />
                 <h3 className="font-bold text-slate-900 mb-2">Chcesz wiedzieć ile będzie kosztować Twoja strona?</h3>
                 <p className="text-slate-600 text-sm mb-3">
-                  Wyceniamy strony internetowe bezpłatnie — podaj nam zakres i dostaniesz konkretną ofertę w 24 godziny.
+                  Każdą stronę wyceniamy indywidualnie — opowiedz nam o zakresie i celach, a po rozmowie przygotujemy konkretną ofertę.
                 </p>
                 <Link to="/kontakt">
                   <Button className="bg-blue-600 hover:bg-blue-700 text-white">
-                    Bezpłatna wycena strony <ArrowRight className="ml-2 w-4 h-4" />
+                    Zapytaj o wycenę strony <ArrowRight className="ml-2 w-4 h-4" />
                   </Button>
                 </Link>
               </div>

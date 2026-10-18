@@ -115,13 +115,13 @@ export default function BlogProductLaunchCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Product Launch", url: "https://www.fotz-studio.pl" },
+              { name: "Product Launch", url: "/blog/product-launch-co-to" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Product Launch — co to jest i jak zaplanować premierę?
           </h1>
           <p className="text-xl text-slate-300 max-w-2xl mx-auto">
-            Skuteczna premiera produktu to 80% przygotowanie, 20% wykonanie. Poznaj 3 fazy product launch,
+            O sukcesie premiery w dużej mierze decyduje przygotowanie, a nie sam dzień startu. Poznaj 3 fazy product launch,
             pełny checklist i 8 kanałów komunikacji dla maksymalnego impaktu w dniu premiery.
           </p>
         </div>
@@ -145,7 +145,7 @@ export default function BlogProductLaunchCoTo() {
             </p>
             <div className="grid md:grid-cols-3 gap-4">
               {[
-                { stat: "80%", opis: "produktów nie osiąga zamierzonych celów sprzedażowych w kwartale po launchu" },
+                { stat: "3 fazy", opis: "pre-launch, launch i post-launch — każda wymaga osobnego planu i celów" },
                 { stat: "4–12 tyg.", opis: "optymalny czas przygotowania dla większości product launchów" },
                 { stat: "3–7 dni", opis: "krytyczne okno premiery — momentum spada dramatycznie po tygodniu" },
               ].map((s, i) => (

@@ -38,7 +38,7 @@ const seoStructure = [
   {
     element: "URL",
     zasady: "Krótki, czytelny, zawiera primary keyword, bez polskich znaków, myślniki między słowami",
-    przykład: "fotz.pl/blog/seo-copywriting-co-to zamiast fotz.pl/blog/?p=1234",
+    przykład: "fotz-studio.pl/blog/seo-copywriting-co-to zamiast fotz-studio.pl/blog/?p=1234",
   },
   {
     element: "Meta Title (Tag Title)",
@@ -117,7 +117,7 @@ export default function BlogSeoCopywritingCoTo() {
 
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "SEO Copywriting", url: "https://www.fotz-studio.pl" }]}/>
+          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "SEO Copywriting", url: "/blog/seo-copywriting-co-to" }]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             SEO Copywriting — co to jest i jak pisać pod Google?
           </h1>
@@ -148,8 +148,8 @@ export default function BlogSeoCopywritingCoTo() {
             <div className="grid md:grid-cols-3 gap-4">
               {[
                 { stat: "E-E-A-T", opis: "Google ocenia Experience, Expertise, Authoritativeness i Trustworthiness treści" },
-                { stat: "68%", opis: "doświadczeń online zaczyna się od wyszukiwarki — dlatego SEO content to fundament" },
-                { stat: "3-6 mies.", opis: "tyle zwykle zajmuje osiągnięcie top 10 Google dla nowego artykułu SEO" },
+                { stat: "Intencja", opis: "wiele ścieżek zakupowych zaczyna się od wyszukiwarki — dlatego treść musi odpowiadać na realne pytania" },
+                { stat: "Cierpliwość", opis: "nowy artykuł potrzebuje zwykle kilku miesięcy, zanim zdobędzie stabilne pozycje w Google" },
               ].map((s, i) => (
                 <div key={i} className="bg-blue-50 rounded-xl p-5 text-center">
                   <p className="text-3xl font-bold text-blue-600 mb-2">{s.stat}</p>

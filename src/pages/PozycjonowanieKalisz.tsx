@@ -32,45 +32,41 @@ const faqItems = [
   {
     question: "Ile kosztuje pozycjonowanie w Kaliszu?",
     answer:
-      "Pozycjonowanie lokalne w Kaliszu zaczyna się od 900-1 300 zł netto miesięcznie dla małych firm i lokalnych usługodawców. Kalisz ma niższą konkurencję SEO niż Poznań czy Warszawa, co sprawia, że efekty są widoczne szybciej i przy mniejszych nakładach. Dla branż konkurencyjnych (medycyna, nieruchomości, turystyka) budżet wynosi 1 800-4 500 zł/mies.",
+      "Wycenę przygotowujemy po rozmowie o zakresie i audycie strony. Koszt zależy od liczby i konkurencyjności fraz, stanu technicznego strony, ilości treści do przygotowania oraz działań link buildingowych. W branżach takich jak medycyna, nieruchomości czy turystyka zakres prac jest zwykle większy.",
   },
   {
     question: "Ile czasu trwa pozycjonowanie w Kaliszu?",
     answer:
-      "Kalisz to jeden z rynków o niskiej konkurencji SEO w Wielkopolsce - pierwsze efekty można obserwować już po 4-8 tygodniach. Stabilne pozycje TOP 10 dla większości fraz branżowych osiągamy w 2-5 miesięcy. To znacznie szybciej niż w dużych miastach, co przekłada się na szybszy zwrot z inwestycji i widoczny wzrost ruchu organicznego.",
+      "SEO to proces rozłożony na miesiące. Tempo zależy od konkurencji w branży, historii domeny i zakresu prac. Nie gwarantujemy konkretnej pozycji ani terminu jej osiągnięcia - po audycie przedstawiamy plan działań i regularnie raportujemy postępy.",
   },
   {
     question: "Jakie branże dominują w Kaliszu i czy warto pozycjonować strony w mieście?",
     answer:
-      "Kalisz ma bogate dziedzictwo historyczne (Katedra, zabytkowe kamienice), turystykę kulturalną, przemysł włókienniczy (tradycja kaliskiego batiku), handel, usługi medyczne i turystyczne. Wiele firm jeszcze nie inwestuje w SEO - to ogromny potencjał do wyróżnienia się od konkurencji i przejęcia organicznego ruchu z Google.",
+      "Kalisz ma bogate dziedzictwo historyczne (zabytkowe kościoły i kamienice), turystykę kulturalną, tradycję rzemiosła i przemysłu włókienniczego, handel oraz usługi medyczne i turystyczne. To, ile firm z danej branży inwestuje w SEO, sprawdzamy w audycie konkurencji.",
   },
   {
     question: "Czy pozycjonowanie w Kaliszu jest trudne ze względu na wielkość miasta?",
     answer:
-      "Nie - wręcz przeciwnie. Kalisz (ok. 100-120 tys. mieszkańców) to perła Wielkopolski z unikatowymi frazazami lokalnymi i kulturalnymi. Mniejsza konkurencja oznacza, że łatwiej i taniej osiągnąć TOP 10 niż w Poznaniu czy Warszawie. Jednocześnie miasto przyciąga turystów i ma silny potencjał dla biznesu lokalnego.",
+      "Niekoniecznie. Kalisz ma własne frazy lokalne i kulturalne, a w części branż konkurencja bywa mniejsza niż w Poznaniu czy Warszawie. Zależy to jednak od konkretnych fraz, dlatego poziom trudności oceniamy w audycie, zanim zaproponujemy zakres prac.",
   },
   {
     question: "Czy pozycjonujecie firmy z Kalisza poza miastem?",
     answer:
-      "Tak - obsługujemy firmy z całej Wielkopolski i regionu: Ostrów Wielkopolski, Konin, Jarocin, Pleszew, Golina. Dla firm z branży turystycznej i rzemiosła (batik, wyroby ludowe) wdrażamy pozycjonowanie pod ruch turystów krajowych i zagranicznych.",
+      "Tak - pracujemy z Poznania i zdalnie obsługujemy firmy z Kalisza oraz całej Wielkopolski: Ostrowa Wielkopolskiego, Konina, Jarocina, Pleszewa czy Goliny. Dla firm z branży turystycznej i rzemiosła możemy planować pozycjonowanie pod ruch turystów krajowych i zagranicznych.",
   },
   {
     question: "Jak SEO może pomóc firmom z Kalisza w sprzedaży produktów tradycyjnych?",
     answer:
-      "Kaliski batik to marka znana w Polsce i zagranicą. Firmy handlujące produktami tradycyjnymi, rzemiosłem, souvenirami mogą wykorzystać SEO do dotarcia do turystów szukających autentycznych pamiątek z Kalisza. Wdrażamy pozycjonowanie pod frazy 'batik Kalisz', 'pamiątki z Kalisza', 'tradycyjne wyroby Kalisz' - niszowe frazy z wysokim potencjałem sprzedażowym.",
+      "Firmy handlujące produktami tradycyjnymi, rękodziełem i pamiątkami mogą wykorzystać SEO do dotarcia do osób szukających autentycznych wyrobów z Kalisza. Sprawdzamy w narzędziach frazy typu 'pamiątki z Kalisza' czy 'tradycyjne wyroby Kalisz' i planujemy treści pod te, które mają realny ruch.",
   },
 ];
 
 const PozycjonowanieKalisz = () => {
   const results = [
-    {
-      metric: "+185%",
-      label: "Wzrost ruchu organicznego",
-      context: "sklep z pamiątkami Kalisz",
-    },
-    { metric: "TOP 5", label: "Pozycja w Google", context: "frazy branżowe Kalisz" },
-    { metric: "6 tygodni", label: "Czas do widocznych efektów", context: "branża turystyczna" },
-    { metric: "4,8/5", label: "Ocena klientów", context: "8 opinii" },
+    { metric: "Audyt", label: "Punkt wyjścia", context: "technika, treści, konkurencja" },
+    { metric: "Frazy", label: "Lokalne i regionalne", context: "Kalisz i Wielkopolska" },
+    { metric: "Raporty", label: "Pozycje i ruch", context: "regularnie, w ustalonym rytmie" },
+    { metric: "Zdalnie", label: "Pracujemy z Poznania", context: "obsługa firm z Kalisza" },
   ];
 
   const districts = [
@@ -86,7 +82,7 @@ const PozycjonowanieKalisz = () => {
 
   const industries = [
     { name: "Turystyka i kultura", icon: Star },
-    { name: "Handel batiku", icon: Target },
+    { name: "Handel i pamiątki", icon: Target },
     { name: "Medycyna i kliniki", icon: Shield },
     { name: "Gastronomia", icon: Building2 },
     { name: "Rzemiosło tradycyjne", icon: Award },
@@ -97,7 +93,7 @@ const PozycjonowanieKalisz = () => {
     <Layout>
       <SEOHead
         title="Pozycjonowanie Kalisz - Agencja SEO Wielkopolska | Fotz Studio"
-        description="Pozycjonowanie stron Kalisz i Wielkopolska. Agencja SEO Fotz Studio - szybkie efekty, niższa konkurencja, białohat SEO dla firm z Kalisza. Bezpłatna konsultacja SEO!"
+        description="Pozycjonowanie stron Kalisz i Wielkopolska. Agencja SEO Fotz Studio - audyt, optymalizacja i white-hat SEO dla firm z Kalisza, obsługiwanych zdalnie z Poznania. Bezpłatna konsultacja SEO!"
         canonical="https://www.fotz-studio.pl/pozycjonowanie/kalisz"
         keywords="pozycjonowanie kalisz, agencja seo kalisz, seo kalisz, pozycjonowanie stron kalisz, seo dla firm kalisz, pozycjonowanie lokalne kalisz, seo wielkopolska"
       />
@@ -148,7 +144,7 @@ const PozycjonowanieKalisz = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto"
             >
-              Pomagamy firmom z Kalisza i Wielkopolski zdobyć pierwszą stronę Google. Niższa konkurencja SEO oznacza szybsze efekty i lepszy zwrot z inwestycji. Audyt SEO, optymalizacja techniczna i strategia linkowania dla lokalnego biznesu.
+              Pomagamy firmom z Kalisza i Wielkopolski zwiększać widoczność w Google. Pracujemy z Poznania, firmy z Kalisza obsługujemy zdalnie. Audyt SEO, optymalizacja techniczna i strategia linkowania dla lokalnego biznesu.
             </motion.p>
 
             <motion.div
@@ -175,7 +171,7 @@ const PozycjonowanieKalisz = () => {
               transition={{ delay: 0.5 }}
               className="flex flex-wrap justify-center gap-6 mt-12 text-sm text-muted-foreground"
             >
-              {["White-hat SEO", "Szybsze efekty niż w dużych miastach", "Google Analytics 4", "Raport co 2 tygodnie"].map(
+              {["White-hat SEO", "Strategia po audycie", "Google Analytics 4", "Regularne raporty"].map(
                 (item) => (
                   <div key={item} className="flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-primary" />
@@ -210,7 +206,7 @@ const PozycjonowanieKalisz = () => {
         <div className="container mx-auto px-4 max-w-5xl">
           <FadeInView className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Pozycjonowanie lokalne w Kaliszu - niska konkurencja, szybki ROI
+              Pozycjonowanie lokalne w Kaliszu - jak podchodzimy do rynku
             </h2>
           </FadeInView>
 
@@ -218,13 +214,13 @@ const PozycjonowanieKalisz = () => {
             <FadeInView>
               <div className="space-y-6 text-muted-foreground">
                 <p>
-                  Kalisz to perła Wielkopolski z bogatą historią i tradycją sięgającą średniowiecza. Miasto jest znane na całym świecie z kultowego kaliskiego batiku - tradycyjnego wyrobu textylnego, który stanowi symbol miasta. Liczba mieszkańców: ok. 100-120 tys. ludzi, z których każdego roku odwiedza setki turystów krajowych i zagranicznych.
+                  Kalisz to jedno z najstarszych miast w Polsce, z bogatą historią i tradycją rzemiosła. Przyciąga turystów krajowych i zagranicznych, a lokalny biznes obejmuje handel, usługi, gastronomię i turystykę kulturalną.
                 </p>
                 <p>
-                  Kluczowa przewaga Kalisza z perspektywy SEO: <strong className="text-foreground">znacznie niższa konkurencja</strong> niż w Poznaniu czy Warszawie oznacza, że możliwe jest osiągnięcie TOP 10 w Google zaledwie w ciągu 6-12 tygodni. Firmy, które inwestują w pozycjonowanie lokalne w Kaliszu, mogą zdobyć przewagę nad konkurencją, która jeszcze nie pozycjonuje się online.
+                  Z perspektywy SEO w części branż <strong className="text-foreground">konkurencja bywa mniejsza</strong> niż w Poznaniu czy Warszawie, ale zależy to od konkretnych fraz. Nie gwarantujemy pozycji ani terminów - poziom trudności sprawdzamy w audycie. Pracujemy z Poznania, firmy z Kalisza obsługujemy zdalnie.
                 </p>
                 <p>
-                  Kalisz ma unikatowe nisze biznesowe: turystyka kulturalna (Katedra, zabytkowe kamienice, muzea), tradycyjne wyroby (batik, rzemiosło), gastronomia regionalna i handel pamiątkami. To są <strong className="text-foreground">frazy z niską lub zerową konkurencją</strong> i realnym ruchem wśród turystów szukających autentycznych produktów i doświadczeń z Kalisza.
+                  Kalisz ma własne nisze biznesowe: turystyka kulturalna (zabytkowe kościoły, kamienice, muzea), tradycyjne wyroby i rzemiosło, gastronomia regionalna i handel pamiątkami. Dla takich nisz <strong className="text-foreground">sprawdzamy wolumen i konkurencję fraz</strong> w narzędziach SEO, zanim zaplanujemy treści.
                 </p>
               </div>
             </FadeInView>
@@ -261,7 +257,7 @@ const PozycjonowanieKalisz = () => {
               Branże, które pozycjonujemy w Kaliszu
             </h2>
             <p className="text-muted-foreground max-w-xl mx-auto">
-              Od turystyki kulturalnej i tradycyjnego batiku po medycynę i gastronomię - znamy specyfikę rynku kaliskiego.
+              Od turystyki kulturalnej i rzemiosła po medycynę i gastronomię - strategię dopasowujemy do branży.
             </p>
           </FadeInView>
 
@@ -294,7 +290,7 @@ const PozycjonowanieKalisz = () => {
               {
                 step: "01",
                 title: "Konsultacja i zakres audytu SEO",
-                desc: "Analizujemy Twoją stronę pod kątem fraz dla Kalisza i Wielkopolski. Oceniamy realne szanse na TOP 10 i czas potrzebny do wyników - zwykle krótszy niż w dużych miastach.",
+                desc: "Analizujemy Twoją stronę pod kątem fraz dla Kalisza i Wielkopolski. Oceniamy konkurencję i realny zakres prac potrzebny do poprawy widoczności.",
               },
               {
                 step: "02",
@@ -309,7 +305,7 @@ const PozycjonowanieKalisz = () => {
               {
                 step: "04",
                 title: "Raportowanie i skalowanie",
-                desc: "Co 2 tygodnie raportujemy pozycje, ruch organiczny i konwersje. Gdy strona nabiera autorytetu, rozszerzamy zakres fraz i kampanii.",
+                desc: "Regularnie raportujemy pozycje, ruch organiczny i konwersje. Gdy strona nabiera autorytetu, rozszerzamy zakres fraz i kampanii.",
               },
             ].map((step, i) => (
               <FadeInView key={i} delay={i * 0.1}>
@@ -330,88 +326,40 @@ const PozycjonowanieKalisz = () => {
         </div>
       </section>
 
-      {/* Pricing */}
+      {/* Pricing factors */}
       <section className="py-20 bg-muted/20">
         <div className="container mx-auto px-4 max-w-4xl">
           <FadeInView className="text-center mb-12">
             <h2 className="text-3xl font-bold text-foreground mb-4">
-              Pakiety SEO dla firm z Kalisza
+              Od czego zależy wycena SEO dla firmy z Kalisza
             </h2>
             <p className="text-muted-foreground">
-              Elastyczne pakiety dostosowane do budżetu i potrzeb Twojej firmy
+              Wycenę przygotowujemy po rozmowie o zakresie i audycie strony — nie stosujemy stałego cennika.
             </p>
           </FadeInView>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-4">
             {[
-              {
-                name: "Starter",
-                price: "900",
-                features: [
-                  "Audyt SEO Kalisz",
-                  "10-15 słów kluczowych",
-                  "Optymalizacja on-page",
-                  "Raport co 2 tygodnie",
-                  "Chat wsparcia",
-                ],
-              },
-              {
-                name: "Professional",
-                price: "1 500",
-                features: [
-                  "Wszystko z Starter",
-                  "25-35 słów kluczowych",
-                  "Link building lokalne",
-                  "Tworzenie treści (4 art/m-c)",
-                  "Monitoring pozycji codziennie",
-                  "Wsparcie telefoniczne",
-                ],
-                highlighted: true,
-              },
-              {
-                name: "Premium",
-                price: "2 500",
-                features: [
-                  "Wszystko z Professional",
-                  "50+ słów kluczowych",
-                  "Kampania PR lokalnej",
-                  "Tworzenie treści (8 art/m-c)",
-                  "Optymalizacja UX",
-                  "Dedykowany account manager",
-                ],
-              },
-            ].map((pkg, i) => (
-              <FadeInView key={i} delay={i * 0.1}>
-                <div
-                  className={`border rounded-xl p-6 flex flex-col ${
-                    pkg.highlighted
-                      ? "border-primary bg-primary/5 ring-1 ring-primary/20"
-                      : "border-border/60 bg-card"
-                  }`}
-                >
-                  <h3 className="font-bold text-lg text-foreground mb-2">{pkg.name}</h3>
-                  <div className="mb-6">
-                    <span className="text-3xl font-bold text-primary">{pkg.price}</span>
-                    <span className="text-muted-foreground text-sm"> zł/mies. netto</span>
-                  </div>
-                  <ul className="space-y-3 flex-1 mb-6">
-                    {pkg.features.map((feature, fi) => (
-                      <li key={fi} className="flex items-start gap-3 text-sm text-muted-foreground">
-                        <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                        <span>{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <Button
-                    asChild
-                    variant={pkg.highlighted ? "default" : "outline"}
-                    className="w-full"
-                  >
-                    <Link to="/kontakt?usluga=seo#formularz">Bezpłatna konsultacja SEO</Link>
-                  </Button>
+              "Liczba i konkurencyjność fraz, na które chcesz być widoczny",
+              "Stan techniczny strony i zakres potrzebnych poprawek",
+              "Ilość treści do przygotowania lub przebudowy",
+              "Potrzeba działań link buildingowych i lokalnych (np. profil firmy w Google)",
+              "Zasięg działań: sam Kalisz, region czy cała Polska",
+              "Zakres raportowania i częstotliwość spotkań",
+            ].map((item, i) => (
+              <FadeInView key={i} delay={i * 0.05}>
+                <div className="flex items-start gap-3 bg-card border border-border/60 rounded-xl p-5 text-sm text-muted-foreground">
+                  <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                  <span>{item}</span>
                 </div>
               </FadeInView>
             ))}
+          </div>
+
+          <div className="text-center mt-8">
+            <Button asChild>
+              <Link to="/kontakt?usluga=seo#formularz">Bezpłatna konsultacja SEO</Link>
+            </Button>
           </div>
         </div>
       </section>
@@ -421,10 +369,10 @@ const PozycjonowanieKalisz = () => {
         <div className="container mx-auto px-4 text-center">
           <FadeInView>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Gotowy na pierwszą stronę Google w Kaliszu?
+              Chcesz zwiększyć widoczność w Google w Kaliszu?
             </h2>
             <p className="text-primary-foreground/80 text-lg mb-8 max-w-xl mx-auto">
-              Zapytaj o audyt SEO. Zakres i wycenę ustalimy na bezpłatnej konsultacji, a potem pokażemy, jak wygrać z lokalną konkurencją w Kaliszu i co konkretnie trzeba zrobić, aby uzyskać organiczny ruch.
+              Zapytaj o audyt SEO. Zakres i wycenę ustalimy na bezpłatnej konsultacji, a potem pokażemy, jak wypadasz na tle lokalnej konkurencji w Kaliszu i co konkretnie trzeba zrobić, aby uzyskać organiczny ruch.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" asChild className="text-base px-8">

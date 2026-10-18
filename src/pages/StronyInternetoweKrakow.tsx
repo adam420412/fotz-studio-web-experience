@@ -19,7 +19,6 @@ import {
   MapPin,
   ArrowRight,
   Sparkles,
-  Zap,
   Target,
   BarChart3,
   Code2,
@@ -28,7 +27,6 @@ import {
   CheckCircle2,
   Play,
   Star,
-  Clock,
   Users,
   Award
 } from "lucide-react";
@@ -67,7 +65,7 @@ const StronyInternetoweKrakow = () => {
     { icon: Smartphone, title: "Mobile-first", desc: "Tworzymy responsywne strony internetowe działające na wszystkich urządzeniach." },
     { icon: Shield, title: "Bezpieczne strony", desc: "SSL, regularne aktualizacje, zabezpieczenia przed atakami." },
     { icon: Headphones, title: "Wsparcie po wdrożeniu", desc: "Nie zostawiamy Cię po uruchomieniu nowej strony internetowej." },
-    { icon: Sparkles, title: "Lokalna znajomość rynku", desc: "Rozumiemy krakowski rynek – połączenie turystyki, akademickości i rosnącego sektora IT. Tworzymy strony, które docierają do lokalnych i międzynarodowych klientów." },
+    { icon: Sparkles, title: "Współpraca zdalna", desc: "Pracujemy z Poznania, firmy z Krakowa obsługujemy zdalnie. Przed projektem poznajemy Twoją branżę i odbiorców – lokalnych i zagranicznych." },
   ];
 
   const pricing = [
@@ -103,7 +101,7 @@ const StronyInternetoweKrakow = () => {
     {
       title: "Apartamenty Chorwacja",
       category: "Strona rezerwacyjna",
-      result: "+180% rezerwacji online",
+      result: "Strona z rezerwacjami online",
       link: "/realizacje/apartamenty-chorwacja",
       image: apartamentyImg
     },
@@ -117,7 +115,7 @@ const StronyInternetoweKrakow = () => {
     {
       title: "Cute Dumpling",
       category: "Strona gastronomiczna",
-      result: "+250% ruchu organicznego",
+      result: "Strona z naciskiem na SEO",
       link: "/realizacje/cute-dumpling",
       image: cuteDumplingImg
     },
@@ -161,15 +159,8 @@ const StronyInternetoweKrakow = () => {
   const stats = [
     { value: "WWW", label: "Strony i sklepy", icon: Layers },
     { value: "UX", label: "Projekt dla odbiorcy", icon: Star },
-    { value: "5 lat", label: "Doświadczenia", icon: Clock },
+    { value: "SEO", label: "Podstawy w standardzie", icon: Search },
     { value: "Kontakt", label: "Uzgodniona opieka", icon: Headphones },
-  ];
-
-  const benefits = [
-    { icon: Zap, title: "Szybkie wdrożenie", desc: "Realizacja projektu w 2-6 tygodni" },
-    { icon: Target, title: "Skuteczne SEO", desc: "Widoczność w Google od pierwszego dnia" },
-    { icon: Smartphone, title: "Mobile-first", desc: "Perfekcyjnie na każdym urządzeniu" },
-    { icon: Shield, title: "Bezpieczeństwo", desc: "SSL i regularne aktualizacje" },
   ];
 
   return (
@@ -360,7 +351,7 @@ const StronyInternetoweKrakow = () => {
           content={{
             title: "Projektowanie i Tworzenie Stron WWW",
             paragraphs: [
-              <p key="1">Wybierając lokalnych specjalistów do <strong>projektowania stron www</strong>, zyskujesz partnera rozumiejącego specyfikę krakowskiego rynku. Profesjonalny projekt strony z optymalizacją SEO to klucz do lepszej widoczności w Google.</p>,
+              <p key="1">Pracujemy z Poznania, a firmy z Krakowa obsługujemy zdalnie – od briefu po wdrożenie <strong>projektowania stron www</strong>. Profesjonalny projekt strony z optymalizacją SEO to klucz do lepszej widoczności w Google.</p>,
               <p key="2">Oferujemy <strong>kompleksowe usługi tworzenia stron internetowych</strong> - od analizy potrzeb, przez projektowanie UI/UX, aż po wdrożenie i pozycjonowanie.</p>
             ],
             videoSrc: "/videos/fotz-reel.mp4"
@@ -381,8 +372,8 @@ const StronyInternetoweKrakow = () => {
           subtitle="Każdy projekt realizujemy z myślą o Twoim sukcesie biznesowym"
           cityName="Kraków"
           benefits={[
-            "Szybkie wdrożenie projektu w 2-6 tygodni",
-            "Skuteczne SEO - widoczność w Google od pierwszego dnia",
+            "Termin wdrożenia ustalamy po briefie, zależnie od zakresu",
+            "Podstawy SEO wdrożone od startu strony",
             "Mobile-first - perfekcyjnie na każdym urządzeniu",
             "Bezpieczeństwo - SSL i regularne aktualizacje",
             "Analityka - śledzenie konwersji i ruchu",
@@ -410,7 +401,7 @@ const StronyInternetoweKrakow = () => {
                 Przykłady naszych stron internetowych
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-                Zobacz projekty, które zrealizowaliśmy. Każda strona to unikalna historia sukcesu.
+                Zobacz wybrane projekty stron, które zrealizowaliśmy.
               </p>
             </motion.div>
 
@@ -544,7 +535,7 @@ const StronyInternetoweKrakow = () => {
         <CityPricingCards 
           pricing={pricing}
           title="Cennik tworzenia stron www"
-          subtitle="Transparentne ceny dopasowane do zakresu projektu strony internetowej."
+          subtitle="Wycenę przygotowujemy po rozmowie o zakresie: liczbie podstron, funkcjach, integracjach i treściach."
           cityName="Kraków"
         />
 
@@ -671,10 +662,10 @@ const StronyInternetoweKrakow = () => {
               Strony internetowe Kraków — specyfika krakowskiego rynku
             </h2>
             <p className="text-muted-foreground mb-4">
-              Kraków to drugie co do wielkości miasto w Polsce i jedno z najważniejszych centrów akademickich, kulturalnych i technologicznych w Europie Środkowej. Ponad 200 000 studentów, rozwijający się sektor IT (krakowski hub firm takich jak Google, IBM, Motorola), prężna branża turystyczna i silna scena MŚP sprawiają, że rynek online w Krakowie jest zarówno wymagający, jak i pełen możliwości. Profesjonalna strona internetowa dla firmy z Krakowa musi odpowiadać na oczekiwania wymagającej, często anglojęzycznej, grupy docelowej.
+              Kraków to drugie co do wielkości miasto w Polsce i jedno z najważniejszych centrów akademickich, kulturalnych i technologicznych w Europie Środkowej. Duża społeczność akademicka, sektor IT, branża turystyczna i silna scena MŚP sprawiają, że rynek online w Krakowie jest zarówno wymagający, jak i pełen możliwości. Profesjonalna strona internetowa dla firmy z Krakowa musi odpowiadać na oczekiwania wymagającej, często anglojęzycznej, grupy docelowej.
             </p>
             <p className="text-muted-foreground mb-6">
-              Fotz Studio tworzy strony internetowe dla krakowskich firm zdalnie — pełen projekt od briefu po wdrożenie realizujemy online, z regularnym statusem przez Teams lub Slack. Jeśli preferujesz spotkanie stacjonarne, możemy się zorganizować — skontaktuj się z nami. Każda strona www jest projektowana przez nasz własny zespół: bez podwykonawców, bez tłumaczenia wizji przez pośredników. Wykonanie strony internetowej Kraków z gwarancją terminowości i jakości.
+              Fotz Studio pracuje z Poznania, a strony internetowe dla krakowskich firm tworzy zdalnie — pełen projekt od briefu po wdrożenie realizujemy online, z regularnym statusem przez Teams lub Slack. Jeśli preferujesz spotkanie stacjonarne, możemy się zorganizować — skontaktuj się z nami. Termin i zakres prac ustalamy na starcie projektu i trzymamy się ich w harmonogramie.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
@@ -684,14 +675,14 @@ const StronyInternetoweKrakow = () => {
               Kraków jest miastem, w którym estetyka ma znaczenie — od architektury przez kulturę po design produktów cyfrowych. Strony internetowe, które projektujemy dla krakowskich firm, łączą nowoczesny, czysty design z funkcjonalnością zorientowaną na konwersję. Nie korzystamy z gotowych szablonów — każdy projekt graficzny tworzony jest od zera w Figma, z uwzględnieniem tożsamości marki, grupy docelowej i celów biznesowych.
             </p>
             <p className="text-muted-foreground mb-6">
-              Specyfika krakowskiego rynku wymaga też myślenia o wielojęzyczności — szczególnie w branżach turystycznej, edukacyjnej i IT. Dla klientów z Krakowa, którzy obsługują zagranicznych gości lub partnerów, regularnie budujemy strony dwu- i trzyjęzyczne (PL/EN/DE) z poprawną strukturą hreflang dla SEO.
+              Specyfika krakowskiego rynku wymaga też myślenia o wielojęzyczności — szczególnie w branżach turystycznej, edukacyjnej i IT. Dla firm, które obsługują zagranicznych gości lub partnerów, możemy zbudować stronę dwu- lub trzyjęzyczną (np. PL/EN/DE) z poprawną strukturą hreflang dla SEO.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
               SEO dla stron internetowych w Krakowie — lokalna widoczność w Google
             </h2>
             <p className="text-muted-foreground mb-4">
-              Tworzenie stron internetowych dla krakowskich firm realizujemy z wbudowaną optymalizacją SEO — meta tagi, Core Web Vitals, schema LocalBusiness z danymi krakowskiej firmy, mapa strony XML i linkowanie wewnętrzne. Dzięki temu strony naszych klientów szybciej osiągają widoczność w Google Maps i wynikach organicznych dla zapytań lokalnych.
+              Tworzenie stron internetowych dla krakowskich firm realizujemy z wbudowaną optymalizacją SEO — meta tagi, Core Web Vitals, schema LocalBusiness z danymi krakowskiej firmy, mapa strony XML i linkowanie wewnętrzne. To techniczna podstawa pod widoczność w Google Maps i wynikach organicznych dla zapytań lokalnych – nie gwarantujemy jednak konkretnych pozycji.
             </p>
             <p className="text-muted-foreground mb-6">
               Jeśli chcesz kompleksowego wsparcia SEO, oferujemy również{" "}

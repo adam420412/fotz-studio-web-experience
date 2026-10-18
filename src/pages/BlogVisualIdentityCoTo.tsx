@@ -97,7 +97,7 @@ export default function BlogVisualIdentityCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Identyfikacja Wizualna", url: "https://www.fotz-studio.pl" },
+              { name: "Identyfikacja Wizualna", url: "/blog/identyfikacja-wizualna-co-to" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Identyfikacja wizualna — co to jest i jak ją budować?

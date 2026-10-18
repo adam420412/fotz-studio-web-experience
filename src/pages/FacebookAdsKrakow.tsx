@@ -10,11 +10,11 @@ export default function FacebookAdsKrakow() {
   const faqItems = [
     {
       question: "Ile kosztują kampanie Facebook Ads (Meta Ads) w Krakowie?",
-      answer: "Facebook Ads w Krakowie zaczyna się od 400 zł/miesiąc za zarządzanie kampanią (pakiet START). Dodatkowy budżet reklamowy na samą Platformę Meta to osobna pozycja — od 500 zł/miesiąc dla małych firm do 20 000+ zł/miesiąc dla e-commerce i dużych sieci. Całkowity koszt zależy od branży, konkurencji i zasobów kreatywnych.",
+      answer: "Wycenę obsługi przygotowujemy po rozmowie o zakresie: liczbie kampanii, grup odbiorców, potrzebnych kreacjach i raportowaniu. Budżet reklamowy płacony Meta to zawsze osobna pozycja — jego wysokość dobieramy do celów, branży i konkurencji.",
     },
     {
       question: "Jak szybko zobaczę wyniki kampanii Facebook Ads w Krakowie?",
-      answer: "Pierwsze wyniki są widoczne już po 24-48 godzinach od uruchomienia kampanii. Facebook szybko testuje różne audience i creative, więc dane napływają natychmiast. Pełna optymalizacja i znaczące konwersje trwają 2-4 tygodnie, gdy kampania zbierze wystarczająco danych do AI-driven optymalizacji.",
+      answer: "Pierwsze dane (wyświetlenia, kliknięcia, koszt) pojawiają się krótko po starcie kampanii. Na optymalizację potrzeba czasu, aż kampania zbierze wystarczająco danych — ile, zależy od budżetu, celu i branży. Nie obiecujemy konkretnej liczby konwersji w określonym terminie.",
     },
     {
       question: "Jakie formaty reklam są dostępne na Facebook/Instagram dla firm w Krakowie?",
@@ -22,23 +22,23 @@ export default function FacebookAdsKrakow() {
     },
     {
       question: "Czy potrzebuję Pixel Facebooka (Meta Pixel) do kampanii w Krakowie?",
-      answer: "Tak — Meta Pixel jest kluczowy dla efektywnych kampanii. Instalujemy pixel na Twojej stronie, aby śledzić konwersje, budować audience retargeting i wspierać AI Facebooka w znalezeniu nowych klientów. Pixel pozwala także na precise audience targeting: ludzie, którzy odwiedzili Twoją stronę, zainteresowali się produktami, ale nie kupili. To retargeting — i działa bardzo dobrze w Krakowie.",
+      answer: "Tak — Meta Pixel jest kluczowy dla efektywnych kampanii. Instalujemy pixel na Twojej stronie, aby śledzić konwersje, budować audience retargeting i wspierać AI Facebooka w znalezeniu nowych klientów. Pixel pozwala także na precise audience targeting: ludzie, którzy odwiedzili Twoją stronę, zainteresowali się produktami, ale nie kupili. To retargeting — jeden z podstawowych elementów kampanii.",
     },
     {
       question: "Jakie jest CPM i CPC na Facebook/Instagram w Krakowie?",
-      answer: "CPM (koszt za 1000 impressionów) na Facebook/Instagram w Krakowie wynosi średnio 4-12 zł (niżej niż w Warszawie), CPC (koszt za kliknięcie) to 0,8-4 zł. Ceny zależą od branży, sezonu i konkurencji. E-commerce i finansowe są droższe (8-16 zł CPM), usługi i handel lokalny są tańsze (2-6 zł CPM). Nasi specjaliści optymalizują bidding, aby unikać drożych impressionów.",
+      answer: "CPM (koszt za 1000 wyświetleń) i CPC (koszt za kliknięcie) ustala aukcja Meta — zależą od branży, sezonu, grupy odbiorców, jakości kreacji i konkurencji. Realne stawki dla Twojej branży widać dopiero po starcie testowej kampanii. Optymalizujemy ustawienia, aby nie przepłacać za wyświetlenia.",
     },
     {
       question: "Jak Facebook/Instagram widzi moich potencjalnych klientów w Krakowie?",
-      answer: "Facebook ma dostęp do miliardów danych: wiek, płeć, zainteresowania, zachowanie na platformie, historia zakupów (pixel), lokalizacja. Targetowanie w Krakowie może być bardzo precyzyjne: wiek 25-50, zainteresowani modą/spożywczym/turystyką, mieszkańcy Starego Miasta/Kazimierza, aktywnie poszukujący produktów online. Lookalike audience — ludzie podobni do Twoich obecnych klientów — również działa doskonale w Krakowie.",
+      answer: "Facebook ma dostęp do miliardów danych: wiek, płeć, zainteresowania, zachowanie na platformie, historia zakupów (pixel), lokalizacja. Targetowanie w Krakowie może być bardzo precyzyjne: wiek 25-50, zainteresowani modą/spożywczym/turystyką, mieszkańcy Starego Miasta/Kazimierza, aktywnie poszukujący produktów online. Można też użyć grup podobnych odbiorców (Lookalike) — osób przypominających Twoich obecnych klientów.",
     },
     {
       question: "Jaki ROAS mogę oczekiwać z Facebook Ads w Krakowie?",
-      answer: "ROAS (Return on Ad Spend) wynosi zazwyczaj 2:1 do 5:1 dla dobrze skonfigurowanych kampanii. E-commerce średnio 3-5:1, usługi/lead generation 1,5-3:1, turystyka i hospitality mogą osiągnąć 4-6:1. Pierwszy miesiąc to testowanie — drugi i trzeci pokazują stały wzrost ROAS. Po 3 miesiącach optymalizacji, nasze kampanie dla firm krakowskich osiągają najwyższy poziom efektywności.",
+      answer: "Nie podajemy z góry ROAS (zwrotu z wydatków na reklamę) — zależy od marży, ceny produktu, strony, oferty i konkurencji. Pierwsze tygodnie to testy, a cele i realne oczekiwania ustalamy po analizie danych. Nie gwarantujemy konkretnego wyniku sprzedażowego.",
     },
     {
       question: "Czy Facebook Ads działają dla małych firm i usług lokalnych w Krakowie?",
-      answer: "Tak — Facebook Ads są idealnym kanałem dla małych firm i usług lokalnych w Krakowie (restauracje, salony, galerie, usługi turystyczne, handlowcy). Możesz targetować precyzyjnie Kraków (Stare Miasto, Kazimierz, Nowa Huta), budować remarketing dla turystów i klientów, testować kampanię z budżetem 500-1000 zł/miesiąc. Wiele naszych lokalnych klientów krakowskich generuje 5-15 leadów dziennie za mniej niż 1500 zł/miesiąc na Facebook Ads.",
+      answer: "Tak — Facebook Ads mogą dobrze sprawdzić się dla małych firm i usług lokalnych w Krakowie (restauracje, salony, galerie, usługi turystyczne, handel). Możesz targetować wybrane rejony Krakowa (Stare Miasto, Kazimierz, Nowa Huta), budować remarketing i zacząć od mniejszego budżetu testowego. Pracujemy z Poznania, a firmy z Krakowa obsługujemy zdalnie.",
     },
   ];
 
@@ -47,14 +47,14 @@ export default function FacebookAdsKrakow() {
       <Layout>
         <SEOHead
           title="Agencja Facebook Ads Kraków — reklamy Meta dla firm | Fotz.pl"
-          description="Facebook Ads Kraków ✓ Kampanie Meta Ads (Facebook, Instagram) od 400 zł/mies. Certyfikowani specjaliści, wyniki od 48h. Bezpłatna konsultacja!"
+          description="Facebook Ads Kraków — kampanie Meta Ads (Facebook, Instagram) dla firm z Krakowa. Pracujemy z Poznania, obsługa zdalna. Wycena po rozmowie. Bezpłatna konsultacja!"
           canonical="https://www.fotz-studio.pl/performance-marketing/facebook-ads/krakow"
           keywords="facebook ads krakow, meta ads krakow, reklamy facebook krakow, agencja facebook ads krakow, kampanie facebook krakow, instagram ads krakow, facebook ads dla firm krakow, reklama na facebooku krakow, meta ads agencja krakow, facebook ads cennik krakow"
         />
 
         <ServiceSchema
           name="Kampanie Facebook Ads Kraków"
-          description="Tworzenie i optymalizacja kampanii Facebook Ads (Meta Ads) dla firm z Krakowa. Agencja Fotz.pl — certyfikowani specjaliści Meta."
+          description="Tworzenie i optymalizacja kampanii Facebook Ads (Meta Ads) dla firm z Krakowa. Fotz Studio — pracujemy z Poznania, firmy z Krakowa obsługujemy zdalnie."
           provider="Fotz Studio"
           areaServed="Krakow"
         />
@@ -88,22 +88,22 @@ export default function FacebookAdsKrakow() {
                   Facebook Ads Kraków — Reklamy Meta dla Twojej Firmy
                 </h1>
                 <p className="text-xl md:text-2xl text-pink-100 mb-8">
-                  Facebook Ads Kraków — profesjonalne kampanie Meta Ads i reklamy Facebook dla firm z Kraków i Małopolski. Zwiększamy sprzedaż, zasięg i ROI dzięki precyzyjnemu targetowaniu. Bezpłatna konsultacja.</p>
+                  Facebook Ads Kraków — profesjonalne kampanie Meta Ads i reklamy Facebook dla firm z Kraków i Małopolski. Planujemy, prowadzimy i optymalizujemy kampanie z precyzyjnym targetowaniem. Bezpłatna konsultacja.</p>
               </div>
 
               {/* Stats Grid */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-6 text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-pink-300 mb-2">400 zł</div>
-                  <div className="text-sm text-pink-100">Kampanie od</div>
+                  <div className="text-2xl md:text-3xl font-bold text-pink-300 mb-2">Wycena</div>
+                  <div className="text-sm text-pink-100">Po rozmowie o zakresie</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-6 text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-pink-300 mb-2">48h</div>
-                  <div className="text-sm text-pink-100">Wyniki od</div>
+                  <div className="text-2xl md:text-3xl font-bold text-pink-300 mb-2">Testy A/B</div>
+                  <div className="text-sm text-pink-100">Kreacji i odbiorców</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-6 text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-pink-300 mb-2">100%</div>
-                  <div className="text-sm text-pink-100">Certyfikowani</div>
+                  <div className="text-2xl md:text-3xl font-bold text-pink-300 mb-2">Zdalnie</div>
+                  <div className="text-sm text-pink-100">Pracujemy z Poznania</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-6 text-center">
                   <div className="text-2xl md:text-3xl font-bold text-pink-300 mb-2">Raport</div>
@@ -124,16 +124,16 @@ export default function FacebookAdsKrakow() {
                 </h2>
                 <div className="space-y-6 text-lg text-muted-foreground">
                   <p>
-                    Kraków to 800 000 mieszkańców, drugie największe miasto w Polsce, z silnym sektorem turystycznym, gastronomii, handlu i e-commerce. Drugi rynek handlowy w kraju — przedsiębiorcy inwestują miliony złotych w reklamy, a Facebook Ads to najskuteczniejszy kanał dla akwizycji klientów.
+                    Kraków to drugie największe miasto w Polsce, z silnym sektorem turystycznym, gastronomii, handlu i e-commerce. Dla wielu takich firm Facebook i Instagram są ważnym kanałem pozyskiwania klientów.
                   </p>
                   <p>
-                    Facebook i Instagram w Krakowie działają dla wszystkich branż: restauracje Starego Miasta, sklepy online, galerie sztuki, biura nieruchomości, salony piękności, usługi turystyczne. CPM i CPC są niższe niż w Warszawie (średnio 4-12 zł CPM), a konkurencja jest mniejsza — co oznacza lepsze wyniki za mniej pieniędzy.
+                    Facebook i Instagram w Krakowie działają dla wszystkich branż: restauracje Starego Miasta, sklepy online, galerie sztuki, biura nieruchomości, salony piękności, usługi turystyczne. Koszty kliknięć i wyświetleń zależą od branży i konkurencji — sprawdzamy je w kampanii testowej.
                   </p>
                   <p>
-                    Pixel Facebooka umożliwia precyzyjny retargeting — reklamy dla turystów i potencjalnych klientów, którzy widzieli Twoją ofertę. Konwersja z retargeting jest 3-5x wyższa niż z kampanii prospecting, a koszt za konwersję jest znacznie niższy.
+                    Pixel Facebooka umożliwia precyzyjny retargeting — reklamy dla turystów i potencjalnych klientów, którzy widzieli Twoją ofertę. Retargeting zwykle uzupełnia kampanie docierające do nowych odbiorców.
                   </p>
                   <p>
-                    Algorytm Meta automatycznie znajduje ludzi zainteresowanych Twoimi produktami/usługami w Krakowie — nie musisz sam wybiór ręcznie. AI-driven optimization oznacza, że kampania jest coraz bardziej efektywna każdego dnia, a CPM spada w miarę zbierania danych.
+                    Algorytm Meta automatycznie znajduje ludzi zainteresowanych Twoimi produktami/usługami w Krakowie — nie musisz sam wybiór ręcznie. Im więcej danych zbierze kampania, tym lepiej algorytm może dobierać odbiorców — dlatego regularnie analizujemy wyniki.
                   </p>
                 </div>
               </div>
@@ -158,13 +158,13 @@ export default function FacebookAdsKrakow() {
                 <div className="bg-background rounded-lg border border-border p-6">
                   <h3 className="text-xl font-bold mb-3">Stories Ads</h3>
                   <p className="text-muted-foreground">
-                    Fullscreen reklamy na Stories (Facebook i Instagram). Bardzo efektywne dla mobile audience, szybka akcja, idealne dla restauracji i usług lokalnych w Krakowie.
+                    Fullscreen reklamy na Stories (Facebook i Instagram). Format pod telefon, dobry do szybkiej akcji — często stosowany przez restauracje i usługi lokalne.
                   </p>
                 </div>
                 <div className="bg-background rounded-lg border border-border p-6">
                   <h3 className="text-xl font-bold mb-3">Reels Ads</h3>
                   <p className="text-muted-foreground">
-                    Reklamy wideo w sekcji Reels na Instagramie. Nowy format Meta, bardzo wysoki engagement, efektywne dla kreatywnych kampanii i turystyki w Krakowie.
+                    Reklamy wideo w sekcji Reels na Instagramie. Format krótkiego wideo, dobry do kreatywnych kampanii i turystyki.
                   </p>
                 </div>
                 <div className="bg-background rounded-lg border border-border p-6">
@@ -176,7 +176,7 @@ export default function FacebookAdsKrakow() {
                 <div className="bg-background rounded-lg border border-border p-6">
                   <h3 className="text-xl font-bold mb-3">Video Ads</h3>
                   <p className="text-muted-foreground">
-                    Reklamy wideo (6 sekund do 3 minut). Najwyższy engagement, opowiadanie historii marki, demo produktów. Pracują we wszystkich formatach.
+                    Reklamy wideo (6 sekund do 3 minut). Opowiadanie historii marki, demo produktów. Pracują we wszystkich formatach.
                   </p>
                 </div>
                 <div className="bg-background rounded-lg border border-border p-6">
@@ -263,48 +263,30 @@ export default function FacebookAdsKrakow() {
           <section className="py-16 md:py-24 bg-secondary/30">
             <div className="container px-4">
               <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-                Kampanie Facebook Ads Kraków — cennik
+                Kampanie Facebook Ads Kraków — od czego zależy wycena
               </h2>
-              <div className="max-w-4xl mx-auto overflow-x-auto">
-                <table className="w-full border-collapse">
-                  <thead>
-                    <tr className="border-b-2 border-border">
-                      <th className="text-left p-4 font-bold">Pakiet</th>
-                      <th className="text-left p-4 font-bold">Cena obsługi</th>
-                      <th className="text-left p-4 font-bold">Budżet reklamowy</th>
-                      <th className="text-left p-4 font-bold">Dla kogo</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="border-b border-border bg-background">
-                      <td className="p-4 font-semibold">START</td>
-                      <td className="p-4">400 zł/mies.</td>
-                      <td className="p-4">500-1500 zł</td>
-                      <td className="p-4">Małe firmy, usługi lokalne</td>
-                    </tr>
-                    <tr className="border-b border-border bg-background">
-                      <td className="p-4 font-semibold">GROWTH</td>
-                      <td className="p-4">800 zł/mies.</td>
-                      <td className="p-4">2000-5000 zł</td>
-                      <td className="p-4">Średnie firmy, E-commerce</td>
-                    </tr>
-                    <tr className="border-b border-border bg-background">
-                      <td className="p-4 font-semibold">PRO</td>
-                      <td className="p-4">1500+ zł/mies.</td>
-                      <td className="p-4">5000+ zł</td>
-                      <td className="p-4">E-commerce, sieci, skalowanie</td>
-                    </tr>
-                    <tr className="bg-background">
-                      <td className="p-4 font-semibold">ENTERPRISE</td>
-                      <td className="p-4">% budżetu (15-20%)</td>
-                      <td className="p-4">15000+ zł</td>
-                      <td className="p-4">Duże sieci, brand awareness</td>
-                    </tr>
-                  </tbody>
-                </table>
+              <div className="max-w-4xl mx-auto grid md:grid-cols-3 gap-6">
+                <div className="bg-background rounded-lg border border-border p-6">
+                  <h3 className="text-xl font-bold mb-2">Zakres obsługi</h3>
+                  <p className="text-muted-foreground">
+                    Liczba kampanii i grup odbiorców, częstotliwość optymalizacji, retargeting, kampanie produktowe i zakres raportowania.
+                  </p>
+                </div>
+                <div className="bg-background rounded-lg border border-border p-6">
+                  <h3 className="text-xl font-bold mb-2">Kreacje</h3>
+                  <p className="text-muted-foreground">
+                    Czy korzystamy z Twoich materiałów, czy przygotowujemy grafiki, zdjęcia i wideo (np. Reels) od podstaw.
+                  </p>
+                </div>
+                <div className="bg-background rounded-lg border border-border p-6">
+                  <h3 className="text-xl font-bold mb-2">Budżet reklamowy</h3>
+                  <p className="text-muted-foreground">
+                    Budżet na emisję reklam płacisz bezpośrednio Meta — zawsze osobno od wynagrodzenia za obsługę. Jego wysokość ustalamy razem do celów.
+                  </p>
+                </div>
               </div>
               <p className="text-center text-muted-foreground mt-8 max-w-2xl mx-auto">
-                Każdy pakiet obejmuje setup Pixel &amp; audience, creative optimization, daily management, A/B testing, monthly reporting ze szczegółową analizą ROAS i CAC.
+                Wycenę przygotowujemy po rozmowie o zakresie, celach i materiałach. Obsługa obejmuje konfigurację Pixela i grup odbiorców, testy A/B kreacji, bieżącą optymalizację i miesięczny raport.
               </p>
             </div>
           </section>
@@ -322,13 +304,13 @@ export default function FacebookAdsKrakow() {
                   <div className="bg-secondary/50 rounded-lg p-4 border border-border">
                     <h3 className="font-bold mb-2">E-commerce &amp; online sklepy</h3>
                     <p className="text-sm text-muted-foreground">
-                      Carousel Ads, Dynamic Ads, retargeting. Skalowanie sprzedaży online dla produktów, odzieży, wyposażenia. Średnia ROAS 3-5:1.
+                      Carousel Ads, Dynamic Ads, retargeting. Kampanie sprzedażowe dla produktów, odzieży, wyposażenia.
                     </p>
                   </div>
                   <div className="bg-secondary/50 rounded-lg p-4 border border-border">
                     <h3 className="font-bold mb-2">Restauracje Starego Miasta</h3>
                     <p className="text-sm text-muted-foreground">
-                      Video Ads, Stories Ads dla promocji, menu. Lead Ads do rezerwacji. Geo-targeting — turystów i mieszkańców Krakowa. CPM niski, konwersja wysoka.
+                      Video Ads, Stories Ads dla promocji, menu. Lead Ads do rezerwacji. Geo-targeting — turyści i mieszkańcy Krakowa.
                     </p>
                   </div>
                   <div className="bg-secondary/50 rounded-lg p-4 border border-border">
@@ -340,7 +322,7 @@ export default function FacebookAdsKrakow() {
                   <div className="bg-secondary/50 rounded-lg p-4 border border-border">
                     <h3 className="font-bold mb-2">Beauty &amp; SPA</h3>
                     <p className="text-sm text-muted-foreground">
-                      Reels Ads (before/after), Stories Ads, Lead Ads dla rezerwacji. Retargeting osób zainteresowanych. CPL niski, wysoki ROAS.
+                      Reels Ads (before/after), Stories Ads, Lead Ads dla rezerwacji. Retargeting osób zainteresowanych.
                     </p>
                   </div>
                   <div className="bg-secondary/50 rounded-lg p-4 border border-border">
@@ -352,19 +334,19 @@ export default function FacebookAdsKrakow() {
                   <div className="bg-secondary/50 rounded-lg p-4 border border-border">
                     <h3 className="font-bold mb-2">Usługi (elektryk, malowanie, montaż)</h3>
                     <p className="text-sm text-muted-foreground">
-                      Lead Ads do zbierania zapytań. Geo-targeting Kraków i Wieliczka. Low CPC, szybka konwersja, małe budżety działają doskonale.
+                      Lead Ads do zbierania zapytań. Geo-targeting Kraków i Wieliczka. Można zacząć od mniejszego budżetu testowego.
                     </p>
                   </div>
                   <div className="bg-secondary/50 rounded-lg p-4 border border-border">
                     <h3 className="font-bold mb-2">Galerie &amp; sztuka</h3>
                     <p className="text-sm text-muted-foreground">
-                      Reels Ads (wernisaże, wystawy), Stories Ads, Video Ads. Targeting osób zainteresowanych sztuką i kulturą w Krakowie. Niche audience, wysoki engagement.
+                      Reels Ads (wernisaże, wystawy), Stories Ads, Video Ads. Targeting osób zainteresowanych sztuką i kulturą w Krakowie. Wąska, dobrze dobrana grupa odbiorców.
                     </p>
                   </div>
                   <div className="bg-secondary/50 rounded-lg p-4 border border-border">
                     <h3 className="font-bold mb-2">Edukacja &amp; szkolenia</h3>
                     <p className="text-sm text-muted-foreground">
-                      Video Ads (kursy, szkolenia), Lead Ads. Retargeting zainteresowanych osób (pixel). CPL średni, wysoka jakość leadów dla szkół i instytutów krakowskich.
+                      Video Ads (kursy, szkolenia), Lead Ads. Retargeting zainteresowanych osób (pixel). Kampanie rekrutacyjne dla szkół i instytutów — prowadziliśmy m.in. kampanię Meta Ads dla Dawid EDU.
                     </p>
                   </div>
                 </div>
@@ -382,15 +364,15 @@ export default function FacebookAdsKrakow() {
               </h2>
               <div className="max-w-3xl mx-auto space-y-6">
                 <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-2">Certyfikowani Meta Partners</h3>
+                  <h3 className="text-xl font-bold mb-2">Produkcja i reklama w jednym miejscu</h3>
                   <p className="text-muted-foreground">
-                    Nasi specjaliści są certyfikowani przez Meta (Facebook Blueprint). Mamy dostęp do beta features, advanced audience targeting tools i najnowszych algorytmów Meta AI.
+                    Sami produkujemy video, zdjęcia i grafiki, więc kreacje do kampanii powstają w tym samym zespole, który prowadzi reklamy. Pracujemy z Poznania, a firmy z Krakowa obsługujemy zdalnie.
                   </p>
                 </div>
                 <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-2">Szybkie setup &amp; wyniki (48h)</h3>
+                  <h3 className="text-xl font-bold mb-2">Sprawny start kampanii</h3>
                   <p className="text-muted-foreground">
-                    Instalujemy Pixel, definiujemy audience, uruchamiamy kampanię w 48 godzin. Wyniki są natychmiast widoczne — CPM, CPC, engagement. Nie czekasz tygodniami.
+                    Instalujemy Pixel, definiujemy grupy odbiorców i uruchamiamy kampanię w terminie ustalonym w ofercie. Od startu widzisz pierwsze dane — CPM, CPC, zaangażowanie.
                   </p>
                 </div>
                 <div className="bg-background rounded-lg border border-border p-6">
@@ -402,7 +384,7 @@ export default function FacebookAdsKrakow() {
                 <div className="bg-background rounded-lg border border-border p-6">
                   <h3 className="text-xl font-bold mb-2">ROAS &gt; CAC fokus</h3>
                   <p className="text-muted-foreground">
-                    Każda decyzja jest oparta na ROAS. Nie wydajemy budżetu beznamietnie — skalujemy to, co działa. Średni ROAS naszych klientów krakowskich: 3-5:1 po 3 miesiącach.
+                    Każda decyzja jest oparta na ROAS. Nie wydajemy budżetu bezmyślnie — skalujemy to, co działa, a wyłączamy to, co nie przynosi efektów.
                   </p>
                 </div>
                 <div className="bg-background rounded-lg border border-border p-6">
@@ -444,7 +426,7 @@ export default function FacebookAdsKrakow() {
                   Uruchom kampanie Facebook Ads w Krakowie
                 </h2>
                 <p className="text-lg text-slate-300 mb-10">
-                  Bezpłatna konsultacja bez zobowiązań. Poznaj naszą strategię dla Twojej branży. Wyniki od 48h.
+                  Bezpłatna konsultacja bez zobowiązań. Poznaj naszą strategię dla Twojej branży.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link

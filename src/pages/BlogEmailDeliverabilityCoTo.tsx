@@ -114,7 +114,7 @@ export default function BlogEmailDeliverabilityCoTo() {
 
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Email Deliverability", url: "https://www.fotz-studio.pl" }]}/>
+          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Email Deliverability", url: "/blog/email-deliverability-co-to" }]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Email Deliverability — co to jest i jak ją poprawić?
           </h1>

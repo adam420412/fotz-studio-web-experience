@@ -29,7 +29,7 @@ const adTypes = [
   {
     icon: Search,
     title: "Search Ads",
-    description: "Reklamy w wynikach Google. Targeting na intent — osoba szuka Twojego produktu / usługi. Najwyższy ROAS dla e-commerce i usług."
+    description: "Reklamy w wynikach Google. Targeting na intent — osoba szuka Twojego produktu / usługi. Sprawdza się w e-commerce i usługach."
   },
   {
     icon: ShoppingCart,
@@ -39,7 +39,7 @@ const adTypes = [
   {
     icon: Globe,
     title: "Display Ads",
-    description: "Retargeting i branding na 2 mln witryn. Polecam dla budowania świadomości marki i retargeting w Low Funnel."
+    description: "Retargeting i branding w sieci reklamowej Google. Polecam dla budowania świadomości marki i retargeting w Low Funnel."
   },
   {
     icon: Video,
@@ -53,8 +53,8 @@ const adTypes = [
   },
   {
     icon: FileText,
-    title: "Pmax + Local Services",
-    description: "Local Services Ads dla usług (instalatorzy, fachowcy). Widoczność w Google Maps + wyszukiwarce. CPL zwykle 20-50 zł."
+    title: "Kampanie lokalne",
+    description: "Kampanie dla usług lokalnych (instalatorzy, fachowcy). Widoczność w Google Maps i wyszukiwarce dla osób z Łodzi i okolic."
   }
 ];
 
@@ -72,7 +72,7 @@ const procesSteps = [
   {
     number: 3,
     title: "Copywriting i landing page",
-    description: "Piszemy ad copy który konwertuje. Testy headlines, description, CTA. Landing page optymalizujemy pod conversion rate (minimalne 5% to cel)."
+    description: "Piszemy ad copy który konwertuje. Testy headlines, description, CTA. Landing page optymalizujemy pod konwersję, a cele ustalamy po analizie danych z Twojej strony."
   },
   {
     number: 4,
@@ -86,64 +86,18 @@ const procesSteps = [
   }
 ];
 
-const pricingPlans = [
-  {
-    name: "START",
-    price: "400",
-    description: "Dla firm testujących Google Ads",
-    features: [
-      "1-2 kampanie Search",
-      "Audit słów kluczowych",
-      "Smart Bidding",
-      "Conversion tracking",
-      "Raport miesięczny",
-      "Email support"
-    ]
-  },
-  {
-    name: "GROWTH",
-    price: "1 200",
-    description: "Dla firm skalujących sprzedaż",
-    features: [
-      "3-5 kampanii Search",
-      "Shopping Ads (e-commerce)",
-      "Retargeting Display",
-      "Bid management codziennie",
-      "A/B testing ad copy",
-      "Raport tygodniowy",
-      "2 konsultacje/miesiąc"
-    ]
-  },
-  {
-    name: "PREMIUM",
-    price: "2 500",
-    description: "Kampanie 10k+ PLN/mies budżetu",
-    features: [
-      "Pełny zakres kampanii (Search, Shopping, Display, YouTube, Pmax)",
-      "Strategia multi-channel",
-      "Keyword research niszy",
-      "Professional copywriting",
-      "Landing page optimization",
-      "Conversion API + pixel",
-      "Raport zaawansowany + video call",
-      "Dedykowany account manager",
-      "Monthly strategy review"
-    ]
-  }
-];
-
 const industries = [
   {
     name: "E-commerce",
-    desc: "Sprzedaż online produktów. Shopping Ads pokazują ceny i zdjęcia — highest intent. Google Merchant Center integracja, feed produktów. ROAS 4-6x dla sklepów internetowych."
+    desc: "Sprzedaż online produktów. Shopping Ads pokazują ceny i zdjęcia — highest intent. Google Merchant Center integracja, feed produktów."
   },
   {
     name: "Usługi lokalne",
-    desc: "Instalatorzy, elektrycy, hydraulicy w Łodzi. Local Services Ads — bezpośrednio w Google. Geo-targeting Łódź. CPL 20-50 zł. Trusted badge od Google."
+    desc: "Instalatorzy, elektrycy, hydraulicy w Łodzi. Kampanie lokalne w wyszukiwarce i Mapach Google. Geo-targeting Łódź."
   },
   {
     name: "Medycyna i zdrowie",
-    desc: "Kliniki, gabinety, lekarze w Łodzi. Search Ads do umówienia wizyt. Local Services dla stomatologów, psychologów. Landing page umów wizytę (HIPAA compliant)."
+    desc: "Kliniki, gabinety, lekarze w Łodzi. Search Ads do umówienia wizyt. Kampanie lokalne dla stomatologów, psychologów. Landing page z formularzem umówienia wizyty."
   },
   {
     name: "Nieruchomości",
@@ -151,7 +105,7 @@ const industries = [
   },
   {
     name: "SaaS i B2B",
-    desc: "Oprogramowanie, rozwiązania dla biznesu. Search Ads na intent (jak wybrać software, porównianie). Lead Ads do trials. YouTube for explainers. CPL 50-200 zł / lead."
+    desc: "Oprogramowanie, rozwiązania dla biznesu. Search Ads na intent (jak wybrać software, porównianie). Lead Ads do trials. YouTube for explainers. Koszt leada zależy od niszy i oferty."
   },
   {
     name: "Edukacja",
@@ -162,11 +116,11 @@ const industries = [
 const faqItems = [
   {
     question: "Ile kosztuje Google Ads w Łodzi?",
-    answer: "Obsługa agencji od 400 PLN/mies dla kampanii testowych, do 2500 PLN dla premium. Osobnie — budżet na same reklamy od 500 PLN/dzień dla lokalnych usług, do 10 000+ PLN/dzień dla e-commerce. Łącznie: 1500-15 000 PLN/mies w zależności od branży i celów."
+    answer: "Nie podajemy stałych cen ani pakietów. Wycenę obsługi przygotowujemy po rozmowie o zakresie: liczbie i rodzajach kampanii, konkurencji w branży, raportowaniu i potrzebie przygotowania kreacji lub landing page. Budżet na same reklamy płacisz bezpośrednio Google, zawsze osobno od naszego wynagrodzenia, i to Ty decydujesz o jego wysokości."
   },
   {
     question: "Jak szybko widzę rezultaty Google Ads?",
-    answer: "Reklamy live w Google w ciągu 1-2 godzin (google Review przed puszczeniem). Pierwsze kliknięcia i impresje w ciągu 3-4 godzin. Pierwsze konwersje zwykle 24-48 godzin (zależy od conversion rate strony). Wiarygodne dane do optymalizacji po 7-14 dni. Dlatego testujemy minimum 2 tygodnie przed skalowaniem budżetu."
+    answer: "Reklamy pojawiają się w Google po weryfikacji przez system, zwykle krótko po uruchomieniu. Kiedy przyjdą pierwsze konwersje i wiarygodne dane do optymalizacji, zależy od budżetu, branży i strony docelowej, dlatego nie obiecujemy sztywnych terminów. Kampanię testujemy, zanim zwiększymy budżet."
   },
   {
     question: "Czym Search Ads różni się od Facebook Ads?",
@@ -178,26 +132,26 @@ const faqItems = [
   },
   {
     question: "Czy Łódź to dobry rynek na Google Ads?",
-    answer: "Tak. Łódź ma 770 tys. mieszkańców, trzecie miasto Polska. Rosnący sektor e-commerce (Manufaktura, nowe brownfieldy). CPL zwykle taniej niż Warszawa. Mniejsza konkurencja — łatwiej osiągnąć TOP 3 reklam. Równocześnie jest wystarczająco dużo zapytań Google do uzasadnienia inwestycji w kampanie."
+    answer: "Łódź to jedno z największych miast w Polsce, z dużą liczbą lokalnych zapytań w Google. Czy kampania się opłaci i jak duża jest konkurencja w Twojej branży, sprawdzamy w analizie słów kluczowych przed startem. Nie obiecujemy konkretnej pozycji reklamy."
   },
   {
     question: "Co to jest Quality Score i jak wpływa na koszty?",
-    answer: "Quality Score — ocena Google dla Twojej reklamy (1-10). Zależy od: CTR (procent kliknięć), relevance (czy ad copy match keyword), landing page experience (szybkość, UX, mobile). Quality Score 8-10: CPC niższy o 30-50%. Quality Score 3-5: CPC wyższy o 50-100%. Nasz job to optymalizować Quality Score — testowanie ad copy, landing page design, keyword selection."
+    answer: "Quality Score — ocena Google dla Twojej reklamy (1-10). Zależy od: CTR (procent kliknięć), relevance (czy ad copy match keyword), landing page experience (szybkość, UX, mobile). Wyższy Quality Score zwykle obniża CPC, niższy go podnosi. Nasz job to optymalizować Quality Score — testowanie ad copy, landing page design, keyword selection."
   },
   {
     question: "Czy mogę sam zarządzać Google Ads bez agencji?",
-    answer: "Możesz, ale: (1) musisz nauczyć się jak wybierać słowa kluczowe, (2) pisać ad copy (wymaga testów), (3) optymalizować bid strategy. Większość firm tracą pieniądze bo wybierają słabe keywords lub nieoptymalne CPA. Agencja przyspiesza procent 5-10x — nasi klienci widzą resultaty w 48h zamiast czekać miesiąc. Koszt agencji (400-2500 PLN/mies) zwraca się przez lepszy ROAS w ciągu pierwszych 2-3 tygodni."
+    answer: "Możesz, ale: (1) musisz nauczyć się jak wybierać słowa kluczowe, (2) pisać ad copy (wymaga testów), (3) optymalizować bid strategy. Częsty problem to słabo dobrane słowa kluczowe i brak poprawnego mierzenia konwersji. Agencja oszczędza Ci czas na naukę i testy, a o tym, czy obsługa się opłaca, decydują dane z Twojego konta."
   },
   {
     question: "Czy Conversion API jest konieczna?",
-    answer: "Dla e-commerce — zdecydowanie tak. Pixel + Conversion API razem to 50% szybsza optymalizacja. API wysyła dane offline do Google (z CRM, sklepu) — Google szybciej uczy się które leady konwertują. Bez Conversion API — tracimy dane o offline konwersjach (telefon, wizyta). Dla B2B i usług — bardzo polecam. Setup zajmuje 2-3 dni ale zwraca się szybko."
+    answer: "Dla e-commerce — zdecydowanie tak. Tag + import konwersji offline daje algorytmowi więcej danych do optymalizacji. Dane offline do Google (z CRM, sklepu) — Google szybciej uczy się które leady konwertują. Bez Conversion API — tracimy dane o offline konwersjach (telefon, wizyta). Dla B2B i usług — bardzo polecam. Czas wdrożenia zależy od Twojego CRM i sklepu."
   }
 ];
 
 const localContext = [
   {
-    title: "Łódź — trzecie miasto Polski",
-    desc: "770 tys. mieszkańców. Trzecie pod względem liczby ludności, drugie pod względem powierzchni. To oznacza wystarczająco dużo potencjalnych klientów do kampanii Search, Shopping i Display."
+    title: "Łódź — duży rynek lokalny",
+    desc: "Jedno z największych miast w Polsce. Dużo lokalnych zapytań w Google, co daje pole do kampanii Search, Shopping i Display."
   },
   {
     title: "Manufaktura — heart of commerce",
@@ -209,7 +163,7 @@ const localContext = [
   },
   {
     title: "E-commerce hub",
-    desc: "Łódź to rosnący ośrodek e-commerce. Magazyny, logistyka, fulfillment. Sklepy online potrzebują traffic — Shopping Ads + Search Ads do sklepów internetowych — roi 4-6x."
+    desc: "Łódź to rosnący ośrodek e-commerce. Magazyny, logistyka, fulfillment. Sklepy online potrzebują traffic — Shopping Ads + Search Ads do sklepów internetowych."
   }
 ];
 
@@ -218,13 +172,13 @@ export default function GoogleAdsLodz() {
     <Layout>
       <SEOHead
         title="Agencja Google Ads Łódź — kampanie reklamowe dla firm | Fotz.pl"
-        description="Google Ads Łódź — agencja certyfikowana Fotz.pl. Kampanie od 400 zł/mies., wyniki od 24-48h. Bezpłatna konsultacja!"
+        description="Google Ads Łódź — kampanie Fotz.pl dla firm z Łodzi, prowadzone zdalnie z Poznania. Wycena po rozmowie o zakresie. Bezpłatna konsultacja!"
         canonical="https://www.fotz-studio.pl/performance-marketing/google-ads/lodz"
         keywords="google ads łódź, agencja google ads łódź, kampanie google ads łódź, reklamy google łódź, google ads dla firm łódź, sem łódź"
       />
       <ServiceSchema
         name="Kampanie Google Ads Łódź"
-        description="Agencja Google Ads (Search, Shopping, Display, YouTube, Performance Max) w Łodzi. Kampanie do sprzedaży, leadów i branding. Conversion tracking, optimization codziennie. Od 400 PLN/mies."
+        description="Agencja Google Ads (Search, Shopping, Display, YouTube, Performance Max) w Łodzi. Kampanie do sprzedaży, leadów i branding. Conversion tracking, optimization codziennie. Wycena po rozmowie o zakresie."
         provider="Fotz Studio"
         areaServed="Lodz"
       />
@@ -261,11 +215,11 @@ export default function GoogleAdsLodz() {
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Kampanie Google Ads (Search, Shopping, Display, YouTube, Performance Max) do sprzedaży, leadów i brandingu. Konwersje tracking, optymalizacja codziennie. ROAS 3-6x dla e-commerce.
+              Kampanie Google Ads (Search, Shopping, Display, YouTube, Performance Max) do sprzedaży, leadów i brandingu. Konwersje tracking, optymalizacja codziennie.
             </p>
 
             <p className="text-base text-muted-foreground/80 mb-10 max-w-xl mx-auto">
-              Od 400 PLN/mies obsługi agencji. Certyfikowani specjaliści. Wyniki od 24-48 godzin.
+              Pracujemy z Poznania, firmy z Łodzi obsługujemy zdalnie. Wycenę przygotowujemy po rozmowie o zakresie.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -282,25 +236,6 @@ export default function GoogleAdsLodz() {
         </div>
       </section>
 
-      {/* Stats */}
-      <section className="py-12 bg-card/30 border-y border-border/30">
-        <div className="container px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto text-center">
-            {[
-              { value: "4.2x", label: "średni ROAS dla e-commerce" },
-              { value: "24-48h", label: "czas do pierwszych konwersji" },
-              { value: "80+", label: "kampanii dla Łodzi i okolic" },
-              { value: "4.9/5", label: "średnia ocen klientów" }
-            ].map((s, i) => (
-              <div key={i}>
-                <div className="text-3xl md:text-4xl font-heading font-bold text-primary mb-1">{s.value}</div>
-                <div className="text-sm text-muted-foreground">{s.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Łódź Context */}
       <section className="py-20 md:py-28 bg-gradient-to-b from-secondary/10 to-background">
         <div className="container px-4">
@@ -311,7 +246,7 @@ export default function GoogleAdsLodz() {
                 <span className="text-gradient">dla kampanii Google</span>
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Łódź to trzecie miasto Polski, były hub tekstylny, dziś rosnący sektor e-commerce i tech. Idealny rynek dla kampanii performance marketing.
+                Łódź to duże miasto, były hub tekstylny, dziś z rozwijającym się sektorem e-commerce i tech.
               </p>
             </div>
 
@@ -348,7 +283,7 @@ export default function GoogleAdsLodz() {
                 {
                   icon: Target,
                   title: "Najwyższy intent",
-                  desc: "Google Search — osoba szuka TERAZ. Wysokość zaangażenia, szybka konwersja. Najwyższy ROAS spośród wszystkich kanałów."
+                  desc: "Google Search — osoba szuka TERAZ. Docierasz do osób, które aktywnie szukają Twojej oferty."
                 },
                 {
                   icon: TrendingUp,
@@ -362,8 +297,8 @@ export default function GoogleAdsLodz() {
                 },
                 {
                   icon: Users,
-                  title: "Łódź — dobry CPL",
-                  desc: "Koszt konwersji zwykle taniej niż Warszawa czy Kraków. Mniejsza konkurencja = lepszy ROI dla kampanii."
+                  title: "Targetowanie na Łódź",
+                  desc: "Kampanie kierujemy na Łódź i okolice. Koszt konwersji zależy od konkurencji w Twojej branży, dlatego sprawdzamy go przed startem."
                 },
                 {
                   icon: Award,
@@ -372,8 +307,8 @@ export default function GoogleAdsLodz() {
                 },
                 {
                   icon: Zap,
-                  title: "Agencja certyfikowana",
-                  desc: "Google Partner. Dostęp do beta features, support techniczny od Google. Account manager dedykowany dla Ciebie."
+                  title: "Współpraca zdalna",
+                  desc: "Pracujemy z Poznania, firmy z Łodzi obsługujemy zdalnie. Masz stały kontakt z osobą prowadzącą kampanię."
                 }
               ].map((item, i) => (
                 <FadeInView key={i}>
@@ -464,54 +399,43 @@ export default function GoogleAdsLodz() {
       {/* Pricing */}
       <section className="py-20 md:py-28 bg-gradient-to-b from-secondary/10 to-background">
         <div className="container px-4">
-          <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-14">
+          <div className="max-w-3xl mx-auto">
+            <div className="text-center mb-10">
               <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                Pakiety Google Ads{" "}
-                <span className="text-gradient">dla Łodzi</span>
+                Od czego zależy{" "}
+                <span className="text-gradient">wycena</span>
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Trzy pakiety obsługi agencji. Budżet na reklamy ustawiasz osobno. Wszystkie zawierają wstępną konsultację i tracking conversion.
+                Nie mamy sztywnych pakietów. Wycenę obsługi przygotowujemy po rozmowie o zakresie i celach.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-6">
-              {pricingPlans.map((pkg, i) => (
-                <FadeInView key={i}>
-                  <div className="rounded-2xl border border-border/40 bg-card/20 overflow-hidden flex flex-col">
-                    <div className="p-6 pb-4">
-                      <h3 className="font-heading font-bold text-xl mb-2">{pkg.name}</h3>
-                      <div className="mb-2">
-                        <span className="text-4xl font-heading font-bold text-primary">{pkg.price}</span>
-                        <span className="text-muted-foreground"> zł/mies</span>
-                      </div>
-                      <p className="text-sm text-muted-foreground">{pkg.description}</p>
-                    </div>
-                    <div className="flex-1 px-6 py-4 space-y-3">
-                      {pkg.features.map((feature, j) => (
-                        <div key={j} className="flex items-start gap-2 text-sm">
-                          <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
-                          <span className="text-muted-foreground">{feature}</span>
-                        </div>
-                      ))}
-                    </div>
-                    <div className="p-6 pt-4">
-                      <Button asChild size="sm" className="w-full bg-primary hover:bg-primary/90">
-                        <Link to="/kontakt">
-                          Zapytaj o cenę
-                        </Link>
-                      </Button>
-                    </div>
-                  </div>
-                </FadeInView>
+            <div className="space-y-3">
+              {[
+                "Liczba i rodzaje kampanii (Search, Shopping, Display, YouTube, Performance Max)",
+                "Konkurencja na słowa kluczowe w Twojej branży",
+                "Konfiguracja mierzenia konwersji i integracje (GA4, CRM, sklep)",
+                "Częstotliwość raportów i konsultacji",
+                "Potrzeba przygotowania tekstów, kreacji lub landing page",
+              ].map((item, j) => (
+                <div key={j} className="flex items-start gap-2 text-sm">
+                  <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                  <span className="text-muted-foreground">{item}</span>
+                </div>
               ))}
+            </div>
+
+            <div className="text-center mt-8">
+              <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
+                <Link to="/kontakt">Zapytaj o wycenę</Link>
+              </Button>
             </div>
 
             <div className="mt-12 p-6 rounded-2xl bg-primary/5 border border-primary/20">
               <div className="flex items-start gap-3">
                 <AlertCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                 <p className="text-sm text-muted-foreground">
-                  <strong className="text-foreground">Koszt kampanii osobno:</strong> Budżet na same reklamy ustawiasz sam. Minimum 500 PLN/dzień dla testów, 2000-10 000 PLN/dzień dla skalowania. Nasza agencja optymalizuje każde złoto, żeby uzyskać najwyższy ROAS i CPL.
+                  <strong className="text-foreground">Budżet reklamowy osobno:</strong> Budżet na same reklamy płacisz bezpośrednio Google i ustalasz jego wysokość sam. Jest zawsze oddzielny od wynagrodzenia agencji. Pomagamy dobrać go do celów i konkurencji w branży.
                 </p>
               </div>
             </div>
@@ -584,7 +508,7 @@ export default function GoogleAdsLodz() {
               Gotów zacząć kampanię Google Ads?
             </h2>
             <p className="text-lg text-white/90 mb-10">
-              Bezpłatna konsultacja — omówisz słowa kluczowe, budżet i strategię z ekspertem Google Partner. Pierwsza kampania testowa w ciągu 48 godzin.
+              Bezpłatna konsultacja — omówisz słowa kluczowe, budżet i strategię z osobą, która poprowadzi Twoją kampanię.
             </p>
             <Button asChild size="lg" className="bg-white hover:bg-white/90 text-primary">
               <Link to="/kontakt">

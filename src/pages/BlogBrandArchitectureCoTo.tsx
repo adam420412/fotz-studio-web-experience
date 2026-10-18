@@ -105,7 +105,7 @@ export default function BlogBrandArchitectureCoTo() {
 
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Architektura Marki", url: "https://www.fotz-studio.pl" }]}/>
+          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Architektura Marki", url: "/blog/architektura-marki-co-to" }]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Architektura Marki — co to jest i jak zarządzać portfolio marek?
           </h1>

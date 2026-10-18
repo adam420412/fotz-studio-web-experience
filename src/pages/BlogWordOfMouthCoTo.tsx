@@ -98,7 +98,7 @@ export default function BlogWordOfMouthCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Word of Mouth Marketing", url: "https://www.fotz-studio.pl" },
+              { name: "Word of Mouth Marketing", url: "/blog/word-of-mouth-marketing-co-to" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Word of Mouth Marketing — co to jest i jak działa?

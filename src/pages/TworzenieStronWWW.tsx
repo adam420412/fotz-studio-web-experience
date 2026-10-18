@@ -291,7 +291,7 @@ export default function TworzenieStronWWW() {
                   >
                     {pkg.featured && (
                       <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-bold">
-                        Najpopularniejszy
+                        Polecany zakres
                       </div>
                     )}
                     <h3 className="text-2xl font-bold text-gray-900 mb-2">{pkg.name}</h3>

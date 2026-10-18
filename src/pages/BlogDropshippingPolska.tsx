@@ -27,7 +27,7 @@ const faqItems = [
   },
   {
     question: "Ile można zarobić na dropshippingu?",
-    answer: "To zależy od marge i wolumenu sprzedaży. Średnie marże: 30–50% na produktach. Jeśli sprzedajesz 100 produktów/mies za 100 PLN każdy (10k PLN przychodu), przy marży 40% — 4k PLN zysku brutto. Jednak pierwszy rok to raczej inwestycja (marketing, testy produktów). Realny zarobek: 2–5k PLN/mies w pierwszym roku, 10–30k PLN/mies w roku drugim+ (zależy od marki)."
+    answer: "To zależy od marży i wolumenu sprzedaży. Marże w dropshippingu często mieszczą się orientacyjnie w przedziale 30–50%, ale mocno zależą od niszy. Przykład: jeśli sprzedajesz 100 produktów/mies za 100 PLN każdy (10k PLN przychodu), przy marży 40% — 4k PLN zysku brutto. Jednak pierwszy rok to raczej inwestycja (marketing, testy produktów). Realny zarobek zależy od niszy, marki i budżetu marketingowego — wiele sklepów przez pierwsze miesiące nie wychodzi na plus."
   },
   {
     question: "Jaka platformy dropshipping polecacie?",
@@ -39,11 +39,11 @@ const faqItems = [
   },
   {
     question: "Ile kosztuje uruchomienie sklepu dropshipping?",
-    answer: "Hosting + domena: 50–200 PLN/mies. Platforma (Shopify): 29–299 USD/mies (~120–1200 PLN). Apps i dodatki: 50–500 PLN/mies. Marketing (Google Ads, Facebook): 1000–5000 PLN/mies minimum. Razem: 2000–8000 PLN/mies. Jednak bez marketingu — nie będziesz miał sprzedaży. Budżet marketing = co najmniej 2x budżet na platform."
+    answer: "Przykładowe widełki rynkowe: hosting + domena: 50–200 PLN/mies. Platforma (Shopify): 29–299 USD/mies (~120–1200 PLN). Apps i dodatki: 50–500 PLN/mies. Marketing (Google Ads, Facebook): 1000–5000 PLN/mies minimum. Razem: 2000–8000 PLN/mies. Jednak bez marketingu — nie będziesz miał sprzedaży. Budżet marketing = co najmniej 2x budżet na platform."
   },
   {
     question: "Czy mam szanse konkurować na dropshippingu w Polsce?",
-    answer: "Tak, ale musisz się wyróżnić. Dropshipping nie działa już sam w sobie (wszyscy robią to samo). Musisz: (1) znaleźć niszę (produkty dla konkretnej grupy), (2) zbudować markę (logo, wizualne), (3) robić marketing (SEO, Ads, social), (4) mieć doskonałą obsługę. Większość sklepów zamyka się w ciągu 6 miesięcy bo nie inwestują w marketing i markę. Inwestuj co najmniej 20% przychodu w marketing."
+    answer: "Tak, ale musisz się wyróżnić. Dropshipping nie działa już sam w sobie (wszyscy robią to samo). Musisz: (1) znaleźć niszę (produkty dla konkretnej grupy), (2) zbudować markę (logo, wizualne), (3) robić marketing (SEO, Ads, social), (4) mieć doskonałą obsługę. Wiele sklepów szybko się zamyka, bo nie inwestują w marketing i markę. Inwestuj co najmniej 20% przychodu w marketing."
   }
 ];
 
@@ -85,7 +85,7 @@ export default function BlogDropshippingPolska() {
                 Dropshipping w Polsce 2025 — kompletny poradnik dla początkujących
               </h1>
               <p className="text-xl sm:text-2xl mb-4 text-green-100">
-                150 osób miesięcznie szuka <strong>"dropshipping polska"</strong>. Czy chcesz wiedzieć czy dropshipping jest dla Ciebie?
+                Szukasz informacji o <strong>"dropshipping polska"</strong>? Sprawdź, czy dropshipping jest dla Ciebie.
               </p>
               <p className="text-lg text-green-200 mb-8">
                 Przewodnik: od zera do sprzedaży. Co to jest dropshipping, jak działa w Polsce, jakie są platformy, dostawcy, koszty, marże, VAT, RODO, konkurencja. Czy można zarobić? Realnie — tak, ale wymaga pracy.
@@ -143,7 +143,7 @@ export default function BlogDropshippingPolska() {
                   Wady dropshippingu:
                 </p>
                 <ul className="space-y-2">
-                  <li>Marża zwykle 30–50% (mniejsza niż sprzedaż tradycyjna)</li>
+                  <li>Marża często niższa niż w sprzedaży tradycyjnej (zależnie od niszy)</li>
                   <li>Konkurencja — każdy może zrobić to samo (brak barier wejścia)</li>
                   <li>Obsługa klienta — musisz radzić sobie z reklamacjami, zwrotami, problemami dostawcy</li>
                   <li>Zyski zaczynają się po 3–6 miesiącach (jeśli inwestujesz w marketing)</li>
@@ -277,7 +277,7 @@ export default function BlogDropshippingPolska() {
                   To pytanie numer 1. Odpowiedź: <strong>zależy od marki, marketingu, marż, i konsystencji.</strong>
                 </p>
 
-                <h3 className="text-2xl font-semibold mb-4 text-gray-800">Realny scenariusz pierwszy rok:</h3>
+                <h3 className="text-2xl font-semibold mb-4 text-gray-800">Przykładowy scenariusz pierwszego roku (ilustracja, nie prognoza):</h3>
                 <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-600 mb-6">
                   <p className="font-semibold text-gray-900 mb-2">Miesiąc 1–2: Wyniki (0 PLN)</p>
                   <p className="text-gray-700">Uruchamiasz stronę, pierwszy klient pojawia się po 2–4 tygodniach testowania. Bez marketingu = brak zainteresowania.</p>
@@ -291,13 +291,13 @@ export default function BlogDropshippingPolska() {
 
                 <h3 className="text-2xl font-semibold mb-4 text-gray-800">Marża i zysk:</h3>
                 <ul className="space-y-2">
-                  <li><strong>Marża brutto:</strong> 30–50% (różnica między ceną dostawcy a ceną sprzedaży)</li>
+                  <li><strong>Marża brutto:</strong> orientacyjnie 30–50%, zależnie od niszy (różnica między ceną dostawcy a ceną sprzedaży)</li>
                   <li><strong>Koszty operacyjne:</strong> Platform (100–500 PLN), hosting (50–200 PLN), obsługa klienta (0–500 PLN), zwroty (~5–10% sprzedaży)</li>
                   <li><strong>Koszty marketingu:</strong> 1000–5000 PLN/mies (Google Ads, Facebook, email)</li>
                   <li><strong>Zysk netto:</strong> Marża brutto − koszty operacyjne − koszty marketing − podatki (PIT/VAT)</li>
                 </ul>
 
-                <h3 className="text-2xl font-semibold mb-4 text-gray-800 mt-8">Przykład konkretny:</h3>
+                <h3 className="text-2xl font-semibold mb-4 text-gray-800 mt-8">Przykład konkretny (obliczenie poglądowe):</h3>
                 <div className="bg-gray-100 p-6 rounded-lg">
                   <p className="font-semibold text-gray-900 mb-4">Sprzedaż 100 produktów/mies za 100 PLN każdy = 10k PLN przychodu</p>
                   <ul className="space-y-2 text-gray-800">
@@ -309,7 +309,7 @@ export default function BlogDropshippingPolska() {
                     <li>Podatki PIT (~32%): -480 PLN</li>
                     <li><strong>Zysk netto: ~1000 PLN</strong></li>
                   </ul>
-                  <p className="text-gray-700 mt-4 text-sm">Nota: To jest dla 100 zamówień. Większość sklepów ma 0–10 zamówień w pierwszym miesiącu. Wymaga 3–6 miesięcy aby osiągnąć 100 zamówień/mies.</p>
+                  <p className="text-gray-700 mt-4 text-sm">Nota: To jest dla 100 zamówień. Nowe sklepy zwykle zaczynają od kilku zamówień miesięcznie, a dojście do takiego wolumenu wymaga czasu i marketingu.</p>
                 </div>
               </article>
 
@@ -318,7 +318,7 @@ export default function BlogDropshippingPolska() {
                 <h2 className="text-3xl font-bold mb-6 text-gray-900">Koszty rozpoczęcia dropshippingu</h2>
 
                 <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-600 mb-6">
-                  <h4 className="font-semibold text-gray-900 mb-4">Koszty początkowe (jednorazowe):</h4>
+                  <h4 className="font-semibold text-gray-900 mb-4">Koszty początkowe (jednorazowe) — przykładowe widełki rynkowe:</h4>
                   <ul className="space-y-2 text-gray-800">
                     <li>Domena: 30–50 PLN/rok</li>
                     <li>Logo/branding: 500–2000 PLN (lub gratis na Fiverr)</li>
@@ -329,7 +329,7 @@ export default function BlogDropshippingPolska() {
                 </div>
 
                 <div className="bg-orange-50 p-6 rounded-lg border-l-4 border-orange-600">
-                  <h4 className="font-semibold text-gray-900 mb-4">Koszty miesięczne:</h4>
+                  <h4 className="font-semibold text-gray-900 mb-4">Koszty miesięczne — przykładowe widełki rynkowe:</h4>
                   <ul className="space-y-2 text-gray-800">
                     <li>Hosting + domena: 50–200 PLN</li>
                     <li>Platforma (Shopify/Shoper/itd): 200–1200 PLN</li>
@@ -365,7 +365,7 @@ export default function BlogDropshippingPolska() {
                 </ul>
 
                 <p className="bg-green-50 p-4 rounded border-l-4 border-green-600 mt-6">
-                  <strong>Pro tip:</strong> Dropshipping sklepy z dobrym SEO mają 40–60% organic traffic. To zmienia game — nie depends tylko od Ads.
+                  <strong>Pro tip:</strong> Sklep z dobrym SEO może zbudować stały ruch organiczny. To zmienia grę — nie jesteś zależny tylko od Ads.
                 </p>
               </article>
 

@@ -4,9 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
-  Search,
   MapPin,
-  TrendingUp,
   CheckCircle2,
   ArrowRight,
   BarChart2,
@@ -14,8 +12,6 @@ import {
   Building2,
   Globe,
   Target,
-  Clock,
-  Award,
   Shield,
 } from "lucide-react";
 import {
@@ -32,27 +28,27 @@ const faqItems = [
   {
     question: "Ile kosztuje pozycjonowanie w Białymstoku?",
     answer:
-      "Pozycjonowanie lokalne w Białymstoku zaczyna się od 1 000–1 400 zł netto miesięcznie dla małych firm i lokalnych usługodawców. Białystok ma niższą konkurencję SEO niż Warszawa czy Kraków, co sprawia, że efekty są widoczne szybciej i przy mniejszych nakładach. Dla branż konkurencyjnych (nieruchomości, medycyna, prawo) budżet wynosi 2 000–5 000 zł/mies.",
+      "Wycenę przygotowujemy po audycie i rozmowie o zakresie: liczbie fraz i usług, stanie technicznym strony, potrzebnych treściach i link buildingu oraz konkurencji w Twojej branży. W branżach bardziej konkurencyjnych (nieruchomości, medycyna, prawo) zakres prac jest zwykle większy. Konkretną kwotę i zakres miesięcznych działań podajemy w ofercie.",
   },
   {
     question: "Ile czasu trwa pozycjonowanie w Białymstoku?",
     answer:
-      "Białystok to jeden z rynków o niskiej konkurencji SEO w Polsce — pierwsze efekty można obserwować już po 1,5–2 miesiącach. Stabilne pozycje TOP 10 dla większości fraz branżowych osiągamy w 3–6 miesięcy. To znacznie szybciej niż w dużych miastach, co przekłada się na szybszy zwrot z inwestycji.",
+      "SEO to proces rozłożony na miesiące, a tempo zależy od stanu strony, konkurencji w branży i zakresu prac. Nie gwarantujemy konkretnej pozycji ani terminu — po audycie mówimy, co realnie da się zrobić, a postępy pokazujemy w regularnych raportach.",
   },
   {
     question: "Czy pozycjonujecie firmy w regionie podlaskim poza Białymstokiem?",
     answer:
-      "Tak — obsługujemy firmy z całego województwa podlaskiego: Łomża, Suwałki, Augustów, Hajnówka, Bielsk Podlaski. Dla firm z branży turystycznej (Puszcza Białowieska, Augustów, jeziora Suwalszczyzny) wdrażamy pozycjonowanie sezonowe pod ruch letni i zimowy.",
+      "Tak — pracujemy z Poznania i zdalnie obsługujemy firmy z całego województwa podlaskiego, np.: Łomża, Suwałki, Augustów, Hajnówka, Bielsk Podlaski. Dla firm z branży turystycznej (Puszcza Białowieska, Augustów, jeziora Suwalszczyzny) wdrażamy pozycjonowanie sezonowe pod ruch letni i zimowy.",
   },
   {
     question: "Jakie branże dominują w Białymstoku i czy mają SEO?",
     answer:
-      "Białystok ma silny sektor medyczny (Uniwersytecki Szpital Kliniczny, liczne kliniki i gabinety), przemysł drzewny (Biaform, Prochnik, produkcja mebli), handel hurtowy i detaliczny, agencje ubezpieczeniowe oraz rosnący sektor usług IT i e-commerce. Wiele z tych firm jeszcze nie inwestuje w SEO — to ogromy potencjał do wyróżnienia się.",
+      "Białystok ma silny sektor medyczny (Uniwersytecki Szpital Kliniczny, liczne kliniki i gabinety), przemysł drzewny i meblarski, handel hurtowy i detaliczny, agencje ubezpieczeniowe oraz rosnący sektor usług IT i e-commerce. Firma, która dobrze opisze swoją ofertę i zadba o stronę, ma szansę wyróżnić się na tle lokalnej konkurencji.",
   },
   {
     question: "Czy SEO w Białymstoku jest trudne ze względu na lokalizację geograficzną?",
     answer:
-      "Nie — wręcz przeciwnie. Białystok jako stolica województwa podlaskiego skupia znaczną część zapytań lokalnych dla całego regionu. Mniejsza konkurencja oznacza, że łatwiej i taniej osiągnąć TOP 10 niż w zachodniej Polsce. Jednocześnie miasto jest wystarczająco duże (ok. 300 tys. mieszkańców), żeby uzasadniać inwestycję w pozycjonowanie.",
+      "Nie — wręcz przeciwnie. Białystok jako stolica województwa podlaskiego skupia znaczną część zapytań lokalnych dla całego regionu. W wielu branżach konkurencja w wynikach lokalnych bywa mniejsza niż w największych miastach, ale zawsze sprawdzamy to w audycie dla konkretnych fraz. Firmy z Białegostoku obsługujemy zdalnie z Poznania — lokalizacja nie przeszkadza w pracy nad SEO.",
   },
   {
     question: "Jak SEO może pomóc firmom z Białegostoku w eksporcie do krajów bałtyckich?",
@@ -62,17 +58,6 @@ const faqItems = [
 ];
 
 const PozycjonowanieBialystok = () => {
-  const results = [
-    {
-      metric: "+240%",
-      label: "Wzrost ruchu organicznego",
-      context: "klinika medyczna Białystok",
-    },
-    { metric: "TOP 3", label: "Pozycja w Google", context: "frazy usługowe Podlaskie" },
-    { metric: "2 mies.", label: "Czas do pierwszej strony", context: "branża handlowa" },
-    { metric: "4,9/5", label: "Ocena klientów", context: "11 opinii" },
-  ];
-
   const districts = [
     "Centrum",
     "Białostoczek",
@@ -97,7 +82,7 @@ const PozycjonowanieBialystok = () => {
     <Layout>
       <SEOHead
         title="Pozycjonowanie Białystok — Agencja SEO Podlaskie | Fotz Studio"
-        description="Pozycjonowanie stron Białystok i Podlaskie. Agencja SEO Fotz Studio — szybkie efekty, niższa konkurencja, white hat SEO. Bezpłatna konsultacja SEO dla firm z Białegostoku i regionu."
+        description="Pozycjonowanie stron Białystok i Podlaskie. Agencja SEO Fotz Studio — white hat SEO, audyt i optymalizacja, współpraca zdalna. Bezpłatna konsultacja SEO dla firm z Białegostoku i regionu."
         canonical="https://www.fotz-studio.pl/uslugi/pozycjonowanie/bialystok"
         keywords="pozycjonowanie białystok, agencja seo białystok, seo białystok, pozycjonowanie stron białystok, seo dla firm białystok, pozycjonowanie lokalne białystok, audyt seo białystok, seo podlaskie, agencja marketingowa białystok"
       />
@@ -151,8 +136,8 @@ const PozycjonowanieBialystok = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto"
             >
-              Pomagamy firmom z Białegostoku i całego Podlasia zdobyć pierwszą stronę Google.
-              Niższa konkurencja SEO = szybsze efekty i lepszy ROI. Audyt SEO,
+              Pomagamy firmom z Białegostoku i całego Podlasia budować widoczność w Google.
+              Pracujemy z Poznania, a firmy z Podlasia obsługujemy zdalnie. Audyt SEO,
               optymalizacja techniczna i link building dla firm z regionu.
             </motion.p>
 
@@ -180,7 +165,7 @@ const PozycjonowanieBialystok = () => {
               transition={{ delay: 0.5 }}
               className="flex flex-wrap justify-center gap-6 mt-12 text-sm text-muted-foreground"
             >
-              {["White-hat SEO", "Szybsze efekty niż w dużych miastach", "Google Analytics 4", "Raport co 2 tygodnie"].map(
+              {["White-hat SEO", "Współpraca zdalna", "Google Analytics 4", "Raport co 2 tygodnie"].map(
                 (item) => (
                   <div key={item} className="flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-primary" />
@@ -193,29 +178,12 @@ const PozycjonowanieBialystok = () => {
         </div>
       </section>
 
-      {/* Results */}
-      <section className="py-16 bg-muted/30 border-y border-border/40">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {results.map((r, i) => (
-              <FadeInView key={i} delay={i * 0.1} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-primary mb-1">
-                  {r.metric}
-                </div>
-                <div className="text-sm font-medium text-foreground">{r.label}</div>
-                <div className="text-xs text-muted-foreground mt-1">{r.context}</div>
-              </FadeInView>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Białystok specifics */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 max-w-5xl">
           <FadeInView className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              SEO w Białymstoku — niższa konkurencja, szybszy ROI
+              SEO w Białymstoku — specyfika rynku
             </h2>
           </FadeInView>
 
@@ -223,23 +191,22 @@ const PozycjonowanieBialystok = () => {
             <FadeInView>
               <div className="space-y-6 text-muted-foreground">
                 <p>
-                  Białystok to <strong className="text-foreground">ok. 300 tys. mieszkańców</strong>{" "}
-                  i stolica województwa podlaskiego. Miasto skupia usługi dla całego regionu —
+                  Białystok to <strong className="text-foreground">stolica województwa podlaskiego</strong>.{" "} Miasto skupia usługi dla całego regionu —
                   medycynę, handel, edukację (Uniwersytet Medyczny w Białymstoku, Politechnika
                   Białostocka) i rosnący sektor IT.
                 </p>
                 <p>
-                  Kluczowa przewaga Białegostoku z perspektywy SEO:{" "}
-                  <strong className="text-foreground">niższa konkurencja</strong> niż w największych
-                  miastach Polski oznacza, że możliwe jest osiągnięcie TOP 10 w Google w ciągu
-                  2–4 miesięcy. Dla firm, które jeszcze nie pozycjonują się online, to ogromna
-                  przewaga nad konkurencją.
+                  W wielu branżach konkurencja w lokalnych wynikach Google bywa{" "}
+                  <strong className="text-foreground">mniejsza</strong> niż w największych
+                  miastach Polski — ile to daje w Twojej branży, sprawdzamy w audycie. Nie
+                  gwarantujemy konkretnej pozycji ani terminu, bo zależą też od konkurencji
+                  i stanu strony.
                 </p>
                 <p>
                   Region ma też unikalne nisze: turystyka Puszczy Białowieskiej, Narwiański
                   Park Narodowy, produkty regionalne i kuchnia podlaska — to{" "}
-                  <strong className="text-foreground">frazy z zerową lub niską konkurencją</strong>{" "}
-                  i realnym ruchem wśród turystów krajowych i zagranicznych.
+                  <strong className="text-foreground">frazy, które często są mniej konkurencyjne</strong>{" "}
+                  i wyszukiwane przez turystów krajowych i zagranicznych.
                 </p>
               </div>
             </FadeInView>
@@ -247,7 +214,7 @@ const PozycjonowanieBialystok = () => {
             <FadeInView delay={0.2}>
               <div className="bg-card border border-border/60 rounded-xl p-6">
                 <h3 className="font-bold text-foreground mb-4">
-                  Pozycjonujemy firmy we wszystkich dzielnicach Białegostoku
+                  Frazy lokalne dla dzielnic Białegostoku
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {districts.map((district) => (
@@ -276,8 +243,8 @@ const PozycjonowanieBialystok = () => {
               Branże, które pozycjonujemy w Białymstoku i na Podlasiu
             </h2>
             <p className="text-muted-foreground max-w-xl mx-auto">
-              Od medycyny i przemysłu drzewnego po turystykę Podlasia — znamy specyfikę
-              rynku białostockiego.
+              Od medycyny i przemysłu drzewnego po turystykę Podlasia — przed startem
+              poznajemy specyfikę Twojej branży i lokalnego rynku.
             </p>
           </FadeInView>
 
@@ -310,7 +277,7 @@ const PozycjonowanieBialystok = () => {
               {
                 step: "01",
                 title: "Konsultacja i zakres audytu SEO",
-                desc: "Analizujemy Twoją stronę pod kątem fraz dla Białegostoku i Podlasia. Oceniamy realne szanse na TOP 10 i czas potrzebny do wyników — zwykle krótszy niż w dużych miastach.",
+                desc: "Analizujemy Twoją stronę pod kątem fraz dla Białegostoku i Podlasia. Oceniamy konkurencję w wynikach i mówimy, co realnie da się poprawić — bez obietnic konkretnej pozycji.",
               },
               {
                 step: "02",
@@ -351,7 +318,7 @@ const PozycjonowanieBialystok = () => {
         <div className="container mx-auto px-4 text-center">
           <FadeInView>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Gotowy na pierwszą stronę Google w Białymstoku?
+              Chcesz poprawić widoczność firmy z Białegostoku w Google?
             </h2>
             <p className="text-primary-foreground/80 text-lg mb-8 max-w-xl mx-auto">
               Zapytaj o audyt SEO. Zakres i wycenę ustalimy na bezpłatnej konsultacji, a potem pokażemy, jak wygrać z

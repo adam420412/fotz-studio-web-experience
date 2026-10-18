@@ -11,7 +11,7 @@ export default function FacebookAdsLublin() {
     <>
       <SEOHead
         title="Agencja Facebook Ads Lublin — reklamy Meta dla firm | Fotz.pl"
-        description="Facebook Ads Lublin ✓ Kampanie Meta Ads dla firm z Lublina i Lubelszczyzny. Od 400 zł/mies. Bezpłatna konsultacja!"
+        description="Facebook Ads Lublin ✓ Kampanie Meta Ads dla firm z Lublina i Lubelszczyzny — zdalnie z Poznania. Bezpłatna konsultacja!"
         canonical="https://www.fotz-studio.pl/performance-marketing/facebook-ads/lublin"
         keywords="facebook ads lublin, meta ads lublin, reklamy facebook lublin, agencja facebook ads lublin, kampanie facebook lublin, instagram ads lublin, facebook ads dla firm lublin, reklama na facebooku lublin, meta ads agencja lublin, facebook ads cennik lublin"
       />
@@ -19,7 +19,7 @@ export default function FacebookAdsLublin() {
           { name: "Fotz.pl", url: "https://www.fotz-studio.pl" },
           { name: "Performance Marketing", url: "https://www.fotz-studio.pl/performance-marketing" },
           { name: "Facebook Ads", url: "https://www.fotz-studio.pl/performance-marketing/facebook-ads" },
-          { name: "Lublin", url: "https://www.fotz-studio.pl" }
+          { name: "Lublin", url: "https://www.fotz-studio.pl/performance-marketing/facebook-ads/lublin" }
         ]}/>
       <ServiceSchema
         name="Facebook Ads Lublin"
@@ -32,7 +32,7 @@ export default function FacebookAdsLublin() {
             { name: "Home", path: "/" },
             { name: "Performance Marketing", path: "/performance-marketing" },
             { name: "Facebook Ads", path: "/uslugi/reklama-facebook" },
-            { name: "Lublin", url: "https://www.fotz-studio.pl" }
+            { name: "Lublin", url: "/performance-marketing/facebook-ads/lublin" }
           ]}/>
 
         {/* HERO SECTION */}
@@ -46,25 +46,25 @@ export default function FacebookAdsLublin() {
             <FadeInView>
               <div className="max-w-3xl">
                 <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                  Agencja Facebook Ads w Lublinie
+                  Agencja Facebook Ads dla firm z Lublina
                 </h1>
                 <p className="text-xl text-gray-700 mb-8">
-                  Facebook Ads Lublin — profesjonalne kampanie Meta Ads i reklamy Facebook dla firm z Lublina i Lubelszczyzny. Zwiększamy sprzedaż, zasięg i ROI dzięki precyzyjnemu targetowaniu i kreatywnym reklamom. Bezpłatna konsultacja i wycena kampanii.
+                  Facebook Ads Lublin — kampanie Meta Ads i reklamy Facebook dla firm z Lublina i Lubelszczyzny. Pracujemy z Poznania, a firmy z Lublina obsługujemy zdalnie. Stawiamy na precyzyjne targetowanie i dopracowane kreacje. Bezpłatna konsultacja i wycena kampanii.
                 </p>
 
                 {/* STATS */}
                 <div className="grid grid-cols-3 gap-4 mb-8">
                   <div className="bg-white rounded-lg p-4 shadow-md">
-                    <div className="text-2xl font-bold text-blue-600">400 zł</div>
-                    <div className="text-sm text-gray-600">od miesiąca</div>
+                    <div className="text-2xl font-bold text-blue-600">Meta</div>
+                    <div className="text-sm text-gray-600">Facebook i Instagram</div>
                   </div>
                   <div className="bg-white rounded-lg p-4 shadow-md">
-                    <div className="text-2xl font-bold text-green-600">48h</div>
-                    <div className="text-sm text-gray-600">pierwsze wyniki</div>
+                    <div className="text-2xl font-bold text-green-600">Kreacje</div>
+                    <div className="text-sm text-gray-600">grafika i wideo</div>
                   </div>
                   <div className="bg-white rounded-lg p-4 shadow-md">
-                    <div className="text-2xl font-bold text-purple-600">✓</div>
-                    <div className="text-sm text-gray-600">certyfikowani</div>
+                    <div className="text-2xl font-bold text-purple-600">Zdalnie</div>
+                    <div className="text-sm text-gray-600">z Poznania</div>
                   </div>
                 </div>
 
@@ -78,7 +78,7 @@ export default function FacebookAdsLublin() {
                 </div>
 
                 <p className="text-sm text-gray-600 mt-6">
-                  ✓ Raporty miesięczne ✓ Dedykowany account manager ✓ Gwarancja zadowolenia
+                  ✓ Raporty miesięczne ✓ Stały opiekun kampanii ✓ Budżet reklamowy rozliczany osobno
                 </p>
               </div>
             </FadeInView>
@@ -105,24 +105,24 @@ export default function FacebookAdsLublin() {
                 <div className="bg-indigo-50 rounded-lg p-8">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">Konkurencyjne koszty reklam</h3>
                   <p className="text-gray-700">
-                    Reklamy na Lublinie kosztują znacznie mniej niż w dużych metropoliach.
-                    To oznacza wyższy ROI i możliwość testowania większej liczby kampanii.
+                    Koszt dotarcia zależy od konkurencji w aukcji — przy precyzyjnie zawężonym
+                    targetowaniu lokalnym można testować więcej wariantów reklam w ramach budżetu.
                   </p>
                 </div>
 
                 <div className="bg-green-50 rounded-lg p-8">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">Szybko rozwijający się rynek</h3>
                   <p className="text-gray-700">
-                    Lublin to jeden z szybciej rozwijających się miast w Polsce.
-                    Coraz więcej firm otwiera tutaj biura i siedziby, tworząc bogate możliwości.
+                    Lublin to duży ośrodek akademicki i biznesowy wschodniej Polski,
+                    w którym działa wiele firm usługowych, handlowych i technologicznych.
                   </p>
                 </div>
 
                 <div className="bg-purple-50 rounded-lg p-8">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">Niedobór specjalistów</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">Precyzyjne targetowanie lokalne</h3>
                   <p className="text-gray-700">
-                    Mniej agencji marketingowych specjalizuje się w Facebook Ads w Lublinie.
-                    Daje to Ci przewagę konkurencyjną i lepsze warunki na aukcjach.
+                    Reklamy można zawęzić do Lublina, wybranych dzielnic lub całej Lubelszczyzny,
+                    tak by budżet trafiał do osób z realnego obszaru Twojej obsługi.
                   </p>
                 </div>
               </div>
@@ -149,14 +149,14 @@ export default function FacebookAdsLublin() {
                 <div className="bg-white rounded-lg p-8 shadow-md hover:shadow-lg transition">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">Stories Ads</h3>
                   <p className="text-gray-700">
-                    Pełnoekranowe reklamy. Najlepsze dla młodszych odbiorców i mobilnego traffic.
+                    Pełnoekranowe reklamy. Dobrze sprawdzają się u młodszych odbiorców i na urządzeniach mobilnych.
                   </p>
                 </div>
 
                 <div className="bg-white rounded-lg p-8 shadow-md hover:shadow-lg transition">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">Reels Ads</h3>
                   <p className="text-gray-700">
-                    Krótkie wideo. Najwyższy engagement i reach na Instagramie i Facebooku.
+                    Krótkie wideo w pionie. Format, w którym dobrze sprawdzają się dynamiczne kreacje na Instagramie i Facebooku.
                   </p>
                 </div>
 
@@ -170,7 +170,7 @@ export default function FacebookAdsLublin() {
                 <div className="bg-white rounded-lg p-8 shadow-md hover:shadow-lg transition">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">Video Ads</h3>
                   <p className="text-gray-700">
-                    Reklamy video. Największe engagement i konwersje na wszystkich platformach.
+                    Reklamy video. Dobre do opowiedzenia o produkcie lub usłudze i budowania grup remarketingowych.
                   </p>
                 </div>
 
@@ -220,7 +220,7 @@ export default function FacebookAdsLublin() {
                       <h3 className="text-xl font-bold text-gray-900 mb-2">Tworzenie kreatywów</h3>
                       <p className="text-gray-700">
                         Projektujemy grafiki i filmy, które przyciągają uwagę.
-                        Piszemy kopię, która konwertuje wizytantów na klientów.
+                        Piszemy teksty, które mają zamieniać odwiedzających w klientów.
                       </p>
                     </div>
                   </div>
@@ -235,7 +235,7 @@ export default function FacebookAdsLublin() {
                       <h3 className="text-xl font-bold text-gray-900 mb-2">Uruchomienie kampanii</h3>
                       <p className="text-gray-700">
                         Konfigurujemy targeting i budżet kampanii.
-                        Uruchamiamy kampanię i moniujemy początkowe wyniki.
+                        Uruchamiamy kampanię i monitorujemy początkowe wyniki.
                       </p>
                     </div>
                   </div>
@@ -250,7 +250,7 @@ export default function FacebookAdsLublin() {
                       <h3 className="text-xl font-bold text-gray-900 mb-2">Optymalizacja</h3>
                       <p className="text-gray-700">
                         Testujemy różne warianty i segmenty.
-                        Ciągle zwiększamy ROI poprzez iterację i ulepszanie.
+                        Na podstawie danych wprowadzamy zmiany, by poprawiać wyniki kampanii.
                       </p>
                     </div>
                   </div>
@@ -280,69 +280,32 @@ export default function FacebookAdsLublin() {
           <div className="container mx-auto px-4">
             <FadeInView>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
-                Cennik
+                Od czego zależy wycena
               </h2>
 
-              <div className="grid md:grid-cols-4 gap-6">
-                <div className="bg-white rounded-lg p-8 shadow-md hover:shadow-lg transition border-t-4 border-blue-600">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">START</h3>
-                  <div className="text-3xl font-bold text-blue-600 mb-4">400 zł</div>
-                  <p className="text-sm text-gray-600 mb-6">na miesiąc</p>
-                  <ul className="space-y-2 text-sm text-gray-700 mb-8">
-                    <li>✓ 1 kampania</li>
-                    <li>✓ Budżet do 2000 zł/mies</li>
-                    <li>✓ Raport co 2 tygodnie</li>
-                    <li>✓ Email support</li>
-                  </ul>
-                  <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full border-2 border-blue-600 text-blue-600 font-bold py-2 px-4 rounded-lg hover:bg-blue-50 transition">
-                    Wybierz
-                  </a>
+              <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                <div className="bg-white rounded-lg p-8 shadow-md">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Zakres kampanii</h3>
+                  <p className="text-gray-700">Liczba kampanii i grup odbiorców, cel (sprzedaż, leady, zasięg) oraz częstotliwość raportowania.</p>
                 </div>
+                <div className="bg-white rounded-lg p-8 shadow-md">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Kreacje</h3>
+                  <p className="text-gray-700">Czy przygotowujemy grafiki, wideo i teksty reklam, czy pracujemy na materiałach od Ciebie.</p>
+                </div>
+                <div className="bg-white rounded-lg p-8 shadow-md">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Analityka</h3>
+                  <p className="text-gray-700">Konfiguracja Pixela, Conversions API i zdarzeń konwersji oraz integracja z CRM lub sklepem.</p>
+                </div>
+                <div className="bg-white rounded-lg p-8 shadow-md">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Budżet reklamowy osobno</h3>
+                  <p className="text-gray-700">Budżet płacony Meta za wyświetlenia reklam jest zawsze osobną pozycją, rozliczaną bezpośrednio z platformą.</p>
+                </div>
+              </div>
 
-                <div className="bg-white rounded-lg p-8 shadow-md hover:shadow-lg transition border-t-4 border-green-600">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">GROWTH</h3>
-                  <div className="text-3xl font-bold text-green-600 mb-4">800 zł</div>
-                  <p className="text-sm text-gray-600 mb-6">na miesiąc</p>
-                  <ul className="space-y-2 text-sm text-gray-700 mb-8">
-                    <li>✓ 3 kampanie</li>
-                    <li>✓ Budżet do 5000 zł/mies</li>
-                    <li>✓ Raport tygodniowy</li>
-                    <li>✓ Telefon i email</li>
-                  </ul>
-                  <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition">
-                    Wybierz
-                  </a>
-                </div>
-
-                <div className="bg-white rounded-lg p-8 shadow-md hover:shadow-lg transition border-t-4 border-purple-600">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">PRO</h3>
-                  <div className="text-3xl font-bold text-purple-600 mb-4">1500 zł</div>
-                  <p className="text-sm text-gray-600 mb-6">na miesiąc</p>
-                  <ul className="space-y-2 text-sm text-gray-700 mb-8">
-                    <li>✓ Nieograniczone kampanie</li>
-                    <li>✓ Budżet do 15000 zł/mies</li>
-                    <li>✓ Raport co 3 dni</li>
-                    <li>✓ Dedykowany manager</li>
-                  </ul>
-                  <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full border-2 border-purple-600 text-purple-600 font-bold py-2 px-4 rounded-lg hover:bg-purple-50 transition">
-                    Wybierz
-                  </a>
-                </div>
-
-                <div className="bg-white rounded-lg p-8 shadow-md hover:shadow-lg transition border-t-4 border-red-600">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">ENTERPRISE</h3>
-                  <div className="text-3xl font-bold text-red-600 mb-4">Custom</div>
-                  <p className="text-sm text-gray-600 mb-6">na miesiąc</p>
-                  <ul className="space-y-2 text-sm text-gray-700 mb-8">
-                    <li>✓ Nieograniczone wszystko</li>
-                    <li>✓ Budżet 15000+ zł/mies</li>
-                    <li>✓ Raport codziennie</li>
-                    <li>✓ Account manager + analityk</li>
-                  </ul>
-                  <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full border-2 border-red-600 text-red-600 font-bold py-2 px-4 rounded-lg hover:bg-red-50 transition">
-                    Zapytaj ofertę
-                  </a>
-                </div>
+              <div className="text-center mt-10">
+                <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition">
+                  Zapytaj o wycenę
+                </a>
               </div>
             </FadeInView>
           </div>
@@ -353,7 +316,7 @@ export default function FacebookAdsLublin() {
           <div className="container mx-auto px-4">
             <FadeInView>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
-                Branże, z którymi pracujemy
+                Branże, dla których przygotowujemy kampanie
               </h2>
 
               <div className="grid md:grid-cols-2 gap-6">
@@ -361,7 +324,7 @@ export default function FacebookAdsLublin() {
                   <div className="text-2xl">🏢</div>
                   <div>
                     <h3 className="font-bold text-gray-900 mb-2">E-commerce</h3>
-                    <p className="text-gray-700">Zwiększamy sprzedaż online poprzez kampanie produktowe i promujące oferty.</p>
+                    <p className="text-gray-700">Kampanie produktowe, katalogowe i promujące oferty sklepów online.</p>
                   </div>
                 </div>
 
@@ -369,7 +332,7 @@ export default function FacebookAdsLublin() {
                   <div className="text-2xl">💼</div>
                   <div>
                     <h3 className="font-bold text-gray-900 mb-2">Usługi biznesowe</h3>
-                    <p className="text-gray-700">Pozyskujemy hochojakościowych leadów dla konsultantów, doradców i agencji.</p>
+                    <p className="text-gray-700">Kampanie leadowe dla konsultantów, doradców i agencji.</p>
                   </div>
                 </div>
 
@@ -377,7 +340,7 @@ export default function FacebookAdsLublin() {
                   <div className="text-2xl">🏥</div>
                   <div>
                     <h3 className="font-bold text-gray-900 mb-2">Medycyna i zdrowie</h3>
-                    <p className="text-gray-700">Promujemy klinki, gabinety lekarskie i praktyki medyczne w Lublinie.</p>
+                    <p className="text-gray-700">Kampanie dla klinik, gabinetów lekarskich i praktyk medycznych z Lublina — z uwzględnieniem zasad reklamy usług medycznych.</p>
                   </div>
                 </div>
 
@@ -385,7 +348,7 @@ export default function FacebookAdsLublin() {
                   <div className="text-2xl">🍽️</div>
                   <div>
                     <h3 className="font-bold text-gray-900 mb-2">HoReCa i restauracje</h3>
-                    <p className="text-gray-700">Zapraszamy klientów do restauracji, kawiarni i pubów poprzez atrakcyjne kampanie.</p>
+                    <p className="text-gray-700">Kampanie lokalne dla restauracji, kawiarni i pubów.</p>
                   </div>
                 </div>
 
@@ -393,7 +356,7 @@ export default function FacebookAdsLublin() {
                   <div className="text-2xl">🏠</div>
                   <div>
                     <h3 className="font-bold text-gray-900 mb-2">Nieruchomości</h3>
-                    <p className="text-gray-700">Znajdujemy kupujących i wynajmujących dla pośredników i deweloperów.</p>
+                    <p className="text-gray-700">Kampanie dla pośredników i deweloperów szukających kupujących i najemców.</p>
                   </div>
                 </div>
 
@@ -401,7 +364,7 @@ export default function FacebookAdsLublin() {
                   <div className="text-2xl">🎓</div>
                   <div>
                     <h3 className="font-bold text-gray-900 mb-2">Edukacja</h3>
-                    <p className="text-gray-700">Rekrutujemy studentów do szkół, uniwersytetów i kursów. Lublini ma dużo młodzież.</p>
+                    <p className="text-gray-700">Kampanie rekrutacyjne dla szkół, uczelni i kursów — np. kampania Meta Ads dla Dawid EDU. Lublin to duży ośrodek akademicki.</p>
                   </div>
                 </div>
 
@@ -409,7 +372,7 @@ export default function FacebookAdsLublin() {
                   <div className="text-2xl">💪</div>
                   <div>
                     <h3 className="font-bold text-gray-900 mb-2">Fitness i wellness</h3>
-                    <p className="text-gray-700">Pozyskujemy członków siłowni, klubów fitness i studiów jogi.</p>
+                    <p className="text-gray-700">Kampanie pozyskujące członków siłowni, klubów fitness i studiów jogi.</p>
                   </div>
                 </div>
 
@@ -417,7 +380,7 @@ export default function FacebookAdsLublin() {
                   <div className="text-2xl">✂️</div>
                   <div>
                     <h3 className="font-bold text-gray-900 mb-2">Usługi osobiste</h3>
-                    <p className="text-gray-700">Promujemy salony fryzjerskie, zabiegi kosmetyczne i usługi beauty.</p>
+                    <p className="text-gray-700">Kampanie dla salonów fryzjerskich, gabinetów kosmetycznych i usług beauty.</p>
                   </div>
                 </div>
               </div>
@@ -441,9 +404,9 @@ export default function FacebookAdsLublin() {
                   </summary>
                   <div className="bg-gray-50 p-6 border-t border-gray-200">
                     <p className="text-gray-700">
-                      Oferujemy elastyczne pakiety od 400 zł do 1500+ zł miesięcznie.
-                      Cena zależy od liczby kampanii, budżetu na reklamy i poziomu wsparcia.
-                      Każdy pakiet zawiera optymalizację, raporty i dedykowaną obsługę.
+                      Wycenę przygotowujemy po rozmowie o zakresie. Zależy ona od liczby kampanii,
+                      zakresu kreacji, konfiguracji analityki i częstotliwości raportowania.
+                      Budżet reklamowy płacony Meta jest zawsze osobną pozycją.
                     </p>
                   </div>
                 </details>
@@ -455,9 +418,9 @@ export default function FacebookAdsLublin() {
                   </summary>
                   <div className="bg-gray-50 p-6 border-t border-gray-200">
                     <p className="text-gray-700">
-                      Większość kampanii wykazuje pierwsze rezultaty w ciągu 48 godzin.
-                      Pełne rezultaty i optymalizacja widoczne są po 2-3 tygodniach działalności kampanii.
-                      Czas oczekiwania zależy od branży i budżetu.
+                      Kampania zaczyna zbierać dane od dnia uruchomienia, a pierwsze tygodnie to zwykle faza
+                      nauki algorytmu i testów. Tempo pozyskiwania zapytań zależy od branży, oferty,
+                      budżetu i strony docelowej — dlatego nie podajemy sztywnego terminu efektów.
                     </p>
                   </div>
                 </details>
@@ -469,7 +432,7 @@ export default function FacebookAdsLublin() {
                   </summary>
                   <div className="bg-gray-50 p-6 border-t border-gray-200">
                     <p className="text-gray-700">
-                      Absolutnie. Możesz wznowić, zawieszić lub zmodyfikować kampanię w dowolnym momencie.
+                      Absolutnie. Możesz wznowić, zawiesić lub zmodyfikować kampanię w dowolnym momencie.
                       Nie ma kar za zmianę decyzji. Wszystkie dane kampanii będą zachowane.
                     </p>
                   </div>
@@ -496,7 +459,7 @@ export default function FacebookAdsLublin() {
                   </summary>
                   <div className="bg-gray-50 p-6 border-t border-gray-200">
                     <p className="text-gray-700">
-                      Nie. Możesz zacząć od niewielkiego budżetu (nawet 500 zł/mies) i skalować w miarę wzrostu.
+                      Nie. Możesz zacząć od niewielkiego budżetu reklamowego (płaconego bezpośrednio Meta) i skalować w miarę wzrostu.
                       Testujemy wszystko na małej skali najpierw, aby znaleźć to, co działa.
                       Dopiero wtedy zwiększamy budżet na zwycięskie kampanie.
                     </p>
@@ -510,8 +473,8 @@ export default function FacebookAdsLublin() {
                   </summary>
                   <div className="bg-gray-50 p-6 border-t border-gray-200">
                     <p className="text-gray-700">
-                      Nie możemy zagwarantować konkretnych wyników, bo rynek się zmienia.
-                      Ale gwarantujemy, że będziemy optymalizować kampanię każdego dnia.
+                      Nie możemy zagwarantować konkretnych wyników, bo zależą od rynku, oferty i budżetu.
+                      Regularnie analizujemy dane i optymalizujemy kampanię.
                       Jeśli kampania nie przynosi rezultatów, wspólnie szukamy przyczyn i dokonujemy zmian.
                     </p>
                   </div>
@@ -524,8 +487,8 @@ export default function FacebookAdsLublin() {
                   </summary>
                   <div className="bg-gray-50 p-6 border-t border-gray-200">
                     <p className="text-gray-700">
-                      Pracujemy bez długoterminowych umów. Możesz pracować z nami miesiąc po miesiącu.
-                      Chcemy, żebyś pracował z nami, ponieważ ceni sobie nasze usługi, nie dlatego, że musi.
+                      Okres współpracy i warunki wypowiedzenia ustalamy w umowie przed startem kampanii,
+                      tak aby były jasne dla obu stron.
                     </p>
                   </div>
                 </details>

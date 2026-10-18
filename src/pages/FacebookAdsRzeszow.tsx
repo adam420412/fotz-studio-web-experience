@@ -11,7 +11,7 @@ export default function FacebookAdsRzeszow() {
     <>
       <SEOHead
         title="Agencja Facebook Ads Rzeszów — reklamy Meta dla firm | Fotz.pl"
-        description="Facebook Ads Rzeszów ✓ Kampanie Meta Ads dla firm z Rzeszowa i Podkarpacia. Od 400 zł/mies. Bezpłatna konsultacja!"
+        description="Facebook Ads Rzeszów ✓ Kampanie Meta Ads dla firm z Rzeszowa i Podkarpacia. Wycena po rozmowie o zakresie. Bezpłatna konsultacja!"
         canonical="https://www.fotz-studio.pl/performance-marketing/facebook-ads/rzeszow"
         keywords="facebook ads rzeszow, meta ads rzeszow, reklamy facebook rzeszow, agencja facebook ads rzeszow, kampanie facebook rzeszow, instagram ads rzeszow, facebook ads dla firm rzeszow, reklama na facebooku rzeszow, meta ads agencja rzeszow, facebook ads cennik rzeszow"
       />
@@ -19,7 +19,7 @@ export default function FacebookAdsRzeszow() {
           { name: "Fotz.pl", url: "https://www.fotz-studio.pl" },
           { name: "Performance Marketing", url: "https://www.fotz-studio.pl/performance-marketing" },
           { name: "Facebook Ads", url: "https://www.fotz-studio.pl/performance-marketing/facebook-ads" },
-          { name: "Rzeszów", url: "https://www.fotz-studio.pl" }
+          { name: "Rzeszów", url: "https://www.fotz-studio.pl/performance-marketing/facebook-ads/rzeszow" }
         ]}/>
       <ServiceSchema
         name="Facebook Ads Rzeszów"
@@ -32,7 +32,7 @@ export default function FacebookAdsRzeszow() {
             { name: "Home", path: "/" },
             { name: "Performance Marketing", path: "/performance-marketing" },
             { name: "Facebook Ads", path: "/uslugi/reklama-facebook" },
-            { name: "Rzeszów", url: "https://www.fotz-studio.pl" }
+            { name: "Rzeszów", url: "/performance-marketing/facebook-ads/rzeszow" }
           ]}/>
 
         {/* HERO SECTION */}
@@ -49,22 +49,22 @@ export default function FacebookAdsRzeszow() {
                   Agencja Facebook Ads w Rzeszowie
                 </h1>
                 <p className="text-xl text-gray-700 mb-8">
-                  Facebook Ads Rzeszow — profesjonalne kampanie Meta Ads i reklamy Facebook dla firm z Rzeszowa i Podkarpacia. Zwiększamy sprzedaż, zasięg i ROI dzięki precyzyjnemu targetowaniu i kreatywnym reklamom. Bezpłatna konsultacja i wycena kampanii.
+                  Facebook Ads Rzeszow — profesjonalne kampanie Meta Ads i reklamy Facebook dla firm z Rzeszowa i Podkarpacia. Planujemy kampanie, przygotowujemy kreacje i optymalizujemy targetowanie na podstawie danych. Pracujemy z Poznania, a firmy z Rzeszowa obsługujemy zdalnie. Bezpłatna konsultacja i wycena kampanii.
                 </p>
 
                 {/* STATS */}
                 <div className="grid grid-cols-3 gap-4 mb-8">
                   <div className="bg-white rounded-lg p-4 shadow-md">
-                    <div className="text-2xl font-bold text-blue-600">400 zł</div>
-                    <div className="text-sm text-gray-600">od miesiąca</div>
+                    <div className="text-2xl font-bold text-blue-600">Wycena</div>
+                    <div className="text-sm text-gray-600">po rozmowie o zakresie</div>
                   </div>
                   <div className="bg-white rounded-lg p-4 shadow-md">
-                    <div className="text-2xl font-bold text-green-600">48h</div>
-                    <div className="text-sm text-gray-600">pierwsze wyniki</div>
+                    <div className="text-2xl font-bold text-green-600">Budżet</div>
+                    <div className="text-sm text-gray-600">płacisz Meta osobno</div>
                   </div>
                   <div className="bg-white rounded-lg p-4 shadow-md">
-                    <div className="text-2xl font-bold text-purple-600">✓</div>
-                    <div className="text-sm text-gray-600">certyfikowani</div>
+                    <div className="text-2xl font-bold text-purple-600">Zdalnie</div>
+                    <div className="text-sm text-gray-600">pracujemy z Poznania</div>
                   </div>
                 </div>
 
@@ -78,7 +78,7 @@ export default function FacebookAdsRzeszow() {
                 </div>
 
                 <p className="text-sm text-gray-600 mt-6">
-                  ✓ Raporty miesięczne ✓ Dedykowany account manager ✓ Gwarancja zadowolenia
+                  ✓ Raporty miesięczne ✓ Dedykowany opiekun ✓ Współpraca zdalna
                 </p>
               </div>
             </FadeInView>
@@ -95,34 +95,34 @@ export default function FacebookAdsRzeszow() {
 
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="bg-blue-50 rounded-lg p-8">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">Najszybciej rozwijające się miasto Polski</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">Rozwijający się rynek</h3>
                   <p className="text-gray-700">
-                    Rzeszów to dynamicznie rosnące miasto z nowoczesnym biznesem i przedsiębiorcami.
-                    To idealne miejsce do promowania produktów i usług dla rosnącego rynku.
+                    Rzeszów to dynamiczne miasto z nowoczesnym biznesem i przedsiębiorcami.
+                    To dobre miejsce do promowania produktów i usług na Podkarpaciu.
                   </p>
                 </div>
 
                 <div className="bg-indigo-50 rounded-lg p-8">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">Bardzo niskie koszty reklam</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">Budżet dopasowany do celu</h3>
                   <p className="text-gray-700">
-                    Rzeszów ma jedne z najniższych kosztów per akcji w Polsce.
-                    To pozwala Ci testować więcej kampanii i osiągnąć lepszy ROI.
+                    Koszt dotarcia zależy od branży, grupy odbiorców i konkurencji.
+                    Sprawdzamy go w testach i dopiero potem zwiększamy budżet na to, co działa.
                   </p>
                 </div>
 
                 <div className="bg-green-50 rounded-lg p-8">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">Zaangażowani użytkownicy</h3>
                   <p className="text-gray-700">
-                    Mieszkańcy Rzeszowa i Podkarpacia aktywnie korzystają z mediów społecznościowych.
-                    Wysoki engagement i gotowość do interakcji z reklamami.
+                    Mieszkańcy Rzeszowa i Podkarpacia korzystają z Facebooka i Instagrama na co dzień.
+                    Dobrze dobrana kreacja pozwala dotrzeć do nich tam, gdzie spędzają czas.
                   </p>
                 </div>
 
                 <div className="bg-purple-50 rounded-lg p-8">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">Mała konkurencja marketingowa</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">Precyzyjne targetowanie lokalne</h3>
                   <p className="text-gray-700">
-                    Niewielu specjalistów zarządza kampaniami Facebook Ads w Rzeszowie.
-                    To daje Ci ogromną przewagę konkurencyjną na lokalnym rynku.
+                    Reklamy można kierować do mieszkańców Rzeszowa, okolicznych gmin lub całego Podkarpacia.
+                    Dzięki temu budżet trafia do osób, które realnie mogą zostać Twoimi klientami.
                   </p>
                 </div>
               </div>
@@ -149,14 +149,14 @@ export default function FacebookAdsRzeszow() {
                 <div className="bg-white rounded-lg p-8 shadow-md hover:shadow-lg transition">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">Stories Ads</h3>
                   <p className="text-gray-700">
-                    Pełnoekranowe reklamy. Niesamowite do budowania świadomości marki wśród młodszych użytkowników.
+                    Pełnoekranowe reklamy. Dobre do budowania świadomości marki, szczególnie wśród młodszych użytkowników.
                   </p>
                 </div>
 
                 <div className="bg-white rounded-lg p-8 shadow-md hover:shadow-lg transition">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">Reels Ads</h3>
                   <p className="text-gray-700">
-                    Reklamy video na Instagramie. Największy reach i engagement w mediach społecznościowych.
+                    Krótkie reklamy video na Instagramie i Facebooku. Format, w którym łatwo przyciągnąć uwagę.
                   </p>
                 </div>
 
@@ -170,7 +170,7 @@ export default function FacebookAdsRzeszow() {
                 <div className="bg-white rounded-lg p-8 shadow-md hover:shadow-lg transition">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">Video Ads</h3>
                   <p className="text-gray-700">
-                    Profesjonalne reklamy video. Najwyższe konwersje spośród wszystkich formatów.
+                    Profesjonalne reklamy video, które pokazują produkt lub usługę w działaniu.
                   </p>
                 </div>
 
@@ -220,7 +220,7 @@ export default function FacebookAdsRzeszow() {
                       <h3 className="text-xl font-bold text-gray-900 mb-2">Tworzenie kreatywów</h3>
                       <p className="text-gray-700">
                         Projektujemy nowoczesne grafiki i filmy, które przyciągają uwagę.
-                        Piszemy teksty, które konwertują na sprzedaż.
+                        Piszemy teksty nastawione na sprzedaż.
                       </p>
                     </div>
                   </div>
@@ -250,7 +250,7 @@ export default function FacebookAdsRzeszow() {
                       <h3 className="text-xl font-bold text-gray-900 mb-2">Optymalizacja</h3>
                       <p className="text-gray-700">
                         Eksperymentujemy z różnymi wariantami i segmentami odbiorców.
-                        Ciągle ulepszamy wyniki i zwiększamy ROI.
+                        Na podstawie danych poprawiamy wyniki kampanii.
                       </p>
                     </div>
                   </div>
@@ -280,69 +280,36 @@ export default function FacebookAdsRzeszow() {
           <div className="container mx-auto px-4">
             <FadeInView>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
-                Cennik
+                Od czego zależy wycena?
               </h2>
 
               <div className="grid md:grid-cols-4 gap-6">
                 <div className="bg-white rounded-lg p-8 shadow-md hover:shadow-lg transition border-t-4 border-blue-600">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">START</h3>
-                  <div className="text-3xl font-bold text-blue-600 mb-4">400 zł</div>
-                  <p className="text-sm text-gray-600 mb-6">na miesiąc</p>
-                  <ul className="space-y-2 text-sm text-gray-700 mb-8">
-                    <li>✓ 1 kampania</li>
-                    <li>✓ Budżet do 2000 zł/mies</li>
-                    <li>✓ Raport co 2 tygodnie</li>
-                    <li>✓ Email support</li>
-                  </ul>
-                  <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full border-2 border-blue-600 text-blue-600 font-bold py-2 px-4 rounded-lg hover:bg-blue-50 transition">
-                    Wybierz
-                  </a>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Liczba kampanii</h3>
+                  <p className="text-sm text-gray-700">Ile kampanii, grup odbiorców i celów (sprzedaż, leady, zasięg) prowadzimy równolegle.</p>
                 </div>
 
                 <div className="bg-white rounded-lg p-8 shadow-md hover:shadow-lg transition border-t-4 border-green-600">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">GROWTH</h3>
-                  <div className="text-3xl font-bold text-green-600 mb-4">800 zł</div>
-                  <p className="text-sm text-gray-600 mb-6">na miesiąc</p>
-                  <ul className="space-y-2 text-sm text-gray-700 mb-8">
-                    <li>✓ 3 kampanie</li>
-                    <li>✓ Budżet do 5000 zł/mies</li>
-                    <li>✓ Raport tygodniowy</li>
-                    <li>✓ Telefon i email</li>
-                  </ul>
-                  <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition">
-                    Wybierz
-                  </a>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Kreacje</h3>
+                  <p className="text-sm text-gray-700">Czy przygotowujemy grafiki i video, czy pracujemy na Twoich materiałach.</p>
                 </div>
 
                 <div className="bg-white rounded-lg p-8 shadow-md hover:shadow-lg transition border-t-4 border-purple-600">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">PRO</h3>
-                  <div className="text-3xl font-bold text-purple-600 mb-4">1500 zł</div>
-                  <p className="text-sm text-gray-600 mb-6">na miesiąc</p>
-                  <ul className="space-y-2 text-sm text-gray-700 mb-8">
-                    <li>✓ Nieograniczone kampanie</li>
-                    <li>✓ Budżet do 15000 zł/mies</li>
-                    <li>✓ Raport co 3 dni</li>
-                    <li>✓ Dedykowany manager</li>
-                  </ul>
-                  <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full border-2 border-purple-600 text-purple-600 font-bold py-2 px-4 rounded-lg hover:bg-purple-50 transition">
-                    Wybierz
-                  </a>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Raportowanie</h3>
+                  <p className="text-sm text-gray-700">Jak często raportujemy i spotykamy się, aby omówić wyniki.</p>
                 </div>
 
                 <div className="bg-white rounded-lg p-8 shadow-md hover:shadow-lg transition border-t-4 border-red-600">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">ENTERPRISE</h3>
-                  <div className="text-3xl font-bold text-red-600 mb-4">Custom</div>
-                  <p className="text-sm text-gray-600 mb-6">na miesiąc</p>
-                  <ul className="space-y-2 text-sm text-gray-700 mb-8">
-                    <li>✓ Nieograniczone wszystko</li>
-                    <li>✓ Budżet 15000+ zł/mies</li>
-                    <li>✓ Raport codziennie</li>
-                    <li>✓ Account manager + analityk</li>
-                  </ul>
-                  <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full border-2 border-red-600 text-red-600 font-bold py-2 px-4 rounded-lg hover:bg-red-50 transition">
-                    Zapytaj ofertę
-                  </a>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Budżet reklamowy</h3>
+                  <p className="text-sm text-gray-700">Płacisz go bezpośrednio Meta — zawsze osobno od opłaty za obsługę. Jego wysokość dobieramy wspólnie.</p>
                 </div>
+              </div>
+
+              <div className="text-center mt-10">
+                <p className="text-gray-700 mb-6">Wycenę przygotowujemy po rozmowie o zakresie i celach kampanii.</p>
+                <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition">
+                  Zapytaj o wycenę
+                </a>
               </div>
             </FadeInView>
           </div>
@@ -353,7 +320,7 @@ export default function FacebookAdsRzeszow() {
           <div className="container mx-auto px-4">
             <FadeInView>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
-                Branże, z którymi pracujemy
+                Dla jakich branż przygotowujemy kampanie
               </h2>
 
               <div className="grid md:grid-cols-2 gap-6">
@@ -369,7 +336,7 @@ export default function FacebookAdsRzeszow() {
                   <div className="text-2xl">💼</div>
                   <div>
                     <h3 className="font-bold text-gray-900 mb-2">Usługi biznesowe</h3>
-                    <p className="text-gray-700">Generujemy wysokojakościowe leady dla konsultantów, doradców i specjalistów.</p>
+                    <p className="text-gray-700">Pozyskujemy zapytania dla konsultantów, doradców i specjalistów.</p>
                   </div>
                 </div>
 
@@ -441,9 +408,9 @@ export default function FacebookAdsRzeszow() {
                   </summary>
                   <div className="bg-gray-50 p-6 border-t border-gray-200">
                     <p className="text-gray-700">
-                      Oferujemy elastyczne pakiety od 400 zł do 1500+ zł miesięcznie.
-                      Cena zależy od liczby kampanii, budżetu na reklamy i poziomu wsparcia.
-                      Każdy pakiet zawiera optymalizację, raporty i dedykowaną obsługę.
+                      Wycenę przygotowujemy po rozmowie o zakresie.
+                      Cena obsługi zależy od liczby kampanii, przygotowania kreacji i częstotliwości raportów.
+                      Budżet reklamowy płacisz bezpośrednio Meta, osobno od opłaty za obsługę.
                     </p>
                   </div>
                 </details>
@@ -455,9 +422,9 @@ export default function FacebookAdsRzeszow() {
                   </summary>
                   <div className="bg-gray-50 p-6 border-t border-gray-200">
                     <p className="text-gray-700">
-                      Większość kampanii wykazuje pierwsze rezultaty w ciągu 48 godzin.
-                      Pełne rezultaty i optymalizacja widoczne są po 2-3 tygodniach działalności kampanii.
-                      Czas oczekiwania zależy od branży i budżetu.
+                      Po zatwierdzeniu reklam przez Meta kampania zaczyna zbierać pierwsze dane.
+                      Wnioski i optymalizację opieramy na wynikach z kolejnych tygodni.
+                      Czas oczekiwania zależy od branży, budżetu i celu kampanii.
                     </p>
                   </div>
                 </details>
@@ -496,7 +463,7 @@ export default function FacebookAdsRzeszow() {
                   </summary>
                   <div className="bg-gray-50 p-6 border-t border-gray-200">
                     <p className="text-gray-700">
-                      Nie. Możesz zacząć od niewielkiego budżetu (nawet 500 zł/mies) i skalować w miarę wzrostu.
+                      Nie. Możesz zacząć od niewielkiego budżetu reklamowego (płaconego bezpośrednio Meta) i skalować w miarę wzrostu.
                       Testujemy wszystko na małej skali najpierw, aby znaleźć to, co działa.
                       Dopiero wtedy zwiększamy budżet na zwycięskie kampanie.
                     </p>
@@ -511,7 +478,7 @@ export default function FacebookAdsRzeszow() {
                   <div className="bg-gray-50 p-6 border-t border-gray-200">
                     <p className="text-gray-700">
                       Nie możemy zagwarantować konkretnych wyników, bo rynek się zmienia.
-                      Ale gwarantujemy, że będziemy optymalizować kampanię każdego dnia.
+                      Zobowiązujemy się natomiast regularnie analizować i optymalizować kampanię.
                       Jeśli kampania nie przynosi rezultatów, wspólnie szukamy przyczyn i dokonujemy zmian.
                     </p>
                   </div>

@@ -40,7 +40,7 @@ export default function BlogContentMarketingCoTo() {
     {
       question: "Ile czasu zajmuje zanim content marketing przyniesie efekty?",
       answer:
-        "Content marketing to gra długoterminowa. Pierwsze wyniki organiczne z Google: 3-6 miesięcy. Budowanie autorytetu: 6-18 miesięcy. Pełne efekty: 12-24 miesiące. Jednak raz zainwestowany content pracuje latami. Po 2 latach dobrze zaplanowany content marketing kosztuje 62% mniej niż reklama przy 3x więcej leadach.",
+        "Content marketing to gra długoterminowa. Pierwsze wyniki organiczne z Google: 3-6 miesięcy. Budowanie autorytetu: 6-18 miesięcy. Pełne efekty: 12-24 miesiące. Jednak raz zainwestowany content pracuje latami, więc z czasem koszt pozyskania jednego kontaktu zwykle spada, w przeciwieństwie do reklamy, która przestaje działać razem z budżetem.",
     },
     {
       question: "Czy content marketing jest dla małych firm?",
@@ -114,7 +114,7 @@ export default function BlogContentMarketingCoTo() {
                   { icon: FileText, title: "Blog i artykuły", desc: "Najczęstsza forma. Buduje pozycje SEO, edukuje i przyciąga organiczny ruch przez miesiące i lata." },
                   { icon: BookOpen, title: "E-booki i white papers", desc: "Wartościowe materiały PDF — świetne jako lead magnet. Budują autorytet ekspercki." },
                   { icon: Target, title: "Wideo i podcasty", desc: "Rosnący format. YouTube, TikTok, Spotify — docierają do szerszego grona niż tekst." },
-                  { icon: TrendingUp, title: "Case studies", desc: "Najskuteczniejszy format B2B — 85% decydentów B2B czyta case studies przed zakupem." },
+                  { icon: TrendingUp, title: "Case studies", desc: "Jeden z najskuteczniejszych formatów B2B — wielu decydentów sięga po opisy realizacji, zanim wybierze dostawcę." },
                 ].map((item, idx) => {
                   const Icon = item.icon;
                   return (
@@ -132,8 +132,8 @@ export default function BlogContentMarketingCoTo() {
               <h2 className="text-2xl font-bold text-slate-900 mt-8 mb-4">Dlaczego content marketing działa?</h2>
               <div className="space-y-3 mb-6">
                 {[
-                  "Generuje 3x więcej leadów niż outbound marketing przy 62% niższym koszcie",
-                  "Buduje zaufanie — klienci którzy czytają Twoje treści kupują 6x chętniej",
+                  "Generuje leady w sposób ciągły, często taniej niż outbound marketing w dłuższym okresie",
+                  "Buduje zaufanie — klienci, którzy znają Twoje treści, chętniej wybierają właśnie Ciebie",
                   "Działa 24/7 — artykuł napisany 2 lata temu nadal przyciąga ruch",
                   "Poprawia SEO — Google nagradza wartościowe, regularne treści",
                   "Redukuje koszt sprzedaży — klienci przychodzą już wyedukowani",

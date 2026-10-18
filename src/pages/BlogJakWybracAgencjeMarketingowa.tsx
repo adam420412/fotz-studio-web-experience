@@ -62,7 +62,7 @@ const criteria = [
 const faqItems = [
   {
     question: "Ile kosztuje wspolpraca z agencja marketingowa?",
-    answer: "Cena zalezy od zakresu uslug, szumienia agencji i Twojego miasta. Agencje lokalne w mniejszych miastach czesto sa tańsze. Przychyad sie za 1000-3000 PLN mesiecznie za podstawowe uslugi (SEO, social media), a za kompleksowe rozwiazania 5000-15000+ PLN. Duze agencje czy zagraniczni gracze moga kosztowac znacznie wiecej."
+    answer: "Cena zalezy od zakresu uslug, szumienia agencji i Twojego miasta. Agencje lokalne w mniejszych miastach czesto sa tańsze. Przykladowe, orientacyjne widelki rynkowe (nie cennik FOTZ Studio): ok. 1000-3000 PLN miesiecznie za podstawowe uslugi (SEO, social media), a za kompleksowe rozwiazania 5000-15000+ PLN. Duze agencje czy zagraniczni gracze moga kosztowac znacznie wiecej."
   },
   {
     question: "Jak sprawdzic czy agencja marketingowa jest dobra?",
@@ -174,11 +174,11 @@ export default function BlogJakWybracAgencjeMarketingowa() {
                 
                 <div className="space-y-4 text-slate-700 leading-relaxed">
                   <p>
-                    W Polsce dziala kilka tysiecy agencji marketingowych. Duzych, malych, specjalizujacych sie w jednym obszarze, oferujacych wszystko. Kazda mowi ze jest najlepsza. Jak sie nie znasz na marketingu, latwo pociagnac na pusta obietnice.
+                    W Polsce dziala bardzo wiele agencji marketingowych. Duzych, malych, specjalizujacych sie w jednym obszarze, oferujacych wszystko. Kazda mowi ze jest najlepsza. Jak sie nie znasz na marketingu, latwo pociagnac na pusta obietnice.
                   </p>
                   
                   <p>
-                    Decyzja o wyborze agencji to jedna z wazniejszych decyzji dla Twojej firmy. Niedobra agencja moze Ci wysysac budżet bez efektow, a dobra agencja to partner w rozwoju biznesu. Roznica w efektach pomiedzy dobrą a zla agencja to czesto kilkadziesiąt tysiecy zlotych rocznie.
+                    Decyzja o wyborze agencji to jedna z wazniejszych decyzji dla Twojej firmy. Niedobra agencja moze Ci wysysac budżet bez efektow, a dobra agencja to partner w rozwoju biznesu. Roznica w efektach pomiedzy dobrą a zla agencja w skali roku moze byc dla firmy bardzo odczuwalna.
                   </p>
 
                   <p>
@@ -407,7 +407,7 @@ export default function BlogJakWybracAgencjeMarketingowa() {
                           <li>Wiecej czasu na zdecydowanie</li>
                         </ul>
                       </p>
-                      <p><strong>Koszt:</strong> 5000-15000+ PLN/mc</p>
+                      <p><strong>Przykladowe widelki rynkowe:</strong> 5000-15000+ PLN/mc (orientacyjnie, zalezy od zakresu)</p>
                     </div>
                   </div>
 
@@ -430,7 +430,7 @@ export default function BlogJakWybracAgencjeMarketingowa() {
                           <li>Ryzyko niespójności</li>
                         </ul>
                       </p>
-                      <p><strong>Koszt:</strong> 1500-5000 PLN/mc</p>
+                      <p><strong>Przykladowe widelki rynkowe:</strong> 1500-5000 PLN/mc (orientacyjnie, zalezy od zakresu)</p>
                     </div>
                   </div>
                 </div>
@@ -525,15 +525,15 @@ export default function BlogJakWybracAgencjeMarketingowa() {
                   </p>
 
                   <p>
-                    Fotz Studio specjalizuje sie w: tworzeniu stron internetowych, pozycjonowaniu SEO, prowadzeniu social media, produkcji foto/video. Nie robimy wszystkiego - robimy to dobrze. Mamy portfolio pełne case studies z rzeczywistymi wynikami.
+                    Fotz Studio to agencja z Poznania. Zajmujemy sie produkcja video i foto, tworzeniem stron internetowych, prowadzeniem social media, kampaniami Meta Ads i Google Ads oraz SEO. Firmy spoza Poznania obslugujemy zdalnie.
                   </p>
 
                   <p>
-                    Nasze klienty to przedsiebiorcy, ktorzy szukaja jednego partnera - agencji, ktora zajmie sie ich marketingiem od A do Z. Nie chcą sie bawić w koordynowanie kilku podwykonawców. Chcą wiedzieć ze ktos dba o calos. To jest Fotz.
+                    Pracujemy z firmami, ktore szukaja jednego partnera do marketingu i nie chca koordynowac kilku podwykonawcow. Realizowalismy projekty m.in. dla Enea Stadionu, FPS Cegielski, Gierky, RPPG, Klagem i AutoSpa, prowadzilismy kampanie Meta Ads dla Dawid EDU, a dla WSB Merito nagralismy spot.
                   </p>
 
                   <p>
-                    Ale co najwazniejsze - nasze wyniki mowią same za siebie. Nasza klienci nie szukaja nowych agencji bo sa zadowoleni. A nowych klientów odkrywają nas przez referencje.
+                    Zastosuj do nas te same kryteria, ktore opisalismy w tym poradniku: zapytaj o portfolio, zakres, raportowanie i warunki umowy. Wycene przygotowujemy po rozmowie o Twoich potrzebach.
                   </p>
 
                   <div className="mt-8 space-y-4">

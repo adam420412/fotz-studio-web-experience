@@ -350,7 +350,7 @@ export default function AgencjaMarketingowaGdynia() {
                 >
                   {pkg.popular && (
                     <div className="bg-blue-600 text-white py-2 text-center text-sm font-semibold">
-                      Najpopularniejszy
+                      Polecany zakres
                     </div>
                   )}
                   <CardContent className="pt-8">

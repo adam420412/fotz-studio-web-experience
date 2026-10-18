@@ -10,11 +10,11 @@ export default function TikTokAdsKrakow() {
   const faqItems = [
     {
       question: "Ile kosztuje TikTok Ads w Krakowie?",
-      answer: "Koszt kampanii TikTok Ads w Krakowie jest przystępniejszy niż w Warszawie — minimalny budżet reklamowy to 200 zł/miesiąc, a dla efektywnych kampanii rekomendujemy od 800 zł/miesiąc. CPM w Krakowie wynosi średnio 12-28 zł za 1000 wyświetleń, co jest niższe niż w stolicach dużych miast. Obsługa kampanii w agencji Fotz zaczyna się od 350 zł/miesiąc. TikTok Ads oferuje rozliczenie CPM (za 1000 wyświetleń) lub CPV (za wyświetlenie wideo).",
+      answer: "Wycenę obsługi przygotowujemy po rozmowie o zakresie — liczbie kampanii, formatach, potrzebnych kreacjach wideo i częstotliwości raportów. Budżet reklamowy płacony TikTokowi jest zawsze osobny i ustalamy go razem z Tobą. TikTok Ads oferuje rozliczenie CPM (za 1000 wyświetleń) lub CPV (za wyświetlenie wideo).",
     },
     {
       question: "Ile TikTok płaci za 1000 wyświetleń?",
-      answer: "TikTok Creator Fund płaci twórcom od 0,02 do 0,04 USD za 1000 wyświetleń organicznych. Dla reklam TikTok Ads stawka CPM zależy od konkurencji na rynku lokalnym — w Krakowie wynosi 12-28 zł za 1000 wyświetleń, w zależności od branży, targetowania i grupy docelowej. Niższa konkurencja w Krakowie vs. Warszawa oznacza lepsze ceny dla reklamodawców prowadzących kampanie TikTok Ads.",
+      answer: "Stawki dla twórców ustala TikTok i zmieniają się one w czasie, dlatego nie podajemy ich na stronie. Dla reklam TikTok Ads stawka CPM zależy od konkurencji w aukcji, branży, targetowania i grupy docelowej — przed startem kampanii sprawdzamy realne stawki dla Twojej grupy odbiorców w Krakowie.",
     },
     {
       question: "Jaka jest najlepsza agencja TikTok Ads w Krakowie?",
@@ -22,7 +22,7 @@ export default function TikTokAdsKrakow() {
     },
     {
       question: "Dla jakiej branży sprawdza się reklama na TikToku w Krakowie?",
-      answer: "Reklama na TikToku sprawdza się najlepiej w e-commerce, beauty, fashion, fitness, gastronomii, edukacji i rozrywce. W Krakowie szczególnie efektywne kampanie TikTok Ads prowadzą sklepy internetowe, restauracje i kawiarnie, studia kosmetyczne, szkoły języków i firmy usługowe kierujące ofertę do Gen Z i Millenialsów w wieku 18-34 lata. TikTok to platforma mobilna angażująca młodych użytkowników.",
+      answer: "Reklama na TikToku sprawdza się najlepiej w e-commerce, beauty, fashion, fitness, gastronomii, edukacji i rozrywce. W Krakowie dobrym kandydatem na kampanie TikTok Ads są sklepy internetowe, restauracje i kawiarnie, studia kosmetyczne, szkoły języków i firmy usługowe kierujące ofertę do Gen Z i Millenialsów. TikTok to platforma mobilna angażująca młodych użytkowników.",
     },
     {
       question: "Jakie formaty reklamowe oferuje TikTok Ads?",
@@ -30,7 +30,7 @@ export default function TikTokAdsKrakow() {
     },
     {
       question: "Jak długo trwa uruchomienie kampanii TikTok Ads?",
-      answer: "Kampanię TikTok Ads można uruchomić w ciągu 2-5 dni roboczych — konfiguracja konta TikTok Ads Manager, instalacja piksela, ustawienie targetowania grup docelowej, tworzenie kreacji wideo i weryfikacja przez platformę (24-48h). Pierwsze wyniki widoczne są po 3-7 dniach, pełna optymalizacja kampanii i znalezienie najlepszych grupy docelowej trwa 2-4 tygodnie.",
+      answer: "Uruchomienie obejmuje konfigurację konta TikTok Ads Manager, instalację piksela, ustawienie targetowania grup docelowych, przygotowanie kreacji wideo i weryfikację reklam przez platformę. Termin startu ustalamy w harmonogramie po briefie, a tempo optymalizacji zależy od budżetu, kreacji i grupy docelowej — nie obiecujemy sztywnych terminów efektów.",
     },
     {
       question: "Czy TikTok Ads działa dla firm B2B?",
@@ -43,10 +43,10 @@ export default function TikTokAdsKrakow() {
   ];
 
   const formats = [
-    { name: "In-Feed Ads", desc: "Reklamy wideo pojawiające się naturalnie w feedzie ForYou użytkowników TikToka. Najczęściej wybierany format — wygląda jak organiczny content, co angażuje użytkowników, zwiększa CTR i generuje konwersje." },
+    { name: "In-Feed Ads", desc: "Reklamy wideo pojawiające się naturalnie w feedzie ForYou użytkowników TikToka. Najczęściej wybierany format — wygląda jak organiczny content, co może zwiększać zaangażowanie użytkowników i liczbę kliknięć." },
     { name: "Spark Ads", desc: "Promowanie istniejących organicznych postów z profilu marki lub twórców. Idealne gdy masz content, który organicznie się sprawdza — Spark Ads wzmacnia zasięgi, wyświetlenia i zaangażowanie użytkowników." },
-    { name: "TopView Ads", desc: "Pierwsze wideo wyświetlane użytkownikowi po otwarciu aplikacji TikTok. Format gwarantujący maksymalną widoczność, świadomość marki i zasięgi — idealny na duże kampanie wizerunkowe i budowanie rozpoznawalności." },
-    { name: "Hashtag Challenge", desc: "Kampania angażująca użytkowników do tworzenia własnych filmów z brandowanym hashtagiem. Generuje ogromne zasięgi organiczne, buduje społeczność wokół marki i zwiększa kreatywne zaangażowanie." },
+    { name: "TopView Ads", desc: "Pierwsze wideo wyświetlane użytkownikowi po otwarciu aplikacji TikTok. Format o bardzo dużej ekspozycji — przydatny w dużych kampaniach wizerunkowych i budowaniu rozpoznawalności." },
+    { name: "Hashtag Challenge", desc: "Kampania angażująca użytkowników do tworzenia własnych filmów z brandowanym hashtagiem. Może generować dodatkowe zasięgi organiczne i budować społeczność wokół marki." },
     { name: "Brand Takeover", desc: "Pełnoekranowa reklama wideo lub graficzna przy uruchomieniu aplikacji. Format ekskluzywny — jeden reklamodawca dziennie na kategorię, wysoka świadomość marki i maksymalny impact." },
     { name: "Collection Ads", desc: "Format łączący wideo z galerią produktów — otwiera mini-sklep w TikToku. Idealny dla e-commerce i sklepów internetowych, skracających ścieżkę zakupową i zwiększających konwersję sprzedaży." },
   ];
@@ -55,7 +55,7 @@ export default function TikTokAdsKrakow() {
     { step: "01", title: "Analiza i strategia kampanii", desc: "Badamy grupę docelową w Krakowie, analizujemy konkurencję lokalną, definiujemy cele kampanii (zasięgi, ruch, konwersja) i budżet. Określamy, które formaty reklamowe i strategie marketingowe będą najskuteczniejsze dla Twojej branży w Krakowie." },
     { step: "02", title: "Konfiguracja TikTok Ads Manager", desc: "Konfigurujemy konto reklamowe, instalujemy piksel TikTok, ustawiamy zdarzenia konwersji i tworzymy precyzyjne grupy odbiorców — targetowanie demograficzne, zainteresienia, remarketing i lookalike na bazie istniejących klientów." },
     { step: "03", title: "Produkcja kreacji wideo", desc: "Tworzymy lub adaptujemy materiały wideo zgodne z formatem TikToka — krótkie, dynamiczne, z trendy muzyką i efektami. Kreacje muszą wyglądać jak natywny content i angażować użytkowników, nie jak tradycyjna reklama czy spot." },
-    { step: "04", title: "Uruchomienie kampanii i monitoring", desc: "Uruchamiamy reklamy i śledzimy wyniki w czasie rzeczywistym — CPM, CTR, koszt konwersji, zasięgi i wyświetlenia. Optymalizujemy stawki, grupy docelowe i kreacje wideo na podstawie danych z TikTok Ads Manager dla maksymalnego ROI." },
+    { step: "04", title: "Uruchomienie kampanii i monitoring", desc: "Uruchamiamy reklamy i śledzimy wyniki w czasie rzeczywistym — CPM, CTR, koszt konwersji, zasięgi i wyświetlenia. Optymalizujemy stawki, grupy docelowe i kreacje wideo na podstawie danych z TikTok Ads Manager." },
     { step: "05", title: "Raportowanie wyników", desc: "Co miesiąc dostarczamy przejrzysty raport z wynikami kampanii — zasięgi, wyświetlenia, kliknięcia, konwersje, koszt pozyskania klienta i zwrot z inwestycji. Pełna transparentność rozliczenia to nasz standard pracy z każdym klientem." },
   ];
 
@@ -99,10 +99,10 @@ export default function TikTokAdsKrakow() {
               Agencja TikTok Ads Kraków
             </span>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              TikTok Ads Kraków — kampanie reklamowe, które robią zasięgi i sprzedają
+              TikTok Ads Kraków — kampanie reklamowe nastawione na zasięgi i sprzedaż
             </h1>
             <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
-              TikTok Ads Krakow — profesjonalne kampanie reklamowe TikTok dla firm z Krakowa i Małopolski. Dotrzemy do młodych odbiorców i zwiększamy sprzedaż. Bezpłatna konsultacja.</p>
+              TikTok Ads Krakow — profesjonalne kampanie reklamowe TikTok dla firm z Krakowa i Małopolski. Pomagamy dotrzeć do młodych odbiorców. Pracujemy z Poznania, firmy z Krakowa obsługujemy zdalnie. Bezpłatna konsultacja.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/kontakt" className="bg-pink-600 hover:bg-pink-700 text-white font-semibold px-8 py-3 rounded-lg transition-colors">
                 Bezpłatna konsultacja
@@ -120,10 +120,10 @@ export default function TikTokAdsKrakow() {
         <section className="bg-gray-900 text-white py-12 px-6">
           <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
-              { val: "1,5 mld", label: "aktywnych użytkowników TikToka miesięcznie" },
-              { val: "18-34", label: "dominująca grupa wiekowa użytkowników TikToka" },
-              { val: "60%", label: "użytkowników TikToka w Polsce to kobiety" },
-              { val: "15-60s", label: "optymalna długość reklamy wideo" },
+              { val: "In-Feed", label: "Spark Ads i inne formaty TikToka" },
+              { val: "Wideo", label: "kreacje przygotowane pod format TikToka" },
+              { val: "Zdalnie", label: "pracujemy z Poznania dla firm z Krakowa" },
+              { val: "Raport", label: "wyniki kampanii w przejrzystej formie" },
             ].map((s) => (
               <div key={s.label}>
                 <div className="text-3xl font-bold text-pink-400 mb-1">{s.val}</div>
@@ -168,11 +168,11 @@ export default function TikTokAdsKrakow() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
-                { title: "Zasięgi i świadomość marki", desc: "Dotrzyj do setek tysięcy użytkowników TikToka w Krakowie i całej Polsce. Kampanie zasięgowe budują rozpoznawalność marki wśród nowych odbiorców, którzy jeszcze Cię nie znają." },
-                { title: "Ruch na stronie i w sklepie internetowym", desc: "Kieruj użytkowników TikToka na landing page lub sklep online. Reklamy In-Feed Ads z call-to-action generują efektywny ruch prowadzący do realne konwersje." },
+                { title: "Zasięgi i świadomość marki", desc: "Dotrzyj do użytkowników TikToka w Krakowie i całej Polsce. Kampanie zasięgowe budują rozpoznawalność marki wśród nowych odbiorców, którzy jeszcze Cię nie znają." },
+                { title: "Ruch na stronie i w sklepie internetowym", desc: "Kieruj użytkowników TikToka na landing page lub sklep online. Reklamy In-Feed Ads z call-to-action kierują ruch tam, gdzie może dojść do konwersji." },
                 { title: "Konwersje i sprzedaż e-commerce", desc: "Kampanie z pikselem TikTok śledzą realne konwersje — zakupy, zapisy, kontakty i zamówienia. Optymalizujemy pod konkretny koszt konwersji (CPA) i zwrot z reklamy (ROAS)." },
                 { title: "Pozyskiwanie nowych klientów", desc: "Grupy Lookalike na TikToku pozwalają dotrzeć do nowych klientów podobnych do Twoich istniejących. Skuteczny sposób skalowania sprzedaży online i bazy klientów." },
-                { title: "Remarketing i odzyskiwanie koszyków", desc: "Docieraj ponownie do użytkowników, którzy odwiedzili stronę lub porzucili koszyk. Kampanie remarketingowe TikTok Ads skutecznie odzyskują porzucone zakupy i angażują." },
+                { title: "Remarketing i odzyskiwanie koszyków", desc: "Docieraj ponownie do użytkowników, którzy odwiedzili stronę lub porzucili koszyk. Kampanie remarketingowe TikTok Ads przypominają o porzuconych zakupach i ofercie." },
                 { title: "Zaangażowanie i społeczność", desc: "Spark Ads i Hashtag Challenge angażują użytkowników do interakcji z marką — komentarze, udostępnienia, duety. Buduj lojalną społeczność wokół profilu TikTok w Krakowie." },
               ].map((g) => (
                 <div key={g.title} className="bg-white rounded-xl p-6 border border-gray-200">
@@ -224,11 +224,11 @@ export default function TikTokAdsKrakow() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
-                { title: "Kreacje wideo w stylu TikToka", desc: "Tworzymy materiały wideo, które wyglądają jak natywny content — nie jak tradycyjna reklama czy spot komercyjny. To klucz do efektywnych kampanii TikTok Ads z wysokim CTR." },
+                { title: "Kreacje wideo w stylu TikToka", desc: "Tworzymy materiały wideo, które wyglądają jak natywny content — nie jak tradycyjna reklama czy spot komercyjny. Takie kreacje lepiej wpisują się w sposób, w jaki użytkownicy oglądają TikToka." },
                 { title: "Pełna obsługa TikTok Ads Manager", desc: "Konfiguracja konta, instalacja piksela, grupy odbiorców, uruchomienie kampanii — zajmujemy się całym procesem technicznym i strategicznym od A do Z." },
-                { title: "Optymalizacja oparta na danych", desc: "Śledzimy wyniki kampanii na bieżąco i optymalizujemy stawki, targetowanie i kreacje, by maksymalizować zwrot z budżetu reklamowego i osiągać cele biznesowe." },
+                { title: "Optymalizacja oparta na danych", desc: "Śledzimy wyniki kampanii na bieżąco i optymalizujemy stawki, targetowanie i kreacje, by lepiej wykorzystywać budżet reklamowy i realizować cele biznesowe." },
                 { title: "Transparentne raportowanie", desc: "Co miesiąc raport z kampanii — zasięgi, wyświetlenia, kliknięcia, konwersje i koszt pozyskania klienta. Żadnych ukrytych kosztów, pełna przejrzystość rozliczenia." },
-                { title: "Doświadczenie w e-commerce", desc: "Prowadzimy efektywne kampanie TikTok Ads dla sklepów internetowych, restauracji, salonów beauty, studiów fitness i firm usługowych z Krakowa i całej Polski." },
+                { title: "Kampanie dla e-commerce i usług", desc: "Planujemy kampanie TikTok Ads dla sklepów internetowych, restauracji, salonów beauty, studiów fitness i firm usługowych. Pracujemy z Poznania, firmy z Krakowa obsługujemy zdalnie." },
                 { title: "Kompleksowe doradztwo marketingowe", desc: "Pomagamy wybrać właściwy mix kanałów — TikTok Ads, Meta Ads, Google Ads, Facebook — dopasowany do Twoich celów i budżetu. Oferujemy też SEO i social media marketing." },
               ].map((w) => (
                 <div key={w.title} className="bg-white rounded-xl p-6 border border-gray-200">

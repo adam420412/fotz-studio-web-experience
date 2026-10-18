@@ -18,10 +18,7 @@ import {
   Award,
   Video,
   TrendingUp,
-  AlertCircle,
-  Eye,
-  Zap,
-  Star
+  AlertCircle
 } from "lucide-react";
 import { ServiceSchema, BreadcrumbSchema, FAQSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 
@@ -35,13 +32,13 @@ const services = [
   {
     icon: Search,
     title: "Pozycjonowanie SEO",
-    description: "Fotz Studio jako agencja SEO Częstochowa zwiększa widoczność firm w Google. Audyt techniczny, optymalizacja treści, link building. Specjalizacja w SEO lokalnym dla Częstochowy i rynku polskiego.",
+    description: "Fotz Studio jako agencja SEO Częstochowa zwiększa widoczność firm w Google. Audyt techniczny, optymalizacja treści, link building. SEO lokalne dla firm z Częstochowy i działania na rynku ogólnopolskim.",
     link: "/seo/pozycjonowanie"
   },
   {
     icon: Target,
     title: "Kampanie Google Ads i Facebook Ads",
-    description: "Zaawansowane kampanie marketingowe w Google Ads i Meta Ads. Konfiguracja, optymalizacja i skalowanie. Raportowanie ROAS i CPL. Budżety od 2 000 do 100 000 PLN/mies. Wyniki sprzedażowe mierzone w leadach i konwersjach.",
+    description: "Zaawansowane kampanie marketingowe w Google Ads i Meta Ads. Konfiguracja, optymalizacja i skalowanie. Raportowanie ROAS i CPL. Budżet reklamowy płacony platformom ustalamy osobno, zależnie od celu kampanii. Wyniki mierzymy w leadach i konwersjach.",
     link: "/performance-marketing/google-ads"
   },
   {
@@ -59,7 +56,7 @@ const services = [
   {
     icon: Palette,
     title: "Branding i identyfikacja wizualna",
-    description: "Budujemy i rozwijamy Twój brand. Logo, brandbook, system identyfikacji wizualnej, materiały graficzne. Spójna identyfikacja wizualna Twojej marki przekłada się na wyższe ceny i lepsze konwersje dla firm handlu i usług.",
+    description: "Budujemy i rozwijamy Twój brand. Logo, brandbook, system identyfikacji wizualnej, materiały graficzne. Spójna identyfikacja wizualna pomaga budować rozpoznawalność marki firm handlu i usług.",
     link: "/uslugi/identyfikacja-wizualna"
   }
 ];
@@ -121,19 +118,19 @@ const faqItems = [
   },
   {
     question: "Czy agencja z Poznania obsługuje klientów z Częstochowy?",
-    answer: "Tak — obsługujemy firmy z całej Polski, w tym z Częstochowy i okolic. Współpraca z klientem przebiega online (Google Meet, Teams). Przy większych kampaniach przyjeżdżamy do Częstochowy. Ponad 40% naszych klientów pochodzi spoza Poznania — format online nie wpływa na jakość i wyniki kampanii reklamowych, szczególnie dla firm handlu i usług."
+    answer: "Tak — pracujemy z Poznania, a firmy z Częstochowy i okolic obsługujemy zdalnie. Współpraca przebiega online (Google Meet, Teams), a materiały i raporty udostępniamy w jednym miejscu. Jeśli projekt wymaga zdjęć lub filmu na miejscu, ustalamy termin realizacji w Częstochowie."
   },
   {
     question: "Ile kosztuje agencja marketingowa w Częstochowie?",
-    answer: "Ceny zależą od zakresu usług. Pojedynczy kanał (np. pozycjonowania SEO lub kampanie Meta) to od 1 500–3 000 PLN/mies. Kompleksowa obsługa marketingowa — SEO, Google Ads, social media — od 5 000–15 000 PLN/mies. Każdą wycenę poprzedzamy bezpłatną konsultacją. Uważaj na reklama agencji w stylu 'kompleksowy marketing od 299 PLN' — zwykle oznacza brak strategii biznesowej."
+    answer: "Wycenę przygotowujemy po rozmowie o zakresie. Zależy ona od liczby kanałów (np. tylko SEO albo tylko kampanie Meta vs. kompleksowa obsługa SEO, Google Ads i social media), ilości treści i kreacji, częstotliwości raportowania oraz konkurencji w branży. Budżet reklamowy płacony platformom (Google, Meta) jest zawsze osobną pozycją. Każdą wycenę poprzedzamy bezpłatną konsultacją. Uważaj na oferty „kompleksowego marketingu” za symboliczną kwotę — zwykle oznaczają brak strategii biznesowej."
   },
   {
     question: "Marketing dla firm w Częstochowie — jak agencja powinna być zbudowana?",
-    answer: "Częstochowa to miasto o bogatej historii i turystyce pielgrzymkowej — Jasna Góra przyciąga turystów. Sektor usług i handlu stanowią istotną część gospodarki. Marketing dla firm handlu, hoteli i usług wymaga innego podejścia niż dla startupów tech — focus na local SEO, Google Moja Firma, kampanie dla turystów i mieszkańców. Agencja powinna rozumieć specyfikę pielgrzymkowej turystyki i sezońności biznesu. Specjalizujemy się w marketingu dla firm z Częstochowy."
+    answer: "Częstochowa to miasto o bogatej historii i turystyce pielgrzymkowej — Jasna Góra przyciąga turystów. Sektor usług i handlu stanowią istotną część gospodarki. Marketing dla firm handlu, hoteli i usług wymaga innego podejścia niż dla startupów tech — focus na local SEO, Google Moja Firma, kampanie dla turystów i mieszkańców. Agencja powinna rozumieć specyfikę pielgrzymkowej turystyki i sezońności biznesu. Pracujemy z Poznania, a firmy z Częstochowy obsługujemy zdalnie — specyfikę Twojego rynku poznajemy na starcie współpracy."
   },
   {
     question: "Jakie kampanie reklamowe warto prowadzić dla firmy z Częstochowy?",
-    answer: "Częstochowa to ważny ośrodek pielgrzymkowy, handlu i usług — 220 tysięcy mieszkańców, atrakcja turystyczna Jasna Góra, dynamicznie rozwijające się przedsiębiorstwa. Dla firm handlowych i usługowych skuteczne są: kampanie Google My Business i local SEO (dla turystów i lokalnych klientów), Google Ads na local search, Facebook i Instagram dla promocji sezonu turystycznego, kampanie remarketing dla wracających gości. Dla e-commerce — Google Shopping i kampanie Meta. Dobieramy strategie do celu i budżetu każdego klienta."
+    answer: "Częstochowa to ważny ośrodek pielgrzymkowy, handlu i usług — z Jasną Górą jako atrakcją turystyczną i wieloma lokalnymi przedsiębiorstwami. Dla firm handlowych i usługowych skuteczne są: kampanie Google My Business i local SEO (dla turystów i lokalnych klientów), Google Ads na local search, Facebook i Instagram dla promocji sezonu turystycznego, kampanie remarketing dla wracających gości. Dla e-commerce — Google Shopping i kampanie Meta. Dobieramy strategie do celu i budżetu każdego klienta."
   },
   {
     question: "Czym różni się agencja marketingowa od agencji reklamowej?",
@@ -144,7 +141,6 @@ const faqItems = [
 const pricingPackages = [
   {
     name: "START",
-    price: "1 500",
     description: "Dla firm zaczynających przygodę z marketingiem cyfrowym",
     features: [
       "Google My Business optymalizacja",
@@ -157,7 +153,6 @@ const pricingPackages = [
   },
   {
     name: "ROZWÓJ",
-    price: "3 500",
     description: "Dla firm chcących skalować kampanie i budować widoczność",
     features: [
       "SEO + Local SEO",
@@ -171,7 +166,6 @@ const pricingPackages = [
   },
   {
     name: "PREMIUM",
-    price: "7 000",
     description: "Kompleksowy marketing cyfrowy pełnego zakresu",
     features: [
       "SEO + Local SEO + Link building",
@@ -230,14 +224,13 @@ export default function AgencjaMarketingowaCzestochowa() {
 
             <p className="text-lg md:text-xl text-muted-foreground mb-6 max-w-2xl mx-auto">
               Kompleksowy marketing internetowy dla firm z Częstochowy. SEO, Google Ads,
-              social media, strony internetowe i wideo — wszystko w jednej agencji. Fotz Studio to profesjonalna agencja reklamowa Częstochowa
-              i agencja digital łącząca kreatywność z analityką danych.
+              social media, strony internetowe i wideo — wszystko w jednej agencji. Fotz Studio to agencja z Poznania, która obsługuje firmy z Częstochowy
+              zdalnie, łącząc kreatywność z analityką danych.
             </p>
 
             <p className="text-base text-muted-foreground/80 mb-10 max-w-xl mx-auto">
-              Częstochowa to 220 tysięcy mieszkańców, ważny ośrodek pielgrzymkowy (Jasna Góra),
-              dynamicznie rozwijający się sektor handlu i usług, bliskość dużych miast (Wrocław, Poznań, Kraków).
-              Firmy, które inwestują w profesjonalne kampanie marketingowe, systematycznie zyskują nowych klientów.
+              Częstochowa to ważny ośrodek pielgrzymkowy (Jasna Góra) z rozwiniętym sektorem handlu i usług.
+              Działania marketingowe planujemy pod lokalnych klientów, turystów i odbiorców z całej Polski.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -259,10 +252,10 @@ export default function AgencjaMarketingowaCzestochowa() {
         <div className="container px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto text-center">
             {[
-              { value: "5+ lat", label: "doświadczenia na rynku polskim" },
-              { value: "120+", label: "klientów z całej Polski" },
-              { value: "+320%", label: "średni wzrost ruchu w kampaniach" },
-              { value: "4.9/5", label: "średnia ocen klientów" }
+              { value: "Poznań", label: "stąd pracujemy" },
+              { value: "Zdalnie", label: "obsługa firm z Częstochowy" },
+              { value: "Full-service", label: "strony, SEO, Ads, social, wideo" },
+              { value: "Raporty", label: "regularne omówienie wyników" }
             ].map((s, i) => (
               <div key={i}>
                 <div className="text-3xl md:text-4xl font-heading font-bold text-primary mb-1">{s.value}</div>
@@ -279,11 +272,11 @@ export default function AgencjaMarketingowaCzestochowa() {
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-14">
               <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                Dlaczego klienci z Częstochowy{" "}
-                <span className="text-gradient">wybierają Fotz Studio?</span>
+                Dlaczego warto{" "}
+                <span className="text-gradient">współpracować z Fotz Studio?</span>
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Nie jesteśmy najtańszą agencją — jesteśmy jedną z najlepszych agencji marketingowych w Częstochowie pod względem wyników.
+                Nie jesteśmy najtańszą agencją — stawiamy na strategię i mierzalne działania.
                 Łączymy profesjonalizm i kreatywność, by budować trwałą widoczność Twojej marki i wyniki sprzedażowe,
                 które realnie przekładają się na biznes.
               </p>
@@ -299,12 +292,12 @@ export default function AgencjaMarketingowaCzestochowa() {
                 {
                   icon: Users,
                   title: "Ekspert, nie rotujący junior",
-                  desc: "Masz stały kontakt z ekspertem znającym Twój biznes i rynkową specyfikę Częstochowy. Budujesz relację i wiedzę — nie zaczynasz od nowa po każdej rotacji. Twój opiekun zna Twoje kampanie od wewnątrz."
+                  desc: "Masz stały kontakt z osobą, która prowadzi Twoje działania i poznaje specyfikę Twojego rynku. Budujesz relację i wiedzę — nie zaczynasz od nowa po każdej rotacji. Twój opiekun zna Twoje kampanie od wewnątrz."
                 },
                 {
                   icon: Award,
-                  title: "Kompleksowy marketing bez podwykonawców",
-                  desc: "Pełne wsparcie i kompleksowe usługi z zakresu SEO, Google Ads, social media, stron i wideo — wszystko wewnętrznie. Kompleksowe rozwiązania marketingowe pod jednym dachem. Dedykowany zespół specjalistów, jedna faktura."
+                  title: "Kompleksowy marketing w jednym miejscu",
+                  desc: "SEO, Google Ads, social media, strony i wideo koordynujemy po naszej stronie. Jeden punkt kontaktu, spójna strategia we wszystkich kanałach, jedna faktura."
                 }
               ].map((item, i) => (
                 <div key={i} className="p-6 rounded-2xl border border-border/40 bg-card/20">
@@ -404,10 +397,10 @@ export default function AgencjaMarketingowaCzestochowa() {
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-14">
               <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                Pakiety usług dla firm z Częstochowy
+                Przykładowe zakresy współpracy dla firm z Częstochowy
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Trzy pakiety zaplanowane dla różnych etapów rozwoju Twojego biznesu. Każdy pakiet zawiera konsultacje i dedykowane wsparcie.
+                Trzy przykładowe zakresy dla różnych etapów rozwoju biznesu. Wycenę przygotowujemy po rozmowie o zakresie, liczbie kanałów i ilości treści.
               </p>
             </div>
 
@@ -417,8 +410,7 @@ export default function AgencjaMarketingowaCzestochowa() {
                   <div className="p-6 pb-4">
                     <h3 className="font-heading font-bold text-xl mb-2">{pkg.name}</h3>
                     <div className="mb-2">
-                      <span className="text-4xl font-heading font-bold text-primary">{pkg.price}</span>
-                      <span className="text-muted-foreground"> zł/mies</span>
+                      <span className="text-lg font-heading font-semibold text-primary">Wycena po rozmowie o zakresie</span>
                     </div>
                     <p className="text-sm text-muted-foreground">{pkg.description}</p>
                   </div>
@@ -445,7 +437,7 @@ export default function AgencjaMarketingowaCzestochowa() {
               <div className="flex items-start gap-3">
                 <AlertCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                 <p className="text-sm text-muted-foreground">
-                  <strong className="text-foreground">Każdy pakiet zawiera:</strong> bezpłatną wstępną konsultację, strategię indywidualną, raportowanie miesięczne, dostęp do raportów online i dedykowany email ekspertów. Wszystkie pakiety mogą być rozszerzone o dodatkowe usługi.
+                  <strong className="text-foreground">Każdy zakres obejmuje:</strong> bezpłatną wstępną konsultację, strategię indywidualną, raportowanie miesięczne i dostęp do raportów online. Zakres można rozszerzyć o dodatkowe usługi. Budżet reklamowy płacony platformom (Google, Meta) jest zawsze rozliczany osobno.
                 </p>
               </div>
             </div>
@@ -505,7 +497,7 @@ export default function AgencjaMarketingowaCzestochowa() {
               </Button>
             </div>
             <p className="text-white/50 text-xs mt-6">
-              Odpowiadamy w ciągu 24 godzin · Bez sprzedaży pod presją · Indywidualne podejście do każdego klienta
+              Bez sprzedaży pod presją · Indywidualne podejście do każdego klienta
             </p>
           </div>
         </div>
@@ -541,12 +533,12 @@ export default function AgencjaMarketingowaCzestochowa() {
         <div className="container mx-auto px-4">
           <div className="prose prose-lg max-w-none">
             <h2 className="text-3xl font-heading font-bold mb-6">Agencja marketingowa Częstochowa — marketing internetowy dla firm</h2>
-            <p className="text-muted-foreground mb-4">Fotz Studio to agencja marketingowa Częstochowa oferująca kompleksowe usługi marketingu cyfrowego dla firm z Częstochowy i regionu. Strategie marketingu cyfrowego, które tworzymy, łączą SEO, kampanie PPC, social media marketing i content marketing w spójny ekosystem, generujący leady i sprzedaż.</p>
-            <p className="text-muted-foreground mb-6">Częstochowa to dynamiczne miasto — 220 tysięcy mieszkańców, ważny ośrodek pielgrzymkowy (Jasna Góra przyciąga turystów z całej Polski i Europy), rozwijający się sektor handlu i usług, dobra dostępność do dużych miast (Wrocław, Poznań, Kraków). Agencja marketingowa w Częstochowie musi znać specyfikę rynku turystycznego i lokalnego biznesu, dysponować narzędziami, które pozwolą Twojej firmie wyróżnić się na tle konkurencji.</p>
+            <p className="text-muted-foreground mb-4">Fotz Studio to agencja marketingowa z Poznania, która zdalnie obsługuje firmy z Częstochowy i regionu w zakresie marketingu cyfrowego. Strategie marketingu cyfrowego, które tworzymy, łączą SEO, kampanie PPC, social media marketing i content marketing w spójny ekosystem, generujący leady i sprzedaż.</p>
+            <p className="text-muted-foreground mb-6">Częstochowa to ważny ośrodek pielgrzymkowy (Jasna Góra przyciąga turystów z całej Polski i Europy) z rozwiniętym sektorem handlu i usług. Agencja marketingowa w Częstochowie musi znać specyfikę rynku turystycznego i lokalnego biznesu, dysponować narzędziami, które pozwolą Twojej firmie wyróżnić się na tle konkurencji.</p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">Marketing cyfrowy dla firm z Częstochowy — SEO, Google Ads i social media</h2>
             <p className="text-muted-foreground mb-4">Oferujemy: pozycjonowanie stron internetowych w Częstochowie, kampanie Google Ads (search, shopping, display), obsługę Social Media (Facebook, Instagram, LinkedIn dla B2B, TikTok), tworzenie stron internetowych Częstochowa i sklepów e-commerce, email marketing i marketing automation.</p>
-            <p className="text-muted-foreground">Agencja marketingowa Częstochowa z podejściem data-driven — analizujemy dane, by optymalizować każdy aspekt Twojej obecności online. Raporty efektywności kampanii, monitorowanie ruchu na stronie i analiza konwersji to elementy naszej standardowej usługi. Specjalizujemy się w marketingu dla hoteli, restauracji, handlu, e-commerce i firm usługowych. Skontaktuj się — bezpłatna konsultacja dla firm z Częstochowy.</p>
+            <p className="text-muted-foreground">Agencja marketingowa Częstochowa z podejściem data-driven — analizujemy dane, by optymalizować każdy aspekt Twojej obecności online. Raporty efektywności kampanii, monitorowanie ruchu na stronie i analiza konwersji to elementy naszej standardowej usługi. Strategie przygotowujemy m.in. dla hoteli, restauracji, handlu, e-commerce i firm usługowych. Skontaktuj się — bezpłatna konsultacja dla firm z Częstochowy.</p>
 
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
               <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">Pozycjonowanie stron</Link>

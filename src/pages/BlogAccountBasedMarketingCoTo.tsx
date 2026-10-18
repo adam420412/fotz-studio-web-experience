@@ -103,7 +103,7 @@ export default function BlogAccountBasedMarketingCoTo() {
 
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Account-Based Marketing", url: "https://www.fotz-studio.pl" }]}/>
+          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Account-Based Marketing", url: "/blog/account-based-marketing-co-to" }]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Account-Based Marketing (ABM) — co to jest i jak wdrożyć?
           </h1>

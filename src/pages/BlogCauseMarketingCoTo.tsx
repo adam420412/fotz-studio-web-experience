@@ -108,7 +108,7 @@ export default function BlogCauseMarketingCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Cause Marketing", url: "https://www.fotz-studio.pl" },
+              { name: "Cause Marketing", url: "/blog/cause-marketing-co-to" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Cause Marketing — co to jest i jak działa?

@@ -127,7 +127,7 @@ export default function BlogBrandAmbassadorCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Brand Ambassador", url: "https://www.fotz-studio.pl" },
+              { name: "Brand Ambassador", url: "/blog/brand-ambassador-co-to" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Brand Ambassador — co to jest i jak budować program ambasadorski?

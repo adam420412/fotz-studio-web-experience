@@ -108,7 +108,7 @@ export default function BlogBuyerPersonaCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Buyer Persona", url: "https://www.fotz-studio.pl" },
+              { name: "Buyer Persona", url: "/blog/buyer-persona-co-to" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Buyer Persona — co to jest i jak ją tworzyć?

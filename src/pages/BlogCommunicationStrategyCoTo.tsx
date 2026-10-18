@@ -109,7 +109,7 @@ export default function BlogCommunicationStrategyCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Strategia Komunikacji", url: "https://www.fotz-studio.pl" },
+              { name: "Strategia Komunikacji", url: "/blog/strategia-komunikacji-co-to" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Strategia komunikacji — co to jest i jak ją budować?

@@ -133,7 +133,7 @@ export default function BlogMarketingMixCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Marketing Mix", url: "https://www.fotz-studio.pl" },
+              { name: "Marketing Mix", url: "/blog/marketing-mix-co-to" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Marketing Mix — co to jest? 4P i 7P w strategii marketingowej

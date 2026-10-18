@@ -32,55 +32,51 @@ const faqItems = [
   {
     question: "Ile kosztuje pozycjonowanie w Kielcach?",
     answer:
-      "Pozycjonowanie SEO w Kielcach zaczyna się od 1 000 zł netto miesięcznie — to jedna z najtańszych lokalizacji w Polsce. Dla firm targów, budownictwa czy e-commerce koszt wynosi 1 800–4 000 zł/mies. Bardzo niska konkurencja SEO oznacza szybkie efekty i niskie koszty.",
+      "Wycenę przygotowujemy po rozmowie o zakresie i audycie strony. Koszt zależy od liczby fraz, konkurencyjności branży, stanu technicznego strony oraz ilości treści i linków do przygotowania. Nie podajemy stałej ceny przed poznaniem projektu.",
   },
   {
     question: "Ile czasu trwa pozycjonowanie w Kielcach?",
     answer:
-      "Kielce ma jedną z najniższych konkurencji SEO w Polsce. Pierwsze efekty widoczne są po 2–3 miesiącach. Stabilne pozycje TOP 5 dla większości fraz lokalnych osiągamy w 2–4 miesięcy. To jeden z najszybciej rosnących rynków SEO.",
+      "SEO to proces rozłożony na miesiące, a tempo zależy od konkurencji w danej branży, historii domeny i zakresu prac. Nie gwarantujemy konkretnej pozycji ani terminu jej osiągnięcia — po audycie pokazujemy realny plan działań i raportujemy postępy.",
   },
   {
     question: "Czy pozycjonujecie firmy targów Kielce?",
     answer:
-      "Tak — Targi Kielce to drugi co do wielkości ośrodek targowy w Polsce. Obsługujemy wystawców, organizatorów targów, agencje eventowe i firmy logistyczne. Znamy specyfikę B2B SEO dla branży targowej i eventowej.",
+      "Tak — możemy prowadzić SEO dla wystawców, organizatorów wydarzeń, agencji eventowych i firm logistycznych związanych z Targami Kielce. Pracujemy z Poznania, a firmy z Kielc obsługujemy zdalnie.",
   },
   {
     question: "Jakie branże pozycjonujemy w Kielcach?",
     answer:
-      "Doświadczenie mamy w: targach (Targi Kielce), budownictwie (marmury, wapień), handlu, nieruchomościach, edukacji (UJK), gastronomii, produkcji i e-commerce. Kielce to silny ośrodek SME i usług.",
+      "Pracujemy z firmami usługowymi, handlowymi, produkcyjnymi i e-commerce. W Kielcach mogą to być m.in. firmy związane z targami, budownictwem i kamieniarstwem, nieruchomościami, edukacją czy gastronomią — strategię dopasowujemy do branży po audycie.",
   },
   {
     question: "Jaki jest potencjał Kieleckiego Parku Technologicznego?",
     answer:
-      "Kielecki Park Technologiczny przyciąga startup'y i firmy tech. Frazy takie jak \"biuro coworking Kielce\", \"IT support Kielce\" czy \"web developer Kielce\" mają rosnące wyszukiwania. SEO dla tech startup'ów to naszych specjalność.",
+      "Kielecki Park Technologiczny skupia startupy i firmy technologiczne. Dla takich firm sprawdzamy w narzędziach realny wolumen fraz typu \"biuro coworking Kielce\", \"IT support Kielce\" czy \"web developer Kielce\" i na tej podstawie planujemy treści.",
   },
   {
     question: "Czy Kielce to dobry rynek dla firm B2B?",
     answer:
-      "Bardzo dobry — Targi Kielce przyciągają kupców z całej Polski i zagranicy. B2B w Kielcach ma niższą konkurencję niż B2C. Dla firm B2B rekomendujemy SEO long-tail i content marketing.",
+      "Targi Kielce przyciągają kupców z całej Polski i zagranicy, więc firmy B2B mają tu naturalny punkt odniesienia. Poziom konkurencji sprawdzamy dla konkretnych fraz w audycie. Dla firm B2B zwykle rekomendujemy SEO long-tail i content marketing.",
   },
   {
     question: "Jakie są trendy w handlu i nieruchomościach w Kielcach?",
     answer:
-      "Nieruchomości w Kielcach rosną — mieszkańcy przyjeżdzają z Warszawy. Frazy takie jak \"mieszkanie Kielce\", \"biuro wynajęcie Kielce\" i \"lokal usługowy Kielce\" mają duży potencjał. Dla agencji nieruchomości SEO to musi.",
+      "Dla agencji nieruchomości i deweloperów sprawdzamy frazy takie jak \"mieszkanie Kielce\", \"biuro wynajem Kielce\" i \"lokal usługowy Kielce\" — ich potencjał oceniamy na podstawie danych z narzędzi SEO, a nie założeń.",
   },
   {
     question: "Jakie są czynniki różniące Kielce od większych miast?",
     answer:
-      "Kielce ma: 1) bardzo niską konkurencję SEO (3–5x niższą niż Warszawa), 2) niższe budżety startowe (od 1 000 zł/mies.), 3) szybkie pozycje (2–3 mies.), 4) silne B2B (Targi, budownictwo, tech), 5) rosnący handel online. To idealne dla startupów i małych firm.",
+      "W mniejszym mieście część fraz lokalnych bywa mniej konkurencyjna niż w Warszawie czy Krakowie, ale zależy to od branży — dlatego poziom konkurencji, zakres prac i budżet ustalamy po audycie. Kielce mają też silne zaplecze B2B (targi, budownictwo, technologie).",
   },
 ];
 
 const PozycjonowanieKielce = () => {
   const results = [
-    {
-      metric: "+190%",
-      label: "Wzrost ruchu organicznego",
-      context: "producent wyrobów kamieniowych Kielce",
-    },
-    { metric: "TOP 5", label: "Pozycja w Google", context: "frazy lokalne Kielce" },
-    { metric: "2 mies.", label: "Czas do pierwszej strony", context: "niska konkurencja" },
-    { metric: "4,7/5", label: "Ocena klientów", context: "6 opinii" },
+    { metric: "Audyt", label: "Punkt wyjścia", context: "technika, treści, konkurencja" },
+    { metric: "Frazy", label: "Lokalne i branżowe", context: "Kielce i Świętokrzyskie" },
+    { metric: "Raporty", label: "Pozycje i ruch", context: "regularnie, w ustalonym rytmie" },
+    { metric: "Zdalnie", label: "Pracujemy z Poznania", context: "obsługa firm z Kielc" },
   ];
 
   const districts = [
@@ -107,7 +103,7 @@ const PozycjonowanieKielce = () => {
     <Layout>
       <SEOHead
         title="Pozycjonowanie Kielce — Agencja SEO | Fotz Studio"
-        description="Pozycjonowanie stron Kielce. Agencja SEO Fotz Studio — audyt SEO, optymalizacja, link building. Niski SEO competition = szybkie wyniki. Bezpłatna konsultacja SEO!"
+        description="Pozycjonowanie stron Kielce. Agencja SEO Fotz Studio — audyt SEO, optymalizacja, link building. Pracujemy z Poznania, firmy z Kielc obsługujemy zdalnie. Bezpłatna konsultacja SEO!"
         canonical="https://www.fotz-studio.pl/uslugi/pozycjonowanie/kielce"
         keywords="pozycjonowanie kielce, agencja seo kielce, seo kielce, pozycjonowanie stron kielce, seo dla firm kielce, seo świętokrzyskie, pozycjonowanie lokalne kielce"
       />
@@ -161,7 +157,7 @@ const PozycjonowanieKielce = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto"
             >
-              Pomagamy firmom z Kielc zdobyć pierwszą stronę Google. Kielce to Targi (drugi co do wielkości w Polsce), budownictwo i rosnący rynek tech. Niiska konkurencja SEO = szybkie wyniki. Audyt SEO, optymalizacja i link building.
+              Pomagamy firmom z Kielc zwiększać widoczność w Google. Kielce to Targi Kielce, budownictwo i rozwijający się sektor technologiczny. Pracujemy z Poznania, firmy z Kielc obsługujemy zdalnie. Audyt SEO, optymalizacja i link building.
             </motion.p>
 
             <motion.div
@@ -188,7 +184,7 @@ const PozycjonowanieKielce = () => {
               transition={{ delay: 0.5 }}
               className="flex flex-wrap justify-center gap-6 mt-12 text-sm text-muted-foreground"
             >
-              {["White-hat SEO", "B2B focus", "Google Analytics 4", "Raport co 2 tygodnie"].map(
+              {["White-hat SEO", "B2B focus", "Google Analytics 4", "Regularne raporty"].map(
                 (item) => (
                   <div key={item} className="flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-primary" />
@@ -233,18 +229,18 @@ const PozycjonowanieKielce = () => {
                 <p>
                   Kielce to <strong className="text-foreground">ok. 190 tys. mieszkańców</strong> i miasto
                   z unikalnym profitem biznesowym. <strong className="text-foreground">Targi Kielce</strong> to
-                  drugi co do wielkości ośrodek targowy w Polsce (po MTP w Warszawie) — przyciąga tysiące
-                  wystawców i kupców rocznie.
+                  jeden z ważnych ośrodków targowych w Polsce, który przyciąga wystawców i kupców
+                  z całego kraju.
                 </p>
                 <p>
                   Branża <strong className="text-foreground">budownictwa i kamienia</strong> ma głębokie korzenie
                   w Kielcach — marmury, wapień i granit. Dodatkowo Kielecki Park Technologiczny przyciąga
-                  startup'y. Uniwersytet Jana Kochanowskiego (UJK) to <strong className="text-foreground">15 tys. studentów</strong>.
+                  startup'y. W mieście działa też <strong className="text-foreground">Uniwersytet Jana Kochanowskiego (UJK)</strong>.
                 </p>
                 <p>
-                  <strong className="text-foreground">Niisa konkurencja SEO w Kielcach</strong> to ogromna szansa.
-                  Firmy, które wdrażają SEO wcześnie, zdominują lokalny rynek zanim konkurencja się obudzi.
-                  Dla startupów i małych firm to idealne miejsce do rozpoczęcia SEO.
+                  <strong className="text-foreground">Konkurencja SEO w Kielcach</strong> zależy od branży —
+                  w części fraz lokalnych bywa mniejsza niż w największych miastach. Sprawdzamy to w audycie,
+                  zanim zaproponujemy zakres prac. Pracujemy z Poznania, firmy z Kielc obsługujemy zdalnie.
                 </p>
               </div>
             </FadeInView>
@@ -281,8 +277,8 @@ const PozycjonowanieKielce = () => {
               Branże, które pozycjonujemy w Kielcach
             </h2>
             <p className="text-muted-foreground max-w-xl mx-auto">
-              Od targów po tech — mamy doświadczenie
-              w sektorach typowych dla Kielc.
+              Od targów po tech — strategię dopasowujemy
+              do sektorów typowych dla Kielc.
             </p>
           </FadeInView>
 
@@ -315,7 +311,7 @@ const PozycjonowanieKielce = () => {
               {
                 step: "01",
                 title: "Konsultacja i zakres audytu SEO",
-                desc: "Analizujemy Twoją stronę pod kątem fraz lokalnych (Kielce, Świętokrzyskie). Patrzysz na konkurencję — w Kielcach jest niska.",
+                desc: "Analizujemy Twoją stronę pod kątem fraz lokalnych (Kielce, Świętokrzyskie). Sprawdzamy, jak silna jest konkurencja w Twojej branży.",
               },
               {
                 step: "02",
@@ -330,7 +326,7 @@ const PozycjonowanieKielce = () => {
               {
                 step: "04",
                 title: "Raportowanie i skalowanie",
-                desc: "Co 2 tygodnie raportujemy pozycje i ruch. Dzięki niskiej konkurencji, wzrost jest szybki — możesz skalować na kolejne frazy.",
+                desc: "Regularnie raportujemy pozycje i ruch. Gdy wybrane frazy przynoszą efekty, możesz rozszerzyć działania na kolejne.",
               },
             ].map((step, i) => (
               <FadeInView key={i} delay={i * 0.1}>
@@ -356,11 +352,11 @@ const PozycjonowanieKielce = () => {
         <div className="container mx-auto px-4 text-center">
           <FadeInView>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Gotowy na pierwszą stronę Google w Kielcach?
+              Chcesz zwiększyć widoczność w Google w Kielcach?
             </h2>
             <p className="text-primary-foreground/80 text-lg mb-8 max-w-xl mx-auto">
-              Zapytaj o audyt SEO — zakres i wycenę ustalimy na bezpłatnej konsultacji. Bardzo niska konkurencja w Kielcach = szybkie wyniki.
-              Przeanalizujemy Twoje frazy i pokażemy, jak zdominować lokalny rynek.
+              Zapytaj o audyt SEO — zakres i wycenę ustalimy na bezpłatnej konsultacji.
+              Przeanalizujemy Twoje frazy i konkurencję i zaproponujemy realny plan działań.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" asChild className="text-base px-8">

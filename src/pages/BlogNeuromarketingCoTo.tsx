@@ -109,7 +109,7 @@ export default function BlogNeuromarketingCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Neuromarketing", url: "https://www.fotz-studio.pl" },
+              { name: "Neuromarketing", url: "/blog/neuromarketing-co-to" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Neuromarketing — co to jest i jak stosować?

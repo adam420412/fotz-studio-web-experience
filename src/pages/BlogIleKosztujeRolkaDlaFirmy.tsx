@@ -9,16 +9,16 @@ const faqItems = [
   {
     question: "Ile kosztuje jedna rolka dla firmy?",
     answer:
-      "Od 1 900 zł netto. W cenie: scenariusz, nagranie, montaż, napisy i formaty pod różne platformy (Instagram, TikTok, YouTube).",
+      "To zależy od zakresu: liczby lokalizacji, czasu nagrań, tego, kto występuje, oraz liczby wersji i formatów. Konkretną wycenę podajemy po krótkiej rozmowie o tym, czego potrzebujesz. Zwykle w zakres wchodzi scenariusz, nagranie, montaż, napisy i formaty pod różne platformy (Instagram, TikTok, YouTube).",
   },
   {
     question: "Jak obniżyć koszt pojedynczej rolki?",
     answer:
-      "Seria. 10 rolek z jednego dnia zdjęciowego kosztuje 12 000 zł netto, czyli 1 200 zł za rolkę zamiast 1 900 zł.",
+      "Seria. Gdy z jednego dnia zdjęciowego powstaje kilka lub kilkanaście rolek, koszt dojazdu, sprzętu i przygotowania rozkłada się na więcej materiałów, więc pojedyncza rolka wychodzi taniej niż przy osobnych realizacjach.",
   },
   {
-    question: "Czy podane ceny zawierają VAT?",
-    answer: "Nie, wszystkie ceny są netto. Do faktury doliczamy VAT.",
+    question: "Czy wycena zawiera VAT?",
+    answer: "Wyceny podajemy netto. Do faktury doliczamy VAT.",
   },
   {
     question: "Czy mogę sprawdzić jakość przed zamówieniem?",
@@ -34,13 +34,13 @@ export default function BlogIleKosztujeRolkaDlaFirmy() {
     <Layout>
       <SEOHead
         title="Ile kosztuje produkcja rolki dla firmy? Cennik video 2026"
-        description="Ile kosztuje rolka dla firmy? Pojedyncza od 1 900 zł netto, seria 10 rolek za 12 000 zł netto. Zobacz cennik produkcji video 2026 i co wpływa na cenę."
+        description="Ile kosztuje rolka dla firmy? Sprawdź, co wpływa na cenę produkcji video: dni zdjęciowe, lokalizacje, scenariusz, występujący, liczba wersji. Seria czy pojedyncza rolka?"
         canonical={CANONICAL}
         keywords="cennik produkcji video, ile kosztuje rolka, produkcja rolek dla firm, video marketing cennik, rolki na Instagram cena"
       />
       <ArticleSchema
         title="Ile kosztuje produkcja rolki dla firmy? Cennik video 2026"
-        description="Konkretne ceny produkcji rolek dla firm w 2026: pojedyncza rolka od 1 900 zł netto, seria 10 rolek 12 000 zł netto. Co wpływa na koszt produkcji video."
+        description="Od czego zależy cena produkcji rolek dla firm: dni zdjęciowe, lokalizacje, scenariusz, występujący i liczba formatów. Kiedy opłaca się seria, a kiedy pojedyncza rolka."
         url={CANONICAL}
         datePublished="2026-07-03"
       />
@@ -70,7 +70,7 @@ export default function BlogIleKosztujeRolkaDlaFirmy() {
               Ile kosztuje produkcja rolki dla firmy? Cennik video 2026
             </h1>
             <p className="text-xl text-gray-300 mb-8 max-w-3xl">
-              Krótka odpowiedź: pojedyncza rolka kosztuje od 1 900 zł netto, a seria 10 rolek z jednego dnia zdjęciowego 12 000 zł netto. Dłuższa odpowiedź zależy od tego, co kręcimy, gdzie i ile materiałów potrzebujesz.
+              Krótka odpowiedź: to zależy od tego, co kręcimy, gdzie i ile materiałów potrzebujesz. Poniżej rozpisujemy, co realnie wpływa na cenę i kiedy seria wychodzi korzystniej niż pojedyncza rolka.
             </p>
           </div>
         </div>
@@ -79,17 +79,17 @@ export default function BlogIleKosztujeRolkaDlaFirmy() {
       <article className="max-w-3xl mx-auto px-4 py-16 prose prose-lg">
         <FadeInView>
           <p className="lead text-lg text-gray-700">
-            Krótka odpowiedź: pojedyncza rolka kosztuje od 1 900 zł netto, a seria 10 rolek z jednego dnia zdjęciowego 12 000 zł netto. Dłuższa odpowiedź zależy od tego, co kręcimy, gdzie i ile materiałów potrzebujesz. Poniżej cały cennik, bez gwiazdek i ukrytych kosztów.
+            Nie ma jednej ceny rolki dla każdej firmy. Koszt zależy od tego, co kręcimy, gdzie i ile materiałów potrzebujesz. Poniżej opisujemy czynniki, które składają się na wycenę, żebyś wiedział, o co pytać i jak zaplanować budżet.
           </p>
 
-          <h2>Ile kosztuje rolka w 2026? Konkretne ceny</h2>
+          <h2>Ile kosztuje rolka w 2026? Od czego zależy wycena</h2>
           <ul>
-            <li><strong>Pojedyncza rolka</strong>: od 1 900 zł netto. W cenie scenariusz, nagranie, montaż, napisy i formaty pod Instagram, TikTok i YouTube.</li>
-            <li><strong>Seria 10 rolek z jednego dnia zdjęciowego</strong>: 12 000 zł netto, wychodzi 1 200 zł za rolkę.</li>
-            <li><strong>Pakiet Premiery</strong>: 2 900 zł netto, gdy wprowadzasz nowy produkt lub usługę.</li>
-            <li><strong>Stała współpraca z prowadzeniem social media</strong>: abonamenty od 2 500 zł netto miesięcznie.</li>
+            <li><strong>Pojedyncza rolka</strong>: zwykle obejmuje scenariusz, nagranie, montaż, napisy i formaty pod Instagram, TikTok i YouTube. Cena zależy od czasu nagrań i stopnia skomplikowania.</li>
+            <li><strong>Seria rolek z jednego dnia zdjęciowego</strong>: koszt przygotowania i dojazdu rozkłada się na wiele materiałów, więc jedna rolka wychodzi taniej.</li>
+            <li><strong>Materiał na premierę</strong>: gdy wprowadzasz nowy produkt lub usługę, często potrzeba kilku wersji i formatów naraz, co wpływa na zakres montażu.</li>
+            <li><strong>Stała współpraca z prowadzeniem social media</strong>: rozliczana miesięcznie, a cena zależy od liczby publikacji i zakresu obsługi.</li>
           </ul>
-          <p>Wszystkie ceny są netto.</p>
+          <p>Wycenę podajemy po rozmowie o zakresie, w kwotach netto.</p>
 
           <h2>Co wpływa na koszt produkcji video</h2>
           <ol>
@@ -101,15 +101,15 @@ export default function BlogIleKosztujeRolkaDlaFirmy() {
 
           <h2>Jedna rolka czy seria? Policzmy</h2>
           <p>
-            Jedna rolka od 1 900 zł ma sens na test lub konkretną okazję. Jeśli publikujesz regularnie, seria wygrywa: 10 rolek za 12 000 zł to 1 200 zł za sztukę, o 700 zł mniej niż pojedyncza realizacja.
+            Jedna rolka ma sens na test lub konkretną okazję. Jeśli publikujesz regularnie, seria zwykle wygrywa: z jednego dnia zdjęciowego powstaje wiele materiałów, a koszt przygotowania, dojazdu i sprzętu dzieli się na wszystkie, więc cena za sztukę spada.
           </p>
           <p>
-            Regularność to nie teoria: prowadzimy w całości Instagram Enea Stadionu, a nasze materiały generują <strong>ponad 3 mln wyświetleń miesięcznie</strong>. Ten wynik robi seria publikowana tydzień po tygodniu, nie jeden viral.
+            Regularność to nie teoria: przy treściach dla Enea Stadionu widzimy, że efekt robi seria publikowana tydzień po tygodniu, a nie jeden viral.
           </p>
 
           <h2>Rolka jednorazowa czy abonament</h2>
           <p>
-            Jeśli potrzebujesz contentu co miesiąc, abonament wychodzi taniej i przewidywalnie. Pakiet <strong>START</strong>: 2 500 zł netto/mc. Pakiet <strong>WZROST</strong>: 5 000 zł/mc. Pakiet <strong>PARTNER</strong>: 8 000-9 000 zł/mc. Pełne porównanie pakietów znajdziesz we wpisie o{" "}
+            Jeśli potrzebujesz contentu co miesiąc, abonament zwykle wychodzi korzystniej i daje przewidywalny budżet. Jego cena zależy od liczby rolek i postów w miesiącu, częstotliwości dni zdjęciowych oraz tego, czy w zakresie jest też prowadzenie profili i reklamy. Więcej o tym, jak liczy się koszt obsługi, znajdziesz we wpisie o{" "}
             <Link to="/blog/agencja-social-media-cennik" className="text-[#75143F] underline">
               cenniku agencji social media
             </Link>
@@ -118,7 +118,7 @@ export default function BlogIleKosztujeRolkaDlaFirmy() {
 
           <h2>Dlaczego firmy wybierają FOTZ Studio</h2>
           <p>
-            Pracujemy m.in. dla <strong>Żabki</strong>, <strong>WSB Merito</strong>, <strong>Zakładów Cegielskiego</strong> i <strong>FPS</strong>. Mamy ponad 160 opinii Google ze średnią 5.0. Nie sprzedajemy obietnic, pokazujemy liczby z realnych profili.
+            Realizowaliśmy materiały m.in. dla <strong>Enea Stadionu</strong>, <strong>FPS Cegielski</strong> i <strong>AutoSpa</strong>, a dla <strong>WSB Merito</strong> nagraliśmy spot. Nie sprzedajemy obietnic: przed startem dostajesz jasny zakres i wycenę.
           </p>
 
           <h2>FAQ</h2>

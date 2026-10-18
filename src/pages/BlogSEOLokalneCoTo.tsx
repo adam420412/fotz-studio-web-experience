@@ -34,12 +34,12 @@ export default function BlogSEOLokalneCoTo() {
     {
       question: "Co to jest SEO Lokalne?",
       answer:
-        "SEO Lokalne (Local SEO) to optymalizacja strony internetowej i obecności online firmy dla wyników wyszukiwania dotyczących konkretnej lokalizacji. Cel: pojawić się w wynikach gdy ktoś szuka 'fryzjer Poznań' lub 'hydraulik w pobliżu'. Google Local Pack: trzy firmy które Google wyświetla na mapie nad wynikami organicznymi. To najatrakcyjniejsza pozycja dla biznesu lokalnego. 46% wszystkich wyszukiwań w Google ma lokalne intencje. 78% lokalnych wyszukiwań mobilnych kończy się wizytą w sklepie. SEO lokalne jest kluczowe dla: restauracji, gabinetów, salonów, sklepów stacjonarnych, rzemieślników i usługodawców lokalnych.",
+        "SEO Lokalne (Local SEO) to optymalizacja strony internetowej i obecności online firmy dla wyników wyszukiwania dotyczących konkretnej lokalizacji. Cel: pojawić się w wynikach gdy ktoś szuka 'fryzjer Poznań' lub 'hydraulik w pobliżu'. Google Local Pack: trzy firmy które Google wyświetla na mapie nad wynikami organicznymi. To najatrakcyjniejsza pozycja dla biznesu lokalnego. Duża część wyszukiwań w Google ma lokalną intencję, a lokalne wyszukiwania na telefonie często kończą się szybkim telefonem lub wizytą. SEO lokalne jest kluczowe dla: restauracji, gabinetów, salonów, sklepów stacjonarnych, rzemieślników i usługodawców lokalnych.",
     },
     {
       question: "Jak zoptymalizować Google Moja Firma?",
       answer:
-        "Optymalizacja Google Business Profile (Google Moja Firma): 1) Zweryfikuj firmę — fizyczna weryfikacja przez pocztę lub wideo. 2) Uzupełnij wszystkie pola — nazwa, adres, numer, godziny otwarcia, kategorii (główna i dodatkowe). 3) Dodaj opis firmy — 750 znaków, naturalne słowa kluczowe. 4) Dodaj zdjęcia — minimum 10-20 zdjęć (wnętrze, exterior, produkty, team). Zdjęcia zwiększają kliknięcia o 35%. 5) Zbieraj recenzje — wyślij link do klientów, odpowiadaj na wszystkie opinie. 6) Google Posts — publikuj aktualności, oferty, wydarzenie min. 1x/tydzień. 7) Q&A — odpowiadaj na pytania. 8) Usługi i produkty — dodaj listę usług z cenami.",
+        "Optymalizacja Google Business Profile (Google Moja Firma): 1) Zweryfikuj firmę — fizyczna weryfikacja przez pocztę lub wideo. 2) Uzupełnij wszystkie pola — nazwa, adres, numer, godziny otwarcia, kategorii (główna i dodatkowe). 3) Dodaj opis firmy — 750 znaków, naturalne słowa kluczowe. 4) Dodaj zdjęcia — minimum 10-20 zdjęć (wnętrze, exterior, produkty, team). Profile ze zdjęciami wyglądają wiarygodniej i zwykle zbierają więcej kliknięć. 5) Zbieraj recenzje — wyślij link do klientów, odpowiadaj na wszystkie opinie. 6) Google Posts — publikuj aktualności, oferty, wydarzenie min. 1x/tydzień. 7) Q&A — odpowiadaj na pytania. 8) Usługi i produkty — dodaj listę usług z cenami.",
     },
     {
       question: "Jak zbierać recenzje Google dla firmy lokalnej?",
@@ -49,12 +49,12 @@ export default function BlogSEOLokalneCoTo() {
     {
       question: "Co to jest Local Pack Google?",
       answer:
-        "Local Pack (Google Map Pack) to blok trzech wyników na mapie wyświetlany przez Google przy lokalnych wyszukiwaniach — nad organicznymi wynikami. Zawiera: nazwę firmy, ocenę (gwiazdki), adres, godziny otwarcia, zdjęcia. Czynniki rankingowe Local Pack: Relevance (dopasowanie do zapytania — opis GBP, kategorie), Distance (odległość od wyszukującego — kluczowe), Prominence (autorytet — liczba recenzji, linki, SEO na stronie). Local Pack ma CTR 44% dla najwyższej pozycji. Firmy w Local Pack odbierają 4x więcej połączeń niż te poniżej mapy. Optymalizacja Local Pack = optymalizacja Google Business Profile + lokalne SEO strony.",
+        "Local Pack (Google Map Pack) to blok trzech wyników na mapie wyświetlany przez Google przy lokalnych wyszukiwaniach — nad organicznymi wynikami. Zawiera: nazwę firmy, ocenę (gwiazdki), adres, godziny otwarcia, zdjęcia. Czynniki rankingowe Local Pack: Relevance (dopasowanie do zapytania — opis GBP, kategorie), Distance (odległość od wyszukującego — kluczowe), Prominence (autorytet — liczba recenzji, linki, SEO na stronie). Pierwsze pozycje w Local Pack zbierają dużą część kliknięć i połączeń, więc firmy widoczne na mapie mają wyraźną przewagę nad tymi poniżej. Optymalizacja Local Pack = optymalizacja Google Business Profile + lokalne SEO strony.",
     },
     {
       question: "Jak optymalizować stronę pod SEO lokalne?",
       answer:
-        "On-page SEO lokalne: 1) Lokalne słowa kluczowe w tytule, H1, opisach — 'Stomatolog Warszawa Śródmieście'. 2) Strony dedykowane dla każdej lokalizacji — jeśli masz kilka oddziałów, osobna strona per miasto. 3) LocalBusiness Schema Markup — strukturyzowane dane z adresem, telefonem, godzinami. 4) Embedded Google Maps na stronie kontaktowej. 5) Naturalne wzmianki lokalizacji w treści ('firma założona w Krakowie w 2010 roku', 'obsługujemy klientów z Małopolski'). 6) NAP w stopce — nazwa, adres, telefon w formacie tekstu (nie obrazek!). 7) Szybkość strony na mobile — 60%+ lokalnych wyszukiwań to mobile.",
+        "On-page SEO lokalne: 1) Lokalne słowa kluczowe w tytule, H1, opisach — 'Stomatolog Warszawa Śródmieście'. 2) Strony dedykowane dla każdej lokalizacji — jeśli masz kilka oddziałów, osobna strona per miasto. 3) LocalBusiness Schema Markup — strukturyzowane dane z adresem, telefonem, godzinami. 4) Embedded Google Maps na stronie kontaktowej. 5) Naturalne wzmianki lokalizacji w treści ('firma założona w Krakowie w 2010 roku', 'obsługujemy klientów z Małopolski'). 6) NAP w stopce — nazwa, adres, telefon w formacie tekstu (nie obrazek!). 7) Szybkość strony na mobile — większość lokalnych wyszukiwań odbywa się na telefonie.",
     },
     {
       question: "Jakie katalogi lokalne warto wypełnić?",
@@ -96,7 +96,7 @@ export default function BlogSEOLokalneCoTo() {
                 SEO Lokalne — co to jest i jak pojawiać się w wynikach lokalnych?
               </h1>
               <p className="text-xl text-slate-300 leading-relaxed">
-                46% wyszukiwań w Google ma lokalne intencje. SEO Lokalne to optymalizacja
+                Wiele wyszukiwań w Google ma lokalną intencję. SEO Lokalne to optymalizacja
                 dla klientów szukających usług w Twojej okolicy — Local Pack, GMB i recenzje.
               </p>
             </motion.div>

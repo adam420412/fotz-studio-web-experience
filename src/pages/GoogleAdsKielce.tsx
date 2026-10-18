@@ -12,11 +12,11 @@ function GoogleAdsKielce() {
   const faqs = [
     {
       question: "Ile kosztują reklamy Google Ads w Kielcach?",
-      answer: "Koszt zależy od branży i konkurencji. W Kielcach średnia cena za klik (CPC) wynosi 1-4 PLN. Minimalna inwestycja to zazwyczaj 500 PLN miesięcznie. Oferujemy elastyczne pakiety do każdego budżetu.",
+      answer: "Koszt zależy od branży, konkurencji na wybrane frazy i zasięgu kampanii, dlatego nie podajemy stałych cen. Wycenę obsługi przygotowujemy po rozmowie o zakresie, celach i liczbie kampanii. Budżet reklamowy płacisz bezpośrednio Google, osobno od naszego wynagrodzenia, i to Ty decydujesz o jego wysokości.",
     },
     {
       question: "Jak długo trwa wdrożenie kampanii Google Ads?",
-      answer: "Wdrożenie zajmuje 3-5 dni roboczych. W tym czasie konfigurujemy kampanię, tworzymy reklamy, ustawiamy targetowanie na Kielce i przeprowadzamy testowanie.",
+      answer: "Czas wdrożenia zależy od zakresu i od tego, jak szybko dostaniemy dostępy oraz materiały. W tym czasie konfigurujemy kampanię, tworzymy reklamy, ustawiamy targetowanie na Kielce i przeprowadzamy testowanie.",
     },
     {
       question: "Jakie wskaźniki mierzycie w kampaniach Google Ads?",
@@ -28,7 +28,7 @@ function GoogleAdsKielce() {
     },
     {
       question: "Jakie branże najlepiej się konwertują na Google Ads?",
-      answer: "Najlepsze wyniki osiągamy w: e-commerce, usługach (fryzjerskie, medyczne, nauka języka), branży finansowej, nieruchomościach. Każda branża ma inną strategię.",
+      answer: "Google Ads sprawdza się zwykle tam, gdzie klienci aktywnie szukają produktu lub usługi, np. w e-commerce, usługach lokalnych czy nieruchomościach. Każda branża wymaga innej strategii, a realny potencjał oceniamy po analizie fraz i konkurencji.",
     },
     {
       question: "Czy Quality Score wpływa na koszt moich reklam?",
@@ -40,7 +40,7 @@ function GoogleAdsKielce() {
     },
     {
       question: "Ile czasu zajmuje zbieranie danych dla optymalizacji?",
-      answer: "Algorytm Google potrzebuje co najmniej 50 konwersji do nauki. To zajmuje zazwyczaj 2-4 tygodnie, w zależności od budżetu i konkurencji w Kielcach.",
+      answer: "Algorytm Google potrzebuje co najmniej 50 konwersji do nauki. Ile to potrwa, zależy od budżetu, liczby konwersji i konkurencji w Kielcach.",
     },
   ];
 
@@ -98,7 +98,7 @@ function GoogleAdsKielce() {
           <div className="max-w-3xl mx-auto">
             <h1 className="text-4xl font-bold mb-6">Google Ads Kielce</h1>
             <p className="text-lg text-gray-600 mb-8">
-              Kampanie Google Ads dla firm z Kielc. Agencja Fotz.pl specjalizuje się w reklamach w Google z targetowaniem lokalnym. Zwiększ widoczność w wyszukiwarce, popraw sprzedaż i przychody dzięki profesjonalnym kampaniom.
+              Kampanie Google Ads dla firm z Kielc. Agencja Fotz.pl prowadzi kampanie w Google z targetowaniem lokalnym. Pracujemy z Poznania, firmy z Kielc obsługujemy zdalnie.
             </p>
             <div className="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8">
               <p className="text-blue-900">
@@ -114,7 +114,7 @@ function GoogleAdsKielce() {
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-8">Dlaczego Google Ads dla Kielc?</h2>
             <p className="text-lg text-gray-700 mb-6">
-              Google Ads to najefektywniejszy sposób na dotarcie do potencjalnych klientów, którzy aktywnie szukają Twoich produktów lub usług w Kielcach.
+              Google Ads pozwala dotrzeć do potencjalnych klientów, którzy aktywnie szukają Twoich produktów lub usług w Kielcach.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
@@ -122,7 +122,7 @@ function GoogleAdsKielce() {
                   <span className="text-blue-600 mr-3 text-2xl">1.</span>
                   Szybkie rezultaty
                 </h3>
-                <p className="text-gray-700">Reklama jest widoczna w Google już w ciągu godzin. Bezpośredni dostęp do klientów szukających w Kielcach.</p>
+                <p className="text-gray-700">Reklama może pojawić się w Google krótko po zatwierdzeniu przez system. Docierasz do osób, które szukają w Kielcach.</p>
               </div>
               <div>
                 <h3 className="text-xl font-semibold mb-3 flex items-center">
@@ -136,7 +136,7 @@ function GoogleAdsKielce() {
                   <span className="text-blue-600 mr-3 text-2xl">3.</span>
                   Precyzyjne targetowanie
                 </h3>
-                <p className="text-gray-700">Dochodzimy do ludzi z Kielc, którzy szukają dokładnie tego, co oferujesz. Brak marnowania budżetu.</p>
+                <p className="text-gray-700">Docieramy do ludzi z Kielc, którzy szukają tego, co oferujesz, i ograniczamy wydatki na nietrafione kliknięcia.</p>
               </div>
               <div>
                 <h3 className="text-xl font-semibold mb-3 flex items-center">

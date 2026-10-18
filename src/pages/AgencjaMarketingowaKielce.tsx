@@ -10,8 +10,8 @@ import { ContactSection } from "@/components/sections/ContactSection";
 const whyChooseUs = [
   {
     icon: TrendingUp,
-    title: "Doświadczenie w SEO lokalnym",
-    desc: "Specjalizujemy się w pozycjonowaniu firm z Kielc. Wiemy, jak zdobyć klientów z Twojego miasta online.",
+    title: "SEO lokalne",
+    desc: "Pracujemy z Poznania, firmy z Kielc obsługujemy zdalnie. Optymalizujemy stronę i profil firmy pod frazy z nazwą miasta.",
   },
   {
     icon: Globe,
@@ -39,7 +39,7 @@ const services = [
   {
     icon: "🔍",
     title: "SEO / Pozycjonowanie",
-    desc: "Pojawiaj się wysoko w Google na frazy, na które szukają Twoi klienci w Kielcach i okolicach.",
+    desc: "Pracujemy nad widocznością w Google na frazy, których szukają Twoi klienci w Kielcach i okolicach. Nie gwarantujemy konkretnej pozycji.",
   },
   {
     icon: "💰",
@@ -66,7 +66,7 @@ const services = [
 const pricingPackages = [
   {
     name: "START",
-    price: "1500",
+    price: "Wycena indywidualna",
     description: "Dla małych firm, które dopiero zaczynają online",
     features: [
       "Strona internetowa (5-10 podstron)",
@@ -78,12 +78,12 @@ const pricingPackages = [
   },
   {
     name: "ROZWÓJ",
-    price: "3500",
+    price: "Wycena indywidualna",
     description: "Dla firm chcących rosnąć na rynku Kielc",
     features: [
       "Strona zaawansowana (15+ podstron)",
       "Audyt SEO i optymalizacja strony",
-      "Kampania Google Ads (1000 zł budżetu)",
+      "Kampania Google Ads (budżet reklamowy płacony Google osobno)",
       "Social media management (4 posty/m)",
       "Pełny branding (logo, paleta barw, style guide)",
       "Raportowanie i monitoring",
@@ -91,7 +91,7 @@ const pricingPackages = [
   },
   {
     name: "PREMIUM",
-    price: "7000+",
+    price: "Wycena indywidualna",
     description: "Pełne wsparcie marketingowe — plan indywidualny",
     features: [
       "Strona e-commerce lub zaawansowana aplikacja",
@@ -109,15 +109,15 @@ const pricingPackages = [
 const faqItems = [
   {
     question: "Ile kosztuje agencja marketingowa w Kielcach?",
-    answer: "Ceny usług marketingowych w Kielcach zaczynają się od 1500 zł za pakiet START (strona + branding). Pakiet ROZWÓJ kosztuje 3500 zł i obejmuje stronę, SEO, Google Ads i social media. PREMIUM (powyżej 7000 zł) to pełne wsparcie marketingowe ze wszystkimi usługami. Każdy pakiet dostosowujemy do potrzeb i budżetu klienta.",
+    answer: "Wycenę przygotowujemy po rozmowie o zakresie: liczbie podstron, potrzebie brandingu, liczbie kanałów (SEO, Google Ads, social media) i częstotliwości publikacji. Budżet reklamowy płacony Google lub Meta jest zawsze osobno od naszego wynagrodzenia.",
   },
   {
     question: "Jak długo trwa budowa strony internetowej?",
-    answer: "Strona na pakiet START (5-10 podstron) zajmuje 2-3 tygodnie. Pakiet ROZWÓJ (15+ podstron) — 4-6 tygodni. Czas zależy od złożoności projektu, ilości treści i liczby poprawek. Pracujemy w iteracjach, aby upewnić się, że rezultat spełnia Twoje oczekiwania.",
+    answer: "Harmonogram ustalamy po briefie. Czas zależy od złożoności projektu, ilości treści i liczby poprawek. Pracujemy w iteracjach, aby upewnić się, że rezultat spełnia Twoje oczekiwania.",
   },
   {
     question: "Czy pracujecie tylko z firmami z Kielc?",
-    answer: "Obsługujemy firmy z Kielc, Jędrzejowa, Pińczowa, Chęcin i całego regionu Świętokrzyskiego. Pracujemy również z firmami z całej Polski, ale specjalizujemy się w lokalnym rynku Kielc — znamy konkurencję, wiemy, jakie frazy szukają ludzie w mieście, i rozumiemy lokalny biznes.",
+    answer: "Nie. Pracujemy z Poznania, a firmy z Kielc, Jędrzejowa, Pińczowa, Chęcin i całego regionu Świętokrzyskiego obsługujemy zdalnie — tak samo jak klientów z innych miast. Przed startem analizujemy lokalną konkurencję i frazy wpisywane przez mieszkańców.",
   },
   {
     question: "Czym wyróżnia się rynek Kielc w kontekście marketingu digital?",
@@ -125,7 +125,7 @@ const faqItems = [
   },
   {
     question: "Czy gwarantujecie pozycje w Google?",
-    answer: "Nikt nie gwarantuje konkretnych pozycji w Google — każdy, kto to robi, kłamie. Gwarantujemy jednak solidną pracę, przejrzystość i wyniki mierzalne. Audytujemy konkurencję, budujemy strategię oparta na danych i regularnie raportujemy postępy. Pierwsze efekty (wzrost ruchu organicznego) widoczne są po 2-3 miesiącach.",
+    answer: "Nikt nie gwarantuje konkretnych pozycji w Google — każdy, kto to robi, kłamie. Zapewniamy przejrzystą pracę i regularne raporty. Audytujemy konkurencję, budujemy strategię opartą na danych i pokazujemy postępy. Tempo efektów zależy od konkurencji i stanu strony, dlatego nie podajemy sztywnych terminów.",
   },
   {
     question: "Czy mogę mieć dostęp do strony i analityki po umowie?",
@@ -231,7 +231,7 @@ const AgencjaMarketingowaKielce = () => {
                 Kielce to dynamicznie rozwijające się miasto w centralnej Polsce, siedziba Targów Kielce i wielu firm logistycznych oraz produkcyjnych. Rynek jest konkurencyjny, ale wciąż wiele firm z Kielc nie wykorzystuje w pełni potencjału internetu.
               </p>
               <p className="text-gray-300">
-                Firmy, które inwestują w widoczność online — stronę, pozycjonowanie SEO i kampanie Google Ads — zdobywają nowych klientów szybciej i taniej niż konkurencja. Jeśli Twoja firma z Kielc chce rosnąć, marketing digital to nie luksus, a konieczność.
+                Widoczność online — strona, pozycjonowanie SEO i kampanie Google Ads — pomaga docierać do klientów, którzy szukają usług w mieście. Jeśli Twoja firma z Kielc chce rosnąć, marketing digital to nie luksus, a konieczność.
               </p>
             </div>
           </div>
@@ -240,7 +240,8 @@ const AgencjaMarketingowaKielce = () => {
         {/* Pricing Section */}
         <section className="py-20 bg-gray-950 border-t border-gray-800">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Pakiety i ceny</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-white">Zakresy współpracy</h2>
+            <p className="text-gray-400 text-center mb-12 max-w-2xl mx-auto">Wycenę przygotowujemy po rozmowie o zakresie, liczbie kanałów i oczekiwanej częstotliwości działań.</p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
               {pricingPackages.map((pkg) => (
                 <div
@@ -254,8 +255,8 @@ const AgencjaMarketingowaKielce = () => {
                   <h3 className="text-2xl font-bold mb-2 text-white">{pkg.name}</h3>
                   <p className="text-gray-300 text-sm mb-6 h-10">{pkg.description}</p>
                   <div className="mb-6">
-                    <span className="text-4xl font-bold text-yellow-400">{pkg.price}</span>
-                    <span className="text-gray-400 ml-1">{pkg.price !== "7000+" ? "zł/mies." : "zł/mies."}</span>
+                    <span className="text-2xl font-bold text-yellow-400">{pkg.price}</span>
+                    <p className="text-gray-400 text-xs mt-2">Zależy od zakresu; budżet reklamowy osobno.</p>
                   </div>
                   <ul className="space-y-3 mb-8">
                     {pkg.features.map((feature) => (
@@ -318,7 +319,7 @@ const AgencjaMarketingowaKielce = () => {
               </p>
               <h3 className="text-2xl font-bold mt-8 mb-4 text-white">Usługi marketingowe dla Kielc</h3>
               <p className="text-gray-300 mb-4">
-                Specjalizujemy się w usługach dla firm, które chcą rosnąć w Kielcach i regionie Świętokrzyskiego. Znamy konkurencję, wiemy, jakie są najczęściej szukane frazy, i rozumiemy lokalny biznes.
+                Pracujemy z Poznania, a firmy z Kielc i regionu Świętokrzyskiego obsługujemy zdalnie. Przed startem analizujemy lokalną konkurencję i frazy, których szukają Twoi klienci.
               </p>
               <div className="mt-8 pt-6 border-t border-gray-700 flex flex-wrap gap-x-6 gap-y-2">
                 <Link to="/agencja-marketingowa/poznan" className="text-yellow-400 hover:text-yellow-300 font-medium text-sm transition-colors">

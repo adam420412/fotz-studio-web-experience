@@ -22,9 +22,9 @@ export default function BlogReferralMarketingCoTo() {
   ];
 
   const referralExamples = [
-    { company: "Dropbox", reward: "+500 MB space", mechanic: "Zaproś znajomego → oboje dostają dodatkowe miejsce. Wzrost bazy o 3900% w 15 miesięcy." },
+    { company: "Dropbox", reward: "+500 MB space", mechanic: "Zaproś znajomego → oboje dostają dodatkowe miejsce. Jeden z najczęściej przywoływanych przykładów wzrostu napędzanego poleceniami." },
     { company: "Uber", reward: "Darmowy przejazd", mechanic: "Kod polecający dla nowego użytkownika i polecającego. Globalny wzrost napędzany przez sieć użytkowników." },
-    { company: "PayPal", reward: "$10 za rejestrację", mechanic: "Pionier programów referral — $20M wydane na nagrody przyniosło 7-10% wzrost dziennie w 2000 roku." },
+    { company: "PayPal", reward: "$10 za rejestrację", mechanic: "Pionier programów referral — na początku lat 2000 płacił użytkownikom za polecenia, co mocno przyspieszyło wzrost bazy." },
     { company: "Tesla", reward: "Darmowy Supercharger", mechanic: "Polecenie + zakup Tesli przez poleconego = darmowe ładowanie. Buduje community właścicieli." },
     { company: "Revolut", reward: "Premia pieniężna", mechanic: "Zaproś znajomego, oboje dostajecie pieniądze gdy nowy użytkownik wykona transakcję." },
     { company: "Allegro Smart", reward: "Miesiąc gratis", mechanic: "Polecenie Smart = miesiąc darmowo dla nowego + bonus dla polecającego. Zwiększa retention." },
@@ -32,7 +32,7 @@ export default function BlogReferralMarketingCoTo() {
 
   const programSteps = [
     { step: "1. Zdefiniuj nagrodę", desc: "Nagroda musi być wystarczająco atrakcyjna by motywować do polecenia, ale nie tak kosztowna by niszczyć marżę. Opcje: zniżka, gotówka, kredyt, upgrade, darmowy produkt." },
-    { step: "2. Zaprojektuj mechanikę", desc: "Jednoosobowa (tylko polecający) vs dwustronna (oboje dostają). Dwustronna generuje 2-3x więcej poleceń — polecanemu łatwiej zaakceptować." },
+    { step: "2. Zaprojektuj mechanikę", desc: "Jednoosobowa (tylko polecający) vs dwustronna (oboje dostają). Dwustronna zwykle generuje więcej poleceń — polecanemu łatwiej zaakceptować." },
     { step: "3. Stwórz system śledzenia", desc: "Unikalne kody lub linki referral dla każdego użytkownika. Narzędzia: ReferralHero, Friendbuy, Viral Loops, lub własna implementacja." },
     { step: "4. Zintegruj w product flow", desc: "Program referral musi być widoczny w momencie 'aha moment' użytkownika — gdy jest najbardziej zadowolony i gotowy polecać." },
     { step: "5. Testuj i optymalizuj", desc: "Testuj różne nagrody, copy, czas wyświetlania. Mierz: referral rate, conversion rate poleceń, LTV polecon klientów." },
@@ -41,15 +41,15 @@ export default function BlogReferralMarketingCoTo() {
   const faqItems = [
     {
       question: "Co to jest Referral Marketing?",
-      answer: "Referral Marketing (marketing poleceń) to strategia pozyskiwania klientów przez zachęcanie istniejących klientów do polecania produktu znajomym w zamian za nagrodę. Opiera się na sile word-of-mouth (marketing szeptany) wzmocnionego incentywem finansowym lub wartościowym. Referral marketing odróżnia się od: Word-of-mouth (organiczne polecenia bez nagrody), Affiliate marketing (polecenia przez zewnętrznych partnerów za prowizję), MLM (wielopoziomowe polecenia, często problematyczne). Dane: 92% konsumentów ufa rekomendacjom od znajomych ponad innym formom reklamy (Nielsen). Klienci z poleceń mają o 16% wyższy LTV i 37% wyższy retention niż klienci z innych kanałów.",
+      answer: "Referral Marketing (marketing poleceń) to strategia pozyskiwania klientów przez zachęcanie istniejących klientów do polecania produktu znajomym w zamian za nagrodę. Opiera się na sile word-of-mouth (marketing szeptany) wzmocnionego incentywem finansowym lub wartościowym. Referral marketing odróżnia się od: Word-of-mouth (organiczne polecenia bez nagrody), Affiliate marketing (polecenia przez zewnętrznych partnerów za prowizję), MLM (wielopoziomowe polecenia, często problematyczne). Dane: 92% konsumentów ufa rekomendacjom od znajomych ponad innym formom reklamy (Nielsen, Global Trust in Advertising, 2012). Klienci z poleceń często zostają dłużej i są bardziej wartościowi niż klienci z innych kanałów.",
     },
     {
       question: "Jak działa program referral?",
-      answer: "Mechanika programu referral: 1) Istniejący klient (polecający/referrer) otrzymuje unikalny link lub kod. 2) Polecający udostępnia link znajomemu (polecony/referee). 3) Polecony rejestruje się lub kupuje przez link. 4) System śledzi atrybucję przez cookies, kod lub unikalne ID. 5) Obie strony (lub tylko polecający) otrzymują nagrodę. Typy nagród: jednostronna (tylko polecający), dwustronna (oboje dostają — 2-3x skuteczniejsza), wielopoziomowa (nagroda za kolejne polecenia poleconych). Narzędzia: Rewardful, ReferralHero, Viral Loops, Friendbuy, GrowSurf, lub własna implementacja przez platformę e-commerce.",
+      answer: "Mechanika programu referral: 1) Istniejący klient (polecający/referrer) otrzymuje unikalny link lub kod. 2) Polecający udostępnia link znajomemu (polecony/referee). 3) Polecony rejestruje się lub kupuje przez link. 4) System śledzi atrybucję przez cookies, kod lub unikalne ID. 5) Obie strony (lub tylko polecający) otrzymują nagrodę. Typy nagród: jednostronna (tylko polecający), dwustronna (oboje dostają — zwykle skuteczniejsza), wielopoziomowa (nagroda za kolejne polecenia poleconych). Narzędzia: Rewardful, ReferralHero, Viral Loops, Friendbuy, GrowSurf, lub własna implementacja przez platformę e-commerce.",
     },
     {
       question: "Jaka nagroda działa najlepiej w programie referral?",
-      answer: "Najskuteczniejsze nagrody w referral marketing (badania Nielsen): Gotówka/kredyt na konto — najwyższa motywacja, prosta do zrozumienia. Zniżka procentowa — popularna w e-commerce (10-20% zniżki). Darmowy produkt/miesiąc usługi — działa dla SaaS i subskrypcji. Upgrade planu — dla SaaS (premium features za polecenie). Dodatkowa pojemność/dostęp — Dropbox, Google Drive model. Charytatywna donacja — działa dla firm z silnymi wartościami CSR. Zasady dobrej nagrody: musi być pożądana przez klienta, musi być wystarczająco wartościowa (minimum 10-15% wartości zakupu), natychmiastowa (nie po 30 dniach), prosta do zrozumienia. Dwustronna nagroda (oboje dostają) zawsze lepsza od jednostronnej.",
+      answer: "Nagrody, które najczęściej sprawdzają się w referral marketingu: Gotówka/kredyt na konto — najwyższa motywacja, prosta do zrozumienia. Zniżka procentowa — popularna w e-commerce (10-20% zniżki). Darmowy produkt/miesiąc usługi — działa dla SaaS i subskrypcji. Upgrade planu — dla SaaS (premium features za polecenie). Dodatkowa pojemność/dostęp — Dropbox, Google Drive model. Charytatywna donacja — działa dla firm z silnymi wartościami CSR. Zasady dobrej nagrody: musi być pożądana przez klienta, musi być wystarczająco wartościowa w relacji do ceny zakupu, natychmiastowa (nie po 30 dniach), prosta do zrozumienia. Dwustronna nagroda (oboje dostają) zwykle działa lepiej od jednostronnej.",
     },
     {
       question: "Jaka jest różnica między Referral a Affiliate Marketing?",
@@ -57,7 +57,7 @@ export default function BlogReferralMarketingCoTo() {
     },
     {
       question: "Jak mierzyć skuteczność programu referral?",
-      answer: "Kluczowe metryki programu referral: Referral Rate — % aktywnych klientów którzy polecili (cel: 5-15%). Conversion Rate of Referrals — % poleceń które doprowadziły do zakupu (benchmark: 15-30%, vs 1-3% cold traffic). Cost per Referred Customer (CpRC) — koszt nagrody / liczba polecon klientów (musi być niższy niż CAC z innych kanałów). LTV Referred Customers — klienci z poleceń mają typowo 16-25% wyższy LTV. Viral Coefficient (K-factor) — ile poleceń generuje każdy nowy klient z referral. Net Promoter Score (NPS) — koreluje z naturalną chęcią polecania. Narzędzia analityczne: Rewardful, Shopify Analytics, ReferralHero Dashboard lub Google Analytics (UTM tracking dla linków referral).",
+      answer: "Kluczowe metryki programu referral: Referral Rate — % aktywnych klientów, którzy polecili. Conversion Rate of Referrals — % poleceń, które doprowadziły do zakupu (zwykle wyraźnie wyższy niż przy zimnym ruchu). Cost per Referred Customer (CpRC) — koszt nagrody / liczba polecon klientów (musi być niższy niż CAC z innych kanałów). LTV Referred Customers — wartość klientów z poleceń w porównaniu z innymi kanałami. Viral Coefficient (K-factor) — ile poleceń generuje każdy nowy klient z referral. Net Promoter Score (NPS) — koreluje z naturalną chęcią polecania. Narzędzia analityczne: Rewardful, Shopify Analytics, ReferralHero Dashboard lub Google Analytics (UTM tracking dla linków referral).",
     },
     {
       question: "Kiedy warto wdrożyć program referral?",
@@ -99,7 +99,7 @@ export default function BlogReferralMarketingCoTo() {
               </h1>
               <p className="text-xl text-slate-300 leading-relaxed">
                 Referral marketing zachęca klientów do polecania Twojej firmy w zamian za nagrodę.
-                Dropbox urósł o 3900% dzięki programowi referral. Jak go wdrożyć?
+                Dropbox, PayPal czy Uber rośli w dużej mierze dzięki poleceniom. Jak wdrożyć taki program?
               </p>
             </motion.div>
           </div>

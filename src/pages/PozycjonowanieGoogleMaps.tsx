@@ -425,7 +425,7 @@ const PozycjonowanieGoogleMaps = () => {
               {/* Pakiet Business - Popular */}
               <div className="bg-gradient-to-b from-[#75143F] to-[#0F3053] rounded-2xl p-8 border-2 border-primary relative transform md:scale-105 shadow-xl">
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-white text-primary px-4 py-1 rounded-full text-sm font-semibold">
-                  Najpopularniejszy
+                  Polecany zakres
                 </div>
                 <div className="text-center mb-6">
                   <h3 className="text-xl font-heading font-semibold mb-2 text-white">Pakiet Business</h3>

@@ -111,7 +111,7 @@ export default function BlogOkrCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "OKR", url: "https://www.fotz-studio.pl" },
+              { name: "OKR", url: "/blog/okr-co-to-jest" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             OKR — co to jest i jak pisać Objectives and Key Results?

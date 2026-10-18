@@ -15,7 +15,7 @@ const faqItems = [
   {
     question: "Ile kosztuje sesja biznesowa z fotografem?",
     answer:
-      "Koszt sesji biznesowej zalezy od jej rodzaju. Headshot (jedno zdjecie portretowe) kosztuje od 300 do 600 zlotych. Sesja mini team do 5 osob to 800-1500 zlotych. Pelnoprawna sesja teamowa dla 5-20 osob to 1500-3500 zlotych. Sesja brandingowa na caly dzien kosztuje 2500-6000 zlotych. Event firmowy to 800-2500 zlotych w zaleznosci od czasu.",
+      "Koszt sesji biznesowej zalezy od jej rodzaju, liczby osob, lokalizacji i liczby zdjec po retuszu. Przykladowe widelki rynkowe (nie cennik FOTZ Studio): headshot (jedno zdjecie portretowe) kosztuje od 300 do 600 zlotych. Sesja mini team do 5 osob to 800-1500 zlotych. Pelnoprawna sesja teamowa dla 5-20 osob to 1500-3500 zlotych. Sesja brandingowa na caly dzien kosztuje 2500-6000 zlotych. Event firmowy to 800-2500 zlotych w zaleznosci od czasu. Konkretna wycene sesji w FOTZ Studio przygotowujemy po rozmowie.",
   },
   {
     question: "Jak dlugo trwa sesja fotografii biznesowej?",
@@ -45,7 +45,7 @@ const faqItems = [
   {
     question: "Jakie zdjecia sa potrzebne na profil LinkedIn?",
     answer:
-      "Na LinkedIn potrzebujesz profesjonalnego headshotu z czystym, neutralnym tlem. Zdjecie powinno byc portretowe, gdzie twoja twarz zajmuje okolo 50-60% ramki. Usmiechnij sie naturalnie, spoglądaj w kamerę. Ponadto mozesz dodac 2-3 dodatkowe zdjecia z sesji, ktore pokazuja Cie w kontekscie pracy. Profesjonalne zdjecie na LinkedIn zwiekszy liczbe profile views i wiadomosci biznesowych nawet o 36 razy.",
+      "Na LinkedIn potrzebujesz profesjonalnego headshotu z czystym, neutralnym tlem. Zdjecie powinno byc portretowe, gdzie twoja twarz zajmuje okolo 50-60% ramki. Usmiechnij sie naturalnie, spoglądaj w kamerę. Ponadto mozesz dodac 2-3 dodatkowe zdjecia z sesji, ktore pokazuja Cie w kontekscie pracy. Profesjonalne zdjecie na LinkedIn zwykle sprawia, ze profil czesciej przyciaga uwage i wiadomosci biznesowe.",
   },
 ];
 
@@ -156,15 +156,15 @@ export default function BlogFotografiaBiznesowa() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-10">
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
               <div className="text-amber-300 font-bold">Sesja biznesowa</div>
-              <div className="text-white text-2xl font-bold mt-2">od 600 zl</div>
+              <div className="text-white text-2xl font-bold mt-2">wycena po rozmowie</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
               <div className="text-amber-300 font-bold">Czas sesji</div>
               <div className="text-white text-2xl font-bold mt-2">2-4h</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-              <div className="text-amber-300 font-bold">Zdjecia gotowe</div>
-              <div className="text-white text-2xl font-bold mt-2">w 48h</div>
+              <div className="text-amber-300 font-bold">Termin oddania</div>
+              <div className="text-white text-2xl font-bold mt-2">ustalany przed sesja</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
               <div className="text-amber-300 font-bold">Retusz</div>
@@ -192,7 +192,7 @@ export default function BlogFotografiaBiznesowa() {
               Glowna roznica miedzy fotografia biznesowa a fotografia produktowa jest fokus na ludzi i atmosfere marki. Podczas gdy fotografia produktowa pokazuje szczegoly i cechy produktu, fotografia biznesowa pokazuje wartosc, kultur i energie firmy. Obie są istotne dla pelnego wizerunku biznesu.
             </p>
             <p className="text-lg text-slate-700">
-              Profesjonalna fotografia biznesowa to inwestycja w wizerunek firmy, która zwraca sie wielokrotnie poprzez wiekszy zainteresowanie klientow, lepsza pozycje w wyszukiwarkach i budowanie zaufania na rynku.
+              Profesjonalna fotografia biznesowa to inwestycja w wizerunek firmy: pomaga przyciagnac uwage klientow, uatrakcyjnia strone i profile w social media oraz buduje zaufanie na rynku.
             </p>
           </section>
         </FadeInView>
@@ -230,7 +230,7 @@ export default function BlogFotografiaBiznesowa() {
               Fotografia biznesowa cennik 2025
             </h2>
             <p className="text-lg text-slate-700 mb-8">
-              Ponizej znajduje sie cennik naszych uslug fotografii biznesowej. Ceny zalezy od zakresu sesji, liczby osob i czasu realizacji. Wszystkie pakiety zawieraja profesjonalny retusz i przygotowanie zdjec do druku lub publikacji online.
+              Ponizej znajduja sie przykladowe widelki rynkowe dla fotografii biznesowej w Polsce — to orientacyjne kwoty spotykane na rynku, a nie cennik FOTZ Studio. Ceny zaleza od zakresu sesji, liczby osob, lokalizacji i czasu realizacji.
             </p>
 
             <div className="overflow-x-auto">
@@ -276,7 +276,7 @@ export default function BlogFotografiaBiznesowa() {
             </div>
 
             <p className="text-sm text-slate-600 mt-6">
-              Ceny sa orientacyjne i moga sie roznic w zaleznosci od konkretnych wymagan sesji. Zapraszamy do kontaktu aby omowic szczegoly i otrzymac personalizowana oferte.
+              Widelki sa orientacyjne i moga sie roznic w zaleznosci od miasta, fotografa i konkretnych wymagan sesji. Wycene sesji w FOTZ Studio przygotowujemy po rozmowie o zakresie — zapraszamy do kontaktu.
             </p>
           </section>
         </FadeInView>
@@ -479,20 +479,20 @@ export default function BlogFotografiaBiznesowa() {
               Fotografia biznesowa a LinkedIn — dlaczego profesjonalne zdjecia maja znaczenie
             </h2>
             <p className="text-lg text-slate-700 mb-6">
-              LinkedIn to platforma, gdzie wizualna prezentacja ma ogromne znaczenie. Statystyki pokazuja, że:
+              LinkedIn to platforma, gdzie wizualna prezentacja ma ogromne znaczenie. Profil z dobrym zdjeciem zwykle zyskuje na dwoch polach:
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded">
-                <div className="text-4xl font-bold text-amber-700 mb-2">14x</div>
+                <div className="text-4xl font-bold text-amber-700 mb-2">Wyswietlenia</div>
                 <p className="text-slate-700">
-                  Wiecej profile views dla osob z profesjonalnym zdjeciem profilowym
+                  Profil z profesjonalnym zdjeciem czesciej przyciaga uwage i jest chetniej odwiedzany
                 </p>
               </div>
               <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded">
-                <div className="text-4xl font-bold text-amber-700 mb-2">36x</div>
+                <div className="text-4xl font-bold text-amber-700 mb-2">Wiadomosci</div>
                 <p className="text-slate-700">
-                  Wiecej wiadomosci biznesowych dla osob z profesjonalnym headshelem
+                  Dobry headshot buduje zaufanie, co ulatwia nawiazywanie kontaktow biznesowych
                 </p>
               </div>
             </div>
@@ -525,7 +525,7 @@ export default function BlogFotografiaBiznesowa() {
             </ul>
 
             <p className="text-lg text-slate-700">
-              Algorytm LinkedIn preferuje posty i profile z wysokojakosciowymi zdjeciam. Jezeli chcesz rozwijac swoja marke personalną i zwiekszyc widzialnosc na LinkedIn, profesjonalne zdjecie to najlepsze miejsce do rozpoczecia.
+              Dobre zdjecia sprawiaja, ze profil i posty wygladaja wiarygodniej. Jezeli chcesz rozwijac swoja marke personalną i zwiekszyc widzialnosc na LinkedIn, profesjonalne zdjecie to najlepsze miejsce do rozpoczecia.
             </p>
           </section>
         </FadeInView>
@@ -537,7 +537,7 @@ export default function BlogFotografiaBiznesowa() {
               Fotografia firmowa w Fotz Studio
             </h2>
             <p className="text-lg text-slate-700 mb-6">
-              W Fotz Studio specjalizujemy sie w profesjonalnej fotografii biznesowej. Nasz zespol fotografow ma wieloletnie doswiadczenie w obsludze sesji dla firm z roznych branż — od startupow po duze korporacje.
+              Fotz Studio to agencja kreatywna z Poznania — fotografia biznesowa to jedna z naszych uslug, obok wideo, stron WWW i social mediow. Realizowalismy materialy m.in. dla Enea Stadionu, FPS Cegielski i WSB Merito.
             </p>
 
             <div className="bg-slate-50 border border-slate-200 rounded-lg p-8 mb-6">
@@ -559,7 +559,7 @@ export default function BlogFotografiaBiznesowa() {
                 </li>
                 <li className="flex">
                   <span className="mr-3 text-amber-700 font-bold">✓</span>
-                  <span>Szybka realizacja — zdjecia w 48 godzin</span>
+                  <span>Termin oddania zdjec ustalany przed sesja</span>
                 </li>
                 <li className="flex">
                   <span className="mr-3 text-amber-700 font-bold">✓</span>

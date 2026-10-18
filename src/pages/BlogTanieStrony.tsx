@@ -10,17 +10,17 @@ const faqItems = [
   {
     question: "Czy można dostać tanią stronę internetową bez strat jakości?",
     answer:
-      "Tak, ale z ważnym zastrzeżeniem: tania strona internetowa może być dobrej jakości, jeśli jest prosta i zgodna z Twoimi potrzebami. Strona wizytówkowa za 2 000–3 000 zł od rzetelnej agencji będzie lepsza niż drogi projekt z nadmuchanymi funkcjami. Problem pojawia się, gdy za 500 zł oczekuje się efektu za 8 000 zł.",
+      "Tak, ale z ważnym zastrzeżeniem: tania strona internetowa może być dobrej jakości, jeśli jest prosta i zgodna z Twoimi potrzebami. Prosta, dobrze zrobiona strona wizytówkowa od rzetelnego wykonawcy będzie lepsza niż drogi projekt z nadmuchanymi funkcjami. Problem pojawia się, gdy przy minimalnym budżecie oczekuje się efektu rozbudowanego, indywidualnego serwisu.",
   },
   {
     question: "Gdzie zamówić tanią stronę internetową?",
     answer:
-      "Tanie strony internetowe możesz zamówić na platformach freelancerów (Useme, Freelancer.pl), w mniejszych agencjach regionalnych lub wykonać samodzielnie na kreatorach (WordPress.com, Wix, Squarespace). Każda opcja ma zalety i wady — najważniejsze to dopasowanie do celu strony i budżetu. Fotz Studio oferuje przystępne pakiety startowe od 2 000 zł z pełnym projektem i SEO w standardzie.",
+      "Tanie strony internetowe możesz zamówić na platformach freelancerów (Useme, Freelancer.pl), w mniejszych agencjach regionalnych lub wykonać samodzielnie na kreatorach (WordPress.com, Wix, Squarespace). Każda opcja ma zalety i wady — najważniejsze to dopasowanie do celu strony i budżetu. W FOTZ Studio wycenę strony przygotowujemy po krótkiej rozmowie o zakresie i celach.",
   },
   {
     question: "Ile kosztuje tania strona internetowa?",
     answer:
-      "Tania strona internetowa kosztuje od 500 zł (kreatory w modelu DIY lub prosta wizytówka od freelancera) do ok. 3 500 zł (prosta strona firmowa od małej agencji). Strony poniżej 1 000 zł zwykle opierają się na gotowych szablonach bez indywidualnego projektu graficznego i bez optymalizacji SEO.",
+      "Przykładowe widełki rynkowe dla taniej strony internetowej to od ok. 500 zł (kreatory w modelu DIY lub prosta wizytówka od freelancera) do ok. 3 500 zł (prosta strona firmowa od małej agencji) — konkretna cena zależy od zakresu i wykonawcy. Strony poniżej 1 000 zł zwykle opierają się na gotowych szablonach bez indywidualnego projektu graficznego i bez optymalizacji SEO.",
   },
   {
     question: "Czy tania strona www jest dobra do SEO?",
@@ -182,7 +182,7 @@ export default function BlogTanieStrony() {
                 </h2>
 
                 <p className="text-muted-foreground mb-4">
-                  Pojęcie "taniej strony internetowej" jest względne. W 2026 roku za tanią stronę www uznaje się:
+                  Pojęcie "taniej strony internetowej" jest względne. W 2026 roku za tanią stronę www uznaje się zwykle (przykładowe widełki rynkowe — realna cena zależy od zakresu i wykonawcy):
                 </p>
 
                 <ul className="list-disc list-inside text-muted-foreground space-y-2 mb-6 pl-2">
@@ -287,7 +287,7 @@ export default function BlogTanieStrony() {
                   3. Ukryte koszty po zakończeniu projektu
                 </h3>
                 <p className="text-muted-foreground mb-4">
-                  Tania strona www za 1 000 zł może generować 500 zł/rok kosztów ukrytych: hosting, domena, certyfikat SSL, wtyczki premium, aktualizacje. Zapytaj wykonawcę o całkowity koszt posiadania strony przez 3 lata — to dopiero daje pełny obraz.
+                  Tania strona www może co roku generować dodatkowe, ukryte koszty: hosting, domena, certyfikat SSL, wtyczki premium, aktualizacje. Zapytaj wykonawcę o całkowity koszt posiadania strony przez 3 lata — to dopiero daje pełny obraz.
                 </p>
 
                 <h3 className="text-xl font-heading font-semibold mt-8 mb-4">
@@ -301,7 +301,7 @@ export default function BlogTanieStrony() {
                   5. Wolna strona = utraceni klienci
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  Tanie strony często ładują się wolno (słaby hosting, nieopracowany kod, brak optymalizacji obrazów). Każda sekunda opóźnienia ładowania to ok. 7% mniej konwersji. Google obniża pozycje wolnych stron. Sprawdź wynik PageSpeed Insights przed podpisaniem umowy z wykonawcą.
+                  Tanie strony często ładują się wolno (słaby hosting, nieopracowany kod, brak optymalizacji obrazów). Każda dodatkowa sekunda ładowania zwiększa ryzyko, że użytkownik zrezygnuje przed wysłaniem zapytania. Google obniża pozycje wolnych stron. Sprawdź wynik PageSpeed Insights przed podpisaniem umowy z wykonawcą.
                 </p>
 
                 <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
@@ -310,6 +310,10 @@ export default function BlogTanieStrony() {
 
                 <p className="text-muted-foreground mb-4">
                   Różnica między "tanią" a "przystępną" stroną internetową jest kluczowa. W Fotz Studio wierzymy, że strona wizytówkowa nie musi kosztować 15 000 zł — ale musi spełniać podstawowe standardy jakości: indywidualny projekt, responsywność, SEO w cenie, szybkość i przekazanie wszystkich dostępów.
+                </p>
+
+                <p className="text-muted-foreground mb-4">
+                  Kwoty w nagłówkach tabeli to przykładowe widełki rynkowe, a nie cennik FOTZ Studio.
                 </p>
 
                 <div className="overflow-x-auto mb-8">
@@ -363,7 +367,7 @@ export default function BlogTanieStrony() {
                 </ol>
 
                 <p className="text-muted-foreground mb-6">
-                  Agencja, która odpowiada "tak" na wszystkie te pytania i mieści się w budżecie 2 500–4 000 zł, to dobry wybór. Sprawdź nasze{" "}
+                  Agencja, która odpowiada "tak" na wszystkie te pytania i mieści się w Twoim budżecie, to dobry wybór. Sprawdź nasze{" "}
                   <Link to="/realizacje" className="text-primary hover:underline">
                     realizacje stron internetowych
                   </Link>{" "}
@@ -442,7 +446,7 @@ export default function BlogTanieStrony() {
                   Potrzebujesz przystępnej strony dobrej jakości?
                 </h2>
                 <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                  W Fotz Studio strony wizytówkowe startują od 2 000 zł — z indywidualnym projektem graficznym, SEO w standardzie i pełnym przekazaniem dostępów. Bezpłatna wycena w 24h.
+                  W FOTZ Studio projektujemy strony wizytówkowe z indywidualnym projektem graficznym, podstawowym SEO i pełnym przekazaniem dostępów. Wycenę przygotowujemy po krótkiej rozmowie o zakresie.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button

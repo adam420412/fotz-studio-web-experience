@@ -32,32 +32,32 @@ const faqItems = [
   {
     question: "Ile kosztuje pozycjonowanie w Radomiu?",
     answer:
-      "Pozycjonowanie SEO w Radomiu zaczyna się od 1 000 zł netto miesięcznie — to jedna z najtańszych lokalizacji w Polsce. Dla firm branży lotniczej czy produkcji koszt wynosi 1 800–4 500 zł/mies. Niska konkurencja SEO w Radomiu oznacza szybsze efekty i niższe budżety.",
+      "Wycenę przygotowujemy po rozmowie o zakresie: liczbie fraz i podstron, stanie technicznym strony, potrzebie nowych treści i działaniach link buildingowych. Po audycie dostajesz ofertę z rozpisanymi kosztami.",
   },
   {
     question: "Ile czasu trwa pozycjonowanie w Radomiu?",
     answer:
-      "Radom ma niską konkurencję SEO — to jest wielka zaleta. Pierwsze efekty widoczne są po 2–3 miesiącach. Stabilne pozycje TOP 5 dla większości fraz lokalnych osiągamy w 2–4 miesięcy. To najszybciej rosnące rynki SEO w Polsce.",
+      "SEO to proces rozłożony na miesiące, a tempo zależy od stanu strony, konkurencji na wybrane frazy i zakresu prac. Nie gwarantujemy konkretnej pozycji ani terminu — w raportach pokazujemy, jak zmienia się widoczność i ruch.",
   },
   {
     question: "Czy pozycjonujecie firmy z branży lotniczej w Radomiu?",
     answer:
-      "Tak — WSK Radom to legendarna fabrika komponentów lotniczych. Obsługujemy dostawców, producenci podzespołów, i firmy serwisowe z branży lotniczej. Znamy specyfikę fraz B2B (machining services, aerospace parts) i wiemy, jak docierać do decydentów branży.",
+      "Możemy podjąć się takiego projektu. Dla firm B2B z branży lotniczej i produkcyjnej dobieramy frazy branżowe (także anglojęzyczne, np. machining services, aerospace parts) i treści skierowane do działów zakupów i decydentów.",
   },
   {
     question: "Jakie branże pozycjonujemy w Radomiu?",
     answer:
-      "Doświadczenie mamy w: lotnictwie (WSK Radom), produkcji (skóry, buty), handlu, nieruchomościach, edukacji (UTH), gastronomii, usługach dla firm i e-commerce. Radom to silny ośrodek produkcji i usług.",
+      "Pracujemy z firmami usługowymi, handlowymi, produkcyjnymi, edukacyjnymi i e-commerce. Pracujemy z Poznania, a firmy z Radomia obsługujemy zdalnie — strategię dopasowujemy do branży i lokalnych fraz.",
   },
   {
     question: "Jak wykorzystać potencjał Radomskiego Portu Lotniczego?",
     answer:
-      "Radomski Port Lotniczy rośnie — to szansa dla firm obsługujących turystykę lotniczą, logistykę cargo, charter flights i szkolenia pilotów. Frazy takie jak \"charter Radom\" czy \"szkolenie pilotów\" mają rosnące wyszukiwania. SEO dla branży lotniczej to nasz standard.",
+      "Radomski Port Lotniczy rośnie — to szansa dla firm obsługujących turystykę lotniczą, logistykę cargo, charter flights i szkolenia pilotów. Dla takich firm warto sprawdzić frazy typu \"charter Radom\" czy \"szkolenie pilotów\" — ich potencjał weryfikujemy w audycie.",
   },
   {
     question: "Czy niska konkurencja SEO w Radomiu to na pewno dobrze?",
     answer:
-      "Tak! Niska konkurencja oznacza: 1) szybsze pozycje (2–3 mies.), 2) niższe budżety (od 1 000 zł/mies.), 3) mniejsza liczba zmian algorytmicznych. Niski SEO competition to idealnie dla startupów i małych firm chcących zdominować lokalny rynek.",
+      "To zależy od frazy. W wielu lokalnych zapytaniach konkurencja bywa mniejsza niż w dużych aglomeracjach, ale ocenić to można dopiero w audycie konkretnych fraz i stron konkurentów. Wyniki zależą też od jakości strony i treści.",
   },
   {
     question: "Jakie są trendy w handlu i e-commerce w Radomiu?",
@@ -73,14 +73,10 @@ const faqItems = [
 
 const PozycjonowanieRadom = () => {
   const results = [
-    {
-      metric: "+200%",
-      label: "Wzrost ruchu organicznego",
-      context: "producent podzespołów Radom",
-    },
-    { metric: "TOP 5", label: "Pozycja w Google", context: "frazy lokalne Radom" },
-    { metric: "2 mies.", label: "Czas do pierwszej strony", context: "niska konkurencja" },
-    { metric: "4,7/5", label: "Ocena klientów", context: "7 opinii" },
+    { metric: "Audyt", label: "Start od analizy strony", context: "technika, treści, frazy" },
+    { metric: "Lokalnie", label: "Frazy z Radomia", context: "i z całego Mazowsza" },
+    { metric: "Raporty", label: "Widoczność i ruch", context: "jasne zestawienia" },
+    { metric: "Zdalnie", label: "Pracujemy z Poznania", context: "firmy z Radomia online" },
   ];
 
   const districts = [
@@ -107,7 +103,7 @@ const PozycjonowanieRadom = () => {
     <Layout>
       <SEOHead
         title="Pozycjonowanie Radom — Agencja SEO | Fotz Studio"
-        description="Pozycjonowanie stron Radom. Agencja SEO Fotz Studio — audyt SEO, optymalizacja, link building. Niska konkurencja = szybkie rezultaty. Bezpłatna konsultacja SEO!"
+        description="Pozycjonowanie stron Radom. Agencja SEO Fotz Studio — audyt SEO, optymalizacja, link building. Pracujemy zdalnie z Poznania. Bezpłatna konsultacja SEO!"
         canonical="https://www.fotz-studio.pl/uslugi/pozycjonowanie/radom"
         keywords="pozycjonowanie radom, agencja seo radom, seo radom, pozycjonowanie stron radom, seo dla firm radom, seo mazowsze, pozycjonowanie lokalne radom"
       />
@@ -152,7 +148,7 @@ const PozycjonowanieRadom = () => {
             >
               Pozycjonowanie{" "}
               <span className="text-primary">Radom</span> —
-              Niska konkurencja, szybkie wyniki
+              SEO lokalne dla firm
             </motion.h1>
 
             <motion.p
@@ -161,7 +157,7 @@ const PozycjonowanieRadom = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto"
             >
-              Pomagamy firmom z Radomia zdobyć pierwszą stronę Google. Radom ma niską konkurencję SEO — to oznacza szybsze pozycje i niższe budżety. Od lotnictwa po e-commerce, znamy Radom.
+              Pomagamy firmom z Radomia zwiększać widoczność w Google — od audytu, przez optymalizację, po treści. Pracujemy z Poznania, a firmy z Radomia obsługujemy zdalnie.
             </motion.p>
 
             <motion.div
@@ -188,7 +184,7 @@ const PozycjonowanieRadom = () => {
               transition={{ delay: 0.5 }}
               className="flex flex-wrap justify-center gap-6 mt-12 text-sm text-muted-foreground"
             >
-              {["White-hat SEO", "Niska konkurencja", "Google Analytics 4", "Raport co 2 tygodnie"].map(
+              {["White-hat SEO", "Audyt na start", "Google Analytics 4", "Raport co 2 tygodnie"].map(
                 (item) => (
                   <div key={item} className="flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-primary" />
@@ -236,14 +232,14 @@ const PozycjonowanieRadom = () => {
                   nadal produkuje komponenty dla lotnictwa. Radomski Port Lotniczy rośnie i przyciąga charter, szkolenia pilotów i logistykę.
                 </p>
                 <p>
-                  Niski SEO competition w Radomiu to <strong className="text-foreground">duża szansa dla biznesu</strong>.
-                  Firm, które wdrażają SEO wcześnie, zdominują rynek lokalny zanim konkurencja się obudzi.
-                  Średni koszt wynajęcia eksperta SEO w Radomiu wynosi tylko 1 200–2 000 zł/mies.
+                  Dla wielu lokalnych fraz w Radomiu SEO to <strong className="text-foreground">realna szansa dla biznesu</strong>.
+                  Firmy, które wcześnie zadbają o stronę i treści, łatwiej budują widoczność w swojej okolicy.
+                  Ile to kosztuje, zależy od zakresu — wycenę przygotowujemy po audycie.
                 </p>
                 <p>
                   Branża produkcji skóry i butów to kolejny silny punkt — Radom ma tradycję. Handel lokalny i e-commerce
                   rosną szybko. Dla firm B2B szukających dostawców online — <strong className="text-foreground">Radom
-                  ma ogromny potencjał</strong>.
+                  może mieć duży potencjał</strong>.
                 </p>
               </div>
             </FadeInView>
@@ -280,8 +276,8 @@ const PozycjonowanieRadom = () => {
               Branże, które pozycjonujemy w Radomiu
             </h2>
             <p className="text-muted-foreground max-w-xl mx-auto">
-              Od lotnictwa po e-commerce — mamy doświadczenie
-              w sektorach typowych dla Radomia.
+              Od lotnictwa po e-commerce — strategię dopasowujemy
+              do sektorów typowych dla Radomia.
             </p>
           </FadeInView>
 
@@ -314,7 +310,7 @@ const PozycjonowanieRadom = () => {
               {
                 step: "01",
                 title: "Konsultacja i zakres audytu SEO",
-                desc: "Analizujemy Twoją stronę pod kątem fraz lokalnych (Radom, Mazovia). Patrzysz na konkurencję — w Radomiu jest niowa.",
+                desc: "Analizujemy Twoją stronę pod kątem fraz lokalnych (Radom, Mazovia). Sprawdzamy też, jak silna jest konkurencja na Twoje frazy.",
               },
               {
                 step: "02",
@@ -329,7 +325,7 @@ const PozycjonowanieRadom = () => {
               {
                 step: "04",
                 title: "Raportowanie i skalowanie",
-                desc: "Co 2 tygodnie raportujemy pozycje i ruch. Dzięki niskiej konkurencji, wzrost jest szybki — możesz skalować na kolejne frazy.",
+                desc: "Co 2 tygodnie raportujemy pozycje i ruch. Na podstawie danych decydujemy, czy rozszerzać działania na kolejne frazy.",
               },
             ].map((step, i) => (
               <FadeInView key={i} delay={i * 0.1}>
@@ -355,11 +351,11 @@ const PozycjonowanieRadom = () => {
         <div className="container mx-auto px-4 text-center">
           <FadeInView>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Gotowy na pierwszą stronę Google w Radomiu?
+              Chcesz zwiększyć widoczność w Google w Radomiu?
             </h2>
             <p className="text-primary-foreground/80 text-lg mb-8 max-w-xl mx-auto">
-              Zapytaj o audyt SEO — zakres i wycenę ustalimy na bezpłatnej konsultacji. Niska konkurencja w Radomiu = szybkie wyniki.
-              Przeanalizujemy Twoje frazy i pokażemy, jak zdominować lokalny rynek.
+              Zapytaj o audyt SEO — zakres i wycenę ustalimy na bezpłatnej konsultacji. Przeanalizujemy Twoje frazy i pokażemy, co można poprawić.
+              Nie gwarantujemy konkretnej pozycji — mówimy wprost, czego realnie można oczekiwać.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" asChild className="text-base px-8">

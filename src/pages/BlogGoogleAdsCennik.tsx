@@ -9,15 +9,15 @@ import { Link } from "react-router-dom";
 const faqItems = [
   {
     question: "Ile kosztuje Google Ads — jaki jest minimalny budżet?",
-    answer: "Google Ads nie ma minimalnego budżetu. Możesz zacząć od 300-500 zł miesięcznie i uzyskać pierwsze wyniki. W praktyce dla małych firm lokalnych budżet 500-2 000 zł/miesiąc na kliknięcia wystarcza do sensownych wyników. Dla e-commerce lub silnie konkurencyjnych branż (ubezpieczenia, prawo, nieruchomości) potrzeba 5 000-20 000 zł/miesiąc. Sam budżet na kliknięcia to jednak nie wszystko — do tego dochodzi koszt obsługi kampanii przez agencję.",
+    answer: "Google Ads nie ma minimalnego budżetu. Przykładowe widełki rynkowe (orientacyjne, zależne od branży i konkurencji): na test wiele firm zaczyna od 300-500 zł miesięcznie, małe firmy lokalne często wydają 500-2 000 zł/miesiąc na kliknięcia, a e-commerce i silnie konkurencyjne branże (ubezpieczenia, prawo, nieruchomości) zwykle potrzebują 5 000-20 000 zł/miesiąc. Sam budżet na kliknięcia to jednak nie wszystko — do tego dochodzi koszt obsługi kampanii przez agencję.",
   },
   {
     question: "Ile kosztuje obsługa kampanii Google Ads przez agencję?",
-    answer: "Obsługa kampanii Google Ads przez agencję to zazwyczaj 15-25% budżetu reklamowego lub stała opłata miesięczna w przedziale 400-2 500 zł netto/miesiąc. Przy budżecie 2 000 zł/miesiąc możesz oczekiwać opłaty agencyjnej od 400 do 800 zł. Przy budżecie 10 000 zł — od 1 500 do 2 500 zł.",
+    answer: "Przykładowe widełki rynkowe: agencje rozliczają obsługę Google Ads najczęściej jako 15-25% budżetu reklamowego albo stałą opłatę miesięczną, spotykaną zwykle w przedziale 400-2 500 zł netto/miesiąc. Przy budżecie 2 000 zł/miesiąc model procentowy daje ok. 300-500 zł, choć część agencji stosuje opłatę minimalną. Przy budżecie 10 000 zł — orientacyjnie od 1 500 do 2 500 zł. Konkretna stawka zależy od liczby kampanii, branży i zakresu raportowania.",
   },
   {
     question: "Ile wynosi CPC (koszt za kliknięcie) w Google Ads w Polsce?",
-    answer: "Koszt za kliknięcie (CPC) w Google Ads w Polsce jest bardzo zróżnicowany. Najtańsze frazy to 0,20-0,80 zł za kliknięcie. Średnie branże (marketing, IT, moda) to 1-4 zł za kliknięcie. Drogie branże (ubezpieczenia, prawo, finanse, nieruchomości) to 8-30 zł za kliknięcie.",
+    answer: "Koszt za kliknięcie (CPC) w Google Ads w Polsce jest bardzo zróżnicowany i zmienia się w czasie. Przykładowe widełki rynkowe: najtańsze frazy to 0,20-0,80 zł za kliknięcie. Średnie branże (marketing, IT, moda) to 1-4 zł za kliknięcie. Drogie branże (ubezpieczenia, prawo, finanse, nieruchomości) to 8-30 zł za kliknięcie.",
   },
   {
     question: "Jaka jest różnica między Google Ads a pozycjonowaniem SEO?",
@@ -25,7 +25,7 @@ const faqItems = [
   },
   {
     question: "Ile kosztuje reklama w Google Ads dla małej firmy?",
-    answer: "Dla małej firmy lokalnej (np. salon fryzjerski, gabinet dentystyczny, usługi budowlane) realistyczny budżet Google Ads to 800-2 000 zł/miesiąc na kliknięcia + 400-600 zł za obsługę agencji. Łącznie 1 200-2 600 zł/miesiąc. Przy dobrze zoptymalizowanej kampanii dla usług lokalnych możesz oczekiwać 30-100 kliknięć miesięcznie.",
+    answer: "Dla małej firmy lokalnej (np. salon fryzjerski, gabinet dentystyczny, usługi budowlane) przykładowe widełki rynkowe to 800-2 000 zł/miesiąc na kliknięcia + 400-600 zł za obsługę agencji, czyli łącznie ok. 1 200-2 600 zł/miesiąc. Liczba kliknięć i zapytań zależy od stawek w Twojej branży, konkurencji w okolicy i jakości strony docelowej.",
   },
   {
     question: "Co to są kampanie Performance Max w Google Ads?",
@@ -80,14 +80,14 @@ export default function BlogGoogleAdsCennik() {
               Google Ads cennik 2025 — ile kosztuje reklama w Google?
             </h1>
             <p className="text-xl text-gray-300 mb-8 max-w-3xl">
-              Budżet reklamowy, koszt obsługi agencji, CPC w branżach. Ile naprawdę kosztuje Google Ads i kiedy się opłaca?
+              Budżet reklamowy, koszt obsługi agencji, CPC w branżach. Ile naprawdę kosztuje Google Ads i kiedy się opłaca? Podane kwoty to przykładowe widełki rynkowe, a nie cennik FOTZ Studio.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {[
-                { label: "Min. budżet", value: "300 zł" },
-                { label: "CPC od", value: "0,20 zł" },
-                { label: "Obsługa agencji", value: "15–25%" },
-                { label: "Efekty od", value: "24–48h" },
+                { label: "Budżet testowy (rynkowo)", value: "300 zł" },
+                { label: "CPC od (rynkowo)", value: "0,20 zł" },
+                { label: "Obsługa agencji (rynkowo)", value: "15–25%" },
+                { label: "Start emisji", value: "24–48h" },
               ].map((s) => (
                 <div key={s.label} className="bg-white/10 rounded-lg p-4 text-center">
                   <div className="text-lg font-bold text-sky-400">{s.value}</div>
@@ -118,7 +118,7 @@ export default function BlogGoogleAdsCennik() {
                 <thead>
                   <tr className="bg-gray-100">
                     <th className="text-left p-3 font-semibold text-gray-700 border border-gray-200">Branża</th>
-                    <th className="text-left p-3 font-semibold text-gray-700 border border-gray-200">Średni CPC</th>
+                    <th className="text-left p-3 font-semibold text-gray-700 border border-gray-200">Przykładowy CPC (rynkowo)</th>
                     <th className="text-left p-3 font-semibold text-gray-700 border border-gray-200">Przykładowe frazy</th>
                   </tr>
                 </thead>
@@ -154,7 +154,7 @@ export default function BlogGoogleAdsCennik() {
                   <tr className="bg-gray-100">
                     <th className="text-left p-3 font-semibold text-gray-700 border border-gray-200">Typ kampanii</th>
                     <th className="text-left p-3 font-semibold text-gray-700 border border-gray-200">Kiedy stosować?</th>
-                    <th className="text-left p-3 font-semibold text-gray-700 border border-gray-200">Orientacyjny koszt</th>
+                    <th className="text-left p-3 font-semibold text-gray-700 border border-gray-200">Orientacyjny koszt (widełki rynkowe)</th>
                     <th className="text-left p-3 font-semibold text-gray-700 border border-gray-200">Opis</th>
                   </tr>
                 </thead>
@@ -175,7 +175,7 @@ export default function BlogGoogleAdsCennik() {
           <FadeInView>
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Ile kosztuje obsługa Google Ads przez agencję?</h2>
             <p className="text-gray-600 mb-4">
-              Obsługa kampanii Google Ads przez agencję to zazwyczaj jedna z dwóch modeli rozliczeń. <strong>Procent od budżetu</strong> — najczęściej 15-25% miesięcznego wydatku reklamowego. Przy budżecie 2 000 zł to 300-500 zł opłaty agencyjnej. <strong>Stała opłata miesięczna</strong> — zazwyczaj 500-2 500 zł netto, niezależnie od budżetu. Bardziej przewidywalne koszty, dobra opcja przy budżetach powyżej 5 000 zł/miesiąc.
+              Obsługa kampanii Google Ads przez agencję to zazwyczaj jeden z dwóch modeli rozliczeń (poniżej przykładowe widełki rynkowe). <strong>Procent od budżetu</strong> — najczęściej 15-25% miesięcznego wydatku reklamowego. Przy budżecie 2 000 zł to 300-500 zł opłaty agencyjnej. <strong>Stała opłata miesięczna</strong> — zazwyczaj 500-2 500 zł netto, niezależnie od budżetu. Bardziej przewidywalne koszty, dobra opcja przy budżetach powyżej 5 000 zł/miesiąc.
             </p>
 
             <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-10">Google Ads — kiedy się opłaca, a kiedy nie?</h2>
@@ -186,7 +186,7 @@ export default function BlogGoogleAdsCennik() {
               Google Ads może nie opłacać się gdy: Twój produkt jest bardzo niszowy (brak wyszukiwań), marże są niskie (np. produkty za 20 zł), nie masz strony z wyraźnym CTA lub nie śledzisz co dzieje się po kliknięciu w reklamę.
             </p>
             <p className="text-gray-600 mb-4">
-              Szukasz agencji do prowadzenia kampanii Google Ads? <Link to="/kontakt" className="text-blue-600 hover:underline">Skontaktuj się z nami</Link> po bezpłatną analizę Twojej sytuacji i propozycję budżetu.
+              Szukasz agencji do prowadzenia kampanii Google Ads? <Link to="/kontakt" className="text-blue-600 hover:underline">Skontaktuj się z nami</Link> — po rozmowie o Twoich celach zaproponujemy budżet i przygotujemy wycenę obsługi.
             </p>
           </FadeInView>
         </div>

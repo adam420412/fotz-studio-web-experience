@@ -43,14 +43,14 @@ const StronyInternetoweOlsztyn = () => {
   ];
 
   const caseStudies = [
-    { title: "Apartamenty Chorwacja", category: "Strona rezerwacyjna", result: "+180% rezerwacji online", link: "/realizacje/apartamenty-chorwacja", image: apartamentyImg },
+    { title: "Apartamenty Chorwacja", category: "Strona rezerwacyjna", result: "Strona z systemem rezerwacji online", link: "/realizacje/apartamenty-chorwacja", image: apartamentyImg },
     { title: "Victory Cars", category: "Strona motoryzacyjna", result: "Nowoczesny design premium", link: "/realizacje/victory-cars", image: victoryCarsImg },
-    { title: "Cute Dumpling", category: "Strona gastronomiczna", result: "+250% ruchu organicznego", link: "/realizacje/cute-dumpling", image: cuteDumplingImg },
+    { title: "Cute Dumpling", category: "Strona gastronomiczna", result: "Strona gastronomiczna z menu i galerią", link: "/realizacje/cute-dumpling", image: cuteDumplingImg },
   ];
 
   const faqItems = [
     { question: "Ile kosztuje strona internetowa w Olsztynie?", answer: "Koszt zależy od zakresu, treści i integracji. Prześlij brief, aby otrzymać indywidualną ofertę z harmonogramem i rozpisanymi kosztami." },
-    { question: "Jak długo trwa tworzenie strony www?", answer: "Czas realizacji zależy od złożoności projektu. Prosta strona wizytówkowa to 2-3 tygodnie, rozbudowana strona firmowa 4-6 tygodni, sklep internetowy 6-10 tygodni." },
+    { question: "Jak długo trwa tworzenie strony www?", answer: "Czas realizacji zależy od złożoności projektu. Harmonogram ustalamy po briefie — zależy od liczby podstron, gotowości treści i integracji." },
     { question: "Czy oferujecie wsparcie po uruchomieniu strony?", answer: "Tak, zapewniamy wsparcie techniczne po uruchomieniu. Oferujemy pakiety serwisowe obejmujące aktualizacje, kopie zapasowe i pomoc techniczną." },
     { question: "Czy strona będzie responsywna?", answer: "Wszystkie nasze strony są w pełni responsywne i dostosowane do urządzeń mobilnych. Projektujemy w podejściu mobile-first." },
     { question: "Czy pomagacie w pozycjonowaniu strony?", answer: "Tak, każda strona jest zoptymalizowana pod SEO. Oferujemy również kompleksowe usługi pozycjonowania dla firm z Olsztyna." },
@@ -60,17 +60,17 @@ const StronyInternetoweOlsztyn = () => {
   const stats = [
     { value: "WWW", label: "Strony i sklepy", icon: Layers },
     { value: "UX", label: "Projekt dla odbiorcy", icon: Star },
-    { value: "5 lat", label: "Doświadczenia", icon: Clock },
+    { value: "Zdalnie", label: "Obsługa z Poznania", icon: Clock },
     { value: "Kontakt", label: "Uzgodniona opieka", icon: Headphones },
   ];
 
   const benefits = [
-    "Znajomość olsztyńskiego rynku",
+    "Pracujemy z Poznania, firmy z Olsztyna obsługujemy zdalnie",
     "Kompleksowa obsługa od projektu po wdrożenie",
     "SEO w standardzie każdej strony",
     "Responsywny design mobile-first",
     "Wsparcie techniczne po uruchomieniu",
-    "Konkurencyjne ceny bez ukrytych kosztów"
+    "Wycena po rozmowie o zakresie projektu"
   ];
 
   const introContent = {
@@ -197,7 +197,7 @@ const StronyInternetoweOlsztyn = () => {
           </div>
         </section>
 
-        <CityPricingCards pricing={pricing} title="Cennik stron internetowych" subtitle="Transparentne ceny bez ukrytych kosztów" cityName="Olsztyn" />
+        <CityPricingCards pricing={pricing} title="Cennik stron internetowych" subtitle="Wycenę przygotowujemy po rozmowie o zakresie, liczbie podstron, treściach i integracjach" cityName="Olsztyn" />
 
         <CityLinksSection currentCity="Olsztyn" />
 
@@ -238,12 +238,12 @@ const StronyInternetoweOlsztyn = () => {
             <p className="text-muted-foreground mb-4">
               Olsztyn to stolica jednego z najbardziej atrakcyjnych turystycznie
               regionów w Polsce — Warmii i Mazur. Jeziora, lasy, Wielkie Jeziora Mazurskie
-              i Kanał Elbląski przyciągają rocznie miliony turystów, co tworzy ogromny popyt
+              i Kanał Elbląski przyciągają wielu turystów, co tworzy popyt
               na profesjonalne strony internetowe: hotele, pensjonaty, agencje turystyczne,
               wypożyczalnie jachtów i kajaków, restauracje i agroturystyki.
             </p>
             <p className="text-muted-foreground mb-6">
-              Olsztyn jest też centrum usług, akademickim (UWM — 14 wydziałów) i rosnącym
+              Olsztyn jest też centrum usług, akademickim (UWM) i rosnącym
               centrum logistycznym. Firmy spoza turystyki — producenci mebli, firmy budowlane,
               biura rachunkowe, gabinety medyczne — coraz częściej inwestują w obecność
               online, by dotrzeć do klientów z całego regionu.
@@ -278,8 +278,8 @@ const StronyInternetoweOlsztyn = () => {
             </p>
             <p className="text-muted-foreground">
               Zdalny model współpracy sprawia, że obsługa firm z Olsztyna jest tak samo
-              sprawna jak z Warszawy czy Krakowa. Projekt w 3–5 tygodni, bezpłatna wycena
-              w 24 godziny. Skontaktuj się z nami i opowiedz o swoim biznesie —
+              sprawna jak z Warszawy czy Krakowa. Pracujemy z Poznania, a firmy z Olsztyna
+              obsługujemy zdalnie; harmonogram i wycenę ustalamy po rozmowie o zakresie. Skontaktuj się z nami i opowiedz o swoim biznesie —
               stworzymy stronę, która będzie pracować dla Ciebie przez cały rok.
             </p>
           

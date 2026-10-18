@@ -307,7 +307,7 @@ W e-commerce strona sprzedaje przez całą dobę. Wyniki sklepu zależą od asor
       <Layout>
         <PageBreadcrumbs items={[
             { name: 'Usługi', url: '/uslugi' },
-            { name: 'Tworzenie stron internetowych', url: "https://www.fotz-studio.pl" },
+            { name: 'Tworzenie stron internetowych', url: "/uslugi/tworzenie-stron-internetowych" },
           ]}/>
 
         {/* Hero Section */}

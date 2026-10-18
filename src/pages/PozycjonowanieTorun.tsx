@@ -1,7 +1,7 @@
 import { SEOHead } from "@/components/seo/SEOHead";
 import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { Layout } from "@/components/layout/Layout";
-import { Search, TrendingUp, MapPin, Star, Award, CheckCircle } from "lucide-react";
+import { Search, TrendingUp, MapPin, Award, CheckCircle } from "lucide-react";
 
 export default function PozycjonowanieTorun() {
   const breadcrumbs = [
@@ -13,7 +13,7 @@ export default function PozycjonowanieTorun() {
   const faqs = [
     {
       question: "Ile czasu zajmuje pozycjonowanie strony w Toruniu?",
-      answer: "Typowo widoczne efekty pozycjonowania lokalnego pojawiają sie w ciagu 2-3 miesiecy. Jednak pene wyniki mogą zajac 4-6 miesiecy, w zaleznosci od konkurencyjnosci slow kluczowych i stanu poczatkowego Twojej strony. Pracujemy nad dlugookresowym wzrostem rankingu."
+      answer: "Pozycjonowanie to proces dlugofalowy. Tempo efektow zalezy od konkurencyjnosci slow kluczowych, stanu poczatkowego Twojej strony i zakresu prac, dlatego nie podajemy sztywnych terminow ani nie gwarantujemy konkretnych pozycji. Regularnie raportujemy, co sie zmienia."
     },
     {
       question: "Jakie sa najlepsze slow kluczowe dla firm w Toruniu?",
@@ -92,7 +92,7 @@ export default function PozycjonowanieTorun() {
                 </div>
                 <h3 className="font-bold text-lg mb-2">Wieksze konwersje</h3>
                 <p className="text-gray-600">
-                  Lokalni szukajacy maja wyzsze szanse zamiany na klientow platacych.
+                  Osoby szukajace uslug w swoim miescie czesto sa juz blisko decyzji o zakupie.
                 </p>
               </div>
 
@@ -100,9 +100,9 @@ export default function PozycjonowanieTorun() {
                 <div className="flex items-center justify-center w-12 h-12 bg-purple-100 rounded-lg mb-4">
                   <Search className="text-purple-600" size={24} />
                 </div>
-                <h3 className="font-bold text-lg mb-2">Wysoka pozycja w Google</h3>
+                <h3 className="font-bold text-lg mb-2">Widocznosc w Google</h3>
                 <p className="text-gray-600">
-                  Pozycjonowanie lokalne zwiekszy Twoja widocznosc w wynikach wyszukiwania.
+                  Pozycjonowanie lokalne pomaga poprawic widocznosc w wynikach wyszukiwania.
                 </p>
               </div>
 
@@ -189,91 +189,37 @@ export default function PozycjonowanieTorun() {
         {/* Pricing */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-12 text-center">Pakiety cenowe pozycjonowania</h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="bg-white p-8 rounded-lg shadow hover:shadow-xl transition border border-gray-200">
-                <h3 className="text-2xl font-bold mb-4">Startowy</h3>
-                <div className="text-4xl font-bold text-blue-600 mb-2">1.500 zl</div>
-                <p className="text-gray-600 mb-6">na miesiac</p>
-                <ul className="space-y-3 mb-8">
-                  <li className="flex items-center gap-2 text-gray-700">
-                    <CheckCircle className="text-green-600" size={18} />
-                    Optymalizacja strony internetowej
-                  </li>
-                  <li className="flex items-center gap-2 text-gray-700">
-                    <CheckCircle className="text-green-600" size={18} />
-                    Profil Google My Business
-                  </li>
-                  <li className="flex items-center gap-2 text-gray-700">
-                    <CheckCircle className="text-green-600" size={18} />
-                    Raport miesieczy
-                  </li>
-                </ul>
-                <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-700 transition">
-                  Wybierz
-                </a>
-              </div>
-
-              <div className="bg-white p-8 rounded-lg shadow hover:shadow-xl transition border-2 border-blue-600">
-                <div className="bg-blue-600 text-white px-3 py-1 rounded-full inline-block mb-4 text-sm font-semibold">
-                  Najpopularniejszy
-                </div>
-                <h3 className="text-2xl font-bold mb-4">Standard</h3>
-                <div className="text-4xl font-bold text-blue-600 mb-2">3.000 zl</div>
-                <p className="text-gray-600 mb-6">na miesiac</p>
-                <ul className="space-y-3 mb-8">
-                  <li className="flex items-center gap-2 text-gray-700">
-                    <CheckCircle className="text-green-600" size={18} />
-                    Wszystko z pakietu Startowy
-                  </li>
-                  <li className="flex items-center gap-2 text-gray-700">
-                    <CheckCircle className="text-green-600" size={18} />
-                    Badania slow kluczowych
-                  </li>
-                  <li className="flex items-center gap-2 text-gray-700">
-                    <CheckCircle className="text-green-600" size={18} />
-                    Link building
-                  </li>
-                  <li className="flex items-center gap-2 text-gray-700">
-                    <CheckCircle className="text-green-600" size={18} />
-                    Wsparcie 2x w tygodniu
-                  </li>
-                </ul>
-                <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-700 transition">
-                  Wybierz
-                </a>
-              </div>
-
-              <div className="bg-white p-8 rounded-lg shadow hover:shadow-xl transition border border-gray-200">
-                <h3 className="text-2xl font-bold mb-4">Premium</h3>
-                <div className="text-4xl font-bold text-blue-600 mb-2">5.000 zl</div>
-                <p className="text-gray-600 mb-6">na miesiac</p>
-                <ul className="space-y-3 mb-8">
-                  <li className="flex items-center gap-2 text-gray-700">
-                    <CheckCircle className="text-green-600" size={18} />
-                    Wszystko z pakietu Standard
-                  </li>
-                  <li className="flex items-center gap-2 text-gray-700">
-                    <CheckCircle className="text-green-600" size={18} />
-                    Zaawansowana strategia SEO
-                  </li>
-                  <li className="flex items-center gap-2 text-gray-700">
-                    <CheckCircle className="text-green-600" size={18} />
-                    Zarządzanie reputacja online
-                  </li>
-                  <li className="flex items-center gap-2 text-gray-700">
-                    <CheckCircle className="text-green-600" size={18} />
-                    Wsparcie 5x w tygodniu
-                  </li>
-                  <li className="flex items-center gap-2 text-gray-700">
-                    <CheckCircle className="text-green-600" size={18} />
-                    Doradztwo strategiczne
-                  </li>
-                </ul>
-                <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-700 transition">
-                  Wybierz
-                </a>
-              </div>
+            <h2 className="text-3xl font-bold mb-12 text-center">Od czego zależy wycena pozycjonowania</h2>
+            <div className="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow border border-gray-200">
+              <p className="text-gray-700 mb-6">
+                Nie mamy sztywnych pakietow. Wycene przygotowujemy po rozmowie o zakresie i po wstepnym audycie strony.
+                Na koszt wplywaja przede wszystkim:
+              </p>
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-center gap-2 text-gray-700">
+                  <CheckCircle className="text-green-600" size={18} />
+                  Stan techniczny i wielkosc strony
+                </li>
+                <li className="flex items-center gap-2 text-gray-700">
+                  <CheckCircle className="text-green-600" size={18} />
+                  Liczba fraz i uslug, ktore chcesz rozwijac
+                </li>
+                <li className="flex items-center gap-2 text-gray-700">
+                  <CheckCircle className="text-green-600" size={18} />
+                  Konkurencyjnosc branzy w Toruniu i regionie
+                </li>
+                <li className="flex items-center gap-2 text-gray-700">
+                  <CheckCircle className="text-green-600" size={18} />
+                  Zakres tresci, link buildingu i pracy z profilem Google
+                </li>
+              </ul>
+              <p className="text-gray-600 mb-6">
+                Nie gwarantujemy konkretnej pozycji w Google — wyniki zaleza od konkurencji i algorytmu wyszukiwarki.
+                Pracujemy z Poznania, firmy z Torunia obslugujemy zdalnie.
+              </p>
+              <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-700 transition">
+                Popros o wycene
+              </a>
             </div>
           </div>
         </section>
@@ -329,7 +275,7 @@ export default function PozycjonowanieTorun() {
         {/* Timeline */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-12 text-center">Oś czasu efektów pozycjonowania</h2>
+            <h2 className="text-3xl font-bold mb-12 text-center">Etapy pozycjonowania</h2>
             <div className="max-w-3xl mx-auto">
               <div className="relative">
                 {/* Timeline line */}
@@ -339,9 +285,9 @@ export default function PozycjonowanieTorun() {
                 <div className="space-y-12">
                   <div className="md:flex md:gap-8">
                     <div className="md:w-1/2 md:text-right md:pr-8">
-                      <h3 className="text-xl font-bold mb-2">Miesiace 1-3</h3>
+                      <h3 className="text-xl font-bold mb-2">Start</h3>
                       <p className="text-gray-600">
-                        Badania, optymalizacja strony, profil Google My Business. Pierwsze widoczne efekty w wynikach wyszukiwania.
+                        Audyt, badania slow kluczowych, optymalizacja strony i profilu Google My Business.
                       </p>
                     </div>
                     <div className="absolute left-0 md:left-1/2 md:-ml-4 mt-2 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">
@@ -351,9 +297,9 @@ export default function PozycjonowanieTorun() {
 
                   <div className="md:flex md:gap-8">
                     <div className="md:w-1/2 md:ml-auto md:pl-8">
-                      <h3 className="text-xl font-bold mb-2">Miesiace 4-6</h3>
+                      <h3 className="text-xl font-bold mb-2">Rozwoj</h3>
                       <p className="text-gray-600">
-                        Link building i zaawansowana optymalizacja. Powazne wzrosty rankingu dla slow kluczowych.
+                        Tresci, link building i dalsza optymalizacja na podstawie danych z Google Search Console.
                       </p>
                     </div>
                     <div className="absolute left-0 md:left-1/2 md:-ml-4 mt-2 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">
@@ -363,9 +309,9 @@ export default function PozycjonowanieTorun() {
 
                   <div className="md:flex md:gap-8">
                     <div className="md:w-1/2 md:text-right md:pr-8">
-                      <h3 className="text-xl font-bold mb-2">Miesiace 6+</h3>
+                      <h3 className="text-xl font-bold mb-2">Utrzymanie</h3>
                       <p className="text-gray-600">
-                        Stabilne pozycje w szczycie wyników, reguly inbound leads, pelen ROI z inwestycji SEO.
+                        Monitorowanie pozycji i ruchu, regularne raporty i kolejne usprawnienia. Tempo efektow zalezy od konkurencji w branzy.
                       </p>
                     </div>
                     <div className="absolute left-0 md:left-1/2 md:-ml-4 mt-2 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">
@@ -401,7 +347,7 @@ export default function PozycjonowanieTorun() {
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold mb-6">Gotowy na wzrost biznesu?</h2>
             <p className="text-xl mb-8 opacity-90">
-              Zacznij pozycjonowanie dzisiaj i zobaczy efekty w ciagu kilku miesiecy.
+              Porozmawiajmy o Twojej stronie i celach — przygotujemy plan i wycene.
             </p>
             <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition text-lg">
               Zamow bezplatna konsultacje

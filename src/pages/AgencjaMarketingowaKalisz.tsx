@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
-import { useState } from "react";
 import {
   Building2,
   TrendingUp,
@@ -32,7 +31,7 @@ const services = [
   {
     icon: TrendingUp,
     title: "SEO Lokalne",
-    description: "Pozycjonowanie w Kaliszu i okolicach. Dominacja w lokalnych wynikach Google i Google Maps.",
+    description: "Pozycjonowanie w Kaliszu i okolicach. Praca nad widocznością w lokalnych wynikach Google i Google Maps — bez gwarancji konkretnej pozycji.",
   },
   {
     icon: Smartphone,
@@ -64,7 +63,7 @@ const services = [
 const packages = [
   {
     name: "Start",
-    price: "od 1 499",
+    price: "Wycena indywidualna",
     description: "Pakiet dla małych firm i startupów",
     features: [
       "Audyt SEO lokalne",
@@ -77,7 +76,7 @@ const packages = [
   },
   {
     name: "Biznes",
-    price: "od 3 999",
+    price: "Wycena indywidualna",
     description: "Kompleksowa obsługa marketingowa",
     features: [
       "Pełne SEO lokalne Kalisz",
@@ -91,7 +90,7 @@ const packages = [
   },
   {
     name: "Premium",
-    price: "od 7 999",
+    price: "Wycena indywidualna",
     description: "Strategia marketingowa na miarę",
     features: [
       "Zaawansowane SEO lokalne",
@@ -109,7 +108,7 @@ const packages = [
 const faqItems = [
   {
     question: "Dlaczego warto wybrac agencje marketingowa w Kaliszu?",
-    answer: "Agencja marketingowa z Kalisza zna lokalny rynek, rozumie konkurencję i specyfike biznesu w regionie. Fotz Studio połączy profesjonalne usługi z wiedzą na temat preferencji klientów w Kaliszu i okolicach Wielkopolski. Dla małych firm i średnich przedsiębiorstw to idealne rozwiązanie - nie płacisz za obcy zespół z dużego miasta, a dostajesz ekspertyzę i zaangażowanie.",
+    answer: "Fotz Studio pracuje z Poznania, a firmy z Kalisza i okolic Wielkopolski obsługujemy zdalnie. Przed startem analizujemy lokalną konkurencję i frazy wpisywane przez klientów z Kalisza. W jednym miejscu masz produkcję video i foto, stronę internetową, social media i kampanie reklamowe.",
   },
   {
     question: "Jakie usługi oferuje agencja marketingowa Fotz Studio?",
@@ -117,7 +116,7 @@ const faqItems = [
   },
   {
     question: "Ile kosztuje kampania marketingowa dla firmy z Kalisza?",
-    answer: "Ceny zaczynają się od 1 499 zł za pakiet Start. Oferujemy trzy główne pakiety: Start dla startupów i małych firm, Biznes dla średnich przedsiębiorstw (od 3 999 zł) i Premium dla dużych kampanii (od 7 999 zł). Przygotowujemy także wyceny indywidualne dostosowane do Twoich potrzeb i budżetu.",
+    answer: "Wycenę przygotowujemy po rozmowie o zakresie: liczbie kanałów, liczbie publikacji, potrzebie produkcji video i foto oraz częstotliwości raportów. Budżet reklamowy płacony Google lub Meta jest zawsze osobno od naszego wynagrodzenia.",
   },
   {
     question: "Jak działa SEO lokalne dla firm z Kalisza?",
@@ -125,31 +124,13 @@ const faqItems = [
   },
   {
     question: "Jak długo trwa pozycjonowanie strony w Kaliszu?",
-    answer: "Pierwsze efekty SEO lokalne widać zwykle po 4-6 tygodniach. Pełne rezultaty zajmują 3-6 miesięcy, w zależności od konkurencji i stanu startu Twojej strony. Naszym celem jest długotrwały wzrost ruchu organicznego, a nie szybkie ale tymczasowe efekty.",
+    answer: "Tempo efektów SEO lokalnego zależy od konkurencji w branży i stanu startowego Twojej strony, dlatego nie podajemy sztywnych terminów ani nie gwarantujemy pozycji. Naszym celem jest długotrwały wzrost ruchu organicznego, a nie szybkie ale tymczasowe efekty.",
   },
   {
     question: "Czy mogę anulowac wspolprace z agencja marketingowa?",
     answer: "Tak, umowy można anulować. Zwykle wymagamy 30-dniowego okresu wypowiedzenia. Najbardziej efektywne kampanie to jednak te długoterminowe - rekomendujemy minimum 3-6 miesięcy współpracy, aby zaobserwować solidne rezultaty.",
   },
 ];
-
-const stats = [
-  { value: 200, suffix: "+", label: "Zadowolonych klientów" },
-  { value: 15, suffix: "+", label: "Lat doświadczenia" },
-  { value: 500, suffix: "%", label: "Średni ROI" },
-  { value: 98, suffix: "%", label: "Retencja klientów" },
-];
-
-function StatCounter({ value, suffix, label }: { value: number; suffix: string; label: string }) {
-  return (
-    <div className="text-center">
-      <div className="text-4xl md:text-5xl font-bold text-primary">
-        {value}{suffix}
-      </div>
-      <div className="text-sm text-muted-foreground mt-2">{label}</div>
-    </div>
-  );
-}
 
 export default function AgencjaMarketingowaKalisz() {
   return (
@@ -188,15 +169,15 @@ export default function AgencjaMarketingowaKalisz() {
             >
               <Badge variant="outline" className="mb-6 text-primary border-primary/30">
                 <MapPin className="w-4 h-4 mr-2" />
-                Agencja marketingowa w Kaliszu
+                Marketing dla firm z Kalisza
               </Badge>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-foreground mb-6">
                 Agencja Marketingowa <br className="hidden md:block" />
                 <span className="text-primary">Kalisz</span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-                Fotz Studio to profesjonalna agencja marketingowa w Kaliszu. Pomagamy firmom z Kalisza i okolic
-                wzrostu online poprzez SEO lokalne, kampanie Google Ads, social media marketing i tworzenie stron internetowych.
+                Fotz Studio to agencja marketingowa z Poznania, która obsługuje firmy z Kalisza zdalnie. Pomagamy firmom z Kalisza i okolic
+                rozwijać się online poprzez SEO lokalne, kampanie Google Ads, social media marketing i tworzenie stron internetowych.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild size="lg" className="gap-2">
@@ -212,23 +193,6 @@ export default function AgencjaMarketingowaKalisz() {
                   </a>
                 </Button>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Stats Section */}
-        <section className="py-16 bg-secondary/30">
-          <div className="container-wide">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              {stats.map((stat, index) => (
-                <div
-                  key={stat.label}
-                 
-                 
-                >
-                  <StatCounter {...stat} />
-                </div>
-              ))}
             </div>
           </div>
         </section>
@@ -285,7 +249,7 @@ export default function AgencjaMarketingowaKalisz() {
                 Dlaczego Fotz Studio?
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Poznajcie przyczyny, dla których firmy z Kalisza wybierają nas
+                Jak pracujemy z firmami z Kalisza
               </p>
             </div>
 
@@ -293,23 +257,23 @@ export default function AgencjaMarketingowaKalisz() {
               {[
                 {
                   icon: Users,
-                  title: "Doświadczony Zespół",
-                  description: "Nasz zespół ma 15+ lat doświadczenia w marketingu. Pracowaliśmy z setkami firm, w tym z Kalisza.",
+                  title: "Wszystko w jednym zespole",
+                  description: "Produkcja video i foto, strony internetowe, social media i kampanie reklamowe prowadzone przez jeden zespół z Poznania.",
                 },
                 {
                   icon: TrendingUp,
-                  title: "Gwarantowane Wyniki",
-                  description: "Średni wzrost ruchu organicznego: 300-500%. Poprze metryki widać efekty już po kilku miesiącach.",
+                  title: "Przejrzyste raporty",
+                  description: "Ustalamy mierzalne cele i regularnie pokazujemy, co zrobiliśmy i jak zmieniają się wskaźniki. Nie obiecujemy konkretnych wyników z góry.",
                 },
                 {
                   icon: Star,
-                  title: "Niskie Koszty Startu",
-                  description: "Pakiety od 1 499 zł/miesiąc. Dla każdego budżetu. Bez ukrytych opłat.",
+                  title: "Wycena po rozmowie",
+                  description: "Zakres i wycenę ustalamy po rozmowie o celach i kanałach. Budżet reklamowy płacony platformom jest zawsze osobno.",
                 },
                 {
                   icon: Zap,
-                  title: "Szybka Implementacja",
-                  description: "Zaczynamy w ciągu 48 godzin. Kampanie na żywo w ciągu tygodnia.",
+                  title: "Współpraca zdalna",
+                  description: "Pracujemy z Poznania, a z firmami z Kalisza kontaktujemy się online i telefonicznie. Harmonogram ustalamy na starcie.",
                 },
               ].map((item, index) => (
                 <div
@@ -342,10 +306,10 @@ export default function AgencjaMarketingowaKalisz() {
               className="text-center mb-12"
             >
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
-                Pakiety i cennik
+                Zakresy współpracy
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Wybierz pakiet dostosowany do rozmiaru Twojej firmy. Wszystkie ceny netto.
+                Wycenę przygotowujemy po rozmowie o zakresie, liczbie kanałów i częstotliwości działań. Budżet reklamowy osobno.
               </p>
             </div>
 
@@ -359,7 +323,7 @@ export default function AgencjaMarketingowaKalisz() {
                   <Card className={`h-full relative ${pkg.popular ? "border-primary shadow-lg shadow-primary/10" : "border-border"}`}>
                     {pkg.popular && (
                       <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                        <Badge className="bg-primary text-primary-foreground">Najpopularniejszy</Badge>
+                        <Badge className="bg-primary text-primary-foreground">Kompleksowy</Badge>
                       </div>
                     )}
                     <CardContent className="p-6 pt-8">
@@ -370,10 +334,9 @@ export default function AgencjaMarketingowaKalisz() {
                         {pkg.description}
                       </p>
                       <div className="mb-6">
-                        <span className="text-3xl font-bold text-primary">
+                        <span className="text-2xl font-bold text-primary">
                           {pkg.price}
                         </span>
-                        <span className="text-muted-foreground ml-1">PLN/msc</span>
                       </div>
                       <ul className="space-y-3 mb-6">
                         {pkg.features.map((feature, i) => (
@@ -490,7 +453,7 @@ export default function AgencjaMarketingowaKalisz() {
                 lokalnym, kampaniach Google Ads, Facebook Ads i zarządzaniu social media dla biznesu lokalnego.
               </p>
               <p className="text-muted-foreground mb-6">
-                Dla firm z Kalisza SEO lokalne to najskuteczniejszy sposób na znalezienie nowych klientów.
+                Dla firm z Kalisza SEO lokalne to jeden ze sposobów na docieranie do nowych klientów.
                 Gdy ktoś w Kaliszu szuka Twojej usługi (fryzjer, dentystka, hydraulik, restauracja), chce
                 znaleźć kogoś z bliskiego sąsiedztwa. My pomagamy firmom pojawiać się wyżej w wynikach
                 wyszukiwania dla zapytań zawierających Kalisz.
@@ -514,7 +477,7 @@ export default function AgencjaMarketingowaKalisz() {
                 Social Media Marketing dla Firm z Kalisza
               </h2>
               <p className="text-muted-foreground mb-4">
-                Zarządzanie social media to zdecydowanie najskuteczniejszy sposób na budowanie relacji
+                Zarządzanie social media pomaga budować relacje
                 z klientami. Facebook i Instagram pozwalają Ci na bezpośrednie dotarcie do osób z Kalisza
                 i okolic, pokazanie Twojej osobowości biznesu i zbudowanie lojalności.
               </p>
@@ -535,7 +498,7 @@ export default function AgencjaMarketingowaKalisz() {
               </p>
               <p className="text-muted-foreground mb-6">
                 Dla firm z Kalisza kampanie lokalnie ukierunkowane (na mieszkańców Kalisza i okolic)
-                dają świetne rezultaty. Możemy optymalizować kampanie pod względem geografii, aby
+                pozwalają nie wydawać budżetu na osoby spoza obszaru działania. Możemy optymalizować kampanie pod względem geografii, aby
                 osiągać tylko osoby z Twojej docelowej lokalizacji.
               </p>
 
@@ -558,11 +521,11 @@ export default function AgencjaMarketingowaKalisz() {
               </h2>
               <p className="text-muted-foreground mb-4">
                 Fotz Studio pracuje z firmami z Kalisza, ale także z Ostrowa Wielkopolskiego, Konina,
-                Sieradza i całej Wielkopolski. Dobrze znamy lokalny rynek, konkurencję i potrzeby biznesu
-                w każdej z tych miast. To pozwala nam na tworzenie strategii dedykowanych i skutecznych.
+                Sieradza i całej Wielkopolski — pracujemy z Poznania, a te firmy obsługujemy zdalnie. Przed startem
+                analizujemy lokalną konkurencję i potrzeby klientów w danym mieście.
               </p>
               <p className="text-muted-foreground mb-6">
-                Jeżeli Twoja firma szuka profesjonalnej agencji marketingowej w Kaliszu, zapraszamy do
+                Jeżeli Twoja firma z Kalisza szuka agencji marketingowej, zapraszamy do
                 kontaktu. Chętnie przeprowadzimy bezpłatną konsultację i opowiemy o tym, jak możemy
                 pomóc Twojemu biznesowi.
               </p>

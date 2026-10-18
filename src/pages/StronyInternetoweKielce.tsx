@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 const faqs = [
   {
     question: "Ile czasu zajmuje stworzenie strony internetowej w Kielcach?",
-    answer: "Czas realizacji strony internetowej zależy od złożoności projektu. Typowa strona wizytówka zajmuje 2-3 tygodnie, a bardziej zaawansowana strona e-commerce wymaga 6-8 tygodni. Oferujemy elastyczne harmonogramy dostosowane do potrzeb Klienta."
+    answer: "Czas realizacji strony internetowej zależy od złożoności projektu, liczby podstron, treści i integracji. Termin ustalamy w harmonogramie po rozmowie o zakresie i dopasowujemy go do potrzeb Klienta."
   },
   {
     question: "Czy strona będzie responsywna na urządzeniach mobilnych?",
@@ -85,17 +85,17 @@ export default function StronyInternetoweKielce() {
             <div className="bg-white p-6 rounded-lg shadow">
               <Smartphone className="w-12 h-12 text-blue-400 mb-4" />
               <h3 className="text-xl font-semibold mb-2">Responsywność</h3>
-              <p className="text-gray-600">Strony działają perfekcyjnie na wszystkich urządzeniach. Od smartfonów po duże monitory - zawsze optymalne wyświetlanie.</p>
+              <p className="text-gray-600">Projektujemy i testujemy strony na różnych urządzeniach — od smartfonów po duże monitory.</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow">
               <TrendingUp className="w-12 h-12 text-blue-400 mb-4" />
               <h3 className="text-xl font-semibold mb-2">SEO Optimization</h3>
-              <p className="text-gray-600">Optymalizujemy każdą stronę pod wyszukiwarki. Wysoka pozycja w Google to bezpośrednie korzyści biznesowe.</p>
+              <p className="text-gray-600">Optymalizujemy każdą stronę pod wyszukiwarki. Nie gwarantujemy konkretnej pozycji w Google, ale dbamy o technikę, strukturę i treści, które wpływają na widoczność.</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow">
               <Users className="w-12 h-12 text-blue-400 mb-4" />
               <h3 className="text-xl font-semibold mb-2">Wsparcie</h3>
-              <p className="text-gray-600">Zapewniamy stałe wsparcie techniczne, aktualizacje bezpieczeństwa i rozwój funkcjonalności.</p>
+              <p className="text-gray-600">Zapewniamy wsparcie techniczne, aktualizacje bezpieczeństwa i rozwój funkcjonalności w uzgodnionym zakresie.</p>
             </div>
           </div>
         </div>
@@ -162,10 +162,10 @@ export default function StronyInternetoweKielce() {
             Kielce, będące dynamicznie rozwijającym się ośrodkiem gospodarczym, przyciąga przedsiębiorców z różnych branż. W dzisiejszych czasach posiadanie profesjonalnej strony internetowej to konieczność dla każdej firmy, niezależnie od jej wielkości. Nowoczesna strona to wizytówka Twojego biznesu w internecie, pierwszy punkt kontaktu z potencjalnymi klientami.
           </p>
           <p className="text-gray-700 mb-6">
-            Projektowanie stron internetowych wymaga nie tylko pięknego wyglądu, ale przede wszystkim funkcjonalności i opanowania zaawansowanych technologii. Strona musi być zoptymalizowana pod kątem wyszukiwarek, aby Twoja firma znalazła się na czołowych pozycjach w wynikach Google. To bezpośrednio przekłada się na nowych klientów i wzrost przychodów.
+            Projektowanie stron internetowych wymaga nie tylko pięknego wyglądu, ale przede wszystkim funkcjonalności i opanowania zaawansowanych technologii. Strona musi być zoptymalizowana pod kątem wyszukiwarek, aby zwiększyć szanse na widoczność w wynikach Google. Nie gwarantujemy konkretnej pozycji — wyniki zależą m.in. od konkurencji i treści.
           </p>
           <p className="text-gray-700 mb-6">
-            Nasza agencja specjalizuje się w tworzeniu niestandardowych rozwiązań dostosowanych do specificznych potrzeb firm w Kielcach. Niezależnie od tego, czy prowadzisz małą pracownię, sieć sklepów, czy dużą fabrykę - mamy doświadczenie w każdej branży. Handlowcy, usługodawcy, producenci, edukatorzy - wszyscy mogą liczyć na nasze profesjonalne podejście.
+            Tworzymy rozwiązania dostosowane do potrzeb firm z Kielc. Pracujemy z Poznania, a firmy z Kielc obsługujemy zdalnie — niezależnie od tego, czy prowadzisz małą pracownię, sieć sklepów, czy zakład produkcyjny. Handlowcy, usługodawcy, producenci, edukatorzy - wszyscy mogą liczyć na nasze profesjonalne podejście.
           </p>
           <h3 className="text-2xl font-bold mb-4">Typy Stron Internetowych</h3>
           <p className="text-gray-700 mb-4">
@@ -182,7 +182,7 @@ export default function StronyInternetoweKielce() {
           </p>
           <h3 className="text-2xl font-bold mb-4">Responsywność i Mobile-First</h3>
           <p className="text-gray-700 mb-6">
-            Statystyki pokazują, że ponad 70% użytkowników internetu korzysta z urządzeń mobilnych. Dlatego każda nowoczesna strona musi być w pełni responsywna - idealnie dopasowana do telefonów, tabletów i komputerów. Projektujemy metodą mobile-first, co oznacza, że zaczynamy od wersji na telefon, a następnie rozszerzamy do większych ekranów. Gwarantuje to doskonałe doświadczenie niezależnie od urządzenia.
+            Duża część użytkowników przegląda strony na telefonach, dlatego każda nowoczesna strona musi być w pełni responsywna - idealnie dopasowana do telefonów, tabletów i komputerów. Projektujemy metodą mobile-first, co oznacza, że zaczynamy od wersji na telefon, a następnie rozszerzamy do większych ekranów. Dzięki temu strona jest wygodna w obsłudze na różnych urządzeniach.
           </p>
           <h3 className="text-2xl font-bold mb-4">Systemy CMS i Zarządzanie Treścią</h3>
           <p className="text-gray-700 mb-6">
@@ -194,7 +194,7 @@ export default function StronyInternetoweKielce() {
           </p>
           <h3 className="text-2xl font-bold mb-4">Cennik i Harmonogram</h3>
           <p className="text-gray-700 mb-6">
-            Ceny projektów zaczynają się od kilku tysięcy złotych dla prostych stron wizytówek, aż do dziesiątek tysięcy dla zaawansowanych rozwiązań e-commerce czy aplikacji webowych. Harmonogram realizacji wynosi typowo od 2 do 8 tygodni, w zależności od skomplikowania projektu. Oferujemy elastyczne warunki płatności i możliwość pracy w etapach.
+            Wycenę przygotowujemy po rozmowie o zakresie — zależy od liczby podstron, treści, funkcji, integracji i tego, czy potrzebny jest sklep lub aplikacja webowa. Harmonogram realizacji ustalamy w ofercie, w zależności od skomplikowania projektu. Oferujemy elastyczne warunki płatności i możliwość pracy w etapach.
           </p>
         </div>
       </section>
@@ -202,7 +202,7 @@ export default function StronyInternetoweKielce() {
       {/* Pricing */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">Pakiety Cenowe</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">Zakres i wycena</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-lg shadow border-t-4 border-blue-400">
               <h3 className="text-2xl font-bold mb-2">Wizytówka</h3>
@@ -213,7 +213,7 @@ export default function StronyInternetoweKielce() {
                 <li>Responsywny design</li>
                 <li>Formularz kontaktowy</li>
                 <li>Podstawowe SEO</li>
-                <li>Hosting na 1 rok</li>
+                <li>Hosting według ustaleń w ofercie</li>
               </ul>
               <Button asChild className="w-full bg-blue-400 hover:bg-blue-500 text-blue-950"><a href="/kontakt">Wybrać</a></Button>
             </div>
@@ -228,7 +228,7 @@ export default function StronyInternetoweKielce() {
                 <li>Blog i artykuły</li>
                 <li>SEO optimization</li>
                 <li>Analytics setup</li>
-                <li>Hosting na 1 rok</li>
+                <li>Hosting według ustaleń w ofercie</li>
               </ul>
               <Button asChild className="w-full bg-blue-400 hover:bg-blue-500 text-blue-950"><a href="/kontakt">Wybrać</a></Button>
             </div>
@@ -237,12 +237,12 @@ export default function StronyInternetoweKielce() {
               <p className="text-gray-600 mb-6">Dla sklepów internetowych</p>
               <div className="text-3xl font-bold text-blue-400 mb-6">Wycena indywidualna</div>
               <ul className="space-y-3 text-gray-700 mb-8">
-                <li>Nieograniczone produkty</li>
+                <li>Katalog produktów według ustalonego zakresu</li>
                 <li>System płatności</li>
                 <li>Zarządzanie zapasami</li>
                 <li>SEO+Marketing</li>
                 <li>Wsparcie tech.</li>
-                <li>Hosting na 1 rok</li>
+                <li>Hosting według ustaleń w ofercie</li>
               </ul>
               <Button asChild className="w-full bg-blue-400 hover:bg-blue-500 text-blue-950"><a href="/kontakt">Wybrać</a></Button>
             </div>

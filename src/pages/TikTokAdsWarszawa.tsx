@@ -10,11 +10,11 @@ export default function TikTokAdsWarszawa() {
   const faqItems = [
     {
       question: "Ile kosztuje TikTok Ads w Warszawie?",
-      answer: "Koszt kampanii TikTok Ads w Warszawie zależy od budżetu reklamowego i zakresu obsługi. Minimalny budżet reklamowy to 200 zł/miesiąc, jednak dla efektywnych kampanii rekomendujemy od 1000 zł/miesiąc. Opłata za zarządzanie kampanią w agencji Fotz zaczyna się od 400 zł/miesiąc. TikTok Ads oferuje rozliczenie CPM (za 1000 wyświetleń) lub CPV (za wyświetlenie wideo).",
+      answer: "Koszt kampanii TikTok Ads w Warszawie zależy od budżetu reklamowego i zakresu obsługi. Wycenę obsługi przygotowujemy po rozmowie o zakresie: liczbie kampanii, potrzebie produkcji wideo i częstotliwości raportów. Budżet reklamowy płacisz TikTokowi zawsze osobno od naszego wynagrodzenia. TikTok Ads oferuje rozliczenie CPM (za 1000 wyświetleń) lub CPV (za wyświetlenie wideo).",
     },
     {
       question: "Ile TikTok płaci za 1000 wyświetleń?",
-      answer: "TikTok w programie Creator Fund płaci twórcom od 0,02 do 0,04 USD za 1000 wyświetleń organicznych. W przypadku reklam TikTok Ads stawka CPM (koszt za 1000 wyświetleń) wynosi od 10 do 50 zł, w zależności od targetowania, branży i grupy docelowej. Kampanie wideo In-Feed w Warszawie osiągają CPM na poziomie 15-35 zł.",
+      answer: "Stawki programów dla twórców ustala TikTok i zmieniają się w czasie. W reklamach TikTok Ads koszt za 1000 wyświetleń (CPM) wynika z aukcji i zależy od targetowania, branży, grupy docelowej i jakości kreacji — konkretne wartości widać dopiero po uruchomieniu kampanii, dlatego nie podajemy stałych stawek.",
     },
     {
       question: "Jaka jest najlepsza agencja TikTok Ads w Warszawie?",
@@ -22,15 +22,15 @@ export default function TikTokAdsWarszawa() {
     },
     {
       question: "Dla jakiej branży sprawdza się reklama na TikToku w Warszawie?",
-      answer: "Reklama na TikToku sprawdza się najlepiej w branżach e-commerce, beauty, fashion, fitness, gastronomii, rozrywce i edukacji online. W Warszawie szczególnie efektywne kampanie TikTok Ads prowadzą sklepy internetowe, restauracje, studia kosmetyczne i firmy SaaS kierujące ofertę do młodych użytkowników w wieku 18-34 lata. TikTok to platforma angażująca użytkowników mobilnych.",
+      answer: "Reklama na TikToku sprawdza się najlepiej w branżach e-commerce, beauty, fashion, fitness, gastronomii, rozrywce i edukacji online. Dobrze sprawdza się m.in. w sklepach internetowych, restauracjach, studiach kosmetycznych i firmach SaaS kierujących ofertę do młodszych użytkowników. TikTok to platforma angażująca użytkowników mobilnych.",
     },
     {
       question: "Jakie formaty reklamowe oferuje TikTok Ads?",
-      answer: "TikTok Ads oferuje kilka formatów reklamowych: In-Feed Ads (reklamy wideo w feedzie), TopView Ads (pierwsze wideo po otwarciu aplikacji), Spark Ads (promowanie organicznych postów), Branded Hashtag Challenge (kampanie angażujące z hashtagiem) oraz Brand Takeover. Najczęściej wybieranym formatem przez reklamodawców są In-Feed Ads — wyglądają jak natywny content i generują wysokie zaangażowanie.",
+      answer: "TikTok Ads oferuje kilka formatów reklamowych: In-Feed Ads (reklamy wideo w feedzie), TopView Ads (pierwsze wideo po otwarciu aplikacji), Spark Ads (promowanie organicznych postów), Branded Hashtag Challenge (kampanie angażujące z hashtagiem) oraz Brand Takeover. Podstawowym formatem są In-Feed Ads — wyglądają jak natywny content w feedzie.",
     },
     {
       question: "Jak długo trwa uruchomienie kampanii TikTok Ads?",
-      answer: "Kampanię TikTok Ads można uruchomić w ciągu 2-5 dni roboczych. Obejmuje to: konfigurację konta TikTok Ads Manager, ustawienie piksela, targetowanie grup odbiorców, tworzenie kreacji wideo i weryfikację przez TikTok (24-48h). Pierwsze wyniki widoczne są po 3-7 dniach, pełna optymalizacja kampanii trwa 2-4 tygodnie.",
+      answer: "Uruchomienie obejmuje konfigurację konta TikTok Ads Manager, ustawienie piksela, targetowanie grup odbiorców, przygotowanie kreacji wideo i weryfikację reklam przez TikTok. Harmonogram ustalamy po briefie — zależy od gotowości materiałów i czasu akceptacji po stronie platformy. Optymalizacja wymaga zebrania danych, dlatego nie podajemy sztywnych terminów efektów.",
     },
     {
       question: "Czy TikTok Ads działa dla firm B2B?",
@@ -43,11 +43,11 @@ export default function TikTokAdsWarszawa() {
   ];
 
   const formats = [
-    { name: "In-Feed Ads", desc: "Reklamy wideo pojawiające się naturalnie w feedzie ForYou użytkowników TikToka. Najczęściej wybierany format reklamowy — wygląda jak organiczny content, co angażuje użytkowników i zwiększa CTR." },
+    { name: "In-Feed Ads", desc: "Reklamy wideo pojawiające się naturalnie w feedzie ForYou użytkowników TikToka. Podstawowy format reklamowy — wygląda jak organiczny content." },
     { name: "Spark Ads", desc: "Promowanie istniejących organicznych postów z profilu marki lub współpracujących twórców. Idealne gdy masz content, który organicznie się sprawdza — Spark Ads wzmacnia jego zasięgi i wyświetlenia." },
-    { name: "TopView Ads", desc: "Pierwsze wideo wyświetlane użytkownikowi po otwarciu aplikacji TikTok. Format gwarantujący maksymalną widoczność i świadomość marki — idealny na duże kampanie wizerunkowe." },
-    { name: "Hashtag Challenge", desc: "Kampania angażująca użytkowników do tworzenia własnych filmów z brandowanym hashtagiem. Generuje ogromne zasięgi organiczne i buduje społeczność wokół marki." },
-    { name: "Brand Takeover", desc: "Pełnoekranowa reklama wideo lub graficzna przy uruchomieniu aplikacji. Format ekskluzywny — jeden reklamodawca dziennie na kategorię, wysoka świadomość marki." },
+    { name: "TopView Ads", desc: "Pierwsze wideo wyświetlane użytkownikowi po otwarciu aplikacji TikTok. Format nastawiony na dużą widoczność i świadomość marki — stosowany w dużych kampaniach wizerunkowych." },
+    { name: "Hashtag Challenge", desc: "Kampania angażująca użytkowników do tworzenia własnych filmów z brandowanym hashtagiem. Może wspierać zasięgi organiczne i budowanie społeczności wokół marki." },
+    { name: "Brand Takeover", desc: "Pełnoekranowa reklama wideo lub graficzna przy uruchomieniu aplikacji. Format o ograniczonej dostępności, dostępny na warunkach ustalanych z TikTokiem." },
     { name: "Collection Ads", desc: "Format łączący wideo z galerią produktów — otwiera mini-sklep bezpośrednio w TikToku. Idealny dla e-commerce i sklepów internetowych skracających ścieżkę zakupową." },
   ];
 
@@ -96,13 +96,13 @@ export default function TikTokAdsWarszawa() {
         <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white py-20 px-6">
           <div className="max-w-4xl mx-auto text-center">
             <span className="inline-block bg-pink-600 text-white text-sm font-semibold px-4 py-1 rounded-full mb-4">
-              Agencja TikTok Ads Warszawa
+              TikTok Ads dla firm z Warszawy
             </span>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              TikTok Ads Warszawa — kampanie reklamowe, które robią zasięgi i sprzedają
+              TikTok Ads Warszawa — kampanie reklamowe nastawione na zasięg i sprzedaż
             </h1>
             <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
-              Reklama na TikToku to dziś jeden z najskuteczniejszych kanałów docierania do młodych użytkowników w Warszawie. Agencja Fotz tworzy kampanie TikTok Ads, które angażują, budują świadomość marki i generują realne konwersje — od In-Feed Ads po Spark Ads i Hashtag Challenge.
+              Reklama na TikToku pozwala docierać do młodszych użytkowników w Warszawie. Fotz Studio pracuje z Poznania, a firmy z Warszawy obsługuje zdalnie — przygotowujemy strategię, kreacje wideo i kampanie TikTok Ads, od In-Feed Ads po Spark Ads i Hashtag Challenge.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/kontakt" className="bg-pink-600 hover:bg-pink-700 text-white font-semibold px-8 py-3 rounded-lg transition-colors">
@@ -121,10 +121,10 @@ export default function TikTokAdsWarszawa() {
         <section className="bg-gray-900 text-white py-12 px-6">
           <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
-              { val: "1,5 mld", label: "aktywnych użytkowników TikToka miesięcznie" },
-              { val: "18-34", label: "dominująca grupa wiekowa użytkowników TikToka" },
-              { val: "60%", label: "użytkowników TikToka w Polsce to kobiety" },
-              { val: "15-60s", label: "optymalna długość reklamy wideo" },
+              { val: "Strategia", label: "cele, grupy odbiorców i formaty" },
+              { val: "Wideo", label: "kreacje w natywnym stylu TikToka" },
+              { val: "Kampanie", label: "konfiguracja i optymalizacja w Ads Managerze" },
+              { val: "Raporty", label: "regularne zestawienia wyników" },
             ].map((s) => (
               <div key={s.label}>
                 <div className="text-3xl font-bold text-pink-400 mb-1">{s.val}</div>
@@ -169,11 +169,11 @@ export default function TikTokAdsWarszawa() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
-                { title: "Zasięgi i świadomość marki", desc: "Dotrzyj do setek tysięcy użytkowników TikToka w Warszawie. Kampanie zasięgowe budują rozpoznawalność marki wśród nowych odbiorców, którzy jeszcze Cię nie znają." },
-                { title: "Ruch na stronie i w sklepie internetowym", desc: "Kieruj użytkowników TikToka na landing page lub sklep online. Reklamy In-Feed Ads z CTA generują efektywny ruch prowadzący do konwersji." },
+                { title: "Zasięgi i świadomość marki", desc: "Dotrzyj do użytkowników TikToka w Warszawie. Kampanie zasięgowe budują rozpoznawalność marki wśród nowych odbiorców, którzy jeszcze Cię nie znają." },
+                { title: "Ruch na stronie i w sklepie internetowym", desc: "Kieruj użytkowników TikToka na landing page lub sklep online. Reklamy In-Feed Ads z CTA kierują ruch tam, gdzie może dojść do konwersji." },
                 { title: "Konwersje i sprzedaż e-commerce", desc: "Kampanie z pikselem TikTok śledzą realne konwersje — zakupy, zapisy, kontakty. Optymalizujemy pod konkretny koszt konwersji (CPA) i zwrot z reklamy (ROAS)." },
-                { title: "Pozyskiwanie nowych klientów", desc: "Grupy Lookalike na TikToku pozwalają dotrzeć do nowych klientów podobnych do Twoich obecnych. Skuteczny sposób skalowania sprzedaży online." },
-                { title: "Remarketing i odzyskiwanie koszyków", desc: "Docieraj ponownie do użytkowników, którzy odwiedzili stronę lub porzucili koszyk. Kampanie remarketingowe TikTok Ads skutecznie odzyskują porzucone zakupy." },
+                { title: "Pozyskiwanie nowych klientów", desc: "Grupy Lookalike na TikToku pozwalają dotrzeć do nowych klientów podobnych do Twoich obecnych. To jeden ze sposobów skalowania sprzedaży online." },
+                { title: "Remarketing i odzyskiwanie koszyków", desc: "Docieraj ponownie do użytkowników, którzy odwiedzili stronę lub porzucili koszyk. Kampanie remarketingowe TikTok Ads pomagają odzyskiwać porzucone zakupy." },
                 { title: "Zaangażowanie i społeczność", desc: "Spark Ads i Hashtag Challenge angażują użytkowników do interakcji z marką — komentarze, udostępnienia, duety. Buduj lojalną społeczność wokół profilu TikTok." },
               ].map((g) => (
                 <div key={g.title} className="bg-white rounded-xl p-6 border border-gray-200">
@@ -225,11 +225,11 @@ export default function TikTokAdsWarszawa() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
-                { title: "Kreacje wideo w stylu TikToka", desc: "Tworzymy materiały wideo, które wyglądają jak natywny content — nie jak tradycyjna reklama. To klucz do efektywnych kampanii TikTok Ads z wysokim CTR." },
+                { title: "Kreacje wideo w stylu TikToka", desc: "Tworzymy materiały wideo, które wyglądają jak natywny content — nie jak tradycyjna reklama. Na TikToku to ważniejsze niż w wielu innych kanałach." },
                 { title: "Pełna obsługa TikTok Ads Manager", desc: "Konfiguracja konta, piksel, grupy odbiorców, kampanie — zajmujemy się całym procesem technicznym i strategicznym od A do Z." },
                 { title: "Optymalizacja oparta na danych", desc: "Śledzimy wyniki kampanii na bieżąco i optymalizujemy stawki, targetowanie i kreacje, by maksymalizować zwrot z budżetu reklamowego." },
                 { title: "Transparentne raportowanie", desc: "Co miesiąc raport z kampanii — zasięgi, wyświetlenia, kliknięcia, konwersje i koszt pozyskania klienta. Żadnych ukrytych kosztów i opłat." },
-                { title: "Doświadczenie w e-commerce", desc: "Prowadzimy efektywne kampanie TikTok Ads dla sklepów internetowych, restauracji, salonów beauty i firm usługowych z Warszawy i całej Polski." },
+                { title: "Współpraca zdalna z Poznania", desc: "Pracujemy z Poznania, a firmy z Warszawy obsługujemy zdalnie — produkcję wideo, kampanie i raporty prowadzi jeden zespół." },
                 { title: "Kompleksowe doradztwo", desc: "Pomagamy wybrać właściwy mix kanałów — TikTok Ads, Meta Ads, Google Ads — dopasowany do Twoich celów i budżetu. Oferujemy SEO i social media." },
               ].map((w) => (
                 <div key={w.title} className="bg-white rounded-xl p-6 border border-gray-200">

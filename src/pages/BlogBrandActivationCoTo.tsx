@@ -124,7 +124,7 @@ export default function BlogBrandActivationCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Brand Activation", url: "https://www.fotz-studio.pl" },
+              { name: "Brand Activation", url: "/blog/brand-activation-co-to" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Brand Activation — co to jest i jak działa?

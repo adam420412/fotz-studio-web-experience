@@ -237,7 +237,7 @@ export default function GoogleAdsBydgoszcz() {
         { name: "Strona główna", url: "/" },
         { name: "Performance Marketing", url: "/performance-marketing" },
         { name: "Google Ads", url: "/performance-marketing/google-ads" },
-        { name: "Bydgoszcz", url: "https://www.fotz-studio.pl" }
+        { name: "Bydgoszcz", url: "/performance-marketing/google-ads/bydgoszcz" }
       ]}/>
 
       {/* Hero Section */}

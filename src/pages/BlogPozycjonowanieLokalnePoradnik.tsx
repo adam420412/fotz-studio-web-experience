@@ -15,11 +15,11 @@ const faqItems = [
   },
   {
     question: "Ile kosztuje pozycjonowanie lokalne?",
-    answer: "Pozycjonowanie lokalne zwykle kosztuje od 999 do 2000 zł miesięcznie. Cena zależy od liczby miast, konkurencji w branży i wybranych słów kluczowych. Pakiet Lokalny w naszym cenniku to 999 zł/mies. za 1 miasto."
+    answer: "Cena zależy od liczby miast i lokalizacji, konkurencji w branży, liczby fraz, stanu strony i Wizytówki Google oraz zakresu prac (treści, linki, recenzje, raportowanie). Przykładowe widełki rynkowe dla abonamentu lokalnego SEO to od około 1 000 do 2 000 zł miesięcznie, ale konkretną wycenę warto oprzeć na audycie Twojej sytuacji — my przygotowujemy ją po rozmowie."
   },
   {
     question: "Jak szybko można wyprzedzić konkurencję lokalną?",
-    answer: "Pierwsze rezultaty widać po 3-4 tygodniach, ale pełne efekty osiągamy po 2-3 miesiącach. Pozycjonowanie lokalne działa szybciej niż ogólnopolskie, ponieważ konkurencja jest mniejsza."
+    answer: "Pierwsze zmiany bywają widoczne po kilku tygodniach, a wyraźniejsze efekty zwykle pojawiają się po kilku miesiącach — zależnie od konkurencji i punktu startu. Pozycjonowanie lokalne działa szybciej niż ogólnopolskie, ponieważ konkurencja jest mniejsza."
   },
   {
     question: "Czy potrzebuję strony internetowej do SEO lokalnego?",
@@ -264,7 +264,7 @@ const BlogPozycjonowanieLokalnePoradnik = () => {
                 </h2>
 
                 <p className="text-muted-foreground mb-6">
-                  Recenzje na Google Business Profile to jeden z najważniejszych faktorów rankingowych dla lokalnego SEO. Firmy z 4.5+ gwiazdek pozycjonują się znacznie wyżej niż te bez opinii.
+                  Recenzje na Google Business Profile to jeden z najważniejszych faktorów rankingowych dla lokalnego SEO. Firmy z dużą liczbą dobrych, aktualnych opinii zwykle mają łatwiej w wynikach lokalnych niż te bez opinii.
                 </p>
 
                 <p className="text-muted-foreground mb-6">
@@ -302,7 +302,7 @@ const BlogPozycjonowanieLokalnePoradnik = () => {
                 </p>
 
                 <ul className="space-y-3 mb-6 text-muted-foreground">
-                  <li>• <strong>Katalogi branżowe:</strong> Pudelek.pl (gastronomia), Allegro Usługi, Goldenline</li>
+                  <li>• <strong>Katalogi branżowe:</strong> katalogi i serwisy branżowe właściwe dla Twojej branży, Allegro Lokalnie (usługi)</li>
                   <li>• <strong>Katalogi lokalne:</strong> Mapy Google, Tripadvisor, Yelp, PagesJaunes (Francja)</li>
                   <li>• <strong>Portale biznesowe:</strong> Biznesradar, ForumBiznesu, B2B.pl</li>
                   <li>• <strong>Media lokalne:</strong> Strony gazet lokalnych, portale społeczności</li>
@@ -319,20 +319,20 @@ const BlogPozycjonowanieLokalnePoradnik = () => {
 
                 <ul className="space-y-3 mb-6 text-muted-foreground">
                   <li>• <strong>Tygodnie 1-4:</strong> Setup Wizytówki Google, optymalizacja strony</li>
-                  <li>• <strong>Tygodnie 4-8:</strong> Pierwsze pozycjonowania dla łatwych haseł (zwykle miejsca 8-10)</li>
-                  <li>• <strong>Miesiące 2-3:</strong> Polepszenie pozycji, wejście do Local Pack dla konkurencyjnych haseł</li>
-                  <li>• <strong>Miesiące 4-6:</strong> Pełne rezultaty, stabilizacja pozycji #1-3 dla głównych haseł</li>
+                  <li>• <strong>Tygodnie 4-8:</strong> Pierwsze ruchy w pozycjach dla mniej konkurencyjnych haseł</li>
+                  <li>• <strong>Miesiące 2-3:</strong> Polepszenie pozycji, szansa na wejście do Local Pack dla części haseł</li>
+                  <li>• <strong>Miesiące 4-6:</strong> Stabilizacja pozycji i ocena, które działania przynoszą najwięcej</li>
                 </ul>
 
                 <p className="text-muted-foreground mb-6">
-                  <strong>Spodziewane wyniki (dla średniego konkurencyjnego rynku):</strong>
+                  <strong>Co warto obserwować (wyniki zależą od branży, konkurencji i punktu startu):</strong>
                 </p>
 
                 <ul className="space-y-3 mb-6 text-muted-foreground">
-                  <li>✓ +200-400% wzrost ruchu z Google Search (3-6 mies.)</li>
-                  <li>✓ 10-50 leadów/mies. z wyszukiwarki (w zależności od branży)</li>
-                  <li>✓ 30-200 wyświetleń Google Business Profile dziennie</li>
-                  <li>✓ Pierwsze miejsca w Local Pack dla haseł z intent lokalnym</li>
+                  <li>✓ Ruch z Google Search do strony (Google Search Console)</li>
+                  <li>✓ Liczbę zapytań, telefonów i wiadomości z wyszukiwarki i mapy</li>
+                  <li>✓ Wyświetlenia i działania na Google Business Profile</li>
+                  <li>✓ Pozycje w Local Pack dla haseł z intent lokalnym</li>
                 </ul>
 
                 <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
@@ -384,7 +384,7 @@ const BlogPozycjonowanieLokalnePoradnik = () => {
                   Chcesz zwiększyć widoczność lokalną?
                 </h2>
                 <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                  Pozycjonowanie lokalne to inwestycja, która zwraca się wielokrotnie. Skontaktuj się z nami aby znaleźć się w Local Pack dla Twojego miasta.
+                  Pozycjonowanie lokalne to inwestycja długoterminowa. Skontaktuj się z nami — sprawdzimy Twoją wizytówkę i stronę i powiemy, co realnie da się poprawić.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button asChild size="lg" className="bg-gradient-to-r from-[#75143F] to-[#0F3053]">

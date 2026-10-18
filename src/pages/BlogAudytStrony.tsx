@@ -11,11 +11,11 @@ import { FAQSchema } from "@/components/seo/StructuredData";
 const faqItems = [
   {
     question: "Ile kosztuje audyt strony internetowej?",
-    answer: "Audyt strony internetowej za pomocą darmowych narzędzi może Ci nic nie kosztować. Natomiast profesjonalny audyt przeprowadzony przez agencję SEO kosztuje zazwyczaj od 500 do 5000 PLN w zależności od zakresu analizy, rozmiaru witryny i detalizacji raportu. Fotz Studio oferuje bezpłatny audyt podstawowy dla każdego klienta chcącego lepiej zrozumieć stan swojej strony."
+    answer: "Audyt strony internetowej za pomocą darmowych narzędzi może Ci nic nie kosztować. Profesjonalny audyt przeprowadzony przez agencję SEO to według przykładowych widełek rynkowych zwykle od 500 do 5000 PLN, w zależności od zakresu analizy, rozmiaru witryny i detalizacji raportu. W FOTZ Studio zakres i wycenę audytu ustalamy po rozmowie o Twojej stronie i celach."
   },
   {
     question: "Jak często przeprowadzać audyt SEO?",
-    answer: "Minimalnie przeprowadź audyt SEO swojej strony co najmniej dwa razy w roku — idealne są cykl co trzy miesiące. Warto robić audyt zaraz po każdej znaczące zmianie na stronie, aktualizacji algorytmu Google, czy po wprowadzeniu nowych funkcjonalności. Aktywne monitorowanie SEO to gwarancja, że Twoja witryna będzie zawsze w najlepszej formie."
+    answer: "Minimalnie przeprowadź audyt SEO swojej strony co najmniej dwa razy w roku — idealne są cykl co trzy miesiące. Warto robić audyt zaraz po każdej znaczące zmianie na stronie, aktualizacji algorytmu Google, czy po wprowadzeniu nowych funkcjonalności. Regularne monitorowanie SEO pomaga szybko wychwycić problemy i utrzymać witrynę w dobrej formie."
   },
   {
     question: "Co sprawdza audyt SEO strony?",
@@ -27,7 +27,7 @@ const faqItems = [
   },
   {
     question: "Czy audyt strony jest konieczny?",
-    answer: "Tak — audyt strony internetowej jest bardzo ważny. Statystyki pokazują, że około 90% stron internetowych ma co najmniej jeden poważny problem SEO, o którym właściciele nie wiedzą. Bez audytu ryzykowałeś stracić potencjalne pozycje w Google, klientów i przychody. Audyt to inwestycja, która zwraca się wielokrotnie poprzez zoptymalizowaną widoczność w wyszukiwarce."
+    answer: "Tak — audyt strony internetowej jest bardzo ważny. W praktyce wiele stron internetowych ma co najmniej jeden poważny problem SEO, o którym właściciele nie wiedzą. Bez audytu ryzykujesz utratę pozycji w Google, klientów i przychodów. Audyt pokazuje, co konkretnie poprawić, by zwiększyć widoczność w wyszukiwarce."
   },
   {
     question: "Co po audycie strony internetowej?",
@@ -198,7 +198,7 @@ export default function BlogAudytStrony() {
                 </p>
 
                 <p className="text-muted-foreground mb-4">
-                  <strong>Responsywność i mobilność</strong> — ponad 70% ruchu przychodzi z urządzeń mobilnych. Twoja strona musi być w pełni responsywna i szybka na smartfonach. Sprawdź: czy tekst jest czytelny bez zoomowania, czy przyciski są odpowiednio duże, czy menu jest wygodne na telefonie, czy obrazki skalują się prawidłowo.
+                  <strong>Responsywność i mobilność</strong> — w wielu branżach większość ruchu przychodzi dziś z urządzeń mobilnych. Twoja strona musi być w pełni responsywna i szybka na smartfonach. Sprawdź: czy tekst jest czytelny bez zoomowania, czy przyciski są odpowiednio duże, czy menu jest wygodne na telefonie, czy obrazki skalują się prawidłowo.
                 </p>
 
                 <p className="text-muted-foreground mb-4">
@@ -242,7 +242,7 @@ export default function BlogAudytStrony() {
                 </p>
 
                 <p className="text-muted-foreground mb-6">
-                  <strong>Jakość i długość contentu</strong> — zawartość powinna być originalna, unikalna i wartościowa dla czytelnika. Artykuły poniżej 300 słów rzadko rankują dobrze. Naszym doświadczeniu, artykuły 2000-3000 słów rankują lepiej niż krótkie listy. Sprawdź: czy treść odpowiada na Intent danego słowa kluczowego, czy jest świeża i aktualna, czy zawiera przykłady i dane wspierające claims.
+                  <strong>Jakość i długość contentu</strong> — zawartość powinna być originalna, unikalna i wartościowa dla czytelnika. Artykuły poniżej 300 słów rzadko rankują dobrze. Wyczerpujące, dłuższe artykuły często radzą sobie lepiej niż krótkie listy — o ile długość wynika z wartości, a nie z lania wody. Sprawdź: czy treść odpowiada na Intent danego słowa kluczowego, czy jest świeża i aktualna, czy zawiera przykłady i dane wspierające claims.
                 </p>
 
                 <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
@@ -262,7 +262,7 @@ export default function BlogAudytStrony() {
                 </p>
 
                 <p className="text-muted-foreground mb-4">
-                  <strong>Dofollow/nofollow ratio</strong> — idealne to około 80% dofollow i 20% nofollow. Zbyt wiele nofollow linków wygląda nienaturalnie. Zdywersyfikuj źródła linków między różne domeny, a nie polegaj na linkach z jednego miejsca.
+                  <strong>Dofollow/nofollow ratio</strong> — naturalny profil zawiera zarówno linki dofollow, jak i nofollow; zwykle przeważają dofollow. Profil złożony niemal wyłącznie z jednego typu linków wygląda nienaturalnie. Zdywersyfikuj źródła linków między różne domeny, a nie polegaj na linkach z jednego miejsca.
                 </p>
 
                 <p className="text-muted-foreground mb-6">
@@ -278,7 +278,7 @@ export default function BlogAudytStrony() {
                 </p>
 
                 <p className="text-muted-foreground mb-4">
-                  <strong>Bounce rate i średni czas na stronie</strong> — wysokie bounce rate (powyżej 70%) oznacza, że użytkownicy szybko opuszczają Twoją stronę. To może być spowodowane słabym matchem do intencji, powolnym ładowaniem, złą nawigacją lub brzydkim designem. Analiza heatmap (gdzie klikają użytkownicy) może pomóc zidentyfikować problemy.
+                  <strong>Bounce rate i średni czas na stronie</strong> — wysokie bounce rate (wyraźnie wyższe niż typowe dla Twojej branży i typu podstrony) oznacza, że użytkownicy szybko opuszczają Twoją stronę. To może być spowodowane słabym matchem do intencji, powolnym ładowaniem, złą nawigacją lub brzydkim designem. Analiza heatmap (gdzie klikają użytkownicy) może pomóc zidentyfikować problemy.
                 </p>
 
                 <p className="text-muted-foreground mb-4">
@@ -306,7 +306,7 @@ export default function BlogAudytStrony() {
                 </p>
 
                 <p className="text-muted-foreground mb-4">
-                  <strong>Audyt strony przez agencję SEO</strong> — profesjonalny audyt od agencji kosztuje zwykle 500-5000 PLN zależnie od rozmiaru witryny i detalizacji. Mała strona 20-50 stron: 500-1500 PLN. Średnia witryna 100-500 stron: 1500-3500 PLN. Duży portal lub e-commerce 1000+ stron: 3500-5000+ PLN. Agencja dostarcza raport PDF z opisem każdego problemu i rekomendacjami naprawy.
+                  <strong>Audyt strony przez agencję SEO</strong> — przykładowe widełki rynkowe (nie cennik FOTZ Studio): profesjonalny audyt od agencji kosztuje zwykle 500-5000 PLN zależnie od rozmiaru witryny i detalizacji. Mała strona 20-50 stron: 500-1500 PLN. Średnia witryna 100-500 stron: 1500-3500 PLN. Duży portal lub e-commerce 1000+ stron: 3500-5000+ PLN. Agencja dostarcza raport PDF z opisem każdego problemu i rekomendacjami naprawy.
                 </p>
 
                 <p className="text-muted-foreground mb-6">
@@ -419,10 +419,10 @@ export default function BlogAudytStrony() {
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="mt-12 pt-12 border-t border-border">
             <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Audyt SEO strony — jakie problemy można znaleźć?</h2>
-            <p className="text-muted-foreground mb-6">Naszym doświadczeniu, około 90% stron internetowych ma co najmniej jeden poważny problem SEO. Najczęstsze to: wolne ładowanie (LCP &gt; 4s), brak responsywności, słabe Core Web Vitals, brakujące meta opisy, brak wewnętrznych linków, contentu poniżej 300 słów, zablokowana indeksacja w robots.txt, brak strukturalnych danych, toksyczne backlinki. Audyt zawsze odsłania te problemy.</p>
+            <p className="text-muted-foreground mb-6">Wiele stron internetowych ma co najmniej jeden poważny problem SEO. Najczęstsze to: wolne ładowanie (LCP &gt; 4s), brak responsywności, słabe Core Web Vitals, brakujące meta opisy, brak wewnętrznych linków, contentu poniżej 300 słów, zablokowana indeksacja w robots.txt, brak strukturalnych danych, toksyczne backlinki. Dobrze przeprowadzony audyt pozwala je wychwycić.</p>
 
             <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4 mt-8">Wdrożenie wyników audytu — co dalej?</h2>
-            <p className="text-muted-foreground mb-6">Po audycie przychodzi najtrudniejsza część — wdrożenie poprawek. Spriorytetyzuj wady: najpierw krytyczne (Core Web Vitals, HTTPS, indeksacja), potem wysokie (title, meta description, H1), następnie średnie (internal linking, contentu) i ostatecznie niskie (semantyka, micro-conversions). Każda naprawka powinna być testowana i monitorowana w Google Search Console. Pozycje SEO rosną średnio 4-12 tygodni po naprawie problemu.</p>
+            <p className="text-muted-foreground mb-6">Po audycie przychodzi najtrudniejsza część — wdrożenie poprawek. Spriorytetyzuj wady: najpierw krytyczne (Core Web Vitals, HTTPS, indeksacja), potem wysokie (title, meta description, H1), następnie średnie (internal linking, contentu) i ostatecznie niskie (semantyka, micro-conversions). Każda naprawka powinna być testowana i monitorowana w Google Search Console. Efekty poprawek pojawiają się zwykle z opóźnieniem — Google musi ponownie przeskanować i ocenić stronę.</p>
 
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
               <Link to="/seo/audyt" className="text-primary hover:underline font-medium text-sm">→ Audyt SEO</Link>

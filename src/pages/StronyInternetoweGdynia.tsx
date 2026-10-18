@@ -20,10 +20,7 @@ import {
   ArrowRight,
   Server,
   FileCode,
-  Sparkles,
-  BarChart3,
-  Users,
-  Building2
+  Sparkles
 } from "lucide-react";
 import {
   Accordion,
@@ -77,7 +74,7 @@ const StronyInternetoweGdynia = () => {
     {
       title: "Apartamenty Chorwacja",
       category: "Strona rezerwacyjna",
-      result: "+180% rezerwacji online",
+      result: "Strona z systemem rezerwacji online",
       link: "/realizacje/apartamenty-chorwacja",
       image: apartamentyImg
     },
@@ -91,7 +88,7 @@ const StronyInternetoweGdynia = () => {
     {
       title: "Cute Dumpling",
       category: "Strona gastronomiczna",
-      result: "+250% ruchu organicznego",
+      result: "Strona gastronomiczna z menu online",
       link: "/realizacje/cute-dumpling",
       image: cuteDumplingImg
     },
@@ -120,7 +117,7 @@ const StronyInternetoweGdynia = () => {
     },
     {
       question: "Dlaczego warto wybrać tworzenie stron w Gdyni z FOTZ Studio?",
-      answer: "Gdynia to dynamiczny rynek nadmorski — turystyka, e-commerce, usługi premium. Znamy specyfikę lokalnego biznesu i tworzymy strony, które przyciągają właściwych klientów. Nasze portfolio obejmuje projekty z Trójmiasta i całej Polski."
+      answer: "Gdynia to dynamiczny rynek nadmorski — turystyka, e-commerce, usługi premium. Pracujemy z Poznania, a firmy z Gdyni obsługujemy zdalnie: przed projektem poznajemy Twoją branżę i klientów, a stronę projektujemy pod ich potrzeby."
     },
     {
       question: "Jakie rodzaje stron tworzycie dla firm z Trójmiasta?",
@@ -213,30 +210,15 @@ const StronyInternetoweGdynia = () => {
           </div>
         </section>
 
-        {/* Gdynia Stats Section */}
+        {/* Gdynia Intro Section */}
         <section className="py-12 bg-card/40 border-y border-border/30">
           <div className="container mx-auto px-4">
             <FadeInView>
-              <div className="text-center mb-8">
-                <span className="text-primary text-sm font-medium uppercase tracking-wider mb-2 block">Gdynia w liczbach</span>
-                <h2 className="text-2xl sm:text-3xl font-heading font-bold mb-2">Dlaczego warto inwestować w stronę www w Gdyni?</h2>
+              <div className="text-center">
+                <h2 className="text-2xl sm:text-3xl font-heading font-bold mb-2">Strona www dla firmy z Gdyni — jak pracujemy?</h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto text-sm sm:text-base">
-                  Gdynia to jedno z najbardziej dynamicznych miast w Polsce — centrum Trójmiasta z silnym rynkiem turystycznym, usługowym i e-commerce.
+                  Pracujemy z Poznania, firmy z Gdyni i Trójmiasta obsługujemy zdalnie — rozmowy online, projekt do akceptacji w Figmie i wdrożenie bez konieczności spotkań na miejscu.
                 </p>
-              </div>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-                {[
-                  { icon: Users, value: "250 tys.", label: "mieszkańców Gdyni" },
-                  { icon: Building2, value: "35 tys.", label: "aktywnych firm w Gdyni" },
-                  { icon: BarChart3, value: "Top 3", label: "miasto Trójmiasta" },
-                  { icon: Globe, value: "79%", label: "firm szuka klientów online" },
-                ].map((stat, i) => (
-                  <div key={i} className="text-center p-4 rounded-xl bg-background border border-border/40">
-                    <stat.icon className="w-8 h-8 text-primary mx-auto mb-2" />
-                    <div className="text-2xl font-bold text-primary">{stat.value}</div>
-                    <div className="text-xs text-muted-foreground mt-1">{stat.label}</div>
-                  </div>
-                ))}
               </div>
             </FadeInView>
           </div>
@@ -258,11 +240,11 @@ const StronyInternetoweGdynia = () => {
                   <ul>
                     <li><strong>Analizę potrzeb klienta</strong>, aby dokładnie zrozumieć jego oczekiwania i cel biznesowy.</li>
                     <li><strong>Stworzenie projektu graficznego strony</strong>, który będzie wizualnie atrakcyjny i spójny z identyfikacją marki.</li>
-                    <li><strong>Wdrożenie i optymalizację SEO</strong>, aby strona działała sprawnie i pojawiała się wysoko w Google.</li>
+                    <li><strong>Wdrożenie i optymalizację SEO</strong>, aby strona działała sprawnie i była przygotowana technicznie pod wyszukiwarki.</li>
                   </ul>
                   <p>
                     Rozumiemy, że każda firma jest inna, dlatego do każdego projektu podchodzimy indywidualnie.
-                    Nasz zespół doświadczonych projektantów i programistów dba o to, aby każda strona internetowa była
+                    Nasz zespół projektantów i programistów dba o to, aby każda strona internetowa była
                     nie tylko estetyczna, ale także <strong>responsywna i dostosowana do wyświetlania na różnych urządzeniach</strong>.
                   </p>
 
@@ -272,7 +254,7 @@ const StronyInternetoweGdynia = () => {
                     Indywidualne podejście do klienta pozwala nam tworzyć unikalne projekty graficzne stron www,
                     które odzwierciedlają charakter Twojej firmy i wyróżniają ją na tle konkurencji w Gdyni, Gdańsku i Sopocie.
                     <strong>Nowoczesna strona internetowa to inwestycja w rozwój Twojego biznesu</strong>,
-                    która przynosi wymierne korzyści w postaci zwiększonej liczby klientów.
+                    która ułatwia klientom poznanie oferty i kontakt z firmą.
                   </p>
 
                   <h3>Responsywne strony www</h3>
@@ -345,7 +327,7 @@ const StronyInternetoweGdynia = () => {
                     Zaczynamy od określenia potrzeb firmy i specyfiki branży — czy to turystyka,
                     moda, elektronika, czy produkty lokalne. Następnie projektujemy indywidualny projekt
                     i wdrażamy sklep ze wszystkimi integracjami płatności (PayU, Przelewy24, Stripe, BLIK).
-                    <strong>Profesjonalna strona internetowa to inwestycja, która przynosi wymierne korzyści.</strong>
+                    <strong>Profesjonalna strona internetowa to inwestycja w sprzedaż online.</strong>
                   </p>
 
                   <h3>Optymalizacja e-commerce dla rynku Trójmiasta</h3>
@@ -419,7 +401,7 @@ const StronyInternetoweGdynia = () => {
                 <FadeInView key={index} delay={index * 0.1}>
                   <div className={`p-6 rounded-xl border transition-all h-full flex flex-col ${plan.popular ? "border-primary bg-primary/5" : "border-border/50 bg-background"}`}>
                     {plan.popular && (
-                      <span className="text-xs text-primary font-semibold uppercase tracking-wider mb-3 block">Najpopularniejszy</span>
+                      <span className="text-xs text-primary font-semibold uppercase tracking-wider mb-3 block">Polecany zakres</span>
                     )}
                     <h3 className="text-xl font-bold mb-1">{plan.title}</h3>
                     <p className="text-sm text-muted-foreground mb-3">{plan.desc}</p>
@@ -477,7 +459,7 @@ const StronyInternetoweGdynia = () => {
                   Wybrane realizacje stron www
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Projekty, które przynosiły realne rezultaty naszym klientom.
+                  Przykładowe projekty stron, które zrealizowaliśmy.
                 </p>
               </div>
             </FadeInView>
@@ -610,16 +592,14 @@ const StronyInternetoweGdynia = () => {
             <p className="text-muted-foreground mb-4">
               Gdynia to najmłodsze z wielkich miast Polski — zbudowane od podstaw w XX wieku,
               z portem morskim, modernistyczną architekturą i nieustającą energią innowacji.
-              Dziś Gdynia to jeden z najszybciej rosnących ośrodków IT na Pomorzu: firmy takie
-              jak Asseco, Intel Technology Poland i setek mniejszych software house'ów wybrały
-              Gdynię na swoją siedzibę. W tym środowisku oczekiwania wobec strony internetowej
-              są wysokie — tworzymy strony www, które tym oczekiwaniom sprostają.
+              Dziś Gdynia, jak całe Trójmiasto, ma silną branżę IT i usługową, więc oczekiwania
+              wobec strony internetowej są wysokie — tworzymy strony www, które tym oczekiwaniom sprostają.
             </p>
             <p className="text-muted-foreground mb-6">
-              Gdynia jest częścią Trójmiasta — aglomeracji 750 000 mieszkańców z wspólnym rynkiem
+              Gdynia jest częścią Trójmiasta — aglomeracji ze wspólnym rynkiem
               pracy i klientów. Strony internetowe, które tworzymy dla firm z Gdyni, są
               optymalizowane zarówno pod frazy lokalne (Gdynia), jak i trójmiejskie (Trójmiasto,
-              Gdańsk-Gdynia-Sopot), co maksymalizuje zasięg bez powielania treści.
+              Gdańsk-Gdynia-Sopot), co poszerza zasięg bez powielania treści.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
@@ -646,14 +626,14 @@ const StronyInternetoweGdynia = () => {
               Lokalne frazy — „usługa + Gdynia", „usługa + Trójmiasto" — generują klientów
               gotowych do zakupu. Optymalizujemy strony pod te frazy od pierwszego dnia projektu,
               konfigurujemy Google Moja Firma i dbamy o spójność danych w katalogach lokalnych.
-              Efektem jest widoczność zarówno w organicznych wynikach wyszukiwania,
-              jak i w sekcji Google Maps — bez stałych kosztów reklamy.
+              To pomaga budować widoczność w organicznych wynikach wyszukiwania i w Google Maps,
+              choć nie gwarantujemy konkretnej pozycji — zależy ona też od konkurencji i działań po wdrożeniu.
             </p>
             <p className="text-muted-foreground">
               Pracujemy z firmami z całego Trójmiasta — Gdynia, Gdańsk, Sopot, Rumia, Wejherowo.
-              Zdalny model współpracy sprawia, że lokalizacja nie jest barierą, a nasz
-              doświadczony team dostarcza projekty w terminie i budżecie. Bezpłatna wycena
-              w 24 godziny — skontaktuj się z nami i porozmawiajmy o Twojej stronie.
+              Pracujemy z Poznania, a firmy z Trójmiasta obsługujemy zdalnie — termin i budżet
+              ustalamy w ofercie przed startem projektu. Wycena jest bezpłatna — skontaktuj się
+              z nami i porozmawiajmy o Twojej stronie.
             </p>
           
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">

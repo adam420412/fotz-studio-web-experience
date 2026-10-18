@@ -102,7 +102,7 @@ export default function BlogPersonalizationMarketingCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Personalizacja w marketingu", url: "https://www.fotz-studio.pl" },
+              { name: "Personalizacja w marketingu", url: "/blog/personalizacja-marketingu-co-to" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Personalizacja w marketingu — co to jest i jak wdrożyć?

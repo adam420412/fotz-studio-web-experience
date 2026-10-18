@@ -50,7 +50,7 @@ const variantCopy = {
       },
       {
         q: `Co odróżnia FOTZ od innych agencji w ${cityLoc}?`,
-        a: `Łączymy kampanie z własną produkcją: wideo, fotografię i branding robi ten sam zespół, który prowadzi reklamy. Dzięki temu nasi klienci nie muszą koordynować trzech różnych dostawców, a kreacje reklamowe powstają z pełnym zrozumieniem strategii mediowej.`,
+        a: `Kampanie łączymy z produkcją wideo, fotografią i brandingiem w jednym projekcie, który koordynuje FOTZ Studio. Dzięki temu nasi klienci nie muszą koordynować trzech różnych dostawców, a kreacje reklamowe powstają z pełnym zrozumieniem strategii mediowej.`,
       },
     ],
   },

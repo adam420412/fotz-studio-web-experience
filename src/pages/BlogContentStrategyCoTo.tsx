@@ -59,7 +59,7 @@ export default function BlogContentStrategyCoTo() {
     {
       question: "Ile kosztuje Content Marketing?",
       answer:
-        "Koszty Content Marketingu: Wewnętrzny (in-house): specjalista content marketing 6000-12 000 PLN brutto/mies. + narzędzia (Ahrefs/Semrush ~500-1000 PLN/mies.). Freelancerzy: copywriter SEO 100-300 PLN/artykuł (podstawa) lub 500-3000 PLN za ekspertki treści. Agencja content marketingu: 3000-15 000 PLN/mies. za kompleksowe usługi (strategia + produkcja + dystrybucja). ROI content marketingu: HubSpot raportuje że content marketing kosztuje 62% mniej niż tradycyjny marketing, ale generuje 3x więcej leadów. Efekty są opóźnione (6-12 miesięcy) ale długotrwałe — artykuł z 2020 nadal generuje ruch w 2025.",
+        "Koszt zależy od modelu współpracy, liczby i długości treści, formatów (tekst, wideo, grafika) oraz tego, czy w zakresie jest strategia i dystrybucja. Przykładowe widełki rynkowe w Polsce (orientacyjne, nie cennik FOTZ Studio): Wewnętrzny (in-house): specjalista content marketing ok. 6000-12 000 PLN brutto/mies. + narzędzia (Ahrefs/Semrush ok. 500-1000 PLN/mies.). Freelancerzy: copywriter SEO ok. 100-300 PLN/artykuł (podstawa) lub 500-3000 PLN za rozbudowane treści eksperckie. Agencja content marketingu: ok. 3000-15 000 PLN/mies. za kompleksowe usługi (strategia + produkcja + dystrybucja). Konkretny zakres wyceniamy po rozmowie. ROI content marketingu: dobrze prowadzone treści z czasem obniżają koszt pozyskania leada w porównaniu z reklamą płatną, bo pracują długo po publikacji. Efekty są opóźnione (6-12 miesięcy) ale długotrwałe — artykuł z 2020 nadal generuje ruch w 2025.",
     },
   ];
 

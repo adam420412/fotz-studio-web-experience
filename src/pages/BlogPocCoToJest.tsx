@@ -9,7 +9,7 @@ import { RelatedArticles } from "@/components/blog/RelatedArticles";
 const faqItems = [
   {
     question: "Co to jest POC w sprzedaży B2B?",
-    answer: "POC (Proof of Concept, dowód koncepcji) to ograniczony, czasowy test produktu lub rozwiązania w środowisku klienta, mający na celu weryfikację, czy rozwiązanie spełnia jego wymagania techniczne i biznesowe. W sprzedaży B2B POC jest etapem między demo a podpisaniem kontraktu — klient testuje produkt na realnych danych i procesach. POC jest szczególnie częsty w sprzedaży enterprise software, cybersecurity, data/AI i infrastruktury. POC dobrze przeprowadzony dramatycznie zwiększa win rate — źle zarządzany może być stratą czasu dla obu stron.",
+    answer: "POC (Proof of Concept, dowód koncepcji) to ograniczony, czasowy test produktu lub rozwiązania w środowisku klienta, mający na celu weryfikację, czy rozwiązanie spełnia jego wymagania techniczne i biznesowe. W sprzedaży B2B POC jest etapem między demo a podpisaniem kontraktu — klient testuje produkt na realnych danych i procesach. POC jest szczególnie częsty w sprzedaży enterprise software, cybersecurity, data/AI i infrastruktury. POC dobrze przeprowadzony wyraźnie zwiększa szanse na wygranie dealu — źle zarządzany może być stratą czasu dla obu stron.",
   },
   {
     question: "Jaka jest różnica między POC, pilotem a triałem?",
@@ -197,7 +197,7 @@ export default function BlogPocCoToJest() {
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Success Criteria — klucz do wygrania POC</h2>
             <p className="text-gray-600 mb-10 max-w-3xl">
               Najważniejszy element POC to zdefiniowanie success criteria PRZED jego rozpoczęciem.
-              Bez jasnych kryteriów nie ma obiektywnej oceny — klient może zawsze przesuwać słupki.
+              Bez jasnych kryteriów nie ma obiektywnej oceny — klient może zawsze przesuwać słupki. Poniżej przykładowe kryteria — progi liczbowe ustalasz indywidualnie z klientem.
             </p>
           </FadeInView>
           <div className="grid md:grid-cols-3 gap-6">

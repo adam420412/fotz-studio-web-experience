@@ -12,19 +12,19 @@ function FacebookAdsTorun() {
   const faqs = [
     {
       question: "Ile kosztują reklamy Facebook Ads w Toruniu?",
-      answer: "Koszt kampanii Facebook Ads zależy od budżetu, branży i konkurencji. Minimalna inwestycja to zazwyczaj 500 PLN miesięcznie. Oferujemy indywidualne pakiety dostosowane do potrzeb każdej firmy z Torunia.",
+      answer: "Wycenę obsługi przygotowujemy po rozmowie o zakresie: liczbie kampanii, celach, przygotowaniu kreacji i konfiguracji śledzenia. Budżet reklamowy płacisz bezpośrednio platformie Meta, osobno od naszego wynagrodzenia — jego wysokość ustalamy razem, zależnie od branży i celu.",
     },
     {
       question: "Jak długo trwa optymalizacja kampanii Meta Ads?",
-      answer: "Optymalizacja trwa co najmniej 2-3 tygodnie. W tym czasie testujemy różne grupy docelowe, kreatywności i budżety, aby znaleźć najlepszą konfigurację dla Twojego biznesu.",
+      answer: "Optymalizacja to proces ciągły — najpierw zbieramy dane, potem testujemy różne grupy docelowe, kreatywności i budżety, aby znaleźć najlepszą konfigurację dla Twojego biznesu.",
     },
     {
       question: "Jakie wyniki można osiągnąć z Facebook Ads Toruń?",
-      answer: "Średnio nasze kampanie osiągają ROAS (zwrot z inwestycji) na poziomie 3-5x. Dokładne wyniki zależą od branży, produktu i targetowania. Gwarantujemy przezroczystość w raportowaniu.",
+      answer: "Wyniki zależą od branży, produktu, oferty, strony docelowej i targetowania, dlatego nie obiecujemy konkretnego zwrotu z inwestycji. Zapewniamy za to przejrzyste raportowanie — widzisz, na co idzie budżet i co z niego wynika.",
     },
     {
       question: "Czy mogę zmienić budżet kampanii w dowolnym momencie?",
-      answer: "Tak, możesz zmienić budżet, docelową grupę wiekową, zainteresowania i inne parametry kampanii w każdej chwili. Doradczę Ci optymalny timing zmian.",
+      answer: "Tak, możesz zmienić budżet, docelową grupę wiekową, zainteresowania i inne parametry kampanii w każdej chwili. Doradzimy, kiedy zmiany mają sens, żeby nie zaburzyć fazy uczenia kampanii.",
     },
     {
       question: "Jakie branże najlepiej się konwertują na Meta Ads?",
@@ -36,11 +36,11 @@ function FacebookAdsTorun() {
     },
     {
       question: "Jak wygląda proces współpracy z agencją Fotz.pl?",
-      answer: "Proces: 1) Konsultacja strategiczna, 2) Wdrożenie i testowanie, 3) Optymalizacja, 4) Cotygodniowe raporty. Jesteśmy zawsze dostępni dla Torunia i okolic.",
+      answer: "Proces: 1) Konsultacja strategiczna, 2) Wdrożenie i testowanie, 3) Optymalizacja, 4) Cotygodniowe raporty. Pracujemy z Poznania, firmy z Torunia obsługujemy zdalnie.",
     },
     {
       question: "Ile czasu zajmuje zwiększenie sprzedaży po starcie kampanii?",
-      answer: "Pierwsze rezultaty widać zazwyczaj w ciągu 1-2 tygodni. Pełne potencjał kampania osiąga po 4-8 tygodniach optymalizacji i zbierania danych.",
+      answer: "Tempo zależy od budżetu, branży i oferty. Pierwsze dane pojawiają się krótko po starcie, a kampania poprawia się w miarę zbierania danych i kolejnych optymalizacji — nie podajemy sztywnych terminów efektów.",
     },
   ];
 
@@ -98,7 +98,7 @@ function FacebookAdsTorun() {
           <div className="max-w-3xl mx-auto">
             <h1 className="text-4xl font-bold mb-6">Facebook Ads Toruń</h1>
             <p className="text-lg text-gray-600 mb-8">
-              Kampanie Facebook Ads i Meta Ads dla firm z Torunia. Nasze agencja specjalizuje się w reklamach na Facebooku i Instagramie z targetowaniem lokalnym. Zwiększ zasięg i sprzedaż Twojej firmy dzięki profesjonalnym kampaniom Meta Ads.
+              Kampanie Facebook Ads i Meta Ads dla firm z Torunia. Nasza agencja specjalizuje się w reklamach na Facebooku i Instagramie z targetowaniem lokalnym. Zwiększ zasięg i sprzedaż Twojej firmy dzięki profesjonalnym kampaniom Meta Ads.
             </p>
             <div className="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8">
               <p className="text-blue-900">
@@ -116,7 +116,7 @@ function FacebookAdsTorun() {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <span className="text-blue-600 font-bold mr-4">✓</span>
-                <span>Doświadczenie: 10+ lat na rynku kampanii reklamowych dla firm z Torunia</span>
+                <span>Praca zdalna: pracujemy z Poznania, firmy z Torunia obsługujemy zdalnie</span>
               </li>
               <li className="flex items-start">
                 <span className="text-blue-600 font-bold mr-4">✓</span>
@@ -124,7 +124,7 @@ function FacebookAdsTorun() {
               </li>
               <li className="flex items-start">
                 <span className="text-blue-600 font-bold mr-4">✓</span>
-                <span>ROI: Średnio 3-5x zwrotu z inwestycji w kampaniach Meta Ads</span>
+                <span>Mierzalność: konfigurujemy Pixel i zdarzenia, żeby było widać, co daje kampania</span>
               </li>
               <li className="flex items-start">
                 <span className="text-blue-600 font-bold mr-4">✓</span>

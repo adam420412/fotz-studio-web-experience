@@ -9,12 +9,12 @@ const faqItems = [
   {
     question: "Ile kosztuje film reklamowy dla firmy?",
     answer:
-      "Pojedynczy film zaczyna się od 1 900 zł netto. Dzień zdjęciowy z serią 10 gotowych materiałów to 12 000 zł netto, czyli 1 200 zł za film.",
+      "To zależy od liczby materiałów, długości dnia zdjęciowego, scenariusza i zakresu postprodukcji. Konkretną wycenę przygotowujemy po krótkiej rozmowie o celu filmu i miejscu, w którym ma być publikowany.",
   },
   {
     question: "Czy w cenie są poprawki?",
     answer:
-      "Tak. Do każdego materiału wliczone są dwie rundy poprawek, montaż, napisy, grafiki i pliki gotowe do publikacji.",
+      "Liczbę rund poprawek, montaż, napisy, grafiki i formaty plików ustalamy w wycenie, zanim ruszy produkcja, żeby nie było niespodzianek na końcu.",
   },
   {
     question: "Czy budżet reklamowy jest w cenie produkcji?",
@@ -40,13 +40,13 @@ export default function BlogIleKosztujeFIlmReklamowy() {
     <Layout>
       <SEOHead
         title="Ile kosztuje film reklamowy dla firmy"
-        description="Ile kosztuje film reklamowy dla firmy w 2026? Pojedynczy film od 1 900 zł, dzień zdjęciowy z serią 10 rolek 12 000 zł. Sprawdź, co wpływa na cenę i jak nie przepłacić."
+        description="Ile kosztuje film reklamowy dla firmy w 2026? Sprawdź, co wpływa na cenę produkcji wideo, kiedy opłaca się seria z jednego dnia zdjęciowego i jak nie przepłacić."
         canonical={CANONICAL}
         keywords="ile kosztuje film reklamowy, cennik filmu reklamowego, produkcja video cennik, film reklamowy dla firmy, koszt spotu reklamowego"
       />
       <ArticleSchema
         title="Ile kosztuje film reklamowy dla firmy"
-        description="Ile kosztuje film reklamowy dla firmy w 2026? Pojedynczy film od 1 900 zł netto, dzień zdjęciowy z serią 10 rolek 12 000 zł netto. Sprawdź, co wpływa na cenę."
+        description="Ile kosztuje film reklamowy dla firmy w 2026? Sprawdź, co wpływa na cenę produkcji wideo i kiedy opłaca się seria z jednego dnia zdjęciowego."
         url={CANONICAL}
         datePublished="2026-07-11"
       />
@@ -76,7 +76,7 @@ export default function BlogIleKosztujeFIlmReklamowy() {
               Ile kosztuje film reklamowy dla firmy
             </h1>
             <p className="text-xl text-gray-300 mb-8 max-w-3xl">
-              Najkrótsza odpowiedź: pojedynczy film reklamowy zaczyna się u nas od 1 900 zł netto, a pełny dzień zdjęciowy, z którego wychodzi seria 10 gotowych materiałów, to 12 000 zł netto.
+              Najkrótsza odpowiedź: to zależy od liczby materiałów, dnia zdjęciowego, scenariusza i postprodukcji. Poniżej rozkładamy cenę na czynniki, żebyś wiedział, za co płacisz.
             </p>
           </div>
         </div>
@@ -85,7 +85,7 @@ export default function BlogIleKosztujeFIlmReklamowy() {
       <article className="max-w-3xl mx-auto px-4 py-16 prose prose-lg">
         <FadeInView>
           <p className="lead text-lg text-gray-700">
-            Najkrótsza odpowiedź: pojedynczy film reklamowy zaczyna się u nas od <strong>1 900 zł netto</strong>, a pełny dzień zdjęciowy, z którego wychodzi seria 10 gotowych materiałów, to <strong>12 000 zł netto</strong>. Reszta zależy od tego, co dokładnie chcesz pokazać i gdzie ten film ma pracować. Poniżej rozkładamy cenę na czynniki, żebyś wiedział, za co płacisz i kiedy warto dołożyć, a kiedy nie.
+            Cena filmu reklamowego zależy przede wszystkim od tego, co dokładnie chcesz pokazać, ile materiałów potrzebujesz i gdzie ten film ma pracować. Poniżej rozkładamy cenę na czynniki, żebyś wiedział, za co płacisz i kiedy warto dołożyć, a kiedy nie.
           </p>
 
           <h2>Co wpływa na cenę filmu reklamowego</h2>
@@ -95,19 +95,14 @@ export default function BlogIleKosztujeFIlmReklamowy() {
           <ul>
             <li><strong>Liczba materiałów.</strong> Jeden film to jedna cena. Ale jeśli i tak wchodzisz na plan, taniej wyjdzie nagrać od razu kilkanaście ujęć i zmontować z nich serię niż wracać co miesiąc.</li>
             <li><strong>Dzień zdjęciowy.</strong> Ekipa, sprzęt, światło i dźwięk kosztują tyle samo, czy nagrywasz jeden film, czy dziesięć. Dlatego seria zawsze ma niższy koszt jednostkowy.</li>
-            <li><strong>Scenariusz i koncepcja.</strong> Prosty film produktowy jest tańszy niż spot z aktorem, lokalizacją i rozpisanym scenariuszem. W serii warsztat kreatywny, persony, język, filary i koncepty dostajesz gratis.</li>
-            <li><strong>Postprodukcja.</strong> Montaż, napisy, grafiki i pliki gotowe do publikacji są już w cenie. Dwie rundy poprawek na materiał też.</li>
+            <li><strong>Scenariusz i koncepcja.</strong> Prosty film produktowy jest tańszy niż spot z aktorem, lokalizacją i rozpisanym scenariuszem. Przy serii koncepcję i scenariusze opracowuje się raz dla całego pakietu, więc rozkładają się na więcej materiałów.</li>
+            <li><strong>Postprodukcja.</strong> Montaż, napisy, grafiki, liczba formatów i rund poprawek. Warto ustalić je w wycenie przed startem, bo to one często decydują o różnicy między ofertami.</li>
           </ul>
 
-          <h2>Cennik produkcji wideo w FOTZ Studio</h2>
+          <h2>Jak wyceniamy produkcję wideo w FOTZ Studio</h2>
           <p>
-            Nasze stawki są proste i jawne.
+            Nie mamy jednej stawki pasującej do każdego projektu. Wycenę przygotowujemy po krótkiej rozmowie, w której ustalamy cel filmu, liczbę materiałów, formaty i miejsca publikacji. Możesz zamówić pojedynczy film na konkretną kampanię, serię materiałów z jednego dnia zdjęciowego albo stałą współpracę z regularną produkcją treści.
           </p>
-          <ul>
-            <li><strong>Pojedynczy film lub rolka: od 1 900 zł netto.</strong> Dobre, gdy potrzebujesz jednego mocnego materiału na konkretną kampanię.</li>
-            <li><strong>Seria 10 rolek z 1 dnia zdjęciowego: 12 000 zł netto.</strong> To <strong>1 200 zł</strong> za gotowy film, czyli najniższy koszt jednostkowy. W pakiecie: koncepcje, scenariusze, zdjęcia, sprzęt, dźwięk, montaż, napisy, grafiki i pliki do publikacji.</li>
-            <li><strong>Abonament PARTNER: 8 000 do 9 000 zł/mc.</strong> Gdy chcesz stały dopływ materiałów: 4 rolki miesięcznie, SEO on going, strategia kwartalna i priorytet w kolejce.</li>
-          </ul>
           <p>
             Budżet na promocję filmu w Meta czy Google Ads jest po Twojej stronie i liczymy go osobno od produkcji.
           </p>
@@ -122,7 +117,7 @@ export default function BlogIleKosztujeFIlmReklamowy() {
 
           <h2>Dlaczego my</h2>
           <p>
-            Prowadzimy w całości Instagram Enea Stadionu, a nasze materiały robią <strong>ponad 3 mln wyświetleń miesięcznie</strong>. Realizowaliśmy produkcje m.in. dla <strong>Żabki</strong>, <strong>WSB Merito</strong>, <strong>Zakładów Cegielskiego</strong> i <strong>FPS</strong>. Mamy też <strong>ponad 160 opinii Google ze średnią 5.0</strong>.
+            Jesteśmy agencją z Poznania, a firmy z innych miast obsługujemy zdalnie. Pracowaliśmy m.in. dla <strong>Enea Stadionu</strong>, <strong>FPS Cegielski</strong> i <strong>AutoSpa</strong>, a dla <strong>WSB Merito</strong> zrealizowaliśmy spot.
           </p>
           <p>
             Nie sprzedajemy metryk próżności. Film ma przyciągać uwagę i prowadzić do sprzedaży, a nie tylko ładnie wyglądać.

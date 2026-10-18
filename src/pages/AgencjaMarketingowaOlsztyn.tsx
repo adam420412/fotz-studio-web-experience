@@ -23,22 +23,22 @@ const services = [
   {
     icon: Globe,
     title: "Strony i sklepy internetowe",
-    description: "Responsywne strony www i e-commerce dla firm z Olsztyna. Zoptymalizowane pod SEO i konwersję. Dedykowana obsługa dla hoteli, pensjonatów, produkcji (Michelin, Bridgestone)."
+    description: "Responsywne strony www i e-commerce dla firm z Olsztyna. Zoptymalizowane pod SEO i konwersję. Rozwiązania dla hoteli, pensjonatów i firm produkcyjnych."
   },
   {
     icon: Target,
     title: "Pozycjonowanie SEO",
-    description: "Agencja SEO Olsztyn — zwiększamy widoczność w Google. Specjalizacja w turystyce Mazur, SEO lokalnym, B2B dla produkcji. TOP 5 pozycje w 2-3 miesiące."
+    description: "SEO dla firm z Olsztyna — pracujemy nad widocznością w Google: SEO lokalne, turystyka, B2B dla produkcji. Nie gwarantujemy konkretnych pozycji ani terminów — plan działań ustalamy po audycie."
   },
   {
     icon: Zap,
     title: "Kampanie Google Ads",
-    description: "Google Ads dla hoteli, pensjonatów, e-commerce — search, shopping, display. Sezonowe skalowanie (maj-wrzesień +300% budget). Budżety 2 000–50 000+ PLN/mies."
+    description: "Google Ads dla hoteli, pensjonatów, e-commerce — search, shopping, display. Budżet dopasowany do sezonu: większy latem, mniejszy poza sezonem. Budżet reklamowy płacony Google jest osobny od obsługi."
   },
   {
     icon: Star,
     title: "Kampanie Meta Ads",
-    description: "Facebook i Instagram ads — perfect dla turystyki sezonowej Mazur. Kampanie dostrojone pod wzrost rezerwacji (marzec-maj pre-season, maj-wrzesień high season)."
+    description: "Reklamy na Facebooku i Instagramie dla turystyki sezonowej Mazur. Kampanie dostrojone pod wzrost rezerwacji (marzec-maj pre-season, maj-wrzesień high season)."
   },
   {
     icon: Users,
@@ -54,32 +54,32 @@ const services = [
 
 const faqItems = [
   {
-    question: "Jak marketing pomaga hoteli i pensjonatom w Olsztynie?",
-    answer: "Hotel w Olsztynie szukający rezerwacji przez Google = SEO dla 'hotel Olsztyn', 'noclegi nad jeziorem', 'pensjonat Warmia'. Marketing cyfrowy (SEO + Google Ads + social) zwiększa widoczność. Sezon turystyczny (maj-wrzesień) to +300% traffic — kampanie muszą być dostrojone na tę sezonowość. Wspólnie budujemy przychody: pre-season ramp-up (marzec-kwiecień), high season max (maj-wrzesień), off-season remarketing."
+    question: "Jak marketing pomaga hotelom i pensjonatom w Olsztynie?",
+    answer: "Hotel w Olsztynie szukający rezerwacji przez Google potrzebuje widoczności na frazy typu 'hotel Olsztyn', 'noclegi nad jeziorem' czy 'pensjonat Warmia'. Marketing cyfrowy (SEO + Google Ads + social media) zwiększa tę widoczność. Ruch w turystyce na Mazurach jest wyraźnie sezonowy, dlatego kampanie planujemy w fazach: przygotowanie przed sezonem, intensywne działania w sezonie i remarketing poza nim."
   },
   {
-    question: "Jaka jest róża warunków między Mazurami a innymi rynkami turystycznymi?",
-    answer: "Mazury to 2000+ jezior, miliony turystów rocznie — ale mało optymalizacji cyfrowej. Konkurencja turystyczna z Krakowa czy Warszawy to duże portale (booking.com, airbnb). Dla małych hoteli: SEO + direct bookings to game changer. Long-tail traffic ('best budget hotel lake Mazur', 'family vacation near Olsztyn') — niskie CPL, wyższa konwersja, mniej mediatorów (Booking, Airbnb), wyższa marża. To nasza nisza."
+    question: "Czym różnią się Mazury od innych rynków turystycznych?",
+    answer: "Mazury to region jezior, do którego turyści przyjeżdżają głównie w sezonie letnim. Małe hotele i pensjonaty konkurują o uwagę z dużymi portalami rezerwacyjnymi (Booking.com, Airbnb). Dla nich szansą są rezerwacje bezpośrednie: SEO na frazy long-tail, Google Ads i social media prowadzące gości prosto na stronę obiektu."
   },
   {
     question: "Czy turystyka sezonowa wymaga specjalnego marketingu?",
-    answer: "Tak. Sezonowy marketing to strategia w 3 fazy: (1) Pre-season (luty-kwiecień) — buduj awareness, kampanie muszą być gotowe, booking opening, (2) High season (maj-wrzesień) — maksymalny budżet, intensywne kampanie, real-time optimization, (3) Off-season (październik-styczeń) — remarketing, email marketing do gości, budget SEO (long-term assets), promocje dla repeat guests. Większość biznesów nie robi Phase 3 — my to robimy."
+    answer: "Tak. Sezonowy marketing planujemy w 3 fazach: (1) przed sezonem (luty-kwiecień) — budowanie rozpoznawalności, przygotowanie kampanii i systemu rezerwacji, (2) sezon (maj-wrzesień) — największy budżet reklamowy, intensywne kampanie i bieżąca optymalizacja, (3) poza sezonem (październik-styczeń) — remarketing, e-mail marketing do gości, SEO i treści długoterminowe, oferty dla powracających gości."
   },
   {
     question: "Ile wynoszą budżety marketingowe dla hotelu w Olsztynie?",
-    answer: "Minimum: 3 000–5 000 PLN/miesiąc (SEO + Google Ads mini + social). Average: 8 000–15 000 PLN/mies (kompleksowa obsługa). Maximum: 25 000–50 000+ PLN/mies (sezonowe skalowanie, multi-channel, video, influencer). Sezon wpływa drastycznie — maj-wrzesień +100-300% budżetu, off-season można obniżyć. ROI dla hotelu: 1 dodatkowy guest = 300–500 PLN przychodu = 1000+ marża. Marketing 5k PLN/mies może wygenerować 50+ dodatkowych gości sezonowo."
+    answer: "Wycenę obsługi przygotowujemy po rozmowie o zakresie: które kanały prowadzimy (SEO, Google Ads, Meta Ads, social media, produkcja video), ile obiektów lub ofert promujemy i jak intensywny jest sezon. Budżet reklamowy płacony Google i Meta jest zawsze osobny od wynagrodzenia agencji i zwykle zwiększa się go w sezonie, a obniża poza nim. Nie obiecujemy konkretnej liczby dodatkowych gości."
   },
   {
-    question: "Czy universal edukacyjny turyzm (UWM) to odrębny segment?",
-    answer: "Tak. UWM to 30k+ studentów, szkoły letnie, konferencje akademickie — nowy segment poza turystami. Marketing dla tego segmentu: akademiki szkolne, noclegi konferencyjne, logistyka dla grup. Słowa kluczowe: 'accommodation students Warmia', 'conference venue Olsztyn', 'team building lakes'. Off-season (styczeń-kwiecień) to szansa — nie turystyka, ale biznes akademicki. Poszerzamy grę poza letnie spiky."
+    question: "Czy segment akademicki (UWM) to odrębna grupa odbiorców?",
+    answer: "Tak. Uniwersytet Warmińsko-Mazurski przyciąga studentów, uczestników szkół letnich i konferencji — to grupa poza typowymi turystami. Dla obiektów noclegowych i konferencyjnych można przygotować osobne kampanie i treści, np. pod frazy 'sala konferencyjna Olsztyn' czy 'noclegi dla grup Warmia'. Taki segment może pomóc wypełnić okres poza sezonem."
   },
   {
-    question: "Jak budować brand dla hotelu konkurującego z Booking.com?",
-    answer: "Booking to mediator — utrzymuje 15-20% marży hotelowej. Strategie: (1) Direct bookings — SEO, email, social media, loyalty program, (2) Branding — profesjonalna fotografia, video, story — coś co Booking nie robi, (3) Long-tail content — artykuły 'what to do in Mazury', 'hidden lakes', Instagram storytelling — buduje brand, nie tylko konwersje, (4) Customer reviews — RateYa, Google Reviews, TripAdvisor — to proof of quality. Wspólnie: zmniejszamy zależność od Booking, zwiększamy marżę."
+    question: "Jak budować markę hotelu konkurującego z Booking.com?",
+    answer: "Portale rezerwacyjne pobierają prowizję od każdej rezerwacji, dlatego warto rozwijać kanał bezpośredni. Strategie: (1) rezerwacje bezpośrednie — SEO, e-mail, social media, program lojalnościowy, (2) branding — profesjonalna fotografia, video i storytelling, (3) treści long-tail — artykuły o tym, co robić na Mazurach, Instagram, (4) opinie gości — Google, TripAdvisor. Celem jest mniejsza zależność od pośredników."
   },
   {
     question: "Czy warto inwestować w video marketing dla hoteli?",
-    answer: "Zdecydowanie. Video to highest engagement — Instagram Reels, YouTube, TikTok. Dla hoteli: room tours, lake views at sunrise, guest testimonials, local experiences. Video SEO (YouTube ranking) to długoterminowy asset — ranking utrzymuje się lata. Budżet: 3 000–5 000 PLN na produkcję (3-5 video), plus paid promotion (Meta Ads video format). ROI: 1 bookingów z YouTube = 5-10 visitors stron."
+    answer: "Video dobrze sprawdza się w social media i na YouTube — Reels, krótkie formy, room toury, widoki na jezioro, lokalne atrakcje. Produkcja video to nasza specjalność. Koszt zależy od liczby filmów, dni zdjęciowych i postprodukcji, a promocję płatną (Meta Ads, YouTube) budżetujemy osobno. Wycenę przygotowujemy po rozmowie o zakresie."
   }
 ];
 
@@ -89,14 +89,14 @@ export default function AgencjaMarketingowaOlsztyn() {
       <Layout>
         <SEOHead
           title="Agencja Marketingowa Olsztyn | FOTZ Studio – Marketing dla firm"
-          description="Agencja marketingowa w Olsztynie. Marketing online dla firm z Warmii i Mazur. Sezonowy marketing turystyczny. Bezpłatna konsultacja!"
+          description="Agencja marketingowa dla firm z Olsztyna, Warmii i Mazur — obsługa zdalna z Poznania. Sezonowy marketing turystyczny. Bezpłatna konsultacja!"
           canonical="https://www.fotz-studio.pl/agencja-marketingowa-olsztyn"
           keywords="agencja marketingowa Olsztyn, marketing Olsztyn, agencja SEO Olsztyn, turystyka Mazury, hotel marketing"
         />
 
         <ServiceSchema
           name="Agencja Marketingowa Olsztyn"
-          description="Kompleksowe usługi marketingu internetowego dla firm z Olsztyna — SEO turystyczne, Google Ads, Meta Ads, social media. Specjalizacja w hotelu, turystyce Mazur, produkcji (Michelin, Bridgestone)."
+          description="Kompleksowe usługi marketingu internetowego dla firm z Olsztyna — SEO turystyczne, Google Ads, Meta Ads, social media. Obsługa zdalna z Poznania dla hoteli, turystyki i firm produkcyjnych."
           provider="fotz.pl"
           areaServed="Olsztyn"
         />
@@ -130,11 +130,11 @@ export default function AgencjaMarketingowaOlsztyn() {
               </motion.h1>
 
               <motion.p variants={fadeIn} className="text-lg md:text-xl text-muted-foreground mb-6 max-w-2xl mx-auto">
-                Marketing online dla firm z Warmii i Mazur. Specjalizacja w turystyce sezonowej, hotelach, pensjonatach. SEO, Google Ads, Meta Ads, social media — dostrojone pod Mazury.
+                Marketing online dla firm z Warmii i Mazur — pracujemy z Poznania, firmy z Olsztyna obsługujemy zdalnie. Turystyka sezonowa, hotele, pensjonaty. SEO, Google Ads, Meta Ads, social media — dostrojone pod Mazury.
               </motion.p>
 
               <motion.p variants={fadeIn} className="text-base text-muted-foreground/80 mb-10 max-w-xl mx-auto">
-                Olsztyn to 175k mieszkańców, capital of Warmia-Mazury. Otaczające 2000+ jezior — polska Hawaje — przyciąga miliony turystów rocznie (sezon maj-wrzesień +300% traffic). Marketing musi być dostrojony na sezonowość. Znamy specyfikę Mazur.
+                Olsztyn to stolica Warmii i Mazur — regionu jezior, do którego turyści przyjeżdżają przede wszystkim latem. Dlatego marketing musi być dostrojony do sezonowości.
               </motion.p>
 
               <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -147,31 +147,6 @@ export default function AgencjaMarketingowaOlsztyn() {
                   <Link to="/realizacje">Zobacz realizacje</Link>
                 </Button>
               </motion.div>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* Stats */}
-        <section className="py-12 bg-card/30 border-y border-border/30">
-          <div className="container px-4">
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={staggerContainer}
-              className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto text-center"
-            >
-              {[
-                { value: "+220%", label: "wzrost ruchu (3 mies.)" },
-                { value: "TOP 3", label: "pozycje w Google" },
-                { value: "4.8/5", label: "ocena (9 opinii)" },
-                { value: "50+", label: "hoteli wspieranych" }
-              ].map((s, i) => (
-                <motion.div key={i} variants={fadeIn}>
-                  <div className="text-3xl md:text-4xl font-heading font-bold text-primary mb-1">{s.value}</div>
-                  <div className="text-sm text-muted-foreground">{s.label}</div>
-                </motion.div>
-              ))}
             </motion.div>
           </div>
         </section>
@@ -228,7 +203,7 @@ export default function AgencjaMarketingowaOlsztyn() {
                   <span className="text-gradient">Olsztyna?</span>
                 </h2>
                 <p className="text-muted-foreground">
-                  Specjaliści w turystyce sezonowej i marketingu tematycznym dla Mazur.
+                  Jak podchodzimy do marketingu dla firm z Warmii i Mazur.
                 </p>
               </motion.div>
 
@@ -236,23 +211,23 @@ export default function AgencjaMarketingowaOlsztyn() {
                 {[
                   {
                     icon: Award,
-                    title: "Specjalizacja w turystyce sezonowej",
-                    desc: "Rozumiemy wyzwania: mai-wrzesień +300% traffic, off-season crisis, budżety dostrojone na sezonowość. Kampanie pre-season, high season, off-season."
+                    title: "Planowanie pod sezonowość",
+                    desc: "Uwzględniamy różnice między sezonem a okresem poza nim: kampanie przed sezonem, w sezonie i po nim, z budżetem dopasowanym do popytu."
                   },
                   {
                     icon: TrendingUp,
                     title: "Marketing dla hoteli i pensjonatów",
-                    desc: "Doświadczenie z direct bookings, konkurencja z Booking.com, fotografia profesjonalna, video tours, guest reviews. Znamy hotel business."
+                    desc: "Rezerwacje bezpośrednie, konkurencja z Booking.com, profesjonalna fotografia, video toury i opinie gości — łączymy te elementy w jedną strategię."
                   },
                   {
                     icon: Users,
-                    title: "Dedykowany ekspert Mazur",
-                    desc: "Znający sezonowość, miejsca, turystów, konkurencję lokalną. Stały kontakt, nie rotacja juniorów. Strategia dostosowana do Olsztyna."
+                    title: "Stały kontakt, praca zdalna",
+                    desc: "Pracujemy z Poznania, a firmy z Olsztyna obsługujemy zdalnie. Masz stałą osobę kontaktową i strategię dostosowaną do Twojego biznesu."
                   },
                   {
                     icon: Globe,
-                    title: "Multi-segment expertise",
-                    desc: "Turystyka + B2B produkcja (Michelin, Bridgestone) + sektor edukacyjny (UWM). Nie tylko hotele — pełne spektrum biznesu Olsztyna."
+                    title: "Różne segmenty rynku",
+                    desc: "Turystyka, firmy produkcyjne B2B i sektor edukacyjny. Nie tylko hotele — strategię dopasowujemy do branży."
                   }
                 ].map((item, i) => (
                   <motion.div
@@ -301,14 +276,14 @@ export default function AgencjaMarketingowaOlsztyn() {
                   {
                     phase: "Faza 2",
                     season: "High season (V-IX)",
-                    focus: "+300% budżetu",
-                    desc: "Maksymalny budżet, intensywne Google Ads search, Meta Ads dla turystów, direct bookings push, real-time optimization, OOH campaigns w turystycznych miejscach."
+                    focus: "Największa intensywność",
+                    desc: "Maksymalny budżet, intensywne Google Ads search, Meta Ads dla turystów, direct bookings push, bieżąca optymalizacja kampanii."
                   },
                   {
                     phase: "Faza 3",
                     season: "Off-season (X-I)",
                     focus: "Long-term assets",
-                    desc: "Remarketing do gości, content marketing (artykuły, vlog), email nurture campaigns, SEO long-tail, loyalty program. Budget 30% high season — ale inwestycje w brand."
+                    desc: "Remarketing do gości, content marketing (artykuły, vlog), email nurture campaigns, SEO long-tail, loyalty program. Niższy budżet reklamowy, ale inwestycje w markę."
                   }
                 ].map((item, i) => (
                   <motion.div
@@ -342,7 +317,7 @@ export default function AgencjaMarketingowaOlsztyn() {
               className="max-w-3xl mx-auto text-center"
             >
               <motion.h2 variants={fadeIn} className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
-                Sezon turystyczny 2024 — przygotuj marketing
+                Przygotuj marketing na sezon turystyczny
               </motion.h2>
               <motion.p variants={fadeIn} className="text-white/80 mb-8">
                 Bezpłatna konsultacja — omówimy Twoją sytuację (hotel, pensjonat, agencja turystyczna), sezonowość i zaproponujemy strategię dla Mazur.
@@ -355,7 +330,7 @@ export default function AgencjaMarketingowaOlsztyn() {
                 </Button>
               </motion.div>
               <motion.p variants={fadeIn} className="text-white/50 text-xs mt-6">
-                Odpowiadamy w ciągu 24 godzin · Bez sprzedaży pod presją
+                Bez sprzedaży pod presją
               </motion.p>
             </motion.div>
           </div>

@@ -147,7 +147,7 @@ export default function BlogTechnicalSEOCoTo() {
                 <Zap className="w-5 h-5 text-blue-600 mb-2" />
                 <p className="text-blue-800 font-semibold mb-2">Chcesz stronę z doskonałym Technical SEO?</p>
                 <p className="text-blue-700 text-sm mb-3">
-                  Budujemy strony z idealnym LCP, bezpiecznym HTTPS, schema markup i sitemap — gotowe na top 3.
+                  Budujemy strony z dbałością o Core Web Vitals, HTTPS, schema markup i sitemap — to solidny techniczny fundament pod pozycjonowanie (konkretnych pozycji w Google nikt uczciwie nie gwarantuje).
                 </p>
                 <Link to="/uslugi/tworzenie-stron-internetowych" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
                   Tworzenie stron — oferta <ArrowRight className="w-4 h-4" />

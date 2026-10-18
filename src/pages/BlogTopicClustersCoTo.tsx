@@ -113,7 +113,7 @@ export default function BlogTopicClustersCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Topic Clusters", url: "https://www.fotz-studio.pl" },
+              { name: "Topic Clusters", url: "/blog/topic-clusters-co-to" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Topic Clusters — co to jest i jak budować klastry tematyczne?

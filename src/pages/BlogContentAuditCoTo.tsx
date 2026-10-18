@@ -123,7 +123,7 @@ export default function BlogContentAuditCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Content Audit", url: "https://www.fotz-studio.pl" },
+              { name: "Content Audit", url: "/blog/content-audit-co-to" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Content Audit — co to jest i jak go przeprowadzić?

@@ -9,7 +9,7 @@ const faqItems = [
   {
     question: "Ile kosztuje reklama wideo na Facebooku i Instagramie?",
     answer:
-      "Składa się z dwóch kosztów: produkcji filmu (od 1 900 zł netto, seria 10 rolek 12 000 zł netto) oraz budżetu mediowego Meta, który ustalasz sam i płacisz bezpośrednio platformie.",
+      "Składa się z dwóch kosztów: produkcji filmu (cena zależy od liczby materiałów, dni zdjęciowych i zakresu postprodukcji, wyceniamy po rozmowie) oraz budżetu mediowego Meta, który ustalasz sam i płacisz bezpośrednio platformie.",
   },
   {
     question: "Czy budżet reklamowy jest w cenie obsługi?",
@@ -29,7 +29,7 @@ const faqItems = [
   {
     question: "Kto zarządza kampanią?",
     answer:
-      "W pakiecie WZROST (5 000 zł/mc) lub PARTNER (8 000 do 9 000 zł/mc) prowadzimy kampanię Meta i dostarczamy raport wyników.",
+      "Możesz prowadzić ją samodzielnie albo zlecić agencji. W FOTZ Studio prowadzimy kampanie Meta w ramach stałej współpracy i dostarczamy raport wyników; zakres i cenę ustalamy po rozmowie.",
   },
 ];
 
@@ -40,13 +40,13 @@ export default function BlogIleKosztujeReklamaWideoFacebook() {
     <Layout>
       <SEOHead
         title="Ile kosztuje reklama wideo na Facebooku i Instagramie"
-        description="Ile kosztuje reklama wideo na Facebooku i Instagramie? Rozkładamy dwa koszty: produkcję filmu (od 1 900 zł) i budżet mediowy Meta. Sprawdź, ile realnie potrzebujesz."
+        description="Ile kosztuje reklama wideo na Facebooku i Instagramie? Rozkładamy dwa koszty: produkcję filmu i budżet mediowy Meta. Sprawdź, od czego zależy cena i ile realnie potrzebujesz."
         canonical={CANONICAL}
         keywords="reklama wideo facebook, reklama wideo instagram, koszt reklamy wideo, budżet mediowy Meta, produkcja video cennik, kampania Meta koszt"
       />
       <ArticleSchema
         title="Ile kosztuje reklama wideo na Facebooku i Instagramie"
-        description="Ile kosztuje reklama wideo na Facebooku i Instagramie? Rozkładamy dwa koszty: produkcję filmu (od 1 900 zł) i budżet mediowy Meta. Sprawdź, ile realnie potrzebujesz."
+        description="Ile kosztuje reklama wideo na Facebooku i Instagramie? Rozkładamy dwa koszty: produkcję filmu i budżet mediowy Meta. Sprawdź, od czego zależy cena i ile realnie potrzebujesz."
         url={CANONICAL}
         datePublished="2026-07-11"
       />
@@ -90,12 +90,15 @@ export default function BlogIleKosztujeReklamaWideoFacebook() {
 
           <h2>Koszt 1: produkcja materiału wideo</h2>
           <p>
-            Reklama jest tak dobra, jak film, który puszczasz. U nas produkcja wygląda tak.
+            Reklama jest tak dobra, jak film, który puszczasz. Na cenę produkcji wpływa kilka czynników.
           </p>
           <ul>
-            <li><strong>Pojedynczy film lub rolka: od 1 900 zł netto.</strong> Jeden materiał pod konkretną kampanię.</li>
-            <li><strong>Seria 10 rolek z 1 dnia zdjęciowego: 12 000 zł netto.</strong> Czyli <strong>1 200 zł</strong> za gotowy film i zapas kreacji do testowania. W cenie: scenariusze, zdjęcia, montaż, napisy, grafiki i pliki gotowe do publikacji.</li>
+            <li><strong>Liczba materiałów.</strong> Pojedynczy film pod jedną kampanię kosztuje inaczej niż seria rolek nagrana podczas jednego dnia zdjęciowego. Przy serii koszt jednego filmu zwykle wyraźnie spada, a Ty dostajesz zapas kreacji do testowania.</li>
+            <li><strong>Zakres prac.</strong> Scenariusz, liczba lokalizacji i osób na planie, montaż, napisy, grafiki i przygotowanie plików w formatach pod Facebooka i Instagrama.</li>
           </ul>
+          <p>
+            Dokładną wycenę przygotowujemy po krótkiej rozmowie o celu kampanii i liczbie potrzebnych materiałów.
+          </p>
           <p>
             Do reklam na Facebooku i Instagramie warto mieć kilka wersji tego samego przekazu. Algorytm Meta sam wybiera zwycięzcę, więc im więcej dobrych kreacji podasz, tym niższy koszt dotarcia osiągniesz.
           </p>
@@ -118,19 +121,15 @@ export default function BlogIleKosztujeReklamaWideoFacebook() {
 
           <h2>Jak to spina się w abonamencie</h2>
           <p>
-            Jeśli nie chcesz pilnować kampanii samodzielnie, prowadzimy to w pakietach.
+            Jeśli nie chcesz pilnować kampanii samodzielnie, możesz zlecić ją w ramach stałej współpracy. Wtedy w miesięcznym koszcie obsługi zwykle mieszczą się zarządzanie kampanią Meta, raport wyników, a w szerszym zakresie także regularna produkcja rolek, opieka nad kanałami social i strategia. Zakres i cenę obsługi ustalamy po rozmowie.
           </p>
-          <ul>
-            <li><strong>WZROST: 5 000 zł/mc.</strong> Opieka nad jednym kanałem social plus zarządzanie kampanią Meta i raport wyników.</li>
-            <li><strong>PARTNER: 8 000 do 9 000 zł/mc.</strong> WZROST plus 4 rolki miesięcznie, SEO on going, strategia kwartalna i priorytet.</li>
-          </ul>
           <p>
             Do tego dochodzi Twój budżet mediowy, który ustalamy wspólnie na starcie w oparciu o cel kampanii.
           </p>
 
           <h2>Ile realnie potrzebujesz na start</h2>
           <p>
-            Zestaw minimalny, żeby reklama wideo na Facebooku i Instagramie miała sens, to jeden solidny film (od <strong>1 900 zł</strong>) plus budżet mediowy, który jesteś w stanie testować przez kilka tygodni. Realnie lepiej wejść z serią materiałów, bo daje algorytmowi z czego wybierać i szybciej obniża koszt dotarcia.
+            Zestaw minimalny, żeby reklama wideo na Facebooku i Instagramie miała sens, to jeden solidny film plus budżet mediowy, który jesteś w stanie testować przez kilka tygodni. Realnie lepiej wejść z serią materiałów, bo daje algorytmowi z czego wybierać i szybciej obniża koszt dotarcia.
           </p>
           <p>
             Nie sprzedajemy zasięgów dla samych zasięgów. Reklama ma przynosić leady i sprzedaż, a naszą robotą jest tak dobrać kreację i grupę, żeby każda złotówka budżetu pracowała mocniej.
@@ -138,7 +137,7 @@ export default function BlogIleKosztujeReklamaWideoFacebook() {
 
           <h2>Dlaczego my</h2>
           <p>
-            Prowadzimy w całości Instagram Enea Stadionu, a nasze materiały robią <strong>ponad 3 mln wyświetleń miesięcznie</strong>. Realizowaliśmy m.in. dla <strong>Żabki</strong>, <strong>WSB Merito</strong>, <strong>Zakładów Cegielskiego</strong> i <strong>FPS</strong>. Mamy <strong>ponad 160 opinii Google ze średnią 5.0</strong>.
+            Jesteśmy agencją z Poznania, która łączy produkcję wideo z prowadzeniem kampanii Meta. Realizowaliśmy m.in. materiały i działania dla <strong>Enea Stadionu</strong>, <strong>FPS Cegielski</strong>, <strong>WSB Merito</strong> (spot reklamowy), <strong>Dawid EDU</strong> (kampania Meta Ads) i <strong>AutoSpa</strong>.
           </p>
 
           <h2>FAQ</h2>

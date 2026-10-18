@@ -12,14 +12,14 @@ export default function GoogleAdsRzeszow() {
     <Layout>
       <SEOHead
           title="Agencja Google Ads Rzeszów | Fotz Studio"
-          description="Google Ads Rzeszów ✓ Kampanie dla firm z Rzeszowa i Podkarpacia. Od 400 zł/mies. Bezpłatna konsultacja!"
+          description="Google Ads Rzeszów ✓ Kampanie dla firm z Rzeszowa i Podkarpacia prowadzone zdalnie z Poznania. Bezpłatna konsultacja!"
           canonical="https://www.fotz-studio.pl/performance-marketing/google-ads/rzeszow"
         keywords="google ads rzeszow, kampanie google ads rzeszow, agencja google ads rzeszow, reklamy google rzeszow, google adwords rzeszow, sem rzeszow, google ads dla firm rzeszow, prowadzenie google ads rzeszow, google ads cennik rzeszow, reklama w google rzeszow"
         />
 
       <ServiceSchema 
         name="Agencja Google Ads Rzeszów"
-        description="Profesjonalne kampanie Google Ads dla firm z Rzeszowa i regionu Podkarpacia. Zwiększamy widoczność w wyszukiwarce i generujemy jakościowe leady dla branży IT, produkcji i usług."
+        description="Profesjonalne kampanie Google Ads dla firm z Rzeszowa i regionu Podkarpacia. Prowadzimy kampanie nastawione na widoczność w wyszukiwarce i pozyskiwanie zapytań dla branży IT, produkcji i usług."
         areaServed="Rzeszow"
       />
       <BreadcrumbSchema items={[
@@ -30,11 +30,11 @@ export default function GoogleAdsRzeszow() {
       <FAQSchema items={[
         {
           question: "Czy Google Ads sprawdzi się dla firmy technologicznej z Rzeszowa?",
-          answer: "Absolutnie! Rzeszów to hub IT i Aviation Valley — ideal dla firm tech. Google Ads doskonale działa dla SaaS, software house'ów, startup'ów i firm B2B szukających IT talent'u i klientów."
+          answer: "Może się sprawdzić — Rzeszów ma silny sektor IT i Aviation Valley. Google Ads nadaje się do kampanii dla SaaS, software house'ów, startupów i firm B2B, a o opłacalności decyduje analiza fraz i stawek w Twojej branży."
         },
         {
           question: "Ile kosztują kampanie Google Ads dla firm z Rzeszowa?",
-          answer: "Minimalna miesięczna inwestycja to 400 zł. Firmy z Rzeszowa zazwyczaj inwestują 1500-3000 zł miesięcznie, aby osiągnąć znaczące rezultaty i konkurować globalnie."
+          answer: "Wycenę obsługi przygotowujemy po rozmowie o zakresie — liczbie kampanii, kanałach, branży i potrzebnych materiałach. Budżet reklamowy płacony Google jest zawsze osobny i ustalamy go razem z Tobą."
         },
         {
           question: "Jakie są najlepsze kampanie Google Ads dla Rzeszowa?",
@@ -42,7 +42,7 @@ export default function GoogleAdsRzeszow() {
         },
         {
           question: "Jak szybko zobaczę rezultaty z Google Ads?",
-          answer: "Pierwsze kliknięcia pojawią się w ciągu kilku godzin. Pełne optimizowanie trwa 2-4 tygodnie. Znaczący wzrost konwersji zazwyczaj obserwujesz po 4-6 tygodniach współpracy."
+          answer: "Pierwsze kliknięcia mogą pojawić się wkrótce po zatwierdzeniu reklam. Optymalizacja to proces ciągły, a tempo poprawy wyników zależy od budżetu, branży i strony docelowej — nie obiecujemy sztywnych terminów efektów."
         },
         {
           question: "Czy mogę targetować kampanię tylko na Rzeszów?",
@@ -54,7 +54,7 @@ export default function GoogleAdsRzeszow() {
         },
         {
           question: "Jakie są gwarancje rezultatów z Google Ads?",
-          answer: "Gwarantujemy transparentne zarządzanie budżetem, ciągłą optymalizację i profesjonalne działania. Nie gwarantujemy konkretnych konwersji (zależy od rynku), ale gwarantujemy maksymalny ROI na każdy złoty."
+          answer: "Nie gwarantujemy konkretnych wyników ani konwersji, bo zależą od rynku, oferty i budżetu. Zapewniamy przejrzyste zarządzanie budżetem, regularną optymalizację i raporty z działań."
         },
         {
           question: "Czy potrzebuję strony internetowej, aby uruchomić Google Ads?",
@@ -75,26 +75,26 @@ export default function GoogleAdsRzeszow() {
               Google Ads dla <span className="text-emerald-300">Rzeszowa</span>
             </h1>
             <p className="text-xl md:text-2xl text-emerald-100 mb-8 max-w-3xl mx-auto">
-              Google Ads Rzeszow — profesjonalne kampanie Google Ads i reklamy w Google dla firm z Rzeszowa i Podkarpacia. Zwiększamy ruch, konwersje i ROI dzięki skutecznym kampaniom SEM. Bezpłatna konsultacja.</p>
+              Google Ads Rzeszow — profesjonalne kampanie Google Ads i reklamy w Google dla firm z Rzeszowa i Podkarpacia. Planujemy i prowadzimy kampanie SEM nastawione na ruch i konwersje. Pracujemy z Poznania, firmy z Rzeszowa obsługujemy zdalnie. Bezpłatna konsultacja.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
             <FadeInView>
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 text-white text-center">
-                <div className="text-4xl font-bold text-emerald-300 mb-2">250K</div>
-                <p className="text-sm text-emerald-100">Mieszkańców Rzeszowa (najszybciej rosnące miasto)</p>
+                <div className="text-4xl font-bold text-emerald-300 mb-2">Search</div>
+                <p className="text-sm text-emerald-100">Display, YouTube i Performance Max</p>
               </div>
             </FadeInView>
             <FadeInView delay={100}>
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 text-white text-center">
-                <div className="text-4xl font-bold text-emerald-300 mb-2">5000+</div>
-                <p className="text-sm text-emerald-100">Pracowników w sektorze IT i Aviation Valley</p>
+                <div className="text-4xl font-bold text-emerald-300 mb-2">Zdalnie</div>
+                <p className="text-sm text-emerald-100">Pracujemy z Poznania dla firm z Rzeszowa</p>
               </div>
             </FadeInView>
             <FadeInView delay={200}>
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 text-white text-center">
-                <div className="text-4xl font-bold text-emerald-300 mb-2">91%</div>
-                <p className="text-sm text-emerald-100">Firm szuka dostawców poprzez Google</p>
+                <div className="text-4xl font-bold text-emerald-300 mb-2">Twoje konto</div>
+                <p className="text-sm text-emerald-100">Dostęp do kampanii, danych i raportów</p>
               </div>
             </FadeInView>
           </div>
@@ -110,7 +110,7 @@ export default function GoogleAdsRzeszow() {
                 Dlaczego Google Ads dla firm z Rzeszowa?
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Rzeszów to najszybciej rosnące miasto w Polsce z dynamicznym sektorem IT, Aviation Valley i międzynarodowymi inwestycjami. Google Ads to klucz do wzrostu.
+                Rzeszów to ośrodek z dynamicznym sektorem IT, Aviation Valley i międzynarodowymi inwestycjami. Google Ads pozwala dotrzeć do osób, które aktywnie szukają Twoich usług.
               </p>
             </div>
           </FadeInView>
@@ -124,7 +124,7 @@ export default function GoogleAdsRzeszow() {
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Dynamiczny rynek i wzrost biznesu</h3>
                   <p className="text-gray-600">
-                    Rzeszów to fastest-growing city w Polsce. Firmy tu się rozwijają szybko, a Google Ads pozwala im skalować sprzedaż bez budowania organicznego reach.
+                    Firmy z Rzeszowa rozwijają się w wielu branżach, a Google Ads pozwala docierać do klientów niezależnie od zasięgów organicznych.
                   </p>
                 </div>
               </div>
@@ -150,9 +150,9 @@ export default function GoogleAdsRzeszow() {
                   <div className="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-lg flex items-center justify-center font-bold text-lg">3</div>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">Mniejsza konkurencja, większy ROI</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Stawki sprawdzane przed startem</h3>
                   <p className="text-gray-600">
-                    Mniejsza konkurencja w Google Ads dla Rzeszowa oznacza niższe ceny za klik i wyższy ROI w porównaniu do Warszawy czy Krakowa.
+                    Koszt kliknięcia zależy od branży i konkurencji na danych frazach — przed startem sprawdzamy stawki dla Twoich słów kluczowych w Rzeszowie i regionie.
                   </p>
                 </div>
               </div>
@@ -245,7 +245,7 @@ export default function GoogleAdsRzeszow() {
                 <div className="text-3xl font-bold text-emerald-600 mb-3">🎯</div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Performance Max</h3>
                 <p className="text-gray-600">
-                  Zaawansowana kampania oparta na AI — automatycznie optymalizuje pozycjonowanie na wszystkich kanałach Google z maksymalnym ROI.
+                  Zaawansowana kampania oparta na AI — automatycznie optymalizuje wyświetlanie reklam na wszystkich kanałach Google pod wybrany cel.
                 </p>
               </div>
             </FadeInView>
@@ -262,7 +262,7 @@ export default function GoogleAdsRzeszow() {
                 Nasz proces Google Ads dla firm z Rzeszowa
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Od konsultacji po continuous optimization — budujemy kampanię, która skaluje Twój biznes.
+                Od konsultacji po continuous optimization — budujemy kampanię, która ma wspierać rozwój Twojego biznesu.
               </p>
             </div>
           </FadeInView>
@@ -332,7 +332,7 @@ export default function GoogleAdsRzeszow() {
                 <div className="flex-grow">
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Optymalizacja i skalowanie</h3>
                   <p className="text-gray-600">
-                    Cotygodniowa optymalizacja — słowa kluczowe, bidy, creative testing, scaling winners. Systematyczne zwiększanie ROI.
+                    Cotygodniowa optymalizacja — słowa kluczowe, bidy, creative testing, scaling winners. Systematyczne poprawianie kampanii na podstawie danych.
                   </p>
                 </div>
               </div>
@@ -347,10 +347,10 @@ export default function GoogleAdsRzeszow() {
           <FadeInView>
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Cennik kampanii Google Ads
+                Zakres współpracy i wycena
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Transparentne, skalowalne ceny za zarządzanie kampaniami Google Ads dla firm z Rzeszowa.
+                Wycenę przygotowujemy po rozmowie o zakresie — liczbie kampanii, kanałach, branży i potrzebnych materiałach.
               </p>
             </div>
           </FadeInView>
@@ -360,8 +360,8 @@ export default function GoogleAdsRzeszow() {
               <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
                 <div className="bg-gradient-to-r from-emerald-600 to-emerald-800 text-white p-6">
                   <h3 className="text-2xl font-bold mb-2">START</h3>
-                  <div className="text-4xl font-bold">400 zł</div>
-                  <p className="text-sm text-emerald-100">Miesięcznie</p>
+                  <div className="text-4xl font-bold">Wycena indywidualna</div>
+                  <p className="text-sm text-emerald-100">Zakres ustalamy w ofercie</p>
                 </div>
                 <div className="p-6">
                   <ul className="space-y-3">
@@ -395,8 +395,8 @@ export default function GoogleAdsRzeszow() {
                 <div className="bg-gradient-to-r from-emerald-700 to-emerald-900 text-white p-6 relative">
                   <span className="absolute top-4 right-4 bg-yellow-400 text-emerald-900 px-3 py-1 rounded-full text-sm font-bold">POPULARNE</span>
                   <h3 className="text-2xl font-bold mb-2">GROWTH</h3>
-                  <div className="text-4xl font-bold">1500 zł</div>
-                  <p className="text-sm text-emerald-100">Miesięcznie</p>
+                  <div className="text-4xl font-bold">Wycena indywidualna</div>
+                  <p className="text-sm text-emerald-100">Zakres ustalamy w ofercie</p>
                 </div>
                 <div className="p-6">
                   <ul className="space-y-3">
@@ -429,8 +429,8 @@ export default function GoogleAdsRzeszow() {
               <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
                 <div className="bg-gradient-to-r from-emerald-600 to-emerald-800 text-white p-6">
                   <h3 className="text-2xl font-bold mb-2">PRO</h3>
-                  <div className="text-4xl font-bold">3000 zł</div>
-                  <p className="text-sm text-emerald-100">Miesięcznie</p>
+                  <div className="text-4xl font-bold">Wycena indywidualna</div>
+                  <p className="text-sm text-emerald-100">Zakres ustalamy w ofercie</p>
                 </div>
                 <div className="p-6">
                   <ul className="space-y-3">
@@ -463,7 +463,7 @@ export default function GoogleAdsRzeszow() {
           <FadeInView delay={250}>
             <div className="bg-emerald-50 border-2 border-emerald-200 rounded-lg p-6 mt-12">
               <p className="text-center text-gray-700">
-                <strong>Dodatkowo:</strong> Budżet na kliknięcia (koszt reklamy) pokrywasz osobno bezpośrednio na koncie Google Ads. My optymalizujemy go na maximum ROI.
+                <strong>Dodatkowo:</strong> Budżet na kliknięcia (koszt reklamy) jest zawsze osobny od wynagrodzenia za obsługę i pokrywasz go bezpośrednio na koncie Google Ads.
               </p>
             </div>
           </FadeInView>
@@ -476,10 +476,10 @@ export default function GoogleAdsRzeszow() {
           <FadeInView>
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Branże, którym pomagamy w Rzeszowie
+                Branże, dla których planujemy kampanie
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Doświadczenie w kampaniach Google Ads dla IT, Aviation, produkcji i usług.
+                Kampanie dla IT, lotnictwa, produkcji i usług planujemy po analizie branży — firmy z Rzeszowa obsługujemy zdalnie z Poznania.
               </p>
             </div>
           </FadeInView>
@@ -564,7 +564,7 @@ export default function GoogleAdsRzeszow() {
                   <span className="text-emerald-600">+</span>
                 </summary>
                 <p className="text-gray-600 mt-4">
-                  Absolutnie! Rzeszów to hub IT i Aviation Valley — ideal dla firm tech. Google Ads doskonale działa dla SaaS, software house'ów, startup'ów i firm B2B szukających IT talent'u i klientów.
+                  Może się sprawdzić — Rzeszów ma silny sektor IT i Aviation Valley. Google Ads nadaje się do kampanii dla SaaS, software house'ów, startupów i firm B2B, a o opłacalności decyduje analiza fraz i stawek w Twojej branży.
                 </p>
               </details>
             </FadeInView>
@@ -576,7 +576,7 @@ export default function GoogleAdsRzeszow() {
                   <span className="text-emerald-600">+</span>
                 </summary>
                 <p className="text-gray-600 mt-4">
-                  Minimalna miesięczna inwestycja to 400 zł. Firmy z Rzeszowa zazwyczaj inwestują 1500-3000 zł miesięcznie, aby osiągnąć znaczące rezultaty i konkurować globalnie.
+                  Wycenę obsługi przygotowujemy po rozmowie o zakresie — liczbie kampanii, kanałach, branży i potrzebnych materiałach. Budżet reklamowy płacony Google jest zawsze osobny i ustalamy go razem z Tobą.
                 </p>
               </details>
             </FadeInView>
@@ -600,7 +600,7 @@ export default function GoogleAdsRzeszow() {
                   <span className="text-emerald-600">+</span>
                 </summary>
                 <p className="text-gray-600 mt-4">
-                  Pierwsze kliknięcia pojawią się w ciągu kilku godzin. Pełne optimizowanie trwa 2-4 tygodnie. Znaczący wzrost konwersji zazwyczaj obserwujesz po 4-6 tygodniach współpracy.
+                  Pierwsze kliknięcia mogą pojawić się wkrótce po zatwierdzeniu reklam. Optymalizacja to proces ciągły, a tempo poprawy wyników zależy od budżetu, branży i strony docelowej — nie obiecujemy sztywnych terminów efektów.
                 </p>
               </details>
             </FadeInView>
@@ -636,7 +636,7 @@ export default function GoogleAdsRzeszow() {
                   <span className="text-emerald-600">+</span>
                 </summary>
                 <p className="text-gray-600 mt-4">
-                  Gwarantujemy transparentne zarządzanie budżetem, ciągłą optymalizację i profesjonalne działania. Nie gwarantujemy konkretnych konwersji (zależy od rynku), ale gwarantujemy maksymalny ROI na każdy złoty.
+                  Nie gwarantujemy konkretnych wyników ani konwersji, bo zależą od rynku, oferty i budżetu. Zapewniamy przejrzyste zarządzanie budżetem, regularną optymalizację i raporty z działań.
                 </p>
               </details>
             </FadeInView>

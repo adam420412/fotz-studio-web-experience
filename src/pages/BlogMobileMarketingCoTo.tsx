@@ -121,7 +121,7 @@ export default function BlogMobileMarketingCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Mobile Marketing", url: "https://www.fotz-studio.pl" },
+              { name: "Mobile Marketing", url: "/blog/mobile-marketing-co-to" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Mobile Marketing — co to jest i jak działa?

@@ -19,7 +19,7 @@ export default function FacebookAdsSzczecin() {
           { name: "Fotz.pl", url: "https://www.fotz-studio.pl" },
           { name: "Performance Marketing", url: "https://www.fotz-studio.pl/performance-marketing" },
           { name: "Facebook Ads", url: "https://www.fotz-studio.pl/performance-marketing/facebook-ads" },
-          { name: "Szczecin", url: "https://www.fotz-studio.pl" }
+          { name: "Szczecin", url: "https://www.fotz-studio.pl/performance-marketing/facebook-ads/szczecin" }
         ]}/>
       <ServiceSchema
         name="Facebook Ads Szczecin"
@@ -32,7 +32,7 @@ export default function FacebookAdsSzczecin() {
             { name: "Home", path: "/" },
             { name: "Performance Marketing", path: "/performance-marketing" },
             { name: "Facebook Ads", path: "/uslugi/reklama-facebook" },
-            { name: "Szczecin", url: "https://www.fotz-studio.pl" }
+            { name: "Szczecin", url: "/performance-marketing/facebook-ads/szczecin" }
           ]}/>
 
         {/* HERO SECTION */}

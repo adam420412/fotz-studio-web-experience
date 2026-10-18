@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { Building2, TrendingUp, Star, Users, MapPin, CheckCircle2, ArrowRight, Phone, Target, Smartphone, BarChart3, Lightbulb, Zap } from "lucide-react";
+import { TrendingUp, MapPin, CheckCircle2, ArrowRight, Phone, Target, Smartphone, BarChart3, Lightbulb, Zap } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { ServiceSchema, FAQSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 import LocalSEOBoost from "@/components/seo/LocalSEOBoost";
@@ -17,19 +17,19 @@ export default function AgencjaMarketingowaLublin() {
     {
       icon: <TrendingUp className="w-8 h-8" />,
       title: "Pozycjonowanie SEO",
-      description: "Zwiększymy widoczność Twojej firmy w wyszukiwarce Google. Specjalizujemy się w optymalizacji stron dla firm z Lublina, Śródmieścia, LSM i okolic.",
-      benefits: ["Więcej organicznych klientów", "Stabilne pozycje w Google", "Ruch lokalny i ogólnopolski"]
+      description: "Zwiększymy widoczność Twojej firmy w wyszukiwarce Google. Optymalizujemy strony firm z Lublina, Śródmieścia, LSM i okolic pod frazy lokalne i ogólnopolskie.",
+      benefits: ["Lepsza widoczność w Google", "Treści pod frazy lokalne", "Ruch lokalny i ogólnopolski"]
     },
     {
       icon: <Target className="w-8 h-8" />,
       title: "Google Ads i PPC",
-      description: "Kampanie reklamowe, które generują sprzedaż. Zarządzamy budżetem precyzyjnie, aby każdy złoty wydany przyniosła zwrot.",
-      benefits: ["Natychmiastowe efekty", "Kontrola budżetu", "Mierzalne ROI"]
+      description: "Kampanie reklamowe nastawione na sprzedaż i zapytania. Budżetem zarządzamy tak, by każdy wydatek był mierzalny. Budżet reklamowy płacony Google rozliczany jest osobno.",
+      benefits: ["Szybki start kampanii", "Kontrola budżetu", "Mierzalne wyniki"]
     },
     {
       icon: <Smartphone className="w-8 h-8" />,
       title: "Social Media Marketing",
-      description: "Budujemy marę na Facebooku, Instagramie i LinkedIn. Strategie dostosowane do branży i odbiorcy z terenu Lubelszczyzny.",
+      description: "Budujemy markę na Facebooku, Instagramie i LinkedIn. Strategie dostosowane do branży i odbiorcy z terenu Lubelszczyzny.",
       benefits: ["Wzrost zasięgu", "Zaangażowanie odbiorców", "Budowanie społeczności"]
     },
     {
@@ -48,7 +48,7 @@ export default function AgencjaMarketingowaLublin() {
       icon: <Zap className="w-8 h-8" />,
       title: "Email Marketing",
       description: "Automatyzacja i kampanie mailowe, które zwiększają zaangażowanie. Zarządzanie bazą kontaktów i segmentacja odbiorców.",
-      benefits: ["Wysoki ROI", "Automatyzacja", "Personalizacja komunikacji"]
+      benefits: ["Segmentacja bazy", "Automatyzacja", "Personalizacja komunikacji"]
     }
   ];
 
@@ -56,10 +56,10 @@ export default function AgencjaMarketingowaLublin() {
     {
       id: "starter",
       name: "Starter",
-      price: "od 2 999",
-      currency: "PLN",
-      period: "/miesiąc",
-      description: "Idealne dla małych firm i startupów z Lublina",
+      price: "Wycena indywidualna",
+      currency: "",
+      period: "",
+      description: "Dla małych firm i startupów z Lublina",
       features: [
         "Pełna audyt SEO i analiza konkurencji",
         "Do 10 słów kluczowych",
@@ -72,9 +72,9 @@ export default function AgencjaMarketingowaLublin() {
     {
       id: "professional",
       name: "Professional",
-      price: "od 7 999",
-      currency: "PLN",
-      period: "/miesiąc",
+      price: "Wycena indywidualna",
+      currency: "",
+      period: "",
       description: "Dla firm chcących dynamicznego wzrostu",
       featured: true,
       features: [
@@ -103,7 +103,7 @@ export default function AgencjaMarketingowaLublin() {
         "Projektowanie stron WWW",
         "Konsultacje na bieżąco",
         "Strategia e-commerce",
-        "Premium support 24/7"
+        "Priorytetowy kontakt w ustalonych godzinach"
       ],
       cta: "Zapytaj o cenę"
     }
@@ -112,23 +112,23 @@ export default function AgencjaMarketingowaLublin() {
   const faqs = [
     {
       question: "Jak szybko zobaczę wyniki z SEO w Lublinie?",
-      answer: "Pierwsze efekty SEO widać zwykle po 4-6 tygodniach. Pozycje stabilizują się po 3-6 miesiącach. Wszystko zależy od konkurencji i zakresu optymalizacji. Google Ads natomiast generuje wyniki od razu, w ciągu kilku godzin."
+      answer: "SEO to proces rozłożony na miesiące — tempo zależy od konkurencji, stanu strony i zakresu optymalizacji. Nie gwarantujemy konkretnej pozycji ani terminu, a postępy pokazujemy w raportach. Reklamy Google Ads mogą zacząć się wyświetlać krótko po akceptacji, ale tempo pozyskiwania zapytań zależy od oferty, budżetu i strony docelowej."
     },
     {
       question: "Obsługujecie firmy spoza Lublina?",
-      answer: "Tak, pracujemy z firmami z całej Polski i zagranicą. Specjalizujemy się w firmach z Lublin i Lubelszczyzny (Śródmieście, LSM, Wieniawa, Tatary, Bronowice, Czechów), ale strategie SEO i digital marketing działają wszędzie."
+      answer: "Tak, pracujemy z firmami z całej Polski. Działamy z Poznania, a firmy z Lublina i Lubelszczyzny (Śródmieście, LSM, Wieniawa, Tatary, Bronowice, Czechów) obsługujemy zdalnie."
     },
     {
       question: "Ile kosztuje pozycjonowanie SEO w Lublinie?",
-      answer: "Cena zależy od branży, konkurencji i zakresu pracy. Nasze pakiety startują od 2 999 PLN miesięcznie. Oferujemy bezpłatną wycenę po rozmowie o Twoim biznesie i celach."
+      answer: "Wycenę przygotowujemy po rozmowie o zakresie. Zależy ona od branży, konkurencji, liczby fraz i podstron oraz stanu technicznego strony. Wycena jest bezpłatna."
     },
     {
       question: "Czy mogę odwołać umowę w dowolnym momencie?",
-      answer: "Tak, umowy bez kar za przedterminowe rozwiązanie. Chcemy, aby współpraca była satysfakcjonująca dla obu stron. Jeśli nie będziesz zadowolony, możesz zrezygnować."
+      answer: "Warunki i okres wypowiedzenia ustalamy w umowie przed startem współpracy, tak aby były jasne dla obu stron."
     },
     {
       question: "Jakie wyniki osiągają Wasze kampanie Google Ads?",
-      answer: "Średni ROI naszych kampanii to 300-500%. Wszystko zależy od branży i budżetu. Każdą kampanię optymalizujemy pod kątem konwersji i maksymalnego zwrotu z inwestycji. Dostarczamy raport ze statystykami co tydzień."
+      answer: "Wynik kampanii zależy od branży, oferty, budżetu i strony docelowej, dlatego nie obiecujemy konkretnego zwrotu z inwestycji. Każdą kampanię optymalizujemy pod kątem konwersji, a wyniki pokazujemy w regularnych raportach."
     }
   ];
 
@@ -142,17 +142,17 @@ export default function AgencjaMarketingowaLublin() {
   ];
 
   const stats = [
-    { label: "Zadowolonych klientów", value: "500+" },
-    { label: "Lat doświadczenia", value: "8" },
-    { label: "Wskaźnik zadowolenia", value: "97%" },
-    { label: "Projektów z TOP3", value: "95%" }
+    { label: "Stąd pracujemy", value: "Poznań" },
+    { label: "Obsługa firm z Lublina", value: "Zdalnie" },
+    { label: "SEO, Ads, social, WWW", value: "Full-service" },
+    { label: "Regularne omówienie wyników", value: "Raporty" }
   ];
 
   return (
     <Layout>
       <SEOHead
         title="Agencja Marketingowa Lublin | Fotz Studio"
-        description="Agencja marketingowa Lublin ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Lublina i Lubelszczyzny. Bezpłatna wycena!"
+        description="Agencja marketingowa Lublin ✓ SEO, Google Ads, Social Media, strony WWW dla firm z Lublina i Lubelszczyzny — zdalnie z Poznania. Bezpłatna wycena!"
         canonical="https://www.fotz-studio.pl/agencja-marketingowa/lublin"
         keywords="agencja marketingowa lublin, marketing internetowy lublin, agencja reklamowa lublin, kampanie reklamowe lublin, seo lublin, google ads lublin"
       />
@@ -167,7 +167,7 @@ export default function AgencjaMarketingowaLublin() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <Badge className="mb-4 bg-blue-100 text-blue-800 hover:bg-blue-200">
-              Agencja Marketingowa w Lublinie
+              Marketing dla firm z Lublina — zdalnie z Poznania
             </Badge>
             <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
               Agencja Marketingowa Lublin
@@ -210,7 +210,7 @@ export default function AgencjaMarketingowaLublin() {
               Obsługujemy firmy z całego Lublina
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Nasi specjaliści znają lokalne rynki, konkurencję i potrzeby firm z Lublina. Pracujemy z firmami z każdej dzielnicy miasta i Lubelszczyzny.
+              Pracujemy z Poznania, a firmy z każdej dzielnicy Lublina i z Lubelszczyzny obsługujemy zdalnie. Lokalny rynek i konkurencję analizujemy na starcie współpracy.
             </p>
           </div>
 
@@ -233,22 +233,22 @@ export default function AgencjaMarketingowaLublin() {
               <div className="flex gap-4">
                 <CheckCircle2 className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
                 <div>
-                  <div className="font-semibold text-gray-900">Doświadczenie na lokalnym rynku</div>
-                  <p className="text-sm text-gray-700 mt-1">Znamy Lublin, konkurencję i potrzeby lokalnych firm. Pracujemy z biznesami z uniwersytetów, IT-u i handlu.</p>
+                  <div className="font-semibold text-gray-900">Analiza lokalnego rynku</div>
+                  <p className="text-sm text-gray-700 mt-1">Na starcie sprawdzamy konkurencję w Lublinie i frazy, którymi szukają Twoi klienci — w handlu, usługach, IT czy edukacji.</p>
                 </div>
               </div>
               <div className="flex gap-4">
                 <CheckCircle2 className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
                 <div>
                   <div className="font-semibold text-gray-900">Rezultaty, nie obietnice</div>
-                  <p className="text-sm text-gray-700 mt-1">97% naszych klientów widzi wzrost ruchu i sprzedaży w ciągu 6 miesięcy. Pokazujemy konkretne liczby.</p>
+                  <p className="text-sm text-gray-700 mt-1">Nie obiecujemy wyników z góry — ustalamy mierzalne cele i w raportach pokazujemy, jak zmieniają się ruch i zapytania.</p>
                 </div>
               </div>
               <div className="flex gap-4">
                 <CheckCircle2 className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
                 <div>
                   <div className="font-semibold text-gray-900">Zespół specjalistów</div>
-                  <p className="text-sm text-gray-700 mt-1">SEO specialiści, developerzy, projektanci i copywriterzy. Każdy ma min. 5 lat doświadczenia.</p>
+                  <p className="text-sm text-gray-700 mt-1">SEO, development, projektowanie i copywriting koordynujemy po naszej stronie — masz jeden punkt kontaktu.</p>
                 </div>
               </div>
               <div className="flex gap-4">
@@ -303,7 +303,7 @@ export default function AgencjaMarketingowaLublin() {
               Pakiety i ceny
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Elastyczne pakiety, które pasują do każdego budżetu. Brak ukrytych kosztów, pełna transparentność.
+              Przykładowe zakresy współpracy. Wycenę przygotowujemy po rozmowie o zakresie, a budżet reklamowy płacony platformom (Google, Meta) rozliczany jest zawsze osobno.
             </p>
           </div>
 
@@ -320,7 +320,7 @@ export default function AgencjaMarketingowaLublin() {
                 <CardContent className="p-8 flex flex-col h-full">
                   {pkg.featured && (
                     <Badge className="mb-4 bg-blue-600 text-white hover:bg-blue-700 self-start">
-                      Najpopularniejszy
+                      Kompleksowy zakres
                     </Badge>
                   )}
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">{pkg.name}</h3>
@@ -428,7 +428,7 @@ export default function AgencjaMarketingowaLublin() {
             Gotów na wzrost?
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Ponad 500 firm z Lublina i całej Polski zaufało nam swoją transformację cyfrową. Dołącz do nich dzisiaj.
+            Porozmawiajmy o celach Twojej firmy i zakresie działań w Lublinie i regionie.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild
@@ -448,7 +448,7 @@ export default function AgencjaMarketingowaLublin() {
             </a></Button>
           </div>
           <p className="text-sm mt-6 opacity-75">
-            Brak zobowiązań. Poromawiamy o Twoich celach i pokażemy możliwości.
+            Brak zobowiązań. Porozmawiamy o Twoich celach i pokażemy możliwości.
           </p>
         </div>
       </section>

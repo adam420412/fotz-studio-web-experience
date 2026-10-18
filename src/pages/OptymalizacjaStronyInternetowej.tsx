@@ -273,7 +273,7 @@ export default function OptymalizacjaStronyInternetowej() {
                 >
                   {pkg.highlight && (
                     <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                      <span className="bg-primary text-white px-4 py-1 rounded-full text-sm font-medium">Najpopularniejszy</span>
+                      <span className="bg-primary text-white px-4 py-1 rounded-full text-sm font-medium">Polecany zakres</span>
                     </div>
                   )}
 

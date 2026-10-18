@@ -54,66 +54,13 @@ export default function GoogleAdsSzczecin() {
     }
   ];
 
-  const packages = [
-    {
-      name: "START",
-      price: "400",
-      description: "Dla firm zaczynających z Google Ads",
-      features: [
-        "Setup kampanii Search Ads",
-        "Maksymalnie 2 kampanie (~500 zł budżetu/mies.)",
-        "Optymalizacja co 2 tygodnie",
-        "Raport miesięczny",
-        "Konsultacja strategiczna"
-      ]
-    },
-    {
-      name: "GROWTH",
-      price: "1200",
-      description: "Dla firm rozwijających się",
-      features: [
-        "Zarządzanie 3-5 kampaniami Search",
-        "Kampanie Display Network",
-        "Budżet ~3000-5000 zł/mies.",
-        "Optymalizacja tygodniowa",
-        "A/B testy reklam",
-        "Raporty szczegółowe + call co 2 tygodnie",
-        "Remarketing setup"
-      ],
-      popular: true
-    },
-    {
-      name: "PRO",
-      price: "2500",
-      description: "Kompleksowe zarządzanie kampaniami",
-      features: [
-        "Zarządzanie 5+ kampaniami",
-        "Search Ads + Display + Remarketing",
-        "Shopping Ads (dla e-commerce)",
-        "Video Ads (YouTube) planning",
-        "Budżet ~8000-15000 zł/mies.",
-        "Optymalizacja codziennie",
-        "Dedykowany account manager",
-        "Cotygodniowe spotkania strategiczne",
-        "Premium reporting i analytics setup"
-      ]
-    },
-    {
-      name: "ENTERPRISE",
-      price: "5000+",
-      description: "Pełny zakres dla dużych kampanii",
-      features: [
-        "Wszystko z PRO",
-        "Video Ads + App Campaigns management",
-        "Advanced automation i scripts",
-        "Budżet &gt; 15000 zł/mies.",
-        "24/7 monitoring",
-        "Spersonalizowane strategie",
-        "Quarterly business reviews",
-        "Direct Google Account Manager support",
-        "Eksperymentalne kampanie i testy"
-      ]
-    }
+  const pricingFactors = [
+    "Liczba i rodzaj kampanii (Search, Display, Shopping, YouTube, remarketing)",
+    "Liczba produktów lub usług oraz grup reklam do przygotowania",
+    "Zasięg geograficzny: Szczecin, region, cała Polska lub rynek niemiecki",
+    "Konfiguracja analityki i śledzenia konwersji",
+    "Częstotliwość optymalizacji, raportów i spotkań",
+    "Potrzeba przygotowania kreacji graficznych lub wideo",
   ];
 
   const processSteps = [
@@ -138,7 +85,7 @@ export default function GoogleAdsSzczecin() {
     {
       number: "4",
       title: "Optymalizacja",
-      description: "Co dzień monitorujemy performance, optymalizujemy bids, testujemy nowe creative.",
+      description: "Regularnie monitorujemy performance, optymalizujemy stawki, testujemy nowe kreacje.",
       icon: TrendingUp
     },
     {
@@ -167,19 +114,19 @@ export default function GoogleAdsSzczecin() {
     },
     {
       question: "Czy mogę zarządzać budżetem w Google Ads sam?",
-      answer: "Oczywiście! Google Ads to platforma samoobsługowa. Jednak bez doświadczenia łatwo zmarnować budżet. Większość firm bez specjalisty osiąga ROI poniżej 1.5x. Nasz team potrafi osiągnąć 3-5x ROI dzięki doświadczeniu, testowaniu i optymalizacji."
+      answer: "Oczywiście! Google Ads to platforma samoobsługowa. Bez doświadczenia łatwo jednak wydać budżet na nietrafione frazy lub źle ustawione kampanie. Pomagamy poukładać strukturę kampanii, śledzenie konwersji i regularną optymalizację — nie obiecujemy konkretnego zwrotu, bo zależy on od oferty, rynku i strony docelowej."
     },
     {
       question: "Jakie są średnie koszty dla firm w Szczecinie?",
-      answer: "Dla startupów zaczynamy od ~400 zł/miesiąc. Firmy rozwijające się inwestują ~1200-2500 zł/miesiąc. Większe kampanie to 5000+ zł/miesiąc. Wszystko zależy od branży, konkurencji w Szczecinie i Zachodniopomorskiem, oraz Twoich celów sprzedażowych. Na konsultacji określimy realny budżet dla Twojego biznesu."
+      answer: "Wycenę obsługi przygotowujemy po rozmowie o zakresie: liczbie kampanii, produktów, zasięgu i częstotliwości raportowania. Budżet reklamowy płacony Google jest osobny i zależy od branży, konkurencji w Szczecinie i Zachodniopomorskiem oraz Twoich celów sprzedażowych. Na konsultacji określimy realny budżet dla Twojego biznesu."
     },
     {
       question: "Czy mogę zacząć z małym budżetem?",
-      answer: "Tak! Google Ads skaluje się wraz z Twoim biznesem. Możesz zacząć od 400-500 zł/miesiąc i stopniowo zwiększać budżet na kampanie, które przynoszą wyniki. Nie ma minimalnego budżetu – tylko maksymalne ryzyko, jeśli kampanię źle skonfigurujemy. Dlatego professional management jest ważne."
+      answer: "Tak. Google Ads nie wymaga minimalnego budżetu — można zacząć od mniejszej kwoty, sprawdzić, które kampanie przynoszą zapytania, i stopniowo zwiększać budżet tam, gdzie to ma sens. Przy małym budżecie szczególnie ważna jest dobra konfiguracja kampanii i śledzenia konwersji."
     },
     {
       question: "Czy Google Ads działa dla B2B firmy?",
-      answer: "Absolutnie! Google Ads świetnie działa dla B2B. Szukający długo opracowują decyzje o zakupach – trafiamy do nich w kluczowych momentach. Dla B2B ważne jest proper lead tracking, long sales cycle, i optymalizacja na \"wartość leadów\", a nie tylko konwersje. Pracowaliśmy z firmami IT, produkcją, konsultingiem i usługami z Szczecina."
+      answer: "Absolutnie! Google Ads świetnie działa dla B2B. Szukający długo opracowują decyzje o zakupach – trafiamy do nich w kluczowych momentach. Dla B2B ważne jest proper lead tracking, long sales cycle, i optymalizacja na \"wartość leadów\", a nie tylko konwersje. Pracujemy z Poznania, a firmy ze Szczecina obsługujemy zdalnie."
     },
     {
       question: "Co się stanie, jeśli przestanę płacić za Google Ads?",
@@ -191,26 +138,26 @@ export default function GoogleAdsSzczecin() {
     },
     {
       question: "Czy pracujecie z firmami poza Szczecinem?",
-      answer: "Tak! Pracujemy z firmami z całego Zachodniopomorskiego i Polski. Lokalność jest ważna dla SEO (Google preferuje lokalne rezultaty), ale dla Google Ads geograficzny target można ustawić dowolnie. Jeśli Twoja firma obsługuje cały kraj – możemy to ustawić. Jeśli skupiasz się na Szczecinie – optymalizujemy dla lokalnego rynku."
+      answer: "Tak! Pracujemy z Poznania i zdalnie obsługujemy firmy z całego Zachodniopomorskiego i Polski. Lokalność jest ważna dla SEO (Google preferuje lokalne rezultaty), ale dla Google Ads geograficzny target można ustawić dowolnie. Jeśli Twoja firma obsługuje cały kraj – możemy to ustawić. Jeśli skupiasz się na Szczecinie – optymalizujemy dla lokalnego rynku."
     }
   ];
 
   const areas = [
     "Śródmieście",
-    "Dabie",
-    "Pólnoc",
-    "Wschód",
-    "Północny Port",
-    "Zdroje",
-    "Żabiniec",
-    "Gumieńce"
+    "Dąbie",
+    "Pogodno",
+    "Gumieńce",
+    "Pomorzany",
+    "Niebuszewo",
+    "Warszewo",
+    "Zdroje"
   ];
 
   return (
     <Layout>
       <SEOHead
         title="Agencja Google Ads Szczecin | Fotz Studio"
-        description="Google Ads Szczecin ✓ Kampanie dla firm ze Szczecina i Zachodniopomorskiego. Od 400 zł/mies. Bezpłatna konsultacja!"
+        description="Google Ads Szczecin ✓ Kampanie dla firm ze Szczecina i Zachodniopomorskiego, prowadzone zdalnie z Poznania. Wycena po rozmowie o zakresie. Bezpłatna konsultacja!"
         canonical="https://www.fotz-studio.pl/performance-marketing/google-ads/szczecin"
         keywords="google ads szczecin, kampanie google ads szczecin, agencja google ads szczecin, reklamy google szczecin, google adwords szczecin, sem szczecin, google ads dla firm szczecin, prowadzenie google ads szczecin, google ads cennik szczecin, reklama w google szczecin"
       />
@@ -238,7 +185,7 @@ export default function GoogleAdsSzczecin() {
         { name: "Strona główna", url: "/" },
         { name: "Performance Marketing", url: "/performance-marketing" },
         { name: "Google Ads", url: "/performance-marketing/google-ads" },
-        { name: "Szczecin", url: "https://www.fotz-studio.pl" }
+        { name: "Szczecin", url: "/performance-marketing/google-ads/szczecin" }
       ]}/>
 
       {/* Hero Section */}
@@ -255,7 +202,7 @@ export default function GoogleAdsSzczecin() {
               Google Ads dla Firm w Szczecinie
             </h1>
             <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-              Google Ads Szczecin — profesjonalne kampanie Google Ads i reklamy w Google dla firm ze Szczecina i Zachodniopomorskiego. Zwiększamy ruch, konwersje i ROI dzięki skutecznym kampaniom SEM. Bezpłatna konsultacja.
+              Google Ads Szczecin — profesjonalne kampanie Google Ads i reklamy w Google dla firm ze Szczecina i Zachodniopomorskiego. Planujemy, konfigurujemy i optymalizujemy kampanie SEM pod Twoje cele. Pracujemy z Poznania, firmy ze Szczecina obsługujemy zdalnie. Bezpłatna konsultacja.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
@@ -286,7 +233,7 @@ export default function GoogleAdsSzczecin() {
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">Szczecin – Brama do Niemiec</h3>
                   <p className="text-gray-700 mb-4">
-                    Szczecin jest największym portem morskim w Polsce i bramą do rynku niemieckiego.
+                    Szczecin to ważny ośrodek portowy i naturalna brama do rynku niemieckiego.
                     Firmy z Szczecina i Zachodniopomorskiego mają unikalną pozycję – mogą skalować
                     biznes zarówno na polskim rynku, jak i na niemieckim.
                   </p>
@@ -303,40 +250,16 @@ export default function GoogleAdsSzczecin() {
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">Konkurencja i Rynek</h3>
                   <p className="text-gray-700 mb-4">
-                    W Szczecinie konkurencja jest umiarkowana – wciąż wiele firm nie inwestuje
-                    w Google Ads. To znaczy, że keywords są relatywnie tańsze niż w Warszawie czy Wrocławiu.
+                    Poziom konkurencji i koszt kliknięcia zależą od branży i konkretnych fraz.
+                    Przed startem sprawdzamy w planerze słów kluczowych, jak wygląda rynek dla Twojej oferty.
                   </p>
                   <p className="text-gray-700">
-                    Dla firm z Szczecina to doskonała okazja – możesz zdominować lokalne wyszukiwanie
-                    z mniejszym budżetem niż konkurencja w innych miastach.
+                    Na tej podstawie proponujemy budżet i strukturę kampanii dopasowaną
+                    do lokalnego rynku w Szczecinie i regionie.
                   </p>
                 </CardContent>
               </Card>
             </FadeInView>
-          </div>
-        </div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="py-12 bg-gray-900 text-white">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-4xl font-bold text-blue-400 mb-2">150+</div>
-              <p className="text-gray-300">Kampanii Google Ads</p>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-blue-400 mb-2">3.2x</div>
-              <p className="text-gray-300">Średni ROI</p>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-blue-400 mb-2">95%</div>
-              <p className="text-gray-300">Retencja Klientów</p>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-blue-400 mb-2">6 lat</div>
-              <p className="text-gray-300">Doświadczenia</p>
-            </div>
           </div>
         </div>
       </section>
@@ -401,8 +324,8 @@ export default function GoogleAdsSzczecin() {
 
             <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
               <p className="text-center text-gray-700">
-                Cały proces trwa średnio 1-2 tygodnie. Po launch monitorujemy kampanię codziennie i optymalizujemy
-                na podstawie wyników. Transparentne raportowanie co miesiąc.
+                Czas przygotowania zależy od zakresu kampanii i ustalamy go na starcie. Po uruchomieniu regularnie
+                monitorujemy kampanię i optymalizujemy ją na podstawie wyników. Transparentne raportowanie.
               </p>
             </div>
           </div>
@@ -412,43 +335,29 @@ export default function GoogleAdsSzczecin() {
       {/* Pricing Section */}
       <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
-            Pakiety Cenowe
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-gray-900">
+            Od czego zależy wycena
           </h2>
+          <p className="text-center text-gray-700 max-w-3xl mx-auto mb-12">
+            Wycenę obsługi przygotowujemy po rozmowie o zakresie i celach kampanii — nie stosujemy stałego cennika.
+            Budżet reklamowy płacony Google jest zawsze osobny od wynagrodzenia za prowadzenie kampanii.
+          </p>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-            {packages.map((pkg, index) => (
+          <div className="grid md:grid-cols-2 gap-4 max-w-4xl mx-auto">
+            {pricingFactors.map((factor, index) => (
               <FadeInView key={index}>
-                <Card
-                  className={`relative ${pkg.popular ? 'ring-2 ring-blue-600' : 'border-gray-200'}`}
-                >
-                  {pkg.popular && (
-                    <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                      <Badge className="bg-blue-600 text-white">NAJPOPULARNIEJSZY</Badge>
-                    </div>
-                  )}
-                  <CardContent className="p-6">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-2">{pkg.name}</h3>
-                    <p className="text-gray-600 text-sm mb-4">{pkg.description}</p>
-                    <div className="mb-6">
-                      <span className="text-4xl font-bold text-gray-900">{pkg.price}</span>
-                      <span className="text-gray-600 ml-2">PLN/mies.</span>
-                    </div>
-                    <ul className="space-y-2 mb-6">
-                      {pkg.features.map((feature, fidx) => (
-                        <li key={fidx} className="flex items-start gap-2">
-                          <CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
-                          <span className="text-sm text-gray-700">{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                    <Button asChild className={`w-full text-sm ${pkg.popular ? 'bg-blue-600 hover:bg-blue-700' : 'border-blue-600 text-blue-600 hover:bg-blue-50'}`}><a href="/kontakt">
-                      Zapytaj o szczegóły
-                    </a></Button>
-                  </CardContent>
-                </Card>
+                <div className="flex items-start gap-3 p-5 rounded-lg border border-gray-200 bg-gray-50">
+                  <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-gray-700">{factor}</span>
+                </div>
               </FadeInView>
             ))}
+          </div>
+
+          <div className="text-center mt-10">
+            <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white">
+              <Link to="/kontakt">Zapytaj o wycenę</Link>
+            </Button>
           </div>
         </div>
       </section>
@@ -498,8 +407,8 @@ export default function GoogleAdsSzczecin() {
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Obsługujemy Całe Zachodniopomorskie</h3>
                 <p className="text-gray-700 mb-4">
-                  Szczecin jest sercem regionu. Pracujemy z firmami z całego Zachodniopomorskiego –
-                  od Wałbrzycha po Kołobrzeg. Znamy specyfikę każdej części regionu.
+                  Pracujemy z Poznania, a firmy ze Szczecina i całego Zachodniopomorskiego –
+                  od Stargardu po Kołobrzeg – obsługujemy zdalnie.
                 </p>
                 <p className="text-gray-700">
                   Niezależnie gdzie Twoja firma się znajduje, jesteśmy gotowi wspomóc Twój
@@ -550,9 +459,9 @@ export default function GoogleAdsSzczecin() {
                     <Star className="w-6 h-6 text-blue-600 mt-1" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">Specjalizacja w Google Ads</h3>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">Pełny Zakres Google Ads</h3>
                     <p className="text-gray-700">
-                      To jest nasza specjalność – nie robimy „wszystkiego". 150+ kampanii, 3.2x średni ROI.
+                      Prowadzimy kampanie Search, Display, Shopping i YouTube — w połączeniu z produkcją video i stronami WWW.
                     </p>
                   </div>
                 </div>
@@ -564,7 +473,7 @@ export default function GoogleAdsSzczecin() {
                   <div>
                     <h3 className="text-xl font-bold text-gray-900 mb-2">Wymierne Wyniki</h3>
                     <p className="text-gray-700">
-                      KPI-driven. Obserwujemy conversion rate, CPA, ROAS – i optymalizujemy codziennie.
+                      KPI-driven. Obserwujemy conversion rate, CPA, ROAS – i regularnie optymalizujemy kampanie.
                     </p>
                   </div>
                 </div>
@@ -574,9 +483,9 @@ export default function GoogleAdsSzczecin() {
                     <Users className="w-6 h-6 text-blue-600 mt-1" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">Dedykowany Team</h3>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">Stały Kontakt</h3>
                     <p className="text-gray-700">
-                      Twoja kampania to nie numer w systemie. Account manager poświęcony Twojemu projektowi.
+                      Twoja kampania to nie numer w systemie. Masz stałą osobę kontaktową po naszej stronie.
                     </p>
                   </div>
                 </div>
@@ -602,9 +511,9 @@ export default function GoogleAdsSzczecin() {
                     <Building2 className="w-6 h-6 text-blue-600 mt-1" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">Doświadczenie z Lokalnymi Rynkami</h3>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">Praca Zdalna z Poznania</h3>
                     <p className="text-gray-700">
-                      Znamy Szczecin i Zachodniopomorskie. Wiemy, co działa dla firm z tego regionu.
+                      Firmy ze Szczecina i Zachodniopomorskiego obsługujemy zdalnie — kampanie targetujemy na lokalny rynek.
                     </p>
                   </div>
                 </div>
@@ -616,7 +525,7 @@ export default function GoogleAdsSzczecin() {
                   <div>
                     <h3 className="text-xl font-bold text-gray-900 mb-2">Pełna Transparentność</h3>
                     <p className="text-gray-700">
-                      Dostęp do wszystkich danych, raporty cotygodniowe, regularne spotkania. Bez ukrytych kosztów.
+                      Dostęp do wszystkich danych, regularne raporty i spotkania. Bez ukrytych kosztów.
                     </p>
                   </div>
                 </div>

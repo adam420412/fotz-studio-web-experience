@@ -122,16 +122,16 @@ export default function BlogPsychologiaCen() {
               </p>
               <p>
                 Cena to nie tylko liczba - to sygnał wartości, jakości i statusu. Odpowiednia 
-                strategia cenowa może zwiększyć konwersję nawet o 25% bez zmiany produktu. Dobrze zaprojektowana <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">strona internetowa</Link> z przemyślaną prezentacją cen wspiera decyzje zakupowe, a efektywny <Link to="/content-marketing/strategia" className="text-primary hover:underline">content marketing</Link> buduje wartość w oczach klientów.
+                strategia cenowa może poprawić konwersję bez zmiany samego produktu. Dobrze zaprojektowana <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">strona internetowa</Link> z przemyślaną prezentacją cen wspiera decyzje zakupowe, a efektywny <Link to="/content-marketing/strategia" className="text-primary hover:underline">content marketing</Link> buduje wartość w oczach klientów.
               </p>
 
               <div className="bg-primary/10 border border-primary/20 rounded-xl p-6 my-8">
-                <h3 className="text-lg font-bold mb-3 mt-0">💡 Kluczowe statystyki</h3>
+                <h3 className="text-lg font-bold mb-3 mt-0">💡 Kluczowe obserwacje</h3>
                 <ul className="mb-0">
-                  <li>92% konsumentów porównuje ceny przed zakupem</li>
-                  <li>Ceny kończące się na 9 zwiększają sprzedaż o 24%</li>
-                  <li>Efekt kotwiczenia wpływa na 60% decyzji zakupowych</li>
-                  <li>3 opcje cenowe to optimum - większość wybiera środkową</li>
+                  <li>Wielu klientów porównuje ceny przed zakupem</li>
+                  <li>Ceny kończące się na 9 mogą być postrzegane jako wyraźnie niższe</li>
+                  <li>Pierwsza zobaczona cena (kotwica) wpływa na ocenę kolejnych</li>
+                  <li>Przy 3 opcjach cenowych klienci często wybierają środkową</li>
                 </ul>
               </div>
 
@@ -177,7 +177,7 @@ export default function BlogPsychologiaCen() {
                 </li>
                 <li>
                   <strong>Porównanie z konkurencją</strong><br />
-                  "Agencje konkurencyjne: 5000 zł/msc | My: 2500 zł/msc"
+                  Przykład: "Cena w salonie: 2499 zł | Online: 1999 zł"
                 </li>
                 <li>
                   <strong>Opcja premium jako kotwica</strong><br />
@@ -287,7 +287,7 @@ export default function BlogPsychologiaCen() {
                 <li><strong>Zbyt wiele opcji</strong> - paraliż decyzyjny, max 4 pakiety</li>
                 <li><strong>Brak kotwicy</strong> - nie pokazujesz kontekstu wartości</li>
                 <li><strong>Ukryte koszty</strong> - VAT, dostawa "niespodzianka" = porzucenia</li>
-                <li><strong>Brak social proof</strong> - "1000+ klientów wybrało ten plan"</li>
+                <li><strong>Brak social proof</strong> - np. etykieta "Najczęściej wybierany plan"</li>
                 <li><strong>Nieczytelny cennik</strong> - trudne porównanie pakietów</li>
               </ol>
 
@@ -317,7 +317,7 @@ export default function BlogPsychologiaCen() {
               <div className="bg-primary/10 border border-primary/20 rounded-xl p-8 my-8 text-center">
                 <h3 className="text-xl font-bold mb-4 mt-0">Potrzebujesz pomocy ze strategią cenową?</h3>
                 <p className="mb-6">
-                  Zaprojektujemy cennik i landing page, które maksymalizują konwersję.
+                  Pomożemy zaprojektować cennik i landing page, które jasno prezentują ofertę i wspierają konwersję.
                 </p>
                 <Button asChild size="lg">
                   <Link to="/kontakt">Umów bezpłatną konsultację</Link>
@@ -340,13 +340,13 @@ export default function BlogPsychologiaCen() {
             {/* SEO Article Section */}
             <div className="mt-12 pt-12 border-t border-border">
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Psychologia cen i strategie cenowe — jak cena wpływa na decyzje zakupowe?</h2>
-              <p className="text-muted-foreground mb-6">Psychologia cen to fascynujące pole badań pokazujące, że cena to nie tylko liczba — to sygnał wartości, jakości i pozycjonowania marki. Ceny kończące się na .99 (charm pricing), efekt zakotwiczenia (wysoka cena referencyjna), bundling (pakietowanie usług) i social proof cenowy ("95% klientów wybiera pakiet Pro") to techniki, które realnie zwiększają konwersję.</p>
+              <p className="text-muted-foreground mb-6">Psychologia cen to fascynujące pole badań pokazujące, że cena to nie tylko liczba — to sygnał wartości, jakości i pozycjonowania marki. Ceny kończące się na .99 (charm pricing), efekt zakotwiczenia (wysoka cena referencyjna), bundling (pakietowanie usług) i social proof cenowy (np. oznaczenie "najczęściej wybierany pakiet") to techniki, które mogą zwiększać konwersję.</p>
 
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Optymalizacja cennika i stron produktowych — jak poprawić konwersję cenową</h2>
-              <p className="text-muted-foreground mb-6">Fotz Studio projektuje strony cennikowe i strony produktowe z wykorzystaniem zasad psychologii cen. Testujemy różne układy cennika, sposoby prezentacji pakietów i CTA, by maksymalizować konwersję. Optymalizacja strony cenowej często daje szybkie wyniki bez zwiększania ruchu.</p>
+              <p className="text-muted-foreground mb-6">Projektując strony internetowe w Fotz Studio, bierzemy pod uwagę zasady psychologii cen — układ cennika, sposób prezentacji pakietów i CTA. Optymalizacja strony z cennikiem to działanie, które nie wymaga zwiększania ruchu, a efekty warto weryfikować testami na własnych danych.</p>
 
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Optymalizacja konwersji Twojej strony z Fotz Studio</h2>
-              <p className="text-muted-foreground">Czy Twoja strona dobrze konwertuje ruch w klientów? Fotz Studio przeprowadza audyt konwersji (CRO) i wdraża rekomendacje — w tym optymalizację cennika, stron produktowych i ścieżki zakupowej. Skontaktuj się z nami po bezpłatny audyt konwersji.</p>
+              <p className="text-muted-foreground">Czy Twoja strona dobrze konwertuje ruch w klientów? Możemy przejrzeć Twoją stronę pod kątem konwersji i zaproponować zmiany — w tym w cenniku, na stronach produktowych i w ścieżce zakupowej. Skontaktuj się z nami — zakres i wycenę ustalimy po rozmowie.</p>
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
               <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
               <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>

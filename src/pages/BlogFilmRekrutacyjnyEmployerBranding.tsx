@@ -14,7 +14,7 @@ const faqItems = [
   {
     question: "Ile kosztuje film rekrutacyjny?",
     answer:
-      "Wycena zależy od zakresu, ale pojedynczy materiał zaczyna się od 1 900 zł. Jeśli chcesz od razu komplet materiałów, czyli pełny film i kilka rolek na social media nagranych jednego dnia, to 12 000 zł za cały dzień zdjęciowy.",
+      "Wycena zależy od zakresu: liczby lokalizacji, długości materiału, liczby osób do nagrania i tego, czy potrzebujesz jednego filmu, czy kompletu, czyli pełnego filmu i kilku rolek na social media nagranych jednego dnia. Konkretną wycenę podajemy po krótkiej rozmowie o zakresie.",
   },
   {
     question: "Czy dojeżdżacie do naszej firmy?",
@@ -101,7 +101,7 @@ export default function BlogFilmRekrutacyjnyEmployerBranding() {
             Dla działu HR to narzędzie, które robi dwie rzeczy naraz. Po pierwsze, przyciąga kandydatów, którzy faktycznie pasują do zespołu, bo widzą, z kim będą pracować, zanim wyślą CV. Po drugie, buduje markę pracodawcy poza samą rekrutacją, bo dobre wideo krąży w social mediach, nie tylko na portalach z ogłoszeniami.
           </p>
           <p>
-            Nasze materiały wideo generują ponad <strong>3 000 000 wyświetleń miesięcznie</strong>. To pokazuje, że dobrze zrobiony film potrafi wyjść daleko poza grono osób aktywnie szukających pracy i dotrzeć też do tych, którzy jeszcze nie szukają, ale zobaczą film znajomego i pomyślą, że chcą tam pracować.
+            Dobrze zrobiony film potrafi wyjść daleko poza grono osób aktywnie szukających pracy i dotrzeć też do tych, którzy jeszcze nie szukają, ale zobaczą film znajomego i pomyślą, że chcą tam pracować.
           </p>
 
           <h2>Co pokazać w filmie rekrutacyjnym</h2>
@@ -130,7 +130,7 @@ export default function BlogFilmRekrutacyjnyEmployerBranding() {
             <li><strong>Ogłoszenia o pracę:</strong> link do filmu w treści ogłoszenia zwiększa liczbę kliknięć i, co ważniejsze, jakość aplikacji.</li>
           </ul>
           <p>
-            Prowadzimy w całości Instagram Enea Stadionu, więc wiemy, jak zaplanować dystrybucję wideo tak, żeby realnie ktoś je zobaczył, a nie tylko leżało na kanale.
+            Przy treściach dla Enea Stadionu widzimy, że dystrybucję wideo trzeba zaplanować tak samo starannie jak nagranie, żeby materiał realnie ktoś zobaczył, a nie tylko leżał na kanale.
           </p>
 
           <h2>Rolka rekrutacyjna czy pełny film employer branding</h2>
@@ -152,11 +152,11 @@ export default function BlogFilmRekrutacyjnyEmployerBranding() {
             Cena filmu rekrutacyjnego zależy od zakresu: liczby lokalizacji, długości materiału, liczby osób do nagrania i tego, czy potrzebujesz jednego filmu, czy całego pakietu treści.
           </p>
           <ul>
-            <li>Pojedynczy materiał wideo (na przykład jedna rolka rekrutacyjna albo krótki film) wyceniamy indywidualnie, z widełkami <strong>od 1 900 zł</strong> za materiał.</li>
-            <li>Dzień zdjęciowy z serią 10 rolek to <strong>12 000 zł</strong>: dobre rozwiązanie, jeśli chcesz od razu mieć komplet materiałów, czyli pełny film na stronę kariera plus kilka krótszych rolek na social media, nagranych tego samego dnia.</li>
+            <li><strong>Pojedynczy materiał wideo</strong> (na przykład jedna rolka rekrutacyjna albo krótki film): dobry na test lub jedną konkretną rekrutację. Cena zależy głównie od czasu nagrań i montażu.</li>
+            <li><strong>Dzień zdjęciowy z serią materiałów</strong>: dobre rozwiązanie, jeśli chcesz od razu mieć komplet, czyli pełny film na stronę kariera plus kilka krótszych rolek na social media, nagranych tego samego dnia. Koszt przygotowania i dojazdu rozkłada się wtedy na więcej materiałów.</li>
           </ul>
           <p>
-            Ostateczną wycenę zawsze podajemy po rozmowie o zakresie, bo film dla dwuosobowego zespołu marketingu wygląda inaczej niż produkcja dla stu osób w hali produkcyjnej. Ale nigdy nie usłyszysz od nas ogólnego "to zależy" bez konkretnej liczby, zawsze dostajesz widełki na piśmie.
+            Ostateczną wycenę zawsze podajemy po rozmowie o zakresie, bo film dla dwuosobowego zespołu marketingu wygląda inaczej niż produkcja dla stu osób w hali produkcyjnej. Po rozmowie dostajesz konkretną wycenę na piśmie.
           </p>
 
           <h2>Jak wygląda praca z nami</h2>
@@ -182,7 +182,7 @@ export default function BlogFilmRekrutacyjnyEmployerBranding() {
             <Link to="/uslugi/produkcja-filmow" className="text-[#75143F] underline">
               produkcja video w Poznaniu
             </Link>
-            {" "}w naszym wykonaniu. Robiliśmy produkcje wideo między innymi dla Żabki, WSB Merito, Zakładów Cegielskiego i FPS, więc wiemy, jak pracować zarówno z dużą korporacją, jak i z mniejszym zespołem HR. Mamy też ponad <strong>160 opinii Google na 5.0</strong>, co samo w sobie sporo mówi o tym, jak traktujemy klientów.
+            {" "}w naszym wykonaniu. Realizowaliśmy materiały wideo między innymi dla Enea Stadionu, FPS Cegielski i AutoSpa, a dla WSB Merito nagraliśmy spot, więc wiemy, jak pracować zarówno z dużą organizacją, jak i z mniejszym zespołem.
           </p>
 
           <div className="not-prose my-12 rounded-2xl bg-gradient-to-r from-[#75143F] to-[#0F3053] p-8 md:p-10 text-white text-center">

@@ -8,16 +8,12 @@ import {
   TrendingUp,
   BarChart3,
   Users,
-  Rocket,
   CheckCircle2,
   Globe,
   Megaphone,
   PenTool,
   Video,
   MessageSquare,
-  Star,
-  Award,
-  Clock,
   ArrowRight,
   Building2,
   MapPin,
@@ -47,12 +43,12 @@ const AgencjaMarketingowaSosnowiec = () => {
     {
       icon: Target,
       title: "Strategie na miarę Sosnowca",
-      desc: "Znamy lokalne rynki, konkurencję i potrzeby klientów z rejonu Górnośląskiego Obszaru Metropolitalnego.",
+      desc: "Pracujemy z Poznania, a firmy z Sosnowca obsługujemy zdalnie — przed startem analizujemy Twój rynek, konkurencję i klientów z rejonu Górnośląskiego Obszaru Metropolitalnego.",
     },
     {
       icon: TrendingUp,
-      title: "Sprawdzone wyniki",
-      desc: "Nasze kampanie marketingowe przynoszą średnio 300% zwrot z inwestycji dla naszych klientów.",
+      title: "Przejrzyste raportowanie",
+      desc: "Regularnie pokazujemy, co zrobiliśmy, ile kosztowały kampanie i jakie przyniosły dane — bez obietnic konkretnego zwrotu z inwestycji.",
     },
     {
       icon: Users,
@@ -61,8 +57,8 @@ const AgencjaMarketingowaSosnowiec = () => {
     },
     {
       icon: Zap,
-      title: "Szybkie wdrożenie",
-      desc: "Rzeczywiste wyniki w ciągu 2-4 tygodni. Kampanie startują szybko i przynoszą widoczne efekty.",
+      title: "Sprawne wdrożenie",
+      desc: "Po akceptacji strategii szybko uruchamiamy kampanie, a efekty oceniamy na podstawie danych z kolejnych tygodni.",
     },
   ];
 
@@ -115,12 +111,12 @@ const AgencjaMarketingowaSosnowiec = () => {
     {
       question: "Ile kosztuje agencja marketingowa w Sosnowcu?",
       answer:
-        "Koszty obsługi marketingowej w Sosnowcu zaczynają się od 1500 zł/miesiąc. Pakiet START obejmuje strategię i campaine Google Ads. Pakiet ROZWÓJ 3500 zł to pełna obsługa digital marketingu. PREMIUM 7000+ zł to kompleksowa obsługa wraz z produkcją filmową. Oferujemy bezpłatną konsultację i wycenę dostosowaną do Twoich potrzeb.",
+        "Wycenę przygotowujemy po rozmowie o zakresie: liczbie kanałów, ilości treści i materiałów wideo, rodzaju kampanii oraz częstotliwości raportów. Pakiet START obejmuje strategię i kampanię Google Ads, ROZWÓJ — pełną obsługę digital marketingu, a PREMIUM — kompleksową obsługę z produkcją filmową. Budżet reklamowy płacony platformom (Google, Meta) jest zawsze osobną pozycją.",
     },
     {
       question: "Jak szybko zobaczę wyniki kampanii marketingowej?",
       answer:
-        "Pierwsze wyniki marketingowe pojawiają się zwykle w ciągu 2-4 tygodni. W kampaniach Google Ads i social media widzimy kliknięcia już w pierwszym tygodniu. Konwersje i rzeczywiste sprzedaże rosną stopniowo w kolejnych miesiącach. Wyniki zależą od branży, budżetu i konkurencji w Twojej niszy.",
+        "Kampanie Google Ads i social media zaczynają zbierać dane (wyświetlenia, kliknięcia) od momentu uruchomienia. Konwersje i rzeczywiste sprzedaże rosną stopniowo w kolejnych miesiącach. Wyniki zależą od branży, budżetu i konkurencji w Twojej niszy.",
     },
     {
       question: "Czy agencja marketingowa pomoże mi w social media?",
@@ -135,19 +131,19 @@ const AgencjaMarketingowaSosnowiec = () => {
     {
       question: "Jakie branże obsługujecie w Sosnowcu?",
       answer:
-        "Doświadczenie mamy w obsłudze handlu, e-commerce, gastronomii, usług, produkcji, nieruchomości i transportu. Znamy specyfikę sosnowieckiego rynku i górniczej historii miasta. Pracujemy z firmami o każdej wielkości - od mikroprzedsiębiorstw po dużych graczy.",
+        "Pracujemy z firmami z różnych branż — m.in. handlu, e-commerce, gastronomii, usług i produkcji. Firmy z Sosnowca obsługujemy zdalnie z Poznania, a przed startem poznajemy specyfikę Twojego rynku i klientów.",
     },
     {
       question: "Czy muszę mieć już budżet na reklamy?",
       answer:
-        "Nasze usługi marketingowe to opłata za obsługę agencji - niezależnie od budżetu reklamowego. Jednak rekomendujemy budżet na reklamy cyfrowe od 1000-2000 zł/miesiąc, aby kampanie były efektywne. Agencja zarządza tym budżetem i optymalizuje wydatki dla maksymalnego zwrotu.",
+        "Opłata za obsługę agencji jest oddzielna od budżetu reklamowego, który płacisz bezpośrednio platformom (Google, Meta). Wysokość budżetu dobieramy wspólnie do celu kampanii, branży i konkurencji, a następnie zarządzamy nim i optymalizujemy wydatki.",
     },
   ];
 
   const localContext = [
-    "Sosnowiec to miasto 170 tys. mieszkańców na Górnym Śląsku z bogatą historią górniczą",
-    "Revitalizacja miasta przyniósł nowe przestrzenie handlowe i inwestycje biznesowe",
-    "E-commerce i usługi cyfrowe szybko rosną w Górnośląskim Obszarze Metropolitalnym",
+    "Sosnowiec to miasto na Górnym Śląsku z bogatą historią górniczą",
+    "Rewitalizacja miasta przyniosła nowe przestrzenie handlowe i inwestycje biznesowe",
+    "E-commerce i usługi cyfrowe rozwijają się w Górnośląskim Obszarze Metropolitalnym",
     "Konkurencja lokalnych firm zwiększa się - online marketing jest niezbędny",
   ];
 
@@ -158,13 +154,6 @@ const AgencjaMarketingowaSosnowiec = () => {
     "Wsparcie polskojęzyczne - rozumiemy lokalny kontekst",
     "Prosta komunikacja i stały dostęp do zespołu",
     "Ceny konkurencyjne bez ukrytych kosztów",
-  ];
-
-  const stats = [
-    { value: "500+", label: "Zrealizowanych kampanii", icon: Rocket },
-    { value: "95%", label: "Zadowolonych klientów", icon: Star },
-    { value: "8 lat", label: "Doświadczenia", icon: Award },
-    { value: "24/7", label: "Wsparcie klientów", icon: Clock },
   ];
 
   return (
@@ -201,7 +190,7 @@ const AgencjaMarketingowaSosnowiec = () => {
             <div className="text-center space-y-8">
               <div className="inline-flex items-center gap-2 bg-yellow-400/10 border border-yellow-400/30 rounded-full px-4 py-2">
                 <span className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse"></span>
-                <span className="text-sm font-medium text-yellow-400">Agencja marketingowa w Sosnowcu</span>
+                <span className="text-sm font-medium text-yellow-400">Agencja marketingowa dla firm z Sosnowca</span>
               </div>
 
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight">
@@ -209,7 +198,7 @@ const AgencjaMarketingowaSosnowiec = () => {
               </h1>
 
               <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-                Pomagamy firmom z Sosnowca i Górnośląskiego Obszaru Metropolitalnego zdobywać klientów poprzez digital marketing. Kampanie Google Ads, social media, content marketing i produkcja filmowa.
+                Pomagamy firmom z Sosnowca i Górnośląskiego Obszaru Metropolitalnego zdobywać klientów poprzez digital marketing. Kampanie Google Ads, social media, content marketing i produkcja filmowa. Pracujemy z Poznania, a firmy z Sosnowca obsługujemy zdalnie.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
@@ -229,15 +218,6 @@ const AgencjaMarketingowaSosnowiec = () => {
                   <Link to="#pricing">Cennik usług</Link>
                 </Button>
               </div>
-
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-12 border-t border-gray-700">
-                {stats.map((stat, index) => (
-                  <div key={index} className="text-center">
-                    <div className="text-3xl font-bold text-yellow-400">{stat.value}</div>
-                    <div className="text-sm text-gray-400 mt-1">{stat.label}</div>
-                  </div>
-                ))}
-              </div>
             </div>
           </div>
         </section>
@@ -250,7 +230,7 @@ const AgencjaMarketingowaSosnowiec = () => {
                 Dlaczego <span className="text-yellow-400">fotz</span>?
               </h2>
               <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-                Cztery główne powody, dla których firmy z Sosnowca i okolic wybierają naszą agencję
+                Cztery powody, dla których warto powierzyć nam marketing firmy z Sosnowca i okolic
               </p>
             </div>
 
@@ -327,11 +307,11 @@ const AgencjaMarketingowaSosnowiec = () => {
                 </div>
 
                 <p className="text-gray-400 mb-8">
-                  Sosnowiec to miasto z bogatą historią górniczą, które przechodzi dynamiczną transformację. Rozwój e-commerce, usług cyfrowych i tradycyjnych biznesów tworzy ogromne szanse dla firm, które potrafią skutecznie promować się w internecie.
+                  Sosnowiec to miasto z bogatą historią górniczą, które przechodzi dynamiczną transformację. Rozwój e-commerce, usług cyfrowych i tradycyjnych biznesów tworzy szanse dla firm, które potrafią skutecznie promować się w internecie.
                 </p>
 
                 <p className="text-gray-400">
-                  Górny Śląsk to region z ponad 2 milionami mieszkańców. Zainwestowanie w marketing online pozwoli Ci dotrzeć do klientów z całego regionu i poza nim, niezależnie od lokalizacji Twojej firmy.
+                  Górny Śląsk to jeden z największych regionów miejskich w Polsce. Zainwestowanie w marketing online pozwoli Ci dotrzeć do klientów z całego regionu i poza nim, niezależnie od lokalizacji Twojej firmy.
                 </p>
               </div>
 
@@ -340,17 +320,9 @@ const AgencjaMarketingowaSosnowiec = () => {
                   <div>
                     <div className="flex items-center gap-2 mb-2">
                       <MapPin className="h-5 w-5 text-yellow-400" />
-                      <h3 className="font-bold text-white">Lokalizacja</h3>
+                      <h3 className="font-bold text-white">Współpraca</h3>
                     </div>
-                    <p className="text-gray-400">Sosnowiec, Górny Śląsk, Polska</p>
-                  </div>
-
-                  <div>
-                    <div className="flex items-center gap-2 mb-2">
-                      <Users className="h-5 w-5 text-yellow-400" />
-                      <h3 className="font-bold text-white">Populacja</h3>
-                    </div>
-                    <p className="text-gray-400">Ponad 170 tys. mieszkańców</p>
+                    <p className="text-gray-400">Pracujemy z Poznania, firmy z Sosnowca obsługujemy zdalnie</p>
                   </div>
 
                   <div>
@@ -358,7 +330,7 @@ const AgencjaMarketingowaSosnowiec = () => {
                       <TrendingUp className="h-5 w-5 text-yellow-400" />
                       <h3 className="font-bold text-white">Dynamika rynku</h3>
                     </div>
-                    <p className="text-gray-400">Szybko rosnący sektor usług cyfrowych i e-commerce</p>
+                    <p className="text-gray-400">Rozwijający się sektor usług cyfrowych i e-commerce</p>
                   </div>
 
                   <div>
@@ -382,7 +354,7 @@ const AgencjaMarketingowaSosnowiec = () => {
                 Cennik <span className="text-yellow-400">usług</span>
               </h2>
               <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-                Przejrzyste ceny, bez ukrytych kosztów. Wybierz pakiet dostosowany do Twoich potrzeb
+                Zakres pakietu dobieramy do potrzeb, a cenę podajemy w ofercie po rozmowie. Budżet reklamowy płacony platformom jest zawsze osobno.
               </p>
             </div>
 
@@ -398,7 +370,7 @@ const AgencjaMarketingowaSosnowiec = () => {
                 >
                   {plan.popular && (
                     <div className="mb-4 inline-block bg-yellow-400 text-gray-900 px-3 py-1 rounded-full text-sm font-bold">
-                      Najpopularniejszy
+                      Polecany zakres
                     </div>
                   )}
 
