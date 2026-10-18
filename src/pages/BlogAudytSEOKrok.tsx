@@ -14,7 +14,7 @@ const faqItems = [
   },
   {
     question: "Ile czasu zajmuje przeprowadzenie audytu SEO?",
-    answer: "Audyt podstawowy małej strony (poniżej 100 stron) zajmuje 2-4 godziny. Średniej strony (100-1000 stron) około 8-16 godzin. Dużego portalu (1000+ stron) może zająć tygodnie. Jeśli używasz zaawansowanego narzędzia wie SEMrush lub Ahrefs, proces znacznie przyspieszysz. Fotz Studio przeprowadza pełny audyt w 2-3 dni robocze."
+    answer: "Audyt podstawowy małej strony (poniżej 100 stron) zajmuje 2-4 godziny. Średniej strony (100-1000 stron) około 8-16 godzin. Dużego portalu (1000+ stron) może zająć tygodnie. Jeśli używasz zaawansowanego narzędzia wie SEMrush lub Ahrefs, proces znacznie przyspieszysz. Jeśli zlecasz audyt w Fotz Studio, czas realizacji ustalamy po poznaniu strony i zakresu."
   },
   {
     question: "Co to jest techniczny audyt SEO?",
@@ -26,7 +26,7 @@ const faqItems = [
   },
   {
     question: "Czy mogę przeprowadzić audyt SEO sam bez agencji?",
-    answer: "Tak, możesz! Jeśli masz stronę do 100 stron i podstawową wiedzę o SEO, darmowe narzędzia wystarczą. Jeśli jednak chcesz pełną analizę z raportami, rekomendacjami priorytetu i strategią naprawczą, lepiej zlecić profesjonalistom. Agencja SEO oszczędzi Ci czasu i da gwarancję, że nic nie przegapisz."
+    answer: "Tak, możesz! Jeśli masz stronę do 100 stron i podstawową wiedzę o SEO, darmowe narzędzia wystarczą. Jeśli jednak chcesz pełną analizę z raportami, rekomendacjami priorytetu i strategią naprawczą, lepiej zlecić profesjonalistom. Agencja SEO oszczędzi Ci czasu i spojrzy na stronę z zewnątrz, z doświadczeniem z innych projektów."
   },
   {
     question: "Co zrobić po przeprowadzeniu audytu SEO?",
@@ -38,7 +38,7 @@ const faqItems = [
   },
   {
     question: "Ile kosztuje profesjonalny audyt SEO od agencji?",
-    answer: "Audyt SEO od agencji kosztuje zazwyczaj: audyt podstawowy 500-1500 PLN, standardowy 1500-3500 PLN, zaawansowany z rekomendacjami 3500-7500 PLN. Cena zależy od rozmiaru strony, detalizacji raportu, zakresu konkurencji i czasu realizacji. Fotz Studio oferuje audyt SEO z bezpłatną konsultacją — skontaktuj się, aby poznać szczegółowy cennik."
+    answer: "Przykładowe widełki rynkowe (nie cennik konkretnej agencji): audyt podstawowy 500-1500 PLN, standardowy 1500-3500 PLN, zaawansowany z rekomendacjami 3500-7500 PLN. Cena zależy od rozmiaru strony, detalizacji raportu, zakresu konkurencji i czasu realizacji. W Fotz Studio wycenę audytu przygotowujemy po rozmowie i poznaniu strony."
   }
 ];
 
@@ -544,7 +544,7 @@ export default function BlogAudytSEOKrok() {
               <section className="bg-gradient-to-r from-yellow-400 to-orange-400 rounded-2xl p-12 text-gray-900 text-center mb-14">
                 <h2 className="text-4xl font-bold mb-4">Potrzebujesz Profesjonalnego Audytu SEO?</h2>
                 <p className="text-xl mb-8 opacity-90">
-                  Zespół FOTZ przeprowadzi kompletny audyt Twojej strony i stworzy strategię wzrostu w wyszukiwaniu. Zarabiaj więcej klientów z SEO.
+                  Zespół FOTZ może przeprowadzić audyt Twojej strony i zaproponować plan działań w wyszukiwaniu. Zakres i wycenę ustalimy po rozmowie.
                 </p>
                 <Link to="/kontakt">
                   <Button className="bg-gray-900 text-yellow-400 hover:bg-gray-800 px-8 py-3 text-lg font-bold">

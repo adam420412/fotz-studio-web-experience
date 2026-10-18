@@ -21,7 +21,7 @@ const services = [
   {
     icon: Zap,
     title: "Kampanie Google Ads",
-    description: "Zaawansowane kampanie Google Ads: search, shopping, display. Konfiguracja, optymalizacja i skalowanie. Raportowanie ROAS i CPL. Budżety od 2 000 do 100 000 PLN/mies. Skuteczne dla firm produkcji i e-commerce."
+    description: "Zaawansowane kampanie Google Ads: search, shopping, display. Konfiguracja, optymalizacja i skalowanie. Raportowanie ROAS i CPL. Budżet reklamowy ustalamy indywidualnie i płacisz go bezpośrednio Google."
   },
   {
     icon: Star,
@@ -43,19 +43,19 @@ const services = [
 const faqItems = [
   {
     question: "Jakie wyzwania marketingowe stoi przed firmami z Zabrza?",
-    answer: "Zabrze to importante centrum przemysłowe Górnego Śląska z bogatą historią (górnictwo węgla, produkcja stali). Dziś miasto się transformuje — coraz więcej firm handlowych, produkcji specjalistycznej, usług dla biznesu. Konkurencja rośnie, ale rynek jest mniej nasycony niż Kraków czy Warszawa. Firmy z Zabrza szukają agencji znającej specyfikę czołów przemysłowych i możliwości cyfryzacji produkcji."
+    answer: "Zabrze to importante centrum przemysłowe Górnego Śląska z bogatą historią (górnictwo węgla, produkcja stali). Dziś miasto się transformuje — coraz więcej firm handlowych, produkcji specjalistycznej, usług dla biznesu. Konkurencja rośnie, ale rynek jest mniej nasycony niż Kraków czy Warszawa. Dlatego przed startem analizujemy branżę i konkurencję każdej firmy."
   },
   {
     question: "Czy agencja z innego miasta obsługuje klientów z Zabrza?",
-    answer: "Tak — obsługujemy firmy z całej Polski, w tym z Zabrza. Współpraca przebiega online (Google Meet, Teams). Ponad 40% naszych klientów pochodzi z różnych miast. Zabrze to rynek rosnący cyfrowo — format online nie jest problemem. Ważne jest zrozumienie specyfiki firm produkcji, handlu i transformacji cyfrowej, która zachodzi w mieście."
+    answer: "Tak — pracujemy z Poznania, firmy z Zabrza obsługujemy zdalnie. Współpraca przebiega online (Google Meet, Teams), a materiały i raporty udostępniamy na bieżąco. Ważne jest zrozumienie specyfiki firm produkcji, handlu i transformacji cyfrowej, która zachodzi w mieście."
   },
   {
     question: "Ile kosztuje agencja marketingowa w Zabrzu?",
-    answer: "Ceny zależą od zakresu: pojedynczy kanał (SEO, Meta Ads) od 1 500–3 000 PLN/mies. Kompleksowa obsługa — SEO, Google Ads, social media — od 5 000–15 000 PLN/mies. Dla firm produkcji dochodzą kampanie B2B i technical SEO. Każdą wycenę poprzedzamy bezpłatną konsultacją."
+    answer: "Wycenę przygotowujemy po rozmowie o zakresie — zależy od liczby kanałów, zakresu treści i kreacji, stanu strony oraz częstotliwości raportów. Budżet reklamowy płacisz platformom osobno. Każdą wycenę poprzedzamy bezpłatną konsultacją."
   },
   {
     question: "Jakie kampanie reklamowe są najskuteczniejsze dla Zabrza?",
-    answer: "W Zabrzu skuteczne są: Google Ads dla produktów i usług, LinkedIn Ads dla firm B2B, Facebook dla awareness lokalnego, SEO dla firm handlowych, kampanie retargeting dla e-commerce. Zabrze wymaga B2B i e-commerce focused podejścia. Mamy doświadczenie w firm produkcyjnych transformujących się cyfrowo."
+    answer: "W Zabrzu skuteczne są: Google Ads dla produktów i usług, LinkedIn Ads dla firm B2B, Facebook dla awareness lokalnego, SEO dla firm handlowych, kampanie retargeting dla e-commerce. Zabrze wymaga B2B i e-commerce focused podejścia. Strategię dobieramy do branży i celów konkretnej firmy."
   },
   {
     question: "Czym wyróżnia się Zabrze na rynku marketingowym Śląska?",
@@ -99,7 +99,7 @@ export default function AgencjaMarketingowaZabrze() {
             <div className="max-w-4xl mx-auto text-center">
               <div className="mb-4">
                 <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-yellow-400/10 border border-yellow-400/20 text-sm text-foreground/80">
-                  <MapPin className="w-4 h-4 text-yellow-400" /> Zabrze i cała Polska — współpraca online
+                  <MapPin className="w-4 h-4 text-yellow-400" /> Pracujemy z Poznania — firmy z Zabrza obsługujemy zdalnie
                 </span>
               </div>
 
@@ -126,25 +126,6 @@ export default function AgencjaMarketingowaZabrze() {
                   <Link to="/realizacje">Zobacz nasze realizacje</Link>
                 </Button>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Stats */}
-        <section className="py-12 bg-card/30 border-y border-border/30">
-          <div className="container px-4">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto text-center">
-              {[
-                { value: "+280%", label: "wzrost ruchu (5 miesięcy)" },
-                { value: "TOP 5", label: "pozycje w Google" },
-                { value: "4.8/5", label: "ocena (22 opinie)" },
-                { value: "200+", label: "zrealizowanych kampanii" }
-              ].map((s, i) => (
-                <div key={i}>
-                  <div className="text-3xl md:text-4xl font-heading font-bold text-yellow-400 mb-1">{s.value}</div>
-                  <div className="text-sm text-muted-foreground">{s.label}</div>
-                </div>
-              ))}
             </div>
           </div>
         </section>
@@ -197,8 +178,8 @@ export default function AgencjaMarketingowaZabrze() {
                 {[
                   {
                     icon: Award,
-                    title: "Doświadczenie na rynku Górnego Śląska",
-                    desc: "Zabrze to centrum przemysłowe z bogatą historią i potencjałem transformacji cyfrowej. Znamy specyfikę firm produkcji, handlu, usług dla biznesu. Wiemy, jak wyróżnić Twoją firmę w konkurencyjnym rynku."
+                    title: "Współpraca zdalna z Poznania",
+                    desc: "Pracujemy z Poznania, firmy z Zabrza obsługujemy zdalnie. Przed startem analizujemy Twoją branżę i konkurencję, żeby dobrać działania do rynku."
                   },
                   {
                     icon: TrendingUp,
@@ -208,12 +189,12 @@ export default function AgencjaMarketingowaZabrze() {
                   {
                     icon: Users,
                     title: "Dedykowany ekspert projektu",
-                    desc: "Masz stały kontakt z ekspertem znającym rynek Zabrza, trendy e-commerce i psychologię kupujących. Nie rotujemy juniorów czy stażystów."
+                    desc: "Masz stały kontakt z osobą prowadzącą Twój projekt. Nie rotujemy juniorów czy stażystów."
                   },
                   {
                     icon: Globe,
                     title: "Strategia dla miasta transformacji",
-                    desc: "Zabrze rozwija się jako centrum handlowe i produkcji specjalistycznej. Znamy zarówno tradycyjne sektory jak i nowoczesne trendy e-commerce i digital marketing."
+                    desc: "Zabrze rozwija się jako centrum handlowe i produkcji specjalistycznej. Działania dopasowujemy zarówno do firm z tradycyjnych sektorów, jak i do e-commerce."
                   }
                 ].map((item, i) => (
                   <div
@@ -240,79 +221,36 @@ export default function AgencjaMarketingowaZabrze() {
             <div className="max-w-5xl mx-auto">
               <div className="text-center mb-14">
                 <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Pakiety marketingowe
+                  Od czego zależy wycena
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Elastyczne pakiety dostosowane do budżetu i potrzeb Twojej firmy.
+                  Nie mamy sztywnych pakietów — zakres i koszt ustalamy indywidualnie.
                 </p>
               </div>
 
-              <div className="grid md:grid-cols-3 gap-6">
-                {[
-                  {
-                    name: "START",
-                    price: "1500",
-                    desc: "Dla startupów i małych firm",
-                    features: [
-                      "Strona www (5 podstron)",
-                      "Podstawowy SEO",
-                      "Google Business Profile",
-                      "Social media setup"
-                    ]
-                  },
-                  {
-                    name: "ROZWÓJ",
-                    price: "3500",
-                    desc: "Dla firm średnich",
-                    features: [
-                      "Strona www lub redesign",
-                      "Kompleksowe SEO",
-                      "Kampania Google Ads",
-                      "Social media campaigns",
-                      "Raportowanie"
-                    ],
-                    highlighted: true
-                  },
-                  {
-                    name: "PREMIUM",
-                    price: "7000+",
-                    desc: "Dla firm dużych i korporacji",
-                    features: [
-                      "Kompleksowy marketing",
-                      "Wielokanałowe kampanie",
-                      "Dedykowany team",
-                      "Strategia full-funnel",
-                      "Ciągła optymalizacja"
-                    ]
-                  }
-                ].map((pkg, i) => (
-                  <div
-                    key={i}
-                    className={`p-8 rounded-2xl border transition-all ${
-                      pkg.highlighted
-                        ? "border-yellow-400/50 bg-card/40 shadow-lg shadow-yellow-400/10"
-                        : "border-border/40 bg-card/20"
-                    }`}
-                  >
-                    <h3 className="text-xl font-heading font-bold mb-2">{pkg.name}</h3>
-                    <p className="text-sm text-muted-foreground mb-4">{pkg.desc}</p>
-                    <div className="mb-6 pb-6 border-b border-border/30">
-                      <span className="text-3xl font-bold text-yellow-400">{pkg.price}</span>
-                      <span className="text-muted-foreground"> PLN/mies</span>
-                    </div>
-                    <ul className="space-y-3 mb-6">
-                      {pkg.features.map((feature, j) => (
-                        <li key={j} className="flex items-center gap-2 text-sm">
-                          <span className="w-1.5 h-1.5 rounded-full bg-yellow-400" />
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
-                    <Button asChild variant={pkg.highlighted ? "default" : "outline"} className="w-full">
-                      <Link to="/kontakt">Więcej informacji</Link>
-                    </Button>
-                  </div>
-                ))}
+              <div className="max-w-3xl mx-auto p-8 rounded-2xl border border-border/40 bg-card/20">
+                <p className="text-muted-foreground mb-6">
+                  Wycenę przygotowujemy po rozmowie o zakresie. Najczęściej zależy ona od:
+                </p>
+                <ul className="space-y-3 mb-6">
+                  {[
+                    "liczby kanałów (strona, SEO, Google Ads, Meta Ads, social media),",
+                    "zakresu treści i kreacji, które przygotowujemy,",
+                    "stanu obecnej strony i analityki,",
+                    "częstotliwości raportów i konsultacji.",
+                  ].map((factor, j) => (
+                    <li key={j} className="flex items-center gap-2 text-sm">
+                      <span className="w-1.5 h-1.5 rounded-full bg-yellow-400" />
+                      {factor}
+                    </li>
+                  ))}
+                </ul>
+                <p className="text-sm text-muted-foreground mb-6">
+                  Budżet reklamowy płacisz bezpośrednio platformom (Google, Meta), zawsze osobno od naszego wynagrodzenia.
+                </p>
+                <Button asChild className="w-full">
+                  <Link to="/kontakt">Poproś o wycenę</Link>
+                </Button>
               </div>
             </div>
           </div>
@@ -336,7 +274,7 @@ export default function AgencjaMarketingowaZabrze() {
                 </Button>
               </div>
               <p className="text-white/50 text-xs mt-6">
-                Odpowiadamy w ciągu 24 godzin - Bez sprzedaży pod presją
+                Bez sprzedaży pod presją
               </p>
             </div>
           </div>

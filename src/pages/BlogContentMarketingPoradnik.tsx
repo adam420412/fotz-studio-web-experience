@@ -18,7 +18,7 @@ const faqItems = [
   },
   {
     question: "Jakie formaty contentu są najskuteczniejsze dla SEO?",
-    answer: "Artykuły blogowe o długości 2000-3000 słów są najlepsze dla SEO. W pierwszej kolejności powinny być optymalizowane pod kluczowe słowa. Jednak różne formaty działają dla różnych celów: video dla engagement, podcasty dla budowania autorytetu, infografiki dla sharability."
+    answer: "Rozbudowane, wyczerpujące artykuły blogowe zwykle najlepiej sprawdzają się w SEO. W pierwszej kolejności powinny być optymalizowane pod kluczowe słowa. Jednak różne formaty działają dla różnych celów: video dla engagement, podcasty dla budowania autorytetu, infografiki dla sharability."
   },
   {
     question: "Jak często powinienem publikować nową treść?",
@@ -197,7 +197,7 @@ const BlogContentMarketingPoradnik = () => {
               {/* Article Content */}
               <div className="space-y-8 text-gray-300">
                 <p className="text-xl text-gray-200 leading-relaxed">
-                  Content marketing to jedna z najskuteczniejszych i najtańszych strategii budowania marki i zdobywania klientów. W 2025 roku firmy, które publikują wysokiej jakości treści, otrzymują 3-5 razy więcej leadów niż konkurencja, a koszt pozyskania klienta jest o 62% niższy. Ten poradnik przeprowadzi Cię przez każdy etap — od strategii i planowania po wdrożenie, produkcję i pomiar wyników.
+                  Content marketing to jedna z najskuteczniejszych i najtańszych strategii budowania marki i zdobywania klientów. Firmy, które systematycznie publikują wysokiej jakości treści, budują widoczność i zaufanie, które z czasem przekładają się na zapytania od klientów — często taniej niż przy samej reklamie płatnej. Ten poradnik przeprowadzi Cię przez każdy etap — od strategii i planowania po wdrożenie, produkcję i pomiar wyników.
                 </p>
 
                 <div className="bg-gray-800 border border-yellow-400/30 rounded-lg p-6">
@@ -229,7 +229,7 @@ const BlogContentMarketingPoradnik = () => {
                 <div>
                   <h2 className="text-3xl font-bold text-white mb-6">Formaty content marketingu: która treść działa najlepiej?</h2>
                   <p className="mb-6">
-                    Nie wszystkie treści działają jednakowo. Wybór formatu zależy od Twoich celów, budżetu, i gdzie przebywają Twoi klienci. Poniższa tabela podsumowuje najpopularniejsze formaty:
+                    Nie wszystkie treści działają jednakowo. Wybór formatu zależy od Twoich celów, budżetu, i gdzie przebywają Twoi klienci. Poniższa tabela podsumowuje najpopularniejsze formaty (koszty to przykładowe widełki rynkowe u freelancerów i agencji, a nie cennik FOTZ Studio):
                   </p>
                   <div className="overflow-x-auto rounded-lg border border-gray-700">
                     <table className="w-full text-sm">
@@ -237,7 +237,7 @@ const BlogContentMarketingPoradnik = () => {
                         <tr className="bg-gray-800 border-b border-gray-700">
                           <th className="px-4 py-3 text-left font-semibold text-yellow-400">Format</th>
                           <th className="px-4 py-3 text-left font-semibold text-yellow-400">Czas produkcji</th>
-                          <th className="px-4 py-3 text-left font-semibold text-yellow-400">Koszt</th>
+                          <th className="px-4 py-3 text-left font-semibold text-yellow-400">Przykładowy koszt (rynkowo)</th>
                           <th className="px-4 py-3 text-left font-semibold text-yellow-400">Efekt SEO</th>
                           <th className="px-4 py-3 text-left font-semibold text-yellow-400">Virality</th>
                         </tr>
@@ -281,7 +281,7 @@ const BlogContentMarketingPoradnik = () => {
                 <div>
                   <h2 className="text-3xl font-bold text-white mb-6">KPI w content marketingu: co mierzyć?</h2>
                   <p className="mb-6">
-                    Bez pomiaru nie wiesz czy Twoja strategia działa. Poniżej znajduje się lista kluczowych metryk (KPI) które powinieneś śledzić:
+                    Bez pomiaru nie wiesz czy Twoja strategia działa. Poniżej znajduje się lista kluczowych metryk (KPI), które powinieneś śledzić. Wartości w ostatniej kolumnie to przykładowe cele orientacyjne — realne progi ustal na podstawie własnych danych i branży:
                   </p>
                   <div className="overflow-x-auto rounded-lg border border-gray-700">
                     <table className="w-full text-sm">
@@ -290,7 +290,7 @@ const BlogContentMarketingPoradnik = () => {
                           <th className="px-4 py-3 text-left font-semibold text-yellow-400">Metryka</th>
                           <th className="px-4 py-3 text-left font-semibold text-yellow-400">Co mierzy</th>
                           <th className="px-4 py-3 text-left font-semibold text-yellow-400">Narzędzie</th>
-                          <th className="px-4 py-3 text-left font-semibold text-yellow-400">Cel benchmarkowy</th>
+                          <th className="px-4 py-3 text-left font-semibold text-yellow-400">Przykładowy cel</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -339,7 +339,7 @@ const BlogContentMarketingPoradnik = () => {
                 <div className="bg-gray-800 border border-gray-700 rounded-lg p-8">
                   <h2 className="text-3xl font-bold text-white mb-6">Ile kosztuje content marketing?</h2>
                   <p className="mb-6 text-gray-300">
-                    Koszt zależy od tego czy tworzysz content wewnętrznie, zatrudniasz freelancerów czy agencję. Poniżej porównanie:
+                    Koszt zależy od tego, czy tworzysz content wewnętrznie, zatrudniasz freelancerów czy agencję. Poniżej porównanie na przykładowych widełkach rynkowych (orientacyjnie, nie cennik FOTZ Studio):
                   </p>
 
                   <div className="space-y-6">
@@ -381,7 +381,7 @@ const BlogContentMarketingPoradnik = () => {
 
                   <div className="mt-6 p-4 bg-yellow-400/10 border border-yellow-400/30 rounded-lg">
                     <p className="text-sm text-gray-300">
-                      <strong className="text-yellow-300">Tip:</strong> Nawet mały budżet (1000-2000 zł/mies.) na freelancerów lub 1 artykuł/mies. da rezultaty w ciągu 6-12 miesięcy. Kluczowe jest bycie systematycznym i trzymanie się planu.
+                      <strong className="text-yellow-300">Tip:</strong> Nawet mały budżet (np. 1000-2000 zł/mies.) na freelancerów lub 1 artykuł/mies. może z czasem przynieść efekty — zwykle w perspektywie wielu miesięcy, a nie tygodni. Kluczowe jest bycie systematycznym i trzymanie się planu.
                     </p>
                   </div>
                 </div>
@@ -411,7 +411,7 @@ const BlogContentMarketingPoradnik = () => {
                   Gotowy na content marketing dla swojej firmy?
                 </h2>
                 <p className="text-gray-300 mb-8 max-w-2xl mx-auto text-center">
-                  Pomożemy Ci zbudować skuteczną strategię content marketingu, napisać zoptymalizowane artykuły i zmierzyć rzeczywiste rezultaty. Bezpłatna konsultacja trwa 30 minut.
+                  Pomożemy Ci zaplanować strategię content marketingu, przygotować treści i ustawić pomiar efektów. Zakres i wycenę ustalimy po rozmowie o Twoich celach.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button asChild size="lg" className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold">

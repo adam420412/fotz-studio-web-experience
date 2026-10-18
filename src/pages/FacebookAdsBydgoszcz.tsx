@@ -11,7 +11,7 @@ export default function FacebookAdsBydgoszcz() {
     <>
       <SEOHead
         title="Agencja Facebook Ads Bydgoszcz — reklamy Meta dla firm | Fotz.pl"
-        description="Facebook Ads Bydgoszcz ✓ Kampanie Meta Ads dla firm z Bydgoszczy i Kujaw. Od 400 zł/mies. Bezpłatna konsultacja!"
+        description="Facebook Ads Bydgoszcz ✓ Kampanie Meta Ads dla firm z Bydgoszczy i Kujaw, obsługa zdalna z Poznania. Bezpłatna konsultacja!"
         canonical="https://www.fotz-studio.pl/performance-marketing/facebook-ads/bydgoszcz"
         keywords="facebook ads bydgoszcz, meta ads bydgoszcz, reklamy facebook bydgoszcz, agencja facebook ads bydgoszcz, kampanie facebook bydgoszcz, instagram ads bydgoszcz, facebook ads dla firm bydgoszcz, reklama na facebooku bydgoszcz, meta ads agencja bydgoszcz, facebook ads cennik bydgoszcz"
       />
@@ -49,22 +49,22 @@ export default function FacebookAdsBydgoszcz() {
                   Agencja Facebook Ads w Bydgoszczy
                 </h1>
                 <p className="text-xl text-gray-700 mb-8">
-                  Facebook Ads Bydgoszcz — profesjonalne kampanie Meta Ads i reklamy Facebook dla firm z Bydgoszcza i Kujaw. Zwiększamy sprzedaż, zasięg i ROI dzięki precyzyjnemu targetowaniu i kreatywnym reklamom. Bezpłatna konsultacja i wycena kampanii.
+                  Facebook Ads Bydgoszcz — kampanie Meta Ads i reklamy Facebook dla firm z Bydgoszczy i Kujaw. Pracujemy z Poznania, a firmy z Bydgoszczy obsługujemy zdalnie. Planujemy targetowanie, przygotowujemy kreacje i optymalizujemy kampanie pod Twoje cele. Bezpłatna konsultacja i wycena kampanii.
                 </p>
 
                 {/* STATS */}
                 <div className="grid grid-cols-3 gap-4 mb-8">
                   <div className="bg-white rounded-lg p-4 shadow-md">
-                    <div className="text-2xl font-bold text-blue-600">400 zł</div>
-                    <div className="text-sm text-gray-600">od miesiąca</div>
+                    <div className="text-2xl font-bold text-blue-600">Wycena</div>
+                    <div className="text-sm text-gray-600">po rozmowie o zakresie</div>
                   </div>
                   <div className="bg-white rounded-lg p-4 shadow-md">
-                    <div className="text-2xl font-bold text-green-600">48h</div>
-                    <div className="text-sm text-gray-600">pierwsze wyniki</div>
+                    <div className="text-2xl font-bold text-green-600">Budżet</div>
+                    <div className="text-sm text-gray-600">płacisz Meta osobno</div>
                   </div>
                   <div className="bg-white rounded-lg p-4 shadow-md">
-                    <div className="text-2xl font-bold text-purple-600">✓</div>
-                    <div className="text-sm text-gray-600">certyfikowani</div>
+                    <div className="text-2xl font-bold text-purple-600">Zdalnie</div>
+                    <div className="text-sm text-gray-600">obsługa z Poznania</div>
                   </div>
                 </div>
 
@@ -78,7 +78,7 @@ export default function FacebookAdsBydgoszcz() {
                 </div>
 
                 <p className="text-sm text-gray-600 mt-6">
-                  ✓ Raporty miesięczne ✓ Dedykowany account manager ✓ Gwarancja zadowolenia
+                  ✓ Raporty miesięczne ✓ Stała osoba kontaktowa ✓ Jasne zasady współpracy
                 </p>
               </div>
             </FadeInView>
@@ -95,18 +95,18 @@ export default function FacebookAdsBydgoszcz() {
 
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="bg-blue-50 rounded-lg p-8">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">Dynamiczny rynek Kujawy</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">Rynek lokalny i regionalny</h3>
                   <p className="text-gray-700">
-                    Bydgoszcz i Kujaw to szybko rozwijające się regiony z wieloma małymi i średnimi firm.
-                    Facebook Ads pozwala nam dotrzeć do nich z precyzyjnie nacelowanymi wiadomościami.
+                    Bydgoszcz i Kujawy to wiele małych i średnich firm oraz ich klientów.
+                    Facebook Ads pozwala dotrzeć do nich z przekazem dopasowanym do lokalizacji i zainteresowań.
                   </p>
                 </div>
 
                 <div className="bg-indigo-50 rounded-lg p-8">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">Konkurencyjne ceny reklam</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">Kontrola budżetu</h3>
                   <p className="text-gray-700">
-                    W porównaniu do Warszawy czy Wrocławia, koszty per akcji są znacznie niższe,
-                    co przekłada się na lepszy ROI dla Twojej inwestycji marketingowej.
+                    Budżet reklamowy ustalasz sam i płacisz go bezpośrednio Meta.
+                    Koszt wyniku zależy od branży, grupy docelowej i konkurencji w aukcji — sprawdzamy go w testach.
                   </p>
                 </div>
 
@@ -119,10 +119,10 @@ export default function FacebookAdsBydgoszcz() {
                 </div>
 
                 <div className="bg-purple-50 rounded-lg p-8">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">Słabsza konkurencja agencji</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">Precyzyjne targetowanie</h3>
                   <p className="text-gray-700">
-                    Mniej specjalistów od Facebook Ads w Bydgoszczy oznacza mniej konkurencji
-                    i lepsze warunki dla aukcji reklam.
+                    Reklamy można kierować na Bydgoszcz, wybrane okolice lub cały region,
+                    a także według wieku, zainteresowań i zachowań odbiorców.
                   </p>
                 </div>
               </div>
@@ -156,7 +156,7 @@ export default function FacebookAdsBydgoszcz() {
                 <div className="bg-white rounded-lg p-8 shadow-md hover:shadow-lg transition">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">Reels Ads</h3>
                   <p className="text-gray-700">
-                    Krótkie wideo reklamy. Największy engagement na Instagramie i Facebooku.
+                    Krótkie reklamy wideo w formacie pionowym na Instagramie i Facebooku.
                   </p>
                 </div>
 
@@ -170,7 +170,7 @@ export default function FacebookAdsBydgoszcz() {
                 <div className="bg-white rounded-lg p-8 shadow-md hover:shadow-lg transition">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">Video Ads</h3>
                   <p className="text-gray-700">
-                    Reklamy video. Największy engagement i konwersje na wszystkich platformach.
+                    Reklamy wideo do budowania zasięgu, zaangażowania i konwersji.
                   </p>
                 </div>
 
@@ -250,7 +250,7 @@ export default function FacebookAdsBydgoszcz() {
                       <h3 className="text-xl font-bold text-gray-900 mb-2">Optymalizacja</h3>
                       <p className="text-gray-700">
                         Testujemy różne warianty kreatywów i segmentów odbiorców.
-                        Stopniowo zwiększamy ROI poprzez ciągłą iterację i ulepszenia.
+                        Wyniki poprawiamy poprzez ciągłą iterację i ulepszenia.
                       </p>
                     </div>
                   </div>
@@ -279,70 +279,36 @@ export default function FacebookAdsBydgoszcz() {
         <section className="py-16 md:py-24 bg-gray-50">
           <div className="container mx-auto px-4">
             <FadeInView>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
-                Cennik
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">
+                Od czego zależy wycena
               </h2>
+              <p className="text-gray-700 max-w-2xl mx-auto mb-12 text-center">
+                Nie mamy sztywnych pakietów. Wycenę przygotowujemy po rozmowie o zakresie kampanii.
+              </p>
 
               <div className="grid md:grid-cols-4 gap-6">
-                <div className="bg-white rounded-lg p-8 shadow-md hover:shadow-lg transition border-t-4 border-blue-600">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">START</h3>
-                  <div className="text-3xl font-bold text-blue-600 mb-4">400 zł</div>
-                  <p className="text-sm text-gray-600 mb-6">na miesiąc</p>
-                  <ul className="space-y-2 text-sm text-gray-700 mb-8">
-                    <li>✓ 1 kampania</li>
-                    <li>✓ Budżet do 2000 zł/mies</li>
-                    <li>✓ Raport co 2 tygodnie</li>
-                    <li>✓ Email support</li>
-                  </ul>
-                  <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full border-2 border-blue-600 text-blue-600 font-bold py-2 px-4 rounded-lg hover:bg-blue-50 transition">
-                    Wybierz
-                  </a>
+                <div className="bg-white rounded-lg p-8 shadow-md border-t-4 border-blue-600">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">Liczba kampanii</h3>
+                  <p className="text-sm text-gray-700">Ile kampanii, celów i grup odbiorców prowadzimy równolegle.</p>
                 </div>
+                <div className="bg-white rounded-lg p-8 shadow-md border-t-4 border-blue-600">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">Kreacje</h3>
+                  <p className="text-sm text-gray-700">Ile grafik, filmów i tekstów reklamowych trzeba przygotować i jak często je odświeżamy.</p>
+                </div>
+                <div className="bg-white rounded-lg p-8 shadow-md border-t-4 border-blue-600">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">Raportowanie</h3>
+                  <p className="text-sm text-gray-700">Jak często raportujemy wyniki i w jakim zakresie konsultujemy strategię.</p>
+                </div>
+                <div className="bg-white rounded-lg p-8 shadow-md border-t-4 border-blue-600">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">Budżet reklamowy</h3>
+                  <p className="text-sm text-gray-700">Płacisz go bezpośrednio Meta, zawsze osobno od naszego wynagrodzenia.</p>
+                </div>
+              </div>
 
-                <div className="bg-white rounded-lg p-8 shadow-md hover:shadow-lg transition border-t-4 border-green-600">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">GROWTH</h3>
-                  <div className="text-3xl font-bold text-green-600 mb-4">800 zł</div>
-                  <p className="text-sm text-gray-600 mb-6">na miesiąc</p>
-                  <ul className="space-y-2 text-sm text-gray-700 mb-8">
-                    <li>✓ 3 kampanie</li>
-                    <li>✓ Budżet do 5000 zł/mies</li>
-                    <li>✓ Raport tygodniowy</li>
-                    <li>✓ Telefon i email</li>
-                  </ul>
-                  <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition">
-                    Wybierz
-                  </a>
-                </div>
-
-                <div className="bg-white rounded-lg p-8 shadow-md hover:shadow-lg transition border-t-4 border-purple-600">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">PRO</h3>
-                  <div className="text-3xl font-bold text-purple-600 mb-4">1500 zł</div>
-                  <p className="text-sm text-gray-600 mb-6">na miesiąc</p>
-                  <ul className="space-y-2 text-sm text-gray-700 mb-8">
-                    <li>✓ Nieograniczone kampanie</li>
-                    <li>✓ Budżet do 15000 zł/mies</li>
-                    <li>✓ Raport co 3 dni</li>
-                    <li>✓ Dedykowany manager</li>
-                  </ul>
-                  <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full border-2 border-purple-600 text-purple-600 font-bold py-2 px-4 rounded-lg hover:bg-purple-50 transition">
-                    Wybierz
-                  </a>
-                </div>
-
-                <div className="bg-white rounded-lg p-8 shadow-md hover:shadow-lg transition border-t-4 border-red-600">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">ENTERPRISE</h3>
-                  <div className="text-3xl font-bold text-red-600 mb-4">Custom</div>
-                  <p className="text-sm text-gray-600 mb-6">na miesiąc</p>
-                  <ul className="space-y-2 text-sm text-gray-700 mb-8">
-                    <li>✓ Nieograniczone wszystko</li>
-                    <li>✓ Budżet 15000+ zł/mies</li>
-                    <li>✓ Raport codziennie</li>
-                    <li>✓ Account manager + analityk</li>
-                  </ul>
-                  <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full border-2 border-red-600 text-red-600 font-bold py-2 px-4 rounded-lg hover:bg-red-50 transition">
-                    Zapytaj ofertę
-                  </a>
-                </div>
+              <div className="text-center mt-10">
+                <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition">
+                  Zapytaj o wycenę
+                </a>
               </div>
             </FadeInView>
           </div>
@@ -361,7 +327,7 @@ export default function FacebookAdsBydgoszcz() {
                   <div className="text-2xl">🏢</div>
                   <div>
                     <h3 className="font-bold text-gray-900 mb-2">E-commerce</h3>
-                    <p className="text-gray-700">Zwiększamy sprzedaż online poprzez ukierunkowane reklamy produktów i ofert.</p>
+                    <p className="text-gray-700">Kampanie sprzedażowe i katalogowe dla produktów i ofert.</p>
                   </div>
                 </div>
 
@@ -369,7 +335,7 @@ export default function FacebookAdsBydgoszcz() {
                   <div className="text-2xl">💼</div>
                   <div>
                     <h3 className="font-bold text-gray-900 mb-2">Usługi biznesowe</h3>
-                    <p className="text-gray-700">Pozyskujemy wysokojakościowych leadów dla konsultantów i specjalistów.</p>
+                    <p className="text-gray-700">Kampanie leadowe dla konsultantów i specjalistów.</p>
                   </div>
                 </div>
 
@@ -393,7 +359,7 @@ export default function FacebookAdsBydgoszcz() {
                   <div className="text-2xl">🏠</div>
                   <div>
                     <h3 className="font-bold text-gray-900 mb-2">Nieruchomości</h3>
-                    <p className="text-gray-700">Znajdujemy kupujących i wynajmujących dla deweloperów i pośredników.</p>
+                    <p className="text-gray-700">Kampanie dla deweloperów i pośredników kierowane do kupujących i wynajmujących.</p>
                   </div>
                 </div>
 
@@ -401,7 +367,7 @@ export default function FacebookAdsBydgoszcz() {
                   <div className="text-2xl">🎓</div>
                   <div>
                     <h3 className="font-bold text-gray-900 mb-2">Edukacja</h3>
-                    <p className="text-gray-700">Rekrutujemy studentów do szkół, kursów i instytucji edukacyjnych.</p>
+                    <p className="text-gray-700">Kampanie rekrutacyjne dla szkół, kursów i instytucji edukacyjnych — prowadziliśmy m.in. kampanię Meta Ads dla Dawid EDU.</p>
                   </div>
                 </div>
 
@@ -409,7 +375,7 @@ export default function FacebookAdsBydgoszcz() {
                   <div className="text-2xl">💪</div>
                   <div>
                     <h3 className="font-bold text-gray-900 mb-2">Fitness i wellness</h3>
-                    <p className="text-gray-700">Pozyskujemy członków siłowni, klubów fitness i studiów jogi.</p>
+                    <p className="text-gray-700">Kampanie dla siłowni, klubów fitness i studiów jogi.</p>
                   </div>
                 </div>
 
@@ -441,9 +407,9 @@ export default function FacebookAdsBydgoszcz() {
                   </summary>
                   <div className="bg-gray-50 p-6 border-t border-gray-200">
                     <p className="text-gray-700">
-                      Oferujemy elastyczne pakiety od 400 zł do 1500+ zł miesięcznie.
-                      Cena zależy od liczby kampanii, budżetu na reklamy i poziomu wsparcia.
-                      Każdy pakiet zawiera optymalizację, raporty i dedykowaną obsługę.
+                      Wycenę przygotowujemy po rozmowie o zakresie. Zależy od liczby kampanii i grup odbiorców,
+                      liczby kreacji do przygotowania oraz częstotliwości raportowania.
+                      Budżet reklamowy płacony Meta jest zawsze osobno.
                     </p>
                   </div>
                 </details>
@@ -455,9 +421,9 @@ export default function FacebookAdsBydgoszcz() {
                   </summary>
                   <div className="bg-gray-50 p-6 border-t border-gray-200">
                     <p className="text-gray-700">
-                      Większość kampanii wykazuje pierwsze rezultaty w ciągu 48 godzin.
-                      Pełne rezultaty i optymalizacja widoczne są po 2-3 tygodniach działalności kampanii.
-                      Czas oczekiwania zależy od branży i budżetu.
+                      Pierwsze dane o wyświetleniach i kliknięciach pojawiają się zwykle krótko po starcie kampanii.
+                      Wnioski o skuteczności wymagają czasu na naukę algorytmu i testy kreacji.
+                      Nie obiecujemy efektów w sztywnym terminie — zależą od branży, oferty i budżetu.
                     </p>
                   </div>
                 </details>
@@ -470,7 +436,7 @@ export default function FacebookAdsBydgoszcz() {
                   <div className="bg-gray-50 p-6 border-t border-gray-200">
                     <p className="text-gray-700">
                       Absolutnie. Możesz wznowić, zawieszić lub zmodyfikować kampanię w dowolnym momencie.
-                      Nie ma kar za zmianę decyzji. Wszystkie dane kampanii będą zachowane.
+                      Dane kampanii pozostają na Twoim koncie reklamowym.
                     </p>
                   </div>
                 </details>
@@ -496,7 +462,7 @@ export default function FacebookAdsBydgoszcz() {
                   </summary>
                   <div className="bg-gray-50 p-6 border-t border-gray-200">
                     <p className="text-gray-700">
-                      Nie. Możesz zacząć od niewielkiego budżetu (nawet 500 zł/mies) i skalować w miarę wzrostu.
+                      Nie. Możesz zacząć od niewielkiego budżetu reklamowego (płaconego Meta osobno) i skalować w miarę wyników.
                       Testujemy wszystko na małej skali najpierw, aby znaleźć to, co działa.
                       Dopiero wtedy zwiększamy budżet na zwycięskie kampanie.
                     </p>
@@ -511,7 +477,7 @@ export default function FacebookAdsBydgoszcz() {
                   <div className="bg-gray-50 p-6 border-t border-gray-200">
                     <p className="text-gray-700">
                       Nie możemy zagwarantować konkretnych wyników, bo rynek się zmienia.
-                      Ale gwarantujemy, że będziemy optymalizować kampanię każdego dnia.
+                      Kampanie regularnie monitorujemy i optymalizujemy.
                       Jeśli kampania nie przynosi rezultatów, wspólnie szukamy przyczyn i dokonujemy zmian.
                     </p>
                   </div>
@@ -524,8 +490,8 @@ export default function FacebookAdsBydgoszcz() {
                   </summary>
                   <div className="bg-gray-50 p-6 border-t border-gray-200">
                     <p className="text-gray-700">
-                      Pracujemy bez długoterminowych umów. Możesz pracować z nami miesiąc po miesiącu.
-                      Chcemy, żebyś pracował z nami, ponieważ ceni sobie nasze usługi, nie dlatego, że musi.
+                      Okres współpracy i wypowiedzenia ustalamy w umowie.
+                      Kampanie reklamowe potrzebują czasu na testy, dlatego zwykle rekomendujemy kilka miesięcy współpracy.
                     </p>
                   </div>
                 </details>

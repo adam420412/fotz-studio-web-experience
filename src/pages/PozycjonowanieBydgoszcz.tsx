@@ -14,9 +14,6 @@ import {
   Building2,
   Globe,
   Target,
-  Clock,
-  Award,
-  Shield,
 } from "lucide-react";
 import {
   Accordion,
@@ -32,57 +29,46 @@ const faqItems = [
   {
     question: "Ile kosztuje pozycjonowanie w Bydgoszczy?",
     answer:
-      "Pozycjonowanie SEO w Bydgoszczy zaczyna się od 1 200 zł netto miesięcznie dla małych firm. Dla firm IT, BPO czy produkcji koszt wynosi 2 500–6 000 zł/mies., zależnie od konkurencji na frazy docelowe. Bydgoszcz to szybko rosnący hub technologiczny, stąd wyższa konkurencja w sektorze IT.",
+      "Nie podajemy stałych cen. Wycenę przygotowujemy po rozmowie o zakresie i audycie: liczbie fraz, konkurencji w branży, stanie technicznym strony, ilości treści do przygotowania i link buildingu. W branżach o dużej konkurencji, np. IT, zakres prac jest zwykle większy.",
   },
   {
     question: "Ile czasu trwa pozycjonowanie w Bydgoszczy?",
     answer:
-      "Bydgoszcz ma umiarkowaną konkurencję. Pierwsze efekty widoczne są po 2–3 miesiącach. Stabilne pozycje TOP 5 dla większości fraz branżowych osiągamy w 3–6 miesięcy. Dla firm IT i BPO czas może być dłuższy z uwagi na wyższą konkurencję, ale rezultaty są trwałe.",
+      "SEO to proces długoterminowy, a tempo zależy od konkurencji na frazy, stanu strony i historii domeny. Nie gwarantujemy konkretnej pozycji ani terminu — wyniki zależą też od algorytmów Google. W audycie pokazujemy, jakie działania mają największy sens na start.",
   },
   {
     question: "Czy pozycjonujecie firmy z sektora IT i BPO w Bydgoszczy?",
     answer:
-      "Tak — Bydgoszcz to rosnący hub IT (Google, Intel operations, IBM proximity). Obsługujemy firmy SaaS, BPO, software development i usługi rekrutacyjne. Znamy specyfikę fraz IT (DevOps, Full Stack, Python Developer) i wiemy, jak docierać do talentów online.",
+      "Tak — Bydgoszcz ma rozwinięty sektor IT i usług dla biznesu. Pozycjonujemy strony firm SaaS, BPO, software development i usług rekrutacyjnych, dobierając frazy branżowe (np. DevOps, Full Stack, Python Developer).",
   },
   {
     question: "Jakie branże pozycjonujemy w Bydgoszczy?",
     answer:
-      "Doświadczenie mamy w: IT i software, BPO i outsourcing, produkcji (chemii, food processing), logistyce, nieruchomościach, edukacji (UTP), handlu detalicznym, gastronomii i e-commerce. Bydgoszcz to miasto przemysłowe i usługowe jednocześnie.",
+      "Pozycjonujemy strony m.in. z branż: IT i software, BPO i outsourcing, produkcja, logistyka, nieruchomości, edukacja, handel detaliczny, gastronomia i e-commerce. Bydgoszcz to miasto przemysłowe i usługowe jednocześnie.",
   },
   {
-    question: "Jakie jest znaczenie UTP Bydgoszcz dla SEO w mieście?",
+    question: "Jakie znaczenie mają bydgoskie uczelnie dla SEO w mieście?",
     answer:
-      "UTP (Uniwersytet Technologiczno-Przyrodniczy) to 20 tys. studentów i ośrodek badawczy dla branży IT i inżynierii. To znaczy, że frazy związane z edukacją techniczną, kursami programowania i rekrutacją mają wysokie wyszukiwania w Bydgoszczy. SEO dla firm edukacyjnych to nasz standard.",
+      "Bydgoszcz to ośrodek akademicki z uczelniami technicznymi. Frazy związane z edukacją techniczną, kursami programowania i rekrutacją mogą być ważne dla firm edukacyjnych — ich realny potencjał sprawdzamy w analizie słów kluczowych.",
   },
   {
     question: "Czy oferujecie SEO dla e-commerce w Bydgoszczy?",
     answer:
-      "Tak — obsługujemy sklepy online z Bydgoszczy i całego Kujawsko-Pomorskiego. Specjalizujemy się w optymalizacji kategorii produktów, schematów, rich snippets i local SEO dla e-commerce. Dla sklepów wielokategoriowych rekomendujemy budżet min. 3 000 zł/mies.",
+      "Tak — obsługujemy sklepy online z Bydgoszczy i całego Kujawsko-Pomorskiego. Zajmujemy się optymalizacją kategorii produktów, danych strukturalnych, rich snippets i local SEO dla e-commerce. Zakres i wycenę dla sklepu ustalamy po audycie.",
   },
   {
-    question: "Ile wynosi wzrost ruchu dla firm w Bydgoszczy?",
+    question: "Jakiego wzrostu ruchu mogę się spodziewać?",
     answer:
-      "Średni wzrost ruchu organicznego to +270% w ciągu 6 miesięcy. Dla firm IT +300%, dla e-commerce +250%, dla usług +200%. Oczywiście to zależy od konkurencji na frazy docelowe i szybkości implementacji zmian.",
+      "Nie obiecujemy konkretnego wzrostu ruchu. Wynik zależy od konkurencji na frazy docelowe, stanu strony i szybkości wdrażania zmian. Po audycie wskazujemy, gdzie widzimy potencjał, i raportujemy postępy co 2 tygodnie.",
   },
   {
     question: "Jakie jest znaczenie Bydgoskiego Parku Przemysłowego dla SEO?",
     answer:
-      "Bydgoski Park Przemysłowy to hub produkcji i logistyki. B2B firmy z tego parku szukają partnerów i dostawców online. SEO dla firm produkcyjnych i logistycznych wymaga fraz long-tail (np. \"producent części do samochodów Bydgoszcz\") — to nasza specjalność.",
+      "Bydgoski Park Przemysłowy to hub produkcji i logistyki. B2B firmy z tego parku szukają partnerów i dostawców online. SEO dla firm produkcyjnych i logistycznych wymaga fraz long-tail (np. \"producent części do samochodów Bydgoszcz\") — od takich fraz zaczynamy przy firmach B2B.",
   },
 ];
 
 const PozycjonowanieBydgoszcz = () => {
-  const results = [
-    {
-      metric: "+270%",
-      label: "Wzrost ruchu organicznego",
-      context: "firma IT Bydgoszcz",
-    },
-    { metric: "TOP 3", label: "Pozycja w Google", context: "frazy usługowe Bydgoszcz" },
-    { metric: "3 mies.", label: "Czas do pierwszej strony", context: "branża produkcji" },
-    { metric: "4,8/5", label: "Ocena klientów", context: "13 opinii" },
-  ];
-
   const districts = [
     "Śródmieście",
     "Fordon",
@@ -99,7 +85,7 @@ const PozycjonowanieBydgoszcz = () => {
     { name: "BPO i outsourcing", icon: Building2 },
     { name: "Produkcja", icon: Target },
     { name: "Logistyka", icon: TrendingUp },
-    { name: "Edukacja (UTP)", icon: Star },
+    { name: "Edukacja", icon: Star },
     { name: "E-commerce", icon: BarChart2 },
   ];
 
@@ -161,7 +147,7 @@ const PozycjonowanieBydgoszcz = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto"
             >
-              Pomagamy firmom z Bydgoszczy zdobyć pierwszą stronę Google. Specjalizujemy się w SEO dla IT, BPO, produkcji i e-commerce. Audyt SEO, optymalizacja i link building dostosowany do szybko rosnącego rynku Bydgoszczy.
+              Pomagamy firmom z Bydgoszczy budować widoczność w Google. SEO dla IT, BPO, produkcji i e-commerce: audyt, optymalizacja i link building. Pracujemy z Poznania, firmy z Bydgoszczy obsługujemy zdalnie.
             </motion.p>
 
             <motion.div
@@ -201,23 +187,6 @@ const PozycjonowanieBydgoszcz = () => {
         </div>
       </section>
 
-      {/* Results */}
-      <section className="py-16 bg-muted/30 border-y border-border/40">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {results.map((r, i) => (
-              <FadeInView key={i} delay={i * 0.1} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-primary mb-1">
-                  {r.metric}
-                </div>
-                <div className="text-sm font-medium text-foreground">{r.label}</div>
-                <div className="text-xs text-muted-foreground mt-1">{r.context}</div>
-              </FadeInView>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Bydgoszcz specifics */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 max-w-5xl">
@@ -231,22 +200,19 @@ const PozycjonowanieBydgoszcz = () => {
             <FadeInView>
               <div className="space-y-6 text-muted-foreground">
                 <p>
-                  Bydgoszcz to <strong className="text-foreground">ok. 360 tys. mieszkańców</strong> i szóste
-                  co do wielkości miasto w Polsce. W ostatniej dekadzie przekształciła się
-                  w <strong className="text-foreground">hub technologiczny i BPO</strong> — tutaj
-                  działają operacje Google, Intel, IBM i dziesiątki mniejszych firm SaaS.
+                  Bydgoszcz to jedno z większych miast w Polsce, z rozwiniętym
+                  sektorem <strong className="text-foreground">IT i usług dla biznesu (BPO)</strong>.
                 </p>
                 <p>
-                  Uniwersytet Technologiczno-Przyrodniczy to <strong className="text-foreground">20 tys. studentów</strong> i
-                  ośrodek badawczy dla inżynierii i IT. Dodatkowo Bydgoski Park Przemysłowy to
+                  Miasto jest też <strong className="text-foreground">ośrodkiem akademickim</strong> z uczelniami
+                  technicznymi. Dodatkowo Bydgoski Park Przemysłowy to
                   <strong className="text-foreground"> mostek do produkcji i logistyki</strong> — firmy B2B szukają
                   partnerów online.
                 </p>
                 <p>
-                  Konkurencja SEO rośnie, ale <strong className="text-foreground">rynek niż jest duży</strong>.
-                  Dla firm IT średni CPC (cost-per-click) w Google Ads wynosi 5–15 PLN — to oznacza, że
-                  SEO ma ogromny ROI. Firmy z Bydgoszczy, które wdrażają SEO wcześnie, zdobywają
-                  pierwsze mowa na rynku.
+                  Konkurencja SEO rośnie, ale <strong className="text-foreground">rynek jest duży</strong>.
+                  W branżach z drogimi kliknięciami w Google Ads ruch organiczny bywa ważnym
+                  uzupełnieniem kampanii płatnych.
                 </p>
               </div>
             </FadeInView>
@@ -283,8 +249,7 @@ const PozycjonowanieBydgoszcz = () => {
               Branże, które pozycjonujemy w Bydgoszczy
             </h2>
             <p className="text-muted-foreground max-w-xl mx-auto">
-              Od software'u po produkcję — mamy doświadczenie
-              w sektorach typowych dla Bydgoszczy.
+              Od software'u po produkcję — sektory typowe dla Bydgoszczy.
             </p>
           </FadeInView>
 
@@ -322,7 +287,7 @@ const PozycjonowanieBydgoszcz = () => {
               {
                 step: "02",
                 title: "Strategia dla Bydgoszczy",
-                desc: "Dobieramy słowa kluczowe dla B2B i B2C. Plany content uwzględniają lokalne trendy (IT, BPO, produkcja) i szybki wzrost rynku w Bydgoszczy.",
+                desc: "Dobieramy słowa kluczowe dla B2B i B2C. Plany content uwzględniają lokalne branże (IT, BPO, produkcja).",
               },
               {
                 step: "03",
@@ -358,11 +323,11 @@ const PozycjonowanieBydgoszcz = () => {
         <div className="container mx-auto px-4 text-center">
           <FadeInView>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Gotowy na pierwszą stronę Google w Bydgoszczy?
+              Gotowy na lepszą widoczność w Google w Bydgoszczy?
             </h2>
             <p className="text-primary-foreground/80 text-lg mb-8 max-w-xl mx-auto">
               Zapytaj o audyt SEO. Zakres i wycenę ustalimy na bezpłatnej konsultacji, a w audycie przeanalizujemy Twoje frazy dla Bydgoszczy
-              i pokażemy, co powstrzymuje Cię przed TOP 10.
+              i pokażemy, co ogranicza widoczność Twojej strony.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" asChild className="text-base px-8">

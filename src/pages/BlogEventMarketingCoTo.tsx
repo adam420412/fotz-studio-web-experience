@@ -143,13 +143,13 @@ export default function BlogEventMarketingCoTo() {
             </p>
             <p className="text-lg text-slate-700 mb-6">
               Badanie Bizzabo pokazuje, że 95% marketerów uważa eventy na żywo za kluczowy kanał w osiąganiu
-              celów biznesowych, a 80% twierdzi, że przyczyniają się one do pozyskiwania nowych klientów.
+              celów biznesowych. Dla wielu firm wydarzenia są też ważnym źródłem nowych klientów.
             </p>
             <div className="grid md:grid-cols-3 gap-4">
               {[
                 { stat: "95%", opis: "marketerów uważa eventy za kluczowy kanał (Bizzabo)" },
-                { stat: "3×", opis: "wyższy engagement vs. inne kanały marketingowe" },
-                { stat: "74%", opis: "uczestników twierdzi, że event wzmocnił ich relację z marką" },
+                { stat: "Na żywo", opis: "bezpośredni kontakt, którego trudno odtworzyć w kanałach cyfrowych" },
+                { stat: "Relacja", opis: "dobrze zorganizowany event wzmacnia relację uczestników z marką" },
               ].map((s, i) => (
                 <div key={i} className="bg-purple-50 rounded-xl p-5 text-center">
                   <p className="text-3xl font-bold text-purple-600 mb-2">{s.stat}</p>

@@ -219,7 +219,7 @@ const BlogCopywritingDlaSEO = () => {
                 className="prose prose-lg prose-invert max-w-none"
               >
                 <p className="lead text-xl text-muted-foreground mb-8">
-                  Copywriting SEO to sztuka pisania tekstów, które są jednocześnie optymalizowane dla algorytmów Google i angażujące dla użytkowników. To nie jest tylko wmówienie słów kluczowych w artykuł — to zaplanowana strategia, która łączy copywriting (przekonywanie) z SEO (wyszukiwarkami). W tym poradniku dowiesz się, czym SEO copywriting różni się od zwykłego pisania, jakie elementy są krytyczne dla rankingu, i jak budować artykuły, które zarówno zajmują miejsca 1-3 w Google, jak i konwertują czytelników na klientów.
+                  Copywriting SEO to sztuka pisania tekstów, które są jednocześnie optymalizowane dla algorytmów Google i angażujące dla użytkowników. To nie jest tylko wmówienie słów kluczowych w artykuł — to zaplanowana strategia, która łączy copywriting (przekonywanie) z SEO (wyszukiwarkami). W tym poradniku dowiesz się, czym SEO copywriting różni się od zwykłego pisania, jakie elementy są krytyczne dla rankingu, i jak budować artykuły, które mają szansę wysoko rankować w Google i jednocześnie konwertują czytelników na klientów.
                 </p>
 
                 <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
@@ -469,7 +469,7 @@ const BlogCopywritingDlaSEO = () => {
                   Potrzebujesz SEO copywritingu dla Twojej strony?
                 </h2>
                 <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                  Professionalne teksty zoptymalizowane pod Google nie tylko zajmują topowe pozycje, ale także konwertują. Nasze copywriterki piszą SEO-friendly artykuły, które rankkingują i sprzedają.
+                  Profesjonalne teksty zoptymalizowane pod Google mają pracować na widoczność i sprzedaż. Piszemy SEO-friendly artykuły i teksty na strony — zakres i wycenę ustalamy po rozmowie.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button asChild size="lg" className="bg-yellow-400 text-gray-900 hover:bg-yellow-300">

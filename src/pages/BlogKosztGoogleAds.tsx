@@ -9,7 +9,7 @@ import { FAQSchema } from "@/components/seo/StructuredData";
 const faqItems = [
   {
     question: "Ile kosztuje kliknięcie w Google Ads?",
-    answer: "Średni koszt kliknięcia (CPC) w Google Ads w Polsce wynosi od 0,50 zł do 5 zł, zależy od branży. Reklama dla usług finansowych może kosztować nawet 10-15 zł za kliknięcie, podczas gdy e-commerce oscyluje wokół 1-3 zł. Wszystko zależy od konkurencji na danym słowie kluczowym."
+    answer: "Przykładowe widełki rynkowe CPC w Google Ads w Polsce to ok. 0,50–5 zł, zależnie od branży. Reklama dla usług finansowych może kosztować nawet 10-15 zł za kliknięcie, podczas gdy e-commerce oscyluje wokół 1-3 zł. Wszystko zależy od konkurencji na danym słowie kluczowym."
   },
   {
     question: "Jaki jest minimalny budżet na Google Ads?",
@@ -17,7 +17,7 @@ const faqItems = [
   },
   {
     question: "Ile kosztuje agencja zarządzająca Google Ads?",
-    answer: "Agencje zarządzające Google Ads pobierają prowizję 15-30% od wydanego budżetu lub stałą opłatę 2000-5000 zł miesięcznie. Niektóre agencje pracują na Model sprzedażowy, biorąc procent od przychodu wygenerowanego z kampanii."
+    answer: "Przykładowe widełki rynkowe: agencje zarządzające Google Ads często pobierają prowizję ok. 15-30% od wydanego budżetu lub stałą opłatę rzędu 2000-5000 zł miesięcznie — konkretna kwota zależy od zakresu i skali kampanii. Niektóre agencje pracują na modelu sprzedażowym, biorąc procent od przychodu wygenerowanego z kampanii."
   },
   {
     question: "Czy Google Ads opłaca się dla małych firm?",
@@ -25,11 +25,11 @@ const faqItems = [
   },
   {
     question: "Co to jest Quality Score i jak wpływa na cenę?",
-    answer: "Quality Score (1-10) to ocena Google jakości Twojej reklamy i strony docelowej. Wyższy Quality Score (8-10) obniża koszt kliknięcia nawet o 30-50%. Niska ocena (poniżej 5) może podnieść koszt nawet 2-3 razy."
+    answer: "Quality Score (1-10) to ocena Google jakości Twojej reklamy i strony docelowej. Wyższy Quality Score (8-10) wyraźnie obniża koszt kliknięcia, a niska ocena (poniżej 5) może go znacząco podnieść."
   },
   {
     question: "Kiedy ROI z Google Ads jest pozytywny?",
-    answer: "ROI jest pozytywny, gdy przychód z konwersji przekracza koszt kampanii. Zazwyczaj dzieje się to po 2-3 miesiącach optymalizacji. Dla e-commerce średni ROAS (zwrot z wydanego budżetu) wynosi 2-4 zł zysku na 1 zł wydanego. Usługi lokalne mogą osiągnąć 5-8 zł zysku."
+    answer: "ROI jest pozytywny, gdy przychód z konwersji przekracza koszt kampanii. Zazwyczaj dzieje się to po 2-3 miesiącach optymalizacji. Opłacalny poziom ROAS (przychód na 1 zł budżetu) zależy od marży w Twojej branży — policz go przed startem kampanii."
   }
 ];
 
@@ -211,7 +211,7 @@ const BlogKosztGoogleAds = () => {
                 </h2>
 
                 <p className="text-muted-foreground mb-6">
-                  Średni koszt kliknięcia (CPC) w Polsce wynosi między 0,50 zł a 5 zł. Jednak ta liczba jest bardzo ogólna — rzeczywisty koszt zależy od branży, konkurencji i jakości Twojej kampanii. Oto rzeczywiste przedziały cenowe dla poszczególnych sektorów:
+                  Orientacyjnie koszt kliknięcia (CPC) w Polsce mieści się zwykle między 0,50 zł a 5 zł. Jednak ta liczba jest bardzo ogólna — rzeczywisty koszt zależy od branży, konkurencji i jakości Twojej kampanii. Poniżej przykładowe widełki rynkowe dla poszczególnych sektorów:
                 </p>
 
                 <div className="overflow-x-auto mb-8">
@@ -269,7 +269,7 @@ const BlogKosztGoogleAds = () => {
                 </div>
 
                 <p className="text-muted-foreground mb-6">
-                  Te wartości są średnimi z 2025-2026 roku dla kampanii Search Ads. Ceny mogą się różnić w zależności od sezonu — przed świętami Bożego Narodzenia i w okresach promocyjnych CPC rośnie.
+                  Te wartości to orientacyjne widełki dla kampanii Search Ads, a nie gwarantowane stawki — aktualne szacunki dla Twoich słów kluczowych sprawdzisz w Planerze słów kluczowych Google. Ceny mogą się różnić w zależności od sezonu — przed świętami Bożego Narodzenia i w okresach promocyjnych CPC rośnie.
                 </p>
 
                 <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
@@ -280,7 +280,7 @@ const BlogKosztGoogleAds = () => {
                   1. Quality Score — Ocena Jakości Reklamy
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  <strong>Quality Score (1-10)</strong> to ocena, którą Google przydziela Twojej kampanii na podstawie: CTR (Click-Through Rate), jakości strony docelowej, odpowiedniości słów kluczowych do reklamy. Wyższy Quality Score oznacza niższy koszt kliknięcia. Reklama z Quality Score 8-10 może kosztować 30-50% mniej niż reklama z oceną 4-5. To jest kluczowy czynnik, który możesz kontrolować bezpośrednio.
+                  <strong>Quality Score (1-10)</strong> to ocena, którą Google przydziela Twojej kampanii na podstawie: CTR (Click-Through Rate), jakości strony docelowej, odpowiedniości słów kluczowych do reklamy. Wyższy Quality Score oznacza niższy koszt kliknięcia. Reklama z Quality Score 8-10 może kosztować wyraźnie mniej niż reklama z oceną 4-5. To jest kluczowy czynnik, który możesz kontrolować bezpośrednio.
                 </p>
 
                 <h3 className="text-xl font-heading font-semibold mt-8 mb-4">
@@ -294,7 +294,7 @@ const BlogKosztGoogleAds = () => {
                   3. Branża i Sektor Biznesu
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  Jak widać z tabelki powyżej, branża finansowa i nieruchomości mają zdecydowanie wyższe CPC niż usługi lokalne. Dzieje się tak, ponieważ wartość konwersji jest znacznie wyższa. Klient zainteresowany pożyczką bankową jest wart dla banku 50-100 zł, a klient salonu spa — 5-20 zł. Konkurencja i marża zysku w branży bezpośrednio wpływają na cenę.
+                  Jak widać z tabelki powyżej, branża finansowa i nieruchomości mają zdecydowanie wyższe CPC niż usługi lokalne. Dzieje się tak, ponieważ wartość konwersji jest znacznie wyższa. Klient zainteresowany pożyczką bankową jest dla banku wart nieporównywalnie więcej niż pojedyncza wizyta klienta w salonie spa. Konkurencja i marża zysku w branży bezpośrednio wpływają na cenę.
                 </p>
 
                 <h3 className="text-xl font-heading font-semibold mt-8 mb-4">
@@ -316,7 +316,7 @@ const BlogKosztGoogleAds = () => {
                 </h2>
 
                 <p className="text-muted-foreground mb-6">
-                  Google nie narzuca minimum — teoretycznie możesz prowadzić kampanię za 10 zł dziennie. Jednak praktycznie zalecamy minimum 500-1000 zł miesięcznie, aby uzyskać wystarczające dane do podejmowania decyzji. Oto dlaczego:
+                  Google nie narzuca minimum — teoretycznie możesz prowadzić kampanię za 10 zł dziennie. Jednak praktycznie zalecamy minimum 500-1000 zł miesięcznie budżetu reklamowego, aby uzyskać wystarczające dane do podejmowania decyzji. Poniższa tabela to uproszczony przykład przy założonym CPC ok. 1 zł:
                 </p>
 
                 <div className="overflow-x-auto mb-8">
@@ -365,28 +365,28 @@ const BlogKosztGoogleAds = () => {
                   Search Ads — Reklamy w Wyszukiwarce
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  <strong>Search Ads</strong> to reklamy pojawiające się nad wynikami wyszukiwania Google. Model rozliczenia: CPC. Koszty: najwyższe spośród wszystkich typów kampanii (średnia CPC 1-5 zł), ale też najwyższa jakość ruchu — osoba szuka dokładnie tego, co oferujesz. Efektywność: bardzo dobra, jeśli masz dobry Quality Score i landing page. Idealnie sprawdza się dla e-commerce, usług B2B i kampanii generujących leady.
+                  <strong>Search Ads</strong> to reklamy pojawiające się nad wynikami wyszukiwania Google. Model rozliczenia: CPC. Koszty: zwykle najwyższe spośród wszystkich typów kampanii (orientacyjnie CPC 1-5 zł), ale też najwyższa jakość ruchu — osoba szuka dokładnie tego, co oferujesz. Efektywność: bardzo dobra, jeśli masz dobry Quality Score i landing page. Idealnie sprawdza się dla e-commerce, usług B2B i kampanii generujących leady.
                 </p>
 
                 <h3 className="text-xl font-heading font-semibold mt-8 mb-4">
                   Display Ads — Reklamy Graficzne
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  <strong>Display Ads</strong> to reklamy graficzne wyświetlane na stronach internetowych w Google Display Network. Model rozliczenia: CPC lub CPM. Koszty: niższe niż Search Ads (CPM 1-5 zł za 1000 wyświetleń), ale niska konwersja. Efektywność: dobra dla budowania świadomości marki (brand awareness), rzadziej dla sprzedaży bezpośredniej. Idealnie dla produktów zmotoryzowanych, turystyki, mody.
+                  <strong>Display Ads</strong> to reklamy graficzne wyświetlane na stronach internetowych w Google Display Network. Model rozliczenia: CPC lub CPM. Koszty: zwykle niższe niż Search Ads (orientacyjnie CPM 1-5 zł za 1000 wyświetleń), ale niższa konwersja. Efektywność: dobra dla budowania świadomości marki (brand awareness), rzadziej dla sprzedaży bezpośredniej. Idealnie dla produktów zmotoryzowanych, turystyki, mody.
                 </p>
 
                 <h3 className="text-xl font-heading font-semibold mt-8 mb-4">
                   Shopping Ads — Reklamy Produktów
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  <strong>Shopping Ads</strong> pokazują produkty bezpośrednio w wynikach wyszukiwania z ceną i zdjęciem. Model rozliczenia: CPC. Koszty: średnie (CPC 1-3 zł dla e-commerce), ale bardzo wysoka konwersja. Efektywność: najlepsza dla sklepów e-commerce. Wymaga powiązania konta Google Ads z Google Merchant Center. Absolutnie polecany dla sprzedaży online.
+                  <strong>Shopping Ads</strong> pokazują produkty bezpośrednio w wynikach wyszukiwania z ceną i zdjęciem. Model rozliczenia: CPC. Koszty: średnie (orientacyjnie CPC 1-3 zł dla e-commerce), a konwersja często wysoka. Efektywność: najlepsza dla sklepów e-commerce. Wymaga powiązania konta Google Ads z Google Merchant Center. Absolutnie polecany dla sprzedaży online.
                 </p>
 
                 <h3 className="text-xl font-heading font-semibold mt-8 mb-4">
                   YouTube Ads — Reklamy Video
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  <strong>YouTube Ads</strong> to reklamy video wyświetlane przed, w trakcie lub po filmach. Model rozliczenia: CPV (Cost Per View) — płacisz za oglądnięcie minimum 30 sekund. Koszty: niskie (średnia CPV 0,10-0,50 zł), ale niska konwersja. Efektywność: doskonała dla budowania brandu (brand awareness), gorsza dla sprzedaży bezpośredniej. Idealnie dla kampanii edukacyjnych, produktów niszowych, SaaS.
+                  <strong>YouTube Ads</strong> to reklamy video wyświetlane przed, w trakcie lub po filmach. Model rozliczenia: CPV (Cost Per View) — płacisz za oglądnięcie minimum 30 sekund. Koszty: niskie (orientacyjnie CPV 0,10-0,50 zł), ale niższa konwersja. Efektywność: doskonała dla budowania brandu (brand awareness), gorsza dla sprzedaży bezpośredniej. Idealnie dla kampanii edukacyjnych, produktów niszowych, SaaS.
                 </p>
 
                 <h3 className="text-xl font-heading font-semibold mt-8 mb-4">
@@ -401,7 +401,7 @@ const BlogKosztGoogleAds = () => {
                 </h2>
 
                 <p className="text-muted-foreground mb-6">
-                  Jeśli nie chcesz samodzielnie zarządzać Google Ads, możesz zatrudnić agencję. Koszty obsługi Google Ads przez agencję zmieniają się znacznie i zależą od jej wielkości i zakresu usług.
+                  Jeśli nie chcesz samodzielnie zarządzać Google Ads, możesz zatrudnić agencję. Koszty obsługi Google Ads przez agencję zmieniają się znacznie i zależą od jej wielkości i zakresu usług. Kwoty w tabeli to przykładowe widełki rynkowe, a nie cennik FOTZ Studio.
                 </p>
 
                 <h3 className="text-xl font-heading font-semibold mt-8 mb-4">
@@ -460,7 +460,7 @@ const BlogKosztGoogleAds = () => {
                 </ul>
 
                 <p className="text-muted-foreground mb-6">
-                  Agencja średniej wielkości zazwyczaj pracuje z budżetem minimum 2000 zł miesięcznie od Google Ads. Poniżej tego, opłata za obsługę zje całą rentowność kampanii. Sprawdź nasze <Link to="/performance-marketing/google-ads" className="text-primary hover:underline">usługi Google Ads</Link> dla pełnej informacji o naszych cenach i zakrese.
+                  Wiele agencji ustala minimalny budżet reklamowy, bo przy bardzo małym budżecie opłata za obsługę może zjeść całą rentowność kampanii. Sprawdź nasze <Link to="/performance-marketing/google-ads" className="text-primary hover:underline">usługi Google Ads</Link>, aby poznać zakres współpracy — wycenę przygotowujemy po rozmowie o celach i budżecie.
                 </p>
 
                 <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
@@ -484,21 +484,21 @@ const BlogKosztGoogleAds = () => {
                   <strong>ROAS = Przychód ze sprzedaży / Koszt kampanii</strong>
                 </p>
                 <p className="text-muted-foreground mb-6">
-                  Dla e-commerce ROAS jest kluczową metryką. ROAS 2:1 oznacza, że na każde 2 zł przychodu przypadł 1 zł kosztów — to marża 50%. ROAS 3:1 to doskonały wynik (marża 66%), ROAS 4:1+ to wyjątkowy wynik wymagający wysoce zoptymalizowanej kampanii. Benchmark: dla e-commerce średnia to ROAS 2-3:1.
+                  Dla e-commerce ROAS jest kluczową metryką. ROAS 2:1 oznacza, że na każde 2 zł przychodu przypadł 1 zł kosztów reklamy — reklama pochłania więc połowę przychodu. Przy ROAS 3:1 to już jedna trzecia, przy 4:1 — jedna czwarta. Jaki ROAS jest dla Ciebie opłacalny, zależy od marży na produktach, dlatego policz próg rentowności przed startem kampanii.
                 </p>
 
                 <h3 className="text-xl font-heading font-semibold mt-8 mb-4">
                   Ścieżka do Osiągnięcia Pozytywnego ROI
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  Osiągnięcie pozytywnego ROI zajmuje czas. Oto typowa ścieżka:
+                  Osiągnięcie pozytywnego ROI zajmuje czas. Oto przykładowa ścieżka (tempo zależy od branży, budżetu i jakości strony):
                 </p>
                 <ul className="list-disc list-inside text-muted-foreground mb-6 space-y-2">
                   <li><strong>Miesiące 1-2:</strong> Testowanie, Data Collection, Negative ROI (straty na setup i testach)</li>
                   <li><strong>Miesiące 2-3:</strong> Optymalizacja, polepszenie Quality Score, zbieranie danych konwersji</li>
-                  <li><strong>Miesiące 3-4:</strong> Pozytywny ROI, ROAS 1.5-2:1</li>
-                  <li><strong>Miesiące 4-6:</strong> Skalowanie budżetu, ROAS 2-3:1</li>
-                  <li><strong>Po 6 miesiącach:</strong> Stabilna kampania, ROAS 3-5:1</li>
+                  <li><strong>Miesiące 3-4:</strong> Pierwsze okresy z dodatnim ROI w dobrze prowadzonych kampaniach</li>
+                  <li><strong>Miesiące 4-6:</strong> Skalowanie budżetu na działające kampanie i słowa kluczowe</li>
+                  <li><strong>Po 6 miesiącach:</strong> Stabilna kampania i dalsza optymalizacja</li>
                 </ul>
 
                 <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
@@ -543,7 +543,7 @@ const BlogKosztGoogleAds = () => {
                 <div className="space-y-6 mb-12">
                   <div className="p-6 bg-card rounded-xl border border-border/50">
                     <h3 className="text-lg font-semibold mb-2">Ile kosztuje kliknięcie w Google Ads?</h3>
-                    <p className="text-muted-foreground">Średni koszt kliknięcia (CPC) w Google Ads w Polsce wynosi od 0,50 zł do 5 zł, ale może sięgać nawet 10-15 zł dla konkurencyjnych branż jak finanse czy nieruchomości. Dla usług lokalnych oscyluje wokół 0,30-1,50 zł.</p>
+                    <p className="text-muted-foreground">Przykładowe widełki rynkowe CPC w Google Ads w Polsce to ok. 0,50–5 zł, ale stawki mogą sięgać nawet 10-15 zł dla konkurencyjnych branż jak finanse czy nieruchomości. Dla usług lokalnych oscyluje wokół 0,30-1,50 zł.</p>
                   </div>
                   <div className="p-6 bg-card rounded-xl border border-border/50">
                     <h3 className="text-lg font-semibold mb-2">Jaki jest minimalny budżet na Google Ads?</h3>
@@ -551,7 +551,7 @@ const BlogKosztGoogleAds = () => {
                   </div>
                   <div className="p-6 bg-card rounded-xl border border-border/50">
                     <h3 className="text-lg font-semibold mb-2">Ile kosztuje agencja Google Ads?</h3>
-                    <p className="text-muted-foreground">Agencje pobierają 15-30% od wydanego budżetu lub stałą opłatę 2000-5000 zł miesięcznie. Niektóre pracują na modelu wyników — procent od przychodu wygenerowanego z kampanii.</p>
+                    <p className="text-muted-foreground">Przykładowe widełki rynkowe: agencje często pobierają ok. 15-30% od wydanego budżetu lub stałą opłatę rzędu 2000-5000 zł miesięcznie — zależnie od zakresu. Niektóre pracują na modelu wyników — procent od przychodu wygenerowanego z kampanii.</p>
                   </div>
                   <div className="p-6 bg-card rounded-xl border border-border/50">
                     <h3 className="text-lg font-semibold mb-2">Czy Google Ads opłaca się dla małych firm?</h3>
@@ -559,7 +559,7 @@ const BlogKosztGoogleAds = () => {
                   </div>
                   <div className="p-6 bg-card rounded-xl border border-border/50">
                     <h3 className="text-lg font-semibold mb-2">Co to jest Quality Score i jak wpływa na cenę?</h3>
-                    <p className="text-muted-foreground">Quality Score (1-10) to ocena Google jakości Twojej reklamy i strony docelowej. Wyższy Quality Score (8-10) obniża CPC nawet o 30-50%. Niska ocena (poniżej 5) może podnieść koszt 2-3 razy.</p>
+                    <p className="text-muted-foreground">Quality Score (1-10) to ocena Google jakości Twojej reklamy i strony docelowej. Wyższy Quality Score (8-10) wyraźnie obniża CPC, a niska ocena (poniżej 5) może go znacząco podnieść.</p>
                   </div>
                   <div className="p-6 bg-card rounded-xl border border-border/50">
                     <h3 className="text-lg font-semibold mb-2">Kiedy Google Ads się opłaca?</h3>
@@ -579,7 +579,7 @@ const BlogKosztGoogleAds = () => {
                   Chcesz uruchomić rentowną kampanię Google Ads?
                 </h2>
                 <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                  Zespół FOTZ specjalizuje się w kampaniach Google Ads dla firm z całej Polski. Wycena, strategia i zarządzanie — wszystko w jednym miejscu.
+                  Zespół FOTZ prowadzi kampanie Google Ads — z Poznania, dla firm z całej Polski (zdalnie). Strategia, wdrożenie i zarządzanie w jednym miejscu, a wycena po rozmowie o celach.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button asChild size="lg" className="bg-gradient-to-r from-[#75143F] to-[#0F3053] hover:opacity-90">
@@ -631,39 +631,39 @@ const BlogKosztGoogleAds = () => {
                   Koszty Google Ads w 2026 roku — czy są wyższe niż rok temu?
                 </h2>
                 <p className="text-muted-foreground mb-6">
-                  Tak, koszty Google Ads rosną rok do roku. W 2025 CPC wzrosły średnio o 10-15% w stosunku do 2024 roku. Przyczyny: wzrost konkurencji, inflacja, większa wartość ruchu mobilnego, wydłużenie się ścieżki konwersji. Na szczęście, możliwe jest utrzymanie lub zmniejszenie kosztów przez lepszą optymalizację Quality Score i strategie bid.
+                  W wielu branżach koszty Google Ads z roku na rok rosną. Przyczyny: wzrost konkurencji, inflacja, większa wartość ruchu mobilnego, wydłużenie się ścieżki konwersji. Na szczęście, możliwe jest utrzymanie lub zmniejszenie kosztów przez lepszą optymalizację Quality Score i strategie bid.
                 </p>
 
                 <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4 mt-8">
-                  Google Ads dla różnych typów biznesu — realne przykłady kosztów
+                  Google Ads dla różnych typów biznesu — przykładowe wyliczenia kosztów
                 </h2>
 
                 <h3 className="text-xl font-heading font-semibold mt-6 mb-4">
                   E-commerce — Sklep Online
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  Budżet: 2000 zł/miesiąc | CPC: 1,50 zł | Szacunkowe kliknięcia: 1333 | Średni ROAS: 2.5:1 | Przychód: 5000 zł. Dla sklepów internetowych Google Ads to najlepszy kanał. Shopping Ads pokazuje produkt bezpośrednio w wynikach wyszukiwania, co zwiększa konwersję. Wskazówka: Zintegruj Google Merchant Center, aby maksymalizować widoczność produktów.
+                  Przykład z założeniami (liczby ilustracyjne): budżet 2000 zł/miesiąc | CPC 1,50 zł | ok. 1333 kliknięć | założony ROAS 2.5:1 | przychód 5000 zł. Dla wielu sklepów internetowych Google Ads to jeden z najważniejszych kanałów. Shopping Ads pokazuje produkt bezpośrednio w wynikach wyszukiwania, co zwiększa konwersję. Wskazówka: Zintegruj Google Merchant Center, aby maksymalizować widoczność produktów.
                 </p>
 
                 <h3 className="text-xl font-heading font-semibold mt-6 mb-4">
                   Usługi Lokalne — Fryzjer, Salon Spa
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  Budżet: 500 zł/miesiąc | CPC: 0,70 zł | Szacunkowe kliknięcia: 714 | Średni ROAS: 3-4:1 | Przychód: 1500-2000 zł. Dla usług lokalnych Google Ads to okazja do bezpośredniego pozyskania klientów. Osoba szukająca "fryzjer Poznań" lub "salon spa Warszawa" jest gotowa do zarezerwowania wizity. Wskazówka: Włącz Local Services Ads (LSA), jeśli kwalifikujesz się.
+                  Przykład z założeniami (liczby ilustracyjne): budżet 500 zł/miesiąc | CPC 0,70 zł | ok. 714 kliknięć | założony ROAS 3-4:1 | przychód 1500-2000 zł. Dla usług lokalnych Google Ads to okazja do bezpośredniego pozyskania klientów. Osoba szukająca "fryzjer Poznań" lub "salon spa Warszawa" jest gotowa do zarezerwowania wizity. Wskazówka: Włącz Local Services Ads (LSA), jeśli kwalifikujesz się.
                 </p>
 
                 <h3 className="text-xl font-heading font-semibold mt-6 mb-4">
                   Doradztwo Biznesowe i B2B
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  Budżet: 3000 zł/miesiąc | CPC: 5 zł | Szacunkowe kliknięcia: 600 | Średni ROAS: 2-3:1 | Przychód: 6000-9000 zł. W B2B koszty są wyższe (CPC 3-10 zł), ale wartość konwersji jest gigantyczna. Jeden kontrakt może być warty 50 000 zł lub więcej. Wskazówka: Używaj Long-Tail Keywords (np. "konsulting transformacja cyfrowa") zamiast Generic Keywords.
+                  Przykład z założeniami (liczby ilustracyjne): budżet 3000 zł/miesiąc | CPC 5 zł | ok. 600 kliknięć | założony ROAS 2-3:1 | przychód 6000-9000 zł. W B2B koszty kliknięcia są zwykle wyższe, ale wartość konwersji bywa bardzo duża — jeden kontrakt może być wart wielokrotność miesięcznego budżetu. Wskazówka: Używaj Long-Tail Keywords (np. "konsulting transformacja cyfrowa") zamiast Generic Keywords.
                 </p>
 
                 <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4 mt-8">
                   Zarządzanie Google Ads w FOTZ Studio
                 </h2>
                 <p className="text-muted-foreground mb-6">
-                  FOTZ Studio oferuje pełną obsługę kampanii Google Ads: od strategii, przez wdrożenie, aż do ciągłej optymalizacji. Pracujemy z budżetem od 1000 zł miesięcznie, a nasze kampanie osiągają średni ROAS 2.5-4:1. Jeśli szukasz agencji, która zna ceny na rynku i wie, jak maksymalizować każdy wydany złoty, skontaktuj się z nami. Oferujemy bezpłatną konsultację i wycenę dopasowaną do Twoich potrzeb i budżetu.
+                  FOTZ Studio prowadzi kampanie Google Ads: od strategii, przez wdrożenie, aż do bieżącej optymalizacji. Jesteśmy agencją z Poznania, a firmy z innych miast obsługujemy zdalnie. Jeśli chcesz sprawdzić, czy Google Ads ma sens w Twojej branży, skontaktuj się z nami — wycenę przygotowujemy po rozmowie o celach i budżecie.
                 </p>
 
                 <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">

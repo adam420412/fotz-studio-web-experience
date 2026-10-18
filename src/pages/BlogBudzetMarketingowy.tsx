@@ -10,7 +10,7 @@ import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/Str
 const faqItems = [
   {
     question: "Ile procent przychodów przeznaczyć na marketing?",
-    answer: "Standardowa rekomendacja to 5-10% przychodów brutto dla firm utrzymujących pozycję rynkową, 10-20% dla firm w fazie wzrostu. Startupy i nowe firmy często przeznaczają nawet 20-50% na budowanie rozpoznawalności."
+    answer: "Często przytaczana, orientacyjna reguła kciuka to 5-10% przychodów dla firm utrzymujących pozycję rynkową i 10-20% dla firm w fazie wzrostu. Startupy i nowe firmy przeznaczają zwykle znacznie większą część przychodów na budowanie rozpoznawalności. Właściwy poziom zależy od marż, branży i celów."
   },
   {
     question: "Jak podzielić budżet między kanały marketingowe?",
@@ -18,7 +18,7 @@ const faqItems = [
   },
   {
     question: "Czy mała firma potrzebuje dużego budżetu marketingowego?",
-    answer: "Nie, ale potrzebuje mądrego budżetu. Mała firma może zacząć od 2000-5000 zł/msc koncentrując się na 1-2 kanałach z najwyższym ROI (np. Google Ads + SEO lokalne). Kluczowa jest konsekwencja, nie wielkość."
+    answer: "Nie, ale potrzebuje mądrego budżetu. Mała firma może zacząć np. od 2000-5000 zł/msc (przykładowa kwota), koncentrując się na 1-2 kanałach z najwyższym ROI (np. Google Ads + SEO lokalne). Kluczowa jest konsekwencja, nie wielkość."
   },
   {
     question: "Jak mierzyć efektywność wydatków marketingowych?",
@@ -128,13 +128,13 @@ export default function BlogBudzetMarketingowy() {
               </ul>
 
               <div className="bg-primary/10 border border-primary/20 rounded-xl p-6 my-8">
-                <h3 className="text-lg font-bold mb-3 mt-0">📊 Statystyki: Budżety marketingowe w 2025</h3>
+                <h3 className="text-lg font-bold mb-3 mt-0">📊 Jak firmy zwykle podchodzą do budżetu marketingowego</h3>
                 <ul className="mb-0">
-                  <li>Średni budżet marketingowy B2B: 8.7% przychodów</li>
-                  <li>Średni budżet marketingowy B2C: 9.8% przychodów</li>
-                  <li>Firmy SaaS: 15-25% przychodów na marketing</li>
-                  <li>E-commerce: 10-15% przychodów</li>
-                  <li>70% firm zwiększa budżety digital w 2025</li>
+                  <li>Budżet najczęściej liczy się jako procent przychodów albo od celu (liczby klientów)</li>
+                  <li>Firmy B2C i e-commerce zwykle wydają relatywnie więcej niż tradycyjne B2B</li>
+                  <li>Firmy SaaS i startupy w fazie wzrostu inwestują w marketing szczególnie dużo</li>
+                  <li>Coraz większa część budżetów trafia do kanałów digital</li>
+                  <li>Kluczowe jest mierzenie wyników, a nie sama wysokość budżetu</li>
                 </ul>
               </div>
 
@@ -145,7 +145,7 @@ export default function BlogBudzetMarketingowy() {
 
               <h3>1. Metoda procentowa od przychodów</h3>
               <p>
-                Najpopularniejsza metoda - przeznaczasz stały procent przychodów na marketing:
+                Najpopularniejsza metoda - przeznaczasz stały procent przychodów na marketing. Orientacyjne widełki (reguła kciuka, nie wynik badania):
               </p>
               <ul>
                 <li><strong>5-7%</strong> - firmy stabilne, utrzymanie pozycji</li>
@@ -241,13 +241,16 @@ export default function BlogBudzetMarketingowy() {
                 <BarChart3 className="w-6 h-6 text-primary" />
                 Benchmarki budżetowe według branży
               </h2>
+              <p>
+                Poniższe widełki to orientacyjne wartości spotykane w praktyce, a nie wyniki konkretnego badania - traktuj je jako punkt wyjścia do własnych wyliczeń.
+              </p>
 
               <div className="overflow-x-auto my-8">
                 <table className="w-full">
                   <thead>
                     <tr>
                       <th>Branża</th>
-                      <th>% przychodów na marketing</th>
+                      <th>% przychodów na marketing (orientacyjnie)</th>
                       <th>Główne kanały</th>
                     </tr>
                   </thead>
@@ -315,7 +318,7 @@ export default function BlogBudzetMarketingowy() {
               <div className="bg-muted p-4 rounded-lg my-4">
                 <code>ROAS = Przychód z reklam / Koszt reklam</code>
               </div>
-              <p>Dobry ROAS dla e-commerce: 4:1 lub wyższy (400%)</p>
+              <p>Dobry ROAS zależy od marży: policz próg rentowności (ROAS break-even = 1 / marża). Przy marży 25% reklama zaczyna się zwracać dopiero powyżej 4:1.</p>
 
               <h3>CAC (Customer Acquisition Cost)</h3>
               <p>
@@ -403,7 +406,7 @@ export default function BlogBudzetMarketingowy() {
               <div className="bg-primary/10 border border-primary/20 rounded-xl p-8 my-8 text-center">
                 <h3 className="text-xl font-bold mb-4 mt-0">Potrzebujesz pomocy z planowaniem budżetu?</h3>
                 <p className="mb-6">
-                  Przygotujemy strategię marketingową z optymalnym podziałem budżetu dla Twojej branży.
+                  Pomożemy ułożyć strategię marketingową i podział budżetu dopasowany do Twojej branży i celów - wycena po rozmowie.
                 </p>
                 <div className="flex flex-wrap justify-center gap-4">
                   <Button asChild size="lg">
@@ -431,10 +434,10 @@ export default function BlogBudzetMarketingowy() {
             {/* SEO Article Section */}
             <div className="mt-12 pt-12 border-t border-border">
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Planowanie budżetu marketingowego — ile powinna wydawać na marketing Twoja firma?</h2>
-              <p className="text-muted-foreground mb-6">Optymalny budżet marketingowy to 5-15% przychodów firmy, w zależności od branży, etapu rozwoju i celów. Startupy i firmy w fazie wzrostu powinny alokować więcej (10-20%), dojrzałe firmy z ugruntowaną pozycją — mniej (5-10%). Kluczowe jest nie tylko ile wydajesz, ale jak mierzysz ROI z każdego kanału.</p>
+              <p className="text-muted-foreground mb-6">Często przytaczana, orientacyjna widełka to 5-15% przychodów firmy - zależnie od branży, etapu rozwoju, marż i celów. Startupy i firmy w fazie wzrostu zwykle alokują więcej, dojrzałe firmy z ugruntowaną pozycją — mniej. Kluczowe jest nie tylko ile wydajesz, ale jak mierzysz ROI z każdego kanału.</p>
 
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Podział budżetu marketingowego — SEO vs. reklamy płatne vs. content marketing</h2>
-              <p className="text-muted-foreground mb-6">Typowy podział budżetu marketingowego dla małej firmy: SEO/content (30-40%), kampanie PPC Google/Meta (30-40%), social media i produkcja treści (15-20%), narzędzia i analityka (5-10%). Fotz Studio pomaga optymalizować alokację budżetu w oparciu o dane i realne ROI z każdego kanału.</p>
+              <p className="text-muted-foreground mb-6">Przykładowy podział budżetu marketingowego dla małej firmy: SEO/content (30-40%), kampanie PPC Google/Meta (30-40%), social media i produkcja treści (15-20%), narzędzia i analityka (5-10%). To punkt wyjścia - właściwe proporcje warto ustalić na podstawie danych o wynikach każdego kanału.</p>
 
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Kalkulator ROI marketingowego — sprawdź, ile możesz zarobić na marketingu online</h2>
               <p className="text-muted-foreground">Użyj kalkulatora ROI Fotz Studio, by obliczyć potencjalny zwrot z inwestycji w kampanie Google Ads, SEO i social media. Bezpłatne narzędzie online — bez rejestracji. Skontaktuj się z nami po indywidualną wycenę działań marketingowych dla Twojej firmy.</p>

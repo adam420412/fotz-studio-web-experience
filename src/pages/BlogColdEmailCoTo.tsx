@@ -38,12 +38,12 @@ export default function BlogColdEmailCoTo() {
     {
       question: "Jaki jest dobry open rate i reply rate cold emaila?",
       answer:
-        "Benchmarki cold email w B2B: Open Rate: 40-60% (dobry) — kluczowy jest temat i nazwa nadawcy. Ponizej 30% to slaby wynik. Reply Rate: 5-15% (dobry), powyzej 15% — swietny. Ponizej 3% — musisz poprawic pitch lub targetowanie. Positive Reply Rate (zainteresowanie): 2-8% — tyle spotkan/demo ze 100 emaili. Meeting Booked Rate: 1-5%. Czynniki wplywajace na open rate: pole 'od' (imie > nazwa firmy), temat (personalizacja, ciekawosc, krotkosc), czas wysylki (wtorek-czwartek, 8-10 lub 14-16). Cold email outperformuje LinkedIn outreach pod wzgledem reply rate o 2-3x.",
+        "Nie ma jednego oficjalnego benchmarku — wyniki mocno zaleza od branzy, jakosci bazy i narzedzia, a open rate jest dzis zaburzany przez ochrone prywatnosci w klientach poczty. Ponizsze wartosci traktuj jako orientacyjne progi robocze stosowane w praktyce, a nie wynik badania; najlepiej porownuj sie z wlasnymi kampaniami. Open Rate: 40-60% (dobry) — kluczowy jest temat i nazwa nadawcy. Ponizej 30% to slaby wynik. Reply Rate: 5-15% (dobry), powyzej 15% — swietny. Ponizej 3% — musisz poprawic pitch lub targetowanie. Positive Reply Rate (zainteresowanie): 2-8% — tyle spotkan/demo ze 100 emaili. Meeting Booked Rate: 1-5%. Czynniki wplywajace na open rate: pole 'od' (imie > nazwa firmy), temat (personalizacja, ciekawosc, krotkosc), czas wysylki (wtorek-czwartek, 8-10 lub 14-16).",
     },
     {
       question: "Jak napisac skuteczny cold email?",
       answer:
-        "Zasady skutecznego cold emaila: 1) Personalizacja — minimum 1-2 konkretne zdania o tej osobie lub firmie (nie template). Sprawdz LinkedIn, strone firmy, ostatnie posty. 2) Krotko — maksymalnie 5-8 zdan. Dlugich emaili nikt nie czyta. 3) Fokus na odbiorcze — mow o ich problemach, nie o sobie. 'Ty' powinno pojawiac sie 3x czesciej niz 'ja'. 4) Jeden CTA — nie pytaj o kilka rzeczy naraz. Propozycja jednego malego kroku. 5) Follow-up — 70% odpowiedzi przychodzi po 2-5 follow-upach. Nie wysylaj jednego emaila i czekaj. 6) A/B testuj — temat, pitch, CTA. Mierz i iteruj.",
+        "Zasady skutecznego cold emaila: 1) Personalizacja — minimum 1-2 konkretne zdania o tej osobie lub firmie (nie template). Sprawdz LinkedIn, strone firmy, ostatnie posty. 2) Krotko — maksymalnie 5-8 zdan. Dlugich emaili nikt nie czyta. 3) Fokus na odbiorcze — mow o ich problemach, nie o sobie. 'Ty' powinno pojawiac sie 3x czesciej niz 'ja'. 4) Jeden CTA — nie pytaj o kilka rzeczy naraz. Propozycja jednego malego kroku. 5) Follow-up — spora czesc odpowiedzi przychodzi dopiero po kolejnych wiadomosciach w sekwencji. Nie wysylaj jednego emaila i czekaj. 6) A/B testuj — temat, pitch, CTA. Mierz i iteruj.",
     },
     {
       question: "Czy cold emailing jest legalny w Polsce?",
@@ -124,6 +124,9 @@ export default function BlogColdEmailCoTo() {
 
             <FadeInView>
               <h2 className="text-2xl font-bold text-slate-900 mt-8 mb-4">Benchmarki cold email B2B (2025)</h2>
+              <p className="text-slate-600 text-sm mb-4">
+                To orientacyjne progi robocze, nie wyniki badania. Wyniki mocno zaleza od branzy, jakosci bazy i narzedzia, wiec traktuj je jako punkt wyjscia i porownuj sie przede wszystkim z wlasnymi kampaniami.
+              </p>
               <div className="space-y-2 mb-6">
                 {[
                   { metric: "Open Rate", good: "40-60%", bad: "Ponizej 30%", tip: "Zalezny od tematu i personalizacji" },

@@ -12,14 +12,14 @@ export default function GoogleAdsLublin() {
     <Layout>
       <SEOHead
           title="Agencja Google Ads Lublin — kampanie reklamowe dla firm | Fotz.pl"
-          description="Google Ads Lublin ✓ Kampanie dla firm z Lublina i Lubelszczyzny. Od 400 zł/mies. Bezpłatna konsultacja!"
+          description="Google Ads Lublin ✓ Kampanie dla firm z Lublina i Lubelszczyzny prowadzone zdalnie z Poznania. Wycena po rozmowie o zakresie. Bezpłatna konsultacja!"
           canonical="https://www.fotz-studio.pl/performance-marketing/google-ads/lublin"
         keywords="google ads lublin, kampanie google ads lublin, agencja google ads lublin, reklamy google lublin, google adwords lublin, sem lublin, google ads dla firm lublin, prowadzenie google ads lublin, google ads cennik lublin, reklama w google lublin"
         />
 
       <ServiceSchema 
         name="Agencja Google Ads Lublin"
-        description="Profesjonalne kampanie Google Ads dla firm z Lublina i regionu Lubelszczyzny. Zwiększamy widoczność w wyszukiwarce i generujemy jakościowe leady."
+        description="Kampanie Google Ads dla firm z Lublina i regionu Lubelszczyzny, prowadzone zdalnie z Poznania. Pracujemy nad widocznością w wyszukiwarce i jakością zapytań."
         areaServed="Lublin"
       />
       <BreadcrumbSchema items={[
@@ -34,15 +34,15 @@ export default function GoogleAdsLublin() {
         },
         {
           question: "Ile kosztują kampanie Google Ads dla firm z Lublina?",
-          answer: "Minimalna miesięczna inwestycja to 400 zł. Rzeczywisty koszt zależy od branży, konkurencji i Twoich celów. Średnio firmy z Lublina inwestują 1500-3000 zł miesięcznie, aby uzyskać znaczące rezultaty."
+          answer: "Wycenę zarządzania przygotowujemy po rozmowie o zakresie: liczbie i typie kampanii, liczbie produktów lub usług oraz częstotliwości raportów. Budżet reklamowy płacisz Google osobno — jego wysokość zależy od branży, konkurencji i Twoich celów."
         },
         {
           question: "Jakie są najpopularniejsze kampanie Google Ads dla lublinskich firm?",
-          answer: "Wśród lublinskich firm popularne są: kampanie Search (zmiana zachowania poszukiwaczy), Shopping (dla e-commerce), Display (zwiększenie świadomości marki) i YouTube Ads (dotarcie do widzów video)."
+          answer: "Najczęściej stosowane typy kampanii to: Search (zmiana zachowania poszukiwaczy), Shopping (dla e-commerce), Display (zwiększenie świadomości marki) i YouTube Ads (dotarcie do widzów video)."
         },
         {
           question: "Jak szybko zobaczę rezultaty z Google Ads?",
-          answer: "Pierwsze kliknięcia pojawiają się często w ciągu kilku godzin, ale pełne optimizowanie kampanii trwa zwykle 2-4 tygodnie. Znaczący wzrost konwersji obserwujesz zwykle po 4-6 tygodniach współpracy."
+          answer: "Pierwsze kliknięcia mogą pojawić się wkrótce po uruchomieniu kampanii, ale optymalizacja wymaga zebrania danych. Tempo efektów zależy od branży, budżetu i strony docelowej, dlatego nie podajemy sztywnych terminów."
         },
         {
           question: "Czy mogę uruchomić kampanię Google Ads tylko dla Lublina?",
@@ -54,7 +54,7 @@ export default function GoogleAdsLublin() {
         },
         {
           question: "Jakie są gwarancje efektywności kampanii?",
-          answer: "Gwarantujemy transparentne zarządzanie budżetem, optymalizację w kierunku maksymalnego ROI i miesięczne raporty. Nie gwarantujemy konkretnej liczby konwersji (zależy od rynku), ale gwarantujemy profesjonalne działania na rzecz Twojego sukcesu."
+          answer: "Nie gwarantujemy konkretnej liczby konwersji ani pozycji reklamy — zależą od rynku, aukcji i strony docelowej. Zapewniamy przejrzyste zarządzanie budżetem, regularną optymalizację i miesięczne raporty."
         },
         {
           question: "Czy potrzebuję strony internetowej, aby uruchomić Google Ads?",
@@ -75,26 +75,26 @@ export default function GoogleAdsLublin() {
               Google Ads dla <span className="text-blue-300">Lublina</span>
             </h1>
             <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto">
-              Google Ads Lublin — profesjonalne kampanie Google Ads i reklamy w Google dla firm z Lublina i Lubelszczyzny. Zwiększamy ruch, konwersje i ROI dzięki skutecznym kampaniom SEM. Bezpłatna konsultacja.</p>
+              Google Ads Lublin — profesjonalne kampanie Google Ads i reklamy w Google dla firm z Lublina i Lubelszczyzny. Pracujemy z Poznania, a firmy z Lublina obsługujemy zdalnie. Kampanie ustawiamy pod Twoje cele i mierzymy ich wyniki. Bezpłatna konsultacja.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
             <FadeInView>
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 text-white text-center">
-                <div className="text-4xl font-bold text-blue-300 mb-2">370K</div>
-                <p className="text-sm text-blue-100">Wyszukiwań miesięcznie w Lublinie</p>
+                <div className="text-4xl font-bold text-blue-300 mb-2">Search</div>
+                <p className="text-sm text-blue-100">Reklamy na frazy, których szukają klienci</p>
               </div>
             </FadeInView>
             <FadeInView delay={100}>
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 text-white text-center">
-                <div className="text-4xl font-bold text-blue-300 mb-2">45K</div>
-                <p className="text-sm text-blue-100">Internautów na Google.pl codziennie</p>
+                <div className="text-4xl font-bold text-blue-300 mb-2">Lokalnie</div>
+                <p className="text-sm text-blue-100">Kierowanie na Lublin i region</p>
               </div>
             </FadeInView>
             <FadeInView delay={200}>
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 text-white text-center">
-                <div className="text-4xl font-bold text-blue-300 mb-2">91%</div>
-                <p className="text-sm text-blue-100">Firm używa Google do znalezienia usług</p>
+                <div className="text-4xl font-bold text-blue-300 mb-2">Raporty</div>
+                <p className="text-sm text-blue-100">Miesięczne zestawienia wyników</p>
               </div>
             </FadeInView>
           </div>
@@ -164,9 +164,9 @@ export default function GoogleAdsLublin() {
                   <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center font-bold text-lg">4</div>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">Pozycja na szczycie Google</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Reklamy nad wynikami organicznymi</h3>
                   <p className="text-gray-600">
-                    Annonces Google pojawiają się na szczycie wyników wyszukiwania — przed organicznymi wynikami. Maksymalny widoczność i CTR.
+                    Reklamy Google mogą wyświetlać się nad wynikami organicznymi. Miejsce reklamy zależy od aukcji, stawki i jakości reklamy, dlatego nie gwarantujemy konkretnej pozycji.
                   </p>
                 </div>
               </div>
@@ -347,10 +347,10 @@ export default function GoogleAdsLublin() {
           <FadeInView>
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Cennik kampanii Google Ads
+                Zakresy współpracy Google Ads
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Transparentne ceny za zarządzanie kampaniami Google Ads dla firm z Lublina. Brak ukrytych opłat.
+                Wycenę zarządzania przygotowujemy po rozmowie o zakresie, liczbie kampanii i częstotliwości kontaktu.
               </p>
             </div>
           </FadeInView>
@@ -360,8 +360,8 @@ export default function GoogleAdsLublin() {
               <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
                 <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white p-6">
                   <h3 className="text-2xl font-bold mb-2">START</h3>
-                  <div className="text-4xl font-bold">400 zł</div>
-                  <p className="text-sm text-blue-100">Miesięcznie</p>
+                  <div className="text-2xl font-bold">Wycena indywidualna</div>
+                  <p className="text-sm text-blue-100">Zależy od zakresu</p>
                 </div>
                 <div className="p-6">
                   <ul className="space-y-3">
@@ -393,10 +393,10 @@ export default function GoogleAdsLublin() {
             <FadeInView delay={150}>
               <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition border-2 border-blue-600">
                 <div className="bg-gradient-to-r from-blue-700 to-blue-900 text-white p-6 relative">
-                  <span className="absolute top-4 right-4 bg-yellow-400 text-blue-900 px-3 py-1 rounded-full text-sm font-bold">POPULARNE</span>
+                  <span className="absolute top-4 right-4 bg-yellow-400 text-blue-900 px-3 py-1 rounded-full text-sm font-bold">SZERSZY ZAKRES</span>
                   <h3 className="text-2xl font-bold mb-2">GROWTH</h3>
-                  <div className="text-4xl font-bold">1500 zł</div>
-                  <p className="text-sm text-blue-100">Miesięcznie</p>
+                  <div className="text-2xl font-bold">Wycena indywidualna</div>
+                  <p className="text-sm text-blue-100">Zależy od zakresu</p>
                 </div>
                 <div className="p-6">
                   <ul className="space-y-3">
@@ -429,8 +429,8 @@ export default function GoogleAdsLublin() {
               <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
                 <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white p-6">
                   <h3 className="text-2xl font-bold mb-2">PRO</h3>
-                  <div className="text-4xl font-bold">3000 zł</div>
-                  <p className="text-sm text-blue-100">Miesięcznie</p>
+                  <div className="text-2xl font-bold">Wycena indywidualna</div>
+                  <p className="text-sm text-blue-100">Zależy od zakresu</p>
                 </div>
                 <div className="p-6">
                   <ul className="space-y-3">
@@ -463,7 +463,7 @@ export default function GoogleAdsLublin() {
           <FadeInView delay={250}>
             <div className="bg-blue-50 border-2 border-blue-200 rounded-lg p-6 mt-12">
               <p className="text-center text-gray-700">
-                <strong>Poza opłatą za zarządzanie:</strong> Budżet na kliknięcia (kosten) pokrywasz osobno bezpośrednio na koncie Google Ads. My optymalizujemy każdy złoty.
+                <strong>Poza opłatą za zarządzanie:</strong> Budżet na kliknięcia pokrywasz zawsze osobno, bezpośrednio na koncie Google Ads.
               </p>
             </div>
           </FadeInView>
@@ -479,7 +479,7 @@ export default function GoogleAdsLublin() {
                 Branże, którym pomagamy
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Doświadczenie w kampaniach Google Ads dla różnych sektorów biznesu.
+                Kampanie Google Ads dopasowujemy do specyfiki różnych sektorów biznesu.
               </p>
             </div>
           </FadeInView>
@@ -489,7 +489,7 @@ export default function GoogleAdsLublin() {
               <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-6 border border-blue-200">
                 <h3 className="text-lg font-bold text-gray-900 mb-2">E-commerce</h3>
                 <p className="text-gray-700">
-                  Shopping Ads, remarketing produktów, konwersja sprzedaży. Zwiększamy średnią wartość zamówienia.
+                  Shopping Ads, remarketing produktów i kampanie nastawione na sprzedaż.
                 </p>
               </div>
             </FadeInView>
@@ -576,7 +576,7 @@ export default function GoogleAdsLublin() {
                   <span className="text-blue-600">+</span>
                 </summary>
                 <p className="text-gray-600 mt-4">
-                  Minimalna miesięczna inwestycja to 400 zł. Rzeczywisty koszt zależy od branży, konkurencji i Twoich celów. Średnio firmy z Lublina inwestują 1500-3000 zł miesięcznie, aby uzyskać znaczące rezultaty.
+                  Wycenę zarządzania przygotowujemy po rozmowie o zakresie: liczbie i typie kampanii, liczbie produktów lub usług oraz częstotliwości raportów. Budżet reklamowy płacisz Google osobno — jego wysokość zależy od branży, konkurencji i Twoich celów.
                 </p>
               </details>
             </FadeInView>
@@ -588,7 +588,7 @@ export default function GoogleAdsLublin() {
                   <span className="text-blue-600">+</span>
                 </summary>
                 <p className="text-gray-600 mt-4">
-                  Wśród lublinskich firm popularne są: kampanie Search (zmiana zachowania poszukiwaczy), Shopping (dla e-commerce), Display (zwiększenie świadomości marki) i YouTube Ads (dotarcie do widzów video).
+                  Najczęściej stosowane typy kampanii to: Search (zmiana zachowania poszukiwaczy), Shopping (dla e-commerce), Display (zwiększenie świadomości marki) i YouTube Ads (dotarcie do widzów video).
                 </p>
               </details>
             </FadeInView>
@@ -600,7 +600,7 @@ export default function GoogleAdsLublin() {
                   <span className="text-blue-600">+</span>
                 </summary>
                 <p className="text-gray-600 mt-4">
-                  Pierwsze kliknięcia pojawiają się często w ciągu kilku godzin, ale pełne optymizowanie kampanii trwa zwykle 2-4 tygodnie. Znaczący wzrost konwersji obserwujesz zwykle po 4-6 tygodniach współpracy.
+                  Pierwsze kliknięcia mogą pojawić się wkrótce po uruchomieniu kampanii, ale optymalizacja wymaga zebrania danych. Tempo efektów zależy od branży, budżetu i strony docelowej, dlatego nie podajemy sztywnych terminów.
                 </p>
               </details>
             </FadeInView>
@@ -636,7 +636,7 @@ export default function GoogleAdsLublin() {
                   <span className="text-blue-600">+</span>
                 </summary>
                 <p className="text-gray-600 mt-4">
-                  Gwarantujemy transparentne zarządzanie budżetem, optymalizację w kierunku maksymalnego ROI i miesięczne raporty. Nie gwarantujemy konkretnej liczby konwersji (zależy od rynku), ale gwarantujemy profesjonalne działania na rzecz Twojego sukcesu.
+                  Nie gwarantujemy konkretnej liczby konwersji ani pozycji reklamy — zależą od rynku, aukcji i strony docelowej. Zapewniamy przejrzyste zarządzanie budżetem, regularną optymalizację i miesięczne raporty.
                 </p>
               </details>
             </FadeInView>

@@ -172,7 +172,7 @@ export default function BlogPinterestDlaFirmy() {
               },
               {
                 title: "Przepisy i poradniki",
-                desc: "Jeśli prowadzisz blog kulinarny, porady lifestylowe, treningi fitness. Pinterest to drugie co do wielkości wyszukiwanie przepisów po Google.",
+                desc: "Jeśli prowadzisz blog kulinarny, porady lifestylowe, treningi fitness. Pinterest to jedno z popularnych miejsc, w których ludzie szukają przepisów i poradników.",
                 icon: Zap,
               },
               {
@@ -375,7 +375,7 @@ export default function BlogPinterestDlaFirmy() {
               },
               {
                 title: "Buyable Pins (piny z możliwością zakupu)",
-                desc: "Dla e-commerce. Pin z możliwością bezpośredniego zakupu bez wychodzenia z Pinteresta. Konwersja bardzo wysoka.",
+                desc: "Dla e-commerce. Pin z możliwością bezpośredniego zakupu bez wychodzenia z Pinteresta. Skraca drogę do zakupu.",
               },
               {
                 title: "Video Pins (reklamy wideo)",

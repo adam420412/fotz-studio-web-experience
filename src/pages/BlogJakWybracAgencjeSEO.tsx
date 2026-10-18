@@ -17,7 +17,7 @@ const BlogJakWybracAgencjeSEO = () => {
   const faqItems = [
     {
       question: 'Ile powinna kosztować obsługa SEO od agencji?',
-      answer: 'Cena obsługi SEO zależy od zakresu prac, konkurencyjności branży i poziomu zaawansowania. Standardowa obsługa dla małych firm to 1500-3000 zł/miesiąc, dla średnich przedsiębiorstw 3000-8000 zł/miesiąc, a dla dużych korporacji 8000+ zł/miesiąc. Unikaj oferent oferujących SEO poniżej 999 zł/miesiąc - zwykle oznacza to słabą jakość usług. Dobrze jest też pytać o model rozliczenia - abonament stały, czy zależny od wyników.',
+      answer: 'Cena obsługi SEO zależy od zakresu prac, konkurencyjności branży i poziomu zaawansowania. Przykładowe widełki rynkowe: obsługa dla małych firm to często ok. 1500-3000 zł/miesiąc, dla średnich przedsiębiorstw ok. 3000-8000 zł/miesiąc, a dla dużych firm 8000+ zł/miesiąc. Bardzo tanie oferty (np. poniżej ok. 1000 zł/miesiąc za „pełne SEO”) warto sprawdzać szczególnie dokładnie - przy takim budżecie trudno o realny zakres prac. Dobrze jest też pytać o model rozliczenia - abonament stały, czy zależny od wyników.',
     },
     {
       question: 'Jakie umowy powinny zawierać agencje SEO?',
@@ -25,11 +25,11 @@ const BlogJakWybracAgencjeSEO = () => {
     },
     {
       question: 'Czy agencja SEO powinna gwarantować wyniki?',
-      answer: 'Żadna uczciwa agencja nie powinna gwarantować konkretnej pozycji w Google lub określoną ilość wizyt. Taki marketingowy wbrew wskazówkom Google. Dobrze działająca agencja powinna gwarantować, że będzie używać tylko białych technik (white hat) i dostarczać regularne raporty z postępami. Zamiast gwarancji pozycji, szukaj agencji, która gwarantuje transparentne działanie i możliwość weryfikacji postępów.',
+      answer: 'Żadna uczciwa agencja nie powinna gwarantować konkretnej pozycji w Google lub określoną ilość wizyt. Takie obietnice są sprzeczne z wytycznymi Google. Dobrze działająca agencja powinna gwarantować, że będzie używać tylko białych technik (white hat) i dostarczać regularne raporty z postępami. Zamiast gwarancji pozycji, szukaj agencji, która gwarantuje transparentne działanie i możliwość weryfikacji postępów.',
     },
     {
       question: 'Jak zweryfikować portfolio i case studies agencji?',
-      answer: 'Poproś agencję o minimum 3-5 案例 studii z branży podobnej do Twojej. Zweryfikuj, czy podane wyniki są rzeczywiste - wejdź na wymieniane strony, sprawdź ich pozycje w Google, oceń jakość treści. Poproś o dane kontaktowe do poprzednich klientów i zadzwoń do nich osobiście. Sprawdź opinie na Trustpilot, Google Moja Firma i portalach opinii. Unikaj agencji, które nie chcą pokazać konkretnych przypadków lub twierdz, że to tajemnica handlowa.',
+      answer: 'Poproś agencję o kilka case studies z branży podobnej do Twojej. Zweryfikuj, czy podane wyniki są rzeczywiste - wejdź na wymieniane strony, sprawdź ich pozycje w Google, oceń jakość treści. Poproś o dane kontaktowe do poprzednich klientów i zadzwoń do nich osobiście. Sprawdź opinie na Trustpilot, Google Moja Firma i portalach opinii. Unikaj agencji, które nie chcą pokazać konkretnych przypadków lub twierdz, że to tajemnica handlowa.',
     },
     {
       question: 'Jaka jest różnica między agencją SEO a freelancerem?',
@@ -149,10 +149,10 @@ const BlogJakWybracAgencjeSEO = () => {
                     SEO to nie jest jednorazowy projekt - to długoterminowa inwestycja w widoczność organiczną Twojej firmy. Prawidłowo wykonane SEO może generować eksponencjalny wzrost ruchu do Twojej strony, co przekłada się na nowe leady i sprzedaż. Jednak większość firm nie ma wewnętrznych zasobów ani wiedzy, aby obsługiwać SEO samodzielnie, dlatego współpraca z profesjonalną agencją jest niezbędna.
                   </p>
                   <p className="text-slate-700 leading-relaxed mb-4">
-                    Niestety, na rynku jest mnóstwo agencji nieetycznych, które używają zakazanych technik (black hat), obiecują niemożliwe wyniki, lub po prostu dostarczają kiepskie usługi za wysoką cenę. Dobrze przeprowadzony proces selekcji agencji to gwarancja, że będziesz pracować z partnerem, który naprawdę się troszczy o Twój sukces.
+                    Niestety, na rynku jest mnóstwo agencji nieetycznych, które używają zakazanych technik (black hat), obiecują niemożliwe wyniki, lub po prostu dostarczają kiepskie usługi za wysoką cenę. Dobrze przeprowadzony proces selekcji agencji to najlepszy sposób, by trafić na partnera, który naprawdę się troszczy o Twój sukces.
                   </p>
                   <p className="text-slate-700 leading-relaxed">
-                    Statystyki pokazują, że 72% firm, które zatrudniają agencje SEO, widzi wzrost ruchu w ciągu 6 miesięcy. Natomiast firmy, które wybrały złą agencję, tracą średnio 3-4 miesiące i ponad 5000 zł na rozpoczęciu współpracy z nową agencją.
+                    Dobrze dobrana agencja zwykle pokazuje pierwsze efekty w ciągu kilku miesięcy. Z kolei zły wybór oznacza nie tylko stracone pieniądze, ale też miesiące, które trzeba poświęcić na naprawę błędów i rozpoczęcie współpracy od nowa z inną agencją.
                   </p>
                 </section>
               </FadeInView>
@@ -209,7 +209,7 @@ const BlogJakWybracAgencjeSEO = () => {
                       {
                         num: 9,
                         title: 'Jakie będą koszty i co jest w pakiecie?',
-                        desc: 'Poproś o szczegółowe rozliczenie: ile godzin pracy, ile artykułów, ile rund optimizacji na miesiąc. Unikaj niejasnych odpowiedzi "to zależy". Dobra agencja powinna móc powiedzieć: "za 2500 zł dostaniesz 4 artykuły, audit techniczny i link building".',
+                        desc: 'Poproś o szczegółowe rozliczenie: ile godzin pracy, ile artykułów, ile rund optimizacji na miesiąc. Unikaj niejasnych odpowiedzi "to zależy". Dobra agencja powinna móc powiedzieć konkretnie, np.: "w tej kwocie miesięcznie dostaniesz 4 artykuły, audit techniczny i link building".',
                       },
                       {
                         num: 10,
@@ -386,8 +386,8 @@ const BlogJakWybracAgencjeSEO = () => {
                       <tbody>
                         <tr>
                           <td className="border border-slate-300 p-4 font-bold">Koszt</td>
-                          <td className="border border-slate-300 p-4">2000-8000 zł/miesiąc</td>
-                          <td className="border border-slate-300 p-4">500-2000 zł/miesiąc</td>
+                          <td className="border border-slate-300 p-4">Orientacyjnie 2000-8000 zł/miesiąc</td>
+                          <td className="border border-slate-300 p-4">Orientacyjnie 500-2000 zł/miesiąc</td>
                         </tr>
                         <tr className="bg-slate-50">
                           <td className="border border-slate-300 p-4 font-bold">Zespół</td>
@@ -440,7 +440,7 @@ const BlogJakWybracAgencjeSEO = () => {
                   </h2>
 
                   <p className="text-slate-700 leading-relaxed mb-6">
-                    Cena nie zawsze odzwierciedla jakość, ale zbyt niska cena prawie zawsze oznacza słabą jakość. Oto jak ocenić ofertę:
+                    Cena nie zawsze odzwierciedla jakość, ale zbyt niska cena prawie zawsze oznacza słabą jakość. Poniższe progi to przykładowe widełki rynkowe, które pomagają ocenić ofertę - realna cena zależy od branży, konkurencji i zakresu prac:
                   </p>
 
                   <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-lg mb-6">
@@ -500,7 +500,7 @@ const BlogJakWybracAgencjeSEO = () => {
                       '✓ Ma dedykowaną osobę do kontaktu',
                       '✓ Dostarcza raporty co miesiąc',
                       '✓ Umowa ma klauzule wyjścia bez kar',
-                      '✓ Cena jest w zakresie 1500-5000 zł/miesiąc',
+                      '✓ Cena jest adekwatna do zakresu prac i rynkowych widełek',
                       '✓ Ma referencje z poprzednich klientów',
                       '✓ Opinie na niezależnych portalach są pozytywne',
                       '✓ Wyjaśnia konkretnie co za pieniądze dostaniesz',
@@ -523,7 +523,7 @@ const BlogJakWybracAgencjeSEO = () => {
                 <section className="mb-12">
                   <h2 className="text-3xl font-bold text-slate-900 mb-6">Podsumowanie</h2>
                   <p className="text-slate-700 leading-relaxed mb-4">
-                    Wybór odpowiedniej agencji SEO to jedno z najważniejszych decyzji, którą podejmiesz dla swojej firmy. Dobra agencja może zmienić Twoją widoczność w Google i generować setki tysięcy złotych dodatkowego przychodu rocznie.
+                    Wybór odpowiedniej agencji SEO to jedno z najważniejszych decyzji, którą podejmiesz dla swojej firmy. Dobra agencja może wyraźnie poprawić Twoją widoczność w Google, a to przekłada się na więcej zapytań i sprzedaży.
                   </p>
                   <p className="text-slate-700 leading-relaxed mb-4">
                     Pamiętaj, aby:
@@ -536,7 +536,7 @@ const BlogJakWybracAgencjeSEO = () => {
                     <li>Upewnić się, że umowa zawiera klauzule ochronne</li>
                   </ul>
                   <p className="text-slate-700 leading-relaxed">
-                    Zamiast pośpieszyć się i wybrać pierwszą agencję, poświęć czas na due diligence. Spotkaj się z co najmniej 3-5 agencjami, porównaj ich podejście i wybierz tą, która najbardziej się wyróżnia. Dobra agencja to inwestycja, która zwróci się wielokrotnie.
+                    Zamiast pośpieszyć się i wybrać pierwszą agencję, poświęć czas na due diligence. Spotkaj się z co najmniej 3-5 agencjami, porównaj ich podejście i wybierz tą, która najbardziej się wyróżnia. Dobra agencja to inwestycja, która przy przemyślanej strategii ma realną szansę się zwrócić.
                   </p>
                 </section>
               </FadeInView>

@@ -48,7 +48,7 @@ export default function BlogICPCoTo() {
     {
       question: "Jak ICP wpływa na marketing i sprzedaż?",
       answer:
-        "Wpływ ICP na marketing: Content marketing — tworzysz treści dla konkretnych bólów ICP, nie dla wszystkich. SEO — targetujesz słowa kluczowe które szuka ICP. LinkedIn Ads — targetujesz firmograficznie (branża, wielkość, stanowisko). ABM — lista targetowych firm zgodnych z ICP. Lookalike audiences — Meta/Google podobni do istniejących klientów ICP. Wpływ ICP na sprzedaż: Kwalifikacja leadów (BANT, MEDDIC) — tylko firmy pasujące do ICP. Cold outreach — personalizowany do konkretnych bólów ICP. Forecast — deale z ICP firmami zamykają się częściej i szybciej. Firm która nie zna swojego ICP traci 30-50% budżetu sprzedażowego na złe leady.",
+        "Wpływ ICP na marketing: Content marketing — tworzysz treści dla konkretnych bólów ICP, nie dla wszystkich. SEO — targetujesz słowa kluczowe które szuka ICP. LinkedIn Ads — targetujesz firmograficznie (branża, wielkość, stanowisko). ABM — lista targetowych firm zgodnych z ICP. Lookalike audiences — Meta/Google podobni do istniejących klientów ICP. Wpływ ICP na sprzedaż: Kwalifikacja leadów (BANT, MEDDIC) — tylko firmy pasujące do ICP. Cold outreach — personalizowany do konkretnych bólów ICP. Forecast — deale z ICP firmami zamykają się częściej i szybciej. Firma, która nie zna swojego ICP, traci sporą część budżetu sprzedażowego na złe leady.",
     },
     {
       question: "Ile ICP powinna mieć firma?",

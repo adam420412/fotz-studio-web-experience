@@ -22,19 +22,19 @@ export default function BlogCTRCoToJest() {
   ];
 
   const ctrBenchmarks = [
-    { channel: "Wyniki organiczne Google (pozycja 1)", ctr: "~28%", note: "Najwyższy CTR — dlatego pozycja #1 jest tak cenna" },
-    { channel: "Wyniki organiczne Google (pozycja 3)", ctr: "~11%", note: "Gwałtowny spadek po pierwszej pozycji" },
-    { channel: "Wyniki organiczne Google (pozycja 10)", ctr: "~2.5%", note: "Koniec pierwszej strony Google" },
-    { channel: "Google Ads (search)", ctr: "3–5%", note: "Przeciętna; powyżej 5% to dobry wynik" },
-    { channel: "Google Ads (display)", ctr: "0.1–0.3%", note: "Niższy CTR, wyższy zasięg" },
-    { channel: "Email marketing (newsletter)", ctr: "2–5%", note: "CTR kliknięć w linki w emailu" },
-    { channel: "Reklamy Facebook / Meta", ctr: "0.9–1.5%", note: "Zależy od grupy docelowej i kreacji" },
+    { channel: "Wyniki organiczne Google (pozycja 1)", ctr: "najwyższy", note: "Pierwszy wynik zbiera największą część kliknięć — dlatego pozycja #1 jest tak cenna" },
+    { channel: "Wyniki organiczne Google (pozycja 3)", ctr: "wyraźnie niższy", note: "Klikalność szybko spada z każdą pozycją w dół" },
+    { channel: "Wyniki organiczne Google (pozycja 10)", ctr: "niski", note: "Koniec pierwszej strony Google — kliknięć jest już niewiele" },
+    { channel: "Google Ads (search)", ctr: "kilka %", note: "Zależy od branży, dopasowania słów kluczowych i treści reklamy" },
+    { channel: "Google Ads (display)", ctr: "bardzo niski", note: "Niższy CTR, wyższy zasięg — kampanie displayowe ocenia się inaczej niż search" },
+    { channel: "Email marketing (newsletter)", ctr: "zależy od listy", note: "CTR kliknięć w linki w emailu — porównuj głównie z własnymi wynikami" },
+    { channel: "Reklamy Facebook / Meta", ctr: "zwykle niski", note: "Zależy od grupy docelowej, formatu i kreacji" },
   ];
 
   const ctrTips = [
     { title: "Tytuł meta (Title Tag)", desc: "Najważniejszy czynnik CTR w Google. Zawieraj główne słowo kluczowe, liczby (np. '7 sposobów'), emocjonalne słowa ('bezpłatny', 'prosty', 'kompletny')." },
     { title: "Meta description", desc: "Opis pod tytułem w Google — nie wpływa na ranking, ale bardzo na CTR. Pisz jak reklamę: korzyści, CTA, odpowiedź na pytanie użytkownika." },
-    { title: "Rich Snippets / Schema", desc: "Oceny gwiazdkowe, FAQ, breadcrumbs w wynikach Google zwiększają CTR o 20-30% — wyróżniasz się wizualnie." },
+    { title: "Rich Snippets / Schema", desc: "Oceny gwiazdkowe, FAQ, breadcrumbs w wynikach Google mogą podnieść CTR — wyróżniasz się wizualnie." },
     { title: "URL strony", desc: "Krótki, czytelny URL zawierający słowo kluczowe. fotz.pl/blog/ctr-co-to > fotz.pl/blog/?p=1234." },
     { title: "Testowanie tytułów", desc: "W Google Search Console sprawdzaj CTR dla każdej strony. Niski CTR przy wysokiej pozycji = zły tytuł — testuj alternatywy." },
   ];
@@ -48,7 +48,7 @@ export default function BlogCTRCoToJest() {
     {
       question: "Jaki CTR jest dobry w Google?",
       answer:
-        "Dobry CTR w wynikach organicznych Google zależy od pozycji: pozycja #1 — ok. 28%, pozycja #3 — ok. 11%, pozycja #10 — ok. 2.5%. Poniżej oczekiwanego benchmarku = zły tytuł lub meta opis. W Google Ads: CTR powyżej 5% w kampaniach search to dobry wynik. CTR zależy też od branży — dla branded keywords bywa 50%+.",
+        "Dobry CTR w wynikach organicznych Google zależy przede wszystkim od pozycji: najwyżej klika się pierwszy wynik, a z każdą kolejną pozycją klikalność wyraźnie spada. Jeśli strona ma wyraźnie niższy CTR niż inne Twoje strony na podobnych pozycjach, problemem jest zwykle tytuł lub meta opis. W Google Ads CTR mocno zależy od branży i dopasowania reklamy do zapytania — najlepszym punktem odniesienia są Twoje własne kampanie. Dla zapytań brandowych (z nazwą firmy) CTR bywa bardzo wysoki.",
     },
     {
       question: "Jak CTR wpływa na SEO?",
@@ -167,7 +167,7 @@ export default function BlogCTRCoToJest() {
                 <BarChart2 className="w-5 h-5 text-blue-600 mb-2" />
                 <p className="text-blue-800 font-semibold mb-2">Chcesz poprawić CTR i pozycje w Google?</p>
                 <p className="text-blue-700 text-sm mb-3">
-                  Optymalizujemy meta tagi, struktury danych i treści — więcej kliknięć bez większego budżetu.
+                  Optymalizujemy meta tagi, struktury danych i treści, żeby Twoje obecne pozycje w Google pracowały lepiej.
                 </p>
                 <Link to="/uslugi/pozycjonowanie" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
                   Pozycjonowanie stron — oferta <ArrowRight className="w-4 h-4" />

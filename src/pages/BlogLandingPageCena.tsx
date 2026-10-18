@@ -12,7 +12,7 @@ import { ContactSection } from "@/components/sections/ContactSection";
 const faqItems = [
   {
     question: "Czy landing page drogi opłaca się?",
-    answer: "Tak. Jeśli landing page zwiększa Twoją conversion rate nawet o 1%, to oznacza 100% więcej leadów. Koszt pagingu (1000 zł) vs wartość dodatkowych leadów — zwrot inwestycji w 2-4 tygodnie. A dobre landing page'e działają latami."
+    answer: "Często tak. Przykład: jeśli landing page podniesie konwersję z 1% do 2%, przy tym samym ruchu dostajesz dwa razy więcej leadów. Czas zwrotu zależy od budżetu kampanii, wartości leada i marży — warto go policzyć na własnych danych przed zleceniem. A dobre landing page'e działają latami."
   },
   {
     question: "Czy mogę sam zrobić landing page na Wordpressie?",
@@ -20,7 +20,7 @@ const faqItems = [
   },
   {
     question: "Ile czasu trwa stworzenie landing page?",
-    answer: "Landing page za 499-1000 zł: 1-3 tygodnie (design, copywriting, setup, testy). Premium landing page: 3-6 tygodni (user research, multiple iterations, A/B testing setup). Builder (Unbounce, Leadpages): godziny do dni. Custom kod: 4-12 tygodni."
+    answer: "Prosty landing page: 1-3 tygodnie (design, copywriting, setup, testy). Premium landing page: 3-6 tygodni (user research, multiple iterations, A/B testing setup). Builder (Unbounce, Leadpages): godziny do dni. Custom kod: 4-12 tygodni."
   },
   {
     question: "Czy landing page potrzebuje SEO?",
@@ -32,7 +32,7 @@ const faqItems = [
   },
   {
     question: "Czy landing page obniża bounce rate?",
-    answer: "To zależy. Dobrze stworzony landing page ma wysoką bounce rate (normalnie — użytkownik konwertuje lub wychodzi), ale HIGH CONVERSION rate. Bounce rate sam w sobie nie jest ważny — ważne jest, czy ludzie konwertują. Jeśli 80% goes bounces ale 20% konwertuje, to świetna page."
+    answer: "To zależy. Dobrze stworzony landing page ma wysoką bounce rate (normalnie — użytkownik konwertuje lub wychodzi), ale HIGH CONVERSION rate. Bounce rate sam w sobie nie jest ważny — ważne jest, czy ludzie konwertują. Przykład: jeśli 80% osób wychodzi, ale 20% konwertuje, to bardzo dobry wynik."
   }
 ];
 
@@ -123,7 +123,7 @@ export default function BlogLandingPageCena() {
               <FadeInView delay={0.1}>
                 <h2 className="text-3xl font-heading font-bold mb-4 mt-12">Ile kosztuje landing page — przegląd cen</h2>
                 <p className="text-muted-foreground mb-6">
-                  Ceny zależą od tego, gdzie i jak budujesz landing page. Poniżej dokładne porównanie.
+                  Ceny zależą od tego, gdzie i jak budujesz landing page. Poniżej przykładowe widełki rynkowe — to orientacyjne kwoty spotykane na rynku, a nie cennik FOTZ Studio. Realny koszt zależy od zakresu projektu.
                 </p>
 
                 <div className="bg-card border rounded-xl overflow-hidden mb-6">
@@ -132,7 +132,7 @@ export default function BlogLandingPageCena() {
                       <thead>
                         <tr className="border-b border-border bg-muted/50">
                           <th className="text-left font-heading font-bold py-3 px-4">Opcja</th>
-                          <th className="text-left font-heading font-bold py-3 px-4">Koszt inicjalny</th>
+                          <th className="text-left font-heading font-bold py-3 px-4">Przykładowe widełki rynkowe</th>
                           <th className="text-left font-heading font-bold py-3 px-4">Opisy</th>
                         </tr>
                       </thead>
@@ -180,17 +180,17 @@ export default function BlogLandingPageCena() {
 
                   <div className="bg-muted/30 border border-border rounded-lg p-6">
                     <h3 className="text-lg font-heading font-bold mb-2">3. Copywriting (treść)</h3>
-                    <p className="text-muted-foreground text-sm">Jeśli agencja pisze tekst dla Ciebie (zamiast że sama podasz tekst), cena rośnie. Dobry copywriting to 20-30% kosztów — ale zwiększa konwersję o 50%+.</p>
+                    <p className="text-muted-foreground text-sm">Jeśli agencja pisze tekst dla Ciebie (zamiast że sama podasz tekst), cena rośnie. Dobry copywriting bywa sporą częścią budżetu — ale ma duży wpływ na konwersję.</p>
                   </div>
 
                   <div className="bg-muted/30 border border-border rounded-lg p-6">
                     <h3 className="text-lg font-heading font-bold mb-2">4. Integracje (tools)</h3>
-                    <p className="text-muted-foreground text-sm">Formularz + email automation (Mailchimp, Brevo): +0 zł. Integracja z CRM, Zapier, custom API: +500-1500 zł. Więcej integracji = bardziej zaawansowana setup.</p>
+                    <p className="text-muted-foreground text-sm">Formularz + email automation (Mailchimp, Brevo): zwykle niewielki dodatkowy koszt. Integracja z CRM, Zapier, custom API: na rynku przykładowo +500-1500 zł. Więcej integracji = bardziej zaawansowana setup.</p>
                   </div>
 
                   <div className="bg-muted/30 border border-border rounded-lg p-6">
                     <h3 className="text-lg font-heading font-bold mb-2">5. A/B testowanie</h3>
-                    <p className="text-muted-foreground text-sm">Jeśli agencja planuje i wdraża A/B testy (różne wersje page'a): dodatkowe 1000-3000 zł. Ale ROI A/B testing'u jest bardzo wysoki (najczęściej 2-3x zwrot).</p>
+                    <p className="text-muted-foreground text-sm">Jeśli agencja planuje i wdraża A/B testy (różne wersje page'a): na rynku przykładowo dodatkowe 1000-3000 zł. Testy opłacają się głównie wtedy, gdy ruch jest wystarczający, by wynik był miarodajny.</p>
                   </div>
 
                   <div className="bg-muted/30 border border-border rounded-lg p-6">
@@ -225,7 +225,7 @@ export default function BlogLandingPageCena() {
                   <div className="border rounded-lg p-6 bg-card">
                     <h3 className="text-lg font-heading font-bold mb-2 text-primary">Agencja (mała lub premium)</h3>
                     <p className="text-muted-foreground text-sm mb-3">Najlepiej: chcesz maksymalnej konwersji, dochód z kampanii będzie duży, potrzebujesz strategii i testowania.</p>
-                    <p className="text-muted-foreground text-sm">Korzyści: full-service (design, copy, UX/CRO, support post-launch). Zwrot inwestycji = szybki.</p>
+                    <p className="text-muted-foreground text-sm">Korzyści: full-service (design, copy, UX/CRO, support post-launch). Tempo zwrotu zależy od ruchu i wartości leada.</p>
                   </div>
                 </div>
               </FadeInView>
@@ -234,17 +234,17 @@ export default function BlogLandingPageCena() {
               <FadeInView delay={0.4}>
                 <h2 className="text-3xl font-heading font-bold mb-4 mt-12">Landing page od fotz.pl — co dostajesz?</h2>
                 <p className="text-muted-foreground mb-4">
-                  Oferujemy landing page'e w pakietach dostosowanych do budżetu i celów. Każdy landing page zawiera:
+                  Zakres każdego projektu ustalamy indywidualnie. Typowo w landing page'u uwzględniamy:
                 </p>
 
                 <div className="space-y-3 mb-6">
                   {[
-                    "Design i UX (responsywny, mobilny, ładuje się w poniżej 2 sekund)",
+                    "Design i UX (responsywny, mobilny, zoptymalizowany pod szybkie ładowanie)",
                     "Copywriting (tekst skierowany do Twoich klientów, z CTA)",
                     "Integracje (email, CRM, Zapier, custom API jeśli trzeba)",
-                    "SEO basics (meta tags, schema, openmograph, mobile friendly)",
+                    "SEO basics (meta tags, schema, Open Graph, mobile friendly)",
                     "Analytics setup (Google Analytics, conversion tracking, pixel)",
-                    "Support post-launch (30-60 dni obsługi)"
+                    "Wsparcie po starcie (zakres ustalany indywidualnie)"
                   ].map((feature, i) => (
                     <div key={i} className="flex items-start gap-3">
                       <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
@@ -254,7 +254,7 @@ export default function BlogLandingPageCena() {
                 </div>
 
                 <p className="text-muted-foreground mb-4">
-                  Cena: 1500-3000 zł (standard), 3000-5000+ zł (premium z A/B testing'iem). Czas realizacji: 2-4 tygodnie.
+                  Wycenę i harmonogram przygotowujemy po rozmowie i poznaniu zakresu — zależą m.in. od liczby sekcji, copywritingu, integracji i testów A/B.
                 </p>
 
                 <Button asChild className="gap-2">
@@ -280,17 +280,17 @@ export default function BlogLandingPageCena() {
                     <li>• Konwersja: 5% (5 leadów)</li>
                     <li>• Wartość 1 leadu: 500 zł</li>
                     <li>• ROI: 5 leadów × 500 zł = 2500 zł przychodu</li>
-                    <li>• Zwrot inwestycji w landing page: (2500 - 2000) / 2000 = 25% w 1 miesiąc</li>
+                    <li>• Zwrot z landing page'a (bez uwzględnienia budżetu reklam): (2500 - 2000) / 2000 = 25% w 1 miesiąc</li>
                   </ul>
-                  <p className="text-sm font-heading font-bold text-primary">Wniosek: drogi landing page zwrócił się w 1 miesiąc.</p>
+                  <p className="text-sm font-heading font-bold text-primary">Wniosek: w tym hipotetycznym przykładzie przychód z pierwszego miesiąca pokrył koszt landing page'a (bez budżetu reklam). Podstaw własne dane.</p>
                 </div>
 
                 <p className="text-muted-foreground mb-4">
-                  Zatem: jeśli Twoja kampania Google Ads/Meta Ads ma budżet 2000+ zł/miesiąc, landing page premium jest ROI-pozytywnym. Jeśli wydajesz 500 zł/miesiąc, builder za 200 zł/miesiąc to lepszy escolhe.
+                  Zatem: jeśli Twoja kampania Google Ads/Meta Ads ma budżet 2000+ zł/miesiąc, landing page premium często ma sens. Jeśli wydajesz 500 zł/miesiąc, builder za ok. 200 zł/miesiąc może być lepszym wyborem.
                 </p>
 
                 <p className="text-muted-foreground">
-                  Najczęstszy błąd: oszczędzić na landing page, ale tracić 50% konwersji z powodu słabego designu i copywriting'u. To jak kupić tanie pamiątki — nic się nie zarabia.
+                  Najczęstszy błąd: oszczędzić na landing page, ale tracić znaczną część konwersji z powodu słabego designu i copywriting'u. To jak kupić tanie pamiątki — nic się nie zarabia.
                 </p>
               </FadeInView>
 
@@ -302,7 +302,7 @@ export default function BlogLandingPageCena() {
               {/* CTA przed FAQ */}
               <div className="bg-primary/10 border border-primary/20 rounded-xl p-6 my-8">
                 <h3 className="font-heading font-bold mb-2">Chcesz wiedzieć, ile będzie kosztować Twój landing page?</h3>
-                <p className="text-muted-foreground text-sm mb-4">Wyślij nam szczegóły Twojego projektu — wycena w 24h.</p>
+                <p className="text-muted-foreground text-sm mb-4">Wyślij nam szczegóły Twojego projektu — wycenę przygotujemy po rozmowie.</p>
                 <Button asChild>
                   <Link to="/kontakt">Bezpłatna wycena landing page</Link>
                 </Button>
