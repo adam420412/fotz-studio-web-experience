@@ -401,7 +401,7 @@ const StronyInternetoweGdynia = () => {
                 <FadeInView key={index} delay={index * 0.1}>
                   <div className={`p-6 rounded-xl border transition-all h-full flex flex-col ${plan.popular ? "border-primary bg-primary/5" : "border-border/50 bg-background"}`}>
                     {plan.popular && (
-                      <span className="text-xs text-primary font-semibold uppercase tracking-wider mb-3 block">Najpopularniejszy</span>
+                      <span className="text-xs text-primary font-semibold uppercase tracking-wider mb-3 block">Polecany zakres</span>
                     )}
                     <h3 className="text-xl font-bold mb-1">{plan.title}</h3>
                     <p className="text-sm text-muted-foreground mb-3">{plan.desc}</p>

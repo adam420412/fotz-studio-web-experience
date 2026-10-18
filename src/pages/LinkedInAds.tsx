@@ -360,7 +360,7 @@ const LinkedInAds = () => {
               >
                 {pkg.popular && (
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-gradient-to-r from-blue-500 to-cyan-500 text-white text-sm font-medium rounded-full">
-                    Najpopularniejszy
+                    Polecany zakres
                   </div>
                 )}
                 <div className="text-center mb-6">

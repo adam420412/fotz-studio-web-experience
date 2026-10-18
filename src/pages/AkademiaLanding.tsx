@@ -237,7 +237,7 @@ export default function AkademiaLanding() {
               <div className="relative glass rounded-3xl p-8 md:p-10 border border-border/50">
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2">
                   <div className="px-4 py-1 rounded-full bg-gradient-brand-premium text-sm font-medium">
-                    Najpopularniejszy
+                    Polecany zakres
                   </div>
                 </div>
 

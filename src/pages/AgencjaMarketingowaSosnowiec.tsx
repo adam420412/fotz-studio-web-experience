@@ -370,7 +370,7 @@ const AgencjaMarketingowaSosnowiec = () => {
                 >
                   {plan.popular && (
                     <div className="mb-4 inline-block bg-yellow-400 text-gray-900 px-3 py-1 rounded-full text-sm font-bold">
-                      Najpopularniejszy
+                      Polecany zakres
                     </div>
                   )}
 

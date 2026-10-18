@@ -441,7 +441,7 @@ export default function FacebookAdsGdansk() {
                   <Card className={`border-0 shadow-sm transition-all h-full ${tier.popular ? 'ring-2 ring-blue-600 shadow-lg relative' : ''}`}>
                     {tier.popular && (
                       <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                        <Badge className="bg-blue-600">Najpopularniejszy</Badge>
+                        <Badge className="bg-blue-600">Polecany zakres</Badge>
                       </div>
                     )}
                     <CardHeader className={tier.popular ? 'pt-8' : ''}>

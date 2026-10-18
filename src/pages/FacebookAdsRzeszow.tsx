@@ -19,7 +19,7 @@ export default function FacebookAdsRzeszow() {
           { name: "Fotz.pl", url: "https://www.fotz-studio.pl" },
           { name: "Performance Marketing", url: "https://www.fotz-studio.pl/performance-marketing" },
           { name: "Facebook Ads", url: "https://www.fotz-studio.pl/performance-marketing/facebook-ads" },
-          { name: "Rzeszów", url: "https://www.fotz-studio.pl" }
+          { name: "Rzeszów", url: "https://www.fotz-studio.pl/performance-marketing/facebook-ads/rzeszow" }
         ]}/>
       <ServiceSchema
         name="Facebook Ads Rzeszów"
@@ -32,7 +32,7 @@ export default function FacebookAdsRzeszow() {
             { name: "Home", path: "/" },
             { name: "Performance Marketing", path: "/performance-marketing" },
             { name: "Facebook Ads", path: "/uslugi/reklama-facebook" },
-            { name: "Rzeszów", url: "https://www.fotz-studio.pl" }
+            { name: "Rzeszów", url: "/performance-marketing/facebook-ads/rzeszow" }
           ]}/>
 
         {/* HERO SECTION */}

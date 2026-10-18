@@ -198,7 +198,7 @@ export default function BlogProwadzenieSocialMediaCennik() {
                 >
                   {pkg.highlighted && (
                     <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full">
-                      NAJPOPULARNIEJSZY
+                      POLECANY ZAKRES
                     </div>
                   )}
                   <h3 className="text-xl font-bold text-gray-900 mb-1">{pkg.name}</h3>

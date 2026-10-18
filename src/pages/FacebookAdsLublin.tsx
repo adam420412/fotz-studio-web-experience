@@ -19,7 +19,7 @@ export default function FacebookAdsLublin() {
           { name: "Fotz.pl", url: "https://www.fotz-studio.pl" },
           { name: "Performance Marketing", url: "https://www.fotz-studio.pl/performance-marketing" },
           { name: "Facebook Ads", url: "https://www.fotz-studio.pl/performance-marketing/facebook-ads" },
-          { name: "Lublin", url: "https://www.fotz-studio.pl" }
+          { name: "Lublin", url: "https://www.fotz-studio.pl/performance-marketing/facebook-ads/lublin" }
         ]}/>
       <ServiceSchema
         name="Facebook Ads Lublin"
@@ -32,7 +32,7 @@ export default function FacebookAdsLublin() {
             { name: "Home", path: "/" },
             { name: "Performance Marketing", path: "/performance-marketing" },
             { name: "Facebook Ads", path: "/uslugi/reklama-facebook" },
-            { name: "Lublin", url: "https://www.fotz-studio.pl" }
+            { name: "Lublin", url: "/performance-marketing/facebook-ads/lublin" }
           ]}/>
 
         {/* HERO SECTION */}

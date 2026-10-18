@@ -115,9 +115,25 @@ const cleaned = [
   '/dla-kogo/firmy-lokalne', '/faq', '/uslugi/projekt-strony-internetowej', '/uslugi/identyfikacja-wizualna-firmy',
   '/uslugi/fotografia-z-drona', '/performance-marketing/optymalizacja', '/dla-kogo/ecommerce', '/agencja-marketingowa/koszalin',
 ];
+// Low-traffic city offers cleaned on 18.10. If one is later redirected, remove it from this list.
+const lowTraffic = [
+  '/uslugi/strony-internetowe/krakow', '/uslugi/strony-internetowe/czestochowa', '/pozycjonowanie/gliwice', '/agencja-marketingowa/koszalin',
+  '/performance-marketing/facebook-ads/bydgoszcz', '/performance-marketing/tiktok-ads/wroclaw', '/uslugi/strony-internetowe/gdansk', '/uslugi/pozycjonowanie/szczecin',
+  '/agencja-marketingowa/czestochowa', '/agencja-marketingowa/lublin', '/performance-marketing/facebook-ads/lublin', '/performance-marketing/tiktok-ads/lodz',
+  '/uslugi/strony-internetowe/gdynia', '/uslugi/pozycjonowanie/bialystok', '/agencja-marketingowa/sosnowiec', '/performance-marketing/google-ads/krakow',
+  '/performance-marketing/facebook-ads/rzeszow', '/performance-marketing/tiktok-ads/katowice', '/uslugi/strony-internetowe/bydgoszcz', '/uslugi/pozycjonowanie/torun',
+  '/agencja-marketingowa/zabrze', '/performance-marketing/google-ads/gdansk', '/performance-marketing/facebook-ads/gdynia', '/performance-marketing/facebook-ads/torun',
+  '/uslugi/strony-internetowe/katowice', '/uslugi/pozycjonowanie/bydgoszcz', '/agencja-marketingowa/walbrzych', '/performance-marketing/google-ads/lodz',
+  '/performance-marketing/google-ads/gdynia', '/performance-marketing/google-ads/kielce', '/uslugi/strony-internetowe/rybnik', '/uslugi/pozycjonowanie/radom',
+  '/agencja-marketingowa/elblag', '/performance-marketing/facebook-ads/krakow', '/performance-marketing/google-ads/torun', '/uslugi/sklepy-internetowe/warszawa',
+  '/uslugi/strony-internetowe/opole', '/uslugi/pozycjonowanie/kielce', '/pozycjonowanie/kalisz', '/performance-marketing/google-ads/szczecin',
+  '/uslugi/pozycjonowanie/gdynia', '/agencja-marketingowa-olsztyn', '/uslugi/strony-internetowe/olsztyn', '/agencja-marketingowa/kielce',
+  '/agencja-marketingowa/kalisz', '/performance-marketing/google-ads/lublin', '/performance-marketing/tiktok-ads/warszawa', '/uslugi/strony-internetowe/konin',
+  '/strony-internetowe/walbrzych', '/strony-internetowe/kielce', '/performance-marketing/google-ads/rzeszow', '/performance-marketing/tiktok-ads/krakow',
+];
 const files = routeFiles(new URL('../src/App.tsx', import.meta.url));
 
-for (const path of [...reviewed, ...cleaned]) {
+for (const path of [...reviewed, ...cleaned, ...lowTraffic]) {
   test(`reviewed offer ${path} publishes no unsupported claims`, () => {
     const file = files.get(path);
     assert.ok(file && fs.existsSync(file), `no page source for ${path}`);
