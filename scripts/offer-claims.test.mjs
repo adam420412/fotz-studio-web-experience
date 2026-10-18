@@ -22,6 +22,8 @@ const rejected = [
   ['FOTZ Studio ma siedzibę w Warszawie.', 'office'],
   ['Pakiet START: 1 499 zl/mc.', 'price'],
   ['Gwarancja skuteczności kampanii.', 'guarantee'],
+  ['Zaufało nam 500+ klientów z całej Polski.', 'count'],
+  ['Ponad 8 lat doświadczenia w marketingu.', 'count'],
 ];
 
 // Stated limits that reviewed offers use on purpose.
@@ -39,6 +41,13 @@ test('golden set of rejected claims is still detected', () => {
   for (const [sentence, rule] of rejected) {
     assert.ok(findClaims(sentence).some(item => item.rule === rule), `${rule} not detected: ${sentence}`);
   }
+});
+
+test('animated counter values are read as copy', () => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'claims-'));
+  const file = path.join(dir, 'Page.tsx');
+  fs.writeFileSync(file, 'const stats = [{ value: 150, suffix: "%", label: "więcej rezerwacji" }];\nexport default () => <div>{stats.length}</div>;');
+  assert.deepEqual(findClaims(pageCopy(file)).map(item => item.rule), ['percent']);
 });
 
 test('page copy skips CSS colours and keeps template text', () => {
