@@ -110,7 +110,7 @@ export default function BlogViralMarketingCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Viral Marketing", url: "https://www.fotz-studio.pl" },
+              { name: "Viral Marketing", url: "/blog/viral-marketing-co-to" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Viral Marketing — co to jest i jak działa?

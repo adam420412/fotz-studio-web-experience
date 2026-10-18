@@ -185,7 +185,7 @@ export default function GoogleAdsSzczecin() {
         { name: "Strona główna", url: "/" },
         { name: "Performance Marketing", url: "/performance-marketing" },
         { name: "Google Ads", url: "/performance-marketing/google-ads" },
-        { name: "Szczecin", url: "https://www.fotz-studio.pl" }
+        { name: "Szczecin", url: "/performance-marketing/google-ads/szczecin" }
       ]}/>
 
       {/* Hero Section */}
@@ -459,7 +459,7 @@ export default function GoogleAdsSzczecin() {
                     <Star className="w-6 h-6 text-blue-600 mt-1" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">Specjalizacja w Google Ads</h3>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">Pełny Zakres Google Ads</h3>
                     <p className="text-gray-700">
                       Prowadzimy kampanie Search, Display, Shopping i YouTube — w połączeniu z produkcją video i stronami WWW.
                     </p>

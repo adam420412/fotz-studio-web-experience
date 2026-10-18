@@ -131,7 +131,7 @@ export default function GoogleAdsGdynia() {
             { name: "Strona główna", url: "/" },
             { name: "Performance Marketing", url: "/performance-marketing" },
             { name: "Google Ads", url: "/performance-marketing/google-ads" },
-            { name: "Gdynia", url: "https://www.fotz-studio.pl" },
+            { name: "Gdynia", url: "/performance-marketing/google-ads/gdynia" },
           ]}/>
 
         {/* Hero Section */}

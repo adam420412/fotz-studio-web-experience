@@ -18,22 +18,22 @@ export function TikTokAdsLodz() {
     {
       question: "Ile kosztuje TikTok Ads w Łodzi?",
       answer:
-        "Kampania TikTok Ads w Łodzi może zaczynać się od kilkudziesięciu złotych dziennie na testach. Dla efektywnych kampanii TikTok rekomendujemy budżet minimum 500-1000 PLN dziennie. Koszt zależy od grupy docelowej, formatu reklamowego i celu kampanii. Nasza agencja dostosowuje strategie marketingową do Twojego budżetu i celów sprzedażowych.",
+        "Wycenę obsługi przygotowujemy po rozmowie o zakresie — zależy ona od liczby kampanii, ilości materiałów wideo do wyprodukowania, konfiguracji analityki i częstotliwości raportowania. Budżet reklamowy płacony TikTokowi jest zawsze osobną pozycją; jego wysokość dobieramy do celu kampanii, grupy docelowej i formatu reklamowego.",
     },
     {
       question: "Ile TikTok płaci za 1000 wyświetleń?",
       answer:
-        "Zarabianie na TikToku przez Creator Fund to osobna sprawa od kampanii TikTok Ads. Twórcy otrzymują 0,20-4 USD za 1000 wyświetleń zależnie od lokalizacji. My specjalizujemy się w reklamach TikTok Ads - zarabianiu poprzez kampanie marketingowe, które konwertują Twoją grupę docelową na klientów.",
+        "Zarabianie na TikToku przez Creator Fund to osobna sprawa od kampanii TikTok Ads. Stawki dla twórców ustala TikTok i zależą m.in. od kraju oraz programu. My zajmujemy się reklamami TikTok Ads — kampaniami, które mają zamieniać Twoją grupę docelową w klientów.",
     },
     {
       question: "Jaka jest najlepsza agencja TikTok Ads w Łodzi?",
       answer:
-        "Agencja Fotz.pl to doświadczeni specjaliści od reklamy na TikToku. Nasze kampanie TikTok Ads przyniosły setkom firm w Łodzi wymierne wyniki - zwiększone zasięgi, konwersje i przychody. Zapraszamy na bezpłatną konsultację, by pokazać, jak reklama TikTok może zmienić Twój biznes.",
+        "Najlepiej porównać kilka agencji: zapytać o przykłady kreacji, sposób raportowania i to, kto będzie prowadził kampanię. Fotz Studio pracuje z Poznania, a firmy z Łodzi obsługujemy zdalnie — łączymy prowadzenie kampanii z produkcją wideo. Zapraszamy na bezpłatną konsultację.",
     },
     {
       question: "Dla jakiej branży sprawdza się reklama na TikToku w Łodzi?",
       answer:
-        "Reklama na TikToku działa doskonale dla e-commerce, mody, beauty, edukacji, fitness i usług. Nasza agencja ma doświadczenie z kampaniami TikTok Ads dla wielu sektorów. Platforma jest uniwersalnym kanałem marketingowym - Social media na TikToku angażuje użytkowników niezależnie od branży.",
+        "Reklama na TikToku działa doskonale dla e-commerce, mody, beauty, edukacji, fitness i usług. Strategię i kreacje dopasowujemy do specyfiki branży. Platforma jest uniwersalnym kanałem marketingowym - Social media na TikToku angażuje użytkowników niezależnie od branży.",
     },
     {
       question: "Jakie formaty reklamowe oferuje TikTok Ads?",
@@ -43,12 +43,12 @@ export function TikTokAdsLodz() {
     {
       question: "Jak długo trwa uruchomienie kampanii TikTok Ads?",
       answer:
-        "Typowa kampania TikTok Ads uruchamiana jest w 2-3 tygodnie. Proces obejmuje: analizę grupy docelowej, tworzenie materiałów wideo, konfigurację w TikTok Ads Manager i optymalizację. Nasza agencja pracuje sprawnie, by Twoja reklama na TikToku trafiła do odbiorców jak najszybciej.",
+        "Czas uruchomienia zależy od zakresu — głównie od produkcji materiałów wideo i akceptacji kreacji. Proces obejmuje: analizę grupy docelowej, tworzenie materiałów wideo, konfigurację w TikTok Ads Manager i optymalizację. Nasza agencja pracuje sprawnie, by Twoja reklama na TikToku trafiła do odbiorców jak najszybciej.",
     },
     {
       question: "Czy TikTok Ads działa dla firm B2B?",
       answer:
-        "Tak, reklama na TikToku może działać dla B2B, wymaga to jednak dedykowanej strategii. TikTok to przede wszystkim platforma dla Gen Z, ale rosnące grono profesjonalistów aktywnie korzysta z serwisu. Nasza agencja ma doświadczenie z kampaniami TikTok Ads dla firm B2B.",
+        "Tak, reklama na TikToku może działać dla B2B, wymaga to jednak dedykowanej strategii. TikTok to przede wszystkim platforma dla Gen Z, ale rosnące grono profesjonalistów aktywnie korzysta z serwisu. Dla firm B2B zaczynamy od testów na mniejszą skalę i sprawdzamy, czy platforma dociera do decydentów.",
     },
     {
       question: "Dlaczego kampania TikTok Ads nie przynosi wyników?",
@@ -68,7 +68,7 @@ export function TikTokAdsLodz() {
 
       <ServiceSchema
         name="TikTok Ads Łódź"
-        description="Agencja kampanii reklamowych TikTok Ads w Łodzi. Specjalizujemy się w tworzeniu kampanii, In-Feed Ads, Spark Ads i kreatywnych materiałów wideo."
+        description="Kampanie reklamowe TikTok Ads dla firm z Łodzi, prowadzone zdalnie z Poznania: In-Feed Ads, Spark Ads i kreatywne materiały wideo."
         areaServed="Łódź"
         provider="Fotz"
       />
@@ -85,7 +85,7 @@ export function TikTokAdsLodz() {
               TikTok Ads Łódź — Kampanie Reklamowe dla Twojej Marki
             </h1>
             <p className="text-xl sm:text-2xl text-blue-100 mb-8">
-              TikTok Ads Lodz — profesjonalne kampanie reklamowe TikTok dla firm z Lodza i Centralnej Polski. Dotrzemy do młodych odbiorców i zwiększamy sprzedaż. Bezpłatna konsultacja.</p>
+              TikTok Ads Łódź — kampanie reklamowe TikTok dla firm z Łodzi i centralnej Polski, prowadzone zdalnie z Poznania. Pomagamy dotrzeć do młodych odbiorców z ofertą sprzedażową. Bezpłatna konsultacja.</p>
             <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-white text-blue-700 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">
               Uzyskaj bezpłatną konsultację
             </a>
@@ -101,7 +101,7 @@ export function TikTokAdsLodz() {
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-semibold mb-3">Wysoki Zasięgi Angażowania</h3>
                 <p className="text-gray-700">
-                  Reklama na TikToku to dostęp do milionów użytkowników. TikTok Ads Manager pozwala na precyzyjne targetowanie grupy docelowej. Kampanie TikTok osiągają wysoki engagement i konwersje dla firm z Łodzi.
+                  Reklama na TikToku to dostęp do milionów użytkowników. TikTok Ads Manager pozwala na precyzyjne targetowanie grupy docelowej. Kampanie można zawęzić do odbiorców z Łodzi i regionu.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
@@ -141,7 +141,7 @@ export function TikTokAdsLodz() {
               <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
                 <h3 className="text-lg font-bold mb-2">TopView Ads</h3>
                 <p className="text-gray-700">
-                  Premiowa pozycja — pierwsza reklama po otwarciu aplikacji. TopView Ads gwarantuje maksymalny zasięgi dla kampanii o wysokim budżecie. Format reklamowy dla marek szukających maksymalnej widoczności.
+                  Premiowa pozycja — pierwsza reklama po otwarciu aplikacji. TopView Ads zapewnia bardzo dużą widoczność, ale wymaga wysokiego budżetu. Format reklamowy dla marek szukających maksymalnej widoczności.
                 </p>
               </div>
               <div className="bg-green-50 border-l-4 border-green-500 p-6 rounded">
@@ -201,7 +201,7 @@ export function TikTokAdsLodz() {
                 <div>
                   <h3 className="text-lg font-semibold mb-2">Zwiększenie Sprzedaży E-commerce</h3>
                   <p className="text-gray-700">
-                    Kampanie TikTok Ads z optymalizacją konwersji. Materiały wideo reklamowe kierują użytkowników do Twoich produktów. Reklama na TikToku dla e-commerce to sprawdzony sposób na wzrost przychodu i sprzedaży online.
+                    Kampanie TikTok Ads z optymalizacją konwersji. Materiały wideo reklamowe kierują użytkowników do Twoich produktów. Reklama na TikToku dla e-commerce to kanał, który warto testować przy sprzedaży online.
                   </p>
                 </div>
               </div>
@@ -212,7 +212,7 @@ export function TikTokAdsLodz() {
                 <div>
                   <h3 className="text-lg font-semibold mb-2">Zaangażowanie i Interakcja</h3>
                   <p className="text-gray-700">
-                    Reklama na TikToku angażuje jak żaden inny format marketingu. Kampanie TikTok Ads budują interaktywne doświadczenie i wspólnotę wokół marki. Social media na tej platformie to naturalny sposób komunikacji z audience.
+                    Reklama na TikToku opiera się na krótkich, angażujących formach wideo. Kampanie TikTok Ads budują interaktywne doświadczenie i wspólnotę wokół marki. Social media na tej platformie to naturalny sposób komunikacji z audience.
                   </p>
                 </div>
               </div>
@@ -316,7 +316,7 @@ export function TikTokAdsLodz() {
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-lg font-semibold mb-3">Doświadczenie i Ekspertyza w TikTok Ads</h3>
                 <p className="text-gray-700">
-                  Nasza agencja ma wieloletnie doświadczenie w prowadzeniu kampanii TikTok Ads dla różnych branż. Znamy platformę, jej algorytmy i najnowsze trendy w reklamie na TikToku. Social media marketing to nasza specjalność.
+                  Prowadzimy kampanie social media i Meta Ads, a TikTok Ads planujemy w oparciu o te same zasady: testy kreacji, analiza danych i optymalizacja. Śledzimy zmiany platformy i trendy w reklamie na TikToku.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
@@ -334,7 +334,7 @@ export function TikTokAdsLodz() {
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-lg font-semibold mb-3">Transparentne Raporty i Metryk</h3>
                 <p className="text-gray-700">
-                  Dostarczamy jasne raporty z wynikami kampanii TikTok Ads. Znasz dokładnie, jak nasza reklama na TikToku wpłynęła na Twój biznes — zasięgi, konwersję, angażowanie i ROI. Marketing to inwestycja - pokazujemy zwrot.
+                  Dostarczamy jasne raporty z wynikami kampanii TikTok Ads. Znasz dokładnie, jak nasza reklama na TikToku wpłynęła na Twój biznes — zasięgi, konwersję, angażowanie i ROI. Marketing to inwestycja — pokazujemy, co przynosi.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
@@ -346,7 +346,7 @@ export function TikTokAdsLodz() {
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-lg font-semibold mb-3">Support i Konsultacje na Każdym Etapie</h3>
                 <p className="text-gray-700">
-                  Jesteśmy zawsze dostępni dla naszych klientów. Marketing na TikToku to dynamiczny proces — odpowiadamy na pytania i udzielamy porad w każdym kroku kampanii. Nasza agencja to Twój partner w sukcesie na platformie.
+                  Jesteśmy dostępni w ustalonych godzinach i kanałach kontaktu. Marketing na TikToku to dynamiczny proces — odpowiadamy na pytania i udzielamy porad w każdym kroku kampanii. Pracujemy z Poznania, a firmy z Łodzi obsługujemy zdalnie.
                 </p>
               </div>
             </div>

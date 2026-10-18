@@ -100,7 +100,7 @@ export default function BlogCustomerAcquisitionCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Customer Acquisition", url: "https://www.fotz-studio.pl" },
+              { name: "Customer Acquisition", url: "/blog/customer-acquisition-co-to" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Customer Acquisition — co to jest i jak liczyć CAC?

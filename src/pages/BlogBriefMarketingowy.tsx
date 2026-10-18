@@ -205,7 +205,7 @@ const BlogBriefMarketingowy = () => {
                     num: "4",
                     title: "Główne przesłanie / propozycja wartości",
                     desc: "Co chcesz przekazać? Jeden zdanie, które podsumowuje, dlaczego klient powinien wybrać właśnie Ciebie. Twój USP (Unique Selling Proposition). Co Cię odróżnia od konkurencji?",
-                    example: "Przykład: \"Jesteśmy jedyną agencją w Poznaniu, która łączy profesjonalną produkcję wideo z własnym studiem z kompleksową obsługą marketingową — bez podwykonawców.\""
+                    example: "Przykład: \"Jesteśmy jedyną agencją w Poznaniu, która łączy profesjonalną produkcję wideo z własnym studiem z kompleksową obsługą marketingową.\""
                   },
                   {
                     num: "5",

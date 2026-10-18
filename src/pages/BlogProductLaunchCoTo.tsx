@@ -115,7 +115,7 @@ export default function BlogProductLaunchCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Product Launch", url: "https://www.fotz-studio.pl" },
+              { name: "Product Launch", url: "/blog/product-launch-co-to" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Product Launch — co to jest i jak zaplanować premierę?

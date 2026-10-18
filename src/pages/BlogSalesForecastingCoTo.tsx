@@ -114,7 +114,7 @@ export default function BlogSalesForecastingCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Sales Forecasting", url: "https://www.fotz-studio.pl" },
+              { name: "Sales Forecasting", url: "/blog/sales-forecasting-prognozowanie-sprzedazy" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Sales Forecasting — co to jest i jak prognozować sprzedaż?

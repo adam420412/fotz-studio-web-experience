@@ -10,20 +10,14 @@ import {
   Palette,
   MessageSquare,
   Settings,
-  TrendingUp,
   Handshake,
   Phone,
   Smartphone,
   Shield,
   Headphones,
-  MapPin,
   ArrowRight,
   Server,
-  FileCode,
   Sparkles,
-  BarChart3,
-  Users,
-  Building2
 } from "lucide-react";
 import {
   Accordion,
@@ -57,7 +51,7 @@ const StronyInternetoweKatowice = () => {
     { icon: Smartphone, title: "Responsywność", desc: "Tworzymy responsywne strony internetowe działające na wszystkich urządzeniach." },
     { icon: Shield, title: "Bezpieczeństwo", desc: "Certyfikat SSL, kopie zapasowe i regularne aktualizacje." },
     { icon: Headphones, title: "Wsparcie techniczne", desc: "Kompleksowa obsługa stron internetowych po uruchomieniu." },
-    { icon: Sparkles, title: "Lokalna znajomość rynku", desc: "Śląska metropolia to miliony potencjalnych klientów w zasięgu. Tworzymy strony dla firm chcących dotrzeć do całego Górnośląskiego Obszaru Metropolitalnego." },
+    { icon: Sparkles, title: "Współpraca zdalna", desc: "Pracujemy z Poznania, firmy z Katowic i Śląska obsługujemy zdalnie. Tworzymy strony dla firm chcących dotrzeć do klientów z całej metropolii." },
   ];
 
   const pricing = [
@@ -77,7 +71,7 @@ const StronyInternetoweKatowice = () => {
     {
       title: "Apartamenty Chorwacja",
       category: "Strona rezerwacyjna",
-      result: "+180% rezerwacji online",
+      result: "Strona z rezerwacjami online",
       link: "/realizacje/apartamenty-chorwacja",
       image: apartamentyImg
     },
@@ -91,7 +85,7 @@ const StronyInternetoweKatowice = () => {
     {
       title: "Cute Dumpling",
       category: "Strona gastronomiczna",
-      result: "+250% ruchu organicznego",
+      result: "Strona dla lokalu gastronomicznego",
       link: "/realizacje/cute-dumpling",
       image: cuteDumplingImg
     },
@@ -100,7 +94,7 @@ const StronyInternetoweKatowice = () => {
   const faqItems = [
     {
       question: "Strony internetowe Katowice: Co to obejmuje i dlaczego warto?",
-      answer: "Usługa stron internetowych Katowice obejmuje projekt graficzny, projektowanie stron internetowych, budowę strony oraz wdrożenie responsywnej witryny. Lokalna agencja ma doświadczenie w tworzeniu stron dla firm z Katowic, zna potrzeby klientów i może szybciej reagować przy obsłudze stron internetowych."
+      answer: "Usługa stron internetowych Katowice obejmuje projekt graficzny, projektowanie stron internetowych, budowę strony oraz wdrożenie responsywnej witryny. Pracujemy z Poznania, a firmy z Katowic obsługujemy zdalnie — spotkania, akceptacje i poprawki odbywają się online."
     },
     {
       question: "Tworzenie stron www Katowice: Jak wygląda proces?",
@@ -120,7 +114,7 @@ const StronyInternetoweKatowice = () => {
     },
     {
       question: "Obsługa stron internetowych: Czy oferujecie wsparcie po uruchomieniu?",
-      answer: "Tak — oferujemy kompleksową obsługę stron internetowych obejmującą aktualizacje, backupy, optymalizację wydajności i poprawki bezpieczeństwa. Zapewniamy, że witryna działa bez przerw i pomaga przyciągać więcej klientów."
+      answer: "Tak — oferujemy kompleksową obsługę stron internetowych obejmującą aktualizacje, backupy, optymalizację wydajności i poprawki bezpieczeństwa. Dbamy o to, by witryna działała sprawnie i była aktualna."
     },
     {
       question: "Pozycjonowanie: Czy budowa strony wpływa na widoczność w wyszukiwarkach?",
@@ -209,35 +203,6 @@ const StronyInternetoweKatowice = () => {
           </div>
         </section>
 
-        {/* Katowice Stats Section */}
-        <section className="py-12 bg-card/40 border-y border-border/30">
-          <div className="container mx-auto px-4">
-            <FadeInView>
-              <div className="text-center mb-8">
-                <span className="text-primary text-sm font-medium uppercase tracking-wider mb-2 block">Śląsk w liczbach</span>
-                <h2 className="text-2xl sm:text-3xl font-heading font-bold mb-2">Katowice i Górnośląski Obszar Metropolitalny</h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto text-sm sm:text-base">
-                  Metropolia katowicka skupia ponad 2 mln mieszkańców — jeden z największych rynków konsumenckich w Polsce Central-Wschodniej.
-                </p>
-              </div>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-                {[
-                  { icon: Users, value: "2 mln+", label: "mieszkańców metropolii" },
-                  { icon: Building2, value: "120 tys.", label: "firm na Śląsku" },
-                  { icon: BarChart3, value: "Top 3", label: "rynek e-commerce w PL" },
-                  { icon: Globe, value: "79%", label: "zakupów zaczyna online" },
-                ].map((stat, i) => (
-                  <div key={i} className="text-center p-4 rounded-xl bg-background border border-border/40">
-                    <stat.icon className="w-8 h-8 text-primary mx-auto mb-2" />
-                    <div className="text-2xl font-bold text-primary">{stat.value}</div>
-                    <div className="text-xs text-muted-foreground mt-1">{stat.label}</div>
-                  </div>
-                ))}
-              </div>
-            </FadeInView>
-          </div>
-        </section>
-
         {/* Katowice local context section */}
         <section className="py-12 md:py-16">
           <div className="container mx-auto px-4">
@@ -249,7 +214,7 @@ const StronyInternetoweKatowice = () => {
                     Katowice to centrum gospodarcze województwa śląskiego, skupiające firmy z branży przemysłowej,
                     hutniczej, IT oraz sektora usługowego. <strong>Tworzymy strony internetowe dla firm z Katowic</strong>,
                     które chcą zwiększyć swoją widoczność online i zbudować silną pozycję w Internecie.
-                    Nasze doświadczenie obejmuje sektory:
+                    Tworzymy strony m.in. dla sektorów:
                   </p>
                   <ul>
                     <li><strong>Przemysł i produkcja</strong> — strony B2B dla firm produkcyjnych i dostawców komponentów</li>
@@ -258,8 +223,8 @@ const StronyInternetoweKatowice = () => {
                     <li><strong>Gastronomia i hotelarstwo</strong> — restauracje, hotele i obiekty eventowe w metropolii</li>
                   </ul>
                   <p>
-                    Znamy specyfikę rynku śląskiego — rozumiemy potrzeby firm działających w <strong>Górnośląskim Obszarze Metropolitalnym (GOM)</strong>,
-                    który łączy 41 miast, w tym Gliwice, Bytom, Sosnowiec, Zabrze i Chorzów. Tworzymy strony,
+                    Pracujemy z Poznania, a firmy działające w <strong>Górnośląskim Obszarze Metropolitalnym (GOM)</strong>,
+                    m.in. z Katowic, Gliwic, Bytomia, Sosnowca, Zabrza i Chorzowa, obsługujemy zdalnie. Tworzymy strony,
                     które docierają do klientów z całego regionu.
                   </p>
                 </div>
@@ -285,9 +250,9 @@ const StronyInternetoweKatowice = () => {
                   
                   <h3>Korzyści z lokalnego podejścia</h3>
                   <p>
-                    Wybierając <Link to="/agencja-marketingowa/poznan" className="text-primary hover:underline">agencję</Link> z 
-                    doświadczeniem do tworzenia stron www, zyskujesz partnera, który doskonale rozumie specyfikę lokalnego rynku. 
-                    Specjalista potrafi zaprojektować stronę dopasowaną do potrzeb lokalnych klientów z Katowic i całego Śląska.
+                    Wybierając <Link to="/agencja-marketingowa/poznan" className="text-primary hover:underline">agencję</Link> do 
+                    tworzenia stron www, zyskujesz partnera, który przed projektem analizuje Twoją branżę i konkurencję. 
+                    Pracujemy z Poznania, a firmy z Katowic i całego Śląska obsługujemy zdalnie.
                   </p>
                   
                   <h3>Wsparcie dla lokalnych firm</h3>
@@ -430,7 +395,7 @@ const StronyInternetoweKatowice = () => {
 
             <FadeInView delay={0.3}>
               <p className="text-center text-muted-foreground mt-8 max-w-2xl mx-auto text-sm">
-                * Ceny orientacyjne. Ostateczna wycena zależy od zakresu funkcjonalności i złożoności projektu.
+                * Wycenę przygotowujemy po rozmowie o zakresie. Zależy ona od liczby podstron, funkcjonalności, integracji i złożoności projektu.
               </p>
             </FadeInView>
           </div>
@@ -498,7 +463,7 @@ const StronyInternetoweKatowice = () => {
                 <div className="prose prose-invert max-w-none">
                   <h2>Strony internetowe Katowice — centrum biznesu Górnośląskiego Obszaru Metropolitalnego</h2>
                   <p>
-                    Katowice to centrum GOM-u (Górnośląski Obszar Metropolitalny) — konurbacji 2,2 mln mieszkańców, jednej z największych aglomeracji w Polsce. Dla firm z Katowic, Gliwic, Bytomia, Zabrza, Chorzowa czy Rudy Śląskiej, dobrze zaprojektowana <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">strona internetowa</Link> to kluczowe narzędzie dotarcia do klientów z całego Śląska.
+                    Katowice to centrum GOM-u (Górnośląski Obszar Metropolitalny) — jednej z największych aglomeracji w Polsce. Dla firm z Katowic, Gliwic, Bytomia, Zabrza, Chorzowa czy Rudy Śląskiej, dobrze zaprojektowana <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">strona internetowa</Link> to kluczowe narzędzie dotarcia do klientów z całego Śląska.
                   </p>
                   <p>
                     Katowicka gospodarka przechodzi transformację: od przemysłu ciężkiego (węgiel, stal) do usług, technologii (GovTech, FinTech) i kultury (Muzeum Śląskie, NOSPR, Spodek jako symbol nowoczesności). Firmy z regionu potrzebują stron, które komunikują nowoczesność i wiarygodność — zarówno dla klientów B2C, jak i wymagających partnerów B2B.
@@ -506,15 +471,15 @@ const StronyInternetoweKatowice = () => {
 
                   <h2>Branże w Katowicach, dla których tworzymy strony www</h2>
                   <p>
-                    Specjalizujemy się w tworzeniu stron internetowych dla firm z kluczowych sektorów katowickiego rynku: <strong>górnictwa i energetyki</strong> (dostawcy i podwykonawcy JSW, Tauron), <strong>budownictwa i nieruchomości</strong> (dynamiczny rynek deweloperski GOM), <strong>usług medycznych i rehabilitacyjnych</strong>, <strong>branży motoryzacyjnej</strong> (liczne salony i serwisy w aglomeracji), <strong>HoReCa</strong> (restauracje w centrum Katowic, hotele przy Spodku) oraz startupów technologicznych z Katowickiej Strefy Ekonomicznej.
+                    Tworzymy strony internetowe dla firm z ważnych sektorów katowickiego rynku: <strong>górnictwa i energetyki</strong> (np. dostawcy i podwykonawcy dużych spółek), <strong>budownictwa i nieruchomości</strong>, <strong>usług medycznych i rehabilitacyjnych</strong>, <strong>branży motoryzacyjnej</strong> (salony i serwisy), <strong>HoReCa</strong> (restauracje w centrum Katowic, hotele przy Spodku) oraz startupów technologicznych z Katowickiej Strefy Ekonomicznej.
                   </p>
 
                   <h2>Dlaczego Fotz Studio dla firm ze Śląska?</h2>
                   <p>
-                    Tworzymy strony w 100% zdalnie dla firm z całej Polski — w tym z Katowic i całego Śląska. Nasz proces jest przejrzysty: bezpłatna konsultacja → projekt UX/UI w Figma → wdrożenie → testy → launch. Wszystkie strony są optymalizowane pod lokalne słowa kluczowe (np. &quot;strony internetowe Katowice&quot;, &quot;agencja marketingowa Śląsk&quot;) i mają pełne SEO techniczne w cenie.
+                    Pracujemy z Poznania i tworzymy strony w pełni zdalnie dla firm z całej Polski — w tym z Katowic i całego Śląska. Nasz proces jest przejrzysty: bezpłatna konsultacja → projekt UX/UI w Figma → wdrożenie → testy → launch. Wszystkie strony są optymalizowane pod lokalne słowa kluczowe (np. &quot;strony internetowe Katowice&quot;, &quot;agencja marketingowa Śląsk&quot;) i mają pełne SEO techniczne w cenie.
                   </p>
                   <p>
-                    Potrzebujesz strony dla firmy z Katowic lub z całego Śląska? <Link to="/kontakt" className="text-primary hover:underline">Umów bezpłatną konsultację</Link> — odpowiemy w ciągu 24 godzin.
+                    Potrzebujesz strony dla firmy z Katowic lub z całego Śląska? <Link to="/kontakt" className="text-primary hover:underline">Umów bezpłatną konsultację</Link> — omówimy zakres i przygotujemy wycenę.
                   </p>
                 </div>
               </FadeInView>
@@ -612,10 +577,10 @@ const StronyInternetoweKatowice = () => {
               Strony internetowe Katowice — rynek lokalny i specyfika regionu
             </h2>
             <p className="text-muted-foreground mb-4">
-              Katowice to serce Górnośląskiego Obszaru Metropolitalnego — największej aglomeracji w Polsce z ponad 2 milionami mieszkańców. Transformacja z miasta przemysłowego w centrum kultury, technologii i eventów (NOSPR, Spodek) przyciąga firmy z branż kreatywnych, IT, logistyki i nowych technologii. Strony internetowe dla firm z Katowic muszą wyróżniać się na tle silnej regionalnej konkurencji.
+              Katowice to serce Górnośląskiego Obszaru Metropolitalnego — jednej z największych aglomeracji w Polsce. Transformacja z miasta przemysłowego w centrum kultury, technologii i eventów (NOSPR, Spodek) przyciąga firmy z branż kreatywnych, IT, logistyki i nowych technologii. Strony internetowe dla firm z Katowic muszą wyróżniać się na tle silnej regionalnej konkurencji.
             </p>
             <p className="text-muted-foreground mb-6">
-              Fotz Studio tworzy strony internetowe dla firm z Katowic w modelu w pełni zdalnym — bez kompromisów w jakości. Każdy projekt realizuje nasz własny zespół: projektant UX/UI, developer i specjalista SEO. Żadnych podwykonawców, żadnych szablonów kupowanych hurtowo. Efekt? Strony, które wyróżniają się na lokalnym rynku i konwertują odwiedzających w klientów.
+              Fotz Studio pracuje z Poznania i tworzy strony internetowe dla firm z Katowic w modelu w pełni zdalnym. Nad projektem pracują projektant UX/UI, developer i specjalista SEO, a celem jest strona, która wyróżnia się na lokalnym rynku i ułatwia klientom kontakt.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
@@ -625,7 +590,7 @@ const StronyInternetoweKatowice = () => {
               Tworzenie strony internetowej dla firmy z Katowic zaczynamy od bezpłatnej konsultacji — omawiamy cel strony, grupę docelową, budżet i harmonogram. Następnie przygotowujemy brief kreatywny i analizę konkurencji. Projekt graficzny powstaje w Figma i jest akceptowany przez Ciebie przed startem kodowania. Po uruchomieniu strony masz pełne dostępy i możesz samodzielnie edytować treści.
             </p>
             <p className="text-muted-foreground mb-6">
-              Czas realizacji strony wizytówkowej to 2–3 tygodnie, strony firmowej 4–8 tygodni. Nasze strony są objęte 30-dniową gwarancją po wdrożeniu — wszelkie błędy po uruchomieniu poprawiamy bezpłatnie.
+              Czas realizacji zależy od zakresu — harmonogram podajemy po ustaleniu wymagań. Nasze strony są objęte 30-dniową gwarancją po wdrożeniu — wszelkie błędy po uruchomieniu poprawiamy bezpłatnie.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">

@@ -125,7 +125,7 @@ export default function BlogInformationArchitectureCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Architektura Informacji", url: "https://www.fotz-studio.pl" },
+              { name: "Architektura Informacji", url: "/blog/information-architecture-co-to" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Architektura Informacji — co to jest i jak ją projektować?

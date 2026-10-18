@@ -126,7 +126,7 @@ export default function BlogThoughtLeadershipCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Thought Leadership", url: "https://www.fotz-studio.pl" },
+              { name: "Thought Leadership", url: "/blog/thought-leadership-co-to" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Thought Leadership — co to jest i jak budować autorytet?

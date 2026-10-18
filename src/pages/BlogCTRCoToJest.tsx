@@ -35,7 +35,7 @@ export default function BlogCTRCoToJest() {
     { title: "Tytuł meta (Title Tag)", desc: "Najważniejszy czynnik CTR w Google. Zawieraj główne słowo kluczowe, liczby (np. '7 sposobów'), emocjonalne słowa ('bezpłatny', 'prosty', 'kompletny')." },
     { title: "Meta description", desc: "Opis pod tytułem w Google — nie wpływa na ranking, ale bardzo na CTR. Pisz jak reklamę: korzyści, CTA, odpowiedź na pytanie użytkownika." },
     { title: "Rich Snippets / Schema", desc: "Oceny gwiazdkowe, FAQ, breadcrumbs w wynikach Google mogą podnieść CTR — wyróżniasz się wizualnie." },
-    { title: "URL strony", desc: "Krótki, czytelny URL zawierający słowo kluczowe. fotz.pl/blog/ctr-co-to > fotz.pl/blog/?p=1234." },
+    { title: "URL strony", desc: "Krótki, czytelny URL zawierający słowo kluczowe. fotz-studio.pl/blog/ctr-co-to > fotz-studio.pl/blog/?p=1234." },
     { title: "Testowanie tytułów", desc: "W Google Search Console sprawdzaj CTR dla każdej strony. Niski CTR przy wysokiej pozycji = zły tytuł — testuj alternatywy." },
   ];
 
@@ -53,7 +53,7 @@ export default function BlogCTRCoToJest() {
     {
       question: "Jak CTR wpływa na SEO?",
       answer:
-        "CTR jest czynnikiem rankingowym Google — strony z wyższym CTR dla danego zapytania mogą zyskiwać wyższe pozycje (Google interpretuje to jako lepsze dopasowanie do intencji użytkownika). Zależność działa w dwie strony: wyższa pozycja = wyższy CTR, ale też wyższy CTR może wspierać pozycję. Dlatego optymalizacja meta tagów (title + description) to element SEO.",
+        "Wpływ CTR na pozycje jest przedmiotem sporów wśród specjalistów SEO, a Google nie publikuje jego wagi. Pewne jest jedno: wyższa pozycja zwykle daje wyższy CTR, a lepszy tytuł i opis przyciągają więcej kliknięć przy tej samej pozycji. Dlatego optymalizacja meta tagów (title + description) to element SEO.",
     },
     {
       question: "Jak zwiększyć CTR w wynikach Google?",

@@ -53,7 +53,7 @@ const auditAreas = [
   {
     step: "2",
     area: "Szybkość ładowania strony",
-    description: "Sprawdź Page Speed Insights, Core Web Vitals (LCP, FID, CLS), czas TTFB. Optymalizuj obrazy, minimalizuj CSS/JS, włącz cache.",
+    description: "Sprawdź Page Speed Insights, Core Web Vitals (LCP, INP, CLS), czas TTFB. Optymalizuj obrazy, minimalizuj CSS/JS, włącz cache.",
     tools: "Google PageSpeed Insights, GTmetrix, WebPageTest",
     priority: "Krytical"
   },
@@ -421,7 +421,7 @@ export default function BlogAudytSEOKrok() {
                       <div>
                         <h3 className="text-xl font-bold text-white mb-2">Analiza Wydajności (Core Web Vitals)</h3>
                         <p className="text-gray-300 leading-relaxed">
-                          Przejdź do Google PageSpeed Insights i wklej URL. Zwróć uwagę na: LCP (Largest Contentful Paint - pod 2.5s to dobrze), FID (First Input Delay), CLS (Cumulative Layout Shift - pod 0.1). Jeśli wyniki są poniżej 75 punktów, jest dużo do zrobienia. Sprawdź GTmetrix, aby zobaczyć waterfalls i konkretne rekomendacje.
+                          Przejdź do Google PageSpeed Insights i wklej URL. Zwróć uwagę na: LCP (Largest Contentful Paint - pod 2.5s to dobrze), INP (Interaction to Next Paint – od 2024 zastąpił FID), CLS (Cumulative Layout Shift - pod 0.1). Jeśli wyniki są poniżej 75 punktów, jest dużo do zrobienia. Sprawdź GTmetrix, aby zobaczyć waterfalls i konkretne rekomendacje.
                         </p>
                       </div>
                     </div>

@@ -302,7 +302,7 @@ const BlogPozycjonowanieLokalnePoradnik = () => {
                 </p>
 
                 <ul className="space-y-3 mb-6 text-muted-foreground">
-                  <li>• <strong>Katalogi branżowe:</strong> Pudelek.pl (gastronomia), Allegro Usługi, Goldenline</li>
+                  <li>• <strong>Katalogi branżowe:</strong> katalogi i serwisy branżowe właściwe dla Twojej branży, Allegro Lokalnie (usługi)</li>
                   <li>• <strong>Katalogi lokalne:</strong> Mapy Google, Tripadvisor, Yelp, PagesJaunes (Francja)</li>
                   <li>• <strong>Portale biznesowe:</strong> Biznesradar, ForumBiznesu, B2B.pl</li>
                   <li>• <strong>Media lokalne:</strong> Strony gazet lokalnych, portale społeczności</li>

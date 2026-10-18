@@ -135,7 +135,7 @@ export default function BlogMeddicCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "MEDDIC", url: "https://www.fotz-studio.pl" },
+              { name: "MEDDIC", url: "/blog/meddic-kwalifikacja-sprzedazy-b2b" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             MEDDIC — co to jest i jak kwalifikować deale B2B?

@@ -10,35 +10,35 @@ export default function GoogleAdsKrakow() {
   const faqItems = [
     {
       question: "Ile kosztuje Google Ads w Krakowie?",
-      answer: "Google Ads w Krakowie zaczyna się od 400 zł/miesiąc za zarządzanie kampanią (pakiet START). Dodatkowy budżet reklamowy to osobna pozycja — od 500 zł/miesiąc dla małych firm do 10 000+ zł/miesiąc dla e-commerce i salonów. Całkowity koszt zależy od branży i konkurencji na słowa kluczowe.",
+      answer: "Wycenę obsługi przygotowujemy po rozmowie o zakresie: liczbie i typie kampanii, liczbie produktów lub usług, potrzebnym trackingu i częstotliwości raportów. Budżet reklamowy płacony Google jest zawsze osobną pozycją, a jego wysokość zależy od branży, celu i konkurencji na słowa kluczowe.",
     },
     {
       question: "Jak długo trwa uruchomienie kampanii Google Ads w Krakowie?",
-      answer: "Kampanię można uruchomić w ciągu 24-48 godzin od podpisania umowy. Obejmuje to: audit konkurencji, badanie słów kluczowych, tworzenie struktury kampanii, konfigurację trackingu konwersji i wdrożenie. Pierwsze wyniki są widoczne po kilku dniach, pełna optymalizacja trwa 2-4 tygodnie.",
+      answer: "Termin startu ustalamy w ofercie — zależy od zakresu i od tego, czy masz już konto i tracking. Przygotowanie obejmuje: audyt konkurencji, badanie słów kluczowych, tworzenie struktury kampanii, konfigurację trackingu konwersji i wdrożenie. Po uruchomieniu kampania zbiera dane, a optymalizacja trwa przez cały czas współpracy.",
     },
     {
       question: "Czy potrzebuję certyfikatu Google do uruchomienia reklam w Krakowie?",
-      answer: "Nie — certyfikat Google nie jest wymagany do uruchomienia kampanii. Wymagane jest jednak konto Google Ads. My, jako agencja certyfikowana, prowadzimy całą konfigurację, optymalizację i zarządzanie kampaniami. Ty masz dostęp do pełnych danych i raportów w panelu Google Ads.",
+      answer: "Nie — certyfikat Google nie jest wymagany do uruchomienia kampanii. Wymagane jest jednak konto Google Ads. My prowadzimy całą konfigurację, optymalizację i zarządzanie kampaniami. Ty masz dostęp do pełnych danych i raportów w panelu Google Ads.",
     },
     {
       question: "Jaka jest minimalna kwota budżetu na Google Ads w Krakowie?",
-      answer: "Minimalna kwota budżetu to 500 zł/miesiąc dla małych firm lokalnych. Rekomendujemy jednak minimum 1 500 zł/miesiąc, aby kampania miała wystarczająco danych do optymalizacji. W Krakowie, rynek średni pod względem konkurencji, budżet 1 500-3 000 zł/miesiąc zapewnia bardzo dobre wyniki.",
+      answer: "Google nie narzuca wysokiego minimum, ale budżet powinien pozwolić kampanii zebrać wystarczająco danych do optymalizacji. Wysokość budżetu dobieramy wspólnie po analizie słów kluczowych, kosztów kliknięć w Twojej branży i celu kampanii. Budżet płacisz bezpośrednio Google, osobno od opłaty za obsługę.",
     },
     {
       question: "Jak agencja rozlicza się za kampanie Google Ads?",
-      answer: "Rozliczamy się na podstawie modelu: opłata za zarządzanie kampanią (400-1 500 zł/miesiąc) + budżet reklamowy, który wydajesz w Google Ads (płacisz bezpośrednio Google). Całkowita transparentność — wszystkie raportowanie co miesiąc.",
+      answer: "Rozliczamy się w modelu: opłata za zarządzanie kampanią (wycena po rozmowie o zakresie) + budżet reklamowy, który wydajesz w Google Ads (płacisz bezpośrednio Google). Raport z wydatków i wyników przekazujemy co miesiąc.",
     },
     {
       question: "Jakie branże w Krakowie korzystają z Google Ads?",
-      answer: "Kampanie Google Ads działają efektywnie dla wszystkich branż w Krakowie: restauracje, turyści i hotele, szkołenia branżowe, sklepy internetowe, agencje nieruchomości, studia fotograficzne, usługi edukacyjne, szkoły nauki jazdy, beauty/spa. Każda branża ma inną strategię — hotele targetują turystów z Google Maps, restauracje robią remarketing, e-commerce skaluje Performance Max.",
+      answer: "Kampanie Google Ads sprawdzają się w wielu branżach w Krakowie: restauracje, turyści i hotele, szkołenia branżowe, sklepy internetowe, agencje nieruchomości, studia fotograficzne, usługi edukacyjne, szkoły nauki jazdy, beauty/spa. Każda branża ma inną strategię — hotele targetują turystów z Google Maps, restauracje robią remarketing, e-commerce skaluje Performance Max.",
     },
     {
       question: "Czy Google Ads da efekty dla małej firmy w Krakowie?",
-      answer: "Tak — Google Ads są idealnym kanałem dla małych firm w Krakowie. Płacisz tylko za kliknięcia, możesz precyzyjnie targetować swoją grupę docelową (lokalizacja, słowa kluczowe, demografia), i masz pełne śledzenie zwrotu z inwestycji (ROI). Wiele naszych klientów z Krakowa to małe firmy, które zarabiają na Google Ads od pierwszego miesiąca.",
+      answer: "Tak — Google Ads są idealnym kanałem dla małych firm w Krakowie. Płacisz tylko za kliknięcia, możesz precyzyjnie targetować swoją grupę docelową (lokalizacja, słowa kluczowe, demografia), i masz pełne śledzenie zwrotu z inwestycji (ROI). Nie gwarantujemy zysku od pierwszego miesiąca — efekty zależą od oferty, strony i konkurencji, dlatego zaczynamy od budżetu, który pozwala bezpiecznie przetestować kampanię.",
     },
     {
       question: "Co to jest Quality Score i jak wpływa na cenę reklamy w Krakowie?",
-      answer: "Quality Score to ocena jakości reklamy, strony docelowej i słowa kluczowego przyznawana przez Google (1-10). Im wyższy Quality Score, tym niższy koszt za kliknięcie (CPC). Dobry Quality Score (7-10) może obniżyć CPC nawet o 50%. Obsługujemy Quality Score na poziomie 8-9 dla większości kampanii krakowskich klientów.",
+      answer: "Quality Score to ocena jakości reklamy, strony docelowej i słowa kluczowego przyznawana przez Google (1-10). Im wyższy Quality Score, tym niższy koszt za kliknięcie (CPC). Dlatego pracujemy nad dopasowaniem słów kluczowych, tekstów reklam i strony docelowej, co pomaga obniżać koszt kliknięcia.",
     },
   ];
 
@@ -47,14 +47,14 @@ export default function GoogleAdsKrakow() {
       <Layout>
         <SEOHead
           title="Agencja Google Ads Kraków — kampanie reklamowe dla firm | Fotz.pl"
-          description="Google Ads Kraków — agencja certyfikowana Fotz.pl. Kampanie od 400 zł/mies., wyniki od 24-48h, specjaliści z certyfikatem Google. Bezpłatna konsultacja!"
+          description="Google Ads Kraków — Fotz Studio planuje, prowadzi i optymalizuje kampanie Google Ads dla firm z Krakowa. Współpraca zdalna, raport co miesiąc. Bezpłatna konsultacja!"
           canonical="https://www.fotz-studio.pl/performance-marketing/google-ads/krakow"
           keywords="google ads krakow, kampanie google ads krakow, agencja google ads krakow, reklamy google krakow, google adwords krakow, sem krakow, google ads dla firm krakow, prowadzenie google ads krakow, google ads cennik krakow, reklama w google krakow"
         />
 
         <ServiceSchema
           name="Kampanie Google Ads Kraków"
-          description="Tworzenie i optymalizacja kampanii Google Ads dla firm z Krakowa. Agencja Fotz.pl — certyfikowani specjaliści Google Ads."
+          description="Tworzenie i optymalizacja kampanii Google Ads dla firm z Krakowa. Agencja Fotz Studio — współpraca zdalna z Poznania."
           provider="Fotz Studio"
           areaServed="Krakow"
         />
@@ -88,22 +88,22 @@ export default function GoogleAdsKrakow() {
                   Agencja Google Ads Kraków
                 </h1>
                 <p className="text-xl md:text-2xl text-sky-100 mb-8">
-                  Google Ads Krakow — profesjonalne kampanie Google Ads i reklamy w Google dla firm z Krakowa i Małopolski. Zwiększamy ruch, konwersje i ROI dzięki skutecznym kampaniom SEM. Bezpłatna konsultacja.</p>
+                  Google Ads Krakow — profesjonalne kampanie Google Ads i reklamy w Google dla firm z Krakowa i Małopolski. Planujemy, prowadzimy i optymalizujemy kampanie SEM. Pracujemy z Poznania, a firmy z Krakowa obsługujemy zdalnie. Bezpłatna konsultacja.</p>
               </div>
 
               {/* Stats Grid */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-6 text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-sky-300 mb-2">400 zł</div>
-                  <div className="text-sm text-sky-100">Kampanie od</div>
+                  <div className="text-2xl md:text-3xl font-bold text-sky-300 mb-2">Wycena</div>
+                  <div className="text-sm text-sky-100">Po rozmowie o zakresie</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-6 text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-sky-300 mb-2">24-48h</div>
-                  <div className="text-sm text-sky-100">Wyniki od</div>
+                  <div className="text-2xl md:text-3xl font-bold text-sky-300 mb-2">Budżet</div>
+                  <div className="text-sm text-sky-100">Płacisz Google osobno</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-6 text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-sky-300 mb-2">100%</div>
-                  <div className="text-sm text-sky-100">Certyfikowani</div>
+                  <div className="text-2xl md:text-3xl font-bold text-sky-300 mb-2">Zdalnie</div>
+                  <div className="text-sm text-sky-100">Pracujemy z Poznania</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-6 text-center">
                   <div className="text-2xl md:text-3xl font-bold text-sky-300 mb-2">Raport</div>
@@ -124,13 +124,13 @@ export default function GoogleAdsKrakow() {
                 </h2>
                 <div className="space-y-6 text-lg text-muted-foreground">
                   <p>
-                    Kraków to 800 tysięcy mieszkańców, drugie największe miasto w Polsce i hub biznesowy dla całej Małopolski. Przedsiębiorcy krakowscy inwestują rocznie miliony złotych w reklamy internetowe — to naturalne miejsce do testowania kampanii dla całego regionu.
+                    Kraków to drugie największe miasto w Polsce i centrum biznesowe całej Małopolski — naturalne miejsce do testowania kampanii dla całego regionu.
                   </p>
                   <p>
-                    Konkurencja na słowa kluczowe w Krakowie jest umiarkowana (CPC średnio 3-8 zł), ale liczba potencjalnych klientów jest ogromna. Kraków przyciąga turystów, studentów i biznesowe osoby. Kampanie Google Ads działają tutaj efektywnie dla każdej branży: e-commerce, usługi, nieruchomości, edukacja, gastronomia, hotele.
+                    Koszt kliknięcia zależy od branży i konkurencji na konkretne słowa kluczowe — sprawdzamy go przed startem kampanii. Kraków przyciąga turystów, studentów i osoby biznesowe. Kampanie Google Ads mogą tu wspierać wiele branż: e-commerce, usługi, nieruchomości, edukacja, gastronomia, hotele.
                   </p>
                   <p>
-                    Paid ads (Google Ads) działają szybciej niż SEO — wyniki widoczne w ciągu 24-48 godzin. W Krakowie, gdzie rynek jest rozwinięty i konkurencyjny, Google Ads to najprostsza droga do pierwszej strony i do konkretnych klientów.
+                    Reklamy Google Ads mogą wyświetlać się w wynikach wkrótce po uruchomieniu i zatwierdzeniu przez Google — zwykle szybciej niż efekty SEO. W Krakowie, gdzie rynek jest rozwinięty i konkurencyjny, to dobry sposób na dotarcie do osób, które właśnie szukają Twojej usługi.
                   </p>
                   <p>
                     Targetowanie lokalne (Kraków, Nowa Huta, Podgórze, Tarnów, Wieliczka) pozwala precyzyjnie trafić w swoją grupę docelową. Jeśli prowadzisz biznes lokalny w Krakowie, możesz kampanię skalować na całą Małopolskę i Polskę z czasem.
@@ -170,7 +170,7 @@ export default function GoogleAdsKrakow() {
                 <div className="bg-background rounded-lg border border-border p-6">
                   <h3 className="text-xl font-bold mb-3">Remarketing</h3>
                   <p className="text-muted-foreground">
-                    Reklamy dla osób, które już odwiedzały Twoją stronę. Konwersja 3-5x wyższa niż w kampaniach Search.
+                    Reklamy dla osób, które już odwiedzały Twoją stronę i znają Twoją ofertę.
                   </p>
                 </div>
                 <div className="bg-background rounded-lg border border-border p-6">
@@ -263,48 +263,21 @@ export default function GoogleAdsKrakow() {
           <section className="py-16 md:py-24 bg-secondary/30">
             <div className="container px-4">
               <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-                Kampanie Google Ads Kraków — cennik
+                Kampanie Google Ads Kraków — od czego zależy wycena?
               </h2>
-              <div className="max-w-4xl mx-auto overflow-x-auto">
-                <table className="w-full border-collapse">
-                  <thead>
-                    <tr className="border-b-2 border-border">
-                      <th className="text-left p-4 font-bold">Pakiet</th>
-                      <th className="text-left p-4 font-bold">Cena obsługi</th>
-                      <th className="text-left p-4 font-bold">Budżet reklamowy</th>
-                      <th className="text-left p-4 font-bold">Dla kogo</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="border-b border-border bg-background">
-                      <td className="p-4 font-semibold">START</td>
-                      <td className="p-4">400 zł/mies.</td>
-                      <td className="p-4">500-1500 zł</td>
-                      <td className="p-4">Małe firmy lokalne</td>
-                    </tr>
-                    <tr className="border-b border-border bg-background">
-                      <td className="p-4 font-semibold">GROWTH</td>
-                      <td className="p-4">800 zł/mies.</td>
-                      <td className="p-4">1500-3000 zł</td>
-                      <td className="p-4">Średnie firmy</td>
-                    </tr>
-                    <tr className="border-b border-border bg-background">
-                      <td className="p-4 font-semibold">PRO</td>
-                      <td className="p-4">1500+ zł/mies.</td>
-                      <td className="p-4">3000+ zł</td>
-                      <td className="p-4">E-commerce, sieci</td>
-                    </tr>
-                    <tr className="bg-background">
-                      <td className="p-4 font-semibold">ENTERPRISE</td>
-                      <td className="p-4">% budżetu (15-20%)</td>
-                      <td className="p-4">10000+ zł</td>
-                      <td className="p-4">Duże firmy</td>
-                    </tr>
-                  </tbody>
-                </table>
+              <div className="max-w-3xl mx-auto">
+                <ul className="space-y-3 text-muted-foreground">
+                  <li><strong className="text-foreground">Zakres kampanii</strong> — liczba i typ kampanii (Search, Performance Max, Shopping, remarketing).</li>
+                  <li><strong className="text-foreground">Wielkość oferty</strong> — liczba usług, produktów i grup reklam do przygotowania.</li>
+                  <li><strong className="text-foreground">Tracking i analityka</strong> — konfiguracja konwersji, Google Analytics i integracji.</li>
+                  <li><strong className="text-foreground">Raportowanie</strong> — częstotliwość raportów i spotkań podsumowujących.</li>
+                </ul>
+                <p className="text-muted-foreground mt-6">
+                  Wycenę przygotowujemy po rozmowie o zakresie. Budżet reklamowy płacisz bezpośrednio Google — zawsze osobno od opłaty za obsługę.
+                </p>
               </div>
               <p className="text-center text-muted-foreground mt-8 max-w-2xl mx-auto">
-                Każdy pakiet obejmuje setup kampanii, daily optimization, raportowanie co miesiąc, A/B testy reklam i ciągłą optymalizację Quality Score.
+                Każda współpraca obejmuje setup kampanii, bieżącą optymalizację, raportowanie co miesiąc, A/B testy reklam i pracę nad Quality Score.
               </p>
             </div>
           </section>
@@ -382,9 +355,9 @@ export default function GoogleAdsKrakow() {
               </h2>
               <div className="max-w-3xl mx-auto space-y-6">
                 <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-2">Certyfikowani specjaliści Google</h3>
+                  <h3 className="text-xl font-bold mb-2">Kampanie na Twoim koncie Google Ads</h3>
                   <p className="text-muted-foreground">
-                    Nasi specjaliści posiadają certyfikat Google Ads. Mamy dostęp do beta features, nowych algorytmów i najnowszych best practices bezpośrednio od Google.
+                    Kampanie prowadzimy na koncie Google Ads należącym do Twojej firmy — masz pełny dostęp do danych, a budżet reklamowy płacisz bezpośrednio Google.
                   </p>
                 </div>
                 <div className="bg-background rounded-lg border border-border p-6">
@@ -394,21 +367,21 @@ export default function GoogleAdsKrakow() {
                   </p>
                 </div>
                 <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-2">Wyniki od 24-48h</h3>
+                  <h3 className="text-xl font-bold mb-2">Sprawne uruchomienie</h3>
                   <p className="text-muted-foreground">
-                    Szybko uruchamiamy kampanie i szybko je optymalizujemy. Twoja firma widzi wyniki prawie natychmiast — nie czekasz tygodniami.
+                    Termin startu ustalamy w ofercie. Po uruchomieniu kampania zaczyna zbierać dane, a optymalizację opieramy na wynikach z kolejnych tygodni.
                   </p>
                 </div>
                 <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-2">Specjalizacja w branżach krakowskich</h3>
+                  <h3 className="text-xl font-bold mb-2">Strategia pod Twoją branżę</h3>
                   <p className="text-muted-foreground">
-                    Znamy krakowski rynek — od turystyki do e-commerce do edukacji do nieruchomości. Każda branża ma inne wyzwania, my wiemy jak je rozwiązać.
+                    Pracujemy z Poznania, a firmy z Krakowa obsługujemy zdalnie. Przed startem analizujemy Twoją branżę i konkurencję w Krakowie — od turystyki, przez e-commerce i edukację, po nieruchomości.
                   </p>
                 </div>
                 <div className="bg-background rounded-lg border border-border p-6">
                   <h3 className="text-xl font-bold mb-2">Skalowanie do całej Małopolski i Polski</h3>
                   <p className="text-muted-foreground">
-                    Zaczynasz w Krakowie, potem skalujesz na całą Małopolskę i Polskę. Obsługujemy firmy z Krakowa, które chcą ekspandować — pomagamy im rosnąć.
+                    Zaczynasz w Krakowie, potem skalujesz na całą Małopolskę i Polskę. Pomagamy firmom, które chcą rozszerzać kampanie na nowe rynki.
                   </p>
                 </div>
               </div>
@@ -444,7 +417,7 @@ export default function GoogleAdsKrakow() {
                   Uruchom kampanie Google Ads w Krakowie
                 </h2>
                 <p className="text-lg text-slate-300 mb-10">
-                  Bezpłatna konsultacja bez zobowiązań. Poznaj naszą strategię dla Twojej branży. Wyniki od 24-48h.
+                  Bezpłatna konsultacja bez zobowiązań. Poznaj naszą strategię dla Twojej branży.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link

@@ -47,7 +47,7 @@ const features = [
   {
     icon: Smartphone,
     title: "Mobile-first design",
-    desc: "Ponad 65% zakupów online pochodzi z urządzeń mobilnych. Projektujemy sklepy od widoku telefonu — perfekcyjna responsywność i UX na każdym ekranie."
+    desc: "Duża część zakupów online odbywa się na telefonach. Projektujemy sklepy od widoku telefonu — perfekcyjna responsywność i UX na każdym ekranie."
   },
   {
     icon: CreditCard,
@@ -102,15 +102,15 @@ const process = [
 const faqItems = [
   {
     question: "Ile kosztuje stworzenie sklepu internetowego w Warszawie?",
-    answer: "Koszt stworzenia sklepu zależy od platformy i zakresu funkcjonalności. Profesjonalny sklep internetowy na Shopify lub WooCommerce z podstawowymi integracjami to od 8 000 zł. Rozbudowany sklep z customowym designem i integracjami ERP — od 20 000 zł. Dedykowane rozwiązanie (sklep na Next.js/React) zaczyna się od 35 000 zł. Każdą wycenę poprzedzamy bezpłatną rozmową — cena zależy od zakresu projektu, nie od miasta."
+    answer: "Koszt stworzenia sklepu zależy od platformy i zakresu funkcjonalności. Na wycenę wpływają m.in.: wybrana platforma (Shopify, WooCommerce, PrestaShop, rozwiązanie dedykowane), liczba produktów i kategorii, indywidualny projekt graficzny oraz integracje z płatnościami, kurierami, ERP i marketplace. Wycenę przygotowujemy po bezpłatnej rozmowie o zakresie — cena zależy od projektu, nie od miasta."
   },
   {
     question: "Jak długo trwa stworzenie sklepu internetowego?",
-    answer: "Wdrożenie sklepu internetowego na Shopify lub WooCommerce zajmuje 4–8 tygodni. Sklep z customowym designem i rozbudowanymi integracjami — 8–16 tygodni. Rozwiązania dedykowane (headless, custom backend) wymagają 3–6 miesięcy. Czas realizacji sklepu zależy od liczby podstron, kategorii i zewnętrznych integracji."
+    answer: "Orientacyjnie: wdrożenie sklepu na Shopify lub WooCommerce to kilka tygodni, sklep z indywidualnym projektem i rozbudowanymi integracjami trwa dłużej, a rozwiązania dedykowane (headless, custom backend) mogą wymagać kilku miesięcy. Dokładny harmonogram ustalamy w ofercie — czas realizacji sklepu zależy od liczby podstron, kategorii i zewnętrznych integracji."
   },
   {
     question: "Czy agencja z Poznania może tworzyć sklepy internetowe dla firm z Warszawy?",
-    answer: "Tak — tworzymy sklepy internetowe dla klientów z całej Polski, w tym z Warszawy i Mazowsza. Wszystkie etapy projektu realizujemy online (Google Meet, Teams, Figma, GitHub). Przy wdrożeniach wymagających pracy on-site przyjeżdżamy do Warszawy. Ponad 40% naszych klientów e-commerce pochodzi spoza Poznania — format zdalny nie obniża jakości sklepu."
+    answer: "Tak — tworzymy sklepy internetowe dla klientów z całej Polski, w tym z Warszawy i Mazowsza. Wszystkie etapy projektu realizujemy online (Google Meet, Teams, Figma, GitHub). Pracujemy z Poznania, a firmy z Warszawy obsługujemy zdalnie. Jeśli projekt wymaga spotkania na miejscu, ustalamy to indywidualnie."
   },
   {
     question: "Którą platformę e-commerce wybrać dla sklepu internetowego w Warszawie?",
@@ -122,11 +122,11 @@ const faqItems = [
   },
   {
     question: "Czy tworzycie sklepy z integracją Allegro i systemów ERP?",
-    answer: "Tak — integrujemy sklepy internetowe z Allegro, Amazon, Ceneo i Google Shopping. Możemy skonfigurować synchronizację zamówieniami i stanami magazynowymi między sklepem a platformami zewnętrznymi. Integracja sklepu z systemem ERP (Subiekt GT, Comarch) to standard w naszych wdrożeniach dla klientów z Warszawy i Mazowsza."
+    answer: "Tak — integrujemy sklepy internetowe z Allegro, Amazon, Ceneo i Google Shopping. Możemy skonfigurować synchronizację zamówieniami i stanami magazynowymi między sklepem a platformami zewnętrznymi. Integrację sklepu z systemem ERP (Subiekt GT, Comarch) wyceniamy w zależności od systemu i zakresu synchronizacji."
   },
   {
     question: "Jak wygląda projekt sklepu internetowego od podstaw — proces tworzenia?",
-    answer: "Projektowanie i tworzenie sklepów internetowych zaczynamy od analizy Twojego biznesu i asortymentu. Rozpoczynamy projektowanie od architektury informacji i makiety sklepu. Następnie tworzymy właściwy projekt — profesjonalne projektowanie sklepów pod kątem UX i konwersji. Profesjonalne tworzenie sklepów internetowych to nasz wyróżnik: własny zespół, żadnych podwykonawców. Tworzenie nowoczesnych sklepów internetowych obejmuje responsywny design, szybkość ładowania i optymalizację SEO. Własnego sklepu internetowego nie budujemy szablonowo — każde rozwiązanie jest unikalne i dopasowane do biznesu. Cały proces tworzenia sklepu internetowego składa się z etapów zatwierdzanych przez klienta — całe wykonanie sklepu trwa 4–16 tygodni. Wdrażamy sklepy w branży e-commerce dla firm z całej Polski."
+    answer: "Projektowanie i tworzenie sklepów internetowych zaczynamy od analizy Twojego biznesu i asortymentu. Rozpoczynamy projektowanie od architektury informacji i makiety sklepu. Następnie tworzymy właściwy projekt — profesjonalne projektowanie sklepów pod kątem UX i konwersji. Masz jeden punkt kontaktu przez cały projekt. Tworzenie nowoczesnych sklepów internetowych obejmuje responsywny design, szybkość ładowania i optymalizację SEO. Własnego sklepu internetowego nie budujemy szablonowo — każde rozwiązanie jest unikalne i dopasowane do biznesu. Cały proces tworzenia sklepu internetowego składa się z etapów zatwierdzanych przez klienta — czas wykonania sklepu ustalamy w harmonogramie projektu. Wdrażamy sklepy w branży e-commerce dla firm z całej Polski."
   },
   {
     question: "Sklep internetowy a sklep stacjonarny — porównanie i jak je połączyć?",
@@ -138,7 +138,7 @@ const faqItems = [
   },
   {
     question: "Czy tworzycie strony internetowe i sklepy dla firm z branży e-commerce?",
-    answer: "Tak — Fotz Studio realizuje zarówno strony internetowe, jak i sklepy e-commerce dla firm z Warszawy i całej Polski. Projektowania stron i sklep www tworzymy własnym zespołem — jedno miejsce dla stron i sklepów internetowych. Wdrażamy sklepy na Shopify, WooCommerce, PrestaShop i rozwiązaniach custom. Prowadzenie sklepu internetowego po wdrożeniu to kolejny krok — marketing, SEO i wsparcie techniczne. Nasze sklepy www to kompletne rozwiązania dla branży e-commerce: od projektu po kampanie reklamowe."
+    answer: "Tak — Fotz Studio realizuje zarówno strony internetowe, jak i sklepy e-commerce dla firm z Warszawy i całej Polski. Projekt, wdrożenie i marketing koordynujemy w jednym miejscu — jeden partner dla stron i sklepów internetowych. Wdrażamy sklepy na Shopify, WooCommerce, PrestaShop i rozwiązaniach custom. Prowadzenie sklepu internetowego po wdrożeniu to kolejny krok — marketing, SEO i wsparcie techniczne. Nasze sklepy www to kompletne rozwiązania dla branży e-commerce: od projektu po kampanie reklamowe."
   }
 ];
 
@@ -199,7 +199,7 @@ export default function SklepyInternetoweWarszawa() {
             <motion.p variants={fadeIn} className="text-base text-muted-foreground/80 mb-10 max-w-xl mx-auto">
               Sprzedaż online w Polsce rośnie rok do roku. Firmy z Warszawy, które stworzenie sklepu internetowego
               traktują jako inwestycję — z dobrym UX, pozycjonowania SEO i integracją marketingową — budują przewagę
-              zanim zrobi to konkurencja. Tworzymy sklepy, które sprzedają.
+              zanim zrobi to konkurencja. Tworzymy sklepy projektowane pod sprzedaż.
             </motion.p>
 
             <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -227,9 +227,9 @@ export default function SklepyInternetoweWarszawa() {
             className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto text-center"
           >
             {[
-              { value: "80+", label: "wdrożonych sklepów e-commerce" },
+              { value: "UX", label: "projekt pod ścieżkę zakupową" },
               { value: "4", label: "platformy — Shopify, WC, PS, Custom" },
-              { value: "4–16 tyg.", label: "czas wdrożenia standardowego sklepu" },
+              { value: "Zdalnie", label: "pracujemy z Poznania" },
               { value: "full-service", label: "wdrożenie + marketing sklepu" }
             ].map((s, i) => (
               <motion.div key={i} variants={fadeIn}>
@@ -384,8 +384,8 @@ export default function SklepyInternetoweWarszawa() {
               {[
                 {
                   icon: Code,
-                  title: "Własny zespół — sklep bez podwykonawców",
-                  desc: "Tworzymy sklepy internetowe własnym zespołem developerów i designerów — bez podwykonawców. Jeden punkt kontaktu, pełna odpowiedzialność za każdy sklep od wdrożenia do hostingu."
+                  title: "Jeden punkt kontaktu",
+                  desc: "Projekt, wdrożenie i hosting sklepu koordynujemy w jednym miejscu. Masz jedną osobę kontaktową i jasny podział odpowiedzialności."
                 },
                 {
                   icon: TrendingUp,
@@ -473,7 +473,7 @@ export default function SklepyInternetoweWarszawa() {
               </Button>
             </motion.div>
             <motion.p variants={fadeIn} className="text-white/50 text-xs mt-6">
-              Odpowiadamy w ciągu 24 godzin · Wycena zawsze bezpłatna
+              Wycena zawsze bezpłatna
             </motion.p>
           </motion.div>
         </div>
@@ -555,8 +555,8 @@ export default function SklepyInternetoweWarszawa() {
               Meta Ads, email marketing).
             </p>
             <p className="text-muted-foreground">
-              Fotz Studio to zdalny partner e-commerce dla firm z Warszawy — szybka
-              komunikacja, transparentne raportowanie i realny wpływ na wyniki sprzedaży.
+              Fotz Studio to zdalny partner e-commerce dla firm z Warszawy — pracujemy
+              z Poznania, a z klientami z Warszawy współpracujemy zdalnie, z przejrzystym raportowaniem postępów.
               Skontaktuj się z nami po bezpłatną wycenę sklepu internetowego dla Twojej firmy.
             </p>
           

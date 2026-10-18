@@ -140,7 +140,7 @@ export default function BlogEmpathyMapCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Mapa Empatii", url: "https://www.fotz-studio.pl" },
+              { name: "Mapa Empatii", url: "/blog/mapa-empatii-co-to" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Mapa Empatii — co to jest i jak ją tworzyć?

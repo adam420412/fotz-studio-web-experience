@@ -145,7 +145,7 @@ export default function FacebookAdsGdynia() {
             { name: "Strona główna", url: "/" },
             { name: "Performance Marketing", url: "/performance-marketing" },
             { name: "Facebook Ads", url: "/uslugi/reklama-facebook" },
-            { name: "Gdynia", url: "https://www.fotz-studio.pl" },
+            { name: "Gdynia", url: "/performance-marketing/facebook-ads/gdynia" },
           ]}/>
 
         {/* Hero Section */}

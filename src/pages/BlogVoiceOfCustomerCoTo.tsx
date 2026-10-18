@@ -124,7 +124,7 @@ export default function BlogVoiceOfCustomerCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Voice of Customer", url: "https://www.fotz-studio.pl" },
+              { name: "Voice of Customer", url: "/blog/voice-of-customer-co-to" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Voice of Customer (VoC) — co to jest i jak budować program?

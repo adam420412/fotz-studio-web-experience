@@ -18,7 +18,7 @@ export default function TikTokAdsWroclaw() {
     {
       question: "Ile kosztują reklamy TikTok Ads we Wrocławiu?",
       answer:
-        "Koszt reklam TikTok we Wrocławiu zależy od formatu i targetowania. CPM (koszt za tysiąc wyświetleń) waha się od 8-22 PLN, w zależności od zainteresowań grupy docelowej i konkurencji na rynku. Minimalny budżet to 50 PLN dziennie, ale rekomendujemy 500-1000 PLN dziennie dla optymalnych rezultatów.",
+        "Na koszt składają się dwie części. Budżet reklamowy płacisz bezpośrednio TikTokowi, zawsze osobno — jego wysokość ustalamy razem z Tobą, a koszt wyświetleń zależy od formatu, targetowania i konkurencji w aukcji. Wynagrodzenie za prowadzenie kampanii i produkcję wideo wyceniamy po rozmowie o zakresie: liczbie kampanii, liczbie kreacji i częstotliwości raportowania.",
     },
     {
       question: "Jaki format reklamy wybrać na TikToku?",
@@ -28,22 +28,22 @@ export default function TikTokAdsWroclaw() {
     {
       question: "Czy mogę sprzedawać przez TikTok Ads w Wrocławiu?",
       answer:
-        "Absolutnie! TikTok Ads to doskonały kanał sprzedaży dla firm z Wrocławia. Można kierować reklamy bezpośrednio do sklepu internetowego, wysyłać zapytania Lead Form lub integrować z systemami CRM. Średni ROAS dla dobrze zoptymalizowanych kampanii to 2-4x zwrot z inwestycji.",
+        "Tak. TikTok Ads może być kanałem sprzedaży dla firm z Wrocławia. Można kierować reklamy bezpośrednio do sklepu internetowego, zbierać zapytania przez Lead Form lub integrować kampanie z systemami CRM. Zwrot z reklam zależy od produktu, oferty, strony i budżetu — nie gwarantujemy konkretnego ROAS.",
     },
     {
       question: "Ile czasu trwa optymalizacja kampanii TikTok Ads?",
       answer:
-        "Pierwszych wyników można spodziewać się już po 3-7 dniach. Pełna optymalizacja i skalowanie kampanii wymaga 2-3 tygodni testowania i doskonalenia. Stale monitorujemy metryki (CTR, CPC, ROAS) i wprowadzamy zmiany w czasie rzeczywistym.",
+        "Pierwsze dane o wyświetleniach i kliknięciach pojawiają się zwykle krótko po starcie. Optymalizacja i skalowanie wymagają czasu na testy kreacji i grup odbiorców — tempo zależy od budżetu i branży, dlatego nie obiecujemy efektów w sztywnym terminie. Regularnie monitorujemy metryki (CTR, CPC, ROAS) i wprowadzamy zmiany.",
     },
     {
       question: "Czy kreujecie materiały wideo do kampanii TikTok?",
       answer:
-        "Tak, nasz zespół specjalistów zajmuje się produkcją kreatywnego contentu. Tworzymy scenariusze, filmy, edytujemy materiały i optymalizujemy je pod algorytm TikToka. Każde wideo jest dostosowane do preferncji użytkowników we Wrocławiu i testowane zanim zostanie uruchomione.",
+        "Tak, nasz zespół specjalistów zajmuje się produkcją kreatywnego contentu. Tworzymy scenariusze, filmy, edytujemy materiały i optymalizujemy je pod algorytm TikToka. Każde wideo dopasowujemy do grupy docelowej, a warianty kreacji testujemy w kampanii.",
     },
     {
       question: "Jak mierzycie sukces kampanii TikTok Ads?",
       answer:
-        "Mierzymy kampanię za pomocą KPI: liczba wyświetleń (impressions), współczynnik kliknięć (CTR), koszt konwersji (CPC), wartość leadów (lead value), zwrot z inwestycji (ROI) i średni czas oglądania (watch time). Dostarczamy szczegółowe raporty co tydzień.",
+        "Mierzymy kampanię za pomocą KPI: liczba wyświetleń (impressions), współczynnik kliknięć (CTR), koszt konwersji (CPC), wartość leadów (lead value), zwrot z inwestycji (ROI) i średni czas oglądania (watch time). Dostarczamy regularne raporty w uzgodnionym rytmie.",
     },
     {
       question: "Czy mogę kierować reklamy tylko do Wrocławia?",
@@ -58,17 +58,17 @@ export default function TikTokAdsWroclaw() {
   ];
 
   const stats = [
-    { value: "1B+", label: "Aktywnych użytkowników na świecie" },
-    { value: "1M+", label: "Potencjalnych klientów we Wrocławiu" },
-    { value: "78%", label: "Gen Z i Millenialsów na platformie" },
-    { value: "3x-5x", label: "Średni ROAS w branży e-commerce" },
+    { value: "Wideo", label: "Format natywny dla platformy — pionowe, krótkie filmy" },
+    { value: "Lokalnie", label: "Targetowanie na Wrocław, okolice lub cały Dolny Śląsk" },
+    { value: "Testy", label: "Kreacje i grupy odbiorców sprawdzane w kampanii" },
+    { value: "Budżet", label: "Budżet reklamowy płacony TikTokowi zawsze osobno" },
   ];
 
   const formats = [
     {
       title: "In-Feed Ads",
       description:
-        "Reklamy pojawiające się naturalnie w głównym feed użytkownika. Osiągają wysokie współczynniki zaangażowania i są idealne do sprzedaży produktów.",
+        "Reklamy pojawiające się naturalnie w głównym feedzie użytkownika. Sprawdzają się zarówno przy budowaniu zasięgu, jak i w kampaniach sprzedażowych.",
     },
     {
       title: "Spark Ads",
@@ -78,7 +78,7 @@ export default function TikTokAdsWroclaw() {
     {
       title: "TopView Ads",
       description:
-        "Premium format wyświetlający się na górze feed użytkownika przez 3-5 sekund. Gwarantuje wysoką widoczność i najwyższy ROAS.",
+        "Format premium wyświetlany jako pierwsza reklama po otwarciu aplikacji. Zapewnia mocną ekspozycję marki, ale wymaga większego budżetu.",
     },
     {
       title: "Hashtag Challenge",
@@ -88,7 +88,7 @@ export default function TikTokAdsWroclaw() {
     {
       title: "Brand Takeover",
       description:
-        "Przejęcie strony startowej TikToka przez Twoją markę. Najpotężniejszy format, gwarantujący miliony wyświetleń w ciągu kilku sekund.",
+        "Pełnoekranowa reklama wyświetlana przy otwarciu aplikacji. Format nastawiony na szeroki zasięg, dostępny przy dużych budżetach.",
     },
     {
       title: "Collection Ads",
@@ -132,14 +132,14 @@ export default function TikTokAdsWroclaw() {
 
   const whyUsPoints = [
     {
-      title: "Doświadczenie w TikTok Ads",
+      title: "Wideo i kampanie w jednym miejscu",
       description:
-        "Nasz zespół ma ponad 5 lat doświadczenia z kampaniami TikTok Ads. Pracowaliśmy z setkami firm z Wrocławia i wiemy, co działa na tym rynku.",
+        "Produkujemy wideo i prowadzimy kampanie płatne — realizowaliśmy m.in. spot dla WSB Merito i kampanię Meta Ads dla Dawid EDU. Pracujemy z Poznania, a firmy z Wrocławia obsługujemy zdalnie.",
     },
     {
       title: "Kreatywna produkcja wideo",
       description:
-        "Posiadamy własny zespół producencki, którzy tworzą angażujące materiały wideo dostosowane do algorytmu TikToka. Każde wideo jest optymalizowane pod względem dźwięku, tempa i wizualnych haków.",
+        "Produkcję wideo realizujemy w FOTZ Studio — materiały dopasowujemy do formatu i algorytmu TikToka. Każde wideo jest optymalizowane pod względem dźwięku, tempa i wizualnych haków.",
     },
     {
       title: "Targetowanie precyzyjne",
@@ -147,19 +147,19 @@ export default function TikTokAdsWroclaw() {
         "Kierujemy reklamy do dokładnie definiowanej grupy docelowej we Wrocławiu, uwzględniając wiek, płeć, zainteresowania, zachowania i lokalizację dla maksymalnej trafności.",
     },
     {
-      title: "Wsparcie 24/7",
+      title: "Stały kontakt",
       description:
-        "Stale monitorujemy kampanie i jesteśmy dostępni do odpowiadania na pytania. Optymalizujemy kampanie w czasie rzeczywistym aby zapewnić najlepsze wyniki.",
+        "Regularnie monitorujemy kampanie i odpowiadamy na pytania w uzgodnionych godzinach pracy. Zmiany w kampaniach wprowadzamy na bieżąco na podstawie danych.",
     },
     {
       title: "Przejrzyste raporty",
       description:
-        "Dostarczamy szczegółowe raporty co tydzień, które zawierają wszystkie ważne metryki (impressions, CTR, CPC, ROAS, lead value) i rekomendacje na przyszłość.",
+        "Dostarczamy regularne raporty, które zawierają wszystkie ważne metryki (impressions, CTR, CPC, ROAS, lead value) i rekomendacje na przyszłość.",
     },
     {
-      title: "Gwarancja zadowolenia",
+      title: "Jasne zasady",
       description:
-        "Jeśli nie jesteś zadowolony z wyników po pierwszym miesiącu, pracujemy bezpłatnie nad zmianami w strategii. Twój sukces to nasz sukces.",
+        "Nie gwarantujemy konkretnych wyników. Zakres, raportowanie i zasady współpracy ustalamy w umowie, a po każdym etapie omawiamy wyniki i kolejne kroki.",
     },
   ];
 
@@ -191,7 +191,7 @@ export default function TikTokAdsWroclaw() {
               Kampanie TikTok Ads Wrocław
             </h1>
             <p className="text-xl text-gray-700 mb-8 max-w-3xl">
-              TikTok Ads Wroclaw — profesjonalne kampanie reklamowe TikTok dla firm z Wroclawa i Dolnego Śląska. Dotrzemy do młodych odbiorców i zwiększamy sprzedaż. Bezpłatna konsultacja.
+              TikTok Ads Wrocław — kampanie reklamowe TikTok dla firm z Wrocławia i Dolnego Śląska. Pracujemy z Poznania, a firmy z Wrocławia obsługujemy zdalnie. Pomagamy dotrzeć do młodszych odbiorców z kampanią i wideo dopasowanymi do platformy. Bezpłatna konsultacja.
             </p>
           </section>
         </FadeInView>
@@ -217,20 +217,20 @@ export default function TikTokAdsWroclaw() {
               <li className="flex gap-4">
                 <div className="flex-shrink-0 w-6 h-6 bg-blue-600 rounded-full mt-1"></div>
                 <div>
-                  <h3 className="font-semibold text-lg text-gray-900 mb-2">Miliony aktywnych użytkowników</h3>
+                  <h3 className="font-semibold text-lg text-gray-900 mb-2">Duża, aktywna publiczność</h3>
                   <p className="text-gray-700">
-                    TikTok ma ponad miliard aktywnych użytkowników na całym świecie. We Wrocławiu platforma
-                    jest szczególnie popularna wśród osób w wieku 13-35 lat, co stanowi idealny rynek dla wielu branż.
+                    TikTok to jedna z najpopularniejszych platform wideo, szczególnie wśród młodszych
+                    odbiorców. Dla wielu branż to sposób na dotarcie do klientów, których trudno złapać gdzie indziej.
                   </p>
                 </div>
               </li>
               <li className="flex gap-4">
                 <div className="flex-shrink-0 w-6 h-6 bg-blue-600 rounded-full mt-1"></div>
                 <div>
-                  <h3 className="font-semibold text-lg text-gray-900 mb-2">Niższe koszty reklam</h3>
+                  <h3 className="font-semibold text-lg text-gray-900 mb-2">Elastyczny budżet</h3>
                   <p className="text-gray-700">
-                    CPM na TikToku (8-22 PLN) jest znacznie niższy niż na Facebooku czy Instagramie.
-                    To oznacza większy zasięg za mniejszy budżet i lepszy ROI dla firm z Wrocławia.
+                    Budżet reklamowy ustalasz sam i płacisz go bezpośrednio TikTokowi. Kampanię można zacząć
+                    od testów na mniejszej skali i zwiększać budżet tam, gdzie dane pokazują sens.
                   </p>
                 </div>
               </li>
@@ -247,10 +247,10 @@ export default function TikTokAdsWroclaw() {
               <li className="flex gap-4">
                 <div className="flex-shrink-0 w-6 h-6 bg-blue-600 rounded-full mt-1"></div>
                 <div>
-                  <h3 className="font-semibold text-lg text-gray-900 mb-2">Szybka konwersja sprzedażowa</h3>
+                  <h3 className="font-semibold text-lg text-gray-900 mb-2">Odkrywanie produktów</h3>
                   <p className="text-gray-700">
-                    Użytkownicy TikToka są aktywnie zainteresowani odkrywaniem nowych produktów i usług.
-                    To sprawia, że kampanie sprzedażowe osiągają wysoki ROAS i szybko generują przychód.
+                    Użytkownicy TikToka chętnie odkrywają nowe produkty i usługi.
+                    Dobrze przygotowane wideo może skutecznie prowadzić ich do sklepu lub formularza.
                   </p>
                 </div>
               </li>
@@ -279,8 +279,8 @@ export default function TikTokAdsWroclaw() {
               <div>
                 <h3 className="text-2xl font-semibold text-gray-900 mb-4">Zarządzanie kampaniami</h3>
                 <p className="text-gray-700 mb-4">
-                  Prowadzą kampanie TikTok Ads od planowania, poprzez uruchomienie, aż do optymalizacji i skalowania.
-                  Nasz zespół monitoruje metryki w czasie rzeczywistym i wprowadza zmiany dla maksymalnego ROI.
+                  Prowadzimy kampanie TikTok Ads od planowania, poprzez uruchomienie, aż do optymalizacji i skalowania.
+                  Regularnie monitorujemy metryki i wprowadzamy zmiany, by poprawiać wyniki.
                 </p>
               </div>
               <div>

@@ -103,7 +103,7 @@ export default function BlogPublicRelationsCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Public Relations", url: "https://www.fotz-studio.pl" },
+              { name: "Public Relations", url: "/blog/public-relations-co-to" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Public Relations (PR) — co to jest i jak działa?

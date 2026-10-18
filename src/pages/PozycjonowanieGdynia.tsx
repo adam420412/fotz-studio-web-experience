@@ -1,7 +1,6 @@
 import { Layout } from "@/components/layout/Layout";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { TrendingUp, MapPin, CheckCircle2, ArrowRight, Search, BarChart3, Star, Users } from "lucide-react";
@@ -9,91 +8,55 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { ServiceSchema, FAQSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 
 export default function PozycjonowanieGdynia() {
-  const packages = [
-    {
-      name: "Start",
-      price: "1 200",
-      duration: "miesiąc",
-      description: "Idealny dla małych firm i startupów z Gdyni",
-      features: [
-        "Audit SEO",
-        "Optymalizacja 5 stron",
-        "Keyword research",
-        "Raport co miesiąc",
-        "Email support",
-      ],
-    },
-    {
-      name: "Biznes",
-      price: "2 500",
-      duration: "miesiąc",
-      description: "Dla firm o średniej wielkości z Gdyni i Trójmiasta",
-      features: [
-        "Wszystko z pakietu Start",
-        "Optymalizacja 15 stron",
-        "Content strategy",
-        "Link building (5 linków/mies.)",
-        "Raport szczegółowy",
-        "Priority support",
-      ],
-      highlighted: true,
-    },
-    {
-      name: "Premium",
-      price: "4 500",
-      duration: "miesiąc",
-      description: "Dla dużych firm i e-commerce z Gdyni",
-      features: [
-        "Wszystko z pakietu Biznes",
-        "Optymalizacja 30+ stron",
-        "Link building (15+ linków/mies.)",
-        "Zaawansowana SEO techniczna",
-        "Strategia contentu",
-        "24/7 support",
-      ],
-    },
+  const pricingFactors = [
+    "Liczba i konkurencyjność fraz, na które chcesz być widoczny",
+    "Wielkość strony i liczba podstron do optymalizacji",
+    "Stan techniczny witryny i zakres poprawek",
+    "Ilość treści do przygotowania (artykuły, opisy usług, kategorie)",
+    "Potrzeba działań link buildingowych i lokalnych",
+    "Zasięg: Gdynia, Trójmiasto czy cała Polska",
   ];
 
   const faqItems = [
     {
       question: "Ile kosztuje pozycjonowanie w Gdyni?",
       answer:
-        "Pozycjonowanie w Gdyni zaczyna się od 1 200 zł netto miesięcznie (pakiet Start). Pakiet Biznes to 2 500 zł/mies., a Premium to 4 500 zł/mies. Ceny zależą od konkurencji na słowa kluczowe, wielkości strony i celów biznesowych.",
+        "Wycenę przygotowujemy po rozmowie o zakresie i audycie strony. Koszt zależy od konkurencji na słowa kluczowe, wielkości strony, ilości treści do przygotowania i celów biznesowych. Nie podajemy stałej ceny przed poznaniem projektu.",
     },
     {
       question: "Jak długo trwa pozycjonowanie w Gdyni?",
       answer:
-        "Pierwsze efekty widać po 2-3 miesiącach. Stabilne pozycje w TOP 10 dla konkurencyjnych fraz osiągamy po 4-6 miesiącach. Dla fraz lokalnych (np. 'dentysta Gdynia') efekty przychodzą szybciej.",
+        "SEO to proces rozłożony na miesiące. Tempo zależy od konkurencji fraz, historii domeny i zakresu prac — frazy lokalne (np. 'dentysta Gdynia') bywają mniej wymagające niż ogólnopolskie. Nie gwarantujemy konkretnej pozycji ani terminu jej osiągnięcia.",
     },
     {
       question: "Czy mogę pozycjonować firmę z Gdyni bez biura tam?",
       answer:
-        "Oczywiście! Pracujemy zdalnie z klientami z całej Polski. Do pozycjonowania lokalnego w Gdyni nie potrzebujemy fizycznej obecności w mieście. Cały audyt, optymalizacja i raportowanie odbywają się online.",
+        "Oczywiście! Pracujemy z Poznania, a firmy z Gdyni i całej Polski obsługujemy zdalnie. Do pozycjonowania lokalnego w Gdyni nie potrzebujemy fizycznej obecności w mieście. Cały audyt, optymalizacja i raportowanie odbywają się online.",
     },
     {
       question: "Jakie branże są popularne do SEO w Gdyni?",
       answer:
-        "W Gdyni pozycjonujemy: turystykę i hotele, restauracje i bary, usługi medyczne i dentystyczne, agencje web, e-commerce, nieruchomości, porty i logistykę, szkoły i kursy. Gdynia ma silny sektor turystyki i logistyki morskiej.",
+        "Dla firm z Gdyni możemy prowadzić SEO m.in. w branżach: turystyka i hotele, restauracje i bary, usługi medyczne i dentystyczne, agencje web, e-commerce, nieruchomości, porty i logistykę, szkoły i kursy. Gdynia ma silny sektor turystyki i logistyki morskiej.",
     },
     {
       question: "Czy SEO w Gdyni jest skuteczne dla e-commerce?",
       answer:
-        "Tak. Gdynia ma dużo potencjału dla e-commerce — możesz sprzedawać na całą Polskę. SEO + Google Ads to najlepszy mix. Wiele naszych klientów z Gdyni zarabia 10-30 tyś zł mesięcznie na SEO.",
+        "SEO może być ważnym kanałem dla e-commerce — sklep z Gdyni może sprzedawać na całą Polskę. Często łączymy SEO z Google Ads. Efekty zależą od asortymentu, konkurencji i jakości sklepu, dlatego potencjał oceniamy po audycie.",
     },
   ];
 
   const whyChoose = [
     {
-      title: "Ponad 200 projektów SEO",
-      description: "Zrealizowaliśmy ponad 200 projektów pozycjonowania dla firm z całej Polski.",
+      title: "Strony, SEO i reklamy w jednym miejscu",
+      description: "Łączymy pozycjonowanie z tworzeniem stron, Google Ads i produkcją treści.",
     },
     {
-      title: "Znamy rynek Gdyni",
-      description: "Specjalizujemy się w Gdyni, Trójmieście i sektorze turystyki, logistyki i e-commerce.",
+      title: "Zdalna współpraca z Poznania",
+      description: "Pracujemy z Poznania, a firmy z Gdyni i Trójmiasta obsługujemy zdalnie — audyt, wdrożenia i raporty online.",
     },
     {
       title: "Wyniki mierzalne",
-      description: "Wszystkie nasze kampanie mają KPI i raportowanie co 2 tygodnie.",
+      description: "Na starcie ustalamy KPI i rytm raportowania.",
     },
     {
       title: "White-hat SEO",
@@ -130,7 +93,7 @@ export default function PozycjonowanieGdynia() {
     {
       icon: Users,
       title: "Raportowanie",
-      description: "Przejrzyste raporty co 2 tygodnie ze zmianami rankingów i ruchem organicznym.",
+      description: "Przejrzyste, regularne raporty ze zmianami rankingów i ruchem organicznym.",
     },
   ];
 
@@ -138,7 +101,7 @@ export default function PozycjonowanieGdynia() {
     <Layout>
       <SEOHead
         title="Pozycjonowanie Gdynia | SEO dla Firm z Gdyni | FOTZ"
-        description="Pozycjonowanie Gdynia — skuteczne SEO dla firm z Gdyni i Trójmiasta. Ponad 200 projektów. Bezpłatna konsultacja SEO!"
+        description="Pozycjonowanie Gdynia — SEO dla firm z Gdyni i Trójmiasta, prowadzone zdalnie z Poznania. Audyt, optymalizacja, link building. Bezpłatna konsultacja SEO!"
         canonical="https://www.fotz-studio.pl/uslugi/pozycjonowanie/gdynia"
         keywords="pozycjonowanie gdynia, agencja seo gdynia, seo gdynia, pozycjonowanie stron gdynia, seo dla firm gdynia, seo trójmiasto, audyt seo gdynia"
       />
@@ -178,7 +141,7 @@ export default function PozycjonowanieGdynia() {
             </h1>
 
             <p className="text-xl text-sky-100 mb-10 max-w-2xl mx-auto">
-              Skuteczne SEO dla firm z Gdyni. Audyt, optymalizacja, link building. Ponad 200 projektów SEO zrealizowanych.
+              SEO dla firm z Gdyni. Audyt, optymalizacja, link building. Pracujemy z Poznania, firmy z Gdyni obsługujemy zdalnie.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -201,15 +164,15 @@ export default function PozycjonowanieGdynia() {
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-primary" />
-                <span>Raport co 2 tygodnie</span>
+                <span>Regularne raporty</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-primary" />
-                <span>200+ projektów</span>
+                <span>Współpraca zdalna</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-primary" />
-                <span>Gwarancja transparentności</span>
+                <span>Przejrzyste działania</span>
               </div>
             </div>
           </div>
@@ -223,13 +186,13 @@ export default function PozycjonowanieGdynia() {
             <h2 className="text-3xl md:text-4xl font-bold mb-8">Pozycjonowanie Gdynia — co to jest i dlaczego warto?</h2>
             <div className="space-y-6 text-lg text-muted-foreground">
               <p>
-                Gdynia to dynamiczne miasto w Trójmieście (razem z Gdańskiem i Soptem). 250 tysięcy mieszkańców, jeden z największych portów Polski, silny sektor turystyki morskiej i logistyki. Firmy w Gdyni aktywnie szukają klientów w Google — zarówno lokalnie, jak i na całą Polskę.
+                Gdynia to dynamiczne miasto w Trójmieście (razem z Gdańskiem i Sopotem), z ważnym portem, turystyką morską i logistyką. Firmy w Gdyni aktywnie szukają klientów w Google — zarówno lokalnie, jak i na całą Polskę.
               </p>
               <p>
-                Pozycjonowanie SEO to proces optymalizacji Twojej strony internetowej, aby pojawiała się wyżej w wynikach Google dla słów kluczowych. Dla firm z Gdyni to oznacza: więcej ruchu organicznego, więcej klientów z Google, mniej zależności od Google Ads, wyższa konwersja (bo ruch organiczny konwertuje lepiej).
+                Pozycjonowanie SEO to proces optymalizacji Twojej strony internetowej, aby pojawiała się wyżej w wynikach Google dla słów kluczowych. Dla firm z Gdyni celem jest większa widoczność w wynikach organicznych i mniejsza zależność wyłącznie od płatnych reklam.
               </p>
               <p>
-                Gdynia to konkurencyjny rynek, ale z mniejszą konkurencją niż Warszawa. To idealny punkt do testowania strategii SEO przed skalowaniem na resztę Polski. Jeśli prowadzisz turystykę, restaurację, agencję web lub e-commerce z Gdyni — pozycjonowanie SEO to najlepszy long-term investment dla Twojego biznesu.
+                Poziom konkurencji w Gdyni zależy od branży i konkretnych fraz — sprawdzamy go w audycie. Jeśli prowadzisz turystykę, restaurację, agencję web lub e-commerce z Gdyni, SEO może być długoterminowym kanałem pozyskiwania klientów.
               </p>
             </div>
           </div>
@@ -274,46 +237,28 @@ export default function PozycjonowanieGdynia() {
         </div>
       </section>
 
-      {/* Packages */}
+      {/* Pricing factors */}
       <section className="py-16 md:py-24 bg-secondary/30">
         <div className="container px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Pakiety SEO dla Gdyni</h2>
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {packages.map((pkg, idx) => (
-              <Card
-                key={idx}
-                className={`border-2 relative overflow-hidden transition ${
-                  pkg.highlighted ? "border-primary md:scale-105 shadow-xl" : "border-border"
-                }`}
-              >
-                {pkg.highlighted && (
-                  <Badge className="absolute top-4 right-4 bg-primary text-white">POLECANY</Badge>
-                )}
-                <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold mb-2">{pkg.name}</h3>
-                  <p className="text-sm text-muted-foreground mb-6">{pkg.description}</p>
-                  <div className="mb-6">
-                    <div className="text-3xl font-bold text-primary mb-1">{pkg.price} zł</div>
-                    <div className="text-sm text-muted-foreground">na {pkg.duration}</div>
-                  </div>
-                  <ul className="space-y-3 mb-6">
-                    {pkg.features.map((feature, fidx) => (
-                      <li key={fidx} className="flex gap-2 items-start">
-                        <CheckCircle2 className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <Button asChild className="w-full">
-                    <Link to="/kontakt">Wybierz pakiet</Link>
-                  </Button>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">Od czego zależy wycena SEO w Gdyni</h2>
+          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+            Wycenę przygotowujemy po rozmowie o zakresie i audycie strony — nie stosujemy stałego cennika.
+          </p>
+          <div className="grid md:grid-cols-2 gap-4 max-w-4xl mx-auto">
+            {pricingFactors.map((factor, idx) => (
+              <Card key={idx} className="border-border">
+                <CardContent className="p-5 flex gap-3 items-start">
+                  <CheckCircle2 className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
+                  <span className="text-sm">{factor}</span>
                 </CardContent>
               </Card>
             ))}
           </div>
-          <p className="text-center text-muted-foreground mt-8 max-w-2xl mx-auto">
-            Wszystkie pakiety obejmują audyt, keyword research, raportowanie i wsparcie. Możesz zmienić pakiet lub anulować umowę w każdej chwili bez kar.
-          </p>
+          <div className="text-center mt-8">
+            <Button asChild>
+              <Link to="/kontakt?usluga=seo#formularz">Zapytaj o wycenę</Link>
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -327,7 +272,7 @@ export default function PozycjonowanieGdynia() {
               { num: "2", title: "Strategia", desc: "Wybieramy słowa kluczowe, tworzymy plan działań, definiujemy KPI." },
               { num: "3", title: "Implementacja", desc: "Optymalizujemy on-page, tworzymy content, budujemy linki." },
               { num: "4", title: "Monitoring", desc: "Śledzimy zmiany rankingów, ruch organiczny, konwersje." },
-              { num: "5", title: "Raportowanie", desc: "Raporty co 2 tygodnie z analizą wyników i rekomendacjami." },
+              { num: "5", title: "Raportowanie", desc: "Regularne raporty z analizą wyników i rekomendacjami." },
             ].map((step) => (
               <div key={step.num} className="flex gap-6">
                 <div className="flex-shrink-0">
@@ -340,29 +285,6 @@ export default function PozycjonowanieGdynia() {
                   <p className="text-muted-foreground">{step.desc}</p>
                 </div>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Results */}
-      <section className="py-16 md:py-24 bg-secondary/30">
-        <div className="container px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Rezultaty naszych klientów</h2>
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {[
-              { metric: "+280%", label: "Wzrost ruchu organicznego", context: "e-commerce Gdynia" },
-              { metric: "TOP 3", label: "Pozycja na Google", context: "branża turystyka" },
-              { metric: "6 mies.", label: "Czas do TOP 10", context: "konkurencyjne frazy" },
-              { metric: "4.8/5", label: "Ocena klientów", context: "34 opinie" },
-            ].map((result, idx) => (
-              <Card key={idx} className="border-border">
-                <CardContent className="p-8 text-center">
-                  <div className="text-4xl font-bold text-primary mb-2">{result.metric}</div>
-                  <div className="font-semibold mb-1">{result.label}</div>
-                  <div className="text-sm text-muted-foreground">{result.context}</div>
-                </CardContent>
-              </Card>
             ))}
           </div>
         </div>

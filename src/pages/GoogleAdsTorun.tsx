@@ -32,7 +32,7 @@ import {
 const faqItems = [
   {
     question: "Ile kosztuje kampania Google Ads w Toruniu?",
-    answer: "Kampanie Google Ads w Toruniu zaczynają się od 400 zł miesięcznie za zarządzanie. Budżet na reklamy jest oddzielny i dostosowany do Twoich potrzeb. Oferujemy pakiety od minimum 400 zł/mies. aż do kampanii premium z dedykowanym kierownikiem konta.",
+    answer: "Wycenę obsługi przygotowujemy po rozmowie o zakresie: liczbie kampanii i produktów, typach kampanii, konfiguracji śledzenia i raportowaniu. Budżet reklamowy płacisz bezpośrednio Google — zawsze osobno od wynagrodzenia za obsługę.",
   },
   {
     question: "Dlaczego Google Ads dla firm z Torunia i Kujaw?",
@@ -44,11 +44,11 @@ const faqItems = [
   },
   {
     question: "Jakie są formaty reklam dostępne w Google Ads?",
-    answer: "Główne formaty to: Search Ads (tekst w Google), Display (grafiki na stronach), Shopping (produkty z cenami), Video (YouTube), App Campaigns (aplikacje). Dla firm z Torunia najczęściej stosujemy Search Ads i Display Ads ze względu na wysoką skuteczność i ROI.",
+    answer: "Główne formaty to: Search Ads (tekst w Google), Display (grafiki na stronach), Shopping (produkty z cenami), Video (YouTube), App Campaigns (aplikacje). Dla firm lokalnych zwykle zaczynamy od Search Ads, a pozostałe formaty dobieramy do celu kampanii.",
   },
   {
     question: "Jak szybko zobaczę wyniki z Google Ads?",
-    answer: "Pierwsze wyniki pojawiają się w ciągu 1-2 tygodni. Jednak rzeczywista optymalizacja trwa 2-3 miesiące. W tym okresie zbieramy dane, testujemy różne warianty ogłoszeń i targety, aby znaleźć najlepszą kombinację generującą zwrot z inwestycji.",
+    answer: "Pierwsze dane (wyświetlenia, kliknięcia, koszt) pojawiają się krótko po starcie kampanii. Optymalizacja wymaga czasu na zebranie danych — ile, zależy od budżetu i branży. Testujemy warianty ogłoszeń i targetowania, ale nie gwarantujemy konkretnego zwrotu z inwestycji.",
   },
   {
     question: "Czy Google Ads będzie efektywne dla mojej branży?",
@@ -56,11 +56,11 @@ const faqItems = [
   },
   {
     question: "Ile czasu zajmuje uruchomienie kampanii?",
-    answer: "Uruchomienie kampanii zajmuje 3-7 dni od zatwierdzenia strategii. Najpierw robimy audyt konkurencji, wybieramy słowa kluczowe, piszemy ogłoszenia, ustawiamy landing page i konfigurujemy tracking. Wszystko to robimy szybko, ale starannie dla maksymalnej skuteczności.",
+    answer: "Termin uruchomienia ustalamy w ofercie — zależy od zakresu i gotowości strony. Najpierw robimy audyt konkurencji, wybieramy słowa kluczowe, piszemy ogłoszenia, ustawiamy landing page i konfigurujemy tracking. Wszystko to robimy starannie, zanim kampania wystartuje.",
   },
   {
     question: "Jakie są najczęstsze błędy w Google Ads?",
-    answer: "Najczęstsze błędy to: złe słowa kluczowe, słabe ogłoszenia, brak tracking'u konwersji, zbyt szeroki targeting, niedostateczna optymalizacja. Nasza agencja unika tych błędów dzięki doświadczeniu i certyfikatom Google. Oszczędzamy Ci czasu i pieniędzy na naiwnych próbach.",
+    answer: "Najczęstsze błędy to: złe słowa kluczowe, słabe ogłoszenia, brak tracking'u konwersji, zbyt szeroki targeting, niedostateczna optymalizacja. Na starcie sprawdzamy te elementy i konfigurujemy śledzenie konwersji, żeby decyzje opierać na danych.",
   },
 ];
 
@@ -73,7 +73,7 @@ const services = [
   {
     icon: Globe,
     title: "Display Ads",
-    description: "Reklamy obrazkowe na sieć ponad 2 mln stron - budowanie marki",
+    description: "Reklamy graficzne w sieci reklamowej Google - budowanie marki",
   },
   {
     icon: ShoppingCart,
@@ -99,57 +99,53 @@ const services = [
 
 const packages = [
   {
-    name: "Starter",
-    price: "400",
-    period: "zł/mies.",
+    name: "Kampanie lokalne",
+    price: "Wycena",
+    period: "po rozmowie",
     description: "Dla małych firm i lokalnych biznesów",
     features: [
-      "Zarządzanie 1-2 kampaniami",
-      "Do 5 grup ogłoszeniowych",
+      "Zwykle 1-2 kampanie Search",
+      "Targetowanie na Toruń i okolice",
+      "Konfiguracja śledzenia konwersji",
       "Raport miesięczny",
-      "Podstawowa optymalizacja",
-      "Email support",
     ],
-    cta: "Wybierz pakiet",
+    cta: "Zapytaj o wycenę",
+    popular: false,
   },
   {
-    name: "Professional",
-    price: "850",
-    period: "zł/mies.",
-    description: "Dla firm chcących rosnąć",
+    name: "Rozwój sprzedaży",
+    price: "Wycena",
+    period: "po rozmowie",
+    description: "Dla firm z kilkoma usługami lub produktami",
     features: [
-      "Zarządzanie 3-5 kampaniami",
-      "Tygodniowe konsultacje",
-      "A/B testing ogłoszeń",
-      "Tygodniowy raport",
-      "Priorytetowy support",
+      "Kilka kampanii (Search, Display, YouTube)",
+      "Testy A/B ogłoszeń",
       "Analiza konkurencji",
+      "Regularne konsultacje",
     ],
-    cta: "Wybierz pakiet",
-    popular: true,
+    cta: "Zapytaj o wycenę",
+    popular: false,
   },
   {
-    name: "Enterprise",
-    price: "1500+",
-    period: "zł/mies.",
-    description: "Dla dużych firm i e-commerce",
+    name: "E-commerce",
+    price: "Wycena",
+    period: "po rozmowie",
+    description: "Dla sklepów internetowych",
     features: [
-      "Zarządzanie nieograniczoną liczbą kampanii",
-      "Dedykowany kierownik konta",
-      "Zaawansowana optymalizacja AI",
-      "Raport co tydzień",
-      "Konsultacje co tygodzień",
-      "24/7 support",
-      "Custom integracje",
+      "Kampanie Shopping i Performance Max",
+      "Konfiguracja Merchant Center",
+      "Remarketing",
+      "Raportowanie sprzedaży z kampanii",
     ],
     cta: "Zapytaj o szczegóły",
+    popular: false,
   },
 ];
 
 const industries = [
   { title: "Edukacja", description: "Rekrutacja studentów na studia i kursy na UMK" },
   { title: "Turystyka", description: "Rezerwacje hoteli, przewodniki i atrakcje" },
-  { title: "E-commerce", description: "Sprzedaż produktów online z wysokim ROI" },
+  { title: "E-commerce", description: "Kampanie produktowe dla sklepów online" },
   { title: "Restauracje & Kawiarnie", description: "Promocja pierników i lokalnej gastronomii" },
   { title: "Usługi", description: "Kancelarie, fryzjernie, gabinety lekarskie" },
   { title: "Nieruchomości", description: "Promocja mieszkań, domów i działek" },
@@ -161,14 +157,14 @@ export default function GoogleAdsTorun() {
       <Layout>
         <SEOHead
           title="Agencja Google Ads Toruń — kampanie reklamowe dla firm | Fotz.pl"
-          description="Google Ads Toruń ✓ Kampanie dla firm z Torunia i Kujaw. Od 400 zł/mies. Certyfikowani specjaliści. Bezpłatna konsultacja!"
+          description="Google Ads Toruń — kampanie dla firm z Torunia i Kujaw. Pracujemy z Poznania, obsługa zdalna. Wycena po rozmowie. Bezpłatna konsultacja!"
           canonical="https://www.fotz-studio.pl/performance-marketing/google-ads/torun"
         keywords="google ads torun, kampanie google ads torun, agencja google ads torun, reklamy google torun, google adwords torun, sem torun, google ads dla firm torun, prowadzenie google ads torun, google ads cennik torun, reklama w google torun"
         />
 
         <ServiceSchema
           name="Google Ads Toruń"
-          description="Profesjonalne zarządzanie kampaniami Google Ads dla firm z Torunia i Kujaw. Search, Display, Shopping Ads. Od 400 zł/mies."
+          description="Zarządzanie kampaniami Google Ads dla firm z Torunia i Kujaw. Search, Display, Shopping Ads. Obsługa zdalna z Poznania."
           areaServed="Torun"
         />
 
@@ -186,7 +182,7 @@ export default function GoogleAdsTorun() {
             { name: "Strona główna", url: "/" },
             { name: "Performance Marketing", url: "/performance-marketing" },
             { name: "Google Ads", url: "/performance-marketing/google-ads" },
-            { name: "Toruń", url: "https://www.fotz-studio.pl" },
+            { name: "Toruń", url: "/performance-marketing/google-ads/torun" },
           ]}/>
 
         {/* Hero Section */}
@@ -206,7 +202,7 @@ export default function GoogleAdsTorun() {
                   <span className="text-primary">dla firm z Torunia i Kujaw</span>
                 </h1>
                 <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-                  Google Ads Torun — profesjonalne kampanie Google Ads i reklamy w Google dla firm z Toruna i Kujaw. Zwiększamy ruch, konwersje i ROI dzięki skutecznym kampaniom SEM. Bezpłatna konsultacja.</p>
+                  Google Ads Torun — profesjonalne kampanie Google Ads i reklamy w Google dla firm z Toruna i Kujaw. Pracujemy z Poznania, a firmy z Torunia obsługujemy zdalnie. Bezpłatna konsultacja.</p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button asChild size="lg" className="gap-2">
                     <Link to="/kontakt">
@@ -246,9 +242,9 @@ export default function GoogleAdsTorun() {
                     pełną skalę możliwości biznesowych dla firm z Torunia i całego regionu Kujaw.
                   </p>
                   <p>
-                    Google Ads to najefektywniejszy sposób na dotarcie do potencjalnych klientów w Toruniu.
-                    Bez względu czy prowadzisz kawiarnię, hotel, sklepów online czy usługi profesjonalne,
-                    Google Ads genruje natychmiast widoczność i konkretne wyniki sprzedaży.
+                    Google Ads pozwala dotrzeć do osób, które w danej chwili szukają Twoich usług w Toruniu.
+                    Bez względu na to, czy prowadzisz kawiarnię, hotel, sklep online czy usługi profesjonalne,
+                    reklama może pojawić się w wynikach od startu kampanii — a jej opłacalność sprawdzamy na danych.
                   </p>
                 </div>
               </div>
@@ -349,10 +345,10 @@ export default function GoogleAdsTorun() {
             <div className="container-wide">
               <div className="text-center mb-12">
                 <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
-                  Pakiety Google Ads
+                  Zakres obsługi Google Ads
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Elastyczne pakiety dla firm każdej wielkości. Budżet na reklamy to oddzielna opłata.
+                  Przykładowe zakresy współpracy. Wycenę przygotowujemy po rozmowie o zakresie — budżet reklamowy płacony Google jest zawsze osobno.
                 </p>
               </div>
 

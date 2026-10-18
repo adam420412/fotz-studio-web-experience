@@ -102,7 +102,7 @@ export default function BlogBrandEquityCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Brand Equity", url: "https://www.fotz-studio.pl" },
+              { name: "Brand Equity", url: "/blog/brand-equity-co-to" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Brand Equity — co to jest i jak budować kapitał marki?

@@ -20,17 +20,17 @@ export default function TikTokAdsKatowice() {
     {
       question: "Ile kosztują reklamy TikTok Ads w Katowicach?",
       answer:
-        "Kampanie TikTok Ads w Katowicach startują od 100 PLN dziennie. Budżet dostosowujemy do celów biznesowych i profilu docelowego. Skontaktuj się z agencją Fotz na bezpłatną konsultację dotyczącą TikTok Ads Katowice, aby poznać szczegółowe wyceny i opcje finansowania dla przedsiębiorstw ze Śląska.",
+        "Wycenę obsługi przygotowujemy po rozmowie o zakresie: liczbie kampanii, liczbie i rodzaju kreacji wideo oraz częstotliwości raportów. Budżet reklamowy płacisz bezpośrednio TikTokowi, zawsze osobno od opłaty za obsługę — jego wysokość dobieramy do celów biznesowych i grupy docelowej. Skontaktuj się z agencją Fotz na bezpłatną konsultację dotyczącą TikTok Ads Katowice.",
     },
     {
       question: "Jakie branże działają dobrze na TikTok w Katowicach i na Śląsku?",
       answer:
-        "Na TikTok Ads sprawdzają się: e-commerce, fitness, kosmetyki, fashion, gastronomia, edukacja i usługi biznesowe. Gen Z to główna grupa docelowa na TikToku. W Katowicach i na Śląsku szczególnie dobrze działają kampanie TikTok Ads dla branży technologicznej, handlu, turystyki i usług profesjonalnych kierowane do młodych potencjalnych klientów.",
+        "Na TikTok Ads sprawdzają się: e-commerce, fitness, kosmetyki, fashion, gastronomia, edukacja i usługi biznesowe. Gen Z to główna grupa docelowa na TikToku. W Katowicach i na Śląsku kampanie TikTok Ads mogą wspierać także branżę technologiczną, handel, turystykę i usługi profesjonalne kierowane do młodych potencjalnych klientów — dopasowanie sprawdzamy w testach.",
     },
     {
       question: "Jaki jest efekt kampanii TikTok Ads w Katowicach?",
       answer:
-        "Średni CTR na TikToku wynosi 3-5%, a ROAS zależy od branży i ceny produktu. Dla e-commerce obserwujemy zwrot 3-5x przy optymalnym targetowaniu kampanii TikTok Ads. W Katowicach kampanie osiągają średnio 15-25% wzrost konwersji po 30 dniach optymalizacji.",
+        "Efekt zależy od branży, ceny produktu, jakości kreacji i budżetu. Nie gwarantujemy konkretnego CTR ani zwrotu z inwestycji — zaczynamy od testów kreacji i grup odbiorców, a potem rozwijamy to, co daje najlepsze wyniki w danych.",
     },
     {
       question: "Czy można sprzedawać bezpośrednio przez TikTok Ads?",
@@ -40,7 +40,7 @@ export default function TikTokAdsKatowice() {
     {
       question: "Ile czasu trwa przygotowanie kampanii TikTok Ads?",
       answer:
-        "Kampania uruchamiana jest w ciągu 5-7 dni od zatwierdzenia briefu. Przygotowujemy scenariusz, produkcję wideo, pixel trackingowy i konfigurację. W Katowicach pracujemy szybko bez uszczerbku na jakości — każda kampania TikTok Ads jest testowana przed pełnym uruchomieniem.",
+        "Termin startu ustalamy po zatwierdzeniu briefu — zależy głównie od zakresu produkcji wideo. Przygotowujemy scenariusz, produkcję wideo, pixel trackingowy i konfigurację. Każda kampania TikTok Ads jest testowana przed pełnym uruchomieniem.",
     },
     {
       question: "Jakie metryki monitorujecie w kampaniach TikTok Ads?",
@@ -50,12 +50,12 @@ export default function TikTokAdsKatowice() {
     {
       question: "Czy można testować TikTok Ads bez dużego budżetu?",
       answer:
-        "Tak, polecamy testowe kampanie z budżetem 100-200 PLN dziennie. Po analizie danych skalujemy kampanie TikTok Ads, które przynoszą najlepsze wyniki. W Katowicach startujemy z małych budżetów, aby znaleźć idealne parametry przed pełnym skalowaniem.",
+        "Tak, polecamy zacząć od testowych kampanii z mniejszym budżetem, którego wysokość ustalamy wspólnie. Po analizie danych skalujemy kampanie TikTok Ads, które przynoszą najlepsze wyniki. W Katowicach startujemy z małych budżetów, aby znaleźć idealne parametry przed pełnym skalowaniem.",
     },
     {
       question: "Czy TikTok Ads wymaga wsparcia influencerów?",
       answer:
-        "Nie, kampanie TikTok Ads działają samodzielnie i przynoszą wyniki bez influencerów. Możemy jednak współpracować z popularnymi TikTokerami z Katowic dla dodatkowego reach i wiarygodności. Agencja Fotz łączy organic reach z płatnymi kampaniami TikTok Ads na Śląsku.",
+        "Nie, kampanie TikTok Ads można prowadzić bez influencerów. Jeśli ma to sens dla marki, możemy zaproponować współpracę z twórcami, także z regionu, dla dodatkowego zasięgu i wiarygodności. Agencja Fotz łączy organic reach z płatnymi kampaniami TikTok Ads na Śląsku.",
     },
   ];
 
@@ -95,7 +95,7 @@ export default function TikTokAdsKatowice() {
     {
       title: "TopView",
       description:
-        "Premium reklama wyświetlająca się jako pierwsze wideo w feed — najwyższy reach dla kampanii TikTok Ads",
+        "Premium reklama wyświetlająca się jako pierwsze wideo w feed — duży zasięg dla kampanii TikTok Ads",
     },
   ];
 
@@ -103,12 +103,12 @@ export default function TikTokAdsKatowice() {
     {
       title: "Zwiększenie Reach",
       description:
-        "Dotrzeć do tiluków potencjalnych klientów w Katowicach i na całym Śląsku za pośrednictwem kampanii TikTok Ads",
+        "Dotrzeć do potencjalnych klientów w Katowicach i na całym Śląsku za pośrednictwem kampanii TikTok Ads",
     },
     {
       title: "Budowanie Świadomości Marki",
       description:
-        "Zwiększyć rozpoznawalnośd marki wśród Gen Z w Katowicach poprzez autentyczne i kreatywne treści video",
+        "Zwiększyć rozpoznawalność marki wśród Gen Z w Katowicach poprzez autentyczne i kreatywne treści video",
     },
     {
       title: "Generowanie Lead",
@@ -167,14 +167,14 @@ export default function TikTokAdsKatowice() {
 
   const whyFotz = [
     {
-      title: "Doświadczenie w TikTok Ads",
+      title: "Kampanie i wideo w jednym miejscu",
       description:
-        "Zarządzamy kampaniami TikTok Ads o wartości milionów PLN. Wiemy, jak skalować w Katowicach i na całym Śląsku.",
+        "Sami nagrywamy i montujemy materiały wideo, a potem prowadzimy na nich kampanie TikTok Ads — bez przekazywania pracy między kilkoma firmami.",
     },
     {
       title: "Zespół Kreatywów",
       description:
-        "Producenci wideo, copywriterzy i designerzy tworzący treści viral na TikTok dla kampanii TikTok Ads w Katowicach.",
+        "Producenci wideo, copywriterzy i designerzy tworzący treści na TikTok dla kampanii TikTok Ads w Katowicach.",
     },
     {
       title: "Data-Driven Approach",
@@ -182,9 +182,9 @@ export default function TikTokAdsKatowice() {
         "Wszystkie decyzje opieramy na danych i testowaniu. Ciągle optymalizujemy kampanie TikTok Ads na Śląsku.",
     },
     {
-      title: "Wsparcie 24/7",
+      title: "Współpraca zdalna",
       description:
-        "Jesteśmy dostępni dla pytań i wsparcia kampanii TikTok Ads. Szybka odpowiedź na wiadomości z Katowic.",
+        "Pracujemy z Poznania, a firmy z Katowic obsługujemy zdalnie — rozmowy online, wspólne materiały i stały kontakt z opiekunem kampanii.",
     },
     {
       title: "Transparentna Wycena",
@@ -192,9 +192,9 @@ export default function TikTokAdsKatowice() {
         "Brak ukrytych kosztów. Znasz dokładnie za co płacisz w kampaniach TikTok Ads w Katowicach.",
     },
     {
-      title: "Certyfikacja TikTok",
+      title: "Budżet reklamowy osobno",
       description:
-        "Jesteśmy certyfikowanym partnerem TikTok, co gwarantuje dostęp do nowych formatów i funkcji kampanii.",
+        "Budżet reklamowy płacisz bezpośrednio TikTokowi, osobno od opłaty za obsługę — widzisz, ile wydajesz na same reklamy.",
     },
   ];
 
@@ -232,9 +232,9 @@ export default function TikTokAdsKatowice() {
               TikTok Ads Katowice — Agencja Kampanii Reklamowych
             </h1>
             <p className="text-xl mb-8 leading-relaxed max-w-2xl">
-              Agencja Fotz specjalizuje się w kampaniach TikTok Ads dla firm z Katowic i całego
-              Śląska. Tworzymy viral treści wideo, targetujemy Gen Z, budujemy strategie i
-              skalujemy sprzedaż dla biznesów każdej wielkości.
+              Agencja Fotz prowadzi kampanie TikTok Ads dla firm z Katowic i całego
+              Śląska. Tworzymy treści wideo, targetujemy Gen Z i budujemy strategie kampanii.
+              Pracujemy z Poznania, a firmy ze Śląska obsługujemy zdalnie.
             </p>
             <Link
               to="#kontakt"
@@ -253,21 +253,21 @@ export default function TikTokAdsKatowice() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-sm">
-                <div className="text-4xl font-bold text-blue-600 mb-2">1B+</div>
+                <div className="text-4xl font-bold text-blue-600 mb-2">Zasięg</div>
                 <p className="text-gray-700">
-                  Użytkowników TikTok na świecie — dotrzeć do miliardów potencjalnych klientów
+                  TikTok to jedna z najpopularniejszych platform wideo — także wśród odbiorców ze Śląska
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-sm">
-                <div className="text-4xl font-bold text-blue-600 mb-2">25%</div>
+                <div className="text-4xl font-bold text-blue-600 mb-2">Gen Z</div>
                 <p className="text-gray-700">
-                  Polskich nastolatków używa TikTok codziennie — Gen Z w Katowicach
+                  Platforma, na której łatwo dotrzeć do młodych odbiorców w Katowicach
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-sm">
-                <div className="text-4xl font-bold text-blue-600 mb-2">3-5x</div>
+                <div className="text-4xl font-bold text-blue-600 mb-2">Testy</div>
                 <p className="text-gray-700">
-                  ROAS dla e-commerce — zwrot z inwestycji w kampanie TikTok Ads
+                  Zaczynamy od testów kreacji i grup odbiorców, a budżet zwiększamy na to, co działa
                 </p>
               </div>
             </div>
@@ -352,8 +352,8 @@ export default function TikTokAdsKatowice() {
               Dlaczego Wybrać Agencję Fotz do Prowadzenia TikTok Ads w Katowicach?
             </h2>
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              Agencja Fotz to zespół specjalistów w kampaniach TikTok Ads z doświadczeniem w
-              obsłudze firm na całym Śląsku. Dostarczamy wyniki, nie tylko obietnice.
+              Agencja Fotz łączy produkcję wideo z prowadzeniem kampanii TikTok Ads. Firmy ze
+              Śląska obsługujemy zdalnie z Poznania i jasno mówimy, czego nie możemy obiecać.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {whyFotz.map((item, idx) => (
