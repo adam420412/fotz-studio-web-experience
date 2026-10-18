@@ -8,28 +8,28 @@ import { FAQSchema } from "@/components/seo/StructuredData";
 
 const faqItems = [
   {
-    question: "Ile kosztuje kliknięcie w Google Ads?",
-    answer: "Przykładowe widełki rynkowe CPC w Google Ads w Polsce to ok. 0,50–5 zł, zależnie od branży. Reklama dla usług finansowych może kosztować nawet 10-15 zł za kliknięcie, podczas gdy e-commerce oscyluje wokół 1-3 zł. Wszystko zależy od konkurencji na danym słowie kluczowym."
+    "question": "Ile kosztuje kliknięcie w Google Ads?",
+    "answer": "Przykładowe widełki rynkowe CPC w Google Ads w Polsce to ok. 0,50–5 zł, ale stawki mogą sięgać nawet 10-15 zł dla konkurencyjnych branż jak finanse czy nieruchomości. Dla usług lokalnych oscyluje wokół 0,30-1,50 zł."
   },
   {
-    question: "Jaki jest minimalny budżet na Google Ads?",
-    answer: "Nie ma oficjalnego minimum, ale rekomendujemy co najmniej 500-1000 zł miesięcznie, aby uzyskać istotne dane i wyniki. Z budżetem poniżej 500 zł trudno jest testować kampanię i zbierać wystarczające dane do optymalizacji."
+    "question": "Jaki jest minimalny budżet na Google Ads?",
+    "answer": "Google nie narzuca minimum, ale rekomendujemy minimum 500-1000 zł miesięcznie, aby uzyskać wystarczające dane do testów i optymalizacji. Poniżej tego poziomu trudno jest ocenić efektywność kampanii."
   },
   {
-    question: "Ile kosztuje agencja zarządzająca Google Ads?",
-    answer: "Przykładowe widełki rynkowe: agencje zarządzające Google Ads często pobierają prowizję ok. 15-30% od wydanego budżetu lub stałą opłatę rzędu 2000-5000 zł miesięcznie — konkretna kwota zależy od zakresu i skali kampanii. Niektóre agencje pracują na modelu sprzedażowym, biorąc procent od przychodu wygenerowanego z kampanii."
+    "question": "Ile kosztuje agencja Google Ads?",
+    "answer": "Przykładowe widełki rynkowe: agencje często pobierają ok. 15-30% od wydanego budżetu lub stałą opłatę rzędu 2000-5000 zł miesięcznie — zależnie od zakresu. Niektóre pracują na modelu wyników — procent od przychodu wygenerowanego z kampanii."
   },
   {
-    question: "Czy Google Ads opłaca się dla małych firm?",
-    answer: "Tak, ale wymaga strategii. Google Ads świetnie sprawdza się dla firm oferujących usługi lokalne, usługi B2B i e-commerce. Dla bardzo konkurencyjnych branż może być drożej niż SEO, ale zwrot jest szybszy — w ciągu 3-6 miesięcy można ocenić efektywność."
+    "question": "Czy Google Ads opłaca się dla małych firm?",
+    "answer": "Tak, Google Ads świetnie sprawdza się dla małych firm, zwłaszcza z usługami lokalnymi (CPC 0,30-1,50 zł) i B2B. Wymaga strategii i cierpliwości (3-6 miesięcy), ale ROI może być bardzo dobry."
   },
   {
-    question: "Co to jest Quality Score i jak wpływa na cenę?",
-    answer: "Quality Score (1-10) to ocena Google jakości Twojej reklamy i strony docelowej. Wyższy Quality Score (8-10) wyraźnie obniża koszt kliknięcia, a niska ocena (poniżej 5) może go znacząco podnieść."
+    "question": "Co to jest Quality Score i jak wpływa na cenę?",
+    "answer": "Quality Score (1-10) to ocena Google jakości Twojej reklamy i strony docelowej. Wyższy Quality Score (8-10) wyraźnie obniża CPC, a niska ocena (poniżej 5) może go znacząco podnieść."
   },
   {
-    question: "Kiedy ROI z Google Ads jest pozytywny?",
-    answer: "ROI jest pozytywny, gdy przychód z konwersji przekracza koszt kampanii. Zazwyczaj dzieje się to po 2-3 miesiącach optymalizacji. Opłacalny poziom ROAS (przychód na 1 zł budżetu) zależy od marży w Twojej branży — policz go przed startem kampanii."
+    "question": "Kiedy Google Ads się opłaca?",
+    "answer": "Google Ads opłaca się, gdy potrzebujesz szybkich wyników (tygodnie, nie miesiące), masz budżet minimum 500-1000 zł i wiesz, jaka jest wartość konwersji. Zwrot zwykle następuje po 2-3 miesiącach optymalizacji."
   }
 ];
 
@@ -70,36 +70,6 @@ const BlogKosztGoogleAds = () => {
               { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://www.fotz-studio.pl" },
               { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.fotz-studio.pl/blog" },
               { "@type": "ListItem", "position": 3, "name": "Ile kosztuje reklama w Google?" }
-            ]
-          },
-          {
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "Ile kosztuje kliknięcie w Google Ads?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Średni koszt kliknięcia (CPC) w Google Ads w Polsce wynosi od 0,50 zł do 5 zł. Reklama dla usług finansowych może kosztować nawet 10-15 zł za kliknięcie, podczas gdy e-commerce oscyluje wokół 1-3 zł."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Jaki jest minimalny budżet na Google Ads?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Rekomendujemy co najmniej 500-1000 zł miesięcznie, aby uzyskać istotne dane i wyniki kampanii."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Ile kosztuje agencja Google Ads?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Agencje zarządzające Google Ads pobierają prowizję 15-30% od wydanego budżetu lub stałą opłatę 2000-5000 zł miesięcznie."
-                }
-              }
             ]
           }
         ]}
@@ -541,30 +511,12 @@ const BlogKosztGoogleAds = () => {
                 </h2>
 
                 <div className="space-y-6 mb-12">
-                  <div className="p-6 bg-card rounded-xl border border-border/50">
-                    <h3 className="text-lg font-semibold mb-2">Ile kosztuje kliknięcie w Google Ads?</h3>
-                    <p className="text-muted-foreground">Przykładowe widełki rynkowe CPC w Google Ads w Polsce to ok. 0,50–5 zł, ale stawki mogą sięgać nawet 10-15 zł dla konkurencyjnych branż jak finanse czy nieruchomości. Dla usług lokalnych oscyluje wokół 0,30-1,50 zł.</p>
-                  </div>
-                  <div className="p-6 bg-card rounded-xl border border-border/50">
-                    <h3 className="text-lg font-semibold mb-2">Jaki jest minimalny budżet na Google Ads?</h3>
-                    <p className="text-muted-foreground">Google nie narzuca minimum, ale rekomendujemy minimum 500-1000 zł miesięcznie, aby uzyskać wystarczające dane do testów i optymalizacji. Poniżej tego poziomu trudno jest ocenić efektywność kampanii.</p>
-                  </div>
-                  <div className="p-6 bg-card rounded-xl border border-border/50">
-                    <h3 className="text-lg font-semibold mb-2">Ile kosztuje agencja Google Ads?</h3>
-                    <p className="text-muted-foreground">Przykładowe widełki rynkowe: agencje często pobierają ok. 15-30% od wydanego budżetu lub stałą opłatę rzędu 2000-5000 zł miesięcznie — zależnie od zakresu. Niektóre pracują na modelu wyników — procent od przychodu wygenerowanego z kampanii.</p>
-                  </div>
-                  <div className="p-6 bg-card rounded-xl border border-border/50">
-                    <h3 className="text-lg font-semibold mb-2">Czy Google Ads opłaca się dla małych firm?</h3>
-                    <p className="text-muted-foreground">Tak, Google Ads świetnie sprawdza się dla małych firm, zwłaszcza z usługami lokalnymi (CPC 0,30-1,50 zł) i B2B. Wymaga strategii i cierpliwości (3-6 miesięcy), ale ROI może być bardzo dobry.</p>
-                  </div>
-                  <div className="p-6 bg-card rounded-xl border border-border/50">
-                    <h3 className="text-lg font-semibold mb-2">Co to jest Quality Score i jak wpływa na cenę?</h3>
-                    <p className="text-muted-foreground">Quality Score (1-10) to ocena Google jakości Twojej reklamy i strony docelowej. Wyższy Quality Score (8-10) wyraźnie obniża CPC, a niska ocena (poniżej 5) może go znacząco podnieść.</p>
-                  </div>
-                  <div className="p-6 bg-card rounded-xl border border-border/50">
-                    <h3 className="text-lg font-semibold mb-2">Kiedy Google Ads się opłaca?</h3>
-                    <p className="text-muted-foreground">Google Ads opłaca się, gdy potrzebujesz szybkich wyników (tygodnie, nie miesiące), masz budżet minimum 500-1000 zł i wiesz, jaka jest wartość konwersji. Zwrot zwykle następuje po 2-3 miesiącach optymalizacji.</p>
-                  </div>
+                  {faqItems.map(({ question, answer }) => (
+                    <div key={question} className="p-6 bg-card rounded-xl border border-border/50">
+                      <h3 className="text-lg font-semibold mb-2">{question}</h3>
+                      <p className="text-muted-foreground">{answer}</p>
+                    </div>
+                  ))}
                 </div>
               </motion.div>
 
