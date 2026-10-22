@@ -142,6 +142,28 @@ export default function StronaInternetowaDlaPrawnika() {
           </section>
         </FadeInView>
 
+        {/* Realizacja */}
+        <FadeInView>
+          <section className="py-16 md:py-24 bg-slate-950 text-white">
+            <div className="max-w-5xl mx-auto px-4 md:px-6 grid md:grid-cols-2 gap-10 items-center">
+              <div>
+                <p className="text-xs uppercase tracking-[.16em] text-slate-400 mb-3">Przykładowa realizacja</p>
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">Ratio Legal: strona, sesja i film w jednym procesie</h2>
+                <p className="text-slate-300 mb-6">Strona kancelarii adwokacko-radcowskiej z Poznania z podziałem na sprawy prywatne i biznesowe, sekcją sukcesów i bazą wiedzy. Do tego sesja zdjęciowa zespołu i film o kancelarii.</p>
+                <ul className="space-y-2 mb-8 text-slate-200 text-sm">
+                  {["Strona z podziałem na specjalizacje", "Sesja zdjęciowa zespołu i biura", "Film o kancelarii i nagrania eksperckie", "Opcjonalnie stałe prowadzenie social mediów"].map((item) => (
+                    <li key={item} className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 mt-0.5 flex-shrink-0 text-slate-400" />{item}</li>
+                  ))}
+                </ul>
+                <a href="https://ratio-legal-chi.vercel.app" target="_blank" rel="noopener" className="inline-flex items-center gap-2 rounded-full bg-white text-slate-900 px-6 py-3 text-sm font-semibold hover:bg-slate-200">Zobacz stronę Ratio Legal <ArrowRight className="w-4 h-4" /></a>
+              </div>
+              <a href="https://ratio-legal-chi.vercel.app" target="_blank" rel="noopener" aria-label="Strona Ratio Legal, otwiera się w nowej karcie" className="block overflow-hidden rounded-xl border border-white/10 shadow-2xl">
+                <img src="/work/portfolio/work-projekty-ratio-legal-960.webp" srcSet="/work/portfolio/work-projekty-ratio-legal-480.webp 480w, /work/portfolio/work-projekty-ratio-legal-960.webp 960w" sizes="(max-width: 767px) calc(100vw - 32px), 480px" alt="Strona główna kancelarii Ratio Legal" width="960" height="600" loading="lazy" decoding="async" className="w-full h-auto" />
+              </a>
+            </div>
+          </section>
+        </FadeInView>
+
         {/* Why */}
         <FadeInView>
           <section className="py-16 md:py-24 bg-slate-50">
