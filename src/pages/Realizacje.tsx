@@ -12,7 +12,7 @@ import { business } from "@/data/business.mjs";
 import { cn } from "@/lib/utils";
 import "./realizacje.css";
 
-const projectCategories = ["Wszystkie", "Strony www", "Kampanie reklamowe", "E-commerce", "Wizualizacje 3D"];
+const projectCategories = ["Wszystkie", "Strony www", "Aplikacje i 3D", "Kampanie reklamowe", "E-commerce", "Wizualizacje 3D"];
 const spotlightOrder = ["enea-stadion", "wsb-merito", "klagem", "dawid-edu"];
 const projectOrder = (id: string) => spotlightOrder.includes(id) ? spotlightOrder.indexOf(id) : spotlightOrder.length;
 const orderedProjects = [...projects].sort((a, b) => projectOrder(a.id) - projectOrder(b.id));
@@ -85,17 +85,17 @@ export default function Realizacje() {
                 <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-border bg-muted">
                   <img src={portfolioPreviews[project.image]?.src ?? project.image} srcSet={portfolioPreviews[project.image]?.srcSet} sizes="(max-width: 639px) calc(100vw - 48px), (max-width: 767px) calc((100vw - 72px) / 2), (max-width: 1023px) calc((100vw - 120px) / 2), (max-width: 1279px) calc((100vw - 330px) / 2), 475px" alt="" className="portfolio-media h-full w-full object-cover object-top" loading="lazy" decoding="async" width="720" height="540" />
                   {project.featured && <span className="absolute top-4 left-4 rounded-full bg-black/80 px-3 py-1.5 text-xs text-white">Wybrana realizacja</span>}
-                  <span aria-hidden="true" className="portfolio-card-icon absolute bottom-4 right-4 flex h-11 w-11 items-center justify-center rounded-full bg-background text-foreground shadow-sm">{project.hasCase ? <ArrowUpRight className="h-5 w-5" /> : <Expand className="h-5 w-5" />}</span>
+                  <span aria-hidden="true" className="portfolio-card-icon absolute bottom-4 right-4 flex h-11 w-11 items-center justify-center rounded-full bg-background text-foreground shadow-sm">{project.hasCase || project.liveUrl ? <ArrowUpRight className="h-5 w-5" /> : <Expand className="h-5 w-5" />}</span>
                 </div>
                 <div className="pt-5 flex flex-1 flex-col items-start">
                   <p className="text-[11px] uppercase tracking-[.14em] text-muted-foreground mb-2">{project.category}</p>
                   <h3 className="text-2xl md:text-3xl tracking-tight mb-3">{project.title}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed mb-5">{project.description}</p>
-                  <span className="mt-auto text-sm underline underline-offset-4">{project.hasCase ? "Zobacz projekt" : "Powiększ wizualizację"}</span>
+                  <span className="mt-auto text-sm underline underline-offset-4">{project.hasCase ? "Zobacz projekt" : project.liveUrl ? "Otwórz stronę" : project.category === "Wizualizacje 3D" ? "Powiększ wizualizację" : "Powiększ zrzut ekranu"}</span>
                 </div>
               </>;
               const className = "portfolio-project group flex h-full flex-col rounded-2xl text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary";
-              return <article key={`${activeProjectCategory}-${project.id}`} className="portfolio-enter min-w-0" style={{ animationDelay: `${Math.min(index, 3) * 45}ms` }}>{project.hasCase ? <Link to={`/realizacje/${project.id}`} className={className}>{card}</Link> : <button type="button" className={cn(className, "w-full")} onClick={() => setLightbox({ images: [{ src: project.image, alt: project.title }], index: 0 })}>{card}</button>}</article>;
+              return <article key={`${activeProjectCategory}-${project.id}`} className="portfolio-enter min-w-0" style={{ animationDelay: `${Math.min(index, 3) * 45}ms` }}>{project.hasCase ? <Link to={`/realizacje/${project.id}`} className={className}>{card}</Link> : project.liveUrl ? <a href={project.liveUrl} target="_blank" rel="noopener" className={className} aria-label={`${project.title}, otwiera się w nowej karcie`}>{card}</a> : <button type="button" className={cn(className, "w-full")} onClick={() => setLightbox({ images: [{ src: project.image, alt: project.title }], index: 0 })}>{card}</button>}</article>;
             })}
           </div>
           </div>
