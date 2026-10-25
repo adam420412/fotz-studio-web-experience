@@ -9,6 +9,7 @@ const service = document.body.dataset.service;
 let consent = null;
 try { consent = localStorage.getItem('fotz-campaign-consent-v1'); } catch { /* A blocked storage must not block the form. */ }
 let pixelLoaded = false;
+let openAIPixelLoaded = false;
 let pageTracked = false;
 let pending = false;
 let lastFingerprint = '';
@@ -19,8 +20,29 @@ const submissionStorage = {
   setItem(key, value) { storageFallback.set(key, value); try { sessionStorage.setItem(key, value); } catch {} },
 };
 
+function startOpenAIPixel() {
+  if (!production || consent !== 'accepted') return;
+  if (!window.oaiq) {
+    const oaiq = function () { oaiq.q.push(arguments); };
+    oaiq.q = [];
+    window.oaiq = oaiq;
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://bzrcdn.openai.com/sdk/oaiq.min.js';
+    const first = document.getElementsByTagName('script')[0];
+    first.parentNode.insertBefore(script, first);
+  }
+  if (!openAIPixelLoaded) {
+    window.oaiq('consent', false);
+    window.oaiq('init', { pixelId: '88jug6FL5aiQtjAtYo1WAz', debug: true });
+    openAIPixelLoaded = true;
+  }
+  window.oaiq('consent', true);
+}
+
 function startPixel() {
   if (!production || consent !== 'accepted') return;
+  startOpenAIPixel();
   if (!window.fbq) {
     const fbq = function () { fbq.callMethod ? fbq.callMethod.apply(fbq, arguments) : fbq.queue.push(arguments); };
     fbq.push = fbq; fbq.loaded = true; fbq.version = '2.0'; fbq.queue = [];
@@ -44,6 +66,7 @@ function chooseConsent(value) {
   if (value === 'accepted') startPixel();
   else {
     window.fbq?.('consent', 'revoke');
+    window.oaiq?.('consent', false);
     // Clear the Meta identifiers available on this domain when consent is withdrawn.
     for (const name of ['_fbp', '_fbc']) for (const domain of ['', location.hostname, '.fotz-studio.pl']) {
       document.cookie = `${name}=; Max-Age=0; Path=/; SameSite=Lax${domain ? `; Domain=${domain}` : ''}`;
@@ -86,6 +109,13 @@ form.addEventListener('submit', async event => {
       const key = `fotz:tracked:${accepted.submission_id}`;
       if (!submissionStorage.getItem(key)) {
         window.fbq('track', 'Lead', { content_name: `FOTZ ${service}` }, { eventID: accepted.submission_id });
+        submissionStorage.setItem(key, '1');
+      }
+    }
+    if (consent === 'accepted' && window.oaiq) {
+      const key = `fotz:openai-tracked:${accepted.submission_id}`;
+      if (!submissionStorage.getItem(key)) {
+        window.oaiq('measure', 'lead_created', { type: 'customer_action' }, { event_id: accepted.submission_id });
         submissionStorage.setItem(key, '1');
       }
     }
