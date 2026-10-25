@@ -27,7 +27,7 @@ export default function PolitykaPrywatnosci() {
               
               <div className="prose prose-invert prose-lg max-w-none space-y-8">
                 <p className="text-muted-foreground text-lg">
-                  Ostatnia aktualizacja: 10 października 2026
+                  Ostatnia aktualizacja: 25 października 2026
                 </p>
 
                 <section className="space-y-4">
@@ -79,9 +79,10 @@ export default function PolitykaPrywatnosci() {
                 <section className="space-y-4">
                   <h2 className="text-2xl font-heading font-semibold text-foreground">5. Odbiorcy danych</h2>
                   <p className="text-muted-foreground">
-                    Twoje dane mogą być przekazywane podmiotom świadczącym usługi na naszą rzecz: 
-                    hostingowe, analityczne, marketingowe, księgowe oraz organom państwowym 
-                    w przypadkach przewidzianych prawem.
+                    Twoje dane mogą być przekazywane podmiotom świadczącym usługi na naszą rzecz:
+                    hostingowe, analityczne, marketingowe i księgowe oraz organom państwowym
+                    w przypadkach przewidzianych prawem. Zakres przekazywania danych narzędziom
+                    analitycznym i reklamowym zależy od Twojej zgody i jest opisany w sekcji 8.
                   </p>
                 </section>
 
@@ -116,6 +117,7 @@ export default function PolitykaPrywatnosci() {
                     prawidłowego działania strony i, po wyrażeniu zgody, analizy ruchu w Google Analytics 4.
                   </p>
                   <p className="text-muted-foreground">Google Analytics 4 (Google) mierzy odwiedzane podstrony oraz etapy kontaktu: kliknięcie telefonu lub e-maila, rozpoczęcie formularza i potwierdzone przyjęcie zgłoszenia. Do tych zdarzeń przekazujemy kategorię usługi, bez imienia, e-maila, telefonu i treści wiadomości. Adresy stron w nowym pomiarze GA4 nie zawierają parametrów zapytania. Odmowa lub cofnięcie zgody nie blokuje kontaktu. Dodatkowe informacje: <a href="https://policies.google.com/privacy" className="underline">polityka prywatności Google</a>. Strona korzysta również z bezciasteczkowych statystyk Ahrefs Analytics; własne zdarzenia kontaktu wysyłamy dopiero po zgodzie.</p>
+                  <p className="text-muted-foreground">Na podstronach kampanii <a href="https://www.fotz-studio.pl/kampanie/strony.html" className="underline">WWW</a> i <a href="https://www.fotz-studio.pl/kampanie/wideo.html" className="underline">WIDEO</a>, po zgodzie na pomiar reklam, działa Meta Pixel oraz OpenAI Ads Measurement Pixel. OpenAI otrzymuje zdarzenie lead_created dopiero po potwierdzonym zapisie formularza oraz identyfikatory przeglądarki i kliknięcia używane do pomiaru i atrybucji. Kod strony nie wysyła do OpenAI treści formularza ani surowych danych kontaktowych; jeśli w Menedżerze reklam włączone jest automatyczne dopasowanie, Pixel może wykrywać i wysyłać skróty kryptograficzne wybranych danych dostępnych na stronie. Odmowa lub cofnięcie zgody blokuje wysyłanie nowych zdarzeń z tych podstron; formularz nadal działa. Więcej: <a href="https://openai.com/policies/privacy-policy/" className="underline">polityka prywatności OpenAI</a>.</p>
                   <p className="text-muted-foreground">Rodzaje wykorzystywanych cookies:</p>
                   <ul className="list-disc list-inside text-muted-foreground space-y-2">
                     <li><strong>Niezbędne</strong> – konieczne do funkcjonowania strony</li>
