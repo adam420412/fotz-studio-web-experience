@@ -4,6 +4,48 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Shared reading and interaction layer across public page templates. */
+.fotz-site h1, .fotz-site h2, .fotz-site h3 { text-wrap: balance; }
+.fotz-site p, .fotz-site li { overflow-wrap: break-word; }
+.fotz-site :is(a, button, summary, input, textarea, select):focus-visible {
+  outline: 2px solid var(--dv-accent-pink);
+  outline-offset: 4px;
+}
+.fotz-site details > summary { min-height: 44px; padding-block: 8px; }
+.fotz-site details[open] > summary { color: var(--dv-accent-pink); }
+.fotz-site[data-page-kind="article"] .prose {
+  --tw-prose-body: hsl(var(--muted-foreground));
+  --tw-prose-headings: hsl(var(--foreground));
+  --tw-prose-links: hsl(var(--foreground));
+  --tw-prose-bold: hsl(var(--foreground));
+  --tw-prose-bullets: var(--dv-accent-pink);
+  --tw-prose-invert-body: hsl(var(--muted-foreground));
+  --tw-prose-invert-headings: hsl(var(--foreground));
+  --tw-prose-invert-links: hsl(var(--foreground));
+  --tw-prose-invert-bold: hsl(var(--foreground));
+  font-size: clamp(1rem, .95rem + .15vw, 1.125rem);
+  line-height: 1.85;
+}
+.fotz-site[data-page-kind="article"] .prose :is(h2, h3) { scroll-margin-top: 110px; line-height: 1.25; }
+.fotz-site[data-page-kind="article"] .prose a { text-decoration-thickness: 1px; text-underline-offset: 4px; }
+.fotz-site[data-page-kind="article"] .prose table { display: block; max-width: 100%; overflow-x: auto; }
+.offer-heading { font-size: clamp(2.3rem, 3.5vw + .5rem, 4.4rem); line-height: 1.05; letter-spacing: -.045em; font-weight: 400; }
+.offer-visual-link { position: relative; overflow: hidden; border-radius: 12px; background: hsl(var(--muted)); }
+.offer-visual-caption { position: absolute; inset: auto 0 0; display: flex; align-items: end; justify-content: space-between; gap: 20px; padding: 60px 28px 28px; color: white; background: linear-gradient(transparent, rgba(0,0,0,.82)); }
+.offer-navigation a { display: inline-flex; align-items: center; min-height: 44px; border-bottom: 1px solid transparent; }
+.offer-navigation a:hover { border-color: currentColor; }
+.offer-scope-item { background: hsl(var(--background)); border-radius: 0 0 12px 12px; }
+.offer-contact { border: 1px solid hsl(var(--border)); border-radius: 12px; background: linear-gradient(125deg, hsl(var(--muted) / .6), hsl(var(--background))); }
+.service-editorial #szczegoly > section { padding-block: clamp(32px, 5vw, 64px); }
+.service-editorial #szczegoly p, .service-editorial #szczegoly li { max-width: 68ch; line-height: 1.8; }
+@media (max-width: 640px) {
+  .offer-heading { font-size: clamp(2rem, 8.2vw, 2.8rem); }
+  .offer-visual img { aspect-ratio: 4 / 3; }
+  .offer-summary { gap: 18px; }
+  .service-editorial .dv-btn { width: 100%; }
+  .offer-visual-caption { padding: 55px 20px 20px; }
+}
+
 @layer base {
   :root {
     /* Light mode */

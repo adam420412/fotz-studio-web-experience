@@ -17,6 +17,7 @@ interface LayoutProps {
 
 export function Layout({ children, workPlacement = "end" }: LayoutProps) {
   const { pathname } = useLocation();
+  const pageKind = pathname.startsWith("/blog/") ? "article" : "page";
   const showWidgets = !["/kontakt", "/konsultacja", "/podziekowanie"].includes(pathname);
   // Defer loading of widgets until after initial render - increased delay for mobile
   const [loadWidgets, setLoadWidgets] = useState(false);
@@ -28,7 +29,7 @@ export function Layout({ children, workPlacement = "end" }: LayoutProps) {
   }, []);
 
   return (
-    <div className="min-h-screen bg-background flex flex-col">
+    <div className="fotz-site min-h-screen bg-background flex flex-col" data-page-kind={pageKind}>
       <a href="#main-content" className="skip-link">Przejdź do treści</a>
       <Navbar />
       <ConversionTracking />
