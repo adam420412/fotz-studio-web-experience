@@ -21,7 +21,7 @@ export function ChatbotFAQ() {
   }
   return <>
     <button ref={trigger} type="button" aria-label="Otwórz asystenta FOTZ" aria-expanded={open} aria-controls="fotz-assistant"
-      onClick={() => setOpen(value => !value)} className={`fixed bottom-24 right-4 md:right-6 z-40 h-12 w-12 rounded-full bg-primary text-primary-foreground shadow-lg flex items-center justify-center ${open ? "invisible" : ""}`}>
+      onClick={() => setOpen(value => !value)} className={`fixed bottom-24 right-4 md:right-6 z-40 h-12 w-12 rounded-full bg-primary text-primary-foreground shadow-lg hidden md:flex items-center justify-center ${open ? "invisible" : ""}`}>
       <MessageCircle className="w-6 h-6" />
     </button>
     {open && <section id="fotz-assistant" role="dialog" aria-label="Asystent FOTZ" onKeyDown={e => { if (e.key === "Escape") close(); }}

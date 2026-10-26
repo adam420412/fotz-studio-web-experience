@@ -50,7 +50,7 @@ export function LocalSeoOffer(props: LocalSeoOfferProps) {
           <p className="dv-eyebrow mb-5">FOTZ Studio · SEO dla firm</p>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading leading-tight mb-6">{props.headingPrefix ?? "Pozycjonowanie stron"}{" "}<span className="block text-gradient">{city}{props.headingSuffix}.</span></h1>
           <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">{props.lead}</p>
-          <p className="text-sm text-muted-foreground mt-5">Obsługa firm z {cityGenitive} · zespół w Poznaniu · współpraca zdalna</p>
+          <p className="text-sm text-muted-foreground mt-5">Obsługa firm z {cityGenitive} · współpraca zdalna · spotkania po uzgodnieniu</p>
           <div className="flex flex-wrap gap-3 mt-8"><Link to={contactHref} className="dv-btn dv-btn-primary">Omów pozycjonowanie <ArrowUpRight aria-hidden="true" className="w-4 h-4" /></Link><a href="#zakres" className="dv-btn dv-btn-secondary">Zobacz zakres SEO</a></div>
         </div>
         <figure className="min-w-0">
