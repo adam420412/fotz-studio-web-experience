@@ -83,7 +83,7 @@ const menuCategories: MenuCategory[] = [
     items: [
       { name: "Kompleksowa obsługa", href: "/kompleksowa-obsluga-marketingowa", icon: Layers, tooltip: "Pełna obsługa marketingowa od A do Z" },
       { name: "Agencja Social Media", href: "/agencja-social-media", icon: Share2, tooltip: "Strategia, treści, reklamy i obsługa profili firmowych" },
-      { name: "Marketing Internetowy", href: "/agencja-marketingu-internetowego", icon: Megaphone, tooltip: "Strategia digital i promocja online" },
+      { name: "Stała obsługa marketingowa", href: "/agencja-marketingu-internetowego", icon: Megaphone, tooltip: "Zakres od 3 000 zł netto miesięcznie: plan, treści, publikacja i podsumowanie" },
       { name: "Content Marketing", href: "/content-marketing/strategia", icon: FileText, tooltip: "Tworzenie wartościowych treści" },
       { name: "Prowadzenie social media", href: "/social-media/obsluga", icon: Share2, tooltip: "Prowadzenie profili społecznościowych" },
       { name: "Kampanie Reklamowe", href: "/kampanie-reklamowe", badge: "Nowe", icon: Zap, tooltip: "Google, Facebook, TikTok, LinkedIn, YouTube Ads" },

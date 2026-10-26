@@ -97,7 +97,7 @@ const faqs = [
   },
   {
     q: "Czy pracujecie tylko z firmami z Poznania?",
-    a: "Nie. Jesteśmy agencją marketingową z Poznania, ale obsługujemy marki z całej Polski. Spotkania strategiczne możemy prowadzić w biurze przy Placu Wolności 16 albo zdalnie.",
+    a: "Nie. Jesteśmy agencją marketingową z Poznania, ale obsługujemy marki z całej Polski. Spotkania prowadzimy zdalnie albo w indywidualnie uzgodnionym miejscu.",
   },
   {
     q: "Od czego zaczyna się współpraca?",
@@ -237,7 +237,7 @@ export default function AgencjaMarketingowa() {
                   marżowość, cykl sprzedaży, konkurencję, widoczność w Google, jakość strony i dotychczasowe kampanie.
                 </p>
                 <div className="mt-6 grid gap-3 text-sm">
-                  <div className="flex items-center gap-3"><MapPin className="h-4 w-4 text-primary" /> Plac Wolności 16, Poznań</div>
+                  <div className="flex items-center gap-3"><MapPin className="h-4 w-4 text-primary" /> Poznań i współpraca zdalna</div>
                   <div className="flex items-center gap-3"><Mail className="h-4 w-4 text-primary" /> adam@fotz.pl</div>
                   <div className="flex items-center gap-3"><BarChart3 className="h-4 w-4 text-primary" /> SEO, reklamy, content, video, www</div>
                 </div>

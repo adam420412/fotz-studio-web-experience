@@ -132,7 +132,7 @@ const content = {
     },
     {
       "title": "Zobacz prace FOTZ i opisz swoją stronę",
-      "text": "Nasze portfolio pokazuje wykonane strony, materiały wizualne i narzędzia prezentacji oferty. Przykładem jest konfigurator KLAGEM, w którym klient wybiera moduły, kolory i wymiary mebla, oraz strona Dawid EDU połączona z kampanią rekrutacyjną. Zobacz zakres i sposób wykonania każdego z tych projektów w portfolio. Siedziba FOTZ Studio mieści się w Poznaniu przy Placu Wolności 16. Obsługę firm z Opola ustalamy zdalnie; ewentualne spotkanie na miejscu wymaga osobnego uzgodnienia.",
+      "text": "Nasze portfolio pokazuje wykonane strony, materiały wizualne i narzędzia prezentacji oferty. Przykładem jest konfigurator KLAGEM, w którym klient wybiera moduły, kolory i wymiary mebla, oraz strona Dawid EDU połączona z kampanią rekrutacyjną. Zobacz zakres i sposób wykonania każdego z tych projektów w portfolio. Adres rejestrowy FOTZ Studio: Poznańska 117/11, 62-023 Kamionki. Obsługę firm z Opola ustalamy zdalnie; ewentualne spotkanie na miejscu wymaga osobnego uzgodnienia.",
       "href": "/realizacje",
       "link": "Zobacz realizacje FOTZ Studio"
     }

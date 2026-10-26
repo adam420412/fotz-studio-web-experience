@@ -8,6 +8,8 @@ export const enquiryServices = {
   other: 'Chcę dobrać zakres',
 };
 export const enquiryVariants = {
+  retainer: 'Stała obsługa — od 3 000 zł netto / miesiąc',
+  limited_care: 'Ograniczona opieka — 2 000 zł netto / miesiąc, do 4 godzin',
   materials: 'Produkcja materiałów', management: 'Regularna obsługa profili',
   campaign: 'Obsługa profili z reklamami', website: 'Nowa strona',
   redesign: 'Przebudowa istniejącej strony', shop: 'Sklep internetowy',

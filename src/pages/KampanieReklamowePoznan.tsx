@@ -1,11 +1,11 @@
 import { SEOHead } from "@/components/seo/SEOHead";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { 
-  Target, Users, TrendingUp, BarChart3, Zap, Eye, 
-  MousePointer, DollarSign, Layers, CheckCircle2, 
+import {
+  Target, Users, TrendingUp, BarChart3, Zap, Eye,
+  MousePointer, DollarSign, Layers, CheckCircle2,
   ArrowRight, Search, PieChart, RefreshCw, Megaphone,
-  Phone, Mail, MapPin, Facebook, Youtube, Instagram, 
+  Phone, Mail, MapPin, Facebook, Youtube, Instagram,
   Music2, Briefcase, Award, Rocket, Clock, Building2
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -25,54 +25,54 @@ const fadeIn = {
 
 const KampanieReklamowePoznan = () => {
   const platforms = [
-    { 
-      icon: Search, 
-      title: "Google Ads Poznań", 
+    {
+      icon: Search,
+      title: "Google Ads Poznań",
       description: "Docieraj do klientów z Poznania szukających Twoich usług w Google",
       href: "/performance-marketing/google-ads",
       features: ["Kampanie lokalne", "Google Maps Ads", "Performance Max"],
       color: "from-green-500/20 to-yellow-500/10",
       accent: "bg-green-500/20 text-green-400"
     },
-    { 
-      icon: Facebook, 
-      title: "Facebook Ads Poznań", 
+    {
+      icon: Facebook,
+      title: "Facebook Ads Poznań",
       description: "Buduj świadomość marki wśród mieszkańców Poznania i okolic",
       href: "/performance-marketing/facebook-ads",
       features: ["Targetowanie lokalne", "Lead Ads", "Remarketing"],
       color: "from-blue-500/20 to-purple-500/10",
       accent: "bg-blue-500/20 text-blue-400"
     },
-    { 
-      icon: Instagram, 
-      title: "Instagram Ads", 
+    {
+      icon: Instagram,
+      title: "Instagram Ads",
       description: "Angażuj poznańskich odbiorców w Stories, Reels i feedzie",
       href: "/performance-marketing/instagram-ads",
       features: ["Stories Ads", "Reels Ads", "Shopping Ads"],
       color: "from-pink-500/20 to-purple-500/10",
       accent: "bg-pink-500/20 text-pink-400"
     },
-    { 
-      icon: Layers, 
-      title: "Meta Ads (FB + IG)", 
+    {
+      icon: Layers,
+      title: "Meta Ads (FB + IG)",
       description: "Wykorzystaj synergię Facebooka i Instagrama w jednej strategii",
       href: "/performance-marketing/meta-ads",
       features: ["Cross-platform", "Unified Audiences", "Full Funnel"],
       color: "from-indigo-500/20 to-pink-500/10",
       accent: "bg-indigo-500/20 text-indigo-400"
     },
-    { 
-      icon: Music2, 
-      title: "TikTok Ads", 
+    {
+      icon: Music2,
+      title: "TikTok Ads",
       description: "Docieraj do młodych poznaniaków kreatywnymi reklamami wideo",
       href: "/performance-marketing/tiktok-ads",
       features: ["In-Feed Ads", "Spark Ads", "Branded Hashtag"],
       color: "from-cyan-500/20 to-pink-500/10",
       accent: "bg-cyan-500/20 text-cyan-400"
     },
-    { 
-      icon: Briefcase, 
-      title: "LinkedIn Ads", 
+    {
+      icon: Briefcase,
+      title: "LinkedIn Ads",
       description: "Docieraj do decydentów B2B z firm poznańskich",
       href: "/performance-marketing/linkedin-ads",
       features: ["Sponsored Content", "Message Ads", "Lead Gen Forms"],
@@ -139,7 +139,7 @@ const KampanieReklamowePoznan = () => {
         "Budżet reklamowy bez limitu",
         "Produkcja materiałów wideo",
         "Dedykowany opiekun w Poznaniu",
-        "Spotkania w biurze",
+        "Spotkania po uzgodnieniu miejsca",
         "Automatyzacja i AI",
         "Raporty na żądanie",
         "Strategia wielokanałowa",
@@ -156,7 +156,7 @@ const KampanieReklamowePoznan = () => {
   ];
 
   const localAdvantages = [
-    { icon: Building2, title: "Biuro w centrum Poznania", description: "Plac Wolności 16 - spotkania twarzą w twarz" },
+    { icon: Building2, title: "Współpraca zdalna", description: "Termin i miejsce spotkania ustalamy indywidualnie" },
     { icon: Clock, title: "Szybka reakcja", description: "Lokalna obecność = natychmiastowe działanie" },
     { icon: Users, title: "Znajomość lokalnych firm", description: "Współpracujemy z poznańskimi przedsiębiorcami od lat" },
     { icon: Award, title: "Certyfikowani specjaliści", description: "Google Ads Partner i Meta Business Partner" },
@@ -165,7 +165,7 @@ const KampanieReklamowePoznan = () => {
   const faqItems = [
     {
       question: "Dlaczego warto wybrać lokalną agencję reklamową z Poznania?",
-      answer: "Lokalna agencja zna specyfikę poznańskiego rynku, konkurencję i zachowania konsumentów w Wielkopolsce. Oferujemy spotkania w biurze na Placu Wolności 16, szybką reakcję na zmiany i lepsze zrozumienie Twojego biznesu. Nasze kampanie dla poznańskich firm osiągają wyższy ROAS dzięki precyzyjnemu geo-targetowaniu."
+      answer: "Pracujemy z firmami z Poznania i Wielkopolski. Zakres kampanii dobieramy do oferty, odbiorców i dostępnego budżetu. Rozmowy prowadzimy zdalnie, a spotkania na miejscu ustalamy indywidualnie."
     },
     {
       question: "Jaką platformę reklamową wybrać dla firmy z Poznania?",
@@ -181,7 +181,7 @@ const KampanieReklamowePoznan = () => {
     },
     {
       question: "Czy mogę spotkać się z Wami osobiście w Poznaniu?",
-      answer: "Tak! Nasze biuro znajduje się na Placu Wolności 16 w centrum Poznania. Oferujemy bezpłatne konsultacje, spotkania strategiczne i regularne przeglądy kampanii. Preferujesz spotkania online? Działamy również hybrydowo przez Google Meet lub Zoom."
+      answer: "Tak, po wcześniejszym ustaleniu terminu i miejsca. Pracujemy zdalnie; nie prowadzimy biura otwartego dla odwiedzających. Pierwszą rozmowę o zakresie możemy przeprowadzić online."
     },
     {
       question: "Jakie branże obsługujecie w Poznaniu?",
@@ -207,9 +207,9 @@ const KampanieReklamowePoznan = () => {
         canonical="https://www.fotz-studio.pl/kampanie-reklamowe-poznan"
         keywords="kampanie reklamowe poznań, reklamy internetowe poznań, agencja reklamowa poznań, google ads poznań, facebook ads poznań, marketing poznań"
       />
-      <ServiceSchema 
+      <ServiceSchema
         name="Kampanie Reklamowe Poznań - Google Ads i Facebook Ads"
-        description="Profesjonalne kampanie reklamowe Google Ads, Facebook Ads, Instagram dla firm z Poznania i Wielkopolski. Lokalna agencja z biurem na Placu Wolności."
+        description="Profesjonalne kampanie reklamowe Google Ads, Facebook Ads, Instagram dla firm z Poznania i Wielkopolski. Obsługa zdalna, spotkania po uzgodnieniu miejsca."
         provider="Fotz Studio"
         areaServed="Poznań, Wielkopolska"
       />
@@ -225,7 +225,7 @@ const KampanieReklamowePoznan = () => {
           { name: "Kampanie Reklamowe", url: "https://www.fotz-studio.pl/kampanie-reklamowe" },
           { name: "Kampanie Reklamowe Poznań", url: "https://www.fotz-studio.pl/kampanie-reklamowe-poznan" },
         ]}/>
-      <FAQSchema 
+      <FAQSchema
         items={faqItems.map(item => ({ question: item.question, answer: item.answer }))}
       />
 
@@ -251,8 +251,8 @@ const KampanieReklamowePoznan = () => {
               </span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Google Ads, Facebook Ads, Instagram - docieramy do Twoich klientów w Poznaniu i Wielkopolsce. 
-              Spotkania w biurze na Placu Wolności. Średni ROAS naszych klientów: 350%.
+              Google Ads, Facebook Ads, Instagram - docieramy do Twoich klientów w Poznaniu i Wielkopolsce.
+              Obsługa zdalna, zakres i sposób pomiaru uzgodnione przed startem.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="text-lg px-8">
@@ -363,7 +363,7 @@ const KampanieReklamowePoznan = () => {
                 </div>
                 <h3 className="text-2xl font-bold text-foreground mb-3">{platform.title}</h3>
                 <p className="text-muted-foreground mb-6">{platform.description}</p>
-                
+
                 <ul className="space-y-2 mb-6">
                   {platform.features.map((feature, i) => (
                     <li key={i} className="flex items-center gap-2 text-sm text-muted-foreground">
@@ -487,8 +487,8 @@ const KampanieReklamowePoznan = () => {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
                 className={`relative p-8 rounded-2xl border ${
-                  pkg.popular 
-                    ? "border-primary bg-primary/5" 
+                  pkg.popular
+                    ? "border-primary bg-primary/5"
                     : "border-border/50 bg-card"
                 }`}
               >
@@ -617,8 +617,8 @@ const KampanieReklamowePoznan = () => {
               Gotowy na więcej klientów z Poznania?
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Umów się na bezpłatną konsultację w naszym biurze na Placu Wolności 16 
-              lub online. Pokażemy, jak zwiększyć sprzedaż dzięki reklamom.
+              Umów się na bezpłatną rozmowę o zakresie
+              online. Ustalimy, jakie działania pasują do Twojej oferty.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="text-lg px-8">
@@ -641,7 +641,7 @@ const KampanieReklamowePoznan = () => {
               </a>
               <span className="flex items-center gap-2">
                 <MapPin className="w-5 h-5" />
-                Plac Wolności 16, Poznań
+                Poznań i współpraca zdalna
               </span>
             </div>
           </motion.div>
@@ -657,7 +657,7 @@ const KampanieReklamowePoznan = () => {
             <p className="text-muted-foreground mb-6">Zarządzanie kampaniami PPC w Poznaniu — konfiguracja kont reklamowych, tworzenie struktury kampanii, produkcja kreacji, optymalizacja stawek i targeting, miesięczne raportowanie wyników. Firmy z Poznania, które powierzają prowadzenie kampanii reklamowych Fotz Studio, osiągają lepszy ROAS i niższy CPA dzięki ciągłej optymalizacji.</p>
             <h2 className="text-3xl font-heading font-bold mb-6">Agencja reklamowa Poznań — kampanie PPC dla każdej branży</h2>
             <p className="text-muted-foreground">Agencja reklamowa Poznań z doświadczeniem w prowadzeniu kampanii dla firm z branży: usługi, e-commerce, gastronomia, nieruchomości, medycyna, edukacja, budownictwo. Reklamy w Google Ads (search, shopping, display, YouTube) i Meta Ads (Facebook, Instagram) — kompleksowe zarządzanie budżetem reklamowym dla firm z Poznania. Sprawdź efekty i skontaktuj się po bezpłatną wycenę.</p>
-          
+
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
               <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>
               <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>

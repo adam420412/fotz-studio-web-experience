@@ -11,7 +11,7 @@ export default function PolitykaPrywatnosci() {
         description="Polityka prywatności Fotz Studio. Informacje o przetwarzaniu danych osobowych, cookies i prawach użytkowników zgodnie z RODO."
         canonical="https://www.fotz-studio.pl/polityka-prywatnosci"
       />
-      
+
       <Layout>
         <section className="pt-32 pb-20 bg-background">
           <div className="container mx-auto px-4">
@@ -24,7 +24,7 @@ export default function PolitykaPrywatnosci() {
               <h1 className="text-4xl md:text-5xl font-heading font-bold mb-8">
                 Polityka <span className="text-gradient">Prywatności</span>
               </h1>
-              
+
               <div className="prose prose-invert prose-lg max-w-none space-y-8">
                 <p className="text-muted-foreground text-lg">
                   Ostatnia aktualizacja: 25 października 2026
@@ -33,11 +33,11 @@ export default function PolitykaPrywatnosci() {
                 <section className="space-y-4">
                   <h2 className="text-2xl font-heading font-semibold text-foreground">1. Administrator Danych</h2>
                   <p className="text-muted-foreground">
-                    Administratorem Twoich danych osobowych jest Fotz Studio z siedzibą w Poznaniu, 
-                    Plac Wolności 16, 61-739 Poznań, NIP: 7851806089.
+                    Administratorem Twoich danych osobowych jest Fotz Studio z adresem rejestrowym:
+                    Poznańska 117/11, 62-023 Kamionki, NIP: 7851806089.
                   </p>
                   <p className="text-muted-foreground">
-                    Kontakt z administratorem: <a href="mailto:adam@fotz.pl" className="text-primary hover:underline">adam@fotz.pl</a>, 
+                    Kontakt z administratorem: <a href="mailto:adam@fotz.pl" className="text-primary hover:underline">adam@fotz.pl</a>,
                     tel. <a href="tel:+48790814814" className="text-primary hover:underline">+48 790 814 814</a>.
                   </p>
                 </section>
@@ -89,8 +89,8 @@ export default function PolitykaPrywatnosci() {
                 <section className="space-y-4">
                   <h2 className="text-2xl font-heading font-semibold text-foreground">6. Okres przechowywania danych</h2>
                   <p className="text-muted-foreground">
-                    Dane przechowujemy przez okres niezbędny do realizacji celów przetwarzania, 
-                    nie dłużej niż przez okres przedawnienia roszczeń lub przez okres wymagany 
+                    Dane przechowujemy przez okres niezbędny do realizacji celów przetwarzania,
+                    nie dłużej niż przez okres przedawnienia roszczeń lub przez okres wymagany
                     przepisami prawa (np. 5 lat dla dokumentów księgowych).
                   </p>
                 </section>
@@ -113,7 +113,7 @@ export default function PolitykaPrywatnosci() {
                 <section className="space-y-4">
                   <h2 className="text-2xl font-heading font-semibold text-foreground">8. Pliki Cookies</h2>
                   <p className="text-muted-foreground">
-                    Nasza strona wykorzystuje pliki cookies (ciasteczka) w celu zapewnienia 
+                    Nasza strona wykorzystuje pliki cookies (ciasteczka) w celu zapewnienia
                     prawidłowego działania strony i, po wyrażeniu zgody, analizy ruchu w Google Analytics 4.
                   </p>
                   <p className="text-muted-foreground">Google Analytics 4 (Google) mierzy odwiedzane podstrony oraz etapy kontaktu: kliknięcie telefonu lub e-maila, rozpoczęcie formularza i potwierdzone przyjęcie zgłoszenia. Do tych zdarzeń przekazujemy kategorię usługi, bez imienia, e-maila, telefonu i treści wiadomości. Adresy stron w nowym pomiarze GA4 nie zawierają parametrów zapytania. Odmowa lub cofnięcie zgody nie blokuje kontaktu. Dodatkowe informacje: <a href="https://policies.google.com/privacy" className="underline">polityka prywatności Google</a>. Strona korzysta również z bezciasteczkowych statystyk Ahrefs Analytics; własne zdarzenia kontaktu wysyłamy dopiero po zgodzie.</p>
@@ -125,7 +125,7 @@ export default function PolitykaPrywatnosci() {
                     <li>Nowy pomiar GA4 nie włącza personalizacji reklam ani Google Signals.</li>
                   </ul>
                   <p className="text-muted-foreground">
-                    Możesz zarządzać ustawieniami cookies w swojej przeglądarce lub poprzez 
+                    Możesz zarządzać ustawieniami cookies w swojej przeglądarce lub poprzez
                     baner cookies na naszej stronie i przycisk „Ustawienia analityki i cookies” w stopce.
                   </p>
                 </section>
@@ -133,8 +133,8 @@ export default function PolitykaPrywatnosci() {
                 <section className="space-y-4">
                   <h2 className="text-2xl font-heading font-semibold text-foreground">9. Bezpieczeństwo danych</h2>
                   <p className="text-muted-foreground">
-                    Stosujemy odpowiednie środki techniczne i organizacyjne, aby chronić Twoje 
-                    dane przed nieuprawnionym dostępem, utratą lub zniszczeniem. Strona 
+                    Stosujemy odpowiednie środki techniczne i organizacyjne, aby chronić Twoje
+                    dane przed nieuprawnionym dostępem, utratą lub zniszczeniem. Strona
                     wykorzystuje szyfrowanie SSL.
                   </p>
                 </section>
@@ -142,7 +142,7 @@ export default function PolitykaPrywatnosci() {
                 <section className="space-y-4">
                   <h2 className="text-2xl font-heading font-semibold text-foreground">10. Zmiany w polityce prywatności</h2>
                   <p className="text-muted-foreground">
-                    Zastrzegamy sobie prawo do wprowadzania zmian w niniejszej polityce prywatności. 
+                    Zastrzegamy sobie prawo do wprowadzania zmian w niniejszej polityce prywatności.
                     O wszelkich zmianach będziemy informować poprzez aktualizację daty na początku dokumentu.
                   </p>
                 </section>
@@ -155,14 +155,14 @@ export default function PolitykaPrywatnosci() {
                   <p className="text-muted-foreground">
                     E-mail: <a href="mailto:adam@fotz.pl" className="text-primary hover:underline">adam@fotz.pl</a><br />
                     Telefon: <a href="tel:+48790814814" className="text-primary hover:underline">+48 790 814 814</a><br />
-                    Adres: Plac Wolności 16, 61-739 Poznań
+                    Adres: Poznańska 117/11, 62-023 Kamionki
                   </p>
                 </section>
               </div>
             </motion.div>
           </div>
         </section>
-  
+
       {/* Link nawigacyjny */}
       <section className="py-8 px-4">
         <div className="max-w-4xl mx-auto text-center">

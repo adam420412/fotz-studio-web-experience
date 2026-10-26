@@ -163,10 +163,10 @@ export function ContactSection({ city, variant = "full", title, description }: C
     },
     {
       icon: MapPin,
-      label: "Adres",
-      value: "Plac Wolności 16",
-      href: "https://maps.google.com/?q=Plac+Wolności+16+Poznań",
-      desc: "61-739 Poznań"
+      label: "Adres rejestrowy",
+      value: "Poznańska 117/11",
+      href: "/kontakt",
+      desc: "62-023 Kamionki · obsługa zdalna"
     },
   ];
 

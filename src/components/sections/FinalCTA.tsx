@@ -114,7 +114,7 @@ export function FinalCTA() {
                   style={{ color: "var(--dv-accent-pink)" }}
                   strokeWidth={1.5}
                 />
-                <span>Plac Wolności 16, Poznań</span>
+                <span>Poznań i współpraca zdalna</span>
               </div>
               <div className="text-white/50 text-sm">
                 {t("Preferujesz online? Też możemy.", "Prefer online? We can do that too.")}

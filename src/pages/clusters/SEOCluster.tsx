@@ -412,7 +412,7 @@ export default function SEOCluster() {
               Pozycjonowanie stron Poznań — lokalna agencja SEO z doświadczeniem
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Fotz Studio to agencja SEO z siedzibą w Poznaniu, specjalizująca się w pozycjonowaniu stron internetowych dla firm z Wielkopolski i całej Polski. Nasza lokalna ekspertyza oznacza znajomość rynku poznańskiego, bezpośredni kontakt z klientem i zrozumienie specyfiki lokalnych branż. Pozycjonowanie stron w Poznaniu prowadziliśmy dla firm z branży gastronomicznej, usługowej, produkcyjnej, medycznej i e-commerce. Oferujemy przejrzyste raporty miesięczne, regularne spotkania strategiczne i dedykowanego specjalistę SEO dla każdego klienta. Nasze podejście łączy dane z Ahrefs, Google Search Console i Google Analytics z kreatywnym content marketingiem.
+              Fotz Studio to agencja SEO specjalizująca się w pozycjonowaniu stron internetowych dla firm z Wielkopolski i całej Polski. Nasza lokalna ekspertyza oznacza znajomość rynku poznańskiego, bezpośredni kontakt z klientem i zrozumienie specyfiki lokalnych branż. Pozycjonowanie stron w Poznaniu prowadziliśmy dla firm z branży gastronomicznej, usługowej, produkcyjnej, medycznej i e-commerce. Oferujemy przejrzyste raporty miesięczne, regularne spotkania strategiczne i dedykowanego specjalistę SEO dla każdego klienta. Nasze podejście łączy dane z Ahrefs, Google Search Console i Google Analytics z kreatywnym content marketingiem.
             </p>
 
             <h3 className="text-xl font-heading font-semibold mb-3">

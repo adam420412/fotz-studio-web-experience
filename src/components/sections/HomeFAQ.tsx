@@ -21,7 +21,7 @@ export function HomeFAQ() {
     },
     {
       question: t("Czy pracujecie tylko w Poznaniu?", "Do you only work in Poznań?"),
-      answer: t("Nasze biuro mieści się przy Placu Wolności 16 w Poznaniu. Strony, strategię i obsługę marketingową możemy realizować zdalnie. Miejsce nagrań i ewentualny dojazd ustalamy przed wyceną.", "Our office is at Plac Wolności 16 in Poznań. Website and marketing work can be delivered remotely. We agree filming locations and travel before quoting."),
+      answer: t("Pracujemy zdalnie; nie prowadzimy biura otwartego dla odwiedzających. Strony, strategię i obsługę marketingową możemy realizować zdalnie. Miejsce nagrań i ewentualny dojazd ustalamy przed wyceną.", "We work remotely. Meetings require an agreed time and location. Website and marketing work can be delivered remotely. We agree filming locations and travel before quoting."),
       link: { text: t("Dane kontaktowe", "Contact details"), url: "/kontakt" },
     },
     {
