@@ -12,10 +12,6 @@ import { Briefcase, MapPin, Clock, Users, Rocket, Heart, Coffee, Zap, Send, Uplo
 import { useState } from "react";
 import { toast } from "sonner";
 
-// Office images
-import officeStairs from "@/assets/office/office-stairs.webp";
-import officeWorkspace from "@/assets/office/office-workspace.webp";
-import officeDining from "@/assets/office/office-dining.webp";
 
 // Team images
 import teamBrainstorm2 from "@/assets/team/team-brainstorm-2.jpg";
@@ -50,7 +46,7 @@ const jobOffers = [
       "Portfolio (nawet z projektów hobbystycznych)",
       "Chęć nauki nowych narzędzi",
     ],
-    benefits: ["Szkolenia z Blender/C4D", "Praca na prawdziwych projektach", "Sprzęt w biurze"],
+    benefits: ["Szkolenia z Blender/C4D", "Praca na prawdziwych projektach", "Warunki realizacji ustalane przy projekcie"],
   },
   {
     id: 3,
@@ -85,7 +81,7 @@ const jobOffers = [
 ];
 
 const benefits = [
-  { icon: Coffee, title: "Biuro w centrum Poznania", description: "Plac Wolności 16 - najlepsza lokalizacja" },
+  { icon: Coffee, title: "Współpraca zdalna", description: "Pracujemy online; spotkania uzgadniamy indywidualnie" },
   { icon: Rocket, title: "Rozwój i szkolenia", description: "Budżet na kursy i konferencje" },
   { icon: Heart, title: "Work-life balance", description: "Elastyczne godziny i praca hybrydowa" },
   { icon: Users, title: "Młody zespół", description: "Średnia wieku 28 lat, zero corporate" },
@@ -189,7 +185,7 @@ export default function Kariera() {
                   <img loading="lazy" src={teamMeeting3} alt="Spotkanie zespołu" className="w-full h-full object-cover" />
                 </div>
                 <div className="aspect-square rounded-xl overflow-hidden">
-                  <img loading="lazy" src={officeStairs} alt="Biuro Fotz Studio" className="w-full h-full object-cover" />
+                  <img loading="lazy" src="/videos/enea-stadion-cover.webp" alt="Kadr z produkcji FOTZ Studio dla Enea Stadionu" className="w-full h-full object-cover" />
                 </div>
               </div>
             </motion.div>
@@ -534,7 +530,7 @@ export default function Kariera() {
               kierunków marketingowych, informatycznych i projektowych.
               Praktykant w Fotz Studio to pełnoprawny członek zespołu —
               nie robi kawy, ale prawdziwe projekty marketingowe.
-              Wyślij CV na adres kontaktowy lub odwiedź nas w biurze w Poznaniu.
+              Wyślij CV na adres kontaktowy. Rozmowę i formę współpracy ustalimy indywidualnie.
             </p>
           
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">

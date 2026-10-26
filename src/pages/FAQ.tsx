@@ -8,9 +8,6 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { FAQSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 
-// Office images
-import officeStairs from "@/assets/office/office-stairs.webp";
-import officeSign from "@/assets/office/office-sign.webp";
 
 const faqCategories = [
   {
@@ -23,8 +20,8 @@ const faqCategories = [
         answer: "Fotz Studio to agencja marketingowa z Poznania specjalizująca się w kompleksowej obsłudze marketingowej firm. Zajmujemy się tworzeniem stron internetowych, prowadzeniem social media, produkcją video, pozycjonowaniem SEO, kampaniami reklamowymi Google Ads i Facebook Ads, identyfikacją wizualną oraz wizualizacjami 3D.",
       },
       {
-        question: "Gdzie mieści się biuro Fotz Studio?",
-        answer: "Nasze biuro znajduje się w centrum Poznania, na Placu Wolności 16. Zapraszamy na spotkania od poniedziałku do piątku w godzinach 9:00-17:00. Możemy również umówić się na wideokonferencję.",
+        question: "Gdzie działa FOTZ Studio i jak umówić spotkanie?",
+        answer: "Pracujemy zdalnie. Adres rejestrowy: Poznańska 117/11, 62-023 Kamionki. Nie prowadzimy biura otwartego dla odwiedzających. Termin oraz miejsce spotkania ustalamy indywidualnie.",
       },
       {
         question: "Dla jakich branż pracujecie?",
@@ -215,24 +212,11 @@ export default function FAQ() {
               </p>
               <div className="flex items-center gap-2 mt-6 text-muted-foreground">
                 <MapPin className="w-4 h-4 text-primary" />
-                <span>Plac Wolności 16, Poznań</span>
+                <span>Poznań i współpraca zdalna</span>
               </div>
             </motion.div>
 
-            {/* Office Images */}
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="grid grid-cols-2 gap-4"
-            >
-              <div className="aspect-[3/4] rounded-xl overflow-hidden">
-                <img loading="lazy" src={officeStairs} alt="Biuro Fotz Studio" className="w-full h-full object-cover" />
-              </div>
-              <div className="aspect-[3/4] rounded-xl overflow-hidden">
-                <img loading="lazy" src={officeSign} alt="Tabliczka Fotz Studio HOFA" className="w-full h-full object-cover" />
-              </div>
-            </motion.div>
+            <aside className="rounded-2xl border border-border bg-card p-8"><h2 className="text-2xl font-heading mb-4">Kontakt i spotkania</h2><p className="text-muted-foreground leading-relaxed">Pracujemy zdalnie. Spotkania wymagają wcześniejszego ustalenia terminu i miejsca. Adres rejestrowy: Poznańska 117/11, 62-023 Kamionki.</p><a className="inline-block mt-6 underline underline-offset-4" href="tel:+48790814814">Zadzwoń: +48 790 814 814</a></aside>
           </div>
         </div>
       </section>

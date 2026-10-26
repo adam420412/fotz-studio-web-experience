@@ -485,7 +485,7 @@ export default function AgencjaMarketingowaKalisz() {
                 Agencja Marketingowa Kalisz - SEO Lokalne, Google Ads i Social Media
               </h2>
               <p className="text-muted-foreground mb-4">
-                Fotz Studio to profesjonalna agencja marketingowa z siedzibą w Poznaniu, obsługująca firmy
+                Fotz Studio to profesjonalna agencja marketingowa obsługująca firmy
                 z Kalisza, Ostrowa Wielkopolskiego, Konina i całej Wielkopolski. Specjalizujemy się w SEO
                 lokalnym, kampaniach Google Ads, Facebook Ads i zarządzaniu social media dla biznesu lokalnego.
               </p>

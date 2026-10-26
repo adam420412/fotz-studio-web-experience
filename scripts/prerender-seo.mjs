@@ -225,7 +225,7 @@ for (const route of routes) {
   let html = addRoutePreloads(injectMeta(template, meta), assetManifest, path.relative(ROOT, file).split(path.sep).join('/'), { preloadModules: route.path !== '/' });
   if (!meta.noIndex) {
     try {
-      const rendered = await renderPage(path.relative(path.join(SRC, 'pages'), file), route.path, publicArticles);
+      const rendered = await renderPage(path.relative(path.join(SRC, 'pages'), file).split(path.sep).join('/'), route.path, publicArticles);
       let body = rendered.body;
       html = addHeroPreload(html, body);
       if (!/<h1[\s>]/.test(body)) throw new Error('Missing page H1 in rendered content');

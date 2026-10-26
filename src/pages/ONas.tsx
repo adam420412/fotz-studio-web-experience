@@ -8,12 +8,6 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { cn } from "@/lib/utils";
 import { BreadcrumbSchema, OrganizationSchema, WebPageSchema } from "@/components/seo/StructuredData";
 
-// Office images
-import officeStairs from "@/assets/office/office-stairs.webp";
-import officeSign from "@/assets/office/office-sign.webp";
-import officeLounge from "@/assets/office/office-lounge.webp";
-import officeWorkspace from "@/assets/office/office-workspace.webp";
-import officeDining from "@/assets/office/office-dining.webp";
 
 // Team images
 import teamWork1 from "@/assets/team/team-work-1.jpg";
@@ -75,13 +69,6 @@ const equipment = [
   },
 ];
 
-const officeImages = [
-  { src: officeStairs, alt: "Wejście do biura Fotz Studio - designerskie schody" },
-  { src: officeSign, alt: "Tabliczka Fotz Studio na budynku HOFA Plac Wolności" },
-  { src: officeLounge, alt: "Strefa relaksu w biurze Fotz Studio" },
-  { src: officeWorkspace, alt: "Przestrzeń do pracy kreatywnej z piłkarzykami" },
-  { src: officeDining, alt: "Kuchnia i strefa spotkań w biurze" },
-];
 
 const teamImages = [
   { src: teamWork1, alt: "Praca przy komputerze w biurze Fotz Studio" },
@@ -110,7 +97,7 @@ export default function ONas() {
           { name: "O nas", url: "https://www.fotz-studio.pl/o-nas" }
         ]}/>
       <OrganizationSchema />
-      <WebPageSchema 
+      <WebPageSchema
         title="O nas - Fotz Studio"
         description="Poznaj zespół Fotz Studio - agencji marketingowej nowej generacji z Poznania"
         url="https://www.fotz-studio.pl/o-nas"
@@ -131,8 +118,8 @@ export default function ONas() {
                 <span className="text-gradient">nowej generacji</span>
               </h1>
               <p className="text-xl text-muted-foreground mb-8">
-                Jesteśmy zespołem pasjonatów marketingu, który wierzy w moc 
-                strategii, kreatywności i danych. Łączymy świeże podejście 
+                Jesteśmy zespołem pasjonatów marketingu, który wierzy w moc
+                strategii, kreatywności i danych. Łączymy świeże podejście
                 z doświadczeniem, by dostarczać realne rezultaty.
               </p>
               <Button variant="hero" size="xl" asChild>
@@ -145,55 +132,18 @@ export default function ONas() {
             <div className="relative">
               <div className="aspect-square rounded-2xl overflow-hidden">
                 <img loading="lazy"
-                  src={officeStairs}
-                  alt="Biuro Fotz Studio w Poznaniu"
+                  src="/videos/enea-stadion-cover.webp"
+                  alt="Kadr z produkcji FOTZ Studio dla Enea Stadionu"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute -bottom-6 -left-6 p-6 rounded-xl bg-card border border-border shadow-xl">
-                <div className="text-4xl font-heading font-bold text-gradient">12+</div>
-                <div className="text-muted-foreground">lat doświadczenia</div>
-              </div>
+
             </div>
           </div>
         </div>
       </section>
 
-      {/* Office Gallery */}
-      <section className="section-padding bg-card">
-        <div className="container-wide">
-          <div className="text-center mb-12">
-            <span className="inline-flex items-center gap-2 text-sm font-medium text-primary uppercase tracking-wider mb-4">
-              <MapPin className="w-4 h-4" />
-              Plac Wolności 16, Poznań
-            </span>
-            <h2 className="text-3xl md:text-5xl font-heading font-bold">
-              Nasze <span className="text-gradient">biuro</span>
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-            {officeImages.map((image, index) => (
-              <div
-                key={index}
-                className={cn(
-                  "group relative aspect-[3/4] rounded-xl overflow-hidden transition-all duration-700",
-                  isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                )}
-                style={{ transitionDelay: `${index * 100}ms` }}
-              >
-                <img
-                  src={image.src}
-                  alt={image.alt}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <section className="section-padding bg-card"><div className="container-wide max-w-3xl"><h2 className="text-3xl font-heading mb-5">Współpraca zdalna, ustalony zakres</h2><p className="text-muted-foreground leading-relaxed">Pracujemy z firmami z Poznania i całej Polski. Rozmowy oraz akceptacje prowadzimy online. Termin i miejsce spotkania lub nagrań ustalamy indywidualnie. Adres rejestrowy: Poznańska 117/11, 62-023 Kamionki.</p></div></section>
 
       {/* Values */}
       <section ref={ref} className="section-padding bg-card">
@@ -255,7 +205,7 @@ export default function ONas() {
               Najwyższej klasy <span className="text-gradient">wyposażenie</span>
             </h2>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
-              Nie oszczędzamy na sprzęcie, bo liczy się dla nas jakość. Pracujemy na profesjonalnym 
+              Nie oszczędzamy na sprzęcie, bo liczy się dla nas jakość. Pracujemy na profesjonalnym
               sprzęcie filmowym i fotograficznym, który gwarantuje kinową jakość każdej produkcji.
             </p>
           </div>
@@ -288,8 +238,8 @@ export default function ONas() {
           <div className="mt-12 p-8 rounded-2xl bg-card border border-border text-center">
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               <span className="text-foreground font-semibold">Inwestujemy w jakość.</span>{" "}
-              Każdy projekt realizujemy na sprzęcie z najwyższej półki - od kamer kinowych 
-              po profesjonalne oświetlenie i stabilizatory. Dzięki temu Twoja marka 
+              Każdy projekt realizujemy na sprzęcie z najwyższej półki - od kamer kinowych
+              po profesjonalne oświetlenie i stabilizatory. Dzięki temu Twoja marka
               prezentuje się na poziomie międzynarodowych produkcji.
             </p>
           </div>
@@ -341,7 +291,7 @@ export default function ONas() {
             Dołącz do <span className="text-gradient">naszych klientów</span>
           </h2>
           <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
-            Porozmawiajmy o tym, jak możemy pomóc Twojej firmie osiągnąć 
+            Porozmawiajmy o tym, jak możemy pomóc Twojej firmie osiągnąć
             ambitne cele marketingowe.
           </p>
           <Button variant="hero" size="xl" asChild>
@@ -413,7 +363,7 @@ export default function ONas() {
               współpracy i cotygodniowe raporty to nasz standard. Skontaktuj się
               z nami i sprawdź, czy jesteśmy odpowiednim partnerem dla Twojej firmy.
             </p>
-          
+
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
               <Link to="/realizacje" className="text-primary hover:underline font-medium text-sm">→ Realizacje</Link>
               <Link to="/konsultacja" className="text-primary hover:underline font-medium text-sm">→ Bezpłatna konsultacja</Link>

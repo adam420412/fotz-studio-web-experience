@@ -1,12 +1,12 @@
 // Public facts shared by contact UI and assistant. Add prices only after verification.
 export const business = Object.freeze({
   name: 'FOTZ Studio', site: 'https://www.fotz-studio.pl',
-  address: 'Plac Wolności 16, 61-739 Poznań', phone: '+48 790 814 814', phoneHref: 'tel:+48790814814',
+  address: 'Poznańska 117/11, 62-023 Kamionki', phone: '+48 790 814 814', phoneHref: 'tel:+48790814814',
   email: 'adam@fotz.pl', consultationMinutes: 15, consultationPath: '/konsultacja', contactPath: '/kontakt', pricingPath: '/cennik',
   quote: 'Zakres, cenę i harmonogram ustalamy po poznaniu projektu. Budżet reklamowy rozliczamy oddzielnie od obsługi.',
 });
 export const assistantTopics = [
-  { keys: ['adres', 'gdzie jest', 'gdzie znajduje', 'siedziba', 'lokalizacja', 'biuro'], question: 'Gdzie znajduje się studio?', answer: `Nasza siedziba: ${business.address}. Termin spotkania ustal z nami wcześniej. Obsługujemy także projekty zdalnie.`, links: [{ label: 'Dane kontaktowe', href: business.contactPath }] },
+  { keys: ['adres', 'gdzie jest', 'gdzie znajduje', 'siedziba', 'lokalizacja', 'biuro'], question: 'Gdzie znajduje się studio?', answer: `Adres rejestrowy: ${business.address}. Pracujemy zdalnie; nie prowadzimy biura otwartego dla odwiedzających. Termin i miejsce spotkania ustalamy indywidualnie.`, links: [{ label: 'Dane kontaktowe', href: business.contactPath }] },
   { keys: ['konsult', 'spotkanie', 'rozmowa'], question: 'Jak umówić konsultację?', answer: `Pierwsza konsultacja jest bezpłatna i trwa ${business.consultationMinutes} minut. W formularzu możesz podać preferowany termin; spotkanie wymaga naszego potwierdzenia.`, links: [{ label: 'Zgłoś rozmowę', href: business.consultationPath }] },
   { keys: ['cena', 'ceny', 'cennik', 'koszt', 'wycen', 'budzet', 'pakiet'], question: 'Jak otrzymać wycenę?', answer: 'Pakiety WWW START i WIDEO START kosztują po 1490 zł netto i mają określony zakres. Rozbudowane projekty oraz stałą obsługę wyceniamy osobno. Szczegóły pakietów znajdziesz w cenniku. Budżet reklamowy rozliczamy oddzielnie.', links: [{ label: 'Zobacz zakres i ceny', href: business.pricingPath }] },
   { keys: ['kontakt', 'telefon', 'email', 'e-mail', 'mail', 'godzin', 'zadzwon'], question: 'Jak się skontaktować?', answer: `Zadzwoń: ${business.phone} lub napisz: ${business.email}. Dostępność rozmowy i termin odpowiedzi ustalamy indywidualnie.`, links: [{ label: 'Zadzwoń', href: business.phoneHref }, { label: 'Napisz e-mail', href: `mailto:${business.email}` }] },

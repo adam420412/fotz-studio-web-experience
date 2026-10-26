@@ -14,7 +14,7 @@ import { Calendar } from "lucide-react";
 
 const footerLinks = {
   uslugi: [
-    { name: "Marketing Internetowy", href: "/agencja-marketingu-internetowego" },
+    { name: "Stała obsługa marketingowa", href: "/agencja-marketingu-internetowego" },
     { name: "Content Marketing", href: "/content-marketing/strategia" },
     { name: "Strony internetowe", href: "/uslugi/strony-internetowe" },
     { name: "E-commerce & Sklepy", href: "/uslugi/strony-internetowe/ecommerce" },
@@ -257,7 +257,7 @@ export function Footer() {
                   className="w-4 h-4 text-[color:var(--dv-accent-pink)] shrink-0 mt-0.5"
                   strokeWidth={1.5}
                 />
-                <span>Plac Wolności 16 · 61-739 Poznań</span>
+                <span>Adres rejestrowy: Poznańska 117/11 · 62-023 Kamionki</span>
               </div>
               <div className="flex items-start gap-2">
                 <Phone

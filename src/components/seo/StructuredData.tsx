@@ -24,9 +24,9 @@ export function OrganizationSchema({
   email = "adam@fotz.pl",
   phone = "+48790814814",
   address = {
-    streetAddress: "Plac Wolności 16",
-    addressLocality: "Poznań",
-    postalCode: "61-739",
+    streetAddress: "Poznańska 117/11",
+    addressLocality: "Kamionki",
+    postalCode: "62-023",
     addressCountry: "PL",
   },
   sameAs = [
@@ -131,9 +131,9 @@ export function LocalBusinessSchema({
     },
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Plac Wolności 16",
-      addressLocality: "Poznań",
-      postalCode: "61-739",
+      streetAddress: "Poznańska 117/11",
+      addressLocality: "Kamionki",
+      postalCode: "62-023",
       addressRegion: "Wielkopolskie",
       addressCountry: "PL",
     },

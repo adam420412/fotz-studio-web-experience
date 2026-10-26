@@ -12,12 +12,12 @@ export function HeroV3() {
         <div className="min-w-0">
           <p className="dv-eyebrow mb-6">FOTZ Studio · Agencja marketingowa · Poznań</p>
           <h1 className="font-geist text-[clamp(44px,6.5vw,96px)] leading-[1.02] tracking-[-.05em]">Twoja marka.<br /><span className="dv-text-grad italic">Od pomysłu<br className="hidden lg:block" /> do publikacji.</span></h1>
-          <p className="mt-6 text-lg text-muted-foreground max-w-xl leading-relaxed">Tworzymy strony internetowe, filmy i komunikację w social media. Łączymy je z reklamą i SEO, żeby odbiorca mógł poznać Twoją ofertę i łatwo się skontaktować.</p>
+          <p className="mt-6 text-lg text-muted-foreground max-w-xl leading-relaxed">Prowadzisz firmę. My zajmiemy się uzgodnioną częścią jej marketingu: treściami, publikacją i drogą do kontaktu. Stała obsługa od 3 000 zł netto miesięcznie. Zdjęcia, filmy i strony przygotowujemy także jako osobne projekty.</p>
           <div className="flex flex-wrap gap-3 mt-7">
-            <Link to={business.consultationPath} className="dv-btn dv-btn-primary">Konsultacja 15 min <ArrowUpRight className="w-4 h-4" /></Link>
+            <Link to="/agencja-marketingu-internetowego" className="dv-btn dv-btn-primary">Poznaj stałą obsługę <ArrowUpRight aria-hidden="true" className="w-4 h-4" /></Link>
             <Link to="/realizacje" className="dv-btn dv-btn-secondary">Zobacz realizacje</Link>
           </div>
-          <p className="mt-6 text-sm text-muted-foreground">{business.address} · <a className="underline underline-offset-4" href={business.phoneHref}>{business.phone}</a></p>
+          <p className="mt-6 text-sm text-muted-foreground">Poznań i współpraca zdalna · <a className="underline underline-offset-4" href={business.phoneHref}>{business.phone}</a></p>
         </div>
         <figure className="min-w-0 rounded-2xl overflow-hidden border border-border bg-card">
           <div className="aspect-video relative bg-black">

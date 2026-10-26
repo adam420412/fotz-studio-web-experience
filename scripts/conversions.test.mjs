@@ -17,6 +17,15 @@ test('offer defaults preserve a scope but never leak it into a different service
  assert.deepEqual(resolveEnquiryContext('', 'marketing', '__proto__'), {service:'marketing',variant:''});
  assert.equal(serviceForPath('/uslugi/reklama-facebook'), 'marketing');
 });
+
+test('both recurring offers preserve the selected package through the enquiry URL', () => {
+ for (const variant of ['retainer', 'limited_care']) {
+  const url = new URL(enquiryHref(serviceForPath('/agencja-marketingu-internetowego'), variant), 'https://www.fotz-studio.pl');
+  assert.equal(url.pathname, '/kontakt');
+  assert.equal(url.hash, '#formularz');
+  assert.deepEqual(resolveEnquiryContext(url.search), {service:'marketing', variant});
+ }
+});
 test('content and Instagram enquiries retain their scope through contact links', () => {
  for (const [path, variant] of [['/content-marketing/strategia', 'content_plan'], ['/performance-marketing/instagram-ads', 'instagram_ads']]) {
   const service = serviceForPath(path);

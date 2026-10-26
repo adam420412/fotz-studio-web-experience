@@ -29,10 +29,12 @@ interface ServiceEditorialProps {
   faqs: { question: string; answer: string }[];
   faqTitle?: string;
   contactDescription?: string;
+  contactLabel?: string;
+  priceNote?: string;
 }
 
 /** Shared presentation; each offer keeps its own scope, evidence and answers. */
-export function ServiceEditorial({ title, eyebrow, lead, path, area = "Polska", workAfterScope = false, enquiryVariant, summary, scopeTitle, scope, sections, faqs, faqTitle = "Przed rozpoczęciem współpracy", contactDescription = "Prześlij adres strony, opisz cel i wskaż, co chcesz zmienić. Na tej podstawie ustalimy następny krok." }: ServiceEditorialProps) {
+export function ServiceEditorial({ title, eyebrow, lead, path, area = "Polska", workAfterScope = false, enquiryVariant, summary, scopeTitle, scope, sections, faqs, faqTitle = "Przed rozpoczęciem współpracy", contactDescription = "Prześlij adres strony, opisz cel i wskaż, co chcesz zmienić. Na tej podstawie ustalimy następny krok.", contactLabel = "Porozmawiajmy o projekcie", priceNote }: ServiceEditorialProps) {
   const contactHref = enquiryHref(serviceForPath(path), enquiryVariant);
   return <Layout workPlacement={workAfterScope ? "manual" : "end"}>
     <BreadcrumbSchema items={[{ name: "Strona główna", url: "/" }, { name: "Usługi", url: "/uslugi" }, { name: title, url: path }]} />
@@ -46,8 +48,9 @@ export function ServiceEditorial({ title, eyebrow, lead, path, area = "Polska", 
           <p className="dv-eyebrow mb-4">{eyebrow}</p>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading leading-tight mb-6">{title}</h1>
           <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">{lead}</p>
+          {priceNote && <p className="mt-6 text-lg font-medium text-primary">{priceNote}</p>}
           <div className="flex flex-wrap gap-3 mt-8">
-            <Link to={contactHref} className="dv-btn dv-btn-primary">Porozmawiajmy o projekcie <ArrowRight aria-hidden="true" className="w-4 h-4" /></Link>
+            <Link to={contactHref} className="dv-btn dv-btn-primary">{contactLabel} <ArrowRight aria-hidden="true" className="w-4 h-4" /></Link>
             <a href="#zakres" className="dv-btn dv-btn-secondary">Zobacz zakres</a>
           </div>
         </div>

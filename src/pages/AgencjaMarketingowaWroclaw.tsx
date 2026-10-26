@@ -125,7 +125,7 @@ const content = {
     },
     {
       "title": "Agencja reklamowa Wrocław — współpraca z zespołem FOTZ",
-      "text": "Nasza siedziba znajduje się przy Placu Wolności 16 w Poznaniu. Dla firm z Wrocławia prowadzimy rozmowy, briefy, akceptacje i raportowanie online. Zdjęcia, nagrania lub spotkanie na miejscu uzgadniamy indywidualnie. Jeśli zależy Ci na współpracy z agencją reklamową we Wrocławiu ze stałym dostępem do studia na miejscu, uwzględnij ten warunek w briefie. Od razu potwierdzimy, jak możemy zorganizować potrzebny zakres.",
+      "text": "Adres rejestrowy FOTZ Studio to Poznańska 117/11, 62-023 Kamionki. Pracujemy zdalnie. Dla firm z Wrocławia prowadzimy rozmowy, briefy, akceptacje i raportowanie online. Zdjęcia, nagrania lub spotkanie na miejscu uzgadniamy indywidualnie. Jeśli zależy Ci na współpracy z agencją reklamową we Wrocławiu ze stałym dostępem do studia na miejscu, uwzględnij ten warunek w briefie. Od razu potwierdzimy, jak możemy zorganizować potrzebny zakres.",
       "href": "/kontakt?usluga=marketing#formularz",
       "link": "Opisz projekt i poproś o zakres"
     }
