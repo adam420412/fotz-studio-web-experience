@@ -1,3 +1,4 @@
+import { IndustryWork } from "@/components/sections/IndustryWork";
 import { Link } from "react-router-dom";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { Plane, ArrowRight, CheckCircle, Camera, Video, Globe, TrendingUp, MapPin, Calendar, Star, Plus, Phone } from "lucide-react";
@@ -6,27 +7,7 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
-import { useCountUp } from "@/hooks/useCountUp";
 import { OtherIndustries } from "@/components/sections/OtherIndustries";
-import { GalleryImage } from "@/components/GalleryImage";
-import apartamentyImg from "@/assets/portfolio/apartamenty-chorwacja-web.webp";
-
-// Galeria turystyczna - eventy, doświadczenia, atrakcje
-import aerialViewImg from "@/assets/drone/event-aerial-view.jpg";
-import concertImg from "@/assets/drone/event-concert-1.jpg";
-import picnicTopImg from "@/assets/drone/event-picnic-top.jpg";
-import koncertImg from "@/assets/enea/dawid-podsiadlo-koncert.jpg";
-import cateringImg from "@/assets/enea/catering-event.jpg";
-import loungeImg from "@/assets/enea/lech-poznan-lounge.jpg";
-
-const tourismGalleryImages = [
-  { src: aerialViewImg, alt: "Ujęcie z drona - event plenerowy", category: "Eventy" },
-  { src: koncertImg, alt: "Koncert Dawid Podsiadło - stadion", category: "Koncerty" },
-  { src: picnicTopImg, alt: "Piknik z lotu ptaka", category: "Eventy" },
-  { src: cateringImg, alt: "Catering eventowy premium", category: "Gastronomia" },
-  { src: concertImg, alt: "Koncert - ujęcie z drona", category: "Koncerty" },
-  { src: loungeImg, alt: "Loża VIP stadion", category: "Premium" },
-];
 
 const services = [
   {
@@ -70,7 +51,7 @@ const customSolutions = [
 ];
 
 const benefits = [
-  "Zwiększenie rezerwacji bezpośrednich o 150%",
+  "Zwiększenie rezerwacji bezpośrednich",
   "Wirtualne spacery 360° po obiektach",
   "Kampanie sezonowe z wysokim ROI",
   "Integracja z systemami rezerwacyjnymi",
@@ -175,37 +156,14 @@ const MarketingTurystyka = () => {
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg">
-                <Link to="/realizacje">Zobacz realizacje</Link>
+                <a href="#realizacje-branzowe">Zobacz realizacje</a>
               </Button>
             </div>
           </motion.div>
-
-          {/* Stats */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.7 }}
-            className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16"
-          >
-            {[
-              { value: 150, suffix: "%", label: "wzrost rezerwacji bezpośrednich" },
-              { value: 40, suffix: "+", label: "obsłużonych obiektów" },
-              { value: 100, suffix: "+", label: "wirtualnych spacerów" },
-              { value: 5, suffix: "x", label: "ROI kampanii sezonowych" },
-            ].map((stat, index) => {
-              const { ref, displayValue } = useCountUp({ end: stat.value, suffix: stat.suffix });
-              return (
-                <div key={index} ref={ref} className="text-center p-6 rounded-2xl bg-card border border-border/30">
-                  <div className="text-3xl md:text-4xl font-heading font-bold text-gradient-premium">
-                    {displayValue}
-                  </div>
-                  <p className="text-foreground/60 text-sm mt-2">{stat.label}</p>
-                </div>
-              );
-            })}
-          </motion.div>
         </div>
       </section>
+
+      <IndustryWork slug="turystyka" />
 
       {/* Services */}
       <section className="section-padding bg-card">
@@ -321,70 +279,11 @@ const MarketingTurystyka = () => {
               </div>
             </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="relative"
-            >
-              <Link to="/realizacje/apartamenty-chorwacja" className="block group">
-                <div className="aspect-square rounded-3xl overflow-hidden relative">
-                  <img loading="lazy" 
-                    src={apartamentyImg} 
-                    alt="Apartamenty Chorwacja - case study turystyka"
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-                  <div className="absolute bottom-6 left-6 right-6 text-white">
-                    <span className="text-sm opacity-80 mb-1 block">Case Study</span>
-                    <p className="text-xl font-heading font-bold mb-1">Apartamenty Chorwacja</p>
-                    <p className="text-sm opacity-80">Strona i marketing dla obiektu wypoczynkowego</p>
-                  </div>
-                </div>
-              </Link>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Galeria turystyczna */}
-      <section className="section-padding bg-background">
-        <div className="container-wide">
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center max-w-3xl mx-auto mb-12"
-          >
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-              Nasze <span className="text-gradient-premium">realizacje turystyczne</span>
-            </h2>
-            <p className="text-foreground/70">
-              Eventy, koncerty i doświadczenia, które promowaliśmy dla branży turystycznej i eventowej
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            {tourismGalleryImages.map((image, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="relative group"
-              >
-                <GalleryImage
-                  src={image.src}
-                  alt={image.alt}
-                  className="aspect-[4/3] rounded-xl overflow-hidden"
-                />
-                <div className="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-black/70 to-transparent rounded-b-xl opacity-0 group-hover:opacity-100 transition-opacity">
-                  <span className="text-xs text-white/80">{image.category}</span>
-                  <p className="text-sm text-white font-medium">{image.alt}</p>
-                </div>
-              </motion.div>
-            ))}
+            <aside className="rounded-3xl border border-border p-8 bg-background">
+              <h3 className="font-heading text-2xl mb-4">Porozmawiajmy o Twoim projekcie</h3>
+              <p className="text-muted-foreground leading-relaxed mb-6">Pokaż nam swoją ofertę i opowiedz, do kogo chcesz dotrzeć. Dobierzemy stronę, zdjęcia lub wideo do potrzeb Twojej firmy.</p>
+              <Link to="/kontakt#formularz" className="dv-btn dv-btn-primary">Opisz swój projekt <ArrowRight className="w-4 h-4" aria-hidden="true" /></Link>
+            </aside>
           </div>
         </div>
       </section>

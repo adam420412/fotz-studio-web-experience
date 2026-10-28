@@ -1,3 +1,4 @@
+import { IndustryWork } from "@/components/sections/IndustryWork";
 import { Link } from "react-router-dom";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { Heart, ArrowRight, CheckCircle, Calendar, Shield, Users, TrendingUp, Star, Phone, Stethoscope, ClipboardList, Clock, Plus } from "lucide-react";
@@ -7,11 +8,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
-import { useCountUp } from "@/hooks/useCountUp";
 import { OtherIndustries } from "@/components/sections/OtherIndustries";
-const gabinetImg = "/work/fotz-work-1200.webp";
-const konsultacjaImg = "/work/fotz-presentation-1200.webp";
-const poczekalniaImg = "/work/backstage-1200.webp";
 
 const services = [
   {
@@ -45,7 +42,7 @@ const customSolutions = [
   {
     icon: Clock,
     title: "Automatyczne przypomnienia",
-    description: "System SMS i email przypominający o wizytach, redukujący nieobecności o 40%.",
+    description: "System SMS i email przypominający o wizytach, pomagający ograniczać nieobecności.",
   },
   {
     icon: Stethoscope,
@@ -55,8 +52,8 @@ const customSolutions = [
 ];
 
 const benefits = [
-  "Zwiększenie liczby rezerwacji online o 60%",
-  "Redukcja nieobecności pacjentów o 40%",
+  "Zwiększenie liczby rezerwacji online",
+  "Redukcja nieobecności pacjentów",
   "Budowanie zaufania przez profesjonalny wizerunek",
   "Zgodność z regulacjami prawymi reklamy medycznej",
   "Automatyzacja procesów administracyjnych",
@@ -165,37 +162,14 @@ const MarketingMedyczny = () => {
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg">
-                <Link to="/realizacje">Zobacz realizacje</Link>
+                <a href="#realizacje-branzowe">Zobacz realizacje</a>
               </Button>
             </div>
           </motion.div>
-
-          {/* Stats */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.7 }}
-            className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16"
-          >
-            {[
-              { value: 60, suffix: "%", label: "więcej rezerwacji online" },
-              { value: 40, suffix: "%", label: "mniej nieobecności" },
-              { value: 50, suffix: "+", label: "obsłużonych gabinetów" },
-              { value: 100, suffix: "%", label: "zgodność z prawem" },
-            ].map((stat, index) => {
-              const { ref, displayValue } = useCountUp({ end: stat.value, suffix: stat.suffix });
-              return (
-                <div key={index} ref={ref} className="text-center p-6 rounded-2xl bg-card border border-border/30">
-                  <div className="text-3xl md:text-4xl font-heading font-bold text-gradient-premium">
-                    {displayValue}
-                  </div>
-                  <p className="text-foreground/60 text-sm mt-2">{stat.label}</p>
-                </div>
-              );
-            })}
-          </motion.div>
         </div>
       </section>
+
+      <IndustryWork slug="branza-medyczna" />
 
       {/* Services */}
       <section className="section-padding bg-card">
@@ -311,36 +285,11 @@ const MarketingMedyczny = () => {
               </div>
             </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="relative"
-            >
-              <div className="grid grid-cols-2 gap-4">
-                <div className="aspect-square rounded-2xl overflow-hidden">
-                  <img loading="lazy" 
-                    src={gabinetImg} 
-                    alt="Praca przy komputerze — zdjęcie z sesji FOTZ"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="aspect-square rounded-2xl overflow-hidden">
-                  <img loading="lazy" 
-                    src={konsultacjaImg} 
-                    alt="Prezentacja projektu na ekranie — zdjęcie z sesji FOTZ"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="col-span-2 aspect-video rounded-2xl overflow-hidden">
-                  <img loading="lazy" 
-                    src={poczekalniaImg} 
-                    alt="Praca na planie sesji produktowej FOTZ"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-            </motion.div>
+            <aside className="rounded-3xl border border-border p-8 bg-background">
+              <h3 className="font-heading text-2xl mb-4">Porozmawiajmy o Twoim projekcie</h3>
+              <p className="text-muted-foreground leading-relaxed mb-6">Pokaż nam swoją ofertę i opowiedz, do kogo chcesz dotrzeć. Dobierzemy stronę, zdjęcia lub wideo do potrzeb Twojej firmy.</p>
+              <Link to="/kontakt#formularz" className="dv-btn dv-btn-primary">Opisz swój projekt <ArrowRight className="w-4 h-4" aria-hidden="true" /></Link>
+            </aside>
           </div>
         </div>
       </section>

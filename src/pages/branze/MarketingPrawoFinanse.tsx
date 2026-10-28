@@ -1,3 +1,4 @@
+import { IndustryWork } from "@/components/sections/IndustryWork";
 import { Link } from "react-router-dom";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { Scale, ArrowRight, CheckCircle, Shield, Globe, FileText, TrendingUp, Briefcase, Award, Lock, Plus, Phone } from "lucide-react";
@@ -155,7 +156,7 @@ const MarketingPrawoFinanse = () => {
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg">
-                <Link to="/realizacje">Zobacz realizacje</Link>
+                <a href="#realizacje-branzowe">Zobacz realizacje</a>
               </Button>
             </div>
           </motion.div>
@@ -163,6 +164,8 @@ const MarketingPrawoFinanse = () => {
 
         </div>
       </section>
+
+      <IndustryWork slug="prawo-finanse" />
 
       {/* Services */}
       <section className="section-padding bg-card">

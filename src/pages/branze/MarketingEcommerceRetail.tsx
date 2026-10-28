@@ -1,3 +1,4 @@
+import { IndustryWork } from "@/components/sections/IndustryWork";
 import { Link } from "react-router-dom";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { ShoppingCart, ArrowRight, CheckCircle, Package, Camera, TrendingUp, CreditCard, BarChart, Truck, Percent, Plus, Phone } from "lucide-react";
@@ -8,7 +9,6 @@ import { useState } from "react";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { OtherIndustries } from "@/components/sections/OtherIndustries";
 
-import friendlyGasImg from "@/assets/portfolio/friendly-gas-new-web.webp";
 
 import { KlagemConfigurator } from "@/components/sections/KlagemConfigurator";
 
@@ -54,7 +54,7 @@ const customSolutions = [
 ];
 
 const benefits = [
-  "Wzrost sprzedaży online o 150%",
+  "Wzrost sprzedaży online",
   "Konfigurator 3D produktów do personalizacji",
   "Integracja z marketplace'ami (Allegro, Amazon)",
   "Automatyzacja marketingu i remarketingu",
@@ -159,7 +159,7 @@ const MarketingEcommerceRetail = () => {
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg">
-                <Link to="/realizacje">Zobacz realizacje</Link>
+                <a href="#realizacje-branzowe">Zobacz realizacje</a>
               </Button>
             </div>
           </motion.div>
@@ -167,6 +167,8 @@ const MarketingEcommerceRetail = () => {
 
         </div>
       </section>
+
+      <IndustryWork slug="ecommerce-retail" />
 
       <KlagemConfigurator />
 
@@ -284,28 +286,11 @@ const MarketingEcommerceRetail = () => {
               </div>
             </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="relative"
-            >
-              <Link to="/realizacje/friendly-gas" className="block group">
-                <div className="aspect-square rounded-3xl overflow-hidden relative">
-                  <img loading="lazy" 
-                    src={friendlyGasImg} 
-                    alt="Friendly Gas - case study e-commerce"
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-                  <div className="absolute bottom-6 left-6 right-6 text-white">
-                    <span className="text-sm opacity-80 mb-1 block">Case Study</span>
-                    <p className="text-xl font-heading font-bold mb-1">Friendly Gas</p>
-                    <p className="text-sm opacity-80">Branding i sklep e-commerce</p>
-                  </div>
-                </div>
-              </Link>
-            </motion.div>
+            <aside className="rounded-3xl border border-border p-8 bg-background">
+              <h3 className="font-heading text-2xl mb-4">Porozmawiajmy o Twoim projekcie</h3>
+              <p className="text-muted-foreground leading-relaxed mb-6">Pokaż nam swoją ofertę i opowiedz, do kogo chcesz dotrzeć. Dobierzemy stronę, zdjęcia lub wideo do potrzeb Twojej firmy.</p>
+              <Link to="/kontakt#formularz" className="dv-btn dv-btn-primary">Opisz swój projekt <ArrowRight className="w-4 h-4" aria-hidden="true" /></Link>
+            </aside>
           </div>
         </div>
       </section>
