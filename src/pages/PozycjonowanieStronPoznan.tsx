@@ -6,7 +6,7 @@ const content = {
   "eyebrow": "FOTZ Studio · SEO dla firm",
   "lead": "Pomagamy firmom z Poznania uporządkować stronę, rozwinąć widoczność w Google i ułatwić klientom kontakt. Łączymy analizę danych, poprawki techniczne oraz treści o Twojej ofercie. Prześlij adres witryny i wskaż usługę, na której najbardziej Ci zależy — ustalimy, od czego zacząć.",
   "path": "/seo/pozycjonowanie-poznan",
-  "area": "Poznań i Wielkopolska",
+  "area": "Poznań",
   "workAfterScope": true,
   "galleryExcludeHero": true,
   "enquiryVariant": "ongoing",

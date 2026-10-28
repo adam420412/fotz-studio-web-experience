@@ -17,7 +17,7 @@ export function SelectedWork({ excludeImageId }: { excludeImageId?: string } = {
         <div className="max-w-2xl">
           <p className="dv-eyebrow mb-4">FOTZ Studio · kadry z realizacji</p>
           <h2 id="selected-work-heading" className="text-3xl md:text-4xl lg:text-5xl font-heading leading-tight tracking-tight mb-4">{collection.title}</h2>
-          <p className="text-muted-foreground leading-relaxed">{collection.description}</p>
+          <p className="text-muted-foreground leading-relaxed">{excludeImageId ? "Kolejne projekty FOTZ — zobacz zakres i szczegóły realizacji." : collection.description}</p>
         </div>
         <Link to="/realizacje" className="dv-btn dv-btn-secondary self-start shrink-0">Całe portfolio <ArrowUpRight className="w-4 h-4" aria-hidden="true" /></Link>
       </div>
