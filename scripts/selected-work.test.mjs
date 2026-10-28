@@ -11,7 +11,7 @@ test('portfolio selection follows page intent without claiming local project loc
     ['/pozycjonowanie/legnica', 'web'], ['/uslugi/fotografia-produktowa', 'product'],
     ['/dla-kogo/gastronomia', 'spaces'], ['/dla-kogo/instytucje', 'events'],
     ['/uslugi/branding', 'product'], ['/fotograf-poznan', 'photo'],
-    ['/uslugi/produkcja-video/', 'production'], ['/blog/instagram-dla-firmy', 'social'],
+    ['/uslugi/produkcja-video/', 'production'], ['/uslugi/studio-podcastowe', 'production'], ['/blog/instagram-dla-firmy', 'social'],
   ]) assert.equal(getWorkCollection(route), expected, route);
   for (const route of ['/kontakt', '/konsultacja', '/podziekowanie', '/polityka-prywatnosci', '/akademia/auth', '/realizacje/enea-stadion', '/blog/api-gateway-co-to-jest-kong-aws-traefik-kubernetes-ingress', '/nie-istnieje']) assert.equal(getWorkCollection(route), null, route);
 });
