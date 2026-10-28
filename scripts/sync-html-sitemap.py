@@ -3,9 +3,10 @@
 from pathlib import Path
 from urllib.parse import urlparse, unquote
 from html import escape
-import json, re, xml.etree.ElementTree as ET
+import json, os, re, xml.etree.ElementTree as ET
 root=Path(__file__).resolve().parents[1]
-report=json.loads((root/'docs/seo/qa-2026-10-01/built-site.json').read_text())
+report_dir=Path(os.environ.get('FOTZ_QA_DIR', root/'docs/seo/qa-2026-10-01'))
+report=json.loads((report_dir/'built-site.json').read_text())
 pages={p['path']:p for p in report['pages']}
 target=root/'public/mapa-strony-v3.html'
 head=target.read_text().split('<body>',1)[0]
