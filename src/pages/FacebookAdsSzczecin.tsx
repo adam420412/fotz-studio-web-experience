@@ -11,7 +11,7 @@ export default function FacebookAdsSzczecin() {
     <>
       <SEOHead
         title="Agencja Facebook Ads Szczecin — reklamy Meta dla firm | Fotz.pl"
-        description="Facebook Ads Szczecin ✓ Kampanie Meta Ads dla firm z Szczecina i Zachodniopomorskiego. Od 400 zł/mies. Bezpłatna konsultacja!"
+        description="Facebook Ads Szczecin ✓ Kampanie Meta Ads dla firm ze Szczecina i Zachodniopomorskiego. Od 400 zł/mies. Bezpłatna konsultacja!"
         canonical="https://www.fotz-studio.pl/performance-marketing/facebook-ads/szczecin"
         keywords="facebook ads szczecin, meta ads szczecin, reklamy facebook szczecin, agencja facebook ads szczecin, kampanie facebook szczecin, instagram ads szczecin, facebook ads dla firm szczecin, reklama na facebooku szczecin, meta ads agencja szczecin, facebook ads cennik szczecin"
       />
@@ -23,7 +23,7 @@ export default function FacebookAdsSzczecin() {
         ]}/>
       <ServiceSchema
         name="Facebook Ads Szczecin"
-        description="Profesjonalne zarządzanie kampaniami reklamowymi Facebook Ads dla firm z Szczecina"
+        description="Profesjonalne zarządzanie kampaniami reklamowymi Facebook Ads dla firm ze Szczecina"
         areaServed="Szczecin"
       />
 
@@ -49,7 +49,7 @@ export default function FacebookAdsSzczecin() {
                   Agencja Facebook Ads w Szczecinie
                 </h1>
                 <p className="text-xl text-gray-700 mb-8">
-                  Facebook Ads Szczecin — profesjonalne kampanie Meta Ads i reklamy Facebook dla firm z Szczecina i Zachodniopomorskiego. Zwiększamy sprzedaż, zasięg i ROI dzięki precyzyjnemu targetowaniu i kreatywnym reklamom. Bezpłatna konsultacja i wycena kampanii.
+                  Facebook Ads Szczecin — profesjonalne kampanie Meta Ads i reklamy Facebook dla firm ze Szczecina i Zachodniopomorskiego. Zwiększamy sprzedaż, zasięg i ROI dzięki precyzyjnemu targetowaniu i kreatywnym reklamom. Bezpłatna konsultacja i wycena kampanii.
                 </p>
 
                 {/* STATS */}

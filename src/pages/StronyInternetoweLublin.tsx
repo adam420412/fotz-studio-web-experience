@@ -611,7 +611,7 @@ const StronyInternetoweLublin = () => {
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
-              SEO dla stron internetowych w Lublin — lokalna widoczność w Google
+              SEO dla stron internetowych w Lublinie — lokalna widoczność w Google
             </h2>
             <p className="text-muted-foreground mb-4">
               Każda strona internetowa, którą tworzymy dla lubelskich firm, zawiera podstawowe SEO w cenie: meta tagi title i description, schema LocalBusiness z danymi adresowymi Lublina i Lubelszczyzny, szybkość Core Web Vitals i poprawna architektura nagłówków H1–H3. Dzięki temu strona startuje z solidnym fundamentem i szybciej osiąga widoczność w Google.

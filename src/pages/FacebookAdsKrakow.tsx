@@ -88,7 +88,7 @@ export default function FacebookAdsKrakow() {
                   Facebook Ads Kraków — Reklamy Meta dla Twojej Firmy
                 </h1>
                 <p className="text-xl md:text-2xl text-pink-100 mb-8">
-                  Facebook Ads Kraków — profesjonalne kampanie Meta Ads i reklamy Facebook dla firm z Kraków i Małopolski. Zwiększamy sprzedaż, zasięg i ROI dzięki precyzyjnemu targetowaniu. Bezpłatna konsultacja.</p>
+                  Facebook Ads Kraków — profesjonalne kampanie Meta Ads i reklamy Facebook dla firm z Krakowa i Małopolski. Zwiększamy sprzedaż, zasięg i ROI dzięki precyzyjnemu targetowaniu. Bezpłatna konsultacja.</p>
               </div>
 
               {/* Stats Grid */}
