@@ -1,3 +1,4 @@
+import { IndustryWork } from "@/components/sections/IndustryWork";
 import { Link } from "react-router-dom";
 import { CalendarDays, ArrowRight, CheckCircle, Megaphone, Camera, Video, Share2, Star, Phone, Users, Plus, Minus } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
@@ -190,6 +191,8 @@ export default function DlaKogoInstytucje() {
           </motion.div>
         </div>
       </section>
+
+      <IndustryWork slug="instytucje" />
 
       {/* Animated Stats */}
       <section className="py-12 bg-card border-y border-border">

@@ -392,5 +392,195 @@
       "height": 900,
       "bytes": 38822
     }
+  ],
+  "endoestetica-mikroskop": [
+    {
+      "src": "/work/industries/endoestetica-mikroskop-480.webp",
+      "width": 480,
+      "height": 320,
+      "bytes": 12210
+    },
+    {
+      "src": "/work/industries/endoestetica-mikroskop-1280.webp",
+      "width": 1280,
+      "height": 853,
+      "bytes": 40846
+    }
+  ],
+  "gierky-fpv": [
+    {
+      "src": "/work/industries/gierky-fpv-480.webp",
+      "width": 480,
+      "height": 270,
+      "bytes": 12804
+    },
+    {
+      "src": "/work/industries/gierky-fpv-800.webp",
+      "width": 800,
+      "height": 450,
+      "bytes": 24056
+    },
+    {
+      "src": "/work/industries/gierky-fpv-1280.webp",
+      "width": 1280,
+      "height": 720,
+      "bytes": 41530
+    }
+  ],
+  "la-da-vinci": [
+    {
+      "src": "/work/industries/la-da-vinci-480.webp",
+      "width": 480,
+      "height": 853,
+      "bytes": 53394
+    }
+  ],
+  "skaland-film": [
+    {
+      "src": "/work/industries/skaland-film-480.webp",
+      "width": 480,
+      "height": 270,
+      "bytes": 33944
+    },
+    {
+      "src": "/work/industries/skaland-film-800.webp",
+      "width": 800,
+      "height": 450,
+      "bytes": 78978
+    },
+    {
+      "src": "/work/industries/skaland-film-1280.webp",
+      "width": 1280,
+      "height": 720,
+      "bytes": 150226
+    }
+  ],
+  "dembski-nowak-film": [
+    {
+      "src": "/work/industries/dembski-nowak-film-480.webp",
+      "width": 480,
+      "height": 853,
+      "bytes": 38496
+    }
+  ],
+  "krypton-produkt": [
+    {
+      "src": "/work/industries/krypton-produkt-480.webp",
+      "width": 480,
+      "height": 853,
+      "bytes": 44090
+    }
+  ],
+  "cupra-film": [
+    {
+      "src": "/work/industries/cupra-film-480.webp",
+      "width": 480,
+      "height": 270,
+      "bytes": 9716
+    },
+    {
+      "src": "/work/industries/cupra-film-800.webp",
+      "width": 800,
+      "height": 450,
+      "bytes": 17908
+    },
+    {
+      "src": "/work/industries/cupra-film-1280.webp",
+      "width": 1280,
+      "height": 720,
+      "bytes": 29712
+    }
+  ],
+  "dsk-wydarzenie": [
+    {
+      "src": "/work/industries/dsk-wydarzenie-480.webp",
+      "width": 480,
+      "height": 251,
+      "bytes": 22064
+    },
+    {
+      "src": "/work/industries/dsk-wydarzenie-1280.webp",
+      "width": 1280,
+      "height": 669,
+      "bytes": 106908
+    }
+  ],
+  "kobbe-moda": [
+    {
+      "src": "/work/industries/kobbe-moda-320.webp",
+      "width": 320,
+      "height": 480,
+      "bytes": 43288
+    },
+    {
+      "src": "/work/industries/kobbe-moda-853.webp",
+      "width": 853,
+      "height": 1280,
+      "bytes": 170448
+    }
+  ],
+  "klagem-montaz": [
+    {
+      "src": "/work/industries/klagem-montaz-480.webp",
+      "width": 480,
+      "height": 270,
+      "bytes": 7338
+    },
+    {
+      "src": "/work/industries/klagem-montaz-1280.webp",
+      "width": 1280,
+      "height": 721,
+      "bytes": 23320
+    }
+  ],
+  "klagem-film": [
+    {
+      "src": "/work/industries/klagem-film-480.webp",
+      "width": 480,
+      "height": 270,
+      "bytes": 15068
+    },
+    {
+      "src": "/work/industries/klagem-film-800.webp",
+      "width": 800,
+      "height": 450,
+      "bytes": 29374
+    },
+    {
+      "src": "/work/industries/klagem-film-1280.webp",
+      "width": 1280,
+      "height": 720,
+      "bytes": 49026
+    }
+  ],
+  "bax-czesci": [
+    {
+      "src": "/work/industries/bax-czesci-480.webp",
+      "width": 480,
+      "height": 853,
+      "bytes": 50956
+    }
+  ],
+  "wieniawa-koncert": [
+    {
+      "src": "/work/industries/wieniawa-koncert-480.webp",
+      "width": 480,
+      "height": 853,
+      "bytes": 10458
+    }
+  ],
+  "unilever-wydarzenie": [
+    {
+      "src": "/work/industries/unilever-wydarzenie-480.webp",
+      "width": 480,
+      "height": 270,
+      "bytes": 19800
+    },
+    {
+      "src": "/work/industries/unilever-wydarzenie-1280.webp",
+      "width": 1280,
+      "height": 721,
+      "bytes": 82996
+    }
   ]
 }

@@ -1,3 +1,4 @@
+import { IndustryWork } from "@/components/sections/IndustryWork";
 import { Link } from "react-router-dom";
 import { Crown, ArrowRight, CheckCircle, Sparkles, Palette, Users, Megaphone, Star, Phone, Plus, Minus } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
@@ -211,6 +212,8 @@ export default function DlaKogoMarkiPremium() {
           </motion.div>
         </div>
       </section>
+
+      <IndustryWork slug="marki-premium" />
 
       {/* Services */}
       <section className="section-padding bg-card">

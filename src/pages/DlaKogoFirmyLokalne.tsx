@@ -1,3 +1,4 @@
+import { IndustryWork } from "@/components/sections/IndustryWork";
 import { Link } from "react-router-dom";
 import { Building2, ArrowRight, CheckCircle, MapPin, TrendingUp, Users, Target, Star, Phone, Plus, Minus } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
@@ -192,6 +193,8 @@ export default function DlaKogoFirmyLokalne() {
           </motion.div>
         </div>
       </section>
+
+      <IndustryWork slug="firmy-lokalne" />
 
       {/* Services */}
       <section className="section-padding bg-card">
