@@ -109,8 +109,8 @@ export default function BlogStrategiaCenowa() {
         <div className="container-wide">
           <div className="max-w-5xl mx-auto">
             <img loading="lazy"
-              src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070"
-              alt="Strategia cenowa - analiza cen produktów"
+              src="/work/fotz-work-1200.webp"
+              alt="Praca przy komputerze — zdjęcie z sesji FOTZ"
               className="w-full rounded-2xl aspect-video object-cover"
             />
           </div>

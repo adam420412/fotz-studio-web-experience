@@ -1,3 +1,4 @@
+import { getOwnPhoto } from "@/lib/own-photos.mjs";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight, Calendar, Clock, User, BookOpen } from "lucide-react";
@@ -15,7 +16,7 @@ const poradniki = [
     author: "Zespół FOTZ",
     date: "4 Jan 2025",
     readTime: "16 min",
-    image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=2069",
+    image: "/work/fotz-work-1200.webp",
   },
   {
     id: "email-marketing-2025",
@@ -24,7 +25,7 @@ const poradniki = [
     author: "Zespół FOTZ",
     date: "4 Jan 2025",
     readTime: "18 min",
-    image: "https://images.unsplash.com/photo-1596526131083-e8c633c948d2?q=80&w=2074",
+    image: "/work/fotz-work-1200.webp",
   },
   {
     id: "tiktok-dla-biznesu",
@@ -33,7 +34,7 @@ const poradniki = [
     author: "Zespół FOTZ",
     date: "4 Jan 2025",
     readTime: "16 min",
-    image: "https://images.unsplash.com/photo-1611605698335-8b1569810432?q=80&w=2074",
+    image: "/work/fotz-work-1200.webp",
   },
   {
     id: "seo-lokalne-poznan-poradnik",
@@ -42,7 +43,7 @@ const poradniki = [
     author: "Zespół FOTZ",
     date: "4 Jan 2025",
     readTime: "20 min",
-    image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=2076",
+    image: "/work/fotz-work-1200.webp",
   },
   {
     id: "google-ads-poradnik",
@@ -51,7 +52,7 @@ const poradniki = [
     author: "Michał Wiśniewski",
     date: "10 Dec 2024",
     readTime: "12 min",
-    image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=2070",
+    image: "/work/fotz-work-1200.webp",
   },
   {
     id: "influencer-marketing-polska",
@@ -60,7 +61,7 @@ const poradniki = [
     author: "Zespół FOTZ",
     date: "4 Jan 2025",
     readTime: "17 min",
-    image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2074",
+    image: "/work/fotz-work-1200.webp",
   },
   {
     id: "branding-dla-startupow",
@@ -69,7 +70,7 @@ const poradniki = [
     author: "Zespół FOTZ",
     date: "4 Jan 2025",
     readTime: "19 min",
-    image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?q=80&w=2070",
+    image: "/work/fotz-work-1200.webp",
   },
 ];
 
@@ -159,8 +160,8 @@ export default function Poradniki() {
               >
                 <div className="relative aspect-[16/10] overflow-hidden">
                   <img loading="lazy"
-                    src={post.image}
-                    alt={post.title}
+                    {...getOwnPhoto(post.title)}
+                    alt={getOwnPhoto(post.title).alt}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute top-4 left-4">

@@ -57,7 +57,7 @@ test('uses identical CMS metadata for the client and prerender while excluding t
   const meta = getBlogMetadata({ slug: 'test-artykul', title: 'Test artykuł', excerpt: 'Krótki opis testowy.', hero_image_url: 'https://fotz.pl/test.jpg' });
   assert.equal(meta.noIndex, true);
   assert.equal(meta.canonical, 'https://www.fotz-studio.pl/blog/test-artykul');
-  assert.equal(meta.ogImage, 'https://www.fotz-studio.pl/test.jpg');
+  assert.match(meta.ogImage, /^https:\/\/www\.fotz-studio\.pl\/work\//);
   assert.equal(meta.ogType, 'article');
   const description = 'A'.repeat(180);
   assert.equal(getBlogMetadata({ slug: 'poradnik', title: 'Poradnik', excerpt: description }).description, description);

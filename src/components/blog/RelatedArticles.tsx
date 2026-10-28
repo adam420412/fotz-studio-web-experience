@@ -1,3 +1,4 @@
+import { getOwnPhoto } from "@/lib/own-photos.mjs";
 import { Link } from "react-router-dom";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
 import { motion } from "framer-motion";
@@ -21,7 +22,7 @@ const allArticles: Article[] = [
     category: "Poradniki",
     date: "4 Jan 2025",
     readTime: "18 min",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2070",
+    image: "/work/backstage-1200.webp",
   },
   {
     id: "ux-ui-ecommerce",
@@ -30,7 +31,7 @@ const allArticles: Article[] = [
     category: "Poradniki",
     date: "4 Jan 2025",
     readTime: "20 min",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015",
+    image: "/work/backstage-1200.webp",
   },
   {
     id: "branding-dla-startupow",
@@ -39,7 +40,7 @@ const allArticles: Article[] = [
     category: "Poradniki",
     date: "4 Jan 2025",
     readTime: "19 min",
-    image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?q=80&w=2070",
+    image: "/work/fotz-work-1200.webp",
   },
   {
     id: "influencer-marketing-polska",
@@ -48,7 +49,7 @@ const allArticles: Article[] = [
     category: "Poradniki",
     date: "4 Jan 2025",
     readTime: "17 min",
-    image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2074",
+    image: "/work/bar-1200.webp",
   },
   {
     id: "instagram-reels-vs-tiktok",
@@ -57,7 +58,7 @@ const allArticles: Article[] = [
     category: "Social Media",
     date: "4 Jan 2025",
     readTime: "14 min",
-    image: "https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?q=80&w=2074",
+    image: "/work/stadium-1200.webp",
   },
   {
     id: "jak-stworzyc-landing-page",
@@ -66,7 +67,7 @@ const allArticles: Article[] = [
     category: "Poradniki",
     date: "4 Jan 2025",
     readTime: "16 min",
-    image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=2069",
+    image: "/work/fotz-work-1200.webp",
   },
   {
     id: "email-marketing-2025",
@@ -75,7 +76,7 @@ const allArticles: Article[] = [
     category: "Poradniki",
     date: "4 Jan 2025",
     readTime: "18 min",
-    image: "https://images.unsplash.com/photo-1596526131083-e8c633c948d2?q=80&w=2074",
+    image: "/work/fotz-presentation-1200.webp",
   },
   {
     id: "tiktok-dla-biznesu",
@@ -84,7 +85,7 @@ const allArticles: Article[] = [
     category: "Poradniki",
     date: "4 Jan 2025",
     readTime: "16 min",
-    image: "https://images.unsplash.com/photo-1611605698335-8b1569810432?q=80&w=2074",
+    image: "/work/bar-1200.webp",
   },
   {
     id: "seo-lokalne-poznan-poradnik",
@@ -93,7 +94,7 @@ const allArticles: Article[] = [
     category: "Poradniki",
     date: "4 Jan 2025",
     readTime: "20 min",
-    image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=2076",
+    image: "/work/fotz-work-1200.webp",
   },
   {
     id: "ai-w-marketingu-msp-2025",
@@ -102,7 +103,7 @@ const allArticles: Article[] = [
     category: "Reklamy",
     date: "4 Jan 2025",
     readTime: "15 min",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2070",
+    image: "/work/fotz-presentation-1200.webp",
   },
   {
     id: "google-ads-vs-facebook-ads",
@@ -111,7 +112,7 @@ const allArticles: Article[] = [
     category: "Reklamy",
     date: "4 Jan 2025",
     readTime: "18 min",
-    image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=2070",
+    image: "/work/stadium-1200.webp",
   },
   {
     id: "kampania-reklamowa-marketingowa",
@@ -120,7 +121,7 @@ const allArticles: Article[] = [
     category: "Reklamy",
     date: "15 Jan 2025",
     readTime: "12 min",
-    image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2074",
+    image: "/work/fotz-presentation-1200.webp",
   },
   {
     id: "ile-kosztuje-strona-internetowa",
@@ -129,7 +130,7 @@ const allArticles: Article[] = [
     category: "Strony internetowe",
     date: "20 Dec 2024",
     readTime: "15 min",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015",
+    image: "/work/backstage-1200.webp",
   },
   {
     id: "google-ads-poradnik",
@@ -138,7 +139,7 @@ const allArticles: Article[] = [
     category: "Poradniki",
     date: "10 Dec 2024",
     readTime: "12 min",
-    image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=2070",
+    image: "/work/fotz-work-1200.webp",
   },
   {
     id: "video-marketing-roi",
@@ -147,7 +148,7 @@ const allArticles: Article[] = [
     category: "Video",
     date: "8 Dec 2024",
     readTime: "7 min",
-    image: "https://images.unsplash.com/photo-1536240478700-b869070f9279?q=80&w=2000",
+    image: "/work/stadium-1200.webp",
   },
   {
     id: "marketing-automation",
@@ -156,7 +157,7 @@ const allArticles: Article[] = [
     category: "Poradniki",
     date: "10 Jan 2024",
     readTime: "10 min",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070",
+    image: "/work/fotz-presentation-1200.webp",
   },
   {
     id: "personal-branding-linkedin",
@@ -165,7 +166,7 @@ const allArticles: Article[] = [
     category: "LinkedIn",
     date: "5 Jan 2024",
     readTime: "8 min",
-    image: "https://images.unsplash.com/photo-1611944212129-29977ae1398c?q=80&w=2074",
+    image: "/work/fotz-presentation-1200.webp",
   },
   {
     id: "video-marketing-2025",
@@ -174,7 +175,7 @@ const allArticles: Article[] = [
     category: "Video",
     date: "28 Dec 2024",
     readTime: "9 min",
-    image: "https://images.unsplash.com/photo-1492724441997-5dc865305da7?q=80&w=2070",
+    image: "/work/concert-1200.webp",
   },
 ];
 
@@ -235,8 +236,8 @@ export function RelatedArticles({
               >
                 <div className="relative aspect-[16/10] overflow-hidden">
                   <img loading="lazy"
-                    src={article.image}
-                    alt={article.title}
+                    {...getOwnPhoto(`${article.id} ${article.title}`)}
+                    alt={getOwnPhoto(`${article.id} ${article.title}`).alt}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

@@ -98,8 +98,8 @@ export default function BlogUXEcommerce() {
 
             <div className="relative aspect-video rounded-2xl overflow-hidden mb-8">
               <img loading="lazy" 
-                src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2070"
-                alt="UX/UI w e-commerce"
+                src="/work/product-1200.webp"
+                alt="Modułowe regały z kolorowymi szafkami na jasnym tle studyjnym"
                 className="w-full h-full object-cover"
               />
             </div>

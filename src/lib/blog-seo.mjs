@@ -1,3 +1,4 @@
+import { getOwnPhoto, ownPhotoHtml, ownPhotoSchema } from './own-photos.mjs';
 /** Shared by the CMS article view and the static SEO build. */
 import { migratedBlogPaths, repairedSourceLinks } from './reviewed-blog-links.mjs';
 import { reviewedBlogCopy } from './reviewed-blog-copy.mjs';
@@ -36,7 +37,8 @@ export function normalizeSiteUrls(value) {
   return value.replace(/https?:\/\/(?:www\.)?(?:fotz\.pl|fotz-studio\.pl)(?=[/\s"'`<>?#]|$)/g, SITE_ORIGIN);
 }
 
-export function normalizeSchemaUrls(value) {
+export function normalizeSchemaUrls(input) {
+  const value = ownPhotoSchema(input);
   if (typeof value === 'string') return normalizeSiteUrls(value);
   if (Array.isArray(value)) return value.map(normalizeSchemaUrls);
   if (value && typeof value === 'object') {
@@ -51,7 +53,7 @@ export function getBlogMetadata(article) {
     title: `${article.title} | Blog FOTZ`,
     description: raw,
     canonical: `${SITE_ORIGIN}/blog/${article.slug}`,
-    ogImage: normalizeSiteUrls(article.hero_image_url || `${SITE_ORIGIN}/og-image.jpg`),
+    ogImage: `${SITE_ORIGIN}${getOwnPhoto(`${article.slug} ${article.title || ''}`).src}`,
     ogType: 'article',
     noIndex: raw.length < 80 && article.title.toLowerCase().includes('test'),
   };
@@ -60,13 +62,13 @@ export function getBlogMetadata(article) {
 /** The article view already emits one H1 and promotes CMS schema into Helmet. */
 export function prepareBlogHtml(html, slug = '') {
   for (const [before, after] of reviewedBlogCopy[slug] || []) html = html.replace(before, after);
-  return repairBlogFragments(normalizeSiteUrls(html)
+  return ownPhotoHtml(repairBlogFragments(normalizeSiteUrls(html)
     // An automatic linkifier mistook the Polish abbreviation "m.in." for a domain.
     .replace(/<a\b[^>]*href=["']https?:\/\/m\.in\/?["'][^>]*>(m\.in\.?)<\/a>/gi, '$1')
     .replace(/(\bhref=["'])([^"']+)(["'])/gi, (_, start, href, end) => `${start}${canonicalLink(href)}${end}`)
     .replace(/<script\b(?=[^>]*\btype=["']application\/ld\+json["'])[^>]*>[\s\S]*?<\/script\s*>/gi, '')
     .replace(/<h1(\s[^>]*)?>/gi, '<h2$1>')
-    .replace(/<\/h1>/gi, '</h2>'));
+    .replace(/<\/h1>/gi, '</h2>')));
 }
 
 // Some CMS tables of contents preserve Polish letters/punctuation while their

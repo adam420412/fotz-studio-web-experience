@@ -1,0 +1,77 @@
+{
+  "fotz-work": {
+    "alt": "Praca przy komputerze — zdjęcie z sesji FOTZ",
+    "source": "https://drive.google.com/file/d/1CCpG8bXpaHyRhm9xZu-5q8j8sF4bUzIS/view",
+    "filename": "DSC00789.JPG",
+    "variants": [
+      {
+        "src": "/work/fotz-work-480.webp",
+        "width": 480,
+        "height": 270,
+        "bytes": 8226
+      },
+      {
+        "src": "/work/fotz-work-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 17152
+      },
+      {
+        "src": "/work/fotz-work-1200.webp",
+        "width": 1200,
+        "height": 675,
+        "bytes": 33432
+      }
+    ]
+  },
+  "fotz-presentation": {
+    "alt": "Prezentacja projektu na ekranie — zdjęcie z sesji FOTZ",
+    "source": "https://drive.google.com/file/d/1mTFriDh0CNtkRglVEhMNyZLlEhY48uQz/view",
+    "filename": "DSC00837.JPG",
+    "variants": [
+      {
+        "src": "/work/fotz-presentation-480.webp",
+        "width": 480,
+        "height": 854,
+        "bytes": 22714
+      },
+      {
+        "src": "/work/fotz-presentation-800.webp",
+        "width": 800,
+        "height": 1423,
+        "bytes": 44046
+      },
+      {
+        "src": "/work/fotz-presentation-1200.webp",
+        "width": 1200,
+        "height": 2134,
+        "bytes": 87190
+      }
+    ]
+  },
+  "fotz-portrait": {
+    "alt": "Portret z sesji fotograficznej FOTZ",
+    "source": "https://drive.google.com/file/d/1OMOkOs9WvZOc6VuPoSWPrtQCwKO3Gu9s/view",
+    "filename": "DSC00894.JPG",
+    "variants": [
+      {
+        "src": "/work/fotz-portrait-480.webp",
+        "width": 480,
+        "height": 854,
+        "bytes": 24922
+      },
+      {
+        "src": "/work/fotz-portrait-800.webp",
+        "width": 800,
+        "height": 1423,
+        "bytes": 52448
+      },
+      {
+        "src": "/work/fotz-portrait-1200.webp",
+        "width": 1200,
+        "height": 2134,
+        "bytes": 105192
+      }
+    ]
+  }
+}

@@ -9,9 +9,9 @@ import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
 import { useCountUp } from "@/hooks/useCountUp";
 import { OtherIndustries } from "@/components/sections/OtherIndustries";
-import gabinetImg from "@/assets/medyczny/gabinet-stomatologiczny.jpg";
-import konsultacjaImg from "@/assets/medyczny/konsultacja-rtg.jpg";
-import poczekalniaImg from "@/assets/medyczny/poczekalnia-klinika.jpg";
+const gabinetImg = "/work/fotz-work-1200.webp";
+const konsultacjaImg = "/work/fotz-presentation-1200.webp";
+const poczekalniaImg = "/work/backstage-1200.webp";
 
 const services = [
   {
@@ -321,21 +321,21 @@ const MarketingMedyczny = () => {
                 <div className="aspect-square rounded-2xl overflow-hidden">
                   <img loading="lazy" 
                     src={gabinetImg} 
-                    alt="Nowoczesny gabinet stomatologiczny"
+                    alt="Praca przy komputerze — zdjęcie z sesji FOTZ"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="aspect-square rounded-2xl overflow-hidden">
                   <img loading="lazy" 
                     src={konsultacjaImg} 
-                    alt="Konsultacja z pacjentem"
+                    alt="Prezentacja projektu na ekranie — zdjęcie z sesji FOTZ"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="col-span-2 aspect-video rounded-2xl overflow-hidden">
                   <img loading="lazy" 
                     src={poczekalniaImg} 
-                    alt="Poczekalnia w klinice"
+                    alt="Praca na planie sesji produktowej FOTZ"
                     className="w-full h-full object-cover"
                   />
                 </div>

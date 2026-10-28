@@ -177,8 +177,8 @@ export default function BlogFotografiaProduktowa() {
 
                 <div className="aspect-video rounded-2xl overflow-hidden mb-8">
                   <img loading="lazy"
-                    src="https://images.unsplash.com/photo-1502920514313-52581002a659?q=80&w=2015"
-                    alt="Fotografia produktowa profesjonalna"
+                    src="/work/stadium-1200.webp"
+                    alt="Enea Stadion nocą, rozświetlony stadion i czerwone race na pierwszym planie"
                     className="w-full h-full object-cover"
                   />
                 </div>

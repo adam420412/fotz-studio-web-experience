@@ -142,8 +142,8 @@ const BlogContentMarketing = () => {
 
                 <div className="aspect-video rounded-2xl overflow-hidden mb-8">
                   <img loading="lazy"
-                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2015"
-                    alt="Content marketing dla firm - strategia treści"
+                    src="/work/fotz-work-1200.webp"
+                    alt="Praca przy komputerze — zdjęcie z sesji FOTZ"
                     className="w-full h-full object-cover"
                   />
                 </div>

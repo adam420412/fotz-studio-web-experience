@@ -213,8 +213,8 @@ const BlogMarketingDlaFirmy = () => {
 
                 <div className="aspect-video rounded-2xl overflow-hidden mb-8">
                   <img loading="lazy"
-                    src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2015"
-                    alt="Marketing dla firmy - strategie i kanały"
+                    src="/work/fotz-presentation-1200.webp"
+                    alt="Prezentacja projektu na ekranie — zdjęcie z sesji FOTZ"
                     className="w-full h-full object-cover"
                   />
                 </div>

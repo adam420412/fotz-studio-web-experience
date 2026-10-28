@@ -174,7 +174,7 @@ export default function BlogArticleDynamic() {
             <div className="relative aspect-video rounded-2xl overflow-hidden mb-12">
               <img
                 {...getBlogImage(article, blogImages)}
-                alt={article.title}
+                alt={getBlogImage(article, blogImages).alt}
                 className="w-full h-full object-cover"
                 loading="eager"
                 fetchPriority="high"

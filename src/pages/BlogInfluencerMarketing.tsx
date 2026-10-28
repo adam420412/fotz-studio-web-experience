@@ -114,8 +114,8 @@ export default function BlogInfluencerMarketing() {
           {/* Featured Image */}
           <div className="relative aspect-video rounded-3xl overflow-hidden mb-12">
             <img loading="lazy"
-              src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2074"
-              alt="Influencer marketing - współpraca z twórcami"
+              src="/work/bar-1200.webp"
+              alt="Bar Gierky z kolorowym oświetleniem, neonem i podświetlonymi półkami"
               className="w-full h-full object-cover"
             />
           </div>

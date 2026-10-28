@@ -98,8 +98,8 @@ export default function BlogB2BvsB2C() {
         <div className="container-wide">
           <div className="max-w-5xl mx-auto">
             <img loading="lazy" 
-              src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070"
-              alt="Marketing B2B vs B2C - różnice strategii"
+              src="/work/fotz-presentation-1200.webp"
+              alt="Prezentacja projektu na ekranie — zdjęcie z sesji FOTZ"
               className="w-full rounded-2xl aspect-video object-cover"
             />
           </div>
