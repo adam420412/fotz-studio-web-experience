@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
-import { renderPage } from '../.ssr/entry-server.js';
-import { serveBlogArticle } from '../src/lib/live-blog.mjs';
+import { GET as serve } from '../api/blog-article.js';
+import { GET as sitemap } from '../api/blog-sitemap.js';
 const article = {
   slug: 'kontrola-publikacji-bez-wdrozenia', title: 'Jak przygotować materiały do projektu strony',
   meta_description: 'Przygotuj opisy usług, zdjęcia realizacji i aktualne dane kontaktowe przed rozpoczęciem projektu strony firmowej.',
@@ -12,11 +12,17 @@ const article = {
 };
 const manifest = JSON.parse(fs.readFileSync('known-routes.json', 'utf8'));
 assert.ok(!manifest.staticRoutes.includes(`/blog/${article.slug}`));
-const response = await serveBlogArticle(new Request(`https://www.fotz-studio.pl/api/blog-article?slug=${article.slug}`), {
-  config: {url:'https://cms.example.com',key:'public-test-key'},
-  template: fs.readFileSync('.ssr/blog-template.html','utf8'), renderPage,
-  fetcher: async () => Response.json([article]),
-});
+const originalFetch = globalThis.fetch;
+let response;
+try {
+  globalThis.fetch = async () => Response.json([article]);
+  response = await serve(new Request(`https://www.fotz-studio.pl/api/blog-article?slug=${article.slug}`));
+  const mapResponse = await sitemap(new Request('https://www.fotz-studio.pl/sitemap-blog.xml'));
+  assert.equal(mapResponse.status, 200);
+  assert.ok((await mapResponse.text()).includes(`<loc>https://www.fotz-studio.pl/blog/${article.slug}</loc>`));
+} finally {
+  globalThis.fetch = originalFetch;
+}
 assert.equal(response.status,200);
 const html=await response.text();
 assert.equal((html.match(/<h1[ >]/g)||[]).length,1);
