@@ -1,4 +1,5 @@
-import { useParams, Navigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import NotFound from "./NotFound";
 import { Helmet } from "react-helmet-async";
 import { Layout } from "@/components/layout/Layout";
 import { SEOHead } from "@/components/seo/SEOHead";
@@ -72,7 +73,7 @@ export default function BlogArticleDynamic() {
   }
 
   if (!article) {
-    return <Navigate to="/blog" replace />;
+    return <NotFound />;
   }
 
   const publishedDate = formatBlogDate(article.published_at);
