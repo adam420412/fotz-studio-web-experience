@@ -1,3 +1,4 @@
+import { IndustryWork } from "@/components/sections/IndustryWork";
 import { Link } from "react-router-dom";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { Heart, ArrowRight, CheckCircle, Globe, Users, Video, TrendingUp, HandHeart, Megaphone, Target, Plus, Phone } from "lucide-react";
@@ -6,9 +7,7 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
-import { useCountUp } from "@/hooks/useCountUp";
 import { OtherIndustries } from "@/components/sections/OtherIndustries";
-import eneaImg from "@/assets/portfolio/enea-stadion-web.webp";
 
 const services = [
   {
@@ -41,8 +40,8 @@ const customSolutions = [
   },
   {
     icon: Megaphone,
-    title: "Kampanie 1%",
-    description: "Kompleksowe kampanie zachęcające do przekazania 1% podatku na rzecz OPP.",
+    title: "Kampanie 1,5%",
+    description: "Kompleksowe kampanie zachęcające do przekazania 1,5% podatku na rzecz OPP.",
   },
   {
     icon: Target,
@@ -52,10 +51,10 @@ const customSolutions = [
 ];
 
 const benefits = [
-  "Zwiększenie wpływów z darowizn o 200%",
+  "Zwiększenie wpływów z darowizn",
   "Budowanie lojalnej społeczności wspierających",
   "Profesjonalne materiały do pozyskiwania grantów",
-  "Kampanie 1% z wysoką konwersją",
+  "Kampanie 1,5% z wysoką konwersją",
   "Storytelling budujący emocjonalne zaangażowanie",
   "Transparentna komunikacja działań organizacji",
 ];
@@ -70,8 +69,8 @@ const faqItems = [
     answer: "Kluczowe są: prosty proces wpłaty (1-click donation), regularne kampanie email, storytelling pokazujący efekty działań, transparentność finansowa i remarketing do potencjalnych darczyńców.",
   },
   {
-    question: "Jak prowadzić skuteczną kampanię 1%?",
-    answer: "Kampania 1% powinna zacząć się już w styczniu. Obejmuje: email marketing do bazy, kampanie social media, Google Grants, materiały wideo i współpracę z ambasadorami marki.",
+    question: "Jak prowadzić skuteczną kampanię 1,5%?",
+    answer: "Kampania 1,5% powinna zacząć się już w styczniu. Obejmuje: email marketing do bazy, kampanie social media, Google Grants, materiały wideo i współpracę z ambasadorami marki.",
   },
   {
     question: "Czy pomagacie w pozyskiwaniu grantów?",
@@ -124,7 +123,7 @@ const MarketingNGO = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
             className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full blur-[180px]"
-            style={{ background: "hsla(340, 71%, 27%, 0.1)" }}
+            style={{ background: "hsla(340, 71,5%, 27%, 0.1)" }}
           />
         </div>
 
@@ -146,7 +145,7 @@ const MarketingNGO = () => {
             
             <p className="text-foreground/70 text-lg md:text-xl mb-8 max-w-3xl">
               Pomagamy organizacjom pozarządowym zwiększać wpływy i budować społeczność wspierających. 
-              Kampanie fundraisingowe, 1% i profesjonalna komunikacja misji.
+              Kampanie fundraisingowe, 1,5% i profesjonalna komunikacja misji.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -157,37 +156,14 @@ const MarketingNGO = () => {
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg">
-                <Link to="/realizacje">Zobacz realizacje</Link>
+                <a href="#realizacje-branzowe">Zobacz realizacje</a>
               </Button>
             </div>
           </motion.div>
-
-          {/* Stats */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.7 }}
-            className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16"
-          >
-            {[
-              { value: 200, suffix: "%", label: "wzrost darowizn online" },
-              { value: 30, suffix: "+", label: "obsłużonych organizacji" },
-              { value: 5, suffix: "mln", label: "zebranych środków" },
-              { value: 100, suffix: "+", label: "kampanii społecznych" },
-            ].map((stat, index) => {
-              const { ref, displayValue } = useCountUp({ end: stat.value, suffix: stat.suffix });
-              return (
-                <div key={index} ref={ref} className="text-center p-6 rounded-2xl bg-card border border-border/30">
-                  <div className="text-3xl md:text-4xl font-heading font-bold text-gradient-premium">
-                    {displayValue}
-                  </div>
-                  <p className="text-foreground/60 text-sm mt-2">{stat.label}</p>
-                </div>
-              );
-            })}
-          </motion.div>
         </div>
       </section>
+
+      <IndustryWork slug="ngo" />
 
       {/* Services */}
       <section className="section-padding bg-card">
@@ -303,28 +279,11 @@ const MarketingNGO = () => {
               </div>
             </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="relative"
-            >
-              <Link to="/realizacje/enea-stadion" className="block group">
-                <div className="aspect-square rounded-3xl overflow-hidden relative">
-                  <img loading="lazy" 
-                    src={eneaImg} 
-                    alt="Enea Stadion - case study eventy i instytucje"
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-                  <div className="absolute bottom-6 left-6 right-6 text-white">
-                    <span className="text-sm opacity-80 mb-1 block">Case Study</span>
-                    <p className="text-xl font-heading font-bold mb-1">Enea Stadion</p>
-                    <p className="text-sm opacity-80">Marketing eventowy i obsługa social media</p>
-                  </div>
-                </div>
-              </Link>
-            </motion.div>
+            <aside className="rounded-3xl border border-border p-8 bg-background">
+              <h3 className="font-heading text-2xl mb-4">Porozmawiajmy o Twoim projekcie</h3>
+              <p className="text-muted-foreground leading-relaxed mb-6">Pokaż nam swoją ofertę i opowiedz, do kogo chcesz dotrzeć. Dobierzemy stronę, zdjęcia lub wideo do potrzeb Twojej firmy.</p>
+              <Link to="/kontakt#formularz" className="dv-btn dv-btn-primary">Opisz swój projekt <ArrowRight className="w-4 h-4" aria-hidden="true" /></Link>
+            </aside>
           </div>
         </div>
       </section>

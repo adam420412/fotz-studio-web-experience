@@ -1,4 +1,6 @@
-import { getOwnPhoto } from "@/lib/own-photos.mjs";
+import { industries } from "@/data/industries.mjs";
+import { industryWork } from "@/data/industry-work.mjs";
+import industryImages from "@/data/industry-work-images.json";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Building2, ShoppingBag, Crown, CalendarDays, ArrowRight, CheckCircle } from "lucide-react";
@@ -23,7 +25,8 @@ const audiences = [
       "Budowanie rozpoznawalności w regionie",
       "Współpraca z lokalnymi mediami",
     ],
-    image: "/work/fotz-work-1200.webp",
+    image: "/work/bowling-800.webp",
+    imageAlt: "Kręgielnia w Gierky Activity Bar — fotografia FOTZ",
     href: "/dla-kogo/firmy-lokalne",
   },
   {
@@ -39,7 +42,8 @@ const audiences = [
       "Automatyzacja marketingu",
       "Remarketing i cross-selling",
     ],
-    image: "/work/fotz-work-1200.webp",
+    image: "/work/product-800.webp",
+    imageAlt: "Meble podczas sesji produktowej FOTZ",
     href: "/dla-kogo/ecommerce",
   },
   {
@@ -55,7 +59,8 @@ const audiences = [
       "Influencer marketing",
       "PR i komunikacja",
     ],
-    image: "/work/fotz-work-1200.webp",
+    image: "/work/backstage-800.webp",
+    imageAlt: "Praca nad sesją produktową — backstage FOTZ",
     href: "/dla-kogo/marki-premium",
   },
   {
@@ -71,7 +76,8 @@ const audiences = [
       "Kampanie sprzedaży biletów",
       "Social media dla eventów",
     ],
-    image: "/work/fotz-work-1200.webp",
+    image: "/work/conference-800.webp",
+    imageAlt: "Fotografia konferencji na Enea Stadionie — FOTZ",
     href: "/dla-kogo/instytucje",
   },
 ];
@@ -112,6 +118,24 @@ export default function DlaKogo() {
               Każda branża ma swoją specyfikę. Dostosowujemy strategie i narzędzia 
               do unikalnych wyzwań i możliwości Twojego biznesu.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="branze" aria-labelledby="industries-heading" className="section-padding bg-card scroll-mt-20">
+        <div className="container-wide">
+          <h2 id="industries-heading" className="font-heading text-3xl md:text-4xl mb-4">Wybierz swoją branżę</h2>
+          <p className="text-muted-foreground max-w-2xl mb-10">Zobacz ofertę oraz pasujące projekty: strony internetowe, zdjęcia, wideo i aplikacje.</p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {industries.map(industry => {
+              const project = industryWork[industry.slug as keyof typeof industryWork].projects[0];
+              const variants = industryImages[project.image as keyof typeof industryImages];
+              const preview = variants[0];
+              return <Link key={industry.slug} to={industry.href} className="group rounded-2xl overflow-hidden border border-border bg-background focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary">
+                <div className="aspect-[16/10] overflow-hidden bg-muted/30"><img src={preview.src} srcSet={variants.map(image => `${image.src} ${image.width}w`).join(', ')} sizes="(min-width: 1024px) 30vw, (min-width: 640px) 45vw, 90vw" width={preview.width} height={preview.height} alt={project.alt} loading="lazy" decoding="async" className="w-full h-full object-contain motion-safe:transition-transform motion-safe:duration-300 motion-safe:group-hover:scale-[1.02]" /></div>
+                <div className="p-6"><p className="text-sm text-muted-foreground mb-2">{project.name}</p><h3 className="font-heading text-xl flex justify-between items-center gap-3">{industry.name}<ArrowRight className="w-5 h-5 shrink-0" aria-hidden="true" /></h3></div>
+              </Link>;
+            })}
           </div>
         </div>
       </section>
@@ -170,8 +194,11 @@ export default function DlaKogo() {
                 )}
               >
                 <img loading="lazy"
-                  {...getOwnPhoto(audience.title)}
-                  alt={getOwnPhoto(audience.title).alt}
+                  src={audience.image}
+                  alt={audience.imageAlt}
+                  width={800}
+                  height={533}
+                  decoding="async"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/50 to-transparent" />

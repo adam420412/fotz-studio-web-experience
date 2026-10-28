@@ -2,10 +2,12 @@ import { readdir, readFile, mkdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { getWorkCollection } from '../src/lib/selected-work.mjs';
 import { workCollections } from '../src/data/selected-work.mjs';
+import { getIndustry } from '../src/data/industries.mjs';
+import { industryWork } from '../src/data/industry-work.mjs';
 
 const root = path.resolve(process.env.FOTZ_BUILD_DIR || 'dist');
 const output = path.resolve(process.env.FOTZ_QA_DIR || 'docs/seo/qa-2026-10-08/photos');
-const report = { pages: 0, galleryPages: 0, collections: {}, errors: [] };
+const report = { pages: 0, galleryPages: 0, industryPages: 0, collections: {}, errors: [] };
 async function inspect(dir) {
   for (const file of await readdir(dir, { withFileTypes: true })) {
     const filename = path.join(dir, file.name);
@@ -14,6 +16,17 @@ async function inspect(dir) {
     report.pages++;
     const route = '/' + path.relative(root, dir).split(path.sep).join('/');
     const html = await readFile(filename, 'utf8');
+    const industry = getIndustry(route);
+    if (industry) {
+      report.industryPages++;
+      const galleries = [...html.matchAll(/<section\b[^>]*data-industry-work="([^"]+)"[^>]*>([\s\S]*?)<\/section>/g)];
+      if (galleries.length !== 1 || galleries[0]?.[1] !== industry.slug) report.errors.push({ route, issue: 'missing industry portfolio' });
+      const body = galleries[0]?.[2] || '';
+      const projects = industryWork[industry.slug].projects;
+      if ((body.match(/<img\b/g) || []).length !== projects.length) report.errors.push({ route, issue: 'wrong industry image count' });
+      for (const project of projects) if (!body.includes(`/work/industries/${project.image}-`)) report.errors.push({ route, issue: `missing project image: ${project.image}` });
+      if (!html.includes('aria-controls="industries-menu"')) report.errors.push({ route, issue: 'missing industry navigation' });
+    }
     const expected = getWorkCollection(route);
     const sections = [...html.matchAll(/<section\b[^>]*data-work-collection="([^"]+)"[^>]*>([\s\S]*?)<\/section>/g)];
     if (sections.length !== (expected ? 1 : 0)) { report.errors.push({ route, issue: `expected ${expected ? 1 : 0} gallery, found ${sections.length}` }); continue; }

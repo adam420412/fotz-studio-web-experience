@@ -1,3 +1,4 @@
+import { IndustryWork } from "@/components/sections/IndustryWork";
 import { Link } from "react-router-dom";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { Sparkles, ArrowRight, CheckCircle, Calendar, Camera, Users, TrendingUp, Phone, Instagram, Scissors, Heart, Plus } from "lucide-react";
@@ -6,9 +7,7 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
-import { useCountUp } from "@/hooks/useCountUp";
 import { OtherIndustries } from "@/components/sections/OtherIndustries";
-import vertheImg from "@/assets/portfolio/verthe-web.webp";
 
 const services = [
   {
@@ -157,37 +156,14 @@ const MarketingBeauty = () => {
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg">
-                <Link to="/realizacje">Zobacz realizacje</Link>
+                <a href="#realizacje-branzowe">Zobacz realizacje</a>
               </Button>
             </div>
           </motion.div>
-
-          {/* Stats */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.7 }}
-            className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16"
-          >
-            {[
-              { value: 150, suffix: "%", label: "więcej rezerwacji" },
-              { value: 10, suffix: "k+", label: "obserwatorek" },
-              { value: 80, suffix: "+", label: "salonów beauty" },
-              { value: 4.9, suffix: "", label: "średnia ocen" },
-            ].map((stat, index) => {
-              const { ref, displayValue } = useCountUp({ end: stat.value, suffix: stat.suffix });
-              return (
-                <div key={index} ref={ref} className="text-center p-6 rounded-2xl bg-card border border-border/30">
-                  <div className="text-3xl md:text-4xl font-heading font-bold text-gradient-premium">
-                    {displayValue}
-                  </div>
-                  <p className="text-foreground/60 text-sm mt-2">{stat.label}</p>
-                </div>
-              );
-            })}
-          </motion.div>
         </div>
       </section>
+
+      <IndustryWork slug="beauty-wellness" />
 
       {/* Services */}
       <section className="section-padding bg-card">
@@ -303,28 +279,11 @@ const MarketingBeauty = () => {
               </div>
             </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="relative"
-            >
-              <Link to="/realizacje/verthe" className="block group">
-                <div className="aspect-square rounded-3xl overflow-hidden relative">
-                  <img loading="lazy" 
-                    src={vertheImg} 
-                    alt="Verthé - case study beauty marketing"
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-                  <div className="absolute bottom-6 left-6 right-6 text-white">
-                    <span className="text-sm opacity-80 mb-1 block">Case Study</span>
-                    <p className="text-xl font-heading font-bold mb-1">Verthé</p>
-                    <p className="text-sm opacity-80">Branding i identyfikacja wizualna marki beauty</p>
-                  </div>
-                </div>
-              </Link>
-            </motion.div>
+            <aside className="rounded-3xl border border-border p-8 bg-background">
+              <h3 className="font-heading text-2xl mb-4">Porozmawiajmy o Twoim projekcie</h3>
+              <p className="text-muted-foreground leading-relaxed mb-6">Pokaż nam swoją ofertę i opowiedz, do kogo chcesz dotrzeć. Dobierzemy stronę, zdjęcia lub wideo do potrzeb Twojej firmy.</p>
+              <Link to="/kontakt#formularz" className="dv-btn dv-btn-primary">Opisz swój projekt <ArrowRight className="w-4 h-4" aria-hidden="true" /></Link>
+            </aside>
           </div>
         </div>
       </section>

@@ -4,12 +4,12 @@ import { Menu, X, ArrowUpRight, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import logoFotz from "@/assets/logo-fotz.png";
+import { industries } from "@/data/industries.mjs";
 
 const MegaMenu = lazy(() => import("./MegaMenu").then(module => ({ default: module.MegaMenu })));
 
 const navLinksData = [
   { name: "Realizacje", href: "/realizacje" },
-  { name: "Dla kogo", href: "/dla-kogo" },
   { name: "Blog", href: "/blog" },
   { name: "O nas", href: "/o-nas" },
   { name: "Kontakt", href: "/kontakt" },
@@ -38,17 +38,21 @@ export function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
   const [loadMegaMenu, setLoadMegaMenu] = useState(false);
+  const [isIndustryMenuOpen, setIsIndustryMenuOpen] = useState(false);
   const location = useLocation();
   const menuButton = useRef<HTMLButtonElement>(null);
   const servicesButton = useRef<HTMLButtonElement>(null);
+  const industryButton = useRef<HTMLButtonElement>(null);
+  const industryMenu = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (!isMobileMenuOpen && !isMegaMenuOpen) return;
+    if (!isMobileMenuOpen && !isMegaMenuOpen && !isIndustryMenuOpen) return;
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
         setIsMobileMenuOpen(false);
         setIsMegaMenuOpen(false);
-        (isMobileMenuOpen ? menuButton : servicesButton).current?.focus();
+        setIsIndustryMenuOpen(false);
+        (isMobileMenuOpen ? menuButton : isIndustryMenuOpen ? industryButton : servicesButton).current?.focus();
       }
     };
     const previousOverflow = document.body.style.overflow;
@@ -58,7 +62,16 @@ export function Navbar() {
       document.body.style.overflow = previousOverflow;
       document.removeEventListener("keydown", onKeyDown);
     };
-  }, [isMobileMenuOpen, isMegaMenuOpen]);
+  }, [isMobileMenuOpen, isMegaMenuOpen, isIndustryMenuOpen]);
+
+  useEffect(() => {
+    if (!isIndustryMenuOpen) return;
+    const closeOutside = (event: PointerEvent) => {
+      if (!industryMenu.current?.contains(event.target as Node)) setIsIndustryMenuOpen(false);
+    };
+    document.addEventListener("pointerdown", closeOutside);
+    return () => document.removeEventListener("pointerdown", closeOutside);
+  }, [isIndustryMenuOpen]);
 
   const navLinks = navLinksData;
 
@@ -73,10 +86,11 @@ export function Navbar() {
   useEffect(() => {
     setIsMobileMenuOpen(false);
     setIsMegaMenuOpen(false);
-  }, [location.pathname]);
+    setIsIndustryMenuOpen(false);
+  }, [location.pathname, location.hash]);
 
   const pillBase =
-    "px-4 py-2.5 rounded-full font-geist-mono text-[12px] tracking-[0.14em] uppercase transition-colors duration-200";
+    "px-4 py-2.5 rounded-full font-geist-mono text-[12px] tracking-[0.14em] uppercase transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-2";
   const pillIdle = "text-foreground/60 hover:text-foreground hover:bg-white/[0.06]";
   const pillActive = "text-foreground bg-white/[0.08]";
 
@@ -106,10 +120,10 @@ export function Navbar() {
                 ref={servicesButton}
                 aria-expanded={isMegaMenuOpen}
                 aria-controls="services-menu"
-                onClick={() => { setLoadMegaMenu(true); setIsMegaMenuOpen(!isMegaMenuOpen); }}
+                onClick={() => { setLoadMegaMenu(true); setIsMegaMenuOpen(!isMegaMenuOpen); setIsIndustryMenuOpen(false); }}
                 className={cn(
                   pillBase,
-                  "flex items-center gap-1.5 outline-none",
+                  "flex items-center gap-1.5",
                   isMegaMenuOpen || location.pathname.includes("/uslugi")
                     ? pillActive
                     : pillIdle
@@ -124,6 +138,18 @@ export function Navbar() {
                   strokeWidth={1.5}
                 />
               </button>
+
+              <div ref={industryMenu} onBlur={(event) => { if (!event.currentTarget.contains(event.relatedTarget as Node | null)) setIsIndustryMenuOpen(false); }}>
+                <button ref={industryButton} type="button" aria-expanded={isIndustryMenuOpen} aria-controls="industries-menu" onClick={() => { setIsIndustryMenuOpen(open => !open); setIsMegaMenuOpen(false); }} className={cn(pillBase, "flex items-center gap-1.5", isIndustryMenuOpen || location.pathname.startsWith('/dla-kogo') ? pillActive : pillIdle)}>
+                  Branże <ChevronDown aria-hidden="true" className={cn("w-3.5 h-3.5 transition-transform", isIndustryMenuOpen && "rotate-180")} />
+                </button>
+                <div id="industries-menu" hidden={!isIndustryMenuOpen} className="absolute top-20 left-1/2 -translate-x-1/2 w-[min(960px,calc(100vw-48px))] rounded-b-2xl border border-border bg-background shadow-xl p-8">
+                  <Link to="/dla-kogo#branze" onClick={() => setIsIndustryMenuOpen(false)} className="inline-flex items-center gap-2 text-lg font-heading mb-5 underline underline-offset-4">Oferta dla Twojej branży <ArrowUpRight className="w-4 h-4" aria-hidden="true" /></Link>
+                  <div className="grid grid-cols-3 gap-x-6 gap-y-2">
+                    {industries.map(industry => <Link key={industry.slug} to={industry.href} onClick={() => setIsIndustryMenuOpen(false)} aria-current={location.pathname === industry.href ? 'page' : undefined} className="rounded-lg p-3 text-sm hover:bg-muted focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary aria-[current=page]:text-primary">{industry.name}</Link>)}
+                  </div>
+                </div>
+              </div>
 
               {navLinks.map((link) => (
                 <Link
@@ -155,7 +181,7 @@ export function Navbar() {
             <div className="xl:hidden flex items-center gap-2">
               <ThemeToggle />
               <button
-                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                onClick={() => { setIsMobileMenuOpen(!isMobileMenuOpen); setIsIndustryMenuOpen(false); setIsMegaMenuOpen(false); }}
                 className="p-2 text-foreground z-[60]"
                 ref={menuButton}
                 aria-label={isMobileMenuOpen ? "Zamknij menu" : "Otwórz menu"}
@@ -181,6 +207,12 @@ export function Navbar() {
         >
           <div className="h-full overflow-y-auto overscroll-contain">
             <div className="max-w-[1440px] mx-auto px-4 sm:px-6 py-6 flex flex-col gap-3">
+              <div className="border-b border-border pb-4 mb-2">
+                <Link to="/dla-kogo#branze" onClick={() => setIsMobileMenuOpen(false)} className="font-heading text-xl mb-3 block">Branże — zobacz ofertę →</Link>
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-1">
+                  {industries.map(industry => <Link key={industry.slug} to={industry.href} onClick={() => setIsMobileMenuOpen(false)} aria-current={location.pathname === industry.href ? 'page' : undefined} className="py-3 text-sm leading-relaxed hover:text-primary aria-[current=page]:text-primary">{industry.name}</Link>)}
+                </div>
+              </div>
               <div className="border-b border-[color:var(--dv-hair)] pb-4 mb-2">
                 <Link
                   to="/uslugi"

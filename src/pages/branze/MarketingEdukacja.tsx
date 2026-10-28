@@ -1,3 +1,4 @@
+import { IndustryWork } from "@/components/sections/IndustryWork";
 import { Link } from "react-router-dom";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { GraduationCap, ArrowRight, CheckCircle, Users, Globe, Video, TrendingUp, BookOpen, Calendar, Award, Plus, Phone } from "lucide-react";
@@ -6,9 +7,7 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
-import { useCountUp } from "@/hooks/useCountUp";
 import { OtherIndustries } from "@/components/sections/OtherIndustries";
-import przedszkoleImg from "@/assets/portfolio/przedszkole-web.webp";
 
 const services = [
   {
@@ -52,7 +51,7 @@ const customSolutions = [
 ];
 
 const benefits = [
-  "Zwiększenie liczby zgłoszeń rekrutacyjnych o 120%",
+  "Zwiększenie liczby zgłoszeń rekrutacyjnych",
   "Automatyzacja procesu rekrutacji online",
   "Budowanie prestiżu i rozpoznawalności placówki",
   "Komunikacja z rodzicami i uczniami 24/7",
@@ -157,37 +156,14 @@ const MarketingEdukacja = () => {
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg">
-                <Link to="/realizacje">Zobacz realizacje</Link>
+                <a href="#realizacje-branzowe">Zobacz realizacje</a>
               </Button>
             </div>
           </motion.div>
-
-          {/* Stats */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.7 }}
-            className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16"
-          >
-            {[
-              { value: 120, suffix: "%", label: "więcej zgłoszeń rekrutacyjnych" },
-              { value: 50, suffix: "+", label: "obsłużonych placówek" },
-              { value: 10000, suffix: "+", label: "pozyskanych uczniów" },
-              { value: 95, suffix: "%", label: "zadowolonych klientów" },
-            ].map((stat, index) => {
-              const { ref, displayValue } = useCountUp({ end: stat.value, suffix: stat.suffix });
-              return (
-                <div key={index} ref={ref} className="text-center p-6 rounded-2xl bg-card border border-border/30">
-                  <div className="text-3xl md:text-4xl font-heading font-bold text-gradient-premium">
-                    {displayValue}
-                  </div>
-                  <p className="text-foreground/60 text-sm mt-2">{stat.label}</p>
-                </div>
-              );
-            })}
-          </motion.div>
         </div>
       </section>
+
+      <IndustryWork slug="edukacja" />
 
       {/* Services */}
       <section className="section-padding bg-card">
@@ -303,28 +279,11 @@ const MarketingEdukacja = () => {
               </div>
             </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="relative"
-            >
-              <Link to="/realizacje/przedszkole" className="block group">
-                <div className="aspect-square rounded-3xl overflow-hidden relative">
-                  <img loading="lazy" 
-                    src={przedszkoleImg} 
-                    alt="Przedszkole - case study edukacja"
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-                  <div className="absolute bottom-6 left-6 right-6 text-white">
-                    <span className="text-sm opacity-80 mb-1 block">Case Study</span>
-                    <p className="text-xl font-heading font-bold mb-1">Przedszkole</p>
-                    <p className="text-sm opacity-80">Strona i marketing dla placówki edukacyjnej</p>
-                  </div>
-                </div>
-              </Link>
-            </motion.div>
+            <aside className="rounded-3xl border border-border p-8 bg-background">
+              <h3 className="font-heading text-2xl mb-4">Porozmawiajmy o Twoim projekcie</h3>
+              <p className="text-muted-foreground leading-relaxed mb-6">Pokaż nam swoją ofertę i opowiedz, do kogo chcesz dotrzeć. Dobierzemy stronę, zdjęcia lub wideo do potrzeb Twojej firmy.</p>
+              <Link to="/kontakt#formularz" className="dv-btn dv-btn-primary">Opisz swój projekt <ArrowRight className="w-4 h-4" aria-hidden="true" /></Link>
+            </aside>
           </div>
         </div>
       </section>

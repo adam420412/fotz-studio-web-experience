@@ -64,6 +64,9 @@ def inspect(html, check_local_assets=True):
         except (ValueError,KeyError,TypeError): issues.append('invalid CMS bootstrap JSON')
     # Website URLs in rendered markup and schema must not use the old domain.
     rendered_html=re.sub(bootstrap_pattern, '', html)
+    # An explicit portfolio reference on the separately maintained fotz.pl site is allowed.
+    # Canonicals, schema URLs and every other old-domain URL remain checked.
+    rendered_html=rendered_html.replace('href="https://fotz.pl/project/strona-internetowa-dla-ipersonel/"', '')
     if re.search(r'https?://(?:www\.)?fotz\.pl(?=[/\s\"\'<>?#]|$)', rendered_html):issues.append('old website URL in generated HTML')
     if not noindex:
         body = re.search(r'<!-- fotz-body:start -->([\s\S]*?)<!-- fotz-body:end -->', html)

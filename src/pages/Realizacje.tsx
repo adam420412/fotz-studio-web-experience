@@ -95,7 +95,7 @@ export default function Realizacje() {
                 </div>
               </>;
               const className = "portfolio-project group flex h-full flex-col rounded-2xl text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary";
-              return <article key={`${activeProjectCategory}-${project.id}`} className="portfolio-enter min-w-0" style={{ animationDelay: `${Math.min(index, 3) * 45}ms` }}>{project.hasCase ? <Link to={`/realizacje/${project.id}`} className={className}>{card}</Link> : project.liveUrl ? <a href={project.liveUrl} target="_blank" rel="noopener" className={className} aria-label={`${project.title}, otwiera się w nowej karcie`}>{card}</a> : <button type="button" className={cn(className, "w-full")} onClick={() => setLightbox({ images: [{ src: project.image, alt: project.title }], index: 0 })}>{card}</button>}</article>;
+              return <article id={project.id} key={`${activeProjectCategory}-${project.id}`} className="portfolio-enter min-w-0 scroll-mt-28" style={{ animationDelay: `${Math.min(index, 3) * 45}ms` }}>{project.hasCase ? <Link to={`/realizacje/${project.id}`} className={className}>{card}</Link> : project.liveUrl ? <a href={project.liveUrl} target="_blank" rel="noopener" className={className} aria-label={`${project.title}, otwiera się w nowej karcie`}>{card}</a> : <button type="button" className={cn(className, "w-full")} onClick={() => setLightbox({ images: [{ src: project.image, alt: project.title }], index: 0 })}>{card}</button>}</article>;
             })}
           </div>
           </div>

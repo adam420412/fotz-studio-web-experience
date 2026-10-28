@@ -2,20 +2,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
-const allIndustries = [
-  { name: "Branża medyczna", href: "/dla-kogo/branza-medyczna", slug: "branza-medyczna" },
-  { name: "Gastronomia", href: "/dla-kogo/gastronomia", slug: "gastronomia" },
-  { name: "Beauty & Wellness", href: "/dla-kogo/beauty-wellness", slug: "beauty-wellness" },
-  { name: "Nieruchomości", href: "/dla-kogo/nieruchomosci", slug: "nieruchomosci" },
-  { name: "Automotive", href: "/dla-kogo/automotive", slug: "automotive" },
-  { name: "IT & SaaS", href: "/dla-kogo/it-saas", slug: "it-saas" },
-  { name: "Edukacja", href: "/dla-kogo/edukacja", slug: "edukacja" },
-  { name: "Prawo & Finanse", href: "/dla-kogo/prawo-finanse", slug: "prawo-finanse" },
-  { name: "E-commerce & Retail", href: "/dla-kogo/ecommerce-retail", slug: "ecommerce-retail" },
-  { name: "Produkcja", href: "/dla-kogo/produkcja", slug: "produkcja" },
-  { name: "NGO & Fundacje", href: "/dla-kogo/ngo", slug: "ngo" },
-  { name: "Turystyka", href: "/dla-kogo/turystyka", slug: "turystyka" },
-];
+import { industries as allIndustries } from "@/data/industries.mjs";
 
 interface OtherIndustriesProps {
   currentSlug: string;

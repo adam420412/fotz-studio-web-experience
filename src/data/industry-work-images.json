@@ -1,0 +1,396 @@
+{
+  "medeor": [
+    {
+      "src": "/work/industries/medeor-480.webp",
+      "width": 480,
+      "height": 853,
+      "bytes": 20982
+    },
+    {
+      "src": "/work/industries/medeor-800.webp",
+      "width": 800,
+      "height": 1422,
+      "bytes": 37700
+    },
+    {
+      "src": "/work/industries/medeor-1280.webp",
+      "width": 1280,
+      "height": 2276,
+      "bytes": 68528
+    }
+  ],
+  "romanowski": [
+    {
+      "src": "/work/industries/romanowski-480.webp",
+      "width": 480,
+      "height": 300,
+      "bytes": 49986
+    },
+    {
+      "src": "/work/industries/romanowski-800.webp",
+      "width": 800,
+      "height": 500,
+      "bytes": 116348
+    },
+    {
+      "src": "/work/industries/romanowski-1280.webp",
+      "width": 1200,
+      "height": 750,
+      "bytes": 210928
+    }
+  ],
+  "gierky-bar": [
+    {
+      "src": "/work/industries/gierky-bar-480.webp",
+      "width": 480,
+      "height": 320,
+      "bytes": 26862
+    },
+    {
+      "src": "/work/industries/gierky-bar-800.webp",
+      "width": 800,
+      "height": 533,
+      "bytes": 66708
+    },
+    {
+      "src": "/work/industries/gierky-bar-1280.webp",
+      "width": 1280,
+      "height": 853,
+      "bytes": 149564
+    }
+  ],
+  "gierky-web": [
+    {
+      "src": "/work/industries/gierky-web-480.webp",
+      "width": 480,
+      "height": 324,
+      "bytes": 6092
+    },
+    {
+      "src": "/work/industries/gierky-web-800.webp",
+      "width": 800,
+      "height": 539,
+      "bytes": 12414
+    },
+    {
+      "src": "/work/industries/gierky-web-1280.webp",
+      "width": 1200,
+      "height": 809,
+      "bytes": 22670
+    }
+  ],
+  "verthe": [
+    {
+      "src": "/work/industries/verthe-480.webp",
+      "width": 480,
+      "height": 365,
+      "bytes": 9924
+    },
+    {
+      "src": "/work/industries/verthe-800.webp",
+      "width": 800,
+      "height": 608,
+      "bytes": 19818
+    },
+    {
+      "src": "/work/industries/verthe-1280.webp",
+      "width": 1200,
+      "height": 912,
+      "bytes": 32552
+    }
+  ],
+  "city-sbu": [
+    {
+      "src": "/work/industries/city-sbu-480.webp",
+      "width": 480,
+      "height": 300,
+      "bytes": 21184
+    },
+    {
+      "src": "/work/industries/city-sbu-800.webp",
+      "width": 800,
+      "height": 500,
+      "bytes": 41132
+    },
+    {
+      "src": "/work/industries/city-sbu-1280.webp",
+      "width": 1200,
+      "height": 750,
+      "bytes": 68254
+    }
+  ],
+  "dembski-nowak": [
+    {
+      "src": "/work/industries/dembski-nowak-480.webp",
+      "width": 480,
+      "height": 751,
+      "bytes": 23424
+    },
+    {
+      "src": "/work/industries/dembski-nowak-800.webp",
+      "width": 800,
+      "height": 1252,
+      "bytes": 65240
+    },
+    {
+      "src": "/work/industries/dembski-nowak-1280.webp",
+      "width": 1280,
+      "height": 2004,
+      "bytes": 143616
+    }
+  ],
+  "victory-cars": [
+    {
+      "src": "/work/industries/victory-cars-480.webp",
+      "width": 480,
+      "height": 360,
+      "bytes": 7074
+    },
+    {
+      "src": "/work/industries/victory-cars-800.webp",
+      "width": 800,
+      "height": 600,
+      "bytes": 14006
+    },
+    {
+      "src": "/work/industries/victory-cars-1280.webp",
+      "width": 1200,
+      "height": 900,
+      "bytes": 23696
+    }
+  ],
+  "sookar": [
+    {
+      "src": "/work/industries/sookar-480.webp",
+      "width": 480,
+      "height": 360,
+      "bytes": 8088
+    },
+    {
+      "src": "/work/industries/sookar-800.webp",
+      "width": 800,
+      "height": 600,
+      "bytes": 16726
+    },
+    {
+      "src": "/work/industries/sookar-1280.webp",
+      "width": 1200,
+      "height": 900,
+      "bytes": 30112
+    }
+  ],
+  "dawid-edu": [
+    {
+      "src": "/work/industries/dawid-edu-480.webp",
+      "width": 480,
+      "height": 284,
+      "bytes": 19172
+    },
+    {
+      "src": "/work/industries/dawid-edu-800.webp",
+      "width": 800,
+      "height": 472,
+      "bytes": 38740
+    },
+    {
+      "src": "/work/industries/dawid-edu-1280.webp",
+      "width": 1280,
+      "height": 756,
+      "bytes": 72876
+    }
+  ],
+  "wsb-merito": [
+    {
+      "src": "/work/industries/wsb-merito-480.webp",
+      "width": 480,
+      "height": 270,
+      "bytes": 14482
+    },
+    {
+      "src": "/work/industries/wsb-merito-800.webp",
+      "width": 800,
+      "height": 450,
+      "bytes": 29020
+    },
+    {
+      "src": "/work/industries/wsb-merito-1280.webp",
+      "width": 1280,
+      "height": 720,
+      "bytes": 47834
+    }
+  ],
+  "ratio-legal": [
+    {
+      "src": "/work/industries/ratio-legal-480.webp",
+      "width": 480,
+      "height": 270,
+      "bytes": 15366
+    },
+    {
+      "src": "/work/industries/ratio-legal-800.webp",
+      "width": 800,
+      "height": 450,
+      "bytes": 32918
+    },
+    {
+      "src": "/work/industries/ratio-legal-1280.webp",
+      "width": 1280,
+      "height": 720,
+      "bytes": 64110
+    }
+  ],
+  "ipersonel": [
+    {
+      "src": "/work/industries/ipersonel-480.webp",
+      "width": 480,
+      "height": 360,
+      "bytes": 13208
+    },
+    {
+      "src": "/work/industries/ipersonel-800.webp",
+      "width": 720,
+      "height": 540,
+      "bytes": 22510
+    }
+  ],
+  "cute-dumpling": [
+    {
+      "src": "/work/industries/cute-dumpling-480.webp",
+      "width": 480,
+      "height": 360,
+      "bytes": 12436
+    },
+    {
+      "src": "/work/industries/cute-dumpling-800.webp",
+      "width": 800,
+      "height": 600,
+      "bytes": 23832
+    },
+    {
+      "src": "/work/industries/cute-dumpling-1280.webp",
+      "width": 1200,
+      "height": 900,
+      "bytes": 41118
+    }
+  ],
+  "friendly-gas": [
+    {
+      "src": "/work/industries/friendly-gas-480.webp",
+      "width": 480,
+      "height": 353,
+      "bytes": 7942
+    },
+    {
+      "src": "/work/industries/friendly-gas-800.webp",
+      "width": 800,
+      "height": 588,
+      "bytes": 15574
+    },
+    {
+      "src": "/work/industries/friendly-gas-1280.webp",
+      "width": 1200,
+      "height": 882,
+      "bytes": 25656
+    }
+  ],
+  "corco": [
+    {
+      "src": "/work/industries/corco-480.webp",
+      "width": 480,
+      "height": 300,
+      "bytes": 7434
+    },
+    {
+      "src": "/work/industries/corco-800.webp",
+      "width": 800,
+      "height": 500,
+      "bytes": 13598
+    },
+    {
+      "src": "/work/industries/corco-1280.webp",
+      "width": 1200,
+      "height": 750,
+      "bytes": 22026
+    }
+  ],
+  "fps": [
+    {
+      "src": "/work/industries/fps-480.webp",
+      "width": 480,
+      "height": 360,
+      "bytes": 13406
+    },
+    {
+      "src": "/work/industries/fps-800.webp",
+      "width": 800,
+      "height": 600,
+      "bytes": 26114
+    },
+    {
+      "src": "/work/industries/fps-1280.webp",
+      "width": 1200,
+      "height": 900,
+      "bytes": 47318
+    }
+  ],
+  "klagem": [
+    {
+      "src": "/work/industries/klagem-480.webp",
+      "width": 480,
+      "height": 270,
+      "bytes": 8086
+    },
+    {
+      "src": "/work/industries/klagem-800.webp",
+      "width": 800,
+      "height": 450,
+      "bytes": 16874
+    },
+    {
+      "src": "/work/industries/klagem-1280.webp",
+      "width": 1280,
+      "height": 720,
+      "bytes": 36782
+    }
+  ],
+  "swiatowy-dzien-sm": [
+    {
+      "src": "/work/industries/swiatowy-dzien-sm-480.webp",
+      "width": 480,
+      "height": 320,
+      "bytes": 14336
+    },
+    {
+      "src": "/work/industries/swiatowy-dzien-sm-800.webp",
+      "width": 800,
+      "height": 533,
+      "bytes": 33182
+    },
+    {
+      "src": "/work/industries/swiatowy-dzien-sm-1280.webp",
+      "width": 1280,
+      "height": 853,
+      "bytes": 70994
+    }
+  ],
+  "chorwacja": [
+    {
+      "src": "/work/industries/chorwacja-480.webp",
+      "width": 480,
+      "height": 360,
+      "bytes": 11854
+    },
+    {
+      "src": "/work/industries/chorwacja-800.webp",
+      "width": 800,
+      "height": 600,
+      "bytes": 23064
+    },
+    {
+      "src": "/work/industries/chorwacja-1280.webp",
+      "width": 1200,
+      "height": 900,
+      "bytes": 38822
+    }
+  ]
+}
