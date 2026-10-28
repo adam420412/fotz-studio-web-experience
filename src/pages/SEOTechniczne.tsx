@@ -1,200 +1,159 @@
 import { SEOHead } from "@/components/seo/SEOHead";
-import { Layout } from "@/components/layout/Layout";
-import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import { Zap, Search, Shield, Globe, FileText, Code2, TrendingUp, Target, BarChart, CheckCircle } from "lucide-react";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
-import { ContactSection } from "@/components/sections/ContactSection";
+import { ServiceEditorial } from "@/components/ServiceEditorial";
 
-const SEOTechniczne = () => {
-  const features = [
-    { icon: Zap, title: "Core Web Vitals (LCP, INP, CLS)", desc: "Optymalizujemy wskaźniki doświadczenia użytkownika. LCP poniżej 2,5s, CLS poniżej 0,1, INP poniżej 200ms — wymogi rankingowe Google." },
-    { icon: Search, title: "Indeksacja i crawl budget", desc: "Sprawdzamy jakie strony Google indeksuje, a jakie ignoruje. Optymalizujemy crawl budget przez noindex, sitemap i strukturę linkowania." },
-    { icon: FileText, title: "Sitemap XML i robots.txt", desc: "Prawidłowe sitemaps ułatwiają Google odkrywanie nowych treści. Robots.txt chroni przed indeksacją stron bez wartości SEO." },
-    { icon: Globe, title: "HTTPS i bezpieczeństwo", desc: "SSL to sygnał rankingowy. Sprawdzamy certyfikat, mixed content, bezpieczne nagłówki HTTP i konfigurację serwera." },
-    { icon: Code2, title: "Structured Data i JSON-LD", desc: "Schema.org dla Organization, LocalBusiness, FAQ, Article, Product. Rich snippets wyróżniają stronę i zwiększają CTR." },
-    { icon: Shield, title: "Kanonikalizacja i duplikaty", desc: "Tagi canonical, przekierowania 301, parametry URL — eliminujemy duplikaty treści, które rozdzielają sygnały rankingowe." },
-  ];
-
-  const results = [
-    { value: "99/100", label: "PageSpeed Insights", desc: "dla zoptymalizowanych stron" },
-    { value: "-60%", label: "Mniej błędów crawl", desc: "po naprawie technicznej" },
-    { value: "+25%", label: "Więcej zaindeksowanych stron", desc: "po optymalizacji sitemap" },
-    { value: "<2s", label: "Czas ładowania", desc: "po optymalizacji Core Web Vitals" },
-  ];
-
-  const faqItems = [
-    { question: "Czym jest techniczne SEO?", answer: "Techniczne SEO obejmuje aspekty strony wpływające na crawling i indeksację przez Google: szybkość ładowania, Core Web Vitals, strukturę URL, sitemap, robots.txt, HTTPS, dane strukturalne i kanonikalizację. To fundament, bez którego inne działania SEO nie działają efektywnie." },
-    { question: "Jak sprawdzić błędy techniczne SEO strony?", answer: "Używamy narzędzi: Google Search Console (błędy crawl, problemy indeksacji), PageSpeed Insights (Core Web Vitals), Screaming Frog (audyt techniczny), Ahrefs Site Audit. Pełny obraz daje połączenie tych narzędzi z ręczną analizą." },
-    { question: "Jak poprawić szybkość strony?", answer: "Kompresja obrazów (WebP/AVIF), lazy loading, minifikacja CSS/JS, CDN, caching, optymalizacja TTFB serwera, usunięcie zbędnych skryptów. Dla stron na WordPressie — lekki motyw, minimalna liczba wtyczek i dobry hosting." },
-    { question: "Co to jest crawl budget i dlaczego jest ważny?", answer: "Crawl budget to liczba stron, które Googlebot odwiedza w danym czasie. Dla dużych serwisów wyczerpany crawl budget oznacza, że nowe treści długo czekają na indeksację. Optymalizujemy go przez noindex na stronach bez wartości i właściwą strukturę sitemap." },
-  ];
-
-  return (
-    <>
-      <SEOHead
-        title="SEO Techniczne — Optymalizacja Techniczna Strony pod Google"
-        description="SEO techniczne — optymalizacja szybkości ładowania, Core Web Vitals, indeksowanie, structured data i bezpieczeństwo strony. Fotz Studio."
-        canonical="https://www.fotz-studio.pl/seo/techniczne"
-        keywords="seo techniczne, technical seo, core web vitals, szybkość strony seo, indeksowanie google, sitemap xml, robots txt, seo techniczne audyt, page speed seo, crawlowanie strony"
-      />
-      <ServiceSchema
-        name="Techniczne SEO i Optymalizacja Techniczna"
-        description="Kompleksowa optymalizacja techniczna stron internetowych: szybkość, indeksacja, Core Web Vitals, bezpieczeństwo HTTPS."
-        provider="Fotz Studio"
-        areaServed="Polska"
-      />
-      <BreadcrumbSchema items={[
-        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
-        { name: "SEO", url: "https://www.fotz-studio.pl/seo" },
-        { name: "Techniczne SEO", url: "https://www.fotz-studio.pl/seo/techniczne" },
-      ]}/>
-      <FAQSchema items={faqItems} />
-
-      <OrganizationSchema />
-
-
-      <Layout>
-        {/* Hero */}
-        <section className="relative bg-gradient-to-br from-background via-background to-primary/5 pt-24 pb-16 overflow-hidden">
-          <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="max-w-4xl"
-            >
-              <div className="flex items-center gap-2 mb-4">
-                <Link to="/seo" className="text-primary text-sm hover:underline">SEO</Link>
-                <span className="text-muted-foreground text-sm">/</span>
-                <span className="text-muted-foreground text-sm">Techniczne SEO</span>
-              </div>
-              <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
-                Techniczne SEO
-              </h1>
-              <p className="text-xl text-muted-foreground mb-8 max-w-2xl">
-                Nawet najlepsza treść nie wypozycjonuje się, jeśli Google nie może prawidłowo skrawlować i zindeksować Twojej strony. Naprawiamy fundamenty techniczne.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button asChild size="lg">
-                  <Link to="/konsultacja">Bezpłatna konsultacja</Link>
-                </Button>
-                <Button asChild variant="outline" size="lg">
-                  <Link to="/seo">Wszystkie usługi SEO</Link>
-                </Button>
-              </div>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* Features */}
-        <section className="py-20 bg-background">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-4 text-foreground">Co audytujemy i naprawiamy technicznie</h2>
-            <p className="text-muted-foreground text-center mb-12 max-w-2xl mx-auto">Błędy techniczne blokują wzrost. Identyfikujemy i usuwamy każdą przeszkodę.</p>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {features.map((f, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.1 }}
-                  className="bg-card border border-border rounded-xl p-6 hover:border-primary/50 transition-colors"
-                >
-                  <f.icon className="w-10 h-10 text-primary mb-4" />
-                  <h3 className="text-lg font-semibold text-foreground mb-2">{f.title}</h3>
-                  <p className="text-muted-foreground text-sm">{f.desc}</p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Results */}
-        <section className="py-16 bg-primary/5">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Efekty optymalizacji technicznej</h2>
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
-              {results.map((r, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.1 }}
-                  className="text-center"
-                >
-                  <div className="text-3xl md:text-4xl font-bold text-primary mb-2">{r.value}</div>
-                  <div className="text-sm text-foreground font-medium mb-1">{r.label}</div>
-                  <div className="text-xs text-muted-foreground">{r.desc}</div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* FAQ */}
-        <section className="py-20 bg-background">
-          <div className="container mx-auto px-4 max-w-3xl">
-            <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Najczęstsze pytania</h2>
-            <Accordion type="single" collapsible className="space-y-4">
-              {faqItems.map((item, i) => (
-                <AccordionItem key={i} value={`item-${i}`} className="border border-border rounded-xl px-6">
-                  <AccordionTrigger className="text-left text-foreground font-medium py-5">
-                    {item.question}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground pb-5">
-                    {item.answer}
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
-          </div>
-        </section>
-
-        {/* Related services */}
-        <section className="py-16 bg-card border-y border-border">
-          <div className="container mx-auto px-4">
-            <h2 className="text-2xl font-bold text-center mb-8 text-foreground">Powiązane usługi</h2>
-            <div className="flex flex-wrap justify-center gap-4">
-              <Link to="/seo" className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm hover:bg-primary/20 transition-colors">SEO Hub</Link>
-              <Link to="/seo/on-page" className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm hover:bg-primary/20 transition-colors">SEO On-Page</Link>
-              <Link to="/seo/off-page" className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm hover:bg-primary/20 transition-colors">SEO Off-Page</Link>
-              <Link to="/seo/audyt" className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm hover:bg-primary/20 transition-colors">Audyt SEO</Link>
-              <Link to="/uslugi/strony-internetowe" className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm hover:bg-primary/20 transition-colors">Strony Internetowe</Link>
-            </div>
-          </div>
-        </section>
-
-      {/* SEO Article Section */}
-      <section className="py-20 bg-card">
-        <div className="container mx-auto px-4">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
-            <h2 className="text-3xl font-heading font-bold mb-6">SEO techniczne — optymalizacja techniczna strony internetowej</h2>
-            <p className="text-muted-foreground mb-4">SEO techniczne to zbiór działań, które zapewniają, że wyszukiwarki mogą sprawnie indeksować i rozumieć zawartość Twojej strony. Obejmuje: szybkość ładowania strony (Core Web Vitals), poprawną strukturę URL, mapa strony XML, plik robots.txt, przekierowania 301/302, struktura nagłówków oraz HTTPS i bezpieczeństwo stron internetowych.</p>
-            <p className="text-muted-foreground mb-6">Bezpieczeństwo stron internetowych to nie tylko kwestia ochrony danych użytkowników, ale też czynnik rankingowy Google — strony bez HTTPS (SSL) są traktowane jako niezabezpieczone i mogą mieć niższe pozycje w wynikach wyszukiwania.</p>
-            <h2 className="text-3xl font-heading font-bold mb-6">Core Web Vitals i szybkość ładowania strony — kluczowe wskaźniki SEO technicznego</h2>
-            <p className="text-muted-foreground mb-4">Core Web Vitals to trzy metryki Google mierzące doświadczenie użytkownika: LCP (Largest Contentful Paint) — szybkość ładowania głównej treści, FID/INP — responsywność na interakcje, CLS — stabilność layoutu strony. Optymalizacja pod Core Web Vitals poprawia zarówno UX, jak i pozycje SEO.</p>
-            <p className="text-muted-foreground">Optymalizacja stron internetowych pod kątem SEO technicznego obejmuje też: poprawę czasu do pierwszego bajtu (TTFB), kompresję obrazów, lazy loading, minifikację kodu JS i CSS, wdrożenie CDN oraz structured data (schema markup). Monitorowanie ruchu na stronie i śledzenie Core Web Vitals przez Google Search Console to podstawa dobrego SEO technicznego.</p>
-          
-            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
-              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
-              <Link to="/seo/audyt" className="text-primary hover:underline font-medium text-sm">→ Audyt SEO</Link>
-              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
-              <Link to="/ai-seo" className="text-primary hover:underline font-medium text-sm">→ AI SEO</Link>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-
-        <ContactSection />
-      </Layout>
-    </>
-  );
+const content = {
+  "title": "SEO techniczne — audyt i optymalizacja strony",
+  "eyebrow": "FOTZ Studio · diagnoza, wdrożenie i kontrola",
+  "path": "/seo/techniczne",
+  "enquiryVariant": "audit",
+  "workAfterScope": true,
+  "contactLabel": "Omów problemy swojej strony",
+  "lead": "Google nie pokazuje ważnej oferty, strona działa wolno albo po przebudowie ubyło wejść? Sprawdzamy przyczynę, ustalamy priorytety i wdrażamy uzgodnione poprawki. SEO techniczne obejmuje dostępność treści dla wyszukiwarki, indeksowanie, szybkość i działanie strony na telefonie. Otrzymasz konkretną listę zmian, wycenę oraz potwierdzenie wykonanych testów.",
+  "summary": [
+    "Prześlij adres witryny i opisz problem lub planowaną migrację.",
+    "Ustalimy zakres audytu technicznego, potrzebne dostępy i odpowiedzialność za wdrożenie.",
+    "Po poprawkach sprawdzimy stronę oraz dane; oddzielimy naprawę od wpływu na ruch i zapytania."
+  ],
+  "scopeTitle": "Co obejmuje techniczna optymalizacja strony?",
+  "scope": [
+    {
+      "title": "Indeksowanie i dostępność",
+      "text": "Sprawdzamy odpowiedzi serwera, blokady robotów, noindex, adresy kanoniczne i mapę witryny. Łączymy odczyt strony z raportami Google Search Console, aby wskazać konkretne problemy z indeksowaniem."
+    },
+    {
+      "title": "Szybkość i Core Web Vitals",
+      "text": "Analizujemy ładowanie kluczowych podstron, obrazy, skrypty oraz stabilność układu. Rozróżniamy test laboratoryjny i dane użytkowników. Najpierw naprawiamy przeszkody odczuwalne przy korzystaniu z oferty."
+    },
+    {
+      "title": "Struktura i linkowanie",
+      "text": "Porządkujemy adresy URL, przekierowania, linki wewnętrzne i nawigację. Wybieramy właściwy adres dla powtarzających się treści, zachowując dojście do usług, produktów i kontaktu."
+    },
+    {
+      "title": "Renderowanie i urządzenia mobilne",
+      "text": "Kontrolujemy, czy tekst, nagłówki i odnośniki są dostępne w HTML oraz po uruchomieniu JavaScript. Na telefonie sprawdzamy menu, przyciski, formularz i elementy zasłaniające treść."
+    },
+    {
+      "title": "Dane strukturalne i metadane",
+      "text": "Weryfikujemy znaczniki title, meta description i schema.org. Dane muszą zgadzać się z widoczną ofertą. Poprawny zapis nie jest obietnicą rozszerzonego wyniku w Google."
+    },
+    {
+      "title": "Wdrożenie i odbiór",
+      "text": "Przygotowujemy zadania dla programisty albo wykonujemy uzgodnione zmiany. Po publikacji sprawdzamy adresy, kontakt i działanie najważniejszych szablonów. Raport zawiera dowody, datę i ograniczenia kontroli."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Czym jest SEO techniczne i kiedy go potrzebujesz?",
+      "text": "SEO techniczne to praca nad sposobem, w jaki strona udostępnia treść wyszukiwarce i użytkownikowi. Dotyczy między innymi serwera, kodu, struktury serwisu oraz ustawień indeksowania. Przydaje się po zmianie domeny, uruchomieniu sklepu, przebudowie nawigacji albo wtedy, gdy ważne strony znikają z wyników wyszukiwania. Może też ujawnić proste przeszkody: błędny link z menu, nieczytelny przycisk czy przypadkową blokadę oferty. Zaczynamy od określenia problemu biznesowego i adresów, które powinny pomagać w pozyskiwaniu klientów. Dzięki temu audyt nie kończy się listą ostrzeżeń bez wskazania, co zrobić jako pierwsze."
+    },
+    {
+      "title": "Audyt techniczny SEO: co otrzymasz?",
+      "text": "Audyt techniczny SEO opisuje stan witryny i plan napraw. Każde istotne zalecenie wiążemy z adresem lub szablonem, sposobem odtworzenia problemu i przewidywanym zakresem pracy. Oddzielamy usterki blokujące dostęp do oferty od drobnych usprawnień. Otrzymasz priorytety, zależności, wskazanie osoby odpowiedzialnej oraz kryteria odbioru. Jeśli potrzebna jest zmiana hostingu, motywu lub systemu CMS, przedstawiamy powód i koszty przed decyzją. Sam raport nie oznacza wdrożenia. W zamówieniu jasno określamy, czy FOTZ przygotowuje diagnozę, realizuje poprawki, czy sprawdza pracę Twojego zespołu.",
+      "href": "/seo/audyt",
+      "link": "Poznaj pełny zakres audytu SEO"
+    },
+    {
+      "title": "Google Search Console: od komunikatu do przyczyny",
+      "text": "Google Search Console pomaga ustalić, które adresy Google zna i jak przedstawia witrynę w wyszukiwarce. Raport indeksowania czytamy razem z inspekcją konkretnego URL, mapą witryny i aktualną odpowiedzią serwera. Status „Strona zeskanowana, ale jeszcze nie zindeksowana” nie wskazuje jednej uniwersalnej usterki. Sprawdzamy jakość oraz odrębność treści, powiązania między podstronami i deklarowany adres kanoniczny. Nie każda wykluczona strona wymaga naprawy: poprawnie przekierowany stary adres powinien ustąpić miejsca nowemu. Najpierw ustalamy, co ma być widoczne, dopiero potem dobieramy działanie. Zgłoszenie URL do sprawdzenia nie potwierdza jego dodania do indeksu."
+    },
+    {
+      "title": "Crawling i indeksowanie — dwa różne etapy",
+      "text": "Crawlowanie to pobieranie zasobów przez roboty wyszukiwarek. Indeksowanie polega na analizie informacji i ewentualnym uwzględnieniu strony w indeksie. Dostępny adres z odpowiedzią HTTP 200 nadal może nie pojawić się w wynikach Google. Sprawdzamy więc zarówno możliwość pobrania, jak i treść, jej przydatność oraz sygnały wskazujące wersję docelową. Przy dużych sklepach analizujemy filtry, parametry, duplikaty i wydajność serwera, które wpływają na wykorzystanie zasobów crawlowania. Dla niewielkiej strony firmowej ważniejsze może być po prostu poprawne podlinkowanie kilku ofert. Nie traktujemy „crawl budget” jako domyślnej diagnozy każdego problemu."
+    },
+    {
+      "title": "Plik robots.txt, noindex i mapa strony XML",
+      "text": "Robots.txt steruje dostępem robotów do zasobów; nie jest pewnym sposobem usunięcia adresu z wyników wyszukiwania. Gdy strona ma być wyłączona z indeksu, dobieramy odpowiednie rozwiązanie, na przykład dyrektywę noindex na stronie dostępnej dla robota. Treści prywatne wymagają kontroli dostępu. Mapa strony XML powinna wskazywać ważne, docelowe adresy, a nie błędy, przekierowania i warianty wykluczone z indeksowania. Kontrolujemy zgodność tych ustawień ze sobą, żeby sitemap nie proponowała strony, którą jednocześnie blokuje konfiguracja. Przed publikacją sprawdzamy również, czy po testach nie została blokada całego serwisu.",
+      "href": "https://developers.google.com/search/docs/crawling-indexing/robots/intro",
+      "link": "Zobacz zasady robots.txt w dokumentacji Google"
+    },
+    {
+      "title": "Adresy URL, canonical i duplikacja treści",
+      "text": "Jedna oferta może być dostępna pod kilkoma adresami: z parametrami, różnymi końcówkami lub dawną strukturą katalogów. Ustalamy, które wersje są potrzebne odbiorcom, a które powinny prowadzić do wspólnego celu. Tag canonical wskazuje preferowany adres dla podobnych treści, lecz nie zastępuje przekierowania, gdy strona została trwale przeniesiona. Duplikacja treści wymaga oceny kontekstu; nie usuwamy automatycznie każdej podobnej podstrony. Oferta lokalna może mieć osobny sens, jeśli opisuje rzeczywisty zakres obsługi. Gdy różnica sprowadza się do nazwy miasta, analizujemy dane i możliwość połączenia informacji. Docelowe adresy muszą być spójne w nawigacji, sitemap i metadanych."
+    },
+    {
+      "title": "Przekierowania, błędy 404 i migracja serwisu",
+      "text": "Przy zmianie adresów przygotowujemy mapę: stary URL i odpowiadająca mu treść docelowa. Sprawdzamy status przekierowania, liczbę przejść oraz zachowanie potrzebnych parametrów kampanii. Nie wysyłamy wszystkich usuniętych podstron na stronę główną, jeśli nie odpowiada ona na ich temat. Poprawiamy również linki wewnętrzne, aby od razu prowadziły do właściwego miejsca. Brakujący materiał powinien mieć prawidłową odpowiedź 404 lub 410, kiedy nie ma użytecznego zamiennika. Migrację dzielimy na przygotowanie, publikację i kontrolę po zmianie. Lista obejmuje też obrazy, formularze oraz adresy ważne w reklamach i wiadomościach wysyłanych klientom."
+    },
+    {
+      "title": "Core Web Vitals i szybkość ładowania strony",
+      "text": "Core Web Vitals opisują ładowanie głównej treści (LCP), reakcję na interakcję (INP) i stabilność układu (CLS). Analizujemy zarówno dane rzeczywistych użytkowników, jeśli są dostępne, jak i powtarzalne testy laboratoryjne. Google PageSpeed Insights pomaga znaleźć przyczyny opóźnień, ale pojedynczy wynik punktowy nie opisuje całego doświadczenia klienta. Zbyt duże zdjęcia, ciężki film w pierwszym ekranie lub dodatkowe skrypty mogą utrudnić otwarcie oferty. Dobieramy rozmiary obrazów, sposób ich ładowania, zasady cache i kolejność zasobów do konkretnej strony. Optymalizacja szybkości powinna zachować czytelność, funkcje oraz jakość materiałów. Nie obiecujemy każdej witrynie wyniku 100/100.",
+      "href": "https://developers.google.com/search/docs/appearance/core-web-vitals",
+      "link": "Sprawdź opis wskaźników Core Web Vitals"
+    },
+    {
+      "title": "JavaScript, HTML i dostępność treści dla Google",
+      "text": "W aplikacjach opartych na JavaScript sprawdzamy, co serwer zwraca przed uruchomieniem skryptów oraz co pojawia się po ich wykonaniu. Tytuł, główny opis, linki i dane strukturalne powinny przedstawiać tę samą ofertę. W zależności od technologii rozważamy renderowanie po stronie serwera lub generowanie statycznych podstron. Kontrolujemy też błędy ładowania zasobów i różnice między pierwszym widokiem a działającą aplikacją. Techniczna optymalizacja SEO nie polega na pokazywaniu robotom innej obietnicy niż klientowi. Celem jest rzetelna, dostępna treść i możliwość przejścia do dalszych informacji. Rozwiązanie wybieramy po sprawdzeniu istniejącego systemu."
+    },
+    {
+      "title": "Struktura strony i linkowanie wewnętrzne",
+      "text": "Architektura informacji powinna prowadzić od ogólnego problemu do właściwej usługi, realizacji i kontaktu. Analizujemy menu, ścieżki nawigacji, powiązania między treściami i podstrony pozbawione odnośników. Opisowy tekst linku pomaga użytkownikowi przewidzieć, dokąd przejdzie. W sklepie ważne są kategorie, produkty, paginacja oraz użyteczność filtrów. Na stronie usługowej istotny jest zrozumiały zakres i dostępna wycena. Linkowanie wewnętrzne poprawiamy w kontekście potrzeb odwiedzającego, bez mechanicznego dodawania tej samej listy fraz do każdej stopki. Po zmianach kontrolujemy, czy wszystkie potrzebne informacje pozostają osiągalne i czy stara nawigacja nie kieruje do przekierowań."
+    },
+    {
+      "title": "Wersja mobilna, UX i droga do zapytania",
+      "text": "Techniczne SEO obejmuje również sprawdzenie, czy da się wygodnie skorzystać z oferty. Kontrolujemy szerokość tekstu, stabilność zdjęć, menu, warstwy zasłaniające stronę oraz formularz na telefonie. Czytelne nagłówki, etykiety pól i obsługa klawiatury pomagają większej liczbie osób dotrzeć do informacji. Test obejmuje komunikaty błędów i potwierdzenie przyjęcia zgłoszenia. Otwarcie formularza nie jest wysłanym zapytaniem, a kliknięcie telefonu nie potwierdza rozmowy. Uzgadniamy sposób weryfikacji przekazania wiadomości do osoby obsługującej klientów. Lepsza widoczność w wyszukiwarce ma sens wtedy, gdy odbiorca może wykonać następny krok."
+    },
+    {
+      "title": "Meta tagi, nagłówki i dane strukturalne",
+      "text": "Tytuł strony, meta description oraz nagłówki powinny opisywać jej rzeczywisty temat. Usuwamy puste lub powtarzające się oznaczenia, ale nie zastępujemy nimi brakującej treści oferty. Dane strukturalne schema.org dobieramy do informacji widocznych na stronie. Sprawdzamy poprawność zapisu i aktualność danych firmy; nie dopisujemy ocen, cen ani certyfikatów bez potwierdzenia. Poprawna walidacja nie daje gwarancji rich results ani zwiększenia liczby kliknięć. Techniczne uporządkowanie ułatwia interpretację treści, natomiast to zakres usługi i dowody wykonanej pracy pomagają klientowi ocenić dopasowanie. W razie braków treść planujemy jako osobny element współpracy.",
+      "href": "/content-marketing/strategia",
+      "link": "Zobacz, jak planujemy treści dla firmy"
+    },
+    {
+      "title": "HTTPS, serwer i bezpieczne wdrożenie",
+      "text": "Kontrolujemy działanie certyfikatu HTTPS, odwołania do niezabezpieczonych zasobów oraz odpowiedzi serwera. Sprawdzamy, czy zmiany domeny i protokołu prowadzą do jednej właściwej wersji witryny. Problemy z hostingiem, przeciążenie lub błędy aplikacji mogą utrudniać korzystanie z podstron i ich pobieranie. Przed większą zmianą ustalamy kopię, środowisko testowe oraz sposób przywrócenia poprzedniej wersji. Zakres audytu SEO nie zastępuje pełnego testu bezpieczeństwa. Jeśli problem dotyczy danych klientów lub uprawnień, określamy osobną odpowiedzialność i potrzebny zakres specjalistycznej kontroli. Nie prosimy o przesyłanie haseł w formularzu."
+    },
+    {
+      "title": "Ile kosztuje SEO techniczne i co wpływa na termin?",
+      "text": "Wycenę przygotowujemy po poznaniu technologii, liczby szablonów, skali problemów i dostępów do serwisu. Kilka błędnych linków wymaga innego nakładu pracy niż migracja dużego sklepu internetowego. Rozdzielamy koszt diagnozy, wdrożeń oraz kontroli po publikacji. W ofercie wskazujemy zależności od administratora, płatnych narzędzi lub zmian hostingu. Ustalamy również, kto akceptuje zakres i kiedy można bezpiecznie opublikować poprawki. Nie podajemy sztywnego terminu poprawy pozycji — Google potrzebuje czasu na ponowne przetworzenie stron. Możemy natomiast uzgodnić konkretne zadania, terminy realizacji oraz warunki ich odbioru."
+    },
+    {
+      "title": "Jak sprawdzamy efekty optymalizacji technicznej?",
+      "text": "Najpierw potwierdzamy usunięcie usterki: poprawną odpowiedź URL, odczyt treści, działające przekierowanie albo formularz. Następnie obserwujemy dostępne dane o indeksowaniu, ruchu organicznym i kontaktach. Porównujemy sensowne okresy, zaznaczając sezonowość, inne publikacje oraz kampanie reklamowe. Wzrost liczby zaindeksowanych adresów sam w sobie nie oznacza większej sprzedaży; po scaleniu duplikatów liczba ta może się zmniejszyć zgodnie z planem. Raport ma pokazać wykonane zmiany, to, co udało się zmierzyć, i kwestie wymagające dalszej obserwacji. Realizacje FOTZ widoczne na stronie pokazują nasze materiały i projekty, nie stanowią automatycznie dowodu wyniku SEO.",
+      "href": "/realizacje",
+      "link": "Poznaj realizacje FOTZ Studio"
+    }
+  ],
+  "faqTitle": "Pytania przed rozpoczęciem prac technicznych",
+  "faqs": [
+    {
+      "question": "Czy SEO techniczne wystarczy do pozycjonowania strony?",
+      "answer": "Nie zawsze. Usunięcie blokady może umożliwić wyszukiwarce dostęp do oferty, ale widoczność zależy także od treści, dopasowania do zapytania i konkurencji. Techniczna optymalizacja strony jest częścią szerszej pracy. Jeśli problem dotyczy oferty lub jej opisu, wskażemy go w diagnozie."
+    },
+    {
+      "question": "Czy wykonujecie poprawki, czy tylko audyt?",
+      "answer": "Możemy przygotować raport dla Twojego programisty albo wycenić wdrożenie uzgodnionych zmian. Przed rozpoczęciem określamy technologię, dostępy, odpowiedzialność i sposób odbioru. Nie każda rekomendacja wymaga przebudowy całej witryny."
+    },
+    {
+      "question": "Czy zajmujecie się WordPressem i sklepami internetowymi?",
+      "answer": "Zakres ustalamy po sprawdzeniu konkretnego systemu, motywu oraz integracji. Ocenimy, które problemy da się naprawić konfiguracją, a które wymagają zmiany kodu lub udziału dostawcy. Sklep wymaga dodatkowo kontroli kategorii, filtrów, wariantów produktów i procesu zamówienia."
+    },
+    {
+      "question": "Czy gwarantujecie indeksację lub konkretną pozycję w Google?",
+      "answer": "Nie. Potwierdzamy wykonanie uzgodnionych prac i stan strony w chwili testu. O włączeniu adresu do indeksu oraz jego pozycji decyduje wyszukiwarka. Wynik audytu, punktacja narzędzia lub zgłoszenie strony nie są gwarancją ruchu ani zapytań."
+    },
+    {
+      "question": "Czy każdą stronę niezindeksowaną trzeba naprawić?",
+      "answer": "Nie. Konto klienta, wyniki wewnętrznej wyszukiwarki czy celowo wycofany adres mogą pozostawać poza indeksem. Sprawdzamy przede wszystkim ważne oferty i materiały, które powinny być publicznie dostępne. Decyzja wynika z przeznaczenia konkretnej podstrony."
+    },
+    {
+      "question": "Jakich dostępów potrzebujecie?",
+      "answer": "Na początek wystarczy publiczny adres i opis objawów. Do dokładniejszej diagnozy przydaje się dostęp do Google Search Console oraz uzgodnionych danych analitycznych. Dostęp do kodu, CMS lub hostingu ustalamy zależnie od zakresu. Uprawnienia nadajesz przez zaproszenie, bez podawania hasła w zgłoszeniu."
+    },
+    {
+      "question": "Czy optymalizacja pomaga w obecności w odpowiedziach AI?",
+      "answer": "Czytelny HTML, spójne dane oraz dostępne treści ułatwiają systemom odczyt strony. Nie dają jednak gwarancji cytowania przez konkretną usługę AI. W ofercie oddzielamy wykonane zmiany od potwierdzonych wzmianek, wejść i zapytań klientów."
+    },
+    {
+      "question": "Co wysłać, żeby otrzymać wycenę?",
+      "answer": "Adres strony, krótki opis problemu, używany system i informację o ostatnich zmianach. Jeśli planujesz migrację, podaj jej zakres i termin. Na tej podstawie ustalimy następny krok: diagnozę, audyt techniczny lub konkretny pakiet poprawek."
+    }
+  ],
+  "contactDescription": "Prześlij adres strony, opisz objawy i ostatnie zmiany. Ustalimy, co sprawdzić najpierw, kto wdroży poprawki i jak potwierdzimy ich działanie."
 };
 
-export default SEOTechniczne;
+export default function SEOTechniczne() {
+  return <>
+    <SEOHead title="SEO techniczne — audyt i optymalizacja | FOTZ Studio" description="SEO techniczne: sprawdzimy indeksowanie, szybkość, przekierowania i działanie strony. Poznaj zakres audytu, wdrożeń oraz wyceń poprawki z FOTZ Studio." canonical="https://www.fotz-studio.pl/seo/techniczne" />
+    <ServiceEditorial {...content} />
+  </>;
+}
