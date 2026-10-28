@@ -232,7 +232,6 @@ const ProdukcjaFilmowPoznan = lazy(() => import("./pages/ProdukcjaFilmowPoznan")
 const SpotyReklamowe = lazy(() => import("./pages/SpotyReklamowe"));
 const Wizualizacje3D = lazy(() => import("./pages/Wizualizacje3D"));
 const KompleksowaObsluga = lazy(() => import("./pages/KompleksowaObsluga"));
-const StudioPodcastowe = lazy(() => import("./pages/StudioPodcastowe"));
 
 // Ads pages
 const FacebookAds = lazy(() => import("./pages/FacebookAds"));
@@ -2632,7 +2631,6 @@ const App = ({ Router = BrowserRouter, client = queryClient, initialPage }: AppP
                 <Route path="/uslugi/produkcja-video" element={<SpotyReklamowe />} />
                 <Route path="/uslugi/fotografia" element={<FotografPoznan />} />
                 <Route path="/uslugi/fotografia-z-drona" element={<FotografiaZDrona />} />
-                <Route path="/uslugi/studio-podcastowe" element={<StudioPodcastowe />} />
                 <Route path="/uslugi/produkcja-filmow" element={<ProdukcjaFilmowPoznan />} />
 
                 {/* SEO cluster */}

@@ -34,7 +34,7 @@ const creativeServices = [
   {
     icon: Video,
     title: "Produkcja wideo i spoty reklamowe",
-    description: "Filmy korporacyjne, spoty reklamowe, materiały na social media i reels. Studio podcastowe i pełen pipeline postprodukcji — od scenariusza po gotowy materiał.",
+    description: "Filmy korporacyjne, spoty reklamowe, materiały na social media i reels. Produkcja i postprodukcja — od scenariusza po gotowy materiał.",
     link: "/uslugi/produkcja-video"
   },
   {

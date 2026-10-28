@@ -10,7 +10,7 @@ export function getWorkCollection(pathname) {
   if (/instytuc|event|wydarzen/.test(path)) return 'events';
   if (/produktow|branding|graficzn|identyfikac|ecommerce|e-commerce/.test(path)) return 'product';
   if (/fotograf|zdjeci|zdjec/.test(path)) return 'photo';
-  if (/produkcja|video|wideo|film|dron|podcast/.test(path)) return 'production';
+  if (/produkcja|video|wideo|film|dron/.test(path)) return 'production';
   if (/social-media|instagram|facebook|tiktok|rolk|content-marketing/.test(path)) return 'social';
   if (/stron|landing-page|(?:^|[/-])seo(?:[/-]|$)/.test(path)) return 'web';
   return 'studio';

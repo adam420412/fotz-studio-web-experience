@@ -367,19 +367,19 @@ const BlogPodcastMarketing = () => {
                     <Mic2 className="w-8 h-8 text-yellow-400 flex-shrink-0" />
                     <div>
                       <h3 className="text-2xl font-bold text-white mb-4">
-                        Chcesz zacząć z profesjonalnym podcastem?
+                        Szukasz pomysłu na treści dla swojej firmy?
                       </h3>
                       <p className="text-gray-300 mb-6">
-                        Fotz Studio specjalizuje się w produkcji podcastów firmowych. Od koncepcji, przez nagranie w profesjonalnym studiu, edycję, po dystrybucję - wszystko w jednym miejscu.
+                        Oferta wynajmu studia podcastowego FOTZ Studio została wycofana. Jeśli planujesz komunikację marki, sprawdź naszą aktualną ofertę strategii treści.
                       </p>
                       <p className="text-gray-300 mb-6">
-                        Nagrany podcast to nie tylko treści audio. To transkrypcje do bloga, grafiki do social media, segmenty do YouTube - pełny content marketing system.
+                        Dobór tematów, formatów i kanałów publikacji zaczynamy od odbiorców oraz celów firmy.
                       </p>
                       <Link
-                        to="/uslugi/studio-podcastowe"
+                        to="/content-marketing/strategia"
                         className="inline-block bg-yellow-400 text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
                       >
-                        Dowiedz się więcej o naszych usługach podcastowych
+                        Zobacz ofertę strategii treści
                       </Link>
                     </div>
                   </div>

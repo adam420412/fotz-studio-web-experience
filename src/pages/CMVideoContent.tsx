@@ -28,7 +28,7 @@ const CMVideoContent = () => {
   const faqItems = [
     { question: "Ile kosztuje produkcja wideo marketingowego?", answer: "Ceny zależą od formatu i złożoności. Prosty reel: 500-1500 zł. Explainer video (animowany, 2 min): 3000-8000 zł. Profesjonalne wideo wizerunkowe (live action, 3-5 min): 5000-15000 zł. Wycenę przygotowujemy bezpłatnie po briefie." },
     { question: "Jak długo trwa produkcja wideo?", answer: "Reelsy i krótkie formaty: 3-7 dni. Explainer video animowany: 3-6 tygodni (scenariusz, animacja, lektor). Profesjonalne wideo live action: 2-4 tygodnie (pre-produkcja, nagranie, montaż). Harmonogram ustalamy na etapie briefu." },
-    { question: "Czy przyjedziecie na nagranie do Poznania i okolic?", answer: "Tak, obsługujemy nagrania na terenie Poznania, Wielkopolski i całej Polski. Dysponujemy sprzętem do nagrań mobilnych. Możemy też zorganizować nagranie w naszym studiu w centrum Poznania." },
+    { question: "Czy przyjedziecie na nagranie do Poznania i okolic?", answer: "Tak, obsługujemy nagrania na terenie Poznania, Wielkopolski i całej Polski. Dysponujemy sprzętem do nagrań mobilnych. Miejsce i warunki realizacji ustalamy przed wyceną." },
     { question: "Na jakie platformy optymalizujecie wideo?", answer: "Tworzymy wideo w formatach zoptymalizowanych pod każdą platformę: Instagram/TikTok (9:16, do 90s dla reelsów), YouTube (16:9, różne długości), LinkedIn (1:1 lub 16:9), Facebook (1:1 lub 16:9). Jeden projekt → wiele formatów." },
   ];
 
