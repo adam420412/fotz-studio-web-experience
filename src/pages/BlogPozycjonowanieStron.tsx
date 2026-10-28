@@ -102,8 +102,8 @@ export default function BlogPozycjonowanieStron() {
         <div className="container-wide">
           <div className="max-w-5xl mx-auto">
             <img loading="lazy"
-              src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?q=80&w=2070"
-              alt="Pozycjonowanie stron internetowych - SEO analytics"
+              src="/work/fotz-work-1200.webp"
+              alt="Praca przy komputerze — zdjęcie z sesji FOTZ"
               className="w-full rounded-2xl aspect-video object-cover"
             />
           </div>

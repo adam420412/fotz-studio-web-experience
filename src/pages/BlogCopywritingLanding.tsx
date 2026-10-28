@@ -98,8 +98,8 @@ export default function BlogCopywritingLanding() {
         <div className="container-wide">
           <div className="max-w-5xl mx-auto">
             <img loading="lazy" 
-              src="https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=2073"
-              alt="Copywriting dla landing pages"
+              src="/work/fotz-presentation-1200.webp"
+              alt="Prezentacja projektu na ekranie — zdjęcie z sesji FOTZ"
               className="w-full rounded-2xl aspect-video object-cover"
             />
           </div>

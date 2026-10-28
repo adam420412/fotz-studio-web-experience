@@ -97,8 +97,8 @@ export default function BlogBudzetMarketingowy() {
         <div className="container-wide">
           <div className="max-w-5xl mx-auto">
             <img loading="lazy" 
-              src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=2072"
-              alt="Planowanie budżetu marketingowego"
+              src="/work/fotz-work-1200.webp"
+              alt="Praca przy komputerze — zdjęcie z sesji FOTZ"
               className="w-full rounded-2xl aspect-video object-cover"
             />
           </div>

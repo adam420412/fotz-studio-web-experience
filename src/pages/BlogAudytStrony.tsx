@@ -143,8 +143,8 @@ export default function BlogAudytStrony() {
 
                 <div className="aspect-video rounded-2xl overflow-hidden mb-8">
                   <img loading="lazy" 
-                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2015" 
-                    alt="Audyt strony internetowej — SEO, techniczne problemy i UX" 
+                    src="/work/fotz-presentation-1200.webp"
+                    alt="Prezentacja projektu na ekranie — zdjęcie z sesji FOTZ"
                     className="w-full h-full object-cover"
                   />
                 </div>

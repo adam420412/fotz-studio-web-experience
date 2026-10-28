@@ -14,19 +14,18 @@ const sample = articles[0];
 const path = `/blog/${sample.slug}`;
 const images = JSON.parse(fs.readFileSync(new URL('../src/data/blog-images.json', import.meta.url)));
 
-test('every public CMS cover has real responsive files and later CMS changes fall back to the new source', () => {
+test('every public CMS cover uses reviewed local photos even when the CMS changes', () => {
   for (const article of articles.filter(article => !getBlogMetadata(article).noIndex)) {
     const image = images[article.slug];
-    assert.equal(image.source, article.hero_image_url);
     assert.equal(image.variants.length, 3);
     for (const variant of image.variants) {
       assert.equal(fs.statSync(new URL(`../public${variant.src}`, import.meta.url)).size, variant.bytes);
       assert.ok(variant.width > 0 && variant.height > 0);
     }
     assert.match(getBlogImage(article, images).srcSet, /480w/);
-    assert.deepEqual(getBlogImage({...article, hero_image_url:'https://example.com/new.jpg'}, images), {src:'https://example.com/new.jpg'});
+    assert.deepEqual(getBlogImage({...article, hero_image_url:'https://example.com/new.jpg'}, images), getBlogImage(article, images));
   }
-  assert.deepEqual(getBlogImage({slug:'new',hero_image_url:'https://example.com/new.jpg'},images), {src:'https://example.com/new.jpg'});
+  assert.match(getBlogImage({slug:'new',hero_image_url:'https://example.com/new.jpg'},images).src, /^\/work\//);
 });
 
 test('every public CMS snapshot preserves rendered content and metadata, exposing only page fields', () => {

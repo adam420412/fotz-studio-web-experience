@@ -136,8 +136,8 @@ const BlogSocialMediaDlaFirm = () => {
 
                 <div className="aspect-video rounded-2xl overflow-hidden mb-8">
                   <img loading="lazy"
-                    src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=2015"
-                    alt="Social media dla firm - strategie i porady 2025"
+                    src="/work/concert-1200.webp"
+                    alt="Czarno-białe zdjęcie Dawida Podsiadły na wybiegu sceny przed publicznością"
                     className="w-full h-full object-cover"
                   />
                 </div>

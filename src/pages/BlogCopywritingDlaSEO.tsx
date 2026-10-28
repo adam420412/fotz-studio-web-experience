@@ -137,7 +137,7 @@ const BlogCopywritingDlaSEO = () => {
         title="Copywriting SEO - jak pisać teksty zoptymalizowane pod Google? 2025"
         description="Kompletny poradnik do SEO copywriting - wszystko co musisz wiedzieć o pisaniu tekstów optymalizowanych pod wyszukiwarki"
         url="https://www.fotz-studio.pl/blog/copywriting-seo-poradnik"
-        image="https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=2015"
+        image="/work/fotz-work-1200.webp"
         datePublished="2025-04-12"
         dateModified="2025-04-12"
         author="Fotz Studio"
@@ -204,8 +204,8 @@ const BlogCopywritingDlaSEO = () => {
 
                 <div className="aspect-video rounded-2xl overflow-hidden mb-8">
                   <img loading="lazy"
-                    src="https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=2015"
-                    alt="Copywriting SEO - jak pisać teksty zoptymalizowane pod Google"
+                    src="/work/fotz-work-1200.webp"
+                    alt="Praca przy komputerze — zdjęcie z sesji FOTZ"
                     className="w-full h-full object-cover"
                   />
                 </div>

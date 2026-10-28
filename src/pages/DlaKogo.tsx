@@ -1,3 +1,4 @@
+import { getOwnPhoto } from "@/lib/own-photos.mjs";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Building2, ShoppingBag, Crown, CalendarDays, ArrowRight, CheckCircle } from "lucide-react";
@@ -22,7 +23,7 @@ const audiences = [
       "Budowanie rozpoznawalności w regionie",
       "Współpraca z lokalnymi mediami",
     ],
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070",
+    image: "/work/fotz-work-1200.webp",
     href: "/dla-kogo/firmy-lokalne",
   },
   {
@@ -38,7 +39,7 @@ const audiences = [
       "Automatyzacja marketingu",
       "Remarketing i cross-selling",
     ],
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2070",
+    image: "/work/fotz-work-1200.webp",
     href: "/dla-kogo/ecommerce",
   },
   {
@@ -54,7 +55,7 @@ const audiences = [
       "Influencer marketing",
       "PR i komunikacja",
     ],
-    image: "https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?q=80&w=2070",
+    image: "/work/fotz-work-1200.webp",
     href: "/dla-kogo/marki-premium",
   },
   {
@@ -70,7 +71,7 @@ const audiences = [
       "Kampanie sprzedaży biletów",
       "Social media dla eventów",
     ],
-    image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=2070",
+    image: "/work/fotz-work-1200.webp",
     href: "/dla-kogo/instytucje",
   },
 ];
@@ -169,8 +170,8 @@ export default function DlaKogo() {
                 )}
               >
                 <img loading="lazy"
-                  src={audience.image}
-                  alt={audience.title}
+                  {...getOwnPhoto(audience.title)}
+                  alt={getOwnPhoto(audience.title).alt}
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/50 to-transparent" />

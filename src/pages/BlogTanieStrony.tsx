@@ -159,8 +159,8 @@ export default function BlogTanieStrony() {
                 <div className="aspect-video rounded-2xl overflow-hidden mb-8">
                   <img
                     loading="eager"
-                    src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=2070"
-                    alt="Tanie strony internetowe — co warto wiedzieć"
+                    src="/work/fotz-presentation-1200.webp"
+                    alt="Prezentacja projektu na ekranie — zdjęcie z sesji FOTZ"
                     className="w-full h-full object-cover"
                   />
                 </div>

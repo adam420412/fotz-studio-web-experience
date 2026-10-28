@@ -1,3 +1,4 @@
+import { getOwnPhoto } from "@/lib/own-photos.mjs";
 import { motion } from "framer-motion";
 import { useState, useMemo } from "react";
 import { Link } from "react-router-dom";
@@ -44,7 +45,7 @@ const posts: BlogPost[] = [
     author: "Zespół FOTZ",
     date: "10 mar 2025",
     readTime: "18 min",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015",
+    image: "/work/stadium-1200.webp",
     featured: true,
   },
   {
@@ -56,7 +57,7 @@ const posts: BlogPost[] = [
     author: "Zespół FOTZ",
     date: "10 mar 2025",
     readTime: "22 min",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070",
+    image: "/work/fotz-presentation-1200.webp",
     featured: false,
   },
   {
@@ -68,7 +69,7 @@ const posts: BlogPost[] = [
     author: "Zespół FOTZ",
     date: "10 mar 2025",
     readTime: "16 min",
-    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=2072",
+    image: "/work/fotz-presentation-1200.webp",
     featured: false,
   },
   {
@@ -80,7 +81,7 @@ const posts: BlogPost[] = [
     author: "Zespół FOTZ",
     date: "10 mar 2025",
     readTime: "15 min",
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070",
+    image: "/work/fotz-work-1200.webp",
     featured: false,
   },
   {
@@ -92,7 +93,7 @@ const posts: BlogPost[] = [
     author: "Zespół FOTZ",
     date: "10 mar 2025",
     readTime: "14 min",
-    image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?q=80&w=2071",
+    image: "/work/fotz-presentation-1200.webp",
     featured: false,
   },
   {
@@ -104,7 +105,7 @@ const posts: BlogPost[] = [
     author: "Zespół FOTZ",
     date: "10 mar 2025",
     readTime: "16 min",
-    image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=2073",
+    image: "/work/concert-1200.webp",
     featured: false,
   },
   {
@@ -116,7 +117,7 @@ const posts: BlogPost[] = [
     author: "Zespół FOTZ",
     date: "14 lut 2025",
     readTime: "18 min",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2070",
+    image: "/work/product-1200.webp",
     featured: false,
   },
   {
@@ -128,7 +129,7 @@ const posts: BlogPost[] = [
     author: "Zespół FOTZ",
     date: "14 lut 2025",
     readTime: "20 min",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015",
+    image: "/work/backstage-1200.webp",
     featured: false,
   },
   {
@@ -140,7 +141,7 @@ const posts: BlogPost[] = [
     author: "Zespół FOTZ",
     date: "14 lut 2025",
     readTime: "19 min",
-    image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?q=80&w=2070",
+    image: "/work/fotz-work-1200.webp",
     featured: false,
   },
   {
@@ -152,7 +153,7 @@ const posts: BlogPost[] = [
     author: "Zespół FOTZ",
     date: "14 lut 2025",
     readTime: "17 min",
-    image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2074",
+    image: "/work/stadium-1200.webp",
     featured: false,
   },
   {
@@ -164,7 +165,7 @@ const posts: BlogPost[] = [
     author: "Zespół FOTZ",
     date: "14 lut 2025",
     readTime: "14 min",
-    image: "https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?q=80&w=2074",
+    image: "/work/bar-1200.webp",
     featured: false,
   },
   {
@@ -176,7 +177,7 @@ const posts: BlogPost[] = [
     author: "Zespół FOTZ",
     date: "2 lip 2026",
     readTime: "8 min",
-    image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=2074",
+    image: "/work/stadium-1200.webp",
     featured: false,
   },
   {
@@ -188,7 +189,7 @@ const posts: BlogPost[] = [
     author: "Zespół FOTZ",
     date: "2 lip 2026",
     readTime: "7 min",
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070",
+    image: "/work/concert-1200.webp",
     featured: false,
   },
   {
@@ -200,7 +201,7 @@ const posts: BlogPost[] = [
     author: "Zespół FOTZ",
     date: "2 lip 2026",
     readTime: "8 min",
-    image: "https://images.unsplash.com/photo-1519501025264-65ba15a82390?q=80&w=2070",
+    image: "/work/concert-1200.webp",
     featured: false,
   },
   {
@@ -212,7 +213,7 @@ const posts: BlogPost[] = [
     author: "Zespół FOTZ",
     date: "2 lip 2026",
     readTime: "7 min",
-    image: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=2074",
+    image: "/work/stadium-1200.webp",
     featured: false,
   },
   {
@@ -224,7 +225,7 @@ const posts: BlogPost[] = [
     author: "Zespół FOTZ",
     date: "3 lip 2026",
     readTime: "6 min",
-    image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=2070",
+    image: "/work/concert-1200.webp",
     featured: false,
   },
   {
@@ -236,7 +237,7 @@ const posts: BlogPost[] = [
     author: "Zespół FOTZ",
     date: "3 lip 2026",
     readTime: "7 min",
-    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=2074",
+    image: "/work/concert-1200.webp",
     featured: false,
   },
   {
@@ -248,7 +249,7 @@ const posts: BlogPost[] = [
     author: "Zespół FOTZ",
     date: "5 lip 2026",
     readTime: "7 min",
-    image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=2070",
+    image: "/work/backstage-1200.webp",
     featured: false,
   },
   {
@@ -260,7 +261,7 @@ const posts: BlogPost[] = [
     author: "Zespół FOTZ",
     date: "5 lip 2026",
     readTime: "7 min",
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070",
+    image: "/work/stadium-1200.webp",
     featured: false,
   },
   {
@@ -272,7 +273,7 @@ const posts: BlogPost[] = [
     author: "Zespół FOTZ",
     date: "5 lip 2026",
     readTime: "8 min",
-    image: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=2074",
+    image: "/work/stadium-1200.webp",
     featured: false,
   },
   {
@@ -284,7 +285,7 @@ const posts: BlogPost[] = [
     author: "Zespół FOTZ",
     date: "5 lip 2026",
     readTime: "8 min",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015",
+    image: "/work/stadium-1200.webp",
     featured: false,
   },
   {
@@ -296,7 +297,7 @@ const posts: BlogPost[] = [
     author: "Zespół FOTZ",
     date: "5 lip 2026",
     readTime: "7 min",
-    image: "https://images.unsplash.com/photo-1554048612-b6a482bc67e5?q=80&w=2070",
+    image: "/work/stadium-1200.webp",
     featured: false,
   },
   {
@@ -308,7 +309,7 @@ const posts: BlogPost[] = [
     author: "Zespół FOTZ",
     date: "5 lip 2026",
     readTime: "9 min",
-    image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=2074",
+    image: "/work/bar-1200.webp",
     featured: false,
   },
   {
@@ -320,7 +321,7 @@ const posts: BlogPost[] = [
     author: "Zespół FOTZ",
     date: "5 lip 2026",
     readTime: "8 min",
-    image: "https://images.unsplash.com/photo-1473968512647-3e447244af8f?q=80&w=2070",
+    image: "/work/concert-1200.webp",
     featured: false,
   },
   {
@@ -332,7 +333,7 @@ const posts: BlogPost[] = [
     author: "Zespół FOTZ",
     date: "6 lip 2026",
     readTime: "7 min",
-    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=2072",
+    image: "/work/concert-1200.webp",
     featured: false,
   },
   {
@@ -344,7 +345,7 @@ const posts: BlogPost[] = [
     author: "Zespół FOTZ",
     date: "7 lip 2026",
     readTime: "8 min",
-    image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=2070",
+    image: "/work/backstage-1200.webp",
     featured: false,
   },
   {
@@ -356,7 +357,7 @@ const posts: BlogPost[] = [
     author: "Zespół FOTZ",
     date: "7 lip 2026",
     readTime: "8 min",
-    image: "https://images.unsplash.com/photo-1611926653458-09294b3142bf?q=80&w=2070",
+    image: "/work/concert-1200.webp",
     featured: false,
   },
   {
@@ -368,7 +369,7 @@ const posts: BlogPost[] = [
     author: "Zespół FOTZ",
     date: "11 lip 2026",
     readTime: "7 min",
-    image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=2070",
+    image: "/work/stadium-1200.webp",
     featured: false,
   },
   {
@@ -380,7 +381,7 @@ const posts: BlogPost[] = [
     author: "Zespół FOTZ",
     date: "11 lip 2026",
     readTime: "7 min",
-    image: "https://images.unsplash.com/photo-1611162618071-7d7a39e9b1d7?q=80&w=2074",
+    image: "/work/concert-1200.webp",
     featured: false,
   },
   {
@@ -392,7 +393,7 @@ const posts: BlogPost[] = [
     author: "Zespół FOTZ",
     date: "14 lut 2025",
     readTime: "16 min",
-    image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=2069",
+    image: "/work/fotz-presentation-1200.webp",
     featured: false,
   },
   {
@@ -404,7 +405,7 @@ const posts: BlogPost[] = [
     author: "Zespół FOTZ",
     date: "4 sty 2025",
     readTime: "18 min",
-    image: "https://images.unsplash.com/photo-1596526131083-e8c633c948d2?q=80&w=2074",
+    image: "/work/fotz-presentation-1200.webp",
     featured: false,
   },
   {
@@ -416,7 +417,7 @@ const posts: BlogPost[] = [
     author: "Zespół FOTZ",
     date: "4 sty 2025",
     readTime: "16 min",
-    image: "https://images.unsplash.com/photo-1611605698335-8b1569810432?q=80&w=2074",
+    image: "/work/stadium-1200.webp",
     featured: false,
   },
   {
@@ -428,7 +429,7 @@ const posts: BlogPost[] = [
     author: "Zespół FOTZ",
     date: "4 sty 2025",
     readTime: "20 min",
-    image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=2076",
+    image: "/work/fotz-work-1200.webp",
     featured: false,
   },
   {
@@ -440,7 +441,7 @@ const posts: BlogPost[] = [
     author: "Zespół FOTZ",
     date: "4 sty 2025",
     readTime: "15 min",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2070",
+    image: "/work/fotz-work-1200.webp",
     featured: false,
   },
   {
@@ -452,7 +453,7 @@ const posts: BlogPost[] = [
     author: "Zespół FOTZ",
     date: "4 sty 2025",
     readTime: "18 min",
-    image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=2070",
+    image: "/work/stadium-1200.webp",
     featured: false,
   },
   {
@@ -464,7 +465,7 @@ const posts: BlogPost[] = [
     author: "Zespół FOTZ",
     date: "15 sty 2025",
     readTime: "12 min",
-    image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2074",
+    image: "/work/bar-1200.webp",
     featured: false,
   },
   {
@@ -476,7 +477,7 @@ const posts: BlogPost[] = [
     author: "Zespół FOTZ",
     date: "20 gru 2024",
     readTime: "15 min",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015",
+    image: "/work/product-1200.webp",
     featured: false,
   },
   {
@@ -488,7 +489,7 @@ const posts: BlogPost[] = [
     author: "Zespół FOTZ",
     date: "4 sty 2025",
     readTime: "16 min",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070",
+    image: "/work/fotz-work-1200.webp",
     featured: false,
   },
   {
@@ -500,7 +501,7 @@ const posts: BlogPost[] = [
     author: "Zespół FOTZ",
     date: "4 sty 2025",
     readTime: "14 min",
-    image: "https://images.unsplash.com/photo-1611944212129-29977ae1398c?q=80&w=2074",
+    image: "/work/concert-1200.webp",
     featured: false,
   },
   {
@@ -512,7 +513,7 @@ const posts: BlogPost[] = [
     author: "Zespół FOTZ",
     date: "4 sty 2025",
     readTime: "15 min",
-    image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=2070",
+    image: "/work/stadium-1200.webp",
     featured: false,
   },
   {
@@ -524,7 +525,7 @@ const posts: BlogPost[] = [
     author: "Michał Wiśniewski",
     date: "10 gru 2024",
     readTime: "12 min",
-    image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=2070",
+    image: "/work/fotz-presentation-1200.webp",
     featured: false,
   },
   {
@@ -536,7 +537,7 @@ const posts: BlogPost[] = [
     author: "Karolina Lewandowska",
     date: "8 gru 2024",
     readTime: "7 min",
-    image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=2070",
+    image: "/work/stadium-1200.webp",
     featured: false,
   },
 ];
@@ -559,7 +560,7 @@ export default function Blog() {
         ? new Date(article.published_at).toLocaleDateString("pl-PL", { day: "numeric", month: "short", year: "numeric" })
         : "Nowy",
       readTime: "10 min",
-      image: article.hero_image_url || "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015",
+      image: getOwnPhoto(`${article.slug} ${article.title}`).src,
       featured: false,
       isDynamic: true,
     }));
@@ -778,8 +779,8 @@ export default function Blog() {
               >
                 <div className="relative aspect-[16/10] overflow-hidden">
                   <img
-                    src={post.image}
-                    alt={post.title}
+                    {...getOwnPhoto(`${post.id} ${post.title}`)}
+                    alt={getOwnPhoto(`${post.id} ${post.title}`).alt}
                     loading="lazy"
                     decoding="async"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"

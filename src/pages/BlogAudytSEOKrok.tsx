@@ -153,7 +153,7 @@ export default function BlogAudytSEOKrok() {
             "@type": "Article",
             "headline": "Jak Przeprowadzić Audyt SEO - Kompletny Przewodnik Krok po Kroku (2026)",
             "description": "Praktyczny przewodnik: jak wykonać audyt SEO strony internetowej. 10 kroków, narzędzia, checklist i plan działań.",
-            "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2015",
+            "image": "/work/fotz-work-1200.webp",
             "author": {
               "@type": "Organization",
               "name": "FOTZ"
@@ -197,7 +197,7 @@ export default function BlogAudytSEOKrok() {
       <ArticleSchema
         headline="Jak Przeprowadzić Audyt SEO - Kompletny Przewodnik Krok po Kroku (2026)"
         description="Praktyczny przewodnik: jak wykonać audyt SEO strony internetowej. 10 kroków, narzędzia, checklist i plan działań."
-        image="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2015"
+        image="/work/fotz-work-1200.webp"
         datePublished="2026-04-12"
         dateModified="2026-04-12"
       />
@@ -256,8 +256,8 @@ export default function BlogAudytSEOKrok() {
 
                 <div className="aspect-video rounded-2xl overflow-hidden mb-8">
                   <img loading="lazy"
-                    src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2015"
-                    alt="Jak przeprowadzić audyt SEO - krok po kroku"
+                    src="/work/fotz-work-1200.webp"
+                    alt="Praca przy komputerze — zdjęcie z sesji FOTZ"
                     className="w-full h-full object-cover"
                   />
                 </div>

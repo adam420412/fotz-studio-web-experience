@@ -107,7 +107,7 @@ const BlogContentMarketingPoradnik = () => {
             "@type": "Article",
             "headline": "Content marketing - poradnik dla firm 2025: Strategia i wdrożenie",
             "description": "Kompletny poradnik do content marketingu - od strategii po dystrybucję i pomiar wyników",
-            "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2015",
+            "image": "/work/fotz-work-1200.webp",
             "author": {
               "@type": "Organization",
               "name": "FOTZ"
@@ -187,8 +187,8 @@ const BlogContentMarketingPoradnik = () => {
 
                 <div className="aspect-video rounded-2xl overflow-hidden mb-8">
                   <img loading="lazy"
-                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2015"
-                    alt="Content marketing poradnik - strategia treści dla firm"
+                    src="/work/fotz-work-1200.webp"
+                    alt="Praca przy komputerze — zdjęcie z sesji FOTZ"
                     className="w-full h-full object-cover"
                   />
                 </div>

@@ -144,8 +144,8 @@ const BlogEcommercePoradnik = () => {
 
                 <div className="aspect-video rounded-2xl overflow-hidden mb-8">
                   <img loading="lazy"
-                    src="https://images.unsplash.com/photo-1460925895917-adf4e565db90?q=80&w=2070"
-                    alt="Jak założyć sklep internetowy - przewodnik e-commerce"
+                    src="/work/backstage-1200.webp"
+                    alt="Plan sesji mebli modułowych z oświetleniem studyjnym i ekipą przy ustawianiu kadru"
                     className="w-full h-full object-cover"
                   />
                 </div>

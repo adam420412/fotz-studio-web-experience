@@ -200,8 +200,8 @@ const BlogWordPressVsCustom = () => {
 
                 <div className="aspect-video rounded-2xl overflow-hidden mb-8">
                   <img loading="lazy" 
-                    src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2015" 
-                    alt="WordPress vs strona na zamówienie — wybór platformy dla firmy" 
+                    src="/work/fotz-work-1200.webp"
+                    alt="Praca przy komputerze — zdjęcie z sesji FOTZ"
                     className="w-full h-full object-cover"
                   />
                 </div>

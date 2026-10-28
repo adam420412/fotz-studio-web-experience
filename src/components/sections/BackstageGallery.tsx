@@ -25,7 +25,7 @@ const backstageImages = [
 const backstageVideo = {
   youtubeId: "YXeR6AFlyuQ",
   title: "Backstage z produkcji",
-  thumbnail: `https://img.youtube.com/vi/YXeR6AFlyuQ/maxresdefault.jpg`
+  thumbnail: backstage5
 };
 
 interface BackstageGalleryProps {

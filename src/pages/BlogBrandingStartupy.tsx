@@ -114,8 +114,8 @@ export default function BlogBrandingStartupy() {
           {/* Featured Image */}
           <div className="relative aspect-video rounded-3xl overflow-hidden mb-12">
             <img loading="lazy"
-              src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?q=80&w=2070"
-              alt="Branding dla startupów - budowanie marki"
+              src="/work/fotz-work-1200.webp"
+              alt="Praca przy komputerze — zdjęcie z sesji FOTZ"
               className="w-full h-full object-cover"
             />
           </div>

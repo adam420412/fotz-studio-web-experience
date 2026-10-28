@@ -155,8 +155,8 @@ const BlogMarketingNieruchomosci = () => {
                 <div className="aspect-video rounded-2xl overflow-hidden mb-8">
                   <img
                     loading="lazy"
-                    src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=2015"
-                    alt="Marketing nieruchomości - strategia sprzedaży"
+                    src="/work/bar-1200.webp"
+                    alt="Bar Gierky z kolorowym oświetleniem, neonem i podświetlonymi półkami"
                     className="w-full h-full object-cover"
                   />
                 </div>

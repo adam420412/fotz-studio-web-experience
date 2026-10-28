@@ -144,8 +144,8 @@ const BlogSklepInternetowyNaWlasnej = () => {
 
                 <div className="aspect-video rounded-2xl overflow-hidden mb-8">
                   <img loading="lazy"
-                    src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?q=80&w=2070"
-                    alt="Własny sklep internetowy - WooCommerce, Shopify vs marketplace"
+                    src="/work/backstage-1200.webp"
+                    alt="Plan sesji mebli modułowych z oświetleniem studyjnym i ekipą przy ustawianiu kadru"
                     className="w-full h-full object-cover"
                   />
                 </div>
