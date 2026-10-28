@@ -1,4 +1,5 @@
 import React from 'react';
+import { business } from "@/data/business.mjs";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import LocalSEOBoost from "@/components/seo/LocalSEOBoost";
@@ -452,15 +453,15 @@ export default function StronyInternetoweTorun() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <h3 className="font-bold text-lg mb-2">Telefon</h3>
-              <p className="text-gray-700">+48 790 814 814</p>
+              <a className="text-gray-700 underline underline-offset-4" href={business.phoneHref}>{business.phone}</a>
             </div>
             <div className="text-center">
               <h3 className="font-bold text-lg mb-2">Email</h3>
-              <p className="text-gray-700">hello@fotz.pl</p>
+              <a className="text-gray-700 underline underline-offset-4" href={`mailto:${business.email}`}>{business.email}</a>
             </div>
             <div className="text-center">
-              <h3 className="font-bold text-lg mb-2">Biuro w Toruniu</h3>
-              <p className="text-gray-700">ul. Jakieś 123, Toruń</p>
+              <h3 className="font-bold text-lg mb-2">Współpraca zdalna</h3>
+              <p className="text-gray-700">Termin i miejsce spotkania ustalamy indywidualnie.</p>
             </div>
           </div>
         </div>

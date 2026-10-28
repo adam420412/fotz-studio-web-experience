@@ -547,10 +547,6 @@ export default function BlogFotografiaBiznesowa() {
               <ul className="space-y-3 text-slate-700">
                 <li className="flex">
                   <span className="mr-3 text-amber-700 font-bold">✓</span>
-                  <span>Profesjonalne studio fotograficzne w Poznaniu z nowoczesnym oświetleniem</span>
-                </li>
-                <li className="flex">
-                  <span className="mr-3 text-amber-700 font-bold">✓</span>
                   <span>Sesje na lokacji u Ciebie — biuro, fabryka, atelier czy inne miejsce</span>
                 </li>
                 <li className="flex">

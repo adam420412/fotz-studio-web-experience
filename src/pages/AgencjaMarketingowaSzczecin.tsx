@@ -1,3 +1,5 @@
+import { business } from "@/data/business.mjs";
+import { enquiryHref } from "@/lib/enquiry.mjs";
 import { Layout } from "@/components/layout/Layout";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { Button } from "@/components/ui/button";
@@ -138,7 +140,7 @@ export default function AgencjaMarketingowaSzczecin() {
               </p>
               <div className="flex items-center gap-3">
                 <Building2 className="w-5 h-5 text-blue-600" />
-                <span className="text-gray-700">Biuro w Szczecinie dostępne do wizyty</span>
+                <span className="text-gray-700">Współpracujemy zdalnie; miejsce spotkania ustalamy indywidualnie</span>
               </div>
             </div>
             <div className="grid grid-cols-2 gap-4">
@@ -598,20 +600,20 @@ export default function AgencjaMarketingowaSzczecin() {
                 Skontaktuj się z nami
               </h2>
               <p className="text-lg text-gray-700 mb-8">
-                Jesteśmy dostępni do dyskusji o Twoim projekcie marketingowym. Zadzwoń, wyślij wiadomość lub umów się na spotkanie w naszym biurze w Szczecinie.
+                Jesteśmy dostępni do dyskusji o Twoim projekcie marketingowym. Zadzwoń, wyślij wiadomość lub umów rozmowę online.
               </p>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <Phone className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
                   <div>
                     <div className="font-semibold text-gray-900">Telefon</div>
-                    <div className="text-gray-700">+48 531 234 567</div>
+                    <a className="text-gray-700 underline underline-offset-4" href={business.phoneHref}>{business.phone}</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <Building2 className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
                   <div>
-                    <div className="font-semibold text-gray-900">Adres</div>
+                    <div className="font-semibold text-gray-900">Obszar obsługi</div>
                     <div className="text-gray-700">Szczecin, Zachodniopomorskie</div>
                   </div>
                 </div>
@@ -619,41 +621,14 @@ export default function AgencjaMarketingowaSzczecin() {
             </div>
             <Card>
               <CardContent className="pt-8">
-                <form className="space-y-4">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-900 mb-2">
-                      Imię i nazwisko
-                    </label>
-                    <input
-                      type="text"
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
-                      placeholder="Jan Kowalski"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-900 mb-2">
-                      Email
-                    </label>
-                    <input
-                      type="email"
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
-                      placeholder="jan@przykład.pl"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-900 mb-2">
-                      Wiadomość
-                    </label>
-                    <textarea
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
-                      rows={4}
-                      placeholder="Opowiedz nam o swoim projekcie..."
-                    ></textarea>
-                  </div>
-                  <Button className="w-full bg-blue-600 hover:bg-blue-700">
-                    Wyślij Wiadomość
+                <div className="space-y-5">
+                  <h3 className="text-2xl font-bold">Opowiedz nam o swoim projekcie</h3>
+                  <p className="text-gray-700">Podaj cel, zakres działań i adres swojej strony. W formularzu kontaktowym wybierzesz usługę i prześlesz szczegóły do zespołu FOTZ.</p>
+                  <Button asChild className="w-full bg-blue-600 hover:bg-blue-700">
+                    <Link to={enquiryHref("marketing")}>Przejdź do formularza <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" /></Link>
                   </Button>
-                </form>
+                  <a className="block text-gray-700 underline underline-offset-4" href={`mailto:${business.email}`}>{business.email}</a>
+                </div>
               </CardContent>
             </Card>
           </div>

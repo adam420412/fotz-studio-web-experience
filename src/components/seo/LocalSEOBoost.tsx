@@ -34,11 +34,11 @@ const variantCopy = {
     faq: (city: string, cityLoc: string) => [
       {
         q: `Ile kosztuje agencja marketingowa w ${cityLoc}?`,
-        a: `Stawki rynkowe w ${cityLoc} dla profesjonalnej obsługi marketingowej zaczynają się od 2 500 zł netto miesięcznie za pakiet startowy (1-2 kanały: SEO lub Google Ads). Pełna obsługa wielokanałowa (SEO + Ads + Social Media + content) to widełki 6 000–15 000 zł netto, w zależności od skali kampanii i konkurencyjności branży.`,
+        a: `Koszt obsługi marketingowej ustalamy po poznaniu celu, kanałów komunikacji i zakresu materiałów. W ofercie rozpisujemy zadania, harmonogram i sposób raportowania. Budżet emisji reklam rozliczamy oddzielnie od obsługi.`,
       },
       {
         q: `Czy musimy spotykać się stacjonarnie w ${cityLoc}?`,
-        a: `Nie wymagamy spotkań stacjonarnych — całą współpracę prowadzimy zdalnie (Google Meet, Slack, Asana). Jeśli jednak preferujesz osobisty kontakt, organizujemy kwartalne spotkania strategiczne w ${cityLoc} lub zapraszamy do naszego biura w Poznaniu.`,
+        a: `Współpracę możemy prowadzić zdalnie. Sposób kontaktu i harmonogram konsultacji ustalamy na początku projektu. Termin oraz miejsce ewentualnego spotkania na miejscu uzgadniamy indywidualnie.`,
       },
       {
         q: `Jak długo trwa, zanim zobaczę pierwsze efekty marketingu w ${city}?`,
