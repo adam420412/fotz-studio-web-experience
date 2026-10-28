@@ -1,3 +1,4 @@
+import { InstagramProjects } from "@/components/sections/InstagramProjects";
 import { enquiryHref } from "@/lib/enquiry.mjs";
 import { Link } from "react-router-dom";
 import { ArrowRight, CheckCircle2, Sparkles } from "lucide-react";
@@ -136,7 +137,7 @@ export default function AgencjaSocialMedia() {
           </div>
         </section>
 
-        <FeaturedFilms reelsOnly />
+        <FeaturedFilms reelsOnly /><InstagramProjects />
         <SelectedWork />
 
         <section className="container-wide px-6 md:px-12 py-16" aria-labelledby="social-kanaly">

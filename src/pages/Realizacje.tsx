@@ -1,3 +1,4 @@
+import { InstagramProjects } from "@/components/sections/InstagramProjects";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowUpRight, Expand } from "lucide-react";
@@ -111,6 +112,8 @@ export default function Realizacje() {
           <div className="portfolio-films grid md:grid-cols-2 gap-6 md:gap-8">{videos.map(video => <PortfolioVideo key={video.src} {...video} />)}</div>
         </div>
       </section>
+
+      <InstagramProjects />
 
       <section id="zdjecia" aria-labelledby="photos-heading" className="scroll-mt-28 py-14 md:py-20">
         <div className="container-wide px-6 md:px-12">

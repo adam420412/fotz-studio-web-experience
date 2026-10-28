@@ -1,0 +1,74 @@
+{
+  "stadion-dzien-meczowy": [
+    {
+      "src": "/work/instagram/stadion-dzien-meczowy-360.webp",
+      "width": 360,
+      "height": 639
+    },
+    {
+      "src": "/work/instagram/stadion-dzien-meczowy-640.webp",
+      "width": 640,
+      "height": 1136
+    }
+  ],
+  "skolim-b17": [
+    {
+      "src": "/work/instagram/skolim-b17-360.webp",
+      "width": 360,
+      "height": 640
+    },
+    {
+      "src": "/work/instagram/skolim-b17-640.webp",
+      "width": 640,
+      "height": 1138
+    }
+  ],
+  "schiller-b17": [
+    {
+      "src": "/work/instagram/schiller-b17-360.webp",
+      "width": 360,
+      "height": 640
+    },
+    {
+      "src": "/work/instagram/schiller-b17-640.webp",
+      "width": 640,
+      "height": 1138
+    }
+  ],
+  "dsk-jubileusz": [
+    {
+      "src": "/work/instagram/dsk-jubileusz-360.webp",
+      "width": 360,
+      "height": 640
+    },
+    {
+      "src": "/work/instagram/dsk-jubileusz-540.webp",
+      "width": 540,
+      "height": 960
+    }
+  ],
+  "cupra-raval": [
+    {
+      "src": "/work/instagram/cupra-raval-360.webp",
+      "width": 360,
+      "height": 202
+    },
+    {
+      "src": "/work/instagram/cupra-raval-640.webp",
+      "width": 640,
+      "height": 360
+    }
+  ],
+  "podsiadlo-stadion": [
+    {
+      "src": "/work/instagram/podsiadlo-stadion-360.webp",
+      "width": 360,
+      "height": 640
+    },
+    {
+      "src": "/work/instagram/podsiadlo-stadion-640.webp",
+      "width": 640,
+      "height": 1138
+    }
+  ]
+}
