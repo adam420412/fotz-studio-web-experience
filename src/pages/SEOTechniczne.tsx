@@ -62,7 +62,7 @@ const content = {
     },
     {
       "title": "Elementy technicznego SEO a treści i słowa kluczowe",
-      "text": "W praktyce technical SEO łączy kilka elementów: dostępność serwera, budowę dokumentu, sposób renderowania i organizację adresów. Optymalizacja techniczna strony internetowej usuwa przeszkody w korzystaniu z treści; dobór słów kluczowych i opis oferty odpowiadają na potrzeby odbiorcy. On-page SEO obejmuje także tytuły, nagłówki i linki. Te zakresy częściowo się przenikają, dlatego ustalamy jeden plan i nie zlecamy sprzecznych zmian różnym wykonawcom. Przykładowo nowa kategoria w sklepie potrzebuje zarówno przydatnego opisu, jak i poprawnego adresu URL, nawigacji oraz dostępności dla robotów Google. Każdy element oceniamy w kontekście pozostałych. To element strategii SEO, który pozwala ocenić techniczne aspekty publikacji, zanim zainwestujesz w kolejne teksty lub reklamę."
+      "text": "Techniczne SEO (ang. technical SEO) łączy kilka elementów: dostępność serwera, budowę dokumentu, sposób renderowania i organizację adresów. Optymalizacja techniczna strony internetowej usuwa przeszkody w korzystaniu z treści; dobór słów kluczowych i opis oferty odpowiadają na potrzeby odbiorcy. On-page SEO obejmuje także tytuły, nagłówki i linki. Te zakresy częściowo się przenikają, dlatego ustalamy jeden plan i nie zlecamy sprzecznych zmian różnym wykonawcom. Przykładowo nowa kategoria w sklepie potrzebuje zarówno przydatnego opisu, jak i poprawnego adresu URL, nawigacji oraz dostępności dla robotów Google. Każdy element oceniamy w kontekście pozostałych. Ta część strategii SEO pozwala ocenić techniczne aspekty publikacji, zanim zainwestujesz w kolejne teksty lub reklamę."
     },
     {
       "title": "Plik robots.txt, noindex i mapa witryny XML",
@@ -133,7 +133,7 @@ const content = {
     },
     {
       "title": "Widoczność strony i efekty optymalizacji SEO",
-      "text": "Najpierw potwierdzamy usunięcie usterki: poprawną odpowiedź URL, odczyt treści, działające przekierowanie albo formularz. Następnie obserwujemy indeksowanie, ruch organiczny i kontakty. Widoczność strony w wynikach wyszukiwania, kliknięcia i pozycje w wynikach wyszukiwania to odrębne miary. Porównujemy sensowne okresy, zaznaczając sezonowość, inne publikacje oraz kampanie reklamowe. Wzrost liczby zaindeksowanych adresów sam w sobie nie oznacza większej sprzedaży; po scaleniu duplikatów liczba ta może się zmniejszyć zgodnie z planem. Raport z analizy SEO ma pokazać wykonane zmiany, to, co udało się zmierzyć, i kwestie wymagające dalszej obserwacji. Realizacje FOTZ widoczne na stronie pokazują nasze materiały i projekty, nie stanowią automatycznie dowodu wyniku SEO.",
+      "text": "Najpierw potwierdzamy usunięcie usterki: poprawną odpowiedź URL, odczyt treści, działające przekierowanie albo formularz. Następnie obserwujemy indeksowanie, ruch organiczny i kontakty. Widoczność strony, kliknięcia i pozycje w wynikach wyszukiwania to odrębne miary. Porównujemy sensowne okresy, zaznaczając sezonowość, inne publikacje oraz kampanie reklamowe. Wzrost liczby zaindeksowanych adresów sam w sobie nie oznacza większej sprzedaży; po scaleniu duplikatów liczba ta może się zmniejszyć zgodnie z planem. Raport z analizy SEO ma pokazać wykonane zmiany, to, co udało się zmierzyć, i kwestie wymagające dalszej obserwacji. Realizacje FOTZ widoczne na stronie pokazują nasze materiały i projekty, nie stanowią automatycznie dowodu wyniku SEO.",
       "href": "/realizacje",
       "link": "Poznaj realizacje FOTZ Studio"
     }
