@@ -30,7 +30,7 @@ const faqItems = [
   {
     question: "Czy musze przyjsc do studio, czy fotograf moze przyjsc do mnie?",
     answer:
-      "Sesje biznesowe mozemy przeprowadzic zar6wno w naszym studiu fotograficznym w Poznaniu, jak i u Ciebie w biurze lub na innej wybranej lokacji. Jezeli chcesz pokazac branding swojej firmy, lokacja u Ciebie jest idealnym rozwiazaniem. Jeśli wolisz neutralne tlo i profesjonalne oswietlenie, zapraszamy do naszego studia.",
+      "Sesję biznesową możemy przeprowadzić u Ciebie w biurze lub w innej uzgodnionej lokalizacji. Przed wyceną ustalamy dostępne miejsce, tło i oświetlenie. Nie prowadzimy własnego studia na wynajem.",
   },
   {
     question: "Jak przygotowac strojenie na sesje biznesowa?",
@@ -315,7 +315,7 @@ export default function BlogFotografiaBiznesowa() {
                   3. Ustal lokalizacje
                 </h4>
                 <p className="text-slate-700">
-                  Zdecyduj, czy chcesz sesje w naszym studiu fotograficznym w Poznaniu czy u siebie w biurze. Studio oferuje kontrolowane oswietlenie i neutralne tlo, a lokacja u ciebie pokazuje autentycze biuro i branding firmy.
+                  Ustalmy, czy sesja odbędzie się u Ciebie w biurze, czy w innej uzgodnionej lokalizacji. Przed nagraniem sprawdzamy przestrzeń, tło i warunki oświetleniowe. Zdjęcia w siedzibie firmy mogą pokazać jej autentyczne otoczenie.
                 </p>
               </div>
 
@@ -467,7 +467,7 @@ export default function BlogFotografiaBiznesowa() {
             </div>
 
             <p className="text-lg text-slate-700 mt-8">
-              W Fotz Studio oferujemy obie opcje. Jezeli chcesz sesje z autentycznym kontekstem Twojej marki, zapraszamy do Twojego biura w Poznaniu lub bez problemu dojedziemy do Ciebie na lokacje. Jesli preferujesz profesjonalne oswietlenie i neutralne tlo, nasze studio jest idealnym rozwiazaniem.
+              W FOTZ Studio dobieramy miejsce sesji do zakresu zdjęć. Możemy omówić realizację w Twoim biurze lub w innej wybranej lokalizacji. Dostępność przestrzeni, tło, oświetlenie i ewentualne koszty wynajmu ustalamy przed potwierdzeniem realizacji.
             </p>
           </section>
         </FadeInView>

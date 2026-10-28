@@ -189,11 +189,11 @@ const KampanieReklamowePoznan = () => {
     },
     {
       question: "Czym różnicie się od innych agencji reklamowych w Poznaniu?",
-      answer: "Łączymy kampanie reklamowe z całościową strategią marketingową - tworzymy landing page'e, materiały wideo, grafiki reklamowe. Mamy własne studio produkcyjne w Poznaniu, więc wszystko powstaje in-house. Nie outsourcujemy - pełna kontrola jakości."
+      answer: "Łączymy kampanie reklamowe z całościową strategią marketingową — tworzymy landing page'e, materiały wideo i grafiki reklamowe. Zakres produkcji i miejsce nagrań ustalamy przed rozpoczęciem projektu."
     },
     {
       question: "Czy tworzycie materiały reklamowe dla poznańskich firm?",
-      answer: "Tak, w ramach obsługi przygotowujemy grafiki, teksty reklamowe i wideo dostosowane do każdej platformy. Mamy własne studio foto i wideo w Poznaniu - możemy tworzyć profesjonalne spoty z lokalnymi akcentami i rozpoznawalnymi miejscami."
+      answer: "Tak, w ramach uzgodnionego zakresu obsługi przygotowujemy grafiki, teksty reklamowe i wideo dostosowane do każdej platformy. Lokalizację i warunki nagrania spotów ustalamy z klientem."
     },
   ];
 

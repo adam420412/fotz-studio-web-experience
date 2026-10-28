@@ -37,7 +37,6 @@ const sitemapUrls = [
   { url: "/ecommerce-tworzenie-sklepu", name: "E-commerce", type: "service" },
   { url: "/content-marketing", name: "Content Marketing", type: "service" },
   { url: "/kompleksowa-obsluga-marketingowa", name: "Kompleksowa obsługa", type: "service" },
-  { url: "/studio-podcastowe", name: "Studio podcastowe", type: "service" },
   { url: "/fotograf-poznan", name: "Fotograf Poznań", type: "service" },
   { url: "/fotografia-z-drona", name: "Fotografia z drona", type: "service" },
   { url: "/produkcja-filmow-poznan", name: "Produkcja filmów", type: "service" },

@@ -523,7 +523,7 @@ const FotografPoznan = () => {
               </div>
               <h3 className="text-lg font-semibold mb-2">Lokalizacja</h3>
               <p className="text-muted-foreground text-sm">
-                Studio w centrum Poznania lub wybrane przez Ciebie miejsce w plenerze
+                Siedziba Twojej firmy lub inna uzgodniona lokalizacja
               </p>
             </motion.div>
           </div>
@@ -533,7 +533,7 @@ const FotografPoznan = () => {
       {/* Backstage Gallery Section */}
       <BackstageGallery 
         title="Backstage z sesji"
-        subtitle="Zobacz kulisy profesjonalnych sesji fotograficznych w naszym studiu"
+        subtitle="Zobacz kulisy naszych sesji fotograficznych"
         maxImages={8}
       />
 
@@ -601,7 +601,7 @@ const FotografPoznan = () => {
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
             <h2 className="text-3xl font-heading font-bold mb-6">Fotograf Poznań — profesjonalna fotografia dla firm z Poznania</h2>
             <p className="text-muted-foreground mb-4">Fotograf Poznań — Fotz Studio to profesjonalna fotografia dla biznesu: fotografia firmowa, fotografia korporacyjna (portrety pracowników, zdjęcia zespołu), fotografia produktowa (e-commerce, katalogi), fotografia biznesowa (reportaże z eventów, konferencji, szkoleń) i fotografia z drona. Obsługujemy firmy z Poznania i Wielkopolski.</p>
-            <p className="text-muted-foreground mb-6">Studio fotograficzne Poznań — dysponujemy własnym studiem z profesjonalnym oświetleniem, tłami i wyposażeniem. Sesje fotograficzne realizujemy zarówno w studiu, jak i na plenerze lub w siedzibie klienta. Fotografia poznań to nasza pasja — każde zdjęcie opowiadamy starannie dobranymi kadrami i oświetleniem.</p>
+            <p className="text-muted-foreground mb-6">Sesje fotograficzne w Poznaniu realizujemy w siedzibie klienta, w plenerze lub w innej uzgodnionej przestrzeni. Przed potwierdzeniem terminu dobieramy miejsce, tło i oświetlenie do zakresu zdjęć oraz ustalamy koszty realizacji.</p>
             <h2 className="text-3xl font-heading font-bold mb-6">Fotografia produktowa i biznesowa Poznań — jak wyglądają sesje?</h2>
             <p className="text-muted-foreground">Fotografia produktowa Poznań — profesjonalne zdjęcia produktów do sklepów internetowych, katalogów i materiałów marketingowych. Zdjęcia produktowe z białym tłem, lifestyle i detail shots. Fotografia korporacyjna — portrety dla stron www, LinkedIn i materiałów prasowych. Zdjęcia lotnicze nieruchomości i obiektów — z drona dla deweloperów, pośredników i firm budowlanych. Usługi foto i wideo dla firm z Poznania — zapytaj o ofertę.</p>
           

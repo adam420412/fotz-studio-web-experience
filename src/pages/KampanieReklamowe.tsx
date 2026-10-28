@@ -191,7 +191,7 @@ const KampanieReklamowe = () => {
     },
     {
       question: "Czym różnicie się od innych agencji reklamowych?",
-      answer: "Łączymy kampanie reklamowe z całościową strategią marketingową - tworzymy landing page'e, materiały wideo, grafiki reklamowe. Nie tylko uruchamiamy reklamy, ale dbamy o całą ścieżkę klienta. Mamy własne studio produkcyjne, więc wszystko powstaje in-house."
+      answer: "Łączymy kampanie reklamowe z całościową strategią marketingową — tworzymy landing page'e, materiały wideo i grafiki reklamowe. Dbamy o całą ścieżkę klienta. Zakres produkcji i miejsce nagrań ustalamy przed rozpoczęciem projektu."
     },
     {
       question: "Czy potrzebuję landing page do kampanii reklamowych?",
@@ -203,7 +203,7 @@ const KampanieReklamowe = () => {
     },
     {
       question: "Czy tworzycie materiały reklamowe dla wszystkich platform?",
-      answer: "Tak, w ramach obsługi przygotowujemy grafiki, teksty reklamowe i wideo dostosowane do każdej platformy. Treści na TikToka wymagają innego podejścia niż na LinkedIn. Mamy własne studio produkcyjne, więc możemy tworzyć profesjonalne spoty i materiały foto."
+      answer: "Tak, w ramach uzgodnionego zakresu obsługi przygotowujemy grafiki, teksty reklamowe i wideo dostosowane do każdej platformy. Treści na TikToka wymagają innego podejścia niż na LinkedIn. Miejsce realizacji materiałów foto i wideo ustalamy indywidualnie."
     },
   ];
 

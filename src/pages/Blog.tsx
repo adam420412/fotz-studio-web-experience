@@ -196,7 +196,7 @@ const posts: BlogPost[] = [
     id: "agencja-social-media-poznan",
     title: "Agencja social media Poznań: jak wybrać i na co uważać (poradnik 2026)",
     excerpt:
-      "Szukasz agencji social media w Poznaniu? Sprawdź, o co pytać, ile to kosztuje i dlaczego warto wybrać ekipę z własnym studiem produkcji video.",
+      "Szukasz agencji social media w Poznaniu? Sprawdź, o co pytać, jak porównać zakres usług, koszty prowadzenia profili i produkcję materiałów wideo.",
     category: "Social Media",
     author: "Zespół FOTZ",
     date: "2 lip 2026",

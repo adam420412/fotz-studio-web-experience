@@ -26,8 +26,8 @@ const faqItems = [
     answer: "Po sesji otrzymujesz: JPG (dla stron e-commerce), PNG (transparentny dla katalogów), WebP (szybki dla mobilnych). Wszystkie formaty są przygotowane w rozmiarach dostosowanych do platformy — kwadratowe (1:1) dla Instagrama, 3:4 dla TikToka, 16:9 dla kampanii. Otrzymujesz również raw'i do archiwum."
   },
   {
-    question: "Czy potrzebuję przywieźć produkty do studio?",
-    answer: "Tak, dowozimy produkty do naszego studia w Poznaniu. Zapewniamy bezpieczny transport i ubezpieczenie. Alternatywnie możemy przyjechać do Ciebie na lokację, ale to wiąże się z dodatkową opłatą za wyjazd. Studio wyposażone jest w profesjonalne oświetlenie LED, cykloramy i obracające się platformy dla 360 stopni."
+    question: "Gdzie odbywa się sesja produktowa?",
+    answer: "Miejsce sesji ustalamy indywidualnie, zależnie od rodzaju produktów, planowanych kadrów i potrzebnego oświetlenia. Może to być siedziba klienta lub inna uzgodniona przestrzeń. Transport, dojazd i ewentualny wynajem lokacji wymagają osobnego ustalenia przed realizacją."
   },
   {
     question: "Jak fotografia produktowa wpływa na sprzedaż online?",
