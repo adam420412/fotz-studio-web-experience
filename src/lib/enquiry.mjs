@@ -43,7 +43,7 @@ export function enquiryHref(service, variant) {
 export function serviceForPath(path) {
   if (/^\/(seo(?:\/|$)|.*pozycjonowanie)/.test(path)) return 'seo';
   if (/social-media/.test(path)) return 'social';
-  if (/produkcja-(filmow|video)|video-marketing|studio-podcastowe/.test(path) || /^\/uslugi\/fotografia(?:[-/]|$)/.test(path)) return 'video';
+  if (/produkcja-(filmow|video)|video-marketing/.test(path) || /^\/uslugi\/fotografia(?:[-/]|$)/.test(path)) return 'video';
   if (/marketing-internetowy|agencja-marketing|reklama-facebook/.test(path) || /^\/(content-marketing|performance-marketing)(\/|$)/.test(path)) return 'marketing';
   if (/strony-internetowe|sklepy-internetowe|cennik-tworzenia-stron/.test(path)) return 'web';
   return 'other';

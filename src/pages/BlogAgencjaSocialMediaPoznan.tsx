@@ -27,7 +27,7 @@ export default function BlogAgencjaSocialMediaPoznan() {
     <Layout>
       <SEOHead
         title="Agencja social media Poznań — jak wybrać (poradnik 2026)"
-        description="Szukasz agencji social media w Poznaniu? Sprawdź, o co pytać, ile to kosztuje i dlaczego warto wybrać ekipę z własnym studiem produkcji video."
+        description="Szukasz agencji social media w Poznaniu? Sprawdź, o co pytać, jak porównać zakres usług, koszty prowadzenia profili i produkcję materiałów wideo."
         canonical={CANONICAL}
         keywords="agencja social media Poznań, agencja social media Wielkopolska, prowadzenie social media Poznań, produkcja video Poznań"
       />

@@ -18,7 +18,7 @@ const services = [
   {
     icon: MessageCircle,
     title: "Social Media Poznań",
-    description: "Dedykowane usługi social media dla firm z Poznania. Lokalna ekspertyza, znajomość rynku i sesje foto/video w naszym studiu.",
+    description: "Dedykowane usługi social media dla firm z Poznania. Znajomość lokalnego rynku, planowanie treści i sesje foto/video w uzgodnionej lokalizacji.",
     href: "/agencja-social-media/poznan",
     features: ["Lokalna ekspertyza", "Studio foto/video", "Bezpośredni kontakt"],
   },
@@ -84,7 +84,7 @@ const faqs = [
   },
   {
     question: "Czy tworzycie treści video (Reels/TikTok)?",
-    answer: "Tak! Posiadamy własne studio w Poznaniu. Tworzymy Reels, TikToki, Stories i dłuższe materiały video. Współpracujemy z klientami przy nagraniach lub tworzymy content samodzielnie."
+    answer: "Tak, tworzymy Reels, TikToki, Stories i dłuższe materiały video. Miejsce i warunki nagrań ustalamy z klientem dla danego projektu."
   },
   {
     question: "Na jakich platformach pracujecie?",
@@ -255,7 +255,7 @@ export default function SocialMediaCluster() {
               </p>
               <div className="space-y-4">
                 {[
-                  "Własne studio foto/video w centrum Poznania",
+                  "Produkcja foto/video w uzgodnionej lokalizacji",
                   "Zespół kreatywny z doświadczeniem w 30+ branżach",
                   "Produkcja Reels i TikToków in-house",
                   "Przejrzyste raporty i comiesięczne spotkania",

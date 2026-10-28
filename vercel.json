@@ -42,7 +42,6 @@
     { "source": "/spoty-reklamowe", "destination": "/uslugi/produkcja-video", "permanent": true },
     { "source": "/fotograf-poznan", "destination": "/uslugi/fotografia", "permanent": true },
     { "source": "/fotografia-z-drona", "destination": "/uslugi/fotografia-z-drona", "permanent": true },
-    { "source": "/studio-podcastowe", "destination": "/uslugi/studio-podcastowe", "permanent": true },
     { "source": "/produkcja-filmow-poznan", "destination": "/uslugi/produkcja-filmow", "permanent": true },
     { "source": "/branding", "destination": "/uslugi/branding", "permanent": true },
     { "source": "/produkcja-video", "destination": "/uslugi/produkcja-video", "permanent": true },

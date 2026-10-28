@@ -8,7 +8,7 @@ test('enquiry keeps a valid selected scope and rejects arbitrary query values', 
  assert.equal(enquiryHref('social','materials'), '/kontakt?usluga=social&wariant=materials#formularz');
  assert.deepEqual(readEnquiryContext('?usluga=seo&wariant=audit&email=private@example.com'),{service:'seo',variant:'audit'});
  assert.deepEqual(readEnquiryContext('?usluga=__proto__&wariant=constructor'),{service:'other',variant:''});
- for (const [path,service] of [['/seo/pozycjonowanie','seo'],['/social-media/obsluga','social'],['/uslugi/strony-internetowe','web'],['/uslugi/produkcja-video','video'],['/uslugi/studio-podcastowe','video'],['/uslugi/marketing-internetowy','marketing']]) assert.equal(serviceForPath(path),service);
+ for (const [path,service] of [['/seo/pozycjonowanie','seo'],['/social-media/obsluga','social'],['/uslugi/strony-internetowe','web'],['/uslugi/produkcja-video','video'],['/uslugi/marketing-internetowy','marketing']]) assert.equal(serviceForPath(path),service);
 });
 test('offer defaults preserve a scope but never leak it into a different service', () => {
  assert.deepEqual(resolveEnquiryContext('', 'marketing', 'meta_ads'), {service:'marketing', variant:'meta_ads'});

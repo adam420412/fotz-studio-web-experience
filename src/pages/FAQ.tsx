@@ -71,7 +71,7 @@ const faqCategories = [
       },
       {
         question: "Czy tworzysz również treści video (Reelsy, TikToki)?",
-        answer: "Tak, mamy własne studio podcastowe i zespół video. Tworzymy Reelsy, TikToki, YouTube Shorts i dłuższe formaty video. Zajmujemy się całym procesem - od koncepcji przez nagranie po montaż i publikację.",
+        answer: "Tak, tworzymy Reelsy, TikToki, YouTube Shorts i dłuższe formaty video. Zajmujemy się całym procesem — od koncepcji przez nagranie po montaż i publikację. Miejsce realizacji ustalamy dla danego projektu.",
       },
       {
         question: "Jak mierzycie efekty działań w social media?",
@@ -137,7 +137,7 @@ const faqCategories = [
       },
       {
         question: "Czy macie własne studio nagraniowe?",
-        answer: "Tak, posiadamy w pełni wyposażone studio podcastowe w centrum Poznania. Studio pozwala na nagrywanie podcastów, wywiadów, materiałów edukacyjnych i krótkich form video. Oferujemy również wynajem studia.",
+        answer: "Nie prowadzimy już własnego studia podcastowego i wycofaliśmy ofertę wynajmu tej przestrzeni. Lokalizację nagrań wideo ustalamy indywidualnie przed rozpoczęciem projektu.",
       },
       {
         question: "Realizujecie nagrania poza studiem?",

@@ -191,7 +191,7 @@ export default function BlogZdjeciaKorporacyjneVsReklamowe() {
             Robiliśmy sesje foto i produkcje wideo dla marek takich jak <strong>Żabka, WSB Merito, Zakłady Cegielskiego czy FPS</strong>, więc różne branże i różne potrzeby, od czysto wizerunkowych po w pełni kampanijne, przewinęły się przez nasze studio.
           </p>
           <p>
-            Mamy własne studio i zespół na miejscu w Poznaniu, ale dojeżdżamy z ekipą po całej Polsce, więc lokalizacja klienta nie jest ograniczeniem. Jeśli chcesz zobaczyć, jak podchodzimy do fotografii biznesowej całościowo, od zdjęć korporacyjnych po reklamowe, zajrzyj na naszą stronę{" "}
+            Realizujemy sesje w uzgodnionych lokalizacjach w Poznaniu i innych miastach. Miejsce, warunki oraz koszty dojazdu ustalamy przed potwierdzeniem projektu. Jeśli chcesz zobaczyć, jak podchodzimy do fotografii biznesowej całościowo, od zdjęć korporacyjnych po reklamowe, zajrzyj na naszą stronę{" "}
             <Link to="/uslugi/fotografia" className="text-[#75143F] underline">
               fotografia biznesowa
             </Link>
