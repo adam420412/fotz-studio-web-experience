@@ -179,7 +179,7 @@ export default function GoogleAdsSzczecin() {
     },
     {
       question: "Czy Google Ads działa dla B2B firmy?",
-      answer: "Absolutnie! Google Ads świetnie działa dla B2B. Szukający długo opracowują decyzje o zakupach – trafiamy do nich w kluczowych momentach. Dla B2B ważne jest proper lead tracking, long sales cycle, i optymalizacja na \"wartość leadów\", a nie tylko konwersje. Pracowaliśmy z firmami IT, produkcją, konsultingiem i usługami z Szczecina."
+      answer: "Absolutnie! Google Ads świetnie działa dla B2B. Szukający długo opracowują decyzje o zakupach – trafiamy do nich w kluczowych momentach. Dla B2B ważne jest proper lead tracking, long sales cycle, i optymalizacja na \"wartość leadów\", a nie tylko konwersje. Pracowaliśmy z firmami IT, produkcją, konsultingiem i usługami ze Szczecina."
     },
     {
       question: "Co się stanie, jeśli przestanę płacić za Google Ads?",
@@ -287,7 +287,7 @@ export default function GoogleAdsSzczecin() {
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">Szczecin – Brama do Niemiec</h3>
                   <p className="text-gray-700 mb-4">
                     Szczecin jest największym portem morskim w Polsce i bramą do rynku niemieckiego.
-                    Firmy z Szczecina i Zachodniopomorskiego mają unikalną pozycję – mogą skalować
+                    Firmy ze Szczecina i Zachodniopomorskiego mają unikalną pozycję – mogą skalować
                     biznes zarówno na polskim rynku, jak i na niemieckim.
                   </p>
                   <p className="text-gray-700">
@@ -307,7 +307,7 @@ export default function GoogleAdsSzczecin() {
                     w Google Ads. To znaczy, że keywords są relatywnie tańsze niż w Warszawie czy Wrocławiu.
                   </p>
                   <p className="text-gray-700">
-                    Dla firm z Szczecina to doskonała okazja – możesz zdominować lokalne wyszukiwanie
+                    Dla firm ze Szczecina to doskonała okazja – możesz zdominować lokalne wyszukiwanie
                     z mniejszym budżetem niż konkurencja w innych miastach.
                   </p>
                 </CardContent>

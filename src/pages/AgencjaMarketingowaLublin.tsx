@@ -116,7 +116,7 @@ export default function AgencjaMarketingowaLublin() {
     },
     {
       question: "Obsługujecie firmy spoza Lublina?",
-      answer: "Tak, pracujemy z firmami z całej Polski i zagranicą. Specjalizujemy się w firmach z Lublin i Lubelszczyzny (Śródmieście, LSM, Wieniawa, Tatary, Bronowice, Czechów), ale strategie SEO i digital marketing działają wszędzie."
+      answer: "Tak, pracujemy z firmami z całej Polski i zagranicą. Specjalizujemy się w firmach z Lublina i Lubelszczyzny (Śródmieście, LSM, Wieniawa, Tatary, Bronowice, Czechów), ale strategie SEO i digital marketing działają wszędzie."
     },
     {
       question: "Ile kosztuje pozycjonowanie SEO w Lublinie?",
@@ -456,6 +456,7 @@ export default function AgencjaMarketingowaLublin() {
       <LocalSEOBoost
         city="Lublin"
         cityLocative="Lublinie"
+        cityGenitive="Lublina"
         voivodeshipLocative="lubelskim"
         variant="agency"
       />

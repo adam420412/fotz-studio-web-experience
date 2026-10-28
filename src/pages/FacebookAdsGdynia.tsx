@@ -206,7 +206,7 @@ export default function FacebookAdsGdynia() {
                   <span className="text-primary">dla firm z Gdyni i Trójmiasta</span>
                 </h1>
                 <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-                  Facebook Ads Gdynia — profesjonalne kampanie Meta Ads i reklamy Facebook dla firm z Gdynia i Trójmiasta. Zwiększamy sprzedaż, zasięg i ROI dzięki precyzyjnemu targetowaniu. Bezpłatna konsultacja.</p>
+                  Facebook Ads Gdynia — profesjonalne kampanie Meta Ads i reklamy Facebook dla firm z Gdyni i Trójmiasta. Zwiększamy sprzedaż, zasięg i ROI dzięki precyzyjnemu targetowaniu. Bezpłatna konsultacja.</p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button asChild size="lg" className="gap-2">
                     <Link to="/kontakt">

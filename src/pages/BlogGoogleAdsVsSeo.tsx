@@ -1,3 +1,4 @@
+import { business } from "@/data/business.mjs";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
@@ -377,7 +378,7 @@ export default function BlogGoogleAdsVsSeo() {
             </p>
             <div className="flex flex-wrap gap-4">
               <a
-                href="mailto:kontakt@fotz.pl"
+                href={`mailto:${business.email}`}
                 className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors"
               >
                 Napisz do nas

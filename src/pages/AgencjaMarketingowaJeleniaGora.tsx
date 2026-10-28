@@ -1,3 +1,4 @@
+import { business } from "@/data/business.mjs";
 import { SEOHead } from "@/components/seo/SEOHead";
 import {
   ServiceSchema,
@@ -465,7 +466,7 @@ export default function AgencjaMarketingowaJeleniaGora() {
               </div>
               <div>
                 <h3 className="text-xl font-bold mb-2">Email</h3>
-                <p className="text-gray-300">kontakt@fotz.pl</p>
+                <a className="text-gray-300 underline underline-offset-4" href={`mailto:${business.email}`}>{business.email}</a>
               </div>
             </div>
           </div>

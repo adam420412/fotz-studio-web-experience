@@ -55,7 +55,7 @@ test('code-example file URLs receive a real 404 rather than the SPA homepage', a
 
 test('unknown blog and social media slugs return a useful, standalone 404 for GET and HEAD', async () => {
   requests = [];
-  for (const path of ['/blog/nie-istnieje-xyz-123', '/blog/published-cms-slug', '/blog/nie-istnieje-xyz-123/?utm_source=google', '/agencja-social-media/nie-istnieje-xyz', '/agencja-social-media/toString', '/agencja-social-media/__proto__', '/blog/%E0%A4%A', '/blog%2Fd%C5%82ug-techniczny-co-to']) {
+  for (const path of ['/agencja-social-media/nie-istnieje-xyz', '/agencja-social-media/toString', '/agencja-social-media/__proto__', '/blog/%E0%A4%A', '/blog%2Fd%C5%82ug-techniczny-co-to']) {
     for (const method of ['GET', 'HEAD']) {
       const result = await middleware(new Request(`https://www.fotz-studio.pl${path}`, { method }));
       assert.equal(result.status, 404, `${method} ${path}`);
@@ -95,4 +95,15 @@ test('existing public files and application resources pass through', async () =>
     assert.equal(result.headers.get('x-middleware-next'), '1', path);
   }
   assert.equal(requests.length, 0);
+});
+
+
+test('new CMS slugs are rewritten for published-content lookup, not passed to the SPA', async () => {
+  for (const path of ['/blog/newly-published', '/blog/newly-published/?utm_source=google']) {
+    const result = await middleware(new Request(`https://www.fotz-studio.pl${path}`));
+    assert.equal(result.headers.get('x-middleware-next'), null);
+    assert.equal(result.headers.get('x-middleware-rewrite'), 'https://www.fotz-studio.pl/api/blog-article?slug=newly-published');
+  }
+  const sitemap = await middleware(new Request('https://www.fotz-studio.pl/sitemap-blog.xml'));
+  assert.equal(sitemap.headers.get('x-middleware-rewrite'), 'https://www.fotz-studio.pl/api/blog-sitemap');
 });

@@ -187,6 +187,7 @@ const StronyInternetoweZielonaGora = () => {
         <LocalSEOBoost
           city="Zielona Góra"
           cityLocative="Zielonej Górze"
+          cityGenitive="Zielonej Góry"
           voivodeshipLocative="lubuskim"
           variant="websites"
         />

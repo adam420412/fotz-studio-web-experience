@@ -314,7 +314,7 @@ export default function FacebookAdsGdansk() {
                   Dlaczego Facebook Ads w Gdańsku?
                 </h2>
                 <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                  Facebook Ads Gdańsk — profesjonalne kampanie Meta Ads i reklamy Facebook dla firm z Gdańsk i Trójmiasta. Zwiększamy sprzedaż, zasięg i ROI dzięki precyzyjnemu targetowaniu. Bezpłatna konsultacja.
+                  Facebook Ads Gdańsk — profesjonalne kampanie Meta Ads i reklamy Facebook dla firm z Gdańska i Trójmiasta. Zwiększamy sprzedaż, zasięg i ROI dzięki precyzyjnemu targetowaniu. Bezpłatna konsultacja.
                 </p>
               </div>
             </FadeInView>

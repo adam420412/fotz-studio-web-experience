@@ -58,7 +58,7 @@ export function OrganizationSchema({
 
   return (
     <Helmet>
-      <script type="application/ld+json">{JSON.stringify(schema)}</script>
+      <script type="application/ld+json">{JSON.stringify(schema).replace(/</g, "\\u003c")}</script>
     </Helmet>
   );
 }
@@ -161,7 +161,7 @@ export function LocalBusinessSchema({
 
   return (
     <Helmet>
-      <script type="application/ld+json">{JSON.stringify(schema)}</script>
+      <script type="application/ld+json">{JSON.stringify(schema).replace(/</g, "\\u003c")}</script>
     </Helmet>
   );
 }
@@ -206,7 +206,7 @@ export function ServiceSchema({
 
   return (
     <Helmet>
-      <script type="application/ld+json">{JSON.stringify(schema)}</script>
+      <script type="application/ld+json">{JSON.stringify(schema).replace(/</g, "\\u003c")}</script>
     </Helmet>
   );
 }
@@ -237,7 +237,7 @@ export function BreadcrumbSchema({ items = [], data }: BreadcrumbSchemaProps) {
 
   return (
     <Helmet>
-      <script type="application/ld+json">{JSON.stringify(schema)}</script>
+      <script type="application/ld+json">{JSON.stringify(schema).replace(/</g, "\\u003c")}</script>
     </Helmet>
   );
 }
@@ -279,7 +279,7 @@ export function FAQSchema({ items = [], data, questions }: FAQSchemaProps) {
 
   return (
     <Helmet>
-      <script type="application/ld+json">{JSON.stringify(schema)}</script>
+      <script type="application/ld+json">{JSON.stringify(schema).replace(/</g, "\\u003c")}</script>
     </Helmet>
   );
 }
@@ -309,7 +309,7 @@ export function WebPageSchema({ title, description, url }: WebPageSchemaProps) {
 
   return (
     <Helmet>
-      <script type="application/ld+json">{JSON.stringify(schema)}</script>
+      <script type="application/ld+json">{JSON.stringify(schema).replace(/</g, "\\u003c")}</script>
     </Helmet>
   );
 }
@@ -395,7 +395,7 @@ export function ArticleSchema({
 
   return (
     <Helmet>
-      <script type="application/ld+json">{JSON.stringify(schema)}</script>
+      <script type="application/ld+json">{JSON.stringify(schema).replace(/</g, "\\u003c")}</script>
     </Helmet>
   );
 }

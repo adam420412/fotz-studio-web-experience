@@ -438,6 +438,7 @@ export default function AgencjaMarketingowaBydgoszcz() {
       <LocalSEOBoost
         city="Bydgoszcz"
         cityLocative="Bydgoszczy"
+        cityGenitive="Bydgoszczy"
         voivodeshipLocative="kujawsko-pomorskim"
         variant="agency"
       />

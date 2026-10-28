@@ -2,6 +2,7 @@ import { getOwnPhoto, ownPhotoHtml, ownPhotoSchema } from './own-photos.mjs';
 /** Shared by the CMS article view and the static SEO build. */
 import { migratedBlogPaths, repairedSourceLinks } from './reviewed-blog-links.mjs';
 import { reviewedBlogCopy } from './reviewed-blog-copy.mjs';
+import sanitizeHtml from 'sanitize-html';
 
 export const SITE_ORIGIN = 'https://www.fotz-studio.pl';
 
@@ -62,13 +63,22 @@ export function getBlogMetadata(article) {
 /** The article view already emits one H1 and promotes CMS schema into Helmet. */
 export function prepareBlogHtml(html, slug = '') {
   for (const [before, after] of reviewedBlogCopy[slug] || []) html = html.replace(before, after);
-  return ownPhotoHtml(repairBlogFragments(normalizeSiteUrls(html)
+  return sanitizeHtml(ownPhotoHtml(repairBlogFragments(normalizeSiteUrls(html)
     // An automatic linkifier mistook the Polish abbreviation "m.in." for a domain.
     .replace(/<a\b[^>]*href=["']https?:\/\/m\.in\/?["'][^>]*>(m\.in\.?)<\/a>/gi, '$1')
     .replace(/(\bhref=["'])([^"']+)(["'])/gi, (_, start, href, end) => `${start}${canonicalLink(href)}${end}`)
     .replace(/<script\b(?=[^>]*\btype=["']application\/ld\+json["'])[^>]*>[\s\S]*?<\/script\s*>/gi, '')
     .replace(/<h1(\s[^>]*)?>/gi, '<h2$1>')
-    .replace(/<\/h1>/gi, '</h2>')));
+    .replace(/<\/h1>/gi, '</h2>'))), {
+    allowedTags: [...sanitizeHtml.defaults.allowedTags, 'img', 'figure', 'figcaption'],
+    allowedAttributes: {
+      '*': ['id', 'class'], a: ['href', 'name', 'target', 'rel'],
+      img: ['src', 'alt', 'width', 'height', 'loading'],
+      th: ['scope', 'colspan', 'rowspan'], td: ['colspan', 'rowspan'],
+    },
+    allowedSchemes: ['http', 'https', 'mailto', 'tel'],
+    allowProtocolRelative: false,
+  });
 }
 
 // Some CMS tables of contents preserve Polish letters/punctuation while their

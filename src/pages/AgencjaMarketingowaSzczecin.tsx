@@ -514,7 +514,7 @@ export default function AgencjaMarketingowaSzczecin() {
               Najczęściej Zadawane Pytania
             </h2>
             <p className="text-xl text-gray-700">
-              Odpowiedzi na pytania firm z Szczecina i regionu
+              Odpowiedzi na pytania firm ze Szczecina i regionu
             </p>
           </div>
 
@@ -574,7 +574,7 @@ export default function AgencjaMarketingowaSzczecin() {
             Gotowy na nowy poziom marketingu?
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
-            Ponad 500 firm z Szczecina i regionu ufa nam obsługę swoje kampanie marketingowe. Dołącz do nich i dostań bezpłatną wycenę.
+            Porozmawiajmy o kampaniach dla Twojej firmy ze Szczecina lub regionu. Opisz swoje cele i otrzymaj wycenę.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" variant="secondary" className="text-blue-600 hover:text-blue-700">
@@ -638,6 +638,8 @@ export default function AgencjaMarketingowaSzczecin() {
       <LocalSEOBoost
         city="Szczecin"
         cityLocative="Szczecinie"
+        cityGenitive="Szczecina"
+        cityFrom="ze Szczecina"
         voivodeshipLocative="zachodniopomorskim"
         variant="agency"
       />

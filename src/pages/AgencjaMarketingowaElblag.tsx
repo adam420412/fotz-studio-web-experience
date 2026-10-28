@@ -1,3 +1,4 @@
+import { business } from "@/data/business.mjs";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 import { Layout } from "@/components/layout/Layout";
@@ -417,7 +418,7 @@ export const AgencjaMarketingowaElblag = () => {
               fotz studio - agencja marketingowa
             </p>
             <p className="text-gray-800">
-              Elbląg, Polska | phone: +48 790 814 814 | email: hello@fotz.pl
+              Obsługa firm z Elbląga. Telefon: <a className="underline underline-offset-4" href={business.phoneHref}>{business.phone}</a> · E-mail: <a className="underline underline-offset-4" href={`mailto:${business.email}`}>{business.email}</a>
             </p>
           </div>
         </div>

@@ -88,7 +88,7 @@ export default function FacebookAdsKatowice() {
                   Agencja Facebook Ads Katowice
                 </h1>
                 <p className="text-xl md:text-2xl text-sky-100 mb-8">
-                  Facebook Ads Katowice — profesjonalne kampanie Meta Ads i reklamy Facebook dla firm z Katowice i Śląska. Zwiększamy sprzedaż, zasięg i ROI dzięki precyzyjnemu targetowaniu. Bezpłatna konsultacja.</p>
+                  Facebook Ads Katowice — profesjonalne kampanie Meta Ads i reklamy Facebook dla firm z Katowic i Śląska. Zwiększamy sprzedaż, zasięg i ROI dzięki precyzyjnemu targetowaniu. Bezpłatna konsultacja.</p>
               </div>
 
               {/* Stats Grid */}

@@ -479,6 +479,7 @@ export default function StronyInternetoweTorun() {
       <LocalSEOBoost
         city="Toruń"
         cityLocative="Toruniu"
+        cityGenitive="Torunia"
         voivodeshipLocative="kujawsko-pomorskim"
         variant="websites"
       />

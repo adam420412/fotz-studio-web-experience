@@ -16,7 +16,7 @@ export default function AgencjaMarketingowaZgorzelec() {
       answer: "Nasza agencja specjalizuje sie w lokalnym SEO dla Zgorzelca, optymalizacji stron internetowych, budowaniu linkow zwrotnych i wdrazaniu strategii SEO dostosowanej do rynku przygranicznych. Oferujemy audyty stron, optymalizacje slow kluczowych oraz raportowanie wynikow."
     },
     {
-      question: "Czy agencja oferuje usluge twomu stron internetowych dla firm z Zgorzelca?",
+      question: "Czy agencja oferuje usluge twomu stron internetowych dla firm ze Zgorzelca?",
       answer: "Tak, tworzymy nowoczesne, responsywne strony internetowe dla firm lokalnych w Zgorzelcu. Kazda strona jest zoptymalizowana SEO, szybka, bezpieczna i przystosowana do urządzen mobilnych. Projektujemy z mysla o konwersji i zarobkach Twojej firmy."
     },
     {
@@ -76,7 +76,7 @@ export default function AgencjaMarketingowaZgorzelec() {
               Agencja Marketingowa Zgorzelec
             </h1>
             <p className="text-xl text-blue-100 mb-6">
-              Kompleksowe usluge marketingu cyfrowego dla firm z Zgorzelca i regionu przygranicznego
+              Kompleksowe usluge marketingu cyfrowego dla firm ze Zgorzelca i regionu przygranicznego
             </p>
             <div className="flex flex-wrap gap-4">
               <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">
@@ -160,7 +160,7 @@ export default function AgencjaMarketingowaZgorzelec() {
                   <h3 className="text-xl font-bold text-gray-900">Strony Internetowe</h3>
                 </div>
                 <p className="text-gray-700 mb-4">
-                  Tworzymy nowoczesne, responsywne strony internetowe dla firm z Zgorzelca. Kazda strona jest zoptymalizowana pod katem SEO, szybka, bezpieczna i dostosowana do urządzen mobilnych. Projektujem z mysla o konwersji i zarobkach Twojej firmy.
+                  Tworzymy nowoczesne, responsywne strony internetowe dla firm ze Zgorzelca. Kazda strona jest zoptymalizowana pod katem SEO, szybka, bezpieczna i dostosowana do urządzen mobilnych. Projektujem z mysla o konwersji i zarobkach Twojej firmy.
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-center gap-2 text-gray-700">
@@ -189,7 +189,7 @@ export default function AgencjaMarketingowaZgorzelec() {
                   <h3 className="text-xl font-bold text-gray-900">Google Ads i PPC</h3>
                 </div>
                 <p className="text-gray-700 mb-4">
-                  Prowadzimy skuteczne kampanie Google Ads dla firm z Zgorzelca. Obsługujemy zarówno kampanie Search Ads jak i Display Ads. Nasz zespół optymalizuje budżety, aby uzyskac maksymalne zwroty z inwestycji w reklame cyfrowa.
+                  Prowadzimy skuteczne kampanie Google Ads dla firm ze Zgorzelca. Obsługujemy zarówno kampanie Search Ads jak i Display Ads. Nasz zespół optymalizuje budżety, aby uzyskac maksymalne zwroty z inwestycji w reklame cyfrowa.
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-center gap-2 text-gray-700">
@@ -367,7 +367,7 @@ export default function AgencjaMarketingowaZgorzelec() {
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Doswiadczenie Lokalne</h3>
                   <p className="text-gray-700">
-                    Znamy specyfike rynku Zgorzelca i regionu przygranicznego. Rozumiemy dynamike biznesu przy granicy z Niemcami i potrafimy efektywnie obsługiwac firmy z Zgorzelca.
+                    Znamy specyfike rynku Zgorzelca i regionu przygranicznego. Rozumiemy dynamike biznesu przy granicy z Niemcami i potrafimy efektywnie obsługiwac firmy ze Zgorzelca.
                   </p>
                 </div>
               </div>

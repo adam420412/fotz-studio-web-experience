@@ -108,7 +108,7 @@ test('CMS fragment repair leaves ambiguous, missing, exact and malformed targets
 
 test('CMS fragments do not interpret data attributes as IDs or links', () => {
   const html = '<h2 data-id="wybor">A</h2><h2 id="podzial">B</h2><a href="#wybór">Missing</a><a data-href="#podział">Not a link</a>';
-  assert.equal(prepareBlogHtml(html), html);
+  assert.equal(prepareBlogHtml(html), '<h2>A</h2><h2 id="podzial">B</h2><a href="#wybór">Missing</a><a>Not a link</a>');
 });
 
 test('reviewed campaign guide has working contents links and retains its publication date', async () => {

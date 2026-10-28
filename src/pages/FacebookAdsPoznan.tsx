@@ -314,7 +314,7 @@ export default function FacebookAdsPoznan() {
                   Dlaczego Facebook Ads w Poznaniu?
                 </h2>
                 <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                  Facebook Ads Poznań — profesjonalne kampanie Meta Ads i reklamy Facebook dla firm z Poznań i Wielkopolski. Zwiększamy sprzedaż, zasięg i ROI dzięki precyzyjnemu targetowaniu. Bezpłatna konsultacja.
+                  Facebook Ads Poznań — profesjonalne kampanie Meta Ads i reklamy Facebook dla firm z Poznania i Wielkopolski. Zwiększamy sprzedaż, zasięg i ROI dzięki precyzyjnemu targetowaniu. Bezpłatna konsultacja.
                 </p>
               </div>
             </FadeInView>

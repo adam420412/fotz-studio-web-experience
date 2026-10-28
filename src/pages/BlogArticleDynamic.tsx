@@ -123,12 +123,12 @@ export default function BlogArticleDynamic() {
         <Helmet>
           {hasCmsArticleSchema && (
             <script type="application/ld+json">
-              {JSON.stringify(normalizeSchemaUrls(article.json_ld))}
+              {JSON.stringify(normalizeSchemaUrls(article.json_ld)).replace(/</g, "\\u003c")}
             </script>
           )}
           {hasCmsFaqSchema && (
             <script type="application/ld+json">
-              {JSON.stringify(normalizeSchemaUrls(article.faq_json_ld))}
+              {JSON.stringify(normalizeSchemaUrls(article.faq_json_ld)).replace(/</g, "\\u003c")}
             </script>
           )}
         </Helmet>

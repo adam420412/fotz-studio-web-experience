@@ -162,7 +162,9 @@
     { "source": "/portfolio/:path*", "destination": "/realizacje/:path*", "permanent": true }
   ],
   "functions": {
-    "api/send-contact.js": { "maxDuration": 10 }
+    "api/send-contact.js": { "maxDuration": 10 },
+    "api/blog-article.js": { "maxDuration": 30, "includeFiles": "{.ssr/blog-article.cjs,.ssr/public-cms.json,.ssr/blog-template.html}" },
+    "api/blog-sitemap.js": { "maxDuration": 30, "includeFiles": "{.ssr/public-cms.json,public/sitemap-blog.xml}" }
   },
   "rewrites": [
     { "source": "/mapa-strony", "destination": "/mapa-strony-v3.html" },
@@ -186,8 +188,7 @@
     {
       "source": "/sitemap-blog.xml",
       "headers": [
-        { "key": "Content-Type", "value": "application/xml; charset=utf-8" },
-        { "key": "Cache-Control", "value": "public, max-age=3600" }
+        { "key": "Content-Type", "value": "application/xml; charset=utf-8" }
       ]
     },
     {
