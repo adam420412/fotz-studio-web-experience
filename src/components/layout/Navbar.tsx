@@ -208,7 +208,7 @@ export function Navbar() {
           <div className="h-full overflow-y-auto overscroll-contain">
             <div className="max-w-[1440px] mx-auto px-4 sm:px-6 py-6 flex flex-col gap-3">
               <div className="border-b border-border pb-4 mb-2">
-                <Link to="/dla-kogo#branze" onClick={() => setIsMobileMenuOpen(false)} className="font-heading text-xl mb-3 block">Branże — zobacz ofertę →</Link>
+                <Link to="/dla-kogo#branze" onClick={() => setIsMobileMenuOpen(false)} className="font-heading text-xl mb-3 block">Branże — zobacz ofertę <span aria-hidden="true">→</span></Link>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-1">
                   {industries.map(industry => <Link key={industry.slug} to={industry.href} onClick={() => setIsMobileMenuOpen(false)} aria-current={location.pathname === industry.href ? 'page' : undefined} className="py-3 text-sm leading-relaxed hover:text-primary aria-[current=page]:text-primary">{industry.name}</Link>)}
                 </div>

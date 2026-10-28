@@ -195,6 +195,8 @@ export default function DlaKogo() {
               >
                 <img loading="lazy"
                   src={audience.image}
+                  srcSet={[480, 800, 1200].map(width => `${audience.image.replace('-800.webp', `-${width}.webp`)} ${width}w`).join(', ')}
+                  sizes="(min-width: 1024px) 45vw, 90vw"
                   alt={audience.imageAlt}
                   width={800}
                   height={533}

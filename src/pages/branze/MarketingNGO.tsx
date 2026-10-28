@@ -123,7 +123,7 @@ const MarketingNGO = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
             className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full blur-[180px]"
-            style={{ background: "hsla(340, 71,5%, 27%, 0.1)" }}
+            style={{ background: "hsla(340, 71%, 27%, 0.1)" }}
           />
         </div>
 
