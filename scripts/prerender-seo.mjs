@@ -21,6 +21,7 @@ import { fileURLToPath } from 'url';
 import { extractMetadata, escapeHtml, readSource, literal } from './lib/seo-metadata.mjs';
 import { getBlogMetadata } from '../src/lib/blog-seo.mjs';
 import { addRoutePreloads, addHeroPreload } from './lib/route-preloads.mjs';
+import { notFoundHtml } from '../src/lib/not-found-html.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
@@ -284,14 +285,6 @@ console.log(`\n📁 Output: ${DIST}`);
 // Generate dist/404.html with proper NotFound markup (served by middleware
 // with HTTP 404 status for unknown routes — fixes Ahrefs soft-404 errors).
 // ===========================================================================
-const notFoundMeta = {
-  title: '404 — Strona nie istnieje | Fotz Studio',
-  description: 'Przepraszamy, strona której szukasz nie została znaleziona. Wróć na stronę główną Fotz Studio lub skorzystaj z menu.',
-  canonical: 'https://www.fotz-studio.pl/',
-  ogImage: 'https://www.fotz-studio.pl/og-image.jpg',
-  noIndex: true,
-};
-const notFoundHtml = injectMeta(template, notFoundMeta);
 fs.writeFileSync(path.join(DIST, '404.html'), notFoundHtml, 'utf-8');
 console.log(`   + dist/404.html generated (served with HTTP 404 by middleware)`);
 
@@ -307,12 +300,17 @@ const appSource = fs.readFileSync(path.join(SRC, 'App.tsx'), 'utf-8');
 const allRouteMatches = [...appSource.matchAll(/<Route\s+path="([^"]+)"/g)].map((m) => m[1]);
 const uniqueRoutes = [...new Set(allRouteMatches)];
 
-const knownStaticRoutes = uniqueRoutes.filter((p) => !p.includes(':') && !p.includes('*') && !LEGACY_REDIRECT_ROUTES.has(p));
+// Include actual CMS articles and cluster hubs, not their arbitrary route shapes.
+// These are the same reviewed URLs rendered above; newly published CMS entries
+// join this list when the snapshots, maps and deployment are refreshed.
+const knownStaticRoutes = [...new Set([...uniqueRoutes, ...routes.map(route => route.path)])]
+  .filter((p) => !p.includes(':') && !p.includes('*') && !LEGACY_REDIRECT_ROUTES.has(p));
 
-// Dynamic patterns (e.g. /blog/:slug, /akademia/*). Exclude the React Router
-// catch-all "*" alone — it would match every path and defeat soft-404.
+// Preserve the academy redirect wildcard, but never treat every public slug
+// as a real article/hub. The catch-all "*" would also defeat genuine 404s.
+const enumeratedContentRoutes = new Set(['/blog/:slug', '/agencja-social-media/:clusterSlug']);
 const dynamicPatterns = uniqueRoutes
-  .filter((p) => (p.includes(':') || p.includes('*')) && p !== '*')
+  .filter((p) => (p.includes(':') || p.includes('*')) && p !== '*' && !enumeratedContentRoutes.has(p))
   .map((p) => p.replace(/:([a-zA-Z_]+)/g, '[^/]+').replace(/\*/g, '.*'));
 
 function publicFiles(dir, prefix = '') {

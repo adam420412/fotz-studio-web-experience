@@ -82,7 +82,8 @@ test('article UI retains cached content on refresh failure and offers retry on a
   const require = createRequire(import.meta.url);
   let state = {data:sample,isLoading:false,error:new Error('offline')}, retries=0;
   const mocks = {
-    'react-router-dom': {useParams:()=>({slug:sample.slug}), Navigate:'redirect', Link:'a'},
+    'react-router-dom': {useParams:()=>({slug:sample.slug}), Link:'a'},
+    './NotFound': {default:'not-found'},
     'react-helmet-async': {Helmet:'head'},
     '@/components/layout/Layout':{Layout:'layout'},
     '@/components/seo/SEOHead':{SEOHead:'seo'},
@@ -107,5 +108,5 @@ test('article UI retains cached content on refresh failure and offers retry on a
   find(alert,n=>n.type==='button').props.onClick();
   assert.equal(retries,1);
   state={data:null,isLoading:false,error:null};
-  assert.equal(render().type,'redirect');
+  assert.equal(render().type,'not-found');
 });

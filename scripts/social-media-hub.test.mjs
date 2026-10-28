@@ -29,7 +29,8 @@ function harness(initial = {}) {
   let slug = 'poznan', query = initial, retried = 0;
   const calls = [];
   const component = load('../src/pages/SocialMediaClusterHub.tsx', {
-    'react-router-dom': { Link: 'a', Navigate: 'redirect', useParams: () => ({ clusterSlug: slug }) },
+    'react-router-dom': { Link: 'a', useParams: () => ({ clusterSlug: slug }) },
+    './NotFound': 'not-found',
     '@/components/layout/Layout': { Layout: 'main' },
     '@/components/seo/SEOHead': { SEOHead: 'head' },
     '@/components/seo/StructuredData': { BreadcrumbSchema: 'schema' },
@@ -58,9 +59,18 @@ test('failed article request keeps the guide available and offers a working retr
 
 test('unknown-to-valid route changes keep the article hook unconditional and disable unknown queries', () => {
   const h = harness(); h.setSlug('unknown');
-  assert.equal(h.render().type, 'redirect');
+  assert.equal(h.render().type, 'not-found');
   h.setSlug('poznan'); h.render();
   assert.deepEqual(h.calls, [{ value: 'unknown', enabled: false }, { value: 'poznan', enabled: true }]);
+});
+
+test('object prototype keys are not valid cluster slugs', () => {
+  const h = harness();
+  for (const slug of ['toString', '__proto__', 'constructor']) {
+    h.setSlug(slug);
+    assert.equal(h.render().type, 'not-found');
+    assert.equal(h.calls.at(-1).enabled, false);
+  }
 });
 
 test('every supported topic has useful content while articles are loading or absent', () => {

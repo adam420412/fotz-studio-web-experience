@@ -9,14 +9,16 @@
  * and BEFORE `rewrites`. For any request that:
  *   - is NOT an asset (/_next/, /assets/, existing public files)
  *   - is NOT in the known-routes manifest (built from <Route path> entries)
- *   - does NOT match a dynamic pattern (e.g. /blog/:slug)
- * we serve the prerendered /404.html with HTTP 404.
+ *   - does NOT match an intentional redirect wildcard (e.g. /akademia/*)
+ * we serve a self-contained error document with HTTP 404.
+ * Public blog and social-media slugs are enumerated at build time.
  *
  * Static prerendered routes (dist/<route>/index.html) are served directly by
  * Vercel's static layer with HTTP 200 — middleware does not touch them.
  */
 import manifest from './known-routes.json';
 import retiredPodcast from './src/data/retired-podcast.json';
+import { notFoundHtml } from './src/lib/not-found-html.mjs';
 
 // A withdrawn offer has no equivalent replacement. Return a genuine 410
 // before the SPA fallback, including the former short URL and query variants.
@@ -98,7 +100,11 @@ export default async function middleware(request: Request): Promise<Response> {
   const url = new URL(request.url);
   const { pathname } = url;
 
-  const normalizedPath = pathname.replace(/\/+$/, '') || '/';
+  // URL.pathname percent-encodes Polish letters. Decode characters, while
+  // preserving encoded separators such as %2F so they cannot create a route.
+  let decodedPath: string | null = null;
+  try { decodedPath = decodeURI(pathname); } catch { /* Malformed encoding is unknown. */ }
+  const normalizedPath = decodedPath?.replace(/\/+$/, '') || '/';
   if (retiredPodcast.paths.includes(normalizedPath)) {
     return new Response(request.method === 'HEAD' ? null : retiredPodcastHtml, {
       status: 410,
@@ -118,25 +124,19 @@ export default async function middleware(request: Request): Promise<Response> {
   if (STATIC_FILES.has(pathname)) return new Response(null, { status: 200, headers: { 'x-middleware-next': '1' } });
 
   // 2) Known route → continue to SPA rewrite (returns 200 + index.html).
-  // A file-like URL copied from an article must not match /blog/:slug.
-  if (!ASSET_EXT_RE.test(pathname) && isKnownRoute(pathname)) {
+  // A file-like URL copied from an article is not a public content route.
+  if (decodedPath !== null && !ASSET_EXT_RE.test(decodedPath) && isKnownRoute(decodedPath)) {
     return new Response(null, { status: 200, headers: { 'x-middleware-next': '1' } });
   }
 
-  // 3) Unknown route → serve /404.html with HTTP 404.
-  // Use rewrite (internal) so the URL bar stays the same and the prerendered
-  // 404 body (with H1, footer, header markup) is delivered.
-  const notFoundUrl = new URL('/404.html', request.url);
-  const res = await fetch(notFoundUrl, {
-    headers: { 'x-middleware-bypass': '1' },
-  });
-  const body = await res.text();
-  return new Response(body, {
+  // 3) Unknown route → real 404, without a second request or a SPA redirect.
+  return new Response(request.method === 'HEAD' ? null : notFoundHtml, {
     status: 404,
     headers: {
       'content-type': 'text/html; charset=utf-8',
       'cache-control': 'public, max-age=0, s-maxage=60, must-revalidate',
       'x-soft-404-fix': 'middleware',
+      'x-robots-tag': 'noindex, nofollow',
     },
   });
 }

@@ -1,4 +1,5 @@
-import { Link, useParams, Navigate } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import NotFound from "./NotFound";
 import { ArrowRight } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { SEOHead } from "@/components/seo/SEOHead";
@@ -12,9 +13,10 @@ import { useClusterArticles } from "@/hooks/useClusterArticles";
 
 export default function SocialMediaClusterHub() {
   const { clusterSlug = "" } = useParams<{ clusterSlug: string }>();
-  const cluster = SM_CLUSTERS_BY_SLUG[clusterSlug];
+  const cluster = Object.prototype.hasOwnProperty.call(SM_CLUSTERS_BY_SLUG, clusterSlug)
+    ? SM_CLUSTERS_BY_SLUG[clusterSlug] : undefined;
   const { data: articles = [], isLoading, isError, refetch } = useClusterArticles(clusterSlug, Boolean(cluster));
-  if (!cluster) return <Navigate to={SM_PILLAR_PATH} replace />;
+  if (!cluster) return <NotFound />;
   const guide = getSocialMediaGuide(cluster);
   const canonical = `https://www.fotz-studio.pl${cluster.path}`;
 
