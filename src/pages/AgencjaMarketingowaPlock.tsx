@@ -1,4 +1,5 @@
 import { SEOHead } from "@/components/seo/SEOHead";
+import { business } from "@/data/business.mjs";
 import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { Layout } from "@/components/layout/Layout";
 import { Building2, MapPin, TrendingUp, Star, Globe, CheckCircle2, Phone, Mail } from "lucide-react";
@@ -418,7 +419,7 @@ export default function AgencjaMarketingowaPlock() {
             Agencja Marketingowa Plock - Specjalista w Marketingu dla Firm z Mazowsza
           </p>
           <p className="text-sm">
-            ul. Grodzka 10, 09-400 Plock | Tel: +48 790 814 814 | Email: hello@fotz.pl
+            Obsługa zdalna. Termin i miejsce spotkania ustalamy indywidualnie. Telefon: <a href={business.phoneHref} className="underline underline-offset-4">{business.phone}</a> · E-mail: <a href={`mailto:${business.email}`} className="underline underline-offset-4">{business.email}</a>
           </p>
         </div>
       </section>

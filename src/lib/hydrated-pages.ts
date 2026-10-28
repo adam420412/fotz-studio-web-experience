@@ -25,6 +25,7 @@ export const hydratedPages: Record<string, () => Promise<{ default: ComponentTyp
   "/seo/pozycjonowanie-warszawa": () => import("@/pages/SEOPozycjonowanieWarszawa"),
   "/uslugi/pozycjonowanie/opole": () => import("@/pages/PozycjonowanieOpole"),
   "/seo/audyt": () => import("@/pages/AudytSEO"),
+  "/seo/pozycjonowanie-poznan": () => import("@/pages/PozycjonowanieStronPoznan"),
   "/seo/techniczne": () => import("@/pages/SEOTechniczne"),
   "/uslugi/pozycjonowanie-lokalne": () => import("@/pages/PozycjonowanieLokalne"),
   "/agencja-marketingowa/warszawa": () => import("@/pages/AgencjaMarketingowaWarszawa"),

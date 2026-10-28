@@ -131,7 +131,7 @@ export default function TworzenieStronKrakow() {
     {
       icon: "👋",
       title: "Poznajemy się",
-      desc: "Video call o Twojej firmie, wizji, konkurencji, budżecie. Czasem zapraszamy na kawę do naszego biura, ale nie musi być.",
+      desc: "Video call o Twojej firmie, wizji, konkurencji, budżecie. Termin i miejsce ewentualnego spotkania ustalamy indywidualnie.",
       time: "30 minut"
     },
     {

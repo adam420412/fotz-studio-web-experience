@@ -23,10 +23,16 @@ async function inspect(dir) {
     const [, actual, body] = sections[0];
     if (actual !== expected) report.errors.push({ route, issue: 'incorrect topic selection' });
     const images = [...body.matchAll(/<img\b([^>]+)>/g)];
-    if (images.length !== 3) report.errors.push({ route, issue: 'expected three portfolio images' });
+    const collectionImages = workCollections[expected].images;
+    // A two-image gallery is valid when the first project is already shown in the hero.
+    // Read the rendered hero independently so a missing or unrelated image still fails.
+    const hero = html.match(/<figure\b[^>]*class="offer-visual [^"]*"[^>]*>[\s\S]*?<img\b[^>]*src="([^"]+)"/);
+    const firstImageInHero = hero?.[1].startsWith(`/work/${collectionImages[0]}-`);
+    const expectedImages = images.length === 2 && firstImageInHero ? collectionImages.slice(1) : collectionImages;
+    if (images.length !== expectedImages.length) report.errors.push({ route, issue: 'expected three portfolio projects across hero and gallery' });
     for (let i = 0; i < images.length; i++) {
       const attributes = Object.fromEntries([...images[i][1].matchAll(/([\w-]+)="([^"]*)"/g)].map(match => [match[1], match[2]]));
-      if (!attributes.src?.startsWith(`/work/${workCollections[expected].images[i]}-`)) report.errors.push({ route, issue: 'wrong source image' });
+      if (!attributes.src?.startsWith(`/work/${expectedImages[i]}-`)) report.errors.push({ route, issue: 'wrong source image' });
       for (const field of ['alt', 'width', 'height', 'srcSet', 'sizes']) if (!attributes[field]) report.errors.push({ route, issue: `missing image ${field}` });
       if (attributes.loading !== 'lazy') report.errors.push({ route, issue: 'below-fold image is not lazy' });
     }
