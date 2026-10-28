@@ -1,9 +1,9 @@
-import { getIndustry } from '../data/industries.mjs';
+import { industryWork } from '../data/industry-work.mjs';
 
 /** Select by the page's topic, never by city or an invented client relationship. */
 export function getWorkCollection(pathname) {
   const path = pathname.replace(/\/+$/, '') || '/';
-  if (getIndustry(path) || path === '/dla-kogo') return null;
+  if (path === '/dla-kogo' || (path.startsWith('/dla-kogo/') && industryWork[path.slice('/dla-kogo/'.length)])) return null;
   if (path === '/agencja-marketingowa/poznan') return 'localAgency';
   if (path === '/pozycjonowanie/legnica') return 'web';
   const publicOffer = /^\/(?:uslugi(?:\/|$)|agencja[^/]*(?:\/|$)|social-media(?:\/|$)|content-marketing(?:\/|$)|performance-marketing(?:\/|$)|seo(?:\/|$)|strony-internetowe(?:\/|$)|dla-kogo(?:\/|$)|ai(?:\/|$)|fotograf[^/]*|kampanie[^/]*|wizualizacje-3d(?:\/|$))/.test(path);

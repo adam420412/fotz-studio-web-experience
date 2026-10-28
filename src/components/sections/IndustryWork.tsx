@@ -3,7 +3,7 @@ import { ArrowUpRight } from 'lucide-react';
 import { industryWork } from '@/data/industry-work.mjs';
 import images from '@/data/industry-work-images.json';
 
-type Project = { image: string; name: string; scope: string; description: string; alt: string; href?: string; linkLabel?: string; fit?: string; position?: string };
+type Project = { image: string; video?: string; name: string; scope: string; description: string; alt: string; href?: string; linkLabel?: string; fit?: string; position?: string };
 
 export function IndustryWork({ slug }: { slug: string }) {
   const work = industryWork[slug as keyof typeof industryWork];
@@ -23,7 +23,13 @@ export function IndustryWork({ slug }: { slug: string }) {
           const source = variants.at(-1)!;
           return <figure key={project.image} className="min-w-0 rounded-2xl overflow-hidden border border-border bg-background">
             <div className="aspect-[4/3] bg-muted/30">
-              <img src={source.src} srcSet={variants.map(image => `${image.src} ${image.width}w`).join(', ')} sizes={work.projects.length > 1 ? '(min-width: 1280px) 600px, (min-width: 768px) 45vw, 90vw' : '(min-width: 1024px) 896px, 90vw'} width={source.width} height={source.height} alt={project.alt} loading="lazy" decoding="async" className={`h-full w-full ${project.fit === 'contain' ? 'object-contain' : 'object-cover'}`} style={project.position ? { objectPosition: project.position } : undefined} />
+              {project.video ? (
+                <video controls playsInline preload="none" poster={source.src} src={project.video} aria-label={`Obejrzyj: ${project.name}`} className="h-full w-full object-contain bg-black">
+                  Twoja przeglądarka nie obsługuje wideo. <a href={project.video}>Otwórz film: {project.name}</a>.
+                </video>
+              ) : (
+                <img src={source.src} srcSet={variants.map(image => `${image.src} ${image.width}w`).join(', ')} sizes={work.projects.length > 1 ? '(min-width: 1280px) 600px, (min-width: 768px) 45vw, 90vw' : '(min-width: 1024px) 896px, 90vw'} width={source.width} height={source.height} alt={project.alt} loading="lazy" decoding="async" className={`h-full w-full ${project.fit === 'contain' ? 'object-contain' : 'object-cover'}`} style={project.position ? { objectPosition: project.position } : undefined} />
+              )}
             </div>
             <figcaption className="p-6 md:p-8">
               <p className="text-xs tracking-wide uppercase text-muted-foreground mb-3">{project.scope}</p>

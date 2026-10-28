@@ -1,3 +1,4 @@
+import { IndustryWork } from "@/components/sections/IndustryWork";
 import { Link } from "react-router-dom";
 import { ShoppingBag, ArrowRight, CheckCircle, TrendingUp, BarChart3, RefreshCcw, Zap, Star, Phone, Target, Plus, Minus } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
@@ -200,6 +201,8 @@ export default function DlaKogoEcommerce() {
           </div>
         </div>
       </section>
+
+      <IndustryWork slug="ecommerce" />
 
       {/* Services */}
       <section className="section-padding bg-background">

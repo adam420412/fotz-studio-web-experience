@@ -1,4 +1,4 @@
-import { readdir, readFile, mkdir, writeFile } from 'node:fs/promises';
+import { readdir, readFile, mkdir, writeFile, stat } from 'node:fs/promises';
 import path from 'node:path';
 import { getWorkCollection } from '../src/lib/selected-work.mjs';
 import { workCollections } from '../src/data/selected-work.mjs';
@@ -17,15 +17,23 @@ async function inspect(dir) {
     const route = '/' + path.relative(root, dir).split(path.sep).join('/');
     const html = await readFile(filename, 'utf8');
     const industry = getIndustry(route);
-    if (industry) {
+    const industrySlug = route.startsWith('/dla-kogo/') ? route.slice('/dla-kogo/'.length) : '';
+    if (industryWork[industrySlug]) {
       report.industryPages++;
       const galleries = [...html.matchAll(/<section\b[^>]*data-industry-work="([^"]+)"[^>]*>([\s\S]*?)<\/section>/g)];
-      if (galleries.length !== 1 || galleries[0]?.[1] !== industry.slug) report.errors.push({ route, issue: 'missing industry portfolio' });
+      if (galleries.length !== 1 || galleries[0]?.[1] !== industrySlug) report.errors.push({ route, issue: 'missing industry portfolio' });
       const body = galleries[0]?.[2] || '';
-      const projects = industryWork[industry.slug].projects;
-      if ((body.match(/<img\b/g) || []).length !== projects.length) report.errors.push({ route, issue: 'wrong industry image count' });
+      const projects = industryWork[industrySlug].projects;
+      if ((body.match(/<(?:img|video)\b/g) || []).length !== projects.length) report.errors.push({ route, issue: 'wrong industry media count' });
       for (const project of projects) if (!body.includes(`/work/industries/${project.image}-`)) report.errors.push({ route, issue: `missing project image: ${project.image}` });
-      if (!html.includes('aria-controls="industries-menu"')) report.errors.push({ route, issue: 'missing industry navigation' });
+      for (const match of body.matchAll(/<video\b([^>]+)>/g)) {
+        const attrs = Object.fromEntries([...match[1].matchAll(/([\w-]+)="([^"]*)"/g)].map(m => [m[1], m[2]]));
+        if (attrs.preload !== 'none' || !('controls' in attrs) || !('playsinline' in attrs) || 'autoplay' in attrs || !attrs.poster || !attrs['aria-label']) report.errors.push({ route, issue: 'video must be labelled, controlled and not preload or autoplay' });
+        for (const file of [attrs.src, attrs.poster]) {
+          if (!file?.startsWith('/') || !await stat(path.join(root, file)).then(s => s.size > 0).catch(() => false)) report.errors.push({ route, issue: `missing video asset: ${file}` });
+        }
+      }
+      if (industry && !html.includes('aria-controls="industries-menu"')) report.errors.push({ route, issue: 'missing industry navigation' });
     }
     const expected = getWorkCollection(route);
     const sections = [...html.matchAll(/<section\b[^>]*data-work-collection="([^"]+)"[^>]*>([\s\S]*?)<\/section>/g)];
@@ -52,6 +60,7 @@ async function inspect(dir) {
   }
 }
 await inspect(root);
+if (report.industryPages !== Object.keys(industryWork).length) report.errors.push({ issue: 'not all industry portfolio routes were built' });
 await mkdir(output, { recursive: true });
 await writeFile(path.join(output, 'photo-coverage.json'), JSON.stringify(report, null, 2) + '\n');
 console.log(JSON.stringify(report));
