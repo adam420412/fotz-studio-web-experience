@@ -7,6 +7,8 @@ export interface LocalSEOBoostProps {
   cityLocative: string;
   /** City name after "z", "spoza" and "do", e.g. "Lublina". */
   cityGenitive: string;
+  /** Full phrase with preposition where needed, e.g. "ze Szczecina". */
+  cityFrom?: string;
   /** Voivodeship name e.g. "lubelskim" (locative) */
   voivodeshipLocative: string;
   /** Service variant */
@@ -23,8 +25,8 @@ const sectorDefaults: Record<LocalSEOBoostProps["variant"], string[]> = {
 
 const variantCopy = {
   agency: {
-    h2: (cityGen: string) => `Marketing dla firm z ${cityGen} — co realnie zyskasz`,
-    intro: (cityLoc: string, voi: string, cityGen: string) =>
+    h2: (cityFrom: string) => `Marketing dla firm ${cityFrom} — co realnie zyskasz`,
+    intro: (cityLoc: string, voi: string, cityFrom: string) =>
       `Prowadzenie biznesu w ${cityLoc} oznacza konkurencję nie tylko lokalną, ale też z markami ogólnopolskimi, które licytują te same frazy w Google. Naszą rolą jako agencji jest sprawić, żeby Twoja firma była widoczna dokładnie tam, gdzie klienci jej szukają — na mapie, w wynikach organicznych i w reklamach Meta Ads kierowanych na obszar w województwie ${voi}.`,
     points: [
       "Optymalizacja wizytówki Google Business Profile pod lokalne zapytania (\"blisko mnie\", \"w mieście\")",
@@ -33,7 +35,7 @@ const variantCopy = {
       "Linki z lokalnych portali biznesowych, izb gospodarczych i katalogów branżowych",
       "Raporty miesięczne pokazujące dokładnie skąd przychodzą zapytania — z którego osiedla, w jakich godzinach",
     ],
-    faq: (cityGen: string, cityLoc: string) => [
+    faq: (cityGen: string, cityLoc: string, cityFrom: string) => [
       {
         q: `Ile kosztuje agencja marketingowa w ${cityLoc}?`,
         a: `Koszt obsługi marketingowej ustalamy po poznaniu celu, kanałów komunikacji i zakresu materiałów. W ofercie rozpisujemy zadania, harmonogram i sposób raportowania. Budżet emisji reklam rozliczamy oddzielnie od obsługi.`,
@@ -57,9 +59,9 @@ const variantCopy = {
     ],
   },
   websites: {
-    h2: (cityGen: string) => `Strona internetowa dla firm z ${cityGen} — na co zwrócić uwagę`,
-    intro: (cityLoc: string, voi: string, cityGen: string) =>
-      `Klienci z ${cityGen} i innych miast w województwie ${voi} szukają usług coraz częściej z telefonu i oczekują, że strona załaduje się w mniej niż 2 sekundy. Tworzymy szybkie strony oparte na nowoczesnym stacku (React, Next.js, headless WordPress), które od dnia uruchomienia są zoptymalizowane pod Core Web Vitals i lokalne SEO.`,
+    h2: (cityFrom: string) => `Strona internetowa dla firm ${cityFrom} — na co zwrócić uwagę`,
+    intro: (cityLoc: string, voi: string, cityFrom: string) =>
+      `Klienci ${cityFrom} i innych miast w województwie ${voi} szukają usług coraz częściej z telefonu i oczekują, że strona załaduje się w mniej niż 2 sekundy. Tworzymy szybkie strony oparte na nowoczesnym stacku (React, Next.js, headless WordPress), które od dnia uruchomienia są zoptymalizowane pod Core Web Vitals i lokalne SEO.`,
     points: [
       "Hosting i CDN dobrane pod ruch z Polski (najbliższe serwery — minimalne TTFB)",
       "Mapa Google z dokładną lokalizacją oraz kliknięcie-do-nawigacji z urządzeń mobilnych",
@@ -67,9 +69,9 @@ const variantCopy = {
       "Wersja AMP/PWA dla branż mobilno-pierwszych (gastronomia, beauty, usługi 24/7)",
       "Integracja z Google Business Profile i mechanizm zbierania opinii po realizacji zlecenia",
     ],
-    faq: (cityGen: string, cityLoc: string) => [
+    faq: (cityGen: string, cityLoc: string, cityFrom: string) => [
       {
-        q: `Ile kosztuje strona internetowa dla firmy z ${cityGen}?`,
+        q: `Ile kosztuje strona internetowa dla firmy ${cityFrom}?`,
         a: `Landing page wizytówkowy startuje od 2 000 zł netto, klasyczna strona firmowa (5-8 podstron + CMS) to 5 000–12 000 zł, a rozbudowany serwis z konfiguratorem lub portfolio dynamicznym 15 000–35 000 zł. Hosting roczny i opieka techniczna dochodzą jako 200–600 zł netto miesięcznie.`,
       },
       {
@@ -91,9 +93,9 @@ const variantCopy = {
     ],
   },
   ecommerce: {
-    h2: (cityGen: string) => `Sklep internetowy dla firm z ${cityGen} — fundamenty dobrego startu`,
-    intro: (cityLoc: string, voi: string, cityGen: string) =>
-      `Sprzedaż online z ${cityGen} to dziś standardowy kanał dla większości produktów — od mody po wyposażenie wnętrz. Budujemy sklepy na sprawdzonych platformach (WooCommerce, Shopify, PrestaShop), z pełną integracją polskich systemów płatności (Przelewy24, Tpay, BLIK), kurierów (InPost, DPD, DHL) oraz programów księgowych (wFirma, iFirma, Fakturownia). Klienci w województwie ${voi} otrzymują realistyczne czasy dostawy i lokalne opcje odbioru.`,
+    h2: (cityFrom: string) => `Sklep internetowy dla firm ${cityFrom} — fundamenty dobrego startu`,
+    intro: (cityLoc: string, voi: string, cityFrom: string) =>
+      `Sprzedaż online ${cityFrom} to dziś standardowy kanał dla większości produktów — od mody po wyposażenie wnętrz. Budujemy sklepy na sprawdzonych platformach (WooCommerce, Shopify, PrestaShop), z pełną integracją polskich systemów płatności (Przelewy24, Tpay, BLIK), kurierów (InPost, DPD, DHL) oraz programów księgowych (wFirma, iFirma, Fakturownia). Klienci w województwie ${voi} otrzymują realistyczne czasy dostawy i lokalne opcje odbioru.`,
     points: [
       "Konfiguracja Przelewy24/Tpay/Stripe + BLIK i Apple Pay/Google Pay dla mobilnych zakupów",
       "Integracje InPost Paczkomaty, DPD, DHL z automatycznym etykietowaniem zamówień",
@@ -101,9 +103,9 @@ const variantCopy = {
       "Konfiguracja Google Merchant Center i kampanii Performance Max dla sklepu",
       "Optymalizacja pod Core Web Vitals — kluczowy czynnik konwersji na mobile",
     ],
-    faq: (cityGen: string, cityLoc: string) => [
+    faq: (cityGen: string, cityLoc: string, cityFrom: string) => [
       {
-        q: `Ile kosztuje sklep internetowy dla firmy z ${cityGen}?`,
+        q: `Ile kosztuje sklep internetowy dla firmy ${cityFrom}?`,
         a: `Sklep startowy na WooCommerce (do 100 produktów) to 8 000–15 000 zł netto, średni sklep z integracjami (płatności, kurierzy, księgowość, marketing automation) 18 000–35 000 zł, a duży B2B/B2C z konfiguratorem produktów lub multi-language 40 000–100 000 zł. Doliczyć trzeba hosting (200–800 zł/mc) i opiekę techniczną.`,
       },
       {
@@ -120,7 +122,7 @@ const variantCopy = {
       },
       {
         q: `Czy sklep będzie zoptymalizowany pod SEO?`,
-        a: `Tak — od fundamentów. Implementujemy poprawną strukturę URL, Schema.org Product/Offer, optymalizację Core Web Vitals, breadcrumbs, paginację z rel=next/prev, kanoniczne adresy filtrów oraz mapę produktową XML. Dla klientów z ${cityGen} dodajemy też lokalne strony kategorii (np. \"dostawa do ${cityGen} w 24h\").`,
+        a: `Tak — od fundamentów. Implementujemy poprawną strukturę URL, Schema.org Product/Offer, optymalizację Core Web Vitals, breadcrumbs, paginację z rel=next/prev, kanoniczne adresy filtrów oraz mapę produktową XML. Dla klientów ${cityFrom} dodajemy też lokalne strony kategorii (np. \"dostawa do ${cityGen} w 24h\").`,
       },
     ],
   },
@@ -141,6 +143,7 @@ export default function LocalSEOBoost({
   city,
   cityLocative,
   cityGenitive,
+  cityFrom = `z ${cityGenitive}`,
   voivodeshipLocative,
   variant,
   sectors,
@@ -148,7 +151,7 @@ export default function LocalSEOBoost({
   const copy = variantCopy[variant];
   const Icon = variantIcons[variant];
   const sectorList = sectors ?? sectorDefaults[variant];
-  const faqs = copy.faq(cityGenitive, cityLocative);
+  const faqs = copy.faq(cityGenitive, cityLocative, cityFrom);
 
   return (
     <section className="py-16 bg-muted/30">
@@ -160,10 +163,10 @@ export default function LocalSEOBoost({
           </span>
         </div>
         <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-foreground">
-          {copy.h2(cityGenitive)}
+          {copy.h2(cityFrom)}
         </h2>
         <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-          {copy.intro(cityLocative, voivodeshipLocative, cityGenitive)}
+          {copy.intro(cityLocative, voivodeshipLocative, cityFrom)}
         </p>
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
@@ -204,7 +207,7 @@ export default function LocalSEOBoost({
             <p className="text-sm text-muted-foreground mt-6 leading-relaxed">
               Nie ma Twojej branży na liście? To nie znaczy, że nie umiemy z nią
               pracować — kontaktujemy się również z firmami z sektora produkcji,
-              logistyki, IT, finansów i sektora publicznego z {cityGenitive} oraz
+              logistyki, IT, finansów i sektora publicznego {cityFrom} oraz
               pozostałych miast w województwie {voivodeshipLocative}.
             </p>
           </div>
@@ -212,7 +215,7 @@ export default function LocalSEOBoost({
 
         <div>
           <h3 className="text-2xl font-bold mb-6 text-foreground">
-            Najczęstsze pytania od firm z {cityGenitive}
+            Najczęstsze pytania od firm {cityFrom}
           </h3>
           <div className="space-y-4">
             {faqs.map((f) => (

@@ -18,10 +18,12 @@ test('local copy uses genitive after z/spoza/do and locative after w',()=>{
     ['Zielona Góra','Zielonej Górze','Zielonej Góry','websites','lubuskim'],
     ['Poznań','Poznaniu','Poznania','ecommerce','wielkopolskim'],
   ]){
-    const html=renderToStaticMarkup(createElement(Component,{city,cityLocative,cityGenitive,variant,voivodeshipLocative}));
-    assert.ok(html.includes(`dla firm z ${cityGenitive}`));
+    const cityFrom = city === "Szczecin" ? "ze Szczecina" : `z ${cityGenitive}`;
+    const html=renderToStaticMarkup(createElement(Component,{city,cityLocative,cityGenitive,cityFrom,variant,voivodeshipLocative}));
+    assert.ok(html.includes(`dla firm ${cityFrom}`));
     assert.ok(html.includes(`obsługujemy w ${cityLocative}`));
-    assert.ok(html.includes(`pytania od firm z ${cityGenitive}`));
+    assert.ok(html.includes(`pytania od firm ${cityFrom}`));
+    assert.ok(!html.includes("z Szczecina"));
     if(variant==='agency'){
       assert.ok(html.includes(`spoza ${cityGenitive}`));
       assert.ok(html.includes(`efekty marketingu w ${cityLocative}`));
