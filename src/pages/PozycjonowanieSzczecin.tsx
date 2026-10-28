@@ -415,7 +415,7 @@ const PozycjonowanieSzczecin = () => {
               { city: "Warszawa", href: "/uslugi/pozycjonowanie/warszawa" },
               { city: "Kraków", href: "/seo/pozycjonowanie-krakow" },
               { city: "Wrocław", href: "/uslugi/pozycjonowanie/wroclaw" },
-              { city: "Poznań", href: "/uslugi/pozycjonowanie/poznan" },
+              { city: "Poznań", href: "/seo/pozycjonowanie-poznan" },
               { city: "Gdańsk", href: "/uslugi/pozycjonowanie/gdansk" },
               { city: "Łódź", href: "/uslugi/pozycjonowanie/lodz" },
               { city: "Białystok", href: "/uslugi/pozycjonowanie/bialystok" },

@@ -4,6 +4,8 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "redirects": [
+    { "source": "/uslugi/pozycjonowanie/poznan", "destination": "/seo/pozycjonowanie-poznan", "permanent": true },
+    { "source": "/agencja-seo-poznan", "destination": "/seo/pozycjonowanie-poznan", "permanent": true },
     {"source": "/uslugi/pozycjonowanie/katowice", "destination": "/seo/pozycjonowanie-katowice", "permanent": true},
     {"source": "/uslugi/pozycjonowanie/krakow", "destination": "/seo/pozycjonowanie-krakow", "permanent": true},
     {"source": "/agencja-seo-krakow", "destination": "/seo/pozycjonowanie-krakow", "permanent": true},

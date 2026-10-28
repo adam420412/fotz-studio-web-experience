@@ -483,7 +483,7 @@ const PozycjonowanieKalisz = () => {
             {[
               { city: "Warszawa", href: "/uslugi/pozycjonowanie/warszawa" },
               { city: "Kraków", href: "/seo/pozycjonowanie-krakow" },
-              { city: "Poznań", href: "/uslugi/pozycjonowanie/poznan" },
+              { city: "Poznań", href: "/seo/pozycjonowanie-poznan" },
               { city: "Wrocław", href: "/uslugi/pozycjonowanie/wroclaw" },
               { city: "Gdańsk", href: "/uslugi/pozycjonowanie/gdansk" },
               { city: "Łódź", href: "/uslugi/pozycjonowanie/lodz" },

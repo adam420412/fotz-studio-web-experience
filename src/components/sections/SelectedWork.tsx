@@ -4,11 +4,12 @@ import { workCollections, workImages } from "@/data/selected-work.mjs";
 import imageVariants from "@/data/selected-work-images.json";
 import { getWorkCollection } from "@/lib/selected-work.mjs";
 
-export function SelectedWork() {
+export function SelectedWork({ excludeImageId }: { excludeImageId?: string } = {}) {
   const { pathname } = useLocation();
   const collectionId = getWorkCollection(pathname);
   if (!collectionId) return null;
   const collection = workCollections[collectionId];
+  const images = collection.images.filter((id: string) => id !== excludeImageId);
 
   return <section id="kadry-z-realizacji" data-work-collection={collectionId} aria-labelledby="selected-work-heading" className="border-y border-border bg-muted/20 py-14 md:py-20 scroll-mt-24">
     <div className="container-wide px-6 md:px-12">
@@ -20,15 +21,15 @@ export function SelectedWork() {
         </div>
         <Link to="/realizacje" className="dv-btn dv-btn-secondary self-start shrink-0">Całe portfolio <ArrowUpRight className="w-4 h-4" aria-hidden="true" /></Link>
       </div>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {collection.images.map((id: string) => {
+      <div className={`grid sm:grid-cols-2 ${images.length > 2 ? "lg:grid-cols-3" : ""} gap-6`}>
+        {images.map((id: string) => {
           const item = workImages[id];
           const variants = imageVariants[id as keyof typeof imageVariants];
           const fallback = variants[Math.min(1, variants.length - 1)];
           return <Link key={id} to={item.href} className="block min-w-0 group rounded-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
             <figure>
               <div className="aspect-[4/3] overflow-hidden rounded-2xl border border-border bg-muted">
-                <img src={fallback.src} srcSet={variants.map(image => `${image.src} ${image.width}w`).join(', ')} sizes="(min-width: 1536px) 440px, (min-width: 1024px) 30vw, (min-width: 640px) 45vw, 90vw" width={fallback.width} height={fallback.height} alt={item.alt} loading="lazy" decoding="async" className="h-full w-full object-cover motion-safe:transition-transform motion-safe:duration-500 motion-safe:group-hover:scale-[1.025]" />
+                <img src={fallback.src} srcSet={variants.map(image => `${image.src} ${image.width}w`).join(', ')} sizes={images.length > 2 ? "(min-width: 1536px) 440px, (min-width: 1024px) 30vw, (min-width: 640px) 45vw, 90vw" : "(min-width: 1536px) 680px, (min-width: 640px) 45vw, 90vw"} width={fallback.width} height={fallback.height} alt={item.alt} loading="lazy" decoding="async" className="h-full w-full object-cover motion-safe:transition-transform motion-safe:duration-500 motion-safe:group-hover:scale-[1.025]" />
               </div>
               <figcaption className="pt-4">
                 <p className="text-xs uppercase tracking-wider text-muted-foreground mb-2">{item.label}</p>

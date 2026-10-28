@@ -24,6 +24,7 @@ interface ServiceEditorialProps {
   path: string;
   area?: string;
   workAfterScope?: boolean;
+  galleryExcludeHero?: boolean;
   enquiryVariant?: string;
   summary: string[];
   scopeTitle: string;
@@ -37,14 +38,14 @@ interface ServiceEditorialProps {
 }
 
 /** Shared presentation; each offer keeps its own scope, evidence and answers. */
-export function ServiceEditorial({ title, eyebrow, lead, path, area = "Polska", workAfterScope = false, enquiryVariant, summary, scopeTitle, scope, sections, faqs, faqTitle = "Przed rozpoczęciem współpracy", contactDescription = "Prześlij adres strony, opisz cel i wskaż, co chcesz zmienić. Na tej podstawie ustalimy następny krok.", contactLabel = "Porozmawiajmy o projekcie", priceNote }: ServiceEditorialProps) {
+export function ServiceEditorial({ title, eyebrow, lead, path, area = "Polska", workAfterScope = false, galleryExcludeHero = false, enquiryVariant, summary, scopeTitle, scope, sections, faqs, faqTitle = "Przed rozpoczęciem współpracy", contactDescription = "Prześlij adres strony, opisz cel i wskaż, co chcesz zmienić. Na tej podstawie ustalimy następny krok.", contactLabel = "Porozmawiajmy o projekcie", priceNote }: ServiceEditorialProps) {
   const contactHref = enquiryHref(serviceForPath(path), enquiryVariant);
   const collection = workCollections[getWorkCollection(path) ?? "studio"];
   const imageId = collection.images[0] as keyof typeof imageVariants;
   const work = workImages[imageId];
   const variants = imageVariants[imageId];
   const cover = variants[Math.min(1, variants.length - 1)];
-  return <Layout workPlacement={workAfterScope ? "manual" : "end"}>
+  return <Layout workPlacement={workAfterScope ? "manual" : "end"} workExcludeImageId={galleryExcludeHero ? imageId : undefined}>
     <BreadcrumbSchema items={[{ name: "Strona główna", url: "/" }, { name: "Usługi", url: "/uslugi" }, { name: title, url: path }]} />
     <ServiceSchema name={title} description={lead} areaServed={area} />
     <FAQSchema items={faqs} />
@@ -89,7 +90,7 @@ export function ServiceEditorial({ title, eyebrow, lead, path, area = "Polska", 
       </div>
     </section>
 
-    {workAfterScope && <SelectedWork />}
+    {workAfterScope && <SelectedWork excludeImageId={galleryExcludeHero ? imageId : undefined} />}
 
     <div id="szczegoly" className="container-wide px-6 md:px-12 py-12 md:py-16 scroll-mt-28">
       {sections.map((item, index) => <section key={item.title} className="grid md:grid-cols-[1fr_1.4fr] gap-5 md:gap-12 py-8 border-b border-border first:pt-0">

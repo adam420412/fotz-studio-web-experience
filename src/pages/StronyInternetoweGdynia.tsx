@@ -577,7 +577,7 @@ const StronyInternetoweGdynia = () => {
                 { label: "Strony internetowe Gdańsk", to: "/uslugi/strony-internetowe/gdansk" },
                 { label: "Strony internetowe Poznań", to: "/uslugi/strony-internetowe/poznan" },
                 { label: "Strony internetowe Warszawa", to: "/uslugi/strony-internetowe/warszawa" },
-                { label: "Agencja SEO Poznań", to: "/agencja-seo-poznan" },
+                { label: "Agencja SEO Poznań", to: "/seo/pozycjonowanie-poznan" },
                 { label: "Sklepy internetowe Poznań", to: "/uslugi/sklepy-internetowe/poznan" },
                 { label: "Pozycjonowanie stron", to: "/seo/pozycjonowanie" },
               ].map((link) => (

@@ -13,9 +13,10 @@ const ChatbotFAQ = lazy(() => import("../ChatbotFAQ").then(m => ({ default: m.Ch
 interface LayoutProps {
   children: ReactNode;
   workPlacement?: "end" | "manual";
+  workExcludeImageId?: string;
 }
 
-export function Layout({ children, workPlacement = "end" }: LayoutProps) {
+export function Layout({ children, workPlacement = "end", workExcludeImageId }: LayoutProps) {
   const { pathname } = useLocation();
   const pageKind = pathname.startsWith("/blog/") ? "article" : "page";
   const showWidgets = !["/kontakt", "/konsultacja", "/podziekowanie"].includes(pathname);
@@ -33,7 +34,7 @@ export function Layout({ children, workPlacement = "end" }: LayoutProps) {
       <a href="#main-content" className="skip-link">Przejdź do treści</a>
       <Navbar />
       <ConversionTracking />
-      <main id="main-content" tabIndex={-1} className="flex-1 min-w-0">{children}{workPlacement === "end" && <SelectedWork />}</main>
+      <main id="main-content" tabIndex={-1} className="flex-1 min-w-0">{children}{workPlacement === "end" && <SelectedWork excludeImageId={workExcludeImageId} />}</main>
       <Footer />
       {loadWidgets && showWidgets && (
         <Suspense fallback={null}>
