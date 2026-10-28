@@ -456,6 +456,7 @@ export default function AgencjaMarketingowaLublin() {
       <LocalSEOBoost
         city="Lublin"
         cityLocative="Lublinie"
+        cityGenitive="Lublina"
         voivodeshipLocative="lubelskim"
         variant="agency"
       />

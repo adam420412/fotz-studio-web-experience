@@ -22,6 +22,8 @@ import { extractMetadata, escapeHtml, readSource, literal } from './lib/seo-meta
 import { getBlogMetadata } from '../src/lib/blog-seo.mjs';
 import { addRoutePreloads, addHeroPreload } from './lib/route-preloads.mjs';
 import { notFoundHtml } from '../src/lib/not-found-html.mjs';
+import { injectMeta } from '../src/lib/seo-document.mjs';
+import { loadEnv } from 'vite';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
@@ -43,6 +45,13 @@ const template = clientHtml.includes('<!-- fotz-body:start -->')
   ? JSON.parse(fs.readFileSync(templatePath, 'utf8')) : clientHtml;
 if (!template.includes('<div id="root"></div>')) throw new Error('Expected an empty client root or a marked prerendered body. Rebuild the client first.');
 fs.writeFileSync(templatePath, JSON.stringify(template));
+// Runtime publishing uses the same built assets and renderer as static pages.
+fs.writeFileSync(path.join(ROOT, '.ssr/blog-template.html'), template);
+const publicEnv = loadEnv('production', ROOT, 'VITE_');
+const publicCms = { url: publicEnv.VITE_SUPABASE_URL, key: publicEnv.VITE_SUPABASE_PUBLISHABLE_KEY };
+if (!publicCms.url || !publicCms.key) throw new Error('Missing public CMS configuration');
+if (!publicCms.key.startsWith('sb_publishable_') && JSON.parse(Buffer.from(publicCms.key.split('.')[1] || '', 'base64url')).role !== 'anon') throw new Error('CMS runtime must use only a public anonymous key');
+fs.writeFileSync(path.join(ROOT, '.ssr/public-cms.json'), JSON.stringify(publicCms));
 const jsonLdPattern = /<script\b[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/gi;
 const defaultSchemas = [...template.matchAll(jsonLdPattern)].map(match => JSON.parse(match[1]));
 process.env.NODE_ENV ||= 'production';
@@ -118,60 +127,6 @@ function findComponentFile(componentName) {
 /**
  * Inject meta tags into the HTML template
  */
-function injectMeta(html, metadata) {
-  const meta = Object.fromEntries(Object.entries(metadata).map(([key, value]) => [key, typeof value === 'string' ? escapeHtml(value) : value]));
-  // Step 1: Remove ALL existing tags that will be replaced with page-specific ones.
-  // Run replacements TWICE to handle the case where the template itself was
-  // already prerendered (e.g. dist/index.html modified by a previous run).
-  // This ensures idempotency no matter how many times the script is re-run.
-  for (let pass = 0; pass < 2; pass++) {
-    html = html.replace(/<title\b[^>]*>[^<]*<\/title>/g, '');
-    html = html.replace(/<link\b(?=[^>]*\brel="canonical")[^>]*\/?>/gi, '');
-    html = html.replace(/<meta\b[^>]*\bname="description"[^>]*\/?>/gi, '');
-    html = html.replace(/<meta\b[^>]*\bname="keywords"[^>]*\/?>/gi, '');
-    html = html.replace(/<meta\b[^>]*\bname="robots"[^>]*\/?>/gi, '');
-    html = html.replace(/<meta\b[^>]*\bproperty="og:[^>]*\/?>/gi, '');
-    html = html.replace(/<meta\b[^>]*\bname="twitter:[^>]*\/?>/gi, '');
-    // Also strip the prerendered comment block to avoid accumulation
-    html = html.replace(/\s*<!-- Prerendered SEO meta -->\s*/g, '\n    ');
-  }
-
-  // Step 2: Build the full set of page-specific meta tags
-  // Add data-rh="true" so react-helmet-async replaces these tags instead of duplicating
-  const metaTags = [
-    `<title data-rh="true">${meta.title}</title>`,
-    `<meta data-rh="true" name="description" content="${meta.description}" />`,
-    meta.keywords ? `<meta data-rh="true" name="keywords" content="${meta.keywords}" />` : '',
-    meta.noIndex ? '' : `<link data-rh="true" rel="canonical" href="${meta.canonical}" />`,
-    `<meta data-rh="true" name="robots" content="${meta.noIndex ? 'noindex, nofollow' : 'index, follow'}" />`,
-    `<meta data-rh="true" property="og:title" content="${meta.ogTitle || meta.title}" />`,
-    `<meta data-rh="true" property="og:description" content="${meta.ogDescription || meta.description}" />`,
-    `<meta data-rh="true" property="og:url" content="${meta.canonical}" />`,
-    `<meta data-rh="true" property="og:image" content="${meta.ogImage}" />`,
-    `<meta data-rh="true" property="og:type" content="${meta.ogType || 'website'}" />`,
-    `<meta data-rh="true" property="og:locale" content="pl_PL" />`,
-    `<meta data-rh="true" property="og:site_name" content="Fotz Studio" />`,
-    `<meta data-rh="true" name="twitter:card" content="summary_large_image" />`,
-    `<meta data-rh="true" name="twitter:title" content="${meta.ogTitle || meta.title}" />`,
-    `<meta data-rh="true" name="twitter:description" content="${meta.ogDescription || meta.description}" />`,
-    `<meta data-rh="true" name="twitter:image" content="${meta.ogImage}" />`,
-  ].filter(Boolean).join('\n    ');
-
-  // Step 3: Insert after <meta name="author" ...> line
-  html = html.replace(
-    '<meta name="author" content="Fotz Studio" />',
-    `<meta name="author" content="Fotz Studio" />\n    <!-- Prerendered SEO meta -->\n    ${metaTags}`
-  );
-
-  // Show a useful fallback only when JavaScript is disabled; do not add
-  // hidden duplicate headings and links to the rendered page.
-  html = html.replace(/<section\s+id="seo-prerender"[^>]*>[\s\S]*?<\/section>\s*/g, '');
-  html = html.replace(/<noscript id="seo-fallback">[\s\S]*?<\/noscript>\s*/g, '');
-  const fallback = `<noscript id="seo-fallback"><main style="max-width:70ch;margin:4rem auto;padding:1.5rem"><h1>${meta.title}</h1><p>${meta.description}</p><p>Pełna witryna wymaga JavaScript. Skontaktuj się z nami: <a href="tel:+48790814814">+48 790 814 814</a> · <a href="mailto:adam@fotz.pl">adam@fotz.pl</a>.</p><nav><a href="/">Strona główna</a> · <a href="/uslugi">Usługi</a> · <a href="/kontakt">Kontakt</a></nav></main></noscript>`;
-  html = html.replace('<div id="root">', fallback + '<div id="root">');
-
-  return html;
-}
 
 // Main
 console.log('🔍 Extracting routes from App.tsx...');

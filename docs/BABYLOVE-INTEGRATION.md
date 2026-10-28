@@ -100,3 +100,7 @@ Wszystkie zapełnia zarówno `babylove-webhook`, jak i `babylove-sync`.
 - **Cron nie odpala** — `SELECT * FROM cron.job;` i `SELECT * FROM cron.job_run_details ORDER BY start_time DESC LIMIT 20;`.
 - **`pg_net` wymaga `app.settings.supabase_url`** — ustaw na hostowanym Supabase:
   `ALTER DATABASE postgres SET app.settings.supabase_url = 'https://<ref>.supabase.co';`.
+
+## Udostępnienie nowego wpisu na fotz-studio.pl
+
+Witryna odczytuje nowe, opublikowane wpisy bezpośrednio z publicznego CMS i generuje pełny HTML oraz aktualizuje mapę bloga bez przebudowy całego serwisu. Nie trzeba dodawać Deploy Hook ani kolejnych kluczy administracyjnych. Szczegóły cache, rozróżnienia 404/503 i aktualizacji istniejących snapshotów: [PUBLIC-CONTENT-ROUTES.md](seo/PUBLIC-CONTENT-ROUTES.md).

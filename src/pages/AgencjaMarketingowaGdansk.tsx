@@ -1,3 +1,4 @@
+import { business } from "@/data/business.mjs";
 import { Layout } from "@/components/layout/Layout";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { Button } from "@/components/ui/button";
@@ -481,7 +482,7 @@ export default function AgencjaMarketingowaGdansk() {
                 <div className="text-center">
                   <Building2 className="w-8 h-8 text-blue-600 mx-auto mb-2" />
                   <h3 className="font-bold text-gray-900 mb-1">Email</h3>
-                  <p className="text-gray-700">kontakt@fotz.pl</p>
+                  <a className="text-gray-700 underline underline-offset-4" href={`mailto:${business.email}`}>{business.email}</a>
                 </div>
               </div>
             </CardContent>

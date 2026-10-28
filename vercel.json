@@ -162,7 +162,9 @@
     { "source": "/portfolio/:path*", "destination": "/realizacje/:path*", "permanent": true }
   ],
   "functions": {
-    "api/send-contact.js": { "maxDuration": 10 }
+    "api/send-contact.js": { "maxDuration": 10 },
+    "api/blog-article.js": { "maxDuration": 30, "includeFiles": ".ssr/**" },
+    "api/blog-sitemap.js": { "maxDuration": 30, "includeFiles": "{.ssr/public-cms.json,public/sitemap-blog.xml}" }
   },
   "rewrites": [
     { "source": "/mapa-strony", "destination": "/mapa-strony-v3.html" },

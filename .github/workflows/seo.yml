@@ -19,6 +19,8 @@ jobs:
       - run: npm ci --no-audit --no-fund
       - name: Build static content from reviewed public snapshots
         run: npm run build
+      - name: Verify live CMS rendering without publishing test content
+        run: node scripts/check-live-blog-render.mjs
       - name: Check all generated pages, sitemap children and internal links
         run: npm run seo:check
       - name: Lighthouse mobile samples and SEO regression checks

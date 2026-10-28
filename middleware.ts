@@ -116,6 +116,10 @@ export default async function middleware(request: Request): Promise<Response> {
     });
   }
 
+  if (pathname === '/sitemap-blog.xml') {
+    return new Response(null, { headers: { 'x-middleware-rewrite': new URL('/api/blog-sitemap', request.url).href } });
+  }
+
   // 1) Allow assets, API, sitemaps, well-known files — never 404 these.
   for (const prefix of ALLOW_PREFIXES) {
     if (pathname.startsWith(prefix)) return new Response(null, { status: 200, headers: { 'x-middleware-next': '1' } });
@@ -127,6 +131,15 @@ export default async function middleware(request: Request): Promise<Response> {
   // A file-like URL copied from an article is not a public content route.
   if (decodedPath !== null && !ASSET_EXT_RE.test(decodedPath) && isKnownRoute(decodedPath)) {
     return new Response(null, { status: 200, headers: { 'x-middleware-next': '1' } });
+  }
+
+  // New CMS publications need no rebuild. The handler checks public published
+  // status, renders full HTML, and returns a real 404 for nonexistent slugs.
+  const slug = decodedPath?.match(/^\/blog\/([a-z0-9]+(?:-[a-z0-9]+)*)\/?$/)?.[1];
+  if (slug && slug.length <= 200) {
+    const destination = new URL('/api/blog-article', request.url);
+    destination.searchParams.set('slug', slug);
+    return new Response(null, { headers: { 'x-middleware-rewrite': destination.href } });
   }
 
   // 3) Unknown route → real 404, without a second request or a SPA redirect.
