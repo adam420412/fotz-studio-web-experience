@@ -4,10 +4,13 @@ import { getWorkCollection } from '../src/lib/selected-work.mjs';
 import { workCollections } from '../src/data/selected-work.mjs';
 import { getIndustry } from '../src/data/industries.mjs';
 import { industryWork } from '../src/data/industry-work.mjs';
+import { getServiceWork, serviceWork, serviceWorkRoutes } from '../src/data/service-work.mjs';
+
+const serviceImages = { ...JSON.parse(await readFile(new URL('../src/data/industry-work-images.json', import.meta.url))), ...JSON.parse(await readFile(new URL('../src/data/service-work-images.json', import.meta.url))) };
 
 const root = path.resolve(process.env.FOTZ_BUILD_DIR || 'dist');
 const output = path.resolve(process.env.FOTZ_QA_DIR || 'docs/seo/qa-2026-10-08/photos');
-const report = { pages: 0, galleryPages: 0, industryPages: 0, collections: {}, errors: [] };
+const report = { pages: 0, galleryPages: 0, industryPages: 0, servicePages: 0, collections: {}, errors: [] };
 async function inspect(dir) {
   for (const file of await readdir(dir, { withFileTypes: true })) {
     const filename = path.join(dir, file.name);
@@ -35,6 +38,28 @@ async function inspect(dir) {
       }
       if (industry && !html.includes('aria-controls="industries-menu"')) report.errors.push({ route, issue: 'missing industry navigation' });
     }
+    const serviceId = getServiceWork(route);
+    const serviceGalleries = [...html.matchAll(/<section\b[^>]*data-service-work="([^"]+)"[^>]*>([\s\S]*?)<\/section>/g)];
+    if (serviceGalleries.length !== (serviceId ? 1 : 0)) report.errors.push({ route, issue: 'incorrect number of service galleries' });
+    if (serviceId) {
+      report.servicePages++;
+      const body = serviceGalleries[0]?.[2] || '';
+      if (serviceGalleries[0]?.[1] !== serviceId) report.errors.push({ route, issue: 'wrong service collection' });
+      const projects = serviceWork[serviceId].projects;
+      if ((body.match(/<figure\b/g) || []).length !== projects.length) report.errors.push({ route, issue: 'wrong service project count' });
+      for (const project of projects) {
+        const variants = serviceImages[project.image];
+        if (!variants?.length || !body.includes(variants.at(-1).src)) report.errors.push({ route, issue: `missing service image: ${project.image}` });
+        for (const file of [...(variants || []).map(v => v.src), ...(project.video ? [project.video] : [])]) {
+          if (!file.startsWith('/') || !await stat(path.join(root, file)).then(s => s.size > 0).catch(() => false)) report.errors.push({ route, issue: `missing service asset: ${file}` });
+        }
+        if (project.video && !body.includes(`src="${project.video}"`)) report.errors.push({ route, issue: `missing service film: ${project.video}` });
+      }
+      for (const match of body.matchAll(/<video\b([^>]+)>/g)) {
+        const attrs = Object.fromEntries([...match[1].matchAll(/([\w-]+)="([^"]*)"/g)].map(m => [m[1], m[2]]));
+        if (attrs.preload !== 'none' || !('controls' in attrs) || !('playsinline' in attrs) || 'autoplay' in attrs || !attrs.poster || !attrs['aria-label']) report.errors.push({ route, issue: 'service video must not autoplay or preload' });
+      }
+    }
     const expected = getWorkCollection(route);
     const sections = [...html.matchAll(/<section\b[^>]*data-work-collection="([^"]+)"[^>]*>([\s\S]*?)<\/section>/g)];
     if (sections.length !== (expected ? 1 : 0)) { report.errors.push({ route, issue: `expected ${expected ? 1 : 0} gallery, found ${sections.length}` }); continue; }
@@ -61,6 +86,7 @@ async function inspect(dir) {
 }
 await inspect(root);
 if (report.industryPages !== Object.keys(industryWork).length) report.errors.push({ issue: 'not all industry portfolio routes were built' });
+if (report.servicePages !== Object.keys(serviceWorkRoutes).length) report.errors.push({ issue: 'not all service portfolio routes were built' });
 await mkdir(output, { recursive: true });
 await writeFile(path.join(output, 'photo-coverage.json'), JSON.stringify(report, null, 2) + '\n');
 console.log(JSON.stringify(report));

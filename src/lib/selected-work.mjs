@@ -1,8 +1,10 @@
 import { industryWork } from '../data/industry-work.mjs';
+import { getServiceWork } from '../data/service-work.mjs';
 
 /** Select by the page's topic, never by city or an invented client relationship. */
 export function getWorkCollection(pathname) {
   const path = pathname.replace(/\/+$/, '') || '/';
+  if (getServiceWork(path)) return null;
   if (path === '/dla-kogo' || (path.startsWith('/dla-kogo/') && industryWork[path.slice('/dla-kogo/'.length)])) return null;
   if (path === '/agencja-marketingowa/poznan') return 'localAgency';
   if (path === '/pozycjonowanie/legnica') return 'web';

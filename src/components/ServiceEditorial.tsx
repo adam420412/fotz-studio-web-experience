@@ -3,6 +3,8 @@ import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
 import { SelectedWork } from "@/components/sections/SelectedWork";
+import { ServiceWork } from "@/components/sections/ServiceWork";
+import { getServiceWork } from "@/data/service-work.mjs";
 import { BreadcrumbSchema, FAQSchema, ServiceSchema } from "@/components/seo/StructuredData";
 import { enquiryHref, serviceForPath } from "@/lib/enquiry.mjs";
 import { workCollections, workImages } from "@/data/selected-work.mjs";
@@ -40,7 +42,8 @@ interface ServiceEditorialProps {
 /** Shared presentation; each offer keeps its own scope, evidence and answers. */
 export function ServiceEditorial({ title, eyebrow, lead, path, area = "Polska", workAfterScope = false, galleryExcludeHero = false, enquiryVariant, summary, scopeTitle, scope, sections, faqs, faqTitle = "Przed rozpoczęciem współpracy", contactDescription = "Prześlij adres strony, opisz cel i wskaż, co chcesz zmienić. Na tej podstawie ustalimy następny krok.", contactLabel = "Porozmawiajmy o projekcie", priceNote }: ServiceEditorialProps) {
   const contactHref = enquiryHref(serviceForPath(path), enquiryVariant);
-  const collection = workCollections[getWorkCollection(path) ?? "studio"];
+  const serviceCollection = getServiceWork(path);
+  const collection = workCollections[serviceCollection === 'product' ? 'product' : getWorkCollection(path) ?? "studio"];
   const imageId = collection.images[0] as keyof typeof imageVariants;
   const work = workImages[imageId];
   const variants = imageVariants[imageId];
@@ -61,7 +64,7 @@ export function ServiceEditorial({ title, eyebrow, lead, path, area = "Polska", 
           {priceNote && <p className="mt-6 text-lg font-medium text-primary">{priceNote}</p>}
           <div className="flex flex-wrap gap-3 mt-8">
             <Link to={contactHref} className="dv-btn dv-btn-primary">{contactLabel} <ArrowRight aria-hidden="true" className="w-4 h-4" /></Link>
-            <a href="#zakres" className="dv-btn dv-btn-secondary">Zobacz zakres</a>
+            <a href={serviceCollection ? '#realizacje-uslugi' : '#zakres'} className="dv-btn dv-btn-secondary">{serviceCollection ? 'Zobacz realizacje' : 'Zobacz zakres'}</a>
           </div>
         </div>
         <figure className="offer-visual min-w-0">
@@ -90,7 +93,7 @@ export function ServiceEditorial({ title, eyebrow, lead, path, area = "Polska", 
       </div>
     </section>
 
-    {workAfterScope && <SelectedWork excludeImageId={galleryExcludeHero ? imageId : undefined} />}
+    {serviceCollection ? <ServiceWork path={path} /> : workAfterScope && <SelectedWork excludeImageId={galleryExcludeHero ? imageId : undefined} />}
 
     <div id="szczegoly" className="container-wide px-6 md:px-12 py-12 md:py-16 scroll-mt-28">
       {sections.map((item, index) => <section key={item.title} className="grid md:grid-cols-[1fr_1.4fr] gap-5 md:gap-12 py-8 border-b border-border first:pt-0">

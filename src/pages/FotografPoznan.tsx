@@ -1,3 +1,4 @@
+import { ServiceWork } from "@/components/sections/ServiceWork";
 import { motion } from "framer-motion";
 import { ArrowRight, Camera, Users, Star, Heart, Calendar, MapPin, Clock, Image } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -169,12 +170,14 @@ const FotografPoznan = () => {
                 </Link>
               </Button>
               <Button variant="outline" size="lg" asChild className="w-full sm:w-auto">
-                <Link to="/realizacje">Zobacz portfolio</Link>
+                <a href="#realizacje-uslugi">Zobacz nasze realizacje</a>
               </Button>
             </div>
           </motion.div>
         </div>
       </section>
+
+      <ServiceWork path="/uslugi/fotografia" />
 
       {/* Gallery Section */}
       <section className="py-16 sm:py-20 bg-secondary/30">
