@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { SplitText } from "@/components/motion/SplitText";
 
 export function Services() {
   const { t } = useLanguage();
@@ -50,7 +51,7 @@ export function Services() {
             <span className="dv-eyebrow mb-6 inline-block">
               {t("Nasze usługi", "Our services")}
             </span>
-            <h2
+            <SplitText
               className="font-geist"
               style={{
                 fontSize: "clamp(40px, 5vw, 88px)",
@@ -58,13 +59,8 @@ export function Services() {
                 lineHeight: 0.98,
                 fontWeight: 400,
               }}
-            >
-              {t("Nasze", "Our")}
-              <br />
-              <span className="dv-text-grad italic">
-                {t("obszary pracy", "areas of work")}
-              </span>
-            </h2>
+              lines={[t("Nasze", "Our"), { text: t("obszary pracy", "areas of work"), className: "dv-text-grad italic" }]}
+            />
           </div>
           <div className="flex items-end">
             <p
@@ -85,16 +81,16 @@ export function Services() {
 
         {/* Service rows */}
         <div className="space-y-0">
-          {services.map((service) => (
+          {services.map((service, i) => (
+            <div key={service.num} data-reveal style={{ "--stagger": i } as React.CSSProperties}>
             <Link
-              key={service.num}
               to={service.href}
-              className="group grid grid-cols-1 lg:grid-cols-[80px_1.2fr_1.5fr_auto] gap-6 lg:gap-10 py-10 items-start transition-colors"
+              className="service-row group grid grid-cols-1 lg:grid-cols-[80px_1.2fr_1.5fr_auto] gap-6 lg:gap-10 py-10 items-start"
               style={{ borderTop: "1px solid var(--dv-hair)" }}
             >
               {/* Number */}
               <span
-                className="dv-mono text-[13px]"
+                className="service-num dv-mono text-[13px]"
                 style={{ color: "var(--dv-accent-pink)" }}
               >
                 {service.num}
@@ -138,6 +134,7 @@ export function Services() {
                 />
               </div>
             </Link>
+            </div>
           ))}
         </div>
       </div>

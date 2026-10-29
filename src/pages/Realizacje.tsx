@@ -1,5 +1,5 @@
 import { InstagramProjects } from "@/components/sections/InstagramProjects";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowUpRight, Expand } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
@@ -11,6 +11,9 @@ import { projects, galleryCategories, galleryImages } from "@/data/portfolio";
 import { portfolioPreviews } from "@/data/portfolio-previews";
 import { business } from "@/data/business.mjs";
 import { cn } from "@/lib/utils";
+import { SplitText } from "@/components/motion/SplitText";
+import { useFlip } from "@/components/motion/useFlip";
+import { PointerFollower, usePointerTilt } from "@/components/motion/pointer";
 import "./realizacje.css";
 
 const projectCategories = ["Wszystkie", "Strony www", "Aplikacje i 3D", "Kampanie reklamowe", "E-commerce", "Wizualizacje 3D"];
@@ -41,6 +44,10 @@ export default function Realizacje() {
   const filteredProjects = orderedProjects.filter(project => activeProjectCategory === "Wszystkie" || project.category === activeProjectCategory);
   const filteredGallery = galleryImages.filter(photo => activeGalleryCategory === "all" || photo.category === activeGalleryCategory);
   const displayedPhotos = filteredGallery.slice(0, visiblePhotos);
+  const projectGridRef = useRef<HTMLDivElement>(null);
+  const projectFlip = useFlip(projectGridRef);
+  const photoGridRef = useRef<HTMLDivElement>(null);
+  const photoFlip = useFlip(photoGridRef);
 
   return (
     <Layout>
@@ -51,7 +58,7 @@ export default function Realizacje() {
         <div className="container-wide px-6 md:px-12">
           <p className="dv-eyebrow mb-5">Portfolio FOTZ Studio</p>
           <div className="grid lg:grid-cols-[1.3fr_1fr] gap-6 lg:gap-16 items-end">
-            <h1 className="text-[clamp(42px,6.4vw,88px)] leading-[1.02] tracking-[-.055em]">Pomysły, które<br /><span className="dv-text-grad italic">przybrały formę.</span></h1>
+            <SplitText as="h1" intro className="text-[clamp(42px,6.4vw,88px)] leading-[1.02] tracking-[-.055em]" lines={["Pomysły, które", { text: "przybrały formę.", className: "dv-text-grad italic" }]} />
             <p className="text-lg text-muted-foreground leading-relaxed max-w-xl">Strony, kampanie i materiały wizualne. Zobacz wybrane realizacje, sprawdź zakres prac i wybierz przykłady bliskie Twojemu projektowi.</p>
           </div>
           <nav aria-label="Sekcje portfolio" className="mt-8 flex flex-wrap gap-3">
@@ -59,7 +66,7 @@ export default function Realizacje() {
             <a href="#filmy" className="dv-btn dv-btn-secondary">Filmy <span className="text-muted-foreground">{videos.length}</span></a>
             <a href="#zdjecia" className="dv-btn dv-btn-secondary">Zdjęcia i 3D <span className="text-muted-foreground">{galleryImages.length}</span></a>
           </nav>
-          <Link to="/realizacje/enea-stadion" className="portfolio-feature group relative mt-10 block overflow-hidden rounded-2xl bg-neutral-950 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
+          <Link to="/realizacje/enea-stadion" style={{ "--intro-delay": "420ms" } as React.CSSProperties} className="portfolio-feature intro-rise group relative mt-10 block overflow-hidden rounded-2xl bg-neutral-950 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
             <img src="/work/stadium-1200.webp" srcSet="/work/stadium-480.webp 480w, /work/stadium-800.webp 800w, /work/stadium-1200.webp 1200w" sizes="(max-width: 767px) calc(100vw - 48px), (max-width: 1279px) calc(100vw - 96px), 1184px" width="1200" height="898" fetchPriority="high" alt="Enea Stadion w wieczornym świetle i czerwone race na pierwszym planie" className="portfolio-media absolute inset-0 h-full w-full object-cover object-center" />
             <span aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent" />
             <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-5 p-6 md:p-10">
@@ -76,11 +83,12 @@ export default function Realizacje() {
           <div className="grid gap-8 lg:grid-cols-[170px_minmax(0,1fr)] lg:gap-10">
           <div className="lg:sticky lg:top-28 self-start">
             <div role="group" aria-label="Filtruj projekty" className="flex flex-wrap gap-2 lg:flex-col lg:items-stretch">
-              {projectCategories.map(category => <button key={category} type="button" aria-pressed={activeProjectCategory === category} aria-controls="project-grid" onClick={() => setActiveProjectCategory(category)} className={cn(filterClass(activeProjectCategory === category), "flex items-center justify-between gap-3 text-left lg:rounded-xl")}><span>{category}</span><span className="text-xs opacity-70">{category === "Wszystkie" ? projects.length : projects.filter(project => project.category === category).length}</span></button>)}
+              {projectCategories.map(category => <button key={category} type="button" aria-pressed={activeProjectCategory === category} aria-controls="project-grid" onClick={() => { if (category !== activeProjectCategory) { projectFlip.capture(); setActiveProjectCategory(category); } }} className={cn(filterClass(activeProjectCategory === category), "flex items-center justify-between gap-3 text-left lg:rounded-xl")}><span>{category}</span><span className="text-xs opacity-70">{category === "Wszystkie" ? projects.length : projects.filter(project => project.category === category).length}</span></button>)}
             </div>
             <p role="status" className="text-xs text-muted-foreground mt-5 leading-relaxed">Wyświetlono {filteredProjects.length} z {projects.length} projektów</p>
           </div>
-          <div id="project-grid" className="grid min-w-0 sm:grid-cols-2 gap-x-6 gap-y-10 md:gap-y-14">
+          <PointerFollower scopeRef={projectGridRef}>
+          <div id="project-grid" ref={projectGridRef} className="grid min-w-0 sm:grid-cols-2 gap-x-6 gap-y-10 md:gap-y-14">
             {filteredProjects.map((project, index) => {
               const card = <>
                 <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-border bg-muted">
@@ -96,9 +104,11 @@ export default function Realizacje() {
                 </div>
               </>;
               const className = "portfolio-project group flex h-full flex-col rounded-2xl text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary";
-              return <article id={project.id} key={`${activeProjectCategory}-${project.id}`} className="portfolio-enter min-w-0 scroll-mt-28" style={{ animationDelay: `${Math.min(index, 3) * 45}ms` }}>{project.hasCase ? <Link to={`/realizacje/${project.id}`} className={className}>{card}</Link> : project.liveUrl ? <a href={project.liveUrl} target="_blank" rel="noopener" className={className} aria-label={`${project.title}, otwiera się w nowej karcie`}>{card}</a> : <button type="button" className={cn(className, "w-full")} onClick={() => setLightbox({ images: [{ src: project.image, alt: project.title }], index: 0 })}>{card}</button>}</article>;
+              const cursor = project.hasCase ? "Zobacz projekt" : project.liveUrl ? "Otwórz stronę" : "Powiększ";
+              return <article id={project.id} key={project.id} data-flip-key={project.id} data-reveal="card" className="min-w-0 scroll-mt-28" style={{ "--stagger": index % 2 } as React.CSSProperties}><TiltTarget label={cursor}>{(tilt) => project.hasCase ? <Link to={`/realizacje/${project.id}`} className={className} {...tilt}>{card}</Link> : project.liveUrl ? <a href={project.liveUrl} target="_blank" rel="noopener" className={className} aria-label={`${project.title}, otwiera się w nowej karcie`} {...tilt}>{card}</a> : <button type="button" className={cn(className, "w-full")} onClick={() => setLightbox({ images: [{ src: project.image, alt: project.title }], index: 0 })} {...tilt}>{card}</button>}</TiltTarget></article>;
             })}
           </div>
+          </PointerFollower>
           </div>
         </div>
       </section>
@@ -109,7 +119,7 @@ export default function Realizacje() {
             <div><p className="dv-eyebrow mb-3">Produkcja video</p><h2 id="videos-heading" className="text-3xl md:text-4xl">Zobacz nasze filmy</h2></div>
             <Link to="/uslugi/produkcja-video" className="underline underline-offset-4">Poznaj ofertę video</Link>
           </div>
-          <div className="portfolio-films grid md:grid-cols-2 gap-6 md:gap-8">{videos.map(video => <PortfolioVideo key={video.src} {...video} />)}</div>
+          <div className="portfolio-films grid md:grid-cols-2 gap-6 md:gap-8">{videos.map((video, i) => <div key={video.src} data-reveal style={{ "--stagger": i % 2 } as React.CSSProperties}><PortfolioVideo {...video} /></div>)}</div>
         </div>
       </section>
 
@@ -120,10 +130,10 @@ export default function Realizacje() {
           <p className="dv-eyebrow mb-3">Galeria</p><h2 id="photos-heading" className="text-3xl md:text-4xl mb-4">Zdjęcia i wizualizacje 3D</h2>
           <p className="text-muted-foreground max-w-2xl mb-7">Koncerty, wydarzenia, portrety i przestrzenie. Wybierz kategorię i otwórz zdjęcie, żeby zobaczyć je w całości.</p>
           <div role="group" aria-label="Filtruj galerię" className="flex flex-wrap gap-2 mb-7">
-            {galleryCategories.map(category => <button key={category.id} type="button" aria-pressed={activeGalleryCategory === category.id} aria-controls="photo-grid" onClick={() => { setActiveGalleryCategory(category.id); setVisiblePhotos(12); }} className={cn(filterClass(activeGalleryCategory === category.id), "flex items-center gap-2")}><category.icon aria-hidden="true" className="w-4 h-4" />{category.label}</button>)}
+            {galleryCategories.map(category => <button key={category.id} type="button" aria-pressed={activeGalleryCategory === category.id} aria-controls="photo-grid" onClick={() => { if (category.id !== activeGalleryCategory) { photoFlip.capture(); setActiveGalleryCategory(category.id); setVisiblePhotos(12); } }} className={cn(filterClass(activeGalleryCategory === category.id), "flex items-center gap-2")}><category.icon aria-hidden="true" className="w-4 h-4" />{category.label}</button>)}
           </div>
-          <div id="photo-grid" className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-5">
-            {displayedPhotos.map((photo, index) => <button key={photo.src} type="button" aria-label={`Powiększ: ${photo.title}`} className="portfolio-photo relative aspect-[4/3] overflow-hidden rounded-xl group focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" onClick={() => setLightbox({ images: filteredGallery.map(image => ({ src: image.src, alt: image.title })), index })}>
+          <div id="photo-grid" ref={photoGridRef} className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-5">
+            {displayedPhotos.map((photo, index) => <button key={photo.src} data-flip-key={photo.src} data-reveal style={{ "--stagger": index % 3 } as React.CSSProperties} type="button" aria-label={`Powiększ: ${photo.title}`} className="portfolio-photo relative aspect-[4/3] overflow-hidden rounded-xl group focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" onClick={() => setLightbox({ images: filteredGallery.map(image => ({ src: image.src, alt: image.title })), index })}>
               <img src={portfolioPreviews[photo.src]?.src ?? photo.src} srcSet={portfolioPreviews[photo.src]?.srcSet} sizes="(max-width: 767px) calc((100vw - 60px) / 2), (max-width: 1279px) calc((100vw - 136px) / 3), 381px" alt="" className="portfolio-media w-full h-full object-cover" loading="lazy" decoding="async" width="640" height="480" />
               <span aria-hidden="true" className="absolute bottom-2 right-2 flex h-8 w-8 items-center justify-center rounded-full bg-black/65 text-white"><Expand className="w-4 h-4" /></span>
             </button>)}
@@ -144,4 +154,18 @@ export default function Realizacje() {
       <ImageLightbox images={lightbox?.images ?? []} currentIndex={lightbox?.index ?? 0} isOpen={lightbox !== null} onClose={() => setLightbox(null)} onNavigate={index => setLightbox(current => current ? { ...current, index } : null)} />
     </Layout>
   );
+}
+
+type TiltProps = {
+  ref: React.Ref<HTMLAnchorElement & HTMLButtonElement>;
+  "data-cursor-label": string;
+  onPointerMove: (e: React.PointerEvent) => void;
+  onPointerLeave: () => void;
+};
+
+/** Gives a project card the pointer tilt and the "Zobacz projekt" bubble label. */
+function TiltTarget({ label, children }: { label: string; children: (props: TiltProps) => React.ReactNode }) {
+  const ref = useRef<HTMLAnchorElement & HTMLButtonElement>(null);
+  const tilt = usePointerTilt(ref, 4);
+  return <>{children({ ref, "data-cursor-label": label, onPointerMove: tilt.onMove, onPointerLeave: tilt.reset })}</>;
 }
