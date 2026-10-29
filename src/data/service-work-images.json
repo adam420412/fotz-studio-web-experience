@@ -1,0 +1,50 @@
+{
+  "rppg": [
+    {
+      "src": "/work/rppg-480.webp",
+      "width": 480,
+      "height": 322,
+      "bytes": 17392
+    },
+    {
+      "src": "/work/rppg-800.webp",
+      "width": 800,
+      "height": 537,
+      "bytes": 31570
+    },
+    {
+      "src": "/work/rppg-1200.webp",
+      "width": 900,
+      "height": 604,
+      "bytes": 36880
+    }
+  ],
+  "krypton-fotografia": [
+    {
+      "src": "/work/services/krypton-fotografia-480.webp",
+      "width": 480,
+      "height": 320,
+      "bytes": 16034
+    },
+    {
+      "src": "/work/services/krypton-fotografia-1280.webp",
+      "width": 1280,
+      "height": 853,
+      "bytes": 55330
+    }
+  ],
+  "enea-nawigator": [
+    {
+      "src": "/work/services/enea-nawigator-480.webp",
+      "width": 480,
+      "height": 300,
+      "bytes": 13590
+    },
+    {
+      "src": "/work/services/enea-nawigator-1200.webp",
+      "width": 1200,
+      "height": 750,
+      "bytes": 43682
+    }
+  ]
+}

@@ -5,6 +5,8 @@ import { PageBreadcrumbs } from '@/components/PageBreadcrumbs';
 import { EnquiryForm } from '@/components/EnquiryForm';
 import { FeaturedFilms } from '@/components/sections/FeaturedFilms';
 import { SelectedWork } from '@/components/sections/SelectedWork';
+import { ServiceWork } from '@/components/sections/ServiceWork';
+import { getServiceWork } from '@/data/service-work.mjs';
 import { KlagemConfigurator } from '@/components/sections/KlagemConfigurator';
 import { FAQSchema, BreadcrumbSchema, ServiceSchema } from '@/components/seo/StructuredData';
 import { enquiryHref } from '@/lib/enquiry.mjs';
@@ -23,6 +25,7 @@ export interface SalesOfferProps {
   guidance?: { title: string; text: string; points: string[]; link: { label: string; href: string } }[];
 }
 export function SalesOffer(p: SalesOfferProps) {
+  const serviceCollection = getServiceWork(p.path);
   const variants = imageVariants[p.hero]; const cover = variants[1]; const work = workImages[p.hero];
   return <Layout workPlacement="manual">
     <ServiceSchema name={p.heading} description={p.lead} areaServed="Polska" /><FAQSchema items={p.faqs} />
@@ -35,13 +38,14 @@ export function SalesOffer(p: SalesOfferProps) {
     <nav aria-label="Na tej stronie" className="container-wide px-6 md:px-12 pb-8 flex flex-wrap gap-x-6 gap-y-3 text-sm">{[['#realizacje','Realizacje'],['#zakres','Zakres'],['#wycena','Wycena'],['#proces','Proces'],['#faq','Pytania'],['#zapytanie','Zapytaj o projekt']].map(([href,label]) => <a key={href} href={href} className="underline underline-offset-4">{label}</a>)}</nav>
     <section id="realizacje" className="scroll-mt-28">
       {p.configurator && <KlagemConfigurator />}
-      {p.films ? <FeaturedFilms id="filmy" /> : <SelectedWork />}
+      {p.films && <FeaturedFilms id="filmy" />}
+      {serviceCollection ? <ServiceWork path={p.path} /> : !p.films && <SelectedWork />}
       <div className="container-wide px-6 md:px-12 py-10"><div className="grid md:grid-cols-3 gap-6">{p.evidence.map(item => <article key={item.title} className="border-t border-border pt-5"><h2 className="text-xl font-heading mb-3">{item.title}</h2><p className="text-muted-foreground leading-relaxed mb-4">{item.text}</p><Link to={item.href} className="underline underline-offset-4">Zobacz projekt</Link></article>)}</div></div>
     </section>
     <section id="zakres" className="scroll-mt-28 border-y border-border bg-muted/20 py-14"><div className="container-wide px-6 md:px-12"><p className="dv-eyebrow mb-4">Co możesz zlecić</p><h2 className="font-heading text-3xl md:text-4xl mb-8">Wybierz punkt wyjścia.</h2><div className="grid lg:grid-cols-3 gap-5">{p.options.map(item => <article key={item.title} className="bg-background border border-border rounded-2xl p-6 flex flex-col"><h3 className="text-2xl font-heading mb-3">{item.title}</h3><p className="text-muted-foreground leading-relaxed mb-4">{item.text}</p><p className="text-sm leading-relaxed mb-6">{item.detail}</p><Link to={enquiryHref(p.service,item.variant)} className="underline underline-offset-4 mt-auto">Zapytaj o ten zakres →</Link></article>)}</div><h2 className="font-heading text-3xl mt-14 mb-8">Co rozpisujemy w ofercie?</h2><div className="grid md:grid-cols-2 lg:grid-cols-3 gap-7">{p.scope.map(item => <article key={item.title}><Check aria-hidden className="w-5 h-5 text-primary mb-3" /><h3 className="text-xl font-heading mb-3">{item.title}</h3><p className="text-muted-foreground leading-relaxed">{item.text}</p></article>)}</div></div></section>
     <section id="wycena" className="scroll-mt-28 container-wide px-6 md:px-12 py-14 grid md:grid-cols-[1fr_1.4fr] gap-7 md:gap-12"><h2 className="font-heading text-3xl md:text-4xl">Ile kosztuje współpraca?</h2><div><p className="text-muted-foreground leading-relaxed mb-5">{p.pricing}</p><a href={p.pricingHref} className="underline underline-offset-4">{p.pricingLabel}</a><p className="text-sm text-muted-foreground mt-5">Przed rozpoczęciem ustalamy prace, wyłączenia, poprawki, terminy i płatności. Koszty zewnętrzne rozpisujemy osobno.</p></div></section>
     <section id="proces" className="scroll-mt-28 container-wide px-6 md:px-12 pb-14"><h2 className="font-heading text-3xl md:text-4xl mb-8">Od rozmowy do przekazania pracy.</h2><ol className="grid md:grid-cols-3 gap-7">{p.steps.map((item,i) => <li key={item.title} className="border-t border-border pt-5"><span className="font-mono text-primary" aria-hidden>0{i+1}</span><h3 className="text-xl font-heading my-3">{item.title}</h3><p className="text-muted-foreground leading-relaxed">{item.text}</p></li>)}</ol></section>
-    {p.films && <SelectedWork />}
+    {p.films && !serviceCollection && <SelectedWork />}
     {p.guidance?.map(item => <section key={item.title} className="container-wide px-6 md:px-12 py-10 grid md:grid-cols-[1fr_1.4fr] gap-7 md:gap-12"><h2 className="font-heading text-3xl">{item.title}</h2><div><p className="text-muted-foreground leading-relaxed mb-5">{item.text}</p><ul className="list-disc pl-5 space-y-3 text-muted-foreground leading-relaxed mb-5">{item.points.map(point => <li key={point}>{point}</li>)}</ul><Link to={item.link.href} className="underline underline-offset-4">{item.link.label}</Link></div></section>)}
     <section id="faq" className="scroll-mt-28 container-wide max-w-4xl px-6 md:px-12 py-14"><h2 className="font-heading text-3xl mb-7">Przed podjęciem decyzji</h2>{p.faqs.map(item => <details key={item.question} className="border-b border-border py-5"><summary className="font-medium cursor-pointer text-lg">{item.question}</summary><p className="text-muted-foreground leading-relaxed mt-4">{item.answer}</p></details>)}</section>
     <div className="container-wide max-w-4xl px-6 md:px-12 pb-16"><EnquiryForm id="zapytanie" defaultService={p.service} defaultVariant={p.defaultVariant} /></div>

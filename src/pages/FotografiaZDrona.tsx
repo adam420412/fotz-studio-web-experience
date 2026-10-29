@@ -1,3 +1,4 @@
+import { ServiceWork } from "@/components/sections/ServiceWork";
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { SEOHead } from "@/components/seo/SEOHead";
@@ -270,6 +271,8 @@ export default function FotografiaZDrona() {
           </motion.div>
         </div>
       </section>
+
+      <ServiceWork path="/uslugi/fotografia-z-drona" />
 
       {/* Stats Section */}
       <section className="py-16 bg-secondary/30">
