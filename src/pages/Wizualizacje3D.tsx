@@ -1,3 +1,4 @@
+import { ServiceWork } from "@/components/sections/ServiceWork";
 import { KlagemConfigurator } from "@/components/sections/KlagemConfigurator";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
@@ -671,6 +672,7 @@ const Wizualizacje3D = () => {
 
         {/* Portfolio Gallery */}
         <KlagemConfigurator />
+        <ServiceWork path="/wizualizacje-3d" />
         <section id="portfolio" className="py-20 md:py-32">
           <div className="container-wide px-6 md:px-12">
             <FadeInView>
