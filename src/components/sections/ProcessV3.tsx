@@ -1,3 +1,4 @@
+import { SplitText } from "@/components/motion/SplitText";
 const PHASES = [
   {
     num: "01",
@@ -31,7 +32,7 @@ export function ProcessV3() {
       <div className="max-w-[1440px] mx-auto px-6 md:px-12">
         <div className="flex flex-col items-center text-center gap-5 mb-16">
           <span className="dv-eyebrow">Jak pracujemy</span>
-          <h2 className="dv-h-xl max-w-[900px]">Proces w trzech fazach.</h2>
+          <SplitText className="dv-h-xl max-w-[900px]" lines={["Proces w trzech fazach."]} />
           <p className="dv-lede text-[color:var(--dv-fg-muted)] max-w-[620px]">
             Transparentna współpraca oparta na analizie, wdrożeniu i ciągłej
             optymalizacji.
@@ -48,11 +49,13 @@ export function ProcessV3() {
           {PHASES.map((p, i) => (
             <div
               key={p.num}
-              className="p-6 md:p-10"
+              data-reveal
+              className="process-phase p-6 md:p-10"
               style={{
+                "--stagger": i,
                 borderRight:
                   i < PHASES.length - 1 ? "1px solid var(--dv-hair)" : "none",
-              }}
+              } as React.CSSProperties}
             >
               <div
                 className="dv-mono uppercase mb-6"

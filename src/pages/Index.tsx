@@ -12,7 +12,7 @@ import { LocalBusinessSchema, OrganizationSchema } from "@/components/seo/Struct
 // boundary so their existing HTML also survives early context updates.
 import { FeaturedFilms } from "@/components/sections/FeaturedFilms";
 import { Services } from "@/components/sections/Services";
-import { CaseStudies } from "@/components/sections/CaseStudies";
+import { PortfolioShowcase } from "@/components/sections/PortfolioShowcase";
 import { OfficeGallery } from "@/components/sections/OfficeGallery";
 import { HomeFAQ } from "@/components/sections/HomeFAQ";
 import { NewsletterSection } from "@/components/sections/NewsletterSection";
@@ -37,7 +37,7 @@ const Index = () => {
         <FeaturedFilms />
         <KlagemConfigurator />
         <Services />
-        <CaseStudies />
+        <PortfolioShowcase />
         <ProcessV3 />
         <SelectedWork />
         <OfficeGallery compact />

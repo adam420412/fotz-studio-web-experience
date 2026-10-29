@@ -44,7 +44,7 @@ const reels: Film[] = [
   },
 ];
 
-function FilmCard({ film }: { film: Film }) {
+function FilmCard({ film, stagger = 0 }: { film: Film; stagger?: number }) {
   const [failed, setFailed] = useState(false);
   const coverClass = `group relative block w-full overflow-hidden rounded-2xl border border-border bg-black text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary ${film.portrait ? "aspect-[9/16]" : "aspect-video"}`;
   const cover = (
@@ -63,7 +63,7 @@ function FilmCard({ film }: { film: Film }) {
   );
 
   return (
-    <figure className="min-w-0 snap-start">
+    <figure className="min-w-0 snap-start" data-reveal style={{ "--stagger": stagger } as React.CSSProperties}>
       {film.src ? (
         <Dialog.Root onOpenChange={() => setFailed(false)}>
           <Dialog.Trigger asChild><button type="button" className={coverClass} aria-label={`Odtwórz film: ${film.title}`}>{cover}</button></Dialog.Trigger>
@@ -106,7 +106,7 @@ export function FeaturedFilms({ id = "filmy-i-rolki", reelsOnly = false }: { id?
           {!reelsOnly && <FilmCard film={cupra} />}
           <div className="min-w-0">
             <div className="grid auto-cols-[74%] grid-flow-col gap-4 overflow-x-auto pb-4 snap-x snap-mandatory sm:grid-flow-row sm:grid-cols-3 sm:auto-cols-auto">
-              {reels.map(film => <FilmCard key={film.title} film={film} />)}
+              {reels.map((film, i) => <FilmCard key={film.title} film={film} stagger={i + 1} />)}
             </div>
             <p className="mt-2 text-xs text-muted-foreground sm:hidden">Przesuń, aby zobaczyć kolejne rolki →</p>
           </div>
