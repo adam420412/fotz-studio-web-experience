@@ -1391,30 +1391,6 @@
       }
     ]
   },
-  "test-babylove-article": {
-    "source": "https://drive.google.com/file/d/1mTFriDh0CNtkRglVEhMNyZLlEhY48uQz/view",
-    "alt": "Prezentacja projektu na ekranie — zdjęcie z sesji FOTZ",
-    "variants": [
-      {
-        "src": "/work/fotz-presentation-480.webp",
-        "width": 480,
-        "height": 854,
-        "bytes": 22714
-      },
-      {
-        "src": "/work/fotz-presentation-800.webp",
-        "width": 800,
-        "height": 1423,
-        "bytes": 44046
-      },
-      {
-        "src": "/work/fotz-presentation-1200.webp",
-        "width": 1200,
-        "height": 2134,
-        "bytes": 87190
-      }
-    ]
-  },
   "tworzenie-stron-internetowych-poznan-5": {
     "source": "https://drive.google.com/file/d/1mTFriDh0CNtkRglVEhMNyZLlEhY48uQz/view",
     "alt": "Prezentacja projektu na ekranie — zdjęcie z sesji FOTZ",

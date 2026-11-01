@@ -1658,6 +1658,13 @@ const App = ({ Router = BrowserRouter, client = queryClient, initialPage }: AppP
                 {/* Cluster hubs */}
                 <Route path="/seo" element={<SEOCluster />} />
                 <Route path="/social-media" element={<Redirect301 to="/social-media/obsluga" />} />
+                {/* Legacy aliasy platformowe -> kanoniczne artykuły (audyt SEO 2026-11) */}
+                <Route path="/social-media/facebook" element={<Redirect301 to="/blog/facebook-ads-poradnik" />} />
+                <Route path="/social-media/tiktok" element={<Redirect301 to="/blog/tiktok-dla-firmy" />} />
+                <Route path="/social-media/linkedin" element={<Redirect301 to="/blog/linkedin-dla-firmy" />} />
+                <Route path="/social-media/youtube" element={<Redirect301 to="/blog/youtube-dla-firmy" />} />
+                <Route path="/social-media/pinterest" element={<Redirect301 to="/blog/pinterest-dla-firmy" />} />
+                <Route path="/social-media/meta" element={<Redirect301 to="/performance-marketing/meta-ads" />} />
                 <Route path="/performance-marketing" element={<PerformanceMarketingCluster />} />
                 <Route path="/content-marketing" element={<Redirect301 to="/content-marketing/strategia" />} />
 
