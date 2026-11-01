@@ -55,24 +55,24 @@ const content = {
   ],
   "sections": [
     {
-      "title": "Plan pozycjonowania stron dopasowany do Twojej firmy",
+      "title": "Pozycjonowanie stron internetowych Poznań — plan dla Twojej firmy",
       "text": "Twoja strona internetowa powinna pomagać w wyborze usługi. Dla gabinetu będzie to opis zabiegu i łatwa rezerwacja, dla firmy remontowej — zakres prac oraz obszar dojazdu, a dla producenta — specyfikacja i zapytanie ofertowe. Dlatego przed wyborem fraz kluczowych poznajemy model sprzedaży, marżowe usługi i pytania klientów. Sprawdzamy, czy potencjalni klienci znajdują na stronie informacje potrzebne przed rozmową. Ustalamy też, kto odbiera zgłoszenia i jaki kontakt jest dla firmy wartościowy. Pozycjonowanie stron internetowych w Poznaniu planujemy wokół tych potrzeb. Dzięki temu wiadomo, które podstrony rozwijać najpierw i jaki zakres będzie możliwy przy danym budżecie."
     },
     {
-      "title": "Na czym polega pozycjonowanie strony internetowej?",
-      "text": "Pozycjonowanie to proces poprawiania dostępności, treści i rozpoznawalności witryny w wyszukiwarkach internetowych. Wyszukiwarka Google musi odkryć stronę, odczytać jej zawartość i ocenić, do jakich zapytań pasuje. Pracujemy więc nad strukturą serwisu, opisem oferty, szybkością oraz powiązaniami między podstronami. Optymalizacja SEO obejmuje zarówno widoczną treść, jak i elementy techniczne. Ważne jest też doświadczenie użytkownika: czy na telefonie łatwo porówna zakres, przeczyta cennik i znajdzie kontakt. Wysokie pozycje mogą ułatwiać pozyskiwanie nowych klientów, ale o zgłoszeniu decydują również oferta, zaufanie i sprawność obsługi."
+      "title": "Czym jest pozycjonowanie strony internetowej?",
+      "text": "Pozycjonowanie to proces poprawiania dostępności, treści i rozpoznawalności witryny w wyszukiwarkach internetowych. Na czym polega pozycjonowanie SEO w praktyce? Wyszukiwarka Google musi odkryć stronę, odczytać jej zawartość i ocenić, do jakich zapytań pasuje. Pracujemy więc nad strukturą serwisu, opisem oferty, szybkością oraz powiązaniami między podstronami. Optymalizacja SEO obejmuje zarówno widoczną treść, jak i elementy techniczne. Ważne jest też doświadczenie użytkownika: czy na telefonie łatwo porówna zakres, przeczyta cennik i znajdzie kontakt. Wysokie pozycje mogą ułatwiać pozyskiwanie nowych klientów, ale o zgłoszeniu decydują również oferta, zaufanie i sprawność obsługi."
     },
     {
       "title": "Strategia SEO: słowa kluczowe i właściwe podstrony",
-      "text": "Dobór tematów zaczynamy od produktów, usług oraz danych o tym, czego szukają odbiorcy. Zapytania „pozycjonowanie Poznań”, „agencja SEO Poznań” i „audyt strony” pokazują różne akcenty potrzeb: lokalnego wykonawcę, partnera do obsługi lub konkretną diagnozę. W Twojej branży również rozdzielamy pytania poradnikowe od zapytań bliskich zakupowi. Słowa kluczowe przypisujemy do stron, które rzeczywiście odpowiadają na ich intencję. Jeżeli kilka adresów opisuje niemal tę samą usługę, analizujemy ich treść i dane, zanim zdecydujemy o połączeniu. Strategia SEO określa docelowe podstrony, priorytety i materiały potrzebne od firmy. Pomaga to uniknąć publikowania kolejnych tekstów bez wyraźnej roli."
+      "text": "Dobór tematów zaczynamy od produktów, usług oraz danych o tym, czego szukają odbiorcy. Zapytania „pozycjonowanie Poznań”, „agencja SEO Poznań” i „audyt strony” pokazują różne akcenty potrzeb: lokalnego wykonawcę, partnera do obsługi lub konkretną diagnozę. W Twojej branży również rozdzielamy pytania poradnikowe od zapytań bliskich zakupowi. Słowa kluczowe przypisujemy do stron, które rzeczywiście odpowiadają na ich intencję. Jeżeli kilka adresów opisuje niemal tę samą usługę, analizujemy ich treść i dane, zanim zdecydujemy o połączeniu. Strategia SEO określa docelowe podstrony, priorytety i materiały potrzebne od firmy. Pomaga to uniknąć publikowania kolejnych tekstów bez wyraźnej roli. Zaawansowane strategie SEO, takie jak pozycjonowanie szerokie czy silosy tematyczne, wdrażamy dopiero na uporządkowanej strukturze."
     },
     {
-      "title": "SEO lokalne: Poznań, dzielnice i obszar dojazdu",
-      "text": "Lokalne pozycjonowanie stron ma znaczenie, gdy wybór wykonawcy zależy od miejsca realizacji usługi. Firma działająca na Jeżycach może przyjmować klientów w punkcie, a ekipa z okolic Poznania obsługiwać Grunwald, Wildę i sąsiednie miejscowości. W opisie pokazujemy rzeczywisty obszar pracy, zasady dojazdu i sposób ustalenia terminu. Frazy lokalne dobieramy do tego modelu. Nazwy dzielnic mają sens, gdy ułatwiają klientowi wybór, a nie jako długa lista dopisana na końcu tekstu. W przypadku lokalnego SEO analizujemy też wyniki wyszukiwania z różnych miejsc. Pozycja w wynikach wyszukiwania może się zmieniać wraz z lokalizacją użytkownika, dlatego pojedyncze sprawdzenie na własnym telefonie nie opisuje całej widoczności."
+      "title": "Lokalne SEO Poznań: dzielnice i obszar dojazdu",
+      "text": "Lokalne pozycjonowanie stron ma znaczenie, gdy wybór wykonawcy zależy od miejsca realizacji usługi. Firma działająca na Jeżycach może przyjmować klientów w punkcie, a ekipa z okolic Poznania obsługiwać Grunwald, Wildę i sąsiednie miejscowości. W opisie pokazujemy rzeczywisty obszar pracy, zasady dojazdu i sposób ustalenia terminu. Pozycjonowanie na frazy lokalne dobieramy do tego modelu. Nazwy dzielnic mają sens, gdy ułatwiają klientowi wybór, a nie jako długa lista dopisana na końcu tekstu. W przypadku lokalnego SEO analizujemy też wyniki wyszukiwania z różnych miejsc. Pozycja w wynikach wyszukiwania może się zmieniać wraz z lokalizacją użytkownika, dlatego pojedyncze sprawdzenie na własnym telefonie nie opisuje całej widoczności. SEO lokalne mierzymy osobno dla fraz z nazwą miasta i dla wyników mapowych."
     },
     {
       "title": "Wizytówka Google i lokalne wyniki wyszukiwania",
-      "text": "Profil Firmy w Google, dawniej Google My Business, uzupełnia informacje dostępne na stronie. Wizytówka Google powinna zawierać właściwą kategorię, aktualny kontakt, zakres usług i godziny, jeśli mają zastosowanie. Weryfikujemy także sposób prezentacji adresu lub obszaru obsługi zgodnie z modelem działalności. Google opisuje lokalne wyniki przez trafność, odległość i rozpoznawalność firmy. Pracujemy nad jakością oraz spójnością informacji, zdjęciami i odpowiedziami na prawdziwe opinie. Pozycjonowanie w Google Maps oraz pozycjonowanie stron www wymagają wspólnego planu, ale mają odrębne sygnały i pomiary. Widoczność profilu sprawdzamy osobno od ruchu organicznego na witrynie.",
+      "text": "Profil Firmy w Google, dawniej Google Moja Firma i Google My Business, uzupełnia informacje dostępne na stronie. Optymalizacja wizytówki Google Moja Firma obejmuje właściwą kategorię, aktualny kontakt, zakres usług i godziny, jeśli mają zastosowanie. Weryfikujemy także sposób prezentacji adresu lub obszaru obsługi zgodnie z modelem działalności. Google opisuje lokalne wyniki przez trafność, odległość i rozpoznawalność firmy. Pracujemy nad jakością oraz spójnością informacji, zdjęciami i odpowiedziami na prawdziwe opinie. Pozycjonowanie w Google Maps oraz pozycjonowanie stron www wymagają wspólnego planu, ale mają odrębne sygnały i pomiary. Widoczność profilu sprawdzamy osobno od ruchu organicznego na witrynie.",
       "href": "/seo/google-maps",
       "link": "Jak pracujemy nad widocznością w Mapach Google"
     },
@@ -82,7 +82,7 @@ const content = {
     },
     {
       "title": "Jak wygląda współpraca z agencją SEO?",
-      "text": "Zaczynamy od rozmowy o stronie, klientach i dotychczasowych działaniach. Uzgadniamy dostęp do potrzebnych danych oraz osobę, która zatwierdzi treści i zmiany. Następnie przedstawiamy plan obejmujący wdrożenia, rozwój oferty i pomiar. Współpraca z agencją SEO wymaga jasnego podziału zadań: część może wykonać FOTZ, a część Twój programista lub zespół. Harmonogram wynika z dostępności materiałów i skali serwisu. Długoterminowa współpraca z agencją SEO pozwala wracać do wyników, rozwijać działające podstrony i korygować priorytety po zmianach w biznesie.",
+      "text": "Doświadczenie w dziedzinie SEO pozwala nam już na starcie wskazać realny zakres prac. Zaczynamy od rozmowy o stronie, klientach i dotychczasowych działaniach. Uzgadniamy dostęp do potrzebnych danych oraz osobę, która zatwierdzi treści i zmiany. Następnie przedstawiamy plan obejmujący wdrożenia, rozwój oferty i pomiar. Współpraca z agencją SEO wymaga jasnego podziału zadań: część może wykonać FOTZ, a część Twój programista lub zespół. Harmonogram wynika z dostępności materiałów i skali serwisu. Długoterminowa współpraca z agencją SEO pozwala wracać do wyników, rozwijać działające podstrony i korygować priorytety po zmianach w biznesie.",
       "points": [
         "Na starcie: cel, dostęp do danych, zakres odpowiedzialności i stan wyjściowy.",
         "Przed publikacją: akceptacja treści, sprawdzenie linków i kontrola zmian technicznych.",
@@ -99,8 +99,8 @@ const content = {
       ]
     },
     {
-      "title": "Pozycjonowanie sklepów internetowych w Poznaniu",
-      "text": "Sklep internetowy potrzebuje innej struktury niż niewielka strona usługowa. Pozycjonowanie sklepów obejmuje kategorie, produkty, warianty i filtrowanie. Sprawdzamy, które adresy warto indeksować, jak użytkownik trafia do produktu i co dzieje się z ofertą po wyprzedaniu towaru. SEO sklepu może wymagać poprawy opisów, linkowania, danych o dostępności oraz sposobu działania wersji mobilnej. Pozycjonowanie szerokie rozwija widoczność dla wielu konkretnych potrzeb zakupowych, na przykład zastosowań lub cech produktu. Dla sklepów internetowych w Poznaniu ustalamy również, czy odbiór osobisty i dostawa lokalna są istotnym elementem oferty. Pozycjonowanie sklepu internetowego oceniamy przez ruch do kategorii, zachowanie kupujących i zamówienia, jeśli pomiar sprzedaży działa poprawnie.",
+      "title": "Pozycjonowanie sklepów Poznań: kategorie, produkty i odbiór osobisty",
+      "text": "Sklep internetowy potrzebuje innej struktury niż niewielka strona usługowa. Pozycjonowanie stron i sklepów internetowych różni się także skalą prac. Pozycjonowanie sklepów obejmuje kategorie, produkty, warianty i filtrowanie. Sprawdzamy, które adresy warto indeksować, jak użytkownik trafia do produktu i co dzieje się z ofertą po wyprzedaniu towaru. SEO sklepu może wymagać poprawy opisów, linkowania, danych o dostępności oraz sposobu działania wersji mobilnej. Pozycjonowanie szerokie rozwija widoczność dla wielu konkretnych potrzeb zakupowych, na przykład zastosowań lub cech produktu. Pozycjonowanie sklepów internetowych w Poznaniu obejmuje również ustalenie, czy odbiór osobisty i dostawa lokalna są istotnym elementem oferty. Pozycjonowanie sklepu internetowego oceniamy przez ruch do kategorii, zachowanie kupujących i zamówienia, jeśli pomiar sprzedaży działa poprawnie.",
       "href": "/seo/ecommerce",
       "link": "Poznaj zakres SEO dla e-commerce"
     },
@@ -114,7 +114,7 @@ const content = {
     },
     {
       "title": "Ile kosztuje pozycjonowanie stron w Poznaniu?",
-      "text": "Koszt pozycjonowania stron zależy od stanu witryny, liczby usług lub kategorii, konkurencji i zakresu wdrożeń. Przed wyceną ustalamy, czy potrzebujesz jednorazowej diagnozy, napraw technicznych, rozwinięcia treści czy regularnej opieki. Oferta określa zakres, harmonogram, sposób akceptacji i zasady raportowania. Osobno wskazujemy koszty, które mogą wymagać dodatkowej decyzji, na przykład programowanie, produkcję zdjęć lub publikacje zewnętrzne. Porównując propozycje, warto sprawdzić, czy obejmują wykonanie zmian i ich kontrolę. Sam zestaw zaleceń wymaga jeszcze czasu osoby wdrażającej. Budżet SEO dla firm dobieramy do realnej kolejności prac i możliwości obsługi nowych zapytań, a zakres potwierdzamy przed startem. Wycena usług SEO w Poznaniu powinna również uwzględniać utrzymanie aktualnych informacji: zmianę cennika, wycofanie usługi lub dodanie nowej realizacji. Takie zadania pomagają utrzymać zgodność witryny z rzeczywistą ofertą."
+      "text": "Koszt pozycjonowania stron zależy od zakresu SEO: stanu witryny, liczby usług lub kategorii, konkurencji i planowanych wdrożeń. Przed wyceną ustalamy, czy potrzebujesz jednorazowej diagnozy, napraw technicznych, rozwinięcia treści czy regularnej opieki. Oferta określa zakres, harmonogram, sposób akceptacji i zasady raportowania. Osobno wskazujemy koszty, które mogą wymagać dodatkowej decyzji, na przykład programowanie, produkcję zdjęć lub publikacje zewnętrzne. Porównując propozycje, warto sprawdzić, czy obejmują wykonanie zmian i ich kontrolę. Sam zestaw zaleceń wymaga jeszcze czasu osoby wdrażającej. Budżet SEO dla firm dobieramy do realnej kolejności prac i możliwości obsługi nowych zapytań, a zakres potwierdzamy przed startem. Wycena usług SEO w Poznaniu powinna również uwzględniać utrzymanie aktualnych informacji: zmianę cennika, wycofanie usługi lub dodanie nowej realizacji. Takie zadania pomagają utrzymać zgodność witryny z rzeczywistą ofertą."
     },
     {
       "title": "Kiedy można ocenić efekty działań SEO?",
@@ -177,7 +177,7 @@ const content = {
 
 export default function PozycjonowanieStronPoznan() {
   return <>
-    <SEOHead title="Pozycjonowanie stron internetowych Poznań — agencja SEO" description="Pozycjonowanie stron Poznań: audyt SEO i treści. Pozycjonowanie stron internetowych w Poznaniu prowadzi agencja FOTZ Studio — sprawdź zakres i wyceń." canonical="https://www.fotz-studio.pl/seo/pozycjonowanie-poznan" />
+    <SEOHead title="Pozycjonowanie stron Poznań — agencja SEO FOTZ Studio" description="Pozycjonowanie stron Poznań: audyt SEO i treści. Pozycjonowanie stron internetowych w Poznaniu — agencja FOTZ Studio. Pełen zakres pozycjonowania stron." canonical="https://www.fotz-studio.pl/seo/pozycjonowanie-poznan" />
     <ServiceEditorial {...content} />
   </>;
 }
