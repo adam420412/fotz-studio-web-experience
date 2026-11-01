@@ -48,7 +48,7 @@ export default function ContentMarketing() {
   const variants = imageVariants.backstage;
   const hero = variants[1];
   return <Layout workPlacement="manual">
-    <SEOHead title="Strategia content marketingowa — plan treści | FOTZ Studio" description="Strategia content marketingu dla firm: cele, tematy, kanały, plan publikacji i pomiar. Zobacz zakres, przykład planu i nasze realizacje. Ustal wycenę z FOTZ." canonical={`https://www.fotz-studio.pl${path}`} />
+    <SEOHead title="Strategia content marketingowa — strategie marketingowe | FOTZ" description="Strategia content marketingowa dla firm: cele, treści, kanały i pomiar. Marketing treści, który buduje markę i pozyskuje klientów. Czym jest strategia? Poznaj zakres FOTZ." canonical={`https://www.fotz-studio.pl${path}`} />
     <ServiceSchema name="Strategia content marketingowa" description="Planowanie treści dla stron, social media i kampanii: odbiorcy, tematy, formaty, harmonogram oraz pomiar." />
     <FAQSchema items={faqs} />
     <BreadcrumbSchema items={[{ name: "Strona główna", url: "/" }, { name: "Usługi", url: "/uslugi" }, { name: "Strategia content marketingowa", url: path }]} />

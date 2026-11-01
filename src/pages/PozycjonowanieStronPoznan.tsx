@@ -177,7 +177,7 @@ const content = {
 
 export default function PozycjonowanieStronPoznan() {
   return <>
-    <SEOHead title="Pozycjonowanie stron Poznań — agencja SEO | FOTZ Studio" description="Pozycjonowanie stron internetowych w Poznaniu: audyt SEO, poprawki techniczne i treści. FOTZ Studio — sprawdź zakres współpracy i zapytaj o wycenę." canonical="https://www.fotz-studio.pl/seo/pozycjonowanie-poznan" />
+    <SEOHead title="Pozycjonowanie stron internetowych Poznań — agencja SEO" description="Pozycjonowanie stron Poznań: audyt SEO i treści. Pozycjonowanie stron internetowych w Poznaniu prowadzi agencja FOTZ Studio — sprawdź zakres i wyceń." canonical="https://www.fotz-studio.pl/seo/pozycjonowanie-poznan" />
     <ServiceEditorial {...content} />
   </>;
 }

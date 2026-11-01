@@ -7,8 +7,8 @@ const offer: LocalSeoOfferProps = {
   headingPrefix: "Pozycjonowanie stron internetowych",
   headingSuffix: " — lokalne SEO",
   cityGenitive: "Katowic",
-  title: "Pozycjonowanie stron Katowice — audyt | Agencja SEO FOTZ",
-  description: "Agencja SEO FOTZ Studio: pozycjonowanie stron Katowice, optymalizacja i widoczność w Google. Sprawdź zakres prac i wyceń swoją stronę internetową.",
+  title: "Pozycjonowanie stron Katowice — agencja SEO FOTZ Studio",
+  description: "Pozycjonowanie Katowice — agencja SEO FOTZ Studio. Skuteczne pozycjonowanie stron internetowych: audyt i widoczność w Google. Jak zwiększyć widoczność? Wyceń stronę.",
   lead: "Pozycjonowanie stron w Katowicach zaczynamy od Twojej oferty. Pomagamy uporządkować jej widoczność w Google: od indeksowania strony po treści odpowiadające na pytania klientów. Dla firmy z Katowic ustalamy, które usługi i obszary obsługi warto rozwijać oraz jak sprawdzać jakość pozyskanych zapytań.",
   hero: { image: "fps", caption: "FPS Poznań — projekt strony internetowej z portfolio FOTZ. Prezentacja oferty producenta pojazdów szynowych." },
   scope: [
