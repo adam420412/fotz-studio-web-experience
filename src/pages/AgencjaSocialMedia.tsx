@@ -77,7 +77,7 @@ export default function AgencjaSocialMedia() {
     <>
       <SEOHead
         title="Agencja social media — marketing, treści i reklamy | FOTZ"
-        description="Agencja social media FOTZ: strategie, content, prowadzenie profili i kampanie Facebook oraz Instagram. Zobacz realizacje i ustal zakres współpracy."
+        description="Agencja social media FOTZ Studio: strategie, content i kampania reklamowa. Pomagamy prowadzić profile na Facebooku tak, by rosnął zasięg i sprzedaż. Zobacz realizacje i ustal zakres współpracy."
         canonical={`https://www.fotz-studio.pl${SM_PILLAR_PATH}`}
         keywords="agencja social media, prowadzenie social media, agencja SM Poznań, Meta Ads, TikTok Ads"
         schema={faqJsonLd}

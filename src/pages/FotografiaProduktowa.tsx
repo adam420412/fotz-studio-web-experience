@@ -2,7 +2,7 @@ import { SEOHead } from "@/components/seo/SEOHead";
 import { ServiceEditorial } from "@/components/ServiceEditorial";
 const data = {
   "title": "Fotografia produktowa — zdjęcia produktowe i packshot",
-  "description": "Profesjonalna fotografia produktowa: zdjęcia produktowe, packshot i sesje reklamowe. Zobacz realizacje, poznaj zakres retuszu i wyceń materiały dla swojej marki.",
+  "description": "Profesjonalna fotografia produktowa: zdjęcia produktowe, packshot i sesje. Materiał reklamowy i retusz — zobacz realizacje i wyceń zdjęcia dla swojej marki.",
   "path": "/uslugi/fotografia-produktowa",
   "h1": "Profesjonalna fotografia produktowa — packshot i zdjęcia reklamowe",
   "lead": "Pokaż kształt, kolor i detale produktu tak, aby odbiorca wiedział, co wybiera. Przygotowujemy zdjęcia produktowe do sklepów internetowych, katalogów i kampanii. Dobieramy ujęcia, tło oraz formaty do zastosowania, a zakres sesji i retuszu ustalamy przed produkcją.",
