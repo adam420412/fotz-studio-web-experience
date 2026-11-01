@@ -10,6 +10,15 @@ const template = '<!doctype html><html><head><meta name="author" content="Fotz S
 const renderPage = async (_file,path,articles) => ({body:`<main><h1>${articles[0].title}</h1><p>Pełny artykuł</p></main>`,scripts:'',bootstrap:JSON.stringify({version:1,path,article:articles[0]})});
 const baseXml = '<urlset><url><loc>https://www.fotz-studio.pl/blog/starszy-poradnik</loc><lastmod>2026-10-01</lastmod></url></urlset>';
 
+test('excluded CMS articles are never served, listed or mapped', async () => {
+  const forbidden = () => { throw new Error('Should not query'); };
+  assert.equal(await getPublishedArticle(config, 'test-babylove-article', forbidden), null);
+  const rows = await listPublishedArticles(config, async () => Response.json([{ ...article, slug: 'test-babylove-article' }, article]));
+  assert.deepEqual(rows.map(r => r.slug), [article.slug]);
+  const response = await serveBlogArticle(request('GET', 'test-babylove-article'), { config, template, renderPage, fetcher: forbidden });
+  assert.equal(response.status, 404);
+});
+
 test('one deployment supports missing → published → withdrawn CMS article without changing a route manifest', async () => {
   let published=false, calls=0;
   const fetcher=async (url,options) => {

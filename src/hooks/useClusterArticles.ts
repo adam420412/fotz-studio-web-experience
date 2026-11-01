@@ -1,5 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
+import { excludedBlogSlugs } from "@/lib/blog-exclusions.mjs";
 import type { BlogArticle } from "./useBlogArticles";
 
 export function useClusterArticles(clusterSlug: string, enabled = true) {
@@ -14,7 +15,7 @@ export function useClusterArticles(clusterSlug: string, enabled = true) {
         .eq("cluster_slug", clusterSlug)
         .order("published_at", { ascending: false });
       if (error) throw error;
-      return (data ?? []) as BlogArticle[];
+      return (data ?? []).filter((a) => !excludedBlogSlugs.has(a.slug)) as BlogArticle[];
     },
     staleTime: 1000 * 60 * 5,
   });

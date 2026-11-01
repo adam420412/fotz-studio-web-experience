@@ -1,3 +1,5 @@
+import { excludedBlogSlugs } from './blog-exclusions.mjs';
+
 // Read only public, published fields. Never use a service-role key here.
 export const publicArticleFields = 'slug,title,excerpt,meta_description,hero_image_url,published_at,created_at,updated_at,content_html,keywords,json_ld,faq_json_ld,is_published';
 export const validBlogSlug = slug => typeof slug === 'string' && slug.length <= 200 && /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug);
@@ -17,6 +19,7 @@ async function requestRows(config, params, fetcher) {
 
 export async function getPublishedArticle(config, slug, fetcher = fetch) {
   if (!validBlogSlug(slug)) return null;
+  if (excludedBlogSlugs.has(slug)) return null;
   const rows = await requestRows(config, { select: publicArticleFields, slug: `eq.${slug}`, is_published: 'eq.true', limit: 1 }, fetcher);
   if (!rows.length) return null;
   const article = rows[0];
@@ -34,7 +37,7 @@ export async function listPublishedArticles(config, fetcher = fetch) {
       is_published: 'eq.true', order: 'slug.asc', offset, limit: 500,
     }, fetcher);
     if (rows.some(row => !validBlogSlug(row.slug) || !row.title?.trim() || row.is_published !== true)) throw new Error('Invalid published article metadata');
-    articles.push(...rows);
+    articles.push(...rows.filter(row => !excludedBlogSlugs.has(row.slug)));
     if (rows.length < 500) return articles;
   }
   throw new Error('Public CMS pagination limit reached');

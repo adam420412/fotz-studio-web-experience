@@ -1,5 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
+import { excludedBlogSlugs } from "@/lib/blog-exclusions.mjs";
 
 export interface BlogArticle {
   id: string;
@@ -41,7 +42,7 @@ export function useBlogArticles() {
         throw error;
       }
 
-      return data as BlogArticle[];
+      return (data as BlogArticle[]).filter((a) => !excludedBlogSlugs.has(a.slug));
     },
     staleTime: 1000 * 60 * 5, // 5 minutes
   });
@@ -51,6 +52,7 @@ export function useBlogArticle(slug: string) {
   return useQuery({
     queryKey: ["blog-article", slug],
     queryFn: async () => {
+      if (excludedBlogSlugs.has(slug)) return null;
       const { data, error } = await supabase
         .from("blog_articles")
         .select("*")
