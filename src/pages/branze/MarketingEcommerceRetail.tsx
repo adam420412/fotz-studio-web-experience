@@ -171,7 +171,7 @@ const MarketingEcommerceRetail = () => {
 
       <IndustryWork slug="ecommerce-retail" />
 
-      <KlagemConfigurator />
+      <KlagemConfigurator industry="ecommerce-retail" />
 
       {/* Services */}
       <section className="section-padding bg-background">

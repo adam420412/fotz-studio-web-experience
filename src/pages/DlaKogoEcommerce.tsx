@@ -463,7 +463,7 @@ export default function DlaKogoEcommerce() {
         </div>
       </section>
 
-      <KlagemConfigurator />
+      <KlagemConfigurator industry="ecommerce" />
 
       {/* CTA */}
       <section className="section-padding bg-card">

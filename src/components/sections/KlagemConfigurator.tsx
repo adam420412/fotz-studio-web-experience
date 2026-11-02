@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
 import { ArrowUpRight } from 'lucide-react';
 import { enquiryHref } from '@/lib/enquiry.mjs';
+import { industryEnquiryHref } from '@/lib/industry-enquiry.mjs';
 
-export function KlagemConfigurator() {
+export function KlagemConfigurator({ industry }: { industry?: string }) {
   return <section id="konfigurator-klagem" aria-labelledby="klagem-heading" className="scroll-mt-28 border-y border-border bg-muted/20">
     <div className="container-wide px-6 md:px-12 py-12 md:py-16 grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
       <div>
@@ -18,7 +19,7 @@ export function KlagemConfigurator() {
           <Link to="/realizacje/klagem" className="dv-btn dv-btn-primary">Poznaj realizację<ArrowUpRight aria-hidden className="w-4 h-4" /></Link>
           <a href="https://klagem.pl/konfigurator/" target="_blank" rel="noopener noreferrer" className="dv-btn dv-btn-secondary">Wypróbuj na klagem.pl<span className="sr-only"> — otwiera nową kartę</span><ArrowUpRight aria-hidden className="w-4 h-4" /></a>
         </div>
-        <Link to={enquiryHref('web', 'configurator')} className="inline-block py-2 underline underline-offset-4 text-sm">Porozmawiajmy o konfiguratorze Twoich produktów →</Link>
+        <Link to={industryEnquiryHref(industry, enquiryHref('web', 'configurator'))} className="inline-block py-2 underline underline-offset-4 text-sm">Porozmawiajmy o konfiguratorze Twoich produktów →</Link>
       </div>
       <figure>
         <Link to="/realizacje/klagem" aria-label="Poznaj konfigurator 3D KLAGEM">
