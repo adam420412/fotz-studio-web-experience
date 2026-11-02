@@ -2,320 +2,326 @@ import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import { 
-  Globe, Search, ShoppingCart, Palette, MessageSquare, Settings, TrendingUp, Handshake, Phone, Smartphone, Shield, Headphones, ArrowRight, Sparkles, Target, Code2, Layers, Rocket, Star, Clock
+import {
+  ArrowRight,
+  BarChart3,
+  CheckCircle2,
+  FileText,
+  Globe,
+  Layers3,
+  MessageSquare,
+  MonitorSmartphone,
+  Palette,
+  Search,
+  Settings2,
+  ShoppingCart,
 } from "lucide-react";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
-import { ContactSection } from "@/components/sections/ContactSection";
-import { CityServicesGrid } from "@/components/sections/CityServicesGrid";
-import { CityPricingCards } from "@/components/sections/CityPricingCards";
-import { CityIntroSection } from "@/components/sections/CityIntroSection";
-import { CityBenefitsSection } from "@/components/sections/CityBenefitsSection";
-import { CityLinksSection } from "@/components/sections/CityLinksSection";
+import { BreadcrumbSchema, FAQSchema, ServiceSchema } from "@/components/seo/StructuredData";
 
-import apartamentyImg from "@/assets/portfolio/apartamenty-chorwacja-web.webp";
-import victoryCarsImg from "@/assets/portfolio/victory-cars-web.webp";
-import cuteDumplingImg from "@/assets/portfolio/cute-dumpling-new-web.webp";
+const seoTitle = "Strony internetowe Łódź — projektowanie | FOTZ";
+const seoDescription = "Profesjonalne strony internetowe Łódź: projektowanie stron WWW, WordPress, sklepy internetowe i SEO. Sprawdź zakres prac oraz wycenę FOTZ.";
+const canonicalUrl = "https://www.fotz-studio.pl/uslugi/strony-internetowe/lodz";
+const pageTitle = "Strony internetowe Łódź";
+const serviceLead = "Profesjonalna strona WWW dla firm z Łodzi i okolic: projekt graficzny, wygodny CMS, integracje, techniczne SEO, publikacja i pomiar zapytań.";
+const contactHref = "/kontakt?usluga=web#formularz";
 
-const StronyInternetoweLodz = () => {
-  const services = [
-    { icon: Globe, title: "Strony internetowe", desc: "Profesjonalne strony www dla firm z Łodzi i okolic." },
-    { icon: Search, title: "Pozycjonowanie SEO", desc: "Optymalizacja SEO zwiększająca widoczność w wyszukiwarce Google." },
-    { icon: Palette, title: "Projektowanie UI/UX", desc: "Nowoczesne strony internetowe z naciskiem na użytkownika." },
-    { icon: ShoppingCart, title: "Sklepy e-commerce", desc: "Tworzenie sklepów internetowych z pełnymi integracjami." },
-    { icon: MessageSquare, title: "Systemy CMS", desc: "WordPress, Webflow, Shopify i dedykowane rozwiązania." },
-    { icon: TrendingUp, title: "Optymalizacja konwersji", desc: "Strony, które zamieniają odwiedzających w klientów." },
-  ];
+const projectTypes = [
+  {
+    icon: Globe,
+    title: "Strona firmowa i wizytówka",
+    text: "Podstawowa strona WWW, czyli wizytówka, prezentuje firmę, ofertę i kontakt. Rozbudowana strona firmowa porządkuje usługi i materiały. Projektujemy podstrony według pytań odbiorców, bez powielonego szablonu.",
+  },
+  {
+    icon: Layers3,
+    title: "Landing page do kampanii",
+    text: "Landing page prowadzi do jednego działania: wysłania zgłoszenia, rozmowy lub zakupu. Układ treści i CTA dopasowujemy do źródła ruchu. Strona może wspierać reklamy online, ale każda kampania ma osobny budżet i zakres.",
+  },
+  {
+    icon: ShoppingCart,
+    title: "Sklep internetowy i katalog",
+    text: "Sklepy internetowe dla firm obejmują katalog, koszyk, płatności, dostawy i zamówienia. Katalog bez sprzedaży online może prowadzić do zapytania o produkt. Przed wdrożeniem ustalamy dane, warianty oraz integracje.",
+  },
+  {
+    icon: Settings2,
+    title: "Modernizacja i migracja",
+    text: "Nowa strona internetowa może zastąpić przestarzałą witrynę bez kopiowania wszystkich treści. Analizujemy adresy i materiały; aktualizacja treści oraz przekierowania mają uzgodniony zakres, a publikacja kończy się kontrolą.",
+  },
+];
 
-  const pricing = [
-    { title: "Landing Page", desc: "Strona wizytówkowa prezentująca firmę", price: "Wycena indywidualna", features: ["Do 5 podstron", "Responsywny design", "Podstawowe SEO", "Formularz kontaktowy", "Certyfikat SSL"] },
-    { title: "Strona Firmowa", desc: "Rozbudowana strona z dodatkowymi funkcjami", price: "Wycena indywidualna", popular: true, features: ["Do 15 podstron", "Zaawansowane SEO", "Blog firmowy", "Integracja social media", "System CMS", "Wsparcie techniczne"] },
-    { title: "Sklep E-commerce", desc: "Platforma sprzedażowa z integracjami", price: "Wycena indywidualna", features: ["Nieograniczona liczba produktów", "Panel administracyjny", "Integracje płatności", "Optymalizacja konwersji", "Narzędzia marketingowe"] },
-  ];
+const integrationItems = [
+  {
+    title: "Formularze i CRM",
+    text: "Formularz może przekazywać zapytanie na e-mail lub do CRM. Ustalamy pola, zgody, komunikaty, zabezpieczenia antyspamowe i test dostarczania wiadomości.",
+  },
+  {
+    title: "Płatności i sprzedaż",
+    text: "Dla sklepu planujemy płatności, dostawy, faktury i powiadomienia. Zakres zależy od operatorów, ich dokumentacji, warunków umów oraz opłat.",
+  },
+  {
+    title: "Analityka i marketing",
+    text: "Konfigurujemy uzgodnione zdarzenia i system zgód. Integracja z systemem reklamowym, działaniem marketingowym lub mailingiem nie zastępuje strategii i pracy z treścią.",
+  },
+  {
+    title: "Rezerwacje i automatyzacje",
+    text: "Łączymy stronę z kalendarzem, rezerwacjami lub firmowym API po sprawdzeniu danych. Automatyzacje oraz AI wdrażamy z opisanym scenariuszem; interaktywny element musi mieć sposób odbioru.",
+  },
+];
 
-  const processSteps = [
-    { icon: Target, step: "01", title: "Brief i analiza", desc: "Poznajemy cele biznesowe i specyfikę Twojej firmy w Łodzi." },
-    { icon: Palette, step: "02", title: "Projekt UX/UI", desc: "Zaprojektowanie strony z naciskiem na użyteczność i estetykę." },
-    { icon: Code2, step: "03", title: "Programowanie", desc: "Profesjonalne tworzenie stron www z dbałością o kod." },
-    { icon: Rocket, step: "04", title: "Testy i wdrożenie", desc: "Testujemy i uruchamiamy Twoją stronę internetową." },
-  ];
+const processSteps = [
+  { number: "01", title: "Brief i cele", text: "Poznajemy ofertę, odbiorców, potrzeby klienta i cel biznesowy. Ustalamy wartościowe zapytania oraz informacje poprzedzające kontakt." },
+  { number: "02", title: "Architektura i zakres", text: "Porządkujemy podstrony, funkcje, materiały i integracje. Opisujemy etapy, odpowiedzialności oraz kryteria odbioru." },
+  { number: "03", title: "Prototyp i design", text: "Projektujemy nawigację, prototyp UX i interfejs UI. Przed programowaniem pokazujemy kluczowe widoki także na mały ekran." },
+  { number: "04", title: "Kod i panel CMS", text: "Łączymy projekt strony WWW z treściami, panelem i integracjami. Konfigurujemy obsługę zapytań oraz techniczne SEO." },
+  { number: "05", title: "Testy i poprawki", text: "Sprawdzamy widoki, linki, zapytania, przekierowania i zgodność z projektem. Uwagi zbieramy w uzgodnionej formie." },
+  { number: "06", title: "Publikacja i rozwój", text: "Po akceptacji publikujemy witrynę i przekazujemy dostępy. Omawiamy opiekę, aktualizacje oraz dalszy rozwój strony." },
+];
 
-  const caseStudies = [
-    { title: "Apartamenty Chorwacja", category: "Strona rezerwacyjna", result: "+180% rezerwacji online", link: "/realizacje/apartamenty-chorwacja", image: apartamentyImg },
-    { title: "Victory Cars", category: "Strona motoryzacyjna", result: "Nowoczesny design premium", link: "/realizacje/victory-cars", image: victoryCarsImg },
-    { title: "Cute Dumpling", category: "Strona gastronomiczna", result: "+250% ruchu organicznego", link: "/realizacje/cute-dumpling", image: cuteDumplingImg },
-  ];
+const faqItems = [
+  {
+    question: "Ile kosztuje strona internetowa w Łodzi?",
+    answer: "Cena zależy od liczby widoków i podstron, projektu graficznego, treści, CMS, integracji, wersji językowych i migracji. Po briefie otrzymasz wycenę z zakresem, etapami i warunkami odbioru. Nie stosujemy jednej sztywnej ceny dla każdej realizacji.",
+  },
+  {
+    question: "Jak długo trwa stworzenie strony internetowej?",
+    answer: "Termin zależy od złożoności, gotowości materiałów, integracji i tempa akceptacji. Harmonogram przygotowujemy po ustaleniu zakresu i wskazujemy zadania klienta. Nie deklarujemy jednego czasu realizacji dla prostej witryny, rozbudowanego serwisu i sklepu.",
+  },
+  {
+    question: "Czy stronę będzie można samodzielnie edytować?",
+    answer: "Tak, jeśli projekt obejmuje system zarządzania treścią. Uzgadniamy edytowalne pola, uprawnienia, dostępy i instrukcję. Panel może obsługiwać ofertę, aktualności, zdjęcia lub produkty, a techniczne aktualizacje wymagają osobnych ustaleń opieki.",
+  },
+  {
+    question: "Czy strona będzie responsywna i przygotowana pod SEO?",
+    answer: "Projektujemy strony dostosowane do różnych ekranów i sprawdzamy kluczowe widoki. Wdrożenie obejmuje uzgodnione metadane, nagłówki, adresy, dane strukturalne i kontrolę indeksacji. Pozycjonowanie to dalszy proces, a nie gwarancja pozycji w Google.",
+  },
+  {
+    question: "Czym strona wizytówka różni się od landing page?",
+    answer: "Taka prosta strona prezentuje firmę, ofertę i dane kontaktowe w kilku sekcjach lub podstronach. Landing page prowadzi do jednego działania i odpowiada konkretnemu źródłu ruchu. Wybór zależy od celu, decyzji klienta oraz planu rozwoju treści i kampanii.",
+  },
+  {
+    question: "Czy tworzycie strony WordPress i sklepy internetowe?",
+    answer: "Tak, zakres może obejmować WordPress, inny odpowiedni CMS, sklep internetowy albo wdrożenie dedykowane. Technologię wybieramy po analizie edycji treści, integracji, katalogu i wymagań technicznych, zamiast narzucać jedną platformę każdej firmie.",
+  },
+  {
+    question: "Jakie materiały muszę przygotować?",
+    answer: "Przydadzą się opis oferty, dane firmy, logo, zdjęcia, dotychczasowe treści i lista funkcji. Copywriting, opracowanie zdjęć lub projektowanie logo możemy uwzględnić jako dodatkowy zakres. Informacje prawne i zgody wymagają zatwierdzenia przez klienta.",
+  },
+  {
+    question: "Czy współpraca wymaga biura lub spotkań w Łodzi?",
+    answer: "Projekt możemy prowadzić zdalnie: brief, prezentacje, akceptacje i przekazanie dostępów nie wymagają lokalnego biura w Łodzi. Formę kontaktu ustalamy na początku. Realizacje stron internetowych i opinie klientów warto porównywać razem z zakresem oraz warunkami poprawek.",
+  },
+  {
+    question: "Co dzieje się po uruchomieniu strony?",
+    answer: "Po publikacji kontrolujemy uzgodnione elementy i przekazujemy materiały projektowe. Opieka może obejmować kopie, aktualizacje, monitoring i rozwój funkcji. Pozycjonowanie, treści i reklamy wymagają osobnych ustaleń; nie obiecujemy pozycji ani liczby zapytań.",
+  },
+];
 
-  const faqItems = [
-    { question: "Czym się różni tworzenie stron w Łodzi od innych miast?", answer: "Tworzenie stron w Łodzi uwzględnia lokalne potrzeby firm z regionu: optymalizację pod klientów z okolicy, integrację z mapami i kontaktami oraz projekt graficzny dopasowany do branży." },
-    { question: "Jak stworzyć responsywną stronę internetową dla firmy?", answer: "Stworzyć stronę z responsywnym projektem oznacza zaprojektować wygląd, który działa na urządzeniach mobilnych i desktopach. Nowoczesne strony wymagają testów na różnych urządzeniach." },
-    { question: "Ile kosztuje wykonanie strony internetowej w Łodzi?", answer: "Koszt zależy od zakresu, treści i integracji. Prześlij brief, aby otrzymać indywidualną ofertę z harmonogramem i rozpisanymi kosztami." },
-    { question: "Dlaczego warto wybrać lokalną firmę z Łodzi?", answer: "Współpraca z firmą z Łodzi daje korzyści: szybki kontakt, znajomość rynku lokalnego i łatwiejsze spotkania projektowe." },
-    { question: "Czym różni się strona wizytówka od nowoczesnej strony internetowej?", answer: "Wizytówka to podstawowa strona z informacjami o firmie. Nowoczesne strony to rozbudowane witryny z integracjami, SEO i elementami interaktywnymi." },
-    { question: "Jak tworzenie stron wpływa na zdobywanie klientów?", answer: "Profesjonalne tworzenie stron wpływa na widoczność w wyszukiwarkach, zaufanie klientów i konwersję. Dobre SEO i czytelny projekt pomagają przyciągnąć klientów." },
-  ];
+const sectionHeading = "text-3xl md:text-4xl font-heading font-bold mb-5";
+const bodyText = "text-muted-foreground leading-relaxed";
 
-  const stats = [
-    { value: "WWW", label: "Strony i sklepy", icon: Layers },
-    { value: "UX", label: "Projekt dla odbiorcy", icon: Star },
-    { value: "5 lat", label: "Doświadczenia", icon: Clock },
-    { value: "Kontakt", label: "Uzgodniona opieka", icon: Headphones },
-  ];
-
-  const benefits = [
-    "Znajomość łódzkiego rynku",
-    "Kompleksowa obsługa od projektu po wdrożenie",
-    "SEO w standardzie każdej strony",
-    "Responsywny design mobile-first",
-    "Wsparcie techniczne po uruchomieniu",
-    "Konkurencyjne ceny bez ukrytych kosztów"
-  ];
-
-  const introContent = {
-    title: "Tworzenie stron www dla firm z Łodzi",
-    paragraphs: [
-      "Szukasz profesjonalnego partnera do stworzenia strony internetowej dla Twojej firmy w Łodzi? Nasza agencja specjalizuje się w projektowaniu i wdrażaniu nowoczesnych stron www.",
-      "Twoja strona internetowa będzie nie tylko estetyczna, ale również efektywna w pozyskiwaniu klientów.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych.",
-      "Łódź to miasto w transformacji – od przemysłu włókienniczego do centrum biznesu, kreatywności i e-commerce. To unikalna szansa dla firm, które chcą zaistnieć w przestrzeni online na rosnącym rynku."
-    ],
-    videoSrc: "/videos/fotz-reel.mp4"
-  };
-
+export default function StronyInternetoweLodz() {
   return (
     <>
-      <SEOHead
-        title="Strony internetowe Łódź — tworzenie stron WWW | FOTZ"
-        description="Strony internetowe Łódź — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Łodzi. Fotz Studio."
-        canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/lodz"
-        keywords="strony internetowe łódź, tworzenie stron www łódź, projektowanie stron łódź, sklepy internetowe łódź, wykonanie strony internetowej łódź, responsywna strona www łódź, wordpress łódź, nowoczesne strony www łódź, agencja stron internetowych łódź"
-      />
-      
-      <ServiceSchema name="Strony Internetowe Łódź" description="Profesjonalne tworzenie stron internetowych dla firm z Łodzi." provider="FOTZ Studio" areaServed="Łódź" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://www.fotz-studio.pl" }, { name: "Strony Internetowe", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe" }, { name: "Łódź", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe/lodz" }]}/>
-      <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
+      <SEOHead title={seoTitle} description={seoDescription} canonical={canonicalUrl} />
+      <ServiceSchema name={pageTitle} description={serviceLead} provider="FOTZ Studio" areaServed="Łódź" />
+      <BreadcrumbSchema items={[
+        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+        { name: "Strony internetowe", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe" },
+        { name: "Łódź", url: canonicalUrl },
+      ]} />
+      <FAQSchema items={faqItems} />
 
-      <OrganizationSchema />
-
-
-      <Layout>
-        {/* Hero */}
-        <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-32 pb-20">
-          <div className="absolute inset-0">
-            <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-background to-background" />
-            <motion.div animate={{ scale: [1, 1.2, 1], opacity: [0.15, 0.25, 0.15] }} transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }} className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[150px]" />
-            <motion.div animate={{ scale: [1.2, 1, 1.2], opacity: [0.15, 0.25, 0.15] }} transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 4 }} className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-secondary/20 rounded-full blur-[120px]" />
-          </div>
-          
-          <motion.div animate={{ y: [-20, 20, -20], rotate: [0, 5, 0] }} transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }} className="absolute top-32 right-[15%] hidden lg:block">
-            <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 backdrop-blur-sm border border-primary/20 flex items-center justify-center"><Globe className="w-10 h-10 text-primary" /></div>
-          </motion.div>
-          
-          <div className="container mx-auto px-4 relative z-10">
-            <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="text-center max-w-5xl mx-auto">
-              <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5, delay: 0.2 }}>
-                <span className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-8"><Sparkles className="w-4 h-4" />Strony WWW Łódź<Sparkles className="w-4 h-4" /></span>
-              </motion.div>
-              
-              <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.3 }} className="text-4xl md:text-5xl lg:text-7xl font-heading font-bold mb-8 leading-tight">
-                Strony Internetowe{" "}<span className="text-gradient relative">Łódź<motion.span initial={{ scaleX: 0 }} animate={{ scaleX: 1 }} transition={{ duration: 0.8, delay: 0.8 }} className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-primary to-primary/50 rounded-full origin-left" /></span>
-              </motion.h1>
-              
-              <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.4 }} className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed">
-                <strong className="text-foreground">Profesjonalna strona internetowa to podstawa sukcesu każdej firmy.</strong>{" "}Tworzymy responsywne strony www i nowoczesne strony internetowe — wykonanie strony internetowej Łódź w React, Next.js i WordPress. Projektowanie stron Łódź z pełną optymalizacją SEO.
-              </motion.p>
-
-              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.5 }} className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-                <Button asChild size="lg" className="group text-base px-8 py-6 shadow-lg shadow-primary/20"><Link to="/kontakt">Bezpłatna wycena<ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" /></Link></Button>
-                <Button asChild variant="outline" size="lg" className="group text-base px-8 py-6 border-2"><a href="tel:+48790814814"><Phone className="mr-2 h-5 w-5" />+48 790 814 814</a></Button>
-              </motion.div>
-
-              <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.7 }} className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 max-w-4xl mx-auto">
-                {stats.map((stat, index) => (
-                  <motion.div key={index} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.8 + index * 0.1 }} className="group p-4 rounded-2xl bg-card/50 backdrop-blur-sm border border-border/50 hover:border-primary/30 transition-all">
-                    <stat.icon className="w-6 h-6 text-primary mx-auto mb-2 transition-transform group-hover:scale-110" />
-                    <div className="text-2xl md:text-3xl font-bold text-foreground">{stat.value}</div>
-                    <div className="text-xs md:text-sm text-muted-foreground">{stat.label}</div>
-                  </motion.div>
-                ))}
-              </motion.div>
-            </motion.div>
+      <Layout workPlacement="manual">
+        <section className="relative overflow-hidden pt-32 pb-20 md:pt-40 md:pb-24 bg-gradient-to-b from-primary/5 via-background to-background">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center">
+              <p className="inline-flex items-center gap-2 px-4 py-2 mb-7 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium">
+                <Globe className="w-4 h-4" aria-hidden="true" /> Strony WWW Łódź — oferta dla firm
+              </p>
+              <h1 className="text-4xl md:text-6xl font-heading font-bold mb-7 leading-tight">{pageTitle}</h1>
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-9 max-w-3xl mx-auto">{serviceLead}</p>
+              <div className="flex flex-col sm:flex-row justify-center gap-4">
+                <Button asChild size="lg" className="px-8">
+                  <Link to={contactHref}>Opisz swoją stronę <ArrowRight className="ml-2 w-5 h-5" aria-hidden="true" /></Link>
+                </Button>
+                <Button asChild variant="outline" size="lg" className="px-8">
+                  <a href="#typy-projektow">Zobacz typy projektów</a>
+                </Button>
+              </div>
+            </div>
           </div>
         </section>
 
-        <CityIntroSection content={introContent} cityName="Łódź" />
-        <CityBenefitsSection benefits={benefits} title="Dlaczego warto nam zaufać?" subtitle="Poznaj korzyści współpracy" cityName="Łódź" />
-        <CityServicesGrid services={services} title="Nasze usługi" subtitle="Kompleksowe usługi tworzenia stron www dla łódzkich firm" cityName="Łódź" />
-
-        {/* Process */}
-        <section className="py-24 bg-card/30">
-          <div className="container mx-auto px-4">
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
-              <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">Proces</span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-4">Jak tworzymy strony?</h2>
-            </motion.div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-              {processSteps.map((item, index) => (
-                <motion.div key={index} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }} className="group relative">
-                  <div className="p-8 rounded-2xl bg-background border border-border/50 hover:border-primary/30 transition-all h-full relative overflow-hidden">
-                    <div className="absolute top-0 right-0 text-8xl font-bold text-primary/5 group-hover:text-primary/10 transition-colors">{item.step}</div>
-                    <div className="relative z-10">
-                      <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"><item.icon className="w-7 h-7 text-primary" /></div>
-                      <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
-                      <p className="text-muted-foreground">{item.desc}</p>
-                    </div>
-                  </div>
-                </motion.div>
+        <section id="typy-projektow" className="py-20 scroll-mt-24">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <div className="max-w-3xl mb-12">
+              <p className="text-primary text-sm font-medium mb-3">Typy projektów</p>
+              <h2 className={sectionHeading}>Tworzenie stron internetowych Łódź — typy projektów i realizacja</h2>
+              <p className={`${bodyText} mb-5`}>Tworzenie stron internetowych Łódź zaczynamy od pytania, co witryna ma zmienić w firmie. Strony internetowe Łódź mają uporządkować ofertę, ułatwić kontakt, wspierać sprzedaż i pomagać pozyskiwać nowych klientów. Funkcje należy projektować pod rzeczywiste czynności odbiorców i zespołu, a profesjonalny projekt graficzny porządkuje drogę do działania.</p>
+              <p className={bodyText}>Dla firm z Łodzi i województwa łódzkiego przygotowujemy strony internetowe i sklepy z uwzględnieniem rynku lokalnego oraz działalności ogólnopolskiej. Inne treści potrzebuje firma usługowa, inne producent, organizacja lub zespół B2B. Lokalizacja określa kontekst, ale nie zastępuje analizy odbiorców.</p>
+            </div>
+            <div className="grid md:grid-cols-2 gap-6">
+              {projectTypes.map((item) => (
+                <article key={item.title} className="p-7 rounded-2xl bg-card border border-border/50">
+                  <item.icon className="w-7 h-7 text-primary mb-5" aria-hidden="true" />
+                  <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
+                  <p className={bodyText}>{item.text}</p>
+                </article>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Case Studies */}
-        <section className="py-24">
-          <div className="container mx-auto px-4">
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
-              <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">Realizacje</span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-4">Nasze projekty</h2>
-            </motion.div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {caseStudies.map((study, index) => (
-                <motion.div key={index} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }}>
-                  <Link to={study.link} className="group block rounded-2xl overflow-hidden bg-card border border-border/50 hover:border-primary/30 transition-all hover:shadow-2xl hover:shadow-primary/10">
-                    <div className="relative aspect-video overflow-hidden"><img loading="lazy" src={study.image} alt={study.title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" /></div>
-                    <div className="p-6">
-                      <span className="text-primary text-sm font-medium">{study.category}</span>
-                      <h3 className="text-xl font-semibold mt-2 mb-2 group-hover:text-primary transition-colors">{study.title}</h3>
-                      <p className="text-muted-foreground">{study.result}</p>
-                    </div>
-                  </Link>
-                </motion.div>
+        <section className="py-20 bg-card/30">
+          <div className="container mx-auto px-4 max-w-6xl grid lg:grid-cols-2 gap-12">
+            <div>
+              <Palette className="w-8 h-8 text-primary mb-5" aria-hidden="true" />
+              <h2 className={sectionHeading}>Jak projektować strony WWW Łódź: design i zakres realizacji</h2>
+              <p className={`${bodyText} mb-5`}>Projektowanie stron internetowych zaczynamy od architektury informacji: nazw usług, argumentów, nawigacji i CTA. Projektowanie stron WWW łączy projekt graficzny z czytelnością, a nowoczesne strony internetowe wspierają wizerunek firmy. Wygląd strony i indywidualny design nie kopiują szablonu strony. Zakres może obejmować projekt UI i bibliotekę komponentów.</p>
+              <p className={bodyText}>Oferta opisuje rezultaty, a realizacja ma jasne granice. Oferta obejmuje uzgodnione widoki, responsywny interfejs, konfigurację treści, zapytań i integracji, techniczne SEO, testy oraz publikację. Copywriting, dodatkowe języki, zdjęcia i rozbudowane funkcje wymagają wyraźnego ujęcia w wycenie.</p>
+            </div>
+            <div>
+              <FileText className="w-8 h-8 text-primary mb-5" aria-hidden="true" />
+              <h2 className={sectionHeading}>Zakres tworzenia stron WWW: CMS i materiały</h2>
+              <p className={`${bodyText} mb-5`}>Podczas tworzenia stron WWW system CMS dobieramy do codziennej pracy zespołu. WordPress sprawdza się w wielu serwisach redakcyjnych, ale czasem lepszy będzie inny panel lub rozwiązanie dedykowane. Oceniamy treści, uprawnienia i funkcje. Panel ma ułatwiać pracę; aktualizacja oferty nie może przypadkiem zmieniać całego układu.</p>
+              <p className={`${bodyText} mb-5`}>Do rozpoczęcia wystarczy opis firmy i rozmowa o klientach. Przydatne są obecne teksty, identyfikacja wizualna, zdjęcia z prawami do wykorzystania oraz pytania z rozmów z klientami. Możemy pracować na materiałach klienta albo uwzględnić redakcję i copywriting w projekcie.</p>
+              <ul className="space-y-3">
+                {[
+                  "lista podstron, funkcji i osób akceptujących",
+                  "treści, media oraz informacje o prawach do materiałów",
+                  "zasady edycji, instrukcja i przekazanie dostępów",
+                ].map((item) => (
+                  <li key={item} className="flex gap-3 text-muted-foreground"><CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" aria-hidden="true" />{item}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <div className="max-w-3xl mb-12">
+              <p className="text-primary text-sm font-medium mb-3">Integracje</p>
+              <h2 className={sectionHeading}>Strona WWW jako interaktywny element firmy: integracje i AI</h2>
+              <p className={bodyText}>Budowa stron internetowych często wykracza poza wygląd i panel. Integracje mogą skrócić obsługę zapytania i połączyć witrynę z obsługą zamówień. Każdą opisujemy osobno: źródło i cel danych, dostęp, synchronizację oraz zachowanie przy błędzie. Dzięki temu wiadomo, co podlega testom i odbiorowi.</p>
+            </div>
+            <div className="grid md:grid-cols-2 gap-6">
+              {integrationItems.map((item) => (
+                <article key={item.title} className="p-7 rounded-2xl bg-card border border-border/50">
+                  <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
+                  <p className={bodyText}>{item.text}</p>
+                </article>
               ))}
             </div>
           </div>
         </section>
 
-        <CityPricingCards pricing={pricing} title="Cennik stron internetowych" subtitle="Transparentne ceny bez ukrytych kosztów" cityName="Łódź" />
-
-        <CityLinksSection currentCity="Łódź" />
-
-        {/* FAQ */}
-        <section className="py-24">
-          <div className="container mx-auto px-4">
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
-              <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">FAQ</span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-4">Najczęstsze pytania</h2>
-            </motion.div>
-            <div className="max-w-3xl mx-auto">
-              <Accordion type="single" collapsible className="space-y-4">
-                {faqItems.map((item, index) => (
-                  <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.05 }}>
-                    <AccordionItem value={`item-${index}`} className="border border-border/50 rounded-xl px-6 bg-card/50">
-                      <AccordionTrigger className="text-left hover:no-underline py-6"><span className="font-medium">{item.question}</span></AccordionTrigger>
-                      <AccordionContent className="text-muted-foreground pb-6">{item.answer}</AccordionContent>
-                    </AccordionItem>
-                  </motion.div>
+        <section className="py-20 bg-card/30">
+          <div className="container mx-auto px-4 max-w-6xl grid lg:grid-cols-2 gap-12">
+            <div>
+              <MonitorSmartphone className="w-8 h-8 text-primary mb-5" aria-hidden="true" />
+              <h2 className={sectionHeading}>Responsywne strony internetowe i techniczne SEO</h2>
+              <p className={`${bodyText} mb-5`}>Projektujemy responsywne strony internetowe na smartfon, tablet i komputer. Urządzenia mobilne wymagają czytelnego tekstu, wygodnego menu, pól kontaktowych i dostępnego CTA. Strona WWW powinna oszczędnie korzystać z obrazów, czcionek i kodu, ale Core Web Vitals trzeba zmierzyć po publikacji.</p>
+              <p className={bodyText}>Techniczne SEO przygotowuje fundament pod pozycjonowanie w wyszukiwarkach. Uporządkowane nagłówki, opisowe adresy URL, metadane i linkowanie wewnętrzne pomagają zrozumieć strukturę serwisu. Dane strukturalne odpowiadają widocznej treści, lecz sama obecność schema nie zapewnia miejsca w Google.</p>
+            </div>
+            <div>
+              <Search className="w-8 h-8 text-primary mb-5" aria-hidden="true" />
+              <h2 className={sectionHeading}>Techniczne SEO i indeksacja online przed publikacją</h2>
+              <ul className="space-y-3 mb-5">
+                {[
+                  "jedno H1 i logiczną hierarchię pozostałych nagłówków",
+                  "title, description, kanoniczne adresy i ustawienia indeksacji",
+                  "mapę serwisu, przekierowania oraz błędne adresy",
+                  "linki wewnętrzne, nawigację i dostępność treści",
+                  "wysyłkę zapytań, zgody i mobilny interfejs",
+                  "obrazy, zasoby oraz podstawy wydajności",
+                ].map((item) => (
+                  <li key={item} className="flex gap-3 text-muted-foreground"><CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" aria-hidden="true" />{item}</li>
                 ))}
-              </Accordion>
+              </ul>
+              <p className={bodyText}>Pozycjonowanie stron internetowych obejmuje badanie fraz, rozwój treści i prace po publikacji. Do pozycjonowania nie wystarczy jednorazowa optymalizacja. Nie obiecujemy określonej pozycji; skuteczność zależy m.in. od konkurencji, oferty, domeny i regularności działań.</p>
             </div>
           </div>
         </section>
 
-      {/* SEO Article Section */}
-      <section className="py-20 bg-card">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="prose prose-lg max-w-none"
-          >
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-              Strony internetowe Łódź — tworzenie stron www dla firm z Łodzi
-            </h2>
-            <p className="text-muted-foreground mb-4">
-              Łódź przechodzi jedną z najbardziej spektakularnych transformacji w Polsce.
-              Pofabryczne lofty zamieniają się w przestrzenie biurowe i design studia, OFF Piotrkowska
-              przyciąga kreatywny biznes, a Łódź Design Festival rozsławia miasto na całą Europę.
-              Sektor mody, e-commerce i kreatywny przemysł rozwijają się tu błyskawicznie —
-              i każda z tych firm potrzebuje strony internetowej, która oddaje jej charakter.
-              Tworzenie stron www dla firm z Łodzi to zadanie, które podejmujemy z przyjemnością.
-            </p>
-            <p className="text-muted-foreground mb-6">
-              Łódź jest też jednym z największych w Polsce hubów e-commerce. Zalando, answear.com
-              i dziesiątki mniejszych sklepów internetowych mają tu swoje centra operacyjne.
-              To środowisko, w którym strony internetowe i sklepy online to codzienność —
-              a wysoka poprzeczka jakości sprawia, że przeciętne projekty nie robią wrażenia.
-              Dlatego każdą stronę www dla łódzkiej firmy projektujemy powyżej tej poprzeczki.
-            </p>
-
-            <h2 className="text-3xl font-heading font-bold mb-6">
-              Łódź — miasto reinwencji i cyfrowej transformacji
-            </h2>
-            <p className="text-muted-foreground mb-4">
-              Łódzkie MSP, od rzemieślniczych pracowni po agencje kreatywne i producenci odzieży,
-              intensywnie przenoszą się do internetu. Firmy, które jeszcze kilka lat temu sprzedawały
-              wyłącznie stacjonarnie, dziś potrzebują profesjonalnych stron, katalogów produktów
-              i systemów rezerwacji online. Obserwujemy ten trend z bliska i odpowiadamy na niego
-              konkretnymi rozwiązaniami.
-            </p>
-            <p className="text-muted-foreground mb-6">
-              Szczególnie aktywny jest sektor filmowy — Łódź Film Commission i PWSFTviT to magnesy
-              dla produkcji filmowych z całego świata. Tworzymy strony internetowe dla producentów,
-              reżyserów i firm postprodukcyjnych, które muszą prezentować portfolio w sposób
-              wizualnie porywający — ze slow-motion galeriami, showreelami i case study projektów.
-            </p>
-
-            <h2 className="text-3xl font-heading font-bold mb-6">
-              Jak tworzymy strony internetowe dla firm z Łodzi?
-            </h2>
-            <p className="text-muted-foreground mb-4">
-              Pracujemy w 100% zdalnie — konsultacje przez Google Meet, projekt w Figmie,
-              wdrożenie z bieżącym podglądem na staging. Dla klientów z Łodzi oznacza to zero
-              dojazdów, zero oczekiwania na spotkania i pełną transparentność procesu.
-              Standardowy termin realizacji to 3–5 tygodni od akceptacji briefu.
-            </p>
-            <p className="text-muted-foreground mb-6">
-              Technologie, z których korzystamy: React + Next.js dla wydajnych stron statycznych,
-              WordPress + Elementor Pro dla klientów, którzy chcą samodzielnie zarządzać treścią,
-              oraz WooCommerce i Shopify dla sklepów e-commerce. Wybór technologii zawsze
-              dopasowujemy do potrzeb — nie sprzedajemy jednego rozwiązania wszystkim.
-            </p>
-
-            <h2 className="text-3xl font-heading font-bold mb-6">
-              Lokalne SEO i widoczność w Google dla łódzkich firm
-            </h2>
-            <p className="text-muted-foreground mb-4">
-              Optymalizacja lokalna to jeden z naszych kluczowych atutów. Dla firm z Łodzi
-              obsługujących klientów w mieście optymalizujemy strony pod frazy z geolokalizacją
-              — „usługa + Łódź", „usługa + Bałuty/Polesie/Widzew" — i pomagamy w konfiguracji
-              profilu Google Moja Firma. Podwójna widoczność (organic + mapy) to więcej klientów
-              bez dodatkowych kosztów reklamy.
-            </p>
-            <p className="text-muted-foreground">
-              Łódź jest miastem, w którym jakość i design mają znaczenie — branże kreatywne,
-              modowe i filmowe wymagają stron na światowym poziomie. Dostarczamy je w cenie
-              dostosowanej do realiów polskiego rynku. Bezpłatna wycena w ciągu 24 godzin —
-              napisz do nas i zacznijmy rozmowę o Twojej stronie internetowej.
-            </p>
-          
-            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
-              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe — oferta</Link>
-              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
-              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
-              <Link to="/social-media/obsluga" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+        <section className="py-20">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <div className="max-w-3xl mb-12">
+              <p className="text-primary text-sm font-medium mb-3">Proces i odpowiedzialności</p>
+              <h2 className={sectionHeading}>Proces tworzenia stron internetowych</h2>
+              <p className={bodyText}>Projektowanie i tworzenie stron internetowych w Łodzi dzielimy na etapy z rezultatem i akceptacją. Zakres wdrożenia opisuje obowiązki: jako agencja interaktywna odpowiadamy za projekt i kod, a klient za prawdziwość informacji i decyzje. Podczas tworzenia stron internetowych zmiana zakresu wymaga omówienia harmonogramu i wyceny.</p>
             </div>
-          </motion.div>
-        </div>
-      </section>
+            <ol className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {processSteps.map((step) => (
+                <li key={step.number} className="p-6 rounded-2xl border border-border/50 bg-card/50">
+                  <span className="block text-primary font-mono text-sm mb-5">{step.number}</span>
+                  <h3 className="text-lg font-semibold mb-3">{step.title}</h3>
+                  <p className={bodyText}>{step.text}</p>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </section>
 
+        <section className="py-20 bg-card/30">
+          <div className="container mx-auto px-4 max-w-6xl grid lg:grid-cols-2 gap-12">
+            <div>
+              <BarChart3 className="w-8 h-8 text-primary mb-5" aria-hidden="true" />
+              <h2 className={sectionHeading}>Jak mierzyć widoczność i zapytania ze strony?</h2>
+              <p className={`${bodyText} mb-5`}>Po publikacji rozdzielamy widoczność, ruch i działania użytkowników. Google Search Console pokazuje m.in. zapytania i strony docelowe. Narzędzie analityczne może rejestrować uzgodnione zdarzenia, takie jak wysłanie formularza, kliknięcie telefonu czy rozpoczęcie rezerwacji, z uwzględnieniem prywatności i trybu zgód.</p>
+              <p className={bodyText}>Wejście na stronę nie oznacza wartościowego leada, a pozycja frazy nie określa jakości zapytania. Definiujemy zdarzenia i ich weryfikację. Kampanie Google Ads mierzymy osobno od ruchu organicznego. Nie przypisujemy stronie wyników firmy bez danych oraz bez uwzględnienia pracy zespołu obsługującego klientów.</p>
+            </div>
+            <div>
+              <Settings2 className="w-8 h-8 text-primary mb-5" aria-hidden="true" />
+              <h2 className={sectionHeading}>Od czego zależy wycena strony WWW?</h2>
+              <p className={`${bodyText} mb-5`}>Koszt zależy od indywidualnych widoków, podstron, treści, wersji językowych i funkcji. Na wycenę wpływają CMS, integracje, migracja, testy oraz wymagania dostępności i wydajności. Wykonanie strony lub sklepu ustalamy po briefie; sama cena bez zakresu nie pozwala rzetelnie porównać ofert.</p>
+              <p className={`${bodyText} mb-5`}>Każda strona WWW ma inne wymagania. Wycena wskazuje etapy, poprawki, materiały klienta, publikację i dostępy. Domena i hosting, licencje, opieka, pozycjonowanie i budżet reklamowy są kosztami tylko po zapisaniu w ofercie. Hasło „tanie strony internetowe” nie zastępuje warunków realizacji, a „konkurencyjne ceny” nie mówią nic o zakresie.</p>
+              <Button asChild>
+                <Link to={contactHref}>Poproś o wycenę zakresu <ArrowRight className="ml-2 w-4 h-4" aria-hidden="true" /></Link>
+              </Button>
+            </div>
+          </div>
+        </section>
 
-        <ContactSection />
+        <section className="py-20">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <h2 className={sectionHeading}>Portfolio, realizacje stron internetowych i opinie klientów — Łódź i okolice</h2>
+            <p className={`${bodyText} mb-5`}>Wybierając agencję lub freelancera, porównaj sposób pracy, a nie tylko ofertę. Zapytaj, kto projektuje i programuje, jak wygląda akceptacja, co stanie się z kodem i dostępami oraz kto odpowiada za zapytania po publikacji. Portfolio stron internetowych warto oceniać pod kątem czytelności, funkcji i podobnych wyzwań, nie tylko atrakcyjnych zrzutów ekranu.</p>
+            <p className={`${bodyText} mb-5`}>Profesjonalne strony internetowe dla firm powinny mieć właściciela treści i plan rozwoju. Przed podpisaniem umowy ustal, czy możesz zmieniać ofertę, jak działają kopie i aktualizacje oraz jak wyceniane są nowe funkcje. Strona wspiera plan pozyskiwania klientów, ale jasne warunki są ważniejsze niż obietnica natychmiastowego dotarcia do potencjalnych klientów.</p>
+            <p className={bodyText}>Projekty dla regionu Łódź i okolice prowadzimy zdalnie, z prezentacjami i akceptacjami online. Strony WWW w Łodzi przygotowujemy według rzeczywistych potrzeb. Dla klientów z Łodzi oraz województwa łódzkiego ustalamy obszar działania i sposób kontaktu. Nie deklarujemy lokalnego biura w Łodzi. Lokalny kontekst uwzględniamy w treści i strukturze oferty.</p>
+          </div>
+        </section>
+
+        <section className="py-20 bg-card/30">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <div className="mb-10">
+              <p className="text-primary text-sm font-medium mb-3">FAQ</p>
+              <h2 className={sectionHeading}>Najczęstsze pytania o stronę internetową w Łodzi</h2>
+            </div>
+            <div className="space-y-4">
+              {faqItems.map((item, index) => (
+                <details key={item.question} id={`lodz-faq-${index + 1}`} className="group rounded-xl border border-border/50 bg-card/50 px-6 py-5">
+                  <summary className="cursor-pointer list-none font-medium leading-relaxed">{item.question}</summary>
+                  <p className={`${bodyText} mt-4`}>{item.answer}</p>
+                </details>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <div className="rounded-2xl border border-primary/20 bg-primary/5 p-8 md:p-10 text-center">
+              <MessageSquare className="w-8 h-8 text-primary mx-auto mb-5" aria-hidden="true" />
+              <h2 className={sectionHeading}>Strony internetowe Łódź — porozmawiajmy o projekcie</h2>
+              <p className={`${bodyText} mb-7 max-w-2xl mx-auto`}>Napisz, czy potrzebujesz strony firmowej, landing page, sklepu czy modernizacji obecnej witryny. Opisz odbiorców, funkcje i materiały, które już masz. Na tej podstawie ustalimy zakres Twojej strony, informacje potrzebne do wyceny i kolejny krok współpracy.</p>
+              <div className="flex flex-col sm:flex-row justify-center gap-4">
+                <Button asChild size="lg"><Link to={contactHref}>Wyślij brief projektu <ArrowRight className="ml-2 w-5 h-5" aria-hidden="true" /></Link></Button>
+                <Button asChild variant="outline" size="lg"><Link to="/uslugi/strony-internetowe">Zobacz ogólną ofertę stron</Link></Button>
+              </div>
+            </div>
+          </div>
+        </section>
       </Layout>
     </>
   );
-};
-
-export default StronyInternetoweLodz;
+}
