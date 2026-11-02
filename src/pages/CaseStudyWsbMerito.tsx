@@ -1,3 +1,4 @@
+import { InlineVideo } from "@/components/InlineVideo";
 import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
@@ -70,7 +71,7 @@ export default function CaseStudyWsbMerito() {
             </p>
           </div>
           <figure>
-            <video
+            <InlineVideo
               src="/videos/wsb-merito-enea.mp4"
               poster="/case-studies/wsb-merito/spot-stadion-1280.webp"
               controls
@@ -79,7 +80,7 @@ export default function CaseStudyWsbMerito() {
               width={1280}
               height={720}
               aria-label="Spot WSB Merito × Enea Stadion — studia podyplomowe Event Manager"
-              className="w-full aspect-video rounded-2xl border border-border/30 bg-black object-cover"
+              className="w-full aspect-video rounded-2xl border border-border/30 bg-black object-contain"
             />
             <figcaption className="text-xs text-foreground/50 mt-3">Produkcja FOTZ Studio · zdjęcia 21.05.2026, publikacja czerwiec 2026.</figcaption>
           </figure>

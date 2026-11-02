@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { InlineVideo } from "@/components/InlineVideo";
 import { Link } from "react-router-dom";
 import * as Dialog from "@radix-ui/react-dialog";
 import { ArrowRight, ArrowUpRight, Instagram, Play, X } from "lucide-react";
@@ -32,6 +32,7 @@ const reels: Film[] = [
     title: "Julia Wieniawa",
     category: "B17 · koncert",
     poster: "/videos/b17-wieniawa-poster.webp",
+    src: "/work/industries/wieniawa-koncert.mp4",
     publication: "https://www.instagram.com/klubmuzycznyb17/reel/DXeQo67lRtx/",
     portrait: true,
   },
@@ -45,8 +46,7 @@ const reels: Film[] = [
 ];
 
 function FilmCard({ film }: { film: Film }) {
-  const [failed, setFailed] = useState(false);
-  const coverClass = `group relative block w-full overflow-hidden rounded-2xl border border-border bg-black text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary ${film.portrait ? "aspect-[9/16]" : "aspect-video"}`;
+  const coverClass = `group relative block w-full overflow-hidden rounded-2xl border border-border bg-black text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary aspect-[4/5]`;
   const cover = (
     <>
       <img src={film.poster} alt={film.title} width={film.portrait ? 540 : 960} height={film.portrait ? 960 : 540} loading="lazy" decoding="async" className="absolute inset-0 h-full w-full object-cover motion-safe:transition-transform motion-safe:duration-500 group-hover:scale-[1.03]" />
@@ -65,17 +65,17 @@ function FilmCard({ film }: { film: Film }) {
   return (
     <figure className="min-w-0 snap-start">
       {film.src ? (
-        <Dialog.Root onOpenChange={() => setFailed(false)}>
+        <Dialog.Root>
           <Dialog.Trigger asChild><button type="button" className={coverClass} aria-label={`Odtwórz film: ${film.title}`}>{cover}</button></Dialog.Trigger>
           <Dialog.Portal>
             <Dialog.Overlay className="fixed inset-0 z-[120] bg-black/85 backdrop-blur-sm" />
-            <Dialog.Content className={`fixed left-1/2 top-1/2 z-[121] w-[calc(100%_-_2rem)] -translate-x-1/2 -translate-y-1/2 rounded-2xl border border-white/15 bg-[#101010] p-4 text-white shadow-2xl focus:outline-none ${film.portrait ? "max-w-md" : "max-w-5xl"}`}>
+            <Dialog.Content className={`fixed left-1/2 top-1/2 z-[121] w-[calc(100%_-_2rem)] -translate-x-1/2 -translate-y-1/2 max-h-[94dvh] overflow-y-auto rounded-2xl border border-white/15 bg-[#101010] p-4 text-white shadow-2xl focus:outline-none ${film.portrait ? "max-w-md" : "max-w-5xl"}`}>
               <div className="mb-4 pr-12">
                 <Dialog.Title className="text-lg font-medium">{film.title}</Dialog.Title>
                 <Dialog.Description className="mt-1 text-sm text-white/65">{film.category}</Dialog.Description>
               </div>
               <Dialog.Close asChild><button type="button" aria-label="Zamknij film" className="absolute right-3 top-3 flex h-11 w-11 items-center justify-center rounded-full bg-white/10 hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white"><X aria-hidden="true" className="h-5 w-5" /></button></Dialog.Close>
-              {failed ? <p role="alert" className="py-12 text-center">Nie udało się odtworzyć filmu. Skorzystaj z odnośnika poniżej.</p> : <video src={film.src} poster={film.poster} controls autoPlay playsInline preload="none" aria-label={film.title} onError={() => setFailed(true)} className="max-h-[70dvh] w-full rounded-lg bg-black object-contain" />}
+              <InlineVideo src={film.src} poster={film.poster} controls autoPlay playsInline preload="none" aria-label={film.title} className="max-h-[calc(100dvh-12rem)] w-full rounded-lg bg-black object-contain" />
               <a href={film.src} target="_blank" rel="noopener noreferrer" className="mt-3 inline-flex min-h-8 items-center gap-1 text-xs text-white/70 underline underline-offset-4 hover:text-white">Otwórz film osobno <ArrowUpRight aria-hidden="true" className="h-3 w-3" /></a>
             </Dialog.Content>
           </Dialog.Portal>
@@ -83,7 +83,7 @@ function FilmCard({ film }: { film: Film }) {
       ) : <a href={film.publication} target="_blank" rel="noopener noreferrer" className={coverClass} aria-label={`Obejrzyj na Instagramie: ${film.title} (nowa karta)`}>{cover}</a>}
       <figcaption className="pt-4">
         <p className="text-xs text-muted-foreground leading-relaxed">{film.category}</p>
-        <h3 className={`mt-1 font-geist tracking-tight ${film.portrait ? "text-base" : "text-2xl md:text-3xl"}`}>{film.title}</h3>
+        <h3 className="mt-1 font-geist tracking-tight text-lg">{film.title}</h3>
         {film.src && film.publication && <a href={film.publication} target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex items-center gap-1 text-xs text-muted-foreground underline underline-offset-4 hover:text-foreground">Zobacz publikację <ArrowUpRight aria-hidden="true" className="h-3 w-3" /></a>}
       </figcaption>
     </figure>
@@ -102,15 +102,10 @@ export function FeaturedFilms({ id = "filmy-i-rolki", reelsOnly = false }: { id?
           </div>
           <Link to="/uslugi/produkcja-video" className="dv-btn dv-btn-secondary">Produkcja filmowa <ArrowRight aria-hidden="true" className="h-4 w-4" /></Link>
         </div>
-        <div className={reelsOnly ? "max-w-4xl" : "grid min-w-0 gap-8 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)] lg:gap-7"}>
-          {!reelsOnly && <FilmCard film={cupra} />}
-          <div className="min-w-0">
-            <div className="grid auto-cols-[74%] grid-flow-col gap-4 overflow-x-auto pb-4 snap-x snap-mandatory sm:grid-flow-row sm:grid-cols-3 sm:auto-cols-auto">
-              {reels.map(film => <FilmCard key={film.title} film={film} />)}
-            </div>
-            <p className="mt-2 text-xs text-muted-foreground sm:hidden">Przesuń, aby zobaczyć kolejne rolki →</p>
-          </div>
+        <div className={`grid min-w-0 auto-cols-[80%] grid-flow-col gap-5 overflow-x-auto pb-4 snap-x snap-mandatory sm:grid-flow-row sm:grid-cols-2 sm:auto-cols-auto ${reelsOnly ? 'lg:grid-cols-3' : 'lg:grid-cols-4'}`}>
+          {(reelsOnly ? reels : [cupra, ...reels]).map(film => <FilmCard key={film.title} film={film} />)}
         </div>
+        <p className="mt-2 text-xs text-muted-foreground sm:hidden">Przesuń, aby zobaczyć kolejne filmy →</p>
         <div className="mt-9 flex flex-wrap items-center justify-between gap-x-8 gap-y-5 border-t border-border pt-6 text-sm">
           <Link to="/social-media/obsluga" className="inline-flex items-center gap-2 underline underline-offset-4">Prowadzenie social media <ArrowRight aria-hidden="true" className="h-4 w-4" /></Link>
           <div className="flex flex-wrap items-center gap-x-5 gap-y-3">

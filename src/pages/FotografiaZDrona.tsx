@@ -184,10 +184,10 @@ function StatCounter({ value, suffix, label }: { value: number; suffix: string; 
 }
 
 const droneVideos = [
-  { src: "/videos/enea-stadion-header.mp4", title: "Enea Stadion Poznań", category: "Eventy sportowe" },
-  { src: "/videos/skaland-osiedle.mp4", title: "Osiedle Skaland", category: "Nieruchomości" },
-  { src: "/videos/eko-kamionki.mp4", title: "Eko Kamionki", category: "Nieruchomości" },
-  { src: "/videos/sequence-01.mp4", title: "Realizacja eventowa", category: "Eventy" },
+  { src: "/videos/enea-stadion-header.mp4", poster: "/videos/enea-stadion-header-frame.webp", title: "Enea Stadion Poznań", category: "Eventy sportowe" },
+  { src: "/videos/skaland-osiedle.mp4", poster: "/videos/skaland-osiedle-poster.jpg", title: "Osiedle Skaland", category: "Nieruchomości" },
+  { src: "/videos/eko-kamionki.mp4", poster: "/videos/eko-kamionki-frame.webp", title: "Eko Kamionki", category: "Nieruchomości" },
+  { src: "/videos/sequence-01.mp4", poster: "/videos/sequence-01-poster.jpg", title: "Realizacja eventowa", category: "Eventy" },
 ];
 
 export default function FotografiaZDrona() {
@@ -404,23 +404,18 @@ export default function FotografiaZDrona() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {droneVideos.map((video, index) => (
-              <motion.div
+              <motion.button
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="group cursor-pointer"
+                type="button" aria-label={`Odtwórz film: ${video.title}`}
+                className="group w-full text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary rounded-xl"
                 onClick={() => openVideoLightbox(video.src, video.title)}
               >
                 <div className="aspect-video rounded-xl overflow-hidden bg-secondary/50 relative">
-                  <video
-                    src={video.src}
-                    className="w-full h-full object-cover"
-                    preload="metadata"
-                    playsInline
-                    muted
-                  />
+                  <img src={video.poster} alt="" width="960" height="540" loading="lazy" decoding="async" className="absolute inset-0 w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors flex items-center justify-center">
                     <div className="w-16 h-16 rounded-full bg-primary/90 flex items-center justify-center group-hover:scale-110 transition-transform">
                       <Play className="w-7 h-7 text-primary-foreground ml-1" fill="currentColor" />
@@ -431,7 +426,7 @@ export default function FotografiaZDrona() {
                   <h3 className="font-medium text-foreground">{video.title}</h3>
                   <p className="text-sm text-muted-foreground">{video.category}</p>
                 </div>
-              </motion.div>
+              </motion.button>
             ))}
           </div>
         </div>
