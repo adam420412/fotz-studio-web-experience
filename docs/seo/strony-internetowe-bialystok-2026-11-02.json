@@ -1,0 +1,77 @@
+{
+  "date": "2026-11-02",
+  "url": "https://www.fotz-studio.pl/uslugi/strony-internetowe/bialystok",
+  "source": "src/pages/StronyInternetoweBialystok.tsx",
+  "branch": "swarm/strony-bialystok-20261102",
+  "base": "6821a6051b3c88f967bcdc110628c8b9209f1845",
+  "gsc": {
+    "assignedMetricsAvailable": false,
+    "note": "Brak aktualnych przypisanych metryk GSC; nie raportowano wyświetleń, kliknięć ani pozycji."
+  },
+  "neuronWriter": {
+    "query": "13f2250b007e28f4",
+    "keyword": "strony internetowe białystok",
+    "newAnalysesCreated": 0,
+    "baseline": 69,
+    "iterations": [86, 92, 95],
+    "final": 95,
+    "target": 95,
+    "wordCount": 863,
+    "recommendedWordCount": 660,
+    "method": "evaluate-content przez evaluate-html; outerHTML elementu main#main-content wydzielony z finalnego dist/uslugi/strony-internetowe/bialystok/index.html; przekazano finalne title i description",
+    "scopeComparison": "Baseline 69 zmierzono na publicznym URL z id=main-content. Finalny pomiar obejmuje ten sam semantyczny kontener z lokalnego prerenderu, bez nawigacji i stopki. Zakres jest porównywalny, ale środowisko pomiaru jest inne.",
+    "container": {
+      "selector": "main#main-content",
+      "occurrences": 1,
+      "duplicateIds": [],
+      "verified": true
+    }
+  },
+  "metadata": {
+    "title": "Strony internetowe Białystok — projektowanie | FOTZ",
+    "titleLength": 51,
+    "description": "Strony internetowe Białystok: projektowanie i tworzenie stron WWW, CMS, SEO, pozycjonowanie i pomiar zapytań. Sprawdź zakres prac i wycenę FOTZ.",
+    "descriptionLength": 144,
+    "canonical": "https://www.fotz-studio.pl/uslugi/strony-internetowe/bialystok",
+    "h1": "Strony internetowe Białystok",
+    "h1Count": 1
+  },
+  "renderedContract": {
+    "selfCanonical": true,
+    "serviceSchemaMatchesLead": true,
+    "faqQuestions": 6,
+    "nativeFaqDetails": 6,
+    "visibleFaqMatchesSchema": true,
+    "cta": "/kontakt?usluga=web#formularz",
+    "ctaCount": 3,
+    "idCount": 10,
+    "duplicateIds": []
+  },
+  "scope": [
+    "Uporządkowano ofertę tworzenia stron: stronę firmową, wizytówkę, landing page, sklep, integracje, modernizację i migrację.",
+    "Opisano CMS, materiały klienta, techniczne SEO, responsywność, indeksację, przekierowania i przygotowanie do pomiaru Core Web Vitals.",
+    "Dodano cztery etapy procesu, zdalny model współpracy bez deklarowania lokalnego biura oraz warunki odbioru i opieki.",
+    "Opisano pomiar zapytań i stron docelowych w Search Console, uzgodnione zdarzenia w Google Analytics oraz rozdzielenie widoczności, ruchu, konwersji i Google Ads.",
+    "Wyjaśniono czynniki wyceny bez sztywnych cen, sztywnych terminów, gwarancji pozycji, liczby zapytań lub niepotwierdzonych wyników.",
+    "Usunięto wcześniejsze deklaracje procentowe i zastąpiono FAQ natywnymi elementami details dostępnymi w prerenderze."
+  ],
+  "checks": {
+    "npmCi": "passed",
+    "typecheck": "passed",
+    "targetedTests": "19/19 passed: strony-internetowe-bialystok (4), live-blog (7), seo-metadata (3), structured-data (5)",
+    "build": "passed; 1066 prerendered pages, 1064 full bodies, 0 body errors",
+    "htmlContract": "passed; one H1, one main-content, self-canonical, six matching FAQ entries, 10 unique IDs and no duplicates",
+    "diffCheck": "passed",
+    "buildArtifactsExcluded": "known-routes.json restored after prerender; dist, .ssr and temporary evaluation files not staged"
+  },
+  "files": [
+    "src/pages/StronyInternetoweBialystok.tsx",
+    "scripts/strony-internetowe-bialystok.test.mjs",
+    "docs/seo/strony-internetowe-bialystok-2026-11-02.json"
+  ],
+  "businessImpact": "Nie zmierzono; content score nie dowodzi pozycji, ruchu, zapytań ani sprzedaży.",
+  "notes": [
+    "Nie utworzono nowych analiz NeuronWriter ani nie zgadywano metryk GSC.",
+    "Nie zmieniono App.tsx, sitemap, ai-work-register.csv, plików środowiskowych, innych stron ani współdzielonych komponentów."
+  ]
+}
