@@ -12,8 +12,18 @@ const scope = [
 ];
 const sections = [
   {
+    title: "Stała obsługa marketingowa od 3 000 zł netto miesięcznie",
+    text: "To punkt wyjścia dla firmy, która ma już zdjęcia lub filmy i potrzebuje regularnej publikacji oraz drobnych aktualizacji oferty. Zakres podstawowy potwierdzamy po poznaniu potrzeb. Nie obejmuje on automatycznie wszystkich usług wymienionych na tej stronie: nowa produkcja foto i wideo, montaż, moderacja, prowadzenie kampanii, budżet reklamowy i SEO wymagają osobnej wyceny.",
+    points: ["4 materiały łącznie w miesiącu, na bazie istniejących zdjęć i filmów.", "Publikacja na maksymalnie 2 profilach i jedna zbiorcza runda poprawek.", "Do 1 godziny aktualizacji strony internetowej.", "Miesięczne podsumowanie i spotkanie do 30 minut."],
+    href: "/agencja-marketingu-internetowego", link: "Porównaj pełny zakres stałej obsługi",
+  },
+  {
+    title: "Mniejszy zakres: opieka do 4 godzin miesięcznie",
+    text: "Jeśli większość marketingu prowadzi Twój zespół, możemy ustalić ograniczoną opiekę za 2 000 zł netto miesięcznie. Limit obejmuje do 4 godzin pracy łącznie. Przed miesiącem wybieramy zadania, które zmieszczą się w tym czasie; rozszerzenia wyceniamy przed wykonaniem. Ten wariant nie zawiera automatycznie elementów pakietu podstawowego ani pełnego prowadzenia profili i reklam.",
+  },
+  {
     title: "Agencja marketingowa Warszawa — współpraca z FOTZ Studio",
-    text: "Szukasz zespołu, który połączy komunikację marki z wykonaniem materiałów i uruchomieniem kampanii? FOTZ Studio zajmuje się marketingiem internetowym dla firm z Warszawy. Ustalamy, jak pozyskiwać nowych klientów i jakich materiałów potrzebują, aby wybrać Twoją ofertę. Nasza siedziba znajduje się w Poznaniu; brief, akceptacje i omówienie wyników prowadzimy online. Sesję zdjęciową, nagrania lub spotkanie w Warszawie uzgadniamy oddzielnie, wraz z terminem i kosztem dojazdu. Możesz zlecić jeden projekt albo uzgodnioną stałą obsługę. Jako agencja marketingowa Mazowieckie obsługujemy w całości zdalnie — od briefu po raport wyników. Przed rozpoczęciem współpracy otrzymujesz listę prac, harmonogram i wycenę.",
+    text: "Szukasz zespołu, który połączy komunikację marki z wykonaniem materiałów i uruchomieniem kampanii? FOTZ Studio zajmuje się marketingiem internetowym dla firm z Warszawy. Ustalamy, jak pozyskiwać nowych klientów i jakich materiałów potrzebują, aby wybrać Twoją ofertę. Pracujemy zdalnie: brief, akceptacje i omówienie wyników prowadzimy online. Nie prowadzimy publicznego biura ani oddziału w Warszawie. Adres rejestrowy to Poznańska 117/11, 62-023 Kamionki. Sesję zdjęciową, nagrania lub spotkanie w Warszawie uzgadniamy oddzielnie, wraz z terminem, miejscem i kosztem dojazdu. Możesz zlecić jeden projekt albo uzgodnioną stałą obsługę. Firmy z Mazowsza obsługujemy zdalnie — od briefu po raport wyników. Przed rozpoczęciem współpracy otrzymujesz listę prac, harmonogram i wycenę.",
     points: ["Dla firmy usługowej: oferta, dowody wykonanej pracy i prosty kontakt.", "Dla producenta: prezentacja produktu, wariantów i sposobu zamówienia.", "Dla sklepu: materiały produktowe, kampania i kontrola drogi do zakupu.", "Dla działu marketingu: wsparcie w wybranym zakresie, z jasnym podziałem zadań."],
   },
   {
@@ -66,7 +76,8 @@ const sections = [
   },
 ];
 const faqs = [
-  { question: "Czy FOTZ Studio ma biuro w Warszawie?", answer: "Nasza siedziba jest w Poznaniu. Firmy z Warszawy obsługujemy zdalnie. Spotkanie, sesję zdjęciową lub nagrania na miejscu ustalamy indywidualnie, z terminem i kosztem dojazdu wskazanym w wycenie." },
+  { question: "Co obejmuje abonament za 3 000 zł netto?", answer: "4 materiały miesięcznie z istniejących zdjęć i filmów, publikację na maksymalnie 2 profilach, jedną zbiorczą rundę poprawek, do godziny aktualizacji strony oraz miesięczne podsumowanie i spotkanie do 30 minut. Nowa produkcja, montaż, moderacja, obsługa kampanii, budżet emisji i SEO są wyceniane osobno. Po poznaniu potrzeb potwierdzamy, czy ten zakres pasuje do Twojej firmy." },
+  { question: "Czy FOTZ Studio ma biuro w Warszawie?", answer: "Nie prowadzimy publicznego biura ani oddziałów. Obsługujemy firmy zdalnie; adres rejestrowy to Poznańska 117/11, 62-023 Kamionki. Spotkanie, sesję zdjęciową lub nagrania w Warszawie ustalamy indywidualnie, wraz z miejscem, terminem i kosztem dojazdu." },
   { question: "Jak wybrać agencję marketingową dla firmy z Warszawy?", answer: "Porównaj rzeczywiste realizacje, zakres odpowiedzialności i sposób rozliczenia. Zapytaj, kto przygotowuje materiały, kto wdraża zmiany oraz jak oceniana jest jakość zapytań. Sprawdź, czy budżet emisji jest oddzielony od obsługi i czy zachowujesz dostęp do swoich kont." },
   { question: "Czy mogę zlecić tylko reklamę, zdjęcia albo stronę WWW?", answer: "Tak. Wybór między pojedynczym projektem a kompleksową obsługą zależy od Twoich zasobów i celu. Nie wymagamy pełnej obsługi wszystkich kanałów. Możemy przygotować konkretny projekt lub uzupełnić pracę Twojego zespołu. Zakres i materiały potrzebne do startu zapisujemy w propozycji." },
   { question: "Czy obsługujecie firmy B2B i sklepy internetowe?", answer: "Zakres dobieramy do modelu sprzedaży. W B2B ważne są argumenty dla osoby podejmującej decyzję, realizacje i kontakt z handlowcem. W sklepie analizujemy prezentację produktów, zakup i pomiar. Możliwość wykonania wymaganych integracji potwierdzamy przed wyceną." },
@@ -77,8 +88,11 @@ const faqs = [
 export default function AgencjaMarketingowaWarszawa() {
   return <>
     <SEOHead title="Agencja marketingowa Warszawa — SEO i social media | FOTZ" description="Agencja marketingowa i reklamowa dla firm z Warszawy. Kampania reklamowa, SEO, social media, strategie marketingowe online i budżet reklamowy. Poznaj FOTZ." canonical={`https://www.fotz-studio.pl${path}`} />
-    <ServiceEditorial path={path} title="Agencja marketingowa Warszawa — reklama i social media" eyebrow="FOTZ Studio · dla firm z Warszawy" area="Warszawa"
-      lead="Łączymy strategię, reklamę, social media i stronę internetową w czytelną drogę do kontaktu. Pokaż nam ofertę i cel biznesowy — zaproponujemy zakres prac, materiały oraz sposób oceny zapytań. Pracujemy z Poznania, współpracę z firmami z Warszawy prowadzimy zdalnie."
+    <ServiceEditorial path={path} title="Agencja marketingowa dla firm z Warszawy" eyebrow="FOTZ Studio · współpraca zdalna" area="Warszawa"
+      lead="Uporządkujmy regularną pracę nad Twoim marketingiem: treści, publikacje i aktualizacje strony. Wybierzemy zakres dopasowany do potrzeb firmy oraz sposób oceny zapytań. Kampanie i nową produkcję wyceniamy osobno."
+      priceNote="Stała obsługa od 3 000 zł netto miesięcznie w określonym zakresie."
+      enquiryVariant="retainer" contactLabel="Zapytaj o stałą obsługę"
+      contactDescription="Prześlij adres strony i profili, opisz cel oraz dostępne zdjęcia lub filmy. Napisz, co realizuje Twój zespół. Sprawdzimy dopasowanie pakietu i zaproponujemy zakres współpracy."
       summary={["Ustalamy, jakie zlecenia chcesz pozyskiwać i co utrudnia kontakt.", "Dobieramy działania, własne materiały i harmonogram do budżetu.", "Przed startem otrzymujesz zakres, wycenę i podział odpowiedzialności."]}
       scopeTitle="Usługi marketingowe dopasowane do Twojego celu" scope={scope} sections={sections} faqs={faqs} workAfterScope />
   </>;
