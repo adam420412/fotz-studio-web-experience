@@ -1,4 +1,5 @@
 import { ServiceWork } from "@/components/sections/ServiceWork";
+import { enquiryHref } from "@/lib/enquiry.mjs";
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { SEOHead } from "@/components/seo/SEOHead";
@@ -256,7 +257,7 @@ export default function FotografiaZDrona() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="gap-2">
-                <Link to="/kontakt">
+                <Link to={enquiryHref('video', 'drone')}>
                   Zamów wycenę
                   <ArrowRight className="w-4 h-4" />
                 </Link>
@@ -480,7 +481,7 @@ export default function FotografiaZDrona() {
                       ))}
                     </ul>
                     <Button asChild className="w-full" variant={pkg.popular ? "default" : "outline"}>
-                      <Link to="/kontakt">Wybierz pakiet</Link>
+                      <Link to={enquiryHref('video', 'drone')}>Zapytaj o wycenę</Link>
                     </Button>
                   </CardContent>
                 </Card>
@@ -601,7 +602,7 @@ export default function FotografiaZDrona() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="gap-2">
-                <Link to="/kontakt">
+                <Link to={enquiryHref('video', 'drone')}>
                   Zamów bezpłatną wycenę
                   <ArrowRight className="w-4 h-4" />
                 </Link>

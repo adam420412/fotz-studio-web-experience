@@ -1,4 +1,5 @@
 import { ServiceWork } from "@/components/sections/ServiceWork";
+import { enquiryHref } from "@/lib/enquiry.mjs";
 import { motion } from "framer-motion";
 import { ArrowRight, Camera, Users, Star, Heart, Calendar, MapPin, Clock, Image } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -164,7 +165,7 @@ const FotografPoznan = () => {
             </p>
             <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
               <Button variant="hero" size="lg" asChild className="w-full sm:w-auto">
-                <Link to="/kontakt">
+                <Link to={enquiryHref('video', 'photo_session')}>
                   Zarezerwuj sesję
                   <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
                 </Link>
@@ -582,7 +583,7 @@ const FotografPoznan = () => {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button size="lg" variant="secondary" asChild>
-                <Link to="/kontakt">
+                <Link to={enquiryHref('video', 'photo_session')}>
                   Skontaktuj się
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
