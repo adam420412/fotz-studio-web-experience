@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-02",
+  "url": "https://www.fotz-studio.pl/uslugi/pozycjonowanie/czestochowa",
+  "source": "src/pages/PozycjonowanieCzestochowa.tsx",
+  "branch": "swarm/pozycjonowanie-czestochowa-20261102",
+  "base": "372b4e3b4ae0111269d1c934231d2cef8e9430de",
+  "gsc": {
+    "period": {
+      "from": "2026-10-03",
+      "to": "2026-10-30"
+    },
+    "impressions": 63,
+    "clicks": 0,
+    "averagePosition": 15.5397
+  },
+  "neuronWriter": {
+    "query": "c5128d2c5ef41ca1",
+    "keyword": "pozycjonowanie częstochowa",
+    "newAnalysesCreated": 0,
+    "baseline": 54,
+    "iterations": [83, 93, 96],
+    "final": 96,
+    "target": 95,
+    "wordCount": 1796,
+    "recommendedWordCount": 1632,
+    "method": "evaluate-content przez evaluate-html; outerHTML elementu main#main-content wydzielony z finalnego dist/uslugi/pozycjonowanie/czestochowa/index.html; przekazano finalne title i description",
+    "scopeComparison": "Baseline 54 zmierzono na publicznym URL z id=main-content. Finalny pomiar obejmuje ten sam semantyczny kontener z lokalnego prerenderu, z treścią strony i współdzielonym portfolio, bez nawigacji oraz stopki. Zakres jest porównywalny, ale środowisko pomiaru jest inne.",
+    "container": {
+      "selector": "main#main-content",
+      "occurrences": 1,
+      "duplicateIds": [],
+      "verified": true
+    }
+  },
+  "metadata": {
+    "title": "Pozycjonowanie stron Częstochowa — SEO | FOTZ",
+    "titleLength": 45,
+    "description": "Pozycjonowanie stron internetowych Częstochowa: audyt SEO, optymalizacja techniczna, treści, lokalna widoczność i pomiar zapytań. Sprawdź zakres usług FOTZ.",
+    "descriptionLength": 156,
+    "canonical": "https://www.fotz-studio.pl/uslugi/pozycjonowanie/czestochowa",
+    "h1": "Pozycjonowanie stron internetowych Częstochowa",
+    "h1Count": 1
+  },
+  "renderedContract": {
+    "selfCanonical": true,
+    "serviceSchemaMatchesLead": true,
+    "faqQuestions": 6,
+    "visibleFaqMatchesSchema": true,
+    "cta": "/kontakt?usluga=seo&wariant=audit#formularz",
+    "ctaPresent": true,
+    "duplicateIds": []
+  },
+  "checks": {
+    "npmCi": "passed",
+    "typecheck": "passed",
+    "targetedTests": "19/19 passed: live-blog, pozycjonowanie-czestochowa, seo-metadata, structured-data",
+    "fullTests": "198/198 passed",
+    "build": "passed; 1068 prerendered pages, 1066 full bodies, 0 body errors"
+  },
+  "files": [
+    "src/pages/PozycjonowanieCzestochowa.tsx",
+    "scripts/pozycjonowanie-czestochowa.test.mjs",
+    "docs/seo/pozycjonowanie-czestochowa-2026-11-02.json"
+  ],
+  "businessImpact": "Nie zmierzono; content score nie dowodzi pozycji, ruchu, zapytań ani sprzedaży."
+}

@@ -1,441 +1,152 @@
 import { SEOHead } from "@/components/seo/SEOHead";
-import { Layout } from "@/components/layout/Layout";
-import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import {
-  Search,
-  MapPin,
-  TrendingUp,
-  CheckCircle2,
-  ArrowRight,
-  BarChart2,
-  Star,
-  Building2,
-  Globe,
-  Target,
-  Clock,
-  Award,
-  Shield,
-} from "lucide-react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
-import { FadeInView } from "@/components/FadeInView";
-import { ContactSection } from "@/components/sections/ContactSection";
+import { ServiceEditorial } from "@/components/ServiceEditorial";
 
-const faqItems = [
+const path = "/uslugi/pozycjonowanie/czestochowa";
+const pageTitle = "Pozycjonowanie stron internetowych Częstochowa";
+const seoTitle = "Pozycjonowanie stron Częstochowa — SEO | FOTZ";
+const seoDescription = "Pozycjonowanie stron internetowych Częstochowa: audyt SEO, optymalizacja techniczna, treści, lokalna widoczność i pomiar zapytań. Sprawdź zakres usług FOTZ.";
+const canonicalUrl = "https://www.fotz-studio.pl/uslugi/pozycjonowanie/czestochowa";
+
+const summary = [
+  "Zaczynamy od strony, oferty i obszaru, na którym firma rzeczywiście obsługuje klientów. Nie zakładamy z góry, że każda fraza lokalna ma niską konkurencję.",
+  "Audyt kończy się listą ustawionych priorytetów: wskazujemy problem, rekomendowaną poprawkę oraz osobę odpowiedzialną za wdrożenie.",
+  "W raporcie oddzielamy widoczność w Google od wartościowych zapytań. Sam wzrost ruchu organicznego nie przesądza o skuteczności usługi.",
+];
+
+const scope = [
   {
-    question: "Ile kosztuje pozycjonowanie w Częstochowie?",
-    answer:
-      "Pozycjonowanie lokalne w Częstochowie zaczyna się od 899 zł netto miesięcznie. To jedno z najtańszych miast SEO w Polsce! Konkurencja jest bardzo niska, co oznacza szybkie efekty. Dla branż turystyki religijnej czy usług dla pielgrzymów, koszt wynosi 1 200–2 500 zł/mies., ale z dużo wyższą ROI niż w większych miastach.",
+    title: "Audyt SEO i priorytety wdrożenia",
+    text: "Sprawdzamy indeksację, mapę witryny, dyrektywy robots, kanoniczne adresy, przekierowania, strukturę nagłówków, treści oraz odnośniki wewnętrzne. Gdy potrzebna jest zmiana nawigacji, projektujemy architekturę strony na podstawie oferty i dotychczasowej struktury strony. Raport nie jest ogólną listą uwag: każdy punkt opisujemy przez problem, rekomendację i priorytet. Zaznaczamy, co możesz poprawić samodzielnie, co wymaga programisty, a co możemy wdrożyć w uzgodnionym zakresie.",
+    href: "/seo/audyt",
+    link: "Zobacz zakres audytu",
   },
   {
-    question: "Ile czasu trwa pozycjonowanie w Częstochowie?",
-    answer:
-      "Dzięki bardzo niskiej konkurencji SEO w Częstochowie, pierwsze rezultaty pojawiają się po 3–4 tygodniach. Stabilne pozycje TOP 10 uzyskujemy po 6–8 tygodni. To najszybsze tempo spośród wszystkich polskich miast dzięki low-competition nicy turystyki religijnej i lokalnych usług. Dla fraz pielgrzymkowych — nawet szybciej.",
+    title: "Optymalizacja techniczna strony",
+    text: "Weryfikujemy działanie witryny na telefonie, szybkość kluczowych podstron, stabilność układu, dostępność treści dla wyszukiwarki i poprawność kodu odpowiedzi. Kontrolujemy duplikację adresów, niedziałające odnośniki oraz dane strukturalne. Zakres prac obejmuje tylko uzgodnione poprawki. Jeśli ograniczeniem jest system CMS lub hosting, opisujemy konsekwencje i możliwe rozwiązania przed podjęciem pracy. Cała witryna nie zawsze wymaga przebudowy.",
   },
   {
-    question: "Jaki jest potencjał SEO dla turystyki religijnej i Jasnej Góry?",
-    answer:
-      "Jasna Góra to 4–5M pielgrzymów rocznie. To ogromny niszowy rynek. Hotele, restauracje, przewodnie turystyczne, sklepy pamiątek, usługi dla pielgrzymów — wszystko ma mały search volume ale wysoką intent i wartość. Frazy takie jak 'hotel blisko Jasnej Góry', 'restauracja dla pielgrzymów', 'przewodnik turystyczny' mają bardzo niską konkurencję SEO.",
+    title: "Frazy i strony usługowe",
+    text: "Dobieramy słowa kluczowe na podstawie oferty, intencji wyszukiwania i rzeczywistego zasięgu usług. Oddzielamy zapytania mieszkańców Częstochowy od fraz ogólnopolskich i informacyjnych. Przypisujemy je do właściwych stron usługowych, kategorii lub materiałów poradnikowych, aby podstrony nie konkurowały ze sobą o to samo zapytanie. Plan uwzględnia zarówno ofertę priorytetową, jak i pytania, które potencjalni klienci zadają przed kontaktem.",
   },
   {
-    question: "Czy konkurencja SEO w Częstochowie jest naprawdę tak niska?",
-    answer:
-      "Tak. Częstochowa ma ~220k ludzi, ale konkurencja SEO jest 70–80% niższa niż nawet w Lublinie czy Rzeszowie. Prawie żaden biznes w mieście nie inwestuje w SEO — to złota okazja dla proaktywnych przedsiębiorców. Rynek jest praktycznie nietkniętym terytorium dla lokalnego biznesu online.",
+    title: "Treści i optymalizacja stron",
+    text: "Porządkujemy tytuły i opisy stron w Google, nagłówki oraz treść tak, aby strona internetowa jasno wyjaśniała usługę, warunki i następny krok. Uzupełniamy potrzebne informacje, odpowiedzi na pytania i odnośniki między powiązanymi materiałami. Nie narzucamy sztywnej liczby artykułów ani powtarzania frazy. Zakres redakcyjny wynika z luk względem intencji odbiorcy i treści konkurencji, a nie od samego wolumenu publikacji.",
   },
   {
-    question: "Czy turystyka religijna to stabilny rynek SEO?",
-    answer:
-      "Bardzo stabilny. Pielgrzymi przyjeżdżają cały rok, szczególnie w sezonie (maj–październik). To predictable traffic — ludzie szukają 'hotel Częstochowa', 'gdzie zjeść Jasna Góra', 'atrakcje turystyczne'. Wartość transakcji (noclegi, jedzenie, usługi) jest wysoka. SEO dla Częstochowy = inwestycja w stabilny, długoterminowy biznes.",
+    title: "Lokalna widoczność i profil firmy",
+    text: "Dla firmy lokalnej sprawdzamy spójność danych adresowych lub obszaru działania. Profil firmy w Google (dawniej Google Moja Firma) to wizytówka firmy: porównujemy jej dane z informacjami na stronie. W zakresie lokalnego SEO możemy uporządkować kategorie, usługi, opis, zdjęcia i odnośniki. Omawiamy też zgodny z regulaminem proces proszenia prawdziwych klientów o opinie. Nie tworzymy fikcyjnych lokalizacji, wpisów ani recenzji i nie obiecujemy pozycji w Mapach Google.",
   },
   {
-    question: "Jakie branże poza turystyką mają potencjał w Częstochowie?",
-    answer:
-      "Przemysł metalurgiczny (ISD Huta Częstochowa, Brembo) — usługi B2B. Edukacja (Politechnika Częstochowska). Nieruchomości — dla lokalnego rynku. Usługi medyczne i wellness. Handel detaliczny. Wszystkie branże mają niski SEO KD. Potencjał = duży, konkurencja = minimalna.",
+    title: "Link building i odnośniki",
+    text: "Analizujemy obecny profil linków, odnośniki konkurencji i miejsca, w których firma może zaprezentować wiedzę lub ofertę. Link building planujemy na podstawie tematycznego powiązania i jakości źródła, bez pakietów przypadkowych odnośników. Równolegle poprawiamy linkowanie wewnętrzne, by użytkownik i wyszukiwarka mogli przejść z treści poradnikowej do właściwej usługi. Liczba publikacji i budżet wymagają osobnego uzgodnienia.",
   },
 ];
 
-const PozycjonowanieCzestochowa = () => {
-  const results = [
-    {
-      metric: "+220%",
-      label: "Wzrost ruchu organicznego",
-      context: "turystyka religijna",
-    },
-    { metric: "TOP 5", label: "Pozycja w Google", context: "frazy Częstochowa" },
-    { metric: "2 mies.", label: "Czas do pierwszej strony", context: "branżowe frazy" },
-    { metric: "4,7/5", label: "Ocena klientów", context: "8 opinii" },
-  ];
+const sections = [
+  {
+    title: "SEO Częstochowa: lokalne pozycjonowanie stron www",
+    text: "Pozycjonowanie lokalne w Częstochowie odpowiada na zapytania związane z miejscem, dojazdem lub obsługą w określonym regionie. Odbiorcy mogą wyszukiwać konkretnej usługi, wykonawcy albo informacji o dostępności. Fraza z nazwą Częstochowa nie zawsze oznacza tę samą intencję. Dla jednej firmy ważna będzie usługa na miejscu, dla innej dojazd do okolicznych miejscowości, a dla jeszcze innej sprzedaż w całej Polsce. Dlatego pozycjonowanie stron w Częstochowie zaczynamy od listy lokalizacji, których rzeczywiście dotyczy oferta. Nie tworzymy podstron dla miast tylko po to, aby powielić ten sam tekst ze zmienioną nazwą. Widoczność budujemy na konkretnej ofercie i przydatnych odpowiedziach. Wyszukiwarka może pokazać wyniki organiczne, Mapy Google i inne elementy; profil firmy to odrębny obszar pracy.",
+    points: [
+      "Usługa na miejscu: jasny opis oferty, lokalizacji, dojazdu i sposobu kontaktu.",
+      "Dojazd do klienta: rzeczywisty obszar obsługi bez deklarowania całego regionu bez pokrycia.",
+      "Działalność ogólnopolska: tematyczne strony i treści niezależne od jednej lokalizacji.",
+    ],
+  },
+  {
+    title: "Jak wygląda strategia SEO krok po kroku?",
+    text: "Profesjonalne pozycjonowanie stron w Google jest procesem, a nie jednorazowym wpisaniem słów na stronie. Pozycjonowanie i optymalizacja wymagają właściwej kolejności prac. Najpierw ustalamy punkt wyjścia, następnie usuwamy bariery techniczne, rozwijamy potrzebne treści i sprawdzamy reakcję użytkowników. Wyszukiwarka ocenia dostępność treści i techniczną jakość witryny, a użytkownik — użyteczność oferty. Strategie SEO uwzględniają także zmiany algorytmu, konkurencję, sezonowość i historię domeny. Osiągnięcie wysokich pozycji w wynikach wyszukiwania zależy od wielu czynników, dlatego plan przewiduje przegląd danych i korekty, ale nie gwarantuje pozycji ani efektu w określonym czasie.",
+    points: [
+      "Brief i pomiar startowy: oferta, priorytety sprzedażowe, obszar obsługi, dostępne dane i sposób kwalifikacji zapytań.",
+      "Analiza i plan: audyt, mapa fraz, przypisanie intencji do podstron oraz harmonogram uzgodnionych wdrożeń.",
+      "Realizacja: poprawki techniczne, optymalizacja treści, rozwój architektury strony, lokalne SEO oraz uzgodnione publikacje i pozyskiwanie odnośników.",
+      "Kontrola: sprawdzenie wdrożeń, analiza zapytań i widoczności, omówienie wniosków oraz wybór kolejnych priorytetów.",
+    ],
+  },
+  {
+    title: "Wyszukiwarka Google: jak mierzymy widoczność i zapytania?",
+    text: "W Google Search Console obserwujemy zapytania, wyświetlenia, kliknięcia i średnią pozycję. Oceniamy obecność strony w wynikach wyszukiwania Google dla właściwych adresów. Na Twojej stronie mierzymy ruch organiczny oraz zdarzenia związane z formularzem, telefonem lub innym uzgodnionym kontaktem. Wyższa pozycja pojedynczej frazy nie wystarcza do oceny sprzedaży. Wspólnie ustalamy, które zapytanie jest zgodne z ofertą i obszarem działania, a które nie ma wartości biznesowej. Raport łączy widoczność strony w wyszukiwarce Google z wykonanymi pracami i wnioskami na kolejny okres. Nie łączymy korelacji z dowodem przyczynowym: sezon, kampania reklamowa i inne zmiany zaznaczamy jako kontekst pomiaru.",
+    points: [
+      "Przed startem zapisujemy zakres fraz i stron, dostępność danych oraz definicję wartościowego kontaktu.",
+      "Formularz, rozmowa i sprzedaż to różne etapy; ich źródło i jakość warto oceniać oddzielnie.",
+      "Dane interpretujemy w porównywalnych okresach, z uwzględnieniem sezonowości i zakończonych wdrożeń.",
+    ],
+  },
+  {
+    title: "Od czego zależy wycena usług SEO?",
+    text: "Cena zależy od pracy potrzebnej w Twojej sytuacji, a nie od samej nazwy miasta. Na wycenę wpływają wielkość i technologia witryny, liczba ofert, konkurencja, stan treści, zakres wdrożeń oraz to, czy potrzebne są nowe materiały lub działania zewnętrzne. Pozycjonowanie w Google może obejmować pojedynczy projekt lub prace cykliczne. Samodzielny audyt może być zleceniem jednorazowym. Stałe działania SEO wymagają opisania zadań, cyklu raportowania i odpowiedzialności każdej strony. Usługi SEO mogą obejmować przygotowanie tekstów, programowanie, narzędzia i publikacje zewnętrzne; każdy z tych elementów wskazujemy w ofercie oddzielnie. Nie podajemy ceny bez poznania potrzeb i nie rozliczamy obiecanej pozycji.",
+    points: [
+      "Do wstępnej rozmowy wystarczy adres strony, opis oferty, priorytetowe usługi i rzeczywisty obszar obsługi.",
+      "W propozycji otrzymujesz zakres, wyłączenia, sposób akceptacji prac i zasady zmiany zadań.",
+      "Dostępy do narzędzi przekazujemy dopiero po ustaleniu zakresu; nie wysyłaj haseł w pierwszej wiadomości.",
+    ],
+  },
+  {
+    title: "Pozycjonowanie sklepów internetowych i stron firmowych",
+    text: "Inny plan przygotowujemy dla strony usługowej, inny dla sklepu internetowego. W serwisie firmowym priorytetem są zwykle oferta, strony usługowe, dowody wykonanej pracy i kontakt. W pozycjonowaniu sklepów analizujemy kategorie, produkty, warianty, filtry, dostępność oraz indeksowanie adresów generowanych przez parametry. Sprawdzamy opisy, odnośniki i dane strukturalne zgodne z widoczną ofertą. Nie każdy filtr powinien tworzyć stronę w wynikach wyszukiwania. Zakres dla stron i sklepów internetowych ustalamy po sprawdzeniu platformy i możliwości wdrożenia, bez automatycznej przebudowy całego serwisu.",
+    href: "/uslugi/pozycjonowanie",
+    link: "Poznaj ogólny zakres pozycjonowania",
+  },
+  {
+    title: "Na czym polega skuteczne pozycjonowanie stron internetowych?",
+    text: "Skuteczne pozycjonowanie stron łączy trafną odpowiedź na potrzebę użytkownika z techniczną możliwością odczytania witryny i wiarygodną prezentacją firmy. Treść ma pomóc porównać ofertę, technika nie może blokować dostępu, a odnośniki powinny prowadzić do naturalnego następnego kroku. Jeżeli strona jest pozycjonowana na zapytania niezwiązane z usługą, nawet większy ruch na stronach może nie przynieść odpowiednich kontaktów. Dlatego oceniamy jakości strony internetowej przez użyteczność i dopasowanie, nie przez gęstość słów kluczowych. Wybór dalszych działań SEO opieramy na danych i zasobach, bez sztucznego zwiększania objętości tekstu.",
+  },
+  {
+    title: "SEO czy Google Ads dla firmy z Częstochowy?",
+    text: "SEO i pozycjonowanie dotyczą widoczności organicznej, natomiast Google Ads umożliwia płatną emisję reklam według wybranych ustawień kampanii. To odrębne budżety i sposoby pomiaru. Reklama może sprawdzić komunikat lub stronę docelową, ale jej emisja kończy się po wyczerpaniu budżetu. Prace nad jakością strony i treściami wspierają natomiast długofalową obecność strony w organicznych wynikach wyszukiwania. Marketing internetowy może łączyć te kanały, lecz wybór zależy od popytu, marży, konkurencji i gotowości oferty. Nie łączymy ich automatycznie: najpierw sprawdzamy, czy potrzebna jest poprawa samej strony, kampania, prace SEO, czy uzgodniona kombinacja tych działań.",
+  },
+  {
+    title: "Agencja SEO w Częstochowie czy współpraca zdalna?",
+    text: "SEO w Częstochowie prowadzimy zdalnie: brief, analizę, akceptacje i omówienie wyników realizujemy online. Wybierając agencję SEO, sprawdź nie tylko nazwę miasta w ofercie, lecz także sposób pracy, zakres odpowiedzialności i dostęp do danych. W naszej propozycji wskazujemy, co przygotowuje zespół FOTZ, co wdraża Twoja osoba techniczna i które zadania wymagają dodatkowej wyceny. Pracujemy na podstawie informacji potwierdzonych przez firmę. Nie deklarujemy lokalnego biura, nie przypisujemy sobie realizacji innych marek i nie gwarantujemy pozycji, terminu efektu ani liczby klientów z Częstochowy.",
+  },
+];
 
-  const districts = [
-    "Śródmieście",
-    "Raków",
-    "Błeszno",
-    "Tysiąclecie",
-    "Wrzosowiak",
-    "Ostatni Grosz",
-    "Stradom",
-  ];
+const faqs = [
+  {
+    question: "Ile kosztuje pozycjonowanie w Częstochowie?",
+    answer: "Koszt ustalamy po poznaniu adresu strony, oferty, konkurencji i oczekiwanego zakresu. Inne zadania będą potrzebne przy jednorazowym audycie, inne przy stałej optymalizacji kilku podstron lub rozbudowanym sklepie. Propozycja wyszczególnia prace, wyłączenia i odpowiedzialność za wdrożenia. Nie podajemy uniwersalnego cennika zależnego wyłącznie od miasta ani opłaty za obiecaną pozycję.",
+  },
+  {
+    question: "Ile trwa pozycjonowanie strony?",
+    answer: "Nie ma jednego terminu zależnego od lokalizacji. Tempo prac zależy m.in. od stanu technicznego, dostępów, akceptacji, konkurencji, historii domeny i czasu potrzebnego na wdrożenie oraz ponowne przetworzenie zmian przez wyszukiwarkę. Harmonogram w ofercie dotyczy naszych zadań, nie gwarantowanej daty uzyskania pozycji lub zapytań. Postęp oceniamy na podstawie zakończonych wdrożeń i zebranych danych.",
+  },
+  {
+    question: "Czy pozycjonowanie wymaga przebudowy strony?",
+    answer: "Nie zawsze. Czasem wystarczy poprawić indeksowanie, treść istniejących stron ofertowych, nawigację lub formularz kontaktowy. Przebudowę rozważamy dopiero, gdy ograniczenia technologii lub struktury uniemożliwiają ważne poprawki. Audyt pokazuje skalę problemu i warianty działania. Decyzję o zakresie podejmujesz po poznaniu rekomendacji i wyceny, bez automatycznego zobowiązania do nowej witryny.",
+  },
+  {
+    question: "Czym różni się pozycjonowanie lokalne od ogólnopolskiego?",
+    answer: "Lokalne SEO koncentruje się na zapytaniach związanych z miastem, regionem, mapami i rzeczywistym obszarem obsługi. Pozycjonowanie ogólnopolskie dotyczy oferty dostępnej niezależnie od lokalizacji i zwykle wymaga szerszego planu tematów. W obu przypadkach znaczenie mają technika, treści i wiarygodność witryny. Zasięg dobieramy do sposobu świadczenia usługi, nie do samej siedziby firmy.",
+  },
+  {
+    question: "Czy mogę zamówić wyłącznie audyt SEO?",
+    answer: "Tak. Audyt może być samodzielnym zleceniem zakończonym uporządkowaną listą rekomendacji i priorytetów. Przed startem ustalamy liczbę i typ analizowanych podstron, dostęp do danych oraz formę przekazania wniosków. Możesz wdrożyć je we własnym zespole. Jeśli później zechcesz zlecić nam wybrane prace, przygotujemy odrębny zakres i wycenę bez domyślnego rozszerzania umowy.",
+  },
+  {
+    question: "Co przygotować do rozmowy o pozycjonowaniu?",
+    answer: "Prześlij adres strony, opisz najważniejsze usługi lub produkty i wskaż obszar, na którym obsługujesz klientów. Warto dodać dotychczasowe działania, główny problem oraz informację, kto może wdrażać zmiany. Nie przesyłaj haseł w formularzu. Jeśli dostęp do Search Console lub analityki będzie potrzebny do wyceny albo audytu, uzgodnimy bezpieczny sposób uprawnień po ustaleniu zakresu.",
+  },
+];
 
-  const industries = [
-    { name: "Turystyka religijna", icon: Star },
-    { name: "Przemysł metalurgiczny", icon: Building2 },
-    { name: "Usługi dla pielgrzymów", icon: Globe },
-    { name: "Nieruchomości", icon: Award },
-    { name: "Edukacja i szkolenia", icon: Target },
-    { name: "Handel detaliczny", icon: BarChart2 },
-  ];
-
+export default function PozycjonowanieCzestochowa() {
   return (
-    <Layout>
-      <SEOHead
-        title="Pozycjonowanie Częstochowa — Agencja SEO Śląsk | Fotz Studio"
-        description="Pozycjonowanie stron Częstochowa. Agencja SEO Fotz Studio — lokalne SEO dla firm z Częstochowy. Bezpłatna konsultacja SEO!"
-        canonical="https://www.fotz-studio.pl/uslugi/pozycjonowanie/czestochowa"
-        keywords="pozycjonowanie częstochowa, agencja seo częstochowa, seo częstochowa, pozycjonowanie stron częstochowa, seo dla firm częstochowa, pozycjonowanie lokalne częstochowa"
+    <>
+      <SEOHead title={seoTitle} description={seoDescription} canonical={canonicalUrl} />
+      <ServiceEditorial
+        path={path}
+        title={pageTitle}
+        eyebrow="SEO dla firm · Częstochowa i okolice · współpraca zdalna"
+        area="Częstochowa"
+        lead="Pozycjonowanie stron i sklepów dla firm z Częstochowy: od analizy technicznej po treści, lokalną widoczność i pomiar zapytań. Dobieramy zakres do celu, stanu witryny i obszaru działania — bez obietnic pozycji lub terminu efektów."
+        enquiryVariant="audit"
+        contactLabel="Zapytaj o audyt SEO dla swojej firmy"
+        contactDescription="Prześlij adres strony, opisz ofertę i obszar obsługi klientów. Napisz, czy interesuje Cię samodzielny audyt czy stałe pozycjonowanie. Na tej podstawie ustalimy potrzebny zakres i warunki wyceny."
+        summary={summary}
+        scopeTitle="Pozycjonowanie stron Częstochowa: audyt SEO i optymalizacja"
+        scope={scope}
+        sections={sections}
+        faqs={faqs}
+        faqTitle="Pozycjonowanie Częstochowa — pytania i odpowiedzi"
       />
-      <ServiceSchema
-        name="Pozycjonowanie stron internetowych Częstochowa"
-        description="Agencja SEO Fotz Studio oferuje profesjonalne pozycjonowanie stron dla firm z Częstochowy. Specjalizacja w turystyce religijnej, usługach dla pielgrzymów i przemyśle. Niska konkurencja SEO, szybkie rezultaty. Audyt SEO, optymalizacja on-page, link building i pozycjonowanie lokalne."
-        provider="Fotz Studio"
-        areaServed="Częstochowa"
-      />
-      <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://www.fotz-studio.pl/" },
-          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
-          { name: "Pozycjonowanie", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie" },
-          { name: "Częstochowa", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie/czestochowa" },
-        ]}/>
-      <FAQSchema items={faqItems} />
-
-      {/* Hero */}
-      <section className="relative min-h-[85vh] flex items-center justify-center bg-background overflow-hidden pt-20">
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
-          <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-accent/5 rounded-full blur-3xl" />
-        </div>
-
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 text-sm font-medium mb-6"
-            >
-              <MapPin className="w-4 h-4" />
-              Pozycjonowanie · Częstochowa
-            </motion.div>
-
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight"
-            >
-              Pozycjonowanie{" "}
-              <span className="text-primary">Częstochowa</span> — Jasna Góra,
-              turystyka i niska konkurencja SEO
-            </motion.h1>
-
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto"
-            >
-              Pomagamy firmom z Częstochowy zdobyć pierwszą stronę Google. Jasna Góra
-              to 4–5M pielgrzymów rocznie — ogromny rynek turystyki religijnej z bardzo
-              niską konkurencją SEO. Audyt SEO, optymalizacja techniczna, content
-              i link building dostosowane do niszy pielgrzymkowej i branży turystycznej.
-            </motion.p>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center"
-            >
-              <Button size="lg" asChild className="text-base px-8">
-                <Link to="/kontakt?usluga=seo&wariant=audit#formularz">
-                  Zapytaj o audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
-              <Button size="lg" variant="outline" asChild className="text-base px-8">
-                <Link to="/uslugi/pozycjonowanie">
-                  Pakiety i ceny SEO
-                </Link>
-              </Button>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5 }}
-              className="flex flex-wrap justify-center gap-6 mt-12 text-sm text-muted-foreground"
-            >
-              {["White-hat SEO", "Raport co 2 tygodnie", "Niska konkurencja", "Gwarancja transparentności"].map(
-                (item) => (
-                  <div key={item} className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-primary" />
-                    <span>{item}</span>
-                  </div>
-                )
-              )}
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Results */}
-      <section className="py-16 bg-muted/30 border-y border-border/40">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {results.map((r, i) => (
-              <FadeInView key={i} delay={i * 0.1} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-primary mb-1">
-                  {r.metric}
-                </div>
-                <div className="text-sm font-medium text-foreground">{r.label}</div>
-                <div className="text-xs text-muted-foreground mt-1">{r.context}</div>
-              </FadeInView>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Częstochowa SEO specifics */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <FadeInView className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Częstochowa — Jasna Góra, 4–5M pielgrzymów, niska konkurencja
-            </h2>
-          </FadeInView>
-
-          <div className="grid md:grid-cols-2 gap-8 items-start">
-            <FadeInView>
-              <div className="space-y-6 text-muted-foreground">
-                <p>
-                  Częstochowa to <strong className="text-foreground">~220 tys. ludzi</strong> z
-                  <strong className="text-foreground"> Jasną Górą jako głównym magnesem turystycznym</strong>.
-                  To 4–5 milionów pielgrzymów rocznie — jeden z największych miejsc pielgrzymkowych
-                  w Europie. To ogromny, niszowy rynek z minimalną konkurencją SEO.
-                </p>
-                <p>
-                  <strong className="text-foreground">Turystyka religijna</strong> — hotele,
-                  restauracje, przewodnie, sklepy, usługi dla pielgrzymów. Frazy takie jak
-                  'hotel blisko Jasnej Góry', 'gdzie zjeść Częstochowa' mają mały search volume
-                  ale wysoką intent i wartość transakcji. Konkurencja SEO jest 70–80% niższa
-                  niż w jakimkolwiek innym mieście.
-                </p>
-                <p>
-                  <strong className="text-foreground">Przemysł metalurgiczny</strong> — ISD Huta
-                  Częstochowa, Brembo i firmy B2B. <strong className="text-foreground">Edukacja</strong> — Politechnika
-                  Częstochowska. Wszystkie sektory mają bardzo niski SEO KD i szybki potencjał wzrostu.
-                </p>
-              </div>
-            </FadeInView>
-
-            <FadeInView delay={0.2}>
-              <div className="bg-card border border-border/60 rounded-xl p-6">
-                <h3 className="font-bold text-foreground mb-4">
-                  Pozycjonujemy firmy we wszystkich dzielnicach Częstochowy
-                </h3>
-                <div className="flex flex-wrap gap-2">
-                  {districts.map((district) => (
-                    <span
-                      key={district}
-                      className="bg-primary/10 text-primary text-sm px-3 py-1 rounded-full font-medium"
-                    >
-                      {district}
-                    </span>
-                  ))}
-                </div>
-                <p className="text-xs text-muted-foreground mt-4">
-                  + okolice Jasnej Góry
-                </p>
-              </div>
-            </FadeInView>
-          </div>
-        </div>
-      </section>
-
-      {/* Industries */}
-      <section className="py-20 bg-muted/20">
-        <div className="container mx-auto px-4">
-          <FadeInView className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-4">
-              Branże, które pozycjonujemy w Częstochowie
-            </h2>
-            <p className="text-muted-foreground max-w-xl mx-auto">
-              Od turystyki religijnej po przemysł — specjalizujemy się
-              w niszach rynku z dużym potencjałem wzrostu.
-            </p>
-          </FadeInView>
-
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-3xl mx-auto">
-            {industries.map((ind, i) => (
-              <FadeInView key={i} delay={i * 0.08}>
-                <div className="bg-card border border-border/60 rounded-xl p-5 flex items-center gap-3 hover:border-primary/40 transition-colors">
-                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
-                    <ind.icon className="w-5 h-5 text-primary" />
-                  </div>
-                  <span className="font-medium text-foreground text-sm">{ind.name}</span>
-                </div>
-              </FadeInView>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Process */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4 max-w-3xl">
-          <FadeInView className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-4">
-              Jak działamy — pozycjonowanie firm z Częstochowy
-            </h2>
-          </FadeInView>
-
-          <div className="space-y-6">
-            {[
-              {
-                step: "01",
-                title: "Konsultacja i zakres audytu SEO",
-                desc: "Analizujemy Twoją stronę i frazy z Częstochowy. Sprawdzamy potencjał w turystyce religijnej, usługach dla pielgrzymów czy Twojej branży.",
-              },
-              {
-                step: "02",
-                title: "Strategia dla niszy pielgrzymkowej",
-                desc: "Dobieramy słowa kluczowe dla 'hotel Częstochowa', 'usługi dla pielgrzymów', 'Jasna Góra'. Planujemy SEO dla turystyki religijnej i lokalnych branż.",
-              },
-              {
-                step: "03",
-                title: "Wdrożenie i optymalizacja",
-                desc: "Optymalizujemy stronę technicznie, tworzymy treści na frazy pielgrzymkowe i turystyczne, budujemy linki z turystycznych źródeł.",
-              },
-              {
-                step: "04",
-                title: "Raportowanie i dostosowanie",
-                desc: "Co 2 tygodnie raportujemy pozycje i ruch. Strategia dostosowywana do sezonowości pielgrzymkowej i zmian konkurencji.",
-              },
-            ].map((step, i) => (
-              <FadeInView key={i} delay={i * 0.1}>
-                <div className="flex gap-6 items-start">
-                  <div className="w-14 h-14 bg-primary rounded-xl flex items-center justify-center shrink-0 text-primary-foreground font-bold text-lg">
-                    {step.step}
-                  </div>
-                  <div className="pt-2">
-                    <h3 className="font-semibold text-foreground text-lg mb-1">
-                      {step.title}
-                    </h3>
-                    <p className="text-muted-foreground">{step.desc}</p>
-                  </div>
-                </div>
-              </FadeInView>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-20 bg-primary text-primary-foreground">
-        <div className="container mx-auto px-4 text-center">
-          <FadeInView>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Gotowy na pierwszą stronę Google w Częstochowie?
-            </h2>
-            <p className="text-primary-foreground/80 text-lg mb-8 max-w-xl mx-auto">
-              Zapytaj o audyt SEO. Zakres i wycenę ustalimy na bezpłatnej konsultacji, a raport przygotujemy z konkretnymi
-              rekomendacjami dla niszy turystyki religijnej Częstochowy.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="secondary" asChild className="text-base px-8">
-                <Link to="/kontakt?usluga=seo&wariant=audit#formularz">
-                  Zapytaj o audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                asChild
-                className="text-base px-8 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
-              >
-                <Link to="/uslugi/pozycjonowanie">Wszystkie pakiety SEO</Link>
-              </Button>
-            </div>
-          </FadeInView>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section className="py-20 bg-muted/20">
-        <div className="container mx-auto px-4 max-w-3xl">
-          <FadeInView className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-4">
-              FAQ — pozycjonowanie stron Częstochowa
-            </h2>
-          </FadeInView>
-          <Accordion type="single" collapsible className="space-y-3">
-            {faqItems.map((item, i) => (
-              <FadeInView key={i} delay={i * 0.05}>
-                <AccordionItem
-                  value={`item-${i}`}
-                  className="bg-card border border-border/60 rounded-xl px-6"
-                >
-                  <AccordionTrigger className="text-left font-medium hover:no-underline py-5">
-                    {item.question}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground pb-5">
-                    {item.answer}
-                  </AccordionContent>
-                </AccordionItem>
-              </FadeInView>
-            ))}
-          </Accordion>
-        </div>
-      </section>
-
-      {/* Internal nav */}
-      <section className="py-12 bg-background border-t border-border/40">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <h3 className="font-semibold text-foreground mb-4 text-sm uppercase tracking-wide">
-            Pozycjonowanie w innych miastach:
-          </h3>
-          <div className="flex flex-wrap gap-x-6 gap-y-2">
-            {[
-              { label: "Pozycjonowanie Warszawa", url: "/uslugi/pozycjonowanie/warszawa" },
-              { label: "Pozycjonowanie Kraków", url: "/seo/pozycjonowanie-krakow" },
-              { label: "Pozycjonowanie Wrocław", url: "/uslugi/pozycjonowanie/wroclaw" },
-              { label: "Pozycjonowanie Poznań", url: "/seo/pozycjonowanie-poznan" },
-              { label: "Pozycjonowanie Gdańsk", url: "/uslugi/pozycjonowanie/gdansk" },
-              { label: "Pozycjonowanie Łódź", url: "/uslugi/pozycjonowanie/lodz" },
-              { label: "Pozycjonowanie Szczecin", url: "/uslugi/pozycjonowanie/szczecin" },
-              { label: "Pozycjonowanie Białystok", url: "/uslugi/pozycjonowanie/bialystok" },
-              { label: "Wszystkie usługi SEO", url: "/uslugi/pozycjonowanie" },
-            ].map((link) => (
-              <Link
-                key={link.url}
-                to={link.url}
-                className="text-primary hover:underline font-medium text-sm"
-              >
-                → {link.label}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <ContactSection />
-    </Layout>
+    </>
   );
-};
-
-export default PozycjonowanieCzestochowa;
+}
