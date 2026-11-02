@@ -40,6 +40,7 @@ export const hydratedPages: Record<string, () => Promise<{ default: ComponentTyp
   "/content-marketing/strategia": () => import("@/pages/ContentMarketing"),
   "/performance-marketing/instagram-ads": () => import("@/pages/InstagramAds"),
   "/performance-marketing/meta-ads": () => import("@/pages/FacebookInstagramAds"),
+  "/performance-marketing/linkedin-ads": () => import("@/pages/LinkedInAds"),
   "/uslugi/strony-internetowe/legnica": () => import("@/pages/StronyInternetoweLegnica"),
 };
 

@@ -1,0 +1,136 @@
+{
+  "date": "2026-11-02",
+  "path": "/performance-marketing/linkedin-ads",
+  "gscProperty": "sc-domain:fotz-studio.pl",
+  "gscPeriod": {
+    "from": "2026-10-03",
+    "to": "2026-10-30"
+  },
+  "gscPage": {
+    "page": "https://www.fotz-studio.pl/performance-marketing/linkedin-ads",
+    "clicks": 0,
+    "impressions": 114,
+    "position": 59.5351,
+    "ctr": 0
+  },
+  "gscQueries": [
+    {
+      "page": "https://www.fotz-studio.pl/performance-marketing/linkedin-ads",
+      "query": "kampanie na linkedin",
+      "clicks": 0,
+      "impressions": 1,
+      "position": 9
+    },
+    {
+      "page": "https://www.fotz-studio.pl/performance-marketing/linkedin-ads",
+      "query": "linkedin ads",
+      "clicks": 0,
+      "impressions": 2,
+      "position": 37
+    },
+    {
+      "page": "https://www.fotz-studio.pl/performance-marketing/linkedin-ads",
+      "query": "linkedin ads agency",
+      "clicks": 0,
+      "impressions": 15,
+      "position": 82.4
+    },
+    {
+      "page": "https://www.fotz-studio.pl/performance-marketing/linkedin-ads",
+      "query": "linkedin ads białystok",
+      "clicks": 0,
+      "impressions": 2,
+      "position": 27
+    },
+    {
+      "page": "https://www.fotz-studio.pl/performance-marketing/linkedin-ads",
+      "query": "linkedin advertising",
+      "clicks": 0,
+      "impressions": 13,
+      "position": 51.6154
+    },
+    {
+      "page": "https://www.fotz-studio.pl/performance-marketing/linkedin-ads",
+      "query": "linkedin advertising agency",
+      "clicks": 0,
+      "impressions": 13,
+      "position": 81.2308
+    },
+    {
+      "page": "https://www.fotz-studio.pl/performance-marketing/linkedin-ads",
+      "query": "linkedin agency",
+      "clicks": 0,
+      "impressions": 15,
+      "position": 75.7333
+    },
+    {
+      "page": "https://www.fotz-studio.pl/performance-marketing/linkedin-ads",
+      "query": "linkedin campaign",
+      "clicks": 0,
+      "impressions": 11,
+      "position": 35.0909
+    },
+    {
+      "page": "https://www.fotz-studio.pl/performance-marketing/linkedin-ads",
+      "query": "linkedin marketing",
+      "clicks": 0,
+      "impressions": 16,
+      "position": 21.4375
+    },
+    {
+      "page": "https://www.fotz-studio.pl/performance-marketing/linkedin-ads",
+      "query": "linkedin marketing agency",
+      "clicks": 0,
+      "impressions": 9,
+      "position": 82.4444
+    },
+    {
+      "page": "https://www.fotz-studio.pl/performance-marketing/linkedin-ads",
+      "query": "linkedin marketing services",
+      "clicks": 0,
+      "impressions": 11,
+      "position": 81.8182
+    },
+    {
+      "page": "https://www.fotz-studio.pl/performance-marketing/linkedin-ads",
+      "query": "reklama linkedin ads",
+      "clicks": 0,
+      "impressions": 1,
+      "position": 83
+    },
+    {
+      "page": "https://www.fotz-studio.pl/performance-marketing/linkedin-ads",
+      "query": "reklamy na linkedin",
+      "clicks": 0,
+      "impressions": 1,
+      "position": 77
+    }
+  ],
+  "neuron": {
+    "query": "9d52082443fd4c35",
+    "keyword": "linkedin ads",
+    "before": 68,
+    "localCandidate": 95,
+    "publicAfter": null,
+    "localRendered": 95
+  },
+  "status": "Rendered candidate verified; awaiting Claude, CI and production readback",
+  "scope": [
+    "Concrete B2B offer, separated scope and costs; unsupported outcome claims and unconfirmed fixed prices removed",
+    "Own FPS/RPPG/Klagem website projects clearly identified as website work, not LinkedIn campaign results",
+    "linkedin_ads enquiry variant preserved to contact form; separate existing campaign_audit option",
+    "Current LinkedIn documentation for formats, EEA opt-in messaging, targeting, campaign structure, lead forms and CRM",
+    "Canonical retained, sitemap lastmod updated, route hydration enabled",
+    "Shared ServiceSchema describes Polska as Country; existing local city/place behavior retained"
+  ],
+  "sources": [
+    "https://www.linkedin.com/help/linkedin/answer/a421723/",
+    "https://www.linkedin.com/help/lms/answer/a425662",
+    "https://www.linkedin.com/help/linkedin/answer/a423447/linkedin-lead-gen-forms-overview",
+    "https://www.linkedin.com/help/linkedin/answer/a425316",
+    "https://www.linkedin.com/help/linkedin/answer/a420420",
+    "https://www.linkedin.com/help/linkedin/answer/a1517918"
+  ],
+  "measurement": "Content score does not prove indexing, rankings, enquiries or sales. Track Search Console clicks and real marketing/linkedin_ads enquiries after release.",
+  "claudeReview": "No blockers on 8d7decd1. Country typing correction implemented from non-blocking feedback; final checks pending."
+}

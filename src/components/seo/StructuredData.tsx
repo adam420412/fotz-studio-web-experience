@@ -182,15 +182,13 @@ export function ServiceSchema({
   areaServed = "Poznań",
 }: ServiceSchemaProps) {
   const finalName = name ?? serviceName ?? "Fotz Studio";
+  const describeArea = (area: string, fallback: "Place" | "City") => ({
+    "@type": area.trim().toLocaleLowerCase("pl") === "polska" ? "Country" : fallback,
+    name: area,
+  });
   const areaServedValue = Array.isArray(areaServed)
-    ? areaServed.map((area) => ({
-        "@type": "Place",
-        name: area,
-      }))
-    : {
-        "@type": "City",
-        name: areaServed,
-      };
+    ? areaServed.map((area) => describeArea(area, "Place"))
+    : describeArea(areaServed, "City");
 
   const schema = {
     "@context": "https://schema.org",

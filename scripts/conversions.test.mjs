@@ -36,6 +36,13 @@ test('content and Instagram enquiries retain their scope through contact links',
  }
  assert.equal(serviceForPath('/performance-marketingowy-przyklad'), 'other');
 });
+test('LinkedIn campaign enquiry keeps the B2B scope instead of a generic request', () => {
+ const service = serviceForPath('/performance-marketing/linkedin-ads');
+ const url = new URL(enquiryHref(service, 'linkedin_ads'), 'https://www.fotz-studio.pl');
+ assert.equal(url.pathname, '/kontakt');
+ assert.equal(url.hash, '#formularz');
+ assert.deepEqual(resolveEnquiryContext(url.search), {service:'marketing', variant:'linkedin_ads'});
+});
 test('product photography enquiries reach the contact form with their scope', () => {
  const service = serviceForPath('/uslugi/fotografia-produktowa');
  assert.equal(service, 'video');
