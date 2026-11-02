@@ -11,6 +11,16 @@ const compiled = ts.transpileModule(source, { compilerOptions: { module: ts.Modu
 const exports = {};
 vm.runInNewContext(compiled, { exports, URL, require: name => name === 'react-helmet-async' ? { Helmet: 'helmet' } : require(name) });
 const breadcrumb = props => JSON.parse(exports.BreadcrumbSchema(props).props.children.props.children);
+const service = props => JSON.parse(exports.ServiceSchema({ description: 'Oferta', ...props }).props.children.props.children);
+
+test('nationwide service uses Country while local areas keep their existing types', () => {
+  assert.deepEqual(service({ areaServed: 'Polska' }).areaServed, { '@type': 'Country', name: 'Polska' });
+  assert.deepEqual(service({}).areaServed, { '@type': 'City', name: 'Poznań' });
+  assert.deepEqual(service({ areaServed: ['Polska', 'Mazowsze'] }).areaServed, [
+    { '@type': 'Country', name: 'Polska' },
+    { '@type': 'Place', name: 'Mazowsze' },
+  ]);
+});
 
 test('breadcrumb schema accepts the same path/label format as visible navigation', () => {
   const result = breadcrumb({ items: [{ label: 'Start', path: '/' }, { label: 'Blog', path: '/blog' }, { label: 'Artykuł', path: '/blog/artykul' }] });
