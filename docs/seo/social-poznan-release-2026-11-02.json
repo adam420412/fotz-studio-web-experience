@@ -1,0 +1,104 @@
+{
+  "date": "2026-11-02",
+  "id": "FOTZ-7A4F87E3",
+  "owner": "Codex / FOTZ-kontynuacja-01a177f2-20261102",
+  "url": "https://www.fotz-studio.pl/agencja-social-media/poznan",
+  "query": "25b58b733105e2f5",
+  "keyword": "agencja social media poznań",
+  "scores": {
+    "beforePublic": 87,
+    "htmlDraft": 86,
+    "preview": 92,
+    "public": 92
+  },
+  "scoreCaveat": "Bezpośrednie HTML i import URL zwróciły różne wyniki. Porównanie przed/po dotyczy publicznego URL z id=main-content. Cel95 nieosiągnięty; brak oznaczenia done.",
+  "reservationPr": 132,
+  "pr": 135,
+  "head": "a149771763c34155aacaa5c6d65f077a5d4a756b",
+  "productionCommit": "77140973a3d68a4157e3060e407a095b4392b6b0",
+  "review": {
+    "reviewer": "Codex / meta_ads_review",
+    "result": "PASS",
+    "blob": "8c2ae2f95a840a5451f39310c86b9924c14c1edf"
+  },
+  "checks": {
+    "testedHead": "a149771763c34155aacaa5c6d65f077a5d4a756b",
+    "typecheck": "PASS",
+    "tests": "193/193 PASS",
+    "build": "1068 pages / 1066 full bodies / 0 errors",
+    "seo": "1067 URLs / 135564 links / 0 broken",
+    "ownPhotos": "PASS",
+    "ci": [
+      {
+        "id": 41470392881,
+        "result": "success"
+      },
+      {
+        "id": 41470393069,
+        "result": "success"
+      }
+    ]
+  },
+  "preview": {
+    "deployment": "dpl_ECjbE2TsxLi1gFurWkQrWYZkX5Ma",
+    "state": "READY",
+    "widths": [
+      320,
+      390
+    ],
+    "horizontalOverflow": false,
+    "ctaHeight": 44,
+    "cta320Bottom": 594.14,
+    "cta390Bottom": 506.34,
+    "faqMinHeight": 44,
+    "faqOpened": true,
+    "contactVerified": [
+      "social/retainer",
+      "social/limited_care"
+    ],
+    "formSubmitted": false
+  },
+  "gsc": {
+    "period": "2026-10-03/2026-10-30",
+    "studio": {
+      "clicks": 0,
+      "impressions": 52,
+      "position": 23.6154
+    },
+    "wp": {
+      "clicks": 1,
+      "impressions": 925,
+      "position": 11.4249
+    },
+    "evidence": "docs/seo/social-poznan-gsc-2026-11-02.json",
+    "conclusion": "Obie domeny pokazują się na podobne zapytania. Nie przekierowano ani nie usunięto żadnej strony; 28 dni danych nie rozstrzyga migracji. Rozwinięto rolę Studio jako konkretnej oferty stałej obsługi z realizacjami i formularzem."
+  },
+  "changes": [
+    "Jawne zakresy3000/2000 i wyłączenia",
+    "Usługa i wariant przekazywane do kontaktu",
+    "Usunięta nieprawdziwa baza w Poznaniu; zdalnie/Kamionki",
+    "Krótszy hero, FAQ44px",
+    "Raportowanie, akceptacje i odpowiedzialność za obsługę zapytań",
+    "Własne dotychczasowe foto/video zachowane"
+  ],
+  "production": {
+    "deployment": "dpl_6jP9TqyXoA266SJnF8mdjsAAWJ1i",
+    "state": "READY",
+    "alias": "www.fotz-studio.pl",
+    "widths": [
+      320,
+      390
+    ],
+    "noHorizontalOverflow": true,
+    "ctaHeight": 44,
+    "service": "social",
+    "variant": "retainer",
+    "formSubmitted": false,
+    "screenshot": "social-poznan-production-390.jpg"
+  },
+  "status": "W_TRAKCIE",
+  "neuronwriterSaved": true,
+  "neuronwriterDone": false,
+  "queryHistoryNote": "Ta sama analiza była historycznie używana przy WP1834. Wyniki zapisane tutaj odnoszą się wyłącznie do URL Studio. Import zapisuje nową rewizję Studio, nie uznajemy wyniku92 za wynik WP.",
+  "parallelMainNote": "Przed publikacją main otrzymał cudzy PR137 (4 inne strony). Blob naszej podstrony pozostaje identyczny z niezależnie sprawdzonym podglądem. Testy i CI przypisano do rzeczywistego przetestowanego head, nie do cudzych zmian."
+}
