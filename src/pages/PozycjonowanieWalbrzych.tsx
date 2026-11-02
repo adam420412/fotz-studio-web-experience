@@ -25,6 +25,10 @@ import { ContactSection } from "@/components/sections/ContactSection";
 
 const faqItems = [
   {
+    question: "Czym jest audyt SEO i dlaczego zaczynamy od niego?",
+    answer: "Audyt SEO to szczegółowa analiza strony pod kątem widoczności: technika, treści, linki i konkurencja w Wałbrzychu. Pokazuje, co blokuje pozycje i co naprawić najpierw, żeby budżet pracował na wynik, a nie na zgadywanie.",
+  },
+  {
     question: "Ile kosztuje pozycjonowanie w Wałbrzychu?",
     answer:
       "Pozycjonowanie lokalne w Wałbrzychu zaczyna się od 800 zł netto miesięcznie. Wałbrzych to 110k ludzi z bogatą historią górniczą i rosnącym turystyzmem (Kopalna Venus, turystyka podziemna). Dla branż lokalnych i usług — szybciej osiągamy TOP 10. Dla e-commerce i bardziej konkurencyjnych fraz — pakiet STANDARD (1500-3000 zł) lub PRO (3000-6000 zł).",
@@ -91,8 +95,8 @@ const PozycjonowanieWalbrzych = () => {
   return (
     <Layout>
       <SEOHead
-        title="Pozycjonowanie Wałbrzych - SEO lokalne dla firm | FOTZ"
-        description="Pozycjonowanie stron Wałbrzych. Agencja SEO Fotz Studio — audyt SEO, optymalizacja dla turystyki, usług lokalnych i handlu."
+        title="Pozycjonowanie Wałbrzych — SEO, reklama i marketing | FOTZ"
+        description="Pozycjonowanie Wałbrzych — kompleksowy audyt SEO, optymalizacja i reklama Google Ads. Zwiększ widoczność: Twoja firma z Wałbrzycha i okolic w TOP 10."
         canonical="https://www.fotz-studio.pl/pozycjonowanie/walbrzych"
         keywords="pozycjonowanie wałbrzych, agencja seo wałbrzych, seo wałbrzych, pozycjonowanie stron wałbrzych, seo dla firm wałbrzych, seo dolny śląsk, pozycjonowanie lokalne wałbrzych"
       />
@@ -321,6 +325,72 @@ const PozycjonowanieWalbrzych = () => {
         </div>
       </section>
 
+      {/* Zakres pozycjonowania */}
+      <section className="py-20 bg-gray-900">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <FadeInView className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-white mb-4">
+              Co obejmuje pozycjonowanie stron w mieście Wałbrzych?
+            </h2>
+            <p className="text-gray-300 max-w-xl mx-auto">
+              Kompleksowy plan działań SEO dla lokalnych firm — od audytu po regularne wdrożenia.
+            </p>
+          </FadeInView>
+          <div className="space-y-6 text-gray-300">
+            <p>
+              Skuteczne pozycjonowanie zaczyna się od audytu — <strong className="text-white">audyt SEO Wałbrzych</strong> to szczegółowa analiza Twojej strony internetowej pod kątem widoczności w Google: SEO techniczne (szybkość ładowania, indeksacja, meta tytuły i opisy), treści, linkowanie wewnętrzne i profil linków. Czym jest audyt SEO w praktyce? To mapa prac: na tej bazie układamy elementy strategii SEO dopasowane do potrzeb Twojej firmy i lokalnego rynku, a dostosowanie strony do zaleceń to pierwszy etap wdrożeń.
+            </p>
+            <p>
+              Wyszukiwarka Google pokazuje firmy w Google na dwa sposoby: wyniki organiczne i mapa. Dlatego plan obejmuje pozycjonowanie strony oraz wizytówkę — <strong className="text-white">wizytówka Google</strong> (profil firmy w Google, widoczny w Mapy Google / Google Maps) to dla lokalnej firmy priorytet numer jeden. Spójny opis, kategorie i opinie w profilu firmy to dla lokalnych firm najszybsza droga do wzrostu zapytań i telefonów. Lokalne firmy wygrywają tu z ogólnopolską konkurencją dystansem i opiniami.
+            </p>
+            <p>
+              Dobieramy każdą frazę pod realia: badamy, co klienci będą wyszukiwać — od „pozycjonowanie Wałbrzych" po frazy usługowe Twojej branży. Każda fraza dostaje własną podstronę lub sekcję. Optymalizacja strony pod kątem widoczności obejmuje nagłówki, treści i dane strukturalne. Efekt: wyższe pozycje w wynikach wyszukiwania, większy ruch organiczny i więcej zapytań — konkretne zapytania ofertowe od sklepów internetowych i firm usługowych z Wałbrzycha i okolic. Postęp widać na samych pozycjach w wynikach wyszukiwania, nie w obietnicach.
+            </p>
+            <p>
+              Pracujemy w trybie zdalnym — strategie i wdrożenia prowadzimy online, a raporty pokazują, jak rośnie widoczność Twojej firmy w Google. SEO lokalne pozwala pozyskiwać klientów z wyników wyszukiwania zamiast przepłacać za każde kliknięcie.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* SEO czy reklama */}
+      <section className="py-20 bg-gray-800">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <FadeInView className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-white mb-4">
+              Pozycjonowanie czy reklama? Google Ads i social media dla firm z Wałbrzycha
+            </h2>
+          </FadeInView>
+          <div className="space-y-6 text-gray-300">
+            <p>
+              Pozycjonowanie buduje ruch organiczny na lata, a kampanie reklamowe w Google Ads dają klientów od pierwszego dnia. Jako agencja reklamowa Wałbrzych (pracująca zdalnie dla całego regionu) łączymy oba kanały: reklama w Google Ads i social media (Google Ads i Facebook Ads, Google Ads i Meta Ads) wypełnia lukę, zanim SEO osiągnie wysokie pozycje. Reklama Facebook Wałbrzych świetnie sprawdza się w usługach lokalnych i gastronomii.
+            </p>
+            <p>
+              Marketing internetowy to nie wybór „albo-albo". Skuteczne kampanie reklamowe testują frazy i przekazy, a sprawdzone hasła trafiają potem do treści SEO. Dzięki temu Twoja firma pozyskuje klientów z dwóch kanałów naraz, a każda złotówka pracuje podwójnie.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* SEO i AI */}
+      <section className="py-20 bg-gray-900">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <FadeInView className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-white mb-4">
+              SEO i AI — jak sztuczna inteligencja zmienia wyszukiwanie
+            </h2>
+          </FadeInView>
+          <div className="space-y-6 text-gray-300">
+            <p>
+              Google i AI zmieniają sposób, w jaki klienci wyszukują usługi — odpowiedzi AI Overview cytują strony z konkretną, dobrze ustrukturyzowaną wiedzą. Dla firm działających w Wałbrzychu to szansa: mniej konkurencji niż w dużych miastach oznacza, że solidne treści szybciej wygrywają widoczność w wynikach.
+            </p>
+            <p>
+              Optymalizujemy strony pod kątem widoczności zarówno w klasycznych wynikach, jak i w odpowiedziach AI — czytelne definicje, tabele, FAQ i dane strukturalne. Twoja strona internetowa może być cytowana przez AI Overview. Zdobywaj klientów tam, gdzie konkurencji jeszcze nie ma.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Pricing */}
       <section className="py-20 bg-gray-800">
         <div className="container mx-auto px-4">
@@ -444,7 +514,7 @@ const PozycjonowanieWalbrzych = () => {
         <div className="container mx-auto px-4 max-w-3xl">
           <FadeInView className="text-center mb-12">
             <h2 className="text-3xl font-bold text-white mb-4">
-              FAQ — pozycjonowanie stron Wałbrzych
+              Najczęstsze pytania o pozycjonowanie w Wałbrzychu
             </h2>
           </FadeInView>
           <Accordion type="single" collapsible className="space-y-3">

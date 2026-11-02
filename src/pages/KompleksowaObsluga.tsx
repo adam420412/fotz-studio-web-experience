@@ -157,6 +157,10 @@ const pricingPackages = [
 
 const faqItems = [
   {
+    question: "Czym agencja full service różni się od freelancera?",
+    answer: "Freelancer obsłuży jeden kanał; agencja marketingowa full service bierze odpowiedzialność za całość — strategię, treści, reklamy i raportowanie. Jedna umowa, jeden kontakt i spójna komunikacja we wszystkich kanałach.",
+  },
+  {
     question: "Jakie korzyści przynosi kompleksowa obsługa marketingowa?",
     answer: "Kompleksowa obsługa marketingowa pozwala na zwiększenie rozpoznawalności marki, pozyskiwanie nowych klientów i wzrost świadomości marki. Dzięki odpowiednim narzędziom i strategiom, takim jak pozycjonowanie w Google czy efektywne kampanie w mediach społecznościowych, firmy mogą skuteczniej konkurować na rynku."
   },
@@ -194,8 +198,8 @@ const KompleksowaObsluga = () => {
   return (
     <>
       <SEOHead
-        title="Kompleksowa Obsługa Marketingowa Firm | Fotz Studio"
-        description="Kompleksowa obsługa marketingowa firm — marketing 360°: SEO, social media, content, reklamy Google i Meta, produkcja wideo."
+        title="Kompleksowa obsługa marketingowa — agencja reklamowa | FOTZ"
+        description="Kompleksowa obsługa marketingowa firm — jedna usługa, pełen zakres usług: SEO, social media, content, reklamy Google i Meta, wideo."
         canonical="https://www.fotz-studio.pl/kompleksowa-obsluga-marketingowa"
         keywords="kompleksowa obsługa marketingowa, pełna obsługa marketingu, agencja marketingowa kompleksowa, marketing 360, outsourcing marketingu"
       />
@@ -443,6 +447,76 @@ const KompleksowaObsluga = () => {
             </div>
           </div>
         </section>
+
+          {/* Agencja full service */}
+          <section className="py-20 md:py-32 bg-muted/30">
+            <div className="container-wide px-6 md:px-12">
+              <div className="max-w-3xl mx-auto">
+                <FadeInView>
+                  <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                    Agencja reklamowa full service — jak wybrać agencję do stałej współpracy?
+                  </h2>
+                  <div className="space-y-6 text-muted-foreground">
+                    <p>
+                      Agencje full service różnią się od wyspecjalizowanych studiów jednym: biorą odpowiedzialność za całość komunikacji, nie za jeden kanał. Agencja marketingowa full service prowadzi strategie, identyfikację wizualną, kampanie reklamowe w Google Ads i Facebook Ads, pozycjonowania strony oraz prowadzenie social media — spójny przekaz we wszystkich kanałach, online i offline.
+                    </p>
+                    <p>
+                      Jak wybrać agencję? Dobra agencja zaczyna od celów biznesowych, nie od cennika. Sprawdź, czy zna Twoją branżę — branża i jej realia decydują o kanałach; dobra analiza potrzeb klientów i grup docelowych to podstawa — oraz czy pokazuje zakres działań i sposób raportowania przed podpisaniem umowy. Współpraca z agencją powinna wyglądać jak rozszerzenie Twojego zespołu: jedna usługa, jeden kontakt, pełna odpowiedzialność za wynik.
+                    </p>
+                    <p>
+                      Dla małej firmy taka usługa oznacza, że marketing cyfrowy przestaje być serią przypadkowych działań. Strategie sprzedażowy lejek, widoczność w wynikach wyszukiwania i rozpoznawalność marki rosną razem, bo wszystkim zarządza jeden zespół.
+                    </p>
+                  </div>
+                </FadeInView>
+              </div>
+            </div>
+          </section>
+
+          {/* Co obejmuje obsługa */}
+          <section className="py-20 md:py-32">
+            <div className="container-wide px-6 md:px-12">
+              <div className="max-w-3xl mx-auto">
+                <FadeInView>
+                  <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                    Od identyfikacji wizualnej po kampanie — spójna komunikacja marki
+                  </h2>
+                  <div className="space-y-6 text-muted-foreground">
+                    <p>
+                      Zakres usług: usługi marketingowe obejmują strategię spójną z celami biznesowymi, identyfikację wizualną (identyfikacja wizualna to fundament rozpoznawalności), stronę www z etapem optymalizacji technicznej, SEO i content marketing, kampanie płatne (reklama w Google Ads, Meta Ads), prowadzenie social media, produkcję foto i wideo oraz marketing automation. Każda platforma dostaje własną rolę w lejku — od świadomości po sprzedaż.
+                    </p>
+                    <p>
+                      Ruch organiczny z Google budujemy treścią dopasowaną do grup docelowych, a płatny kanał domyka sprzedaż. Automatyzacja (e-mail, CRM) pozwala docierać do Twojej grupy docelowej właściwym komunikatem bez ręcznej pracy. Budować świadomość marki i promować produktu lub usługi można równolegle — marketingu online i offline nie traktujemy jako osobnych światów.
+                    </p>
+                    <p>
+                      Efekt: promocja produktów i usług przestaje zależeć od przypadku. Każdy kanał ma cel, właściciela i mierzalny wskaźnik.
+                    </p>
+                  </div>
+                </FadeInView>
+              </div>
+            </div>
+          </section>
+
+          {/* Koszty */}
+          <section className="py-20 md:py-32 bg-muted/30">
+            <div className="container-wide px-6 md:px-12">
+              <div className="max-w-3xl mx-auto">
+                <FadeInView>
+                  <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                    Ile kosztuje agencja marketingowa? Budżet reklamowy i zwrot z inwestycji
+                  </h2>
+                  <div className="space-y-6 text-muted-foreground">
+                    <p>
+                      Ile kosztuje agencja marketingowa, zależy od zakresu: pojedynczy kanał to zwykle 1500-4000 zł miesięcznie, kompleksowa obsługa 360° zaczyna się od ok. 5000 zł. Budżet reklamowy (Google Ads, Meta) rozliczany jest osobno — to pieniądze na media, nie na pracę agencji.
+                    </p>
+                    <p>
+                      Oceniaj współpracę przez zwrot z inwestycji, nie przez koszt miesięczny. Jeśli obsługa generuje leady lub sprzedaż przewyższającą jej cenę, marketing jest inwestycją, nie wydatkiem. Cele biznesowe i celach marketingowych łączymy w jednym raporcie: widzisz, ile kosztuje pozyskanie klienta z każdego kanału.
+                    </p>
+                  </div>
+                </FadeInView>
+              </div>
+            </div>
+          </section>
+
 
         {/* Pricing Section */}
         <section id="cennik" className="py-20 md:py-32 bg-muted/30">

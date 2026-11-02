@@ -22,12 +22,12 @@ export default function BlogDigitalMarketingCoTo() {
   ];
 
   const digitalChannels = [
-    { icon: TrendingUp, name: "SEO", desc: "Pozycjonowanie w Google — organiczny ruch bez kosztu za kliknięcie. Długoterminowa inwestycja o najwyższym ROI." },
-    { icon: Target, name: "SEM / Google Ads", desc: "Płatne reklamy w wyszukiwarce i sieci display. Natychmiastowy ruch — płacisz za kliknięcia lub wyświetlenia." },
-    { icon: Globe, name: "Social media marketing", desc: "Obecność i reklamy na Facebook, Instagram, LinkedIn, TikTok. Budowanie społeczności i zasięgu." },
-    { icon: Zap, name: "Email marketing", desc: "Wysyłanie newsletterów i automatyzacji do listy subskrybentów. Najwyższy ROI ze wszystkich kanałów (36-42x)." },
+    { icon: TrendingUp, name: "SEO", desc: "SEO (search engine optimization) — organiczny ruch z Google bez opłaty za kliknięcie. Koszt pozycjonowania rozkłada się w czasie, a ROI rośnie." },
+    { icon: Target, name: "SEM / Google Ads", desc: "Płatna reklama (PPC) w wyszukiwarkach i sieci display. Model płatny za kliknięcie w reklamę lub wyświetlenie — ruch od pierwszego dnia." },
+    { icon: Globe, name: "Social media marketing", desc: "Obecność i reklama w mediach społecznościowych: Facebook, Instagram, LinkedIn, TikTok. Budowa społeczności, zasięgów i świadomości marki." },
+    { icon: Zap, name: "Email marketing", desc: "E-mail marketing to newslettery i automatyzacje do listy subskrybentów. Najwyższy ROI ze wszystkich kanałów (36-42x)." },
     { icon: CheckCircle2, name: "Content marketing", desc: "Tworzenie wartościowych treści (blogi, wideo, podcasty) przyciągających klientów organicznie." },
-    { icon: ArrowRight, name: "Affiliate marketing", desc: "Partnerzy promują Twoje produkty w zamian za prowizję od sprzedaży. Skalowalne bez kosztów stałych." },
+    { icon: ArrowRight, name: "Affiliate marketing", desc: "Marketing afiliacyjny — partnerzy promują Twoje produkty za prowizję od sprzedaży. Skalowalne, bez kosztów stałych." },
   ];
 
   const faqItems = [
@@ -57,6 +57,11 @@ export default function BlogDigitalMarketingCoTo() {
         "Nie ma jednej odpowiedzi — zależy od branży, grupy docelowej i celów. Generalnie: SEO = najwyższy długoterminowy ROI, email marketing = najwyższy ROI ogólnie (36-42x), Google Ads = najszybsze efekty, social media = budowanie marki i społeczności, content marketing = autorytet i organiczny ruch. Dla e-commerce: Google Shopping + SEO + remarketing. Dla B2B: SEO + LinkedIn + email marketing. Dla usług lokalnych: Local SEO + Google Ads.",
     },
     {
+      question: "Jak AI zmienia digital marketing w praktyce?",
+      answer:
+        "AI automatyzuje analizę danych, personalizuje treści i optymalizuje stawki w kampaniach reklamowych. Wykorzystanie AI w marketingu nie zastępuje strategii — przyspiesza research, testy wariantów reklam i raportowanie. Najlepsze wyniki daje połączenie automatyzacji z nadzorem marketing managera, który pilnuje spójności przekazu na każdej platformie.",
+    },
+    {
       question: "Jak mierzyć skuteczność digital marketingu?",
       answer:
         "Kluczowe narzędzia i metryki: Google Analytics 4 (ruch, konwersje, ścieżki użytkownika), Google Search Console (SEO, CTR, pozycje), Google Ads Manager (CPC, ROAS, konwersje), Meta Business Suite (Facebook/Instagram: zasięg, CTR, CPA). KPI do śledzenia: koszt pozyskania klienta (CAC), wartość życiowa klienta (LTV), współczynnik konwersji, ROAS (dla e-commerce), organiczny ruch z Google.",
@@ -67,7 +72,7 @@ export default function BlogDigitalMarketingCoTo() {
     <>
       <SEOHead
         title="Digital marketing — co to jest? | FOTZ"
-        description="Digital marketing co to jest — wyjaśniamy czym jest marketing cyfrowy, jakie kanały obejmuje (SEO, Google Ads, social media) i od czego zacząć w firmie."
+        description="Digital marketing co to jest — wyjaśniamy czym jest marketing cyfrowy, jakie kanały obejmuje (SEO, reklama Google Ads, media społecznościowe) i od czego zacząć w firmie."
         canonical="https://www.fotz-studio.pl/blog/digital-marketing-co-to"
 
         keywords="Digital marketing co to jest, Digital marketing definicja, czym jest Digital marketing, Digital marketing w marketingu, Digital marketing przykłady, jak działa Digital marketing, Digital marketing strategia"
@@ -93,7 +98,7 @@ export default function BlogDigitalMarketingCoTo() {
                 <span className="flex items-center gap-1"><Globe className="w-4 h-4" /> Marketing online</span>
               </div>
               <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">
-                Digital marketing — co to jest i jak działa?
+                Digital marketing od podstaw — co to jest i jak działa?
               </h1>
               <p className="text-xl text-slate-300 leading-relaxed">
                 Digital marketing to wszystkie działania marketingowe prowadzone przez internet.
@@ -121,6 +126,42 @@ export default function BlogDigitalMarketingCoTo() {
                   );
                 })}
               </div>
+            </FadeInView>
+
+
+            <FadeInView>
+              <h2 className="text-2xl font-bold text-slate-900 mt-8 mb-4">Digital marketing od podstaw — jak zaplanować strategię digital marketingową?</h2>
+              <p className="text-slate-700 leading-relaxed mb-4">
+                Skuteczna strategia digital marketingu zaczyna się od celów biznesowych, a nie od wyboru narzędzi. Poniższy plan to fundament strategii digital marketingowej dla małej i średniej firmy. Najpierw określ, do jakich odbiorców docelowych chcesz dotrzeć i na jakim etapie procesu decyzyjnego są Twoi klienci. Dopiero potem wybierasz, w których kanałach cyfrowych się pojawisz: media społecznościowe, wyszukiwarki, e-mail marketing czy platforma wideo. W kanałach komunikacji cyfrowej każdy pełni inną rolę — jeden buduje świadomość i rozpoznawalność marki, inny napędza ruch na stronie, a jeszcze inny domyka sprzedaż.
+              </p>
+              <div className="space-y-3 mb-6">
+                {[
+                  { step: "1. Cele biznesowe i odbiorcy", text: "Zdefiniuj grupy docelowe, ich potrzeby i proces zakupowy. Strategie digital opieraj na analizie danych, nie na przeczuciach." },
+                  { step: "2. Research słów kluczowych", text: "Sprawdź, czego odbiorcy szukają w Google. Słowa kluczowe określą tematy treści i strukturę strony." },
+                  { step: "3. Wybór kanałów cyfrowych", text: "SEO i marketing w wyszukiwarkach, media społecznościowe, e-mail, content. Nie musisz być wszędzie — wygrywa trafność, nie liczba kanałów." },
+                  { step: "4. Treści i formaty", text: "Artykuł, wideo, infografika czy case study — dobry content buduje relacje z odbiorcami i pozycję eksperta." },
+                  { step: "5. Pomiar i optymalizacja", text: "Konwersja — zapytanie lub sprzedaż — to główny wskaźnik skuteczności. Śledź też koszt pozyskania klienta i zwrot z inwestycji. Elementy skutecznej strategii to testowanie i iteracja." },
+                ].map((item, idx) => (
+                  <div key={idx} className="p-4 bg-slate-50 rounded-lg border border-slate-200">
+                    <p className="font-semibold text-slate-900 text-sm mb-1">{item.step}</p>
+                    <p className="text-slate-600 text-xs leading-relaxed">{item.text}</p>
+                  </div>
+                ))}
+              </div>
+            </FadeInView>
+
+            <FadeInView>
+              <h2 className="text-2xl font-bold text-slate-900 mt-8 mb-4">Reklama płatna (PPC), pozycjonowanie i performance marketing</h2>
+              <p className="text-slate-700 leading-relaxed mb-6">
+                Marketing w wyszukiwarkach dzieli się na SEO i płatny SEM. Koszt pozycjonowania to inwestycja długoterminowa — efekty rosną miesiącami. Reklama Google Ads daje ruch od pierwszego dnia: płacisz za kliknięcie w reklamę (koszt kliknięcia zależy od konkurencji frazy), a precyzyjne targetowanie pozwala dotrzeć do potencjalnego klienta w konkretnej lokalizacji i momencie procesu zakupowego. Performance marketing łączy oba podejścia — kampanie marketingowe optymalizujesz pod mierzalny cel (sprzedaż, lead), a nie pod same wyświetlenia. Tak możesz promować produkty lub usługi z pełną kontrolą budżetu.
+              </p>
+            </FadeInView>
+
+            <FadeInView>
+              <h2 className="text-2xl font-bold text-slate-900 mt-8 mb-4">Marketing tradycyjny czy digitalowy — i co zmienia AI?</h2>
+              <p className="text-slate-700 leading-relaxed mb-6">
+                Marketing tradycyjny (prasa, radio, billboardy) wciąż pracuje na świadomość marki, ale marketing digitalowy wygrywa mierzalnością i kosztem dotarcia. Marketing manager planuje kampanie marketingowe tak, by oba światy pracowały na wspólny cel. Wykorzystanie AI w marketingu — od segmentacji opartej na analizie danych po personalizację treści — skraca czas pracy i podnosi skuteczność działań marketingowych.
+              </p>
             </FadeInView>
 
             <FadeInView>
