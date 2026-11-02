@@ -1,0 +1,52 @@
+{
+  "checkedAt": "2026-11-02T12:33:58Z",
+  "pr": "https://github.com/adam420412/fotz-studio-web-experience/pull/114",
+  "mergeCommit": "edd89c8e385a31d0fa80205c7dead2d28a3d4568",
+  "commit": "30402dd49ab3da9c354e6b4c1d48dd55461a91f7",
+  "deploymentId": "dpl_AWPyCXpSx69BMiHJ75v7WNSz4KdX",
+  "deploymentState": "READY",
+  "aliases": [
+    "www.fotz-studio.pl",
+    "fotz-studio-web-experience.vercel.app",
+    "fotz-studio.pl",
+    "fotz-studio-web-experience-fotz-studios-projects.vercel.app",
+    "fotz-studio-web-experience-git-main-fotz-studios-projects.vercel.app"
+  ],
+  "reviewer": "Claude, read-only review 2026-11-02; no content blockers; smaller mobile H1 verified",
+  "validation": {
+    "typecheck": "pass",
+    "testsPassed": 183,
+    "fullBodies": 1066,
+    "bodyErrors": 0,
+    "brokenInternalLinks": 0,
+    "mobileViewportCssWidth": 325.33,
+    "contactVariants": [
+      "social/management",
+      "web/website"
+    ],
+    "ci": "all checks green on 69e701c31e608f5106157c49f5052f47d991648f"
+  },
+  "method": "NEURONwriter evaluate_content(query, html='', url=public URL, id='main-content')",
+  "pages": [
+    {
+      "url": "https://www.fotz-studio.pl/social-media/obsluga",
+      "query": "ad8273024336717e",
+      "before": 93,
+      "score": 98
+    },
+    {
+      "url": "https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych/krakow",
+      "query": "a2eda9a5624c1dd2",
+      "before": 93,
+      "score": 96
+    }
+  ],
+  "additionalFinding": {
+    "url": "https://www.fotz-studio.pl/agencja-marketingowa/warszawa",
+    "query": "ae1756ad7ee4fb01",
+    "before": 96,
+    "after": 94,
+    "concurrentChangePR": 113,
+    "status": "P0 / WOLNE; needs 95+ again, not edited in PR114"
+  }
+}
