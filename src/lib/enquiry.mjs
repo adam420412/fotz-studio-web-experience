@@ -14,6 +14,7 @@ export const enquiryVariants = {
   campaign: 'Obsługa profili z reklamami', website: 'Nowa strona',
   redesign: 'Przebudowa istniejącej strony', shop: 'Sklep internetowy',
   configurator: 'Konfigurator produktów 3D',
+  visualization: 'Wizualizacje lub animacje 3D',
   film: 'Film dla firmy', reels: 'Rolki do social media', spot: 'Spot reklamowy',
   ad_variants: 'Warianty filmu do testu reklam',
   meta_ads: 'Kampania Facebook i Instagram', lead_ads: 'Reklamy i obsługa zapytań',

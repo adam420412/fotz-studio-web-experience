@@ -88,3 +88,12 @@ test('conversion events carry the latest reported SPA page and referrer explicit
  }
  assert.doesNotMatch(JSON.stringify(events),/private|email=|#zakres/);
 });
+
+// The rendering quote is distinct from the existing web configurator offer.
+test('3D visualization and configurator links preserve separate enquiry scopes', () => {
+ for (const [service, variant] of [['other', 'visualization'], ['web', 'configurator']]) {
+  const url = new URL(enquiryHref(service, variant), 'https://www.fotz-studio.pl');
+  assert.deepEqual(resolveEnquiryContext(url.search), {service, variant});
+  assert.equal(url.hash, '#formularz');
+ }
+});
