@@ -1,0 +1,180 @@
+{
+  "checkedAt": "2026-11-02",
+  "method": "NEURONwriter evaluate_content on public URL, id=main-content; no new analyses",
+  "pages": [
+    {
+      "url": "https://www.fotz-studio.pl/uslugi/strony-internetowe/legnica",
+      "query": "7b5e4e1c3f37191f",
+      "status": "ok",
+      "content_score": 95
+    },
+    {
+      "url": "https://www.fotz-studio.pl/agencja-marketingowa/poznan",
+      "query": "5a02ecc0a94e910d",
+      "status": "ok",
+      "content_score": 95
+    },
+    {
+      "url": "https://www.fotz-studio.pl/seo/audyt",
+      "query": "880fa6a633767168",
+      "status": "ok",
+      "content_score": 95
+    },
+    {
+      "url": "https://www.fotz-studio.pl/agencja-social-media",
+      "query": "a51d6a0db3ccc629",
+      "status": "ok",
+      "content_score": 98
+    },
+    {
+      "url": "https://www.fotz-studio.pl/uslugi/video-marketing",
+      "query": "cc667ee62260969d",
+      "status": "ok",
+      "content_score": 97
+    },
+    {
+      "url": "https://www.fotz-studio.pl/uslugi/reklama-facebook",
+      "query": "0b4d48c9ace333b8",
+      "status": "ok",
+      "content_score": 95
+    },
+    {
+      "url": "https://www.fotz-studio.pl/uslugi/strony-internetowe-dla-firm",
+      "query": "b672d2ef932a858d",
+      "status": "ok",
+      "content_score": 95
+    },
+    {
+      "url": "https://www.fotz-studio.pl/seo/pozycjonowanie-katowice",
+      "query": "8d8fb97cb2d5c0b3",
+      "status": "ok",
+      "content_score": 95
+    },
+    {
+      "url": "https://www.fotz-studio.pl/seo/pozycjonowanie-krakow",
+      "query": "a782772aa1fae671",
+      "status": "ok",
+      "content_score": 98
+    },
+    {
+      "url": "https://www.fotz-studio.pl/content-marketing/strategia",
+      "query": "be80621d8dbc76e5",
+      "status": "ok",
+      "content_score": 95
+    },
+    {
+      "url": "https://www.fotz-studio.pl/agencja-marketingowa/wroclaw",
+      "query": "7e84486c78beb0f4",
+      "status": "ok",
+      "content_score": 99
+    },
+    {
+      "url": "https://www.fotz-studio.pl/social-media/obsluga",
+      "query": "ad8273024336717e",
+      "status": "ok",
+      "content_score": 93
+    },
+    {
+      "url": "https://www.fotz-studio.pl/agencja-marketingowa/warszawa",
+      "query": "ae1756ad7ee4fb01",
+      "status": "ok",
+      "content_score": 96
+    },
+    {
+      "url": "https://www.fotz-studio.pl/performance-marketing/instagram-ads",
+      "query": "266e632b9d0606e0",
+      "status": "ok",
+      "content_score": 96
+    },
+    {
+      "url": "https://www.fotz-studio.pl/uslugi/pozycjonowanie/opole",
+      "query": "66d2bf1ff7ef3e6e",
+      "status": "ok",
+      "content_score": 95
+    },
+    {
+      "url": "https://www.fotz-studio.pl/performance-marketing/facebook-ads/warszawa",
+      "query": "d7cd2d512175cfca",
+      "status": "ok",
+      "content_score": 95
+    },
+    {
+      "url": "https://www.fotz-studio.pl/performance-marketing/facebook-ads/lodz",
+      "query": "d457b0717e855d61",
+      "status": "ok",
+      "content_score": 95
+    },
+    {
+      "url": "https://www.fotz-studio.pl/uslugi/fotografia-produktowa",
+      "query": "2887251effbdce23",
+      "status": "ok",
+      "content_score": 100
+    },
+    {
+      "url": "https://www.fotz-studio.pl/agencja-social-media/warszawa",
+      "query": "9712cb9081f26ae0",
+      "status": "ok",
+      "content_score": 96
+    },
+    {
+      "url": "https://www.fotz-studio.pl/pozycjonowanie/legnica",
+      "query": "d88558eac6d04614",
+      "status": "ok",
+      "content_score": 95
+    },
+    {
+      "url": "https://www.fotz-studio.pl/performance-marketing/linkedin-ads",
+      "query": "9d52082443fd4c35",
+      "status": "ok",
+      "content_score": 95
+    },
+    {
+      "url": "https://www.fotz-studio.pl/wizualizacje-3d",
+      "query": "ec650f6039fdedb7",
+      "status": "ok",
+      "content_score": 99
+    },
+    {
+      "url": "https://www.fotz-studio.pl/agencja-marketingowa-opole",
+      "query": "3f72d8054e6beb28",
+      "status": "ok",
+      "content_score": 95
+    },
+    {
+      "url": "https://www.fotz-studio.pl/uslugi/pozycjonowanie-lokalne",
+      "query": "2991be925c9eb1e1",
+      "status": "ok",
+      "content_score": 100
+    },
+    {
+      "url": "https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych/krakow",
+      "query": "a2eda9a5624c1dd2",
+      "status": "ok",
+      "content_score": 93
+    },
+    {
+      "url": "https://www.fotz-studio.pl/seo/techniczne",
+      "query": "32171e4dd5db46fa",
+      "status": "ok",
+      "content_score": 95
+    },
+    {
+      "url": "https://www.fotz-studio.pl/seo/pozycjonowanie-poznan",
+      "query": "3ddd4fddd51489b2",
+      "status": "ok",
+      "content_score": 99
+    },
+    {
+      "url": "https://www.fotz-studio.pl/performance-marketing/meta-ads",
+      "query": "526937fbbbde917c",
+      "status": "ok",
+      "content_score": 76
+    },
+    {
+      "url": "https://www.fotz-studio.pl/agencja-social-media/poznan",
+      "query": "25b58b733105e2f5",
+      "status": "ok",
+      "content_score": 75
+    }
+  ]
+}
