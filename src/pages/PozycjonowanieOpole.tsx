@@ -60,7 +60,7 @@ const content = {
     },
     {
       "title": "Lokalne SEO: dobór fraz dla klientów z Opola",
-      "text": "Łączymy dane z Search Console z analizą wyników wyszukiwania i wiedzą Twojego zespołu o potrzebach lokalnego rynku. Klient szukający wykonawcy lokalnej usługi ma inne potrzeby niż osoba porównująca technologie lub ceny produktów. Dlatego dobór słów kluczowych obejmuje także intencję i potencjał biznesowy. Frazy lokalne wykorzystujemy tam, gdzie lokalizacja wpływa na wybór oferty. W firmie B2B często równie ważne są zastosowania, parametry i warunki dostawy. Nie zakładamy, że każda fraza związana z Opolem ma małą konkurencję.",
+      "text": "Łączymy dane z Search Console z analizą wyników wyszukiwania i wiedzą Twojego zespołu o potrzebach lokalnego rynku. Klient szukający wykonawcy lokalnej usługi ma inne potrzeby niż osoba porównująca technologie lub ceny produktów. Dlatego dobór słów kluczowych obejmuje także intencję i potencjał biznesowy. Rynek lokalny wymaga innego doboru fraz niż sprzedaż ogólnopolska. Analizujemy, co klienci będą wyszukiwać, zanim skontaktują się z firmą. Frazy lokalne, jak „SEO Opole”, wykorzystujemy tam, gdzie lokalizacja wpływa na wybór oferty. W firmie B2B często równie ważne są zastosowania, parametry i warunki dostawy. Nie zakładamy, że każda fraza związana z Opolem ma małą konkurencję.",
       "points": [
         "Wybieramy usługi i produkty, które faktycznie chcesz sprzedawać.",
         "Przypisujemy zapytania do istniejących podstron lub uzasadnionej nowej treści.",
@@ -69,17 +69,17 @@ const content = {
     },
     {
       "title": "Audyt SEO: ocena strony przed rozpoczęciem pozycjonowania",
-      "text": "Analizujemy indeksowanie, strukturę adresów, nagłówki, linki, treści i zachowanie witryny na telefonie. Sprawdzamy, czy ważna oferta nie jest blokowana przed Google, czy nie wskazuje niewłaściwej wersji kanonicznej oraz czy stare adresy prowadzą do aktualnych podstron. Audyt SEO opisuje problem, jego znaczenie i zalecany sposób naprawy. W planie wskazujemy wykonawcę i sposób sprawdzenia poprawki. Jeśli wystarczy jednorazowa naprawa, można ustalić ją jako osobne zadanie. Stałe pozycjonowanie planujemy tam, gdzie jest uzasadniona kolejna praca.",
+      "text": "Analizujemy indeksowanie, strukturę adresów, nagłówki, linki, treści i zachowanie witryny na telefonie. Sprawdzamy, czy ważna oferta nie jest blokowana przed Google, czy nie wskazuje niewłaściwej wersji kanonicznej oraz czy stare adresy prowadzą do aktualnych podstron. Audyt SEO opisuje problem, jego znaczenie i zalecany sposób naprawy. Witryna jest oceniana pod kątem dostępności, treści i drogi do kontaktu. W planie wskazujemy wykonawcę i sposób sprawdzenia poprawki. Jeśli wystarczy jednorazowa naprawa, można ustalić ją jako osobne zadanie. Stałe pozycjonowanie planujemy tam, gdzie jest uzasadniona kolejna praca.",
       "href": "/seo/audyt",
       "link": "Zamów audyt i plan wdrożeń"
     },
     {
       "title": "Optymalizacja stron WWW i widoczność w wyszukiwarce",
-      "text": "Optymalizacja SEO obejmuje zarówno to, co widzi klient, jak i sposób udostępnienia treści wyszukiwarce. Porządkujemy tytuły stron, nagłówki, opisy wyników i linkowanie między powiązanymi usługami. Sprawdzamy, czy istotny tekst nie znika po załadowaniu strony, obrazy mają sensowne opisy, a formularz działa na małym ekranie. Przy zmianie adresów planujemy przekierowania. Poprawa szybkości ładowania ma ułatwić korzystanie z serwisu; nie przedstawiamy samego wyniku testu technicznego jako dowodu wzrostu pozycji lub sprzedaży."
+      "text": "Optymalizacja SEO obejmuje zarówno to, co widzi klient, jak i sposób udostępnienia treści wyszukiwarce. Porządkujemy tytuły stron, nagłówki, opisy wyników i linkowanie między powiązanymi usługami. Sprawdzamy, czy istotny tekst nie znika po załadowaniu strony, obrazy mają sensowne opisy, a formularz działa na małym ekranie. Przy zmianie adresów planujemy przekierowania. Poprawa szybkości ładowania ma ułatwić korzystanie z serwisu; nie przedstawiamy samego wyniku testu technicznego jako dowodu wzrostu pozycji lub sprzedaży. Wyszukiwarka Google musi bez przeszkód odczytać strukturę i treść strony. Strona internetowa powinna ułatwiać porównanie oferty i kontakt."
     },
     {
-      "title": "Pozycjonowanie lokalne w Opolu: wizytówka Google i Google Maps",
-      "text": "Pozycjonowanie lokalne jest przydatne, gdy odbiorca wybiera usługę w określonym miejscu lub z dojazdem. Na stronie opisujemy rzeczywisty zasięg działania, dostępność usługi i sposób kontaktu. Profil Firmy w Google musi odpowiadać faktycznej działalności oraz zasadom platformy. Weryfikujemy dane firmy, godziny, kategorie, zdjęcia i adres witryny. Opinie powinny pochodzić od prawdziwych klientów. Nie tworzymy fikcyjnych oddziałów, nie kupujemy opinii i nie utożsamiamy samej obecności w Mapach z wysoką pozycją strony w Google. Wizytówka Google Moja Firma to dawna nazwa dzisiejszego Profilu Firmy. W Google Maps ważne są zgodne z rzeczywistością informacje, które ułatwiają wybór usługi i kontakt. Lokalne pozycjonowanie stron łączymy z porządkiem w danych firmy. Elementem strategii lokalnego SEO jest spójność informacji na stronie i w profilu: klient powinien zobaczyć te same warunki kontaktu oraz obszar działania.",
+      "title": "Pozycjonowanie lokalne Opole: wizytówka Google i Google Maps",
+      "text": "Pozycjonowanie lokalne w Opolu jest przydatne, gdy odbiorca wybiera usługę w określonym miejscu lub z dojazdem. Na stronie opisujemy rzeczywisty zasięg działania, dostępność usługi i sposób kontaktu. Profil Firmy w Google musi odpowiadać faktycznej działalności oraz zasadom platformy. Weryfikujemy dane firmy, godziny, kategorie, zdjęcia i adres witryny. Opinie powinny pochodzić od prawdziwych klientów. Nie tworzymy fikcyjnych oddziałów, nie kupujemy opinii i nie utożsamiamy samej obecności w Mapach z wysoką pozycją strony w Google. Wizytówka Google Moja Firma to dawna nazwa dzisiejszego Profilu Firmy. W Google Maps ważne są zgodne z rzeczywistością informacje, które ułatwiają wybór usługi i kontakt. Lokalne pozycjonowanie stron łączymy z porządkiem w danych firmy. Elementem strategii lokalnego SEO jest spójność informacji na stronie i w profilu: klient powinien zobaczyć te same warunki kontaktu oraz obszar działania.",
       "points": [
         "Firma z punktem obsługi: aktualny adres, godziny i oferta właściwa dla miejsca.",
         "Usługa z dojazdem: obszar, który rzeczywiście obsługujesz, oraz warunki przyjazdu.",
@@ -101,8 +101,8 @@ const content = {
       "text": "Linki na Twojej stronie powinny pomagać przejść od odpowiedzi na pytanie do właściwej oferty, przykładu realizacji i formularza. Weryfikujemy uszkodzone odnośniki oraz przypadki, gdy wiele podobnych stron rozprasza informacje o jednej usłudze. Przy działaniach poza serwisem liczą się realne powiązania: partnerzy, publikacje branżowe i materiały, do których warto się odwołać. Link building nie oznacza masowego kupowania odnośników. Ewentualne publikacje zewnętrzne wymagają uzgodnienia celu, jakości i kosztu; nie obiecujemy stałej liczby linków jako gwarancji wyniku."
     },
     {
-      "title": "Agencja SEO: jak prowadzimy pozycjonowanie w Opolu?",
-      "text": "Zaczynamy od briefu i dostępów niezbędnych do analizy. Ustalamy najważniejsze usługi, stan witryny oraz osoby odpowiedzialne za treść i wdrożenia. Następnie przygotowujemy kolejność prac, harmonogram i sposób akceptacji. Po wdrożeniu sprawdzamy adresy, treść, formularz oraz dane o indeksowaniu. Regularna współpraca obejmuje uzgodnione zadania, kontrolę wyników i korektę priorytetów. Wiesz, co zostało wykonane i dlaczego proponujemy następny krok.",
+      "title": "Agencja SEO Opole: jak prowadzimy pozycjonowanie stron?",
+      "text": "Pozycjonowanie w Opolu zaczynamy od briefu i dostępów niezbędnych do analizy. Ustalamy najważniejsze usługi, stan witryny oraz osoby odpowiedzialne za treść i wdrożenia. Następnie przygotowujemy kolejność prac, harmonogram i sposób akceptacji. Po wdrożeniu sprawdzamy adresy, treść, formularz oraz dane o indeksowaniu. Regularna współpraca obejmuje uzgodnione zadania, kontrolę wyników i korektę priorytetów. Wiesz, co zostało wykonane i dlaczego proponujemy następny krok.",
       "points": [
         "Diagnoza: strona, dane i potrzeby biznesowe.",
         "Plan: priorytety, zakres, koszt i odpowiedzialność za wdrożenie.",
@@ -118,11 +118,11 @@ const content = {
     },
     {
       "title": "Pozycjonowanie stron Opole: wyniki i pozyskanie nowych klientów",
-      "text": "Termin pojawienia się efektów zależy m.in. od historii domeny, konkurencji, skali zmian i tego, kiedy Google ponownie przetworzy treść. Nie gwarantujemy TOP 5 ani wzrostu ruchu o określony procent. W raporcie zestawiamy wykonane prace, stan ważnych podstron, wyświetlenia, kliknięcia i dostępne informacje o konwersjach. Porównujemy odpowiednie okresy, uwzględniając sezonowość. Gdy rośnie widoczność, ale nie liczba zapytań, sprawdzamy dopasowanie fraz, ofertę i sposób kontaktu. Skuteczne pozycjonowanie stron internetowych oceniamy w kontekście celu firmy, a nie samej tabeli pozycji. Widoczność w wynikach wyszukiwania analizujemy dla konkretnych ofert i zapytań. Średnia pozycja strony w wynikach wyszukiwania nie oznacza, że każdy użytkownik widzi ją w tym samym miejscu. Raport o pozycji w wynikach czytamy razem z liczbą wyświetleń, kliknięć i kontaktów; sam wzrost widoczności strony w wyszukiwarce Google nie potwierdza sprzedaży."
+      "text": "Termin pojawienia się efektów zależy m.in. od historii domeny, konkurencji, skali zmian i tego, kiedy Google ponownie przetworzy treść. Nie gwarantujemy TOP 5 ani wzrostu ruchu o określony procent. W raporcie zestawiamy wykonane prace, stan ważnych podstron, wyświetlenia, kliknięcia i dostępne informacje o konwersjach. Porównujemy odpowiednie okresy, uwzględniając sezonowość. Gdy rośnie widoczność, ale nie liczba zapytań, sprawdzamy dopasowanie fraz, ofertę i sposób kontaktu. Skuteczne pozycjonowanie stron internetowych oceniamy w kontekście celu firmy, a nie samej tabeli pozycji. Widoczność w wynikach wyszukiwania analizujemy dla konkretnych ofert i zapytań. Średnia pozycja strony w wynikach wyszukiwania nie oznacza, że każdy użytkownik widzi ją w tym samym miejscu. Raport o pozycji w wynikach czytamy razem z liczbą wyświetleń, kliknięć i kontaktów; sam wzrost widoczności strony w wyszukiwarce Google nie potwierdza sprzedaży. O pozycjach w wynikach wyszukiwania decydują konkurencja, jakość treści i stan techniczny witryny. Zajmowaną pozycję w wynikach wyszukiwania Google raportujemy dla uzgodnionych fraz."
     },
     {
       "title": "Profesjonalny proces SEO: co należy do agencji, a co do firmy?",
-      "text": "Wybierając agencję SEO w Opolu lub zespół pracujący zdalnie, zapytaj o konkretnych wykonawców i sposób odbioru zadań. Kompleksowy zakres może łączyć analizę, optymalizację, treści i pomiar, ale każdą pozycję zapisujemy w ofercie. Firma dostarcza aktualne informacje oraz zatwierdza materiały; specjalista proponuje działania SEO i weryfikuje wdrożenia. Ustalamy też, kto odpowiada na kontakty od nowych klientów. Strategie pozycjonowania stron WWW dopasowujemy do budżetu i możliwości realizacji zmian. Kluczowa jest możliwość sprawdzenia wykonanej pracy, nie sama liczba przesłanych zaleceń. Przy pozycjonowaniu stron WWW w Opolu umawiamy osobę akceptującą treści i termin przekazania informacji o zmianach w ofercie."
+      "text": "Porównując oferty agencji SEO w Opolu lub zespołu pracującego zdalnie, zapytaj o konkretnych wykonawców i sposób odbioru zadań. Kompleksowy zakres może łączyć analizę, optymalizację, treści i pomiar, ale każdą pozycję zapisujemy w ofercie. Firma dostarcza aktualne informacje oraz zatwierdza materiały; specjalista proponuje działania SEO i weryfikuje wdrożenia. Ustalamy też, kto odpowiada na kontakty od nowych klientów. Strategie pozycjonowania stron WWW dopasowujemy do budżetu i możliwości realizacji zmian. Kluczowa jest możliwość sprawdzenia wykonanej pracy, nie sama liczba przesłanych zaleceń. Przy pozycjonowaniu stron WWW w Opolu umawiamy osobę akceptującą treści i termin przekazania informacji o zmianach w ofercie."
     },
     {
       "title": "Marketing: SEO, Google Ads, social media i odpowiedzi AI",
@@ -140,7 +140,7 @@ const content = {
   "faqs": [
     {
       "question": "Czy pozycjonujecie strony firm z Opola bez lokalnego biura?",
-      "answer": "Tak. Analizę, ustalenia, akceptacje i raportowanie możemy prowadzić online. FOTZ Studio ma siedzibę w Poznaniu. Opole jest obszarem obsługi tej oferty, a nie adresem naszego oddziału."
+      "answer": "Tak. Pozycjonowanie stron internetowych Opole i okolic prowadzimy w pełni online: analizę, ustalenia, akceptacje i raportowanie. FOTZ Studio ma siedzibę w Poznaniu. Opole jest obszarem obsługi tej oferty, a nie adresem naszego oddziału."
     },
     {
       "question": "Czy gwarantujecie wysokie pozycje w Google?",
@@ -169,7 +169,7 @@ export default function PozycjonowanieOpole() {
   return <>
     <SEOHead
       title="Pozycjonowanie Opole — pozycjonowanie stron, lokalne SEO | FOTZ"
-      description="Pozycjonowanie stron Opole: lokalne SEO, audyt i optymalizacja stron internetowych. Profesjonalny proces FOTZ — pozycjonowanie lokalne wspierające sprzedaż."
+      description="Pozycjonowanie stron Opole: lokalne SEO, audyt i optymalizacja stron internetowych. Obszar lokalny lub ogólnopolski — profesjonalny proces FOTZ."
       canonical="https://www.fotz-studio.pl/uslugi/pozycjonowanie/opole"
     />
     <ServiceEditorial {...content} />
