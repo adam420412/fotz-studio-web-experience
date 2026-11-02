@@ -6,7 +6,7 @@ const path = "/performance-marketing/meta-ads";
 const scope = [
   {
     title: "Plan kampanii Meta Ads",
-    text: "Zaczynamy od celu biznesowego: zapytania o usługę, sprzedaż w e-commerce, zapisy na wydarzenie lub do placówki edukacyjnej. Do celu dobieramy rodzaj kampanii reklamowej Meta, grupy docelowe, miejsca emisji i budżet reklamowy. Plan zapisujemy przed startem: co uznamy za wartościową konwersję, jakie dane dostarczy firma i na jakiej podstawie ocenimy wyniki kampanii. Taki zapis to plan marketingowy w pigułce: cel, kanały, budżet i miara sukcesu. Kampania reklamowa Meta Ads bez niego to zgadywanie.",
+    text: "Zaczynamy od celu biznesowego: zapytania o usługę, sprzedaż w e-commerce, zapisy na wydarzenie lub do placówki edukacyjnej. Do celu dobieramy rodzaj kampanii reklamowej Meta, grupy docelowe, miejsca emisji i budżet reklamowy. Plan zapisujemy przed startem: co uznamy za wartościową konwersję, jakie dane dostarczy firma i na jakiej podstawie ocenimy wyniki kampanii. Plan marketingowy porządkuje odpowiedzialność: kto przygotowuje materiały, zatwierdza wydatki i odpowiada na zgłoszenia.",
   },
   {
     title: "Formaty reklam w Meta Ads: Facebook i Instagram",
@@ -16,7 +16,7 @@ const scope = [
   },
   {
     title: "Konfiguracja, pomiar i optymalizacja kampanii",
-    text: "Sprawdzamy konto reklamowe w Menedżerze reklam Meta (Meta Ads Manager), zdarzenia na stronie i drogę do formularza lub zakupu. Zakres konfiguracji piksela Meta i Conversions API ustalamy po przeglądzie dostępów oraz obecnego wdrożenia. Prowadzenie kampanii Meta Ads obejmuje uzgodnione testy, analizę wydatków i wnioski. Jakość kontaktów oceniamy wspólnie z osobą, która obsługuje je w Twojej firmie. Menedżer reklam Meta to jedno centrum raportowe konta — pixel Meta i zdarzenia muszą być gotowe przed emisją.",
+    text: "Sprawdzamy konto reklamowe w Menedżerze reklam Meta (Meta Ads Manager), zdarzenia na stronie i drogę do formularza lub zakupu. Zakres konfiguracji piksela Meta i Conversions API ustalamy po przeglądzie dostępów oraz obecnego wdrożenia. Prowadzenie kampanii Meta Ads obejmuje uzgodnione testy, analizę wydatków i wnioski. Jakość kontaktów oceniamy wspólnie z osobą, która obsługuje je w Twojej firmie. Jeżeli kampania ma mierzyć działania na stronie, przed emisją sprawdzamy uzgodnione zdarzenia i potrzebne wdrożenie pomiaru. Zakres zależy od celu oraz miejsca konwersji.",
   },
 ];
 
@@ -36,7 +36,7 @@ const sections = [
 
   {
     title: "Agencja Meta Ads — czym zajmujemy się w ekosystemie Meta",
-    text: "Meta Ads to system reklamowy firmy Meta. System Meta Ads — ekosystem Meta obejmujący Facebooka, Instagrama, Messengera i Audience Network — to jedno centrum zarządzania: Meta Ads oferuje wspólny budżet i pomiar, a Meta Ads pozwala prowadzić kampanie w Meta Ads na kilku powierzchniach naraz. Kampanie na Facebooku i Instagramie planujemy jako część jednego procesu: od oferty i materiału reklamowego po kontakt z klientem. Jako agencja reklamowa odpowiadamy za uzgodnioną strukturę kampanii, kreacje, kontrolę budżetu, pomiar i wnioski. Przed startem sprawdzamy dostępne miejsca emisji oraz to, które pasują do celu i materiałów. Jeśli potrzebujesz przede wszystkim jednej platformy, określamy jej rolę w planie. Reklama Meta ma prowadzić do działania, które Twoja firma potrafi obsłużyć.",
+    text: "Meta Ads to system reklamowy firmy Meta. System Meta Ads pozwala planować emisję w różnych miejscach. Dostępne ustawienia budżetu, umiejscowień i pomiaru sprawdzamy w Menedżerze reklam dla wybranego celu. Kampanie na Facebooku i Instagramie planujemy jako część jednego procesu: od oferty i materiału reklamowego po kontakt z klientem. Jako agencja reklamowa odpowiadamy za uzgodnioną strukturę kampanii, kreacje, kontrolę budżetu, pomiar i wnioski. Przed startem sprawdzamy dostępne miejsca emisji oraz to, które pasują do celu i materiałów. Jeśli potrzebujesz przede wszystkim jednej platformy, określamy jej rolę w planie. Reklama Meta ma prowadzić do działania, które Twoja firma potrafi obsłużyć.",
     points: [
       "Facebook: szeroki zasięg, wydarzenia, formularze kontaktowe i reklamy usług lokalnych.",
       "Instagram: Reels, relacje i materiały, w których liczy się obraz oraz krótkie wideo.",
@@ -79,8 +79,8 @@ const sections = [
     link: "Obsługa social media",
   },
   {
-    title: "Meta Ads a inne platformy reklamowe: TikTok, LinkedIn, Pinterest, Allegro",
-    text: "Meta Ads to nie jedyna platforma reklamowa. TikTok Ads sprawdza się w młodszych grupach i krótkim wideo, LinkedIn Ads w kampaniach B2B, Pinterest Ads w kategoriach wizualnych, a Allegro Ads przy sprzedaży w markecie Allegro. Kampanie Ads dobieramy do odbiorcy i celu, nie do mody. Dla większości firm usługowych i sklepów Meta Ads w Polsce pozostaje jednak pierwszym kanałem — największy zasięg przy sensownym koszcie kontaktu. Jako agencja reklamowa Facebook i Instagram obsługujemy w jednym procesie, a Meta Ads w 2026 wymaga dopracowanej strony docelowej: bez niej kampanie przepalają budżet. Kompleksowa agencja powinna umieć powiedzieć, kiedy Meta Ads NIE jest właściwym kanałem.",
+    title: "Meta Ads czy inny kanał: jak zdecydować o budżecie?",
+    text: "Nie zakładamy, że Meta Ads będzie pierwszym kanałem dla każdej firmy. Przed podziałem budżetu sprawdzamy odbiorców, gotowe materiały, historię sprzedaży i sposób obsługi kontaktów. Jeśli rozważasz także TikTok Ads, LinkedIn Ads, Pinterest Ads lub Allegro Ads, wskaż cel i zasoby dla każdego kanału. Dopiero wtedy można porównać zakres pracy i koszt testu. Kampanie Ads oceniamy według tej samej definicji wartościowego kontaktu lub sprzedaży, z uwzględnieniem ograniczeń pomiaru. Obsługa Meta Ads w Polsce nie wymaga zakładania, że jedna platforma zawsze zapewni największy zasięg albo najtańszego klienta. Lepiej sprawdzić jedną ofertę i jej obsługę niż uruchamiać wiele kanałów bez danych.",
     href: "/performance-marketing/tiktok-ads",
     link: "Zobacz kampanie TikTok Ads",
   },
@@ -129,8 +129,8 @@ const faqs = [
     answer: "Uzgodniony raport obejmuje wykonane zadania, wydatki, wyniki i wnioski do dalszej pracy. Dla usług osobno pokazujemy zgłoszenia oraz ich jakość na podstawie informacji od firmy. Przychód i zwrot z inwestycji oceniamy tylko wtedy, gdy mamy odpowiednie dane. Zaznaczamy braki pomiaru i proponujemy, co poprawić, kontynuować lub zatrzymać.",
   },
   {
-    question: "Czym jest status Meta Business Partner?",
-    answer: "Status Meta Business Partner to oficjalny program firmy Meta dla agencji, które utrzymują wymagane kompetencje i wolumen kampanii. Przy wyborze agencji pytaj jednak przede wszystkim o realizacje i zakres odpowiedzialności — status Meta Business Partner nie zastępuje case study z Twojej branży.",
+    question: "Jak sprawdzić deklarowany status Meta Business Partner agencji?",
+    answer: "Jeśli agencja deklaruje status Meta Business Partner, poproś o aktualne potwierdzenie odnoszące się do tej firmy. Sama wzmianka o programie na stronie nie dowodzi uczestnictwa. FOTZ nie deklaruje tutaj takiego statusu. Naszą pracę możesz ocenić na podstawie opisanej realizacji Dawid EDU oraz uzgodnionego zakresu obsługi. Certyfikat ani doświadczenie innego klienta nie są gwarancją wyniku Twojej kampanii.",
   },
   {
     question: "Czym różni się Meta Ads od Facebook Ads?",
