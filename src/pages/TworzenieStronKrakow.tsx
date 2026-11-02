@@ -1,537 +1,88 @@
-import { SEOHead } from "@/components/seo/SEOHead";
-import { Layout } from "@/components/layout/Layout";
-import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import {
-  MapPin,
-  ArrowRight,
-  CheckCircle2,
-  Users,
-  Building2,
-  Briefcase,
-  TrendingUp,
-  Zap,
-  Globe,
-  Leaf,
-  BookOpen,
-  DollarSign
-} from "lucide-react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
-import { FadeInView } from "@/components/FadeInView";
-import { ContactSection } from "@/components/sections/ContactSection";
+import { Layout } from "@/components/layout/Layout";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
+import { ServiceWork } from "@/components/sections/ServiceWork";
+import { enquiryHref } from "@/lib/enquiry.mjs";
+
+const path = "/uslugi/tworzenie-stron-internetowych/krakow";
+const breadcrumbs = [{ label: "Strona główna", href: "/" }, { label: "Usługi", href: "/uslugi" }, { label: "Tworzenie stron", href: "/uslugi/tworzenie-stron-internetowych" }, { label: "Kraków" }];
+const packages = [
+  { title: "Nowa strona firmowa", variant: "website", description: "Dla firmy, która potrzebuje czytelnej oferty i miejsca do zbierania zapytań.", features: ["Struktura usług i indywidualny projekt graficzny", "Responsywny układ, treści i formularz kontaktowy", "Podstawy SEO i uzgodniony pomiar zapytań"], cta: "Wyceń nową stronę" },
+  { title: "Przebudowa obecnej strony", variant: "redesign", description: "Dla firmy, która ma ruch, ale użytkownicy nie znajdują oferty lub nie kontaktują się z nią.", features: ["Przegląd ścieżki klienta i obecnych podstron", "Nowy wygląd, szybsza obsługa na telefonie", "Plan zachowania adresów i przekierowań"], cta: "Omów przebudowę strony" },
+  { title: "Sklep internetowy", variant: "shop", description: "Dla marki, która chce sprzedawać produkty i uporządkować obsługę zamówień.", features: ["Kategorie, karty produktów i koszyk", "Uzgodnione płatności, dostawy i integracje", "Test zakupu i instrukcja zarządzania sklepem"], cta: "Wyceń sklep internetowy" },
+];
+const faqItems = [
+  { question: "Ile kosztuje tworzenie stron internetowych w Krakowie?", answer: "Cena zależy od liczby podstron, przygotowania treści, projektu graficznego, systemu CMS i integracji. Wycenę dzielimy na wykonanie strony oraz koszty utrzymania: domenę, hosting, licencje i opcjonalną opiekę. Prześlij adres obecnej witryny lub krótki opis firmy, a ustalimy zakres do wyceny." },
+  { question: "Ile trwa stworzenie strony internetowej?", answer: "Harmonogram ustalamy po otrzymaniu materiałów i listy funkcji. Obejmuje strukturę, projekt, wdrożenie, poprawki oraz testy. Sklep internetowy, kilka wersji językowych lub integracja z zewnętrznym systemem wymagają osobnej oceny. Przed rozpoczęciem prac uzgadniamy terminy akceptacji etapów." },
+  { question: "Czy macie biuro w Krakowie?", answer: "Obsługujemy firmy z Krakowa zdalnie: spotykamy się online, udostępniamy projekt do akceptacji i pokazujemy działający podgląd strony. Adres rejestrowy FOTZ Studio to Poznańska 117/11, 62-023 Kamionki. Termin i miejsce ewentualnego spotkania ustalamy indywidualnie." },
+  { question: "Czy mogę samodzielnie zmieniać treści na stronie?", answer: "Tak, jeśli zakres obejmuje system CMS. Ustalamy, które elementy będziesz edytować: teksty, zdjęcia, ofertę, wpisy lub produkty. Pokazujemy obsługę panelu administracyjnego i przekazujemy dostęp. Dobór WordPressa albo innego rozwiązania wynika z potrzeb projektu." },
+  { question: "Czy projektowanie strony obejmuje pozycjonowanie?", answer: "Wdrożenie może obejmować podstawy SEO: strukturę nagłówków, opisy podstron, adresy, mapę witryny i kontrolę indeksowania. Regularne pozycjonowanie stron internetowych jest osobnym zakresem. Nie gwarantujemy pozycji w Google ani określonej liczby klientów." },
+  { question: "Czy możecie odświeżyć stronę bez utraty jej adresów?", answer: "Zaczynamy od spisu istniejących podstron i ich ruchu. Zachowujemy przydatne adresy, a dla zmienianych przygotowujemy odpowiednie przekierowania. Po publikacji sprawdzamy linki i formularze oraz obserwujemy dane Search Console. Migracja wymaga kontroli także po wdrożeniu." },
+  { question: "Co przygotować do bezpłatnej wyceny?", answer: "Wystarczy opis działalności, adres obecnej strony, lista najważniejszych usług, oczekiwane funkcje i planowany termin. Jeżeli masz logo, zdjęcia, teksty lub inspiracje, wskaż je w wiadomości. Nie musisz mieć gotowej specyfikacji technicznej." },
+];
 
 export default function TworzenieStronKrakow() {
-  const krakowCities = [
-    "Kraków",
-    "Wieliczka",
-    "Tarnów",
-    "Nowy Sącz",
-    "Oświęcim",
-    "Limanowa",
-    "Bochnia",
-    "Marcinowice",
-  ];
-
-  const industries = [
-    {
-      icon: Globe,
-      title: "Turystyka i gościnność",
-      desc: "Strony dla hoteli, pensjonatów, restauracji, agencji turystycznych, atrakcji turystycznych.",
-      examples: "Rezerwacje online, galerie zdjęć, integracja z OTA (Booking.com, Airbnb)"
-    },
-    {
-      icon: BookOpen,
-      title: "Edukacja i kultura",
-      desc: "Strony dla szkół, uniwersytetów (UJ, AGH, Uniwersytet Jagielloński), galerii, muzeów.",
-      examples: "Portale uczniów, wirtualne wystawy, sprzedaż biletów"
-    },
-    {
-      icon: Building2,
-      title: "Tech i startup'y",
-      desc: "Strony dla firm technologicznych, scale-up'ów, software house'ów.",
-      examples: "Landing pages, API docs, portfolio projektów, job board"
-    },
-    {
-      icon: DollarSign,
-      title: "Nieruchomości i deweloperka",
-      desc: "Portale deweloperskie, agencje nieruchomości, inwestycje. Kraków dynamicznie się rozwija.",
-      examples: "Katalogi nieruchomości, wirtualne spacery 3D, kalkulator kredytu"
-    },
-    {
-      icon: Briefcase,
-      title: "Handel i e-commerce",
-      desc: "Sklepy online, platformy handlowe, rynki cyfrowe.",
-      examples: "Sklepy, integracje logistyczne, systemy zarządzania zapasami"
-    },
-    {
-      icon: Leaf,
-      title: "Usługi i rzemiosło",
-      desc: "Strony dla fryzjerów, kosmetyczek, stolarzów, hydraulików, elektryków.",
-      examples: "Rezerwacja wizyt online, galeria prac, cennik"
-    },
-  ];
-
-  const packages = [
-    {
-      title: "Wizytówka cyfrowa",
-      price: "Wycena indywidualna",
-      period: "jednorazowo",
-      desc: "Prosta strona dla freelancerów i małych biznesów",
-      features: [
-        "3-5 podstron",
-        "Responsywny design",
-        "Formularz kontaktowy",
-        "Podstawowe SEO",
-        "Darmowy hosting 1 rok"
-      ],
-      cta: "Sprawdź"
-    },
-    {
-      title: "Strona firmowa",
-      price: "Wycena indywidualna",
-      period: "jednorazowo",
-      desc: "Profesjonalna strona dla firmy średniej",
-      features: [
-        "Do 15 podstron",
-        "Indywidualny design",
-        "System CMS",
-        "Blog",
-        "Zaawansowane SEO",
-        "Google Analytics"
-      ],
-      cta: "Sprawdź",
-      highlight: true
-    },
-    {
-      title: "Sklep e-commerce",
-      price: "Wycena indywidualna",
-      period: "jednorazowo",
-      desc: "Pełna platforma sprzedażowa",
-      features: [
-        "Nieograniczone produkty",
-        "Płatności online",
-        "Integracja kurierska",
-        "Panel zarządzania",
-        "Marketing automation",
-        "Wsparcie przez 3 miesiące"
-      ],
-      cta: "Sprawdź"
-    },
-  ];
-
-  const processSteps = [
-    {
-      icon: "👋",
-      title: "Poznajemy się",
-      desc: "Video call o Twojej firmie, wizji, konkurencji, budżecie. Termin i miejsce ewentualnego spotkania ustalamy indywidualnie.",
-      time: "30 minut"
-    },
-    {
-      icon: "🎨",
-      title: "Projektujemy w Figma",
-      desc: "Wireframy, kolorystyka, typografia. Masz dostęp do Figma, dajesz feedback live.",
-      time: "Kolaboracja online"
-    },
-    {
-      icon: "💻",
-      title: "Kodujemy w React",
-      desc: "Wdrażamy design w React + TypeScript. Pokazujemy Ci preview na staging każdy tydzień.",
-      time: "Sprinty tygodniowe"
-    },
-    {
-      icon: "🚀",
-      title: "Szkolenie i launch",
-      desc: "Nauczamy Cię CMS-a. Wsparcie przez 30 dni. Następnie opcjonalne pakiety support.",
-      time: "Video training"
-    },
-  ];
-
-  const krakowStats = [
-    { value: "800k", label: "Mieszkańców" },
-    { value: "12M", label: "Turystów rocznie" },
-    { value: "70k+", label: "Studentów (UJ, AGH)" },
-    { value: "Druga", label: "Liczba firm w PL" },
-  ];
-
-  const faqItems = [
-    {
-      question: "Ile kosztuje strona w Krakowie?",
-      answer: "Koszt ustalamy po poznaniu zakresu: liczby podstron, treści, integracji i sposobu zarządzania. W ofercie określamy cenę, etapy, poprawki i termin; utrzymanie oraz działania marketingowe omawiamy osobno."
-    },
-    {
-      question: "Ile czasu zajmuje projekt?",
-      answer: "Wizytówka: 2-3 tygodnie. Strona firmowa: 4-8 tygodni. Sklep: 8-12 tygodni. Dla turystyki (hotele, restauracje) czasem dodajemy integracje rezerwacyjne, co wydłuża projekt."
-    },
-    {
-      question: "Czy jesteście w Krakowie stacjonarnie?",
-      answer: "Pracujemy głównie zdalnie (Zoom, Figma, Slack), ale mamy biuro w Krakowie na Kazimierzu. Jeśli chcesz spotkania na żywo - no problem, zapraszamy."
-    },
-    {
-      question: "Czy do hoteli i restauracji robicie rezerwacje online?",
-      answer: "Tak! Dla branży turystycznej integrujemy: booking engines (rezerwacje bezpośrednio ze strony), połączenie z Booking.com/Airbnb, systemy zarządzania rezerwacjami. To dodatkowy koszt, ale zwraca się szybko."
-    },
-    {
-      question: "Czy mogę sprzedawać produkty turystyczne na stronie?",
-      answer: "Oczywiście. Sklep e-commerce z integracjami logistyki (InPost, DPD, DHL), płatności online, system zarządzania zapasami. Dla turystyki: sprzedaż pamiątek, biletów, paczek doświadczeń."
-    },
-    {
-      question: "Jakie technologie dla jakich branż?",
-      answer: "WordPress dla hoteli/restauracji (najprostsza obsługa). React dla tech/startup'ów (prędkość + elastyczność). Shopify dla e-commerce (bezpieczeństwo płatności). Każdą rekomendujemy na bazie Twoich potrzeb."
-    },
-    {
-      question: "Czy strona będzie na mobilach?",
-      answer: "Zawsze. Każda strona jest responsywna - wygląda dobrze na telefonie, tablecie, laptopie. SEO Google też pyta o mobile - bez responsywności nie ma dobrych rankingów."
-    },
-    {
-      question: "Czy dostanę SEO-optimized stronę?",
-      answer: "Tak, każda strona zawiera: meta tagi, szybkość ładowania, schema markup, sitemap. Ale pozycjonowanie organiczne to proces 6-12 miesięcy. Jeśli chcesz szybko → Google Ads. Jeśli chcesz organicznie → SEO + cierpliwość + dobre artykuły."
-    },
-  ];
-
-  const breadcrumbs = [
-    { label: "Strona główna", href: "/" },
-    { label: "Usługi", href: "/uslugi" },
-    { label: "Tworzenie stron", href: "/uslugi/tworzenie-stron-internetowych" },
-    { label: "Kraków" },
-  ];
-
-  return (
-    <>
-      <SEOHead
-        title="Tworzenie stron internetowych Kraków | Profesjonalne strony WWW"
-        description="Tworzymy profesjonalne strony internetowe w Krakowie. Nowoczesne, responsywne strony dla firm. Wycena indywidualna. Bezpłatna wycena!"
-        canonical="https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych/krakow"
-        keywords="tworzenie stron internetowych kraków, strony internetowe kraków, tworzenie stron www kraków, projektowanie stron internetowych kraków, strony www kraków, sklepy internetowe kraków, projektowanie stron www kraków, agencja webdesign kraków, tworzenie stron kraków, strona internetowa kraków"
-      />
-      <ServiceSchema
-        name="Tworzenie stron internetowych Kraków"
-        description="Profesjonalne tworzenie stron internetowych dla firm z Krakowa"
-        areaServed={["PL"]}
-      />
-      <BreadcrumbSchema items={breadcrumbs} />
-
-      <Layout>
-        <PageBreadcrumbs items={breadcrumbs} />
-
-        {/* Hero */}
-        <section className="py-16 md:py-24 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
-          <div className="max-w-4xl mx-auto px-4 md:px-6">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-            >
-              <div className="flex items-center gap-2 mb-4">
-                <MapPin className="w-5 h-5 text-blue-400" />
-                <span className="text-blue-400 font-semibold">KRAKÓW</span>
-              </div>
-              <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                Tworzenie stron internetowych Kraków
-              </h1>
-              <p className="text-xl text-slate-300 mb-8 leading-relaxed">
-                Tworzenie stron internetowych Kraków — profesjonalne strony www i sklepy internetowe dla firm z Krakowa i Małopolski. Projektowanie stron internetowych Kraków z nowoczesnym designem, SEO i responsywnym kodem.
-                Strony www Kraków dla hoteli, restauracji, startupów i e-commerce. 800k mieszkańców, 12 mln turystów — tworzenie stron www Kraków. Wycena indywidualna.
-              </p>
-
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-                {krakowStats.map((stat, idx) => (
-                  <div key={idx} className="bg-slate-800 bg-opacity-50 p-4 rounded-lg">
-                    <div className="text-2xl font-bold text-blue-400">{stat.value}</div>
-                    <div className="text-sm text-slate-400">{stat.label}</div>
-                  </div>
-                ))}
-              </div>
-
-              <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
-                <Link to="/kontakt">
-                  Bezpłatna wycena <ArrowRight className="ml-2 w-5 h-5" />
-                </Link>
-              </Button>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* Coverage */}
-        <FadeInView>
-          <section className="py-16 md:py-24 bg-white">
-            <div className="max-w-5xl mx-auto px-4 md:px-6">
-              <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-                Obsługujemy całą Kraków i Małopolskę
-              </h2>
-              <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
-                Firmy z całej Małopolski pracują z nami zdalnie
-              </p>
-
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-                {krakowCities.map((city, idx) => (
-                  <motion.div
-                    key={idx}
-                    initial={{ opacity: 0, y: 10 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ delay: idx * 0.05 }}
-                    className="bg-gradient-to-br from-blue-50 to-slate-50 p-4 rounded-lg border border-blue-200 text-center"
-                  >
-                    <MapPin className="w-5 h-5 text-blue-600 mx-auto mb-2" />
-                    <p className="font-semibold text-slate-900">{city}</p>
-                  </motion.div>
-                ))}
-              </div>
-
-              <div className="mt-12 p-8 bg-blue-50 rounded-lg border border-blue-200">
-                <h3 className="font-bold text-slate-900 mb-4">Kraków — miasto turystów, studentów i tech</h3>
-                <p className="text-slate-700 mb-4">
-                  800k mieszkańców, ale 12 mln turystów rocznie. Kraków to Rynek, Wawel, Kazimierz - to magnes na turystów z całego świata.
-                  Jednocześnie: Uniwersytet Jagielloński (550 lat historii), AGH (inżynierowie), 70k+ studentów na uniwersytetach.
-                </p>
-                <p className="text-slate-700">
-                  <strong>Dodaj do tego:</strong> Google Poland, IBM, Motorola, Nokia - Kraków to również tech hub. Startup'y, software house'y, agencje digitalne.
-                  Zatem: turyści, studenci, tech. Każdy segment ma inne potrzeby, my je znamy.
-                </p>
-              </div>
-            </div>
-          </section>
-        </FadeInView>
-
-        {/* Why Krakow businesses need websites */}
-        <FadeInView>
-          <section className="py-16 md:py-24 bg-slate-50">
-            <div className="max-w-5xl mx-auto px-4 md:px-6">
-              <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-                Dlaczego krakowskie firmy potrzebują profesjonalnej strony?
-              </h2>
-
-              <div className="mt-12 grid md:grid-cols-2 gap-8">
-                <div className="bg-white p-8 rounded-lg border border-slate-200">
-                  <div className="text-3xl mb-4">🏨</div>
-                  <h3 className="font-bold text-lg text-slate-900 mb-3">Turyści szukają Cię online</h3>
-                  <p className="text-slate-700 mb-4">
-                    12 mln turystów rocznie szuka hotelu, restauracji, atrakcji na Google, Booking, TripAdvisor.
-                  </p>
-                  <p className="text-slate-700 font-semibold text-blue-600">
-                    Bez strony internetowej lub slabej strony = zero rezerwacji.
-                  </p>
-                </div>
-
-                <div className="bg-white p-8 rounded-lg border border-slate-200">
-                  <div className="text-3xl mb-4">🎓</div>
-                  <h3 className="font-bold text-lg text-slate-900 mb-3">Studenci szukają pracy</h3>
-                  <p className="text-slate-700 mb-4">
-                    70k+ studentów szuka staży i pracy. Pierwsza rzecz? Google, LinkedIn, Twoja strona.
-                  </p>
-                  <p className="text-slate-700 font-semibold text-blue-600">
-                    Dobra strona + careers page = najlepsi kandydaci.
-                  </p>
-                </div>
-
-                <div className="bg-white p-8 rounded-lg border border-slate-200">
-                  <div className="text-3xl mb-4">💻</div>
-                  <h3 className="font-bold text-lg text-slate-900 mb-3">Tech ecosystem = współpraca B2B</h3>
-                  <p className="text-slate-700 mb-4">
-                    Google, IBM, Motorola, Nokia - wielkie firmy szukają dostawców usług lokalnie.
-                  </p>
-                  <p className="text-slate-700 font-semibold text-blue-600">
-                    Portfolio na stronie = kontakt z korporacjami.
-                  </p>
-                </div>
-
-                <div className="bg-white p-8 rounded-lg border border-slate-200">
-                  <div className="text-3xl mb-4">📊</div>
-                  <h3 className="font-bold text-lg text-slate-900 mb-3">Dane real-time o Twoich klientach</h3>
-                  <p className="text-slate-700 mb-4">
-                    Bez strony = bez Google Analytics, bez danych o klientach, bez informacji o tym co działa.
-                  </p>
-                  <p className="text-slate-700 font-semibold text-blue-600">
-                    Strona + GA4 = data-driven decyzje biznesowe.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-        </FadeInView>
-
-        {/* Industries */}
-        <FadeInView>
-          <section className="py-16 md:py-24 bg-white">
-            <div className="max-w-5xl mx-auto px-4 md:px-6">
-              <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-                Branże, które obsługujemy w Krakowie
-              </h2>
-              <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
-                Kraków to różne światów. My pracujemy w każdym z nich.
-              </p>
-
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {industries.map((industry, idx) => {
-                  const Icon = industry.icon;
-                  return (
-                    <FadeInView key={idx} delay={idx * 0.05}>
-                      <div className="bg-slate-50 p-8 rounded-lg border border-slate-200">
-                        <Icon className="w-10 h-10 text-blue-600 mb-4" />
-                        <h3 className="text-lg font-bold text-slate-900 mb-2">{industry.title}</h3>
-                        <p className="text-slate-700 text-sm mb-4">{industry.desc}</p>
-                        <div className="text-sm text-blue-600 bg-blue-50 p-3 rounded border border-blue-200">
-                          <strong>Przykład:</strong> {industry.examples}
-                        </div>
-                      </div>
-                    </FadeInView>
-                  );
-                })}
-              </div>
-            </div>
-          </section>
-        </FadeInView>
-
-        {/* Packages */}
-        <FadeInView>
-          <section className="py-16 md:py-24 bg-slate-50">
-            <div className="max-w-5xl mx-auto px-4 md:px-6">
-              <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-                Pakiety dla krakowskich firm
-              </h2>
-              <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
-                Od hotelika do tech startupu. Każdy pakiet zawiera wsparcie i szkolenie.
-              </p>
-
-              <div className="grid md:grid-cols-3 gap-8">
-                {packages.map((pkg, idx) => (
-                  <motion.div
-                    key={idx}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ delay: idx * 0.1 }}
-                    className={`rounded-lg p-8 ${
-                      pkg.highlight
-                        ? "bg-gradient-to-br from-blue-600 to-blue-700 text-white border-2 border-blue-400 transform scale-105"
-                        : "bg-white border border-slate-200 text-slate-900"
-                    }`}
-                  >
-                    <h3 className="text-xl font-bold mb-2">{pkg.title}</h3>
-                    <div className="mb-6">
-                      <div className={`text-3xl font-bold ${pkg.highlight ? "text-white" : "text-blue-600"}`}>
-                        {pkg.price}
-                      </div>
-                      <div className={`text-sm ${pkg.highlight ? "text-blue-100" : "text-slate-500"}`}>
-                        {pkg.period}
-                      </div>
-                    </div>
-                    <p className={`mb-6 text-sm ${pkg.highlight ? "text-blue-100" : "text-slate-600"}`}>
-                      {pkg.desc}
-                    </p>
-                    <ul className="space-y-3 mb-8">
-                      {pkg.features.map((feature, i) => (
-                        <li key={i} className="flex items-start gap-2 text-sm">
-                          <CheckCircle2 className={`w-4 h-4 flex-shrink-0 mt-0.5 ${
-                            pkg.highlight ? "text-white" : "text-blue-600"
-                          }`} />
-                          <span>{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                    <Button asChild
-                      className={`w-full ${
-                        pkg.highlight
-                          ? "bg-white text-blue-600 hover:bg-slate-100"
-                          : "bg-blue-600 text-white hover:bg-blue-700"
-                      }`}
-                    ><a href="/kontakt">
-                      {pkg.cta} <ArrowRight className="ml-2 w-4 h-4" />
-                    </a></Button>
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-          </section>
-        </FadeInView>
-
-        {/* Process */}
-        <FadeInView>
-          <section className="py-16 md:py-24 bg-white">
-            <div className="max-w-5xl mx-auto px-4 md:px-6">
-              <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-                Jak pracujemy z krakowskimi firmami?
-              </h2>
-              <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
-                Głównie zdalnie. Ale jeśli chcesz spotkania w biurze na Kazimierzu - jesteśmy dostępni.
-              </p>
-
-              <div className="space-y-8">
-                {processSteps.map((step, idx) => (
-                  <motion.div
-                    key={idx}
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.5, delay: idx * 0.1 }}
-                    className="flex gap-6"
-                  >
-                    <div className="text-4xl flex-shrink-0">{step.icon}</div>
-                    <div className="flex-grow pt-2">
-                      <div className="flex items-center gap-2 mb-2">
-                        <h3 className="text-lg font-bold text-slate-900">{step.title}</h3>
-                        <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">
-                          {step.time}
-                        </span>
-                      </div>
-                      <p className="text-slate-700">{step.desc}</p>
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
-
-              <div className="mt-12 p-8 bg-green-50 border border-green-200 rounded-lg">
-                <h3 className="font-bold text-green-900 mb-4 flex items-center gap-2">
-                  <CheckCircle2 className="w-6 h-6" />
-                  Efekt: Krakowska strona, której możesz być dumny
-                </h3>
-                <p className="text-green-900">
-                  Kraków to miasto z historią, z charakterem. My tworzymy strony, które odbijają to - piękne, nowoczesne, ale z duszą.
-                  Lokalnie zoptymalizowane pod SEO, integracje z lokalnymi systemami rezerwacji (jeśli potrzeba), wsparcie w jaki znamy Kraków.
-                </p>
-              </div>
-            </div>
-          </section>
-        </FadeInView>
-
-        {/* FAQ */}
-        <FadeInView>
-          <section className="py-16 md:py-24 bg-slate-50">
-            <div className="max-w-3xl mx-auto px-4 md:px-6">
-              <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-                Odpowiadamy na Wasze pytania
-              </h2>
-              <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
-                Najczęstsze pytania od krakowskich firm
-              </p>
-
-              <FAQSchema items={faqItems} />
-
-              <Accordion type="single" collapsible className="w-full bg-white rounded-lg">
-                {faqItems.map((item, idx) => (
-                  <AccordionItem key={idx} value={`item-${idx}`}>
-                    <AccordionTrigger className="text-left px-6">
-                      <span className="font-semibold text-slate-900">{item.question}</span>
-                    </AccordionTrigger>
-                    <AccordionContent className="text-slate-700 px-6 leading-relaxed">
-                      {item.answer}
-                    </AccordionContent>
-                  </AccordionItem>
-                ))}
-              </Accordion>
-            </div>
-          </section>
-        </FadeInView>
-
-        {/* CTA */}
-        <ContactSection
-        />
-      </Layout>
-    </>
-  );
+  return <>
+    <SEOHead title="Tworzenie stron internetowych Kraków — projektowanie WWW" description="Tworzenie stron WWW Kraków. Projektowanie stron internetowych dla firm z Krakowa: profesjonalny projekt, CMS i SEO. Zobacz portfolio i zapytaj o wycenę." canonical={`https://www.fotz-studio.pl${path}`} />
+    <ServiceSchema name="Tworzenie stron internetowych Kraków" description="Projektowanie i wdrażanie stron WWW oraz sklepów dla firm z Krakowa. Współpraca zdalna." areaServed={["Kraków", "Małopolska"]} />
+    <BreadcrumbSchema items={breadcrumbs} />
+    <FAQSchema items={faqItems} />
+    <Layout workPlacement="manual">
+      <PageBreadcrumbs items={breadcrumbs} />
+      <section className="py-16 md:py-24 border-b border-border bg-muted/20">
+        <div className="container-wide px-6 md:px-12 max-w-5xl">
+          <p className="dv-eyebrow mb-5">Dla firm z Krakowa i Małopolski · współpraca zdalna</p>
+          <h1 className="font-heading text-4xl md:text-6xl leading-tight mb-6">Tworzenie stron internetowych Kraków — projektowanie dla firm</h1>
+          <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mb-5">Klient ma od razu wiedzieć, co oferujesz, zobaczyć Twoje realizacje i łatwo wysłać zapytanie. Projektujemy strony internetowe, które prowadzą go przez te kroki — na telefonie i komputerze.</p>
+          <p className="text-muted-foreground leading-relaxed max-w-3xl mb-8">W FOTZ Studio łączymy projektowanie stron WWW, treści, wdrożenie i podstawy SEO. Możemy stworzyć nową stronę, uporządkować istniejący serwis lub przygotować sklep internetowy. Zacznijmy od Twojej oferty i celu biznesowego.</p>
+          <div className="flex flex-wrap gap-3 mb-6"><Link to={enquiryHref("web", "website")} className="dv-btn dv-btn-primary">Wyceń stronę dla firmy <ArrowRight className="w-4 h-4" aria-hidden="true" /></Link><a href="#realizacje-uslugi" className="dv-btn dv-btn-secondary">Zobacz nasze realizacje</a></div>
+          <p className="text-sm text-muted-foreground">Tworzenie stron WWW dla firm w Krakowie i okolicy. Na początek wystarczą adres strony lub opis działalności i planowany termin. Bezpłatna wycena nie zobowiązuje do zamówienia.</p>
+        </div>
+      </section>
+      <ServiceWork path={path} />
+      <section className="py-14 md:py-20 bg-muted/20"><div className="container-wide px-6 md:px-12 max-w-5xl">
+        <h2 className="text-3xl md:text-4xl font-heading mb-5">Strona internetowa dla Twojej firmy z Krakowa — cennik i wycena</h2>
+        <p className="text-muted-foreground leading-relaxed mb-4">Cennik bez ustalonego zakresu nie pozwala porównać ofert. Prosta wizytówka ma inne wymagania niż serwis z katalogiem produktów. Na wycenę wpływają liczba widoków, przygotowanie tekstów, wersje językowe, dedykowane funkcje i integracje. W ofercie określamy kwoty netto, podatki, etapy płatności i liczbę rund poprawek, aby było jasne, co obejmuje cena.</p>
+        <h3 className="text-2xl font-heading mt-7 mb-3">Domena i hosting po publikacji</h3>
+        <p className="text-muted-foreground leading-relaxed mb-4">Domena jest adresem Twojej witryny, a hosting zapewnia miejsce na jej pliki i działanie. Omawiamy własność domeny, dostępy, serwery, kopie zapasowe oraz koszt odnowień i licencji. Wykonana strona powinna mieć ustaloną osobę odpowiedzialną za aktualizacje. Utrzymanie rozliczamy odrębnie od wykonania projektu, zgodnie z uzgodnioną ofertą.</p>
+        <h3 className="text-2xl font-heading mt-7 mb-3">Szablon czy indywidualny projekt strony — web design?</h3>
+        <p className="text-muted-foreground leading-relaxed">Szablon może wystarczyć przy prostym zakresie. Indywidualny projekt graficzny daje większą swobodę w prezentacji usług i pomaga uporządkować nietypową ofertę. Jako agencja najpierw sprawdzamy, czego potrzebujesz w Twojej firmie, a potem rekomendujemy rozwiązanie. Jeżeli szukasz partnera biznesowego do dłuższej współpracy, ustalimy także zasady wsparcia po uruchomieniu.</p>
+      </div></section>
+      <section className="py-14 md:py-20">
+        <div className="container-wide px-6 md:px-12">
+          <h2 className="text-3xl md:text-4xl font-heading mb-5">Oferta: strony internetowe i sklepy dla firm z Krakowa</h2>
+          <p className="text-muted-foreground max-w-3xl mb-8">Nie każda firma potrzebuje rozbudowanego serwisu. Dobieramy funkcjonalność do tego, jak klient podejmuje decyzję: wysyła formularz, rezerwuje rozmowę czy składa zamówienie. Koszt i zakres potwierdzamy przed rozpoczęciem prac.</p>
+          <div className="grid lg:grid-cols-3 gap-6">{packages.map(pkg => <article key={pkg.variant} className="rounded-2xl border border-border bg-card p-6 flex flex-col">
+            <h3 className="text-2xl font-heading mb-3">{pkg.title}</h3><p className="text-muted-foreground mb-5">{pkg.description}</p>
+            <ul className="space-y-3 mb-6 flex-1">{pkg.features.map(feature => <li key={feature} className="flex gap-2"><CheckCircle2 className="w-5 h-5 shrink-0 text-primary mt-0.5" aria-hidden="true" /><span>{feature}</span></li>)}</ul>
+            <p className="font-semibold mb-4">Wycena indywidualna</p><Link to={enquiryHref("web", pkg.variant)} className="dv-btn dv-btn-secondary">{pkg.cta}</Link>
+          </article>)}</div>
+        </div>
+      </section>
+      <section className="py-14 md:py-20 bg-muted/20 border-y border-border">
+        <div className="container-wide px-6 md:px-12 max-w-5xl space-y-10">
+          <div><h2 className="text-3xl md:text-4xl font-heading mb-5">Projektowanie stron WWW od potrzeb Twojego klienta</h2><p className="text-muted-foreground leading-relaxed">Nowoczesna strona WWW odpowiada na pytania przed pierwszą rozmową. Co dokładnie kupuję? Dla kogo jest ta usługa? Jak wygląda współpraca i od czego zależy cena? Dlatego projekt strony internetowej zaczynamy od oferty, a następnie układamy nawigację, podstrony usług, realizacje i kontakt. Projekt graficzny ma ułatwiać zrozumienie tych informacji oraz budować spójny wizerunek marki.</p></div>
+          <div className="grid md:grid-cols-2 gap-8"><div><h3 className="text-2xl font-heading mb-3">Treści, zdjęcia i dowody wykonanej pracy</h3><p className="text-muted-foreground leading-relaxed">Pomagamy uporządkować opis firmy i usług, dobrać zdjęcia oraz pokazać portfolio. W naszych realizacjach znajdziesz między innymi stronę RPPG Group i projekty dla różnych branż. Jeżeli brakuje Ci materiałów, możemy osobno zaplanować fotografię lub film. Nie trzeba zastępować własnej pracy przypadkowymi zdjęciami z banku.</p></div><div><h3 className="text-2xl font-heading mb-3">Formularz i pomiar zapytań</h3><p className="text-muted-foreground leading-relaxed">Dopasowujemy formularz do rodzaju usługi. Ustalamy, gdzie mają trafiać wiadomości i jakie informacje są potrzebne do rozmowy handlowej. Integrację z CRM oraz analitykę uzgadniamy w zakresie projektu. Google Analytics może pomóc mierzyć zachowanie na Twojej stronie, przy uzgodnionej konfiguracji zgód i zasad przetwarzania danych osobowych. Kliknięcie przycisku kontaktu, wysłany formularz i pozyskanie nowych klientów to osobne zdarzenia — warto je rozróżniać od początku.</p></div></div>
+          <div><h2 className="text-3xl font-heading mb-5">Responsywne strony WWW na urządzenia mobilne i CMS WordPress</h2><p className="text-muted-foreground leading-relaxed mb-4">Tworzymy responsywne strony, dopasowane do urządzeń mobilnych. Sprawdzamy czytelność tekstu, menu, przyciski, zdjęcia i działanie formularzy na różnych szerokościach ekranu. Optymalizacja szybkości ładowania obejmuje m.in. rozmiary obrazów i sposób ładowania materiałów. Nowoczesne strony internetowe powinny być przyjazne dla użytkownika. Responsywność i intuicyjny układ są kluczowe, gdy potencjalny klient porównuje ofertę na telefonie. W kontroli responsywnych stron internetowych uwzględniamy także Core Web Vitals, aby wskazać, co warto zoptymalizować.</p><p className="text-muted-foreground leading-relaxed">Strony WordPress pozwalają zarządzać treścią przez panel CMS, a indywidualne rozwiązanie może lepiej pasować do nietypowych funkcji. Wybór technologii uzależniamy od potrzeb, budżetu i sposobu aktualizowania witryny. Przy sklepie omawiamy również produkty, płatności, dostawy i integracje. <Link className="underline underline-offset-4" to="/uslugi/sklepy-internetowe/krakow">Zobacz zakres tworzenia sklepów internetowych dla firm z Krakowa.</Link></p></div>
+          <div><h2 className="text-3xl font-heading mb-5">Pozycjonowanie stron internetowych — SEO po wdrożeniu</h2><p className="text-muted-foreground leading-relaxed mb-4">Projektowanie i tworzenie stron internetowych powinno uwzględniać to, jak odbiorcy szukają oferty. Przygotowujemy logiczną strukturę serwisu, tytuły i opisy podstron, nagłówki oraz linkowanie wewnętrzne. Uzgadniamy konfigurację Google Search Console i kontrolę indeksowania. Optymalizacja dla wyszukiwarek internetowych pomaga uporządkować te elementy przed dalszym pozycjonowaniem strony.</p><p className="text-muted-foreground leading-relaxed">SEO to dłuższa praca nad treścią, techniką i wiarygodnością. Samo stworzenie strony WWW nie gwarantuje wysokiej pozycji ani zapytań. Dla firm z Krakowa, które chcą rozwijać ruch organiczny, przygotowujemy osobny zakres <Link to="/seo/pozycjonowanie-krakow" className="underline underline-offset-4">pozycjonowania stron</Link>. Kampanie reklamowe można połączyć ze stroną docelową i pomiarem kontaktów.</p></div>
+        </div>
+      </section>
+      <section className="py-14 md:py-20"><div className="container-wide px-6 md:px-12 max-w-5xl">
+        <h2 className="text-3xl md:text-4xl font-heading mb-6">Projektowanie i tworzenie stron internetowych — etapy</h2>
+        <ol className="grid md:grid-cols-2 gap-6">{[
+          ["1. Rozmowa i zakres", "Poznajemy Twoją firmę, klientów, ofertę i oczekiwane funkcje. Ustalamy listę podstron, materiały, budżet, odpowiedzialność za treści i termin. Otrzymujesz zakres do akceptacji."],
+          ["2. Struktura i projekt", "Układamy ścieżkę użytkownika i przygotowujemy projekt graficzny. Omawiamy wygląd strony, hierarchię informacji i wersję mobilną. Uwagi zbieramy przed wdrożeniem zaakceptowanego projektu."],
+          ["3. Wdrożenie i testy", "Budujemy stronę, wprowadzamy treści i konfigurujemy uzgodnione funkcje. Sprawdzamy formularze, linki, obsługę na telefonie i podstawy SEO. Testowe zapytanie wykonujemy po uzgodnieniu odbiorcy."],
+          ["4. Publikacja i przekazanie", "Po akceptacji publikujemy serwis i przekazujemy dostępy oraz instrukcję obsługi. Ustalamy zasady aktualizacji, kopii zapasowych i wsparcia technicznego. Dalsza opieka może być osobnym zakresem."],
+        ].map(([title, text]) => <li key={title} className="border border-border rounded-2xl p-6"><h3 className="font-heading text-xl mb-3">{title}</h3><p className="text-muted-foreground leading-relaxed">{text}</p></li>)}</ol>
+        <p className="mt-6 text-muted-foreground">Współpraca z firmami z Krakowa, Wieliczki i pozostałych miejscowości Małopolski może odbywać się online. Nie musisz przyjeżdżać do biura, aby omówić projekt i zaakceptować kolejne etapy.</p>
+      </div></section>
+      <section className="py-14 md:py-20 border-t border-border"><div className="container-wide px-6 md:px-12 max-w-5xl"><h2 className="text-3xl font-heading mb-5">Jak wybrać agencję do projektowania stron internetowych w Krakowie?</h2><p className="text-muted-foreground leading-relaxed">Sprawdź portfolio, zakres odpowiedzialności i sposób odbioru prac. Profesjonalny wykonawca powinien wyjaśnić, co obejmuje projektowanie i tworzenie stron WWW, kto przygotowuje materiały oraz jak rozliczane są zmiany. Poproś o przykład responsywnej strony, zobacz menu i formularz na telefonie. Strona główna powinna kierować do konkretnych usług, a podstrony odpowiadać na pytania potencjalnego klienta. Funkcjonalne strony łączą te elementy z łatwym zarządzaniem treścią. Tak samo ustalamy zakres współpracy z FOTZ Studio.</p></div></section>
+      <section className="py-14 md:py-20 bg-muted/20"><div className="container-wide px-6 md:px-12 max-w-5xl"><h2 className="text-3xl md:text-4xl font-heading mb-8">Tworzenie stron WWW w Krakowie — pytania przed wyceną</h2><div className="space-y-4">{faqItems.map(item => <details key={item.question} className="rounded-xl border border-border bg-card p-5"><summary className="cursor-pointer font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary">{item.question}</summary><p className="text-muted-foreground leading-relaxed mt-4">{item.answer}</p></details>)}</div></div></section>
+      <section className="py-14 md:py-20"><div className="container-wide px-6 md:px-12 max-w-4xl text-center"><h2 className="text-3xl md:text-4xl font-heading mb-5">Stworzenie strony internetowej dla Twojej firmy z Krakowa</h2><p className="text-muted-foreground text-lg leading-relaxed mb-7">Chcesz stworzyć stronę lub poprawić obecny serwis? Wyślij jego adres albo napisz, co sprzedajesz, kto jest Twoim klientem i kiedy chcesz rozpocząć. Dobierzemy zakres projektu i przygotujemy wycenę.</p><Link to={enquiryHref("web", "website")} className="dv-btn dv-btn-primary">Zapytaj o stronę internetową <ArrowRight aria-hidden="true" className="w-4 h-4" /></Link><p className="mt-5 text-sm"><a href="tel:+48790814814" className="underline underline-offset-4">+48 790 814 814</a><span className="mx-3">·</span><a href="mailto:adam@fotz.pl" className="underline underline-offset-4">adam@fotz.pl</a></p></div></section>
+    </Layout>
+  </>;
 }

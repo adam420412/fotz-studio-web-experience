@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-02",
+  "source": "Windsor.ai / Google Search Console",
+  "property": "sc-domain:fotz-studio.pl",
+  "period": {
+    "from": "2026-10-03",
+    "to": "2026-10-30"
+  },
+  "pages": [
+    {
+      "path": "/uslugi/tworzenie-stron-internetowych/krakow",
+      "impressions": 344,
+      "clicks": 0,
+      "queryId": "a2eda9a5624c1dd2",
+      "neuronBefore": 58,
+      "neuronRenderedDraft": 96
+    },
+    {
+      "path": "/wizualizacje-3d",
+      "impressions": 72,
+      "clicks": 0,
+      "queryId": "ec650f6039fdedb7",
+      "neuronBefore": 70,
+      "neuronRenderedDraft": 99
+    }
+  ],
+  "claudeReview": {
+    "app": "Claude Desktop",
+    "conversation": "Przegląd przed wdrożeniem FOTZ",
+    "verdict": "Brak blockerów",
+    "notes": [
+      "Existing 3D prices kept and described as indicative, not independently confirmed.",
+      "known-routes generatedAt-only diff excluded.",
+      "Website quotes use unified /kontakt form; no production test lead submitted."
+    ]
+  },
+  "checks": {
+    "tests": 180,
+    "typecheck": "pass",
+    "renderedPages": 1068,
+    "headErrors": 0,
+    "brokenInternalLinks": 0,
+    "production": "pending"
+  },
+  "measurement": "A content score is not proof of rankings or enquiries. Compare the same pages and queries after recrawl, and actual CRM receipts separately."
+}
