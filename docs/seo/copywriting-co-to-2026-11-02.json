@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-02",
+  "url": "https://www.fotz-studio.pl/blog/copywriting-co-to",
+  "source": "src/pages/BlogCopywritingCoTo.tsx",
+  "branch": "swarm/blog-copywriting-20261102",
+  "baseCommit": "b38292e114ff8f51407c4fc9921dcc7c43f9b1a0",
+  "gsc": {
+    "period": {
+      "from": "2026-10-03",
+      "to": "2026-10-30"
+    },
+    "urlMetrics": {
+      "impressions": 87,
+      "clicks": 0,
+      "averagePosition": 30.023
+    },
+    "globalQuery": {
+      "query": "copywriter",
+      "impressions": 6,
+      "averagePosition": 20.0,
+      "scope": "Global query data supplied for the analysis; these figures were not automatically attributed to this URL."
+    }
+  },
+  "neuronWriter": {
+    "query": "dea1d49ae773cbf2",
+    "keyword": "copywriting co to",
+    "newAnalysesCreated": 0,
+    "productionBaseline": 55,
+    "baselineMethod": "Production evaluate-content request for the target URL with id=main-content, supplied in analysis/neuron/evaluation-dea1d49ae773cbf2.json before the rewrite.",
+    "iterations": [
+      {
+        "iteration": 1,
+        "score": 83,
+        "scope": "Complete practical-guide rewrite covering definition, text types, audience intent, offer structure, headings, CTA, SEO, research-draft-editing-test workflow, examples without invented results, query measurement and FAQ; unsupported statistics and conversion promises removed."
+      },
+      {
+        "iteration": 2,
+        "score": 83,
+        "scope": "Native details/summary FAQ added so every visible answer is present in prerendered HTML; natural missing terminology added and unnecessary repetition reduced."
+      },
+      {
+        "iteration": 3,
+        "score": 89,
+        "scope": "H1 and H2 alignment with the saved recommendations, including copywriter role and process; remaining missing content phrases added without new sections or claims."
+      },
+      {
+        "iteration": 4,
+        "score": 95,
+        "scope": "Final bounded metadata correction with copywriting, copywriter and definition in title, plus two safe duplicate-term reductions; final title and description supplied to evaluate-content."
+      }
+    ],
+    "final": 95,
+    "target": 95,
+    "recommendedWordCount": 1304,
+    "finalRenderedMainWords": 1596,
+    "wordCountMethod": "Unicode word tokens in the visible text of main#main-content after removing script/style elements and HTML tags; this is a local verification count, not a NeuronWriter metric.",
+    "method": "evaluate-content through neuron_client.py evaluate-html; outerHTML of main#main-content extracted from final dist/blog/copywriting-co-to/index.html; final title and description supplied explicitly.",
+    "scopeComparison": "The 55 baseline used the public URL and main-content. The final 95 measurement used the same semantic container from the local production prerender, excluding navigation and footer. The content scope is comparable, while the measurement environment differs.",
+    "container": {
+      "selector": "main#main-content",
+      "occurrences": 1,
+      "htmlCharacters": 37568,
+      "duplicateIds": [],
+      "uniqueIdCount": 22,
+      "verified": true
+    }
+  },
+  "metadata": {
+    "title": "Copywriting i copywriter — co to jest? Definicja | FOTZ",
+    "titleLength": 55,
+    "description": "Copywriting: definicja, rodzaje tekstów, SEO i praca copywritera w marketingu. Zobacz nagłówki, CTA, przykłady przed i po oraz pomiar zapytań.",
+    "descriptionLength": 142,
+    "canonical": "https://www.fotz-studio.pl/blog/copywriting-co-to",
+    "h1": "Copywriting — co to jest? Kim jest copywriter i jak pracuje?",
+    "h1Count": 1
+  },
+  "renderedContract": {
+    "selfCanonical": true,
+    "articleSchemaUrl": "https://www.fotz-studio.pl/blog/copywriting-co-to",
+    "articleSchemaId": "https://www.fotz-studio.pl/blog/copywriting-co-to",
+    "articleDescriptionMatchesMetadata": true,
+    "faqQuestions": 6,
+    "visibleFaqMatchesSchema": true,
+    "prerenderedNativeFaqItems": 6,
+    "serviceLinks": [
+      "/seo/copywriting-seo",
+      "/content-marketing/copywriting-landing"
+    ],
+    "contactLink": "/kontakt?usluga=seo#formularz",
+    "linkedLocalPrerendersExist": true,
+    "duplicateIds": []
+  },
+  "checks": {
+    "npmCi": "passed",
+    "typecheck": "passed",
+    "targetedTests": "20/20 passed: live-blog 7/7, direct copywriting contract 5/5, seo-metadata 3/3 and structured-data 5/5",
+    "liveBlogRender": "passed after final build",
+    "build": "passed; 1066 prerendered pages, 1064 full page bodies, 0 body errors",
+    "htmlContract": "passed; one H1, self-canonical, title 55 characters, description 142 characters, one main-content and 22 unique IDs with no duplicates; Article and FAQ schema verified against final HTML",
+    "diffCheck": "passed",
+    "buildArtifactsExcluded": "known-routes.json restored after prerender; dist, .ssr and temporary evaluation files were not staged"
+  },
+  "files": [
+    "src/pages/BlogCopywritingCoTo.tsx",
+    "scripts/blog-copywriting-co-to.test.mjs",
+    "docs/seo/copywriting-co-to-2026-11-02.json"
+  ],
+  "notes": [
+    "Content score evaluates the rendered guide against the existing NeuronWriter analysis; it does not prove indexing, rankings, clicks, enquiries or sales.",
+    "No changes were made to App.tsx, sitemaps, ai-work-register.csv, environment files, other pages or shared components."
+  ]
+}
