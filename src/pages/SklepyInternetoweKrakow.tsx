@@ -1,570 +1,155 @@
 import { SEOHead } from "@/components/seo/SEOHead";
-import { Layout } from "@/components/layout/Layout";
-import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import {
-  ArrowRight, ShoppingCart, CreditCard, Truck, BarChart3, Settings,
-  CheckCircle2, MapPin, Globe, Smartphone, Zap, Shield,
-  Users, TrendingUp, Code, Building2
-} from "lucide-react";
-import { ServiceSchema, BreadcrumbSchema, FAQSchema, OrganizationSchema} from "@/components/seo/StructuredData";
+import { ServiceEditorial } from "@/components/ServiceEditorial";
 
-const fadeIn = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" as const } }
-};
+const path = "/uslugi/sklepy-internetowe/krakow";
+const pageTitle = "Sklep internetowy Kraków — projektowanie i wdrożenie";
+const seoTitle = "Sklep internetowy Kraków — tworzenie | FOTZ";
+const seoDescription = "Sklep internetowy Kraków: projekt, wdrożenie, płatności, integracje, SEO techniczne i analityka. Sprawdź zakres prac i warunki bezpłatnej wyceny FOTZ.";
+const canonicalUrl = "https://www.fotz-studio.pl/uslugi/sklepy-internetowe/krakow";
 
-const staggerContainer = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { staggerChildren: 0.1 } }
-};
-
-const platforms = [
-  {
-    name: "Shopify",
-    desc: "Najszybszy sposób na uruchomienie sprzedaży online. Gotowa infrastruktura, bezpieczeństwo i skalowalność w abonamencie. Idealny dla firm chcących szybko testować rynek i pozyskiwać nowych klientów.",
-    ideal: "Startupy, fashion, D2C, sklepy z ekspansją za granicę"
-  },
-  {
-    name: "WooCommerce",
-    desc: "Sklep na bazie WordPress — pełna elastyczność i kontrola nad kodem. Świetnie integruje się z istniejącym content marketingiem i SEO. Dobry wybór przy tworzeniu stron i sklepów internetowych na jednej platformie.",
-    ideal: "MŚP, sklepy 100–10 000 SKU, branże usługowe"
-  },
-  {
-    name: "PrestaShop",
-    desc: "Rozbudowany open-source dla złożonych modeli dystrybucji, wielu magazynów i dużego asortymentu. Sprawdza się przy zaawansowanym zarządzaniu ofertą i cenami.",
-    ideal: "Hurtownie, dystrybutorzy, sklepy 1 000+ SKU"
-  },
-  {
-    name: "Custom (React / Next.js)",
-    desc: "Sklep projektowany od zera — unikalny UX, headless commerce, maksymalna wydajność. Dla marek premium i B2B z niestandardowymi wymaganiami. Traktujemy go jak zaawansowaną aplikację internetową.",
-    ideal: "Marki premium, projekty B2B, złożona architektura"
-  }
+const summary = [
+  "Platformę i funkcje dobieramy do asortymentu, obsługi zamówień oraz zasobów Twojego zespołu. Nie zakładamy z góry, że każdy sklep internetowy i każdy model Twojego biznesu wymagają tych samych integracji.",
+  "Kompleksowe rozwiązania obejmują uzgodniony zakres: architekturę katalogu, widoki kategorii, UX/UI, płatności, dostawy, testy oraz przygotowanie zespołu do pracy z panelem.",
+  "Po ustaleniu zakresu i odpowiedzialności przygotowujemy bezpłatną wycenę. Oddzielamy prace wdrożeniowe od kosztów zewnętrznych oraz późniejszego pozycjonowania i rozwoju sklepu.",
 ];
 
-const features = [
+const scope = [
   {
-    icon: Smartphone,
-    title: "Responsywny design mobile-first",
-    desc: "Większość ruchu e-commerce pochodzi z telefonów i urządzeń mobilnych. Projektujemy UX sklepów od widoku mobilnego — szybkość ładowania strony i perfekcyjna ścieżka zakupowa na każdym ekranie."
+    title: "Platforma e-commerce i zakres wdrożenia",
+    text: "Porównujemy WooCommerce, PrestaShop, Shopify i rozwiązania dedykowane pod kątem indywidualnych potrzeb. Uwzględniamy liczbę produktów, warianty, model B2C lub B2B, sposób aktualizacji oferty i wymagane integracje. Funkcjonalny sklep internetowy ma umożliwiać zarządzanie bez zbędnej złożoności, a funkcjonalność powinna odpowiadać procesom firmy. Technologia nie może ograniczać uzgodnionych zadań. Nie chcemy oferować modułów bez uzasadnienia. Przed wyborem omawiamy koszty utrzymania i ograniczenia platformy.",
   },
   {
-    icon: CreditCard,
-    title: "Bramki płatności i formularz zamówień",
-    desc: "PayU, Przelewy24, Stripe, PayPal, BLIK, Apple Pay, Google Pay. Konfigurujemy formularz zamówień i płatności dopasowane do Twoich klientów i rynków, na których sprzedajesz."
+    title: "Katalog i obsługa produktów",
+    text: "Projektujemy kategorie, filtry, wyszukiwarkę, kartę produktu i warianty tak, aby odpowiadały na potrzeby klientów i umożliwiały porównanie oferty. Ustalamy strukturę danych, zdjęcia, opisy, dostępność oraz zasady importu. Kompletne informacje o dostawie i produkcie wspierają zaufanie klientów, a dopasowania katalogu dokonujemy na podstawie rzeczywistego asortymentu. Zakres może obejmować szablon i uzgodniony import; jakość danych źródłowych omawiamy przed wyceną.",
   },
   {
-    icon: Truck,
-    title: "Integracje logistyczne",
-    desc: "DHL, InPost, DPD, GLS, Furgonetka — automatyczne etykiety, śledzenie i obsługa zwrotów wbudowane w panel sklepu. Integrujemy sklep z firmami kurierskimi bez dodatkowych wtyczek."
+    title: "UX/UI, identyfikacja i responsywność",
+    text: "Zanim zaczniemy projektować widoki, ustalamy ścieżki zakupu i priorytety odbiorców. Projekt graficzny nawiązuje do identyfikacji wizualnej Twojej marki. Czytelny układ strony i wygoda na urządzeniach mobilnych kształtują nawigację, listy produktów, koszyk i checkout. Projekt uwzględnia urządzenia mobilne, a kluczowe widoki akceptujesz przed wdrożeniem. Sprawdzamy pola, walidację i komunikaty o błędach. Design porządkuje informacje oraz ułatwia działanie klienta.",
   },
   {
-    icon: BarChart3,
-    title: "Analityka i optymalizacja konwersji",
-    desc: "GA4, Hotjar, piksel Meta, Microsoft Clarity. Pomagamy zoptymalizować lejki zakupowe — mapujemy porzucone koszyki i źródła ruchu, by optymalizacja sklepu przekładała się na wyższe wyniki wyszukiwania i sprzedaż."
+    title: "Płatności, dostawy i integracje",
+    text: "Zakres ustalamy na podstawie przyjętych metod płatności, sposobu dostawy i systemów używanych w Twojej firmie. Sklep online może wymagać połączenia z operatorem przesyłek, ERP, CRM, hurtownią lub marketplace, jeśli interfejsy i warunki dostawców to umożliwiają. Nie zgadujemy wymagań integracji: sprawdzamy dokumentację, specyfiki procesów, przepływ danych, odpowiedzialność stron oraz scenariusze testowe przed implementacją.",
   },
   {
-    icon: Settings,
-    title: "Integracje ERP i marketplace",
-    desc: "Subiekt GT, Comarch, SAP, Allegro, Amazon, Ceneo — zarządzanie stanami magazynowymi, zamówieniami i cenami między sklepem a systemami zewnętrznymi."
+    title: "SEO techniczne sklepu",
+    text: "Przygotowujemy strukturę adresów, nagłówki, metadane, kanoniczne adresy, mapę witryny, przekierowania i dane strukturalne zgodne z widoczną treścią. Sprawdzamy indeksowanie kategorii i produktów, parametry filtrów, szybkość oraz wersję mobilną. Przy migracji planujemy mapowanie dotychczasowych adresów. Techniczna optymalizacja tworzy podstawę pod pozycjonowanie, ale nie gwarantuje pozycji ani sprzedaży.",
   },
   {
-    icon: Shield,
-    title: "Bezpieczeństwo, hosting i RODO",
-    desc: "Certyfikat SSL, hosting na wydajnym serwerze, regulamin, polityka prywatności i zgodność z RODO. Sklep gotowy prawnie i technicznie — bez ryzyka kar za brak wymaganych dokumentów."
-  }
+    title: "Pomiar sprzedaży i zapytań",
+    text: "Definiujemy zdarzenia dla ścieżki zakupu, transakcji i uzgodnionych form kontaktu. Formularz kontaktowy wymaga osobnego zdarzenia, a przetwarzanie danych osobowych i konfiguracja analityki zależą od platformy, dostępów oraz mechanizmu zgód. Raportowanie może łączyć źródła ruchu, przychód, koszyki i zapytania. Zespół sprzedaży powinien porównywać dane narzędzi z rzeczywistymi zamówieniami, zamiast traktować pozycję frazy jako wynik biznesowy.",
+  },
 ];
 
-const process = [
+const sections = [
   {
-    number: "01",
-    title: "Analiza Twojego biznesu i wybór platformy",
-    desc: "Rozmawiamy o Twoim modelu sprzedaży, asortymencie i planach rozwoju. Każda oferta dla klientów z Krakowa jest przygotowywana indywidualnie — dobieramy profesjonalny zakres platformy e-commerce i integracji do potrzeb Twojej firmy."
+    title: "Sklep internetowy w Krakowie — oferta dla małych i średnich firm",
+    text: "Tworzeniem sklepów internetowych zajmujemy się zdalnie dla firm z Krakowa i firm w całej Polsce. Projektowanie stron www i sprzedaż online wymagają znajomości oferty, a nie tylko nazwy lokalizacji. Sklep internetowy dla marki detalicznej, producenta lub sprzedaży B2B potrzebuje innego podejścia do katalogu, cen, zamówień i kontaktu z klientem. Kontakt z klientem po zamówieniu również wymaga ustalonych komunikatów. Profesjonalizm wymaga uzasadnienia zakresu, dlatego agencja e-commerce nie powinna przypisywać firmie funkcji wyłącznie na podstawie branży. Ustalamy, co sprzedajesz i które procesy chcesz uprościć, aby profesjonalny sklep internetowy wspierał obecność firmy w internecie. Analiza na tle konkurencji pomaga wybrać priorytety, ale nie zastępuje znajomości Twoich procesów.",
+    points: [
+      "Sprzedaż B2C: czytelna oferta, warianty, dostawa, płatność i obsługa zwrotów zgodna z ustalonym procesem.",
+      "Sprzedaż B2B: uzgodnione reguły cen, kont, zamówień i wymiany danych z systemami firmy.",
+      "Sklep stacjonarny i online: zaplanowana synchronizacja dostępności lub obsługa kanałów, jeśli systemy na to pozwalają.",
+      "Kraków i okolice: zdalny brief, prezentacja projektu i akceptacje z jasno przypisaną odpowiedzialnością.",
+    ],
   },
   {
-    number: "02",
-    title: "Jak projektujemy sklep internetowy — UX/UI",
-    desc: "Projektowanie i tworzenie architektury sklepu: kategorie produktowe, karta produktu, ścieżka zakupowa. Projektujemy sklepy tak, by były funkcjonalne i konwertowały — makiety i prototypy zatwierdzasz przed startem kodowania. Funkcjonalny sklep zaczyna się od dobrego projektu UX."
+    title: "Jak wybrać platformę dla Twojego sklepu?",
+    text: "WooCommerce wykorzystuje WordPress i bywa rozważany tam, gdzie istotna jest elastyczność treści oraz dostęp do rozbudowy. PrestaShop oferuje rozbudowane funkcje katalogu, natomiast Shopify działa w modelu usługowym. Rozwiązanie dedykowane ma sens dopiero po uzasadnieniu nietypowych wymagań. Strona internetowa z samą ofertą nie zawsze potrzebuje koszyka, ale sklep internetowy wymaga spójnej obsługi produktu, płatności i zamówienia. Porównanie obejmuje aktualizacje, hosting lub abonament, pracę zespołu, integracje i koszty rozwoju. Rekomendacja wskazuje kompromisy oraz warunki, które trzeba zaakceptować przed stworzeniem sklepu internetowego.",
   },
   {
-    number: "03",
-    title: "Wdrożenie i integracje techniczne",
-    desc: "Kodujemy sklep internetowy jako kompletną aplikację — wdrażamy platformę, integrujemy płatności, logistykę i systemy ERP. Testy wydajności, bezpieczeństwa i responsywności na wszystkich urządzeniach. Sklep online gotowy do startu sprzedaży."
+    title: "Projekty stron kategorii i katalog produktów",
+    text: "Architektura katalogu powinna odpowiadać sposobowi wyszukiwania produktów, a nie wewnętrznej strukturze firmy. Projektowanie i tworzenie stron kategorii obejmuje atrybuty oraz filtry, które ograniczają wybór bez niekontrolowanej liczby adresów. Potencjalni klienci powinni znaleźć istotne cechy, cenę lub zasady wyceny, dostępność i dostawę. Inny jest proces tworzenia strony internetowej z samą prezentacją oferty, a inne jest stworzenie strony produktu z wariantami i koszykiem. Sprawdzamy zmianę wariantu, liczbę sztuk, koszty oraz komunikaty przed płatnością. Zakres redakcyjny i import ustalamy osobno, z przypisaną odpowiedzialnością za dane źródłowe i akceptację.",
+    points: [
+      "Struktura kategorii i atrybutów oparta na rzeczywistym asortymencie.",
+      "Spójne szablony produktów, wariantów, promocji i informacji o realizacji zamówienia.",
+      "Test ścieżki od wyszukania produktu przez koszyk do potwierdzenia zamówienia.",
+    ],
   },
   {
-    number: "04",
-    title: "Uruchomienie i wsparcie marketingowe",
-    desc: "Uruchamiamy sklep, szkolimy Twój zespół i konfigurujemy analitykę. Strategia marketingowa od pierwszego dnia — Google Shopping, SEO i Meta Ads, by potencjalni klienci trafiali do sklepu natychmiast. Chętnie współpracujemy przy pełnym marketingu po wdrożeniu."
-  }
+    title: "Płatności i integracja z systemami",
+    text: "Integracja nie kończy się na podłączeniu modułu. Ustalamy, kiedy zamówienie zmienia status, jak obsłużyć nieudaną płatność, zwrot, brak produktu lub problem z przesyłką. Dobór płatności online zależy od rynku, umowy z operatorem i oczekiwań klientów; nie narzucamy jednej bramki każdej firmie. Projekty sklepów internetowych z wykorzystaniem API wymagają określenia źródła danych, kierunku synchronizacji oraz częstotliwości aktualizacji. Dotyczy to ERP, CRM, hurtowni i marketplace. Warunkiem technicznym są dostępne interfejsy lub moduły i możliwość przetestowania połączenia. Koszty licencji, kont zewnętrznych oraz prac dostawców wskazujemy w wycenie, jeśli dotyczą projektu.",
+  },
+  {
+    title: "SEO i marketing — widoczność sklepu online",
+    text: "Przygotowanie techniczne w ramach prac to inny zakres niż stałe pozycjonowanie sklepu po starcie. W projekcie dbamy o dostępność treści dla wyszukiwarki, logiczną strukturę stron, przekierowania, wydajność i zgodność danych strukturalnych z ofertą. Planujemy też podstawowe linkowanie wewnętrzne między kategoriami, produktami i materiałami. Dalsze działania mogą obejmować treści, analizę zapytań i rozwój kategorii, ale wymagają osobnych priorytetów. Nie obiecujemy określonej pozycji w Google ani terminu efektu. Widoczność oceniamy na podstawie danych, w tym zapytań i stron docelowych w Google Search Console, a nie jednorazowego ręcznego sprawdzenia frazy.",
+    href: "/seo/pozycjonowanie",
+    link: "Poznaj zakres pozycjonowania",
+  },
+  {
+    title: "Jak przebiega proces tworzenia sklepu internetowego?",
+    text: "Etap tworzenia sklepów internetowych dzielimy na części z uzgodnionym rezultatem i odpowiedzialnością. Harmonogram zależy od zakresu, dostępów, gotowości materiałów i akceptacji. Przed publikacją sprawdzamy funkcje oraz scenariusze zakupowe w środowisku uzgodnionym dla projektu. Przekazanie obejmuje wskazane w ofercie dostępy, instrukcję lub szkolenie i informacje o dalszym utrzymaniu. Wsparcie techniczne oraz rozwój po starcie opisujemy jako odrębne warunki, zamiast zakładać nieograniczoną opiekę.",
+    points: [
+      "Analiza: model sprzedaży, katalog, funkcje, integracje, materiały i kryteria akceptacji.",
+      "Projekt: architektura informacji, makiety, projekt graficzny i akceptowane widoki kluczowych stron.",
+      "Wdrożenie: konfiguracja platformy, programowanie, integracje, treści w uzgodnionym zakresie i testy.",
+      "Start: publikacja, kontrola działania, przekazanie uzgodnionych materiałów i plan dalszych prac.",
+    ],
+  },
+  {
+    title: "Analityka, formularz kontaktowy i pomiar sprzedaży",
+    text: "Przed uruchomieniem ustalamy, które działania mają być mierzone i gdzie powstaje wiarygodny zapis transakcji. Sklep internetowy może przekazywać do analityki wyświetlenia produktów, dodania do koszyka, rozpoczęcie finalizacji i zakup, jeśli wdrożenie zawiera poprawne dane. Dla ofert wymagających rozmowy mierzymy też wysłanie zapytania przez stronę lub inne uzgodnione działanie. Analiza źródeł ruchu pomaga porównać kanały, ale wymaga uwzględnienia zgód, ograniczeń pomiaru i różnic między systemami. Raport powinien pokazywać założenia i rozbieżności, a nie przypisywać każdej sprzedaży jednej interakcji lub optymalizacji.",
+  },
+  {
+    title: "Wycena sklepu i czas realizacji bez sztywnych pakietów",
+    text: "Na wycenę wpływają platforma, UX/UI, liczba typów stron, wielkość i jakość katalogu, import danych, integracje, wersje językowe oraz zakres testów i szkolenia. Harmonogram zależy dodatkowo od akceptacji, dostępów i gotowości materiałów. Nie podajemy jednej ceny ani terminu dla każdego sklepu internetowego w Krakowie. Po briefie otrzymujesz propozycję z zakresem, wyłączeniami, odpowiedzialnością stron i warunkami zmian. Koszty domeny, hostingu, abonamentów, licencji, operatorów płatności i innych usług zewnętrznych przedstawiamy oddzielnie, jeżeli występują. Etapowy rozwój Twojego biznesu online jest możliwy, gdy pozwalają na to architektura i priorytety sprzedażowe.",
+    points: [
+      "Do rozmowy przygotuj opis asortymentu, przykładowe produkty i informację o obecnym sposobie sprzedaży.",
+      "Wskaż wymagane systemy i dostawców, ale nie przesyłaj haseł w pierwszej wiadomości.",
+      "Porównuj oferty według zakresu, odpowiedzialności i warunków utrzymania, nie samej nazwy platformy.",
+    ],
+  },
 ];
 
-const faqItems = [
+const faqs = [
   {
-    question: "Jak stworzyć sklep internetowy w Krakowie — koszt i czas realizacji?",
-    answer: "Koszt wdrożenia zależy od platformy i funkcjonalności. Sklep na Shopify lub WooCommerce z podstawowymi integracjami to od 8 000 zł. Rozbudowany sklep z customowym designem i integracją ERP — od 20 000 zł. Dedykowane rozwiązania custom (React/Next.js) zaczynają się od 35 000 zł. Każdą wycenę poprzedzamy bezpłatną rozmową o Twoich potrzebach. Cena nie zależy od miasta — zależy od zakresu projektu."
+    question: "Ile kosztuje stworzenie sklepu internetowego w Krakowie?",
+    answer: "Cena zależy od platformy, projektu graficznego, katalogu, importu, integracji i zakresu testów, a nie od samej lokalizacji firmy. Nie stosujemy na tej stronie sztywnych cen. Po poznaniu wymagań przygotowujemy wycenę z zakresem, wyłączeniami, odpowiedzialnością stron oraz wskazaniem kosztów zewnętrznych, jeśli są potrzebne.",
   },
   {
-    question: "Czas wdrożenia sklepu internetowego — ile trwa projekt?",
-    answer: "Sklep na Shopify lub WooCommerce z typowym zakresem funkcjonalności robimy w 4–8 tygodni. Rozwiązania z customowym designem i rozbudowanymi integracjami — 8–16 tygodni. Dedykowane projekty (headless, custom backend) wymagają 3–6 miesięcy. Czas zawsze ustalamy przed startem projektu i wpisujemy w harmonogram."
+    question: "Ile trwa wdrożenie sklepu internetowego?",
+    answer: "Termin zależy od złożoności funkcji, liczby integracji, gotowości produktów i treści, dostępów oraz tempa akceptacji. Harmonogram ustalamy po briefie i przypisujemy go do konkretnych etapów. Nie deklarujemy jednego czasu realizacji dla każdego projektu ani gwarantowanej daty uzyskania określonych wyników sprzedaży.",
   },
   {
-    question: "Tworzenie sklepów internetowych w Krakowie — czy agencja spoza miasta poradzi sobie?",
-    answer: "Tak — współpracujemy zdalnie z firmami z całej Polski, w tym z Krakowa i Małopolski. Wszystkie etapy projektu realizujemy online (Google Meet, Teams, Figma, GitHub). W razie potrzeby przyjeżdżamy do Krakowa. Ponad 40% naszych klientów pochodzi spoza Poznania i ta forma współpracy działa bez zarzutu."
+    question: "WooCommerce, PrestaShop, Shopify czy sklep dedykowany?",
+    answer: "Wybór zależy od asortymentu, modelu sprzedaży, zespołu obsługującego sklep, integracji i kosztów utrzymania. Porównujemy zalety oraz ograniczenia rozwiązań zamiast wskazywać jedną platformę jako najlepszą dla każdego. Sklep dedykowany rozważamy wtedy, gdy uzasadnione, niestandardowe wymagania przeważają nad możliwościami gotowych systemów.",
   },
   {
-    question: "Którą platformę e-commerce warto wybrać dla firmy z Krakowa?",
-    answer: "Zależy od specyfiki Twojego biznesu. Shopify to najlepszy wybór dla firm chcących szybko uruchomić sprzedaż online i skalować bez działu IT. WooCommerce — dla firm z istniejącym WordPressem i potrzebą elastyczności. PrestaShop — dla hurtowni i dystrybutorów z dużym asortymentem. Sklep custom (Next.js) — dla marek premium i projektów B2B. Dobieramy platformę wspólnie podczas bezpłatnej konsultacji."
+    question: "Czy mogę samodzielnie zarządzać produktami i zamówieniami?",
+    answer: "Tak, jeśli uzgodniony zakres obejmuje panel i przekazanie uprawnień administratora. Swój sklep internetowy możesz obsługiwać po przekazaniu dostępów i pokazaniu procesów związanych z produktami, zamówieniami oraz treściami. Sposób pracy zależy od platformy. Przed startem warto ustalić role zespołu, zasady aktualizacji oraz zakres późniejszego wsparcia technicznego.",
   },
   {
-    question: "Pozycjonowania i marketing sklepu internetowego — co oferujecie po wdrożeniu?",
-    answer: "Tak, jesteśmy agencją full-service. Po uruchomieniu sklepu możemy prowadzić: SEO i pozycjonowanie sklepu w Google, kampanie Google Ads (Shopping, Search, Display), Meta Ads i remarketing, email marketing. Sklep bez ruchu nie sprzedaje — dlatego proponujemy wdrożenie marketingu równolegle z budową sklepu."
+    question: "Jakie płatności i integracje można wdrożyć?",
+    answer: "Zakres zależy od wybranej platformy, rynku, umów z dostawcami i dostępnych interfejsów. Twój sklep internetowy może wymagać płatności online, dostaw, ERP, CRM, hurtowni lub marketplace. Najpierw opisujemy przepływ danych i wyjątki, potem potwierdzamy wykonalność oraz testy. Nie zakładamy dostępności konkretnej integracji bez sprawdzenia wymagań projektu i dostawcy.",
   },
   {
-    question: "Czy integrujecie sklepy z Allegro i systemami ERP?",
-    answer: "Tak — integrujemy sklepy z Allegro, Amazon, Ceneo i Google Shopping. Synchronizujemy stany magazynowe i zamówienia z systemami ERP (Subiekt GT, Comarch, SAP). Integracja z marketplace'ami to standard w naszych wdrożeniach dla firm z Krakowa i Małopolski — szczególnie w handlu hurtowym i dystrybucji."
+    question: "Czy sklep internetowy będzie widoczny w Google?",
+    answer: "Wdrożenie może przygotować techniczną podstawę: indeksowalne strony, poprawne adresy, metadane, przekierowania, strukturę treści i wydajność. Nie gwarantuje to pozycji ani ruchu. Pozycjonowanie wymaga analizy konkurencji, oferty i danych oraz często dalszych prac. Wyniki oceniamy przez zapytania, strony docelowe i zachowania użytkowników, bez obiecywania efektu w określonym czasie.",
   },
   {
-    question: "Agencja czy freelancer — kto lepiej wykona sklep internetowy?",
-    answer: "Agencja interaktywna zapewnia kompleksowość — developer, designer, SEO i wsparcie po starcie w jednym miejscu. Freelancer może być tańszy, ale specjalizuje się zwykle w jednej dziedzinie. Przy tworzeniu stron i sklepów internetowych z rozbudowanymi integracjami ERP, wielojęzycznością i dużym wolumenem zamówień agencja daje pewność terminów i ciągłości. Profesjonalne tworzenie sklepów internetowych przez freelancera bywa ryzykowne przy złożonych projektach — polecamy agencję dla pełnych wdrożeń e-commerce."
+    question: "Czy trzeba mieć biuro w Krakowie, aby rozpocząć współpracę?",
+    answer: "Nie. Współpracę z firmami z Krakowa i całej Polski prowadzimy zdalnie: brief, prezentacje, akceptacje i przekazanie materiałów odbywają się online. Nie deklarujemy lokalnego biura w Krakowie. Przed projektem ustalamy osoby odpowiedzialne, kanały komunikacji, terminy decyzji i sposób dokumentowania zmian, aby lokalizacja nie zastępowała jasnych zasad pracy.",
   },
-  {
-    question: "Wycena sklepu internetowego — cena i co na nią wpływa?",
-    answer: "Cena sklepu internetowego zależy od: platformy (Shopify, WooCommerce, Custom), zakresu integracji (płatności, ERP, marketplace), liczby produktów i customowego designu. Własny sklep internetowy na Shopify to od 8 000 zł, rozbudowany sklep custom — od 35 000 zł. Swój sklep internetowy zawsze wyceniamy indywidualnie po bezpłatnej konsultacji — nie stosujemy gotowych pakietów cenowych."
-  },
-  {
-    question: "Tworzenie sklepów www dla sklepów stacjonarnych — jak to wygląda?",
-    answer: "Tak — tworzenie sklepów www dla firm posiadających sklepy stacjonarne to nasza specjalizacja. Omnichannel wymaga integracji systemu kasowego z platformą internetową. Tworzenie stron i sklepów internetowych dla retail obejmuje synchronizację stanów magazynowych, click&collect i obsługę promocji online i offline. Tworzenie stron internetowych to inne zadanie niż pełna platforma e-commerce — sklepów www dla branży retail dostarczamy kompleksowo."
-  },
-  {
-    question: "Jak zoptymalizować sklep internetowy pod SEO?",
-    answer: "Aby zoptymalizować sklep internetowy pod SEO, kluczowe są: szybkość ładowania strony (Core Web Vitals), optymalizacja techniczna kodu, struktura URL i kategorii oraz unikalne opisy produktów. Pomagamy zoptymalizować sklep tak, by strona www sklepu wyświetlała się wysoko w wynikach wyszukiwania Google. Optymalizacja obejmuje: szybkość serwera (hosting), kompresję obrazów, minifikację kodu i wdrożenie SSL. Sklep online zoptymalizować można po audycie SEO — oferujemy go oddzielnie lub w pakiecie z wdrożeniem."
-  },
-  {
-    question: "Strona www a sklep internetowy — czym różni się projektowanie sklepów internetowych?",
-    answer: "Projektowanie sklepów internetowych Kraków to specjalistyczny proces — inny niż standardowe tworzenie stron internetowych. Sklep internetowy wymaga zaprojektowania: ścieżki zakupowej, karty produktu, koszyka i integracji z systemami płatności oraz wysyłki. Proces tworzenia sklepu internetowego jest bardziej złożony technicznie niż projektowanie i tworzenie zwykłej strony internetowej. Tworzenie stron www kończy się na contencie i formularzu kontaktowym — sklep musi aktywnie sprzedawać. Projektujemy sklepy jako aplikacje internetowe zoptymalizowane pod konwersję i widoczność w Google dla klientów z Krakowa i całej Polski."
-  }
 ];
 
 export default function SklepyInternetoweKrakow() {
   return (
     <>
-      <OrganizationSchema />
-      <Layout>
-      <SEOHead
-        title="Sklepy Internetowe Kraków — Tworzenie Sklepów E-commerce"
-        description="Tworzenie sklepów internetowych Kraków — sklep online WooCommerce, Shopify dla firm z Krakowa. E-commerce z SEO, integracjami płatności i obsługą. Fotz Studio."
-        canonical="https://www.fotz-studio.pl/uslugi/sklepy-internetowe/krakow"
-        keywords="tworzenie sklepów internetowych Kraków, sklep internetowy Kraków, wdrożenie e-commerce Kraków, agencja e-commerce Kraków, Shopify Kraków, WooCommerce Kraków, sklep online Kraków, platforma e-commerce Kraków, PrestaShop Kraków, pozycjonowanie sklepu internetowego Kraków, sklep internetowy dla firmy Kraków"
+      <SEOHead title={seoTitle} description={seoDescription} canonical={canonicalUrl} />
+      <ServiceEditorial
+        path={path}
+        title={pageTitle}
+        eyebrow="Sklepy internetowe dla firm · Kraków i cała Polska · współpraca zdalna"
+        area="Kraków"
+        lead="Projektujemy i wdrażamy sklep internetowy dla firm z Krakowa: od wyboru platformy i katalogu po płatności, integracje, SEO techniczne oraz pomiar sprzedaży. Zakres ustalamy na podstawie realnych procesów, bez gotowego pakietu dla każdego biznesu."
+        enquiryVariant="shop"
+        contactLabel="Poproś o wycenę sklepu internetowego"
+        contactDescription="Opisz asortyment, sposób sprzedaży i systemy, których używasz. Napisz, czy planujesz nowy sklep internetowy, przebudowę lub migrację. Na tej podstawie ustalimy potrzebny zakres, odpowiedzialności i warunki wyceny."
+        summary={summary}
+        scopeTitle="Tworzenie sklepów internetowych Kraków — zakres wdrożenia"
+        scope={scope}
+        sections={sections}
+        faqs={faqs}
+        faqTitle="Sklepy internetowe Kraków — FAQ przed wdrożeniem"
       />
-
-      <ServiceSchema
-        name="Tworzenie Sklepów Internetowych Kraków"
-        description="Projektowanie i wdrażanie sklepów internetowych dla firm z Krakowa i Małopolski. Shopify, WooCommerce, PrestaShop, rozwiązania custom. Pełne integracje i wsparcie po uruchomieniu."
-        provider="Fotz Studio"
-        areaServed="Kraków"
-      />
-      <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
-          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
-          { name: "Sklepy internetowe", url: "https://www.fotz-studio.pl/uslugi/sklepy-internetowe" },
-          { name: "Kraków", url: "https://www.fotz-studio.pl/uslugi/sklepy-internetowe/krakow" }
-        ]}/>
-      <FAQSchema items={faqItems} />
-
-      {/* Hero */}
-      <section className="relative pt-32 sm:pt-36 md:pt-40 pb-16 md:pb-24 bg-gradient-to-b from-background via-background to-secondary/20 overflow-hidden">
-        <div className="absolute top-1/3 right-1/4 w-96 h-96 rounded-full bg-primary/5 blur-3xl pointer-events-none" />
-        <div className="absolute bottom-0 left-1/3 w-64 h-64 rounded-full bg-[#0F3053]/8 blur-3xl pointer-events-none" />
-
-        <div className="container px-4 relative z-10">
-          <motion.div
-            initial="hidden"
-            animate="visible"
-            variants={staggerContainer}
-            className="max-w-4xl mx-auto text-center"
-          >
-            <motion.div variants={fadeIn} className="mb-4">
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-sm text-foreground/80">
-                <MapPin className="w-4 h-4 text-primary" /> Kraków i Małopolska
-              </span>
-            </motion.div>
-
-            <motion.h1 variants={fadeIn} className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 leading-tight">
-              Tworzenie Sklepów Internetowych{" "}
-              <span className="text-gradient">Kraków</span>
-            </motion.h1>
-
-            <motion.p variants={fadeIn} className="text-lg md:text-xl text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Profesjonalne tworzenie sklepów internetowych dla firm z Krakowa i Małopolski — Shopify, WooCommerce, PrestaShop i sklepy custom. Kompleksowy sklep online z integracjami płatności, logistyki i ERP gotowy do sprzedaży od pierwszego dnia.
-            </motion.p>
-
-            <motion.p variants={fadeIn} className="text-base text-muted-foreground/80 mb-10 max-w-xl mx-auto">
-              Kraków to jeden z najprężniej rozwijających się rynków e-commerce w Polsce. Nasza oferta obejmuje tworzenie sklepów www dla klientów z Krakowa i Małopolski — od prostych sklepów internetowych po rozbudowane platformy B2B. Własny sklep internetowy to dziś podstawa sprzedaży i pozyskiwania nowych klientów w sieci.
-            </motion.p>
-
-            <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                <Link to="/kontakt">
-                  Bezpłatna wycena sklepu <ArrowRight className="ml-2 w-5 h-5" />
-                </Link>
-              </Button>
-              <Button asChild variant="outline" size="lg">
-                <Link to="/realizacje">Zobacz realizacje e-commerce</Link>
-              </Button>
-            </motion.div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Stats */}
-      <section className="py-12 bg-card/30 border-y border-border/30">
-        <div className="container px-4">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={staggerContainer}
-            className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto text-center"
-          >
-            {[
-              { value: "80+", label: "wdrożonych sklepów e-commerce" },
-              { value: "4", label: "platformy — Shopify, WC, PS, Custom" },
-              { value: "4–16 tyg.", label: "czas realizacji standardowego projektu" },
-              { value: "full-service", label: "wdrożenie + marketing sklepu" }
-            ].map((s, i) => (
-              <motion.div key={i} variants={fadeIn}>
-                <div className="text-2xl md:text-3xl font-heading font-bold text-primary mb-1">{s.value}</div>
-                <div className="text-sm text-muted-foreground">{s.label}</div>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Platforms */}
-      <section className="py-20 md:py-28 bg-background">
-        <div className="container px-4">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={staggerContainer}
-            className="max-w-5xl mx-auto"
-          >
-            <motion.div variants={fadeIn} className="text-center mb-14">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                Profesjonalne platformy e-commerce i sprzedaż online —{" "}
-                <span className="text-gradient">tworzenie sklepów dla firmy z Krakowa</span>
-              </h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                Pomagamy wybrać platformę e-commerce optymalną dla Twojego asortymentu,
-                modelu sprzedaży i planów rozwoju — nie polecamy jednego rozwiązania dla wszystkich.
-              </p>
-            </motion.div>
-
-            <div className="grid md:grid-cols-2 gap-6">
-              {platforms.map((p, i) => (
-                <motion.div key={i} variants={fadeIn} className="p-6 rounded-2xl border border-border/40 bg-card/20 hover:border-primary/30 transition-colors">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                      <ShoppingCart className="w-5 h-5 text-primary" />
-                    </div>
-                    <h3 className="font-heading font-bold text-lg">{p.name}</h3>
-                  </div>
-                  <p className="text-sm text-muted-foreground mb-3">{p.desc}</p>
-                  <div className="text-xs text-primary/80 font-medium bg-primary/5 px-3 py-1.5 rounded-lg inline-block">
-                    Idealne dla: {p.ideal}
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Features */}
-      <section className="py-20 md:py-28 bg-gradient-to-b from-secondary/10 to-background">
-        <div className="container px-4">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={staggerContainer}
-            className="max-w-5xl mx-auto"
-          >
-            <motion.div variants={fadeIn} className="text-center mb-14">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                Co zawiera projektowanie i{" "}
-                <span className="text-gradient">wdrożenie sklepu internetowego Kraków — SEO i pozycjonowania?</span>
-              </h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                Tworzymy sklepy gotowe do sprzedaży od pierwszego dnia — z integracjami,
-                analityką konwersji i pełnym zabezpieczeniem prawnym dla polskiego rynku.
-              </p>
-            </motion.div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {features.map((f, i) => (
-                <motion.div key={i} variants={fadeIn} className="p-6 rounded-2xl border border-border/40 bg-background">
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                    <f.icon className="w-6 h-6 text-primary" />
-                  </div>
-                  <h3 className="font-heading font-semibold mb-2">{f.title}</h3>
-                  <p className="text-sm text-muted-foreground">{f.desc}</p>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Process */}
-      <section className="py-20 md:py-28 bg-background">
-        <div className="container px-4">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={staggerContainer}
-            className="max-w-4xl mx-auto"
-          >
-            <motion.div variants={fadeIn} className="text-center mb-14">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                Jak stworzyć sklep internetowy dla{" "}
-                <span className="text-gradient">Twojego biznesu — proces tworzenia sklepu internetowego</span>
-              </h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                Przejrzysty proces z dokumentacją na każdym etapie — wiesz co się dzieje
-                od pierwszej rozmowy do uruchomienia sklepu. Procesu tworzenia nie przyspieszamy kosztem jakości.
-              </p>
-            </motion.div>
-
-            <div className="space-y-6">
-              {process.map((step, i) => (
-                <motion.div
-                  key={i}
-                  variants={fadeIn}
-                  className="flex gap-6 p-6 rounded-2xl border border-border/40 bg-card/20"
-                >
-                  <div className="text-4xl font-heading font-bold text-primary/20 shrink-0 leading-none">
-                    {step.number}
-                  </div>
-                  <div>
-                    <h3 className="font-heading font-semibold mb-2">{step.title}</h3>
-                    <p className="text-sm text-muted-foreground">{step.desc}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Why us */}
-      <section className="py-20 md:py-28 bg-gradient-to-b from-secondary/10 to-background">
-        <div className="container px-4">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={staggerContainer}
-            className="max-w-5xl mx-auto"
-          >
-            <motion.div variants={fadeIn} className="text-center mb-14">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                Dlaczego klientów z Krakowa wybierają{" "}
-                <span className="text-gradient">naszą agencję do tworzenia sklepów internetowych w Krakowie?</span>
-              </h2>
-            </motion.div>
-            <div className="grid md:grid-cols-3 gap-6">
-              {[
-                {
-                  icon: Code,
-                  title: "Profesjonalny własny zespół — bez podwykonawców",
-                  desc: "Sklepy internetowe tworzymy własnym zespołem — to profesjonalizm w każdym szczególe. Tworzenie sklepów internetowych dla klientów realizujemy bez podwykonawców. Masz jeden punkt kontaktu i pełną odpowiedzialność za projekt."
-                },
-                {
-                  icon: TrendingUp,
-                  title: "E-commerce + marketing razem",
-                  desc: "Swój sklep internetowy powinieneś traktować jako główny kanał sprzedaży firmy w internecie. Po wdrożeniu możemy prowadzić pełny marketing — SEO, Google Ads, Meta Ads, email. Jeden partner dla całego cyklu sprzedaży."
-                },
-                {
-                  icon: Users,
-                  title: "Wsparcie techniczne po starcie",
-                  desc: "Każdy sklep objęty jest wsparciem technicznym. Monitorujemy wydajność, reagujemy na błędy i rozwijamy funkcjonalny sklep zgodnie z potrzebami klienta — stworzyć sklep to dopiero początek naszej współpracy."
-                }
-              ].map((item, i) => (
-                <motion.div key={i} variants={fadeIn} className="p-6 rounded-2xl border border-border/40 bg-background">
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                    <item.icon className="w-6 h-6 text-primary" />
-                  </div>
-                  <h3 className="font-heading font-semibold mb-2">{item.title}</h3>
-                  <p className="text-sm text-muted-foreground">{item.desc}</p>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section className="py-20 md:py-28 bg-background">
-        <div className="container px-4">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={staggerContainer}
-            className="max-w-3xl mx-auto"
-          >
-            <motion.div variants={fadeIn} className="text-center mb-12">
-              <h2 className="text-3xl font-heading font-bold mb-4">
-                Najczęstsze pytania — tworzenie sklepów internetowych Kraków: wycena, sklepów www i strona www
-              </h2>
-            </motion.div>
-            <div className="space-y-4">
-              {faqItems.map((item, i) => (
-                <motion.div
-                  key={i}
-                  variants={fadeIn}
-                  className="p-6 rounded-2xl border border-border/40 bg-card/20"
-                >
-                  <h3 className="font-heading font-semibold mb-3 flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    {item.question}
-                  </h3>
-                  <p className="text-sm text-muted-foreground pl-7">{item.answer}</p>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-20 md:py-28 bg-gradient-to-r from-primary/90 to-[#0F3053]/90">
-        <div className="container px-4">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={staggerContainer}
-            className="max-w-3xl mx-auto text-center"
-          >
-            <motion.h2 variants={fadeIn} className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
-              Zacznijmy tworzyć Twój sklep internetowy w Krakowie
-            </motion.h2>
-            <motion.p variants={fadeIn} className="text-white/80 mb-8">
-              Bezpłatna konsultacja e-commerce — 30 minut, zero zobowiązań.
-              Omówimy platformę, zakres funkcjonalności i realny budżet wdrożenia dla Twojej firmy.
-            </motion.p>
-            <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90 font-semibold">
-                <Link to="/kontakt">
-                  Bezpłatna wycena <ArrowRight className="ml-2 w-5 h-5" />
-                </Link>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                <Link to="/realizacje">Zobacz realizacje sklepów</Link>
-              </Button>
-            </motion.div>
-            <motion.p variants={fadeIn} className="text-white/50 text-xs mt-6">
-              Odpowiadamy w ciągu 24 godzin · Wycena zawsze bezpłatna
-            </motion.p>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Internal linking */}
-      <section className="py-12 border-t border-border/30 bg-card/20">
-        <div className="container mx-auto px-4">
-          <p className="text-center text-sm text-muted-foreground mb-6 font-medium uppercase tracking-wider">Powiązane usługi</p>
-          <div className="flex flex-wrap justify-center gap-3">
-            {[
-              { label: "Sklepy internetowe Warszawa", to: "/uslugi/sklepy-internetowe/warszawa" },
-              { label: "Strony internetowe Kraków", to: "/uslugi/strony-internetowe/krakow" },
-              { label: "Agencja marketingowa Warszawa", to: "/agencja-marketingowa/warszawa" },
-              { label: "Pozycjonowanie SEO", to: "/seo/pozycjonowanie" },
-              { label: "Google Ads", to: "/performance-marketing/google-ads" },
-              { label: "Strony internetowe Poznań", to: "/uslugi/strony-internetowe" },
-            ].map((link) => (
-              <Link
-                key={link.to}
-                to={link.to}
-                className="px-4 py-2 rounded-full border border-border/50 text-sm text-muted-foreground hover:border-primary/40 hover:text-primary transition-colors"
-              >
-                {link.label}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* SEO Article Section */}
-      <section className="py-20 bg-card">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="prose prose-lg max-w-none"
-          >
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-              Sklepy internetowe Kraków — tworzenie e-commerce dla firm z Małopolski
-            </h2>
-            <p className="text-muted-foreground mb-4">
-              Tworzenie sklepów internetowych w Krakowie dla firm z Małopolski i całej
-              Polski południowej to oferta Fotz Studio. Kraków to drugie co do wielkości
-              centrum biznesowe w Polsce — rynek e-commerce jest tu bardzo dynamiczny.
-              Projektujemy i budujemy sklepy internetowe na WooCommerce, Shopify
-              i platformach dedykowanych, dostosowane do specyfiki krakowskich firm.
-            </p>
-            <p className="text-muted-foreground mb-6">
-              Sklep online dla firmy z Krakowa budujemy z myślą o długoterminowym
-              sukcesie w wyszukiwarce. Strukturę kategorii, opisy produktów i techniczne
-              SEO wdrażamy od pierwszego dnia, by sklep generował ruch organiczny
-              bez zależności od płatnych kampanii.
-            </p>
-
-            <h2 className="text-3xl font-heading font-bold mb-6">
-              E-commerce Kraków — WooCommerce, Shopify i sklep na miarę
-            </h2>
-            <p className="text-muted-foreground mb-4">
-              Dla firm z Krakowa dopasowujemy platformę e-commerce do ich potrzeb:
-              WooCommerce dla firm szukających elastyczności i pełnej kontroli,
-              Shopify dla firm ceniących prostotę zarządzania, dedykowane rozwiązania
-              dla złożonych projektów e-commerce z unikalnymi wymaganiami.
-            </p>
-            <p className="text-muted-foreground mb-6">
-              Projektowanie sklepów internetowych dla firm z Krakowa uwzględnia
-              lokalne preferencje konsumentów, integracje z popularnymi bramkami
-              płatności (PayU, Przelewy24, BLIK) i firmami kurierskimi (InPost, DPD).
-              Optymalizacja UX i szybkości ładowania to standard każdej realizacji.
-            </p>
-
-            <h2 className="text-3xl font-heading font-bold mb-6">
-              Sklep internetowy Kraków z SEO, marketingiem i stałą obsługą
-            </h2>
-            <p className="text-muted-foreground">
-              Fotz Studio to partner e-commerce dla firm z Krakowa oferujący pełen
-              pakiet usług: budowa sklepu, SEO, kampanie Google Shopping, Meta Ads
-              i email marketing. Stała obsługa techniczna i regularne aktualizacje
-              zapewniają bezpieczeństwo i rozwój sklepu przez lata. Skontaktuj się
-              z nami po bezpłatną konsultację i wycenę projektu e-commerce dla Twojej firmy.
-            </p>
-          
-            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
-              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
-              <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>
-              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
-              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-    </Layout>
     </>
   );
 }
