@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 import { createRequire } from 'node:module';
 import ts from 'typescript';
+import * as blogExclusions from '../src/lib/blog-exclusions.mjs';
 const require = createRequire(import.meta.url);
 function load(file, mocks = {}) {
   const code = ts.transpileModule(fs.readFileSync(new URL(file, import.meta.url), 'utf8'), {
@@ -88,6 +89,7 @@ test('every supported topic has useful content while articles are loading or abs
 test('disabled article queries do not invoke the database', () => {
   let requests = 0;
   const { useClusterArticles } = load('../src/hooks/useClusterArticles.ts', {
+    '@/lib/blog-exclusions.mjs': blogExclusions,
     '@tanstack/react-query': { useQuery: options => options },
     '@/integrations/supabase/client': { supabase: { from: () => { requests++; throw Error('unexpected database call'); } } },
   });

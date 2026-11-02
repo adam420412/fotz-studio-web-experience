@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import { instagramProjects, industryInstagramProjects } from '@/data/instagram-projects.mjs';
 import images from '@/data/instagram-project-images.json';
 import videos from '@/data/instagram-project-videos.json';
+import { portfolioEnquiryHref } from '@/lib/portfolio-enquiry.mjs';
+import { trackConversion } from '@/lib/conversions';
 
 type Project = (typeof instagramProjects)[number];
 
@@ -14,6 +16,7 @@ function ProjectCard({ project, single, compact }: { project: Project; single: b
   const [failed, setFailed] = useState(false);
   const video = videos[project.id as keyof typeof videos];
   const landscape = video.width > video.height;
+  const enquiryUrl = portfolioEnquiryHref(project.id);
 
   return <article className={`min-w-0 snap-start overflow-hidden rounded-2xl border border-border bg-background ${single ? 'sm:flex' : ''}`}>
     <Dialog.Root onOpenChange={() => setFailed(false)}>
@@ -34,7 +37,10 @@ function ProjectCard({ project, single, compact }: { project: Project; single: b
           </div>
           <Dialog.Close asChild><button type="button" aria-label="Zamknij rolkę" className="absolute right-2 top-2 flex h-11 w-11 items-center justify-center rounded-full bg-white/10 hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white"><X aria-hidden="true" className="h-5 w-5" /></button></Dialog.Close>
           {failed ? <p role="alert" className="py-12 text-center text-sm">Nie udało się odtworzyć filmu. <a href={video.src} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">Otwórz plik w nowej karcie</a>.</p> : <video src={video.src} width={video.width} height={video.height} poster={cover.src} controls autoPlay playsInline preload="none" aria-label={`Rolka: ${project.name}`} onError={() => setFailed(true)} className="max-h-[68dvh] w-full rounded-lg bg-black object-contain" />}
-          <a href={project.url} target="_blank" rel="noopener noreferrer" className="mt-3 inline-flex min-h-8 items-center gap-1 text-xs text-white/70 underline underline-offset-4 hover:text-white">Zobacz publikację na Instagramie <ArrowUpRight aria-hidden="true" className="h-3 w-3" /><span className="sr-only"> (nowa karta)</span></a>
+          <div className="mt-4 flex flex-wrap items-center justify-between gap-3">
+            <Dialog.Close asChild><Link to={enquiryUrl} onClick={() => trackConversion('contact_click', 'video')} className="dv-btn dv-btn-primary min-h-11">Chcę podobny film <ArrowRight aria-hidden="true" className="h-4 w-4" /></Link></Dialog.Close>
+            <a href={project.url} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center gap-1 text-xs text-white/70 underline underline-offset-4 hover:text-white">Publikacja na Instagramie <ArrowUpRight aria-hidden="true" className="h-3 w-3" /><span className="sr-only"> (nowa karta)</span></a>
+          </div>
         </Dialog.Content>
       </Dialog.Portal>
     </Dialog.Root>
@@ -42,6 +48,7 @@ function ProjectCard({ project, single, compact }: { project: Project; single: b
       <p className="text-xs uppercase tracking-wide text-muted-foreground mb-3">{project.category}</p>
       <h3 className="font-heading text-xl mb-3">{project.name}</h3>
       {!compact && <p className="text-sm text-muted-foreground leading-relaxed">{project.description}</p>}
+      <Link to={enquiryUrl} onClick={() => trackConversion('contact_click', 'video')} aria-label={`Chcę podobny film — ${project.name}`} className="mt-4 inline-flex min-h-11 items-center gap-2 text-sm font-medium underline underline-offset-4">Chcę podobny film <ArrowRight aria-hidden="true" className="h-4 w-4" /></Link>
     </div>
   </article>;
 }

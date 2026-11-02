@@ -7,6 +7,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { submitContactForm } from '@/lib/web3forms';
 import { enquiryServices, enquiryVariants, resolveEnquiryContext, validService } from '@/lib/enquiry.mjs';
 import { trackConversion } from '@/lib/conversions';
+import { appendPortfolioReference, readPortfolioReference } from '@/lib/portfolio-enquiry.mjs';
 
 const schema = z.object({
   name: z.string().trim().min(2, 'Podaj imię (minimum 2 znaki).').max(100, 'Imię może mieć do 100 znaków.'),
@@ -32,6 +33,7 @@ export function EnquiryForm({ defaultService = 'other', defaultVariant = '', con
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
   const [receipt, setReceipt] = useState('');
+  const [referenceProject, setReferenceProject] = useState<ReturnType<typeof readPortfolioReference>>(null);
   const form = useRef<HTMLFormElement>(null);
   const success = useRef<HTMLDivElement>(null);
   const started = useRef(false);
@@ -40,6 +42,7 @@ export function EnquiryForm({ defaultService = 'other', defaultVariant = '', con
     const context = resolveEnquiryContext(search, defaultService, defaultVariant);
     setService(context.service);
     setVariant(context.variant);
+    setReferenceProject(context.service === 'video' ? readPortfolioReference(search) : null);
   }, [search, defaultService, defaultVariant]);
   useEffect(() => { if (status === 'success') success.current?.focus(); }, [status]);
   const start = () => { if (!started.current) { started.current = true; trackConversion('form_start', service); } };
@@ -61,7 +64,7 @@ export function EnquiryForm({ defaultService = 'other', defaultVariant = '', con
         variant: variant ? enquiryVariants[variant] : '', form_id: `enquiry:${pathname}`,
         subject: `${consultation ? 'Konsultacja' : 'Zapytanie'}: ${enquiryServices[service]}${variant ? ` — ${enquiryVariants[variant]}` : ''}`,
         from_name: 'FOTZ Studio — zapytanie ze strony',
-        message: [parsed.data.message, parsed.data.timing && `Preferowany termin: ${parsed.data.timing}`, variant && `Zakres: ${enquiryVariants[variant]}`].filter(Boolean).join('\n\n'),
+        message: appendPortfolioReference([parsed.data.message, parsed.data.timing && `Preferowany termin: ${parsed.data.timing}`, variant && `Zakres: ${enquiryVariants[variant]}`].filter(Boolean).join('\n\n'), referenceProject?.id),
       });
       setReceipt(String(result.submission_id || result.id || ''));
       setStatus('success');
@@ -79,7 +82,12 @@ export function EnquiryForm({ defaultService = 'other', defaultVariant = '', con
       {receipt && <p className="mt-4 text-xs text-muted-foreground break-all">Numer zgłoszenia: {receipt}</p>}
     </div> : <form ref={form} noValidate onSubmit={send} onFocusCapture={start}>
       <fieldset disabled={status === 'sending'} className="space-y-5 min-w-0">
-        <div><label htmlFor={`${id}-service`} className="block text-sm font-medium mb-2">Czego potrzebujesz?</label><select id={`${id}-service`} value={service} onChange={e => { setService(e.target.value); setVariant(''); }} className="w-full min-h-12 rounded-md border border-input bg-background px-3 text-base">{Object.entries(enquiryServices).map(([value, label]) => <option key={value} value={value}>{String(label)}</option>)}</select>{variant && <p className="text-sm text-muted-foreground mt-2">Wybrany zakres: {enquiryVariants[variant]}</p>}</div>
+        <div><label htmlFor={`${id}-service`} className="block text-sm font-medium mb-2">Czego potrzebujesz?</label><select id={`${id}-service`} value={service} onChange={e => { setService(e.target.value); setVariant(''); setReferenceProject(null); }} className="w-full min-h-12 rounded-md border border-input bg-background px-3 text-base">{Object.entries(enquiryServices).map(([value, label]) => <option key={value} value={value}>{String(label)}</option>)}</select>{variant && <p className="text-sm text-muted-foreground mt-2">Wybrany zakres: {enquiryVariants[variant]}</p>}</div>
+        {referenceProject && <div className="rounded-xl border border-primary/25 bg-primary/5 p-4 text-sm">
+          <p className="font-medium">Inspiracja: {referenceProject.name}</p>
+          <p className="mt-1 text-muted-foreground">Dołączymy tę realizację do zapytania. Poniżej opisz film dla swojej firmy.</p>
+          <button type="button" onClick={() => { setReferenceProject(null); form.current?.querySelector<HTMLTextAreaElement>('[name="message"]')?.focus(); }} className="mt-2 min-h-11 underline underline-offset-4">Usuń inspirację</button>
+        </div>}
         <div className="grid sm:grid-cols-2 gap-5"><div><label htmlFor={`${id}-name`} className="block text-sm font-medium mb-2">Twoje imię *</label><Input {...field('name')} autoComplete="name" required maxLength={100} value={data.name} onChange={e => setData({ ...data, name: e.target.value })} className="min-h-12 text-base" />{error('name')}</div><div><label htmlFor={`${id}-email`} className="block text-sm font-medium mb-2">E-mail do odpowiedzi *</label><Input {...field('email')} type="email" autoComplete="email" required maxLength={255} value={data.email} onChange={e => setData({ ...data, email: e.target.value })} className="min-h-12 text-base" />{error('email')}</div></div>
         <div><label htmlFor={`${id}-message`} className="block text-sm font-medium mb-2">{isRetainer ? 'Co chcesz poprawić w marketingu firmy? *' : 'Kilka słów o projekcie *'}</label><Textarea {...field('message')} required minLength={10} maxLength={2000} rows={4} value={data.message} placeholder={isRetainer ? 'Wklej adres strony lub profilu. Napisz, co oferujesz i co dziś zabiera Ci najwięcej czasu w marketingu.' : prompts[service]} onChange={e => setData({ ...data, message: e.target.value })} className="text-base" />{error('message')}</div>
         <details><summary className="cursor-pointer text-sm underline underline-offset-4 min-h-10">Dodaj telefon lub preferowany termin (opcjonalnie)</summary><div className="grid sm:grid-cols-2 gap-5 mt-3"><div><label htmlFor={`${id}-phone`} className="block text-sm mb-2">Telefon</label><Input {...field('phone')} type="tel" autoComplete="tel" maxLength={40} value={data.phone} onChange={e => setData({ ...data, phone: e.target.value })} className="min-h-12 text-base" />{error('phone')}</div><div><label htmlFor={`${id}-timing`} className="block text-sm mb-2">Termin projektu lub rozmowy</label><Input {...field('timing')} maxLength={200} value={data.timing} onChange={e => setData({ ...data, timing: e.target.value })} className="min-h-12 text-base" />{error('timing')}</div></div></details>
