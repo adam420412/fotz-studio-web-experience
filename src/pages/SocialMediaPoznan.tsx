@@ -9,13 +9,14 @@ import stadiumPhoto from "@/assets/enea/stadion-race-fajerwerki-web.webp";
 
 const services = [
   { icon: Target, title: "Strategia i plan tematów", text: "Odbiorcy, grupy docelowe, rola kanałów społecznościowych, język marki i tematy oparte na pytaniach klientów. Strategie marketingowe dopasowujemy do materiałów oraz czasu zespołu — do każdego klienta podchodzimy indywidualnie.", href: "/social-media/strategia" },
-  { icon: CalendarDays, title: "Prowadzenie profili", text: "Prowadzenie firmowych profili w mediach społecznościowych: teksty, grafiki, tworzenie treści, harmonogram i publikacja na uzgodnionych kanałach. Liczbę materiałów, poprawki, moderację komentarzy i wiadomości zapisujemy w zakresie.", href: "/social-media/obsluga" },
+  { icon: CalendarDays, title: "Prowadzenie profili", text: "Prowadzeniem profili w social media zajmujemy się kompletnie: teksty, grafiki, tworzenie treści, harmonogram i publikacja na uzgodnionych kanałach. Liczbę materiałów, poprawki, moderację — komentarze i wiadomości — zapisujemy w zakresie.", href: "/social-media/obsluga" },
   { icon: Camera, title: "Zdjęcia i treści", text: "Profesjonalne usługi fotograficzne: oferta, produkty, ludzie i kulisy pracy. Łączymy materiały firmy z zaplanowaną produkcją, żeby profil pokazywał jej charakter i budował pozytywny wizerunek wśród użytkowników.", href: "/social-media/content" },
   { icon: Video, title: "Rolki i filmy", text: "Pomysł, scenariusz, nagrania i montaż wideo. Przed produkcją ustalamy formaty, napisy, wersje oraz miejsca wykorzystania filmu i materiałów reklamowych.", href: "/uslugi/produkcja-video" },
-  { icon: MessageSquare, title: "Kampanie Meta Ads", text: "Prowadzenie kampanii reklamowych na Facebooku i Instagramie: cel kampanii, kreacje, konfiguracja, zarządzanie kampaniami i ocena wyników. Obsługę reklam oraz budżet płacony platformie wyceniamy oddzielnie.", href: "/performance-marketing/meta-ads" },
-  { icon: ChartNoAxesCombined, title: "Pomiar i raportowanie", text: "Analiza wyników: sprawdzamy publikacje, reakcje, interakcje, zasięgi i zaangażowanie oraz wejścia i zapytania. Przy dostępie do danych sprzedaży oceniamy też jakość pozyskanych kontaktów i realne efekty działań marketingowych.", href: "/social-media/analityka" },
+  { icon: MessageSquare, title: "Kampanie Meta Ads", text: "Prowadzenie kampanii Facebook Ads na Facebooku i Instagramie: cel kampanii, kreacje, konfiguracja, zarządzanie kampaniami, optymalizacja i ocena wyników. Łączymy je przy potrzebie z Google Ads, żeby reklama pracowała na kilku etapach decyzji klienta. Obsługę reklam oraz budżet płacony platformie wyceniamy oddzielnie.", href: "/performance-marketing/meta-ads" },
+  { icon: ChartNoAxesCombined, title: "Pomiar i raportowanie", text: "Analizę wyników prowadzimy co miesiąc: sprawdzamy publikacje, reakcje, każdą interakcję, zasięgi i zaangażowanie oraz wejścia i zapytania. Przy dostępie do danych sprzedaży oceniamy też jakość pozyskanych kontaktów i realne efekty działań marketingowych.", href: "/social-media/analityka" },
 ];
 const faqs = [
+  { question: "Czy możecie prowadzić mojego Facebooka i Instagrama?", answer: "Tak — możemy prowadzić Ci Facebooka i Instagrama w całości: plan, treści, publikacje, moderację i raport. Zakres ustalamy przed startem, a akceptacje materiałów prowadzimy w uzgodnionym rytmie." },
   { question: "Co obejmuje prowadzenie social media dla firm?", answer: "Zakres może obejmować strategię, plan tematów, tworzenie treści, teksty, grafiki, publikację i moderację komentarzy oraz wiadomości. Zdjęcia, rolki, kampanie reklamowe i raportowanie rozpisujemy jako konkretne zadania. Przed startem ustalamy kanały społecznościowe, liczbę materiałów, poprawki i sposób akceptacji." },
   { question: "Ile kosztuje obsługa social media w Poznaniu?", answer: "Cena zależy od liczby kanałów i publikacji, formatu treści, nagrań, moderacji oraz reklam. Do wyceny potrzebujemy linków do profili, celu, dostępnych materiałów i planowanego budżetu. Wynagrodzenie za obsługę, koszt produkcji i budżet reklamowy są osobnymi pozycjami — dzięki temu porównasz oferty agencji social media bez ukrytych kosztów." },
   { question: "Czy nagrywacie materiały w firmie w Poznaniu?", answer: "Możemy zaplanować produkcję w siedzibie firmy w Poznaniu i okolicach lub we wskazanej lokalizacji. Miejsce, termin, uczestników, listę ujęć i ewentualny dojazd uzgadniamy przed nagraniami. Nasza baza znajduje się w Poznaniu; brief i akceptacje można prowadzić zdalnie." },
@@ -25,7 +26,7 @@ const faqs = [
 ];
 const steps = [
   { title: "Rozmowa i zakres", text: "Przeglądamy profile, ofertę i dotychczasowe materiały. Ustalamy odbiorców, grupy docelowe, cel, kanały oraz to, co zostaje po stronie Twojego zespołu." },
-  { title: "Plan i produkcja", text: "Przygotowujemy tematy, formaty i listę potrzebnych materiałów zgodnie z przygotowaną strategią. Jeśli zakres obejmuje nagrania, uzgadniamy dzień produkcji i uczestników." },
+  { title: "Plan i produkcja", text: "Przygotowujemy tematy, formaty i listę potrzebnych materiałów — to wdrożenie przygotowanej strategii krok po kroku. Jeśli zakres obejmuje nagrania, uzgadniamy dzień produkcji i uczestników." },
   { title: "Akceptacja i publikacja", text: "Materiały trafiają do wyznaczonej osoby w firmie. Zatwierdzone treści publikujemy według planu; dodatkowe zadania, np. kampanie czy sesje, ustalamy osobno." },
   { title: "Raport i kolejne decyzje", text: "Porównujemy wyniki z celem oraz punktem wyjścia. Na bieżąco śledzimy najnowsze trendy, a wnioski przekładamy na następne tematy, formaty i testy reklamowe." },
 ];
@@ -34,7 +35,7 @@ export default function SocialMediaPoznan() {
   const { data: articles = [], isLoading, isError, refetch } = useClusterArticles("poznan");
   return (
     <Layout>
-      <SEOHead title="Agencja social media Poznań — Facebook i Instagram" description="Agencja social media z Poznania: prowadzenie profili na Facebooku i Instagramie, rolki, zdjęcia i kampanie reklamowe w mediach społecznościowych. Umów rozmowę." canonical="https://www.fotz-studio.pl/agencja-social-media/poznan" />
+      <SEOHead title="Agencja social media Poznań — Facebook i Instagram" description="Agencja social media z Poznania: prowadzenie profili, rolki i kampanie w mediach społecznościowych. Prowadzimy Ci Facebooka i Instagrama — umów rozmowę." canonical="https://www.fotz-studio.pl/agencja-social-media/poznan" />
       <ServiceSchema name="Obsługa social media w Poznaniu" description="Planowanie komunikacji, prowadzenie firmowych profili w mediach społecznościowych, produkcja zdjęć i video oraz kampanie reklamowe w uzgodnionym zakresie." areaServed="Poznań" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://www.fotz-studio.pl/" }, { name: "Agencja social media", url: "https://www.fotz-studio.pl/agencja-social-media" }, { name: "Poznań", url: "https://www.fotz-studio.pl/agencja-social-media/poznan" }]} />
       <FAQSchema items={faqs} />
@@ -44,7 +45,7 @@ export default function SocialMediaPoznan() {
           <div>
             <p className="dv-eyebrow mb-5">FOTZ Studio · Poznań</p>
             <h1 className="text-4xl md:text-6xl font-heading leading-[1.08] tracking-tight mb-6">Agencja social media<br /><span className="text-gradient">w Poznaniu.</span></h1>
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mb-7">Prowadzimy social media Twojej marki: firmowe profile na Facebooku, Instagramie i LinkedIn, robimy zdjęcia i nagrywamy rolki. Łączymy social media marketing z ofertą Twojej firmy oraz jasno ustalonym celem, żeby dotrzeć do nowych klientów w Poznaniu i nie tylko.</p>
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mb-7">Prowadzimy social media Twojej marki w mediach społecznościowych: firmowe profile na Facebooku, Instagramie i LinkedIn, robimy zdjęcia i nagrywamy rolki. Łączymy social media marketing z ofertą Twojej firmy oraz jasno ustalonym celem, żeby dotrzeć do nowych klientów w Poznaniu i nie tylko.</p>
             <div className="flex flex-col sm:flex-row gap-3 items-start">
               <Link to="/konsultacja" className="dv-btn dv-btn-primary">Umów rozmowę 15 min <ArrowRight aria-hidden="true" className="w-4 h-4" /></Link>
               <a href="#realizacje-social-media" className="dv-btn dv-btn-secondary">Zobacz nasze materiały</a>
@@ -64,6 +65,15 @@ export default function SocialMediaPoznan() {
         <p className="dv-eyebrow mb-3">Zakres współpracy</p><h2 id="zakres-heading" className="text-3xl md:text-4xl font-heading mb-5">Czego potrzebują Twoje profile?</h2>
         <p className="text-muted-foreground max-w-3xl mb-8 leading-relaxed">Możesz powierzyć nam kompleksową, regularną komunikację albo konkretną część pracy: strategię, produkcję materiałów lub kampanię reklamową. Kompleksowe wsparcie dobieramy do tego, co firma ma już gotowe i czego potrzebuje, żeby budować obecność w mediach społecznościowych.</p>
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-5">{services.map(service => <article key={service.href} className="border border-border bg-card rounded-2xl p-6 flex flex-col items-start"><service.icon aria-hidden="true" className="w-6 h-6 text-primary mb-5" /><h3 className="text-xl mb-3">{service.title}</h3><p className="text-muted-foreground leading-relaxed mb-5">{service.text}</p><Link to={service.href} className="underline underline-offset-4 text-sm mt-auto" aria-label={`Poznaj zakres: ${service.title}`}>Poznaj zakres</Link></article>)}</div>
+      </section>
+
+      <section className="container-wide px-6 md:px-12 py-12 md:py-16" aria-labelledby="agencja-heading">
+        <p className="dv-eyebrow mb-3">Zespół i sposób pracy</p>
+        <h2 id="agencja-heading" className="text-3xl md:text-4xl font-heading mb-5">Agencja social media w Poznaniu — jak nasza agencja pracuje z markami</h2>
+        <div className="max-w-3xl space-y-5 text-muted-foreground leading-relaxed">
+          <p>Media społecznościowe to dziś pierwszy punkt kontaktu z marką. Zakres usług agencji social media zależy od tego, czego potrzebuje Twoja firma w Poznaniu: kompleksowy zakres obejmuje strategię social media, produkcję materiałów, publikacje i kampanie, ale możemy też poprowadzić Twoją firmę w Poznaniu tylko w zakresie samych profili. Strategia social media zaczyna się od grup docelowych i oczekiwań odbiorców — dopiero potem dobieramy, w których kanałach społecznościowych publikować i jakie formaty wybrać. Wysoka interakcja to efekt trafności, nie częstotliwości. Każda platforma ma inną rolę: Facebook buduje lokalny zasięg, Instagram pracuje obrazem, LinkedIn wspiera sprzedaż B2B.</p>
+          <p>Działania w mediach społecznościowych prowadzimy na bieżąco z najnowszymi trendami, ale bez ślepego kopiowania virali — treści mają wspierać rozwój Twojej firmy i odpowiadać na pytania Twoich klientów. Zespół naszej agencji zna realia poznańskiego rynku i pracuje z markami z różnych branż — branża decyduje o języku, formatach i tempie publikacji. Wszystkie działania służą rozwoju Twojej firmy, nie statystykom: firmowych social media nie prowadzi się dla samych lajków. Materiały reklamowe, zdjęcia i rolki produkujemy we własnym zakresie, więc nie czekasz na podwykonawców.</p>
+        </div>
       </section>
 
       <section id="realizacje-social-media" className="py-12 md:py-16 bg-muted/30 border-y border-border scroll-mt-28" aria-labelledby="realizacje-heading">
