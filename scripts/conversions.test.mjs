@@ -97,3 +97,13 @@ test('3D visualization and configurator links preserve separate enquiry scopes',
   assert.equal(url.hash, '#formularz');
  }
 });
+
+// A standalone ad enquiry must not silently become combined profile management.
+test('Warsaw standalone social ads enquiry retains its scope in the contact form', () => {
+ const service = serviceForPath('/agencja-social-media/warszawa');
+ const url = new URL(enquiryHref(service, 'social_ads'), 'https://www.fotz-studio.pl');
+ assert.equal(url.pathname, '/kontakt');
+ assert.equal(url.hash, '#formularz');
+ assert.deepEqual(resolveEnquiryContext(url.search), {service:'social', variant:'social_ads'});
+ assert.deepEqual(resolveEnquiryContext('?usluga=social&wariant=campaign'), {service:'social', variant:'campaign'});
+});

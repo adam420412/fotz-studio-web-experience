@@ -12,6 +12,7 @@ export const enquiryVariants = {
   limited_care: 'Ograniczona opieka — 2 000 zł netto / miesiąc, do 4 godzin',
   materials: 'Produkcja materiałów', management: 'Regularna obsługa profili',
   campaign: 'Obsługa profili z reklamami', website: 'Nowa strona',
+  social_ads: 'Kampanie reklamowe w social media',
   redesign: 'Przebudowa istniejącej strony', shop: 'Sklep internetowy',
   configurator: 'Konfigurator produktów 3D',
   visualization: 'Wizualizacje lub animacje 3D',

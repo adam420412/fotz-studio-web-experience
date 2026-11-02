@@ -16,6 +16,7 @@ export const hydratedPages: Record<string, () => Promise<{ default: ComponentTyp
   "/uslugi/produkcja-video": () => import("@/pages/SpotyReklamowe"),
   "/social-media/obsluga": () => import("@/pages/SocialMedia"),
   "/agencja-social-media": () => import("@/pages/AgencjaSocialMedia"),
+  "/agencja-social-media/warszawa": () => import("@/pages/AgencjaSocialMediaWarszawa"),
   "/": () => import("@/pages/Index"),
   "/seo/pozycjonowanie-katowice": () => import("@/pages/SEOPozycjonowanieKatowice"),
   "/seo/pozycjonowanie-krakow": () => import("@/pages/SEOPozycjonowanieKrakow"),
