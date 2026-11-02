@@ -68,9 +68,8 @@ const sectorWork = {
     ],
   },
   'it-saas': {
-    title: 'Zobacz nasz projekt aplikacji',
+    title: 'Zobacz nasze realizacje',
     projects: [
-      { image: 'corco', name: 'CORCO', scope: 'Projekt platformy edukacyjnej', description: 'Platforma korepetycji online z ćwiczeniami, grywalizacją i kalendarzem zajęć. Przykład projektowania interfejsu produktu cyfrowego.', alt: 'Interfejs projektu platformy edukacyjnej CORCO', href: '/realizacje#projekt-corco', linkLabel: 'Zobacz projekt CORCO', fit: 'contain' },
       library.klagemVideo,
     ],
   },

@@ -35,8 +35,6 @@ import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/Str
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 
-import viz17 from "@/assets/wizualizacje/viz-17.webp";
-import viz18 from "@/assets/wizualizacje/viz-18.webp";
 import viz19 from "@/assets/wizualizacje/viz-19.webp";
 import viz20 from "@/assets/wizualizacje/viz-20.webp";
 
@@ -477,7 +475,7 @@ const LogoIBranding = () => {
           </FadeInView>
 
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {[viz17, viz18, viz19, viz20].map((img, i) => (
+            {[viz19, viz20].map((img, i) => (
               <FadeInView key={i} delay={i * 0.1}>
                 <div className="relative rounded-xl overflow-hidden border border-border/60 bg-card aspect-video">
                   <img

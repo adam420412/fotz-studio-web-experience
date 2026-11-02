@@ -13,7 +13,7 @@ import { business } from "@/data/business.mjs";
 import { cn } from "@/lib/utils";
 import "./realizacje.css";
 
-const projectCategories = ["Wszystkie", "Strony www", "Aplikacje i 3D", "Kampanie reklamowe", "E-commerce", "Wizualizacje 3D"];
+const projectCategories = ["Wszystkie", "Strony www", "Aplikacje i 3D", "Kampanie reklamowe", "E-commerce"].filter(category => category === "Wszystkie" || projects.some(project => project.category === category));
 const spotlightOrder = ["enea-stadion", "wsb-merito", "klagem", "dawid-edu"];
 const projectOrder = (id: string) => spotlightOrder.includes(id) ? spotlightOrder.indexOf(id) : spotlightOrder.length;
 const orderedProjects = [...projects].sort((a, b) => projectOrder(a.id) - projectOrder(b.id));

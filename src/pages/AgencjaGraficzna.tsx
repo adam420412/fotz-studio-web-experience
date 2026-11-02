@@ -19,16 +19,12 @@ import { Layout } from "@/components/layout/Layout";
 import { ServiceSchema, BreadcrumbSchema, FAQSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 
 // Import visualization images for portfolio section
-import viz17 from "@/assets/wizualizacje/viz-17.webp";
-import viz18 from "@/assets/wizualizacje/viz-18.webp";
 import viz19 from "@/assets/wizualizacje/viz-19.webp";
 import viz20 from "@/assets/wizualizacje/viz-20.webp";
 import viz21 from "@/assets/wizualizacje/viz-21.webp";
 import viz22 from "@/assets/wizualizacje/viz-22.webp";
 
 const portfolioImages = [
-  { src: viz17, title: "Wizualizacja sypialni", category: "Wnętrza" },
-  { src: viz18, title: "Salon ze schodami", category: "Wnętrza" },
   { src: viz19, title: "Salon nowoczesny", category: "Wnętrza" },
   { src: viz20, title: "Loft industrialny", category: "Wnętrza" },
   { src: viz21, title: "Przestrzeń dzienna", category: "Wnętrza" },
