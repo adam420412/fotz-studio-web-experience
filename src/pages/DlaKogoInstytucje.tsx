@@ -122,8 +122,8 @@ export default function DlaKogoInstytucje() {
   return (
     <Layout>
       <SEOHead
-        title="Marketing dla Instytucji i Wydarzeń — Promocja Eventów i Kultury"
-        description="Marketing dla instytucji kultury, organizacji i wydarzeń — promocja eventów, reklama imprez, social media i produkcja wideo. Fotz Studio wspiera organizatorów w budowaniu zasięgów i sprzedaży biletów."
+        title="Marketing dla Instytucji i Wydarzeń | FOTZ"
+        description="Marketing dla instytucji kultury, organizacji i wydarzeń — promocja eventów, reklama imprez, social media i produkcja wideo."
         canonical="https://www.fotz-studio.pl/dla-kogo/instytucje"
         keywords="marketing dla instytucji, strona internetowa instytucji, digital marketing organizacje, marketing nonprofit"
       />

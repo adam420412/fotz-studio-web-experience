@@ -140,8 +140,8 @@ const LinkedInAds = () => {
       <OrganizationSchema />
       <Layout>
       <SEOHead
-        title="LinkedIn Ads Polska — Reklamy LinkedIn dla Firm B2B | Fotz Studio"
-        description="LinkedIn Ads Polska ✓ Kampanie reklamowe B2B na LinkedIn. Sponsored Content, InMail, Lead Gen Forms, ABM. Specjaliści LinkedIn Campaign Manager. Bezpłatna konsultacja dla firm B2B."
+        title="LinkedIn Ads Polska — Reklamy LinkedIn dla Firm B2B | FOTZ"
+        description="LinkedIn Ads Polska — kampanie reklamowe B2B: Sponsored Content, InMail, Lead Gen Forms, ABM. Specjaliści LinkedIn Campaign Manager."
         canonical="https://www.fotz-studio.pl/performance-marketing/linkedin-ads"
         keywords="linkedin ads polska, reklamy linkedin, kampanie linkedin b2b, linkedin campaign manager, agencja linkedin ads, marketing b2b linkedin"
       />

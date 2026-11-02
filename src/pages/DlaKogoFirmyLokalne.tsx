@@ -111,7 +111,7 @@ export default function DlaKogoFirmyLokalne() {
   return (
     <Layout>
       <SEOHead
-        title="Marketing dla Firm Lokalnych — Lokalne SEO i Google Moja Firma"
+        title="Marketing dla firm lokalnych — lokalne SEO | FOTZ"
         description="Marketing dla firm lokalnych: lokalne SEO, Google Moja Firma, reklamy lokalne Google Ads i Facebook. Pozyskaj więcej klientów z okolicy. Fotz Studio Poznań."
         canonical="https://www.fotz-studio.pl/dla-kogo/firmy-lokalne"
         keywords="marketing dla firm lokalnych, seo lokalne, google maps firma, reklama lokalna, local seo dla firm"

@@ -107,7 +107,7 @@ const PozycjonowanieKielce = () => {
     <Layout>
       <SEOHead
         title="Pozycjonowanie Kielce — Agencja SEO | Fotz Studio"
-        description="Pozycjonowanie stron Kielce. Agencja SEO Fotz Studio — audyt SEO, optymalizacja, link building. Niski SEO competition = szybkie wyniki. Bezpłatna konsultacja SEO!"
+        description="Pozycjonowanie stron Kielce. Agencja SEO FOTZ Studio — audyt, optymalizacja, link building. Niska konkurencja = szybkie wyniki."
         canonical="https://www.fotz-studio.pl/uslugi/pozycjonowanie/kielce"
         keywords="pozycjonowanie kielce, agencja seo kielce, seo kielce, pozycjonowanie stron kielce, seo dla firm kielce, seo świętokrzyskie, pozycjonowanie lokalne kielce"
       />

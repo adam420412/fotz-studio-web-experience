@@ -41,7 +41,7 @@ const CaseStudyPrzedszkole = () => {
   return (
     <Layout>
       <SEOHead
-        title="Przedszkole Mali Przyjaciele - Strona dla placówki edukacyjnej"
+        title="Przedszkole Mali Przyjaciele — strona www | FOTZ"
         description="Case study Przedszkole Mali Przyjaciele: strona internetowa dla placówki edukacyjnej. Responsywny design, SEO i zapisy online. Fotz Studio."
         canonical="https://www.fotz-studio.pl/realizacje/przedszkole"
         keywords="case study edukacja, marketing dla przedszkola realizacja"

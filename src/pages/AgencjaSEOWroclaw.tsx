@@ -113,7 +113,7 @@ export default function AgencjaSEOWroclaw() {
     <>
       <Layout>
         <SEOHead
-          title="Agencja SEO Wrocław | Pozycjonowanie stron Wrocław | FOTZ Studio"
+          title="Agencja SEO Wrocław | Pozycjonowanie stron Wrocław | FOTZ"
           description="Agencja SEO Wrocław — pozycjonujemy strony firm z Wrocławia. Top 10 Google. Sprawdź pakiety SEO dla firm wrocławskich!"
           canonical="https://www.fotz-studio.pl/agencja-seo-wroclaw"
           keywords="agencja seo wrocław, pozycjonowanie wrocław, seo wrocław, agencja seo wrocław cena, pozycjonowanie stron wrocław, seo dla firm wrocław, audyt seo wrocław, optymalizacja seo wrocław, pozycjonowanie lokalne wrocław, link building wrocław"

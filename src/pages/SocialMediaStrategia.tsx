@@ -35,7 +35,7 @@ const SocialMediaStrategia = () => {
   return (
     <>
       <SEOHead
-        title="Strategia Social Media — Planowanie i Zarządzanie Social Media"
+        title="Strategia social media — plan działania dla firm | FOTZ"
         description="Strategia social media dla firm — tworzenie strategii, calendar content, zarządzanie profilami i mierzenie efektów. Fotz Studio."
         canonical="https://www.fotz-studio.pl/social-media/strategia"
         keywords="strategia social media, social media strategia, plan social media, strategia marketingowa social media, jak zbudować strategię social media"

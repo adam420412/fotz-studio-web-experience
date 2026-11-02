@@ -10,7 +10,7 @@ export default function FacebookAdsBydgoszcz() {
   return (
     <>
       <SEOHead
-        title="Agencja Facebook Ads Bydgoszcz — reklamy Meta dla firm | Fotz.pl"
+        title="Agencja Facebook Ads Bydgoszcz — reklamy Meta dla firm"
         description="Facebook Ads Bydgoszcz ✓ Kampanie Meta Ads dla firm z Bydgoszczy i Kujaw. Od 400 zł/mies. Bezpłatna konsultacja!"
         canonical="https://www.fotz-studio.pl/performance-marketing/facebook-ads/bydgoszcz"
         keywords="facebook ads bydgoszcz, meta ads bydgoszcz, reklamy facebook bydgoszcz, agencja facebook ads bydgoszcz, kampanie facebook bydgoszcz, instagram ads bydgoszcz, facebook ads dla firm bydgoszcz, reklama na facebooku bydgoszcz, meta ads agencja bydgoszcz, facebook ads cennik bydgoszcz"

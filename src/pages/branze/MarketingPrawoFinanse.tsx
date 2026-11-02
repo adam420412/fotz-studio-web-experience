@@ -95,7 +95,7 @@ const MarketingPrawoFinanse = () => {
   return (
     <Layout>
       <SEOHead
-        title="Marketing dla Prawników i Finansów | Kancelarie, Doradcy | Fotz Studio"
+        title="Marketing dla Prawników i Finansów | Kancelarie, Doradcy"
         description="Marketing dla kancelarii prawnych i firm finansowych - strony WWW, LinkedIn, content marketing. Kampanie zgodne z regulacjami. Buduj autorytet eksperta."
         canonical="https://www.fotz-studio.pl/dla-kogo/prawo-finanse"
         keywords="marketing prawniczy, marketing kancelarii, agencja marketingowa kancelaria, marketing dla prawników, marketing finansowy, seo kancelaria prawna, linkedin dla prawników, content marketing prawo"

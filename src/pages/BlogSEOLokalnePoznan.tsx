@@ -34,7 +34,7 @@ const BlogSEOLokalnePoznan = () => {
     <>
       <SEOHead
         title="SEO lokalne Poznań — jak wygrać Local Pack?"
-        description="SEO lokalne Poznań — jak wygrać Local Pack Google, optymalizować Google Moja Firma i pozycjonować stronę na frazy lokalne. Kompletny poradnik lokalnego SEO dla firm z Poznania."
+        description="SEO lokalne Poznań — jak wygrać Local Pack Google, optymalizować Google Moja Firma i pozycjonować stronę na frazy lokalne."
         ogType="article"
         canonical="https://www.fotz-studio.pl/seo/lokalne-poznan"
         keywords="SEO lokalne Poznań, pozycjonowanie lokalne, Google Moja Firma, Google Maps, NAP, lokalne wyszukiwanie, SEO dla firm lokalnych"

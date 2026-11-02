@@ -99,7 +99,7 @@ export default function StronaOnePage() {
     <>
       <Layout>
         <SEOHead
-          title="Strona one page | Jednostronicowa strona internetowa | FOTZ Studio"
+          title="Strona one page | Jednostronicowa strona internetowa | FOTZ"
           description="Strona one page — elegancka jednostronicowa strona internetowa dla firm i freelancerów. Od 499 zł netto. Szybko, profesjonalnie, mobilna. Bezpłatna wycena!"
           canonical="https://www.fotz-studio.pl/uslugi/strona-one-page"
           keywords="strona one page, strona jednopodstronowa, one page website, landing page one page, strona internetowa jednostrona"

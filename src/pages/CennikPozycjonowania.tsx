@@ -127,7 +127,7 @@ const CennikPozycjonowania = () => {
   return (
     <>
       <SEOHead
-        title="Cennik pozycjonowania stron 2025 | Ile kosztuje SEO? | FOTZ Studio"
+        title="Cennik pozycjonowania stron | Ile kosztuje SEO? | FOTZ"
         description="Sprawdź aktualne ceny pozycjonowania stron w 2025. Pakiety SEO od 999 zł/mies. Transparentny cennik bez ukrytych kosztów. Bezpłatna wycena!"
         ogType="website"
         canonical="https://www.fotz-studio.pl/cennik-pozycjonowania"

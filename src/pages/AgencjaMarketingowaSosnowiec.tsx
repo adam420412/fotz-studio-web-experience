@@ -170,8 +170,8 @@ const AgencjaMarketingowaSosnowiec = () => {
   return (
     <>
       <SEOHead
-        title="Agencja marketingowa Sosnowiec - fotz studio | Marketing dla firm"
-        description="Agencja marketingowa Sosnowiec - kompleksowe usługi digital marketingu, kampanie Google Ads, social media, content marketing i produkcja filmowa. Pomagamy firmom z Sosnowca i Górnośląskiego Obszaru Metropolitalnego zdobywać klientów online."
+        title="Agencja marketingowa Sosnowiec — marketing dla firm | FOTZ"
+        description="Agencja marketingowa Sosnowiec - kompleksowe usługi digital marketingu, kampanie Google Ads, social media, content marketing i produkcja filmowa."
         canonical="https://www.fotz-studio.pl/agencja-marketingowa/sosnowiec"
         keywords="agencja marketingowa sosnowiec, marketing internetowy sosnowiec, agencja reklamowa sosnowiec, seo sosnowiec"
       />

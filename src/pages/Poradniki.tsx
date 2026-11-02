@@ -81,7 +81,7 @@ export default function Poradniki() {
     <>
       <SEOHead
         title="Poradniki Marketingowe | Fotz Studio"
-        description="Poradniki marketingowe Fotz Studio — praktyczne przewodniki po SEO, Google Ads, social media marketingu, content marketingu i tworzeniu stron internetowych. Od podstaw po zaawansowane strategie."
+        description="Poradniki marketingowe Fotz Studio — praktyczne przewodniki po SEO, Google Ads, social media marketingu, content marketingu i tworzeniu stron internetowych."
         canonical="https://www.fotz-studio.pl/poradniki"
         keywords="poradniki marketingowe, tutoriale marketing, przewodnik SEO, poradnik Google Ads, marketing cyfrowy"
       />

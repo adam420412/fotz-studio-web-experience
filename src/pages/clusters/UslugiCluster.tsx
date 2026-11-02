@@ -100,7 +100,7 @@ export default function UslugiCluster() {
       <OrganizationSchema />
       <Layout>
         <SEOHead
-          title="Usługi Marketingowe | Strony, SEO, Ads, Branding — FOTZ Studio"
+          title="Usługi marketingowe — strony, SEO, Ads, branding | FOTZ"
           description="Pełny zakres usług marketingowych: strony internetowe, SEO, Google Ads, branding, fotografia, wideo, e-commerce i social media. Poznań i cała Polska."
           canonical="https://www.fotz-studio.pl/uslugi"
         />

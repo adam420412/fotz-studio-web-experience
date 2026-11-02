@@ -158,7 +158,7 @@ export default function GoogleAdsGdynia() {
     <>
       <Layout>
         <SEOHead
-          title="Agencja Google Ads Gdynia — kampanie reklamowe dla firm | Fotz.pl"
+          title="Agencja Google Ads Gdynia — kampanie reklamowe dla firm"
           description="Google Ads Gdynia ✓ Kampanie dla firm z Gdyni i Trójmiasta. Od 400 zł/mies. Certyfikowani specjaliści. Bezpłatna konsultacja!"
           canonical="https://www.fotz-studio.pl/performance-marketing/google-ads/gdynia"
         keywords="google ads gdynia, kampanie google ads gdynia, agencja google ads gdynia, reklamy google gdynia, google adwords gdynia, sem gdynia, google ads dla firm gdynia, prowadzenie google ads gdynia, google ads cennik gdynia, reklama w google gdynia"

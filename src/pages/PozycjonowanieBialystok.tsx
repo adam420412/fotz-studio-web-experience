@@ -96,8 +96,8 @@ const PozycjonowanieBialystok = () => {
   return (
     <Layout>
       <SEOHead
-        title="Pozycjonowanie Białystok — Agencja SEO Podlaskie | Fotz Studio"
-        description="Pozycjonowanie stron Białystok i Podlaskie. Agencja SEO Fotz Studio — szybkie efekty, niższa konkurencja, white hat SEO. Bezpłatna konsultacja SEO dla firm z Białegostoku i regionu."
+        title="Pozycjonowanie Białystok — Agencja SEO Podlaskie | FOTZ"
+        description="Pozycjonowanie stron Białystok i Podlaskie. Agencja SEO Fotz Studio — szybkie efekty, niższa konkurencja, white hat SEO."
         canonical="https://www.fotz-studio.pl/uslugi/pozycjonowanie/bialystok"
         keywords="pozycjonowanie białystok, agencja seo białystok, seo białystok, pozycjonowanie stron białystok, seo dla firm białystok, pozycjonowanie lokalne białystok, audyt seo białystok, seo podlaskie, agencja marketingowa białystok"
       />

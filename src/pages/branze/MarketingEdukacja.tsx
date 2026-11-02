@@ -95,7 +95,7 @@ const MarketingEdukacja = () => {
   return (
     <Layout>
       <SEOHead
-        title="Marketing dla Edukacji | Szkoły, Uczelnie, Kursy | Fotz Studio"
+        title="Marketing dla Edukacji | Szkoły, Uczelnie, Kursy | FOTZ"
         description="Marketing dla placówek edukacyjnych - strony dla szkół, kampanie rekrutacyjne, e-learning. Zwiększ liczbę zgłoszeń i buduj prestiż placówki."
         canonical="https://www.fotz-studio.pl/dla-kogo/edukacja"
         keywords="marketing edukacyjny, marketing dla szkół, marketing uczelni, reklama szkoły, kampanie rekrutacyjne uczelnie, marketing kursów online, agencja marketingowa edukacja"

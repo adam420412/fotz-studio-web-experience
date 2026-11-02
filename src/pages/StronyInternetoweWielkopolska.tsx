@@ -100,7 +100,7 @@ export default function StronyInternetoweWielkopolska() {
       <div className="pt-20">
       <SEOHead
         title="Strony internetowe Wielkopolska | Poznań | FOTZ Studio"
-        description="Profesjonalne strony internetowe dla firm z Wielkopolski i Poznania. Mamy siedzibę w Poznaniu, specjalizujemy się w SEO dla branż lokalnych. Wycena indywidualna."
+        description="Profesjonalne strony internetowe dla firm z Wielkopolski i Poznania. Mamy siedzibę w Poznaniu, specjalizujemy się w SEO dla branż lokalnych."
         canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/wielkopolska"
         structuredData={{
           "@context": "https://schema.org",

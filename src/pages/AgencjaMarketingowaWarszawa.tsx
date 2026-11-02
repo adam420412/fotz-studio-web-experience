@@ -76,7 +76,7 @@ const faqs = [
 
 export default function AgencjaMarketingowaWarszawa() {
   return <>
-    <SEOHead title="Agencja marketingowa Warszawa — SEO i social media | FOTZ" description="Agencja marketingowa i reklamowa dla firm z Warszawy. Kampania reklamowa, SEO, social media, strategie marketingowe online i budżet reklamowy. Poznaj usługi FOTZ Studio." canonical={`https://www.fotz-studio.pl${path}`} />
+    <SEOHead title="Agencja marketingowa Warszawa — SEO i social media | FOTZ" description="Agencja marketingowa i reklamowa dla firm z Warszawy. Kampania reklamowa, SEO, social media, strategie marketingowe online i budżet reklamowy. Poznaj FOTZ." canonical={`https://www.fotz-studio.pl${path}`} />
     <ServiceEditorial path={path} title="Agencja marketingowa Warszawa — reklama i social media" eyebrow="FOTZ Studio · dla firm z Warszawy" area="Warszawa"
       lead="Łączymy strategię, reklamę, social media i stronę internetową w czytelną drogę do kontaktu. Pokaż nam ofertę i cel biznesowy — zaproponujemy zakres prac, materiały oraz sposób oceny zapytań. Pracujemy z Poznania, współpracę z firmami z Warszawy prowadzimy zdalnie."
       summary={["Ustalamy, jakie zlecenia chcesz pozyskiwać i co utrudnia kontakt.", "Dobieramy działania, własne materiały i harmonogram do budżetu.", "Przed startem otrzymujesz zakres, wycenę i podział odpowiedzialności."]}

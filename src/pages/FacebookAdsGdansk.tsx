@@ -215,7 +215,7 @@ export default function FacebookAdsGdansk() {
     <Layout>
       <div className="pt-20">
       <SEOHead
-        title="Agencja Facebook Ads Gdańsk — reklamy Meta dla firm | Fotz.pl"
+        title="Agencja Facebook Ads Gdańsk — reklamy Meta dla firm | FOTZ"
         description="Facebook Ads Gdańsk ✓ Kampanie Meta Ads (Facebook, Instagram) dla firm z Gdańska i Trójmiasta. Od 400 zł/mies. Bezpłatna konsultacja!"
         canonical="https://www.fotz-studio.pl/performance-marketing/facebook-ads/gdansk"
         keywords="facebook ads gdansk, meta ads gdansk, reklamy facebook gdansk, agencja facebook ads gdansk, kampanie facebook gdansk, instagram ads gdansk, facebook ads dla firm gdansk, reklama na facebooku gdansk, meta ads agencja gdansk, facebook ads cennik gdansk"
