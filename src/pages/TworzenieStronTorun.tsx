@@ -200,7 +200,7 @@ export default function TworzenieStronTorun() {
   return (
     <>
       <SEOHead
-        title="Tworzenie stron internetowych Toruń | Profesjonalne strony WWW"
+        title="Tworzenie stron internetowych Toruń | FOTZ"
         description="Tworzenie stron internetowych Toruń — profesjonalne strony WWW dla lokalnych firm. Wycena indywidualna. Szybko, z wynikami. Bezpłatna wycena!"
         canonical="https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych/torun"
         keywords="tworzenie stron internetowych toruń, strony internetowe toruń, tworzenie stron www toruń, projektowanie stron internetowych toruń, strony www toruń, tworzenie stron toruń, strona internetowa toruń, agencja webdesign toruń, projektowanie stron toruń, sklep internetowy toruń"

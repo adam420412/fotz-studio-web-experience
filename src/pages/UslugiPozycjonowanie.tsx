@@ -241,7 +241,7 @@ const UslugiPozycjonowanie = () => {
   return (
     <Layout>
       <SEOHead
-        title="Pozycjonowanie Stron Internetowych — Agencja SEO | Fotz Studio"
+        title="Pozycjonowanie Stron Internetowych — Agencja SEO | FOTZ"
         description="Profesjonalne pozycjonowanie stron internetowych w Google. Agencja SEO Fotz Studio — audyt, optymalizacja, link building. Sprawdź pakiety od 800 zł/mies.!"
         canonical="https://www.fotz-studio.pl/uslugi/pozycjonowanie"
         keywords="pozycjonowanie stron internetowych, usługi seo, agencja seo, seo dla firm, pozycjonowanie google, seo pozycjonowanie cennik, kampanie seo, pozycjonowanie stron cennik, seo audyt, pozycjonowanie organiczne"

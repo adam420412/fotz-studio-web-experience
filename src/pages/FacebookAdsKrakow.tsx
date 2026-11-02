@@ -46,7 +46,7 @@ export default function FacebookAdsKrakow() {
     <>
       <Layout>
         <SEOHead
-          title="Agencja Facebook Ads Kraków — reklamy Meta dla firm | Fotz.pl"
+          title="Agencja Facebook Ads Kraków — reklamy Meta dla firm | FOTZ"
           description="Facebook Ads Kraków ✓ Kampanie Meta Ads (Facebook, Instagram) od 400 zł/mies. Certyfikowani specjaliści, wyniki od 48h. Bezpłatna konsultacja!"
           canonical="https://www.fotz-studio.pl/performance-marketing/facebook-ads/krakow"
           keywords="facebook ads krakow, meta ads krakow, reklamy facebook krakow, agencja facebook ads krakow, kampanie facebook krakow, instagram ads krakow, facebook ads dla firm krakow, reklama na facebooku krakow, meta ads agencja krakow, facebook ads cennik krakow"

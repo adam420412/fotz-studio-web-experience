@@ -175,7 +175,7 @@ const StronyInternetoweKrakow = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe Kraków | Tworzenie i Projektowanie Stron WWW"
+        title="Strony internetowe Kraków — tworzenie stron WWW | FOTZ"
         description="Strony internetowe Kraków — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Krakowa. Fotz Studio."
         canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/krakow"
         keywords="strony internetowe kraków, tworzenie stron www kraków, projektowanie stron kraków, sklepy internetowe kraków, strona internetowa kraków, www kraków, wykonanie strony internetowej kraków, responsywna strona www kraków, wordpress kraków, nowoczesne strony www kraków, agencja stron internetowych kraków"

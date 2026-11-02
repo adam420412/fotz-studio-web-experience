@@ -88,7 +88,7 @@ export default function AgencjaMarketingowaOlsztyn() {
     <>
       <Layout>
         <SEOHead
-          title="Agencja Marketingowa Olsztyn | FOTZ Studio – Marketing dla firm"
+          title="Agencja Marketingowa Olsztyn — marketing dla firm | FOTZ"
           description="Agencja marketingowa w Olsztynie. Marketing online dla firm z Warmii i Mazur. Sezonowy marketing turystyczny. Bezpłatna konsultacja!"
           canonical="https://www.fotz-studio.pl/agencja-marketingowa-olsztyn"
           keywords="agencja marketingowa Olsztyn, marketing Olsztyn, agencja SEO Olsztyn, turystyka Mazury, hotel marketing"

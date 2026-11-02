@@ -20,7 +20,7 @@ export default function ProjektStronyInternetowej() {
   return (
     <>
       <SEOHead
-        title="Projekt strony internetowej | Profesjonalny design WWW | FOTZ Studio"
+        title="Projekt strony internetowej | Profesjonalny design WWW"
         description="Projekt strony internetowej od profesjonalnych designerów. Unikalne szablony, indywidualny design, mobile-first. Sprawdź portfolio i cennik fotz.pl!"
         canonical="https://www.fotz-studio.pl/uslugi/projekt-strony-internetowej"
         keywords="projekt strony internetowej, projektowanie strony www, projekt strony dla firmy, jak wygląda projekt strony, etapy tworzenia strony internetowej"

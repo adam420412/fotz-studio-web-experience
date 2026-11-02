@@ -88,7 +88,7 @@ export default function AgencjaMarketingowaTorun() {
     <>
       <Layout>
         <SEOHead
-          title="Agencja Marketingowa Toruń | FOTZ Studio – Marketing dla firm"
+          title="Agencja Marketingowa Toruń — marketing dla firm | FOTZ"
           description="Agencja marketingowa w Toruniu. Marketing internetowy, SEO i reklamy dla firm z Torunia. Bezpłatna konsultacja!"
           canonical="https://www.fotz-studio.pl/agencja-marketingowa-torun"
           keywords="agencja marketingowa Toruń, marketing Toruń, agencja SEO Toruń, turystyka, hotele, restauracje, Google Ads, social media"

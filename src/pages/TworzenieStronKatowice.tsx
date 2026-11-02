@@ -133,7 +133,7 @@ export default function TworzenieStronKatowice() {
   return (
     <>
       <SEOHead
-        title="Tworzenie stron internetowych Katowice | Profesjonalne strony WWW"
+        title="Tworzenie stron internetowych Katowice | FOTZ"
         description="Tworzenie stron internetowych Katowice i Śląsk — profesjonalne strony dla firm. Wycena indywidualna. Bezpłatna wycena!"
         canonical="https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych/katowice"
         keywords="tworzenie stron internetowych katowice, strony internetowe katowice, tworzenie stron www katowice, projektowanie stron internetowych katowice, strony www katowice, strony internetowe śląsk, tworzenie stron katowice, strona internetowa katowice, projektowanie stron katowice, sklep internetowy katowice"

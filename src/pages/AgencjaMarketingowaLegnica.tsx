@@ -216,7 +216,7 @@ export default function AgencjaMarketingowaLegnica() {
       <OrganizationSchema />
       <Layout>
       <SEOHead
-        title="Agencja marketingowa Legnica — fotz studio | Marketing dla firm"
+        title="Agencja marketingowa Legnica — marketing dla firm | FOTZ"
         description="Agencja marketingowa Legnica. Fotz Studio — strony internetowe, SEO, Google Ads dla firm z Legnicy. Bezpłatna wycena!"
         canonical="https://www.fotz-studio.pl/agencja-marketingowa/legnica"
         keywords="agencja marketingowa Legnica, marketing internetowy Legnica, agencja reklamowa Legnica, kampanie reklamowe Legnica, agencja SEO Legnica, Google Ads Legnica, digital marketing Legnica, marketing dla firm Legnica, marketing produkcja Legnica"

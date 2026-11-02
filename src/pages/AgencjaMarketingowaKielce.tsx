@@ -137,7 +137,7 @@ const AgencjaMarketingowaKielce = () => {
   return (
     <>
       <SEOHead
-        title="Agencja marketingowa Kielce - fotz studio | Marketing internetowy"
+        title="Agencja marketingowa Kielce — marketing internetowy | FOTZ"
         description="Agencja marketingowa w Kielcach. Tworzymy strony internetowe, pozycjonowanie SEO, kampanie Google Ads i branding dla firm z Kielc i Świętokrzyskiego."
         canonical="https://www.fotz-studio.pl/agencja-marketingowa/kielce"
         keywords="agencja marketingowa kielce, marketing internetowy kielce, agencja reklamowa kielce, seo kielce, google ads kielce"

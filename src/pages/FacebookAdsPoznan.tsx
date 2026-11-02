@@ -215,7 +215,7 @@ export default function FacebookAdsPoznan() {
     <Layout>
       <div className="pt-20">
       <SEOHead
-        title="Agencja Facebook Ads Poznań — reklamy Meta dla firm | Fotz.pl"
+        title="Agencja Facebook Ads Poznań — reklamy Meta dla firm | FOTZ"
         description="Facebook Ads Poznań ✓ Kampanie Meta Ads (Facebook, Instagram) dla firm z Poznania i Wielkopolski. Od 400 zł/mies. Bezpłatna konsultacja!"
         canonical="https://www.fotz-studio.pl/performance-marketing/facebook-ads/poznan"
         keywords="facebook ads poznan, meta ads poznan, reklamy facebook poznan, agencja facebook ads poznan, kampanie facebook poznan, instagram ads poznan, facebook ads dla firm poznan, reklama na facebooku poznan, meta ads agencja poznan, facebook ads cennik poznan"

@@ -35,7 +35,7 @@ const SocialMediaAnalityka = () => {
   return (
     <>
       <SEOHead
-        title="Analityka Social Media — Mierzenie Efektów i KPI Social Media"
+        title="Analityka social media — raportowanie wyników | FOTZ"
         description="Analityka social media — mierzenie efektów kampanii, KPI, raporty zasięgów i zaangażowania. Optymalizacja działań w oparciu o dane. Fotz Studio."
         canonical="https://www.fotz-studio.pl/social-media/analityka"
         keywords="analityka social media, raporty social media, statystyki social media, mierzenie wyników social media, kpi social media"

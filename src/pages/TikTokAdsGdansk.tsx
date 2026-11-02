@@ -53,7 +53,7 @@ export const TikTokAdsGdansk = () => {
     <Layout>
       <SEOHead
         title="TikTok Ads Gdańsk | Fotz Studio"
-        description="Agencja TikTok Ads Gdańsk — kampanie TikTok for Business dla firm z Gdańska i Trójmiasta. In-Feed Ads, Spark Ads, TikTok Pixel, kreacje wideo i optymalizacja konwersji w Fotz.pl."
+        description="Reklamy TikTok Ads Gdańsk — kampanie TikTok dla firm z Trójmiasta: In-Feed Ads, Spark Ads i kreacje wideo."
         canonical="https://www.fotz-studio.pl/performance-marketing/tiktok-ads/gdansk"
         keywords="tiktok ads gdańsk, agencja tiktok ads gdańsk, reklamy tiktok trójmiasto, tiktok for business gdańsk, tiktok pixel gdańsk, tiktok ads manager gdańsk, kampanie tiktok gdańsk, in-feed ads gdańsk"
       />

@@ -169,7 +169,7 @@ export default function AgencjaMarketingowa() {
   return (
     <>
       <SEOHead
-        title="Agencja marketingowa Poznań — Fotz Studio | Strony, SEO, Reklamy"
+        title="Agencja marketingowa Poznań — strony, SEO, reklamy | FOTZ"
         description="Agencja marketingowa Poznań: strategia, strony WWW, SEO, Google Ads, social media, branding i video. Fotz Studio pomaga firmom rosnąć."
         canonical="https://www.fotz-studio.pl/agencja-marketingowa"
         keywords="agencja marketingowa Poznań, Fotz Studio, strony internetowe, SEO, reklamy Google Ads, branding, social media marketing, produkcja video"

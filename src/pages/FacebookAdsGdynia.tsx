@@ -160,7 +160,7 @@ export default function FacebookAdsGdynia() {
     <>
       <Layout>
         <SEOHead
-          title="Agencja Facebook Ads Gdynia — reklamy Meta dla firm | Fotz.pl"
+          title="Agencja Facebook Ads Gdynia — reklamy Meta dla firm | FOTZ"
           description="Facebook Ads Gdynia ✓ Kampanie Meta Ads dla firm z Gdyni i Trójmiasta. Od 400 zł/mies. Bezpłatna konsultacja!"
           canonical="https://www.fotz-studio.pl/performance-marketing/facebook-ads/gdynia"
         keywords="facebook ads gdynia, meta ads gdynia, reklamy facebook gdynia, agencja facebook ads gdynia, kampanie facebook gdynia, instagram ads gdynia, facebook ads dla firm gdynia, reklama na facebooku gdynia, meta ads agencja gdynia, facebook ads cennik gdynia"

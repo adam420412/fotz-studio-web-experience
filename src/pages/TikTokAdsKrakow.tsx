@@ -62,8 +62,8 @@ export default function TikTokAdsKrakow() {
   return (
     <Layout>
       <SEOHead
-        title="TikTok Ads Kraków — agencja kampanii reklamowych TikTok | Fotz.pl"
-        description="Reklamy TikTok Ads Kraków — agencja Fotz.pl. Kampanie TikTok dla firm z Krakowa i Małopolski: In-Feed Ads, Spark Ads, kreacje wideo. Targetowanie Gen Z i Millenialsów. Bezpłatna konsultacja."
+        title="TikTok Ads Kraków — agencja kampanii reklamowych TikTok"
+        description="Reklamy TikTok Ads Kraków — kampanie dla firm z Małopolski: In-Feed Ads, Spark Ads i kreacje wideo. Bezpłatna konsultacja!"
         canonical="https://www.fotz-studio.pl/performance-marketing/tiktok-ads/krakow"
         keywords="tiktok ads krakow, reklamy tiktok krakow, agencja tiktok ads krakow, kampanie tiktok krakow, tiktok advertising krakow, tiktok ads dla firm krakow, tiktok ads cennik krakow"
       />

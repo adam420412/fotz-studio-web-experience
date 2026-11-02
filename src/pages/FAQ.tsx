@@ -180,8 +180,8 @@ export default function FAQ() {
       <OrganizationSchema />
       <Layout>
       <SEOHead
-        title="FAQ — Najczęściej Zadawane Pytania o Marketing, SEO i Strony WWW"
-        description="FAQ Fotz Studio — odpowiedzi na najczęstsze pytania o SEO, marketing internetowy, tworzenie stron www, Google Ads i social media. Wszystko, co chcesz wiedzieć o naszych usługach, cenach i procesie współpracy."
+        title="FAQ — najczęściej zadawane pytania | FOTZ"
+        description="FAQ Fotz Studio — odpowiedzi na najczęstsze pytania o SEO, marketing internetowy, tworzenie stron www, Google Ads i social media."
         canonical="https://www.fotz-studio.pl/faq"
         keywords="faq fotz studio, pytania i odpowiedzi, pomoc, kontakt"
       />

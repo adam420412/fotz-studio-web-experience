@@ -121,7 +121,7 @@ export default function StronaWordPress() {
   return (
     <>
       <SEOHead
-        title="Strona WordPress dla firmy | Tworzenie stron WordPress | FOTZ Studio"
+        title="Strona WordPress dla firmy | Tworzenie stron WordPress"
         description="Tworzenie stron na WordPress — od wizytówki do zaawansowanego e-commerce. Responsywne, szybkie i SEO-friendly strony WordPress. Wycena od 1999 zł!"
         canonical="https://www.fotz-studio.pl/uslugi/strona-wordpress"
         keywords="strona wordpress, strona internetowa wordpress, tworzenie stron wordpress, wordpress dla firm, strona www wordpress, wordpress agencja"

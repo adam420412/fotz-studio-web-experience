@@ -80,7 +80,7 @@ function GoogleAdsBialystok() {
   return (
     <Layout>
       <SEOHead
-        title="Google Ads Białystok — agencja kampanii reklamowych | Fotz.pl"
+        title="Google Ads Białystok — agencja kampanii reklamowych | FOTZ"
         description="Google Ads Białystok — agencja Fotz.pl. Kampanie Google Ads dla firm z Białegostoku. Reklamy w wyszukiwarce i Display Network. Bezpłatna konsultacja!"
         canonical={canonicalUrl}
         keywords="google ads białystok, agencja google ads białystok, kampanie google ads białystok, reklamy google białystok, google ads dla firm białystok, sem białystok, adwords białystok"

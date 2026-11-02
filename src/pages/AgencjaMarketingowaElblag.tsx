@@ -8,7 +8,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { CheckCircle2, ArrowRight } from "lucide-react";
 
 export const AgencjaMarketingowaElblag = () => {
-  const seoTitle = "Agencja marketingowa Elbląg - fotz studio | Marketing dla firm";
+  const seoTitle = "Agencja marketingowa Elbląg — marketing dla firm | FOTZ";
   const seoDescription = "Profesjonalna agencja marketingowa w Elblągu. Oferujemy kompleksowe usługi marketingowe dla firm. Zwiększ widoczność swojej marki z fotz studio.";
 
   const breadcrumbItems = [

@@ -206,7 +206,7 @@ export default function TworzenieStronWroclaw() {
   return (
     <>
       <SEOHead
-        title="Tworzenie stron internetowych Wrocław | Profesjonalne strony WWW"
+        title="Tworzenie stron internetowych Wrocław | FOTZ"
         description="Tworzymy profesjonalne strony internetowe we Wrocławiu. Szybkie, responsywne strony dla firm z Dolnego Śląska. Wycena indywidualna. Bezpłatna wycena!"
         canonical="https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych/wroclaw"
         keywords="tworzenie stron internetowych wrocław, strony internetowe wrocław, tworzenie stron www wrocław, projektowanie stron internetowych wrocław, strony www wrocław, sklepy internetowe wrocław, projektowanie stron www wrocław, agencja webdesign wrocław, tworzenie stron wrocław, strona internetowa wrocław"

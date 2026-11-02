@@ -35,7 +35,7 @@ const CaseStudyFriendlyGas = () => {
     <Layout>
       <SEOHead
         title="Friendly Gas - Sprzedaż Gazu Online - Case Study"
-        description="Case study Friendly Gas: strona internetowa z intuicyjnym systemem zamówień gazu online, płatnościami i automatyzacją. Wzrost konwersji o 140%. Realizacja Fotz Studio obejmowała także SEO i identyfikację wizualną."
+        description="Case study Friendly Gas: strona internetowa z intuicyjnym systemem zamówień gazu online, płatnościami i automatyzacją. Wzrost konwersji o 140%."
         canonical="https://www.fotz-studio.pl/realizacje/friendly-gas"
         keywords="case study seo, realizacja pozycjonowania, seo case study"
       />

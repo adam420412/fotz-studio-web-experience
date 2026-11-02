@@ -95,7 +95,7 @@ const MarketingAutomotive = () => {
   return (
     <Layout>
       <SEOHead
-        title="Marketing dla Branży Motoryzacyjnej | Salony, Dealerzy, Serwisy | Fotz Studio"
+        title="Marketing dla Branży Motoryzacyjnej | FOTZ"
         description="Marketing dla branży motoryzacyjnej - strony dla dealerów, fotografia samochodów, spoty reklamowe, kampanie leadowe. Zwiększ sprzedaż w salonie."
         canonical="https://www.fotz-studio.pl/dla-kogo/automotive"
         keywords="marketing motoryzacyjny, marketing dla dealerów, agencja marketingowa motoryzacja, reklama salonu samochodowego, kampanie google ads motoryzacja, social media motoryzacja, fotografia motoryzacyjna, marketing serwisu samochodowego"

@@ -105,7 +105,7 @@ export default function AgencjaMarketingowaWalbrzych() {
     <>
       <Layout>
         <SEOHead
-          title="Agencja marketingowa Wałbrzych - fotz studio | Marketing dla firm"
+          title="Agencja marketingowa Wałbrzych — marketing dla firm | FOTZ"
           description="Agencja marketingowa Wałbrzych. Fotz Studio — strony WWW, SEO, Google Ads, social media. Marketing dla produkcji i firm B2B. Bezpłatna konsultacja!"
           canonical="https://www.fotz-studio.pl/agencja-marketingowa/walbrzych"
           keywords="agencja marketingowa wałbrzych, marketing internetowy wałbrzych, agencja reklamowa wałbrzych, seo wałbrzych"

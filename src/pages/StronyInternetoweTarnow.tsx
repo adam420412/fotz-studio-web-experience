@@ -87,7 +87,7 @@ const StronyInternetoweTarnow = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe Tarnów | Tworzenie i Projektowanie Stron WWW"
+        title="Strony internetowe Tarnów — tworzenie stron WWW | FOTZ"
         description="Strony internetowe Tarnów — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Tarnowa. Fotz Studio."
         canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/tarnow"
         keywords="strony internetowe tarnów, tworzenie stron tarnów, strony www tarnów, projektowanie stron tarnów"

@@ -19,7 +19,7 @@ export default function TworzenieStronWWW() {
   return (
     <>
       <SEOHead
-        title="Tworzenie stron WWW | Profesjonalne strony internetowe | FOTZ Studio"
+        title="Tworzenie stron WWW | Profesjonalne strony internetowe"
         description="Tworzymy profesjonalne strony WWW dla firm w całej Polsce. Szybkie, responsywne, zoptymalizowane pod SEO. Wycena indywidualna. Bezpłatna wycena!"
         canonical="https://www.fotz-studio.pl/uslugi/tworzenie-stron-www"
         keywords="tworzenie stron www, tworzenie stron internetowych, strony www dla firm, tworzenie witryn internetowych, strona www cena"

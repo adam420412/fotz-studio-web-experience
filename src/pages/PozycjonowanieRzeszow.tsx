@@ -96,7 +96,7 @@ const PozycjonowanieRzeszow = () => {
   return (
     <Layout>
       <SEOHead
-        title="Pozycjonowanie Rzeszów — Agencja SEO Podkarpacie | Fotz Studio"
+        title="Pozycjonowanie Rzeszów — Agencja SEO Podkarpacie | FOTZ"
         description="Pozycjonowanie stron Rzeszów i Podkarpacie. Agencja SEO Fotz Studio — szybkie efekty, niskie KD. Bezpłatna konsultacja SEO!"
         canonical="https://www.fotz-studio.pl/uslugi/pozycjonowanie/rzeszow"
         keywords="pozycjonowanie rzeszów, agencja seo rzeszów, seo rzeszów, pozycjonowanie stron rzeszów, seo dla firm rzeszów, seo podkarpacie, pozycjonowanie lokalne rzeszów"

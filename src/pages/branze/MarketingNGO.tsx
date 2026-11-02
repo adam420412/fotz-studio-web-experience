@@ -95,7 +95,7 @@ const MarketingNGO = () => {
   return (
     <Layout>
       <SEOHead
-        title="Marketing dla NGO i Fundacji | Organizacje Pozarządowe | Fotz Studio"
+        title="Marketing dla NGO i Fundacji | Organizacje Pozarządowe"
         description="Marketing dla organizacji pozarządowych - strony dla fundacji, kampanie fundraisingowe, filmy społeczne. Zwiększ wpływy z darowizn i buduj społeczność."
         canonical="https://www.fotz-studio.pl/dla-kogo/ngo"
         keywords="marketing ngo, marketing fundacji, marketing organizacji pozarządowych, kampanie fundraisingowe, marketing non-profit, social media ngo, reklama fundacji, filmy społeczne"

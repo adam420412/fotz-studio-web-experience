@@ -42,7 +42,7 @@ export default function CaseStudyWsbMerito() {
     <Layout>
       <SEOHead
         title="WSB Merito × Enea Stadion — spot rekrutacyjny | FOTZ Studio"
-        description="Spot rekrutacyjny dla studiów podyplomowych Event Manager Uniwersytetu WSB Merito w Poznaniu i Enea Stadionu: koncepcja, scenariusz, zdjęcia na kampusie i stadionie, montaż 4K."
+        description="Spot rekrutacyjny dla studiów podyplomowych Uniwersytetu WSB Merito w Poznaniu: koncepcja, scenariusz i zdjęcia na kampusie."
         canonical="https://www.fotz-studio.pl/realizacje/wsb-merito"
         ogImage="https://www.fotz-studio.pl/case-studies/wsb-merito/spot-stadion-1280.webp"
         ogType="article"

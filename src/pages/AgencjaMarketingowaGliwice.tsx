@@ -72,7 +72,7 @@ export default function AgencjaMarketingowaGliwice() {
     <>
       <Layout>
         <SEOHead
-          title="Agencja marketingowa Gliwice - fotz studio | Marketing dla firm"
+          title="Agencja marketingowa Gliwice — marketing dla firm | FOTZ"
           description="Agencja marketingowa Gliwice. Fotz Studio — strony WWW, SEO, kampanie Google/Meta, social media dla firm z Gliwic. Bezpłatna konsultacja!"
           canonical="https://www.fotz-studio.pl/agencja-marketingowa/gliwice"
           keywords="agencja marketingowa gliwice, marketing internetowy gliwice, agencja reklamowa gliwice, seo gliwice, google ads gliwice, agencja marketingowa śląsk"
