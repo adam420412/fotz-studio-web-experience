@@ -115,13 +115,15 @@ export function CaseStudies() {
               <div className="grid lg:grid-cols-2">
                 {/* Image */}
                 <div className="relative aspect-video lg:aspect-auto lg:min-h-[360px] overflow-hidden">
-                  <OptimizedImage
-                    src={featuredCase.image}
-                    alt={featuredCase.title}
-                    className="w-full h-full"
-                    sizes="(max-width: 1024px) 100vw, 50vw"
-                    priority={true}
-                  />
+                  <div className="absolute inset-0">
+                    <OptimizedImage
+                      src={featuredCase.image}
+                      alt={featuredCase.title}
+                      className="w-full h-full"
+                      sizes="(max-width: 1024px) 100vw, 50vw"
+                      priority={true}
+                    />
+                  </div>
                   <div
                     className="absolute inset-0 hidden lg:block"
                     style={{
@@ -224,12 +226,14 @@ export function CaseStudies() {
               style={{ borderRadius: 20, border: "1px solid var(--dv-hair)" }}
             >
               <div className="relative aspect-[16/10] overflow-hidden">
-                <OptimizedImage
-                  src={c.image}
-                  alt={c.title}
-                  className="w-full h-full"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
+                <div className="absolute inset-0">
+                  <OptimizedImage
+                    src={c.image}
+                    alt={c.title}
+                    className="w-full h-full"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </div>
                 <div
                   className="absolute inset-0"
                   style={{

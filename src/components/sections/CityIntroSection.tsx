@@ -1,3 +1,4 @@
+import { InlineVideo } from "@/components/InlineVideo";
 import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 import type { ReactNode } from "react";
@@ -29,7 +30,7 @@ export const CityIntroSection = ({ content, cityName }: CityIntroSectionProps) =
         </div>
         {(content.videoSrc || content.imageSrc) && <figure className="min-w-0 lg:sticky lg:top-28">
           <div className="rounded-xl overflow-hidden border border-border bg-muted">
-            {content.videoSrc ? <video src={content.videoSrc} poster={content.imageSrc ?? "/fotz-reel-poster.jpg"} className="w-full aspect-video object-cover" controls playsInline preload="none" aria-label="Materiał z realizacji FOTZ Studio" /> : <img loading="lazy" decoding="async" src={content.imageSrc} alt={content.imageAlt ?? "Podgląd realizacji FOTZ Studio"} className="w-full aspect-video object-cover" />}
+            {content.videoSrc ? <InlineVideo src={content.videoSrc} poster={content.imageSrc ?? "/fotz-reel-poster.jpg"} className="w-full aspect-video bg-black object-contain" controls playsInline preload="none" aria-label="Materiał z realizacji FOTZ Studio" /> : <img loading="lazy" decoding="async" src={content.imageSrc} alt={content.imageAlt ?? "Podgląd realizacji FOTZ Studio"} className="w-full aspect-video object-cover" />}
           </div>
           <figcaption className="text-sm text-muted-foreground mt-4">Materiały z portfolio FOTZ Studio. <Link to="/realizacje" className="underline underline-offset-4">Zobacz zakres wykonanych prac</Link>.</figcaption>
         </figure>}

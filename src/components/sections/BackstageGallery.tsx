@@ -1,4 +1,5 @@
-import { useState } from "react";
+import * as Dialog from '@radix-ui/react-dialog';
+import { useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Camera, Sparkles, X, ChevronLeft, ChevronRight, Play } from "lucide-react";
 
@@ -46,6 +47,7 @@ export const BackstageGallery = ({
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showVideoLightbox, setShowVideoLightbox] = useState(false);
+  const videoTrigger = useRef<HTMLButtonElement>(null);
 
   const imagesToShow = showOnlyBackstage 
     ? backstageImages.filter(img => img.type === "backstage").slice(0, maxImages)
@@ -102,15 +104,15 @@ export const BackstageGallery = ({
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
             {/* Video Thumbnail */}
             {showVideo && (
-              <div
+              <button ref={videoTrigger} type="button" aria-label={`Odtwórz film: ${backstageVideo.title}`}
                 className="group relative overflow-hidden rounded-xl col-span-2 row-span-2 cursor-pointer ring-2 ring-primary/30"
                 onClick={() => setShowVideoLightbox(true)}
               >
-                <div className="aspect-video overflow-hidden">
+                <div className="relative aspect-video overflow-hidden">
                   <img
                     src={backstageVideo.thumbnail}
                     alt={backstageVideo.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"
                   />
                 </div>
@@ -128,7 +130,7 @@ export const BackstageGallery = ({
                   </div>
                   <h3 className="text-white text-sm sm:text-base font-semibold">{backstageVideo.title}</h3>
                 </div>
-              </div>
+              </button>
             )}
 
             {/* Images */}
@@ -142,11 +144,11 @@ export const BackstageGallery = ({
                 }`}
                 onClick={() => openLightbox(index)}
               >
-                <div className="aspect-[4/3] overflow-hidden">
+                <div className="relative aspect-[4/3] overflow-hidden">
                   <img
                     src={image.src}
                     alt={image.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     loading="lazy"
                   />
                 </div>
@@ -247,40 +249,19 @@ export const BackstageGallery = ({
       </AnimatePresence>
 
       {/* Video Lightbox */}
-      <AnimatePresence>
-        {showVideoLightbox && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4"
-            onClick={closeLightbox}
-          >
-            <button
-              onClick={closeLightbox}
-              className="absolute top-4 right-4 z-50 p-3 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
-            >
-              <X className="w-6 h-6 text-white" />
-            </button>
-
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.9 }}
-              className="w-full max-w-5xl aspect-video"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <iframe
-                src={`https://www.youtube.com/embed/${backstageVideo.youtubeId}?autoplay=1`}
-                title={backstageVideo.title}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="w-full h-full rounded-xl"
-              />
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      <Dialog.Root open={showVideoLightbox} onOpenChange={setShowVideoLightbox}>
+        <Dialog.Portal>
+          <Dialog.Overlay className="fixed inset-0 z-[120] bg-black/90" />
+          <Dialog.Content onCloseAutoFocus={event => { event.preventDefault(); videoTrigger.current?.focus(); }} aria-describedby={undefined} className="fixed left-1/2 top-1/2 z-[121] w-[calc(100%_-_1.5rem)] max-w-5xl max-h-[94dvh] -translate-x-1/2 -translate-y-1/2 overflow-y-auto rounded-2xl bg-black p-3 sm:p-4 text-white">
+            <Dialog.Title className="mb-4 pr-12 font-medium">{backstageVideo.title}</Dialog.Title>
+            <Dialog.Close asChild><button type="button" aria-label="Zamknij film" className="absolute top-2 right-2 flex h-11 w-11 items-center justify-center rounded-full bg-white/10"><X className="h-5 w-5" aria-hidden="true" /></button></Dialog.Close>
+            <div className="relative aspect-video max-h-[calc(100dvh-12rem)]">
+              <iframe src={`https://www.youtube.com/embed/${backstageVideo.youtubeId}?autoplay=1&playsinline=1`} title={backstageVideo.title} allow="autoplay; encrypted-media; picture-in-picture" allowFullScreen className="absolute inset-0 w-full h-full rounded-xl" />
+            </div>
+            <a href={`https://www.youtube.com/watch?v=${backstageVideo.youtubeId}`} target="_blank" rel="noopener noreferrer" className="mt-3 inline-flex min-h-11 items-center underline underline-offset-4 text-sm">Obejrzyj na YouTube<span className="sr-only"> (nowa karta)</span></a>
+          </Dialog.Content>
+        </Dialog.Portal>
+      </Dialog.Root>
     </>
   );
 };

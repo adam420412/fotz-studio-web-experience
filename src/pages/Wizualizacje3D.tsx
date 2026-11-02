@@ -622,7 +622,7 @@ const Wizualizacje3D = () => {
                       <img loading="lazy"
                         src={image.src}
                         alt={image.title}
-                        className="w-full h-full object-cover"
+                        className="absolute inset-0 w-full h-full object-cover"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity">
                         <span className="absolute bottom-3 left-3 text-white text-sm font-medium">{image.title}</span>
@@ -683,7 +683,7 @@ const Wizualizacje3D = () => {
                   <img loading="lazy"
                     src={image.src}
                     alt={image.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
                     <span className="absolute bottom-3 left-3 text-white text-sm font-medium">{image.title}</span>

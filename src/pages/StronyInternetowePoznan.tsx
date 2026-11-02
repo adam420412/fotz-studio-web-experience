@@ -465,11 +465,11 @@ const StronyInternetowePoznan = () => {
                     to={study.link}
                     className="group block rounded-2xl overflow-hidden bg-card border border-border/50 hover:border-primary/30 transition-all hover:shadow-2xl hover:shadow-primary/10"
                   >
-                    <div className="aspect-video overflow-hidden">
+                    <div className="relative aspect-video overflow-hidden">
                       <img loading="lazy" 
                         src={study.image} 
                         alt={study.title}
-                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                        className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                       />
                     </div>
                     <div className="p-6">

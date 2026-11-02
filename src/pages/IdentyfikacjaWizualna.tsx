@@ -523,7 +523,7 @@ const IdentyfikacjaWizualna = () => {
                 <img loading="lazy" 
                   src={item.src} 
                   alt={`Klagem - ${item.title}`} 
-                  className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                  className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -621,7 +621,7 @@ const IdentyfikacjaWizualna = () => {
                 <img loading="lazy" 
                   src={item.src} 
                   alt={`Ballinn - ${item.title}`} 
-                  className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
+                  className="absolute inset-0 w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0F0E54]/90 via-[#0F0E54]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">

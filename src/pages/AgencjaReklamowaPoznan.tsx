@@ -1,3 +1,4 @@
+import { InlineVideo } from "@/components/InlineVideo";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -347,13 +348,11 @@ const AgencjaReklamowaPoznan = () => {
             <motion.div variants={fadeIn} className="mb-12">
               <div className="max-w-2xl mx-auto">
                 <div className="relative aspect-[9/16] md:aspect-video rounded-2xl overflow-hidden border border-border bg-card">
-                  <video
+                  <InlineVideo
                     src="/videos/fotz-reel.mp4"
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    className="w-full h-full object-cover"
+                    poster="/videos/fotz-reel-poster.jpg"
+                    aria-label="Kulisy pracy FOTZ Studio"
+                    className="absolute inset-0 w-full h-full object-contain bg-black"
                   />
                 </div>
                 <p className="text-center mt-3 text-muted-foreground">Kulisy pracy Fotz Studio</p>

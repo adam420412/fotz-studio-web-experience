@@ -1,4 +1,5 @@
-import { useRef, useState } from 'react';
+import { InlineVideo } from "@/components/InlineVideo";
+import { useRef } from 'react';
 import * as Dialog from '@radix-ui/react-dialog';
 import { ArrowLeft, ArrowRight, ArrowUpRight, Play, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -13,13 +14,12 @@ type Project = (typeof instagramProjects)[number];
 function ProjectCard({ project, single, compact }: { project: Project; single: boolean; compact: boolean }) {
   const variants = images[project.id as keyof typeof images];
   const cover = variants.at(-1)!;
-  const [failed, setFailed] = useState(false);
   const video = videos[project.id as keyof typeof videos];
   const landscape = video.width > video.height;
   const enquiryUrl = portfolioEnquiryHref(project.id);
 
   return <article className={`min-w-0 snap-start overflow-hidden rounded-2xl border border-border bg-background ${single ? 'sm:flex' : ''}`}>
-    <Dialog.Root onOpenChange={() => setFailed(false)}>
+    <Dialog.Root>
       <Dialog.Trigger asChild>
         <button type="button" aria-label={`Odtwórz rolkę: ${project.name}`} className={`group relative block w-full aspect-[4/5] bg-black overflow-hidden focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-4 focus-visible:outline-white ${single ? 'sm:w-80 sm:shrink-0' : ''}`}>
           <img src={cover.src} srcSet={variants.map(image => `${image.src} ${image.width}w`).join(', ')} sizes={single ? '(min-width: 640px) 320px, 90vw' : '(min-width: 1280px) 400px, (min-width: 1024px) 30vw, (min-width: 640px) 45vw, 90vw'} width={cover.width} height={cover.height} alt={project.alt} loading="lazy" decoding="async" className={`absolute inset-0 h-full w-full ${!compact && project.contain ? 'object-contain' : 'object-cover'} motion-safe:transition-transform motion-safe:duration-300 motion-safe:group-hover:scale-[1.03]`} />
@@ -36,7 +36,7 @@ function ProjectCard({ project, single, compact }: { project: Project; single: b
             <Dialog.Description className="mt-1 text-xs text-white/65">{project.category}</Dialog.Description>
           </div>
           <Dialog.Close asChild><button type="button" aria-label="Zamknij rolkę" className="absolute right-2 top-2 flex h-11 w-11 items-center justify-center rounded-full bg-white/10 hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white"><X aria-hidden="true" className="h-5 w-5" /></button></Dialog.Close>
-          {failed ? <p role="alert" className="py-12 text-center text-sm">Nie udało się odtworzyć filmu. <a href={video.src} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">Otwórz plik w nowej karcie</a>.</p> : <video src={video.src} width={video.width} height={video.height} poster={cover.src} controls autoPlay playsInline preload="none" aria-label={`Rolka: ${project.name}`} onError={() => setFailed(true)} className="max-h-[68dvh] w-full rounded-lg bg-black object-contain" />}
+          <InlineVideo src={video.src} width={video.width} height={video.height} poster={cover.src} controls autoPlay playsInline preload="none" aria-label={`Rolka: ${project.name}`} className="max-h-[calc(100dvh-12rem)] w-full rounded-lg bg-black object-contain" />
           <div className="mt-4 flex flex-wrap items-center justify-between gap-3">
             <Dialog.Close asChild><Link to={enquiryUrl} onClick={() => trackConversion('contact_click', 'video')} className="dv-btn dv-btn-primary min-h-11">Chcę podobny film <ArrowRight aria-hidden="true" className="h-4 w-4" /></Link></Dialog.Close>
             <a href={project.url} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center gap-1 text-xs text-white/70 underline underline-offset-4 hover:text-white">Publikacja na Instagramie <ArrowUpRight aria-hidden="true" className="h-3 w-3" /><span className="sr-only"> (nowa karta)</span></a>

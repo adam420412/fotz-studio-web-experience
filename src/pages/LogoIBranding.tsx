@@ -479,11 +479,11 @@ const LogoIBranding = () => {
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {[viz17, viz18, viz19, viz20].map((img, i) => (
               <FadeInView key={i} delay={i * 0.1}>
-                <div className="rounded-xl overflow-hidden border border-border/60 bg-card aspect-video">
+                <div className="relative rounded-xl overflow-hidden border border-border/60 bg-card aspect-video">
                   <img
                     src={img}
                     alt={`Projekt brandingowy Fotz Studio ${i + 1}`}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                    className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                   />
                 </div>

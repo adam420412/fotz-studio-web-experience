@@ -1,3 +1,4 @@
+import { InlineVideo } from "@/components/InlineVideo";
 import { Link } from 'react-router-dom';
 import { ArrowUpRight } from 'lucide-react';
 
@@ -11,13 +12,11 @@ export function PortfolioProjectGrid({ projects, images, threeColumns = false }:
           const variants = images[project.image];
           const source = variants.at(-1)!;
           return <figure data-project={project.image} key={project.image} className="min-w-0 rounded-2xl overflow-hidden border border-border bg-background">
-            <div className="aspect-[4/3] bg-muted/30">
+            <div className="relative aspect-[4/3] overflow-hidden bg-muted/30">
               {project.video ? (
-                <video controls playsInline preload="none" poster={source.src} src={project.video} aria-label={`Obejrzyj: ${project.name}`} className="h-full w-full object-contain bg-black">
-                  Twoja przeglądarka nie obsługuje wideo. <a href={project.video}>Otwórz film: {project.name}</a>.
-                </video>
+                <InlineVideo controls playsInline preload="none" poster={source.src} src={project.video} aria-label={`Obejrzyj: ${project.name}`} className="absolute inset-0 h-full w-full object-contain bg-black" />
               ) : (
-                <img src={source.src} srcSet={variants.map(image => `${image.src} ${image.width}w`).join(', ')} sizes={projects.length > 1 ? threeColumns ? '(min-width: 1280px) 30vw, (min-width: 768px) 45vw, 90vw' : '(min-width: 1280px) 600px, (min-width: 768px) 45vw, 90vw' : '(min-width: 1024px) 896px, 90vw'} width={source.width} height={source.height} alt={project.alt} loading="lazy" decoding="async" className={`h-full w-full ${project.fit === 'contain' ? 'object-contain' : 'object-cover'}`} style={project.position ? { objectPosition: project.position } : undefined} />
+                <img src={source.src} srcSet={variants.map(image => `${image.src} ${image.width}w`).join(', ')} sizes={projects.length > 1 ? threeColumns ? '(min-width: 1280px) 30vw, (min-width: 768px) 45vw, 90vw' : '(min-width: 1280px) 600px, (min-width: 768px) 45vw, 90vw' : '(min-width: 1024px) 896px, 90vw'} width={source.width} height={source.height} alt={project.alt} loading="lazy" decoding="async" className={`absolute inset-0 h-full w-full ${project.fit === 'contain' ? 'object-contain' : 'object-cover'}`} style={project.position ? { objectPosition: project.position } : undefined} />
               )}
             </div>
             <figcaption className="p-6 md:p-8">

@@ -84,7 +84,7 @@ export default function Realizacje() {
             {filteredProjects.map((project, index) => {
               const card = <>
                 <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-border bg-muted">
-                  <img src={portfolioPreviews[project.image]?.src ?? project.image} srcSet={portfolioPreviews[project.image]?.srcSet} sizes="(max-width: 639px) calc(100vw - 48px), (max-width: 767px) calc((100vw - 72px) / 2), (max-width: 1023px) calc((100vw - 120px) / 2), (max-width: 1279px) calc((100vw - 330px) / 2), 475px" alt={project.title} className="portfolio-media h-full w-full object-cover object-top" loading="lazy" decoding="async" width="720" height="540" />
+                  <img src={portfolioPreviews[project.image]?.src ?? project.image} srcSet={portfolioPreviews[project.image]?.srcSet} sizes="(max-width: 639px) calc(100vw - 48px), (max-width: 767px) calc((100vw - 72px) / 2), (max-width: 1023px) calc((100vw - 120px) / 2), (max-width: 1279px) calc((100vw - 330px) / 2), 475px" alt={project.title} className="portfolio-media absolute inset-0 h-full w-full object-cover object-top" loading="lazy" decoding="async" width="720" height="540" />
                   {project.featured && <span className="absolute top-4 left-4 rounded-full bg-black/80 px-3 py-1.5 text-xs text-white">Wybrana realizacja</span>}
                   <span aria-hidden="true" className="portfolio-card-icon absolute bottom-4 right-4 flex h-11 w-11 items-center justify-center rounded-full bg-background text-foreground shadow-sm">{project.hasCase || project.liveUrl ? <ArrowUpRight className="h-5 w-5" /> : <Expand className="h-5 w-5" />}</span>
                 </div>
@@ -124,7 +124,7 @@ export default function Realizacje() {
           </div>
           <div id="photo-grid" className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-5">
             {displayedPhotos.map((photo, index) => <button key={photo.src} type="button" aria-label={`Powiększ: ${photo.title}`} className="portfolio-photo relative aspect-[4/3] overflow-hidden rounded-xl group focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" onClick={() => setLightbox({ images: filteredGallery.map(image => ({ src: image.src, alt: image.title })), index })}>
-              <img src={portfolioPreviews[photo.src]?.src ?? photo.src} srcSet={portfolioPreviews[photo.src]?.srcSet} sizes="(max-width: 767px) calc((100vw - 60px) / 2), (max-width: 1279px) calc((100vw - 136px) / 3), 381px" alt={photo.title} className="portfolio-media w-full h-full object-cover" loading="lazy" decoding="async" width="640" height="480" />
+              <img src={portfolioPreviews[photo.src]?.src ?? photo.src} srcSet={portfolioPreviews[photo.src]?.srcSet} sizes="(max-width: 767px) calc((100vw - 60px) / 2), (max-width: 1279px) calc((100vw - 136px) / 3), 381px" alt={photo.title} className="portfolio-media absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async" width="640" height="480" />
               <span aria-hidden="true" className="absolute bottom-2 right-2 flex h-8 w-8 items-center justify-center rounded-full bg-black/65 text-white"><Expand className="w-4 h-4" /></span>
             </button>)}
           </div>

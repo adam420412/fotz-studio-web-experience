@@ -132,7 +132,7 @@ export default function DlaKogo() {
               const variants = industryImages[project.image as keyof typeof industryImages];
               const preview = variants[0];
               return <Link key={industry.slug} to={industry.href} className="group rounded-2xl overflow-hidden border border-border bg-background focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary">
-                <div className="aspect-[16/10] overflow-hidden bg-muted/30"><img src={preview.src} srcSet={variants.map(image => `${image.src} ${image.width}w`).join(', ')} sizes="(min-width: 1024px) 30vw, (min-width: 640px) 45vw, 90vw" width={preview.width} height={preview.height} alt={project.alt} loading="lazy" decoding="async" className="w-full h-full object-contain motion-safe:transition-transform motion-safe:duration-300 motion-safe:group-hover:scale-[1.02]" /></div>
+                <div className="relative aspect-[16/10] overflow-hidden bg-muted/30"><img src={preview.src} srcSet={variants.map(image => `${image.src} ${image.width}w`).join(', ')} sizes="(min-width: 1024px) 30vw, (min-width: 640px) 45vw, 90vw" width={preview.width} height={preview.height} alt={project.alt} loading="lazy" decoding="async" className="absolute inset-0 w-full h-full object-contain motion-safe:transition-transform motion-safe:duration-300 motion-safe:group-hover:scale-[1.02]" /></div>
                 <div className="p-6"><p className="text-sm text-muted-foreground mb-2">{project.name}</p><h3 className="font-heading text-xl flex justify-between items-center gap-3">{industry.name}<ArrowRight className="w-5 h-5 shrink-0" aria-hidden="true" /></h3></div>
               </Link>;
             })}

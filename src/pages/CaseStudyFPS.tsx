@@ -1,3 +1,4 @@
+import { InlineVideo } from "@/components/InlineVideo";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, ArrowRight, Globe, Search, Shield, Smartphone, Palette, Users, Play } from "lucide-react";
@@ -283,10 +284,11 @@ const CaseStudyFPS = () => {
             className="max-w-4xl mx-auto"
           >
             <div className="relative aspect-video rounded-2xl overflow-hidden border border-border/50 shadow-2xl shadow-primary/10 group">
-              <video
+              <InlineVideo
                 src="/videos/fps-poznan.mp4"
                 controls
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                aria-label="Prezentacja strony FPS Poznań"
+                className="absolute inset-0 w-full h-full bg-black object-contain"
                 poster={fpsImg}
               />
               {/* Decorative elements */}
