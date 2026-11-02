@@ -458,11 +458,11 @@ const StronyInternetoweKatowice = () => {
                     to={study.link}
                     className="group block rounded-xl overflow-hidden bg-background border border-border/50 hover:border-primary/30 transition-all"
                   >
-                    <div className="aspect-video overflow-hidden">
+                    <div className="relative aspect-video overflow-hidden">
                       <img loading="lazy" 
                         src={study.image} 
                         alt={study.title}
-                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                       />
                     </div>
                     <div className="p-6">

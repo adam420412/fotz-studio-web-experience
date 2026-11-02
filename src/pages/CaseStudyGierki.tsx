@@ -154,7 +154,7 @@ const CaseStudyGierki = () => {
                 onClick={() => { setLightboxIndex(index); setLightboxOpen(true); }}
                 className="relative aspect-square rounded-xl overflow-hidden group focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
               >
-                <img src={image.src} alt={image.alt} loading="lazy" width="400" height="400" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                <img src={image.src} alt={image.alt} loading="lazy" width="400" height="400" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
               </button>
             ))}
           </div>

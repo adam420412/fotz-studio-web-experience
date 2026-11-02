@@ -144,11 +144,11 @@ export const BackstageGallery = ({
                 }`}
                 onClick={() => openLightbox(index)}
               >
-                <div className="aspect-[4/3] overflow-hidden">
+                <div className="relative aspect-[4/3] overflow-hidden">
                   <img
                     src={image.src}
                     alt={image.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     loading="lazy"
                   />
                 </div>
