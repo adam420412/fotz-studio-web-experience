@@ -20,8 +20,6 @@ import eneaStadionImg from "@/assets/portfolio/enea-stadion-web.webp";
 import lauvjahImg from "@/assets/portfolio/lauvjah-web.webp";
 
 // Wizualizacje 3D
-import viz17 from "@/assets/wizualizacje/viz-17.webp";
-import viz18 from "@/assets/wizualizacje/viz-18.webp";
 import viz19 from "@/assets/wizualizacje/viz-19.webp";
 import viz20 from "@/assets/wizualizacje/viz-20.webp";
 import viz21 from "@/assets/wizualizacje/viz-21.webp";
@@ -315,15 +313,6 @@ export const projects = [
     liveUrl: "https://enea-stadion-nawigator.vercel.app",
   },
   {
-    id: "projekt-enea-zaproszenia",
-    title: "Enea Stadion: panel zaproszeń",
-    category: "Aplikacje i 3D",
-    description: "Panel wewnętrzny dla pracowników stadionu: wydarzenia, goście i wspólna pula zaproszeń. Pokazujemy go na spotkaniu.",
-    image: "/work/projekty/enea-zaproszenia.webp",
-    featured: false,
-    hasCase: false,
-  },
-  {
     id: "projekt-rsg",
     title: "Ready Steady Grow",
     category: "Strony www",
@@ -382,43 +371,6 @@ export const projects = [
     featured: false,
     hasCase: false,
     liveUrl: "https://eslogistics.pl",
-  },
-  {
-    id: "projekt-corco",
-    title: "CORCO",
-    category: "Aplikacje i 3D",
-    description: "Platforma korepetycji online z grywalizacją, ćwiczeniami dopasowanymi do ucznia i kalendarzem zajęć.",
-    image: "/work/projekty/corco.webp",
-    featured: false,
-    hasCase: false,
-    liveUrl: "https://corco.vercel.app",
-  },
-  {
-    id: "projekt-firezone",
-    title: "Fire Zone: panel operatora ppoż.",
-    category: "Aplikacje i 3D",
-    description: "Panel do pracy operatora ochrony przeciwpożarowej, dostępny po zalogowaniu. Pokazujemy go na spotkaniu.",
-    image: "/work/projekty/firezone.webp",
-    featured: false,
-    hasCase: false,
-  },
-  {
-    id: "viz-sypialnia",
-    title: "Wizualizacja sypialni",
-    category: "Wizualizacje 3D",
-    description: "Fotorealistyczna wizualizacja 3D sypialni w stylu japońskim.",
-    image: viz17,
-    featured: false,
-    hasCase: false,
-  },
-  {
-    id: "viz-salon-schody",
-    title: "Salon ze schodami (Klagem)",
-    category: "Wizualizacje 3D",
-    description: "Wizualizacja wnętrza salonu z nowoczesnymi schodami i meblami modułowymi Klagem.",
-    image: viz18,
-    featured: false,
-    hasCase: false,
   },
 ];
 
@@ -504,8 +456,6 @@ export const galleryImages = [
   { src: sessionFinal2, title: "Sesja zdjęciowa — efekt końcowy 2", category: "backstage" },
   
   // Wizualizacje 3D
-  { src: viz17, title: "Sypialnia japońska", category: "3d" },
-  { src: viz18, title: "Salon ze schodami", category: "3d" },
   { src: viz19, title: "Salon nowoczesny", category: "3d" },
   { src: viz20, title: "Loft industrialny", category: "3d" },
   { src: viz21, title: "Przestrzeń dzienna", category: "3d" },

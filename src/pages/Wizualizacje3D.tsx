@@ -39,8 +39,6 @@ import viz13 from "@/assets/wizualizacje/viz-13.webp";
 import viz14 from "@/assets/wizualizacje/viz-14.webp";
 import viz15 from "@/assets/wizualizacje/viz-15.png";
 import viz16 from "@/assets/wizualizacje/viz-16.webp";
-import viz17 from "@/assets/wizualizacje/viz-17.webp";
-import viz18 from "@/assets/wizualizacje/viz-18.webp";
 import viz19 from "@/assets/wizualizacje/viz-19.webp";
 import viz20 from "@/assets/wizualizacje/viz-20.webp";
 import viz21 from "@/assets/wizualizacje/viz-21.webp";
@@ -57,8 +55,6 @@ const portfolioCategories = [
 
 const portfolioImages = [
   // Wnętrza
-  { src: viz17, title: "Sypialnia - styl japoński", category: "interior" },
-  { src: viz18, title: "Salon ze schodami", category: "interior" },
   { src: viz19, title: "Salon nowoczesny", category: "interior" },
   { src: viz20, title: "Loft industrialny", category: "interior" },
   { src: viz21, title: "Przestrzeń dzienna", category: "interior" },
