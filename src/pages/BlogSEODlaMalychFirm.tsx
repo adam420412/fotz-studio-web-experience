@@ -95,7 +95,7 @@ const BlogSEODlaMalychFirm = () => {
       <BreadcrumbSchema items={breadcrumbs} />
       <FAQSchema items={faqItems} />
 
-      <article id="main-content" className="min-h-screen bg-white">
+      <article id="article-content" className="min-h-screen bg-white">
         <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16 px-4 md:px-8">
           <div className="max-w-3xl mx-auto">
             <div className="flex flex-wrap gap-2 mb-4">

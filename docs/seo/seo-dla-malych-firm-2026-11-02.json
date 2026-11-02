@@ -31,17 +31,17 @@
     },
     "final": {
       "contentScore": 95,
-      "scope": "article#main-content",
+      "scope": "article#article-content",
       "source": "dist/blog/seo-dla-malych-firm/index.html",
-      "selector": "article#main-content",
+      "selector": "article#article-content",
       "title": "SEO dla małych firm: plan działania 30/60/90 dni | FOTZ",
       "description": "SEO dla małych firm: priorytety, lokalne SEO i profil firmy w Google, frazy zakupowe, techniczne minimum, pomiar zapytań oraz plan 30/60/90 dni."
     }
   },
   "methodology": {
     "baseline": "Wynik 80 jest zapisanym baseline NeuronWriter dla pełnej strony, obejmującej także elementy poza treścią redakcyjną.",
-    "final": "Koordynator ocenił przez tę samą analizę wyłącznie element article z aktualnego dist, bez nawigacji i stopki, i uzyskał 95. Do źródła dodano następnie id=main-content, aby produkcję można było oceniać selektorem article#main-content.",
-    "comparability": "Baseline full-page 80 i final article#main-content 95 dotyczą różnych zakresów. Nie są przedstawiane jako identyczne ani bezpośrednio porównywalne pomiary.",
+    "final": "Koordynator ocenił przez tę samą analizę wyłącznie element article z aktualnego dist, bez nawigacji i stopki, i uzyskał 95. Artykuł otrzymał następnie id=article-content, aby produkcję można było oceniać selektorem article#article-content bez powielania identyfikatora main-content używanego przez Layout.",
+    "comparability": "Baseline full-page 80 i final article#article-content 95 dotyczą różnych zakresów. Nie są przedstawiane jako identyczne ani bezpośrednio porównywalne pomiary.",
     "interpretation": "Content score nie dowodzi pozycji, ruchu ani leadów. Dane GSC opisują wskazany okres bazowy i rozróżniają sumę dla frazy globalnie od pary zapytanie–URL."
   }
 }
