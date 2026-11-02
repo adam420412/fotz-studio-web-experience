@@ -86,8 +86,8 @@ export default function AgencjaKreaTywnaPoznan() {
       <OrganizationSchema />
       <Layout>
       <SEOHead
-        title="Agencja Kreatywna Poznań — Branding, Design, Kampanie Kreatywne"
-        description="Agencja kreatywna Poznań — branding, identyfikacja wizualna, kampanie kreatywne, produkcja wideo i content. Fotz Studio obsługuje wszystkie aspekty kreatywne Twojej marki: od koncepcji po gotowe materiały."
+        title="Agencja kreatywna Poznań — branding i kampanie | FOTZ"
+        description="Agencja kreatywna Poznań — branding, identyfikacja wizualna, kampanie kreatywne, produkcja wideo i content."
         canonical="https://www.fotz-studio.pl/agencja-kreatywna-poznan"
         keywords="agencja kreatywna poznań, studio kreatywne poznań, branding poznań, identyfikacja wizualna poznań, web design poznań, produkcja wideo poznań, grafika reklamowa poznań"
       />

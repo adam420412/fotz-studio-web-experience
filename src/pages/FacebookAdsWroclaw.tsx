@@ -196,7 +196,7 @@ export default function FacebookAdsWroclaw() {
   return (
     <Layout>
       <SEOHead
-        title="Agencja Facebook Ads Wrocław — reklamy Meta dla firm | Fotz.pl"
+        title="Agencja Facebook Ads Wrocław — reklamy Meta dla firm | FOTZ"
         description="Facebook Ads Wrocław ✓ Kampanie Meta Ads (Facebook, Instagram) od 400 zł/mies. Certyfikowani specjaliści. Bezpłatna konsultacja!"
         canonical="https://www.fotz-studio.pl/performance-marketing/facebook-ads/wroclaw"
         keywords="facebook ads wrocław, agencja facebook ads wrocław, kampanie facebook wrocław, reklamy facebook wrocław, meta ads wrocław, instagram ads wrocław"

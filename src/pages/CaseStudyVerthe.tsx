@@ -41,7 +41,7 @@ const CaseStudyVerthe = () => {
   return (
     <Layout>
       <SEOHead
-        title="Verthé - Sklep E-commerce z Kosmetykami Wegańskimi - Case Study"
+        title="Verthé — sklep e-commerce z kosmetykami | FOTZ"
         description="Case study Verthé: sklep e-commerce greckich kosmetyków wegańskich. SEM, SEO, produkcja foto/video i optymalizacja konwersji. Fotz Studio."
         canonical="https://www.fotz-studio.pl/realizacje/verthe"
         keywords="case study branding identyfikacja wizualna, realizacja logo"

@@ -87,7 +87,7 @@ const StronyInternetoweLodz = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe Łódź | Tworzenie i Projektowanie Stron WWW"
+        title="Strony internetowe Łódź — tworzenie stron WWW | FOTZ"
         description="Strony internetowe Łódź — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Łodzi. Fotz Studio."
         canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/lodz"
         keywords="strony internetowe łódź, tworzenie stron www łódź, projektowanie stron łódź, sklepy internetowe łódź, wykonanie strony internetowej łódź, responsywna strona www łódź, wordpress łódź, nowoczesne strony www łódź, agencja stron internetowych łódź"

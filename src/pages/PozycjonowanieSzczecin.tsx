@@ -97,7 +97,7 @@ const PozycjonowanieSzczecin = () => {
     <Layout>
       <SEOHead
         title="Pozycjonowanie Szczecin — Agencja SEO Zachodniopomorskie"
-        description="Pozycjonowanie stron Szczecin i Zachodniopomorskie. Agencja SEO Fotz Studio — audyt SEO, optymalizacja, link building. SEO dla rynku PL i DE. Bezpłatna konsultacja SEO!"
+        description="Pozycjonowanie stron Szczecin i Zachodniopomorskie. Agencja SEO Fotz Studio — audyt SEO, optymalizacja, link building. SEO dla rynku PL i DE."
         canonical="https://www.fotz-studio.pl/uslugi/pozycjonowanie/szczecin"
         keywords="pozycjonowanie szczecin, agencja seo szczecin, seo szczecin, pozycjonowanie stron szczecin, seo dla firm szczecin, seo zachodniopomorskie, pozycjonowanie lokalne szczecin"
       />

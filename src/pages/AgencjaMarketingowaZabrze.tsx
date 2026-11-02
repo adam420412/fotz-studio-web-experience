@@ -72,7 +72,7 @@ export default function AgencjaMarketingowaZabrze() {
     <>
       <Layout>
         <SEOHead
-          title="Agencja marketingowa Zabrze - fotz studio | Marketing dla firm"
+          title="Agencja marketingowa Zabrze — marketing dla firm | FOTZ"
           description="Agencja marketingowa Zabrze. Fotz Studio — strony WWW, SEO, kampanie Google/Meta, social media dla firm z Zabrza. Bezpłatna konsultacja!"
           canonical="https://www.fotz-studio.pl/agencja-marketingowa/zabrze"
           keywords="agencja marketingowa zabrze, marketing internetowy zabrze, agencja reklamowa zabrze, seo zabrze"

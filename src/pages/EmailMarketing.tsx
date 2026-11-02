@@ -121,7 +121,7 @@ export default function EmailMarketing() {
   return (
     <>
       <SEOHead
-        title="Email marketing dla firm — automation i newslettery | FOTZ Studio"
+        title="Email marketing dla firm — automation i newslettery | FOTZ"
         description="Email marketing — newslettery, automation, lead nurturing dla firm. Najwyższy ROI z wszystkich kanałów marketingowych. Obsługa email marketingu od 799 zł/mies.!"
         canonical="https://www.fotz-studio.pl/uslugi/email-marketing"
         keywords="email marketing, e-mail marketing, mailing, newsletter, marketing automation, kampanie email, newsletter marketing, automatyzacja email, agencja email marketing, skuteczny email marketing, mailing dla firm, obsługa email marketingu"

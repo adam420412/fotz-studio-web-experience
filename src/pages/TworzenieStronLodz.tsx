@@ -207,7 +207,7 @@ export default function TworzenieStronLodz() {
   return (
     <>
       <SEOHead
-        title="Tworzenie stron internetowych Łódź | Profesjonalne strony WWW"
+        title="Tworzenie stron internetowych Łódź | FOTZ"
         description="Tworzymy profesjonalne strony internetowe w Łodzi. Nowoczesne strony dla firm z łódzkiego. Wycena indywidualna. Bezpłatna wycena!"
         canonical="https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych/lodz"
         keywords="tworzenie stron internetowych łódź, strony internetowe łódź, tworzenie stron www łódź, strony www łódź, projektowanie stron internetowych łódź, tworzenie stron łódź, strona internetowa łódź, projektowanie stron łódź, agencja webdesign łódź, sklep internetowy łódź"

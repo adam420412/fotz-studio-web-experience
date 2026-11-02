@@ -52,8 +52,8 @@ export const TikTokAdsPoznan = () => {
   return (
     <Layout>
       <SEOHead
-        title="TikTok Ads Poznań — agencja kampanii reklamowych TikTok | Fotz.pl"
-        description="Reklamy TikTok Ads Poznań — agencja Fotz.pl. Kampanie TikTok dla firm z Poznania i Wielkopolski: In-Feed Ads, Spark Ads, kreacje wideo, optymalizacja konwersji. Bezpłatna konsultacja."
+        title="TikTok Ads Poznań — agencja kampanii reklamowych TikTok"
+        description="Reklamy TikTok Ads Poznań — kampanie dla firm z Wielkopolski: In-Feed, Spark Ads, kreacje wideo i optymalizacja konwersji."
         canonical="https://www.fotz-studio.pl/performance-marketing/tiktok-ads/poznan"
         keywords="tiktok ads poznan, reklamy tiktok poznan, agencja tiktok ads poznan, kampanie tiktok poznan, tiktok advertising poznan, tiktok ads dla firm poznan, tiktok ads cennik poznan"
       />

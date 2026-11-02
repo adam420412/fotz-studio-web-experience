@@ -35,8 +35,8 @@ const faqItems: FAQItem[] = [
 ];
 
 const CaseStudyStronaWWW: React.FC = () => {
-  const pageTitle = 'Strona internetowa dla firmy produkcyjnej — od 0 do 4,500 odwiedzin miesięcznie | Case Study';
-  const pageDescription = 'Case study: jak zamieniliśmy starą, niezniszczoną stronę firmy produkcyjnej w nowoczesny portal B2B generujący 4,500 organic visits i 34 leads miesięcznie. React, SEO techniczne, Core Web Vitals.';
+  const pageTitle = 'Strona WWW firmy produkcyjnej: 0 → 4 500 odw./mies. | FOTZ';
+  const pageDescription = 'Case study: przebudowa strony firmy produkcyjnej w nowoczesny portal B2B — 4 500 wizyt i 34 leady miesięcznie. React, SEO techniczne, Core Web Vitals.';
   const canonicalUrl = 'https://www.fotz-studio.pl/case-studies/strona-internetowa-dla-firmy-produkcyjnej';
 
   const breadcrumbs = [

@@ -77,7 +77,7 @@ const StronyInternetoweKalisz = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe Kalisz | Tworzenie i Projektowanie Stron WWW"
+        title="Strony internetowe Kalisz — tworzenie stron WWW | FOTZ"
         description="Strony internetowe Kalisz — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Kalisza. Fotz Studio."
         canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/kalisz"
         keywords="strony internetowe kalisz, tworzenie stron kalisz, strony www kalisz, projektowanie stron kalisz"

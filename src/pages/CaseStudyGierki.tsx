@@ -58,8 +58,8 @@ const CaseStudyGierki = () => {
   return (
     <Layout>
       <SEOHead
-        title="Gierky Activity Bar — strona, rezerwacje i zdjęcia wnętrz | FOTZ Studio"
-        description="Realizacja FOTZ dla Gierky Activity Bar w Poznaniu: strona WordPress z podstronami atrakcji i rezerwacją, sesja zdjęciowa wnętrz oraz bieżąca opieka nad treściami."
+        title="Gierky Activity Bar — strona, rezerwacje i zdjęcia wnętrz"
+        description="Realizacja FOTZ dla Gierky Activity Bar w Poznaniu: strona z rezerwacjami, sesja zdjęciowa wnętrz i bieżąca opieka."
         canonical="https://www.fotz-studio.pl/realizacje/gierki"
         ogType="article"
       />

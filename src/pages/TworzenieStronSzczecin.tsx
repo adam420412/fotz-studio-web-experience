@@ -201,7 +201,7 @@ export default function TworzenieStronSzczecin() {
   return (
     <>
       <SEOHead
-        title="Tworzenie stron internetowych Szczecin | Profesjonalne strony WWW"
+        title="Tworzenie stron internetowych Szczecin | FOTZ"
         description="Tworzenie stron internetowych Szczecin — profesjonalne strony WWW dla firm. Wycena indywidualna. Wersje PL+DE. Bezpłatna wycena!"
         canonical="https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych/szczecin"
         keywords="tworzenie stron internetowych szczecin, strony internetowe szczecin, tworzenie stron www szczecin, projektowanie stron internetowych szczecin, strony www szczecin, projektowanie i tworzenie stron internetowych szczecin, tworzenie stron szczecin, strona internetowa szczecin, agencja webdesign szczecin, sklep internetowy szczecin"

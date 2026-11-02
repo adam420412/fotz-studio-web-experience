@@ -55,7 +55,7 @@ export default function AgencjaMarketingowaZgorzelec() {
     <Layout>
       <SEOHead
         title="Agencja Marketingowa Zgorzelec - SEO, Strony WWW | FOTZ"
-        description="Agencja marketingowa w Zgorzelcu oferuje usługi SEO, tworzenie stron internetowych, Google Ads i marketing cyfrowy dla firm lokalnych i działających w regionie przygranicznym."
+        description="Agencja marketingowa w Zgorzelcu: SEO, tworzenie stron, Google Ads i marketing cyfrowy dla firm lokalnych."
         canonical="https://www.fotz-studio.pl/agencja-marketingowa/zgorzelec"
         keywords="agencja marketingowa zgorzelec, marketing internetowy zgorzelec, agencja reklamowa zgorzelec, seo zgorzelec"
       />

@@ -79,7 +79,7 @@ const StronyInternetoweZielonaGora = () => {
     <>
       <SEOHead
         title="Strony Internetowe Zielona Góra | Fotz Studio"
-        description="Strony internetowe Zielona Góra — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Zielonej Góry i regionu lubuskiego. Strony z indywidualną wyceną."
+        description="Strony internetowe Zielona Góra — tworzenie stron www, sklepy e-commerce i SEO dla firm z Zielonej Góry i Lubuskiego."
         canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/zielona-gora"
         keywords="strony internetowe zielona góra, tworzenie stron zielona góra, strony www zielona góra, projektowanie stron zielona góra"
       />

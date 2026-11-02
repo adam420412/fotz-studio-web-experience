@@ -131,7 +131,7 @@ export default function DlaKogoMarkiPremium() {
     <Layout>
       <SEOHead
         title="Marketing dla Marek Premium i Luksusowych | Fotz Studio"
-        description="Marketing dla marek premium i luksusowych — branding, komunikacja luxury, fotografia produktowa, wideo i kampanie prestiżowe. Fotz Studio tworzy strategie dla marek, które stawiają na najwyższą jakość."
+        description="Marketing dla marek premium i luksusowych — branding, komunikacja luxury, fotografia produktowa, wideo i kampanie prestiżowe."
         canonical="https://www.fotz-studio.pl/dla-kogo/marki-premium"
         keywords="marketing premium, reklama marki premium, luxury marketing, marketing marek premium, digital marketing luxury"
       />

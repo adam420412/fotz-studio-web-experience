@@ -86,7 +86,7 @@ const StronyInternetoweTychy = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe Tychy | Tworzenie i Projektowanie Stron WWW"
+        title="Strony internetowe Tychy — tworzenie stron WWW | FOTZ"
         description="Strony internetowe Tychy — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Tychów. Fotz Studio."
         canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/tychy"
         keywords="strony internetowe tychy, tworzenie stron tychy, strony www tychy, projektowanie stron tychy"

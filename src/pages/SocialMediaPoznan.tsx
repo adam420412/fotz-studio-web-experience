@@ -34,7 +34,7 @@ export default function SocialMediaPoznan() {
   const { data: articles = [], isLoading, isError, refetch } = useClusterArticles("poznan");
   return (
     <Layout>
-      <SEOHead title="Agencja social media Poznań — marketing na Facebooku i Instagramie" description="Agencja social media z Poznania: prowadzenie profili firmy na Facebooku i Instagramie, marketing w mediach społecznościowych, rolki, zdjęcia i kampanie reklamowe. Umów bezpłatną rozmowę." canonical="https://www.fotz-studio.pl/agencja-social-media/poznan" />
+      <SEOHead title="Agencja social media Poznań — Facebook i Instagram" description="Agencja social media z Poznania: prowadzenie profili na Facebooku i Instagramie, rolki, zdjęcia i kampanie reklamowe w mediach społecznościowych. Umów rozmowę." canonical="https://www.fotz-studio.pl/agencja-social-media/poznan" />
       <ServiceSchema name="Obsługa social media w Poznaniu" description="Planowanie komunikacji, prowadzenie firmowych profili w mediach społecznościowych, produkcja zdjęć i video oraz kampanie reklamowe w uzgodnionym zakresie." areaServed="Poznań" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://www.fotz-studio.pl/" }, { name: "Agencja social media", url: "https://www.fotz-studio.pl/agencja-social-media" }, { name: "Poznań", url: "https://www.fotz-studio.pl/agencja-social-media/poznan" }]} />
       <FAQSchema items={faqs} />

@@ -132,7 +132,7 @@ export default function AgencjaMarketingowaGdansk() {
   return (
     <Layout>
       <SEOHead
-        title="Agencja Marketingowa Gdańsk | FOTZ – Marketing Dla Firm w Gdańsku"
+        title="Agencja Marketingowa Gdańsk — marketing dla firm | FOTZ"
         description="Agencja marketingowa Gdańsk ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Gdańska i Trójmiasta. Bezpłatna wycena!"
         canonical="https://www.fotz-studio.pl/agencja-marketingowa/gdansk"
         keywords="agencja marketingowa gdańsk, marketing internetowy gdańsk, agencja reklamowa gdańsk, kampanie reklamowe gdańsk, seo gdańsk, google ads gdańsk, agencja marketingowa trójmiasto"

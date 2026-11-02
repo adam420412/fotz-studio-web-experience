@@ -150,7 +150,7 @@ export default function MarketingB2B() {
   return (
     <>
       <SEOHead
-        title="Marketing B2B | Strategie lead generation dla firm | FOTZ Studio"
+        title="Marketing B2B | Strategie lead generation dla firm | FOTZ"
         description="Marketing B2B — strategie lead generation, LinkedIn Ads, content marketing, email nurturing dla firm sprzedających innym firmom. Sprawdź ofertę!"
         canonical="https://www.fotz-studio.pl/uslugi/marketing-b2b"
         keywords="marketing b2b, marketing dla firm b2b, strategie marketingowe b2b, lead generation b2b, digital marketing b2b"

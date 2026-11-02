@@ -168,7 +168,7 @@ const content = {
 export default function PozycjonowanieOpole() {
   return <>
     <SEOHead
-      title="Pozycjonowanie Opole — pozycjonowanie stron, lokalne SEO | FOTZ"
+      title="Pozycjonowanie Opole — strony i lokalne SEO | FOTZ"
       description="Pozycjonowanie stron Opole: lokalne SEO, audyt i optymalizacja stron internetowych. Obszar lokalny lub ogólnopolski — profesjonalny proces FOTZ."
       canonical="https://www.fotz-studio.pl/uslugi/pozycjonowanie/opole"
     />

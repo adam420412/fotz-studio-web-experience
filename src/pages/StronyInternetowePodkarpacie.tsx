@@ -112,7 +112,7 @@ export default function StronyInternetowePodkarpacie() {
       <div className="pt-20">
       <SEOHead
         title="Strony internetowe Podkarpacie | Rzeszów | FOTZ Studio"
-        description="Profesjonalne strony internetowe dla firm z Podkarpacia i Rzeszowa. Specjalizujemy się w firmach z Aviation Valley, startupach i sektorze logistyki. Strony Wycena indywidualna, responsywne i zoptymalizowane pod SEO."
+        description="Profesjonalne strony internetowe dla firm z Podkarpacia i Rzeszowa. Specjalizujemy się w firmach z Aviation Valley, startupach i sektorze logistyki."
         canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/podkarpacie"
         structuredData={{
           "@context": "https://schema.org",

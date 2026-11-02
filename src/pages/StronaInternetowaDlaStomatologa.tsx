@@ -63,7 +63,7 @@ export default function StronaInternetowaDlaStomatologa() {
     <>
       <SEOHead
         title="Strona internetowa dla stomatologa — rezerwacje, SEO, RODO"
-        description="Strona internetowa dla stomatologa — rezerwacje wizyt online, SEO lokalne, galeria, cennik usług i zgodność z RODO. Profesjonalne strony dla gabinetów stomatologicznych od 2000 zł."
+        description="Strona internetowa dla stomatologa — rezerwacje wizyt online, SEO lokalne, galeria, cennik usług i zgodność z RODO."
         canonical="https://www.fotz-studio.pl/uslugi/strona-internetowa-dla-stomatologa"
         keywords="strona internetowa dla stomatologa, strona www gabinetu dentystycznego, strona stomatologa, strona dentysty online"
       />

@@ -160,7 +160,7 @@ export default function AudytStronyInternetowej() {
   return (
     <>
       <SEOHead
-        title="Audyt strony internetowej | Analiza UX i wydajności | FOTZ Studio"
+        title="Audyt strony internetowej | Analiza UX i wydajności | FOTZ"
         description="Audyt strony internetowej — kompleksowa analiza UX, szybkości, bezpieczeństwa i konwersji. Znajdziemy co blokuje Twoich klientów. Zamów audyt!"
         canonical="https://www.fotz-studio.pl/uslugi/audyt-strony-internetowej"
         keywords="audyt strony internetowej, audyt seo strony, audyt techniczny strony, badanie strony internetowej, analiza strony www, audyt ux, audyt wydajności strony"

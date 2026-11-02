@@ -156,7 +156,7 @@ export default function AgencjaMarketingowaLodz() {
   return (
     <Layout>
       <SEOHead 
-        title="Agencja Marketingowa Łódź | FOTZ – Marketing Dla Firm w Łodzi"
+        title="Agencja Marketingowa Łódź — marketing dla firm | FOTZ"
         description="Agencja marketingowa Łódź ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Łodzi i Mazowsza centralnego. Bezpłatna wycena!"
         canonical="https://www.fotz-studio.pl/agencja-marketingowa/lodz"
         keywords="agencja marketingowa łódź, marketing internetowy łódź, agencja reklamowa łódź, kampanie reklamowe łódź, seo łódź, google ads łódź"

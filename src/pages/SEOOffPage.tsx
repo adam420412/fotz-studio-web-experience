@@ -35,7 +35,7 @@ const SEOOffPage = () => {
   return (
     <>
       <SEOHead
-        title="SEO Off-Page — Link Building, Digital PR i Budowanie Autorytetu"
+        title="SEO off-page — link building i autorytet | FOTZ"
         description="SEO off-page — budowanie linków zewnętrznych, digital PR, guest posting i wzmacnianie autorytetu domeny. Skuteczne SEO poza stroną. Fotz Studio."
         canonical="https://www.fotz-studio.pl/seo/off-page"
         keywords="seo off-page, link building, linki zewnętrzne seo, budowanie linków, seo off site, pozycjonowanie off-page, profil linków seo, backlinki, seo poza stroną, link building agencja"

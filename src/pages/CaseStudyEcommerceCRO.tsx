@@ -45,8 +45,8 @@ const CaseStudyEcommerceCRO = () => {
   return (
     <>
       <SEOHead
-        title="Case Study: +340% Konwersji E-commerce w 6 Miesięcy | Fotz Studio"
-        description="Kompleksowa optymalizacja konwersji (CRO) sklepu e-commerce: analiza UX, A/B testy, personalizacja, optymalizacja checkoutu. Wyniki: +340% CR, +287% przychodu, +41% AOV, +836% mobile conversions."
+        title="Case Study: +340% Konwersji E-commerce w 6 Miesięcy | FOTZ"
+        description="Kompleksowa optymalizacja konwersji (CRO) sklepu e-commerce: analiza UX, A/B testy, personalizacja, optymalizacja checkoutu."
         canonical="https://www.fotz-studio.pl/case-studies/optymalizacja-konwersji-ecommerce"
         keywords="case study CRO, optymalizacja konwersji e-commerce, A/B testing, wzrost konwersji, ecommerce optimization, konwersja sklepu online"
       />

@@ -9,9 +9,9 @@ import { ChevronDown } from "lucide-react";
 import { useState } from "react";
 
 export default function TikTokAdsKatowice() {
-  const title = "TikTok Ads Katowice — agencja kampanii reklamowych TikTok | Fotz.pl";
+  const title = "TikTok Ads Katowice — agencja kampanii TikTok | FOTZ";
   const description =
-    "Reklamy TikTok Ads Katowice — agencja Fotz.pl. Kampanie TikTok dla firm ze Śląska i Katowic: In-Feed Ads, Spark Ads, kreacje wideo. Targetowanie grupy docelowej. Bezpłatna konsultacja!";
+    "Reklamy TikTok Ads Katowice — kampanie dla firm ze Śląska: In-Feed Ads, Spark Ads, kreacje wideo i targetowanie. Bezpłatna konsultacja!";
   const canonical = "https://www.fotz-studio.pl/performance-marketing/tiktok-ads/katowice";
 
   const [expandedFaqIndex, setExpandedFaqIndex] = useState<number | null>(null);
