@@ -1,0 +1,107 @@
+{
+  "date": "2026-11-02",
+  "url": "https://www.fotz-studio.pl/blog/instagram-dla-firmy",
+  "source": "src/pages/BlogInstagramDlaFirmy.tsx",
+  "branch": "swarm/blog-instagram-firmy-20261102",
+  "baseCommit": "b38292e114ff8f51407c4fc9921dcc7c43f9b1a0",
+  "gsc": {
+    "period": {
+      "from": "2026-08-01",
+      "to": "2026-10-31",
+      "label": "1.08–31.10.2026"
+    },
+    "queries": [
+      {
+        "query": "instagram dla firm",
+        "impressions": 62,
+        "clicks": 0,
+        "averagePosition": 16.5
+      },
+      {
+        "query": "instagram dla firmy",
+        "impressions": 35,
+        "clicks": 0,
+        "averagePosition": 16.7
+      }
+    ],
+    "scope": "Query data supplied for this task; no additional URL attribution was inferred."
+  },
+  "neuronWriter": {
+    "query": "47d0fdc3a94f0d42",
+    "keyword": "instagram dla firmy",
+    "newAnalysesCreated": 0,
+    "recommendedWordCount": 1668,
+    "productionBaseline": 49,
+    "baselineMethod": "Saved production evaluate-content result for the target URL with id=main-content.",
+    "iterations": [
+      {
+        "iteration": 1,
+        "score": 83,
+        "scope": "Expanded the practical guide across goals, profile setup, strategy, formats, scheduling, production, moderation, measurement, ads, starting plan and FAQ; supplied final local prerender and authored metadata."
+      },
+      {
+        "iteration": 2,
+        "score": 98,
+        "scope": "Improved recommendation coverage in the branded title, headings and useful body copy; reduced excessive repetitions without adding promises, statistics or fixed packages."
+      }
+    ],
+    "final": 98,
+    "target": 95,
+    "finalRenderedMainWords": 1929,
+    "wordCountMethod": "Unicode alphabetic word tokens in the visible text of main#main-content, including the shared selected-work section; this is a local verification count, not a NeuronWriter metric.",
+    "method": "evaluate-content through neuron_client.py evaluate-html; outerHTML of main#main-content extracted from final dist/blog/instagram-dla-firmy/index.html; final title and description supplied explicitly.",
+    "scopeComparison": "The 49 baseline used the public URL and main-content. The final 98 measurement used the same semantic container from the local production prerender, including page and shared selected-work content but excluding navigation and footer. The content scope is comparable, while the measurement environment differs.",
+    "container": {
+      "selector": "main#main-content",
+      "occurrences": 1,
+      "htmlCharacters": 31519,
+      "duplicateIds": [],
+      "uniqueIdCount": 15,
+      "verified": true
+    }
+  },
+  "metadata": {
+    "title": "Instagram dla firmy: jak prowadzić firmowy profil | FOTZ",
+    "titleLength": 56,
+    "description": "Instagram dla firmy: jak prowadzić firmowy profil, planować treści, rolki i zdjęcia, mierzyć zapytania oraz rozdzielać obsługę i reklamy.",
+    "descriptionLength": 137,
+    "canonical": "https://www.fotz-studio.pl/blog/instagram-dla-firmy",
+    "h1": "Instagram dla firmy: jak prowadzić firmowy profil",
+    "h1Count": 1
+  },
+  "renderedContract": {
+    "selfCanonical": true,
+    "articleSchemaUrl": "https://www.fotz-studio.pl/blog/instagram-dla-firmy",
+    "articleSchemaId": "https://www.fotz-studio.pl/blog/instagram-dla-firmy",
+    "mainEntityOfPage": "https://www.fotz-studio.pl/blog/instagram-dla-firmy",
+    "datePublished": "2025-04-12",
+    "dateModified": "2026-11-02",
+    "faqQuestions": 7,
+    "visibleFaqMatchesSchema": true,
+    "serviceAndContactLinks": [
+      "/social-media/strategia",
+      "/social-media/analityka",
+      "/social-media/obsluga",
+      "/performance-marketing/meta-ads",
+      "/kontakt"
+    ],
+    "duplicateIds": []
+  },
+  "checks": {
+    "npmCi": "passed",
+    "typecheck": "passed",
+    "targetedTests": "20/20 passed: 5 direct Instagram contract, 7 live-blog, 3 seo-metadata and 5 structured-data tests",
+    "build": "passed; 1066 prerendered pages, 1064 full page bodies, 0 body errors",
+    "htmlContract": "passed; one H1, self-canonical, title 56 characters, description 137 characters, one main-content and 15 unique IDs with no duplicates",
+    "buildArtifactsExcluded": "known-routes.json restored after prerender; dist, .ssr and temporary evaluation files were not staged"
+  },
+  "files": [
+    "src/pages/BlogInstagramDlaFirmy.tsx",
+    "scripts/blog-instagram-dla-firmy.test.mjs",
+    "docs/seo/instagram-dla-firmy-2026-11-02.json"
+  ],
+  "notes": [
+    "Content score evaluates the rendered guide against the existing NeuronWriter analysis; it does not prove indexing, rankings, clicks, enquiries or sales.",
+    "No changes were made to App.tsx, sitemaps, ai-work-register.csv, environment files, other pages or shared components."
+  ]
+}
