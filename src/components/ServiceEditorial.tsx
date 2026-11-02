@@ -62,7 +62,7 @@ export function ServiceEditorial({ title, eyebrow, lead, path, area = "Polska", 
           <h1 className="offer-heading mb-6">{title}</h1>
           <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">{lead}</p>
           {priceNote && <p className="mt-6 text-lg font-medium text-primary">{priceNote}</p>}
-          <div className="flex flex-wrap gap-3 mt-8">
+          <div className="flex flex-col sm:flex-row sm:flex-wrap gap-3 mt-6 sm:mt-8">
             <Link to={contactHref} className="dv-btn dv-btn-primary">{contactLabel} <ArrowRight aria-hidden="true" className="w-4 h-4" /></Link>
             <a href={serviceCollection ? '#realizacje-uslugi' : '#zakres'} className="dv-btn dv-btn-secondary">{serviceCollection ? 'Zobacz realizacje' : 'Zobacz zakres'}</a>
           </div>
@@ -104,7 +104,7 @@ export function ServiceEditorial({ title, eyebrow, lead, path, area = "Polska", 
 
     <section id="faq" className="container-wide max-w-4xl px-6 md:px-12 pb-12 md:pb-16 scroll-mt-28" aria-labelledby="faq-title">
       <h2 id="faq-title" className="text-3xl font-heading mb-7">{faqTitle}</h2>
-      <div className="divide-y divide-border border-y border-border">{faqs.map(item => <details key={item.question} className="group py-5"><summary className="cursor-pointer font-medium text-lg pr-5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary">{item.question}</summary><p className="text-muted-foreground leading-relaxed pt-4">{item.answer}</p></details>)}</div>
+      <div className="divide-y divide-border border-y border-border">{faqs.map(item => <details key={item.question} className="group py-3"><summary className="min-h-11 py-2 cursor-pointer font-medium text-lg pr-5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary">{item.question}</summary><p className="text-muted-foreground leading-relaxed pt-4">{item.answer}</p></details>)}</div>
     </section>
 
     <section id="kontakt-oferta" className="container-wide px-6 md:px-12 pb-16 scroll-mt-28">
