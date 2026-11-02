@@ -156,8 +156,8 @@ export default function AgencjaMarketingowaLodz() {
   return (
     <Layout>
       <SEOHead 
-        title="Agencja Marketingowa Łódź — marketing dla firm | FOTZ"
-        description="Agencja marketingowa Łódź ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Łodzi i Mazowsza centralnego. Bezpłatna wycena!"
+        title="Agencja marketingowa Łódź — marketing reklamowy | FOTZ"
+        description="Agencja marketingowa Łódź — SEO, Google Ads, social media i strony WWW. Plan reklamowy i marketing dla firm z Łodzi. Bezpłatna wycena!"
         canonical="https://www.fotz-studio.pl/agencja-marketingowa/lodz"
         keywords="agencja marketingowa łódź, marketing internetowy łódź, agencja reklamowa łódź, kampanie reklamowe łódź, seo łódź, google ads łódź"
       />
@@ -365,6 +365,29 @@ export default function AgencjaMarketingowaLodz() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Typy agencji */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <h2 className="text-3xl font-bold mb-6">Agencja interaktywna, kreatywna czy reklamowa — jaką agencję wybrać w Łodzi?</h2>
+          <div className="space-y-5 text-gray-700 leading-relaxed">
+            <p>Agencja interaktywna buduje strony i sklepy, agencja kreatywna — identyfikację wizualną i projektowanie graficzne, a agencja reklamowa w Łodzi — kampanie. FOTZ łączy te role: agencja marketingowa z Łodzi nie jest konieczna, żeby działać skutecznie — liczy się zakres. Budujemy też stron internetowych i sklepy, więc całość marketingu i reklamy masz u jednego partnera. Interaktywna agencja i agencja reklamowa z Łodzi w jednym — digital, wideo, social media i Google Ads i Meta Ads pod jednym dachem. Szukasz agencji marketingowej, która ogarnie całość? U nas prowadzimy kampanie reklamowe, prowadzenie social media i obsługę profili w jednym planie.</p>
+            <p>Agencja marketingu internetowego powinna pracować na cele biznesowe, nie na liczbę postów. Reklama Google Ads (dawniej AdWords) domyka popyt, marketing w social mediach buduje popyt, a public relations, ekspercki wizerunek i ochrona reputacji oraz wizerunku firm wzmacniają zaufanie. Dbamy też o wizytówkę — wizytówka Google to często pierwszy kontakt klienta z firmą — oraz o etap identyfikacji wizualnej. W 2026 marketing wymaga ekspertów w obszarze marketingu cyfrowego — w każdym obszarze marketingu mamy osobę odpowiedzialną za wynik. Landing page pod kampanię, wideo produktowe czy lead generation dla sklepu internetowego — zakres dobieramy do branży. Obsługa profili w social media to osobny, mierzalny zakres.</p>
+            <p>Współpracy z agencją oceniaj po przejrzystości: dobra obsługa klienta to raport, z którego rozumiesz, za co płacisz. Firmy z Łodzi i klienci z Łodzi zasługują na skuteczne działania, nie na żargon — dlatego pomagamy projektować komunikację, którą klient rozumie od pierwszego zdania.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Strategie */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <h2 className="text-3xl font-bold mb-6">Strategie marketingowe i strategie komunikacji dla firm z Łodzi</h2>
+          <div className="space-y-5 text-gray-700 leading-relaxed">
+            <p>Strategiczny marketing zaczyna się od celów biznesowych: wzrost sprzedaży, wejście w nowy segment, rekrutacja. Strategie marketingowe i strategie komunikacji łączymy w spójny plan — kompleksowy, ale priorytetowy. Nie robimy wszystkiego naraz: budować rozpoznawalność marki potrafi tylko komunikacja powtarzalna i spójna we wszystkich kanałach.</p>
+            <p>Skuteczne działania to takie, które da się zmierzyć — liczy się pozyskiwanie klientów z Łodzi, nie liczba postów. Zwiększyć rozpoznawalność marki można contentem i wideo, sprzedaż — kampaniami Google Ads i Meta Ads, a lojalność — obsługą profili i szybką odpowiedzią w mediach społecznościowych. Każda branża ma inny rytm zakupów — dlatego plan dla firmy produkcyjnej różni się od planu dla restauracji.</p>
           </div>
         </div>
       </section>

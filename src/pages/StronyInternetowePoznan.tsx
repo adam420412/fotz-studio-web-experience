@@ -183,7 +183,7 @@ const StronyInternetowePoznan = () => {
   return (
     <>
       <SEOHead
-        title="Strony internetowe Poznań — tworzenie stron WWW | FOTZ"
+        title="Tworzenie stron internetowych Poznań — strony WWW | FOTZ"
         description="Strony internetowe Poznań — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Poznania. Fotz Studio."
         canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/poznan"
         keywords="strony internetowe poznań, tworzenie stron poznań, strony www poznań, projektowanie stron poznań, sklep internetowy poznań"
@@ -507,6 +507,30 @@ const StronyInternetowePoznan = () => {
         />
 
         <CityLinksSection currentCity="Poznań" />
+
+        {/* Proces tworzenia */}
+        <section className="py-20 bg-white">
+          <div className="container mx-auto px-4 max-w-3xl">
+            <h2 className="text-3xl font-bold mb-6">Tworzenie stron internetowych w Poznaniu — jak wygląda projekt strony?</h2>
+            <div className="space-y-5 text-gray-700 leading-relaxed">
+              <p>Tworzenie stron internetowych Poznań to proces, który zaczynamy od warsztatu o Twojej firmie. Tworzenia stron internetowych uczymy się od danych — strony w Poznaniu i dla całej Polski projektujemy pod konwersję. Tworzenia stron internetowych w Poznaniu podejmujemy się od briefu do opieki. Projekt strony internetowej obejmuje: strukturę strony, projekt graficzny strony, teksty i funkcjonalności strony. Każda strona internetowa powstaje w etapach — projekt strony www, akceptacja, wdrożenie strony i uruchomienie strony. Tworzenie i projektowanie stron łączymy z SEO od pierwszego dnia, bo wygląd strony i jej widoczność muszą iść w parze.</p>
+              <p>Tworzymy profesjonalne strony internetowe: strony www w Poznaniu dla firm usługowych, sklepów i producentów. Projektowanie stron www i projektowanie stron internetowych w Poznaniu to nasza codzienność — od stworzyć stronę wizytówkę po katalog. Możesz stworzyć stronę z nami od zera lub zlecić przebudowę swojej strony. Tworzymy profesjonalne strony także dla klientów spoza miasta — tworzenie stron www w Poznaniu to nasza baza, ale projekty realizujemy zdalnie w całej Polsce. Poznań to miasto konkurencyjne, więc podejście do tworzenia stron musi być oparte na danych, nie na szablonie. W zakresie projektowania stron internetowych mamy doświadczenie od prostych wizytówek po katalogi produktów — doświadczenie w tworzeniu stron internetowych sprawdzisz w naszym portfolio.</p>
+              <p>Stworzenie strony internetowej to nie koniec pracy. Realizujemy strony internetowe z planem rozwoju: wersje strony testujemy, a rozwój Twojej firmy wspieramy nowymi podstronami. W przypadku strony firmowej liczy się też szybkość ładowania strony i użyteczność strony na telefonie. Strony internetowej dla Twojej firmy nie oddajemy bez szkolenia z obsługi. Czas wykonania strony internetowej zależy od zakresu — Twojej strony internetowej pilnujemy też po starcie. Twojej stronie www zapewniamy aktualizacje, a na Twojej stronie wdrażamy kolejne funkcje. Budowa strony internetowej to proces, więc planujemy rozwój etapami.</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Cena i widoczność */}
+        <section className="py-20 bg-gray-50">
+          <div className="container mx-auto px-4 max-w-3xl">
+            <h2 className="text-3xl font-bold mb-6">Cena strony internetowej i pozycja Twojej strony w Google</h2>
+            <div className="space-y-5 text-gray-700 leading-relaxed">
+              <p>Ile kosztuje strona www w Poznaniu? Cena strony internetowej zależy od zakresu: liczby podstron, materiałów i integracji. Cena strony wizytówki zaczyna się od kilku tysięcy złotych, a wykonanie strony internetowej z katalogiem czy sklepem wyceniamy po briefu. Koszt i czas realizacji strony podajemy przed startem — bez ukrytych pozycji. Wykonawcy strony porównuj nie po cenie, lecz po tym, co obejmuje tworzenie i co będzie kosztować rozwój.</p>
+              <p>Każda firma chce wysokiej pozycji: pozycję Twojej strony w wynikach wyszukiwania budujemy planowo. Zwiększenie widoczności strony w Google zaczyna się już przy budowaniu strony www: struktura, szybkość i treść pod kątem wyszukiwarek internetowych. Widoczność Twojej strony w wynikach zależy potem od contentu i linków. Oferujemy strony www WordPress i rozwiązania dedykowane — responsywne strony www, skuteczne strony internetowe i funkcjonalne strony online, które sprzedają. Oprócz tworzenia stron prowadzimy też pozycjonowanie i kampanie — wszystko po to, by strony internetowej nie trzeba było budować od nowa za dwa lata.</p>
+              <p>Agencja interaktywna czy freelancer? Przy wyborze sprawdź oczekiwania wobec strony: kto odpowiada za hosting, aktualizacje i bezpieczeństwo. U nas budowania strony www pilnuje zespół, a każdego projektu strony — opiekun, który zna Twoją stronę www od briefu. W zakładce strony internetowe w portfolio zobaczysz, jak pracujemy.</p>
+            </div>
+          </div>
+        </section>
 
         {/* FAQ Section */}
         <section className="py-24">

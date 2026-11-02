@@ -371,6 +371,29 @@ const PozycjonowanieGdansk = () => {
         </div>
       </section>
 
+      {/* Lokalne SEO Gdańsk */}
+      <section className="py-20 bg-gray-800">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <h2 className="text-3xl font-bold text-white mb-6">Skuteczne pozycjonowanie stron www w Gdańsku — lokalne SEO dla firm</h2>
+          <div className="space-y-5 text-gray-300 leading-relaxed">
+            <p>Skuteczne pozycjonowanie w Gdańsku to kompleksowa usługa: techniczne SEO, treści i linki. Wyszukiwarka Google ocenia witrynę pod kątem setek sygnałów — dlatego kompleksowy plan obejmuje też lokalizację: lokalizacja firmy i jej sygnały lokalne mają realny wpływ na pozycje. Gdańsk to miasto turystyczne i portowe — fraza lokalna typu „usługa + Gdańsk" ma mniejszą konkurencję niż frazy ogólnopolskie, a firma z Gdańska może ją wygrać w kilka miesięcy. W wyszukiwarce Google lokalne sygnały wygrywają z budżetem globalnych marek. Lokalne pozycjonowanie stron zaczynamy od wizytówki: pozycjonowanie wizytówki Google (profil firmy w Google, dawniej Google Moja Firma) daje widoczność w Google Maps i wynikach lokalnych. Lokalne SEO dla firm obejmuje też opinie, NAP i lokalne podstrony.</p>
+            <p>Pozycjonowanie stron internetowych w Gdańsku opieramy na danych: analizujemy fraz kluczowych z potencjałem, dobieramy strategię SEO i strategie contentowe pod Twoją branżę. Strategia SEO określa, jak zwiększyć ruch na stronie i widoczność strony w wynikach wyszukiwania. Skuteczne SEO to proces: optymalizacja strony, potem treści odpowiadające użytkownikowi, potem linki. Działania SEO zwiększają ruch na stronie, a dobrze zaplanowana strona internetowa zamienia go w zapytania. Skuteczne pozycjonowanie stron internetowych mierzymy pozycjami w wynikach wyszukiwania i liczbą kontaktów — nie samym ruchem.</p>
+            <p>Kompleksowe pozycjonowanie obejmuje pozycjonowanie stron i sklepów: pozycjonowanie sklepu to osobna specyfika (kategorie, produkty, dane strukturalne). Pozycjonowanie sklepów internetowych w Gdańsku łączymy z Google Ads i media społecznościowe — reklama pokrywa czas, zanim organiczne wyniki osiągną pozycje w wynikach wyszukiwania. Firm w Gdańsku nie przekonuje żargon — dla firm z Gdańska i okolic pracujemy w pełnym zakresie, a Gdańsk i okolice obsługujemy na miejscu po ustaleniu. Potencjalni klienci z Gdańska i okolic szukają też na telefonie — dlatego optymalizujemy pod urządzeniach mobilnych i szybkość. Marketing lokalny to nasza specjalność: firmy w Google z Trójmiasta pozycjonujemy od lat.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Koszt */}
+      <section className="py-20 bg-gray-900">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <h2 className="text-3xl font-bold text-white mb-6">Ile kosztuje pozycjonowanie stron w Gdańsku?</h2>
+          <div className="space-y-5 text-gray-300 leading-relaxed">
+            <p>Koszt pozycjonowania stron zależy od konkurencji fraz i stanu witryny. Cena pozycjonowania stron dla lokalnej usługi zaczyna się od ok. 800-1500 zł miesięcznie; sklep internetowy lub branża ogólnopolska to wyższe budżety. Tanie pozycjonowanie bez audytu i treści to zwykle strata pieniędzy — efektywne pozycjonowanie wymaga pracy specjalisty, a kluczowa jest ciągłość: wyniki buduje się miesiącami.</p>
+            <p>Ile kosztuje pozycjonowanie stron u nas? Sprawdź pakiety wyżej albo poproś o audyt — wycena jest bezpłatna i pokazuje, co da się zrobić w Twoim budżecie. Dla firm, które nie mają jeszcze strony, oferujemy też tworzenie stron pod SEO od zera. Kompleksowe pozycjonowanie stron firm z Gdańska to nasza codzienność — lokalna konkurencja jest słabsza niż w Warszawie, więc cele biznesowe osiągniesz taniej.</p>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="py-20 bg-muted/20">
         <div className="container mx-auto px-4 max-w-3xl">
