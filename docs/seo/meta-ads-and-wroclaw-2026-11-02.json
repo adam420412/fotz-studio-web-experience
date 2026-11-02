@@ -1,0 +1,80 @@
+{
+  "date": "2026-11-02",
+  "owner": "Codex / FOTZ-kontynuacja-01a177f2-20261102",
+  "request": "Kontynuacja zmian opartych o GSC i NeuronWriter; notatki w GitHub.",
+  "meta_ads": {
+    "id": "FOTZ-615ABB6F",
+    "url": "https://www.fotz-studio.pl/performance-marketing/meta-ads",
+    "source": "src/pages/FacebookInstagramAds.tsx",
+    "reservation_pr": 120,
+    "gsc": {
+      "period": "2026-10-03/2026-10-30",
+      "clicks": 0,
+      "impressions": 275,
+      "position": 52.2545,
+      "source": "docs/seo/ai-work-register.csv",
+      "queries": [
+        "strategia facebook ads",
+        "kampanie facebook cennik",
+        "obsługa meta ads"
+      ]
+    },
+    "neuronwriter": {
+      "query": "526937fbbbde917c",
+      "keyword": "meta ads agencja",
+      "baseline": 76,
+      "rendered_working": 92,
+      "proposed_html": 90,
+      "target": 95,
+      "public_after": null,
+      "done": false
+    },
+    "changes": [
+      "Rozdzielenie budżetu emisji, obsługi i produkcji materiałów.",
+      "Kryteria wartościowego zgłoszenia; przychód i ROI tylko przy odpowiednich danych.",
+      "Przebieg startu, przejęcie istniejących kampanii, akceptacja materiałów, zasady testów.",
+      "Rzeczywista realizacja Dawid EDU; bez przenoszenia jej wyników na inne firmy.",
+      "Wyłącznie istniejące fotografie FOTZ, bez nowych zdjęć stockowych."
+    ],
+    "status": "DO_REVIEW",
+    "independent_review": null,
+    "publication": null,
+    "next": "Sprawdzenie wyrenderowanej treści, mobilnego CTA i budowania; publikacja poprawy bez oznaczenia POTWIERDZONE_95 przy wyniku poniżej celu.",
+    "checks": {
+      "source_links": "3889 checked; 0 broken",
+      "mobile": "PENDING",
+      "build": "1068 pages; 1066 bodies; 0 errors",
+      "typecheck": "PASS",
+      "own_photos": "PASS",
+      "tests": "183/183 PASS",
+      "seo": "1067 sitemap URLs; 135504 links; 0 broken"
+    }
+  },
+  "wroclaw": {
+    "url": "https://fotz.pl/strony-internetowe-wroclaw/",
+    "change": "Pierwsze tło FOTZ pobierane bez oczekiwania na skrypt lazy-load. Zapis WordPress 2026-11-02T14:02:44.",
+    "lab_before_eager": {
+      "performance": 64,
+      "LCP_seconds": 7.8,
+      "CLS": 0.119,
+      "TBT_ms": 170
+    },
+    "lab_after_eager": {
+      "performance": 57,
+      "LCP_seconds": 4.4,
+      "CLS": 0.165,
+      "TBT_ms": 590,
+      "FCP_seconds": 2.5,
+      "speed_index_seconds": 4.5
+    },
+    "field_data": null,
+    "interpretation": "LCP krótszy w tym pomiarze laboratoryjnym, lecz wynik ogólny gorszy i blokowanie skryptami większe. Brak podstaw do uznania problemu szybkości za zamknięty. Nie są to dane rzeczywistych użytkowników.",
+    "remaining": [
+      "Nieużywany JavaScript około 299 KiB; czas wykonania 1.3 s.",
+      "Nieużywany CSS około 38 KiB.",
+      "Praca głównego wątku 2.8 s.",
+      "Elementy img bez jawnych wymiarów; zbadać źródła CLS."
+    ],
+    "next": "Przegląd konkretnych skryptów i wymiarów obrazów przed kolejną zmianą; bez wyłączania formularza lub analityki w ciemno."
+  }
+}
