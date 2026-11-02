@@ -191,7 +191,7 @@ function validateSchema(schema, filePath) {
 // Extract JSON-LD from HTML
 function extractSchemas(html) {
   const schemas = [];
-  const regex = /<script\s+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi;
+  const regex = /<script\b[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi;
   let match;
   
   while ((match = regex.exec(html)) !== null) {

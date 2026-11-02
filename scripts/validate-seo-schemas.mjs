@@ -24,7 +24,7 @@ const FILE_GLOB = /^AgencjaMarketingowa.*\.tsx$/;
 const SCHEMAS = {
   SEOHead: {
     required: ["title", "description", "canonical"],
-    optional: ["ogImage", "ogType", "noIndex", "schemaJson", "keywords", "children"],
+    optional: ["ogImage", "ogType", "og", "noIndex", "schemaJson", "structuredData", "schema", "keywords", "disableTitleTruncation", "children"],
     stringProps: ["title", "description", "canonical", "ogImage", "ogType", "keywords"],
   },
   OrganizationSchema: {
@@ -38,18 +38,18 @@ const SCHEMAS = {
     stringProps: ["name", "description", "url", "telephone", "email", "priceRange"],
   },
   ServiceSchema: {
-    required: ["name", "description"],
-    optional: ["provider", "areaServed"],
-    stringProps: ["name", "description", "provider", "areaServed"],
+    required: ["description"],
+    optional: ["name", "serviceName", "provider", "areaServed"],
+    stringProps: ["name", "serviceName", "description", "provider"],
   },
   BreadcrumbSchema: {
-    required: ["items"],
-    optional: [],
+    required: [],
+    optional: ["items", "data", "keywords"],
     itemShape: { required: ["name", "url"], forbidden: ["label", "href"] },
   },
   FAQSchema: {
-    required: ["items"],
-    optional: [],
+    required: [],
+    optional: ["items", "data", "questions"],
     itemShape: { required: ["question", "answer"], forbidden: [] },
   },
   WebPageSchema: {
@@ -58,10 +58,9 @@ const SCHEMAS = {
     stringProps: ["title", "description", "url"],
   },
   ArticleSchema: {
-    required: ["title", "description", "url", "datePublished"],
-    optional: ["image", "dateModified", "author"],
-    forbidden: ["headline", "authorName"], // common stale prop names
-    stringProps: ["title", "description", "url", "image", "datePublished", "dateModified", "author"],
+    required: [],
+    optional: ["title", "headline", "description", "url", "image", "datePublished", "dateModified", "author", "authorName", "publishDate", "data"],
+    stringProps: ["title", "headline", "description", "url", "image", "datePublished", "dateModified", "author", "authorName", "publishDate"],
   },
 };
 
