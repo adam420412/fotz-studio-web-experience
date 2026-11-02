@@ -23,6 +23,8 @@ export const enquiryVariants = {
   linkedin_ads: 'Kampania LinkedIn Ads dla B2B',
   campaign_audit: 'Przegląd kampanii reklamowej',
   video_plan: 'Strategia i regularne materiały video',
+  photo_session: 'Sesja fotograficzna',
+  drone: 'Zdjęcia lub film z drona',
   product_photos: 'Fotografia produktowa',
   audit: 'Audyt i plan wdrożeń', ongoing: 'Stałe działania SEO',
 };
