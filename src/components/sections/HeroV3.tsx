@@ -23,7 +23,7 @@ export function HeroV3() {
           <div className="aspect-video relative bg-black">
             {playing ? <video className="w-full h-full object-contain" src="/videos/fotz-reel-web.mp4" poster="/videos/enea-stadion-cover.webp" controls autoPlay playsInline aria-label="Enea Stadion — film FOTZ Studio" /> :
               <button type="button" onClick={() => setPlaying(true)} className="relative block w-full h-full overflow-hidden text-left group focus-visible:outline focus-visible:outline-4 focus-visible:-outline-offset-4 focus-visible:outline-white">
-                <img src="/videos/enea-stadion-cover-800.webp" srcSet="/videos/enea-stadion-cover-480.webp 480w, /videos/enea-stadion-cover-800.webp 800w, /videos/enea-stadion-cover.webp 1276w" sizes="(min-width: 1440px) 600px, (min-width: 1024px) 42vw, 92vw" alt="" className="w-full h-full object-cover" width="1276" height="720" fetchPriority="high" decoding="async" />
+                <img src="/videos/enea-stadion-cover-800.webp" srcSet="/videos/enea-stadion-cover-480.webp 480w, /videos/enea-stadion-cover-800.webp 800w, /videos/enea-stadion-cover.webp 1276w" sizes="(min-width: 1440px) 600px, (min-width: 1024px) 42vw, 92vw" alt="Enea Stadion — kadr z filmu FOTZ Studio" className="w-full h-full object-cover" width="1276" height="720" fetchPriority="high" decoding="async" />
                 <span aria-hidden="true" className="absolute inset-0" style={{ background: "linear-gradient(180deg, rgba(5,10,18,.3) 0%, rgba(5,10,18,0) 35%, rgba(5,10,18,.92) 100%)" }} />
                 <span className="sr-only">Odtwórz film: </span>
                 <span className="absolute inset-0 flex flex-col justify-between p-5 sm:p-7" style={{ color: "#fff" }}>

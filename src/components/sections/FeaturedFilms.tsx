@@ -49,7 +49,7 @@ function FilmCard({ film }: { film: Film }) {
   const coverClass = `group relative block w-full overflow-hidden rounded-2xl border border-border bg-black text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary ${film.portrait ? "aspect-[9/16]" : "aspect-video"}`;
   const cover = (
     <>
-      <img src={film.poster} alt="" width={film.portrait ? 540 : 960} height={film.portrait ? 960 : 540} loading="lazy" decoding="async" className="absolute inset-0 h-full w-full object-cover motion-safe:transition-transform motion-safe:duration-500 group-hover:scale-[1.03]" />
+      <img src={film.poster} alt={film.title} width={film.portrait ? 540 : 960} height={film.portrait ? 960 : 540} loading="lazy" decoding="async" className="absolute inset-0 h-full w-full object-cover motion-safe:transition-transform motion-safe:duration-500 group-hover:scale-[1.03]" />
       <span aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-black/65 via-transparent to-transparent" />
       <span aria-hidden="true" className="absolute inset-0 flex items-center justify-center">
         <span className="flex h-12 w-12 items-center justify-center rounded-full border border-white/65 bg-black/35 backdrop-blur-sm transition-colors group-hover:bg-black/65">
