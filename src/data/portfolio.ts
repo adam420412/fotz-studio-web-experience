@@ -437,15 +437,15 @@ export const galleryCategories = [
 
 export const galleryImages = [
   // Koncerty
-  { src: concert1, title: "Koncert - ujęcie 1", category: "concerts" },
-  { src: concert2, title: "Koncert - ujęcie 2", category: "concerts" },
-  { src: concert3, title: "Koncert - ujęcie 3", category: "concerts" },
-  { src: concert4, title: "Koncert - ujęcie 4", category: "concerts" },
-  { src: concert5, title: "Koncert - ujęcie 5", category: "concerts" },
-  { src: concert6, title: "Koncert - ujęcie 6", category: "concerts" },
-  { src: concert7, title: "Koncert - ujęcie 7", category: "concerts" },
-  { src: concert8, title: "Koncert - ujęcie 8", category: "concerts" },
-  { src: concert9, title: "Koncert - ujęcie 9", category: "concerts" },
+  { src: concert1, title: "Fotografia koncertowa — ujęcie 1", category: "concerts" },
+  { src: concert2, title: "Fotografia koncertowa — ujęcie 2", category: "concerts" },
+  { src: concert3, title: "Fotografia koncertowa — ujęcie 3", category: "concerts" },
+  { src: concert4, title: "Fotografia koncertowa — ujęcie 4", category: "concerts" },
+  { src: concert5, title: "Fotografia koncertowa — ujęcie 5", category: "concerts" },
+  { src: concert6, title: "Fotografia koncertowa — ujęcie 6", category: "concerts" },
+  { src: concert7, title: "Fotografia koncertowa — ujęcie 7", category: "concerts" },
+  { src: concert8, title: "Fotografia koncertowa — ujęcie 8", category: "concerts" },
+  { src: concert9, title: "Fotografia koncertowa — ujęcie 9", category: "concerts" },
   
   // Eventy
   { src: event1, title: "Event firmowy", category: "events" },
@@ -494,14 +494,14 @@ export const galleryImages = [
   
   
   // Backstage
-  { src: backstage1, title: "Za kulisami 1", category: "backstage" },
-  { src: backstage2, title: "Za kulisami 2", category: "backstage" },
-  { src: backstage3, title: "Za kulisami 3", category: "backstage" },
-  { src: backstage4, title: "Za kulisami 4", category: "backstage" },
-  { src: backstage5, title: "Za kulisami 5", category: "backstage" },
-  { src: backstage6, title: "Za kulisami 6", category: "backstage" },
-  { src: sessionFinal1, title: "Efekt końcowy 1", category: "backstage" },
-  { src: sessionFinal2, title: "Efekt końcowy 2", category: "backstage" },
+  { src: backstage1, title: "Backstage sesji zdjęciowej — ujęcie 1", category: "backstage" },
+  { src: backstage2, title: "Backstage sesji zdjęciowej — ujęcie 2", category: "backstage" },
+  { src: backstage3, title: "Backstage sesji zdjęciowej — ujęcie 3", category: "backstage" },
+  { src: backstage4, title: "Backstage sesji zdjęciowej — ujęcie 4", category: "backstage" },
+  { src: backstage5, title: "Backstage sesji zdjęciowej — ujęcie 5", category: "backstage" },
+  { src: backstage6, title: "Backstage sesji zdjęciowej — ujęcie 6", category: "backstage" },
+  { src: sessionFinal1, title: "Sesja zdjęciowa — efekt końcowy 1", category: "backstage" },
+  { src: sessionFinal2, title: "Sesja zdjęciowa — efekt końcowy 2", category: "backstage" },
   
   // Wizualizacje 3D
   { src: viz17, title: "Sypialnia japońska", category: "3d" },
