@@ -40,8 +40,8 @@ export default function StronyInternetoweTorun() {
   return (
     <Layout>
       <SEOHead
-        title="Strony internetowe Toruń | Projektowanie stron internetowych"
-        description="Profesjonalne projektowanie stron internetowych w Toruniu. Nowoczesne strony wizytówki, sklepy e-commerce i landing pages dla firm z Torunia i Kujaw."
+        title="Strony internetowe Toruń — strona WWW dla firm | FOTZ"
+        description="Strony internetowe Toruń — projektujemy strony WWW, sklepy e-commerce i landing pages. Pomagamy projektować widoczność: strona www dla firm z Torunia i Kujaw."
         canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/torun"
         keywords="strony internetowe toruń, tworzenie stron internetowych toruń, tworzenie stron www toruń, projektowanie stron internetowych toruń, strony www toruń, tworzenie stron toruń, strona internetowa toruń, agencja webdesign toruń, projektowanie stron www toruń, sklep internetowy toruń"
       />
@@ -398,6 +398,29 @@ export default function StronyInternetoweTorun() {
                 Wybierz
               </a>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Proces tworzenia */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <h2 className="text-3xl font-bold mb-6">Tworzenie stron internetowych w Toruniu — od projektu strony po publikację</h2>
+          <div className="space-y-5 text-gray-700 leading-relaxed">
+            <p>Tworzenie stron internetowych w Toruniu zaczynamy od celu: strona WWW ma sprzedawać, informować czy wspierać zbieranie zapytań ofertowych. Strony internetowe w Toruniu robimy dla firm, które chcą sprzedawać — każda witryna firmowa ma pracować na wynik. Przy tworzeniu nowej strony ustalamy też, jak będzie rozwijana Twoja strona — pielęgnacja swojej strony internetowej jest tak ważna jak start. Projekt strony internetowej powstaje po warsztacie — ustalamy strukturę (każda podstrona ma swoją frazę) i niezbędne informacje dla klienta. Każdy projekt strony kończymy wdrożeniem na CMS WordPress — intuicyjny panel sprawia, że aktualizacja treści leży po Twojej stronie, bez programisty. Etap projektowania stron internetowych obejmuje makiety, warianty i akceptacje — wiesz, jak zbudować stronę, zanim powstanie pierwsza linia kodu.</p>
+            <p>Tworzymy strony www dla klientów z Torunia i okolic oraz stron internetowych dla klientów z całej Polski. Stron internetowych dla naszych klientów nie zostawiamy bez opieki po wdrożeniu. Nowa strona www powinna mieć: certyfikat SSL, szybkie ładowanie i działający formularz kontaktowy — dzięki technologii RWD działa na każdym ekranie. Sklepy internetowe Toruń to osobny proces — sprzedaż online wymaga katalogu, płatności i dostaw. Jeśli chcesz sprzedawać online, dobieramy platformę do skali. Tworzymy strony i sklepy internetowych dla firm z każdej branży — stron i sklepów internetowych uczymy się od danych sprzedażowych. Profil firmowy w social media i spójny wizerunek online wzmacniają stronę.</p>
+            <p>Prowadząc firmę, musisz mieć stronę internetową — wzrost zaufania do firmy zaczyna się od profesjonalnej obecności online. Kreatory stron kuszą ceną, ale freelancer lub agencja da sprawdzone rozwiązania i odpowiedzialność za wynik. Czas wykonania i warunki współpracy dostajesz przed startem — bez ukrytych kosztów.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Widoczność */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <h2 className="text-3xl font-bold mb-6">Widoczność w Google — pozycjonowanie stron z Torunia</h2>
+          <div className="space-y-5 text-gray-700 leading-relaxed">
+            <p>Strona bez widoczności w Google nie pozyska nowych klientów. W wyszukiwarce Google wygrywa treść i technika — dlatego każdą witrynę budujemy zgodnie z zasadami UX i SEO od pierwszego dnia. Pozycjonowanie stron to osobna usługa: po starcie strony możesz zlecić działania SEO pod frazy lokalne dla mieszkańców Torunia. Koszt pozycjonowania ustalamy po audycie fraz.</p>
+            <p>Dlaczego warto wybrać agencję zamiast kreatorów? Bo etap projektowania witryny to nie tylko wygląd: to pozyskanie nowych klientów, szybkość, bezpieczeństwo i własność danych. Strony internetowe dla naszych klientów budujemy tak, by można je było rozwijać latami — także o kanały social media.</p>
           </div>
         </div>
       </section>
