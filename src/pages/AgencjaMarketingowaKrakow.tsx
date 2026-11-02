@@ -212,7 +212,7 @@ export default function AgencjaMarketingowaKrakow() {
     <Layout>
       <SEOHead
         title="Agencja Marketingowa Kraków | Fotz Studio"
-        description="Agencja marketingowa Kraków ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Krakowa i Małopolski. Bezpłatna wycena!"
+        description="Agencja marketingowa Kraków — SEO, Google Ads, prowadzenie social mediów i B2B. Pomagamy prowadzić marketing, który sprzedaje. Budżet reklamowy osobno."
         canonical="https://www.fotz-studio.pl/agencja-marketingowa/krakow"
         keywords="agencja marketingowa kraków, marketing internetowy kraków, agencja reklamowa kraków, kampanie reklamowe kraków, seo kraków, google ads kraków, agencja marketingowa małopolska"
       />
@@ -529,6 +529,29 @@ export default function AgencjaMarketingowaKrakow() {
                 ))}
               </ul>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Digital marketing dla firm */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <h2 className="text-3xl font-bold mb-6">Digital marketing dla Twojego biznesu — jak działa kompleksowa obsługa firm</h2>
+          <div className="space-y-5 text-gray-700 leading-relaxed">
+            <p>Kompleksowa obsługa firm zaczyna się od tego, żeby poznać Twój model sprzedaży: kto kupuje, dlaczego i co blokuje decyzję. Dopiero potem dobieramy kanały — świat digital marketingu to nie cel sam w sobie, tylko sposób na wzrost przychodów. Marketing i business muszą mówić tym samym językiem liczb. Zajmujemy się digital marketingiem szeroko: od SEO i kampanii Google Ads po Meta Ads, LinkedIn Ads dla marketingu B2B i TikTok Ads, gdy Twoi odbiorcy są na TikToku.</p>
+            <p>Co możemy oferować Twojej firmie? Prowadzenie social mediów, tworzenie stron — tworzymy strony internetowe, a etap projektowania stron układamy pod konwersję — konwersja to cel, nie statystyka — oraz kampanie Ads i treści, które zachęcają klientów do kontaktu. Pomagamy realizować i optymalizować działania krok po kroku. Realne działania marketingowe planujemy pod Twoje cele biznesowe oraz potrzeb i oczekiwań klientów — strategie oparte na danych, nie na modzie. O marketingu Twojej firmy rozmawiamy konkretnie: usługi agencji obejmują pełen zakres, a pełne zaangażowanie to u nas standard, nie dopisek. Marketing Twojej firmy ma jeden cel: realne efekty i mierzalne efekty w postaci zapytań, a nie ładne raporty.</p>
+            <p>W zakresie tworzenia stron internetowych dla sklepu internetowego i firm usługowych pamiętamy, że doświadczenie użytkownika decyduje o sprzedaży, a obsługa klienta to część marketingu. Zakres usług i nasze usługi agencji obejmują też rozwiązania digitalowe — pakiet rozwiązań digitalowych wspierających sprzedaż — wszystkie działania marketingowe Twojej marki prowadzimy w jednym planie. Dzięki temu firma zyska jednego partnera zamiast pięciu podwykonawców — pracujemy dla rozwoju biznesu, nie tylko dla emisji reklam.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Jak pracujemy */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <h2 className="text-3xl font-bold mb-6">Jak działać razem: od celów biznesowych do wyników sprzedaży</h2>
+          <div className="space-y-5 text-gray-700 leading-relaxed">
+            <p>Jesteśmy agencją, która zaczyna od celów: Twoich celów marketingowych i celów biznesowych. Najpierw poznajemy biznes, potem proponujemy zintegrowane kampanie. Prowadzimy kampanie w wyszukiwarki Google i mediach społecznościowych, a każdy kanał ma przypisany wskaźnik: wyniki sprzedażowe i wyniki sprzedaży raportujemy co miesiąc — widzisz przychód z kanału, nie tylko kliknięcia.</p>
+            <p>Nasza praca to także rozpoznawalność marki: budujemy ją konsekwentnym przekazem, bo w swojej dziedzinie wygrywa ten, kogo klienci zapamiętają. Szukasz partnera godnego zaufania? Sprawdź nasze realizacje i proces — od briefu przez realizację po raport. Działamy dla firm z całego Krakowa, z centrum Krakowa po Nową Hutę, a marketing B2B i digitalowe kampanie prowadzimy także dla software house i firm technologicznych.</p>
           </div>
         </div>
       </section>

@@ -158,7 +158,7 @@ export default function AgencjaSEOWarszawa() {
     <>
       <SEOHead
         title="Agencja SEO Warszawa — pozycjonowanie stron dla firm | Fotz"
-        description="Agencja SEO Warszawa. Fotz — pozycjonowanie stron w Google dla firm z Warszawy. SEO, technical audit, link building. Bezpłatna konsultacja SEO!"
+        description="Czym jest agencja SEO? Pozycjonowanie stron w Google dla firm z Warszawy: audyt techniczny, content i link building. Bezpłatna konsultacja FOTZ."
         canonical="https://www.fotz-studio.pl/agencja-seo-warszawa"
         keywords="agencja seo warszawa, pozycjonowanie warszawa, seo warszawa, agencja seo warszawa cena, pozycjonowanie stron warszawa, seo dla firm warszawa, audyt seo warszawa, optymalizacja seo warszawa, pozycjonowanie lokalne warszawa, link building warszawa"
       />
@@ -380,6 +380,59 @@ export default function AgencjaSEOWarszawa() {
                     </div>
                   </motion.div>
                 ))}
+              </div>
+            </div>
+          </section>
+        </FadeInView>
+
+        {/* Czym jest agencja SEO */}
+        <FadeInView>
+          <section className="py-20 bg-gray-50">
+            <div className="w-full max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+              <h2 className="text-4xl font-bold mb-8 text-gray-900">Czym jest agencja SEO i jak działa wyszukiwarka?</h2>
+              <div className="space-y-5 text-gray-700 leading-relaxed">
+                <p>Czym jest agencja SEO? To zespół, który odpowiada za widoczność strony w wynikach wyszukiwania Google. Strona internetowa bez SEO ginie w tłumie — widoczność w wyszukiwarce Google to dziś główne źródło klientów. Czym zajmuje się agencja SEO w praktyce? Pracą w kilku obszarach SEO: audyt i SEO on-site (technika, nagłówki, treści), SEO copywriting, link building oraz pomiar. Specjalista SEO analizuje, co klienci będą wyszukiwać, i dostosowuje pod to stronę — strategia SEO to proces, nie jednorazowa akcja. Wiedza, jak zwiększać widoczność krok po kroku, wynika z pomiaru, nie z intuicji.</p>
+                <p>Usługa SEO obejmuje też strategię SEO dobraną do modelu biznesu: inne działania SEO potrzebuje sklep internetowy (SEO dla e-commerce), inne firma usługowa czy stronie internetowej B2B (SEO dla stron firmowych). Skuteczne pozycjonowanie stron internetowych zwiększa widoczność w wynikach wyszukiwania Google i pozycje na frazy sprzedażowe. SEO to fundament widoczności — organiczny ruch nie znika po wyłączeniu budżetu, w przeciwieństwie do reklam.</p>
+              </div>
+            </div>
+          </section>
+        </FadeInView>
+
+        {/* Wybór agencji */}
+        <FadeInView>
+          <section className="py-20 bg-white">
+            <div className="w-full max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+              <h2 className="text-4xl font-bold mb-8 text-gray-900">Dobra agencja SEO — jak ją wybrać? Kryteria wyboru agencji</h2>
+              <div className="space-y-5 text-gray-700 leading-relaxed">
+                <p>Szukasz agencji SEO i nie wiesz, jak rozpoznać dobrą agencję SEO? Wybór agencji SEO zacznij od pytań o zakres: kto pisze treści, kto wdraża zmiany, jak raportowany jest przebieg kampanii SEO. Profesjonalna agencja SEO pokazuje realizacje, nie obiecuje pozycji i jasno oddziela budżet reklamowy od wynagrodzenia. Oczekiwania wobec rzetelnej agencji SEO powinny obejmować też szczerość: powie Ci, czego nie da się zrobić w Twoim budżecie.</p>
+                <p>Warto rozróżnić nazwy: agencja marketingowa lub agencja interaktywna zwykle łączy SEO z digital marketingiem, a agencja marketingu internetowego może prowadzić też reklamy i social media. Outsourcing SEO do jednego zespołu, który zna marketing internetowy szerzej niż tylko pozycjonowanie, ułatwia spójność działań. Jeśli chcesz wybrać dobrą agencję SEO, sprawdź, czy rozumie marketing SEO w kontekście marketingu w Polsce i Twojej branży — w branży SEO obietnice bez pokrycia są niestety standardem.</p>
+                <p>Jak wybrać skuteczną agencję SEO? Skuteczna agencja mierzy efekty w zapytaniach i sprzedaży, a dobra agencja dodatkowo pokazuje, jak je osiągnęła. Sprawdź, czy dana agencja SEO ma doświadczenie w zakresie SEO, którego potrzebujesz. Współpraca z agencją SEO powinna przypominać współpracę z działem marketingu: plan, odpowiedzialność i wspólne ustalenie, jak dostosować strategię SEO do wyników. Wybrać agencję SEO znaczy wybrać partnera na lata — dlatego współpraca z agencją musi być transparentna od pierwszego dnia.</p>
+              </div>
+            </div>
+          </section>
+        </FadeInView>
+
+        {/* SEO i AI */}
+        <FadeInView>
+          <section className="py-20 bg-gray-50">
+            <div className="w-full max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+              <h2 className="text-4xl font-bold mb-8 text-gray-900">SEO i AI — pozycjonowanie w odpowiedziach AI</h2>
+              <div className="space-y-5 text-gray-700 leading-relaxed">
+                <p>Google i AI zmieniają wyszukiwanie: Google AI Overviews pokazuje gotowe odpowiedzi nad wynikami, a klienci coraz częściej pytają asystentów. SEO AI to optymalizacja treści tak, by były cytowane w odpowiedziach AI — czytelne definicje, dane strukturalne, konkretne liczby. Pozycjonowanie w AI nie zastępuje klasycznego SEO: fundament pozostaje ten sam, a widoczność w Google nadal decyduje o ruchu.</p>
+                <p>W praktyce łączymy SEO i SEM z AI tam, gdzie to ma sens: analiza fraz, klastrowanie tematów, testy treści. Narzędzie nie zastąpi strategii — eksperci SEO w naszej agencji SEO weryfikują każdą rekomendację pod kątem SEO i realiów Twojej firmy.</p>
+              </div>
+            </div>
+          </section>
+        </FadeInView>
+
+        {/* SEO i SEM */}
+        <FadeInView>
+          <section className="py-20 bg-white">
+            <div className="w-full max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+              <h2 className="text-4xl font-bold mb-8 text-gray-900">SEO i SEM — jak połączyć pozycjonowanie z Google Ads</h2>
+              <div className="space-y-5 text-gray-700 leading-relaxed">
+                <p>Agencje SEO i SEM coraz częściej pracują razem: SEO i PPC uzupełniają się, bo reklama daje ruch od razu, a pozycjonowanie buduje go na lata. SEM i AI to dziś także automatyczne strategie licytacji. Prowadzimy kampaniami Google Ads równolegle z SEO — dane z reklam pokazują, które frazy sprzedają, i wzmacniają content.</p>
+                <p>SEO i performance marketingu nie traktujemy jako konkurencji: wspólny raport pokazuje koszt pozyskania klienta z obu kanałów. Dla sklepu internetowego oznacza to np. Shopping + SEO dla e-commerce; dla firmy usługowej — reklama lokalna plus mapy i organiczne wyniki.</p>
               </div>
             </div>
           </section>

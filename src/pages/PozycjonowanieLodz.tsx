@@ -90,8 +90,8 @@ const PozycjonowanieLodz = () => {
   return (
     <Layout>
       <SEOHead
-        title="Pozycjonowanie Łódź — Agencja SEO | Fotz Studio"
-        description="Pozycjonowanie stron Łódź. Agencja SEO Fotz Studio — audyt SEO, optymalizacja i link building dla firm z Łodzi. Bezpłatna konsultacja SEO!"
+        title="Pozycjonowanie Łódź — SEO stron i sklepów | FOTZ"
+        description="Pozycjonowanie Łódź — skuteczne pozycjonowanie stron www i oferta SEO dla firm. Sprawdź, jak to sprawdzić: audyt i cenę pozycjonowania stron otrzymasz od FOTZ."
         canonical="https://www.fotz-studio.pl/uslugi/pozycjonowanie/lodz"
         keywords="pozycjonowanie łódź, agencja seo łódź, seo łódź, pozycjonowanie stron łódź, seo dla firm łódź, seo łódzkie, pozycjonowanie lokalne łódź"
       />
@@ -367,6 +367,30 @@ const PozycjonowanieLodz = () => {
               </Button>
             </div>
           </FadeInView>
+        </div>
+      </section>
+
+      {/* Czym jest pozycjonowanie */}
+      <section className="py-20 bg-gray-800">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <h2 className="text-3xl font-bold text-white mb-6">Czym jest pozycjonowanie i czym polega pozycjonowanie stron www?</h2>
+          <div className="space-y-5 text-gray-300 leading-relaxed">
+            <p>Czym jest pozycjonowanie? To zbiór działań SEO, które sprawiają, że strona internetowa pojawia się wyżej w wynikach wyszukiwania Google. Słowa kluczowe są tu fundamentem: to one łączą pytanie klienta z Twoją ofertą. Wyszukiwarka ocenia setki sygnałów: treść, technikę, linki i to, czy strona odpowiada na frazę, którą klient wpisał. Czym polega pozycjonowanie w praktyce? Na dobraniu słów kluczowych, optymalizacji strony pod nie i budowaniu autorytetu witryn w oczach Google.</p>
+            <p>Potencjalny klient, który czegoś szuka, będzie wyszukiwać frazę związaną z Twoją ofertą — widoczność w wyszukiwarce Google decyduje, czy trafi do Ciebie, czy do konkurencji. Skuteczne pozycjonowanie zwiększa ruch na stronie, a dobrze zaplanowana treść zamienia go w konwersję: zapytanie lub sprzedaż. Konwersja to cel, dla którego warto pozycjonować. SEO to proces — pozycje w wynikach wyszukiwania rosną miesiącami, ale potem pracują na Twój biznes latami. Dlatego pozycjonowanie swojej strony warto zacząć wcześniej niż konkurencja.</p>
+            <p>Wysokie pozycje w wynikach wyszukiwania to nie tylko technika. Google premiuje strony, które realnie odpowiadają na pytania: dlatego zespół naszej firmy zaczyna od pytań Twoich klientów, a dopiero potem od optymalizacji kodu. Optymalizacja strony i treści to etapy, które wdrażamy po audycie Twojej strony.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Zakres usług */}
+      <section className="py-20 bg-gray-900">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <h2 className="text-3xl font-bold text-white mb-6">Skuteczne pozycjonowanie stron i sklepów internetowych w Łodzi — zakres usług</h2>
+          <div className="space-y-5 text-gray-300 leading-relaxed">
+            <p>Usługi pozycjonowania obejmują pozycjonowanie stron i sklepów internetowych: audyt, strategię SEO, optymalizację treści i techniki oraz link building. Pozycjonowania stron internetowych w Łodzi uczymy się od danych — miasto Łódź ma specyfikę: mocne e-commerce, moda i usługi kreatywne, a fraza lokalna często wygrywa z ogólnopolską. Dlatego skuteczne pozycjonowanie Łódź zaczyna się od lokalnego SEO. Lokalne SEO i lokalne pozycjonowanie to dla firmy w Google najszybsza droga do klientów z okolicy: optymalizacja wizytówki Google Moja Firma, opinie i spójne dane o firmie. Działania SEO to proces, nie jednorazowa akcja. Skuteczne pozycjonowanie lokalne obejmuje też mapy i frazy „w pobliżu".</p>
+            <p>Co dokładnie oferujemy i co możemy oferować Twojej firmie? Kompleksowy pakiet: pozycjonowanie stron www i sklepów internetowych, tworzenie stron internetowych pod SEO od zera, kampanie reklamowe w Google (Google Ads) jako wsparcie na start oraz publikacje w mediach społecznościowych. Przy tworzeniu stron dbamy o SEO od pierwszego dnia. W pakiecie możliwe jest też pozycjonowanie stron lub sklepów internetowych już istniejących — dla sklepu internetowego układamy osobny plan kategorii i produktów. Budżet reklamowy rozliczamy osobno od obsługi. Pozycjonowanie w Google łączymy z reklamą, bo kampania reklamowa pokazuje, które frazy kluczowe sprzedają, zanim SEO zdąży je wypozycjonować. Klientów z Łodzi pozyskują dziś firmy w internecie, które traktują widoczność jak inwestycję — sprawdź, ile kosztuje to u nas: cena pozycjonowania zależy od konkurencji fraz kluczowych, a wycena jest u nas bezpłatna i przygotowywana po audycie.</p>
+            <p>Jak świadczymy usługi: raport co miesiąc, dostęp do danych i jasny plan działań SEO. Agencja, która świadczy usługi SEO uczciwie, raportuje też niepowodzenia. Wybierając spośród agencji SEO z Łodzi lub zespołów pracujących zdalnie w miastach takich jak Łódź, porównaj zakres i dowody pracy — dobra agencja SEO pokaże realizacje i powie wprost, czego w danym budżecie nie da się zrobić. Pozycjonowania stron w Łodzi podejmujemy się dla firm z każdej branży — od tworzenia stron po pozycjonowanie sklepów internetowych z tysiącami produktów. Strategie SEO i tematy związane z SEO opisujemy prostym językiem, a postępy widać na pozycjach w wynikach wyszukiwania.</p>
+          </div>
         </div>
       </section>
 
