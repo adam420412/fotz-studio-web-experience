@@ -25,7 +25,7 @@ export function PortfolioVideo({ src, poster, title, category }: PortfolioVideoP
           <video className="h-full w-full object-contain" src={src} poster={poster} autoPlay controls playsInline aria-label={title} onError={() => setFailed(true)} />
         ) : (
           <button type="button" className="relative block h-full w-full group focus-visible:outline focus-visible:outline-4 focus-visible:-outline-offset-4 focus-visible:outline-white" aria-label={`Odtwórz film: ${title}`} onClick={() => setPlaying(true)}>
-            <img src={poster} alt="" width="960" height="540" loading="lazy" className="h-full w-full object-cover" />
+            <img src={poster} alt={title} width="960" height="540" loading="lazy" className="h-full w-full object-cover" />
             <span aria-hidden="true" className="absolute inset-0 flex items-center justify-center bg-black/15">
               <span className="flex h-14 w-14 items-center justify-center rounded-full border border-white/60 bg-black/40 text-white motion-safe:transition-colors group-hover:bg-black/65">
                 <Play className="h-5 w-5 ml-0.5" fill="currentColor" />
