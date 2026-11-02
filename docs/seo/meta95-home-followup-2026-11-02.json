@@ -1,0 +1,157 @@
+{
+  "date": "2026-11-02",
+  "owner": "Codex / FOTZ-kontynuacja-01a177f2-20261102",
+  "meta_ads": {
+    "id": "FOTZ-615ABB6F",
+    "url": "https://www.fotz-studio.pl/performance-marketing/meta-ads",
+    "query": "526937fbbbde917c",
+    "prior_public_score": 92,
+    "intervening_pr": 124,
+    "intervening_public_score": 98,
+    "intervening_change": "PR124 zmienił stronę przypisaną w rejestrze do tej rozmowy. Zachowano użyteczne dodatki; poprawiono niepotwierdzone przewagi kanału, ogólny wymóg piksela i nagromadzenie fraz. Pozostałych stron PR124 nie edytowano.",
+    "rendered_score": 95,
+    "preview_score": 95,
+    "public_score": 95,
+    "pr": 128,
+    "head": "08b3ebcf81c221c6765cddfb8e451014586385bb",
+    "merged_commit": "fe678658d017e05d97d2000dd33427f8fec7921d",
+    "production": {
+      "id": "dpl_EkhttavJ8DdeXJqjLpSbJCyL1UQA",
+      "state": "READY"
+    },
+    "review": {
+      "reviewer": "Codex / meta_ads_review",
+      "result": "PASS",
+      "blob": "64759e586c123c5d5e12810c6a91844380d3b786"
+    },
+    "checks": {
+      "typecheck": "PASS",
+      "tests": "183/183 PASS",
+      "build": "1068 pages; 1066 bodies; 0 errors",
+      "seo": "1067 URLs; 135533 links; 0 broken",
+      "own_photos": "PASS",
+      "ci": [
+        {
+          "id": 41462743410,
+          "result": "success"
+        },
+        {
+          "id": 41462743429,
+          "result": "success"
+        }
+      ]
+    },
+    "mobile": {
+      "preview_widths": [
+        320,
+        390
+      ],
+      "overflow": false,
+      "cta320": {
+        "bottom": 714,
+        "height": 56.78
+      },
+      "faq_opened": true,
+      "contact_variant": "marketing/meta_ads",
+      "form_submitted": false,
+      "production": {
+        "width": 390,
+        "scroll_width": 382,
+        "cta_height": 44,
+        "cta_bottom": 584.78,
+        "new_content_verified": true,
+        "contact_selected": "Marketing i kampanie reklamowe",
+        "scope": "Kampania Facebook i Instagram",
+        "proof": "meta95-production-390.jpg"
+      }
+    },
+    "status": "POTWIERDZONE_95",
+    "neuronwriter_saved": true,
+    "neuronwriter_done": true
+  },
+  "home": {
+    "url": "https://fotz.pl/",
+    "id": 1433,
+    "modified": "2026-11-02T15:38:04",
+    "published": true,
+    "text_replacements": 14,
+    "changes_file": "docs/seo/home-1433-text-changes-2026-11-02.json",
+    "gsc": {
+      "period": "2026-10-03/2026-10-30",
+      "clicks": 59,
+      "impressions": 10213,
+      "position": 4.1659,
+      "source": "Projekt 100k/wdrozenia-2026-11-02/gsc-pages.json"
+    },
+    "neuronwriter": {
+      "query": "b60f8277a1e8a3b8",
+      "keyword": "strony internetowe poznań",
+      "before": 74,
+      "after": 75,
+      "method": "Import publicznego URL bez selektora w obu pomiarach; zapisano aktualną treść."
+    },
+    "review": {
+      "reviewer": "Codex / meta_ads_review",
+      "text_result": "PASS",
+      "unchanged_builder_shortcodes": 505,
+      "after_text_sha256": "69ABFF4772F4F595C553B0D78C39F34DB2FDC475B3D6F1AD966B6782B7845139",
+      "css_result": "PASS dla finalnego CSS, w tym odstępów16px; niezależny przegląd kodu i zakresu."
+    },
+    "mobile_css": "<style id=\"fotz-home-mobile-faq\">@media (max-width:767px){body.page-id-1433 a.toggle-heading{font-size:18px!important;line-height:1.4!important;padding:20px 48px 20px 0!important;}body.page-id-1433 .toggles--minimal-shadow .toggle{padding-left:16px!important;padding-right:16px!important;}}</style>",
+    "mobile_fix": "FAQ miało font30px i padding40px w karcie przy320px. Zmieniono tylko stronę1433/do767px: font18px, odstępy karty16px; pytania i ikony sprawdzone na320/390px.",
+    "mobile": {
+      "widths": [
+        320,
+        390
+      ],
+      "horizontal_overflow": false,
+      "document_widths": [
+        305,
+        375
+      ],
+      "long_question_icon_overlap": false,
+      "faq_open_close": true,
+      "contact_url": "https://fotz.pl/kontakt/#formularz",
+      "form_present": "wpforms-form-460",
+      "form_submitted": false,
+      "proof": [
+        "home-faq-fixed-320.jpg",
+        "home-faq-fixed-390.jpg",
+        "home-retainer-production-390.jpg"
+      ]
+    },
+    "write_method": "Edytor UI zgłosił utratę połączenia i nie zapisał zmian; użyto działającego core REST API po ponownym odczycie i sprawdzeniu wszystkich14 kotwic. Końcowy GET potwierdza dokładną treść wraz z CSS.",
+    "backups": "Projekt 100k/wdrozenia-2026-11-02/home-1433-before-20261102.txt; home-1433-after-20261102.txt; home-final-saved.json",
+    "remaining": "Wynik75 nie jest95. Kolejne prace: selektywne uzupełnienie oferty pod aktualne zapytania i ograniczenie długości/pozostałych animacji; bez przepisywania wszystkiego dla punktacji."
+  },
+  "wroclaw": {
+    "url": "https://fotz.pl/strony-internetowe-wroclaw/",
+    "change_this_turn": "Pomiar po wcześniej opublikowanym warunku pomijającym efekty portfolio; brak nowej zmiany kodu.",
+    "previous": {
+      "score": 57,
+      "LCP_seconds": 4.4,
+      "CLS": 0.165,
+      "TBT_ms": 590
+    },
+    "after": {
+      "score": 64,
+      "LCP_seconds": 4.5,
+      "CLS": 0.165,
+      "TBT_ms": 300,
+      "FCP_seconds": 2.4,
+      "speed_index_seconds": 5.1,
+      "mainthread_seconds": 2,
+      "unused_js_kib": 299,
+      "unused_css_kib": 38
+    },
+    "field_data": null,
+    "interpretation": "Mniejsze blokowanie w tym pomiarze; LCP i CLS bez istotnej poprawy. Zmienność laboratoryjna nie pozwala przypisać pełnej różnicy jednej linii kodu. Szybkość nadal nieukończona.",
+    "next": "Ustalić źródła przesunięć i opóźnienia LCP przed kolejną zmianą. Nie powtarzać audytu po każdej korekcie."
+  },
+  "business_results": {
+    "leads_measured": false,
+    "clients_measured": false,
+    "mrr_measured": false,
+    "background_monitoring": false
+  }
+}
