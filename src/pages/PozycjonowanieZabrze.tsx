@@ -1,661 +1,341 @@
 import { Layout } from "@/components/layout/Layout";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
-import { useState } from "react";
 import {
-  Building2,
-  MapPin,
-  Factory,
-  Zap,
-  BarChart3,
-  Target,
-  CheckCircle2,
   ArrowRight,
-  Phone,
-  Users,
-  TrendingUp,
-  Award,
+  BarChart3,
+  CheckCircle2,
+  FileText,
+  Link2,
+  MapPin,
+  Search,
+  Settings2,
 } from "lucide-react";
-import { useCountUp } from "@/hooks/useCountUp";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import {
   ServiceSchema,
   FAQSchema,
   BreadcrumbSchema,
-  OrganizationSchema,
 } from "@/components/seo/StructuredData";
 
-const stats = [
-  { value: 150, suffix: "+", label: "Firm w Zabrzu" },
-  { value: 8, suffix: "", label: "Lat na rynku" },
-  { value: 95, suffix: "%", label: "Zadowolenia klientów" },
-  { value: 500, suffix: "%", label: "Średni wzrost ruchu" },
+const seoTitle = "Pozycjonowanie stron Zabrze — agencja SEO | FOTZ";
+const seoDescription = "Pozycjonowanie stron Zabrze: audyt SEO, technika, treści i lokalna widoczność. Agencja FOTZ — pomiar zapytań, zakres prac i warunki wyceny dla Twojej firmy.";
+const canonicalUrl = "https://www.fotz-studio.pl/pozycjonowanie/zabrze";
+
+const faqItems = [
+  {
+    question: "Co obejmuje pozycjonowanie stron w Zabrzu?",
+    answer:
+      "Zakres ustalamy po audycie i rozmowie o ofercie. Może obejmować poprawki techniczne, optymalizację strony www, treści, linkowanie wewnętrzne, pozyskiwanie linków oraz profil firmy w Google. Wycena wskazuje konkretne zadania, odpowiedzialności i sposób raportowania, bez automatycznego wdrażania niepotrzebnych prac.",
+  },
+  {
+    question: "Jak wybrać agencję SEO w Zabrzu?",
+    answer:
+      "Dobra agencja SEO przedstawia diagnozę, plan działań i sposób pomiaru, a nie tylko listę fraz. Zapytaj, kto wdraża zalecenia i jak wygląda raport. Portfolio pomaga poznać sposób pracy, ale nie zastępuje zakresu dla Twojej strony. Agencja interaktywna i zespół SEO powinni jasno rozdzielić projektowanie, wsparcie techniczne i działania w wyszukiwarce.",
+  },
+  {
+    question: "Ile kosztuje pozycjonowanie w Zabrzu?",
+    answer:
+      "Cena zależy od stanu technicznego serwisu, konkurencji, liczby usług lub kategorii, obszaru działania oraz potrzebnych treści i wdrożeń. Innego zakresu SEO wymaga strona usługowa, a innego sklep internetowy. Nie podajemy sztywnego cennika przed analizą. Otrzymasz wycenę z zadaniami, warunkami współpracy i sposobem rozliczania prac.",
+  },
+  {
+    question: "Jak mierzycie widoczność i zapytania z Google?",
+    answer:
+      "W Google Search Console analizujemy zapytania, wyświetlenia, kliknięcia i strony docelowe. Obserwujemy ruch organiczny oraz, jeśli konfiguracja na to pozwala, uzgodnione formularze lub inne działania użytkowników. Raport oddziela pozycję w wynikach wyszukiwania od faktycznego ruchu i kontaktów, dzięki czemu decyzje opierają się na danych, a nie pojedynczej frazie.",
+  },
+  {
+    question: "Po jakim czasie widać efekty pozycjonowania strony?",
+    answer:
+      "Tempo zależy od punktu wyjścia, konkurencji, skali zmian, szybkości wdrożeń i algorytmów Google. Gwarancja konkretnej pozycji, terminu efektu albo liczby klientów nie byłaby rzetelna. Po pierwszych pracach sprawdzamy indeksację i reakcję w danych, a następne działania SEO planujemy na podstawie obserwacji zamiast z góry obiecywać rezultat.",
+  },
+  {
+    question: "Czy można pozyskiwać klientów także spoza Zabrza?",
+    answer:
+      "Tak, jeśli firma rzeczywiście obsługuje inne miejscowości. Można uwzględnić zapytania z Gliwic, Bytomia czy Rudy Śląskiej, ale każdy obszar wymaga trafnej podstrony i informacji o dostępności usługi. Nie mnożymy stron tylko z podmienioną nazwą miasta. Zasięg ustalamy według oferty i realnego sposobu świadczenia usług.",
+  },
+];
+
+const scopeItems = [
+  {
+    icon: Search,
+    title: "Audyt SEO i słowa kluczowe",
+    description:
+      "Audyt SEO pokazuje, które elementy ograniczają widoczność w Google i jak strona odpowiada na potrzeby odbiorców. Grupujemy słowa kluczowe według usługi, intencji i obszaru. Każda fraza otrzymuje właściwą podstronę, a rekomendacje wskazują priorytety, zakres wdrożenia i sposób sprawdzenia rezultatu.",
+  },
+  {
+    icon: Settings2,
+    title: "Techniczna optymalizacja strony",
+    description:
+      "Sprawdzamy indeksację, canonical, robots.txt, mapę witryny, błędy adresów, wersję mobilną i szybkość ładowania. Techniczna optymalizacja obejmuje również nagłówki, dane strukturalne i działanie formularza. Zalecenia możemy wdrożyć lub przekazać programiście, a wsparcie techniczne obejmuje kontrolę wykonanych poprawek.",
+  },
+  {
+    icon: FileText,
+    title: "Treści ofertowe i content marketing",
+    description:
+      "Tworzenie treści zaczynamy od pytań odbiorców, zakresu oferty i informacji potrzebnych przed kontaktem. Optymalizacja stron internetowych porządkuje title, opisy, nagłówki i treść bez sztucznego powtarzania fraz. Content marketing uzupełnia ofertę o poradniki, a pozycjonowanie sklepów internetowych uwzględnia kategorie i produkty sklepu internetowego.",
+  },
+  {
+    icon: MapPin,
+    title: "Lokalna widoczność i profil firmy",
+    description:
+      "Pozycjonowanie lokalne łączy stronę z rzeczywistym obszarem działania. W profilu firmy w Google, dawniej Google Moja Firma, analizujemy kategorie, usługi, opis i powiązanie z właściwą podstroną. Obecność w Mapach Google uzupełnia wyniki organiczne. Nie tworzymy fikcyjnych lokalizacji ani recenzji, a dane firmy w internecie powinny być spójne.",
+  },
+  {
+    icon: Link2,
+    title: "Linkowanie i struktura podstron",
+    description:
+      "Linkowanie wewnętrzne prowadzi między powiązanymi usługami, poradnikami i ofertą. Pomaga użytkownikowi dotrzeć do potrzebnych informacji, a wyszukiwarce zrozumieć strukturę serwisu. Plan może uwzględniać wartościowe linki zewnętrzne i pozyskiwanie linków, ale ich liczba nie zastępuje jakości tematycznej ani użytecznej strony docelowej.",
+  },
+  {
+    icon: BarChart3,
+    title: "Pomiar zapytań i raport",
+    description:
+      "Raport przedstawia wykonane prace, widoczność grup fraz, ruch na stronie i uzgodnione działania użytkowników. Łączymy dane z wyszukiwarki z informacją o zapytaniach do firmy. Na tej podstawie aktualizujemy plan, zamiast rozliczać samą pozycję w wynikach wyszukiwania lub automatycznie powtarzać ten sam zakres zadań.",
+  },
 ];
 
 const processSteps = [
   {
-    number: "01",
-    title: "Audyt SEO",
+    step: "01",
+    title: "Brief i analiza punktu wyjścia",
     description:
-      "Analizujemy obecny stan Twojej strony, konkurencję i słowa kluczowe dla Zabrza",
+      "Poznajemy ofertę, obszar działania, cele i sposób obsługi zapytań. Sprawdzamy stronę, dostępne dane oraz profil firmy, jeśli jest istotny dla lokalnej widoczności.",
   },
   {
-    number: "02",
-    title: "Strategia pozycjonowania",
+    step: "02",
+    title: "Strategia, priorytety i wycena",
     description:
-      "Tworzymy plan działań dostosowany do Twoich celów biznesowych i rynku Zabrza",
+      "Wskazujemy frazy, podstrony i poprawki o największym znaczeniu dla planu. Otrzymujesz zakres prac, odpowiedzialności, harmonogram i wycenę dopasowaną do strategii marketingowej firmy.",
   },
   {
-    number: "03",
-    title: "Implementacja",
+    step: "03",
+    title: "Wdrożenia, optymalizacja i treści",
     description:
-      "Wdrażamy zmiany techniczne, tworzymy treść i budujemy autorytet domeny",
+      "Realizujemy uzgodnione poprawki techniczne, optymalizację strony i publikacje. Jeśli część prac wykonuje Twój zespół, przekazujemy zalecenia i sprawdzamy sposób ich wdrożenia.",
   },
   {
-    number: "04",
-    title: "Monitoring i optymalizacja",
+    step: "04",
+    title: "Pomiar i rozwój widoczności",
     description:
-      "Śledzmy wyniki, raportujemy postępy i ciągle doskonalimy strategie",
+      "Porównujemy dane z punktem wyjścia i omawiamy wnioski. Kolejny etap zależy od zapytań, zmian oferty i reakcji użytkowników, a nie od sztywnej listy działań powtarzanych co miesiąc.",
   },
 ];
-
-const industries = [
-  {
-    icon: Building2,
-    title: "Nieruchomości",
-    description:
-      "Pozycjonowanie dla agencji nieruchomości, deweloperów i biur pośrednictwa w Zabrzu",
-  },
-  {
-    icon: Factory,
-    title: "Przemysł i produkcja",
-    description:
-      "SEO dla firm produkcyjnych, hurtowni i przedsiębiorstw przemysłowych",
-  },
-  {
-    icon: Zap,
-    title: "Usługi i rzemiosła",
-    description:
-      "Pozycjonowanie dla hydraulików, elektryków, stolarzy i innych usługodawców",
-  },
-  {
-    icon: Users,
-    title: "Medycyna i zdrowie",
-    description:
-      "SEO dla przychodni, gabinetów lekarskich, dentystów i salonów spa",
-  },
-  {
-    icon: Target,
-    title: "E-commerce",
-    description:
-      "Pozycjonowanie sklepów internetowych sprzedających produkty do Zabrza",
-  },
-  {
-    icon: BarChart3,
-    title: "Konsulting biznesowy",
-    description:
-      "SEO dla doradców, trenerów biznesu i firm konsultingowych w regionie",
-  },
-];
-
-const pricingPlans = [
-  {
-    name: "LOCAL",
-    price: "800-1500",
-    description: "Dla małych firm i startupów",
-    features: [
-      "Do 15 słów kluczowych",
-      "Optymalizacja techniczna",
-      "Audyt konkurencji",
-      "Raport miesięczny",
-      "Wsparcie emailowe",
-    ],
-    popular: false,
-  },
-  {
-    name: "STANDARD",
-    price: "1500-3000",
-    description: "Najpopularniejszy pakiet",
-    features: [
-      "Do 30 słów kluczowych",
-      "Tworzenie treści (2 artykuły/mies)",
-      "Link building",
-      "Raport szczegółowy",
-      "Wsparcie telefoniczne",
-      "Spotkania strategiczne co miesiąc",
-    ],
-    popular: true,
-  },
-  {
-    name: "PRO",
-    price: "3000-6000",
-    description: "Dla ambitnych firm",
-    features: [
-      "Do 50 słów kluczowych",
-      "Tworzenie treści (4 artykuły/mies)",
-      "Agresywny link building",
-      "Monitoring brandingu",
-      "Dedykowany account manager",
-      "Wsparcie 24/7",
-      "Strategia roczna",
-    ],
-    popular: false,
-  },
-];
-
-const faqItems = [
-  {
-    question: "Ile czasu zajmuje pozycjonowanie strony w Zabrzu?",
-    answer:
-      "Pierwsze rezultaty widać zwykle po 2-3 miesiącach, jednak pełne efekty SEO wymagają 6-12 miesięcy intensywnych prac. Zabrze to konkurencyjny rynek, ale dzięki naszemu doświadczeniu i sprawdzonym strategiom osiągamy rezultaty szybciej niż średnia.",
-  },
-  {
-    question: "Czy SEO gwarantuje pozycję nr 1 w Google?",
-    answer:
-      "Nikt nie może gwarantować pierwszej pozycji, jeśli twierdzi inaczej - unika. Gwarantujemy natomiast profesjonalne podejście, ciągłe doskonalenie i transportujemy wiedzę sektora. Nasze strategie zwiększają widoczność i przychody, nawet bez pozycji nr 1.",
-  },
-  {
-    question: "Jakie są różnice między SEO a SEM (Google Ads)?",
-    answer:
-      "SEO to pozycjonowanie organiczne - darmowe kliknięcia z Google, ale wymaga czasu. SEM to reklama Google Ads - natychmiast widoczne, ale trzeba płacić za klik. Idealne jest połączenie obu strategii. Polecamy SEO jako długoterminową inwestycję, a Google Ads jako szybkie wsparcie.",
-  },
-  {
-    question: "Czy pozycjonowanie działa dla firm lokalnych w Zabrzu?",
-    answer:
-      "Tak, absolut! SEO lokalne jest szczególnie skuteczne dla firm działających w jednym mieście. Wyszukiwania typu 'hydraulik Zabrze' czy 'kancelaria prawna Zabrze' mają wysoką intencję zakupu. To nasz specjalizm dla biznesu lokalnego.",
-  },
-  {
-    question: "Jaki jest koszt pozycjonowania dla e-commerce?",
-    answer:
-      "E-commerce wymaga bardziej zaawansowanego SEO - optymalizacji kategorii, produktów i budowania autorytu. Cena zaczyna się od 2000 PLN/mies. Zwrotu z inwestycji zwykle widać w 3-4 miesiące poprzez wzrost sprzedaży online.",
-  },
-  {
-    question: "Czy mogę zmienić agencję SEO bez utraty pozycji?",
-    answer:
-      "Tak, pozycje są powiązane ze stroną internetową, a nie z agencją. Zmiana partnera SEO nie spowoduje spadku rankingów, ale nowy zespół potrzebuje czasu (2-4 tygodnie) na analizę i przejęcie pracy. Dbamy o płynne przejścia dla nowych klientów.",
-  },
-];
-
-function StatCounter({
-  value,
-  suffix,
-  label,
-}: {
-  value: number;
-  suffix: string;
-  label: string;
-}) {
-  const { ref, displayValue } = useCountUp({ end: value, duration: 2000 });
-  return (
-    <div className="text-center" ref={ref}>
-      <div className="text-4xl md:text-5xl font-bold text-yellow-400">
-        {displayValue}
-        {suffix}
-      </div>
-      <div className="text-sm text-gray-400 mt-2">{label}</div>
-    </div>
-  );
-}
 
 export default function PozycjonowanieZabrze() {
-  const [activeStep, setActiveStep] = useState(0);
-
   return (
-    <>
-      <OrganizationSchema />
-      <Layout>
-        <SEOHead
-          title="Pozycjonowanie Zabrze - lokalne SEO dla firm | fotz studio"
-          description="Pozycjonowanie stron w Zabrzu. SEO lokalne dla firm, e-commerce i usługodawców. Zwiększymy Twoją widoczność w Google. Darmowa wycena."
-          canonical="https://www.fotz-studio.pl/pozycjonowanie/zabrze"
-        keywords="pozycjonowanie zabrze, agencja seo zabrze, seo zabrze, pozycjonowanie stron zabrze, seo dla firm zabrze, seo śląsk, pozycjonowanie lokalne zabrze"
-        />
+    <Layout>
+      <SEOHead
+        title={seoTitle}
+        description={seoDescription}
+        canonical={canonicalUrl}
+        keywords="pozycjonowanie zabrze, pozycjonowanie stron zabrze, seo zabrze, pozycjonowanie lokalne zabrze, audyt seo zabrze"
+      />
+      <ServiceSchema
+        name="Pozycjonowanie stron internetowych Zabrze"
+        description="Pozycjonowanie stron dla firm z Zabrza i okolic: audyt SEO, optymalizacja techniczna, treści, linkowanie, lokalna widoczność oraz pomiar zapytań."
+        provider="FOTZ Studio"
+        areaServed="Zabrze"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Strona główna", url: "https://www.fotz-studio.pl/" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "Pozycjonowanie", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie" },
+          { name: "Zabrze", url: canonicalUrl },
+        ]}
+      />
+      <FAQSchema items={faqItems} />
 
-        <ServiceSchema
-          name="Pozycjonowanie Zabrze"
-          description="Profesjonalne SEO lokalne i pozycjonowanie stron internetowych dla firm w Zabrzu. Zwiększamy widoczność w Google i przychody."
-          areaServed="Zabrze"
-        />
-        <BreadcrumbSchema items={[
-            { name: "Strona główna", url: "https://www.fotz-studio.pl" },
-            {
-              name: "Usługi",
-              url: "https://www.fotz-studio.pl/uslugi",
-            },
-            {
-              name: "Pozycjonowanie Zabrze",
-              url: "https://www.fotz-studio.pl/pozycjonowanie/zabrze",
-            },
-          ]}/>
-        <FAQSchema items={faqItems} />
+      <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-gray-900 pt-20">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(234,179,8,0.07),transparent_50%)]" />
+        <div className="container-wide relative z-10 py-20 text-center">
+          <div className="inline-flex items-center gap-2 rounded-full border border-yellow-400/30 bg-yellow-400/5 px-4 py-2 text-sm text-yellow-400 mb-6">
+            <MapPin className="w-4 h-4" /> SEO lokalne dla firm z Zabrza
+          </div>
+          <h1 className="text-4xl md:text-6xl font-heading font-bold text-white mb-6">
+            Pozycjonowanie stron Zabrze
+          </h1>
+          <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed">
+            Porządkujemy technikę, treści i lokalną widoczność, aby strona odpowiadała na realne potrzeby odbiorców. Plan powstaje po analizie danych i oferty, bez obiecywania konkretnych pozycji.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button asChild size="lg" className="gap-2 bg-yellow-400 text-gray-900 hover:bg-yellow-300">
+              <Link to="/kontakt?usluga=seo&wariant=audit#formularz">
+                Poproś o analizę i wycenę <ArrowRight className="w-4 h-4" />
+              </Link>
+            </Button>
+            <Button asChild size="lg" variant="outline" className="border-gray-700 text-white hover:bg-gray-800">
+              <a href="#zakres-prac">Zobacz zakres prac</a>
+            </Button>
+          </div>
+        </div>
+      </section>
 
-        {/* Hero Section */}
-        <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-gray-900 via-gray-900 to-gray-950">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(234,179,8,0.05),transparent_50%)]" />
-
-          <div className="container-wide relative z-10 py-20 md:py-32">
-            <div className="text-center max-w-4xl mx-auto">
-              <Badge
-                variant="outline"
-                className="mb-6 text-yellow-400 border-yellow-400/30 bg-yellow-400/5"
-              >
-                <MapPin className="w-4 h-4 mr-2" />
-                Pozycjonowanie lokalne
-              </Badge>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6">
-                Pozycjonowanie Zabrze
-              </h1>
-              <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8">
-                Zwiększymy widoczność Twojej firmy w Google dla klientów z
-                Zabrza. Professionalne SEO, które przynosi realne rezultaty i
-                nowych klientów.
+      <section className="section-padding bg-gray-950">
+        <div className="container-wide max-w-5xl">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-6">
+            Pozycjonowanie Zabrze — od wyszukiwania do kontaktu
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8 text-gray-300 leading-relaxed">
+            <div className="space-y-5">
+              <p>
+                Pozycjonowanie strony zaczynamy od rozpoznania intencji. Klient może wpisać nazwę usługi z miastem, szukać firmy w pobliżu albo porównywać zakres i warunki współpracy. Skuteczne pozycjonowanie odpowiada na tę intencję kompletną ofertą, zamiast jedynie powtarzać nazwę miasta. Strona www powinna jasno pokazywać, co robisz, gdzie działasz i jak można przesłać zapytanie.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button
-                  asChild
-                  size="lg"
-                  className="gap-2 bg-yellow-400 text-gray-900 hover:bg-yellow-500"
-                >
-                  <Link to="/kontakt">
-                    Wycena SEO
-                    <ArrowRight className="w-4 h-4" />
-                  </Link>
-                </Button>
-                <Button
-                  asChild
-                  variant="outline"
-                  size="lg"
-                  className="gap-2 border-gray-700 text-white hover:bg-gray-800"
-                >
-                  <a href="tel:+48790814814">
-                    <Phone className="w-4 h-4" />
-                    +48 790 814 814
-                  </a>
-                </Button>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Stats Section */}
-        <section className="py-16 bg-gray-950 border-t border-yellow-400/10">
-          <div className="container-wide">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              {stats.map((stat, index) => (
-                <div key={stat.label}>
-                  <StatCounter {...stat} />
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Why Local SEO Matters Section */}
-        <section className="section-padding bg-gray-900">
-          <div className="container-wide">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
-                Dlaczego SEO lokalne dla Zabrza?
-              </h2>
-              <p className="text-gray-400 max-w-2xl mx-auto">
-                Zabrze to dynamicznie rozwijające się miasto z bogatą historią
-                górniczą. Dzisiaj to centrum usług, handlu i małych przedsiębiorstw
+              <p>
+                Pozycjonowanie stron Zabrze układamy według usług i obszaru, który rzeczywiście obsługujesz. Dla lokalnych klientów istotne są także dostępność, trasa dojazdu, sposób realizacji i informacje potrzebne przed rozmową. To pomaga firmie konkurować o wartościowe wejścia, a nie o przypadkowy ruch.
               </p>
             </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[
-                {
-                  title: "Kierunkuj do lokalnych klientów",
-                  description:
-                    "Ludzie w Zabrzu szukają w Google 'hydraulik Zabrze' czy 'fryzjer blisko mnie'. Dochodź do nich w tym momencie decyzji.",
-                },
-                {
-                  title: "Niższa konkurencja niż online",
-                  description:
-                    "Pozycjonowanie lokalne jest mniej konkurencyjne niż SEO ogólne. Szybciej osiągniesz pierwszą stronę Google.",
-                },
-                {
-                  title: "Wyższa konwersja",
-                  description:
-                    "Klienci szukający lokalnie mają wyraźną intencję - są gotowi do pracy z firmą w ich mieście. To gorące leady.",
-                },
-                {
-                  title: "Mapki Google",
-                  description:
-                    "Dobra pozycja w Mapach Google to widoczność w wynikach lokalnych - oddzielny kanał na dodatkowych klientów.",
-                },
-                {
-                  title: "Budowanie reputacji",
-                  description:
-                    "SEO lokalne to również opinie, recenzje i budowanie wizerunku lidera branży w Zabrzu.",
-                },
-                {
-                  title: "Powrót z inwestycji",
-                  description:
-                    "Dla firm lokalnych SEO ma jeden z najwyższych ROI - koszty są niskie, a efekty duże.",
-                },
-              ].map((item, index) => (
-                <Card
-                  key={index}
-                  className="bg-gray-950 border-yellow-400/10 hover:border-yellow-400/30 transition-colors"
-                >
-                  <CardContent className="p-6">
-                    <h3 className="font-heading font-semibold text-white text-lg mb-3">
-                      {item.title}
-                    </h3>
-                    <p className="text-gray-400 text-sm">{item.description}</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* 4-Step Process Section */}
-        <section className="section-padding bg-gray-950">
-          <div className="container-wide">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
-                Nasz proces SEO
-              </h2>
-              <p className="text-gray-400 max-w-2xl mx-auto">
-                Sprawdzona metodologia, która działa dla firm w Zabrzu
+            <div className="space-y-5">
+              <p>
+                Mikulczyce, Biskupice, Helenka, Grzybowice, Kończyce czy Zaborze Północ mogą być częścią obszaru działania, ale dzielnica sama w sobie nie uzasadnia osobnej podstrony. Podobnie plan dla Zabrza i okolic powinien uwzględniać Gliwice tylko wtedy, gdy firma świadczy tam usługi. Treść opisuje rzeczywisty zasięg, bez tworzenia pustych wariantów lokalnych.
+              </p>
+              <p>
+                Inne potrzeby ma firma usługowa, marka B2B i sklep. Pozycjonowanie stron internetowych może koncentrować się na ofercie, a dla sklepu obejmować strukturę kategorii i produktów. SEO w Zabrzu jest częścią szerszej strategii: kampania Google Ads lub dedykowany landing page może wspierać test popytu, ale płatne wejścia rozliczamy osobno od ruchu organicznego.
               </p>
             </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              {processSteps.map((step, index) => (
-                <Card
-                  key={index}
-                  className={`bg-gray-900 border-yellow-400/10 cursor-pointer transition-all hover:border-yellow-400/30 ${
-                    activeStep === index ? "border-yellow-400/50" : ""
-                  }`}
-                  onClick={() => setActiveStep(index)}
-                >
-                  <CardContent className="p-8">
-                    <div className="text-5xl font-bold text-yellow-400 mb-4">
-                      {step.number}
-                    </div>
-                    <h3 className="font-heading font-semibold text-white text-xl mb-3">
-                      {step.title}
-                    </h3>
-                    <p className="text-gray-400">{step.description}</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Industries Section */}
-        <section className="section-padding bg-gray-900">
-          <div className="container-wide">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
-                Gałęzie biznesu dla których pracujemy w Zabrzu
-              </h2>
-              <p className="text-gray-400 max-w-2xl mx-auto">
-                Niezależnie od branży - e-commerce, usługi, przemysł czy medycyna
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {industries.map((industry, index) => (
-                <Card
-                  key={index}
-                  className="bg-gray-950 border-yellow-400/10 hover:border-yellow-400/30 transition-colors group"
-                >
-                  <CardContent className="p-6">
-                    <div className="w-12 h-12 rounded-lg bg-yellow-400/10 flex items-center justify-center mb-4 group-hover:bg-yellow-400/20 transition-colors">
-                      <industry.icon className="w-6 h-6 text-yellow-400" />
-                    </div>
-                    <h3 className="font-heading font-semibold text-white text-lg mb-2">
-                      {industry.title}
-                    </h3>
-                    <p className="text-sm text-gray-400">{industry.description}</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Pricing Section */}
-        <section className="section-padding bg-gray-950">
-          <div className="container-wide">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
-                Ceny SEO dla Zabrza
-              </h2>
-              <p className="text-gray-400 max-w-2xl mx-auto">
-                Przejrzyste cenniki, bez ukrytych kosztów. Wszystkie ceny netto.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {pricingPlans.map((plan, index) => (
-                <Card
-                  key={index}
-                  className={`relative ${
-                    plan.popular
-                      ? "border-yellow-400 shadow-lg shadow-yellow-400/10 bg-gray-900"
-                      : "border-yellow-400/10 bg-gray-950"
-                  }`}
-                >
-                  {plan.popular && (
-                    <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                      <Badge className="bg-yellow-400 text-gray-900">
-                        Najpopularniejszy
-                      </Badge>
-                    </div>
-                  )}
-                  <CardContent className="p-6 pt-8">
-                    <h3 className="font-heading font-bold text-lg text-white mb-2">
-                      {plan.name}
-                    </h3>
-                    <p className="text-sm text-gray-400 mb-4">
-                      {plan.description}
-                    </p>
-                    <div className="mb-6">
-                      <span className="text-3xl font-bold text-yellow-400">
-                        {plan.price}
-                      </span>
-                      <span className="text-gray-400 ml-1">PLN/mies</span>
-                    </div>
-                    <ul className="space-y-3 mb-6">
-                      {plan.features.map((feature, i) => (
-                        <li
-                          key={i}
-                          className="flex items-start gap-2 text-sm text-gray-300"
-                        >
-                          <CheckCircle2 className="w-4 h-4 text-yellow-400 flex-shrink-0 mt-0.5" />
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
-                    <Button
-                      asChild
-                      className={`w-full ${
-                        plan.popular
-                          ? "bg-yellow-400 text-gray-900 hover:bg-yellow-500"
-                          : "border-gray-700 text-white hover:bg-gray-900"
-                      }`}
-                      variant={plan.popular ? "default" : "outline"}
-                    >
-                      <Link to="/kontakt">Zamów wycenę</Link>
-                    </Button>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* FAQ Section */}
-        <section className="section-padding bg-gray-900">
-          <div className="container-wide">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
-                Najczęściej zadawane pytania o SEO
-              </h2>
-              <p className="text-gray-400 max-w-2xl mx-auto">
-                Odpowiedzi na najważniejsze pytania o pozycjonowanie
-              </p>
-            </div>
-
-            <div className="max-w-3xl mx-auto">
-              <Accordion type="single" collapsible className="space-y-4">
-                {faqItems.map((item, index) => (
-                  <AccordionItem
-                    key={index}
-                    value={`item-${index}`}
-                    className="bg-gray-950 border border-yellow-400/10 rounded-lg px-6"
-                  >
-                    <AccordionTrigger className="text-left font-medium text-white hover:text-yellow-400 hover:no-underline">
-                      {item.question}
-                    </AccordionTrigger>
-                    <AccordionContent className="text-gray-400">
-                      {item.answer}
-                    </AccordionContent>
-                  </AccordionItem>
-                ))}
-              </Accordion>
-            </div>
-          </div>
-        </section>
-
-        {/* CTA Section */}
-        <section className="section-padding bg-gray-950">
-          <div className="container-wide">
-            <div className="bg-gradient-to-br from-yellow-400/10 via-yellow-400/5 to-gray-900 border border-yellow-400/20 rounded-2xl p-8 md:p-12 text-center">
-              <TrendingUp className="w-12 h-12 text-yellow-400 mx-auto mb-6" />
-              <h2 className="text-2xl md:text-3xl font-heading font-bold text-white mb-4">
-                Gotowy do wzrostu biznesu w Zabrzu?
-              </h2>
-              <p className="text-gray-300 max-w-xl mx-auto mb-8">
-                Darmowa wycena SEO, bez żadnych zobowiązań. Poznaj, ile możemy
-                na Tobie zarobić poprzez SEO w Zabrzu.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button
-                  asChild
-                  size="lg"
-                  className="gap-2 bg-yellow-400 text-gray-900 hover:bg-yellow-500"
-                >
-                  <Link to="/kontakt">
-                    Darmowa wycena
-                    <ArrowRight className="w-4 h-4" />
-                  </Link>
-                </Button>
-                <Button
-                  asChild
-                  variant="outline"
-                  size="lg"
-                  className="gap-2 border-yellow-400/30 text-white hover:bg-gray-900"
-                >
-                  <a href="tel:+48790814814">
-                    <Phone className="w-4 h-4" />
-                    Zadzwoń teraz
-                  </a>
-                </Button>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Article Section */}
-        <section className="section-padding bg-gray-900">
-          <div className="container-wide max-w-3xl">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-6">
-              Pozycjonowanie Zabrze - SEO lokalne dla firm
+      <section id="zakres-prac" className="section-padding bg-gray-900 scroll-mt-24">
+        <div className="container-wide">
+          <div className="max-w-3xl mb-12">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-5">
+              Co obejmuje pozycjonowanie stron w Zabrzu?
             </h2>
-
-            <div className="space-y-4 text-gray-300 leading-relaxed">
-              <p>
-                Zabrze to piąte co do wielkości miasto w Śląsku, leżące w
-                centralnej części województwa. Przez wiele lat kojarzone jest z
-                górnictwem węgla - historią, która ukształtowała tożsamość
-                miasta. Dzisiaj Zabrze to nowoczesne centrum biznesu, handlu i
-                usług, gdzie małe i średnie firmy konkurują o uwagę lokalnych
-                klientów.
-              </p>
-
-              <p>
-                Aby znaleźć klientów w Zabrzu, musisz być widoczny w Google.
-                Pozycjonowanie lokalne (SEO) to najskuteczniejszy sposób na
-                dotarcie do ludzi, którzy właśnie cię szukają. Wiele firm w
-                Zabrzu wciąż szuka nowych kanałów pozyskiwania klientów - SEO
-                to kanał, który przynosi rezultaty.
-              </p>
-
-              <h3 className="text-2xl font-heading font-bold text-white mt-8">
-                Dlaczego SEO dla firm w Zabrzu?
-              </h3>
-
-              <p>
-                Zabrze jest miastem o bogatej infrastrukturze biznesowej.
-                Znajdziesz tu hurtownie, przedsiębiorstwa produkcyjne,
-                nieruchomości, usługodawców i wiele innych branż. Każda z nich
-                może skorzystać na widoczności w wyszukiwaniu Google dla miasta.
-              </p>
-
-              <p>
-                Wyobraź sobie, ile potencjalnych klientów szuka codziennie w
-                Google: hydraulika, dentystę, agencję marketingową, biuro
-                nieruchomości lub producenta. To Twoi przyszli klienci - trzeba
-                ich tylko znaleźć w odpowiedni momencie.
-              </p>
-
-              <h3 className="text-2xl font-heading font-bold text-white mt-8">
-                Nasza specjalizacja w SEO Zabrze
-              </h3>
-
-              <p>
-                Pracujemy z firmami w Zabrzu od ponad 8 lat. Znamy lokalny
-                rynek, konkurencję i potrzeby biznesu. Specjalizujemy się w
-                pozycjonowaniu dla firm lokalnych, które chcą dominować w
-                wynikach Google dla swojej branży i miasta.
-              </p>
-
-              <p>
-                Nasze strategie to połączenie SEO technicznego, tworzenia
-                treści, budowania autorytu i optymalizacji dla wyszukiwań
-                lokalnych. Pracujemy nad długoterminowymi rezultatami,
-                a nie szybkimi trickkami - bo chcemy, aby Twoja strona rosła
-                solidnie przez lata.
-              </p>
-
-              <h3 className="text-2xl font-heading font-bold text-white mt-8">
-                Rezultaty: ile można zarobić dzięki SEO w Zabrzu?
-              </h3>
-
-              <p>
-                Dla przeciętnej firmy usługowej w Zabrzu wzrost o 50%
-                organicznego ruchu to minimum - wielu naszych klientów osiąga
-                wzrost 200-500%. Wśród naszych klientów firmy średnie osiągają
-                średnio 10-30 nowych lead czy sprzedaży miesięcznie poprzez SEO.
-              </p>
-
-              <p>
-                Zwrot z inwestycji zwykle widzimy po 3-4 miesiącach. Jeśli
-                Twoja marka średnia sprzedaży wynosi 5000 PLN, a miesięcznie
-                pozyskujesz 10 klientów dzięki SEO - to 50000 PLN obrotu
-                tylko z tego kanału. Porównaj to z kosztem - 2000-3000 PLN
-                SEO to inwestycja, która zwraca się wielokrotnie.
-              </p>
-            </div>
+            <p className="text-gray-300 leading-relaxed">
+              Zakres prac zależy od diagnozy. Nie każda strona potrzebuje wszystkich działań jednocześnie, dlatego audyt SEO wyznacza priorytety, a zakres działań SEO przedstawiamy w zrozumiałym planie.
+            </p>
           </div>
-        </section>
-      </Layout>
-    </>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {scopeItems.map((item) => (
+              <article key={item.title} className="h-full rounded-xl border border-gray-700 bg-gray-950 p-6">
+                <item.icon className="w-7 h-7 text-yellow-400 mb-4" />
+                <h3 className="text-lg font-semibold text-white mb-3">{item.title}</h3>
+                <p className="text-gray-300 leading-relaxed">{item.description}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="pomiar" className="section-padding bg-gray-950 scroll-mt-24">
+        <div className="container-wide max-w-5xl">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-6">
+            Jak mierzymy widoczność w Google i zapytania?
+          </h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              {
+                title: "Zapytania i strony docelowe",
+                text: "Search Console pokazuje zapytania, wyświetlenia, kliknięcia i adresy, które pojawiają się w wynikach. Analizujemy grupy tematów oraz zmiany po wdrożeniach, zamiast opierać wnioski na jednym ręcznie sprawdzonym wyniku.",
+              },
+              {
+                title: "Ruch organiczny i zachowanie",
+                text: "Sprawdzamy, czy użytkownicy trafiają na właściwe oferty i jak korzystają ze strony. Interpretacja uwzględnia sezonowość i zmiany w serwisie. Sam algorytm wyszukiwarki nie wyjaśnia, czy ruch odpowiada profilowi potencjalnego klienta.",
+              },
+              {
+                title: "Kontakt i jakość zapytań",
+                text: "Jeśli dostępy i konfiguracja na to pozwalają, mierzymy uzgodnione formularze lub inne działania. Warto także notować źródło zapytania w firmie. To pozwala oddzielić klientów z Zabrza i faktyczne kontakty od samej liczby wejść.",
+              },
+            ].map((item) => (
+              <article key={item.title} className="rounded-xl border border-gray-700 bg-gray-900 p-6">
+                <h3 className="font-semibold text-white mb-3">{item.title}</h3>
+                <p className="text-gray-300 leading-relaxed">{item.text}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="proces" className="section-padding bg-gray-900 scroll-mt-24">
+        <div className="container-wide max-w-4xl">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
+            Proces pozycjonowania dla firm z Zabrza
+          </h2>
+          <p className="text-gray-300 mb-10 leading-relaxed">
+            Współpracę porządkujemy w czterech etapach. Przed rozpoczęciem znasz zakres SEO, odpowiedzialności i sposób akceptacji zadań.
+          </p>
+          <div className="space-y-6">
+            {processSteps.map((item) => (
+              <div key={item.step} className="flex gap-6 items-start">
+                <div className="w-14 h-14 shrink-0 rounded-xl bg-yellow-400 text-gray-900 font-bold flex items-center justify-center">
+                  {item.step}
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-white mb-2">{item.title}</h3>
+                  <p className="text-gray-300 leading-relaxed">{item.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="wycena" className="section-padding bg-gray-950 scroll-mt-24">
+        <div className="container-wide max-w-3xl">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-6">
+            Jak agencja SEO wycenia pozycjonowanie w Zabrzu?
+          </h2>
+          <div className="space-y-5 text-gray-300 leading-relaxed">
+            <p>
+              Na koszt wpływają stan techniczny strony, konkurencja, liczba ofert lub kategorii, obszar działania oraz wymagany zakres contentu i wdrożeń. Pozycjonowanie w Zabrzu dla jednej usługi będzie wymagało innego planu niż rozbudowany katalog sklepu. Dlatego najpierw określamy problem i rezultat pracy, a dopiero potem budżet.
+            </p>
+            <p>
+              Wycena zawiera konkretne zadania, terminy, warunki współpracy i sposób raportowania. Możliwy jest projekt audytowy albo stały rozwój widoczności, jeśli odpowiada potrzebom firmy. Skuteczne SEO nie opiera się na obietnicy pozycji. Dokumentujemy prace i dane, a decyzje o kolejnym zakresie podejmujemy na podstawie pomiaru.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="section-padding bg-yellow-400 text-gray-900">
+        <div className="container-wide text-center max-w-3xl">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-5">
+            Sprawdź zakres pozycjonowania dla swojej firmy
+          </h2>
+          <p className="text-lg text-gray-800 mb-8">
+            Prześlij adres strony i opisz ofertę oraz obszar działania. Na tej podstawie ustalimy informacje potrzebne do analizy, zakres prac i warunki wyceny.
+          </p>
+          <Button asChild size="lg" className="gap-2 bg-gray-900 text-yellow-400 hover:bg-gray-800">
+            <Link to="/kontakt?usluga=seo&wariant=audit#formularz">
+              Zapytaj o SEO w Zabrzu <ArrowRight className="w-4 h-4" />
+            </Link>
+          </Button>
+        </div>
+      </section>
+
+      <section className="section-padding bg-gray-900">
+        <div className="container-wide max-w-3xl">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-8 text-center">
+            Pozycjonowanie Zabrze — pytania i odpowiedzi
+          </h2>
+          <div className="space-y-3">
+            {faqItems.map((item, index) => (
+              <details
+                key={item.question}
+                id={`zabrze-faq-${index}`}
+                className="rounded-xl border border-gray-700 bg-gray-950 px-6"
+              >
+                <summary className="cursor-pointer py-5 text-left font-medium text-white hover:text-yellow-400">
+                  {item.question}
+                </summary>
+                <p className="pb-5 text-gray-300 leading-relaxed">{item.answer}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 bg-gray-950 border-t border-gray-800">
+        <div className="container-wide max-w-4xl">
+          <h2 className="text-sm font-semibold uppercase tracking-wide text-white mb-4">Powiązane usługi SEO</h2>
+          <div className="flex flex-wrap gap-x-6 gap-y-3 text-sm">
+            <Link to="/uslugi/pozycjonowanie" className="text-yellow-400 hover:underline">Poznaj usługę pozycjonowania</Link>
+            <Link to="/pozycjonowanie/gliwice" className="text-yellow-400 hover:underline">Pozycjonowanie Gliwice</Link>
+            <Link to="/pozycjonowanie/sosnowiec" className="text-yellow-400 hover:underline">Pozycjonowanie Sosnowiec</Link>
+          </div>
+        </div>
+      </section>
+    </Layout>
   );
 }

@@ -1,0 +1,99 @@
+{
+  "date": "2026-11-02",
+  "path": "/pozycjonowanie/zabrze",
+  "source": "src/pages/PozycjonowanieZabrze.tsx",
+  "branch": "swarm/pozycjonowanie-zabrze-20261102",
+  "baseCommit": "9edeeef972369f7a0ae399eea3ef49c008383446",
+  "gsc": {
+    "period": {
+      "from": "2026-08-01",
+      "to": "2026-10-31"
+    },
+    "queries": [
+      {
+        "query": "pozycjonowanie zabrze",
+        "impressions": 9,
+        "clicks": 0,
+        "averagePosition": 12.3
+      },
+      {
+        "query": "pozycjonowanie stron zabrze",
+        "impressions": 9,
+        "clicks": 0,
+        "averagePosition": 11.8
+      }
+    ]
+  },
+  "neuronWriter": {
+    "query": "3fb2eb3ecfc2a63d",
+    "keyword": "pozycjonowanie zabrze",
+    "newAnalysesCreated": 0,
+    "productionBaseline": 60,
+    "target": 95,
+    "recommendedWordTarget": 882,
+    "finalRenderedMainWords": 1234,
+    "iterations": [
+      {
+        "iteration": 1,
+        "score": 93,
+        "scope": "Complete offer rewrite: local intent, technical SEO, content, local visibility, query measurement, process, scoped pricing and prerendered FAQ"
+      },
+      {
+        "iteration": 2,
+        "score": 95,
+        "scope": "Aligned final metadata and pricing heading with agency intent; clarified page intent, district targeting, SEO actions and Google Maps within existing sections"
+      }
+    ],
+    "iterationsUsed": 2,
+    "maximumIterations": 4,
+    "final": 95,
+    "method": "evaluate-content through neuron_client.py evaluate-html; outerHTML of main#main-content extracted from dist/pozycjonowanie/zabrze/index.html after the final build; final title and description passed with the rendered main content",
+    "scopeComparison": "Baseline 60 was measured on the production URL with id=main-content. Final measurement covers the same semantic container from the local prerender, without navigation and footer. The content scope is comparable, but the measurement environment differs."
+  },
+  "metadata": {
+    "title": "Pozycjonowanie stron Zabrze — agencja SEO | FOTZ",
+    "titleLength": 48,
+    "description": "Pozycjonowanie stron Zabrze: audyt SEO, technika, treści i lokalna widoczność. Agencja FOTZ — pomiar zapytań, zakres prac i warunki wyceny dla Twojej firmy.",
+    "descriptionLength": 156,
+    "canonical": "https://www.fotz-studio.pl/pozycjonowanie/zabrze",
+    "h1": "Pozycjonowanie stron Zabrze",
+    "h1Count": 1
+  },
+  "renderedContract": {
+    "selfCanonical": true,
+    "mainContentCount": 1,
+    "allIds": 13,
+    "duplicateIds": [],
+    "serviceSchemaPresent": true,
+    "faqQuestions": 6,
+    "visibleFaqMatchesSchema": true,
+    "contactCta": "/kontakt?usluga=seo&wariant=audit#formularz",
+    "contactCtaCount": 2
+  },
+  "checks": {
+    "npmCi": "passed",
+    "typecheck": "passed",
+    "targetedTests": "20/20 passed: live-blog 7/7, direct Zabrze contract 5/5, seo-metadata 3/3, structured-data 5/5",
+    "build": "passed; 1068 prerendered pages, 1066 full bodies, 0 body errors",
+    "htmlContract": "passed; one H1, one main-content, self-canonical, title 48 characters, description 156 characters, 13 IDs and no duplicates",
+    "diffCheck": "passed; only the declared page, direct test and unique report are included",
+    "buildArtifactsExcluded": "known-routes.json restored after prerender; dist, .ssr and temporary extracted HTML are not staged"
+  },
+  "files": [
+    "src/pages/PozycjonowanieZabrze.tsx",
+    "scripts/pozycjonowanie-zabrze.test.mjs",
+    "docs/seo/pozycjonowanie-zabrze-2026-11-02.json"
+  ],
+  "scope": [
+    "Replaced unsupported statistics, performance claims, fixed prices, ranking promises and local-market assertions with verifiable service information",
+    "Added concrete audit, technical, content, linking, local visibility and Google Business Profile scope",
+    "Added measurement of Search Console queries, organic landing pages and agreed enquiry actions",
+    "Added a four-step process and pricing conditions based on the website, competition, offer, service area and implementation scope",
+    "Preserved the existing URL and added concise branded metadata, self-canonical, one H1, matching Service and FAQ schemas and relevant contact CTAs",
+    "Added a direct source contract test and native FAQ details so all questions and answers are present in prerendered HTML with unique IDs"
+  ],
+  "notes": [
+    "The content score evaluates the rendered offer against the existing NeuronWriter analysis; it does not prove indexing, rankings, clicks, enquiries or sales.",
+    "No changes were made to App.tsx, sitemaps, ai-work-register.csv, environment files, other pages or shared components."
+  ]
+}
