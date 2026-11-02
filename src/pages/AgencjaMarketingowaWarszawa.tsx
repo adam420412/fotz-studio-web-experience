@@ -88,8 +88,8 @@ const faqs = [
 export default function AgencjaMarketingowaWarszawa() {
   return <>
     <SEOHead title="Agencja marketingowa Warszawa — SEO i social media | FOTZ" description="Agencja marketingowa i reklamowa dla firm z Warszawy. Kampania reklamowa, SEO, social media, strategie marketingowe online i budżet reklamowy. Poznaj FOTZ." canonical={`https://www.fotz-studio.pl${path}`} />
-    <ServiceEditorial path={path} title="Agencja marketingowa dla firm z Warszawy" eyebrow="FOTZ Studio · współpraca zdalna" area="Warszawa"
-      lead="Uporządkujmy regularną pracę nad Twoim marketingiem: treści, publikacje i aktualizacje strony. Wybierzemy zakres dopasowany do potrzeb firmy oraz sposób oceny zapytań. Kampanie i nową produkcję wyceniamy osobno."
+    <ServiceEditorial path={path} title="Agencja marketingowa Warszawa" eyebrow="FOTZ Studio · współpraca zdalna" area="Warszawa"
+      lead="Stała obsługa marketingowa dla firm z Warszawy: treści, publikacje i aktualizacje strony. Ustalimy zakres dopasowany do Twojej firmy i sposób oceny zapytań. Kampanie reklamowe i nową produkcję wyceniamy osobno."
       priceNote="Stała obsługa od 3 000 zł netto miesięcznie w określonym zakresie."
       enquiryVariant="retainer" contactLabel="Zapytaj o stałą obsługę"
       contactDescription="Prześlij adres strony i profili, opisz cel oraz dostępne zdjęcia lub filmy. Napisz, co realizuje Twój zespół. Sprawdzimy dopasowanie pakietu i zaproponujemy zakres współpracy."
