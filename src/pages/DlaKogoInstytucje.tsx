@@ -1,3 +1,4 @@
+import { industryEnquiryHref } from "@/lib/industry-enquiry.mjs";
 import { IndustryWork } from "@/components/sections/IndustryWork";
 import { Link } from "react-router-dom";
 import { CalendarDays, ArrowRight, CheckCircle, Megaphone, Camera, Video, Share2, Star, Phone, Users, Plus, Minus } from "lucide-react";
@@ -176,7 +177,7 @@ export default function DlaKogoInstytucje() {
             
             <div className="flex flex-wrap gap-4">
               <Button variant="hero" size="xl" asChild>
-                <Link to="/kontakt" className="group">
+                <Link to={industryEnquiryHref("instytucje", "/kontakt")} className="group">
                   Porozmawiajmy o evencie
                   <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
                 </Link>
@@ -488,7 +489,7 @@ export default function DlaKogoInstytucje() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button variant="hero" size="xl" asChild>
-                <Link to="/kontakt" className="group">
+                <Link to={industryEnquiryHref("instytucje", "/kontakt")} className="group">
                   Porozmawiajmy o evencie
                   <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
                 </Link>

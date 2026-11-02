@@ -1,0 +1,47 @@
+{
+  "page": "https://www.fotz-studio.pl/blog/seo-dla-malych-firm",
+  "updatedAt": "2026-11-02",
+  "gsc": {
+    "source": "Google Search Console przez WebBridge, raport Skuteczność / Sieć",
+    "property": "sc-domain:fotz-studio.pl",
+    "period": {
+      "from": "2026-08-01",
+      "to": "2026-10-31",
+      "label": "1.08–31.10.2026"
+    },
+    "query": "seo dla małych firm",
+    "queryTotals": {
+      "clicks": 0,
+      "impressions": 68,
+      "averagePosition": 15.1
+    },
+    "pageForQuery": {
+      "url": "https://www.fotz-studio.pl/blog/seo-dla-malych-firm",
+      "clicks": 0,
+      "impressions": 66,
+      "averagePosition": 14.7
+    }
+  },
+  "neuronWriter": {
+    "queryId": "dc5d52db43461c9a",
+    "keyword": "seo dla małych firm",
+    "baseline": {
+      "contentScore": 80,
+      "scope": "full-page"
+    },
+    "final": {
+      "contentScore": 95,
+      "scope": "article#main-content",
+      "source": "dist/blog/seo-dla-malych-firm/index.html",
+      "selector": "article#main-content",
+      "title": "SEO dla małych firm: plan działania 30/60/90 dni | FOTZ",
+      "description": "SEO dla małych firm: priorytety, lokalne SEO i profil firmy w Google, frazy zakupowe, techniczne minimum, pomiar zapytań oraz plan 30/60/90 dni."
+    }
+  },
+  "methodology": {
+    "baseline": "Wynik 80 jest zapisanym baseline NeuronWriter dla pełnej strony, obejmującej także elementy poza treścią redakcyjną.",
+    "final": "Koordynator ocenił przez tę samą analizę wyłącznie element article z aktualnego dist, bez nawigacji i stopki, i uzyskał 95. Do źródła dodano następnie id=main-content, aby produkcję można było oceniać selektorem article#main-content.",
+    "comparability": "Baseline full-page 80 i final article#main-content 95 dotyczą różnych zakresów. Nie są przedstawiane jako identyczne ani bezpośrednio porównywalne pomiary.",
+    "interpretation": "Content score nie dowodzi pozycji, ruchu ani leadów. Dane GSC opisują wskazany okres bazowy i rozróżniają sumę dla frazy globalnie od pary zapytanie–URL."
+  }
+}

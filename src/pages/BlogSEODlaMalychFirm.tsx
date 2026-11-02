@@ -3,65 +3,91 @@ import { SEOHead } from "@/components/seo/SEOHead";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
-import { Clock, User, TrendingUp, Target, Search, CheckCircle2, ArrowRight, MapPin } from "lucide-react";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { ArrowRight, CheckCircle2, Clock, User } from "lucide-react";
 import { ArticleSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
+
+const seoTitle = "SEO dla małych firm: plan działania 30/60/90 dni | FOTZ";
+const seoDescription = "SEO dla małych firm: priorytety, lokalne SEO i profil firmy w Google, frazy zakupowe, techniczne minimum, pomiar zapytań oraz plan 30/60/90 dni.";
+const canonicalUrl = "https://www.fotz-studio.pl/blog/seo-dla-malych-firm";
+
+const faqItems = [
+  {
+    question: "Od czego mała firma powinna zacząć SEO?",
+    answer: "Od wybrania usług lub produktów, które mają przyciągać klientów, i sprawdzenia kontaktu na stronie. Następnie uporządkuj indeksowanie, podstrony ofertowe i pomiar. Firma lokalna powinna równolegle zadbać o profil firmy w Google.",
+  },
+  {
+    question: "Czy każda mała firma potrzebuje profilu firmy w Google?",
+    answer: "Nie każda. Profil jest przydatny firmom obsługującym klientów lokalnie, które spełniają zasady Google. Działalność wyłącznie internetowa może mieć inne priorytety. Profil uzupełnia stronę, ale jej nie zastępuje.",
+  },
+  {
+    question: "Ile kosztuje SEO dla małej firmy?",
+    answer: "Koszt zależy m.in. od stanu strony, konkurencji i zakresu prac. Porównuj listę zadań, odpowiedzialność za wdrożenia i sposób raportowania zapytań, nie tylko wysokość abonamentu.",
+  },
+  {
+    question: "Jak długo trzeba czekać na efekty SEO?",
+    answer: "Nie ma jednego terminu. Znaczenie mają m.in. historia domeny, konkurencja, stan techniczny i zakres zmian. Plan 30/60/90 dni porządkuje prace, ale nie jest obietnicą pozycji lub liczby klientów.",
+  },
+  {
+    question: "Ile słów powinien mieć artykuł na blogu firmy?",
+    answer: "Tyle, ile potrzeba do udzielenia konkretnej odpowiedzi. Nie ma uniwersalnej liczby słów gwarantującej widoczność. Nie wydłużaj tekstu samymi ogólnikami.",
+  },
+  {
+    question: "Czy SEO wystarczy, czy potrzebne są Google Ads?",
+    answer: "To zależy od celu, budżetu i pilności. SEO rozwija bezpłatne wyniki, a Google Ads umożliwia płatne kampanie. Kanały można łączyć, ale decyzję warto oprzeć na koszcie i jakości zapytań.",
+  },
+  {
+    question: "Czy SEO ma jeszcze sens przy odpowiedziach AI w Google?",
+    answer: "Tak, ale część wyszukiwań może kończyć się bez wejścia na stronę. Publikuj rzetelne informacje, dbaj o markę i mierz zapytania. Zmiany w wynikach oceniaj na własnych danych, nie na pojedynczych przykładach.",
+  },
+  {
+    question: "Czy nauka SEO jest trudna i czy można prowadzić je samodzielnie?",
+    answer: "Nauka SEO wymaga praktyki, ale podstawy można poznawać etapami. Firma może wykonywać prostsze prace, jeśli ma czas i dostęp do strony. Przy indeksowaniu lub migracji warto skorzystać ze specjalisty, ponieważ błąd może ograniczyć widoczność.",
+  },
+];
+
+const priorities = [
+  {
+    title: "Najpierw oferta i intencja",
+    text: "Wybierz usługi lub produkty, których dotyczyć ma pozyskiwanie zapytań. Nie zaczynaj od listy popularnych haseł bez związku z ofertą.",
+  },
+  {
+    title: "Lokalność tam, gdzie ma znaczenie",
+    text: "Jeśli firma obsługuje klientów na konkretnym obszarze, połącz prace nad stroną z profilem firmy w Google i opiniami klientów.",
+  },
+  {
+    title: "Technika bez przesadnego rozpisywania prac",
+    text: "Usuń przeszkody w indeksowaniu, obsłudze telefonu i korzystaniu z formularza. Najpierw naprawiaj problemy, które realnie blokują stronę lub zapytania.",
+  },
+  {
+    title: "Decyzje na podstawie danych",
+    text: "Porównuj zapytania, strony wejścia i jakość leadów. Sama pozycja nie mówi, czy firma zyskuje na działaniach SEO.",
+  },
+];
 
 const BlogSEODlaMalychFirm = () => {
   const articleData = {
-    headline: "SEO dla Małych Firm – Kompletny Poradnik 2026",
-    description: "SEO dla małych firm od podstaw. Dowiedz się jak pozycjonować lokalny biznes, zoptymalizować Google My Business i zdobyć klientów online. Praktyczne wskazówki.",
+    headline: "SEO dla małych firm: priorytety i plan 30/60/90 dni",
+    description: seoDescription,
     image: "https://www.fotz-studio.pl/og-image.jpg",
     datePublished: "2026-03-15",
-    dateModified: "2026-03-15",
+    dateModified: "2026-11-02",
     author: "Zespół FOTZ",
-    url: "https://www.fotz-studio.pl/blog/seo-dla-malych-firm",
+    url: canonicalUrl,
   };
 
   const breadcrumbs = [
     { name: "Strona główna", url: "/" },
     { name: "Blog", url: "/blog" },
-    { name: "SEO dla Małych Firm", url: "/blog/seo-dla-malych-firm" },
-  ];
-
-  const faqItems = [
-    {
-      question: "Jak długo trwa widoczność w Google dla małej firmy?",
-      answer: "Pierwszych rezultatów SEO można oczekiwać po 3-6 miesiącach konsekwentnej pracy. Jednak pełne efekty widoczne są zazwyczaj po 6-12 miesiącach. Wszystko zależy od konkurencji w Twojej branży i lokalnym rynku.",
-    },
-    {
-      question: "Czy małe firmy muszą mieć Google My Business?",
-      answer: "Tak, Google My Business jest obowiązkowe dla każdej firmy mającej fizyczną lokalizację. To najważniejszy element SEO lokalnego i bezpłatnie zwiększa widoczność w lokalnych wynikach wyszukiwania.",
-    },
-    {
-      question: "Ile słów powinien mieć artykuł na blogu firmy?",
-      answer: "Rekomendowana długość artykułu to 1500-2000 słów dla zawartości blogowej. Jednak zawsze ważniejsza jest jakość i wartość treści niż sama liczba słów. Artykuły 800+ słów generalnie rankują lepiej w Google.",
-    },
-    {
-      question: "Czy SEO sama wystarcza, czy potrzebuję Google Ads?",
-      answer: "SEO i Google Ads to komplementarne strategie. SEO daje długoterminowe rezultaty i jest bardziej ekonomiczne, ale Google Ads daje natychmiastową widoczność. Idealnie stosować obie metody razem.",
-    },
-    {
-      question: "Czy profil firmy w Google jest płatny?",
-      answer: "Nie — profil firmy w Google (Google Business Profile, dawniej Google Moja Firma) jest bezpłatny. Wizytówka — wpisz adres i numer telefonu, zbieraj opinie — zwiększa widoczność w mapie Google i lokalne wyniki wyszukiwania. To pierwszy krok lokalnego SEO dla każdej małej firmy.",
-    },
-    {
-      question: "Jak sprawdzić, czy działania SEO przynoszą efekty?",
-      answer: "Podepnij stronę pod Google Search Console i Google Analytics 4. Mierz liczbę zapytań i telefonów ze strony, pozycje fraz oraz ruch organiczny. Efekty oceniaj w perspektywie 3-6 miesięcy, a nie tygodni.",
-    },
-    {
-      question: "Jak czasochłonne jest zarządzanie SEO dla małej firmy?",
-      answer: "Jeśli robisz to sam, liczy się 5-10 godzin tygodniowo na optymalizację, tworzenie treści i monitoring. Agencja SEO może wziąć to całkowicie na siebie, ale to dodatkowy koszt.",
-    },
+    { name: "SEO dla małych firm", url: "/blog/seo-dla-malych-firm" },
   ];
 
   return (
     <Layout>
       <SEOHead
-        title="Mała firma w Google — lokalne SEO i marketing | FOTZ"
-        description="SEO dla małych firm — lokalna widoczność, profil firmy w Google i mapa Google. Jak mała firma wygrywa: fraza, marketing i plan działań SEO krok po kroku."
-        keywords="SEO dla małych firm, pozycjonowanie lokalne, Google My Business, SEO 2026"
-        canonical="https://www.fotz-studio.pl/blog/seo-dla-malych-firm"
+        title={seoTitle}
+        description={seoDescription}
+        keywords="SEO dla małych firm, lokalne SEO, profil firmy w Google, pozycjonowanie strony"
+        canonical={canonicalUrl}
         ogType="article"
       />
 
@@ -69,629 +95,322 @@ const BlogSEODlaMalychFirm = () => {
       <BreadcrumbSchema items={breadcrumbs} />
       <FAQSchema items={faqItems} />
 
-      <article className="min-h-screen bg-white">
-        {/* Header */}
+      <article id="main-content" className="min-h-screen bg-white">
         <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16 px-4 md:px-8">
           <div className="max-w-3xl mx-auto">
             <div className="flex flex-wrap gap-2 mb-4">
               <Badge variant="secondary" className="bg-blue-200 text-blue-900">SEO</Badge>
-              <Badge variant="secondary" className="bg-blue-200 text-blue-900">Dla Małych Firm</Badge>
-              <Badge variant="secondary" className="bg-blue-200 text-blue-900">Poradnik</Badge>
+              <Badge variant="secondary" className="bg-blue-200 text-blue-900">Małe firmy</Badge>
+              <Badge variant="secondary" className="bg-blue-200 text-blue-900">Poradnik 2026</Badge>
             </div>
 
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              SEO dla małych firm — jak mała firma zwiększy swoją widoczność
+              SEO dla małych firm: priorytety i plan 30/60/90 dni
             </h1>
 
             <p className="text-lg md:text-xl mb-6 text-blue-100">
-              Praktyczne wskazówki, które pomogą Twojemu biznesowi zdobyć klientów przez Google
+              Jak uporządkować stronę, lokalną widoczność i treści, a następnie sprawdzać, czy przekładają się na zapytania klientów.
             </p>
 
             <div className="flex flex-wrap gap-4 text-blue-100 text-sm">
               <div className="flex items-center gap-2">
                 <Clock className="w-4 h-4" />
-                <span>Czas czytania: 8 minut</span>
+                <span>Aktualizacja: 2 listopada 2026</span>
               </div>
               <div className="flex items-center gap-2">
                 <User className="w-4 h-4" />
                 <span>Zespół FOTZ</span>
               </div>
-              <div className="flex items-center gap-2">
-                <TrendingUp className="w-4 h-4" />
-                <span>15 marca 2026</span>
-              </div>
+              <span>Publikacja: 15 marca 2026</span>
             </div>
           </div>
         </section>
 
-        {/* Main Content */}
         <section className="max-w-3xl mx-auto px-4 md:px-8 py-16">
-          {/* Introduction */}
           <div className="mb-12">
             <p className="text-lg text-gray-700 mb-4">
-              SEO dla małych firm to najszybsza droga do zwiększenia liczby klientów z internetu. Podczas gdy duże przedsiębiorstwa mogą pozwolić sobie na drogie kampanie reklamowe, mały biznes może osiągać porównywalne (a czasem lepsze) rezultaty dzięki organicznej widoczności w Google.
+              Prowadzisz małą firmę? Nie musisz kopiować strategii dużego serwisu. SEO dla małej firmy powinno pomagać osobom, które szukają produktów i usług, znaleźć właściwą ofertę i wygodnie nawiązać kontakt.
             </p>
-
             <p className="text-lg text-gray-700 mb-4">
-              Różnica jest fundamentalna: płatne reklamy (Google Ads) kończą się w momencie, kiedy przestaniesz płacić. SEO natomiast to inwestycja długoterminowa, która generuje bezpłatny ruch przez lata. Dla małych firm to oznacza niższe koszty pozyskania klientów i wyższy zwrot z inwestycji.
+              SEO, czyli search engine optimization, obejmuje optymalizację widoczności w bezpłatnych wynikach wyszukiwarek takich jak Google. Pozycjonowanie strony łączy treść, technikę, linkowanie i prezentację firmy. Nie gwarantuje pozycji ani leadów. Celem jest dotarcie z ofertą do właściwych osób, a nie za wszelką cenę zwiększyć swoją widoczność w Google. Strategia SEO powinna zaczynać się od priorytetów biznesowych, a nie od obietnicy wyższych pozycji w wynikach.
             </p>
-
             <p className="text-lg text-gray-700">
-              Ten poradnik przeprowadzi Cię przez wszystkie najważniejsze elementy SEO dla małych firm – od podstaw po zaawansowane strategie. Niezależnie czy zarządzasz lokalną restauracją, salonem fryzjerskim, czy firmą usługową, znajdziesz tu praktyczne wskazówki, które możesz wdrożyć już dziś.
+              Poradnik pokazuje, co wdrożyć najpierw i jak mierzyć efekty. Plan 30/60/90 dni organizuje pracę, lecz nie zastępuje diagnozy Twojej stronie ani analizy rynku.
             </p>
           </div>
 
-          {/* Section 1: Why SEO matters */}
           <div className="mb-12">
-            <h2 className="text-3xl font-bold mb-6 text-gray-900">Dlaczego SEO jest ważne dla małych firm?</h2>
-
-            <p className="text-gray-700 mb-4">
-              Statystyki są jasne: <strong>46% wszystkich wyszukiwań w Google posiada lokalny intent</strong> – ludzie szukają produktów i usług blisko siebie. To ogromna szansa dla małych firm, które konkurują głównie na lokalnym rynku.
-            </p>
-
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">Priorytety SEO dla małych firm</h2>
             <p className="text-gray-700 mb-6">
-              Oto dlaczego SEO powinno być priorytetem dla Twojej firmy:
+              Przy ograniczonym budżecie i czasie szczególnie ważne dla małych firm jest unikanie prac bez priorytetu. Lepsza jest krótka lista działań powiązanych z celem: telefonem, rezerwacją, wyceną lub sprzedażą. Kluczowa jest kolejność, dlatego warto trzymać się czterech zasad.
             </p>
-
-            <div className="grid md:grid-cols-2 gap-4 mb-8">
-              <Card>
-                <CardContent className="pt-6">
-                  <div className="flex gap-3">
-                    <CheckCircle2 className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="font-semibold mb-2 text-gray-900">Bezpłatny ruch</h3>
-                      <p className="text-gray-700 text-sm">Nie płacisz za każde kliknięcie, a ruch trwa nawet gdy zrezygnujesz ze optymalizacji.</p>
+            <div className="grid md:grid-cols-2 gap-4">
+              {priorities.map((priority) => (
+                <Card key={priority.title}>
+                  <CardContent className="pt-6">
+                    <div className="flex gap-3">
+                      <CheckCircle2 className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                      <div>
+                        <h3 className="font-semibold mb-2 text-gray-900">{priority.title}</h3>
+                        <p className="text-gray-700 text-sm">{priority.text}</p>
+                      </div>
                     </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="pt-6">
-                  <div className="flex gap-3">
-                    <CheckCircle2 className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="font-semibold mb-2 text-gray-900">Wyższa konwersja</h3>
-                      <p className="text-gray-700 text-sm">Osoby z organicznych wyników konwertują lepiej niż z reklam – szukają aktywnie.</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="pt-6">
-                  <div className="flex gap-3">
-                    <CheckCircle2 className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="font-semibold mb-2 text-gray-900">Zaufanie odbiorców</h3>
-                      <p className="text-gray-700 text-sm">Pozycje w Google organicznych są postrzegane jako bardziej wiarygodne niż reklamy.</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="pt-6">
-                  <div className="flex gap-3">
-                    <CheckCircle2 className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="font-semibold mb-2 text-gray-900">Przewaga konkurencyjna</h3>
-                      <p className="text-gray-700 text-sm">Jeśli konkurenci nie dbają o SEO, ty możesz się wyróżnić i zdobyć ich klientów.</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
+                  </CardContent>
+                </Card>
+              ))}
             </div>
+            <p className="text-gray-700 mt-6">
+              Konkurowanie z większymi firmami nie musi polegać na walce o każde ogólne hasło. Mała firma może dokładniej opisać specjalistyczną usługę, konkretny obszar działania i warunki współpracy. To bardziej przydatne dla użytkownika niż kolejna strona z ogólnymi hasłami o profesjonalizmie.
+            </p>
           </div>
 
-          {/* Konkurowanie z większymi */}
           <div className="mb-12">
-            <h2 className="text-3xl font-bold mb-6 text-gray-900">Jak mała firma może konkurować z większymi w wynikach wyszukiwania?</h2>
-
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">Jak działają bezpłatne wyniki wyszukiwania Google?</h2>
             <p className="text-gray-700 mb-4">
-              Konkurowanie z większymi markami w wyszukiwarkach takich jak Google jest możliwe, bo lokalna widoczność rządzi się innymi prawami niż globalna. Jeśli prowadzisz małą firmę, nie musisz wygrywać fraz ogólnych — wystarczy, że Twoja strona internetowa odpowiada na zapytania lokalne: usługa plus lokalizacja (np. „fryzjer Poznań Jeżyce"). Wyszukiwarka premiuje trafność dla odbiorcy, a nie budżet.
+              Wyszukiwarka odkrywa strony, pobiera ich zawartość i może zapisać je w indeksie. Gdy użytkownik wpisuje zapytanie, Google dobiera odpowiedzi na podstawie wielu sygnałów związanych m.in. z tematem, jakością i użytecznością strony. Sam fakt publikacji nie oznacza, że adres znajdzie się w indeksie lub osiągnie widoczność.
             </p>
-
-            <p className="text-gray-700 mb-4">Elementy przewagi małej firmy:</p>
-            <ul className="list-disc pl-6 text-gray-700 mb-4 space-y-2">
-              <li><strong>Unikalny opis każdej podstrony</strong> — nie kopiuj tekstów producenta; każda podstrona powinna odpowiadać na inną frazę, którą klienci będą wyszukiwać.</li>
-              <li><strong>Profil firmy w Google</strong> (dawniej Google Moja Firma, obecnie Google Business Profile) z aktualnym adresem i numerem telefonu — NAP to skrót od Name, Address, Phone, czyli adres i telefon, które muszą być spójne wszędzie.</li>
-              <li><strong>Linkowanie wewnętrzne i zewnętrzne</strong>: rolę linkowania wewnętrznego pełni linkowanie usług z blogiem, które wzmacnia pozycje w wynikach wyszukiwania, a odnośniki z lokalnych katalogów budują autorytet strony.</li>
-              <li><strong>Treści, które warto publikować regularnie</strong> — blog firmowy to najprostszy sposób, by zwiększyć swoją widoczność w Google w dłuższej perspektywie.</li>
-              <li><strong>Upychanie słów kluczowych jest karane</strong> — Google traktuje tzw. keyword stuffing jako spam; pisz dla człowieka, optymalizuj dla wyszukiwarki.</li>
-            </ul>
             <p className="text-gray-700">
-              Warto wiedzieć, że większość stron internetowych małych firm nie ma nawet poprawnie ustawionych nagłówków — już sama optymalizacja podstaw daje przewagę nad lokalną konkurencją. Dodatkowo wpis do lokalnego katalogu branżowego (katalog branżowy ze spójnymi danymi NAP) wzmacnia sygnały lokalne, a widoczność strony rośnie z każdą zaindeksowaną podstroną.
+              Kliknięcia w organiczny wynik nie są rozliczane jak kliknięcia w reklamę. Nie oznacza to jednak, że ruch organiczny jest darmowy: diagnoza, wdrożenia i treści wymagają czasu lub budżetu. Zamiast porównywać SEO wyłącznie z kosztem reklamy, sprawdzaj, czy w dłuższej perspektywie przynosi wartościowe zapytania.
             </p>
           </div>
 
-          {/* Inwestowanie w SEO */}
           <div className="mb-12">
-            <h2 className="text-3xl font-bold mb-6 text-gray-900">Inwestowanie w SEO — strategia SEO małej firmy krok po kroku</h2>
-
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">Lokalne SEO i profil firmy w Google</h2>
             <p className="text-gray-700 mb-4">
-              Inwestowanie w SEO różni się od reklam tym, że budujesz własny kanał pozyskiwania klientów. Plan działań SEO na start: etap optymalizacji pod kątem szybkości oraz wersji na urządzeniach mobilnych, nagłówek z frazą na każdej podstronie oraz opisy produktów lub usług — w tym usługi na określonym obszarze działania. Pozycjonowanie strony to proces — wyższe pozycje w wynikach przychodzą z regularnością, a nie jednorazową akcją.
+              SEO lokalne dotyczy sytuacji, w których na wybór wpływa lokalizacja lub świadczenie usługi na określonym obszarze. Użytkownik może wpisać „hydraulik Poznań”, skorzystać z Map Google albo zobaczyć pakiet lokalny w wynikach wyszukiwania. Lokalna firma powinna łączyć stronę z aktualnymi informacjami w mapach.
             </p>
-
-            <p className="text-gray-700">
-              Marketing internetowy małej firmy powinien łączyć SEO (search engine optimization) z profilem firmy w Google i opiniami klientów. Potencjalni klienci, którzy znajdą Cię na mapie Google i przeczytają dobre recenzje, częściej wybierają lokalną firmę niż anonimową korporację. Mierz liczbę zapytań i telefonów, nie tylko pozycje.
-            </p>
-          </div>
-
-          {/* Section 2: Local SEO */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-bold mb-6 text-gray-900">Lokalne SEO — najważniejsze dla małej firmy: mapa Google i lokalizacja</h2>
-
             <p className="text-gray-700 mb-6">
-              Dla większości małych firm SEO lokalne jest jeszcze ważniejsze niż SEO ogólne. To oznacza optymalizację dla wyników wyszukiwania w Twojej okolicy – gdy ktoś szuka "fryzjer warszawa" zamiast "fryzjer".
+              Profil firmy w Google (ang. Google Business Profile), nazywany też wizytówką, jest bezpłatny. Przedstawia działalność w Google Maps i lokalnych wynikach wyszukiwania. Nie zastępuje strony, ale ułatwia kontakt. Wizytówka powinna prowadzić do aktualnego adresu URL.
             </p>
 
-            <h3 className="text-2xl font-semibold mb-4 text-gray-900">Profil firmy w Google — wizytówka lokalna (dawniej Google Moja Firma)</h3>
-
-            <p className="text-gray-700 mb-4">
-              Google My Business (GMB) to bezpłatne narzędzie Google, które wyświetla Twoją firmę w Google Maps i lokalnych wynikach wyszukiwania. To <strong>obowiązkowe</strong> dla każdej firmy z fizyczną lokacją.
-            </p>
-
-            <p className="text-gray-700 mb-6">
-              Jak zoptymalizować Google My Business:
-            </p>
-
-            <ul className="space-y-3 mb-8 text-gray-700">
-              <li className="flex gap-3">
-                <span className="text-green-600 font-bold mt-1">1.</span>
-                <span>Uzupełnij wszystkie pola – nazwa, adres, telefon, godziny otwarcia, kategoria biznesu</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-green-600 font-bold mt-1">2.</span>
-                <span>Dodaj profesjonalne zdjęcie profilu i zdjęcia wnętrza/produktów firmy</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-green-600 font-bold mt-1">3.</span>
-                <span>Napisz krótki, atrakcyjny opis biznesu (120-160 znaków)</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-green-600 font-bold mt-1">4.</span>
-                <span>Odpowiadaj na recenzje – pozytywne i negatywne, zawsze profesjonalnie</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-green-600 font-bold mt-1">5.</span>
-                <span>Dodawaj posty i aktualizacje regularnie (nowe usługi, promocje, wydarzenia)</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-green-600 font-bold mt-1">6.</span>
-                <span>Zachęcaj klientów do zostawiania recenzji – więcej opinii &gt; wyższa widoczność</span>
-              </li>
+            <h3 className="text-2xl font-semibold mb-4 text-gray-900">Co uporządkować w profilu</h3>
+            <ul className="space-y-3 mb-6 text-gray-700">
+              <li>• Wybierz właściwe kategorie i uzupełnij usługi zgodnie z ofertą.</li>
+              <li>• Sprawdź nazwę, adres, numer telefonu, stronę i godziny otwarcia, także okresowe.</li>
+              <li>• Dodaj aktualne zdjęcia lokalu, zespołu lub realizacji.</li>
+              <li>• Proś o szczere opinie. Nie kupuj recenzji ani nie nagradzaj za ich treść.</li>
+              <li>• Odpowiadaj rzeczowo, bez ujawniania danych klientów.</li>
             </ul>
-
-            <h3 className="text-2xl font-semibold mb-4 text-gray-900">Cytacje lokalne (Local Citations)</h3>
-
-            <p className="text-gray-700 mb-4">
-              Cytacja to wzmianki informacji o Twojej firmie (nazwa, adres, telefon – zwane NAP) na innych stronach internetowych. Google używa ich do weryfikacji i rankingu lokalnego.
-            </p>
-
             <p className="text-gray-700 mb-6">
-              Gdzie dodać cytacje:
+              Liczba opinii nie przesądza o wyniku. Wiarygodność profilu i zgodność z rzeczywistą działalnością pozostają istotne.
             </p>
 
-            <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8">
+            <h3 className="text-2xl font-semibold mb-4 text-gray-900">Spójne dane NAP i rozsądne katalogi</h3>
+            <p className="text-gray-700 mb-4">
+              NAP to skrót od nazwy, adresu i telefonu. Firma powinna utrzymać te dane w spójnej formie na stronie, w profilu i serwisach, w których występuje, szczególnie po zmianie siedziby lub nazwy.
+            </p>
+            <p className="text-gray-700">
+              Wybieraj aktywne serwisy branżowe, lokalne organizacje i platformy mapowe, z których korzystają potencjalni klienci. Unikaj przypadkowych katalogów. Wpis ma dostarczać poprawnych informacji i użytecznego linku, nie tylko zwiększać licznik odnośników.
+            </p>
+          </div>
+
+          <div className="mb-12">
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">Frazy z intencją zakupową, nie tylko ruch</h2>
+            <p className="text-gray-700 mb-4">
+              Dobór słów kluczowych zacznij od rozmów z klientami i oferty. Fraza informacyjna „jak wybrać hydraulika” wymaga innej treści niż zakupowa „hydraulik Poznań awaria” lub „wycena instalacji wodnej”. Łącz usługę z lokalizacją, problemem, ceną lub dostępnością.
+            </p>
+            <p className="text-gray-700 mb-4">
+              Nie zakładaj, że dłuższa fraza ma mniejszą konkurencję. Sprawdź wyniki wyszukiwania i rodzaj stron, które odpowiadają na zapytanie. Klienci mogą wyszukiwać tę samą usługę pod różnymi nazwami. Podobne pytania możesz wyszukiwać przez autouzupełnianie Google, ale traktuj je jako hipotezy do sprawdzenia.
+            </p>
+            <p className="text-gray-700 mb-6">
+              Zapisuj słowa kluczowe w tabeli: usługa, problem, lokalizacja, intencja i docelowy URL. Przypisuj je do stron produktów lub usług przed planowaniem nowego artykułu. Dane sprzedażowe pomagają odróżnić temat związany z firmą od hasła popularnego online.
+            </p>
+
+            <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 mb-6">
+              <h3 className="text-xl font-semibold mb-3 text-gray-900">Przykładowa mapa treści</h3>
               <ul className="space-y-2 text-gray-700">
-                <li>• Katalogi biznesowe: Google My Business, Bing Places, Apple Maps</li>
-                <li>• Portale branżowe: na przykład dla gastronomii – thefork.pl, zomato.pl</li>
-                <li>• Portale ogólne: Allegro, OLX, Yelp</li>
-                <li>• Strony recenzji: Google Reviews, Trustpilot, Ceneo</li>
-                <li>• Diretoria lokalne: StronaWiązkowa, PółnokPoland (zależnie od miasta)</li>
+                <li>• Strona usługi: „przegląd klimatyzacji samochodowej w Poznaniu”.</li>
+                <li>• Strona lokalna: tylko z rzeczywistymi informacjami o obszarze pracy.</li>
+                <li>• Poradnik: „jak przygotować auto do przeglądu klimatyzacji”.</li>
               </ul>
             </div>
-
+            <p className="text-gray-700 mb-4">
+              Jedna podstrona powinna mieć jasne zadanie. Nie twórz kopii strony ze zmienioną nazwą miasta. Opisz zakres, warunki, etapy i czynniki cenowe. Linkowania wewnętrznego użyj do przejścia z poradnika do oferty.
+            </p>
             <p className="text-gray-700">
-              Ważne: konsistencja danych jest kluczowa. Nie możesz mieć "Warszawa" w jednym miejscu i "Warszawa 01" w innym – Google widzi to jako informacje dla różnych firm.
+              Upychanie słów kluczowych nie zastępuje konkretu. Pisz naturalnie, a trafność sprawdzaj przez pytania klientów i dane z Google Search Console.
             </p>
           </div>
 
-          {/* Section 3: Keywords */}
           <div className="mb-12">
-            <h2 className="text-3xl font-bold mb-6 text-gray-900">Fraza po frazie — dobór słów kluczowych dla małej firmy</h2>
-
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">On-page: treść i struktura strony usługi</h2>
             <p className="text-gray-700 mb-6">
-              Zamiast konkurować o generyczne słowa kluczowe ("pizza", "kuchnia", "biznes"), małe firmy powinny skupiać się na <strong>long-tail keywords</strong> – dłuższych, bardziej specyficznych fraz, które mają mniej konkurencji.
+              Optymalizacja strony ma ułatwić zrozumienie tematu zarówno użytkownikom, jak i wyszukiwarce. Nie sprowadza się do jednego triku. Najważniejsze elementy SEO na stronie oferty można sprawdzić w prostej liście kontrolnej.
             </p>
-
-            <h3 className="text-2xl font-semibold mb-4 text-gray-900">Przykłady strategii keywords:</h3>
-
-            <div className="space-y-4 mb-8">
-              <Card>
-                <CardContent className="pt-6">
-                  <p className="text-sm text-gray-600 mb-2">Słowo generyczne (trudne do rankingu):</p>
-                  <p className="text-lg font-semibold text-gray-900 mb-3">"pizza"</p>
-                  <p className="text-sm text-gray-600 mb-2">Long-tail (łatwiejsze, bardziej efektywne):</p>
-                  <p className="text-lg font-semibold text-gray-900">"pizza na drewnie warszawa piaseczno" | "pizza ze śmietaną kraków dostawa"</p>
-                </CardContent>
-              </Card>
-            </div>
-
-            <p className="text-gray-700 mb-4">
-              Jak znaleźć dobre słowa kluczowe dla Twojej firmy:
-            </p>
-
-            <ul className="space-y-3 mb-8 text-gray-700">
-              <li className="flex gap-3">
-                <Search className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
-                <span><strong>Google Search Console / Analytics:</strong> zobacz które słowa już przynoszą ruch</span>
-              </li>
-              <li className="flex gap-3">
-                <Search className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
-                <span><strong>Autouzupełnianie Google:</strong> gdy wpiszesz swoją branżę, Google pokazuje popularne zapytania</span>
-              </li>
-              <li className="flex gap-3">
-                <Search className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
-                <span><strong>Narzędzia darmowe:</strong> Ubersuggest, AnswerThePublic, SEMrush Free Plan</span>
-              </li>
-              <li className="flex gap-3">
-                <Search className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
-                <span><strong>Pytania klientów:</strong> jakie pytania słyszysz od potencjalnych klientów? Właśnie takie słowa lubuje Google</span>
-              </li>
+            <ul className="space-y-3 mb-6 text-gray-700">
+              <li>• <strong>Title:</strong> unikalny tytuł powinien opisywać usługę lub temat strony. Nie musi zawierać całej listy wariantów frazy.</li>
+              <li>• <strong>Meta description:</strong> opis ma zwięźle przedstawiać zawartość i zachęcać do wyboru właściwego wyniku. Google może wyświetlić inny fragment strony.</li>
+              <li>• <strong>Nagłówek H1:</strong> jeden główny nagłówek przedstawia temat, a kolejne H2 i H3 porządkują szczegóły.</li>
+              <li>• <strong>Treść oferty:</strong> zakres, dla kogo jest usługa, sposób realizacji, warunki i ograniczenia powinny być czytelne bez marketingowych ogólników.</li>
+              <li>• <strong>Adres i telefon:</strong> jeśli klient może dzwonić lub odwiedzić firmę, dane kontaktowe nie mogą wymagać szukania w stopce każdej podstrony.</li>
+              <li>• <strong>Linki wewnętrzne:</strong> prowadź do powiązanych usług, realizacji i poradników tam, gdzie to pomaga w podjęciu decyzji.</li>
             </ul>
-
-            <h3 className="text-2xl font-semibold mb-4 text-gray-900">Modyfikatory lokalne</h3>
-
-            <p className="text-gray-700 mb-4">
-              Dla małych firm kluczowe jest dodawanie modyfikatorów geograficznych do słów kluczowych:
-            </p>
-
-            <div className="bg-gray-50 border border-gray-200 rounded-lg p-6">
-              <p className="text-sm text-gray-600 mb-3">Zamiast: "fryzjer", szukaj rank dla:</p>
-              <ul className="space-y-2 text-gray-700">
-                <li>• "fryzjer warszawa"</li>
-                <li>• "fryzjer piaseczno"</li>
-                <li>• "fryzjer piaseczno damski"</li>
-                <li>• "najlepszy fryzjer piaseczno"</li>
-                <li>• "fryzjer piaseczno dla mężczyzn"</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Section 4: On-page SEO */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-bold mb-6 text-gray-900">Optymalizacja strony WWW (On-page SEO)</h2>
-
-            <p className="text-gray-700 mb-6">
-              On-page SEO to optymalizacja elementów na Twojej stronie. To bardzo ważne, bo Google analizuje treść, strukturę i dane techniczne, aby określić czy strona powinna rankować dla danego słowa kluczowego.
-            </p>
-
-            <h3 className="text-2xl font-semibold mb-4 text-gray-900">Title tag i meta description</h3>
-
-            <p className="text-gray-700 mb-4">
-              Title tag to tytuł strony wyświetlany w Google – powinna zawierać słowo kluczowe i być atrakcyjna.
-            </p>
-
-            <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-6">
-              <p className="text-sm text-gray-600 mb-2">Dobry title:</p>
-              <p className="font-mono text-sm">"SEO dla Małych Firm – Kompletny Poradnik 2026 | FOTZ"</p>
-            </div>
-
-            <p className="text-gray-700 mb-4">
-              Meta description to krótki tekst (155-160 znaków) wyświetlany poniżej tytułu w Google. Powinien zachęcać do kliknięcia.
-            </p>
-
-            <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-8">
-              <p className="text-sm text-gray-600 mb-2">Dobra meta description:</p>
-              <p className="font-mono text-sm">"SEO dla małych firm od podstaw. Praktyczne wskazówki na temat pozycjonowania lokalnego, Google My Business, słów kluczowych i technicznych."</p>
-            </div>
-
-            <h3 className="text-2xl font-semibold mb-4 text-gray-900">Struktura nagłówków (H1, H2, H3)</h3>
-
-            <p className="text-gray-700 mb-4">
-              Każda strona powinna mieć dokładnie jeden H1, opisujący główny temat. Użyj H2 dla podsekcji i H3 dla podpunktów.
-            </p>
-
-            <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-8">
-              <ul className="space-y-2 text-gray-700 text-sm">
-                <li>• <strong>H1:</strong> "SEO dla Małych Firm – Kompletny Poradnik 2026"</li>
-                <li>• <strong>H2:</strong> "Dlaczego SEO jest ważne dla małych firm?"</li>
-                <li>• <strong>H3:</strong> "Bezpłatny ruch z Google"</li>
-              </ul>
-            </div>
-
-            <h3 className="text-2xl font-semibold mb-4 text-gray-900">Content optimization</h3>
-
-            <ul className="space-y-3 mb-8 text-gray-700">
-              <li className="flex gap-3">
-                <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                <span><strong>Długość artykułu:</strong> 1500+ słów dla dobrych rankingów</span>
-              </li>
-              <li className="flex gap-3">
-                <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                <span><strong>Słowo kluczowe w pierwszym akapicie:</strong> Google bierze to pod uwagę</span>
-              </li>
-              <li className="flex gap-3">
-                <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                <span><strong>Pogrubienie ważnych fraz:</strong> ale nie przesadzaj, max 1-2% tekstu</span>
-              </li>
-              <li className="flex gap-3">
-                <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                <span><strong>Linki wewnętrzne:</strong> linkuj do innych artykułów na swojej stronie</span>
-              </li>
-              <li className="flex gap-3">
-                <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                <span><strong>Akapity krótkie:</strong> 2-3 zdania zamiast ścian tekstu</span>
-              </li>
-              <li className="flex gap-3">
-                <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                <span><strong>Listy i tabele:</strong> zwiększają czytelność i są lubiane przez Google</span>
-              </li>
-            </ul>
-          </div>
-
-          {/* Section 5: Content Creation */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-bold mb-6 text-gray-900">Tworzenie wartościowych treści</h2>
-
-            <p className="text-gray-700 mb-6">
-              Google nagradza strony, które dostarczają wartości użytkownikom. Nie chodzi o stare hasła SEO, ale o rzeczywiście przydatne treści.
-            </p>
-
-            <h3 className="text-2xl font-semibold mb-4 text-gray-900">Blog na stronie firmy</h3>
-
-            <p className="text-gray-700 mb-6">
-              Blog to najpotężniejsze narzędzie SEO dla małych firm. Każdy artykuł to szansa na ranking dla nowych słów kluczowych i nowych klientów.
-            </p>
-
-            <p className="text-gray-700 mb-4">Pomysły na artykuły na blogu:</p>
-
-            <ul className="space-y-2 mb-8 text-gray-700">
-              <li>• Poradniki "jak" – "Jak wybrać fryzjera?", "Jak zadbać o włosy?"</li>
-              <li>• FAQ – odpowiadaj na pytania, które słyszysz od klientów</li>
-              <li>• Porady branżowe – podziel się wiedzą eksperta</li>
-              <li>• Case studies – pokaż wyniki, które osiągnęłaś dla klientów</li>
-              <li>• Odpowiedz konkurentom – gdy konkurent publikuje błędy, ty publikuj prawdę</li>
-            </ul>
-
-            <h3 className="text-2xl font-semibold mb-4 text-gray-900">FAQ (Frequently Asked Questions)</h3>
-
-            <p className="text-gray-700 mb-4">
-              Strona FAQ rankuje się świetnie w Google, bo bezpośrednio odpowiada na pytania ludzi. Struktura FAQ jest też idealna dla SEO (pytanie = słowo kluczowe, odpowiedź = ranking).
-            </p>
-
-            <p className="text-gray-700 mb-6">
-              Plus: Google wyświetla FAQ w specjalnym formacie w wynikach, co zwiększa CTR.
-            </p>
-
-            <h3 className="text-2xl font-semibold mb-4 text-gray-900">Treści lokalne</h3>
-
-            <p className="text-gray-700 mb-4">
-              Stwórz treści dotyczące Twojej lokalizacji – artykuły o dzielnicach, eventach, lokalnych problemach itp. To buduje autorytet lokalny.
-            </p>
-
             <p className="text-gray-700">
-              Przykład dla fryzjera w Warszawie: "Fryzury trendy w Warszawie 2026" zamiast ogólnego "Fryzury trendy 2026".
+              Tekst nie musi mieć z góry narzuconej długości. Ma odpowiadać na intencję i pokazywać konkretne informacje. Jeśli publikujesz poradnik, dodaj autora lub osobę weryfikującą, źródła przy danych liczbowych oraz datę istotnej aktualizacji. To buduje autorytet lepiej niż ozdobne stwierdzenia o byciu liderem.
             </p>
           </div>
 
-          {/* Section 6: Backlinks */}
           <div className="mb-12">
-            <h2 className="text-3xl font-bold mb-6 text-gray-900">Linki przychodzące dla małych firm</h2>
-
-            <p className="text-gray-700 mb-6">
-              Backlinki (linki do Twojej strony z innych stron) to jeden z trzech głównych rankingowych czynników Google. Jednak dla małych firm nie potrzebujesz tysięcy linków – wystarczą linki od wiarygodnych, lokalnych źródeł.
-            </p>
-
-            <h3 className="text-2xl font-semibold mb-4 text-gray-900">Gdzie zdobyć backlinki dla małej firmy:</h3>
-
-            <div className="space-y-4 mb-8">
-              <Card>
-                <CardContent className="pt-6">
-                  <h4 className="font-semibold text-gray-900 mb-2">Katalogi biznesowe i portale branżowe</h4>
-                  <p className="text-gray-700 text-sm mb-3">Każdy katalog, w którym się pojawisz, to potencjalny backlink. Priorytet: Google My Business, Bing Places, i portale branżowe (dla restauracji: Portal TripAdvisor, dla handlu: Allegro).</p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="pt-6">
-                  <h4 className="font-semibold text-gray-900 mb-2">Współpraca z lokalnymi organizacjami</h4>
-                  <p className="text-gray-700 text-sm mb-3">Jeśli jesteś członkiem izby handlowej, stowarzyszenia branżowego itp. – poproś o link ze strony organizacji. Linki od instytucji są bardzo cenne.</p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="pt-6">
-                  <h4 className="font-semibold text-gray-900 mb-2">Prasówki i media lokalne</h4>
-                  <p className="text-gray-700 text-sm mb-3">Gdy publikujesz ciekawe informacje o firmie, prześlij je lokalnym portalem i gazecie. Jeśli będą interesujące, mogą Cię wynotoować z linkiem.</p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="pt-6">
-                  <h4 className="font-semibold text-gray-900 mb-2">Partnerstwa i rekomendacje</h4>
-                  <p className="text-gray-700 text-sm mb-3">Jeśli współpracujesz z inną firmą, możecie nawzajem się linkowań. Przykład: fryzjer linkuje do kosmetyczki, cosmetyczka linkuje do fryzjera.</p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="pt-6">
-                  <h4 className="font-semibold text-gray-900 mb-2">Linki z mediów społecznych</h4>
-                  <p className="text-gray-700 text-sm mb-3">Facebook i Instagram linkami nie wspominają bezpośrednio do rankingu, ale zwiększają wiarygodność i mogą przynnieść ruch bezpośredni.</p>
-                </CardContent>
-              </Card>
-            </div>
-
-            <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6">
-              <p className="text-gray-700 mb-2">
-                <strong>Unikaj tanich linków:</strong> Nie kupuj linków od "sprzedawców SEO" oferujących 100 linków za 50 zł. Google je wykrywa i karze. Pamiętaj: jakość &gt; ilość.
-              </p>
-            </div>
-          </div>
-
-          {/* Section 7: Technical SEO */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-bold mb-6 text-gray-900">Techniczne SEO dla małej firmy</h2>
-
-            <p className="text-gray-700 mb-6">
-              Technical SEO to optymalizacja aspektów technicznych Twojej strony. Dobrą wiadomością jest, że większość nowoczesnych platform (WordPress, Webflow, Wix) obsługuje to automatycznie.
-            </p>
-
-            <h3 className="text-2xl font-semibold mb-4 text-gray-900">Szybkość strony (Page Speed)</h3>
-
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">Techniczne minimum SEO</h2>
             <p className="text-gray-700 mb-4">
-              Google jasno stwierdził: szybka strona rankuje lepiej. Docelowo:
+              Techniczne SEO ma usuwać bariery w dostępie do strony i korzystaniu z niej. Sam WordPress ani inna platforma nie gwarantuje poprawnej konfiguracji. Zacznij od diagnostyki, a nie od instalowania kolejnych wtyczek.
             </p>
-
-            <ul className="space-y-2 mb-8 text-gray-700">
-              <li>• Desktop: poniżej 3 sekund</li>
-              <li>• Mobile: poniżej 5 sekund</li>
+            <ul className="space-y-3 mb-6 text-gray-700">
+              <li>• <strong>Indeksowanie:</strong> sprawdź, czy ważne adresy URL zwracają właściwe strony, nie są przypadkowo zablokowane i mają poprawne kanoniczne adresy. Mapa XML powinna zawierać aktualne, przeznaczone do indeksacji strony.</li>
+              <li>• <strong>Obsługa mobilna:</strong> zweryfikuj czytelność, przyciski i formularze na urządzeniach mobilnych. Test obejmuj także realne wysłanie zapytania, nie tylko wygląd strony głównej.</li>
+              <li>• <strong>Wydajność:</strong> kompresuj obrazy, ogranicz zbędne skrypty i sprawdzaj Core Web Vitals w PageSpeed Insights. Oddziel wyniki laboratoryjne od danych o rzeczywistych użytkownikach.</li>
+              <li>• <strong>HTTPS i błędy:</strong> zadbaj o prawidłowy certyfikat, przekierowania oraz naprawę niedziałających adresów, które otrzymują ruch lub linki.</li>
+              <li>• <strong>Dane strukturalne:</strong> używaj typów zgodnych z widoczną zawartością, np. Article dla artykułu. Oznaczenie nie gwarantuje rozszerzonego wyglądu wyniku.</li>
             </ul>
-
-            <p className="text-gray-700 mb-6">
-              Jak poprawić szybkość: skompresuj obrazy (nie ładuj zdjęć 4MB na stronę), usuń zbędne wtyczki, włącz cache przeglądarki, użyj CDN.
-            </p>
-
-            <h3 className="text-2xl font-semibold mb-4 text-gray-900">Mobile responsiveness</h3>
-
-            <p className="text-gray-700 mb-6">
-              Większość ruchu teraz pochodzi z urządzeń mobilnych. Twoja strona MUSI być w pełni responsywna i wygodna do użytku na telefonie. Google prawie wyłącznie ranuje wersję mobilną.
-            </p>
-
-            <h3 className="text-2xl font-semibold mb-4 text-gray-900">Schema Markup (strukturalne dane)</h3>
-
-            <p className="text-gray-700 mb-4">
-              Schema markup to kod, który mówi Google co dokładnie znajduje się na Twojej stronie. Najważniejszy dla małych firm:
-            </p>
-
-            <ul className="space-y-3 text-gray-700 mb-8">
-              <li>• <strong>LocalBusiness:</strong> informacje o Twojej firmie (dla wszystkich firm)</li>
-              <li>• <strong>Article:</strong> dla artykułów i postów na blogu</li>
-              <li>• <strong>FAQPage:</strong> dla stron FAQ</li>
-              <li>• <strong>Review:</strong> dla recenzji produktów i usług</li>
-              <li>• <strong>Recipe:</strong> dla blogów kulinarnych</li>
-            </ul>
-
-            <p className="text-gray-700 mb-6">
-              W jaki sposób pomagają? Google wyświetla dodatkowe informacje w wynikach wyszukiwania (gwiazdki, cena, czas przygotowania) – to zwiększa CTR.
-            </p>
-
-            <h3 className="text-2xl font-semibold mb-4 text-gray-900">SSL certificate (HTTPS)</h3>
-
             <p className="text-gray-700">
-              Twoja strona musi działać na HTTPS (mała kłódka obok adresu URL). To darmowe u większości hostingów, ale jest obowiązkowe dla SEO i bezpieczeństwa użytkowników.
+              Priorytetem są problemy potwierdzone w diagnostyce: brak indeksacji ważnej podstrony, zduplikowana treść, niedziałający formularz czy zablokowane zasoby potrzebne do renderowania. Nie przedkładaj optymalizacji pod kątem hipotetycznych problemów nad naprawę widocznych usterek.
             </p>
           </div>
 
-          {/* Section 8: Cost */}
           <div className="mb-12">
-            <h2 className="text-3xl font-bold mb-6 text-gray-900">Ile kosztuje SEO dla małej firmy?</h2>
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">Tworzenie wartościowych treści dla klientów</h2>
+            <p className="text-gray-700 mb-4">
+              Nie każda firma potrzebuje bloga. Blog nie zastępuje dobrych stron ofertowych, dlatego najpierw uzupełnij informacje potrzebne przed zakupem. Dopiero potem rozwijaj content marketing o poradniki, które odpowiadają na rzeczywiste pytania lub pomagają wybrać rozwiązanie.
+            </p>
+            <p className="text-gray-700 mb-4">
+              Dobrym źródłem tematów są rozmowy sprzedażowe, wiadomości od klientów, uwagi serwisantów i zapytania widoczne w Search Console. Możesz opisać etapy usługi, porównać warianty, wyjaśnić koszt, pokazać przygotowanie do realizacji albo omówić ograniczenia rozwiązania.
+            </p>
+            <p className="text-gray-700 mb-4">
+              W case studies publikuj wyłącznie liczby, które możesz udokumentować. Zaznacz zakres prac, punkt wyjścia i okres pomiaru. Nie przypisuj wyniku wyłącznie SEO, jeśli w tym samym czasie działały płatne reklamy, zmieniła się oferta lub sezonowość.
+            </p>
+            <p className="text-gray-700">
+              Treści lokalne mają sens, gdy mówią o realnej działalności: realizacji w danej miejscowości, lokalnych warunkach lub specyfice obsługiwanego obszaru. Sama nazwa miasta dodana do ogólnego tekstu nie czyni go lokalnym. Nie musisz publikować według sztywnego harmonogramu. Ważniejsze są przydatność i aktualność materiałów.
+            </p>
+          </div>
 
-            <p className="text-gray-700 mb-8">
-              SEO ma wiele wariantów cenowych. Oto realistyczne zakresy dla małych firm:
+          <div className="mb-12">
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">Linki przychodzące i lokalne relacje</h2>
+            <p className="text-gray-700 mb-4">
+              Linki z innych stron internetowych mogą pomagać w odkrywaniu treści i budowaniu rozpoznawalności. Zamiast zwiększać liczbę linków, wybieraj miejsca, z którymi firma ma rzeczywisty związek: partnerów, dostawców, organizacji branżowych, lokalnych wydarzeń i mediów.
+            </p>
+            <p className="text-gray-700">
+              Przydatny link może towarzyszyć opisowi wspólnego projektu, eksperckiemu komentarzowi lub wiarygodnemu katalogowi branżowemu. Masowa wymiana linków i kupowanie ich bez kontroli źródła nie są strategią.
+            </p>
+          </div>
+
+          <div className="mb-12">
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">Pomiar zapytań i widoczności w Google</h2>
+            <p className="text-gray-700 mb-4">
+              Raport SEO powinien łączyć widoczność strony z wartościowymi zapytaniami. Potrzebujesz danych z wyszukiwarki, zachowań użytkowników i informacji sprzedażowych.
             </p>
 
-            <div className="space-y-4 mb-8">
+            <h3 className="text-2xl font-semibold mb-4 text-gray-900">Google Search Console</h3>
+            <p className="text-gray-700 mb-4">
+              Porównuj pary zapytanie–strona dla wybranego URL: wyświetlenia, kliknięcia, CTR i pozycje w wynikach wyszukiwania. Średnia pozycja jest wartością zagregowaną, a nie stałym miejscem dla każdego użytkownika.
+            </p>
+            <p className="text-gray-700 mb-6">
+              Porównuj okresy i zanotuj daty wdrożeń. Uwzględnij sezonowość. Wyświetlenia bez kliknięć mogą wskazywać temat do dopracowania, ale nie dowodzą problemu z tytułem lub treścią.
+            </p>
+
+            <h3 className="text-2xl font-semibold mb-4 text-gray-900">Zapytania, leady i jakość sprzedaży</h3>
+            <p className="text-gray-700 mb-4">
+              W Google Analytics 4 mierz wysłanie formularza i kliknięcie numeru telefonu jako zdarzenia, a najważniejsze oznacz jako kluczowe. Kliknięcie numeru nie oznacza rozmowy, dlatego uzupełnij dane o rzeczywiste zapytania i ich jakość.
+            </p>
+            <p className="text-gray-700">
+              Co miesiąc zestaw źródło wejścia z usługą i wynikiem sprzedażowym. Rejestr pomaga odróżnić ruch od leadów i ustalać kolejność działań SEO. Konfiguracja analityki musi respektować zasady prywatności i zgody użytkowników.
+            </p>
+          </div>
+
+          <div className="mb-12">
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">Realistyczny plan SEO na 30, 60 i 90 dni</h2>
+            <p className="text-gray-700 mb-6">
+              Plan porządkuje prace, nie gwarantuje efektu w określonym czasie. Poważny problem techniczny wykryty w audycie może wymagać zmiany kolejności.
+            </p>
+
+            <div className="space-y-4">
               <Card>
                 <CardContent className="pt-6">
-                  <h3 className="font-semibold text-gray-900 mb-2">DIY (robisz sam)</h3>
-                  <p className="text-gray-700 mb-3"><strong>Koszt:</strong> 0-200 PLN/miesiąc (narzędzia darmowe, ewentualnie Ubersuggest czy SEMrush)</p>
-                  <p className="text-gray-700"><strong>Czas:</strong> 5-10 godzin tygodniowo</p>
+                  <h3 className="text-xl font-semibold mb-3 text-gray-900">Dni 1–30: fundament i punkt odniesienia</h3>
+                  <ul className="space-y-2 text-gray-700">
+                    <li>• Określ usługi, obszar i wartościowe zapytania. Zapisz bazowe dane z Search Console, analityki i rejestru leadów.</li>
+                    <li>• Sprawdź indeksowanie, formularze, wersję mobilną, HTTPS i błędy techniczne.</li>
+                    <li>• Uporządkuj podstrony usług oraz profil firmy w Google, jeśli dotyczy działalności.</li>
+                  </ul>
                 </CardContent>
               </Card>
 
               <Card>
                 <CardContent className="pt-6">
-                  <h3 className="font-semibold text-gray-900 mb-2">Freelancer / specjalista SEO</h3>
-                  <p className="text-gray-700 mb-3"><strong>Koszt:</strong> 1500-5000 PLN/miesiąc</p>
-                  <p className="text-gray-700"><strong>Co dostaniesz:</strong> audyt SEO, optymalizacja on-page, tworzenie treści, monitoring rankingów</p>
+                  <h3 className="text-xl font-semibold mb-3 text-gray-900">Dni 31–60: oferta, treści i powiązania</h3>
+                  <ul className="space-y-2 text-gray-700">
+                    <li>• Uzupełnij strony usług o zakres, warunki, etapy, czynniki cenowe i odpowiedzi na pytania zakupowe.</li>
+                    <li>• Przygotuj konkretne treści na podstawie pytań klientów. Dodaj linkowanie wewnętrzne do usług i kontaktu.</li>
+                    <li>• Uaktualnij wiarygodne wpisy branżowe i uporządkuj sposób proszenia o prawdziwe opinie.</li>
+                  </ul>
                 </CardContent>
               </Card>
 
               <Card>
                 <CardContent className="pt-6">
-                  <h3 className="font-semibold text-gray-900 mb-2">Agencja SEO</h3>
-                  <p className="text-gray-700 mb-3"><strong>Koszt:</strong> 5000-20000 PLN/miesiąc</p>
-                  <p className="text-gray-700"><strong>Co dostaniesz:</strong> kompleksowa strategia, zarządzanie, zaawansowana analiza, link building, wsparcie 24/7</p>
+                  <h3 className="text-xl font-semibold mb-3 text-gray-900">Dni 61–90: przegląd danych i kolejne decyzje</h3>
+                  <ul className="space-y-2 text-gray-700">
+                    <li>• Porównaj te same zapytania i adresy z bazą, uwzględniając wdrożenia i sezonowość.</li>
+                    <li>• Popraw strony bez kontaktu, rozwijaj tematy potwierdzone danymi i połącz powtarzające się treści.</li>
+                    <li>• Oceń, które prace prowadzisz samodzielnie, a do których potrzebujesz specjalisty lub dewelopera.</li>
+                  </ul>
                 </CardContent>
               </Card>
-            </div>
-
-            <div className="bg-green-50 border border-green-200 rounded-lg p-6 mb-8">
-              <p className="font-semibold text-gray-900 mb-2">Jaki wybór dla Ciebie?</p>
-              <ul className="space-y-2 text-gray-700">
-                <li>• <strong>DIY:</strong> Jeśli masz czas i chcesz uczyć się – idealnie dla rozpoczęcia</li>
-                <li>• <strong>Freelancer:</strong> Najlepszy stosunek ceny do jakości dla małych firm</li>
-                <li>• <strong>Agencja:</strong> Gdy chcesz kompleksowe podejście i szybkie rezultaty</li>
-              </ul>
-            </div>
-
-            <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
-              <p className="text-gray-700">
-                <strong>Rada:</strong> Niezależnie od wariantu, nie spodziewaj się błyskawicznych wyników. SEO to maraton, nie sprint. Liczę na 3-6 miesięcy do pierwszych widocznych zmian.
-              </p>
             </div>
           </div>
 
-          {/* FAQ Section */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">Czy SEO dla małej firmy się opłaca i ile kosztuje?</h2>
+            <p className="text-gray-700 mb-4">
+              Inwestowanie w SEO może oznaczać własny czas, freelancera lub agencję. Każda firma ma inny punkt wyjścia. Cena zależy m.in. od liczby stron, techniki, treści, konkurencji i odpowiedzialności za wdrożenia.
+            </p>
+            <p className="text-gray-700 mb-4">
+              SEO może pomóc zdobyć klientów, ale mierz zgodność zapytań z ofertą, sprzedaż i koszt realizacji. W dłuższej perspektywie porównuj wynik z kosztem prac, nie z samym wzrostem ruchu.
+            </p>
+            <p className="text-gray-700">
+              Samodzielna praca wymaga czasu, a agencja przydaje się przy koordynacji kilku kompetencji. Przed umową ustal zakres, dostęp do danych, raportowanie i odpowiedzialność za wdrożenia. Unikaj ofert gwarantujących wyższe pozycje w wynikach wyszukiwania lub określoną sprzedaż.
+            </p>
+          </div>
+
           <div className="mb-12">
             <h2 className="text-3xl font-bold mb-6 text-gray-900">Najczęściej zadawane pytania</h2>
-
-            <Accordion type="single" collapsible className="w-full">
-              {faqItems.map((item, index) => (
-                <AccordionItem key={index} value={`item-${index}`} className="border-b border-gray-200">
-                  <AccordionTrigger className="hover:text-blue-600 py-4 font-semibold text-gray-900">
-                    {item.question}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-gray-700 pb-4">
-                    {item.answer}
-                  </AccordionContent>
-                </AccordionItem>
+            <div className="space-y-6">
+              {faqItems.map((item) => (
+                <div key={item.question} className="border-b border-gray-200 pb-6">
+                  <h3 className="text-xl font-semibold mb-3 text-gray-900">{item.question}</h3>
+                  <p className="text-gray-700">{item.answer}</p>
+                </div>
               ))}
-            </Accordion>
+            </div>
           </div>
 
-          {/* CTA Section */}
           <div className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-lg p-8 text-white mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">Gotów na SEO dla swojej firmy?</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">Potrzebujesz uporządkować SEO swojej firmy?</h2>
             <p className="text-lg mb-6 text-blue-100">
-              Mamy kompleksowe usługi pozycjonowania dla małych i średnich firm. Pozwól nam pomóc Ci zdobyć klientów przez Google.
+              Możemy sprawdzić stronę, wskazać priorytety i zaplanować zakres prac dopasowany do Twoich usług oraz sposobu pozyskiwania klientów.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 to="/seo/pozycjonowanie"
                 className="inline-flex items-center justify-center bg-white text-blue-600 font-semibold px-8 py-3 rounded-lg hover:bg-blue-50 transition"
               >
-                Poznaj nasze usługi SEO
+                Zobacz usługę pozycjonowania
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </Link>
+              <Link
+                to="/seo/audyt"
+                className="inline-flex items-center justify-center bg-blue-500 text-white font-semibold px-8 py-3 rounded-lg hover:bg-blue-400 transition"
+              >
+                Sprawdź audyt SEO
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
               <Link
                 to="/kontakt"
                 className="inline-flex items-center justify-center bg-blue-500 text-white font-semibold px-8 py-3 rounded-lg hover:bg-blue-400 transition"
               >
-                Skontaktuj się z nami
+                Skontaktuj się
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
             </div>
-          </div>
-
-          {/* Summary */}
-          <div className="bg-gray-50 border border-gray-200 rounded-lg p-8">
-            <h2 className="text-2xl font-bold mb-4 text-gray-900">Podsumowanie</h2>
-            <ul className="space-y-3 text-gray-700">
-              <li className="flex gap-3">
-                <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                <span>SEO dla małych firm to najlepszy sposób na zdobycie bezpłatnego ruchu i klientów z Google</span>
-              </li>
-              <li className="flex gap-3">
-                <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                <span>Zacznij od Google My Business i optymalizacji lokalnej</span>
-              </li>
-              <li className="flex gap-3">
-                <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                <span>Fokus na long-tail keywords z modyfikatorami lokalnymi</span>
-              </li>
-              <li className="flex gap-3">
-                <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                <span>Twórz regularnie wartościowe treści (blog, FAQ)</span>
-              </li>
-              <li className="flex gap-3">
-                <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                <span>Obserwuj postęp w Google Search Console i bądź konsekwentny</span>
-              </li>
-            </ul>
           </div>
         </section>
       </article>

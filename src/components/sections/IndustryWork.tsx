@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { ArrowUpRight } from 'lucide-react';
 import { industryWork } from '@/data/industry-work.mjs';
 import images from '@/data/industry-work-images.json';
+import { industryEnquiryHref } from '@/lib/industry-enquiry.mjs';
 
 export function IndustryWork({ slug }: { slug: string }) {
   const work = industryWork[slug as keyof typeof industryWork];
@@ -18,6 +19,10 @@ export function IndustryWork({ slug }: { slug: string }) {
         <Link to="/realizacje" className="dv-btn dv-btn-secondary">Całe portfolio <ArrowUpRight className="w-4 h-4" aria-hidden="true" /></Link>
       </div>
       <PortfolioProjectGrid projects={work.projects} images={images} />
+      <div className="mt-10 border-t border-border pt-7 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5">
+        <p className="text-muted-foreground leading-relaxed max-w-xl">Chcesz pokazać swoją firmę w podobny sposób? Opisz projekt, a ustalimy zakres.</p>
+        <Link to={industryEnquiryHref(slug)} className="dv-btn dv-btn-primary self-start sm:shrink-0">Zapytaj o podobną realizację<ArrowUpRight className="w-4 h-4" aria-hidden="true" /></Link>
+      </div>
     </div>
   </section><InstagramProjects industry={slug} /></>;
 }
