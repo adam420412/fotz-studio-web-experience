@@ -24,10 +24,13 @@
       "keyword": "meta ads agencja",
       "baseline": 76,
       "rendered_working": 92,
-      "proposed_html": 90,
       "target": 95,
-      "public_after": null,
-      "done": false
+      "public_after": 92,
+      "done": false,
+      "preview": 92,
+      "measured_at": "2026-11-02",
+      "container": "main-content",
+      "saved_to_neuronwriter": true
     },
     "changes": [
       "Rozdzielenie budżetu emisji, obsługi i produkcji materiałów.",
@@ -36,18 +39,67 @@
       "Rzeczywista realizacja Dawid EDU; bez przenoszenia jej wyników na inne firmy.",
       "Wyłącznie istniejące fotografie FOTZ, bez nowych zdjęć stockowych."
     ],
-    "status": "DO_REVIEW",
-    "independent_review": null,
-    "publication": null,
-    "next": "Sprawdzenie wyrenderowanej treści, mobilnego CTA i budowania; publikacja poprawy bez oznaczenia POTWIERDZONE_95 przy wyniku poniżej celu.",
+    "status": "W_TRAKCIE",
+    "independent_review": {
+      "reviewer": "Codex / meta_ads_review",
+      "result": "PASS",
+      "commit": "6d99cb108826dadd861f5f22f16f2d7d6c2b3c99",
+      "scope": "Read-only source/copy/CTA/link review; no browser, tests or deployment verification by reviewer.",
+      "issue_resolved": "Obsługę i materiały wyceniamy; budżet emisji ustalamy z klientem."
+    },
+    "publication": {
+      "pr": 122,
+      "commit": "e5e85b1735cc0926ea43c798a15d8bd3f685868a",
+      "deployment": "dpl_9zEAUmhM2Z2DxwbYDFQuni8iMUUs",
+      "state": "READY",
+      "public_content_verified": true
+    },
+    "next": "Publikacja zakończona; cel 95 pozostaje otwarty (publicznie 92). Dalsza redakcja tylko z zachowaniem naturalności i faktów; nowa zmiana wymaga ponownego review, kontroli mobilnej i pomiaru.",
     "checks": {
-      "source_links": "3889 checked; 0 broken",
-      "mobile": "PENDING",
-      "build": "1068 pages; 1066 bodies; 0 errors",
       "typecheck": "PASS",
-      "own_photos": "PASS",
       "tests": "183/183 PASS",
-      "seo": "1067 sitemap URLs; 135504 links; 0 broken"
+      "build": "1068 pages; 1066 bodies; 0 errors",
+      "seo": "1067 sitemap URLs; 135504 rendered links; 0 broken",
+      "source_links": "3889 checked; 0 broken",
+      "own_photos": "PASS",
+      "mobile": {
+        "preview_widths": [
+          320,
+          390
+        ],
+        "production_widths": [
+          390
+        ],
+        "horizontal_overflow": false,
+        "cta_320": {
+          "height": 56.78,
+          "bottom": 714,
+          "viewport_height": 740
+        },
+        "cta_390": {
+          "height": 44,
+          "bottom": 584.78,
+          "viewport_height": 844
+        },
+        "faq_checked": true,
+        "production_contact_url": "https://www.fotz-studio.pl/kontakt?usluga=marketing&wariant=meta_ads#formularz",
+        "selected_service": "Marketing i kampanie reklamowe",
+        "selected_scope": "Kampania Facebook i Instagram",
+        "form_submitted": false,
+        "proof": "Projekt 100k/wdrozenia-2026-11-02/meta-ads-production-mobile-390.jpg",
+        "method": "Emulacja rozmiaru przeglądarki, nie test na fizycznym telefonie."
+      },
+      "ci": {
+        "commit": "6d99cb108826dadd861f5f22f16f2d7d6c2b3c99",
+        "typecheck_tests": {
+          "run": 41455845119,
+          "result": "success"
+        },
+        "seo": {
+          "run": 41455845121,
+          "result": "success"
+        }
+      }
     }
   },
   "wroclaw": {
@@ -75,6 +127,59 @@
       "Praca głównego wątku 2.8 s.",
       "Elementy img bez jawnych wymiarów; zbadać źródła CLS."
     ],
-    "next": "Przegląd konkretnych skryptów i wymiarów obrazów przed kolejną zmianą; bez wyłączania formularza lub analityki w ciemno."
+    "next": "Pomiar szybkości po warunku wyłączającym efekty portfolio; obecne 57/100 pochodzi SPRZED tej ostatniej zmiany. Zweryfikować źródła LCP/CLS przed kolejną poprawką.",
+    "portfolio_script_guard": {
+      "published": true,
+      "location": "WordPress > WPBakery Page Builder > Custom JavaScript > Footer (wpb_js_custom_js_footer)",
+      "inserted_after": "(function () {",
+      "line": "  if (document.body && document.body.classList.contains('page-id-1573')) return;",
+      "scope": "Wyłącznie strona 1573: pominięcie własnego skryptu efektów portfolio, MutationObserver, IntersectionObserver i obsługi ruchu przycisków. Reszta skryptu identyczna.",
+      "backup_local": "Projekt 100k/wdrozenia-2026-11-02/wroclaw-custom-js-before.js",
+      "after_local": "Projekt 100k/wdrozenia-2026-11-02/wroclaw-custom-js-after.js",
+      "patch": "docs/seo/wroclaw-portfolio-motion-2026-11-02.patch",
+      "rollback": "Usunąć wyłącznie tę jedną linię w polu Footer, zachowując ewentualne późniejsze zmiany. Kopia pełnego skryptu przed zmianą lokalnie.",
+      "independent_review": {
+        "reviewer": "Codex / meta_ads_review",
+        "result": "PASS",
+        "scope": "Jednoliniowy warunek i zależne reguły CSS; bez pomiaru szybkości przez recenzenta."
+      },
+      "public_verification": {
+        "script_matches_saved_version": true,
+        "html_fz_motion": false,
+        "bound_cards": 0,
+        "visible_portfolio_cards": 6,
+        "all_cards_opacity": 1,
+        "homepage_control": {
+          "fz_motion": true,
+          "bound_cards": 15
+        }
+      },
+      "mobile": {
+        "widths": [
+          320,
+          390
+        ],
+        "horizontal_overflow": false,
+        "menu_open_close": true,
+        "hero_and_secondary_cta_clicked": true,
+        "contact_url": "https://fotz.pl/kontakt/#formularz",
+        "form_present": "wpforms-form-460",
+        "form_submitted": false,
+        "screenshot": "Projekt 100k/wdrozenia-2026-11-02/wroclaw-no-portfolio-effects-390.jpg"
+      },
+      "speed_after_guard": null
+    }
+  },
+  "review_authorization": {
+    "date": "2026-11-02",
+    "user": "Adam",
+    "scope": "Niezależne AI przeglądy tej i kolejnych poprawianych podstron, bez prawa publikacji.",
+    "answer": "Tak, dla tej i kolejnych podstron"
+  },
+  "business_results": {
+    "leads_measured": false,
+    "new_clients_measured": false,
+    "mrr_measured": false,
+    "background_monitoring": false
   }
 }

@@ -1,0 +1,9 @@
+--- WPBakery/footer-before.js
++++ WPBakery/footer-after.js
+@@ -1,5 +1,6 @@
+ /* FOTZ: interaktywne portfolio i animacje — 2026-10-30 (Claude) */
+ (function () {
++  if (document.body && document.body.classList.contains('page-id-1573')) return;
+   if (!('IntersectionObserver' in window)) return;
+   var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+   var fine = matchMedia('(hover: hover) and (pointer: fine)').matches && !reduce;
