@@ -9,6 +9,7 @@ test('portfolio selection follows page intent without claiming local project loc
     ['/', 'studio'], ['/social-media/obsluga', 'social'], ['/agencja-social-media/warszawa', 'social'],
     ['/uslugi/strony-internetowe/poznan', 'web'], ['/seo/audyt', 'web'],
     ['/pozycjonowanie/legnica', 'web'], ['/uslugi/fotografia-produktowa', null],
+    ['/performance-marketing/linkedin-ads', 'web'],
     ['/dla-kogo/gastronomia', null], ['/dla-kogo/instytucje', null],
     ['/dla-kogo/firmy-lokalne', null], ['/dla-kogo/ecommerce', null], ['/dla-kogo/marki-premium', null],
     ['/uslugi/branding', 'product'], ['/fotograf-poznan', 'photo'],

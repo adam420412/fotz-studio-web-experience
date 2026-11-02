@@ -1,557 +1,179 @@
-import { motion } from "framer-motion";
 import { SEOHead } from "@/components/seo/SEOHead";
-import { Link } from "react-router-dom";
-import { 
-  Target, Users, TrendingUp, BarChart3, Zap, Eye, 
-  MousePointer, DollarSign, CheckCircle2, 
-  ArrowRight, Briefcase, Building2, Award,
-  UserCheck, MessageSquare, Mail, FileText, Globe
-} from "lucide-react";
-import { Button } from "@/components/ui/button";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-import { Layout } from "@/components/layout/Layout";
-import { RelatedServices } from "@/components/sections/RelatedServices";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
+import { ServiceEditorial } from "@/components/ServiceEditorial";
 
-const LinkedInAds = () => {
-  const benefits = [
-    { icon: Briefcase, title: "Decydenci B2B", description: "Docieraj do CEO, dyrektorów i managerów" },
-    { icon: Target, title: "Precyzyjne targetowanie", description: "Branża, stanowisko, wielkość firmy, umiejętności" },
-    { icon: Award, title: "Profesjonalny kontekst", description: "Reklamy wyświetlane w środowisku biznesowym" },
-    { icon: TrendingUp, title: "Wysokiej jakości leady", description: "Leady o wyższej wartości i konwersji" },
-  ];
-
-  const adFormats = [
-    { icon: FileText, title: "Sponsored Content", description: "Promowane posty w feedzie użytkowników" },
-    { icon: Mail, title: "Message Ads", description: "Spersonalizowane wiadomości do skrzynki odbiorczej" },
-    { icon: Users, title: "Dynamic Ads", description: "Dynamicznie personalizowane reklamy" },
-    { icon: Globe, title: "Text Ads", description: "Klasyczne reklamy tekstowe w sidebarze" },
-    { icon: UserCheck, title: "Lead Gen Forms", description: "Formularze lead generation bez opuszczania LinkedIn" },
-    { icon: MessageSquare, title: "Conversation Ads", description: "Interaktywne reklamy z wieloma CTA" },
-  ];
-
-  const processSteps = [
-    { step: "01", title: "Analiza i strategia", description: "Definiujemy ICP i mapujemy ścieżkę decyzyjną" },
-    { step: "02", title: "Konfiguracja kampanii", description: "Ustawiamy targetowanie B2B w LinkedIn Campaign Manager — stanowisko, branża, wielkość firmy" },
-    { step: "03", title: "Kreacje profesjonalne", description: "Tworzymy content dopasowany do LinkedIn" },
-    { step: "04", title: "Optymalizacja i lead nurturing", description: "Kwalifikujemy leady i optymalizujemy CPL" },
-  ];
-
-  const pricingPackages = [
+const content = {
+  "title": "LinkedIn Ads — reklamy na LinkedIn dla firm B2B",
+  "eyebrow": "Oferta FOTZ Studio · reklama dla firm",
+  "lead": "Dotrzyj z konkretną ofertą do odbiorców biznesowych. Planujemy i prowadzimy kampanie LinkedIn Ads: od komunikatu i kreacji do formularza, pomiaru i oceny zapytań. Prześlij adres strony i opisz klientów, których chcesz pozyskiwać — przygotujemy propozycję zakresu.",
+  "path": "/performance-marketing/linkedin-ads",
+  "area": "Polska",
+  "workAfterScope": true,
+  "galleryExcludeHero": true,
+  "enquiryVariant": "linkedin_ads",
+  "contactLabel": "Wyceń kampanię LinkedIn",
+  "contactDescription": "Podaj adres strony, usługę lub produkt, grupę odbiorców oraz rynek. Napisz, czy masz materiały i aktywne konto reklamowe. Wrócimy z pytaniami lub propozycją zakresu oraz wyceny.",
+  "priceNote": "Osobno wyceniamy obsługę, emisję reklam i przygotowanie materiałów.",
+  "summary": [
+    "Strategia kampanii dopasowana do oferty i procesu sprzedaży.",
+    "Twoje konto reklamowe, uzgodniony budżet i materiały do akceptacji.",
+    "Ocena zgłoszeń i ich dalszej obsługi, obok kosztów kliknięć i wyświetleń."
+  ],
+  "scopeTitle": "Obsługa LinkedIn Ads: wybierz potrzebny zakres",
+  "scope": [
     {
-      name: "Start",
-      price: "2 500",
-      period: "/mies.",
-      description: "Testowanie LinkedIn Ads",
-      features: [
-        "Budżet reklamowy do 5 000 zł",
-        "Sponsored Content",
-        "Targetowanie podstawowe",
-        "1 kampania aktywna",
-        "Raport miesięczny",
-        "Insight Tag setup",
-      ],
-      popular: false,
+      "title": "Plan lub przegląd kampanii",
+      "text": "Chcesz sprawdzić, czy LinkedIn pasuje do Twojej oferty, albo uporządkować obecne działania? Analizujemy cel, odbiorców, materiały i drogę do kontaktu. Otrzymujesz priorytety, zakres testu oraz propozycję pomiaru. Przegląd istniejącego konta wyceniamy przed rozpoczęciem prac.",
+      "href": "/kontakt?usluga=marketing&wariant=campaign_audit#formularz",
+      "link": "Zapytaj o przegląd kampanii"
     },
     {
-      name: "Business",
-      price: "4 500",
-      period: "/mies.",
-      description: "Pełna obsługa B2B",
-      features: [
-        "Budżet reklamowy do 15 000 zł",
-        "Sponsored Content + Message Ads",
-        "Lead Gen Forms",
-        "Zaawansowane targetowanie",
-        "ABM - Account Based Marketing",
-        "Testy A/B kreacji",
-        "Raporty tygodniowe",
-      ],
-      popular: true,
+      "title": "Prowadzenie LinkedIn Ads",
+      "text": "Uzgadniamy strukturę kampanii, grupy odbiorców, reklamy, limit emisji i sposób raportowania. Przygotowujemy konfigurację, publikujemy zaakceptowane kreacje i analizujemy wyniki. Pracujemy na koncie Twojej firmy. Produkcja materiałów, wdrożenia na stronie oraz integracje mają określony, osobno wyceniony zakres.",
+      "href": "/kontakt?usluga=marketing&wariant=linkedin_ads#formularz",
+      "link": "Wyceń kampanię LinkedIn Ads"
     },
     {
-      name: "Enterprise",
-      price: "8 000",
-      period: "/mies.",
-      description: "Kompleksowy ABM",
-      features: [
-        "Budżet reklamowy bez limitu",
-        "Wszystkie formaty reklamowe",
-        "Conversation Ads",
-        "Integracja z CRM",
-        "LinkedIn Sales Navigator",
-        "Dedykowany opiekun",
-        "Strategia content marketing",
-        "Lead scoring i nurturing",
-      ],
-      popular: false,
-    },
-  ];
-
-  const stats = [
-    { value: "900M+", label: "Profesjonalistów na LinkedIn" },
-    { value: "80%", label: "Lead'ów B2B z LinkedIn" },
-    { value: "4x", label: "Wyższy intent zakupowy" },
-    { value: "33%", label: "Niższy CPL vs inne platformy B2B" },
-  ];
-
-  const faqItems = [
+      "title": "Treści i strona do kampanii B2B",
+      "text": "Reklama potrzebuje konkretnej oferty: prezentacji produktu, zaproszenia na demo, raportu albo konsultacji. Przygotowujemy teksty, grafiki i uzgodnione materiały. Jeśli potrzebna jest nowa strona docelowa, rozpisujemy jej zawartość, formularz oraz wdrożenie jako osobne zadanie.",
+      "href": "/content-marketing/strategia",
+      "link": "Zaplanuj treści dla odbiorców B2B"
+    }
+  ],
+  "sections": [
     {
-      question: "Czy LinkedIn Ads sprawdzi się dla mojej firmy?",
-      answer: "LinkedIn Ads jest idealny dla B2B: firm IT, SaaS, konsultingu, rekrutacji, edukacji biznesowej, usług profesjonalnych. Jeśli Twoi klienci to firmy lub profesjonaliści podejmujący decyzje zakupowe - LinkedIn będzie najbardziej efektywną platformą. Dla B2C i produktów konsumenckich lepiej sprawdzą się Facebook czy Google Ads."
+      "title": "Kiedy reklamy na LinkedIn mają sens dla firmy B2B?",
+      "text": "LinkedIn Ads warto rozważyć, gdy sprzedajesz rozwiązanie konkretnym firmom lub osobom pełniącym określoną rolę zawodową. Może to być oprogramowanie, usługa dla przemysłu, szkolenie albo doradztwo. Zaczynamy od tego, kto korzysta z produktu, kto porównuje dostawców i kto zatwierdza zakup. W marketingu B2B te role często są różne. Kampania powinna odpowiadać na potrzebę odbiorcy: pokazać zastosowanie, wyjaśnić proces lub ułatwić rozmowę. Jeśli nie masz jeszcze jasnej oferty, materiałów i osoby do obsługi kontaktów, najpierw porządkujemy te elementy. Sama obecność Twoich klientów w serwisie LinkedIn nie przesądza o opłacalności reklamy."
     },
     {
-      question: "Jaki budżet potrzebuję na LinkedIn Ads?",
-      answer: "LinkedIn ma wyższe stawki niż inne platformy (CPC od 15-50 zł), ale oferuje lepszą jakość leadów. Minimalny sensowny budżet to 3000-5000 zł miesięcznie. Dla skutecznych kampanii ABM rekomendujemy 10000-20000 zł. Wyższa inwestycja przekłada się na leady o wyższej wartości życiowej klienta."
+      "title": "Agencja LinkedIn Ads: co otrzymujesz na początku?",
+      "text": "Po pierwszej rozmowie określamy cel kampanii, produkt lub usługę do promocji, rynek i ograniczenia budżetu. Przygotowujemy propozycję zakresu z listą prac oraz materiałów potrzebnych od firmy. Ustalamy harmonogram akceptacji, dostęp do konta reklamowego i termin omówienia danych. Strategia kampanii obejmuje hipotezę: do kogo kierujemy komunikat, dlaczego ta osoba miałaby zareagować i jaki następny krok jej proponujemy. Współpraca z agencją nie wymaga oddania własności kont. Przed startem znasz odpowiedzialność FOTZ, zadania Twojego zespołu i warunki wykonania dodatkowych prac.",
+      "points": [
+        "Plan: cel, grupa docelowa, oferta, formaty i mierniki.",
+        "Przygotowanie: treść reklam, materiały, strona lub formularz, akceptacja.",
+        "Uruchomienie i ocena: kontrola emisji, raport oraz kolejne testy."
+      ]
     },
     {
-      question: "Jak działa targetowanie na LinkedIn?",
-      answer: "LinkedIn oferuje unikalne opcje targetowania B2B: stanowisko, dział, branża, wielkość firmy, staż pracy, umiejętności, grupy, a nawet konkretne firmy (ABM). Możemy targetować np. 'CFO w firmach IT 50-200 pracowników w Polsce'. Żadna inna platforma nie oferuje tak precyzyjnego targetowania B2B."
+      "title": "Campaign Manager: przygotowanie i start kampanii",
+      "text": "LinkedIn Ads obsługujemy w panelu Campaign Manager. W 2026 roku dokumentacja opisuje strukturę: konto reklamowe, kampanie (Campaigns), zestawy reklam (Ad sets) i reklamy (Ads). Sprawdzamy podłączenie strony firmowej LinkedIn Page, uprawnienia, rozliczenia oraz zasoby potrzebne do startu. Cel, odbiorców, formaty i harmonogram zapisujemy w planie. Każda reklama ma prowadzić do działania zgodnego z ofertą. Zanim uruchomimy emisję, sprawdzamy podgląd kreacji, adres docelowy, formularz i sposób odbioru zgłoszeń. Otrzymujesz materiały do akceptacji oraz informację, co mierzymy od pierwszego dnia.",
+      "href": "https://www.linkedin.com/help/linkedin/answer/a420420",
+      "link": "Jak działa panel reklamowy LinkedIn — dokumentacja"
     },
     {
-      question: "Co to są Lead Gen Forms?",
-      answer: "Lead Gen Forms to formularze kontaktowe wbudowane w reklamę LinkedIn. Użytkownik może zostawić dane (imię, email, firma, stanowisko) jednym kliknięciem - formularz automatycznie wypełnia się danymi z profilu. Konwersja jest 2-3x wyższa niż przy kierowaniu na zewnętrzny landing page."
+      "title": "Targeting: jak dobieramy odbiorców LinkedIn Ads?",
+      "text": "Dobieramy odbiorców według modelu sprzedaży. W Campaign Manager można korzystać między innymi z informacji o branży, wielkości firmy (company size), stanowisku (job title) i doświadczeniu zawodowym. Zawężanie wszystkich kryteriów naraz może ograniczyć dotarcie, dlatego sprawdzamy szacowaną grupę docelową (audience) oraz dostępne ustawienia na koncie. Uzgadniamy lokalizację i język komunikacji. Dla sprzedaży do wybranych przedsiębiorstw rozważamy Account Based Marketing, czyli ABM, oraz listy firm w Matched Audiences. Dopasowanie listy nie oznacza dotarcia do każdej wskazanej osoby. Dostępność danych i wielkość grup zależą również od ustawień użytkowników oraz zasad platformy.",
+      "href": "https://www.linkedin.com/help/lms/answer/a425662",
+      "link": "Opcje kierowania reklam — dokumentacja LinkedIn"
     },
     {
-      question: "Jak wygląda Message Ads (InMail)?",
-      answer: "Message Ads to spersonalizowane wiadomości wysyłane bezpośrednio do skrzynki LinkedIn odbiorcy. Wyglądają jak zwykłe wiadomości, ale są oznaczone jako sponsorowane. Świetnie działają do generowania demo, webinarów, personalizowanych ofert. Open rate wynosi 50-60%."
+      "title": "Formaty reklam LinkedIn: Sponsored Content i Video Ads",
+      "text": "Dobieramy format do tego, co trzeba wyjaśnić odbiorcy. Sponsored Content pojawia się w strumieniu aktualności. W wycenie opisujemy liczbę kreacji, wersje, poprawki oraz prawa do wykorzystania zdjęć i filmów. Nie zakładamy, że firma potrzebuje wszystkich formatów. Oto najczęściej rozważane rozwiązania i materiały potrzebne do ich przygotowania:",
+      "points": [
+        "Single Image Ads — pojedyncza grafika z komunikatem. Przydaje się, gdy chcesz pokazać jeden problem, produkt lub zaproszenie do rozmowy.",
+        "Carousel Ads — karuzela kilku kart. Pozwala przedstawić kolejne zastosowania rozwiązania lub etapy procesu.",
+        "Video Ads — film pokazujący produkt, proces albo wypowiedź eksperta. Planujemy ujęcia, montaż i napisy do uzgodnionej wersji.",
+        "Document Ads — dokument, na przykład prezentacja czy materiał edukacyjny. Potrzebuje czytelnego układu i konkretnej wartości dla odbiorcy.",
+        "Text Ads — reklamy tekstowe; Dynamic Ads — reklamy dynamiczne. Sprawdzamy, czy te formaty pasują do celu i miejsca emisji."
+      ]
     },
     {
-      question: "Czy mogę targetować konkretne firmy?",
-      answer: "Tak, dzięki Account Based Marketing (ABM) możemy targetować listę konkretnych firm. Możesz przesłać listę 50-5000 firm, do których chcesz dotrzeć. LinkedIn dopasuje użytkowników pracujących w tych firmach. Idealne dla sprzedaży enterprise do wybranej listy kont."
+      "title": "Message Ads i Conversation Ads — dostępność w Polsce",
+      "text": "Sponsored Messaging obejmuje reklamy w wiadomościach LinkedIn. Message Ads prowadzą do określonego działania, a Conversation Ads mogą oferować kilka ścieżek odpowiedzi. Według aktualnej dokumentacji LinkedIn emisja w Europejskim Obszarze Gospodarczym i Szwajcarii dotyczy użytkowników, którzy zgodzili się otrzymywać takie reklamy. Przed uwzględnieniem tego formatu sprawdzamy dostępność, język, cel i możliwy zasięg. Treść powinna jasno wyjaśniać ofertę oraz kolejny krok. Nie obiecujemy określonego poziomu otwarć ani liczby odpowiedzi.",
+      "href": "https://www.linkedin.com/help/linkedin/answer/a421723/",
+      "link": "Aktualne zasady Sponsored Messaging"
     },
     {
-      question: "Jak mierzyć ROI kampanii LinkedIn?",
-      answer: "Instalujemy LinkedIn Insight Tag do śledzenia konwersji. Integrujemy się z Twoim CRM (HubSpot, Salesforce, Pipedrive) dla pełnego obrazu ścieżki od leada do klienta. Monitorujemy: CPL (koszt na lead), współczynnik konwersji, wartość pipeline'u, i ostateczne zamknięcia."
+      "title": "LinkedIn Lead Gen Forms czy własny landing page?",
+      "text": "Lead Gen Forms umożliwiają zbieranie zgłoszeń na LinkedIn; część danych może być uzupełniona z profilu użytkownika. Własny landing page daje więcej miejsca na ofertę, realizacje i warunki współpracy. Wybór zależy od tego, ile informacji odbiorca potrzebuje przed rozmową. Przy generowaniu leadów ustalamy pola, pytania kwalifikujące i komunikat po wysłaniu. Zainteresowanie materiałem do pobrania nie jest tym samym co gotowość do zakupu. Dlatego formularz i obietnica w reklamie muszą być spójne. Osobno uzgadniamy, kto odbiera zgłoszenia, jak szybko odpowiada i gdzie zapisuje wynik rozmowy.",
+      "href": "/uslugi/landing-page",
+      "link": "Strona docelowa do kampanii"
     },
     {
-      question: "Czy tworzycie content na LinkedIn?",
-      answer: "Tak, w ramach obsługi przygotowujemy kreacje dopasowane do profesjonalnego środowiska LinkedIn: case studies, whitepapers, infografiki, artykuły thought leadership. Tworzymy również treści dla profilu firmowego i osobistego branding liderów firmy."
+      "title": "Od formularza do CRM i rozmowy handlowej",
+      "text": "Kampania reklamowa nie kończy się na zebraniu adresu e-mail. Ustalamy definicję wartościowego kontaktu, na przykład właściwą branżę, potrzebę i obszar realizacji. Jeśli potrzebne jest połączenie formularzy z CRM, najpierw sprawdzamy dostępne integracje, pola i uprawnienia. Wdrożenie wyceniamy osobno. Przed uruchomieniem uzgodnionego przepływu testujemy przekazanie zgłoszenia i jego odczyt w systemie docelowym. Gdy automatyczna integracja nie jest dostępna, można ustalić proces eksportu i importu. Sam test techniczny nie potwierdza pozyskania klienta; zespół sprzedaży ocenia realne zapytania i aktualizuje ich status.",
+      "href": "https://www.linkedin.com/help/linkedin/answer/a425316",
+      "link": "Możliwości integracji formularzy według LinkedIn"
     },
-  ];
-
-  return (
-    <>
-      <OrganizationSchema />
-      <Layout>
-      <SEOHead
-        title="LinkedIn Ads Polska — Reklamy LinkedIn dla Firm B2B | FOTZ"
-        description="LinkedIn Ads Polska — kampanie reklamowe B2B: Sponsored Content, InMail, Lead Gen Forms, ABM. Specjaliści LinkedIn Campaign Manager."
-        canonical="https://www.fotz-studio.pl/performance-marketing/linkedin-ads"
-        keywords="linkedin ads polska, reklamy linkedin, kampanie linkedin b2b, linkedin campaign manager, agencja linkedin ads, marketing b2b linkedin"
-      />
-      <ServiceSchema
-        name="LinkedIn Ads - Kampanie B2B"
-        description="Profesjonalne kampanie LinkedIn Ads dla firm B2B. Docieraj do decydentów i generuj wartościowe leady."
-        provider="Fotz Studio"
-      />
-      <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
-          { name: "Kampanie reklamowe", url: "https://www.fotz-studio.pl/kampanie-reklamowe" },
-          { name: "LinkedIn Ads", url: "https://www.fotz-studio.pl/performance-marketing/linkedin-ads" },
-        ]}/>
-      <FAQSchema items={faqItems} />
-
-      {/* Hero Section */}
-      <section className="relative min-h-[80vh] flex items-center justify-center bg-background overflow-hidden pt-24">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-600/15 via-background to-sky-600/10" />
-        <div className="container mx-auto px-4 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center max-w-4xl mx-auto"
-          >
-            <span className="inline-block px-4 py-2 bg-blue-500/20 text-blue-400 rounded-full text-sm font-medium mb-6">
-              <Briefcase className="inline-block w-4 h-4 mr-2" />
-              LinkedIn Ads
-            </span>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6">
-              LinkedIn Ads Polska —
-              <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-sky-500 to-cyan-500">
-                reklama B2B dla decydentów
-              </span>
-            </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              LinkedIn to najpotężniejsza platforma reklamowa B2B w Polsce.
-              Zarządzamy kampaniami w LinkedIn Campaign Manager i generujemy wartościowe leady od osób podejmujących decyzje zakupowe w firmach.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="text-lg px-8">
-                <Link to="/kontakt">
-                  Bezpłatna konsultacja
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
-              <Button asChild variant="outline" size="lg" className="text-lg px-8">
-                <Link to="/realizacje">Zobacz case studies</Link>
-              </Button>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="py-16 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="text-center"
-              >
-                <div className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500 mb-2">{stat.value}</div>
-                <div className="text-sm md:text-base text-muted-foreground">{stat.label}</div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Benefits Section */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-              Dlaczego LinkedIn Ads?
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Najskuteczniejsza platforma dla marketingu B2B
-            </p>
-          </motion.div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {benefits.map((benefit, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="p-6 rounded-xl bg-card border border-border/50 hover:border-blue-500/30 transition-colors"
-              >
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-blue-500/10 text-blue-500 mb-4">
-                  <benefit.icon className="w-6 h-6" />
-                </div>
-                <h3 className="text-lg font-semibold text-foreground mb-2">{benefit.title}</h3>
-                <p className="text-muted-foreground text-sm">{benefit.description}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Ad Formats Section */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-              Formaty reklamowe LinkedIn
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Różnorodne formaty dopasowane do celów B2B
-            </p>
-          </motion.div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {adFormats.map((format, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="p-6 rounded-xl bg-card border border-border/50 hover:border-blue-500/30 transition-colors group"
-              >
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-gradient-to-br from-blue-500/20 to-cyan-500/20 text-blue-500 mb-4 group-hover:scale-110 transition-transform">
-                  <format.icon className="w-6 h-6" />
-                </div>
-                <h3 className="text-lg font-semibold text-foreground mb-2">{format.title}</h3>
-                <p className="text-muted-foreground text-sm">{format.description}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Process Section */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-              Jak pracujemy
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Strategia ABM i lead generation dla B2B
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-4 gap-8">
-            {processSteps.map((step, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.15 }}
-                className="relative"
-              >
-                <div className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500/30 to-cyan-500/30 mb-4">{step.step}</div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">{step.title}</h3>
-                <p className="text-muted-foreground text-sm">{step.description}</p>
-                {index < processSteps.length - 1 && (
-                  <div className="hidden md:block absolute top-8 left-full w-full h-0.5 bg-gradient-to-r from-blue-500/30 to-transparent" />
-                )}
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Pricing Section */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-              Cennik LinkedIn Ads
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Obsługa kampanii i strategia lead generation
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {pricingPackages.map((pkg, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.15 }}
-                className={`relative p-8 rounded-2xl border ${
-                  pkg.popular 
-                    ? 'bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border-blue-500' 
-                    : 'bg-card border-border/50'
-                }`}
-              >
-                {pkg.popular && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-gradient-to-r from-blue-500 to-cyan-500 text-white text-sm font-medium rounded-full">
-                    Najpopularniejszy
-                  </div>
-                )}
-                <div className="text-center mb-6">
-                  <h3 className="text-xl font-semibold text-foreground mb-2">{pkg.name}</h3>
-                  <p className="text-sm text-muted-foreground mb-4">{pkg.description}</p>
-                  <div className="flex items-baseline justify-center gap-1">
-                    <span className="text-4xl font-bold text-foreground">{pkg.price}</span>
-                    <span className="text-muted-foreground">zł{pkg.period}</span>
-                  </div>
-                </div>
-                <ul className="space-y-3 mb-8">
-                  {pkg.features.map((feature, i) => (
-                    <li key={i} className="flex items-start gap-3 text-sm">
-                      <CheckCircle2 className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" />
-                      <span className="text-muted-foreground">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                <Button 
-                  asChild 
-                  className={`w-full ${pkg.popular ? 'bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600' : ''}`}
-                  variant={pkg.popular ? "default" : "outline"}
-                >
-                  <Link to="/kontakt">Wybierz pakiet</Link>
-                </Button>
-              </motion.div>
-            ))}
-          </div>
-
-          <p className="text-center text-sm text-muted-foreground mt-8">
-            * Ceny nie zawierają budżetu reklamowego. VAT doliczany do każdej ceny.
-          </p>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-              Często zadawane pytania
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Wszystko co musisz wiedzieć o LinkedIn Ads
-            </p>
-          </motion.div>
-
-          <div className="max-w-3xl mx-auto">
-            <Accordion type="single" collapsible className="w-full space-y-4">
-              {faqItems.map((item, index) => (
-                <AccordionItem 
-                  key={index} 
-                  value={`item-${index}`}
-                  className="bg-card border border-border/50 rounded-xl px-6"
-                >
-                  <AccordionTrigger className="text-left text-foreground hover:text-blue-500 hover:no-underline py-6">
-                    {item.question}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground pb-6">
-                    {item.answer}
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
-          </div>
-        </div>
-      </section>
-
-      {/* Related Services */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Powiązane usługi
-            </h2>
-          </motion.div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <Link 
-              to="/performance-marketing/google-ads" 
-              className="p-6 rounded-xl bg-card border border-border/50 hover:border-primary/50 transition-colors group"
-            >
-              <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
-                Google Ads
-              </h3>
-              <p className="text-sm text-muted-foreground">
-                Kampanie w wyszukiwarce Google
-              </p>
-            </Link>
-            <Link 
-              to="/content-marketing/strategia" 
-              className="p-6 rounded-xl bg-card border border-border/50 hover:border-primary/50 transition-colors group"
-            >
-              <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
-                Content Marketing
-              </h3>
-              <p className="text-sm text-muted-foreground">
-                Strategia treści dla B2B
-              </p>
-            </Link>
-            <Link 
-              to="/kompleksowa-obsluga-marketingowa" 
-              className="p-6 rounded-xl bg-card border border-border/50 hover:border-primary/50 transition-colors group"
-            >
-              <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
-                Kompleksowa obsługa
-              </h3>
-              <p className="text-sm text-muted-foreground">
-                Pełna strategia marketingowa
-              </p>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Related Services */}
-
-      {/* SEO Article Section */}
-      <section className="py-20 bg-card">
-        <div className="container mx-auto px-4">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
-            <h2 className="text-3xl font-heading font-bold mb-6">LinkedIn Ads Polska — skuteczna reklama B2B na LinkedIn</h2>
-            <p className="text-muted-foreground mb-4">LinkedIn Ads to platforma reklamowa idealna dla firm B2B w Polsce, rekrutacji i employer brandingu. Unikalną cechą LinkedIn jest możliwość targetowania po stanowisku, branży, wielkości firmy, umiejętnościach zawodowych i wykształceniu — co sprawia, że reklamy LinkedIn docierają do decydentów biznesowych znacznie precyzyjniej niż inne platformy. Całość zarządzana jest przez LinkedIn Campaign Manager, który daje pełną kontrolę nad budżetem, targetowaniem i wynikami kampanii.</p>
-            <p className="text-muted-foreground mb-6">Formaty LinkedIn Ads: Sponsored Content (posty w feedzie), Sponsored InMail / Message Ads (wiadomości do skrzynek odbiorczych), Lead Gen Forms (generowanie leadów bez opuszczania LinkedIn), Text Ads, Dynamic Ads i Conversation Ads. Reklama na LinkedIn jest droższa niż na Facebooku, ale jakość leadów B2B i wartość życiowa klienta (LTV) są znacząco wyższe. LinkedIn Insight Tag umożliwia śledzenie konwersji i retargeting odwiedzających stronę.</p>
-            <h2 className="text-3xl font-heading font-bold mb-6">Kampanie LinkedIn dla firm — ABM, personal branding i employer branding</h2>
-            <p className="text-muted-foreground">Account Based Marketing (ABM) na LinkedIn pozwala targetować konkretne firmy z listy potencjalnych klientów — idealne dla sprzedaży enterprise i B2B SaaS. Personal branding na LinkedIn — budowanie marki osobistej CEO i ekspertów firmowych — to jeden z najefektywniejszych sposobów na organiczną widoczność na platformie. Połączenie organic LinkedIn z LinkedIn Ads Polska daje najlepsze efekty dla firm B2B. Zarządzanie kampaniami PPC w LinkedIn Campaign Manager wymaga innego podejścia niż Facebook — liczy się personalizacja, LinkedIn Marketing Solutions i jasna propozycja wartości (UVP). Skontaktuj się — doradzimy strategię LinkedIn Ads dla Twojej firmy w Polsce.</p>
-          
-            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
-              <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>
-              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
-              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
-              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      <RelatedServices 
-        currentService="linkedin-ads"
-        subtitle="Inne platformy reklamowe i usługi wspierające marketing B2B"
-      />
-
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-600/20 via-background to-cyan-600/20">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center max-w-3xl mx-auto"
-          >
-            <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
-              Gotowy na leady od decydentów B2B?
-            </h2>
-            <p className="text-lg text-muted-foreground mb-8">
-              Porozmawiajmy o Twojej strategii LinkedIn Ads i sprawdźmy, 
-              jak możemy dotrzeć do Twoich idealnych klientów biznesowych.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="text-lg px-8 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600">
-                <Link to="/kontakt">
-                  Bezpłatna konsultacja
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
-              <Button asChild variant="outline" size="lg" className="text-lg px-8">
-                <Link to="/kampanie-reklamowe">Wszystkie platformy</Link>
-              </Button>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-    </Layout>
-    </>
-  );
+    {
+      "title": "Ile kosztuje reklama LinkedIn Ads?",
+      "text": "Koszt współpracy dzielimy na trzy części: obsługę kampanii, budżet reklamowy płacony platformie oraz przygotowanie materiałów i potrzebnych wdrożeń. Wynagrodzenie zależy od liczby rynków, zakresu prac, kreacji i raportowania. Budżet testu dobieramy do celu oraz dostępnej grupy odbiorców, bez jednej uniwersalnej kwoty dla każdej branży. CPC oznacza koszt kliknięcia, CPM koszt tysiąca wyświetleń, a CPL koszt pozyskanego kontaktu (cost per lead). Niski CPC nie przesądza o jakości zapytań. Przed startem uzgadniamy limit wydatków i zasady ewentualnych zmian. Otrzymasz wycenę z wyszczególnieniem kosztów, zamiast pakietu z niejasnym zakresem.",
+      "points": [
+        "Obsługa: plan, konfiguracja, analiza i uzgodnione raporty.",
+        "Emisja: budżet na koncie reklamowym Twojej firmy.",
+        "Dodatkowe prace: zdjęcia, filmy, strona, pomiar i integracje według oferty."
+      ]
+    },
+    {
+      "title": "Conversion tracking: pomiar konwersji i raport",
+      "text": "Ustalamy, jakie zdarzenie oznacza konwersję: zapytanie o demo, wysłanie formularza, zapis lub zakup. LinkedIn Insight Tag może wspierać pomiar działań na stronie, a konfigurację zdarzeń i zgód uwzględniamy w zakresie wdrożenia. Przy potrzebie pomiaru serwerowego sprawdzamy możliwości Conversions API. Raport rozdziela emisję, kliknięcia, kontakty i sprzedaż. Pokazuje koszty, dostępne dane oraz ograniczenia przypisania wyniku do kampanii. Nie dodajemy automatycznie konwersji z kilku platform, bo ta sama osoba mogła mieć kontakt z różnymi reklamami. Informacja ze sprzedaży pomaga ocenić, czy kampanie LinkedIn Ads docierają do właściwych firm. Współczynnik konwersji (conversion rate) interpretujemy razem z jakością zgłoszeń: formularz może być łatwy do wysłania, ale przyciągać osoby spoza grupy klientów."
+    },
+    {
+      "title": "Optymalizacja kampanii i remarketing",
+      "text": "Testujemy komunikaty, kreacje i sposób przedstawienia oferty. Porównujemy wyniki w uzgodnionym okresie, uwzględniając liczbę danych i czas decyzji zakupowej. Zmiana budżetu, grupy docelowej lub materiału powinna mieć uzasadnienie w obserwacjach. Remarketing może wracać do osób, które weszły w kontakt z witryną lub reklamą, jeśli są spełnione wymagania platformy i pomiaru. Zamiast obiecywać szybki wzrost sprzedaży, zapisujemy wykonane prace, wnioski i kolejny test. W B2B zapytanie może wymagać kilku rozmów, więc raport kampanii warto zestawić ze statusem kontaktów w CRM."
+    },
+    {
+      "title": "Kreacje i strategia: co sprawdzamy przed emisją?",
+      "text": "Dobry komunikat odpowiada na pytanie klienta: co moja firma zyska na rozmowie? Zamiast ogólnego hasła o kompleksowej obsłudze pokazujemy zastosowanie, konkretny zakres lub przykład rozwiązania. Dobre praktyki, określane w dokumentacji jako best practices, traktujemy jako punkt wyjścia do testu. Sprawdzamy czytelność grafiki na telefonie, spójność nagłówka z ofertą, jednoznaczne wezwanie do działania oraz dowód kompetencji. Business to business wymaga zwykle wyjaśnienia wartości dla kilku osób uczestniczących w zakupie. Dlatego komunikat dla użytkownika rozwiązania może różnić się od treści dla osoby zatwierdzającej budżet."
+    },
+    {
+      "title": "Biblioteka reklam LinkedIn: analiza komunikacji w branży",
+      "text": "LinkedIn Ad Library to publiczna biblioteka reklam. Przy przygotowaniu komunikacji możemy sprawdzić, jakie oferty i formaty pojawiają się w Twojej branży. Wyszukiwanie po reklamodawcy, słowie kluczowym, kraju i okresie pomaga porównać sposób prezentacji usług. To inspiracja do własnego planu, a nie dowód, że dana kreacja przynosi sprzedaż. Publiczny podgląd nie zastępuje danych z konta i CRM. Treści opracowujemy dla Twojej oferty, bez kopiowania reklam konkurencji.",
+      "href": "https://www.linkedin.com/help/linkedin/answer/a1517918",
+      "link": "Co pokazuje biblioteka reklam LinkedIn"
+    },
+    {
+      "title": "Materiały i strony B2B z portfolio FOTZ",
+      "text": "Powyżej pokazujemy projekty stron FPS Poznań, RPPG i Klagem. Są przykładami prezentacji firmy, produktów i informacji potrzebnych przed kontaktem. Nie przedstawiamy ich jako wyników kampanii LinkedIn. Takie zaplecze ma znaczenie również w reklamie: odbiorca powinien zobaczyć, z kim rozmawia, co obejmuje usługa i jakie realizacje ją potwierdzają. W projekcie kampanii możemy połączyć treść reklam ze zdjęciami, filmem i dopracowaniem strony docelowej. Zakres produkcji oraz zmiany na witrynie wymagają osobnego ustalenia.",
+      "href": "/realizacje",
+      "link": "Poznaj zakres naszych realizacji"
+    },
+    {
+      "title": "LinkedIn Advertising, Google Ads i Meta Ads — podział ról",
+      "text": "Kanały dobieramy do sposobu szukania wykonawcy. Google Ads może odpowiadać na aktywne wyszukiwanie usługi, a reklamy na LinkedIn pozwalają budować komunikację w kontekście zawodowym. Meta Ads warto oceniać przez własny cel, odbiorców i materiały. Nie zakładamy, że jedna platforma zawsze zapewni lepsze leady. Wspólny marketing powinien prowadzić do spójnej oferty i mieć rozdzielone koszty. Prowadzenie profilu firmowego, publikacje ekspertów oraz działania organiczne na LinkedIn to dodatkowy zakres, który można uzgodnić obok płatnej kampanii.",
+      "href": "/performance-marketing/meta-ads",
+      "link": "Kampanie na Facebooku i Instagramie"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Czy LinkedIn Ads będzie odpowiedni dla mojej firmy?",
+      "answer": "Sprawdzamy odbiorców, wartość oferty, sposób sprzedaży i możliwości obsługi zapytań. Jeśli decyzje podejmują konkretne role zawodowe, warto rozważyć ten kanał. Przy niejasnej propozycji wartości albo braku materiałów najpierw porządkujemy ofertę. Nie ma jednej platformy najlepszej dla każdej firmy B2B."
+    },
+    {
+      "question": "Co przygotować do wyceny kampanii LinkedIn?",
+      "answer": "Prześlij adres strony, link do profilu firmy, opis produktu lub usługi oraz odbiorców. Podaj rynek, język, termin i budżet, który rozważasz. Napisz, czy kampanie już działają i kto odbiera kontakty. Do pierwszej rozmowy nie potrzebujemy haseł ani gotowej strategii."
+    },
+    {
+      "question": "Czy można zacząć od audytu konta reklamowego?",
+      "answer": "Tak. Przegląd obecnych kampanii jest osobnym zakresem. Ustalamy dostęp do danych, pytania do sprawdzenia i formę zaleceń. Otrzymujesz priorytety oraz propozycję dalszych prac. Decyzję o prowadzeniu kampanii możesz podjąć po omówieniu diagnozy."
+    },
+    {
+      "question": "Czy budżet reklamowy jest wliczony w obsługę?",
+      "answer": "Wycena rozdziela wynagrodzenie FOTZ i budżet emisji płacony LinkedIn. Oddzielnie opisujemy produkcję, stronę docelową oraz integracje. Przed rozpoczęciem znasz zakres, limit wydatków i zasady rozliczenia. Nie uruchamiamy reklam na podstawie samego zapytania o ofertę."
+    },
+    {
+      "question": "Czy gwarantujecie liczbę leadów lub sprzedaż?",
+      "answer": "Nie. Rezultaty zależą od oferty, odbiorców, materiałów, budżetu i obsługi kontaktów. Ustalamy zakres pracy, sposób testowania i raportowania. Wartościowy lead oceniamy według wspólnych kryteriów, a podpisana umowa i opłacone zamówienie to kolejne, odrębne etapy."
+    },
+    {
+      "question": "Czy moje konto i dane pozostaną w firmie?",
+      "answer": "Pracujemy na koncie reklamowym klienta z uzgodnionymi uprawnieniami. Firma zachowuje kontrolę nad płatnościami, danymi i dostępami. Zasady przekazania materiałów oraz zakończenia współpracy ustalamy w ofercie. Nie prosimy o przesyłanie hasła w formularzu."
+    },
+    {
+      "question": "Czy tworzycie reklamy wideo i dokumenty?",
+      "answer": "Możemy przygotować materiały dopasowane do wybranych formatów: tekst, grafikę, prezentację lub film. Liczba wersji, nagrania, montaż, poprawki i prawa do wykorzystania są zapisane w wycenie. Możemy też pracować na materiałach dostarczonych przez Twój zespół."
+    },
+    {
+      "question": "Czy Lead Gen Forms mogą trafić do naszego CRM?",
+      "answer": "Możliwość połączenia zależy od używanego systemu, integracji i dostępnych pól. Najpierw to sprawdzamy, a wdrożenie oraz testy uzgadniamy osobno. Ustalamy także osobę odpowiedzialną za reakcję na nowe zgłoszenie. Sama obecność formularza nie potwierdza, że dane zostały przekazane."
+    }
+  ],
+  "faqTitle": "LinkedIn Ads — pytania przed rozpoczęciem"
 };
 
-export default LinkedInAds;
+export default function LinkedInAds() {
+  return <>
+    <SEOHead title="LinkedIn Ads — reklamy na LinkedIn dla firm B2B | FOTZ" description="Kampanie LinkedIn Ads dla firm B2B: strategia, kreacje, formularze i pomiar. Poznaj zakres obsługi FOTZ, koszty współpracy i zapytaj o wycenę." canonical="https://www.fotz-studio.pl/performance-marketing/linkedin-ads" />
+    <ServiceEditorial {...content} />
+  </>;
+}

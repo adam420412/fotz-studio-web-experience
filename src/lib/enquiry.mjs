@@ -20,6 +20,7 @@ export const enquiryVariants = {
   ad_variants: 'Warianty filmu do testu reklam',
   meta_ads: 'Kampania Facebook i Instagram', lead_ads: 'Reklamy i obsługa zapytań',
   instagram_ads: 'Kampania Instagram Ads', content_plan: 'Strategia treści',
+  linkedin_ads: 'Kampania LinkedIn Ads dla B2B',
   campaign_audit: 'Przegląd kampanii reklamowej',
   video_plan: 'Strategia i regularne materiały video',
   product_photos: 'Fotografia produktowa',
