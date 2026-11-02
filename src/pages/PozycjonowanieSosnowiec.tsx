@@ -95,8 +95,8 @@ const PozycjonowanieSosnowiec = () => {
   return (
     <Layout>
       <SEOHead
-        title="Pozycjonowanie Sosnowiec - SEO lokalne dla firm | FOTZ"
-        description="Pozycjonowanie stron Sosnowiec. Agencja SEO Fotz Studio — audyt SEO, optymalizacja dla usług lokalnych, handlu i transportu."
+        title="Pozycjonowanie Sosnowiec — lokalne SEO dla firm | FOTZ"
+        description="Pozycjonowanie Sosnowiec — wszystko o pozycjonowaniu stron w wyszukiwarce Google. Audyt, lokalne SEO, link building dla firm. Wycena FOTZ."
         canonical="https://www.fotz-studio.pl/pozycjonowanie/sosnowiec"
         keywords="pozycjonowanie sosnowiec, agencja seo sosnowiec, seo sosnowiec, pozycjonowanie stron sosnowiec, seo dla firm sosnowiec, seo śląsk, pozycjonowanie lokalne sosnowiec"
       />
@@ -441,6 +441,29 @@ const PozycjonowanieSosnowiec = () => {
               </Button>
             </div>
           </FadeInView>
+        </div>
+      </section>
+
+      {/* Czym jest pozycjonowanie */}
+      <section className="py-20 bg-gray-800">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <h2 className="text-3xl font-bold text-white mb-6">Czym polega pozycjonowanie stron w Sosnowcu?</h2>
+          <div className="space-y-5 text-gray-300 leading-relaxed">
+            <p>Pozycjonowanie stron w Sosnowcu to proces, który sprawia, że Twoja strona internetowa — czyli Twoja witryna — pojawia się wysoko w wynikach wyszukiwania Google. Pozycjonowanie stron www i pozycjonowanie strony firmowej to u nas kompleksowa usługa. Wyszukiwarka ocenia treść, technikę i autorytet — proces pozycjonowania stron obejmuje wszystkie trzy. Pozycjonowania stron internetowych nie da się zrobić raz i na zawsze: to proces pozycjonowania stron prowadzony miesiącami, z raportem i korektami.</p>
+            <p>Potencjalni klienci wpisują frazy lokalne — „hydraulik Sosnowiec", „mechanik Sosnowiec". Lokalne frazy mają mniejszą konkurencję, a lokalne pozycjonowanie stron w Sosnowcu daje szybkie efekty pozycjonowania: widoczność w lokalnych wynikach wyszukiwania, ruch na stronie i zapytania. Lokalna fraza trafia w klienta z okolicy. Lokalne pozycjonowanie to też wizytówka Google (Google Moja Firma) — opinie i spójne dane wzmacniają pozycji w wynikach wyszukiwania. Mapa Google to często pierwszy kontakt klienta z firmą.</p>
+            <p>Skuteczne pozycjonowanie stron internetowych mierzymy liczbą zapytań, nie tylko pozycjami. Konwersja — telefon lub formularz — jest celem. Efekty pozycjonowania raportujemy co miesiąc: widać, jak rośnie widoczność strony w wynikach wyszukiwania Google.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* SEO dla firm */}
+      <section className="py-20 bg-gray-900">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <h2 className="text-3xl font-bold text-white mb-6">SEO dla firm z Sosnowca — zakres i wycena</h2>
+          <div className="space-y-5 text-gray-300 leading-relaxed">
+            <p>SEO dla firm z Sosnowca obejmuje: audyt, strategie SEO dobrane do branży, optymalizację strony www Sosnowiec i treści oraz link building. Pozycjonowanie stron internetowych w Sosnowcu to dla nas codzienność — miasta Sosnowiec i okolic znamy z realizacji. Skuteczne pozycjonowanie stron www buduje obecność stron w Google na lata, a organicznych wynikach wyszukiwania nie wyłączysz budżetem. Działania z zakresu SEO prowadzimy kompleksowo — od pozycjonowania lokalnego po sklep internetowy. Sosnowiec to miasto handlu i usług: lokalne firmy, które zainwestują w SEO dziś, pozyskują nowych klientów z Sosnowca i okolic, zanim zrobi to konkurencja.</p>
+            <p>Ile kosztuje pozycjonowanie stron? Wycena zależy od fraz kluczowych i konkurencji — wycenę przygotowujemy bezpłatnie po audycie. Marketing internetowy łączymy z Google Ads, żeby wyniki przyszły szybciej. SEO dla Twojej firmy planujemy tak, by pozyskać nowych klientów, nie tylko ruch. SEO z Sosnowca czy zdalnie? Liczy się zakres i dowody pracy — sprawdź nasze realizacje.</p>
+          </div>
         </div>
       </section>
 
