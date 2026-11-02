@@ -20,7 +20,7 @@ export default function BlogJakSprzedawacWInternecie() {
   return (
     <>
       <SEOHead
-        title="Jak sprzedawać w internecie 2025 — kompleksowy poradnik dla firm"
+        title="Jak sprzedawać w internecie — poradnik dla firm | FOTZ"
         description="Jak sprzedawać w internecie? Poradnik krok po kroku: własny sklep, marketplace, dropshipping, media społecznościowe. Zacznij sprzedaż online!"
         canonical="https://www.fotz-studio.pl/blog/jak-sprzedawac-w-internecie"
 

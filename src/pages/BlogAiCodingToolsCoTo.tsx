@@ -42,8 +42,8 @@ export default function BlogAiCodingToolsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="AI coding tools 2024 — GitHub Copilot, Cursor, Windsurf, Continue.dev i Aider?"
-        description="6 narzędzi AI do kodowania (Copilot/Cursor/Windsurf/Continue.dev/Aider/Claude Code) — modele, workflow, prompting best practices i wpływ na produktywność developera."
+        title="AI coding tools — GitHub Copilot, Cursor, Windsurf | FOTZ"
+        description="6 narzędzi AI do kodowania: Copilot, Cursor, Windsurf, Continue.dev, Aider i Claude Code — modele, workflow i wpływ na produktywność developera."
         canonical="https://www.fotz-studio.pl/blog/ai-coding-tools-copilot-cursor-windsurf-continue-aider-2024"
 
         keywords="AI coding tools 2024 co to jest, AI coding tools 2024 definicja, czym jest AI coding tools 2024, AI coding tools 2024 przykłady, jak działa AI coding tools 2024, AI coding tools 2024 znaczenie, AI coding tools 2024 przewodnik"

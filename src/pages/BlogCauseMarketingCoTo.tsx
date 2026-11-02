@@ -84,7 +84,7 @@ export default function BlogCauseMarketingCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Cause Marketing — co to jest? Marketing zaangażowany społecznie"
+        title="Cause Marketing — co to jest? | FOTZ"
         description="Kompletny przewodnik po cause marketingu: modele, jak wybrać sprawę i jak prowadzić autentyczne kampanie społeczne."
         canonical="https://www.fotz-studio.pl/blog/cause-marketing-co-to"
 

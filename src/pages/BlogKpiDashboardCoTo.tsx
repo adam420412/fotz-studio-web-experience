@@ -82,7 +82,7 @@ export default function BlogKpiDashboardCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Dashboard KPI — co to jest? Jak budować dashboardy wskaźników"
+        title="Dashboard KPI — co to jest? | FOTZ"
         description="Dashboard KPI — definicja, 3 typy (operacyjny, taktyczny, strategiczny), zasady projektowania, narzędzia i przykłady KPI dla 5 funkcji. Kompletny przewodnik."
         canonical="https://www.fotz-studio.pl/blog/dashboard-kpi-co-to"
 

@@ -64,7 +64,7 @@ export default function BlogHeatmapyCoTo() {
   return (
     <>
       <SEOHead
-        title="Heatmapy — co to jest i jak poprawić UX strony? | FOTZ Studio"
+        title="Heatmapy — co to jest i jak poprawić UX strony | FOTZ"
         description="Heatmapy co to jest — wyjaśniamy czym są mapy ciepła, typy heatmap, najlepsze narzędzia (Hotjar, Clarity) i jak używać heatmap do optymalizacji strony."
         canonical="https://www.fotz-studio.pl/blog/heatmapy-co-to-jest"
 

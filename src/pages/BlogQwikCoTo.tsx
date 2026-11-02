@@ -42,8 +42,8 @@ export default function BlogQwikCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Qwik framework — Resumability, useSignal, Qwik City i zerowa hydration TypeScript 2024?"
-        description="6 frameworków (Qwik/React/Astro/SvelteKit/SolidJS/Remix) — Resumability vs Hydration, useSignal, Qwik City (loaders/actions), Qwik Insights i deployment na Cloudflare."
+        title="Qwik framework — Resumability, useSignal | FOTZ"
+        description="Qwik vs React, Astro, SvelteKit: Resumability zamiast Hydration, useSignal, Qwik City i deployment na Cloudflare."
         canonical="https://www.fotz-studio.pl/blog/qwik-framework-resumability-usesignal-qwik-city-zerowa-hydration-2024"
 
         keywords="Qwik framework co to jest, Qwik framework jak działa, Qwik framework tutorial, Qwik framework przykład, czym jest Qwik framework, Qwik framework dokumentacja, Qwik framework przewodnik"

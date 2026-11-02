@@ -47,7 +47,7 @@ export default function BlogInfluencerMarketing() {
   return (
     <Layout>
       <SEOHead
-        title="Influencer Marketing w Polsce - Jak Współpracować z Influencerami"
+        title="Influencer marketing w Polsce — jak współpracować?"
         description="Kompletny poradnik influencer marketingu. Jak znaleźć influencerów, negocjować współpracę, tworzyć briefy i mierzyć efekty kampanii."
         ogType="article"
         canonical="https://www.fotz-studio.pl/social-media/influencer"

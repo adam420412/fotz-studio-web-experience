@@ -79,7 +79,7 @@ export default function BlogSalesEnablementCoTo() {
   return (
     <>
       <SEOHead
-        title="Sales Enablement — co to jest? Wsparcie sprzedaży w B2B | FOTZ Studio"
+        title="Sales Enablement — co to jest? | FOTZ"
         description="Czym jest sales enablement, filary programu, narzędzia, KPI, różnica vs sales training i jak zbudować sales playbook dla zespołu sprzedaży."
         canonical="https://www.fotz-studio.pl/blog/sales-enablement-co-to"
 

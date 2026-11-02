@@ -73,7 +73,7 @@ export default function BlogDataMeshCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Data Mesh — co to jest i jak wdrożyć zdecentralizowaną architekturę danych?"
+        title="Data Mesh — co to jest? | FOTZ"
         description="Data Mesh: 4 zasady Zhamak Dehghani, domain ownership, data as a product, self-serve platform, federated governance i porównanie z Data Lake/Warehouse."
         canonical="https://www.fotz-studio.pl/blog/data-mesh-co-to-jest-jak-wdrozyz-architekture-danych"
 

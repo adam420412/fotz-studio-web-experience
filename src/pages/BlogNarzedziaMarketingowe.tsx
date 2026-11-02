@@ -32,7 +32,7 @@ export default function BlogNarzedziaMarketingowe() {
   return (
     <>
       <SEOHead
-        title="Narzędzia Marketingowe - Przewodnik po Najlepszych Toolach 2025"
+        title="Najlepsze narzędzia marketingowe — przewodnik 2025 | FOTZ"
         description="Kompletny przewodnik po narzędziach marketingowych dla małych i średnich firm. Kategorie SEO, analityka, social media, email, automatyzacja i projektowanie."
         ogType="article"
         canonical="https://www.fotz-studio.pl/blog/narzedzia-marketingowe"

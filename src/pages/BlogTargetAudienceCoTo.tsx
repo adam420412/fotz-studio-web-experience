@@ -74,7 +74,7 @@ export default function BlogTargetAudienceCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Target Audience — co to jest i jak definiować grupę docelową?"
+        title="Target Audience — co to jest? | FOTZ"
         description="Kompletny przewodnik po target audience: 4 segmentacje, 6 metod badań i różnice vs. buyer persona."
         canonical="https://www.fotz-studio.pl/blog/target-audience-co-to"
 

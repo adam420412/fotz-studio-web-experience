@@ -89,7 +89,7 @@ export default function BlogTopicClustersCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Topic Clusters — co to jest i jak budować klastry tematyczne?"
+        title="Topic Clusters — co to jest? | FOTZ"
         description="Topic clusters i pillar pages — definicja, struktura klastra (pillar + cluster content + linki wewnętrzne), 6-krokowy proces budowania i wpływ na SEO."
         canonical="https://www.fotz-studio.pl/blog/topic-clusters-co-to"
 

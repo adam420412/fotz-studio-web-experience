@@ -66,7 +66,7 @@ export default function BlogStorytellingCoTo() {
   return (
     <>
       <SEOHead
-        title="Storytelling — co to jest i jak używać go w marketingu? | FOTZ Studio"
+        title="Storytelling — co to jest? | FOTZ"
         description="Storytelling co to jest — wyjaśniamy, czym jest storytelling w marketingu, framework StoryBrand, jak pisać historie, które angażują, i jak zwiększają konwersje."
         canonical="https://www.fotz-studio.pl/blog/storytelling-co-to"
 

@@ -94,7 +94,7 @@ export default function BlogEventMarketingCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Event Marketing — co to jest i jak działa? Kompletny przewodnik"
+        title="Event Marketing — co to jest? | FOTZ"
         description="Event marketing — definicja, rodzaje eventów, jak mierzyć ROI i metryki sukcesu. Kompletny przewodnik po organizowaniu skutecznych wydarzeń marketingowych."
         canonical="https://www.fotz-studio.pl/blog/event-marketing-co-to"
 

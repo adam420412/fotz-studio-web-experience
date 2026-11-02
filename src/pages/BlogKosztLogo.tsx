@@ -59,7 +59,7 @@ export default function BlogKosztLogo() {
   return (
     <Layout>
       <SEOHead
-        title="Ile kosztuje logo? Cennik projektowania logo 2025 | Fotz Studio"
+        title="Ile kosztuje logo? Cennik projektowania logo | FOTZ"
         description="Ile kosztuje logo? Poznaj realną cenę projektowania logo - od DIY (100 PLN) po agencję premium (40 000 PLN). Porównanie opcji, co wpływa na cenę, FAQ."
         ogType="article"
         canonical="https://www.fotz-studio.pl/blog/ile-kosztuje-logo"

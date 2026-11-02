@@ -72,7 +72,7 @@ export default function BlogViralCoefficientCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Viral Coefficient — co to jest i jak mierzyć viralność? | Fotz.pl"
+        title="Viral Coefficient — co to jest? | FOTZ"
         description="Kompletny przewodnik po Viral Coefficient: formuła, mechanizmy viralności, viral funnel i jak budować viral loop."
         canonical="https://www.fotz-studio.pl/blog/viral-coefficient-wspolczynnik-viralnosci-produktu"
 

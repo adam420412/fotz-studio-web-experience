@@ -42,8 +42,8 @@ export default function BlogCssCustomPropsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="CSS Custom Properties — Design Tokens, @property, Theming i Dark Mode 2024?"
-        description="6 wzorców CSS Variables (primitive tokens/semantic/dark mode/@property/fluid/scoping) — design tokens, animacje, multi-theme system, TypeScript i zaawansowane CSS patterns."
+        title="CSS Custom Properties — Design Tokens, @property | FOTZ"
+        description="6 wzorców CSS Variables: design tokens, dark mode, @property, fluid i scoping — multi-theme system i zaawansowane wzorce CSS."
         canonical="https://www.fotz-studio.pl/blog/css-custom-properties-variables-design-tokens-theming-2024"
 
         keywords="CSS Custom Properties co to jest, CSS Custom Properties definicja, czym jest CSS Custom Properties, CSS Custom Properties przykłady, jak działa CSS Custom Properties, CSS Custom Properties znaczenie, CSS Custom Properties przewodnik"

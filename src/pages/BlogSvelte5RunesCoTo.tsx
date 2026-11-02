@@ -42,7 +42,7 @@ export default function BlogSvelte5RunesCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Svelte 5 Runes, Angular 18/19 Signals i SvelteKit 2 | Fotz Studio"
+        title="Svelte 5 Runes, Angular 18/19 Signals i SvelteKit 2 | FOTZ"
         description="Svelte 5 Runes, Angular 18/19 (Signals/deferrable/Resource API), SvelteKit 2 (load functions/adapters), Vue 3.5 i Nuxt 4 — nowości frameworków frontend 2024."
         canonical="https://www.fotz-studio.pl/blog/svelte-5-runes-angular-18-19-signals-sveltekit-2-frameworki-2024"
 

@@ -31,7 +31,7 @@ export default function BlogSEOvsGoogleAds() {
   return (
     <>
       <SEOHead
-        title="SEO vs Google Ads - Porównanie pozycjonowania i reklamy | Fotz"
+        title="SEO vs Google Ads — co wybrać? Porównanie | FOTZ"
         description="Porównanie SEO i Google Ads: różnice, zalety, wady i kiedy wybrać każdą strategię. Przewodnik dla firm chcących zwiększyć widoczność online."
         canonical="https://www.fotz-studio.pl/blog/seo-vs-google-ads"
 

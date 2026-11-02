@@ -42,7 +42,7 @@ export default function BlogDbMigrationsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Database Migrations — co to jest, Flyway, Liquibase, Alembic, zero-downtime, rollback?"
+        title="Database Migrations — co to jest? | FOTZ"
         description="Database Migrations: 6 narzędzi (Flyway/Liquibase/Alembic/Django/Prisma/Goose), zero-downtime schema changes, expand-contract, rollback i mikrousługi."
         canonical="https://www.fotz-studio.pl/blog/database-migrations-co-to-jest-flyway-liquibase-alembic-zero-downtime-rollback"
 

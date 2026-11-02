@@ -51,7 +51,7 @@ export default function BlogDevSecOpsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="DevSecOps — co to jest i jak wbudować security w CI/CD? | Fotz.pl"
+        title="DevSecOps — co to jest? | FOTZ"
         description="DevSecOps: Shift Left Security, SAST/DAST/SCA narzędzia, secrets management, security w CI/CD pipeline, OWASP Top 10 i Security Champion program."
         canonical="https://www.fotz-studio.pl/blog/devsecops-co-to-jest-jak-wbudowac-security-w-cicd"
 

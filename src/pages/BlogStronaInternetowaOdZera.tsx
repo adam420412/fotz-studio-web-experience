@@ -130,7 +130,7 @@ export default function BlogStronaInternetowaOdZera() {
     <Layout>
       <div className="pt-20">
       <SEOHead
-        title="Strona internetowa dla małej firmy - poradnik 2025 | FOTZ Studio"
+        title="Strona internetowa dla małej firmy - poradnik | FOTZ"
         description="Pełny poradnik jak zrobić stronę dla małej firmy. Co musi mieć strona? Ile kosztuje? WordPress vs Wix. 5 najczęstszych błędów. Praktyczne porady."
         canonical="https://www.fotz-studio.pl/blog/strona-internetowa-dla-malej-firmy"
         structuredData={{

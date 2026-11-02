@@ -64,7 +64,7 @@ export default function BlogAffiliateMarketingCoTo() {
   return (
     <>
       <SEOHead
-        title="Affiliate Marketing — co to jest i jak zarabiać? | FOTZ Studio"
+        title="Affiliate Marketing — co to jest i jak zarabiać | FOTZ"
         description="Affiliate Marketing co to jest — wyjaśniamy czym jest marketing afiliacyjny, jak zarabiać, najlepsze programy afiliacyjne i ile można zarobić."
         canonical="https://www.fotz-studio.pl/blog/affiliate-marketing-co-to"
 

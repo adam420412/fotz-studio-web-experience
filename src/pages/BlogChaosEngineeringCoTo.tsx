@@ -51,7 +51,7 @@ export default function BlogChaosEngineeringCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Chaos Engineering — co to jest i jak wdrożyć w SaaS? | Fotz.pl"
+        title="Chaos Engineering — co to jest i jak wdrożyć w SaaS | FOTZ"
         description="Chaos Engineering: definicja, zasady, typy eksperymentów, narzędzia (Litmus, Chaos Mesh, Gremlin, AWS FIS), Game Days i jak budować kulturę odpornych systemów."
         canonical="https://www.fotz-studio.pl/blog/chaos-engineering-co-to-jest-jak-wdrozyz"
 

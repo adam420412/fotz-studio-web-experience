@@ -66,7 +66,7 @@ export default function BlogTechnicalSEOCoTo() {
   return (
     <>
       <SEOHead
-        title="Technical SEO — co to jest i jak przeprowadzić audyt? | FOTZ Studio"
+        title="Technical SEO — co to jest i jak przeprowadzić audyt | FOTZ"
         description="Technical SEO co to jest — wyjaśniamy czym jest techniczne SEO, Core Web Vitals, crawlability, jak audytować stronę i optymalizować szybkość strony."
         canonical="https://www.fotz-studio.pl/blog/technical-seo-co-to"
 

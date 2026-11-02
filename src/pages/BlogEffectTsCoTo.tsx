@@ -42,7 +42,7 @@ export default function BlogEffectTsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Effect.ts, fp-ts i neverthrow — functional programming w TypeScript 2024?"
+        title="Effect.ts, fp-ts i neverthrow | FOTZ"
         description="6 bibliotek FP (Effect.ts/fp-ts/neverthrow/ts-results/remeda/vanilla patterns) — type-safe error handling, monads, dependency injection i functional TypeScript."
         canonical="https://www.fotz-studio.pl/blog/effect-ts-fp-ts-neverthrow-functional-programming-typescript-2024"
 

@@ -42,8 +42,8 @@ export default function BlogAstroDeepDiveCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Astro 4 — Content Collections, View Transitions, Islands, Astro DB i Actions 2024?"
-        description="6 funkcji Astro (Zero JS/Islands/Content Collections/View Transitions/Multi-framework/Astro DB) — type-safe treści, Islands architecture, Astro Actions i deployment na Vercel/Cloudflare."
+        title="Astro 4 — Content Collections, View Transitions | FOTZ"
+        description="6 funkcji Astro: Islands, Content Collections, View Transitions, Astro DB i Actions — type-safe treści i deployment na Vercel/Cloudflare."
         canonical="https://www.fotz-studio.pl/blog/astro-4-content-collections-view-transitions-islands-astro-db-actions-2024"
 
         keywords="Astro 4 co to jest, Astro 4 jak działa, Astro 4 tutorial, Astro 4 przykład, czym jest Astro 4, Astro 4 dokumentacja, Astro 4 przewodnik"

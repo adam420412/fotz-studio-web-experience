@@ -64,7 +64,7 @@ export default function BlogHipotekaCoToJest() {
   return (
     <>
       <SEOHead
-        title="Hipoteka — co to jest? Kredyt hipoteczny — poradnik | FOTZ Studio"
+        title="Hipoteka — co to jest? Kredyt hipoteczny — poradnik | FOTZ"
         description="Hipoteka co to jest — wyjasnamy czym jest hipoteka, jak dziala kredyt hipoteczny, wklad wlasny, zdolnosc kredytowa i wpis hipoteki do ksiegi wieczystej."
         canonical="https://www.fotz-studio.pl/blog/hipoteka-co-to-jest"
 

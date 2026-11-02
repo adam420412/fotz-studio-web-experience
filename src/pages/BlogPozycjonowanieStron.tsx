@@ -39,7 +39,7 @@ export default function BlogPozycjonowanieStron() {
   return (
     <Layout>
       <SEOHead
-        title="Pozycjonowanie Stron Internetowych — Kompletny Poradnik SEO 2026"
+        title="Pozycjonowanie stron internetowych — poradnik SEO | FOTZ"
         description="Jak pozycjonować stronę w Google? Poznaj sprawdzone techniki SEO: optymalizacja on-page, link building, content marketing. Poradnik krok po kroku."
         ogType="article"
         canonical="https://www.fotz-studio.pl/blog/pozycjonowanie-stron-internetowych-poradnik"

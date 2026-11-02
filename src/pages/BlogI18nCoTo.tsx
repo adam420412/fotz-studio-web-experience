@@ -42,7 +42,7 @@ export default function BlogI18nCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="i18n internacjonalizacja — next-intl, react-i18next, Paraglide Next.js 2024?"
+        title="i18n internacjonalizacja — next-intl, react-i18next | FOTZ"
         description="Internationalization (i18n) w Next.js: next-intl, App Router locale routing, Intl API, hreflang SEO, pluralizacja ICU, CMS tłumaczeń Lokalise i Tolgee."
         canonical="https://www.fotz-studio.pl/blog/i18n-internationalization-next-intl-react-i18next-nextjs-2024"
 

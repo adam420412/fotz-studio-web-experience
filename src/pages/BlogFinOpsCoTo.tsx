@@ -47,7 +47,7 @@ export default function BlogFinOpsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="FinOps — co to jest i jak optymalizować koszty cloud? | Fotz.pl"
+        title="FinOps — co to jest i jak optymalizować koszty cloud | FOTZ"
         description="FinOps: definicja, 3 fazy (Inform/Optimize/Operate), tagowanie kosztów, Reserved Instances, rightsizing, unit economics cloud i jak budować kulturę FinOps."
         canonical="https://www.fotz-studio.pl/blog/finops-co-to-jest-jak-optymalizowac-koszty-cloud"
 

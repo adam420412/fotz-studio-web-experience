@@ -42,7 +42,7 @@ export default function BlogTypescriptAdvancedCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="TypeScript zaawansowany — generics, conditional types, decorators, TypeScript 5.x?"
+        title="TypeScript zaawansowany — generics, conditional types | FOTZ"
         description="TypeScript advanced: generics z constraints, conditional types, mapped types, template literal types, decorators Stage 3, type guards i TypeScript 5.x nowości."
         canonical="https://www.fotz-studio.pl/blog/typescript-zaawansowany-generics-conditional-types-decorators-typescript-5"
 

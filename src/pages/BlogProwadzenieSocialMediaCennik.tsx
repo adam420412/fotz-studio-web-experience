@@ -108,7 +108,7 @@ export default function BlogProwadzenieSocialMediaCennik() {
   return (
     <Layout>
       <SEOHead
-        title="Prowadzenie social media — cennik 2025, pakiety i zakres usługi"
+        title="Prowadzenie social media — cennik | FOTZ"
         description="Prowadzenie social media cennik 2025: ile kosztuje obsługa Facebooka, Instagrama i LinkedIna przez agencję? Pakiety od 800 zł/mies. Sprawdź pełny zakres usługi."
         canonical="https://www.fotz-studio.pl/blog/prowadzenie-social-media-cennik"
 

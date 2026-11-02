@@ -39,7 +39,7 @@ export default function BlogZasada555SocialMedia() {
   return (
     <Layout>
       <SEOHead
-        title="Zasada 5-5-5 w social media: co to jest i czy naprawdę działa"
+        title="Zasada 5-5-5 w social media — co to jest? | FOTZ"
         description="Zasada 5-5-5 w social media: sprawdzamy trzy interpretacje tej heurystyki, kiedy działa, a kiedy szkodzi. Bez marketingowego lukru, za to z konkretami."
         canonical={CANONICAL}
         keywords="zasada 5-5-5, zasada 5 5 5 social media, planowanie treści social media, miks treści, strategia social media, content plan"

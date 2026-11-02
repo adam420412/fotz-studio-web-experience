@@ -84,7 +84,7 @@ export default function BlogCompetitiveMoatCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Competitive Moat — co to jest i jak budować fosę ekonomiczną?"
+        title="Competitive Moat — co to jest? | FOTZ"
         description="Kompletny przewodnik po economic moat: 5 typów moatu (Morningstar framework), wskaźniki oceny szerokości i przykłady (Coca-Cola, Salesforce, Amazon)."
         canonical="https://www.fotz-studio.pl/blog/competitive-moat-co-to"
 

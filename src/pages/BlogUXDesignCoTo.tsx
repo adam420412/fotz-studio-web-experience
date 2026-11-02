@@ -64,7 +64,7 @@ export default function BlogUXDesignCoTo() {
   return (
     <>
       <SEOHead
-        title="UX Design — co to jest i jak wpływa na konwersję? | FOTZ Studio"
+        title="UX Design — co to jest i jak wpływa na konwersję | FOTZ"
         description="UX Design co to jest — wyjaśniamy czym jest User Experience Design, różnica UX vs UI, jak UX wpływa na konwersję strony i jak poprawić UX witryny."
         canonical="https://www.fotz-studio.pl/blog/ux-design-co-to"
 

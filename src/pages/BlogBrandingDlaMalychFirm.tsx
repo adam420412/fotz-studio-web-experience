@@ -37,7 +37,7 @@ export default function BlogBrandingDlaMalychFirm() {
   return (
     <>
       <SEOHead
-        title="Branding dla małej firmy - Kompletny przewodnik | Fotz Studio"
+        title="Branding dla małej firmy - Kompletny przewodnik | FOTZ"
         description="Odkryj jak zbudować silne branding dla małej firmy. Przewodnik po identyfikacji wizualnej, tworzeniu logo, wyborze kolorów i konsystencji marki."
         keywords="branding dla małej firmy, identyfikacja wizualna, mała firma, logo, branding na budżecie, visual identity"
         canonical="https://www.fotz-studio.pl/blog/branding-dla-malej-firmy"

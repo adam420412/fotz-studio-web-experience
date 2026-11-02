@@ -43,7 +43,7 @@ export default function BlogLlmToolCallingCoTo() {
     <Layout>
       <SEOHead
         title="LLM Tool Calling, AI Agenci i RAG | Fotz Studio"
-        description="6 narzędzi AI (Vercel AI SDK/OpenAI/Anthropic/LangChain.js/LlamaIndex/Mastra) — tool calling, agentic loops, structured output (Zod), RAG z pgvector i generative UI."
+        description="6 narzędzi AI: Vercel AI SDK, OpenAI, Anthropic, LangChain.js, Mastra — tool calling, structured output (Zod), RAG i generative UI."
         canonical="https://www.fotz-studio.pl/blog/llm-tool-calling-ai-agenci-rag-vercel-ai-sdk-typescript-2024"
 
         keywords="LLM Tool Calling, AI Agenci i RAG co to jest, LLM Tool Calling, AI Agenci i RAG jak działa, LLM Tool Calling, AI Agenci i RAG tutorial, LLM Tool Calling, AI Agenci i RAG przykład, czym jest LLM Tool Calling, AI Agenci i RAG, LLM Tool Calling, AI Agenci i RAG dokumentacja, LLM Tool Calling, AI Agenci i RAG przewodnik"

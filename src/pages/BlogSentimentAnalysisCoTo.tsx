@@ -58,7 +58,7 @@ export default function BlogSentimentAnalysisCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Analiza Sentymentu — co to jest? Sentiment Analysis w marketingu"
+        title="Analiza Sentymentu — co to jest? | FOTZ"
         description="Analiza sentymentu (sentiment analysis) — definicja, jak działa NLP, aspect-based sentiment, zastosowania w marketingu i ograniczenia. Kompletny przewodnik."
         canonical="https://www.fotz-studio.pl/blog/analiza-sentymentu-co-to"
 

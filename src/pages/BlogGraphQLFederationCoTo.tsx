@@ -51,7 +51,7 @@ export default function BlogGraphQLFederationCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="GraphQL Federation — co to jest, Apollo Federation, supergraph i subgraphy?"
+        title="GraphQL Federation — co to jest? | FOTZ"
         description="GraphQL Federation: subgraphy, Apollo Router, @key directive, N+1 DataLoader, schema registry, GraphQL vs REST vs gRPC i security w produkcji."
         canonical="https://www.fotz-studio.pl/blog/graphql-federation-co-to-jest-apollo-supergraph-subgraphy"
 

@@ -50,7 +50,7 @@ export default function BlogServerlessArchCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Architektura Serverless — co to jest, AWS Lambda, Cloud Run, Step Functions?"
+        title="Architektura Serverless — co to jest? | FOTZ"
         description="Serverless: AWS Lambda, Google Cloud Run, Azure Functions, Step Functions, cold starts, event-driven patterns i optymalizacja kosztów — kompletny przewodnik."
         canonical="https://www.fotz-studio.pl/blog/architektura-serverless-co-to-jest-aws-lambda-cloud-run-step-functions"
 

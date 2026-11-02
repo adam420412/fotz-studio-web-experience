@@ -42,7 +42,7 @@ export default function BlogReactEmailResendCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="React Email, Resend, Nodemailer — szablony email w JSX TypeScript 2024?"
+        title="React Email, Resend, Nodemailer | FOTZ"
         description="6 bibliotek do emaili w TypeScript (React Email/Resend/Nodemailer/Postmark/SendGrid/SES) — szablony JSX, API, dostarczalność SPF/DKIM/DMARC i testy emaili."
         canonical="https://www.fotz-studio.pl/blog/react-email-resend-nodemailer-szablony-email-jsx-typescript-2024"
 

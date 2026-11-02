@@ -57,7 +57,7 @@ export default function BlogChangeManagementCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Change Management — co to jest? Zarządzanie zmianą organizacyjną"
+        title="Change Management — co to jest? | FOTZ"
         description="Kompletny przewodnik po change management: model Kotter 8-Step, ADKAR, różnica vs. project management i metryki adopcji."
         canonical="https://www.fotz-studio.pl/blog/change-management-co-to"
 

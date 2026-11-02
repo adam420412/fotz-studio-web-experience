@@ -57,7 +57,7 @@ export default function BlogSaasMetricsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Metryki SaaS — co to jest? MRR, ARR, LTV, CAC, Churn Rate i NRR"
+        title="Metryki SaaS — co to jest? | FOTZ"
         description="Metryki SaaS — definicje MRR, ARR, Churn Rate, NRR, LTV, CAC i Activation Rate. Jak obliczać, benchmarki i rozbicie MRR (New, Expansion, Churned). Przewodnik."
         canonical="https://www.fotz-studio.pl/blog/saas-metrics-co-to"
 

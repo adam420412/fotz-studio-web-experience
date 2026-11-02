@@ -66,7 +66,7 @@ export default function BlogEbitdaCoToJest() {
   return (
     <>
       <SEOHead
-        title="EBITDA — co to jest i jak obliczyć? Wskaźnik finansowy | FOTZ Studio"
+        title="EBITDA — co to jest? | FOTZ"
         description="EBITDA co to jest — wyjaśniamy czym jest wskaźnik EBITDA, jak go obliczyć, do czego służy w wycenie firm i analizie finansowej. Wzór i przykłady."
         canonical="https://www.fotz-studio.pl/blog/ebitda-co-to-jest"
 

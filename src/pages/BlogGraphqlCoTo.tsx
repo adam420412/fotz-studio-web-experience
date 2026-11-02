@@ -176,7 +176,7 @@ export default function BlogGraphqlCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="GraphQL — co to jest? Query, Mutation, Schema i różnice od REST"
+        title="GraphQL — co to jest? | FOTZ"
         description="GraphQL — definicja, 3 operacje (Query/Mutation/Subscription), schema SDL, resolvers i kiedy używać zamiast REST. Kompletny przewodnik po GraphQL."
         canonical="https://www.fotz-studio.pl/blog/graphql-co-to"
 

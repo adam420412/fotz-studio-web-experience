@@ -66,7 +66,7 @@ export default function BlogROICoToJest() {
   return (
     <>
       <SEOHead
-        title="ROI — co to jest i jak obliczyć zwrot z inwestycji? | FOTZ Studio"
+        title="ROI — co to jest i jak obliczyć zwrot z inwestycji | FOTZ"
         description="ROI co to jest — wyjaśniamy czym jest Return on Investment, wzór na ROI, przykłady obliczeń i jak mierzyć ROI w marketingu i projektach IT."
         canonical="https://www.fotz-studio.pl/blog/roi-co-to-jest"
 

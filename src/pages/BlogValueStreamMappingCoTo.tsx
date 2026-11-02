@@ -58,7 +58,7 @@ export default function BlogValueStreamMappingCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Value Stream Mapping — co to jest? Mapowanie strumienia wartości"
+        title="Value Stream Mapping — co to jest? | FOTZ"
         description="Kompletny przewodnik po VSM: 8 strat Lean w software, kluczowe metryki (Lead Time, Cycle Time, Process Efficiency) i jak tworzyć current i future state map."
         canonical="https://www.fotz-studio.pl/blog/value-stream-mapping-co-to"
 

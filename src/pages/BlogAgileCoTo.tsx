@@ -71,7 +71,7 @@ export default function BlogAgileCoTo() {
   return (
     <>
       <SEOHead
-        title="Agile — co to jest i jak działa metodologia pracy? | FOTZ Studio"
+        title="Agile — co to jest i jak działa metodologia pracy | FOTZ"
         description="Agile co to jest — wyjaśniamy czym jest zwinne zarządzanie projektami, wartości Agile, frameworki (Scrum, Kanban) i jak wdrożyć Agile w firmie."
         canonical="https://www.fotz-studio.pl/blog/agile-co-to"
 

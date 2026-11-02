@@ -50,7 +50,7 @@ const BlogKosztStrony = () => {
   return (
     <>
       <SEOHead
-        title="Ile Kosztuje Strona Internetowa w 2026? Cennik i Czynniki Wyceny"
+        title="Ile kosztuje strona internetowa w 2026? Cennik | FOTZ"
         description="Ile kosztuje strona internetowa w 2026? Poznaj orientacyjne widełki cenowe, koszty utrzymania, typy stron i czynniki wpływające na indywidualną wycenę."
         ogType="article"
         canonical="https://www.fotz-studio.pl/blog/ile-kosztuje-strona-internetowa"

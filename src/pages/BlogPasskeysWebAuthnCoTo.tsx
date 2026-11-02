@@ -42,8 +42,8 @@ export default function BlogPasskeysWebAuthnCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Passkeys i WebAuthn — implementacja w Next.js, SimpleWebAuthn i UX 2024?"
-        description="6 aspektów passkeys vs hasła (phishing/reuse/brute force/data breach/UX/wsparcie) — WebAuthn API, SimpleWebAuthn Next.js, conditional UI, YubiKey enterprise i Auth.js v5."
+        title="Passkeys i WebAuthn — implementacja w Next.js | FOTZ"
+        description="Passkeys vs hasła: phishing, UX, wsparcie — WebAuthn API, SimpleWebAuthn w Next.js, conditional UI, YubiKey i Auth.js v5."
         canonical="https://www.fotz-studio.pl/blog/passkeys-webauthn-implementacja-nextjs-simplewebauthn-fido2-2024"
 
         keywords="Passkeys i WebAuthn co to jest, Passkeys i WebAuthn jak działa, Passkeys i WebAuthn tutorial, Passkeys i WebAuthn przykład, czym jest Passkeys i WebAuthn, Passkeys i WebAuthn dokumentacja, Passkeys i WebAuthn przewodnik"

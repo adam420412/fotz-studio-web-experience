@@ -56,7 +56,7 @@ export default function BlogFeedbackLoopCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Feedback Loop — co to jest? Pętla feedbacku w produkcie i firmie"
+        title="Feedback Loop — co to jest? | FOTZ"
         description="Kompletny przewodnik po feedback loop: 6 kanałów (interviews, NPS, analytics, support, session recordings), 6-krokowy proces i jak zamknąć pętlę."
         canonical="https://www.fotz-studio.pl/blog/feedback-loop-co-to"
 

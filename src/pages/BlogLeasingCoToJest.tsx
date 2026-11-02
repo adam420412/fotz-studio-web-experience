@@ -66,7 +66,7 @@ export default function BlogLeasingCoToJest() {
   return (
     <>
       <SEOHead
-        title="Leasing — co to jest? Leasing operacyjny vs finansowy | FOTZ Studio"
+        title="Leasing — co to jest? Leasing operacyjny vs finansowy | FOTZ"
         description="Leasing co to jest — wyjasnamy czym jest leasing operacyjny i finansowy, zalety dla firmy, co mozna leasingowac i jak rozliczyc leasing samochodu w kosztach."
         canonical="https://www.fotz-studio.pl/blog/leasing-co-to-jest"
 

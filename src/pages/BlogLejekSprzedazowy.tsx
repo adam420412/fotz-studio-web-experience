@@ -65,7 +65,7 @@ export default function BlogLejekSprzedazowy() {
   return (
     <>
       <SEOHead
-        title="Lejek sprzedazowy — co to jest i jak go zbudowac? | FOTZ Studio"
+        title="Lejek sprzedazowy — co to jest i jak go zbudowac | FOTZ"
         description="Lejek sprzedazowy co to jest — wyjasnamy etapy lejka (AIDA, TOFU/MOFU/BOFU), jak zbudowac lejek sprzedazowy B2B i B2C oraz jak mierzyc jego efektywnosc."
         canonical="https://www.fotz-studio.pl/blog/lejek-sprzedazowy-co-to"
 

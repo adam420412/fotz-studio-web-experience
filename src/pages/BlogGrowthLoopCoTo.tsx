@@ -85,7 +85,7 @@ export default function BlogGrowthLoopCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Growth Loop — co to jest? Pętla wzrostu zamiast lejka konwersji"
+        title="Growth Loop — co to jest? | FOTZ"
         description="Kompletny przewodnik po growth loops: 5 typów pętli (viral, content SEO, paid, product, community), 6-krokowy framework projektowania i kluczowe metryki."
         canonical="https://www.fotz-studio.pl/blog/growth-loop-co-to"
 

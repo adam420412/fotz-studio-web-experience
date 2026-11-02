@@ -42,7 +42,7 @@ export default function BlogCapacitorIonicCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Capacitor, Ionic, PWA i Expo — cross-platform mobile z web technologii 2024?"
+        title="Capacitor, Ionic, PWA i Expo | FOTZ"
         description="6 opcji cross-platform mobile (Capacitor+Ionic/React Native/Flutter/Tauri/PWA/KMP) — webview vs native, PWA capabilities 2024 i Expo SDK 52 nowości."
         canonical="https://www.fotz-studio.pl/blog/capacitor-ionic-pwa-expo-cross-platform-mobile-web-2024"
 

@@ -55,7 +55,7 @@ export default function BlogTechDebtCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Dług techniczny (tech debt) — co to jest? Jak zarządzać i spłacać"
+        title="Dług techniczny (tech debt) — co to jest? | FOTZ"
         description="Kompletny przewodnik po długu technicznym: quadrant Fowlera, 6 typów tech debt, jak mierzyć i 5 strategii zarządzania (Boy Scout Rule, 20%, hardening sprint)."
         canonical="https://www.fotz-studio.pl/blog/dług-techniczny-co-to"
 

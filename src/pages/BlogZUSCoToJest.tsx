@@ -73,7 +73,7 @@ export default function BlogZUSCoToJest() {
   return (
     <>
       <SEOHead
-        title="ZUS — co to jest? Skladki spoleczne dla przedsiebiorcy | FOTZ Studio"
+        title="ZUS — co to jest? Składki przedsiębiorcy | FOTZ"
         description="ZUS co to jest — wyjasnamy czym jest ZUS, ile wynosi ZUS dla JDG w 2024, ulga na start, maly ZUS i jak skladki wplywaja na emeryture."
         canonical="https://www.fotz-studio.pl/blog/zus-co-to-jest"
 

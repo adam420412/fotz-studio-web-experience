@@ -64,7 +64,7 @@ export default function BlogProgrammaticCoTo() {
   return (
     <>
       <SEOHead
-        title="Programmatic Advertising — co to jest i jak działa? | FOTZ Studio"
+        title="Programmatic Advertising — co to jest i jak działa | FOTZ"
         description="Programmatic co to jest — wyjaśniamy, czym jest reklama programatyczna, jak działa RTB, DSP vs SSP, koszty, dane i różnica vs Google Ads i Facebook Ads."
         canonical="https://www.fotz-studio.pl/blog/programmatic-advertising-co-to"
 

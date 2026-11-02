@@ -42,7 +42,7 @@ export default function BlogTsconfigCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="tsconfig.json — konfiguracja TypeScript, strict mode, paths i project references?"
+        title="tsconfig.json — konfiguracja TypeScript, strict mode | FOTZ"
         description="6 kluczowych opcji tsconfig (strict/noUncheckedIndexedAccess/moduleResolution/verbatimModuleSyntax/paths/exactOptionalPropertyTypes) — Next.js, Vite i Node.js."
         canonical="https://www.fotz-studio.pl/blog/tsconfig-json-konfiguracja-typescript-strict-paths-project-references"
 

@@ -42,7 +42,7 @@ export default function BlogHonoFastifyCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Hono, Fastify, Express — Node.js backend frameworks 2024, co wybrać?"
+        title="Hono, Fastify, Express — Node.js backend frameworks | FOTZ"
         description="Hono (edge), Fastify (schema), Express 5, NestJS, Elysia (Bun) — porównanie Node.js frameworks, REST API best practices, kiedy co wybrać w 2024."
         canonical="https://www.fotz-studio.pl/blog/hono-fastify-express-nodejs-backend-frameworks-co-wybrac-2024"
 

@@ -103,7 +103,7 @@ export default function BlogBrandAmbassadorCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Brand Ambassador — co to jest i jak budować program ambasadorski?"
+        title="Brand Ambassador — co to jest? | FOTZ"
         description="Kompletny przewodnik po brand ambassador: 5 typów ambasadorów, 6-etapowy program, koszty i jak wybrać właściwą osobę."
         canonical="https://www.fotz-studio.pl/blog/brand-ambassador-co-to"
 

@@ -42,7 +42,7 @@ export default function BlogEmailResendCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Resend, SendGrid, Nodemailer — emaile transakcyjne w Next.js TypeScript?"
+        title="Resend, SendGrid, Nodemailer | FOTZ"
         description="6 serwisów email (Resend/SendGrid/Mailgun/Postmark/AWS SES/Nodemailer) — React Email, Server Actions, kolejkowanie BullMQ, rate limiting i RODO compliance."
         canonical="https://www.fotz-studio.pl/blog/resend-sendgrid-nodemailer-emaile-transakcyjne-nextjs-2024"
 

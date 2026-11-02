@@ -95,7 +95,7 @@ export default function BlogDataStorytellingCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Data Storytelling — co to jest? Opowiadanie historii z danych"
+        title="Data Storytelling — co to jest? | FOTZ"
         description="Kompletny przewodnik po data storytelling: trifecta danych-wizualizacji-narracji, dobór wykresów i 6-krokowy proces."
         canonical="https://www.fotz-studio.pl/blog/data-storytelling-co-to"
 

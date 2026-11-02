@@ -34,7 +34,7 @@ export default function BlogPakietyUslugAgencjiSocialMedia() {
   return (
     <Layout>
       <SEOHead
-        title="Pakiety usług agencji social media: co naprawdę jest w środku"
+        title="Pakiety usług agencji social media | FOTZ"
         description="Co naprawdę zawiera pakiet agencji social media? Rozbieramy START, WZROST i PARTNER: ceny netto, zakresy i pytania, które warto zadać przed umową."
         canonical={CANONICAL}
         keywords="pakiety agencji social media, pakiet social media, oferta agencji social media, cennik pakietów social media"

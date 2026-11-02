@@ -80,7 +80,7 @@ export default function BlogLeadNurturingCoTo() {
   return (
     <>
       <SEOHead
-        title="Lead Nurturing — co to jest? Pielęgnowanie leadów w B2B | FOTZ Studio"
+        title="Lead Nurturing — co to jest? | FOTZ"
         description="Czym jest lead nurturing, etapy lejka (TOFU/MOFU/BOFU), sekwencje emailowe, lead scoring, metryki i różnica vs lead generation."
         canonical="https://www.fotz-studio.pl/blog/lead-nurturing-co-to"
 

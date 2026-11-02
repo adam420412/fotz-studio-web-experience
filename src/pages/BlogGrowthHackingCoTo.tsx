@@ -81,7 +81,7 @@ export default function BlogGrowthHackingCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Growth Hacking — co to jest? Strategie wzrostu i AARRR framework"
+        title="Growth Hacking — co to jest? | FOTZ"
         description="Kompletny przewodnik po growth hackingu: AARRR framework, viral coefficient, 4 growth loops i jak budować kulturę eksperymentowania."
         canonical="https://www.fotz-studio.pl/blog/growth-hacking-co-to"
 

@@ -49,7 +49,7 @@ export default function BlogPwaCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Progressive Web App (PWA) — co to jest i jak wdrożyć? | Fotz.pl"
+        title="Progressive Web App (PWA) — co to jest i jak wdrożyć | FOTZ"
         description="PWA: Service Worker, Web App Manifest, offline support, push notifications, PWA vs natywna aplikacja, Workbox i jak mierzyć performance."
         canonical="https://www.fotz-studio.pl/blog/progressive-web-app-pwa-co-to-jest-jak-wdrozyz"
 

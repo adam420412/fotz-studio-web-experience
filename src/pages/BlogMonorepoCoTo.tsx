@@ -42,7 +42,7 @@ export default function BlogMonorepoCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Monorepo — co to jest, Nx, Turborepo, pnpm workspaces i Nx Cloud?"
+        title="Monorepo — co to jest? | FOTZ"
         description="Monorepo: zalety vs polyrepo, Nx vs Turborepo, pnpm workspaces, affected analysis, Remote Cache, DTE i jak skalować monorepo w dużej organizacji."
         canonical="https://www.fotz-studio.pl/blog/monorepo-co-to-jest-nx-turborepo-pnpm-workspaces-nx-cloud"
 

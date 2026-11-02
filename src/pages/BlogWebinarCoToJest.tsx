@@ -66,7 +66,7 @@ export default function BlogWebinarCoToJest() {
   return (
     <>
       <SEOHead
-        title="Webinar — co to jest? Jak zorganizowac i zarabiac | FOTZ Studio"
+        title="Webinar — co to jest? Jak zorganizowac i zarabiac | FOTZ"
         description="Webinar co to jest — wyjasnamy czym jest webinar, jak zorganizowac krok po kroku, platformy, monetyzacja i ile kosztuje organizacja webinaru."
         canonical="https://www.fotz-studio.pl/blog/webinar-co-to-jest"
 

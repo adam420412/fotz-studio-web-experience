@@ -65,7 +65,7 @@ export default function BlogICPCoTo() {
   return (
     <>
       <SEOHead
-        title="ICP — co to jest? Ideal Customer Profile — poradnik | FOTZ Studio"
+        title="ICP — co to jest? Ideal Customer Profile — poradnik | FOTZ"
         description="ICP co to jest — wyjaśniamy czym jest Ideal Customer Profile, jak stworzyć ICP, różnica ICP vs Buyer Persona i jak ICP wpływa na marketing i sprzedaż B2B."
         canonical="https://www.fotz-studio.pl/blog/icp-co-to-jest"
 

@@ -624,7 +624,7 @@ export default function Blog() {
       <OrganizationSchema />
       <Layout>
       <SEOHead
-        title="Blog Marketingowy — Artykuły o SEO, Google Ads i Social Media"
+        title="Blog marketingowy — SEO, Google Ads i social media"
         description="Blog marketingowy Fotz Studio — artykuły, poradniki i case studies o SEO, Google Ads, content marketingu, social media i tworzeniu stron. Praktyczna wiedza, która pomoże Ci rozwijać marketing Twojej firmy."
         ogType="article"
         canonical="https://www.fotz-studio.pl/blog"

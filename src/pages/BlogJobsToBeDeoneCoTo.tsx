@@ -85,7 +85,7 @@ export default function BlogJobsToBeDeoneCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Jobs-to-be-Done — co to jest? Framework JTBD w product management"
+        title="Jobs-to-be-Done — co to jest? | FOTZ"
         description="Kompletny przewodnik po JTBD: teoria Claytona Christensena, 3 typy jobów, switch interviews i przykłady zastosowania w product management."
         canonical="https://www.fotz-studio.pl/blog/jobs-to-be-done-co-to"
 

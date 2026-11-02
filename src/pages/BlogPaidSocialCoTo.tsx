@@ -90,7 +90,7 @@ export default function BlogPaidSocialCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Paid Social — co to jest i jak prowadzić reklamy w Social Media?"
+        title="Paid Social — co to jest? | FOTZ"
         description="Kompletny przewodnik po paid social: porównanie platform (Meta vs LinkedIn vs TikTok), formaty, metryki i strategie targetowania."
         canonical="https://www.fotz-studio.pl/blog/paid-social-co-to"
 

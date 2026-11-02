@@ -42,8 +42,8 @@ export default function BlogHtmxCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="HTMX — hypermedia, hx-get, hx-swap, OOB swaps i HTMX vs React 2024?"
-        description="6 aspektów HTMX vs React (bundle/data format/state/build/interaktywność/kiedy) — hx-atrybuty, OOB swaps, SSE real-time, Alpine.js i server-side templates (Node/Go/Python)."
+        title="HTMX — hypermedia, hx-get, hx-swap | FOTZ"
+        description="HTMX vs React: hx-get, hx-swap, OOB swaps, SSE i Alpine.js — kiedy hypermedia wystarczy, a kiedy potrzebny jest framework JS."
         canonical="https://www.fotz-studio.pl/blog/htmx-hypermedia-hx-get-swap-oob-sse-alpine-js-vs-react-2024"
 
         keywords="HTMX co to jest, HTMX jak działa, HTMX tutorial, HTMX przykład, czym jest HTMX, HTMX dokumentacja, HTMX przewodnik"

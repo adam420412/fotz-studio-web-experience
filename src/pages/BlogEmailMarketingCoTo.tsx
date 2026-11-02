@@ -99,7 +99,7 @@ export default function BlogEmailMarketingCoTo() {
   return (
     <>
       <SEOHead
-        title="Email Marketing — co to jest i jak prowadzić skuteczne kampanie?"
+        title="Email Marketing — co to jest? | FOTZ"
         description="Email marketing co to jest — wyjaśniamy czym jest marketing emailowy, typy emaili, narzędzia, metryki (open rate, CTR), jak budować listę i przestrzegać RODO."
         canonical="https://www.fotz-studio.pl/blog/email-marketing-co-to"
 

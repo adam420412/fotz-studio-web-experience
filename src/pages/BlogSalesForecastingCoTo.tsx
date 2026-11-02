@@ -90,7 +90,7 @@ export default function BlogSalesForecastingCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Sales Forecasting — co to jest? Prognozowanie sprzedaży i metody"
+        title="Sales Forecasting — co to jest? | FOTZ"
         description="Sales Forecasting — definicja, 4 metody prognozowania, pipeline metrics (Win Rate, Coverage), kategorie (Commit/Best Case) i jak poprawić dokładność prognoz."
         canonical="https://www.fotz-studio.pl/blog/sales-forecasting-prognozowanie-sprzedazy"
 

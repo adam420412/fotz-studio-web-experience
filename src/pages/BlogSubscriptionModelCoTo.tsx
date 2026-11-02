@@ -91,7 +91,7 @@ export default function BlogSubscriptionModelCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Model Subskrypcyjny — co to jest? Subscription model MRR i churn"
+        title="Model Subskrypcyjny — co to jest? | FOTZ"
         description="Kompletny przewodnik po modelu subskrypcyjnym: 5 typów, składniki MRR (New, Expansion, Churned), benchmarki churn i strategie retencji."
         canonical="https://www.fotz-studio.pl/blog/subscription-model-co-to"
 

@@ -61,7 +61,7 @@ export default function BlogCrawlBudgetCoTo() {
   return (
     <>
       <SEOHead
-        title="Crawl Budget — co to jest i jak optymalizować dla SEO? | FOTZ Studio"
+        title="Crawl Budget — co to jest i jak optymalizować dla SEO | FOTZ"
         description="Crawl Budget co to jest — wyjaśniamy czym jest budżet crawlowania Google, jak go sprawdzić, co marnuje crawl budget i jak optymalizować duże strony."
         canonical="https://www.fotz-studio.pl/blog/crawl-budget-co-to"
 

@@ -94,7 +94,7 @@ export default function BlogStakeholderManagementCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Stakeholder Management — co to jest? Zarządzanie interesariuszami"
+        title="Stakeholder Management — co to jest? | FOTZ"
         description="Stakeholder management — definicja, macierz Power/Interest, 6 kroków mapowania, plan komunikacji i strategie dla trudnych interesariuszy. Kompletny przewodnik."
         canonical="https://www.fotz-studio.pl/blog/stakeholder-management-co-to"
 

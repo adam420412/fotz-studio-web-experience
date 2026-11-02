@@ -42,7 +42,7 @@ export default function BlogTanstackQueryCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="TanStack Query (React Query) — co to jest, cache, useMutation, Next.js SSR?"
+        title="TanStack Query (React Query) — co to jest? | FOTZ"
         description="TanStack Query: queryKey, staleTime, gcTime, useMutation, optimistic updates, infinite query, Next.js SSR hydration i DevTools."
         canonical="https://www.fotz-studio.pl/blog/tanstack-query-react-query-co-to-jest-cache-usemutation-nextjs-ssr"
 

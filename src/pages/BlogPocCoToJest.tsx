@@ -89,7 +89,7 @@ export default function BlogPocCoToJest() {
   return (
     <Layout>
       <SEOHead
-        title="POC (Proof of Concept) — co to jest w sprzedaży B2B? | Fotz.pl"
+        title="POC (Proof of Concept) — co to jest w sprzedaży B2B | FOTZ"
         description="POC w sprzedaży B2B — czym różni się od pilota i triala, jak zarządzać POC, success criteria i timeline. Kompletny przewodnik dla handlowców enterprise."
         canonical="https://www.fotz-studio.pl/blog/poc-proof-of-concept-sprzedaz-b2b"
 

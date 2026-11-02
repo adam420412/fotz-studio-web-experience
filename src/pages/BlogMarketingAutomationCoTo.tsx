@@ -66,7 +66,7 @@ export default function BlogMarketingAutomationCoTo() {
   return (
     <>
       <SEOHead
-        title="Marketing Automation — co to jest i jak wdrożyć? | FOTZ Studio"
+        title="Marketing Automation — co to jest i jak wdrożyć | FOTZ"
         description="Marketing Automation co to jest — wyjaśniamy czym jest automatyzacja marketingu, narzędzia (Klaviyo, ActiveCampaign), lead scoring i jak wdrożyć automation."
         canonical="https://www.fotz-studio.pl/blog/marketing-automation-co-to"
 

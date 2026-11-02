@@ -93,7 +93,7 @@ export default function BlogNativeAdvertisingCoTo() {
   return (
     <>
       <SEOHead
-        title="Native Advertising — co to jest? Reklama natywna w marketingu"
+        title="Native Advertising — co to jest? | FOTZ"
         description="Native advertising co to jest — wyjaśniamy czym jest reklama natywna, formaty, platformy, koszty, różnica vs display i content marketing oraz wymogi prawne."
         canonical="https://www.fotz-studio.pl/blog/native-advertising-co-to"
 

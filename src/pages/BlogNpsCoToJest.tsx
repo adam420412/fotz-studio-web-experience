@@ -69,7 +69,7 @@ export default function BlogNpsCoToJest() {
   return (
     <Layout>
       <SEOHead
-        title="NPS (Net Promoter Score) — co to jest i jak mierzyć? | Fotz.pl"
+        title="NPS (Net Promoter Score) — co to jest i jak mierzyć | FOTZ"
         description="Net Promoter Score — jak obliczać NPS, interpretować wyniki, benchmarki branżowe i jak zwiększyć NPS. Kompletny przewodnik po metryce lojalności klientów."
         canonical="https://www.fotz-studio.pl/blog/nps-net-promoter-score-co-to-jest"
 

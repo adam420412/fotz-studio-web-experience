@@ -99,7 +99,7 @@ export default function BlogQbrCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="QBR — co to jest? Quarterly Business Review w Customer Success"
+        title="QBR — co to jest? Quarterly Business Review | FOTZ"
         description="Kompletny przewodnik po QBR: agenda 7 sekcji, metryki do pokazania, 5 błędów i jak odróżnić QBR od status calla."
         canonical="https://www.fotz-studio.pl/blog/qbr-co-to"
 

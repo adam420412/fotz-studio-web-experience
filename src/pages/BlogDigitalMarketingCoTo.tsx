@@ -66,7 +66,7 @@ export default function BlogDigitalMarketingCoTo() {
   return (
     <>
       <SEOHead
-        title="Digital marketing — co to jest i jakie kanały obejmuje? | FOTZ Studio"
+        title="Digital marketing — co to jest? | FOTZ"
         description="Digital marketing co to jest — wyjaśniamy czym jest marketing cyfrowy, jakie kanały obejmuje (SEO, Google Ads, social media) i od czego zacząć w firmie."
         canonical="https://www.fotz-studio.pl/blog/digital-marketing-co-to"
 

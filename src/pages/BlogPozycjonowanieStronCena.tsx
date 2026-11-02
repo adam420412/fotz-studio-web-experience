@@ -85,7 +85,7 @@ export default function BlogPozycjonowanieStronCena() {
   return (
     <>
       <SEOHead
-        title="Pozycjonowanie stron cena 2025 — ile kosztuje SEO? | FOTZ Studio"
+        title="Pozycjonowanie stron cena — ile kosztuje SEO | FOTZ"
         description="Pozycjonowanie stron cena — ile kosztuje SEO w Polsce w 2025 roku. Modele rozliczeń, co wpływa na cenę, ile zapłacisz za efekty. Realne stawki agencji SEO."
         canonical="https://www.fotz-studio.pl/blog/pozycjonowanie-stron-cena"
         keywords="pozycjonowanie stron cena, ile kosztuje pozycjonowanie, cena pozycjonowania stron, pozycjonowanie cennik 2025, seo cena miesięcznie, pozycjonowanie stron cennik agencja, koszt pozycjonowania"

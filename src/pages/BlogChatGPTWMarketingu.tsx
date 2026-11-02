@@ -37,7 +37,7 @@ export default function BlogChatGPTWMarketingu() {
   return (
     <>
       <SEOHead
-        title="ChatGPT w marketingu - Jak AI zmienia strategię marketingową 2025"
+        title="ChatGPT w marketingu — jak AI zmienia strategię | FOTZ"
         description="Odkryj jak ChatGPT i AI zmieniają marketing. Praktyczne porady na temat prompt engineeringu, tworzenia treści, copywritingu i narzędzi AI dla marketerów."
         canonical="https://www.fotz-studio.pl/blog/chatgpt-w-marketingu"
 

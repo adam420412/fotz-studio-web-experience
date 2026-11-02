@@ -87,7 +87,7 @@ export default function BlogSprintRetrospectiveCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Sprint Retrospective — co to jest? Retrospektywa w Scrum i Agile"
+        title="Sprint Retrospective — co to jest? | FOTZ"
         description="Kompletny przewodnik po sprint retrospective: 4 popularne formaty, agenda 7 kroków, błędy i różnica vs. sprint review."
         canonical="https://www.fotz-studio.pl/blog/sprint-retrospective-co-to"
 

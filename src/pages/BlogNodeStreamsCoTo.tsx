@@ -42,8 +42,8 @@ export default function BlogNodeStreamsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Node.js Streams — Readable, Writable, Transform, pipeline i Web Streams API 2024?"
-        description="6 typów streamów (Readable/Writable/Duplex/Transform/Web ReadableStream/PassThrough) — pipeline, backpressure, HTTP streaming, SSE i Next.js App Router streaming."
+        title="Node.js Streams — Readable, Writable, Transform | FOTZ"
+        description="6 typów streamów: Readable, Writable, Transform, Web Streams — pipeline, backpressure, HTTP streaming i SSE w Next.js."
         canonical="https://www.fotz-studio.pl/blog/nodejs-streams-readable-writable-transform-pipeline-web-streams-2024"
 
         keywords="Node.js Streams co to jest, Node.js Streams jak działa, Node.js Streams tutorial, Node.js Streams przykład, czym jest Node.js Streams, Node.js Streams dokumentacja, Node.js Streams przewodnik"

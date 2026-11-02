@@ -50,7 +50,7 @@ export default function BlogChurnPredictionCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Churn Prediction — jak przewidywać i zapobiegać churnu klientów SaaS?"
+        title="Churn prediction — jak przewidywać churn w SaaS | FOTZ"
         description="Churn Prediction: budowanie modelu ML, sygnały churnu (usage drop, NPS Detractor, champion loss), playbooks interwencji i metryki skuteczności dla firm SaaS."
         canonical="https://www.fotz-studio.pl/blog/churn-prediction-jak-przewidywac-zapobiegac-churnu"
 

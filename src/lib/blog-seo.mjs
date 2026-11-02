@@ -2,6 +2,7 @@ import { getOwnPhoto, ownPhotoHtml, ownPhotoSchema } from './own-photos.mjs';
 /** Shared by the CMS article view and the static SEO build. */
 import { migratedBlogPaths, repairedSourceLinks } from './reviewed-blog-links.mjs';
 import { reviewedBlogCopy } from './reviewed-blog-copy.mjs';
+import { reviewedBlogTitles } from './reviewed-blog-titles.mjs';
 import sanitizeHtml from 'sanitize-html';
 
 export const SITE_ORIGIN = 'https://www.fotz-studio.pl';
@@ -48,11 +49,21 @@ export function normalizeSchemaUrls(input) {
   return value;
 }
 
+// SERP limits: title ~60 chars (" | FOTZ" suffix = 7), description ~160 chars.
+// Overrides keep long CMS titles search-friendly without touching the H1.
+function truncateDescription(text, max = 160) {
+  if (text.length <= max) return text;
+  const cut = text.slice(0, max - 1);
+  const lastSpace = cut.lastIndexOf(' ');
+  return `${lastSpace > max * 0.6 ? cut.slice(0, lastSpace) : cut}…`;
+}
+
 export function getBlogMetadata(article) {
   const raw = article.meta_description?.trim() || article.excerpt?.trim() || article.title;
+  const title = reviewedBlogTitles[article.slug] || article.title;
   return {
-    title: `${article.title} | Blog FOTZ`,
-    description: raw,
+    title: `${title} | FOTZ`,
+    description: truncateDescription(raw),
     canonical: `${SITE_ORIGIN}/blog/${article.slug}`,
     ogImage: `${SITE_ORIGIN}${getOwnPhoto(`${article.slug} ${article.title || ''}`).src}`,
     ogType: 'article',

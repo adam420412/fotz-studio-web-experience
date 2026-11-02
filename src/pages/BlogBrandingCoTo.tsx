@@ -69,8 +69,8 @@ export default function BlogBrandingCoTo() {
   return (
     <>
       <SEOHead
-        title="Branding — co to jest i dlaczego marka ma znaczenie? | FOTZ Studio"
-        description="Branding co to jest — wyjaśniamy, czym jest branding, jakie elementy budują markę, ile kosztuje i dlaczego nawet małe firmy potrzebują spójnej tożsamości wizualnej i komunikacyjnej."
+        title="Branding — co to jest i dlaczego marka ma znaczenie | FOTZ"
+        description="Branding — co to jest? Elementy budowy marki, koszty i dlaczego nawet małe firmy potrzebują spójnej tożsamości wizualnej i komunikacji."
         canonical="https://www.fotz-studio.pl/blog/branding-co-to"
 
         keywords="Branding co to jest, Branding definicja, czym jest Branding, Branding w marketingu, Branding przykłady, jak działa Branding, Branding strategia"

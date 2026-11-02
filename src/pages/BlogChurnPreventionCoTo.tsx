@@ -49,7 +49,7 @@ export default function BlogChurnPreventionCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Churn Prevention — jak zapobiegać odejściom klientów? | Fotz.pl"
+        title="Churn Prevention — jak zapobiegać odejściom klientów | FOTZ"
         description="Churn Prevention w SaaS — przyczyny churnu, Early Warning System, retention playbook i kluczowe metryki (NRR, GRR). Kompletny przewodnik dla Customer Success."
         canonical="https://www.fotz-studio.pl/blog/churn-prevention-zapobieganie-odejsciom-klientow"
 

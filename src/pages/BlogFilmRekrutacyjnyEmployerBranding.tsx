@@ -44,7 +44,7 @@ export default function BlogFilmRekrutacyjnyEmployerBranding() {
   return (
     <Layout>
       <SEOHead
-        title="Film rekrutacyjny: jak przyciągnąć kandydatów, którzy sami się zgłoszą"
+        title="Film rekrutacyjny — jak przyciągnąć kandydatów | FOTZ"
         description="Tekstowe ogłoszenie już nie przyciąga dobrych kandydatów. Pokazujemy, jak film rekrutacyjny wspiera employer branding i ile kosztuje taka produkcja wideo."
         canonical={CANONICAL}
         keywords="film rekrutacyjny, employer branding, produkcja video, film rekrutacyjny koszt, wideo rekrutacyjne, video employer branding"

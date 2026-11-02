@@ -175,7 +175,7 @@ export default function BlogLinkedInDlaFirmy() {
   return (
     <>
       <SEOHead
-        title="LinkedIn dla firmy — jak budować markę i generować leady? 2025"
+        title="LinkedIn dla firmy — marka i generowanie leadów | FOTZ"
         description="LinkedIn dla firmy — kompletny poradnik: optymalizacja profilu, strategie treści, LinkedIn Ads, generowanie leadów B2B. Praktyczne porady dla agencji i SaaS."
         canonical="https://www.fotz-studio.pl/blog/linkedin-dla-firmy"
 

@@ -34,7 +34,7 @@ export default function BlogTiktokDlaFirmB2B() {
   return (
     <Layout>
       <SEOHead
-        title="TikTok dla firmy B2B: od czego zacząć, żeby nie spalić budżetu"
+        title="TikTok dla firmy B2B — od czego zacząć | FOTZ"
         description="TikTok dla firmy B2B to nie tańce, tylko system: strategia, serie i dni zdjęciowe. Sprawdź, od czego zacząć i ile to kosztuje, zanim wydasz budżet."
         canonical={CANONICAL}
         keywords="tiktok dla firm b2b, tiktok b2b, tiktok dla firmy, agencja tiktok, produkcja rolek b2b"

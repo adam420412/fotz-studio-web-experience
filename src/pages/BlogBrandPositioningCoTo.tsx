@@ -99,7 +99,7 @@ export default function BlogBrandPositioningCoTo() {
   return (
     <>
       <SEOHead
-        title="Brand Positioning — co to jest? Pozycjonowanie marki | FOTZ Studio"
+        title="Brand Positioning — co to jest? Pozycjonowanie marki | FOTZ"
         description="Czym jest brand positioning, strategie pozycjonowania, perceptual map, positioning statement, różnica vs brand identity i kiedy robić repositioning."
         canonical="https://www.fotz-studio.pl/blog/brand-positioning-co-to"
 

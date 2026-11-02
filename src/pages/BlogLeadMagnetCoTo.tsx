@@ -66,7 +66,7 @@ export default function BlogLeadMagnetCoTo() {
   return (
     <>
       <SEOHead
-        title="Lead magnet — co to jest i jak stworzyć skuteczny? | FOTZ Studio"
+        title="Lead magnet — co to jest i jak stworzyć skuteczny | FOTZ"
         description="Lead magnet co to jest — wyjaśniamy jak działa magnes na leady, rodzaje lead magnetów, jak je tworzyć i promować oraz jakie narzędzia używać."
         canonical="https://www.fotz-studio.pl/blog/lead-magnet-co-to"
 

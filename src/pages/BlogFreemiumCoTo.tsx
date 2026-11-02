@@ -64,7 +64,7 @@ export default function BlogFreemiumCoTo() {
   return (
     <>
       <SEOHead
-        title="Freemium — co to jest i kiedy ten model działa? | FOTZ Studio"
+        title="Freemium — co to jest i kiedy ten model działa | FOTZ"
         description="Freemium co to jest — wyjaśniamy, czym jest model freemium, różnica vs free trial, kiedy freemium działa, konwersja free-to-paid i jak zaprojektować paywall."
         canonical="https://www.fotz-studio.pl/blog/freemium-co-to"
 

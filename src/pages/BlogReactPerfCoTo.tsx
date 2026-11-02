@@ -42,7 +42,7 @@ export default function BlogReactPerfCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="React Performance — React Scan, Million.js, Bundle Analyzer i Code Splitting 2024?"
+        title="React Performance — React Scan, Million.js | FOTZ"
         description="6 narzędzi performance (React Scan/DevTools Profiler/WDYR/Million.js/Rollup Visualizer/React Compiler) — re-render debugging, bundle analysis i code splitting."
         canonical="https://www.fotz-studio.pl/blog/react-performance-scan-million-bundle-analyzer-code-splitting-2024"
 

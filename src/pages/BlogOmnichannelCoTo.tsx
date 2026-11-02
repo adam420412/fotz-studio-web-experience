@@ -64,8 +64,8 @@ export default function BlogOmnichannelCoTo() {
   return (
     <>
       <SEOHead
-        title="Omnichannel — co to jest i jak wdrożyć strategię? | FOTZ Studio"
-        description="Omnichannel co to jest — wyjaśniamy, czym jest strategia omnichannel, różnica omnichannel vs multichannel, przykłady z Polski, korzyści i jak wdrożyć omnichannel."
+        title="Omnichannel — co to jest i jak wdrożyć strategię | FOTZ"
+        description="Omnichannel — co to jest? Różnica omnichannel vs multichannel, przykłady z Polski, korzyści i jak wdrożyć tę strategię."
         canonical="https://www.fotz-studio.pl/blog/omnichannel-co-to"
 
         keywords="Omnichannel co to jest, Omnichannel definicja, czym jest Omnichannel, Omnichannel przykłady, jak działa Omnichannel, Omnichannel znaczenie, Omnichannel przewodnik"

@@ -109,7 +109,7 @@ export default function BlogMarketingMixCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Marketing Mix — co to jest? 4P i 7P w strategii marketingowej"
+        title="Marketing Mix — co to jest? | FOTZ"
         description="Kompletny przewodnik po marketing mix: model 4P i 7P, kluczowe pytania dla każdego P, przykłady i nowoczesne alternatywy."
         canonical="https://www.fotz-studio.pl/blog/marketing-mix-co-to"
 

@@ -42,7 +42,7 @@ export default function BlogCloudflareWorkersCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Cloudflare Workers — KV, D1, R2, Durable Objects i Workers AI na edge 2024?"
+        title="Cloudflare Workers — KV, D1, R2 | FOTZ"
         description="6 produktów Cloudflare (Workers/KV/D1/R2/Durable Objects/Workers AI) — V8 isolates, SQLite na edge, S3 bez egress, stateful WebSockets i AI inference na GPU."
         canonical="https://www.fotz-studio.pl/blog/cloudflare-workers-kv-d1-r2-durable-objects-workers-ai-edge-2024"
 

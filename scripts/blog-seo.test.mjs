@@ -60,7 +60,12 @@ test('uses identical CMS metadata for the client and prerender while excluding t
   assert.match(meta.ogImage, /^https:\/\/www\.fotz-studio\.pl\/work\//);
   assert.equal(meta.ogType, 'article');
   const description = 'A'.repeat(180);
-  assert.equal(getBlogMetadata({ slug: 'poradnik', title: 'Poradnik', excerpt: description }).description, description);
+  const truncated = getBlogMetadata({ slug: 'poradnik', title: 'Poradnik', excerpt: description }).description;
+  assert.ok(truncated.length <= 160 && truncated.endsWith('…'), 'description over 160 chars is truncated with an ellipsis');
+  const wordy = getBlogMetadata({ slug: 'poradnik', title: 'Poradnik', excerpt: `Opis ${'słowo '.repeat(40)}koniec` }).description;
+  assert.ok(wordy.length <= 160 && wordy.endsWith('…') && !wordy.endsWith(' …'), 'truncation cuts at a word boundary');
+  assert.equal(getBlogMetadata({ slug: 'krotki', title: 'Krótki', excerpt: 'Zwięzły opis artykułu.' }).description, 'Zwięzły opis artykułu.');
+  assert.equal(getBlogMetadata({ slug: 'test-artykul', title: 'Test artykuł', excerpt: 'Krótki opis testowy.' }).title, 'Test artykuł | FOTZ');
 });
 
 test('CMS body preserves content and links without duplicating H1 or promoted JSON-LD', () => {

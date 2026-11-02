@@ -42,8 +42,8 @@ export default function BlogReactErrorHandlingCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Error handling w React — Error Boundary, Sentry, TanStack Query i Next.js error.tsx 2024?"
-        description="6 wzorców error handling (Error Boundary/react-error-boundary/try-catch/Result pattern/TanStack Query/Sentry) — async errors, typed errors, Next.js App Router i monitoring."
+        title="Error handling w React — Error Boundary, Sentry | FOTZ"
+        description="6 wzorców error handling: Error Boundary, try-catch, Result pattern, TanStack Query, Sentry — async errors i monitoring."
         canonical="https://www.fotz-studio.pl/blog/react-error-handling-error-boundary-sentry-tanstack-query-nextjs-2024"
 
         keywords="Error handling w React co to jest, Error handling w React jak działa, Error handling w React tutorial, Error handling w React przykład, czym jest Error handling w React, Error handling w React dokumentacja, Error handling w React przewodnik"

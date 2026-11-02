@@ -42,7 +42,7 @@ export default function BlogReactRouter7CoTo() {
   return (
     <Layout>
       <SEOHead
-        title="React Router 7 — Framework Mode, loaders, actions, typegen i vs Next.js 2024?"
+        title="React Router 7 — Framework Mode, loaders, actions | FOTZ"
         description="React Router 7 i Framework Mode: file-based routing, loaders, actions, SSR, typegen, pending states, optimistic UI i porównanie z Next.js/TanStack Start/Astro."
         canonical="https://www.fotz-studio.pl/blog/react-router-7-framework-mode-loaders-actions-typegen-vs-nextjs-2024"
 

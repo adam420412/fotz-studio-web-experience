@@ -42,7 +42,7 @@ export default function BlogAiImageGenCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="AI generowanie obrazów — DALL-E 3, Replicate, FAL.ai, Flux i Stable Diffusion TypeScript 2024?"
+        title="AI generowanie obrazów — DALL-E 3, Replicate, FAL.ai | FOTZ"
         description="6 API do generowania obrazów AI (DALL-E 3/SDXL/Flux/Replicate/Midjourney/Ideogram) — prompt engineering, Next.js integration, storage (Vercel Blob/R2) i koszty."
         canonical="https://www.fotz-studio.pl/blog/ai-generowanie-obrazow-dalle-replicate-fal-flux-stable-diffusion-typescript-2024"
 

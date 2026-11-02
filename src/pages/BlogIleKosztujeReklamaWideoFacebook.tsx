@@ -40,7 +40,7 @@ export default function BlogIleKosztujeReklamaWideoFacebook() {
     <Layout>
       <SEOHead
         title="Ile kosztuje reklama wideo na Facebooku i Instagramie"
-        description="Ile kosztuje reklama wideo na Facebooku i Instagramie? Rozkładamy dwa koszty: produkcję filmu (od 1 900 zł) i budżet mediowy Meta. Sprawdź, ile realnie potrzebujesz."
+        description="Ile kosztuje reklama wideo na Facebooku i Instagramie? Produkcja od 1 900 zł plus budżet Meta. Sprawdź, ile realnie potrzebujesz."
         canonical={CANONICAL}
         keywords="reklama wideo facebook, reklama wideo instagram, koszt reklamy wideo, budżet mediowy Meta, produkcja video cennik, kampania Meta koszt"
       />

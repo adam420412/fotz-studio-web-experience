@@ -42,7 +42,7 @@ export default function BlogReactHookFormCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="React Hook Form + Zod — walidacja formularzy TypeScript 2024?"
+        title="React Hook Form + Zod | FOTZ"
         description="6 bibliotek formularzy (RHF/Formik/TanStack Form/Zod/Valibot/TypeBox) — zodResolver, useFieldArray, Server Actions validation, type inference i performance."
         canonical="https://www.fotz-studio.pl/blog/react-hook-form-zod-walidacja-formularzy-typescript-nextjs-2024"
 

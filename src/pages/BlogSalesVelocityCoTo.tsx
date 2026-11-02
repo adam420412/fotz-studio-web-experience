@@ -78,7 +78,7 @@ export default function BlogSalesVelocityCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Sales Velocity — co to jest i jak zwiększyć prędkość sprzedaży?"
+        title="Sales Velocity — co to jest? | FOTZ"
         description="Kompletny przewodnik po sales velocity: formuła N×V×W/L, 4 dźwignie wzrostu (opportunities, ACV, win rate, cykl sprzedaży) i benchmarki SaaS."
         canonical="https://www.fotz-studio.pl/blog/sales-velocity-co-to"
 

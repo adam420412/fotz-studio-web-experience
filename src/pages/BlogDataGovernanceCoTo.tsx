@@ -49,7 +49,7 @@ export default function BlogDataGovernanceCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Data Governance — co to jest i jak wdrożyć ład danych? | Fotz.pl"
+        title="Data Governance — co to jest i jak wdrożyć ład danych | FOTZ"
         description="Data Governance: komponenty (Data Catalog, Lineage, Quality, Access Control), role (CDO, Data Steward), poziomy dojrzałości i związek z GDPR compliance."
         canonical="https://www.fotz-studio.pl/blog/data-governance-co-to-jest-jak-wdrozyz-lad-danych"
 

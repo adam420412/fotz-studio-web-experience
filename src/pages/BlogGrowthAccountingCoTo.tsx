@@ -75,7 +75,7 @@ export default function BlogGrowthAccountingCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Growth Accounting — co to jest i jak analizować wzrost? | Fotz.pl"
+        title="Growth Accounting — co to jest? | FOTZ"
         description="Growth Accounting: framework do analizy wzrostu na 4 składowe (New, Retained, Resurrected, Churned). Quick Ratio, leaky bucket i jak wdrożyć w SaaS."
         canonical="https://www.fotz-studio.pl/blog/growth-accounting-analiza-wzrostu-uzytkownikow"
 

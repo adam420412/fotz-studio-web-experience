@@ -86,7 +86,7 @@ export default function BlogViralMarketingCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Viral Marketing — co to jest i jak działa? Kompletny przewodnik"
+        title="Viral Marketing — co to jest? | FOTZ"
         description="Viral marketing — definicja, mechanizmy viralowości, formaty kampanii i przykłady. Dowiedz się jak tworzyć treści, które użytkownicy chcą udostępniać."
         canonical="https://www.fotz-studio.pl/blog/viral-marketing-co-to"
 

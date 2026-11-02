@@ -33,7 +33,7 @@ const BlogBriefMarketingowy = () => {
   return (
     <>
       <SEOHead
-        title="Brief Marketingowy — Jak Napisać Brief? Wzór i Checklista [2025]"
+        title="Brief marketingowy — jak napisać? Wzór i checklista | FOTZ"
         description="Jak napisać brief marketingowy? Wzór i checklista 2025. Brief strony internetowej, kampanii i identyfikacji wizualnej — praktyczny poradnik Fotz Studio."
         ogType="article"
         canonical="https://www.fotz-studio.pl/blog/jak-napisac-brief-marketingowy"

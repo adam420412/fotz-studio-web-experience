@@ -81,7 +81,7 @@ export default function BlogDesignSystemCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Design System — co to jest? Czym jest system projektowania UI"
+        title="Design System — co to jest? | FOTZ"
         description="Kompletny przewodnik po design systemach: 4 warstwy, narzędzia (Figma, Storybook, Style Dictionary), korzyści i jak zacząć budowę."
         canonical="https://www.fotz-studio.pl/blog/design-system-co-to"
 

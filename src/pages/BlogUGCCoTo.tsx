@@ -69,7 +69,7 @@ export default function BlogUGCCoTo() {
   return (
     <>
       <SEOHead
-        title="UGC — co to jest? User Generated Content w marketingu | FOTZ Studio"
+        title="UGC — co to jest? User Generated Content w marketingu | FOTZ"
         description="UGC co to jest — wyjaśniamy czym jest User Generated Content, typy UGC, jak zbierać opinie i zdjęcia od klientów i jak mierzyć ROI z treści użytkowników."
         canonical="https://www.fotz-studio.pl/blog/ugc-co-to"
 

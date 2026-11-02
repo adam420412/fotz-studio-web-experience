@@ -73,7 +73,7 @@ export default function BlogGoogleTagManager() {
   return (
     <>
       <SEOHead
-        title="Google Tag Manager — co to jest i jak działa? Poradnik | FOTZ Studio"
+        title="Google Tag Manager — co to jest? | FOTZ"
         description="Google Tag Manager co to jest — wyjaśniamy jak działa GTM, jak dodawać tagi bez programisty, różnica między GTM a GA4 i jak skonfigurować na WordPress."
         canonical="https://www.fotz-studio.pl/blog/google-tag-manager-co-to"
 

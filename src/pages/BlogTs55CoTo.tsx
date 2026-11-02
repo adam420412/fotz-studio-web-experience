@@ -42,8 +42,8 @@ export default function BlogTs55CoTo() {
   return (
     <Layout>
       <SEOHead
-        title="TypeScript 5.5, 5.6 — Inferred Predicates, using, Isolated Declarations 2024?"
-        description="TypeScript 5.5/5.6 nowości: Inferred Type Predicates, using/await using (Symbol.dispose), Isolated Declarations, verbatimModuleSyntax, const type params i narzędzia ts-reset/type-fest."
+        title="TypeScript 5.5, 5.6 — Inferred Predicates, using | FOTZ"
+        description="TypeScript 5.5/5.6: Inferred Type Predicates, using, Isolated Declarations, verbatimModuleSyntax i narzędzia ts-reset/type-fest."
         canonical="https://www.fotz-studio.pl/blog/typescript-5-5-5-6-inferred-predicates-using-isolated-declarations-2024"
 
         keywords="TypeScript 5.5, 5.6 co to jest, TypeScript 5.5, 5.6 jak działa, TypeScript 5.5, 5.6 tutorial, TypeScript 5.5, 5.6 przykład, czym jest TypeScript 5.5, 5.6, TypeScript 5.5, 5.6 dokumentacja, TypeScript 5.5, 5.6 przewodnik"

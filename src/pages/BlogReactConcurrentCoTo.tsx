@@ -42,7 +42,7 @@ export default function BlogReactConcurrentCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="React Concurrent — Suspense, useTransition, useDeferredValue i React 19 hooks 2024?"
+        title="React Concurrent — Suspense, useTransition | FOTZ"
         description="6 Concurrent React features (Suspense/useTransition/useDeferredValue/batching/use()/useOptimistic) — React Fiber, priorytety, streaming SSR i React 19 hooks."
         canonical="https://www.fotz-studio.pl/blog/react-concurrent-suspense-usetransition-usedeferredvalue-react-19-hooks-2024"
 

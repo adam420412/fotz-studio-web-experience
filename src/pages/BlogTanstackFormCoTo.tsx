@@ -43,7 +43,7 @@ export default function BlogTanstackFormCoTo() {
     <Layout>
       <SEOHead
         title="TanStack Form vs React Hook Form | Fotz Studio"
-        description="6 bibliotek formularzy (TanStack Form/RHF/Server Actions/Zod/Formik/useOptimistic) — type-safe walidacja, array fields, Next.js Server Actions i progressive enhancement."
+        description="6 bibliotek formularzy: TanStack Form, React Hook Form, Server Actions, Zod — type-safe walidacja i progressive enhancement."
         canonical="https://www.fotz-studio.pl/blog/tanstack-form-react-hook-form-server-actions-formularze-nextjs-2024"
 
         keywords="TanStack Form vs React Hook Form co to jest, TanStack Form vs React Hook Form jak działa, TanStack Form vs React Hook Form tutorial, TanStack Form vs React Hook Form przykład, czym jest TanStack Form vs React Hook Form, TanStack Form vs React Hook Form dokumentacja, TanStack Form vs React Hook Form przewodnik"

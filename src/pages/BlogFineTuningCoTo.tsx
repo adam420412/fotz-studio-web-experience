@@ -77,7 +77,7 @@ export default function BlogFineTuningCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Fine-Tuning LLM — co to jest i jak dostroić model AI? | Fotz.pl"
+        title="Fine-Tuning LLM — co to jest i jak dostroić model AI | FOTZ"
         description="Fine-Tuning LLM: techniki (LoRA, QLoRA, RLHF), przygotowanie datasetu, porównanie z RAG, platformy (OpenAI, Hugging Face) i kiedy fine-tuning się opłaca."
         canonical="https://www.fotz-studio.pl/blog/fine-tuning-llm-co-to-jest-jak-dostroic-model-ai"
 
