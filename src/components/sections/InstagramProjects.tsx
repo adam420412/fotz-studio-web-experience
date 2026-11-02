@@ -11,12 +11,12 @@ import { trackConversion } from '@/lib/conversions';
 
 type Project = (typeof instagramProjects)[number];
 
-function ProjectCard({ project, single, compact }: { project: Project; single: boolean; compact: boolean }) {
+function ProjectCard({ project, single, compact, industry }: { project: Project; single: boolean; compact: boolean; industry?: string }) {
   const variants = images[project.id as keyof typeof images];
   const cover = variants.at(-1)!;
   const video = videos[project.id as keyof typeof videos];
   const landscape = video.width > video.height;
-  const enquiryUrl = portfolioEnquiryHref(project.id);
+  const enquiryUrl = portfolioEnquiryHref(project.id, industry);
 
   return <article className={`min-w-0 snap-start overflow-hidden rounded-2xl border border-border bg-background ${single ? 'sm:flex' : ''}`}>
     <Dialog.Root>
@@ -74,7 +74,7 @@ export function InstagramProjects({ industry, title = 'Zobacz nasze opublikowane
         {compact && <Link to="/realizacje" className="inline-flex items-center gap-2 text-sm underline underline-offset-4">Wszystkie realizacje <ArrowRight aria-hidden="true" className="h-4 w-4" /></Link>}
       </div>
       <div ref={railRef} className={single ? 'max-w-4xl' : compact ? 'grid grid-flow-col auto-cols-[84%] sm:auto-cols-[44%] lg:auto-cols-[30%] gap-5 overflow-x-auto snap-x snap-mandatory pb-4' : 'grid gap-6 sm:grid-cols-2 lg:grid-cols-3'}>
-        {projects.map(project => <ProjectCard key={project.id} project={project} single={single} compact={compact} />)}
+        {projects.map(project => <ProjectCard key={project.id} project={project} single={single} compact={compact} industry={industry} />)}
       </div>
       {compact && <div className="mt-4 flex items-center justify-between gap-4">
         <p className="text-xs text-muted-foreground">Przesuń, aby zobaczyć wszystkie {projects.length} realizacji</p>

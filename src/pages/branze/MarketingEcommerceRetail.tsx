@@ -1,3 +1,4 @@
+import { industryEnquiryHref } from "@/lib/industry-enquiry.mjs";
 import { IndustryWork } from "@/components/sections/IndustryWork";
 import { Link } from "react-router-dom";
 import { SEOHead } from "@/components/seo/SEOHead";
@@ -153,7 +154,7 @@ const MarketingEcommerceRetail = () => {
 
             <div className="flex flex-wrap gap-4">
               <Button asChild size="lg" className="group">
-                <Link to="/kontakt">
+                <Link to={industryEnquiryHref("ecommerce-retail", "/konsultacja")}>
                   Bezpłatna konsultacja
                   <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </Link>
@@ -170,7 +171,7 @@ const MarketingEcommerceRetail = () => {
 
       <IndustryWork slug="ecommerce-retail" />
 
-      <KlagemConfigurator />
+      <KlagemConfigurator industry="ecommerce-retail" />
 
       {/* Services */}
       <section className="section-padding bg-background">
@@ -289,7 +290,7 @@ const MarketingEcommerceRetail = () => {
             <aside className="rounded-3xl border border-border p-8 bg-background">
               <h3 className="font-heading text-2xl mb-4">Porozmawiajmy o Twoim projekcie</h3>
               <p className="text-muted-foreground leading-relaxed mb-6">Pokaż nam swoją ofertę i opowiedz, do kogo chcesz dotrzeć. Dobierzemy stronę, zdjęcia lub wideo do potrzeb Twojej firmy.</p>
-              <Link to="/kontakt#formularz" className="dv-btn dv-btn-primary">Opisz swój projekt <ArrowRight className="w-4 h-4" aria-hidden="true" /></Link>
+              <Link to={industryEnquiryHref("ecommerce-retail", "/kontakt#formularz")} className="dv-btn dv-btn-primary">Opisz swój projekt <ArrowRight className="w-4 h-4" aria-hidden="true" /></Link>
             </aside>
           </div>
         </div>
@@ -409,7 +410,7 @@ const MarketingEcommerceRetail = () => {
               Umów się na bezpłatną konsultację i dowiedz się, jak możemy zwiększyć obroty Twojego sklepu.
             </p>
             <Button asChild size="lg" className="group">
-              <Link to="/kontakt">
+              <Link to={industryEnquiryHref("ecommerce-retail", "/konsultacja")}>
                 Bezpłatna konsultacja
                 <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
               </Link>

@@ -1,3 +1,4 @@
+import { industryEnquiryHref } from "@/lib/industry-enquiry.mjs";
 import { IndustryWork } from "@/components/sections/IndustryWork";
 import { Link } from "react-router-dom";
 import { Building2, ArrowRight, CheckCircle, MapPin, TrendingUp, Users, Target, Star, Phone, Plus, Minus } from "lucide-react";
@@ -165,7 +166,7 @@ export default function DlaKogoFirmyLokalne() {
             
             <div className="flex flex-wrap gap-4">
               <Button variant="hero" size="xl" asChild>
-                <Link to="/kontakt" className="group">
+                <Link to={industryEnquiryHref("firmy-lokalne", "/konsultacja")} className="group">
                   Bezpłatna konsultacja
                   <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
                 </Link>
@@ -470,7 +471,7 @@ export default function DlaKogoFirmyLokalne() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button variant="hero" size="xl" asChild>
-                <Link to="/kontakt" className="group">
+                <Link to={industryEnquiryHref("firmy-lokalne", "/konsultacja")} className="group">
                   Bezpłatna konsultacja
                   <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
                 </Link>
