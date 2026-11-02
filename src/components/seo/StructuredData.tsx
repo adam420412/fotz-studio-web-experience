@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { useLocation } from "react-router-dom";
 
 interface OrganizationSchemaProps {
   name?: string;
@@ -43,8 +44,8 @@ export function OrganizationSchema({
     logo: {
       "@type": "ImageObject",
       url: logo,
-      width: 200,
-      height: 60,
+      width: 1200,
+      height: 847,
     },
     description,
     email,
@@ -120,14 +121,14 @@ export function LocalBusinessSchema({
     image: {
       "@type": "ImageObject",
       url: "https://www.fotz-studio.pl/logo-fotz.jpg",
-      width: 200,
-      height: 60,
+      width: 1200,
+      height: 847,
     },
     logo: {
       "@type": "ImageObject",
       url: "https://www.fotz-studio.pl/logo-fotz.jpg",
-      width: 200,
-      height: 60,
+      width: 1200,
+      height: 847,
     },
     address: {
       "@type": "PostalAddress",
@@ -338,7 +339,7 @@ export function ArticleSchema({
   title,
   headline,
   description,
-  url = "https://www.fotz-studio.pl",
+  url,
   image = "https://www.fotz-studio.pl/og-image.jpg",
   datePublished,
   dateModified,
@@ -347,9 +348,10 @@ export function ArticleSchema({
   publishDate,
   data,
 }: ArticleSchemaProps) {
+  const { pathname } = useLocation();
   const finalTitle = title ?? headline ?? data?.headline ?? "";
   const finalDescription = data?.description ?? description ?? "";
-  const finalUrl = data?.url ?? url;
+  const finalUrl = data?.url ?? url ?? new URL(pathname, "https://www.fotz-studio.pl").href.replace(/\/+$/, "");
   const finalImage = data?.image ?? image;
   const finalDatePublished = data?.datePublished ?? publishDate ?? datePublished ?? new Date().toISOString().slice(0, 10);
   const finalDateModified = data?.dateModified ?? dateModified ?? finalDatePublished;
@@ -384,8 +386,8 @@ export function ArticleSchema({
       logo: {
         "@type": "ImageObject",
         url: "https://www.fotz-studio.pl/logo-fotz.jpg",
-        width: 200,
-        height: 60,
+        width: 1200,
+        height: 847,
       },
     },
     inLanguage: "pl-PL",
