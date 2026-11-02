@@ -1,0 +1,102 @@
+{
+  "date": "2026-11-02",
+  "url": "https://www.fotz-studio.pl/blog/ile-kosztuje-strona-internetowa",
+  "source": "src/pages/BlogKosztStrony.tsx",
+  "branch": "swarm/blog-koszt-strony-20261102",
+  "baseCommit": "b38292e114ff8f51407c4fc9921dcc7c43f9b1a0",
+  "gsc": {
+    "assignedMetricsAvailable": false,
+    "note": "Nie przekazano aktualnych przypisanych metryk Google Search Console dla tej strony. Nie zgadywano kliknięć, wyświetleń, CTR ani pozycji."
+  },
+  "neuronWriter": {
+    "query": "a9a50e7e953b2baf",
+    "keyword": "ile kosztuje strona internetowa",
+    "newAnalysesCreated": 0,
+    "productionBaseline": 76,
+    "baselineMethod": "Zapisany wynik evaluate-content dla produkcyjnego URL z id=main-content przed zmianami.",
+    "iterations": [
+      {
+        "iteration": 1,
+        "score": 84,
+        "scope": "Rzetelny przewodnik po czynnikach ceny, typach stron, zakresie prac, materiałach, CMS, integracjach, utrzymaniu, SEO, hipotetycznych rachunkach, pytaniach do oferty, pomiarze zwrotu i FAQ; usunięto niepotwierdzone sztywne ceny."
+      },
+      {
+        "iteration": 2,
+        "score": 88,
+        "scope": "Doprecyzowano różnice między prostym i większym serwisem, kreatorem a CMS, koszt wykonania, odpowiedzialność za integracje, opiekę i dostępy administratora."
+      },
+      {
+        "iteration": 3,
+        "score": 94,
+        "scope": "Uzupełniono naturalne pokrycie pojęć w nagłówkach i FAQ, warianty realizacji oraz ograniczono powtórzenia kosztu i CMS bez dodawania niepotwierdzonych twierdzeń."
+      },
+      {
+        "iteration": 4,
+        "score": 96,
+        "scope": "Ograniczona korekta zdublowanej frazy głównej, nadmiarowych powtórzeń i pozostałych luk pojęciowych; bez zmiany metadanych i zakresu merytorycznego."
+      }
+    ],
+    "final": 96,
+    "target": 95,
+    "recommendedWordCount": 1696,
+    "finalRenderedMainWords": 1873,
+    "wordCountMethod": "Tokeny słów Unicode w widocznym tekście main#main-content po usunięciu script i style; obejmuje treść strony oraz współdzielone komponenty w main. Jest to lokalna kontrola długości, nie metryka NeuronWriter.",
+    "method": "evaluate-content przez neuron_client.py evaluate-html; outerHTML main#main-content wyodrębniony z finalnego dist/blog/ile-kosztuje-strona-internetowa/index.html; przekazano finalne title i description.",
+    "scopeComparison": "Baseline 76 zmierzono na produkcyjnym URL z main-content, a finalne 96 na lokalnym produkcyjnym prerenderze main#main-content. Zakres semantyczny jest porównywalny, ale środowisko pomiaru różni się; wynik nie dowodzi pozycji, ruchu, leadów ani sprzedaży.",
+    "container": {
+      "selector": "main#main-content",
+      "occurrences": 1,
+      "htmlCharacters": 41304,
+      "duplicateIds": [],
+      "uniqueIdCount": 17,
+      "verified": true
+    }
+  },
+  "metadata": {
+    "title": "Ile kosztuje strona internetowa w 2026? | FOTZ",
+    "titleLength": 46,
+    "description": "Ile kosztuje strona internetowa w 2026? Poznaj czynniki ceny, koszt domeny i hostingu, CMS, SEO oraz przykładowe budżety i pytania do oferty.",
+    "descriptionLength": 141,
+    "canonical": "https://www.fotz-studio.pl/blog/ile-kosztuje-strona-internetowa",
+    "h1": "Ile kosztuje strona internetowa w 2026? Koszty i wycena",
+    "h1Count": 1
+  },
+  "renderedContract": {
+    "selfCanonical": true,
+    "ownArticleSchemaCount": 1,
+    "articleSchemaUrl": "https://www.fotz-studio.pl/blog/ile-kosztuje-strona-internetowa",
+    "articleSchemaId": "https://www.fotz-studio.pl/blog/ile-kosztuje-strona-internetowa",
+    "datePublished": "2024-12-20",
+    "dateModified": "2026-11-02",
+    "faqQuestions": 8,
+    "visibleFaqMatchesSchema": true,
+    "hypotheticalScenarios": 3,
+    "serviceAndContactLinks": [
+      "/uslugi/strony-internetowe",
+      "/uslugi/landing-page",
+      "/uslugi/sklepy-internetowe",
+      "/seo/pozycjonowanie",
+      "/realizacje",
+      "/kontakt"
+    ],
+    "duplicateIds": []
+  },
+  "checks": {
+    "npmCi": "passed",
+    "typecheck": "passed",
+    "targetedTests": "21/21 passed: 6 direct article contract, 7 live-blog, 3 seo-metadata and 5 structured-data tests",
+    "liveBlogRenderCheck": "passed; full HTML, one H1, canonical, hydration and safe content; no external requests or database writes",
+    "build": "passed; 1066 prerendered pages, 1064 full page bodies, 0 body errors",
+    "htmlContract": "passed; title 46 characters, description 141 characters, one H1, self-canonical, one main-content, one own Article schema, visible FAQ matches schema and 17 unique IDs with no duplicates"
+  },
+  "files": [
+    "src/pages/BlogKosztStrony.tsx",
+    "scripts/blog-koszt-strony.test.mjs",
+    "docs/seo/ile-kosztuje-strona-internetowa-2026-11-02.json"
+  ],
+  "notes": [
+    "Wszystkie kwoty w artykule występują wyłącznie w wyraźnie oznaczonych hipotetycznych scenariuszach i nie są cennikiem FOTZ, ofertą, średnią rynkową ani rekomendowanym budżetem.",
+    "Nie dodano rabatów, gwarancji ROI, niepotwierdzonych cenników FOTZ ani sztywnych cen rynkowych.",
+    "Nie zmieniono App.tsx, sitemap, ai-work-register.csv, plików środowiskowych, innych stron ani współdzielonych komponentów."
+  ]
+}
