@@ -160,7 +160,7 @@ export default function FacebookInstagramAds() {
       title="Agencja Meta Ads: kampanie reklamowe na Facebooku i Instagramie"
       eyebrow="FOTZ Studio · kampanie Meta Ads dla firm"
       enquiryVariant="meta_ads"
-      lead="Prowadzimy reklamy na Facebooku i Instagramie: plan, kreacje, pomiar i optymalizację. Osobno wyceniamy obsługę, materiały i budżet emisji. Oceniaj z nami koszt oraz jakość zapytań."
+      lead="Planujemy i prowadzimy kampanie na Facebooku i Instagramie. Osobno wyceniamy obsługę i materiały, a budżet emisji ustalamy z Tobą."
       contactLabel="Zapytaj o kampanię Meta Ads"
       contactDescription="Prześlij adres strony, cel kampanii i planowany budżet. Napisz, czy masz już konto reklamowe i gotowe zdjęcia lub filmy. Ustalimy zakres oraz koszt obsługi."
       summary={[
