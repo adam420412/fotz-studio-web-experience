@@ -15,7 +15,7 @@ export function HeroV3() {
           <p className="mt-6 text-lg text-muted-foreground max-w-xl leading-relaxed">Prowadzisz firmę. My zajmiemy się uzgodnioną częścią jej marketingu: treściami, publikacją i drogą do kontaktu. Stała obsługa od 3 000 zł netto miesięcznie. Zdjęcia, filmy i strony przygotowujemy także jako osobne projekty.</p>
           <div className="flex flex-wrap gap-3 mt-7">
             <Link to="/agencja-marketingu-internetowego" className="dv-btn dv-btn-primary">Poznaj stałą obsługę <ArrowUpRight aria-hidden="true" className="w-4 h-4" /></Link>
-            <Link to="/realizacje" className="dv-btn dv-btn-secondary">Zobacz realizacje</Link>
+            <a href="#realizacje-instagram" className="dv-btn dv-btn-secondary">Zobacz realizacje <Play aria-hidden="true" className="w-4 h-4" /></a>
           </div>
           <p className="mt-6 text-sm text-muted-foreground">Poznań i współpraca zdalna · <a className="underline underline-offset-4" href={business.phoneHref}>{business.phone}</a></p>
         </div>

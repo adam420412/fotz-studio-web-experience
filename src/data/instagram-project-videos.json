@@ -1,0 +1,50 @@
+{
+  "dsk-jubileusz": {
+    "src": "/videos/instagram/dsk-jubileusz.mp4",
+    "width": 1280,
+    "height": 720,
+    "duration": 161.933,
+    "bytes": 30044169,
+    "publication": "https://www.instagram.com/dsk_kancelaria/reel/DeTtSNsuiLI/"
+  },
+  "cupra-raval": {
+    "src": "/videos/instagram/cupra-raval.mp4",
+    "width": 1280,
+    "height": 720,
+    "duration": 26.033,
+    "bytes": 4932223,
+    "publication": "https://www.instagram.com/eneastadion/reel/DcOllyYkRLF/"
+  },
+  "podsiadlo-stadion": {
+    "src": "/videos/instagram/podsiadlo-stadion.mp4",
+    "width": 720,
+    "height": 1280,
+    "duration": 25.266,
+    "bytes": 7071842,
+    "publication": "https://www.instagram.com/eneastadion/reel/Dakh5IxMFoN/"
+  },
+  "schiller-b17": {
+    "src": "/videos/instagram/schiller-b17.mp4",
+    "width": 720,
+    "height": 1280,
+    "duration": 23.337,
+    "bytes": 6743363,
+    "publication": "https://www.instagram.com/klubmuzycznyb17/reel/DecAczPItGq/"
+  },
+  "skolim-b17": {
+    "src": "/videos/instagram/skolim-b17.mp4",
+    "width": 720,
+    "height": 1280,
+    "duration": 34.833,
+    "bytes": 9794727,
+    "publication": "https://www.instagram.com/klubmuzycznyb17/reel/De3omUGFbjD/"
+  },
+  "stadion-dzien-meczowy": {
+    "src": "/videos/instagram/stadion-dzien-meczowy.mp4",
+    "width": 720,
+    "height": 1280,
+    "duration": 30.303,
+    "bytes": 7872441,
+    "publication": "https://www.instagram.com/eneastadion/reel/DQCNKAajM-q/"
+  }
+}
