@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-02",
+  "url": "https://fotz.pl/strony-internetowe-wroclaw/",
+  "post": 1573,
+  "modified": "2026-11-02T16:26:00",
+  "change": "<link rel=\"preload\" as=\"image\" href=\"https://fotz.pl/wp-content/uploads/2026/10/fotz-work-1200.webp\" fetchpriority=\"high\">\n<style id=\"fotz-wroclaw-stable-mobile-font\">@media(max-width:690px){body.page-id-1573 #fotz-fast-hero h1,body.page-id-1573 #fotz-fast-hero p,body.page-id-1573 #fotz-fast-hero a{font-family:Arial,Helvetica,sans-serif!important;}}</style>",
+  "scope": "Preload tego samego zdjęcia hero + systemowa czcionka tylko h1,p,a hero do690px. Jeden dodany vc_raw_html, istniejąca treść nietknięta.",
+  "review": {
+    "reviewer": "Codex / meta_ads_review",
+    "result": "PASS",
+    "sha256": "992B47D08F4586B9E76F8C6CDB168130601A42EF1138A68A3D4D649F0A6D8582"
+  },
+  "before": {
+    "source": "PageSpeed UI 2026-11-02 16:07 CET",
+    "performance": 57,
+    "lcp": 4.4,
+    "cls": 0.165,
+    "tbt": 660,
+    "diagnosis": "CLS .165 hero .row_col_wrap_12; fonty Montserrat/PublicSans. LCP tło fotz-work-1200.webp: delay760ms/download30ms/render470ms."
+  },
+  "mobile": {
+    "widths": [
+      320,
+      390
+    ],
+    "noHorizontalOverflow": true,
+    "computedHeroFont": "Arial, Helvetica, sans-serif",
+    "cta320Height": 49.59,
+    "cta320Bottom": 595.8,
+    "contactUrl": "https://fotz.pl/kontakt/#formularz",
+    "form": "wpforms-form-460",
+    "submitted": false,
+    "final_cta320_bottom": 570.3,
+    "final_css_blocks": 3,
+    "final_prelude_height": 0,
+    "final_contact_verified": true
+  },
+  "next": "Priorytet stabilności hero odebrany (CLS0.01). Dalsza wydajność: blokujące zasoby motywu, nadmiar JS i cache; nie wprowadzono zmian globalnych. Nie obiecujemy wyników90+.",
+  "intermediate_after_font_only": {
+    "performance": 61,
+    "lcp": 3.8,
+    "cls": 0.159,
+    "tbt": 610,
+    "fcp": 2.4,
+    "source": "WPVibe świeży PSI mobile",
+    "caveat": "Pojedyncze testy laboratoryjne, brak CrUX. Wynik zmienny. LCP niższe; CLS nadal >.1, problem nie jest zamknięty. Poprzedni pomiar przed tą zmianą dawał64, zatem nie deklarujemy wzrostu stabilnego wyniku."
+  },
+  "final_change": "Przeniesienie dokładnie dwóch istniejących bloków CSS z końca dokumentu (ok.139-140tys.znaków) do początku; połączenie z preload i fontem w jednym vc_raw_html el_class=fotz-fast-css. Wrapper ma zerowe odstępy/wysokość. Treści i pozostałe shortcode niezmienione.",
+  "final_css": "docs/seo/wroclaw-early-css-2026-11-02.html",
+  "final_review": {
+    "reviewer": "Codex / meta_ads_review",
+    "result": "PASS",
+    "sha256": "3621AB64258AA8A40145B79F76E14DC8A866F37593E10F0562FFD9BAD1A8A14D"
+  },
+  "after": {
+    "performance": 81,
+    "lcp": 3.8,
+    "cls": 0.01,
+    "tbt": 250,
+    "fcp": 2.4,
+    "speed_index": 3.1,
+    "source": "PageSpeed UI 2026-11-02 16:27 CET, mobile Moto G Power / 4G / Lighthouse13.6.0",
+    "url": "https://pagespeed.web.dev/analysis/https-fotz-pl-strony-internetowe-wroclaw/zg3cx8brvt?form_factor=mobile",
+    "caveat": "Test laboratoryjny, brak CrUX. Zmienność pomiaru; nie jest dowodem wzrostu sprzedaży. Główny skok układu usunięty w tym pomiarze, LCP nadal wymaga pracy."
+  }
+}
