@@ -23,11 +23,11 @@ const data = {
   "sections": [
     {
       "title": "Zdjęcia produktów — jakość zdjęć i ocena oferty",
-      "text": "Dobre zdjęcie produktu odpowiada na konkretne pytania: jaki ma kształt, jak wygląda powierzchnia i czym różnią się warianty. Fotografia produktowa powinna pokazywać cechy istotne przed zakupem, a nie tylko przyciągać uwagę. Przygotowujemy listę ujęć na podstawie zastosowania i odbiorców. Dla mebli ważne mogą być proporcje, łączenia i sposób ustawienia; dla opakowania etykieta, zamknięcie i czytelny nadruk. Zdjęcia produktów zestawiamy z opisem, wymiarami i wariantami w sklepie. Potencjalny klient powinien móc porównać ofertę bez zgadywania. To jakość informacji, obok ceny i warunków dostawy, wspiera decyzje zakupowe."
+      "text": "Dobre zdjęcie produktu odpowiada na konkretne pytania: jaki ma kształt, jak wygląda powierzchnia i czym różnią się warianty. Fotografia produktowa powinna pokazywać cechy istotne przed zakupem, a nie tylko przyciągać uwagę klientów. Przygotowujemy listę ujęć na podstawie zastosowania i odbiorców. Dla mebli ważne mogą być proporcje, łączenia i sposób ustawienia; dla opakowania etykieta, zamknięcie i czytelny nadruk. Zdjęcia produktów zestawiamy z opisem, wymiarami i wariantami w sklepie. Potencjalny klient powinien móc porównać ofertę bez zgadywania. To jakość informacji, obok ceny i warunków dostawy, wspiera decyzje zakupowe. Czytelne kadry ułatwiają ocenę produktu przez potencjalnych klientów i wyróżniają wizerunek Twojej marki w świecie e-commerce. Seria profesjonalnie wyglądających zdjęć buduje wiarygodność oferty na tle konkurencji."
     },
     {
       "title": "Packshoty na białym tle — spójna seria dla e-commerce",
-      "text": "Packshot to prezentacja produktu z naciskiem na jego wygląd i detale. Neutralny kadr ułatwia porównanie kilku modeli w katalogu. Przed sesją uzgadniamy tło, marginesy, kąty i proporcje, aby kolejne fotografie produktów tworzyły spójną serię. Białe tło nie oznacza automatycznie braku cienia: sposób pokazania bryły ustalamy w briefie. Powierzchnie błyszczące, szkło oraz metal wymagają kontroli odbić. Dobieramy oświetlenie i ustawienie fotografowanego przedmiotu do materiału. Jeśli zdjęcie ma przedstawiać zestaw, określamy również jego zawartość, żeby kadr nie sugerował elementów sprzedawanych osobno."
+      "text": "Profesjonalne packshoty pokazują produkt z naciskiem na jego wygląd i detale. Neutralny kadr ułatwia porównanie kilku modeli w katalogu. Przed sesją uzgadniamy tło, marginesy, kąty i proporcje, aby kolejne fotografie produktów tworzyły spójną serię. Białe tło nie oznacza automatycznie braku cienia: sposób pokazania bryły ustalamy w briefie. Powierzchnie błyszczące, szkło oraz metal wymagają kontroli odbić. Dobieramy oświetlenie i ustawienie fotografowanego przedmiotu do materiału. Jeśli zdjęcie ma przedstawiać zestaw, określamy również jego zawartość, żeby kadr nie sugerował elementów sprzedawanych osobno."
     },
     {
       "title": "Fotografia produktowa i reklamowa — aranżacja",
@@ -35,7 +35,7 @@ const data = {
     },
     {
       "title": "Przygotowanie produktu i realizacja sesji fotograficznej",
-      "text": "Najpierw powstaje lista produktów, wariantów i ujęć. Prosimy o czyste, kompletne egzemplarze oraz informację o cechach, które trzeba pokazać. Etykiety powinny odpowiadać aktualnej ofercie. Jeśli powierzchnia łatwo się rysuje, warto przygotować egzemplarz zapasowy. Uzgadniamy transport, rozpakowanie, miejsce, termin i zwrot produktów. Przy dużych przedmiotach sprawdzamy dostęp oraz możliwość wniesienia. Realizacja sesji przebiega według zatwierdzonego planu: ustawienie światła, kadr próbny, seria i kontrola zgodności. Zmiana wariantu lub dodanie nowego ujęcia wymaga określenia wpływu na czas i wycenę.",
+      "text": "Najpierw powstaje lista produktów, wariantów i ujęć. Prosimy o czyste, kompletne egzemplarze oraz informację o cechach, które trzeba pokazać. Etykiety powinny odpowiadać aktualnej ofercie. Jeśli powierzchnia łatwo się rysuje, warto przygotować egzemplarz zapasowy. Uzgadniamy transport, rozpakowanie, miejsce, termin i zwrot produktów. Przy dużych przedmiotach sprawdzamy dostęp oraz możliwość wniesienia. Proces wykonywania zdjęć przebiega według zatwierdzonego planu: ustawienie światła, kadr próbny, seria i kontrola zgodności. Zmiana wariantu lub dodanie nowego ujęcia wymaga określenia wpływu na czas i wycenę.",
       "points": [
         "Liczba produktów i wariantów oraz planowana liczba finalnych zdjęć.",
         "Wymiary, materiał, delikatne powierzchnie i potrzebne detale.",
@@ -45,7 +45,7 @@ const data = {
     },
     {
       "title": "Retusz zdjęć produktowych i obróbka graficzna",
-      "text": "Profesjonalny retusz porządkuje obraz, zachowując rzeczywiste cechy produktu. Uzgadniamy korektę tła, drobnych zabrudzeń, ekspozycji i kolorystyki. Zakres obróbki graficznej zależy od materiału oraz zastosowania. Warto oddzielić zwykłą korektę od montażu kilku ujęć lub większych zmian. Nie usuwamy istotnych cech, które wpływają na decyzję zakupową. Przy odwzorowaniu kolorów znaczenie mają światło, ustawienie balansu bieli oraz sposób oglądania pliku na ekranie. Jeżeli marka ma wzornik koloru, wykorzystujemy go do uzgodnienia oczekiwań. Przekazujemy wersję do akceptacji zgodnie z ustalonym trybem poprawek."
+      "text": "Profesjonalny retusz porządkuje obraz, zachowując rzeczywiste cechy produktu. Uzgadniamy korektę tła, drobnych zabrudzeń, ekspozycji i kolorystyki. Zakres obróbki graficznej zależy od materiału oraz zastosowania. Warto oddzielić zwykłą korektę od montażu kilku ujęć lub większych zmian. Zaawansowane techniki postprodukcji, takie jak focus stacking czy łączenie ujęć, wyceniamy osobno. Obróbkę prowadzimy w licencjonowanym oprogramowaniu — darmowe narzędzia pokroju GIMP nie zapewniają kontroli koloru wymaganej w komercyjnej postprodukcji. Nie usuwamy istotnych cech, które wpływają na decyzję zakupową. Przy odwzorowaniu kolorów znaczenie mają światło, ustawienie balansu bieli oraz sposób oglądania pliku na ekranie. Jeżeli marka ma wzornik koloru, wykorzystujemy go do uzgodnienia oczekiwań. Przekazujemy wersję do akceptacji zgodnie z ustalonym trybem poprawek."
     },
     {
       "title": "Profesjonalne zdjęcia w sklepie internetowym i katalogu",
@@ -55,26 +55,26 @@ const data = {
     },
     {
       "title": "Sprzęt do fotografii produktowej — fotograf, statyw i światło",
-      "text": "Sprzęt dobieramy do skali i powierzchni produktu. Obiektyw wpływa na perspektywę, statyw pomaga zachować spójność serii, a precyzyjne ustawienie aparatu ułatwia powtarzanie kadrów. Fotograf pracuje z oświetleniem tak, aby pokazać bryłę, fakturę i czytelne detale. Lampy studyjne lub inne źródła światła dobieramy do warunków sesji. Sam aparat nie rozwiąże problemu odbić, zabrudzeń czy źle przygotowanego egzemplarza. Dlatego profesjonalne zdjęcia zaczynają się od planu i prób. Zamiast zamawiać określoną liczbę godzin bez celu, warto najpierw ustalić listę finalnych ujęć."
+      "text": "Sprzęt fotograficzny dobieramy do skali i powierzchni produktu. Nowoczesne aparaty bezlusterkowe o wysokiej rozdzielczości zastąpiły w fotografii studyjnej klasyczne korpusy — dziś lustrzanka odgrywa w niej raczej rolę drugoplanową. Obiektyw wpływa na perspektywę — szerokokątny stosujemy oszczędnie, bo zniekształca proporcje produktu — statyw pomaga zachować spójność serii, a precyzyjne ustawienie aparatu ułatwia powtarzanie kadrów. Fotograf pracuje z oświetleniem tak, aby pokazać bryłę, fakturę i czytelne detale. Lampy studyjne lub inne źródła światła dobieramy do warunków sesji. Sam aparat nie rozwiąże problemu odbić, zabrudzeń czy źle przygotowanego egzemplarza. Dlatego profesjonalne zdjęcia zaczynają się od planu i prób. Zamiast zamawiać określoną liczbę godzin bez celu, warto najpierw ustalić listę finalnych ujęć."
     },
     {
       "title": "Jak przygotować miejsce do fotografowania produktów?",
-      "text": "Miejsce dobieramy do gabarytów, transportu i rodzaju kadrów. Sesje produktowe mogą odbywać się w uzgodnionej przestrzeni zdjęciowej lub u klienta. Przed rezerwacją sprawdzamy wymiary planu, dostęp do zasilania, tło i możliwość kontrolowania światła. Jeżeli chcesz sfotografować dużą kolekcję mebli, potrzebne będzie miejsce na ustawienie, zmianę wariantów i bezpieczne przechowanie elementów. Studio fotografii, wynajem scenografii oraz dojazd wyceniamy zależnie od projektu. Potwierdzamy warunki przed terminem, aby organizacja nie ograniczała czasu przeznaczonego na właściwe kadry."
+      "text": "Miejsce dobieramy do gabarytów, transportu i rodzaju kadrów. Sesje produktowe odbywają się w naszym studio lub u klienta, zależnie od gabarytów i logistyki. Przed rezerwacją sprawdzamy wymiary planu, dostęp do zasilania, tło i możliwość kontrolowania światła. Jeżeli chcesz sfotografować dużą kolekcję mebli, potrzebne będzie miejsce na ustawienie, zmianę wariantów i bezpieczne przechowanie elementów. Studio fotografii, wynajem scenografii oraz dojazd wyceniamy zależnie od projektu. Potwierdzamy warunki przed terminem, aby organizacja nie ograniczała czasu przeznaczonego na właściwe kadry."
     },
     {
       "title": "Packshot i filmy produktowe a wizualizacja 3D",
-      "text": "Zdjęcie przedstawia fizyczny egzemplarz, natomiast wizualizacja powstaje na podstawie modelu oraz materiałów referencyjnych. Te formy mogą się uzupełniać, ale opisujemy je zgodnie ze sposobem wykonania. Jeśli potrzebujesz pokazać wariant niedostępny na sesji, możemy omówić osobny zakres 3D. Filmy produktowe, krótkie demonstracje i reels wymagają własnego planu ujęć. Wspólny dzień produkcyjny może połączyć zdjęcia oraz wideo, jeśli wcześniej uwzględnimy czas, światło i formaty. Zobacz także przykład konfiguratora KLAGEM, który pozwala przedstawiać warianty produktu w inny sposób niż fotografia.",
+      "text": "Zdjęcie przedstawia fizyczny egzemplarz, natomiast wizualizacja powstaje na podstawie modelu oraz materiałów referencyjnych. Te formy mogą się uzupełniać, ale opisujemy je zgodnie ze sposobem wykonania. Jeśli potrzebujesz pokazać wariant niedostępny na sesji, możemy omówić osobny zakres 3D. Dynamiczne filmy produktowe, krótkie demonstracje i reels wymagają własnego planu ujęć. Wspólny dzień produkcyjny może połączyć zdjęcia oraz wideo, jeśli wcześniej uwzględnimy czas, światło i formaty. Zobacz także przykład konfiguratora KLAGEM, który pozwala przedstawiać warianty produktu w inny sposób niż fotografia.",
       "href": "/realizacje/klagem",
       "link": "Konfigurator 3D KLAGEM"
     },
     {
       "title": "Ile kosztuje profesjonalna fotografia produktowa?",
-      "text": "Wycena zależy od liczby produktów i finalnych ujęć, rodzaju powierzchni, aranżacji, miejsca oraz zakresu retuszu. Jedno zdjęcie prostego opakowania i seria błyszczących elementów w kilku ustawieniach wymagają innego przygotowania. Koszt rozpisujemy na produkcję, obróbkę i dodatkowe elementy. Ustalamy też sposób wykorzystania materiałów, termin oraz liczbę rund poprawek. Profesjonalny materiał powinien być dopasowany do kanału i celu, nie do przypadkowego pakietu. Prześlij zdjęcie poglądowe, wymiary oraz listę produktów — pozwoli to zaplanować zakres i uniknąć niedomówień."
+      "text": "Wycena zależy od liczby produktów i finalnych ujęć, rodzaju powierzchni, aranżacji, miejsca oraz zakresu retuszu. Jedno zdjęcie prostego opakowania i seria błyszczących elementów w kilku ustawieniach wymagają innego przygotowania. Koszt rozpisujemy na produkcję, obróbkę i dodatkowe elementy. Ustalamy też sposób wykorzystania materiałów, termin oraz liczbę rund poprawek. Profesjonalny materiał powinien być dopasowany do kanału i celu, nie do przypadkowego pakietu. Oferujemy kompleksowy zakres: od listy ujęć po finalne pliki, a doświadczenie w dziedzinie fotografii produktowej pozwala od razu wskazać realne wymagania. Prześlij zdjęcie poglądowe, wymiary oraz listę produktów — pozwoli to zaplanować zakres i uniknąć niedomówień."
     }
 ,
 {
   "title": "Jak ocenić jakość zdjęć przed publikacją?",
-  "text": "Sprawdzamy ostrość, czytelność etykiet, kadrowanie i odwzorowanie kolorów fotografowanego produktu. Wysokiej jakości zdjęcia powinny zachować spójny wygląd serii również po przygotowaniu miniaturek. Najlepsze cechy Twoich produktów pokazujemy przez konkretne detale, a nie przesadną korektę. Profesjonalne zdjęcia produktów przyciągają uwagę potencjalnych klientów, gdy odpowiadają na ich pytania. W fotografii produktowej i reklamowej porównujemy efekt z zatwierdzonym briefem: czy wszystkie warianty są obecne i czy pliki nadają się do zaplanowanych zastosowań. Taki odbiór pozwala wskazać poprawki przed publikacją."
+  "text": "Sprawdzamy ostrość, czytelność etykiet, kadrowanie i odwzorowanie kolorów fotografowanego produktu. Wysokiej jakości zdjęcia powinny zachować spójny wygląd serii również po przygotowaniu miniaturek. Najlepsze cechy Twoich produktów pokazujemy przez konkretne detale, a nie przesadną korektę. Profesjonalne zdjęcia produktów przyciągają uwagę potencjalnych klientów, gdy odpowiadają na ich pytania. W fotografii produktowej i reklamowej porównujemy efekt z zatwierdzonym briefem: czy wszystkie warianty są obecne i czy pliki nadają się do zaplanowanych zastosowań. Taki odbiór pozwala wskazać poprawki przed publikacją i dostarczyć serię najwyższej jakości zdjęć gotowych do wdrożenia."
 }
   ],
   "faqs": [
@@ -100,7 +100,7 @@ const data = {
     },
     {
       "question": "Czy lepsze zdjęcia gwarantują wzrost sprzedaży?",
-      "answer": "Zdjęcia pomagają ocenić produkt i zachować spójny wizerunek, ale wynik zależy również od oferty, ceny, ruchu i obsługi. Nie przypisujemy fotografii konkretnego wzrostu bez danych z danego sklepu."
+      "answer": "Profesjonalne zdjęcia zwiększają szanse na sprzedaż, bo pomagają ocenić produkt i zachować spójny wizerunek, ale wynik zależy również od oferty, ceny, ruchu i obsługi. Nie przypisujemy fotografii konkretnego wzrostu bez danych z danego sklepu."
     }
   ]
 };
