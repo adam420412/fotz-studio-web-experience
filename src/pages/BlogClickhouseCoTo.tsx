@@ -42,7 +42,7 @@ export default function BlogClickhouseCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="ClickHouse — co to jest, OLAP, MergeTree, Kafka ingestion, vs BigQuery i Snowflake?"
+        title="ClickHouse — co to jest? | FOTZ"
         description="ClickHouse: kolumnowy OLAP database, MergeTree engines, Kafka streaming ingestion, sharding i replikacja, ClickHouse vs BigQuery vs Snowflake vs DuckDB."
         canonical="https://www.fotz-studio.pl/blog/clickhouse-co-to-jest-olap-mergetree-kafka-ingestion-vs-bigquery-snowflake"
 

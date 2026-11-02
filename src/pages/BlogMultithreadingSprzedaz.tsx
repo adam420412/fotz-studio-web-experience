@@ -76,7 +76,7 @@ export default function BlogMultithreadingSprzedaz() {
   return (
     <Layout>
       <SEOHead
-        title="Multithreading w sprzedaży B2B — angażowanie buying committee"
+        title="Multithreading w sprzedaży B2B | FOTZ"
         description="Multithreading w sprzedaży B2B — jak angażować buying committee, mapować stakeholderów i budować wielowątkowe deale w enterprise. Kompletny przewodnik."
         canonical="https://www.fotz-studio.pl/blog/multithreading-sprzedaz-b2b-buying-committee"
 

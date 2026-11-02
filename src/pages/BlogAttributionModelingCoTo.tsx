@@ -94,7 +94,7 @@ export default function BlogAttributionModelingCoTo() {
   return (
     <>
       <SEOHead
-        title="Attribution Modeling — co to jest? Modele atrybucji w marketingu"
+        title="Attribution Modeling — co to jest? | FOTZ"
         description="Czym jest attribution modeling, porównanie modeli (Last Click, First Click, Linear, Data-Driven), jak wybrać model i wpływ na budżet marketingowy."
         canonical="https://www.fotz-studio.pl/blog/attribution-modeling-co-to"
 

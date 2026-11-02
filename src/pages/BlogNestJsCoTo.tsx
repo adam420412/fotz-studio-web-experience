@@ -42,7 +42,7 @@ export default function BlogNestJsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="NestJS — co to jest, moduły, guardy, mikrousługi, vs Express i Fastify?"
+        title="NestJS — co to jest? | FOTZ"
         description="NestJS: 6 komponentów (Module/Controller/Service/Guard/Interceptor/Pipe) — DI, TypeORM/Prisma, WebSocket, microservices, GraphQL i kiedy wybrać NestJS."
         canonical="https://www.fotz-studio.pl/blog/nestjs-co-to-jest-moduly-guardy-mikrouslugi-vs-express-fastify"
 

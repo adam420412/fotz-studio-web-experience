@@ -56,7 +56,7 @@ export default function BlogMicroservicesCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Mikroserwisy — co to jest? Architektura microservices vs monolit"
+        title="Mikroserwisy — co to jest? | FOTZ"
         description="Kompletny przewodnik po mikroserwisach: porównanie z monolitem, 5 wzorców architektonicznych, API Gateway i Service Mesh."
         canonical="https://www.fotz-studio.pl/blog/mikroserwisy-co-to-jest"
 

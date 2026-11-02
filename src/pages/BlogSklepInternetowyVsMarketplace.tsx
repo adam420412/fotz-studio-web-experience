@@ -175,7 +175,7 @@ export default function SklepInternetowyVsMarketplace() {
   return (
     <>
       <SEOHead
-        title="Sklep internetowy vs Marketplace - ile zaoszczędzisz? | FOTZ Studio"
+        title="Sklep internetowy vs Marketplace - ile zaoszczędzisz | FOTZ"
         description="Porównanie własnego sklepu internetowego vs Allegro, Amazon. Koszty, prowizje, zyski. Która strategia jest bardziej opłacalna w 2025?"
         canonical="https://www.fotz-studio.pl/blog/sklep-internetowy-vs-marketplace"
 

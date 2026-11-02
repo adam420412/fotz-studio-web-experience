@@ -42,7 +42,7 @@ export default function BlogReact19CoTo() {
   return (
     <Layout>
       <SEOHead
-        title="React 19 — use(), useActionState, React Compiler, Server Actions i Next.js 15?"
+        title="React 19 — use(), useActionState, React Compiler | FOTZ"
         description="6 kluczowych nowości React 19 (use/useActionState/useFormStatus/useOptimistic/React Compiler/ref-prop) i Next.js 15 (Turbopack, PPR, async cookies/headers)."
         canonical="https://www.fotz-studio.pl/blog/react-19-use-hook-useactionstate-compiler-server-actions-nextjs-15-2024"
 

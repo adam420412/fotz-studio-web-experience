@@ -71,7 +71,7 @@ export default function BlogNewsletterCoTo() {
   return (
     <>
       <SEOHead
-        title="Newsletter — co to jest i jak go stworzyć? Poradnik | FOTZ Studio"
+        title="Newsletter — co to jest i jak go stworzyć? Poradnik | FOTZ"
         description="Czym jest newsletter, jak uruchomić mailing, jakie narzędzia wybrać i jak budować listę subskrybentów zgodnie z RODO."
         canonical="https://www.fotz-studio.pl/blog/newsletter-co-to"
 

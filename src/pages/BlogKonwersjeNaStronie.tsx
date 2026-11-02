@@ -46,7 +46,7 @@ export default function BlogKonwersjeNaStronie() {
   return (
     <Layout>
       <SEOHead
-        title="Jak Zwiększyć Konwersję na Stronie - Kompletny Przewodnik po CRO"
+        title="Jak zwiększyć konwersję na stronie — poradnik CRO | FOTZ"
         description="Praktyczny przewodnik po optymalizacji konwersji. Odkryj jak zwiększyć konwersję strony, strategie CRO, testy A/B i narzędzia do wzrostu sprzedaży online."
         ogType="article"
         canonical="https://www.fotz-studio.pl/blog/jak-zwiekszyc-konwersje-na-stronie"

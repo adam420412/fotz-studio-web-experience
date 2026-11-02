@@ -72,7 +72,7 @@ export default function BlogMicroInfluencerCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Micro Influencer — co to jest? Marketing z mikroinfluencerami"
+        title="Micro Influencer — co to jest? | FOTZ"
         description="Kompletny przewodnik po micro influencer marketingu: porównanie z macro, koszty, jak znajdować twórców i mierzyć ROI."
         canonical="https://www.fotz-studio.pl/blog/micro-influencer-marketing-co-to"
 

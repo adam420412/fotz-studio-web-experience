@@ -84,7 +84,7 @@ export default function BlogPricingPageOptimizationCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Optymalizacja Strony Cennikowej — jak zbudować pricing page która konwertuje?"
+        title="Strona cennikowa — jak zbudować pricing page | FOTZ"
         description="Kompletny przewodnik po stronach cennikowych: 6 kluczowych elementów, psychologia cen, anchoring, decoy effect i optymalizacje konwersji."
         canonical="https://www.fotz-studio.pl/blog/optymalizacja-strony-cennikowej"
 

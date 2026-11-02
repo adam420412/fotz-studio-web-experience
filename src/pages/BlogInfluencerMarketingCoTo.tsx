@@ -64,7 +64,7 @@ export default function BlogInfluencerMarketingCoTo() {
   return (
     <>
       <SEOHead
-        title="Influencer Marketing — co to jest i jak działa? | FOTZ Studio"
+        title="Influencer Marketing — co to jest i jak działa | FOTZ"
         description="Influencer Marketing co to jest — wyjaśniamy czym jest marketing influencerski, typy influencerów, koszty współpracy, jak wybrać influencera i mierzyć ROI."
         canonical="https://www.fotz-studio.pl/blog/influencer-marketing-co-to"
 

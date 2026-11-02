@@ -85,7 +85,7 @@ export default function BlogSocialListeningCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Social Listening — co to jest i jak nasłuchiwać mediów społecznościowych?"
+        title="Social Listening — co to jest? | FOTZ"
         description="Kompletny przewodnik po social listening: 6 use cases, 5 narzędzi, kluczowe metryki i różnica vs social monitoring."
         canonical="https://www.fotz-studio.pl/blog/social-listening-co-to"
 

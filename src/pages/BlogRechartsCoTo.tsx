@@ -42,7 +42,7 @@ export default function BlogRechartsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Recharts, Nivo, Chart.js — wykresy i data visualization w React 2024?"
+        title="Recharts, Nivo, Chart.js | FOTZ"
         description="Recharts, Nivo, Tremor, Chart.js (react-chartjs-2), Apache ECharts i @visx — line/bar/pie charts, mapy (react-leaflet, deck.gl) i real-time charts w React."
         canonical="https://www.fotz-studio.pl/blog/recharts-nivo-chartjs-data-visualization-react-wykresy-mapy-2024"
 

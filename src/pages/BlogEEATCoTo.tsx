@@ -93,7 +93,7 @@ export default function BlogEEATCoTo() {
   return (
     <>
       <SEOHead
-        title="E-E-A-T — co to jest? Expertise, Experience, Authority, Trust w SEO"
+        title="E-E-A-T — co to jest? | FOTZ"
         description="E-E-A-T co to jest — wyjaśniamy czym jest Experience, Expertise, Authoritativeness i Trust w SEO, jak poprawić E-E-A-T i dlaczego ważny dla YMYL."
         canonical="https://www.fotz-studio.pl/blog/e-e-a-t-seo"
 

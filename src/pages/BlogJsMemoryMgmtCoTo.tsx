@@ -42,7 +42,7 @@ export default function BlogJsMemoryMgmtCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="JavaScript Memory Management — WeakMap, WeakRef, GC i memory leaks w React 2024?"
+        title="JavaScript Memory Management — WeakMap, WeakRef | FOTZ"
         description="6 konceptów JavaScript memory (Mark-Sweep GC/WeakMap/WeakSet/WeakRef/FinalizationRegistry/Hidden Classes) — memory leaks w React, V8 optymalizacje i narzędzia."
         canonical="https://www.fotz-studio.pl/blog/javascript-memory-management-weakmap-weakref-gc-memory-leaks-react-2024"
 

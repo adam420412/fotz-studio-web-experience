@@ -172,7 +172,7 @@ export default function BlogSEOEcommercePoradnik() {
   return (
     <>
       <SEOHead
-        title="SEO dla e-commerce — kompletny poradnik pozycjonowania sklepu"
+        title="SEO dla e-commerce — poradnik pozycjonowania sklepu | FOTZ"
         description="Jak robić SEO dla sklepu internetowego? Optymalizacja produktów, kategorii, technical SEO dla WooCommerce i Shopify. Poradnik 2025 z checklist dla e-commerce."
         canonical="https://www.fotz-studio.pl/blog/seo-ecommerce-poradnik"
 

@@ -94,7 +94,7 @@ export default function BlogSponsorshipMarketingCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Sponsoring w marketingu — co to jest? Sponsorship marketing i ROI"
+        title="Sponsoring w marketingu — co to jest? | FOTZ"
         description="Kompletny przewodnik po sponsorship marketingu: typy sponsoringu, jak wybrać właściwy obiekt, ROI i typy aktywacji."
         canonical="https://www.fotz-studio.pl/blog/sponsoring-marketing-co-to"
 

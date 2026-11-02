@@ -33,7 +33,7 @@ export default function BlogModeleRozliczenAgencjaSocialMedia() {
   return (
     <Layout>
       <SEOHead
-        title="Modele rozliczeń z agencją social media: abonament, projekt czy success fee?"
+        title="Modele rozliczeń z agencją social media — abonament | FOTZ"
         description="Abonament, projekt czy success fee? Porównujemy modele rozliczeń z agencją social media, z cenami od 2 500 zł netto/mc. Zobacz, co się opłaca."
         canonical={CANONICAL}
         keywords="modele rozliczeń agencja social media, abonament social media, success fee agencja, projekt social media, cennik agencji"

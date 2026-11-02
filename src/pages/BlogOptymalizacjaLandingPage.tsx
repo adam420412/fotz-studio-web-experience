@@ -54,7 +54,7 @@ export default function BlogOptymalizacjaLandingPage() {
   return (
     <Layout>
       <SEOHead
-        title="Optymalizacja landing page — poradnik konwersji 2025 | Fotz.pl"
+        title="Optymalizacja landing page — poradnik konwersji | FOTZ"
         description="Poradnik optymalizacji landing page: elementy, testy A/B, narzędzia, błędy, mobile, szybkość. Zwiększ konwersję o 30–50%."
         canonical="https://www.fotz-studio.pl/blog/optymalizacja-landing-page"
 

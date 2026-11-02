@@ -110,7 +110,7 @@ export default function BlogPerformanceMaxCoTo() {
   return (
     <>
       <SEOHead
-        title="Performance Max — co to jest? Kampanie PMax Google Ads | FOTZ Studio"
+        title="Performance Max — co to jest? | FOTZ"
         description="Performance Max co to jest — wyjaśniamy czym są kampanie PMax w Google Ads, kiedy używać, jak skonfigurować asset group i jak PMax wypada vs Standard Search."
         canonical="https://www.fotz-studio.pl/blog/performance-max-co-to"
 

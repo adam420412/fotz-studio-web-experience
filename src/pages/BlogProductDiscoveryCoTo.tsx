@@ -80,7 +80,7 @@ export default function BlogProductDiscoveryCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Product Discovery — co to jest i jak przeprowadzić? | Fotz.pl"
+        title="Product Discovery — co to jest i jak przeprowadzić | FOTZ"
         description="Kompletny przewodnik po Product Discovery: techniki, Customer Interview, Continuous Discovery i Discovery vs Delivery."
         canonical="https://www.fotz-studio.pl/blog/product-discovery-co-to-jest-jak-przeprowadzic"
 

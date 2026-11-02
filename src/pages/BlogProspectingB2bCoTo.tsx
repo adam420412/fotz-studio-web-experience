@@ -86,7 +86,7 @@ export default function BlogProspectingB2bCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Prospecting B2B — co to jest i jak generować leady? | Fotz.pl"
+        title="Prospecting B2B — co to jest i jak generować leady | FOTZ"
         description="Prospecting B2B — kanały (cold email, LinkedIn, cold calling), jak pisać cold emaile, budować pipeline i sekwencje outreach. Kompletny przewodnik dla Sales."
         canonical="https://www.fotz-studio.pl/blog/prospecting-b2b-generowanie-leadow"
 

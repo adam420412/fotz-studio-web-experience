@@ -42,7 +42,7 @@ export default function BlogWebSecurityCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Web Security — XSS, CSRF, CSP, SQL Injection, OWASP Top 10, Node.js?"
+        title="Web Security — XSS, CSRF, CSP, SQL Injection | FOTZ"
         description="6 obszarów bezpieczeństwa web (XSS/SQL Injection/Auth/Headers/Supply Chain/CSRF) — OWASP Top 10, CSP nonce, bcrypt, Argon2, MFA, HTTPS, CORS i npm audit."
         canonical="https://www.fotz-studio.pl/blog/web-security-xss-csrf-csp-sql-injection-owasp-nodejs-nextjs"
 

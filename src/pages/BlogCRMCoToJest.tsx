@@ -66,7 +66,7 @@ export default function BlogCRMCoToJest() {
   return (
     <>
       <SEOHead
-        title="CRM — co to jest? System CRM dla firmy — poradnik | FOTZ Studio"
+        title="CRM — co to jest? System CRM dla firmy — poradnik | FOTZ"
         description="CRM co to jest — wyjasnamy czym jest system CRM, rodzaje, korzysci, jak wybrac CRM dla malej firmy, koszty wdrozenia i najlepsze systemy."
         canonical="https://www.fotz-studio.pl/blog/crm-co-to-jest"
 

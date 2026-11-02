@@ -66,7 +66,7 @@ export default function BlogGTMStrategyCoTo() {
   return (
     <>
       <SEOHead
-        title="GTM Strategy — co to jest strategia Go-to-Market? | FOTZ Studio"
+        title="GTM Strategy — co to jest strategia Go-to-Market | FOTZ"
         description="GTM Strategy co to jest — wyjasnamy czym jest Go-to-Market Strategy, elementy GTM, jak napisac strategię GTM i czym rozni sie od business planu."
         canonical="https://www.fotz-studio.pl/blog/gtm-strategy-co-to"
 

@@ -42,7 +42,7 @@ export default function BlogBullmqCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="BullMQ, Inngest i job queues — background jobs w Node.js Next.js 2024?"
+        title="BullMQ, Inngest i job queues | FOTZ"
         description="6 rozwiązań job queue (BullMQ/Inngest/Trigger.dev/Qstash/Temporal/pg-boss) — Redis, managed queues, priority, flows, rate limiting i praktyczne zastosowania."
         canonical="https://www.fotz-studio.pl/blog/bullmq-inngest-job-queues-background-jobs-nodejs-nextjs-2024"
 

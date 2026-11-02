@@ -42,7 +42,7 @@ export default function BlogTauriElectronCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Tauri vs Electron vs Wails — desktop apps z React i TypeScript 2024?"
+        title="Tauri vs Electron vs Wails | FOTZ"
         description="Tauri (Rust + WebView), Electron (Chromium + Node.js), Wails (Go), Neutralino, PWA i Flutter Desktop — porównanie desktop framework dla web developerów 2024."
         canonical="https://www.fotz-studio.pl/blog/tauri-electron-wails-desktop-apps-react-typescript-2024"
 

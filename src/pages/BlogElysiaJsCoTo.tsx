@@ -42,7 +42,7 @@ export default function BlogElysiaJsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Elysia.js, Hono i Bun 1.x — ultra-szybkie frameworki backend TypeScript 2024?"
+        title="Elysia.js, Hono i Bun 1.x | FOTZ"
         description="6 frameworków backend TypeScript (Elysia/Hono/Fastify/NestJS/Express/H3) — wydajność, runtime, end-to-end types i kiedy wybrać w 2024."
         canonical="https://www.fotz-studio.pl/blog/elysia-js-hono-bun-backend-typescript-frameworki-2024"
 

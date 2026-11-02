@@ -114,7 +114,7 @@ export default function BlogRevenueModelCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Model Przychodów — co to jest? Revenue Model rodzaje i przykłady"
+        title="Model Przychodów — co to jest? | FOTZ"
         description="Kompletny przewodnik po modelach przychodów: 8 typów z przykładami, kluczowe metryki i jak wybrać model dla startupu lub biznesu."
         canonical="https://www.fotz-studio.pl/blog/revenue-model-co-to"
 

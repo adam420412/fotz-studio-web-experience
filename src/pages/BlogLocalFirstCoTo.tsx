@@ -42,7 +42,7 @@ export default function BlogLocalFirstCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Local-First Software — Jazz.tools, PowerSync, ElectricSQL, Dexie i PGlite 2024?"
+        title="Local-First Software — Jazz.tools, PowerSync | FOTZ"
         description="6 narzędzi local-first (Jazz/PowerSync/ElectricSQL/Dexie/PGlite/Automerge) — CRDT, Postgres sync, IndexedDB i offline-first architecture patterns."
         canonical="https://www.fotz-studio.pl/blog/local-first-jazz-tools-powersync-electricsql-dexie-pglite-offline-2024"
 

@@ -51,7 +51,7 @@ export default function BlogTechnicalDebtCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Dług techniczny — co to jest, jak mierzyć, zarządzać i redukować?"
+        title="Dług techniczny — co to jest? | FOTZ"
         description="Dług techniczny: rodzaje, pomiar (SonarQube, Codescene), strategie redukcji (Strangler Fig, Boy Scout Rule), jak rozmawiać z biznesem i zapobiegać."
         canonical="https://www.fotz-studio.pl/blog/dlug-techniczny-co-to-jest-jak-mierzyc-zarzadzac-redukowac"
 

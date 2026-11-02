@@ -63,7 +63,7 @@ const BlogTrendyEcommerce2027 = () => {
   return (
     <>
       <SEOHead
-        title="Trendy E-commerce 2027 – Co Zmieni Handel Internetowy? [Raport]"
+        title="Trendy e-commerce 2027 — co zmieni handel online? | FOTZ"
         description="Odkryj najważniejsze trendy e-commerce na 2027 rok. AI, social commerce, quick commerce, sustainability i wiele więcej. Kompletny raport dla Twojego biznesu."
         canonical="https://www.fotz-studio.pl/blog/trendy-ecommerce-2027"
         ogType="article"

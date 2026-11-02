@@ -214,7 +214,7 @@ export default function BlogMarketingAutomation() {
     <>
       <SEOHead
         title="Automatyzacja marketingu — narzędzia | Fotz Studio"
-        description="Odkryj najlepsze narzędzia do automatyzacji marketingu. Porównanie HubSpot, Marketo, ActiveCampaign, GetResponse, MailerLite i Klaviyo: ceny, funkcje i dla kogo jest każde z nich."
+        description="Najlepsze narzędzia marketing automation: HubSpot, Marketo, ActiveCampaign, GetResponse, MailerLite, Klaviyo — ceny i funkcje."
         canonical="https://www.fotz-studio.pl/blog/marketing-automation"
 
         keywords="Automatyzacja marketingu narzedzia, Automatyzacja marketingu narzedzia poradnik, Automatyzacja marketingu narzedzia strategia, Automatyzacja marketingu narzedzia jak zrobić, Automatyzacja marketingu narzedzia marketing, Automatyzacja marketingu narzedzia przykłady, Automatyzacja marketingu narzedzia w Polsce"

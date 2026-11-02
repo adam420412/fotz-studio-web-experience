@@ -42,7 +42,7 @@ export default function BlogHttpClientsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="HTTP clients TypeScript — Fetch, Axios, ky, ofetch i TanStack Query 2024?"
+        title="HTTP clients TypeScript — Fetch, Axios, ky | FOTZ"
         description="6 HTTP clients (Fetch/Axios/ky/ofetch/TanStack Query/SWR) — bundle size, TypeScript generics, interceptory, retry, Zod validation i best practices."
         canonical="https://www.fotz-studio.pl/blog/http-clients-typescript-fetch-axios-ky-ofetch-tanstack-query-2024"
 

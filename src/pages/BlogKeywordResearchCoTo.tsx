@@ -68,7 +68,7 @@ export default function BlogKeywordResearchCoTo() {
   return (
     <>
       <SEOHead
-        title="Keyword Research — co to jest? Badanie słów kluczowych | FOTZ Studio"
+        title="Keyword Research — co to jest? | FOTZ"
         description="Keyword research co to jest — wyjaśniamy jak przeprowadzić badanie słów kluczowych, search intent, keyword difficulty i jak znaleźć słowa kluczowe konkurencji."
         canonical="https://www.fotz-studio.pl/blog/keyword-research-co-to"
 

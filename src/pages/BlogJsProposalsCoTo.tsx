@@ -42,7 +42,7 @@ export default function BlogJsProposalsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Nowe funkcje JavaScript — ES2024, TC39 proposals, Temporal API i Iterator Helpers 2024?"
+        title="Nowe funkcje JavaScript — ES2024, TC39 proposals | FOTZ"
         description="ES2024 (Object.groupBy, Array.toSorted), TC39 Stage 3 (Decorators, Iterator Helpers, Temporal API), Pattern Matching, Records/Tuples i nowoczesne JS metody."
         canonical="https://www.fotz-studio.pl/blog/nowe-funkcje-javascript-es2024-tc39-proposals-temporal-iterator-helpers"
 

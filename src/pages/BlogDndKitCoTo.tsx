@@ -42,8 +42,8 @@ export default function BlogDndKitCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="dnd-kit — Drag and Drop React, Kanban Board, SortableContext i Pragmatic DnD 2024?"
-        description="6 bibliotek DnD (dnd-kit/Pragmatic DnD/react-beautiful-dnd/react-dnd/Framer Motion Reorder/@use-gesture) — sortable listy, kanban między kolumnami, Next.js hydration."
+        title="dnd-kit — Drag and Drop React, Kanban Board | FOTZ"
+        description="6 bibliotek drag and drop: dnd-kit, Pragmatic DnD, react-dnd, Framer Motion — sortable listy, kanban i Next.js hydration."
         canonical="https://www.fotz-studio.pl/blog/dnd-kit-drag-drop-react-sortable-kanban-pragmatic-dnd-2024"
 
         keywords="dnd-kit co to jest, dnd-kit jak działa, dnd-kit tutorial, dnd-kit przykład, czym jest dnd-kit, dnd-kit dokumentacja, dnd-kit przewodnik"

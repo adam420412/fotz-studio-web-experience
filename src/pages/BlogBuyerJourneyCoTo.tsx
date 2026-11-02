@@ -81,7 +81,7 @@ export default function BlogBuyerJourneyCoTo() {
   return (
     <>
       <SEOHead
-        title="Buyer Journey — co to jest? Ścieżka zakupowa klienta | FOTZ Studio"
+        title="Buyer Journey — co to jest? Ścieżka zakupowa klienta | FOTZ"
         description="Buyer journey co to jest — wyjaśniamy czym jest ścieżka zakupowa, etapy (Awareness, Consideration, Decision), mapowanie buyer journey, B2B vs B2C i dark funnel."
         canonical="https://www.fotz-studio.pl/blog/buyer-journey-co-to"
 

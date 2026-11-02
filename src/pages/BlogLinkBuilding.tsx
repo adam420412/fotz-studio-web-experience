@@ -66,7 +66,7 @@ export default function BlogLinkBuilding() {
   return (
     <>
       <SEOHead
-        title="Link building — co to jest i jak zdobywać backlinki? | FOTZ Studio"
+        title="Link building — co to jest i jak zdobywać backlinki | FOTZ"
         description="Link building co to jest — wyjaśniamy jak działają backlinki w SEO, najlepsze metody zdobywania linków, czego unikać i jak sprawdzić profil linkowy strony."
         canonical="https://www.fotz-studio.pl/blog/link-building-co-to"
 

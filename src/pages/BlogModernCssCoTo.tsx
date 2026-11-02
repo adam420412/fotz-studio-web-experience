@@ -42,8 +42,8 @@ export default function BlogModernCssCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Modern CSS — Container Queries, :has(), @layer, View Transitions i Scroll Animations 2024?"
-        description="6 funkcji nowoczesnego CSS (Container Queries/:has()/@layer/CSS Nesting/View Transitions/Scroll-driven Animations) — component queries, parent selectors, cascade layers i animacje bez JavaScript."
+        title="Modern CSS — Container Queries, :has(), @layer | FOTZ"
+        description="6 funkcji nowoczesnego CSS: Container Queries, :has(), @layer, Nesting, View Transitions — animacje i parent selectors bez JavaScript."
         canonical="https://www.fotz-studio.pl/blog/modern-css-container-queries-has-view-transitions-scroll-driven-2024"
 
         keywords="Modern CSS co to jest, Modern CSS definicja, czym jest Modern CSS, Modern CSS przykłady, jak działa Modern CSS, Modern CSS znaczenie, Modern CSS przewodnik"

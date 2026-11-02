@@ -74,7 +74,7 @@ export default function BlogDealDeskCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Deal Desk — co to jest i jak działa w sprzedaży SaaS? | Fotz.pl"
+        title="Deal Desk — co to jest i jak działa w sprzedaży SaaS | FOTZ"
         description="Deal Desk: funkcje, proces zatwierdzania ofert, kiedy wdrożyć, jak zorganizować i kluczowe metryki. Kompletny przewodnik dla firm SaaS i enterprise."
         canonical="https://www.fotz-studio.pl/blog/deal-desk-co-to-jest-sprzedaz-saas-enterprise"
 

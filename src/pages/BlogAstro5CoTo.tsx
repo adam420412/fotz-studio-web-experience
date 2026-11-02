@@ -42,7 +42,7 @@ export default function BlogAstro5CoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Astro 5 — Content Layer, Server Islands, Actions i porównanie z Next.js 2024?"
+        title="Astro 5 — Content Layer, Server Islands | FOTZ"
         description="Astro 5 nowości: Content Layer API, Server Islands, Astro Actions, Astro DB, View Transitions — kiedy Astro zamiast Next.js i jak działają wyspy serwerowe."
         canonical="https://www.fotz-studio.pl/blog/astro-5-content-layer-server-islands-actions-vs-nextjs-2024"
 

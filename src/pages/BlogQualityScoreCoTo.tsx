@@ -83,7 +83,7 @@ export default function BlogQualityScoreCoTo() {
   return (
     <>
       <SEOHead
-        title="Quality Score — co to jest? Google Ads Quality Score | FOTZ Studio"
+        title="Quality Score — co to jest? Google Ads Quality Score | FOTZ"
         description="Quality Score co to jest — wyjaśniamy czym jest Wynik Jakości w Google Ads, jak wpływa na CPC, jak sprawdzić QS i jak go poprawić dla niższych kosztów reklam."
         canonical="https://www.fotz-studio.pl/blog/quality-score-co-to"
 

@@ -65,7 +65,7 @@ export default function BlogCsatCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="CSAT — co to jest? Customer Satisfaction Score i jak go mierzyć"
+        title="CSAT — co to jest i jak mierzyć satysfakcję klienta | FOTZ"
         description="CSAT — definicja, formuła, porównanie z NPS i CES, benchmarki branżowe, jak poprawić wynik i best practices zbierania feedbacku. Kompletny przewodnik po CSAT."
         canonical="https://www.fotz-studio.pl/blog/csat-customer-satisfaction-score-co-to"
 

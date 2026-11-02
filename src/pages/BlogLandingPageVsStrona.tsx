@@ -96,7 +96,7 @@ export default function BlogLandingPageVsStrona() {
     <Layout>
       <SEOHead
         title="Landing page vs strona internetowa | Fotz Studio"
-        description="Kompleksowy przewodnik: landing page vs strona internetowa. Dowiedz się, co wybrać dla kampanii reklamowej, e-commerce lub portfolio. Porównanie funkcjonalności, kosztów, czasu realizacji i potencjału konwersji."
+        description="Landing page czy strona internetowa — co wybrać do kampanii, e-commerce lub portfolio? Porównanie kosztów, czasu i konwersji."
         canonical="https://www.fotz-studio.pl/blog/landing-page-vs-strona-internetowa"
         ogType="article"
 

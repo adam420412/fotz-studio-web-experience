@@ -36,7 +36,7 @@ export default function BlogUXEcommerce() {
   return (
     <Layout>
       <SEOHead
-        title="UX E-commerce — Jak Projektować Sklep Internetowy pod Konwersję?"
+        title="UX e-commerce — projektowanie sklepu pod konwersję | FOTZ"
         description="Kompletny poradnik UX/UI dla sklepów internetowych. Jak projektować sklepy e-commerce zwiększające konwersję."
         ogType="article"
         canonical="https://www.fotz-studio.pl/blog/ux-ui-ecommerce"

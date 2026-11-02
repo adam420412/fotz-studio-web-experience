@@ -67,8 +67,8 @@ export default function BlogPozycjonowanieGoogleMaps() {
   return (
     <Layout>
       <SEOHead
-        title="Pozycjonowanie w Google Maps — kompletny poradnik Local SEO i optymalizacji profilu"
-        description="Poradnik pozycjonowania Google Maps: jak działają czynniki rankingowe, optymalizacja Google Moja Firma, zbieranie opinii, NAP consistency, lokalne cytowania i monitoring wyników."
+        title="Pozycjonowanie Google Maps — poradnik Local SEO | FOTZ"
+        description="Pozycjonowanie w Google Maps: czynniki rankingowe, optymalizacja profilu firmy, zbieranie opinii, NAP i lokalne cytowania."
         canonical="https://www.fotz-studio.pl/blog/pozycjonowanie-google-maps"
 
         keywords="Pozycjonowanie w Google Maps, Pozycjonowanie w Google Maps poradnik, Pozycjonowanie w Google Maps strategia, Pozycjonowanie w Google Maps jak zrobić, Pozycjonowanie w Google Maps marketing, Pozycjonowanie w Google Maps przykłady, Pozycjonowanie w Google Maps w Polsce"

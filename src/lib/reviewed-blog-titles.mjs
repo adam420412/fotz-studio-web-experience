@@ -1,0 +1,37 @@
+/** Reviewed SEO titles for CMS articles whose titles exceed the ~60-char SERP limit.
+ * Applied only to the meta title in getBlogMetadata; the on-page H1 stays intact.
+ * Values must stay <=53 chars so `title + " | FOTZ"` fits the limit.
+ */
+export const reviewedBlogTitles = {
+  "sprawdzonych-porad-dla-sklepow-internetowych": "Porady dla sklepów internetowych na większą sprzedaż",
+  "content-marketing-dla-firm-zwieksz-sprzedaz-rozpoznawalnosc": "Content marketing dla firm — sprzedaż i zasięgi",
+  "zwieksz-sprzedaz-sklep-internetowy-strategie": "Jak zwiększyć sprzedaż w sklepie internetowym?",
+  "marketing-dla-firm-produkcyjnych-strategie-wzrost": "Marketing dla firm produkcyjnych — strategie",
+  "optymalizacja-strony-internetowej-przewodnik": "Optymalizacja strony internetowej — poradnik",
+  "automatyzacja-marketingu-przewodnik-wzrostu-efektywnosci": "Automatyzacja marketingu — wzrost i efektywność",
+  "wizualizacje-3d-ecommerce": "Wizualizacje i konfiguratory 3D w e-commerce",
+  "efektywny-przewodnik-reklama-internet-male-firmy": "Reklama w internecie dla małych firm — poradnik",
+  "automatyzacja-marketingu-dla-msp-wzrost-i-oszczednosc-czasu": "Automatyzacja marketingu dla MŚP — wzrost",
+  "formy-reklamy-online-skuteczne-rozwiazania-dla-msp-w-polsce": "Formy reklamy online dla MŚP w Polsce",
+  "jak-opracowac-strategie-content-marketingu-dla-wzrostu-marki": "Strategia content marketingu dla wzrostu marki",
+  "jak-planowac-content-marketing-i-budowac-skuteczna-strategie": "Jak planować content marketing? Skuteczna strategia",
+  "konwersja-w-marketingu-skuteczne-strategie-dla-malych-firm": "Konwersja w marketingu — strategie dla małych firm",
+  "proces-tworzenia-tresci-seo-dla-firm": "Tworzenie treści SEO dla firm krok po kroku",
+  "strategia-content-marketingu-skuteczny-przewodnik-dla-firm": "Strategia content marketingu — poradnik dla firm",
+  "google-business-profile-optymalizacja-przewodnik-dla-firm": "Google Business Profile — optymalizacja profilu",
+  "marketing-internetowy-dla-malej-firmy-skuteczne-strategie": "Marketing internetowy dla małej firmy — strategie",
+  "prowadzenie-instagrama-dla-firm-sposob-na-skuteczna-marke": "Prowadzenie Instagrama dla firm — poradnik",
+  "skuteczna-optymalizacja-dzialan-online-dla-wyzszych-zyskow": "Optymalizacja działań online dla wyższych zysków",
+  "automatyzacja-marketingu-klucz-do-efektywnosci-i-wzrostu": "Automatyzacja marketingu — efektywność i wzrost",
+  "kalendarz-publikacji-social-media-klucz-do-wzrostu-marki": "Kalendarz publikacji social media — wzrost marki",
+  "optymalizacja-strony-wiecej-konwersji-i-wyzsze-przychody": "Optymalizacja strony — więcej konwersji i przychodów",
+  "co-to-jest-pozycjonowanie-kompletny-przewodnik-dla-firm": "Co to jest pozycjonowanie? Poradnik dla firm",
+  "czym-sa-kampanie-reklamowe-i-jak-skutecznie-je-prowadzic": "Czym są kampanie reklamowe i jak je prowadzić?",
+  "lista-korzysci-marketingu-internetowego-dla-msp-w-polsce": "Korzyści marketingu internetowego dla MŚP",
+  "ai-w-marketingu-firm-jak-zwiekszyc-efektywnosc-dzialan": "AI w marketingu firm — jak zwiększyć efektywność",
+  "najlepsze-praktyki-seo-zwieksz-widocznosc-swojej-firmy": "Najlepsze praktyki SEO — większa widoczność firmy",
+  "skuteczne-wykorzystanie-social-media-w-marketingu-firmy": "Social media w marketingu firmy — jak wykorzystać",
+  "co-to-jest-content-marketing-i-jak-rozwija-twoj-biznes": "Co to jest content marketing? Rozwój biznesu",
+  "ile-kosztuje-strona-internetowa-realne-koszty-i-zwrot": "Ile kosztuje strona internetowa? Koszty i zwrot",
+  "jak-budowac-skuteczna-strategie-marketingowa-dla-firmy": "Jak budować strategię marketingową dla firmy?",
+};

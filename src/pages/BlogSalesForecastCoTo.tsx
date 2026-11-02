@@ -103,7 +103,7 @@ export default function BlogSalesForecastCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Sales Forecast — co to jest i jak prognozować sprzedaż? | Fotz.pl"
+        title="Sales Forecast — co to jest? | FOTZ"
         description="Sales forecast (prognoza sprzedaży) — metody forecastingu, commit vs upside, narzędzia AI i ryzyka. Kompletny przewodnik dla Sales Managerów i VP Sales."
         canonical="https://www.fotz-studio.pl/blog/sales-forecast-prognoza-sprzedazy"
 

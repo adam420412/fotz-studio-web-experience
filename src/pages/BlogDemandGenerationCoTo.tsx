@@ -65,7 +65,7 @@ export default function BlogDemandGenerationCoTo() {
   return (
     <>
       <SEOHead
-        title="Demand Generation — co to jest i jak budowac popyt? | FOTZ Studio"
+        title="Demand Generation — co to jest i jak budowac popyt | FOTZ"
         description="Demand Generation co to jest — wyjasnamy czym jest demand gen, roznica vs lead generation, dark funnel, strategie budowania popytu i metryki demand gen."
         canonical="https://www.fotz-studio.pl/blog/demand-generation-co-to"
 

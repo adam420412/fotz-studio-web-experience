@@ -66,7 +66,7 @@ export default function BlogJobsToBeDoneCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Jobs To Be Done (JTBD) — co to jest i jak stosować? | Fotz.pl"
+        title="Jobs To Be Done (JTBD) — co to jest i jak stosować | FOTZ"
         description="Jobs To Be Done (JTBD) — teoria innowacji Christensena, typy jobów, Switch Interview i zastosowanie w product development. Kompletny przewodnik."
         canonical="https://www.fotz-studio.pl/blog/jobs-to-be-done-jtbd-co-to-jest"
 

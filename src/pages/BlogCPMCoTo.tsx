@@ -65,7 +65,7 @@ export default function BlogCPMCoTo() {
   return (
     <>
       <SEOHead
-        title="CPM — co to jest? Koszt tysiąca wyświetleń reklam | FOTZ Studio"
+        title="CPM — co to jest? Koszt tysiąca wyświetleń reklam | FOTZ"
         description="CPM co to jest — wyjaśniamy czym jest Cost Per Mille, jak obliczyć CPM, ile wynosi w Polsce i kiedy używać CPM vs CPC w kampaniach reklamowych."
         canonical="https://www.fotz-studio.pl/blog/cpm-co-to"
 

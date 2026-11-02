@@ -84,7 +84,7 @@ export default function BlogMoatCoToJest() {
   return (
     <Layout>
       <SEOHead
-        title="Moat (przewaga konkurencyjna) — co to jest w biznesie? | Fotz.pl"
+        title="Moat (przewaga konkurencyjna) — co to jest w biznesie | FOTZ"
         description="Economic moat — rodzaje przewagi konkurencyjnej (network effects, switching costs, cost advantage), jak zidentyfikować moat i wpływ na wycenę firmy."
         canonical="https://www.fotz-studio.pl/blog/moat-przewaga-konkurencyjna-co-to-jest"
 

@@ -120,7 +120,7 @@ export default function BlogFotografiaBiznesowa() {
   return (
     <Layout>
       <SEOHead
-        title="Fotografia biznesowa i firmowa — co to jest, ile kosztuje, jak przygotowac sesje?"
+        title="Fotografia biznesowa i firmowa — co to jest? | FOTZ"
         description="Kompletny przewodnik po fotografii biznesowej. Dowiedz się wszystkiego o fotografii korporacyjnej, cenach, rodzajach sesji i przygotowaniu do zdjęć."
         canonical="https://www.fotz-studio.pl/blog/fotografia-biznesowa"
         keywords="fotografia biznesowa, fotografia firmowa, fotografia korporacyjna, headshoty, sesja biznesowa"

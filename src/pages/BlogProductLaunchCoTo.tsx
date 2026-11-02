@@ -91,7 +91,7 @@ export default function BlogProductLaunchCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Product Launch — co to jest i jak zaplanować premierę produktu?"
+        title="Product Launch — co to jest? | FOTZ"
         description="Kompletny przewodnik po product launch: 3 fazy, checklist, kanały komunikacji i metryki sukcesu premiery."
         canonical="https://www.fotz-studio.pl/blog/product-launch-co-to"
 

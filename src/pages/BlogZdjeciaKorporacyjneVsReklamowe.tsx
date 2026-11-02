@@ -34,7 +34,7 @@ export default function BlogZdjeciaKorporacyjneVsReklamowe() {
   return (
     <Layout>
       <SEOHead
-        title="Zdjęcia korporacyjne vs reklamowe: czym się różnią i co wybrać"
+        title="Zdjęcia korporacyjne vs reklamowe — co wybrać? | FOTZ"
         description="Zdjęcia korporacyjne czy reklamowe? Sprawdź kluczowe różnice i dowiedz się, które zdjęcia wybrać dla swojej firmy."
         canonical={CANONICAL}
         keywords="zdjęcia korporacyjne, zdjęcia reklamowe, sesja wizerunkowa, sesja produktowa, fotografia biznesowa, sesja firmowa Poznań"

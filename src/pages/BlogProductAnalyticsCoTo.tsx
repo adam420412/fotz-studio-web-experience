@@ -119,7 +119,7 @@ export default function BlogProductAnalyticsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Product Analytics — co to jest i jak mierzyć zachowania użytkowników?"
+        title="Product Analytics — co to jest? | FOTZ"
         description="Kompletny przewodnik po product analytics: 6 kategorii metryk, 5 typów analiz (funnel, cohort, path, segmentation, feature adoption) i narzędzia."
         canonical="https://www.fotz-studio.pl/blog/product-analytics-co-to"
 

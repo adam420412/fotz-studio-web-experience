@@ -41,7 +41,7 @@ export default function BlogTanstackRouterCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="TanStack Router, React Router v7 i type-safe routing w React 2024"
+        title="TanStack Router — type-safe routing w React | FOTZ"
         description="6 routerów React (TanStack Router/React Router v7/v6/Next.js/Wouter/Expo Router) — type-safe params, search params, loaders i file-based routing."
         canonical="https://www.fotz-studio.pl/blog/tanstack-router-react-router-v7-type-safe-routing-2024"
 

@@ -42,7 +42,7 @@ export default function BlogRtlTestingCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="React Testing Library — queries, user-event, mocking i async testing 2024?"
+        title="React Testing Library — queries, user-event | FOTZ"
         description="6 queries RTL (getByRole/getByLabelText/getByText/findBy/queryBy/getByTestId) — user-event v14, MSW mocking, async testing, hooks testing i RTL best practices."
         canonical="https://www.fotz-studio.pl/blog/react-testing-library-queries-user-event-mocking-async-2024"
 

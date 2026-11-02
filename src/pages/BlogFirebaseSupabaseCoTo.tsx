@@ -42,7 +42,7 @@ export default function BlogFirebaseSupabaseCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Firebase vs Supabase vs Convex — BaaS porównanie 2024, co wybrać?"
+        title="Firebase vs Supabase vs Convex — BaaS porównanie | FOTZ"
         description="Firebase (Firestore), Supabase (PostgreSQL + RLS), Convex (reactive), PocketBase (self-host), Appwrite, Nhost — porównanie BaaS dla startupów i projektów 2024."
         canonical="https://www.fotz-studio.pl/blog/firebase-supabase-convex-baas-porownanie-co-wybrac-2024"
 

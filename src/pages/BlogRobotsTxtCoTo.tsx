@@ -88,7 +88,7 @@ export default function BlogRobotsTxtCoTo() {
   return (
     <>
       <SEOHead
-        title="Robots.txt — co to jest i jak poprawnie skonfigurować? | FOTZ Studio"
+        title="Robots.txt — co to jest i jak poprawnie skonfigurować | FOTZ"
         description="Robots.txt co to jest — wyjaśniamy czym jest plik robots.txt, jak go skonfigurować, co blokować, różnica vs noindex i wpływ na SEO."
         canonical="https://www.fotz-studio.pl/blog/robots-txt-co-to"
 

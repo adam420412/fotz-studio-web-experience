@@ -84,7 +84,7 @@ export default function BlogBrandArchitectureCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Architektura Marki — co to jest i jak zarządzać portfolio marek?"
+        title="Architektura Marki — co to jest? | FOTZ"
         description="Kompletny przewodnik po architekturze marki: 4 modele (Branded House vs House of Brands vs Endorsed vs Sub-brand), brand extension i przykłady firm."
         canonical="https://www.fotz-studio.pl/blog/architektura-marki-co-to"
 

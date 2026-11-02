@@ -90,7 +90,7 @@ export default function BlogMarketResearchCoTo() {
   return (
     <>
       <SEOHead
-        title="Market Research — co to jest? Badanie rynku w biznesie | FOTZ Studio"
+        title="Market Research — co to jest? | FOTZ"
         description="Czym jest market research, metody (jakościowe vs ilościowe), jak przeprowadzić, ile kosztuje, narzędzia i zastosowania w strategii marketingowej."
         canonical="https://www.fotz-studio.pl/blog/market-research-co-to"
 

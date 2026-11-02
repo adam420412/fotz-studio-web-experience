@@ -48,7 +48,7 @@ export default function BlogSalesCompCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Sales Compensation — jak projektować plan prowizyjny? | Fotz.pl"
+        title="Sales Compensation — jak projektować plan prowizyjny | FOTZ"
         description="Sales compensation plan: OTE, base vs variable split, acceleratory, quota setting i najczęstsze błędy. Jak projektować plany prowizyjne dla AE, SDR i CSM."
         canonical="https://www.fotz-studio.pl/blog/sales-compensation-plan-prowizyjny-co-to-jest"
 

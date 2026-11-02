@@ -75,7 +75,7 @@ export default function BlogKonwersjaCoTo() {
   return (
     <>
       <SEOHead
-        title="Konwersja — co to jest i jak zwiększyć współczynnik konwersji?"
+        title="Konwersja — co to jest? | FOTZ"
         description="Czym jest konwersja w marketingu, jak mierzyć współczynnik konwersji, benchmarki dla e-commerce i B2B oraz metody CRO (optymalizacji konwersji)."
         canonical="https://www.fotz-studio.pl/blog/konwersja-co-to"
 

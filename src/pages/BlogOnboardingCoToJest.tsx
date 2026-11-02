@@ -71,7 +71,7 @@ export default function BlogOnboardingCoToJest() {
   return (
     <>
       <SEOHead
-        title="Onboarding — co to jest i jak go zaprojektowac? | FOTZ Studio"
+        title="Onboarding — co to jest i jak go zaprojektowac | FOTZ"
         description="Onboarding co to jest — wyjasnamy czym jest onboarding klienta i pracownika, jak zaprojektowac onboarding w SaaS, Time to Value i narzedzia do onboardingu."
         canonical="https://www.fotz-studio.pl/blog/onboarding-co-to-jest"
 

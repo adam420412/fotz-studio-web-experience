@@ -65,7 +65,7 @@ export default function BlogCustomerJourneyCoTo() {
   return (
     <>
       <SEOHead
-        title="Customer Journey — co to jest? Mapa podrozy klienta | FOTZ Studio"
+        title="Customer Journey — co to jest? Mapa podrozy klienta | FOTZ"
         description="Customer Journey co to jest — wyjasnamy czym jest podrozz klienta, jak stworzyc Customer Journey Map, etapy, touchpointy i metryki."
         canonical="https://www.fotz-studio.pl/blog/customer-journey-co-to"
 

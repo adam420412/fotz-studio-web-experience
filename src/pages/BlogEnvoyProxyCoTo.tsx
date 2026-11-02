@@ -42,7 +42,7 @@ export default function BlogEnvoyProxyCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Envoy Proxy — co to jest, xDS API, service mesh, rate limiting, circuit breaking?"
+        title="Envoy Proxy — co to jest? | FOTZ"
         description="Envoy Proxy: xDS API, sidecar w service mesh (Istio/Consul), load balancing, circuit breaking, outlier detection, rate limiting, WASM filters i ext-proc."
         canonical="https://www.fotz-studio.pl/blog/envoy-proxy-co-to-jest-xds-api-service-mesh-rate-limiting-circuit-breaking"
 

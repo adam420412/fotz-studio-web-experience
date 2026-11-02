@@ -57,7 +57,7 @@ export default function BlogPostmortemCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Postmortem — co to jest i jak przeprowadzać analizę po incydencie?"
+        title="Postmortem — co to jest? | FOTZ"
         description="Postmortem (analiza po incydencie) — definicja, blameless culture, struktura 8 sekcji, przykład 5 Whys i jak śledzić action items. Przewodnik po RCA i SRE."
         canonical="https://www.fotz-studio.pl/blog/postmortem-analiza-incydentu"
 

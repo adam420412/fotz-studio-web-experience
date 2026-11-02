@@ -66,7 +66,7 @@ export default function BlogREGONCoToJest() {
   return (
     <>
       <SEOHead
-        title="REGON — co to jest? Numer identyfikacyjny firmy | FOTZ Studio"
+        title="REGON — co to jest? Numer identyfikacyjny firmy | FOTZ"
         description="REGON co to jest — wyjasnamy czym jest numer REGON, jak sprawdzic REGON firmy, roznica REGON vs NIP i kiedy podawac REGON w dokumentach."
         canonical="https://www.fotz-studio.pl/blog/regon-co-to-jest"
 

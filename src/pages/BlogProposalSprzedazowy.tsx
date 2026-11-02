@@ -96,7 +96,7 @@ export default function BlogProposalSprzedazowy() {
   return (
     <Layout>
       <SEOHead
-        title="Proposal sprzedażowy — jak pisać skuteczną ofertę B2B? | Fotz.pl"
+        title="Proposal sprzedażowy — jak pisać skuteczną ofertę B2B | FOTZ"
         description="Proposal sprzedażowy B2B — struktura oferty handlowej, jak prezentować pricing, ROI i następne kroki. Kompletny przewodnik dla handlowców enterprise."
         canonical="https://www.fotz-studio.pl/blog/proposal-sprzedazowy-oferta-handlowa-b2b"
 

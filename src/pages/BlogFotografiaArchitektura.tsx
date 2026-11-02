@@ -86,7 +86,7 @@ export default function BlogFotografiaArchitektura() {
     <>
       <SEOHead
         title="Fotografia architektury i wnętrz - jak wykonać ją dobrze?"
-        description="Kompletny poradnik fotografii architektonicznej i wnętrz: typy sesji, ceny, sprzęt, techniki i to, kiedy wynająć profesjonalistę. Dowiedz się, jak dobre zdjęcia wpływają na sprzedaż nieruchomości i wizerunek architekta."
+        description="Fotografia architektury i wnętrz: typy sesji, ceny, sprzęt i techniki. Jak dobre zdjęcia wpływają na sprzedaż nieruchomości i wizerunek."
         ogType="article"
         canonical="https://www.fotz-studio.pl/blog/fotografia-architektury-wnetrz"
         keywords="fotografia architektury, fotografia wnętrz, fotografia nieruchomości, wirtualny spacer 360, fotografia hotelowa, cena sesji architektonicznej"

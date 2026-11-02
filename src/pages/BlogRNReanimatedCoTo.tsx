@@ -42,7 +42,7 @@ export default function BlogRNReanimatedCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="React Native Reanimated, Gesture Handler i Skia | Fotz Studio"
+        title="React Native Reanimated, Gesture Handler i Skia | FOTZ"
         description="6 bibliotek React Native (Reanimated/GestureHandler/Skia/Screens/FlashList/SharedElement) — worklets, UI thread animations, natywne gesty i 2D graphics."
         canonical="https://www.fotz-studio.pl/blog/react-native-reanimated-gesture-handler-skia-animacje-gesty-2024"
 

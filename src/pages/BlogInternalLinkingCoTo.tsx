@@ -60,7 +60,7 @@ export default function BlogInternalLinkingCoTo() {
   return (
     <>
       <SEOHead
-        title="Internal Linking — co to jest i jak wpływa na SEO? | FOTZ Studio"
+        title="Internal Linking — co to jest i jak wpływa na SEO | FOTZ"
         description="Internal linking co to jest — wyjaśniamy czym jest linkowanie wewnętrzne, jak wpływa na SEO, pillar pages, silosy treści i jak audytować linki wewnętrzne."
         canonical="https://www.fotz-studio.pl/blog/internal-linking-co-to"
 

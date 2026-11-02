@@ -64,7 +64,7 @@ export default function BlogRevOpsCoTo() {
   return (
     <>
       <SEOHead
-        title="RevOps — co to jest? Revenue Operations w firmie SaaS | FOTZ Studio"
+        title="RevOps — co to jest? Revenue Operations w firmie SaaS | FOTZ"
         description="RevOps co to jest — wyjaśniamy czym jest Revenue Operations, różnica RevOps vs Sales Ops, narzędzia RevOps, kiedy wdrożyć i kluczowe KPI."
         canonical="https://www.fotz-studio.pl/blog/revops-co-to-jest"
 

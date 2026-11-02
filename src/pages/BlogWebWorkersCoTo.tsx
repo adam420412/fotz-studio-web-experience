@@ -43,7 +43,7 @@ export default function BlogWebWorkersCoTo() {
     <Layout>
       <SEOHead
         title="Web Workers, Comlink, OffscreenCanvas i SharedArrayBuffer"
-        description="6 technologii wielowątkowych (Dedicated Worker/Shared Worker/Service Worker/Audio Worklet/Comlink/OffscreenCanvas) — przenoszenie ciężkich obliczeń poza main thread."
+        description="6 technologii wielowątkowych: Dedicated/Shared/Service Worker, Comlink, OffscreenCanvas — ciężkie obliczenia poza main thread."
         canonical="https://www.fotz-studio.pl/blog/web-workers-comlink-offscreencanvas-shared-array-buffer-javascript-2024"
 
         keywords="Web Workers, Comlink, OffscreenCanvas i SharedArrayBuffer co to jest, Web Workers, Comlink, OffscreenCanvas i SharedArrayBuffer definicja, czym jest Web Workers, Comlink, OffscreenCanvas i SharedArrayBuffer, Web Workers, Comlink, OffscreenCanvas i SharedArrayBuffer startup, Web Workers, Comlink, OffscreenCanvas i SharedArrayBuffer jak liczyć, Web Workers, Comlink, OffscreenCanvas i SharedArrayBuffer wzór, Web Workers, Comlink, OffscreenCanvas i SharedArrayBuffer przykłady"

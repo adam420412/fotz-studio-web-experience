@@ -61,7 +61,7 @@ export default function BlogEventTrackingCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Event Tracking — co to jest i jak śledzić zdarzenia użytkownika?"
+        title="Event Tracking — co to jest? | FOTZ"
         description="Kompletny przewodnik po event tracking: 6 typów eventów, konwencje nazewnictwa, 5 narzędzi analitycznych i jak projektować event schema."
         canonical="https://www.fotz-studio.pl/blog/event-tracking-co-to"
 

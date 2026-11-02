@@ -66,7 +66,7 @@ export default function BlogPageSpeedCoTo() {
   return (
     <>
       <SEOHead
-        title="Page Speed — co to jest i jak poprawić szybkość strony? | FOTZ Studio"
+        title="Page Speed — co to jest? | FOTZ"
         description="Page Speed co to jest — wyjaśniamy czym jest szybkość strony, Core Web Vitals (LCP, CLS, INP), jak testować i jak poprawić szybkość dla SEO."
         canonical="https://www.fotz-studio.pl/blog/page-speed-co-to"
 

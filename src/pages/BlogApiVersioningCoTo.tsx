@@ -42,7 +42,7 @@ export default function BlogApiVersioningCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Wersjonowanie API — co to jest, URL vs Header vs Date, Stripe, deprecation, Pact?"
+        title="Wersjonowanie API — co to jest? | FOTZ"
         description="API versioning: 6 strategii (URL/Header/Query/Date/Content negotiation/GraphQL), deprecation, Sunset header, contract testing Pact, openapi-diff."
         canonical="https://www.fotz-studio.pl/blog/wersjonowanie-api-co-to-jest-url-header-date-strategia-stripe-pact"
 

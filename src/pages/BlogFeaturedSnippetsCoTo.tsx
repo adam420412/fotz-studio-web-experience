@@ -67,7 +67,7 @@ export default function BlogFeaturedSnippetsCoTo() {
   return (
     <>
       <SEOHead
-        title="Featured Snippets — co to jest i jak je zdobyć? | FOTZ Studio"
+        title="Featured Snippets — co to jest i jak je zdobyć | FOTZ"
         description="Featured Snippets co to jest — wyjaśniamy czym jest pozycja 0 w Google, typy snippetów, jak je zdobyć i jak zwiększyć widoczność w SERP."
         canonical="https://www.fotz-studio.pl/blog/featured-snippets-co-to"
 

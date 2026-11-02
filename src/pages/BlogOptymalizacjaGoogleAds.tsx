@@ -126,7 +126,7 @@ export default function BlogOptymalizacjaGoogleAds() {
   return (
     <Layout>
       <SEOHead
-        title="Optymalizacja Google Ads - jak poprawić wyniki kampanii? 2025"
+        title="Optymalizacja Google Ads — jak poprawić wyniki | FOTZ"
         description="Optymalizacja Google Ads: 10 błędów przepalających budżet, Quality Score, struktury konta, metryki i benchmarki. Wyniki +40% do 3 miesięcy."
         canonical="https://www.fotz-studio.pl/blog/optymalizacja-google-ads"
 

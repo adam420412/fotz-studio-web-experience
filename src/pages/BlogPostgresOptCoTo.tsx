@@ -42,7 +42,7 @@ export default function BlogPostgresOptCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="PostgreSQL optymalizacja — EXPLAIN ANALYZE, indeksy, partitioning, PgBouncer, Patroni?"
+        title="PostgreSQL optymalizacja — EXPLAIN ANALYZE, indeksy | FOTZ"
         description="PostgreSQL optimization: EXPLAIN ANALYZE, B-tree/GIN/GiST indeksy, RANGE partitioning, PgBouncer connection pooling, streaming replication i Patroni HA."
         canonical="https://www.fotz-studio.pl/blog/postgresql-optymalizacja-explain-analyze-indeksy-partitioning-pgbouncer-patroni"
 

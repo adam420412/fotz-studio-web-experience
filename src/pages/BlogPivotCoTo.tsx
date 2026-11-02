@@ -85,7 +85,7 @@ export default function BlogPivotCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Pivot w startupie — co to jest? Rodzaje pivotów i kiedy pivotować"
+        title="Pivot w startupie — co to jest? | FOTZ"
         description="Kompletny przewodnik po pivot: 6 typów pivotów, 5 sygnałów że czas na zmianę, przykłady (Slack, YouTube, Amazon) i jak odróżnić pivot od porażki."
         canonical="https://www.fotz-studio.pl/blog/pivot-startup-co-to"
 

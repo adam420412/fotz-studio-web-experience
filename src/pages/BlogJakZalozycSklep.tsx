@@ -55,7 +55,7 @@ export default function BlogJakZalozycSklep() {
   return (
     <>
       <SEOHead
-        title="Jak założyć sklep internetowy? Kompletny poradnik 2025 | Fotz.pl"
+        title="Jak założyć sklep internetowy? Poradnik 2025 | FOTZ"
         description="Jak założyć sklep internetowy krok po kroku? Wybór platformy, koszty, wymagania prawne i marketing. Praktyczny przewodnik dla przedsiębiorców 2025."
         ogType="article"
         canonical="https://www.fotz-studio.pl/blog/jak-zalozyc-sklep-internetowy"

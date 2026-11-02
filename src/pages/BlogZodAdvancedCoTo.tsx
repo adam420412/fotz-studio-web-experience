@@ -42,7 +42,7 @@ export default function BlogZodAdvancedCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Zod zaawansowany — discriminated unions, branded types, transforms i recursive schemas TypeScript 2024?"
+        title="Zod zaawansowany — discriminated unions | FOTZ"
         description="6 zaawansowanych wzorców Zod (discriminatedUnion/brand/transform/refine/lazy/pipe) — React Hook Form, tRPC, env validation, Prisma/Drizzle i schema composition."
         canonical="https://www.fotz-studio.pl/blog/zod-zaawansowany-discriminated-unions-branded-types-transforms-typescript-2024"
 

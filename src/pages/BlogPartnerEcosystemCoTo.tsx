@@ -48,7 +48,7 @@ export default function BlogPartnerEcosystemCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Partner Ecosystem — jak budować ekosystem partnerski? | Fotz.pl"
+        title="Partner Ecosystem — jak budować ekosystem partnerski | FOTZ"
         description="Partner ecosystem: typy partnerów, jak budować program partnerski, tiers, metryki i najczęstsze błędy. Kompletny przewodnik dla firm SaaS i scaleupów."
         canonical="https://www.fotz-studio.pl/blog/partner-ecosystem-ekosystem-partnerski-saas"
 

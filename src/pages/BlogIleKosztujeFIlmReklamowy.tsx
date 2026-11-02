@@ -40,7 +40,7 @@ export default function BlogIleKosztujeFIlmReklamowy() {
     <Layout>
       <SEOHead
         title="Ile kosztuje film reklamowy dla firmy"
-        description="Ile kosztuje film reklamowy dla firmy w 2026? Pojedynczy film od 1 900 zł, dzień zdjęciowy z serią 10 rolek 12 000 zł. Sprawdź, co wpływa na cenę i jak nie przepłacić."
+        description="Ile kosztuje film reklamowy w 2026? Film od 1 900 zł, dzień zdjęciowy z 10 rolkami 12 000 zł. Co wpływa na cenę i jak nie przepłacić."
         canonical={CANONICAL}
         keywords="ile kosztuje film reklamowy, cennik filmu reklamowego, produkcja video cennik, film reklamowy dla firmy, koszt spotu reklamowego"
       />

@@ -54,7 +54,7 @@ export default function BlogSwitchingCostsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Switching Costs — co to są koszty zmiany dostawcy? Moat biznesowy"
+        title="Switching Costs — koszty zmiany dostawcy | FOTZ"
         description="Kompletny przewodnik po switching costs: 6 rodzajów kosztów, strategie budowania, vendor lock-in i przykłady (Salesforce, SAP, AWS)."
         canonical="https://www.fotz-studio.pl/blog/switching-costs-co-to"
 

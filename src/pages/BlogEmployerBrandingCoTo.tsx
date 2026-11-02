@@ -69,7 +69,7 @@ export default function BlogEmployerBrandingCoTo() {
   return (
     <>
       <SEOHead
-        title="Employer Branding — co to jest? Marka pracodawcy | FOTZ Studio"
+        title="Employer Branding — co to jest? Marka pracodawcy | FOTZ"
         description="Employer branding co to jest — wyjaśniamy czym jest marka pracodawcy, EVP, jak budować stronę kariery, mierzyć efektywność i employer branding dla małych firm."
         canonical="https://www.fotz-studio.pl/blog/employer-branding-co-to"
 

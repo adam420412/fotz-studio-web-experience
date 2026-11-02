@@ -60,7 +60,7 @@ export default function BlogDevOpsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="DevOps — co to jest? Kultura i praktyki DevOps w organizacji IT"
+        title="DevOps — co to jest? | FOTZ"
         description="DevOps — definicja, CALMS framework, 8 etapów lifecycle, toolchain (CI/CD, IaC, Kubernetes, monitoring) i Platform Engineering. Kompletny przewodnik."
         canonical="https://www.fotz-studio.pl/blog/devops-co-to-jest"
 

@@ -42,8 +42,8 @@ export default function BlogCachingStrategiesCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Strategie cache — Cache-Aside, Write-Through, Redis, CDN, cache invalidation?"
-        description="Strategie cache: 6 wzorców (Cache-Aside/Write-Through/Read-Through/Write-Behind/Write-Around/Refresh-Ahead), Redis best practices, multi-level caching i hit rate."
+        title="Strategie cache — Cache-Aside, Write-Through, Redis | FOTZ"
+        description="Strategie cache: Cache-Aside, Write-Through, Read-Through, Refresh-Ahead — Redis, multi-level caching i hit rate."
         canonical="https://www.fotz-studio.pl/blog/strategie-cache-co-to-jest-cache-aside-write-through-redis-cdn-invalidation"
 
         keywords="Strategie cache co to jest, Strategie cache jak działa, Strategie cache tutorial, Strategie cache przykład, czym jest Strategie cache, Strategie cache dokumentacja, Strategie cache przewodnik"

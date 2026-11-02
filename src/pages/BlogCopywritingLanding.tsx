@@ -35,7 +35,7 @@ export default function BlogCopywritingLanding() {
   return (
     <Layout>
       <SEOHead
-        title="Copywriting dla Landing Page — Jak Pisać Teksty, które Konwertują"
+        title="Copywriting landing page — teksty, które konwertują"
         description="Copywriting dla landing pages: headlines, CTA, bullet points, social proof. Praktyczny poradnik pisania tekstów."
         ogType="article"
         canonical="https://www.fotz-studio.pl/content-marketing/copywriting-landing"

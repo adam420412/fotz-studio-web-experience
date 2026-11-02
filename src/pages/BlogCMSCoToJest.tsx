@@ -66,7 +66,7 @@ export default function BlogCMSCoToJest() {
   return (
     <>
       <SEOHead
-        title="CMS - co to jest? System zarzadzania trescia - poradnik | FOTZ Studio"
+        title="CMS — co to jest? System zarządzania treścią | FOTZ"
         description="CMS co to jest - wyjasniamy czym jest Content Management System, porownanie WordPress vs Shopify vs Webflow, headless CMS i ile kosztuje strona na CMS."
         canonical="https://www.fotz-studio.pl/blog/co-to-jest-cms"
 

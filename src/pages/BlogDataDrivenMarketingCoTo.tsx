@@ -79,7 +79,7 @@ export default function BlogDataDrivenMarketingCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Data-Driven Marketing — co to jest? Marketing oparty na danych"
+        title="Data-Driven Marketing — co to jest? | FOTZ"
         description="Data-driven marketing — definicja, 5 filarów (zbieranie, analiza, personalizacja, testowanie, optymalizacja), narzędzia i wyzwania. Kompletny przewodnik."
         canonical="https://www.fotz-studio.pl/blog/data-driven-marketing-co-to"
 

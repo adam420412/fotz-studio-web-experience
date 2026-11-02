@@ -83,7 +83,7 @@ export default function BlogHreflangCoTo() {
   return (
     <>
       <SEOHead
-        title="Hreflang — co to jest i jak wdrożyć dla wielojęzycznych stron?"
+        title="Hreflang — co to jest i jak wdrożyć? | FOTZ"
         description="Czym jest hreflang, kiedy stosować, trzy metody wdrożenia (HTML, sitemap, HTTP header), typowe błędy i jak weryfikować implementację."
         canonical="https://www.fotz-studio.pl/blog/hreflang-co-to"
 

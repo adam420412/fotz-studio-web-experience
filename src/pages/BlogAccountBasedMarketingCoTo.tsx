@@ -82,7 +82,7 @@ export default function BlogAccountBasedMarketingCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Account-Based Marketing (ABM) — co to jest? Strategia ABM w B2B"
+        title="Account-Based Marketing (ABM) — co to jest? | FOTZ"
         description="Account-Based Marketing — definicja, 3 typy ABM (strategic, lite, programmatic), 6-krokowy proces, ICP, buying committee i narzędzia. Kompletny przewodnik B2B."
         canonical="https://www.fotz-studio.pl/blog/account-based-marketing-co-to"
 

@@ -42,8 +42,8 @@ export default function BlogOpenAiAssistantsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="OpenAI Assistants API — Threads, File Search, Code Interpreter, Function Calling 2024?"
-        description="6 narzędzi Assistants API (File Search/Code Interpreter/Function Calling/Streaming/Vector Store/Thread) — RAG bez infrastruktury, Python sandbox, streaming i produkcyjne wzorce."
+        title="OpenAI Assistants API — Threads, File Search | FOTZ"
+        description="OpenAI Assistants API: Threads, File Search, Code Interpreter, Function Calling — RAG bez infrastruktury i produkcyjne wzorce."
         canonical="https://www.fotz-studio.pl/blog/openai-assistants-api-threads-file-search-code-interpreter-2024"
 
         keywords="OpenAI Assistants API co to jest, OpenAI Assistants API jak działa, OpenAI Assistants API tutorial, OpenAI Assistants API przykład, czym jest OpenAI Assistants API, OpenAI Assistants API dokumentacja, OpenAI Assistants API przewodnik"

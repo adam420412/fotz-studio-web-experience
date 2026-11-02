@@ -51,7 +51,7 @@ export default function BlogPlatformEngineeringCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Platform Engineering — co to jest, IDP i Backstage? | Fotz.pl"
+        title="Platform Engineering — co to jest, IDP i Backstage | FOTZ"
         description="Platform Engineering: definicja, Internal Developer Platform (IDP), Backstage wdrożenie, Golden Path, składniki platformy i jak mierzyć sukces."
         canonical="https://www.fotz-studio.pl/blog/platform-engineering-co-to-jest-internal-developer-platform"
 

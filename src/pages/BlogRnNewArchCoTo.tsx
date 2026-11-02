@@ -42,7 +42,7 @@ export default function BlogRnNewArchCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="React Native New Architecture — JSI, Fabric, TurboModules, Bridgeless i Expo SDK 52?"
+        title="React Native New Architecture — JSI, Fabric | FOTZ"
         description="6 komponentów New Architecture (JSI/TurboModules/Fabric/Bridgeless/Worklets/SharedValues) — Reanimated 3, React Native Skia, MMKV, Expo SDK 52 i debugowanie."
         canonical="https://www.fotz-studio.pl/blog/react-native-new-architecture-jsi-fabric-turbomodules-bridgeless-expo-sdk-52-2024"
 

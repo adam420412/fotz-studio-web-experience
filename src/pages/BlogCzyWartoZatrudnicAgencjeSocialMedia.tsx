@@ -26,7 +26,7 @@ export default function BlogCzyWartoZatrudnicAgencjeSocialMedia() {
   return (
     <Layout>
       <SEOHead
-        title="Czy warto zatrudnić agencję social media przy marketingu in-house?"
+        title="Agencja social media czy marketing in-house? | FOTZ"
         description="In-house, freelancer czy agencja? Szczere porównanie kosztów i efektów plus trzeci model: partner produkcyjny dla Twojego zespołu marketingu."
         canonical={CANONICAL}
         keywords="agencja social media czy in-house, partner produkcyjny social media, agencja vs freelancer social media, zespół marketingu in-house"

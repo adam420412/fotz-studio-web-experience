@@ -165,7 +165,7 @@ export default function BlogSEODlaSklepu() {
   return (
     <>
       <SEOHead
-        title="SEO dla sklepu internetowego - praktyczny poradnik 2025 | FOTZ Studio"
+        title="SEO dla sklepu internetowego - praktyczny poradnik | FOTZ"
         description="Praktyczne kroki SEO dla sklepów e-commerce. Optymalizacja produktów, kategorii, Core Web Vitals, schematy produktowe i unikanie błędów SEO w sklepach."
         canonical="https://www.fotz-studio.pl/blog/seo-dla-sklepu-internetowego"
 

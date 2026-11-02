@@ -102,7 +102,7 @@ export default function BlogMarketSegmentationCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Segmentacja Rynku — co to jest? Rodzaje segmentacji i model STP"
+        title="Segmentacja Rynku — co to jest? | FOTZ"
         description="Kompletny przewodnik po segmentacji rynku: 5 typów segmentacji, model STP (Segmentation-Targeting-Positioning) i kryteria oceny atrakcyjności segmentu."
         canonical="https://www.fotz-studio.pl/blog/segmentacja-rynku-co-to"
 

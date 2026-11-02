@@ -86,7 +86,7 @@ export default function BlogGoogleAdsVsSeo() {
   return (
     <Layout>
       <SEOHead
-        title="Google Ads vs SEO — co wybrać w 2025? Porównanie kosztów i efektów"
+        title="Google Ads vs SEO — co wybrać w 2025? | FOTZ"
         description="Kompleksowe porównanie Google Ads i SEO: koszty, czas efektów, ROI, kiedy wybrać każdą strategię i jak je łączyć dla najlepszych wyników."
         canonical="https://www.fotz-studio.pl/blog/google-ads-vs-seo"
 

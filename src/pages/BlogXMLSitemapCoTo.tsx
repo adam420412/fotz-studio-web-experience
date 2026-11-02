@@ -60,7 +60,7 @@ export default function BlogXMLSitemapCoTo() {
   return (
     <>
       <SEOHead
-        title="XML Sitemap — co to jest i jak stworzyć mapę strony? | FOTZ Studio"
+        title="XML Sitemap — co to jest i jak stworzyć mapę strony | FOTZ"
         description="XML Sitemap co to jest — wyjaśniamy czym jest mapa strony XML, jak ją stworzyć, zgłosić w Google Search Console i jak sitemap wpływa na indeksowanie."
         canonical="https://www.fotz-studio.pl/blog/xml-sitemap-co-to"
 

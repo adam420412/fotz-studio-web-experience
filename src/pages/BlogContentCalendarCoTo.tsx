@@ -66,7 +66,7 @@ export default function BlogContentCalendarCoTo() {
   return (
     <>
       <SEOHead
-        title="Content Calendar — co to jest i jak go stworzyć? | FOTZ Studio"
+        title="Content Calendar — co to jest i jak go stworzyć | FOTZ"
         description="Content Calendar co to jest — wyjaśniamy czym jest kalendarz treści, jak go stworzyć, najlepsze narzędzia i jak planować treści SEO i social media."
         canonical="https://www.fotz-studio.pl/blog/content-calendar-co-to"
 
