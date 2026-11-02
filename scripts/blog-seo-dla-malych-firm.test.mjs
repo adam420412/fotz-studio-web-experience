@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 
 const source = readFileSync(new URL('../src/pages/BlogSEODlaMalychFirm.tsx', import.meta.url), 'utf8');
+const layoutSource = readFileSync(new URL('../src/components/layout/Layout.tsx', import.meta.url), 'utf8');
 
 const readConstant = (name) => {
   const match = source.match(new RegExp(`const ${name} = "([^"]+)";`));
@@ -21,8 +22,14 @@ test('small business SEO article has concise metadata and a self-canonical', () 
   assert.ok(description.length <= 160, `Description has ${description.length} characters`);
   assert.equal(canonical, 'https://www.fotz-studio.pl/blog/seo-dla-malych-firm');
   assert.match(source, /canonical=\{canonicalUrl\}/);
-  assert.match(source, /<article id="main-content"/);
   assert.equal((source.match(/<h1\b/g) || []).length, 1);
+});
+
+test('small business SEO article and layout use unique anchors', () => {
+  assert.equal((source.match(/<article id="article-content"/g) || []).length, 1);
+  assert.doesNotMatch(source, /<article id="main-content"/);
+  assert.equal((layoutSource.match(/<main id="main-content"/g) || []).length, 1);
+  assert.equal((`${source}\n${layoutSource}`.match(/\bid="main-content"/g) || []).length, 1);
 });
 
 test('small business SEO article preserves publication history and owns its structured data', () => {
