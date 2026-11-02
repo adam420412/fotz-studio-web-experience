@@ -254,8 +254,6 @@ const LogoIBranding = lazy(() => import("./pages/LogoIBranding"));
 const UslugiPozycjonowanie = lazy(() => import("./pages/UslugiPozycjonowanie"));
 const PozycjonowanieWarszawa = lazy(() => import("./pages/PozycjonowanieWarszawa"));
 const PozycjonowanieWroclaw = lazy(() => import("./pages/PozycjonowanieWroclaw"));
-const PozycjonowanieGdansk = lazy(() => import("./pages/PozycjonowanieGdansk"));
-const PozycjonowanieLodz = lazy(() => import("./pages/PozycjonowanieLodz"));
 const FotografiaProduktowa = lazy(() => import("./pages/FotografiaProduktowa"));
 const VideoMarketing = lazy(() => import("./pages/VideoMarketing"));
 
@@ -1720,8 +1718,8 @@ const App = ({ Router = BrowserRouter, client = queryClient, initialPage }: AppP
                 <Route path="/uslugi/pozycjonowanie/krakow" element={<Redirect301 to="/seo/pozycjonowanie-krakow" />} />
                 <Route path="/uslugi/pozycjonowanie/wroclaw" element={<PozycjonowanieWroclaw />} />
                 <Route path="/uslugi/pozycjonowanie/poznan" element={<Redirect301 to="/seo/pozycjonowanie-poznan" />} />
-                <Route path="/uslugi/pozycjonowanie/gdansk" element={<PozycjonowanieGdansk />} />
-                <Route path="/uslugi/pozycjonowanie/lodz" element={<PozycjonowanieLodz />} />
+                <Route path="/uslugi/pozycjonowanie/gdansk" element={<Redirect301 to="/seo/pozycjonowanie-gdansk" />} />
+                <Route path="/uslugi/pozycjonowanie/lodz" element={<Redirect301 to="/seo/pozycjonowanie-lodz" />} />
                 <Route path="/uslugi/pozycjonowanie/szczecin" element={<PozycjonowanieSzczecin />} />
                 <Route path="/uslugi/pozycjonowanie/bialystok" element={<PozycjonowanieBialystok />} />
                 <Route path="/uslugi/pozycjonowanie/lublin" element={<PozycjonowanieLublin />} />
