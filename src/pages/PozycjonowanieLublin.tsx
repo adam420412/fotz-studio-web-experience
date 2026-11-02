@@ -96,8 +96,8 @@ const PozycjonowanieLublin = () => {
   return (
     <Layout>
       <SEOHead
-        title="Pozycjonowanie Lublin — Agencja SEO Lubelskie | Fotz Studio"
-        description="Pozycjonowanie stron Lublin i Lubelskie. Agencja SEO Fotz Studio — audyt, optymalizacja, link building. Bezpłatna konsultacja SEO!"
+        title="Pozycjonowanie Lublin — skuteczne SEO dla firm | FOTZ"
+        description="Pozycjonowanie Lublin — skuteczne pozycjonowanie stron www w wyszukiwarce Google. Audyt, lokalne SEO, link building. Wycena bezpłatna — FOTZ."
         canonical="https://www.fotz-studio.pl/uslugi/pozycjonowanie/lublin"
         keywords="pozycjonowanie lublin, agencja seo lublin, seo lublin, pozycjonowanie stron lublin, seo dla firm lublin, seo lubelskie, pozycjonowanie lokalne lublin"
       />
@@ -371,6 +371,29 @@ const PozycjonowanieLublin = () => {
               </Button>
             </div>
           </FadeInView>
+        </div>
+      </section>
+
+      {/* Czym jest pozycjonowanie */}
+      <section className="py-20 bg-gray-800">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <h2 className="text-3xl font-bold text-white mb-6">Czym jest pozycjonowanie stron w Lublinie?</h2>
+          <div className="space-y-5 text-gray-300 leading-relaxed">
+            <p>Czym jest pozycjonowanie? To działania SEO, dzięki którym strona www Twojej firmy pojawia się wysoko w wynikach wyszukiwania Google. Wysokie wyniki wyszukiwania to dziś główne źródło nowych klientów — Twoja witryna musi być tam, gdzie szuka klient. Chodzi o pozycjonowanie stron widocznych tam, gdzie szuka potencjalny klient: wyszukiwarka Google to dziś pierwsze źródło zapytań. W wyszukiwarce Google wygrywa trafność — algorytm Google i algorytmów Google aktualizacje oceniają treść, technikę i autorytet witryny.</p>
+            <p>Pozycjonowanie stron internetowych w Lublinie to dobry deal: konkurencja lokalna jest słabsza niż w Warszawie, więc skuteczne pozycjonowanie stron daje efekty szybciej. Skuteczne pozycjonowanie stron internetowych to nie magia — to proces: audyt SEO strony, optymalizacja SEO, treści i linki. Skuteczne pozycjonowanie w Lublinie mierzymy zapytaniami i telefonami, nie samymi pozycjami.</p>
+            <p>SEO i pozycjonowanie stron internetowych to nasza specjalność. Pozycjonowanie Twojej strony zaczynamy od fraz kluczowych z potencjałem sprzedażowym dla Twojego biznesu — a nie od tych, które ładnie wyglądają w raporcie. Widoczność strony w wynikach wyszukiwania Google rośnie miesiącami, ale dzięki SEO ruch na stronie pracuje na Twój zysk latami.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Lokalne SEO Lublin */}
+      <section className="py-20 bg-gray-900">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <h2 className="text-3xl font-bold text-white mb-6">Lokalne SEO i pozycjonowanie sklepów — oferta dla Lublina</h2>
+          <div className="space-y-5 text-gray-300 leading-relaxed">
+            <p>Nasza oferta obejmuje pozycjonowanie stron www w Lublinie i pozycjonowanie sklepów internetowych w Lublinie. Ta usługa obejmuje pozycjonowanie stron i sklepów internetowych — inny plan ma właściciel sklepu internetowego, inny firma usługowa. Dla sklepu internetowego priorytetem są kategorie i produkty. Widoczność strony w Google budujemy dla lokalnych biznesów — lokalne biznesy wygrywają trafnością. Skuteczne pozycjonowanie stron w Lublinie wymaga znajomości lokalnych biznesów. Lokalne pozycjonowanie stron i sklepów to fundament dla lokalnych biznesów: dzięki lokalnemu SEO Twoja firma pojawia się w mapach i wynikach lokalnych. Pozycjonowanie wizytówki Google i optymalizacja wizytówki Google Moja Firma (profil firmy w Google), opinie i spójne dane NAP to pierwszy etap. Lokalne pozycjonowanie sklepów wymaga dodatkowo danych strukturalnych i optymalizacji kategorii.</p>
+            <p>Zakres działań SEO: audyt SEO strony, elementy strategii SEO, optymalizacja techniczna, content i link building — wszystko w zakresie SEO, który ustalamy przed startem. SEO Twojej strony prowadzimy transparentnie. Pozycjonowanie lokalne strony łączymy z Google Ads, żeby wyniki przyszły szybciej. Cennik pozycjonowania stron zależy od fraz — cena pozycjonowania stron dla Lublina jest niższa niż w dużych aglomeracjach. Agencja SEO z Lublina czy zdalna? Liczy się proces: profesjonalna agencja SEO w Lublinie czy spoza miasta powinna pokazać plan i raport. Skuteczna agencja SEO mierzy efekty w klientach. Uważasz, że SEO nie działa? Najczęściej zadawane pytania rozwiewamy w sekcji FAQ — klasyczne SEO działa, gdy wykonuje je specjalista SEO z planem. Marketing internetowy i projektowania stron pod SEO też prowadzimy — strona internetowa bez widoczności nie sprzeda.</p>
+          </div>
         </div>
       </section>
 
