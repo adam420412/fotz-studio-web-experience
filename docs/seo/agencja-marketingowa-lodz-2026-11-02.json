@@ -1,0 +1,101 @@
+{
+  "date": "2026-11-02",
+  "path": "/agencja-marketingowa/lodz",
+  "source": "src/pages/AgencjaMarketingowaLodz.tsx",
+  "branch": "swarm/agencja-lodz-20261102",
+  "baseCommit": "46bdcdef24609b035a235e089483b1a142dc5794",
+  "gsc": {
+    "period": {
+      "from": "2026-10-03",
+      "to": "2026-10-30"
+    },
+    "scope": "page",
+    "impressions": 97,
+    "clicks": 0,
+    "averagePosition": 37.1959
+  },
+  "neuronWriter": {
+    "query": "6987e0dbfc373b77",
+    "keyword": "agencja marketingowa łódź",
+    "newAnalysesCreated": 0,
+    "productionBaseline": 89,
+    "target": 95,
+    "recommendedWordTarget": 1057,
+    "finalRenderedMainWords": 1466,
+    "iterations": [
+      {
+        "iteration": 1,
+        "score": 88,
+        "scope": "Complete offer rewrite covering service and channel selection, strategy, separate content and advertising work, production, process, lead measurement, cooperation terms and prerendered FAQ; initial final metadata"
+      },
+      {
+        "iteration": 2,
+        "score": 89,
+        "scope": "Aligned title and description with the agency and advertising intent, including marketing reklamowy, kampanie reklamowe and clients, without changing the rendered main content"
+      },
+      {
+        "iteration": 3,
+        "score": 91,
+        "scope": "Reduced unnecessary phrase repetition and clarified business goals, channel roles, profile management, visual identity, trust, landing page choice and expert responsibilities"
+      },
+      {
+        "iteration": 4,
+        "score": 95,
+        "scope": "Promoted core service topics to H2, clarified strategic and business headings, added the 2026 strategy context and aligned the final plan, measurement and local-choice wording"
+      }
+    ],
+    "iterationsUsed": 4,
+    "maximumIterations": 4,
+    "final": 95,
+    "method": "evaluate-content through neuron_client.py evaluate-html; outerHTML of main#main-content extracted from dist/agencja-marketingowa/lodz/index.html after the final build; final title and description passed with the rendered main content",
+    "scopeComparison": "Baseline 89 was measured on the production URL with id=main-content. Final measurement covers the same semantic container from the local prerender, without navigation and footer. The content scope is comparable, but the measurement environment differs."
+  },
+  "metadata": {
+    "title": "Agencja marketingowa Łódź — marketing reklamowy | FOTZ",
+    "titleLength": 54,
+    "description": "Agencja marketingowa Łódź: strategia, treści i kampanie reklamowe, SEO, Google Ads, social media oraz produkcja. Sprawdź zakres dla swoich klientów.",
+    "descriptionLength": 148,
+    "canonical": "https://www.fotz-studio.pl/agencja-marketingowa/lodz",
+    "h1": "Agencja marketingowa Łódź",
+    "h1Count": 1
+  },
+  "renderedContract": {
+    "selfCanonical": true,
+    "mainContentCount": 1,
+    "allIds": 16,
+    "duplicateIds": [],
+    "serviceSchemaPresent": true,
+    "breadcrumbSchemaPresent": true,
+    "faqQuestions": 6,
+    "visibleFaqMatchesSchema": true,
+    "contactCta": "/kontakt?usluga=marketing#formularz",
+    "contactCtaCount": 2
+  },
+  "checks": {
+    "npmCi": "passed",
+    "typecheck": "passed",
+    "targetedTests": "20/20 passed: live-blog 7/7, direct Łódź contract 5/5, seo-metadata 3/3 and structured-data 5/5",
+    "build": "passed; 1066 prerendered pages, 1064 full bodies, 0 body errors",
+    "htmlContract": "passed; one H1, one main-content, self-canonical, title 54 characters, description 148 characters, 16 IDs and no duplicates",
+    "diffCheck": "passed; only the declared page, direct test and unique report are included",
+    "buildArtifactsExcluded": "known-routes.json restored after prerender; dist, .ssr and temporary extracted HTML are not staged"
+  },
+  "files": [
+    "src/pages/AgencjaMarketingowaLodz.tsx",
+    "scripts/agencja-marketingowa-lodz.test.mjs",
+    "docs/seo/agencja-marketingowa-lodz-2026-11-02.json"
+  ],
+  "scope": [
+    "Replaced fixed prices, fabricated testimonials, unsupported statistics, performance claims and guarantees with verifiable service information",
+    "Added service and channel selection based on business goals, audience, offer, current data and real service area",
+    "Separated strategy, content, advertising, production, website work and visual identity while explaining how they cooperate",
+    "Added a four-step process, responsibilities, approvals, account access, handover conditions and individually scoped pricing",
+    "Added measurement of organic and paid sources, agreed contact actions, lead quality and sales-team feedback without claiming unverified sales",
+    "Preserved the existing URL and added concise branded metadata, self-canonical, one H1, matching Service, Breadcrumb and FAQ schemas and relevant contact CTAs",
+    "Added a direct source contract test and native FAQ details so all questions and answers are present in prerendered HTML with unique IDs"
+  ],
+  "notes": [
+    "The content score evaluates the rendered offer against the existing NeuronWriter analysis; it does not prove indexing, rankings, clicks, enquiries or sales.",
+    "No changes were made to App.tsx, sitemaps, ai-work-register.csv, environment files, other pages or shared components."
+  ]
+}
