@@ -43,6 +43,7 @@ export const serviceWorkRoutes = {
   '/uslugi/fotografia-produktowa': 'product',
   '/uslugi/fotografia-z-drona': 'drone',
   '/uslugi/strony-internetowe': 'web',
+  '/uslugi/tworzenie-stron-internetowych/krakow': 'web',
   '/wizualizacje-3d': '3d',
 };
 

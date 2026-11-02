@@ -1,3 +1,4 @@
+import { enquiryHref } from "@/lib/enquiry.mjs";
 import { ServiceWork } from "@/components/sections/ServiceWork";
 import { KlagemConfigurator } from "@/components/sections/KlagemConfigurator";
 import { SEOHead } from "@/components/seo/SEOHead";
@@ -373,7 +374,6 @@ const pricingPackages = [
 const Wizualizacje3D = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
   const [activeCategory, setActiveCategory] = useState("all");
-  const [expandedService, setExpandedService] = useState<string | null>(null);
 
   const filteredImages = activeCategory === "all" 
     ? portfolioImages 
@@ -408,8 +408,8 @@ const Wizualizacje3D = () => {
   return (
     <>
       <SEOHead
-        title="Wizualizacje 3D Poznań | Fotz Studio"
-        description="Wizualizacje 3D Poznań — profesjonalne renderingi architektoniczne, wizualizacje wnętrz i produktów. Animacje 3D, wirtualne spacery i prezentacje inwestycji w Fotz Studio."
+        title="Wizualizacje 3D Poznań — wnętrza i produkty | FOTZ Studio"
+        description="Fotorealistyczne wizualizacje 3D: wnętrza, produkty i wizualizacje architektoniczne. Zobacz realizacje FOTZ Studio i konfigurator KLAGEM. Zapytaj o wycenę."
         canonical="https://www.fotz-studio.pl/wizualizacje-3d"
         keywords="wizualizacje 3D, wizualizacje architektoniczne, wizualizacje wnętrz, renderingi 3D, animacje 3D, Poznań"
       />
@@ -456,8 +456,8 @@ const Wizualizacje3D = () => {
               <TextReveal>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
                   Wizualizacje 3D w Poznaniu -{" "}
-                  <span className="bg-gradient-brand bg-clip-text text-transparent">
-                    Twoje marzenia w zasięgu ręki
+                  <span className="text-primary">
+                    wnętrza, produkty i architektura
                   </span>
                 </h1>
               </TextReveal>
@@ -468,8 +468,7 @@ const Wizualizacje3D = () => {
                 transition={{ duration: 0.6, delay: 0.3 }}
                 className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8"
               >
-                Poszukujesz profesjonalnych wizualizacji architektonicznych, które pomogą Ci w realizacji projektu wnętrza? 
-                Jesteśmy biurem projektowym z Poznania, które oferuje fotorealistyczne wizualizacje 3D, które spełnią Twoje oczekiwania.
+                Pokaż produkt, wnętrze lub inwestycję, zanim powstaną. Przygotowujemy fotorealistyczne wizualizacje 3D, animacje i interaktywne konfiguratory dla firm z Poznania i całej Polski. Zobacz nasze prace i prześlij opis projektu do wyceny.
               </motion.p>
               
               <motion.div
@@ -479,20 +478,23 @@ const Wizualizacje3D = () => {
                 className="flex flex-col sm:flex-row gap-4 justify-center"
               >
                 <Button variant="hero" size="lg" asChild>
-                  <Link to="/kontakt" className="group">
-                    Zamów wizualizację
+                  <Link to={enquiryHref("other", "visualization")} className="group">
+                    Wyceń wizualizację 3D
                     <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </Button>
                 <Button variant="outline" size="lg" asChild>
-                  <a href="#kategorie">
-                    Zobacz kategorie
+                  <a href="#konfigurator-klagem">
+                    Zobacz realizację KLAGEM
                   </a>
                 </Button>
               </motion.div>
             </div>
           </div>
         </section>
+
+        <KlagemConfigurator />
+        <ServiceWork path="/wizualizacje-3d" />
 
         {/* Service Categories Section */}
         <section id="kategorie" className="py-20 md:py-32 bg-muted/30">
@@ -503,10 +505,10 @@ const Wizualizacje3D = () => {
                   Kategorie usług
                 </span>
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                  Wybierz <span className="bg-gradient-brand bg-clip-text text-transparent">rodzaj wizualizacji</span>
+                  Wybierz <span className="text-primary">rodzaj wizualizacji</span>
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Kliknij w kategorię, aby zobaczyć szczegółowe warianty i ceny
+                  Rozwiń kategorię i porównaj warianty. Podane ceny i terminy są orientacyjne; zakres, liczbę ujęć i aktualną wycenę potwierdzamy przed zamówieniem.
                 </p>
               </div>
             </FadeInView>
@@ -514,56 +516,19 @@ const Wizualizacje3D = () => {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {serviceCategories.map((category, index) => (
                 <FadeInView key={category.id} delay={index * 0.05}>
-                  <motion.div
-                    className={cn(
-                      "bg-card border rounded-2xl overflow-hidden transition-all duration-300 cursor-pointer",
-                      expandedService === category.id 
-                        ? "border-primary/50 ring-2 ring-primary/20" 
-                        : "border-border hover:border-primary/30"
-                    )}
-                    onClick={() => setExpandedService(expandedService === category.id ? null : category.id)}
-                  >
-                    <div className="p-6">
-                      <div className="flex items-start gap-4 mb-4">
-                        <div className="w-12 h-12 rounded-xl bg-gradient-brand flex items-center justify-center flex-shrink-0">
-                          <category.icon className="w-6 h-6 text-white" />
-                        </div>
-                        <div className="flex-1">
-                          <h3 className="text-lg font-semibold mb-1">{category.title}</h3>
-                          <p className="text-sm text-muted-foreground">{category.description}</p>
-                        </div>
-                        <ChevronRight className={cn(
-                          "w-5 h-5 text-muted-foreground transition-transform",
-                          expandedService === category.id && "rotate-90"
-                        )} />
-                      </div>
-                      
-                      {/* Expanded variants */}
-                      <motion.div
-                        initial={false}
-                        animate={{ 
-                          height: expandedService === category.id ? "auto" : 0,
-                          opacity: expandedService === category.id ? 1 : 0
-                        }}
-                        className="overflow-hidden"
-                      >
-                        <div className="pt-4 border-t border-border/50 space-y-3">
-                          {category.variants.map((variant, vIndex) => (
-                            <div 
-                              key={vIndex}
-                              className="flex items-center justify-between text-sm p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors"
-                            >
-                              <span className="font-medium">{variant.name}</span>
-                              <div className="flex items-center gap-4">
-                                <span className="text-muted-foreground text-xs">{variant.time}</span>
-                                <span className="text-primary font-semibold">{variant.price}</span>
-                              </div>
-                            </div>
-                          ))}
-                        </div>
-                      </motion.div>
+                  <details className="bg-card border border-border rounded-2xl p-6 open:border-primary/50">
+                    <summary className="cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary">
+                      <span className="font-semibold text-lg">{category.title}</span>
+                      <span className="block mt-2 text-sm text-muted-foreground">{category.description}</span>
+                    </summary>
+                    <div className="pt-4 mt-4 border-t border-border/50 space-y-3">
+                      {category.variants.map(variant => <div key={variant.name} className="text-sm p-3 rounded-lg bg-muted/50">
+                        <p className="font-medium mb-2">{variant.name}</p>
+                        <div className="flex flex-wrap justify-between gap-2"><span className="text-muted-foreground">{variant.time}</span><span className="text-primary font-semibold">{variant.price}</span></div>
+                      </div>)}
+                      <Link to={enquiryHref("other", "visualization")} className="inline-block py-2 underline underline-offset-4">Zapytaj o wycenę tej wizualizacji</Link>
                     </div>
-                  </motion.div>
+                  </details>
                 </FadeInView>
               ))}
             </div>
@@ -577,7 +542,7 @@ const Wizualizacje3D = () => {
               <div className="text-center mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">
                   Interaktywny model{" "}
-                  <span className="bg-gradient-brand bg-clip-text text-transparent">3D</span>
+                  <span className="text-primary">3D</span>
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
                   Obracaj model 3D, przybliżaj i odkrywaj każdy szczegół. 
@@ -615,7 +580,7 @@ const Wizualizacje3D = () => {
                 <div>
                   <h2 className="text-3xl md:text-4xl font-bold mb-6">
                     Dlaczego warto wybrać{" "}
-                    <span className="bg-gradient-brand bg-clip-text text-transparent">nasze wizualizacje?</span>
+                    <span className="text-primary">nasze wizualizacje?</span>
                   </h2>
                   <p className="text-lg text-muted-foreground mb-8">
                     Nasze wizualizacje 3D są nie tylko realistyczne, ale także wykorzystują nowoczesne technologie, 
@@ -671,8 +636,6 @@ const Wizualizacje3D = () => {
         </section>
 
         {/* Portfolio Gallery */}
-        <KlagemConfigurator />
-        <ServiceWork path="/wizualizacje-3d" />
         <section id="portfolio" className="py-20 md:py-32">
           <div className="container-wide px-6 md:px-12">
             <FadeInView>
@@ -681,7 +644,7 @@ const Wizualizacje3D = () => {
                   Portfolio
                 </span>
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                  Nasze <span className="bg-gradient-brand bg-clip-text text-transparent">realizacje</span>
+                  Nasze <span className="text-primary">realizacje</span>
                 </h2>
               </div>
             </FadeInView>
@@ -737,7 +700,7 @@ const Wizualizacje3D = () => {
             <FadeInView>
               <div className="text-center mb-16">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                  Jak <span className="bg-gradient-brand bg-clip-text text-transparent">pracujemy?</span>
+                  Jak <span className="text-primary">pracujemy?</span>
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
                   Prosty i przejrzysty proces współpracy
@@ -771,7 +734,7 @@ const Wizualizacje3D = () => {
                 </span>
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">
                   Stała współpraca ={" "}
-                  <span className="bg-gradient-brand bg-clip-text text-transparent">niższe ceny</span>
+                  <span className="text-primary">niższe ceny</span>
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
                   Wybierz pakiet dopasowany do Twoich potrzeb
@@ -837,7 +800,7 @@ const Wizualizacje3D = () => {
                       className="w-full"
                       asChild
                     >
-                      <Link to="/kontakt">Wybierz pakiet</Link>
+                      <Link to={enquiryHref("other", "visualization")}>Wybierz pakiet</Link>
                     </Button>
                   </motion.div>
                 </FadeInView>
@@ -854,13 +817,13 @@ const Wizualizacje3D = () => {
                 <div>
                   <h2 className="text-3xl md:text-4xl font-bold mb-4">
                     Często zadawane{" "}
-                    <span className="bg-gradient-brand bg-clip-text text-transparent">pytania</span>
+                    <span className="text-primary">pytania</span>
                   </h2>
                   <p className="text-muted-foreground mb-8">
                     Odpowiadamy na najczęściej zadawane pytania dotyczące wizualizacji 3D
                   </p>
                   <Button variant="hero" asChild>
-                    <Link to="/kontakt" className="group">
+                    <Link to={enquiryHref("other", "visualization")} className="group">
                       Masz inne pytanie?
                       <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
                     </Link>
@@ -897,13 +860,13 @@ const Wizualizacje3D = () => {
               <div className="text-center max-w-3xl mx-auto">
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">
                   Gotowy na profesjonalne{" "}
-                  <span className="bg-gradient-brand bg-clip-text text-transparent">wizualizacje 3D?</span>
+                  <span className="text-primary">wizualizacje 3D?</span>
                 </h2>
                 <p className="text-muted-foreground text-lg mb-8">
                   Skontaktuj się z nami i otrzymaj bezpłatną wycenę dla Twojego projektu
                 </p>
                 <Button variant="hero" size="lg" asChild>
-                  <Link to="/kontakt" className="group">
+                  <Link to={enquiryHref("other", "visualization")} className="group">
                     Zamów bezpłatną wycenę
                     <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
                   </Link>
@@ -915,74 +878,31 @@ const Wizualizacje3D = () => {
 
         {/* Related Services */}
 
-      {/* SEO Article Section */}
-      <section className="py-20 bg-card">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="prose prose-lg max-w-none"
-          >
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-              Wizualizacje 3D Poznań — renderingi architektoniczne i wizualizacje wnętrz
-            </h2>
-            <p className="text-muted-foreground mb-4">
-              Wizualizacje 3D Fotz Studio w Poznaniu to profesjonalne renderingi dla
-              deweloperów, architektów, projektantów wnętrz i firm produkcyjnych.
-              Tworzymy fotorealistyczne wizualizacje architektoniczne budynków i osiedli,
-              wizualizacje wnętrz mieszkalnych i komercyjnych oraz wizualizacje produktów
-              na potrzeby e-commerce i katalogów. Renderingi 3D zastępują kosztowne
-              sesje fotograficzne i pozwalają prezentować produkty i nieruchomości
-              jeszcze przed ich realizacją.
-            </p>
-            <p className="text-muted-foreground mb-6">
-              Jakość naszych wizualizacji 3D jest na poziomie fotorealizmu — renderingi
-              są nie do odróżnienia od prawdziwych zdjęć. Używamy najnowszych technologii:
-              3ds Max, Corona Renderer, V-Ray, Blender — dopasowujemy workflow do specyfiki
-              projektu.
-            </p>
-
-            <h2 className="text-3xl font-heading font-bold mb-6">
-              Renderingi 3D dla deweloperów i architektów — prezentacja inwestycji
-            </h2>
-            <p className="text-muted-foreground mb-4">
-              Dla branży deweloperskiej realizujemy kompleksowe wizualizacje inwestycji:
-              renderingi zewnętrzne budynków, wizualizacje zagospodarowania terenu,
-              animacje 3D przedstawiające finalizację budowy oraz wirtualne spacery
-              po mieszkaniach i lokalach usługowych. To podstawowe narzędzia sprzedaży
-              nieruchomości w fazie off-plan.
-            </p>
-            <p className="text-muted-foreground mb-6">
-              Architekci i biura projektowe korzystają z naszych usług wizualizacji 3D
-              do prezentacji projektów inwestorom i klientom. Renderingi 3D eliminują
-              niezrozumienie rysunków technicznych — każdy klient zobaczy dokładnie
-              jak będzie wyglądać realizacja.
-            </p>
-
-            <h2 className="text-3xl font-heading font-bold mb-6">
-              Wizualizacje produktów 3D, animacje i virtual tour — nowoczesna prezentacja oferty
-            </h2>
-            <p className="text-muted-foreground mb-4">
-              Wizualizacje produktów 3D to alternatywa dla sesji fotograficznych —
-              szybsza, tańsza i dająca pełną kontrolę nad światłem, tłem i wariantami
-              kolorystycznymi. Sklepy e-commerce, katalogi i materiały reklamowe zyskują
-              na jakości przy niższych kosztach produkcji.
-            </p>
-            <p className="text-muted-foreground">
-              Animacje 3D i virtual tour to nowoczesne formaty prezentacji, które
-              zachwycają klientów i zwiększają konwersję. Skontaktuj się z Fotz Studio,
-              by wycenić wizualizacje 3D dla Twojego projektu — renderingi architektoniczne,
-              wnętrz lub produktów.
-            </p>
-          
-            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
-              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
-              <Link to="/uslugi/branding" className="text-primary hover:underline font-medium text-sm">→ Branding</Link>
-              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
-              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
-            </div>
-          </motion.div>
+      <section className="py-14 md:py-20 bg-card">
+        <div className="container-wide px-6 md:px-12 max-w-5xl space-y-10">
+          <div><h2 className="text-3xl font-heading mb-4">Czym jest wizualizacja 3D i co otrzymasz?</h2>
+          <p className="text-muted-foreground leading-relaxed">Wizualizacja 3D to komputerowy obraz przygotowany na podstawie trójwymiarowego modelu. Pozwala zobaczyć efekt końcowy jeszcze przed rozpoczęciem produkcji albo budowy. Wynikiem może być render do katalogu, zestaw ujęć, animacja lub model 3D do interaktywnej prezentacji. Przed zamówieniem ustalamy formaty, rozdzielczość, liczbę widoków i sposób wykorzystania materiałów. Wierne odwzorowanie wymaga wymiarów, referencji i potwierdzenia detali.</p></div>
+          <div><h2 className="text-3xl font-heading mb-4">Fotorealistyczne wizualizacje wnętrz a projekt wnętrza</h2>
+          <p className="text-muted-foreground leading-relaxed mb-4">Wizualizacja wnętrza pokazuje układ mebli, oświetlenie, kolory i faktury materiałów. Na podstawie projektu architekta możemy przedstawić aranżacje wnętrz mieszkalnych lub komercyjnych. To sposób na porównanie wariantów na etapie projektowania, zanim rozpoczną się prace wykończeniowe. Obraz pomaga omówić oczekiwania, ale nie zastępuje dokumentacji wykonawczej ani oceny technicznej rozwiązań.</p>
+          <p className="text-muted-foreground leading-relaxed">Fotorealizm wynika z połączenia geometrii, światła i materiałów. Realistyczne materiały, dopracowana tekstura drewna czy tkaniny i właściwe proporcje wpływają na odbiór sceny. Ekran i oświetlenie zmieniają postrzeganie kolorów, dlatego wizualizacji nie traktujemy jako próbki materiałowej. Warto porównać ją z rzeczywistymi wzornikami.</p></div>
+          <div><h2 className="text-3xl font-heading mb-4">Wizualizacje architektoniczne 3D budynku i otoczenia</h2>
+          <p className="text-muted-foreground leading-relaxed mb-4">Tworzymy wizualizacje architektoniczne na podstawie dostarczonej dokumentacji. Ujęcie całego budynku pokazuje bryłę i elewację, a widok z poziomu człowieka pomaga ocenić skalę wejścia, tarasu i otoczenia. Przy prezentacji inwestycji ustalamy, czy pokazywać roślinność, drogi, sąsiednie zabudowania i etap zagospodarowania terenu.</p>
+          <p className="text-muted-foreground leading-relaxed">Deweloper może wykorzystać taki materiał w prezentacji domów jednorodzinnych, osiedli lub lokali. Architekt i inwestor otrzymują wspólny punkt odniesienia do rozmowy o projekcie. Wyraźnie rozróżniamy przedstawienie projektu od zdjęcia istniejącej realizacji. Atrakcyjny obraz powinien być zgodny z uzgodnionymi założeniami.</p></div>
+          <div><h2 className="text-3xl font-heading mb-4">Wizualizacje produktów, animacje i konfiguratory</h2>
+          <p className="text-muted-foreground leading-relaxed mb-4">Packshot pokazuje produkt na prostym tle, a aranżacja prezentuje go w użyciu. Grafiki 3D ułatwiają przygotowanie wariantów koloru i wykończenia bez fotografowania każdego egzemplarza. Wybór między sesją zdjęciową a renderingiem zależy od dostępności produktu, liczby wariantów i oczekiwanej szczegółowości. Nie każdy materiał będzie tańszy w 3D.</p>
+          <p className="text-muted-foreground leading-relaxed">Konfigurator KLAGEM z naszego portfolio pozwala zmieniać moduły, wymiary i kolory w czasie rzeczywistym. Daje klientowi inne możliwości prezentacji niż pojedynczy obraz: może angażować go w dobór produktu i uporządkować jego pytania zakupowe. Zaangażowanie odbiorcy oraz to, jak prezentacja wpływa na decyzje zakupowe, wymagają pomiaru. Nie przypisujemy konfiguratorowi niepotwierdzonych wyników sprzedaży.</p></div>
+          <div><h2 className="text-3xl font-heading mb-4">Proces tworzenia wizualizacji: model, tekstura i rendering</h2>
+          <ol className="list-decimal pl-6 text-muted-foreground space-y-3 leading-relaxed">
+            <li><strong>Brief projektowy.</strong> Określamy odbiorcę, cel marketingowy, kanał publikacji i to, co ma pokazywać obraz. Zbieramy rzuty, wymiary, zdjęcia referencyjne i modele, jeśli je masz.</li>
+            <li><strong>Modelowanie i kadry.</strong> Wizualizator 3D przygotowuje geometrię oraz ujęcia do akceptacji. Na tym etapie projektu najłatwiej skorygować kompozycję i proporcje.</li>
+            <li><strong>Materiały i światło.</strong> Dopasowujemy powierzchnie, odbicia i oświetlenie. Podgląd pozwala ocenić, czy realistyczny obraz odpowiada zamysłowi.</li>
+            <li><strong>Rendering i przekazanie.</strong> Po akceptacji wykonujemy końcowy materiał graficzny. Liczbę poprawek, terminy, formaty i ewentualne przekazanie plików źródłowych określamy w ofercie.</li>
+          </ol></div>
+          <div><h2 className="text-3xl font-heading mb-4">Ile kosztuje wizualizacja wnętrza? Orientacyjny cennik i wycena</h2>
+          <p className="text-muted-foreground leading-relaxed mb-4">Cena zależy od materiałów wejściowych, liczby kadrów, złożoności modelu i oczekiwanego poziomu detalu. Wykonanie wizualizacji z gotowego modelu wymaga innej pracy niż modelowanie od szkicu. Animacja, kolejne warianty i prezentacja VR to osobne zakresy. Czas potrzebny na realizację potwierdzamy po sprawdzeniu plików i terminów akceptacji.</p>
+          <p className="text-muted-foreground leading-relaxed mb-6">Do wyceny wyślij opis obiektu lub produktu, liczbę potrzebnych ujęć, planowane zastosowanie i termin. Napisz, czy posiadasz rzuty, model 3D lub zdjęcia. Możesz zacząć od krótkiej wiadomości — ustalimy, których materiałów brakuje.</p>
+          <Link to={enquiryHref("other", "visualization")} className="dv-btn dv-btn-primary">Omów projekt i wycenę 3D <ArrowRight className="w-4 h-4" aria-hidden="true" /></Link>
+          <div className="flex flex-wrap gap-5 mt-6"><Link to={enquiryHref("web", "configurator")} className="underline underline-offset-4">Zapytaj o konfigurator produktów</Link><Link to="/uslugi/fotografia-produktowa" className="underline underline-offset-4">Porównaj z fotografią produktową</Link></div></div>
         </div>
       </section>
 

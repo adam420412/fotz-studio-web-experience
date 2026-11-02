@@ -13,7 +13,7 @@ const scope = [
 const sections = [
   {
     title: "Agencja marketingowa Warszawa — współpraca z FOTZ Studio",
-    text: "Szukasz zespołu, który połączy komunikację marki z wykonaniem materiałów i uruchomieniem kampanii? FOTZ Studio zajmuje się marketingiem internetowym dla firm z Warszawy. Ustalamy, jak pozyskiwać nowych klientów i jakich materiałów potrzebują, aby wybrać Twoją ofertę. Nasza siedziba znajduje się w Poznaniu; brief, akceptacje i omówienie wyników prowadzimy online. Sesję zdjęciową, nagrania lub spotkanie w Warszawie uzgadniamy oddzielnie, wraz z terminem i kosztem dojazdu. Możesz zlecić jeden projekt albo uzgodnioną stałą obsługę. Przed rozpoczęciem współpracy otrzymujesz listę prac, harmonogram i wycenę.",
+    text: "Szukasz zespołu, który połączy komunikację marki z wykonaniem materiałów i uruchomieniem kampanii? FOTZ Studio zajmuje się marketingiem internetowym dla firm z Warszawy. Ustalamy, jak pozyskiwać nowych klientów i jakich materiałów potrzebują, aby wybrać Twoją ofertę. Nasza siedziba znajduje się w Poznaniu; brief, akceptacje i omówienie wyników prowadzimy online. Sesję zdjęciową, nagrania lub spotkanie w Warszawie uzgadniamy oddzielnie, wraz z terminem i kosztem dojazdu. Możesz zlecić jeden projekt albo uzgodnioną stałą obsługę. Jako agencja marketingowa Mazowieckie obsługujemy w całości zdalnie — od briefu po raport wyników. Przed rozpoczęciem współpracy otrzymujesz listę prac, harmonogram i wycenę.",
     points: ["Dla firmy usługowej: oferta, dowody wykonanej pracy i prosty kontakt.", "Dla producenta: prezentacja produktu, wariantów i sposobu zamówienia.", "Dla sklepu: materiały produktowe, kampania i kontrola drogi do zakupu.", "Dla działu marketingu: wsparcie w wybranym zakresie, z jasnym podziałem zadań."],
   },
   {
@@ -27,7 +27,7 @@ const sections = [
   },
   {
     title: "SEO i kampanie Google Ads — widoczność w wyszukiwarce",
-    text: "Gdy odbiorcy aktywnie szukają rozwiązania w Google, warto rozważyć kampanie w wyszukiwarce i pozycjonowanie. Gdy produkt potrzebuje pokazania w użyciu, pomocne są zdjęcia, film i reklama w mediach społecznościowych. Content marketing wspiera porównanie ofert i wyjaśnia trudniejsze kwestie. Wybór zależy od popytu, konkurencji, budżetu i czasu potrzebnego na decyzję. Skuteczne kampanie wymagają spójnej oferty, materiałów i obsługi kontaktu. Proponujemy kolejność działań oraz sposób ich oceny. Sam wzrost ruchu na stronie nie wystarcza, jeśli przychodzą zapytania poza zakresem usługi.",
+    text: "Hasła takie jak „SEO Warszawa” czy „SEM Warszawa” opisują dwa różne kanały: widoczność organiczną i płatną emisję w wyszukiwarce. Gdy odbiorcy aktywnie szukają rozwiązania w Google, warto rozważyć kampanie w wyszukiwarce i pozycjonowanie. Gdy produkt potrzebuje pokazania w użyciu, pomocne są zdjęcia, film i reklama w mediach społecznościowych. Content marketing wspiera porównanie ofert i wyjaśnia trudniejsze kwestie. Wybór zależy od popytu, konkurencji, budżetu i czasu potrzebnego na decyzję. Skuteczne kampanie wymagają spójnej oferty, materiałów i obsługi kontaktu. Proponujemy kolejność działań oraz sposób ich oceny. Sam wzrost ruchu na stronie nie wystarcza, jeśli przychodzą zapytania poza zakresem usługi.",
   },
   {
     title: "Spójna marka i materiały — agencja kreatywna",
@@ -39,7 +39,7 @@ const sections = [
   },
   {
     title: "Agencja SEO czy kompleksowa obsługa marketingu?",
-    text: "Agencja SEO koncentruje się na widoczności w wyszukiwarce, agencja interaktywna na stronie i rozwiązaniach online, a agencja marketingu internetowego łączy działania z celem biznesowym. Nazwy częściowo się pokrywają, dlatego profesjonalna agencja powinna jasno opisać odpowiedzialność. Cele biznesowe przekładamy na zakres prac: optymalizacja witryny, działania SEO, kampanie reklamowe albo produkcja materiałów. Facebook Ads i Meta Ads mogą wspierać test oferty, lecz nie zastąpią jej dopracowania. Chcesz zwiększyć sprzedaż? Ustalmy także marżę, możliwości obsługi i to, jak będziesz liczyć zwrot z inwestycji. To pozwala rozmawiać o marketingu w kontekście firmy.",
+    text: "Agencja SEO koncentruje się na widoczności w wyszukiwarce, agencja interaktywna na stronie i rozwiązaniach online, a agencja marketingu internetowego łączy działania z celem biznesowym. Nazwy częściowo się pokrywają, dlatego profesjonalna agencja powinna jasno opisać odpowiedzialność. Cele biznesowe przekładamy na kompleksowy zakres prac: optymalizacja witryny, działania SEO, kampanie reklamowe albo produkcja materiałów. Facebook Ads i Meta Ads mogą wspierać test oferty, lecz nie zastąpią jej dopracowania. Chcesz zwiększyć sprzedaż? Ustalmy także marżę, możliwości obsługi i to, jak będziesz liczyć zwrot z inwestycji. To pozwala rozmawiać o marketingu w kontekście firmy.",
   },
   {
     title: "Agencja reklamowa i marketingowa: kreacje, wdrożenie, pomiar",
