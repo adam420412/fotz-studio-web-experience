@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-02",
+  "path": "/blog/digital-marketing-co-to",
+  "gscProperty": "sc-domain:fotz-studio.pl",
+  "gscSource": "Google Search Console przez WebBridge, raport Skuteczność / Sieć",
+  "gscPeriod": {
+    "from": "2026-08-01",
+    "to": "2026-10-31"
+  },
+  "gscPageForQuery": {
+    "page": "https://www.fotz-studio.pl/blog/digital-marketing-co-to",
+    "query": "digital marketing",
+    "clicks": 0,
+    "impressions": 303,
+    "position": 11.0,
+    "opportunity": "striking distance"
+  },
+  "neuron": {
+    "query": "c2067e5e46da0464",
+    "keyword": "digital marketing co to",
+    "before": 56,
+    "localRendered": 97,
+    "method": "evaluate-html on dist/blog/digital-marketing-co-to/index.html with final title and description",
+    "newAnalysesCreated": 0
+  },
+  "metadata": {
+    "title": "Digital marketing — co to jest i jak zacząć? | FOTZ",
+    "titleLength": 51,
+    "description": "Digital marketing (marketing cyfrowy): definicja, kanały online i przykład strategii dla małej firmy. Zobacz, jak zacząć i mierzyć leady bez zgadywania.",
+    "descriptionLength": 152,
+    "canonical": "https://www.fotz-studio.pl/blog/digital-marketing-co-to"
+  },
+  "checks": {
+    "typecheck": "passed",
+    "liveBlogTests": "7/7 passed",
+    "blogSeoTests": "16/16 passed",
+    "build": "passed; 1068 prerendered pages, 1066 full bodies, 0 body errors",
+    "seoCheck": "passed with PYTHONUTF8=1; 0 head errors, 0 sitemap issues, 0 broken rendered links",
+    "htmlContract": "one H1, self-canonical, own ArticleSchema URL, seven visible FAQ entries matching schema, service and contact links present",
+    "unsupportedRoiRemoved": true
+  },
+  "scope": [
+    "Expanded definition, operating model, channel selection and step-by-step strategy",
+    "Added a clearly hypothetical small-service-business plan without outcome promises",
+    "Added lead qualification, UTM/CRM measurement, CPL, CAC, ROAS and ROI definitions",
+    "Removed unsupported ROI multiples and fixed price claims",
+    "Preserved the existing URL, publication date, self-canonical and FOTZ title suffix"
+  ],
+  "notes": [
+    "The first npm run seo:check invocation stopped on the Windows cp1250 default while reading UTF-8 data; PYTHONUTF8=1 resolved the environment issue without changing repository scripts.",
+    "Content score does not prove indexing, rankings, clicks, leads or sales. Compare the same query–URL pair in Search Console after release and evaluate real lead quality."
+  ]
+}
