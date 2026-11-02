@@ -1,0 +1,99 @@
+{
+  "date": "2026-11-02",
+  "url": "https://www.fotz-studio.pl/uslugi/strony-internetowe/wroclaw",
+  "source": "src/pages/StronyInternetoweWroclaw.tsx",
+  "branch": "swarm/strony-wroclaw-20261102",
+  "base": "68721e4280de5ab86deeefff0f83238c071a1519",
+  "gsc": {
+    "assignedMetricsAvailable": false,
+    "note": "Brak aktualnych przypisanych metryk GSC; nie raportowano wyświetleń, kliknięć ani pozycji."
+  },
+  "neuronWriter": {
+    "query": "77e42b44eb180083",
+    "keyword": "strony internetowe wrocław",
+    "newAnalysesCreated": 0,
+    "baseline": 72,
+    "baselineMethod": "Produkcyjny evaluate-content dla docelowego URL z id=main-content, zapisany przed przebudową strony.",
+    "iterations": [
+      {
+        "iteration": 1,
+        "score": 90,
+        "scope": "Kompletna przebudowa oferty: typy projektów, zakres, CMS i materiały, integracje, techniczne SEO, proces, pomiar zapytań, wycena i natywne FAQ; usunięto niepotwierdzone wyniki, sztywne terminy i gwarancje."
+      },
+      {
+        "iteration": 2,
+        "score": 93,
+        "scope": "Rozbudowa o zapytania ze strony firmowej, lokalną widoczność, rozwój treści i kampanie Google Ads oraz wyrównanie długości i pokrycia zapisanych rekomendacji."
+      },
+      {
+        "iteration": 3,
+        "score": 96,
+        "scope": "Ograniczona korekta powtórzeń i form fraz w naturalnych zdaniach, uproszczenie leadu, ograniczenie nadmiernych powtórzeń CMS oraz zachowanie zgodności FAQ i danych strukturalnych."
+      }
+    ],
+    "final": 96,
+    "target": 95,
+    "recommendedWordCount": 2648,
+    "finalRenderedMainWords": 2665,
+    "wordCountMethod": "Lokalne zliczenie tokenów słów Unicode w widocznym tekście main#main-content; nie jest to osobna metryka NeuronWriter.",
+    "method": "evaluate-content przez neuron_client.py evaluate-html; outerHTML elementu main#main-content wydzielony z finalnego dist/uslugi/strony-internetowe/wroclaw/index.html; przekazano finalne title i description.",
+    "scopeComparison": "Baseline 72 zmierzono na publicznym URL z id=main-content. Finalny pomiar obejmuje ten sam semantyczny kontener z lokalnego prerenderu produkcyjnego, bez nawigacji i stopki. Zakres jest porównywalny, ale środowisko pomiaru jest inne.",
+    "container": {
+      "selector": "main#main-content",
+      "occurrences": 1,
+      "htmlCharacters": 48867,
+      "duplicateIds": [],
+      "uniqueIdCount": 13,
+      "verified": true
+    }
+  },
+  "metadata": {
+    "title": "Strony internetowe Wrocław — projektowanie | FOTZ",
+    "titleLength": 49,
+    "description": "Profesjonalne strony internetowe Wrocław: projektowanie stron WWW, WordPress, sklepy internetowe i SEO. Sprawdź zakres prac oraz wycenę FOTZ.",
+    "descriptionLength": 141,
+    "canonical": "https://www.fotz-studio.pl/uslugi/strony-internetowe/wroclaw",
+    "h1": "Projektowanie i tworzenie stron internetowych we Wrocławiu",
+    "h1Count": 1
+  },
+  "renderedContract": {
+    "selfCanonical": true,
+    "serviceSchemaMatchesLead": true,
+    "areaServed": "Wrocław",
+    "faqQuestions": 9,
+    "nativeFaqDetails": 9,
+    "visibleFaqMatchesSchema": true,
+    "cta": "/kontakt?usluga=web#formularz",
+    "ctaCount": 3,
+    "idCount": 13,
+    "duplicateIds": []
+  },
+  "scope": [
+    "Uporządkowano ofertę tworzenia stron: stronę firmową, wizytówkę, landing page, sklep, katalog, integracje, modernizację i migrację.",
+    "Opisano architekturę informacji, UX/UI, zakres realizacji, CMS, materiały klienta, copywriting, odpowiedzialności i przekazanie dostępów.",
+    "Dodano integracje dla zapytań, CRM, płatności, dostaw, analityki, marketingu, rezerwacji, ERP i API wraz z zasadami testowania oraz odbioru.",
+    "Opisano techniczne SEO, responsywność, indeksację, kanoniczne adresy, przekierowania, dane strukturalne, wydajność i kontrolę przed publikacją.",
+    "Rozpisano sześć etapów procesu, pomiar zapytań i stron docelowych w Search Console, uzgodnione zdarzenia analityczne oraz rozdzielenie widoczności, ruchu i konwersji.",
+    "Wyjaśniono warunki wyceny i opieki bez sztywnych cen, sztywnych terminów, gwarancji pozycji, liczby zapytań lub niepotwierdzonych wyników.",
+    "Dodano natywne FAQ dostępne w prerenderze, właściwe CTA oraz zdalny model współpracy bez deklarowania lokalnego biura we Wrocławiu."
+  ],
+  "checks": {
+    "npmCi": "passed",
+    "typecheck": "passed",
+    "targetedTests": "20/20 passed: strony-internetowe-wroclaw (5), live-blog (7), seo-metadata (3), structured-data (5)",
+    "build": "passed; 1066 prerendered pages, 1064 full bodies, 0 body errors",
+    "htmlContract": "passed; one H1, one main-content, self-canonical, nine matching FAQ entries, 13 unique IDs and no duplicates",
+    "diffCheck": "passed",
+    "buildArtifactsExcluded": "known-routes.json restored after prerender; dist, .ssr and temporary evaluation files not staged"
+  },
+  "files": [
+    "src/pages/StronyInternetoweWroclaw.tsx",
+    "scripts/strony-internetowe-wroclaw.test.mjs",
+    "docs/seo/strony-internetowe-wroclaw-2026-11-02.json"
+  ],
+  "businessImpact": "Nie zmierzono; content score nie dowodzi pozycji, ruchu, zapytań ani sprzedaży.",
+  "notes": [
+    "Nie utworzono nowych analiz NeuronWriter ani nie zgadywano metryk GSC.",
+    "Nie zmieniono App.tsx, sitemap, ai-work-register.csv, plików środowiskowych, innych stron ani współdzielonych komponentów."
+  ]
+}
