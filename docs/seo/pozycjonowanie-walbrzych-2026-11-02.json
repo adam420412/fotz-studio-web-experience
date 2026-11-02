@@ -1,0 +1,77 @@
+{
+  "date": "2026-11-02",
+  "path": "/pozycjonowanie/walbrzych",
+  "source": "src/pages/PozycjonowanieWalbrzych.tsx",
+  "baseCommit": "372b4e3b4ae0111269d1c934231d2cef8e9430de",
+  "gsc": {
+    "period": {
+      "from": "2026-10-03",
+      "to": "2026-10-30"
+    },
+    "clicks": 0,
+    "impressions": 60,
+    "position": 12.1333
+  },
+  "neuron": {
+    "query": "74c2a931e653de55",
+    "keyword": "pozycjonowanie wałbrzych",
+    "productionBefore": 89,
+    "localRenderedAfter": 95,
+    "recommendedWordTarget": 1204,
+    "finalRenderedMainWords": 1450,
+    "iterations": [
+      {
+        "iteration": 1,
+        "score": 88,
+        "scope": "Complete offer rewrite around local intent, technical SEO, Google Business Profile, content, links, measurement, process and scoped pricing"
+      },
+      {
+        "iteration": 2,
+        "score": 90,
+        "scope": "Filled recommendation gaps within existing sections without adding unrelated keywords"
+      },
+      {
+        "iteration": 3,
+        "score": 96,
+        "scope": "Improved final metadata and headings; separated paid acquisition and AI roles"
+      },
+      {
+        "iteration": 4,
+        "score": 95,
+        "scope": "Replaced client-only accordion output with native details so all six FAQ answers are present in prerendered HTML"
+      }
+    ],
+    "method": "evaluate-content through neuron_client.py evaluate-html on dist/pozycjonowanie/walbrzych/index.html with final title and description",
+    "newAnalysesCreated": 0
+  },
+  "metadata": {
+    "title": "Pozycjonowanie Wałbrzych — SEO w Google | FOTZ",
+    "titleLength": 46,
+    "description": "Pozycjonowanie stron Wałbrzych: kompleksowy audyt SEO, optymalizacja i profil firmy w Google. Zwiększ widoczność firmy z Wałbrzycha i okolic. Sprawdź wycenę.",
+    "descriptionLength": 157,
+    "canonical": "https://www.fotz-studio.pl/pozycjonowanie/walbrzych"
+  },
+  "checks": {
+    "typecheck": "passed",
+    "liveBlogTests": "7/7 passed",
+    "relevantSeoTests": "15/15 passed, including 4/4 direct Walbrzych contract tests",
+    "build": "passed; 1068 prerendered pages, 1066 full bodies, 0 body errors",
+    "htmlContract": "passed; one H1, self-canonical, title 46 characters, description 157 characters, one main-content, 14 unique IDs and no duplicates",
+    "faqContract": "passed; six native details entries in prerendered HTML, every visible question and answer matches FAQPage schema",
+    "diffCheck": "passed",
+    "buildArtifactsExcluded": "known-routes.json restored after prerender; dist and .ssr not staged"
+  },
+  "scope": [
+    "Replaced unsupported performance cards, fixed prices, ranking timelines and local market claims with verifiable service information",
+    "Added local search intent, service-area qualification and page-to-query mapping without inventing a local office or district pages",
+    "Documented audit deliverables, technical minimum, on-page content, internal and external linking, Google Business Profile and store considerations",
+    "Added measurement of Search Console visibility, organic landing pages and agreed enquiry actions, with positions separated from business outcomes",
+    "Added four-step remote process and scoped pricing based on technical condition, competition, offer count, service area and required implementation work",
+    "Preserved the existing URL, self-canonical, one H1, branded title and relevant contact CTAs",
+    "Added a direct source contract test and made all FAQ content available in prerendered HTML with unique IDs"
+  ],
+  "notes": [
+    "The content score evaluates the rendered offer against the existing NeuronWriter analysis; it does not prove indexing, rankings, clicks, enquiries or sales.",
+    "No changes were made to App.tsx, sitemaps, ai-work-register.csv, environment files, other pages or shared components."
+  ]
+}
