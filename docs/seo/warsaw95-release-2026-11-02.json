@@ -1,0 +1,84 @@
+{
+  "date": "2026-11-02",
+  "id": "FOTZ-79B907DF",
+  "owner": "Codex / FOTZ-kontynuacja-01a177f2-20261102",
+  "url": "https://www.fotz-studio.pl/agencja-marketingowa/warszawa",
+  "status": "POTWIERDZONE_95",
+  "query": "ae1756ad7ee4fb01",
+  "scores": {
+    "before": 94,
+    "renderedWorking": 95,
+    "previewUrl": 95,
+    "publicUrl": 95,
+    "method": "evaluate_content(query, html='', url, id='main-content')",
+    "containerVerified": true
+  },
+  "reservationPR": 116,
+  "implementationPR": 117,
+  "head": "e05cd6d29e9396206a7ee131510cfc26116e8891",
+  "productionCommit": "59d59d97088d7a81a657ddb66af9ae9b38f31a47",
+  "deployment": {
+    "id": "dpl_87JTjTYTUqHFntu7roqKdRxht5xq",
+    "state": "READY",
+    "target": "production"
+  },
+  "review": {
+    "reviewer": "Codex independent reviewer / warsaw_review",
+    "result": "PASS; no blocking findings",
+    "reviewedHead": "e05cd6d29e9396206a7ee131510cfc26116e8891",
+    "scope": "Actual diff, full page, ServiceEditorial, responsive heading styles and enquiry context",
+    "limits": "Code/copy review; browser and automated checks performed by primary agent"
+  },
+  "tests": {
+    "typecheck": "pass",
+    "unitTests": 183,
+    "buildPages": 1068,
+    "fullBodies": 1066,
+    "bodyErrors": 0,
+    "brokenRenderedLinks": 0,
+    "renderedLinks": 135504,
+    "sourceLinks": 3888,
+    "sourceLinkErrors": 0,
+    "photoErrors": 0,
+    "seoCommandOnWindows": "python -X utf8 scripts/audit-built-site.py; node scripts/audit-source-links.mjs; node scripts/audit-work-photos.mjs",
+    "ci": {
+      "typescriptAndTests": {
+        "id": 41449724717,
+        "result": "success"
+      },
+      "seo": {
+        "id": 41449724740,
+        "result": "success"
+      }
+    }
+  },
+  "mobile": {
+    "preview": [
+      320,
+      390
+    ],
+    "production": [
+      390
+    ],
+    "overflow": false,
+    "ctaMinHeight": 44,
+    "cta390Bottom": 622.1875,
+    "contact": {
+      "clickedOnPreview": true,
+      "url": "/kontakt?usluga=marketing&wariant=retainer#formularz",
+      "selectedService": "marketing",
+      "formPresent": true,
+      "formSubmitted": false
+    },
+    "limitations": "Browser viewport emulation; not a physical-device test"
+  },
+  "neuronSaved": true,
+  "neuronDone": true,
+  "gsc": {
+    "period": "2026-10-03 / 2026-10-30",
+    "clicks": 0,
+    "impressions": 231,
+    "position": 38.2121
+  },
+  "businessImpact": "Not yet measured; content score is not a lead or sales result"
+}
