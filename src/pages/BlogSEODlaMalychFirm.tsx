@@ -42,16 +42,24 @@ const BlogSEODlaMalychFirm = () => {
       answer: "SEO i Google Ads to komplementarne strategie. SEO daje długoterminowe rezultaty i jest bardziej ekonomiczne, ale Google Ads daje natychmiastową widoczność. Idealnie stosować obie metody razem.",
     },
     {
+      question: "Czy profil firmy w Google jest płatny?",
+      answer: "Nie — profil firmy w Google (Google Business Profile, dawniej Google Moja Firma) jest bezpłatny. Wizytówka — wpisz adres i numer telefonu, zbieraj opinie — zwiększa widoczność w mapie Google i lokalne wyniki wyszukiwania. To pierwszy krok lokalnego SEO dla każdej małej firmy.",
+    },
+    {
+      question: "Jak sprawdzić, czy działania SEO przynoszą efekty?",
+      answer: "Podepnij stronę pod Google Search Console i Google Analytics 4. Mierz liczbę zapytań i telefonów ze strony, pozycje fraz oraz ruch organiczny. Efekty oceniaj w perspektywie 3-6 miesięcy, a nie tygodni.",
+    },
+    {
       question: "Jak czasochłonne jest zarządzanie SEO dla małej firmy?",
-      answer: "Jeśli robisz to sam, liczy się 5-10 godzin tygodniowo na optymalizację, tworzenie treści i monitoring. Agententura SEO może wziąć to całkowicie na siebie, ale to dodatkowy koszt.",
+      answer: "Jeśli robisz to sam, liczy się 5-10 godzin tygodniowo na optymalizację, tworzenie treści i monitoring. Agencja SEO może wziąć to całkowicie na siebie, ale to dodatkowy koszt.",
     },
   ];
 
   return (
     <Layout>
       <SEOHead
-        title="SEO dla Małych Firm – Kompletny Poradnik 2026"
-        description="SEO dla małych firm od podstaw. Dowiedz się jak pozycjonować lokalny biznes, zoptymalizować Google My Business i zdobyć klientów online ✓ Praktyczne wskazówki"
+        title="Mała firma w Google — lokalne SEO i marketing | FOTZ"
+        description="SEO dla małych firm — lokalna widoczność, profil firmy w Google i mapa Google. Jak mała firma wygrywa: fraza, marketing i plan działań SEO krok po kroku."
         keywords="SEO dla małych firm, pozycjonowanie lokalne, Google My Business, SEO 2026"
         canonical="https://www.fotz-studio.pl/blog/seo-dla-malych-firm"
         ogType="article"
@@ -72,7 +80,7 @@ const BlogSEODlaMalychFirm = () => {
             </div>
 
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              SEO dla Małych Firm – Kompletny Poradnik 2026
+              SEO dla małych firm — jak mała firma zwiększy swoją widoczność
             </h1>
 
             <p className="text-lg md:text-xl mb-6 text-blue-100">
@@ -101,11 +109,11 @@ const BlogSEODlaMalychFirm = () => {
           {/* Introduction */}
           <div className="mb-12">
             <p className="text-lg text-gray-700 mb-4">
-              SEO dla małych firm to najszybsza droga do zwiększenia liczby klientów z internetu. Podczas gdy duże przedsiębiorstwa mogą pozwolić sobie na drogie kampanie reklamowe, maluch biznes może osiągać porównywalne (a czasem lepsze) rezultaty dzięki organicznej widoczności w Google.
+              SEO dla małych firm to najszybsza droga do zwiększenia liczby klientów z internetu. Podczas gdy duże przedsiębiorstwa mogą pozwolić sobie na drogie kampanie reklamowe, mały biznes może osiągać porównywalne (a czasem lepsze) rezultaty dzięki organicznej widoczności w Google.
             </p>
 
             <p className="text-lg text-gray-700 mb-4">
-              Rożnica jest fundamentalna: płatne reklamy (Google Ads) kończą się w momencie, kiedy przestaniesz płacić. SEO natomiast to inwestycja długoterminowa, która generuje bezpłatny ruch przez lata. Dla małych firm to oznacza niższe koszty pozyskania klientów i wyższy zwrot z inwestycji.
+              Różnica jest fundamentalna: płatne reklamy (Google Ads) kończą się w momencie, kiedy przestaniesz płacić. SEO natomiast to inwestycja długoterminowa, która generuje bezpłatny ruch przez lata. Dla małych firm to oznacza niższe koszty pozyskania klientów i wyższy zwrot z inwestycji.
             </p>
 
             <p className="text-lg text-gray-700">
@@ -176,15 +184,49 @@ const BlogSEODlaMalychFirm = () => {
             </div>
           </div>
 
+          {/* Konkurowanie z większymi */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">Jak mała firma może konkurować z większymi w wynikach wyszukiwania?</h2>
+
+            <p className="text-gray-700 mb-4">
+              Konkurowanie z większymi markami w wyszukiwarkach takich jak Google jest możliwe, bo lokalna widoczność rządzi się innymi prawami niż globalna. Jeśli prowadzisz małą firmę, nie musisz wygrywać fraz ogólnych — wystarczy, że Twoja strona internetowa odpowiada na zapytania lokalne: usługa plus lokalizacja (np. „fryzjer Poznań Jeżyce"). Wyszukiwarka premiuje trafność dla odbiorcy, a nie budżet.
+            </p>
+
+            <p className="text-gray-700 mb-4">Elementy przewagi małej firmy:</p>
+            <ul className="list-disc pl-6 text-gray-700 mb-4 space-y-2">
+              <li><strong>Unikalny opis każdej podstrony</strong> — nie kopiuj tekstów producenta; każda podstrona powinna odpowiadać na inną frazę, którą klienci będą wyszukiwać.</li>
+              <li><strong>Profil firmy w Google</strong> (dawniej Google Moja Firma, obecnie Google Business Profile) z aktualnym adresem i numerem telefonu — NAP to skrót od Name, Address, Phone, czyli adres i telefon, które muszą być spójne wszędzie.</li>
+              <li><strong>Linkowanie wewnętrzne i zewnętrzne</strong>: rolę linkowania wewnętrznego pełni linkowanie usług z blogiem, które wzmacnia pozycje w wynikach wyszukiwania, a odnośniki z lokalnych katalogów budują autorytet strony.</li>
+              <li><strong>Treści, które warto publikować regularnie</strong> — blog firmowy to najprostszy sposób, by zwiększyć swoją widoczność w Google w dłuższej perspektywie.</li>
+              <li><strong>Upychanie słów kluczowych jest karane</strong> — Google traktuje tzw. keyword stuffing jako spam; pisz dla człowieka, optymalizuj dla wyszukiwarki.</li>
+            </ul>
+            <p className="text-gray-700">
+              Warto wiedzieć, że większość stron internetowych małych firm nie ma nawet poprawnie ustawionych nagłówków — już sama optymalizacja podstaw daje przewagę nad lokalną konkurencją. Dodatkowo wpis do lokalnego katalogu branżowego (katalog branżowy ze spójnymi danymi NAP) wzmacnia sygnały lokalne, a widoczność strony rośnie z każdą zaindeksowaną podstroną.
+            </p>
+          </div>
+
+          {/* Inwestowanie w SEO */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">Inwestowanie w SEO — strategia SEO małej firmy krok po kroku</h2>
+
+            <p className="text-gray-700 mb-4">
+              Inwestowanie w SEO różni się od reklam tym, że budujesz własny kanał pozyskiwania klientów. Plan działań SEO na start: etap optymalizacji pod kątem szybkości oraz wersji na urządzeniach mobilnych, nagłówek z frazą na każdej podstronie oraz opisy produktów lub usług — w tym usługi na określonym obszarze działania. Pozycjonowanie strony to proces — wyższe pozycje w wynikach przychodzą z regularnością, a nie jednorazową akcją.
+            </p>
+
+            <p className="text-gray-700">
+              Marketing internetowy małej firmy powinien łączyć SEO (search engine optimization) z profilem firmy w Google i opiniami klientów. Potencjalni klienci, którzy znajdą Cię na mapie Google i przeczytają dobre recenzje, częściej wybierają lokalną firmę niż anonimową korporację. Mierz liczbę zapytań i telefonów, nie tylko pozycje.
+            </p>
+          </div>
+
           {/* Section 2: Local SEO */}
           <div className="mb-12">
-            <h2 className="text-3xl font-bold mb-6 text-gray-900">SEO lokalne – najważniejsze dla małych firm</h2>
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">Lokalne SEO — najważniejsze dla małej firmy: mapa Google i lokalizacja</h2>
 
             <p className="text-gray-700 mb-6">
               Dla większości małych firm SEO lokalne jest jeszcze ważniejsze niż SEO ogólne. To oznacza optymalizację dla wyników wyszukiwania w Twojej okolicy – gdy ktoś szuka "fryzjer warszawa" zamiast "fryzjer".
             </p>
 
-            <h3 className="text-2xl font-semibold mb-4 text-gray-900">Google My Business – fundament SEO lokalnego</h3>
+            <h3 className="text-2xl font-semibold mb-4 text-gray-900">Profil firmy w Google — wizytówka lokalna (dawniej Google Moja Firma)</h3>
 
             <p className="text-gray-700 mb-4">
               Google My Business (GMB) to bezpłatne narzędzie Google, które wyświetla Twoją firmę w Google Maps i lokalnych wynikach wyszukiwania. To <strong>obowiązkowe</strong> dla każdej firmy z fizyczną lokacją.
@@ -248,7 +290,7 @@ const BlogSEODlaMalychFirm = () => {
 
           {/* Section 3: Keywords */}
           <div className="mb-12">
-            <h2 className="text-3xl font-bold mb-6 text-gray-900">Dobór słów kluczowych dla małego biznesu</h2>
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">Fraza po frazie — dobór słów kluczowych dla małej firmy</h2>
 
             <p className="text-gray-700 mb-6">
               Zamiast konkurować o generyczne słowa kluczowe ("pizza", "kuchnia", "biznes"), małe firmy powinny skupiać się na <strong>long-tail keywords</strong> – dłuższych, bardziej specyficznych fraz, które mają mniej konkurencji.

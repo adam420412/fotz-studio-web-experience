@@ -161,6 +161,10 @@ const KampanieReklamowe = () => {
 
   const faqItems = [
     {
+      question: "Czym jest cel kampanii i jak go określić?",
+      answer: "Cel kampanii to mierzalny rezultat, który reklama ma osiągnąć: sprzedaż, zapytanie, telefon lub zasięg. Określić go pomaga cel biznesowy firmy — jeśli potrzebujesz zapytań, optymalizujemy pod leady; jeśli rozpoznawalność, pod zasięg. Od celu zależy wybór kanałów, formatów i modelu rozliczenia.",
+    },
+    {
       question: "Jaką platformę reklamową wybrać - Google Ads, Facebook Ads, TikTok czy LinkedIn?",
       answer: "Wybór zależy od Twojego celu i grupy docelowej. Google Ads - dla osób aktywnie szukających produktów (e-commerce, B2B). Facebook/Instagram Ads - budowanie świadomości marki (B2C, lifestyle). TikTok Ads - młodzi odbiorcy 16-35 lat (moda, beauty, FMCG). LinkedIn Ads - decydenci B2B (usługi profesjonalne, rekrutacja). Najlepsze wyniki daje połączenie kilku platform."
     },
@@ -212,8 +216,8 @@ const KampanieReklamowe = () => {
       <OrganizationSchema />
       <Layout>
       <SEOHead
-        title="Kampanie Reklamowe Google Ads i Meta Ads | Fotz Studio"
-        description="Kampanie reklamowe Google Ads, Facebook Ads, Instagram Ads i TikTok Ads. Zobacz, jak planujemy i prowadzimy kampanie dla firm."
+        title="Kampanie reklamowe — skuteczny plan marketingowy | FOTZ"
+        description="Kampanie reklamowe Google Ads, Facebook, Instagram i TikTok. Skuteczny performance marketing dla firm — zobacz, jak sprawdzić wyniki."
         canonical="https://www.fotz-studio.pl/kampanie-reklamowe"
         keywords="kampanie reklamowe, kampanie reklamowe online, kampania reklamowa, prowadzenie kampanii reklamowych, kampanie google ads, kampanie facebook ads, reklamy internetowe, agencja reklamowa, performance marketing, kampanie ppc, reklama w internecie, kampanie reklamowe dla firm"
       />
@@ -419,6 +423,84 @@ const KampanieReklamowe = () => {
                 )}
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Planowanie kampanii */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
+              Planowanie kampanii reklamowej — jak zaplanować skuteczną kampanię
+            </h2>
+            <p className="text-lg text-muted-foreground mb-6">
+              Każda kampania zaczyna się od celu. Cel kampanii wynika z celu biznesowego: wzrost sprzedaży, wprowadzenie nowego produktu lub usługi na rynek, budowa świadomości marki albo zwiększenie ruchu na stronie internetowej. Dopiero znając cel, określamy strategię marketingową i wybór odpowiednich kanałów.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Fundamentem jest wykonanie analizy — analizę grupy docelowej prowadzimy pod kątem zachowań potencjalnych klientów — jakie kanały komunikacji odwiedzają i jakie formaty mają angażować odbiorców docelowych. Dopasowanie przekazu do odpowiedniej grupy docelowej oraz research słów kluczowych zwiększają szanse na sukces bardziej niż wysoki budżet. Skuteczna kampania łączy precyzyjny target z kreacją, która odpowiada na realną potrzebę użytkownika.
+            </p>
+            <div className="grid sm:grid-cols-2 gap-4 mb-4">
+              {[
+                { t: "Cel i strategia", d: "Cel biznesowy, cel kampanii i strategia marketingowa — zależności od celów ustalamy przed startem, nie w trakcie." },
+                { t: "Grupa docelowa", d: "Analiza grupy docelowej: demografia, zainteresowania, intencje zakupowe i kanały komunikacji, z których korzysta." },
+                { t: "Kanały i formaty", d: "Wyszukiwarka Google, media społecznościowe, kampanie wideo, wyświetlanie reklam na stronach partnerów — wybór zależy od celu." },
+                { t: "Budżet i harmonogram", d: "Efektywnie zarządzać budżetem to testować małymi kwotami i skalować to, co działa. Etapy kampanii reklamowej planujemy z buforem na testy." },
+              ].map((item, i) => (
+                <div key={i} className="p-5 rounded-xl bg-card border border-border/50">
+                  <h3 className="font-semibold text-foreground mb-2">{item.t}</h3>
+                  <p className="text-sm text-muted-foreground">{item.d}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Rodzaje kampanii */}
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
+              Rodzaje kampanii reklamowych — od świadomości marki do sprzedaży
+            </h2>
+            <p className="text-muted-foreground mb-6">
+              Rodzaje kampanii dopasowujemy do etapu, na którym jest Twoja marka. Kampania marketingowa może budować świadomość marki wśród nowych odbiorców, generować ruch na stronie, promować wprowadzenie nowego produktu albo bezpośrednio zwiększać sprzedaż. Wyświetlanie reklam w sieci display buduje zasięg — platforma może wyświetlać banery na tysiącach stron — reklamy w wyszukiwarce zamykają gorący popyt, a remarketing przypomina się osobom, które już odwiedziły Twoją stronę, zachęcając je, by ponownie odwiedzić ofertę.
+            </p>
+            <ul className="space-y-3 text-muted-foreground">
+              {[
+                "Kampanie na zwiększenie sprzedaży — Google Ads, Meta Ads, Shopping; działania dla zwiększenia sprzedaży i zwrotu z inwestycji.",
+                "Kampanie wizerunkowe — zwiększyć świadomość marki i budowanie relacji z klientami; formaty wideo i display.",
+                "Kampanie produktowe — wprowadzenie nowego produktu lub usługi; zapowiedzi, kampanie wideo, media społecznościowe.",
+                "Kampanie na ruch — zwiększenie ruchu na stronie i zapoznanie z ofertą; content + reklamy w różnych kanałach.",
+                "Remarketing — dotarcie do osób, które odwiedziły stronę, ale nie kupiły; najwyższa skuteczność na złotówkę.",
+              ].map((item, i) => (
+                <li key={i} className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 shrink-0" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Jak przeprowadzić */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
+              Jak przeprowadzić skuteczną kampanię marketingową krok po kroku
+            </h2>
+            <p className="text-muted-foreground mb-6">
+              Jak stworzyć skuteczną kampanię reklamową? Najpierw trzeba ją dobrze zaplanować i przeprowadzić według procesu: brief i cele → research → kreacje → start → monitorowanie i analiza → optymalizacja. Stworzenie skutecznej kampanii reklamowej to nie jednorazowa akcja, tylko cykl działań reklamowych, w którym dane z poprzedniego tygodnia poprawiają wyniki następnego.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Skuteczność mierzymy liczbami: koszt pozyskania klienta, zwrot z inwestycji (ROAS), współczynnik klikalności i konwersje. Podpinamy Google Analytics i piksele platform, by monitorować wyniki codziennie — analiza wyników kampanii obejmuje stawki, odpowiednich grup odbiorców oraz kreacje. Tak prowadzona obsługa pozwala generować leady i sprzedaż przewidywalnie — i zwiększyć ich efektywność z miesiąca na miesiąc.
+            </p>
+            <p className="text-muted-foreground">
+              Skuteczna obsługa może obejmować też raportowanie: co miesiąc pokazujemy, ile wydałeś, co kupiłeś za te pieniądze i co planujemy dalej. Bez mgły marketingowej — konkretne liczby i decyzje.
+            </p>
           </div>
         </div>
       </section>
