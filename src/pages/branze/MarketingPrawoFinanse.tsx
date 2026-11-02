@@ -1,3 +1,4 @@
+import { industryEnquiryHref } from "@/lib/industry-enquiry.mjs";
 import { IndustryWork } from "@/components/sections/IndustryWork";
 import { Link } from "react-router-dom";
 import { SEOHead } from "@/components/seo/SEOHead";
@@ -150,7 +151,7 @@ const MarketingPrawoFinanse = () => {
 
             <div className="flex flex-wrap gap-4">
               <Button asChild size="lg" className="group">
-                <Link to="/kontakt">
+                <Link to={industryEnquiryHref("prawo-finanse", "/konsultacja")}>
                   Bezpłatna konsultacja
                   <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </Link>
@@ -284,7 +285,7 @@ const MarketingPrawoFinanse = () => {
             <aside className="rounded-3xl border border-border p-8 bg-card">
               <h3 className="font-heading text-2xl mb-4">Zacznijmy od Twojej oferty.</h3>
               <p className="text-muted-foreground leading-relaxed mb-6">Prześlij adres kancelarii lub firmy i opisz odbiorców usług. Ustalimy strukturę strony, materiały oraz sposób przyjmowania zapytań.</p>
-              <Link to="/kontakt?usluga=web#formularz" className="dv-btn dv-btn-primary">Omów stronę dla swojej firmy</Link>
+              <Link to={industryEnquiryHref("prawo-finanse", "/kontakt?usluga=web#formularz")} className="dv-btn dv-btn-primary">Omów stronę dla swojej firmy</Link>
             </aside>
           </div>
         </div>
@@ -404,7 +405,7 @@ const MarketingPrawoFinanse = () => {
               Umów się na bezpłatną konsultację i dowiedz się, jak możemy wspomóc rozwój Twojej kancelarii.
             </p>
             <Button asChild size="lg" className="group">
-              <Link to="/kontakt">
+              <Link to={industryEnquiryHref("prawo-finanse", "/konsultacja")}>
                 Bezpłatna konsultacja
                 <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
               </Link>

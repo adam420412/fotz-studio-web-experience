@@ -1,3 +1,4 @@
+import { industryEnquiryHref } from "@/lib/industry-enquiry.mjs";
 import { IndustryWork } from "@/components/sections/IndustryWork";
 import { Link } from "react-router-dom";
 import { SEOHead } from "@/components/seo/SEOHead";
@@ -150,7 +151,7 @@ const MarketingGastronomia = () => {
 
             <div className="flex flex-wrap gap-4">
               <Button asChild size="lg" className="group">
-                <Link to="/kontakt">
+                <Link to={industryEnquiryHref("gastronomia", "/konsultacja")}>
                   Bezpłatna konsultacja
                   <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </Link>
@@ -282,7 +283,7 @@ const MarketingGastronomia = () => {
             <aside className="rounded-3xl border border-border p-8 bg-background">
               <h3 className="font-heading text-2xl mb-4">Porozmawiajmy o Twoim projekcie</h3>
               <p className="text-muted-foreground leading-relaxed mb-6">Pokaż nam swoją ofertę i opowiedz, do kogo chcesz dotrzeć. Dobierzemy stronę, zdjęcia lub wideo do potrzeb Twojej firmy.</p>
-              <Link to="/kontakt#formularz" className="dv-btn dv-btn-primary">Opisz swój projekt <ArrowRight className="w-4 h-4" aria-hidden="true" /></Link>
+              <Link to={industryEnquiryHref("gastronomia", "/kontakt#formularz")} className="dv-btn dv-btn-primary">Opisz swój projekt <ArrowRight className="w-4 h-4" aria-hidden="true" /></Link>
             </aside>
           </div>
         </div>
@@ -404,7 +405,7 @@ const MarketingGastronomia = () => {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button asChild size="lg" className="group">
-                <Link to="/kontakt">
+                <Link to={industryEnquiryHref("gastronomia", "/konsultacja")}>
                   <Phone className="mr-2 w-4 h-4" />
                   Umów konsultację
                   <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
