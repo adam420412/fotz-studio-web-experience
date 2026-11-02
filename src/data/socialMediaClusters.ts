@@ -98,10 +98,10 @@ export const SOCIAL_MEDIA_CLUSTERS: SocialMediaCluster[] = [
     path: "/agencja-social-media/warszawa",
     title: "Agencja social media Warszawa",
     shortLabel: "Warszawa",
-    description: "Obsługa social media dla firm z Warszawy — strategia, content, Ads.",
-    metaTitle: "Agencja social media Warszawa — Fotz Studio",
+    description: "Prowadzenie profili, zdjęcia, rolki i kampanie dla firm z Warszawy. Zobacz realizacje, zakres oraz koszty współpracy z FOTZ Studio.",
+    metaTitle: "Agencja social media Warszawa — obsługa i reklamy | FOTZ",
     metaDescription:
-      "Profesjonalna obsługa social media dla firm z Warszawy. Strategia, content premium, reklamy. Bezpłatna konsultacja.",
+      "Obsługa social media dla firm z Warszawy: prowadzenie profili, content i kampanie reklamowe. Zobacz realizacje FOTZ, zakres współpracy i zapytaj o wycenę.",
     kind: "city",
     intent: "local",
   },

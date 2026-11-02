@@ -1,0 +1,87 @@
+{
+  "date": "2026-11-02",
+  "path": "/agencja-social-media/warszawa",
+  "gscPeriod": {
+    "from": "2026-10-03",
+    "to": "2026-10-30"
+  },
+  "gscPages": [
+    {
+      "page": "https://www.fotz-studio.pl/agencja-social-media/warszawa",
+      "clicks": 0,
+      "impressions": 127,
+      "position": 29.7559
+    },
+    {
+      "page": "https://www.fotz-studio.pl/social-media/warszawa",
+      "clicks": 0,
+      "impressions": 5,
+      "position": 20.2
+    }
+  ],
+  "gscQueries": [
+    {
+      "page": "https://www.fotz-studio.pl/agencja-social-media/warszawa",
+      "query": "agencja social media",
+      "clicks": 0,
+      "impressions": 72,
+      "position": 27.7361
+    },
+    {
+      "page": "https://www.fotz-studio.pl/agencja-social-media/warszawa",
+      "query": "agencja social media warszawa",
+      "clicks": 0,
+      "impressions": 36,
+      "position": 27.7778
+    },
+    {
+      "page": "https://www.fotz-studio.pl/agencja-social-media/warszawa",
+      "query": "obsługa social media warszawa",
+      "clicks": 0,
+      "impressions": 13,
+      "position": 50.1538
+    },
+    {
+      "page": "https://www.fotz-studio.pl/agencja-social-media/warszawa",
+      "query": "prowadzenie social mediów warszawa",
+      "clicks": 0,
+      "impressions": 2,
+      "position": 25.5
+    },
+    {
+      "page": "https://www.fotz-studio.pl/agencja-social-media/warszawa",
+      "query": "social media warszawa",
+      "clicks": 0,
+      "impressions": 1,
+      "position": 30
+    },
+    {
+      "page": "https://www.fotz-studio.pl/social-media/warszawa",
+      "query": "agencja social media warszawa",
+      "clicks": 0,
+      "impressions": 2,
+      "position": 30.5
+    },
+    {
+      "page": "https://www.fotz-studio.pl/social-media/warszawa",
+      "query": "social media warszawa",
+      "clicks": 0,
+      "impressions": 1,
+      "position": 30
+    }
+  ],
+  "neuron": {
+    "query": "9712cb9081f26ae0",
+    "before": 51,
+    "localDraft": 96,
+    "publicAfter": null
+  },
+  "status": "Local candidate; awaiting final QA, Claude verdict, CI and production readback",
+  "scope": [
+    "Offer, deliverables, prices and limitations",
+    "Own reels and photos, on-page playback",
+    "Separate management, materials, social_ads and marketing retainer enquiries",
+    "Truthful remote service area, no Warsaw office",
+    "Existing URL and sibling canonical preserved"
+  ]
+}
