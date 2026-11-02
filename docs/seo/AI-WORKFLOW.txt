@@ -1,0 +1,55 @@
+FOTZ STUDIO — WSPOLNA PRACA AI / MINIMUM 95 W NEURONWRITER
+Stan listy: 2 listopada 2026. 1067 unikalnych, aktualnych adresow z publicznej mapy strony. Cel: minimum 95 dla kazdego adresu.
+
+REPOZYTORIUM I REJESTR
+https://github.com/adam420412/fotz-studio-web-experience
+Glowny rejestr: docs/seo/ai-work-register.csv na aktualnym main.
+Link: https://github.com/adam420412/fotz-studio-web-experience/blob/main/docs/seo/ai-work-register.csv
+Arkusz XLSX i zalaczony CSV to kopie do planowania. Nie synchronizuja sie automatycznie. O wlasnosci zadan decyduje aktualny rejestr w repozytorium, a nie lokalna kopia ani deklaracja na czacie.
+
+JAK PRZEJAC ZADANIE
+1. Pobierz aktualny main i przeczytaj rejestr oraz instrukcje projektu. Nie zmieniaj niezatwierdzonych plikow innego AI/uzytkownika.
+2. Wybierz 1-3 wiersze WOLNE. Najpierw P0, potem oferty P1, realizacje P2 i pozostale P3. P4 to strony z potwierdzonym wynikiem: kontrola po zmianach, nie ponowne przepisywanie.
+3. W osobnej galezi zmien tylko wybrane wiersze: Opiekun_AI = nazwa AI + unikalny identyfikator rozmowy, Status = ZAREZERWOWANE, Rezerwacja_UTC = pelny czas ISO 8601, Branch = planowana galaz pracy.
+4. Zglos mala zmiane rezerwacji przez PR. Sprawdz aktualny main przed scaleniem, rozwiaz konflikt wlasnosci bez nadpisywania cudzej rezerwacji. Dopiero po scaleniu i ponownym odczycie rejestru rozpocznij edycje strony. Zajeta strona pozostaje przy obecnym opiekunie. Pakiet jest wskazowka do podzialu, nie rezerwacja wszystkich jego wierszy.
+5. Pracuj w osobnym checkout/worktree. Sprawdz kolumne Plik_lub_zrodlo: wiele URL moze dzielic komponent lub plik CMS. Nie zmieniaj wspolnych szablonow, stopki, menu, cennika, routingu ani zbiorczych plikow bez uzgodnienia z koordynatorem i sprawdzenia pozostalych rezerwacji.
+6. Bez dostepu do zapisu w repo: zwroc proponowane ID i swoja nazwe do koordynatora. Nie twierdz, ze zadanie jest globalnie zarezerwowane, dopoki koordynator nie potwierdzi zapisu.
+
+PRACA NAD STRONA
+- Projekt NEURONwriter: 59db8bbb8ee62780. Najpierw znajdz istniejaca analize i sprawdz fraze, jezyk, kraj oraz intencje. Puste query w liscie nie dowodzi braku analizy. Nie tworz duplikatow; nowe analizy zuzywaja limit konta. Nie wykupuj dodatkowych kredytow.
+- Popraw strone pod rzeczywiste zapytania klientow: jasna oferta, adekwatne realizacje FOTZ, zakres pracy, odpowiedzi na pytania i latwy kontakt z wybrana usluga. Bez fikcyjnych biur, cen, wynikow klientow, recenzji i obietnic pozycji.
+- Uzywaj rekomendacji NEURONwriter w naturalnym tekscie. Bez list slow dla robota, niewidocznej tresci, kopiowania konkurencji i sztucznego powtarzania fraz. Wymagane minimum 95 dotyczy oceny z narzedzia, nie wlasnej oceny AI.
+- Nie zmieniaj frazy na latwiejsza tylko dla wyniku. Nie lacz roznych intencji pod jedna analize. Strony prawne i narzedzia tez maja cel 95, ale nie wolno naruszac ich funkcji ani wymyslac postanowien. Jezeli intencja analizy jest nietrafiona lub brakuje faktow, zapisz BLOKADA i konkretny powod.
+- Dla bloga ustal, czy URL korzysta z TSX czy CMS. Przeczytaj docs/seo/PUBLIC-CONTENT-ROUTES.md. Nie nadpisuj zbiorczo snapshotow; nie wlaczaj automatycznej publikacji niezweryfikowanych tekstow. Praca nad baza wymaga jej wlasciwego dostepu i instrukcji projektu.
+- Nie przywracaj wycofanego studia podcastowego ani adresow usunietych z mapy. Nie usuwaj ani nie scalaj kolejnych stron bez analizy ich ruchu, intencji i linkow.
+
+KIEDY OZNACZYC POTWIERDZONE_95
+Wszystkie warunki musza byc spelnione dla nowych zmian:
+1. Ocena rzeczywistej tresci po renderowaniu >=95; zapisz query i wynik roboczy.
+2. Rzeczywisty review Claude lub innego niezaleznego AI; wpisz jego nazwe i wynik. Nie wpisuj Claude jako recenzenta, jesli review nie zostalo faktycznie wykonane. Autor zmian nie moze sam sobie wystawic niezaleznego review.
+3. Wymagane sprawdzenia projektu przechodza: npm run typecheck, npm test, npm run build, npm run seo:check; sprawdz wyglad, linki i CTA na telefonie.
+4. PR scalony, wlasciwe wdrozenie produkcyjne READY, domena www.fotz-studio.pl obsluguje zmiane. Sam build, preview lub scalony PR nie wystarcza.
+5. Ponowna ocena publicznego URL w NEURONwriter: evaluate_content(query, html="", url=URL, id="main-content") >=95. Upewnij sie, ze id istnieje i obejmuje wlasciwa tresc. Uzyj rownowaznego kontenera dla stron bez main-content i udokumentuj sposob.
+6. Zapisz wynik publiczny, date, query, PR, commit wdrozenia, recenzenta i dowod. Zaktualizuj wylacznie swoje wiersze w rejestrze na aktualnym main; zapisz tresc w NEURONwriter, oznacz zakonczona.
+Jezeli brakuje dowodu, pozostaw uczciwy status. Wynik 95 nie oznacza indeksacji, pozycji, klikniec, leada ani sprzedazy.
+
+STATUSY
+WOLNE — bez aktywnego opiekuna.
+ZAREZERWOWANE — rezerwacja opublikowana w rejestrze.
+W_TRAKCIE — edycja i ocena tekstu.
+DO_REVIEW — gotowe do niezaleznego przegladu.
+GOTOWE_DO_WDROZENIA — review i lokalne sprawdzenia zakonczone.
+WDROZONE_DO_POMIARU — zmiana publiczna, brak koncowej oceny.
+POTWIERDZONE_95 — wynik publiczny >=95; nowe zmiany wymagaja calego zestawu dowodow powyzej.
+BLOKADA — konkretny brak lub przeszkoda zapisana w Uwagi.
+Dawne 25 wierszy POTWIERDZONE_95 maja swiezy pomiar z 2 listopada, ale nie przypisujemy nieznanego autora ani recenzenta historycznych zmian.
+
+ZRODLA I OGRANICZENIA
+Mapa: https://www.fotz-studio.pl/sitemap-index.xml
+Pomiar publiczny: docs/seo/ai-register-baseline-2026-11-02.json (29 stron, z nich 25 >=95).
+GSC: eksport sc-domain:fotz-studio.pl z okresu 2026-10-03 do 2026-10-30, odczyt 2026-11-02; zbior ograniczony do stron z co najmniej 60 wyswietleniami. Puste pole oznacza brak w tym eksporcie, nie zero.
+Typ, ID i pakiet sluza ewidencji. Niezmapowany plik wymaga sprawdzenia; nie jest zgoda na zgadywanie miejsca edycji.
+
+RAPORT KONCOWY KAZDEGO AI
+ID | URL | Opiekun_AI | status | query | wynik przed -> roboczy -> publiczny | data pomiaru | PR | commit produkcji | recenzent | dowod | blokady/nastepny krok
+Na koniec podaj rowniez, czy aktualizacja rejestru zostala scalona. Nie oznaczaj cudzych wierszy ani calego pakietu jako gotowe.
