@@ -1,0 +1,99 @@
+{
+  "date": "2026-11-02",
+  "url": "https://www.fotz-studio.pl/uslugi/sklepy-internetowe/krakow",
+  "source": "src/pages/SklepyInternetoweKrakow.tsx",
+  "branch": "swarm/sklepy-krakow-20261102",
+  "baseCommit": "6821a6051b3c88f967bcdc110628c8b9209f1845",
+  "gsc": {
+    "period": {
+      "from": "2026-10-01",
+      "to": "2026-10-31"
+    },
+    "query": "sklepy internetowe kraków",
+    "impressions": 11,
+    "clicks": 0,
+    "averagePosition": 15.5,
+    "scope": "Global query data supplied for the analysis; these figures were not automatically attributed to this URL."
+  },
+  "neuronWriter": {
+    "query": "0dd59f39ca97dbbb",
+    "keyword": "sklepy internetowe kraków",
+    "newAnalysesCreated": 0,
+    "productionBaseline": 84,
+    "baselineMethod": "Production evaluate-content request for the target URL with id=main-content, recorded before the rewrite.",
+    "iterations": [
+      {
+        "iteration": 1,
+        "score": 77,
+        "scope": "Complete useful-offer rewrite covering platform, catalogue, integrations, technical SEO, process, measurement, scoped pricing and FAQ; unsupported statistics, fixed prices and guarantees removed."
+      },
+      {
+        "iteration": 2,
+        "score": 92,
+        "scope": "Expanded relevant service terminology and aligned title, H1 and visible content with the saved recommendations without adding unrelated claims."
+      },
+      {
+        "iteration": 3,
+        "score": 93,
+        "scope": "Added natural local, visual-identity and customer-contact context while reducing repeated terms above recommended ranges."
+      },
+      {
+        "iteration": 4,
+        "score": 95,
+        "scope": "Final bounded correction for remaining basic terms, local scope and the shop-creation process; no additional sections or promises."
+      }
+    ],
+    "final": 95,
+    "target": 95,
+    "recommendedWordCount": 1568,
+    "finalRenderedMainWords": 1861,
+    "wordCountMethod": "Unicode word tokens in the visible text of main#main-content, including shared selected-work content; this is a local verification count, not a NeuronWriter metric.",
+    "method": "evaluate-content through neuron_client.py evaluate-html; outerHTML of main#main-content extracted from final dist/uslugi/sklepy-internetowe/krakow/index.html; final title and description supplied explicitly.",
+    "scopeComparison": "The 84 baseline used the public URL and main-content. The final 95 measurement used the same semantic container from the local production prerender, including page and shared selected-work content but excluding navigation and footer. The content scope is comparable, while the measurement environment differs.",
+    "container": {
+      "selector": "main#main-content",
+      "occurrences": 1,
+      "htmlCharacters": 32695,
+      "duplicateIds": [],
+      "uniqueIdCount": 11,
+      "verified": true
+    }
+  },
+  "metadata": {
+    "title": "Sklep internetowy Kraków — tworzenie | FOTZ",
+    "titleLength": 43,
+    "description": "Sklep internetowy Kraków: projekt, wdrożenie, płatności, integracje, SEO techniczne i analityka. Sprawdź zakres prac i warunki bezpłatnej wyceny FOTZ.",
+    "descriptionLength": 150,
+    "canonical": "https://www.fotz-studio.pl/uslugi/sklepy-internetowe/krakow",
+    "h1": "Sklep internetowy Kraków — projektowanie i wdrożenie",
+    "h1Count": 1
+  },
+  "renderedContract": {
+    "selfCanonical": true,
+    "serviceSchemaMatchesH1": true,
+    "areaServed": "Kraków",
+    "faqQuestions": 7,
+    "visibleFaqMatchesSchema": true,
+    "cta": "/kontakt?usluga=web&wariant=shop#formularz",
+    "ctaPresent": true,
+    "duplicateIds": []
+  },
+  "checks": {
+    "npmCi": "passed",
+    "typecheck": "passed",
+    "targetedTests": "20/20 passed: 7 live-blog, 5 direct Kraków contract, 3 seo-metadata and 5 structured-data tests",
+    "build": "passed; 1066 prerendered pages, 1064 full page bodies, 0 body errors",
+    "htmlContract": "passed; one H1, self-canonical, title 43 characters, description 150 characters, one main-content and 11 unique IDs with no duplicates",
+    "diffCheck": "passed",
+    "buildArtifactsExcluded": "known-routes.json restored after prerender; dist, .ssr and temporary evaluation files were not staged"
+  },
+  "files": [
+    "src/pages/SklepyInternetoweKrakow.tsx",
+    "scripts/sklepy-internetowe-krakow.test.mjs",
+    "docs/seo/sklepy-internetowe-krakow-2026-11-02.json"
+  ],
+  "notes": [
+    "Content score evaluates the rendered offer against the existing NeuronWriter analysis; it does not prove indexing, rankings, clicks, enquiries or sales.",
+    "No changes were made to App.tsx, sitemaps, ai-work-register.csv, environment files, other pages or shared components."
+  ]
+}
