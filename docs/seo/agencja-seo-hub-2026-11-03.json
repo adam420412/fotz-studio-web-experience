@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-03",
+  "path": "/seo",
+  "url": "https://www.fotz-studio.pl/seo",
+  "source": "src/pages/clusters/SEOCluster.tsx",
+  "branch": "swarm/seo-cluster-20261103",
+  "baseCommit": "83d92567045094a43d34403ce63b80804ca017e4",
+  "gsc": {
+    "assignedMetrics": false,
+    "note": "No current assigned GSC metrics were supplied; none were inferred or fabricated."
+  },
+  "neuronWriter": {
+    "query": "ae6c1fe03498f941",
+    "keyword": "agencja seo",
+    "newAnalysesCreated": 0,
+    "productionBaseline": 40,
+    "baselineMethod": "Saved production evaluate-content result for https://www.fotz-studio.pl/seo with id=main-content before the rewrite.",
+    "target": 95,
+    "recommendedWordTarget": 2996,
+    "finalRenderedMainWords": 3055,
+    "wordCountMethod": "Unicode word tokens in the visible text of main#main-content after removing markup; this is a local verification count, not a NeuronWriter metric.",
+    "iterations": [
+      {
+        "iteration": 1,
+        "score": 93,
+        "scope": "Complete agency SEO offer and hub covering services, audit, technical work, content, local visibility, store SEO, cooperation choice, process, query measurement, pricing and prerendered FAQ with final metadata."
+      },
+      {
+        "iteration": 2,
+        "score": 94,
+        "scope": "Added a practical explanation of website and store search journeys and clarified campaign evaluation, AI answers and strategy terminology without adding new sections or links."
+      },
+      {
+        "iteration": 3,
+        "score": 95,
+        "scope": "Reduced repetitive wording with precise synonyms, clarified cooperation-model choices and retained the same final metadata, links, schema and complete offer."
+      }
+    ],
+    "iterationsUsed": 3,
+    "maximumIterations": 4,
+    "final": 95,
+    "method": "evaluate-content through neuron_client.py evaluate-html; outerHTML of main#main-content extracted from final dist/seo/index.html and submitted with the final title and description.",
+    "scopeComparison": "Baseline 40 was measured on the public URL with id=main-content. Final measurement uses the same semantic container from the local production prerender, excluding navigation and footer. The content scope is comparable, while the measurement environment differs.",
+    "container": {
+      "selector": "main#main-content",
+      "occurrences": 1,
+      "duplicateIds": [],
+      "verified": true
+    }
+  },
+  "metadata": {
+    "title": "Agencja SEO — pozycjonowanie stron | FOTZ",
+    "titleLength": 41,
+    "description": "Agencja SEO FOTZ: audyt, technika, treści i lokalna widoczność. Pozycjonowanie stron i sklepów, pomiar zapytań oraz jasne zasady wyceny.",
+    "descriptionLength": 136,
+    "canonical": "https://www.fotz-studio.pl/seo",
+    "h1": "Agencja SEO i pozycjonowanie stron internetowych",
+    "h1Count": 1
+  },
+  "renderedContract": {
+    "selfCanonical": true,
+    "mainContentCount": 1,
+    "idCount": 21,
+    "duplicateIds": [],
+    "serviceSchemaMatchesH1AndLead": true,
+    "breadcrumbSchemaPresent": true,
+    "faqQuestions": 7,
+    "visibleFaqMatchesSchema": true,
+    "cta": "/kontakt?usluga=seo&wariant=audit#formularz",
+    "ctaCount": 2
+  },
+  "checks": {
+    "npmCi": "passed",
+    "typecheck": "passed",
+    "targetedTests": "25/25 passed: live-blog 7/7, direct SEO hub contract 6/6, seo-metadata 3/3, structured-data 5/5, rendered-html 3/3 and local-city-copy 1/1",
+    "build": "passed; 1061 prerendered pages, 1059 full page bodies, 0 body errors",
+    "htmlContract": "passed; one H1, one main-content, self-canonical, title 41 characters, description 136 characters, 21 IDs and no duplicates",
+    "schemaContract": "passed; Service name and description match the visible H1 and lead; all seven visible FAQ questions and answers match FAQPage schema",
+    "buildArtifacts": "known-routes.json restored after prerender; dist, .ssr and temporary extracted HTML are outside the delivery scope"
+  },
+  "scope": [
+    "Replaced unsupported statistics, client claims, performance guarantees and fixed prices with a verifiable agency SEO offer and cooperation terms.",
+    "Added a focused hub of seven substantive service areas and four relevant guides, all linked to existing declared routes without mass lists of links, cities or phrases.",
+    "Covered audit and intent planning, technical SEO, content marketing, internal linking, local visibility, Google Business Profile, e-commerce, off-page work and AI-answer considerations.",
+    "Explained agency, freelancer and in-house choices, five cooperation stages, responsibilities, approvals and account-access rules.",
+    "Separated visibility, organic traffic, measured contact actions, lead qualification and sales outcomes without inventing current GSC data or attributing unverified revenue.",
+    "Documented pricing factors, exclusions, handover conditions and individually scoped work without fixed prices or guarantees.",
+    "Preserved the existing /seo URL and added concise branded metadata, self-canonical, one H1, matching Service, Breadcrumb and FAQ schemas, relevant audit CTAs and native prerendered FAQ details.",
+    "Added a direct source contract test and documented the final local prerender measurement with no duplicate IDs."
+  ],
+  "files": [
+    "src/pages/clusters/SEOCluster.tsx",
+    "scripts/seo-cluster-agency.test.mjs",
+    "docs/seo/agencja-seo-hub-2026-11-03.json"
+  ],
+  "notes": [
+    "Content score does not prove indexing, rankings, clicks, enquiries or sales.",
+    "No changes were made to App.tsx, sitemaps, ai-work-register.csv, environment files, other pages or shared components.",
+    "No new NeuronWriter analyses were created; only three evaluate-content calls used the existing query ae6c1fe03498f941.",
+    "npm ci reported 59 dependency audit findings: 5 low, 14 moderate and 40 high. No dependency updates were made in this scoped task."
+  ],
+  "businessImpact": "Not measured; content score does not demonstrate rankings, traffic, enquiries or sales."
+}
