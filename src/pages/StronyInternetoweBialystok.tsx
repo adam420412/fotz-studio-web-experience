@@ -1,5 +1,6 @@
 import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
+import { SelectedWork } from "@/components/sections/SelectedWork";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import {
@@ -211,6 +212,8 @@ export default function StronyInternetoweBialystok() {
             </div>
           </div>
         </section>
+
+        <SelectedWork />
 
         <section className="py-20">
           <div className="container mx-auto px-4 max-w-4xl">

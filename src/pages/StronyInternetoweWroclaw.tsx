@@ -1,5 +1,6 @@
 import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
+import { SelectedWork } from "@/components/sections/SelectedWork";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import {
@@ -373,6 +374,8 @@ export default function StronyInternetoweWroclaw() {
             <p className={bodyText}>Współpracę z firmami z Wrocławia możemy prowadzić zdalnie, z prezentacjami i akceptacjami online. Nie deklarujemy lokalnego biura we Wrocławiu. Lokalny kontekst uwzględniamy w treści i strukturze oferty, natomiast obszar działania firmy, język komunikacji i sposób kontaktu ustalamy na podstawie rzeczywistych potrzeb klienta.</p>
           </div>
         </section>
+
+        <SelectedWork />
 
         <section className="py-20">
           <div className="container mx-auto px-4 max-w-4xl">

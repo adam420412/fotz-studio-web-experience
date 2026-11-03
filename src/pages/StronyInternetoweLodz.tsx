@@ -1,5 +1,6 @@
 import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
+import { SelectedWork } from "@/components/sections/SelectedWork";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import {
@@ -294,6 +295,8 @@ export default function StronyInternetoweLodz() {
             <p className={bodyText}>Projekty dla regionu Łódź i okolice prowadzimy zdalnie, z prezentacjami i akceptacjami online. Strony WWW w Łodzi przygotowujemy według rzeczywistych potrzeb. Dla klientów z Łodzi oraz województwa łódzkiego ustalamy obszar działania i sposób kontaktu. Nie deklarujemy lokalnego biura w Łodzi. Lokalny kontekst uwzględniamy w treści i strukturze oferty.</p>
           </div>
         </section>
+
+        <SelectedWork />
 
         <section className="py-20 bg-card/30">
           <div className="container mx-auto px-4 max-w-4xl">
