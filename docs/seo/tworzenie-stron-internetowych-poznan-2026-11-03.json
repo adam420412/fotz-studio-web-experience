@@ -1,0 +1,146 @@
+{
+  "date": "2026-11-03",
+  "url": "https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych/poznan",
+  "source": "src/pages/TworzenieStronPoznan.tsx",
+  "branch": "swarm/tworzenie-poznan-gsc-20261103",
+  "base": "9928f732be4fd15ef2d994ca5c87abbcd265ae6d",
+  "status": "local-target-met",
+  "gsc": {
+    "assignedMetricsAvailable": true,
+    "exactUrl": true,
+    "period": "2026-10-05 / 2026-11-01",
+    "impressions": 52,
+    "clicks": 0,
+    "averagePosition": 40.8,
+    "selectedQueries": [
+      {
+        "query": "tworzenie stron poznań",
+        "impressions": 9,
+        "position": 14.0
+      },
+      {
+        "query": "tworzenie stron internetowych poznań",
+        "impressions": 6,
+        "position": 16.8
+      },
+      {
+        "query": "budowa stron internetowych poznań",
+        "impressions": 2,
+        "position": 15.5
+      },
+      {
+        "query": "projektowanie stron internetowych poznan",
+        "impressions": 1,
+        "position": 14.0
+      },
+      {
+        "query": "tworzenie www poznań",
+        "impressions": 1,
+        "position": 20.0
+      }
+    ],
+    "source": "analysis/gsc-remaining-28d.json"
+  },
+  "neuronWriter": {
+    "query": "c14b68e10adb6f96",
+    "keyword": "tworzenie stron internetowych poznań",
+    "newAnalysesCreated": 0,
+    "baseline": 58,
+    "baselineFile": "analysis/neuron/evaluation-c14b68e10adb6f96.json",
+    "baselineMethod": "Zachowany wcześniejszy produkcyjny evaluate-content dla dokładnego URL z id=main-content; nie powtarzano evaluate-url.",
+    "transferredCandidateScore": 91,
+    "iterations": [
+      {
+        "score": 91,
+        "scope": "Pomiar przeniesionego kandydata na świeżym main przed korektą."
+      },
+      {
+        "score": 91,
+        "scope": "Redakcja jednej sekcji realizacji: budowa, odbiór, migracja, responsywność, pomiar i wybór wykonawcy."
+      },
+      {
+        "score": 93,
+        "scope": "Uporządkowanie nagłówków tej samej sekcji zgodnie z rekomendacjami NW, bez zwiększania powtórzeń w akapitach."
+      },
+      {
+        "score": 93,
+        "scope": "Wydzielenie pytania o informacje potrzebne przy wyborze wykonawcy."
+      },
+      {
+        "score": 98,
+        "scope": "Domknięcie dopasowania intencji przez dodanie określenia strona WWW do title; pełna fraza główna i sufiks FOTZ zachowane."
+      }
+    ],
+    "final": 98,
+    "target": 95,
+    "targetMet": true,
+    "resultFile": "analysis/neuron/evaluation-c14b68e10adb6f96-gsc-candidate.json",
+    "recommendedWordCount": 1838,
+    "finalRenderedMainWords": 1884,
+    "wordCountMethod": "Lokalne zliczenie tokenów słów Unicode w widocznym tekście main#main-content; nie jest to osobna metryka NeuronWriter.",
+    "method": "evaluate-content przez neuron_client.py evaluate-html; outerHTML wyłącznie dla main#main-content z finalnego dist/uslugi/tworzenie-stron-internetowych/poznan/index.html; przekazano finalne title i description.",
+    "container": {
+      "selector": "main#main-content",
+      "occurrences": 1,
+      "htmlCharacters": 41299,
+      "uniqueIdCount": 11,
+      "duplicateIds": [],
+      "verified": true
+    }
+  },
+  "correction": {
+    "scope": "Jedna ukierunkowana korekta dopasowania intencji realizacji: redakcja sekcji budowy i odbioru strony, porządkowanie jej nagłówków oraz uzupełnienie title o strona WWW.",
+    "gscRationale": "Najbliższe pierwszej dziesiątki są frazy tworzenie stron poznań i tworzenie stron internetowych poznań; sekcja odpowiada również na intencję budowy strony bez obiecywania wyników.",
+    "neuronRationale": "Dodano brakujące określenie responsywne strony internetowe, uporządkowano rekomendowane nagłówki i uzupełniono title o strona WWW.",
+    "unchanged": "Meta description, H1, canonical, FAQ/schema, CTA i pozostałe sekcje merytoryczne."
+  },
+  "metadata": {
+    "title": "Tworzenie stron internetowych Poznań – strona WWW | FOTZ",
+    "titleLength": 56,
+    "description": "Profesjonalne strony internetowe dla firm z Poznania: strona WWW, projektowanie stron, CMS, integracje i SEO. Sprawdź zakres prac i wycenę FOTZ.",
+    "descriptionLength": 144,
+    "canonical": "https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych/poznan",
+    "h1": "Tworzenie stron internetowych Poznań",
+    "h1Count": 1
+  },
+  "renderedContract": {
+    "selfCanonical": true,
+    "mainContentCount": 1,
+    "faqQuestions": 9,
+    "nativeFaqDetails": 9,
+    "visibleFaqMatchesSchema": true,
+    "documentIdCount": 13,
+    "mainIdCount": 11,
+    "duplicateIds": []
+  },
+  "checks": {
+    "npmCi": "passed",
+    "targetedTests": "5/5 passed",
+    "typecheck": "passed",
+    "liveBlogTests": "7/7 passed",
+    "liveBlogRender": "passed",
+    "build": "passed; 1060 prerendered pages, 1058 full bodies, 0 body errors",
+    "htmlContract": "passed; one H1, one main-content, self-canonical, nine matching FAQ entries and no duplicate IDs",
+    "diffCheck": "passed",
+    "registerValidation": "passed; 26 columns, 1067 records, UTF-8 BOM preserved; only FOTZ-E8ED58B9 changed",
+    "scoreGate": "passed; local 98 authorizes commit and push"
+  },
+  "publication": {
+    "pullRequestCreated": false,
+    "merged": false,
+    "evaluateUrlUsedBeforeMerge": false
+  },
+  "files": [
+    "src/pages/TworzenieStronPoznan.tsx",
+    "scripts/tworzenie-stron-poznan.test.mjs",
+    "docs/seo/tworzenie-stron-internetowych-poznan-2026-11-03.json",
+    "docs/seo/ai-work-register.csv"
+  ],
+  "businessImpact": "Nie zmierzono; lokalny content score nie dowodzi pozycji, ruchu, zapytań ani sprzedaży.",
+  "notes": [
+    "Nie utworzono nowych analiz NeuronWriter i nie użyto evaluate-url.",
+    "Nie zmieniono starego worktree work-tworzenie-poznan.",
+    "Nie dodano fikcyjnych biur, klientów, wyników, statystyk, gwarancji ani sztywnych cen.",
+    "Nie utworzono pull requesta i nie wykonano merga."
+  ]
+}
