@@ -1,0 +1,92 @@
+{
+  "date": "2026-11-03",
+  "path": "/agencja-marketingowa/krakow",
+  "source": "src/pages/AgencjaMarketingowaKrakow.tsx",
+  "branch": "swarm/agencja-krakow-20261103",
+  "baseCommit": "9b44f215662599e78f03072edcdc655bd2f94dc8",
+  "gsc": {
+    "period": {
+      "from": "2026-10-03",
+      "to": "2026-10-30"
+    },
+    "scope": "page",
+    "impressions": 117,
+    "clicks": 0,
+    "averagePosition": 58.7436
+  },
+  "neuronWriter": {
+    "query": "9c41381e2297a8d8",
+    "keyword": "agencja marketingowa kraków",
+    "newAnalysesCreated": 0,
+    "productionBaseline": 91,
+    "target": 95,
+    "recommendedWordTarget": 808,
+    "finalRenderedMainWords": 1624,
+    "iterations": [
+      {
+        "iteration": 1,
+        "score": 82,
+        "scope": "Complete offer rewrite covering channel selection, strategy, separate content and advertising work, production, process, lead measurement, cooperation terms and prerendered FAQ; concise final metadata"
+      },
+      {
+        "iteration": 2,
+        "score": 96,
+        "scope": "Expanded content marketing, Facebook Ads, conversion, user experience, ROI and sales-measurement topics; aligned service, strategy, measurement and CTA headings with the existing analysis without restoring unsupported claims"
+      }
+    ],
+    "iterationsUsed": 2,
+    "maximumIterations": 4,
+    "final": 96,
+    "method": "evaluate-content through neuron_client.py evaluate-html; outerHTML of main#main-content extracted from dist/agencja-marketingowa/krakow/index.html after the final build; final title and description passed with the rendered main content",
+    "scopeComparison": "Baseline 91 was measured on the production URL with id=main-content. Final measurement covers the same semantic container from the local prerender, without navigation and footer. The content scope is comparable, but the measurement environment differs.",
+    "recommendationConstraint": "No new NeuronWriter analysis was created. Phrases requiring unsupported certification claims were not added merely to increase coverage."
+  },
+  "metadata": {
+    "title": "Agencja marketingowa Kraków — marketing reklamowy | FOTZ",
+    "titleLength": 56,
+    "description": "Agencja marketingowa Kraków: strategia, treści i kampanie reklamowe, SEO, Google Ads, social media oraz produkcja. Sprawdź zakres dla Twojej firmy.",
+    "descriptionLength": 147,
+    "canonical": "https://www.fotz-studio.pl/agencja-marketingowa/krakow",
+    "h1": "Agencja marketingowa Kraków",
+    "h1Count": 1
+  },
+  "renderedContract": {
+    "selfCanonical": true,
+    "mainContentCount": 1,
+    "allIds": 16,
+    "duplicateIds": [],
+    "serviceSchemaPresent": true,
+    "breadcrumbSchemaPresent": true,
+    "faqQuestions": 6,
+    "visibleFaqMatchesSchema": true,
+    "contactCta": "/kontakt?usluga=marketing#formularz",
+    "contactCtaCount": 2
+  },
+  "checks": {
+    "npmCi": "passed",
+    "typecheck": "passed",
+    "targetedTests": "25/25 passed: live-blog 7/7, direct Kraków contract 6/6, seo-metadata 3/3, structured-data 5/5, rendered-html 3/3 and local-city-copy 1/1",
+    "build": "passed; 1061 prerendered pages, 1059 full bodies, 0 body errors",
+    "htmlContract": "passed; one H1, one main-content, self-canonical, title 56 characters, description 147 characters, 16 IDs and no duplicates",
+    "diffCheck": "passed; only the declared page, direct test and unique report are included",
+    "buildArtifactsExcluded": "known-routes.json restored after prerender; dist, .ssr and temporary extracted HTML are not staged"
+  },
+  "files": [
+    "src/pages/AgencjaMarketingowaKrakow.tsx",
+    "scripts/agencja-marketingowa-krakow.test.mjs",
+    "docs/seo/agencja-marketingowa-krakow-2026-11-03.json"
+  ],
+  "scope": [
+    "Replaced fixed prices, fabricated certifications, unsupported statistics, performance claims and guarantees with verifiable service information",
+    "Added service and channel selection based on business goals, audience, offer, current data and real service area",
+    "Separated strategy, content marketing, advertising, production, website work and visual identity while explaining how they cooperate",
+    "Added a four-step process, responsibilities, approvals, account access, handover conditions and individually scoped pricing",
+    "Added measurement of organic and paid sources, agreed contact actions, lead quality, sales results and sales-team feedback without claiming unverified revenue",
+    "Preserved the existing URL and added concise branded metadata, self-canonical, one H1, matching Service, Breadcrumb and FAQ schemas and relevant contact CTAs",
+    "Added a direct source contract test and native FAQ details so all questions and answers are present in prerendered HTML with unique IDs"
+  ],
+  "notes": [
+    "The content score evaluates the rendered offer against the existing NeuronWriter analysis; it does not prove indexing, rankings, clicks, enquiries or sales.",
+    "No changes were made to App.tsx, sitemaps, ai-work-register.csv, environment files, other pages or shared components."
+  ]
+}
