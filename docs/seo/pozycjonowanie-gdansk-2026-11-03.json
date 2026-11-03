@@ -1,0 +1,105 @@
+{
+  "date": "2026-11-03",
+  "path": "/seo/pozycjonowanie-gdansk",
+  "url": "https://www.fotz-studio.pl/seo/pozycjonowanie-gdansk",
+  "source": "src/pages/SEOPozycjonowanieGdansk.tsx",
+  "branch": "swarm/seo-gdansk-20261103",
+  "baseCommit": "9b44f215662599e78f03072edcdc655bd2f94dc8",
+  "gsc": {
+    "period": {
+      "from": "2026-10-03",
+      "to": "2026-10-30"
+    },
+    "impressions": 79,
+    "clicks": 0,
+    "averagePosition": 78.6203
+  },
+  "neuronWriter": {
+    "query": "c1d194b5daa622ed",
+    "keyword": "pozycjonowanie gdańsk",
+    "newAnalysesCreated": 0,
+    "productionBaseline": 88,
+    "iterations": [
+      {
+        "iteration": 1,
+        "score": 84,
+        "scope": "Complete offer rewrite covering audit, technical SEO, content, local visibility, process, measurement, pricing and FAQ with final metadata"
+      },
+      {
+        "iteration": 2,
+        "score": 93,
+        "scope": "Filled thematic and heading gaps within existing sections, including local SEO, stores, measurement and comprehensive service scope"
+      },
+      {
+        "iteration": 3,
+        "score": 94,
+        "scope": "Added missing SEO actions and business context, refined the final meta description and reduced repeated phrasing"
+      },
+      {
+        "iteration": 4,
+        "score": 95,
+        "scope": "Balanced recommended terminology across audit, measurement, process and pricing without adding sections or unsupported claims"
+      }
+    ],
+    "final": 95,
+    "target": 95,
+    "recommendedWordCount": 2368,
+    "finalRenderedMainWords": 2645,
+    "method": "evaluate-content through neuron_client.py evaluate-html; outerHTML of main#main-content extracted from final dist/seo/pozycjonowanie-gdansk/index.html and submitted with final title and description",
+    "scopeComparison": "Baseline 88 was measured on the public URL with id=main-content. Final measurement uses the same semantic container from the local prerender, including shared in-page components but excluding navigation and footer. The content scope is comparable, while the measurement environment differs.",
+    "container": {
+      "selector": "main#main-content",
+      "occurrences": 1,
+      "duplicateIds": [],
+      "verified": true
+    }
+  },
+  "metadata": {
+    "title": "Pozycjonowanie stron Gdańsk — SEO | FOTZ",
+    "titleLength": 40,
+    "description": "Pozycjonowanie stron Gdańsk: audyt SEO, technika, treści i lokalna widoczność w Google. Zarządzanie pozycjonowaniem i pomiar zapytań — sprawdź usługi FOTZ.",
+    "descriptionLength": 155,
+    "canonical": "https://www.fotz-studio.pl/seo/pozycjonowanie-gdansk",
+    "h1": "Pozycjonowanie stron internetowych Gdańsk — SEO",
+    "h1Count": 1
+  },
+  "renderedContract": {
+    "selfCanonical": true,
+    "mainContentCount": 1,
+    "idCount": 11,
+    "duplicateIds": [],
+    "serviceSchemaMatchesH1AndLead": true,
+    "faqQuestions": 6,
+    "visibleFaqMatchesSchema": true,
+    "cta": "/kontakt?usluga=seo&wariant=audit#formularz",
+    "ctaCount": 2
+  },
+  "checks": {
+    "npmCi": "passed",
+    "typecheck": "passed",
+    "targetedTests": "20/20 passed: live-blog 7/7, pozycjonowanie-gdansk 5/5, seo-metadata 3/3, structured-data 5/5",
+    "fullTests": "258/259 passed; unrelated existing assertion failed in scripts/strony-internetowe-lodz.test.mjs (FAQ count 10 !== 9); no out-of-scope fix applied",
+    "build": "passed; 1061 prerendered pages, 1059 full page bodies, 0 body errors",
+    "htmlContract": "passed; one H1, one main-content, self-canonical, title 40 characters, description 155 characters, 11 unique IDs and no duplicates",
+    "schemaContract": "passed; Service name and description match the visible H1 and lead; all six visible FAQ questions and answers match FAQPage schema"
+  },
+  "scope": [
+    "Replaced fixed prices, unsupported local-market claims and performance implications with a verifiable service offer",
+    "Documented audit deliverables, technical SEO, content optimization, internal and external linking, local visibility and Google Business Profile work",
+    "Added query-to-page planning, store considerations, a four-step implementation process and measurement separated into visibility, traffic, enquiries and sales",
+    "Explained pricing factors, exclusions, responsibilities and optional one-off audit without fixed prices or guarantees",
+    "Preserved the existing URL and added concise branded metadata, self-canonical, one H1, matching structured data and relevant audit CTAs",
+    "Added a direct source contract test and documented the final local prerender measurement with no duplicate IDs"
+  ],
+  "files": [
+    "src/pages/SEOPozycjonowanieGdansk.tsx",
+    "scripts/pozycjonowanie-gdansk.test.mjs",
+    "docs/seo/pozycjonowanie-gdansk-2026-11-03.json"
+  ],
+  "notes": [
+    "Content score does not prove indexing, rankings, clicks, enquiries or sales.",
+    "No changes were made to App.tsx, sitemaps, ai-work-register.csv, environment files, other pages or shared components.",
+    "No new NeuronWriter analyses were created; only evaluate-content calls used the existing query c1d194b5daa622ed."
+  ],
+  "businessImpact": "Not measured; content score does not demonstrate rankings, traffic, enquiries or sales."
+}
