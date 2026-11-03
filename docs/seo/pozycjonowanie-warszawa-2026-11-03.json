@@ -1,0 +1,94 @@
+{
+  "date": "2026-11-03",
+  "path": "/seo/pozycjonowanie-warszawa",
+  "url": "https://www.fotz-studio.pl/seo/pozycjonowanie-warszawa",
+  "source": "src/pages/SEOPozycjonowanieWarszawa.tsx",
+  "branch": "swarm/seo-warszawa-20261103",
+  "baseCommit": "97df192edbce86f48d6c55b2182eeea39d33356d",
+  "gsc": {
+    "assignedMetrics": false,
+    "note": "No current assigned GSC metrics were supplied; none were inferred or fabricated."
+  },
+  "neuronWriter": {
+    "query": "e532d063ba531428",
+    "keyword": "pozycjonowanie warszawa",
+    "newAnalysesCreated": 0,
+    "productionBaseline": 89,
+    "iterations": [
+      {
+        "iteration": 1,
+        "score": 92,
+        "scope": "Complete offer rewrite covering audit, technical SEO, content, local visibility, process, measurement, pricing and FAQ with final metadata"
+      },
+      {
+        "iteration": 2,
+        "score": 94,
+        "scope": "Added a direct SEO definition, clarified local and broad Warsaw intent, improved store and strategy terminology, and refined the final meta description"
+      },
+      {
+        "iteration": 3,
+        "score": 95,
+        "scope": "Clarified local SEO terminology and added a practical Search Console measurement answer without unsupported metrics or claims"
+      }
+    ],
+    "final": 95,
+    "target": 95,
+    "recommendedWordCount": 1908,
+    "finalRenderedMainWords": 2593,
+    "method": "evaluate-content through neuron_client.py evaluate-html; outerHTML of main#main-content extracted from final dist/seo/pozycjonowanie-warszawa/index.html and submitted with final title and description",
+    "scopeComparison": "Baseline 89 was measured on the public URL with id=main-content. Final measurement uses the same semantic container from the local prerender, including shared in-page components but excluding navigation and footer. The content scope is comparable, while the measurement environment differs.",
+    "container": {
+      "selector": "main#main-content",
+      "occurrences": 1,
+      "duplicateIds": [],
+      "verified": true
+    }
+  },
+  "metadata": {
+    "title": "Pozycjonowanie stron Warszawa — SEO | FOTZ",
+    "titleLength": 42,
+    "description": "Pozycjonowanie stron Warszawa: audyt SEO, technika, treści i lokalna widoczność w Google. Pozyskiwanie nowych klientów, pomiar zapytań i wycena FOTZ.",
+    "descriptionLength": 149,
+    "canonical": "https://www.fotz-studio.pl/seo/pozycjonowanie-warszawa",
+    "h1": "Pozycjonowanie stron internetowych Warszawa — SEO",
+    "h1Count": 1
+  },
+  "renderedContract": {
+    "selfCanonical": true,
+    "mainContentCount": 1,
+    "idCount": 11,
+    "duplicateIds": [],
+    "serviceSchemaMatchesH1AndLead": true,
+    "faqQuestions": 6,
+    "visibleFaqMatchesSchema": true,
+    "cta": "/kontakt?usluga=seo&wariant=audit#formularz",
+    "ctaCount": 2
+  },
+  "checks": {
+    "npmCi": "passed",
+    "typecheck": "passed",
+    "targetedTests": "20/20 passed: live-blog 7/7, pozycjonowanie-warszawa 5/5, seo-metadata 3/3, structured-data 5/5",
+    "build": "passed; 1061 prerendered pages, 1059 full page bodies, 0 body errors",
+    "htmlContract": "passed; one H1, one main-content, self-canonical, title 42 characters, description 149 characters, 11 unique IDs and no duplicates",
+    "schemaContract": "passed; Service name and description match the visible H1 and lead; all six visible FAQ questions and answers match FAQPage schema"
+  },
+  "scope": [
+    "Replaced repetitive keyword-focused copy with a verifiable service offer covering audit, technical SEO, content, local visibility, process, measurement, pricing and FAQ",
+    "Documented audit deliverables, query-to-page planning, internal and external linking, Google Business Profile work and store-specific considerations",
+    "Separated visibility, organic traffic, enquiries and sales in measurement without inventing current GSC data",
+    "Explained pricing factors, exclusions, responsibilities and optional one-off audit without fixed prices or guarantees",
+    "Preserved the existing URL and added concise branded metadata, self-canonical, one H1, matching structured data and relevant audit CTAs",
+    "Added a direct source contract test and documented the final local prerender measurement with no duplicate IDs"
+  ],
+  "files": [
+    "src/pages/SEOPozycjonowanieWarszawa.tsx",
+    "scripts/pozycjonowanie-warszawa.test.mjs",
+    "docs/seo/pozycjonowanie-warszawa-2026-11-03.json"
+  ],
+  "notes": [
+    "Content score does not prove indexing, rankings, clicks, enquiries or sales.",
+    "No changes were made to App.tsx, sitemaps, ai-work-register.csv, environment files, other pages or shared components.",
+    "No new NeuronWriter analyses were created; only three evaluate-content calls used the existing query e532d063ba531428."
+  ],
+  "businessImpact": "Not measured; content score does not demonstrate rankings, traffic, enquiries or sales."
+}
