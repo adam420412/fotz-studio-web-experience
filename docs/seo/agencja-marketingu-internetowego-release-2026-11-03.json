@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-03",
+  "url": "https://www.fotz-studio.pl/agencja-marketingu-internetowego",
+  "neuronQuery": "4a57f4bdee140c8a",
+  "publicScore": 95,
+  "measurement": "evaluate-content on the public URL with id=main-content",
+  "production": {
+    "status": 200,
+    "title": "Agencja marketingu internetowego – stała obsługa | FOTZ",
+    "titleLength": 55,
+    "descriptionLength": 149,
+    "canonical": "https://www.fotz-studio.pl/agencja-marketingu-internetowego",
+    "h1Count": 1,
+    "mainContentCount": 1
+  },
+  "source": {
+    "pr": 167,
+    "commit": "b67454d6a852f546104aeff6755c304206b4dbc3",
+    "note": "Actual production change came from main PR167. Closed duplicate PR168 without merging because main already scored 95."
+  },
+  "caveat": "Content score does not prove rankings, clicks, enquiries or sales."
+}
