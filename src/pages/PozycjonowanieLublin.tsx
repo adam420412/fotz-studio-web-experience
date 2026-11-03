@@ -1,463 +1,175 @@
 import { SEOHead } from "@/components/seo/SEOHead";
-import { Layout } from "@/components/layout/Layout";
-import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import {
-  Search,
-  MapPin,
-  TrendingUp,
-  CheckCircle2,
-  ArrowRight,
-  BarChart2,
-  Star,
-  Building2,
-  Globe,
-  Target,
-  Clock,
-  Award,
-  Shield,
-} from "lucide-react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
-import { FadeInView } from "@/components/FadeInView";
-import { ContactSection } from "@/components/sections/ContactSection";
+import { ServiceEditorial } from "@/components/ServiceEditorial";
 
-const faqItems = [
+const path = "/uslugi/pozycjonowanie/lublin";
+const pageTitle = "Pozycjonowanie stron internetowych Lublin — SEO";
+const seoTitle = "Pozycjonowanie stron Lublin — SEO | FOTZ";
+const seoDescription = "Pozycjonowanie stron Lublin: audyt SEO, technika, treści i lokalna widoczność w Google. Zarządzanie pozycjonowaniem i pomiar zapytań — sprawdź usługi FOTZ.";
+const canonicalUrl = "https://www.fotz-studio.pl/uslugi/pozycjonowanie/lublin";
+
+const summary = [
+  "Zaczynamy od oferty, strony i rzeczywistego obszaru obsługi klientów. Nie zakładamy z góry, że każda fraza z nazwą Lublina ma niską konkurencję lub przyniesie wartościowe zapytania.",
+  "Audyt porządkuje priorytety: wskazujemy problem, rekomendowaną poprawkę, sposób odbioru oraz osobę odpowiedzialną za wdrożenie.",
+  "Raport z zarządzania pozycjonowaniem oddziela widoczność i pozycje w Google od ruchu organicznego, zapytań i sprzedaży. Nie gwarantujemy pozycji, terminu efektu ani liczby klientów.",
+];
+
+const scope = [
   {
-    question: "Ile kosztuje pozycjonowanie w Lublinie?",
-    answer:
-      "Pozycjonowanie lokalne w Lublinie zaczyna się od 999 zł netto miesięcznie. Lublin to młode miasto akademickie z niższą konkurencją SEO niż Warszawa czy Kraków. Dla branż e-commerce czy IT konkurencja jest wyższa (2 500–5 000 zł/mies.), ale dla lokalnych usług (gastronomia, fryzjern, fitness) efekty przychodzą szybciej.",
+    title: "Audyt i zarządzanie pozycjonowaniem",
+    text: "Sprawdzamy indeksację, dostępność treści, kanoniczne adresy, przekierowania, strukturę nagłówków, dane strukturalne i odnośniki wewnętrzne. Analiza obejmuje też zapytania oraz strony docelowe w Search Console i konkurencję obecną w wynikach. Otrzymujesz uporządkowane rekomendacje, nie ogólną listę uwag. Zaznaczamy, co możesz poprawić samodzielnie, co wymaga programisty i które prace możemy wykonać w uzgodnionym zakresie.",
+    href: "/seo/audyt",
+    link: "Zobacz szczegóły audytu",
   },
   {
-    question: "Ile czasu trwa pozycjonowanie w Lublinie?",
-    answer:
-      "Dzięki niskiej konkurencji SEO w Lublinie, pierwsze rezultaty widać po 6–8 tygodniach. Stabilne pozycje w TOP 10 uzyskujemy po 2–3 miesiącach dla lokalnych fraz. To znacznie szybciej niż w większych miastach. Dla fraz konkurencyjnych (IT, nieruchomości) proces trwa 4–6 miesięcy.",
+    title: "Techniczna optymalizacja strony",
+    text: "Weryfikujemy działanie witryny na urządzeniach mobilnych, szybkość kluczowych podstron, stabilność układu, odpowiedzi HTTP i poprawność formularzy. Kontrolujemy duplikację adresów, niedziałające linki oraz dostępność treści dla wyszukiwarki. Techniczne SEO obejmuje tylko potrzebne poprawki. Jeśli ograniczeniem jest CMS, szablon lub hosting, opisujemy konsekwencje i możliwe rozwiązania przed rozpoczęciem pracy; cała strona nie zawsze wymaga przebudowy.",
+    href: "/seo/techniczne",
+    link: "Poznaj techniczne SEO",
   },
   {
-    question: "Jaka jest przewaga pozycjonowania studenckich branż w Lublinie?",
-    answer:
-      "Lublin to akademickie miasto 100k+ studentów (UMCS, KUL, UM). Pozycjonowanie dla edukacji, e-learningu, korepetycji online i kampusowych usług ma znaczny potencjał. Niska konkurencja SEO dla tych fraz = szybkie rezultaty. Studencka populacja to duża, skupiona demograficznie grupa szukająca usług online.",
+    title: "Treści i optymalizacja ofert",
+    text: "Porządkujemy title, meta description, nagłówki i treść tak, aby strona internetowa jasno przedstawiała usługę, warunki realizacji oraz następny krok. Uzupełniamy odpowiedzi na pytania klientów i powiązania z innymi materiałami. Plan redakcyjny wynika z intencji wyszukiwania i luk w ofercie, a nie z narzuconej liczby artykułów albo powtarzania frazy. Teksty przygotowujemy na podstawie informacji potwierdzonych przez firmę.",
+    href: "/content-marketing/strategia",
+    link: "Zobacz strategię treści",
   },
   {
-    question: "Czy konkurencja SEO w Lublinie jest naprawdę tak niska?",
-    answer:
-      "Tak. Lublin ma ~340k mieszkańców, ale SEO konkurencja jest 50–70% niższa niż w Warszawie. Wiele firm z Lublina nie inwestuje w SEO — to szansa dla zdecydowanych biznesów. Rynek jest niedooceniony i otwarty dla szybkich zwycięstw w lokalnych frazach.",
+    title: "Mapy Google i widoczność",
+    text: "Dla firmy lokalnej sprawdzamy zgodność danych adresowych albo obszaru działania na stronie i w Profilu Firmy w Google. W uzgodnionym zakresie porządkujemy kategorie, usługi, opis, zdjęcia i odnośnik do właściwej podstrony. Omawiamy zgodny z regulaminem sposób proszenia prawdziwych klientów o opinie. Nie tworzymy fikcyjnych lokalizacji, wpisów ani recenzji i nie obiecujemy widoczności w Mapach Google dla każdego miejsca w Lublinie i regionie.",
+    href: "/uslugi/pozycjonowanie-lokalne",
+    link: "Sprawdź widoczność lokalną",
   },
   {
-    question: "Powinniśmy pozycjonować się na 'Lublin' czy na całe 'Lubelskie'?",
-    answer:
-      "Rekomendujemy obie strategie. Pozycjonowanie na 'Lublin' to dostęp do 340k ludzi w mieście. Frazy z 'Lubelskie' otwierają dodatkowy rynek powiatów wokół (Świdnik, Radzyń Podlaski, Biała Podlaska). Dla firm usługowych (hydraulik, elektryk) pozycjonowanie na siedziby miast powiatowych ma sens.",
+    title: "Linkowanie i tematy poradnikowe",
+    text: "Poprawiamy linkowanie wewnętrzne, aby użytkownik mógł przejść od odpowiedzi do właściwej usługi, a wyszukiwarka — odnaleźć powiązane strony. Analizujemy również obecne odnośniki i tematyczne miejsca, w których firma może zaprezentować wiedzę. Link building planujemy na podstawie jakości źródła i związku z ofertą, bez pakietów przypadkowych linków. Liczbę publikacji, sposób akceptacji i koszty zewnętrzne ustalamy osobno.",
   },
   {
-    question: "Jakie branże SEO mają największy potencjał w Lublinie?",
-    answer:
-      "IT i software (200+ firm, Software Mind, Sii Lublin) — niiska konkurencja dla 'IT Lublin', 'developer Lublin'. E-learning dla studentów — duży rynek. Nieruchomości — rosnący segment. Turystyka — brama wschodniej Polski. Usługi medyczne — gabinety online. W każdej branży konkurencja SEO jest niższa niż w stolicach.",
+    title: "Pomiar zapytań w zarządzaniu pozycjonowaniem",
+    text: "Łączymy wykonane prace z danymi o wyświetleniach, kliknięciach, stronach docelowych i uzgodnionych działaniach użytkowników. Formularz, rozmowa telefoniczna, rezerwacja i sprzedaż to różne etapy, dlatego definiujemy je oddzielnie. Raport wskazuje wnioski i kolejne priorytety, a nie tylko tabelę pozycji. Zakres pomiaru zależy od konfiguracji analityki, systemu kontaktu i dostępnych danych o jakości zapytań.",
   },
 ];
 
-const PozycjonowanieLublin = () => {
-  const results = [
-    {
-      metric: "+260%",
-      label: "Wzrost ruchu organicznego",
-      context: "IT/edu firmy",
-    },
-    { metric: "TOP 3", label: "Pozycja w Google", context: "frazy lokalne Lublin" },
-    { metric: "3 mies.", label: "Czas do pierwszej strony", context: "konkurencyjne frazy" },
-    { metric: "4,8/5", label: "Ocena klientów", context: "12 opinii" },
-  ];
+const sections = [
+  {
+    title: "Lokalne biznesy: czym jest pozycjonowanie w Lublinie?",
+    text: "Lublin może być miejscem świadczenia usługi, obszarem dojazdu albo częścią szerszego rynku, dlatego plan pozycjonowania musi odpowiadać rzeczywistej działalności. Na początku łączymy ofertę z potrzebą użytkownika. Wyniki lokalne w Lublinie odpowiadają na zapytania związane z miejscem, przyjazdem lub dostępnością. Potencjalny klient może szukać usługi w pobliżu, porównywać wykonawców albo sprawdzać warunki przed kontaktem. Sama fraza z nazwą miasta nie mówi wszystkiego o intencji. Dlatego pozycjonowanie stron w Lublinie zaczynamy od oferty i lokalizacji, których ona rzeczywiście dotyczy. Lokalne pozycjonowanie stron wymaga innych informacji dla punktu obsługi, a innych dla usługi mobilnej. Skuteczne pozycjonowanie w Lublinie nie polega na tworzeniu kopii strony dla Śródmieścia, Czubów czy Czechowa z podmienioną nazwą dzielnicy. Osobną podstronę rekomendujemy dopiero wtedy, gdy przedstawia odrębną, potwierdzoną ofertę. Zakres pozycjonowania dla lokalnych biznesów powinien wspierać decyzję klienta zamiast sztucznie zwiększać liczbę adresów. Widoczność regionalna i SEO w Lublinie nie wykluczają sprzedaży ogólnopolskiej, jeśli firma rzeczywiście ją prowadzi.",
+    points: [
+      "Usługa na miejscu: lokalizacja, dostępność, prawdziwe zdjęcia, godziny i jasny sposób kontaktu.",
+      "Dojazd do klienta: faktyczny obszar obsługi oraz informacje potrzebne do ustalenia realizacji i wyceny.",
+      "Lublin i okolice: zasięg opisany według sposobu pracy, bez automatycznego obejmowania całego województwa.",
+    ],
+  },
+  {
+    title: "Fraza kluczowa i strategia SEO w planie pozycjonowania",
+    text: "Elementem strategii SEO jest mapa, w której słowa kluczowe przypisujemy do konkretnych stron i etapów decyzji. Strategia pozycjonowania uwzględnia ofertę, wyniki wyszukiwania Google, język klientów oraz dotychczasowe zapytania z Search Console. Rozdzielamy frazy lokalne, ogólnopolskie, poradnikowe i transakcyjne; fraza informacyjna może wymagać innej treści niż zapytanie o wycenę. Branża i konkurencja wpływają na dobór tematów, ale nie zastępują analizy intencji. Konkurencja dla jednej usługi nie przesądza o trudności innej, dlatego oceniamy ją osobno dla każdej grupy fraz. Następnie sprawdzamy, czy istniejąca podstrona odpowiada intencji, wymaga rozbudowy, czy powinna zostać połączona z inną. Mapa fraz kluczowych ogranicza sytuację, w której kilka adresów próbuje odpowiadać na identyczne zapytanie. Na tym etapie pozycjonowania wybieramy priorytetowe usługi oraz pytania, które klienci zadają przed zakupem. Kluczowa jest zgodność z ofertą i celem Twojego biznesu, nie sam deklarowany wolumen. Strategie powinny wskazywać zadania możliwe do wdrożenia i późniejszej oceny.",
+    points: [
+      "Lista priorytetowych usług lub produktów oraz rzeczywisty zasięg ich sprzedaży.",
+      "Analiza intencji, konkurencji i stron docelowych dla grup fraz, zamiast jednej długiej listy słów.",
+      "Harmonogram prac z priorytetami, odpowiedzialnością za wdrożenie i sposobem sprawdzenia rezultatu.",
+    ],
+  },
+  {
+    title: "Audyt SEO strony i optymalizacja techniczna krok po kroku",
+    text: "Audyt techniczny zaczynamy od barier, które utrudniają odczytanie oferty użytkownikowi i wyszukiwarce. Wyszukiwarka Google powinna dotrzeć do ważnych treści bez sprzecznych dyrektyw, a użytkownik — bez technicznych przeszkód. Sprawdzamy statusy adresów, robots, canonical, nawigację, formularz oraz czytelność na telefonie. Analiza szybkości wskazuje konkretne zasoby lub elementy do poprawy; nie sprowadza się do samego wyniku narzędzia. Optymalizacja SEO obejmuje również dane strukturalne zgodne z widoczną treścią i kontrolę kodu po wdrożeniu. Witryna nie zawsze wymaga przebudowy, ale powinna umożliwiać dostęp do oferty i kontaktu. Nie przypisujemy wyników jednemu algorytmowi ani nie próbujemy ominąć zasad; zmiany algorytmów Google traktujemy jako kontekst, nie gotową receptę na pozycje. Kolejność prac pozycjonowania zależy od wpływu problemu na indeksowanie, korzystanie z oferty i pomiar. Ten etap pozycjonowania kończy się sprawdzeniem wdrożenia, a mniej istotne zalecenia odkładamy lub pomijamy. Skuteczne SEO wymaga tu przede wszystkim poprawnych, możliwych do odebrania zmian.",
+  },
+  {
+    title: "Skuteczne pozycjonowanie stron www: treści i linkowanie",
+    text: "Skuteczne pozycjonowanie stron internetowych łączy użyteczną odpowiedź z wiarygodną prezentacją firmy. Treść ofertowa powinna wyjaśniać zakres, warunki, proces i ograniczenia usługi, a materiał poradnikowy — rozwiązywać konkretny problem odbiorcy. Gdy chodzi o pozycjonowanie stron, optymalizacja treści nie polega na osiągnięciu sztywnej gęstości słów. Redagujemy nagłówki i akapity, porządkujemy powtórzenia oraz dodajemy informacje potrzebne przed kontaktem. Strona www powinna prowadzić do dalszego materiału lub usługi przez naturalne linkowanie wewnętrzne, z opisowym anchor tekstem i bez wymuszonego odnośnika w każdym akapicie. Pozycjonowanie stron www w Lublinie uwzględnia także lokalne informacje, ale tylko takie, które firma może potwierdzić. Skuteczne pozycjonowanie stron w Lublinie nie zastępuje jakości samej oferty. Przy linkach zewnętrznych analizujemy tematyczne dopasowanie i jakość publikacji, bez obiecywania efektu pakietu odnośników. W procesie pozycjonowania treści uzupełniają usługi, a wyszukiwarka otrzymuje te same informacje co użytkownik. O jakości pozycjonowania decyduje też droga po wejściu: sam wzrost ruchu organicznego nie rozwiąże problemu niejasnej oferty.",
+    href: "/content-marketing/strategia",
+    link: "Poznaj podejście FOTZ do treści",
+  },
+  {
+    title: "Lokalne SEO: pozycjonowanie lokalne w Lublinie i Profil Firmy w Google",
+    text: "Profil Firmy w Google, nazywany też wizytówką Google lub dawniej Google Moja Firma, jest odrębnym obszarem pracy niż organiczne wyniki strony. W starszych materiałach możesz spotkać również określenie wizytówki Google Moja Firma. Pozycjonowanie lokalne strony i pozycjonowanie wizytówki Google zaczynamy od sprawdzenia, czy profil odpowiada rzeczywistej działalności i zasadom Google. Porównujemy nazwę, kategorie, dane kontaktowe, adres albo obszar usług z informacjami na stronie. Wskazujemy braki w opisie, usługach i materiałach, a odnośnik kierujemy do właściwej oferty. Opinie powinny pochodzić od prawdziwych klientów; nie kupujemy recenzji i nie tworzymy wirtualnych biur. Dzięki lokalnemu SEO można uporządkować informacje potrzebne osobom szukającym usługi na obszarze działania firmy, ale wyniki w Google Maps zależą m.in. od trafności, odległości i rozpoznawalności. Dla firm w Lublinie również nie gwarantujemy pozycji w mapach. Zakres pozycjonowania lokalnego obejmuje osobno stronę i profil, a dane obu obszarów analizujemy oddzielnie przed wspólną oceną jakości kontaktu.",
+  },
+  {
+    title: "Pozycjonowanie stron internetowych w Lublinie oraz sklepów",
+    text: "Inny zakres pozycjonowania przygotowujemy dla strony usługowej, inny dla sklepu internetowego. Sklep internetowy wymaga analizy katalogu, a pozycjonowanie sklepu obejmuje kategorie, produkty, warianty, filtry, dostępność oraz indeksowanie adresów z parametrami. W serwisie firmowym priorytetem są zwykle strony usług, informacje o realizacji i droga do zapytania. Sprawdzamy opisy, linkowanie i dane strukturalne zgodne z widoczną ofertą. Nie każdy filtr powinien tworzyć osobną stronę w wynikach wyszukiwania, a niedostępny produkt nie zawsze wymaga usunięcia adresu. Decyzje zależą od popytu, zastępczej oferty i możliwości platformy. Lokalne pozycjonowanie sklepów może dodatkowo uwzględniać odbiór lub obsługę w punkcie, jeśli faktycznie są dostępne. Pozycjonowanie sklepów internetowych w Lublinie może dotyczyć klientów lokalnych lub sprzedaży w całej Polsce, więc samo miasto nie determinuje planu pozycjonowania. Przed rekomendacją sprawdzamy platformę, katalog i sposób realizacji zamówień, bez automatycznej przebudowy całego sklepu.",
+  },
+  {
+    title: "Jak mierzymy widoczność w Google i zapytania?",
+    text: "W Search Console obserwujemy zapytania, wyświetlenia, kliknięcia, strony docelowe i średnią pozycję dla uzgodnionych grup. Widoczność strony w Google analizujemy osobno od ruchu na stronie oraz zdarzeń związanych z formularzem, telefonem lub rezerwacją. Samodzielne sprawdzenie w wyszukiwarce Google nie zastępuje danych z narzędzia. Pomiar pozycjonowania wymaga rozróżnienia kliknięcia przycisku, wysłanego zapytania i potwierdzonej sprzedaży. Dlatego zachęcamy do oznaczania źródła i jakości kontaktu, także zapytań od nowych klientów. Dzięki SEO firma może rozwijać obecność w odpowiedzi na potrzeby odbiorców, ale same dane o wejściach nie potwierdzają wartości sprzedażowej. Jeśli po wcześniejszych pracach wydaje się, że SEO nie działa, sprawdzamy najpierw wdrożenia, strony docelowe, intencję fraz i działanie kontaktu zamiast automatycznie dokładać kolejne teksty. Raport z pozycjonowania pokazuje wykonane prace, dane i wnioski na kolejny okres. Zmiany sezonowe, kampanie reklamowe i inne działania zaznaczamy jako kontekst, zamiast przypisywać każdy wzrost lub spadek jednej optymalizacji.",
+    points: [
+      "Punkt wyjścia: zakres fraz i stron, jakość dostępnych danych oraz definicja wartościowego kontaktu.",
+      "Pomiar: ruch na stronie i widoczność analizowane oddzielnie od zapytań, rezerwacji i sprzedaży.",
+      "Interpretacja: porównywalne okresy, zakończone wdrożenia i znany kontekst marketingowy.",
+    ],
+  },
+  {
+    title: "Pozycjonowanie Twojej strony: usługa i zakres działań SEO",
+    text: "Prace nad serwisem prowadzimy jako proces z jasno opisanymi etapami. Prace nad Twoją stroną zaczynamy od oferty, obszaru działania i sposobu obsługi zapytań. Następnie wykonujemy uzgodniony audyt i przygotowujemy plan, w którym każda rekomendacja ma priorytet oraz właściciela wdrożenia. Po akceptacji realizujemy wybrane poprawki techniczne, treści i prace lokalne albo przekazujemy zalecenia Twojemu zespołowi. SEO Twojej strony może mieć formę jednorazowego projektu lub stałej współpracy, a specjalista SEO przedstawia listę prac oraz sposób odbioru przed startem. Harmonogram pozycjonowania dotyczy naszych zadań, nie obiecanej daty uzyskania pozycji. Tempo zależy m.in. od stanu witryny, dostępów, akceptacji, konkurencji i czasu ponownego przetworzenia zmian przez wyszukiwarkę. W uzgodnionym zakresie SEO kontrolujemy wdrożenia i analizujemy dane. Działania SEO obejmują wyłącznie ustalone zadania, a proces pozycjonowania i usługa nie są automatycznie rozszerzane bez omówienia rezultatów i kolejnych potrzeb.",
+    points: [
+      "Brief i pomiar startowy: oferta, cele, lokalizacje, dane i sposób kwalifikacji zapytań.",
+      "Audyt i plan: lista problemów, rekomendacje, priorytety, wycena oraz podział odpowiedzialności.",
+      "Realizacja i odbiór: uzgodnione wdrożenia, sprawdzenie efektu technicznego i dokumentacja prac.",
+      "Raport i decyzja: analiza widoczności oraz kontaktów, wnioski i wybór następnego zakresu.",
+    ],
+  },
+  {
+    title: "Cennik pozycjonowania stron w Lublinie — zasady wyceny",
+    text: "Koszt pozycjonowania stron zależy od pracy potrzebnej w konkretnej sytuacji, a nie od samej nazwy miasta. Cena pozycjonowania stron uwzględnia wielkość i technologię witryny, liczbę ofert lub kategorii, konkurencję, stan treści, wymagane wdrożenia oraz zakres materiałów przygotowywanych przez FOTZ. Witryna z wieloma ofertami może wymagać szerszej analizy. Cennik usługi powinien pozwalać porównać zadania i odpowiedzialność, a nie tylko kwotę. Usługa jednorazowego audytu ma inny zakres niż regularna praca nad serwisem lub rozbudowanym sklepem, dlatego ich budżety również mogą się różnić. Nie podajemy sztywnego cennika przed analizą i nie rozliczamy obiecanej pozycji. Wycena pozycjonowania wyszczególnia zadania, wyłączenia, terminy odbioru, odpowiedzialność każdej strony i koszty dodatkowe. Narzędzia, programowanie, publikacje zewnętrzne lub produkcja zdjęć wymagają osobnego uzgodnienia, jeśli są potrzebne. Możesz zacząć od samodzielnego audytu i wdrożyć rekomendacje we własnym zespole. Stałe warunki pozycjonowania są uzasadnione wtedy, gdy zakres wynika z celów i zasobów, a sposób pomiaru pozwala oceniać kolejne decyzje.",
+    points: [
+      "Do rozmowy wystarczy adres strony, opis oferty, priorytety i rzeczywisty obszar obsługi.",
+      "Wycena zawiera zakres, wyłączenia, warunki akceptacji i zasady zmiany zadań.",
+      "Nie przesyłaj haseł w pierwszej wiadomości; potrzebne dostępy ustalamy po poznaniu zakresu.",
+    ],
+  },
+  {
+    title: "SEO i pozycjonowanie stron internetowych a reklama",
+    text: "Widoczność organiczną rozwijamy oddzielnie od płatnej reklamy. Google Ads umożliwia emisję według wybranych ustawień i budżetu, a zatrzymanie kampanii kończy emisję po wyczerpaniu dostępnych środków. Klasyczne SEO obejmuje prace nad techniką, treścią i ofertą, które wspierają długofalową jakość witryny. Media społecznościowe odpowiadają na jeszcze inne potrzeby odbiorców i nie zastępują strony w wynikach wyszukiwania. Marketing internetowy może łączyć te działania, lecz nie dodajemy ich automatycznie do oferty. Najpierw ustalamy, czy potrzebna jest poprawa strony, kampania, prace organiczne czy świadomie uzgodniona kombinacja. Zakres projektowania stron również wyceniamy osobno i tylko wtedy, gdy audyt potwierdza taką potrzebę. Koszty reklamy i publikacji zewnętrznych rozliczamy oddzielnie od kosztu pozycjonowania.",
+  },
+  {
+    title: "Agencja SEO Lublin czy współpraca zdalna?",
+    text: "Usługi SEO dla firm z Lublina prowadzimy zdalnie: brief, analizę, akceptacje i omówienie wyników realizujemy online. FOTZ Studio ma siedzibę w Poznaniu i nie deklarujemy biura w Lublinie. Agencja SEO z Lublina lub zespół pracujący zdalnie powinni przedstawić sposób pracy, odpowiedzialność, dostęp do danych i warunki zakończenia zadania. Agencja SEO w Lublinie nie musi być jedynym wyborem, jeśli zakres pozycjonowania i sposób odbioru są jasne. Profesjonalna agencja SEO wskaże, co przygotowuje, co wdraża Twoja osoba techniczna i które elementy wymagają dodatkowej wyceny. Skuteczna agencja SEO nie opiera współpracy na obietnicy pierwszej pozycji, lecz na uzgodnionych zadaniach i danych. Przy wyborze wykonawcy do pozycjonowania porównaj te same elementy oferty. Zarządzanie pracami opieramy na informacjach potwierdzonych przez firmę. Nie przypisujemy sobie realizacji innych marek, nie publikujemy zmyślonych wyników i nie obiecujemy pierwszej pozycji. Ewentualną produkcję zdjęć lub filmów na miejscu ustalamy oddzielnie, z wyprzedzeniem i po poznaniu potrzeb.",
+  },
+];
 
-  const districts = [
-    "Śródmieście",
-    "Czuby",
-    "Sławin",
-    "Felin",
-    "Bronowice",
-    "Konstantynów",
-    "Rury",
-    "Wieniawa",
-  ];
+const faqs = [
+  {
+    question: "Ile kosztuje pozycjonowanie strony w Lublinie?",
+    answer: "Wycenę ustalamy po poznaniu strony, oferty, konkurencji i oczekiwanego zakresu. Inne prace są potrzebne przy jednorazowym audycie, inne przy stałej optymalizacji kilku podstron lub rozbudowanym sklepie. Oferta wyszczególnia zadania, wyłączenia, terminy odbioru i odpowiedzialność za wdrożenia. Nie stosujemy uniwersalnej ceny zależnej wyłącznie od miasta ani opłaty za obiecaną pozycję.",
+  },
+  {
+    question: "Po jakim czasie widać efekty SEO?",
+    answer: "Nie ma jednego terminu zależnego od Lublina. Tempo prac zależy m.in. od stanu technicznego, dostępów, akceptacji, konkurencji, historii domeny i czasu wdrożenia oraz ponownego przetworzenia zmian przez wyszukiwarkę. Harmonogram w ofercie dotyczy naszych zadań, a nie gwarantowanej daty uzyskania pozycji lub zapytań. Postęp oceniamy na podstawie zakończonych prac i zebranych danych.",
+  },
+  {
+    question: "Czy agencja może zapewnić miejsce w TOP10?",
+    answer: "Nie możemy zagwarantować TOP10, pierwszego miejsca ani określonej liczby klientów. Na wyniki wpływają m.in. konkurencja, intencja zapytania, jakość i historia witryny oraz zmiany wyszukiwarki. Możemy natomiast opisać zakres prac, dostarczyć rekomendacje, kontrolować wdrożenia i raportować dane. Decyzje o kolejnych działaniach podejmujemy na podstawie obserwacji, bez obietnic niezależnych od nas.",
+  },
+  {
+    question: "Czy mogę samodzielnie pozycjonować stronę firmową?",
+    answer: "Tak. Możesz zlecić sam audyt i wdrożyć rekomendacje we własnym zespole. Przed startem ustalamy typ analizowanych podstron, dostęp do danych i formę przekazania wniosków. Lista wskazuje priorytety oraz wymagane kompetencje, dzięki czemu łatwiej oddzielić zmiany redakcyjne od prac programistycznych. Jeśli później zechcesz zlecić nam część prac, przygotujemy odrębny zakres i wycenę.",
+  },
+  {
+    question: "Czy firma musi mieć biuro w Lublinie?",
+    answer: "Nie jest to potrzebne do rozpoczęcia współpracy, którą prowadzimy zdalnie. Wizytówka Google musi jednak odpowiadać rzeczywistemu sposobowi działania i zasadom Google. Nie tworzymy fikcyjnych adresów ani lokalizacji. Obszar usług powinien pokrywać się z rzeczywistym zasięgiem firmy, a strona jasno wyjaśniać, gdzie i na jakich warunkach klienci mogą skorzystać z oferty.",
+  },
+  {
+    question: "Czy pozycjonowanie na Lublin obejmuje całe województwo?",
+    answer: "Tylko wtedy, gdy firma rzeczywiście obsługuje ten obszar i taki zakres uzgodnimy. Jedna strona może opisywać wspólną ofertę dla kilku miejscowości, jeśli warunki realizacji są takie same. Osobne podstrony rozważamy dla odrębnych placówek lub usług wymagających innych informacji. Nie powielamy tekstu z podmienioną nazwą miasta i nie obiecujemy jednakowej widoczności w całym regionie.",
+  },
+];
 
-  const industries = [
-    { name: "IT i software", icon: Target },
-    { name: "Edukacja i e-learning", icon: Star },
-    { name: "Nieruchomości", icon: Building2 },
-    { name: "Medycyna i wellness", icon: Clock },
-    { name: "Turystyka historyczna", icon: Globe },
-    { name: "E-commerce", icon: BarChart2 },
-  ];
-
+export default function PozycjonowanieLublin() {
   return (
-    <Layout>
-      <SEOHead
-        title="Pozycjonowanie Lublin — skuteczne SEO dla firm | FOTZ"
-        description="Pozycjonowanie Lublin — skuteczne pozycjonowanie stron www w wyszukiwarce Google. Audyt, lokalne SEO, link building. Wycena bezpłatna — FOTZ."
-        canonical="https://www.fotz-studio.pl/uslugi/pozycjonowanie/lublin"
-        keywords="pozycjonowanie lublin, agencja seo lublin, seo lublin, pozycjonowanie stron lublin, seo dla firm lublin, seo lubelskie, pozycjonowanie lokalne lublin"
+    <>
+      <SEOHead title={seoTitle} description={seoDescription} canonical={canonicalUrl} />
+      <ServiceEditorial
+        path={path}
+        title={pageTitle}
+        eyebrow="SEO dla firm · Lublin i Lubelskie · współpraca zdalna"
+        area="Lublin"
+        lead="Pozycjonowanie stron i sklepów internetowych dla firm z Lublina: audyt SEO, technika, treści, lokalna widoczność i pomiar zapytań. Zakres dobieramy do celu, stanu witryny i obszaru działania — bez obietnic pozycji lub terminu efektów."
+        enquiryVariant="audit"
+        contactLabel="Zapytaj o audyt SEO dla swojej firmy"
+        contactDescription="Prześlij adres strony, opisz ofertę i obszar obsługi klientów. Napisz, czy interesuje Cię samodzielny audyt czy stałe pozycjonowanie. Na tej podstawie ustalimy potrzebny zakres i warunki wyceny."
+        summary={summary}
+        scopeTitle="Pozycjonowanie stron Lublin: audyt SEO i optymalizacja"
+        scope={scope}
+        sections={sections}
+        faqs={faqs}
+        faqTitle="Pozycjonowanie Lublin — najczęściej zadawane pytania"
       />
-      <ServiceSchema
-        name="Pozycjonowanie stron internetowych Lublin"
-        description="Agencja SEO Fotz Studio oferuje profesjonalne pozycjonowanie stron dla firm z Lublina i Lubelskiego. Niska konkurencja SEO = szybkie efekty. Audyt SEO, optymalizacja on-page, link building i pozycjonowanie lokalne."
-        provider="Fotz Studio"
-        areaServed="Lublin, Lubelskie"
-      />
-      <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://www.fotz-studio.pl/" },
-          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
-          { name: "Pozycjonowanie", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie" },
-          { name: "Lublin", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie/lublin" },
-        ]}/>
-      <FAQSchema items={faqItems} />
-
-      {/* Hero */}
-      <section className="relative min-h-[85vh] flex items-center justify-center bg-background overflow-hidden pt-20">
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
-          <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-accent/5 rounded-full blur-3xl" />
-        </div>
-
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 text-sm font-medium mb-6"
-            >
-              <MapPin className="w-4 h-4" />
-              Pozycjonowanie · Lublin i Lubelskie
-            </motion.div>
-
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight"
-            >
-              Pozycjonowanie{" "}
-              <span className="text-primary">Lublin</span> — akademickie
-              miasto, niska konkurencja SEO
-            </motion.h1>
-
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto"
-            >
-              Pomagamy firmom z Lublina i Lubelskiego zdobyć pierwszą stronę Google.
-              Dzięki niskiej konkurencji SEO, efekty przychodzą szybko. Audyt SEO,
-              optymalizacja techniczna, content i link building dostosowane do rynku
-              akademickiego i branży IT.
-            </motion.p>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center"
-            >
-              <Button size="lg" asChild className="text-base px-8">
-                <Link to="/kontakt?usluga=seo&wariant=audit#formularz">
-                  Zapytaj o audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
-              <Button size="lg" variant="outline" asChild className="text-base px-8">
-                <Link to="/uslugi/pozycjonowanie">
-                  Pakiety i ceny SEO
-                </Link>
-              </Button>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5 }}
-              className="flex flex-wrap justify-center gap-6 mt-12 text-sm text-muted-foreground"
-            >
-              {["White-hat SEO", "Raport co 2 tygodnie", "Niża konkurencja", "Gwarancja transparentności"].map(
-                (item) => (
-                  <div key={item} className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-primary" />
-                    <span>{item}</span>
-                  </div>
-                )
-              )}
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Results */}
-      <section className="py-16 bg-muted/30 border-y border-border/40">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {results.map((r, i) => (
-              <FadeInView key={i} delay={i * 0.1} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-primary mb-1">
-                  {r.metric}
-                </div>
-                <div className="text-sm font-medium text-foreground">{r.label}</div>
-                <div className="text-xs text-muted-foreground mt-1">{r.context}</div>
-              </FadeInView>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Lublin SEO specifics */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <FadeInView className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Lublin — miasteczko akademickie, brama do Ukrainy
-            </h2>
-          </FadeInView>
-
-          <div className="grid md:grid-cols-2 gap-8 items-start">
-            <FadeInView>
-              <div className="space-y-6 text-muted-foreground">
-                <p>
-                  Lublin to <strong className="text-foreground">~340 tys. ludzi</strong> z ogromnym potencjałem akademickim.
-                  <strong className="text-foreground"> 100k+ studentów</strong> na trzech uniwersytetach (UMCS, KUL, UM)
-                  tworzą młodą, aktywną demografię. To szybko rosnący hub IT
-                  (Software Mind, Sii Lublin, 200+ firm technicznych).
-                </p>
-                <p>
-                  Konkurencja SEO w Lublinie jest <strong className="text-foreground">50–70% niższa niż w Warszawie</strong>.
-                  Wiele firm z miasta nie inwestuje w SEO — to szansa dla proaktywnych biznesów.
-                  Rynek jest niedooceniony i otwarty dla szybkich pozycji w lokalnych frazach.
-                </p>
-                <p>
-                  Lublin to także <strong className="text-foreground">brama wschodniej ściany UE</strong> — bliskość
-                  Ukrainy otwiera rynki logistyczne, turystyczne i handlowe. Dla firm B2B
-                  zajmujących się eksportem czy cross-border e-commerce to ważna lokacja.
-                </p>
-              </div>
-            </FadeInView>
-
-            <FadeInView delay={0.2}>
-              <div className="bg-card border border-border/60 rounded-xl p-6">
-                <h3 className="font-bold text-foreground mb-4">
-                  Pozycjonujemy firmy we wszystkich dzielnicach Lublina
-                </h3>
-                <div className="flex flex-wrap gap-2">
-                  {districts.map((district) => (
-                    <span
-                      key={district}
-                      className="bg-primary/10 text-primary text-sm px-3 py-1 rounded-full font-medium"
-                    >
-                      {district}
-                    </span>
-                  ))}
-                </div>
-                <p className="text-xs text-muted-foreground mt-4">
-                  + całe Lubelskie
-                </p>
-              </div>
-            </FadeInView>
-          </div>
-        </div>
-      </section>
-
-      {/* Industries */}
-      <section className="py-20 bg-muted/20">
-        <div className="container mx-auto px-4">
-          <FadeInView className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-4">
-              Branże, które pozycjonujemy w Lublinie
-            </h2>
-            <p className="text-muted-foreground max-w-xl mx-auto">
-              Od IT i edukacji po turystykę — mamy doświadczenie w sektorach
-              rynku lubelskiego z potencjałem wzrostu.
-            </p>
-          </FadeInView>
-
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-3xl mx-auto">
-            {industries.map((ind, i) => (
-              <FadeInView key={i} delay={i * 0.08}>
-                <div className="bg-card border border-border/60 rounded-xl p-5 flex items-center gap-3 hover:border-primary/40 transition-colors">
-                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
-                    <ind.icon className="w-5 h-5 text-primary" />
-                  </div>
-                  <span className="font-medium text-foreground text-sm">{ind.name}</span>
-                </div>
-              </FadeInView>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Process */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4 max-w-3xl">
-          <FadeInView className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-4">
-              Jak działamy — pozycjonowanie firm z Lublina
-            </h2>
-          </FadeInView>
-
-          <div className="space-y-6">
-            {[
-              {
-                step: "01",
-                title: "Konsultacja i zakres audytu SEO",
-                desc: "Analizujemy Twoją stronę i frazy z Lublina oraz całego Lubelskiego. Sprawdzamy potencjał w IT, edukacji, nieruchomościach czy Twojej branży.",
-              },
-              {
-                step: "02",
-                title: "Strategia dla akademickiego miasta",
-                desc: "Dobieramy słowa kluczowe z 'Lublin', 'Lubelskie' i dystrykty. Planujemy SEO dla studentów, branż IT, nieruchomości i usług akademickich.",
-              },
-              {
-                step: "03",
-                title: "Wdrożenie i optymalizacja",
-                desc: "Optymalizujemy stronę technicznie, tworzymy treści na lokalne frazy i budujemy linki z branżowych źródeł Lubelskiego.",
-              },
-              {
-                step: "04",
-                title: "Raportowanie i dostosowanie",
-                desc: "Co 2 tygodnie raportujemy pozycje i ruch. Strategia dostosowywana do sezonowości akademickiej i zmian konkurencji w Lublinie.",
-              },
-            ].map((step, i) => (
-              <FadeInView key={i} delay={i * 0.1}>
-                <div className="flex gap-6 items-start">
-                  <div className="w-14 h-14 bg-primary rounded-xl flex items-center justify-center shrink-0 text-primary-foreground font-bold text-lg">
-                    {step.step}
-                  </div>
-                  <div className="pt-2">
-                    <h3 className="font-semibold text-foreground text-lg mb-1">
-                      {step.title}
-                    </h3>
-                    <p className="text-muted-foreground">{step.desc}</p>
-                  </div>
-                </div>
-              </FadeInView>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-20 bg-primary text-primary-foreground">
-        <div className="container mx-auto px-4 text-center">
-          <FadeInView>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Gotowy na pierwszą stronę Google w Lublinie?
-            </h2>
-            <p className="text-primary-foreground/80 text-lg mb-8 max-w-xl mx-auto">
-              Zapytaj o audyt SEO. Zakres i wycenę ustalimy na bezpłatnej konsultacji, a raport przygotujemy z konkretnymi
-              rekomendacjami dla akademickiego rynku Lublina.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="secondary" asChild className="text-base px-8">
-                <Link to="/kontakt?usluga=seo&wariant=audit#formularz">
-                  Zapytaj o audyt SEO <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                asChild
-                className="text-base px-8 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
-              >
-                <Link to="/uslugi/pozycjonowanie">Wszystkie pakiety SEO</Link>
-              </Button>
-            </div>
-          </FadeInView>
-        </div>
-      </section>
-
-      {/* Czym jest pozycjonowanie */}
-      <section className="py-20 bg-gray-800">
-        <div className="container mx-auto px-4 max-w-3xl">
-          <h2 className="text-3xl font-bold text-white mb-6">Czym jest pozycjonowanie stron w Lublinie?</h2>
-          <div className="space-y-5 text-gray-300 leading-relaxed">
-            <p>Czym jest pozycjonowanie? To działania SEO, dzięki którym strona www Twojej firmy pojawia się wysoko w wynikach wyszukiwania Google. Wysokie wyniki wyszukiwania to dziś główne źródło nowych klientów — Twoja witryna musi być tam, gdzie szuka klient. Chodzi o pozycjonowanie stron widocznych tam, gdzie szuka potencjalny klient: wyszukiwarka Google to dziś pierwsze źródło zapytań. W wyszukiwarce Google wygrywa trafność — algorytm Google i algorytmów Google aktualizacje oceniają treść, technikę i autorytet witryny.</p>
-            <p>Pozycjonowanie stron internetowych w Lublinie to dobry deal: konkurencja lokalna jest słabsza niż w Warszawie, więc skuteczne pozycjonowanie stron daje efekty szybciej. Skuteczne pozycjonowanie stron internetowych to nie magia — to proces: audyt SEO strony, optymalizacja SEO, treści i linki. Skuteczne pozycjonowanie w Lublinie mierzymy zapytaniami i telefonami, nie samymi pozycjami.</p>
-            <p>SEO i pozycjonowanie stron internetowych to nasza specjalność. Pozycjonowanie Twojej strony zaczynamy od fraz kluczowych z potencjałem sprzedażowym dla Twojego biznesu — a nie od tych, które ładnie wyglądają w raporcie. Widoczność strony w wynikach wyszukiwania Google rośnie miesiącami, ale dzięki SEO ruch na stronie pracuje na Twój zysk latami.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* Lokalne SEO Lublin */}
-      <section className="py-20 bg-gray-900">
-        <div className="container mx-auto px-4 max-w-3xl">
-          <h2 className="text-3xl font-bold text-white mb-6">Lokalne SEO i pozycjonowanie sklepów — oferta dla Lublina</h2>
-          <div className="space-y-5 text-gray-300 leading-relaxed">
-            <p>Nasza oferta obejmuje pozycjonowanie stron www w Lublinie i pozycjonowanie sklepów internetowych w Lublinie. Ta usługa obejmuje pozycjonowanie stron i sklepów internetowych — inny plan ma właściciel sklepu internetowego, inny firma usługowa. Dla sklepu internetowego priorytetem są kategorie i produkty. Widoczność strony w Google budujemy dla lokalnych biznesów — lokalne biznesy wygrywają trafnością. Skuteczne pozycjonowanie stron w Lublinie wymaga znajomości lokalnych biznesów. Lokalne pozycjonowanie stron i sklepów to fundament dla lokalnych biznesów: dzięki lokalnemu SEO Twoja firma pojawia się w mapach i wynikach lokalnych. Pozycjonowanie wizytówki Google i optymalizacja wizytówki Google Moja Firma (profil firmy w Google), opinie i spójne dane NAP to pierwszy etap. Lokalne pozycjonowanie sklepów wymaga dodatkowo danych strukturalnych i optymalizacji kategorii.</p>
-            <p>Zakres działań SEO: audyt SEO strony, elementy strategii SEO, optymalizacja techniczna, content i link building — wszystko w zakresie SEO, który ustalamy przed startem. SEO Twojej strony prowadzimy transparentnie. Pozycjonowanie lokalne strony łączymy z Google Ads, żeby wyniki przyszły szybciej. Cennik pozycjonowania stron zależy od fraz — cena pozycjonowania stron dla Lublina jest niższa niż w dużych aglomeracjach. Agencja SEO z Lublina czy zdalna? Liczy się proces: profesjonalna agencja SEO w Lublinie czy spoza miasta powinna pokazać plan i raport. Skuteczna agencja SEO mierzy efekty w klientach. Uważasz, że SEO nie działa? Najczęściej zadawane pytania rozwiewamy w sekcji FAQ — klasyczne SEO działa, gdy wykonuje je specjalista SEO z planem. Marketing internetowy i projektowania stron pod SEO też prowadzimy — strona internetowa bez widoczności nie sprzeda.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section className="py-20 bg-muted/20">
-        <div className="container mx-auto px-4 max-w-3xl">
-          <FadeInView className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-4">
-              FAQ — pozycjonowanie stron Lublin
-            </h2>
-          </FadeInView>
-          <Accordion type="single" collapsible className="space-y-3">
-            {faqItems.map((item, i) => (
-              <FadeInView key={i} delay={i * 0.05}>
-                <AccordionItem
-                  value={`item-${i}`}
-                  className="bg-card border border-border/60 rounded-xl px-6"
-                >
-                  <AccordionTrigger className="text-left font-medium hover:no-underline py-5">
-                    {item.question}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground pb-5">
-                    {item.answer}
-                  </AccordionContent>
-                </AccordionItem>
-              </FadeInView>
-            ))}
-          </Accordion>
-        </div>
-      </section>
-
-      {/* Internal nav */}
-      <section className="py-12 bg-background border-t border-border/40">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <h3 className="font-semibold text-foreground mb-4 text-sm uppercase tracking-wide">
-            Pozycjonowanie w innych miastach:
-          </h3>
-          <div className="flex flex-wrap gap-x-6 gap-y-2">
-            {[
-              { label: "Pozycjonowanie Warszawa", url: "/uslugi/pozycjonowanie/warszawa" },
-              { label: "Pozycjonowanie Kraków", url: "/seo/pozycjonowanie-krakow" },
-              { label: "Pozycjonowanie Wrocław", url: "/uslugi/pozycjonowanie/wroclaw" },
-              { label: "Pozycjonowanie Poznań", url: "/seo/pozycjonowanie-poznan" },
-              { label: "Pozycjonowanie Gdańsk", url: "/uslugi/pozycjonowanie/gdansk" },
-              { label: "Pozycjonowanie Łódź", url: "/uslugi/pozycjonowanie/lodz" },
-              { label: "Pozycjonowanie Szczecin", url: "/uslugi/pozycjonowanie/szczecin" },
-              { label: "Pozycjonowanie Białystok", url: "/uslugi/pozycjonowanie/bialystok" },
-              { label: "Wszystkie usługi SEO", url: "/uslugi/pozycjonowanie" },
-            ].map((link) => (
-              <Link
-                key={link.url}
-                to={link.url}
-                className="text-primary hover:underline font-medium text-sm"
-              >
-                → {link.label}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <ContactSection />
-    </Layout>
+    </>
   );
-};
-
-export default PozycjonowanieLublin;
+}
