@@ -58,7 +58,7 @@ test('native FAQ and structured data use the same authored content', () => {
   assert.match(source, /<details key=\{item\.question\} id=\{`lodz-faq-\$\{index \+ 1\}`\}/);
   assert.match(source, /<summary[^>]*>\{item\.question\}<\/summary>/);
   assert.match(source, /\{item\.answer\}/);
-  assert.equal((source.match(/question: "/g) || []).length, 9);
+  assert.equal((source.match(/question: "/g) || []).length, 10);
 });
 
 test('literal IDs are unique and unsupported claims or fixed promises are removed', () => {
