@@ -25,6 +25,7 @@ test('custom offer layouts explicitly render their curated portfolio exactly onc
     ['StronyInternetoweBialystok.tsx', '/uslugi/strony-internetowe/bialystok', 'web'],
     ['StronyInternetoweLodz.tsx', '/uslugi/strony-internetowe/lodz', 'web'],
     ['StronyInternetoweWroclaw.tsx', '/uslugi/strony-internetowe/wroclaw', 'web'],
+    ['TworzenieStronPoznan.tsx', '/uslugi/tworzenie-stron-internetowych/poznan', 'web'],
   ]) {
     assert.equal(getWorkCollection(route), collection, route);
     const source = await readFile(new URL(`../src/pages/${file}`, import.meta.url), 'utf8');
