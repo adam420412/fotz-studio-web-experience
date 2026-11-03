@@ -162,12 +162,59 @@
       "schemaFaq": 9
     }
   },
+  "galleryFix": {
+    "source": "analysis/production-poznan-gallery.json",
+    "pullRequest": {
+      "number": 195,
+      "url": "https://github.com/adam420412/fotz-studio-web-experience/pull/195",
+      "merged": true,
+      "mergeCommit": "33cb7df9b284f872a93430b7ed5bd6574e148636"
+    },
+    "commit": "33cb7df9b284f872a93430b7ed5bd6574e148636",
+    "deployment": {
+      "id": "dpl_3XgWLKMEFrJ1kWP2gTVFVHstRzi2",
+      "status": "READY",
+      "alias": "www.fotz-studio.pl",
+      "aliasUrl": "https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych/poznan",
+      "commit": "33cb7df9b284f872a93430b7ed5bd6574e148636"
+    },
+    "localCandidate": {
+      "score": 98,
+      "scope": "Lokalny kandydat po naprawie galerii; pomiar odrębny od publicznego."
+    },
+    "publicMeasurement": {
+      "score": 98,
+      "http": 200,
+      "neuronStatus": "ok",
+      "pass": true,
+      "html": {
+        "title": "Tworzenie stron internetowych Poznań – strona WWW | FOTZ",
+        "titleLength": 56,
+        "descriptionLength": 144,
+        "canonical": "https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych/poznan",
+        "selfCanonical": true,
+        "h1Count": 1,
+        "mainContentCount": 1,
+        "visibleFaq": 9
+      },
+      "gallery": {
+        "type": "web",
+        "count": 1,
+        "images": 3
+      }
+    },
+    "checks": {
+      "fullTests": "309/309 passed",
+      "build": "passed; 1060 prerendered pages",
+      "seoCheck": "passed; 0 errors; 448 galleries"
+    }
+  },
   "publication": {
     "pullRequestCreated": true,
     "merged": true,
-    "pullRequest": 193,
-    "mergeCommit": "0fe85351f2ba106fc2be3b60f84b4dc4f9b5ca9a",
-    "deployment": "dpl_8wb8d6tgxNv1cXs7RTCBMoM9onhr",
+    "pullRequest": 195,
+    "mergeCommit": "33cb7df9b284f872a93430b7ed5bd6574e148636",
+    "deployment": "dpl_3XgWLKMEFrJ1kWP2gTVFVHstRzi2",
     "evaluateUrlUsedBeforeMerge": false
   },
   "files": [
