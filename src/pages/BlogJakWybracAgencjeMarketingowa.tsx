@@ -545,7 +545,7 @@ export default function BlogJakWybracAgencjeMarketingowa() {
                         </Link>
                       </li>
                       <li>
-                        <Link to="/uslugi/pozycjonowanie" className="text-blue-600 hover:text-blue-700 underline">
+                        <Link to="/seo/pozycjonowanie" className="text-blue-600 hover:text-blue-700 underline">
                           Pozycjonowanie SEO
                         </Link>
                       </li>
@@ -636,7 +636,7 @@ export default function BlogJakWybracAgencjeMarketingowa() {
                   </Link>
 
                   <Link
-                    to="/uslugi/pozycjonowanie"
+                    to="/seo/pozycjonowanie"
                     className="border border-slate-300 rounded-lg p-6 hover:shadow-lg transition"
                   >
                     <h3 className="font-bold text-slate-900 mb-2">

@@ -140,7 +140,7 @@ export default function PozycjonowanieZabrze() {
         items={[
           { name: "Strona główna", url: "https://www.fotz-studio.pl/" },
           { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
-          { name: "Pozycjonowanie", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie" },
+          { name: "Pozycjonowanie", url: "https://www.fotz-studio.pl/seo/pozycjonowanie" },
           { name: "Zabrze", url: canonicalUrl },
         ]}
       />
@@ -330,7 +330,7 @@ export default function PozycjonowanieZabrze() {
         <div className="container-wide max-w-4xl">
           <h2 className="text-sm font-semibold uppercase tracking-wide text-white mb-4">Powiązane usługi SEO</h2>
           <div className="flex flex-wrap gap-x-6 gap-y-3 text-sm">
-            <Link to="/uslugi/pozycjonowanie" className="text-yellow-400 hover:underline">Poznaj usługę pozycjonowania</Link>
+            <Link to="/seo/pozycjonowanie" className="text-yellow-400 hover:underline">Poznaj usługę pozycjonowania</Link>
             <Link to="/pozycjonowanie/gliwice" className="text-yellow-400 hover:underline">Pozycjonowanie Gliwice</Link>
             <Link to="/pozycjonowanie/sosnowiec" className="text-yellow-400 hover:underline">Pozycjonowanie Sosnowiec</Link>
           </div>

@@ -462,7 +462,7 @@ const BlogIleKosztujePozycjonowanie = () => {
                     </Link>
                   </Button>
                   <Button asChild variant="outline" size="lg">
-                    <Link to="/uslugi/pozycjonowanie">
+                    <Link to="/seo/pozycjonowanie">
                       Przejdź do usług SEO
                     </Link>
                   </Button>
@@ -478,7 +478,7 @@ const BlogIleKosztujePozycjonowanie = () => {
               >
                 <h3 className="text-xl font-heading font-bold mb-4">Powiązane usługi</h3>
                 <div className="grid sm:grid-cols-3 gap-4">
-                  <Link to="/uslugi/pozycjonowanie" className="p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all">
+                  <Link to="/seo/pozycjonowanie" className="p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all">
                     <h4 className="font-semibold mb-2">Pozycjonowanie SEO</h4>
                     <p className="text-sm text-muted-foreground">Pełna obsługa SEO Twojej strony</p>
                   </Link>

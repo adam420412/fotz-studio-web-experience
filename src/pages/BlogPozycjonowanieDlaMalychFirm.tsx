@@ -398,7 +398,7 @@ export default function BlogPozycjonowanieDlaMalychFirm() {
                   <li className="flex gap-3">
                     <span className="text-blue-600 font-bold">→</span>
                     <span className="text-slate-700">
-                      <Link to="/uslugi/pozycjonowanie" className="text-blue-600 font-bold hover:underline">
+                      <Link to="/seo/pozycjonowanie" className="text-blue-600 font-bold hover:underline">
                         Pozycjonowanie SEO
                       </Link>
                       {" "}dla stron e-commerce i serwisów
@@ -469,7 +469,7 @@ export default function BlogPozycjonowanieDlaMalychFirm() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link
-                    to="/uslugi/pozycjonowanie"
+                    to="/seo/pozycjonowanie"
                     className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition"
                   >
                     Poznaj nasze usługi
@@ -497,7 +497,7 @@ export default function BlogPozycjonowanieDlaMalychFirm() {
               <ul className="space-y-3">
                 <li>
                   <Link
-                    to="/uslugi/pozycjonowanie"
+                    to="/seo/pozycjonowanie"
                     className="text-blue-600 font-bold hover:underline"
                   >
                     Pozycjonowanie stron internetowych - pełna usługa SEO dla Twojego biznesu

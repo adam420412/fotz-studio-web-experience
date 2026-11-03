@@ -83,7 +83,7 @@ const sections = [
   {
     title: "Pozycjonowanie sklepów internetowych i stron firmowych",
     text: "Inny plan przygotowujemy dla strony usługowej, inny dla sklepu internetowego. W serwisie firmowym priorytetem są zwykle oferta, strony usługowe, dowody wykonanej pracy i kontakt. W pozycjonowaniu sklepów analizujemy kategorie, produkty, warianty, filtry, dostępność oraz indeksowanie adresów generowanych przez parametry. Sprawdzamy opisy, odnośniki i dane strukturalne zgodne z widoczną ofertą. Nie każdy filtr powinien tworzyć stronę w wynikach wyszukiwania. Zakres dla stron i sklepów internetowych ustalamy po sprawdzeniu platformy i możliwości wdrożenia, bez automatycznej przebudowy całego serwisu.",
-    href: "/uslugi/pozycjonowanie",
+    href: "/seo/pozycjonowanie",
     link: "Poznaj ogólny zakres pozycjonowania",
   },
   {

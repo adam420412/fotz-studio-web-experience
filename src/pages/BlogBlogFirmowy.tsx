@@ -540,7 +540,7 @@ export default function BlogBlogFirmowy() {
               </Link>
 
               <Link
-                to="/uslugi/pozycjonowanie"
+                to="/seo/pozycjonowanie"
                 className="group p-6 border border-slate-200 rounded-lg hover:shadow-lg transition"
               >
                 <h3 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">

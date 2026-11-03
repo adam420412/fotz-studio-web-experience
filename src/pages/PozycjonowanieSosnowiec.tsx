@@ -109,7 +109,7 @@ const PozycjonowanieSosnowiec = () => {
       <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://www.fotz-studio.pl/" },
           { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
-          { name: "Pozycjonowanie", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie" },
+          { name: "Pozycjonowanie", url: "https://www.fotz-studio.pl/seo/pozycjonowanie" },
           { name: "Sosnowiec", url: "https://www.fotz-studio.pl/pozycjonowanie/sosnowiec" },
         ]}/>
       <FAQSchema items={faqItems} />
@@ -153,7 +153,7 @@ const PozycjonowanieSosnowiec = () => {
                   </Link>
                 </Button>
                 <Button size="lg" variant="outline" asChild className="text-base px-8 border-gray-700 text-white hover:bg-gray-800">
-                  <Link to="/uslugi/pozycjonowanie">
+                  <Link to="/seo/pozycjonowanie">
                     Pakiety i ceny SEO
                   </Link>
                 </Button>
@@ -437,7 +437,7 @@ const PozycjonowanieSosnowiec = () => {
                 asChild
                 className="text-base px-8 border-gray-900 text-gray-900 hover:bg-yellow-300"
               >
-                <Link to="/uslugi/pozycjonowanie">Wszystkie pakiety SEO</Link>
+                <Link to="/seo/pozycjonowanie">Wszystkie pakiety SEO</Link>
               </Button>
             </div>
           </FadeInView>
@@ -511,7 +511,7 @@ const PozycjonowanieSosnowiec = () => {
               { label: "Pozycjonowanie Gdańsk", url: "/uslugi/pozycjonowanie/gdansk" },
               { label: "Pozycjonowanie Gliwice", url: "/pozycjonowanie/gliwice" },
               { label: "Pozycjonowanie Zabrze", url: "/pozycjonowanie/zabrze" },
-              { label: "Wszystkie usługi SEO", url: "/uslugi/pozycjonowanie" },
+              { label: "Wszystkie usługi SEO", url: "/seo/pozycjonowanie" },
             ].map((link) => (
               <Link
                 key={link.url}

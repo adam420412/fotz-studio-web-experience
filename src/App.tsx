@@ -251,7 +251,6 @@ const FacebookInstagramAds = lazy(() => import("./pages/FacebookInstagramAds"));
 
 // Wave 5: New service pages (logo, pozycjonowanie, fotografia, video)
 const LogoIBranding = lazy(() => import("./pages/LogoIBranding"));
-const UslugiPozycjonowanie = lazy(() => import("./pages/UslugiPozycjonowanie"));
 const FotografiaProduktowa = lazy(() => import("./pages/FotografiaProduktowa"));
 const VideoMarketing = lazy(() => import("./pages/VideoMarketing"));
 
@@ -1708,7 +1707,7 @@ const App = ({ Router = BrowserRouter, client = queryClient, initialPage }: AppP
                 <Route path="/uslugi/strony-internetowe/kalisz" element={<StronyInternetoweKalisz />} />
                 <Route path="/uslugi/strony-internetowe/gorzow" element={<StronyInternetoweGorzow />} />
                 <Route path="/uslugi/logo-i-branding" element={<LogoIBranding />} />
-                <Route path="/uslugi/pozycjonowanie" element={<UslugiPozycjonowanie />} />
+                <Route path="/uslugi/pozycjonowanie" element={<Redirect301 to="/seo/pozycjonowanie" />} />
                 <Route path="/uslugi/pozycjonowanie/warszawa" element={<Redirect301 to="/seo/pozycjonowanie-warszawa" />} />
                 <Route path="/uslugi/pozycjonowanie/krakow" element={<Redirect301 to="/seo/pozycjonowanie-krakow" />} />
                 <Route path="/uslugi/pozycjonowanie/wroclaw" element={<Redirect301 to="/seo/pozycjonowanie-wroclaw" />} />

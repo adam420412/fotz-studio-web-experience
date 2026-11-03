@@ -784,7 +784,7 @@ export default function BlogJakStworzyc() {
                 </Link>
 
                 <Link
-                  to="/uslugi/pozycjonowanie"
+                  to="/seo/pozycjonowanie"
                   className="block p-6 bg-slate-50 border border-slate-200 rounded-lg hover:border-blue-400 hover:shadow-lg transition"
                 >
                   <h3 className="font-bold text-slate-900 mb-2">Pozycjonowanie stron (SEO)</h3>

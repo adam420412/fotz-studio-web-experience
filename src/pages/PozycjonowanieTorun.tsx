@@ -6,7 +6,7 @@ import { Search, TrendingUp, MapPin, Star, Award, CheckCircle } from "lucide-rea
 export default function PozycjonowanieTorun() {
   const breadcrumbs = [
     { name: "Strona glowna", url: "/" },
-    { name: "Pozycjonowanie", url: "/uslugi/pozycjonowanie" },
+    { name: "Pozycjonowanie", url: "/seo/pozycjonowanie" },
     { name: "Toruń", url: "/uslugi/pozycjonowanie/torun" }
   ];
 

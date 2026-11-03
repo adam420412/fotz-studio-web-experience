@@ -543,7 +543,7 @@ const BlogSEOWordPress = () => {
                     <Link to="/kontakt?usluga=seo#formularz">Bezpłatna konsultacja SEO</Link>
                   </Button>
                   <Button asChild variant="outline" size="lg">
-                    <Link to="/uslugi/pozycjonowanie">Poznaj naszą usługę SEO</Link>
+                    <Link to="/seo/pozycjonowanie">Poznaj naszą usługę SEO</Link>
                   </Button>
                 </div>
               </div>
@@ -556,7 +556,7 @@ const BlogSEOWordPress = () => {
                     <h4 className="font-semibold mb-2">SEO Poradnik 2025</h4>
                     <p className="text-sm text-muted-foreground">Kompletny przewodnik pozycjonowania</p>
                   </Link>
-                  <Link to="/uslugi/pozycjonowanie" className="p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all">
+                  <Link to="/seo/pozycjonowanie" className="p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all">
                     <h4 className="font-semibold mb-2">Usługa pozycjonowania</h4>
                     <p className="text-sm text-muted-foreground">Profesjonalne SEO dla firm</p>
                   </Link>

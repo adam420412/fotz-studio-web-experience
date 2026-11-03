@@ -522,7 +522,7 @@ const StronyInternetoweKatowice = () => {
                 <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">&rarr; Strony internetowe — oferta</Link>
                 <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">&rarr; Landing page</Link>
                 <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">&rarr; Kampanie reklamowe</Link>
-                <Link to="/uslugi/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">&rarr; Pozycjonowanie SEO</Link>
+                <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">&rarr; Pozycjonowanie SEO</Link>
               </div>
             </div>
           </div>

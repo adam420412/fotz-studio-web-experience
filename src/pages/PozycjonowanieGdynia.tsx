@@ -153,7 +153,7 @@ export default function PozycjonowanieGdynia() {
       <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://www.fotz-studio.pl/" },
           { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
-          { name: "Pozycjonowanie", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie" },
+          { name: "Pozycjonowanie", url: "https://www.fotz-studio.pl/seo/pozycjonowanie" },
           { name: "Gdynia", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie/gdynia" },
         ]}/>
 
@@ -188,7 +188,7 @@ export default function PozycjonowanieGdynia() {
                 </Link>
               </Button>
               <Button size="lg" variant="outline" asChild className="text-base px-8 bg-white/10 text-white border-white/20 hover:bg-white/20">
-                <Link to="/uslugi/pozycjonowanie">
+                <Link to="/seo/pozycjonowanie">
                   Dowiedz się więcej
                 </Link>
               </Button>
@@ -406,7 +406,7 @@ export default function PozycjonowanieGdynia() {
                 <Link to="/kontakt?usluga=seo#formularz">Bezpłatna konsultacja SEO</Link>
               </Button>
               <Button size="lg" variant="outline" asChild className="text-base px-8 bg-white/10 text-white border-white/20 hover:bg-white/20">
-                <Link to="/uslugi/pozycjonowanie">Dowiedz się więcej o SEO</Link>
+                <Link to="/seo/pozycjonowanie">Dowiedz się więcej o SEO</Link>
               </Button>
             </div>
           </div>
@@ -419,7 +419,7 @@ export default function PozycjonowanieGdynia() {
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-muted-foreground mb-6">Powiązane usługi:</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center text-sm">
-              <Link to="/uslugi/pozycjonowanie" className="text-primary hover:underline font-semibold">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-semibold">
                 SEO — kompleksowo
               </Link>
               <span className="text-muted-foreground hidden sm:inline">•</span>

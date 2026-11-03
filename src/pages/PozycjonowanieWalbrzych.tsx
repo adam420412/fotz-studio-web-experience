@@ -120,7 +120,7 @@ const relatedLinks = [
   { label: "Pozycjonowanie Legnica", url: "/pozycjonowanie/legnica" },
   { label: "Pozycjonowanie Gliwice", url: "/pozycjonowanie/gliwice" },
   { label: "Pozycjonowanie Zabrze", url: "/pozycjonowanie/zabrze" },
-  { label: "Wszystkie usługi SEO", url: "/uslugi/pozycjonowanie" },
+  { label: "Wszystkie usługi SEO", url: "/seo/pozycjonowanie" },
 ];
 
 const PozycjonowanieWalbrzych = () => {
@@ -142,7 +142,7 @@ const PozycjonowanieWalbrzych = () => {
         items={[
           { name: "Strona główna", url: "https://www.fotz-studio.pl/" },
           { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
-          { name: "Pozycjonowanie", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie" },
+          { name: "Pozycjonowanie", url: "https://www.fotz-studio.pl/seo/pozycjonowanie" },
           { name: "Wałbrzych", url: "https://www.fotz-studio.pl/pozycjonowanie/walbrzych" },
         ]}
       />
@@ -370,7 +370,7 @@ const PozycjonowanieWalbrzych = () => {
                 </Link>
               </Button>
               <Button size="lg" variant="outline" asChild className="text-base px-8 border-gray-900 text-gray-900 hover:bg-yellow-300">
-                <Link to="/uslugi/pozycjonowanie">Poznaj usługę pozycjonowania</Link>
+                <Link to="/seo/pozycjonowanie">Poznaj usługę pozycjonowania</Link>
               </Button>
             </div>
           </FadeInView>

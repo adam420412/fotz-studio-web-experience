@@ -342,7 +342,7 @@ export default function BlogGoogleAdsVsSeo() {
                   <li>✓ Google Search Console + raporty pozycji</li>
                 </ul>
                 <Link
-                  to="/uslugi/pozycjonowanie"
+                  to="/seo/pozycjonowanie"
                   className="inline-block mt-4 text-green-700 font-semibold text-sm hover:underline"
                 >
                   Dowiedz się więcej o pozycjonowaniu SEO →
@@ -399,7 +399,7 @@ export default function BlogGoogleAdsVsSeo() {
               <strong>Powiązane artykuły:</strong>{" "}
               <Link to="/blog/google-ads-cennik" className="text-blue-600 hover:underline">Google Ads cennik 2025</Link>
               {" · "}
-              <Link to="/uslugi/pozycjonowanie" className="text-blue-600 hover:underline">Pozycjonowanie stron internetowych</Link>
+              <Link to="/seo/pozycjonowanie" className="text-blue-600 hover:underline">Pozycjonowanie stron internetowych</Link>
               {" · "}
               <Link to="/performance-marketing/google-ads" className="text-blue-600 hover:underline">Kampanie Google Ads — oferta</Link>
             </p>

@@ -73,5 +73,5 @@ test('Zabrze CTAs lead to the relevant contact form and service information', ()
   assert.ok((source.match(/\/kontakt\?usluga=seo&wariant=audit#formularz/g) || []).length >= 2);
   assert.ok(source.includes('href="#zakres-prac"'));
   assert.ok(source.includes('id="zakres-prac"'));
-  assert.ok(source.includes('to="/uslugi/pozycjonowanie"'));
+  assert.ok(source.includes('to="/seo/pozycjonowanie"'));
 });

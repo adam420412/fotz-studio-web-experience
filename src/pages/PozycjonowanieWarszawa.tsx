@@ -107,7 +107,7 @@ const PozycjonowanieWarszawa = () => {
       <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://www.fotz-studio.pl/" },
           { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
-          { name: "Pozycjonowanie", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie" },
+          { name: "Pozycjonowanie", url: "https://www.fotz-studio.pl/seo/pozycjonowanie" },
           { name: "Warszawa", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie/warszawa" },
         ]}/>
       <FAQSchema items={faqItems} />
@@ -165,7 +165,7 @@ const PozycjonowanieWarszawa = () => {
                 </Link>
               </Button>
               <Button size="lg" variant="outline" asChild className="text-base px-8">
-                <Link to="/uslugi/pozycjonowanie">
+                <Link to="/seo/pozycjonowanie">
                   Pakiety i ceny SEO
                 </Link>
               </Button>
@@ -369,7 +369,7 @@ const PozycjonowanieWarszawa = () => {
                 asChild
                 className="text-base px-8 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
               >
-                <Link to="/uslugi/pozycjonowanie">Wszystkie pakiety SEO</Link>
+                <Link to="/seo/pozycjonowanie">Wszystkie pakiety SEO</Link>
               </Button>
             </div>
           </FadeInView>
@@ -416,7 +416,7 @@ const PozycjonowanieWarszawa = () => {
               { label: "Pozycjonowanie Wrocław", url: "/uslugi/pozycjonowanie/wroclaw" },
               { label: "Pozycjonowanie Poznań", url: "/seo/pozycjonowanie-poznan" },
               { label: "Pozycjonowanie Gdańsk", url: "/uslugi/pozycjonowanie/gdansk" },
-              { label: "Wszystkie usługi SEO", url: "/uslugi/pozycjonowanie" },
+              { label: "Wszystkie usługi SEO", url: "/seo/pozycjonowanie" },
             ].map((link) => (
               <Link
                 key={link.url}
