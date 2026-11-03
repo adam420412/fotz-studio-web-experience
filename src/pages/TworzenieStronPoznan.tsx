@@ -1,5 +1,6 @@
 import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
+import { SelectedWork } from "@/components/sections/SelectedWork";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import {
@@ -343,6 +344,8 @@ export default function TworzenieStronPoznan() {
             <p className={bodyText}>Przy wyborze wykonawcy strony porównaj proces, poprawki i dostęp do kodu. Doświadczenie w tworzeniu stron internetowych oceniaj przez podobne wyzwania, a zasady tworzenia strony — przez jasne akceptacje. Profesjonalnej strony WWW nie oceniaj wyłącznie po wyglądzie; koszt strony internetowej dla Twojej firmy sprawdź wraz z zakresem. Każda strona WWW wymaga aktualizacji. Strony internetowe tworzymy ze zdalnymi akceptacjami, bez deklarowania biura w Poznaniu.</p>
           </div>
         </section>
+
+        <SelectedWork />
 
         <section className="py-20">
           <div className="container mx-auto px-4 max-w-4xl">
