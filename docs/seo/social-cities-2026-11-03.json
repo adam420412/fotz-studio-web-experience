@@ -1,0 +1,186 @@
+{
+  "date": "2026-11-03",
+  "branch": "swarm/social-cities-20261103",
+  "baseCommit": "1955ee32f76cff7f80cb2f246eedf906b936bb8a",
+  "paths": [
+    "/agencja-social-media/krakow",
+    "/agencja-social-media/lublin",
+    "/agencja-social-media/szczecin"
+  ],
+  "gsc": {
+    "period": {
+      "from": "2026-10-03",
+      "to": "2026-10-30"
+    },
+    "krakow": {
+      "impressions": 65,
+      "clicks": 0,
+      "averagePosition": 30.8
+    },
+    "lublin": {
+      "impressions": 121,
+      "clicks": 0,
+      "averagePosition": 41.4545
+    },
+    "szczecin": {
+      "impressions": 70,
+      "clicks": 0,
+      "averagePosition": 49.3429
+    }
+  },
+  "neuronWriter": {
+    "newAnalysesCreated": 0,
+    "target": 95,
+    "iterationsUsed": 4,
+    "maximumIterations": 4,
+    "method": "evaluate-content through neuron_client.py evaluate-html; outerHTML of the single main#main-content element extracted from the final dist/agencja-social-media/<city>/index.html and submitted with the final rendered title and description",
+    "scopeComparison": "Baselines were measured on the public URLs with id=main-content. Final measurements use the same semantic container from the local production prerender, including shared in-page content but excluding navigation and footer. The content scope is comparable, while the measurement environment differs.",
+    "iterations": [
+      {
+        "iteration": 1,
+        "citiesEvaluated": ["krakow", "lublin", "szczecin"],
+        "scores": {
+          "krakow": 78,
+          "lublin": 87,
+          "szczecin": 84
+        },
+        "scope": "Three distinct natural offers with strategy, content, reels, photos, moderation, separately scoped ads, process, enquiry measurement, pricing conditions and visible FAQ; concise branded metadata"
+      },
+      {
+        "iteration": 2,
+        "citiesEvaluated": ["krakow", "lublin", "szczecin"],
+        "scores": {
+          "krakow": 96,
+          "lublin": 97,
+          "szczecin": 94
+        },
+        "scope": "Expanded campaign and channel roles in Kraków, complete service and website boundaries in Lublin, and strategy, optimization and sales measurement in Szczecin; aligned headings with the actual section topics"
+      },
+      {
+        "iteration": 3,
+        "citiesEvaluated": ["szczecin"],
+        "scores": {
+          "szczecin": 94
+        },
+        "scope": "Clarified social-media management, social-media strategy and customer relationships without adding unrelated recommended phrases"
+      },
+      {
+        "iteration": 4,
+        "citiesEvaluated": ["szczecin"],
+        "scores": {
+          "szczecin": 96
+        },
+        "scope": "Clarified headings for strategy, production, advertising, audit, nationwide reach and FAQ after checking the remaining heading-level gaps"
+        }
+    ],
+    "final": {
+      "krakow": 96,
+      "lublin": 97,
+      "szczecin": 96
+    },
+    "allPagesMeetTarget": true,
+    "recommendationConstraint": "No unrelated phrases, unsupported claims or fabricated delivery capabilities were added merely to increase coverage. In particular, the unrelated term 'dowozić' was not forced into the offer."
+  },
+  "cities": {
+    "krakow": {
+      "query": "401b6c67896d8b21",
+      "keyword": "agencja social media kraków",
+      "productionBaseline": 90,
+      "scoresByIteration": [78, 96],
+      "final": 96,
+      "recommendedWordTarget": 1179,
+      "finalRenderedMainWords": 1129,
+      "metadata": {
+        "title": "Agencja social media Kraków — profile i reklamy | FOTZ",
+        "titleLength": 54,
+        "description": "Agencja social media Kraków: strategia, treści, rolki, zdjęcia i moderacja dla firm. Reklamy oddzielnie. Sprawdź zakres współpracy z FOTZ Studio.",
+        "descriptionLength": 145,
+        "canonical": "https://www.fotz-studio.pl/agencja-social-media/krakow",
+        "h1": "Agencja social media Kraków",
+        "h1Count": 1
+      }
+    },
+    "lublin": {
+      "query": "635b30e5c37c2276",
+      "keyword": "agencja social media lublin",
+      "productionBaseline": 86,
+      "scoresByIteration": [87, 97],
+      "final": 97,
+      "recommendedWordTarget": 994,
+      "finalRenderedMainWords": 1034,
+      "metadata": {
+        "title": "Agencja social media Lublin — prowadzenie profili | FOTZ",
+        "titleLength": 56,
+        "description": "Agencja social media Lublin: Facebook, Instagram, LinkedIn, strategia, treści i moderacja. Poznaj proces, pomiar zapytań i zasady wyceny FOTZ Studio.",
+        "descriptionLength": 149,
+        "canonical": "https://www.fotz-studio.pl/agencja-social-media/lublin",
+        "h1": "Agencja social media Lublin",
+        "h1Count": 1
+      }
+    },
+    "szczecin": {
+      "query": "a3adfa2c152f1296",
+      "keyword": "agencja social media szczecin",
+      "productionBaseline": 83,
+      "scoresByIteration": [84, 94, 94, 96],
+      "final": 96,
+      "recommendedWordTarget": 1046,
+      "finalRenderedMainWords": 1077,
+      "metadata": {
+        "title": "Agencja social media Szczecin — strategia i content | FOTZ",
+        "titleLength": 58,
+        "description": "Agencja social media Szczecin: strategia, content, rolki, zdjęcia i moderacja dla firm. Reklamy oddzielnie. Sprawdź zakres współpracy z FOTZ Studio.",
+        "descriptionLength": 148,
+        "canonical": "https://www.fotz-studio.pl/agencja-social-media/szczecin",
+        "h1": "Agencja social media Szczecin",
+        "h1Count": 1
+      }
+    }
+  },
+  "renderedContract": {
+    "selfCanonical": true,
+    "mainContentCountPerPage": 1,
+    "oneH1PerPage": true,
+    "allIdsPerPage": 5,
+    "duplicateIds": [],
+    "schemaTypes": [
+      "ProfessionalService",
+      "BreadcrumbList"
+    ],
+    "breadcrumbMatchesCityAndCanonical": true,
+    "organizationSchema": "Existing organization schema retained with the Kamionki address and Poland in areaServed; no office or address in any target city was introduced",
+    "visibleFaqSectionsPerPage": 3,
+    "contactCtas": [
+      "/kontakt",
+      "/konsultacja"
+    ],
+    "wordCountMethod": "Unicode word tokens in the visible text of main#main-content after removing script and style elements; this is a local verification count, not a separate NeuronWriter metric"
+  },
+  "checks": {
+    "npmCi": "passed; 1494 packages installed",
+    "targetedTests": "16/16 passed: live-blog 7/7, social-cities 4/4 and social-media-hub 5/5",
+    "typecheck": "passed",
+    "build": "passed; 1061 prerendered pages, 1059 full page bodies, 0 body errors",
+    "htmlContract": "passed for all three pages; one H1, one main#main-content, self-canonical, title at most 60 characters with ' | FOTZ', description at most 160 characters, valid JSON-LD and no duplicate IDs",
+    "diffCheck": "passed; only the two declared data files, the direct test and this unique report are included",
+    "buildArtifactsExcluded": "known-routes.json restored after prerender; dist, .ssr and temporary extracted HTML are not staged"
+  },
+  "files": [
+    "src/data/socialMediaClusters.ts",
+    "src/data/socialMediaGuides.ts",
+    "scripts/social-cities.test.mjs",
+    "docs/seo/social-cities-2026-11-03.json"
+  ],
+  "scope": [
+    "Preserved the existing hub, routes, metadata rendering, ProfessionalService and BreadcrumbList schema, portfolio and contact CTAs",
+    "Created separate natural offers for Kraków, Lublin and Szczecin rather than substituting a city name in one shared text",
+    "Covered profile management, strategy, content, reels, photos, moderation, separately scoped advertising, process, enquiry measurement, pricing conditions and visible FAQ",
+    "Removed unsupported local-office implications, fixed prices, performance guarantees, fabricated clients and statistics from the edited city content",
+    "Added direct tests for metadata, offer completeness, copy uniqueness, one H1, self-canonical, breadcrumb schema and relevant CTAs"
+  ],
+  "notes": [
+    "The content score evaluates the rendered offer against the existing NeuronWriter analysis; it does not prove indexing, rankings, clicks, enquiries or sales.",
+    "No changes were made to App.tsx, sitemaps, ai-work-register.csv, environment files, other pages or shared components.",
+    "No pull request or merge was created."
+  ]
+}
