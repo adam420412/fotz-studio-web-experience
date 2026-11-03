@@ -1,0 +1,101 @@
+{
+  "date": "2026-11-03",
+  "path": "/seo/pozycjonowanie-wroclaw",
+  "url": "https://www.fotz-studio.pl/seo/pozycjonowanie-wroclaw",
+  "source": "src/pages/SEOPozycjonowanieWroclaw.tsx",
+  "branch": "swarm/seo-wroclaw-20261103",
+  "baseCommit": "97df192edbce86f48d6c55b2182eeea39d33356d",
+  "gsc": {
+    "assignedMetrics": false,
+    "note": "No current assigned GSC metrics were supplied; none were inferred or reported."
+  },
+  "neuronWriter": {
+    "query": "e90aa476368c8ace",
+    "keyword": "pozycjonowanie wrocław",
+    "newAnalysesCreated": 0,
+    "productionBaseline": 84,
+    "baselineMethod": "Saved production evaluate-content result for the target URL with id=main-content before the rewrite.",
+    "iterations": [
+      {
+        "iteration": 1,
+        "score": 82,
+        "scope": "Complete offer rewrite covering audit, technical SEO, content, local visibility, process, measurement, pricing and FAQ with final metadata"
+      },
+      {
+        "iteration": 2,
+        "score": 92,
+        "scope": "Filled thematic and heading gaps within the offer, strengthened local and store coverage, added agency-selection FAQ and reduced unsupported phrasing"
+      },
+      {
+        "iteration": 3,
+        "score": 93,
+        "scope": "Refined local headings, restored search-result terminology, reduced repeated audit phrasing and balanced store and service terminology"
+      },
+      {
+        "iteration": 4,
+        "score": 95,
+        "scope": "Final bounded correction of audit and agency headings, result-page terminology and repeated phrases without adding unsupported claims"
+      }
+    ],
+    "final": 95,
+    "target": 95,
+    "recommendedWordCount": 1790,
+    "finalRenderedMainWords": 2622,
+    "wordCountMethod": "Unicode alphabetic word tokens in the visible text of main#main-content after removing script and style elements; this is a local verification count, not a NeuronWriter metric.",
+    "method": "evaluate-content through neuron_client.py evaluate-html; outerHTML of main#main-content extracted from final dist/seo/pozycjonowanie-wroclaw/index.html and submitted with final title and description",
+    "scopeComparison": "Baseline 84 was measured on the public URL with id=main-content. Final measurement uses the same semantic container from the local production prerender, including shared in-page components but excluding navigation and footer. The content scope is comparable, while the measurement environment differs.",
+    "container": {
+      "selector": "main#main-content",
+      "occurrences": 1,
+      "duplicateIds": [],
+      "verified": true
+    }
+  },
+  "metadata": {
+    "title": "Pozycjonowanie stron Wrocław — SEO | FOTZ",
+    "titleLength": 41,
+    "description": "Pozycjonowanie stron Wrocław: audyt SEO, technika, treści i lokalna widoczność w Google. Sprawdź zakres usług, pomiar zapytań i warunki wyceny FOTZ.",
+    "descriptionLength": 148,
+    "canonical": "https://www.fotz-studio.pl/seo/pozycjonowanie-wroclaw",
+    "h1": "Pozycjonowanie stron Wrocław — lokalne SEO",
+    "h1Count": 1
+  },
+  "renderedContract": {
+    "selfCanonical": true,
+    "mainContentCount": 1,
+    "idCount": 11,
+    "duplicateIds": [],
+    "serviceSchemaMatchesH1AndLead": true,
+    "faqQuestions": 7,
+    "visibleFaqMatchesSchema": true,
+    "cta": "/kontakt?usluga=seo&wariant=audit#formularz",
+    "ctaCount": 2
+  },
+  "checks": {
+    "npmCi": "passed",
+    "typecheck": "passed",
+    "targetedTests": "23/23 passed: live-blog 7/7, pozycjonowanie-wroclaw 5/5, seo-metadata 3/3, structured-data 5/5 and rendered-html 3/3",
+    "build": "passed; 1061 prerendered pages, 1059 full page bodies, 0 body errors",
+    "htmlContract": "passed; one H1, one main-content, self-canonical, title 41 characters, description 148 characters, 11 unique IDs and no duplicates",
+    "schemaContract": "passed; Service name and description match the visible H1 and lead, areaServed is Wrocław, and all seven visible FAQ questions and answers match FAQPage schema"
+  },
+  "scope": [
+    "Replaced keyword-heavy copy and unsupported performance implications with a verifiable service offer",
+    "Documented audit deliverables, technical SEO, content optimization, internal and external linking, local visibility and Google Business Profile work",
+    "Added query-to-page planning, store considerations, implementation process and measurement separated into visibility, traffic, enquiries and sales",
+    "Explained pricing factors, exclusions, responsibilities and optional one-off audit without fixed prices or guarantees",
+    "Preserved the existing URL and added concise branded metadata, self-canonical, one H1, matching structured data and relevant audit CTAs",
+    "Added a direct source contract test and documented the final local prerender measurement with no duplicate IDs"
+  ],
+  "files": [
+    "src/pages/SEOPozycjonowanieWroclaw.tsx",
+    "scripts/pozycjonowanie-wroclaw.test.mjs",
+    "docs/seo/pozycjonowanie-wroclaw-2026-11-03.json"
+  ],
+  "notes": [
+    "Content score does not prove indexing, rankings, clicks, enquiries or sales.",
+    "No changes were made to App.tsx, sitemaps, ai-work-register.csv, environment files, other pages or shared components.",
+    "No new NeuronWriter analyses were created; only four evaluate-content calls used the existing query e90aa476368c8ace."
+  ],
+  "businessImpact": "Not measured; content score does not demonstrate rankings, traffic, enquiries or sales."
+}
