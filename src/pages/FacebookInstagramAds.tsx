@@ -85,6 +85,19 @@ const sections = [
     link: "Zobacz kampanie TikTok Ads",
   },
   {
+    title: "Reklamy na Facebooku i Instagramie — formaty i cele",
+    text: "Reklamy na Facebooku i Instagramie obejmują więcej niż jedną formę — każda forma reklamy ma inną rolę: reklamy graficzne w aktualnościach, reklamy wideo i Reels, karuzele produktowe oraz formularze Facebook Lead Ads. Reklamy Facebook to skrót myślowy na kampanie reklamowe w Meta — Facebook Ads i Instagram Ads ustawiamy w jednym panelu. Sklep internetowy potrzebuje katalogu i remarketingu — to fundament e-commerce w Meta. Reklamy online w Meta mogą docierać do potencjalnych klientów, zanim zaczną szukać — algorytm Meta uczy się na konwersjach, więc kampanie Facebook Ads budują popyt, a nie tylko go zbierają. Skuteczne kampanie reklamowe to skuteczne kampanie, które mają cel sprzedażowy, nie tylko wyświetleń reklamy. Targetowanie dobieramy do etapu lejka. Meta Ads – skuteczna reklama wymaga danych: płatny kanał bez pomiaru przepala budżet. Kampania reklamowa bez jasnego celu nie ma czego mierzyć. Ads do promocji oferty czy Ads na Facebooku i Instagramie dla sklepu internetowego — każdy format dobieramy do celu. Reklamy na FB działają najlepiej z kampaniami remarketingowymi, a prowadzenie kampanii Facebook wymaga testów kreacji i grup odbiorców.",
+  },
+  {
+    title: "Meta Ads i Google Ads — jak połączyć kanały",
+    text: "Meta Ads i Google Ads to nie konkurencja: reklamy Google Ads zamykają gorący popyt w wyszukiwarce, a Meta Ads budują go wcześniej. Google Ads i Meta Ads w jednym planie to niższy koszt kontaktu niż osobne kampanie — reklam Google Ads i reklam Meta Ads nie ustawiamy w oderwaniu. W reklamach Meta testujemy kreacje, a wnioski przenosimy na search. Kampanie Google Ads pokazują, które frazy sprzedają, a kampanie Meta Ads na Facebooku skalują sprawdzone komunikaty. Konfiguracji kampanii towarzyszy pomiar: Google Analytics i z Google Tag Managera łączymy z Meta Pixel, żeby koszty reklamy były jasne. Przy wyborze agencji zapytaj o status Google Partner i doświadczenie w reklamach Meta — kampanii reklamowych na FB nie prowadzi się intuicyjnie. Marketing internetowy bez spójnego pomiaru to zgadywanie — jako agencja marketingowa raportujemy wszystkie kanały razem.",
+    points: [
+      "Kampanie Meta Ads na Facebooku i Instagramie: zasięg, popyt, remarketing.",
+      "Kampanie Google Ads: gorący popyt w wyszukiwarce.",
+      "Prowadzenie kampanii reklamowej z jednym raportem dla obu kanałów.",
+    ],
+  },
+  {
     title: "Realizacja: kampania rekrutacyjna Meta Ads dla Dawid EDU",
     text: "Dla Dawid EDU, szkoły i przedszkola w Poznaniu, prowadziliśmy kampanię rekrutacyjną na Facebooku i Instagramie. Przygotowaliśmy osobne kreacje dla różnych etapów edukacji i poprawiliśmy stronę, do której kierowały reklamy. W case study opisujemy zakres pracy, dane z konta i ograniczenia pomiaru. To przykład naszej pracy, nie obietnica takiego samego wyniku w innej branży.",
     href: "/realizacje/dawid-edu",
@@ -131,6 +144,14 @@ const faqs = [
   {
     question: "Jak sprawdzić deklarowany status Meta Business Partner agencji?",
     answer: "Jeśli agencja deklaruje status Meta Business Partner, poproś o aktualne potwierdzenie odnoszące się do tej firmy. Sama wzmianka o programie na stronie nie dowodzi uczestnictwa. FOTZ nie deklaruje tutaj takiego statusu. Naszą pracę możesz ocenić na podstawie opisanej realizacji Dawid EDU oraz uzgodnionego zakresu obsługi. Certyfikat ani doświadczenie innego klienta nie są gwarancją wyniku Twojej kampanii.",
+  },
+  {
+    question: "Ile kosztuje reklama na Facebooku?",
+    answer: "Koszt reklamy na Facebooku ma dwie części: budżet emisji płacony platformie i obsługa. Ile kosztuje reklama na Facebooku zależy od celu, konkurencji i jakości kreacji — przed startem proponujemy budżet testowy i limit. Skuteczna reklama na Facebooku to proces testów, nie jednorazowa emisja.",
+  },
+  {
+    question: "Czym są Facebook Lead Ads?",
+    answer: "Facebook Lead Ads to formularze wbudowane w platformę — użytkownik wysyła zapytanie bez opuszczania Facebooka. Sprawdzają się w usługach i rekrutacji; jakość zgłoszeń oceniamy razem z Twoją firmą po pierwszych danych.",
   },
   {
     question: "Czym różni się Meta Ads od Facebook Ads?",
