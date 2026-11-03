@@ -1,0 +1,95 @@
+{
+  "date": "2026-11-03",
+  "path": "/seo/pozycjonowanie",
+  "url": "https://www.fotz-studio.pl/seo/pozycjonowanie",
+  "source": "src/pages/Pozycjonowanie.tsx",
+  "branch": "swarm/seo-pozycjonowanie-20261103",
+  "baseCommit": "83d92567045094a43d34403ce63b80804ca017e4",
+  "gsc": {
+    "assignedMetrics": false,
+    "note": "No current assigned GSC metrics were supplied; none were inferred, estimated or fabricated."
+  },
+  "neuronWriter": {
+    "query": "8ccec56857fb6af2",
+    "keyword": "pozycjonowanie stron",
+    "newAnalysesCreated": 0,
+    "productionBaseline": 75,
+    "baselineMethod": "Saved production evaluate-content result for the target URL with id=main-content before the rewrite.",
+    "iterations": [
+      {
+        "iteration": 1,
+        "score": 89,
+        "scope": "Complete offer and guide covering organic results, technical SEO, search intent and keywords, content, internal and external linking, local SEO, process, query measurement, pricing conditions and FAQ with final metadata."
+      },
+      {
+        "iteration": 2,
+        "score": 99,
+        "scope": "Expanded the existing guidance with a practical SERP analysis section and naturally incorporated missing terminology about Google results, page position, optimization and service scope without adding a keyword catalogue."
+      }
+    ],
+    "final": 99,
+    "target": 95,
+    "recommendedWordCount": 6974,
+    "finalRenderedMainWords": 7263,
+    "wordCountMethod": "Unicode word tokens in the visible text of main#main-content after removing script and style elements and HTML tags; this is a local verification count, not a NeuronWriter metric.",
+    "method": "evaluate-content through neuron_client.py evaluate-html; outerHTML of main#main-content extracted from final dist/seo/pozycjonowanie/index.html and submitted with final title and description",
+    "scopeComparison": "Baseline 75 was measured on the production URL with id=main-content. Final measurement uses the same semantic container from the local production prerender, including shared in-page components but excluding navigation and footer. The content scope is comparable, while the measurement environment differs.",
+    "container": {
+      "selector": "main#main-content",
+      "occurrences": 1,
+      "duplicateIds": [],
+      "verified": true
+    }
+  },
+  "metadata": {
+    "title": "Pozycjonowanie stron internetowych — SEO | FOTZ",
+    "titleLength": 47,
+    "description": "Pozycjonowanie stron w Google: audyt SEO, technika, intencja i frazy, treści, linkowanie oraz lokalna widoczność. Sprawdź proces, pomiar i wycenę FOTZ.",
+    "descriptionLength": 151,
+    "canonical": "https://www.fotz-studio.pl/seo/pozycjonowanie",
+    "h1": "Pozycjonowanie stron internetowych — oferta i poradnik SEO",
+    "h1Count": 1
+  },
+  "renderedContract": {
+    "selfCanonical": true,
+    "mainContentCount": 1,
+    "idCount": 9,
+    "duplicateIds": [],
+    "serviceSchemaMatchesH1AndLead": true,
+    "faqQuestions": 12,
+    "visibleFaqMatchesSchema": true,
+    "cta": "/kontakt?usluga=seo&wariant=audit#formularz",
+    "ctaCount": 2
+  },
+  "checks": {
+    "npmCi": "passed; dependencies installed from the lockfile",
+    "typecheck": "passed",
+    "targetedTests": "24/24 passed: live-blog 7/7, pozycjonowanie 6/6, seo-metadata 3/3, structured-data 5/5 and rendered-html 3/3",
+    "build": "passed; 1061 prerendered pages, 1059 full page bodies, 0 body errors",
+    "htmlContract": "passed; one H1, one main-content, self-canonical, title 47 characters, description 151 characters, 9 unique IDs and no duplicates",
+    "schemaContract": "passed; Service name and description match the visible H1 and lead; all 12 visible FAQ questions and answers match FAQPage schema",
+    "diffCheck": "passed before commit; generated known-routes.json build output was restored because it is outside the assigned scope"
+  },
+  "scope": [
+    "Replaced repetitive keyword-focused copy with a complete offer and practical guide covering SEO, organic search results, crawling, indexing and ranking",
+    "Documented technical optimization, search intent, keyword mapping, long-tail topics, content planning, on-page work, mobile usability and Core Web Vitals without treating tool scores as guarantees",
+    "Explained internal linking, external link acquisition, off-site work, local SEO, Google Business Profile, ecommerce and migration considerations",
+    "Described the process from brief and audit through implementation, acceptance, reporting and next-step decisions",
+    "Separated visibility, organic traffic, enquiries and sales in measurement without inventing current GSC data or business results",
+    "Explained timing and pricing factors, exclusions, responsibilities, one-off audit options and self-service work without fixed prices or guarantees",
+    "Preserved the existing URL and added concise branded metadata, self-canonical, one H1, matching Service and FAQ structured data and relevant audit CTAs",
+    "Added a direct source contract test and documented the final local prerender measurement with no duplicate IDs"
+  ],
+  "files": [
+    "src/pages/Pozycjonowanie.tsx",
+    "scripts/pozycjonowanie.test.mjs",
+    "docs/seo/pozycjonowanie-stron-2026-11-03.json"
+  ],
+  "notes": [
+    "Content score does not prove indexing, rankings, clicks, enquiries or sales.",
+    "No changes were made to App.tsx, sitemaps, ai-work-register.csv, environment files, other pages or shared components.",
+    "No new NeuronWriter analyses were created; only two evaluate-content calls used the existing query 8ccec56857fb6af2.",
+    "The 6974-word SERP recommendation was treated as orientation, not a requirement for artificial expansion."
+  ],
+  "businessImpact": "Not measured; content score does not demonstrate rankings, traffic, enquiries or sales."
+}
