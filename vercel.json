@@ -799,6 +799,31 @@
       "source": "/portfolio/:path*",
       "destination": "/realizacje/:path*",
       "permanent": true
+    },
+    {
+      "source": "/agencja-seo-warszawa",
+      "destination": "/seo/pozycjonowanie-warszawa",
+      "permanent": true
+    },
+    {
+      "source": "/uslugi/pozycjonowanie/warszawa",
+      "destination": "/seo/pozycjonowanie-warszawa",
+      "permanent": true
+    },
+    {
+      "source": "/agencja-seo-wroclaw",
+      "destination": "/seo/pozycjonowanie-wroclaw",
+      "permanent": true
+    },
+    {
+      "source": "/uslugi/pozycjonowanie/wroclaw",
+      "destination": "/seo/pozycjonowanie-wroclaw",
+      "permanent": true
+    },
+    {
+      "source": "/agencja-seo-lublin",
+      "destination": "/uslugi/pozycjonowanie/lublin",
+      "permanent": true
     }
   ],
   "functions": {
