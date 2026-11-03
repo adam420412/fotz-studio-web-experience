@@ -1,0 +1,88 @@
+{
+  "date": "2026-11-03",
+  "path": "/agencja-marketingu-internetowego",
+  "source": "src/pages/AgencjaMarketinguInternetowego.tsx",
+  "branch": "swarm/agencja-marketingu-20261103",
+  "baseCommit": "0d7eeba7fd35895dca71cfb457ee5093c23314d5",
+  "gsc": {
+    "assignedMetricsAvailable": false,
+    "metrics": null,
+    "note": "Nie przypisano aktualnych metryk GSC dla tego zadania; nie szacowano kliknięć, wyświetleń ani pozycji."
+  },
+  "neuronWriter": {
+    "query": "4a57f4bdee140c8a",
+    "keyword": "agencja marketingu internetowego",
+    "newAnalysesCreated": 0,
+    "productionBaseline": 84,
+    "target": 95,
+    "recommendedWordTarget": 2384,
+    "finalRenderedMainWords": 2253,
+    "wordCountMethod": "Lokalny szacunek widocznego tekstu z main#main-content po usunięciu script, style i znaczników oraz normalizacji białych znaków.",
+    "iterations": [
+      {
+        "iteration": 1,
+        "score": 95,
+        "scope": "Kompletna przebudowa oferty: strategia i dobór kanałów, rozdzielone SEO, treści, reklamy i produkcja, proces, odpowiedzialność, budżet, pomiar leadów i jakości, warunki współpracy oraz FAQ; finalne title i description."
+      }
+    ],
+    "iterationsUsed": 1,
+    "maximumIterations": 4,
+    "final": 95,
+    "method": "evaluate-content przez neuron_client.py evaluate-html; outerHTML elementu main#main-content wyodrębniony z dist/agencja-marketingu-internetowego/index.html po finalnym buildzie; finalne title i description przekazane razem z treścią.",
+    "scopeComparison": "Baseline 84 zmierzono na produkcyjnym URL z id=main-content. Pomiar końcowy obejmuje ten sam semantyczny kontener z lokalnego prerenderu, bez nawigacji i stopki. Zakres treści jest porównywalny, ale środowisko pomiaru różni się."
+  },
+  "metadata": {
+    "title": "Agencja marketingu internetowego — SEO i Google Ads | FOTZ",
+    "titleLength": 58,
+    "description": "Agencja marketingu internetowego FOTZ Studio: strategia, SEO, content marketing, Google Ads, social media i produkcja. Dobierz zakres i mierz leady.",
+    "descriptionLength": 148,
+    "canonical": "https://www.fotz-studio.pl/agencja-marketingu-internetowego",
+    "h1": "Agencja marketingu internetowego",
+    "h1Count": 1
+  },
+  "renderedContract": {
+    "selfCanonical": true,
+    "mainContentCount": 1,
+    "allIds": 11,
+    "duplicateIds": [],
+    "schemaTypes": [
+      "ProfessionalService",
+      "BreadcrumbList",
+      "Service",
+      "FAQPage"
+    ],
+    "serviceSchemaMatchesOffer": true,
+    "breadcrumbSchemaPresent": true,
+    "faqQuestions": 9,
+    "visibleFaqMatchesSchema": true,
+    "contactCta": "/kontakt?usluga=marketing#formularz",
+    "contactCtaCount": 2
+  },
+  "checks": {
+    "npmCi": "passed",
+    "typecheck": "passed",
+    "targetedTests": "33/33 passed: direct page contract 5/5, live-blog 7/7, conversions 13/13, seo-metadata 3/3 and structured-data 5/5",
+    "build": "passed; 1061 prerendered pages, 1059 full bodies, 0 body errors",
+    "htmlContract": "passed; one H1, one main-content, self-canonical, title 58 characters, description 148 characters, 11 IDs and no duplicates",
+    "diffCheck": "passed; only the declared page, direct test and unique report are included",
+    "buildArtifactsExcluded": "known-routes.json restored after prerender; dist, .ssr and temporary extracted HTML are not staged"
+  },
+  "files": [
+    "src/pages/AgencjaMarketinguInternetowego.tsx",
+    "scripts/agencja-marketingu-internetowego.test.mjs",
+    "docs/seo/agencja-marketingu-internetowego-2026-11-03.json"
+  ],
+  "scope": [
+    "Usunięto sztywne ceny i CTA do wariantów z ceną; wycena zależy od zakresu, a budżet emisji jest oddzielony od pracy i produkcji.",
+    "Dodano strategię i dobór kanałów na podstawie celu, odbiorców, drogi zakupu, zasobów i możliwości obsługi zapytań.",
+    "Rozdzielono SEO, content marketing, reklamy Google Ads i social media oraz produkcję tekstów, grafiki, zdjęć i wideo.",
+    "Opisano proces, odpowiedzialności, akceptacje, dostępy, warunki umowy, zakończenie prac i przekazanie materiałów.",
+    "Dodano pomiar źródeł, zdarzeń, leadów i jakości zapytań z rozróżnieniem konwersji, wartościowego leada i potwierdzonej sprzedaży.",
+    "Zachowano istniejący URL, jedno H1, self-canonical oraz zgodne z treścią Service, Breadcrumb i FAQPage schema.",
+    "Dodano bezpośredni test kontraktu strony i raport pomiaru prerenderu z brakiem duplikatów ID."
+  ],
+  "notes": [
+    "Wynik content score ocenia treść względem istniejącej analizy NeuronWriter; nie dowodzi indeksacji, pozycji, kliknięć, leadów ani sprzedaży.",
+    "Nie zmieniono App.tsx, sitemap, ai-work-register.csv, plików środowiskowych, innych stron ani komponentów wspólnych."
+  ]
+}

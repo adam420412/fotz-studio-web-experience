@@ -1,182 +1,199 @@
 import { SEOHead } from "@/components/seo/SEOHead";
 import { ServiceEditorial } from "@/components/ServiceEditorial";
 
+const seoTitle = "Agencja marketingu internetowego — SEO i Google Ads | FOTZ";
+const seoDescription = "Agencja marketingu internetowego FOTZ Studio: strategia, SEO, content marketing, Google Ads, social media i produkcja. Dobierz zakres i mierz leady.";
+const canonicalUrl = "https://www.fotz-studio.pl/agencja-marketingu-internetowego";
+
 const content = {
-  "title": "Agencja marketingu internetowego",
-  "eyebrow": "FOTZ Studio · Poznań i współpraca zdalna",
-  "path": "/agencja-marketingu-internetowego",
-  "enquiryVariant": "retainer",
-  "contactLabel": "Porozmawiajmy o stałej obsłudze",
-  "priceNote": "Od 3 000 zł netto miesięcznie. Produkcja i reklamy wyceniane osobno.",
-  "lead": "Strony internetowe, social media, reklamy oraz zdjęcia i filmy w jednym planie. FOTZ Studio pomaga przejść od pomysłu do regularnych działań. Wybierz pojedynczy projekt albo stałą obsługę z jasno ustalonym zakresem.",
-  "summary": [
-    "Wybieramy jeden cel i zakres, który da się regularnie wykonać.",
-    "Wiesz, co otrzymasz w danym miesiącu i czego potrzebujemy od Ciebie.",
-    "Pierwsza, bezpłatna rozmowa trwa około 15 minut. Termin potwierdzamy w odpowiedzi."
+  title: "Agencja marketingu internetowego",
+  eyebrow: "FOTZ Studio · Poznań i współpraca zdalna",
+  path: "/agencja-marketingu-internetowego",
+  contactLabel: "Omów zakres marketingu",
+  lead: "Agencja marketingu internetowego FOTZ Studio łączy strategię, SEO, content marketing, reklamy i produkcję materiałów w uzgodniony plan. Zaczynamy od celu, odbiorców i drogi do zapytania, a następnie wybieramy potrzebne kanały. Przed startem znasz zakres, odpowiedzialności, sposób akceptacji i zasady pomiaru leadów.",
+  summary: [
+    "Strategia marketingowa wskazuje priorytet, rolę kanałów i rezultat, który ma powstać.",
+    "SEO, treści, reklamy oraz produkcję rozdzielamy w zakresie i wycenie.",
+    "Raport łączy wykonane prace z danymi o leadach i informacją o ich jakości."
   ],
-  "scopeTitle": "Co obejmuje zakres za 3 000 zł netto miesięcznie",
-  "scope": [
+  scopeTitle: "Czym zajmuje się agencja marketingu internetowego?",
+  scope: [
     {
-      "title": "Plan i priorytet",
-      "text": "Wybieramy usługę lub produkt, odbiorców i cel. Ustalamy, co ma zrobić zainteresowana osoba: zadzwonić, wysłać zapytanie, zarezerwować albo kupić."
+      title: "Strategia i dobór kanałów",
+      text: "Analizujemy ofertę, grupę docelową, drogę zakupu i dostępne zasoby. Na tej podstawie powstaje plan działań marketingowych: wybieramy kanały, komunikaty, kolejność prac i mierniki. Nie uruchamiamy wszystkich narzędzi tylko po to, aby poszerzyć pakiet."
     },
     {
-      "title": "Cztery materiały",
-      "text": "Przygotowujemy cztery materiały na bazie dostępnych zdjęć i filmów: tekst oraz opracowanie graficzne. Nowe nagrania i montaż rolek wyceniamy osobno."
+      title: "SEO i treści na stronie",
+      text: "Audyt SEO pomaga ocenić indeksowanie, strukturę, technikę i istniejące treści. Dobieramy słowa kluczowe do intencji, planujemy artykuły lub opisy ofert i wskazujemy wdrożenia. Usługi SEO mają własny zakres, harmonogram i sposób odbioru."
     },
     {
-      "title": "Publikacja i akceptacja",
-      "text": "Publikujemy uzgodnione materiały na maksymalnie dwóch profilach. Przed publikacją otrzymujesz całą partię do jednej, zbiorczej rundy uwag."
+      title: "Reklamy Google i social media",
+      text: "Prowadzenie kampanii obejmuje przygotowanie struktury, kreacji, strony docelowej i pomiaru. Kampanie Google Ads odpowiadają na aktywne wyszukiwania, a reklama na Facebooku i Instagramie dociera do wybranych odbiorców. Budżet emisji jest osobny od obsługi."
     },
     {
-      "title": "Czytelny kontakt",
-      "text": "Wykonujemy jedną drobną aktualizację istniejącej oferty lub przycisku kontaktowego, do godziny pracy. Większe zmiany na stronie wyceniamy osobno."
+      title: "Produkcja materiałów",
+      text: "Przygotowujemy teksty, grafiki, zdjęcia, filmy i rolki dopasowane do kanału oraz komunikatu. Przed produkcją ustalamy zastosowanie, formaty, listę ujęć, materiały od firmy, akceptacje i sposób przekazania plików. Nagrania na miejscu planujemy osobno."
     },
     {
-      "title": "Podsumowanie miesiąca",
-      "text": "Pokazujemy, co powstało, jakie zainteresowanie odnotowaliśmy i co warto zrobić dalej. Rozmowy i sprzedaż porównujemy z Twoimi danymi; same wyświetlenia nie oznaczają nowych klientów."
+      title: "Realizacja i odpowiedzialność",
+      text: "W ofercie zapisujemy zadania agencji i klienta, terminy, osoby akceptujące oraz wymagane dostępy. Możemy prowadzić stałe działania albo zamknąć audyt, strategię, produkcję lub wdrożenie jako pojedynczy projekt. Zmiany zakresu uzgadniamy przed pracą."
     },
     {
-      "title": "Rozmowa o dalszych pracach",
-      "text": "Raz w miesiącu omawiamy wnioski podczas rozmowy do 30 minut. Zmiany zakresu, dodatkowe materiały i koszty uzgadniamy przed ich realizacją."
+      title: "Pomiar i rekomendacje",
+      text: "Uzgodnione zdarzenia, źródła ruchu i koszty zestawiamy z jakością zapytań raportowaną przez firmę. Pokazujemy, co wykonaliśmy i jakie wnioski wynikają z dostępnych danych. Nie przedstawiamy kliknięcia telefonu jako rozmowy ani leada jako klienta."
     }
   ],
-  "sections": [
+  sections: [
     {
-      "title": "Ograniczona opieka: 2 000 zł netto miesięcznie",
-      "text": "Mała potrzeba nie wymaga dużego pakietu. Przy jednym obszarze możemy ustalić zakres do czterech godzin pracy łącznie w miesiącu. W tym czasie mieszczą się realizacja, kontakt, poprawki i podsumowanie. Zadania ustalamy przed rozpoczęciem miesiąca. Ten wariant nie obejmuje regularnych nagrań, prowadzenia wielu profili ani kompleksowej obsługi kampanii.",
-      "href": "/kontakt?usluga=marketing&wariant=limited_care#formularz",
-      "link": "Zapytaj o ograniczoną opiekę"
-    },
-    {
-      "title": "Czym zajmuje się agencja marketingu internetowego",
-      "text": "Agencja marketingu internetowego planuje i prowadzi działania promocyjne w kanałach cyfrowych: w wyszukiwarce, w mediach społecznościowych, na stronie firmy i w poczcie. Marketing internetowy to w praktyce praca na styku strategii, treści, technologii i reklamy. W FOTZ Studio nie traktujemy tych obszarów marketingu jako osobnych produktów do odhaczenia. Każde zlecenie zaczynamy od pytania, co ma się wydarzyć po stronie klienta — zapytanie ofertowe, rezerwacja, zakup, zapis na rekrutację — i dopiero wtedy wybieramy narzędzia.",
-      "points": [
-        "Strategia marketingowa: cel, grupa docelowa, kluczowe komunikaty i kolejność działań.",
-        "SEO i SEM: widoczność w wynikach wyszukiwania oraz płatne kampanie PPC w Google.",
-        "Content marketing: artykuły, opisy usług, materiały wideo i grafiki pod konkretne pytania klientów.",
-        "Reklama w social media: kampanie na Facebooku i Instagramie, kreacje i testy komunikatów.",
-        "Analityka: konfiguracja pomiaru, raporty i wnioski do kolejnych decyzji."
+      title: "Strategia marketingowa i dobór kanałów dla Twojego biznesu",
+      text: "Marketing internetowy zaczyna się od pytania, co ma zmienić w Twoim biznesie: zdobywanie zapytań, wsparcie sprzedaży, wejście z nową ofertą czy budowanie rozpoznawalności marki. Strategia marketingowa porządkuje odbiorców, argumenty, kanały i kolejność działań. Strategie komunikacji oraz strategie SEO powinny wynikać z tego samego planu, a nie z osobnych, przypadkowych zleceń. Digital marketing obejmuje różne obszary marketingu, ale nie wszystkie są potrzebne od razu. Dobór zależy od grupy docelowej, cyklu decyzji, obszaru sprzedaży, budżetu i zdolności obsługi nowych klientów. Jeśli oferta lub formularz wymaga poprawy, najpierw wskazujemy tę przeszkodę zamiast zwiększać ruch. Zakres email marketingu i marketingu bezpośredniego ustalamy osobno, z uwzględnieniem zgód, bazy kontaktów i celu marketingu bezpośredniego. Współpraca obejmuje tylko kanały, dla których marketing internetowy ma przypisane zadanie i sposób oceny.",
+      points: [
+        "Google Search i SEO dla osób aktywnie szukających rozwiązania.",
+        "Reklama w social media dla wybranych grup i testów komunikatu.",
+        "Eksperckie treści dla dłuższej decyzji i pytań przed zakupem.",
+        "Strona docelowa i pomiar jako wspólny element każdego kanału."
       ],
-      "href": "/uslugi/marketing-internetowy",
-      "link": "Poznaj plan działań marketingowych"
+      href: "/uslugi/marketing-internetowy",
+      link: "Poznaj plan działań marketingowych"
     },
     {
-      "title": "Dla kogo jest nasza agencja digital marketingu",
-      "text": "Współpraca z agencją ma sens, gdy marketing internetowy przestał być dodatkiem, a w firmie brakuje czasu na regularne wykonanie prac. Zakres można dopasować do właściciela firmy usługowej, sklepu, działu marketingu potrzebującego produkcji treści albo organizatora wydarzenia. W każdym przypadku potrzebne są inne materiały, kanały i sposób obsługi zapytań. Przed przygotowaniem oferty ustalamy, co jest najważniejsze dla Twojego biznesu i jakie zadania możesz realizować samodzielnie.",
-      "points": [
-        "Firma usługowa, która chce generować zapytania z Google i z reklam, a nie tylko polubienia.",
-        "Właściciel sklepu internetowego, który potrzebuje porządku w strukturze, opisach i kampaniach produktowych.",
-        "Zespół marketingu, który ma strategię, ale brakuje mu rąk do produkcji treści i prowadzenia kampanii.",
-        "Organizacja, która zmienia stronę i chce przenieść dotychczasową widoczność bez utraty ruchu."
+      title: "SEO, audyt SEO i treści do wyników wyszukiwania",
+      text: "W zakresie SEO oceniamy technikę, strukturę, treści i sposób prezentowania oferty. Audyt SEO kończy się listą problemów, priorytetów i odpowiedzialności za wdrożenie, a nie samym wykresem pozycji. Działania SEO obejmują optymalizację istniejących stron, plan nowych treści oraz linkowanie wewnętrzne. SEO i content marketing pomagają odpowiadać na pytania użytkowników, natomiast SEO dla e-commerce wymaga pracy nad kategoriami, produktami i filtrami. Widoczność w wynikach wyszukiwania oceniamy wraz z wejściami na ofertę i kontaktami. SEO AI nie jest gwarancją obecności w odpowiedziach modeli; pomagają tu rzetelne, jednoznaczne informacje i spójna struktura strony.",
+      points: [
+        "Słowa kluczowe grupujemy według intencji i etapu decyzji.",
+        "Specjalista SEO wskazuje zmiany, a wdrożenie wymaga przypisanego wykonawcy.",
+        "SEO i content planujemy pod realne pytania oraz ofertę firmy.",
+        "Nie gwarantujemy pozycji, terminu efektu ani liczby klientów."
+      ],
+      href: "/seo",
+      link: "Zobacz zakres usług SEO"
+    },
+    {
+      title: "Kampanie Google Ads, SEM i reklama w social media",
+      text: "Płatna kampania reklamowa ma przypisany cel, odbiorców, komunikat, stronę docelową i budżet. Kampanie Google Ads oraz kampanie PPC w wyszukiwarce Google mogą odpowiadać na istniejące zapotrzebowanie. W Google Ads analizujemy zapytania i dopasowanie oferty, a Facebook Ads i reklamy na Instagramie pomagają dotrzeć do osób wybranych według dostępnych w platformie kryteriów. SEM jest szerszym obszarem niż jedno konto reklamowe: SEO i SEM oraz SEO i PPC warto koordynować, ale raportować osobno. Optymalizacja kampanii obejmuje analizę zapytań, kreacji, kosztów i konwersji. Nie obiecujemy sprzedaży przed zebraniem danych, a rekomendację budżetu uzgadniamy przed zmianą emisji. Płatny kanał nie zastąpi niejasnej oferty ani sprawnego kontaktu.",
+      points: [
+        "Oddzielamy koszt obsługi, produkcję kreacji i budżet reklamowy.",
+        "Testy dotyczą konkretnej hipotezy, komunikatu lub grupy docelowej.",
+        "Płatny ruch kierujemy do strony zgodnej z treścią reklamy.",
+        "Zarządzanie kampaniami reklamowymi wymaga dostępu do danych i akceptacji zmian."
+      ],
+      href: "/performance-marketing/google-ads",
+      link: "Sprawdź obsługę kampanii Google Ads"
+    },
+    {
+      title: "Content marketing i produkcja materiałów dla marki",
+      text: "Content marketing dostarcza argumentów potrzebnych przed kontaktem lub zakupem. Piszemy teksty ofertowe i artykuły, projektujemy grafiki oraz produkujemy zdjęcia i filmy do stron, kampanii reklamowych i mediów społecznościowych. Media społecznościowe wymagają własnego planu publikacji i formatów dopasowanych do Twojej marki. Plan uwzględnia relacje z klientami, pytania z rozmów sprzedażowych i sposób korzystania z treści po publikacji. Jeden dzień produkcji może dostarczyć materiały do różnych kanałów, jeśli wcześniej ustalimy scenariusz, kadry, formaty i prawa do wykorzystania. Dzięki temu SEO i content korzystają z tych samych, prawdziwych zasobów co reklama. Nie tworzymy fikcyjnych opinii, realizacji ani obietnic wizerunkowych.",
+      href: "/content-marketing/strategia",
+      link: "Poznaj content marketing i strategię treści"
+    },
+    {
+      title: "Kompleksowa agencja digital — jak łączymy obszary marketingu",
+      text: "Kompleksowe podejście nie oznacza obowiązku kupowania wszystkich usług. Kompleksowa agencja powinna zadbać o spójność: reklama, strona internetowa, treści i rozmowa sprzedażowa nie mogą przedstawiać różnych wersji oferty. Kompleksowy plan marketingowy przypisuje zadania poszczególnym obszarom marketingu, a kompleksowy zakres pozostawia przy tym jasne granice odpowiedzialności. W zakresie marketingu cyfrowego łączymy produkcję z pracą nad miejscem docelowym. Agencja digital marketingu może prowadzić jeden priorytetowy projekt, a kolejne elementy zakresu marketingu internetowego dodawać po sprawdzeniu założeń. Taki model ogranicza rozproszenie budżetu. Strona internetowa, kampania i materiały mają wspólny cel, ale każdy element odbieramy według uzgodnionych kryteriów.",
+      href: "/uslugi",
+      link: "Przejrzyj usługi FOTZ Studio"
+    },
+    {
+      title: "Jak wygląda współpraca z agencją marketingu internetowego?",
+      text: "Współpraca z agencją marketingu internetowego zaczyna się od briefu i diagnozy, nie od automatycznego pakietu. Ustalamy, czego potrzebuje Twoja firma, jakie dane i materiały są dostępne oraz kto podejmuje decyzje. Po akceptacji planu przechodzimy do produkcji lub wdrożenia. Podczas współpracy z agencją marketingu internetowego wiesz, co jest w realizacji, co czeka na Twoje materiały i które działania wymagają decyzji. Prace zdalne prowadzimy online, a produkcję w Poznaniu lub innej lokalizacji ustalamy przed terminem.",
+      points: [
+        "Brief: oferta, odbiorcy, cele biznesowe, rynek i dotychczasowe działania.",
+        "Plan: kanały, rezultaty, harmonogram, odpowiedzialności i wycena.",
+        "Realizacja: treści, produkcja, wdrożenia i akceptacje przed publikacją.",
+        "Raport: dane, jakość leadów, wnioski i rekomendowany następny krok."
+      ],
+      href: "/blog/jak-napisac-brief-marketingowy",
+      link: "Jak przygotować brief marketingowy"
+    },
+    {
+      title: "Pomiar leadów, konwersji i jakości zapytań",
+      text: "Skutecznego marketingu nie oceniamy wyłącznie po zasięgu, wyświetleniach lub liczbie publikacji. Najpierw definiujemy działanie potencjalnego klienta: wysłanie formularza, rozpoczęcie kontaktu, zakup albo rezerwację. Konfiguracja zależy od strony, dostępów i prawnie wymaganych zgód. Następnie łączymy źródło ruchu z informacją, czy zapytanie było zgodne z ofertą i jak zakończyła się obsługa sprzedaży. Konwersja na stronie nie jest jeszcze klientem, więc raport rozrównia zdarzenie, lead, wartościowe zapytanie i sprzedaż potwierdzoną przez firmę. Braki w danych oznaczamy zamiast przypisywać kampanii niepotwierdzony wynik.",
+      points: [
+        "Źródła organiczne i płatne analizujemy osobno i we wspólnym kontekście.",
+        "Jakość leadów oceniamy według kryteriów ustalonych z Twoją firmą.",
+        "Koszt kontaktu zestawiamy z budżetem i możliwością obsługi zapytań.",
+        "Optymalizacja wynika z danych, a nie z samej zmiany wykresu."
       ]
     },
     {
-      "title": "Kompleksowy marketing zamiast osobnych zleceń",
-      "text": "Kompleksowa agencja nie musi robić wszystkiego naraz. Kompleksowe podejście oznacza, że reklama w wyszukiwarce, treści SEO, posty na profilach firmy i strona docelowa opowiadają tę samą historię i mierzą ten sam cel. Gdy reklama obiecuje coś innego niż strona, konwersja spada niezależnie od budżetu. Dlatego przed startem płatnych działań sprawdzamy, czy oferta jest zrozumiała, czy formularz działa na telefonie i czy pomiar rejestruje kontakty. Część zadań możemy prowadzić stale, a część — jak audyt, nagranie filmu czy nowa podstrona — zamknąć jako osobny projekt.",
-      "href": "/uslugi",
-      "link": "Przejrzyj wszystkie usługi"
+      title: "Budżet marketingowy i warunki współpracy bez sztywnych cen",
+      text: "Koszt marketingu internetowego zależy od wybranych kanałów, skali strony, liczby treści, produkcji, wdrożeń i czasu pracy zespołu specjalistów. Przy szerszym zakresie zespół specjalistów i odpowiedzialności wskazujemy w ofercie. Nie stosujemy na tej stronie sztywnych cen ani uniwersalnych pakietów. Rozdzielamy strategię, przygotowanie materiałów, stałą obsługę, prace techniczne i budżet reklamowy płacony dostawcy emisji. Możesz zlecić pojedynczy projekt albo cykliczne działania marketingowe. Warunki współpracy określają zakres, harmonogram, akceptacje, poprawki, komunikację, dostęp do kont oraz przekazanie materiałów. Współpraca może obejmować projekt lub stały zakres, a czas trwania umowy i zasady jej zakończenia zapisujemy indywidualnie przed startem.",
+      points: [
+        "Twoje konto reklamowe i analityka pozostają pod kontrolą firmy.",
+        "Dodatkowe prace i koszty wymagają akceptacji przed realizacją.",
+        "Terminy zależą także od dostarczenia materiałów i zebrania uwag.",
+        "Po zakończeniu przekazujemy rezultaty przewidziane w ustalonym zakresie."
+      ]
     },
     {
-      "title": "Jak wygląda współpraca z agencją marketingu internetowego",
-      "text": "Współpraca z agencją marketingu internetowego FOTZ Studio przebiega według uzgodnionego zakresu. Ustalamy zadania, terminy, sposób akceptacji i odpowiedzialność po obu stronach. Pracujemy zdalnie; spotkania oraz nagrania odbywają się w uzgodnionym miejscu. Adres rejestrowy firmy to Poznańska 117/11, 62-023 Kamionki. Nie prowadzimy publicznego biura ani oddziałów do spontanicznych wizyt.",
-      "points": [
-        "Rozmowa i brief: cel, oferta, odbiorcy, dotychczasowe działania, budżet i termin.",
-        "Diagnoza: przegląd strony, kont reklamowych, profili i danych z analityki.",
-        "Plan: zakres zadań, podział odpowiedzialności, harmonogram i kryteria odbioru.",
-        "Wdrożenie: produkcja treści, poprawki na stronie, konfiguracja i prowadzenie kampanii.",
-        "Raport i optymalizacja: co zrobiliśmy, co pokazują dane i jaki jest następny krok."
+      title: "Wybór agencji marketingu internetowego — na co zwrócić uwagę?",
+      text: "Wybór agencji warto oprzeć na zakresie i sposobie pracy, a nie na samej nazwie. Aby wybrać odpowiednią agencję marketingu internetowego, porównaj konkretne odpowiedzi na te same pytania. Dobra agencja marketingowa wyjaśnia, co zrobi najpierw, kto odpowiada za realizację i jak oceni jakość kontaktów. Skuteczna agencja nie gwarantuje wyniku, którego nie kontroluje. Profesjonalna agencja digital i profesjonalna agencja SEO powinny jasno opisać ograniczenia oraz wdrożenia. Zapytaj, co oferuje agencja we własnym zespole i jakie kompetencje agencja posiada. Firmę specjalizującą się w marketingu oceń po zakresie, nie po etykiecie. Jeśli chcesz wybrać agencję SEO, sprawdź, czy agencja SEO będzie dobrym partnerem dla Twojego modelu sprzedaży i kto wdroży zalecenia. Specjaliści od SEO powinni wskazać wykonawcę zmian, a doświadczona agencja marketingowa — omówić proces bez ukrywania ograniczeń.",
+      points: [
+        "Czy dana agencja rozumie odbiorców i potrafi opisać drogę do zakupu?",
+        "Czy oferta rozdziela strategię, treści, produkcję, reklamę i emisję?",
+        "Czy raport pokazuje leady oraz ich jakość, a nie tylko zasięg?",
+        "Czy znasz zasady akceptacji, własności kont i zakończenia prac?",
+        "Czy agencja reklamowa lub agencja interaktywna ma zakres potrzebny Twojej firmie?"
       ],
-      "href": "/blog/jak-napisac-brief-marketingowy",
-      "link": "Jak przygotować brief marketingowy"
+      href: "/blog/jak-wybrac-agencje-marketingowa",
+      link: "Przeczytaj, jak wybrać agencję marketingową"
     },
     {
-      "title": "SEO, SEM i kampania reklamowa w jednym planie",
-      "text": "Czy jedna agencja może prowadzić pozycjonowanie i reklamy jednocześnie? Tak, i często to upraszcza pracę. Dane z kampanii PPC pokazują, które zapytania przynoszą kontakty, więc strategie SEO mogą skupić się na frazach o realnej wartości. Z kolei dobrze opisane podstrony obniżają ryzyko, że płatny ruch trafi na stronę bez odpowiedzi. SEO i SEM różnią się jednak tempem: reklama może zacząć działać po zatwierdzeniu, a efekty SEO zwykle wymagają dłuższej pracy nad treściami i techniką. Nie gwarantujemy pierwszego miejsca w wyszukiwarce Google — nikt nie kontroluje algorytmu — ale możemy pokazać plan, który usuwa przeszkody i rozwija treści pod pytania klientów. Audyt SEO, poprawki techniczne, treści i prowadzenie kampanii wymagają osobno ustalonego zakresu. Nie są automatycznie częścią podstawowego abonamentu. Najpierw sprawdzamy dostępne dane, zasoby i to, kto będzie odpowiedzialny za wdrożenie.",
-      "points": [
-        "Słowa kluczowe dobieramy według intencji: informacyjnej, porównawczej i zakupowej.",
-        "Płatna kampania w Google pomaga sprawdzić komunikat, zanim powstanie rozbudowana treść SEO.",
-        "SEO dla e-commerce obejmuje strukturę kategorii, filtry, opisy produktów i duplikację.",
-        "Optymalizacja techniczna: szybkość, indeksowanie, dane strukturalne i linkowanie wewnętrzne."
-      ],
-      "href": "/seo",
-      "link": "Zobacz zakres usług SEO"
-    },
-    {
-      "title": "Content marketing i materiały, które produkujemy sami",
-      "text": "Wiele firm ma pomysł na content marketing, ale brakuje im materiałów. Tu wyróżnia nas własna produkcja: robimy zdjęcia, filmy i ujęcia z drona, piszemy teksty i projektujemy grafiki do reklam. Dzięki temu SEO i content mogą korzystać z tych samych zdjęć i nagrań, co kampanie reklamowe i social media. Przed produkcją ustalamy, gdzie materiał zostanie opublikowany, w jakich formatach i w ilu wersjach. Taka organizacja ogranicza dodatkowe dni zdjęciowe i pozwala testować różne kreacje w tej samej kampanii.",
-      "href": "/content-marketing/strategia",
-      "link": "Content marketing"
-    },
-    {
-      "title": "Wybór agencji: na co zwrócić uwagę",
-      "text": "Wybór agencji warto oprzeć na pytaniach o proces, a nie o nazwy pakietów. Dobra agencja marketingowa potrafi wyjaśnić, co zrobi w pierwszym miesiącu, kto u niej odpowiada za Twoje konto i jak oceni efekt. Zanim uznasz, że to odpowiednia agencja marketingu internetowego, porównaj odpowiedzi kilku wykonawców na te same pytania. Jeśli szukasz wyłącznie wykonawcy do pozycjonowania, sprawdź, czy agencja SEO będzie dobrym wyborem przy Twoim modelu sprzedaży — czasem lepiej połączyć SEO z reklamą i pracą nad stroną. Gdy chcesz wybrać agencję SEO, zapytaj, kto konkretnie wykona audyt i czy specjaliści od SEO mają wpływ na treści oraz technikę strony. Skuteczna agencja nie obiecuje wyników z góry, tylko pokazuje, jak będzie je mierzyć. Doświadczoną agencję marketingową poznasz po pytaniach, które zadaje na pierwszym spotkaniu, a nie po liczbie logotypów na stronie.",
-      "points": [
-        "Co oferuje agencja we własnym zespole, a co zleca podwykonawcom?",
-        "Czy dana agencja pokazuje realizacje podobne do Twojego projektu i opisuje swoją rolę w nich?",
-        "Kto jest właścicielem kont reklamowych, analityki i plików po zakończeniu współpracy?",
-        "Jak oddzielony jest koszt obsługi od budżetu płatnych kampanii?",
-        "Jak wygląda raport: lista wykonanych zadań, dane i rekomendacje, czy tylko wykresy zasięgu?"
-      ],
-      "href": "/blog/jak-wybrac-agencje-marketingowa",
-      "link": "Poradnik: jak wybrać agencję marketingową"
-    },
-    {
-      "title": "Realizacje naszej agencji",
-      "text": "Realizacje pomagają ocenić sposób pracy agencji przed rozmową. W portfolio FOTZ Studio znajdziesz fotografie Enea Stadionu, wnętrza Gierky oraz projekty stron FPS Poznań, RPPG i Klagem. To przykłady wykonanych materiałów, a nie obietnica wyników Twojej kampanii. Przy rozmowie wybieramy projekty pasujące do potrzeb: prezentacji miejsca, produktu, wydarzenia lub oferty na stronie internetowej.",
-      "href": "/realizacje",
-      "link": "Zobacz realizacje"
-    },
-    {
-      "title": "Pomiar, raport i dalsze decyzje",
-      "text": "Skutecznego marketingu nie oceniamy wyłącznie po liczbie publikacji lub zasięgu. Ustalamy, co ma zrobić odbiorca: wysłać formularz, zadzwonić, kupić albo zapisać się. W podsumowaniu pokazujemy wykonane prace i dane, do których mamy dostęp. Wartościowe zapytania, rozmowy sprzedażowe, wysłane oferty i płatności porównujemy z informacjami po stronie firmy. Kliknięcie telefonu nie oznacza odbytej rozmowy, a wysłany formularz nie oznacza pozyskanego klienta. Przy ocenie kampanii rozdzielamy koszt emisji, obsługi i produkcji. Dalsze decyzje zależą od jakości kontaktów, kosztów, marży i możliwości obsługi nowych klientów. Ewentualne zwiększenie budżetu wymaga osobnego uzgodnienia. Jeśli danych brakuje, zapisujemy tę lukę zamiast przypisywać marketingowi niepotwierdzoną sprzedaż."
+      title: "Dla kogo są usługi marketingu internetowego FOTZ Studio?",
+      text: "Nasza agencja marketingu internetowego pracuje z firmami, które potrzebują uporządkowanego planu lub wykonawców do konkretnego etapu. Firma usługowa może chcieć generować zapytania z Google, zespół B2B — przygotować treści wspierające dłuższą sprzedaż, a właściciel sklepu internetowego — poprawić kategorie, materiały produktowe i kampanie. Nie każda organizacja potrzebuje agencji digital ani każdego kanału. Czasem wystarczy audyt, poprawa strony albo jednorazowa produkcja, a zakres prac naszej agencji SEO można oddzielić od pozostałych działań. Usługi możemy oferować jako projekt lub stałą obsługę. Marketing internetowy i działania promocyjne mają sens, gdy odpowiadają na rzeczywisty problem, a firma potrafi obsłużyć kontakty. Kompleksowy marketing online nie musi obejmować wszystkich kanałów jednocześnie.",
+      points: [
+        "Firmy usługowe i B2B: oferta, widoczność, leady i wsparcie sprzedaży.",
+        "E-commerce: struktura sklepu, treści produktowe i płatne kampanie.",
+        "Zespoły marketingu: produkcja materiałów lub dodatkowe kompetencje.",
+        "Nowe oferty: komunikat, strona docelowa i plan sprawdzenia kanałów."
+      ]
     }
   ],
-  "faqs": [
+  faqTitle: "Agencja marketingu internetowego — pytania i odpowiedzi",
+  faqs: [
     {
-      "question": "Czy 3 000 zł obejmuje reklamy i nagrania?",
-      "answer": "Zakres podstawowy obejmuje opisane treści na dostępnych materiałach, publikację, drobną aktualizację i podsumowanie. Nową produkcję oraz prowadzenie kampanii wyceniamy osobno. Budżet płacony platformie reklamowej również jest osobną pozycją."
+      question: "Czym jest agencja marketingu internetowego i co może dla mnie zrobić?",
+      answer: "Agencja marketingu internetowego zajmuje się planowaniem i wykonywaniem uzgodnionych działań promocyjnych w kanałach cyfrowych. Może przygotować strategię, treści, SEO, reklamy i materiały oraz pomóc w pomiarze. Zakres naszej agencji ustalamy po poznaniu oferty, odbiorców i problemu, którego dotyczy projekt."
     },
     {
-      "question": "Czy muszę mieć gotową strategię?",
-      "answer": "Nie. Do pierwszej rozmowy wystarczy adres strony lub profilu i opis potrzeby. Szczegółowy audyt lub strategię, jeżeli będą potrzebne, ustalimy jako osobny zakres."
+      question: "Czy muszę zlecić SEO, treści i reklamy jednocześnie?",
+      answer: "Nie. SEO, content marketing i kampanie reklamowe mają różne role, tempo oraz wymagane zasoby. Możemy zacząć od jednego priorytetu lub pojedynczego projektu. Jeśli kanały mają współpracować, zapisujemy wspólny cel i sposób wymiany wniosków, ale osobno określamy zakres każdej usługi."
     },
     {
-      "question": "Czy gwarantujecie liczbę klientów?",
-      "answer": "Nie obiecujemy konkretnej liczby sprzedaży. Ustalamy zakres pracy i mierniki, a wyniki oceniamy również w kontekście oferty, budżetu i obsługi zapytań po Twojej stronie."
+      question: "Ile kosztuje współpraca z agencją marketingową?",
+      answer: "Wycena zależy od strategii, liczby kanałów, treści, produkcji, wdrożeń i skali prowadzenia kampanii. Przed startem otrzymujesz zakres z rozdzielonymi kosztami pracy oraz emisji reklam. Nie podajemy sztywnego cennika bez poznania potrzeb, ponieważ ten sam budżet może wymagać innego podziału w różnych firmach."
     },
     {
-      "question": "Jak wygląda kontakt i akceptacja?",
-      "answer": "Przed startem ustalamy osobę decyzyjną, terminy przekazania materiałów i zebrania uwag. Zakres podstawowy obejmuje jedną zbiorczą rundę uwag do partii materiałów oraz miesięczną rozmowę do 30 minut. Zmiany wychodzące poza zakres wymagają osobnego uzgodnienia."
+      question: "Jak rozpocząć współpracę i jakie dostępy są potrzebne?",
+      answer: "Na pierwszą rozmowę przygotuj opis oferty, odbiorców i celu oraz adres strony lub profili. Dostępy dobramy do uzgodnionych prac; nie musisz przekazywać wszystkiego na początku. Przed realizacją ustalimy właścicieli kont, sposób udostępnienia, osoby akceptujące i informacje potrzebne do pomiaru."
     },
     {
-      "question": "Czy pracujecie wyłącznie w Poznaniu?",
-      "answer": "Pracujemy z firmami z Poznania i zdalnie. Produkcję na miejscu oraz ewentualny dojazd ustalamy i wyceniamy przed rozpoczęciem projektu."
+      question: "Jak długa jest umowa i kiedy można zakończyć współpracę?",
+      answer: "Model zależy od zadania. Audyt lub produkcję można zorganizować jako projekt, a regularne działania jako obsługę cykliczną. Okres współpracy, terminy rozliczeń, wypowiedzenie i sposób przekazania materiałów zapisujemy w warunkach przed rozpoczęciem. Nie narzucamy jednego okresu umowy wszystkim firmom."
     },
     {
-      "question": "Czym zajmuje się agencja marketingu internetowego?",
-      "answer": "Agencja marketingu internetowego planuje i wykonuje uzgodnione działania w kanałach cyfrowych: treści na stronie, materiały, publikacje w mediach społecznościowych oraz kampanie reklamowe. Zakres zależy od celu firmy, budżetu i dostępnych zasobów. Nie każda współpraca musi obejmować wszystkie kanały."
+      question: "Czy gwarantujecie pozycje w Google lub liczbę leadów?",
+      answer: "Nie gwarantujemy pozycji, określonej liczby leadów ani sprzedaży. Na wynik wpływają między innymi konkurencja, oferta, budżet, sezonowość, wdrożenia i obsługa zapytań. Ustalamy natomiast zakres pracy, kryteria odbioru, dostępne mierniki i sposób raportowania jakości kontaktów."
     },
     {
-      "question": "Czy SEO i kampanie Google Ads są częścią abonamentu?",
-      "answer": "Nie wchodzą automatycznie do zakresu za 3 000 zł netto. Diagnozę SEO, treści, wdrożenia oraz prowadzenie kampanii rozpisujemy jako osobne prace. Budżet płacony platformie za reklamę również jest oddzielną pozycją."
+      question: "Po jakim czasie można ocenić efekty działań?",
+      answer: "Tempo zależy od kanału i punktu wyjścia. Opublikowaną stronę lub formularz można sprawdzić technicznie od razu, kampania potrzebuje danych o emisji i kontaktach, a SEO wymaga czasu na przetworzenie zmian przez wyszukiwarkę. Harmonogram oceny ustalamy bez obiecywania terminu sprzedaży."
     },
     {
-      "question": "Czy można zamówić tylko stronę lub materiały do kampanii?",
-      "answer": "Tak. Możesz zlecić pojedynczy projekt: stronę, zdjęcia, film lub uzgodniony zakres komunikacji. Stała obsługa ma sens wtedy, gdy potrzebujesz regularnego wykonania prac. Przed startem ustalamy koszt, terminy, poprawki i sposób przekazania materiałów."
+      question: "Czy pracujecie tylko z firmami z Poznania?",
+      answer: "Nie. Współpracę z agencją prowadzimy zdalnie z firmami z Polski: brief, akceptacje i raporty organizujemy online. Zdjęcia lub nagrania na miejscu planujemy osobno, z uwzględnieniem lokalizacji, terminu i logistyki. Nie deklarujemy lokalnych biur, z których nie prowadzimy obsługi."
     },
     {
-      "question": "Jak przygotować zapytanie do agencji?",
-      "answer": "Opisz ofertę, odbiorców i cel. Dołącz adres strony i profili firmowych oraz orientacyjny budżet na obsługę. Budżet reklamowy podaj oddzielnie. Jeśli nie masz gotowego planu, wskaż problem: brak regularnych treści, niespójną komunikację lub trudność w zamianie zainteresowania w zapytania."
+      question: "Czy mogę zamówić tylko strategię albo produkcję materiałów?",
+      answer: "Tak. Możesz zlecić audyt, strategię, teksty, zdjęcia, film, grafiki albo inny uzgodniony projekt bez uruchamiania wszystkich kanałów. W ofercie określimy rezultat, materiały wejściowe, poprawki i sposób przekazania plików. Jeśli potrzebny będzie szerszy zakres, omówimy go jako osobną decyzję."
     }
   ],
-  "contactDescription": "Napisz, co oferujesz, do kogo chcesz dotrzeć i co dziś zabiera Ci najwięcej czasu w marketingu. Dobierzemy zakres dla Twojej firmy.",
-  "workAfterScope": true
+  contactDescription: "Opisz ofertę, odbiorców, cel i orientacyjny budżet. Budżet reklamowy wskaż osobno od środków na treści i obsługę. Na tej podstawie ustalimy potrzebny zakres, odpowiedzialności i sposób pomiaru.",
+  workAfterScope: true
 };
 
 export default function AgencjaMarketinguInternetowego() {
   return <>
-    <SEOHead title="Agencja marketingu internetowego – stała obsługa | FOTZ" description="Agencja marketingu internetowego FOTZ Studio. Stała obsługa od 3 000 zł netto: plan, treści i publikacja. Produkcja, SEO i kampanie wyceniane osobno." canonical="https://www.fotz-studio.pl/agencja-marketingu-internetowego" />
+    <SEOHead title={seoTitle} description={seoDescription} canonical={canonicalUrl} />
     <ServiceEditorial {...content} />
   </>;
 }
