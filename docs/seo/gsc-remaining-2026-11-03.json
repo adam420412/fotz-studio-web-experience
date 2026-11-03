@@ -1,0 +1,1034 @@
+{
+  "date": "2026-11-03",
+  "source": {
+    "name": "Google Search Console",
+    "export": "analysis/gsc-remaining-28d.json",
+    "period": {
+      "from": "2026-10-05",
+      "to": "2026-11-01",
+      "days": 28
+    }
+  },
+  "pages": [
+    {
+      "page": "https://www.fotz-studio.pl/seo/pozycjonowanie-lodz",
+      "charts": [
+        "5.10.2026\n7.10.2026\n9.10.2026\n11.10.2026\n13.10.2026\n15.10.2026\n17.10.2026\n19.10.2026\n21.10.2026\n23.10.2026\n25.10.2026\n27.10.2026\n29.10.2026\n31.10.2026\n3\n2\n1\n0\n12\n8\n4\n0\nWykres, który pokazuje dane Łączna liczba kliknięć, Łączna liczba wyświetleń, Średni CTR i Średnia pozycja z okresu od 5 października 2026 do 1 listopada 2026"
+      ],
+      "striking": [],
+      "topRows": [
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "51",
+          "position": "88,6",
+          "positionNumber": 88.6,
+          "query": "pozycjonowanie stron łódź"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "30",
+          "position": "93,5",
+          "positionNumber": 93.5,
+          "query": "pozycjonowanie łódź"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "14",
+          "position": "89,8",
+          "positionNumber": 89.8,
+          "query": "pozycjonowanie lokalne łódź"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "7",
+          "position": "63,1",
+          "positionNumber": 63.1,
+          "query": "pozycjonowanie sklepu łódź"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "7",
+          "position": "67,3",
+          "positionNumber": 67.3,
+          "query": "agencja seo łódź"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "7",
+          "position": "88,3",
+          "positionNumber": 88.3,
+          "query": "pozycjonowanie sklepu internetowego łódź"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "4",
+          "position": "72,0",
+          "positionNumber": 72,
+          "query": "pozycjonowanie lodz"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "4",
+          "position": "85,5",
+          "positionNumber": 85.5,
+          "query": "łódź pozycjonowanie"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "4",
+          "position": "93,2",
+          "positionNumber": 93.2,
+          "query": "pozycjonowanie www łódź"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "3",
+          "position": "46,0",
+          "positionNumber": 46,
+          "query": "agencja pozycjonowanie łódź"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "2",
+          "position": "88,5",
+          "positionNumber": 88.5,
+          "query": "pozycjonowanie strony łódź"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "2",
+          "position": "90,5",
+          "positionNumber": 90.5,
+          "query": "skuteczne pozycjonowanie łódź"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "2",
+          "position": "129,0",
+          "positionNumber": 129,
+          "query": "pozycjonowanie stron www łódź"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "68,0",
+          "positionNumber": 68,
+          "query": "pozycjonowanie sklepów łódź"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "84,0",
+          "positionNumber": 84,
+          "query": "szkolenie seo łódź"
+        }
+      ],
+      "totalRows": 15,
+      "totals": [
+        "\nŁączna liczba kliknięć\n0",
+        "\nŁączna liczba wyświetleń\n141",
+        "Średni CTR\n0%",
+        "Średnia pozycja\n86"
+      ],
+      "url": "https://search.google.com/search-console/performance/search-analytics?resource_id=sc-domain%3Afotz-studio.pl&hl=pl&breakdown=query&num_of_days=28&page=!https%3A%2F%2Fwww.fotz-studio.pl%2Fseo%2Fpozycjonowanie-lodz"
+    },
+    {
+      "page": "https://www.fotz-studio.pl/uslugi/strony-internetowe/torun",
+      "charts": [
+        "5.10.2026\n7.10.2026\n9.10.2026\n11.10.2026\n13.10.2026\n15.10.2026\n17.10.2026\n19.10.2026\n21.10.2026\n23.10.2026\n25.10.2026\n27.10.2026\n29.10.2026\n31.10.2026\n3\n2\n1\n0\n24\n16\n8\n0\nWykres, który pokazuje dane Łączna liczba kliknięć, Łączna liczba wyświetleń, Średni CTR i Średnia pozycja z okresu od 5 października 2026 do 1 listopada 2026"
+      ],
+      "striking": [],
+      "topRows": [
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "16",
+          "position": "50,5",
+          "positionNumber": 50.5,
+          "query": "tworzenie stron internetowych toruń"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "15",
+          "position": "50,5",
+          "positionNumber": 50.5,
+          "query": "projektowanie stron internetowych toruń"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "15",
+          "position": "72,7",
+          "positionNumber": 72.7,
+          "query": "projektowanie stron www toruń"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "14",
+          "position": "64,0",
+          "positionNumber": 64,
+          "query": "strony internetowe toruń"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "8",
+          "position": "65,4",
+          "positionNumber": 65.4,
+          "query": "tworzenie stron toruń"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "6",
+          "position": "67,8",
+          "positionNumber": 67.8,
+          "query": "tworzenie stron www toruń"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "5",
+          "position": "27,8",
+          "positionNumber": 27.8,
+          "query": "projektowanie stron toruń"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "3",
+          "position": "60,3",
+          "positionNumber": 60.3,
+          "query": "zakładanie stron internetowych toruń"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "2",
+          "position": "26,0",
+          "positionNumber": 26,
+          "query": "projekty stron internetowych warszawa"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "2",
+          "position": "27,5",
+          "positionNumber": 27.5,
+          "query": "profesjonalne strony internetowe gdańsk"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "2",
+          "position": "72,5",
+          "positionNumber": 72.5,
+          "query": "strony www toruń"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "2",
+          "position": "82,0",
+          "positionNumber": 82,
+          "query": "pozycjonowanie stron toruń"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "2",
+          "position": "83,0",
+          "positionNumber": 83,
+          "query": "tworzenie stron www torun"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "2",
+          "position": "91,0",
+          "positionNumber": 91,
+          "query": "tworzenie stron internetowych torun"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "7,0",
+          "positionNumber": 7,
+          "query": "toruń projektowanie stron"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "10,0",
+          "positionNumber": 10,
+          "query": "projekty sklepów toruń"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "27,0",
+          "positionNumber": 27,
+          "query": "firmy projektujące strony internetowe w toruniu"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "28,0",
+          "positionNumber": 28,
+          "query": "profesjonalne strony internetowe poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "70,0",
+          "positionNumber": 70,
+          "query": "ile kosztuje strona internetowa bydgoszcz"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "74,0",
+          "positionNumber": 74,
+          "query": "firma projektująca strony internetowe toruń"
+        }
+      ],
+      "totalRows": 22,
+      "totals": [
+        "\nŁączna liczba kliknięć\n0",
+        "\nŁączna liczba wyświetleń\n107",
+        "Średni CTR\n0%",
+        "Średnia pozycja\n57,7"
+      ],
+      "url": "https://search.google.com/search-console/performance/search-analytics?resource_id=sc-domain%3Afotz-studio.pl&hl=pl&breakdown=query&num_of_days=28&page=!https%3A%2F%2Fwww.fotz-studio.pl%2Fuslugi%2Fstrony-internetowe%2Ftorun"
+    },
+    {
+      "page": "https://www.fotz-studio.pl/kampanie-reklamowe",
+      "charts": [
+        "5.10.2026\n7.10.2026\n9.10.2026\n11.10.2026\n13.10.2026\n15.10.2026\n17.10.2026\n19.10.2026\n21.10.2026\n23.10.2026\n25.10.2026\n27.10.2026\n29.10.2026\n31.10.2026\n3\n2\n1\n0\n3\n2\n1\n0\nWykres, który pokazuje dane Łączna liczba kliknięć, Łączna liczba wyświetleń, Średni CTR i Średnia pozycja z okresu od 5 października 2026 do 1 listopada 2026"
+      ],
+      "striking": [],
+      "topRows": [],
+      "totalRows": 0,
+      "totals": [
+        "\nŁączna liczba kliknięć\n0",
+        "\nŁączna liczba wyświetleń\n0",
+        "Średni CTR\n0%",
+        "Średnia pozycja\n0"
+      ],
+      "url": "https://search.google.com/search-console/performance/search-analytics?resource_id=sc-domain%3Afotz-studio.pl&hl=pl&breakdown=query&num_of_days=28&page=!https%3A%2F%2Fwww.fotz-studio.pl%2Fkampanie-reklamowe"
+    },
+    {
+      "page": "https://www.fotz-studio.pl/kampanie-reklamowe-poznan",
+      "charts": [
+        "5.10.2026\n7.10.2026\n9.10.2026\n11.10.2026\n13.10.2026\n15.10.2026\n17.10.2026\n19.10.2026\n21.10.2026\n23.10.2026\n25.10.2026\n27.10.2026\n29.10.2026\n31.10.2026\n3\n2\n1\n0\n6\n4\n2\n0\nWykres, który pokazuje dane Łączna liczba kliknięć, Łączna liczba wyświetleń, Średni CTR i Średnia pozycja z okresu od 5 października 2026 do 1 listopada 2026"
+      ],
+      "striking": [
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "3",
+          "position": "16,0",
+          "positionNumber": 16,
+          "query": "facebook ads poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "11,0",
+          "positionNumber": 11,
+          "query": "agencja facebook poznań"
+        }
+      ],
+      "topRows": [
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "7",
+          "position": "93,6",
+          "positionNumber": 93.6,
+          "query": "google ads poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "6",
+          "position": "100,3",
+          "positionNumber": 100.3,
+          "query": "adwords poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "5",
+          "position": "95,0",
+          "positionNumber": 95,
+          "query": "linki sponsorowane poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "5",
+          "position": "99,8",
+          "positionNumber": 99.8,
+          "query": "google adwords poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "4",
+          "position": "27,2",
+          "positionNumber": 27.2,
+          "query": "agencja google ads poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "3",
+          "position": "16,0",
+          "positionNumber": 16,
+          "query": "facebook ads poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "2",
+          "position": "23,5",
+          "positionNumber": 23.5,
+          "query": "kampanie facebook ads poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "2",
+          "position": "30,0",
+          "positionNumber": 30,
+          "query": "kampanie reklamowe google poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "2",
+          "position": "73,5",
+          "positionNumber": 73.5,
+          "query": "kampanie reklamowe poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "11,0",
+          "positionNumber": 11,
+          "query": "agencja facebook poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "43,0",
+          "positionNumber": 43,
+          "query": "spoty reklamowe poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "75,0",
+          "positionNumber": 75,
+          "query": "agencja social media poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "88,0",
+          "positionNumber": 88,
+          "query": "reklama w google poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "89,0",
+          "positionNumber": 89,
+          "query": "kampania google adwords poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "99,0",
+          "positionNumber": 99,
+          "query": "kampanie e-marketingowe poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "100,0",
+          "positionNumber": 100,
+          "query": "reklama google ads poznań"
+        }
+      ],
+      "totalRows": 16,
+      "totals": [
+        "\nŁączna liczba kliknięć\n0",
+        "\nŁączna liczba wyświetleń\n44",
+        "Średni CTR\n0%",
+        "Średnia pozycja\n72,2"
+      ],
+      "url": "https://search.google.com/search-console/performance/search-analytics?resource_id=sc-domain%3Afotz-studio.pl&hl=pl&breakdown=query&num_of_days=28&page=!https%3A%2F%2Fwww.fotz-studio.pl%2Fkampanie-reklamowe-poznan"
+    },
+    {
+      "page": "https://www.fotz-studio.pl/pozycjonowanie/elblag",
+      "charts": [
+        "5.10.2026\n7.10.2026\n9.10.2026\n11.10.2026\n13.10.2026\n15.10.2026\n17.10.2026\n19.10.2026\n21.10.2026\n23.10.2026\n25.10.2026\n27.10.2026\n29.10.2026\n31.10.2026\n3\n2\n1\n0\n15\n10\n5\n0\nWykres, który pokazuje dane Łączna liczba kliknięć, Łączna liczba wyświetleń, Średni CTR i Średnia pozycja z okresu od 5 października 2026 do 1 listopada 2026"
+      ],
+      "striking": [
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "12,0",
+          "positionNumber": 12,
+          "query": "agencja seo elbląg"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "12,0",
+          "positionNumber": 12,
+          "query": "seo elbląg"
+        }
+      ],
+      "topRows": [
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "23",
+          "position": "24,2",
+          "positionNumber": 24.2,
+          "query": "pozycjonowanie elbląg"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "5",
+          "position": "25,8",
+          "positionNumber": 25.8,
+          "query": "pozycjonowanie stron elbląg"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "4",
+          "position": "8,0",
+          "positionNumber": 8,
+          "query": "pozycjonowanie lokalne elbląg"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "2",
+          "position": "9,5",
+          "positionNumber": 9.5,
+          "query": "pozycjonowanie sklepów elbląg"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "12,0",
+          "positionNumber": 12,
+          "query": "agencja seo elbląg"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "12,0",
+          "positionNumber": 12,
+          "query": "seo elbląg"
+        }
+      ],
+      "totalRows": 6,
+      "totals": [
+        "\nŁączna liczba kliknięć\n0",
+        "\nŁączna liczba wyświetleń\n36",
+        "Średni CTR\n0%",
+        "Średnia pozycja\n21,1"
+      ],
+      "url": "https://search.google.com/search-console/performance/search-analytics?resource_id=sc-domain%3Afotz-studio.pl&hl=pl&breakdown=query&num_of_days=28&page=!https%3A%2F%2Fwww.fotz-studio.pl%2Fpozycjonowanie%2Felblag"
+    },
+    {
+      "page": "https://www.fotz-studio.pl/pozycjonowanie/plock",
+      "charts": [
+        "5.10.2026\n7.10.2026\n9.10.2026\n11.10.2026\n13.10.2026\n15.10.2026\n17.10.2026\n19.10.2026\n21.10.2026\n23.10.2026\n25.10.2026\n27.10.2026\n29.10.2026\n31.10.2026\n3\n2\n1\n0\n9\n6\n3\n0\nWykres, który pokazuje dane Łączna liczba kliknięć, Łączna liczba wyświetleń, Średni CTR i Średnia pozycja z okresu od 5 października 2026 do 1 listopada 2026"
+      ],
+      "striking": [],
+      "topRows": [
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "13",
+          "position": "21,5",
+          "positionNumber": 21.5,
+          "query": "pozycjonowanie płock"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "4",
+          "position": "3,2",
+          "positionNumber": 3.2,
+          "query": "pozycjonowanie lokalne płock"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "3",
+          "position": "24,0",
+          "positionNumber": 24,
+          "query": "pozycjonowanie stron płock"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "2",
+          "position": "5,0",
+          "positionNumber": 5,
+          "query": "agencja seo płock"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "1,0",
+          "positionNumber": 1,
+          "query": "płock pozycjonowanie stron"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "2,0",
+          "positionNumber": 2,
+          "query": "płock pozycjonowanie"
+        }
+      ],
+      "totalRows": 6,
+      "totals": [
+        "\nŁączna liczba kliknięć\n0",
+        "\nŁączna liczba wyświetleń\n24",
+        "Średni CTR\n0%",
+        "Średnia pozycja\n15,7"
+      ],
+      "url": "https://search.google.com/search-console/performance/search-analytics?resource_id=sc-domain%3Afotz-studio.pl&hl=pl&breakdown=query&num_of_days=28&page=!https%3A%2F%2Fwww.fotz-studio.pl%2Fpozycjonowanie%2Fplock"
+    },
+    {
+      "page": "https://www.fotz-studio.pl/uslugi/pozycjonowanie/rzeszow",
+      "charts": [
+        "5.10.2026\n7.10.2026\n9.10.2026\n11.10.2026\n13.10.2026\n15.10.2026\n17.10.2026\n19.10.2026\n21.10.2026\n23.10.2026\n25.10.2026\n27.10.2026\n29.10.2026\n31.10.2026\n3\n2\n1\n0\n24\n16\n8\n0\nWykres, który pokazuje dane Łączna liczba kliknięć, Łączna liczba wyświetleń, Średni CTR i Średnia pozycja z okresu od 5 października 2026 do 1 listopada 2026"
+      ],
+      "striking": [
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "7",
+          "position": "13,6",
+          "positionNumber": 13.6,
+          "query": "agencja seo rzeszów"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "18,0",
+          "positionNumber": 18,
+          "query": "rzeszów pozycjonowanie"
+        }
+      ],
+      "topRows": [
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "15",
+          "position": "25,0",
+          "positionNumber": 25,
+          "query": "pozycjonowanie rzeszów"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "13",
+          "position": "82,7",
+          "positionNumber": 82.7,
+          "query": "pozycjonowanie stron rzeszów"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "10",
+          "position": "25,9",
+          "positionNumber": 25.9,
+          "query": "seo rzeszów"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "7",
+          "position": "13,6",
+          "positionNumber": 13.6,
+          "query": "agencja seo rzeszów"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "4",
+          "position": "26,5",
+          "positionNumber": 26.5,
+          "query": "ekspert seo rzeszów"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "2",
+          "position": "31,5",
+          "positionNumber": 31.5,
+          "query": "konsultant seo podkarpackie"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "18,0",
+          "positionNumber": 18,
+          "query": "rzeszów pozycjonowanie"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "28,0",
+          "positionNumber": 28,
+          "query": "pozycjonowanie podkarpackie"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "32,0",
+          "positionNumber": 32,
+          "query": "freelancer seo rzeszów"
+        }
+      ],
+      "totalRows": 9,
+      "totals": [
+        "\nŁączna liczba kliknięć\n0",
+        "\nŁączna liczba wyświetleń\n54",
+        "Średni CTR\n0%",
+        "Średnia pozycja\n38"
+      ],
+      "url": "https://search.google.com/search-console/performance/search-analytics?resource_id=sc-domain%3Afotz-studio.pl&hl=pl&breakdown=query&num_of_days=28&page=!https%3A%2F%2Fwww.fotz-studio.pl%2Fuslugi%2Fpozycjonowanie%2Frzeszow"
+    },
+    {
+      "page": "https://www.fotz-studio.pl/uslugi/produkcja-filmow",
+      "charts": [
+        "5.10.2026\n7.10.2026\n9.10.2026\n11.10.2026\n13.10.2026\n15.10.2026\n17.10.2026\n19.10.2026\n21.10.2026\n23.10.2026\n25.10.2026\n27.10.2026\n29.10.2026\n31.10.2026\n3\n2\n1\n0\n9\n6\n3\n0\nWykres, który pokazuje dane Łączna liczba kliknięć, Łączna liczba wyświetleń, Średni CTR i Średnia pozycja z okresu od 5 października 2026 do 1 listopada 2026"
+      ],
+      "striking": [],
+      "topRows": [
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "18",
+          "position": "41,6",
+          "positionNumber": 41.6,
+          "query": "filmy reklamowe poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "6",
+          "position": "34,7",
+          "positionNumber": 34.7,
+          "query": "produkcja filmów poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "2",
+          "position": "61,0",
+          "positionNumber": 61,
+          "query": "realizacja filmów promocyjnych poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "26,0",
+          "positionNumber": 26,
+          "query": "filmy korporacyjne poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "29,0",
+          "positionNumber": 29,
+          "query": "produkcja spotów reklamowych poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "58,0",
+          "positionNumber": 58,
+          "query": "produkcja filmowa poznan"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "73,0",
+          "positionNumber": 73,
+          "query": "produkcja filmowa na zlecenie"
+        }
+      ],
+      "totalRows": 7,
+      "totals": [
+        "\nŁączna liczba kliknięć\n1",
+        "\nŁączna liczba wyświetleń\n33",
+        "Średni CTR\n3%",
+        "Średnia pozycja\n41,1"
+      ],
+      "url": "https://search.google.com/search-console/performance/search-analytics?resource_id=sc-domain%3Afotz-studio.pl&hl=pl&breakdown=query&num_of_days=28&page=!https%3A%2F%2Fwww.fotz-studio.pl%2Fuslugi%2Fprodukcja-filmow"
+    },
+    {
+      "page": "https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych/poznan",
+      "charts": [
+        "5.10.2026\n7.10.2026\n9.10.2026\n11.10.2026\n13.10.2026\n15.10.2026\n17.10.2026\n19.10.2026\n21.10.2026\n23.10.2026\n25.10.2026\n27.10.2026\n29.10.2026\n31.10.2026\n3\n2\n1\n0\n24\n16\n8\n0\nWykres, który pokazuje dane Łączna liczba kliknięć, Łączna liczba wyświetleń, Średni CTR i Średnia pozycja z okresu od 5 października 2026 do 1 listopada 2026"
+      ],
+      "striking": [
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "9",
+          "position": "14,0",
+          "positionNumber": 14,
+          "query": "tworzenie stron poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "6",
+          "position": "16,8",
+          "positionNumber": 16.8,
+          "query": "tworzenie stron internetowych poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "2",
+          "position": "15,5",
+          "positionNumber": 15.5,
+          "query": "budowa stron internetowych poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "14,0",
+          "positionNumber": 14,
+          "query": "projektowanie stron internetowych poznan"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "20,0",
+          "positionNumber": 20,
+          "query": "tanie strony internetowe poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "20,0",
+          "positionNumber": 20,
+          "query": "tworzenie www poznań"
+        }
+      ],
+      "topRows": [
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "9",
+          "position": "14,0",
+          "positionNumber": 14,
+          "query": "tworzenie stron poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "7",
+          "position": "33,7",
+          "positionNumber": 33.7,
+          "query": "tworzenie stron www poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "6",
+          "position": "16,8",
+          "positionNumber": 16.8,
+          "query": "tworzenie stron internetowych poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "6",
+          "position": "33,0",
+          "positionNumber": 33,
+          "query": "projektowanie stron poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "5",
+          "position": "65,8",
+          "positionNumber": 65.8,
+          "query": "projektowanie stron internetowych poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "3",
+          "position": "66,0",
+          "positionNumber": 66,
+          "query": "tworzenie stron internetowych poznan"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "3",
+          "position": "82,7",
+          "positionNumber": 82.7,
+          "query": "strony internetowe poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "2",
+          "position": "15,5",
+          "positionNumber": 15.5,
+          "query": "budowa stron internetowych poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "2",
+          "position": "91,5",
+          "positionNumber": 91.5,
+          "query": "tworzenie stron www poznan"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "14,0",
+          "positionNumber": 14,
+          "query": "projektowanie stron internetowych poznan"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "20,0",
+          "positionNumber": 20,
+          "query": "tanie strony internetowe poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "20,0",
+          "positionNumber": 20,
+          "query": "tworzenie www poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "25,0",
+          "positionNumber": 25,
+          "query": "projektowanie stron www poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "25,0",
+          "positionNumber": 25,
+          "query": "projekty stron www poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "28,0",
+          "positionNumber": 28,
+          "query": "strony www poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "82,0",
+          "positionNumber": 82,
+          "query": "tworzenie stron poznan"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "86,0",
+          "positionNumber": 86,
+          "query": "strony internetowe poznan"
+        }
+      ],
+      "totalRows": 17,
+      "totals": [
+        "\nŁączna liczba kliknięć\n0",
+        "\nŁączna liczba wyświetleń\n52",
+        "Średni CTR\n0%",
+        "Średnia pozycja\n40,8"
+      ],
+      "url": "https://search.google.com/search-console/performance/search-analytics?resource_id=sc-domain%3Afotz-studio.pl&hl=pl&breakdown=query&num_of_days=28&page=!https%3A%2F%2Fwww.fotz-studio.pl%2Fuslugi%2Ftworzenie-stron-internetowych%2Fpoznan"
+    }
+  ]
+}
