@@ -18,6 +18,21 @@ test('portfolio selection follows page intent without claiming local project loc
   for (const route of ['/kontakt', '/konsultacja', '/podziekowanie', '/polityka-prywatnosci', '/akademia/auth', '/realizacje/enea-stadion', '/blog/api-gateway-co-to-jest-kong-aws-traefik-kubernetes-ingress', '/nie-istnieje']) assert.equal(getWorkCollection(route), null, route);
 });
 
+test('custom offer layouts explicitly render their curated portfolio exactly once', async () => {
+  for (const [file, route, collection] of [
+    ['AgencjaMarketingowa.tsx', '/agencja-marketingowa', 'studio'],
+    ['clusters/SEOCluster.tsx', '/seo', 'web'],
+    ['StronyInternetoweBialystok.tsx', '/uslugi/strony-internetowe/bialystok', 'web'],
+    ['StronyInternetoweLodz.tsx', '/uslugi/strony-internetowe/lodz', 'web'],
+    ['StronyInternetoweWroclaw.tsx', '/uslugi/strony-internetowe/wroclaw', 'web'],
+  ]) {
+    assert.equal(getWorkCollection(route), collection, route);
+    const source = await readFile(new URL(`../src/pages/${file}`, import.meta.url), 'utf8');
+    assert.match(source, /<Layout workPlacement="manual">/, route);
+    assert.equal((source.match(/<SelectedWork\s*\/>/g) || []).length, 1, `${route}: missing or duplicate explicit gallery`);
+  }
+});
+
 test('curated photos have real source files, valid destinations and bounded responsive files', async () => {
   const manifest = JSON.parse(await readFile(new URL('../src/data/selected-work-images.json', import.meta.url)));
   const routes = JSON.parse(await readFile(new URL('../known-routes.json', import.meta.url))).staticRoutes;

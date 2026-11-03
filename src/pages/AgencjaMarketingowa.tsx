@@ -17,6 +17,7 @@ import {
   Users,
 } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
+import { SelectedWork } from "@/components/sections/SelectedWork";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { Button } from "@/components/ui/button";
 import {
@@ -577,6 +578,8 @@ export default function AgencjaMarketingowa() {
           </Button>
         </div>
       </section>
+
+      <SelectedWork />
 
       <section id="faq" className="scroll-mt-24 border-b border-border py-20">
         <div className="container-wide max-w-4xl px-6 md:px-12">

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
+import { SelectedWork } from "@/components/sections/SelectedWork";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { BreadcrumbSchema, FAQSchema, ServiceSchema } from "@/components/seo/StructuredData";
 import { Button } from "@/components/ui/button";
@@ -580,6 +581,8 @@ export default function SEOCluster() {
           </div>
         </div>
       </section>
+
+      <SelectedWork />
 
       <section id="agencja-seo-faq" className="py-20 md:py-24 scroll-mt-24">
         <div className="max-w-3xl mx-auto px-4">
