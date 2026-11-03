@@ -4,7 +4,7 @@
   "source": "src/pages/TworzenieStronPoznan.tsx",
   "branch": "swarm/tworzenie-poznan-gsc-20261103",
   "base": "9928f732be4fd15ef2d994ca5c87abbcd265ae6d",
-  "status": "local-target-met",
+  "status": "production-confirmed-95-plus",
   "gsc": {
     "assignedMetricsAvailable": true,
     "exactUrl": true,
@@ -72,6 +72,7 @@
       }
     ],
     "final": 98,
+    "finalScope": "Lokalny pomiar finalnego main#main-content przed publikacją; nie jest to pomiar publiczny.",
     "target": 95,
     "targetMet": true,
     "resultFile": "analysis/neuron/evaluation-c14b68e10adb6f96-gsc-candidate.json",
@@ -123,11 +124,50 @@
     "htmlContract": "passed; one H1, one main-content, self-canonical, nine matching FAQ entries and no duplicate IDs",
     "diffCheck": "passed",
     "registerValidation": "passed; 26 columns, 1067 records, UTF-8 BOM preserved; only FOTZ-E8ED58B9 changed",
-    "scoreGate": "passed; local 98 authorizes commit and push"
+    "scoreGate": "passed; local 98 authorizes commit and push",
+    "productionReadback": "passed; public main#main-content 98, HTTP 200 and production HTML contract verified"
+  },
+  "productionMeasurement": {
+    "source": "analysis/production-tworzenie-poznan.json",
+    "url": "https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych/poznan",
+    "query": "c14b68e10adb6f96",
+    "scope": "Publiczny pomiar main#main-content po wdrożeniu; odrębny od lokalnego neuronWriter.final.",
+    "score": 98,
+    "neuronStatus": "ok",
+    "pass": true,
+    "http": 200,
+    "deployment": {
+      "id": "dpl_8wb8d6tgxNv1cXs7RTCBMoM9onhr",
+      "status": "READY",
+      "alias": "www.fotz-studio.pl",
+      "aliasUrl": "https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych/poznan",
+      "commit": "0fe85351f2ba106fc2be3b60f84b4dc4f9b5ca9a"
+    },
+    "pullRequest": {
+      "number": 193,
+      "url": "https://github.com/adam420412/fotz-studio-web-experience/pull/193",
+      "merged": true,
+      "mergeCommit": "0fe85351f2ba106fc2be3b60f84b4dc4f9b5ca9a"
+    },
+    "html": {
+      "title": "Tworzenie stron internetowych Poznań – strona WWW | FOTZ",
+      "titleLength": 56,
+      "description": "Profesjonalne strony internetowe dla firm z Poznania: strona WWW, projektowanie stron, CMS, integracje i SEO. Sprawdź zakres prac i wycenę FOTZ.",
+      "descriptionLength": 144,
+      "canonical": "https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych/poznan",
+      "selfCanonical": true,
+      "h1Count": 1,
+      "mainContentCount": 1,
+      "visibleFaq": 9,
+      "schemaFaq": 9
+    }
   },
   "publication": {
-    "pullRequestCreated": false,
-    "merged": false,
+    "pullRequestCreated": true,
+    "merged": true,
+    "pullRequest": 193,
+    "mergeCommit": "0fe85351f2ba106fc2be3b60f84b4dc4f9b5ca9a",
+    "deployment": "dpl_8wb8d6tgxNv1cXs7RTCBMoM9onhr",
     "evaluateUrlUsedBeforeMerge": false
   },
   "files": [
@@ -136,11 +176,11 @@
     "docs/seo/tworzenie-stron-internetowych-poznan-2026-11-03.json",
     "docs/seo/ai-work-register.csv"
   ],
-  "businessImpact": "Nie zmierzono; lokalny content score nie dowodzi pozycji, ruchu, zapytań ani sprzedaży.",
+  "businessImpact": "Nie zmierzono; lokalny i publiczny content score nie dowodzi pozycji, ruchu, zapytań ani sprzedaży.",
   "notes": [
     "Nie utworzono nowych analiz NeuronWriter i nie użyto evaluate-url.",
     "Nie zmieniono starego worktree work-tworzenie-poznan.",
     "Nie dodano fikcyjnych biur, klientów, wyników, statystyk, gwarancji ani sztywnych cen.",
-    "Nie utworzono pull requesta i nie wykonano merga."
+    "Lokalne iteracje zakończono bez pull requesta i merga; następnie scalono PR #193 commitem 0fe85351f2ba106fc2be3b60f84b4dc4f9b5ca9a i wykonano odrębny publiczny pomiar 98."
   ]
 }
