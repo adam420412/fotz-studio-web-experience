@@ -176,7 +176,7 @@ export default function BlogLinkBuilding() {
                 <p className="text-blue-700 text-sm mb-3">
                   Budujemy profile linkowe zgodnie z wytycznymi Google — content marketing, digital PR, outreach.
                 </p>
-                <Link to="/uslugi/pozycjonowanie" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
+                <Link to="/seo/pozycjonowanie" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
                   Pozycjonowanie i link building <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>

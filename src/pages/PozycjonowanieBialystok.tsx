@@ -110,7 +110,7 @@ const PozycjonowanieBialystok = () => {
       <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://www.fotz-studio.pl/" },
           { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
-          { name: "Pozycjonowanie", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie" },
+          { name: "Pozycjonowanie", url: "https://www.fotz-studio.pl/seo/pozycjonowanie" },
           { name: "Białystok", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie/bialystok" },
         ]}/>
       <FAQSchema items={faqItems} />
@@ -168,7 +168,7 @@ const PozycjonowanieBialystok = () => {
                 </Link>
               </Button>
               <Button size="lg" variant="outline" asChild className="text-base px-8">
-                <Link to="/uslugi/pozycjonowanie">
+                <Link to="/seo/pozycjonowanie">
                   Pakiety i ceny SEO
                 </Link>
               </Button>
@@ -369,7 +369,7 @@ const PozycjonowanieBialystok = () => {
                 asChild
                 className="text-base px-8 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
               >
-                <Link to="/uslugi/pozycjonowanie">Wszystkie pakiety SEO</Link>
+                <Link to="/seo/pozycjonowanie">Wszystkie pakiety SEO</Link>
               </Button>
             </div>
           </FadeInView>
@@ -431,7 +431,7 @@ const PozycjonowanieBialystok = () => {
           </div>
           <div className="mt-4">
             <Link
-              to="/uslugi/pozycjonowanie"
+              to="/seo/pozycjonowanie"
               className="text-primary hover:underline text-sm font-medium inline-flex items-center gap-1"
             >
               <ArrowRight className="w-3 h-3" /> Wszystkie pakiety pozycjonowania

@@ -409,7 +409,7 @@ const BlogPozycjonowanieLokalnePoradnik = () => {
                     <h4 className="font-semibold mb-2">SEO dla Google Maps</h4>
                     <p className="text-sm text-muted-foreground">Optymalizacja Wizytówki Google</p>
                   </Link>
-                  <Link to="/uslugi/pozycjonowanie" className="p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all">
+                  <Link to="/seo/pozycjonowanie" className="p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all">
                     <h4 className="font-semibold mb-2">Usługa pozycjonowania</h4>
                     <p className="text-sm text-muted-foreground">Pełne pakiety SEO dla firm</p>
                   </Link>

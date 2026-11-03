@@ -347,7 +347,7 @@ const CennikPozycjonowania = () => {
               <div className="max-w-4xl mx-auto">
                 <h3 className="text-xl font-heading font-bold mb-6">Powiązane usługi i artykuły</h3>
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                  <Link to="/uslugi/pozycjonowanie" className="p-4 bg-card rounded-lg border border-border/50 hover:border-primary/50 transition-all">
+                  <Link to="/seo/pozycjonowanie" className="p-4 bg-card rounded-lg border border-border/50 hover:border-primary/50 transition-all">
                     <h4 className="font-semibold mb-2">Usługa pozycjonowania</h4>
                     <p className="text-sm text-muted-foreground">Pełna oferta SEO dla Twojej witryny</p>
                   </Link>

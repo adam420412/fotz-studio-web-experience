@@ -407,7 +407,7 @@ const BlogContentMarketing = () => {
                     <h4 className="font-semibold mb-2">Social media dla firm</h4>
                     <p className="text-sm text-muted-foreground">Strategie mediów społecznościowych</p>
                   </Link>
-                  <Link to="/uslugi/pozycjonowanie" className="p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all">
+                  <Link to="/seo/pozycjonowanie" className="p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all">
                     <h4 className="font-semibold mb-2">Pozycjonowanie SEO</h4>
                     <p className="text-sm text-muted-foreground">Kompleksowe SEO dla Twojej witryny</p>
                   </Link>

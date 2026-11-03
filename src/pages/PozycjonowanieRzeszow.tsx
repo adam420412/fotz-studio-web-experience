@@ -110,7 +110,7 @@ const PozycjonowanieRzeszow = () => {
       <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://www.fotz-studio.pl/" },
           { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
-          { name: "Pozycjonowanie", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie" },
+          { name: "Pozycjonowanie", url: "https://www.fotz-studio.pl/seo/pozycjonowanie" },
           { name: "Rzeszów", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie/rzeszow" },
         ]}/>
       <FAQSchema items={faqItems} />
@@ -168,7 +168,7 @@ const PozycjonowanieRzeszow = () => {
                 </Link>
               </Button>
               <Button size="lg" variant="outline" asChild className="text-base px-8">
-                <Link to="/uslugi/pozycjonowanie">
+                <Link to="/seo/pozycjonowanie">
                   Pakiety i ceny SEO
                 </Link>
               </Button>
@@ -368,7 +368,7 @@ const PozycjonowanieRzeszow = () => {
                 asChild
                 className="text-base px-8 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
               >
-                <Link to="/uslugi/pozycjonowanie">Wszystkie pakiety SEO</Link>
+                <Link to="/seo/pozycjonowanie">Wszystkie pakiety SEO</Link>
               </Button>
             </div>
           </FadeInView>
@@ -419,7 +419,7 @@ const PozycjonowanieRzeszow = () => {
               { label: "Pozycjonowanie Łódź", url: "/uslugi/pozycjonowanie/lodz" },
               { label: "Pozycjonowanie Szczecin", url: "/uslugi/pozycjonowanie/szczecin" },
               { label: "Pozycjonowanie Białystok", url: "/uslugi/pozycjonowanie/bialystok" },
-              { label: "Wszystkie usługi SEO", url: "/uslugi/pozycjonowanie" },
+              { label: "Wszystkie usługi SEO", url: "/seo/pozycjonowanie" },
             ].map((link) => (
               <Link
                 key={link.url}

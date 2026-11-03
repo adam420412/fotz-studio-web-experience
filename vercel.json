@@ -5,6 +5,11 @@
   "outputDirectory": "dist",
   "redirects": [
     {
+      "source": "/uslugi/pozycjonowanie",
+      "destination": "/seo/pozycjonowanie",
+      "permanent": true
+    },
+    {
       "source": "/uslugi/pozycjonowanie/poznan",
       "destination": "/seo/pozycjonowanie-poznan",
       "permanent": true

@@ -100,7 +100,7 @@ const PozycjonowaniePlock = () => {
       />
       <BreadcrumbSchema items={[
           { name: "Strona główna", url: "/" },
-          { name: "Pozycjonowanie", url: "/uslugi/pozycjonowanie" },
+          { name: "Pozycjonowanie", url: "/seo/pozycjonowanie" },
           { name: "Płock", url: "/pozycjonowanie/plock" },
         ]}/>
       <FAQSchema items={faqItems} />
@@ -532,7 +532,7 @@ const PozycjonowaniePlock = () => {
               { label: "Pozycjonowanie Kraków", url: "/seo/pozycjonowanie-krakow" },
               { label: "Pozycjonowanie Wrocław", url: "/uslugi/pozycjonowanie/wroclaw" },
               { label: "Pozycjonowanie Łódź", url: "/uslugi/pozycjonowanie/lodz" },
-              { label: "Wszystkie usługi SEO", url: "/uslugi/pozycjonowanie" },
+              { label: "Wszystkie usługi SEO", url: "/seo/pozycjonowanie" },
             ].map((link) => (
               <Link
                 key={link.url}

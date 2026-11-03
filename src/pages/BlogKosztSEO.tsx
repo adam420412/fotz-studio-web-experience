@@ -474,7 +474,7 @@ export function BlogKosztSEO() {
                     <h4 className="font-semibold mb-2">Pozycjonowanie lokalne</h4>
                     <p className="text-sm text-muted-foreground">SEO dla firm lokalnych i Google Maps</p>
                   </Link>
-                  <Link to="/uslugi/pozycjonowanie" className="p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all">
+                  <Link to="/seo/pozycjonowanie" className="p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all">
                     <h4 className="font-semibold mb-2">Usługa SEO</h4>
                     <p className="text-sm text-muted-foreground">Pakiety pozycjonowania dla firm</p>
                   </Link>

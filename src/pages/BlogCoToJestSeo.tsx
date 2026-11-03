@@ -330,7 +330,7 @@ const BlogCoToJestSeo = () => {
             </ul>
             <p>
               Oferujemy{" "}
-              <Link to="/uslugi/pozycjonowanie" className="text-primary hover:underline font-medium">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium">
                 pozycjonowanie lokalne
               </Link>{" "}
               dla firm z całej Polski — od{" "}
@@ -429,7 +429,7 @@ const BlogCoToJestSeo = () => {
                 kampanii reklamowych Google Ads
               </Link>{" "}
               i{" "}
-              <Link to="/uslugi/pozycjonowanie" className="text-primary hover:underline font-medium">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium">
                 pozycjonowania SEO
               </Link>.
             </p>
@@ -471,7 +471,7 @@ const BlogCoToJestSeo = () => {
               <Link to="/blog/google-ads-cennik" className="text-primary hover:underline font-medium">
                 Google Ads cennik 2025/2026
               </Link>. Natomiast nasze pakiety SEO znajdziesz na stronie{" "}
-              <Link to="/uslugi/pozycjonowanie" className="text-primary hover:underline font-medium">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium">
                 pozycjonowanie stron internetowych
               </Link>.
             </p>

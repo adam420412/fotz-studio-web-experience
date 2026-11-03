@@ -93,7 +93,7 @@ export default function PozycjonowanieOlsztyn() {
         <BreadcrumbSchema items={[
             { name: "Strona główna", url: "https://www.fotz-studio.pl" },
             { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
-            { name: "Pozycjonowanie", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie" },
+            { name: "Pozycjonowanie", url: "https://www.fotz-studio.pl/seo/pozycjonowanie" },
             { name: "Pozycjonowanie Olsztyn", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie/olsztyn" }
           ]}/>
         <FAQSchema items={faqItems} />
@@ -136,7 +136,7 @@ export default function PozycjonowanieOlsztyn() {
                   </Link>
                 </Button>
                 <Button asChild variant="outline" size="lg">
-                  <Link to="/uslugi/pozycjonowanie">Poznaj SEO</Link>
+                  <Link to="/seo/pozycjonowanie">Poznaj SEO</Link>
                 </Button>
               </motion.div>
             </motion.div>
@@ -434,7 +434,7 @@ export default function PozycjonowanieOlsztyn() {
                 { label: "Agencja marketingowa Olsztyn", to: "/agencja-marketingowa-olsztyn" },
                 { label: "Pozycjonowanie Opole", to: "/uslugi/pozycjonowanie/opole" },
                 { label: "Agencja marketingowa Opole", to: "/agencja-marketingowa-opole" },
-                { label: "Wszystkie usługi SEO", to: "/uslugi/pozycjonowanie" },
+                { label: "Wszystkie usługi SEO", to: "/seo/pozycjonowanie" },
               ].map((link) => (
                 <Link
                   key={link.to}

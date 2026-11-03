@@ -193,7 +193,7 @@ FOTZ-CC650CA6,OF-20,P1,https://www.fotz-studio.pl/uslugi/marketing-automation,of
 FOTZ-AA9A2AE5,OF-20,P1,https://www.fotz-studio.pl/uslugi/marketing-b2b,oferta lub narzędzie,WOLNE,,95,,,,,,,,,,,,src/pages/MarketingB2B.tsx,,,,,,
 FOTZ-282A230C,OF-20,P1,https://www.fotz-studio.pl/uslugi/marketing-internetowy,oferta lub narzędzie,WOLNE,,95,,,,,,,,,,,,src/pages/MarketingInternetowy.tsx,,,,,,
 FOTZ-08CCB625,OF-20,P1,https://www.fotz-studio.pl/uslugi/optymalizacja-strony-internetowej,oferta lub narzędzie,WOLNE,,95,,,,,,,,,,,,src/pages/OptymalizacjaStronyInternetowej.tsx,,,,,,
-FOTZ-C0771F58,OF-20,P1,https://www.fotz-studio.pl/uslugi/pozycjonowanie,oferta lub narzędzie,WOLNE,,95,,,,,,,,,,,,src/pages/UslugiPozycjonowanie.tsx,,,,,,
+FOTZ-C0771F58,OF-20,P1,https://www.fotz-studio.pl/uslugi/pozycjonowanie,oferta lub narzędzie,W_TRAKCIE,Kimi / swarm-20261103,95,,,,,,2026-11-03T18:07:16Z,swarm/pozycjonowanie-consolidation-20261103,,,,,src/App.tsx,,,,,2026-11-03T18:07:16Z,Konsolidacja duplikatu intencji przez dokladne przekierowanie 308 do https://www.fotz-studio.pl/seo/pozycjonowanie; bez pomiaru i bez twierdzenia o kanibalizacji SERP.
 FOTZ-98651945,OF-20,P1,https://www.fotz-studio.pl/uslugi/pozycjonowanie/bialystok,oferta lub narzędzie,WOLNE,,95,,,,,,,,,,,,src/pages/PozycjonowanieBialystok.tsx,,,,,,
 FOTZ-0B84C79B,OF-20,P1,https://www.fotz-studio.pl/uslugi/pozycjonowanie/bydgoszcz,oferta lub narzędzie,WOLNE,,95,,,,,,,,,,,,src/pages/PozycjonowanieBydgoszcz.tsx,,,,,,
 FOTZ-01FB1F56,OF-20,P1,https://www.fotz-studio.pl/uslugi/pozycjonowanie/gdansk,oferta lub narzędzie,WOLNE,,95,,,,,,,,,,,,src/pages/PozycjonowanieGdansk.tsx,,,,,,

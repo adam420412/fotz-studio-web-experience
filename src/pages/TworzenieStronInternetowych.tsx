@@ -650,7 +650,7 @@ Dla e-commerce to jeszcze prostsze: strona robi za Ciebie 24h sprzedaż. Jedna d
               {[
                 { title: 'Sklepy internetowe', desc: 'WooCommerce, Shopify, custom e-commerce', link: '/uslugi/sklepy-internetowe' },
                 { title: 'Landing page', desc: 'Strony kampanijowe zoptymalizowane pod konwersję', link: '/uslugi/landing-page' },
-                { title: 'Pozycjonowanie SEO', desc: 'Pozycje w Google, organic traffic, ROI', link: '/uslugi/pozycjonowanie' },
+                { title: 'Pozycjonowanie SEO', desc: 'Pozycje w Google, organic traffic, ROI', link: '/seo/pozycjonowanie' },
               ].map((service, index) => (
                 <FadeInView key={index} delay={index * 0.1}>
                   <Link to={service.link} className="group block">

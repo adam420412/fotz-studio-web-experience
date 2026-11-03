@@ -51,7 +51,7 @@ test('Walbrzych visible FAQ and schema use the same complete data', () => {
 
 test('Walbrzych CTAs lead to contact and the relevant SEO service', () => {
   assert.ok((source.match(/\/kontakt\?usluga=seo&amp;wariant=audit#formularz|\/kontakt\?usluga=seo&wariant=audit#formularz/g) || []).length >= 2);
-  assert.ok(source.includes('to="/uslugi/pozycjonowanie"'));
+  assert.ok(source.includes('to="/seo/pozycjonowanie"'));
   assert.ok(source.includes('href="#zakres-prac"'));
   assert.ok(source.includes('id="zakres-prac"'));
 });

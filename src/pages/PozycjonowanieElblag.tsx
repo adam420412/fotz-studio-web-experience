@@ -106,7 +106,7 @@ const PozycjonowanieElblag = () => {
       <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://www.fotz-studio.pl/" },
           { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
-          { name: "Pozycjonowanie", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie" },
+          { name: "Pozycjonowanie", url: "https://www.fotz-studio.pl/seo/pozycjonowanie" },
           { name: "Elbląg", url: "https://www.fotz-studio.pl/pozycjonowanie/elblag" },
         ]}/>
       <FAQSchema items={faqItems} />
@@ -142,7 +142,7 @@ const PozycjonowanieElblag = () => {
                 </Link>
               </Button>
               <Button size="lg" variant="outline" asChild className="text-base px-8 border-white text-white hover:bg-white/10">
-                <Link to="/uslugi/pozycjonowanie">
+                <Link to="/seo/pozycjonowanie">
                   Pakiety i ceny SEO
                 </Link>
               </Button>
@@ -433,7 +433,7 @@ const PozycjonowanieElblag = () => {
               asChild
               className="text-base px-8 border-gray-900 text-gray-900 hover:bg-gray-900/10"
             >
-              <Link to="/uslugi/pozycjonowanie">Wszystkie pakiety SEO</Link>
+              <Link to="/seo/pozycjonowanie">Wszystkie pakiety SEO</Link>
             </Button>
           </div>
         </div>
@@ -494,7 +494,7 @@ const PozycjonowanieElblag = () => {
           </div>
           <div className="mt-4">
             <Link
-              to="/uslugi/pozycjonowanie"
+              to="/seo/pozycjonowanie"
               className="text-yellow-400 hover:text-yellow-300 text-sm font-medium inline-flex items-center gap-1"
             >
               <ArrowRight className="w-3 h-3" /> Wszystkie pakiety pozycjonowania

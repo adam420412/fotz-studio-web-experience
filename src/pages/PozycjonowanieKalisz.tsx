@@ -109,7 +109,7 @@ const PozycjonowanieKalisz = () => {
       />
       <BreadcrumbSchema items={[
           { name: "Strona główna", url: "/" },
-          { name: "Pozycjonowanie", url: "/uslugi/pozycjonowanie" },
+          { name: "Pozycjonowanie", url: "/seo/pozycjonowanie" },
           { name: "Kalisz", url: "/pozycjonowanie/kalisz" },
         ]}/>
       <FAQSchema items={faqItems} />
