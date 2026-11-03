@@ -1,0 +1,91 @@
+{
+  "date": "2026-11-03",
+  "path": "/agencja-marketingowa",
+  "url": "https://www.fotz-studio.pl/agencja-marketingowa",
+  "source": "src/pages/AgencjaMarketingowa.tsx",
+  "branch": "swarm/agencja-marketingowa-20261103",
+  "baseCommit": "83d92567045094a43d34403ce63b80804ca017e4",
+  "gsc": {
+    "assignedMetrics": false,
+    "note": "No current assigned GSC metrics were supplied; none were inferred, estimated or fabricated."
+  },
+  "neuronWriter": {
+    "query": "4a57f4bdee140c8a",
+    "keyword": "agencja marketingu internetowego",
+    "newAnalysesCreated": 0,
+    "productionBaseline": 33,
+    "target": 95,
+    "recommendedWordTarget": 2384,
+    "finalRenderedMainWords": 2986,
+    "iterations": [
+      {
+        "iteration": 1,
+        "score": 91,
+        "scope": "Complete offer rewrite with strategy, channel selection, separate SEO, content, advertising and production scopes, lead-quality measurement, process, responsibilities, budget, cooperation terms and FAQ; concise final metadata"
+      },
+      {
+        "iteration": 2,
+        "score": 97,
+        "scope": "Refined H2 coverage for SEO, content marketing, advertising, digital marketing, measurement and agency selection; improved the final meta description and added missing natural terminology without unsupported claims or fixed prices"
+      }
+    ],
+    "iterationsUsed": 2,
+    "maximumIterations": 4,
+    "final": 97,
+    "method": "evaluate-content through neuron_client.py evaluate-html; outerHTML of the single main#main-content element extracted from dist/agencja-marketingowa/index.html after the final build and submitted with the final rendered title and description",
+    "wordCountMethod": "Visible text from the extracted main element was sanitized without tags, whitespace-normalized and counted with Unicode letter/number word matching; navigation and footer were excluded",
+    "scopeComparison": "Baseline 33 was measured on the production URL with id=main-content. Final measurement uses the same semantic container from the local prerender, excluding navigation and footer. The content scope is comparable, while the measurement environment differs.",
+    "recommendationConstraint": "No new NeuronWriter analysis was created. Two evaluate-content calls reused query 4a57f4bdee140c8a; the remaining two permitted iterations were not used."
+  },
+  "metadata": {
+    "title": "Agencja marketingu internetowego — marketing online | FOTZ",
+    "titleLength": 58,
+    "description": "Agencja marketingu internetowego FOTZ: strategia, SEO, Google Ads, Facebook i social media. Marketing internetowy, treści i kampanie dla Twojego biznesu.",
+    "descriptionLength": 153,
+    "canonical": "https://www.fotz-studio.pl/agencja-marketingowa",
+    "h1": "Agencja marketingu internetowego",
+    "h1Count": 1
+  },
+  "renderedContract": {
+    "selfCanonical": true,
+    "mainContentCount": 1,
+    "idCount": 20,
+    "idScope": "All DOM id attributes in the final prerendered document, including shared navigation and footer",
+    "duplicateIds": [],
+    "serviceSchemaPresent": true,
+    "serviceSchemaName": "Agencja marketingu internetowego",
+    "breadcrumbSchemaPresent": true,
+    "faqQuestions": 8,
+    "visibleFaqMatchesSchema": true,
+    "contactCta": "/kontakt?usluga=marketing#formularz",
+    "contactCtaCount": 2
+  },
+  "checks": {
+    "npmCi": "passed",
+    "typecheck": "passed after the final content changes",
+    "targetedTests": "24/24 passed: live-blog 7/7, direct AgencjaMarketingowa contract 6/6, seo-metadata 3/3, structured-data 5/5 and rendered-html 3/3",
+    "build": "passed; 1061 pages generated, 1059 full page bodies, 0 skipped and 0 body errors",
+    "htmlContract": "passed; one H1, one main-content, self-canonical, title 58 characters, description 153 characters, 20 DOM IDs and no duplicate IDs",
+    "schemaContract": "passed; Service name matches the visible H1, service description matches the offer, BreadcrumbList is present and all eight visible FAQ questions and answers match FAQPage schema",
+    "diffCheck": "passed; only the declared page, direct test and unique report are included",
+    "buildArtifactsExcluded": "known-routes.json restored after prerender; dist, .ssr and temporary extracted HTML were not staged"
+  },
+  "files": [
+    "src/pages/AgencjaMarketingowa.tsx",
+    "scripts/agencja-marketingowa.test.mjs",
+    "docs/seo/agencja-marketingowa-2026-11-03.json"
+  ],
+  "scope": [
+    "Replaced fixed prices and promotional generalities with a verifiable offer covering strategy, channel selection, SEO, content marketing, advertising, social media, production and websites",
+    "Separated organic visibility, content production, paid media, creative production and conversion work while explaining how the channels cooperate",
+    "Added lead definitions, measurement limitations, lead-quality feedback, sales-team responsibilities and separate treatment of service, production and media costs",
+    "Added a five-step process, responsibilities, approvals, account access, handover conditions, contract terms and individually scoped pricing without guarantees",
+    "Preserved the existing URL and added concise branded metadata, self-canonical, one H1, matching Service, Breadcrumb and FAQ schemas and relevant contact CTAs",
+    "Removed the nested main element and unrelated automatic portfolio insertion; added a direct source contract test and native FAQ details with unique page-specific IDs"
+  ],
+  "notes": [
+    "Content score evaluates the rendered offer against the existing NeuronWriter analysis; it does not prove indexing, rankings, clicks, enquiries or sales.",
+    "No current GSC metrics were assigned to this task and no business impact is claimed.",
+    "No changes were made to App.tsx, sitemaps, ai-work-register.csv, environment files, other pages or shared components."
+  ]
+}
