@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-03",
+  "path": "/uslugi/pozycjonowanie/lublin",
+  "url": "https://www.fotz-studio.pl/uslugi/pozycjonowanie/lublin",
+  "source": "src/pages/PozycjonowanieLublin.tsx",
+  "branch": "swarm/seo-lublin-20261103",
+  "baseCommit": "97df192edbce86f48d6c55b2182eeea39d33356d",
+  "gsc": {
+    "period": {
+      "from": "2026-10-03",
+      "to": "2026-10-30"
+    },
+    "impressions": 71,
+    "clicks": 0,
+    "averagePosition": 44.9577
+  },
+  "neuronWriter": {
+    "query": "99328e9690d6770e",
+    "keyword": "pozycjonowanie lublin",
+    "newAnalysesCreated": 0,
+    "productionBaseline": 82,
+    "iterations": [
+      {
+        "iteration": 1,
+        "score": 78,
+        "scope": "Complete offer rewrite covering audit, technical SEO, content, local visibility, process, measurement, pricing and FAQ with final metadata"
+      },
+      {
+        "iteration": 2,
+        "score": 90,
+        "scope": "Filled recommendation gaps concerning the positioning process, website audit, Google algorithms, local businesses and measurement without unsupported claims"
+      },
+      {
+        "iteration": 3,
+        "score": 92,
+        "scope": "Expanded thematic coverage in H2 headings, added missing service and measurement terminology and reduced repeated phrasing"
+      },
+      {
+        "iteration": 4,
+        "score": 94,
+        "scope": "Added the remaining local SEO, keyword, traffic and store terminology while reducing excessive audit and positioning repetitions"
+      }
+    ],
+    "final": 94,
+    "target": 95,
+    "thresholdMet": false,
+    "maxIterations": 4,
+    "recommendedWordCount": 1976,
+    "finalRenderedMainWords": 2787,
+    "method": "evaluate-content through neuron_client.py evaluate-html; outerHTML of main#main-content extracted from final dist/uslugi/pozycjonowanie/lublin/index.html and submitted with final title and description",
+    "scopeComparison": "Baseline 82 was measured on the public URL with id=main-content. Final measurement uses the same semantic container from the local prerender, including shared in-page components but excluding navigation and footer. The content scope is comparable, while the measurement environment differs.",
+    "container": {
+      "selector": "main#main-content",
+      "occurrences": 1,
+      "duplicateIds": [],
+      "verified": true
+    }
+  },
+  "metadata": {
+    "title": "Pozycjonowanie stron Lublin — SEO | FOTZ",
+    "titleLength": 40,
+    "description": "Pozycjonowanie stron Lublin: audyt SEO, technika, treści i lokalna widoczność w Google. Zarządzanie pozycjonowaniem i pomiar zapytań — sprawdź usługi FOTZ.",
+    "descriptionLength": 155,
+    "canonical": "https://www.fotz-studio.pl/uslugi/pozycjonowanie/lublin",
+    "h1": "Pozycjonowanie stron internetowych Lublin — SEO",
+    "h1Count": 1
+  },
+  "renderedContract": {
+    "selfCanonical": true,
+    "mainContentCount": 1,
+    "idCount": 9,
+    "duplicateIds": [],
+    "serviceSchemaMatchesH1AndLead": true,
+    "faqQuestions": 6,
+    "visibleFaqMatchesSchema": true,
+    "cta": "/kontakt?usluga=seo&wariant=audit#formularz",
+    "ctaCount": 2
+  },
+  "checks": {
+    "npmCi": "passed",
+    "typecheck": "passed",
+    "targetedTests": "20/20 passed: live-blog 7/7, pozycjonowanie-lublin 5/5, seo-metadata 3/3, structured-data 5/5",
+    "build": "passed; 1061 prerendered pages, 1059 full page bodies, 0 body errors",
+    "htmlContract": "passed; one H1, one main-content, self-canonical, title 40 characters, description 155 characters, 9 unique IDs and no duplicates",
+    "schemaContract": "passed; Service name and description match the visible H1 and lead; all six visible FAQ questions and answers match FAQPage schema"
+  },
+  "scope": [
+    "Replaced fixed prices, unsupported local-market claims, performance figures and guarantees with a verifiable service offer",
+    "Documented audit deliverables, technical SEO, content optimization, internal and external linking, local visibility and Google Business Profile work",
+    "Added query-to-page planning, store considerations, implementation process and measurement separated into visibility, traffic, enquiries and sales",
+    "Explained pricing factors, exclusions, responsibilities and optional one-off audit without fixed prices or guarantees",
+    "Preserved the existing URL and added concise branded metadata, self-canonical, one H1, matching structured data and relevant audit CTAs",
+    "Added a direct source contract test and documented the final local prerender measurement with no duplicate IDs"
+  ],
+  "files": [
+    "src/pages/PozycjonowanieLublin.tsx",
+    "scripts/pozycjonowanie-lublin.test.mjs",
+    "docs/seo/pozycjonowanie-lublin-2026-11-03.json"
+  ],
+  "blocker": {
+    "reason": "NeuronWriter content_score reached 94 after the fourth and final permitted iteration; the required threshold is at least 95.",
+    "commitCreated": false,
+    "pushPerformed": false
+  },
+  "notes": [
+    "Content score does not prove indexing, rankings, clicks, enquiries or sales.",
+    "No changes were made to App.tsx, sitemaps, ai-work-register.csv, environment files, other pages or shared components.",
+    "No new NeuronWriter analyses were created; only evaluate-content calls used the existing query 99328e9690d6770e.",
+    "The four-iteration limit was respected and no further optimization or evaluation was attempted after the score of 94."
+  ],
+  "businessImpact": "Not measured; content score does not demonstrate rankings, traffic, enquiries or sales."
+}
