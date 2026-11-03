@@ -5,7 +5,7 @@ import { ArticleSchema, BreadcrumbSchema, FAQSchema } from '@/components/seo/Str
 import { KlagemConfigurator } from '@/components/sections/KlagemConfigurator';
 import { enquiryHref } from '@/lib/enquiry.mjs';
 
-const title = 'Wizualizacje i konfiguratory 3D w e-commerce — przykład KLAGEM';
+const title = 'Wizualizacje 3D i konfiguratory w e-commerce | FOTZ';
 const description = 'Kiedy wystarczy render, a kiedy potrzebujesz konfiguratora 3D? Przykład mebli KLAGEM, przygotowanie danych, wycena wdrożenia i pomiar zapytań.';
 const faqs = [
   {question:'Czym konfigurator 3D różni się od wizualizacji?',answer:'Wizualizacja pokazuje przygotowany wariant produktu. Konfigurator pozwala zmieniać jego parametry według reguł producenta i zobaczyć wybrany układ. Wycena, zapis i wysłanie projektu są dodatkowymi funkcjami, które trzeba osobno zaprojektować.'},

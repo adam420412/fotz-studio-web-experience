@@ -8,7 +8,7 @@ const offer: LocalSeoOfferProps = {
   headingSuffix: " — agencja SEO",
   cityGenitive: "Krakowa",
   title: "Pozycjonowanie stron internetowych Kraków | Agencja SEO FOTZ",
-  description: "Pozycjonowanie Kraków — agencja SEO FOTZ Studio. Skuteczne pozycjonowanie stron internetowych: audyt, optymalizacja, lokalne działania. Zwiększyć widoczność w Google? Wyceń.",
+  description: "Pozycjonowanie Kraków — audyt, optymalizacja i lokalne działania SEO. Skuteczne pozycjonowanie stron internetowych i widoczność w Google. Wycena FOTZ.",
   lead: "Chcesz zwiększyć widoczność i pozyskiwać zapytania z Google? Łączymy techniczne SEO z czytelną ofertą i drogą do kontaktu. Dla firmy z Krakowa planujemy działania wokół usług, o które pytają klienci — od poprawy istniejących podstron po ocenę zapytań i rezerwacji.",
   hero: { image: "bar", caption: "Gierky Activity Bar — fotografia wnętrza z portfolio FOTZ. Autentyczne zdjęcia pokazują charakter miejsca jeszcze przed wizytą." },
   scopeTitle: "Pozycjonowanie stron internetowych w Krakowie — zakres SEO",
