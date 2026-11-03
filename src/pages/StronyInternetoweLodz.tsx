@@ -78,6 +78,10 @@ const processSteps = [
 
 const faqItems = [
   {
+      question: "Ile kosztują tanie strony internetowe w Łodzi?",
+      answer: "Tanie strony internetowe Łódź zaczynają się od prostej wizytówki — ale tanio nie może znaczyć źle: szybkość, SEO i bezpieczeństwo zostają w standardzie. Tworzenie stron Łódź wyceniamy po briefu; napisz, zobaczysz konkretny koszt i termin.",
+    },
+    {
     question: "Ile kosztuje strona internetowa w Łodzi?",
     answer: "Cena zależy od liczby widoków i podstron, projektu graficznego, treści, CMS, integracji, wersji językowych i migracji. Po briefie otrzymasz wycenę z zakresem, etapami i warunkami odbioru. Nie stosujemy jednej sztywnej ceny dla każdej realizacji.",
   },

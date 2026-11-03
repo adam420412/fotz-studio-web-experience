@@ -130,6 +130,20 @@ const content = {
     {
       "title": "Pomiar, raport i dalsze decyzje",
       "text": "Skutecznego marketingu nie oceniamy wyłącznie po liczbie publikacji lub zasięgu. Ustalamy, co ma zrobić odbiorca: wysłać formularz, zadzwonić, kupić albo zapisać się. W podsumowaniu pokazujemy wykonane prace i dane, do których mamy dostęp. Wartościowe zapytania, rozmowy sprzedażowe, wysłane oferty i płatności porównujemy z informacjami po stronie firmy. Kliknięcie telefonu nie oznacza odbytej rozmowy, a wysłany formularz nie oznacza pozyskanego klienta. Przy ocenie kampanii rozdzielamy koszt emisji, obsługi i produkcji. Dalsze decyzje zależą od jakości kontaktów, kosztów, marży i możliwości obsługi nowych klientów. Ewentualne zwiększenie budżetu wymaga osobnego uzgodnienia. Jeśli danych brakuje, zapisujemy tę lukę zamiast przypisywać marketingowi niepotwierdzoną sprzedaż."
+    },
+    {
+      "title": "Czym jest agencja marketingu internetowego i jak wybrać odpowiednią?",
+      "text": "Czym jest agencja marketingu internetowego? To zespół specjalistów, który przejmuje działania marketingowe firmy w internecie: SEO, reklamy, treści i social media. Agencja interaktywna buduje strony, agencja marketingowa prowadzi komunikację — my łączymy obie role. Co możemy oferować? Zakres SEO i zakresu marketingu internetowego w jednej umowie. Agencja marketingu internetowego zajmuje się nie tylko emisją reklam, ale całym zakresem marketingu internetowego — od strategii po pomiar. Odpowiednią agencję marketingu internetowego poznasz po pytaniach o cel, a nie po cenniku. Profesjonalna agencja SEO i profesjonalna agencja digital pokazują dowody: case study, proces, raport. Doświadczona agencja marketingowa powie też, czego nie zrobi w Twoim budżecie. Współpracy z agencją marketingu internetowego oceniaj po tym, czy agencja oferuje jasny podział odpowiedzialności i czy agencja posiada własne narzędzia pomiaru.",
+      "points": [
+        "Zakres SEO, działania SEO i SEO AI — widoczność organiczna i w odpowiedziach AI.",
+        "SEO i PPC: kampaniami reklamowymi Google Ads i Facebook Ads domykamy popyt.",
+        "SEO i content marketing oraz email marketingu — budowa popytu i relacje z klientami.",
+        "Specjalista SEO i marketing manager w jednym planie — bez przekazu między podwykonawcami."
+      ]
+    },
+    {
+      "title": "Jak pracuje agencja specjalizująca się w marketingu internetowym?",
+      "text": "Nasza agencja SEO i marketingowa — jako agencja specjalizującą się w marketingu cyfrowym — zaczyna od grupy docelowej: kim jest potencjalny klient, jakie są potrzeby i obawy potencjalnego klienta i co blokuje decyzję. W zakresie SEO naszej agencji SEO leży też optymalizacja treści pod intencję, a w obszarach marketingu poza wyszukiwarką — kanały społecznościowe i e-mail. Dopiero potem wybieramy kanały — media społecznościowe, wyszukiwarka, e-mail. Marketing online i marketingu cyfrowego nie mierzymy lajkami: mierzymy zapytaniami i sprzedażą. Marketingu bezpośredniego używamy tam, gdzie klient jest gotów kupić; celu marketingu bezpośredniego nie mylimy z budowaniem marki. Usługi marketingu internetowego i usługi SEO raportujemy co miesiąc. Twojej firmie i Twojej marki dajemy jeden plan: cele biznesowe, kanały i wskaźniki. Strona internetowa, treści i reklamy pracują na ten sam wynik — bez przypadkowych działań."
     }
   ],
   "faqs": [

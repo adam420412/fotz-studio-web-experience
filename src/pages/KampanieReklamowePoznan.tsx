@@ -520,6 +520,29 @@ const KampanieReklamowePoznan = () => {
         </div>
       </section>
 
+      {/* Kampania full-funnel */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <h2 className="text-3xl font-bold mb-6">Kampania, która buduje markę i sprzedaż — storytelling zamiast billboardu</h2>
+          <div className="space-y-5 text-gray-700 leading-relaxed">
+            <p>Skuteczna kampania w 2026 to nie jedna reklama, tylko system: storytelling i budowanie marki na górze lejka, performance na dole. Budowanie marki podnosi rozpoznawalność i widoczność marki, a remarketing domyka sprzedaż. Wzrost sprzedaży i wyniki sprzedaży mierzymy w liczbach — przychód z kanału, nie zasięg. Kampanie planujemy pod cele biznesowe i Twoje cele sprzedażowe, a nie pod formaty.</p>
+            <p>Strategie i strategii marketingowych uczymy się od danych: Google Analytics, Looker Studio i dane sprzedażowe pokazują, co działa. Marketing automation skaluje powtarzalne kontakty, a sztucznej inteligencji (w tym ChatGPT) używamy do testów kreacji — angażować odbiorców trzeba jednak ludzkim wglądem. Budżet mediowy i plan sprzedażowy raportujemy osobno: sprzedażowy wynik jest celem, nie wyświetlenia. Marketing B2B wymaga dłuższego cyklu, a marketingowy plan dla employer branding czy marki osobistej ma inne miary niż e-commerce.</p>
+            <p>Influencer marketing, wydarzenia na Facebooku czy kanał YouTube dobieramy do budżetu mediowego i branży — branżowy ekspert z realnym zasięgiem bije celebrytę. Case studies i studium przypadku z naszych realizacji pokazujemy przed startem. Jako agencja interaktywna łączymy kampanie z treściami na strony www — reklama prowadzi do strony, która sprzedaje. Materiałów promocyjnych nie produkujemy na zapas: każda kreacja ma zadanie.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Społeczność i eksperci */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <h2 className="text-3xl font-bold mb-6">Kto prowadzi Twoją kampanię — eksperci, nie przydzielony junior</h2>
+          <div className="space-y-5 text-gray-700 leading-relaxed">
+            <p>Kampanię prowadzi specjalista, który zna Twoją branżę — ekspercki kontent i reklama wymagają tej samej wiedzy. Marketing manager z naszej strony pilnuje celu i budżetu, a Ty masz jedną osobę kontaktową. Agencji marketingowej oceniasz po ludziach i procesie: kto pisze, kto optymalizuje, kto raportuje. Budujemy społeczność wokół marki w mediach społecznościowych, bo klienci, których marka angażuje, wracają taniej niż pozyskani z zimnej reklamy.</p>
+            <p>Wyszukiwać nas możesz po realizacjach — Poznań to nasza baza, a kampanie prowadzimy dla firm z całej Polski. Chcesz skalować działający kanał? Najpierw udowadniamy wynik na małym budżecie, potem skalujemy. Zobacz case studies i umów bezpłatną rozmowę.</p>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
