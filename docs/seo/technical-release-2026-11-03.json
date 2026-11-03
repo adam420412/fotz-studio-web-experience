@@ -1,0 +1,386 @@
+{
+  "date": "2026-11-03",
+  "baseCommit": "6ccc43d33d196e2bd8ebb240d75bd2694f649d57",
+  "scope": "Dokumentacja i statusy; ta gałąź nie zmienia kodu stron.",
+  "pullRequests": [
+    {
+      "number": 188,
+      "commit": "eae12934f21294c5c0fbd2247991c63e9909b59c",
+      "title": "SEO: konsolidacja /uslugi/pozycjonowanie do /seo/pozycjonowanie (#188)",
+      "status": "merged_main"
+    },
+    {
+      "number": 189,
+      "commit": "50c7ad3dfa29a8718a7c22ee0ba2828bbbeaf0be",
+      "title": "SEO: usuń przekierowania z sitemapy usług (#189)",
+      "status": "merged_main"
+    },
+    {
+      "number": 190,
+      "commit": "932a127664c0ddc196b8a29051fd2fbf707fb96c",
+      "title": "Testy: aktualizacja liczby FAQ strony Łódź (#190)",
+      "status": "merged_main"
+    },
+    {
+      "number": 191,
+      "commit": "6ccc43d33d196e2bd8ebb240d75bd2694f649d57",
+      "title": "Portfolio: przywrócenie galerii na 5 stronach usługowych (#191)",
+      "status": "merged_main"
+    }
+  ],
+  "publicResults": {
+    "consolidation": {
+      "pullRequests": [
+        188,
+        189
+      ],
+      "source": "analysis/production-consolidation.json",
+      "allPass": true,
+      "oldUrl": "https://www.fotz-studio.pl/uslugi/pozycjonowanie",
+      "targetUrl": "https://www.fotz-studio.pl/seo/pozycjonowanie",
+      "redirect": {
+        "status": 308,
+        "queryPreserved": true,
+        "location": "/seo/pozycjonowanie?release=188&utm_source=verification"
+      },
+      "target": {
+        "status": 200,
+        "canonical": "https://www.fotz-studio.pl/seo/pozycjonowanie",
+        "h1": 1,
+        "mainContent": 1
+      },
+      "checks": [
+        {
+          "check": "dokładny stary URL: jedno 308 z zachowaniem query",
+          "pass": true,
+          "details": {
+            "status": 308,
+            "location": "/seo/pozycjonowanie?release=188&utm_source=verification"
+          }
+        },
+        {
+          "check": "/seo/pozycjonowanie",
+          "pass": true,
+          "details": {
+            "status": 200,
+            "location": "",
+            "canonical": "https://www.fotz-studio.pl/seo/pozycjonowanie",
+            "h1": 1,
+            "mainContent": 1
+          }
+        },
+        {
+          "check": "/uslugi/pozycjonowanie/lublin",
+          "pass": true,
+          "details": {
+            "status": 200,
+            "location": "",
+            "canonical": "https://www.fotz-studio.pl/uslugi/pozycjonowanie/lublin",
+            "h1": 1,
+            "mainContent": 1
+          }
+        },
+        {
+          "check": "/uslugi/pozycjonowanie-lokalne",
+          "pass": true,
+          "details": {
+            "status": 200,
+            "location": "",
+            "canonical": "https://www.fotz-studio.pl/uslugi/pozycjonowanie-lokalne",
+            "h1": 1,
+            "mainContent": 1
+          }
+        },
+        {
+          "check": "/uslugi/pozycjonowanie/warszawa",
+          "pass": true,
+          "details": {
+            "status": 308,
+            "location": "/seo/pozycjonowanie-warszawa"
+          }
+        },
+        {
+          "check": "sitemap-services.xml: HTTP 200",
+          "pass": true,
+          "details": {
+            "status": 200,
+            "urls": 130
+          }
+        },
+        {
+          "check": "sitemap-cities.xml: HTTP 200",
+          "pass": true,
+          "details": {
+            "status": 200,
+            "urls": 81
+          }
+        },
+        {
+          "check": "sitemap-main.xml: HTTP 200",
+          "pass": true,
+          "details": {
+            "status": 200,
+            "urls": 68
+          }
+        },
+        {
+          "check": "sitemapy: brak starych aliasów",
+          "pass": true,
+          "details": []
+        },
+        {
+          "check": "sitemapy: każdy kanoniczny target dokładnie raz",
+          "pass": true,
+          "details": {
+            "/seo/pozycjonowanie": 1,
+            "/seo/pozycjonowanie-gdansk": 1,
+            "/seo/pozycjonowanie-lodz": 1,
+            "/seo/pozycjonowanie-warszawa": 1,
+            "/seo/pozycjonowanie-wroclaw": 1,
+            "/uslugi/pozycjonowanie/lublin": 1
+          }
+        }
+      ],
+      "gscExactPages": {
+        "period": {
+          "from": "2026-10-05",
+          "to": "2026-11-01",
+          "days": 28
+        },
+        "pages": [
+          {
+            "page": "https://www.fotz-studio.pl/uslugi/pozycjonowanie",
+            "source": "analysis/gsc-old-exact-final.json",
+            "clicks": 0,
+            "impressions": 0,
+            "ctr": "0%",
+            "averagePosition": 0
+          },
+          {
+            "page": "https://www.fotz-studio.pl/seo/pozycjonowanie",
+            "source": "analysis/gsc-new-exact-final.json",
+            "clicks": 0,
+            "impressions": 0,
+            "ctr": "0%",
+            "averagePosition": 0
+          }
+        ],
+        "interpretation": "Wartości 0 kliknięć i 0 wyświetleń dla obu dokładnych URL-i w tym okresie nie dowodzą kanibalizacji ani nie opisują rankingów."
+      }
+    },
+    "galleryRelease": {
+      "pullRequest": 191,
+      "commit": "6ccc43d33d196e2bd8ebb240d75bd2694f649d57",
+      "deployment": {
+        "id": "dpl_43iEdrpQzBjbGdPiKwEsCJ3bwVpP",
+        "status": "READY",
+        "wwwAlias": true
+      },
+      "source": "analysis/production-gallery-verification.json",
+      "allPass": true,
+      "results": [
+        {
+          "path": "/agencja-marketingowa",
+          "query": "4a57f4bdee140c8a",
+          "http": 200,
+          "score": 97,
+          "neuronStatus": "ok",
+          "titleLength": 58,
+          "descriptionLength": 153,
+          "titleSuffix": true,
+          "canonical": "https://www.fotz-studio.pl/agencja-marketingowa",
+          "h1": 1,
+          "mainContent": 1,
+          "galleryCount": 1,
+          "galleryCollection": "studio",
+          "galleryImages": 3,
+          "pass": true
+        },
+        {
+          "path": "/seo",
+          "query": "ae6c1fe03498f941",
+          "http": 200,
+          "score": 95,
+          "neuronStatus": "ok",
+          "titleLength": 41,
+          "descriptionLength": 136,
+          "titleSuffix": true,
+          "canonical": "https://www.fotz-studio.pl/seo",
+          "h1": 1,
+          "mainContent": 1,
+          "galleryCount": 1,
+          "galleryCollection": "web",
+          "galleryImages": 3,
+          "pass": true
+        },
+        {
+          "path": "/uslugi/strony-internetowe/bialystok",
+          "query": "13f2250b007e28f4",
+          "http": 200,
+          "score": 95,
+          "neuronStatus": "ok",
+          "titleLength": 51,
+          "descriptionLength": 144,
+          "titleSuffix": true,
+          "canonical": "https://www.fotz-studio.pl/uslugi/strony-internetowe/bialystok",
+          "h1": 1,
+          "mainContent": 1,
+          "galleryCount": 1,
+          "galleryCollection": "web",
+          "galleryImages": 3,
+          "pass": true
+        },
+        {
+          "path": "/uslugi/strony-internetowe/lodz",
+          "query": "979d8b770d10ac5a",
+          "http": 200,
+          "score": 98,
+          "neuronStatus": "ok",
+          "titleLength": 46,
+          "descriptionLength": 138,
+          "titleSuffix": true,
+          "canonical": "https://www.fotz-studio.pl/uslugi/strony-internetowe/lodz",
+          "h1": 1,
+          "mainContent": 1,
+          "galleryCount": 1,
+          "galleryCollection": "web",
+          "galleryImages": 3,
+          "pass": true
+        },
+        {
+          "path": "/uslugi/strony-internetowe/wroclaw",
+          "query": "77e42b44eb180083",
+          "http": 200,
+          "score": 96,
+          "neuronStatus": "ok",
+          "titleLength": 49,
+          "descriptionLength": 141,
+          "titleSuffix": true,
+          "canonical": "https://www.fotz-studio.pl/uslugi/strony-internetowe/wroclaw",
+          "h1": 1,
+          "mainContent": 1,
+          "galleryCount": 1,
+          "galleryCollection": "web",
+          "galleryImages": 3,
+          "pass": true
+        }
+      ]
+    }
+  },
+  "workingResults": {
+    "public": false,
+    "target": 95,
+    "publicationAllowed": false,
+    "candidates": [
+      {
+        "worktree": "work-gsc-sosnowiec",
+        "page": "https://www.fotz-studio.pl/pozycjonowanie/sosnowiec",
+        "queryId": "0248744294cff686",
+        "publicBaseline": 79,
+        "localScore": 94,
+        "correctionCount": 1,
+        "branch": "swarm/sosnowiec-gsc-20261103",
+        "commit": null,
+        "pushed": false,
+        "pullRequest": null,
+        "status": "NIEPUBLICZNE",
+        "reason": "Wynik roboczy poniżej 95; bez commita, push, PR i publikacji."
+      },
+      {
+        "worktree": "work-gsc-szczecin",
+        "page": "https://www.fotz-studio.pl/uslugi/strony-internetowe/szczecin",
+        "queryId": "4dc4bc3bd4a2fdd0",
+        "publicBaseline": 76,
+        "localScore": 94,
+        "correctionCount": 1,
+        "branch": "swarm/szczecin-gsc-20261103",
+        "commit": null,
+        "pushed": false,
+        "pullRequest": null,
+        "status": "NIEPUBLICZNE",
+        "reason": "Wynik roboczy poniżej 95; bez commita, push, PR i publikacji."
+      },
+      {
+        "worktree": "work-gsc-olsztyn",
+        "page": "https://www.fotz-studio.pl/uslugi/pozycjonowanie/olsztyn",
+        "queryId": "c2d5d7d283c99677",
+        "publicBaseline": 58,
+        "localScore": 92,
+        "correctionCount": 1,
+        "branch": "swarm/olsztyn-gsc-20261103",
+        "commit": null,
+        "pushed": false,
+        "pullRequest": null,
+        "status": "NIEPUBLICZNE",
+        "reason": "Wynik roboczy poniżej 95; bez commita, push, PR i publikacji."
+      },
+      {
+        "worktree": "work-gsc-rzeszow",
+        "page": "https://www.fotz-studio.pl/agencja-marketingowa/rzeszow",
+        "queryId": "bcb7b5a098a5f0aa",
+        "publicBaseline": 62,
+        "localScore": 91,
+        "correctionCount": 1,
+        "branch": "swarm/rzeszow-gsc-20261103",
+        "commit": null,
+        "pushed": false,
+        "pullRequest": null,
+        "status": "NIEPUBLICZNE",
+        "reason": "Wynik roboczy poniżej 95; bez commita, push, PR i publikacji."
+      },
+      {
+        "worktree": "work-gsc-kompleksowa",
+        "page": "https://www.fotz-studio.pl/kompleksowa-obsluga-marketingowa",
+        "queryId": "33c6a93a5e54c06a",
+        "publicBaseline": 87,
+        "localScore": 93,
+        "correctionCount": 1,
+        "branch": "swarm/kompleksowa-gsc-20261103",
+        "commit": null,
+        "pushed": false,
+        "pullRequest": null,
+        "status": "NIEPUBLICZNE",
+        "reason": "Wynik roboczy poniżej 95; bez commita, push, PR i publikacji."
+      }
+    ]
+  },
+  "mainTechnicalChecks": {
+    "commit": "6ccc43d33d196e2bd8ebb240d75bd2694f649d57",
+    "npmTest": {
+      "passed": 304,
+      "total": 304,
+      "status": "PASS"
+    },
+    "build": {
+      "prerenderedPages": 1060,
+      "status": "PASS"
+    },
+    "seoCheck": {
+      "headErrors": 0,
+      "sitemapErrors": 0,
+      "linkErrors": 0,
+      "galleryErrors": 0,
+      "status": "PASS"
+    },
+    "workGalleries": 448
+  },
+  "documentationValidation": {
+    "register": {
+      "command": "python ../validate_register.py docs/seo/ai-work-register.csv",
+      "columns": 26,
+      "records": 1067,
+      "bom": "UTF-8",
+      "changedRecords": 12,
+      "intendedRowsOnly": true,
+      "status": "PASS"
+    },
+    "typecheck": {"command": "npm run typecheck", "status": "PASS"},
+    "liveBlogTests": {"command": "node --test scripts/live-blog.test.mjs", "passed": 7, "total": 7, "status": "PASS"},
+    "diffCheck": {"command": "git diff --check", "status": "PASS"},
+    "build": {"status": "NOT_RUN", "reason": "Zmiana wyłącznie dokumentacyjna; build nie jest wymagany."}
+  },
+  "notes": [
+    "Wyniki publiczne i lokalne wyniki robocze są rozdzielone; wyników roboczych nie traktowano jako wdrożonych.",
+    "Dokument nie zawiera danych konta, sesji, ciasteczek ani kluczy i nie opisuje wzrostu ruchu lub leadów."
+  ]
+}

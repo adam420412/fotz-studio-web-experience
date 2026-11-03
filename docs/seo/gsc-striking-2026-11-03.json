@@ -1,0 +1,1187 @@
+{
+  "date": "2026-11-03",
+  "source": {
+    "name": "Google Search Console",
+    "export": "analysis/gsc-striking-28d.json",
+    "candidateExport": "analysis/gsc-candidates-28d.json",
+    "period": {
+      "from": "2026-10-05",
+      "to": "2026-11-01",
+      "days": 28
+    },
+    "totalRows": 1000,
+    "strikingCount": 121,
+    "strikingPositionRange": {
+      "from": 11,
+      "to": 20
+    }
+  },
+  "striking": [
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "303",
+      "position": "11,0",
+      "positionNumber": 11,
+      "query": "digital marketing"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "200",
+      "position": "17,7",
+      "positionNumber": 17.7,
+      "query": "agencja social media poznań"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "69",
+      "position": "14,5",
+      "positionNumber": 14.5,
+      "query": "seo dla małych firm"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "36",
+      "position": "18,3",
+      "positionNumber": 18.3,
+      "query": "cms"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "28",
+      "position": "13,9",
+      "positionNumber": 13.9,
+      "query": "social media marketing poznań"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "24",
+      "position": "13,4",
+      "positionNumber": 13.4,
+      "query": "wacc"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "22",
+      "position": "13,5",
+      "positionNumber": 13.5,
+      "query": "pozycjonowanie wałbrzych"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "22",
+      "position": "15,0",
+      "positionNumber": 15,
+      "query": "onboarding"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "22",
+      "position": "19,3",
+      "positionNumber": 19.3,
+      "query": "kompleksowa obsługa marketingowa"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "21",
+      "position": "19,5",
+      "positionNumber": 19.5,
+      "query": "linkedin marketing"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "18",
+      "position": "12,9",
+      "positionNumber": 12.9,
+      "query": "sklepy online poznań"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "17",
+      "position": "18,3",
+      "positionNumber": 18.3,
+      "query": "seo lokalne dla małych firm"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "16",
+      "position": "15,0",
+      "positionNumber": 15,
+      "query": "lokalne seo dla małych firm"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "16",
+      "position": "15,1",
+      "positionNumber": 15.1,
+      "query": "jobs to be done"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "15",
+      "position": "11,4",
+      "positionNumber": 11.4,
+      "query": "marketing firm produkcyjnych"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "15",
+      "position": "14,4",
+      "positionNumber": 14.4,
+      "query": "voc"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "15",
+      "position": "16,1",
+      "positionNumber": 16.1,
+      "query": "agencja facebook ads gdańsk"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "15",
+      "position": "17,3",
+      "positionNumber": 17.3,
+      "query": "czym jest kampania reklamowa"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "14",
+      "position": "12,3",
+      "positionNumber": 12.3,
+      "query": "pozycjonowanie olsztyn"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "14",
+      "position": "13,4",
+      "positionNumber": 13.4,
+      "query": "strony wordpress poznań"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "14",
+      "position": "15,1",
+      "positionNumber": 15.1,
+      "query": "agencja marketingowa rzeszów"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "14",
+      "position": "19,4",
+      "positionNumber": 19.4,
+      "query": "projektowanie stron internetowych szczecin"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "13",
+      "position": "15,5",
+      "positionNumber": 15.5,
+      "query": "marketing lokalny dla firm"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "13",
+      "position": "18,5",
+      "positionNumber": 18.5,
+      "query": "instagram dla firmy"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "12",
+      "position": "12,7",
+      "positionNumber": 12.7,
+      "query": "ads instagram"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "12",
+      "position": "13,8",
+      "positionNumber": 13.8,
+      "query": "obsługa social media lublin"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "11",
+      "position": "11,4",
+      "positionNumber": 11.4,
+      "query": "jak założyć startup"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "11",
+      "position": "13,0",
+      "positionNumber": 13,
+      "query": "audyt seo opole"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "11",
+      "position": "16,9",
+      "positionNumber": 16.9,
+      "query": "strona internetowa cena"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "11",
+      "position": "18,6",
+      "positionNumber": 18.6,
+      "query": "budowa stron internetowych szczecin"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "10",
+      "position": "12,3",
+      "positionNumber": 12.3,
+      "query": "facebook ads cennik"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "10",
+      "position": "12,4",
+      "positionNumber": 12.4,
+      "query": "strategia facebook ads"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "10",
+      "position": "12,5",
+      "positionNumber": 12.5,
+      "query": "strony wordpress poznan"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "10",
+      "position": "15,3",
+      "positionNumber": 15.3,
+      "query": "ekspert seo poznań"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "10",
+      "position": "15,5",
+      "positionNumber": 15.5,
+      "query": "sklepy internetowe kraków"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "10",
+      "position": "18,5",
+      "positionNumber": 18.5,
+      "query": "agencja seo sosnowiec"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "9",
+      "position": "11,1",
+      "positionNumber": 11.1,
+      "query": "agencja shopify polska"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "9",
+      "position": "11,2",
+      "positionNumber": 11.2,
+      "query": "forecast sprzedaży"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "9",
+      "position": "11,8",
+      "positionNumber": 11.8,
+      "query": "pozycjonowanie stron zabrze"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "9",
+      "position": "12,3",
+      "positionNumber": 12.3,
+      "query": "pozycjonowanie zabrze"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "9",
+      "position": "13,7",
+      "positionNumber": 13.7,
+      "query": "agencja seo koszalin"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "9",
+      "position": "14,1",
+      "positionNumber": 14.1,
+      "query": "kampanie email marketing"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "9",
+      "position": "14,3",
+      "positionNumber": 14.3,
+      "query": "fotografia produktowa poznań"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "9",
+      "position": "17,0",
+      "positionNumber": 17,
+      "query": "kampanie facebook cennik"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "9",
+      "position": "17,7",
+      "positionNumber": 17.7,
+      "query": "jak zbudować account management w firmie"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "9",
+      "position": "18,4",
+      "positionNumber": 18.4,
+      "query": "ekspert seo gdynia"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "9",
+      "position": "18,8",
+      "positionNumber": 18.8,
+      "query": "seo koszalin"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "8",
+      "position": "11,0",
+      "positionNumber": 11,
+      "query": "agencja seo mokotów"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "8",
+      "position": "11,9",
+      "positionNumber": 11.9,
+      "query": "seo olsztyn"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "8",
+      "position": "12,6",
+      "positionNumber": 12.6,
+      "query": "agencja seo rzeszów"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "8",
+      "position": "12,6",
+      "positionNumber": 12.6,
+      "query": "pozycjonowanie stron wałbrzych"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "8",
+      "position": "17,0",
+      "positionNumber": 17,
+      "query": "mobile marketing"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "8",
+      "position": "18,8",
+      "positionNumber": 18.8,
+      "query": "kampanie marketingowe w internecie"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "7",
+      "position": "13,1",
+      "positionNumber": 13.1,
+      "query": "pozycjonowanie lokalne wałbrzych"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "7",
+      "position": "13,7",
+      "positionNumber": 13.7,
+      "query": "system planowania route to market"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "7",
+      "position": "13,9",
+      "positionNumber": 13.9,
+      "query": "cennik facebook ads"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "7",
+      "position": "15,1",
+      "positionNumber": 15.1,
+      "query": "branding firm łódź"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "7",
+      "position": "15,6",
+      "positionNumber": 15.6,
+      "query": "marketing internetowy dla właścicieli małych firm"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "7",
+      "position": "16,6",
+      "positionNumber": 16.6,
+      "query": "csat co to"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "7",
+      "position": "16,7",
+      "positionNumber": 16.7,
+      "query": "agencja typo3 zabrze"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "7",
+      "position": "17,3",
+      "positionNumber": 17.3,
+      "query": "landing pages kalisz"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "7",
+      "position": "19,6",
+      "positionNumber": 19.6,
+      "query": "marketing online dla małej firmy"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "6",
+      "position": "13,8",
+      "positionNumber": 13.8,
+      "query": "agencja seo wałbrzych"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "6",
+      "position": "14,5",
+      "positionNumber": 14.5,
+      "query": "kampanie reklamowe dla firm"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "6",
+      "position": "15,0",
+      "positionNumber": 15,
+      "query": "profesjonalne zdjęcia produktów"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "6",
+      "position": "15,5",
+      "positionNumber": 15.5,
+      "query": "tania strona internetowa"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "6",
+      "position": "16,5",
+      "positionNumber": 16.5,
+      "query": "firma marketingowa warszawa"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "6",
+      "position": "19,0",
+      "positionNumber": 19,
+      "query": "systemy cms radom"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "6",
+      "position": "19,2",
+      "positionNumber": 19.2,
+      "query": "projektowanie stron www szczecin"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "6",
+      "position": "19,8",
+      "positionNumber": 19.8,
+      "query": "tworzenie stron www szczecin"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "5",
+      "position": "11,0",
+      "positionNumber": 11,
+      "query": "pivotować"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "5",
+      "position": "11,6",
+      "positionNumber": 11.6,
+      "query": "agencja seo toruń"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "5",
+      "position": "11,6",
+      "positionNumber": 11.6,
+      "query": "szkolenia adwords poznań"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "5",
+      "position": "11,8",
+      "positionNumber": 11.8,
+      "query": "agencja programmatic"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "5",
+      "position": "12,0",
+      "positionNumber": 12,
+      "query": "częstochowa pozycjonowanie"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "5",
+      "position": "12,0",
+      "positionNumber": 12,
+      "query": "ekspert seo katowice"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "5",
+      "position": "12,4",
+      "positionNumber": 12.4,
+      "query": "kampanie facebook ads katowice"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "5",
+      "position": "12,6",
+      "positionNumber": 12.6,
+      "query": "profesjonalne strony internetowe poznań"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "5",
+      "position": "12,6",
+      "positionNumber": 12.6,
+      "query": "tworzenie stron www trójmiasto"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "5",
+      "position": "13,4",
+      "positionNumber": 13.4,
+      "query": "jak rozpocząć dropshipping bielizny"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "5",
+      "position": "13,4",
+      "positionNumber": 13.4,
+      "query": "obsługa meta ads"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "5",
+      "position": "14,0",
+      "positionNumber": 14,
+      "query": "obsługa kampanii"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "5",
+      "position": "15,0",
+      "positionNumber": 15,
+      "query": "agencja webowa bydgoszcz"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "5",
+      "position": "17,2",
+      "positionNumber": 17.2,
+      "query": "profesjonalne strony www"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "5",
+      "position": "18,6",
+      "positionNumber": 18.6,
+      "query": "facebook ads cena"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "5",
+      "position": "20,0",
+      "positionNumber": 20,
+      "query": "copywriter"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "5",
+      "position": "20,0",
+      "positionNumber": 20,
+      "query": "tanie strony www kraków"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "4",
+      "position": "11,2",
+      "positionNumber": 11.2,
+      "query": "pozycjonowanie google poznań"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "4",
+      "position": "11,5",
+      "positionNumber": 11.5,
+      "query": "firmy seo katowice"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "4",
+      "position": "12,0",
+      "positionNumber": 12,
+      "query": "agencja seo olsztyn"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "4",
+      "position": "12,2",
+      "positionNumber": 12.2,
+      "query": "facebook ads poznań"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "4",
+      "position": "12,5",
+      "positionNumber": 12.5,
+      "query": "cpc facebook ads"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "4",
+      "position": "13,0",
+      "positionNumber": 13,
+      "query": "audyt seo śląsk"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "4",
+      "position": "13,0",
+      "positionNumber": 13,
+      "query": "meta ads dla producenta"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "4",
+      "position": "13,2",
+      "positionNumber": 13.2,
+      "query": "kampania instagram ads"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "4",
+      "position": "13,8",
+      "positionNumber": 13.8,
+      "query": "facebook ads warszawa"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "4",
+      "position": "15,2",
+      "positionNumber": 15.2,
+      "query": "content marketing medyczny"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "4",
+      "position": "16,0",
+      "positionNumber": 16,
+      "query": "outsourcing eksportu"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "4",
+      "position": "17,2",
+      "positionNumber": 17.2,
+      "query": "audyt seo łódź"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "4",
+      "position": "17,2",
+      "positionNumber": 17.2,
+      "query": "instagram kampanie"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "4",
+      "position": "17,2",
+      "positionNumber": 17.2,
+      "query": "strony typo3 tychy"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "4",
+      "position": "17,5",
+      "positionNumber": 17.5,
+      "query": "marketing branży medycznej"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "4",
+      "position": "19,0",
+      "positionNumber": 19,
+      "query": "fotografia produktowa poradnik"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "4",
+      "position": "19,0",
+      "positionNumber": 19,
+      "query": "krs kto kogo"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "4",
+      "position": "19,2",
+      "positionNumber": 19.2,
+      "query": "kampanie social media katowice"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "4",
+      "position": "20,0",
+      "positionNumber": 20,
+      "query": "co to jest seo"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "3",
+      "position": "11,0",
+      "positionNumber": 11,
+      "query": "estymacja sprzedaży"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "3",
+      "position": "11,0",
+      "positionNumber": 11,
+      "query": "postmortem co to"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "3",
+      "position": "11,0",
+      "positionNumber": 11,
+      "query": "startup"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "3",
+      "position": "11,3",
+      "positionNumber": 11.3,
+      "query": "pozycjonowanie stron kozy"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "3",
+      "position": "11,3",
+      "positionNumber": 11.3,
+      "query": "social media cennik"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "3",
+      "position": "11,7",
+      "positionNumber": 11.7,
+      "query": "affiliate"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "3",
+      "position": "12,0",
+      "positionNumber": 12,
+      "query": "moat co to znaczy"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "3",
+      "position": "12,0",
+      "positionNumber": 12,
+      "query": "prowadzenie facebook dla firm katowice"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "3",
+      "position": "12,3",
+      "positionNumber": 12.3,
+      "query": "marketing dla branży produkcyjnej"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "3",
+      "position": "13,3",
+      "positionNumber": 13.3,
+      "query": "google adwords katowice"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "3",
+      "position": "14,3",
+      "positionNumber": 14.3,
+      "query": "pozycjonowanie strzelce opolskie"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "3",
+      "position": "14,7",
+      "positionNumber": 14.7,
+      "query": "branding dla małych firm"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "3",
+      "position": "14,7",
+      "positionNumber": 14.7,
+      "query": "pozycjonowanie w google poznań"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "3",
+      "position": "14,7",
+      "positionNumber": 14.7,
+      "query": "tworzenie sklepów internetowych białystok"
+    },
+    {
+      "clicks": "0",
+      "ctr": "0%",
+      "impressions": "3",
+      "position": "15,0",
+      "positionNumber": 15,
+      "query": "które agencje facebook ads najlepiej sprawdzają się dla sklepów internetowych"
+    }
+  ],
+  "candidates": [
+    {
+      "page": "https://www.fotz-studio.pl/agencja-social-media/poznan",
+      "totalRows": 5,
+      "totals": {
+        "clicks": 0,
+        "impressions": 57,
+        "ctr": "0%",
+        "averagePosition": 20.5
+      },
+      "assignedStrikingQueries": []
+    },
+    {
+      "page": "https://www.fotz-studio.pl/kompleksowa-obsluga-marketingowa",
+      "totalRows": 2,
+      "totals": {
+        "clicks": 0,
+        "impressions": 24,
+        "ctr": "0%",
+        "averagePosition": 19.7
+      },
+      "assignedStrikingQueries": [
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "22",
+          "position": "19,3",
+          "positionNumber": 19.3,
+          "query": "kompleksowa obsługa marketingowa"
+        }
+      ]
+    },
+    {
+      "page": "https://www.fotz-studio.pl/uslugi/strony-internetowe/szczecin",
+      "totalRows": 15,
+      "totals": {
+        "clicks": 0,
+        "impressions": 80,
+        "ctr": "0%",
+        "averagePosition": 42.5
+      },
+      "assignedStrikingQueries": [
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "15",
+          "position": "17,6",
+          "positionNumber": 17.6,
+          "query": "tworzenie stron internetowych szczecin"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "10",
+          "position": "12,0",
+          "positionNumber": 12,
+          "query": "budowa stron internetowych szczecin"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "6",
+          "position": "19,8",
+          "positionNumber": 19.8,
+          "query": "tworzenie stron www szczecin"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "15,0",
+          "positionNumber": 15,
+          "query": "projektowanie sklepów internetowych szczecin"
+        }
+      ]
+    },
+    {
+      "page": "https://www.fotz-studio.pl/uslugi/pozycjonowanie/olsztyn",
+      "totalRows": 10,
+      "totals": {
+        "clicks": 0,
+        "impressions": 63,
+        "ctr": "0%",
+        "averagePosition": 20.2
+      },
+      "assignedStrikingQueries": [
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "14",
+          "position": "12,3",
+          "positionNumber": 12.3,
+          "query": "pozycjonowanie olsztyn"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "8",
+          "position": "11,9",
+          "positionNumber": 11.9,
+          "query": "seo olsztyn"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "4",
+          "position": "12,0",
+          "positionNumber": 12,
+          "query": "agencja seo olsztyn"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "2",
+          "position": "12,0",
+          "positionNumber": 12,
+          "query": "agencja seo olysztyn"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "13,0",
+          "positionNumber": 13,
+          "query": "pozycjonowanie strony olsztyn"
+        }
+      ]
+    },
+    {
+      "page": "https://www.fotz-studio.pl/agencja-marketingowa/rzeszow",
+      "totalRows": 5,
+      "totals": {
+        "clicks": 0,
+        "impressions": 40,
+        "ctr": "0%",
+        "averagePosition": 26
+      },
+      "assignedStrikingQueries": [
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "14",
+          "position": "15,1",
+          "positionNumber": 15.1,
+          "query": "agencja marketingowa rzeszów"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "8",
+          "position": "12,6",
+          "positionNumber": 12.6,
+          "query": "agencja seo rzeszów"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "16,0",
+          "positionNumber": 16,
+          "query": "google ads rzeszów"
+        }
+      ]
+    },
+    {
+      "page": "https://www.fotz-studio.pl/pozycjonowanie/sosnowiec",
+      "totalRows": 7,
+      "totals": {
+        "clicks": 0,
+        "impressions": 80,
+        "ctr": "0%",
+        "averagePosition": 22.8
+      },
+      "assignedStrikingQueries": [
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "10",
+          "position": "18,5",
+          "positionNumber": 18.5,
+          "query": "agencja seo sosnowiec"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "13,0",
+          "positionNumber": 13,
+          "query": "pozycjonowanie stron www sosnowiec"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Lista striking obejmuje wyłącznie frazy o średniej pozycji 11–20 z zapisanej puli 1000 zapytań.",
+    "Dla /agencja-social-media/poznan lista fraz 11–20 jest pusta; dotychczasowy publiczny wynik 92 nie jest tu zmieniany.",
+    "Dane GSC opisują wskazany okres i dokładne strony; nie są dowodem wzrostu ruchu ani leadów."
+  ]
+}
