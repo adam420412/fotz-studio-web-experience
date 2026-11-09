@@ -1,0 +1,558 @@
+{
+  "date": "2026-11-09",
+  "source": {
+    "name": "Google Search Console",
+    "export": "analysis/gsc-remaining-28d-20261109.json",
+    "period": {
+      "from": "2026-10-11",
+      "to": "2026-11-07",
+      "days": 28
+    }
+  },
+  "pages": [
+    {
+      "page": "https://www.fotz-studio.pl/agencja-social-media/poznan",
+      "charts": [
+        "11.10.2026\n13.10.2026\n15.10.2026\n17.10.2026\n19.10.2026\n21.10.2026\n23.10.2026\n25.10.2026\n27.10.2026\n29.10.2026\n31.10.2026\n2.11.2026\n4.11.2026\n6.11.2026\n3\n2\n1\n0\n9\n6\n3\n0\nWykres, który pokazuje dane Łączna liczba kliknięć, Łączna liczba wyświetleń, Średni CTR i Średnia pozycja z okresu od 11 października 2026 do 7 listopada 2026"
+      ],
+      "striking": [
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "44",
+          "position": "19,8",
+          "positionNumber": 19.8,
+          "query": "agencja social media poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "3",
+          "position": "17,3",
+          "positionNumber": 17.3,
+          "query": "agencja facebook poznań"
+        }
+      ],
+      "topRows": [
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "44",
+          "position": "19,8",
+          "positionNumber": 19.8,
+          "query": "agencja social media poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "9",
+          "position": "6,2",
+          "positionNumber": 6.2,
+          "query": "agencja social media poznan"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "4",
+          "position": "37,5",
+          "positionNumber": 37.5,
+          "query": "social media poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "3",
+          "position": "9,7",
+          "positionNumber": 9.7,
+          "query": "facebook agencja poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "3",
+          "position": "17,3",
+          "positionNumber": 17.3,
+          "query": "agencja facebook poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "2",
+          "position": "7,0",
+          "positionNumber": 7,
+          "query": "agencje social media poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "6,0",
+          "positionNumber": 6,
+          "query": "agencje social media poznan"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "26,0",
+          "positionNumber": 26,
+          "query": "facebook ads poznań"
+        }
+      ],
+      "totalRows": 8,
+      "totals": [
+        "\nŁączna liczba kliknięć\n1",
+        "\nŁączna liczba wyświetleń\n79",
+        "Średni CTR\n1,3%",
+        "Średnia pozycja\n16,5"
+      ],
+      "url": "https://search.google.com/search-console/performance/search-analytics?resource_id=sc-domain%3Afotz-studio.pl&hl=pl&breakdown=query&num_of_days=28&page=!https%3A%2F%2Fwww.fotz-studio.pl%2Fagencja-social-media%2Fpoznan"
+    },
+    {
+      "page": "https://www.fotz-studio.pl/seo/pozycjonowanie-lodz",
+      "charts": [
+        "11.10.2026\n13.10.2026\n15.10.2026\n17.10.2026\n19.10.2026\n21.10.2026\n23.10.2026\n25.10.2026\n27.10.2026\n29.10.2026\n31.10.2026\n2.11.2026\n4.11.2026\n6.11.2026\n3\n2\n1\n0\n12\n8\n4\n0\nWykres, który pokazuje dane Łączna liczba kliknięć, Łączna liczba wyświetleń, Średni CTR i Średnia pozycja z okresu od 11 października 2026 do 7 listopada 2026"
+      ],
+      "striking": [],
+      "topRows": [
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "40",
+          "position": "89,0",
+          "positionNumber": 89,
+          "query": "pozycjonowanie stron łódź"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "36",
+          "position": "92,9",
+          "positionNumber": 92.9,
+          "query": "pozycjonowanie łódź"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "13",
+          "position": "63,5",
+          "positionNumber": 63.5,
+          "query": "pozycjonowanie sklepu łódź"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "12",
+          "position": "89,6",
+          "positionNumber": 89.6,
+          "query": "pozycjonowanie lokalne łódź"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "11",
+          "position": "90,6",
+          "positionNumber": 90.6,
+          "query": "pozycjonowanie sklepu internetowego łódź"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "7",
+          "position": "67,3",
+          "positionNumber": 67.3,
+          "query": "agencja seo łódź"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "4",
+          "position": "75,0",
+          "positionNumber": 75,
+          "query": "pozycjonowanie lodz"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "3",
+          "position": "83,7",
+          "positionNumber": 83.7,
+          "query": "łódź pozycjonowanie"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "3",
+          "position": "86,3",
+          "positionNumber": 86.3,
+          "query": "pozycjonowanie sklepów łódź"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "3",
+          "position": "92,7",
+          "positionNumber": 92.7,
+          "query": "pozycjonowanie www łódź"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "2",
+          "position": "88,5",
+          "positionNumber": 88.5,
+          "query": "pozycjonowanie strony łódź"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "2",
+          "position": "90,5",
+          "positionNumber": 90.5,
+          "query": "skuteczne pozycjonowanie łódź"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "2",
+          "position": "129,0",
+          "positionNumber": 129,
+          "query": "pozycjonowanie stron www łódź"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "103,0",
+          "positionNumber": 103,
+          "query": "seo łódź"
+        }
+      ],
+      "totalRows": 14,
+      "totals": [
+        "\nŁączna liczba kliknięć\n0",
+        "\nŁączna liczba wyświetleń\n140",
+        "Średni CTR\n0%",
+        "Średnia pozycja\n86,3"
+      ],
+      "url": "https://search.google.com/search-console/performance/search-analytics?resource_id=sc-domain%3Afotz-studio.pl&hl=pl&breakdown=query&num_of_days=28&page=!https%3A%2F%2Fwww.fotz-studio.pl%2Fseo%2Fpozycjonowanie-lodz"
+    },
+    {
+      "page": "https://www.fotz-studio.pl/kampanie-reklamowe",
+      "charts": [
+        "11.10.2026\n13.10.2026\n15.10.2026\n17.10.2026\n19.10.2026\n21.10.2026\n23.10.2026\n25.10.2026\n27.10.2026\n29.10.2026\n31.10.2026\n2.11.2026\n4.11.2026\n6.11.2026\n3\n2\n1\n0\n3\n2\n1\n0\nWykres, który pokazuje dane Łączna liczba kliknięć, Łączna liczba wyświetleń, Średni CTR i Średnia pozycja z okresu od 11 października 2026 do 7 listopada 2026"
+      ],
+      "striking": [],
+      "topRows": [],
+      "totalRows": 0,
+      "totals": [
+        "\nŁączna liczba kliknięć\n0",
+        "\nŁączna liczba wyświetleń\n0",
+        "Średni CTR\n0%",
+        "Średnia pozycja\n0"
+      ],
+      "url": "https://search.google.com/search-console/performance/search-analytics?resource_id=sc-domain%3Afotz-studio.pl&hl=pl&breakdown=query&num_of_days=28&page=!https%3A%2F%2Fwww.fotz-studio.pl%2Fkampanie-reklamowe"
+    },
+    {
+      "page": "https://www.fotz-studio.pl/kampanie-reklamowe-poznan",
+      "charts": [
+        "11.10.2026\n13.10.2026\n15.10.2026\n17.10.2026\n19.10.2026\n21.10.2026\n23.10.2026\n25.10.2026\n27.10.2026\n29.10.2026\n31.10.2026\n2.11.2026\n4.11.2026\n6.11.2026\n3\n2\n1\n0\n6\n4\n2\n0\nWykres, który pokazuje dane Łączna liczba kliknięć, Łączna liczba wyświetleń, Średni CTR i Średnia pozycja z okresu od 11 października 2026 do 7 listopada 2026"
+      ],
+      "striking": [
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "4",
+          "position": "16,5",
+          "positionNumber": 16.5,
+          "query": "facebook ads poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "11,0",
+          "positionNumber": 11,
+          "query": "agencja facebook poznań"
+        }
+      ],
+      "topRows": [
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "7",
+          "position": "93,4",
+          "positionNumber": 93.4,
+          "query": "google ads poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "6",
+          "position": "100,3",
+          "positionNumber": 100.3,
+          "query": "adwords poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "5",
+          "position": "99,8",
+          "positionNumber": 99.8,
+          "query": "google adwords poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "4",
+          "position": "16,5",
+          "positionNumber": 16.5,
+          "query": "facebook ads poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "4",
+          "position": "24,8",
+          "positionNumber": 24.8,
+          "query": "kampanie facebook ads poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "4",
+          "position": "27,2",
+          "positionNumber": 27.2,
+          "query": "agencja google ads poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "2",
+          "position": "30,0",
+          "positionNumber": 30,
+          "query": "kampanie reklamowe google poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "2",
+          "position": "80,0",
+          "positionNumber": 80,
+          "query": "agencja social media poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "2",
+          "position": "95,0",
+          "positionNumber": 95,
+          "query": "linki sponsorowane poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "11,0",
+          "positionNumber": 11,
+          "query": "agencja facebook poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "25,0",
+          "positionNumber": 25,
+          "query": "kampanie reklamowe poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "43,0",
+          "positionNumber": 43,
+          "query": "spoty reklamowe poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "88,0",
+          "positionNumber": 88,
+          "query": "reklama w google poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "89,0",
+          "positionNumber": 89,
+          "query": "kampania google adwords poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "99,0",
+          "positionNumber": 99,
+          "query": "kampanie e-marketingowe poznań"
+        }
+      ],
+      "totalRows": 15,
+      "totals": [
+        "\nŁączna liczba kliknięć\n0",
+        "\nŁączna liczba wyświetleń\n45",
+        "Średni CTR\n0%",
+        "Średnia pozycja\n62,8"
+      ],
+      "url": "https://search.google.com/search-console/performance/search-analytics?resource_id=sc-domain%3Afotz-studio.pl&hl=pl&breakdown=query&num_of_days=28&page=!https%3A%2F%2Fwww.fotz-studio.pl%2Fkampanie-reklamowe-poznan"
+    },
+    {
+      "page": "https://www.fotz-studio.pl/pozycjonowanie/elblag",
+      "charts": [
+        "11.10.2026\n13.10.2026\n15.10.2026\n17.10.2026\n19.10.2026\n21.10.2026\n23.10.2026\n25.10.2026\n27.10.2026\n29.10.2026\n31.10.2026\n2.11.2026\n4.11.2026\n6.11.2026\n3\n2\n1\n0\n3\n2\n1\n0\nWykres, który pokazuje dane Łączna liczba kliknięć, Łączna liczba wyświetleń, Średni CTR i Średnia pozycja z okresu od 11 października 2026 do 7 listopada 2026"
+      ],
+      "striking": [],
+      "topRows": [],
+      "totalRows": 0,
+      "totals": [
+        "\nŁączna liczba kliknięć\n0",
+        "\nŁączna liczba wyświetleń\n0",
+        "Średni CTR\n0%",
+        "Średnia pozycja\n0"
+      ],
+      "url": "https://search.google.com/search-console/performance/search-analytics?resource_id=sc-domain%3Afotz-studio.pl&hl=pl&breakdown=query&num_of_days=28&page=!https%3A%2F%2Fwww.fotz-studio.pl%2Fpozycjonowanie%2Felblag"
+    },
+    {
+      "page": "https://www.fotz-studio.pl/pozycjonowanie/plock",
+      "charts": [
+        "11.10.2026\n13.10.2026\n15.10.2026\n17.10.2026\n19.10.2026\n21.10.2026\n23.10.2026\n25.10.2026\n27.10.2026\n29.10.2026\n31.10.2026\n2.11.2026\n4.11.2026\n6.11.2026\n3\n2\n1\n0\n3\n2\n1\n0\nWykres, który pokazuje dane Łączna liczba kliknięć, Łączna liczba wyświetleń, Średni CTR i Średnia pozycja z okresu od 11 października 2026 do 7 listopada 2026"
+      ],
+      "striking": [],
+      "topRows": [],
+      "totalRows": 0,
+      "totals": [
+        "\nŁączna liczba kliknięć\n0",
+        "\nŁączna liczba wyświetleń\n0",
+        "Średni CTR\n0%",
+        "Średnia pozycja\n0"
+      ],
+      "url": "https://search.google.com/search-console/performance/search-analytics?resource_id=sc-domain%3Afotz-studio.pl&hl=pl&breakdown=query&num_of_days=28&page=!https%3A%2F%2Fwww.fotz-studio.pl%2Fpozycjonowanie%2Fplock"
+    },
+    {
+      "page": "https://www.fotz-studio.pl/uslugi/produkcja-filmow",
+      "charts": [
+        "11.10.2026\n13.10.2026\n15.10.2026\n17.10.2026\n19.10.2026\n21.10.2026\n23.10.2026\n25.10.2026\n27.10.2026\n29.10.2026\n31.10.2026\n2.11.2026\n4.11.2026\n6.11.2026\n3\n2\n1\n0\n9\n6\n3\n0\nWykres, który pokazuje dane Łączna liczba kliknięć, Łączna liczba wyświetleń, Średni CTR i Średnia pozycja z okresu od 11 października 2026 do 7 listopada 2026"
+      ],
+      "striking": [
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "20,0",
+          "positionNumber": 20,
+          "query": "usługi produkcji filmowej"
+        }
+      ],
+      "topRows": [
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "12",
+          "position": "42,3",
+          "positionNumber": 42.3,
+          "query": "filmy reklamowe poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "4",
+          "position": "28,0",
+          "positionNumber": 28,
+          "query": "produkcja filmów poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "3",
+          "position": "42,3",
+          "positionNumber": 42.3,
+          "query": "produkcja filmowa na zlecenie"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "2",
+          "position": "61,0",
+          "positionNumber": 61,
+          "query": "realizacja filmów promocyjnych poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "20,0",
+          "positionNumber": 20,
+          "query": "usługi produkcji filmowej"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "26,0",
+          "positionNumber": 26,
+          "query": "filmy korporacyjne poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "29,0",
+          "positionNumber": 29,
+          "query": "produkcja spotów reklamowych poznań"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "58,0",
+          "positionNumber": 58,
+          "query": "produkcja filmowa poznan"
+        }
+      ],
+      "totalRows": 8,
+      "totals": [
+        "\nŁączna liczba kliknięć\n1",
+        "\nŁączna liczba wyświetleń\n30",
+        "Średni CTR\n3,3%",
+        "Średnia pozycja\n37,1"
+      ],
+      "url": "https://search.google.com/search-console/performance/search-analytics?resource_id=sc-domain%3Afotz-studio.pl&hl=pl&breakdown=query&num_of_days=28&page=!https%3A%2F%2Fwww.fotz-studio.pl%2Fuslugi%2Fprodukcja-filmow"
+    },
+    {
+      "page": "https://www.fotz-studio.pl/agencja-marketingowa/rzeszow",
+      "charts": [
+        "11.10.2026\n13.10.2026\n15.10.2026\n17.10.2026\n19.10.2026\n21.10.2026\n23.10.2026\n25.10.2026\n27.10.2026\n29.10.2026\n31.10.2026\n2.11.2026\n4.11.2026\n6.11.2026\n3\n2\n1\n0\n3\n2\n1\n0\nWykres, który pokazuje dane Łączna liczba kliknięć, Łączna liczba wyświetleń, Średni CTR i Średnia pozycja z okresu od 11 października 2026 do 7 listopada 2026"
+      ],
+      "striking": [],
+      "topRows": [
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "92,0",
+          "positionNumber": 92,
+          "query": "agencja social media rzeszów"
+        }
+      ],
+      "totalRows": 1,
+      "totals": [
+        "\nŁączna liczba kliknięć\n0",
+        "\nŁączna liczba wyświetleń\n1",
+        "Średni CTR\n0%",
+        "Średnia pozycja\n92"
+      ],
+      "url": "https://search.google.com/search-console/performance/search-analytics?resource_id=sc-domain%3Afotz-studio.pl&hl=pl&breakdown=query&num_of_days=28&page=!https%3A%2F%2Fwww.fotz-studio.pl%2Fagencja-marketingowa%2Frzeszow"
+    }
+  ]
+}
