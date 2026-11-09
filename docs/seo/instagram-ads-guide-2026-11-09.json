@@ -1,0 +1,91 @@
+{
+  "date": "2026-11-09",
+  "status": "POTWIERDZONE_95",
+  "url": "https://www.fotz-studio.pl/blog/reklama-na-instagramie",
+  "keyword": "instagram ads",
+  "queryId": "1a95b2ccb6cba431",
+  "analysis": {
+    "url": "https://app.neuronwriter.com/analysis/view/1a95b2ccb6cba431",
+    "role": "historyczna analiza pomocnicza o zgodnej intencji informacyjnej"
+  },
+  "baseline": {
+    "scope": "publiczny baseline",
+    "score": 77,
+    "evidence": "analysis/neuron/evaluation-1a95b2ccb6cba431.json"
+  },
+  "candidate": {
+    "scope": "lokalny kandydat z builda",
+    "score": 98,
+    "selector": "main#main-content",
+    "evidence": "analysis/neuron/evaluation-1a95b2ccb6cba431-guide-candidate.json"
+  },
+  "production": {
+    "scope": "publiczna strona po wdrożeniu",
+    "score": 98,
+    "neuronStatus": "ok",
+    "httpStatus": 200,
+    "pass": true,
+    "evidence": "analysis/production-instagram-ads-guide.json"
+  },
+  "release": {
+    "pullRequest": {
+      "number": 198,
+      "url": "https://github.com/adam420412/fotz-studio-web-experience/pull/198"
+    },
+    "mergeCommit": "c4ce8f90d2541387841a57719a7ba210fc53576c",
+    "deployment": {
+      "provider": "Vercel",
+      "id": "dpl_9P5Rw33CMEUEAHaQYPVcce8Tcjog",
+      "status": "READY",
+      "alias": "www.fotz-studio.pl"
+    }
+  },
+  "html": {
+    "title": "Instagram Ads 2026: reklama na Instagramie | FOTZ",
+    "titleLength": 49,
+    "metaDescription": "Instagram Ads 2026: jak uruchomić reklamę na Instagramie? Formaty, targetowanie, budżet, pomiar i optymalizacja kampanii w Menedżerze reklam Meta.",
+    "metaDescriptionLength": 146,
+    "canonical": "https://www.fotz-studio.pl/blog/reklama-na-instagramie",
+    "selfCanonical": true,
+    "h1Count": 1,
+    "mainContentCount": 1
+  },
+  "schema": {
+    "article": {
+      "url": "https://www.fotz-studio.pl/blog/reklama-na-instagramie",
+      "datePublished": "2025-02-20",
+      "dateModified": "2026-11-09"
+    },
+    "faq": {
+      "visibleCount": 10,
+      "schemaCount": 10,
+      "countMatch": true
+    }
+  },
+  "gsc": {
+    "period": "2026-10-11 / 2026-11-07",
+    "clicks": 0,
+    "impressions": 0,
+    "ctr": 0,
+    "averagePosition": 0,
+    "queries11To20": [],
+    "unchanged": true,
+    "otherPageQueriesAssigned": false
+  },
+  "tests": {
+    "fullMain": {
+      "status": "PASS",
+      "passed": 315,
+      "total": 315
+    },
+    "build": {
+      "status": "PASS",
+      "generatedPages": 1060
+    },
+    "seoCheck": {
+      "status": "PASS",
+      "errors": 0,
+      "galleryPages": 448
+    }
+  }
+}
