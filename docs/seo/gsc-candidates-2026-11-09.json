@@ -1,0 +1,324 @@
+{
+  "date": "2026-11-09",
+  "source": {
+    "name": "Google Search Console",
+    "export": "analysis/gsc-candidates-28d-20261109.json",
+    "period": {
+      "from": "2026-10-11",
+      "to": "2026-11-07",
+      "days": 28
+    }
+  },
+  "pages": [
+    {
+      "page": "https://www.fotz-studio.pl/uslugi/strony-internetowe/torun",
+      "charts": [
+        "11.10.2026\n13.10.2026\n15.10.2026\n17.10.2026\n19.10.2026\n21.10.2026\n23.10.2026\n25.10.2026\n27.10.2026\n29.10.2026\n31.10.2026\n2.11.2026\n4.11.2026\n6.11.2026\n3\n2\n1\n0\n12\n8\n4\n0\nWykres, który pokazuje dane Łączna liczba kliknięć, Łączna liczba wyświetleń, Średni CTR i Średnia pozycja z okresu od 11 października 2026 do 7 listopada 2026"
+      ],
+      "striking": [],
+      "topRows": [
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "15",
+          "position": "82,2",
+          "positionNumber": 82.2,
+          "query": "projektowanie stron www toruń"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "5",
+          "position": "80,4",
+          "positionNumber": 80.4,
+          "query": "tworzenie stron internetowych toruń"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "4",
+          "position": "63,8",
+          "positionNumber": 63.8,
+          "query": "projektowanie stron internetowych toruń"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "3",
+          "position": "58,0",
+          "positionNumber": 58,
+          "query": "strony internetowe toruń"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "2",
+          "position": "65,5",
+          "positionNumber": 65.5,
+          "query": "projektowanie stron toruń"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "2",
+          "position": "81,5",
+          "positionNumber": 81.5,
+          "query": "tworzenie stron www toruń"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "2",
+          "position": "83,0",
+          "positionNumber": 83,
+          "query": "tworzenie stron www torun"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "2",
+          "position": "91,0",
+          "positionNumber": 91,
+          "query": "tworzenie stron internetowych torun"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "82,0",
+          "positionNumber": 82,
+          "query": "tworzenie stron torun"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "82,0",
+          "positionNumber": 82,
+          "query": "zakładanie stron internetowych toruń"
+        }
+      ],
+      "totalRows": 10,
+      "totals": [
+        "\nŁączna liczba kliknięć\n0",
+        "\nŁączna liczba wyświetleń\n39",
+        "Średni CTR\n0%",
+        "Średnia pozycja\n77,1"
+      ],
+      "url": "https://search.google.com/search-console/performance/search-analytics?resource_id=sc-domain%3Afotz-studio.pl&hl=pl&breakdown=query&num_of_days=28&page=!https%3A%2F%2Fwww.fotz-studio.pl%2Fuslugi%2Fstrony-internetowe%2Ftorun"
+    },
+    {
+      "page": "https://www.fotz-studio.pl/uslugi/strony-internetowe/szczecin",
+      "charts": [
+        "11.10.2026\n13.10.2026\n15.10.2026\n17.10.2026\n19.10.2026\n21.10.2026\n23.10.2026\n25.10.2026\n27.10.2026\n29.10.2026\n31.10.2026\n2.11.2026\n4.11.2026\n6.11.2026\n3\n2\n1\n0\n6\n4\n2\n0\nWykres, który pokazuje dane Łączna liczba kliknięć, Łączna liczba wyświetleń, Średni CTR i Średnia pozycja z okresu od 11 października 2026 do 7 listopada 2026"
+      ],
+      "striking": [],
+      "topRows": [
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "3",
+          "position": "93,7",
+          "positionNumber": 93.7,
+          "query": "budowa stron www szczecin"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "2",
+          "position": "91,5",
+          "positionNumber": 91.5,
+          "query": "tworzenie stron internetowych szczecin"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "2",
+          "position": "92,5",
+          "positionNumber": 92.5,
+          "query": "cennik stron internetowych szczecin"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "2",
+          "position": "93,0",
+          "positionNumber": 93,
+          "query": "tworzenie stron szczecin"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "5,0",
+          "positionNumber": 5,
+          "query": "tworzenie portali szczecin"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "83,0",
+          "positionNumber": 83,
+          "query": "szczecin tworzenie stron internetowych"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "88,0",
+          "positionNumber": 88,
+          "query": "projektowanie stron internetowych szczecin cennik"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "94,0",
+          "positionNumber": 94,
+          "query": "tworzenie stron www szczecin"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "99,0",
+          "positionNumber": 99,
+          "query": "budowa stron internetowych szczecin"
+        }
+      ],
+      "totalRows": 9,
+      "totals": [
+        "\nŁączna liczba kliknięć\n0",
+        "\nŁączna liczba wyświetleń\n35",
+        "Średni CTR\n0%",
+        "Średnia pozycja\n97,5"
+      ],
+      "url": "https://search.google.com/search-console/performance/search-analytics?resource_id=sc-domain%3Afotz-studio.pl&hl=pl&breakdown=query&num_of_days=28&page=!https%3A%2F%2Fwww.fotz-studio.pl%2Fuslugi%2Fstrony-internetowe%2Fszczecin"
+    },
+    {
+      "page": "https://www.fotz-studio.pl/pozycjonowanie/sosnowiec",
+      "charts": [
+        "11.10.2026\n13.10.2026\n15.10.2026\n17.10.2026\n19.10.2026\n21.10.2026\n23.10.2026\n25.10.2026\n27.10.2026\n29.10.2026\n31.10.2026\n2.11.2026\n4.11.2026\n6.11.2026\n3\n2\n1\n0\n6\n4\n2\n0\nWykres, który pokazuje dane Łączna liczba kliknięć, Łączna liczba wyświetleń, Średni CTR i Średnia pozycja z okresu od 11 października 2026 do 7 listopada 2026"
+      ],
+      "striking": [],
+      "topRows": [
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "35",
+          "position": "37,7",
+          "positionNumber": 37.7,
+          "query": "pozycjonowanie sosnowiec"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "4",
+          "position": "40,8",
+          "positionNumber": 40.8,
+          "query": "pozycjonowanie stron sosnowiec"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "91,0",
+          "positionNumber": 91,
+          "query": "agencja seo sosnowiec"
+        }
+      ],
+      "totalRows": 3,
+      "totals": [
+        "\nŁączna liczba kliknięć\n0",
+        "\nŁączna liczba wyświetleń\n41",
+        "Średni CTR\n0%",
+        "Średnia pozycja\n38,6"
+      ],
+      "url": "https://search.google.com/search-console/performance/search-analytics?resource_id=sc-domain%3Afotz-studio.pl&hl=pl&breakdown=query&num_of_days=28&page=!https%3A%2F%2Fwww.fotz-studio.pl%2Fpozycjonowanie%2Fsosnowiec"
+    },
+    {
+      "page": "https://www.fotz-studio.pl/kompleksowa-obsluga-marketingowa",
+      "charts": [
+        "11.10.2026\n13.10.2026\n15.10.2026\n17.10.2026\n19.10.2026\n21.10.2026\n23.10.2026\n25.10.2026\n27.10.2026\n29.10.2026\n31.10.2026\n2.11.2026\n4.11.2026\n6.11.2026\n3\n2\n1\n0\n3\n2\n1\n0\nWykres, który pokazuje dane Łączna liczba kliknięć, Łączna liczba wyświetleń, Średni CTR i Średnia pozycja z okresu od 11 października 2026 do 7 listopada 2026"
+      ],
+      "striking": [
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "12",
+          "position": "18,7",
+          "positionNumber": 18.7,
+          "query": "kompleksowa obsługa marketingowa"
+        }
+      ],
+      "topRows": [
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "12",
+          "position": "18,7",
+          "positionNumber": 18.7,
+          "query": "kompleksowa obsługa marketingowa"
+        },
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "1",
+          "position": "27,0",
+          "positionNumber": 27,
+          "query": "kompleksowa obsługa marketingowa firm"
+        }
+      ],
+      "totalRows": 2,
+      "totals": [
+        "\nŁączna liczba kliknięć\n0",
+        "\nŁączna liczba wyświetleń\n13",
+        "Średni CTR\n0%",
+        "Średnia pozycja\n19,3"
+      ],
+      "url": "https://search.google.com/search-console/performance/search-analytics?resource_id=sc-domain%3Afotz-studio.pl&hl=pl&breakdown=query&num_of_days=28&page=!https%3A%2F%2Fwww.fotz-studio.pl%2Fkompleksowa-obsluga-marketingowa"
+    },
+    {
+      "page": "https://www.fotz-studio.pl/uslugi/pozycjonowanie/olsztyn",
+      "charts": [
+        "11.10.2026\n13.10.2026\n15.10.2026\n17.10.2026\n19.10.2026\n21.10.2026\n23.10.2026\n25.10.2026\n27.10.2026\n29.10.2026\n31.10.2026\n2.11.2026\n4.11.2026\n6.11.2026\n3\n2\n1\n0\n3\n2\n1\n0\nWykres, który pokazuje dane Łączna liczba kliknięć, Łączna liczba wyświetleń, Średni CTR i Średnia pozycja z okresu od 11 października 2026 do 7 listopada 2026"
+      ],
+      "striking": [],
+      "topRows": [],
+      "totalRows": 0,
+      "totals": [
+        "\nŁączna liczba kliknięć\n0",
+        "\nŁączna liczba wyświetleń\n0",
+        "Średni CTR\n0%",
+        "Średnia pozycja\n0"
+      ],
+      "url": "https://search.google.com/search-console/performance/search-analytics?resource_id=sc-domain%3Afotz-studio.pl&hl=pl&breakdown=query&num_of_days=28&page=!https%3A%2F%2Fwww.fotz-studio.pl%2Fuslugi%2Fpozycjonowanie%2Folsztyn"
+    },
+    {
+      "page": "https://www.fotz-studio.pl/uslugi/pozycjonowanie/rzeszow",
+      "charts": [
+        "11.10.2026\n13.10.2026\n15.10.2026\n17.10.2026\n19.10.2026\n21.10.2026\n23.10.2026\n25.10.2026\n27.10.2026\n29.10.2026\n31.10.2026\n2.11.2026\n4.11.2026\n6.11.2026\n3\n2\n1\n0\n3\n2\n1\n0\nWykres, który pokazuje dane Łączna liczba kliknięć, Łączna liczba wyświetleń, Średni CTR i Średnia pozycja z okresu od 11 października 2026 do 7 listopada 2026"
+      ],
+      "striking": [],
+      "topRows": [
+        {
+          "clicks": "0",
+          "ctr": "0%",
+          "impressions": "4",
+          "position": "83,2",
+          "positionNumber": 83.2,
+          "query": "pozycjonowanie stron rzeszów"
+        }
+      ],
+      "totalRows": 1,
+      "totals": [
+        "\nŁączna liczba kliknięć\n0",
+        "\nŁączna liczba wyświetleń\n4",
+        "Średni CTR\n0%",
+        "Średnia pozycja\n83,3"
+      ],
+      "url": "https://search.google.com/search-console/performance/search-analytics?resource_id=sc-domain%3Afotz-studio.pl&hl=pl&breakdown=query&num_of_days=28&page=!https%3A%2F%2Fwww.fotz-studio.pl%2Fuslugi%2Fpozycjonowanie%2Frzeszow"
+    }
+  ]
+}
