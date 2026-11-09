@@ -225,7 +225,25 @@ export default function BlogTamSamSomCoTo() {
       <FadeInView>
         <section className="py-16 px-4 bg-slate-50">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold text-slate-900 mb-8">FAQ — TAM, SAM, SOM</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mb-8">Przykład obliczania TAM, SAM, SOM — firma usługowa z Poznania</h2>
+            <p className="text-lg text-slate-700 mb-6">
+              Wyobraźmy agencję marketingową z Poznania, która chce sprzedawać stałą obsługę SEO małym firmom usługowym w Polsce. Obliczamy rynek od dołu (bottom-up), nie od góry — liczby są wiarygodniejsze.
+            </p>
+            <div className="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden mb-8">
+              <table className="w-full text-sm">
+                <thead className="bg-slate-100"><tr><th className="text-left p-4 font-bold text-slate-900">Metryka</th><th className="text-left p-4 font-bold text-slate-900">Obliczenie</th><th className="text-left p-4 font-bold text-slate-900">Wartość</th></tr></thead>
+                <tbody className="text-slate-700">
+                  <tr className="border-t border-slate-200"><td className="p-4 font-semibold">TAM — cały rynek</td><td className="p-4">1,8 mln małych firm w Polsce × 12 000 zł rocznego abonamentu SEO</td><td className="p-4">21,6 mld zł</td></tr>
+                  <tr className="border-t border-slate-200"><td className="p-4 font-semibold">SAM — rynek dostępny</td><td className="p-4">Firmy usługowe 1–10 osób z dostępem do internetu, które rozważają outsourcing: ~30% TAM</td><td className="p-4">6,5 mld zł</td></tr>
+                  <tr className="border-t border-slate-200"><td className="p-4 font-semibold">SOM — rynek osiągalny</td><td className="p-4">Realny udział w 3 lata: 200 klientów × 12 000 zł</td><td className="p-4">2,4 mln zł rocznie</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="text-lg text-slate-700 mb-6">
+              Wniosek: SOM to 0,04% TAM — i to jest OK. Inwestor patrzy, czy rozumiesz swój rynek, a nie czy wypisujesz ogromne liczby. Częsty błąd: „1% rynku to dużo" — przy większości rynków 1% jest nieosiągalny, a argumentacja zamiast liczb to czerwona flaga.
+            </p>
+
+<h2 className="text-3xl font-bold text-slate-900 mb-8">FAQ — TAM, SAM, SOM</h2>
             <div className="space-y-4">
               {faqItems.map((item, i) => (
                 <div key={i} className="bg-white border border-slate-200 rounded-xl p-6">

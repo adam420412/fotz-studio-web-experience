@@ -201,6 +201,39 @@ export default function BlogTargetAudienceCoTo() {
       <FadeInView>
         <section className="py-16 px-4 bg-slate-50">
           <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl font-bold text-slate-900 mb-8">Jak zdefiniować target audience — szablon krok po kroku</h2>
+            <p className="text-lg text-slate-700 mb-6">
+              Definiowanie grupy docelowej to proces, nie zgadywanie. Zdefiniuj target audience w 5 krokach:
+            </p>
+            <div className="space-y-4 mb-8">
+              {[
+                { step: "1. Zbierz dane z istniejącej bazy", text: "Przejrzyj zamówienia, CRM i Google Analytics: kto kupuje najczęściej i najwięcej? GSC pokaże, na jakie frazy ludzie trafiają. Klienci z najwyższym LTV to Twoja prawdziwa grupa docelowa — nie ta, którą sobie wyobrażasz." },
+                { step: "2. Zsegmentuj według 4 kryteriów", text: "Demografia (wiek, płeć, lokalizacja), geografia (miasto, region, dzielnica), psychografia (wartości, styl życia, obawy) i zachowania (częstotliwość zakupów, kanał, urządzenie). Zapisz każdy segment jednym zdaniem — np. 'właściciele małych firm usługowych z Poznania, którzy sami robią marketing'." },
+                { step: "3. Zweryfikuj hipotezy w terenie", text: "Przeprowadź 5–10 rozmów z klientami z dominującego segmentu. Pytaj o proces decyzji, obawy i źródło informacji. Jedna rozmowa z klientem uczy więcej niż miesiąc analizy danych — usłyszysz język, którego używają." },
+                { step: "4. Zapisz personę i reguły wykluczenia", text: "Stwórz dokument: kto jest w grupie, kogo NIE obsługujesz (np. 'nie targetujemy firm zatrudniających powyżej 50 osób'), jakie pytania zadają i na jakim etapie decyzji są. Wykluczenia oszczędzają budżet reklamowy." },
+                { step: "5. Testuj i iteruj co kwartał", text: "Uruchom 2–3 warianty komunikatu na małym budżecie. Mierz koszt pozyskania klienta (CAC) per segment. Grupa docelowa to żywy dokument — rynek i Twoja oferta się zmieniają." },
+              ].map((item, idx) => (
+                <div key={idx} className="bg-white rounded-xl p-5 border border-slate-200 shadow-sm">
+                  <h3 className="font-bold text-slate-900 mb-2">{item.step}</h3>
+                  <p className="text-slate-600 text-sm leading-relaxed">{item.text}</p>
+                </div>
+              ))}
+            </div>
+
+            <h2 className="text-3xl font-bold text-slate-900 mb-8 mt-10">Przykłady target audience dla polskich firm</h2>
+            <div className="grid md:grid-cols-3 gap-5 mb-8">
+              {[
+                { name: "Usługa lokalna (fryzjer, stomatolog)", example: "Mieszkańcy dzielnicy w promieniu 3–5 km, 25–55 lat, szukający 'fryzjer + dzielnica'. Decydują: opinie Google, cena, wolne terminy. Kanał: Google Maps, lokalne SEO, remarketing." },
+                { name: "Sklep e-commerce", example: "Kupujący online 25–45 lat, którzy porównują ceny i recenzje. Decydują: darmowa dostawa, zwroty, zdjęcia produktów. Kanał: Google Shopping, Meta Ads, e-mail z porzuconym koszykiem." },
+                { name: "Usługa B2B (agencja, software house)", example: "CEO lub marketing manager małej firmy (5–50 osób), który nie ma działu marketingu. Decydują: case study, zakres odpowiedzialności, cena. Kanał: LinkedIn, blog ekspercki, Google Ads." },
+              ].map((item, idx) => (
+                <div key={idx} className="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
+                  <h3 className="font-bold text-slate-900 mb-3 text-sm">{item.name}</h3>
+                  <p className="text-slate-600 text-sm leading-relaxed">{item.example}</p>
+                </div>
+              ))}
+            </div>
+
             <h2 className="text-3xl font-bold text-slate-900 mb-8">FAQ — target audience i grupa docelowa</h2>
             <div className="space-y-4">
               {faqItems.map((item, i) => (

@@ -171,6 +171,24 @@ export default function BlogCMSCoToJest() {
         <FadeInView>
           <section className="py-12 md:py-16 bg-slate-50">
             <div className="max-w-3xl mx-auto px-4 md:px-6">
+              <h2 className="text-2xl font-bold text-slate-900 mt-8 mb-4">Jak wybrać CMS dla małej firmy — praktyczne kryteria</h2>
+              <p className="text-slate-700 leading-relaxed mb-4">
+                Wybór CMS-a to nie decyzja o nazwie, tylko o koszcie i niezależności. Zanim wybierzesz WordPressa, Webflow czy rozwiązanie headless, odpowiedz na 4 pytania:
+              </p>
+              <div className="space-y-3 mb-6">
+                {[
+                  { step: "1. Kto będzie edytować treści?", text: "Jeśli osoba nietechniczna — wybierz CMS z edytorem wizualnym i krótką krzywą nauki. Webflow lub klasyczny WordPress będą prostsze niż headless." },
+                  { step: "2. Ile kosztuje rocznie?", text: "Licencja, hosting, wtyczki premium, aktualizacje, bezpieczeństwo i czas administratora. Open source bywa tańszy od SaaS tylko wtedy, gdy ktoś ogarnia utrzymanie." },
+                  { step: "3. Czy potrzebujesz wielu kanałów?", text: "Strona + aplikacja + sklep? Headless CMS oddziela treść od prezentacji i serwuje ją przez API. Dla samej strony firmowej to zbędna złożoność." },
+                  { step: "4. Kto odpowiada za bezpieczeństwo?", text: "Aktualizacje, backupy, wtyczki. Przy małym zespole SaaS zdejmuje ten koszt z głowy — i to często decyduje." },
+                ].map((item, idx) => (
+                  <div key={idx} className="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                    <h3 className="font-semibold text-slate-900 text-sm mb-1">{item.step}</h3>
+                    <p className="text-slate-600 text-xs leading-relaxed">{item.text}</p>
+                  </div>
+                ))}
+              </div>
+
               <h2 className="text-2xl font-bold text-center mb-8">FAQ - CMS co to jest</h2>
               <FAQSchema items={faqItems} />
               <Accordion type="single" collapsible className="w-full bg-white rounded-lg border border-slate-200">

@@ -239,6 +239,24 @@ export default function BlogWaccCoTo() {
       <FadeInView>
         <section className="py-16 px-4 bg-white">
           <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl font-bold text-slate-900 mb-8">WACC krok po kroku — przykład obliczenia dla małej firmy</h2>
+            <p className="text-lg text-slate-700 mb-6">
+              Załóżmy firmę usługową: 60% kapitału własnego, 40% długu bankowego. Koszt kapitału własnego 12%, koszt długu 8% przed opodatkowaniem, podatek dochodowy 19%. WACC to średnia ważona kosztów obu źródeł finansowania po podatku.
+            </p>
+            <div className="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden mb-8">
+              <table className="w-full text-sm">
+                <thead className="bg-slate-100"><tr><th className="text-left p-4 font-bold text-slate-900">Element</th><th className="text-left p-4 font-bold text-slate-900">Obliczenie</th><th className="text-left p-4 font-bold text-slate-900">Wynik</th></tr></thead>
+                <tbody className="text-slate-700">
+                  <tr className="border-t border-slate-200"><td className="p-4">Kapitał własny</td><td className="p-4">60% × 12%</td><td className="p-4">7,2 p.p.</td></tr>
+                  <tr className="border-t border-slate-200"><td className="p-4">Dług po podatku</td><td className="p-4">40% × 8% × (1 − 19%)</td><td className="p-4">2,59 p.p.</td></tr>
+                  <tr className="border-t border-slate-200 font-bold"><td className="p-4">WACC</td><td className="p-4">7,2 + 2,59</td><td className="p-4">9,79%</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="text-lg text-slate-700 mb-6">
+              Interpretacja: każda inwestycja (np. nowa strona, kampania, sprzęt) powinna zarobić więcej niż 9,79% rocznie, żeby tworzyć wartość dla firmy. Jeśli projekt ma prognozowany zwrot 15%, przechodzi próg WACC. Jeśli 6% — niszczy wartość, nawet gdy „wygląda tanio". WACC to nie formalność z podręcznika: to próg decyzyjny przy wycenie projektów i przy rozmowie z inwestorem lub bankiem.
+            </p>
+
             <h2 className="text-3xl font-bold text-slate-900 mb-8">FAQ — WACC</h2>
             <div className="space-y-4">
               {faqItems.map((item, i) => (

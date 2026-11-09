@@ -240,6 +240,23 @@ export default function BlogQbrCoTo() {
       <FadeInView>
         <section className="py-16 px-4 bg-white">
           <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl font-bold text-slate-900 mb-8">Szablon QBR do skopiowania — agenda i checklista</h2>
+            <p className="text-lg text-slate-700 mb-6">
+              Dobra sesja QBR zaczyna się tydzień przed spotkaniem. Przygotuj pre-read i trzymaj się agendy — inaczej review zamienia się w luźną rozmowę bez decyzji.
+            </p>
+            <div className="space-y-4 mb-8">
+              {[
+                { title: "Pre-read (7 dni przed)", text: "Wyślij uczestnikom: wyniki KPI z poprzedniego kwartału, 3 najważniejsze wnioski z danych, listę decyzji do podjęcia i otwarte ryzyka. Reguła: pre-read czyta się w 10 minut — jeśli nikt go nie otwiera, skróć go." },
+                { title: "Agenda 75 minut", text: "Wyniki i metryki (15'), co zadziałało (10'), co nie zadziałało i dlaczego (15'), najważniejsza lekcja kwartału (15'), decyzje na kolejny kwartał (15'), odpowiedzialni i terminy (5'). Nie zaczynaj od problemów — zacznij od liczb." },
+                { title: "Po spotkaniu: action items", text: "Zapisz decyzje z właścicielem i terminem. Wyślij notatki w 24h. Otwarte działania z poprzedniego QBR otwierasz na początku następnego — to jedyny sposób, żeby review nie stał się teatrem." },
+              ].map((item, idx) => (
+                <div key={idx} className="bg-white rounded-xl p-5 border border-slate-200 shadow-sm">
+                  <h3 className="font-bold text-slate-900 mb-2">{item.title}</h3>
+                  <p className="text-slate-600 text-sm leading-relaxed">{item.text}</p>
+                </div>
+              ))}
+            </div>
+
             <h2 className="text-3xl font-bold text-slate-900 mb-8">FAQ — QBR (Quarterly Business Review)</h2>
             <div className="space-y-4">
               {faqItems.map((item, i) => (
