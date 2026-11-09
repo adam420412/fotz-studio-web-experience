@@ -825,6 +825,7 @@ const BlogChangeManagementCoTo = lazy(() => import("./pages/BlogChangeManagement
 const BlogFeedbackLoopCoTo = lazy(() => import("./pages/BlogFeedbackLoopCoTo"));
 const BlogCommunityLedGrowthCoTo = lazy(() => import("./pages/BlogCommunityLedGrowthCoTo"));
 const BlogQbrCoTo = lazy(() => import("./pages/BlogQbrCoTo"));
+const BlogMarketingDlaFirmProdukcyjnych = lazy(() => import("./pages/BlogMarketingDlaFirmProdukcyjnych"));
 
 // Wave 101: Network Effects, Switching Costs, Competitive Moat
 const BlogNetworkEffectsCoTo = lazy(() => import("./pages/BlogNetworkEffectsCoTo"));
@@ -2158,6 +2159,7 @@ const App = ({ Router = BrowserRouter, client = queryClient, initialPage }: AppP
                 <Route path="/blog/feedback-loop-co-to" element={<BlogFeedbackLoopCoTo />} />
                 <Route path="/blog/community-led-growth-co-to" element={<BlogCommunityLedGrowthCoTo />} />
                 <Route path="/blog/qbr-co-to" element={<BlogQbrCoTo />} />
+                <Route path="/blog/marketing-dla-firm-produkcyjnych" element={<BlogMarketingDlaFirmProdukcyjnych />} />
                 {/* Wave 101 */}
                 <Route path="/blog/efekty-sieciowe-network-effects" element={<BlogNetworkEffectsCoTo />} />
                 <Route path="/blog/switching-costs-co-to" element={<BlogSwitchingCostsCoTo />} />
