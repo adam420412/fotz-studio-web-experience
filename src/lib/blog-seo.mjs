@@ -3,6 +3,7 @@ import { getOwnPhoto, ownPhotoHtml, ownPhotoSchema } from './own-photos.mjs';
 import { migratedBlogPaths, repairedSourceLinks } from './reviewed-blog-links.mjs';
 import { reviewedBlogCopy } from './reviewed-blog-copy.mjs';
 import { reviewedBlogTitles } from './reviewed-blog-titles.mjs';
+import { reviewedBlogOverrides } from './reviewed-blog-overrides.mjs';
 import sanitizeHtml from 'sanitize-html';
 
 export const SITE_ORIGIN = 'https://www.fotz-studio.pl';
@@ -59,7 +60,8 @@ function truncateDescription(text, max = 160) {
 }
 
 export function getBlogMetadata(article) {
-  const raw = article.meta_description?.trim() || article.excerpt?.trim() || article.title;
+  const override = reviewedBlogOverrides[article.slug];
+  const raw = override?.description || article.meta_description?.trim() || article.excerpt?.trim() || article.title;
   const title = reviewedBlogTitles[article.slug] || article.title;
   return {
     title: `${title} | FOTZ`,
@@ -69,6 +71,20 @@ export function getBlogMetadata(article) {
     ogType: 'article',
     noIndex: raw.length < 80 && article.title.toLowerCase().includes('test'),
   };
+}
+
+export function getBlogHeadline(article) {
+  return reviewedBlogOverrides[article.slug]?.headline || article.title;
+}
+
+export function getBlogArticleSchema(article) {
+  const schema = reviewedBlogOverrides[article.slug]?.articleSchema || article.json_ld;
+  return schema ? normalizeSchemaUrls(schema) : null;
+}
+
+export function getBlogFaqSchema(article) {
+  const schema = reviewedBlogOverrides[article.slug]?.faqSchema || article.faq_json_ld;
+  return schema ? normalizeSchemaUrls(schema) : null;
 }
 
 /** The article view already emits one H1 and promotes CMS schema into Helmet. */

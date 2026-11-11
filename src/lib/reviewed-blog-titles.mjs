@@ -17,7 +17,7 @@ export const reviewedBlogTitles = {
   "jak-planowac-content-marketing-i-budowac-skuteczna-strategie": "Jak planować content marketing? Skuteczna strategia",
   "konwersja-w-marketingu-skuteczne-strategie-dla-malych-firm": "Konwersja w marketingu — strategie dla małych firm",
   "proces-tworzenia-tresci-seo-dla-firm": "Tworzenie treści SEO dla firm krok po kroku",
-  "strategia-content-marketingu-skuteczny-przewodnik-dla-firm": "Strategia content marketingu — poradnik dla firm",
+  "strategia-content-marketingu-skuteczny-przewodnik-dla-firm": "Strategia content marketingowa — poradnik 2026",
   "google-business-profile-optymalizacja-przewodnik-dla-firm": "Google Business Profile — optymalizacja profilu",
   "marketing-internetowy-dla-malej-firmy-skuteczne-strategie": "Marketing internetowy dla małej firmy — strategie",
   "prowadzenie-instagrama-dla-firm-sposob-na-skuteczna-marke": "Prowadzenie Instagrama dla firm — poradnik",

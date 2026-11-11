@@ -1,0 +1,56 @@
+{
+  "record": "FOTZ-32C54499",
+  "url": "https://www.fotz-studio.pl/blog/strategia-content-marketingu-skuteczny-przewodnik-dla-firm",
+  "queryId": "be80621d8dbc76e5",
+  "branch": "swarm/blog-content-strategia-20261111",
+  "baseline": {
+    "publicScore": 46,
+    "evidence": "analysis/neuron/evaluation-be80621d8dbc76e5.json"
+  },
+  "candidate": {
+    "localScore": 96,
+    "method": "evaluate-html",
+    "selector": "main#main-content",
+    "builtDocument": "dist/blog/strategia-content-marketingu-skuteczny-przewodnik-dla-firm/index.html",
+    "evaluation": "analysis/neuron/evaluation-be80621d8dbc76e5-guide-candidate.json",
+    "title": "Strategia content marketingowa — poradnik 2026 | FOTZ",
+    "titleLength": 53,
+    "metaDescription": "Strategia content marketingowa krok po kroku: cele, odbiorcy, treści, SEO, dystrybucja i pomiar. Zobacz, jak stworzyć plan dla firmy w 2026 roku.",
+    "metaDescriptionLength": 145,
+    "canonical": "https://www.fotz-studio.pl/blog/strategia-content-marketingu-skuteczny-przewodnik-dla-firm",
+    "h1Count": 1,
+    "mainContentCount": 1,
+    "uniqueContentIds": true,
+    "articleDatePublished": "2026-05-03T03:17:02.704+00:00",
+    "articleDateModified": "2026-11-11",
+    "visibleFaqQuestionsMatchingSchema": 5
+  },
+  "gsc": {
+    "impressions": 0,
+    "clicks": 0,
+    "position": 0,
+    "periodStart": "2026-10-13",
+    "periodEnd": "2026-11-09",
+    "queries11to20": [],
+    "evidence": "analysis/gsc-new-guides-20261111.json"
+  },
+  "checks": {
+    "targetedTests": "31/31",
+    "liveBlogTests": "7/7",
+    "typecheck": "pass",
+    "build": "1061 pages generated; 0 body errors",
+    "liveBlogRender": "pass; no external requests or database writes",
+    "seoCheck": "pass with PYTHONUTF8=1; 0 head errors; 0 sitemap issues; 0 broken rendered links; 0 broken source links",
+    "diffCheck": "pass"
+  },
+  "cmsDeployment": {
+    "productionDatabaseWritePerformed": false,
+    "mechanism": "The existing reviewed renderer overlay is shared by BlogArticleDynamic and prerender. The public snapshot synchronization script is read-only.",
+    "repositoryDeployment": "After review and merge, deploy the branch build. The reviewed overlay renders the candidate without a direct production database write.",
+    "cmsSourceUpdate": "If the CMS record itself must be changed, an authorized editor must use the approved CMS/admin path for the exact slug. Afterwards run node scripts/sync-blog-seo.mjs, review both snapshots, synchronize maps when required, rebuild and rerun checks. Re-review the exact replacement because any subsequent CMS source edit intentionally bypasses it."
+  },
+  "notes": [
+    "No evaluate-url was run before merge.",
+    "The local content score is not a public confirmation or a claim about indexing, rankings or traffic."
+  ]
+}

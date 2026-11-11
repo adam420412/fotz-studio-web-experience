@@ -1,4 +1,4 @@
-import { reviewedContentStrategyCopy } from "./reviewed-content-strategy-copy.mjs";
+import { reviewedContentStrategyCopy } from "./reviewed-content-strategy-2026.mjs";
 import { reviewedCampaignCopy } from "./reviewed-campaign-copy.mjs";
 
 /** Reviewed editorial corrections shared by live CMS rendering and prerender.

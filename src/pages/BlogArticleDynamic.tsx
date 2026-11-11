@@ -12,7 +12,7 @@ import { Button } from "@/components/ui/button";
 import { formatBlogDate } from "@/lib/blog-bootstrap.mjs";
 import { getBlogImage } from "@/lib/blog-images.mjs";
 import blogImages from "@/data/blog-images.json";
-import { getBlogMetadata, normalizeSchemaUrls, prepareBlogHtml } from "@/lib/blog-seo.mjs";
+import { getBlogArticleSchema, getBlogFaqSchema, getBlogHeadline, getBlogMetadata, prepareBlogHtml } from "@/lib/blog-seo.mjs";
 
 /**
  * BabyLove may store keywords as `["a","b"]`, `{ keywords: ["a","b"] }`,
@@ -87,9 +87,9 @@ export default function BlogArticleDynamic() {
   const metaDescription = metadata.description;
   const lead = metadata.description;
   const isTestArticle = metadata.noIndex;
-
-  const hasCmsArticleSchema = !!article.json_ld;
-  const hasCmsFaqSchema = !!article.faq_json_ld;
+  const headline = getBlogHeadline(article);
+  const articleSchema = getBlogArticleSchema(article);
+  const faqSchema = getBlogFaqSchema(article);
 
   return (
     <Layout>
@@ -105,12 +105,12 @@ export default function BlogArticleDynamic() {
       <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://www.fotz-studio.pl" },
           { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
-          { name: article.title, url: canonicalUrl },
+          { name: headline, url: canonicalUrl },
         ]}/>
-      {/* Prefer CMS-provided JSON-LD when available, otherwise emit our own. */}
-      {!hasCmsArticleSchema && (
+      {/* Prefer reviewed/CMS JSON-LD when available, otherwise emit our own. */}
+      {!articleSchema && (
         <ArticleSchema
-          title={article.title}
+          title={headline}
           description={metaDescription}
           url={canonicalUrl}
           image={metadata.ogImage}
@@ -119,16 +119,16 @@ export default function BlogArticleDynamic() {
           author="Zespół FOTZ"
         />
       )}
-      {(hasCmsArticleSchema || hasCmsFaqSchema) && (
+      {(articleSchema || faqSchema) && (
         <Helmet>
-          {hasCmsArticleSchema && (
+          {articleSchema && (
             <script type="application/ld+json">
-              {JSON.stringify(normalizeSchemaUrls(article.json_ld)).replace(/</g, "\\u003c")}
+              {JSON.stringify(articleSchema).replace(/</g, "\\u003c")}
             </script>
           )}
-          {hasCmsFaqSchema && (
+          {faqSchema && (
             <script type="application/ld+json">
-              {JSON.stringify(normalizeSchemaUrls(article.faq_json_ld)).replace(/</g, "\\u003c")}
+              {JSON.stringify(faqSchema).replace(/</g, "\\u003c")}
             </script>
           )}
         </Helmet>
@@ -145,7 +145,7 @@ export default function BlogArticleDynamic() {
           {/* Header */}
           <header className="mb-12">
             <h1 className="text-3xl md:text-5xl font-heading font-bold mb-6">
-              {article.title}
+              {headline}
             </h1>
 
             {lead && (
