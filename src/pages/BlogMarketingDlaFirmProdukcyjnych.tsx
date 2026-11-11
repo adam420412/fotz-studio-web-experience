@@ -178,6 +178,30 @@ export default function BlogMarketingDlaFirmProdukcyjnych() {
           </section>
         </FadeInView>
 
+        {/* Dział marketingu */}
+        <FadeInView>
+          <section className="py-16 px-4 bg-slate-50">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-bold text-slate-900 mb-8">Dział marketingu i mierzenie wyników — marketing cyfrowy w praktyce</h2>
+              <div className="space-y-5 text-slate-700 leading-relaxed">
+                <p>
+                  Marketing dla małych firm produkcyjnych nie wymaga dużego działu marketingu — wystarczy proces. Zacznij od analityki: Google Analytics i Search Console pokażą, które strony produktów przyciągają ruch z wyszukiwarki i na czym ludzie wysiadają. Marketing internetowy i marketing cyfrowy to nie magia: ruchu na stronie nie liczysz dla siebie, tylko dla zapytań. Konwersja to zapytanie ofertowe, nie kliknięcie. Mierz efekty każdej kampanii: koszt kontaktu i liczba rozmów handlowych.
+                </p>
+                <p>
+                  Obecność w internecie obejmuje też media społecznościowe i kanałów komunikacji, których klient używa przy podejmowaniu decyzji. Grupa docelowa i grupy odbiorców to nie to samo: odbiorca czyta bloga, decydent podpisuje zamówienie. Działania marketingowe planuj pod obie role. Skuteczny marketing to skuteczne działania reklamowe plus relacje z klientami — marketing automation przypomina o follow-upie, a handlowiec zna status każdego kontaktu. Dobry marketing dla firm produkcyjnych to przemyślana strategia: plan działania, planowanie kampanii i mierzenie, nie przypadkowe posty.
+                </p>
+                <p>
+                  Co daje przewagę? Strona internetowa i stronie www z realnymi dowodami oraz content marketing, który odpowiada na pytania klientów. Marketingowy przekaz ma być prosty: jakie produkty i usługi oferujesz, dla kogo i z jakim efektem. Optymalizacja treści pod wyszukiwarkę i frazy z branży produkcyjnej to inwestycja, a zarządzanie kampaniami z jednym raportem — kontrola kosztów. Marketing firm produkcyjnych mierzymy tym, co zdobywanie nowych klientów kosztuje, i tym, ile zapytań kończy się zamówieniem. Reklamowy budżet ma pracować na wynikach wyszukiwania i rozmowach, nie na wyświetleniach. Chcesz prowadzić marketing, który sprzedaje? Zacznij od audytu obecności w internecie i listy pytań klientów — tak zaczynamy pracę z każdą firmą produkcyjną.
+
+                Strategia marketingowa dla producenta zaczyna się od branży: branża produkcyjna ma inny cykl niż usługi. Marketing biznesowy to dla nas praca z liczbami, a wyzwaniami producentów zajmujemy się od lat — długi cykl, komitet decyzyjny i RFQ. Budowanie relacji z klientami kończy się tym, że klient wraca po kolejne zamówienie. Firma produkcyjna potrzebuje treści edukacyjnych, które wyjaśniają parametry i zastosowania, a nie ogólnych haseł. Analityka i wyszukiwarka pokazują, czego klienci szukają — od fraz branżowych po pytania przed zakupem. Marketing w małej firmie produkcyjnej nie wymaga działu: wymaga planu. Kampanie reklamowe mają cel sprzedażowy, a marketingu bezpośredniego używamy, gdy klient jest gotów do decyzji — podejmowania decyzji nie przyspieszy kolejny baner, tylko dowód.
+
+                Promować produkt bez pokrycia to strata czasu. Sklep internetowy producenta to często katalog z RFQ, nie klasyczny koszyk — interakcja z klientem kończy się rozmową, nie kliknięciem. Przewaga wygrywa się na potencjalnych klientów, którzy widzą realizacje: produktów i usług nie sprzedaje slogan, tylko przykład pracy. Usługa dodatkowa (np. audyt widoczności) pozwala zacząć małym kosztem — dla Twojej firmie i dla swojej firmie to punkt wyjścia, nie koniec oferty.
+                </p>
+              </div>
+            </div>
+          </section>
+        </FadeInView>
+
         {/* FAQ */}
         <FadeInView>
           <section className="py-16 px-4 bg-white">
