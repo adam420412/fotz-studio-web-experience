@@ -254,7 +254,7 @@ export default function BlogWaccCoTo() {
               </table>
             </div>
             <p className="text-lg text-slate-700 mb-6">
-              Interpretacja: każda inwestycja (np. nowa strona, kampania, sprzęt) powinna zarobić więcej niż 9,79% rocznie, żeby tworzyć wartość dla firmy. Jeśli projekt ma prognozowany zwrot 15%, przechodzi próg WACC. Jeśli 6% — niszczy wartość, nawet gdy „wygląda tanio". WACC to nie formalność z podręcznika: to próg decyzyjny przy wycenie projektów i przy rozmowie z inwestorem lub bankiem.
+              Interpretacja: każda inwestycja (np. nowa strona, kampania, sprzęt) powinna zarobić więcej niż 9,79% rocznie, żeby tworzyć wartość dla firmy. WACC formula (wzór) to średnia ważona kosztów — stopy procentowe na rynku wpływają na koszt długu, a przepływy pieniężne projektu musi przewyższyć próg. Inwestowanie bez tego progu to zgadywanie: w praktyce WACC służy ocenie, czy firma rośnie czy traci wartość. Praktyka finansów uczy, że warunki rynkowe zmieniają próg — przy wysokich stopach przechodzą tylko najlepsze projekty. Jeśli projekt ma prognozowany zwrot 15%, przechodzi próg WACC. Jeśli 6% — niszczy wartość, nawet gdy „wygląda tanio". WACC to nie formalność z podręcznika: to próg decyzyjny przy wycenie projektów i przy rozmowie z inwestorem lub bankiem.
             </p>
 
             <h2 className="text-3xl font-bold text-slate-900 mb-8">FAQ — WACC</h2>
