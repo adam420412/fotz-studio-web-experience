@@ -1,1707 +1,420 @@
-import { Layout } from "@/components/layout/Layout";
-import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import {
-  ArrowLeft,
-  Calendar,
-  Clock,
-  User,
-  CheckCircle,
-  AlertCircle,
-  TrendingUp,
-  ShoppingCart,
-  Smartphone,
-  Lock,
-  Eye,
-} from "lucide-react";
-import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { ArrowRight, Calendar, CheckCircle2, ChevronRight, ExternalLink, User } from "lucide-react";
+import { Layout } from "@/components/layout/Layout";
 import { SEOHead } from "@/components/seo/SEOHead";
-import {
-  FAQSchema,
-  ArticleSchema,
-  BreadcrumbSchema,
-} from "@/components/seo/StructuredData";
-import {
-  RelatedServices,
-  servicesByCategory,
-} from "@/components/blog/RelatedServices";
+import { ArticleSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
+
+const seoTitle = "Strony internetowe dla firm: tworzenie i wybór oferty | FOTZ";
+const seoDescription = "Firma może zaprojektować i stworzyć profesjonalną stronę www. Poradnik 2026: CMS, SEO, koszty i wybór oferty dla Twojej firmy.";
+const canonicalUrl = "https://www.fotz-studio.pl/blog/strona-internetowa-dla-firmy";
+const pageTitle = "Strona internetowa dla firmy: jak zaprojektować i stworzyć witrynę";
+
+const articleData = {
+  headline: pageTitle,
+  description: seoDescription,
+  url: canonicalUrl,
+  image: "https://www.fotz-studio.pl/og-image.jpg",
+  datePublished: "2026-04-10",
+  dateModified: "2026-11-11",
+  author: "Fotz Studio",
+};
+
+const breadcrumbs = [
+  { name: "Strona główna", url: "/" },
+  { name: "Blog", url: "/blog" },
+  { name: "Strona internetowa dla firmy", url: canonicalUrl },
+];
+
+const processSteps = [
+  {
+    id: "krok-cel",
+    title: "1. Ustal cel i sposób pomiaru",
+    text: "Określ biznesowy cel projektu. Serwis może prezentować ofertę, ułatwiać kontakt, przyjmować rezerwacje czy wspierać sprzedaż. Firma powinna zapisać grupy odbiorców, ich pytania i działanie, które można zmierzyć bez obiecywania wyniku. Dla Twojego biznesu ważniejsza jest konkretna ścieżka użytkownika niż ogólne hasło o obecności w internecie.",
+    checks: [
+      "Wybierz główny cel i najwyżej kilka działań użytkownika do pomiaru.",
+      "Zapisz, kto dostarczy informacje o ofercie i kto akceptuje decyzje.",
+      "Ustal punkt wyjścia, jeżeli zastępujesz obecny serwis.",
+    ],
+  },
+  {
+    id: "krok-architektura",
+    title: "2. Zaprojektuj mapę i treść podstron",
+    text: "Przygotuj listę potrzebnych podstron i przypisz im pytania odbiorców. Strona główna powinna prowadzić do właściwych informacji, a nie zastępować całego serwisu. Tworzenie treści zacznij przed dopracowaniem wyglądu: opisz usługi, warunki współpracy, realizacje i sposób kontaktu. Każda podstrona powinna mieć własną rolę, aby ograniczyć powtórzenia.",
+    checks: [
+      "Rozpisz strukturę menu, adresy i powiązania między podstronami.",
+      "Zbierz aktualne teksty, zdjęcia, materiały marki i wymagane informacje prawne.",
+      "Zaplanuj przekierowania przy zmianie dotychczasowych adresów.",
+    ],
+  },
+  {
+    id: "krok-projekt",
+    title: "3. Przygotuj UX i projekt graficzny",
+    text: "Najpierw ułóż przejrzysty prototyp kluczowych widoków, potem dopracuj warstwę wizualną. Design powinien odpowiadać marce i ułatwiać czytanie, a wygląd strony nie może przesłaniać treści ani obsługi. Sprawdź nagłówki, kontrast, rozmiar pól, komunikaty formularzy i nawigację na telefonie. Dobra strona prowadzi użytkownika bez zgadywania, gdzie kliknąć.",
+    checks: [
+      "Przejdź główne zadania na prototypie przed wdrożeniem.",
+      "Sprawdź widoki mobilne i obsługę klawiaturą, nie tylko makietę komputerową.",
+      "Opisz zasady dla zdjęć, ikon, przycisków i komunikatów błędów.",
+    ],
+  },
+  {
+    id: "krok-wdrozenie",
+    title: "4. Wdróż funkcje i zarządzanie treścią",
+    text: "Zakres prac przy tworzeniu stron internetowych dla firm powinien wymieniać system edycji, szablony, formularze, integracje i migrację materiałów. Projektowanie i tworzenie stron internetowych wymaga uzgodnienia, kto odpowiada za konfigurację oraz testy zewnętrznych narzędzi. Dodawaj tylko funkcje potrzebne w pierwszej wersji i zapisz sposób ich późniejszej rozbudowy.",
+    checks: [
+      "Przetestuj edycję, publikację i przywracanie kopii treści.",
+      "Sprawdź dostarczanie formularzy oraz komunikat dla nadawcy.",
+      "Udokumentuj konta, uprawnienia, integracje i właścicieli dostępów.",
+    ],
+  },
+  {
+    id: "krok-testy",
+    title: "5. Wykonaj odbiór przed publikacją",
+    text: "Przygotuj checklistę dla treści, urządzeń, przeglądarek, wydajności, dostępności, metadanych i analityki. Podczas odbioru profesjonalnej strony internetowej sprawdzaj rzeczywiste zachowanie serwisu, a nie tylko zgodność z obrazkiem. Zweryfikuj linki, canonical, mapę XML, odpowiedzi błędów i działanie na małym ekranie. Test zdarzenia analitycznego nie zastępuje potwierdzenia dostarczenia zgłoszenia.",
+    checks: [
+      "Zapisuj problem z adresem, krokiem odtworzenia i kryterium poprawy.",
+      "Skontroluj stare adresy i przekierowania po migracji.",
+      "Wykonaj końcowy test po poprawkach na wersji przeznaczonej do publikacji.",
+    ],
+  },
+  {
+    id: "krok-rozwoj",
+    title: "6. Zaplanuj opiekę i rozwój",
+    text: "Publikacja kończy etap wdrożenia, ale nie pracę nad serwisem. Ustal harmonogram aktualizacji, kopii zapasowych, przeglądu treści i reagowania na błędy. Projekt strony powinien przewidywać także szkolenie oraz przekazanie dokumentacji. Firma może planować rozwój na podstawie zapytań użytkowników i danych, bez zakładania, że sama zmiana technologii poprawi jej wynik.",
+    checks: [
+      "Wskaż osobę odpowiedzialną za aktualizacje i kontakt techniczny.",
+      "Ustal sposób przywracania kopii i zakres pomocy po publikacji.",
+      "Przeglądaj rzeczywiste potrzeby przed dodawaniem kolejnych funkcji.",
+    ],
+  },
+];
 
 const faqItems = [
   {
-    question:
-      "Czy każda firma potrzebuje strony internetowej w 2026 roku?",
-    answer:
-      "Tak, niemal każda firma powinna posiadać stronę internetową. W dzisiejszych czasach potencjalni klienci szukają informacji o firmach online. Brak strony internetowej może oznaczać utratę konkurencyjności i poważne straty finansowe. Nawet mikroprzedsiębiorcy i samozatrudnieni powinni mieć co najmniej stronę wizytówkę.",
+    id: "czy-potrzebna",
+    question: "Czy właściciel małej firmy potrzebuje strony internetowej?",
+    answer: "Nie każda firma potrzebuje takiego samego serwisu. Własna strona internetowa jest szczególnie przydatna, gdy klienci chcą sprawdzić ofertę, zakres, lokalizację, realizacje lub sposób kontaktu. Firma może zacząć od prostego zakresu. Sam profil społecznościowy nie daje takiej samej kontroli nad strukturą treści i funkcjami.",
   },
   {
-    question:
-      "Jaka jest średnia cena strony internetowej dla małej firmy w Polsce?",
-    answer:
-      "Koszt strony internetowej dla małej firmy wynosi zazwyczaj od 2000 do 10000 PLN. Na cenę wpływa liczba podstron, funkcjonalności, projekt graficzny oraz poziom zaawansowania strony. Tańsze rozwiązania oferują gotowe szablony (500-2000 PLN), podczas gdy przygotowanie strony na zamówienie kosztuje więcej, ale jest bardziej dostosowane do potrzeb biznesu.",
+    id: "od-czego-zaczac",
+    question: "Jak zrobić stronę internetową dla firmy krok po kroku?",
+    answer: "Zacznij od celu, odbiorców i listy podstron, a następnie przygotuj treści oraz prototyp. Kolejne etapy to projekt wizualny, wybór sposobu wdrożenia, konfiguracja, testy i publikacja. Przed startem sprawdź formularze, urządzenia mobilne, przekierowania i analitykę. Po publikacji ustal aktualizacje, kopie zapasowe i rozwój na podstawie danych.",
   },
   {
-    question: "Czy lepiej wybrać WordPress czy stronę na zamówienie?",
-    answer:
-      "Wybór zależy od potrzeb. WordPress jest szybki w wdrożeniu i tańszy, ale ma ograniczenia w dostosowywaniu. Strona na zamówienie jest bardziej elastyczna i skalowalna, ale droższe i wymaga więcej czasu. Dla małych firm WordPress jest rozsądnym wyborem, a dla większych przedsiębiorstw bardziej opłacalna jest strona na zamówienie.",
+    id: "koszt",
+    question: "Ile kosztuje strona internetowa dla firmy?",
+    answer: "Nie ma jednej ceny dla każdej firmy. Koszt zależy od liczby widoków, materiałów, projektu UX, systemu edycji, integracji, migracji, testów i opieki. Porównuj pełny zakres ofert oraz koszt pierwszego roku i kolejnych okresów. Sztywna kwota bez poznania wymagań nie pokazuje, co faktycznie otrzymasz i jakie prace mogą zostać doliczone.",
   },
   {
-    question:
-      "Jak ważny jest responsive design dla strony firmowej?",
-    answer:
-      "Responsive design jest kluczowy. Ponad 60% użytkowników internetu przegląduje strony na urządzeniach mobilnych. Jeśli strona nie jest dostosowana do telefonów, potencjalni klienci będą jej opuszczać. Google również penalizuje strony, które nie są mobilne, co wpływa na pozycjonowanie w wynikach wyszukiwania.",
+    id: "czas",
+    question: "Ile trwa stworzenie strony internetowej dla firmy?",
+    answer: "Zakres tworzenia profesjonalnej strony internetowej zależy od gotowości materiałów, liczby osób akceptujących, integracji i testów. Prosta strona wymaga innego harmonogramu niż serwis z migracją i wersjami językowymi. Zamiast gwarantowanego terminu ustal etapy, odpowiedzialność za dostarczenie treści, terminy informacji zwrotnej i sposób rozliczania zmian zakresu.",
   },
   {
-    question: "Czy mogę zrobić stronę internetową sam, bez programisty?",
-    answer:
-      "Tak, można używając konstruktorów stron takich jak Wix, Squarespace czy Webflow. Jednak dla stron bardziej skomplikowanych lub gdy chcesz mieć lepszą kontrolę nad pozycjonowaniem w Google, warto zlecić pracę profesjonaliście. Własne wykonanie wymaga czasu, ale jest tańsze.",
+    id: "wykonawca",
+    question: "Freelancer czy agencja — jak wybrać wykonawcę?",
+    answer: "Forma działalności nie przesądza o jakości. Sprawdź kompetencje potrzebne do strategii, treści, projektu, programowania i opieki. Porównaj przykładowe rezultaty prac, sposób komunikacji, zakres odpowiedzialności, poprawki i przekazanie dostępów. Wybierz ofertę, która opisuje Twoje potrzeby i kryteria odbioru, zamiast polegać wyłącznie na nazwie pakietu.",
   },
   {
-    question: "Jaki hosting wybrać dla strony biznesowej?",
-    answer:
-      "Polecamy hosting o gwarancji dostępności minimum 99,5%. Ważne są cechy takie jak bezpłatny SSL, backup, szybka prędkość (Fast) oraz wsparcie techniczne 24/7. Dla małych firm wystarczy hosting współdzielony, a dla większych warto rozważyć hosting zarządzany lub VPS.",
+    id: "wordpress",
+    question: "Czy CMS jest dobry dla strony firmowej?",
+    answer: "Taki system może być odpowiedni, gdy zespół chce samodzielnie edytować treści i dostępne rozwiązania pasują do zakresu. Wymaga jednak świadomego doboru rozszerzeń, aktualizacji, kopii i kontroli wydajności. Kreator albo rozwiązanie dedykowane również trzeba oceniać według potrzeb. Nie wybieraj technologii tylko ze względu na popularność lub samą cenę startową.",
   },
   {
-    question:
-      "Czy strona internetowa musi być zgodna z RODO i GDPR?",
-    answer:
-      "Tak, każda strona internetowa zbierająca dane użytkowników (np. formularz kontaktowy, newsletter) musi być zgodna z RODO i GDPR. Wymaga to właściwej polityki prywatności, oświadczeń cookies, bezpiecznego przechowywania danych oraz możliwości usunięcia danych przez użytkownika.",
+    id: "mobile",
+    question: "Dlaczego strona firmowa ma działać dobrze na telefonie?",
+    answer: "Na telefonie użytkownik powinien czytać treść, otwierać menu i wysyłać formularz bez powiększania ekranu ani szukania ukrytych elementów. Sprawdź także klawiaturę, pola, komunikaty i wydajność. Sam responsywny szablon nie wystarcza: konieczny jest test rzeczywistych zadań. Poprawa wygody nie gwarantuje pozycji ani sprzedaży, ale usuwa konkretne przeszkody.",
   },
   {
-    question:
-      "Ile czasu zajmuje tworzenie strony internetowej dla firmy?",
-    answer:
-      "Tworzenie strony wizytówki zajmuje zazwyczaj 2-4 tygodnie, bardziej skomplikowane strony mogą wymagać 2-3 miesięcy. Czas zależy od zakresu prac, liczby dostosowań i szybkości przesyłania materiałów przez klienta. Gotowe szablony można uruchomić w kilka dni.",
+    id: "po-publikacji",
+    question: "Co robić po opublikowaniu strony www?",
+    answer: "Sprawdzaj dostarczanie formularzy, błędy, indeksowanie ważnych adresów i dane dla dokładnych URL-i. Aktualizuj system, wykonuj kopie zapasowe, kontroluj treści i rozwijaj je według potrzeb odbiorców. W Google Search Console zachowaj okres oraz filtr pomiaru i nie przypisuj jednej stronie zapytań innych adresów. Nie ma gwarancji ruchu z samej publikacji.",
   },
 ];
 
 export default function BlogStronaDlaFirmy() {
   return (
-    <Layout>
+    <Layout workPlacement="after-main">
       <SEOHead
-        title="Strona Internetowa Dla Firmy - Kompletny Poradnik 2026"
-        description="Jak stworzyć stronę internetową dla firmy? Poradnik: typy stron, koszty, technologie i wskazówki SEO. Praktyczne porady 2026."
+        title={seoTitle}
+        description={seoDescription}
+        canonical={canonicalUrl}
         ogType="article"
-        canonical="https://www.fotz-studio.pl/blog/strona-internetowa-dla-firmy"
-        keywords="strona internetowa dla firmy, strona www dla firmy, jak stworzyć stronę firmową, strona biznesowa, website dla firm"
       />
-      <ArticleSchema
-        title="Strona Internetowa Dla Firmy - Kompletny Poradnik 2026"
-        description="Kompleksowy poradnik dotyczący tworzenia profesjonalnej strony internetowej dla firmy. Dowiedz się o typach stron, kosztach, technologiach i strategiach SEO."
-        url="https://www.fotz-studio.pl/blog/strona-internetowa-dla-firmy"
-        datePublished="2026-04-10"
-        dateModified="2026-04-10"
-        author="Fotz Studio"
-      />
-      <BreadcrumbSchema items={[
-          { name: "Fotz", url: "https://www.fotz-studio.pl" },
-          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
-          {
-            name: "Strona Internetowa Dla Firmy",
-            url: "https://www.fotz-studio.pl/blog/strona-internetowa-dla-firmy",
-          },
-        ]}/>
+      <ArticleSchema data={articleData} />
+      <BreadcrumbSchema items={breadcrumbs} />
       <FAQSchema items={faqItems} />
 
-      <div className="bg-background">
-        {/* Header Navigation */}
-        <div className="border-b border-border">
-          <div className="max-w-4xl mx-auto px-4 py-4">
-            <Link to="/blog" className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
-              <ArrowLeft className="w-4 h-4" />
-              Wróć do bloga
-            </Link>
-          </div>
-        </div>
-
-        {/* Hero Section */}
-        <section className="bg-gradient-to-br from-primary/5 to-primary/10 border-b border-border">
-          <div className="max-w-4xl mx-auto px-4 py-16">
-            <div className="mb-6">
-              <div className="inline-block bg-primary/20 text-primary px-3 py-1 rounded-full text-sm font-medium mb-4">
-                Poradnik Biznesowy
-              </div>
-              <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-                Strona Internetowa Dla Firmy – Kompletny Poradnik 2026
-              </h1>
-              <p className="text-xl text-muted-foreground mb-6">
-                Wszystko co musisz wiedzieć o tworzeniu profesjonalnej strony
-                internetowej dla Twojej firmy – od planowania po wdrażanie i
-                pozycjonowanie.
-              </p>
-
-              {/* Article Metadata */}
-              <div className="flex flex-wrap gap-6 text-sm text-muted-foreground">
-                <div className="flex items-center gap-2">
-                  <Calendar className="w-4 h-4" />
-                  <span>10 kwietnia 2026</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Clock className="w-4 h-4" />
-                  <span>15 minut czytania</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <User className="w-4 h-4" />
-                  <span>Fotz Studio</span>
-                </div>
-              </div>
+      <article id="article-content" className="bg-white text-slate-800">
+        <header className="bg-slate-950 text-white">
+          <div className="mx-auto max-w-4xl px-4 pb-14 pt-28 md:px-6 md:pb-16 md:pt-32">
+            <nav aria-label="Okruszki" className="mb-8 flex flex-wrap items-center gap-2 text-sm text-slate-400">
+              <Link to="/" className="hover:text-yellow-400">Strona główna</Link>
+              <ChevronRight className="h-4 w-4" aria-hidden="true" />
+              <Link to="/blog" className="hover:text-yellow-400">Blog</Link>
+              <ChevronRight className="h-4 w-4" aria-hidden="true" />
+              <span className="text-slate-200">Strona dla firmy</span>
+            </nav>
+            <p className="mb-4 text-sm font-semibold uppercase tracking-wider text-yellow-400">Poradnik 2026</p>
+            <h1 className="mb-6 text-4xl font-bold leading-tight md:text-5xl">{pageTitle}</h1>
+            <p className="max-w-3xl text-lg leading-relaxed text-slate-300 md:text-xl">
+              Od celu, typu serwisu i materiałów przez technologię, budżet i odbiór aż po widoczność oraz opiekę. Podejmuj decyzje na podstawie zakresu, nie obietnic.
+            </p>
+            <div className="mt-7 flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-400">
+              <span className="flex items-center gap-2"><User className="h-4 w-4" aria-hidden="true" /> Zespół FOTZ</span>
+              <span className="flex items-center gap-2"><Calendar className="h-4 w-4" aria-hidden="true" /> Opublikowano: 10 kwietnia 2026</span>
+              <span>Aktualizacja: 11 listopada 2026</span>
             </div>
           </div>
-        </section>
+        </header>
 
-        {/* Main Content */}
-        <section className="max-w-4xl mx-auto px-4 py-16">
-          {/* Introduction */}
-          <div className="prose prose-lg max-w-none mb-12">
-            <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              W 2026 roku strona internetowa to nie luksus, ale konieczność.
-              Niezależnie od tego, czy prowadzisz małą firmę usługową, sklep
-              internetowy czy korporację – profesjonalna strona internetowa jest
-              kluczem do sukcesu biznesowego. Potencjalni klienci szukają
-              informacji online, a brak strony oznacza utratę konkurencyjności i
-              realnych przychodów.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              W tym kompleksowym poradniku opowiemy Ci o wszystkim, co musisz
-              wiedzieć o tworzeniu strony internetowej dla firmy – od
-              zaplanowania projektu, przez wybór technologii, aż po
-              implementację i optymalizację SEO.
-            </p>
-          </div>
+        <div className="mx-auto max-w-4xl px-4 py-12 md:px-6 md:py-16">
+          <nav aria-labelledby="spis-tresci" className="mb-14 rounded-xl border border-slate-200 bg-slate-50 p-6 md:p-8">
+            <h2 id="spis-tresci" className="mb-5 text-2xl font-bold text-slate-950">W tym poradniku</h2>
+            <ol className="grid gap-3 text-slate-700 md:grid-cols-2">
+              <li><a href="#cel-strony" className="hover:text-yellow-700 hover:underline">Cel i rola strony firmowej</a></li>
+              <li><a href="#typy-stron" className="hover:text-yellow-700 hover:underline">Rodzaje stron dla firm</a></li>
+              <li><a href="#elementy-strony" className="hover:text-yellow-700 hover:underline">Elementy i funkcjonalności</a></li>
+              <li><a href="#proces-tworzenia" className="hover:text-yellow-700 hover:underline">Wdrożenie krok po kroku</a></li>
+              <li><a href="#technologia" className="hover:text-yellow-700 hover:underline">Kreator, CMS czy kod</a></li>
+              <li><a href="#koszty" className="hover:text-yellow-700 hover:underline">Koszty i zakres oferty</a></li>
+              <li><a href="#wykonawca" className="hover:text-yellow-700 hover:underline">Wybór wykonawcy</a></li>
+              <li><a href="#seo-i-pomiar" className="hover:text-yellow-700 hover:underline">Widoczność i pomiar</a></li>
+              <li><a href="#opieka" className="hover:text-yellow-700 hover:underline">Bezpieczeństwo i opieka</a></li>
+              <li><a href="#faq" className="hover:text-yellow-700 hover:underline">Najczęstsze pytania</a></li>
+            </ol>
+          </nav>
 
-          {/* Table of Contents */}
-          <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 mb-12">
-            <h2 className="text-xl font-bold text-primary mb-4">
-              Spis treści
-            </h2>
-            <ul className="space-y-2 text-muted-foreground">
-              <li>
-                <a href="#dlaczego-firma-potrzebuje-strony" className="text-primary hover:underline">
-                  1. Dlaczego każda firma potrzebuje strony internetowej
-                </a>
-              </li>
-              <li>
-                <a href="#typy-stron-biznesowych" className="text-primary hover:underline">
-                  2. Typy stron biznesowych
-                </a>
-              </li>
-              <li>
-                <a href="#cechy-dobrej-strony" className="text-primary hover:underline">
-                  3. Cechy dobrej strony firmowej
-                </a>
-              </li>
-              <li>
-                <a href="#planowanie-strony" className="text-primary hover:underline">
-                  4. Planowanie strony internetowej
-                </a>
-              </li>
-              <li>
-                <a href="#diy-vs-agencja" className="text-primary hover:underline">
-                  5. DIY vs agencja vs freelancer
-                </a>
-              </li>
-              <li>
-                <a href="#koszty-strony" className="text-primary hover:underline">
-                  6. Koszty tworzenia strony firmowej
-                </a>
-              </li>
-              <li>
-                <a href="#technologie" className="text-primary hover:underline">
-                  7. Wybór technologii
-                </a>
-              </li>
-              <li>
-                <a href="#hosting-domena" className="text-primary hover:underline">
-                  8. Hosting i domena
-                </a>
-              </li>
-              <li>
-                <a href="#bezpieczenstwo" className="text-primary hover:underline">
-                  9. Bezpieczeństwo i prawo
-                </a>
-              </li>
-              <li>
-                <a href="#seo" className="text-primary hover:underline">
-                  10. Podstawy SEO dla nowych stron
-                </a>
-              </li>
-              <li>
-                <a href="#maintenance" className="text-primary hover:underline">
-                  11. Utrzymanie i aktualizacje
-                </a>
-              </li>
+          <section id="cel-strony" aria-labelledby="cel-strony-title" className="mb-16 scroll-mt-24">
+            <h2 id="cel-strony-title" className="mb-5 text-3xl font-bold text-slate-950">Czy Twoja firma potrzebuje własnej strony internetowej?</h2>
+            <p className="mb-5 text-lg leading-relaxed">
+              <strong>Krótka odpowiedź:</strong> własna strona www jest przydatna, gdy porządkuje informacje o firmie i pomaga odbiorcy wykonać konkretne działanie. Nie musi być rozbudowana. Zakres powinien wynikać z potrzeb Twojej firmy, sposobu obsługi klientów i dostępnych zasobów, a nie z zasady, że każda firma potrzebuje identycznego pakietu.
+            </p>
+            <p className="mb-5 leading-relaxed">
+              Przed stworzeniem strony zapisz potrzeby potencjalnego klienta: może chcieć sprawdzić ofertę, doświadczenie, obszar działania, cennik, dostępność czy kontakt. Obecność Twojej firmy w internecie może obejmować także mapy i social media, ale własny serwis pozwala zdecydować o strukturze, treści i funkcjach. Nie przypisuj mu automatycznie wzrostu sprzedaży ani pozycji w wyszukiwarce.
+            </p>
+            <p className="mb-6 leading-relaxed">
+              Dla firm usługowych punktem wyjścia bywa opis problemów i realizacji, a dla sklepu katalog oraz zakupy. Rozbudowane strony firmowe przydają się przy wielu ofertach, językach lub integracjach. Prosta strona może wystarczyć do przedstawienia jednej usługi. Firma powinna najpierw określić, jaką decyzję ma ułatwić jej serwis.
+            </p>
+            <div className="rounded-r-lg border-l-4 border-yellow-500 bg-yellow-50 p-5">
+              <p className="leading-relaxed">
+                To jest poradnik do planowania i porównywania rozwiązań. Odrębna strona <Link to="/uslugi/strony-internetowe-dla-firm" className="font-semibold text-yellow-800 hover:underline">oferty tworzenia stron internetowych dla firm</Link> opisuje usługę FOTZ; poniższa treść nie jest jej cennikiem ani obietnicą rezultatu.
+              </p>
+            </div>
+          </section>
+
+          <section id="typy-stron" aria-labelledby="typy-stron-title" className="mb-16 scroll-mt-24">
+            <h2 id="typy-stron-title" className="mb-5 text-3xl font-bold text-slate-950">Rodzaje stron dla firm: wizytówka, strona firmowa czy sklep?</h2>
+            <p className="mb-6 leading-relaxed">
+              Strony dla firm różnią się celem i zakresem. Firma powinna dobierać typ do zadania, nie do mody. Nazwa pakietu nie mówi wszystkiego o pracy, dlatego przy każdym wariancie zapisz potrzebne podstrony i funkcjonalności. Koszt i czas stworzenia strony internetowej zależą od konkretnego zakresu.
+            </p>
+            <div className="space-y-5">
+              <div className="rounded-xl border border-slate-200 p-6">
+                <h3 className="mb-3 text-xl font-bold text-slate-950">Strona wizytówka i landing page</h3>
+                <p className="leading-relaxed">Strona wizytówka przedstawia najważniejsze informacje i kontakt, a landing page koncentruje się na jednej kampanii lub ofercie. To nie są automatycznie tanie strony internetowe: profesjonalne projektowanie treści, formularz i integracje również wymagają pracy. Sprawdź, czy jedna strona wystarczy do odpowiedzi na pytania odbiorców.</p>
+              </div>
+              <div className="rounded-xl border border-slate-200 p-6">
+                <h3 className="mb-3 text-xl font-bold text-slate-950">Rozbudowana strona firmowa z CMS</h3>
+                <p className="leading-relaxed">Serwis z podstronami usługowymi, realizacjami i blogiem pomaga uporządkować większą ofertę. Firmowe strony wymagają wzorców edycji i zasad publikowania. Dla firm produkcyjnych przydatny może być katalog produktów, dla branży budowlanej opis realizacji, a dla transportowej prezentacja tras lub zakresu obsługi. Branża wskazuje potrzeby, lecz nie narzuca gotowego schematu.</p>
+              </div>
+              <div className="rounded-xl border border-slate-200 p-6">
+                <h3 className="mb-3 text-xl font-bold text-slate-950">Sklep internetowy lub aplikacja</h3>
+                <p className="leading-relaxed">Sklep dodaje produkty, koszyk, płatności, dostawy i obsługę zamówień, a aplikacja może wymagać kont, uprawnień i procesów indywidualnych. To inny zakres niż tworzenie stron www prezentujących ofertę. Jeśli sprzedajesz produkty online, porównaj osobno <Link to="/uslugi/sklepy-internetowe" className="font-semibold text-yellow-800 hover:underline">zakres wdrożenia sklepu internetowego</Link>.</p>
+              </div>
+            </div>
+          </section>
+
+          <section id="elementy-strony" aria-labelledby="elementy-strony-title" className="mb-16 scroll-mt-24">
+            <h2 id="elementy-strony-title" className="mb-5 text-3xl font-bold text-slate-950">Profesjonalna strona www dla firmy: funkcjonalność i design</h2>
+            <p className="mb-6 leading-relaxed">
+              Nowoczesne strony internetowe powinny odpowiadać na pytania odbiorców i działać niezawodnie. Profesjonalny serwis firmowy nie potrzebuje każdego dostępnego elementu. Każda strona internetowa ma inny zakres, ale poniższa checklista pomaga ocenić podstawy. Nie dodawaj funkcji tylko dlatego, że znajduje się u konkurenta.
+            </p>
+            <ul className="mb-7 space-y-4">
+              {[
+                ["Jasna oferta i treść", "Opisz, dla kogo działasz, jaki problem rozwiązujesz i jakie są warunki. Oddziel informacje potwierdzone od planów i nie używaj nieudokumentowanych wyników."],
+                ["Logiczne podstrony i kontakt", "Zadbaj o czytelne menu, aktualne dane kontaktowe i działający formularz z komunikatami. Użytkownik powinien wiedzieć, co stanie się po wysłaniu zapytania."],
+                ["Responsywność i dostępność", "Responsywne strony internetowe dostosowują układ do ekranu, ale konieczne są też testy klawiatury, kontrastu, etykiet i komunikatów. Sprawdzaj całe zadania."],
+                ["Wydajność i stabilność", "Optymalizacja obrazów, skryptów i czcionek powinna wynikać z pomiaru. Szybkość ładowania strony oceniaj na reprezentatywnych szablonach i urządzeniach, bez jednej magicznej granicy."],
+                ["Spójna identyfikacja", "Typografia, kolory i zdjęcia powinny wspierać markę oraz czytelność. Warstwa wizualna ma porządkować informacje, a nie ukrywać brak treści."],
+                ["Bezpieczeństwo i własność", "Skonfiguruj HTTPS, kopie, aktualizacje i minimalne uprawnienia. Firma powinna znać właścicieli kont domeny, hostingu, CMS i analityki."],
+                ["Możliwość pomiaru", "Zdefiniuj zdarzenia odpowiadające rzeczywistym działaniom, np. wysłanie formularza. Konwersja wymaga poprawnej konfiguracji i późniejszej kontroli jakości zgłoszeń."],
+              ].map(([title, text]) => (
+                <li key={title} className="flex items-start gap-3 leading-relaxed">
+                  <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-green-600" aria-hidden="true" />
+                  <span><strong className="text-slate-950">{title}:</strong> {text}</span>
+                </li>
+              ))}
             </ul>
-          </div>
-
-          {/* Section 1 */}
-          <section id="dlaczego-firma-potrzebuje-strony" className="mb-16">
-            <h2 className="text-3xl font-bold text-primary mb-6">
-              1. Dlaczego każda firma potrzebuje strony internetowej
-            </h2>
-
-            <div className="space-y-6 text-muted-foreground">
-              <p className="text-lg leading-relaxed">
-                Statystyki są bezlitosne: 97% Polaków szuka informacji o firmach
-                w internecie przed ich odwiedzeniem, a 60% nie pokłada zaufania
-                firmom, które nie mają strony internetowej. To oznacza, że bez
-                strony tracisz potencjalnych klientów zanim jeszcze dowiadują się
-                cokolwiek o Twojej ofercie.
-              </p>
-
-              <div className="bg-primary/5 border-l-4 border-primary rounded-r-lg p-6">
-                <h3 className="font-bold text-primary mb-4">
-                  Główne powody, aby mieć stronę firmową:
-                </h3>
-                <ul className="space-y-3">
-                  <li className="flex gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>
-                      <strong>Wiarygodność:</strong> Strona internetowa buduje
-                      zaufanie do Twojej firmy
-                    </span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>
-                      <strong>Dostępność 24/7:</strong> Twoja firma pracuje dla
-                      klientów całą dobę
-                    </span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>
-                      <strong>Pozyskiwanie leadów:</strong> Strona generuje
-                      potencjalnych klientów automatycznie
-                    </span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>
-                      <strong>Konkurencyjność:</strong> Twoi konkurenci mają
-                      stronę, więc Ty też powinieneś
-                    </span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>
-                      <strong>Pozycjonowanie:</strong> Strona pozwala Ci być
-                      widoczny w Google dla ważnych dla Ciebie słów kluczowych
-                    </span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>
-                      <strong>Marketing:</strong> Strona to fundament Twojej
-                      strategii digital marketingu
-                    </span>
-                  </li>
-                </ul>
-              </div>
-
-              <p className="text-lg leading-relaxed">
-                W dzisiejszym świecie strona internetowa to nie opcja – to
-                konieczność. Firmy bez strony są postrzegane jako przestarzałe i
-                mniej wiarygodne. Nawet jeśli nie sprzedajesz online, potencjalni
-                klienci będą szukać Twoich danych kontaktowych, opinii i
-                informacji o ofercie dokładnie online.
-              </p>
-            </div>
-          </section>
-
-          {/* Section 2 */}
-          <section id="typy-stron-biznesowych" className="mb-16">
-            <h2 className="text-3xl font-bold text-primary mb-6">
-              2. Typy stron biznesowych
-            </h2>
-
-            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              Nie wszystkie strony firmowe są takie same. Każdy typ strony ma
-              inne cele, funkcjonalności i wymogi techniczne.
-            </p>
-
-            <div className="grid gap-6 mb-8">
-              {/* Wizytówka */}
-              <div className="border border-border rounded-lg p-6 hover:shadow-md transition-shadow">
-                <div className="flex items-start gap-4">
-                  <Eye className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                  <div>
-                    <h3 className="text-xl font-bold text-primary mb-2">
-                      Strona Wizytówka
-                    </h3>
-                    <p className="text-muted-foreground mb-4">
-                      Prosta strona z podstawowymi informacjami o firmie:
-                      opisem, danymi kontaktowymi, lokalizacją i zdjęciami.
-                      Idealna dla małych firm, usługodawców, fryzjerów,
-                      dentystów itd.
-                    </p>
-                    <p className="text-sm text-muted-foreground">
-                      <strong>Koszt:</strong> 2000-5000 PLN
-                      <br />
-                      <strong>Czas:</strong> 2-3 tygodnie
-                      <br />
-                      <strong>Funkcjonalności:</strong> Strona główna, galeria,
-                      kontakt, mapa
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Portfolio */}
-              <div className="border border-border rounded-lg p-6 hover:shadow-md transition-shadow">
-                <div className="flex items-start gap-4">
-                  <TrendingUp className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                  <div>
-                    <h3 className="text-xl font-bold text-primary mb-2">
-                      Strona Portfolio
-                    </h3>
-                    <p className="text-muted-foreground mb-4">
-                      Strona prezentująca projekty, prace i portfolio.
-                      Niezbędna dla agencji kreatywnych, fotografów, grafików,
-                      architektów i freelancerów. Główny nacisk na wizualną
-                      prezentację prac.
-                    </p>
-                    <p className="text-sm text-muted-foreground">
-                      <strong>Koszt:</strong> 3000-8000 PLN
-                      <br />
-                      <strong>Czas:</strong> 3-4 tygodnie
-                      <br />
-                      <strong>Funkcjonalności:</strong> Portfolio, case studies,
-                      galeria, formularz zamówienia
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* E-commerce */}
-              <div className="border border-border rounded-lg p-6 hover:shadow-md transition-shadow">
-                <div className="flex items-start gap-4">
-                  <ShoppingCart className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                  <div>
-                    <h3 className="text-xl font-bold text-primary mb-2">
-                      Sklep Internetowy
-                    </h3>
-                    <p className="text-muted-foreground mb-4">
-                      Pełnowartościowy sklep online z katalogiem produktów,
-                      koszykiem, systemem płatności i zarządzaniem zamówieniami.
-                      Dla firm sprzedających produkty online.
-                    </p>
-                    <p className="text-sm text-muted-foreground">
-                      <strong>Koszt:</strong> 5000-25000 PLN
-                      <br />
-                      <strong>Czas:</strong> 4-12 tygodni
-                      <br />
-                      <strong>Funkcjonalności:</strong> Katalog produktów, koszyk,
-                      płatności, zarządzanie zapasami, integracje
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* SaaS */}
-              <div className="border border-border rounded-lg p-6 hover:shadow-md transition-shadow">
-                <div className="flex items-start gap-4">
-                  <Smartphone className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                  <div>
-                    <h3 className="text-xl font-bold text-primary mb-2">
-                      Aplikacja SaaS
-                    </h3>
-                    <p className="text-muted-foreground mb-4">
-                      Aplikacja internetowa dostępna dla użytkowników na
-                      abonament. Wymaga konta użytkownika, panelu administratora
-                      i integracji płatności cyklicznych.
-                    </p>
-                    <p className="text-sm text-muted-foreground">
-                      <strong>Koszt:</strong> 15000-100000+ PLN
-                      <br />
-                      <strong>Czas:</strong> 3-12 miesięcy
-                      <br />
-                      <strong>Funkcjonalności:</strong> System uprawnień, baza
-                      danych, automaty, API, monitoring
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Landing Page */}
-              <div className="border border-border rounded-lg p-6 hover:shadow-md transition-shadow">
-                <div className="flex items-start gap-4">
-                  <Lock className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                  <div>
-                    <h3 className="text-xl font-bold text-primary mb-2">
-                      Landing Page
-                    </h3>
-                    <p className="text-muted-foreground mb-4">
-                      Jednostronicowa strona skoncentrowana na konwersji.
-                      Idealnie przygotowana do kampanii marketingowych i
-                      pozyskiwania leadów lub sprzedaży konkretnego produktu.
-                    </p>
-                    <p className="text-sm text-muted-foreground">
-                      <strong>Koszt:</strong> 1500-5000 PLN
-                      <br />
-                      <strong>Czas:</strong> 1-2 tygodnie
-                      <br />
-                      <strong>Funkcjonalności:</strong> Propozycja wartości, CTA,
-                      formularz, testimoniale, FAQ
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Wybór właściwego typu strony zależy od Twojego biznesu, budżetu i
-              celów. Najprostsza strona wizytówka może być wystarczająca dla
-              małej usługi, ale e-commerce wymaga zaawansowanych funkcjonalności.
+            <p className="leading-relaxed">
+              Możesz dostosować funkcjonalność do odbiorcy. Jeśli kluczowy jest kontakt, uprość drogę do rozmowy. Jeżeli użytkownicy porównują produkty, ułatw filtrowanie i dostęp do parametrów. Każda strona powinna mieć uzasadniony następny krok, lecz przycisk nie zastąpi potrzebnych informacji.
             </p>
           </section>
 
-          {/* Section 3 */}
-          <section id="cechy-dobrej-strony" className="mb-16">
-            <h2 className="text-3xl font-bold text-primary mb-6">
-              3. Cechy dobrej strony firmowej
-            </h2>
-
-            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              Dobra strona internetowa to nie tylko piękny wygląd. Musi
-              spełniać kilka kluczowych warunków, aby rzeczywiście pracować
-              dla Twojego biznesu.
+          <section id="proces-tworzenia" aria-labelledby="proces-tworzenia-title" className="mb-16 scroll-mt-24">
+            <h2 id="proces-tworzenia-title" className="mb-5 text-3xl font-bold text-slate-950">Jak wygląda proces tworzenia strony internetowej?</h2>
+            <p className="mb-8 text-lg leading-relaxed">
+              Projektowanie i tworzenie stron internetowych dla firm wymaga uporządkowania decyzji i odpowiedzialności. Serwis możesz stworzyć samodzielnie albo z zespołem; w obu przypadkach odbiór powinien opierać się na sprawdzonych kryteriach.
             </p>
-
-            <div className="space-y-8">
-              <div>
-                <h3 className="text-2xl font-bold text-primary mb-4">
-                  Responsywność (Mobile-First)
-                </h3>
-                <p className="text-muted-foreground leading-relaxed mb-4">
-                  Ponad 60% ruchu internetowego pochodzi z urządzeń mobilnych.
-                  Twoja strona MUSI wyglądać i działać doskonale na
-                  smartfonach, tabletach i komputerach. Projektowanie
-                  mobile-first to standard w 2026 roku, a nie luksus.
-                </p>
-                <div className="bg-primary/5 border-l-4 border-primary rounded-r-lg p-4 text-muted-foreground">
-                  <strong>Fakt:</strong> Google karze strony niezoptymalizowane
-                  dla mobilnych w rankingach wyszukiwania.
-                </div>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-bold text-primary mb-4">
-                  Szybkość Ładowania
-                </h3>
-                <p className="text-muted-foreground leading-relaxed mb-4">
-                  Strona powinna ładować się poniżej 3 sekund. Każda dodatkowa
-                  sekunda czekania zwiększa procent osób opuszczających stronę
-                  (bounce rate). Szybkość to zarówno użytkownik happy, jak i
-                  lepsze SEO.
-                </p>
-                <ul className="list-disc list-inside text-muted-foreground space-y-2">
-                  <li>Optymalizacja obrazów</li>
-                  <li>Kompresja zasobów</li>
-                  <li>Caching i CDN</li>
-                  <li>Minifikacja CSS/JavaScript</li>
-                  <li>Lazy loading</li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-bold text-primary mb-4">
-                  Doświadczenie Użytkownika (UX)
-                </h3>
-                <p className="text-muted-foreground leading-relaxed mb-4">
-                  Strona powinna być intuicyjna i łatwa do nawigacji. Użytkownik
-                  powinien znaleźć to, czego szuka w max. 3 klikach. Dobrze
-                  zorganizowana strona zmniejsza bounce rate i zwiększa
-                  konwersje.
-                </p>
-                <p className="text-muted-foreground">
-                  <strong>Elementy dobrej UX:</strong> Jasna hierarchia,
-                  czytelna typografia, kontrast kolorów, call-to-action, menu
-                  nawigacyjne, wyszukiwanie
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-bold text-primary mb-4">
-                  SEO i Dostępność w Google
-                </h3>
-                <p className="text-muted-foreground leading-relaxed mb-4">
-                  Strona powinna być zoptymalizowana dla wyszukiwarek. Oznacza
-                  to: właściwe meta tagi, struktura nagłówków, internal linki,
-                  tekst alt dla obrazów i szybkość ładowania.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-bold text-primary mb-4">
-                  Bezpieczeństwo i SSL
-                </h3>
-                <p className="text-muted-foreground leading-relaxed mb-4">
-                  Każda strona powinna mieć certyfikat SSL (https://). To
-                  standard i wymóg Google. Zabezpiecza to dane użytkowników i
-                  buduje zaufanie.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-bold text-primary mb-4">
-                  Zawartość (Content is King)
-                </h3>
-                <p className="text-muted-foreground leading-relaxed mb-4">
-                  Tekst na stronie powinien być czytelny, wartościowy i
-                  skoncentrowany na kliencie, a nie tylko opisem siebie. Powinna
-                  odpowiadać na pytania: Dlaczego powinienem wybrać Ciebie?
-                  Jaki masz benefit? Jak mogę się z Tobą skontaktować?
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-bold text-primary mb-4">
-                  Design Konsystentny z Marką
-                </h3>
-                <p className="text-muted-foreground leading-relaxed mb-4">
-                  Strona powinna być spójna z Twoją marką. Kolory, typografia,
-                  logo i styl powinny być rozpoznawalne i budować wizerunek
-                  profesjonalnej firmy.
-                </p>
-              </div>
+            <div className="space-y-7">
+              {processSteps.map((step) => (
+                <section id={step.id} key={step.id} aria-labelledby={`${step.id}-title`} className="scroll-mt-24 rounded-xl border border-slate-200 p-6 md:p-8">
+                  <h3 id={`${step.id}-title`} className="mb-4 text-2xl font-bold text-slate-950">{step.title}</h3>
+                  <p className="mb-5 leading-relaxed">{step.text}</p>
+                  <ul className="space-y-3">
+                    {step.checks.map((check) => (
+                      <li key={check} className="flex items-start gap-3 leading-relaxed">
+                        <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-green-600" aria-hidden="true" />
+                        <span>{check}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              ))}
             </div>
           </section>
 
-          {/* Section 4 */}
-          <section id="planowanie-strony" className="mb-16">
-            <h2 className="text-3xl font-bold text-primary mb-6">
-              4. Planowanie strony internetowej
-            </h2>
-
-            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              Zanim zaczniesz budować stronę, musisz ją odpowiednio zaplanować.
-              Przemyślane planowanie oszczędza czas i pieniądze.
+          <section id="technologia" aria-labelledby="technologia-title" className="mb-16 scroll-mt-24">
+            <h2 id="technologia-title" className="mb-5 text-3xl font-bold text-slate-950">Kreator, CMS czy projektowanie stron www na zamówienie?</h2>
+            <p className="mb-5 leading-relaxed">
+              <strong>Kreator stron</strong> łączy zwykle edytor i infrastrukturę. Może ułatwić start, ale sprawdź abonament w kolejnych okresach, eksport treści, integracje, własność danych i ograniczenia gotowych szablonów. Samodzielne tworzenie stron wymaga czasu na materiały, konfigurację i testy. Najprostszy edytor nie zawsze daje najniższy całkowity koszt.
             </p>
-
-            <div className="space-y-6">
-              <div className="bg-primary/5 border border-primary/20 rounded-lg p-6">
-                <h3 className="text-xl font-bold text-primary mb-4">
-                  1. Brief Projektowy
-                </h3>
-                <p className="text-muted-foreground mb-4">
-                  Napisz dokument opisujący:
-                </p>
-                <ul className="list-disc list-inside text-muted-foreground space-y-2 pl-2">
-                  <li>Cele biznesowe (zwiększyć sprzedaż, budować brand, pozyskiwać leady)</li>
-                  <li>Grupa docelowa (wiek, płeć, zainteresowania)</li>
-                  <li>Konkurencja (czego brakuje konkurentom)</li>
-                  <li>Unique value proposition (czym się różnisz)</li>
-                  <li>Budget i timeline</li>
-                  <li>Wymagane funkcjonalności</li>
-                </ul>
-              </div>
-
-              <div className="bg-primary/5 border border-primary/20 rounded-lg p-6">
-                <h3 className="text-xl font-bold text-primary mb-4">
-                  2. Sitemap (Mapa Strony)
-                </h3>
-                <p className="text-muted-foreground mb-4">
-                  Określ strukturę strony. Np. dla firmy usługowej:
-                </p>
-                <ul className="list-disc list-inside text-muted-foreground space-y-2 pl-2">
-                  <li>Strona główna</li>
-                  <li>O nas</li>
-                  <li>Usługi (z podstronami dla każdej usługi)</li>
-                  <li>Portfolio/Realizacje</li>
-                  <li>Blog</li>
-                  <li>Kontakt</li>
-                  <li>Polityka prywatności</li>
-                  <li>Warunki korzystania</li>
-                </ul>
-              </div>
-
-              <div className="bg-primary/5 border border-primary/20 rounded-lg p-6">
-                <h3 className="text-xl font-bold text-primary mb-4">
-                  3. Wireframy
-                </h3>
-                <p className="text-muted-foreground">
-                  Sketch'e pokazujące Layout każdej strony. Nie muszą być
-                  piękne, ale powinny pokazywać rozmieszczenie elementów. Tego
-                  robić sobie lub prosić projektanta.
-                </p>
-              </div>
-
-              <div className="bg-primary/5 border border-primary/20 rounded-lg p-6">
-                <h3 className="text-xl font-bold text-primary mb-4">
-                  4. Inventory Zawartości
-                </h3>
-                <p className="text-muted-foreground mb-4">
-                  Zbierz wszystkie materiały przed rozpoczęciem prac:
-                </p>
-                <ul className="list-disc list-inside text-muted-foreground space-y-2 pl-2">
-                  <li>Logotypy i materiały brandingowe</li>
-                  <li>Fotografie produktów/zespołu</li>
-                  <li>Teksty (wypisy z papierów firmowych, opisy usług)</li>
-                  <li>Istniejący content z biura</li>
-                  <li>Dane kontaktowe</li>
-                </ul>
-              </div>
-
-              <div className="bg-primary/5 border border-primary/20 rounded-lg p-6">
-                <h3 className="text-xl font-bold text-primary mb-4">
-                  5. Słowa Kluczowe (Keywords)
-                </h3>
-                <p className="text-muted-foreground">
-                  Zdefiniuj słowa kluczowe, na które chcesz być widoczny w
-                  Google. To kluczowe dla SEO strony. Np. „agencja SEO
-                  Warszawa", „pozycjonowanie stron", „strona internetowa dla
-                  firmy".
-                </p>
-              </div>
-            </div>
+            <p className="mb-5 leading-relaxed">
+              <strong>WordPress</strong> jest systemem zarządzania treścią. Umożliwia edycję bez zmiany kodu, lecz potrzebuje aktualizacji, kopii i kontroli wtyczek. Gotowy motyw nie zastępuje projektu UX ani treści. Podczas tworzenia stron www oceń, czy standardowe funkcje odpowiadają procesowi firmy i kto będzie odpowiadał za utrzymanie.
+            </p>
+            <p className="mb-5 leading-relaxed">
+              <strong>Rozwiązanie dedykowane</strong> warto rozważyć przy nietypowym procesie, integracji lub wymaganiach technicznych, nie jako automatyczny znak jakości. Sposób budowy Twojej strony internetowej zależy od funkcji, zespołu i planu rozwoju. Projekt strony powinien opisywać także późniejszą edycję i przekazanie kodu lub kont.
+            </p>
+            <p className="leading-relaxed">
+              Nie ma technologii najlepszej dla każdego biznesowego zadania. Firma powinna porównać całkowity koszt, kompetencje potrzebne do obsługi i możliwość zmiany wykonawcy. Wybór wykonawcy do projektowania stron oddziel od wyboru platformy: jedna osoba lub zespół może pracować w kilku rozwiązaniach.
+            </p>
           </section>
 
-          {/* Section 5 */}
-          <section id="diy-vs-agencja" className="mb-16">
-            <h2 className="text-3xl font-bold text-primary mb-6">
-              5. DIY vs Agencja vs Freelancer – Porównanie
-            </h2>
-
-            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              Masz trzy główne opcje. Każda ma swoje plus i minusy.
+          <section id="koszty" aria-labelledby="koszty-title" className="mb-16 scroll-mt-24">
+            <h2 id="koszty-title" className="mb-5 text-3xl font-bold text-slate-950">Ile kosztuje strona internetowa dla firmy i co obejmuje oferta?</h2>
+            <p className="mb-5 text-lg leading-relaxed">
+              Nie ma jednej uczciwej ceny bez poznania zakresu. Na koszt stworzenia strony wpływają m.in. liczba widoków, autorski projekt lub szablon, treści, migracja, integracje, testy i szkolenie. Profesjonalne projektowanie powinno wskazywać rezultat każdego etapu, liczbę poprawek i prace dodatkowe.
             </p>
-
-            <div className="overflow-x-auto mb-8">
-              <table className="w-full text-muted-foreground text-sm">
-                <thead className="bg-primary/5 border-b border-border">
-                  <tr>
-                    <th className="px-4 py-3 text-left font-bold text-primary">Opcja</th>
-                    <th className="px-4 py-3 text-left font-bold text-primary">Koszt</th>
-                    <th className="px-4 py-3 text-left font-bold text-primary">Czas</th>
-                    <th className="px-4 py-3 text-left font-bold text-primary">Plusy</th>
-                    <th className="px-4 py-3 text-left font-bold text-primary">Minusy</th>
+            <div className="mb-7 overflow-x-auto">
+              <table className="w-full border-collapse text-left text-sm">
+                <caption className="mb-3 text-left text-slate-600">Pozycje do wspólnej kalkulacji — bez sztywnego cennika.</caption>
+                <thead>
+                  <tr className="bg-slate-950 text-white">
+                    <th scope="col" className="border border-slate-700 p-3">Obszar</th>
+                    <th scope="col" className="border border-slate-700 p-3">Co zapisać w wycenie</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-border">
-                  <tr>
-                    <td className="px-4 py-4 font-bold">DIY (Wix, Weebly)</td>
-                    <td className="px-4 py-4">500-2000 PLN</td>
-                    <td className="px-4 py-4">1-2 tyg.</td>
-                    <td className="px-4 py-4">Tanie, szybkie, łatwe, pełna kontrola</td>
-                    <td className="px-4 py-4">Ograniczone możliwości, gorsza jakość SEO, mniej profesjonalne</td>
-                  </tr>
-                  <tr>
-                    <td className="px-4 py-4 font-bold">Freelancer</td>
-                    <td className="px-4 py-4">2000-8000 PLN</td>
-                    <td className="px-4 py-4">2-6 tygodni</td>
-                    <td className="px-4 py-4">Taniej niż agencja, szybciej niż DIY, dostosowanie</td>
-                    <td className="px-4 py-4">Mniej doświadczenia, wsparcie techniczne słabe, opóźnienia</td>
-                  </tr>
-                  <tr>
-                    <td className="px-4 py-4 font-bold">Agencja</td>
-                    <td className="px-4 py-4">5000-25000+ PLN</td>
-                    <td className="px-4 py-4">3-12 tygodni</td>
-                    <td className="px-4 py-4">Profesjonalizm, wsparcie, SEO, gwarancje, zespół</td>
-                    <td className="px-4 py-4">Droższe, dłuższe, mniej elastyczności</td>
-                  </tr>
+                <tbody>
+                  <tr><td className="border border-slate-200 p-3 font-semibold">Projekt i wdrożenie</td><td className="border border-slate-200 p-3">Warsztaty, prototyp, widoki, system, migracja, konfiguracja, testy i publikacja.</td></tr>
+                  <tr><td className="border border-slate-200 p-3 font-semibold">Materiały</td><td className="border border-slate-200 p-3">Teksty, zdjęcia, wideo, tłumaczenia, prawa do użycia i odpowiedzialność za dostarczenie.</td></tr>
+                  <tr><td className="border border-slate-200 p-3 font-semibold">Opłaty cykliczne</td><td className="border border-slate-200 p-3">Domena, hosting, poczta, licencje, CDN i cena odnowienia po okresie promocyjnym.</td></tr>
+                  <tr><td className="border border-slate-200 p-3 font-semibold">Opieka i rozwój</td><td className="border border-slate-200 p-3">Aktualizacje, kopie, reakcja na błędy, limit prac, raportowanie i prace poza zakresem.</td></tr>
                 </tbody>
               </table>
             </div>
-
-            <div className="bg-primary/5 border-l-4 border-primary rounded-r-lg p-6 text-muted-foreground">
-              <p className="mb-4">
-                <strong>Porada:</strong> Jeśli strona jest kluczowa dla Twojego
-                biznesu, inwestuj w agencję. Koszty strony DIY mogą się wydawać
-                atrakcyjne, ale strona zrobiona bez doświadczenia będzie kosztować
-                Cię w postaci utraty klientów, a poprawa będzie droga.
-              </p>
-            </div>
-          </section>
-
-          {/* Section 6 */}
-          <section id="koszty-strony" className="mb-16">
-            <h2 className="text-3xl font-bold text-primary mb-6">
-              6. Koszty tworzenia strony firmowej – Pełny Breakdown
-            </h2>
-
-            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              Koszt strony internetowej zależy od wielu czynników. Oto, co
-              wpływa na cenę i jakie są typowe zakresy kosztów w Polsce.
+            <p className="mb-5 leading-relaxed">
+              Firma powinna przekazać każdemu wykonawcy ten sam brief. Zapytaj o koszt pierwszego roku i kolejnych okresów, warunki zmiany zakresu oraz przekazanie dostępów. Niska cena startowa nie musi obejmować materiałów, testów ani opieki, a wyższa kwota sama w sobie nie potwierdza lepszego dopasowania.
             </p>
-
-            <div className="space-y-6 mb-8">
-              <div className="border border-border rounded-lg p-6">
-                <h3 className="text-xl font-bold text-primary mb-4">
-                  Czynniki wpływające na cenę
-                </h3>
-                <ul className="space-y-3 text-muted-foreground">
-                  <li className="flex gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>
-                      <strong>Liczba podstron:</strong> Każda dodatkowa strona
-                      to więcej pracy
-                    </span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>
-                      <strong>Funkcjonalności:</strong> Formularz to 100 PLN,
-                      system rezerwacji to 5000 PLN
-                    </span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>
-                      <strong>Design:</strong> Projekt indywidualny kosztuje
-                      więcej niż szablon
-                    </span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>
-                      <strong>Integracje:</strong> Połączenie z CRM, system
-                      płatności, email marketing
-                    </span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>
-                      <strong>Technologia:</strong> WordPress jest tańszy niż
-                      React/Next.js
-                    </span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>
-                      <strong>Wsparcie SEO:</strong> Optymalizacja SEO kosztuje
-                      dodatkowych 2000-5000 PLN
-                    </span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="border border-border rounded-lg p-6">
-                <h3 className="text-xl font-bold text-primary mb-4">
-                  Przychylne zakresy cen (2026)
-                </h3>
-                <div className="space-y-4">
-                  <div className="flex justify-between items-center pb-4 border-b border-border">
-                    <span className="font-bold">Strona wizytówka</span>
-                    <span className="text-primary font-bold">2 000 - 5 000 PLN</span>
-                  </div>
-                  <div className="flex justify-between items-center pb-4 border-b border-border">
-                    <span className="font-bold">Strona portfolio</span>
-                    <span className="text-primary font-bold">3 000 - 8 000 PLN</span>
-                  </div>
-                  <div className="flex justify-between items-center pb-4 border-b border-border">
-                    <span className="font-bold">Blog/redakcyjny</span>
-                    <span className="text-primary font-bold">3 000 - 10 000 PLN</span>
-                  </div>
-                  <div className="flex justify-between items-center pb-4 border-b border-border">
-                    <span className="font-bold">Sklep e-commerce</span>
-                    <span className="text-primary font-bold">5 000 - 25 000 PLN</span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="font-bold">Aplikacja SaaS</span>
-                    <span className="text-primary font-bold">15 000 - 100 000+ PLN</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="border border-border rounded-lg p-6">
-                <h3 className="text-xl font-bold text-primary mb-4">
-                  Koszty dodatkowe (roczne)
-                </h3>
-                <ul className="space-y-3 text-muted-foreground">
-                  <li className="flex justify-between">
-                    <span>Hosting</span>
-                    <strong>300 - 1 000 PLN</strong>
-                  </li>
-                  <li className="flex justify-between">
-                    <span>Domena</span>
-                    <strong>50 - 200 PLN</strong>
-                  </li>
-                  <li className="flex justify-between">
-                    <span>SSL (zwykle darmowy)</span>
-                    <strong>0 - 200 PLN</strong>
-                  </li>
-                  <li className="flex justify-between">
-                    <span>Wsparcie techniczne</span>
-                    <strong>0 - 5 000 PLN</strong>
-                  </li>
-                  <li className="flex justify-between">
-                    <span>Aktualizacje i maintenance</span>
-                    <strong>500 - 3 000 PLN</strong>
-                  </li>
-                  <li className="flex justify-between border-t border-border pt-3">
-                    <span className="font-bold">Razem rocznie</span>
-                    <strong className="text-primary">850 - 9 200 PLN</strong>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="bg-primary/5 border-l-4 border-primary rounded-r-lg p-6 text-muted-foreground">
-              <p>
-                <strong>Porada ROI:</strong> Jeśli z jednej transakcji ze strony
-                zarobi się 500 PLN, to zwrot z inwestycji 5000 PLN wynosi
-                zaledwie 10 transakcji. Większość firm robi to w pierwszy
-                miesiąc.
-              </p>
-            </div>
-          </section>
-
-          {/* Section 7 */}
-          <section id="technologie" className="mb-16">
-            <h2 className="text-3xl font-bold text-primary mb-6">
-              7. Wybór technologii – WordPress vs React vs Custom
-            </h2>
-
-            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              Każda technologia ma swoje zastosowanie. Oto jak wybrać właściwą.
+            <p className="leading-relaxed">
+              Rachunek zwrotu uwzględnia pełny koszt i wynik przypisany według ustalonych zasad, ale strona nie gwarantuje zwrotu ani pozyskania nowych klientów. Rozwinięcie tego tematu znajdziesz w poradniku <Link to="/blog/ile-kosztuje-strona-internetowa" className="font-semibold text-yellow-800 hover:underline">o kosztach strony internetowej i pytaniach do wyceny</Link>.
             </p>
-
-            <div className="grid gap-6">
-              {/* WordPress */}
-              <div className="border border-border rounded-lg p-6">
-                <h3 className="text-xl font-bold text-primary mb-4">WordPress</h3>
-                <p className="text-muted-foreground mb-4">
-                  Najpopularniejsza platforma do tworzenia stron (43% całego
-                  internetu). Oparty na PHP, łatwy do zarządzania, ogromna
-                  biblioteka pluginów.
-                </p>
-                <div className="space-y-3">
-                  <div>
-                    <p className="text-sm font-bold text-primary mb-1">Plusy:</p>
-                    <p className="text-sm text-muted-foreground">
-                      Tani, łatwy do edycji, wiele pluginów, wspierany przez
-                      społeczność, dobry dla SEO
-                    </p>
-                  </div>
-                  <div>
-                    <p className="text-sm font-bold text-primary mb-1">Minusy:</p>
-                    <p className="text-sm text-muted-foreground">
-                      Może być wolny, czasem podatny na ataki, zbyt wiele
-                      pluginów = komplikacje
-                    </p>
-                  </div>
-                  <div>
-                    <p className="text-sm font-bold text-primary mb-1">
-                      Idealne dla:
-                    </p>
-                    <p className="text-sm text-muted-foreground">
-                      Blog, strony wizytówki, małe sklepy, strony korporacyjne
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Shopify */}
-              <div className="border border-border rounded-lg p-6">
-                <h3 className="text-xl font-bold text-primary mb-4">Shopify</h3>
-                <p className="text-muted-foreground mb-4">
-                  Specjalistyczna platforma dla e-commerce. Wszystko w chmurze,
-                  skalowalna, bezpieczna. Opłata miesięczna.
-                </p>
-                <div className="space-y-3">
-                  <div>
-                    <p className="text-sm font-bold text-primary mb-1">Plusy:</p>
-                    <p className="text-sm text-muted-foreground">
-                      Łatwy w obsłudze, bezpieczny, skaluje się, integracje
-                      płatności, wsparcie 24/7
-                    </p>
-                  </div>
-                  <div>
-                    <p className="text-sm font-bold text-primary mb-1">Minusy:</p>
-                    <p className="text-sm text-muted-foreground">
-                      Miesięczna opłata (30-300 USD), ograniczone customizacje
-                      bez płacenia więcej, nie twoja własna domena (domyślnie)
-                    </p>
-                  </div>
-                  <div>
-                    <p className="text-sm font-bold text-primary mb-1">
-                      Idealne dla:
-                    </p>
-                    <p className="text-sm text-muted-foreground">
-                      Sklepy e-commerce, firmy sprzedające produkty online
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* React/Next.js */}
-              <div className="border border-border rounded-lg p-6">
-                <h3 className="text-xl font-bold text-primary mb-4">React / Next.js</h3>
-                <p className="text-muted-foreground mb-4">
-                  Nowoczesne frameworki JavaScript. Szybkie, skalowalne,
-                  profesjonalne. Wymaga doświadczonego programisty.
-                </p>
-                <div className="space-y-3">
-                  <div>
-                    <p className="text-sm font-bold text-primary mb-1">Plusy:</p>
-                    <p className="text-sm text-muted-foreground">
-                      Szybkie, skalowalne, pełna kontrola, nowoczesny UX,
-                      integracje, SEO-friendly (Next.js)
-                    </p>
-                  </div>
-                  <div>
-                    <p className="text-sm font-bold text-primary mb-1">Minusy:</p>
-                    <p className="text-sm text-muted-foreground">
-                      Droższe, wymaga dobrych programistów, trudniejsze do
-                      zarządzania dla nieteknicznych
-                    </p>
-                  </div>
-                  <div>
-                    <p className="text-sm font-bold text-primary mb-1">
-                      Idealne dla:
-                    </p>
-                    <p className="text-sm text-muted-foreground">
-                      SaaS, aplikacje, skomplikowane strony, duże projekty
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Headless CMS */}
-              <div className="border border-border rounded-lg p-6">
-                <h3 className="text-xl font-bold text-primary mb-4">Headless CMS (Contentful, Strapi)</h3>
-                <p className="text-muted-foreground mb-4">
-                  Nowoczesne podejście: backend oddzielony od frontendu.
-                  Elastyczne, skalowalne, dla ambitnych projektów.
-                </p>
-                <div className="space-y-3">
-                  <div>
-                    <p className="text-sm font-bold text-primary mb-1">Plusy:</p>
-                    <p className="text-sm text-muted-foreground">
-                      Elastyczność, API-first, skalowanie, wielokanałowość
-                    </p>
-                  </div>
-                  <div>
-                    <p className="text-sm font-bold text-primary mb-1">Minusy:</p>
-                    <p className="text-sm text-muted-foreground">
-                      Droższe, złożone, wymaga dobrych programistów
-                    </p>
-                  </div>
-                  <div>
-                    <p className="text-sm font-bold text-primary mb-1">
-                      Idealne dla:
-                    </p>
-                    <p className="text-sm text-muted-foreground">
-                      Duże firmy, projekty multi-channel, startup'y z SaaS
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-primary/5 border-l-4 border-primary rounded-r-lg p-6 mt-8 text-muted-foreground">
-              <p>
-                <strong>Nasza rekomendacja dla większości firm:</strong> Jeśli
-                masz budżet do 5000 PLN i chcesz łatwo zarządzać stronę sam –
-                WordPress. Jeśli chcesz e-commerce i nie chcesz się zajmować
-                infrastrukturą – Shopify. Jeśli masz duży budżet i ambitny
-                projekt – React/Next.js.
-              </p>
-            </div>
           </section>
 
-          {/* Section 8 */}
-          <section id="hosting-domena" className="mb-16">
-            <h2 className="text-3xl font-bold text-primary mb-6">
-              8. Domena i Hosting – Fundamenty Twojej Strony
-            </h2>
-
-            <div className="grid gap-6 mb-8">
-              <div className="bg-primary/5 border border-primary/20 rounded-lg p-6">
-                <h3 className="text-xl font-bold text-primary mb-4">
-                  Wybór Domeny
-                </h3>
-                <p className="text-muted-foreground mb-4">
-                  Domena to adres Twojej strony (np. fotz.pl). Wybierz ją
-                  staranie, bo będzie Twoją identyfikacją online.
-                </p>
-                <ul className="space-y-3 text-muted-foreground">
-                  <li className="flex gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Powinna być krótka, zapamiętywalna i łatwa do
-                      wymówienia</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Lepiej z rozszerzeniem .pl dla firm polskich</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Unikaj liczb i myślników (trudne w zapamiętywaniu)</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Jeśli możliwe, kupuj dla kilka lat na raz</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Koszt: 50-200 PLN rocznie</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-primary/5 border border-primary/20 rounded-lg p-6">
-                <h3 className="text-xl font-bold text-primary mb-4">
-                  Wybór Hostingu
-                </h3>
-                <p className="text-muted-foreground mb-4">
-                  Hosting to serwer, na którym znajduje się Twoja strona.
-                  Jakość hostingu wpływa na szybkość i dostępność.
-                </p>
-                <ul className="space-y-3 text-muted-foreground">
-                  <li className="flex gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Gwarancja dostępności: minimum 99,5%</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Bezpłatny SSL i backup</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Wsparcie techniczne 24/7</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Szybki serwer (test prędkości: poniżej 1 sekundy)</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Popularne: Nazwa.pl, DreamHost, SiteGround, WP Engine</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Koszt: 300-1000 PLN rocznie dla małych stron</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-primary/5 border border-primary/20 rounded-lg p-6">
-                <h3 className="text-xl font-bold text-primary mb-4">
-                  Hosting Współdzielony vs VPS vs Dedykowany
-                </h3>
-                <table className="w-full text-sm">
-                  <thead className="border-b border-primary/30">
-                    <tr>
-                      <th className="text-left font-bold pb-2">Typ</th>
-                      <th className="text-left font-bold pb-2">Koszt</th>
-                      <th className="text-left font-bold pb-2">Moc</th>
-                      <th className="text-left font-bold pb-2">Dla kogo</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-primary/20">
-                    <tr>
-                      <td className="py-2 font-bold">Współdzielony</td>
-                      <td className="py-2">300-500 PLN/rok</td>
-                      <td className="py-2">Niska</td>
-                      <td className="py-2">Małe strony, blogi</td>
-                    </tr>
-                    <tr>
-                      <td className="py-2 font-bold">VPS</td>
-                      <td className="py-2">1000-3000 PLN/rok</td>
-                      <td className="py-2">Średnia-wysoka</td>
-                      <td className="py-2">Sklepy, aplikacje</td>
-                    </tr>
-                    <tr>
-                      <td className="py-2 font-bold">Dedykowany</td>
-                      <td className="py-2">3000-10000+ PLN/rok</td>
-                      <td className="py-2">Wysoka</td>
-                      <td className="py-2">Duże korporacje, SaaS</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </section>
-
-          {/* Section 9 */}
-          <section id="bezpieczenstwo" className="mb-16">
-            <h2 className="text-3xl font-bold text-primary mb-6">
-              9. Bezpieczeństwo, SSL i Prawo – Zabezpiecz Swoją Stronę
-            </h2>
-
-            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              Bezpieczeństwo Twojej strony i danych użytkowników to priorytet.
-              Ignorowanie tego może prowadzić do kar i utraty zaufania klientów.
+          <section id="wykonawca" aria-labelledby="wykonawca-title" className="mb-16 scroll-mt-24">
+            <h2 id="wykonawca-title" className="mb-5 text-3xl font-bold text-slate-950">Jak wybrać wykonawcę dla Twojej firmy?</h2>
+            <p className="mb-5 leading-relaxed">
+              Freelancer, agencja i wewnętrzny zespół mogą organizować pracę inaczej, ale forma działalności nie dowodzi jakości. Firma powinna sprawdzić doświadczenie w tworzeniu stron i sklepów internetowych zbliżonych zakresem do Twoich potrzeb. Poproś o omówienie procesu i dokumentów, nie tylko prezentację atrakcyjnych ekranów.
             </p>
-
-            <div className="space-y-6">
-              <div className="bg-primary/5 border border-primary/20 rounded-lg p-6">
-                <h3 className="text-xl font-bold text-primary mb-4">SSL/HTTPS</h3>
-                <p className="text-muted-foreground mb-4">
-                  Każda strona powinna posiadać certyfikat SSL (zamienić HTTP na
-                  HTTPS). To standard i wymóg Google. Chroni dane użytkowników i
-                  buduje zaufanie.
-                </p>
-                <div className="bg-white/50 border border-primary/30 rounded p-4 text-muted-foreground">
-                  <p className="text-sm">
-                    <strong>Fakt:</strong> Google wyświetla ostrzeżenie dla stron
-                    bez SSL. To zawsze dostępne za darmo (Let's Encrypt).
-                  </p>
-                </div>
-              </div>
-
-              <div className="bg-primary/5 border border-primary/20 rounded-lg p-6">
-                <h3 className="text-xl font-bold text-primary mb-4">RODO i GDPR</h3>
-                <p className="text-muted-foreground mb-4">
-                  Jeśli zbierasz dane użytkowników (email, formularz), musisz
-                  być zgodny z RODO.
-                </p>
-                <ul className="space-y-3 text-muted-foreground">
-                  <li className="flex gap-3">
-                    <AlertCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>
-                      <strong>Polityka prywatności:</strong> Dokument opisujący,
-                      jak zbierasz i przetwarzasz dane
-                    </span>
-                  </li>
-                  <li className="flex gap-3">
-                    <AlertCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>
-                      <strong>Zgoda na cookies:</strong> Banner informacyjny
-                      zgodny z prawem
-                    </span>
-                  </li>
-                  <li className="flex gap-3">
-                    <AlertCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>
-                      <strong>Prawo do bycia zapomnianym:</strong> Możliwość
-                      usunięcia danych
-                    </span>
-                  </li>
-                  <li className="flex gap-3">
-                    <AlertCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>
-                      <strong>Warunki korzystania:</strong> Dokument opisujący
-                      reguły korzystania ze strony
-                    </span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-primary/5 border border-primary/20 rounded-lg p-6">
-                <h3 className="text-xl font-bold text-primary mb-4">
-                  Inne Wymogi Prawne
-                </h3>
-                <ul className="space-y-3 text-muted-foreground">
-                  <li className="flex gap-3">
-                    <Lock className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>
-                      <strong>Dane kontaktowe:</strong> Wymagane imię, nazwisko
-                      lub nazwa firmy
-                    </span>
-                  </li>
-                  <li className="flex gap-3">
-                    <Lock className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>
-                      <strong>NIP/PESEL:</strong> Firmy muszą wyświetlać NIP na
-                      stronie
-                    </span>
-                  </li>
-                  <li className="flex gap-3">
-                    <Lock className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>
-                      <strong>Dostępność (a11y):</strong> Strona powinna być
-                      dostępna dla osób z niepełnosprawnościami
-                    </span>
-                  </li>
-                  <li className="flex gap-3">
-                    <Lock className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>
-                      <strong>Informacja o e-handlu:</strong> Jeśli sprzedajesz
-                      online, musisz podać warunki zwrotu
-                    </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </section>
-
-          {/* Section 10 */}
-          <section id="seo" className="mb-16">
-            <h2 className="text-3xl font-bold text-primary mb-6">
-              10. Podstawy SEO dla Nowych Stron – Bądź Widoczny w Google
-            </h2>
-
-            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              SEO to inwestycja długoterminowa, ale strona bez SEO to strona,
-              którą nikt nie będzie widzieć. Oto podstawy.
+            <ol className="mb-7 list-decimal space-y-3 pl-6 leading-relaxed">
+              <li>Kto odpowiada za analizę, treści, projektowanie stron, wdrożenie i testy?</li>
+              <li>Jakie widoki, funkcje, integracje i migracje obejmuje oferta, a co wyceniano osobno?</li>
+              <li>Ile rund poprawek przewidziano i jak wygląda zmiana zakresu?</li>
+              <li>Jakie są kryteria odbioru, odpowiedzialność za materiały i zasady pracy po publikacji?</li>
+              <li>Kto będzie właścicielem domeny, kont, treści i kodu oraz jak przebiega przekazanie?</li>
+              <li>Czy dokumentacja i szkolenie pozwolą Twojemu zespołowi korzystać z CMS?</li>
+            </ol>
+            <p className="mb-5 leading-relaxed">
+              Sprawdź <Link to="/realizacje" className="font-semibold text-yellow-800 hover:underline">publiczne realizacje FOTZ</Link> jako punkt wyjścia do rozmowy o zakresie, nie jako dowód rezultatu dla innego projektu. Jeśli potrzebujesz strony i chcesz omówić wymagania, możesz przejść do <Link to="/kontakt" className="font-semibold text-yellow-800 hover:underline">formularza kontaktowego</Link> z przygotowanym briefem.
             </p>
-
-            <div className="space-y-8">
-              <div>
-                <h3 className="text-2xl font-bold text-primary mb-4">
-                  On-Page SEO (Optymalizacja Strony)
-                </h3>
-                <div className="space-y-4">
-                  <div className="border-l-4 border-primary bg-primary/5 pl-4 py-2">
-                    <p className="font-bold text-primary">Meta Title (do 60 znaków)</p>
-                    <p className="text-muted-foreground text-sm mt-1">
-                      Musi zawierać główne słowo kluczowe. Np.
-                      &quot;Strona Internetowa Dla Firmy - Fotz Studio&quot;
-                    </p>
-                  </div>
-                  <div className="border-l-4 border-primary bg-primary/5 pl-4 py-2">
-                    <p className="font-bold text-primary">Meta Description (do 160 znaków)</p>
-                    <p className="text-muted-foreground text-sm mt-1">
-                      Podsumowanie strony, które ma zmotywować do kliknięcia w
-                      wynikach Google
-                    </p>
-                  </div>
-                  <div className="border-l-4 border-primary bg-primary/5 pl-4 py-2">
-                    <p className="font-bold text-primary">Nagłówki (H1, H2, H3)</p>
-                    <p className="text-muted-foreground text-sm mt-1">
-                      Każda strona powinna mieć jeden H1. H2 i H3 dla struktury
-                      treści. Muszą zawierać słowa kluczowe.
-                    </p>
-                  </div>
-                  <div className="border-l-4 border-primary bg-primary/5 pl-4 py-2">
-                    <p className="font-bold text-primary">URL i Slug</p>
-                    <p className="text-muted-foreground text-sm mt-1">
-                      URLs powinne być krótkie, czytelne i zawierać słowo
-                      kluczowe. Np. /blog/strona-internetowa-dla-firmy
-                    </p>
-                  </div>
-                  <div className="border-l-4 border-primary bg-primary/5 pl-4 py-2">
-                    <p className="font-bold text-primary">Tekst Alt dla Obrazów</p>
-                    <p className="text-muted-foreground text-sm mt-1">
-                      Każdy obraz powinien mieć alt text opisujący, co na nim
-                      jest. Pomaga Google i accessibility.
-                    </p>
-                  </div>
-                  <div className="border-l-4 border-primary bg-primary/5 pl-4 py-2">
-                    <p className="font-bold text-primary">Wewnętrzne Linki (Internal Links)</p>
-                    <p className="text-muted-foreground text-sm mt-1">
-                      Łączenie podstron ze sobą. Pomaga Google w rozumieniu
-                      struktury i przesyłaniu&quot;juice&quot; SEO
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-bold text-primary mb-4">
-                  Off-Page SEO (Poza Stroną)
-                </h3>
-                <div className="space-y-4 text-muted-foreground">
-                  <p>
-                    <strong>Backlinki:</strong> Linki z innych stron do Twojej.
-                    Im więcej wysokiej jakości backlinków, tym lepsze SEO. Zdobywaj
-                    je przez:
-                  </p>
-                  <ul className="list-disc list-inside space-y-2 pl-2">
-                    <li>Guest posting na innych blogach</li>
-                    <li>Bycie na portalach branżowych</li>
-                    <li>Press release'i</li>
-                    <li>Partnership z innymi firmami</li>
-                  </ul>
-                  <p className="pt-4">
-                    <strong>Social Signals:</strong> Udostępnianie strony w
-                    mediach społecznych sygnalizuje Google, że jest popularna
-                  </p>
-                  <p>
-                    <strong>Citations:</strong> Wzmianki o firmie w internecie
-                    (katalogi, media itp.) pomagają lokalnym SEO
-                  </p>
-                </div>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-bold text-primary mb-4">
-                  Technical SEO
-                </h3>
-                <ul className="space-y-3 text-muted-foreground">
-                  <li className="flex gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>
-                      <strong>Sitemap XML:</strong> Mapa strony dla Google
-                    </span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>
-                      <strong>Robots.txt:</strong> Instrukcje dla robotów
-                      wyszukiwarek
-                    </span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>
-                      <strong>Structured Data (Schema):</strong> Znaczniki
-                      informujące Google co jest na stronie
-                    </span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>
-                      <strong>Mobile-First Indexing:</strong> Google indeksuje
-                      wersję mobilną
-                    </span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>
-                      <strong>Core Web Vitals:</strong> Metryki szybkości i
-                      stabilności
-                    </span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-primary/5 border border-primary/20 rounded-lg p-6">
-                <h3 className="text-xl font-bold text-primary mb-4">
-                  Narzędzia SEO
-                </h3>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>
-                    <strong>Google Search Console:</strong> Oficjalny portal
-                    Google do monitorowania SEO
-                  </li>
-                  <li>
-                    <strong>Google Analytics:</strong> Analityka ruchu na stronie
-                  </li>
-                  <li>
-                    <strong>Screaming Frog:</strong> Audyt techniczny strony
-                  </li>
-                  <li>
-                    <strong>Ahrefs / SEMrush:</strong> Analiza konkurencji i
-                    backlinków
-                  </li>
-                  <li>
-                    <strong>Lighthouse:</strong> Audyt wydajności i dostępności
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="bg-primary/5 border-l-4 border-primary rounded-r-lg p-6 mt-8 text-muted-foreground">
-              <p className="mb-3">
-                <strong>Ważne:</strong> SEO to maraton, nie sprint. Pierwszych
-                wyników można spodziewać się po 3-6 miesiącach. Konsekwencja i
-                regularne aktualizacje treści są kluczem do sukcesu.
-              </p>
-            </div>
-          </section>
-
-          {/* Section 11 */}
-          <section id="maintenance" className="mb-16">
-            <h2 className="text-3xl font-bold text-primary mb-6">
-              11. Utrzymanie i Aktualizacje – Strona to Żywy Organizm
-            </h2>
-
-            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              Stworzenie strony to dopiero początek. Regularna obsługa jest
-              kluczem do utrzymywania wydajności, bezpieczeństwa i widoczności
-              w Google.
+            <p className="leading-relaxed">
+              W FOTZ projektujemy strony internetowe, ale ten poradnik pozostaje samodzielną checklistą. Możesz wykorzystać pytania do oceny dowolnej oferty i wybrać zakres odpowiadający Twojej firmie bez traktowania treści jako gwarancji współpracy lub efektu.
             </p>
-
-            <div className="space-y-6">
-              <div className="border border-border rounded-lg p-6">
-                <h3 className="text-xl font-bold text-primary mb-4">
-                  Zadania Regularne (Miesięczne)
-                </h3>
-                <ul className="space-y-3 text-muted-foreground">
-                  <li className="flex gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Aktualizacja pluginów i CMS</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Monitorowanie backupów</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Sprawdzenie wydajności (Speed Test)</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Sprawdzenie logów błędów</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Przegląd formularzy i zasubmitowanych danych</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="border border-border rounded-lg p-6">
-                <h3 className="text-xl font-bold text-primary mb-4">
-                  Zadania Kwartalne (Co 3 Miesiące)
-                </h3>
-                <ul className="space-y-3 text-muted-foreground">
-                  <li className="flex gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Audyt SEO (pozycje, traffic, backlinki)</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Analiza Analytics (pochodzenie ruchu, konwersje)</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Test bezpieczeństwa (skanowanie podatności)</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Aktualizacja zawartości (nowości, nowe artykuły)</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="border border-border rounded-lg p-6">
-                <h3 className="text-xl font-bold text-primary mb-4">
-                  Zadania Roczne
-                </h3>
-                <ul className="space-y-3 text-muted-foreground">
-                  <li className="flex gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Przegląd strategii i celów biznesowych</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Możliwy redesign lub ulepszenia UX</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Aktualizacja dokumentów prawnych (RODO)</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Przygotowanie raportu ROI i wskaźników</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-primary/5 border border-primary/20 rounded-lg p-6">
-                <h3 className="text-xl font-bold text-primary mb-4">
-                  Koszty Utrzymania (Roczne)
-                </h3>
-                <div className="space-y-3 text-muted-foreground">
-                  <div className="flex justify-between pb-2 border-b border-primary/30">
-                    <span>Hosting</span>
-                    <strong>300-1000 PLN</strong>
-                  </div>
-                  <div className="flex justify-between pb-2 border-b border-primary/30">
-                    <span>Domena</span>
-                    <strong>50-200 PLN</strong>
-                  </div>
-                  <div className="flex justify-between pb-2 border-b border-primary/30">
-                    <span>Wsparcie techniczne (4h/miesiąc)</span>
-                    <strong>2000-4000 PLN</strong>
-                  </div>
-                  <div className="flex justify-between pb-2 border-b border-primary/30">
-                    <span>Aktualizacje zawartości</span>
-                    <strong>1000-3000 PLN</strong>
-                  </div>
-                  <div className="flex justify-between pt-2">
-                    <span className="font-bold">RAZEM</span>
-                    <strong className="text-primary text-lg">3350-8200 PLN/rok</strong>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-primary/5 border-l-4 border-primary rounded-r-lg p-6 mt-8 text-muted-foreground">
-              <p>
-                <strong>Złota Reguła:</strong> Koszty utrzymania strony to
-                inwestycja w jej przychody. Strona bez obsługi to martwą
-                stranicę, która będzie wolna, niebezpieczna i niewidoczna w
-                Google.
-              </p>
-            </div>
           </section>
 
-          {/* Podsumowanie */}
-          <section className="bg-primary/5 border border-primary/20 rounded-lg p-8 mb-16">
-            <h2 className="text-3xl font-bold text-primary mb-6">Podsumowanie</h2>
-            <div className="space-y-4 text-muted-foreground">
-              <p className="text-lg leading-relaxed">
-                Strona internetowa dla firmy to inwestycja, która zwraca się
-                wielokrotnie. W 2026 roku to nie luksus, a konieczność. Bez
-                strony tracisz potencjalnych klientów, wiarygodność i
-                konkurencyjność.
-              </p>
-              <p className="text-lg leading-relaxed">
-                Niezależnie czy wybierzesz DIY, freelancer'a czy agencję,
-                pamiętaj że ważne są:
-              </p>
-              <ul className="space-y-3 pl-4">
-                <li className="flex gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span>Responsywny design (mobile-first)</span>
-                </li>
-                <li className="flex gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span>Szybkość ładowania poniżej 3 sekund</span>
-                </li>
-                <li className="flex gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span>Dobra UX i jasna nawigacja</span>
-                </li>
-                <li className="flex gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span>Wartościowa zawartość dla klientów</span>
-                </li>
-                <li className="flex gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span>Optymalizacja SEO od początku</span>
-                </li>
-                <li className="flex gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span>Bezpieczeństwo i zgodność z prawem</span>
-                </li>
-                <li className="flex gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span>Regularna obsługa i aktualizacje</span>
-                </li>
-              </ul>
-            </div>
-          </section>
-
-          {/* Call to Action */}
-          <section className="bg-gradient-to-r from-primary to-primary/80 rounded-lg p-8 mb-16 text-white">
-            <h2 className="text-3xl font-bold mb-4">Gotowy na Swoją Stronę?</h2>
-            <p className="text-lg mb-6 text-white/90">
-              W Fotz Studio tworzymy profesjonalne strony internetowe, które
-              generują rzeczywiste wyniki dla Twojego biznesu. Naszym specjałem
-              jest tworzenie stron zoptymalizowanych pod SEO, szybkości i
-              konwersje.
+          <section id="seo-i-pomiar" aria-labelledby="seo-i-pomiar-title" className="mb-16 scroll-mt-24">
+            <h2 id="seo-i-pomiar-title" className="mb-5 text-3xl font-bold text-slate-950">SEO Twojej strony: pozycjonowanie, optymalizacja i pomiar</h2>
+            <p className="mb-5 leading-relaxed">
+              Podstawy SEO zaplanuj przed publikacją: przypisz intencje do podstron, przygotuj unikalne title i opisy, jedno H1, logiczne nagłówki, opisy alternatywne, linkowanie i kanoniczne adresy. Optymalizacja pod kątem SEO obejmuje również indeksowanie, mapę XML i przekierowania przy migracji. Wyszukiwarka Google powinna trafiać na właściwą wersję każdej strony. Nie kopiuj treści między ofertą a poradnikiem.
             </p>
-            <Link to="/kontakt">
-              <Button className="bg-white text-primary hover:bg-white/90">
-                Skonsultuj się z nami
-              </Button>
-            </Link>
-          </section>
-
-          {/* Internal Links Section */}
-          <section className="mb-16">
-            <h2 className="text-3xl font-bold text-primary mb-6">
-              Powiązane Artykuły
-            </h2>
-            <div className="grid gap-4 md:grid-cols-2">
-              <Link
-                to="/blog/ile-kosztuje-strona-internetowa"
-                className="border border-border rounded-lg p-6 hover:shadow-md hover:border-primary transition-all"
-              >
-                <h3 className="font-bold text-primary mb-2">
-                  Ile Kosztuje Strona Internetowa?
-                </h3>
-                <p className="text-sm text-muted-foreground">
-                  Kompletny poradnik cenowy ze szczegółowym breakdown'em
-                  kosztów.
-                </p>
-              </Link>
-              <Link
-                to="/blog/jak-stworzyc-landing-page"
-                className="border border-border rounded-lg p-6 hover:shadow-md hover:border-primary transition-all"
-              >
-                <h3 className="font-bold text-primary mb-2">
-                  Jak Stworzyć Landing Page?
-                </h3>
-                <p className="text-sm text-muted-foreground">
-                  Poradnik do tworzenia skutecznych stron sprzedażowych.
-                </p>
-              </Link>
-              <Link
-                to="/blog/ux-ui-ecommerce"
-                className="border border-border rounded-lg p-6 hover:shadow-md hover:border-primary transition-all"
-              >
-                <h3 className="font-bold text-primary mb-2">
-                  UX/UI w E-commerce
-                </h3>
-                <p className="text-sm text-muted-foreground">
-                  Jak zaprojektować sklep internetowy, który sprzedaje.
-                </p>
-              </Link>
-              <Link
-                to="/blog/pozycjonowanie-co-to"
-                className="border border-border rounded-lg p-6 hover:shadow-md hover:border-primary transition-all"
-              >
-                <h3 className="font-bold text-primary mb-2">
-                  Pozycjonowanie Stron – Poradnik
-                </h3>
-                <p className="text-sm text-muted-foreground">
-                  Zaawansowany poradnik do SEO dla zaawansowanych.
-                </p>
-              </Link>
-            </div>
-          </section>
-
-          {/* Related Services */}
-          <section className="mb-16">
-            <h2 className="text-3xl font-bold text-primary mb-6">
-              Nasze Usługi
-            </h2>
-            <p className="text-muted-foreground mb-8">
-              W Fotz Studio oferujemy kompleksowe usługi projektowania i
-              desenvolvenia stron internetowych:
+            <p className="mb-5 leading-relaxed">
+              Pozycjonowanie nie kończy się na wdrożeniu technicznym. Może obejmować rozwój treści, linki i analizę wyszukiwarki, ale nie daje gwarantowanej pozycji ani ruchu. Zachowaj rozróżnienie między przygotowaniem strony a ciągłą pracą marketingową. Zakres usługi <Link to="/seo/pozycjonowanie" className="font-semibold text-yellow-800 hover:underline">pozycjonowania stron</Link> jest odrębnym tematem od tej checklisty.
             </p>
-            <div className="grid gap-4 md:grid-cols-3">
-              <Link
-                to="/uslugi"
-                className="border border-border rounded-lg p-6 hover:shadow-md hover:border-primary transition-all"
-              >
-                <h3 className="font-bold text-primary mb-2">
-                  Projektowanie Stron
-                </h3>
-                <p className="text-sm text-muted-foreground">
-                  Nowoczesny design zoptymalizowany pod konwersje.
-                </p>
-              </Link>
-              <Link
-                to="/uslugi"
-                className="border border-border rounded-lg p-6 hover:shadow-md hover:border-primary transition-all"
-              >
-                <h3 className="font-bold text-primary mb-2">
-                  Pozycjonowanie SEO
-                </h3>
-                <p className="text-sm text-muted-foreground">
-                  Zwiększ widoczność w Google i generuj prawdziwy ruch.
-                </p>
-              </Link>
-              <Link
-                to="/uslugi"
-                className="border border-border rounded-lg p-6 hover:shadow-md hover:border-primary transition-all"
-              >
-                <h3 className="font-bold text-primary mb-2">
-                  E-commerce Solutions
-                </h3>
-                <p className="text-sm text-muted-foreground">
-                  Sklepy internetowe, które rzeczywiście sprzedają.
-                </p>
-              </Link>
+            <p className="mb-6 leading-relaxed">
+              W <a href="https://search.google.com/search-console/about" target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 font-semibold text-yellow-800 hover:underline">Google Search Console<ExternalLink className="h-3 w-3" aria-hidden="true" /></a> filtruj dokładny URL, zapisz okres i nie przenoś zapytań z innych stron. W <a href="https://pagespeed.web.dev/" target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 font-semibold text-yellow-800 hover:underline">PageSpeed Insights<ExternalLink className="h-3 w-3" aria-hidden="true" /></a> oddziel dane użytkowników od testu laboratoryjnego. Oceniaj zachowanie swojej strony internetowej i dane, nie sam wynik punktowy.
+            </p>
+            <div className="rounded-r-lg border-l-4 border-yellow-500 bg-yellow-50 p-5">
+              <p className="leading-relaxed">Nie obiecuj wzrostu widoczności na podstawie samej publikacji lub jednej zmiany. Zapisz datę, zakres i źródło pomiaru, a następnie porównuj zgodny zakres danych. Wejścia organiczne analizuj razem z jakością wykonanych działań, nie jako samodzielny dowód zwrotu.</p>
             </div>
           </section>
 
-          {/* FAQ Section */}
-          <section className="mb-16">
-            <h2 className="text-3xl font-bold text-primary mb-6">
-              Najczęściej Zadawane Pytania
-            </h2>
-            <div className="space-y-6">
-              {faqItems.slice(0, 5).map((item, index) => (
-                <details
-                  key={index}
-                  className="border border-border rounded-lg p-6 group cursor-pointer"
-                >
-                  <summary className="flex items-center justify-between font-bold text-primary">
-                    <span>{item.question}</span>
-                    <span className="transition-transform group-open:rotate-180">
-                      ▼
-                    </span>
+          <section id="opieka" aria-labelledby="opieka-title" className="mb-16 scroll-mt-24">
+            <h2 id="opieka-title" className="mb-5 text-3xl font-bold text-slate-950">Domena, hosting, bezpieczeństwo i opieka nad stroną firmową</h2>
+            <p className="mb-5 leading-relaxed">
+              Domena powinna być czytelna i zarejestrowana na właściwego właściciela. Przy hostingu porównaj parametry potrzebne Twojej witryny, kopie, wsparcie, koszt odnowienia i sposób przeniesienia usługi. HTTPS chroni transmisję, ale nie zastępuje aktualizacji, ograniczenia uprawnień, kopii ani testowego przywracania danych.
+            </p>
+            <p className="mb-5 leading-relaxed">
+              Jeżeli zbierasz dane przez formularz, rezerwacje lub analitykę, ustal cele, podstawy przetwarzania, odbiorców, okres przechowywania i obowiązki informacyjne. Polityka prywatności i mechanizm zgód powinny odpowiadać rzeczywistej konfiguracji. Wymogi prawne zależą od działalności i danych, dlatego skonsultuj konkretny przypadek zamiast kopiować dokument z innego serwisu.
+            </p>
+            <p className="mb-6 leading-relaxed">
+              Firma powinna utworzyć harmonogram aktualizacji, kontroli formularzy, kopii, linków i treści. Przy zakończeniu współpracy przekaż dostępy do domeny, hostingu, CMS i analityki oraz instrukcję przywracania. Regularna opieka pozwala reagować na problemy, lecz nie jest gwarancją dostępności ani bezpieczeństwa bez odpowiedniego zakresu i testów.
+            </p>
+            <h3 className="mb-4 text-2xl font-bold text-slate-950">Najczęstsze błędy przy tworzeniu stron dla firm</h3>
+            <ul className="list-disc space-y-3 pl-6 leading-relaxed">
+              <li>Wybór pakietu przed ustaleniem celu, odbiorców i wymaganych funkcji.</li>
+              <li>Projektowanie nowej strony internetowej bez treści, odpowiedzialności za materiały i mapy przekierowań.</li>
+              <li>Ocena wyłącznie na podstawie wyglądu, ceny startowej lub automatycznego wyniku narzędzia.</li>
+              <li>Pominięcie testów telefonu, formularzy, dostępności, praw do materiałów i przekazania kont.</li>
+              <li>Traktowanie publikacji jako gwarancji widoczności, zapytań lub sprzedaży zamiast początku pomiaru.</li>
+            </ul>
+          </section>
+
+          <section id="faq" aria-labelledby="faq-title" className="mb-16 scroll-mt-24">
+            <h2 id="faq-title" className="mb-7 text-3xl font-bold text-slate-950">FAQ: firmowy serwis www i strona internetowa dla firmy</h2>
+            <div className="space-y-4">
+              {faqItems.map((item) => (
+                <details id={`strona-firmy-faq-${item.id}`} key={item.id} className="group rounded-lg border border-slate-200 p-5 open:bg-slate-50">
+                  <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-bold text-slate-950">
+                    {item.question}<span className="transition group-open:rotate-180" aria-hidden="true">▼</span>
                   </summary>
-                  <p className="text-muted-foreground mt-4 leading-relaxed">
-                    {item.answer}
-                  </p>
+                  <p className="mt-4 leading-relaxed text-slate-700">{item.answer}</p>
                 </details>
               ))}
             </div>
           </section>
-        </section>
 
-        {/* Related Articles Component */}
-        <RelatedArticles />
-      </div>
+          <section id="powiazane-materialy" aria-labelledby="powiazane-title" className="mb-14 scroll-mt-24">
+            <h2 id="powiazane-title" className="mb-6 text-3xl font-bold text-slate-950">Projekt strony: powiązane poradniki</h2>
+            <div className="grid gap-4 md:grid-cols-2">
+              <Link to="/blog/seo-techniczne-poradnik" className="rounded-lg border border-slate-200 p-5 transition hover:border-yellow-500">
+                <span className="flex items-center gap-2 font-bold text-slate-950">SEO techniczne <ArrowRight className="h-4 w-4" aria-hidden="true" /></span>
+                <span className="mt-2 block text-sm text-slate-600">Sprawdź indeksację, adresy i elementy techniczne przed publikacją.</span>
+              </Link>
+              <Link to="/blog/strategia-content-marketingu" className="rounded-lg border border-slate-200 p-5 transition hover:border-yellow-500">
+                <span className="flex items-center gap-2 font-bold text-slate-950">Strategia treści <ArrowRight className="h-4 w-4" aria-hidden="true" /></span>
+                <span className="mt-2 block text-sm text-slate-600">Przełóż potrzeby odbiorców na spójny plan publikacji.</span>
+              </Link>
+            </div>
+          </section>
+
+          <section aria-labelledby="podsumowanie-title" className="rounded-xl bg-slate-950 p-7 text-white md:p-9">
+            <h2 id="podsumowanie-title" className="mb-4 text-2xl font-bold">Nowa strona dla firmy: podsumowanie zakresu</h2>
+            <p className="mb-5 leading-relaxed text-slate-300">
+              Dopasowanie serwisu do celu firmy to klucz do sensownej decyzji. Zacznij od zadań użytkowników, treści i odpowiedzialności, a technologię oraz wykonawcę wybierz na podstawie pełnego zakresu. Zachowaj własne dostępy, przetestuj działanie swojej witryny i zaplanuj opiekę.
+            </p>
+            <p className="leading-relaxed text-slate-300">
+              Jeśli chcesz omówić projekt strony dla swojej firmy, <Link to="/kontakt" className="font-semibold text-yellow-400 hover:underline">przygotuj brief i przejdź do kontaktu</Link>. Porada lub wycena powinna odnosić się do Twoich materiałów i wymagań, nie do przykładowego pakietu.
+            </p>
+          </section>
+        </div>
+      </article>
     </Layout>
   );
 }
