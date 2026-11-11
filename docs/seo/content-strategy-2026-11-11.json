@@ -25,6 +25,29 @@
     "articleDateModified": "2026-11-11",
     "visibleFaqQuestionsMatchingSchema": 5
   },
+  "production": {
+    "scope": "Publiczna strona po wdrożeniu",
+    "score": 96,
+    "measurementDate": "2026-11-11",
+    "httpStatus": 200,
+    "neuronStatus": "ok",
+    "publicHtmlMatchesBuild": true,
+    "pass": true,
+    "evidence": "docs/seo/guides-release-2026-11-11.json"
+  },
+  "release": {
+    "pullRequest": {
+      "number": 207,
+      "url": "https://github.com/adam420412/fotz-studio-web-experience/pull/207"
+    },
+    "mergeCommit": "269c8c453c26ffc0d44faccccabe30e36dad9f54",
+    "deployment": {
+      "provider": "Vercel",
+      "id": "dpl_DetSfhBjTWTFBP26uVKXJunX9d3S",
+      "status": "READY",
+      "alias": "www.fotz-studio.pl"
+    }
+  },
   "gsc": {
     "impressions": 0,
     "clicks": 0,

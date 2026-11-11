@@ -1,0 +1,404 @@
+{
+  "date": "2026-11-11",
+  "status": "POTWIERDZONE_95",
+  "scope": "Publiczna weryfikacja pięciu poradników po wdrożeniu; wyniki lokalne i publiczne są zapisane oddzielnie.",
+  "productionMeasurement": {
+    "date": "2026-11-11",
+    "method": "Porównanie publicznego HTML z dokumentem wygenerowanym przez build oraz publiczny odczyt wyniku Neuron Writer.",
+    "pagesPassed": 5,
+    "pagesTotal": 5,
+    "allPassed": true
+  },
+  "release": {
+    "mainCommit": "3c841b3cd489c041178871feb88edb4faa84c3c7",
+    "deployment": {
+      "provider": "Vercel",
+      "id": "dpl_DetSfhBjTWTFBP26uVKXJunX9d3S",
+      "status": "READY",
+      "alias": "www.fotz-studio.pl"
+    }
+  },
+  "mainChecks": {
+    "fullTests": {
+      "status": "PASS",
+      "passed": 340,
+      "total": 340
+    },
+    "build": {
+      "status": "PASS",
+      "generatedPages": 1061
+    },
+    "seoCheck": {
+      "status": "PASS",
+      "errors": 0,
+      "galleryPages": 449
+    }
+  },
+  "pages": [
+    {
+      "recordId": "FOTZ-F1D5B219",
+      "url": "https://www.fotz-studio.pl/blog/seo-techniczne-poradnik",
+      "queryId": "32171e4dd5db46fa",
+      "analysis": {
+        "url": "https://app.neuronwriter.com/analysis/view/32171e4dd5db46fa",
+        "role": "Historyczna analiza przypisana do /seo/techniczne, wykorzystana pomocniczo dla poradnika informacyjnego."
+      },
+      "baseline": {
+        "scope": "Publiczny baseline przed wdrożeniem.",
+        "score": 63
+      },
+      "candidate": {
+        "scope": "Lokalna wersja robocza z builda; nie jest pomiarem publicznym.",
+        "score": 97,
+        "method": "evaluate-html",
+        "selector": "main#main-content"
+      },
+      "production": {
+        "scope": "Publiczna strona po wdrożeniu.",
+        "score": 97,
+        "measurementDate": "2026-11-11",
+        "neuronStatus": "ok",
+        "pass": true
+      },
+      "release": {
+        "pullRequest": {
+          "number": 204,
+          "url": "https://github.com/adam420412/fotz-studio-web-experience/pull/204"
+        },
+        "mergeCommit": "1b92926c8a03bf21dd175b059ef61e7e3ce70370"
+      },
+      "html": {
+        "status": "PASS",
+        "httpStatus": 200,
+        "matchesBuild": true,
+        "title": "Techniczne SEO: poradnik i audyt 2026 | FOTZ",
+        "metaDescription": "Techniczne SEO krok po kroku: crawling, indeksowanie, Core Web Vitals, canonical i robots.txt. Sprawdź, jak przeprowadzić audyt i zoptymalizować stronę.",
+        "canonical": "https://www.fotz-studio.pl/blog/seo-techniczne-poradnik",
+        "selfCanonical": true,
+        "h1Count": 1,
+        "mainContentCount": 1
+      },
+      "schema": {
+        "status": "PASS",
+        "matchesBuild": true,
+        "article": {
+          "url": "https://www.fotz-studio.pl/blog/seo-techniczne-poradnik",
+          "datePublished": "2025-04-12",
+          "dateModified": "2026-11-11"
+        }
+      },
+      "faq": {
+        "status": "PASS",
+        "visibleCount": 10,
+        "schemaCount": 10,
+        "matchesBuild": true
+      },
+      "galleries": {
+        "status": "PASS",
+        "count": 1,
+        "matchesBuild": true
+      },
+      "gsc": {
+        "period": "2026-10-13 / 2026-11-09",
+        "impressions": 0,
+        "clicks": 0,
+        "averagePosition": 0,
+        "queries11To20": [],
+        "unchanged": true,
+        "otherPageQueriesAssigned": false
+      }
+    },
+    {
+      "recordId": "FOTZ-7E140C9C",
+      "url": "https://www.fotz-studio.pl/blog/pozycjonowanie-lokalne-dla-firm",
+      "queryId": "2991be925c9eb1e1",
+      "analysis": {
+        "url": "https://app.neuronwriter.com/analysis/view/2991be925c9eb1e1",
+        "role": "Historyczna analiza współdzielona z /uslugi/pozycjonowanie-lokalne, wykorzystana pomocniczo dla poradnika informacyjnego."
+      },
+      "baseline": {
+        "scope": "Publiczny baseline przed wdrożeniem.",
+        "score": 70
+      },
+      "candidate": {
+        "scope": "Lokalna wersja robocza z builda; nie jest pomiarem publicznym.",
+        "score": 98,
+        "method": "evaluate-html",
+        "selector": "main#main-content"
+      },
+      "production": {
+        "scope": "Publiczna strona po wdrożeniu.",
+        "score": 99,
+        "measurementDate": "2026-11-11",
+        "neuronStatus": "ok",
+        "pass": true
+      },
+      "release": {
+        "pullRequest": {
+          "number": 205,
+          "url": "https://github.com/adam420412/fotz-studio-web-experience/pull/205"
+        },
+        "mergeCommit": "876f816b3e8e307dfe32e32130856963037cef30"
+      },
+      "html": {
+        "status": "PASS",
+        "httpStatus": 200,
+        "matchesBuild": true,
+        "title": "Pozycjonowanie lokalne 2026: poradnik dla firm | FOTZ",
+        "metaDescription": "Pozycjonowanie lokalne 2026: profil firmy w Google, strona www, NAP, opinie, lokalne linki, koszty i pomiar. Poradnik krok po kroku dla firm.",
+        "canonical": "https://www.fotz-studio.pl/blog/pozycjonowanie-lokalne-dla-firm",
+        "selfCanonical": true,
+        "h1Count": 1,
+        "mainContentCount": 1
+      },
+      "schema": {
+        "status": "PASS",
+        "matchesBuild": true,
+        "article": {
+          "url": "https://www.fotz-studio.pl/blog/pozycjonowanie-lokalne-dla-firm",
+          "datePublished": "2025-02-20",
+          "dateModified": "2026-11-11"
+        }
+      },
+      "faq": {
+        "status": "PASS",
+        "visibleCount": 10,
+        "schemaCount": 10,
+        "matchesBuild": true
+      },
+      "galleries": {
+        "status": "PASS",
+        "count": 0,
+        "matchesBuild": true
+      },
+      "gsc": {
+        "period": "2026-10-13 / 2026-11-09",
+        "impressions": 17,
+        "clicks": 0,
+        "averagePosition": 61.9,
+        "queries11To20": [],
+        "unchanged": true,
+        "otherPageQueriesAssigned": false
+      }
+    },
+    {
+      "recordId": "FOTZ-B43838E9",
+      "url": "https://www.fotz-studio.pl/blog/fotografia-produktowa-poradnik",
+      "queryId": "2887251effbdce23",
+      "baseline": {
+        "scope": "Publiczny baseline przed wdrożeniem.",
+        "score": 66
+      },
+      "candidate": {
+        "scope": "Lokalna wersja robocza z builda; nie jest pomiarem publicznym.",
+        "score": 96,
+        "method": "evaluate-html",
+        "selector": "main#main-content"
+      },
+      "production": {
+        "scope": "Publiczna strona po wdrożeniu.",
+        "score": 96,
+        "measurementDate": "2026-11-11",
+        "neuronStatus": "ok",
+        "pass": true
+      },
+      "release": {
+        "pullRequest": {
+          "number": 206,
+          "url": "https://github.com/adam420412/fotz-studio-web-experience/pull/206"
+        },
+        "mergeCommit": "1c131c4c76533b307fd16b0862f6ad3cde2a431d"
+      },
+      "html": {
+        "status": "PASS",
+        "httpStatus": 200,
+        "matchesBuild": true,
+        "title": "Fotografia produktowa — poradnik 2026 | FOTZ",
+        "metaDescription": "Fotografia produktowa — poradnik 2026: produkt, światło, tło, aparat, ustawienia i obróbka. Zobacz, jak krok po kroku przygotować zdjęcia do sklepu.",
+        "canonical": "https://www.fotz-studio.pl/blog/fotografia-produktowa-poradnik",
+        "selfCanonical": true,
+        "h1Count": 1,
+        "mainContentCount": 1
+      },
+      "schema": {
+        "status": "PASS",
+        "matchesBuild": true,
+        "article": {
+          "url": "https://www.fotz-studio.pl/blog/fotografia-produktowa-poradnik",
+          "datePublished": "2026-04-12",
+          "dateModified": "2026-11-11"
+        }
+      },
+      "faq": {
+        "status": "PASS",
+        "visibleCount": 9,
+        "schemaCount": 9,
+        "matchesBuild": true
+      },
+      "galleries": {
+        "status": "PASS",
+        "count": 1,
+        "matchesBuild": true
+      },
+      "gsc": {
+        "period": "2026-10-13 / 2026-11-09",
+        "impressions": 8,
+        "clicks": 0,
+        "averagePosition": 30.4,
+        "unchanged": true,
+        "historicalQuery": {
+          "query": "fotografia produktowa poradnik",
+          "impressions": 3,
+          "averagePosition": 19.7
+        }
+      }
+    },
+    {
+      "recordId": "FOTZ-32C54499",
+      "url": "https://www.fotz-studio.pl/blog/strategia-content-marketingu-skuteczny-przewodnik-dla-firm",
+      "queryId": "be80621d8dbc76e5",
+      "baseline": {
+        "scope": "Publiczny baseline przed wdrożeniem.",
+        "score": 46
+      },
+      "candidate": {
+        "scope": "Lokalna wersja robocza z builda; nie jest pomiarem publicznym.",
+        "score": 96,
+        "method": "evaluate-html",
+        "selector": "main#main-content"
+      },
+      "production": {
+        "scope": "Publiczna strona po wdrożeniu.",
+        "score": 96,
+        "measurementDate": "2026-11-11",
+        "neuronStatus": "ok",
+        "pass": true
+      },
+      "release": {
+        "pullRequest": {
+          "number": 207,
+          "url": "https://github.com/adam420412/fotz-studio-web-experience/pull/207"
+        },
+        "mergeCommit": "269c8c453c26ffc0d44faccccabe30e36dad9f54"
+      },
+      "cms": {
+        "productionDatabaseWritePerformed": false,
+        "mechanism": "Istniejąca warstwa reviewed współdzielona przez BlogArticleDynamic i prerender."
+      },
+      "html": {
+        "status": "PASS",
+        "httpStatus": 200,
+        "matchesBuild": true,
+        "title": "Strategia content marketingowa — poradnik 2026 | FOTZ",
+        "metaDescription": "Strategia content marketingowa krok po kroku: cele, odbiorcy, treści, SEO, dystrybucja i pomiar. Zobacz, jak stworzyć plan dla firmy w 2026 roku.",
+        "canonical": "https://www.fotz-studio.pl/blog/strategia-content-marketingu-skuteczny-przewodnik-dla-firm",
+        "selfCanonical": true,
+        "h1Count": 1,
+        "mainContentCount": 1
+      },
+      "schema": {
+        "status": "PASS",
+        "matchesBuild": true,
+        "article": {
+          "url": "https://www.fotz-studio.pl/blog/strategia-content-marketingu-skuteczny-przewodnik-dla-firm",
+          "datePublished": "2026-05-03T03:17:02.704+00:00",
+          "dateModified": "2026-11-11"
+        }
+      },
+      "faq": {
+        "status": "PASS",
+        "visibleCount": 5,
+        "schemaCount": 5,
+        "matchesBuild": true
+      },
+      "galleries": {
+        "status": "PASS",
+        "count": 1,
+        "matchesBuild": true
+      },
+      "gsc": {
+        "period": "2026-10-13 / 2026-11-09",
+        "impressions": 0,
+        "clicks": 0,
+        "averagePosition": 0,
+        "queries11To20": [],
+        "unchanged": true
+      }
+    },
+    {
+      "recordId": "FOTZ-EED13F7B",
+      "url": "https://www.fotz-studio.pl/blog/audyt-seo-krok-po-kroku",
+      "queryId": "880fa6a633767168",
+      "baseline": {
+        "scope": "Publiczny baseline przed wdrożeniem.",
+        "score": 58
+      },
+      "candidate": {
+        "scope": "Lokalna wersja robocza z builda; nie jest pomiarem publicznym.",
+        "score": 95,
+        "method": "evaluate-html",
+        "selector": "main#main-content"
+      },
+      "production": {
+        "scope": "Publiczna strona po wdrożeniu.",
+        "score": 95,
+        "measurementDate": "2026-11-11",
+        "neuronStatus": "ok",
+        "pass": true
+      },
+      "release": {
+        "pullRequest": {
+          "number": 208,
+          "url": "https://github.com/adam420412/fotz-studio-web-experience/pull/208"
+        },
+        "mergeCommit": "3c841b3cd489c041178871feb88edb4faa84c3c7"
+      },
+      "html": {
+        "status": "PASS",
+        "httpStatus": 200,
+        "matchesBuild": true,
+        "title": "Audyt SEO strony krok po kroku: checklista 2026 | FOTZ",
+        "metaDescription": "Audyt SEO krok po kroku: analiza i sposób, jak sprawdzić indeksację, technikę, treści, linki oraz widoczność swojej strony. Checklista 2026.",
+        "canonical": "https://www.fotz-studio.pl/blog/audyt-seo-krok-po-kroku",
+        "selfCanonical": true,
+        "h1Count": 1,
+        "mainContentCount": 1
+      },
+      "schema": {
+        "status": "PASS",
+        "matchesBuild": true,
+        "article": {
+          "url": "https://www.fotz-studio.pl/blog/audyt-seo-krok-po-kroku",
+          "datePublished": "2026-04-12",
+          "dateModified": "2026-11-11"
+        }
+      },
+      "faq": {
+        "status": "PASS",
+        "visibleCount": 8,
+        "schemaCount": 8,
+        "matchesBuild": true
+      },
+      "galleries": {
+        "status": "PASS",
+        "count": 1,
+        "matchesBuild": true
+      },
+      "gsc": {
+        "period": "2026-10-13 / 2026-11-09",
+        "impressions": 0,
+        "clicks": 0,
+        "averagePosition": 0,
+        "queries11To20": [],
+        "unchanged": true,
+        "otherPageQueriesAssigned": false
+      }
+    }
+  ],
+  "notes": [
+    "Wszystkie pięć porównań publicznego HTML z buildem zakończyło się wynikiem PASS.",
+    "Wyniki baseline, lokalne i produkcyjne opisują odrębne pomiary i nie są ze sobą mieszane.",
+    "Dane GSC zachowano bez zmian dla okresu 2026-10-13 / 2026-11-09.",
+    "Dokument nie zawiera twierdzeń o ruchu ani leadach."
+  ]
+}
