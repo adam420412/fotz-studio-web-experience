@@ -8,6 +8,7 @@ import {
   Linkedin,
   Youtube,
   Building2,
+  Globe,
 } from "lucide-react";
 import { Calendar } from "lucide-react";
 
@@ -289,6 +290,34 @@ export function Footer() {
                   strokeWidth={1.5}
                 />
                 <span>NIP: 7851806089</span>
+              </div>
+              <div className="flex items-start gap-2">
+                <Globe
+                  className="w-4 h-4 text-[color:var(--dv-accent-pink)] shrink-0 mt-0.5"
+                  strokeWidth={1.5}
+                />
+                <a
+                  href="https://fotz.pl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[color:var(--dv-accent-pink)] transition-colors"
+                >
+                  Portfolio: fotz.pl ↗
+                </a>
+              </div>
+              <div className="flex items-start gap-2">
+                <Instagram
+                  className="w-4 h-4 text-[color:var(--dv-accent-pink)] shrink-0 mt-0.5"
+                  strokeWidth={1.5}
+                />
+                <a
+                  href="https://www.instagram.com/fotz_studio/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[color:var(--dv-accent-pink)] transition-colors"
+                >
+                  Instagram: @fotz_studio ↗
+                </a>
               </div>
             </div>
 
