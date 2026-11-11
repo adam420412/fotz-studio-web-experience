@@ -1,551 +1,494 @@
 import { Link } from "react-router-dom";
-import { SEOHead } from "@/components/seo/SEOHead";
+import { ArrowLeft, ArrowRight, CalendarDays, CheckCircle2, ChevronRight } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
-import { Button } from "@/components/ui/button";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { FadeInView } from "@/components/FadeInView";
-import { ContactSection } from "@/components/sections/ContactSection";
-import { ArrowLeft, Calendar, Clock, User, ChevronRight, Package, Zap, Palette, TrendingUp } from "lucide-react";
-import { motion } from "framer-motion";
+import { SEOHead } from "@/components/seo/SEOHead";
+import { ArticleSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
+import { getOwnPhoto } from "@/lib/own-photos.mjs";
+
+const seoTitle = "Fotografia produktowa — poradnik 2026 | FOTZ";
+const seoDescription = "Fotografia produktowa — poradnik 2026: produkt, światło, tło, aparat, ustawienia i obróbka. Zobacz, jak krok po kroku przygotować zdjęcia do sklepu.";
+const canonicalUrl = "https://www.fotz-studio.pl/blog/fotografia-produktowa-poradnik";
+const pageTitle = "Fotografia produktowa — poradnik krok po kroku 2026";
+const heroImageUrl = "https://www.fotz-studio.pl/work/product-1200.webp";
+const heroPhoto = getOwnPhoto("produktowy");
+
+const articleData = {
+  headline: pageTitle,
+  description: seoDescription,
+  url: canonicalUrl,
+  image: heroImageUrl,
+  datePublished: "2026-04-12",
+  dateModified: "2026-11-11",
+  author: "Fotz Studio",
+};
+
+const breadcrumbs = [
+  { name: "Strona główna", url: "/" },
+  { name: "Blog", url: "/blog" },
+  { name: "Fotografia produktowa — poradnik", url: "/blog/fotografia-produktowa-poradnik" },
+];
+
+const principles = [
+  {
+    title: "Pokaż produkt zgodnie z rzeczywistością",
+    text: "Odbiorca powinien rozpoznać kształt, proporcję, fakturę i wykończenie. Nie ukrywaj istotnych cech ani nie zmieniaj produktu w obróbce.",
+  },
+  {
+    title: "Zacznij od jednego celu zdjęcia",
+    text: "Główne zdjęcie katalogowe odpowiada na pytanie „co kupuję?”, a scenografia pokazuje kontekst użycia. Nie próbuj upchnąć wszystkich przekazów w jednym kadrze.",
+  },
+  {
+    title: "Kontroluj światło, nie tylko jego moc",
+    text: "Kierunek i wielkość źródła wpływają na kontrast oraz refleksy. Miękkie oświetlenie ułatwia pokazanie formy, ale nie jest receptą na każdy produkt.",
+  },
+  {
+    title: "Pilnuj ostrości istotnych detali",
+    text: "Etykieta, krawędzie i elementy użytkowe powinny być czytelne. Sprawdzaj zdjęcie w powiększeniu, zamiast oceniać je wyłącznie na ekranie aparatu.",
+  },
+  {
+    title: "Oddziel produkt od tła",
+    text: "Tło nie może zlewać się z fotografowanym przedmiotem ani z nim rywalizować. Zostaw też zapas przestrzeni do późniejszego kadrowania.",
+  },
+  {
+    title: "Przekazuj skalę bez złudzeń",
+    text: "Pokazuj wymiary w opisie, a w scenografii używaj znanych elementów wyłącznie wtedy, gdy ich obecność nie sugeruje innego rozmiaru produktu.",
+  },
+  {
+    title: "Utrzymaj spójność całej serii",
+    text: "Podobny kierunek światła, kadrowanie i balans bieli porządkują katalog. Zapisz ustawienia, aby kolejne partie zdjęć można było dopasować.",
+  },
+  {
+    title: "Dbaj o wierne kolory",
+    text: "Ustaw balans bieli dla wybranego światła i porównaj zdjęcie z produktem w neutralnych warunkach. Nie wzmacniaj koloru kosztem jego zgodności.",
+  },
+  {
+    title: "Buduj czytelną kompozycję",
+    text: "Wyśrodkowanie dobrze sprawdza się w wielu ujęciach katalogowych, a trójpodział i diagonale pomagają w scenografii. Zasada jest pomocą, nie obowiązkiem.",
+  },
+  {
+    title: "Sprawdzaj efekt w miejscu publikacji",
+    text: "Oceń miniaturę, widok na telefonie i powiększenie. Dobre zdjęcie produktu powinno być czytelne także poza programem do obróbki.",
+  },
+];
+
+const preparationSteps = [
+  {
+    title: "Wybierz egzemplarz i uzupełnij braki",
+    text: "Sprawdź powierzchnię, opakowanie, etykiety i komplet akcesoriów. Przygotuj części, które rzeczywiście trafiają do klienta, oraz egzemplarz zapasowy, jeśli jest dostępny.",
+  },
+  {
+    title: "Oczyść produkt metodą właściwą dla materiału",
+    text: "Usuń kurz, odciski i luźne nitki. Szkło, metal i ekrany wymagają szczególnej uwagi, ale środek czyszczący zawsze dobierz do zaleceń producenta.",
+  },
+  {
+    title: "Przygotuj miejsce i stabilne podłoże",
+    text: "Zabezpiecz stół, tło i przestrzeń na statyw. Odsuń przedmioty powodujące przypadkowe odbicia. W domu wybierz miejsce, w którym możesz kontrolować mieszanie światła.",
+  },
+  {
+    title: "Ułóż tło bez niepożądanych zagięć",
+    text: "Papier, tkanina lub płyta powinny być czyste i stabilne. Gramaturę dobierz do sposobu montażu i podatności na odkształcenia, a nie do jednej uniwersalnej wartości.",
+  },
+  {
+    title: "Dobieraj rekwizyty oszczędnie",
+    text: "Rekwizyt ma wyjaśniać zastosowanie lub skalę, a nie zasłaniać produkt. Unikaj cudzych znaków, przypadkowych napisów i przedmiotów, których klient nie otrzyma.",
+  },
+  {
+    title: "Zapisz kolejność i ustalenia",
+    text: "Na liście uwzględnij warianty, ujęcia i wymagane kadry. Przy serii odnotuj położenie produktu, świateł i aparatu, aby ułatwić powtarzalność.",
+  },
+];
+
+const equipment = [
+  {
+    title: "Telefon lub aparat — zacznij od kontroli",
+    text: "Nowoczesny telefon wystarczy do nauki i wielu prostych publikacji. Aparaty bezlusterkowe i lustrzanki dają wygodniejszą kontrolę parametrów, obiektywu i pracy z oświetleniem, ale sam model sprzętu fotograficznego nie poprawia zdjęcia.",
+  },
+  {
+    title: "Obiektyw i odległość",
+    text: "Obiektyw szerokokątny ustawiony zbyt blisko może deformować proporcje. Zwiększ odległość i wybierz dłuższą ogniskową dostępną w Twoim zestawie, zachowując właściwą perspektywę i czytelny kadr produktowy.",
+  },
+  {
+    title: "Statyw i zdalne wyzwalanie",
+    text: "Statyw stabilizuje kadr, ułatwia powtarzanie kompozycji i pracę z dłuższym czasem. Zdalne wyzwalanie lub samowyzwalacz ogranicza poruszenie aparatu podczas naciskania spustu.",
+  },
+  {
+    title: "Lampa i dyfuzor",
+    text: "Do domowej pracy może posłużyć lampa LED z dyfuzorem albo światło z okna przepuszczone przez czystą, białą tkaninę. Lampy studyjne dają więcej możliwości, lecz wymagają kontroli temperatury i bezpiecznego montażu.",
+  },
+  {
+    title: "Kartki i blendy",
+    text: "Biała kartka może rozjaśnić cień, a czarna ograniczyć niepożądane odbicia i podkreślić krawędź. To proste narzędzia do kształtowania światła, nie zamiennik starannego ustawienia produktu.",
+  },
+];
+
+const shootingSteps = [
+  {
+    title: "Ustaw kadr i poziom aparatu",
+    text: "Wyrównaj horyzont, sprawdź krawędzie fotografowanego przedmiotu i zostaw margines do eksportu. Zablokuj położenie statywu przed kolejnymi poprawkami produktu.",
+  },
+  {
+    title: "Wybierz tryb manualny lub półautomatyczny",
+    text: "Ustaw niską czułość dostępną dla danego aparatu i warunków. Dobierz przysłonę do wymaganej głębi ostrości, a czas do stabilności zestawu i rodzaju światła.",
+  },
+  {
+    title: "Dopasowanie balansu bieli",
+    text: "Nie mieszaj bez kontroli światła okiennego z lampami o różnej barwie. Ustawienia balansu bieli możesz dobrać ręcznie lub na podstawie kadru referencyjnego, który ułatwi późniejszą korektę.",
+  },
+  {
+    title: "Ustaw ostrość i wykonaj próbę",
+    text: "Skup się na najważniejszym fragmencie, a potem oceń cały produkt w powiększeniu. Przy bardzo płytkiej głębi zmień przysłonę lub odległość; focus stacking pozostaw na stabilny, bardziej zaawansowany wariant pracy.",
+  },
+  {
+    title: "Zmieniaj jeden element naraz",
+    text: "Najpierw popraw światło, potem kadr, a dopiero później pozostałe parametry. Dzięki temu rozpoznasz przyczynę efektu i łatwiej powtórzysz udane ustawienie.",
+  },
+  {
+    title: "Zapisz serię i materiał źródłowy",
+    text: "Wykonaj wymagane ujęcia oraz bezpieczne warianty zapasowe. Jeśli urządzenie i proces na to pozwalają, zachowaj RAW obok pliku do szybkiego podglądu i uporządkuj nazwy przed obróbką.",
+  },
+];
+
+const mistakes = [
+  {
+    problem: "Mieszane kolory światła",
+    solution: "Wyłącz konkurujące źródła albo rozdziel ich obszary, a następnie ponownie ustaw balans bieli.",
+  },
+  {
+    problem: "Nieczytelne refleksy na szkle i metalu",
+    solution: "Zmień kąt produktu lub źródła, powiększ dyfuzor i przesłaniaj odbicia czarnymi kartkami zamiast wybielać plamy w postprodukcji.",
+  },
+  {
+    problem: "Produkt zlewa się z tłem",
+    solution: "Zmień jasność albo kolor tła, odsuń produkt i dodaj kontrolowane światło na krawędź, jeśli pasuje to do koncepcji.",
+  },
+  {
+    problem: "Nienaturalna perspektywa",
+    solution: "Odsuń aparat, unikaj skrajnego szerokiego kąta i sprawdź, czy piony oraz proporcje odpowiadają rzeczywistemu przedmiotowi.",
+  },
+  {
+    problem: "Przesadna korekta",
+    solution: "Przywróć naturalną fakturę i kolor. Usuwaj zabrudzenia powstałe na planie, ale nie trwałe cechy produktu ani informacje istotne dla kupującego.",
+  },
+  {
+    problem: "Dobry kadr, zły plik",
+    solution: "Zweryfikuj przestrzeń kolorów, rozmiar, format i kadrowanie w docelowym serwisie. Nie zakładaj, że jeden eksport pasuje wszędzie.",
+  },
+];
 
 const faqItems = [
   {
-    question: "Ile kosztuje sesja fotografii produktowej?",
-    answer: "Cena sesji zależy od typu i liczby produktów. Packshot (podstawowy) kosztuje 400-800 zł. Fotografia lifestyle i 360 stopni to 800-3000 zł. Dla e-commerce bulk (powyżej 10 produktów) cena wynosi 200-600 zł za produkt. Wycena obejmuje retusz, eksport w wielu formatach (JPG, PNG, WebP) i poprawki kolorystyczne."
+    id: "dom",
+    question: "Jak zrobić zdjęcia produktowe w domu?",
+    answer: "Zacznij od czystego produktu, stabilnego stołu i jednego kontrolowanego źródła światła. Ustaw aparat lub telefon na statywie, wybierz neutralne tło i wykonaj serię próbną. Poprawiaj pojedynczo światło, kadr oraz ostrość, a efekt sprawdzaj również na telefonie.",
   },
   {
-    question: "Jak długo trwa sesja produktowa?",
-    answer: "Standardowa sesja trwa 2-4 godziny w zależności od liczby produktów i złożoności. Sesja packshot zwykle 2-3 godziny. Fotografia lifestyle i 360 stopni zajmuje więcej czasu ze względu na setup oświetlenia i pozycjonowania. Po sesji fotograficzne przetworzenie trwa 3-7 dni roboczych."
+    id: "aparat",
+    question: "Jaki aparat i obiektyw do fotografii produktowej?",
+    answer: "Do prostych zdjęć może wystarczyć telefon z ręczną kontrolą lub blokadą ekspozycji. Aparat bezlusterkowy albo lustrzanka ułatwiają pracę z obiektywami i plikami RAW. Ważniejsze od marki są stabilność, właściwa odległość, ogniskowa bez zauważalnych deformacji oraz dobre światło.",
   },
   {
-    question: "Czym różni się packshot od fotografii lifestyle?",
-    answer: "Packshot to fotografia produktu na neutralnym, jednolitym tle. Pokazuje produkt jasno, bez kontekstu. Lifestyle to fotografia produktu w rzeczywistym scenariuszu użycia — produktu w ręku, na biurku, podczas używania. Lifestyle wpływa na emocje i sprzedaż, packshot na czystość i profesjonalizm."
+    id: "lampa",
+    question: "Jaka lampa sprawdzi się do zdjęć produktowych?",
+    answer: "Na początek wygodna jest lampa LED z możliwością regulacji i dużym dyfuzorem. Możesz też wykorzystać miękkie światło okienne. Przy szkle i metalu rozmiar oraz położenie źródła bywają ważniejsze niż jego moc. Nie mieszaj źródeł o różnej barwie bez świadomej korekty.",
   },
   {
-    question: "Jakie formaty plików po sesji produktowej?",
-    answer: "Po sesji otrzymujesz: JPG (dla stron e-commerce), PNG (transparentny dla katalogów), WebP (szybki dla mobilnych). Wszystkie formaty są przygotowane w rozmiarach dostosowanych do platformy — kwadratowe (1:1) dla Instagrama, 3:4 dla TikToka, 16:9 dla kampanii. Otrzymujesz również raw'i do archiwum."
+    id: "packshot",
+    question: "Czym jest packshot i kiedy go wybrać?",
+    answer: "To czytelne ujęcie produktu, najczęściej na jednolitym, neutralnym tle, bez rozbudowanego kontekstu. Sprawdza się jako podstawowa prezentacja w katalogu lub sklepie. Wymagania dotyczące głównego zdjęcia zależą jednak od platformy, dlatego przed sesją trzeba sprawdzić jej aktualne zasady.",
   },
   {
-    question: "Gdzie odbywa się sesja produktowa?",
-    answer: "Miejsce sesji ustalamy indywidualnie, zależnie od rodzaju produktów, planowanych kadrów i potrzebnego oświetlenia. Może to być siedziba klienta lub inna uzgodniona przestrzeń. Transport, dojazd i ewentualny wynajem lokacji wymagają osobnego ustalenia przed realizacją."
+    id: "ilosc",
+    question: "Ile zdjęć jednego produktu warto przygotować?",
+    answer: "Nie ma jednej liczby odpowiedniej dla każdej oferty. Zaplanuj ujęcie główne, strony i tył, istotne detale, elementy zestawu oraz — jeśli jest potrzebny — kontekst użycia. Usuń kadry powtarzalne, które niczego nie wyjaśniają. Liczbę i kolejność dopasuj do produktu i ograniczeń platformy.",
   },
   {
-    question: "Jak fotografia produktowa wpływa na sprzedaż online?",
-    answer: "Jakość zdjęć wpływa na konwersję. Produkty z profesjonalnymi zdjęciami sprzedają się o 40-70% lepiej niż z własnymi fotografiami. Kupujący przykracają na zdjęcia — z nich podejmują decyzję o zakupie. Dobra fotografia zmniejsza zwroty (klienci wiedzą, co będą mieć). Produkty z wieloma zdjęciami z różnych kątów mają wyższy średni wartość zamówienia."
+    id: "ostrosc",
+    question: "Jak uzyskać ostrość na całym produkcie?",
+    answer: "Ustaw aparat stabilnie, wybierz odpowiedni punkt ostrości i zamknij przysłonę w zakresie zachowującym dobrą jakość obrazu. Możesz też zwiększyć odległość od produktu. Focus stacking łączy kadry z różną płaszczyzną ostrości, ale wymaga nieruchomego produktu, statywu i starannego połączenia.",
   },
   {
-    question: "Co to jest fotografia 360 stopni produktu?",
-    answer: "Fotografia 360 stopni to seria zdjęć tego samego produktu zrobionego z 72 kątów (co 5 stopni). Zdjęcia są zbierane w interaktywny widok 3D — klient może przewijać, obracać produkt na ekranie. Jest to dostępne na Allegro, Amazon, Shopify. Zwiększa zaangażowanie i zmniejsza wątpliwości kupujących. Koszt wynosi 1500-3000 zł za produkt."
+    id: "pliki",
+    question: "Jakie pliki przygotować do sklepu internetowego?",
+    answer: "Do publikacji najczęściej używa się JPEG lub WebP, a PNG przydaje się, gdy wymagana jest przezroczystość i format jest akceptowany. Zachowaj wersję źródłową do archiwum. Rozdzielczość, proporcje, maksymalny rozmiar i przestrzeń kolorów dopasuj do aktualnych wymagań docelowego serwisu.",
   },
   {
-    question: "Jakie produkty wymagają specjalnej sesji fotograficznej?",
-    answer: "Produkty drogi i skomplikowane (biżuteria, zegarki, elektronika) wymagają profesjonalnej sesji. Kosmetyki i drogi alkohol wymagają eleganckich setup'ów. Produkty refleksyjne (metale, szkło) wymagają specjalnego oświetlenia ze względu na odbicia. Produkty tekstilne potrzebują starannego stylizacji. Produkty spożywcze wymagają food photographera. Wszystkie produkty e-commerce zawsze się opłacają."
-  }
+    id: "koszt",
+    question: "Od czego zależy koszt fotografii produktowej?",
+    answer: "Na wycenę wpływają m.in. liczba produktów i ujęć, rodzaj powierzchni, scenografia, przygotowanie, obróbka, licencja oraz sposób dostarczenia plików. Osobno warto ustalić transport, poprawki i ewentualne materiały wideo. Zamiast polegać na sztywnym cenniku internetowym, poproś o zakres odpowiadający konkretnej liście zdjęć.",
+  },
+  {
+    id: "sprzedaz",
+    question: "Czy lepsze zdjęcia gwarantują wyższą sprzedaż?",
+    answer: "Nie. Zdjęcia mogą ograniczać niepewność i ułatwiać ocenę oferty, ale na wynik wpływają także cena, dostępność, opis, dostawa, zaufanie i ruch na stronie. Oceniaj zmianę we własnych danych, w podobnych warunkach i z wyraźnie nazwaną hipotezą, zamiast przypisywać jej z góry określony rezultat.",
+  },
 ];
 
-const pricingTable = [
-  {
-    typ: "Packshot",
-    cena: "400-800 zł",
-    zawiera: "Sesja na białym tle, retusz, 3 formaty (JPG/PNG/WebP)",
-    kiedy: "Dla katalogów, e-commerce podstawowy"
-  },
-  {
-    typ: "Lifestyle",
-    cena: "800-2000 zł",
-    zawiera: "Scenariusz użycia, profesjonalne stylizacja, retusz, wszystkie formaty",
-    kiedy: "Social media, kampanie, premium segments"
-  },
-  {
-    typ: "360 stopni",
-    cena: "1500-3000 zł",
-    zawiera: "72 kąty, interaktywny widok 3D, integracja z platformą",
-    kiedy: "Amazon, Allegro, high-ticket items"
-  },
-  {
-    typ: "E-commerce bulk",
-    cena: "200-600 zł/szt.",
-    zawiera: "Pakiet powyżej 10 produktów, każdy na różnym tle, retusz",
-    kiedy: "Całe kolekcje, sklepy, katalogi"
-  }
-];
+const sectionClass = "scroll-mt-24 mt-12";
+const headingClass = "text-2xl md:text-3xl font-heading font-bold mb-5";
+const paragraphClass = "text-muted-foreground leading-relaxed mb-5";
 
 export default function BlogFotografiaProduktowa() {
   return (
-    <>
+    <Layout workExcludeImageId="product">
       <SEOHead
-        title="Fotografia produktowa — kompletny poradnik 2025 | Fotz.pl"
-        description="Fotografia produktowa: ceny, typy sesji i przygotowanie produktów. Jak zdjęcia zwiększają konwersję w sklepie internetowym."
+        title={seoTitle}
+        description={seoDescription}
+        canonical={canonicalUrl}
+        ogImage={heroImageUrl}
         ogType="article"
-        canonical="https://www.fotz-studio.pl/blog/fotografia-produktowa-poradnik"
-        keywords="fotografia produktowa, fotografia produktów, packshot, lifestyle photography, e-commerce fotografia, cena sesji"
-        schemaJson={[
-          {
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "Fotografia produktowa — kompletny poradnik 2025",
-            "description": "Kompleksowy przewodnik po fotografii produktowej — typy sesji, ceny, wpływ na sprzedaż, porada jak wybrać fotografa",
-            "author": {
-              "@type": "Organization",
-              "name": "FOTZ"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "FOTZ",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://www.fotz-studio.pl/logo-fotz.jpg"
-              }
-            },
-            "datePublished": "2026-04-12",
-            "dateModified": "2026-04-12"
-          },
-          {
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://www.fotz-studio.pl" },
-              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.fotz-studio.pl/blog" },
-              { "@type": "ListItem", "position": 3, "name": "Fotografia produktowa — poradnik" }
-            ]
-          },
-          {
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": faqItems.map(item => ({
-              "@type": "Question",
-              "name": item.question,
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": item.answer
-              }
-            }))
-          }
-        ]}
       />
+      <BreadcrumbSchema items={breadcrumbs} />
+      <ArticleSchema data={articleData} />
+      <FAQSchema items={faqItems} />
 
-      <Layout>
-        {/* Breadcrumb */}
-        <section className="pt-32 pb-4 bg-background">
-          <div className="container mx-auto px-4">
-            <nav className="flex items-center gap-2 text-sm text-muted-foreground">
-              <Link to="/" className="hover:text-primary transition-colors">Strona główna</Link>
-              <ChevronRight className="h-4 w-4" />
-              <Link to="/blog" className="hover:text-primary transition-colors">Blog</Link>
-              <ChevronRight className="h-4 w-4" />
-              <span className="text-foreground">Fotografia produktowa — poradnik</span>
-            </nav>
-          </div>
-        </section>
+      <article id="article-content" className="bg-background pb-20">
+        <div className="container mx-auto px-4">
+          <nav aria-label="Ścieżka nawigacji" className="max-w-4xl mx-auto pt-32 pb-8 flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
+            <Link to="/" className="hover:text-primary transition-colors">Strona główna</Link>
+            <ChevronRight className="h-4 w-4" aria-hidden="true" />
+            <Link to="/blog" className="hover:text-primary transition-colors">Blog</Link>
+            <ChevronRight className="h-4 w-4" aria-hidden="true" />
+            <span className="text-foreground" aria-current="page">Fotografia produktowa — poradnik</span>
+          </nav>
 
-        {/* Article Header */}
-        <article className="pb-20 bg-background">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="mb-8"
-              >
-                <Link to="/blog" className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors mb-6">
-                  <ArrowLeft className="h-4 w-4" />
-                  Wróć do bloga
-                </Link>
-
-                <span className="inline-block text-sm font-medium text-primary uppercase tracking-wider mb-4">
-                  Fotografia produktowa
-                </span>
-
-                <h1 className="text-3xl md:text-5xl font-heading font-bold mb-6">
-                  Fotografia produktowa — kompletny poradnik 2025
-                </h1>
-
-                <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground mb-8">
-                  <span className="flex items-center gap-2">
-                    <User className="w-4 h-4" />
-                    Zespół FOTZ
-                  </span>
-                  <span className="flex items-center gap-2">
-                    <Calendar className="w-4 h-4" />
-                    12 kwietnia 2026
-                  </span>
-                  <span className="flex items-center gap-2">
-                    <Clock className="w-4 h-4" />
-                    12 min czytania
-                  </span>
-                </div>
-
-                <div className="aspect-video rounded-2xl overflow-hidden mb-8">
-                  <img loading="lazy"
-                    src="/work/stadium-1200.webp"
-                    alt="Enea Stadion nocą, rozświetlony stadion i czerwone race na pierwszym planie"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </motion.div>
-
-              {/* Stats Grid */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.1 }}
-                className="grid md:grid-cols-4 gap-4 mb-12 p-8 rounded-2xl bg-gradient-to-br from-slate-950 via-amber-950 to-orange-900"
-              >
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-orange-400 mb-2">Od 400 zł</div>
-                  <div className="text-sm text-muted-foreground">Sesja packshot</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-orange-400 mb-2">2-4h</div>
-                  <div className="text-sm text-muted-foreground">Czas sesji</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-orange-400 mb-2">JPG+PNG+WebP</div>
-                  <div className="text-sm text-muted-foreground">Wszystkie formaty</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-orange-400 mb-2">Retusz</div>
-                  <div className="text-sm text-muted-foreground">Zawsze w cenie</div>
-                </div>
-              </motion.div>
-
-              {/* Article Content */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2 }}
-                className="prose prose-lg prose-invert max-w-none"
-              >
-                <p className="lead text-xl text-muted-foreground mb-8">
-                  Fotografia produktowa to nie tylko "zrobienie zdjęcia produktu". To sztuka pokazania wartości poprzez obraz — wzmacniania zainteresowania, budowania zaufania do kupującego, zwiększania konwersji e-commerce. W tym kompletnym poradniku poznasz wszystkie aspekty fotografii produktowej: od definiowania rodzajów sesji, przez ceny i przygotowanie produktów, po wybiór profesjonalnego fotografa i wpływ na sprzedaż online.
-                </p>
-
-                <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
-                  Czym jest fotografia produktowa?
-                </h2>
-
-                <p className="text-muted-foreground mb-6">
-                  <strong>Fotografia produktowa to specjalistyczna gałąź fotografii komercyjnej polegająca na fotografowaniu towarów w celu promocji i sprzedaży.</strong> Celem jest pokazanie produktu w najlepszym możliwym świetle — by wyglądał profesjonalnie, atrakcyjnie i wiarygodnie dla potencjalnych kupujących.
-                </p>
-
-                <p className="text-muted-foreground mb-6">
-                  Fotografia produktowa różni się od fotografii aktorskiej czy pejzażowej, ponieważ musi być przedmiotem głównym, zawsze wyraźna i spójna w całej serii produktów. Każde zdjęcie musi spełniać standardy platformy e-commerce (Amazon wymaga białego tła, Allegro akceptuje tła kolorowe) i być optymalizowane do konwersji.
-                </p>
-
-                <h3 className="text-xl font-heading font-bold mt-8 mb-4">
-                  Typy fotografii produktowej:
-                </h3>
-
-                <ul className="space-y-3 mb-6 text-muted-foreground">
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span><strong>Packshot:</strong> Produkt na białym, jednolitym tle — czysty, jasny, uniwersalny dla e-commerce. Najbardziej popularne zdjęcie w katalogach.</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span><strong>Lifestyle:</strong> Produkt w scenariuszu rzeczywistego użycia — w ręku, na biurku, w domu. Buduje emocje, pokazuje praktyczność.</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span><strong>360 stopni:</strong> Seria zdjęć produktu z 72 kątów tworzących interaktywny widok 3D na stronie. Zwiększa zaangażowanie, zmniejsza wątpliwości.</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span><strong>Detail/Makro:</strong> Zbliżenia na znaczące detale produktu — tekstura, wykończenie, logo. Pokazuje jakość i staranność.</span>
-                  </li>
-                </ul>
-
-                <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
-                  Fotografia produktowa cennik 2025
-                </h2>
-
-                <p className="text-muted-foreground mb-6">
-                  Cena fotografii produktowej zależy od typu sesji, liczby produktów, złożoności oświetlenia i stopnia retuszu. Oto przejrzysty cennik na 2026 rok:
-                </p>
-
-                <div className="overflow-x-auto mb-6">
-                  <table className="w-full text-sm text-muted-foreground border border-border/30 rounded-lg overflow-hidden">
-                    <thead className="bg-muted/50">
-                      <tr className="border-b border-border/30">
-                        <th className="px-4 py-3 text-left font-semibold">Typ sesji</th>
-                        <th className="px-4 py-3 text-left font-semibold">Cena</th>
-                        <th className="px-4 py-3 text-left font-semibold">Co zawiera</th>
-                        <th className="px-4 py-3 text-left font-semibold">Kiedy stosować</th>
-                      </tr>
-                    </thead>
-                    <tbody className="divide-y divide-border/30">
-                      {pricingTable.map((row, idx) => (
-                        <tr key={idx} className="hover:bg-muted/20 transition-colors">
-                          <td className="px-4 py-3 font-semibold text-foreground">{row.typ}</td>
-                          <td className="px-4 py-3 font-bold text-primary">{row.cena}</td>
-                          <td className="px-4 py-3">{row.zawiera}</td>
-                          <td className="px-4 py-3">{row.kiedy}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-
-                <p className="text-muted-foreground mb-6 p-4 bg-muted/30 rounded-lg border border-border/30">
-                  <strong>Uwaga:</strong> Ceny obejmują retusz zdjęć (korekta kolorów, usuwanie imperfekcji, cieniowanie). Dodatkowe usługi (zmiany w postrzeganiu produktu, montaż elementów, specjalne efekty) mogą być wyceniane odrębnie.
-                </p>
-
-                <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
-                  Jak przygotować produkty do sesji?
-                </h2>
-
-                <p className="text-muted-foreground mb-6">
-                  Prawidłowe przygotowanie produktów przed sesją zdjęciową to klucz do najlepszych rezultatów. Oto praktyczne wskazówki:
-                </p>
-
-                <ol className="space-y-4 mb-6 text-muted-foreground list-decimal list-inside">
-                  <li className="ml-2">
-                    <strong>Czyszczenie produktu:</strong> Wszystkie produkty powinny być idealnie czyste — bez pyłu, odcisków palców, powinny być. Dla opakowań papierowych — wyrównaj zniszczenia. Dla elektroniki — wytrzyj ekrany i powierzchnie.
-                  </li>
-                  <li className="ml-2">
-                    <strong>Opakowanie:</strong> Decyduj czy fotografować produkt w opakowaniu czy bez. Najczęściej robim obie wersje. Opakowanie musi być niewzruszone, bez uszkodzeń, nalepki prawidłowo wyrównane.
-                  </li>
-                  <li className="ml-2">
-                    <strong>Zapachy i wilgoć:</strong> Dla produktów kosmetycznych — otwórz opakowania kilka godzin przed sesją aby ubyła wilgoć. Dla kosmetyków kremowych — rozgrzej je by były bardziej plastyczne do ukształtowania.
-                  </li>
-                  <li className="ml-2">
-                    <strong>Druki i etykiety:</strong> Sprawdź czy druki i numery partii są widoczne i prawidłowe. Dla Amazonu i Allegro — upewnij się że kod kreskowy jest widoczny na zdjęciu (wymagane).
-                  </li>
-                  <li className="ml-2">
-                    <strong>Akcesoria i elementy:</strong> Jeśli produkt ma przewodniki, baterie, wkładki — przygotuj je w osobnych pojemnikach. Fotografujemy je razem by pokazać "co dostaniesz w pudełku".
-                  </li>
-                  <li className="ml-2">
-                    <strong>Próbki do testów:</strong> Jeśli to możliwe — przygotuj kilka sztuk tego samego produktu. Czasem w trakcie sesji inna sztuka okazuje się bardziej fotogenna (lepszy kolor, bezwad).
-                  </li>
-                  <li className="ml-2">
-                    <strong>Lista produktów:</strong> Przygotuj listę produktów do sfotografowania z wymiarami, wagą, specjalnymi instrukcjami. To ułatwi zorganizowanie sesji i zapewni że nic się nie zapomni.
-                  </li>
-                </ol>
-
-                <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
-                  Sprzęt vs studio — co wybrać?
-                </h2>
-
-                <p className="text-muted-foreground mb-6">
-                  Wiele firm zastanawia się: czy robić zdjęcia samemu w domu, czy wynająć profesjonalne studio? Oto porównanie:
-                </p>
-
-                <div className="overflow-x-auto mb-6">
-                  <table className="w-full text-sm text-muted-foreground border border-border/30 rounded-lg overflow-hidden">
-                    <thead className="bg-muted/50">
-                      <tr className="border-b border-border/30">
-                        <th className="px-4 py-3 text-left font-semibold">Aspekt</th>
-                        <th className="px-4 py-3 text-left font-semibold">DIY (dom)</th>
-                        <th className="px-4 py-3 text-left font-semibold">Studio profesjonalne</th>
-                      </tr>
-                    </thead>
-                    <tbody className="divide-y divide-border/30">
-                      <tr className="hover:bg-muted/20 transition-colors">
-                        <td className="px-4 py-3 font-semibold">Koszt sprzętu</td>
-                        <td className="px-4 py-3">500-2000 zł (lampy, tło)</td>
-                        <td className="px-4 py-3">Już opłacone w cenie sesji</td>
-                      </tr>
-                      <tr className="hover:bg-muted/20 transition-colors">
-                        <td className="px-4 py-3 font-semibold">Czas pracy</td>
-                        <td className="px-4 py-3">10-20h na 20 zdjęć (początkujący)</td>
-                        <td className="px-4 py-3">2-4h dla profesjonalisty</td>
-                      </tr>
-                      <tr className="hover:bg-muted/20 transition-colors">
-                        <td className="px-4 py-3 font-semibold">Jakość oświetlenia</td>
-                        <td className="px-4 py-3">Średnia, trudne odbicia</td>
-                        <td className="px-4 py-3">Profesjonalne, bez cieni</td>
-                      </tr>
-                      <tr className="hover:bg-muted/20 transition-colors">
-                        <td className="px-4 py-3 font-semibold">Tła dostępne</td>
-                        <td className="px-4 py-3">1-2 (papier A4 tło)</td>
-                        <td className="px-4 py-3">20+ (białe, szare, kolorowe)</td>
-                      </tr>
-                      <tr className="hover:bg-muted/20 transition-colors">
-                        <td className="px-4 py-3 font-semibold">Retusz</td>
-                        <td className="px-4 py-3">Musisz robić sam (Photoshop)</td>
-                        <td className="px-4 py-3">Profesjonalny retusz w cenie</td>
-                      </tr>
-                      <tr className="hover:bg-muted/20 transition-colors">
-                        <td className="px-4 py-3 font-semibold">Konsystencja</td>
-                        <td className="px-4 py-3">Trudne — zmienne warunki</td>
-                        <td className="px-4 py-3">Identyczne dla wszystkich produktów</td>
-                      </tr>
-                      <tr className="hover:bg-muted/20 transition-colors">
-                        <td className="px-4 py-3 font-semibold">Konwersja na stronie</td>
-                        <td className="px-4 py-3">Średnia (2-3% CTR)</td>
-                        <td className="px-4 py-3">Wysoka (5-8% CTR)</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-
-                <p className="text-muted-foreground mb-6 p-4 bg-muted/30 rounded-lg border border-border/30">
-                  <strong>Wnioski:</strong> Dla kilku produktów (1-10 sztuk) DIY może się opłacić. Dla kolekcji (10+ produktów) profesjonalne studio zwraca się poprzez wyższą konwersję. Profesjonalna fotografia wpływa na postrzeganie marki i zaufania kupujących.
-                </p>
-
-                <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
-                  Fotografia produktowa dla e-commerce
-                </h2>
-
-                <p className="text-muted-foreground mb-6">
-                  <strong>Jakość zdjęć produktów bezpośrednio wpływa na sprzedaż online.</strong> W e-commerce klient nie może wziąć produktu do ręki, nie może go wypróbować — może tylko przejrzeć zdjęcia. Dlatego fotografia staje się najważniejszym narzędziem marketingu.
-                </p>
-
-                <p className="text-muted-foreground mb-6">
-                  <strong>Wpływ fotografii na konwersję:</strong>
-                </p>
-
-                <ul className="space-y-3 mb-6 text-muted-foreground">
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span><strong>+40-70% wzrost sprzedaży:</strong> Produkty z profesjonalnymi zdjęciami sprzedają się zdecydowanie lepiej</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span><strong>-30% zwroty:</strong> Lepsze zdjęcia to mniejsza liczba zwrotów (klienci wiedzą co dostanią)</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span><strong>+15% wyższa średnia wartość zamówienia:</strong> Customers feel more confident in premium products with good photos</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span><strong>Lepszy ranking w wyszukiwarce:</strong> Amazon, Allegro faworyzują produkty z wieloma zdjęciami</span>
-                  </li>
-                </ul>
-
-                <h3 className="text-xl font-heading font-bold mt-8 mb-4">
-                  Wymagania platformy e-commerce:
-                </h3>
-
-                <ul className="space-y-3 mb-6 text-muted-foreground">
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span><strong>Amazon:</strong> Białe tło (RGB 255,255,255), główne zdjęcie kwadratowe (1:1), minimum 1000px, minimum 6 zdjęć</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span><strong>Allegro:</strong> Dowolne tło (rekomendacja: jasne), zdjęcia prostokątne, minimum 400px, minimum 4 zdjęcia (ideał 10+)</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span><strong>Shopify:</strong> Dowolny rozmiar, rekomendacja 1200x1200px, 360° widok wspierany</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-primary font-bold">•</span>
-                    <span><strong>Instagram:</strong> Kwadrat 1080x1080px, prostokąt 1080x1350px, seria zdjęć z różnymi kątami</span>
-                  </li>
-                </ul>
-
-                <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
-                  Jak wybrać fotografa produktowego?
-                </h2>
-
-                <p className="text-muted-foreground mb-6">
-                  Wybór profesjonalnego fotografa produktowego to inwestycja. Oto 5 kryteriów do oceny:
-                </p>
-
-                <ol className="space-y-4 mb-6 text-muted-foreground list-decimal list-inside">
-                  <li className="ml-2">
-                    <strong>Portfolio zgodne z Twoją branżą:</strong> Sprawdź czy fotograf ma doświadczenie z Twoim typem produktów. Zdjęcia biżuterii wymagają innego podejścia niż kosmetyki czy elektronika. Portfolio powinno pokazywać pełny range prac — różne produkty, tła, stylizacje.
-                  </li>
-                  <li className="ml-2">
-                    <strong>Doświadczenie z e-commerce:</strong> Pytaj czy fotograf zna wymagania Amazonu, Allegro, Shopify. Czy umie przygotować zdjęcia w odpowiednich rozmiarach? Czy wie co to white background compliance?
-                  </li>
-                  <li className="ml-2">
-                    <strong>Narzędzia i sprzęt:</strong> Profesjonalny fotograf powinien mieć aparat mirrorless/DSLR, profesjonalne oświetlenie LED (nie zwykłe żarówki), cykloramy, obracającą się platformę. Pytaj co ma w studio.
-                  </li>
-                  <li className="ml-2">
-                    <strong>Przetarg i przejrzysty cennik:</strong> Dobry fotograf powinien mieć jasny cennik, nie tworzy go "na pytanie". Sprawdź czy cena zawiera retusz, ile czasu trwa sesja, jakie dostaniesz formaty. Unikaj fotografów bez ceny — mogą mieć ukryte opłaty.
-                  </li>
-                  <li className="ml-2">
-                    <strong>Opinie i referencje:</strong> Poproś 2-3 referencje od poprzednich klientów. Pytaj o czas dostarczenia zdjęć, jakość retuszu, czy fotograf reaguje na uwagi. Google Reviews, Trustpilot to dobre źródła opinii.
-                  </li>
-                </ol>
-
-                {/* FAQ Section */}
-                <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
-                  Najczęściej zadawane pytania
-                </h2>
-
-                <div className="space-y-4 mb-12">
-                  <Accordion type="single" collapsible>
-                    {faqItems.map((item, idx) => (
-                      <AccordionItem key={idx} value={`item-${idx}`} className="border border-border/50 rounded-lg px-6 data-[state=open]:bg-muted/30 transition-colors">
-                        <AccordionTrigger className="py-4 hover:no-underline">
-                          <span className="text-left font-semibold">{item.question}</span>
-                        </AccordionTrigger>
-                        <AccordionContent className="pb-4 text-muted-foreground">
-                          {item.answer}
-                        </AccordionContent>
-                      </AccordionItem>
-                    ))}
-                  </Accordion>
-                </div>
-              </motion.div>
-
-              {/* CTA */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5 }}
-                className="mt-12 p-8 md:p-12 rounded-2xl bg-slate-900 border border-primary/20 text-center"
-              >
-                <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">
-                  Chcesz zwiększyć sprzedaż poprzez lepsze zdjęcia?
-                </h2>
-                <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                  Profesjonalna fotografia produktowa to inwestycja, która zwraca się wielokrotnie poprzez wzrost konwersji. Sprawdź nasze usługi fotografii produktowej i skontaktuj się z nami po wycenę.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button asChild size="lg" className="bg-gradient-to-r from-[#75143F] to-[#0F3053]">
-                    <Link to="/uslugi/fotografia-produktowa">Sprawdź usługę</Link>
-                  </Button>
-                  <Button asChild variant="outline" size="lg">
-                    <Link to="/kontakt">Bezpłatna wycena</Link>
-                  </Button>
-                </div>
-              </motion.div>
-
-              {/* Related Links */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.4 }}
-                className="mt-8 p-8 bg-muted/30 rounded-2xl"
-              >
-                <h3 className="text-xl font-heading font-bold mb-4">Powiązane artykuły i usługi</h3>
-                <div className="grid sm:grid-cols-3 gap-4">
-                  <Link to="/uslugi/fotografia-produktowa" className="p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all">
-                    <div className="flex items-center gap-2 mb-2">
-                      <Package className="h-5 w-5 text-primary" />
-                      <h4 className="font-semibold">Fotografia produktowa</h4>
-                    </div>
-                    <p className="text-sm text-muted-foreground">Profesjonalne zdjęcia dla e-commerce</p>
-                  </Link>
-                  <Link to="/blog" className="p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all">
-                    <div className="flex items-center gap-2 mb-2">
-                      <TrendingUp className="h-5 w-5 text-primary" />
-                      <h4 className="font-semibold">Blog FOTZ</h4>
-                    </div>
-                    <p className="text-sm text-muted-foreground">Artykuły o fotografii i e-commerce</p>
-                  </Link>
-                  <Link to="/kontakt" className="p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all">
-                    <div className="flex items-center gap-2 mb-2">
-                      <Zap className="h-5 w-5 text-primary" />
-                      <h4 className="font-semibold">Wycena sesji</h4>
-                    </div>
-                    <p className="text-sm text-muted-foreground">Indywidualna wycena dla Ciebie</p>
-                  </Link>
-                </div>
-              </motion.div>
+          <header className="max-w-4xl mx-auto">
+            <Link to="/blog" className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors mb-8">
+              <ArrowLeft className="h-4 w-4" aria-hidden="true" />
+              Wróć do bloga
+            </Link>
+            <p className="text-sm font-medium text-primary uppercase tracking-wider mb-4">Praktyczny poradnik · edycja 2026</p>
+            <h1 className="text-3xl md:text-5xl font-heading font-bold leading-tight mb-6">{pageTitle}</h1>
+            <p className="text-xl text-muted-foreground leading-relaxed mb-6">
+              Jak robić zdjęcia produktów, które są czytelne, spójne i zgodne z rzeczywistością? Ten przewodnik prowadzi od planu i przygotowania przez światło, sprzęt oraz ustawienia aparatu aż po obróbkę i publikację. Bez listy niezbędnych drogich zakupów i bez obiecywania wyników sprzedażowych.
+            </p>
+            <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-muted-foreground mb-10">
+              <span className="inline-flex items-center gap-2"><CalendarDays className="h-4 w-4" aria-hidden="true" />Opublikowano: 12 kwietnia 2026</span>
+              <span>Aktualizacja: 11 listopada 2026</span>
+              <span>Redakcja: Zespół FOTZ</span>
             </div>
-          </div>
-        </article>
+            <figure className="offer-visual mb-10">
+              <div className="aspect-[4/3] md:aspect-[16/9] rounded-2xl overflow-hidden bg-muted border border-border/50">
+                <img
+                  src={heroPhoto.src}
+                  srcSet={heroPhoto.srcSet}
+                  sizes={heroPhoto.sizes}
+                  width={heroPhoto.width}
+                  height={heroPhoto.height}
+                  alt={heroPhoto.alt}
+                  loading="eager"
+                  fetchPriority="high"
+                  decoding="async"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <figcaption className="mt-3 text-sm text-muted-foreground">Przykład prezentacji produktu z portfolio FOTZ. Dobór tła i kadru zależy od celu zdjęcia oraz miejsca publikacji.</figcaption>
+            </figure>
+          </header>
 
-        {/* Contact Section */}
-        <ContactSection />
-      </Layout>
-    </>
+          <div className="max-w-4xl mx-auto">
+            <nav aria-label="Spis treści" className="rounded-2xl border border-border/50 bg-muted/20 p-6 mb-12">
+              <h2 className="text-xl font-heading font-bold mb-4">W tym poradniku</h2>
+              <ol className="grid sm:grid-cols-2 gap-x-8 gap-y-3 text-muted-foreground list-decimal list-inside">
+                <li><a href="#czym-jest" className="hover:text-primary">Definicja i rodzaje zdjęć</a></li>
+                <li><a href="#zasady" className="hover:text-primary">10 zasad fotografii produktowej</a></li>
+                <li><a href="#plan-zdjec" className="hover:text-primary">Plan ujęć</a></li>
+                <li><a href="#przygotowanie" className="hover:text-primary">Produkt i miejsce pracy</a></li>
+                <li><a href="#sprzet" className="hover:text-primary">Sprzęt i oświetlenie</a></li>
+                <li><a href="#ustawienia" className="hover:text-primary">Sesja krok po kroku</a></li>
+                <li><a href="#obrobka" className="hover:text-primary">Obróbka i publikacja</a></li>
+                <li><a href="#faq" className="hover:text-primary">Najczęstsze pytania</a></li>
+              </ol>
+            </nav>
+
+            <section id="czym-jest" className={sectionClass}>
+              <h2 className={headingClass}>Czym jest fotografia produktowa? Packshot i zdjęcia reklamowe</h2>
+              <p className={paragraphClass}>
+                <strong>Fotografia produktowa to dziedzina fotografii komercyjnej, która przedstawia przedmioty, ich cechy i sposób użycia.</strong> Jej zadaniem jest dostarczenie rzetelnej informacji wizualnej w sklepie internetowym, katalogu, kampanii lub prezentacji. Obejmuje zarówno proste zdjęcia produktowe, jak i bardziej rozbudowane sesje produktowe.
+              </p>
+              <p className={paragraphClass}>
+                Najczęściej spotykane <strong>zdjęcie katalogowe</strong> pokazuje sam produkt na neutralnym tle. Zdjęcie na białym tle jest jednym z wariantów, a nie jedyną poprawną formą. <strong>Fotografia reklamowa</strong> i aranżacja lifestyle budują kontekst oraz wizerunek marki, natomiast detale dokumentują fakturę, wykończenie i najlepsze cechy konstrukcji. Seria obrotowa 360° składa się z wielu ujęć i wymaga odrębnego planu; nie jest automatycznie tym samym co interaktywny model 3D.
+              </p>
+              <p className={paragraphClass}>
+                Dobre materiały pomagają potencjalnym klientom porównać ofertę i podjąć świadome decyzje zakupowe. Nie zastępują jednak opisu, parametrów ani obsługi klienta. Przyciągają uwagę najlepiej wtedy, gdy odpowiadają na konkretne pytanie odbiorcy, a nie tylko na potrzebę efektownego kadru.
+              </p>
+            </section>
+
+            <section id="zasady" className={sectionClass}>
+              <h2 className={headingClass}>10 zasad dobrej fotografii produktowej</h2>
+              <p className={paragraphClass}>Poniższa checklista porządkuje jakość zdjęć niezależnie od tego, czy pracujesz telefonem w domu, czy aparatem w studio fotografii.</p>
+              <ol className="space-y-5">
+                {principles.map((item, index) => (
+                  <li key={item.title} className="flex gap-4">
+                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary/10 text-sm font-bold text-primary">{index + 1}</span>
+                    <div><h3 className="font-semibold mb-1">{item.title}</h3><p className="text-muted-foreground leading-relaxed">{item.text}</p></div>
+                  </li>
+                ))}
+              </ol>
+            </section>
+
+            <section id="plan-zdjec" className={sectionClass}>
+              <h2 className={headingClass}>Plan zdjęć produktów i realizacja sesji</h2>
+              <p className={paragraphClass}>
+                Przed ustawieniem lampy określ, gdzie trafią fotografie produktów. Własne sklepy, katalog do druku i serwisy takie jak Allegro czy Amazon mogą wymagać innych kadrów, plików i sposobu prezentacji. Nie przepisuj stałych wymiarów z jednego serwisu do drugiego — przed realizacją sesji sprawdź aktualną dokumentację każdego kanału.
+              </p>
+              <p className={paragraphClass}>
+                Dla każdego wariantu zapisz ujęcie główne, przód, tył, boki, detale i zawartość zestawu. Dodaj kontekst użycia tylko wtedy, gdy wyjaśnia funkcję. Jeśli plan obejmuje także pakiet „packshot i filmy produktowe”, rozdziel listę kadrów od materiału ruchomego. Dynamiczne filmy i pionowe Reels wymagają innego kadrowania oraz planu niż statyczne packshoty na białym tle.
+              </p>
+              <p className={paragraphClass}>
+                Przykład redakcyjny: jeśli chcesz sfotografować jeden z Twoich produktów, zacznij od jego funkcji i najważniejszego detalu. Zastanów się, która strona fotografowanego produktu najlepiej wyjaśnia ofertę i jakie pytanie może pozostać po obejrzeniu kadru głównego. Profesjonalne packshoty nie muszą być efektowne za wszelką cenę — mają pokazywać właściwy przedmiot, wariant i zestaw.
+              </p>
+              <p className={paragraphClass}>
+                Zdjęcie główne może zwrócić uwagę potencjalnych klientów, a kolejne kadry pomagają utrzymać uwagę klientów na detalach istotnych dla decyzji. Realizacja sesji powinna więc odpowiadać na wcześniej zapisane potrzeby, zamiast kończyć się przypadkowym zbiorem podobnych ujęć.
+              </p>
+              <div className="rounded-xl border border-border/50 bg-muted/20 p-5">
+                <h3 className="font-semibold mb-2">Minimalna karta zadania</h3>
+                <p className="text-muted-foreground leading-relaxed">Nazwa i wariant produktu, kanał publikacji, cel każdego kadru, wymagane proporcje, lista akcesoriów, sposób nazwania plików i osoba akceptująca. W dziedzinie fotografii produktowej i reklamowej taki kompleksowy zapis ogranicza pominięcia bez udawania, że każda realizacja wygląda tak samo.</p>
+              </div>
+            </section>
+
+            <section id="przygotowanie" className={sectionClass}>
+              <h2 className={headingClass}>Przygotowanie produktu: jak przygotować miejsce do zdjęć?</h2>
+              <p className={paragraphClass}>Staranne przygotowanie produktu ogranicza poprawki i ryzyko powtórzenia pracy. Proces wykonywania zdjęć zacznij od uporządkowania stanowiska: aby sprawnie przygotować miejsce, przejdź kolejno przez poniższe punkty.</p>
+              <ol className="space-y-5">
+                {preparationSteps.map((item) => (
+                  <li key={item.title} className="rounded-xl border border-border/40 p-5">
+                    <h3 className="font-semibold mb-2">{item.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed">{item.text}</p>
+                  </li>
+                ))}
+              </ol>
+            </section>
+
+            <section id="sprzet" className={sectionClass}>
+              <h2 className={headingClass}>Sprzęt do fotografii produktowej: co jest naprawdę potrzebne?</h2>
+              <p className={paragraphClass}>
+                Podstawowy sprzęt fotograficzny to urządzenie z kontrolą ostrości i ekspozycji, stabilne podparcie, jedno źródło światła, dyfuzor oraz czyste tło. Nie opisujemy tu wyposażenia FOTZ ani nie sugerujemy, że jeden zestaw pasuje do każdego zadania. Wybór zależy od produktu, skali pracy i wymaganych plików.
+              </p>
+              <div className="space-y-6">
+                {equipment.map((item) => (
+                  <div key={item.title}>
+                    <h3 className="text-xl font-heading font-semibold mb-2">{item.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed">{item.text}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            <section id="swiatlo-i-kompozycja" className={sectionClass}>
+              <h2 className={headingClass}>Światło, tło i kompozycja w praktyce</h2>
+              <h3 className="text-xl font-heading font-semibold mb-2">Jedno duże źródło jako punkt wyjścia</h3>
+              <p className={paragraphClass}>
+                Ustaw lampę lub okno z boku i nieco przed produktem, a następnie obserwuj cień oraz refleksy. Przesuwanie źródła zmienia sposób pokazania faktury. Przy przedmiotach błyszczących fotografujesz także odbicia otoczenia, dlatego duży dyfuzor i czarne zapory bywają skuteczniejsze niż dalsze rozjaśnianie kadru.
+              </p>
+              <h3 className="text-xl font-heading font-semibold mb-2">Tło dopasowane do kanału i produktu</h3>
+              <p className={paragraphClass}>
+                Białe, szare i kolorowe tła mają różne zastosowania. Neutralne tło ułatwia spójną serię, a aranżacyjna scena pomaga opowiedzieć o użyciu. Zadbaj o odstęp od produktu i unikaj wzorów, które zaburzają czytelność. Staranne oświetlenie tła nie powinno zmieniać jego rzeczywistej barwy na zdjęciu.
+              </p>
+              <h3 className="text-xl font-heading font-semibold mb-2">Kompozycja pod jeden przekaz</h3>
+              <p className={paragraphClass}>
+                W ujęciu katalogowym zacznij od wyśrodkowania i równych marginesów. W zdjęciu reklamowym wypróbuj trójpodział, przestrzeń na tekst albo linię prowadzącą wzrok. Zachowaj wolną przestrzeń do różnych proporcji, ale nie kadruj tak szeroko, by produkt stał się nieczytelny. Wysokiej jakości zdjęcia wynikają z kontroli całości, nie z samej liczby pikseli.
+              </p>
+            </section>
+
+            <section id="ustawienia" className={sectionClass}>
+              <h2 className={headingClass}>Jak sfotografować produkt? Aparat, statyw i ustawienia</h2>
+              <p className={paragraphClass}>
+                Nie istnieje jedno precyzyjne ustawienie dla każdego aparatu i produktu. Jako punkt próbny przy małym, nieruchomym przedmiocie można rozważyć średni zakres przysłony, np. f/8–f/11, niską czułość i czas dopasowany do statywu oraz światła. To nie jest uniwersalna recepta: zbyt mocno zamknięta przysłona może obniżyć ostrość przez dyfrakcję.
+              </p>
+              <ol className="space-y-5">
+                {shootingSteps.map((item) => (
+                  <li key={item.title} className="flex gap-4">
+                    <CheckCircle2 className="h-6 w-6 text-primary shrink-0 mt-1" aria-hidden="true" />
+                    <div><h3 className="font-semibold mb-1">{item.title}</h3><p className="text-muted-foreground leading-relaxed">{item.text}</p></div>
+                  </li>
+                ))}
+              </ol>
+            </section>
+
+            <section id="obrobka" className={sectionClass}>
+              <h2 className={headingClass}>Obróbka i retusz zdjęć produktowych</h2>
+              <p className={paragraphClass}>
+                Zacznij od wyboru najlepszych ujęć i jednolitego nazewnictwa. Następnie skoryguj balans bieli, ekspozycję, poziomy, geometryczne zniekształcenia i kadr. Dopiero później usuń kurz czy drobne ślady powstałe podczas pracy. Obróbki graficznej nie należy używać do zmiany koloru, wymiarów, zawartości zestawu ani właściwości produktu.
+              </p>
+              <p className={paragraphClass}>
+                Do podstawowej korekty może posłużyć także bezpłatny GIMP; ważniejszy od programu jest uporządkowany proces. Profesjonalny retusz obejmuje czasem czyszczenie tła, składanie ostrości lub zaawansowane techniki postprodukcji, lecz powinien zachować wiarygodność. Porównuj wynik z oryginałem i rzeczywistym przedmiotem; odwzorowanie kolorów oceń w neutralnych warunkach, a fakturę w powiększeniu.
+              </p>
+              <h3 className="text-xl font-heading font-semibold mb-2">Eksport bez jednego „uniwersalnego” pliku</h3>
+              <p className={paragraphClass}>
+                Przygotuj wersję archiwalną i pliki do konkretnych kanałów. JPEG lub WebP sprawdzają się w wielu publikacjach, a PNG może zachować przezroczystość, jeśli platforma go obsługuje. Zapisz wymagane proporcje i rozmiar, a przed wysłaniem sprawdź ostrość po kompresji. Nie każdy fotograf udostępnia pliki RAW — zakres należy ustalić przed rozpoczęciem sesji fotograficznej.
+              </p>
+            </section>
+
+            <section id="publikacja" className={sectionClass}>
+              <h2 className={headingClass}>Jak przygotować zdjęcia produktowe dla e-commerce?</h2>
+              <p className={paragraphClass}>
+                W sklepie internetowym zacznij od jasnej kolejności: najpierw produkt i wariant, potem widoki pomocnicze, detale, zawartość zestawu i kontekst. Uzupełnij opis o informacje niewidoczne w kadrze. Opis alternatywny powinien nazywać rzeczywiście widoczny produkt i istotny detal, bez powtarzania listy słów kluczowych.
+              </p>
+              <p className={paragraphClass}>
+                Przed publikacją otwórz stronę na telefonie i komputerze, sprawdź miniaturę listy, powiększenie oraz czas wczytania. Zdjęcia mogą wspierać ocenę produktu przez potencjalnych klientów, ale nie zakładaj, że same zdjęcia zwiększają szanse na sprzedaż niezależnie od reszty oferty. Wzrost sprzedaży ani lepsza pozycja w wyszukiwarce nie są automatycznym skutkiem publikacji. Wpływ zmiany mierz we własnych danych i uwzględnij inne elementy oferty.
+              </p>
+              <p className={paragraphClass}>
+                Jeśli rozwijasz wizerunek Twojej marki w świecie e-commerce, zachowaj spójność między katalogiem, materiałami do kampanii reklamowych i mediami społecznościowymi. Nie każdy kadr trzeba publikować wszędzie. Dobieraj wersje do kanału i zapisz, które pliki są źródłem dalszych eksportów.
+              </p>
+            </section>
+
+            <section id="bledy" className={sectionClass}>
+              <h2 className={headingClass}>Najczęstsze błędy i sposób ich poprawy</h2>
+              <div className="overflow-x-auto rounded-xl border border-border/50">
+                <table className="w-full text-sm text-muted-foreground">
+                  <thead className="bg-muted/40 text-foreground">
+                    <tr><th scope="col" className="px-4 py-3 text-left">Problem</th><th scope="col" className="px-4 py-3 text-left">Co sprawdzić i zmienić</th></tr>
+                  </thead>
+                  <tbody className="divide-y divide-border/40">
+                    {mistakes.map((item) => (
+                      <tr key={item.problem}><th scope="row" className="px-4 py-4 text-left font-semibold text-foreground align-top">{item.problem}</th><td className="px-4 py-4 leading-relaxed">{item.solution}</td></tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section id="samodzielnie-czy-fotograf" className={sectionClass}>
+              <h2 className={headingClass}>Samodzielna sesja czy profesjonalna fotografia produktowa?</h2>
+              <p className={paragraphClass}>
+                Własna próba jest sensowna, gdy możesz poświęcić czas na naukę, produkt nie stawia nietypowych trudności, a lista ujęć jest ograniczona. Zacznij od jednego przedmiotu i stwórz powtarzalny proces. Jeśli nie możesz opanować odbić, koloru lub spójności serii, dalsze dokupowanie sprzętu nie zawsze rozwiąże przyczynę.
+              </p>
+              <p className={paragraphClass}>
+                Profesjonalna fotografia produktowa jest warta rozważenia przy trudnych materiałach, rozbudowanej liście, aranżacji lub konieczności utrzymania wielu wariantów. Portfolio nie może być wyłącznie zbiorem profesjonalnie wyglądających zdjęć: sprawdź podobne produkty, sposób realizacji sesji, zakres poprawek, terminy, licencję i formaty plików. Koszt zależy m.in. od przygotowania, liczby ujęć, stylizacji, transportu i zaawansowanych technik, dlatego porównuj pełny zakres, a nie samą stawkę.
+              </p>
+              <p className={paragraphClass}>
+                Przed wyborem zapytaj również, kto odpowiada za listę zdjęć, przygotowanie produktów i akceptację próbną. Jasne ustalenia są użyteczniejsze niż deklaracja najwyższej jakości zdjęć bez kryteriów odbioru. Profesjonalne zdjęcia produktów nie są gwarancją przewagi na tle konkurencji — mają rzetelnie prezentować ofertę i wspierać jej komunikację.
+              </p>
+            </section>
+
+            <section id="faq" className={sectionClass} aria-labelledby="faq-heading">
+              <h2 id="faq-heading" className={headingClass}>Fotografia produktowa — najczęstsze pytania</h2>
+              <div className="space-y-4">
+                {faqItems.map((item) => (
+                  <details id={`product-photo-faq-${item.id}`} key={item.id} className="group rounded-xl border border-border/50 bg-muted/10 px-5 py-4 open:bg-muted/30">
+                    <summary className="cursor-pointer list-none font-semibold leading-relaxed marker:content-none">{item.question}</summary>
+                    <p className="text-muted-foreground leading-relaxed pt-4">{item.answer}</p>
+                  </details>
+                ))}
+              </div>
+            </section>
+
+            <aside className="mt-14 rounded-2xl border border-primary/20 bg-muted/20 p-7 md:p-9" aria-labelledby="nastepny-krok-heading">
+              <h2 id="nastepny-krok-heading" className="text-2xl font-heading font-bold mb-4">Od poradnika do własnej checklisty</h2>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Wybierz jeden produkt, zapisz listę potrzebnych ujęć i wykonaj kontrolowaną próbę. Jeśli potrzebujesz wsparcia przy większej serii, najpierw sprawdź zakres usługi i przykładowe realizacje — to odrębne strony od tego poradnika.
+              </p>
+              <div className="flex flex-col sm:flex-row flex-wrap gap-4">
+                <Link to="/uslugi/fotografia-produktowa" className="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-5 py-3 font-semibold text-primary-foreground hover:opacity-90 transition-opacity">
+                  Zobacz zakres usługi <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                </Link>
+                <Link to="/realizacje" className="inline-flex items-center justify-center gap-2 rounded-lg border border-border px-5 py-3 font-semibold hover:bg-muted transition-colors">Przejrzyj realizacje</Link>
+                <Link to="/kontakt" className="inline-flex items-center justify-center gap-2 rounded-lg border border-border px-5 py-3 font-semibold hover:bg-muted transition-colors">Zapytaj o zakres</Link>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </article>
+    </Layout>
   );
 }
