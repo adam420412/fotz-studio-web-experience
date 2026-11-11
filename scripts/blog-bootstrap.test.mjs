@@ -6,7 +6,7 @@ import { createRequire } from 'node:module';
 import ts from 'typescript';
 import { QueryClient, QueryObserver } from '@tanstack/react-query';
 import { blogBootstrap, serializeBlogBootstrap, readBlogBootstrap, formatBlogDate } from '../src/lib/blog-bootstrap.mjs';
-import { getBlogMetadata, prepareBlogHtml } from '../src/lib/blog-seo.mjs';
+import { getBlogArticleSchema, getBlogFaqSchema, getBlogHeadline, getBlogMetadata, prepareBlogHtml } from '../src/lib/blog-seo.mjs';
 import { getBlogImage } from '../src/lib/blog-images.mjs';
 
 const articles = JSON.parse(fs.readFileSync(new URL('../src/data/blog-content.json', import.meta.url))).articles;
@@ -94,7 +94,7 @@ test('article UI retains cached content on refresh failure and offers retry on a
     '@/lib/blog-bootstrap.mjs':{formatBlogDate},
     '@/lib/blog-images.mjs':{getBlogImage},
     '@/data/blog-images.json':{default:images},
-    '@/lib/blog-seo.mjs':{getBlogMetadata,prepareBlogHtml,normalizeSchemaUrls:v=>v},
+    '@/lib/blog-seo.mjs':{getBlogArticleSchema,getBlogFaqSchema,getBlogHeadline,getBlogMetadata,prepareBlogHtml},
   };
   const code=ts.transpileModule(fs.readFileSync(new URL('../src/pages/BlogArticleDynamic.tsx',import.meta.url),'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,jsx:ts.JsxEmit.ReactJSX}}).outputText;
   const context={exports:{},require:name=>mocks[name]??require(name)};
