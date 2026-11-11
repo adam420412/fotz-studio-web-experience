@@ -1,564 +1,437 @@
 import { Link } from "react-router-dom";
-import { SEOHead } from "@/components/seo/SEOHead";
+import { ArrowRight, Calendar, CheckCircle2, ChevronRight, ExternalLink, User } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
-import { Button } from "@/components/ui/button";
-import { ArrowLeft, Calendar, Clock, User, ChevronRight, Check } from "lucide-react";
-import { RelatedArticles } from "@/components/blog/RelatedArticles";
-import { RelatedServices, servicesByCategory } from "@/components/blog/RelatedServices";
-import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { SEOHead } from "@/components/seo/SEOHead";
+import { ArticleSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
+
+const seoTitle = "Audyt SEO strony krok po kroku: checklista 2026 | FOTZ";
+const seoDescription = "Audyt SEO krok po kroku: analiza i sposób, jak sprawdzić indeksację, technikę, treści, linki oraz widoczność swojej strony. Checklista 2026.";
+const canonicalUrl = "https://www.fotz-studio.pl/blog/audyt-seo-krok-po-kroku";
+const pageTitle = "Audyt SEO strony krok po kroku: praktyczna checklista 2026";
+
+const articleData = {
+  headline: pageTitle,
+  description: seoDescription,
+  url: canonicalUrl,
+  image: "https://www.fotz-studio.pl/og-image.jpg",
+  datePublished: "2026-04-12",
+  dateModified: "2026-11-11",
+  author: "Fotz Studio",
+};
+
+const breadcrumbs = [
+  { name: "Strona główna", url: "/" },
+  { name: "Blog", url: "/blog" },
+  { name: "Audyt SEO krok po kroku", url: canonicalUrl },
+];
+
+const auditSteps = [
+  {
+    id: "cel-i-zakres",
+    title: "Krok 1: Ustal cel, zakres i punkt odniesienia",
+    text: "Zapisz, czy audyt strony internetowej obejmuje cały serwis, sklep internetowy, blog czy wybrane szablony. Określ decyzję, której ma ułatwić: przygotowanie migracji, diagnozę spadku widoczności, uporządkowanie treści albo weryfikację wdrożenia. Zanotuj datę, wersję strony i dotychczasowe działania SEO. Punkt odniesienia powinien obejmować dostępne dane o indeksacji, wejściach organicznych i konwersjach, ale bez przypisywania stronie wyników, których nie potwierdzono.",
+    checks: [
+      "Wypisz adresy lub typy podstron objęte analizą i wyraźnie oznacz wykluczenia.",
+      "Ustal właściciela danych, osobę wdrażającą zmiany i sposób akceptacji rekomendacji.",
+      "Zachowaj początkowe eksporty oraz daty pomiarów, aby później porównać ten sam zakres.",
+    ],
+    result: "Rezultat: jednoznaczny zakres prac, cel i zestaw danych wyjściowych.",
+  },
+  {
+    id: "indeksacja",
+    title: "Krok 2: Sprawdź indeksację i crawlowanie",
+    text: "Rozpocznij techniczny audyt SEO od raportu indeksowania w Google Search Console i inspekcji reprezentatywnych adresów. Sprawdź, czy roboty Google mogą dotrzeć do ważnych zasobów oraz czy strony w wynikach wyszukiwania Google są zgodne z planem. Przejrzyj robots.txt, mapę XML, dyrektywy noindex, kanoniczne adresy URL, kody odpowiedzi i przekierowania. Sam fakt, że adres można otworzyć w przeglądarce, nie potwierdza jego indeksacji. Oddziel świadome wykluczenia od błędów i nie traktuj liczby zaindeksowanych adresów jako samodzielnego celu.",
+    checks: [
+      "Porównaj adresy z mapy witryny z kanonicznymi URL-ami i raportem zaindeksowanych stron.",
+      "Przejdź przykładowe ścieżki przekierowań i sprawdź odpowiedzi dla wariantów domeny oraz błędnych adresów.",
+      "Oceń, czy parametry, wewnętrzne wyszukiwanie i paginacja nie tworzą niekontrolowanych wariantów.",
+    ],
+    result: "Rezultat: lista adresów i reguł wymagających korekty wraz z dowodem z inspekcji lub crawlu.",
+  },
+  {
+    id: "widocznosc",
+    title: "Krok 3: Przejrzyj widoczność i rzeczywiste zapytania",
+    text: "W raporcie skuteczności Google Search Console wybierz dokładny adres albo zamierzoną grupę stron. Zapisz zakres dat i porównaj wyświetlenia, kliknięcia, CTR oraz zapytania. Średnia pozycja strony wymaga kontekstu: sprawdź urządzenie, kraj i rozkład fraz zamiast interpretować jedną liczbę jako pozycję strony w wynikach wyszukiwania dla całego serwisu. Nie przenoś zapytań z innych adresów. Brak wierszy dla dokładnego URL-a zapisz jako brak danych w wybranym okresie, a nie jako dowód braku potrzeb użytkowników.",
+    checks: [
+      "Oddziel zapytania do jednej podstrony od danych całej domeny i zachowaj stosowany filtr.",
+      "Porównuj zgodne okresy i zaznacz zmiany oferty, publikacji, migracji lub pomiaru.",
+      "Połącz dane o wejściach z jakością dalszych działań, jeśli masz prawidłowo skonfigurowaną analitykę.",
+    ],
+    result: "Rezultat: tabela URL–zapytanie–metryki z okresem i filtrem źródła.",
+  },
+  {
+    id: "frazy-i-intencja",
+    title: "Krok 4: Zbadaj słowa kluczowe, intencję i konkurencję",
+    text: "Na podstawie danych własnych, oferty i rozmów z odbiorcami przygotuj listę słów kluczowych. Sprawdź wyniki wyszukiwania i ustal, czy intencja jest informacyjna, porównawcza, lokalna czy transakcyjna. Analiza konkurencji powinna obejmować rodzaj odpowiedzi, zakres tematu i jakość prezentacji, a nie kopiowanie nagłówków. Przypisz temat do właściwego adresu: poradnik ma prowadzić przez proces, a strona usługowa przedstawiać ofertę. Takie mapowanie ogranicza wewnętrzną konkurencję i pomaga zaplanować treści, które rzeczywiście uzupełniają strategię SEO.",
+    checks: [
+      "Zbuduj mapę temat–intencja–docelowy URL i wskaż tematy bez właściwej odpowiedzi.",
+      "Sprawdź, czy kilka podstron nie odpowiada na tę samą potrzebę w podobny sposób.",
+      "Zapisz różnice względem wyników konkurencji jako hipotezy do weryfikacji, nie pewne przyczyny pozycji.",
+    ],
+    result: "Rezultat: mapa fraz i intencji oraz lista luk treściowych z przypisanymi adresami.",
+  },
+  {
+    id: "tresc-on-page",
+    title: "Krok 5: Oceń treści i optymalizację on-page",
+    text: "Audyt treści zaczyna się od pytania, czy strona rozwiązuje konkretny problem i czytelnie przedstawia następny krok. Następnie sprawdź unikalny title, opis meta, jedno główne H1, logiczne nagłówki, treść linków i teksty alternatywne obrazów. Liczba słów nie jest samodzielnym dowodem jakości. Usuwaj powtórzenia, niepotwierdzone obietnice i informacje nieaktualne, a trudne pojęcia objaśniaj przykładami. Przy opisach produktów i usług zweryfikuj parametry z właścicielem oferty. W przypadku podobnych adresów oceń także kanonikalizację i duplikację treści.",
+    checks: [
+      "Dla każdej ważnej strony zapisz główne pytanie odbiorcy i sprawdź, czy odpowiedź jest łatwa do znalezienia.",
+      "Zweryfikuj zgodność title i H1 z zawartością; nie upychaj wariantów frazy w każdym nagłówku.",
+      "Oznacz strony do rozbudowy, połączenia, przekierowania albo pozostawienia bez zmian.",
+    ],
+    result: "Rezultat: decyzja dla każdej istotnej treści i lista konkretnych poprawek redakcyjnych.",
+  },
+  {
+    id: "linkowanie",
+    title: "Krok 6: Sprawdź strukturę i linkowanie wewnętrzne",
+    text: "Struktura strony powinna pomagać użytkownikowi i robotom docierać do powiązanych materiałów. Przejrzyj nawigację, linki w treści, ścieżkę okruszków i liczbę kliknięć do ważnych stron. Wyszukaj strony osierocone, niedziałające odnośniki oraz ogólne anchory, które nie mówią o docelowej zawartości. Dodawaj linki tam, gdzie uzupełniają aktualny temat, a nie według sztywnego limitu na artykuł. W przypadku sklepu internetowego sprawdź również relacje między kategoriami, produktami i poradnikami, zwracając uwagę na warianty oraz filtrowanie.",
+    checks: [
+      "Wybierz kluczowe zadanie użytkownika i przejdź od wejścia organicznego do strony docelowej.",
+      "Sprawdź, czy nowe oraz ważne treści mają logiczne linki z już powiązanych publikacji.",
+      "Napraw adresy zwracające błędy i zastąp przekierowane linki właściwym docelowym URLe.",
+    ],
+    result: "Rezultat: mapa powiązań, lista brakujących linków i korekty błędnych adresów.",
+  },
+  {
+    id: "wydajnosc",
+    title: "Krok 7: Zmierz wydajność, Core Web Vitals i mobile",
+    text: "W PageSpeed Insights sprawdź reprezentatywne szablony na urządzeniach mobilnych i komputerach. Odczytaj dostępne dane z pola osobno od wyniku laboratoryjnego. W Core Web Vitals oceń LCP, INP i CLS, a szybkość ładowania strony połącz z konkretnymi zasobami oraz interakcjami. Nie zastępuj INP przestarzałym FID. Wynik punktowy nie jest diagnozą: wskaż obrazy, skrypty, czcionki lub przesunięcia układu, których dotyczy problem. Testy uzupełnij ręczną nawigacją na telefonie, bo responsywny wygląd nie gwarantuje wygodnej obsługi.",
+    checks: [
+      "Zapisz typ strony, tryb testu, datę i to, czy wynik pochodzi z danych użytkowników czy laboratorium.",
+      "Powtórz pomiar po zmianie przy zachowaniu możliwie podobnych warunków i porównaj ten sam szablon.",
+      "Sprawdź formularze, menu, rozmiar tekstu i pola interaktywne na rzeczywistym małym ekranie.",
+    ],
+    result: "Rezultat: problemy przypisane do szablonu i zasobu, bez wyciągania wniosków z samej oceny punktowej.",
+  },
+  {
+    id: "linki-i-lokalnie",
+    title: "Krok 8: Przeanalizuj linki zewnętrzne i lokalne SEO",
+    text: "Oceń dostępne dane o linkach prowadzących do ważnych adresów, ich tematyczny kontekst i to, czy użytkownik po kliknięciu trafia na działającą, zgodną treść. Nie klasyfikuj domen automatycznie jako „toksyczne” wyłącznie na podstawie wskaźnika narzędzia i nie traktuj samej liczby linków jako celu. Jeśli firma działa lokalnie, sprawdź spójność nazwy, adresu, telefonu, kategorii i obszaru działania w Profilu Firmy w Google oraz na stronie. Zakres lokalnego SEO dostosuj do rzeczywistego modelu obsługi klientów.",
+    checks: [
+      "Zidentyfikuj wartościowe linki prowadzące na nieaktualne adresy i zaplanuj właściwe przekierowania.",
+      "Porównaj dane firmy we własnej witrynie i w publicznych profilach bez tworzenia niespójnych kopii.",
+      "Oddziel obserwacje potwierdzone źródłem od ocen wymagających dodatkowej weryfikacji.",
+    ],
+    result: "Rezultat: lista działań dotyczących linków i spójności informacji lokalnych z podanym źródłem.",
+  },
+  {
+    id: "ux-i-konwersje",
+    title: "Krok 9: Zweryfikuj UX, dostępność i konwersje",
+    text: "Przejdź najważniejsze ścieżki jako użytkownik: przeczytaj ofertę, znajdź odpowiedź, użyj formularza i sprawdź komunikat po wysłaniu. Oceń czytelność, obsługę klawiaturą, komunikaty błędów i działanie na telefonie. Działania strony — reakcje interfejsu, przekierowania i zdarzenia — zapisuj osobno od prac zespołu. W Google Analytics 4 lub innym używanym narzędziu sprawdź, czy zdarzenia odpowiadają rzeczywistym działaniom i nie są zliczane dwukrotnie. Uwzględnij zgody oraz ograniczenia pomiaru. Ruch organiczny i konwersje warto analizować razem, ale nie przypisywać zmiany sprzedaży jednej poprawce bez kontroli pozostałych czynników.",
+    checks: [
+      "Wykonaj test formularza i potwierdź zarówno zdarzenie analityczne, jak i dostarczenie zgłoszenia.",
+      "Sprawdź, czy z treści można wygodnie przejść do powiązanej informacji lub oferty bez ślepych ścieżek.",
+      "Zapisz ograniczenia atrybucji i nie przedstawiaj modelowanego pomiaru jako pełnej rzeczywistości.",
+    ],
+    result: "Rezultat: lista przeszkód w zadaniach użytkownika i wyniki testów krytycznych zdarzeń.",
+  },
+  {
+    id: "plan-wdrozenia",
+    title: "Krok 10: Uporządkuj rekomendacje i zaplanuj wdrożenie",
+    text: "Wszystkie ustalenia zbierz w jednym rejestrze. Każdy problem opisz zachowaniem, zakresem URL-i, dowodem i oczekiwanym sposobem weryfikacji. Ustal priorytet na podstawie wpływu na użytkownika lub indeksację, kosztu wdrożenia, zależności i pewności diagnozy. Przypisz właściciela oraz status; nie obiecuj terminu ani efektu przed poznaniem ograniczeń technicznych. Po wdrożeniu sprawdź zmianę w kodzie i interfejsie, a następnie obserwuj dane dla tego samego zakresu. Audyt kończy się planem pracy, nie automatyczną poprawą widoczności.",
+    checks: [
+      "Najpierw usuń blokady krytyczne, potem zaplanuj poprawki szablonów i pojedynczych treści.",
+      "Oddziel szybką korektę od projektu wymagającego testów, migracji lub pracy kilku osób.",
+      "Po każdej zmianie zapisz datę, zakres, wynik kontroli i ewentualny kolejny krok.",
+    ],
+    result: "Rezultat: uporządkowany backlog z właścicielami, priorytetami i kryteriami zamknięcia zadania.",
+  },
+];
+
+const tools = [
+  {
+    name: "Google Search Console",
+    description: "Indeksacja, inspekcja URL, zapytania, strony docelowe i dostępne raporty techniczne dla zweryfikowanej usługi.",
+    url: "https://search.google.com/search-console/about",
+  },
+  {
+    name: "PageSpeed Insights",
+    description: "Dane o Core Web Vitals oraz laboratoryjna analiza wybranego adresu z rozróżnieniem źródła wyników.",
+    url: "https://pagespeed.web.dev/",
+  },
+  {
+    name: "Lighthouse",
+    description: "Powtarzalny test laboratoryjny wydajności, dostępności i wybranych elementów SEO w środowisku deweloperskim.",
+    url: "https://developer.chrome.com/docs/lighthouse/overview/",
+  },
+  {
+    name: "Screaming Frog SEO Spider",
+    description: "Crawl adresów, metadanych, nagłówków, przekierowań, kanonikalizacji i linków. Zakres zależy od aktualnej licencji.",
+    url: "https://www.screamingfrog.co.uk/seo-spider/",
+  },
+  {
+    name: "Google Analytics 4",
+    description: "Analiza wejść i zdarzeń po stronie witryny, jeżeli konfiguracja, zgody i jakość danych zostały zweryfikowane.",
+    url: "https://analytics.google.com/",
+  },
+  {
+    name: "Rich Results Test i Schema Markup Validator",
+    description: "Kontrola odczytu danych strukturalnych i ich zgodności ze składnią; test nie gwarantuje wyświetlenia wyniku rozszerzonego.",
+    url: "https://search.google.com/test/rich-results",
+  },
+];
 
 const faqItems = [
   {
-    question: "Jak zacząć audyt SEO strony internetowej?",
-    answer: "Rozpocznij od postawienia jasnego celu — czy chcesz poprawić ranking, zwiększyć ruch organiczny czy znaleźć błędy techniczne? Następnie zbierz informacje: listę stron do sprawdzenia, słowa kluczowe, dane z Google Search Console i Analytics. Przygotuj sobie narzędzia: Google Search Console, Google PageSpeed Insights, Screaming Frog, Google Analytics 4. Na koniec utwórz szablon raportu z kolumnami na problemy, priorytet i status."
+    id: "definicja",
+    question: "Co to jest audyt SEO i co powinien zawierać?",
+    answer: "Audyt SEO to uporządkowana ocena indeksacji, techniki, treści, linków, widoczności i ścieżek użytkownika. Dokument powinien wskazywać zakres, datę, źródło każdej istotnej obserwacji oraz rekomendację z priorytetem i kryterium sprawdzenia. Taki przegląd nie ogranicza się do automatycznego wyniku punktowego ani samej listy błędów.",
   },
   {
-    question: "Ile czasu zajmuje przeprowadzenie audytu SEO?",
-    answer: "Audyt podstawowy małej strony (poniżej 100 stron) zajmuje 2-4 godziny. Średniej strony (100-1000 stron) około 8-16 godzin. Dużego portalu (1000+ stron) może zająć tygodnie. Jeśli używasz zaawansowanego narzędzia wie SEMrush lub Ahrefs, proces znacznie przyspieszysz. Fotz Studio przeprowadza pełny audyt w 2-3 dni robocze."
+    id: "samodzielnie",
+    question: "Czy można samodzielnie wykonać audyt SEO?",
+    answer: "Dla małej firmy audyt SEO ma sens już przy ograniczonym zakresie. Podstawową kontrolę możesz wykonać samodzielnie przy użyciu Search Console, PageSpeed Insights, crawla i ręcznego przeglądu stron. Zacznij od reprezentatywnych adresów i zapisuj dowody. Przy migracji, złożonych regułach indeksacji lub niejasnej przyczynie zmian specjalista SEO może pomóc zweryfikować interpretację i ograniczyć ryzyko błędnego wdrożenia.",
   },
   {
-    question: "Co to jest techniczny audyt SEO?",
-    answer: "Techniczny audyt SEO to sprawdzenie struktury strony pod kątem wymogów wyszukiwarek: szybkość ładowania, mobilność, Core Web Vitals, sitemap XML, robots.txt, strukturalne błędy HTML, problemy z SSL/HTTPS, redirecty 301, canonical tagi, duplicate content, błędy 404 i indeksowaniem. To fundamenty, na których buduje się dobrą widoczność w Google."
+    id: "darmowy-skan",
+    question: "Czy automatyczny skan SEO online wystarczy?",
+    answer: "Taki automatyczny skan online może wskazać wybrane problemy pojedynczego adresu, ale zwykle nie zna celu firmy, historii zmian, danych własnych ani zależności między szablonami. Traktuj go jako punkt wyjścia do ręcznej kontroli. Nie porównuj automatycznej oceny z zakresem pracy obejmującym intencję, treści, dane i plan wdrożenia.",
   },
   {
-    question: "Jakie narzędzia darmowe do audytu SEO polecacie?",
-    answer: "Darmowe narzędzia to: Google Search Console (obowiązkowe), Google Analytics 4, Screaming Frog (do 500 stron za darmo), Google PageSpeed Insights, GTmetrix, Lighthouse. Wszystkie są wystarczające do podstawowego audytu. Jeśli potrzebujesz analiza backlinków czy konkurencji, spróbuj: Ubersuggest (limitowany plan darmowy), Semrush (7-dniowy trial), Ahrefs (trial 7 dni)."
+    id: "czas",
+    question: "Jak długo trwa audyt SEO?",
+    answer: "Czas audytu SEO zależy od liczby adresów i szablonów, dostępu do danych, złożoności technicznej oraz wymaganego poziomu szczegółowości. Krótki przegląd jednej podstrony to inne zadanie niż analiza całego serwisu z konkurującymi treściami i testami wdrożenia. Zamiast sztywnego terminu ustal zakres, rezultat dokumentu i warunki dostępu.",
   },
   {
-    question: "Czy mogę przeprowadzić audyt SEO sam bez agencji?",
-    answer: "Tak, możesz! Jeśli masz stronę do 100 stron i podstawową wiedzę o SEO, darmowe narzędzia wystarczą. Jeśli jednak chcesz pełną analizę z raportami, rekomendacjami priorytetu i strategią naprawczą, lepiej zlecić profesjonalistom. Agencja SEO oszczędzi Ci czasu i da gwarancję, że nic nie przegapisz."
+    id: "koszt",
+    question: "Jaka jest cena audytu SEO i od czego zależy?",
+    answer: "Nie ma jednej stałej ceny profesjonalnego audytu SEO. Koszt zależy m.in. od skali i złożoności serwisu, liczby szablonów, analizowanych rynków, dostępnych danych oraz tego, czy rezultatem jest lista kontrolna, warsztat czy plan z weryfikacją wdrożenia. Przy porównywaniu ofert sprawdzaj rezultat prac i odpowiedzialność, nie tylko nazwę pakietu.",
   },
   {
-    question: "Co zrobić po przeprowadzeniu audytu SEO?",
-    answer: "Zrób listę wszystkich znalezionych problemów i podziel je na kategorie: błędy techniczne (naprawiaj najpierw), SEO on-page, backlinki, treści. Ustal priorytety na podstawie wpływu na ranking i czasu wdrożenia — zacznij od wysokiego wpływu + mały czas. Stwórz plan działań z harmonogramem, przydziel odpowiedzialne osoby, monitoruj postępy i powtórz audyt za 2-3 miesiące."
+    id: "pozycje",
+    question: "Czy audyt SEO poprawi pozycje i widoczność strony?",
+    answer: "Sam audyt niczego nie wdraża, dlatego nie gwarantuje pozycji, ruchu ani sprzedaży. Nie ma zasady, że widoczność w wyszukiwarce wzrośnie po samym raporcie. Audyt może wskazać problemy i pomóc zaplanować poprawę własnego serwisu, a wpływ zmian trzeba później ocenić na danych dla porównywalnego zakresu. Na widoczność wpływają również konkurencja, intencja, jakość strony i sposób oraz skuteczność wykonanych wdrożeń.",
   },
   {
-    question: "Czy audyt SEO trzeba robić co miesiąc?",
-    answer: "Pełny audyt wystarczy raz na 2-3 miesiące. Jednak monitoring powinien być ciągły! Codziennie sprawdzaj Google Search Console (nowe błędy, zmiana clickthrough rate), tygodniowo Analytics (ruch, konwersje), a raz w miesiącu Core Web Vitals. Agencje SEO zazwyczaj robią pełny audyt co kwartał i monitoring cotygodniowo."
+    id: "czestotliwosc",
+    question: "Jak często powtarzać audyt strony?",
+    answer: "Nie ma jednego obowiązkowego harmonogramu. Kontrolę warto zaplanować przed większą migracją i po niej, przy istotnej zmianie szablonów lub niejasnej zmianie danych. Podstawowe wskaźniki i błędy można monitorować cyklicznie, a pełniejszy przegląd dopasować do tempa publikacji, rozwoju serwisu i wcześniej wykrytych ryzyk.",
   },
   {
-    question: "Ile kosztuje profesjonalny audyt SEO od agencji?",
-    answer: "Audyt SEO od agencji kosztuje zazwyczaj: audyt podstawowy 500-1500 PLN, standardowy 1500-3500 PLN, zaawansowany z rekomendacjami 3500-7500 PLN. Cena zależy od rozmiaru strony, detalizacji raportu, zakresu konkurencji i czasu realizacji. Fotz Studio oferuje audyt SEO z bezpłatną konsultacją — skontaktuj się, aby poznać szczegółowy cennik."
-  }
+    id: "zlecenie",
+    question: "Kiedy warto zlecić audyt SEO zamiast robić go samemu?",
+    answer: "Warto rozważyć wsparcie przy migracji, dużej liczbie adresów, skomplikowanych parametrach, konflikcie kanonikalizacji lub braku zasobów do interpretacji i wdrożenia. Możesz zlecić analizę strony internetowej bez zobowiązywania się do wdrożenia. Dobrze opisany zakres usług specjalistów SEO powinien rozdzielać diagnozę od wykonania poprawek. Przed decyzją sprawdź przykładową strukturę dokumentu i sposób uzasadniania rekomendacji.",
+  },
 ];
-
-const auditAreas = [
-  {
-    step: "1",
-    area: "Analiza słów kluczowych",
-    description: "Zdefiniuj docelowe słowa kluczowe, sprawdź ich wyszukiwalność (volume) i konkurencyjność. Przeanalizuj słowa kluczowe konkurentów.",
-    tools: "Google Keyword Planner, Ubersuggest, SEMrush",
-    priority: "Krytyczn"
-  },
-  {
-    step: "2",
-    area: "Szybkość ładowania strony",
-    description: "Sprawdź Page Speed Insights, Core Web Vitals (LCP, FID, CLS), czas TTFB. Optymalizuj obrazy, minimalizuj CSS/JS, włącz cache.",
-    tools: "Google PageSpeed Insights, GTmetrix, WebPageTest",
-    priority: "Krytical"
-  },
-  {
-    step: "3",
-    area: "Mobilność i responsywność",
-    description: "Testuj wyświetlanie na urządzeniach mobilnych, sprawdzaj viewport meta tag, rozmiary fontów, clickable areas. Użyj Mobile-Friendly Test.",
-    tools: "Google Mobile-Friendly Test, DevTools, Responsively App",
-    priority: "Krytical"
-  },
-  {
-    step: "4",
-    area: "Indeksowanie i crawlowanie",
-    description: "Sprawdzaj robots.txt, sitemap.xml, canonical tagi, meta robots. Monitoruj błędy crawlowania w Google Search Console.",
-    tools: "Google Search Console, Screaming Frog, robots.txt tester",
-    priority: "Krytical"
-  },
-  {
-    step: "5",
-    area: "On-page SEO (meta tagi i H1)",
-    description: "Sprawdź title, meta description, H1 na każdej stronie — powinny zawierać słowa kluczowe, być unikalne i odpowiednich długości.",
-    tools: "Yoast SEO, Screaming Frog, Page Analyzer",
-    priority: "Wysoki"
-  },
-  {
-    step: "6",
-    area: "Jakość i unikalna treść",
-    description: "Sprawdzaj duplicate content, zbyt krótkie artykuły (pod 300 słów), słabe CMS. Analizuj głębię i wartość treści vs konkurencja.",
-    tools: "Copyscape, SEMrush, Screaming Frog (duplicates)",
-    priority: "Wysoki"
-  },
-  {
-    step: "7",
-    area: "Linki wewnętrzne (internal links)",
-    description: "Mapuj strukturę linking, sprawdzaj broken links, optymalizuj anchor text. Ważne strony powinny mieć więcej linków wewnętrznych.",
-    tools: "Screaming Frog, Ahrefs, SEMrush Site Audit",
-    priority: "Wysoki"
-  },
-  {
-    step: "8",
-    area: "Profil backlinków",
-    description: "Przeanalizuj quality (Domain Rating, spam score) i quantity linków zewnętrznych. Szukaj toksycznych backlinków, konkurencji i link building opportunities.",
-    tools: "Ahrefs, SEMrush, Moz, Majestic",
-    priority: "Wysoki"
-  },
-  {
-    step: "9",
-    area: "Local SEO (jeśli relevantne)",
-    description: "Sprawdź Google Business Profile, cytacje w katalogach, opinie, lokalne słowa kluczowe. Zoptymalizuj schema markup dla business.",
-    tools: "Google Business Profile, Local SEO Checker, Schema Validator",
-    priority: "Średni"
-  },
-  {
-    step: "10",
-    area: "UX i wskaźniki biznesowe",
-    description: "Analizuj bounce rate, średni czas na stronie, conversion rate, heatmapy. Testuj CTA buttons, formularze, user journey.",
-    tools: "Google Analytics 4, Hotjar, Microsoft Clarity",
-    priority: "Średni"
-  }
-];
-
-const toolsData = {
-  free: [
-    { name: "Google Search Console", category: "Podstawowe" },
-    { name: "Google Analytics 4", category: "Podstawowe" },
-    { name: "Google PageSpeed Insights", category: "Wydajność" },
-    { name: "Screaming Frog (limit 500 URL)", category: "Crawling" },
-    { name: "GTmetrix", category: "Wydajność" },
-    { name: "Lighthouse", category: "Wydajność" },
-    { name: "Mobile-Friendly Test", category: "Mobilność" },
-    { name: "Schema Validator", category: "Techniczne" },
-    { name: "Ubersuggest (plan limitowany)", category: "Słowa kluczowe" }
-  ],
-  paid: [
-    { name: "SEMrush", category: "Kompleksowy audit" },
-    { name: "Ahrefs", category: "Backlinki i konkurencja" },
-    { name: "Moz Pro", category: "SEO monitoring" },
-    { name: "Screaming Frog (paid license)", category: "Zaawansowany crawling" },
-    { name: "Surfer SEO", category: "Content optimization" },
-    { name: "Hotjar", category: "UX heatmaps" },
-    { name: "Microsoft Clarity", category: "UX analytics" }
-  ]
-};
 
 export default function BlogAudytSEOKrok() {
   return (
-    <>
+    <Layout workPlacement="after-main">
       <SEOHead
-        title="Jak Przeprowadzić Audyt SEO - Krok po Kroku | Fotz Studio"
-        description="Kompletny przewodnik jak przeprowadzić audyt SEO: 10 kroków, narzędzia darmowe i płatne, praktyczne porady. Audyt strony krok po kroku."
+        title={seoTitle}
+        description={seoDescription}
+        canonical={canonicalUrl}
         ogType="article"
-        canonical="https://www.fotz-studio.pl/blog/audyt-seo-krok-po-kroku"
-        keywords="jak przeprowadzić audyt SEO, audyt SEO krok po kroku, audyt strony, narzędzia audytu SEO, techniczny audyt"
-        schemaJson={[
-          {
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "Jak Przeprowadzić Audyt SEO - Kompletny Przewodnik Krok po Kroku (2026)",
-            "description": "Praktyczny przewodnik: jak wykonać audyt SEO strony internetowej. 10 kroków, narzędzia, checklist i plan działań.",
-            "image": "/work/fotz-work-1200.webp",
-            "author": {
-              "@type": "Organization",
-              "name": "FOTZ"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "FOTZ",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://www.fotz-studio.pl/logo-fotz.jpg"
-              }
-            },
-            "datePublished": "2026-04-12",
-            "dateModified": "2026-04-12"
-          },
-          {
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://www.fotz-studio.pl" },
-              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.fotz-studio.pl/blog" },
-              { "@type": "ListItem", "position": 3, "name": "Audyt SEO krok po kroku" }
-            ]
-          },
-          {
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": faqItems.map(item => ({
-              "@type": "Question",
-              "name": item.question,
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": item.answer
-              }
-            }))
-          }
-        ]}
       />
-
+      <ArticleSchema data={articleData} />
+      <BreadcrumbSchema items={breadcrumbs} />
       <FAQSchema items={faqItems} />
-      <ArticleSchema
-        headline="Jak Przeprowadzić Audyt SEO - Kompletny Przewodnik Krok po Kroku (2026)"
-        description="Praktyczny przewodnik: jak wykonać audyt SEO strony internetowej. 10 kroków, narzędzia, checklist i plan działań."
-        image="/work/fotz-work-1200.webp"
-        datePublished="2026-04-12"
-        dateModified="2026-04-12"
-      />
-      <BreadcrumbSchema items={[
-        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
-        { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
-        { name: "Audyt SEO krok po kroku", url: "https://www.fotz-studio.pl/blog/audyt-seo-krok-po-kroku" }
-      ]}/>
 
-      <Layout>
-        {/* Breadcrumb */}
-        <section className="pt-32 pb-4 bg-gray-900">
-          <div className="container mx-auto px-4">
-            <nav className="flex items-center gap-2 text-sm text-gray-400">
-              <Link to="/" className="hover:text-yellow-400 transition-colors">Strona główna</Link>
-              <ChevronRight className="h-4 w-4" />
-              <Link to="/blog" className="hover:text-yellow-400 transition-colors">Blog</Link>
-              <ChevronRight className="h-4 w-4" />
-              <span className="text-gray-200">Audyt SEO krok po kroku</span>
+      <article id="article-content" className="bg-white text-slate-800">
+        <header className="bg-slate-950 text-white">
+          <div className="mx-auto max-w-4xl px-4 pb-14 pt-28 md:px-6 md:pb-16 md:pt-32">
+            <nav aria-label="Okruszki" className="mb-8 flex flex-wrap items-center gap-2 text-sm text-slate-400">
+              <Link to="/" className="hover:text-yellow-400">Strona główna</Link>
+              <ChevronRight className="h-4 w-4" aria-hidden="true" />
+              <Link to="/blog" className="hover:text-yellow-400">Blog</Link>
+              <ChevronRight className="h-4 w-4" aria-hidden="true" />
+              <span className="text-slate-200">Audyt SEO</span>
             </nav>
-          </div>
-        </section>
-
-        {/* Article Header */}
-        <article className="pb-20 bg-gray-900">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <div className="mb-8">
-                <Link to="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-yellow-400 transition-colors mb-6">
-                  <ArrowLeft className="h-4 w-4" />
-                  Wróć do bloga
-                </Link>
-
-                <span className="inline-block text-sm font-medium text-yellow-400 uppercase tracking-wider mb-4">
-                  SEO i Marketing
-                </span>
-
-                <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-                  Jak Przeprowadzić Audyt SEO - Kompletny Przewodnik Krok po Kroku
-                </h1>
-
-                <div className="flex flex-wrap items-center gap-6 text-sm text-gray-400 mb-8">
-                  <span className="flex items-center gap-2">
-                    <User className="w-4 h-4" />
-                    Zespół FOTZ
-                  </span>
-                  <span className="flex items-center gap-2">
-                    <Calendar className="w-4 h-4" />
-                    12 kwietnia 2026
-                  </span>
-                  <span className="flex items-center gap-2">
-                    <Clock className="w-4 h-4" />
-                    18 min czytania
-                  </span>
-                </div>
-
-                <div className="aspect-video rounded-2xl overflow-hidden mb-8">
-                  <img loading="lazy"
-                    src="/work/fotz-work-1200.webp"
-                    alt="Praca przy komputerze — zdjęcie z sesji FOTZ"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-
-              {/* Intro Section */}
-              <section className="prose prose-invert max-w-none mb-12 text-gray-300">
-                <p className="text-lg leading-relaxed">
-                  Audyt SEO to systematyczne przeanalizowanie strony internetowej pod kątem optymalizacji dla wyszukiwarek. Jeśli chcesz wiedzieć, jak przeprowadzić audyt SEO krok po kroku, jesteś we właściwym miejscu. W tym przewodniku pokażemy Ci dokładnie, co sprawdzić, jakimi narzędziami się posłużyć i jak zaplanować strategię naprawczą.
-                </p>
-                <p className="text-lg leading-relaxed">
-                  Audyt SEO to nie jednorazowa czynność. To proces, który powinieneś powtarzać co 2-3 miesiące, aby być pewnym, że Twoja witryna pozostaje konkurencyjna i dobrze zoptymalizowana dla Google. Poniżej znajdziesz pełny checklist wszystkich obszarów, które trzeba przeanalizować.
-                </p>
-              </section>
-
-              {/* 10 Areas Table */}
-              <section className="mb-14">
-                <h2 className="text-3xl font-bold mb-8 text-white">10 Kroków do Pełnego Audytu SEO</h2>
-                <div className="overflow-x-auto">
-                  <table className="w-full border-collapse">
-                    <thead>
-                      <tr className="border-b-2 border-yellow-400">
-                        <th className="text-left py-4 px-4 text-yellow-400 font-bold">Krok</th>
-                        <th className="text-left py-4 px-4 text-yellow-400 font-bold">Obszar Audytu</th>
-                        <th className="text-left py-4 px-4 text-yellow-400 font-bold">Co Sprawdzamy</th>
-                        <th className="text-left py-4 px-4 text-yellow-400 font-bold">Narzędzia</th>
-                        <th className="text-left py-4 px-4 text-yellow-400 font-bold">Priorytet</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {auditAreas.map((row, idx) => (
-                        <tr key={idx} className="border-b border-gray-700 hover:bg-gray-800 transition-colors">
-                          <td className="py-4 px-4 text-yellow-400 font-bold">{row.step}</td>
-                          <td className="py-4 px-4 text-white font-semibold">{row.area}</td>
-                          <td className="py-4 px-4 text-gray-300">{row.description}</td>
-                          <td className="py-4 px-4 text-gray-400 text-sm">{row.tools}</td>
-                          <td className="py-4 px-4">
-                            <span className={`inline-block px-3 py-1 rounded-full text-sm font-medium ${
-                              row.priority === "Krytical"
-                                ? "bg-red-900 text-red-200"
-                                : row.priority === "Wysoki"
-                                ? "bg-orange-900 text-orange-200"
-                                : "bg-blue-900 text-blue-200"
-                            }`}>
-                              {row.priority}
-                            </span>
-                          </td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-              </section>
-
-              {/* Tools Section */}
-              <section className="mb-14 bg-gray-800 rounded-xl p-8 border border-yellow-400 border-opacity-20">
-                <h2 className="text-3xl font-bold mb-8 text-white">Narzędzia do Audytu SEO</h2>
-
-                <div className="grid md:grid-cols-2 gap-8">
-                  {/* Free Tools */}
-                  <div>
-                    <h3 className="text-xl font-bold mb-6 text-yellow-400">Narzędzia Darmowe</h3>
-                    <ul className="space-y-3">
-                      {toolsData.free.map((tool, idx) => (
-                        <li key={idx} className="flex items-start gap-3 text-gray-300">
-                          <Check className="h-5 w-5 text-yellow-400 flex-shrink-0 mt-0.5" />
-                          <div>
-                            <span className="font-semibold text-white">{tool.name}</span>
-                            <p className="text-sm text-gray-400">{tool.category}</p>
-                          </div>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  {/* Paid Tools */}
-                  <div>
-                    <h3 className="text-xl font-bold mb-6 text-yellow-400">Narzędzia Premium</h3>
-                    <ul className="space-y-3">
-                      {toolsData.paid.map((tool, idx) => (
-                        <li key={idx} className="flex items-start gap-3 text-gray-300">
-                          <Check className="h-5 w-5 text-yellow-400 flex-shrink-0 mt-0.5" />
-                          <div>
-                            <span className="font-semibold text-white">{tool.name}</span>
-                            <p className="text-sm text-gray-400">{tool.category}</p>
-                          </div>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              </section>
-
-              {/* Prioritization Section */}
-              <section className="mb-14">
-                <h2 className="text-3xl font-bold mb-8 text-white">Co Zrobić z Wynikami Audytu? - Macierz Priorytetu</h2>
-                <p className="text-gray-300 mb-8 leading-relaxed">
-                  Po wykonaniu audytu masz listę problemów. Nie wszystkie są jednakowo ważne. Użyj macierzy priorytetu, aby zdecydować, co naprawiać w pierwszej kolejności.
-                </p>
-
-                <div className="bg-gray-800 rounded-xl p-8 border border-gray-700">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div className="bg-red-900 bg-opacity-30 border-l-4 border-red-500 p-6 rounded">
-                      <h4 className="text-red-400 font-bold text-lg mb-2">Wysoki Wpływ + Mały Czas</h4>
-                      <p className="text-gray-300 text-sm">Rób to NAJPIERW! Przykład: naprawy błędów technicznych, meta tagi na homepage.</p>
-                    </div>
-                    <div className="bg-yellow-900 bg-opacity-30 border-l-4 border-yellow-500 p-6 rounded">
-                      <h4 className="text-yellow-400 font-bold text-lg mb-2">Wysoki Wpływ + Duży Czas</h4>
-                      <p className="text-gray-300 text-sm">Zaplanuj na później. Przykład: refaktor dużej liczby stron, kompletna restrukturyzacja.</p>
-                    </div>
-                    <div className="bg-blue-900 bg-opacity-30 border-l-4 border-blue-500 p-6 rounded">
-                      <h4 className="text-blue-400 font-bold text-lg mb-2">Niski Wpływ + Mały Czas</h4>
-                      <p className="text-gray-300 text-sm">Rób w tle. Przykład: drobne poprawki UX, drobne błędy ALT tekstu.</p>
-                    </div>
-                    <div className="bg-gray-700 bg-opacity-50 border-l-4 border-gray-600 p-6 rounded">
-                      <h4 className="text-gray-300 font-bold text-lg mb-2">Niski Wpływ + Duży Czas</h4>
-                      <p className="text-gray-300 text-sm">Pomiń! Nie warte czasu. Przykład: eksperymenty na marginesie biznesu.</p>
-                    </div>
-                  </div>
-                </div>
-              </section>
-
-              {/* Step by Step Section */}
-              <section className="mb-14">
-                <h2 className="text-3xl font-bold mb-8 text-white">Jak Przeprowadzić Audyt - Praktyczne Kroki</h2>
-
-                <div className="space-y-6">
-                  <div className="bg-gray-800 rounded-lg p-6 border border-gray-700 hover:border-yellow-400 transition-colors">
-                    <div className="flex gap-4">
-                      <div className="flex-shrink-0">
-                        <div className="flex items-center justify-center h-10 w-10 rounded-lg bg-yellow-400 text-gray-900 font-bold">1</div>
-                      </div>
-                      <div>
-                        <h3 className="text-xl font-bold text-white mb-2">Krok Przygotowczy: Zbierz Dane Baseline</h3>
-                        <p className="text-gray-300 leading-relaxed">
-                          Zdobądź dostęp do Google Search Console (pokaże błędy crawlowania, problemy z indeksowaniem), Google Analytics 4 (ruch, konwersje, behavior flow), narzędzia SEO (SEMrush, Ahrefs czy nawet darmowy Ubersuggest). Wypisz wszystkie strony, które chcesz sprawdzić. Zanotuj obecne pozycje dla głównych słów kluczowych.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="bg-gray-800 rounded-lg p-6 border border-gray-700 hover:border-yellow-400 transition-colors">
-                    <div className="flex gap-4">
-                      <div className="flex-shrink-0">
-                        <div className="flex items-center justify-center h-10 w-10 rounded-lg bg-yellow-400 text-gray-900 font-bold">2</div>
-                      </div>
-                      <div>
-                        <h3 className="text-xl font-bold text-white mb-2">Sprawdź Techniczne Podstawy</h3>
-                        <p className="text-gray-300 leading-relaxed">
-                          W Google Search Console kliknij "Coverage" i sprawdź, czy są błędy (excluded, error pages). Przejrzyj "Enhancement" sekcję pod kątem błędów. Sprawdź robots.txt i sitemap.xml. Użyj Screaming Frog, aby crawować stronę i znaleźć problemy: missing H1 tags, duplicate meta descriptions, broken links, redirect loops.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="bg-gray-800 rounded-lg p-6 border border-gray-700 hover:border-yellow-400 transition-colors">
-                    <div className="flex gap-4">
-                      <div className="flex-shrink-0">
-                        <div className="flex items-center justify-center h-10 w-10 rounded-lg bg-yellow-400 text-gray-900 font-bold">3</div>
-                      </div>
-                      <div>
-                        <h3 className="text-xl font-bold text-white mb-2">Analiza Wydajności (Core Web Vitals)</h3>
-                        <p className="text-gray-300 leading-relaxed">
-                          Przejdź do Google PageSpeed Insights i wklej URL. Zwróć uwagę na: LCP (Largest Contentful Paint - pod 2.5s to dobrze), FID (First Input Delay), CLS (Cumulative Layout Shift - pod 0.1). Jeśli wyniki są poniżej 75 punktów, jest dużo do zrobienia. Sprawdź GTmetrix, aby zobaczyć waterfalls i konkretne rekomendacje.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="bg-gray-800 rounded-lg p-6 border border-gray-700 hover:border-yellow-400 transition-colors">
-                    <div className="flex gap-4">
-                      <div className="flex-shrink-0">
-                        <div className="flex items-center justify-center h-10 w-10 rounded-lg bg-yellow-400 text-gray-900 font-bold">4</div>
-                      </div>
-                      <div>
-                        <h3 className="text-xl font-bold text-white mb-2">On-Page SEO: Meta Tagi i Nagłówki</h3>
-                        <p className="text-gray-300 leading-relaxed">
-                          Dla każdej ważnej strony sprawdź: czy H1 zawiera słowo kluczowe, czy title (do 60 znaków) jest unikalny i zawiera keyword, czy meta description (do 160 znaków) jest przekonywujący. W Screaming Frog możesz zobaczyć wszystko na raz. Szukaj duplikatów metych.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="bg-gray-800 rounded-lg p-6 border border-gray-700 hover:border-yellow-400 transition-colors">
-                    <div className="flex gap-4">
-                      <div className="flex-shrink-0">
-                        <div className="flex items-center justify-center h-10 w-10 rounded-lg bg-yellow-400 text-gray-900 font-bold">5</div>
-                      </div>
-                      <div>
-                        <h3 className="text-xl font-bold text-white mb-2">Analiza Treści i Duplicate Content</h3>
-                        <p className="text-gray-300 leading-relaxed">
-                          Sprawdzaj każdą stronę: czy ma co najmniej 300 słów (jeśli powinna)? Czy zawiera dostateczną głębię? Czy tekst odpowiada na pytania użytkownika (People Also Ask w Google)? W Screaming Frog użyj filtrów do znalezienia: page duplicates, bardzo krótkiego contentu, brakujących tytułów. Zanotuj, które strony potrzebują refreshu.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="bg-gray-800 rounded-lg p-6 border border-gray-700 hover:border-yellow-400 transition-colors">
-                    <div className="flex gap-4">
-                      <div className="flex-shrink-0">
-                        <div className="flex items-center justify-center h-10 w-10 rounded-lg bg-yellow-400 text-gray-900 font-bold">6</div>
-                      </div>
-                      <div>
-                        <h3 className="text-xl font-bold text-white mb-2">Linki Wewnętrzne i Struktura</h3>
-                        <p className="text-gray-300 leading-relaxed">
-                          W Screaming Frog przejdź do "Visualization" lub użyj SEMrush Site Audit. Sprawdź: czy orphan pages (strony bez linków wewnętrznych)? Czy struktura jest logiczna? Czy ważne strony mają dużo linków wewnętrznych? Anchor text powinien być deskryptywny, a nie "kliknij tutaj". Szukaj broken internal links.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="bg-gray-800 rounded-lg p-6 border border-gray-700 hover:border-yellow-400 transition-colors">
-                    <div className="flex gap-4">
-                      <div className="flex-shrink-0">
-                        <div className="flex items-center justify-center h-10 w-10 rounded-lg bg-yellow-400 text-gray-900 font-bold">7</div>
-                      </div>
-                      <div>
-                        <h3 className="text-xl font-bold text-white mb-2">Profil Backlinków i External Links</h3>
-                        <p className="text-gray-300 leading-relaxed">
-                          Użyj Ahrefs, SEMrush lub Moz do analizy: ile linków pochodzi z domach Quality? Jaki jest średni Domain Rating? Czy są linki toksyczne (spam)? Przeanalizuj backlinki konkurencji — gdzie oni dostają linki? Czy możesz tam też się pojawić? Szukaj linków ze stratami (broken backlinks z autorytatywnych źródeł).
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="bg-gray-800 rounded-lg p-6 border border-gray-700 hover:border-yellow-400 transition-colors">
-                    <div className="flex gap-4">
-                      <div className="flex-shrink-0">
-                        <div className="flex items-center justify-center h-10 w-10 rounded-lg bg-yellow-400 text-gray-900 font-bold">8</div>
-                      </div>
-                      <div>
-                        <h3 className="text-xl font-bold text-white mb-2">Testowanie Mobilności</h3>
-                        <p className="text-gray-300 leading-relaxed">
-                          Użyj Google Mobile-Friendly Test. Sprawdzaj: czy layout jest responsywny? Czy czcionka jest czytalna (minimum 16px)? Czy interactive elements (buttony, linki) są odpowiedniej wielkości (minimum 48x48px)? Czy jest viewport meta tag? Testuj na rzeczywistych urządzeniach — iOS i Android.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="bg-gray-800 rounded-lg p-6 border border-gray-700 hover:border-yellow-400 transition-colors">
-                    <div className="flex gap-4">
-                      <div className="flex-shrink-0">
-                        <div className="flex items-center justify-center h-10 w-10 rounded-lg bg-yellow-400 text-gray-900 font-bold">9</div>
-                      </div>
-                      <div>
-                        <h3 className="text-xl font-bold text-white mb-2">UX i Metryki Biznesowe</h3>
-                        <p className="text-gray-300 leading-relaxed">
-                          W Google Analytics 4 przeanalizuj: bounce rate (czy użytkownicy natychmiast opuszczają stronę?), average session duration, conversion rate (ile osób wykonało desired action?). Użyj Hotjar lub Clarity, aby zobaczyć heatmapy — gdzie klikają użytkownicy? Gdzie się zatrzymują? Co powoduje, że opuszczają formularze?
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="bg-gray-800 rounded-lg p-6 border border-gray-700 hover:border-yellow-400 transition-colors">
-                    <div className="flex gap-4">
-                      <div className="flex-shrink-0">
-                        <div className="flex items-center justify-center h-10 w-10 rounded-lg bg-yellow-400 text-gray-900 font-bold">10</div>
-                      </div>
-                      <div>
-                        <h3 className="text-xl font-bold text-white mb-2">Stwórz Raport i Plan Działań</h3>
-                        <p className="text-gray-300 leading-relaxed">
-                          Zbierz wszystkie znaleziska w jednym dokumencie. Podziel je na kategorie (techniczne, on-page, content, backlinki, UX). Każdemu problemowi przypisz: opis, narzędzie, wpływ (wysoki/średni/niski), czas wdrożenia. Ustal priorytety — najpierw problemy z wysokim wpływem i małym czasem. Stwórz timeline wdrożenia i przydziel osoby odpowiedzialne.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-
-              {/* FAQ Section */}
-              <section className="mb-14 bg-gray-800 rounded-xl p-8 border border-gray-700">
-                <h2 className="text-3xl font-bold mb-8 text-white">Częste Pytania o Audycie SEO</h2>
-                <div className="space-y-6">
-                  {faqItems.map((item, idx) => (
-                    <div key={idx} className="border-l-4 border-yellow-400 pl-6">
-                      <h4 className="text-lg font-bold text-yellow-400 mb-2">{item.question}</h4>
-                      <p className="text-gray-300 leading-relaxed">{item.answer}</p>
-                    </div>
-                  ))}
-                </div>
-              </section>
-
-              {/* CTA Section */}
-              <section className="bg-gradient-to-r from-yellow-400 to-orange-400 rounded-2xl p-12 text-gray-900 text-center mb-14">
-                <h2 className="text-4xl font-bold mb-4">Potrzebujesz Profesjonalnego Audytu SEO?</h2>
-                <p className="text-xl mb-8 opacity-90">
-                  Zespół FOTZ przeprowadzi kompletny audyt Twojej strony i stworzy strategię wzrostu w wyszukiwaniu. Zarabiaj więcej klientów z SEO.
-                </p>
-                <Link to="/kontakt">
-                  <Button className="bg-gray-900 text-yellow-400 hover:bg-gray-800 px-8 py-3 text-lg font-bold">
-                    Zamów Audyt SEO
-                  </Button>
-                </Link>
-              </section>
-
-              {/* Related Articles */}
-              <RelatedArticles />
+            <p className="mb-4 text-sm font-semibold uppercase tracking-wider text-yellow-400">Poradnik i checklista</p>
+            <h1 className="mb-6 text-4xl font-bold leading-tight md:text-5xl">{pageTitle}</h1>
+            <p className="max-w-3xl text-lg leading-relaxed text-slate-300 md:text-xl">
+              Od celu i indeksacji przez treści, wydajność i linki aż po plan wdrożenia. Sprawdzaj dowody, zapisuj zakres i nie traktuj automatycznego wyniku jako gotowej diagnozy.
+            </p>
+            <div className="mt-7 flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-400">
+              <span className="flex items-center gap-2"><User className="h-4 w-4" aria-hidden="true" /> Zespół FOTZ</span>
+              <span className="flex items-center gap-2"><Calendar className="h-4 w-4" aria-hidden="true" /> Opublikowano: 12 kwietnia 2026</span>
+              <span>Aktualizacja: 11 listopada 2026</span>
             </div>
           </div>
-        </article>
-      </Layout>
-    </>
+        </header>
+
+        <div className="mx-auto max-w-4xl px-4 py-12 md:px-6 md:py-16">
+          <nav aria-labelledby="spis-tresci" className="mb-14 rounded-xl border border-slate-200 bg-slate-50 p-6 md:p-8">
+            <h2 id="spis-tresci" className="mb-5 text-2xl font-bold text-slate-950">W tym poradniku</h2>
+            <ol className="grid gap-3 text-slate-700 md:grid-cols-2">
+              <li><a href="#definicja" className="hover:text-yellow-700 hover:underline">Definicja i zakres audytu</a></li>
+              <li><a href="#audyt-a-pozycjonowanie" className="hover:text-yellow-700 hover:underline">Audyt a widoczność w Google</a></li>
+              <li><a href="#audyt-krok-po-kroku" className="hover:text-yellow-700 hover:underline">10 kroków audytu</a></li>
+              <li><a href="#narzedzia" className="hover:text-yellow-700 hover:underline">Narzędzia i ich ograniczenia</a></li>
+              <li><a href="#raport" className="hover:text-yellow-700 hover:underline">Raport i priorytety</a></li>
+              <li><a href="#koszt-i-czas" className="hover:text-yellow-700 hover:underline">Koszt i czas pracy</a></li>
+              <li><a href="#faq" className="hover:text-yellow-700 hover:underline">Najczęstsze pytania</a></li>
+            </ol>
+          </nav>
+
+          <section id="definicja" aria-labelledby="definicja-title" className="mb-16 scroll-mt-24">
+            <h2 id="definicja-title" className="mb-6 text-3xl font-bold text-slate-950">Czym jest audyt SEO i co sprawdzić?</h2>
+            <p className="mb-5 text-lg leading-relaxed">
+              Audyt SEO to szczegółowa analiza strony internetowej pod kątem indeksacji, techniki, treści, linków i widoczności. Jego zadaniem jest pokazanie, jaki jest stan strony, i wskazanie uzasadnionych działań, a nie wystawienie ogólnej oceny. Analiza strony łączy dane z narzędzi z ręczną kontrolą oraz wiedzą o ofercie i odbiorcach.
+            </p>
+            <p className="mb-5 leading-relaxed">
+              Kompleksowy audyt SEO obejmuje techniczną stronę serwisu i dopasowanie treści do intencji. W ramach audytu SEO zbierz przy tym dowody z różnych źródeł. Audyt SEO ocenia między innymi to, czy wyszukiwarka ma dostęp do zasobów, czy adresy są kanoniczne, jak wygląda widoczność strony w wynikach wyszukiwania oraz czy użytkownik może wykonać zaplanowaną akcję. Ocena strony pod kątem SEO powinna mieć źródło i datę, bo raport bez kontekstu szybko staje się listą przypuszczeń.
+            </p>
+            <p className="mb-5 leading-relaxed">
+              Warto przeprowadzić audyt SEO przed migracją lub zmianą struktury, przy niejasnej zmianie widoczności i podczas porządkowania strategii SEO. Pełny audyt całej domeny nie zawsze jest konieczny — można sprawdzić pojedynczy szablon. Zakres zawsze powinien wynikać z pytania, na które szukasz odpowiedzi. Jeśli Twoja strona internetowa ma odpowiadać na rzeczywiste potrzeby, uwzględnij także język odbiorców i zgodność treści z ofertą.
+            </p>
+            <div className="rounded-r-lg border-l-4 border-yellow-500 bg-yellow-50 p-5">
+              <p className="leading-relaxed">
+                Ten materiał jest informacyjną checklistą do samodzielnej pracy. Odrębna strona <Link to="/seo/audyt" className="font-semibold text-yellow-800 hover:underline">usługi audytu SEO</Link> przedstawia zakres wsparcia; nie musisz zamawiać usługi, aby zastosować poniższe kroki.
+              </p>
+            </div>
+          </section>
+
+          <section id="audyt-a-pozycjonowanie" aria-labelledby="audyt-pozycjonowanie-title" className="mb-16 scroll-mt-24">
+            <h2 id="audyt-pozycjonowanie-title" className="mb-5 text-3xl font-bold text-slate-950">Audyt SEO a widoczność w Google</h2>
+            <p className="mb-5 leading-relaxed">
+              Pozycjonowanie strony obejmuje działania SEO zmierzające do zwiększenia widoczności strony w Google, natomiast audyt porządkuje punkt wyjścia. Zakres optymalizacji strony może obejmować technikę, treści i linki. SEO strony WWW to proces, a nie jednorazowy raport. Samo wyświetlenie adresu w wynikach nie mówi jeszcze, czy dociera on do właściwych osób. Lista działań SEO powinna więc wynikać z udokumentowanych problemów, a nie z ogólnego schematu.
+            </p>
+            <p className="mb-5 leading-relaxed">
+              Jeśli chcesz poprawić widoczność swojej strony, najpierw określ adresy i zapytania objęte pomiarem. Sprawdź, jaka jest widoczność Twojej strony w wyszukiwarkach i które wejścia dotyczą właściwego URL-a. Osobno zapisz, czy analizujesz widoczność Twojej strony w wynikach wyszukiwania dla jednego adresu, czy dla grupy. Analiza widoczności strony w wyszukiwarce nie powinna przypisywać jednej publikacji zapytań innych podstron.
+            </p>
+            <p className="leading-relaxed">
+              Poprawa SEO Twojej strony zaczyna się od wdrożenia rekomendacji. Zmiana treści lub techniki może wpłynąć na widoczność strony, ale efekt trzeba później zmierzyć. Nie zakładaj z góry, że jedna poprawka pozwoli poprawić widoczność strony w określonym czasie. Zapisz datę zmiany na Twojej stronie i sprawdź, jaka jest widoczność strony w Google po zebraniu nowych danych.
+            </p>
+          </section>
+
+          <section id="audyt-krok-po-kroku" aria-labelledby="audyt-kroki-title" className="mb-16 scroll-mt-24">
+            <h2 id="audyt-kroki-title" className="mb-5 text-3xl font-bold text-slate-950">Jak przeprowadzić audyt SEO strony internetowej krok po kroku?</h2>
+            <p className="mb-8 text-lg leading-relaxed">
+              Poniższa kolejność prowadzi od dostępu i danych do decyzji wdrożeniowej. Nie musisz sztucznie wydłużać procesu: skutecznego audytu SEO nie mierzy się liczbą raportów, lecz możliwością sprawdzenia wniosków i wykonania właściwej poprawki.
+            </p>
+            <div className="space-y-8">
+              {auditSteps.map((step) => (
+                <section id={step.id} key={step.id} aria-labelledby={`${step.id}-title`} className="scroll-mt-24 rounded-xl border border-slate-200 p-6 md:p-8">
+                  <h3 id={`${step.id}-title`} className="mb-4 text-2xl font-bold text-slate-950">{step.title}</h3>
+                  <p className="mb-5 leading-relaxed">{step.text}</p>
+                  <ul className="mb-5 space-y-3">
+                    {step.checks.map((check) => (
+                      <li key={check} className="flex items-start gap-3 leading-relaxed">
+                        <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-green-600" aria-hidden="true" />
+                        <span>{check}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <p className="border-t border-slate-200 pt-4 text-sm font-semibold text-slate-700">{step.result}</p>
+                </section>
+              ))}
+            </div>
+          </section>
+
+          <section id="narzedzia" aria-labelledby="narzedzia-title" className="mb-16 scroll-mt-24">
+            <h2 id="narzedzia-title" className="mb-5 text-3xl font-bold text-slate-950">Darmowy audyt SEO online: narzędzia i ograniczenia</h2>
+            <p className="mb-5 leading-relaxed">
+              Podstawowy przegląd witryny możesz rozpocząć bez kupowania rozbudowanego pakietu. Google Search Console dostarcza danych własnych, PageSpeed Insights i Lighthouse wspierają diagnostykę wydajności, a crawler porządkuje informacje o adresach. Bezpłatny audyt wykonany tymi narzędziami nadal wymaga Twojej interpretacji. Sam skan nie wie, które strony są ważne i dlaczego powstały.
+            </p>
+            <p className="mb-8 leading-relaxed">
+              Darmowy audyt SEO strony internetowej generowany przez pojedynczy formularz online nie jest równoznaczny z kompleksowym audytem. Wynik „audyt SEO online” może być wstępnym sygnałem do kontroli, nie oceną Google ani gwarancją poprawy. Płatny audyt SEO warto porównywać przede wszystkim według metody pracy, dowodów i rezultatu dokumentu.
+            </p>
+            <div className="grid gap-5 md:grid-cols-2">
+              {tools.map((tool) => (
+                <a key={tool.name} href={tool.url} target="_blank" rel="noreferrer" className="group rounded-lg border border-slate-200 p-5 transition hover:border-yellow-500">
+                  <span className="mb-2 flex items-center justify-between gap-3 font-bold text-slate-950">
+                    {tool.name}<ExternalLink className="h-4 w-4 flex-shrink-0 text-slate-400 group-hover:text-yellow-700" aria-hidden="true" />
+                  </span>
+                  <span className="block text-sm leading-relaxed text-slate-600">{tool.description}</span>
+                </a>
+              ))}
+            </div>
+            <p className="mt-6 text-sm leading-relaxed text-slate-600">
+              Dane strukturalne możesz dodatkowo sprawdzić w <a href="https://validator.schema.org/" target="_blank" rel="noreferrer" className="font-semibold text-yellow-800 hover:underline">Schema Markup Validator</a>. Aktualne zasady opisu stron znajdziesz w <a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide" target="_blank" rel="noreferrer" className="font-semibold text-yellow-800 hover:underline">oficjalnym przewodniku Google dla początkujących</a>.
+            </p>
+          </section>
+
+          <section id="raport" aria-labelledby="raport-title" className="mb-16 scroll-mt-24">
+            <h2 id="raport-title" className="mb-5 text-3xl font-bold text-slate-950">Wyniki audytu SEO: analiza i macierz priorytetów</h2>
+            <p className="mb-6 leading-relaxed">
+              Profesjonalny audyt SEO powinien kończyć się dokumentem, którego można użyć do pracy. Wnioski technicznego audytu SEO warto połączyć z oceną treści i danych o użytkownikach. Każdy wpis musi odpowiadać na pięć pytań: co zaobserwowano, gdzie występuje problem, skąd pochodzi dowód, jaka jest rekomendacja i jak sprawdzimy poprawę. Nie przypisuj wysokiego priorytetu wyłącznie dlatego, że narzędzie oznaczyło element czerwonym kolorem.
+            </p>
+            <div className="mb-7 overflow-x-auto">
+              <table className="w-full border-collapse text-left text-sm">
+                <caption className="mb-3 text-left text-slate-600">Struktura rejestru rekomendacji — bez przykładowych wyników przedstawianych jako fakty.</caption>
+                <thead>
+                  <tr className="bg-slate-950 text-white">
+                    <th scope="col" className="border border-slate-700 p-3">Obserwacja</th>
+                    <th scope="col" className="border border-slate-700 p-3">Dowód i zakres</th>
+                    <th scope="col" className="border border-slate-700 p-3">Priorytet</th>
+                    <th scope="col" className="border border-slate-700 p-3">Następny krok</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td className="border border-slate-200 p-3">Konkretny stan, nie ogólne „złe SEO”</td><td className="border border-slate-200 p-3">URL, data, raport, zrzut lub test</td><td className="border border-slate-200 p-3">Wpływ, pewność, wysiłek i zależności</td><td className="border border-slate-200 p-3">Właściciel, zmiana i kontrola po wdrożeniu</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div className="grid gap-5 md:grid-cols-2">
+              <div className="rounded-lg bg-red-50 p-5">
+                <h3 className="mb-2 font-bold text-slate-950">Najpierw blokady i wysoka pewność</h3>
+                <p className="text-sm leading-relaxed">Problemy potwierdzone, o szerokim zakresie i istotnym wpływu na dostęp do treści lub zadania użytkownika. Określ zależności przed zmianą.</p>
+              </div>
+              <div className="rounded-lg bg-blue-50 p-5">
+                <h3 className="mb-2 font-bold text-slate-950">Później hipotezy i prace rozległe</h3>
+                <p className="text-sm leading-relaxed">Propozycje wymagające testu, dodatkowych danych albo projektu. Nie przedstawiaj ich jako pewnej przyczyny ani pewnego efektu.</p>
+              </div>
+            </div>
+          </section>
+
+          <section id="koszt-i-czas" aria-labelledby="koszt-title" className="mb-16 scroll-mt-24">
+            <h2 id="koszt-title" className="mb-5 text-3xl font-bold text-slate-950">Ile kosztuje audyt SEO i jak długo trwa?</h2>
+            <p className="mb-5 leading-relaxed">
+              Czas i cena audytu SEO zależą od wielkości i złożoności strony, liczby wariantów językowych, dostępności danych, konkurencji oraz wymaganej szczegółowości. Szczegółowy audyt SEO z testami szablonów i planem wdrożenia to większy zakres niż szybki skan i ogólny przegląd witryny. Dlatego nie podajemy sztywnych cen ani gwarantowanych terminów przed ustaleniem rezultatu pracy.
+            </p>
+            <p className="leading-relaxed">
+              Warto zamówić audyt świadomie: zapytaj, czy obejmuje dane własne, analizę konkurencji, ocenę treści, techniczną kontrolę i rekomendacje z priorytetami. Wsparcie warto wybrać także wtedy, gdy zespół potrzebuje niezależnej weryfikacji przed kosztowną zmianą. Porównuj zakres, a nie obietnice pozycji lub ruchu.
+            </p>
+          </section>
+
+          <section id="faq" aria-labelledby="faq-title" className="mb-16 scroll-mt-24">
+            <h2 id="faq-title" className="mb-7 text-3xl font-bold text-slate-950">FAQ: pytania o audyt SEO</h2>
+            <div className="space-y-4">
+              {faqItems.map((item) => (
+                <details id={`audyt-seo-faq-${item.id}`} key={item.id} className="group rounded-lg border border-slate-200 p-5 open:bg-slate-50">
+                  <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-bold text-slate-950">
+                    {item.question}<span className="transition group-open:rotate-180" aria-hidden="true">▼</span>
+                  </summary>
+                  <p className="mt-4 leading-relaxed text-slate-700">{item.answer}</p>
+                </details>
+              ))}
+            </div>
+          </section>
+
+          <section id="powiazane-materialy" aria-labelledby="powiazane-title" className="mb-14 scroll-mt-24">
+            <h2 id="powiazane-title" className="mb-6 text-3xl font-bold text-slate-950">Powiązane poradniki</h2>
+            <div className="grid gap-4 md:grid-cols-2">
+              <Link to="/blog/seo-techniczne-poradnik" className="rounded-lg border border-slate-200 p-5 transition hover:border-yellow-500">
+                <span className="flex items-center gap-2 font-bold text-slate-950">SEO techniczne <ArrowRight className="h-4 w-4" aria-hidden="true" /></span>
+                <span className="mt-2 block text-sm text-slate-600">Pogłęb kontrolę indeksacji, architektury i elementów technicznych.</span>
+              </Link>
+              <Link to="/blog/pozycjonowanie-lokalne-dla-firm" className="rounded-lg border border-slate-200 p-5 transition hover:border-yellow-500">
+                <span className="flex items-center gap-2 font-bold text-slate-950">Pozycjonowanie lokalne <ArrowRight className="h-4 w-4" aria-hidden="true" /></span>
+                <span className="mt-2 block text-sm text-slate-600">Sprawdź zagadnienia istotne dla firm docierających do klientów lokalnych.</span>
+              </Link>
+              <Link to="/blog/strategia-content-marketingu" className="rounded-lg border border-slate-200 p-5 transition hover:border-yellow-500">
+                <span className="flex items-center gap-2 font-bold text-slate-950">Strategia content marketingu <ArrowRight className="h-4 w-4" aria-hidden="true" /></span>
+                <span className="mt-2 block text-sm text-slate-600">Przełóż potrzeby odbiorców i luki tematyczne na plan treści.</span>
+              </Link>
+              <Link to="/blog/copywriting-co-to" className="rounded-lg border border-slate-200 p-5 transition hover:border-yellow-500">
+                <span className="flex items-center gap-2 font-bold text-slate-950">Copywriting i treści <ArrowRight className="h-4 w-4" aria-hidden="true" /></span>
+                <span className="mt-2 block text-sm text-slate-600">Dowiedz się, jak powstaje jasny tekst dopasowany do odbiorcy i kanału.</span>
+              </Link>
+            </div>
+          </section>
+
+          <section aria-labelledby="podsumowanie-title" className="rounded-xl bg-slate-950 p-7 text-white md:p-9">
+            <h2 id="podsumowanie-title" className="mb-4 text-2xl font-bold">Podsumowanie: od obserwacji do sprawdzonej zmiany</h2>
+            <p className="mb-5 leading-relaxed text-slate-300">
+              Dobry przegląd serwisu porządkuje fakty i pomaga wybrać kolejny krok. Zacznij od małego zakresu, zapisz źródła i przygotuj rekomendacje, których wdrożenie da się zweryfikować. Nie musisz obiecywać wzrostu, aby przeprowadzić rzetelną analizę.
+            </p>
+            <p className="leading-relaxed text-slate-300">
+              Jeśli potrzebujesz omówić wynik własnej checklisty lub zakres profesjonalnego audytu SEO, <Link to="/kontakt" className="font-semibold text-yellow-400 hover:underline">przejdź do formularza kontaktowego</Link> i opisz adres, problem oraz dostępne dane.
+            </p>
+          </section>
+        </div>
+      </article>
+    </Layout>
   );
 }

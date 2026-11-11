@@ -12,7 +12,7 @@ const ChatbotFAQ = lazy(() => import("../ChatbotFAQ").then(m => ({ default: m.Ch
 
 interface LayoutProps {
   children: ReactNode;
-  workPlacement?: "end" | "manual";
+  workPlacement?: "end" | "manual" | "after-main";
   workExcludeImageId?: string;
 }
 
@@ -35,6 +35,7 @@ export function Layout({ children, workPlacement = "end", workExcludeImageId }: 
       <Navbar />
       <ConversionTracking />
       <main id="main-content" tabIndex={-1} className="flex-1 min-w-0">{children}{workPlacement === "end" && <SelectedWork excludeImageId={workExcludeImageId} />}</main>
+      {workPlacement === "after-main" && <SelectedWork excludeImageId={workExcludeImageId} />}
       <Footer />
       {loadWidgets && showWidgets && (
         <Suspense fallback={null}>
