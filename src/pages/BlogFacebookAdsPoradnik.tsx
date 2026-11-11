@@ -1,443 +1,612 @@
-import { SEOHead } from "@/components/seo/SEOHead";
-import { Layout } from "@/components/layout/Layout";
-import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
-import { FadeInView } from "@/components/FadeInView";
-import { ContactSection } from "@/components/sections/ContactSection";
-import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
 import { Link } from "react-router-dom";
+import { SEOHead } from "@/components/seo/SEOHead";
+import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { Layout } from "@/components/layout/Layout";
+import { BarChart3, CheckCircle2, Image, Play, Target, Users, Zap, ArrowRight } from "lucide-react";
 
-const adFormats = [
+const seoTitle = "Facebook Ads 2026: reklama na Facebooku | FOTZ";
+const seoDescription = "Reklama na Facebooku krok po kroku: cel kampanii, budżet, targetowanie i formaty. Poradnik konfiguracji kampanii reklamowych Facebook Ads i Meta Ads 2026.";
+const canonicalUrl = "https://www.fotz-studio.pl/blog/facebook-ads-poradnik";
+const pageTitle = "Reklama na Facebooku: jak skonfigurować kampanię Facebook Ads w 2026 roku?";
+
+const articleData = {
+  headline: pageTitle,
+  description: seoDescription,
+  url: canonicalUrl,
+  image: "https://www.fotz-studio.pl/og-image.jpg",
+  datePublished: "2025-04-12",
+  dateModified: "2026-11-11",
+  author: "Fotz Studio",
+};
+
+const breadcrumbs = [
+  { name: "Strona główna", url: "/" },
+  { name: "Blog", url: "/blog" },
+  { name: "Facebook Ads poradnik", url: "/blog/facebook-ads-poradnik" },
+];
+
+const campaignSteps = [
   {
-    typ: "Image Ads",
-    format: "Statyczne grafiki 1200x628 px",
-    cel: "Brand awareness, lead generation",
-    najlepsiej: "E-commerce, usługi lokalne, nieruchomości",
+    title: "Utwórz kampanię i wybierz cel",
+    text: "W Menedżerze reklam wybierz nową kampanię i cel odpowiadający oczekiwanemu działaniu. Dostępne opcje mogą obejmować rozpoznawalność, ruch, zaangażowanie, pozyskiwanie kontaktów, promocję aplikacji i sprzedaż. Nie wybieraj ruchu, jeśli tak naprawdę chcesz mierzyć zakupy lub zapis na rozmowę.",
   },
   {
-    typ: "Video Ads",
-    format: "Video 15s-3 min (H264, MP4)",
-    cel: "Zaangażowanie, traffic, konwersje",
-    najlepsiej: "SaaS, edukacja, entertainment, produkty konsumenckie",
+    title: "Nazwij elementy i zapisz hipotezę",
+    text: "Przyjmij nazewnictwo opisujące rynek, cel, segment i okres testu. W osobnej notatce zapisz, jaką grupę, ofertę i kreację porównujesz oraz która metryka zdecyduje o kolejnym kroku. Dzięki temu późniejsza analiza kampanii nie będzie zgadywaniem intencji sprzed tygodni.",
   },
   {
-    typ: "Carousel Ads",
-    format: "2-10 kart ze zdjęciami/video",
-    cel: "Showcase wielu produktów, storytelling",
-    najlepsiej: "E-commerce, katalogi, portfolio",
+    title: "Wskaż miejsce i zdarzenie konwersji",
+    text: "Jeżeli cel tego wymaga, określ, czy działanie ma nastąpić na stronie internetowej, w formularzu, w wiadomości lub w innym dostępnym miejscu. Wybierz właściwy zbiór danych i zdarzenie, które odpowiada realnej wartości dla firmy. Unikaj zastępowania zakupu zdarzeniem technicznym tylko dlatego, że występuje częściej.",
   },
   {
-    typ: "Collection Ads",
-    format: "Obraz główny + katalog produktów",
-    cel: "Sprzedaż bezpośrednia z Facebooka",
-    najlepsiej: "Handel online, produkty fizyczne",
+    title: "Ustaw budżet i harmonogram",
+    text: "Wybierz budżet dzienny albo całkowity oraz daty emisji zgodne z planem testu. W zależności od konfiguracji budżet może być zarządzany na poziomie kampanii lub zestawu reklam. Ustal limit przed publikacją i sprawdź, jak panel opisuje tempo wydawania środków.",
   },
   {
-    typ: "Lead Ads",
-    format: "Formularz wbudowany w Facebooku",
-    cel: "Zbieranie danych bez opuszczania platformy",
-    najlepsiej: "Usługi, B2B, edukacja, ubezpieczenia",
+    title: "Zdefiniuj odbiorców i wykluczenia",
+    text: "Dodaj lokalizację, język i tylko te cechy, które wynikają z oferty. Zdecyduj, czy test dotyczy nowych odbiorców, remarketingu czy osobnych segmentów. Sprawdź aktywne rozszerzenia grupy oraz wykluczenia, aby później poprawnie interpretować raport.",
   },
   {
-    typ: "Story Ads",
-    format: "Full-screen vertical 1080x1920 px",
-    cel: "Wysoki CTR, zaangażowanie młodszych odbiorców",
-    najlepsiej: "Moda, lifestyle, gry, aplikacje",
+    title: "Dobierz umiejscowienia",
+    text: "Automatyczne umiejscowienia pozwalają systemowi rozdzielać emisję między dostępne powierzchnie. Ręczny wybór przydaje się, gdy testujesz konkretne miejsca wyświetlania reklam albo masz materiał przygotowany tylko dla jednej powierzchni. Obejrzyj podgląd w Aktualnościach, Stories, Reels i innych używanych miejscach.",
   },
   {
-    typ: "Reels Ads",
-    format: "Short-form video 9:16, do 90 sekund",
-    cel: "Maksymalne zaangażowanie, reach",
-    najlepsiej: "TikTok-like treści, moda, edukacja, entertainment",
+    title: "Zbuduj reklamę i dodaj adres docelowy",
+    text: "Wybierz format, dodaj obraz lub wideo, tekst podstawowy, nagłówek, opis i przycisk z wezwaniem do działania. Adres docelowy powinien kontynuować obietnicę komunikatu. Dodaj parametry UTM, aby odróżnić kampanię, zestaw i wariant w analityce zewnętrznej.",
+  },
+  {
+    title: "Sprawdź podgląd, pomiar i opublikuj",
+    text: "Przejdź ścieżkę na urządzeniu mobilnym, wykonaj testowe zdarzenie i zweryfikuj jego obecność w raporcie. Sprawdź zgodę, uprawnienia, metodę rozliczeń oraz zgodność kreacji z zasadami. Po publikacji obserwuj akceptację i dostarczanie; akceptacja reklamy nie jest potwierdzeniem jej skuteczności.",
   },
 ];
 
-const commonMistakes = [
+const metrics = [
   {
-    blad: "Zbyt szerokie targetowanie",
-    opis: "Ustawianie zainteresowań zbyt ogólnych (np. Facebook, internet). Powoduje wyświetlanie reklam osobom, które nie są potencjalnymi klientami, co zwiększa koszty i zmniejsza konwersje.",
-    rozwiazanie: "Zamiast tego: Celuj mikrosegmentami. Salon fryzjerski zamiast Wszyscy użytkownicy powinien celować kobiety 25-55 w Warszawie zainteresowane pielęgnacją włosów.",
+    name: "Zasięg, wyświetlenia i częstotliwość",
+    formula: "Częstotliwość = wyświetlenia ÷ zasięg",
+    text: "Zasięg opisuje liczbę osób, a wyświetlenia liczbę emisji. Częstotliwość pomaga zauważyć powtarzanie komunikatu tej samej grupie. Jej zmiana jest sygnałem do analizy kreacji i wyników, a nie automatycznym powodem wyłączenia kampanii.",
   },
   {
-    blad: "Brak pixel trackingu",
-    opis: "Jeśli nie zainstalowałeś piksela Facebooka na stronie, nie możesz śledzić konwersji ani retargetować. Algorytm nie wie co się dzieje po kliknięciu w reklamę.",
-    rozwiazanie: "Natychmiast zainstaluj piksel Facebook. Bez tego nie będziesz mieć CPA, nie będziesz móc retargetować porzuconych koszyków i traci się~50% wartości kampanii.",
+    name: "CTR i kliknięcia w link",
+    formula: "CTR = kliknięcia ÷ wyświetlenia × 100%",
+    text: "W panelu rozróżniaj CTR dla wszystkich kliknięć od CTR linku. Porównuj tę samą definicję wskaźnika i podobne warunki. Sam wysoki CTR nie potwierdza wartości wizyt, dlatego sprawdzaj również zachowanie użytkownika po przejściu na stronę.",
   },
   {
-    blad: "Copy bez value proposition",
-    opis: "Tekst typu Sprawdź naszą ofertę lub Kliknij tutaj. Użytkownicy nie wiedzą co zyskają, więc nie klikają. Brak emocji i specifiki.",
-    rozwiazanie: "Pisze jasną propozycję wartości: Oszczędź 3 miesiące na biżuterii — wróć do pracy bez bólu, za 2 tygodnie. Liczby + benefity + deadline = wyższa konwersja.",
+    name: "CPC i CPM",
+    formula: "CPC = wydatek ÷ kliknięcia; CPM = wydatek ÷ wyświetlenia × 1000",
+    text: "CPC przedstawia koszt kliknięcia według wybranej definicji, a CPM koszt tysiąca wyświetleń. Oba wyniki zależą m.in. od aukcji, grupy docelowej, okresu i jakości reklamy. Nie istnieje jedna uniwersalna dobra wartość dla każdej firmy.",
   },
   {
-    blad: "Niski budżet przez zbyt długo",
-    opis: "Budżet poniżej 300 zł/miesiąc rozprzestrzenia się na zbyt wiele odbiorców, Facebook nie ma czasu się nauczyć kto konwertuje.",
-    rozwiazanie: "Zamiast 100 zł/dzień rozproszone: skoncentruj na jednym segmencie 500 zł/dzień przez 2-4 tygodnie. Facebook potrzebuje 50+ konwersji w 7 dni, aby optimalizować.",
+    name: "Konwersje, CPA i współczynnik konwersji",
+    formula: "CPA = wydatek ÷ liczba wybranych działań",
+    text: "Analizuj konkretne zdarzenie, np. wysłanie formularza albo zakup, zamiast zbiorczej kategorii bez kontekstu. Dla pozyskiwania leadów dodaj ocenę ich zgodności z ofertą. Współczynnik konwersji strony pomaga odróżnić problem komunikatu od problemu ścieżki po kliknięciu.",
   },
   {
-    blad: "Testowanie zbyt wielu zmiennych naraz",
-    opis: "Zmiana audience, copy, creative i budżetu jednocześnie. Nie wiesz co nie działa i nie możesz iterować.",
-    rozwiazanie: "A/B test jeden element na raz. Test 1: dwie audience, ten sam creative. Gdy wygrywam, test 2: dwa copie. Powolnie, ale nauczysz się co działa.",
+    name: "ROAS i opłacalność",
+    formula: "ROAS = przypisany przychód ÷ wydatek reklamowy",
+    text: "ROAS dotyczy przypisanego przychodu, nie zysku. Interpretuj go razem z marżą, kosztami realizacji, zwrotami i ograniczeniami atrybucji. Skuteczność kampanii trzeba ocenić w ekonomii konkretnej oferty, a nie przez porównanie z przypadkowym benchmarkiem.",
+  },
+];
+
+const troubleshooting = [
+  {
+    problem: "Reklama nie wyświetla się lub zużywa bardzo mały budżet",
+    action: "Sprawdź status akceptacji, daty emisji, rozliczenia, limit wydatków, rozmiar grupy i konflikt ustawień. Zweryfikuj też, czy wybrane zdarzenie i zasób są dostępne. Nie duplikuj kampanii, zanim nie ustalisz przyczyny.",
   },
   {
-    blad: "Niedrażliwe creative",
-    opis: "Reklamy które się bierze za cud. Brak ruchu, animacji, tekstu, stop-scroll. Newsfeed konkurencji jest zbyt duży.",
-    rozwiazanie: "Testuj video (zamiast static), używaj tekstu na obrazach (dla stop-scroll), dodaj elementy które przyciągają wzrok, niech pierwsza sekunda decyduje o kliku.",
+    problem: "Są wyświetlenia, ale użytkownicy nie klikają",
+    action: "Oceń pierwszy kadr, nagłówek i dopasowanie tematu do segmentu. Sprawdź, czy odbiorca rozumie, co znajdzie po kliknięciu. Przetestuj jeden nowy argument lub kreację przy zachowaniu pozostałych warunków.",
+  },
+  {
+    problem: "Jest ruch, ale brak zapytań lub sprzedaży",
+    action: "Najpierw wyklucz błąd pomiaru i przetestuj formularz lub zakup. Następnie porównaj obietnicę reklamy z treścią strony, warunkami oferty i działaniem ścieżki na telefonie. Nie zawężaj targetowania, zanim nie sprawdzisz tych elementów.",
+  },
+  {
+    problem: "Formularz generuje kontakty niedopasowane do oferty",
+    action: "Doprecyzuj komunikat, warunki i pytania kwalifikujące. Omów jakość kontaktów z zespołem sprzedaży i przekaż tę wiedzę do planu testów. Najniższy koszt formularza nie musi oznaczać wartościowego potencjalnego klienta.",
+  },
+  {
+    problem: "Wyniki zmieniają się po modyfikacji ustawień",
+    action: "Sprawdź historię zmian, fazę uczenia, różnice w dostarczaniu i porównywane okresy. Nie zmieniaj jednocześnie budżetu, grupy, zdarzenia i kreacji. Jedna kontrolowana zmiana daje czytelniejszą odpowiedź niż seria poprawek.",
   },
 ];
 
 const faqItems = [
   {
-    question: "Ile czasu trwa optymalizacja kampanii Facebook Ads?",
-    answer: "Pierwsza faza (learning phase) trwa 7-10 dni, przez która Facebook uczy się kto konwertuje. Druga faza (optymalizacja) to 2-4 tygodnie obserwacji i testów. Rzeczywisty ROI widać po 30 dniach. Zalecenie: nie wyłączaj kampanii przed 2-4 tygodniami, nawet jeśli pierwsze wyniki są słabe — algorytm się jeszcze uczy.",
+    id: "koszt",
+    question: "Ile kosztuje reklama na Facebooku i Instagramie?",
+    answer: "Nie ma jednej stałej ceny za kliknięcie, kontakt lub zakup. Wydatek zależy m.in. od przyjętego budżetu, czasu emisji, konkurencji w aukcji, grupy odbiorców i kreacji. Osobno zaplanuj emisję, przygotowanie materiałów i ewentualną obsługę. Po teście oceń koszt działania powiązanego z celem zamiast polegać na ogólnym cenniku.",
   },
   {
-    question: "Jakie są najskuteczniejsze audiencje docelowe?",
-    answer: "Najlepsza audiencja to połączenie: 1) pieniężnie zamoż ludzie (income 100k+), 2) poprzedni klienci (custom audience), 3) podobni do klientów (lookalike audience). Dla nowych kampanii: zainteresowania + lokacja (precyzyjne). Facebook Audiences: Detailed Targeting (zainteresowania), Custom Audiences (lista emaili), Lookalike Audiences (podobni do klientów), Engagement Audiences (byli na stronie).",
+    id: "post",
+    question: "Ile kosztuje publikacja jednego posta na Facebooku?",
+    answer: "Publikacja zwykłego posta organicznego nie jest tym samym co płatna kampania i nie ma budżetu emisji. Koszt może dotyczyć przygotowania treści lub grafiki, jeśli zlecasz ich wykonanie. Gdy używasz promocji płatnej, określasz budżet reklamowy, a rzeczywiste koszty reklamy powstają w systemie aukcyjnym. Bezpłatne działania obejmują natomiast publikacje organiczne i odpowiadanie na komentarze; ich zasięg działa według innych zasad niż płatna emisja.",
   },
   {
-    question: "Jak długo powinien trwać A/B test na Facebooku?",
-    answer: "Minimum 2-3 dni dla kampanii z wysokim budżetem (1000+ zł), 5-7 dni dla średnich (500-1000 zł), 10-14 dni dla małych (100-300 zł). Słaba reguła palca: czekaj aż masz minimum 100 konwersji na wariant przed oceną. Przy 50-100 klikach na dzień, to 2-3 dni. Przy 5-10 klikach, to 10-20 dni.",
+    id: "czeste-reklamy",
+    question: "Dlaczego na Facebooku mam same reklamy?",
+    answer: "Wrażenie ciągłych reklam może zależeć od sposobu korzystania z serwisu, dostępnych treści i możliwości dopasowania reklam przez system. Użytkownik może sprawdzić dostępne ustawienia prywatności i preferencji reklamowych. Dla reklamodawcy ważna jest natomiast częstotliwość wyświetleń, wykluczenia oraz rotacja kreacji. To różne perspektywy i nie należy utożsamiać ich z jednym błędem kampanii.",
   },
   {
-    question: "Ile stron docelowych (landing pages) powinienem testować?",
-    answer: "Zamiast budować wiele landing page'i zaraz, najpierw testuj na stronie głównej lub ogólnej. Gdy kampania działa, wtedy twoż dedykowaną landing page'ę do konkretnego audience. Reguła: 1 kampania = 1 audience = 1 landing page. Mniej kombinacji = łatwiej analizować wyniki.",
+    id: "czy-skuteczna",
+    question: "Czy reklama na FB jest skuteczna?",
+    answer: "Reklama może wspierać dotarcie, pozyskiwanie kontaktów lub sprzedaż, ale nie działa automatycznie i nie daje gwarantowanego wyniku. Skuteczność trzeba ocenić dla konkretnego celu, oferty i kosztu działania. Przed uruchomieniem skonfiguruj pomiar, a po teście sprawdź jakość konwersji oraz ograniczenia atrybucji. Sama liczba reakcji lub wyświetleń nie przesądza o wartości biznesowej.",
   },
   {
-    question: "Jaka jest idealna długość tekstu reklamy na Facebooku?",
-    answer: "Tekst reklamy (body copy): 125-300 znaków dla maximum reach. Najlepiej: 2-3 zdania, jasna propozycja wartości, call-to-action. Unikaj tekstu wprost na obrazkach (Facebook penalizuje, zmniejszy reach). Jeśli tekst na grafice, to maksymalnie 20% powierzchni obrazu (Facebook Policy).",
+    id: "problem",
+    question: "Dlaczego reklama na Facebooku nie działa?",
+    answer: "Najpierw rozróżnij brak emisji, małą liczbę kliknięć, brak konwersji i słabą jakość kontaktów. Sprawdź akceptację, rozliczenia, pomiar, stronę docelową i historię zmian. Dopiero potem testuj grupę lub kreację. Zmiana wszystkich ustawień naraz utrudnia ustalenie przyczyny i może zatrzeć punkt odniesienia.",
   },
   {
-    question: "Czy powinny uruchamiać kampanie na weekendach?",
-    answer: "To zależy od Twojej branży. Weekendy: wyższe CPM (drożej), ale bardziej zaangażowani użytkownicy. Weekdays: niższy koszt, więcej traffic. Sprzedaż online, e-commerce: weekendy LEPSZE. B2B, usługi biurowe: weekdays LEPSZE. Testuj obie i analizuj ROI — nie koszt, ale ROI.",
+    id: "czas",
+    question: "Jak długo reklama powinna zbierać dane?",
+    answer: "Nie ma jednej liczby dni odpowiedniej dla każdej kampanii. Czas oceny zależy od cyklu decyzji klienta, liczby zdarzeń, przyjętego limitu i zmienności wyników. Uwzględnij fazę uczenia oraz warunki testu, ale nie czekaj bezczynnie przy błędnym pomiarze. Przed startem zapisz, jakie dane i jaki zakres jakości są potrzebne do decyzji.",
   },
   {
-    question: "Czy retargeting jest droższy niż kampanie do nowych ludzi?",
-    answer: "Nie, retargeting (remarketing) jest TANIEJ. CPM retargetingu: 5-15 zł (vs 10-30 zł do nowych). CPC retargetingu: 0,20-0,80 zł (vs 0,50-2 zł do nowych). Konwersje retargetingu: 2-5x wyższe. Dlatego każda kampania powinna zawierać 40% budżetu na retargeting — ludzie którzy byli na Twojej stronie już Cię znają.",
+    id: "strona",
+    question: "Czy do reklamy na Facebooku potrzebna jest strona internetowa?",
+    answer: "Nie każdy cel wymaga przejścia na zewnętrzną stronę, ponieważ przy odpowiedniej konfiguracji można korzystać np. z formularza lub wiadomości. Strona jest jednak potrzebna, gdy kampania ma prowadzić do oferty online, zakupu w sklepie lub zdarzenia mierzonego w witrynie. W każdym przypadku sprawdź aktualne wymagania dotyczące zasobów firmy w panelu Meta.",
   },
   {
-    question: "Czy Facebook Ads działa dla branż B2B (biznes-to-biznes)?",
-    answer: "Tak, ale wymaga innego podejścia. Zamiast sprzedaży bezpośredniej, Facebook to generowanie leadów (Lead Form Ads, Messenger Ads) i brand awareness dla decydentów. Dobrze działa dla: oprogramowania, konsultingu, agencji, usług dla firm. Słabiej: produkty bardzo niszowe bez jasnej audiencji. Klucz: celuj na osoby z funkcją (VP, Manager, Director) w LinkedIn, potem retargetuj na Facebooku.",
-  },
-];
-
-const campaignStructure = [
-  {
-    level: "Kampania (Campaign)",
-    opis: "Najwyższy poziom — definiujesz cel (conversions, traffic, engagement). Facebook używa tego do optymalizacji algorytmu. Jeden cel per kampanię.",
-    przykład: "Kampania Sprzedaż produktu X — cel CONVERSIONS",
+    id: "promuj",
+    question: "Promuj post czy Menedżer reklam — co wybrać?",
+    answer: "Przycisk „Promuj post” upraszcza promocję istniejącej treści i może wystarczyć do prostego działania. Menedżer reklam daje pełniejszą strukturę kampanii, kontrolę zestawów, wariantów kreacji, pomiaru i testów. Wybór zależy od celu oraz złożoności konfiguracji, a nie od obietnicy, że jedna ścieżka zawsze zapewni lepszy wynik.",
   },
   {
-    level: "Zestaw reklam (Ad Set)",
-    opis: "Druga warstwa — tutaj ustawiasz audience (kogo chcesz celować), budżet, harmonogram, placement (gdzie pokazać), bid strategy.",
-    przykład: "Ad Set Kobiety 25-35 Warszawa + Kraków, CPM bid, 500 zł/dzień",
+    id: "grupa",
+    question: "Jaka grupa docelowa jest najlepsza na początek?",
+    answer: "Nie ma uniwersalnie najlepszej grupy. Punktem wyjścia są klienci, obszar działania, problem rozwiązywany przez ofertę i dostępne, legalnie wykorzystywane dane. Możesz porównać szeroką grupę, kryteria szczegółowe lub remarketing, jeśli masz wystarczające źródło. Oceń jakość działań i zapisz założenia zamiast kopiować cudzą listę zainteresowań.",
   },
   {
-    level: "Reklama (Ad)",
-    opis: "Trzecia warstwa — sam creative (zdjęcie, video, tekst, link). Jeden Ad Set może mieć wiele reklam (A/B testy).",
-    przykład: "Ad Video 30s, Ad2 Carousel, Ad3 Static image — testowanie",
+    id: "b2b",
+    question: "Czy reklama na Facebooku sprawdza się w B2B?",
+    answer: "Może być stosowana w B2B, ale konfiguracja powinna uwzględniać dłuższy proces decyzyjny i rolę osób wpływających na zakup. Przydatne bywają treści wyjaśniające problem, formularz z właściwymi pytaniami i pomiar dalszych etapów rozmów. Same stanowiska lub zainteresowania nie potwierdzają intencji zakupowej, dlatego oceniaj zgodność kontaktów z profilem klienta.",
+  },
+  {
+    id: "skutecznosc",
+    question: "Jak mierzyć skuteczność reklamy na Facebooku?",
+    answer: "Wybierz główną metrykę odpowiadającą celowi: zasięg dla dotarcia, wejścia dla ruchu albo konkretną konwersję dla kontaktów i sprzedaży. Dodaj koszt działania, jakość ruchu i informacje z procesu sprzedaży. Porównuj te same definicje zdarzeń, okna atrybucji i podobne okresy. Sam wynik z panelu nie zastępuje danych o marży i jakości leadów.",
   },
 ];
 
 export default function BlogFacebookAdsPoradnik() {
   return (
-    <Layout>
+    <Layout workPlacement="after-main">
       <SEOHead
-        title="Facebook Ads poradnik - jak tworzyć skuteczne reklamy? 2025"
-        description="Praktyczny poradnik Facebook Ads: struktura kampanii, targetowanie, typy reklam, typowe błędy, FAQ. Dowiedz się jak tworzyć skuteczne kampanie reklamowe."
-        canonical="https://www.fotz-studio.pl/blog/facebook-ads-poradnik"
-
-        keywords="Facebook Ads poradnik - jak tworzyć skuteczne reklamy? 2025, Facebook Ads poradnik - jak tworzyć skuteczne reklamy? 2025 poradnik, Facebook Ads poradnik - jak tworzyć skuteczne reklamy? 2025 strategia, Facebook Ads poradnik - jak tworzyć skuteczne reklamy? 2025 jak zrobić, Facebook Ads poradnik - jak tworzyć skuteczne reklamy? 2025 marketing, Facebook Ads poradnik - jak tworzyć skuteczne reklamy? 2025 przykłady, Facebook Ads poradnik - jak tworzyć skuteczne reklamy? 2025 w Polsce"
+        title={seoTitle}
+        description={seoDescription}
+        canonical={canonicalUrl}
+        ogType="article"
       />
-      <ArticleSchema
-        title="Facebook Ads poradnik - jak tworzyć skuteczne reklamy? 2025"
-        description="Krok po kroku przewodnik tworzenia kampanii Facebook Ads: od struktury kampanii, przez targetowanie, do unikania typowych błędów. Zawiera FAQ i praktyczne przykłady."
-        url="https://www.fotz-studio.pl/blog/facebook-ads-poradnik"
-        datePublished="2025-04-12"
-      />
+      <BreadcrumbSchema items={breadcrumbs} />
+      <ArticleSchema data={articleData} />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
-          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
-          { name: "Facebook Ads poradnik", url: "https://www.fotz-studio.pl/blog/facebook-ads-poradnik" },
-        ]}/>
 
-      <section className="bg-gradient-to-br from-gray-900 via-yellow-900 to-amber-900 text-white py-20 px-4">
-        <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs items={[
-              { name: "Home", url: "/" },
-              { name: "Blog", url: "/blog" },
-              { name: "Facebook Ads poradnik", url: "/blog/facebook-ads-poradnik" },
-            ]}/>
-          <div className="mt-8">
-            <span className="inline-block bg-yellow-600 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
-              Poradnik / Facebook Ads / Reklama online
-            </span>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Facebook Ads poradnik — jak tworzyć skuteczne reklamy w 2025?
-            </h1>
-            <p className="text-xl text-gray-200 mb-8 max-w-3xl">
-              Praktyczny przewodnik krok po kroku: od struktury kampanii, targetowania, typów reklam, aż do unikania błędów które kosztują Cię pieniądze.
+      <article id="article-content" className="min-h-screen bg-white">
+        <header className="bg-gradient-to-r from-blue-700 to-indigo-800 text-white py-16 px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex items-center gap-3 mb-4">
+              <Target className="w-8 h-8" aria-hidden="true" />
+              <span className="text-sm font-semibold uppercase tracking-wide">Poradnik konfiguracji kampanii</span>
+            </div>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">{pageTitle}</h1>
+            <p className="text-lg md:text-xl text-blue-100 max-w-3xl">
+              Od strategii i przygotowania konta przez cel, budżet, odbiorców i kreacje aż po pomiar oraz kontrolowaną optymalizację.
             </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {[
-                { label: "Typy reklam", value: "7 formatów" },
-                { label: "Błędy do unikania", value: "6 najczęstszych" },
-                { label: "Faz optymalizacji", value: "2-4 tygodnie" },
-                { label: "FAQ", value: "8 odpowiedzi" },
-              ].map((s) => (
-                <div key={s.label} className="bg-white/10 rounded-lg p-4 text-center">
-                  <div className="text-lg font-bold text-yellow-300">{s.value}</div>
-                  <div className="text-sm text-gray-300">{s.label}</div>
-                </div>
-              ))}
+            <div className="mt-6 flex flex-wrap gap-x-4 gap-y-2 text-sm">
+              <div>Opublikowano: 12 kwietnia 2025</div>
+              <div aria-hidden="true">|</div>
+              <div>Aktualizacja: 11 listopada 2026</div>
             </div>
           </div>
-        </div>
-      </section>
+        </header>
 
-      <section className="py-12 px-4 bg-gray-50">
-        <div className="max-w-4xl mx-auto">
-          <FadeInView>
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Dlaczego Facebook Ads wciąż dominuje w 2025?</h2>
-            <p className="text-lg text-gray-700 mb-6">
-              Facebook i Instagram to wciąż najpotężniejsze platformy reklamowe dla generowania leadów i sprzedaży. Dlaczego? Kilka powodów:
-            </p>
-            <ul className="list-disc list-inside text-gray-700 space-y-3 mb-6">
-              <li><strong>Precyzyjne targetowanie:</strong> 30+ warstw audience (wiek, płeć, zainteresowania, zachowania, dochód, status, historia zakupów, status związku).</li>
-              <li><strong>Pixel tracking:</strong> Piksel Facebooka śledzi każdy krok na stronie — od widoku produktu do zakupu. Żaden inny medium tego nie robi.</li>
-              <li><strong>Niska cena wjazdu:</strong> Możesz zacząć od 100 zł/dzień, podczas gdy Google Ads wymaga minimum 1000 zł/miesiąc.</li>
-              <li><strong>Retargeting:</strong> Ludzie którzy widzieli Twoją reklamę, ale nie kliknęli, wciąż Cię widzą — to konwersja 2-5x tańsza.</li>
-              <li><strong>Wideo dominuje:</strong> TikTok zabrał młodzież, ale ich rodzice i profesjonaliści wciąż są na Facebooku i oglądają video Reels.</li>
-            </ul>
-            <p className="text-gray-700 font-semibold">
-              Podsumowanie: Facebook Ads to wciąż najefektywniejszy sposób na dotarcie do swoich klientów. Wymaga umiejętności, ale ROI 300-500% jest realistyczny.
-            </p>
-          </FadeInView>
-        </div>
-      </section>
+        <div className="max-w-4xl mx-auto px-4 py-12">
+          <nav aria-label="Spis treści" className="mb-12 rounded-lg border border-blue-100 bg-blue-50 p-6">
+            <h2 className="text-xl font-bold text-gray-900 mb-4">W tym poradniku</h2>
+            <ol className="grid md:grid-cols-2 gap-3 text-gray-700 list-decimal list-inside">
+              <li><a className="hover:text-blue-700 hover:underline" href="#podstawy">Jak działa reklama na Facebooku?</a></li>
+              <li><a className="hover:text-blue-700 hover:underline" href="#strategia">Strategia i brief kampanii</a></li>
+              <li><a className="hover:text-blue-700 hover:underline" href="#przygotowanie">Konto, strona i pomiar</a></li>
+              <li><a className="hover:text-blue-700 hover:underline" href="#struktura">Struktura i cele kampanii</a></li>
+              <li><a className="hover:text-blue-700 hover:underline" href="#konfiguracja">Konfiguracja krok po kroku</a></li>
+              <li><a className="hover:text-blue-700 hover:underline" href="#targetowanie">Grupy odbiorców</a></li>
+              <li><a className="hover:text-blue-700 hover:underline" href="#formaty">Formaty i umiejscowienia</a></li>
+              <li><a className="hover:text-blue-700 hover:underline" href="#budzet">Budżet i koszty</a></li>
+              <li><a className="hover:text-blue-700 hover:underline" href="#pomiar">Metryki i optymalizacja</a></li>
+              <li><a className="hover:text-blue-700 hover:underline" href="#faq">Najczęstsze pytania</a></li>
+            </ol>
+          </nav>
 
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-4xl mx-auto">
-          <FadeInView>
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">Typy reklam — jakiego formatu użyć?</h2>
-            <div className="overflow-x-auto my-8">
+          <section id="podstawy" className="mb-14 scroll-mt-24">
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">Czym jest i jak działa reklama na Facebooku?</h2>
+            <p className="text-lg text-gray-700 mb-5 leading-relaxed">
+              System reklamowy Meta umożliwia prowadzenie płatnych kampanii w swoim ekosystemie. Reklama na Facebooku może promować produkt, usługę, treść lub działanie w aplikacji. Kampanie Facebook mogą obejmować także Instagram i inne dostępne powierzchnie, dlatego konfiguracja w jednym panelu nie ogranicza emisji wyłącznie do Facebooka.
+            </p>
+            <p className="text-gray-700 mb-5 leading-relaxed">
+              Reklamodawca określa cel, limit wydatków, odbiorców i materiał, a system rozstrzyga możliwości emisji w aukcji. Nie jest to wyłącznie konkurs najwyższej stawki: znaczenie ma również dopasowanie i przewidywana wartość reklamy dla odbiorcy. Algorytmy Meta wykorzystują wybrane ustawienia oraz dostępne sygnały, ale nie gwarantują leadów ani sprzedaży.
+            </p>
+            <p className="text-gray-700 mb-6 leading-relaxed">
+              W praktyce kampania reklamowa powinna odpowiadać na jedno pytanie: jakie działanie użytkownika ma wesprzeć i jak sprawdzimy jego wartość? To odróżnia uporządkowane prowadzenie kampanii od przypadkowego klikania ustawień. Samo wyświetlanie komunikatu jest etapem procesu, a nie końcowym wynikiem biznesowym.
+            </p>
+            <div className="bg-gray-50 border-l-4 border-blue-600 p-6">
+              <h3 className="font-bold text-lg text-gray-900 mb-3">Promuj post czy kampania w Menedżerze reklam?</h3>
+              <p className="text-gray-700 mb-3">
+                Przycisk „Promuj post” upraszcza płatne promowanie opublikowanej treści. Menedżer reklam Facebook pozwala natomiast zbudować kampanię, zestawy reklam i pojedyncze reklamy, uporządkować testy oraz wybrać dokładniejszy pomiar. To wygodniejsza ścieżka, gdy chcesz tworzyć skuteczne reklamy na Facebooku bez publikowania każdego wariantu jako zwykłego posta.
+              </p>
+              <p className="text-gray-700">
+                Obie ścieżki należą do płatnych działań reklamowych. Żadna nie jest automatycznie skuteczniejsza. Przy prostej promocji jednej treści ważna jest wygoda, a przy porównaniu kilku hipotez — kontrola struktury i danych.
+              </p>
+            </div>
+          </section>
+
+          <section id="strategia" className="mb-14 scroll-mt-24">
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">Strategia Facebook Ads: zacznij przed otwarciem panelu</h2>
+            <p className="text-gray-700 mb-6 leading-relaxed">
+              Strategia Facebook Ads łączy cel biznesowy, ofertę, odbiorców, pomiar i sposób podejmowania decyzji. Dzięki niej konfiguracja kampanii Facebook Ads nie jest listą przypadkowych opcji. Plan marketingowy powinien zmieścić się w krótkim briefcie, który da się później porównać z wynikami.
+            </p>
+            <ol className="space-y-5 text-gray-700 list-decimal list-inside">
+              <li><strong className="text-gray-900">Zapisz jeden priorytet.</strong> Może to być rozpoznawalność marki, kontakt z potencjalnymi klientami, sprzedaż lub promowanie aplikacji mobilnej. Przypisz do niego zdarzenie i źródło danych, zanim wybierzesz cel kampanii w panelu.</li>
+              <li><strong className="text-gray-900">Opisz ofertę i grupę docelową.</strong> Ustal, jaki problem rozwiązujesz, dla kogo i na jakich warunkach. Grupa docelowa to nie tylko wiek czy lokalizacja; istotne są także potrzeba, kontekst i etap znajomości marki.</li>
+              <li><strong className="text-gray-900">Policz dopuszczalny koszt działania.</strong> Uwzględnij marżę, koszty realizacji i jakość kontaktów. Dzięki temu koszt kampanii ocenisz względem ekonomii firmy, a nie ogólnych tabel z internetu.</li>
+              <li><strong className="text-gray-900">Zaplanuj ścieżkę po kliknięciu.</strong> Zdecyduj, czy odbiorca trafia na stronę, formularz Lead Ads, wiadomość czy kartę produktu. Usuń techniczne przeszkody przed zakupem ruchu.</li>
+              <li><strong className="text-gray-900">Sformułuj hipotezę testu.</strong> Przykładowo sprawdzasz, czy demonstracja zastosowania produktu lepiej wyjaśnia ofertę niż statyczna grafika. Zapisz główny wskaźnik i warunki porównania.</li>
+            </ol>
+            <p className="text-gray-700 mt-6 leading-relaxed">
+              W zespole specjalista Facebook Ads może odpowiadać za konfigurację i raportowanie, ale właściciel firmy nadal zna warunki oferty i jakość rozmów z klientami. Agencja marketingowa, freelancer lub zespół wewnętrzny potrzebuje tych samych danych wejściowych. Bez nich nawet poprawna technicznie konfiguracja nie odpowie na pytanie o opłacalność.
+            </p>
+          </section>
+
+          <section id="przygotowanie" className="mb-14 scroll-mt-24">
+            <h2 className="text-3xl font-bold mb-6 text-gray-900 flex items-center gap-3">
+              <Users className="w-8 h-8 text-indigo-600" aria-hidden="true" />
+              Konto Meta i pomiar przed kampanią reklamową
+            </h2>
+            <ol className="space-y-5 text-gray-700 list-decimal list-inside">
+              <li><strong className="text-gray-900">Zasoby i uprawnienia firmy.</strong> Uporządkuj stronę firmy na Facebooku, konto reklamowe i portfolio firmowe w odpowiednim interfejsie Meta for Business. Nadaj dostęp tylko osobom, które go potrzebują, i sprawdź role przed rozpoczęciem pracy.</li>
+              <li><strong className="text-gray-900">Rozliczenia i zabezpieczenia.</strong> Uzupełnij wymagane dane, metodę płatności i dostępne zabezpieczenia konta. Przy współpracy z zewnętrznym zespołem przekazuj uprawnienia do zasobów zamiast współdzielić prywatne konto.</li>
+              <li><strong className="text-gray-900">Stronę docelową lub formularz.</strong> Sprawdź treść oferty, warunki, dane kontaktowe i działanie na urządzeniach mobilnych. Jeśli kierujesz ruch do sklepu internetowego, przejdź całą ścieżkę od produktu do potwierdzenia zamówienia.</li>
+              <li><strong className="text-gray-900">Pomiar zdarzeń.</strong> Dla działań w witrynie skonfiguruj odpowiedni zbiór danych, Facebook Pixel i — jeśli jest to uzasadnione oraz dostępne — integrację Conversions API. Sprawdź zgodność ze zgodami, polityką prywatności i zasadami platformy.</li>
+              <li><strong className="text-gray-900">Prawa do materiałów.</strong> Zweryfikuj licencje zdjęć, nagrań, muzyki i zgody na wykorzystanie wypowiedzi. Aktualne zasady oraz wymagania sprawdzaj w <a href="https://pl-pl.facebook.com/business/help/116118951805237" target="_blank" rel="noreferrer" className="text-blue-700 font-medium hover:underline">oficjalnym Centrum pomocy Meta for Business</a>.</li>
+            </ol>
+            <p className="text-gray-700 mt-6 leading-relaxed">
+              Nazwy ustawień i zakres funkcji mogą różnić się między kontami oraz zmieniać w czasie. Ten poradnik opisuje proces decyzyjny, a aktualne komunikaty i dokumentacja w Twoim koncie pozostają źródłem wymagań technicznych. Nie zakładaj, że funkcja widoczna na cudzym zrzucie ekranu będzie dostępna w identycznej formie. Opisy przygotowane z myślą o Facebooku w 2025 roku wymagają sprawdzenia pod kątem bieżącego panelu.
+            </p>
+          </section>
+
+          <section id="struktura" className="mb-14 scroll-mt-24">
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">Menedżer reklam Facebook: struktura i cel kampanii</h2>
+            <p className="text-gray-700 mb-6 leading-relaxed">
+              W Menedżerze reklam Meta pracujesz na trzech poziomach. Zrozumienie ich ról ułatwia zmiany bez naruszania całej konfiguracji. Poziom kampanii odpowiada za nadrzędny kierunek, zestaw za warunki emisji, a reklama za to, co widzi odbiorca.
+            </p>
+            <div className="overflow-x-auto mb-8">
               <table className="w-full text-sm border-collapse">
+                <caption className="text-left text-gray-700 mb-3">Trzy poziomy konfiguracji i najważniejsze decyzje</caption>
                 <thead>
-                  <tr className="bg-gray-900">
-                    <th className="text-left p-3 font-semibold text-white border border-gray-700">Typ</th>
-                    <th className="text-left p-3 font-semibold text-white border border-gray-700">Format</th>
-                    <th className="text-left p-3 font-semibold text-white border border-gray-700">Cel</th>
-                    <th className="text-left p-3 font-semibold text-white border border-gray-700">Najlepiej dla</th>
+                  <tr className="bg-gray-900 text-white">
+                    <th scope="col" className="text-left p-3 border border-gray-700">Poziom</th>
+                    <th scope="col" className="text-left p-3 border border-gray-700">Co konfigurujesz?</th>
+                    <th scope="col" className="text-left p-3 border border-gray-700">Przykładowa decyzja</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {adFormats.map((ad, i) => (
-                    <tr key={ad.typ} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
-                      <td className="p-3 border border-gray-200 font-semibold text-gray-900">{ad.typ}</td>
-                      <td className="p-3 border border-gray-200 text-gray-600 text-xs">{ad.format}</td>
-                      <td className="p-3 border border-gray-200 text-gray-700">{ad.cel}</td>
-                      <td className="p-3 border border-gray-200 text-gray-600 text-xs">{ad.najlepsiej}</td>
-                    </tr>
-                  ))}
+                  <tr><th scope="row" className="text-left p-3 border border-gray-200 bg-gray-50">Kampania</th><td className="p-3 border border-gray-200">Cel, czasem budżet i ustawienia nadrzędne.</td><td className="p-3 border border-gray-200">Czy priorytetem jest kontakt, ruch czy sprzedaż?</td></tr>
+                  <tr><th scope="row" className="text-left p-3 border border-gray-200 bg-gray-50">Zestaw reklam</th><td className="p-3 border border-gray-200">Odbiorcy, harmonogram, umiejscowienia, zdarzenie i część ustawień budżetu.</td><td className="p-3 border border-gray-200">Którą grupę i jakie warunki emisji testujesz?</td></tr>
+                  <tr><th scope="row" className="text-left p-3 border border-gray-200 bg-gray-50">Reklama</th><td className="p-3 border border-gray-200">Kreacja, tekst, CTA, link i identyfikacja wariantu.</td><td className="p-3 border border-gray-200">Który argument i format ma zrozumieć odbiorca?</td></tr>
                 </tbody>
               </table>
             </div>
-            <p className="text-gray-700 mt-6">
-              <strong>Moja rekomendacja dla początkujących:</strong> Zacznij od Video Ads (maksymalny engagement) lub Carousel Ads (jeśli masz produkty). Potem testuj inne formaty i analizuj metrics.
+            <h3 className="text-xl font-bold text-gray-900 mb-4">Jak wybrać cel kampanii?</h3>
+            <p className="text-gray-700 mb-4 leading-relaxed">
+              Wybieraj cel według działania, które chcesz mierzyć, a nie według nazwy branży. Kampanie na FB do rozpoznawalności, ruchu i sprzedaży mogą korzystać z tej samej kreacji, ale system otrzyma inną instrukcję optymalizacji. Dlatego cel kampanii powinien współgrać z dostępnym zdarzeniem i sposobem obsługi wyniku.
             </p>
-          </FadeInView>
-        </div>
-      </section>
+            <ul className="space-y-3 text-gray-700 list-disc list-inside">
+              <li><strong>Rozpoznawalność:</strong> gdy priorytetem jest dotarcie z komunikatem i zapamiętanie marki.</li>
+              <li><strong>Ruch:</strong> gdy chcesz pozyskać wejścia w określone miejsce, pamiętając o jakości sesji.</li>
+              <li><strong>Zaangażowanie:</strong> gdy istotne są interakcje z treścią, wiadomości lub odtworzenia wideo, zależnie od dostępnych ustawień.</li>
+              <li><strong>Pozyskiwanie kontaktów:</strong> gdy zbierasz lead przez formularz, wiadomość, stronę lub inną obsługiwaną ścieżkę.</li>
+              <li><strong>Promocja aplikacji i sprzedaż:</strong> gdy dysponujesz odpowiednią konfiguracją oraz zdarzeniami dla aplikacji mobilnej albo zakupów.</li>
+            </ul>
+          </section>
 
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-4xl mx-auto">
-          <FadeInView>
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">Jak zbudować strukturę kampanii?</h2>
-            <p className="text-gray-700 mb-8">
-              Facebook Ads ma trzy warstwy. Zrozumienie tych warstw jest kluczem do efektywnej kampanii i łatwego skalowania budżetu.
-            </p>
-
-            <div className="space-y-6 mb-8">
-              {campaignStructure.map((item, idx) => (
-                <div key={item.level} className="border-l-4 border-yellow-400 pl-6 py-4 bg-white rounded">
-                  <div className="flex items-baseline gap-3 mb-2">
-                    <span className="text-2xl font-bold text-yellow-600">#{idx + 1}</span>
-                    <h3 className="text-xl font-bold text-gray-900">{item.level}</h3>
-                  </div>
-                  <p className="text-gray-700 mb-3">{item.opis}</p>
-                  <p className="text-gray-600 italic text-sm">Przykład: {item.przykład}</p>
-                </div>
-              ))}
-            </div>
-
-            <div className="bg-blue-50 border-l-4 border-blue-400 pl-6 py-4 rounded">
-              <p className="text-gray-900 font-semibold mb-2">Dlaczego warto znać tę strukturę?</p>
-              <ul className="text-gray-700 space-y-2 text-sm">
-                <li>Zmieniasz audience? Zmień Ad Set, nie całą kampanię.</li>
-                <li>Chcesz A/B testować creative? Dodaj kilka reklam w tym samym Ad Set.</li>
-                <li>Skalujesz budżet? Zwiększ budżet w Ad Set, nie tworz nową kampanię.</li>
-                <li>Analizujesz wyniki? Patrz na metryki na poziomie Ad (najniższy — najdokładniejszy).</li>
-              </ul>
-            </div>
-          </FadeInView>
-        </div>
-      </section>
-
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-4xl mx-auto">
-          <FadeInView>
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">Targetowanie — najważniejsza umiejętność</h2>
-            <p className="text-gray-700 mb-6">
-              Targeting to gdzie Twoje pieniądze wydają się lub przepadają. Zły targeting = pieniądze na wiatr. Doby targeting = ROI 300%+.
-            </p>
-
-            <div className="space-y-6 mb-8">
-              <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-yellow-400">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">1. Detailed Targeting (zainteresowania)</h3>
-                <p className="text-gray-700 mb-3">
-                  To co widzisz w panelu reklamowym Facebook'a. Zamiast celować wszystkim, celuj konkretnym zainteresowaniom.
-                </p>
-                <p className="text-sm text-gray-600">Przykład: Zamiast Wszyscy użytkownicy, celuj: Kobiety 25-45, zainteresowane fitness + zdrowe odżywianie + joga, które lubią Travel (ostatni krok do zrefinowania publiczności)</p>
-              </div>
-
-              <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-yellow-400">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">2. Custom Audiences (własna lista)</h3>
-                <p className="text-gray-700 mb-3">
-                  Wgraj listę emaili swoich klientów lub osób z formularza. Facebook znajdzie ich i pokaże im reklamę.
-                </p>
-                <p className="text-sm text-gray-600">Przykład: 1000 emaili poprzednich klientów — wyśli im promocję wprost na Facebooku, za 0,20 zł na klik (retargeting tańszy).</p>
-              </div>
-
-              <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-yellow-400">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">3. Lookalike Audiences (podobni do klientów)</h3>
-                <p className="text-gray-700 mb-3">
-                  Facebook analizuje Twoich klientów i znajduje podobnych ludzi. Automatyczne rozszerzanie reach'u na wysokiej jakości odbiorców.
-                </p>
-                <p className="text-sm text-gray-600">Przykład: 100 klientów którzy kupili — Facebook znajduje 100k+ podobnych w Polsce. 1-5% Lookalike to najskuteczniejsza audiencja.</p>
-              </div>
-
-              <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-yellow-400">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">4. Engagement Audiences (byli na stronie)</h3>
-                <p className="text-gray-700 mb-3">
-                  Retargeting — pokazuj reklamy osobom które były na Twojej stronie, ale nie kupiły.
-                </p>
-                <p className="text-sm text-gray-600">Przykład: 5000 osób za ostatnie 30 dni odwiedziło Twoją stronę — pokaż im Carousel z produktami które przeglądali. 50% konwersja retargetingu vs 2% nowych.</p>
-              </div>
-            </div>
-
-            <div className="bg-yellow-50 border-l-4 border-yellow-400 pl-6 py-4 rounded">
-              <p className="text-gray-900 font-semibold mb-2">Strategia targetowania (poradnik):</p>
-              <ol className="text-gray-700 space-y-2 text-sm list-decimal list-inside">
-                <li>Zacznij od Custom Audience (lista klientów) + Lookalike 1-5%.</li>
-                <li>Potem testuj Detailed Targeting z mikrosegmentami (nie szerokimi zainteresowaniami).</li>
-                <li>Zawsze uruchamiaj retargeting Ad Set — ludzie już Cię znają, konwersja taniej.</li>
-                <li>Analizuj Audience Insights — which segment konwertuje najlepiej, podwój budżet dla niego.</li>
-              </ol>
-            </div>
-          </FadeInView>
-        </div>
-      </section>
-
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-4xl mx-auto">
-          <FadeInView>
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">Typowe błędy w Facebook Ads — co Cię rujnuje?</h2>
-            <p className="text-gray-700 mb-8">
-              Nawet dobrzy marketerzy robią te błędy. Jeśli je unikniesz, będziesz już lepszy niż 80% konkurencji.
-            </p>
-
-            <div className="space-y-6">
-              {commonMistakes.map((mistake, idx) => (
-                <div key={mistake.blad} className="bg-white p-6 rounded-lg border-l-4 border-red-400">
-                  <div className="flex items-start gap-4">
-                    <div className="text-3xl font-bold text-red-500 flex-shrink-0">#{idx + 1}</div>
-                    <div className="flex-1">
-                      <h3 className="text-xl font-bold text-gray-900 mb-2">{mistake.blad}</h3>
-                      <p className="text-gray-700 mb-3">
-                        <strong>Dlaczego to problem:</strong> {mistake.opis}
-                      </p>
-                      <p className="text-gray-700 bg-green-50 p-3 rounded border-l-4 border-green-400">
-                        <strong>Rozwiązanie:</strong> {mistake.rozwiazanie}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </FadeInView>
-        </div>
-      </section>
-
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-4xl mx-auto">
-          <FadeInView>
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">Najczęściej zadawane pytania</h2>
-
-            <div className="space-y-6">
-              {faqItems.map((item, idx) => (
-                <div key={idx} className="bg-gray-50 rounded-lg p-6 border-l-4 border-yellow-400">
-                  <h3 className="text-lg font-bold text-gray-900 mb-3">
-                    Q: {item.question}
-                  </h3>
-                  <p className="text-gray-700">
-                    <span className="font-semibold text-yellow-600">A:</span> {item.answer}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </FadeInView>
-        </div>
-      </section>
-
-      <section className="py-16 px-4 bg-gray-900 text-white">
-        <div className="max-w-4xl mx-auto">
-          <FadeInView>
-            <h2 className="text-3xl font-bold mb-6">Checklist przed uruchomieniem kampanii</h2>
-            <div className="space-y-3">
-              {[
-                "Zainstalowałem Facebook pixel na stronie (konwersje + retargeting)",
-                "Zdefiniowałem cel kampanii (conversions, traffic, lead generation, awareness)",
-                "Wybrałem precyzyjną audience (nie szerokie zainteresowania)",
-                "Testowałem A/B (2 wersje creative, audience lub copy)",
-                "Budżet wynosi minimum 300 zł/miesiąc (aby Facebook się nauczył)",
-                "Landing page ma jasny CTA (rezerwacja, telefon, formularz, zakup)",
-                "Creative (zdjęcie/video) przyciąga uwagę w pierwszej sekundzie",
-                "Copy ma jasną propozycję wartości (nie ogólne zaproszenia)",
-                "Ustawiłem limit budżetu dziennego aby nie wydać zbyt dużo",
-                "Planuję czekać 2-4 tygodnie zanim ocenię wyniki (Facebook potrzebuje czasu)",
-              ].map((item, idx) => (
-                <label key={idx} className="flex items-center gap-3 cursor-pointer">
-                  <input
-                    type="checkbox"
-                    className="w-5 h-5 rounded border-gray-500 cursor-pointer"
-                  />
-                  <span className="text-gray-200">{item}</span>
-                </label>
-              ))}
-            </div>
-          </FadeInView>
-        </div>
-      </section>
-
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <FadeInView>
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Chcesz, aby my zarządzali Twoją kampanią Facebook Ads?
+          <section id="konfiguracja" className="mb-14 scroll-mt-24">
+            <h2 className="text-3xl font-bold mb-6 text-gray-900 flex items-center gap-3">
+              <Zap className="w-8 h-8 text-amber-500" aria-hidden="true" />
+              Jak ustawić reklamę na Facebooku krok po kroku?
             </h2>
-            <p className="text-lg text-gray-700 mb-8">
-              Agencja FOTZ specjalizuje się w kampaniach Facebook Ads dla małych i średnich firm. Obsługa od A do Z: setup, targeting, creative, optymalizacja, raporting.
+            <p className="text-gray-700 mb-6 leading-relaxed">
+              Poniższa kolejność prowadzi przez tworzenie reklamy od celu do publikacji. Niektóre ekrany mogą mieć inną nazwę lub kolejność, ale logika decyzji pozostaje taka sama: najpierw wynik i pomiar, potem warunki emisji, na końcu kreacja i kontrola.
             </p>
-            <Link
-              to="/kontakt"
-              className="inline-block bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-lg transition-colors"
-            >
-              Zarezerwuj bezpłatną konsultację
-            </Link>
-          </FadeInView>
-        </div>
-      </section>
+            <div className="bg-gray-50 rounded-lg p-6 md:p-8 space-y-6">
+              {campaignSteps.map((step, index) => (
+                <div key={step.title} className="flex gap-4">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold">{index + 1}</div>
+                  <div>
+                    <h3 className="font-bold text-lg text-gray-900 mb-2">{step.title}</h3>
+                    <p className="text-gray-700 leading-relaxed">{step.text}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
 
-      <ContactSection />
+          <section id="targetowanie" className="mb-14 scroll-mt-24">
+            <h2 className="text-3xl font-bold mb-6 text-gray-900 flex items-center gap-3">
+              <Target className="w-8 h-8 text-green-600" aria-hidden="true" />
+              Jak targetować reklamy na Facebooku i wybrać grupę docelową?
+            </h2>
+            <p className="text-gray-700 mb-6 leading-relaxed">
+              Targetowanie reklam powinno wynikać z wiedzy o kliencie, nie z jak najdłuższej listy zainteresowań. Możesz targetować nowe osoby, tworzyć reklamy do osób powiązanych z marką albo porównać oba podejścia. Oddziel hipotezę o segmencie od jakości samego komunikatu.
+            </p>
+            <div className="space-y-4 mb-6">
+              <div className="bg-green-50 border-l-4 border-green-500 p-5">
+                <h3 className="font-bold text-gray-900 mb-2">Lokalizacja, demografia i zainteresowania</h3>
+                <p className="text-gray-700">Wybieraj cechy potwierdzone przez ofertę i rynek. Zainteresowania są wskazówką, a nie gwarancją intencji zakupowej. Nie zawężaj grup odbiorców przez stereotypy ani przypadkowe listy skopiowane z innego projektu.</p>
+              </div>
+              <div className="bg-blue-50 border-l-4 border-blue-500 p-5">
+                <h3 className="font-bold text-gray-900 mb-2">Custom Audiences i remarketing</h3>
+                <p className="text-gray-700">Własne grupy mogą obejmować osoby powiązane z firmą w dozwolonych źródłach, np. odwiedzające stronę lub reagujące na treści. Korzystaj z danych zgodnie z prawem, zgodami i zasadami Meta. Wyniki remarketingu analizuj oddzielnie od nowych odbiorców.</p>
+              </div>
+              <div className="bg-purple-50 border-l-4 border-purple-500 p-5">
+                <h3 className="font-bold text-gray-900 mb-2">Lookalike Audiences</h3>
+                <p className="text-gray-700">Grupa podobnych odbiorców wykorzystuje wskazane źródło jako punkt odniesienia. Sprawdź jakość, aktualność i zgodność źródła oraz porównaj tę opcję z szeroką grupą. Nie zakładaj z góry, że podobni użytkownicy będą lepszym segmentem.</p>
+              </div>
+              <div className="bg-orange-50 border-l-4 border-orange-500 p-5">
+                <h3 className="font-bold text-gray-900 mb-2">Szeroka grupa i rozszerzenia Advantage+</h3>
+                <p className="text-gray-700">Niektóre ustawienia pozwalają systemowi wyjść poza początkowe kryteria. Przed testem sprawdź aktywne rozszerzenia i szacowany zasięg. Szeroka grupa nie jest ani błędem, ani gwarantowanym rozwiązaniem — oceniaj jakość konwersji i stabilność wyników.</p>
+              </div>
+            </div>
+            <p className="text-gray-700 leading-relaxed">
+              Przy porównaniu segmentów zmieniaj jeden istotny element i pilnuj nakładania się grup między zestawami. Zbyt wiele małych zestawów utrudnia zebranie użytecznych danych. Natomiast jedna szeroka grupa bez zapisanej hipotezy nie powie, dlaczego kampania zadziałała w określony sposób.
+            </p>
+          </section>
+
+          <section id="formaty" className="mb-14 scroll-mt-24">
+            <h2 className="text-3xl font-bold mb-6 text-gray-900 flex items-center gap-3">
+              <Play className="w-8 h-8 text-purple-600" aria-hidden="true" />
+              Formaty reklamowe na Facebooku i miejsca wyświetlania reklam
+            </h2>
+            <p className="text-gray-700 mb-6 leading-relaxed">
+              Format reklamy określa konstrukcję kreacji, a umiejscowienie wskazuje powierzchnię emisji. Wybór odpowiedniego formatu reklamy zależy od historii, którą chcesz opowiedzieć, dostępnych materiałów i ścieżki działania. Nie ma formy reklamy, która zawsze zapewnia najlepszy wynik.
+            </p>
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <div className="border border-gray-200 rounded-lg p-6">
+                <Image className="w-7 h-7 text-blue-600 mb-3" aria-hidden="true" />
+                <h3 className="font-bold text-lg text-gray-900 mb-3">Obraz — Image Ads</h3>
+                <p className="text-gray-700">Jedna czytelna scena, produkt lub komunikat. To dobry punkt wyjścia do testu konkretnego argumentu. Na grafice pozostaw tylko tekst potrzebny do zrozumienia treści i sprawdź czytelność na małym ekranie.</p>
+              </div>
+              <div className="border border-gray-200 rounded-lg p-6">
+                <Play className="w-7 h-7 text-purple-600 mb-3" aria-hidden="true" />
+                <h3 className="font-bold text-lg text-gray-900 mb-3">Wideo — Video Ads</h3>
+                <p className="text-gray-700">Reklamy wideo pokazują użycie produktu, proces lub kolejne argumenty. Buduj kontekst od początku, dodaj napisy i sprawdź odbiór bez dźwięku. Nie zakładaj, że wideo zawsze będzie lepsze od obrazu — porównaj obie kreacje w teście.</p>
+              </div>
+              <div className="border border-gray-200 rounded-lg p-6">
+                <h3 className="font-bold text-lg text-gray-900 mb-3">Karuzela — Carousel Ads</h3>
+                <p className="text-gray-700">Kolejne karty mogą przedstawiać produkty, etapy usługi lub części jednej historii. Karuzela powinna mieć logiczną kolejność i funkcję każdej karty. Nie powtarzaj podobnych kadrów tylko po to, by zwiększyć liczbę elementów.</p>
+              </div>
+              <div className="border border-gray-200 rounded-lg p-6">
+                <h3 className="font-bold text-lg text-gray-900 mb-3">Kolekcja i katalog</h3>
+                <p className="text-gray-700">Przy odpowiedniej konfiguracji katalogu możesz połączyć materiał główny z produktami. To rozwiązanie dla sklepu internetowego wymaga poprawnych danych o ofercie i sprawdzenia dostępności formatu dla konta. Nie należy utożsamiać go z gwarantowaną sprzedażą.</p>
+              </div>
+              <div className="border border-gray-200 rounded-lg p-6 md:col-span-2">
+                <h3 className="font-bold text-lg text-gray-900 mb-3">Formularz — Lead Ads</h3>
+                <p className="text-gray-700">Lead Ads umożliwia pozyskiwanie danych w formularzu dostępnym w ekosystemie Meta. Dopasuj pytania do procesu obsługi i jasno opisz, co stanie się po wysłaniu zgłoszenia. Uwzględnij zgodę, politykę prywatności i sposób przekazania kontaktu do zespołu.</p>
+              </div>
+            </div>
+            <h3 className="text-xl font-bold text-gray-900 mb-4">Jak dobrać umiejscowienia?</h3>
+            <p className="text-gray-700 leading-relaxed">
+              Aktualności, Stories i Reels różnią się sposobem przeglądania oraz dostępną przestrzenią. Dostępność kolejnych miejsc zależy od celu, formatu i konfiguracji. Zamiast automatycznie przycinać jeden materiał do wszystkich powierzchni, obejrzyj podgląd i przygotuj potrzebne warianty. Oficjalne wymiary i limity sprawdzaj w panelu lub dokumentacji Meta przed produkcją.
+            </p>
+          </section>
+
+          <section id="budzet" className="mb-14 scroll-mt-24">
+            <h2 className="text-3xl font-bold mb-6 text-gray-900 flex items-center gap-3">
+              <BarChart3 className="w-8 h-8 text-blue-600" aria-hidden="true" />
+              Koszt reklamy na Facebooku: jak zaplanować budżet?
+            </h2>
+            <p className="text-gray-700 mb-5 leading-relaxed">
+              Koszt reklamy na Facebooku powstaje w systemie aukcyjnym i nie ma jednej sztywnej stawki za kliknięcie, kontakt lub zakup. Wpływają na niego m.in. cel, konkurencja, grupa, okres i kreacja. Dlatego planowanie zaczyna się od limitu wydatku oraz progu opłacalności, a nie od obietnicy stałego CPC albo CPM.
+            </p>
+            <div className="grid md:grid-cols-2 gap-6 mb-6">
+              <div className="border border-gray-300 rounded-lg p-6">
+                <h3 className="font-bold text-gray-900 mb-3">Budżet dzienny</h3>
+                <p className="text-gray-700">Pomaga zaplanować regularną emisję bez sztywnej daty końcowej. Sprawdź w panelu zasady rozdzielania wydatku między dni i dostępne limity. Wybierz kwotę, którą firma może przeznaczyć na zdobycie danych bez naruszania płynności.</p>
+              </div>
+              <div className="border border-gray-300 rounded-lg p-6">
+                <h3 className="font-bold text-gray-900 mb-3">Budżet całkowity</h3>
+                <p className="text-gray-700">Przypisuje limit do zaplanowanego czasu emisji. Jest przydatny przy zamkniętym teście lub działaniu z datą końcową. Przed zatwierdzeniem sprawdź harmonogram, sposób rozliczania i to, czy limit jest ustawiony na właściwym poziomie struktury.</p>
+              </div>
+            </div>
+            <h3 className="text-xl font-bold text-gray-900 mb-4">Jak oszacować budżet testu bez zgadywania ceny?</h3>
+            <ol className="space-y-3 text-gray-700 list-decimal list-inside mb-6">
+              <li>Oblicz dopuszczalny koszt pozyskania wybranego działania, uwzględniając marżę i koszty obsługi.</li>
+              <li>Oszacuj, ile zdarzeń potrzebujesz do porównania hipotez bez wnioskowania z pojedynczego przypadku.</li>
+              <li>Pomnóż planowaną liczbę działań przez dopuszczalny koszt i potraktuj wynik jako hipotezę planu wydatków, nie prognozę.</li>
+              <li>Jeżeli kwota przekracza możliwości firmy, ogranicz liczbę jednoczesnych testów zamiast rozpraszać środki.</li>
+            </ol>
+            <p className="text-gray-700 leading-relaxed">
+              Środki mediowe, produkcja materiałów i obsługa to osobne pozycje kosztów. Nie ma uniwersalnego podziału procentowego między nowych klientów i remarketing ani jednego idealnego momentu skalowania. Decyzję podejmuj na podstawie jakości wyników, stabilności i zdolności firmy do obsługi kolejnych zamówień lub zapytań.
+            </p>
+          </section>
+
+          <section id="kreacje" className="mb-14 scroll-mt-24">
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">Kreacje reklamowe: obraz, wideo, tekst i CTA</h2>
+            <p className="text-gray-700 mb-6 leading-relaxed">
+              Skuteczna reklama pomaga zrozumieć, co oferujesz, dla kogo i jaki jest kolejny krok. Nie musi obiecywać spektakularnego efektu. Powinna być czytelna, prawdziwa i spójna z miejscem docelowym. Kolejne kreacje testuj jako odpowiedzi na różne pytania odbiorców, a nie kosmetyczne warianty tego samego komunikatu.
+            </p>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-gray-50 rounded-lg p-6">
+                <h3 className="font-bold text-lg text-gray-900 mb-3">Materiał graficzny i wideo</h3>
+                <ul className="space-y-3 text-gray-700 list-disc list-inside">
+                  <li>Pokaż produkt, proces lub problem w pierwszym istotnym kadrze.</li>
+                  <li>Sprawdź proporcje, bezpieczne obszary interfejsu i czytelność na telefonie.</li>
+                  <li>Dodaj napisy do dialogów i przekaż kluczową informację także bez dźwięku.</li>
+                  <li>Porównuj różne ujęcia lub argumenty, nie tylko zmiany koloru.</li>
+                </ul>
+              </div>
+              <div className="bg-gray-50 rounded-lg p-6">
+                <h3 className="font-bold text-lg text-gray-900 mb-3">Tekst i wezwanie do działania</h3>
+                <ul className="space-y-3 text-gray-700 list-disc list-inside">
+                  <li>Najpierw komunikuj konkretny problem lub korzyść, potem uzupełniaj warunki.</li>
+                  <li>Dopasuj długość tekstu do złożoności oferty; nie ma jednej idealnej liczby zdań.</li>
+                  <li>CTA i przycisk powinny opisywać kolejny krok zgodny z docelową ścieżką.</li>
+                  <li>Unikaj fałszywej pilności, ukrytych warunków i obietnic bez pokrycia.</li>
+                </ul>
+              </div>
+            </div>
+            <div className="bg-indigo-50 border-l-4 border-indigo-500 p-6 mt-6">
+              <h3 className="font-bold text-gray-900 mb-3">Przykład hipotezy kreacji, nie wynik klienta</h3>
+              <p className="text-gray-700">Dla usługi lokalnej możesz porównać zdjęcie efektu z karuzelą pokazującą etapy pracy. Dla sklepu internetowego — demonstrację użycia produktu z prostym packshotem. To redakcyjne przykłady planu testu, a nie opisy realizacji ani gwarantowane recepty. Oceniaj zarejestrowane działania i ich jakość, nie tylko reakcje pod reklamą.</p>
+            </div>
+          </section>
+
+          <section id="pomiar" className="mb-14 scroll-mt-24">
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">Jak mierzyć skuteczność reklamy i optymalizować kampanię?</h2>
+            <p className="text-gray-700 mb-6 leading-relaxed">
+              Skuteczność reklamy należy mierzyć względem celu i ekonomii firmy. Połącz raport z Menedżera reklam z analityką strony oraz informacją o jakości leadów lub sprzedaży. Przed porównaniem źródeł sprawdź okno atrybucji, sposób zliczania konwersji i wpływ zgód na dostępność danych.
+            </p>
+            <div className="space-y-4 mb-8">
+              {metrics.map((metric) => (
+                <div key={metric.name} className="bg-white border border-gray-200 rounded-lg p-6">
+                  <h3 className="font-bold text-gray-900 mb-2">{metric.name}</h3>
+                  <p className="text-sm font-mono text-blue-700 mb-3">{metric.formula}</p>
+                  <p className="text-gray-700 leading-relaxed">{metric.text}</p>
+                </div>
+              ))}
+            </div>
+            <h3 className="text-xl font-bold text-gray-900 mb-4">Kontrolowana optymalizacja i test A/B</h3>
+            <ol className="space-y-3 text-gray-700 list-decimal list-inside mb-6">
+              <li>Zapisz problem i hipotezę, np. czy nowe ujęcie lepiej wyjaśnia zastosowanie produktu.</li>
+              <li>Wybierz jedną główną metrykę decyzji oraz metryki ostrzegawcze, takie jak jakość kontaktów.</li>
+              <li>Zmieniaj jeden istotny element i utrzymuj możliwie porównywalne warunki testu.</li>
+              <li>Poczekaj na użyteczną liczbę zdarzeń; nie narzucaj uniwersalnej liczby dni ani konwersji.</li>
+              <li>Udokumentuj wynik, ograniczenia atrybucji i kolejny test. Brak poprawy również jest informacją.</li>
+            </ol>
+            <p className="text-gray-700 leading-relaxed">
+              Faza uczenia opisuje okres, w którym system stabilizuje dostarczanie dla wybranej optymalizacji. Znaczące edycje mogą zmienić warunki tego procesu, dlatego nie resetuj ustawień z powodu jednego słabego dnia. Skalowanie zwiększaj stopniowo w ramach własnej tolerancji ryzyka i kontroluj, czy wzrost wydatku nie pogarsza jakości działań.
+            </p>
+          </section>
+
+          <section id="diagnostyka" className="mb-14 scroll-mt-24">
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">Dlaczego reklama na Facebooku nie działa? Diagnostyka</h2>
+            <p className="text-gray-700 mb-6 leading-relaxed">
+              „Nie działa” może oznaczać brak emisji, słabe kliknięcia, brak konwersji albo kontakty niedopasowane do oferty. Każdy objaw wymaga innej kolejności sprawdzania. Zacznij od najwcześniejszego etapu ścieżki, na którym pojawia się problem, i zachowaj dane przed zmianą.
+            </p>
+            <div className="space-y-4">
+              {troubleshooting.map((item) => (
+                <div key={item.problem} className="border-l-4 border-red-400 bg-red-50 p-5">
+                  <h3 className="font-bold text-gray-900 mb-2">{item.problem}</h3>
+                  <p className="text-gray-700"><strong>Co sprawdzić:</strong> {item.action}</p>
+                </div>
+              ))}
+            </div>
+            <p className="text-gray-700 mt-6 leading-relaxed">
+              Jeżeli problem dotyczy strony lub formularza, pomocny będzie <Link to="/blog/jak-stworzyc-landing-page" className="text-blue-700 font-medium hover:underline">poradnik o projektowaniu landing page</Link>. Gdy porównujesz kanał z ruchem z wyszukiwarki, zobacz też <Link to="/blog/reklama-facebook-vs-google" className="text-blue-700 font-medium hover:underline">różnice między reklamą Facebook a Google Ads</Link>. Nie zakładaj, że obie platformy mierzą tę samą intencję użytkownika.
+            </p>
+          </section>
+
+          <section id="slownik" className="mb-14 scroll-mt-24">
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">Słownik pojęć: reklama, kampania i konwersja</h2>
+            <p className="text-gray-700 mb-6 leading-relaxed">
+              Ten słownik porządkuje nazwy używane podczas tworzenia reklamy i analizy kampanii reklamowej na Facebooku. Ułatwia czytanie ustawień, ale nie zastępuje aktualnych opisów funkcji w koncie. Struktura kampanii na FB pozostaje taka sama niezależnie od tego, czy pracujesz nad usługą, produktem czy aplikacją.
+            </p>
+            <div className="overflow-x-auto mb-6">
+              <table className="w-full text-sm border-collapse">
+                <tbody>
+                  <tr><th scope="row" className="text-left p-3 border border-gray-200 bg-gray-50">Reklama (Ad)</th><td className="p-3 border border-gray-200">Reklama to pojedynczy komunikat z kreacją, tekstem i adresem docelowym. Reklama znajduje się w zestawie, który określa warunki jej emisji.</td></tr>
+                  <tr><th scope="row" className="text-left p-3 border border-gray-200 bg-gray-50">Reklamy na FB i Meta Ads</th><td className="p-3 border border-gray-200">Reklamy na FB to potoczna nazwa emisji w tym serwisie. Meta Ads opisuje szerszy system reklamowy, obejmujący także inne powierzchnie należące do Meta.</td></tr>
+                  <tr><th scope="row" className="text-left p-3 border border-gray-200 bg-gray-50">Konwersja</th><td className="p-3 border border-gray-200">Konwersja to wybrane działanie o wartości dla firmy, np. wysłanie formularza lub zakup. Reklama powinna prowadzić do ścieżki, na której da się poprawnie zmierzyć to zdarzenie.</td></tr>
+                  <tr><th scope="row" className="text-left p-3 border border-gray-200 bg-gray-50">Potencjalny klient</th><td className="p-3 border border-gray-200">Pozyskiwanie potencjalnych klientów wymaga nie tylko formularza, lecz także ustalenia, które kontakty są zgodne z ofertą i jak ocenisz ich dalszą obsługę.</td></tr>
+                  <tr><th scope="row" className="text-left p-3 border border-gray-200 bg-gray-50">Sklep internetowy</th><td className="p-3 border border-gray-200">Sklep internetowy potrzebuje poprawnych danych produktowych, mierzenia zakupu i sprawnej ścieżki zamówienia. Reklama nie zastąpi brakujących informacji ani problemów z realizacją.</td></tr>
+                  <tr><th scope="row" className="text-left p-3 border border-gray-200 bg-gray-50">Forma reklamy i kreacja reklamowa</th><td className="p-3 border border-gray-200">Forma reklamy określa np. obraz, wideo lub karuzelę. Kreacja reklamowa to konkretny materiał i przekaz użyty w tej formie.</td></tr>
+                  <tr><th scope="row" className="text-left p-3 border border-gray-200 bg-gray-50">Jakość reklamy</th><td className="p-3 border border-gray-200">Jakość reklamy warto oceniać przez czytelność, zgodność z faktami i dopasowanie do odbiorcy oraz strony docelowej. Nie sprowadza się do jednej metryki lub szablonu.</td></tr>
+                  <tr><th scope="row" className="text-left p-3 border border-gray-200 bg-gray-50">Działania reklamowe</th><td className="p-3 border border-gray-200">Działania reklamowe na Facebooku obejmują plan, konfigurację, emisję, pomiar i wnioski. Zasady targetowania reklam są jednym z elementów tego procesu, a nie całą strategią.</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="text-gray-700 leading-relaxed">
+              Platforma może wyświetlać reklamy w różnych miejscach, ale raport należy czytać w odniesieniu do celu. Gdy analizujesz działania reklamowe, rozróżniaj pojedynczą reklamę, zestaw i całą kampanię. Ułatwia to przypisanie problemu do właściwego poziomu bez przypadkowej zmiany pozostałych elementów.
+            </p>
+          </section>
+
+          <section id="checklist" className="mb-14 scroll-mt-24">
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">Checklista przed publikacją kampanii</h2>
+            <ul className="space-y-4 text-gray-700">
+              {[
+                "Cel kampanii odpowiada działaniu, które ma wykonać odbiorca.",
+                "Konto, uprawnienia i metoda rozliczeń są poprawnie skonfigurowane.",
+                "Strona docelowa lub formularz działa na telefonie i kontynuuje komunikat reklamy.",
+                "Zdarzenia konwersji, parametry UTM i zgody zostały sprawdzone w praktyce.",
+                "Kreacje są czytelne w podglądzie wybranych umiejscowień.",
+                "Nazewnictwo kampanii, zestawów i reklam umożliwia późniejszą analizę.",
+                "Budżet testu mieści się w możliwościach i ekonomii firmy.",
+                "Wiadomo, która metryka decyduje o kolejnym kroku i jakie dane są potrzebne do oceny.",
+              ].map((item) => (
+                <li key={item} className="flex gap-3 items-start"><CheckCircle2 className="w-5 h-5 mt-0.5 flex-shrink-0 text-green-600" aria-hidden="true" /><span>{item}</span></li>
+              ))}
+            </ul>
+          </section>
+
+          <section id="faq" className="mb-14 scroll-mt-24">
+            <h2 className="text-3xl font-bold mb-8 text-gray-900">Reklama na Facebooku — najczęstsze pytania</h2>
+            <div className="space-y-4">
+              {faqItems.map((item) => (
+                <details
+                  id={`facebook-ads-faq-${item.id}`}
+                  key={item.id}
+                  className="group border border-gray-200 rounded-lg p-6 cursor-pointer hover:border-blue-500 transition"
+                >
+                  <summary className="flex items-center justify-between gap-4 font-bold text-gray-900 text-lg">
+                    {item.question}
+                    <span className="transform group-open:rotate-180 transition ml-2" aria-hidden="true">▼</span>
+                  </summary>
+                  <p className="text-gray-700 mt-4 leading-relaxed">{item.answer}</p>
+                </details>
+              ))}
+            </div>
+          </section>
+
+          <section id="podsumowanie" className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg p-8 mb-12 scroll-mt-24">
+            <h2 className="text-2xl font-bold mb-4 text-gray-900">Podsumowanie: konfiguruj proces, nie obietnice</h2>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Dobry start z reklamą na Facebooku wymaga właściwego celu, mierzalnej ścieżki, kontrolowanego budżetu i kreacji dopasowanej do odbiorcy. Następnie potrzebujesz czytelnych raportów oraz pojedynczych zmian, których efekt można ocenić. Nie ma stałej ceny, grupy ani formatu gwarantującego wynik.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Wybierz jedną hipotezę z tego poradnika, przygotuj test i zapisz kryterium decyzji przed uruchomieniem emisji. To pomaga skutecznie reklamować się na Facebooku na podstawie własnych danych zamiast kopiować cudze benchmarki. W kampaniach sprzedażowych nie szukaj uniwersalnych ustawień; łącz wynik z marżą i jakością obsługi.
+            </p>
+          </section>
+
+          <section aria-labelledby="powiazane-materialy" className="mb-12">
+            <h2 id="powiazane-materialy" className="text-2xl font-bold mb-6 text-gray-900">Powiązane poradniki i usługa</h2>
+            <div className="grid md:grid-cols-2 gap-4">
+              <Link to="/blog/cennik-facebook-ads" className="border border-gray-200 rounded-lg p-5 hover:border-blue-500 transition">
+                <span className="font-bold text-gray-900 flex items-center gap-2">Składniki kosztów reklamy <ArrowRight className="w-4 h-4" aria-hidden="true" /></span>
+                <span className="block text-gray-700 mt-2">Jak rozdzielić emisję, produkcję kreacji i zakres obsługi.</span>
+              </Link>
+              <Link to="/blog/social-media-marketing-poradnik" className="border border-gray-200 rounded-lg p-5 hover:border-blue-500 transition">
+                <span className="font-bold text-gray-900 flex items-center gap-2">Social media marketing <ArrowRight className="w-4 h-4" aria-hidden="true" /></span>
+                <span className="block text-gray-700 mt-2">Jak połączyć płatne kampanie z komunikacją w mediach społecznościowych.</span>
+              </Link>
+              <Link to="/blog/optymalizacja-google-ads" className="border border-gray-200 rounded-lg p-5 hover:border-blue-500 transition">
+                <span className="font-bold text-gray-900 flex items-center gap-2">Optymalizacja Google Ads <ArrowRight className="w-4 h-4" aria-hidden="true" /></span>
+                <span className="block text-gray-700 mt-2">Odrębny proces pracy z kampaniami w kanale wyszukiwania.</span>
+              </Link>
+              <Link to="/uslugi/reklama-facebook" className="border border-gray-200 rounded-lg p-5 hover:border-blue-500 transition">
+                <span className="font-bold text-gray-900 flex items-center gap-2">Usługa reklamy na Facebooku <ArrowRight className="w-4 h-4" aria-hidden="true" /></span>
+                <span className="block text-gray-700 mt-2">Osobna oferta dla osób, które po poradniku szukają zakresu wsparcia.</span>
+              </Link>
+            </div>
+          </section>
+        </div>
+
+        <aside className="bg-gray-900 text-white py-12 px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-bold mb-4">Chcesz omówić własny plan konfiguracji?</h2>
+            <p className="text-gray-300 mb-8 text-lg">Możemy porozmawiać o ścieżce konwersji, pomiarze i zakresie testów. Bez gwarancji wyniku i bez sztywnego cennika przed poznaniem potrzeb.</p>
+            <Link to="/kontakt" className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-lg transition">Przejdź do kontaktu</Link>
+          </div>
+        </aside>
+      </article>
     </Layout>
   );
 }

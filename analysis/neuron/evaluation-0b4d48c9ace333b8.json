@@ -1,0 +1,11 @@
+{
+  "request": {
+    "query": "0b4d48c9ace333b8",
+    "url": "https://www.fotz-studio.pl/blog/facebook-ads-poradnik",
+    "id": "main-content"
+  },
+  "response": {
+    "status": "ok",
+    "content_score": 60
+  }
+}
