@@ -1,0 +1,269 @@
+{
+  "date": "2026-11-11",
+  "status": "POTWIERDZONE_95",
+  "scope": "Publiczna weryfikacja trzech poradników po wdrożeniu; wyniki lokalne i publiczne są zapisane oddzielnie.",
+  "sourceEvidence": "analysis/production-guides-second-20261111.json",
+  "productionMeasurement": {
+    "date": "2026-11-11",
+    "method": "Porównanie publicznego HTML z dokumentem wygenerowanym przez build oraz publiczny odczyt wyniku Neuron Writer.",
+    "pagesPassed": 3,
+    "pagesTotal": 3,
+    "allPassed": true
+  },
+  "release": {
+    "mainCommit": "a57277afbb63402da5ebacc88c8daede28cc3843",
+    "productionCommit": "480ab502a83bbea30089f852f36bca439af8883c",
+    "deployment": {
+      "provider": "Vercel",
+      "id": "dpl_gVN9ggTgdUnEdJYtK5GTMGMJbhuT",
+      "status": "READY",
+      "alias": "www.fotz-studio.pl"
+    }
+  },
+  "mainChecks": {
+    "fullTests": {
+      "status": "PASS",
+      "passed": 359,
+      "total": 359
+    },
+    "build": {
+      "status": "PASS",
+      "generatedPages": 1061
+    },
+    "seoCheck": {
+      "status": "PASS",
+      "errors": 0,
+      "galleryPages": 449
+    }
+  },
+  "pages": [
+    {
+      "recordId": "FOTZ-924E53D6",
+      "url": "https://www.fotz-studio.pl/blog/video-marketing-dla-firm",
+      "queryId": "cc667ee62260969d",
+      "analysis": {
+        "url": "https://app.neuronwriter.com/analysis/view/cc667ee62260969d",
+        "role": "Historyczna analiza przypisana do /uslugi/video-marketing, wykorzystana pomocniczo dla poradnika informacyjnego."
+      },
+      "baseline": {
+        "scope": "Publiczny baseline przed wdrożeniem.",
+        "score": 63
+      },
+      "candidate": {
+        "scope": "Lokalna wersja robocza z builda; nie jest pomiarem publicznym.",
+        "score": 96,
+        "method": "evaluate-html",
+        "selector": "main#main-content"
+      },
+      "production": {
+        "scope": "Publiczna strona po wdrożeniu.",
+        "score": 96,
+        "measurementDate": "2026-11-11",
+        "neuronStatus": "ok",
+        "pass": true
+      },
+      "release": {
+        "pullRequest": {
+          "number": 211,
+          "url": "https://github.com/adam420412/fotz-studio-web-experience/pull/211"
+        },
+        "mergeCommit": "52da595b93455400f3390582808e46961f4632a4"
+      },
+      "html": {
+        "status": "PASS",
+        "httpStatus": 200,
+        "matchesBuild": true,
+        "title": "Video marketing dla firm — poradnik 2026 | FOTZ",
+        "metaDescription": "Video marketing dla firm: strategia, formaty, YouTube, social media, SEO i pomiar. Zobacz, jak planować materiały wideo dla odbiorców i mierzyć działania.",
+        "canonical": "https://www.fotz-studio.pl/blog/video-marketing-dla-firm",
+        "selfCanonical": true,
+        "h1Count": 1,
+        "mainContentCount": 1
+      },
+      "schema": {
+        "status": "PASS",
+        "matchesBuild": true,
+        "article": {
+          "url": "https://www.fotz-studio.pl/blog/video-marketing-dla-firm",
+          "datePublished": "2026-03-10",
+          "dateModified": "2026-11-11"
+        }
+      },
+      "faq": {
+        "status": "PASS",
+        "visibleCount": 8,
+        "schemaCount": 8,
+        "matchesBuild": true
+      },
+      "galleries": {
+        "status": "PASS",
+        "count": 1,
+        "matchesBuild": true
+      },
+      "gsc": {
+        "period": "2026-10-13 / 2026-11-09",
+        "impressions": 0,
+        "clicks": 0,
+        "averagePosition": 0,
+        "queries11To20": [],
+        "unchanged": true
+      }
+    },
+    {
+      "recordId": "FOTZ-B56EA53F",
+      "url": "https://www.fotz-studio.pl/blog/facebook-ads-poradnik",
+      "queryId": "0b4d48c9ace333b8",
+      "analysis": {
+        "url": "https://app.neuronwriter.com/analysis/view/0b4d48c9ace333b8",
+        "role": "Historyczna analiza przypisana do /uslugi/reklama-facebook, wykorzystana pomocniczo dla poradnika informacyjnego."
+      },
+      "baseline": {
+        "scope": "Publiczny baseline przed wdrożeniem.",
+        "score": 60
+      },
+      "candidate": {
+        "scope": "Lokalna wersja robocza z builda; nie jest pomiarem publicznym.",
+        "score": 95,
+        "method": "evaluate-html",
+        "selector": "main#main-content"
+      },
+      "production": {
+        "scope": "Publiczna strona po wdrożeniu.",
+        "score": 95,
+        "measurementDate": "2026-11-11",
+        "neuronStatus": "ok",
+        "pass": true
+      },
+      "release": {
+        "pullRequest": {
+          "number": 212,
+          "url": "https://github.com/adam420412/fotz-studio-web-experience/pull/212"
+        },
+        "mergeCommit": "857c16024cdcd473c5a55466eed9ef828a6f20e6"
+      },
+      "html": {
+        "status": "PASS",
+        "httpStatus": 200,
+        "matchesBuild": true,
+        "title": "Facebook Ads 2026: reklama na Facebooku | FOTZ",
+        "metaDescription": "Reklama na Facebooku krok po kroku: cel kampanii, budżet, targetowanie i formaty. Poradnik konfiguracji kampanii reklamowych Facebook Ads i Meta Ads 2026.",
+        "canonical": "https://www.fotz-studio.pl/blog/facebook-ads-poradnik",
+        "selfCanonical": true,
+        "h1Count": 1,
+        "mainContentCount": 1
+      },
+      "schema": {
+        "status": "PASS",
+        "matchesBuild": true,
+        "article": {
+          "url": "https://www.fotz-studio.pl/blog/facebook-ads-poradnik",
+          "datePublished": "2025-04-12",
+          "dateModified": "2026-11-11"
+        }
+      },
+      "faq": {
+        "status": "PASS",
+        "visibleCount": 11,
+        "schemaCount": 11,
+        "matchesBuild": true
+      },
+      "galleries": {
+        "status": "PASS",
+        "count": 1,
+        "matchesBuild": true
+      },
+      "gsc": {
+        "period": "2026-10-13 / 2026-11-09",
+        "impressions": 1,
+        "clicks": 0,
+        "averagePosition": 20,
+        "unchanged": true,
+        "historicalQuery": {
+          "query": "strategia facebook ads",
+          "impressions": 1,
+          "clicks": 0,
+          "averagePosition": 20
+        }
+      }
+    },
+    {
+      "recordId": "FOTZ-7CED8B3B",
+      "url": "https://www.fotz-studio.pl/blog/strona-internetowa-dla-firmy",
+      "queryId": "b672d2ef932a858d",
+      "analysis": {
+        "url": "https://app.neuronwriter.com/analysis/view/b672d2ef932a858d",
+        "role": "Historyczna analiza przypisana do /uslugi/strony-internetowe-dla-firm, wykorzystana pomocniczo dla poradnika informacyjnego."
+      },
+      "baseline": {
+        "scope": "Publiczny baseline przed wdrożeniem.",
+        "score": 68
+      },
+      "candidate": {
+        "scope": "Lokalna wersja robocza z builda; nie jest pomiarem publicznym.",
+        "score": 97,
+        "method": "evaluate-html",
+        "selector": "main#main-content"
+      },
+      "production": {
+        "scope": "Publiczna strona po wdrożeniu.",
+        "score": 97,
+        "measurementDate": "2026-11-11",
+        "neuronStatus": "ok",
+        "pass": true
+      },
+      "release": {
+        "pullRequest": {
+          "number": 213,
+          "url": "https://github.com/adam420412/fotz-studio-web-experience/pull/213"
+        },
+        "mergeCommit": "480ab502a83bbea30089f852f36bca439af8883c"
+      },
+      "html": {
+        "status": "PASS",
+        "httpStatus": 200,
+        "matchesBuild": true,
+        "title": "Strony internetowe dla firm: tworzenie i wybór oferty | FOTZ",
+        "metaDescription": "Firma może zaprojektować i stworzyć profesjonalną stronę www. Poradnik 2026: CMS, SEO, koszty i wybór oferty dla Twojej firmy.",
+        "canonical": "https://www.fotz-studio.pl/blog/strona-internetowa-dla-firmy",
+        "selfCanonical": true,
+        "h1Count": 1,
+        "mainContentCount": 1
+      },
+      "schema": {
+        "status": "PASS",
+        "matchesBuild": true,
+        "article": {
+          "url": "https://www.fotz-studio.pl/blog/strona-internetowa-dla-firmy",
+          "datePublished": "2026-04-10",
+          "dateModified": "2026-11-11"
+        }
+      },
+      "faq": {
+        "status": "PASS",
+        "visibleCount": 8,
+        "schemaCount": 8,
+        "matchesBuild": true
+      },
+      "galleries": {
+        "status": "PASS",
+        "count": 1,
+        "matchesBuild": true
+      },
+      "gsc": {
+        "period": "2026-10-13 / 2026-11-09",
+        "impressions": 0,
+        "clicks": 0,
+        "averagePosition": 0,
+        "queries11To20": [],
+        "unchanged": true,
+        "otherPageQueriesAssigned": false
+      }
+    }
+  ],
+  "notes": [
+    "Wszystkie trzy porównania publicznego HTML z buildem zakończyły się wynikiem PASS.",
+    "Wyniki baseline, lokalne i produkcyjne opisują odrębne pomiary i nie są ze sobą mieszane.",
+    "Dane GSC zachowano bez zmian dla okresu 2026-10-13 / 2026-11-09.",
+    "Dokument nie zawiera twierdzeń o ruchu ani leadach."
+  ]
+}
