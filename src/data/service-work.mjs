@@ -14,7 +14,7 @@ export const serviceWork = {
     enquiry: { service: 'video', variant: 'photo_session', label: 'Zapytaj o sesję zdjęciową' },
     title: 'Produkty, miejsca i ludzie w naszych kadrach',
     description: 'Wybrane fotografie z sesji dla marek, gabinetów i firm oraz reportaż z wydarzenia kancelarii.',
-    projects: [library.klagemPhoto, library.kobbe, library.dsk, library.endo, projects['gierky-bar'], projects['dembski-nowak']],
+    projects: [library.klagemPhoto, library.kobbe, library.dsk, library.endo, projects['gierky-bar']],
   },
   product: {
     enquiry: { service: 'video', variant: 'product_photos', label: 'Zapytaj o zdjęcia produktów' },
