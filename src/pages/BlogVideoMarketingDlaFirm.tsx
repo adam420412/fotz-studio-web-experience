@@ -1,1066 +1,436 @@
+import { Link } from "react-router-dom";
+import { ArrowLeft, ArrowRight, CalendarDays, CheckCircle2, ChevronRight, PlayCircle } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { SEOHead } from "@/components/seo/SEOHead";
-import { Badge } from "@/components/ui/badge";
-import { Card, CardContent } from "@/components/ui/card";
-import { Link } from "react-router-dom";
-import { Clock, User, TrendingUp, Play, Target, CheckCircle2, Zap, ArrowRight } from "lucide-react";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { ArticleSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 
+const seoTitle = "Video marketing dla firm — poradnik 2026 | FOTZ";
+const seoDescription = "Video marketing dla firm: strategia, formaty, YouTube, social media, SEO i pomiar. Zobacz, jak planować materiały wideo dla odbiorców i mierzyć działania.";
+const canonicalUrl = "https://www.fotz-studio.pl/blog/video-marketing-dla-firm";
+const pageTitle = "Video marketing dla firm: strategia, formaty i pomiar w 2026 roku";
+const heroImageUrl = "https://www.fotz-studio.pl/og-image.jpg";
+
+const articleData = {
+  headline: pageTitle,
+  description: seoDescription,
+  url: canonicalUrl,
+  image: heroImageUrl,
+  datePublished: "2026-03-10",
+  dateModified: "2026-11-11",
+  author: "Zespół FOTZ",
+};
+
+const breadcrumbs = [
+  { name: "Strona główna", url: "/" },
+  { name: "Blog", url: "/blog" },
+  { name: "Video marketing dla firm", url: "/blog/video-marketing-dla-firm" },
+];
+
+const formats = [
+  {
+    title: "Film promocyjny i film marki",
+    text: "Film promocyjny przedstawia konkretną ofertę, okazję lub przewagę, natomiast film marki pokazuje wartości i sposób pracy. Oba formaty powinny prowadzić do jednego, jasno określonego działania. Nie obiecuj rezultatów, których nie możesz udokumentować.",
+  },
+  {
+    title: "Explainer video",
+    text: "Ten materiał video wyjaśnia, jak działa produkt lub procedura. Explainer video porządkuje trudny temat za pomocą przykładu, animacji albo nagrania ekranu. Sprawdza się tam, gdzie odbiorca musi zrozumieć proces przed podjęciem decyzji.",
+  },
+  {
+    title: "Filmy instruktażowe i edukacyjne",
+    text: "Filmy instruktażowe odpowiadają na pytania użytkowników i pokazują rozwiązanie krok po kroku. Jeden problem na film ułatwia przygotowanie tytułu, napisów i rozdziałów. Taki content video może wspierać content marketing oraz dział obsługi klienta.",
+  },
+  {
+    title: "Reklamy wideo i krótkie formy",
+    text: "Reklama wideo ma ograniczony czas na przedstawienie problemu, oferty i wezwania do działania. Krótkie treści video do mediów społecznościowych warto projektować od pierwszego kadru, a wersję reklamową przygotować osobno od publikacji organicznej.",
+  },
+  {
+    title: "Webinar i transmisja",
+    text: "Webinar pozwala połączyć prezentację, rozmowę i pytania uczestników. Przed wydarzeniem ustal temat oraz zasady zapisu, a po nim zachowaj materiały filmowe zgodnie z uzyskanymi zgodami. Z nagrania możesz przygotować krótsze fragmenty do dalszej dystrybucji.",
+  },
+  {
+    title: "Opinie i studia przypadków",
+    text: "Autentyczna wypowiedź klienta może wyjaśnić kontekst współpracy, ale wymaga zgody i zgodnego z faktami opisu. Nie twórz anonimowych referencji ani wyników, których nie da się zweryfikować. W branży B2B szczególnie ważne są warunki, w jakich osiągnięto rezultat.",
+  },
+];
+
+const strategySteps = [
+  {
+    title: "1. Zapisz cel i wskaźnik",
+    text: "Określ, czy chodzi o budowania świadomości marki, edukację, liczbę zapytań czy wsparcie sprzedaży. Przypisz do celu wskaźnik dostępny w Twoich narzędziach. Jeśli chcesz zwiększyć sprzedaż, uwzględnij też jakość ruchu, ofertę i proces obsługi leada.",
+  },
+  {
+    title: "2. Opisz grupę docelową i kontekst",
+    text: "Zbieraj pytania klientów, informacje o grupie docelowej oraz ograniczenia kanału komunikacji. Analiza grupy docelowej pomoże dobrać przykłady: przedsiębiorca poznający temat potrzebuje innego materiału niż osoba porównująca oferty. Uwzględnij miejsce oglądania i dostępność napisów.",
+  },
+  {
+    title: "3. Wybierz jedną myśl przewodnią",
+    text: "Zapisz problem, obietnicę komunikatu i dowód, który wolno Ci przedstawić. Skuteczny marketing nie wymaga wszystkich argumentów naraz. Treść i forma przekazu mają prowadzić odbiorcę od rozpoznania potrzeby do zrozumienia kolejnego kroku.",
+  },
+  {
+    title: "4. Zaplanuj format i dystrybucję",
+    text: "Dobierz formatu wideo do celu, budżetu i miejsca publikacji. Ustal wersję podstawową, kadry oraz napisy przed nagraniem. W strategii video marketingowej warto przewidzieć wykorzystanie materiału na stronie, w mediach społecznościowych i komunikacji wysyłkowej.",
+  },
+  {
+    title: "5. Ustal odpowiedzialność i akceptację",
+    text: "Brief powinien wskazywać właściciela tematu, osobę akceptującą, termin i zakres poprawek. Przy współpracy ze specjalistów od marketingu doprecyzuj prawa do materiałów, źródła muzyki oraz dostęp do plików roboczych. To ogranicza poprawki wynikające z nieporozumień.",
+  },
+  {
+    title: "6. Przeprowadź przegląd po publikacji",
+    text: "Porównaj dane z przyjętym celem i zanotuj wnioski do kolejnej produkcji. Nie zmieniaj wielu elementów jednocześnie bez hipotezy. Regularny przegląd pozwala zwiększyć skuteczność działań marketingowych bez przypisywania wyniku samemu formatowi.",
+  },
+];
+
+const channels = [
+  {
+    title: "YouTube",
+    text: "YouTube nadaje się do instrukcji, prezentacji i serii tematycznych. Zadbaj o zgodny z treścią tytuł, opis, miniaturę, napisy i rozdziały. Playlisty porządkują ofertę kanału, ale nie zastępują odpowiedzi na realne pytania widzów.",
+  },
+  {
+    title: "Instagram i TikTok",
+    text: "Na Instagram i TikTok przygotuj wersję czytelną na telefonie, z tekstem mieszczącym się w bezpiecznym obszarze. Zachowaj naturalny sposób komunikacji marki i sprawdzaj aktualne zasady platformy zamiast kopiować sztywne wytyczne o długości czy hashtagach.",
+  },
+  {
+    title: "LinkedIn",
+    text: "LinkedIn może być kanałem dla eksperckiego komentarza, prezentacji procesu i tematów z branży B2B. Opublikuj film z opisem wyjaśniającym kontekst i zadbaj o napisy. Nie przenoś bez zmian reklamy konsumenckiej do komunikacji skierowanej do specjalistów.",
+  },
+  {
+    title: "Strona internetowa",
+    text: "Na strony internetowe wybierz film, który uzupełnia tekst: pokazuje działanie, warunki usługi lub odpowiedź na ważne pytanie. Umieść go blisko powiązanego fragmentu, dodaj transkrypcję i pilnuj szybkości ładowania oraz wygodnego odtwarzania.",
+  },
+  {
+    title: "Kampanie i komunikacja wysyłkowa",
+    text: "Reklamy video mogą wykorzystywać osobne warianty dopasowane do etapu kampanii video. W wiadomości e-mail często praktyczniejsza jest miniatura z linkiem do strony docelowej niż załącznik. Oznacz linki i zachowaj spójność przekazu po kliknięciu.",
+  },
+];
+
+const metrics = [
+  {
+    title: "Zasięg i wyświetlenia",
+    text: "Pokazują skalę dystrybucji, ale same nie potwierdzają zainteresowania ofertą. Porównuj dane w ramach tej samej platformy i definicji wyświetlenia.",
+  },
+  {
+    title: "Czas oglądania i retencja",
+    text: "Wskazują, w którym momencie widzowie kończą oglądanie. Analizuj początek, rozwinięcie i zakończenie, zamiast oceniać film wyłącznie po jednej średniej.",
+  },
+  {
+    title: "Interakcje i CTR",
+    text: "Komentarze, zapisy i kliknięcia pomagają ocenić reakcję odbiorców. CTR interpretuj razem z jakością ruchu oraz zgodnością strony docelowej z przekazem filmu.",
+  },
+  {
+    title: "Konwersja i jakość zapytań",
+    text: "Konwersja powinna mieć jednoznaczną definicję, np. wysłanie formularza lub zakup. Wspólnie z zespołem sprzedaży sprawdzaj także, czy zapytania pasują do oferty.",
+  },
+];
+
+const mistakes = [
+  ["Film bez odbiorcy i celu", "Zacznij od pytania grupy docelowej, a dopiero potem wybierz pomysł, kanał i sposób pomiaru."],
+  ["Zbyt wiele przekazów naraz", "Ogranicz materiał do jednej głównej myśli i jednego kolejnego kroku dla widza."],
+  ["Brak napisów i kontroli dźwięku", "Sprawdź zrozumiałość bez dźwięku, czytelność tekstu na telefonie oraz jakość dialogów."],
+  ["Kopiowanie jednej wersji wszędzie", "Zachowaj spójną ideę, ale dopasuj kadrowanie, opis i CTA do kanału publikacji."],
+  ["Niezweryfikowane obietnice", "Usuń dane bez źródła, gwarancje rezultatów i przykłady przedstawiane jako własne realizacje bez dowodów."],
+  ["Brak przeglądu wyników", "Zapisz datę analizy i hipotezę do kolejnej wersji, zamiast publikować bez wyciągania wniosków."],
+];
+
+const faqItems = [
+  {
+    id: "definicja",
+    question: "Czym jest video marketing i jak działa?",
+    answer: "Video marketing to planowane wykorzystywanie filmów w komunikacji firmy, np. do edukacji, prezentacji oferty lub wsparcia reklamy. Działa jako element szerszego procesu: wybierasz potrzebę odbiorców, przygotowujesz materiał, publikujesz go w odpowiednim kanale i sprawdzasz reakcję oraz działania użytkowników.",
+  },
+  {
+    id: "start",
+    question: "Jak zacząć video marketing w małej firmie?",
+    answer: "Zacznij od jednego powtarzalnego pytania klientów i jednego kanału, który możesz regularnie obsługiwać. Przygotuj krótki brief, scenariusz oraz prosty sposób pomiaru. Nie musisz uruchamiać wszystkich platform jednocześnie; ważniejsze są zrozumiały temat, zgodność z ofertą i możliwość utrzymania jakości publikacji.",
+  },
+  {
+    id: "sprzet",
+    question: "Czy do nagrywania filmów firmowych trzeba profesjonalnego sprzętu?",
+    answer: "Zakres sprzętu zależy od scenariusza, miejsca i standardu publikacji. W prostych materiałach najpierw warto zadbać o stabilny obraz, zrozumiały dźwięk, oświetlenie oraz spokojne tło. Przed zakupem wykonaj próbę dostępnym sprzętem i sprawdź efekt na telefonie. Bardziej złożone ujęcia mogą wymagać doświadczonej ekipy.",
+  },
+  {
+    id: "koszt",
+    question: "Ile kosztuje video marketing dla firmy?",
+    answer: "Nie ma jednej ceny odpowiedniej dla każdego projektu. Koszt zależy m.in. od liczby filmów i wersji, scenariusza, miejsca nagrań, osób zaangażowanych, animacji, napisów, licencji, poprawek oraz dystrybucji. Poproś o wycenę opartą na briefu i oddziel produkcję od budżetu reklamowego, aby porównywać rzeczywisty zakres.",
+  },
+  {
+    id: "format",
+    question: "Jaki format wideo wybrać do social media?",
+    answer: "Format dobierz do celu, sposobu korzystania z platformy i aktualnych wymagań technicznych. W social media często potrzebna jest pionowa wersja z czytelnym tekstem, ale nie istnieje uniwersalna długość gwarantująca zainteresowanie. Przed eksportem sprawdź proporcje, bezpieczny obszar napisów i jakość odtwarzania w docelowej aplikacji.",
+  },
+  {
+    id: "pomiar",
+    question: "Jak mierzyć skuteczność video marketingu?",
+    answer: "Wybierz wskaźniki zgodne z celem: zasięg i utrzymanie uwagi dla rozpoznawalności, kliknięcia dla ruchu, a zdefiniowane konwersje dla działań na stronie. Używaj oznaczonych linków i porównuj podobne okresy lub warianty. Nie przypisuj całej sprzedaży filmowi bez analizy innych punktów kontaktu z klientem.",
+  },
+  {
+    id: "seo",
+    question: "Czy wideo na stronie poprawia SEO?",
+    answer: "Film może uzupełniać treść i pomagać użytkownikowi zrozumieć temat, ale samo osadzenie wideo nie gwarantuje wyższej pozycji. Dodaj je do strony pasującej do intencji wyszukiwania, zapewnij opis lub transkrypcję i kontroluj wydajność. W Google stosuj aktualne wytyczne dla wideo oraz odpowiednie dane strukturalne.",
+  },
+  {
+    id: "ai",
+    question: "Czy AI może przygotować scenariusz i film marketingowy?",
+    answer: "AI może wspomóc listę pomysłów, wstępną strukturę, transkrypcję lub warianty tekstu, lecz wymaga redakcji i sprawdzenia faktów. Zweryfikuj prawa do użytych materiałów, zgodność wypowiedzi z rzeczywistością oraz jakość języka. Nie przedstawiaj wygenerowanych sytuacji jako autentycznych klientów, realizacji lub wyników firmy.",
+  },
+];
+
+const sectionClass = "scroll-mt-24 mt-12";
+const headingClass = "text-2xl md:text-3xl font-heading font-bold mb-5";
+const paragraphClass = "text-muted-foreground leading-relaxed mb-5";
+
 export default function BlogVideoMarketingDlaFirm() {
-  const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline: "Video Marketing dla Firm – Kompletny Przewodnik 2026",
-    description: "Video marketing dla firm – rodzaje filmów reklamowych, YouTube Ads, TikTok, koszty i zwrot z inwestycji. Kompletny przewodnik po video marketingu",
-    image: "https://www.fotz-studio.pl/og-image.jpg",
-    datePublished: "2026-03-10",
-    dateModified: "2026-03-10",
-    author: {
-      "@type": "Organization",
-      name: "Zespół FOTZ",
-    },
-  };
-
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Blog",
-        item: "https://www.fotz-studio.pl/blog",
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Video Marketing dla Firm",
-        item: "https://www.fotz-studio.pl/blog/video-marketing-dla-firm",
-      },
-    ],
-  };
-
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: "Ile kosztuje produkcja wideo dla firmy?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Koszt produkcji wideo zależy od jakości i zakresu projektu. Wideo do social media kosztuje 1000-5000 PLN, profesjonalny film promocyjny 5000-20000 PLN, a kampania złożona 20000+ PLN.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Czy video marketing rzeczywiście zwiększa sprzedaż?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Tak, badania pokazują, że wideo zwiększa engagement o 6x i konwersje o 30-80% w zależności od branży i jakości zawartości.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Jaki format wideo jest najlepszy dla TikToka?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Na TikToku najskuteczniejsze są krótkie, dynamiczne wideo w formacie pionowym (9:16) trwające 15-60 sekund, z autentyczną zawartością i ścieżką dźwiękową.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Ile czasu zajmuje produkcja profesjonalnego wideo?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Profesjonalna produkcja wideo trwa zazwyczaj 4-8 tygodni, w zależności od kompleksności projektu, od konceptu, przez produkcję, do edycji.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Jakie metryki powinnam śledzić w video marketingu?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Kluczowe metryki to liczba wyświetleń, czas oglądania, procentowa przeglądalność (VTR), współczynnik kliknięcia (CTR), zaangażowanie i konwersje.",
-        },
-      },
-    ],
-  };
-
   return (
-    <Layout>
+    <Layout workPlacement="after-main">
       <SEOHead
-        title="Video Marketing dla Firm | Fotz Studio"
-        description="Video marketing dla firm – rodzaje filmów reklamowych, YouTube Ads, TikTok, koszty i zwrot z inwestycji. Kompletny przewodnik po video marketingu ✓"
-        canonical="https://www.fotz-studio.pl/blog/video-marketing-dla-firm"
-        schema={articleSchema}
-
-        keywords="Video Marketing dla Firm – Jak Skutecznie Promować Firmę Wideo? [2026], Video Marketing dla Firm – Jak Skutecznie Promować Firmę Wideo? [2026] poradnik, Video Marketing dla Firm – Jak Skutecznie Promować Firmę Wideo? [2026] strategia, Video Marketing dla Firm – Jak Skutecznie Promować Firmę Wideo? [2026] jak zrobić, Video Marketing dla Firm – Jak Skutecznie Promować Firmę Wideo? [2026] marketing, Video Marketing dla Firm – Jak Skutecznie Promować Firmę Wideo? [2026] przykłady, Video Marketing dla Firm – Jak Skutecznie Promować Firmę Wideo? [2026] w Polsce"
+        title={seoTitle}
+        description={seoDescription}
+        canonical={canonicalUrl}
+        ogImage={heroImageUrl}
+        ogType="article"
       />
+      <BreadcrumbSchema items={breadcrumbs} />
+      <ArticleSchema data={articleData} />
+      <FAQSchema items={faqItems} />
 
-      <BreadcrumbSchema data={breadcrumbSchema} />
-      <FAQSchema data={faqSchema} />
+      <article id="article-content" className="bg-background pb-20">
+        <div className="container mx-auto px-4">
+          <nav aria-label="Ścieżka nawigacji" className="max-w-4xl mx-auto pt-32 pb-8 flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
+            <Link to="/" className="hover:text-primary transition-colors">Strona główna</Link>
+            <ChevronRight className="h-4 w-4" aria-hidden="true" />
+            <Link to="/blog" className="hover:text-primary transition-colors">Blog</Link>
+            <ChevronRight className="h-4 w-4" aria-hidden="true" />
+            <span className="text-foreground" aria-current="page">Video marketing dla firm</span>
+          </nav>
 
-      <article className="py-12 lg:py-16">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          {/* Header */}
-          <header className="mb-8 border-b border-gray-200 pb-8">
-            <div className="mb-4 flex flex-wrap gap-2">
-              <Badge variant="default">Video Marketing</Badge>
-              <Badge variant="outline">Marketing Cyfrowy</Badge>
-            </div>
-
-            <h1 className="mb-4 text-4xl font-bold leading-tight lg:text-5xl">
-              Video Marketing dla Firm – Kompletny Przewodnik 2026
-            </h1>
-
-            <p className="mb-6 text-xl text-gray-600">
-              Wideo to najpotężniejsze narzędzie marketingowe XXI wieku. Dowiedz się, jak wykorzystać video marketing do promocji firmy, zwiększenia zaangażowania i sprzedaży.
+          <header className="max-w-4xl mx-auto">
+            <Link to="/blog" className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors mb-8">
+              <ArrowLeft className="h-4 w-4" aria-hidden="true" />
+              Wróć do bloga
+            </Link>
+            <p className="text-sm font-medium text-primary uppercase tracking-wider mb-4">Praktyczny poradnik · edycja 2026</p>
+            <h1 className="text-3xl md:text-5xl font-heading font-bold leading-tight mb-6">{pageTitle}</h1>
+            <p className="text-xl text-muted-foreground leading-relaxed mb-6">
+              Jak zaplanować video marketing dla firm bez przypadkowych publikacji i nieudokumentowanych obietnic? Ten przewodnik prowadzi od celu i odbiorców przez scenariusz, formaty oraz kanały aż po pomiar. Znajdziesz tu także listę błędów i pytania, które warto wyjaśnić przed produkcją.
             </p>
-
-            <div className="flex flex-wrap gap-6 text-sm text-gray-500">
-              <div className="flex items-center gap-2">
-                <User size={16} />
-                <span>Zespół FOTZ</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Clock size={16} />
-                <span>10 marca 2026</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <TrendingUp size={16} />
-                <span>15 min czytania</span>
-              </div>
+            <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-muted-foreground mb-10">
+              <span className="inline-flex items-center gap-2"><CalendarDays className="h-4 w-4" aria-hidden="true" />Opublikowano: 10 marca 2026</span>
+              <span>Aktualizacja: 11 listopada 2026</span>
+              <span>Redakcja: Zespół FOTZ</span>
             </div>
           </header>
 
-          {/* Table of Contents */}
-          <nav className="mb-12 rounded-lg bg-gray-50 p-6">
-            <h2 className="mb-4 font-semibold text-gray-900">Spis treści</h2>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <a href="#introduction" className="text-blue-600 hover:underline">
-                  1. Dlaczego video marketing jest ważny dla firm?
-                </a>
-              </li>
-              <li>
-                <a href="#types" className="text-blue-600 hover:underline">
-                  2. Rodzaje filmów marketingowych
-                </a>
-              </li>
-              <li>
-                <a href="#youtube" className="text-blue-600 hover:underline">
-                  3. YouTube marketing dla firm
-                </a>
-              </li>
-              <li>
-                <a href="#social" className="text-blue-600 hover:underline">
-                  4. Video w mediach społecznościowych
-                </a>
-              </li>
-              <li>
-                <a href="#ads" className="text-blue-600 hover:underline">
-                  5. Reklamy wideo online
-                </a>
-              </li>
-              <li>
-                <a href="#planning" className="text-blue-600 hover:underline">
-                  6. Jak zaplanować kampanię video?
-                </a>
-              </li>
-              <li>
-                <a href="#costs" className="text-blue-600 hover:underline">
-                  7. Ile kosztuje produkcja wideo?
-                </a>
-              </li>
-              <li>
-                <a href="#measurement" className="text-blue-600 hover:underline">
-                  8. Mierzenie skuteczności
-                </a>
-              </li>
-              <li>
-                <a href="#case-study" className="text-blue-600 hover:underline">
-                  9. Case study kampanii video
-                </a>
-              </li>
-              <li>
-                <a href="#faq" className="text-blue-600 hover:underline">
-                  10. FAQ – Najczęstsze pytania
-                </a>
-              </li>
-            </ul>
-          </nav>
+          <div className="max-w-4xl mx-auto">
+            <div className="rounded-2xl border border-primary/20 bg-primary/5 p-6 mb-10">
+              <h2 className="text-xl font-heading font-bold mb-3">W skrócie</h2>
+              <ul className="space-y-3 text-muted-foreground">
+                <li className="flex gap-3"><CheckCircle2 className="h-5 w-5 mt-0.5 shrink-0 text-primary" aria-hidden="true" /><span>Najpierw ustal cel, odbiorcę i wskaźnik, potem wybierz film oraz kanał.</span></li>
+                <li className="flex gap-3"><CheckCircle2 className="h-5 w-5 mt-0.5 shrink-0 text-primary" aria-hidden="true" /><span>Jeden materiał powinien przekazywać jedną główną myśl i prowadzić do jednego działania.</span></li>
+                <li className="flex gap-3"><CheckCircle2 className="h-5 w-5 mt-0.5 shrink-0 text-primary" aria-hidden="true" /><span>Oceniaj wideo we własnych danych; nie ma gwarantowanego wzrostu sprzedaży ani pozycji.</span></li>
+              </ul>
+            </div>
 
-          {/* Introduction */}
-          <section id="introduction" className="mb-12">
-            <h2 className="mb-6 text-3xl font-bold">1. Dlaczego video marketing jest ważny dla firm?</h2>
+            <nav id="spis-tresci" aria-label="Spis treści" className="scroll-mt-24 rounded-2xl border border-border/50 bg-muted/20 p-6 mb-12">
+              <h2 className="text-xl font-heading font-bold mb-4">W tym poradniku</h2>
+              <ol className="grid sm:grid-cols-2 gap-x-8 gap-y-3 text-muted-foreground list-decimal list-inside">
+                <li><a href="#definicja" className="hover:text-primary">Czym jest video marketing?</a></li>
+                <li><a href="#korzysci" className="hover:text-primary">Zalety i wady</a></li>
+                <li><a href="#formaty" className="hover:text-primary">Rodzaje filmów</a></li>
+                <li><a href="#strategia" className="hover:text-primary">Strategia krok po kroku</a></li>
+                <li><a href="#produkcja" className="hover:text-primary">Scenariusz i produkcja</a></li>
+                <li><a href="#kanaly" className="hover:text-primary">Kanały publikacji</a></li>
+                <li><a href="#seo" className="hover:text-primary">Wideo a SEO</a></li>
+                <li><a href="#koszty" className="hover:text-primary">Koszty i zakres</a></li>
+                <li><a href="#pomiar" className="hover:text-primary">Pomiar skuteczności</a></li>
+                <li><a href="#faq" className="hover:text-primary">Najczęstsze pytania</a></li>
+              </ol>
+            </nav>
 
-            <div className="mb-6 rounded-lg bg-blue-50 p-6">
-              <p className="font-semibold text-blue-900">Statystyka:</p>
-              <p className="mt-2 text-blue-900">
-                82% całego ruchu internetowego generuje wideo. Firmy korzystające z video marketingu osiągają 6x większe zaangażowanie niż w marketingu tradycyjnym.
+            <section id="definicja" aria-labelledby="definicja-heading" className={sectionClass}>
+              <h2 id="definicja-heading" className={headingClass}>Czym jest video marketing i jak działa?</h2>
+              <p className={paragraphClass}>
+                <strong>Video marketing to strategia wykorzystywania materiałów filmowych do realizacji określonego celu komunikacji.</strong> Może objąć produkty i usługi, edukację, rekrutację albo obsługę obecnych klientów. W praktyce łączy wybór tematu, scenariusza, formy video, kanału dystrybucji i pomiaru. W formie video możesz pokazać proces lub przykład, ale samo opublikowanie filmu nie jest jeszcze strategią.
               </p>
-            </div>
-
-            <p className="mb-4">
-              Video marketing to nie przyszłość – to rzeczywistość. W 2026 roku wideo stanowi dominującą formę treści online. Dlaczego? Ponieważ:
-            </p>
-
-            <ul className="mb-6 space-y-3">
-              <li className="flex gap-3">
-                <CheckCircle2 size={20} className="mt-0.5 flex-shrink-0 text-green-600" />
-                <span>
-                  <strong>Wideo jest bardziej zapamiętywalne</strong> – ludzie zapamiętują 95% wiadomości z wideo, ale tylko 10% z tekstu
-                </span>
-              </li>
-              <li className="flex gap-3">
-                <CheckCircle2 size={20} className="mt-0.5 flex-shrink-0 text-green-600" />
-                <span>
-                  <strong>Zwiększa konwersje</strong> – strony z wideo mają 80% więcej szans na konwersję
-                </span>
-              </li>
-              <li className="flex gap-3">
-                <CheckCircle2 size={20} className="mt-0.5 flex-shrink-0 text-green-600" />
-                <span>
-                  <strong>Dominuje algorytmy platform</strong> – YouTube, TikTok, Instagram i LinkedIn promują zawartość wideo
-                </span>
-              </li>
-              <li className="flex gap-3">
-                <CheckCircle2 size={20} className="mt-0.5 flex-shrink-0 text-green-600" />
-                <span>
-                  <strong>Buduje zaufanie do marki</strong> – wideo pozwala pokazać ludzi za firmą, co buduje autentyczność
-                </span>
-              </li>
-              <li className="flex gap-3">
-                <CheckCircle2 size={20} className="mt-0.5 flex-shrink-0 text-green-600" />
-                <span>
-                  <strong>Poprawia SEO</strong> – strony zawierające wideo mają wyższe rankingi w Google
-                </span>
-              </li>
-            </ul>
-
-            <p>
-              Niezależnie od branży, video marketing powinien być kluczową częścią Twojej strategii marketingowej. Pytanie nie jest "czy robić video marketing", ale "jak to robić efektywnie".
-            </p>
-          </section>
-
-          {/* Section: Types of Marketing Videos */}
-          <section id="types" className="mb-12">
-            <h2 className="mb-6 text-3xl font-bold">2. Rodzaje filmów marketingowych</h2>
-
-            <p className="mb-8">
-              Nie wszystkie wideo są takie same. Każdy typ wideo ma inny cel i funkcję w strategii marketingowej. Oto najpopularniejsze rodzaje filmów dla firm:
-            </p>
-
-            <div className="grid gap-6 md:grid-cols-2">
-              {/* Film marki */}
-              <Card>
-                <CardContent className="pt-6">
-                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-blue-100">
-                    <Play className="h-6 w-6 text-blue-600" />
-                  </div>
-                  <h3 className="mb-2 text-xl font-bold">Film marki (Brand Film)</h3>
-                  <p className="text-gray-700">
-                    Opowiada historię Twojej firmy, wartości i misji. Buduje emocjonalne połączenie z odborcami. Zazwyczaj trwa 1-3 minuty.
-                  </p>
-                </CardContent>
-              </Card>
-
-              {/* Wideo wyjaśniające */}
-              <Card>
-                <CardContent className="pt-6">
-                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-green-100">
-                    <Zap className="h-6 w-6 text-green-600" />
-                  </div>
-                  <h3 className="mb-2 text-xl font-bold">Wideo wyjaśniające (Explainer Video)</h3>
-                  <p className="text-gray-700">
-                    Pokazuje jak działa Twój produkt lub usługa. Krótkie, zrozumiałe wideo (2-3 min) które upraszczają skomplikowane koncepty.
-                  </p>
-                </CardContent>
-              </Card>
-
-              {/* Testimonial */}
-              <Card>
-                <CardContent className="pt-6">
-                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-purple-100">
-                    <User className="h-6 w-6 text-purple-600" />
-                  </div>
-                  <h3 className="mb-2 text-xl font-bold">Testimonial / Case Study</h3>
-                  <p className="text-gray-700">
-                    Klient opowiada o swoim doświadczeniu z Twoją firmą. Niezwykle ważne dla budowania wiarygodności i zaufania.
-                  </p>
-                </CardContent>
-              </Card>
-
-              {/* Instruktaż */}
-              <Card>
-                <CardContent className="pt-6">
-                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-orange-100">
-                    <CheckCircle2 className="h-6 w-6 text-orange-600" />
-                  </div>
-                  <h3 className="mb-2 text-xl font-bold">Instruktaż (How-To Video)</h3>
-                  <p className="text-gray-700">
-                    Uczy odbiorców jak wykonać jakieś zadanie. Doskonały dla SEO i budowania autorytetu eksperta w branży.
-                  </p>
-                </CardContent>
-              </Card>
-
-              {/* Zawartość do social media */}
-              <Card>
-                <CardContent className="pt-6">
-                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-pink-100">
-                    <TrendingUp className="h-6 w-6 text-pink-600" />
-                  </div>
-                  <h3 className="mb-2 text-xl font-bold">Reels i Shorts</h3>
-                  <p className="text-gray-700">
-                    Krótkie, dynamiczne wideo (15-60 sekund) dla TikToka, Instagram Reels i YouTube Shorts. Wysokie zaangażowanie, łatwe do udostępnienia.
-                  </p>
-                </CardContent>
-              </Card>
-
-              {/* Reklamy produktów */}
-              <Card>
-                <CardContent className="pt-6">
-                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-red-100">
-                    <Target className="h-6 w-6 text-red-600" />
-                  </div>
-                  <h3 className="mb-2 text-xl font-bold">Reklama produktu</h3>
-                  <p className="text-gray-700">
-                    Bezpośrednia promocja produktu z wezwaniem do działania. Przygotowana do kampanii advertising na YouTube, TikTok lub Facebooku.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-          </section>
-
-          {/* Section: YouTube Marketing */}
-          <section id="youtube" className="mb-12">
-            <h2 className="mb-6 text-3xl font-bold">3. YouTube marketing dla firm</h2>
-
-            <p className="mb-6">
-              YouTube to drugi największy portal wyszukiwania (po Google) z ponad 2 miliardami zalogowanych użytkowników miesięcznie. Dla firm video marketing to oznacza ogromną szansę na dotarcie do docelowej publiczności.
-            </p>
-
-            <h3 className="mb-4 text-2xl font-bold">Optymalizacja kanału YouTube</h3>
-            <ul className="mb-8 space-y-2">
-              <li className="flex gap-3">
-                <ArrowRight size={20} className="flex-shrink-0 text-blue-600" />
-                <span>
-                  <strong>Profesjonalny baner i logo</strong> – pierwszy składnik wizualny Twojego kanału
-                </span>
-              </li>
-              <li className="flex gap-3">
-                <ArrowRight size={20} className="flex-shrink-0 text-blue-600" />
-                <span>
-                  <strong>Opisz kanał słowami kluczowymi</strong> – YouTube przeszukuje opis kanału w poszukiwaniu tematów
-                </span>
-              </li>
-              <li className="flex gap-3">
-                <ArrowRight size={20} className="flex-shrink-0 text-blue-600" />
-                <span>
-                  <strong>Tworz playlisty</strong> – grupuj wideo tematycznie, zwiększa to czas spędzony na kanale
-                </span>
-              </li>
-              <li className="flex gap-3">
-                <ArrowRight size={20} className="flex-shrink-0 text-blue-600" />
-                <span>
-                  <strong>Spersonalizuj kanał</strong> – dodaj w górnej części kanału napis z wezwaniem do działania (CTA)
-                </span>
-              </li>
-            </ul>
-
-            <h3 className="mb-4 text-2xl font-bold">YouTube Ads – formaty reklam</h3>
-            <ul className="mb-8 space-y-2">
-              <li className="flex gap-3">
-                <ArrowRight size={20} className="flex-shrink-0 text-green-600" />
-                <span>
-                  <strong>Reklamy skippowalne (TrueView)</strong> – widz może pominąć reklamę po 5 sekundach. Płacisz tylko jeśli obejrzy 30 sekund lub cały film
-                </span>
-              </li>
-              <li className="flex gap-3">
-                <ArrowRight size={20} className="flex-shrink-0 text-green-600" />
-                <span>
-                  <strong>Reklamy nieskippowalne (Bumper Ads)</strong> – krótkie reklamy (6 sekund) które się nie dają pominąć
-                </span>
-              </li>
-              <li className="flex gap-3">
-                <ArrowRight size={20} className="flex-shrink-0 text-green-600" />
-                <span>
-                  <strong>Reklamy surround</strong> – pojawiają się obok wideo bez przerywania go
-                </span>
-              </li>
-            </ul>
-
-            <h3 className="mb-4 text-2xl font-bold">SEO dla YouTube</h3>
-            <p className="mb-4">
-              Jeśli chcesz, aby Twoje wideo było widoczne w YouTube, musisz zadbać o SEO:
-            </p>
-            <ul className="space-y-2">
-              <li className="flex gap-3">
-                <CheckCircle2 size={20} className="flex-shrink-0 text-blue-600" />
-                <span>
-                  <strong>Tytuł</strong> – musi zawierać słowo kluczowe, być interesujący i zachęcać do kliknięcia
-                </span>
-              </li>
-              <li className="flex gap-3">
-                <CheckCircle2 size={20} className="flex-shrink-0 text-blue-600" />
-                <span>
-                  <strong>Opis</strong> – pisze dla ludzi i algorytmu YouTube; zawiera słowa kluczowe i linki
-                </span>
-              </li>
-              <li className="flex gap-3">
-                <CheckCircle2 size={20} className="flex-shrink-0 text-blue-600" />
-                <span>
-                  <strong>Tagi</strong> – używaj co najmniej 10 tagów zawierających słowa kluczowe
-                </span>
-              </li>
-              <li className="flex gap-3">
-                <CheckCircle2 size={20} className="flex-shrink-0 text-blue-600" />
-                <span>
-                  <strong>Miniatura (thumbnail)</strong> – musi być ostRA i wyróżniająca się, zwiększa CTR nawet o 30%
-                </span>
-              </li>
-            </ul>
-          </section>
-
-          {/* Section: Social Media Video */}
-          <section id="social" className="mb-12">
-            <h2 className="mb-6 text-3xl font-bold">4. Video w mediach społecznościowych</h2>
-
-            <p className="mb-8">
-              Każda platforma społecznościowa ma inne wymagania dla wideo. Oto krótki przewodnik po najpopularniejszych platformach:
-            </p>
-
-            <div className="space-y-8">
-              {/* TikTok */}
-              <div className="rounded-lg border border-gray-200 p-6">
-                <h3 className="mb-4 text-2xl font-bold">TikTok dla biznesu</h3>
-                <ul className="space-y-2">
-                  <li className="flex gap-3">
-                    <CheckCircle2 size={20} className="flex-shrink-0 text-blue-600" />
-                    <span>Format pionowy 9:16, długość 15-60 sekund (optymalnie 21-34 sekundy)</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle2 size={20} className="flex-shrink-0 text-blue-600" />
-                    <span>Dynamiczne, autentyczne treści – TikTok karze nudne, profesjonalne wideo</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle2 size={20} className="flex-shrink-0 text-blue-600" />
-                    <span>Używaj trendów i muzyki – algorytm TikToka promuje wideo z popularnymi dźwiękami</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle2 size={20} className="flex-shrink-0 text-blue-600" />
-                    <span>Hashtagi – badania pokazują, że 3 hashtagi to optimum, nie więcej niż 5</span>
-                  </li>
-                </ul>
-              </div>
-
-              {/* Instagram Reels */}
-              <div className="rounded-lg border border-gray-200 p-6">
-                <h3 className="mb-4 text-2xl font-bold">Instagram Reels</h3>
-                <ul className="space-y-2">
-                  <li className="flex gap-3">
-                    <CheckCircle2 size={20} className="flex-shrink-0 text-green-600" />
-                    <span>Format pionowy 9:16, długość do 90 sekund, optymalnie 15-30 sekund</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle2 size={20} className="flex-shrink-0 text-green-600" />
-                    <span>Instagram promuje Reels ponad posty ze zdjęciami – inwestuj w ten format</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle2 size={20} className="flex-shrink-0 text-green-600" />
-                    <span>Dodaj tekst na wideo – wiele osób ogląda bez dźwięku</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle2 size={20} className="flex-shrink-0 text-green-600" />
-                    <span>Wezwanie do działania (CTA) – zachęć do kliknięcia w bio lub na profil</span>
-                  </li>
-                </ul>
-              </div>
-
-              {/* Facebook Video */}
-              <div className="rounded-lg border border-gray-200 p-6">
-                <h3 className="mb-4 text-2xl font-bold">Facebook Video</h3>
-                <ul className="space-y-2">
-                  <li className="flex gap-3">
-                    <CheckCircle2 size={20} className="flex-shrink-0 text-blue-600" />
-                    <span>Format kwadratowy (1:1) lub pionowy (9:16), długość do 2 minut</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle2 size={20} className="flex-shrink-0 text-blue-600" />
-                    <span>Facebook automitycznie odtwarza wideo bez dźwięku – dodaj napisy/tekst</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle2 size={20} className="flex-shrink-0 text-blue-600" />
-                    <span>Pierwsze 3 sekundy są kluczowe – musisz przyciągnąć uwagę natychmiast</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle2 size={20} className="flex-shrink-0 text-blue-600" />
-                    <span>Facebook Video Ads – jeden z najtańszych formatów reklam wideo</span>
-                  </li>
-                </ul>
-              </div>
-
-              {/* LinkedIn Video */}
-              <div className="rounded-lg border border-gray-200 p-6">
-                <h3 className="mb-4 text-2xl font-bold">LinkedIn Video</h3>
-                <ul className="space-y-2">
-                  <li className="flex gap-3">
-                    <CheckCircle2 size={20} className="flex-shrink-0 text-purple-600" />
-                    <span>Format pionowy lub poziomy, idealna długość 30 sekund - 1 minuta</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle2 size={20} className="flex-shrink-0 text-purple-600" />
-                    <span>Profesjonalna treść – instruktaże, porady dla branży, case studies</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle2 size={20} className="flex-shrink-0 text-purple-600" />
-                    <span>LinkedIn zawsze zmienia treści pracowników – szkolenie zespołu to inwestycja</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle2 size={20} className="flex-shrink-0 text-purple-600" />
-                    <span>Doskonale dla B2B – osiągaj decydentów w branży Twojej firmy</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </section>
-
-          {/* Section: Video Ads */}
-          <section id="ads" className="mb-12">
-            <h2 className="mb-6 text-3xl font-bold">5. Reklamy wideo online</h2>
-
-            <p className="mb-8">
-              Reklama wideo online pozwala na precyzyjne targetowanie i mierzalne wyniki. Oto największe platformy do advertising wideo:
-            </p>
-
-            <div className="grid gap-6">
-              {/* YouTube Ads */}
-              <Card>
-                <CardContent className="pt-6">
-                  <h3 className="mb-3 text-xl font-bold">YouTube Ads</h3>
-                  <p className="mb-4 text-gray-700">
-                    Dotarcie do miliardów ludzi na YouTube. Możesz targetować wg zainteresowań, słów kluczowych, demographic i zachowań użytkowników.
-                  </p>
-                  <ul className="space-y-2">
-                    <li>Koszt per view: 0,10-0,30 PLN</li>
-                    <li>Opcje targetowania: słowa kluczowe, placement, demografię, zainteresowania</li>
-                    <li>Doskonałe dla filmów 30-120 sekund</li>
-                  </ul>
-                </CardContent>
-              </Card>
-
-              {/* TikTok Ads */}
-              <Card>
-                <CardContent className="pt-6">
-                  <h3 className="mb-3 text-xl font-bold">TikTok Ads</h3>
-                  <p className="mb-4 text-gray-700">
-                    Najszybciej rosnąca platforma reklamowa ze skupieniem na młodszych audytoriach. Doskonałe dla kampanii marki i productów.
-                  </p>
-                  <ul className="space-y-2">
-                    <li>Koszt per view: 0,05-0,15 PLN</li>
-                    <li>Idealny format: 15-30 sekund</li>
-                    <li>Wysokie zaangażowanie i CPM konkurencyjne</li>
-                  </ul>
-                </CardContent>
-              </Card>
-
-              {/* Facebook & Instagram Ads */}
-              <Card>
-                <CardContent className="pt-6">
-                  <h3 className="mb-3 text-xl font-bold">Facebook & Instagram Video Ads</h3>
-                  <p className="mb-4 text-gray-700">
-                    Połączone platformy Meta dają dostęp do ponad 3 miliardów użytkowników. Najlepsze dla e-commerce i kampanii konwersji.
-                  </p>
-                  <ul className="space-y-2">
-                    <li>Koszt per view: 0,08-0,25 PLN</li>
-                    <li>Zaawansowane targetowanie i retargeting</li>
-                    <li>Integracja ze sklepami online dla bezpośrednich sprzedaży</li>
-                  </ul>
-                </CardContent>
-              </Card>
-
-              {/* Google Ads - Video */}
-              <Card>
-                <CardContent className="pt-6">
-                  <h3 className="mb-3 text-xl font-bold">Google Ads - Video Campaign</h3>
-                  <p className="mb-4 text-gray-700">
-                    Kampanie wideo w ekosystemie Google, od YouTube aż do Google Display Network na stronach partnerów.
-                  </p>
-                  <ul className="space-y-2">
-                    <li>Łatwa integracja ze stronami i aplikacjami partnerów</li>
-                    <li>Dużo danych do optymalizacji kampanii</li>
-                    <li>Możliwość retargetowania użytkowników Google</li>
-                  </ul>
-                </CardContent>
-              </Card>
-            </div>
-          </section>
-
-          {/* Section: Planning Video Campaign */}
-          <section id="planning" className="mb-12">
-            <h2 className="mb-6 text-3xl font-bold">6. Jak zaplanować kampanię video?</h2>
-
-            <p className="mb-8">
-              Zaplanowanie kampanii video jest kluczowe dla sukcesu. Oto kroki które powinieneś wykonać:
-            </p>
-
-            <div className="space-y-8">
-              {/* Krok 1 */}
-              <div className="border-l-4 border-blue-600 pl-6">
-                <h3 className="mb-3 text-xl font-bold">Krok 1. Zdefiniuj cel kampanii</h3>
-                <p className="mb-2">
-                  Jakie chcesz osiągnąć wyniki? Zwiększenie świadomości marki, generacja leadów, wzrost sprzedaży, czy budowanie autorytetu?
-                </p>
-                <p className="text-gray-700">
-                  Każdy cel wymaga innego podejścia do twórczości i dystrybucji wideo.
-                </p>
-              </div>
-
-              {/* Krok 2 */}
-              <div className="border-l-4 border-blue-600 pl-6">
-                <h3 className="mb-3 text-xl font-bold">Krok 2. Poznaj swoją publiczność</h3>
-                <p className="mb-2">
-                  Na którą platformę powinni iść twoi odbiorcy? Jaki jest ich wiek, płeć, zainteresowania?
-                </p>
-                <p className="text-gray-700">
-                  Ta wiedza determinuje format, styl i kanał dystrybucji twojego wideo.
-                </p>
-              </div>
-
-              {/* Krok 3 */}
-              <div className="border-l-4 border-blue-600 pl-6">
-                <h3 className="mb-3 text-xl font-bold">Krok 3. Stwórz brief kreatywny</h3>
-                <p className="mb-2">
-                  Dokument który zawiera: cel, publiczność, wiadomość kluczowa, wezwanie do działania, długość, budżet i timeline.
-                </p>
-                <p className="text-gray-700">
-                  Brief jest mapą drogową dla całego procesu produkcji.
-                </p>
-              </div>
-
-              {/* Krok 4 */}
-              <div className="border-l-4 border-blue-600 pl-6">
-                <h3 className="mb-3 text-xl font-bold">Krok 4. Napisz scenariusz (script)</h3>
-                <p className="mb-2">
-                  Każde dobre wideo zaczyna się od dobrego scenariusza. Napisz dialog, opisy ujęć i plan produkcji.
-                </p>
-                <p className="text-gray-700">
-                  Scenariusz nie musi być długi – nawet krótkie wideo (30 sekund) powinno mieć strukturę.
-                </p>
-              </div>
-
-              {/* Krok 5 */}
-              <div className="border-l-4 border-blue-600 pl-6">
-                <h3 className="mb-3 text-xl font-bold">Krok 5. Produkcja wideo</h3>
-                <p className="mb-2">
-                  Zdjęcia, nagrania, Voice-over, muzyka. Możesz wynająć profesjonalistów lub zrobić DIY.
-                </p>
-                <p className="text-gray-700">
-                  Jakość powinna odpowiadać budżetowi, ale nawet budżetowe produkcje mogą być skuteczne jeśli idea jest dobra.
-                </p>
-              </div>
-
-              {/* Krok 6 */}
-              <div className="border-l-4 border-blue-600 pl-6">
-                <h3 className="mb-3 text-xl font-bold">Krok 6. Edycja i postprodukcja</h3>
-                <p className="mb-2">
-                  Montaż, korekta kolorów, dodanie efektów, tekstu i muzyki. To ten etap gdzie wideo ożywa.
-                </p>
-                <p className="text-gray-700">
-                  Dobrze zmontowane wideo może nawet słabsze nagrania przekształcić w coś wartościowego.
-                </p>
-              </div>
-
-              {/* Krok 7 */}
-              <div className="border-l-4 border-blue-600 pl-6">
-                <h3 className="mb-3 text-xl font-bold">Krok 7. Dystrybucja</h3>
-                <p className="mb-2">
-                  Opublikuj wideo na wybranych kanałach. Pamiętaj o:
-                </p>
-                <ul className="space-y-1 text-gray-700">
-                  <li>Optymalizacji SEO (tytuł, opis, tagi, miniatura)</li>
-                  <li>Wezwaniu do działania (subscribe, klik w link, itp.)</li>
-                  <li>Promocji wideo poprzez media społecznościowe i email</li>
-                </ul>
-              </div>
-
-              {/* Krok 8 */}
-              <div className="border-l-4 border-blue-600 pl-6">
-                <h3 className="mb-3 text-xl font-bold">Krok 8. Mierzenie i optymalizacja</h3>
-                <p className="mb-2">
-                  Śledź metryki: views, watch time, engagement, CTR, konwersje.
-                </p>
-                <p className="text-gray-700">
-                  Używaj tych danych do optymalizacji przyszłych kampanii i poprawy rezultatów.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          {/* Section: Video Production Costs */}
-          <section id="costs" className="mb-12">
-            <h2 className="mb-6 text-3xl font-bold">7. Ile kosztuje produkcja wideo dla firmy?</h2>
-
-            <p className="mb-8">
-              Koszt produkcji wideo bardzo się różni w zależności od wielu czynników. Oto przewodnik po typowych kosztach:
-            </p>
-
-            <div className="grid gap-6">
-              {/* Wideo do social media */}
-              <Card className="border-2">
-                <CardContent className="pt-6">
-                  <div className="mb-4 flex items-center justify-between">
-                    <h3 className="text-xl font-bold">Wideo do social media (Reels, Shorts)</h3>
-                    <Badge className="bg-green-100 text-green-800">Budżetowe</Badge>
-                  </div>
-                  <p className="mb-4 text-gray-700">
-                    Krótkie wideo 15-60 sekund, do TikToka, Instagram, YouTube.
-                  </p>
-                  <div className="rounded-lg bg-gray-50 p-4">
-                    <p className="text-lg font-semibold">1 000 - 5 000 PLN</p>
-                    <ul className="mt-3 space-y-2 text-sm text-gray-600">
-                      <li>• Koncepcja i scenariusz</li>
-                      <li>• Prosty montaż</li>
-                      <li>• Bez profesjonalnej ekipy produkcyjnej</li>
-                      <li>• Można robić in-house lub zlecić freelancerowi</li>
-                    </ul>
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Film promocyjny */}
-              <Card className="border-2">
-                <CardContent className="pt-6">
-                  <div className="mb-4 flex items-center justify-between">
-                    <h3 className="text-xl font-bold">Film promocyjny firmy</h3>
-                    <Badge className="bg-blue-100 text-blue-800">Standardowo</Badge>
-                  </div>
-                  <p className="mb-4 text-gray-700">
-                    Film 1-3 minut pokazujący firmę, usługi lub produkty. Nakręcony profesjonalnie.
-                  </p>
-                  <div className="rounded-lg bg-gray-50 p-4">
-                    <p className="text-lg font-semibold">5 000 - 20 000 PLN</p>
-                    <ul className="mt-3 space-y-2 text-sm text-gray-600">
-                      <li>• Profesjonalna kamera i sprzęt</li>
-                      <li>• Scenariusz i koncepcja</li>
-                      <li>• Profesjonalny montaż</li>
-                      <li>• Muzyka i efekty dźwiękowe</li>
-                      <li>• Mała ekipa produkcyjna (1-3 osoby)</li>
-                    </ul>
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Kampania złożona */}
-              <Card className="border-2">
-                <CardContent className="pt-6">
-                  <div className="mb-4 flex items-center justify-between">
-                    <h3 className="text-xl font-bold">Kampania video (3-5 filmów)</h3>
-                    <Badge className="bg-purple-100 text-purple-800">Premium</Badge>
-                  </div>
-                  <p className="mb-4 text-gray-700">
-                    Kompletna kampania z wieloma wariantami wideo do różnych kanałów i odbiorców.
-                  </p>
-                  <div className="rounded-lg bg-gray-50 p-4">
-                    <p className="text-lg font-semibold">20 000 - 100 000+ PLN</p>
-                    <ul className="mt-3 space-y-2 text-sm text-gray-600">
-                      <li>• Pełna produkcja z dużą ekipą</li>
-                      <li>• Wszystkie elementy (scenariusz, reżyseria, edycja, color grading)</li>
-                      <li>• Profesjonalna post-produkcja i sound design</li>
-                      <li>• Kampania advertising</li>
-                      <li>• Mierzenie i optymalizacja</li>
-                    </ul>
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Wideo live action */}
-              <Card className="border-2">
-                <CardContent className="pt-6">
-                  <div className="mb-4 flex items-center justify-between">
-                    <h3 className="text-xl font-bold">Produkcja TV / Cinema</h3>
-                    <Badge className="bg-red-100 text-red-800">Prestiż</Badge>
-                  </div>
-                  <p className="mb-4 text-gray-700">
-                    Wysokobudżetowa produkcja do użytku w TV, kinach lub kampaniach flag szipowych.
-                  </p>
-                  <div className="rounded-lg bg-gray-50 p-4">
-                    <p className="text-lg font-semibold">100 000 - 500 000+ PLN</p>
-                    <ul className="mt-3 space-y-2 text-sm text-gray-600">
-                      <li>• Profesjonalna ekipa (reżyser, operator, producent)</li>
-                      <li>• Profesjonalne aktorstwo i kadrowanie</li>
-                      <li>• Zaawansowana post-produkcja</li>
-                      <li>• VFX i animacje</li>
-                      <li>• Dystrybucja na licznych kanałach</li>
-                    </ul>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-
-            <div className="mt-8 rounded-lg bg-yellow-50 p-6">
-              <p className="font-semibold text-yellow-900">Wskazówka:</p>
-              <p className="mt-2 text-yellow-900">
-                Najważniejsze nie jest ile wydasz na produkcję, ale czy wideo będzie efektywne. Czasem prosty, autenticzny film DIY osiągnie lepsze wyniki niż droga, korporacyjna produkcja. Inwestuj w dobrą ideę i scenariusz, zanim inwestujesz w sprzęt.
+              <p className={paragraphClass}>
+                Pojęcia „wideo marketing”, „marketing wideo” i „marketing video” bywają używane zamiennie. W ramach video marketingu ważna jest nie nazwa, lecz relacja między potrzebą widza a działaniem firmy. Skuteczny marketing video zaczyna się od pytania: co odbiorca ma zrozumieć lub zrobić po obejrzeniu? Łatwy w odbiorze przekaz video nie zastępuje jednak wiarygodnej oferty.
               </p>
-            </div>
-          </section>
+              <p className={paragraphClass}>
+                Video marketing jest częścią digital marketingu, a content marketing wykorzystuje filmy jako jeden z formatów edukacyjnych. Reklama natomiast może wymagać odrębnej wersji, budżetu i modelu rozliczenia. Jeśli planujesz szerszy system tematów, zobacz także <Link to="/blog/strategia-content-marketingu-skuteczny-przewodnik-dla-firm" className="text-primary hover:underline">poradnik o strategii content marketingowej</Link>.
+              </p>
+            </section>
 
-          {/* Section: Measuring Success */}
-          <section id="measurement" className="mb-12">
-            <h2 className="mb-6 text-3xl font-bold">8. Mierzenie skuteczności video marketingu</h2>
-
-            <p className="mb-8">
-              Jeśli nie mierzysz, to nie możesz optymalizować. Oto kluczowe metryki dla video marketingu:
-            </p>
-
-            <div className="grid gap-4 md:grid-cols-2">
-              <div className="rounded-lg border border-gray-200 p-4">
-                <h3 className="mb-2 font-bold text-blue-600">Wyświetlenia (Views)</h3>
-                <p className="text-sm text-gray-700">
-                  Liczba razy jaką wideo zostało obejrzane. Dla YouTube minimum to 30 sekund, dla TikToka 3 sekundy.
-                </p>
-              </div>
-
-              <div className="rounded-lg border border-gray-200 p-4">
-                <h3 className="mb-2 font-bold text-blue-600">Czas oglądania (Watch Time)</h3>
-                <p className="text-sm text-gray-700">
-                  Całkowita liczba minut lub godzin jaki widzowie spędzili na obejrzeniu wideo. Krytyczne dla rankingu YouTube.
-                </p>
-              </div>
-
-              <div className="rounded-lg border border-gray-200 p-4">
-                <h3 className="mb-2 font-bold text-green-600">Procent przeglądalności (VTR)</h3>
-                <p className="text-sm text-gray-700">
-                  Procent wideo jaki średni widz obejrzał. 50% to dobrze, 70%+ to doskonale.
-                </p>
-              </div>
-
-              <div className="rounded-lg border border-gray-200 p-4">
-                <h3 className="mb-2 font-bold text-green-600">Zaangażowanie (Engagement)</h3>
-                <p className="text-sm text-gray-700">
-                  Polubienia, komentarze, udostępnienia, subskrypcje. Wysoka zaangażowanie oznacza że treść je zainteresowała.
-                </p>
-              </div>
-
-              <div className="rounded-lg border border-gray-200 p-4">
-                <h3 className="mb-2 font-bold text-purple-600">Współczynnik kliknięcia (CTR)</h3>
-                <p className="text-sm text-gray-700">
-                  Procent osób które kliknęły na link po obejrzeniu wideo. Dobrze zoptymalizowane wideo ma CTR 5-10%.
-                </p>
-              </div>
-
-              <div className="rounded-lg border border-gray-200 p-4">
-                <h3 className="mb-2 font-bold text-purple-600">Konwersje</h3>
-                <p className="text-sm text-gray-700">
-                  Liczba osób które wykonały żądane działanie (zakupił, zasubskrybował, wypełnił formularz) dzięki wideo.
-                </p>
-              </div>
-            </div>
-
-            <h3 className="mb-4 mt-8 text-2xl font-bold">Jak śledzić metryki?</h3>
-
-            <ul className="space-y-3">
-              <li className="flex gap-3">
-                <CheckCircle2 size={20} className="flex-shrink-0 text-blue-600" />
-                <span>
-                  <strong>YouTube Analytics</strong> – darmowy dostęp dla właścicieli kanału z szczegółowymi danymi na temat oglądaczy
-                </span>
-              </li>
-              <li className="flex gap-3">
-                <CheckCircle2 size={20} className="flex-shrink-0 text-blue-600" />
-                <span>
-                  <strong>Insights TikTok/Instagram</strong> – każda platforma daje dostęp do statystyk dla biznesu
-                </span>
-              </li>
-              <li className="flex gap-3">
-                <CheckCircle2 size={20} className="flex-shrink-0 text-blue-600" />
-                <span>
-                  <strong>Google Analytics</strong> – śledź które wideo doprowadziły użytkowników na Twoją stronę i co robili
-                </span>
-              </li>
-              <li className="flex gap-3">
-                <CheckCircle2 size={20} className="flex-shrink-0 text-blue-600" />
-                <span>
-                  <strong>UTM parametry</strong> – dodaj parametry do linków w wideo aby śledzić zwrotną drogę (source, medium, campaign)
-                </span>
-              </li>
-              <li className="flex gap-3">
-                <CheckCircle2 size={20} className="flex-shrink-0 text-blue-600" />
-                <span>
-                  <strong>Narzędzia analityczne</strong> – użyj Sprout Social, Buffer, Later do analizy wszystkich kanałów w jednym miejscu
-                </span>
-              </li>
-            </ul>
-          </section>
-
-          {/* Case Study */}
-          <section id="case-study" className="mb-12">
-            <h2 className="mb-6 text-3xl font-bold">9. Case Study – Przykład kampanii video</h2>
-
-            <Card className="border-2 border-blue-200">
-              <CardContent className="pt-6">
-                <div className="mb-6 rounded-lg bg-blue-50 p-4">
-                  <h3 className="mb-2 text-lg font-bold">Scenario: E-commerce – Nowa linia ubrań</h3>
-                  <p className="text-sm text-gray-700">
-                    Sklep online z ubraniami chciał zwiększyć sprzedaż nowej linii. Zbudował kampanię video multi-platformową.
-                  </p>
+            <section id="korzysci" aria-labelledby="korzysci-heading" className={sectionClass}>
+              <h2 id="korzysci-heading" className={headingClass}>Video w strategii marketingowej: zalety i wady</h2>
+              <p className={paragraphClass}>
+                Wideo w strategii pozwala pokazać ruch, sposób użycia i wypowiedź człowieka. Może wspierać rozpoznawalność marki oraz wizerunek marki, bo odbiorcy widzą proces zamiast wyłącznie czytać o nim. Dobra forma przekazu pomaga wyjaśnić, co jest istotne w produkcie lub usłudze, i angażować osoby, które wolą oglądać niż czytać długi opis.
+              </p>
+              <div className="grid md:grid-cols-2 gap-5 mb-6">
+                <div className="rounded-xl border border-border/60 p-5">
+                  <h3 className="font-heading font-bold mb-3">Możliwe korzyści</h3>
+                  <ul className="space-y-2 text-muted-foreground">
+                    <li>prezentacja produktu lub procesu w konkretnym kontekście,</li>
+                    <li>budowanie rozpoznawalności przez spójny styl i tematy,</li>
+                    <li>wykorzystanie jednego nagrania w kilku przemyślanych wersjach,</li>
+                    <li>dodatkowy materiał dla sprzedaży, obsługi i rekrutacji.</li>
+                  </ul>
                 </div>
-
-                <h4 className="mb-4 font-bold">Etap 1: Strategia</h4>
-                <ul className="mb-6 space-y-2">
-                  <li className="flex gap-2">
-                    <span className="font-semibold text-blue-600">Cel:</span>
-                    <span>50% wzrost sprzedaży nowej linii w ciągu 3 miesięcy</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="font-semibold text-blue-600">Publiczność:</span>
-                    <span>Kobiety 25-45 lat zainteresowane modą, zdrowym stylem życia</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="font-semibold text-blue-600">Kanały:</span>
-                    <span>Instagram Reels, TikTok, YouTube Shorts, Facebook Video Ads</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="font-semibold text-blue-600">Budżet:</span>
-                    <span>10 000 PLN na produkcję + 15 000 PLN na advertising</span>
-                  </li>
-                </ul>
-
-                <h4 className="mb-4 font-bold">Etap 2: Produkcja</h4>
-                <p className="mb-3">Stworzyliśmy 3 wideo:</p>
-                <ul className="mb-6 space-y-2">
-                  <li>
-                    <strong>Wideo 1 (15 sekund):</strong> Dynamiczny showcase linii ubrań, trendy muzyka, lifestyle feel
-                  </li>
-                  <li>
-                    <strong>Wideo 2 (30 sekund):</strong> Testimonial od influencerki z branży fashion o nowych ubraniach
-                  </li>
-                  <li>
-                    <strong>Wideo 3 (60 sekund):</strong> Behind-the-scenes z tworzenia linii + historia marki
-                  </li>
-                </ul>
-
-                <h4 className="mb-4 font-bold">Etap 3: Dystrybucja</h4>
-                <ul className="mb-6 space-y-2">
-                  <li>
-                    <strong>Instagram Reels & TikTok:</strong> Publikacja 3x dziennie, organiczny reach + paid promotion
-                  </li>
-                  <li>
-                    <strong>YouTube Ads:</strong> Skippowalne reklamy na kanałach fashion i lifestyle
-                  </li>
-                  <li>
-                    <strong>Facebook Video Ads:</strong> Retargeting do osób które odwiedziły stronę sklepu
-                  </li>
-                </ul>
-
-                <h4 className="mb-4 font-bold">Etap 4: Wyniki (po 3 miesiącach)</h4>
-                <div className="grid gap-4 md:grid-cols-2">
-                  <div className="rounded-lg bg-green-50 p-4">
-                    <p className="text-sm text-gray-600">Całkowite views</p>
-                    <p className="text-3xl font-bold text-green-600">850K</p>
-                  </div>
-                  <div className="rounded-lg bg-green-50 p-4">
-                    <p className="text-sm text-gray-600">Średnia VTR</p>
-                    <p className="text-3xl font-bold text-green-600">68%</p>
-                  </div>
-                  <div className="rounded-lg bg-blue-50 p-4">
-                    <p className="text-sm text-gray-600">Konwersje</p>
-                    <p className="text-3xl font-bold text-blue-600">280 sprzedaży</p>
-                  </div>
-                  <div className="rounded-lg bg-blue-50 p-4">
-                    <p className="text-sm text-gray-600">ROI</p>
-                    <p className="text-3xl font-bold text-blue-600">385%</p>
-                  </div>
+                <div className="rounded-xl border border-border/60 p-5">
+                  <h3 className="font-heading font-bold mb-3">Ograniczenia i koszty</h3>
+                  <ul className="space-y-2 text-muted-foreground">
+                    <li>czas potrzebny na przygotowanie, akceptację i montaż,</li>
+                    <li>wymagania dotyczące zgód, muzyki i praw do materiałów,</li>
+                    <li>różne wersje kadru, napisów i opisów dla platform,</li>
+                    <li>ryzyko błędnych wniosków przy pomiarze samej liczby odsłon.</li>
+                  </ul>
                 </div>
-
-                <p className="mt-6 text-sm text-gray-600">
-                  Wynik: Sprzedaż nowej linii wzrosła o 62%, a koszt pozyskania klienta przez wideo wyniósł zaledwie 90 PLN vs 250 PLN w poprzednich kampaniach.
-                </p>
-              </CardContent>
-            </Card>
-          </section>
-
-          {/* FAQ */}
-          <section id="faq" className="mb-12">
-            <h2 className="mb-6 text-3xl font-bold">10. FAQ – Najczęstsze pytania o video marketing</h2>
-
-            <Accordion type="single" collapsible className="w-full">
-              <AccordionItem value="item-1">
-                <AccordionTrigger>
-                  Ile kosztuje produkcja wideo dla firmy?
-                </AccordionTrigger>
-                <AccordionContent>
-                  Koszt produkcji wideo zależy od jakości i zakresu projektu. Wideo do social media kosztuje 1000-5000 PLN, profesjonalny film promocyjny 5000-20000 PLN, a kampania złożona 20000+ PLN. Najważniejsze jest czy wideo osiąga cele biznesowe, a nie jak dużo wydano na produkcję.
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-2">
-                <AccordionTrigger>
-                  Czy video marketing rzeczywiście zwiększa sprzedaż?
-                </AccordionTrigger>
-                <AccordionContent>
-                  Tak, badania pokazują, że wideo zwiększa engagement o 6x i konwersje o 30-80% w zależności od branży i jakości zawartości. Jednak wymaga to poprawnego planowania, produkcji i dystrybucji. Wideo samo w sobie nie zwiększa sprzedaży – musi być częścią większej strategii marketingowej.
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-3">
-                <AccordionTrigger>
-                  Jaki format wideo jest najlepszy dla TikToka?
-                </AccordionTrigger>
-                <AccordionContent>
-                  Na TikToku najskuteczniejsze są krótkie, dynamiczne wideo w formacie pionowym (9:16) trwające 15-60 sekund, z autentyczną zawartością i ścieżką dźwiękową. Unikaj zbyt edytowanego lub profesjonalnego wyglądu – TikTok preferuje naturalne, zabawne i trendujące treści.
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-4">
-                <AccordionTrigger>
-                  Ile czasu zajmuje produkcja profesjonalnego wideo?
-                </AccordionTrigger>
-                <AccordionContent>
-                  Profesjonalna produkcja wideo trwa zazwyczaj 4-8 tygodni, w zależności od kompleksności projektu. Od konceptu, przez pre-produkcję (scenariusz, casting), produkcję (nagrania), do post-produkcji (edycja, color grading, sound design). Wideo prostsze mogą być gotowe w 2-3 tygodnie.
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-5">
-                <AccordionTrigger>
-                  Jakie metryki powinnam śledzić w video marketingu?
-                </AccordionTrigger>
-                <AccordionContent>
-                  Kluczowe metryki to: liczba wyświetleń, czas oglądania, procent przeglądalności (VTR), zaangażowanie (likes, comments, shares), współczynnik kliknięcia (CTR) i konwersje. Jednak najważniejsza metryka zależy od celu kampanii – jeśli chcesz sprzedaży, śledź konwersje. Jeśli świadomość marki, śledź reach i views.
-                </AccordionContent>
-              </AccordionItem>
-            </Accordion>
-          </section>
-
-          {/* CTA */}
-          <section className="rounded-lg bg-gradient-to-r from-blue-600 to-blue-800 px-6 py-12 text-white md:px-12">
-            <div className="mx-auto max-w-2xl text-center">
-              <h2 className="mb-4 text-3xl font-bold">Gotowy na video marketing?</h2>
-              <p className="mb-8 text-lg">
-                Zespół FOTZ stworzy dla Twojej firmy kampanię video, która będzie działać. Od konceptu, przez produkcję, do mierzenia rezultatów.
-              </p>
-
-              <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
-                <Link
-                  to="/uslugi/video-marketing"
-                  className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-3 font-semibold text-blue-600 transition hover:bg-gray-100"
-                >
-                  Sprawdź usługę Video Marketing
-                  <ArrowRight size={20} className="ml-2" />
-                </Link>
-                <Link
-                  to="/kontakt"
-                  className="inline-flex items-center justify-center rounded-lg border-2 border-white px-8 py-3 font-semibold text-white transition hover:bg-white hover:text-blue-600"
-                >
-                  Zarezerwuj konsultację
-                  <ArrowRight size={20} className="ml-2" />
-                </Link>
               </div>
-            </div>
-          </section>
+              <p className={paragraphClass}>
+                Skuteczny marketing wymaga dopasowania środków do celu. Film może wspierać świadomość marki lub konwersję, ale nie zagwarantuje zainteresowania. Wpływ mają również dystrybucja, strona docelowa, dostępność oferty i decyzje konkurentów. Dlatego video marketing warto oceniać jako element całej strategii marketingowej. Taka strategia marketingowa powinna łączyć kanały zamiast traktować film jako osobny skrót do wyniku.
+              </p>
+            </section>
+
+            <section id="formaty" aria-labelledby="formaty-heading" className={sectionClass}>
+              <h2 id="formaty-heading" className={headingClass}>Rodzaje treści wideo: film promocyjny, reklama i content</h2>
+              <p className={paragraphClass}>
+                Wybór formatu zacznij od zadania, nie od listy popularnych trendów. Poniższe rodzaje filmów marketingowych mogą współpracować w jednej kampanii video marketingowej, ale każdy potrzebuje własnego celu i sposobu oceny.
+              </p>
+              <div className="grid md:grid-cols-2 gap-5">
+                {formats.map((format) => (
+                  <div key={format.title} className="rounded-xl border border-border/60 p-5">
+                    <PlayCircle className="h-6 w-6 text-primary mb-3" aria-hidden="true" />
+                    <h3 className="text-xl font-heading font-bold mb-3">{format.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed">{format.text}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            <section id="strategia" aria-labelledby="strategia-heading" className={sectionClass}>
+              <h2 id="strategia-heading" className={headingClass}>Jak stworzyć skuteczną strategię video marketingową?</h2>
+              <p className={paragraphClass}>
+                Jak wykorzystać video marketing w firmie? Poznaj potrzeby Twojej firmy i opieraj plan na jednym dokumencie, który łączy cel, grupę odbiorców, temat, kanał i odpowiedzialność. Poniższe kroki pomogą zbudować plan dopasowany do zasobów. Twoja strategia video marketingowa nie musi kopiować konkurencji; działania video i strategie publikacji innych marek traktuj jako inspirację, nie gotową receptę.
+              </p>
+              <div className="space-y-5">
+                {strategySteps.map((step) => (
+                  <div key={step.title} className="border-l-2 border-primary/50 pl-5">
+                    <h3 className="text-xl font-heading font-bold mb-2">{step.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed">{step.text}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            <section id="produkcja" aria-labelledby="produkcja-heading" className={sectionClass}>
+              <h2 id="produkcja-heading" className={headingClass}>Scenariusz, nagranie i montaż materiałów wideo</h2>
+              <p className={paragraphClass}>
+                W briefie zapisz cel, odbiorcę, główną myśl, CTA, miejsca publikacji, zakres wersji i osoby akceptujące. Scenariusz powinien pokazywać kolejność wypowiedzi oraz ujęć, a nie tylko ogólny pomysł. Przy krótkim filmie wystarczy zwięzły plan: otwarcie z tematem, rozwinięcie z przykładem i zakończenie z kolejnym krokiem.
+              </p>
+              <h3 className="text-xl font-heading font-bold mb-3">Przed nagraniem</h3>
+              <p className={paragraphClass}>
+                Sprawdź miejsce, tło, dźwięk, światło, zgody oraz prawa do zdjęć i muzyki. Przygotuj sprzęt odpowiedni do ujęć, ale nie przedstawiaj listy zakupów jako warunku rozpoczęcia. Zrób próbę i obejrzyj ją na urządzeniu docelowym. Jeśli korzystasz z AI, zweryfikuj fakty, język i źródła; marketer pozostaje odpowiedzialny za publikację.
+              </p>
+              <h3 className="text-xl font-heading font-bold mb-3">W montażu i przed publikacją</h3>
+              <p className={paragraphClass}>
+                Usuń fragmenty, które powtarzają przekaz bez dodawania informacji. Dodaj czytelne napisy, sprawdź głośność, kolory i prawa do wszystkich elementów. Przygotuj wymagane kadry oraz eksport dla każdego kanału. Zachowaj uporządkowane pliki źródłowe i nazwy wersji, aby późniejsza korekta nie wymagała ponownego montażu całości.
+              </p>
+            </section>
+
+            <section id="kanaly" aria-labelledby="kanaly-heading" className={sectionClass}>
+              <h2 id="kanaly-heading" className={headingClass}>Gdzie publikować materiały wideo? YouTube i social media</h2>
+              <p className={paragraphClass}>
+                Kanał dobierz do miejsca, w którym odbiorca szuka informacji i może wykonać zaplanowane działanie. Media społecznościowe, strona i kampania reklamowa pełnią różne role. Nie musisz być wszędzie — działania video marketingowe warto ograniczyć do kanałów, których jakość jesteś w stanie utrzymać.
+              </p>
+              <div className="space-y-5">
+                {channels.map((channel) => (
+                  <div key={channel.title} className="rounded-xl bg-muted/20 p-5">
+                    <h3 className="text-xl font-heading font-bold mb-2">{channel.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed">{channel.text}</p>
+                  </div>
+                ))}
+              </div>
+              <p className={`${paragraphClass} mt-5`}>
+                W portalach społecznościowych testuj temat i sposób otwarcia, nie tylko techniczne ustawienia. Jedna strategia dystrybucji powinna uwzględniać także potencjalnych klientów, którzy przechodzą na stronę, oraz osoby wracające do marki po wcześniejszym kontakcie.
+              </p>
+            </section>
+
+            <section id="seo" aria-labelledby="seo-heading" className={sectionClass}>
+              <h2 id="seo-heading" className={headingClass}>Video marketing a SEO i pozycjonowanie</h2>
+              <p className={paragraphClass}>
+                SEO zaczyna się od strony odpowiadającej na intencję wyszukiwania. Film umieść tam, gdzie rzeczywiście wyjaśnia temat, z własnym opisem, transkrypcją i czytelnym kontekstem. Sprawdź indeksowanie strony oraz wymagania wyszukiwarki dla miniatur i danych strukturalnych. Pozycjonowanie nie wynika automatycznie z obecności odtwarzacza.
+              </p>
+              <p className={paragraphClass}>
+                W YouTube zadbaj o zgodny tytuł, opis, miniaturę, rozdziały i napisy. Obserwuj wyszukiwane tematy oraz retencję, ale unikaj powtarzania fraz bez wartości dla widza. Praktyczne wskazówki znajdziesz w <a href="https://developers.google.com/search/docs/appearance/video" target="_blank" rel="noreferrer" className="text-primary hover:underline">oficjalnym przewodniku Google dotyczącym wideo w wynikach wyszukiwania</a> i w naszym <Link to="/blog/youtube-dla-firmy" className="text-primary hover:underline">poradniku YouTube dla firmy</Link>.
+              </p>
+            </section>
+
+            <section id="koszty" aria-labelledby="koszty-heading" className={sectionClass}>
+              <h2 id="koszty-heading" className={headingClass}>Ile kosztuje marketing w internecie i produkcja wideo?</h2>
+              <p className={paragraphClass}>
+                Budżet rozdziel na przygotowanie strategii, produkcję, wersje do publikacji, dystrybucję i pomiar. Na koszt wpływają liczba dni zdjęciowych, lokalizacje, scenariusz, animacja, lektor, napisy, licencje, poprawki oraz prawa do wykorzystania. Osobno oszacuj budżet reklamowy i pracę zespołu po publikacji.
+              </p>
+              <p className={paragraphClass}>
+                Zamiast sztywnego cennika przygotuj ten sam brief dla porównywanych wykonawców. Zapytaj, co dokładnie obejmuje oferta i jakie pliki otrzymasz. Samodzielna produkcja może być rozsądna dla prostych instrukcji; przy złożonej kampanii video warto porównać zakres pracy zespołu, a nie tylko cenę pojedynczego pliku. Skuteczny video marketing to kontrola całego procesu, nie najdroższy zestaw.
+              </p>
+            </section>
+
+            <section id="pomiar" aria-labelledby="pomiar-heading" className={sectionClass}>
+              <h2 id="pomiar-heading" className={headingClass}>Jak mierzyć skuteczność video marketingu?</h2>
+              <p className={paragraphClass}>
+                Przed publikacją zapisz punkt odniesienia i sposób zbierania danych. Dla kampanii video ustaw zdarzenia oraz oznaczone linki, a w raporcie oddziel dane platformy od zachowań na stronie. Skuteczność video marketingu oceniaj zgodnie z celem i jakością ruchu, zamiast zakładać z góry pożądany wynik.
+              </p>
+              <div className="grid md:grid-cols-2 gap-5 mb-6">
+                {metrics.map((metric) => (
+                  <div key={metric.title} className="rounded-xl border border-border/60 p-5">
+                    <h3 className="font-heading font-bold mb-2">{metric.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed">{metric.text}</p>
+                  </div>
+                ))}
+              </div>
+              <p className={paragraphClass}>
+                Analiza powinna prowadzić do decyzji: zachować temat, zmienić otwarcie, poprawić stronę docelową czy ograniczyć kanał. Jeśli chcesz zwiększyć sprzedaż, połącz raport z jakością leadów i danymi sprzedażowymi. Więcej o ramach oceny znajdziesz w artykule o <Link to="/blog/video-marketing-roi" className="text-primary hover:underline">ROI video marketingu</Link>.
+              </p>
+            </section>
+
+            <section id="bledy" aria-labelledby="bledy-heading" className={sectionClass}>
+              <h2 id="bledy-heading" className={headingClass}>Najczęstsze błędy w działaniach video marketingowych</h2>
+              <div className="space-y-4">
+                {mistakes.map(([problem, solution]) => (
+                  <div key={problem} className="rounded-xl border border-border/60 p-5">
+                    <h3 className="font-heading font-bold mb-2">{problem}</h3>
+                    <p className="text-muted-foreground leading-relaxed">{solution}</p>
+                  </div>
+                ))}
+              </div>
+              <p className={`${paragraphClass} mt-5`}>
+                Wizerunek eksperta w danej dziedzinie buduje rzetelna wiedza, a nie liczba publikacji. Przed akceptacją sprawdź, czy treść i forma przekazu są zgodne z faktami, czy film ma właściwego odbiorcę i czy zespół wie, jak wykorzystać video po premierze.
+              </p>
+            </section>
+
+            <section id="faq" aria-labelledby="faq-heading" className={sectionClass}>
+              <h2 id="faq-heading" className={headingClass}>FAQ: video marketing dla firm</h2>
+              <div className="space-y-4">
+                {faqItems.map((item) => (
+                  <details key={item.id} id={`video-faq-${item.id}`} className="group rounded-xl border border-border/60 p-5">
+                    <summary className="cursor-pointer list-none font-heading font-bold text-lg flex items-center justify-between gap-4">
+                      {item.question}
+                      <span aria-hidden="true" className="text-primary group-open:rotate-45 transition-transform">+</span>
+                    </summary>
+                    <p className="text-muted-foreground leading-relaxed mt-4">{item.answer}</p>
+                  </details>
+                ))}
+              </div>
+            </section>
+
+            <section id="nastepny-krok" aria-labelledby="nastepny-krok-heading" className="scroll-mt-24 mt-14 rounded-2xl bg-primary px-6 py-10 text-primary-foreground md:px-10">
+              <h2 id="nastepny-krok-heading" className="text-2xl md:text-3xl font-heading font-bold mb-4">Od poradnika do własnego planu</h2>
+              <p className="leading-relaxed mb-6 max-w-3xl">
+                Wybierz jedno pytanie klientów, zapisz cel i przygotuj brief pierwszego filmu. Jeśli potrzebujesz wykonawcy, poznaj odrębną <Link to="/uslugi/video-marketing" className="underline underline-offset-4">usługę video marketingu FOTZ</Link> albo <Link to="/kontakt" className="underline underline-offset-4">prześlij kontekst projektu przez formularz kontaktowy</Link>. Zakres i wycena powinny wynikać z uzgodnionego briefu.
+              </p>
+              <Link to="/uslugi/video-marketing" className="inline-flex items-center gap-2 rounded-lg bg-background px-6 py-3 font-semibold text-foreground hover:bg-background/90 transition-colors">
+                Zobacz zakres usługi
+                <ArrowRight className="h-5 w-5" aria-hidden="true" />
+              </Link>
+            </section>
+          </div>
         </div>
       </article>
     </Layout>
