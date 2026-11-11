@@ -119,26 +119,6 @@
       "bytes": 68254
     }
   ],
-  "dembski-nowak": [
-    {
-      "src": "/work/industries/dembski-nowak-480.webp",
-      "width": 480,
-      "height": 751,
-      "bytes": 23424
-    },
-    {
-      "src": "/work/industries/dembski-nowak-800.webp",
-      "width": 800,
-      "height": 1252,
-      "bytes": 65240
-    },
-    {
-      "src": "/work/industries/dembski-nowak-1280.webp",
-      "width": 1280,
-      "height": 2004,
-      "bytes": 143616
-    }
-  ],
   "victory-cars": [
     {
       "src": "/work/industries/victory-cars-480.webp",
@@ -453,14 +433,6 @@
       "width": 1280,
       "height": 720,
       "bytes": 150226
-    }
-  ],
-  "dembski-nowak-film": [
-    {
-      "src": "/work/industries/dembski-nowak-film-480.webp",
-      "width": 480,
-      "height": 853,
-      "bytes": 38496
     }
   ],
   "krypton-produkt": [

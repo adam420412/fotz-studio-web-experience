@@ -29,9 +29,7 @@ const sectorWork = {
     title: 'Inwestycje i ludzie, którzy za nimi stoją',
     projects: [
       { image: 'city-sbu', name: 'CITY SBU Zabrze', scope: 'Strona inwestycji PL/EN', description: 'Strona modułów magazynowo-biurowych: oferta, specyfikacja, dostępność lokali i zapytanie o wynajem.', alt: 'Projekt strony inwestycji magazynowo-biurowej CITY SBU Zabrze', href: '/realizacje#projekt-sbu-city', linkLabel: 'Zobacz projekt CITY SBU', fit: 'contain' },
-      { image: 'dembski-nowak', name: 'Dembski Nowak', scope: 'Sesja wizerunkowa', description: 'Portret z sesji dla firmy zajmującej się efektywnością energetyczną budynków. Materiał do komunikacji zespołu ekspertów.', alt: 'Portret z sesji wizerunkowej FOTZ dla Dembski Nowak', position: 'center 25%' },
       library.skaland,
-      library.dembski,
     ],
   },
   automotive: {
