@@ -1,254 +1,487 @@
-import { SEOHead } from "@/components/seo/SEOHead";
+import { Link } from "react-router-dom";
+import { ArrowRight, ChevronRight } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
-import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
-import { FadeInView } from "@/components/FadeInView";
-import { ContactSection } from "@/components/sections/ContactSection";
-import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
-import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { SEOHead } from "@/components/seo/SEOHead";
+import { ArticleSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
+
+const seoTitle = "Target audience — co to jest? How to find it | FOTZ";
+const seoDescription = "Target audience — co to jest? Learn how to reach your target audience and improve your marketing with research and segmentation. Poradnik 2026.";
+const canonicalUrl = "https://www.fotz-studio.pl/blog/target-audience-co-to";
+const pageTitle = "Target audience — co to jest i jak określić grupę docelową?";
+const heroImageUrl = "https://www.fotz-studio.pl/og-image.jpg";
+
+const articleData = {
+  headline: pageTitle,
+  description: seoDescription,
+  url: canonicalUrl,
+  image: heroImageUrl,
+  datePublished: "2024-01-13",
+  dateModified: "2026-11-12",
+  author: "Zespół FOTZ",
+};
+
+const breadcrumbs = [
+  { name: "Strona główna", url: "/" },
+  { name: "Blog", url: "/blog" },
+  { name: "Target audience", url: "/blog/target-audience-co-to" },
+];
+
+const comparison = [
+  {
+    term: "Target audience — grupa docelowa",
+    meaning: "Określona grupa odbiorców komunikatu, treści, produktu lub kampanii.",
+    question: "Do kogo kierujemy ten przekaz i jakiej potrzeby dotyczy?",
+  },
+  {
+    term: "Target market — rynek docelowy",
+    meaning: "Szerszy rynek lub zbiór segmentów, którym firma chce oferować produkt albo usługę.",
+    question: "Na jakim rynku działamy i jakie segmenty możemy obsłużyć?",
+  },
+  {
+    term: "Buyer persona — persona marketingowa",
+    meaning: "Upraszczający, oparty na researchu profil reprezentanta wybranego segmentu.",
+    question: "Jak reprezentant grupy podejmuje decyzję i jakie ma obawy?",
+  },
+];
+
+const segmentation = [
+  {
+    title: "Demograficzna i firmograficzna",
+    text: "W B2C mogą to być wiek, etap życia, wykształcenie, zawód lub sytuacja rodzinna, jeśli rzeczywiście wpływają na potrzebę. W B2B zamiast danych osobowych zwykle ważniejsza jest firmografia: branża, skala organizacji, rola decydenta i sposób zakupu.",
+    use: "Odrębne objaśnienie oferty dla osoby korzystającej z usługi i dla osoby zatwierdzającej zakup.",
+    limit: "Ten sam wiek albo stanowisko nie oznacza tych samych motywacji. Nie zbieraj danych wrażliwych ani nadmiarowych tylko dlatego, że pole jest dostępne w formularzu.",
+  },
+  {
+    title: "Geograficzna",
+    text: "Opisuje kraj, region, miejscowość, obszar obsługi, język i czas potrzebny do dotarcia do klienta. W usłudze lokalnej kluczowy może być promień działania, a w sklepie internetowym — zasady i koszt dostawy do konkretnego miejsca.",
+    use: "Inna treść strony dla usługi wykonywanej lokalnie i inna dla konsultacji prowadzonej zdalnie.",
+    limit: "Lokalizacja nie wyjaśnia sama z siebie gotowości do zakupu. Połącz ją z problemem, kontekstem i zachowaniem odbiorcy.",
+  },
+  {
+    title: "Psychograficzna",
+    text: "Obejmuje wartości, zainteresowania, styl życia, postawy, aspiracje i kryteria wyboru. Pomaga zrozumieć, dlaczego ktoś preferuje prostotę, oszczędność czasu, bezpieczeństwo, wygodę albo możliwość dostosowania rozwiązania.",
+    use: "Dobór argumentów, przykładów i tonu komunikacji do tego, co odbiorca uznaje za istotne.",
+    limit: "Psychografia nie powinna być listą przypisywanych ludziom cech. Wnioski weryfikuj w wywiadach i zachowaniach, nie w stereotypach.",
+  },
+  {
+    title: "Behawioralna",
+    text: "Opisuje działania: korzystanie z produktu, powroty na stronę, etap ścieżki zakupowej, okazję zakupu, reakcje na treści i poszukiwaną korzyść. Segment może rozróżniać osoby poznające temat, porównujące rozwiązania i wracające po kolejną usługę.",
+    use: "Osobna odpowiedź dla osoby zadającej podstawowe pytanie i dla kupującego porównującego warunki ofert.",
+    limit: "Pojedyncze kliknięcie nie dowodzi intencji zakupu. Analizuj sekwencje i kontekst, z poszanowaniem zgód oraz ustawień prywatności.",
+  },
+];
+
+const researchMethods = [
+  {
+    title: "Rozmowy i wywiady z klientami",
+    text: "Pytaj o sytuację przed zakupem, poszukiwane rozwiązania, kryteria wyboru, obawy i źródła informacji. Unikaj sugerowania odpowiedzi. Zapisuj dokładny język rozmówców, a wnioski oddzielaj od cytatów. Dobierz liczbę rozmów do różnorodności segmentów i momentu, w którym kolejne rozmowy przestają wnosić nowe obserwacje.",
+  },
+  {
+    title: "Ankiety i krótkie formularze",
+    text: "Pozwalają uporządkować odpowiedzi większej liczby osób, ale wynik zależy od doboru respondentów i konstrukcji pytań. Nie przenoś odpowiedzi klientów sklepu automatycznie na cały rynek. Przed rozesłaniem sprawdź ankietę na małej grupie i usuń pytania, które nie wpłyną na decyzję.",
+  },
+  {
+    title: "Dane sprzedażowe, CRM i obsługa klienta",
+    text: "Zamówienia, zapytania, notatki sprzedażowe i zgłoszenia pokazują, kto korzysta z oferty oraz jakie problemy wracają. Analizuj kategorie i przyczyny kontaktu, nie tylko wartość zakupów. Ogranicz dostęp do danych, zanonimizuj notatki do researchu i nie twórz segmentów na podstawie pojedynczego przypadku.",
+  },
+  {
+    title: "Analityka strony i Search Console",
+    text: "Raporty zachowań pomagają sprawdzić ścieżki w serwisie i reakcje na treści, a zapytania w Search Console pokazują sformułowania, dla których strona uzyskała wyświetlenia. Dane demograficzne i zainteresowania w GA4 mogą być niekompletne lub niedostępne, dlatego traktuj je jako jeden ze źródeł, nie pełny obraz odbiorców.",
+  },
+  {
+    title: "Badania rynku i social listening",
+    text: "Publikacje branżowe, dyskusje, recenzje i pytania w społecznościach ujawniają język problemu oraz kryteria oceny. Rozróżniaj aktywną mniejszość dyskusji od całej grupy docelowej. Dokumentuj źródło i datę obserwacji, a wypowiedzi użytkowników nie przedstawiaj jako reprezentatywnego badania.",
+  },
+  {
+    title: "Testy komunikatu i obserwacja zachowań",
+    text: "Porównaj zrozumiałe warianty przekazu lub prototypu strony i zdefiniuj przed testem mierzalną reakcję. Może to być poprawne wskazanie oferty, odpowiedź na pytanie albo wykonanie zadania. Nie przypisuj wyniku wyłącznie segmentowi, jeśli zmieniły się równocześnie kanał, format i warunki ekspozycji.",
+  },
+];
+
+const processSteps = [
+  {
+    title: "1. Ustal decyzję, którą ma wspierać profil",
+    text: "Zapisz, czy opis grupy docelowej ma pomóc w przygotowaniu strony, treści, oferty, kampanii czy rozmowy sprzedażowej. Inny poziom szczegółu jest potrzebny do wyboru tematu poradnika, a inny do zaplanowania obsługi zakupu. Określ właściciela dokumentu i datę następnego przeglądu.",
+  },
+  {
+    title: "2. Zbierz dowody z kilku źródeł",
+    text: "Połącz dane jakościowe i ilościowe: rozmowy, zapytania, CRM, analitykę oraz dostępne badania rynku. Przy każdej obserwacji zapisz źródło, zakres i ograniczenia. Oddziel fakt („klienci pytają o wdrożenie”) od hipotezy („wdrożenie jest główną obawą całego segmentu”).",
+  },
+  {
+    title: "3. Zaproponuj segmenty i kryteria wyboru",
+    text: "Grupuj odbiorców według potrzeb i zachowań istotnych dla decyzji, a dopiero potem uzupełnij demografię lub firmografię. Segment powinien być możliwy do opisania, odróżnienia i obsłużenia. Jeżeli dwa segmenty otrzymują tę samą ofertę i komunikat z tego samego powodu, sprawdź, czy nie są jednym segmentem.",
+  },
+  {
+    title: "4. Zweryfikuj różnice w rozmowach",
+    text: "Przedstaw hipotezę osobom z danego segmentu i poproś o opis własnego procesu decyzji. Sprawdź, czy rozpoznają problem, używane pojęcia i kryteria wyboru. Poszukuj też przypadków niepasujących. Jedna rozmowa niczego nie dowodzi statystycznie, ale może ujawnić błędne założenie.",
+  },
+  {
+    title: "5. Zapisz profil i zastosowanie",
+    text: "Przygotuj krótki dokument: kontekst, problem, cele, obawy, kryteria wyboru, kanały, potrzebne treści i dowody. Dodaj wykluczenia, czyli sytuacje, w których oferta nie odpowiada odbiorcy. Persona może porządkować komunikację, ale nie zastępuje danych o całym segmencie.",
+  },
+  {
+    title: "6. Wdróż, obserwuj i aktualizuj",
+    text: "Wybierz konkretne zastosowanie i zapisz wskaźnik przed publikacją lub rozmową z klientem. Porównuj reakcje ostrożnie i uwzględniaj inne zmiany w kampanii lub ofercie. Przeglądaj profil po istotnej zmianie produktu, rynku albo pytań klientów; nie deklaruj sztywnego cyklu bez uzasadnienia.",
+  },
+];
+
+const examples = [
+  {
+    title: "Usługa lokalna — przykład hipotetyczny",
+    text: "Mieszkańcy obszaru obsługi, którzy szukają konkretnego terminu i jasnych warunków wizyty. Przed wyborem sprawdzają zakres usługi, dostępność i opinie. Treść strony powinna odpowiadać na pytania o przebieg wizyty i lokalizację. To hipoteza do sprawdzenia w rozmowach, nie profil przypisany każdej usłudze lokalnej.",
+  },
+  {
+    title: "Sklep internetowy — przykład hipotetyczny",
+    text: "Osoby porównujące warianty produktu, parametry, dostępność i zasady zwrotu. Mogą potrzebować zdjęć, tabeli porównawczej i odpowiedzi obsługi przed zakupem. Segment można dodatkowo rozdzielić według okazji zakupu lub wcześniejszego doświadczenia z produktem, jeśli potwierdzają to dane.",
+  },
+  {
+    title: "Usługa B2B — przykład hipotetyczny",
+    text: "Osoba odpowiedzialna za wybór dostawcy w organizacji, która musi uzasadnić zakres, sposób pracy i warunki współpracy innym uczestnikom decyzji. Przydatne mogą być opis procesu, odpowiedzialności i kryteria oceny oferty. Role użytkownika, osoby wpływającej i decydenta warto opisać oddzielnie.",
+  },
+];
+
+const mistakes = [
+  ["Opis „dla wszystkich”", "Zapisz konkretną potrzebę i sytuację użycia. Nie ograniczaj rynku bez dowodu, ale wskaż priorytetowy odbiór danego komunikatu."],
+  ["Same dane demograficzne", "Dodaj problem, motywację, zachowanie i kryteria decyzji. Wiek czy stanowisko rzadko wystarcza do przygotowania treści."],
+  ["Persona oparta na wyobraźni", "Oznacz założenia i sprawdź je w researchu. Imię i zdjęcie persony nie zastępują wiedzy o segmencie."],
+  ["Kopiowanie odbiorców konkurencji", "Analiza konkurencji może dostarczyć hipotez, ale Twoja oferta, kanały i relacje z klientami mogą tworzyć inne segmenty."],
+  ["Wnioski z jednego źródła", "Porównuj obserwacje z różnych miejsc i zapisuj ich ograniczenia. Pojedyncza ankieta lub kampania nie opisuje całego rynku."],
+  ["Profil bez zastosowania", "Przypisz do segmentu decyzję, odpowiedzialną osobę i termin przeglądu. Dokument ma ułatwiać pracę, a nie tylko opisywać odbiorców."],
+];
 
 const faqItems = [
   {
+    id: "definicja",
     question: "Co to jest target audience?",
-    answer:
-      "Target audience (grupa docelowa) to precyzyjnie zdefiniowany segment odbiorców, do których firma kieruje swoje działania marketingowe. Definiowana przez cechy demograficzne (wiek, płeć, dochód, wykształcenie), geograficzne (kraj, miasto, region), psychograficzne (wartości, styl życia, osobowość) oraz behawioralne (nawyki zakupowe, lojalność, status użytkownika).",
+    answer: "To grupa docelowa, czyli określony zbiór osób lub organizacji, do których firma kieruje komunikat, treść, produkt albo działanie reklamowe. Opis grupy powinien opierać się na istotnych dla decyzji cechach, potrzebach i zachowaniach. Nie jest to lista wszystkich osób, które teoretycznie mogą kupić ofertę.",
   },
   {
-    question: "Czym target audience różni się od buyer persona?",
-    answer:
-      "Target audience to szeroka definicja grupy docelowej — zbiór cech i atrybutów (np. 'kobiety 25–45 lat, miejskie, zainteresowane zdrowym stylem życia'). Buyer persona to fikcyjna, szczegółowa postać reprezentująca idealnego klienta z imienia, celami, obawami i zachowaniami. Persona humanizuje target audience i ułatwia tworzenie empatic contentu.",
+    id: "tlumaczenie",
+    question: "Jak powiedzieć target audience po polsku?",
+    answer: "Najczęściej używa się określeń „grupa docelowa” lub „docelowa grupa odbiorców”. Target oznacza w tym kontekście cel lub grupę, do której się kieruje, a audience — odbiorców. Targeted oznacza „targetowany” albo „kierowany do określonej grupy”. W polskim dokumencie warto przy pierwszym użyciu podać oba określenia.",
   },
   {
-    question: "Jak zdefiniować swoją grupę docelową?",
-    answer:
-      "Metody definiowania target audience: analiza obecnych klientów (kto kupuje, ile wydaje, jak często), badania ankietowe, wywiady z klientami, Google Analytics (demografia, zainteresowania), Social Insights (Facebook, Instagram), analiza konkurencji (do kogo mówi konkurent), dane branżowe, oraz testowanie hipotez przez kampanie reklamowe.",
+    id: "target-market",
+    question: "Czym różni się grupa docelowa od target market?",
+    answer: "Target market to rynek docelowy, a grupa docelowa jest odbiorcą konkretnego przekazu lub działania. Rynek docelowy może obejmować kilka segmentów i różne role zakupowe. Grupa docelowa zawęża odbiór np. jednej kampanii, treści lub oferty. W praktyce zakres obu pojęć zależy od kontekstu, dlatego zapisz go w briefie.",
   },
   {
-    question: "Czym jest psychografia w opisie grupy docelowej?",
-    answer:
-      "Psychografia to opis wewnętrznych cech odbiorcy: wartości i przekonania, zainteresowania i pasje, styl życia (aktywny, rodzinny, korporacyjny), osobowość, postawy wobec różnych kwestii, oraz motywacje i aspiracje. Psychografia jest często ważniejsza niż demografia — dwie osoby w tym samym wieku i dochodzie mogą mieć całkowicie różne decyzje zakupowe.",
+    id: "persona",
+    question: "Czy target audience i buyer persona to to samo?",
+    answer: "Nie. Grupa docelowa opisuje segment odbiorców, natomiast buyer persona jest uporządkowanym profilem jego przykładowego reprezentanta. Persona pomaga przywołać cele, obawy i kontekst decyzji, ale nie może być fikcyjną postacią przedstawianą jako wynik badania. Zarówno segment, jak i persona powinny mieć udokumentowane źródła wiedzy.",
   },
   {
-    question: "Jak zawęzić grupę docelową bez straty zasięgu?",
-    answer:
-      "Paradoks niszowania: im węższa i bardziej precyzyjna grupa docelowa, tym skuteczniejsza komunikacja i wyższy ROI, nawet przy mniejszym zasięgu. Zawężanie wg: etap życia (nowi rodzice vs. rodzice nastolatków), problem/ból (kto NAPRAWDĘ potrzebuje rozwiązania), gotowość zakupowa (problem-aware vs. solution-aware), oraz wartość życiowa klienta (focus na segment z najwyższym CLV).",
+    id: "okreslenie",
+    question: "Jak określić grupę docelową krok po kroku?",
+    answer: "Zacznij od decyzji, którą ma wspierać opis odbiorców. Zbierz rozmowy, dane sprzedażowe, pytania klientów, analitykę i dostępne badania, a następnie zaproponuj segmenty według potrzeb i zachowań. Zweryfikuj różnice w rozmowach, zapisz profil wraz z wykluczeniami i sprawdź go w konkretnej treści lub działaniu.",
+  },
+  {
+    id: "narrow",
+    question: "Czy grupa docelowa powinna być jak najwęższa?",
+    answer: "Nie istnieje zasada, że najwęższa grupa jest najlepsza. Zakres powinien wynikać z celu, oferty, skali rynku i możliwości obsługi klientów. Zbyt szeroki opis utrudnia dopasowanie przekazu, a zbyt wąski może pominąć osoby o tej samej potrzebie. Porównuj segmenty na podstawie dowodów zamiast przyjmować uniwersalną regułę zawężania.",
+  },
+  {
+    id: "pomiar",
+    question: "Jak sprawdzić, czy komunikat trafia do grupy docelowej?",
+    answer: "Ustal zgodny z celem wskaźnik i obserwuj reakcje właściwych odbiorców: zrozumienie przekazu, odpowiedzi w rozmowach, wykonanie zadania, jakość zapytań lub zachowanie na stronie. Analizuj także kanał, ofertę i moment kontaktu. Nie przypisuj zmiany wyniku samej grupie docelowej, jeśli nie możesz oddzielić wpływu pozostałych czynników.",
+  },
+  {
+    id: "aktualizacja",
+    question: "Kiedy aktualizować grupę docelową?",
+    answer: "Wróć do profilu, gdy zmienia się produkt, sposób sprzedaży, rynek, pytania klientów lub zachowania w kanałach komunikacji. Regularny przegląd pomaga również usunąć nieaktualne założenia, ale jego termin powinien odpowiadać tempu zmian i zasobom zespołu. Każdą istotną zmianę opatrz datą i krótkim uzasadnieniem.",
   },
 ];
 
-const audienceSegmentation = [
-  {
-    typ: "Segmentacja Demograficzna",
-    czynniki: ["Wiek i generacja (Gen Z, Milenialsi, Gen X, Baby Boomers)", "Płeć i tożsamość płciowa", "Dochód i siła nabywcza", "Wykształcenie i zawód", "Status rodzinny (single, rodzice małych dzieci)"],
-    zastosowanie: "Podstawowy filtr — gdzie szukać grupy i jak konstruować przekaz",
-    ograniczenie: "Dwie osoby o tych samych danych demo mogą mieć różne potrzeby",
-  },
-  {
-    typ: "Segmentacja Geograficzna",
-    czynniki: ["Kraj i region (różnice kulturowe w komunikacji)", "Miasto vs. wieś (potrzeby i styl życia)", "Klimat (produkty sezonowe)", "Gęstość zaludnienia", "Języki i dialekty"],
-    zastosowanie: "Lokalizacja reklam, języki komunikacji, regulatory compliance",
-    ograniczenie: "Geografia ogranicza, ale nie tłumaczy zachowań konsumenckich",
-  },
-  {
-    typ: "Segmentacja Psychograficzna",
-    czynniki: ["Wartości i przekonania (ekologia, tradycja, innowacja)", "Zainteresowania i pasje", "Styl życia (aktywny, minimalistyczny, rodzinny)", "Osobowość (introvert/extrovert)", "Aspiracje i cele"],
-    zastosowanie: "Ton komunikacji, dobór kanałów, storytelling marki",
-    ograniczenie: "Trudniejsza do zmierzenia niż demografia",
-  },
-  {
-    typ: "Segmentacja Behawioralna",
-    czynniki: ["Status użytkowania (nowy, powracający, lojalny, utracony)", "Okazja zakupu (regularne vs. okolicznościowe)", "Benefit szukany (cena vs. jakość vs. wygoda)", "Lojalność marki", "Etap ścieżki zakupowej"],
-    zastosowanie: "Personalizacja komunikatów, marketing automation, retargeting",
-    ograniczenie: "Wymaga danych historycznych o zachowaniach",
-  },
+const englishBriefTerms = [
+  { phrase: "The target audience for this message", explanation: "Konkretni odbiorcy danego komunikatu; określenie the wskazuje grupę opisaną już w kontekście." },
+  { phrase: "Identify a specific target audience", explanation: "Zidentyfikuj konkretną grupę docelową zamiast zapisywać ogólne „wszyscy”." },
+  { phrase: "Their target market, with their target audience", explanation: "Rynek docelowy omawianej organizacji i grupa odbiorców uwzględniona w jej komunikacji." },
+  { phrase: "Its target audience / your audience", explanation: "Grupa docelowa organizacji oraz Twoi odbiorcy; zaimek wskazuje, do kogo należy profil." },
+  { phrase: "Your target audience’s needs", explanation: "Potrzeby Twojej grupy docelowej; apostrof i s tworzą formę dzierżawczą." },
+  { phrase: "Different target audiences", explanation: "Różne grupy docelowe omawiane w danym dokumencie lub planie komunikacji." },
+  { phrase: "Your target audience is…", explanation: "Początek zdania do uzupełnienia opisem grupy, nie gotowa definicja do skopiowania." },
+  { phrase: "Understanding of your target audience", explanation: "Zrozumienie grupy docelowej na podstawie researchu, a nie samo przypisywanie jej cech." },
+  { phrase: "Learn how to research", explanation: "Dowiedz się, jak prowadzić badanie; to wskazówka do działania, nie nazwa segmentu." },
+  { phrase: "In marketing: audience", explanation: "W marketingu: odbiorcy — osoby lub organizacje, które odbierają komunikat." },
+  { phrase: "Marketing and marketing strategies", explanation: "Marketing i strategie marketingowe; pojęcia mają szersze zastosowanie niż pojedynczy profil." },
+  { phrase: "Goals and needs of the audience", explanation: "Cele i potrzeby odbiorców zapisane razem, ale opisane na osobnych dowodach." },
+  { phrase: "What a target audience is", explanation: "Wyjaśnienie, czym jest grupa docelowa; forma używana w zdaniu podrzędnym." },
+  { phrase: "Definition of target audience", explanation: "Definicja grupy docelowej jako nagłówek lub etykieta w materiale edukacyjnym." },
+  { phrase: "Your target audience and your marketing", explanation: "Grupa docelowa i Twój marketing; w briefie warto opisać zależność między nimi." },
+  { phrase: "Your target audience in your marketing plan", explanation: "Miejsce opisu grupy docelowej w planie marketingowym i jej związek z decyzjami." },
+  { phrase: "Research is the first step", explanation: "Badanie jest pierwszym krokiem przed formułowaniem wniosków o odbiorcach." },
+  { phrase: "What kind of content?", explanation: "Jakiego rodzaju treści potrzebuje odbiorca? Dobierz format do pytania i etapu decyzji." },
+  { phrase: "Within your target market", explanation: "Wewnątrz rynku docelowego; zdanie może wskazywać segment lub obszar działania." },
+  { phrase: "How you can use the profile", explanation: "Jak możesz wykorzystać profil w treści, ofercie, kampanii lub rozmowie z klientem." },
+  { phrase: "Knowing your target audience", explanation: "Znajomość grupy docelowej rozumiana jako wynik uporządkowanej wiedzy, nie intuicji." },
 ];
 
-const audienceResearchMethods = [
-  { metoda: "Customer Interviews", kiedy: "Definiowanie lub weryfikacja persony", co_zyskujesz: "Głębokie rozumienie motywacji, obaw i języka klienta", nakład: "Wysoki (10–20 wywiadów)" },
-  { metoda: "Ankiety Online (Typeform, Google Forms)", kiedy: "Zbieranie danych ilościowych od szerszej grupy", co_zyskujesz: "Wzorce demograficzne, preferencje, rankingi ważności", nakład: "Średni" },
-  { metoda: "Google Analytics / GA4", kiedy: "Analiza istniejącego ruchu na stronie", co_zyskujesz: "Wiek, płeć, zainteresowania, zachowania na stronie", nakład: "Niski (dane już istnieją)" },
-  { metoda: "Social Media Insights", kiedy: "Analiza fanów i followersów", co_zyskujesz: "Demografika, aktywność, najlepsze treści dla tej grupy", nakład: "Niski" },
-  { metoda: "Facebook Audience Insights", kiedy: "Research przed kampanią reklamową", co_zyskujesz: "Zainteresowania, zachowania, strony które lubi target", nakład: "Niski" },
-  { metoda: "Customer Data (CRM, Purchase History)", kiedy: "Analiza istniejących klientów", co_zyskujesz: "RFM (Recency, Frequency, Monetary), segmenty klientów wg wartości", nakład: "Średni" },
-];
+const sectionClass = "scroll-mt-24 mt-14";
+const headingClass = "text-2xl md:text-3xl font-heading font-bold mb-5";
+const paragraphClass = "text-muted-foreground leading-relaxed mb-5";
 
 export default function BlogTargetAudienceCoTo() {
   return (
-    <Layout>
+    <Layout workPlacement="after-main">
       <SEOHead
-        title="Target Audience — co to jest? | FOTZ"
-        description="Kompletny przewodnik po target audience: 4 segmentacje, 6 metod badań i różnice vs. buyer persona."
-        canonical="https://www.fotz-studio.pl/blog/target-audience-co-to"
-
-        keywords="Target Audience co to jest, Target Audience definicja, czym jest Target Audience, Target Audience przykłady, jak działa Target Audience, Target Audience znaczenie, Target Audience przewodnik"
+        title={seoTitle}
+        description={seoDescription}
+        canonical={canonicalUrl}
+        ogImage={heroImageUrl}
+        ogType="article"
       />
-      <ArticleSchema
-        title="Target Audience — co to jest i jak definiować grupę docelową?"
-        description="Kompletny przewodnik po target audience: 4 segmentacje, 6 metod badań i różnice vs. buyer persona."
-        url="https://www.fotz-studio.pl/blog/target-audience-co-to"
-        datePublished="2024-01-13"
-      />
+      <BreadcrumbSchema items={breadcrumbs} />
+      <ArticleSchema data={articleData} />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
-          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
-          { name: "Target Audience", url: "https://www.fotz-studio.pl/blog/target-audience-co-to" },
-        ]}/>
 
-      {/* Hero */}
-      <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs items={[
-              { name: "Blog", url: "/blog" },
-              { name: "Target Audience", url: "https://www.fotz-studio.pl" },
-            ]}/>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
-            Target Audience — co to jest i jak definiować grupę docelową?
-          </h1>
-          <p className="text-xl text-slate-300 max-w-2xl mx-auto">
-            Precyzyjnie zdefiniowana grupa docelowa to fundament każdej strategii marketingowej.
-            Poznaj 4 typy segmentacji, 6 metod badań i różnicę między target audience a buyer persona.
-          </p>
-        </div>
-      </section>
+      <article id="article-content" className="bg-background pb-20">
+        <div className="container mx-auto px-4">
+          <nav aria-label="Ścieżka nawigacji" className="max-w-4xl mx-auto pt-32 pb-8 flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
+            <Link to="/" className="hover:text-primary transition-colors">Strona główna</Link>
+            <ChevronRight className="h-4 w-4" aria-hidden="true" />
+            <Link to="/blog" className="hover:text-primary transition-colors">Blog</Link>
+            <ChevronRight className="h-4 w-4" aria-hidden="true" />
+            <span aria-current="page">Grupa docelowa</span>
+          </nav>
 
-      {/* Definicja */}
-      <FadeInView>
-        <section className="py-16 px-4 bg-white">
+          <header className="max-w-4xl mx-auto">
+            <p className="text-primary text-sm font-semibold uppercase tracking-wider mb-4">Podstawy marketingu • poradnik 2026</p>
+            <h1 className="text-4xl md:text-5xl font-heading font-bold leading-tight mb-6">{pageTitle}</h1>
+            <p className="text-xl text-muted-foreground leading-relaxed mb-6">
+              Grupa docelowa to odbiorcy, dla których przygotowujesz przekaz. Sprawdź, jak ich opisać, wybrać kryteria segmentacji, przeprowadzić badania i zamienić wnioski w konkretne decyzje komunikacyjne.
+            </p>
+            <div className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-muted-foreground mb-8">
+              <span>Opublikowano: 13 stycznia 2024</span>
+              <span>Aktualizacja: 12 listopada 2026</span>
+              <span>Treść edukacyjna</span>
+            </div>
+          </header>
+
+          <nav id="spis-tresci" aria-labelledby="spis-tresci-heading" className="max-w-4xl mx-auto rounded-xl border bg-card p-6">
+            <h2 id="spis-tresci-heading" className="text-xl font-bold mb-4">Spis treści</h2>
+            <ol className="grid md:grid-cols-2 gap-x-8 gap-y-2 text-muted-foreground list-decimal list-inside">
+              <li><a href="#definicja" className="hover:text-primary">Definicja grupy docelowej</a></li>
+              <li><a href="#pojecia" className="hover:text-primary">Grupa docelowa, rynek docelowy i persona</a></li>
+              <li><a href="#segmentacja" className="hover:text-primary">Segmentacja grupy docelowej</a></li>
+              <li><a href="#badania" className="hover:text-primary">Jak zbadać grupę docelową?</a></li>
+              <li><a href="#proces" className="hover:text-primary">Definiowanie krok po kroku</a></li>
+              <li><a href="#szablon" className="hover:text-primary">Szablon profilu odbiorców</a></li>
+              <li><a href="#przyklady" className="hover:text-primary">Przykłady i częste błędy</a></li>
+              <li><a href="#faq" className="hover:text-primary">Najczęstsze pytania</a></li>
+            </ol>
+          </nav>
+
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-slate-900 mb-6">Czym jest target audience?</h2>
-            <p className="text-lg text-slate-700 mb-4">
-              <strong>Target audience</strong> (grupa docelowa) to precyzyjnie zdefiniowany segment
-              ludzi, do których firma chce dotrzeć ze swoim przekazem marketingowym.
-              Zamiast mówić "do wszystkich" — co znaczy "do nikogo" — skuteczny marketing
-              definiuje, kto dokładnie jest odbiorcą i dostosowuje komunikat do jego potrzeb.
-            </p>
-            <p className="text-lg text-slate-700 mb-6">
-              Seth Godin powiedział: "Jeśli mówisz do wszystkich, nie mówisz do nikogo."
-              Im węższa i precyzyjniejsza grupa docelowa, tym trafniejszy komunikat,
-              wyższe ROI i niższy koszt pozyskania klienta.
-            </p>
-            <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-lg">
-              <p className="font-semibold text-blue-900 mb-2">Target Audience vs. Buyer Persona:</p>
-              <p className="text-blue-800 text-sm">
-                <strong>Target Audience:</strong> "Kobiety 25–40 lat, miejskie, zainteresowane ekologią, dochód powyżej średniej"<br />
-                <strong>Buyer Persona:</strong> "Marta, 32 lata, manager w korporacji, matka jednego dziecka, aktywna na Instagramie, szuka naturalnych kosmetyków bo ma wrażliwą skórę córki"
+            <section id="definicja" aria-labelledby="definicja-heading" className={sectionClass}>
+              <h2 id="definicja-heading" className={headingClass}>Co to jest target audience? Definicja grupy docelowej</h2>
+              <p className={paragraphClass}>
+                <strong>Target audience to grupa docelowa</strong>: osoby lub organizacje, do których kierowany jest określony komunikat, produkt, usługa albo działanie marketingowe. Grupę wyróżnia wspólna potrzeba, kontekst, zachowanie lub inne cechy istotne dla danego celu. Definicja powinna pomagać podjąć decyzję — np. wybrać temat treści, przykład na stronie albo sposób rozmowy z klientem.
               </p>
-            </div>
-          </div>
-        </section>
-      </FadeInView>
+              <p className={paragraphClass}>
+                W praktyce grupa docelowa nie oznacza „każdy, kto może kupić”. To świadomie opisany priorytetowy odbiór. Jedna firma może mieć wiele grup docelowych (target audiences), zależnych od oferty, etapu decyzji i kanału. Dobrze zdefiniowana grupa docelowa (well-defined target audience) jest oparta na dowodach, ma zapisane ograniczenia i może zostać zweryfikowana.
+              </p>
+              <div className="rounded-xl border-l-4 border-primary bg-primary/5 p-6 my-6">
+                <h3 className="font-bold mb-2">Krótka odpowiedź</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Jeśli pytasz o znaczenie tego pojęcia, najprostsza odpowiedź brzmi: to odbiorcy, których chcesz osiągnąć konkretnym przekazem i których potrzeby uwzględniasz w jego przygotowaniu.
+                </p>
+              </div>
+              <p className={paragraphClass}>
+                W angielskim briefie możesz spotkać zapis „target audience is the group of consumers”, czyli „grupa docelowa jest grupą konsumentów”. W B2B trafniej mówić o grupie organizacji i osób uczestniczących w decyzji. Zwrot „your audience” oznacza „Twoi odbiorcy”, a „target audience analysis” to analiza grupy docelowej. „Audience targeting” oznacza targetowanie odbiorców, czyli wybór ich w narzędziu lub planie komunikacji.
+              </p>
+            </section>
 
-      {/* 4 segmentacje */}
-      <FadeInView>
-        <section className="py-16 px-4 bg-slate-50">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl font-bold text-slate-900 mb-8">4 typy segmentacji grupy docelowej</h2>
-            <div className="grid md:grid-cols-2 gap-5">
-              {audienceSegmentation.map((s, i) => (
-                <div key={i} className="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
-                  <h3 className="font-bold text-slate-900 text-lg mb-3">{s.typ}</h3>
-                  <ul className="space-y-1 mb-3">
-                    {s.czynniki.map((c, j) => (
-                      <li key={j} className="text-slate-600 text-sm flex gap-2">
-                        <span className="text-blue-500 flex-shrink-0">•</span>
-                        {c}
-                      </li>
+            <section id="pojecia" aria-labelledby="pojecia-heading" className={sectionClass}>
+              <h2 id="pojecia-heading" className={headingClass}>Target audience and target market — różnice z buyer personą</h2>
+              <p className={paragraphClass}>
+                Pojęcia bywają używane zamiennie, ale porządkują różne poziomy planowania. Target market is the broader market — rynek docelowy jest szerszy od grupy docelowej jednej kampanii. Persona z kolei porządkuje wiedzę o reprezentancie segmentu, nie zastępując samego segmentu.
+              </p>
+              <div className="overflow-x-auto rounded-xl border">
+                <table className="w-full border-collapse text-sm">
+                  <caption className="text-left p-4 text-muted-foreground">Porównanie pojęć używanych przy planowaniu komunikacji.</caption>
+                  <thead className="bg-muted">
+                    <tr><th scope="col" className="text-left p-4">Pojęcie</th><th scope="col" className="text-left p-4">Znaczenie</th><th scope="col" className="text-left p-4">Pytanie robocze</th></tr>
+                  </thead>
+                  <tbody>
+                    {comparison.map(item => (
+                      <tr key={item.term} className="border-t align-top">
+                        <th scope="row" className="text-left p-4 font-semibold">{item.term}</th>
+                        <td className="p-4 text-muted-foreground">{item.meaning}</td>
+                        <td className="p-4 text-muted-foreground">{item.question}</td>
+                      </tr>
                     ))}
-                  </ul>
-                  <div className="bg-blue-50 rounded p-2 mb-2">
-                    <p className="text-xs font-semibold text-blue-600">Zastosowanie:</p>
-                    <p className="text-blue-800 text-xs">{s.zastosowanie}</p>
+                  </tbody>
+                </table>
+              </div>
+              <p className={`${paragraphClass} mt-5`}>
+                Przykład: rynek docelowy firmy szkoleniowej może obejmować organizacje rozwijające kompetencje zespołów. Grupą docelową konkretnego poradnika mogą być osoby przygotowujące pierwszy plan szkoleń, a persona opisze kontekst i obawy reprezentanta tego segmentu. To rozróżnienie pomaga powiązać marketing strategy (strategię marketingową) z treścią dla konkretnego odbiorcy.
+              </p>
+              <p className={paragraphClass}>
+                Więcej o podziale rynku znajdziesz w poradniku o <Link to="/blog/segmentacja-rynku-co-to" className="text-primary hover:underline">segmentacji rynku</Link>, a zasady tworzenia profilu przedstawia przewodnik o <Link to="/blog/persona-marketingowa" className="text-primary hover:underline">personie marketingowej</Link>.
+              </p>
+            </section>
+
+            <section id="korzysci" aria-labelledby="korzysci-heading" className={sectionClass}>
+              <h2 id="korzysci-heading" className={headingClass}>Dlaczego warto zdefiniować grupę docelową?</h2>
+              <p className={paragraphClass}>
+                Definiowanie grupy docelowej porządkuje decyzje: dla kogo piszemy, jaki problem wyjaśniamy, jakie dowody są potrzebne i czego odbiorca może oczekiwać po kliknięciu. Ułatwia też współpracę zespołów marketingu, sprzedaży i obsługi klienta, ponieważ korzystają one ze wspólnego opisu zamiast osobnych założeń.
+              </p>
+              <p className={paragraphClass}>
+                Benefits of defining a target audience — korzyści z określenia grupy docelowej — obejmują spójniejszy język, trafniejszy dobór formatów i łatwiejszą ocenę reakcji odbiorców. Nie są to gwarantowane wyniki sprzedażowe. Na działanie kampanii wpływają również oferta, dystrybucja, sezon, konkurencja i obsługa klienta, dlatego marketing efforts (działania marketingowe) należy oceniać w szerszym kontekście.
+              </p>
+            </section>
+
+            <section id="segmentacja" aria-labelledby="segmentacja-heading" className={sectionClass}>
+              <h2 id="segmentacja-heading" className={headingClass}>Segmentacja grupy docelowej: cztery główne podejścia</h2>
+              <p className={paragraphClass}>
+                Segmentacja rynku dzieli szerszy rynek na grupy o istotnych wspólnych cechach. W praktyce kryteria warto łączyć, ale każde powinno zmieniać decyzję o produkcie, treści, kanale albo obsłudze. Samo dodanie pola do tabeli nie tworzy użytecznego segmentu.
+              </p>
+              <div className="space-y-5">
+                {segmentation.map(item => (
+                  <article key={item.title} className="rounded-xl border bg-card p-6">
+                    <h3 className="text-xl font-bold mb-3">{item.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed mb-3">{item.text}</p>
+                    <p className="text-sm text-muted-foreground leading-relaxed mb-2"><strong className="text-foreground">Zastosowanie:</strong> {item.use}</p>
+                    <p className="text-sm text-muted-foreground leading-relaxed"><strong className="text-foreground">Na co uważać:</strong> {item.limit}</p>
+                  </article>
+                ))}
+              </div>
+            </section>
+
+            <section id="badania" aria-labelledby="badania-heading" className={sectionClass}>
+              <h2 id="badania-heading" className={headingClass}>Finding your target audience — jak zbadać grupę docelową?</h2>
+              <p className={paragraphClass}>
+                Poszukiwanie grupy docelowej nie polega na wybraniu jednego raportu. Najlepszy research łączy to, co ludzie mówią, z tym, co robią. Zapisz pytanie badawcze, źródła, datę i ograniczenia. Nie musisz udowadniać statystycznie każdej decyzji redakcyjnej, ale musisz rozróżniać obserwację od założenia.
+              </p>
+              <div className="grid md:grid-cols-2 gap-5">
+                {researchMethods.map(item => (
+                  <article key={item.title} className="rounded-xl border bg-card p-6">
+                    <h3 className="text-lg font-bold mb-3">{item.title}</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{item.text}</p>
+                  </article>
+                ))}
+              </div>
+              <p className={`${paragraphClass} mt-5`}>
+                Przy analizie zapytań nie przypisuj stronie fraz innych adresów i nie traktuj braku danych jako braku zainteresowania. Jeśli korzystasz z platform reklamowych, sprawdzaj aktualnie dostępne raporty na swoim koncie — zakres danych i nazwy narzędzi zmieniają się. Dane o zachowaniach i zgodach przetwarzaj zgodnie z obowiązującymi zasadami prywatności.
+              </p>
+            </section>
+
+            <section id="proces" aria-labelledby="proces-heading" className={sectionClass}>
+              <h2 id="proces-heading" className={headingClass}>How to find your target audience — jak określić grupę docelową?</h2>
+              <p className={paragraphClass}>
+                Zamiast szukać jednej gotowej listy, przejdź proces od pytania biznesowego do sprawdzonego profilu. Poniższe kroki nadają się zarówno do pierwszego opisu grupy, jak i do uporządkowania istniejących założeń.
+              </p>
+              <ol className="space-y-5">
+                {processSteps.map(item => (
+                  <li key={item.title} className="rounded-xl border bg-card p-6">
+                    <h3 className="text-lg font-bold mb-2">{item.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed">{item.text}</p>
+                  </li>
+                ))}
+              </ol>
+            </section>
+
+            <section id="szablon" aria-labelledby="szablon-heading" className={sectionClass}>
+              <h2 id="szablon-heading" className={headingClass}>Szablon profilu grupy docelowej do uzupełnienia</h2>
+              <p className={paragraphClass}>
+                Poniższy układ możesz skopiować do briefu. Nie uzupełniaj pól zgadując; przy każdej odpowiedzi zanotuj źródło lub oznacz hipotezę do sprawdzenia. Dla zespołu pracującego po angielsku podano również najważniejsze etykiety robocze.
+              </p>
+              <dl className="rounded-xl border bg-card divide-y">
+                <div className="p-5"><dt className="font-bold mb-1">Kontekst i segment — your audience</dt><dd className="text-muted-foreground">Kim są odbiorcy, w jakiej sytuacji się znajdują i co odróżnia ten segment od pozostałych?</dd></div>
+                <div className="p-5"><dt className="font-bold mb-1">Problem i potrzeba — what they need</dt><dd className="text-muted-foreground">Jakie zadanie próbują wykonać, co utrudnia decyzję i jakiej informacji brakuje?</dd></div>
+                <div className="p-5"><dt className="font-bold mb-1">Dowody — data about your target audience</dt><dd className="text-muted-foreground">Jakie rozmowy, zachowania, zapytania lub inne obserwacje potwierdzają opis? Jakie są ich ograniczenia?</dd></div>
+                <div className="p-5"><dt className="font-bold mb-1">Kryteria wyboru i obawy</dt><dd className="text-muted-foreground">Co odbiorcy porównują, jakich pytań oczekują i co może być powodem rezygnacji?</dd></div>
+                <div className="p-5"><dt className="font-bold mb-1">Komunikat — reach your target audience</dt><dd className="text-muted-foreground">Jaką jedną myśl, treść i kolejny krok przygotujesz? W jakim kanale odbiorca rzeczywiście może ich potrzebować?</dd></div>
+                <div className="p-5"><dt className="font-bold mb-1">Wykluczenia i przegląd</dt><dd className="text-muted-foreground">Kiedy oferta nie jest odpowiednia, jakie założenia pozostają otwarte i kto odpowiada za kolejną weryfikację?</dd></div>
+              </dl>
+              <p className={`${paragraphClass} mt-5`}>
+                Jeśli przygotowujesz dokument w dwóch językach, zachowaj spójne znaczenie: „defining your target audience” to określanie Twojej grupy docelowej, „identify your target audience” — zidentyfikuj grupę docelową, a „creating a target audience profile” — tworzenie jej profilu. Zwrot „with your target audience” oznacza działanie z udziałem lub w odniesieniu do tej grupy; nie jest osobnym rodzajem segmentacji.
+              </p>
+
+              <div className="mt-8">
+                <h3 className="text-xl font-bold mb-3">Angielskie zwroty w briefie — słownik roboczy</h3>
+                <p className={paragraphClass}>Poniższe wyrażenia pomagają czytać i przygotowywać dwujęzyczny brief. To etykiety lub fragmenty zdań do wykorzystania w odpowiednim kontekście, a nie lista haseł do wstawiania w każdy dokument.</p>
+                <div className="overflow-x-auto rounded-xl border">
+                  <table className="w-full border-collapse text-sm">
+                    <thead className="bg-muted"><tr><th scope="col" className="text-left p-4">Zwrot angielski</th><th scope="col" className="text-left p-4">Znaczenie i użycie</th></tr></thead>
+                    <tbody>
+                      {englishBriefTerms.map(item => (
+                        <tr key={item.phrase} className="border-t align-top"><th scope="row" className="text-left p-4 font-semibold" lang="en">{item.phrase}</th><td className="p-4 text-muted-foreground">{item.explanation}</td></tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </section>
+
+            <section id="przyklady" aria-labelledby="przyklady-heading" className={sectionClass}>
+              <h2 id="przyklady-heading" className={headingClass}>Przykłady grup docelowych i ich zastosowania</h2>
+              <p className={paragraphClass}>
+                Poniższe opisy są hipotetycznymi przykładami warsztatowymi, a nie klientami ani wynikami FOTZ. Pokazują sposób zapisu, który łączy sytuację odbiorcy, potrzebę i decyzję o treści. Przed użyciem podobnego opisu zweryfikuj go na własnych danych.
+              </p>
+              <div className="grid md:grid-cols-3 gap-5">
+                {examples.map(item => (
+                  <article key={item.title} className="rounded-xl border bg-card p-6">
+                    <h3 className="font-bold mb-3">{item.title}</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{item.text}</p>
+                  </article>
+                ))}
+              </div>
+            </section>
+
+            <section id="bledy" aria-labelledby="bledy-heading" className={sectionClass}>
+              <h2 id="bledy-heading" className={headingClass}>Najczęstsze błędy w określaniu grupy docelowej</h2>
+              <div className="space-y-4">
+                {mistakes.map(([title, text]) => (
+                  <div key={title} className="rounded-xl border-l-4 border-amber-500 bg-amber-50/60 p-5">
+                    <h3 className="font-bold mb-1">{title}</h3>
+                    <p className="text-muted-foreground leading-relaxed">{text}</p>
                   </div>
-                  <p className="text-xs text-slate-500 italic">Ograniczenie: {s.ograniczenie}</p>
-                </div>
-              ))}
-            </div>
+                ))}
+              </div>
+            </section>
+
+            <section id="wdrozenie" aria-labelledby="wdrozenie-heading" className={sectionClass}>
+              <h2 id="wdrozenie-heading" className={headingClass}>Od grupy docelowej do treści i komunikacji</h2>
+              <p className={paragraphClass}>
+                Profil odbiorców staje się użyteczny dopiero po przełożeniu na decyzje. Dla poradnika może oznaczać inne pytania i kolejność rozdziałów, dla strony oferty — inne argumenty, a dla kampanii — inne wykluczenia i miejsca docelowe. Zapisz jedną hipotezę na raz i ustal, po jakim sygnale uznamy ją za wartą dalszego sprawdzenia.
+              </p>
+              <p className={paragraphClass}>
+                Przy planowaniu publikacji połącz wiedzę o odbiorcach z <Link to="/blog/strategia-komunikacji-co-to" className="text-primary hover:underline">strategią komunikacji</Link> i <Link to="/blog/content-marketing-dla-firm" className="text-primary hover:underline">content marketingiem dla firm</Link>. Jeśli temat wymaga szerszego uporządkowania kanałów i celów, zobacz zakres <Link to="/uslugi/marketing-internetowy" className="text-primary hover:underline">marketingu internetowego</Link>.
+              </p>
+              <div className="rounded-xl bg-slate-950 text-white p-7 mt-8">
+                <h3 className="text-xl font-bold mb-3">Chcesz uporządkować research i przekaz?</h3>
+                <p className="text-slate-300 leading-relaxed mb-5">Opisz swój kontekst, dostępne źródła wiedzy i decyzję, którą chcesz przygotować. Punktem wyjścia będzie analiza materiałów, bez obiecywania rezultatów przed ich poznaniem.</p>
+                <Link to="/kontakt" className="inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-3 font-semibold text-primary-foreground hover:opacity-90 transition-opacity">Przejdź do formularza kontaktowego <ArrowRight className="h-4 w-4" aria-hidden="true" /></Link>
+              </div>
+            </section>
+
+            <section id="faq" aria-labelledby="faq-heading" className={sectionClass}>
+              <h2 id="faq-heading" className={headingClass}>FAQ — grupa docelowa</h2>
+              <div className="space-y-4">
+                {faqItems.map(item => (
+                  <details key={item.id} id={`target-faq-${item.id}`} className="group rounded-xl border bg-card p-6">
+                    <summary className="cursor-pointer list-none font-bold text-lg flex items-center justify-between gap-4">
+                      {item.question}
+                      <span aria-hidden="true" className="text-primary group-open:rotate-45 transition-transform">+</span>
+                    </summary>
+                    <p className="text-muted-foreground leading-relaxed mt-4">{item.answer}</p>
+                  </details>
+                ))}
+              </div>
+            </section>
+
+            <nav aria-labelledby="powiazane-heading" className="mt-14 rounded-xl border bg-card p-6">
+              <h2 id="powiazane-heading" className="text-xl font-bold mb-4">Powiązane poradniki</h2>
+              <div className="flex flex-col gap-3 text-primary">
+                <Link to="/blog/segmentacja-rynku-co-to" className="hover:underline">Segmentacja rynku — co to jest i jak ją przeprowadzić?</Link>
+                <Link to="/blog/persona-marketingowa" className="hover:underline">Persona marketingowa — jak przygotować profil klienta?</Link>
+                <Link to="/blog/strategia-komunikacji-co-to" className="hover:underline">Strategia komunikacji — od odbiorcy do spójnego przekazu</Link>
+              </div>
+            </nav>
           </div>
-        </section>
-      </FadeInView>
-
-      {/* Metody badań */}
-      <FadeInView>
-        <section className="py-16 px-4 bg-white">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl font-bold text-slate-900 mb-8">6 metod badania grupy docelowej</h2>
-            <div className="overflow-x-auto">
-              <table className="w-full border-collapse">
-                <thead>
-                  <tr className="bg-slate-900 text-white">
-                    <th className="p-3 text-left">Metoda</th>
-                    <th className="p-3 text-left">Kiedy stosować</th>
-                    <th className="p-3 text-left">Co zyskujesz</th>
-                    <th className="p-3 text-left">Nakład</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {audienceResearchMethods.map((row, i) => (
-                    <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
-                      <td className="p-3 font-semibold text-slate-900">{row.metoda}</td>
-                      <td className="p-3 text-slate-600 text-sm">{row.kiedy}</td>
-                      <td className="p-3 text-slate-600 text-sm">{row.co_zyskujesz}</td>
-                      <td className="p-3 text-blue-700 font-medium text-sm">{row.nakład}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </section>
-      </FadeInView>
-
-      {/* FAQ */}
-      <FadeInView>
-        <section className="py-16 px-4 bg-slate-50">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold text-slate-900 mb-8">Jak zdefiniować target audience — szablon krok po kroku</h2>
-            <p className="text-lg text-slate-700 mb-6">
-              Definiowanie grupy docelowej to proces, nie zgadywanie. Zdefiniuj target audience w 5 krokach:
-            </p>
-            <div className="space-y-4 mb-8">
-              {[
-                { step: "1. Zbierz dane z istniejącej bazy", text: "Przejrzyj zamówienia, CRM i Google Analytics: kto kupuje najczęściej i najwięcej? GSC pokaże, na jakie frazy ludzie trafiają. Klienci z najwyższym LTV to Twoja prawdziwa grupa docelowa — nie ta, którą sobie wyobrażasz." },
-                { step: "2. Zsegmentuj według 4 kryteriów", text: "Demografia (wiek, płeć, lokalizacja), geografia (miasto, region, dzielnica), psychografia (wartości, styl życia, obawy) i zachowania (częstotliwość zakupów, kanał, urządzenie). Zapisz każdy segment jednym zdaniem — np. 'właściciele małych firm usługowych z Poznania, którzy sami robią marketing'." },
-                { step: "3. Zweryfikuj hipotezy w terenie", text: "Przeprowadź 5–10 rozmów z klientami z dominującego segmentu. Pytaj o proces decyzji, obawy i źródło informacji. Jedna rozmowa z klientem uczy więcej niż miesiąc analizy danych — usłyszysz język, którego używają." },
-                { step: "4. Zapisz personę i reguły wykluczenia", text: "Stwórz dokument: kto jest w grupie, kogo NIE obsługujesz (np. 'nie targetujemy firm zatrudniających powyżej 50 osób'), jakie pytania zadają i na jakim etapie decyzji są. Wykluczenia oszczędzają budżet reklamowy." },
-                { step: "5. Testuj i iteruj co kwartał", text: "Uruchom 2–3 warianty komunikatu na małym budżecie. Mierz koszt pozyskania klienta (CAC) per segment. Grupa docelowa to żywy dokument — rynek i Twoja oferta się zmieniają." },
-              ].map((item, idx) => (
-                <div key={idx} className="bg-white rounded-xl p-5 border border-slate-200 shadow-sm">
-                  <h3 className="font-bold text-slate-900 mb-2">{item.step}</h3>
-                  <p className="text-slate-600 text-sm leading-relaxed">{item.text}</p>
-                </div>
-              ))}
-            </div>
-
-            <h2 className="text-3xl font-bold text-slate-900 mb-8 mt-10">Przykłady target audience dla polskich firm</h2>
-            <div className="grid md:grid-cols-3 gap-5 mb-8">
-              {[
-                { name: "Usługa lokalna (fryzjer, stomatolog)", example: "Mieszkańcy dzielnicy w promieniu 3–5 km, 25–55 lat, szukający 'fryzjer + dzielnica'. Decydują: opinie Google, cena, wolne terminy. Kanał: Google Maps, lokalne SEO, remarketing." },
-                { name: "Sklep e-commerce", example: "Kupujący online 25–45 lat, którzy porównują ceny i recenzje. Decydują: darmowa dostawa, zwroty, zdjęcia produktów. Kanał: Google Shopping, Meta Ads, e-mail z porzuconym koszykiem." },
-                { name: "Usługa B2B (agencja, software house)", example: "CEO lub marketing manager małej firmy (5–50 osób), który nie ma działu marketingu. Decydują: case study, zakres odpowiedzialności, cena. Kanał: LinkedIn, blog ekspercki, Google Ads." },
-              ].map((item, idx) => (
-                <div key={idx} className="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
-                  <h3 className="font-bold text-slate-900 mb-3 text-sm">{item.name}</h3>
-                  <p className="text-slate-600 text-sm leading-relaxed">{item.example}</p>
-                </div>
-              ))}
-            </div>
-
-            <h2 className="text-3xl font-bold text-slate-900 mb-8">FAQ — target audience i grupa docelowa</h2>
-            <div className="space-y-4">
-              {faqItems.map((item, i) => (
-                <div key={i} className="bg-white border border-slate-200 rounded-xl p-6">
-                  <h3 className="font-bold text-slate-900 mb-3">{item.question}</h3>
-                  <p className="text-slate-600">{item.answer}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-      </FadeInView>
-
-      <RelatedArticles currentArticleId="target-audience-co-to" />
-      <ContactSection />
+        </div>
+      </article>
     </Layout>
   );
 }
