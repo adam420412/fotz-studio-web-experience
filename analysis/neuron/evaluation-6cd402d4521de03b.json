@@ -1,0 +1,11 @@
+{
+  "request": {
+    "query": "6cd402d4521de03b",
+    "url": "https://www.fotz-studio.pl/blog/tam-sam-som-co-to",
+    "id": "main-content"
+  },
+  "response": {
+    "status": "ok",
+    "content_score": 72
+  }
+}
