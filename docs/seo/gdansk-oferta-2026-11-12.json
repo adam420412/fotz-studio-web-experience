@@ -1,0 +1,70 @@
+{
+  "id": "FOTZ-AF65A730",
+  "url": "https://www.fotz-studio.pl/agencja-marketingowa/gdansk",
+  "checkedAt": "2026-11-12T13:19:41Z",
+  "pr": "https://github.com/adam420412/fotz-studio-web-experience/pull/217",
+  "productionCommit": "f1aff57626e4f3cedafdbfce86c177e6f47a41db",
+  "deployment": "dpl_6gGfbDVEhf8RNyWozeZpfTxsF4ug",
+  "domain": "www.fotz-studio.pl",
+  "deploymentState": "READY",
+  "neuronQuery": "b4d47149f3cfa4ce",
+  "keyword": "agencja marketingowa gdańsk",
+  "scoreBefore": 51,
+  "renderedScore": 95,
+  "publicScore": 95,
+  "savedPublicRevisionScore": 95,
+  "scoreMethod": "evaluate_content of the public URL with id=main-content, followed by import_content of the same URL",
+  "gsc": {
+    "property": "sc-domain:fotz-studio.pl",
+    "period": [
+      "2026-10-13",
+      "2026-11-09"
+    ],
+    "impressions": 118,
+    "clicks": 0,
+    "averagePosition": 32.661,
+    "primaryQuery": "agencja marketingowa gdańsk",
+    "queryImpressions": 78,
+    "queryClicks": 0,
+    "queryPosition": 28.2436
+  },
+  "review": {
+    "reviewer": "Claude Code, Opus 4.6",
+    "verdict": "Ready to deploy, no blockers. Optional link verified in rendered HTML."
+  },
+  "verification": {
+    "page": {
+      "http": 200,
+      "canonical": "https://www.fotz-studio.pl/agencja-marketingowa/gdansk",
+      "mainMatchesLocal": true,
+      "visibleTextSha256": "160dc372ed6e318bd1a9fd247d2bbf181f77cfe1356523a8f4f6b7fcef4a2c01",
+      "faqEntries": 4,
+      "contact": "/kontakt?usluga=marketing#formularz"
+    },
+    "browser": [
+      {
+        "width": 360,
+        "h1": "Agencja marketingowa dla firm z Gdańska – kampanie reklamowe i social media",
+        "doc": 360,
+        "viewport": 360,
+        "heroLoaded": 324,
+        "canonical": "https://www.fotz-studio.pl/agencja-marketingowa/gdansk",
+        "form": "https://www.fotz-studio.pl/kontakt?usluga=marketing#formularz",
+        "selected": "Marketing i kampanie reklamowe"
+      },
+      {
+        "width": 1280,
+        "h1": "Agencja marketingowa dla firm z Gdańska – kampanie reklamowe i social media",
+        "doc": 1280,
+        "viewport": 1280,
+        "heroLoaded": 550,
+        "canonical": "https://www.fotz-studio.pl/agencja-marketingowa/gdansk",
+        "form": "https://www.fotz-studio.pl/kontakt?usluga=marketing#formularz",
+        "selected": "Marketing i kampanie reklamowe"
+      }
+    ],
+    "testsPassed": 359,
+    "uniqueSitemapUrls": 1059,
+    "brokenRenderedLinks": 0
+  }
+}
