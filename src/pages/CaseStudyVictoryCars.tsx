@@ -8,7 +8,7 @@ import victoryCarsImg from "@/assets/portfolio/victory-cars-web.webp";
 
 export default function CaseStudyVictoryCars() {
   return <Layout>
-    <SEOHead title="Victory Cars — strona i katalog pojazdów | FOTZ Studio" description="Projekt strony internetowej Victory Cars. Zobacz prezentację marki motoryzacyjnej i katalogu pojazdów w portfolio FOTZ Studio." canonical="https://www.fotz-studio.pl/realizacje/victory-cars" ogImage="https://www.fotz-studio.pl/work/portfolio/portfolio-victory-cars-web-960.webp" />
+    <SEOHead title="Victory Cars — strona i katalog pojazdów | FOTZ Studio" description="Projekt strony internetowej Victory Cars. Zobacz prezentację marki motoryzacyjnej i katalogu pojazdów w portfolio FOTZ Studio." canonical="https://www.fotz-studio.pl/realizacje/victory-cars" ogImage="https://www.fotz-studio.pl/og/realizacje/victory-cars.jpg" />
     <BreadcrumbSchema items={[{name:"Strona główna",url:"/"},{name:"Realizacje",url:"/realizacje"},{name:"Victory Cars",url:"/realizacje/victory-cars"}]} />
     <section className="container-wide px-6 md:px-12 pt-32 pb-16">
       <Link to="/realizacje" className="inline-flex items-center gap-2 text-muted-foreground mb-8"><ArrowLeft aria-hidden className="w-4 h-4" />Wróć do realizacji</Link>

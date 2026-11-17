@@ -39,6 +39,7 @@ const CaseStudyRPPG = () => {
         description="Case study RPPG Rada Polskich Przedsiębiorców Globalnych: strona internetowa dla organizacji biznesowej. Design i UX. Fotz Studio."
         canonical="https://www.fotz-studio.pl/realizacje/rppg"
         keywords="RPPG, strona organizacji, Rada Polskich Przedsiębiorców Globalnych"
+        ogImage="https://www.fotz-studio.pl/og/realizacje/rppg.jpg"
       />
       <BreadcrumbSchema items={[
         { name: "Strona główna", url: "https://www.fotz-studio.pl" },
@@ -51,7 +52,7 @@ const CaseStudyRPPG = () => {
         author="Fotz Studio"
         datePublished="2024-05-20"
         dateModified="2026-01-09"
-        image="https://www.fotz-studio.pl/og-image.jpg"
+        image="https://www.fotz-studio.pl/og/realizacje/rppg.jpg"
         url="https://www.fotz-studio.pl/realizacje/rppg"
       />
 

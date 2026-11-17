@@ -38,6 +38,7 @@ const CaseStudyFPS = () => {
         description="Case study FPS Poznań (Cegielski): strona internetowa dla producenta pojazdów szynowych. Nowoczesny design, identyfikacja wizualna i UX. Fotz Studio."
         canonical="https://www.fotz-studio.pl/realizacje/fps-cegielski"
         keywords="case study strony internetowe, realizacja strony www, portfolio strony internetowej"
+        ogImage="https://www.fotz-studio.pl/og/realizacje/fps-cegielski.jpg"
       />
       <BreadcrumbSchema items={[
         { name: "Strona główna", url: "https://www.fotz-studio.pl" },
@@ -50,7 +51,7 @@ const CaseStudyFPS = () => {
         author="Fotz Studio"
         datePublished="2024-06-15"
         dateModified="2026-01-09"
-        image="https://www.fotz-studio.pl/og-image.jpg"
+        image="https://www.fotz-studio.pl/og/realizacje/fps-cegielski.jpg"
         url="https://www.fotz-studio.pl/realizacje/fps-cegielski"
       />
 

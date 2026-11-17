@@ -37,6 +37,7 @@ const CaseStudyFabrykaVirali = () => {
         description="Case study Fabryka Virali: strona internetowa dla agencji social media. Przejrzysty cennik, portfolio i optymalizacja konwersji. Fotz Studio."
         canonical="https://www.fotz-studio.pl/realizacje/fabryka-virali"
         keywords="case study social media, viral marketing realizacja, content marketing case study"
+        ogImage="https://www.fotz-studio.pl/og/realizacje/fabryka-virali.jpg"
       />
       <BreadcrumbSchema items={[
         { name: "Strona główna", url: "https://www.fotz-studio.pl" },
@@ -49,7 +50,7 @@ const CaseStudyFabrykaVirali = () => {
         author="Fotz Studio"
         datePublished="2024-04-10"
         dateModified="2026-01-09"
-        image="https://www.fotz-studio.pl/og-image.jpg"
+        image="https://www.fotz-studio.pl/og/realizacje/fabryka-virali.jpg"
         url="https://www.fotz-studio.pl/realizacje/fabryka-virali"
       />
 

@@ -62,6 +62,7 @@ const CaseStudyGierki = () => {
         description="Realizacja FOTZ dla Gierky Activity Bar w Poznaniu: strona z rezerwacjami, sesja zdjęciowa wnętrz i bieżąca opieka."
         canonical="https://www.fotz-studio.pl/realizacje/gierki"
         ogType="article"
+        ogImage="https://www.fotz-studio.pl/og/realizacje/gierki.jpg"
       />
       <BreadcrumbSchema items={[
         { name: "Strona główna", url: "https://www.fotz-studio.pl" },

@@ -45,6 +45,7 @@ const CaseStudyGraf = () => {
         description="Case study Graf Tapicerstwo: strona internetowa dla firmy zabudowy i tapicerowania busów. SEO i galeria realizacji. Fotz Studio."
         canonical="https://www.fotz-studio.pl/realizacje/graf-tapicerstwo"
         keywords="case study branding, realizacja identyfikacji wizualnej, branding case study"
+        ogImage="https://www.fotz-studio.pl/og/realizacje/graf-tapicerstwo.jpg"
       />
       <BreadcrumbSchema items={[
         { name: "Strona główna", url: "https://www.fotz-studio.pl" },
@@ -57,7 +58,7 @@ const CaseStudyGraf = () => {
         author="Fotz Studio"
         datePublished="2023-09-15"
         dateModified="2026-01-09"
-        image="https://www.fotz-studio.pl/og-image.jpg"
+        image="https://www.fotz-studio.pl/og/realizacje/graf-tapicerstwo.jpg"
         url="https://www.fotz-studio.pl/realizacje/graf-tapicerstwo"
       />
 

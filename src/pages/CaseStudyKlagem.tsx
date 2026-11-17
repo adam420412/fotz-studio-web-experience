@@ -5,7 +5,7 @@ import { enquiryHref } from '@/lib/enquiry.mjs';
 
 export default function CaseStudyKlagem() {
   return <>
-    <SEOHead title="Konfigurator mebli 3D KLAGEM — realizacja | FOTZ Studio" description="Konfigurator 3D KLAGEM: meble modułowe, wybór wymiarów i kolorów, zapis projektu oraz orientacyjna wycena. Zobacz realizację FOTZ i działające narzędzie." canonical="https://www.fotz-studio.pl/realizacje/klagem" ogImage="https://www.fotz-studio.pl/work/klagem-configurator-1280.webp" />
+    <SEOHead title="Konfigurator mebli 3D KLAGEM — realizacja | FOTZ Studio" description="Konfigurator 3D KLAGEM: meble modułowe, wybór wymiarów i kolorów, zapis projektu oraz orientacyjna wycena. Zobacz realizację FOTZ i działające narzędzie." canonical="https://www.fotz-studio.pl/realizacje/klagem" ogImage="https://www.fotz-studio.pl/og/realizacje/klagem.jpg" />
     <ProjectCasePage name="KLAGEM — konfigurator mebli 3D" category="Konfigurator produktów · strona i prezentacja marki" intro="Od pomysłu na mebel do konkretnej konfiguracji. Dla KLAGEM stworzyliśmy narzędzie, w którym klient dobiera moduły, wymiary i kolory, ogląda projekt w 3D oraz sprawdza orientacyjną wycenę." image="/work/klagem-configurator-1280.webp" path="/realizacje/klagem" sections={[
       { title: 'Produkt z wieloma wariantami', text: 'KLAGEM to system mebli modułowych. Pojedyncze zdjęcie nie pokazuje wszystkich możliwych układów. Konfigurator pozwala zacząć od gotowej kompozycji lub dopasować mebel do własnych potrzeb.' },
       { title: 'Wybór widoczny w 3D', text: 'Użytkownik wybiera moduły, ich formę, wymiary i kolory. Podgląd można obracać, przybliżać i oglądać z różnych stron, a wymiary całej konfiguracji są widoczne przy projekcie.' },
