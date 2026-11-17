@@ -45,6 +45,7 @@ const CaseStudyStagePlan = () => {
         description="Case study Stage Plan: strona internetowa dla firmy techniki scenicznej. Katalog sprzętu, SEO i design branżowy. Fotz Studio."
         canonical="https://www.fotz-studio.pl/realizacje/stageplan"
         keywords="case study strona internetowa, realizacja strony www b2b"
+        ogImage="https://www.fotz-studio.pl/og/realizacje/stageplan.jpg"
       />
       <BreadcrumbSchema items={[
         { name: "Strona główna", url: "https://www.fotz-studio.pl" },
@@ -57,7 +58,7 @@ const CaseStudyStagePlan = () => {
         author="Fotz Studio"
         datePublished="2024-01-30"
         dateModified="2026-01-09"
-        image="https://www.fotz-studio.pl/og-image.jpg"
+        image="https://www.fotz-studio.pl/og/realizacje/stageplan.jpg"
         url="https://www.fotz-studio.pl/realizacje/stageplan"
       />
 

@@ -45,6 +45,7 @@ const CaseStudySookar = () => {
         description="Case study Sookar Elite Car Market: strona internetowa dla platformy luksusowych samochodów. Premium design, katalog i SEO motoryzacyjne. Fotz Studio."
         canonical="https://www.fotz-studio.pl/realizacje/sookar"
         keywords="case study social media agencja, realizacja social media"
+        ogImage="https://www.fotz-studio.pl/og/realizacje/sookar.jpg"
       />
       <BreadcrumbSchema items={[
         { name: "Strona główna", url: "https://www.fotz-studio.pl" },
@@ -57,7 +58,7 @@ const CaseStudySookar = () => {
         author="Fotz Studio"
         datePublished="2023-10-05"
         dateModified="2026-01-09"
-        image="https://www.fotz-studio.pl/og-image.jpg"
+        image="https://www.fotz-studio.pl/og/realizacje/sookar.jpg"
         url="https://www.fotz-studio.pl/realizacje/sookar"
       />
 

@@ -36,7 +36,7 @@ export default function CaseStudyDawidEdu() {
         title="Dawid EDU — strona WWW i kampania rekrutacyjna | FOTZ Studio"
         description="Nowa strona dawid.edu.pl i kampania rekrutacyjna Meta Ads — case study FOTZ Studio."
         canonical="https://www.fotz-studio.pl/realizacje/dawid-edu"
-        ogImage="https://www.fotz-studio.pl/case-studies/dawid-edu/ed-a.webp"
+        ogImage="https://www.fotz-studio.pl/og/realizacje/dawid-edu.jpg"
         ogType="article"
       />
       <BreadcrumbSchema items={[

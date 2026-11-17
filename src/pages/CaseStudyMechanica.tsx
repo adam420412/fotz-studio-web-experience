@@ -45,6 +45,7 @@ const CaseStudyMechanica = () => {
         description="Case study Mechanica: strona internetowa dla producenta żurawi i suwnic przemysłowych. SEO branży technicznej. Fotz Studio."
         canonical="https://www.fotz-studio.pl/realizacje/mechanica"
         keywords="case study automotive, marketing motoryzacja realizacja"
+        ogImage="https://www.fotz-studio.pl/og/realizacje/mechanica.jpg"
       />
       <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://www.fotz-studio.pl" },

@@ -45,6 +45,7 @@ const CaseStudyLauvjah = () => {
         description="Case study Lauvjah: strona internetowa dla firmy transportowej i spedycyjnej. SEO, design i lead generation. Fotz Studio."
         canonical="https://www.fotz-studio.pl/realizacje/lauvjah"
         keywords="case study e-commerce, realizacja sklepu internetowego, seo e-commerce case study"
+        ogImage="https://www.fotz-studio.pl/og/realizacje/lauvjah.jpg"
       />
       <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://www.fotz-studio.pl" },
