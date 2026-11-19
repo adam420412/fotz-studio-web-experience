@@ -1,0 +1,165 @@
+{
+  "registerId": "FOTZ-70DC7C0C",
+  "url": "https://www.fotz-studio.pl/uslugi/strony-internetowe/poznan",
+  "searchConsole": {
+    "property": "sc-domain:fotz-studio.pl",
+    "from": "2026-10-20",
+    "to": "2026-11-16",
+    "page": {
+      "page": "https://www.fotz-studio.pl/uslugi/strony-internetowe/poznan",
+      "impressions": 182,
+      "clicks": 0,
+      "position": 43.4066
+    },
+    "queries": [
+      {
+        "page": "https://www.fotz-studio.pl/uslugi/strony-internetowe/poznan",
+        "query": "strony internetowe poznań",
+        "impressions": 79,
+        "clicks": 0,
+        "position": 39.5316
+      },
+      {
+        "page": "https://www.fotz-studio.pl/uslugi/strony-internetowe/poznan",
+        "query": "projektowanie stron poznań",
+        "impressions": 13,
+        "clicks": 0,
+        "position": 61.1538
+      },
+      {
+        "page": "https://www.fotz-studio.pl/uslugi/strony-internetowe/poznan",
+        "query": "projektowanie stron www poznań",
+        "impressions": 13,
+        "clicks": 0,
+        "position": 38.4615
+      },
+      {
+        "page": "https://www.fotz-studio.pl/uslugi/strony-internetowe/poznan",
+        "query": "projektowanie stron internetowych poznań",
+        "impressions": 9,
+        "clicks": 0,
+        "position": 55.6667
+      },
+      {
+        "page": "https://www.fotz-studio.pl/uslugi/strony-internetowe/poznan",
+        "query": "tworzenie stron poznań",
+        "impressions": 6,
+        "clicks": 0,
+        "position": 65.3333
+      },
+      {
+        "page": "https://www.fotz-studio.pl/uslugi/strony-internetowe/poznan",
+        "query": "tworzenie stron internetowych poznań",
+        "impressions": 5,
+        "clicks": 0,
+        "position": 92.6
+      },
+      {
+        "page": "https://www.fotz-studio.pl/uslugi/strony-internetowe/poznan",
+        "query": "fotz",
+        "impressions": 4,
+        "clicks": 0,
+        "position": 2.5
+      },
+      {
+        "page": "https://www.fotz-studio.pl/uslugi/strony-internetowe/poznan",
+        "query": "strony internetowe poznan",
+        "impressions": 4,
+        "clicks": 0,
+        "position": 56.5
+      },
+      {
+        "page": "https://www.fotz-studio.pl/uslugi/strony-internetowe/poznan",
+        "query": "fotz studio",
+        "impressions": 3,
+        "clicks": 0,
+        "position": 4
+      },
+      {
+        "page": "https://www.fotz-studio.pl/uslugi/strony-internetowe/poznan",
+        "query": "projekt strony internetowej poznań",
+        "impressions": 3,
+        "clicks": 0,
+        "position": 96.6667
+      },
+      {
+        "page": "https://www.fotz-studio.pl/uslugi/strony-internetowe/poznan",
+        "query": "projektowanie stron internetowych poznań cennik",
+        "impressions": 3,
+        "clicks": 0,
+        "position": 91.3333
+      },
+      {
+        "page": "https://www.fotz-studio.pl/uslugi/strony-internetowe/poznan",
+        "query": "strony internetowe poznań cennik",
+        "impressions": 3,
+        "clicks": 0,
+        "position": 27
+      }
+    ]
+  },
+  "neuron": {
+    "query": "d90202ae8844a388",
+    "keyword": "strony internetowe poznań",
+    "publicBefore": 89,
+    "analysis": "https://app.neuronwriter.com/analysis/view/d90202ae8844a388",
+    "draft": 96,
+    "preview": 95,
+    "publicAfter": 95,
+    "imported": 95,
+    "done": true,
+    "checkedAt": "2026-11-19T12:38:27Z",
+    "container": "main-content"
+  },
+  "release": {
+    "pr": "https://github.com/adam420412/fotz-studio-web-experience/pull/246",
+    "commit": "f85acf5de5e0c244b71e9cb0bee2e57f3a40aeea",
+    "deployment": "dpl_3d8QdyJYQSpZyXmeXeh6wDEEEE4v",
+    "target": "production",
+    "state": "READY",
+    "aliases": [
+      "www.fotz-studio.pl",
+      "fotz-studio.pl"
+    ],
+    "checkedAt": "2026-11-19T12:38:27Z",
+    "productionEnquiry": "Link Wyceń sklep lub katalog produktów otwiera kontakt z usługą Strona internetowa lub sklep i widocznym zakresem Sklep internetowy."
+  },
+  "claudeReview": {
+    "model": "claude-opus-4-6[1m]",
+    "verdict": "## Review: strony-internetowe/poznan\n\n**Fakty** — zgodne z danymi: Gierky (podstrony atrakcji, rezerwacja, Poznań 61-702), Enea Stadion (prezentacja przestrzeni), FPS (strona + identyfikacja), WWW START (1 490 zł netto, do 5 sekcji, szablon FOTZ, 1 runda poprawek, materiały klienta, domena i hosting osobno). `enquiryHref(\"web\", variant)` poprawnie obsługuje trzy warianty. `defaultService=\"web\"` zgodny z zakresem.\n\n**Polski** — naturalny, konkretny, bez upychania fraz. Przekaz adresowany do właściciela firmy, nie do wyszukiwarki. Bez błędów ortograficznych ani stylistycznych.\n\n**Dostępność** — `tabIndex={-1}` i `focus-visible:outline` na sekcji `#realizacje`, `scroll-mt-24` na kotwicach, `loading=\"eager\"` na hero, `loading=\"lazy\"` na reszcie, alt-y opisowe, `sizes` dopasowane do siatki, `<details>` w FAQ zachowuje natywną obsługę klawiatury.\n\n**Konwersja** — dwa CTA w hero (wycena + realizacje), trzy warianty oferty linkujące do formularza z kontekstem, cena widoczna w hero i osobnej sekcji, telefon pod formularzem, link do cennika. Ścieżka potwierdzona testem mobilnym.\n\n**Struktura danych** — BreadcrumbSchema, ServiceSchema z `areaServed`, FAQSchema, OrganizationSchema — kompletne.\n\n**Decyzja:** Strona jest gotowa do wdrożenia. Poprzednie zastrzeżenia (lokalizacja Gierky, link do etapów tworzenia, widoczność fokusu) zostały rozwiązane — testy to potwierdzają. Nie widzę błędów blokujących ani istotnych uchybień w treści, faktach, dostępności czy ścieżce konwersji.",
+    "inputSha256": "75a1194f866a6b91770eb0b029e6c348cdd6f5014fcee6e5f33f62e4f7e529cd",
+    "changes": "Osobny opis FPS w realizacjach, rzeczywiste wymiary grafik, widoczny fokus i title z projektami. Potwierdzono lokalizację Gierky, publiczną stronę procesu i przejścia do wyceny."
+  },
+  "checks": {
+    "ci": [
+      {
+        "bucket": "pass",
+        "name": "Vercel Preview Comments"
+      },
+      {
+        "bucket": "pass",
+        "name": "seo"
+      },
+      {
+        "bucket": "pass",
+        "name": "typecheck"
+      },
+      {
+        "bucket": "pass",
+        "name": "Vercel – adam420412-fotz-studio-web-experience"
+      },
+      {
+        "bucket": "pass",
+        "name": "Vercel – fotz-studio-web-experience"
+      }
+    ],
+    "testsPassed": 360,
+    "production": [
+      "Local canonical, one H1, six FAQs and matching FAQ schema, case studies, price conditions and package links verified.",
+      "Production HTTP 200. Canonical, title, description and full main text match local build.",
+      "Main text SHA-256 a12a646e6edab490ca16a55008f8b04cf9f85e6934f9abd16409fc8ac61e87d7"
+    ],
+    "mobile": "Przy szerokości 390 px dokument miał 382 px. W sekcji realizacji wczytano obrazy Gierky i Enea Stadionu oraz sprawdzono trzy odnośniki do portfolio.",
+    "enquiry": "CTA prowadzi do #formularz z usługą Strona internetowa lub sklep. Po wyborze przebudowy na urządzeniu mobilnym formularz kontaktu pokazuje zakres Przebudowa istniejącej strony."
+  }
+}
