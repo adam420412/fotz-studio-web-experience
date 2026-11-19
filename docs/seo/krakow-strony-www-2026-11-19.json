@@ -1,0 +1,164 @@
+{
+  "registerId": "FOTZ-269844A7",
+  "url": "https://www.fotz-studio.pl/uslugi/strony-internetowe/krakow",
+  "searchConsole": {
+    "property": "sc-domain:fotz-studio.pl",
+    "from": "2026-10-20",
+    "to": "2026-11-16",
+    "page": {
+      "page": "https://www.fotz-studio.pl/uslugi/strony-internetowe/krakow",
+      "impressions": 801,
+      "clicks": 1,
+      "position": 66.5943
+    },
+    "queries": [
+      {
+        "page": "https://www.fotz-studio.pl/uslugi/strony-internetowe/krakow",
+        "query": "tworzenie stron internetowych kraków",
+        "impressions": 130,
+        "clicks": 0,
+        "position": 68.3462
+      },
+      {
+        "page": "https://www.fotz-studio.pl/uslugi/strony-internetowe/krakow",
+        "query": "strony www kraków",
+        "impressions": 80,
+        "clicks": 0,
+        "position": 62.4125
+      },
+      {
+        "page": "https://www.fotz-studio.pl/uslugi/strony-internetowe/krakow",
+        "query": "projektowanie stron internetowych kraków",
+        "impressions": 69,
+        "clicks": 0,
+        "position": 67.2609
+      },
+      {
+        "page": "https://www.fotz-studio.pl/uslugi/strony-internetowe/krakow",
+        "query": "tworzenie stron www kraków",
+        "impressions": 49,
+        "clicks": 0,
+        "position": 64.3469
+      },
+      {
+        "page": "https://www.fotz-studio.pl/uslugi/strony-internetowe/krakow",
+        "query": "projektowanie stron www kraków",
+        "impressions": 46,
+        "clicks": 1,
+        "position": 60.7174
+      },
+      {
+        "page": "https://www.fotz-studio.pl/uslugi/strony-internetowe/krakow",
+        "query": "budowa stron internetowych kraków",
+        "impressions": 37,
+        "clicks": 0,
+        "position": 69.4324
+      },
+      {
+        "page": "https://www.fotz-studio.pl/uslugi/strony-internetowe/krakow",
+        "query": "projektowanie stron kraków",
+        "impressions": 32,
+        "clicks": 0,
+        "position": 49.7188
+      },
+      {
+        "page": "https://www.fotz-studio.pl/uslugi/strony-internetowe/krakow",
+        "query": "tworzenie stron kraków",
+        "impressions": 25,
+        "clicks": 0,
+        "position": 67.96
+      },
+      {
+        "page": "https://www.fotz-studio.pl/uslugi/strony-internetowe/krakow",
+        "query": "strona internetowa dla firmy kraków",
+        "impressions": 23,
+        "clicks": 0,
+        "position": 69.8261
+      },
+      {
+        "page": "https://www.fotz-studio.pl/uslugi/strony-internetowe/krakow",
+        "query": "budowa strony internetowej kraków",
+        "impressions": 21,
+        "clicks": 0,
+        "position": 82.6667
+      },
+      {
+        "page": "https://www.fotz-studio.pl/uslugi/strony-internetowe/krakow",
+        "query": "tworzenie stron www krakow",
+        "impressions": 21,
+        "clicks": 0,
+        "position": 70.7143
+      },
+      {
+        "page": "https://www.fotz-studio.pl/uslugi/strony-internetowe/krakow",
+        "query": "projektowanie stron internetowych krakow",
+        "impressions": 19,
+        "clicks": 0,
+        "position": 66.6842
+      }
+    ]
+  },
+  "neuron": {
+    "query": "c4c3ee36cf3fc3ad",
+    "keyword": "strony www Kraków",
+    "publicBefore": 69,
+    "draft": 96,
+    "preview": 96,
+    "publicAfter": 96,
+    "imported": 96,
+    "done": true,
+    "checkedAt": "2026-11-19T12:18:21.365Z",
+    "container": "main-content"
+  },
+  "release": {
+    "pr": "https://github.com/adam420412/fotz-studio-web-experience/pull/243",
+    "commit": "49deee0fde1fb60501ef40ddaf3219f281948c9a",
+    "deployment": "dpl_2HtoMze2kbgyFgsW8L64BXcwg5U9",
+    "target": "production",
+    "state": "READY",
+    "aliases": [
+      "www.fotz-studio.pl",
+      "fotz-studio.pl"
+    ],
+    "checkedAt": "2026-11-19T12:18:21.365Z",
+    "productionEnquiry": "Kliknięcie Wyceń nową stronę firmową ustawiło usługę Strona internetowa lub sklep i zakres Nowa strona. Trzy ilustracje realizacji załadowały się z produkcji."
+  },
+  "claudeReview": {
+    "model": "claude-opus-4-6[1m]",
+    "verdict": "Akceptuję tę wersję do wdrożenia.",
+    "checkedInputSha256": "bdfb2d16a84e4cbc6fd5aa7d69f1a15b952005ed10a55d2f673f7ffad62cc747",
+    "changes": "Oceniono warunki WWW START, trzy ścieżki zapytania, lokalny charakter oferty, dostępność i przykłady z portfolio."
+  },
+  "checks": {
+    "ci": [
+      {
+        "bucket": "pass",
+        "name": "Vercel Preview Comments"
+      },
+      {
+        "bucket": "pass",
+        "name": "typecheck"
+      },
+      {
+        "bucket": "pass",
+        "name": "seo"
+      },
+      {
+        "bucket": "pass",
+        "name": "Vercel – adam420412-fotz-studio-web-experience"
+      },
+      {
+        "bucket": "pass",
+        "name": "Vercel – fotz-studio-web-experience"
+      }
+    ],
+    "localTestsPassed": 360,
+    "production": [
+      "Local canonical, one H1, six FAQs and matching FAQ schema, case studies, price conditions and package links verified.",
+      "Production HTTP 200. Canonical, title, description and full main text match local build.",
+      "Main text SHA-256 f3e4b4e032cf01798022b6d31150cd2606d7df964b0be74d4843dcbba2d244f4"
+    ],
+    "mobile": "Przy szerokości 390 px brak poziomego przewijania. Kotwica portfolio i odnośnik do wyceny sklepu prowadzą do właściwych miejsc.",
+    "enquiry": "Na stronie działa kotwica formularza z domyślną usługą WWW. Sprawdzono wybór przebudowy i sklepu. Trzy realizacje linkują do dedykowanych opisów."
+  }
+}
