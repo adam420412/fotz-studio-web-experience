@@ -1,281 +1,170 @@
+import { ServiceEditorial } from "@/components/ServiceEditorial";
 import { SEOHead } from "@/components/seo/SEOHead";
-import { Layout } from "@/components/layout/Layout";
-import { Monitor, Code, Globe, Smartphone, Zap, Users, TrendingUp, Palette } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
-import { ContactSection } from "@/components/sections/ContactSection";
-import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
-import { Link } from "react-router-dom";
 
+const scope = [
+  {
+    title: "Strona firmowa z ofertą i kontaktem",
+    text: "Dla firmy usługowej z Kielc projektujemy stronę, na której klient znajdzie zakres pracy, realizacje i sposób zamówienia. Ustalamy, jakie informacje są potrzebne do wyceny. Krótki formularz może pytać o rodzaj usługi, termin i miejsce realizacji. Na telefonie łatwo przejdziesz do kontaktu z osobą przyjmującą zlecenia.",
+    href: "/kontakt?usluga=web&wariant=website#formularz",
+    link: "Zapytaj o nową stronę firmową",
+  },
+  {
+    title: "Przebudowa istniejącej strony WWW",
+    text: "Masz stronę internetową, lecz odwiedzający nie wysyłają zapytań? Sprawdzamy ofertę, nawigację, wersję mobilną i formularz. Porównujemy podstrony z zapytaniami w Google Search Console. Po przeglądzie ustalamy, czy potrzebna jest zmiana treści, projekt graficzny czy przebudowa serwisu. Przy zmianie adresów planujemy przekierowania.",
+    href: "/kontakt?usluga=web&wariant=redesign#formularz",
+    link: "Omów poprawę obecnej strony",
+  },
+  {
+    title: "Sklepy internetowe i katalogi produktów",
+    text: "Jeśli chcesz sprzedawać online, zaczynamy od produktów, wariantów, płatności i dostawy. Sklep internetowy powinien ułatwiać wybór i złożenie zamówienia. Gdy cena zależy od indywidualnych ustaleń, odpowiedni może być katalog z zapytaniem do handlowca. Integracje z magazynem i księgowością wyceniamy po sprawdzeniu dostępnych systemów.",
+    href: "/kontakt?usluga=web&wariant=shop#formularz",
+    link: "Zapytaj o sklep internetowy",
+  },
+];
+
+const sections = [
+  {
+    title: "Projektowanie stron internetowych zaczynamy od zapytania klienta",
+    text: "Co powinien wiedzieć odbiorca, zanim napisze do Twojej firmy? To pierwsze pytanie przy tworzeniu strony. Dla wykonawcy z Kielc ważne mogą być obszar dojazdu, zdjęcia zakończonych prac i dostępne terminy. Dla producenta sprzedającego w całej Polsce będą to parametry produktu, warianty oraz warunki współpracy. Dobieramy strukturę strony internetowej do sposobu podejmowania decyzji przez klienta.",
+    points: [
+      "Strona główna przedstawia ofertę i prowadzi do konkretnej usługi. Użytkownik widzi, dla kogo pracujesz i jaki problem rozwiązujesz.",
+      "Podstrona usługi opisuje zakres, przebieg realizacji i sposób wyceny. Zdjęcia własnych prac pomagają ocenić, czy oferta pasuje do potrzeb odbiorcy.",
+      "Formularz zbiera informacje potrzebne do odpowiedzi. Ustalamy odbiorcę zgłoszeń i sposób zapisania zapytania, aby można było wrócić do rozmowy.",
+    ],
+  },
+  {
+    title: "Strony internetowe Kielce – wycena i oferta dla firmy",
+    text: "WWW START kosztuje 1 490 zł netto. To One Page do 5 sekcji na szablonie FOTZ, z tekstami, logo i zdjęciami dostarczonymi przez klienta oraz jedną rundą poprawek. Domena i hosting są rozliczane osobno. Ten wariant sprawdzi się przy niewielkiej ofercie, którą można przedstawić na jednej stronie. Jeśli potrzebujesz indywidualnego projektu graficznego albo kilku podstron usług, przygotujemy osobną wycenę.",
+    points: [
+      "Cena rozbudowanej strony zależy od liczby widoków, funkcjonalności, treści i integracji. Najpierw ustalamy listę elementów do wykonania.",
+      "Pisanie tekstów, sesja zdjęciowa, film oraz rozbudowane funkcje wymagają osobnej kalkulacji. W ofercie wskazujemy, kto dostarcza każdy materiał.",
+      "Koszty utrzymania, płatne licencje i opieka techniczna są wyszczególnione przed rozpoczęciem współpracy. Harmonogram i zasady poprawek potwierdzamy w ofercie.",
+    ],
+    href: "/cennik-stron-internetowych",
+    link: "Sprawdź cennik tworzenia stron WWW",
+  },
+  {
+    title: "Responsywne strony internetowe – wygodny kontakt na telefonie",
+    text: "Projektowanie stron WWW obejmuje widoki na urządzeniach mobilnych i komputerze. Sprawdzamy wielkość przycisków, menu, czytelność tekstu i sposób prezentacji zdjęć. Responsywna strona internetowa pozwala obejrzeć realizację i wysłać pytanie bez powiększania ekranu. Responsywność uwzględniamy już na etapie makiet. Testujemy również szybkość ładowania, ograniczamy ciężkie obrazy i dobieramy animacje tak, aby nie utrudniały korzystania z oferty.",
+  },
+  {
+    title: "WordPress – funkcjonalna strona WWW i zarządzanie treścią",
+    text: "System zarządzania treścią CMS pozwala aktualizować ofertę, zdjęcia i wpisy bez edycji kodu. System WordPress jest jednym z możliwych rozwiązań. Przed wyborem technologii pytamy, kto będzie obsługiwać stronę i jakie zmiany wykonuje najczęściej. Przy nietypowych funkcjach rozważamy rozwiązanie dedykowane. W zakresie projektu ustalamy role użytkowników, instrukcję obsługi i sposób przekazania dostępów.",
+  },
+  {
+    title: "Strona producenta – realizacja FPS Poznań",
+    text: "Dla FPS Poznań przygotowaliśmy stronę internetową i identyfikację wizualną producenta pojazdów szynowych. To przykład prezentacji oferty przemysłowej, w której ważne są czytelna struktura i spójny wizerunek firmy. Jeśli prowadzisz działalność produkcyjną w województwie świętokrzyskim, możemy omówić podobny sposób uporządkowania Twoich produktów, dokumentacji i kontaktu handlowego.",
+    href: "/realizacje/fps-cegielski",
+    link: "Zobacz projekt strony FPS Poznań",
+  },
+  {
+    title: "Konfigurator 3D i strona internetowa KLAGEM",
+    text: "W projekcie KLAGEM połączyliśmy stronę z konfiguratorem mebli 3D. Użytkownik dobiera moduły, wymiary i kolory oraz otrzymuje orientacyjną wycenę. Taka funkcja może pomóc przygotować bardziej konkretne zapytanie o produkt na zamówienie. Zanim zaproponujemy konfigurator Twojej firmie, ustalimy zasady łączenia wariantów i obliczania ceny. Jest to osobny zakres programowania, wyceniany po analizie produktu.",
+    href: "/realizacje/klagem",
+    link: "Obejrzyj stronę i konfigurator KLAGEM",
+  },
+  {
+    title: "Projekt graficzny i materiały dla RPPG Group",
+    text: "Dla Rady Polskich Przedsiębiorców Globalnych stworzyliśmy serwis z interaktywnym globusem 3D oraz materiały foto i wideo. Zobacz, jak element wizualny łączy się z informacją o organizacji. Przy Twojej stronie dobieramy formę do odbiorców. Czasem wystarczy dobra fotografia i jasny opis usługi, a dodatkową animację warto zaplanować dopiero wtedy, gdy pomaga zrozumieć ofertę.",
+    href: "/realizacje/rppg",
+    link: "Poznaj realizację RPPG Group",
+  },
+  {
+    title: "Tworzenie stron WWW a pozycjonowanie w Google",
+    text: "Podczas projektowania strony planujemy tytuły podstron, nagłówki, opisy i linkowanie wewnętrzne. Optymalizacja SEO obejmuje też czytelne adresy, dostępność treści dla wyszukiwarek i kontrolę indeksowania. W Search Console można sprawdzić, na jakie zapytania witryna się wyświetla. Dla firmy obsługującej Kielce opisujemy rzeczywisty obszar działania, zasady dojazdu i usługi dostępne na miejscu.",
+    points: [
+      "Przed publikacją sprawdzamy linki, mapę strony i adresy kanoniczne. Przy przebudowie zachowujemy ważne adresy albo ustalamy ich przekierowania.",
+      "Dalsze pozycjonowanie stron internetowych wymaga pracy nad treścią, techniką i wiarygodnością. Zakres SEO po uruchomieniu jest ustalany oddzielnie.",
+      "Widoczność w wyszukiwarce, wejście na stronę i nowe zapytanie to różne wyniki. Samo wdrożenie nie gwarantuje pozycji ani liczby klientów.",
+    ],
+    href: "/uslugi/pozycjonowanie/kielce",
+    link: "Poznaj zakres pozycjonowania dla firm z Kielc",
+  },
+  {
+    title: "Projektowanie i tworzenie stron internetowych – etapy realizacji",
+    text: "Współpracę prowadzimy online. Możesz przesłać materiały i zaakceptować projekt bez wizyty w biurze. Każdy etap ma ustalony zakres i osobę odpowiedzialną za akceptację. Termin wykonania zależy od funkcji, przygotowania treści i czasu potrzebnego na uwagi. Ustalamy go po briefie, aby plan publikacji odpowiadał Twoim możliwościom.",
+    points: [
+      "Brief i wycena. Omawiamy klientów, usługi, funkcje, budżet i termin. Wskazujemy materiały potrzebne do rozpoczęcia pracy.",
+      "Projektowanie graficzne. Układamy treść i nawigację, a następnie przedstawiamy widoki do akceptacji, zgodnie z wybranym wariantem oferty.",
+      "Programowanie i testy. Wdrażamy zaakceptowany projekt, sprawdzamy formularze, linki i działanie na różnych szerokościach ekranu.",
+      "Publikacja i przekazanie. Po akceptacji uruchamiamy witrynę i przekazujemy uzgodnione dostępy. Ustalamy, kto odpowiada za aktualizacje i kopie zapasowe.",
+    ],
+  },
+  {
+    title: "Jak sprawdzić, czy strona przynosi zapytania?",
+    text: "Już przy wycenie ustalamy, co jest celem strony internetowej. Może to być formularz zapytania, telefon, rezerwacja lub zakup. W uzgodnionym zakresie konfigurujemy analitykę i integrację z CRM. Test wysłania wiadomości powinien potwierdzić jej zapis i dotarcie do właściwego odbiorcy. Po publikacji warto porównać źródło zgłoszenia z jego jakością. Rozmowa o właściwej usłudze i zaakceptowana oferta mówią więcej o pozyskiwaniu klientów niż same kliknięcia.",
+  },
+  {
+    title: "Profesjonalne strony dla firm – jak wybrać agencję?",
+    text: "Jeżeli szukasz partnera w zakresie tworzenia stron internetowych, porównaj nie tylko wygląd portfolio. Zapytaj, co obejmuje wykonanie strony, kto zatwierdza projekt i co otrzymasz po publikacji. Profesjonalizm można ocenić po przejrzystym zakresie, zasadach rozliczeń i sposobie sprawdzania funkcji. Dobra oferta jest dopasowana do potrzeb klientów danej branży. Agencja powinna wyjaśnić, czy prosta wizytówka wystarczy, czy potrzebujesz kilku podstron i rozbudowanego formularza.",
+    points: [
+      "Oceń projekt graficzny strony na telefonie. Nowoczesne strony internetowe mają czytelną hierarchię, a ważne informacje są dostępne także bez uruchamiania animacji.",
+      "Zapytaj o dostosowanie formularza do Twojej usługi. Dla firmy remontowej przydatny będzie zakres prac, dla producenta liczba sztuk i wariant produktu.",
+      "Przy kompleksowym zleceniu ustal, co obejmują teksty, materiały wizualne, programowanie i wdrożenie. Możesz też powierzyć nam pojedynczy etap projektu strony WWW.",
+    ],
+  },
+  {
+    title: "Obsługa stron internetowych po publikacji",
+    text: "Realizacja strony internetowej kończy etap budowy, ale zawartość strony powinna odpowiadać bieżącej ofercie. Zmiana telefonu, sezonowy cennik czy nowe usługi wymagają aktualizacji. W ramach osobno uzgodnionej obsługi ustalamy, kto wprowadza treści, aktualizuje oprogramowanie i kontroluje kopie zapasowe. Dla Twojej strony internetowej określamy zakres wsparcia oraz sposób zgłaszania zmian. Utrzymanie witryny warto zaplanować przed odbiorem projektu.",
+  },
+  {
+    title: "Budowa strony czy sklep internetowy – od czego zacząć?",
+    text: "Gdy klient kupuje po rozmowie, strona dla firmy może prezentować realizacje i zbierać zapytania o termin. Jeśli zamawia powtarzalny produkt, sklep pozwoli pokazać cenę i przyjąć płatność online. Przed rozpoczęciem projektowania i tworzenia strony ustalamy te różnice. Profesjonalne tworzenie stron wymaga także decyzji, które funkcje uruchomić najpierw. Dzięki temu pierwsza wersja może odpowiadać na najważniejsze potrzeby, a dalszy rozwój ma osobny plan i koszt.",
+  },
+];
 
 const faqs = [
   {
-    question: "Ile czasu zajmuje stworzenie strony internetowej w Kielcach?",
-    answer: "Czas realizacji strony internetowej zależy od złożoności projektu. Typowa strona wizytówka zajmuje 2-3 tygodnie, a bardziej zaawansowana strona e-commerce wymaga 6-8 tygodni. Oferujemy elastyczne harmonogramy dostosowane do potrzeb Klienta."
+    question: "Co przesłać do wyceny strony internetowej w Kielcach?",
+    answer: "Podaj adres obecnej strony, jeśli ją masz, opis usług, potrzebne funkcje i oczekiwany termin. Napisz, czy dysponujesz tekstami, logo i zdjęciami. Możesz dodać przykład strony, której układ Ci odpowiada. Na tej podstawie doprecyzujemy zakres i przygotujemy wycenę.",
   },
   {
-    question: "Czy strona będzie responsywna na urządzeniach mobilnych?",
-    answer: "Tak, wszystkie strony internetowe tworzone przez naszą agencję są w pełni responsywne. Projektujemy mobile-first, co zapewnia doskonałe doświadczenie zarówno na smartfonach, tabletach jak i komputerach stacjonarnych."
+    question: "Czy macie biuro w Kielcach?",
+    answer: "Nie prowadzimy biura w Kielcach. Obsługujemy firmy z Kielc i województwa świętokrzyskiego zdalnie. Adres rejestrowy FOTZ Studio to Poznańska 117/11, 62-023 Kamionki. Jeśli projekt wymaga zdjęć lub spotkania na miejscu, termin i koszt dojazdu ustalamy osobno.",
   },
   {
-    question: "Jakie systemy CMS instalujecie do zarządzania stroną?",
-    answer: "Instalujemy popularne systemy CMS takie jak WordPress, umożliwiające łatwe zarządzanie treścią bez wiedzy technicznej. Możemy także zaproponować rozwiązania custom dostosowane do specificznych potrzeb biznesu."
+    question: "Czy mogę zlecić poprawę strony zamiast budowy nowej?",
+    answer: "Tak. Prześlij link i opisz, co nie działa lub co chcesz zmienić. Sprawdzimy możliwość poprawy obecnego serwisu oraz zakres potrzebnych dostępów. Rekomendację i koszt przedstawimy po rozpoznaniu problemu.",
   },
   {
-    question: "Jak wygląda proces realizacji strony internetowej?",
-    answer: "Proces obejmuje: konsultację i zbieranie wymagań, projektowanie makiet, programowanie frontend i backend, testowanie, optymalizację SEO, oraz szkolenie. Każdy etap jest uzgadniany z Klientem."
+    question: "Czy teksty, hosting i opieka są w cenie strony?",
+    answer: "W pakiecie WWW START materiały dostarcza klient, a domena i hosting są płatne osobno. Przy większym projekcie rozpisujemy odpowiedzialność za teksty, zdjęcia, utrzymanie i licencje. Wsparcie techniczne, aktualizacje oraz dalszy rozwój wymagają uzgodnionego zakresu.",
   },
   {
-    question: "Czy oferujecie wsparcie po uruchomieniu strony?",
-    answer: "Tak, oferujemy pakiety wsparcia obejmujące hosting, bezpieczeństwo, backup, aktualizacje i monitoring. Możemy także prowadzić bieżące modyfikacje i rozwijanie nowych funkcji."
-  }
+    question: "Czy strona będzie gotowa do kampanii reklamowej?",
+    answer: "Możemy przygotować stronę docelową, formularz i pomiar kontaktów pod planowaną kampanię. Potrzebujemy informacji o promowanej usłudze i odbiorcach. Obsługa reklam, produkcja materiałów i budżet emisji mają osobną wycenę. Konfigurację analityki uzgadniamy z uwzględnieniem zgód użytkowników.",
+  },
 ];
 
 export default function StronyInternetoweKielce() {
-  return (
-    <Layout>
-      <SEOHead
-        title="Strony Internetowe Kielce | Projektowanie Stron WWW"
-        description="Nowoczesne strony internetowe dla firm w Kielcach. Projektowanie, programowanie i optymalizacja stron WWW. Sprawdzone rozwiązania dla biznesu."
-        canonical="https://www.fotz-studio.pl/strony-internetowe/kielce"
-        keywords="strony internetowe kielce, tworzenie stron internetowych kielce, strony www kielce, projektowanie stron kielce, agencja webdesign kielce, sklep internetowy kielce"
-      />
-
-      <ServiceSchema
-        name="Projektowanie Stron Internetowych w Kielcach"
-        description="Profesjonalne projektowanie i programowanie stron internetowych dla firm w Kielcach. Responsywne, szybkie i optymalizowane pod SEO rozwiązania webowe."
-        areaServed="Kielce"
-      />
-
-      <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
-          { name: "Strony internetowe", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe" },
-          { name: "Kielce", url: "https://www.fotz-studio.pl/strony-internetowe/kielce" }
-        ]}/>
-
-      <FAQSchema items={faqs} />
-
-      {/* Hero Section */}
-      <section className="bg-gradient-to-b from-blue-950 to-blue-900 text-white py-20 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Strony Internetowe Kielce
-          </h1>
-          <p className="text-xl text-blue-100 mb-8">
-                        Strony internetowe Kielce — tworzenie stron www i sklepy internetowe dla firm ze Świętokrzyskiego. Tworzenie stron internetowych Kielce z nowoczesnym designem, SEO i responsywnym kodem. Projektowanie stron www Kielce. Wycena indywidualna.
-          </p>
-          <Button asChild size="lg" className="bg-blue-400 hover:bg-blue-500 text-blue-950">
-            <Link to="/kontakt">
-              Bezpłatna Konsultacja
-            </Link>
-          </Button>
-        </div>
-      </section>
-
-      {/* Why Choose Us */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">Dlaczego Warto Nas Wybrać</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow">
-              <Code className="w-12 h-12 text-blue-400 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Nowoczesny Kod</h3>
-              <p className="text-gray-600">Używamy najnowszych technologii i frameworków. Każdy projekt to solidna, skalna baza dla przyszłego rozwoju.</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow">
-              <Smartphone className="w-12 h-12 text-blue-400 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Responsywność</h3>
-              <p className="text-gray-600">Strony działają perfekcyjnie na wszystkich urządzeniach. Od smartfonów po duże monitory - zawsze optymalne wyświetlanie.</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow">
-              <TrendingUp className="w-12 h-12 text-blue-400 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">SEO Optimization</h3>
-              <p className="text-gray-600">Optymalizujemy każdą stronę pod wyszukiwarki. Wysoka pozycja w Google to bezpośrednie korzyści biznesowe.</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow">
-              <Users className="w-12 h-12 text-blue-400 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Wsparcie</h3>
-              <p className="text-gray-600">Zapewniamy stałe wsparcie techniczne, aktualizacje bezpieczeństwa i rozwój funkcjonalności.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Services Grid */}
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">Nasze Usługi</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <Monitor className="w-16 h-16 text-blue-400 mx-auto mb-4" />
-              <h3 className="text-lg font-semibold mb-2">Projektowanie UX/UI</h3>
-              <p className="text-gray-600">Piękne, funkcjonalne interfejsy zorientowane na użytkownika.</p>
-            </div>
-            <div className="text-center">
-              <Globe className="w-16 h-16 text-blue-400 mx-auto mb-4" />
-              <h3 className="text-lg font-semibold mb-2">E-commerce</h3>
-              <p className="text-gray-600">Sklepy internetowe z integracją płatności i systemu logistycznego.</p>
-            </div>
-            <div className="text-center">
-              <Zap className="w-16 h-16 text-blue-400 mx-auto mb-4" />
-              <h3 className="text-lg font-semibold mb-2">Optymalizacja</h3>
-              <p className="text-gray-600">Szybkie ładowanie, SEO i konwersja to nasze priorytety.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Process */}
-      <section className="py-16 px-4 bg-gray-900 text-white">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">Proces Realizacji</h2>
-          <div className="grid md:grid-cols-4 gap-6">
-            <div className="text-center">
-              <div className="bg-blue-400 text-blue-900 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 font-bold text-lg">1</div>
-              <h3 className="font-semibold mb-2">Konsultacja</h3>
-              <p className="text-gray-300 text-sm">Poznajemy Twój biznes i cele projektu.</p>
-            </div>
-            <div className="text-center">
-              <div className="bg-blue-400 text-blue-900 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 font-bold text-lg">2</div>
-              <h3 className="font-semibold mb-2">Projektowanie</h3>
-              <p className="text-gray-300 text-sm">Tworzymy makiety i szukamy optymalnego rozwiązania.</p>
-            </div>
-            <div className="text-center">
-              <div className="bg-blue-400 text-blue-900 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 font-bold text-lg">3</div>
-              <h3 className="font-semibold mb-2">Programowanie</h3>
-              <p className="text-gray-300 text-sm">Implementujemy wszystkie funkcje i optymalizacje.</p>
-            </div>
-            <div className="text-center">
-              <div className="bg-blue-400 text-blue-900 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 font-bold text-lg">4</div>
-              <h3 className="font-semibold mb-2">Wdrożenie</h3>
-              <p className="text-gray-300 text-sm">Uruchamiamy stronę i zapewniamy wsparcie.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* About Kielce */}
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8">Strony Internetowe dla Firm w Kielcach</h2>
-          <p className="text-gray-700 mb-6">
-            Kielce, będące dynamicznie rozwijającym się ośrodkiem gospodarczym, przyciąga przedsiębiorców z różnych branż. W dzisiejszych czasach posiadanie profesjonalnej strony internetowej to konieczność dla każdej firmy, niezależnie od jej wielkości. Nowoczesna strona to wizytówka Twojego biznesu w internecie, pierwszy punkt kontaktu z potencjalnymi klientami.
-          </p>
-          <p className="text-gray-700 mb-6">
-            Projektowanie stron internetowych wymaga nie tylko pięknego wyglądu, ale przede wszystkim funkcjonalności i opanowania zaawansowanych technologii. Strona musi być zoptymalizowana pod kątem wyszukiwarek, aby Twoja firma znalazła się na czołowych pozycjach w wynikach Google. To bezpośrednio przekłada się na nowych klientów i wzrost przychodów.
-          </p>
-          <p className="text-gray-700 mb-6">
-            Nasza agencja specjalizuje się w tworzeniu niestandardowych rozwiązań dostosowanych do specificznych potrzeb firm w Kielcach. Niezależnie od tego, czy prowadzisz małą pracownię, sieć sklepów, czy dużą fabrykę - mamy doświadczenie w każdej branży. Handlowcy, usługodawcy, producenci, edukatorzy - wszyscy mogą liczyć na nasze profesjonalne podejście.
-          </p>
-          <h3 className="text-2xl font-bold mb-4">Typy Stron Internetowych</h3>
-          <p className="text-gray-700 mb-4">
-            <strong>Strona wizytówka</strong> - najprostsza i najszybsza do wdrożenia, idealna dla małych firm i specjalistów. Zawiera podstawowe informacje o firmie, usługach, galerii oraz formularz kontaktowy.
-          </p>
-          <p className="text-gray-700 mb-4">
-            <strong>Portal informacyjny</strong> - rozbudowana strona z regularnie aktualizowaną zawartością, artykułami, newslorem i zaawansowanymi funkcjami wyszukiwania. Idealna dla mediów, agencji i firm chcących budować autorytet.
-          </p>
-          <p className="text-gray-700 mb-4">
-            <strong>Sklep elektroniczny</strong> - zaawansowana platforma e-commerce z katalogiem produktów, koszykiem, systemem płatności, logistyką i zarządzaniem zapasami. Pozwala na sprzedaż online i ekspansję biznesu na rynek globalny.
-          </p>
-          <p className="text-gray-700 mb-6">
-            <strong>Aplikacja webowa</strong> - złożone oprogramowanie działające w przeglądarce, umożliwiające zarządzanie procesami biznesowymi, CRM, ERP czy systemy do rezerwacji.
-          </p>
-          <h3 className="text-2xl font-bold mb-4">Responsywność i Mobile-First</h3>
-          <p className="text-gray-700 mb-6">
-            Statystyki pokazują, że ponad 70% użytkowników internetu korzysta z urządzeń mobilnych. Dlatego każda nowoczesna strona musi być w pełni responsywna - idealnie dopasowana do telefonów, tabletów i komputerów. Projektujemy metodą mobile-first, co oznacza, że zaczynamy od wersji na telefon, a następnie rozszerzamy do większych ekranów. Gwarantuje to doskonałe doświadczenie niezależnie od urządzenia.
-          </p>
-          <h3 className="text-2xl font-bold mb-4">Systemy CMS i Zarządzanie Treścią</h3>
-          <p className="text-gray-700 mb-6">
-            Większość projektów wyposażamy w systemy CMS (Content Management System) takie jak WordPress, które pozwalają na łatwe zarządzanie treścią bez potrzeby wiedzy technicznej. Możesz sam zmieniać teksty, dodawać artykuły, galerie, czy publikować promocje. Systemy te wyposażone są także w zaawansowane funkcje SEO i analityki.
-          </p>
-          <h3 className="text-2xl font-bold mb-4">Optymalizacja SEO</h3>
-          <p className="text-gray-700 mb-6">
-            Stworzenie strony to dopiero początek. Aby przyciągnąć użytkowników z wyszukiwarek, konieczna jest optymalizacja SEO. Optymalizujemy strukturę stron, metadane, treści, linkowanie wewnętrzne oraz szybkość ładowania. Prowadzimy także kampanie linkowe i marketingowe, aby zwiększyć widoczność Twojej firmy w sieci.
-          </p>
-          <h3 className="text-2xl font-bold mb-4">Cennik i Harmonogram</h3>
-          <p className="text-gray-700 mb-6">
-            Ceny projektów zaczynają się od kilku tysięcy złotych dla prostych stron wizytówek, aż do dziesiątek tysięcy dla zaawansowanych rozwiązań e-commerce czy aplikacji webowych. Harmonogram realizacji wynosi typowo od 2 do 8 tygodni, w zależności od skomplikowania projektu. Oferujemy elastyczne warunki płatności i możliwość pracy w etapach.
-          </p>
-        </div>
-      </section>
-
-      {/* Pricing */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">Pakiety Cenowe</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow border-t-4 border-blue-400">
-              <h3 className="text-2xl font-bold mb-2">Wizytówka</h3>
-              <p className="text-gray-600 mb-6">Idealna dla małych firm i specjalistów</p>
-              <div className="text-3xl font-bold text-blue-400 mb-6">Wycena indywidualna</div>
-              <ul className="space-y-3 text-gray-700 mb-8">
-                <li>5-7 stron</li>
-                <li>Responsywny design</li>
-                <li>Formularz kontaktowy</li>
-                <li>Podstawowe SEO</li>
-                <li>Hosting na 1 rok</li>
-              </ul>
-              <Button asChild className="w-full bg-blue-400 hover:bg-blue-500 text-blue-950"><a href="/kontakt">Wybrać</a></Button>
-            </div>
-            <div className="bg-white p-8 rounded-lg shadow border-t-4 border-blue-400 transform scale-105">
-              <div className="bg-blue-400 text-blue-950 inline-block px-3 py-1 rounded-full text-sm font-semibold mb-4">Popularny</div>
-              <h3 className="text-2xl font-bold mb-2">Biznes</h3>
-              <p className="text-gray-600 mb-6">Dla rozwijających się firm</p>
-              <div className="text-3xl font-bold text-blue-400 mb-6">Wycena indywidualna</div>
-              <ul className="space-y-3 text-gray-700 mb-8">
-                <li>10-15 stron</li>
-                <li>Zaawansowany design</li>
-                <li>Blog i artykuły</li>
-                <li>SEO optimization</li>
-                <li>Analytics setup</li>
-                <li>Hosting na 1 rok</li>
-              </ul>
-              <Button asChild className="w-full bg-blue-400 hover:bg-blue-500 text-blue-950"><a href="/kontakt">Wybrać</a></Button>
-            </div>
-            <div className="bg-white p-8 rounded-lg shadow border-t-4 border-blue-400">
-              <h3 className="text-2xl font-bold mb-2">E-commerce</h3>
-              <p className="text-gray-600 mb-6">Dla sklepów internetowych</p>
-              <div className="text-3xl font-bold text-blue-400 mb-6">Wycena indywidualna</div>
-              <ul className="space-y-3 text-gray-700 mb-8">
-                <li>Nieograniczone produkty</li>
-                <li>System płatności</li>
-                <li>Zarządzanie zapasami</li>
-                <li>SEO+Marketing</li>
-                <li>Wsparcie tech.</li>
-                <li>Hosting na 1 rok</li>
-              </ul>
-              <Button asChild className="w-full bg-blue-400 hover:bg-blue-500 text-blue-950"><a href="/kontakt">Wybrać</a></Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">Najczęstsze Pytania</h2>
-          <Accordion>
-            {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`}>
-                <AccordionTrigger>{faq.question}</AccordionTrigger>
-                <AccordionContent>{faq.answer}</AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
-        </div>
-      </section>
-
-      {/* Contact */}
-
-      {/* Link nawigacyjny */}
-      <section className="py-8 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <Link to="/uslugi/strony-internetowe" className="text-blue-600 hover:text-blue-800 font-medium">
-            ← Strony internetowe — wszystkie miasta
-          </Link>
-        </div>
-      </section>
-      <ContactSection />
-    </Layout>
-  );
+  return <>
+    <SEOHead
+      title="Strony internetowe Kielce – tworzenie stron WWW | FOTZ"
+      description="Projektujemy strony internetowe dla firm z Kielc. Strona WWW, sklep internetowy i przebudowa. Poznaj ceny, realizacje i obsługę online. Zapytaj o wycenę."
+      canonical="https://www.fotz-studio.pl/strony-internetowe/kielce"
+    />
+    <ServiceEditorial
+      path="/strony-internetowe/kielce"
+      area="Kielce"
+      title="Strony internetowe Kielce – projektowanie stron WWW"
+      eyebrow="FOTZ Studio · projektowanie stron WWW · współpraca online"
+      lead="Pokaż klientowi swoją ofertę, realizacje i prostą drogę do kontaktu. Tworzymy strony internetowe dla firm z Kielc, przebudowujemy istniejące serwisy i wdrażamy sklepy. Opisz, jakie zapytania chcesz pozyskiwać, a dobierzemy zakres projektu do Twojego biznesu."
+      priceNote="WWW START · 1 490 zł netto za One Page do 5 sekcji na szablonie FOTZ. Materiały klienta i jedna runda poprawek. Domena i hosting osobno."
+      contactLabel="Zapytaj o wycenę strony"
+      contactDescription="Napisz, co oferujesz, jakie funkcje są potrzebne i kiedy planujesz start. Jeśli masz już stronę, dołącz jej adres. Ustalimy zakres, cenę i następny krok."
+      enquiryVariant="website"
+      summary={[
+        "Porównaj nową stronę, przebudowę i sklep internetowy.",
+        "Sprawdź warunki WWW START i sposób wyceny większych projektów.",
+        "Obejrzyj rzeczywiste realizacje FOTZ i wyślij opis swojego projektu.",
+      ]}
+      scopeTitle="Tworzenie stron internetowych w Kielcach – co chcesz zlecić?"
+      scope={scope}
+      sections={sections}
+      faqs={faqs}
+      faqTitle="Pytania o projektowanie stron WWW dla firm z Kielc"
+      workAfterScope
+      galleryExcludeHero
+    />
+  </>;
 }
