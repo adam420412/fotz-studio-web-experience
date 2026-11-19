@@ -1,0 +1,101 @@
+{
+  "registerId": "FOTZ-F1617B2E",
+  "url": "https://www.fotz-studio.pl/agencja-graficzna",
+  "searchConsole": {
+    "property": "sc-domain:fotz-studio.pl",
+    "from": "2026-10-20",
+    "to": "2026-11-16",
+    "page": {
+      "page": "https://www.fotz-studio.pl/agencja-graficzna",
+      "impressions": 42,
+      "clicks": 0,
+      "position": 17.2381
+    },
+    "queries": [
+      {
+        "page": "https://www.fotz-studio.pl/agencja-graficzna",
+        "query": "agencja graficzna",
+        "clicks": 0,
+        "position": 19,
+        "impressions": 13
+      },
+      {
+        "page": "https://www.fotz-studio.pl/agencja-graficzna",
+        "query": "agencja graficzna poznań",
+        "clicks": 0,
+        "position": 18.1579,
+        "impressions": 19
+      },
+      {
+        "page": "https://www.fotz-studio.pl/agencja-graficzna",
+        "query": "studio graficzne poznań",
+        "clicks": 0,
+        "position": 10.75,
+        "impressions": 4
+      }
+    ]
+  },
+  "neuron": {
+    "query": "221cf1ef0119b936",
+    "keyword": "agencja graficzna Poznań",
+    "publicBefore": 62,
+    "draft": 96,
+    "publicAfter": 96,
+    "imported": 96,
+    "preview": 96,
+    "done": true,
+    "checkedAt": "2026-11-19T11:58:07.744Z",
+    "container": "main-content"
+  },
+  "release": {
+    "pr": "https://github.com/adam420412/fotz-studio-web-experience/pull/240",
+    "commit": "bb7ffea7870b1089737b8a105f750c1594fd74b5",
+    "deployment": "dpl_5pWd2E9WFMdYdvddgt7CgKUrx6dr",
+    "target": "production",
+    "state": "READY",
+    "aliases": [
+      "www.fotz-studio.pl",
+      "fotz-studio.pl"
+    ],
+    "checkedAt": "2026-11-19T11:58:07.744Z",
+    "productionEnquiry": "Przejście z pakietu pojedynczego potwierdziło na produkcji wybór Projektowanie graficzne oraz zakres Pojedynczy projekt graficzny."
+  },
+  "claudeReview": {
+    "model": "claude-opus-4-6[1m]",
+    "verdict": "Akceptuję wdrożenie.",
+    "checkedInputSha256": "eb440b10b61660a506591c69e487b1312c062fa890dc19fc05d77506321373e5",
+    "changes": "Rozdzielono próg pojedynczego materiału i podstawowej identyfikacji wizualnej oraz opisano sposób uzgodnienia poprawek w pakiecie Business."
+  },
+  "checks": {
+    "ci": [
+      {
+        "bucket": "pass",
+        "name": "Vercel Preview Comments"
+      },
+      {
+        "bucket": "pass",
+        "name": "seo"
+      },
+      {
+        "bucket": "pass",
+        "name": "typecheck"
+      },
+      {
+        "bucket": "pass",
+        "name": "Vercel – adam420412-fotz-studio-web-experience"
+      },
+      {
+        "bucket": "pass",
+        "name": "Vercel – fotz-studio-web-experience"
+      }
+    ],
+    "localTestsPassed": 360,
+    "production": [
+      "Local canonical, one H1, seven FAQs and matching FAQ schema, case studies, price conditions and package links verified.",
+      "Production HTTP 200. Canonical, title, description and full main text match local build.",
+      "Main text SHA-256 27c6c727876998ab51a03a728980141cbfad44da0b922f12c3f4c753bc99b301"
+    ],
+    "mobile": "Przy szerokości 390 px brak poziomego przewijania. Kotwica cennika i pakiet Start działały.",
+    "gallery": "Otworzono FPS klawiaturą, zmieniono na Friendly Gas i zamknięto przez Escape. Fokus wrócił na przycisk początkowy."
+  }
+}
