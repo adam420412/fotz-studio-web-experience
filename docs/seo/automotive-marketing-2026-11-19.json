@@ -1,0 +1,198 @@
+{
+  "date": "2026-11-19",
+  "page": "https://www.fotz-studio.pl/dla-kogo/automotive",
+  "registerId": "FOTZ-15DB1BD6",
+  "owner": "Codex / FOTZ-Automotive-20261119",
+  "gsc": {
+    "property": "sc-domain:fotz-studio.pl",
+    "period": [
+      "2026-10-20",
+      "2026-11-16"
+    ],
+    "impressions": 54,
+    "clicks": 0,
+    "averagePosition": 27.5185,
+    "queries": [
+      {
+        "query": "kampanie ads dla motoryzacji",
+        "impressions": 8,
+        "clicks": 0,
+        "position": 34.375
+      },
+      {
+        "query": "kampanie reklamowe dla motoryzacji",
+        "impressions": 2,
+        "clicks": 0,
+        "position": 23.5
+      },
+      {
+        "query": "marketing dla blacharstwa samochodowego",
+        "impressions": 1,
+        "clicks": 0,
+        "position": 80
+      },
+      {
+        "query": "marketing dla branży technicznej",
+        "impressions": 1,
+        "clicks": 0,
+        "position": 99
+      },
+      {
+        "query": "marketing dla dealera samochodowego",
+        "impressions": 5,
+        "clicks": 0,
+        "position": 31
+      },
+      {
+        "query": "marketing motoryzacyjny",
+        "impressions": 4,
+        "clicks": 0,
+        "position": 36
+      },
+      {
+        "query": "marketing salonu samochodowego",
+        "impressions": 1,
+        "clicks": 0,
+        "position": 59
+      },
+      {
+        "query": "marketing serwisu klimatyzacji samochodowej",
+        "impressions": 1,
+        "clicks": 0,
+        "position": 85
+      },
+      {
+        "query": "marketing w branży motoryzacyjnej",
+        "impressions": 12,
+        "clicks": 0,
+        "position": 14.25
+      },
+      {
+        "query": "reklama sklepu motoryzacyjnego",
+        "impressions": 1,
+        "clicks": 0,
+        "position": 30
+      },
+      {
+        "query": "strony internetowe dla branży automotive",
+        "impressions": 1,
+        "clicks": 0,
+        "position": 6
+      },
+      {
+        "query": "strony www dla salonów samochodowych",
+        "impressions": 1,
+        "clicks": 0,
+        "position": 1
+      },
+      {
+        "query": "tworzenie stron www dla branży motoryzacyjnej",
+        "impressions": 2,
+        "clicks": 0,
+        "position": 91.5
+      }
+    ]
+  },
+  "neuron": {
+    "query": "645804ace9586d2a",
+    "keyword": "marketing w branży motoryzacyjnej",
+    "scope": "main-content",
+    "publicBefore": 42,
+    "draft": 96,
+    "publicAfter": 96,
+    "imported": 96,
+    "done": true
+  },
+  "release": {
+    "pr": "https://github.com/adam420412/fotz-studio-web-experience/pull/233",
+    "commit": "8ff50f0f4c3165a5203a75b577024cf5ebb4d345",
+    "state": "READY",
+    "deployment": "dpl_7ezeQu2mXJdddvv2LX9AEBNk6GaX",
+    "aliases": [
+      "www.fotz-studio.pl",
+      "fotz-studio-web-experience.vercel.app",
+      "fotz-studio.pl",
+      "fotz-studio-web-experience-fotz-studios-projects.vercel.app",
+      "fotz-studio-web-experience-git-main-fotz-studios-projects.vercel.app"
+    ],
+    "checkedAt": "2026-11-19 10:41:28 UTC"
+  },
+  "claudeReview": {
+    "model": "claude-opus-4-6[1m]",
+    "verdict": "Werdykt: brak blokad publikacji",
+    "resolved": "Doprecyzowano co zawiera wycena i jak pokazuje VAT, sytuację w FAQ dotyczącą fotografii aut w salonie oraz opis kosztów reklamy. Dodano nazwę bloku informacyjnego dla czytników ekranu.",
+    "inputSha256": "faf95db03188171a19d1e51e9d48aaf1454a8c03fe3585f51054d8ff369b6062"
+  },
+  "verification": {
+    "localTests": 360,
+    "renderedRoutes": 1059,
+    "publicHTML": [
+      "HTTP 200. Canonical, title, description, one H1, five visible FAQ items, pricing, automotive forms, portfolio links and videos verified. Built and public main text match.",
+      "d7905b7ff3da6fd6c7faae090f096036daaf7fb801b5750ee1e77dd881e66d34",
+      "5 FAQ pairs matched rendered disclosure elements and JSON-LD."
+    ],
+    "publicAssetsAndServiceLinks": [
+      "200 text/html /performance-marketing/google-ads",
+      "200 text/html /realizacje/sookar",
+      "200 text/html /realizacje/victory-cars",
+      "200 text/html /social-media/obsluga",
+      "200 text/html /uslugi/fotografia",
+      "200 text/html /uslugi/produkcja-video",
+      "206 video/mp4 /videos/cupra-enea.mp4",
+      "206 video/mp4 /videos/instagram/cupra-raval.mp4",
+      "200 text/html /wizualizacje-3d",
+      "206 video/mp4 /work/industries/krypton-produkt.mp4",
+      "206 image/webp /work/services/krypton-fotografia-1280.webp",
+      "206 image/webp /work/services/krypton-fotografia-480.webp"
+    ],
+    "browser": {
+      "beforeDeploy": {
+        "desktopViewportAndContent": [
+          1272,
+          1272
+        ],
+        "mobileViewport": 375,
+        "mobileContentWidth": 367,
+        "horizontalOverflow": false,
+        "priceAnchorFocused": "wycena",
+        "reel": {
+          "title": "CUPRA Raval × Enea Stadion",
+          "localPlayerPlaying": true
+        },
+        "contactFormIndustry": "Motoryzacja",
+        "contactFormSelections": [
+          "Marketing i kampanie reklamowe / Reklamy i obsługa zapytań",
+          "Strona internetowa lub sklep / Nowa strona",
+          "Film, rolki lub zdjęcia / Produkcja materiałów"
+        ]
+      },
+      "production": {
+        "title": "Marketing w branży motoryzacyjnej – kampanie i SEO | FOTZ",
+        "heroPhoto": "Krypton.tools",
+        "verifiedResponse": 200
+      }
+    },
+    "ci": [
+      {
+        "bucket": "pass",
+        "name": "Vercel Preview Comments"
+      },
+      {
+        "bucket": "pass",
+        "name": "typecheck"
+      },
+      {
+        "bucket": "pass",
+        "name": "seo"
+      },
+      {
+        "bucket": "pass",
+        "name": "Vercel – adam420412-fotz-studio-web-experience"
+      },
+      {
+        "bucket": "pass",
+        "name": "Vercel – fotz-studio-web-experience"
+      }
+    ]
+  }
+}
