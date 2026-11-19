@@ -1,0 +1,151 @@
+{
+  "date": "2026-11-19",
+  "page": "https://www.fotz-studio.pl/agencja-marketingowa/zabrze",
+  "registerId": "FOTZ-257AAA54",
+  "owner": "Codex / FOTZ-Zabrze-20261119",
+  "gsc": {
+    "property": "sc-domain:fotz-studio.pl",
+    "period": [
+      "2026-10-20",
+      "2026-11-16"
+    ],
+    "impressions": 75,
+    "clicks": 0,
+    "averagePosition": 9.7467,
+    "queries": [
+      {
+        "query": "agencja marketingowa zabrze",
+        "impressions": 11,
+        "clicks": 0,
+        "position": 9.2727
+      },
+      {
+        "query": "agencja typo3 zabrze",
+        "impressions": 5,
+        "clicks": 0,
+        "position": 10.6
+      },
+      {
+        "query": "agencje reklamowe zabrze",
+        "impressions": 1,
+        "clicks": 0,
+        "position": 29
+      },
+      {
+        "query": "fotografia biznesowa zabrze",
+        "impressions": 2,
+        "clicks": 0,
+        "position": 9
+      },
+      {
+        "query": "pozycjonowanie w zabrzu",
+        "impressions": 6,
+        "clicks": 0,
+        "position": 2
+      },
+      {
+        "query": "pozycjonowanie wizytówek zabrze",
+        "impressions": 3,
+        "clicks": 0,
+        "position": 11.3333
+      },
+      {
+        "query": "pozycjonowanie zabrze",
+        "impressions": 40,
+        "clicks": 0,
+        "position": 10.15
+      },
+      {
+        "query": "prowadzenie social media zabrze",
+        "impressions": 2,
+        "clicks": 0,
+        "position": 19
+      },
+      {
+        "query": "usługi seo zabrze",
+        "impressions": 3,
+        "clicks": 0,
+        "position": 7.6667
+      }
+    ]
+  },
+  "neuron": {
+    "query": "c0e3f921cb4b4a9c",
+    "keyword": "agencja marketingowa Zabrze",
+    "scope": "main-content",
+    "publicBefore": 61,
+    "draft": 95,
+    "publicAfter": 95,
+    "imported": 95,
+    "done": true
+  },
+  "release": {
+    "pr": "https://github.com/adam420412/fotz-studio-web-experience/pull/230",
+    "commit": "3fe04ce867d27512b5a69780248dd30e127408b5",
+    "state": "READY",
+    "deployment": "dpl_4Uh5qYZBUJT4ozCibn16ejbsZ8y1",
+    "aliases": [
+      "www.fotz-studio.pl",
+      "fotz-studio-web-experience.vercel.app",
+      "fotz-studio.pl",
+      "fotz-studio-web-experience-fotz-studios-projects.vercel.app",
+      "fotz-studio-web-experience-git-main-fotz-studios-projects.vercel.app"
+    ],
+    "checkedAt": "2026-11-19 10:12:22 UTC"
+  },
+  "claudeReview": {
+    "model": "claude-opus-4-6[1m]",
+    "resolved": "Rozdzielono projektowanie na potrzeby zmiany adresu od znakowania próbek na targi. Recenzent sprawdził cennik, realizacje i formularze. Końcowy werdykt: brak blokad.",
+    "inputSha256": "045b60e3cfcf55cd0b9ef324926130a8aa3f1178a7415790d534e1131e32cada"
+  },
+  "verification": {
+    "localTests": 360,
+    "renderedRoutes": 1059,
+    "publicHTML": [
+      "HTTP 200. Canonical, title, description, one H1, five visible FAQ items, three prices, marketing and photography links and both case studies verified. Built and public main text match.",
+      "37687d1df9683d67f34dc9eb5d75f92a3cc1296adb9ea9885fabca61a1e6f3ce",
+      "5 FAQ pairs matched rendered disclosure elements and JSON-LD."
+    ],
+    "browser": {
+      "beforeDeploy": {
+        "desktopContentWidth": 1272,
+        "mobileViewport": 375,
+        "mobileContentWidth": 367,
+        "horizontalOverflow": false,
+        "scopeLink": "#zakres",
+        "formSelections": [
+          "Marketing i kampanie reklamowe",
+          "Film, rolki lub zdjęcia / Sesja fotograficzna"
+        ]
+      },
+      "production": {
+        "portfolio": "FPS Poznań",
+        "primaryLink": "Zapytaj o wycenę marketingu",
+        "photoLink": "Omów zdjęcia do oferty",
+        "verifiedResponse": 200
+      }
+    },
+    "ci": [
+      {
+        "bucket": "pass",
+        "name": "Vercel Preview Comments"
+      },
+      {
+        "bucket": "pass",
+        "name": "seo"
+      },
+      {
+        "bucket": "pass",
+        "name": "typecheck"
+      },
+      {
+        "bucket": "pass",
+        "name": "Vercel – adam420412-fotz-studio-web-experience"
+      },
+      {
+        "bucket": "pass",
+        "name": "Vercel – fotz-studio-web-experience"
+      }
+    ]
+  }
+}
