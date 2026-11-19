@@ -1,0 +1,208 @@
+{
+  "date": "2026-11-19",
+  "page": "https://www.fotz-studio.pl/performance-marketing/facebook-ads",
+  "registerId": "FOTZ-CB048952",
+  "owner": "Codex / FOTZ-FacebookAds-20261119",
+  "gsc": {
+    "property": "sc-domain:fotz-studio.pl",
+    "period": [
+      "2026-10-20",
+      "2026-11-16"
+    ],
+    "impressions": 170,
+    "clicks": 0,
+    "averagePosition": 63.5118,
+    "queries": [
+      {
+        "query": "ads facebook",
+        "impressions": 4,
+        "clicks": 0,
+        "position": 41
+      },
+      {
+        "query": "agencja facebook ads",
+        "impressions": 4,
+        "clicks": 0,
+        "position": 65
+      },
+      {
+        "query": "agencja meta ads",
+        "impressions": 1,
+        "clicks": 0,
+        "position": 72
+      },
+      {
+        "query": "facebook ads",
+        "impressions": 117,
+        "clicks": 0,
+        "position": 64.5641
+      },
+      {
+        "query": "facebook ads dla firm usługowych",
+        "impressions": 2,
+        "clicks": 0,
+        "position": 13.5
+      },
+      {
+        "query": "facebook ads łódź",
+        "impressions": 1,
+        "clicks": 0,
+        "position": 9
+      },
+      {
+        "query": "fb ads",
+        "impressions": 3,
+        "clicks": 0,
+        "position": 81.3333
+      },
+      {
+        "query": "kampania facebook ads",
+        "impressions": 4,
+        "clicks": 0,
+        "position": 76.25
+      },
+      {
+        "query": "kampania reklamowa facebook",
+        "impressions": 3,
+        "clicks": 0,
+        "position": 75.6667
+      },
+      {
+        "query": "kampanie facebook",
+        "impressions": 7,
+        "clicks": 0,
+        "position": 68.8571
+      },
+      {
+        "query": "kampanie facebook ads",
+        "impressions": 4,
+        "clicks": 0,
+        "position": 81
+      },
+      {
+        "query": "kampanie facebook ads poznań",
+        "impressions": 1,
+        "clicks": 0,
+        "position": 29
+      },
+      {
+        "query": "kampanie reklamowe facebook",
+        "impressions": 1,
+        "clicks": 0,
+        "position": 85
+      },
+      {
+        "query": "kampanie reklamowe na fb",
+        "impressions": 1,
+        "clicks": 0,
+        "position": 28
+      },
+      {
+        "query": "meta ads dla producenta",
+        "impressions": 4,
+        "clicks": 0,
+        "position": 13
+      },
+      {
+        "query": "oferta facebook ads",
+        "impressions": 5,
+        "clicks": 0,
+        "position": 92.4
+      },
+      {
+        "query": "reklama facebook ads",
+        "impressions": 1,
+        "clicks": 0,
+        "position": 90
+      },
+      {
+        "query": "reklamy facebooka agencja",
+        "impressions": 1,
+        "clicks": 0,
+        "position": 80
+      }
+    ]
+  },
+  "neuron": {
+    "query": "a04a8784037293da",
+    "keyword": "kampanie facebook ads",
+    "scope": "main-content",
+    "publicBefore": 65,
+    "draft": 95,
+    "publicAfter": 95,
+    "imported": 95,
+    "done": true
+  },
+  "release": {
+    "pr": "https://github.com/adam420412/fotz-studio-web-experience/pull/227",
+    "commit": "02b01e5414e5fdcda19e072d4f1505af142842ce",
+    "state": "READY",
+    "deployment": "dpl_F1jtCjBqBgMsU7GAXRWVoSZf2pqi",
+    "aliases": [
+      "www.fotz-studio.pl",
+      "fotz-studio-web-experience.vercel.app",
+      "fotz-studio.pl",
+      "fotz-studio-web-experience-fotz-studios-projects.vercel.app",
+      "fotz-studio-web-experience-git-main-fotz-studios-projects.vercel.app"
+    ],
+    "checkedAt": "2026-11-19 09:49:07 UTC"
+  },
+  "claudeReview": {
+    "model": "claude-opus-4-6[1m]",
+    "resolved": "Doprecyzowano, że ceny obsługi są netto, a kwota brutto jest potwierdzana przed zleceniem. Claude zamknął uwagę w ponownej recenzji.",
+    "inputSha256": "40e8ccec6d0abac4509b9dc6b002b11b7b6b5bda7da461b423c0041eb641a43c"
+  },
+  "verification": {
+    "localTests": 360,
+    "renderedRoutes": 1059,
+    "publicHTML": [
+      "HTTP 200, canonical, one H1, local and public main text match; video, anchor and CTA present.",
+      "6a39d05fbcd62b27b49b3009c9f857c1bbf21e6ba2aeb4d87cadd7f82cf7e328",
+      "7 FAQ pairs matched rendered disclosure elements and JSON-LD."
+    ],
+    "browser": {
+      "preview": {
+        "desktopContentWidth": 1272,
+        "mobileViewport": 375,
+        "mobileContentWidth": 367,
+        "mobileHorizontalOverflow": false,
+        "pricingHeadingBelowHeader": true,
+        "contactSelections": [
+          "Reklamy i obsługa zapytań",
+          "Kampania Facebook i Instagram",
+          "Przegląd kampanii reklamowej"
+        ],
+        "videoDurationSeconds": 26.033,
+        "playbackObserved": true
+      },
+      "public": {
+        "heading": "Kampanie reklamowe Facebook Ads – prowadzenie kampanii i cennik",
+        "firstPackage": "1 500 zł netto miesięcznie",
+        "contactLink": "Zapytaj o prowadzenie kampanii",
+        "videoResponse": "206 video/mp4"
+      }
+    },
+    "ci": [
+      {
+        "bucket": "pass",
+        "name": "Vercel Preview Comments"
+      },
+      {
+        "bucket": "pass",
+        "name": "seo"
+      },
+      {
+        "bucket": "pass",
+        "name": "typecheck"
+      },
+      {
+        "bucket": "pass",
+        "name": "Vercel – adam420412-fotz-studio-web-experience"
+      },
+      {
+        "bucket": "pass",
+        "name": "Vercel – fotz-studio-web-experience"
+      }
+    ]
+  }
+}
