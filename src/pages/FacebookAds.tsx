@@ -1,736 +1,240 @@
-import { SEOHead } from "@/components/seo/SEOHead";
-import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { 
-  Target, Users, TrendingUp, BarChart3, Zap, Eye, 
-  MousePointer, DollarSign, Layers, CheckCircle2, 
-  ArrowRight, Play, PieChart, RefreshCw, Megaphone,
-  Monitor, Smartphone, MessageSquare, ShoppingCart
-} from "lucide-react";
-import { Button } from "@/components/ui/button";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { Layout } from "@/components/layout/Layout";
+import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
+import { SEOHead } from "@/components/seo/SEOHead";
+import { BreadcrumbSchema, ServiceSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { RelatedServices } from "@/components/sections/RelatedServices";
-import { ServiceSchema, BreadcrumbSchema, FAQSchema, OrganizationSchema} from "@/components/seo/StructuredData";
+import { InlineVideo } from "@/components/InlineVideo";
+import { enquiryHref } from "@/lib/enquiry.mjs";
 
-const FacebookAds = () => {
-  const benefits = [
-    { icon: Users, title: "2+ mld użytkowników", description: "Dostęp do największej platformy społecznościowej" },
-    { icon: Target, title: "Precyzyjne targetowanie", description: "Docieraj do dokładnie określonej grupy odbiorców" },
-    { icon: BarChart3, title: "Mierzalne wyniki", description: "Śledzenie konwersji i ROI w czasie rzeczywistym" },
-    { icon: DollarSign, title: "Elastyczny budżet", description: "Kontrola wydatków i optymalizacja kosztów" },
-  ];
+const path = "/performance-marketing/facebook-ads";
+const lead = "Jakiego klienta chcesz pozyskać i co ma zrobić po zobaczeniu reklamy na Facebooku? Prowadzimy kampanie dla firm usługowych, producentów i sklepów. Dobieramy cel, kreację i sposób pomiaru do tego, czy potrzebujesz rezerwacji, zapytania ofertowego czy zakupu.";
+const options = [
+  {
+    title: "Facebook Lead Ads dla firmy usługowej",
+    text: "Jeżeli sprzedajesz po rozmowie, pomóż klientowi zadać dobre pytanie. Dla wykonawcy mebli ważne będą rodzaj zabudowy i miejsce montażu, dla sali weselnej termin i liczba gości. Dobieramy pytania, sprawdzamy drogę zgłoszenia i ustalamy, kto oddzwoni po wysłaniu formularza. Możemy zaplanować przekazywanie zapytań do CRM.",
+    variant: "lead_ads",
+    label: "Omów pozyskiwanie zapytań",
+  },
+  {
+    title: "Meta Ads dla producenta i sprzedaży B2B",
+    text: "Pokaż produkt w zastosowaniu. Reklama maszyny może prowadzić do karty technicznej, a stamtąd do prośby o dobór modelu. Przed startem ustalamy z handlowcem, które informacje pozwalają przygotować ofertę. Gdy decyzja trwa kilka miesięcy, porównujemy zapytania o właściwy produkt i przygotowane wyceny.",
+    variant: "meta_ads",
+    label: "Zaplanuj kampanię dla produktu",
+  },
+  {
+    title: "Audyt działającej kampanii na Facebooku",
+    text: "Masz dużo kliknięć i mało rozmów? Prześledzimy jedną ścieżkę od reklamy do odpowiedzi sprzedawcy. Sprawdzamy obietnicę w reklamie, stronę na telefonie, działanie formularza oraz jakość próbki zgłoszeń. Otrzymasz listę zmian w kolejności wdrażania i sposób sprawdzenia pierwszej poprawki.",
+    variant: "campaign_audit",
+    label: "Zapytaj o audyt kampanii",
+  },
+];
 
-  const adFormats = [
-    { icon: Monitor, title: "Reklamy graficzne", description: "Przyciągające uwagę obrazy i kreacje statyczne" },
-    { icon: Play, title: "Reklamy wideo", description: "Dynamiczne treści wideo zwiększające zaangażowanie" },
-    { icon: Layers, title: "Karuzele", description: "Prezentacja wielu produktów w jednej reklamie" },
-    { icon: MessageSquare, title: "Messenger Ads", description: "Bezpośrednia komunikacja z potencjalnymi klientami" },
-    { icon: Smartphone, title: "Stories Ads", description: "Pełnoekranowe reklamy w formacie pionowym" },
-    { icon: ShoppingCart, title: "Reklamy dynamiczne", description: "Automatycznie personalizowane pod użytkownika" },
-  ];
+const sections = [
+  {
+    title: "Co ma osiągnąć kampania reklamowa? Cele kampanii na Facebooku",
+    text: "Zanim włączymy płatną emisję, ustalamy, jak rozpoznasz wartościowy wynik. Właściciel szkoły językowej może szukać osób gotowych zapisać się na konkretny kurs. Producent może potrzebować rozmów z dystrybutorami. Obie firmy mogą publikować w tych samych mediach społecznościowych, ale potrzebują innych komunikatów, stron i pytań. Na etapie tworzenia kampanii zapisujemy kryterium dobrego kontaktu oraz koszt, który warto przetestować.",
+  },
+  {
+    title: "Jak działa system Facebook Ads i kto ma dostęp do konta?",
+    text: "Kampania na Facebooku ma trzy poziomy, które łączy Menedżer reklam firmy Meta. Na poziomie kampanii wybieramy cel reklamowy. Zestaw reklam porządkuje m.in. grupę odbiorców i umiejscowienia, a sama reklama zawiera tekst, materiał i miejsce docelowe. Pracujemy na koncie reklamowym firmy z uzgodnionymi uprawnieniami. Omawiamy, kto akceptuje budżet i kto płaci za emisję. Dzięki temu po zakończeniu współpracy właściciel ma dostęp do historii wydatków oraz wyników.",
+  },
+  {
+    title: "Grupa docelowa. Komu i gdzie wyświetlać reklamy?",
+    text: "Zaczynamy od rzeczywistego obszaru sprzedaży. Firma montująca zabudowy w jednym województwie ma inne możliwości niż sklep z wysyłką na terenie Polski. Przy planowaniu targetowania reklam uwzględniamy dostępność oferty, język i dane o dotychczasowych zamówieniach. Ustalamy hipotezę i porównujemy jakość zgłoszeń z wybranych obszarów. Dostępne ustawienia sprawdzamy na Twoim koncie. Sam system reklamowy nie potwierdzi, czy dana osoba ma budżet na Twój produkt.",
+  },
+  {
+    title: "Reklama na Facebooku z formularzem Lead Ads czy na własnej stronie?",
+    text: "Formularz błyskawiczny pozwala użytkownikowi wysłać zgłoszenie wewnątrz platformy. Dobrze sprawdza się do sprawdzenia zainteresowania jasno opisaną usługą. Gdy wycena wymaga rysunku, kilku parametrów lub poznania warunków współpracy, lepszym miejscem docelowym może być strona internetowa. W obu wariantach wspólnie przechodzimy proces na telefonie i sprawdzamy, gdzie pojawia się nowe zgłoszenie, jakie dane docierają i kto ma je obsłużyć.",
+  },
+  {
+    title: "Format reklamy na Facebooku i Instagramie",
+    text: "Jedno zdjęcie z krótkim nagłówkiem może wystarczyć, aby pokazać nową usługę. Reklama karuzelowa pozwala porównać warianty lub przejść przez etapy realizacji. Film przydaje się, gdy warto pokazać ruch, skalę albo sposób użycia produktu. Przygotowujemy wersje do ustalonych miejsc emisji, sprawdzamy czytelność napisów i podgląd na telefonie. Przed wyceną ustalamy, kto dostarcza zdjęcia, czy są potrzebne nagrania i w jakim zakresie materiały mogą trafić do płatnej reklamy.",
+  },
+  {
+    title: "Kampanie reklamowe na Facebooku dla sklepu internetowego",
+    text: "Kiedy sklep internetowy promuje różne warianty produktów, sprawdzamy, czy kliknięcie w reklamę otwiera właściwy model oraz czy cena i dostępność są aktualne. W kampanii sprzedażowej ustalamy sposób pomiaru zamówienia, jego wartości i waluty. Przed zwiększeniem wydatków porównujemy dane Meta z zamówieniami w sklepie i uwzględniamy zwroty. Przychód przypisany do reklamy pomaga ocenić kampanię, ale decyzja o budżecie zależy również od marży i kosztów obsługi.",
+  },
+  {
+    title: "Co pokazujemy w kreacji reklamowej? Przykład z portfolio FOTZ",
+    text: "W rolce CUPRA Raval przy Enea Stadionie w Poznaniu detal samochodu przeplata się z szerszym planem obiektu. To przykład materiału, który możesz obejrzeć i ocenić przed zamówieniem produkcji. Przy Twoim produkcie ustalimy, jaki detal odpowiada na pytanie kupującego. Może to być sposób składania stołu, zmiana konfiguracji lub zachowanie maszyny w pracy. Prawo do użycia filmu, montaż wariantów i zakup emisji omawiamy w wycenie.",
+  },
+  {
+    title: "Pomiar konwersji. Jak połączyć wyniki z Meta Ads i dane z CRM?",
+    text: "Piksel Meta, wcześniej Facebook Pixel, pozwala mierzyć wybrane działania na stronie. Zależnie od systemu możemy uzgodnić dodatkowe przekazywanie zdarzeń przez API konwersji. Ustalamy, jakie dane są potrzebne, uwzględniamy zgody i sprawdzamy, czy jedno działanie użytkownika nie jest liczone dwukrotnie. Dla usług przydaje się porównanie zgłoszeń z CRM. Jeśli w panelu widać dziesięć formularzy, handlowiec może wskazać, ile dotyczyło właściwej usługi i do ilu klientów udało się dotrzeć.",
+  },
+  {
+    title: "Optymalizacja kampanii Facebook Ads po pierwszych zapytaniach",
+    text: "Jeżeli zespół social media widzi reakcje, a handlowiec dostaje pytania wyłącznie o cenę, przeanalizujmy rozmowy przed zmianą grupy odbiorców. Może brakować orientacyjnego zakresu zamówienia, przykładu wykonania albo informacji o obszarze działania. Testujemy zmianę przy ustalonym budżecie kampanii i obserwujemy kolejne kontakty. Raport opisuje, co zmieniliśmy, jaki był koszt i co stało się ze zgłoszeniami po stronie firmy. W razie małej próby zapisujemy, czego nie da się jeszcze rozstrzygnąć.",
+  },
+  {
+    title: "Budżet reklamowy i koszt kampanii. Jak czytać raport?",
+    text: "Koszt kliknięcia pokazuje cenę przejścia, a koszt kontaktu można policzyć, dzieląc wydatki na emisję przez liczbę zgłoszeń. Dla przykładu 1 000 zł emisji i 20 zgłoszeń daje 50 zł za zgłoszenie. Jeżeli tylko pięć spełnia kryteria sprzedaży, koszt zgodnego z ofertą zapytania wynosi 200 zł. To przykład rachunku. Przy ocenie opłacalności doliczamy wynagrodzenie za prowadzenie kampanii i przygotowanie materiałów. Dla sklepu sprawdzamy też marżę i wartość zakończonych zakupów.",
+  },
+  {
+    title: "Remarketing i rozpoznawalność marki",
+    text: "Gdy klienci wracają do oferty po kilku dniach, możemy zaplanować osobny komunikat dla osób, które wcześniej odwiedziły stronę lub weszły w interakcję z marką. Warunkiem są odpowiednie dane i wystarczająca grupa odbiorców. Proponujemy materiał odpowiadający na kolejną wątpliwość, na przykład pokaz montażu zamiast powtórzenia tego samego zdjęcia. Kampanie zasięgowe mają inne cele reklamowe. Ich rolę uzgadniamy osobno, podobnie jak kryterium oceny rozpoznawalności.",
+  },
+  {
+    title: "Facebook Ads czy Google Ads? Jak agencja dobiera kanał do oferty",
+    text: "Reklama na Facebooku może pokazać zastosowanie produktu osobie, która jeszcze nie zna jego nazwy. Google Ads przydaje się, gdy potencjalni klienci szukają już wykonawcy albo konkretnego modelu. Zanim podzielimy środki, sprawdzamy, gdzie masz dziś najwięcej wartościowych zapytań i czy wystarczy materiałów do testu. Prowadzenie obu kanałów wymaga osobnych założeń. W raporcie ustalamy wspólne zasady liczenia konwersji, aby jednej sprzedaży nie przypisać dwukrotnie.",
+  },
+  {
+    title: "Reklama Facebook Ads przed startem. Co zatwierdza firma?",
+    text: "Wysyłamy podgląd zestawu reklam z tekstem, wersją grafiki lub filmu oraz docelowym linkiem. Ustalamy, na jakie pytanie użytkownika odpowiada dana kreacja reklamowa i czy oferta jest aktualna przez cały okres emisji. Właściciel marki może sprawdzić nazwy produktów, warunki promocji i zapas przed opublikowaniem reklamy. Jeżeli Facebook i Instagram pokazują materiał w różnych proporcjach, sprawdzamy obie wersje. W briefie zapisujemy również, kto może zatrzymać kampanię, gdy zabraknie produktu albo terminów.",
+  },
+  {
+    title: "Po czym poznać skuteczną reklamę na Facebooku przy małym budżecie?",
+    text: "Załóżmy, że dwa zestawy reklam przyniosły po dziesięć zgłoszeń. W pierwszym handlowiec rozmawiał z jedną zainteresowaną osobą, w drugim z pięcioma. Sam koszt formularza nie pokaże tej różnicy. Dlatego specjalista Facebook Ads potrzebuje od firmy informacji zwrotnej o kontaktach. Użytkownicy Facebooka mogą polubić film nawet wtedy, gdy Twoja usługa jest niedostępna w ich mieście. Przy małym budżecie zaczynamy od jednej oferty i jednej decyzji, którą chcemy podjąć na podstawie wyników. Ustalamy, co będzie podstawą do dalszych wydatków, zmiany treści lub zakończenia testu.",
+  },
+  {
+    title: "Jaką rolę pełni agencja w obsłudze kampanii reklamowych Meta?",
+    text: "Przed podpisaniem zlecenia dzielimy odpowiedzialność za działania reklamowe. Agencja przygotowuje ustalone elementy i pilnuje uzgodnionych limitów. Firma przekazuje informacje o dostępności, zatwierdza materiały i obsługuje nadesłane zapytania. Po starcie sprawdzamy, czy reklamy zaczęły się wyświetlać na wybranych umiejscowieniach. Jeśli system Meta wstrzyma emisję, ustalamy przyczynę widoczną na koncie i przedstawiamy możliwe rozwiązanie. Na zakończenie omawiamy wykonane prace i wnioski z okresu rozliczeniowego.",
+  },
+  {
+    title: "Kiedy oceniać pierwsze efekty kampanii Meta Ads?",
+    text: "Jeśli klient kupuje po prezentacji lub pomiarze, pierwszym wynikiem jest umówione spotkanie. Zanim uruchomimy reklamy, zapytamy, ile czasu zwykle dzieli zgłoszenie od zamówienia. Termin pierwszej oceny dobierzemy do tego cyklu. W międzyczasie można już sprawdzić, czy formularz dociera do handlowca i czy zgłaszają się osoby z obsługiwanego regionu. Gdy minie termin decyzji zakupowej, wrócimy do tych samych kontaktów i porównamy liczbę ofert oraz zawartych umów.",
+  },
+  {
+    title: "Jak optymalizować kampanie, kiedy koszt reklamy rośnie?",
+    text: "Tu przydaje się rozróżnienie trzech kosztów. CPM oznacza koszt tysiąca wyświetleń, CPC to średni koszt kliknięcia, a CPL to koszt pozyskania zgłoszenia. Porównujemy je dla tego samego okresu i celu. Jeśli CPM jest podobny, lecz po wejściu mniej osób wysyła formularz, sprawdzamy zachowania użytkowników na stronie i jej działanie na telefonie. Jeżeli zmienił się koszt samej emisji, porównujemy umiejscowienia i materiały. Tak wybieramy pierwszy test i ustalamy jego budżet.",
+  },
+];
 
-  const processSteps = [
-    { step: "01", title: "Analiza i strategia", description: "Określamy cele, grupę docelową i budżet kampanii" },
-    { step: "02", title: "Kreacja reklamowa", description: "Tworzymy angażujące grafiki i teksty reklamowe" },
-    { step: "03", title: "Konfiguracja kampanii", description: "Ustawiamy targetowanie, formaty i harmonogram" },
-    { step: "04", title: "Optymalizacja", description: "Monitorujemy wyniki i optymalizujemy kampanię" },
-  ];
+const faqs = [
+  {
+    question: "Co obejmuje prowadzenie kampanii Facebook Ads w agencji?",
+    answer: "Ustalamy cel kampanii, przygotowujemy strukturę na koncie, opracowujemy uzgodnione kreacje i analizujemy wyniki. Przed startem otrzymujesz zakres prowadzenia reklam, zasady akceptacji materiałów oraz częstotliwość raportowania. Dodatkowe nagrania, zmiany strony i integracje wyceniamy według zakresu projektu.",
+  },
+  {
+    question: "Ile kosztuje reklama na Facebooku dla firmy usługowej?",
+    answer: "Koszt obsługi i limit wydatków na platformie to dwie pozycje. Porównaj ceny pakietów z liczbą reklam, kreacji i raportów, których potrzebujesz. W zapytaniu podaj obszar działania, usługę oraz planowany miesięczny budżet na emisję. W odpowiedzi potwierdzimy pełną kwotę i warunki.",
+  },
+  {
+    question: "Czy można zlecić tylko audyt kampanii na Facebooku?",
+    answer: "Tak. Podaj, który wynik budzi wątpliwości, czego próbujesz i jak dziś oceniasz zgłoszenia. Sprawdzimy ustawienia, spójność reklamy z ofertą i drogę od kliknięcia do kontaktu. Zakres przeglądu oraz ewentualne wdrożenia ustalamy przed rozpoczęciem pracy.",
+  },
+  {
+    question: "Czy muszę mieć sklep, żeby uruchomić kampanię Facebook Ads?",
+    answer: "Nie. Firma usługowa może przyjmować zapytania przez formularz Meta, własną stronę lub rozmowę. Najpierw ustalamy, gdzie Twoi klienci chętnie podejmują pierwszy krok i kto odpowiada za kontakt. W reklamie opisujemy konkretną usługę i informację, którą odbiorca otrzyma po zgłoszeniu.",
+  },
+  {
+    question: "Co przesłać agencji do wyceny obsługi Meta Ads?",
+    answer: "Wyślij link do oferty, opisz klienta i wskaż cel biznesowy. Przydatne są planowany termin, budżet na reklamę w Meta oraz informacja o dostępnych materiałach. Jeśli kampanie już działają, wystarczy na początek opisać problem i podać orientacyjną liczbę zamówień albo rozmów po reklamach.",
+  },
+  {
+    question: "Czy promowanie posta i prowadzenie kampanii w Menedżerze reklam to to samo?",
+    answer: "Promowanie posta jest uproszczonym sposobem płatnej promocji istniejącej publikacji. Menedżer reklam pozwala zaplanować kampanię Meta Ads z osobnymi zestawami reklam, kreacjami i pomiarem wybranego celu. Jeśli chcesz tylko nagłośnić termin wydarzenia, zakres przygotowania będzie inny niż przy stałym pozyskiwaniu kontaktów. Ustalamy to na początku, żeby porównać koszt kampanii z wartością oczekiwanego działania.",
+  },
+  {
+    question: "Po czym poznać, że reklama na Facebooku wymaga zmiany?",
+    answer: "Sprawdzamy, czy zmieniły się koszty emisji, reakcje użytkowników Facebooka, liczba zapytań lub ich jakość. Oglądamy reklamy na podstawie tych danych i rozmów z handlowcem. Gdy potencjalni klienci klikają, ale nie mogą znaleźć pokazanej usługi na stronie, najpierw poprawiamy miejsce docelowe. Jeśli zaś odbiorcy nie rozumieją produktu, pierwszym testem może być inna forma reklamy lub nagranie instruktażowe.",
+  },
+];
 
-  const pricingPackages = [
-    {
-      name: "Start",
-      price: "1 500",
-      period: "/mies.",
-      description: "Idealne na początek",
-      features: [
-        "Budżet reklamowy do 3 000 zł",
-        "1-2 kampanie reklamowe",
-        "Podstawowe targetowanie",
-        "Raport miesięczny",
-        "Kreacje graficzne (2 szt.)",
-      ],
-      popular: false,
-    },
-    {
-      name: "Business",
-      price: "2 500",
-      period: "/mies.",
-      description: "Dla rozwijających się firm",
-      features: [
-        "Budżet reklamowy do 10 000 zł",
-        "3-5 kampanii reklamowych",
-        "Zaawansowane targetowanie",
-        "Retargeting i Lookalike",
-        "Testy A/B",
-        "Raporty tygodniowe",
-        "Kreacje graficzne (5 szt.)",
-      ],
-      popular: true,
-    },
-    {
-      name: "Premium",
-      price: "4 500",
-      period: "/mies.",
-      description: "Pełna obsługa marketingowa",
-      features: [
-        "Budżet reklamowy bez limitu",
-        "Nieograniczona liczba kampanii",
-        "Kompleksowa strategia",
-        "Pixel Facebook + API konwersji",
-        "Dedykowany opiekun",
-        "Raporty na żądanie",
-        "Kreacje graficzne i wideo",
-        "Integracja z Google Ads",
-      ],
-      popular: false,
-    },
-  ];
+const pricingPackages = [
+  {
+    name: "Start",
+    price: "1 500",
+    features: [
+      "Budżet reklamowy do 3 000 zł",
+      "1–2 kampanie reklamowe",
+      "Podstawowe targetowanie",
+      "Raport miesięczny",
+      "Kreacje graficzne (2 szt.)",
+    ],
+  },
+  {
+    name: "Business",
+    price: "2 500",
+    features: [
+      "Budżet reklamowy do 10 000 zł",
+      "3–5 kampanii reklamowych",
+      "Zaawansowane targetowanie",
+      "Retargeting i Lookalike",
+      "Testy A/B",
+      "Raporty tygodniowe",
+      "Kreacje graficzne (5 szt.)",
+    ],
+  },
+  {
+    name: "Premium",
+    price: "4 500",
+    features: [
+      "Dowolny uzgodniony budżet emisji",
+      "Nieograniczona liczba kampanii",
+      "Kompleksowa strategia",
+      "Piksel Meta i API konwersji",
+      "Dedykowany opiekun",
+      "Raporty na żądanie",
+      "Kreacje graficzne i wideo",
+      "Integracja z Google Ads",
+    ],
+  },
+];
 
-  const faqItems = [
-    {
-      question: "Jakie są pierwsze kroki do stworzenia skutecznej kampanii na Facebooku?",
-      answer: <>Pierwszym krokiem jest zdefiniowanie celu kampanii reklamowej, wybór grupy docelowej oraz ustalenie budżetu. Następnie należy wybrać format reklamy, który najlepiej odpowiada celom twojej kampanii. Istotne jest także skonfigurowanie kampanii w Menadżerze Reklam Facebook i połączenie z profesjonalną <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">stroną internetową</Link>.</>
-    },
-    {
-      question: "Jak wybrać odbiorców swojej reklamy na Facebooku?",
-      answer: <>Aby wybrać swoich odbiorców, należy określić demograficzne, geograficzne i behawioralne kryteria wyboru. Facebook umożliwia również targetowanie na podstawie zainteresowań potencjalnych klientów, ich zachowań online oraz danych z fanpage'a twojego biznesu. Podobne możliwości oferują reklamy <Link to="/performance-marketing/google-ads" className="text-primary hover:underline">Google Ads</Link>.</>
-    },
-    {
-      question: "Jaki format reklamy na Facebooku będzie najskuteczniejszy?",
-      answer: <>Wybór formatu zależy od celów twojej kampanii. Facebook oferuje różnorodne formy reklamy, w tym posty sponsorowane, historie, materiały błyskawiczne, filmy, karuzele czy reklamy w Messengerze. Profesjonalne materiały wideo znacząco zwiększają skuteczność kampanii - sprawdź naszą <Link to="/uslugi/produkcja-filmow" className="text-primary hover:underline">produkcję wideo</Link>.</>
-    },
-    {
-      question: "Ile kosztuje reklama na Facebook Ads?",
-      answer: "Cennik reklamy na Facebooku jest zmienny i zależy od wielu czynników, takich jak rodzaj i format reklamy, czas trwania kampanii, wybrana grupa docelowa oraz konkurencja w danej kategorii. Konkretne koszty ustalane są w procesie licytacji w Menadżerze Reklam."
-    },
-    {
-      question: "Jak określić cel reklamowy kampanii na Facebooku?",
-      answer: <>Podczas tworzenia kampanii możesz wybrać jedną z dostępnych opcji celów, takich jak zwiększenie świadomości marki, generowanie leadów, konwersje na stronie internetowej, ruch na stronie czy promocja aplikacji mobilnej. Wybór celu powinien być dopasowany do strategii <Link to="/kompleksowa-obsluga-marketingowa" className="text-primary hover:underline">marketingowej</Link>.</>
-    },
-    {
-      question: "Jak mierzyć efektywność kampanii reklamowej na Facebooku?",
-      answer: <>Efektywność kampanii można mierzyć za pomocą narzędzi analitycznych oferowanych przez Facebooka, takich jak Menadżer Reklam oraz Insights. Te narzędzia udostępniają dane na temat zasięgu, interakcji, konwersji oraz ROI. Warto połączyć te dane z analityką <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">strony internetowej</Link>.</>
-    },
-    {
-      question: "Czy warto powierzyć prowadzenie kampanii agencji reklamowej?",
-      answer: <>Decyzja o współpracy z agencją powinna zależeć od budżetu, dostępnych zasobów oraz wiedzy specjalistycznej. <Link to="/kompleksowa-obsluga-marketingowa" className="text-primary hover:underline">Agencje marketingowe</Link> oferują profesjonalne usługi, które mogą znacząco zwiększyć efektywność kampanii dzięki doświadczeniu i dostępowi do zaawansowanych narzędzi.</>
-    },
-    {
-      question: "Jakie są najczęstsze błędy przy tworzeniu reklam na Facebooku?",
-      answer: <>Najczęstsze błędy to nieprecyzyjne określenie grupy docelowej, nieodpowiedni wybór formatu reklamy, brak jasnego wezwania do działania, a także niedostosowanie treści i grafiki reklamy do preferencji odbiorców. Profesjonalna <Link to="/agencja-social-media/poznan" className="text-primary hover:underline">obsługa social media</Link> pomaga uniknąć tych błędów.</>
-    },
-  ];
-
-  return (
-    <>
-      <OrganizationSchema />
-      <Layout>
-      <SEOHead
-        title="Facebook Ads — reklama na Facebooku dla firm | FOTZ"
-        description="Facebook Ads — tworzenie i prowadzenie kampanii reklamowych na Facebooku. Targetowanie, kreacje, retargeting i optymalizacja ROAS. Fotz Studio."
-        canonical="https://www.fotz-studio.pl/performance-marketing/facebook-ads"
-        keywords="facebook ads polska, agencja facebook ads, kampanie facebook ads, reklamy facebook, meta ads polska, instagram ads polska, facebook ads dla firm, reklama na facebooku, facebook ads cennik, prowadzenie facebook ads, facebook ads agencja"
-      />
-
-      <ServiceSchema 
-        name="Facebook Ads - Kampanie reklamowe"
-        description="Profesjonalne kampanie reklamowe na Facebook Ads. Precyzyjne targetowanie, retargeting i Lookalike Audiences."
-        provider="Fotz Studio"
-        areaServed="Polska"
-      />
-      <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
-          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
-          { name: "Facebook Ads", url: "https://www.fotz-studio.pl/performance-marketing/facebook-ads" }
-        ]}/>
-      <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: typeof item.answer === 'string' ? item.answer : 'Szczegółowa odpowiedź dostępna na stronie.' }))} />
-
-      {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center justify-center bg-background overflow-hidden pt-24">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-background to-purple-600/10" />
-        <div className="container mx-auto px-4 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center max-w-4xl mx-auto"
-          >
-            <span className="inline-block px-4 py-2 bg-blue-500/20 text-blue-400 rounded-full text-sm font-medium mb-6">
-              <Megaphone className="inline-block w-4 h-4 mr-2" />
-              Facebook & Instagram Ads
-            </span>
-            <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-              Skuteczne kampanie reklamowe na{" "}
-              <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
-                Facebook Ads
-              </span>
-            </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Docieraj do ponad 2 miliardów użytkowników. Tworzymy kampanie, które generują leady, zwiększają sprzedaż i budują rozpoznawalność marki.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
-                <Link to="/kontakt">
-                  Bezpłatna konsultacja
-                  <ArrowRight className="ml-2 w-5 h-5" />
-                </Link>
-              </Button>
-              <Button asChild variant="outline" size="lg">
-                <a href="#cennik">Zobacz cennik</a>
-              </Button>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Benefits Section */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Dlaczego Facebook Ads?
-            </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Platforma reklamowa Facebooka oferuje niezrównane możliwości dotarcia do Twoich potencjalnych klientów
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {benefits.map((benefit, index) => (
-              <motion.div
-                key={benefit.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="bg-card border border-border rounded-2xl p-6 text-center hover:border-blue-500/50 transition-colors"
-              >
-                <div className="w-14 h-14 bg-blue-500/20 rounded-xl flex items-center justify-center mx-auto mb-4">
-                  <benefit.icon className="w-7 h-7 text-blue-400" />
-                </div>
-                <h3 className="text-lg font-semibold text-foreground mb-2">{benefit.title}</h3>
-                <p className="text-muted-foreground text-sm">{benefit.description}</p>
-              </motion.div>
-            ))}
+export default function FacebookAds() {
+  const contact = enquiryHref("marketing", "meta_ads");
+  return <>
+    <SEOHead title="Kampanie reklamowe na Facebooku – agencja Meta Ads i cennik"
+      description="Prowadzenie kampanii Facebook Ads dla firm. Ile kosztuje reklama na Facebooku? Poznaj cennik obsługi Meta Ads i zapytaj o kampanię dla swojej firmy."
+      canonical="https://www.fotz-studio.pl/performance-marketing/facebook-ads" />
+    <Layout>
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "/" }, { name: "Usługi", url: "/uslugi" }, { name: "Facebook Ads", url: path }]} />
+      <ServiceSchema name="Prowadzenie kampanii Facebook Ads" description={lead} areaServed="Polska" />
+      <FAQSchema items={faqs} />
+      <PageBreadcrumbs items={[{ name: "Usługi", url: "/uslugi" }, { name: "Facebook Ads" }]} />
+      <section className="container-wide grid items-center gap-8 px-6 py-10 md:px-12 lg:grid-cols-2">
+        <div>
+          <h1 className="offer-heading mb-6">Kampanie reklamowe Facebook Ads – prowadzenie kampanii i cennik</h1>
+          <p className="text-lg leading-relaxed text-muted-foreground">{lead}</p>
+          <div className="mt-7 flex flex-wrap gap-3">
+            <Link className="dv-btn dv-btn-primary" to={contact}>Zapytaj o prowadzenie kampanii</Link>
+            <a className="dv-btn dv-btn-secondary" href="#cennik">Porównaj ceny i zakres</a>
           </div>
         </div>
+        <figure className="min-w-0">
+          <InlineVideo className="aspect-video w-full rounded-xl bg-black" width={1280} height={720}
+            src="/videos/instagram/cupra-raval.mp4" poster="/work/instagram/cupra-raval-640.webp"
+            aria-label="Film FOTZ Studio prezentujący CUPRA Raval przy Enea Stadionie w Poznaniu" />
+          <figcaption className="mt-2 text-sm text-muted-foreground">Z portfolio FOTZ Studio · CUPRA Raval przy Enea Stadionie w Poznaniu.</figcaption>
+        </figure>
       </section>
-
-      {/* What is Facebook Ads Section */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-            >
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                Czym jest Facebook Ads?
-              </h2>
-              <div className="space-y-4 text-muted-foreground">
-                <p>
-                  Facebook Ads to platforma reklamowa, która umożliwia firmom i marketerom promowanie swoich produktów i usług na Facebooku oraz Instagramie. Jedną z głównych zalet jest możliwość dotarcia do szerokiego spektrum odbiorców dzięki dużej liczbie użytkowników aktywnych na platformie.
-                </p>
-                <p>
-                  Warto inwestować w reklamę na Facebooku ze względu na <strong>precyzyjne targetowanie odbiorców</strong>. Reklama pozwala dotrzeć do konkretnych grup na podstawie ich zainteresowań, zachowań online oraz preferencji.
-                </p>
-                <p>
-                  Różnice między reklamą tradycyjną a reklamą na Facebooku są zauważalne przede wszystkim w obszarze <strong>pomiaru skuteczności</strong>. Dzięki narzędziom dostępnym na platformie, marketerzy mają możliwość śledzenia konwersji i efektywności działań w czasie rzeczywistym.
-                </p>
-              </div>
-              <div className="mt-6 flex flex-wrap gap-3">
-                <Link to="/agencja-social-media/poznan" className="text-blue-400 hover:text-blue-300 text-sm flex items-center gap-1">
-                  <ArrowRight className="w-4 h-4" /> Social Media Marketing
-                </Link>
-                <Link to="/kompleksowa-obsluga-marketingowa" className="text-blue-400 hover:text-blue-300 text-sm flex items-center gap-1">
-                  <ArrowRight className="w-4 h-4" /> Kompleksowa obsługa
-                </Link>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="grid grid-cols-2 gap-4"
-            >
-              {[
-                { value: "2mld+", label: "Aktywnych użytkowników" },
-                { value: "98%", label: "Precyzja targetowania" },
-                { value: "5x", label: "Wyższy ROI vs tradycja" },
-                { value: "24/7", label: "Monitoring kampanii" },
-              ].map((stat, index) => (
-                <div key={index} className="bg-card border border-border rounded-xl p-6 text-center">
-                  <div className="text-3xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent mb-2">
-                    {stat.value}
-                  </div>
-                  <div className="text-sm text-muted-foreground">{stat.label}</div>
-                </div>
-              ))}
-            </motion.div>
-          </div>
-        </div>
+      <section className="container-wide px-6 py-12 md:px-12">
+        <h2 className="mb-8 text-3xl font-heading">Prowadzenie kampanii Facebook Ads. W czym możemy pomóc?</h2>
+        <div className="grid gap-6 lg:grid-cols-3">{options.map(option => <article key={option.variant} className="dv-panel flex flex-col p-6">
+          <h3 className="mb-4 text-xl font-heading">{option.title}</h3>
+          <p className="mb-5 leading-relaxed text-muted-foreground">{option.text}</p>
+          <Link className="mt-auto underline underline-offset-4" to={enquiryHref("marketing", option.variant)}>{option.label}</Link>
+        </article>)}</div>
       </section>
-
-      {/* Ad Formats Section */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Formaty reklam na Facebooku
-            </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Dobieramy format reklamy do Twoich celów biznesowych i preferencji grupy docelowej
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {adFormats.map((format, index) => (
-              <motion.div
-                key={format.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="bg-card border border-border rounded-2xl p-6 hover:border-blue-500/50 transition-all group"
-              >
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <format.icon className="w-6 h-6 text-blue-400" />
-                </div>
-                <h3 className="text-lg font-semibold text-foreground mb-2">{format.title}</h3>
-                <p className="text-muted-foreground text-sm">{format.description}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
+      <section id="cennik" className="container-wide scroll-mt-24 px-6 py-12 md:px-12">
+        <h2 className="mb-4 text-3xl font-heading">Cennik Facebook Ads – pakiety obsługi kampanii</h2>
+        <p className="mb-8 max-w-3xl leading-relaxed">Cena miesięczna dotyczy obsługi. Budżet na wyświetlanie reklam opłacasz osobno w Meta. Przed zleceniem potwierdzamy kwotę brutto, limit emisji, zakres prac i koszt dodatkowej produkcji.</p>
+        <div className="grid gap-6 md:grid-cols-3">{pricingPackages.map(pkg => <article key={pkg.name} className="border-t border-border py-5">
+          <h3 className="text-xl font-heading">{pkg.name}</h3>
+          <p className="my-3 text-2xl font-medium">{pkg.price} zł netto miesięcznie</p>
+          <ul className="list-disc space-y-2 pl-5 text-muted-foreground">{pkg.features.map(feature => <li key={feature}>{feature}</li>)}</ul>
+        </article>)}</div>
+        <Link className="dv-btn dv-btn-primary mt-6" to={contact}>Poproś o wycenę swojej kampanii</Link>
       </section>
-
-      {/* Targeting Section */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="order-2 lg:order-1"
-            >
-              <div className="space-y-6">
-                <div className="bg-card border border-border rounded-xl p-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Target className="w-5 h-5 text-blue-400" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-foreground mb-2">Targetowanie demograficzne</h3>
-                      <p className="text-muted-foreground text-sm">Wiek, płeć, lokalizacja, wykształcenie, stan cywilny</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="bg-card border border-border rounded-xl p-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 bg-purple-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Eye className="w-5 h-5 text-purple-400" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-foreground mb-2">Zainteresowania i zachowania</h3>
-                      <p className="text-muted-foreground text-sm">Hobby, aktywności, zakupy online, interakcje</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="bg-card border border-border rounded-xl p-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 bg-green-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Users className="w-5 h-5 text-green-400" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-foreground mb-2">Lookalike Audience</h3>
-                      <p className="text-muted-foreground text-sm">Grupy podobne do Twoich najlepszych klientów</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="bg-card border border-border rounded-xl p-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 bg-orange-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <RefreshCw className="w-5 h-5 text-orange-400" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-foreground mb-2">Retargeting</h3>
-                      <p className="text-muted-foreground text-sm">Ponowne dotarcie do osób, które odwiedziły Twoją stronę</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="order-1 lg:order-2"
-            >
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                Precyzyjne targetowanie odbiorców
-              </h2>
-              <p className="text-muted-foreground mb-6">
-                Facebook Ads oferuje zaawansowane możliwości targetowania, które pozwalają dotrzeć z reklamą do bardzo precyzyjnie określonej grupy odbiorców. Możesz skoncentrować się na użytkownikach o określonym wieku, płci, lokalizacji, a także na tych, którzy wykazali zainteresowanie konkretnymi kategoriami produktów.
-              </p>
-              <p className="text-muted-foreground mb-6">
-                Wykorzystanie <strong>Lookalike Audience</strong> i <strong>retargetingu</strong> to zaawansowane opcje, które pozwalają na zwiększenie efektywności kampanii. Lookalike umożliwia tworzenie grup podobnych do aktualnych klientów, natomiast retargeting pozwala na ponowne dotarcie do osób, które już wcześniej zetknęły się z marką.
-              </p>
-              <Link to="/seo/pozycjonowanie" className="text-blue-400 hover:text-blue-300 flex items-center gap-2">
-                Zobacz jak łączymy Facebook Ads z SEO <ArrowRight className="w-4 h-4" />
-              </Link>
-            </motion.div>
-          </div>
-        </div>
+      <div className="container-wide px-6 md:px-12">{sections.map(item => <section key={item.title} className="grid gap-4 border-t border-border py-7 md:grid-cols-[1fr_1.7fr] md:gap-10">
+        <h2 className="text-2xl font-heading">{item.title}</h2>
+        <p className="leading-relaxed text-muted-foreground">{item.text}</p>
+      </section>)}</div>
+      <section className="container-wide max-w-4xl px-6 py-12 md:px-12">
+        <h2 className="mb-6 text-3xl font-heading">Pytania o prowadzenie kampanii Facebook Ads</h2>
+        {faqs.map(item => <details key={item.question} className="border-t border-border py-3">
+          <summary className="min-h-11 cursor-pointer py-2 font-medium">{item.question}</summary>
+          <p className="py-3 leading-relaxed text-muted-foreground">{item.answer}</p>
+        </details>)}
       </section>
-
-      {/* Process Section */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Jak tworzymy kampanie?
-            </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Sprawdzony proces, który gwarantuje skuteczne kampanie reklamowe
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {processSteps.map((step, index) => (
-              <motion.div
-                key={step.step}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="relative"
-              >
-                <div className="bg-card border border-border rounded-2xl p-6 h-full">
-                  <span className="text-5xl font-bold text-blue-500/20">{step.step}</span>
-                  <h3 className="text-lg font-semibold text-foreground mt-2 mb-2">{step.title}</h3>
-                  <p className="text-muted-foreground text-sm">{step.description}</p>
-                </div>
-                {index < processSteps.length - 1 && (
-                  <div className="hidden lg:block absolute top-1/2 -right-3 transform -translate-y-1/2">
-                    <ArrowRight className="w-6 h-6 text-blue-500/40" />
-                  </div>
-                )}
-              </motion.div>
-            ))}
-          </div>
-        </div>
+      <section className="container-wide px-6 pb-12 md:px-12">
+        <h2 className="mb-4 text-3xl font-heading">Co chcesz sprzedać dzięki reklamie na Facebooku?</h2>
+        <p className="mb-6 max-w-2xl">Podeślij ofertę i napisz, ile zapytań możesz obsłużyć lub jaki produkt chcesz promować. Jeśli masz kampanię, dodaj, co dotąd działo się z pozyskanymi kontaktami.</p>
+        <Link className="dv-btn dv-btn-primary" to={contact}>Opisz projekt w formularzu</Link>
       </section>
-
-      {/* Pricing Section */}
-      <section id="cennik" className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Cennik Facebook Ads
-            </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Przejrzyste pakiety dopasowane do różnych potrzeb i budżetów
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {pricingPackages.map((pkg, index) => (
-              <motion.div
-                key={pkg.name}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className={`relative bg-card border rounded-2xl p-6 ${
-                  pkg.popular ? "border-blue-500 shadow-lg shadow-blue-500/20" : "border-border"
-                }`}
-              >
-                {pkg.popular && (
-                  <span className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
-                    Najpopularniejszy
-                  </span>
-                )}
-                <div className="text-center mb-6">
-                  <h3 className="text-xl font-bold text-foreground mb-2">{pkg.name}</h3>
-                  <p className="text-sm text-muted-foreground mb-4">{pkg.description}</p>
-                  <div className="flex items-baseline justify-center gap-1">
-                    <span className="text-4xl font-bold text-foreground">{pkg.price}</span>
-                    <span className="text-muted-foreground">zł{pkg.period}</span>
-                  </div>
-                </div>
-                <ul className="space-y-3 mb-6">
-                  {pkg.features.map((feature, i) => (
-                    <li key={i} className="flex items-start gap-2 text-sm">
-                      <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
-                      <span className="text-muted-foreground">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                <Button
-                  asChild
-                  className={`w-full ${pkg.popular ? "bg-blue-600 hover:bg-blue-700" : ""}`}
-                  variant={pkg.popular ? "default" : "outline"}
-                >
-                  <Link to="/kontakt">Wybierz pakiet</Link>
-                </Button>
-              </motion.div>
-            ))}
-          </div>
-
-          <p className="text-center text-sm text-muted-foreground mt-8">
-            * Ceny nie zawierają budżetu reklamowego. Budżet opłacany jest bezpośrednio w Menedżerze Reklam.
-          </p>
-        </div>
-      </section>
-
-      {/* ROI Section */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-            >
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                Maksymalizacja zwrotu z inwestycji (ROI)
-              </h2>
-              <div className="space-y-4 text-muted-foreground">
-                <p>
-                  Analiza danych to podstawa w procesie optymalizacji kampanii reklamowych na Facebooku. Facebook dostarcza szczegółowe raporty, które pozwalają na głębokie zrozumienie wyników kampanii, w tym dane dotyczące zasięgu, zaangażowania, kosztu za kliknięcie (CPC), stopy konwersji i wielu innych.
-                </p>
-                <p>
-                  <strong>Testowanie A/B</strong> jest fundamentalne w procesie optymalizacji. Pozwala na porównywanie różnych wersji reklam pod kątem ich wydajności, co ułatwia identyfikację najlepiej działających elementów kampanii.
-                </p>
-                <p>
-                  Regularne dostosowywanie budżetu i oferty na podstawie analizy wyników pozwala maksymalizować ROI. Elastyczność w zarządzaniu budżetem reklamowym jest kluczowa, zwłaszcza w kontekście zmieniających się warunków rynkowych.
-                </p>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="space-y-4"
-            >
-              {[
-                { icon: PieChart, title: "Konwersja", description: "Śledzenie działań użytkowników po kliknięciu w reklamę" },
-                { icon: Eye, title: "Zasięg", description: "Liczba unikalnych osób, które widziały reklamę" },
-                { icon: MousePointer, title: "CTR", description: "Współczynnik klikalności - stosunek kliknięć do wyświetleń" },
-                { icon: TrendingUp, title: "ROAS", description: "Zwrot z wydatków na reklamę - przychód vs koszt" },
-              ].map((metric, index) => (
-                <div key={index} className="bg-card border border-border rounded-xl p-4 flex items-start gap-4">
-                  <div className="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <metric.icon className="w-5 h-5 text-blue-400" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-foreground">{metric.title}</h3>
-                    <p className="text-muted-foreground text-sm">{metric.description}</p>
-                  </div>
-                </div>
-              ))}
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Najczęściej zadawane pytania
-            </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Odpowiedzi na pytania dotyczące kampanii Facebook Ads
-            </p>
-          </motion.div>
-
-          <div className="max-w-3xl mx-auto">
-            <Accordion type="single" collapsible className="space-y-4">
-              {faqItems.map((item, index) => (
-                <AccordionItem
-                  key={index}
-                  value={`item-${index}`}
-                  className="bg-card border border-border rounded-xl px-6"
-                >
-                  <AccordionTrigger className="text-left text-foreground hover:no-underline">
-                    {item.question}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground">
-                    {item.answer}
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
-          </div>
-        </div>
-      </section>
-
-      {/* Related Services Section */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Powiązane usługi
-            </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Kompleksowe wsparcie marketingowe dla Twojego biznesu
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { title: "Google Ads", description: "Reklamy w wyszukiwarce dla klientów z intencją zakupową", href: "/performance-marketing/google-ads", icon: Target },
-              { title: "E-commerce & Sklepy", description: "Tworzymy skuteczne sklepy online", href: "/uslugi/strony-internetowe/ecommerce", icon: ShoppingCart },
-              { title: "Social Media", description: "Kompleksowa obsługa mediów społecznościowych", href: "/agencja-social-media/poznan", icon: Users },
-              { title: "Strony internetowe", description: "Profesjonalne strony z wysoką konwersją", href: "/uslugi/strony-internetowe", icon: Monitor },
-            ].map((service, index) => (
-              <motion.div
-                key={service.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-              >
-                <Link
-                  to={service.href}
-                  className="block bg-card border border-border rounded-2xl p-6 hover:border-blue-500/50 transition-all group h-full"
-                >
-                  <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                    <service.icon className="w-6 h-6 text-blue-400" />
-                  </div>
-                  <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-blue-400 transition-colors">
-                    {service.title}
-                  </h3>
-                  <p className="text-muted-foreground text-sm">{service.description}</p>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-
-          {/* Dla kogo section */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mt-12 text-center"
-          >
-            <p className="text-muted-foreground mb-4">Sprawdź rozwiązania dla Twojej branży:</p>
-            <div className="flex flex-wrap justify-center gap-3">
-              <Link to="/dla-kogo/firmy-lokalne" className="px-4 py-2 bg-card border border-border rounded-full text-sm hover:border-blue-500/50 transition-colors">
-                Firmy lokalne
-              </Link>
-              <Link to="/dla-kogo/ecommerce" className="px-4 py-2 bg-card border border-border rounded-full text-sm hover:border-blue-500/50 transition-colors">
-                E-commerce
-              </Link>
-              <Link to="/dla-kogo/marki-premium" className="px-4 py-2 bg-card border border-border rounded-full text-sm hover:border-blue-500/50 transition-colors">
-                Marki premium
-              </Link>
-              <Link to="/dla-kogo/instytucje" className="px-4 py-2 bg-card border border-border rounded-full text-sm hover:border-blue-500/50 transition-colors">
-                Instytucje i eventy
-              </Link>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Related Services */}
-
-      {/* SEO Article Section */}
-      <section className="py-20 bg-card">
-        <div className="container mx-auto px-4">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
-            <h2 className="text-3xl font-heading font-bold mb-6">Facebook Ads — reklama na Facebooku i kampanie Meta Ads</h2>
-            <p className="text-muted-foreground mb-4">Facebook Ads to jeden z najpotężniejszych systemów reklamowych na świecie — umożliwia dotarcie do precyzyjnie określonych grup odbiorców według demografii, zainteresowań, zachowań i własnych list klientów (Custom Audiences). Kampanie Facebook Ads działają zarówno na Facebooku, jak i Instagramie, Messengerze i Audience Network.</p>
-            <p className="text-muted-foreground mb-6">Prowadzenie kampanii Facebook Ads wymaga wiedzy o strukturze kampanii (kampania → zestaw reklam → reklamy), testowaniu kreacji A/B, optymalizacji budżetu, remarketingu i analizie danych w Meta Business Suite. Reklama na Facebooku i możliwości targetowania są ogromne — kluczem jest właściwa strategia i ciągła optymalizacja.</p>
-            <h2 className="text-3xl font-heading font-bold mb-6">Kampanie Facebook Ads — formaty reklam i cele kampanii</h2>
-            <p className="text-muted-foreground mb-4">Formy reklamy na Facebooku: reklamy graficzne (single image), karuzele, reklamy wideo, kolekcje, reklamy lead (Lead Ads do zbierania kontaktów), reklamy dynamiczne dla e-commerce (DPA), Stories Ads i Reels Ads. Każdy format ma inne zastosowanie zależnie od celu kampanii.</p>
-            <p className="text-muted-foreground">Reklama na Facebooku dla firm lokalnych pozwala targetować odbiorców po lokalizacji — w promieniu kilometrów od Twojej siedziby. Formy reklamy na Facebooku można dostosować do każdego etapu lejka sprzedażowego: od budowania świadomości marki, przez generowanie leadów, po retargeting i zwiększenie sprzedaży. Sprawdź, jak kampanie Facebook Ads mogą rozwinąć Twój biznes.</p>
-          
-            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
-              <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>
-              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
-              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
-              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      <RelatedServices 
-        currentService="facebook-ads"
-        subtitle="Inne platformy reklamowe i usługi wspierające marketing w social media"
-      />
-
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-600 to-purple-600">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center max-w-3xl mx-auto"
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Gotowy na skuteczne kampanie?
-            </h2>
-            <p className="text-white/80 mb-8 text-lg">
-              Umów się na bezpłatną konsultację i dowiedz się, jak możemy zwiększyć Twoją sprzedaż dzięki Facebook Ads.
-            </p>
-            <Button asChild size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-white/90">
-              <Link to="/kontakt">
-                Bezpłatna konsultacja
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Link>
-            </Button>
-          </motion.div>
-        </div>
-      </section>
+      <RelatedServices currentService="facebook-ads" subtitle="Poznaj inne kanały reklamowe" />
     </Layout>
-    </>
-  );
-};
-
-export default FacebookAds;
+  </>;
+}
