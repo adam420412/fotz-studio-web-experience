@@ -86,7 +86,7 @@ FOTZ-C4B4783C,OF-09,P1,https://www.fotz-studio.pl/content-marketing/email-2025,o
 FOTZ-F2D9F4DF,OF-09,P1,https://www.fotz-studio.pl/content-marketing/kampanie,oferta lub narzędzie,WOLNE,,95,,,,,,,,,,,,src/pages/BlogKampaniaReklamowa.tsx,,,,,,
 FOTZ-14F05F55,OF-09,P1,https://www.fotz-studio.pl/content-marketing/video-content,oferta lub narzędzie,WOLNE,,95,,,,,,,,,,,,src/pages/CMVideoContent.tsx,,,,,,
 FOTZ-80F1BEDE,OF-09,P1,https://www.fotz-studio.pl/dla-kogo,oferta lub narzędzie,WOLNE,,95,,,,,,,,,,,,src/pages/DlaKogo.tsx,,,,,,
-FOTZ-15DB1BD6,OF-09,P1,https://www.fotz-studio.pl/dla-kogo/automotive,oferta lub narzędzie,WOLNE,,95,,,,,,,,,,,,src/pages/branze/MarketingAutomotive.tsx,,,,,,
+FOTZ-15DB1BD6,OF-09,P1,https://www.fotz-studio.pl/dla-kogo/automotive,oferta lub narzędzie,W_TRAKCIE,Codex / FOTZ-Automotive-20261119,95,,,645804ace9586d2a,https://app.neuronwriter.com/analysis/view/645804ace9586d2a,,2026-11-19T10:22:40.137142+00:00,codex/auto-oferta-20261119,,,,,src/pages/branze/MarketingAutomotive.tsx,54,0,27.5185,2026-10-20 / 2026-11-16,2026-11-19T10:22:40.137142+00:00,
 FOTZ-42C3D16A,OF-09,P1,https://www.fotz-studio.pl/dla-kogo/beauty-wellness,oferta lub narzędzie,WOLNE,,95,,,,,,,,,,,,src/pages/branze/MarketingBeauty.tsx,,,,,,
 FOTZ-557EA77E,OF-09,P1,https://www.fotz-studio.pl/dla-kogo/branza-medyczna,oferta lub narzędzie,WOLNE,,95,,,,,,,,,,,,src/pages/branze/MarketingMedyczny.tsx,,,,,,
 FOTZ-B17CE8AC,OF-10,P1,https://www.fotz-studio.pl/dla-kogo/ecommerce,oferta lub narzędzie,WOLNE,,95,,,,,,,,,,,,src/pages/DlaKogoEcommerce.tsx,,,,,,
