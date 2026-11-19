@@ -58,6 +58,64 @@ const guides: Record<string, GuideSection[]> = {
 };
 
 export function getSocialMediaGuide(cluster: SocialMediaCluster): GuideSection[] {
+  if (cluster.slug === "katowice") return [
+    {
+      title: "Prowadzenie social media dla firm z Katowic. Co robi agencja social media?",
+      text: "Możesz zlecić samo przygotowanie materiałów, regularne prowadzenie profili albo obsługę połączoną z reklamami. Jeśli masz już osobę od marketingu, może nadal publikować i odpowiadać klientom, a my dostarczymy jej zdjęcia, rolki i teksty. Przy stałej współpracy ustalamy, kto zbiera informacje o ofercie, ile materiałów przygotowujemy i do kiedy zatwierdzasz plan. Na tej podstawie otrzymujesz wycenę z listą prac.",
+    },
+    {
+      title: "Prowadzenie Facebooka dla firmy usługowej. Od posta do rezerwacji",
+      text: "Załóżmy, że prowadzisz serwis rowerowy w Katowicach. Klienta przed sezonem interesują termin przeglądu, zakres prac i sposób oddania roweru. Z takich pytań układamy post na Facebooku, serię zdjęć z warsztatu i krótką odpowiedź z linkiem do rezerwacji. Przed publikacją weryfikujesz terminy. Ustalamy też, kto po Twojej stronie potwierdzi cenę konkretnej naprawy. Ten sam schemat można zastosować w usługach z dojazdem, wskazując obsługiwane miejscowości na Śląsku.",
+    },
+    {
+      title: "Instagram i content, który pomaga wybrać produkt",
+      text: "Na Instagramie klient może po raz pierwszy zobaczyć Twój produkt w użyciu. Dla salonu wyposażenia wnętrz zaplanowalibyśmy rolkę pokazującą jeden stół w dwóch ustawieniach, zdjęcia detalu i relację z odpowiedzią na pytanie o wymiar. Każdy materiał prowadziłby do konkretnego modelu lub rozmowy z doradcą. Przed sesją ustalamy listę ujęć, dostępność produktów, osoby występujące przed kamerą i sposób wykorzystania materiałów w reklamie. Gdy masz już własne nagrania, możemy wycenić sam montaż.",
+    },
+    {
+      title: "LinkedIn i marketing B2B na Śląsku",
+      text: "Firma produkcyjna potrzebuje często dotrzeć do konstruktora lub osoby odpowiedzialnej za zakupy. Na LinkedIn ekspert z Twojego zespołu może pokazać, jak rozwiązał problem techniczny i jakie parametry były istotne dla odbiorcy. Pomagamy przełożyć rozmowę z ekspertem na post firmowy, zdjęcia wykonania i odnośnik do strony WWW. Przed publikacją ustalamy, które informacje wolno ujawnić. Handlowiec może potem wykorzystać ten sam materiał, gdy podobne pytanie pojawi się na spotkaniu.",
+    },
+    {
+      title: "Strategia marketingowa i komunikacja marki w mediach społecznościowych",
+      text: "Na początku przeglądamy profile, ofertę i wiadomości od potencjalnych klientów. Pytamy handlowców, które wątpliwości najczęściej zatrzymują rozmowę. Strategie dla różnych grup docelowych mają sens, gdy za wyborem kanału idzie konkretny temat i kolejny krok. Jednemu odbiorcy potrzebna jest instrukcja, innemu opinia użytkownika lub przykład wdrożenia. Plan publikacji łączy te potrzeby z kalendarzem Twojej firmy. Widzisz w nim temat, format, termin i osobę zatwierdzającą.",
+    },
+    {
+      title: "Wizerunek marki. Jak zdjęcia, tekst i projekt graficzny pracują razem?",
+      text: "Prześlij logo, zdjęcia, księgę znaku i przykłady publikacji, które klienci kojarzą z Twoją firmą. Istniejąca identyfikacja wizualna podpowiada, jak kadrować produkty, dobierać kolory i podpisywać materiały. Na tej podstawie przygotowujemy spójny zestaw formatów do akceptacji. Jeśli marka dopiero buduje swój styl wizualny i potrzebuje nowego logo, branding wyceniamy jako oddzielny projekt. Prowadzenie kanałów można zacząć od mniejszego zakresu.",
+    },
+    {
+      title: "Case study FOTZ. Jak pokazaliśmy CUPRĘ przy Enea Stadionie w Poznaniu",
+      text: "W krótkim filmie CUPRA Raval × Enea Stadion samochód oglądasz przy Enea Stadionie w Poznaniu. Odtwórz rolkę i zobacz, jak zestawiamy detal produktu z szerszym planem miejsca. W filmie z jubileuszu DSK Kancelaria tematem były z kolei spotkania gości i atmosfera wieczoru. Jeśli Twoja firma organizuje premierę produktu lub wydarzenie w Katowicach, w briefie wskaż, co ma zostać w pamięci widza i gdzie później wykorzystasz nagranie.",
+    },
+    {
+      title: "Obsługa social media. Kto odpowiada na komentarze i wiadomości?",
+      text: "Ustalamy dni i godziny moderacji oraz zestaw odpowiedzi na powtarzające się pytania. Agencja może obsługiwać komentarze dotyczące opublikowanych materiałów, a zapytania o dostępność lub cenę przekazywać wskazanej osobie. Ty decydujesz, kto rozpatruje reklamacje i zatwierdza wypowiedzi w sprawach wymagających reakcji PR. Taki podział pozwala budować zaangażowaną społeczność wokół marki i szybciej skierować pytanie klienta do właściwej osoby.",
+    },
+    {
+      title: "Kampanie reklamowe na Facebooku i Instagramie. Jaki budżet zaplanować?",
+      text: "Przed uruchomieniem Meta Ads wybieramy cel kampanii, odbiorców i miejsce, w którym klient wykona następny krok. Może to być formularz, sklep lub wiadomość prywatna. Osobno przedstawiamy koszt przygotowania reklam, obsługi i budżet reklamowy płacony platformie. Dla firmy działającej lokalnie sprawdzamy obszar sprzedaży i zdolność zespołu do obsługi zapytań. Kampanie Google Ads oraz SEO wymagają odrębnego planu, zwłaszcza gdy klient szuka już konkretnej usługi w wyszukiwarce.",
+    },
+    {
+      title: "Jak mierzyć zapytania z social media w Katowicach?",
+      text: "Uzgadniamy, co jest wartościowym kontaktem dla Twojego biznesu. Dla organizatora wydarzeń może to być pytanie o wolny termin z liczbą gości, a dla producenta prośba o ofertę z parametrami zamówienia. Przy formularzach możemy oznaczyć linki i sprawdzić źródło zgłoszenia. Przy rozmowach na profilu ustalamy sposób przekazywania kontaktów do handlowca. Raport zestawia publikacje i wydatki z zapytaniami. Do oceny zwrotu z inwestycji potrzebujemy również informacji o sprzedaży po stronie firmy.",
+    },
+    {
+      title: "Agencja kreatywna czy własny zespół? Jak podzielić pracę nad profilem",
+      text: "Jeśli masz social media managera, zacznij od tego, czego brakuje mu do publikacji w przyszłym miesiącu. Gdy pomysły czekają na nagranie, przyda się produkcja. Gdy są zdjęcia, ale na pytania o produkt odpowiadają trzy osoby, warto zacząć od uporządkowania komunikacji marki. Zlecając kompleksową obsługę mediów społecznościowych, poproś o wskazanie, kto odpowiada za plan marketingowy, akceptację treści i przekazanie zapytania. Tak możesz porównać koszt pracy własnej z ofertą agencji.",
+    },
+    {
+      title: "Ile kosztuje obsługa social media? Wycena dla firm z Katowic",
+      text: "W zapytaniu podaj linki do profili, priorytetową usługę, obszar sprzedaży i termin startu. Napisz, czy potrzebujesz jednego dnia zdjęciowego, czy regularnej produkcji oraz kto odpowiada klientom. Porównując oferty, sprawdź liczbę materiałów, wersje do różnych kanałów, liczbę poprawek i prawo do emisji reklamowej. W wycenie rozpisujemy przygotowanie strategii, produkcję, prowadzenie profili i kampanie. Nagrania na miejscu wymagają ustalenia terminu, dostępu do lokalizacji i kosztu dojazdu.",
+    },
+    {
+      title: "Szukasz agencji social media w Katowicach? Jak wygląda współpraca z FOTZ?",
+      text: "Obsługujemy firmy z Katowic w modelu zdalnym. Brief, plan treści, akceptacje i omówienie wyników można przeprowadzić online. Jeżeli Twój zespół chce zachować kontakt z klientami we własnych rękach, ustalimy zakres produkcji i przekazania plików. Jeśli potrzebujesz kompleksowej obsługi, oferta obejmie uzgodnione kanały, realizację i raportowanie. Napisz, czego brakuje dziś w Twoim marketingu i jaki efekt biznesowy chcesz sprawdzić jako pierwszy.",
+    },
+    {
+      title: "Jak połączyć social media i stronę WWW w jednej kampanii?",
+      text: "Przed startem przechodzimy drogę potencjalnego klienta na telefonie. Jeśli reklama zapowiada konsultację, link powinien otwierać stronę tej usługi, a formularz prosić tylko o informacje potrzebne do rozmowy. Podczas realizacji kampanii sprawdzamy, na którym etapie ubywa zgłoszeń. Gdy profil ma generować pytania o wycenę, handlowiec może odnotować, czego dotyczyła rozmowa i czy udało się przygotować ofertę. To pozwala zdecydować, który materiał wykorzystać ponownie.",
+    },
+  ];
   if (cluster.slug === "poznan") return [
     { title: "Social media i produkcja treści w Poznaniu", text: "FOTZ Studio łączy prowadzenie komunikacji z przygotowaniem zdjęć i video. Przy planowaniu działań dla poznańskiej firmy ustalamy, które materiały pokażą ofertę, ludzi i sposób pracy. Nagrania w siedzibie firmy lub w studiu wymagają osobnego uzgodnienia terminu i zakresu." },
     { title: "Od pierwszej rozmowy do planu publikacji", text: "Na początek przydadzą się linki do profili, opis odbiorców, cel działań i dostępne materiały. Na tej podstawie można ustalić kanały, tematy, formaty i proces akceptacji. Prowadzenie profili, produkcję oraz kampanie reklamowe rozpisujemy jako konkretne zadania." },

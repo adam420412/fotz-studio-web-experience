@@ -1,5 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import NotFound from "./NotFound";
+import { InlineVideo } from "@/components/InlineVideo";
 import { ArrowRight } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { SEOHead } from "@/components/seo/SEOHead";
@@ -18,6 +19,7 @@ export default function SocialMediaClusterHub() {
   const { data: articles = [], isLoading, isError, refetch } = useClusterArticles(clusterSlug, Boolean(cluster));
   if (!cluster) return <NotFound />;
   const guide = getSocialMediaGuide(cluster);
+  const isKatowice = cluster.slug === "katowice";
   const canonical = `https://www.fotz-studio.pl${cluster.path}`;
 
   return (
@@ -45,7 +47,7 @@ export default function SocialMediaClusterHub() {
             <span aria-current="page" className="text-foreground">{cluster.shortLabel}</span>
           </nav>
 
-          <span className="dv-eyebrow-muted">{cluster.kind === "city" ? "Współpraca lokalna" : "Poradnik social media"}</span>
+          <span className="dv-eyebrow-muted">{isKatowice ? "Katowice i Śląsk · współpraca online" : cluster.kind === "city" ? "Współpraca lokalna" : "Poradnik social media"}</span>
           <h1 className="font-geist text-4xl md:text-6xl tracking-[-0.03em] mt-2 mb-6 max-w-3xl leading-[1.05]">
             {cluster.title}
           </h1>
@@ -53,12 +55,14 @@ export default function SocialMediaClusterHub() {
             {cluster.description}
           </p>
           <div className="flex flex-wrap gap-3">
-            <Link to="/kontakt" className="dv-btn dv-btn-primary">
-              Bezpłatna wycena <ArrowRight className="w-4 h-4" />
+            <Link to={cluster.enquiryPath ?? "/kontakt"} className="dv-btn dv-btn-primary">
+              {isKatowice ? "Wyceń obsługę social media" : "Bezpłatna wycena"} <ArrowRight className="w-4 h-4" />
             </Link>
-            <Link to={SM_PILLAR_PATH} className="dv-btn dv-btn-secondary">
-              Oferta i poradniki
-            </Link>
+            {isKatowice ? (
+              <a href="#rolka-cupra" className="dv-btn dv-btn-secondary">Obejrzyj rolkę CUPRA</a>
+            ) : (
+              <Link to={SM_PILLAR_PATH} className="dv-btn dv-btn-secondary">Oferta i poradniki</Link>
+            )}
           </div>
         </section>
 
@@ -73,10 +77,22 @@ export default function SocialMediaClusterHub() {
               ))}
             </div>
             <aside className="dv-panel p-6 md:p-8">
+              {isKatowice && (
+                <figure id="rolka-cupra" className="mb-8 scroll-mt-24">
+                  <InlineVideo className="w-full aspect-video rounded-lg bg-black" width={1280} height={720}
+                    src="/videos/instagram/cupra-raval.mp4" poster="/work/instagram/cupra-raval-640.webp"
+                    aria-label="Rolka FOTZ Studio z prezentacji CUPRA Raval przy Enea Stadionie w Poznaniu" />
+                  <figcaption className="mt-2 text-sm">CUPRA Raval × Enea Stadion w Poznaniu · rolka FOTZ Studio</figcaption>
+                </figure>
+              )}
               <h2 className="font-geist text-2xl mb-5">Zaplanuj kolejny krok</h2>
               <ul className="space-y-4 text-sm leading-relaxed">
-                <li><Link className="underline underline-offset-4" to="/agencja-social-media/poznan">Prowadzenie Facebooka, Instagrama i LinkedIn</Link></li>
-                <li><Link className="underline underline-offset-4" to="/blog/agencja-social-media-poznan">Jak porównać agencje i przygotować brief</Link></li>
+                <li><Link className="underline underline-offset-4" to={cluster.enquiryPath ?? "/social-media/obsluga"}>{cluster.enquiryPath ? "Zapytaj o prowadzenie swoich profili" : "Prowadzenie Facebooka, Instagrama i LinkedIn"}</Link></li>
+                <li>{isKatowice ? (
+                  <Link className="underline underline-offset-4" to="/agencja-social-media/cennik">Sprawdź, co wpływa na koszt obsługi</Link>
+                ) : (
+                  <Link className="underline underline-offset-4" to="/blog/agencja-social-media-poznan">Jak porównać agencje i przygotować brief</Link>
+                )}</li>
                 <li><Link className="underline underline-offset-4" to="/realizacje">Zobacz portfolio FOTZ Studio</Link></li>
                 <li><Link className="underline underline-offset-4" to="/generator-briefu">Przygotuj brief projektu</Link></li>
               </ul>

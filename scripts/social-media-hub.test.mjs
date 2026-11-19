@@ -31,6 +31,7 @@ function harness(initial = {}) {
   const calls = [];
   const component = load('../src/pages/SocialMediaClusterHub.tsx', {
     'react-router-dom': { Link: 'a', useParams: () => ({ clusterSlug: slug }) },
+    '@/components/InlineVideo': { InlineVideo: 'video' },
     './NotFound': 'not-found',
     '@/components/layout/Layout': { Layout: 'main' },
     '@/components/seo/SEOHead': { SEOHead: 'head' },
@@ -43,6 +44,19 @@ function harness(initial = {}) {
   }).default;
   return { render: () => component(), setSlug: value => { slug = value; }, setQuery: value => { query = value; }, calls, retries: () => retried };
 }
+
+test('Katowice connects its offer to the social enquiry form and the playable portfolio film', () => {
+  const h = harness();
+  h.setSlug('katowice');
+  const tree = h.render();
+  assert.ok(find(tree, n => n.props?.to === '/kontakt?usluga=social&wariant=management#formularz'));
+  assert.ok(find(tree, n => n.props?.href === '#rolka-cupra'));
+  assert.ok(find(tree, n => n.props?.id === 'rolka-cupra'));
+  assert.ok(find(tree, n => n.type === 'video' && n.props.src === '/videos/instagram/cupra-raval.mp4'));
+  h.setSlug('wroclaw');
+  assert.ok(find(h.render(), n => n.props?.to === '/social-media/obsluga'));
+  assert.equal(find(h.render(), n => n.type === 'video'), undefined);
+});
 
 test('failed article request keeps the guide available and offers a working retry', () => {
   const h = harness({ isError: true });

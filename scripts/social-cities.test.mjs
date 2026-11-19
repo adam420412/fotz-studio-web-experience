@@ -80,6 +80,6 @@ test('the existing hub preserves one H1, self-canonical, breadcrumb schema and r
   assert.match(source, /const canonical = `https:\/\/www\.fotz-studio\.pl\$\{cluster\.path\}`/);
   assert.match(source, /<BreadcrumbSchema/);
   assert.match(source, /name: cluster\.shortLabel, url: canonical/);
-  assert.match(source, /to="\/kontakt"/);
+  assert.match(source, /cluster\.enquiryPath \?\? "\/kontakt"/);
   assert.match(source, /to="\/konsultacja"/);
 });

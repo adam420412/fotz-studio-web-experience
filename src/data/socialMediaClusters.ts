@@ -13,6 +13,7 @@ export interface SocialMediaCluster {
   title: string;
   shortLabel: string;
   description: string;
+  enquiryPath?: string;
   metaTitle: string;
   metaDescription: string;
   kind: ClusterKind;
@@ -146,10 +147,11 @@ export const SOCIAL_MEDIA_CLUSTERS: SocialMediaCluster[] = [
     path: "/agencja-social-media/katowice",
     title: "Agencja social media Katowice",
     shortLabel: "Katowice",
-    description: "Obsługa firm ze Śląska — content, reklamy, raporty.",
-    metaTitle: "Agencja social media Katowice — Fotz Studio",
+    description: "Prowadzisz firmę w Katowicach? Pokażemy Twoją ofertę na Facebooku, Instagramie lub LinkedIn. Zleć nam rolki, prowadzenie profili albo kampanię. Prześlij link do profilu i napisz, na którą usługę chcesz pozyskać więcej zapytań.",
+    enquiryPath: "/kontakt?usluga=social&wariant=management#formularz",
+    metaTitle: "Agencja social media Katowice – Facebook i Instagram | FOTZ",
     metaDescription:
-      "Agencja social media Katowice. Prowadzenie profili Instagram, Facebook i TikTok dla firm ze Śląska.",
+      "Agencja social media dla firm z Katowic. Facebook, Instagram, rolki i kampanie reklamowe. Obejrzyj realizację FOTZ i zapytaj o wycenę prowadzenia profili.",
     kind: "city",
     intent: "local",
   },
