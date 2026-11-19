@@ -120,7 +120,7 @@ export default function StronyInternetowePoznan() {
         </figure>
       </section>
 
-      <section id="realizacje" tabIndex={-1} className="section-padding scroll-mt-24 bg-muted/30 py-12">
+      <section id="realizacje" tabIndex={-1} className="section-padding scroll-mt-24 bg-muted/30 py-12 focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary">
         <div className="container-wide">
           <h2 className="max-w-3xl text-3xl font-heading font-bold">Realizacje stron internetowych w Poznaniu dla Gierky, Enea Stadionu i FPS</h2>
           <div className="mt-7 grid gap-8 md:grid-cols-2">
