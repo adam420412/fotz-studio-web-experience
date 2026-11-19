@@ -7,7 +7,7 @@ export function getWorkCollection(pathname) {
   if (getServiceWork(path)) return null;
   if (path === '/dla-kogo' || (path.startsWith('/dla-kogo/') && industryWork[path.slice('/dla-kogo/'.length)])) return null;
   if (path === '/agencja-marketingowa/poznan') return 'localAgency';
-  if (path === '/pozycjonowanie/legnica') return 'web';
+  if (path === '/pozycjonowanie/legnica' || path === '/agencja-marketingowa/zabrze') return 'web';
   // B2B website examples support the landing-page scope, not LinkedIn campaign results.
   if (path === '/performance-marketing/linkedin-ads') return 'web';
   const publicOffer = /^\/(?:uslugi(?:\/|$)|agencja[^/]*(?:\/|$)|social-media(?:\/|$)|content-marketing(?:\/|$)|performance-marketing(?:\/|$)|seo(?:\/|$)|strony-internetowe(?:\/|$)|dla-kogo(?:\/|$)|ai(?:\/|$)|fotograf[^/]*|kampanie[^/]*|wizualizacje-3d(?:\/|$))/.test(path);
