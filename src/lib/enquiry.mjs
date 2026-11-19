@@ -1,5 +1,6 @@
 export const enquiryServices = {
   web: 'Strona internetowa lub sklep',
+  graphics: 'Projektowanie graficzne',
   video: 'Film, rolki lub zdjęcia',
   social: 'Obsługa social media',
   seo: 'SEO i widoczność w Google',
@@ -8,6 +9,9 @@ export const enquiryServices = {
   other: 'Chcę dobrać zakres',
 };
 export const enquiryVariants = {
+  graphic_project: 'Pojedynczy projekt graficzny',
+  graphic_start: 'Obsługa graficzna — pakiet Start',
+  graphic_business: 'Obsługa graficzna — pakiet Business',
   retainer: 'Stała obsługa — od 3 000 zł netto / miesiąc',
   limited_care: 'Ograniczona opieka — 2 000 zł netto / miesiąc, do 4 godzin',
   materials: 'Produkcja materiałów', management: 'Regularna obsługa profili',
@@ -47,6 +51,7 @@ export function enquiryHref(service, variant) {
 }
 export function serviceForPath(path) {
   if (/^\/(seo(?:\/|$)|.*pozycjonowanie)/.test(path)) return 'seo';
+  if (/^\/agencja-graficzna\/?$/.test(path)) return 'graphics';
   if (/social-media/.test(path)) return 'social';
   if (/produkcja-(filmow|video)|video-marketing/.test(path) || /^\/uslugi\/fotografia(?:[-/]|$)/.test(path)) return 'video';
   if (/marketing-internetowy|agencja-marketing|reklama-facebook/.test(path) || /^\/(content-marketing|performance-marketing)(\/|$)/.test(path)) return 'marketing';
