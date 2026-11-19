@@ -72,7 +72,7 @@ const essentials: OfferTopic[] = [
   {
     title:
       "Strony WWW dla firm z Kalisza i okolic. Co musi znaleźć się w ofercie?",
-    text: "Inaczej wygląda zapytanie do warsztatu, który przyjmuje klientów na miejscu, a inaczej do wykonawcy dojeżdżającego na pomiar. Warsztatowi przyda się czytelny dojazd, zakres usług i telefon do recepcji. Wykonawcy przyda się krótki formularz z miejscowością, wymiarami i opcją omówienia dokumentacji. Pracujemy zdalnie z firmami z Kalisza i powiatu kaliskiego. Obszar działania na stronie opisujemy zgodnie z tym, dokąd rzeczywiście dojeżdżasz.",
+    text: "Inaczej wygląda zapytanie do warsztatu, który przyjmuje klientów na miejscu, a inaczej do wykonawcy dojeżdżającego na pomiar. Warsztatowi przyda się czytelny dojazd, zakres usług i telefon do recepcji. Wykonawcy przyda się krótki formularz z miejscowością, wymiarami i opcją omówienia dokumentacji. Obszar działania na stronie opisujemy zgodnie z tym, dokąd rzeczywiście dojeżdżasz.",
   },
   {
     title: "Projekt graficzny i responsywna strona na telefon",
@@ -248,7 +248,8 @@ export default function StronyInternetoweKalisz() {
             Chcesz, żeby klient zamówił pomiar, zarezerwował pobyt albo kupił
             produkt? Pokaż nam, co sprzedajesz. Zaproponujemy stronę WWW, na
             której kupujący zobaczy właściwą ofertę i będzie wiedział, co zrobić
-            dalej.
+            dalej. Współpracę z firmami z Kalisza i powiatu kaliskiego
+            prowadzimy zdalnie.
           </p>
           <p className="my-5">
             WWW START · 1 490 zł netto za One Page do pięciu sekcji na szablonie
