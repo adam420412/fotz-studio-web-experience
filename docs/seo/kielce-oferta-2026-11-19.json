@@ -1,0 +1,253 @@
+{
+  "date": "2026-11-19",
+  "page": "https://www.fotz-studio.pl/strony-internetowe/kielce",
+  "owner": "Codex / FOTZ-Kielce-20261119",
+  "registerId": "FOTZ-B100DC7C",
+  "gsc": {
+    "property": "sc-domain:fotz-studio.pl",
+    "from": "2026-10-20",
+    "to": "2026-11-16",
+    "page": {
+      "page": "https://www.fotz-studio.pl/strony-internetowe/kielce",
+      "clicks": 1,
+      "impressions": 133,
+      "position": 71.3609
+    },
+    "queries": [
+      {
+        "page": "https://www.fotz-studio.pl/strony-internetowe/kielce",
+        "query": "budowa stron internetowych kielce",
+        "clicks": 0,
+        "impressions": 6,
+        "position": 66
+      },
+      {
+        "page": "https://www.fotz-studio.pl/strony-internetowe/kielce",
+        "query": "pozycjonowanie stron www kielce",
+        "clicks": 0,
+        "impressions": 3,
+        "position": 88.3333
+      },
+      {
+        "page": "https://www.fotz-studio.pl/strony-internetowe/kielce",
+        "query": "profesjonalne sklepy internetowe kielce",
+        "clicks": 0,
+        "impressions": 2,
+        "position": 80.5
+      },
+      {
+        "page": "https://www.fotz-studio.pl/strony-internetowe/kielce",
+        "query": "profesjonalne strony internetowe kielce",
+        "clicks": 0,
+        "impressions": 4,
+        "position": 73.75
+      },
+      {
+        "page": "https://www.fotz-studio.pl/strony-internetowe/kielce",
+        "query": "projektowanie sklepów internetowych kielce",
+        "clicks": 0,
+        "impressions": 3,
+        "position": 97.3333
+      },
+      {
+        "page": "https://www.fotz-studio.pl/strony-internetowe/kielce",
+        "query": "projektowanie stron internetowych kielce",
+        "clicks": 0,
+        "impressions": 14,
+        "position": 63
+      },
+      {
+        "page": "https://www.fotz-studio.pl/strony-internetowe/kielce",
+        "query": "projektowanie stron kielce",
+        "clicks": 0,
+        "impressions": 3,
+        "position": 50
+      },
+      {
+        "page": "https://www.fotz-studio.pl/strony-internetowe/kielce",
+        "query": "projektowanie stron www kielce",
+        "clicks": 0,
+        "impressions": 4,
+        "position": 62
+      },
+      {
+        "page": "https://www.fotz-studio.pl/strony-internetowe/kielce",
+        "query": "strony internetowe kielce",
+        "clicks": 0,
+        "impressions": 39,
+        "position": 73.2051
+      },
+      {
+        "page": "https://www.fotz-studio.pl/strony-internetowe/kielce",
+        "query": "strony internetowe kielce cennik",
+        "clicks": 0,
+        "impressions": 2,
+        "position": 72.5
+      },
+      {
+        "page": "https://www.fotz-studio.pl/strony-internetowe/kielce",
+        "query": "strony kielce",
+        "clicks": 0,
+        "impressions": 3,
+        "position": 64
+      },
+      {
+        "page": "https://www.fotz-studio.pl/strony-internetowe/kielce",
+        "query": "strony www kielce",
+        "clicks": 0,
+        "impressions": 5,
+        "position": 61.8
+      },
+      {
+        "page": "https://www.fotz-studio.pl/strony-internetowe/kielce",
+        "query": "tanie strony internetowe kielce",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 86
+      },
+      {
+        "page": "https://www.fotz-studio.pl/strony-internetowe/kielce",
+        "query": "tworzenie sklepow internetowych kielce",
+        "clicks": 0,
+        "impressions": 3,
+        "position": 91
+      },
+      {
+        "page": "https://www.fotz-studio.pl/strony-internetowe/kielce",
+        "query": "tworzenie sklepów internetowych kielce",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 98
+      },
+      {
+        "page": "https://www.fotz-studio.pl/strony-internetowe/kielce",
+        "query": "tworzenie stron internetowych kielce",
+        "clicks": 0,
+        "impressions": 9,
+        "position": 67.6667
+      },
+      {
+        "page": "https://www.fotz-studio.pl/strony-internetowe/kielce",
+        "query": "tworzenie stron kielce",
+        "clicks": 0,
+        "impressions": 3,
+        "position": 43.3333
+      },
+      {
+        "page": "https://www.fotz-studio.pl/strony-internetowe/kielce",
+        "query": "tworzenie stron www kielce",
+        "clicks": 0,
+        "impressions": 8,
+        "position": 53.5
+      },
+      {
+        "page": "https://www.fotz-studio.pl/strony-internetowe/kielce",
+        "query": "tworzenie strony internetowej kielce",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 100
+      }
+    ]
+  },
+  "neuron": {
+    "query": "0e6385a616fd485e",
+    "keyword": "strony internetowe kielce",
+    "engine": "google.pl",
+    "language": "Polish",
+    "before": 68,
+    "rendered": 96,
+    "public": 97,
+    "publicCheckedAt": "2026-11-19T08:57:45.463Z",
+    "extraction": "main-content",
+    "imported": 97,
+    "done": true
+  },
+  "review": {
+    "tool": "Claude Code CLI",
+    "model": "claude-opus-4-6[1m]",
+    "result": "Ready for publication, no blockers; verify linked pages",
+    "linkedPagesVerified": true,
+    "sourceSha256": "2be5fdcfde06b3f5c4ca4b3be6595da71c9720a23665e94d49955ab9d437ae10",
+    "reviewArtifactSha256": "581f50cca9f9e13c54f15305d7cb8ecd7ba749163bf78492f61c27bb4dfb3fb1"
+  },
+  "local": {
+    "typecheck": "pass",
+    "tests": 359,
+    "buildPages": 1061,
+    "renderedPages": 1059,
+    "bodyErrors": 0,
+    "sitemapURLs": 1059,
+    "brokenRenderedLinks": 0,
+    "brokenSourceLinks": 0,
+    "uiWidths": [
+      360,
+      1280
+    ],
+    "horizontalOverflow": false,
+    "heroLoaded": true,
+    "faqInteraction": "pass",
+    "contactVariants": [
+      "website",
+      "redesign",
+      "shop"
+    ],
+    "liveFormSubmitted": false
+  },
+  "pr": "https://github.com/adam420412/fotz-studio-web-experience/pull/221",
+  "deployment": {
+    "id": "dpl_A5vN7usQkDmDWX36aF7yDcSEGALq",
+    "projectId": "prj_C2AnqNdBETrlrfw7Hw4KJy8BzYss",
+    "state": "READY",
+    "commit": "8d8ed262ef42533e8e06d29033b93fed419c1011",
+    "aliases": [
+      "www.fotz-studio.pl",
+      "fotz-studio-web-experience.vercel.app",
+      "fotz-studio.pl",
+      "fotz-studio-web-experience-fotz-studios-projects.vercel.app",
+      "fotz-studio-web-experience-git-main-fotz-studios-projects.vercel.app"
+    ]
+  },
+  "production": {
+    "checkedAt": "2026-11-19T08:56:41.195027+00:00",
+    "url": "https://www.fotz-studio.pl/strony-internetowe/kielce",
+    "status": 200,
+    "canonical": "https://www.fotz-studio.pl/strony-internetowe/kielce",
+    "oneH1": true,
+    "visibleTextMatchesScoredBuild": true,
+    "mainTextSha256": "a797b230f0647731b63cf7501107ad7ab6b675ad9e3005796dc3bf133a484229",
+    "faqVisibleSchemaMatch": 5,
+    "contactVariants": [
+      "website",
+      "redesign",
+      "shop"
+    ],
+    "ui": {
+      "viewportWidths": [
+        360,
+        1280
+      ],
+      "documentWidths": [
+        352,
+        1272
+      ],
+      "horizontalOverflow": false,
+      "allPortfolioImagesLoaded": true,
+      "faqInteraction": "pass",
+      "heroContactCTA": "website selected, new website scope visible",
+      "formSubmitted": false,
+      "screenshots": [
+        "output/kielce-20261119/production-desktop.jpg",
+        "output/kielce-20261119/production-mobile.jpg"
+      ]
+    }
+  },
+  "commit": "8d8ed262ef42533e8e06d29033b93fed419c1011",
+  "checks": {
+    "prHead": "ed91bdde92414176157c018b91bc559201b5b31b",
+    "seo": "pass 5m23s",
+    "typecheck": "pass 1m58s",
+    "vercelPreview": "READY",
+    "ciURL": "https://github.com/adam420412/fotz-studio-web-experience/actions/runs/44490273173"
+  },
+  "measurementNote": "NEURONwriter scores are content relevance measurements; Google ranking and client enquiries have not yet been measured after release."
+}
