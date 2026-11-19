@@ -1,0 +1,284 @@
+{
+  "date": "2026-11-19",
+  "page": "https://www.fotz-studio.pl/uslugi/strony-internetowe/kalisz",
+  "registerId": "FOTZ-B8D6B135",
+  "owner": "Codex / FOTZ-Kalisz-WWW-20261119",
+  "gsc": {
+    "property": "sc-domain:fotz-studio.pl",
+    "period": [
+      "2026-10-20",
+      "2026-11-16"
+    ],
+    "impressions": 119,
+    "clicks": 0,
+    "averagePosition": 33.6639,
+    "queries": [
+      {
+        "query": "projektowanie stron www kalisz",
+        "impressions": 17,
+        "clicks": 0,
+        "position": 17.2941
+      },
+      {
+        "query": "strony www kalisz",
+        "impressions": 15,
+        "clicks": 0,
+        "position": 25.1333
+      },
+      {
+        "query": "strony internetowe kalisz",
+        "impressions": 12,
+        "clicks": 0,
+        "position": 38.25
+      },
+      {
+        "query": "pozycjonowanie stron kalisz",
+        "impressions": 10,
+        "clicks": 0,
+        "position": 64.5
+      },
+      {
+        "query": "tworzenie stron internetowych kalisz",
+        "impressions": 9,
+        "clicks": 0,
+        "position": 37.6667
+      },
+      {
+        "query": "tworzenie stron www kalisz",
+        "impressions": 8,
+        "clicks": 0,
+        "position": 31.5
+      },
+      {
+        "query": "landing pages kalisz",
+        "impressions": 7,
+        "clicks": 0,
+        "position": 17.2857
+      },
+      {
+        "query": "pozycjonowanie stron internetowych kalisz",
+        "impressions": 7,
+        "clicks": 0,
+        "position": 49.8571
+      },
+      {
+        "query": "projektowanie stron kalisz",
+        "impressions": 7,
+        "clicks": 0,
+        "position": 39.8571
+      },
+      {
+        "query": "tworzenie stron kalisz",
+        "impressions": 7,
+        "clicks": 0,
+        "position": 16.5714
+      },
+      {
+        "query": "projektowanie stron internetowych kalisz",
+        "impressions": 3,
+        "clicks": 0,
+        "position": 37.3333
+      },
+      {
+        "query": "tworzenie sklepów internetowych kalisz",
+        "impressions": 3,
+        "clicks": 0,
+        "position": 43.6667
+      },
+      {
+        "query": "projektowanie logo kalisz",
+        "impressions": 2,
+        "clicks": 0,
+        "position": 89
+      },
+      {
+        "query": "strona internetowa kalisz",
+        "impressions": 2,
+        "clicks": 0,
+        "position": 20
+      },
+      {
+        "query": "strony internetowe kalisz cennik",
+        "impressions": 2,
+        "clicks": 0,
+        "position": 24.5
+      }
+    ]
+  },
+  "neuron": {
+    "query": "710b5b5114f7c5da",
+    "keyword": "strony internetowe Kalisz",
+    "scope": "main-content",
+    "publicBefore": 67,
+    "draft": 95,
+    "publicAfter": 95,
+    "imported": 95,
+    "done": true
+  },
+  "revisions": [
+    {
+      "pr": "https://github.com/adam420412/fotz-studio-web-experience/pull/236",
+      "commit": "7b87416f1a61d8aa11dd7341629ba6c38f033283",
+      "publicScore": 94,
+      "ci": [
+        {
+          "bucket": "pass",
+          "name": "Vercel Preview Comments"
+        },
+        {
+          "bucket": "pass",
+          "name": "seo"
+        },
+        {
+          "bucket": "pass",
+          "name": "typecheck"
+        },
+        {
+          "bucket": "pass",
+          "name": "Vercel – adam420412-fotz-studio-web-experience"
+        },
+        {
+          "bucket": "pass",
+          "name": "Vercel – fotz-studio-web-experience"
+        }
+      ]
+    },
+    {
+      "pr": "https://github.com/adam420412/fotz-studio-web-experience/pull/237",
+      "commit": "f62d330a7278f109be36277565c881ac27f911a0",
+      "publicScore": 95
+    }
+  ],
+  "release": {
+    "pr": "https://github.com/adam420412/fotz-studio-web-experience/pull/237",
+    "commit": "f62d330a7278f109be36277565c881ac27f911a0",
+    "deployment": "dpl_BYgTJJMFjAk4wbehMXcJNPs4vwBu",
+    "state": "READY",
+    "aliases": [
+      "www.fotz-studio.pl",
+      "fotz-studio-web-experience.vercel.app",
+      "fotz-studio.pl",
+      "fotz-studio-web-experience-fotz-studios-projects.vercel.app",
+      "fotz-studio-web-experience-git-main-fotz-studios-projects.vercel.app"
+    ],
+    "checkedAt": "2026-11-19 11:21:24 UTC"
+  },
+  "claudeReview": {
+    "model": "claude-opus-4-6[1m]",
+    "verdict": "Nie widzę blokad. `srcSet` z `1200w` odpowiada potwierdzonej szerokości pliku. Cztery sekcje widoczne od razu, trzy rozwijane nagłówki poradników, FAQ w `<details>`, formularz z linkiem do portfolio i przyciskiem „Opisz swój projekt\". Schemat FAQ, Service i Breadcrumb obecne. Cena WWW START zgodna z cennikiem, oferta zdalna zaznaczona w hero. Strona gotowa do publikacji.",
+    "inputSha256": "466d1609e9d9a5048eadc05f4e1ea5f935c96c119b8431b5d7f2e764e01511c5",
+    "changes": "Przeniesiono katalog Victory Cars na początek, skrócono nagłówki, pogrupowano poradniki, wyróżniono zapytania o ofertę, doprecyzowano relację WordPressa i pakietu WWW START."
+  },
+  "verification": {
+    "localTests": 360,
+    "publicHTML": [
+      "Projektowanie i tworzenie stron WWW – Kalisz | FOTZ Studio",
+      "2247 words; one H1, three enquiry variants, three guides and five FAQ items",
+      "Production HTTP 200, canonical, title, meta description and main text match the build. e06cbfe657e31148403e07162c0247a5ba4965fbbbf46fc43201ff36e062b200",
+      "5 FAQ pairs matched rendered disclosure elements and JSON-LD."
+    ],
+    "resourceChecks": [
+      [
+        "/realizacje/victory-cars",
+        200,
+        "text/html",
+        "https://www.fotz-studio.pl/realizacje/victory-cars"
+      ],
+      [
+        "/realizacje/apartamenty-chorwacja",
+        200,
+        "text/html",
+        "https://www.fotz-studio.pl/realizacje/apartamenty-chorwacja"
+      ],
+      [
+        "/realizacje/klagem",
+        200,
+        "text/html",
+        "https://www.fotz-studio.pl/realizacje/klagem"
+      ],
+      [
+        "/realizacje/cute-dumpling",
+        200,
+        "text/html",
+        "https://www.fotz-studio.pl/realizacje/cute-dumpling"
+      ],
+      [
+        "/cennik",
+        200,
+        "text/html",
+        "https://www.fotz-studio.pl/cennik"
+      ],
+      [
+        "/pozycjonowanie/kalisz",
+        200,
+        "text/html",
+        "https://www.fotz-studio.pl/pozycjonowanie/kalisz"
+      ],
+      [
+        "/uslugi/landing-page",
+        200,
+        "text/html",
+        "https://www.fotz-studio.pl/uslugi/landing-page"
+      ],
+      [
+        "/uslugi/strony-internetowe/ecommerce",
+        200,
+        "text/html",
+        "https://www.fotz-studio.pl/uslugi/strony-internetowe/ecommerce"
+      ],
+      [
+        "/work/industries/victory-cars-800.webp",
+        200,
+        "image/webp",
+        "https://www.fotz-studio.pl/work/industries/victory-cars-800.webp"
+      ]
+    ],
+    "browser": {
+      "beforeDeploy": {
+        "mobileViewport": 375,
+        "mobileContentWidth": 367,
+        "horizontalOverflow": false,
+        "inlineForm": {
+          "focusedAnchor": "zapytanie",
+          "fields": 4
+        },
+        "portfolioAnchor": "realizacje",
+        "openedGuideTopics": 5,
+        "contactService": "Strona internetowa lub sklep",
+        "formSelections": [
+          "Nowa strona",
+          "Przebudowa istniejącej strony",
+          "Sklep internetowy"
+        ]
+      },
+      "production": {
+        "hero": "Victory Cars",
+        "formOnPage": true,
+        "remoteServiceAreaVisible": true,
+        "http": 200
+      }
+    },
+    "ci": [
+      {
+        "bucket": "pass",
+        "name": "Vercel Preview Comments"
+      },
+      {
+        "bucket": "pass",
+        "name": "seo"
+      },
+      {
+        "bucket": "pass",
+        "name": "typecheck"
+      },
+      {
+        "bucket": "pass",
+        "name": "Vercel – adam420412-fotz-studio-web-experience"
+      },
+      {
+        "bucket": "pass",
+        "name": "Vercel – fotz-studio-web-experience"
+      }
+    ]
+  }
+}
